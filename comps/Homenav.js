@@ -36,7 +36,7 @@ const Homenav=()=>{
       }, [showMe]);
     return(
         <> 
-        <div Id="locmenu" className="loc-menu-holder">
+        <div Id="locmenu" className="loc-menu-holder hidden">
         <LocationMenu/>
         </div>
         
@@ -58,7 +58,7 @@ const Homenav=()=>{
                             </a>
                         </Link>
                     </div>
-                    <div className="home-nav-search bg-golden hover:bg-golden-alt hover:cursor-pointer hover:shadow boder-p rounded-full"> 
+                    <div Id="search-loc" className="home-nav-search  search-loc bg-golden hover:bg-golden-alt hover:cursor-pointer hover:shadow boder-p rounded-full"> 
                         <div className="flex space-x-2 md:space-x-20  rounded-full items-center border-2 md:border-4 border-black p-2 md:p-3 text-white bg-coffee-light">
                                 <div className="nav-search-l flex space-x-2 items-center">
                                      <span class="text-xl md:text-2xl"> <BiMap/></span>
