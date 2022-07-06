@@ -10,7 +10,10 @@ locClose.addEventListener('click',function(){
 });
 
 function showLocations(){
-    console.log('click');
+    
+    localStorage.setItem("locationSelect", "ny-123456");
+    let item=localStorage.getItem("locationSelects");
+    console.log(item);
     locmenu.classList.remove('hidden');
 
 }

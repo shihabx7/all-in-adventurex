@@ -23,7 +23,7 @@ const Footer=()=>{
                             <p className='text-gray-500 pt-4 pb-8'>Select the number of participants, fill out the details and purchase the gift card. 
                             The details and purchase the gift card also select the number. 
                             The details and purchase the gift card.</p>
-                            <div className='adv-btn border-btn rounded-full mx-auto max-w-xs bg-dark-red hover:bg-golden-alt'> 
+                            <div className='adv-btn search-loc border-btn rounded-full mx-auto max-w-xs bg-dark-red hover:bg-golden-alt'> 
                                 <div className='footer-btn justify-between  bg-esc-black flex space-x-2 md:space-x-3 shrink rounded-full text-white p-3 items-center hover:shadow-md'> 
                                      <span class="text-xl md:text-2xl"> <BiMap/></span><span class=" font-medium text-sm md:text-base">CHOOSE YOUR LOCATION</span><span className="text-xl md:text-2xl">  <FaAngleDown/></span>
                                 </div>
@@ -365,7 +365,7 @@ const Footer=()=>{
                                 
                             </div>
                     {/*========================================= usefull link end================ */}
-                            <div className='adv-btn border-btn rounded-full mx-auto max-w-xs bg-dark-red hover:bg-golden-alt'> 
+                            <div className='hidden adv-btn border-btn rounded-full mx-auto max-w-xs bg-dark-red hover:bg-golden-alt'> 
                                 <div className='footer-btn justify-center  bg-esc-black flex space-x-3 shrink rounded-full text-white p-3 items-center hover:shadow-md'> 
                                      <span class="text-xs font-medium md:text-base">CONTACT US</span>
                                 </div>
