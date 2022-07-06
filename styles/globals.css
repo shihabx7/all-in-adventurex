@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+html,body,a{
+  font-family: 'Roboto', sans-serif;
+}
+.font-os{
+  font-family: 'Oswald', sans-serif;
+}
+.boder-p{
+  padding:2px;
+}
+.golden-text{
+  background-color: #E0BF62; 
+  background-image: linear-gradient(to right, #CA9342 ,#E0BF62);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.menu-item a:hover{
+  background-color: #E0BF62; 
+  background-image: linear-gradient(45deg, #CA9342, #E0BF62);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+/*==============submenu design============*/
+  .submenu-box{
+
+    background-image:url(../public/assets/submenu-bg.png),linear-gradient(#111111,#111111);
+    background-size: cover;
+    background-position: center center;
+  }
+.submenu-item{
+  margin: 8px 0px;
+}
+.submenu-item a .sub-link-txt{
+  padding-bottom: 0px;
+  border-bottom:1px solid transparent;
+  transition: .4s;
+  
+}
+.submenu-item:hover a .sub-link-txt{
+  border-bottom:1px solid #FFEFCD;
+  color:#FFEFCD;
+  transition: .4s;
+}
+.submenu-dropdown a:hover .sub-link-txt-sub{
+  color:#FFEFCD;
+}
+/*==============submenu design end============*/
+/*===========global location menu==============*/
+.loc-menu{
+  background-image:url(../public/assets/submenu-bg.png),linear-gradient(#111111,#111111);
+ 
+  background-repeat: repeat;
+  z-index:20000;
+}
+.loc-item:hover .golden-text{
+  background-color: #E0BF62; 
+  background-image: linear-gradient(45deg, #E0BF62,#CA9342);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.loc-item:hover .text-gold{
+ 
+  color:#CA9342;
+  
+}
+.loc-item:hover .text-gray-500 {
+ 
+  color:#FFEFCD;
+  transition: .4s;
+  
+}
+/*===========global location menu==============*/
+.footer-link{
+  line-height:1.8;
+  transition: .3s;
+ }
+.footer-link:hover{
+ color:#FFEFCD;
+ text-decoration: underline;
+}
+.usefull-link a{
+  padding-bottom: 4px;
+  transition: .3s;
+}
+.usefull-link a:hover{
+ border-bottom:1px solid #FFEFCD;
+ color:#FFEFCD;
+ transition: .3s;
+ 
+}
+.hover-golden:hover{
+  background-color: #E0BF62; 
+  background-image: linear-gradient(to right, #E0BF62, #CA9342);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.footer-link:hover span{
+  color: #E0BF62; 
+}
+.menu-icon-box:hover span{
+  background-image: linear-gradient(to right,#E0BF62, #CA9342 );
+}
+.adv-btn{
+  cursor:pointer;
+}
+.border-btn{
+  padding: 2px;
+}
+
+.home-hero{
+  background-image: url(../public/assets/homebaner.png);
+  background-position: center center;
+  background-size: cover;
+}
+.menu-close-1{
+  top:0;
+  left:50%;
+  transform: rotate(45deg);
+}
+.menu-close-2{
+  top:0;
+  left:50%;
+  transform: rotate(-45deg);
+}
+@media only screen and (max-width: 500px) {
+  .logo a img{
+    max-height:52px;
+  }
+  .sep{
+    max-width:248px;
+  }
+  .loc-menu-col{
+    max-width:260px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .logo a img{
+    max-height:40px;
+  }
+  .menu-icon-box{
+    padding: 6px;
+  }
+}
