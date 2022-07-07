@@ -9,17 +9,19 @@ locClose.addEventListener('click',function(){
 
 });
 
-function showLocations(){
-    
-    localStorage.setItem("locationSelect", "ny-123456");
-    let item=localStorage.getItem("locationSelects");
-    console.log(item);
-    locmenu.classList.remove('hidden');
 
-}
 
 for (var i = 0; i < menusearch.length; i++) {
-    menusearch[i].addEventListener('click', showLocations, false);
+    menusearch[i].addEventListener('click', function showLocations(e){
+    
+        e.preventDefault()
+        localStorage.setItem("locationSelect", "ny-123456");
+        let item=localStorage.getItem("locationSelects");
+      
+        console.log(item);
+        locmenu.classList.remove('hidden');
+    
+    }, false);
 }
 
 

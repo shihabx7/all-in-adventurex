@@ -73,12 +73,12 @@ const Homenav=()=>{
                     </div>
                     <div className="home-nav-menu flex items-center space-x-0 md:space-x-14 justify-end "> 
                         
-                         <div className="menu-item-btn text-white text-lg hidden lg:block">
-                            <Link href="/events"> 
-                            <HeaderBtnRed btntext='BOOK AN EVENT'btnbg='bg-transparent'/>
-                            </Link>
+                         <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
+                           
+                                 <HeaderBtnRed btntext='BOOK AN EVENT'btnbg='bg-transparent'/>
+                            
                          </div>
-                         <div className="menu-item-btn text-white text-lg hidden lg:block">
+                         <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
                            <HeaderBtnRed btntext='BOOK GAMES' btnbg='bg-red-500'/>
                          </div>
                          <div className="menu-item hover:shadow-md hover:cursor-pointer relative" onClick={toggle}>
