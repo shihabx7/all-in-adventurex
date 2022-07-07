@@ -7,7 +7,7 @@ const HeaderBtnRed =(props)=>{
 
         <div className='heade-btn'> 
                 
-                                 <p className={props.btnbg+' cursor-pointer  rounded font-medium text-white  hover:bg-dark-red  py-3 px-8 border border-red-500 hover:border-dark-red transition duration-300'}>{props.btntext}</p>
+                                 <p className={props.btnbg+' cursor-pointer  rounded font-medium text-white  hover:bg-dark-red  py-2 px-6 border border-red-500 hover:border-dark-red transition duration-300'}>{props.btntext}</p>
                   
 
         </div>

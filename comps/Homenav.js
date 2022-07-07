@@ -1,6 +1,5 @@
 
-import { BiMap } from "react-icons/bi";
-import { FaAngleDown } from "react-icons/fa";
+
 import { FiX } from "react-icons/fi";
 import Image from 'next/image'
 import SvglogoMain from './headerComps/SvglogoMain'
@@ -10,6 +9,7 @@ import LocationMenu from "./headerComps/LocationMenu";
 import Link from "next/link"
 import { useEffect, useRef, useState} from 'react';
 import HeaderBtnRed from "./headerComps/HeaderBtnRed";
+import LocationBtn from "./util/LocationBtn";
 
 
 
@@ -59,18 +59,9 @@ const Homenav=()=>{
                             </a>
                         </Link>
                     </div>
-                    <div Id="search-loc" className="home-nav-search  search-loc bg-golden hover:bg-golden-alt hover:cursor-pointer hover:shadow boder-p rounded-full"> 
-                        <div className="flex space-x-2 md:space-x-20  rounded-full items-center border-2 md:border-4 border-black p-2 md:p-2 text-white bg-coffee-light">
-                                <div className="nav-search-l flex space-x-2 items-center">
-                                     <span class="text-xl md:text-2xl"> <BiMap/></span>
-                                    <span class="text-xs font-medium md:text-base"> CHOOSE YOUR LOCATION</span>
-                                </div> 
-                                 <div className="nav-search-r">
-                                     <span className="text-xl md:text-2xl">  <FaAngleDown/></span>
-                                </div>   
-
-                        </div>
-                    </div>
+                 {/*============location search btn==========*/}
+                    <LocationBtn borderbg='bg-golden' borderbghover='bg-golden-alt' innerbg='bg-coffee-light' innerborder='border-black' innerbghover='bg-black' innerborderhover='black' color="white"/>
+                 {/*============location search btn==========*/}
                     <div className="home-nav-menu flex items-center space-x-0 md:space-x-14 justify-end "> 
                         
                          <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">

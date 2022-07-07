@@ -1,4 +1,4 @@
-import TitleSeparator from '../TitleSeparator'
+import TitleSeparator from '../util/TitleSeparator'
 import { FiX } from "react-icons/fi"
 import { FaAngleRight } from "react-icons/fa"
 import Link from 'next/link';
