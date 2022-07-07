@@ -9,6 +9,7 @@ import SubMenu from './headerComps/SubMenu'
 import LocationMenu from "./headerComps/LocationMenu";
 import Link from "next/link"
 import { useEffect, useRef, useState} from 'react';
+import HeaderBtnRed from "./headerComps/HeaderBtnRed";
 
 
 
@@ -43,7 +44,7 @@ const Homenav=()=>{
         
         <header className="bg-coffee w-full z-50">
             <div className="max-w-7xl mx-auto relative" ref={ref}>
-                <div className="home-nav-bar flex justify-between items-center py-2 px-2 sm:p-3 lg:py-3 lg:px-0"> 
+                <div className="home-nav-bar flex justify-between items-center py-2 px-2 sm:p-1 lg:py-2 lg:px-0"> 
                     <div className="logo hidden md:block">
                         <Link href="/"> 
                             <a className="flex items-center">
@@ -59,7 +60,7 @@ const Homenav=()=>{
                         </Link>
                     </div>
                     <div Id="search-loc" className="home-nav-search  search-loc bg-golden hover:bg-golden-alt hover:cursor-pointer hover:shadow boder-p rounded-full"> 
-                        <div className="flex space-x-2 md:space-x-20  rounded-full items-center border-2 md:border-4 border-black p-2 md:p-3 text-white bg-coffee-light">
+                        <div className="flex space-x-2 md:space-x-20  rounded-full items-center border-2 md:border-4 border-black p-2 md:p-2 text-white bg-coffee-light">
                                 <div className="nav-search-l flex space-x-2 items-center">
                                      <span class="text-xl md:text-2xl"> <BiMap/></span>
                                     <span class="text-xs font-medium md:text-base"> CHOOSE YOUR LOCATION</span>
@@ -71,20 +72,14 @@ const Homenav=()=>{
                         </div>
                     </div>
                     <div className="home-nav-menu flex items-center space-x-0 md:space-x-14 justify-end "> 
-                        <div className="menu-item  text-lg hidden lg:block">
-                            <Link href="/escape-rooms">
-                                 <a className="font-medium text-white hover:golden-text"> Escape Rooms</a>
-                            </Link>
-                         </div>
-                         <div className="menu-item text-white text-lg hidden lg:block">
+                        
+                         <div className="menu-item-btn text-white text-lg hidden lg:block">
                             <Link href="/events"> 
-                                <a className="font-medium"> Events</a>
+                            <HeaderBtnRed btntext='BOOK AN EVENT'btnbg='bg-transparent'/>
                             </Link>
                          </div>
-                         <div className="menu-item text-white text-lg hidden lg:block">
-                            <Link href="/Locations"> 
-                                <a className="font-medium"> Locations</a>
-                            </Link>
+                         <div className="menu-item-btn text-white text-lg hidden lg:block">
+                           <HeaderBtnRed btntext='BOOK GAMES' btnbg='bg-red-500'/>
                          </div>
                          <div className="menu-item hover:shadow-md hover:cursor-pointer relative" onClick={toggle}>
                             <div className="menu-icon-box p-2 bg-coffee-light"
