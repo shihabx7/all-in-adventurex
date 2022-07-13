@@ -3,7 +3,7 @@ const TitleSeparator=(props)=>{
     return(
 
         <div className="sep-title text-center">
-            <h2 className={props.color+' text-2xl md:text-3xl lg:font-4xl font-semibold'}>{props.title}</h2>
+            <h2 className={props.color+' text-2xl md:text-3xl lg:text-4xl font-os '+props.weight}>{props.title}</h2>
             <div className="flex sep items-center max-w-xs mx-auto mt-1 md:mt-3 space-x-3">
                 <div className="bg-golden w-2/5 h-0.5"></div>
                 <div className=" w-auto hidden md:block">
@@ -16,7 +16,7 @@ const TitleSeparator=(props)=>{
                             <path d="M3.12109 15.3305L18.9487 23.376L34.8165 15.1098L28.8874 2.24902H9.19085L3.12109 15.3305Z" fill="url(#paint0_linear_1668_1324)"/>
                             <path d="M2.56836 15.5209L8.9195 1.81738H29.1587L35.3692 15.3002L18.9487 23.8573L2.56836 15.5209Z" fill="#B78612"/>
                             <path d="M29.1381 1.85733L35.3184 15.2799L18.9481 23.807L2.61807 15.5006L8.94911 1.85733H29.1381V1.85733ZM29.1883 1.78711H8.89886L2.51758 15.5307L18.9481 23.8972L35.4189 15.32L29.1883 1.78711Z" fill="#EFE285"/>
-                            <path d="M3.46289 15.2703L18.9488 23.1553L34.4749 15.0597L28.6765 2.46973H9.40201L3.46289 15.2703Z" fill="url(#paint1_linear_1668_1324)"/>
+                            <path d="M3.46289 15.2703L18.9488 23.1553L34.4749 15.0597L28.6765 2.46973H9.40201L3.46289 15.2703Z" fill="#E1001A"/>
                             <defs>
                             <linearGradient id="paint0_linear_1668_1324" x1="18.9705" y1="23.3771" x2="18.9705" y2="2.24681" gradientUnits="userSpaceOnUse">
                             <stop stop-color="#8A0E13"/>
@@ -40,7 +40,7 @@ const TitleSeparator=(props)=>{
                     <path d="M2.46289 10.7152L13.4543 16.3011L24.4736 10.5619L20.3562 1.63281H6.678L2.46289 10.7152Z" fill="url(#paint0_linear_2579_2)"/>
                     <path d="M2.07812 10.8472L6.48864 1.33301H20.5437L24.8565 10.694L13.4533 16.6351L2.07812 10.8472Z" fill="#B78612"/>
                     <path d="M20.5294 1.36028L24.8213 10.6794L13.4531 16.5997L2.11276 10.8327L6.50931 1.36028H20.5294V1.36028ZM20.5643 1.31152H6.47442L2.04297 10.8536L13.4531 16.6624L24.8911 10.7073L20.5643 1.31152Z" fill="#EFE285"/>
-                    <path d="M2.69922 10.6735L13.4533 16.148L24.2354 10.5272L20.2087 1.78613H6.82361L2.69922 10.6735Z" fill="url(#paint1_linear_2579_2)"/>
+                    <path d="M2.69922 10.6735L13.4533 16.148L24.2354 10.5272L20.2087 1.78613H6.82361L2.69922 10.6735Z" fill="#E1001A"/>
                     <defs>
                     <linearGradient id="paint0_linear_2579_2" x1="13.4694" y1="16.3018" x2="13.4694" y2="1.63127" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#8A0E13"/>

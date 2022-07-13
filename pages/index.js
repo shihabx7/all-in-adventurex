@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import HomeHero from '../comps/util/HomeHero'
+import Howtobook from '../comps/util/Howtobook'
 
 export default function Home() {
   return (
@@ -15,7 +16,9 @@ export default function Home() {
       
        <div className='home-hero'>
         <HomeHero></HomeHero>
+        
        </div>
+       <Howtobook></Howtobook>
         
     
     </div>

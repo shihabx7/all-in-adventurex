@@ -26,7 +26,7 @@ html,body,a{
 }
 /*=========header design=========*/
 .logo img{
-  max-width:112px;
+  max-width:92px;
 }
 .menu-item a:hover{
   background-color: #E0BF62; 
@@ -92,6 +92,7 @@ html,body,a{
   
 }
 /*===========global location menu==============*/
+
 .footer-link{
   line-height:1.8;
   transition: .3s;
@@ -132,12 +133,6 @@ html,body,a{
 .border-btn{
   padding: 2px;
 }
-
-.home-hero{
-  background-image: url(../public/assets/homebaner.png);
-  background-position: center center;
-  background-size: cover;
-}
 .menu-close-1{
   top:0;
   left:50%;
@@ -148,9 +143,93 @@ html,body,a{
   left:50%;
   transform: rotate(-45deg);
 }
+
+/*===============home page===========*/
+.un-games{
+  box-shadow: 0px 4px 8px rgba(216, 174, 84,0.45);
+}
+.paly-btn{
+  background-color:#F2C667;
+  box-shadow:inset 0px 4px 4px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition:.4s;
+}
+.paly-btn:hover{
+ 
+  box-shadow:2px 2px 4px rgba(0,0,0,0.15);
+  transition:.4s;
+  cursor: pointer;
+}
+.home-hero{
+  background-image: url(../public/assets/homebaner.png);
+  background-position: center center;
+  background-size: cover;
+}
+.htb{
+  background-image:  linear-gradient(65deg,rgba(255, 249, 235,.7),rgba(255, 249, 235,.7)),url('../public/assets/svg/htb-bg.svg');
+  background-position: center center,center center;
+  background-size: cover,cover;
+}
+.htb-step{
+  max-width: 100px;
+  text-align:center;
+}
+.htb-bg-1{
+  top: 16px;
+left: 0;
+transform: rotate(-30deg);
+
+}
+.htb-bg-1 img{
+max-width:130px;
+filter: opacity(44%);
+}
+.htb-bg-2{
+    top:-64px;
+    right:-64px;
+    animation:spin 56s linear infinite;
+}
+.htb-bg-2 img{
+  filter: opacity(24%);
+  max-width:230px;
+}
+.htb-bg-3{
+  bottom:0px;
+  left:10px;
+  
+}
+.htb-bg-3 img{
+  filter: opacity(20%);
+max-width:180px;
+}
+.htb-bg-4{
+  bottom:0px;
+  right:10px;
+
+}
+.htb-bg-4 img{
+filter: opacity(20%);
+max-width:140px;
+}
 .un-games{
   bottom:-56px;
+  z-index: 50;
 }
+/*========== spin compas=======*/
+@-moz-keyframes spin { 
+  100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+  100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+}
+
+
 @media only screen and (max-width: 500px) {
   .logo a img{
     max-height:52px;

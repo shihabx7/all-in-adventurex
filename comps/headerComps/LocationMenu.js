@@ -12,7 +12,7 @@ const LocationMenu=()=>{
                  <span className='inline-block p-1 border-2 border-gray-500 rounded-full cursor-pointer hover:border-light-gold hover:text-gold'><FiX/></span>
             </div>
             <div className='loc-menu-content px-4'> 
-                <TitleSeparator title='CHOOSE YOUR VENUE' color='text-white'/>
+                <TitleSeparator title='CHOOSE YOUR VENUE' color='text-white' weight='font-semibold'/>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-0 gap-y-4 md:gap-y-0 md:gap-x-8 max-w-6xl mx-auto mt-4 pb-8'> 
                 {/*==================location xcolumn======================*/}
                     <div className='loc-menu-col'>
