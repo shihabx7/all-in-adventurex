@@ -2,7 +2,7 @@ import LocationBtn from "./LocationBtn";
 const HomeHero=()=>{
 
     return(
-        <div className='home-hero-holder '> 
+        <div className='home-hero-holder px-4'> 
             <div className='max-w-7xl mx-auto py-24 relative'>
                  <p className='font-medium text-2xl mb-2 text-white text-center'>CHOOSE FROM 30 US LOCATIONS</p> 
                  <h1 className='golden-text font-bold text-center text-5xl mb-8 font-os'>ALL ESCAPE ROOMS AND ACTIVITES</h1>

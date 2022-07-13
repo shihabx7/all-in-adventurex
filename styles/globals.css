@@ -24,6 +24,10 @@ html,body,a{
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
+/*=========header design=========*/
+.logo img{
+  max-width:112px;
+}
 .menu-item a:hover{
   background-color: #E0BF62; 
   background-image: linear-gradient(45deg, #CA9342, #E0BF62);

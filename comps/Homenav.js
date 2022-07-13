@@ -45,20 +45,14 @@ const Homenav=()=>{
         <header className="bg-coffee w-full z-50">
             <div className="max-w-7xl mx-auto relative" ref={ref}>
                 <div className="home-nav-bar flex justify-between items-center py-2 px-2 sm:p-1 lg:py-2 lg:px-0"> 
-                    <div className="logo hidden md:block">
+                    <div className="logo">
                         <Link href="/"> 
                             <a className="flex items-center">
                                 <SvglogoMain></SvglogoMain>
                             </a>
                         </Link>
                     </div>
-                    <div className="logo md:hidden">
-                        <Link href="/"> 
-                            <a className="flex items-center">
-                                <SvglogoMobile></SvglogoMobile>
-                            </a>
-                        </Link>
-                    </div>
+          
                  {/*============location search btn==========*/}
                     <LocationBtn borderbg='bg-golden' borderbghover='bg-golden-alt' innerbg='bg-coffee-light' innerborder='border-black' innerbghover='bg-black' innerborderhover='black' color="white"/>
                  {/*============location search btn==========*/}
