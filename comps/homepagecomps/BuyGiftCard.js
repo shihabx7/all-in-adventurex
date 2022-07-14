@@ -38,7 +38,7 @@ const BuyGiftCard=()=>{
                                 </p>
                                 <div className="gift-btn-box mt-8">
                                     <Link href="#">
-                                        <a className="bg-red-600 hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full">BUY GIFT CARD</a>
+                                        <a className="bg-red-600 card-book-btn  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full">BUY GIFT CARD</a>
                                     </Link>
                                     <Link href="#">
                                         <a className="bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full">LEARN MORE</a>
