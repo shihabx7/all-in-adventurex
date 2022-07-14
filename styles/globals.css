@@ -269,6 +269,27 @@ max-width:140px;
 .react-multi-carousel-dot--active button {
   background-image: linear-gradient(to right, #CA9342 ,#E0BF62) !important;
 }
+.pysicalescapecarousel .react-multi-carousel-track {
+
+  margin:auto !important;
+}
+.pysicalescape{
+  background-image:linear-gradient(65deg,rgba(0, 0, 0,.40),rgba(0, 0, 0,.30)),url('../public/assets/svg/pyescape-bg.svg');
+  background-size: cover ,cover;
+  background-position: center center;
+}
+.py-lt{
+  top:-60px;
+}
+.py-rt{
+  top:-60px;
+}
+.py-lt img{
+  max-width: 120px;
+}
+.py-rt img{
+  max-width: 180px;
+}
 /*========== spin compas=======*/
 @-moz-keyframes spin { 
   100% { -moz-transform: rotate(360deg); } 
