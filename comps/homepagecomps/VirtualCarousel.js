@@ -1,8 +1,7 @@
-
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+const VirtualCarousel=()=>{
 
-const InpersonCarousel=()=>{
     const responsive = {
         desktoplg: {
             breakpoint: { max: 4000, min: 1440 },
@@ -56,12 +55,12 @@ const InpersonCarousel=()=>{
    >
      {/*====== slide 1========= */}
      <div className="text-white bg-gray-300 game-slider-card card-border" style={{
-       background:"url('/assets/game-1.jpg')"
+       background:"url('/assets/vr-game-1.jpg')"
      }}>
        <div className="card-container">
            <div className="card-head flex justify-between items-center p-4 pb-8">
                <div className="card-info">
-                   <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm">Inperson</span>  </p>
+                   <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/virtual-icon.svg"></img></span><span className="text-sm">Virtual</span>  </p>
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm">All age</span>  </p> 
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-time.svg"></img></span><span className="text-sm">50 Minutes</span>  </p>
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm">2-10 Players</span>  </p>
@@ -78,7 +77,7 @@ const InpersonCarousel=()=>{
            </div>
            <div className="card-bottom p-4 pt-12"> 
                <div className="card-game-desc text-center">
-                   <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">Treasure Island</h3>
+                   <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">Madness</h3>
                    <p className="text-gray-200 lg:text-lg">Select the number of participants fill out the details. fill out the number of details.</p>
                </div>
                <div className="card-game-link mt-4 text-center">
@@ -92,12 +91,12 @@ const InpersonCarousel=()=>{
      </div>
       {/*====== slide 2========= */}
      <div className="text-white bg-gray-300 game-slider-card card-border" style={{
-       background:"url('/assets/game-2.jpg')"
+       background:"url('/assets/vr-game-2.jpg')"
      }}>
        <div className="card-container">
            <div className="card-head flex justify-between items-center p-4 pb-8">
                <div className="card-info">
-               <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm">Inperson</span>  </p>
+               <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/virtual-icon.svg"></img></span><span className="text-sm">Virtual</span>  </p>
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm">All age</span>  </p> 
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-time.svg"></img></span><span className="text-sm">50 Minutes</span>  </p>
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm">2-10 Players</span>  </p>
@@ -114,7 +113,7 @@ const InpersonCarousel=()=>{
            </div>
            <div className="card-bottom p-4 pt-12"> 
                <div className="card-game-desc text-center">
-                   <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">Escape From Alcatraz</h3>
+                   <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">Zombie Apocalypse</h3>
                    <p className="text-gray-200 lg:text-lg">Select the number of participants fill out the details. fill out the number of details.</p>
                </div>
                <div className="card-game-link mt-4 text-center">
@@ -128,12 +127,12 @@ const InpersonCarousel=()=>{
      </div>
       {/*====== slide 3========= */}
       <div className="text-white bg-gray-300 game-slider-card card-border" style={{
-       background:"url('/assets/game-3.jpg')"
+       background:"url('/assets/vr-game-3.jpg')"
      }}>
        <div className="card-container">
            <div className="card-head flex justify-between items-center p-4 pb-8">
                <div className="card-info">
-               <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm">Inperson</span>  </p>
+               <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/virtual-icon.svg"></img></span><span className="text-sm">Virtual</span>  </p>
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm">All age</span>  </p> 
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-time.svg"></img></span><span className="text-sm">50 Minutes</span>  </p>
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm">2-10 Players</span>  </p>
@@ -150,7 +149,7 @@ const InpersonCarousel=()=>{
            </div>
            <div className="card-bottom p-4 pt-12"> 
                <div className="card-game-desc text-center">
-                   <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">HOLLYWORD PREMIERE</h3>
+                   <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">Bomb</h3>
                    <p className="text-gray-200 lg:text-lg">Select the number of participants fill out the details. fill out the number of details.</p>
                </div>
                <div className="card-game-link mt-4 text-center">
@@ -164,12 +163,12 @@ const InpersonCarousel=()=>{
      </div>
       {/*====== slide 4========= */}
       <div className="text-white bg-gray-300 game-slider-card card-border" style={{
-       background:"url('/assets/game-4.jpg')"
+       background:"url('/assets/vr-game-4.jpg')"
      }}>
        <div className="card-container">
            <div className="card-head flex justify-between items-center p-4 pb-8">
                <div className="card-info">
-               <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm">Inperson</span>  </p>
+               <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/virtual-icon.svg"></img></span><span className="text-sm">Virtual</span>  </p>
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm">All age</span>  </p> 
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-time.svg"></img></span><span className="text-sm">50 Minutes</span>  </p>
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm">2-10 Players</span>  </p>
@@ -186,7 +185,7 @@ const InpersonCarousel=()=>{
            </div>
            <div className="card-bottom p-4 pt-12"> 
                <div className="card-game-desc text-center">
-                   <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">LOST IN THE JUNGLE</h3>
+                   <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">Prison</h3>
                    <p className="text-gray-200 lg:text-lg">Select the number of participants fill out the details. fill out the number of details.</p>
                </div>
                <div className="card-game-link mt-4 text-center">
@@ -200,12 +199,12 @@ const InpersonCarousel=()=>{
      </div>
       {/*====== slide 5========= */}
       <div className="text-white bg-gray-300 game-slider-card card-border" style={{
-       background:"url('/assets/game-5.jpg')"
+       background:"url('/assets/vr-game-5.jpg')"
      }}>
        <div className="card-container">
            <div className="card-head flex justify-between items-center p-4 pb-8">
                <div className="card-info">
-               <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm">Inperson</span>  </p>
+               <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/virtual-icon.svg"></img></span><span className="text-sm">Virtual</span>  </p>
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm">All age</span>  </p> 
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-time.svg"></img></span><span className="text-sm">50 Minutes</span>  </p>
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm">2-10 Players</span>  </p>
@@ -222,7 +221,7 @@ const InpersonCarousel=()=>{
            </div>
            <div className="card-bottom p-4 pt-12"> 
                <div className="card-game-desc text-center">
-                   <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">Black Ops</h3>
+                   <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">JAPAN</h3>
                    <p className="text-gray-200 lg:text-lg">Select the number of participants fill out the details. fill out the number of details.</p>
                </div>
                <div className="card-game-link mt-4 text-center">
@@ -236,12 +235,12 @@ const InpersonCarousel=()=>{
      </div>
       {/*====== slide 6========= */}
       <div className="text-white bg-gray-300 game-slider-card card-border" style={{
-       background:"url('/assets/game-1.jpg')"
+       background:"url('/assets/vr-game-6.jpg')"
      }}>
        <div className="card-container">
            <div className="card-head flex justify-between items-center p-4 pb-8">
                <div className="card-info">
-               <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm">Inperson</span>  </p>
+               <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/virtual-icon.svg"></img></span><span className="text-sm">Virtual</span>  </p>
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm">All age</span>  </p> 
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-time.svg"></img></span><span className="text-sm">50 Minutes</span>  </p>
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm">2-10 Players</span>  </p>
@@ -258,7 +257,7 @@ const InpersonCarousel=()=>{
            </div>
            <div className="card-bottom p-4 pt-12"> 
                <div className="card-game-desc text-center">
-                   <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">Treasure Island</h3>
+                   <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">Aztec</h3>
                    <p className="text-gray-200 lg:text-lg">Select the number of participants fill out the details. fill out the number of details.</p>
                </div>
                <div className="card-game-link mt-4 text-center">
@@ -270,81 +269,10 @@ const InpersonCarousel=()=>{
        </div>
 
      </div>
-      {/*====== slide 7========= */}
-      <div className="text-white bg-gray-300 game-slider-card card-border" style={{
-       background:"url('/assets/game-3.jpg')"
-     }}>
-       <div className="card-container">
-           <div className="card-head flex justify-between items-center p-4 pb-8">
-               <div className="card-info">
-               <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm">Inperson</span>  </p>
-                   <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm">All age</span>  </p> 
-                   <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-time.svg"></img></span><span className="text-sm">50 Minutes</span>  </p>
-                   <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm">2-10 Players</span>  </p>
-               </div>
-               <div className="card-ribbon">
-                       <div className="inline-block text-center py-2 px-4 bg-red-600">
-                           <p className="text-lg text-white">FROM</p>
-                           <p className="text-3xl text-white font-bold">$28</p>
-                       </div>
-               </div>
-           </div>
-           <div className="card-gap py-10"> 
-
-           </div>
-           <div className="card-bottom p-4 pt-12"> 
-               <div className="card-game-desc text-center">
-                   <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">Treasure Island</h3>
-                   <p className="text-gray-200 lg:text-lg">Select the number of participants fill out the details. fill out the number of details.</p>
-               </div>
-               <div className="card-game-link mt-4 text-center">
-                   <button className="border block card-book-btn mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
-                   <button className="border block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</button>
-               </div>
-               
-            </div>
-       </div>
-
-     </div>
-      {/*====== slide 8========= */}
-      <div className="text-white bg-gray-300 game-slider-card card-border" style={{
-       background:"url('/assets/game-1.jpg')"
-     }}>
-       <div className="card-container">
-           <div className="card-head flex justify-between items-center p-4 pb-8">
-               <div className="card-info">
-               <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm">Inperson</span>  </p>
-                   <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm">All age</span>  </p> 
-                   <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-time.svg"></img></span><span className="text-sm">50 Minutes</span>  </p>
-                   <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm">2-10 Players</span>  </p>
-               </div>
-               <div className="card-ribbon">
-                       <div className="inline-block text-center py-2 px-4 bg-red-600">
-                           <p className="text-lg text-white">FROM</p>
-                           <p className="text-3xl text-white font-bold">$28</p>
-                       </div>
-               </div>
-           </div>
-           <div className="card-gap py-10"> 
-
-           </div>
-           <div className="card-bottom p-4 pt-12"> 
-               <div className="card-game-desc text-center">
-                   <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">Treasure Island</h3>
-                   <p className="text-gray-200 lg:text-lg">Select the number of participants fill out the details. fill out the number of details.</p>
-               </div>
-               <div className="card-game-link mt-4 text-center">
-                   <button className="border card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
-                   <button className="border block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</button>
-               </div>
-               
-            </div>
-       </div>
-
-     </div>
+      
    </Carousel>
    </div>
     )
 }
 
-export default InpersonCarousel;
+export default VirtualCarousel;

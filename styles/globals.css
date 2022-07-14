@@ -215,6 +215,14 @@ max-width:140px;
   bottom:-56px;
   z-index: 50;
 }
+.vr-lt img{
+  max-width:140px;
+  filter:opacity(20%);
+}
+.vr-rt img{
+  max-width:240px;
+  filter:opacity(20%);
+}
 /*==============slider carousel design=======*/
 .game-slider-card{
   background-size: cover !important;
@@ -222,10 +230,10 @@ max-width:140px;
   transition: .4s;
 }
 .card-head{
-  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7),rgba(0,0,0,0.5),transparent);
+  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7),rgba(0,0,0,0.1));
 }
 .card-bottom{
-  background: linear-gradient(transparent,rgba(0,0,0,0.60),rgba(0,0,0,0.78),rgba(0,0,0,0.88),rgba(0,0,0,0.98));
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.78),rgba(0,0,0,0.88),rgba(0,0,0,0.98));
 }
 .card-game-title{
   margin-bottom: 8px;
@@ -233,6 +241,9 @@ max-width:140px;
 .card-game-desc{
   max-height:140px;
   overflow: hidden;
+}
+.card-gap{
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
 }
 .game-slider-card:hover{
   transform: scale(1.02);

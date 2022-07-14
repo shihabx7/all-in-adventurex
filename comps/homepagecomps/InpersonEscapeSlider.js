@@ -9,7 +9,7 @@ const InpersonEscapeSlider =()=>{
 
     
 
-    return <div className="inpsliderhome bg-black relative pb-4">
+    return (<div className="inpsliderhome bg-black relative pb-4">
         <div className="inp inp-lt absolute top-0 left-0"> 
           <img src="/assets/inperson-angel-bg.png"></img>
         </div>
@@ -33,10 +33,11 @@ const InpersonEscapeSlider =()=>{
         </div>
         <div className="view-all flex justify-center py-16">
             <Link href="#"> 
-              <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500"><span>View all In person escape rooms</span> <FaAngleRight/></a>
+              <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all In person escape rooms</span> <FaAngleRight/></a>
             </Link>
          </div>
     </div>
+    )
 
 }
 
