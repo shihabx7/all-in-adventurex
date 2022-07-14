@@ -290,6 +290,15 @@ max-width:140px;
 .py-rt img{
   max-width: 180px;
 }
+.planningevent{
+  background-image:  linear-gradient(65deg,rgba(255, 249, 235,.7),rgba(255, 249, 235,.7)),url('../public/assets/svg/htb-bg.svg');
+  background-position: center center,center center;
+  background-size: cover,cover;
+}
+.plan-title{
+  height: 180px;
+  overflow: hidden;
+}
 /*========== spin compas=======*/
 @-moz-keyframes spin { 
   100% { -moz-transform: rotate(360deg); } 

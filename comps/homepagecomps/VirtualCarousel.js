@@ -81,7 +81,7 @@ const VirtualCarousel=()=>{
                    <p className="text-gray-200 lg:text-lg">Select the number of participants fill out the details. fill out the number of details.</p>
                </div>
                <div className="card-game-link mt-4 text-center">
-                   <button className="border card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                   <button className="border block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
                    <button className="border block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</button>
                </div>
                
@@ -117,7 +117,7 @@ const VirtualCarousel=()=>{
                    <p className="text-gray-200 lg:text-lg">Select the number of participants fill out the details. fill out the number of details.</p>
                </div>
                <div className="card-game-link mt-4 text-center">
-                   <button className="border block card-book-btn  mx-auto card-book-btn border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                   <button className="border block mx-auto  border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
                    <button className="border block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</button>
                </div>
                
@@ -153,7 +153,7 @@ const VirtualCarousel=()=>{
                    <p className="text-gray-200 lg:text-lg">Select the number of participants fill out the details. fill out the number of details.</p>
                </div>
                <div className="card-game-link mt-4 text-center">
-                   <button className="border block card-book-btn  mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                   <button className="border block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
                    <button className="border block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</button>
                </div>
                
@@ -189,7 +189,7 @@ const VirtualCarousel=()=>{
                    <p className="text-gray-200 lg:text-lg">Select the number of participants fill out the details. fill out the number of details.</p>
                </div>
                <div className="card-game-link mt-4 text-center">
-                   <button className="border card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                   <button className="border block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
                    <button className="border block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</button>
                </div>
                
@@ -225,7 +225,7 @@ const VirtualCarousel=()=>{
                    <p className="text-gray-200 lg:text-lg">Select the number of participants fill out the details. fill out the number of details.</p>
                </div>
                <div className="card-game-link mt-4 text-center">
-                   <button className="border block card-book-btn mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                   <button className="border block  mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
                    <button className="border block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</button>
                </div>
                
@@ -261,7 +261,7 @@ const VirtualCarousel=()=>{
                    <p className="text-gray-200 lg:text-lg">Select the number of participants fill out the details. fill out the number of details.</p>
                </div>
                <div className="card-game-link mt-4 text-center">
-                   <button className="border block card-book-btn mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                   <button className="border block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
                    <button className="border block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</button>
                </div>
                

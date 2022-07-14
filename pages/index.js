@@ -2,6 +2,7 @@ import Head from 'next/head'
 import HomeHero from '../comps/homepagecomps/HomeHero'
 import Howtobook from '../comps/homepagecomps/Howtobook'
 import InpersonEscapeSlider from '../comps/homepagecomps/InpersonEscapeSlider'
+import PlaningEventsSlider from '../comps/homepagecomps/PlaningEventsSlider'
 import PysicalEscape from '../comps/homepagecomps/PysicalEscape'
 import VirtualEscapeSlider from '../comps/homepagecomps/VirtualEscapeSlider'
 
@@ -23,6 +24,7 @@ export default function Home() {
        <InpersonEscapeSlider/>
        <VirtualEscapeSlider/>
        <PysicalEscape/>
+       <PlaningEventsSlider/>
         
     
     </div>

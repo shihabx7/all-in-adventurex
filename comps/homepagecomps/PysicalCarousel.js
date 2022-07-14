@@ -60,7 +60,7 @@ const PysicalCarousel=()=>{
        <div className="card-container">
            <div className="card-head flex justify-between items-center p-4 pb-8">
                <div className="card-info">
-                   <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/virtual-icon.svg"></img></span><span className="text-sm">Virtual</span>  </p>
+               <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm">Inperson</span>  </p>
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm">All age</span>  </p> 
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-time.svg"></img></span><span className="text-sm">50 Minutes</span>  </p>
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm">2-10 Players</span>  </p>
@@ -96,7 +96,7 @@ const PysicalCarousel=()=>{
        <div className="card-container">
            <div className="card-head flex justify-between items-center p-4 pb-8">
                <div className="card-info">
-               <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/virtual-icon.svg"></img></span><span className="text-sm">Virtual</span>  </p>
+               <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm">Inperson</span>  </p>
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm">All age</span>  </p> 
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-time.svg"></img></span><span className="text-sm">50 Minutes</span>  </p>
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm">2-10 Players</span>  </p>
@@ -132,7 +132,7 @@ const PysicalCarousel=()=>{
        <div className="card-container">
            <div className="card-head flex justify-between items-center p-4 pb-8">
                <div className="card-info">
-               <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/virtual-icon.svg"></img></span><span className="text-sm">Virtual</span>  </p>
+               <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm">Inperson</span>  </p>
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm">All age</span>  </p> 
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-time.svg"></img></span><span className="text-sm">50 Minutes</span>  </p>
                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm">2-10 Players</span>  </p>
