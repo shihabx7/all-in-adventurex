@@ -1,4 +1,4 @@
-import TitleSeparator from "./TitleSeparator";
+import TitleSeparator from "../util/TitleSeparator";
 import { FaPlay } from "react-icons/fa"
 
 
@@ -23,7 +23,7 @@ const Howtobook=()=>{
             <div className="max-w-7xl mx-auto">
                 <div className="hbt-container pt-16">
                 <TitleSeparator title='HOW TO BOOK AN ADVENTURE' color='golden-text' weight='font-bold'/>
-                <div className="max-w-2xl text-lg mx-auto text-center mt-4 md:mt-8 mb-16">
+                <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-16">
                     <p className="text-gray-700 md:px-8">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
                 </div>
                 {/* How to book 3 steps */}

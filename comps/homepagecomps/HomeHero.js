@@ -1,4 +1,4 @@
-import LocationBtn from "./LocationBtn";
+import LocationBtn from "../util/LocationBtn";
 const HomeHero=()=>{
 
     return(

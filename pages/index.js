@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
-
-import HomeHero from '../comps/util/HomeHero'
-import Howtobook from '../comps/util/Howtobook'
+import HomeHero from '../comps/homepagecomps/HomeHero'
+import Howtobook from '../comps/homepagecomps/Howtobook'
+import InpersonEscapeSlider from '../comps/homepagecomps/InpersonEscapeSlider'
 
 export default function Home() {
   return (
@@ -19,6 +18,7 @@ export default function Home() {
         
        </div>
        <Howtobook></Howtobook>
+       <InpersonEscapeSlider></InpersonEscapeSlider>
         
     
     </div>
