@@ -299,6 +299,25 @@ max-width:140px;
   height: 180px;
   overflow: hidden;
 }
+.buy-gift{
+  background-image:url('../public/assets/svg/gift-bg.svg'),linear-gradient(65deg,rgba(0, 0, 0,.94),rgba(0, 0, 0,.99));
+  background-size: cover,cover;
+  background-position: bottom center,bottom center;
+}
+.gift-rt{
+  top:-40px;
+  right:-40px;
+  animation:spin 90s linear infinite;
+}
+.gift-rt img{
+  max-width:190px;
+  filter: grayscale(100%);
+  opacity: .2;
+}
+.gift-lt img{
+  max-width:220px;
+ 
+}
 /*========== spin compas=======*/
 @-moz-keyframes spin { 
   100% { -moz-transform: rotate(360deg); } 

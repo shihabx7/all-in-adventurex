@@ -5,6 +5,7 @@ import InpersonEscapeSlider from '../comps/homepagecomps/InpersonEscapeSlider'
 import PlaningEventsSlider from '../comps/homepagecomps/PlaningEventsSlider'
 import PysicalEscape from '../comps/homepagecomps/PysicalEscape'
 import VirtualEscapeSlider from '../comps/homepagecomps/VirtualEscapeSlider'
+import BuyGiftCard from '../comps/homepagecomps/BuyGiftCard'
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
        <VirtualEscapeSlider/>
        <PysicalEscape/>
        <PlaningEventsSlider/>
+       <BuyGiftCard/>
         
     
     </div>

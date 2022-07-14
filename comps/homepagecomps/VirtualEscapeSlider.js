@@ -6,15 +6,15 @@ import VirtualCarousel from "./VirtualCarousel";
 
 const VirtualEscapeSlider=()=>{
 
-    return (<div className="inpsliderhome bg-black relative pb-4">
+    return (<div className="inpsliderhome bg-black relative pb-4 z-20">
         <div className="inp vr-lt absolute top-0 left-0"> 
           <img src="/assets/vr-rocket.png"></img>
         </div>
-        <div className="inp vr-rt absolute top-0 right-0"> 
+        <div className="inp vr-rt absolute top-0 right-0 z-20"> 
           <img src="/assets/vr-superman.png"></img>
         </div>
         
-        <div className="max-w-7xl mx-auto pt-8 px-4 ">
+        <div className="max-w-7xl mx-auto pt-8 px-4 z-40">
              <TitleSeparator title='VIRTUAL ESCAPE ROOMS' color='golden-text' weight='font-bold'/>
              <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-16">
                     <p className="text-gray-200 md:px-8">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
