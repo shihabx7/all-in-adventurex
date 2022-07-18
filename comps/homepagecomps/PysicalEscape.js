@@ -14,9 +14,9 @@ const PysicalEscape=()=>{
           <img src="/assets/py-planet.png"></img>
         </div>
         
-        <div className="max-w-7xl mx-auto pt-8 px-4 z-50 ">
+        <div className="max-w-7xl mx-auto pt-4 md:pt-8 px-4 relative z-20 ">
              <TitleSeparator title='OTHERS PHYSICAL GAMES' color='golden-text' weight='font-bold'/>
-             <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-16">
+             <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-16">
                     <p className="text-gray-200 md:px-8">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
                 </div>
         </div>

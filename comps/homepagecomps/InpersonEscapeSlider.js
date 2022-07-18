@@ -22,9 +22,9 @@ const InpersonEscapeSlider =()=>{
         <div className="inp inp-rb absolute bottom-12 right-0"> 
           <img src="/assets/inperson-planet-bg.png"></img>
         </div>
-        <div className="max-w-7xl mx-auto pt-28 px-4 ">
+        <div className="max-w-7xl mx-auto pt-16 md:pt-28 px-4 z-20 relative">
              <TitleSeparator title='IN PERSON ESCAPE ROOMS' color='golden-text' weight='font-bold'/>
-             <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-16">
+             <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-16">
                     <p className="text-gray-200 md:px-8">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
                 </div>
         </div>

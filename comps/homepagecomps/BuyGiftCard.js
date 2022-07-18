@@ -4,7 +4,7 @@ const BuyGiftCard=()=>{
 
     return(
 
-        <div className="buy-gift py-28  relative overflow-hidden"> 
+        <div className="buy-gift py-20 md:py-28  relative overflow-hidden"> 
             <div className="gift-lt absolute top-0 left-0"> 
                 <img src="/assets/gift-balon-bg.png"></img>
             </div>

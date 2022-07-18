@@ -44,7 +44,7 @@ const InpersonCarousel=()=>{
     autoPlay={ false }
     // autoPlaySpeed={5000}
      keyBoardControl={true}
-     customTransition="all .5 ease-in-out"
+     customTransition=".5s ease-in-out"
      transitionDuration={500}
      containerClass="carousel-container"
      removeArrowOnDeviceType={["tablet", "mobile"]}

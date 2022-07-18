@@ -6,7 +6,7 @@ import { FaPlay } from "react-icons/fa"
 const Howtobook=()=>{
 
     return(
-        <div className="htb relative pt-20 pb-20 px-4 overflow-hidden">
+        <div className="htb relative py-16 md:py-20 lg:py-28 px-4 overflow-hidden">
             <div className="htb-bg-icon htb-bg-1 absolute">
                 <img src="/assets/calendar.png"></img>
             </div>
@@ -21,7 +21,7 @@ const Howtobook=()=>{
             </div>
 
             <div className="max-w-7xl mx-auto">
-                <div className="hbt-container pt-16">
+                <div className="hbt-container pt-4 md:pt-16 relative z-20">
                 <TitleSeparator title='HOW TO BOOK AN ADVENTURE' color='golden-text' weight='font-bold'/>
                 <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-16">
                     <p className="text-gray-700 md:px-8">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
@@ -61,7 +61,7 @@ const Howtobook=()=>{
                     </div>
                 </div>
                 {/* How to book 3 steps  end*/}
-                <div className="video-play-btn flex justify-center mt-4 mb-12"> 
+                <div className="video-play-btn flex justify-center mt-4 mb-4 md:mb-12"> 
                     <div className="paly-btn flex space-x-2 items-center py-4 px-8 rounded font-semibold">
                             <span className="text-2xl"> <FaPlay/> </span>
                             <span>PLAY TEASER VIDEO</span>

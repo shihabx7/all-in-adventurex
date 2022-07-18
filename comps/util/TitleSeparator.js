@@ -3,8 +3,9 @@ const TitleSeparator=(props)=>{
     return(
 
         <div className="sep-title text-center">
-            <h2 className={props.color+' text-2xl md:text-3xl lg:text-4xl font-os '+props.weight}>{props.title}</h2>
-            <div className="flex sep items-center max-w-xs mx-auto mt-1 md:mt-3 space-x-3">
+            <div className="sep-container inline-block mx-auto"> 
+            <h2 className={props.color+' pt-1 text-2xl md:text-[40px] lg:text-[44px] font-os '+props.weight}>{props.title}</h2>
+            <div className="max-w-[72%] md:max-w-[80%] flex sep items-center mx-auto mt-1 md:mt-3 justify-between space-x-2">
                 <div className="bg-golden w-2/5 h-0.5"></div>
                 <div className=" w-auto hidden md:block">
                            <svg width="37" height="26" viewBox="0 0 37 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +58,7 @@ const TitleSeparator=(props)=>{
                 <div className="bg-golden w-2/5 h-0.5"></div>
 
             </div>
-
+            </div>
         </div>
     );
 

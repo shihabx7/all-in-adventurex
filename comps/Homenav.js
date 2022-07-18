@@ -9,7 +9,7 @@ import LocationMenu from "./headerComps/LocationMenu";
 import Link from "next/link"
 import { useEffect, useRef, useState} from 'react';
 import HeaderBtnRed from "./headerComps/HeaderBtnRed";
-import LocationBtn from "./util/LocationBtn";
+import LocationBtnH from "./util/LocationBtnH";
 
 
 
@@ -54,9 +54,9 @@ const Homenav=()=>{
                     </div>
           
                  {/*============location search btn==========*/}
-                    <LocationBtn borderbg='bg-golden' borderbghover='bg-golden-alt' innerbg='bg-coffee-light' innerborder='border-black' innerbghover='bg-black' innerborderhover='black' color="white"/>
+                    <LocationBtnH borderbg='bg-golden' borderbghover='bg-golden-alt' innerbg='bg-coffee-light' innerborder='border-black' innerbghover='bg-black' innerborderhover='black' color="white"/>
                  {/*============location search btn==========*/}
-                    <div className="home-nav-menu flex items-center space-x-0 md:space-x-14 justify-end "> 
+                    <div className="home-nav-menu flex items-center space-x-0 md:space-x-10 lg:space-x-14 justify-end "> 
                         
                          <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
                            
@@ -64,7 +64,7 @@ const Homenav=()=>{
                             
                          </div>
                          <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
-                           <HeaderBtnRed btntext='BOOK GAMES' btnbg='bg-red-500'/>
+                           <HeaderBtnRed btntext='BOOK GAMES' btnbg='bg-red-600'/>
                          </div>
                          <div className="menu-item hover:shadow-md hover:cursor-pointer relative" onClick={toggle}>
                             <div className="menu-icon-box p-2 bg-coffee-light"
