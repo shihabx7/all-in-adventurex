@@ -12,7 +12,7 @@ import HomeReviewSlider from '../comps/homepagecomps/HomeReviewSlider'
 
 export default function Home() {
   return (
-    <div >
+    <div id="mainContent" className='main-content'>
       <Head>
         <title>All in adventure</title>
         <meta name="description" content="All in one adventure escape games" />

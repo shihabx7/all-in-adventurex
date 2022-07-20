@@ -38,4 +38,23 @@ for (let j = 0; j < sliderbookBtn.length; j++) {
 }
 
 
+// scroll function
 
+
+  window.onload = (event) =>{
+
+    let headerHeight=document.getElementById("header").offsetHeight;
+  document.getElementById("mainContent").style.paddingTop=headerHeight+"px";
+  console.log(headerHeight);
+};
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header").style.top = "0";
+  } else {
+    document.getElementById("header").style.top = "-160px";
+  }
+  prevScrollpos = currentScrollPos;
+}

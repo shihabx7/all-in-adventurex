@@ -15,7 +15,7 @@ const HomeHero=()=>{
                 <div className="max-w-md mx-auto mt-8 pb-8 ">
 
                         {/*============location search btn==========*/}
-                        <LocationBtn borderbg='bg-red-500' borderbghover='bg-red-900' innerbg='bg-white' innerborder='border-white' innerbghover='bg-grey-200' innerborderhover='border-gray-200' color="text-black"/>
+                        <LocationBtn borderbg='bg-red-600' borderbghover='bg-red-900' innerbg='bg-white' innerborder='border-white' innerbghover='bg-grey-200' innerborderhover='border-gray-200' color="text-black"/>
                          {/*============location search btn==========*/}
 
 

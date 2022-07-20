@@ -42,7 +42,7 @@ const Homenav=()=>{
         </div>
         
         
-        <header className="bg-coffee w-full z-50">
+        <header id="header" className="bg-coffee w-full z-50 fixed">
             <div className="max-w-7xl mx-auto relative md:px-4" ref={ref}>
                 <div className="home-nav-bar flex justify-between items-center py-2 px-2 sm:p-1 lg:py-2 lg:px-0"> 
                     <div className="logo">

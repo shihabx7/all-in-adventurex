@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 
 html,body,a{
@@ -10,6 +10,10 @@ html,body,a{
 }
 .font-os{
   font-family: 'Oswald', sans-serif;
+}
+#header{
+  transition: top 0.6s ease-in;
+  z-index: 10000;
 }
 .boder-p{
   padding:2px;
@@ -60,6 +64,9 @@ html,body,a{
   transition: .4s;
   
 }
+.font-th{
+  font-weight:300;
+}
 .submenu-item:hover a .sub-link-txt{
   border-bottom:1px solid #FFEFCD;
   color:#FFEFCD;
@@ -102,6 +109,7 @@ html,body,a{
 .footer-link{
   line-height:1.8;
   transition: .3s;
+  color:#7b7b7b;
  }
 .footer-link:hover{
  color:#FFEFCD;
@@ -110,6 +118,8 @@ html,body,a{
 .usefull-link a{
   padding-bottom: 4px;
   transition: .3s;
+ 
+  color: #7b7b7b;
 }
 .usefull-link a:hover{
  border-bottom:1px solid #FFEFCD;
@@ -737,6 +747,20 @@ background-size: cover,cover;
   .what-is-2 {
     
     margin-top: 60px !important;
+  }
+  .footer-link {
+    line-height: 1.9;
+    
+    font-size: 16px;
+  }
+  .usefull-link a {
+    padding-bottom: 2px;
+   
+    font-size: 15px;
+  }
+  .usefull-link {
+    padding-bottom: 10px;
+  
   }
 }
 @media only screen and (max-width: 640px) {

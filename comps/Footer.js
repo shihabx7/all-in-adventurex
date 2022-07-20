@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import logo from '../public/assets/logo.png'
+import LocationBtn from './util/LocationBtn';
 import footermap from '../public/assets/footer-map.png'
 import { BiMap } from "react-icons/bi";
 import { FaAngleDown,FaAngleRight,FaLinkedin,FaFacebookSquare,FaTwitterSquare,FaInstagramSquare } from "react-icons/fa";
@@ -15,26 +15,26 @@ const Footer=()=>{
                 <div className="max-w-7xl mx-auto px-4"> 
                     <div className="footer-info-row max-w-lg  mx-auto pt-20">
                         <div className="footer-logo text-center">
-                            <Image src={logo}/>
+                            <img className='max-w-[120px] mx-auto' src="/assets/svg/logo.svg"></img>
                             {/* svg image will be added */}
                         </div>
                         <div className='footer-info text-center'>
-                            <h3 className='golden-text pt-6 font-bold text-2xl md:text-3xl lg:text-4xl'>ALL IN ADVENTURES</h3>
-                            <p className='text-gray-500 pt-4 pb-8'>Select the number of participants, fill out the details and purchase the gift card. 
+                            <h3 className='golden-text pt-6 font-os font-bold text-3xl md:text-3xl lg:text-4xl'>ALL IN ADVENTURES</h3>
+                            <p className='text-[#7b7b7b] md:text-lg pt-4 pb-8'>Select the number of participants, fill out the details and purchase the gift card. 
                             The details and purchase the gift card also select the number. 
                             The details and purchase the gift card.</p>
-                            <div className='adv-btn search-loc border-btn rounded-full mx-auto max-w-xs bg-dark-red hover:bg-golden-alt'> 
-                                <div className='footer-btn justify-between  bg-esc-black flex space-x-2 md:space-x-3 shrink rounded-full text-white p-3 items-center hover:shadow-md'> 
-                                     <span class="text-xl md:text-2xl"> <BiMap/></span><span class=" font-medium text-sm md:text-base">CHOOSE YOUR LOCATION</span><span className="text-xl md:text-2xl">  <FaAngleDown/></span>
-                                </div>
+                            <div className='max-w-[400px] mx-auto'>
+                            <LocationBtn borderbg='bg-red-600' borderbghover='bg-red-900' innerbg='bg-[#111111]' innerborder='border-[#111111]' innerbghover='bg-grey-200' innerborderhover='border-gray-200' color="text-white"/>
+
                             </div>
+                            
 
                         </div>
 
                     </div>
                     {/*========================================= map will be added================ */}
                     <div className='footer-map-row text-center'> 
-                        <h3 className='golden-text py-8 font-bold text-xl md:text-2xl lg:text-3xl'>30 LOCATIONS IN THE US</h3>
+                        <h3 className='golden-text py-8 font-os font-bold text-2xl md:text-3xl lg:text-3xl'>30 LOCATIONS IN THE US</h3>
 
                         <div className='footer-map'>
                           <Image src={footermap}/>
@@ -48,39 +48,38 @@ const Footer=()=>{
                         <div className='footer-loc-col w-full md:w-auto'> 
                             <div className='footer-loc-col-box'> 
                                 <div className='footer-loc-head'> 
-                                    <Link href="#"> 
-                                        <a className='text-lg md:text-xl golden-text pb-1 border-b border-dark-gold footer-link font-bold'>NEW YORK</a>
-                                    </Link>
+                                  
+                                        <h3 className='text-lg md:text-xl golden-text pb-1 border-b border-dark-gold inline-block font-bold'>NEW YORK</h3>
+                                   
                                 </div>
                                 <div className='footer-loc-link-box mt-6'> 
                                     <Link href="#"> 
-                                        <a className='text-gray-400 footer-link flex space-x-2 items-center my-2 text-sm lg:text-base'>Albany Escape Room<span><FaAngleRight/></span></a>
+                                        <a className='footer-link flex space-x-2 items-center my-2 text-sm lg:text-base'>Albany Escape Room<span><FaAngleRight/></span></a>
                                     </Link>
                                     <Link href="#"> 
-                                        <a className='text-gray-400 footer-link flex space-x-2 items-center my-2 text-sm  lg:text-base'>Buffalo Escape Room<span><FaAngleRight/></span></a>
+                                        <a className='footer-link flex space-x-2 items-center my-2 text-sm  lg:text-base'>Buffalo Escape Room<span><FaAngleRight/></span></a>
                                     </Link>
                                     <Link href="#"> 
-                                        <a className='text-gray-400 footer-link flex space-x-2 items-center my-2 text-sm  lg:text-base'>Middletown Escape Room<span><FaAngleRight/></span></a>
+                                        <a className='footer-link flex space-x-2 items-center my-2 text-sm  lg:text-base'>Middletown Escape Room<span><FaAngleRight/></span></a>
                                     </Link>
                                     <Link href="#"> 
-                                        <a className='text-gray-400 footer-link flex space-x-2 items-center my-2 text-sm  lg:text-base'>Syracuse Escape Room<span><FaAngleRight/></span></a>
+                                        <a className='footer-link flex space-x-2 items-center my-2 text-sm  lg:text-base'>Syracuse Escape Room<span><FaAngleRight/></span></a>
                                     </Link>
                                     <Link href="#"> 
-                                        <a className='text-gray-400 footer-link flex space-x-2 items-center my-2 text-sm  lg:text-base'>Watertown Escape Room<span><FaAngleRight/></span></a>
+                                        <a className='footer-link flex space-x-2 items-center my-2 text-sm  lg:text-base'>Watertown Escape Room<span><FaAngleRight/></span></a>
                                     </Link>
                                     <Link href="#"> 
-                                        <a className='text-gray-400 footer-link flex space-x-2 items-center my-2 text-sm  lg:text-base'>West Nyack Escape Room<span><FaAngleRight/></span></a>
+                                        <a className='footer-link flex space-x-2 items-center my-2 text-sm  lg:text-base'>West Nyack Escape Room<span><FaAngleRight/></span></a>
                                     </Link>
                                     <Link href="#"> 
-                                        <a className='text-gray-400 footer-link flex space-x-2 items-center my-2 text-sm  lg:text-base'>Yorktown Heights Escape Room<span><FaAngleRight/></span></a>
+                                        <a className='footer-link flex space-x-2 items-center my-2 text-sm  lg:text-base'>Yorktown Heights Escape Room<span><FaAngleRight/></span></a>
                                     </Link>
                                 </div>
                             </div>
                             <div className='footer-loc-col-box mt-8'> 
                                 <div className='footer-loc-head'> 
-                                    <Link href="#"> 
-                                        <a className='text-lg md:text-xl text-xl golden-text pb-1 border-b border-dark-gold footer-link font-bold'>OHIO</a>
-                                    </Link>
+                                     <h3 className='text-lg md:text-xl golden-text pb-1 border-b border-dark-gold inline-block font-bold'>OHIO</h3>
+                                  
                                 </div>
                                 <div className='footer-loc-link-box mt-6'> 
                                     <Link href="#"> 
@@ -102,9 +101,8 @@ const Footer=()=>{
                         <div className='footer-loc-col w-full md:w-auto pt-6 md:pt-0'> 
                             <div className='footer-loc-col-box'> 
                                 <div className='footer-loc-head'> 
-                                    <Link href="#"> 
-                                        <a className='text-lg md:text-xl golden-text pb-1 border-b border-dark-gold footer-link font-bold'>MASSACHUSETTS</a>
-                                    </Link>
+                                    <h3 className='text-lg md:text-xl golden-text pb-1 border-b border-dark-gold inline-block font-bold'>MASSACHUSETTS</h3>
+                                    
                                 </div>
                                 <div className='footer-loc-link-box mt-6'> 
                                     <Link href="#"> 
@@ -127,9 +125,8 @@ const Footer=()=>{
                             </div>
                             <div className='footer-loc-col-box mt-8'> 
                                 <div className='footer-loc-head'> 
-                                    <Link href="#"> 
-                                        <a className='text-lg md:text-xl golden-text pb-1 border-b border-dark-gold footer-link font-bold'>MARYLAND</a>
-                                    </Link>
+                                 <h3 className='text-lg md:text-xl golden-text pb-1 border-b border-dark-gold inline-block font-bold'>MARYLAND</h3>
+                                    
                                 </div>
                                 <div className='footer-loc-link-box mt-6'> 
                                     <Link href="#"> 
@@ -144,9 +141,9 @@ const Footer=()=>{
                             </div>
                             <div className='footer-loc-col-box mt-8'> 
                                 <div className='footer-loc-head'> 
-                                    <Link href="#"> 
-                                        <a className='text-lg md:text-xl golden-text pb-1 border-b border-dark-gold footer-link font-bold'>VIRGINIA</a>
-                                    </Link>
+                                    
+                                  <h3 className='text-lg md:text-xl golden-text pb-1 border-b border-dark-gold inline-block font-bold'>VIRGINIA</h3>
+                                  
                                 </div>
                                 <div className='footer-loc-link-box mt-6'> 
                                     <Link href="#"> 
@@ -164,9 +161,9 @@ const Footer=()=>{
                         <div className='footer-loc-col w-full md:w-auto pt-6 md:pt-0'> 
                             <div className='footer-loc-col-box'> 
                                 <div className='footer-loc-head'> 
-                                    <Link href="#"> 
-                                        <a className='text-lg md:text-xl golden-text pb-1 border-b border-dark-gold footer-link font-bold'>CONNECTICUT</a>
-                                    </Link>
+                                     
+                                <h3 className='text-lg md:text-xl golden-text pb-1 border-b border-dark-gold inline-block font-bold'>CONNECTICUT</h3>
+                                    
                                 </div>
                                 <div className='footer-loc-link-box mt-6'> 
                                     <Link href="#"> 
@@ -199,9 +196,8 @@ const Footer=()=>{
                             </div>
                             <div className='footer-loc-col-box mt-8'> 
                                 <div className='footer-loc-head'> 
-                                    <Link href="#"> 
-                                        <a className='text-xl golden-text pb-1 border-b border-dark-gold footer-link font-bold'>TEXAS</a>
-                                    </Link>
+                                <h3 className='text-lg md:text-xl golden-text pb-1 border-b border-dark-gold inline-block font-bold'>TEXAS</h3>
+                                   
                                 </div>
                                 <div className='footer-loc-link-box mt-6'> 
                                     <Link href="#"> 
@@ -218,9 +214,8 @@ const Footer=()=>{
                         <div className='footer-loc-col w-full md:w-auto pt-6 md:pt-0'> 
                             <div className='footer-loc-col-box'> 
                                 <div className='footer-loc-head'> 
-                                    <Link href="#"> 
-                                        <a className='text-lg md:text-xl golden-text pb-1 border-b border-dark-gold footer-link font-bold'>NEW JERSEY</a>
-                                    </Link>
+                                <h3 className='text-lg md:text-xl golden-text pb-1 border-b border-dark-gold inline-block font-bold'>NEW JERSEY</h3>
+                                    
                                 </div>
                                 <div className='footer-loc-link-box mt-6'> 
                                     <Link href="#"> 
@@ -237,9 +232,9 @@ const Footer=()=>{
                             </div>
                             <div className='footer-loc-col-box mt-8'> 
                                 <div className='footer-loc-head'> 
-                                    <Link href="#"> 
-                                        <a className='text-lg md:text-xl golden-text pb-1 border-b border-dark-gold footer-link font-bold'>PENNSYLVANIA</a>
-                                    </Link>
+                                
+                                  <h3 className='text-lg md:text-xl golden-text pb-1 border-b border-dark-gold inline-block font-bold'>PENNSYLVANIA</h3>
+                                    
                                 </div>
                                 <div className='footer-loc-link-box mt-6'> 
                                     <Link href="#"> 
@@ -254,9 +249,8 @@ const Footer=()=>{
                             </div>
                             <div className='footer-loc-col-box mt-8'> 
                                 <div className='footer-loc-head'> 
-                                    <Link href="#"> 
-                                        <a className='text-lg md:text-xl golden-text pb-1 border-b border-dark-gold footer-link font-bold'>GEORGIA</a>
-                                    </Link>
+                                   <h3 className='text-lg md:text-xl golden-text pb-1 border-b border-dark-gold inline-block font-bold'>GEORGIA</h3>
+                                    
                                 </div>
                                 <div className='footer-loc-link-box mt-6'> 
                                     <Link href="#"> 
@@ -276,7 +270,7 @@ const Footer=()=>{
                         <div className='footer-copy-row pt-8'> 
                             <h3 className='golden-text font-xl font-bold text-center'>USEFUL LINKS</h3>
                           {/*========================================= usefull link end================ */}
-                            <div className='usefull-link-box block text-center md:flex justify-between items-center py-12'> 
+                            <div className='usefull-link-box block text-center md:flex justify-between items-center py-4 pb-0 md:py-10 lg:py-12'> 
                                 <div className='usefull-link text-gray-400 inline-block pr-2 md:pr-0'> 
                                     <Link href="/about"> 
                                         <a className='text-gray-400  text-sm  lg:text-base'>About</a>
@@ -375,16 +369,16 @@ const Footer=()=>{
                           <h3 className='golden-text font-xl font-bold text-center'>FOLLOW US ON SOCIAL</h3>
                          <div className='social-icon-list-box mt-4 flex justify-center space-x-3 md:space-x-6'>
                             <Link href="#"> 
-                                <a className='text-gray-500 text-3xl'><FaFacebookSquare/></a>
+                                <a className='text-gray-500 hover:text-gold text-3xl'><FaFacebookSquare/></a>
                             </Link>
                             <Link href="#"> 
-                                <a className='text-gray-500 text-3xl'><FaLinkedin/></a>
+                                <a className='text-gray-500 hover:text-gold text-3xl'><FaLinkedin/></a>
                             </Link>
                             <Link href="#"> 
-                                <a className='text-gray-500 rounded text-3xl'><FaInstagramSquare/></a>
+                                <a className='text-gray-500 hover:text-gold rounded text-3xl'><FaInstagramSquare/></a>
                             </Link>
                             <Link href="#"> 
-                                <a className='text-gray-500 text-3xl'><FaTwitterSquare/></a>
+                                <a className='text-gray-500 hover:text-gold text-3xl'><FaTwitterSquare/></a>
                             </Link>
                          </div>
 
@@ -392,7 +386,7 @@ const Footer=()=>{
                        {/*========================================= footer social ================ */}     
                        {/*========================================= footer copy ================ */}    
                             <div className='copy-text text-center py-8'> 
-                                <p className='text-gray-400 text-xs md:text-base'> &copy;Copyright All In Adventures | All Rights Reserved.</p>
+                                <p className='text-[#858585] text-xs md:text-base'> &copy;Copyright All In Adventures | All Rights Reserved.</p>
                                 <div className='term-policy flex justify-center space-x-2 items-center mt-2'> 
                                     <Link href="/privacy-policy"> 
                                         <a className='text-gray-600 hover-golden text-xs md:text-base'>Privacy policy</a>

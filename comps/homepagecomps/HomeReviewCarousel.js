@@ -58,15 +58,15 @@ const HomeReviewCarousel=()=>{
        <div className="card-container relative">
            <div className="rev-card-head">
                <div className="card-img review-img px-4">
-                    <img src="/assets/reviews/rev-img-1.jpg"></img>
+                    <img src="/assets/reviews/rev-img-2.jpg"></img>
                </div>
            </div>
            
            <div className="card-rev-bottom bg-black pt-4 px-4"> 
                <div className="card-rev-desc text-center">
                     <img class="inline" src="/assets/reviews/rev-5star.svg"></img>
-                   <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-bold uppercase text-white">It was so much fun!</h3>
-                   <p className="golden-text lg:text-lg">"Our team had a wonderful time at All In Adventures! Not only was it fun, but it was a great opportunity for my team to work together and figure out the soluation.</p>
+                   <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-medium uppercase text-white">Really enjoyed it!</h3>
+                   <p className="golden-text font-light lg:text-lg italic">&quot;I took my son into the Ops adventure Room for his birthday (the kid LOVES military stuff!). It was definitely challengingbut he absolutely LOVED IT!</p>
                </div>
                <div className="card-rev-auth mt-4 pb-8 text-center">
                <p className="text-[#afafaf]">Margarida R.</p>
@@ -89,8 +89,8 @@ const HomeReviewCarousel=()=>{
            <div className="card-rev-bottom bg-black pt-4 px-4"> 
                <div className="card-rev-desc text-center">
                     <img class="inline" src="/assets/reviews/rev-5star.svg"></img>
-                   <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-bold uppercase text-white">It was so much fun!</h3>
-                   <p className="golden-text lg:text-lg">"Our team had a wonderful time at All In Adventures! Not only was it fun, but it was a great opportunity for my team to work together and figure out the soluation.</p>
+                   <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-medium uppercase text-white">It was so much fun!</h3>
+                   <p className="golden-text lg:text-lg font-light italic">&quot;Our team had a wonderful time at All In Adventures! Not only was it fun, but it was a great opportunity for my team to work together and figure out the soluation.</p>
                </div>
                <div className="card-rev-auth mt-4 pb-8 text-center">
                <p className="text-[#afafaf]">Margarida R.</p>
@@ -113,8 +113,8 @@ const HomeReviewCarousel=()=>{
            <div className="card-rev-bottom bg-black pt-4 px-4"> 
                <div className="card-rev-desc text-center">
                     <img class="inline" src="/assets/reviews/rev-5star.svg"></img>
-                   <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-bold uppercase text-white">It was so much fun!</h3>
-                   <p className="golden-text lg:text-lg">"Our team had a wonderful time at All In Adventures! Not only was it fun, but it was a great opportunity for my team to work together and figure out the soluation.</p>
+                   <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-medium uppercase text-white">It was so much fun!</h3>
+                   <p className="golden-text lg:text-lg font-light italic">&quot;Our team had a wonderful time at All In Adventures! Not only was it fun, but it was a great opportunity for my team to work together and figure out the soluation.</p>
                </div>
                <div className="card-rev-auth mt-4 pb-8 text-center">
                <p className="text-[#afafaf]">Margarida R.</p>
@@ -137,8 +137,8 @@ const HomeReviewCarousel=()=>{
            <div className="card-rev-bottom bg-black pt-4 px-4"> 
                <div className="card-rev-desc text-center">
                     <img class="inline" src="/assets/reviews/rev-5star.svg"></img>
-                   <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-bold uppercase text-white">It was so much fun!</h3>
-                   <p className="golden-text lg:text-lg">"Our team had a wonderful time at All In Adventures! Not only was it fun, but it was a great opportunity for my team to work together and figure out the soluation.</p>
+                   <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-medium uppercase text-white">It was so much fun!</h3>
+                   <p className="golden-text lg:text-lg font-light italic">"Our team had a wonderful time at All In Adventures! Not only was it fun, but it was a great opportunity for my team to work together and figure out the soluation.</p>
                </div>
                <div className="card-rev-auth mt-4 pb-8 text-center">
                <p className="text-[#afafaf]">Margarida R.</p>
@@ -161,8 +161,8 @@ const HomeReviewCarousel=()=>{
            <div className="card-rev-bottom bg-black pt-4 px-4"> 
                <div className="card-rev-desc text-center">
                     <img class="inline" src="/assets/reviews/rev-5star.svg"></img>
-                   <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-bold uppercase text-white">It was so much fun!</h3>
-                   <p className="golden-text lg:text-lg">"Our team had a wonderful time at All In Adventures! Not only was it fun, but it was a great opportunity for my team to work together and figure out the soluation.</p>
+                   <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-medium uppercase text-white">It was so much fun!</h3>
+                   <p className="golden-text lg:text-lg font-light italic">"Our team had a wonderful time at All In Adventures! Not only was it fun, but it was a great opportunity for my team to work together and figure out the soluation.</p>
                </div>
                <div className="card-rev-auth mt-4 pb-8 text-center">
                <p className="text-[#afafaf]">Margarida R.</p>
@@ -185,8 +185,8 @@ const HomeReviewCarousel=()=>{
            <div className="card-rev-bottom bg-black pt-4 px-4"> 
                <div className="card-rev-desc text-center">
                     <img class="inline" src="/assets/reviews/rev-5star.svg"></img>
-                   <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-bold uppercase text-white">It was so much fun!</h3>
-                   <p className="golden-text lg:text-lg">"Our team had a wonderful time at All In Adventures! Not only was it fun, but it was a great opportunity for my team to work together and figure out the soluation.</p>
+                   <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-medium uppercase text-white">It was so much fun!</h3>
+                   <p className="golden-text lg:text-lg font-light italic">"Our team had a wonderful time at All In Adventures! Not only was it fun, but it was a great opportunity for my team to work together and figure out the soluation.</p>
                </div>
                <div className="card-rev-auth mt-4 pb-8 text-center">
                <p className="text-[#afafaf]">Margarida R.</p>
