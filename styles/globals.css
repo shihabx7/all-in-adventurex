@@ -177,7 +177,7 @@ html,body,a{
   cursor: pointer;
 }
 .home-hero{
-  background-image: url(../public/assets/home-benar-bg.jpg);
+  background-image: url('../public/assets/home-benar-bg.jpg');
   background-position: center center;
   background-size: cover;
 }
