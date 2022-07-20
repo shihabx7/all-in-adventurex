@@ -23,21 +23,22 @@ const Howtobook=()=>{
             <div className="max-w-7xl mx-auto">
                 <div className="hbt-container pt-4 md:pt-16 relative z-20">
                 <TitleSeparator title='HOW TO BOOK AN ADVENTURE' color='golden-text' weight='font-bold'/>
-                <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-16">
+                <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16">
                     <p className="text-gray-700 md:px-8">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
                 </div>
                 {/* How to book 3 steps */}
-                <div className='htb-steps flex justify-center items-center max-w-4xl mx-auto'>
+                <div className='htb-steps flex justify-btween mb-10 md:justify-center items-center max-w-4xl mx-auto'>
                     <div className="htb-step"> 
                         <div className="htb-icon"> 
-                         <img src="/assets/svg/choose-location.svg"></img>
+                            <img src="/assets/svg/choose-location.svg"></img>
                         </div>
                         <h3 className="golden-text text-3xl font-bold mt-2">1</h3>
                         <div className='htb-text text-gray-700 mt-2 mb-12 font-medium'>CHOOSE LOCATION </div>
                     </div>
 
                     <div className="htb-step-line"> 
-                        <img src="/assets/svg/htb-line-1.svg"></img>
+                        <img className="hidden md:block" src="/assets/svg/htb-line-1.svg"></img>
+                        <img className="md:hidden" src="/assets/svg/step-line-mb.svg"></img>
                     </div>
                     
                     <div className="htb-step"> 
@@ -49,7 +50,8 @@ const Howtobook=()=>{
                     </div>
 
                     <div className="htb-step-line"> 
-                    <img src="/assets/svg/htb-line-2.svg"></img>
+                        <img className="hidden md:block" src="/assets/svg/htb-line-2.svg"></img>
+                        <img className="md:hidden" src="/assets/svg/step-line-mb.svg"></img>
                     </div>
 
                     <div className="htb-step"> 

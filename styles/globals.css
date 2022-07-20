@@ -275,11 +275,19 @@ max-width:140px;
 .react-multi-carousel-dot--active button {
   background-image: linear-gradient(to right, #CA9342 ,#E0BF62) !important;
 }
+.v-slider-home .react-multi-carousel-track {
+
+  margin:auto !important;
+}
 .pysicalescapecarousel .react-multi-carousel-track {
 
   margin:auto !important;
 }
 .pysicalescape{
+  background:#000000;
+  
+}
+.vr-slider{
   background-image:linear-gradient(65deg,rgba(0, 0, 0,.40),rgba(0, 0, 0,.30)),url('../public/assets/svg/pyescape-bg.svg');
   background-size: cover ,cover;
   background-position: center center;
@@ -319,7 +327,7 @@ max-width:140px;
   max-width: 200px;
 }
 .buy-gift{
-  background-image:url('../public/assets/svg/gift-bg.svg'),linear-gradient(65deg,rgba(0, 0, 0,.94),rgba(0, 0, 0,.99));
+  background-image:url('../public/assets/svg/gift-bg.svg'),linear-gradient(65deg,rgba(0, 0, 0,1),rgba(0, 0, 0,1));
   background-size: cover,cover;
   background-position: bottom center,bottom center;
 }
@@ -379,6 +387,17 @@ max-width:140px;
   cursor: pointer;
   transition: .4s;
   color:rgba(44, 0, 0,1);
+}
+.homereview{
+  background-image: linear-gradient(65deg,rgba(255, 249, 235,.1),rgba(255, 249, 235,.2)),url(/_next/static/media/gridbg.39da9744.jpg);
+background-position: center center,center center;
+background-size: cover,cover;
+}
+.card-img.review-img{
+  background-image:linear-gradient(to bottom,rgba(0,0,0,0) 50%, #000000 50%);
+}
+.card-img.review-img img{
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
 }
 /*========== spin compas=======*/
 @-moz-keyframes spin { 
@@ -670,17 +689,34 @@ max-width:140px;
   .pl-or-4 img{
     max-width: 140px;
   }
+  .wcp-list-text p{
+    font-size:16px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .un-games {
     bottom: -32px;
-    z-index: 50;
+    z-index: 30;
+    
   }
   .htb-text{
     font-size:12px;
   }
 }
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 767px) {
+  .home-hero {
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1));
+    
+  }
+ 
+  .un-games {
+    max-width:92%;
+    
+  }
+  .home-hero-container{
+    margin-top:-20%;
+    
+  }
   .menu-icon-box span{
     width:22px;
     height:3px;
@@ -703,7 +739,21 @@ max-width:140px;
     margin-top: 60px !important;
   }
 }
-
+@media only screen and (max-width: 640px) {
+  .htb-step-line{
+    max-width:20%;
+  }
+  .htb-step{
+    max-width:20%;
+  }
+  .htb-icon{
+      max-width: 60px;
+      margin: auto;
+  }
+  .htb-text{
+    margin-bottom:12px;
+  }
+}
 
 @media only screen and (max-width: 500px) {
   .logo a img{
@@ -835,6 +885,11 @@ max-width:140px;
     max-width: 18px;
 
   }
+  .what-is p {
+   
+    font-size: 16px;
+    line-height: 1.5;
+  }
   .pl-or-1 img{
     max-width: 110px;
   }
@@ -847,6 +902,11 @@ max-width:140px;
   .pl-or-4 img{
     max-width: 100px;
   }
+  .what-is p {
+   
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 @media only screen and (max-width: 380px) {
   .logo a img{
@@ -856,6 +916,15 @@ max-width:140px;
   .what-is-2 {
     
     margin-top: 32px !important;
+  }
+  .htb-text {
+    margin-bottom: 28px;
+    font-size: 10px;
+    margin-top: 4px;
+  }
+  .htb-step h3{
+    margin-top: 4px;
+    font-size: 26px;
   }
 }
 @media only screen and (max-width: 370px) {
@@ -880,6 +949,11 @@ max-width:140px;
   }
   .nav-search-r {
     margin-left: 8px !important;
+  }
+  .what-is p {
+   
+    font-size: 14px;
+    line-height: 1.4;
   }
 }
 @media only screen and (max-width: 340px) {
