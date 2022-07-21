@@ -177,12 +177,12 @@ html,body,a{
   cursor: pointer;
 }
 .home-hero{
-  background-image: url('../public/assets/home-benar-bg.jpg');
+  background-image: url(/_next/static/media/home-benar-bg.fc4f3382.jpg);
   background-position: center center;
   background-size: cover;
 }
 .htb{
-  background-image:  linear-gradient(65deg,rgba(255, 249, 235,.1),rgba(255, 249, 235,.2)),url('../public/assets/gridbg.jpg');
+  background-image:  linear-gradient(65deg,rgba(255, 249, 235,.1),rgba(255, 249, 235,.2)),url(/_next/static/media/gridbg.39da9744.jpg);
   background-position: center center,top center;
   background-size: cover,cover;
 }
@@ -298,7 +298,7 @@ max-width:140px;
   
 }
 .vr-slider{
-  background-image:linear-gradient(65deg,rgba(0, 0, 0,.40),rgba(0, 0, 0,.30)),url('../public/assets/svg/pyescape-bg.svg');
+  background-image:linear-gradient(65deg,rgba(0, 0, 0,.40),rgba(0, 0, 0,.30)),url(/_next/static/media/pyescape-bg.f5df6349.svg);
   background-size: cover ,cover;
   background-position: center center;
 }
@@ -315,7 +315,7 @@ max-width:140px;
   max-width: 180px;
 }
 .planningevent{
-  background-image:  linear-gradient(65deg,rgba(255, 249, 235,.1),rgba(255, 249, 235,.2)),url('../public/assets/gridbg.jpg');
+  background-image:  linear-gradient(65deg,rgba(255, 249, 235,.1),rgba(255, 249, 235,.2)),url(/_next/static/media/gridbg.39da9744.jpg);
   background-position: center center,center center;
   background-size: cover,cover;
 }
@@ -337,7 +337,7 @@ max-width:140px;
   max-width: 200px;
 }
 .buy-gift{
-  background-image:url('../public/assets/svg/gift-bg.svg'),linear-gradient(65deg,rgba(0, 0, 0,1),rgba(0, 0, 0,1));
+  background-image:url(/_next/static/media/gift-bg.6ec94593.svg),linear-gradient(65deg,rgba(0, 0, 0,1),rgba(0, 0, 0,1));
   background-size: cover,cover;
   background-position: bottom center,bottom center;
 }
@@ -356,7 +356,7 @@ max-width:140px;
  
 }
 .what-is-escape{
-  background-image:url('../public/assets/map-bg.jpg');
+  background-image:url(/_next/static/media/map-bg.1e10877a.jpg);
   background-position: center center,center center;
   background-size: cover,cover;
 }
