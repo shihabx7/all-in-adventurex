@@ -6,7 +6,10 @@ import { FaPlay } from "react-icons/fa"
 const Howtobook=()=>{
 
     return(
-        <div className="htb relative py-16 md:py-20 lg:py-28 px-4 overflow-hidden">
+        <div className="htb relative py-16 md:py-20 lg:py-28 px-4 overflow-hidden" style={
+            {
+                backgroundImage :  "linear-gradient(65deg,rgba(255, 249, 235,.1),rgba(255, 249, 235,.2)),url('/assets/gridbg.jpg')"
+            }}>
             <div className="htb-bg-icon htb-bg-1 absolute">
                 <img src="/assets/calendar.png"></img>
             </div>

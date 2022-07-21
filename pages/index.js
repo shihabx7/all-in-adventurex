@@ -20,7 +20,11 @@ export default function Home() {
       </Head>
 
       
-       <div className='home-hero'>
+       <div className='home-hero' style={
+        {
+          backgroundImage : "url('/assets/home-benar-bg.jpg')",
+        }
+       }>
         <HomeHero></HomeHero>
         
        </div>

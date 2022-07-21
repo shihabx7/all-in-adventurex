@@ -6,7 +6,10 @@ import VirtualCarousel from "./VirtualCarousel";
 
 const VirtualEscapeSlider=()=>{
 
-    return (<div className="vr-slider bg-black relative pb-4 z-20">
+    return (<div className="vr-slider bg-black relative pb-4 z-20" style={
+      {
+          backgroundImage :  "linear-gradient(65deg,rgba(0, 0, 0,.40),rgba(0, 0, 0,.30)),url('/assets/svg/pyescape-bg.svg')"
+      }}>
         <div className="inp py-lt absolute left-0 z-20"> 
           <img src="/assets/py-space.png"></img>
         </div>

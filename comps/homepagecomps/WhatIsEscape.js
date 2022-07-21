@@ -3,7 +3,10 @@ import { FaAngleRight } from "react-icons/fa"
 import Link from "next/link";
 const WhatIsEscape=()=>{
     return(
-        <div className="what-is-escape overflow-hidden">
+        <div className="what-is-escape overflow-hidden" style={
+            {
+                backgroundImage :  "url('/assets/map-bg.jpg')",
+            }}>
             <div className="max-w-7xl mx-auto py-16 md:py-20 lg:py-32">
                 <div className="paper-back-bg relative  lg:max-w-full px-4  mx-auto">
                       {/* ===========ornamental icon=============== */}

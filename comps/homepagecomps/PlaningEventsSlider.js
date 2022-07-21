@@ -6,7 +6,10 @@ import PlaningEventCarousel from "./PlaningEventCarousel";
 
 const PlaningEventsSlider=()=>{
 
-    return (<div className="planningevent relative py-16 md:py-20 lg:py-28 ">
+    return (<div className="planningevent relative py-16 md:py-20 lg:py-28 " style={
+        {
+            backgroundImage :  "linear-gradient(65deg,rgba(255, 249, 235,.1),rgba(255, 249, 235,.2)),url('/assets/gridbg.jpg')"
+        }}>
    {/** =======ornamental icon===== */}
    
       <div className="pl-or pl-or-1 absolute top-0 left-0"> 

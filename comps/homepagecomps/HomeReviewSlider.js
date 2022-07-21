@@ -5,7 +5,10 @@ import HomeReviewCarousel from "./HomeReviewCarousel";
 
 const HomeReviewSlider=()=>{
 
-    return (<div className="homereview relative py-16 md:py-20 lg:py-28 overflow-hidden">
+    return (<div className="homereview relative py-16 md:py-20 lg:py-28 overflow-hidden" style={
+      {
+          backgroundImage :  "linear-gradient(65deg,rgba(255, 249, 235,.1),rgba(255, 249, 235,.2)),url('/assets/gridbg.jpg')"
+      }}>
    {/** =======ornamental icon===== */}
       <div className="pl-or pl-or-1 absolute top-0 left-0"> 
           <img src="/assets/pl-bgi-1.png"></img>
