@@ -2,8 +2,7 @@ const locClose=document.getElementById('locclose');
 const locmenu=document.getElementById('locmenu');
 const menusearch=document.getElementsByClassName('search-loc');
 const sliderbookBtn =document.getElementsByClassName('card-book-btn');
-const submenulink =document.getElementsByClassName('sub-link-txt');
-const submenu=document.getElementById('submenu-holder')
+
 
 locClose.addEventListener('click',function(){
     console.log('click');
@@ -12,15 +11,7 @@ locClose.addEventListener('click',function(){
 
 });
 
-for (let i = 0; i < submenulink.length; i++) {
-  submenulink[i].addEventListener('click', function closesubmenu(e){
-  
-      e.preventDefault()
-      console.log('submenu hidden');
-      submenu.classList.add('hidden');
-  
-  }, false);
-}
+
 
 for (let i = 0; i < menusearch.length; i++) {
     menusearch[i].addEventListener('click', function showLocations(e){

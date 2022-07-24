@@ -27,6 +27,7 @@ const Homenav=()=>{
             setShowMe(false)
           }
         }
+        
     
         document.addEventListener("mouseup", checkIfClickedOutside)
     
