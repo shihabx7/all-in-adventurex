@@ -43,7 +43,7 @@ return (
                 </div>
         </div>
         <div className='location-grid-box '> 
-        <div class="grid gap-y-6 md:gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-y-6 md:gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
              <LocationListView/>
              <LocationListView/>
              <LocationListView/>
