@@ -8,9 +8,14 @@ import { ImPlay3 } from "react-icons/im";
 const SubMenu=()=>{
 
     const [openMenu, setopenMenu] = useState('1');
+    
     return(
 
-        <div className="flex flex-col md:flex-row submenu-box justify-between py-8 md:py-12"> 
+        <div className="flex flex-col md:flex-row submenu-box justify-between py-8 md:py-12" style={
+            {
+              backgroundImage : "url(/assets/submenu-bg.png),linear-gradient(#111111,#111111)",
+            }
+           }> 
             <div className="px-6 md:px-16 border-r border-dark-coffee"> 
                     <div className="submenu-content text-light-gold md:text-lg"> 
                             <div className="submenu-item">
@@ -22,7 +27,7 @@ const SubMenu=()=>{
 
                             </div>
                             <div className="submenu-item">
-                                <Link href="#">
+                                <Link href="/locations">
                                      <a className="flex items-center">
                                         <span className="sub-link-txt">All locations</span> 
                                      </a>
@@ -74,7 +79,7 @@ const SubMenu=()=>{
                                     </Link>
                                     <Link href="#">
                                              <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Zombie Apocalypse</span>
+                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub ">Zombie Apocalypse</span>
                                              </a>
                                     </Link>
                                     <Link href="#">

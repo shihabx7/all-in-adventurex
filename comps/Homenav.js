@@ -19,7 +19,7 @@ const Homenav=()=>{
     function toggle(){
       setShowMe(!showMe);
     }
-    
+   
     useEffect(() => {
         const checkIfClickedOutside = e => {
          
@@ -37,7 +37,7 @@ const Homenav=()=>{
       }, [showMe]);
     return(
         <> 
-        <div Id="locmenu" className="loc-menu-holder hidden">
+        <div id="locmenu" className="loc-menu-holder hidden">
         <LocationMenu/>
         </div>
         
@@ -91,7 +91,7 @@ const Homenav=()=>{
                     </div>
                 </div>
                         
-                                <div className="submenu-holder absolute top-full right-0 z-40 w-full md:w-auto"> 
+                                <div id="submenu-holder" className="submenu-holder absolute top-full right-0 z-40 w-full md:w-auto"> 
                                 {showMe &&(
                                      <SubMenu></SubMenu>
                                      )}

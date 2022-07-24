@@ -21,11 +21,11 @@ const TitleSeparator=(props)=>{
                             <defs>
                             <linearGradient id="paint0_linear_1668_1324" x1="18.9705" y1="23.3771" x2="18.9705" y2="2.24681" gradientUnits="userSpaceOnUse">
                             <stop stop-color="#8A0E13"/>
-                            <stop offset="0.9729" stop-color="#E1001A"/>
+                            <stop offset="0.9729" stopColor="#E1001A"/>
                             </linearGradient>
                             <linearGradient id="paint1_linear_1668_1324" x1="18.9707" y1="23.1513" x2="18.9707" y2="2.47264" gradientUnits="userSpaceOnUse">
                             <stop stop-color="#8A0E13"/>
-                            <stop offset="0.9729" stop-color="#E1001A"/>
+                            <stop offset="0.9729" stopColor="#E1001A"/>
                             </linearGradient>
                             </defs>
                             </svg>

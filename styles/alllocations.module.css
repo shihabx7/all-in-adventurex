@@ -1,0 +1,14 @@
+.alllocations{
+    background-image: linear-gradient(65deg,rgba(255, 249, 235,.1),rgba(255, 249, 235,.2)),url('/assets/gridbg.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.alllocationscompas{
+   
+    top:-80px;
+    right:-120px;
+}
+.alllocationscompas img{
+    max-width: 240px;
+}

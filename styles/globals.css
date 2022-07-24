@@ -12,7 +12,7 @@ html,body,a{
   font-family: 'Oswald', sans-serif;
 }
 #header{
-  transition: top 0.6s ease-in;
+  transition: top 0.3s ease-in-out;
   z-index: 10000;
 }
 .boder-p{
@@ -51,7 +51,7 @@ html,body,a{
 /*==============submenu design============*/
   .submenu-box{
 
-    background-image:url(../public/assets/submenu-bg.png),linear-gradient(#111111,#111111);
+   
     background-size: cover;
     background-position: center center;
   }
@@ -78,10 +78,13 @@ html,body,a{
 /*==============submenu design end============*/
 /*===========global location menu==============*/
 .loc-menu{
-  background-image:url(../public/assets/submenu-bg.png),linear-gradient(#111111,#111111);
+  
  
   background-repeat: repeat;
   z-index:20000;
+}
+.loc-link .text-gray-500{
+  color:#7b7b7b;
 }
 .loc-item:hover .golden-text{
   background-color: #E0BF62; 
@@ -337,7 +340,7 @@ max-width:140px;
   max-width: 200px;
 }
 .buy-gift{
- 
+  background-image: url('/assets/svg/gift-bg.svg'),linear-gradient(65deg,rgba(0, 0, 0,1),rgba(0, 0, 0,1));
   background-size: cover,cover;
   background-position: bottom center,bottom center;
 }

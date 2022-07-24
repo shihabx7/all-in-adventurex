@@ -6,6 +6,7 @@ import { FaAngleDown,FaAngleRight,FaLinkedin,FaFacebookSquare,FaTwitterSquare,Fa
 import Script from 'next/script'
 
 import Link from "next/link"
+import FooterMap from './footercomps/FooterMap';
 
 const Footer=()=>{
 
@@ -37,7 +38,7 @@ const Footer=()=>{
                         <h3 className='golden-text py-8 font-os font-bold text-2xl md:text-3xl lg:text-3xl'>30 LOCATIONS IN THE US</h3>
 
                         <div className='footer-map'>
-                          <Image src={footermap}/>
+                          <FooterMap/>
                             {/* map will be added */}
                         </div>
                     
