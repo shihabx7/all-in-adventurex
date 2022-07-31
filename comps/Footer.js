@@ -4,8 +4,8 @@ import LocationBtn from './util/LocationBtn';
 import { FaAngleDown,FaAngleRight,FaLinkedin,FaFacebookSquare,FaTwitterSquare,FaInstagramSquare } from "react-icons/fa";
 import Script from 'next/script'
 import Link from "next/link"
-import { useLoadScript } from "@react-google-maps/api";
-import Mapwithinfo from './footercomps/Mapwithinfo';
+import { useLoadScript } from "@react-google-maps/api"
+import Mapwithinfo from './footercomps/Mapwithinfo'
 
 const Footer=(props)=>{
 
