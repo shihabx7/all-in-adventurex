@@ -7,10 +7,14 @@ import { getMapStyle } from "../../pages/api/getMapStyle";
 import { getMapData } from "../../pages/api/getMapData";
 
 
-  
+
 function Mapwithinfo() {
-  const LocationMarkers = getMapData
-  const customMapStyle=  getMapStyle
+  
+  const LocationMarkers =getMapData()
+
+const customMapStyle=  getMapStyle()
+
+ 
   const [activeMarker, setActiveMarker] = useState(null);
   const [mapCenter,setMapCenter]=useState({lat:37,lng:-85});
   const [mapZoon,setMapZoom]=useState(4);
