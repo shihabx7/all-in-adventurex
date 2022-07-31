@@ -1,11 +1,9 @@
 import Image from 'next/image'
 import LocationBtn from './util/LocationBtn';
-import footermap from '../public/assets/footer-map.png'
-import { BiMap } from "react-icons/bi";
+
 import { FaAngleDown,FaAngleRight,FaLinkedin,FaFacebookSquare,FaTwitterSquare,FaInstagramSquare } from "react-icons/fa";
 import Script from 'next/script'
 import Link from "next/link"
-import FooterMap from './footercomps/FooterMap';
 import { useLoadScript } from "@react-google-maps/api";
 import Mapwithinfo from './footercomps/Mapwithinfo';
 
