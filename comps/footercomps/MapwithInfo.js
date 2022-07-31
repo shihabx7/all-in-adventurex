@@ -211,8 +211,8 @@ const getdirectionUrl =(address,city,state,zip)=>{
   };
 
   return (
-    <div className="py-28 max-w-7xl mx-auto">
-        <h2 className="pb-8 text-2xl font-bold text-center">goole map with mulilocation info view</h2> 
+    <div className="max-w-7xl mx-auto">
+      
     <GoogleMap
       onClick={() => setActiveMarker(null)}
       mapContainerClassName="map-container w-full h-[640px] md:h-[640px] mb-20"
@@ -253,7 +253,7 @@ const getdirectionUrl =(address,city,state,zip)=>{
                         </h2>
                        <div className="flex items-center space-x-2">
                             <span className="text-[#7b7b7b] text-[16px] font-medium">5.0</span>
-                            <span className="rev-star"><img src="/assets/map-star.svg"></img></span>
+                            <span className="rev-star"><img src="/assets/svg/map-star.svg"></img></span>
                             <span className="rev-count text-[#7b7b7b] text-[14px] font-medium">({
                                 info.riview
                             })</span>
