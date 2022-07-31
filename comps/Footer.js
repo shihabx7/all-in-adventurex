@@ -4,19 +4,19 @@ import LocationBtn from './util/LocationBtn';
 import { FaAngleDown,FaAngleRight,FaLinkedin,FaFacebookSquare,FaTwitterSquare,FaInstagramSquare } from "react-icons/fa";
 import Script from 'next/script'
 import Link from "next/link"
-//import { useLoadScript } from "@react-google-maps/api"
-//import Mapwithinfo from './footercomps/Mapwithinfo'
+import { useLoadScript } from "@react-google-maps/api"
+import Mapwithinfo from './footercomps/Mapwithinfo'
 
 const Footer=(props)=>{
 
     
-     /*const FooterMap=()=> {
+     const FooterMap=()=> {
         const { isLoaded } = useLoadScript({
           googleMapsApiKey: "AIzaSyCYSGDPwfMMqKRb7ApqkuH3d5YsMjLiEiY" // Add your API key
         });
       
         return isLoaded ? <Mapwithinfo/> : null;
-      }*/
+      }
 
     return(
         <>
@@ -47,7 +47,7 @@ const Footer=(props)=>{
 
                         <div className='footer-map'>
                           {
-                            /*FooterMap()*/
+                            FooterMap()
                           }
                             {/* map will be added */}
                         </div>
