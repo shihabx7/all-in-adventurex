@@ -6,8 +6,19 @@ import { FaAngleDown,FaAngleRight,FaLinkedin,FaFacebookSquare,FaTwitterSquare,Fa
 import Script from 'next/script'
 import Link from "next/link"
 import FooterMap from './footercomps/FooterMap';
+import { useLoadScript } from "@react-google-maps/api";
+import Mapwithinfo from './footercomps/Mapwithinfo';
 
 const Footer=(props)=>{
+
+    
+     const FooterMap=()=> {
+        const { isLoaded } = useLoadScript({
+          googleMapsApiKey: "AIzaSyCYSGDPwfMMqKRb7ApqkuH3d5YsMjLiEiY" // Add your API key
+        });
+      
+        return isLoaded ? <Mapwithinfo/> : null;
+      }
 
     return(
         <>
@@ -37,7 +48,9 @@ const Footer=(props)=>{
                         <h3 className='golden-text py-8 font-os font-bold text-2xl md:text-3xl lg:text-3xl'>30 LOCATIONS IN THE US</h3>
 
                         <div className='footer-map'>
-                          <FooterMap/>
+                          {
+                            FooterMap()
+                          }
                             {/* map will be added */}
                         </div>
                     
