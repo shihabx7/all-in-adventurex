@@ -45,6 +45,7 @@ const location=(props)=>{
                             <Head>
                                 <title>All in adventure Locations</title>
                                 <meta name="description" content="All in one adventure escape games" />
+                                
 
                               </Head>
                               <div className='breadcum mt-[34px] md:mt-[40px] lg:mt-[0px] py-1 md:py-1 lg:py-3 bg-[#fffceb]'>
