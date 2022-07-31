@@ -9,10 +9,25 @@ import BuyGiftCard from '../comps/homepagecomps/BuyGiftCard'
 import WhatIsEscape from '../comps/homepagecomps/WhatIsEscape'
 import WhoCanplay from '../comps/homepagecomps/WhoCanPlay'
 import HomeReviewSlider from '../comps/homepagecomps/HomeReviewSlider'
+import Homenav from '../comps/Homenav'
+import Footer from '../comps/Footer'
+import { useEffect, useState } from 'react'
+import Script from 'next/script'
+import {Homepagedata} from './api/homepagedata' 
 
-export default function Home() {
+
+export default function Home({mainprops,pagedata,inpersongames,othergames,virtualgames,events,reviews}) {
+ 
+  
+  const setTopPadding=()=>{
+    let headerHeight=document.getElementById("header").offsetHeight;
+    document.getElementById("mainContent").style.paddingTop=headerHeight+"px";
+  }
+ 
   return (
-    <div id="mainContent" className='main-content'>
+    <> 
+    <Homenav/>
+    <div onLoad={setTopPadding} id="mainContent" className='main-content' >
       <Head>
         <title>All in adventure</title>
         <meta name="description" content="All in one adventure escape games" />
@@ -25,20 +40,52 @@ export default function Home() {
           backgroundImage : "url('/assets/home-benar-bg.jpg')",
         }
        }>
-        <HomeHero></HomeHero>
+        <div> {
+            
+             //console.log(mainprops)
+          }
+          {
+            //console.log(reviews)
+          }</div>
+        <HomeHero pagedata={pagedata}></HomeHero>
         
        </div>
        <Howtobook></Howtobook>
-       <InpersonEscapeSlider/>
-       <PysicalEscape/>
-       <VirtualEscapeSlider/>
-       <PlaningEventsSlider/>
+       <InpersonEscapeSlider inpersongames={inpersongames}/>
+       <PysicalEscape othergames={othergames}/>
+       <VirtualEscapeSlider virtualgames={virtualgames}/>
+       <PlaningEventsSlider events={events}/>
        <BuyGiftCard/>
        <WhatIsEscape/>
        <WhoCanplay/>
-       <HomeReviewSlider/>
+       <HomeReviewSlider reviews={reviews}/>
         
     
     </div>
+    <Footer/>
+    
+    </>
   )
+}
+
+export const getStaticProps=async ()=>{
+
+  const pagedata= await Homepagedata();
+  return {
+    props: {
+      mainprops:pagedata,
+      pagedata:pagedata.homeagedata,
+      inpersongames:pagedata.inpersongames,
+      othergames:pagedata.otherphysicalgames,
+      virtualgames:pagedata.virtualgames,
+      events:pagedata.events,
+      reviews:pagedata.homereviews
+    },
+   
+    // - At most once every 10 seconds
+   // revalidate: 30, // In seconds
+  }
+
+
+
 }

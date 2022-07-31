@@ -2,8 +2,16 @@ import TitleSeparator from '../util/TitleSeparator'
 import { FiX } from "react-icons/fi"
 import { FaAngleRight } from "react-icons/fa"
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 const LocationMenu=()=>{
+   
+       const closelocmenu=()=>{
+     
+        document.getElementById('locmenu').classList.add('hidden')
+       }
+
+    
 
     return(
 
@@ -12,7 +20,7 @@ const LocationMenu=()=>{
               backgroundImage : "url(/assets/submenu-bg.png),linear-gradient(#111111,#111111)",
             }
            }>
-            <div id="locclose" className="location-close-box flex justify-end pt-1 px-2 md:px-4 text-gray-400 text-xl md:text-2xl lg:text-3xl">  
+            <div onClick={closelocmenu} id="locclose" className="location-close-box flex justify-end pt-1 px-2 md:px-4 text-gray-400 text-xl md:text-2xl lg:text-3xl">  
                  <span className='inline-block p-1 border-2 border-gray-500 rounded-full cursor-pointer hover:border-light-gold hover:text-gold'><FiX/></span>
             </div>
             <div className='loc-menu-content px-4'> 

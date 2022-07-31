@@ -13,7 +13,14 @@ import LocationBtnH from "./util/LocationBtnH";
 
 
 
-const Homenav=()=>{
+const Homenav=(props)=>{
+
+  const[showSlug,setShowSlug]=useState(null)
+
+  useEffect(() => {
+      setShowSlug(props.slug)
+    }, [])
+
     const ref = useRef();
     const [showMe, setShowMe] = useState(false);
     function toggle(){
@@ -101,7 +108,38 @@ const Homenav=()=>{
                        
                 
             </div>
+           
         </header>
+      
+        {
+          showSlug &&
+
+         <div id="hbtn" className="header-book-btn-container  fixed w-full  bg-coffee top-[68px] md:top-[74px] lg:hidden z-50">
+                  <div className="max-w-7xl mx-auto flex justify-between"> 
+                     <div className="w-[48%]">
+                         <Link  href={{
+                               pathname: '/book',
+                                query: { name: 'test' },
+                                 }} hpassHref> 
+                             <a className="bg-red-600 hover:bg-red-700 py-2 px-6 block text-center text-white">BOOK GAMES</a>
+                         </Link>
+                     </div>
+                     <div className="w-[48%]">
+                         <Link href={{
+                                pathname: '/book',
+                                   query: { name: 'test' },
+                                 }}> 
+                              <a className="bg-red-600 hover:bg-red-700 py-2 px-6 block text-center text-white">BOOK GAMES</a>
+                         </Link>
+                     </div>
+                                
+                     </div>           
+                 </div>
+
+
+}
+        
+          
         </>
     )
 }

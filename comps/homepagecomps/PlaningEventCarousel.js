@@ -1,9 +1,20 @@
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Link from "next/link";
 
-const PlaningEventCarousel=()=>{
+const PlaningEventCarousel=({events})=>{
+ 
 
+  const showLocation=()=>{
+
+    document.getElementById('locmenu').classList.remove('hidden')
+    
+  }
+  const showDescription=(description)=>{
+    const cutDescription=description.slice(0, 40)+" ...";
+    return cutDescription
+} 
     const responsive = {
         desktoplg: {
             breakpoint: { max: 4000, min: 1440 },
@@ -55,174 +66,47 @@ const PlaningEventCarousel=()=>{
      renderDotsOutside={true}
      partialVisible={true}
    >
+
+    {
+        events.map((event)=>{
+
+          return(
+            <div key={event.id} className="text-white bg-gray-300 game-slider-card card-border" style={{
+              background:"url('"+event.bgimg+"')"
+            }}>
+              <div className="card-container">
+                  <div className="card-head plan-title flex justify-center pt-8 pb-8 px-4">
+                      <div className="card-info text-center ">
+                        <h3 className="text-center text-xl lg:text-2xl font-bold uppercase text-white">{event.title}</h3>
+                      </div>
+                   
+                  </div>
+                  <div className="card-gap py-10"> 
+       
+                  </div>
+                  <div className="card-bottom p-4 pt-12"> 
+                      <div className="card-game-desc text-center">
+                          
+                          <p className="text-gray-200 lg:text-lg">{showDescription(event.description)}</p>
+                      </div>
+                      <div className="card-game-link mt-4 text-center">
+                          <button onClick={showLocation} className="border max-w-[200px] card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                          <Link href={"/events/"+event.slug}>
+                            <a className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE
+                            </a>
+                          </Link>
+                      </div>
+                      
+                   </div>
+              </div>
+       
+            </div>
+          )
+        })
+
+    }
      {/*====== slide 1========= */}
-     <div className="text-white bg-gray-300 game-slider-card card-border" style={{
-       background:"url('/assets/sl-event-1.jpg')"
-     }}>
-       <div className="card-container">
-           <div className="card-head plan-title flex justify-center pt-8 pb-8 px-4">
-               <div className="card-info text-center ">
-                 <h3 className="text-center text-xl lg:text-2xl font-bold uppercase text-white">PHYSICAL TEAM BUILDING ACTIVITES</h3>
-               </div>
-            
-           </div>
-           <div className="card-gap py-10"> 
-
-           </div>
-           <div className="card-bottom p-4 pt-12"> 
-               <div className="card-game-desc text-center">
-                   
-                   <p className="text-gray-200 lg:text-lg">Once you complete your purchase you will be sent an</p>
-               </div>
-               <div className="card-game-link mt-4 text-center">
-                   <button className="border card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
-                   <button className="border block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</button>
-               </div>
-               
-            </div>
-       </div>
-
-     </div>
-     {/*====== slide 2========= */}
-     <div className="text-white bg-gray-300 game-slider-card  card-border" style={{
-       background:"url('/assets/sl-event-1.jpg')"
-     }}>
-       <div className="card-container">
-           <div className="card-head plan-title flex justify-center pt-8 pb-8 px-4">
-               <div className="card-info text-center ">
-                 <h3 className="text-center text-xl lg:text-2xl font-bold uppercase text-white">PHYSICAL TEAM BUILDING ACTIVITES</h3>
-               </div>
-            
-           </div>
-           <div className="card-gap py-10"> 
-
-           </div>
-           <div className="card-bottom p-4 pt-12"> 
-               <div className="card-game-desc text-center">
-                   
-                   <p className="text-gray-200 lg:text-lg">Once you complete your purchase you will be sent an</p>
-               </div>
-               <div className="card-game-link mt-4 text-center">
-                   <button className="border card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
-                   <button className="border block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</button>
-               </div>
-               
-            </div>
-       </div>
-
-     </div>
-      {/*====== slide 3========= */}
-      <div className="text-white bg-gray-300 game-slider-card  card-border" style={{
-       background:"url('/assets/sl-event-2.jpg')"
-     }}>
-       <div className="card-container">
-           <div className="card-head plan-title flex justify-center pt-8 pb-8 px-4">
-               <div className="card-info text-center ">
-                 <h3 className="text-center text-xl lg:text-2xl font-bold uppercase text-white">BIRTHDAY PARTIES</h3>
-               </div>
-            
-           </div>
-           <div className="card-gap py-10"> 
-
-           </div>
-           <div className="card-bottom p-4 pt-12"> 
-               <div className="card-game-desc text-center">
-                   
-                   <p className="text-gray-200 lg:text-lg">Once you complete your purchase you will be sent an</p>
-               </div>
-               <div className="card-game-link mt-4 text-center">
-                   <button className="border card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
-                   <button className="border block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</button>
-               </div>
-               
-            </div>
-       </div>
-
-     </div>
-      {/*====== slide 4========= */}
-      <div className="text-white bg-gray-300 game-slider-card  card-border" style={{
-       background:"url('/assets/sl-event-3.jpg')"
-     }}>
-       <div className="card-container">
-           <div className="card-head plan-title flex justify-center pt-8 pb-8 px-4">
-               <div className="card-info text-center ">
-                 <h3 className="text-center text-xl lg:text-2xl font-bold uppercase text-white">PARTIES &amp; EVENTS FOR FAMILIES</h3>
-               </div>
-            
-           </div>
-           <div className="card-gap py-10"> 
-
-           </div>
-           <div className="card-bottom p-4 pt-12"> 
-               <div className="card-game-desc text-center">
-                   
-                   <p className="text-gray-200 lg:text-lg">Once you complete your purchase you will be sent an</p>
-               </div>
-               <div className="card-game-link mt-4 text-center">
-                   <button className="border card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
-                   <button className="border block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</button>
-               </div>
-               
-            </div>
-       </div>
-
-     </div>
-      {/*====== slide 5========= */}
-      <div className="text-white bg-gray-300 game-slider-card  card-border" style={{
-       background:"url('/assets/sl-event-4.jpg')"
-     }}>
-       <div className="card-container">
-           <div className="card-head plan-title flex justify-center pt-8 pb-8 px-4">
-               <div className="card-info text-center ">
-                 <h3 className="text-center text-xl lg:text-2xl font-bold uppercase text-white">VIRTUAL TEAM BUILDING ACTIVITES</h3>
-               </div>
-            
-           </div>
-           <div className="card-gap py-10"> 
-
-           </div>
-           <div className="card-bottom p-4 pt-12"> 
-               <div className="card-game-desc text-center">
-                   
-                   <p className="text-gray-200 lg:text-lg">Once you complete your purchase you will be sent an</p>
-               </div>
-               <div className="card-game-link mt-4 text-center">
-                   <button className="border card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
-                   <button className="border block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</button>
-               </div>
-               
-            </div>
-       </div>
-
-     </div>
-      {/*====== slide 6========= */}
-      <div className="text-white bg-gray-300 game-slider-card  card-border" style={{
-       background:"url('/assets/sl-event-5.jpg')"
-     }}>
-       <div className="card-container">
-           <div className="card-head plan-title flex justify-center pt-8 pb-8 px-4">
-               <div className="card-info text-center ">
-                 <h3 className="text-center text-xl lg:text-2xl font-bold uppercase text-white">BACHELORETTE PARTIES</h3>
-               </div>
-            
-           </div>
-           <div className="card-gap py-10"> 
-
-           </div>
-           <div className="card-bottom p-4 pt-12"> 
-               <div className="card-game-desc text-center">
-                   
-                   <p className="text-gray-200 lg:text-lg">Once you complete your purchase you will be sent an</p>
-               </div>
-               <div className="card-game-link mt-4 text-center">
-                   <button className="border card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
-                   <button className="border block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</button>
-               </div>
-               
-            </div>
-       </div>
-
-     </div>
+    
       
    </Carousel>
    </div>

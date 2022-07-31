@@ -1,6 +1,24 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-const HomeReviewCarousel=()=>{
+const HomeReviewCarousel=({reviews})=>{
+
+  const showLocation=()=>{
+
+    document.getElementById('locmenu').classList.remove('hidden')
+    
+  }
+  const showDescription=(description)=>{
+    
+    var cutDescription=description
+    if(description.length>90){
+       cutDescription=description.slice(0, 90)+" ...";
+    }
+
+    
+  
+    return cutDescription
+} 
+  
     const responsive = {
         desktoplg: {
             breakpoint: { max: 4000, min: 1440 },
@@ -28,7 +46,7 @@ const HomeReviewCarousel=()=>{
         }
       };
     return (
-    <div className="full-carousel pysicalescapecarousel"> 
+    <div className="full-carousel pysicalescapecarousel revcarousel"> 
     <Carousel
      swipeable={true}
      draggable={true}
@@ -53,151 +71,36 @@ const HomeReviewCarousel=()=>{
      partialVisible={true}
     
    >
-     {/*====== rev slide 1========= */}
-     <div className="text-white  game-slider-card ">
-       <div className="card-container relative">
-           <div className="rev-card-head">
-               <div className="card-img review-img px-4">
-                    <img src="/assets/reviews/rev-img-2.jpg"></img>
-               </div>
-           </div>
-           
-           <div className="card-rev-bottom bg-black pt-4 px-4"> 
-               <div className="card-rev-desc text-center">
-                    <img class="inline" src="/assets/reviews/rev-5star.svg"></img>
-                   <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-medium uppercase text-white">Really enjoyed it!</h3>
-                   <p className="golden-text font-light lg:text-lg italic">&quot;I took my son into the Ops adventure Room for his birthday (the kid LOVES military stuff!). It was definitely challengingbut he absolutely LOVED IT!</p>
-               </div>
-               <div className="card-rev-auth mt-4 pb-8 text-center">
-               <p className="text-[#afafaf]">Margarida R.</p>
-               <p className="text-[#585858]">West Nyack, NY</p>
-               </div>
-               
-            </div>
-       </div>
+    {
+      reviews.map((review)=>{
+          return(
+                <div key={review} className="text-white  game-slider-card rev-card">
+                 <div className="card-container relative">
+                     <div className="rev-card-head">
+                         <div className="card-img review-img px-4">
+                              <img src={review.rev_img}></img>
+                         </div>
+                     </div>
 
-     </div>
-      {/*====== rev slide 2========= */}
-      <div className="text-white  game-slider-card ">
-       <div className="card-container relative">
-           <div className="rev-card-head">
-               <div className="card-img review-img px-4">
-                    <img src="/assets/reviews/rev-img-1.jpg"></img>
-               </div>
-           </div>
-           
-           <div className="card-rev-bottom bg-black pt-4 px-4"> 
-               <div className="card-rev-desc text-center">
-                    <img class="inline" src="/assets/reviews/rev-5star.svg"></img>
-                   <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-medium uppercase text-white">It was so much fun!</h3>
-                   <p className="golden-text lg:text-lg font-light italic">&quot;Our team had a wonderful time at All In Adventures! Not only was it fun, but it was a great opportunity for my team to work together and figure out the soluation.</p>
-               </div>
-               <div className="card-rev-auth mt-4 pb-8 text-center">
-               <p className="text-[#afafaf]">Margarida R.</p>
-               <p className="text-[#585858]">West Nyack, NY</p>
-               </div>
-               
-            </div>
-       </div>
+                     <div className="card-rev-bottom bg-black pt-4 px-4"> 
+                         <div className="card-rev-desc text-center">
+                              <img className="inline" src="/assets/reviews/rev-5star.svg"></img>
+                             <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-medium uppercase text-white">{review.title}</h3>
+                             <p className="golden-text font-light lg:text-lg italic">&quot;{showDescription(review.review_text)}</p>
+                         </div>
+                         <div className="card-rev-auth mt-4 pb-8 text-center">
+                         <p className="text-[#afafaf]">{review.author}</p>
+                         <p className="text-[#585858]">{review.author_location}</p>
+                         </div>
 
-     </div>
-      {/*====== rev slide 3========= */}
-      <div className="text-white  game-slider-card ">
-       <div className="card-container relative">
-           <div className="rev-card-head">
-               <div className="card-img review-img px-4">
-                    <img src="/assets/reviews/rev-img-1.jpg"></img>
-               </div>
-           </div>
-           
-           <div className="card-rev-bottom bg-black pt-4 px-4"> 
-               <div className="card-rev-desc text-center">
-                    <img class="inline" src="/assets/reviews/rev-5star.svg"></img>
-                   <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-medium uppercase text-white">It was so much fun!</h3>
-                   <p className="golden-text lg:text-lg font-light italic">&quot;Our team had a wonderful time at All In Adventures! Not only was it fun, but it was a great opportunity for my team to work together and figure out the soluation.</p>
-               </div>
-               <div className="card-rev-auth mt-4 pb-8 text-center">
-               <p className="text-[#afafaf]">Margarida R.</p>
-               <p className="text-[#585858]">West Nyack, NY</p>
-               </div>
-               
-            </div>
-       </div>
+                      </div>
+                 </div>
 
-     </div>
-      {/*====== rev slide 4========= */}
-      <div className="text-white  game-slider-card ">
-       <div className="card-container relative">
-           <div className="rev-card-head">
-               <div className="card-img review-img px-4">
-                    <img src="/assets/reviews/rev-img-1.jpg"></img>
                </div>
-           </div>
-           
-           <div className="card-rev-bottom bg-black pt-4 px-4"> 
-               <div className="card-rev-desc text-center">
-                    <img class="inline" src="/assets/reviews/rev-5star.svg"></img>
-                   <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-medium uppercase text-white">It was so much fun!</h3>
-                   <p className="golden-text lg:text-lg font-light italic">"Our team had a wonderful time at All In Adventures! Not only was it fun, but it was a great opportunity for my team to work together and figure out the soluation.</p>
-               </div>
-               <div className="card-rev-auth mt-4 pb-8 text-center">
-               <p className="text-[#afafaf]">Margarida R.</p>
-               <p className="text-[#585858]">West Nyack, NY</p>
-               </div>
-               
-            </div>
-       </div>
+          )
 
-     </div>
-      {/*====== rev slide 5========= */}
-      <div className="text-white  game-slider-card ">
-       <div className="card-container relative">
-           <div className="rev-card-head">
-               <div className="card-img review-img px-4">
-                    <img src="/assets/reviews/rev-img-1.jpg"></img>
-               </div>
-           </div>
-           
-           <div className="card-rev-bottom bg-black pt-4 px-4"> 
-               <div className="card-rev-desc text-center">
-                    <img class="inline" src="/assets/reviews/rev-5star.svg"></img>
-                   <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-medium uppercase text-white">It was so much fun!</h3>
-                   <p className="golden-text lg:text-lg font-light italic">"Our team had a wonderful time at All In Adventures! Not only was it fun, but it was a great opportunity for my team to work together and figure out the soluation.</p>
-               </div>
-               <div className="card-rev-auth mt-4 pb-8 text-center">
-               <p className="text-[#afafaf]">Margarida R.</p>
-               <p className="text-[#585858]">West Nyack, NY</p>
-               </div>
-               
-            </div>
-       </div>
-
-     </div>
-      {/*====== rev slide 6========= */}
-      <div className="text-white  game-slider-card ">
-       <div className="card-container relative">
-           <div className="rev-card-head">
-               <div className="card-img review-img px-4">
-                    <img src="/assets/reviews/rev-img-1.jpg"></img>
-               </div>
-           </div>
-           
-           <div className="card-rev-bottom bg-black pt-4 px-4"> 
-               <div className="card-rev-desc text-center">
-                    <img class="inline" src="/assets/reviews/rev-5star.svg"></img>
-                   <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-medium uppercase text-white">It was so much fun!</h3>
-                   <p className="golden-text lg:text-lg font-light italic">"Our team had a wonderful time at All In Adventures! Not only was it fun, but it was a great opportunity for my team to work together and figure out the soluation.</p>
-               </div>
-               <div className="card-rev-auth mt-4 pb-8 text-center">
-               <p className="text-[#afafaf]">Margarida R.</p>
-               <p className="text-[#585858]">West Nyack, NY</p>
-               </div>
-               
-            </div>
-       </div>
-
-     </div>
-      
+      })
+    }
    </Carousel>
    </div>
     )

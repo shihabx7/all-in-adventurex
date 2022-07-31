@@ -20,11 +20,11 @@ const TitleSeparator=(props)=>{
                             <path d="M3.46289 15.2703L18.9488 23.1553L34.4749 15.0597L28.6765 2.46973H9.40201L3.46289 15.2703Z" fill="#E1001A"/>
                             <defs>
                             <linearGradient id="paint0_linear_1668_1324" x1="18.9705" y1="23.3771" x2="18.9705" y2="2.24681" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#8A0E13"/>
+                            <stop stopColor="#8A0E13"/>
                             <stop offset="0.9729" stopColor="#E1001A"/>
                             </linearGradient>
                             <linearGradient id="paint1_linear_1668_1324" x1="18.9707" y1="23.1513" x2="18.9707" y2="2.47264" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#8A0E13"/>
+                            <stop stopColor="#8A0E13"/>
                             <stop offset="0.9729" stopColor="#E1001A"/>
                             </linearGradient>
                             </defs>
@@ -44,12 +44,12 @@ const TitleSeparator=(props)=>{
                     <path d="M2.69922 10.6735L13.4533 16.148L24.2354 10.5272L20.2087 1.78613H6.82361L2.69922 10.6735Z" fill="#E1001A"/>
                     <defs>
                     <linearGradient id="paint0_linear_2579_2" x1="13.4694" y1="16.3018" x2="13.4694" y2="1.63127" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#8A0E13"/>
-                    <stop offset="0.9729" stop-color="#E1001A"/>
+                    <stop stopColor="#8A0E13"/>
+                    <stop offset="0.9729" stopColor="#E1001A"/>
                     </linearGradient>
                     <linearGradient id="paint1_linear_2579_2" x1="13.4685" y1="16.1451" x2="13.4685" y2="1.78815" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#8A0E13"/>
-                    <stop offset="0.9729" stop-color="#E1001A"/>
+                    <stop stopColor="#8A0E13"/>
+                    <stop offset="0.9729" stopColor="#E1001A"/>
                     </linearGradient>
                     </defs>
                     </svg>

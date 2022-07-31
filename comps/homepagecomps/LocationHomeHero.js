@@ -1,23 +1,40 @@
+import Link from "next/link";
 import LocationBtn from "../util/LocationBtn";
-const HomeHero=(props)=>{
+const LocationHomeHero=(props)=>{
+    
+        //console.log(props.slug)
+    
 
     return(
-        
+        <div className='home-hero' style={
+            {
+                background:"url('"+props.pagedata.coverimageL+"')"
+            }
+           }>
         <div className='home-hero-holder '> 
         <div className="homehero-img md:hidden">
-                <img src="/assets/home-hero.jpg"></img>
+                <img src={props.pagedata.coverimageM}></img>
              </div>
-            <div className='max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-20 md:py-20 lg:py-32 xl:py-40 relative z-10'>
+            <div className='max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-20 md:py-20 lg:py-28 xl:py-40 relative z-10'>
                 <div className="page-benar-info"> 
                 
-                 <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center'>CHOOSE FROM {props.pagedata.totalLocations} US LOCATIONS</p> 
+                 <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center uppercase'>AT {props.pagedata.locationaddress} IN {props.pagedata.locationcity}, {props.pagedata.locationstate}</p> 
                  <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os'>ESCAPE ROOMS AND FUN ACTIVITES</h1>
                  <p className='text-gray-100 max-w-2xl mx-auto text-center lg:text-lg'>#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend &amp; family today. </p>
                  </div>
                 <div className="max-w-md mx-auto mt-8 pb-8 ">
 
                         {/*============location search btn==========*/}
-                        <LocationBtn borderbg='bg-red-600' borderbghover='bg-red-900' innerbg='bg-white' innerborder='border-white' innerbghover='bg-grey-200' innerborderhover='border-gray-200' color="text-black"/>
+                        <div className="booking-btn">
+                                <Link href={"/"+props.pagedata.locationcity+"-"+props.pagedata.locationstate+"/booking"}> 
+                                        <a className="block py-3 rounded-full text-center  text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BOOK NOW</a>
+                                </Link>
+                         </div>
+                         <div className="booking-btn mt-4">
+                                <Link href={"/"+props.pagedata.locationcity+"-"+props.pagedata.locationstate+"booking"}> 
+                                        <a className="block py-3 rounded-full text-center  text-white font-medium border-2 border-red-600  hover:bg-red-700 hover:border-red-700 text-lg">BOOK AN EVENT</a>
+                                </Link>
+                         </div>
                          {/*============location search btn==========*/}
 
 
@@ -31,7 +48,7 @@ const HomeHero=(props)=>{
                         <div className="text-center flex justify-center"> 
                         <div>  
 
-                        <p className="golden-text text-xl md:text-4xl font-os font-bold">{props.pagedata.totalUniqueGames}</p>
+                        <p className="golden-text text-xl md:text-4xl font-os font-bold">{props.pagedata.totalUniqueGames }</p>
                             <p className="text-gray-700 text-xs md:text-base lg:text-lg ">Unique Games</p>
                         </div>
                             
@@ -53,7 +70,8 @@ const HomeHero=(props)=>{
                 </div>
             </div>
         </div>
+        </div>
     )
 }
 
-export default HomeHero;
+export default LocationHomeHero;

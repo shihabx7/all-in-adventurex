@@ -41,8 +41,8 @@ const WhatIsEscape=()=>{
                         <img src="/assets/svg/vin-cross.svg"></img>
                     </div>
                       {/* ===========ornamental icon end=============== */}
-                    <img class="w-full hidden md:block" src="/assets/vintage-paper.png"></img>
-                    <img class="block md:hidden" src="/assets/vintage-paper-v.png"></img>
+                    <img className="w-full hidden md:block" src="/assets/vintage-paper.png"></img>
+                    <img className="block md:hidden" src="/assets/vintage-paper-v.png"></img>
                     <div className="absolute what-is-container z-20 w-full h-full top-0 left-0 flex flex-col md:flex-row justify-center space-y-4 sm:space-y-8 md:space-y-0 md:justify-between items-center md:py-0 px-8 md:px-[10%]"> 
                           {/* content 1 */}
                           <div className="what-is content md:max-w-[48%] lg:max-w-[40%] text-center"> 

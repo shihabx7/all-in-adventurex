@@ -4,8 +4,9 @@ import Link from "next/link"
 import { FaAngleRight } from "react-icons/fa"
 import VirtualCarousel from "./VirtualCarousel";
 
-const VirtualEscapeSlider=()=>{
-
+const VirtualEscapeSlider=({virtualgames})=>{
+   // console.log("virtual:")
+    //console.log(virtualgames)
     return (<div className="vr-slider bg-black relative pb-4 z-20" style={
       {
           backgroundImage :  "linear-gradient(65deg,rgba(0, 0, 0,.40),rgba(0, 0, 0,.30)),url('/assets/svg/pyescape-bg.svg')"
@@ -24,10 +25,10 @@ const VirtualEscapeSlider=()=>{
                 </div>
         </div>
         <div className="slider-box pb-4 md:pb-8 relative">  
-            <VirtualCarousel/>
+            <VirtualCarousel virtualgames={virtualgames}/>
         </div>
         <div className="view-all flex justify-center pt-8 md:pt-12 lg:pt-16 pb-16">
-            <Link href="#"> 
+            <Link href="/virtual-escape-rooms/"> 
               <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all virtual escape rooms</span> <FaAngleRight/></a>
             </Link>
          </div>

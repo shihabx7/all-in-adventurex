@@ -5,10 +5,11 @@ import { BiMap } from "react-icons/bi";
 import { FaAngleDown,FaAngleRight,FaLinkedin,FaFacebookSquare,FaTwitterSquare,FaInstagramSquare } from "react-icons/fa";
 import Script from 'next/script'
 
+
 import Link from "next/link"
 import FooterMap from './footercomps/FooterMap';
 
-const Footer=()=>{
+const Footer=(props)=>{
 
     return(
         <>
@@ -33,7 +34,7 @@ const Footer=()=>{
                         </div>
 
                     </div>
-                    {/*========================================= map will be added================ */}
+                    {/*========================================= map  added================ */}
                     <div className='footer-map-row text-center'> 
                         <h3 className='golden-text py-8 font-os font-bold text-2xl md:text-3xl lg:text-3xl'>30 LOCATIONS IN THE US</h3>
 
@@ -43,7 +44,7 @@ const Footer=()=>{
                         </div>
                     
                     </div>
-                    {/*========================================= map will be added================ */}
+                    {/*========================================= map added================ */}
                     <div className='footer-location-row flex-col md:flex-row flex justify-between py-8'> 
                     {/*========================================= footer location column 1================ */}
                         <div className='footer-loc-col w-full md:w-auto'> 
@@ -362,7 +363,7 @@ const Footer=()=>{
                     {/*========================================= usefull link end================ */}
                             <div className='hidden adv-btn border-btn rounded-full mx-auto max-w-xs bg-dark-red hover:bg-golden-alt'> 
                                 <div className='footer-btn justify-center  bg-esc-black flex space-x-3 shrink rounded-full text-white p-3 items-center hover:shadow-md'> 
-                                     <span class="text-xs font-medium md:text-base">CONTACT US</span>
+                                     <span className="text-xs font-medium md:text-base">CONTACT US</span>
                                 </div>
                             </div>
                        {/*========================================= footer social ================ */}

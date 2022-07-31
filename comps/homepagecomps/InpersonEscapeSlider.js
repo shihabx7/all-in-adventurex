@@ -5,9 +5,9 @@ import { FaAngleRight } from "react-icons/fa"
 
 
 
-const InpersonEscapeSlider =()=>{
+const InpersonEscapeSlider =(props)=>{
 
-    
+    //console.log(props.inpersongames)
 
     return (<div className="inpsliderhome bg-black relative pb-4">
         <div className="inp inp-lt absolute top-0 left-0"> 
@@ -29,10 +29,10 @@ const InpersonEscapeSlider =()=>{
                 </div>
         </div>
         <div className="slider-box pb-4 md:pb-8 relative">  
-        <InpersonCarousel/>
+        <InpersonCarousel inpersongames={props.inpersongames}/>
         </div>
         <div className="view-all flex justify-center pt-8 md:pt-12 lg:pt-16 pb-16">
-            <Link href="#"> 
+            <Link href="/activities"> 
               <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all In person escape rooms</span> <FaAngleRight/></a>
             </Link>
          </div>
