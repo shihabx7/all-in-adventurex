@@ -5,7 +5,7 @@ import { FaAngleDown,FaAngleRight,FaLinkedin,FaFacebookSquare,FaTwitterSquare,Fa
 import Script from 'next/script'
 import Link from "next/link"
 import { useLoadScript } from "@react-google-maps/api"
-//import Mapwithinfo from './footercomps/Mapwithinfo'
+import Mapwithinfo from './footercomps/Mapwithinfo'
 
 const Footer=(props)=>{
 
@@ -15,9 +15,9 @@ const Footer=(props)=>{
           googleMapsApiKey: "AIzaSyCYSGDPwfMMqKRb7ApqkuH3d5YsMjLiEiY" // Add your API key
         });
       
-        //return isLoaded ? <Mapwithinfo/> : null;
+        return isLoaded ? <Mapwithinfo/> : null;
 
-        return isLoaded ? <div className='text-white'>Map loaded</div> : null;
+        //return isLoaded ? <div className='text-white'>Map loaded</div> : null;
       }
 
     return(

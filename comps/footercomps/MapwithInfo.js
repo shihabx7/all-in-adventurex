@@ -10,7 +10,7 @@ import { getMapData } from "../../pages/api/getMapData";
 
 function Mapwithinfo() {
   
-  const LocationMarkers =getMapData()
+const LocationMarkers =getMapData()
 
 const customMapStyle=  getMapStyle()
 
@@ -39,6 +39,7 @@ const getdirectionUrl =(address,city,state,zip)=>{
     console.log(directionUrl)
     return directionUrl
 }
+
   const handleOnLoad = (map) => {
     const bounds = new google.maps.LatLngBounds();
     LocationMarkers.forEach(({ position }) => bounds.extend(position));
@@ -46,8 +47,7 @@ const getdirectionUrl =(address,city,state,zip)=>{
   };
 
   return (
-    <div className="max-w-7xl mx-auto">
-      
+  
     <GoogleMap
       onClick={() => setActiveMarker(null)}
       mapContainerClassName="map-container w-full h-[640px] md:h-[640px] mb-20"
@@ -153,7 +153,7 @@ const getdirectionUrl =(address,city,state,zip)=>{
         </Marker>
       ))}
     </GoogleMap>
-    </div>
+    
   );
 }
 
