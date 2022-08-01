@@ -8,7 +8,7 @@ import { getMapData } from "../../pages/api/getMapData";
 
 
 
-function Mapwithinfo() {
+function MapwithInfo() {
   
 const LocationMarkers =getMapData()
 
@@ -157,4 +157,4 @@ const getdirectionUrl =(address,city,state,zip)=>{
   );
 }
 
-export default Mapwithinfo;
+export default MapwithInfo;
