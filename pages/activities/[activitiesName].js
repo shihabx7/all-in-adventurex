@@ -3,11 +3,11 @@ import Homenav from "../../comps/Homenav";
 import Footer from "../../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
-import GameDetails from "../../comps/activitiyPageCmps/GameDetails";
+import GameDetails from "../../comps/activitiyPageComps/GameDetails";
 // page tamplete content
-import GameHomeHero from "../../comps/activitiyPageCmps/gameHomeHero";
-import GameGallery from "../../comps/activitiyPageCmps/GameGallery";
-import GameVideo from "../../comps/activitiyPageCmps/GameVideo";
+import GameHomeHero from "../../comps/activitiyPageComps/GameHomeHero";
+import GameGallery from "../../comps/activitiyPageComps/GameGallery";
+import GameVideo from "../../comps/activitiyPageComps/GameVideo";
 import { getALlActivityList } from "../api/getAllActivityList";
 import { getActivityData } from "../api/getActivitiyPageData";
 
