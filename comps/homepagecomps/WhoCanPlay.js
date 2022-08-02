@@ -14,7 +14,7 @@ const WhoCanplay =()=>{
             <div className="gift-rt absolute"> 
                 <img src="/assets/Compas-brown.png"></img>
             </div>
-            <div className="max-w-7xl mx-auto px-4 relative z-50">
+            <div className="max-w-7xl mx-auto px-4 relative z-40">
                     <TitleSeparator title='WHO CAN PLAY AN ESCAPE ROOM' color='golden-text' weight='font-bold'/>
                     <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-12 lg:mb-16">
                          <p className="text-gray-200 md:px-8">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>

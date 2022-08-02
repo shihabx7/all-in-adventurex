@@ -20,9 +20,9 @@ const location=(props)=>{
 
     /* custom breadcum code */
  const toTitleCase=(title)=>{
-    const titlefres=title.replace(/-/g,' ')
+   const titlefres=title.replace(/-/g,' ')
     const btitle=titlefres.split(' ').map((word)=>{return (word.charAt(0).toUpperCase() + word.slice(1))}).join(" ") // breadcum title capitalize
-      
+    
     /*const  getSluglist=async ()=>{
         const all= await getLocationSlugList();
         return all
@@ -54,7 +54,7 @@ const location=(props)=>{
                                             inactiveItemClassName="inline-block text-[#6a6a6a] hover:text-red-700"
                                             activeItemClassName="inline-block text-[#212121]"
                                             rootLabel="home"
-                                            replaceCharacterList={[{ from: '-', to: ',' }]}
+                                            replaceCharacterList={[{ from: '-', to: ' ' }]}
                                             transformLabel={(title) => { return toTitleCase(title)} }
 
                                             >

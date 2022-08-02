@@ -10,7 +10,7 @@ const PysicalCarousel=({othergames})=>{
     
   }
   const showDescription=(description)=>{
-    const cutDescription=description.slice(0, 40);
+    const cutDescription=description.slice(0, 100);
     return cutDescription
 } 
     const responsive = {

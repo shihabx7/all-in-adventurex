@@ -16,7 +16,7 @@ const customMapStyle=  getMapStyle()
 
  
   const [activeMarker, setActiveMarker] = useState(null);
-  const [mapCenter,setMapCenter]=useState({lat:37,lng:-85});
+  const [mapCenter,setMapCenter]=useState({lat:47,lng:-85});
   const [mapZoon,setMapZoom]=useState(4);
 
   const handleActiveMarker = (marker,position) => {

@@ -268,6 +268,40 @@ max-width:140px;
   background-position: center center !important;
   transition: .4s;
 }
+
+.inpersongame .card-border{
+
+  border:1px solid rgba(219, 181, 91,.8);
+
+}
+.inpersongame .card-border:hover{
+
+   border:0px solid rgba(219, 181, 91,.4);
+   
+ 
+ }
+ .pysicalescapecarousel .card-border{
+
+  border:1px solid rgba(219, 181, 91,.8);
+
+}
+.pysicalescapecarousel .card-border:hover{
+
+  border:0px solid rgba(219, 181, 91,.4);
+  
+
+}
+.vr-slider .card-border{
+
+  border:1px solid rgba(219, 181, 91,.8);
+
+}
+.vr-slider .card-border:hover{
+
+  border:0px solid rgba(219, 181, 91,.4);
+  
+
+}
 .card-head{
   background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7),rgba(0,0,0,0.1));
 }
@@ -278,14 +312,14 @@ max-width:140px;
   margin-bottom: 8px;
 }
 .card-game-desc{
-  max-height:140px;
+  min-height:168px;
   overflow: hidden;
 }
 .card-gap{
   background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
 }
 .game-slider-card:hover{
-  transform: scale(1.02);
+  transform: scale(1.04);
   box-shadow:1px 1px 8px 2px rgba(216, 174, 84,0.38);
   cursor: pointer;
 }
@@ -432,6 +466,7 @@ background-size: cover,cover;
 .card-img.review-img img{
   box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
 }
+
 /*========== spin compas=======*/
 @-moz-keyframes spin { 
   100% { -moz-transform: rotate(360deg); } 
@@ -444,6 +479,11 @@ background-size: cover,cover;
       -webkit-transform: rotate(360deg); 
       transform:rotate(360deg); 
   } 
+}
+/*===========================================================individual game page design=============*/
+.game-video-box{
+  box-shadow:0px 0px 20px 0px rgba(0, 0, 0,.6);
+  border:2px solid #fffe9b
 }
 @media only screen and (max-width: 1480px) {
   .or-el-1{
@@ -536,6 +576,7 @@ background-size: cover,cover;
     max-width: 32px;
 
   }
+  
 
 }
 @media only screen and (max-width: 1366px) {
@@ -742,6 +783,10 @@ background-size: cover,cover;
  
 }
 @media only screen and (max-width: 767px) {
+  .nobtn-main-content{
+    padding-top:82px;
+  }
+
   .home-hero {
     background-image: unset !important;
     background-color: #000000 !important;
@@ -809,6 +854,10 @@ background-size: cover,cover;
 }
 
 @media only screen and (max-width: 500px) {
+  .nobtn-main-content{
+    padding-top:68px;
+  }
+ 
   .logo a img{
     max-height:52px;
   }
@@ -962,6 +1011,9 @@ background-size: cover,cover;
   }
 }
 @media only screen and (max-width: 380px) {
+  .nobtn-main-content{
+    padding-top:60px;
+  }
   .logo a img{
     max-height:40px;
   }

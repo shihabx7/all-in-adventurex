@@ -7,7 +7,7 @@ const viewAllActivities=()=>{
     return(
         <div>
             <Homenav/>
-            All Activities
+               All Activities
             <Footer/>
          </div>
     )

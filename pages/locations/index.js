@@ -61,7 +61,7 @@ return (
   <>
       <Homenav/>
   
-    <div onLoad={setTopPadding} id="mainContent" className='main-content'>
+    <div id="mainContent" className='main-content nobtn-main-content'>
       {
         console.log(states)
       }

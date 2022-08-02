@@ -129,7 +129,7 @@ const Homenav=(props)=>{
                                 pathname: '/book',
                                    query: { name: 'test' },
                                  }}> 
-                              <a className="bg-red-600 hover:bg-red-700 py-2 px-6 block text-center text-white">BOOK GAMES</a>
+                              <a className="bg-red-600 hover:bg-red-700 py-2 px-6 block text-center text-white">BOOK AN EVENT</a>
                          </Link>
                      </div>
                                 

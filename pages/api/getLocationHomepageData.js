@@ -8,6 +8,13 @@
 
    const locationHomedata=
        {
+        
+        "pagemeta":{
+
+          "matatilte":"title",
+          "metakeyword":"keywords",
+          "metadescription":"metadescription"
+        },
          
         "pagedata": {
                       "locationstate":locattionstate,
