@@ -12,7 +12,7 @@ const PlaningEventCarousel=({events})=>{
     
   }
   const showDescription=(description)=>{
-    const cutDescription=description.slice(0, 40)+" ...";
+    const cutDescription=description.slice(0, 110)+" ...";
     return cutDescription
 } 
     const responsive = {
@@ -71,7 +71,7 @@ const PlaningEventCarousel=({events})=>{
         events.map((event)=>{
 
           return(
-            <div key={event.id} className="text-white bg-gray-300 game-slider-card card-border" style={{
+            <div key={event.id} className="text-white bg-gray-300 game-slider-card card-border event-card bg-cover" style={{
               background:"url('"+event.bgimg+"')"
             }}>
               <div className="card-container">
@@ -81,7 +81,7 @@ const PlaningEventCarousel=({events})=>{
                       </div>
                    
                   </div>
-                  <div className="card-gap py-10"> 
+                  <div className="card-gap py-8"> 
        
                   </div>
                   <div className="card-bottom p-4 pt-12"> 

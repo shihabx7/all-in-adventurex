@@ -330,6 +330,12 @@ max-width:140px;
   background:#000000;
   
 }
+.physical-escape-dots{
+  display:none !important;
+}
+.vr-dots{
+  display:none !important;
+}
 .vr-slider{
   
   background-size: cover ,cover;
@@ -369,6 +375,19 @@ max-width:140px;
 .pl-or-4 img{
   max-width: 200px;
 }
+.event-card{
+  box-shadow: 1px 1px 16px rgba(0, 102, 255,0.8);
+  border: 0px solid rgba(0, 102, 255,1);
+}
+.event-card:hover{
+  box-shadow: 1px 1px 16px rgba(0, 102, 255,0.4);
+  border: 2px solid rgba(0, 102, 255,1);
+}
+.event-card .card-game-desc {
+  min-height: 120px;
+  overflow: hidden;
+}
+
 .buy-gift{
   background-image: url('/assets/svg/gift-bg.svg'),linear-gradient(65deg,rgba(0, 0, 0,1),rgba(0, 0, 0,1));
   background-size: cover,cover;
@@ -605,6 +624,9 @@ background-size: cover,cover;
   .main-content{
     padding-top:74px;
   }
+  .physical-escape-dots{
+    display:flex !important;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -814,6 +836,9 @@ background-size: cover,cover;
   }
 }
 @media only screen and (max-width: 640px) {
+  .vr-dots{
+    display:flex !important;
+  }
   .htb-step-line{
     max-width:20%;
   }

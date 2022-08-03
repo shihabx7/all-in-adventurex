@@ -9,7 +9,7 @@ const VirtualCarousel=({virtualgames})=>{
     
   }
   const showDescription=(description)=>{
-    const cutDescription=description.slice(0, 40);
+    const cutDescription=description.slice(0, 110);
     return cutDescription
 } 
 
@@ -20,29 +20,29 @@ const VirtualCarousel=({virtualgames})=>{
             breakpoint: { max: 4000, min: 1440 },
             items: 2,
             slidesToSlide: 1,
-            partialVisibilityGutter: 30
+            partialVisibilityGutter: 0
           },
         desktop: {
           breakpoint: { max: 1440, min: 1024 },
           items: 2,
           slidesToSlide: 1,
-          partialVisibilityGutter: 24
+          partialVisibilityGutter: 0
         },
         tablet: {
-          breakpoint: { max: 1024, min: 520 },
+          breakpoint: { max: 1024, min: 640 },
           items: 2,
           slidesToSlide:1,
-          partialVisibilityGutter: 20
+          partialVisibilityGutter: 0
         },
         mobile: {
-          breakpoint: { max: 520, min: 0 },
+          breakpoint: { max: 640, min: 0 },
           items: 1,
           slidesToSlide: 1,
-          partialVisibilityGutter: 60
+          partialVisibilityGutter: 40
         }
       };
     return (
-    <div className="full-carousel v-slider-home md:max-w-[740px] mx-auto"> 
+    <div className="full-carousel v-slider-home md:max-w-[700px] mx-auto"> 
     <Carousel
      swipeable={true}
      draggable={true}
@@ -61,7 +61,7 @@ const VirtualCarousel=({virtualgames})=>{
      containerClass="carousel-container"
      removeArrowOnDeviceType={["tablet", "mobile"]}
      //deviceType={this.props.deviceType}
-     dotListClass="custom-dot-list-style"
+     dotListClass="custom-dot-list-style vr-dots"
      itemClass="game-carousel-card px-2 lg:px-3 py-4 md:py-8"
      renderDotsOutside={true}
      partialVisible={true}
@@ -100,7 +100,7 @@ const VirtualCarousel=({virtualgames})=>{
                       </div>
                       <div className="card-game-link mt-4 text-center">
                           <button onClick={showLocation} className="border block max-w-[200px] mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
-                          <Link href={"/virtual-escape-rooms/"+virtualgame.slug}>
+                          <Link href={"/"+virtualgame.slug }>
                              <a className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</a>
                           </Link>
                       </div>

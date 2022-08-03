@@ -16,31 +16,31 @@ const PysicalCarousel=({othergames})=>{
     const responsive = {
         desktoplg: {
             breakpoint: { max: 4000, min: 1440 },
-            items: 3,
+            items: 4,
             slidesToSlide: 1,
-            partialVisibilityGutter: 30
+            partialVisibilityGutter: 0
           },
         desktop: {
           breakpoint: { max: 1440, min: 1024 },
-          items: 3,
+          items: 4,
           slidesToSlide: 1,
-          partialVisibilityGutter: 24
+          partialVisibilityGutter: 0
         },
         tablet: {
           breakpoint: { max: 1024, min: 520 },
-          items: 2,
+          items: 3,
           slidesToSlide:1,
-          partialVisibilityGutter: 20
+          partialVisibilityGutter:20
         },
         mobile: {
           breakpoint: { max: 520, min: 0 },
           items: 1,
           slidesToSlide: 1,
-          partialVisibilityGutter: 60
+          partialVisibilityGutter: 40
         }
       };
     return (
-    <div className="full-carousel md:max-w-[80%] lg:max-w-6xl mx-auto pysicalescapecarousel"> 
+    <div className="full-carousel md:max-w-[88%] lg:max-w-[1366px] mx-auto pysicalescapecarousel"> 
     <Carousel
      swipeable={true}
      draggable={true}
@@ -59,7 +59,7 @@ const PysicalCarousel=({othergames})=>{
      containerClass="carousel-container"
      removeArrowOnDeviceType={["tablet", "mobile"]}
      //deviceType={this.props.deviceType}
-     dotListClass="custom-dot-list-style"
+     dotListClass="custom-dot-list-style physical-escape-dots"
      itemClass="game-carousel-card px-2 lg:px-3 py-4 md:py-8"
      renderDotsOutside={true}
      partialVisible={true}

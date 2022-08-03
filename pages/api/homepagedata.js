@@ -179,6 +179,21 @@
                                 "price":"30",
                                 "slug"  :"wizarding-school",
                                 "bgimg" :"/assets/game-3.jpg"
+                               },
+                               {
+                                  
+                                "id":13,
+                                "category":"escapegame",
+                                "type": "In person",
+                                "title": "Magic Castle",
+                                "description": "Select the number of participants fill out the details. fill out the number of details.",
+                                "age":"all age",
+                                "duration":"60",
+                                "maxplayers":"12",
+                                "minplayers":"4",
+                                "price":"42",
+                                "slug"  :"magic-castle",
+                                "bgimg" :"/assets/py-game-2.jpg"
                                }
 
                              ],
@@ -242,22 +257,8 @@
                                 "price":"24",
                                 "slug"  :"virtual-reality",
                                 "bgimg" :"/assets/py-game-1.jpg"
-                               },
-                               {
-                                  
-                                "id":5,
-                                "category":"other",
-                                "type": "In person",
-                                "title": "Magic Castle",
-                                "description": "Select the number of participants fill out the details. fill out the number of details.",
-                                "age":"all age",
-                                "duration":"60",
-                                "maxplayers":"12",
-                                "minplayers":"4",
-                                "price":"42",
-                                "slug"  :"magic-castle",
-                                "bgimg" :"/assets/py-game-2.jpg"
                                }
+                              
                                 ],
         "events":             [
                               {
@@ -321,58 +322,32 @@
                         "id":1,
                         "category":"games",
                         "type": "Virtual",
-                        "title": "Madness",
-                        "description": "Select the number of participants fill out the details.",
+                        "title": "Virtual Game Show Room",
+                        "description": "Select the number of participants fill out the details. fill out the number of details.",
                         "age":"8+",
                         "duration":"30",
                         "maxplayers":"4",
                         "minplayers":"2",
                         "price":"20",
-                        "slug"  :"madness",
+                        
+                        "slug"  :"virtual-game-show-room",
                         "bgimg" :"/assets/vr-game-1.jpg"
                        },
                        {
                         "id":2,
                         "category":"games",
                         "type": "Virtual",
-                        "title": "Aztec",
+                        "title": "Virtual Escape Rooms",
                         "description": "Select the number of participants fill out the details. fill out the number of details.",
                         "age":"8+",
                         "duration":"30",
                         "maxplayers":"4",
                         "minplayers":"2",
                         "price":"20",
-                        "slug"  :"aztec",
+                        "slug"  :"virtual-escape-rooms",
                         "bgimg" :"/assets/vr-game-2.jpg"
                        },
-                       {
-                        "id":3,
-                        "category":"games",
-                        "type": "Virtual",
-                        "title": "Japan",
-                        "description": "Select the number of participants fill out the details. fill out the number of details.",
-                        "age":"8+",
-                        "duration":"30",
-                        "maxplayers":"4",
-                        "minplayers":"2",
-                        "price":"20",
-                        "slug"  :"japan",
-                        "bgimg" :"/assets/vr-game-3.jpg"
-                       },
-                       {
-                        "id":4,
-                        "category":"games",
-                        "type": "Virtual",
-                        "title": "Madness",
-                        "description": "Select the number of participants fill out the details. fill out the number of details.",
-                        "age":"8+",
-                        "duration":"30",
-                        "maxplayers":"4",
-                        "minplayers":"2",
-                        "price":"20",
-                        "slug"  :"madness",
-                        "bgimg" :"/assets/vr-game-1.jpg"
-                       },
+                     
                              ],
          "homereviews":        [
                                {   "id"  : 1,

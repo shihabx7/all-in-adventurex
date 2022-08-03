@@ -16,6 +16,7 @@ import WhoCanplay from '../../comps/homepagecomps/WhoCanPlay'
 import HomeReviewSlider from '../../comps/homepagecomps/HomeReviewSlider'
 import { getLocationHomepageData } from '../api/getLocationHomepageData';
 import { getLocationSlugList } from '../api/getLocationSlugList';
+import LocationDetails from '../../comps/locationsPage/LocationDetails';
 const location=(props)=>{
 
     /* custom breadcum code */
@@ -73,6 +74,7 @@ const location=(props)=>{
                              <WhatIsEscape/>
                             <WhoCanplay/>
                             <HomeReviewSlider reviews={props.reviews}/>
+                            <LocationDetails/>
 
                 </div>
 

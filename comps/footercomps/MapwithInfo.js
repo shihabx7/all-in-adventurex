@@ -17,7 +17,7 @@ const customMapStyle=  getMapStyle()
  
   const [activeMarker, setActiveMarker] = useState(null);
   const [mapCenter,setMapCenter]=useState({lat:47,lng:-85});
-  const [mapZoon,setMapZoom]=useState(4);
+  const [mapZoom,setMapZoom]=useState(4);
 
   const handleActiveMarker = (marker,position) => {
     if (marker === activeMarker) {
@@ -53,7 +53,7 @@ const getdirectionUrl =(address,city,state,zip)=>{
       mapContainerClassName="map-container w-full h-[640px] md:h-[640px] mb-20"
       center={mapCenter}
       //onLoad={handleOnLoad}
-      zoom={mapZoon}
+      zoom={mapZoom}
       options={{
         styles: customMapStyle,
     }}
