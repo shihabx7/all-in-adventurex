@@ -3,8 +3,8 @@ import Homenav from "../../comps/Homenav";
 import Footer from "../../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
-import GameDetails from "../../comps/activitiyPageComps/GameDetails";
 // page tamplete content
+import GameDetails from "../../comps/activitiyPageComps/GameDetails";
 import GameHomeHero from "../../comps/activitiyPageComps/GameHomeHero";
 import GameGallery from "../../comps/activitiyPageComps/GameGallery";
 import GameVideo from "../../comps/activitiyPageComps/GameVideo";
@@ -30,7 +30,7 @@ const sinleActivities=(props)=>{
         <>
             {/* =======header content======== */}
          <Head>
-               <title>All in adventure Locations</title>
+               <title>All in adventure Activities | {props.pagedata.activityname}</title>
                 <meta name="description" content="All in adventure escape games" />
       
         </Head>
@@ -49,6 +49,7 @@ const sinleActivities=(props)=>{
             </Breadcrumbs>
       </div>
        {/* =======breadcum content and breadcum======== end */}
+
         <GameHomeHero pagedata={props.pagedata}/>
          <GameDetails activityname={props.pagedata.activityname} activitydata={props.activitydata}/>
         <GameGallery galleryitem={props.activitygallery}/>
@@ -86,6 +87,7 @@ export const getStaticProps=async(context)=>{
 
   return{
       props:{
+        pagemeta:activityPageData.pagemeta,
         pagedata:activityPageData.pagedata,
         activitydata:activityPageData.activitydata,
         activitygallery:activityPageData.activitygallery

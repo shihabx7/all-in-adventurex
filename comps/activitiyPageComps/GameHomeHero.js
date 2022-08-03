@@ -16,7 +16,11 @@ const GameHomeHero=(props)=>{
                 <div className="page-benar-info"> 
                 
                  <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center'>CHOOSE FROM {props.pagedata.totalLocations} US LOCATIONS</p> 
-                 <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os'>ESCAPE ROOMS AND FUN ACTIVITES</h1>
+                 <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os uppercase'>{
+                 
+                        props.pagedata.activityname?  props.pagedata.activityname: "escape Rooms Fun and activities"
+                 
+                 } </h1>
                  <p className='text-gray-100 max-w-2xl mx-auto text-center lg:text-lg'>#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend &amp; family today. </p>
                  </div>
                 <div className="max-w-md mx-auto mt-8 pb-8 ">
