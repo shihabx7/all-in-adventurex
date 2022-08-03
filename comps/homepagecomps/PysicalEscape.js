@@ -25,7 +25,7 @@ const PysicalEscape=(props)=>{
             <PysicalCarousel othergames={props.othergames}/>
         </div>
         <div className="view-all flex justify-center pt-8 pb-4 md:pb-12 lg:pb-16">
-            <Link href="/activities#others"> 
+            <Link href="/activities#others-physical-games"> 
               <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all others physical games</span> <FaAngleRight/></a>
             </Link>
          </div>
