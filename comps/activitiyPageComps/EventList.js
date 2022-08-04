@@ -10,7 +10,7 @@ const EventList=(props)=>{
       }
 
     return(
-        <div className="all-events relative bg-center bg-cover" style={{backgroundImage:"url('/assets/game-dt-bg.jpg')"}}>
+        <div className="all-events relative bg-center bg-cover pt-12" style={{backgroundImage:"url('/assets/game-dt-bg.jpg')"}}>
              <div className="w-full absolute top-0 left-0 "><img className="w-full" src="/assets/game-home-or1.jpg"></img> </div>
                  <div className="all-games-container max-w-7xl mx-auto relative  z-30 py-16 md:py-20 lg:py-28 px-4">
                  <div className="all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
@@ -24,9 +24,9 @@ const EventList=(props)=>{
                             return(
                                 <div key={event.id} className="all-game-list bg-center bg-cover p-4 md:p-6 lg:p-8" 
                                         style={{backgroundImage:"linear-gradient(40deg,rgba(0,0,0,0.82),rgba(0,0,0,0.6),rgba(0,0,0,0.2)),url('"+event.event_cover_image+"')",
-                                        boxShadow:"0px 0px 16px 2px rgba(0,0,0,0.45)"}}>
+                                        boxShadow:"0px 0px 12px 1px rgba(0,0,0,0.25)"}}>
                                     
-                                     <div className="all-game-list-gap py-[52px] md:py-[8%] lg:py-[100px]">
+                                     <div className="all-game-list-gap py-[80px] md:py-[12%] lg:py-[100px]">
                                     
                                     </div>
                                  <div className="all-game-list-bottom">
