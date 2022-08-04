@@ -59,6 +59,14 @@ export const getAllEvents=()=>{
         "event_slug":"virtual-team-builidng-activites",
         "event_cover_image":"/assets/event-cover-5.jpg",
     },
+    {
+      "id":6,
+      "event_name":"Office party",
+      "event_desc":"Select the number of participants fill out the details. fill out the number of details.",
+      "event_slug":"office-party",
+      "event_cover_image":"/assets/event-cover-2.jpg",
+  },
+        
             
 
           ]
