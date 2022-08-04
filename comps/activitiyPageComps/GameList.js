@@ -51,7 +51,7 @@ const GameList=(props)=>{
                                         <div className=" text-center md:text-left">
                                           <h3 className="card-game-title text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-white">{activity.activity_name}</h3>
                                           <p className="text-gray-200 lg:text-lg mx-auto md:mx-0 max-w-[490px]">{activity.activity_desc}
-                                          fill out the number of details.</p>
+                                       </p>
                                          </div>
                                          <div className="card-game-link mt-4 text-left">
                                              <button onClick={showLocation} className="border-2 w-[240px] card-book-btn block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</button>

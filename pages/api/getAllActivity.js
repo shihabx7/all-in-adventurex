@@ -11,7 +11,8 @@ export const getAllActivity=()=>{
               },
                
               "pagedata": {
-                            
+                           "pagetitle":"ALL ESCAPE ROOM AND ACTIVITIES",
+                           "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
                             "totalLocations": "28",
                             "totalUniqueGames": "11",
                             "totalFiveStarReview": "60k+",

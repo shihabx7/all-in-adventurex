@@ -6,6 +6,7 @@ import { FiChevronRight } from "react-icons/fi";
 import GameHomeHero from "../../comps/activitiyPageComps/GameHomeHero";
 import GameList from "../../comps/activitiyPageComps/GameList";
 import { getAllActivity } from "../api/getAllActivity";
+import EventContact from "../../comps/eventPageComps/EventContact";
 
 
 const activityData={
@@ -62,10 +63,11 @@ const viewAllActivities=(props)=>{
          
    
 
-            <GameHomeHero pagedata={activityData.pagedata}/>
+            <GameHomeHero pagedata={props.pagedata}/>
             <GameList activitylist={props.activitylist}/>
+         
             
-          {console.log(props)}
+        
   
 
 
