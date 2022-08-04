@@ -20,7 +20,7 @@ const EventContact=(props)=>{
 
                      
                         <div className="conatct-section flex flex-col md:flex-row justify-between">
-                                <div className="contact-info-box order-2 md:order-1 w-full md:w-[40%]">
+                                <div className="contact-info-box pt-16 md:py-0 px-4 order-2 md:order-1 w-full md:w-[40%]">
                                       
                                          <div className="in-sec-title mb-4 md:mb-6 lg:mb-8">
                                                 <h2 className="golden-text font-bold text-4xl mb-4">OUR FACILITIES</h2>
@@ -55,11 +55,11 @@ const EventContact=(props)=>{
 
                                         </div>
                                         <div className="event-notice mt-4 md:mt-8"> 
-                                             <div className="flex  lg:text-lg text-gray-300">
+                                             <div className="flex space-x-2  lg:text-lg text-gray-300">
                                                 <span className="block mt-1 w-6 md:w-8"><img src="/assets/svg/star-bullet.svg"></img></span>
                                                  <span className="block">We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.</span>
                                              </div>
-                                             <div className="flex  lg:text-lg text-gray-300 mt-4">
+                                             <div className="flex space-x-2 lg:text-lg text-gray-300 mt-4">
                                                 <span className="block mt-1 w-6 md:w-8"><img src="/assets/svg/star-bullet.svg"></img></span>
                                                  <span className="block">Our store is located on the 3rd floor food court level, just across the hall from 5 Below store.</span>
                                              </div>
