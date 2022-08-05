@@ -267,7 +267,7 @@
                                  "type": "In person",
                                  "title": "PHYSICAL TEAM BUILDING ACTIVITES",
                                  "description": "harness real-time escape harness real-time escape harness real-time escape",
-                                 "slug"  :"physical-team-building",
+                                 "slug"  :"team-building",
                                  "bgimg" :"/assets/sl-event-1.jpg"
                                },
                                {
@@ -276,43 +276,79 @@
                                  "type": "In person",
                                  "title": "BIRTHDAY PARTIES",
                                  "description": "harness real-time escape harness real-time escape harness real-time escape",
-                                 "slug"  :"birthday-parties",
+                                 "slug"  :"birthday-party",
                                  "bgimg" :"/assets/sl-event-2.jpg"
                                },
                                {
                                 "id":3,
                                 "category":"event",
                                  "type": "In person",
-                                 "title": "PHYSICAL TEAM BUILDING ACTIVITES",
+                                 "title": "Family Parties",
                                  "description": "harness real-time escape harness real-time escape harness real-time escape",
-                                 "slug"  :"physical-team-building",
+                                 "slug"  :"family-events",
                                  "bgimg" :"/assets/sl-event-3.jpg"
                                },
                                {
                                 "id":4,
                                 "category":"event",
                                  "type": "In person",
-                                 "title": "PHYSICAL TEAM BUILDING ACTIVITES",
+                                 "title": "Bachelor Party",
                                  "description": "harness real-time escape harness real-time escape harness real-time escape",
-                                 "slug"  :"physical-team-building",
+                                 "slug"  :"bachelor-party",
                                  "bgimg" :"/assets/sl-event-4.jpg"
                                },
                                {
                                 "id":5,
                                 "category":"event",
                                  "type": "In person",
-                                 "title": "PHYSICAL TEAM BUILDING ACTIVITES",
+                                 "title": "Bachelorette Party",
                                  "description": "harness real-time escape harness real-time escape harness real-time escape",
-                                 "slug"  :"physical-team-building",
+                                 "slug"  :"bachelorette-party",
                                  "bgimg" :"/assets/sl-event-4.jpg"
                                },
                                {
                                 "id":6,
                                 "category":"event",
                                  "type": "In person",
-                                 "title": "PHYSICAL TEAM BUILDING ACTIVITES",
+                                 "title": "Corporate Parties & Events",
                                  "description": "harness real-time escape harness real-time escape harness real-time escape",
-                                 "slug"  :"physical-team-building",
+                                 "slug"  :"corporate-events",
+                                 "bgimg" :"/assets/sl-event-2.jpg"
+                               },
+                               {
+                                "id":7,
+                                "category":"event",
+                                 "type": "In person",
+                                 "title": "School Parties & events",
+                                 "description": "harness real-time escape harness real-time escape harness real-time escape",
+                                 "slug"  :"school-events",
+                                 "bgimg" :"/assets/sl-event-2.jpg"
+                               },
+                               {
+                                "id":8,
+                                "category":"event",
+                                 "type": "In person",
+                                 "title": "Private Party",
+                                 "description": "harness real-time escape harness real-time escape harness real-time escape",
+                                 "slug"  :"private-party",
+                                 "bgimg" :"/assets/sl-event-2.jpg"
+                               },
+                               {
+                                "id":9,
+                                "category":"event",
+                                 "type": "In person",
+                                 "title": "Reunion Party",
+                                 "description": "harness real-time escape harness real-time escape harness real-time escape",
+                                 "slug"  :"reunion-party",
+                                 "bgimg" :"/assets/sl-event-2.jpg"
+                               },
+                               {
+                                "id":10,
+                                "category":"event",
+                                 "type": "In person",
+                                 "title": "Graduation Party",
+                                 "description": "harness real-time escape harness real-time escape harness real-time escape",
+                                 "slug"  :"graduation-party",
                                  "bgimg" :"/assets/sl-event-2.jpg"
                                }
 

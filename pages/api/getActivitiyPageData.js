@@ -13,15 +13,16 @@ export const getActivityData=(data)=>{
           },
            
         "pagedata":{
-            "pagetitle":"ALL ESCAPE ROOM AND ACTIVITIES",
+            "pagetitle":activitiesName+" escape room",
             "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
             "totalLocation":"28",
             "coverimageL":"/assets/home-benar-bg.jpg",
             "coverimageM":"/assets/home-hero.jpg",
             "totalLocations":28,
-            "totalUniqueGames":"11",
-            "totalFiveStarReview":"90k",
-            "totalPlayerEscaped":"60k",
+            "price":35,
+            "duration":50,
+            "max_players":10,
+            "min_players":2,
             "activityname":activitiesName,
         },
         "activitydata":{

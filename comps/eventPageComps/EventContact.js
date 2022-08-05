@@ -3,7 +3,7 @@ import TitleSeparator from "../util/TitleSeparator"
 const EventContact=(props)=>{
         const locEmail=props.location
         return (
-            <div className="event-contact py-28 relative overflow-hidden" style={{
+            <div  id="eventform" className="event-contact py-16 md:py-20 lg:py-28 relative overflow-hidden" style={{
 
                 background:'url("/assets/svg/gift-bg.svg"), linear-gradient(65deg, rgb(0, 0, 0), rgb(0, 0, 0))',
                 backgroundPosition:"bottom center,center center",
@@ -55,18 +55,25 @@ const EventContact=(props)=>{
 
                                         </div>
                                         <div className="event-notice mt-4 md:mt-8"> 
-                                             <div className="flex space-x-2  lg:text-lg text-gray-300">
-                                                <span className="block mt-1 w-6 md:w-8"><img src="/assets/svg/star-bullet.svg"></img></span>
-                                                 <span className="block">We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.</span>
+                                             
+                                             <div className="flex  lg:text-lg text-[#eeeeee] mt-4 justify-between">
+                                                <div className="mt-[6px] -[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
+                                                 <div className="w-[92%] font-thin">We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.</div>
                                              </div>
-                                             <div className="flex space-x-2 lg:text-lg text-gray-300 mt-4">
-                                                <span className="block mt-1 w-6 md:w-8"><img src="/assets/svg/star-bullet.svg"></img></span>
-                                                 <span className="block">Our store is located on the 3rd floor food court level, just across the hall from 5 Below store.</span>
+                                             <div className="flex  lg:text-lg text-[#eeeeee] mt-3  justify-between">
+                                                <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
+                                                 <div className="w-[92%] font-thin">Car parking facility available in our location at the mall.</div>
                                              </div>
+                                             <div className="flex  lg:text-lg text-[#eeeeee] mt-3  justify-between">
+                                                <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
+                                                 <div className="w-[92%] font-thin">Kids and children age 7+ can play when they're accompanied by a guardian age 18+</div>
+                                             </div>
+
+                                             
                                         </div>
                                 </div>
                                 
-                                <div id="eventform" className="order-1 md:order-2 contact-form-box w-full md:w-[58%] lg:w-[54%]">
+                                <div id="eventform-form" className="order-1 md:order-2 contact-form-box w-full md:w-[58%] lg:w-[54%]">
                                     <div className="contact-form-bg bg-[#F4E6C3] px-4 py-8 md:p-6 lg:p-8 md:rounded">
                 {/*==========================================================contact form to book event======================= */}
                                         <form > 

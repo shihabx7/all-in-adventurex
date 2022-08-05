@@ -38,24 +38,54 @@ const GameHomeHero=(props)=>{
                     className="un-games  max-w-2xl mx-auto bottom--4 left-0 right-0 absolute bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded">
                     <div className="grid grid-cols-3 justify-evenly items-center divide-x devide-gray-500">
                         <div className="text-center flex justify-center"> 
-                        <div>  
-
-                        <p className="golden-text text-xl md:text-4xl font-os font-bold">{props.pagedata.totalUniqueGames}</p>
-                            <p className="text-gray-700 text-xs md:text-base lg:text-lg ">Unique Games</p>
+                        {
+                            props.pagedata.totalUniqueGames &&
+                            <div>  
+                         
+                                 <p className="golden-text text-xl md:text-4xl font-os font-bold">{props.pagedata.totalUniqueGames}</p>
+                                 <p className="text-gray-700 text-xs md:text-base lg:text-lg ">Unique Games</p>
+                              </div>
+                        }
+                        {
+                            props.pagedata.max_players &&
+                            <div>  
+                         
+                                 <p className="golden-text text-xl md:text-4xl font-os font-bold">{props.pagedata.min_players}-{props.pagedata.max_players}</p>
+                                 <p className="text-gray-700 text-xs md:text-base lg:text-lg ">Players</p>
+                              </div>
+                        }
+   
                         </div>
-                            
-
-                        </div>
-                        <div  className="text-center"> 
-                            <p className="golden-text text-xl md:text-4xl font-os font-bold">{props.pagedata.totalFiveStarReview}</p>
-                            <p className="text-gray-700 text-xs md:text-base lg:text-lg">5-Star Reviews</p>
-
-                        </div>
-                        <div  className="text-center"> 
-                            <p className="golden-text text-xl md:text-4xl font-os font-bold">{props.pagedata.totalPlayerEscaped}</p>
-                            <p className="text-gray-700 text-xs md:text-base lg:text-lg">Players Escaped</p>
-
-                        </div>
+                        {   props.pagedata.totalFiveStarReview &&
+                                <div  className="text-center"> 
+                                  <p className="golden-text text-xl md:text-4xl font-os font-bold">{props.pagedata.totalFiveStarReview}</p>
+                                    <p className="text-gray-700 text-xs md:text-base lg:text-lg">5-Star Reviews</p>
+    
+                                </div>
+                        }
+                         {   props.pagedata.price &&
+                                <div  className="text-center"> 
+                                  <p className="golden-text text-xl md:text-4xl font-os font-bold">${ props.pagedata.price}</p>
+                                    <p className="text-gray-700 text-xs md:text-base lg:text-lg">Per Player</p>
+    
+                                </div>
+                        }
+                        {
+                            props.pagedata.totalPlayerEscaped &&
+                                <div  className="text-center"> 
+                                     <p className="golden-text text-xl md:text-4xl font-os font-bold">{props.pagedata.totalPlayerEscaped}</p>
+                                     <p className="text-gray-700 text-xs md:text-base lg:text-lg">Players Escaped</p>
+    
+                                 </div>
+                        }
+                        {
+                            props.pagedata.duration &&
+                                <div  className="text-center"> 
+                                     <p className="golden-text text-xl md:text-4xl font-os font-bold">{props.pagedata.duration} MIN</p>
+                                     <p className="text-gray-700 text-xs md:text-base lg:text-lg">Duration</p>
+    
+                                 </div>
+                        }
 
                     </div>
 

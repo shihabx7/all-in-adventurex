@@ -50,7 +50,8 @@ const sinleActivities=(props)=>{
       </div>
        {/* =======breadcum content and breadcum======== end */}
 
-        <GameHomeHero pagedata={props.pagedata}/>
+        <GameHomeHero pagedata={props.pagedata} />
+
          <GameDetails activityname={props.pagedata.activityname} activitydata={props.activitydata}/>
         <GameGallery galleryitem={props.activitygallery}/>
         <GameVideo videoid={props.activitydata.videoid} activityname={props.pagedata.activityname}/>

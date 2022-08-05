@@ -19,7 +19,7 @@ const GameDetails=(props)=>{
 
                             </div>
                             <div className="game-dt-desc mt-4 md:mt-4 lg:mt-6">
-                                <p className="text-[#464646] lg:text-lg">{props.activitydata.story}</p>
+                                <p className="text-[#464646] md:text-[18px] lg:text-[20px]">{props.activitydata.story}</p>
                             </div>
                             <div className="game-dt-link mt-4 md:mt-4 lg:mt-6"> 
                                     <GameDtBtn  label="I’VE READ ENOUGH! BOOK NOW" color="golden-text" weight="font-bold"/>
@@ -42,7 +42,7 @@ const GameDetails=(props)=>{
 
                             </div>
                             <div className="game-dt-desc mt-4 md:mt-4 lg:mt-6">
-                                <p className="text-[#464646] lg:text-lg">{props.activitydata.scene}</p>
+                                <p className="text-[#464646] md:text-[18px] lg:text-[20px]">{props.activitydata.scene}</p>
                             </div>
                             <div className="game-dt-link mt-4 md:mt-4 lg:mt-6"> 
                                     <GameDtBtn label="DON’T GIVE IT AWAY! BOOK NOW" />
@@ -60,7 +60,7 @@ const GameDetails=(props)=>{
 
                             </div>
                             <div className="game-dt-desc mt-4 md:mt-4 lg:mt-6">
-                                <p className="text-[#464646] lg:text-lg">{props.activitydata.mission}</p>
+                                <p className="text-[#464646] md:text-[18px] lg:text-[20px]">{props.activitydata.mission}</p>
                             </div>
                             <div className="game-dt-link mt-4 md:mt-4 lg:mt-6"> 
                                     <GameDtBtn  label="LET ME AT ‘EM! BOOK NOW" />

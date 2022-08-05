@@ -4,7 +4,7 @@ const GameTitleSeparator=(props)=>{
 
         <div className="sep-title ">
             <div className="sep-container inline-block mx-auto"> 
-            <h2 className={props.color+' py-[2px] md:py-2 text-2xl md:text-[40px] lg:text-[44px] font-os '+props.weight}>{props.title}</h2>
+            <h2 className={props.color+' py-[2px] md:py-2 text-2xl md:text-[40px] lg:text-[44px] font-os uppercase leading-[1.1] '+props.weight}>{props.title}</h2>
             <div className="max-w-[100%] md:max-w-[100%] flex sep items-center mx-auto mt-1 md:mt-3 justify-between space-x-2">
                 <div className="bg-golden w-2/5 h-0.5"></div>
                 <div className=" w-auto hidden md:block">

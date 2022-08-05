@@ -26,6 +26,7 @@ const GameList=(props)=>{
                         props.activitylist.map((activity)=>{
 
                             return(
+                                activity.activity_category=="escapegame" &&
                                 <div key={activity.id} className="all-game-list bg-center bg-cover p-4 md:p-6 lg:p-8" 
                                         style={{backgroundImage:"linear-gradient(40deg,rgba(0,0,0,0.82),rgba(0,0,0,0.6),rgba(0,0,0,0.2)),url('"+activity.activity_cover_image+"')",
                                         boxShadow:"0px 0px 16px 2px rgba(0,0,0,0.45)"}}>
@@ -79,8 +80,9 @@ const GameList=(props)=>{
                     </div>
                 {
                         props.activitylist.map((activity)=>{
-
+                           
                             return(
+                                activity.activity_category=="other" &&
                                 <div key={activity.id} className="all-game-list bg-center bg-cover p-4 md:p-6 lg:p-8" 
                                         style={{backgroundImage:"linear-gradient(40deg,rgba(0,0,0,0.82),rgba(0,0,0,0.6),rgba(0,0,0,0.2)),url('"+activity.activity_cover_image+"')",
                                         boxShadow:"0px 0px 16px 2px rgba(0,0,0,0.45)"}}>
