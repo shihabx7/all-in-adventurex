@@ -9,8 +9,8 @@ const EventContact=(props)=>{
                 backgroundPosition:"bottom center,center center",
                 backgroundRepeat:"no-repeat"
             }}>
-                <div class="gift-rt absolute"><img src="/assets/Compas-brown.png"></img></div>
-                <div class="gift-lt absolute top-0 left-0"><img src="/assets/gift-balon-bg.png"></img></div>
+                <div className="gift-rt absolute"><img src="/assets/Compas-brown.png"></img></div>
+                <div className="gift-lt absolute top-0 left-0"><img src="/assets/gift-balon-bg.png"></img></div>
                     <div className="max-w-7xl mx-auto md:px-4"> 
                      
                         <div className="section-title  text-center max-w-[600px] mx-auto  mb-8 md:mb-12 lg:mb-16">

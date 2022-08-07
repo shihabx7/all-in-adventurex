@@ -39,7 +39,7 @@ const location=(props)=>{
 
     return (
         <>
-            <Homenav slug="xm"/>
+            <Homenav location={props.pagedata.locationcity+", "+props.pagedata.locationstate}/>
                 <div id="mainContent" className='main-content'>
 
                 {/* =======header content and breadcum======== */}
@@ -64,7 +64,7 @@ const location=(props)=>{
                                 <div className='text-red'>{props.slug}</div>
                         {/* =======header content and breadcum======== end */}
                         {/* ===========Page Content here========= */}
-                            <LocationHomeHero pagedata={props.locationHomedata}/>
+                            <LocationHomeHero pagedata={props.pagedata}/>
                             <Howtobook></Howtobook>
                             <InpersonEscapeSlider inpersongames={props.inpersongames}/>
                              <PysicalEscape othergames={props.othergames}/>
@@ -78,7 +78,7 @@ const location=(props)=>{
 
                 </div>
 
-            <Footer/>
+            <Footer  location={props.pagedata.locationcity+", "+props.pagedata.locationstate}/>
         </>
 
     )
@@ -108,7 +108,7 @@ export const getStaticProps=async(context)=>{
 
     return{
         props:{
-            locationHomedata:locationHomedata.pagedata,
+            pagedata:locationHomedata.pagedata,
             inpersongames:locationHomedata.inpersongames,
             othergames:locationHomedata.otherphysicalgames,
             virtualgames:locationHomedata.virtualgames,

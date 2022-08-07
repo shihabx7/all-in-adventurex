@@ -62,7 +62,7 @@ const Homenav=(props)=>{
                     </div>
           
                  {/*============location search btn==========*/}
-                    <LocationBtnH borderbg='bg-golden' borderbghover='bg-golden-alt' innerbg='bg-coffee-light' innerborder='border-black' innerbghover='bg-black' innerborderhover='black' color="white"/>
+                    <LocationBtnH location={props.location}/>
                  {/*============location search btn==========*/}
                     <div className="home-nav-menu flex items-center space-x-0 md:space-x-10 lg:space-x-14 justify-end "> 
                         

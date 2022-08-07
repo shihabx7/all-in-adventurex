@@ -273,7 +273,7 @@ const SubMenu=()=>{
 
                             </div>
                             <div className="submenu-item">
-                                <Link href="#">
+                                <Link href="/faqs">
                                      <a className="flex items-center">
                                         <span className="sub-link-txt">Frequently asked questions</span> 
                                      </a>

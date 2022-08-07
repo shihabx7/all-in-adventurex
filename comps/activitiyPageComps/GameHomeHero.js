@@ -23,7 +23,7 @@ const GameHomeHero=(props)=>{
                  } </h1>
                  <p className='text-gray-100 max-w-2xl mx-auto text-center lg:text-lg'>{props.pagedata.pagesubtitle } </p>
                  </div>
-                <div className="max-w-md mx-auto mt-8 pb-8 ">
+                <div className="max-w-md mx-auto mt-8 ">
 
                         {/*============location search btn==========*/}
                         <LocationBtn borderbg='bg-red-600' borderbghover='bg-red-900' innerbg='bg-white' innerborder='border-white' innerbghover='bg-grey-200' innerborderhover='border-gray-200' color="text-black"/>
@@ -31,11 +31,16 @@ const GameHomeHero=(props)=>{
 
 
                 </div>
+                {       props.gametotal ||
+                        <div className="mb-8"> </div>
+                }
+                
+                { props.gametotal ||
 
                 <div style={{
                     background:"#FFFBF3"
                          }} 
-                    className="un-games  max-w-2xl mx-auto bottom--4 left-0 right-0 absolute bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded">
+                    className="un-games  max-w-2xl mx-auto bottom-4 left-0 right-0 absolute bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded">
                     <div className="grid grid-cols-3 justify-evenly items-center divide-x devide-gray-500">
                         <div className="text-center flex justify-center"> 
                         {
@@ -90,6 +95,8 @@ const GameHomeHero=(props)=>{
                     </div>
 
                 </div>
+
+                }
             </div>
         </div>
         </div>

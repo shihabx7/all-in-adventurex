@@ -35,7 +35,7 @@ const Footer=(props)=>{
                             The details and purchase the gift card also select the number. 
                             The details and purchase the gift card.</p>
                             <div className='max-w-[400px] mx-auto'>
-                            <LocationBtn borderbg='bg-red-600' borderbghover='bg-red-900' innerbg='bg-[#111111]' innerborder='border-[#111111]' innerbghover='bg-grey-200' innerborderhover='border-gray-200' color="text-white"/>
+                            <LocationBtn location={props.location} borderbg='bg-red-600' borderbghover='bg-red-900' innerbg='bg-[#111111]' innerborder='border-[#111111]' innerbghover='bg-grey-200' innerborderhover='border-gray-200' color="text-white"/>
 
                             </div>
                             
