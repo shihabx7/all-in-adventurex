@@ -42,7 +42,7 @@ const AllFaq=(props)=>{
                      faqArr.map((faq,index)=>{
 
                         return (
-                            <div key={index} className="faq-container py-4 md:py-8 max-w-6xl mx-auto">
+                            <div key={index} className="faq-container py-4 md:py-8 max-w-6xl mx-auto  transition duration-150 ease-in ">
                                 <div className="faq-group-title golden-text pb-2 md:pb-6 lg:pb-8">
                                       <h2 className="text-[24px] md:text-2xl lg:text-3xl font-bold font-os uppercase">{faq[0].split('_').join(' ')} </h2>  
                                 </div>

@@ -39,7 +39,7 @@ const location=(props)=>{
 
     return (
         <>
-            <Homenav location={props.pagedata.locationcity+", "+props.pagedata.locationstate}/>
+            <Homenav slug="slug" location={props.pagedata.locationcity+", "+props.pagedata.locationstate}/>
                 <div id="mainContent" className='main-content'>
 
                 {/* =======header content and breadcum======== */}
