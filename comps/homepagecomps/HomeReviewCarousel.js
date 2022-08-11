@@ -10,8 +10,8 @@ const HomeReviewCarousel=({reviews})=>{
   const showDescription=(description)=>{
     
     var cutDescription=description
-    if(description.length>90){
-       cutDescription=description.slice(0, 90)+" ...";
+    if(description.length>150){
+       cutDescription=description.slice(0, 160)+" ...";
     }
 
     

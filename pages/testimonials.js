@@ -1,16 +1,9 @@
 import Head from "next/dist/shared/lib/head";
-import Homenav from "../../comps/Homenav";
-import Footer from "../../comps/Footer";
+import Homenav from "../comps/Homenav";
+import Footer from "../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
-// page template=============
-import GameHomeHero from "../../comps/activitiyPageComps/GameHomeHero";
-import GameList from "../../comps/activitiyPageComps/GameList";
-import { getAllEvents } from "../api/getAllEvents";
-import EventList from "../../comps/activitiyPageComps/EventList";
-import EventContact from "../../comps/eventPageComps/EventContact";
-
-const showAllevents=(props)=>{
+const testimonials=()=>{
     const toTitleCase=(title)=>{
         const titlefres=title.replace(/-/g,' ')
         const btitle=titlefres.split(' ').map((word)=>{return (word.charAt(0).toUpperCase() + word.slice(1))}).join(" ") // breadcum title capitalize
@@ -27,7 +20,7 @@ const showAllevents=(props)=>{
           <>
               {/* =======header content======== */}
            <Head>
-                 <title>All in adventure | Events</title>
+                 <title>All in adventure | Gallery</title>
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
@@ -47,15 +40,10 @@ const showAllevents=(props)=>{
               </Breadcrumbs>
         </div>
          {/* =======breadcum content and breadcum root page template======== end */}
-         
-          <GameHomeHero pagedata={props.pagedata}/>
-          <EventList events={props.events}/>
-          <EventContact/>
-
-  {
-      console.log(props)
-  }
-
+ 
+     
+          
+  
 
   {/* =========================================================================================main content ======== end */}
         </div>
@@ -63,23 +51,7 @@ const showAllevents=(props)=>{
           <Footer/>
           </>
     )
+
 }
 
-export default showAllevents
-
-export const getStaticProps=async()=>{
-
-  const eventsData=await getAllEvents()
-
-  return {
-    props:{
-      pagemeta:eventsData.pagemeta,
-      pagedata:eventsData.pagedata,
-      events:eventsData.events_list
-    }
-  }
-}
-
-
-
-
+export default testimonials

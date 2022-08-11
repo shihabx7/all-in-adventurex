@@ -208,21 +208,22 @@ const SubMenu=()=>{
 
                             </div>
                             <div className="submenu-item">
-                                <Link href="#">
-                                     <a className="flex items-center">
-                                        <span className="sub-link-txt">Team building</span> 
-                                     </a>
-                                </Link>
-
-                            </div>
-                            <div className="submenu-item">
-                                <Link href="#">
+                                <Link href="/gift-cards">
                                      <a className="flex items-center">
                                         <span className="sub-link-txt">Gift cards</span> 
                                      </a>
                                 </Link>
 
                             </div>
+                            <div className="submenu-item">
+                                <Link href="/contact">
+                                     <a className="flex items-center">
+                                        <span className="sub-link-txt">Coorporate Contact</span> 
+                                     </a>
+                                </Link>
+
+                            </div>
+                            
                            
 
                     </div>
@@ -241,7 +242,7 @@ const SubMenu=()=>{
 
                             </div>
                             <div className="submenu-item">
-                                <Link href="#">
+                                <Link href="/gallery">
                                      <a className="flex items-center">
                                         <span className="sub-link-txt">Customer galleries</span> 
                                      </a>

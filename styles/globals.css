@@ -376,12 +376,13 @@ max-width:140px;
   max-width: 200px;
 }
 .event-card{
-  box-shadow: 1px 1px 16px rgba(0, 102, 255,0.8);
-  border: 0px solid rgba(0, 102, 255,1);
+  box-shadow: 1px 1px 16px rgba(207, 157, 73,0.9);
+  border: none;
 }
 .event-card:hover{
-  box-shadow: 1px 1px 16px rgba(0, 102, 255,0.4);
-  border: 2px solid rgba(0, 102, 255,1);
+  box-shadow: 1px 1px 16px #B91B1B;
+  border: none;
+
 }
 .event-card .card-game-desc {
   min-height: 120px;

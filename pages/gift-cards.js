@@ -1,16 +1,17 @@
 import Head from "next/dist/shared/lib/head";
-import Homenav from "../../comps/Homenav";
-import Footer from "../../comps/Footer";
+import Homenav from "../comps/Homenav";
+import Footer from "../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
 // page template=============
-import GameHomeHero from "../../comps/activitiyPageComps/GameHomeHero";
-import GameList from "../../comps/activitiyPageComps/GameList";
-import { getAllEvents } from "../api/getAllEvents";
-import EventList from "../../comps/activitiyPageComps/EventList";
-import EventContact from "../../comps/eventPageComps/EventContact";
 
-const showAllevents=(props)=>{
+import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
+import { getGiftCardPageData } from "./api/getGiftCardPageData";
+import BuyGiftCards from "../comps/giftCardPageComps/BuyGiftCards";
+import WhyAdvGiftCards from "../comps/giftCardPageComps/WhyAdvGiftCards";
+import GiftFaq from "../comps/giftCardPageComps/GiftFaq";
+
+const giftCard=(props)=>{
     const toTitleCase=(title)=>{
         const titlefres=title.replace(/-/g,' ')
         const btitle=titlefres.split(' ').map((word)=>{return (word.charAt(0).toUpperCase() + word.slice(1))}).join(" ") // breadcum title capitalize
@@ -27,7 +28,7 @@ const showAllevents=(props)=>{
           <>
               {/* =======header content======== */}
            <Head>
-                 <title>All in adventure | Events</title>
+                 <title>All in adventure | Gift Cards</title>
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
@@ -35,7 +36,7 @@ const showAllevents=(props)=>{
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}
-    <div id="mainContent" className='main-content nobtn-main-content bg-center' style={{backgroundImage : "url('/assets/game-dt-bg.jpg')", }}>
+    <div id="mainContent" className='main-content nobtn-main-content bg-center' >
            {/* =======breadcum content and breadcum========  */}
            <div className='breadcums  py-1 md:py-2 bg-[#fffceb]'>
              <Breadcrumbs  replaceCharacterList={[{ from: '-', to: ' ' }]} 
@@ -47,14 +48,11 @@ const showAllevents=(props)=>{
               </Breadcrumbs>
         </div>
          {/* =======breadcum content and breadcum root page template======== end */}
-         
-          <GameHomeHero pagedata={props.pagedata}/>
-          <EventList events={props.events}/>
-          <EventContact/>
+         <GameHomeHero gametotal="not" pagedata={props.pagedata}/>
+         <BuyGiftCards/>
+          <WhyAdvGiftCards/>
+          <GiftFaq faqlist={props.faqlist}/>
 
-  {
-      console.log(props)
-  }
 
 
   {/* =========================================================================================main content ======== end */}
@@ -63,23 +61,20 @@ const showAllevents=(props)=>{
           <Footer/>
           </>
     )
+
 }
 
-export default showAllevents
+export default giftCard
 
 export const getStaticProps=async()=>{
 
-  const eventsData=await getAllEvents()
-
-  return {
-    props:{
-      pagemeta:eventsData.pagemeta,
-      pagedata:eventsData.pagedata,
-      events:eventsData.events_list
+    const giftpagedataData=await getGiftCardPageData()
+  
+    return {
+      props:{
+        pagemeta:giftpagedataData.pagemeta,
+        pagedata:giftpagedataData.pagedata,
+        faqlist:giftpagedataData.gift_faq
+      }
     }
   }
-}
-
-
-
-

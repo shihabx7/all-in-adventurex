@@ -160,6 +160,7 @@ const EventContact=(props)=>{
                                                         </textarea>
                                                     </div>
                                                 </div>
+                                                {/*======================================contact form row message event====================== */}
                                                 <div className="form-row flex justify-center  my-4 ">
                                                    
                                                  

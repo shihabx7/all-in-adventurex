@@ -10,7 +10,7 @@ const LocationMap=()=>{
         <div> 
 
             <GoogleMap
-                mapContainerClassName="map-container w-full h-[340px] md:h-[340px] mb-20"
+                mapContainerClassName="map-container w-full h-[340px] md:h-[340px] mb-8"
                 center={{lat:47,lng:-85}}
                 //onLoad={handleOnLoad}
                 zoom={5}

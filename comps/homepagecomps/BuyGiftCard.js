@@ -14,7 +14,7 @@ const BuyGiftCard=()=>{
             <div className="gift-rt absolute"> 
                 <img src="/assets/Compas-brown.png"></img>
             </div>
-            <div className="max-w-7xl mx-auto px-4 z-50">
+            <div className="max-w-7xl mx-auto px-4 z-30">
                     <TitleSeparator title='GIFT CARD' color='golden-text' weight='font-bold'/>
                     <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-12 lg:mb-16">
                          <p className="text-gray-200 md:px-8">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
@@ -43,7 +43,7 @@ const BuyGiftCard=()=>{
                                     <Link href="#">
                                         <a className="bg-red-600 card-book-btn  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full">BUY GIFT CARD</a>
                                     </Link>
-                                    <Link href="#">
+                                    <Link href="/gift-cards">
                                         <a className="bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full">LEARN MORE</a>
                                     </Link>
 
