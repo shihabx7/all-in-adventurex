@@ -7,7 +7,7 @@ import { FiChevronRight } from "react-icons/fi";
 
 import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
 import { getContactPageData } from "./api/getContactPageData";
-import CorContact from "../comps/contactComps/corContact";
+import CorContact from "../comps/contactComps/CorContact";
 
 const Contact=(props)=>{
 
