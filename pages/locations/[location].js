@@ -66,7 +66,7 @@ const location=(props)=>{
                         {/* ===========Page Content here========= */}
                             <LocationHomeHero pagedata={props.pagedata}/>
                             <Howtobook></Howtobook>
-                            <InpersonEscapeSlider inpersongames={props.inpersongames}/>
+                             <InpersonEscapeSlider inpersongames={props.inpersongames}/>
                              <PysicalEscape othergames={props.othergames}/>
                               <VirtualEscapeSlider virtualgames={props.virtualgames}/>
                              <PlaningEventsSlider events={props.events}/>

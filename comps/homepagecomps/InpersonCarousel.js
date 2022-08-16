@@ -3,6 +3,7 @@ import Link from "next/link";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useEffect, useState } from "react";
+import Script from "next/script";
 
 
 const InpersonCarousel=({inpersongames})=>{
@@ -13,6 +14,16 @@ const InpersonCarousel=({inpersongames})=>{
 
             document.getElementById('locmenu').classList.remove('hidden')
             
+          }
+
+          const openBooking=()=>{
+            FH.open({
+              shortname: 'mysteryroom-austin',
+              fallback: 'simple', 
+              fullItems: 'yes', 
+              flow: 17839, 
+              view: { item: 44198 }
+            });
           }
     
     const showDescription=(description)=>{
@@ -45,8 +56,12 @@ const InpersonCarousel=({inpersongames})=>{
           partialVisibilityGutter: 60
         }
       };
+
+     
     return (
     <div className="full-carousel inpersongame  "> 
+     <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
+
     <Carousel
      swipeable={true}
      draggable={true}
@@ -102,7 +117,7 @@ const InpersonCarousel=({inpersongames})=>{
                                                                                   }</p>
                                 </div>
                                 <div className="card-game-link mt-4 text-center">
-                                    <button onClick={showLocation} className="border max-w-[200px] card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                                    <button onClick={showLocation} className="border max-w-[200px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
                                    <Link href={"/activities/"+inpersongame.slug}> 
                                    
                                     <a className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</a>

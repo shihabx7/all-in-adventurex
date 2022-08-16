@@ -3,6 +3,11 @@ import TitleSeparator from "../util/TitleSeparator"
 import Link from "next/dist/client/link"
 import { FiChevronRight } from "react-icons/fi";
 const BuyGiftCards=()=>{
+    const showLocation=()=>{
+
+        document.getElementById('locmenu').classList.remove('hidden')
+        
+      }
 
     return(
         <div className="buy-gift -mt-12 md:mt-0 py-16 md:py-20 lg:py-28 relative overflow-hidden" style={{backgroundImage:"url('/assets/svg/gift-bg.svg'),linear-gradient(65deg,rgba(0, 0, 0,1),rgba(0, 0, 0,1))"}}>
@@ -35,9 +40,9 @@ const BuyGiftCards=()=>{
                                     <span className="block w-[90%]">Car parking facility available in our location at the mall.</span>
                                 </div>
                                 <div className="gift-btn-box mt-8">
-                                    <Link href="#">
-                                        <a className="bg-red-600 card-book-btn  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full">BUY GIFT CARD</a>
-                                    </Link>
+                                    
+                                        <button onClick={showLocation} className="bg-red-600 card-book-btn  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full">BUY GIFT CARD</button>
+                                    
                                     <Link href="/activities" hpassHref>
                                         <a className="bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full">VIEW ALL GAMES</a>
                                     </Link>

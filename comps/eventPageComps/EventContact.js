@@ -80,11 +80,11 @@ const EventContact=(props)=>{
                                          {/*======================================contact form row====================== */}
                                                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between ">
                                                     <div className="form-col w-full md:w-[48%]">
-                                                        <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">What’s your first name? *</p>
+                                                        <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your first name? *</p>
                                                         <input type="text" className="w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Your first name" required></input>
                                                     </div>
                                                     <div className="form-col w-full md:w-[48%]">
-                                                        <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What’s your last name? *</p>
+                                                        <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your last name? *</p>
                                                         <input type="text" className=" w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Your last name" required></input>
                                                     </div>
                                                 </div>
@@ -92,11 +92,11 @@ const EventContact=(props)=>{
                                          {/*======================================contact form row====================== */}
                                                 <div className="form-row flex flex-col space-y-3 md:flex-row md:space-y-0 justify-between my-3 md:my-4 ">
                                                     <div className="form-col w-full md:w-[48%]">
-                                                        <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">What’s your email? *</p>
+                                                        <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your email? *</p>
                                                         <input type="text" className="w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Your email address" required></input>
                                                     </div>
                                                     <div className="form-col  w-full md:w-[48%]">
-                                                        <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What’s your phone number? *</p>
+                                                        <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your phone number? *</p>
                                                         <input type="text" className=" w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Your phone number" required></input>
                                                     </div>
                                                 </div>
@@ -153,7 +153,7 @@ const EventContact=(props)=>{
                                                 <div className="form-row flex justify-between my-4 ">
                                                    
                                                     <div className="form-col w-full">
-                                                        <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What’s your message? </p>
+                                                        <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your message? </p>
                                                       
                                                         <textarea className="w-full h-[110px] md:h-[140px] event-input text-gray-500  border-0 md:py-3 px-4 bg-white" placeholder="Write your message here"> 
 

@@ -4,7 +4,7 @@ const TitleSeparator=(props)=>{
 
         <div className="sep-title text-center">
             <div className="sep-container inline-block mx-auto"> 
-            <h2 className={props.color+' py-2 text-2xl md:text-[40px] lg:text-[44px] font-os '+props.weight}>{props.title}</h2>
+            <h2 className={props.color+' py-2 text-2xl uppercase md:text-[40px] lg:text-[44px] font-os '+props.weight}>{props.title}</h2>
             <div className="max-w-[72%] md:max-w-[80%] flex sep items-center mx-auto mt-1 md:mt-3 justify-between space-x-2">
                 <div className="bg-golden w-2/5 h-0.5"></div>
                 <div className=" w-auto hidden md:block">

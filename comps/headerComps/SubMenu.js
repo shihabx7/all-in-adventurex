@@ -215,14 +215,7 @@ const SubMenu=()=>{
                                 </Link>
 
                             </div>
-                            <div className="submenu-item">
-                                <Link href="/contact">
-                                     <a className="flex items-center">
-                                        <span className="sub-link-txt">Coorporate Contact</span> 
-                                     </a>
-                                </Link>
-
-                            </div>
+                            
                             
                            
 
@@ -233,8 +226,16 @@ const SubMenu=()=>{
 
             <div className="px-6 md:px-16 "> 
             <div className="submenu-content text-light-gold md:text-lg"> 
+                  <div className="submenu-item">
+                                <Link href="/about">
+                                     <a className="flex items-center">
+                                        <span className="sub-link-txt">About Us</span> 
+                                     </a>
+                                </Link>
+
+                            </div>
                             <div className="submenu-item">
-                                <Link href="#">
+                                <Link href="/testimonials">
                                      <a className="flex items-center">
                                         <span className="sub-link-txt">Testimonials</span> 
                                      </a>
@@ -245,6 +246,14 @@ const SubMenu=()=>{
                                 <Link href="/gallery">
                                      <a className="flex items-center">
                                         <span className="sub-link-txt">Customer galleries</span> 
+                                     </a>
+                                </Link>
+
+                            </div>
+                            <div className="submenu-item">
+                                <Link href="/careers">
+                                     <a className="flex items-center">
+                                        <span className="sub-link-txt">Careers</span> 
                                      </a>
                                 </Link>
 
@@ -292,7 +301,15 @@ const SubMenu=()=>{
                             <div className="submenu-item">
                                 <Link href="#">
                                      <a className="flex items-center">
-                                        <span className="sub-link-txt">Contact us</span> 
+                                        <span className="sub-link-txt">Contact Store</span> 
+                                     </a>
+                                </Link>
+
+                            </div>
+                            <div className="submenu-item">
+                                <Link href="/corporate-contact">
+                                     <a className="flex items-center">
+                                        <span className="sub-link-txt">Coorporate Contact</span> 
                                      </a>
                                 </Link>
 
