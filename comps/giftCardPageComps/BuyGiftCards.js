@@ -41,7 +41,7 @@ const BuyGiftCards=()=>{
                                 </div>
                                 <div className="gift-btn-box mt-8">
                                     
-                                        <button onClick={showLocation} className="bg-red-600 card-book-btn  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full">BUY GIFT CARD</button>
+                                        <button onClick={showLocation} className="bg-red-600 card-book-btn max-w-sm  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full">BUY GIFT CARD</button>
                                     
                                     <Link href="/activities" hpassHref>
                                         <a className="bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full">VIEW ALL GAMES</a>
