@@ -6,6 +6,9 @@ import Script from 'next/script'
 import Link from "next/link"
 import { useLoadScript } from "@react-google-maps/api"
 import MapwithInfo from './footercomps/MapwithInfo'
+import { FiExternalLink } from "react-icons/fi";
+
+
 
 const Footer=(props)=>{
 
@@ -294,15 +297,15 @@ const Footer=(props)=>{
                                 </div>
                                 <div className='usefull-link inline-block px-3 md:-px-0'> 
                                     <Link href="/faqs"> 
-                                        <a className='text-gray-400 text-sm  lg:text-base '>FAQ’s</a>
+                                        <a className='text-gray-400 text-sm  lg:text-base '>FAQ's</a>
                                     </Link>
                                 </div>
                                 <div className='hidden lg:block text-gray-400 text-2xl'> 
                                 <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
                                 </div>
                                 <div className='usefull-link inline-block px-3 md:-px-0'> 
-                                    <Link href="/carrers"> 
-                                        <a className='text-gray-400 text-sm  lg:text-base'>Carrers</a>
+                                    <Link href="/careers"> 
+                                        <a className='text-gray-400 text-sm  lg:text-base'>Careers</a>
                                     </Link>
                                 </div>
                                 <div className=' hidden lg:block text-gray-400 text-2xl'> 
@@ -365,8 +368,8 @@ const Footer=(props)=>{
                                     <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
                                 </div>
                                 <div className='usefull-link inline-block px-3 md:-px-0'> 
-                                    <Link href="/reviews"> 
-                                        <a className='text-gray-400 text-sm  lg:text-base'>Reviews</a>
+                                    <Link href="/testimonials"> 
+                                        <a className='text-gray-400 text-sm  lg:text-base'>Testimonials</a>
                                     </Link>
                                 </div>
                                 
@@ -407,7 +410,7 @@ const Footer=(props)=>{
                                     <div className=' text-gray-600 text-2xl'> 
                                         <span className='block w-1 h-1 rounded-full bg-gray-600'></span>
                                      </div>
-                                     <Link href="/terms-of-use"> 
+                                     <Link href="/terms-and-conditions"> 
                                         <a className='text-gray-600 hover-golden text-xs md:text-base'>Terms of use</a>
                                     </Link>
                                 </div>
@@ -419,13 +422,13 @@ const Footer=(props)=>{
                      {/*========================================= footer copyright row================ */}
 
                 </div>
-                <div className='dgency-row py-3 bg-dgency-purple text-center text-dgency-light text-xs md:text-sm'>
-                        Website designed, developed and marketed by 
-                        <span className='ml-2'> 
-                            <Link href="https://dgency.com"> 
-                                <a>dgency.com</a>
-                            </Link>
-                        </span>
+                <div className='dgency-row py-3 bg-dgency-purple text-center text-dgency-light text-xs md:text-sm flex justify-center space-x-1 items-center'>
+                       <p>Website designed, developed and marketed by</p>
+                       
+                    
+                    <a href="https://dgency.com/" target="_blank" className='dgency-copy text-gray-50 flex space-x-2 items-center'><span>Dgency.com</span> <span className='md:text-lg'><FiExternalLink/></span></a>
+                          
+                       
                  </div>
 
         </footer>
