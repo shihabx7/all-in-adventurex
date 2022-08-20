@@ -1,12 +1,23 @@
 
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { FiExternalLink,FiX } from "react-icons/fi";
+import { getCookies,getCookie, setCookie, deleteCookie } from 'cookies-next';
 const HeaderNotice=()=>{
 
-    const [showNotice,setShownotice]=useState(true)
+    const [showNotice,setShownotice]=useState(false)
     const closeNotice=()=>{
+        setCookie('header-notice', true);
         setShownotice(false)
+      
     }
+    useEffect(() => {
+        const coc=getCookie('header-notice')
+        if(!coc){
+            setShownotice(true)   
+        }
+       
+      },[]);
+
         return(
             showNotice &&
             <div className="header-notice py-2 bg-[#564B31]">
