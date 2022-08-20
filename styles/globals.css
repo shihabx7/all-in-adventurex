@@ -917,9 +917,7 @@ background-size: cover,cover;
 }
 
 @media only screen and (max-width: 500px) {
-  .nobtn-main-content{
-    
-  }
+ 
  
   .logo a img{
     max-height:52px;
@@ -1072,11 +1070,12 @@ background-size: cover,cover;
     font-size: 16px;
     line-height: 1.5;
   }
+  .home-nav-search {
+    width: 66%;
+  }
 }
 @media only screen and (max-width: 380px) {
-  .nobtn-main-content{
-    
-  }
+  
   .logo a img{
     max-height:40px;
   }
@@ -1097,9 +1096,7 @@ background-size: cover,cover;
   #hbtn{
     top:60px
   }
-  .breadcum {
-    margin-top: 26px;
-  }
+ 
 }
 @media only screen and (max-width: 370px) {
   .what-is {

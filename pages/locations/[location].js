@@ -49,7 +49,7 @@ const location=(props)=>{
                                 
 
                               </Head>
-                              <div className='breadcum mt-[34px] md:mt-[40px] lg:mt-[0px] py-1 md:py-1 lg:py-3 bg-[#fffceb]'>
+                              <div className='breadcum py-1 md:py-1 lg:py-3 bg-[#fffceb]'>
                                      <Breadcrumbs
                                             listClassName="max-w-7xl mx-auto px-2 md:px-4 breadcum-list text-sm md:text-base lg:text-lg"
                                             inactiveItemClassName="inline-block text-[#6a6a6a] hover:text-red-700"

@@ -116,14 +116,14 @@ const Homenav=(props)=>{
         {
           showSlug &&
 
-         <div id="hbtn" className="header-book-btn-container  fixed w-full  bg-coffee top-[68px] md:top-[74px] lg:hidden z-50">
+         <div id="hbtn" className="header-book-btn-container  w-full  bg-coffee  lg:hidden z-50">
                   <div className="max-w-7xl mx-auto flex justify-between"> 
                      <div className="w-[48%]">
                          <Link  href={{
                                pathname: '/book',
                                 query: { name: 'test' },
                                  }} hpassHref> 
-                             <a className="bg-red-600 hover:bg-red-700 py-2 px-6 block text-center text-white">BOOK GAMES</a>
+                             <a className="bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white">BOOK GAMES</a>
                          </Link>
                      </div>
                      <div className="w-[48%]">
@@ -131,7 +131,7 @@ const Homenav=(props)=>{
                                 pathname: '/book',
                                    query: { name: 'test' },
                                  }}> 
-                              <a className="bg-red-600 hover:bg-red-700 py-2 px-6 block text-center text-white">BOOK AN EVENT</a>
+                              <a className="bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white">BOOK AN EVENT</a>
                          </Link>
                      </div>
                                 

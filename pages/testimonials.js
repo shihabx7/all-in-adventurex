@@ -3,6 +3,7 @@ import Homenav from "../comps/Homenav";
 import Footer from "../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
+// page data
 import { getTestimonialPageData } from "./api/getTestimonialPageData";
 import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
 import TitleSeparator from "../comps/util/TitleSeparator";
@@ -10,6 +11,7 @@ import MainTestimonials from "../comps/testimonialPageComps/MainTestimonials";
 import Link from "next/link";
 
 const testimonials=(props)=>{
+  
     const toTitleCase=(title)=>{
         const titlefres=title.replace(/-/g,' ')
         const btitle=titlefres.split(' ').map((word)=>{return (word.charAt(0).toUpperCase() + word.slice(1))}).join(" ") // breadcum title capitalize
