@@ -68,6 +68,7 @@ var prevScrollpos = window.pageYOffset;
 //var scrollPosition = window.scrollY;
 
 window.onscroll = function() {
+  var headerHeight = document.getElementById('header-container-s').offsetHeight+'px';
   if(window.scrollY > 600){
     document.getElementById('header').style.position = "fixed"
  
@@ -79,7 +80,8 @@ window.onscroll = function() {
     document.getElementById('header').style.top = "0px"
   } 
   else{
-    document.getElementById('header').style.top = "-140px"
+    
+    document.getElementById('header').style.top = "-"+headerHeight
   }
  prevScrollpos = currentScrollPos;
 

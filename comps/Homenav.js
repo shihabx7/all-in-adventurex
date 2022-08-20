@@ -52,8 +52,9 @@ const Homenav=(props)=>{
         
         
         <header id="header" className="bg-coffee w-full z-50">
+          <div id="header-container-s" className="header-container-s">
           <HeaderNotice/>
-            <div className="max-w-7xl mx-auto relative md:px-4" ref={ref}>
+            <div className="header-container-s max-w-7xl mx-auto relative md:px-4" ref={ref}>
                 <div className="home-nav-bar flex justify-between items-center py-2 px-2 sm:p-1 lg:py-2 lg:px-0"> 
                     <div className="logo">
                         <Link href="/"> 
@@ -110,10 +111,8 @@ const Homenav=(props)=>{
                        
                 
             </div>
-           
-        </header>
-      
-        {
+            </div>
+            {
           showSlug &&
 
          <div id="hbtn" className="header-book-btn-container  w-full  bg-coffee  lg:hidden z-50">
@@ -140,6 +139,10 @@ const Homenav=(props)=>{
 
 
 }
+           
+        </header>
+      
+       
         
           
         </>
