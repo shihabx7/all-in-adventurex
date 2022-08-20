@@ -16,7 +16,7 @@ html,body,a{
   font-family: 'Roboto Condensed', sans-serif;
 }
 #header{
-  transition: top 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
   z-index: 10000;
 }
 #hbtn{
@@ -52,7 +52,7 @@ html,body,a{
   max-width:92px;
 }
 .main-content{
-  padding-top:82px;
+  
 }
 .menu-item a:hover{
   background-color: #E0BF62; 
@@ -505,8 +505,30 @@ background-size: cover,cover;
  
   padding-inline-start: 0ch;
 }
+
+.tab-btn-shadow{
+
+  box-shadow:0px 2px 4px rgba(0,0,0,0.25);
+}
+.step-tab-item{
+  transition:.3s ease-in;
+  opacity: 1;
+  animation:fadtab .8s linear;
+  animation-iteration-count: 1;
+}
+@keyframes fadtab {
+ 0%{
+  -webkit-opacity: .7; 
+  opacity:0.7; 
+ }
+  100% { 
+      -webkit-opacity: 1; 
+      opacity:1; 
+  } 
+}
+
 .dgency-copy{
-  opacity: 0.3;
+  opacity: 0.4;
   animation:jap 2.6s linear infinite;
 }
 @keyframes jap {
@@ -515,8 +537,8 @@ background-size: cover,cover;
     opacity:1; 
 } 
   100% { 
-      -webkit-opacity: 0.3; 
-      opacity:0.3; 
+      -webkit-opacity: 0.4; 
+      opacity:0.4; 
   } 
 }
 
@@ -662,7 +684,7 @@ background-size: cover,cover;
     width: 60%;
   }
   .main-content{
-    padding-top:74px;
+   
   }
   .physical-escape-dots{
     display:flex !important;
@@ -822,7 +844,7 @@ background-size: cover,cover;
 }
 @media only screen and (max-width: 767px) {
   .nobtn-main-content{
-    padding-top:82px;
+   
   }
 
   .home-hero {
@@ -896,7 +918,7 @@ background-size: cover,cover;
 
 @media only screen and (max-width: 500px) {
   .nobtn-main-content{
-    padding-top:68px;
+    
   }
  
   .logo a img{
@@ -1053,7 +1075,7 @@ background-size: cover,cover;
 }
 @media only screen and (max-width: 380px) {
   .nobtn-main-content{
-    padding-top:60px;
+    
   }
   .logo a img{
     max-height:40px;
@@ -1107,9 +1129,16 @@ background-size: cover,cover;
     font-size: 14px;
     line-height: 1.4;
   }
+  .header-notice-box p{
+    font-size:10px;
+  }
+  .header-notice-box a{
+    font-size:10px;
+  }
 }
 @media only screen and (max-width: 340px) {
   .what-is h2 {
     font-size: 15px;
   }
+  
 }

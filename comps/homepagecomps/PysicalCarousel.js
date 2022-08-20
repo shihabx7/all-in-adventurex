@@ -22,13 +22,13 @@ const PysicalCarousel=({othergames})=>{
           },
         desktop: {
           breakpoint: { max: 1440, min: 1024 },
-          items: 4,
+          items: 3,
           slidesToSlide: 1,
           partialVisibilityGutter: 0
         },
         tablet: {
           breakpoint: { max: 1024, min: 520 },
-          items: 3,
+          items: 2,
           slidesToSlide:1,
           partialVisibilityGutter:20
         },

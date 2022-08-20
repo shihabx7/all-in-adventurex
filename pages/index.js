@@ -18,16 +18,12 @@ import {Homepagedata} from './api/homepagedata'
 
 export default function Home({mainprops,pagedata,inpersongames,othergames,virtualgames,events,reviews}) {
  
-  
-  const setTopPadding=()=>{
-    let headerHeight=document.getElementById("header").offsetHeight;
-    document.getElementById("mainContent").style.paddingTop=headerHeight+"px";
-  }
+ 
  
   return (
     <> 
     <Homenav/>
-    <div onLoad={setTopPadding} id="mainContent" className='main-content' >
+    <div id="mainContent" className='main-content' >
       <Head>
         <title>All in adventure</title>
         <meta name="description" content="All in one adventure escape games" />
@@ -83,7 +79,7 @@ export const getStaticProps=async ()=>{
     },
    
     // - At most once every 10 seconds
-   // revalidate: 30, // In seconds
+    revalidate: 30, // In seconds
   }
 
 

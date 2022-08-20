@@ -10,6 +10,7 @@ import Link from "next/link"
 import { useEffect, useRef, useState} from 'react';
 import HeaderBtnRed from "./headerComps/HeaderBtnRed";
 import LocationBtnH from "./util/LocationBtnH";
+import HeaderNotice from "./headerComps/HeaderNotice";
 
 
 
@@ -50,7 +51,8 @@ const Homenav=(props)=>{
         </div>
         
         
-        <header id="header" className="bg-coffee w-full z-50 fixed">
+        <header id="header" className="bg-coffee w-full z-50">
+          <HeaderNotice/>
             <div className="max-w-7xl mx-auto relative md:px-4" ref={ref}>
                 <div className="home-nav-bar flex justify-between items-center py-2 px-2 sm:p-1 lg:py-2 lg:px-0"> 
                     <div className="logo">
@@ -99,7 +101,7 @@ const Homenav=(props)=>{
                     </div>
                 </div>
                         
-                                <div id="submenu-holder" className="submenu-holder absolute top-full right-0 z-40 w-full md:w-auto"> 
+                                <div id="submenu-holder" className="submenu-holder absolute top-full right-0 z-40  w-full md:w-auto"> 
                                 {showMe &&(
                                      <SubMenu></SubMenu>
                                      )}

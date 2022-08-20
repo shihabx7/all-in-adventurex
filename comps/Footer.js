@@ -7,6 +7,7 @@ import Link from "next/link"
 import { useLoadScript } from "@react-google-maps/api"
 import MapwithInfo from './footercomps/MapwithInfo'
 import { FiExternalLink } from "react-icons/fi";
+import UseFullLinks from './footercomps/UseFullLinks';
 
 
 
@@ -284,96 +285,9 @@ const Footer=(props)=>{
 
                     {/*========================================= footer copyright row================ */}
                         <div className='footer-copy-row pt-8'> 
-                            <h3 className='golden-text font-xl font-bold text-center'>USEFUL LINKS</h3>
+                            
                           {/*========================================= usefull link end================ */}
-                            <div className='usefull-link-box block text-center md:flex justify-between items-center py-4 pb-0 md:py-10 lg:py-12'> 
-                                <div className='usefull-link text-gray-400 inline-block pr-2 md:pr-0'> 
-                                    <Link href="/about"> 
-                                        <a className='text-gray-400  text-sm  lg:text-base'>About</a>
-                                    </Link>
-                                </div>
-                                <div className='hidden lg:block text-gray-400 text-2xl'> 
-                                <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
-                                </div>
-                                <div className='usefull-link inline-block px-3 md:-px-0'> 
-                                    <Link href="/faqs"> 
-                                        <a className='text-gray-400 text-sm  lg:text-base '>FAQ's</a>
-                                    </Link>
-                                </div>
-                                <div className='hidden lg:block text-gray-400 text-2xl'> 
-                                <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
-                                </div>
-                                <div className='usefull-link inline-block px-3 md:-px-0'> 
-                                    <Link href="/careers"> 
-                                        <a className='text-gray-400 text-sm  lg:text-base'>Careers</a>
-                                    </Link>
-                                </div>
-                                <div className=' hidden lg:block text-gray-400 text-2xl'> 
-                                <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
-                                </div>
-                                <div className='usefull-link inline-block px-3 md:-px-0'> 
-                                    <Link href="/franchise"> 
-                                        <a className='text-gray-400 text-sm  lg:text-base'>Franchise</a>
-                                    </Link>
-                                </div>
-                                <div className=' hidden lg:block text-gray-400 text-2xl'> 
-                                <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
-                                </div>
-                                <div className='usefull-link inline-block px-3 md:-px-0'> 
-                                    <Link href="/leader-board"> 
-                                        <a className='text-gray-400 text-sm  lg:text-base'>Leader Board</a>
-                                    </Link>
-                                </div>
-                                <div className=' hidden lg:block text-gray-400 text-2xl'> 
-                                <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
-                                </div>
-                                <div className='usefull-link inline-block px-3 md:-px-0'> 
-                                    <Link href="/gallery"> 
-                                        <a className='text-gray-400 text-sm  lg:text-base'>Gallery</a>
-                                    </Link>
-                                </div>
-                                <div className=' hidden lg:block text-gray-400 text-2xl'> 
-                                <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
-                                </div>
-                                <div className='usefull-link inline-block px-3 md:-px-0'> 
-                                    <Link href="/team-building"> 
-                                        <a className='text-gray-400 text-sm  lg:text-base'>Team Building</a>
-                                    </Link>
-                                </div>
-                                <div className=' hidden lg:block text-gray-400 text-2xl'> 
-                                <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
-                                </div>
-                                <div className='usefull-link inline-block px-3 md:-px-0'> 
-                                    <Link href="/offers"> 
-                                        <a className='text-gray-400 text-sm  lg:text-base'>Offers</a>
-                                    </Link>
-                                </div>
-                                <div className=' hidden lg:block text-gray-400 text-2xl'> 
-                                <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
-                                </div>
-                                <div className='usefull-link inline-block px-3 md:-px-0'> 
-                                    <Link href="/events"> 
-                                        <a className='text-gray-400 text-sm  lg:text-base'>Events</a>
-                                    </Link>
-                                </div>
-                                <div className=' hidden lg:block text-gray-400 text-2xl'> 
-                                <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
-                                </div>
-                                <div className='usefull-link inline-block px-3 md:-px-0'> 
-                                    <Link href="/gift-card"> 
-                                        <a className='text-gray-400 text-sm  lg:text-base'>Gift Card</a>
-                                    </Link>
-                                </div>
-                                <div className=' hidden lg:block text-gray-400 text-2xl'> 
-                                    <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
-                                </div>
-                                <div className='usefull-link inline-block px-3 md:-px-0'> 
-                                    <Link href="/testimonials"> 
-                                        <a className='text-gray-400 text-sm  lg:text-base'>Testimonials</a>
-                                    </Link>
-                                </div>
-                                
-                            </div>
+                           <UseFullLinks/>
                     {/*========================================= usefull link end================ */}
                             <div className='hidden adv-btn border-btn rounded-full mx-auto max-w-xs bg-dark-red hover:bg-golden-alt'> 
                                 <div className='footer-btn justify-center  bg-esc-black flex space-x-3 shrink rounded-full text-white p-3 items-center hover:shadow-md'> 

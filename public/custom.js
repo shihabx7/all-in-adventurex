@@ -62,32 +62,30 @@ for (let j = 0; j < sliderbookBtn.length; j++) {
 
 
 
-
+//var divHeight = window.innerHeight;
 
 var prevScrollpos = window.pageYOffset;
+//var scrollPosition = window.scrollY;
 
 window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
+  if(window.scrollY > 600){
+    document.getElementById('header').style.position = "fixed"
+ 
+
+    var currentScrollPos = window.pageYOffset;
   
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("header").style.top = "0";
-    if(screen.width<1024 && document.getElementById('hbtn')!=null){
-      document.getElementById('hbtn').style.top = "74px"
-    }
-    if(screen.width<768 && document.getElementById('hbtn')!=null){
-      document.getElementById('hbtn').style.top = "68px"
-    }
-    if(screen.width<380 && document.getElementById('hbtn')!=null){
-      document.getElementById('hbtn').style.top = "60px"
-    }
     
-  } else {
-    document.getElementById("header").style.top = "-84px";
-    if(document.getElementById('hbtn')!=null){
-      document.getElementById('hbtn').style.top = "0px"
-    }
-    
+    document.getElementById('header').style.top = "0px"
+  } 
+  else{
+    document.getElementById('header').style.top = "-140px"
+  }
+ prevScrollpos = currentScrollPos;
 
   }
-  prevScrollpos = currentScrollPos;
+  else{
+    document.getElementById('header').style.position = "unset"
+  }
+
 }

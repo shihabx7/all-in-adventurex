@@ -60,7 +60,7 @@ const InpersonCarousel=({inpersongames})=>{
      
     return (
     <div className="full-carousel inpersongame  "> 
-     <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
+     {/*<Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />*/}
 
     <Carousel
      swipeable={true}
