@@ -43,8 +43,8 @@ const SubMenu=()=>{
                                     )
                                   }
                             >
-                                <Link href="#">
-                                     <a className="flex items-center space-x-2 ">
+                               
+                                     <p className="cursor-pointer flex items-center space-x-2 ">
                                         <span className="sub-link-txt"
                                         style={{
                                             borderBottom: openMenu==='1' ? "1px solid #FFEFCD":"1px solid transparent"
@@ -54,8 +54,8 @@ const SubMenu=()=>{
                                          {openMenu==='1' ? <FaAngleUp/> : <FaAngleDown/>}
                                         </span>
                                         
-                                     </a>
-                                </Link>
+                                     </p>
+                              
 
                                 <div className="submenu-dropdown py-2 ml-4 text-base"
                                 style={{
@@ -139,8 +139,8 @@ const SubMenu=()=>{
                                     )
                                   }
                             >
-                                <Link href="#">
-                                     <a className="flex items-center space-x-2">
+                                
+                                     <p className="cursor-pointer flex items-center space-x-2">
                                         <span className="sub-link-txt"
                                         style={{
                                             borderBottom: openMenu==='3' ? "1px solid #FFEFCD":"1px solid transparent"
@@ -150,8 +150,8 @@ const SubMenu=()=>{
                                          {openMenu==='3' ? <FaAngleUp/> : <FaAngleDown/>}
                                         </span>
                                         
-                                     </a>
-                                </Link>
+                                     </p>
+                               
 
                                 <div className="submenu-dropdown py-2 ml-4 text-base"
                                 style={{
@@ -195,8 +195,8 @@ const SubMenu=()=>{
                                     )
                                   }
                             >
-                                <Link href="#">
-                                     <a className="flex items-center space-x-2">
+                                
+                                     <p className="cursor-pointer flex items-center space-x-2">
                                         <span className="sub-link-txt"
                                         style={{
                                             borderBottom: openMenu==='3' ? "1px solid #FFEFCD":"1px solid transparent"
@@ -206,8 +206,8 @@ const SubMenu=()=>{
                                          {openMenu==='4' ? <FaAngleUp/> : <FaAngleDown/>}
                                         </span>
                                         
-                                     </a>
-                                </Link>
+                                     </p>
+                                
 
                                 <div className="submenu-dropdown py-2 ml-4 text-base"
                                 style={{
@@ -280,8 +280,8 @@ const SubMenu=()=>{
                                     )
                                   }
                             >
-                                <Link href="#">
-                                     <a className="flex items-center  space-x-2 ">
+                                
+                                     <p className="cursor-pointer flex items-center  space-x-2 ">
                                         <span className="sub-link-txt"
                                         style={{
                                             borderBottom: openMenu==='2' ? "1px solid #FFEFCD":"1px solid transparent"
@@ -291,8 +291,8 @@ const SubMenu=()=>{
                                          {openMenu==='2' ? <FaAngleUp/> : <FaAngleDown/>}
                                         </span>
                                         
-                                     </a>
-                                </Link>
+                                     </p>
+                              
 
                                 <div className="submenu-dropdown py-2 ml-4 text-base"
                                 style={{

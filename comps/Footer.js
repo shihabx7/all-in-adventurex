@@ -16,7 +16,7 @@ const Footer=(props)=>{
     
      const FooterMap=()=> {
         const { isLoaded } = useLoadScript({
-          googleMapsApiKey: "AIzaSyCYSGDPwfMMqKRb7ApqkuH3d5YsMjLiEiY" // Add your API key
+          googleMapsApiKey: "AIzaSyCYSGDPwfMMqKRb7ApqkuH3d5YsMjLiEiY" // Add 
         });
       
         return isLoaded ? <MapwithInfo/> : null;
