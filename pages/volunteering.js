@@ -4,15 +4,15 @@ import Footer from "../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
 // page template=============
-import FranchiseHero from '../comps/franchisePageComps/FranchiseHero';
-import { getFranchisePageData } from './api/getFranchisePageData';
-import FranchiseModel from "../comps/franchisePageComps/FranchiseModel";
-import FranchiseTestimonials from "../comps/franchisePageComps/FranchiseTestimonials";
-import WhyAllinAdventure from "../comps/franchisePageComps/WhyAllinAdventure";
-import ProjectTimeLine from "../comps/franchisePageComps/ProjectTimeLine";
-import KeytoSuccess from "../comps/franchisePageComps/KeytoSuccess";
+import { getVolunteeringPageData } from "./api/getVolunteeringPageData";
+import GameHomeHero  from "../comps/activitiyPageComps/GameHomeHero";
+import GivingBack from "../comps/volunteeringPageComps/GivingBack";
+import Organization from "../comps/volunteeringPageComps/Organization";
+import ContactVolunteer from "../comps/volunteeringPageComps/ContactVolunteer";
+import VolunteeringLoc from "../comps/volunteeringPageComps/VolunteeringLoc";
 
-const franchise  = (props) => {
+
+const Volunteering=(props)=>{
     const toTitleCase=(title)=>{
         const titlefres=title.replace(/-/g,' ')
         const btitle=titlefres.split(' ').map((word)=>{return (word.charAt(0).toUpperCase() + word.slice(1))}).join(" ") // breadcum title capitalize
@@ -29,7 +29,7 @@ const franchise  = (props) => {
           <>
               {/* =======header content======== */}
            <Head>
-                 <title>All in adventure | Franchise</title>
+                 <title>All in adventure | Volunteering</title>
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
@@ -37,7 +37,7 @@ const franchise  = (props) => {
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}
-    <div id="mainContent" className='main-content nobtn-main-content bg-center' >
+    <div id="mainContent" className='main-content nobtn-main-content bg-center relative' >
            {/* =======breadcum content and breadcum========  */}
            <div className='breadcums  py-1 md:py-2 bg-[#fffceb]'>
              <Breadcrumbs  replaceCharacterList={[{ from: '-', to: ' ' }]} 
@@ -52,14 +52,16 @@ const franchise  = (props) => {
          {
             console.log(props)
          }
-         <FranchiseHero pagedata={props.pagedata} label="INQUIRY NOW" linkloc="/franchise-contact"/>
-         <FranchiseModel/>
-         <FranchiseTestimonials/>
-         <WhyAllinAdventure/>
-         <ProjectTimeLine/>
-         <KeytoSuccess/>
 
+        <div id="volunteeringdloc" className="rewardloc z-[10000] fixed w-screen h-screen top-0 left-0 overflow-scroll hidden">
+            <VolunteeringLoc/>
 
+        </div>
+        <GameHomeHero gametotal="not" pagedata={props.pagedata}/>
+        <GivingBack/>
+        <Organization/>
+        <ContactVolunteer/>
+   
 
   {/* =========================================================================================main content ======== end */}
         </div>
@@ -69,16 +71,17 @@ const franchise  = (props) => {
     )
 }
 
-export default franchise 
+export default Volunteering
 
 export const getStaticProps=async()=>{
 
-    const franchisePageData=await getFranchisePageData()
+    const volunteeringPageData=await getVolunteeringPageData()
 
     return{
         props:{
-            pagedata:franchisePageData.pagedata,
-            pagemeta:franchisePageData.pagemeta
+            pagedata:volunteeringPageData.pagedata,
+            pagemeta:volunteeringPageData.pagemeta
+            
         },
         revalidate:30
     }

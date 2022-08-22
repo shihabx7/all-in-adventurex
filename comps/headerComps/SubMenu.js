@@ -201,7 +201,7 @@ const SubMenu=()=>{
                                         style={{
                                             borderBottom: openMenu==='3' ? "1px solid #FFEFCD":"1px solid transparent"
                                              }}
-                                        >Evesnts and parties</span>
+                                        >Events and parties</span>
                                          <span className="text-gold">
                                          {openMenu==='4' ? <FaAngleUp/> : <FaAngleDown/>}
                                         </span>

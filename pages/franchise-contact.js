@@ -5,14 +5,10 @@ import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
 // page template=============
 import FranchiseHero from '../comps/franchisePageComps/FranchiseHero';
-import { getFranchisePageData } from './api/getFranchisePageData';
-import FranchiseModel from "../comps/franchisePageComps/FranchiseModel";
-import FranchiseTestimonials from "../comps/franchisePageComps/FranchiseTestimonials";
-import WhyAllinAdventure from "../comps/franchisePageComps/WhyAllinAdventure";
-import ProjectTimeLine from "../comps/franchisePageComps/ProjectTimeLine";
-import KeytoSuccess from "../comps/franchisePageComps/KeytoSuccess";
+import { getFranchiseContactPageData } from './api/getFranchiseContactPageData';
+import FranchiseContactForm from "../comps/franchisePageComps/FranchiseContact";
 
-const franchise  = (props) => {
+const FranchiseContact=(props)=>{
     const toTitleCase=(title)=>{
         const titlefres=title.replace(/-/g,' ')
         const btitle=titlefres.split(' ').map((word)=>{return (word.charAt(0).toUpperCase() + word.slice(1))}).join(" ") // breadcum title capitalize
@@ -29,7 +25,7 @@ const franchise  = (props) => {
           <>
               {/* =======header content======== */}
            <Head>
-                 <title>All in adventure | Franchise</title>
+                 <title>All in adventure | Franchise contact</title>
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
@@ -52,12 +48,11 @@ const franchise  = (props) => {
          {
             console.log(props)
          }
-         <FranchiseHero pagedata={props.pagedata} label="INQUIRY NOW" linkloc="/franchise-contact"/>
-         <FranchiseModel/>
-         <FranchiseTestimonials/>
-         <WhyAllinAdventure/>
-         <ProjectTimeLine/>
-         <KeytoSuccess/>
+         <FranchiseHero pagedata={props.pagedata} label="FILL OUT THE INQUIRY FORM" linkloc="#inquiry"/>
+         
+         <div className="inquiry-form" id="inquiry">
+         <FranchiseContactForm/>
+         </div>
 
 
 
@@ -67,13 +62,14 @@ const franchise  = (props) => {
           <Footer/>
           </>
     )
+
 }
 
-export default franchise 
+export default FranchiseContact
 
 export const getStaticProps=async()=>{
 
-    const franchisePageData=await getFranchisePageData()
+    const franchisePageData=await getFranchiseContactPageData()
 
     return{
         props:{

@@ -33,8 +33,8 @@ const FranchiseModel=()=>{
                         </div>
                         <div className="inline-block min-w-[280px] text-center bg-golden hover:bg-golden-alt  search-loc hover:cursor-pointer hover:shadow boder-p rounded-full mt-4 md:mt-6 lg:mt-8"> 
                            <div className="bg-[#FEF6E9] hover:bg-golden-alt  rounded-full items-center py-2 px-6 md:py-3 md:px-8 text-[#424242] md:text-lg gont-medium">
-                                     <Link href="/franchise-contact">
-                                         <a> INQUIRE NOW</a>
+                                     <Link href="/franchise-contact" hpassHref>
+                                         <a className="block"> INQUIRE NOW</a>
                                     </Link>
     
                             </div>
@@ -69,7 +69,7 @@ const FranchiseModel=()=>{
                             <div className="inline-block min-w-[280px] text-center bg-golden hover:bg-golden-alt  search-loc hover:cursor-pointer hover:shadow boder-p rounded-full mt-4 md:mt-6 lg:mt-8"> 
                            <div className="bg-[#FEF6E9] hover:bg-golden-alt  rounded-full items-center py-2 px-6 md:py-3 md:px-8 text-[#424242] md:text-lg gont-medium">
                                      <Link href="/franchise-contact">
-                                         <a> INQUIRE NOW</a>
+                                         <a className="block"> INQUIRE NOW</a>
                                     </Link>
     
                             </div>

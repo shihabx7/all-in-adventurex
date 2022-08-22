@@ -27,8 +27,8 @@ const FranchiseHero=(props)=>{
                 <div className="max-w-md mx-auto mt-8 ">
 
                         {/*============location search btn==========*/}
-                        <Link href="/franchise-contact">
-                            <a className="bg-red-600 hover:bg-red-700 rounded-full py-3 px-8 lg:py-4 lg:px-12 max-w-sm block mx-auto text-white text-lg text-center ">INQUIRE NOW</a>
+                        <Link href={props.linkloc}>
+                            <a className="bg-red-600 hover:bg-red-700 rounded-full py-3 px-8 lg:py-4 lg:px-12 max-w-sm block mx-auto text-white text-lg text-center ">{props.label}</a>
                         
                         </Link>
                          {/*============location search btn==========*/}

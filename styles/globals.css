@@ -503,7 +503,7 @@ background-size: cover,cover;
 .star-list li {
   list-style-image: url(/assets/svg/star-bullet.svg);
  
-  padding-inline-start: 0ch;
+  padding-inline-start: .6ch;
 }
 
 .tab-btn-shadow{
