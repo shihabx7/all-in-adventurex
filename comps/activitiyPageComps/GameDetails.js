@@ -22,7 +22,7 @@ const GameDetails=(props)=>{
                                 <p className="text-[#464646] md:text-[18px] lg:text-[20px]">{props.activitydata.story}</p>
                             </div>
                             <div className="game-dt-link mt-4 md:mt-4 lg:mt-6"> 
-                                    <GameDtBtn  label="I’VE READ ENOUGH! BOOK NOW" color="golden-text" weight="font-bold"/>
+                                    <GameDtBtn  label="I'VE READ ENOUGH! BOOK NOW" color="golden-text" weight="font-bold"/>
                             </div>
                         </div>
                         <div className="game-dt-col md:w-[49%] lg:w-[45%] order-1 mb-4 md:mb-0 md:order-2"> 
@@ -45,7 +45,7 @@ const GameDetails=(props)=>{
                                 <p className="text-[#464646] md:text-[18px] lg:text-[20px]">{props.activitydata.scene}</p>
                             </div>
                             <div className="game-dt-link mt-4 md:mt-4 lg:mt-6"> 
-                                    <GameDtBtn label="DON’T GIVE IT AWAY! BOOK NOW" />
+                                    <GameDtBtn label="DON'T GIVE IT AWAY! BOOK NOW" />
                             </div>
                         </div>
                         
@@ -63,7 +63,7 @@ const GameDetails=(props)=>{
                                 <p className="text-[#464646] md:text-[18px] lg:text-[20px]">{props.activitydata.mission}</p>
                             </div>
                             <div className="game-dt-link mt-4 md:mt-4 lg:mt-6"> 
-                                    <GameDtBtn  label="LET ME AT ‘EM! BOOK NOW" />
+                                    <GameDtBtn  label="LET ME AT EM! BOOK NOW" />
                             </div>
                         </div>
                         <div className="game-dt-col md:w-[48%] lg:w-[45%] order-1 mb-4 md:mb-0 md:order-2"> 
