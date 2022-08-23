@@ -362,7 +362,7 @@ const SubMenu=()=>{
 
                             </div>
                             <div className="submenu-item">
-                                <Link href="#">
+                                <Link href="/pricing">
                                      <a className="flex items-center">
                                         <span className="sub-link-txt">Pricing</span> 
                                      </a>
@@ -370,7 +370,7 @@ const SubMenu=()=>{
 
                             </div>
                             <div className="submenu-item">
-                                <Link href="#">
+                                <Link href="/deals-coupons">
                                      <a className="flex items-center">
                                         <span className="sub-link-txt">Deals and coupons</span> 
                                      </a>
