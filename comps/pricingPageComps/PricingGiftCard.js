@@ -21,19 +21,19 @@ const PricingGiftCard=(props)=>{
                                <thead className="bg-[#EFE4CA]">
                                 {/** ==============table-head============ */}
                                   <tr >
-                                    <td className="border border-[#D2C6AA] w-[30%] md:w-[30%] p-2 md:p-3">
+                                    <td className="border border-[#D2C6AA] w-[28%]  p-2 md:p-3">
                                         <h4 className="font-medium sm:text-lg md:text-[24px] text-[#000000]">
                                         Options
                                         </h4>
                                       
                                     </td>
-                                    <td className="border border-[#D2C6AA] w-[32%] md:w-[30%] p-2 md:p-4">
+                                    <td className="border border-[#D2C6AA] w-[36%]  p-2 md:p-4">
                                         <h4 className="font-medium text-sm sm:text-lg md:text-[24px] text-[#000000]">
                                         Gift Card
                                         </h4>
                                         <p className="text-[#222222] font-regular text-xs sm:text-sm md:text-lg">(Digital redeemable card)</p>
                                     </td>
-                                    <td className="border border-[#D2C6AA] w-[32%] md:w-[30%] p-2 md:p-4">
+                                    <td className="border border-[#D2C6AA] w-[36%]  p-2 md:p-4">
                                         <h4 className="font-medium text-sm  sm:text-lg md:text-[24px] text-[#000000]">
                                         Gift Card Add On
                                         </h4>
@@ -49,19 +49,19 @@ const PricingGiftCard=(props)=>{
                                     <tbody className="bg-[#FBF2DC]">
                                         {/** ==============table-row============4+ players */}
                                         <tr >
-                                           <td className="border border-[#D2C6AA] w-[28%] md:w-[40%] p-2 md:p-4">
+                                           <td className="border border-[#D2C6AA] w-[28%]  p-2 md:p-4">
                                                <h4 className="font-medium md:text-[20px] text-[#000000]">
                                                Starts
                                                </h4>
                                                
                                            </td>
-                                           <td className="border border-[#D2C6AA] w-[36%] md:w-[30%] p-2 md:p-4">
+                                           <td className="border border-[#D2C6AA] w-[36%] p-2 md:p-4">
                                               <h4 className="font-medium  md:text-[20px] text-[#000000]">
                                               $25
                                                </h4>
                                                <p className="text-[#222222] font-light text-xs sm:text-sm md:text-lg">Per unit</p>
                                            </td>
-                                           <td className="border border-[#D2C6AA] w-[36%] md:w-[30%] p-2 md:p-4">
+                                           <td className="border border-[#D2C6AA] w-[36%] p-2 md:p-4">
                                                 <h4 className="font-medium  md:text-[20px] text-[#000000]">
                                                 $19.99
                                                </h4>
@@ -73,19 +73,19 @@ const PricingGiftCard=(props)=>{
                                          {/** ==============table-row end============ */}
                                          {/** ==============table-row===========   3-4 Players */}
                                         <tr >
-                                            <td className="border border-[#D2C6AA] w-[28%] md:w-[40%] p-2 md:p-4">
+                                            <td className="border border-[#D2C6AA] w-[28%]  p-2 md:p-4">
                                                <h4 className="font-medium md:text-[20px] text-[#000000]">
                                                Growth
                                                </h4>
                                                
                                            </td>
-                                           <td className="border border-[#D2C6AA] w-[36%] md:w-[30%] p-2 md:p-4">
+                                           <td className="border border-[#D2C6AA] w-[36%] p-2 md:p-4">
                                               <h4 className="font-medium  md:text-[20px] text-[#000000]">
                                               $50
                                                </h4>
                                                <p className="text-[#222222] font-light text-xs sm:text-sm md:text-lg">Per unit</p>
                                            </td>
-                                           <td className="border border-[#D2C6AA] w-[36%] md:w-[30%] p-2 md:p-4">
+                                           <td className="border border-[#D2C6AA] w-[36%] p-2 md:p-4">
                                                 <h4 className="font-medium  md:text-[20px] text-[#000000]">
                                                -
                                                </h4>
@@ -97,19 +97,19 @@ const PricingGiftCard=(props)=>{
                                          {/** ==============table-row end============ */}
                                           {/** ==============table-row===========   2 Players */}
                                         <tr >
-                                        <td className="border border-[#D2C6AA] w-[28%] md:w-[40%] p-2 md:p-4">
+                                        <td className="border border-[#D2C6AA] w-[28%] p-2 md:p-4">
                                                <h4 className="font-medium md:text-[20px] text-[#000000]">
                                                Generous
                                                </h4>
                                                
                                            </td>
-                                           <td className="border border-[#D2C6AA] w-[36%] md:w-[30%] p-2 md:p-4">
+                                           <td className="border border-[#D2C6AA] w-[36%] p-2 md:p-4">
                                               <h4 className="font-medium  md:text-[20px] text-[#000000]">
                                               $100
                                                </h4>
                                                <p className="text-[#222222] font-light text-xs sm:text-sm md:text-lg">Per unit</p>
                                            </td>
-                                           <td className="border border-[#D2C6AA] w-[36%] md:w-[30%] p-2 md:p-4">
+                                           <td className="border border-[#D2C6AA] w-[36%] p-2 md:p-4">
                                                 <h4 className="font-medium  md:text-[20px] text-[#000000]">
                                                -
                                                </h4>
@@ -122,19 +122,19 @@ const PricingGiftCard=(props)=>{
                                          {/** ==============table-row===========  10+ Players*/}
                                         <tr >
                                            
-                                            <td className="border border-[#D2C6AA] w-[28%] md:w-[40%] p-2 md:p-4">
+                                            <td className="border border-[#D2C6AA] w-[28%] p-2 md:p-4">
                                                <h4 className="font-medium md:text-[20px] text-[#000000]">
                                                Custom
                                                </h4>
                                                
                                            </td>
-                                           <td className="border border-[#D2C6AA] w-[36%] md:w-[30%] p-2 md:p-4">
+                                           <td className="border border-[#D2C6AA] w-[36%] p-2 md:p-4">
                                               <h4 className="font-medium  md:text-[20px] text-[#000000]">
                                               $
                                                </h4>
                                                <p className="text-[#222222] font-light text-xs sm:text-sm md:text-lg">As your wish</p>
                                            </td>
-                                           <td className="border border-[#D2C6AA] w-[36%] md:w-[30%] p-2 md:p-4">
+                                           <td className="border border-[#D2C6AA] w-[36%] p-2 md:p-4">
                                                 <h4 className="font-medium  md:text-[20px] text-[#000000]">
                                                -
                                                </h4>
