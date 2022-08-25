@@ -6,6 +6,12 @@ import { FiChevronRight } from "react-icons/fi";
 // page template=============
 import { getPricingPageData } from "./api/getPricingPageData";
 import GameHomeHero  from "../comps/activitiyPageComps/GameHomeHero";
+import PriceForLargerGroup from "../comps/pricingPageComps/PriceForLargerGroup";
+import PriceInperson from "../comps/pricingPageComps/PriceInperson";
+import PricingOthersGame from "../comps/pricingPageComps/PricingOthersGame";
+import PrivcingVirtualGames from "../comps/pricingPageComps/PrivcingVirtualGames";
+import PricingEvents from "../comps/pricingPageComps/PricingEvents";
+import PricingGiftCard from "../comps/pricingPageComps/PricingGiftCard";
 
 
 
@@ -28,7 +34,7 @@ const Pricing=(props)=>{
           <>
               {/* =======header content======== */}
            <Head>
-                 <title>All in adventure | Deals and Coupon</title>
+                 <title>All in adventure | Pricing</title>
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
@@ -52,6 +58,12 @@ const Pricing=(props)=>{
 
      
         <GameHomeHero gametotal="not" pagedata={props.pagedata}/>
+        <PriceInperson/>
+        <PricingOthersGame/>
+        <PricingEvents/>
+        <PricingGiftCard/>
+        <PrivcingVirtualGames/>
+        <PriceForLargerGroup/>
        
         
    
