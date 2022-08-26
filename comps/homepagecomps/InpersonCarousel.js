@@ -60,7 +60,7 @@ const InpersonCarousel=({inpersongames})=>{
      
     return (
     <div className="full-carousel inpersongame  "> 
-     {/*<Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />*/}
+     <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
 
     <Carousel
      swipeable={true}
@@ -117,7 +117,7 @@ const InpersonCarousel=({inpersongames})=>{
                                                                                   }</p>
                                 </div>
                                 <div className="card-game-link mt-4 text-center">
-                                    <button onClick={showLocation} className="border max-w-[200px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                                    <button onClick={openBooking} className="border max-w-[200px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
                                    <Link href={"/activities/"+inpersongame.slug}> 
                                    
                                     <a className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</a>
