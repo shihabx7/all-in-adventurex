@@ -37,6 +37,19 @@ html,body,a{
   padding:4px  !important;
   
 }
+.gm-style-iw-d{
+  overflow:hidden !important;
+}
+
+.gm-style .gm-style-iw-tc::after {
+  background-color: #FFFAEC;
+}
+.gm-ui-hover-effect{
+  background-color: #E1C388 !important;
+right: 0 !important;
+top: 0 !important;
+opacity: 1 !important;
+}
 .golden-text{
   background-color: #E0BF62; 
   background-image: linear-gradient(to right, #CA9342 ,#E0BF62);

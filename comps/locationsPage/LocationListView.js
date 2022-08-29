@@ -7,6 +7,11 @@ const LocationListView=({city,state})=>{
     
     const [showHour,setShwoHour]=useState(null)
    
+    const locSlug=(city,state)=>{
+        const slug=city+'-'+state
+       
+        return slug.toLocaleLowerCase()
+    }
 
     return (
        
@@ -14,16 +19,19 @@ const LocationListView=({city,state})=>{
         className="locationlist ease-in-out duration-100 rounded-b bg-[#FFF9EB]"
         > 
             <div className="location-img">
-                <img src={city.coverimg}></img>
+                <Link href={"/locations/"+locSlug(city.city,state)}>
+                    <a className="block cursor-pointer"><img src={city.coverimg}></img></a>
+                </Link>
+                
             </div>
             <div className="locationview-info py-4 px-4"> 
                 <div className="location-name group">
-                    <Link href={"/locations/"+city.slug}>
+                    <Link href={"/locations/"+locSlug(city.city,state)}>
                         <a> 
                              <div className="flex space-x-1 items-center text-2xl lg:text-3xl font-medium">
-                                 <h3 className="golden-text">{city.city}, {state}</h3> <p className="text-gold"><FaAngleRight/></p>
+                                 <h3 className="golden-text"><span className="capitalize">{city.city}</span>, <span className="uppercase">{state}</span></h3> <p className="text-gold"><FaAngleRight/></p>
                              </div>
-                              <div className="text-lg text-[#4a4a4a] group-hover:text-red-700">{city.address}</div>
+                              <div className="text-lg text-[#4a4a4a] group-hover:text-red-700">{city.mall}</div>
 
                         </a>
                     </Link> 
@@ -35,11 +43,12 @@ const LocationListView=({city,state})=>{
                         <span><img src="/assets/reviews/fivestar.svg"></img></span>
                         <span className="text-[#7b7b7b] font-medium">({city.fivestar})</span>
                     </div>
-                    <div className="location-hour-ind flex items-center space-x-2 lg:text-lg">
-                            <div className="flex space-x-2 items-center">
-                                <div className="openh text-[#1B823A]">Open</div>
-                                <div className="closeh text-[#7b7b7b]">Close <span className="uppercase">11pm</span></div>
-                                <div id={city.city} onClick={() => setShwoHour(city.city)} className="open-b text-[#7b7b7b] hover:cursor-pointer hover:text-red-700 text-[24px]"><FiChevronDown/></div>
+                    <div className="location-hour-ind flex items-center space-x-2 lg:text-lg ">
+                            <div className="flex space-x-4 items-center">
+                                 <p className="text-[#1B823A]">Open Hours </p>
+                                
+                                 <div id={city.city} onClick={() => setShwoHour(city.city)} className="rev-count  text-[#464646] hover:text-red-700 cursor-pointer text-[15px] flex space-x-1 items-center">View Local Time <span className="text-lg"><FiChevronDown/></span></div>
+                              
                             </div>
 
                            
@@ -47,36 +56,40 @@ const LocationListView=({city,state})=>{
                     </div>
                   { showHour==city.city && 
                   (
-                    <div className="bhour-list absolute top-0 right-0 shadow-md bg-[#FFF9EB] ">
+                    <div className="bhour-list absolute top-[-90px] right-0 shadow-md bg-[#FFF9EB] drop-shadow">
                             <div className="relative p-3">  
-                                <button onClick={() => setShwoHour(null)} className="closeHour p-1 bg-[#eeeeee] text-[#424242] absolute -top-3 -right-3"><FiX/></button>
-                        <table className="bhour-row table-auto border-collapse border border-[#7b7b7b] text-[#7b7b7b]">
+                              <div className="map-h-notice mb-2">
+                                  <p className="font-medium text-sm md:text-base text-[#222222]">Typical Business Hours</p>
+                                  <p className="text-sm text-[#464646]">Actual hours may vary occasionally</p>
+                                </div>
+                                <button onClick={() => setShwoHour(null)} className="closeHour p-1 bg-gold text-[#424242] absolute -top-3 -right-3"><FiX/></button>
+                        <table className="bhour-row table-auto border-collapse border border-[#CB9443] text-[#464646]">
                         <tbody>
                         <tr>  
-                                          <td className=" border-b border-[#7b7b7b] capitalize p-2">
+                                <td className=" border-b border-[#CB9443] capitalize px-2 py-1 font-medium">
                                              Day
                                              </td>
-                                             <td className="p-2 border-b border-[#7b7b7b]" >
+                                             <td className=" border-b border-[#CB9443] px-2 py-1 font-medium" >
                                              Open
                                              </td>
-                                             <td className=" p-2 border-b border-[#7b7b7b]">
+                                             <td className=" border-b border-[#CB9443] px-2 py-1 font-medium">
                                              Close
                                              </td>
                                             </tr>
                     {
-                                city.hours.map((hour,index)=>{
+                                city.hours.map((hours,index)=>{
 
                                     return(
                                         
                                        <tr key={index}>  
-                                          <td  className=" border-b border-[#7b7b7b] capitalize p-2">
-                                             {hour.day}
+                                           <td  className=" border-b border-[#CB9443] capitalize px-2 py-1">
+                                             {hours.day}
                                              </td>
-                                             <td className="p-2 border-b border-[#7b7b7b]" >
-                                             {hour.open}
+                                             <td className="px-2 py-1 border-b border-[#CB9443]" >
+                                             {hours.open}
                                              </td>
-                                             <td className=" p-2 border-b border-[#7b7b7b]">
-                                             {hour.close}
+                                             <td className="px-2 py-1 border-b border-[#CB9443]">
+                                             {hours.close}
                                              </td>
                                             </tr>
                                        
@@ -134,10 +147,10 @@ const LocationListView=({city,state})=>{
             </div>
             <div className="locationview-link px-4 pb-6"> 
                     <div className="flex justify-between">
-                        <Link href={"/locations/"+city.slug}>
+                        <Link href={"/"+locSlug(city.city,state)+"/activities"}>
                                 <a className="w-[46%] rounded py-3 lg:py-4 bg-red-600 hover:bg-red-700 text-center text-white fonr-medium">BOOK GAMES</a>
                          </Link>
-                         <Link href={"/"+city.slug+"/events"}>
+                         <Link href={"/"+locSlug(city.city,state)+"/events"}>
                                 <a className="w-[46%] rounded py-3 lg:py-4 bg-red-600 hover:bg-red-700 text-center text-white fonr-medium">BOOK EVENTS</a>
                          </Link>
 
