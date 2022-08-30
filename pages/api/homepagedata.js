@@ -366,7 +366,7 @@
                         "minplayers":"2",
                         "price":"20",
                         
-                        "slug"  :"virtual-game-show-room",
+                        "slug"  :"virtual-games/virtual-game-show-room",
                         "bgimg" :"/assets/vr-game-1.jpg"
                        },
                        {
@@ -380,7 +380,7 @@
                         "maxplayers":"4",
                         "minplayers":"2",
                         "price":"20",
-                        "slug"  :"virtual-escape-rooms",
+                        "slug"  :"virtual-games",
                         "bgimg" :"/assets/vr-game-2.jpg"
                        },
                      

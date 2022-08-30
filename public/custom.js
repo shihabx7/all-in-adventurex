@@ -69,7 +69,11 @@ var prevScrollpos = window.pageYOffset;
 
 window.onscroll = function() {
   var headerHeight = document.getElementById('header-container-s').offsetHeight+'px';
-  if(window.scrollY > 600){
+  var w = window.innerWidth
+  || document.documentElement.clientWidth
+  || document.body.clientWidth;
+
+  if(window.scrollY > 620){
     document.getElementById('header').style.position = "fixed"
  
 
@@ -80,8 +84,10 @@ window.onscroll = function() {
     document.getElementById('header').style.top = "0px"
   } 
   else{
+    if(w<768){
+      document.getElementById('header').style.top = "-"+headerHeight
+    }
     
-    document.getElementById('header').style.top = "-"+headerHeight
   }
  prevScrollpos = currentScrollPos;
 

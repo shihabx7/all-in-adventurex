@@ -18,8 +18,8 @@ const customMapStyle=  getMapStyle()
  
 const [shwoHour,setShwoHour]=useState(null)
   const [activeMarker, setActiveMarker] = useState(null);
-  const [mapCenter,setMapCenter]=useState({lat:39,lng:-83});
-  const [mapZoom,setMapZoom]=useState(5);
+  const [mapCenter,setMapCenter]=useState({lat:40,lng:-82});
+  const [mapZoom,setMapZoom]=useState(5.5);
 
   useEffect(() => {
     var w = window.innerWidth
@@ -28,10 +28,10 @@ const [shwoHour,setShwoHour]=useState(null)
 
 console.log(w)
         if(w<640){
-          setMapZoom(4.4)
-          setMapCenter({lat:40.44037850269702,lng:-80.00830995095582}) 
+          setMapZoom(4.6)
+          setMapCenter({lat:39,lng:-78}) 
         }
-  }, [mapZoom]);
+  });
 
   const handleActiveMarker = (marker,position) => {
     if (marker === activeMarker) {

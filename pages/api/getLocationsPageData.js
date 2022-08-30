@@ -1253,9 +1253,9 @@
 
                             "fivestar":3635,
                             "phone":"(732) 3512772",
-                            "coverimg":'/assets/mapcard/allinadventures-escape-room-woodbridge-nj-woodbridge-mall-hero.jpg',
+                            "coverimg":'/assets/mapcard/allinadventures-escape-room-austin-texas.jpg',
                             "mall":"Texas Mall",
-                            "alt":'allinadventures-escape-room-woodbridge-nj-woodbridge-mall-hero',
+                            "alt":'allinadventures-escape-room-austin-texas',
                             "email":"Store129@Allinadventures.com",
                             "hours":[
                               {
