@@ -16,13 +16,15 @@ import Script from 'next/script'
 import {Homepagedata} from './api/homepagedata' 
 
 
-export default function Home({mainprops,pagedata,inpersongames,othergames,virtualgames,events,reviews}) {
+export default function Home({mainprops,pagedata,inpersongames,othergames,virtualgames,events,reviews,locationlist}) {
  
  
  
   return (
     <> 
-    <Homenav/>
+    <Homenav 
+    locationlist={locationlist}
+    />
     <div id="mainContent" className='main-content' >
       <Head>
         <title>All in adventure</title>
@@ -75,7 +77,8 @@ export const getStaticProps=async ()=>{
       othergames:pagedata.otherphysicalgames,
       virtualgames:pagedata.virtualgames,
       events:pagedata.events,
-      reviews:pagedata.homereviews
+      reviews:pagedata.homereviews,
+      locationlist:pagedata.locationlist
     },
    
     // - At most once every 10 seconds

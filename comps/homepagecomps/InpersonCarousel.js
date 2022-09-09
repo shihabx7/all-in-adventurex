@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import Script from "next/script";
 
 
-const InpersonCarousel=({inpersongames})=>{
+const InpersonCarousel=(props)=>{
     //console.log(inpersongames)
     const [gameSlug,setGamSlug]=useState(null)
 
@@ -15,14 +15,14 @@ const InpersonCarousel=({inpersongames})=>{
             document.getElementById('locmenu').classList.remove('hidden')
             
           }
-
-          const openBooking=()=>{
+          
+          const openBooking=(shortname,booking)=>{
             FH.open({
-              shortname: 'mysteryroom-austin',
+              shortname: shortname,
               fallback: 'simple', 
               fullItems: 'yes', 
-              flow: 17839, 
-              view: { item: 44198 }
+              flow: booking.flow, 
+              view: { item: booking.item }
             });
           }
     
@@ -32,10 +32,16 @@ const InpersonCarousel=({inpersongames})=>{
     }
     const responsive = {
         desktoplg: {
-            breakpoint: { max: 4000, min: 1440 },
+            breakpoint: { max: 4000, min: 1640 },
             items: 5,
             slidesToSlide: 1,
             partialVisibilityGutter: 30
+          },
+          desktopmd: {
+            breakpoint: { max: 1640, min: 1440 },
+            items: 4,
+            slidesToSlide: 1,
+            partialVisibilityGutter: 24
           },
         desktop: {
           breakpoint: { max: 1440, min: 1024 },
@@ -87,7 +93,7 @@ const InpersonCarousel=({inpersongames})=>{
    >
 
     {
-        inpersongames.map((inpersongame)=>{
+        props.inpersongames.map((inpersongame)=>{
                 return(
                     <div key={inpersongame.id} className="text-white bg-gray-300 game-slider-card card-border" style={{
                         background:"url('"+inpersongame.bgimg+"')"
@@ -117,11 +123,30 @@ const InpersonCarousel=({inpersongames})=>{
                                                                                   }</p>
                                 </div>
                                 <div className="card-game-link mt-4 text-center">
-                                    <button onClick={openBooking} className="border max-w-[200px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
-                                   <Link href={"/activities/"+inpersongame.slug}> 
+                                  {
+                                    props.bookingData &&
+                                    <button onClick={()=>openBooking(props.bookingData.shortname,props.bookingData[inpersongame.slug])} className="border max-w-[200px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                                  }
+                                    {
+                                    !props.bookingData &&
+                                    <button onClick={()=>showLocation()} className="border max-w-[200px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                                  }
+                                    {
+                                    props.locationslug &&
+                                    <Link href={"/"+props.locationslug+"/activities/"+inpersongame.slug}> 
                                    
-                                    <a className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</a>
+                                        <a className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</a>
                                     </Link>
+                                  }
+                                  {
+                                    !props.locationslug &&
+                                    <Link href={"/activities/"+inpersongame.slug}> 
+                                   
+                                        <a className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</a>
+                                    </Link>
+                                  }
+                                  
+                                   
                                 </div>
                                 
                              </div>

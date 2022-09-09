@@ -1,15 +1,17 @@
-
+import { getLocationsPageData } from "./getLocationsPageData";
 
  export const Homepagedata =  () => {
 
+  
+
     const Homepagedata=
        {
-         
+         "locationlist":getLocationsPageData().states,
         "homeagedata": {
-                      "totalLocations": "28",
-                      "totalUniqueGames": "11",
-                      "totalFiveStarReview": "60k+",
-                      "totalPlayerEscaped": "70k+"
+                      "totalLocations": "26",
+                      "totalUniqueGames": "17",
+                      "totalFiveStarReview": "63k+",
+                      "totalPlayerEscaped": "98k+"
         },
         "inpersongames":[
                               {

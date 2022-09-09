@@ -53,7 +53,7 @@ const sinleActivities=(props)=>{
         <GameHomeHero pagedata={props.pagedata} />
 
          <GameDetails activityname={props.pagedata.activityname} activitydata={props.activitydata}/>
-        <GameGallery galleryitem={props.activitygallery}/>
+        <GameGallery galleryitem={props.activitygallery} activityname={props.pagedata.activityname}/>
         <GameVideo videoid={props.activitydata.videoid} activityname={props.pagedata.activityname}/>
 
       </div>
@@ -91,7 +91,8 @@ export const getStaticProps=async(context)=>{
         pagemeta:activityPageData.pagemeta,
         pagedata:activityPageData.pagedata,
         activitydata:activityPageData.activitydata,
-        activitygallery:activityPageData.activitygallery
+        activitygallery:activityPageData.activitygallery,
+        
 
 
       },

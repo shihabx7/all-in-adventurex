@@ -31,13 +31,34 @@ const EventContact=(props)=>{
                                                 <div className="event-info-list flex items-center space-x-4 py-3 px-6 lg:text-lg border-y-[1px] border-[#D2C6AA]">
                                                     <span><img src="/assets/svg/event-icon-phone.svg"></img></span>
                                                     <span>
-                                                        <a className="text-[#F4E6C3]" href="tel:+1 845-208-2919">+1 845-208-2919</a>
+                                                        {
+                                                            props.contactdata &&
+                                                            <a className="text-[#F4E6C3]" href={"tel:+1 "+props.contactdata.phone}>+1 {props.contactdata.phone}</a>
+
+                                                        }
+                                                        {
+                                                            !props.contactdata &&
+                                                            <a className="text-[#F4E6C3]" href="tel:+1 857 2836789">+1 857 2836789</a>
+
+                                                        }
+                                                       
+                                                       
                                                     </span>
                                                 </div>
                                                 <div className="event-info-list flex items-center space-x-4 py-3 px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
                                                     <span><img src="/assets/svg/event-icon-email.svg"></img></span>
                                                     <span>
-                                                        <a className="text-[#F4E6C3]" href="email:store@allinadventures.com">store@allinadventures.com</a>
+                                                    {
+                                                            props.contactdata &&
+                                                            <a className="text-[#F4E6C3]" href={"mailto:"+props.contactdata.email.toLowerCase()}>{props.contactdata.email}</a>
+
+                                                        }
+                                                        {
+                                                            !props.contactdata &&
+                                                            <a className="text-[#F4E6C3]" href="email:store@allinadventures.com">store@allinadventures.com</a>
+
+                                                        }
+                                                        
                                                     </span>
                                                 </div>
                                                 <div className="event-info-list flex  items-center space-x-4 py-3 px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">

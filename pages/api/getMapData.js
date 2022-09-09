@@ -1406,7 +1406,7 @@ export const getMapData =()=>{
           }
         },
          // MARYLAND md list end
-          // VA md list
+          // VA  list
         {
            
           id: 21,

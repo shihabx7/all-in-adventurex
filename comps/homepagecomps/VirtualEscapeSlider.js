@@ -27,11 +27,11 @@ const VirtualEscapeSlider=({virtualgames})=>{
         <div className="slider-box pb-4 md:pb-0 relative">  
             <VirtualCarousel virtualgames={virtualgames}/>
         </div>
-       {/*<div className="view-all flex justify-center pt-8 md:pt-12 lg:pt-16 pb-16">
-            <Link href="/virtual-escape-rooms/"> 
-              <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all virtual escape rooms</span> <FaAngleRight/></a>
+       <div className="view-all flex justify-center pt-8 md:pt-12 lg:pt-16">
+            <Link href="/virtual-games/"> 
+              <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all virtual games</span> <FaAngleRight/></a>
             </Link>
-         </div>*/}
+         </div>
     </div>
     )
 }

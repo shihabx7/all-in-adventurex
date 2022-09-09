@@ -47,27 +47,27 @@ export const getLocationSlugList =()=>{
             "state":"NY",
             "shortaddress":"Palisades Center"
         },
-        {
+        /*{
             "id":7,
             "slug":"yorktown-heights-ny",
             "city":"Yorktown Heights",
             "state":"NY",
             "shortaddress":"Jefferson Valley Mall"
-        },
+        }, */
         {
             "id":8,
             "slug":"raleigh-nc",
             "city":"Raleigh Nc",
-            "state":"NY",
+            "state":"NC",
             "shortaddress":"Triangle Town Center"
         },
-        {
+       /* {
             "id":9,
             "slug":"selinsgrove-pa",
             "city":"Selinsgrove",
             "state":"PA",
             "shortaddress":"Susquehanna Mall"
-        },
+        },*/
         {
             "id":10,
             "slug":"bensalem-pa",
@@ -100,7 +100,7 @@ export const getLocationSlugList =()=>{
         {
             "id":14,
             "slug":"n-attleborough-ma",
-            "city":"N. Attleborough",
+            "city":"North Attleborough",
             "state":"MA",
             "shortaddress":"Emerald Square Mall"
         },

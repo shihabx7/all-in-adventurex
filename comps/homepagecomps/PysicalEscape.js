@@ -22,12 +22,22 @@ const PysicalEscape=(props)=>{
                 </div>
         </div>
         <div className="slider-box pb-4 md:pb-8 relative">  
-            <PysicalCarousel othergames={props.othergames}/>
+            <PysicalCarousel othergames={props.othergames} locationslug={props.locationslug} bookingData={props.bookingData}/>
         </div>
         <div className="view-all flex justify-center pt-8 pb-4 md:pb-12 lg:pb-16">
-            <Link href="/activities#others-physical-games"> 
+           {
+            props.locationslug &&
+              <Link href={"/"+props.locationslug+"/activities#others-physical-games"}> 
               <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all others physical games</span> <FaAngleRight/></a>
             </Link>
+           }
+            {
+            !props.locationslug &&
+              <Link href={"/activities#others-physical-games"}> 
+              <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all others physical games</span> <FaAngleRight/></a>
+            </Link>
+           }
+            
          </div>
     </div>
     );

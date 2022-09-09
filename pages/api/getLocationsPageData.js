@@ -11,6 +11,7 @@
                      {
                         "id":1,
                         "state":"NY",
+                        "state_name":"NEW YORK",
                         "cities":[
                                     {
                                         "id":1,
@@ -25,6 +26,7 @@
                                         "alt":'allinadventures-escape-room-albany-ny-crossgates-mall-hero',
                                         "slug":"albany-ny",
                                         "email":"Store103@Allinadventures.com",
+                                        "position": { lat: 42.694650871225996, lng: -73.84925962422682 },
                                         "hours":[
                               
                                           {
@@ -86,6 +88,7 @@
                                         "alt":'allinadventures-escape-room-buffalo-ny-walden-galleria-mall-hero',
                                         "slug":"buffalo-ny",
                                         "email":"Store108@Allinadventures.com",
+                                        "position": { lat: 42.918199478928365, lng: -78.76365703939328 }, 
                                         "hours":[
                                                 {
                                                       "day":"monday",
@@ -136,6 +139,7 @@
                                         "id":3,
                                         "city":"Middletown",
                                         "address":"1 Galleria Dr a211",
+                                        "slug":"middletown-ny",
                                         "zip":10941,
                                         "fivestar":5264,
                                         "phone":"(845) 2029010",
@@ -143,6 +147,7 @@
                                         "mall":"Crystal Run",
                                         "alt":'allinadventures-escape-room-middletown-ny-galleria-at-crystal-run-mall-hero',
                                         "email":"Store105@Allinadventures.com",
+                                        "position": { lat: 41.45901376711506, lng: -74.36864051972913}, 
                                         "hours":[
                                           {
                                             "day":"monday",
@@ -193,6 +198,7 @@
                                     {
                                         "id":4,
                                         "city":"Syracuse",
+                                        "slug":"syracuse-ny",
                                         "address":" 9090 Destiny USA Drive",
                                         "zip":13204,
                                         "fivestar":3670,
@@ -201,6 +207,7 @@
                                         "mall":"Destiny USA Mall",
                                         "alt":'allinadventures-escape-room-syracuse-ny-destiny-usa-mall-hero',
                                         "email":"Store107@Allinadventures.com",
+                                        "position": { lat: 43.06932097705075, lng: -76.1709514598213},  
                                         "hours":[
                                                 {
                                                   "day":"monday",
@@ -252,6 +259,7 @@
                                       "id":5,
                                       "city":"Watertown",
                                       "address":"21182 Salmon Run Mall Loop W",
+                                      "slug":"watertown-ny",
                                       "zip":13601,
                                       "fivestar":5020,
                                       "phone":"(315) 9658010",
@@ -259,6 +267,7 @@
                                       "mall":"Salmon Run Mall",
                                       "alt":'allinadventures-escape-room-watertown-ny-salmon-run-mall-hero',
                                       "email":"Store106@Allinadventures.com",
+                                      "position": { lat: 43.97758505149379, lng: -75.95263770212158},
                                       "hours":[
                                         {
                                           "day":"monday",
@@ -309,6 +318,7 @@
                                   {
                                     "id":6,
                                     "city":"West Nyack",
+                                    "slug":"west-nyack-ny",
                                     "address":"3681 Palisades Center Dr",
                                     "zip":10994,
                                     "fivestar":4124,
@@ -317,6 +327,7 @@
                                     "mall":"Palisades Center",
                                     "alt":'allinadventures-escape-room-west-nyack-ny-palisades-mall',
                                     "email":"Store101@Allinadventures.com",
+                                    "position": { lat: 43.97758505149379, lng: -75.95263770212158}, 
                                     "hours":[
                                       {
                                         "day":"monday",
@@ -371,10 +382,12 @@
                     {
                         "id":2,
                         "state":"NC",
+                        "state_name":"NORTH CAROLINA",
                         "cities":[
                           {
                             "id":1,
                             "city":"Raleigh",
+                            "slug":"raleigh-nc",
                             "address":"5959 Triangle Town Blvd Space EU 2113",
                             "zip":27616,
                             "fivestar":5231,
@@ -384,6 +397,7 @@
                             "mall":"Triangle Town Centerl",
                             "alt":'allinadventures-escape-room-raleigh-nc-triangle-town-center-mall',
                             "email":"Store123@Allinadventures.com",
+                            "position": { lat: 35.87108885072849, lng: -78.5746156605905},
                             "hours":[
                               {
                                 "day":"monday",
@@ -440,11 +454,13 @@
                     {
                         "id":3,
                         "state":"PA",
+                        "state_name":"PENNSYLVANIA",
                         "cities":[
                             
                                      {
                                         "id":1,
                                         "city":"Bensalem",
+                                        "slug":"bensalem-pa",
                                         "address":"707 Neshaminy Mall Space 672",
                                         "zip":19020,
                                         "fivestar":4483,
@@ -453,6 +469,7 @@
                                         "mall":"Neshaminy Mall",
                                         "alt":'allinadventures-escape-room-bensalem-pa-neshaminy-mall-hero',
                                         "email":"Store130@Allinadventures.com",
+                                        "position": { lat: 40.14369469629309, lng: -74.95479885308148},
                                         "hours":[
                                           {
                                             "day":"monday",
@@ -507,19 +524,21 @@
                     {
                         "id":4,
                         "state":"MA",
+                        "state_name":"MASSACHUSETTS",
                         "cities":[
                                     {
                                         "id":1,
                                         "city":"Hadley",
+                                        "slug":"hadley-ma",
                                         "address":"367 Russell St A07",
                                         "zip":"01035",
-                                        "slug":"baffulo-ny",
                                         "fivestar":4870,
                                         "phone":"(413) 8259777",
                                         "coverimg":'/assets/mapcard/allinadventures-escape-room-hadley-ma-hampshire-mall-hero.jpg',
                                         "mall":"Hampshire Mall",
                                         "alt":'allinadventures-escape-room-hadley-ma-hampshire-mall-hero',
                                         "email":"Store113@Allinadventures.com",
+                                        "position": { lat: 42.36108594695472, lng: -72.54765208077018},
                                         "hours":[
                                           {
                                             "day":"monday",
@@ -570,6 +589,7 @@
                                     {
                                       "id":2,
                                       "city":"Holyoke",
+                                      "slug":"holyoke-ma",
                                       "address":"Holyoke Mall, 50 Holyoke St",
                                       "zip":"01035",
                                       
@@ -579,6 +599,7 @@
                                       "mall":"Holyoke Mall",
                                       "alt":'allinadventures-escape-room-holyoke-ma-holyoke-mall-hero',
                                       "email":"Store114@Allinadventures.com",
+                                      "position": { lat: 42.173237321123935, lng: -72.63991905070128},
                                       "hours":[
                                         {
                                           "day":"monday",
@@ -629,6 +650,7 @@
                                   {
                                     "id":3,
                                     "city":"Kingston",
+                                    "slug":"kingston-ma",
                                     "address":"101 Kingston Collection Way",
                                     "zip":"02364",
                                     
@@ -638,6 +660,7 @@
                                     "mall":"Kingston Collection",
                                     "alt":'allinadventures-escape-room-kingston-ma-kingston-collection-mall-hero',
                                     "email":"Store102@Allinadventures.com",
+                                    "position": { lat: 41.973979082363485, lng: -70.71796156179091},
                                     "hours":[
                                       {
                                         "day":"monday",
@@ -687,7 +710,8 @@
                                 },
                                 {
                                   "id":4,
-                                  "city":"North Attleboro",
+                                  "city":"North Attleborough",
+                                  "slug":"n-attleborough-ma",
                                   "address":"999 S Washington St",
                                   "zip":"02760",
                                   
@@ -697,6 +721,7 @@
                                   "mall":"Emerald Square Mall",
                                   "alt":'allinadventures-escape-room-north-attleborough-ma-emerald-square-mall-hero',
                                   "email":"Store102@Allinadventures.com",
+                                  "position": { lat: 41.95085653943048, lng: -71.35152473980524},
                                   "hours":[
                                     {
                                       "day":"monday",
@@ -751,10 +776,12 @@
                     {
                         "id":5,
                         "state":"CT",
+                        "state_name":"CONNECTICUT",
                         "cities":[
                                     {
                                         "id":1,
                                         "city":"Milford",
+                                        "slug":"milford-ct",
                                         "address":"1201 Boston Post Rd",
                                         "zip":'06460',
                                        
@@ -764,6 +791,7 @@
                                         "mall":"Connecticut Post Mall",
                                         "alt":'allinadventures-escape-room-milford-ct-connecticut-post-mall',
                                         "email":"Store109@Allinadventures.com",
+                                        "position": { lat: 41.23618337923384, lng: -73.03556385987913}, 
                                         "hours":[
                                           {
                                             "day":"monday",
@@ -814,6 +842,7 @@
                                     {
                                       "id":2,
                                       "city":"Manchester",
+                                      "slug":"manchester-ct",
                                       "address":"194 Buckland Hills Dr Space 2002",
                                       "zip":'06042',
                                      
@@ -823,6 +852,7 @@
                                       "mall":"Buckland Hills",
                                       "alt":'allinadventures-escape-room-manchester-ct-buckland-hills-mall-hero',
                                       "email":"Store121@Allinadventures.com",
+                                      "position": { lat: 41.811417406121315, lng: -72.54741454441613},
                                       "hours":[
                                         {
                                           "day":"monday",
@@ -873,6 +903,7 @@
                                   {
                                     "id":3,
                                     "city":"Waterbury",
+                                    "slug":"waterbury-ct",
                                     "address":"495 Union St # 1158",
                                     "zip":'06706',
                                    
@@ -882,6 +913,7 @@
                                     "mall":"Brass Mills Mall",
                                     "alt":'allinadventures-escape-room-waterbury-ct-brass-mills-mall-hero',
                                     "email":"Store133@Allinadventures.com",
+                                    "position": { lat: 41.55358939724869, lng: -73.02502768474506}, 
                                     "hours":[
                                       {
                                         "day":"monday",
@@ -931,16 +963,18 @@
                                 }
                                 ]
                     },
-   //========================================== 5 CONNECTICUT
-       //========================================== 5 Marryland
+   //========================================== 5 CONNECTICUT end
+       //========================================== 6 Marryland
                  
                     {
                         "id":6,
                         "state":"MD",
+                        "state_name":"MARYLAND",
                         "cities":[
                                     {
                                         "id":1,
                                         "city":"Bowie",
+                                        "slug":"bowie-md",
                                         "address":"15421 Emerald Way",
                                         "zip":'20716',
                                          "fivestar":5330,
@@ -949,6 +983,7 @@
                                         "mall":"Bowie Town Center",
                                         "alt":'allinadventures-escape-room-bowie-md-bowie-town-center-mall-hero',
                                         "email":"Store145@Allinadventures.com",
+                                        "position": { lat: 38.944309962794854, lng: -76.73636950227818},  
                                         "hours":[
                                           {
                                             "day":"monday",
@@ -999,6 +1034,7 @@
                                     {
                                       "id":2,
                                       "city":"White Marsh",
+                                      "slug":"white-marsh-md",
                                       "address":"8200 Perry Hall Blvd #2005",
                                       "zip":'21236',
                                        "fivestar":5455,
@@ -1007,6 +1043,7 @@
                                       "mall":"Bowie Town Center",
                                       "alt":'allinadventures-escape-room-white-marsh-md-white-marsh-mall-hero',
                                       "email":"Store118@Allinadventures.com",
+                                      "position": { lat: 39.37957021829345, lng: -76.46891952269905},
                                       "hours":[
                                         {
                                           "day":"monday",
@@ -1056,15 +1093,17 @@
                                   }
                                 ]
                     },
-                    //========================================== 5 Marryland end
+                    //========================================== 6 Maryland end
             //========================================== New jarsey
                     {
                         "id":7,
                         "state":"NJ",
+                        "state_name":"NEW JERSEY",
                         "cities":[
                                     {
                                         "id":1,
                                         "city":"East Brunswick",
+                                        "slug":"east-brunswick-nj",
                                         "address":"1 welder  garden",
                                         "zip":'08816',
 
@@ -1074,6 +1113,7 @@
                                         "mall":"Brunswick Square",
                                         "alt":'aallinadventures-escape-room-east-brunswick-nj-brunswick-square-mall',
                                         "email":"Store148@Allinadventures.com",
+                                        "position": { lat: 40.42998776602108, lng: -74.38402078940565},
                                         "hours":[
                                           {
                                             "day":"monday",
@@ -1124,6 +1164,7 @@
                                     {
                                       "id":2,
                                       "city":"Rockaway",
+                                      "slug":"rockaway-nj",
                                       "address":"301 Mt Hope Ave",
                                       "zip":'07866',
 
@@ -1133,6 +1174,7 @@
                                       "mall":"Rockaway Townsquare",
                                       "alt":'allinadventures-escape-room-rockaway-nj-rockaway-townsquare-mall',
                                       "email":"Store112@Allinadventures.com",
+                                      "position": { lat: 40.912492907069215, lng: -74.55436310565122}, 
                                       "hours":[
                                         {
                                           "day":"monday",
@@ -1182,6 +1224,7 @@
                                   {
                                     "id":3,
                                     "city":"Woodbridge",
+                                    "slug":"woodbridge-nj",
                                     "address":"250 Woodbridge Center Dr",
                                     "zip":'07095',
 
@@ -1191,6 +1234,7 @@
                                     "mall":"Woodbridge Mall",
                                     "alt":'allinadventures-escape-room-woodbridge-nj-woodbridge-mall-hero',
                                     "email":"Store128@Allinadventures.com",
+                                    "position": { lat: 40.561122974306876, lng: -74.29765370334478}, 
                                     "hours":[
                                       {
                                         "day":"monday",
@@ -1242,13 +1286,15 @@
              //========================================== New jarsey end
                     //========================================== 8 texas
                     {
-                        "id":1,
+                        "id":8,
                         "state":"TX",
+                        "state_name":"TEXAS",
                         "cities":[
                           {
                             "id":3,
                             "city":"Austin",
-                            "address":"250 Woodbridge Center Dr",
+                            "slug":"austin-tx",
+                            "address":"250 texas austin",
                             "zip":'07095',
 
                             "fivestar":3635,
@@ -1257,6 +1303,7 @@
                             "mall":"Texas Mall",
                             "alt":'allinadventures-escape-room-austin-texas',
                             "email":"Store129@Allinadventures.com",
+                            "position": { lat: 30.28150379742751, lng: -97.7383824501323},
                             "hours":[
                               {
                                 "day":"monday",
@@ -1305,14 +1352,16 @@
                         ]
                     },
                     //========================================== 8 texas
-                    //========================================== 9 varginia
+                    //========================================== 9 VIRGINIA
                     {
                         "id":9,
                         "state":"VA",
+                        "state_name":"VIRGINIA",
                         "cities":[
                           {
                             "id":1,
                             "city":"Roanoke",
+                            "slug":"roanoke-va",
                             "address":"250 Woodbridge Center Dr",
                             "zip":'24012',
 
@@ -1322,6 +1371,7 @@
                             "mall":"Valley View",
                             "alt":'allinadventures-escape-room-roanoke-va-valley-view-mall-hero',
                             "email":"Store129@Allinadventures.com",
+                            "position": { lat: 37.30926890765125, lng: -79.96414296359808},
                             "hours":[
                               {
                                 "day":"monday",
@@ -1369,14 +1419,16 @@
                         }
                                 ]
                     },
-                    //========================================== 10 Ohio
+                    //========================================== 10 OHIO
                     {
                         "id":10,
                         "state":"OH",
+                        "state_name":"OHIO",
                         "cities":[
                           {
                             "id":1,
                             "city":"Columbus",
+                            "slug":"columbus-oh",
                             "address":"1500 Polaris Pkwy Space 2252",
                             "zip":'43240',
 
@@ -1386,6 +1438,7 @@
                             "mall":"Polaris Fashion Place",
                             "alt":'allinadventures-escape-room-columbus-oh-polaris-fashion-place-mall-hero',
                             "email":"Store147@Allinadventures.com",
+                            "position": { lat: 40.15019562598685, lng: -82.98034309378431}, 
                             "hours":[
                               {
                                 "day":"monday",
@@ -1434,6 +1487,7 @@
                         {
                           "id":2,
                           "city":"Mentor",
+                          "slug":"mentor-oh",
                           "address":"7850 Mentor Ave #1050a",
                           "zip":'44060',
 
@@ -1443,6 +1497,7 @@
                           "mall":"Great Lakes Mall",
                           "alt":'allinadventures-escape-room-mentor-oh-great-lakes-mall',
                           "email":"Store143@Allinadventures.com",
+                          "position": { lat: 41.66255323325249, lng: -81.35798410389197},
                           "hours":[
                             {
                               "day":"monday",
@@ -1491,6 +1546,7 @@
                       {
                         "id":3,
                         "city":"Dayton",
+                        "slug":"dayton-oh",
                         "address":"2700 Miamisburg Centerville Rd Space 300",
                         "zip":'45459',
 
@@ -1500,6 +1556,7 @@
                         "mall":"Dayton Mall",
                         "alt":'allinadventures-escape-room-dayton-oh-dayton-mall-hero',
                         "email":"Store146@Allinadventures.com",
+                        "position": { lat: 39.63934536750076, lng: -84.22165216910368},
                         "hours":[
                           {
                             "day":"monday",
@@ -1547,14 +1604,16 @@
                     }
                      ]
                     },
-                    //========================================== 11 ga
+                    //========================================== 11 GEORGIA
                     {
                         "id":11,
                         "state":"GA",
+                        "state_name":"GEORGIA",
                         "cities":[
                           {
                             "id":1,
                             "city":"Lawrenceville",
+                            "slug":"lawrenceville-ga",
                             "address":"5900 Sugarloaf Pkwy Unit 134",
                             "zip":'30043',
     
@@ -1564,6 +1623,7 @@
                             "mall":"Sugarloaf Mills Mall",
                             "alt":'allinadventures-escape-room-lawrenceville-ga-sugarloaf-mills-mall-hero',
                             "email":"Store100@Allinadventures.com",
+                            "position": { lat: 33.986421448068036, lng: -84.08483070501663},
                             "hours":[
                                
                               {

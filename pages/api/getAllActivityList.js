@@ -16,7 +16,7 @@ export const getALlActivityList=()=>{
         },
         {
             "id":3,
-            "activity_name":"Superhero’s Adventure",
+            "activity_name":"Superhero's Adventure",
             "activity_slug":"superheros-adventure"
            
         },

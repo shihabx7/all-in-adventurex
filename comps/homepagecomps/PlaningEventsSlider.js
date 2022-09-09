@@ -4,10 +4,9 @@ import Link from "next/link"
 import { FaAngleRight } from "react-icons/fa"
 import PlaningEventCarousel from "./PlaningEventCarousel";
 
-const PlaningEventsSlider=({events})=>{
+const PlaningEventsSlider=(props)=>{
 
-    console.log("events sl")
-  console.log(events)
+
 
     return (<div className="planningevent relative py-16 md:py-20 lg:py-28 " style={
         {
@@ -36,12 +35,20 @@ const PlaningEventsSlider=({events})=>{
             </div>
     </div>
     <div className="slider-box pb-4 md:pb-8 relative">  
-    <PlaningEventCarousel events={events}/>
+    <PlaningEventCarousel events={props.events} locationslug={props.locationslug}/>
     </div>
     <div className="view-all flex justify-center pt-8 md:pt-12 lg:pt-16">
-        <Link href="/events/"> 
-          <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all events</span> <FaAngleRight/></a>
-        </Link>
+    {
+            props.locationslug &&
+            <Link href={"/"+props.locationslug+"/events/"}> 
+            <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all Events</span> <FaAngleRight/></a>
+          </Link>
+          }
+          { !props.locationslug &&
+             <Link href={"/events/"}> 
+             <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all Events</span> <FaAngleRight/></a>
+           </Link>
+          }
      </div>
 </div>
 )

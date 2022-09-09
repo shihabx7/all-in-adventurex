@@ -2,7 +2,23 @@ import TitleSeparator from "../util/TitleSeparator"
 import Link from "next/dist/client/link"
 
 
-const WhyAdvGiftCards=()=>{
+const WhyAdvGiftCards=(props)=>{
+
+
+    const showLocation=()=>{
+
+        document.getElementById('locmenu').classList.remove('hidden')
+        
+      }
+    const bookGame=(bookingData)=>{
+        FH.open({
+          shortname: bookingData.shortname,
+          fallback: 'simple', 
+          fullItems: 'yes', 
+         flow:  bookingData.flow, 
+          view: {item:bookingData.item}
+        });
+      }
 
     return(
         <div className="why-adv-gift py-16 md:py-20 lg:py-28 px-4 bg-cover bg-center" style={{backgroundImage : "url('/assets/game-dt-bg.jpg')", }}>
@@ -39,12 +55,29 @@ const WhyAdvGiftCards=()=>{
                         </div>
                  </div>
                  <div className="why-gift-link mt-12 ">
-                             <Link href="#">
-                                        <a className="block mx-auto bg-red-600 card-book-btn  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12   max-w-[360px] lg:max-w-sm text-center text-gray-100 rounded-full">BUY GIFT CARD</a>
+
+                 {
+                            props.bookingdata &&
+                            <button onClick={()=>bookGame(props.bookingdata)} className="block w-[380px] mx-auto py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BUY GIFT CARD</button>
+                        }
+                             
+                        {
+                            !props.bookingdata &&
+                            <button onClick={()=>showLocation()} className="block w-[380px] mx-auto py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BUY GIFT CARD</button>
+                        }
+                        {
+                            props.locationslug &&
+                                    <Link href={"/"+props.locationslug+"/activities"} hpassHref>
+                                        <a className="ln block mx-auto bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 max-w-[360px] lg:max-w-sm text-center text-gray-800 hover:text-gray-100 rounded-full">VIEW ALL GAMES</a>
                                     </Link>
-                                    <Link href="/activities" hpassHref>
-                                        <a className="block mx-auto bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 max-w-[360px] lg:max-w-sm text-center text-gray-800 hover:text-gray-100 rounded-full">VIEW ALL GAMES</a>
-                                    </Link>
+                        }
+                        {
+                            !props.locationslug &&
+                                 <Link href="/activities" hpassHref>
+                                    <a className="block mx-auto bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 max-w-[360px] lg:max-w-sm text-center text-gray-800 hover:text-gray-100 rounded-full">VIEW ALL GAMES</a>
+                             </Link>
+                        }
+                                    
                 </div>
 
             </div>

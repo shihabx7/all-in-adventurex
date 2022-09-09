@@ -9,7 +9,8 @@ import { FiChevronRight } from "react-icons/fi";
 import { useEffect, useState } from 'react';
 import { getLocationsPageData } from '../api/getLocationsPageData';
 
-const Locations=({states})=>{
+const Locations=({states,locationlist})=>{
+  
 
   const setTopPadding=()=>{
     let headerHeight=document.getElementById("header").offsetHeight;
@@ -59,9 +60,10 @@ const ScrollTab=(id)=>{
 /* ========================page content=================== */
 return (
   <>
-      <Homenav/>
+      <Homenav locationlist={states}/>
   
-    <div id="mainContent" className='main-content nobtn-main-content'>
+            <div id="mainContent" className='main-content nobtn-main-content'>
+
       {
         console.log(states)
       }
@@ -140,18 +142,19 @@ return (
 
               </div>
           </div> 
-          <div className='text-white'>{showLocList}</div>
         <div className="grid gap-y-6 md:gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
           
                {
+                
                 states.map((state)=>{
-
+                    
                   return(
                     state.cities.map((city)=>{
-                      return(
                       
+                     
+                      return(
                         (showLocList=="ALL" || showLocList==state.state) && 
-                          <LocationListView key={city.id} city={city} state={state.state}/>
+                          <LocationListView key={state.id+city.id} city={city} state={state.state} />
 
                      )
                     })
@@ -183,6 +186,7 @@ export const getStaticProps=async ()=>{
   return {
     props: {
       states:pagedata.states,
+      locationlist:pagedata.states
    
     },
    

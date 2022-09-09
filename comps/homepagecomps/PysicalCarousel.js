@@ -1,13 +1,22 @@
 import Link from "next/link";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-const PysicalCarousel=({othergames})=>{
+const PysicalCarousel=(props)=>{
 
   const showLocation=()=>{
-       
-    //setGamSlug(slug)
+
     document.getElementById('locmenu').classList.remove('hidden')
     
+  }
+  
+  const openBooking=(shortname,booking)=>{
+    FH.open({
+      shortname: shortname,
+      fallback: 'simple', 
+      fullItems: 'yes', 
+      flow: booking.flow, 
+      view: { item: booking.item }
+    });
   }
   const showDescription=(description)=>{
     const cutDescription=description.slice(0, 100);
@@ -66,7 +75,7 @@ const PysicalCarousel=({othergames})=>{
     
    >
     {
-      othergames.map((othergame)=>{
+      props.othergames.map((othergame)=>{
 
         return(
           <div key={othergame.id} className="text-white bg-gray-300 game-slider-card card-border" style={{
@@ -96,10 +105,26 @@ const PysicalCarousel=({othergames})=>{
                         <p className="text-gray-200 lg:text-lg">{showDescription(othergame.description)}</p>
                     </div>
                     <div className="card-game-link mt-4 text-center">
-                        <button className="border max-w-[200px] card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
-                        <Link href={"/activities/"+othergame.slug}> 
-                             <a className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</a>
-                        </Link>
+                      {
+                        props.bookingData &&
+                        <button onClick={()=>openBooking(props.bookingData.shortname,props.bookingData[othergame.slug])} className="border max-w-[200px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                      }
+                      {
+                        !props.bookingData &&
+                        <button onClick={()=>showLocation()} className="border max-w-[200px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                      }
+                        
+                       {props.locationslug && 
+                         <Link href={"/"+props.locationslug+"/activities/"+othergame.slug}> 
+                            <a className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</a>
+                       </Link>
+                       }
+                       { !props.locationslug && 
+                         <Link href={"/activities/"+othergame.slug}> 
+                            <a className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</a>
+                       </Link>
+                       }
+                        
                     </div>
                     
                  </div>

@@ -3,30 +3,39 @@ export const getVirtualGameSlug=()=>{
     const VirtualGameSlug=[
         {
             "id":1,
+            "title":"Madness",
             "slug":"virtual-escape-rooms-madness",
         },
         {
             "id":2,
+            "title":"Zombie Apocalypse",
             "slug":"virtual-escape-rooms-zombie-apocalypse",
         },
         {
             "id":3,
-            "slug":"virtual-escape-rooms-prison",
+            "title":"bomb",
+            "slug":"virtual-escape-rooms-bomb",
+            
         },
         {
             "id":4,
-            "slug":"virtual-escape-rooms-japan",
+            "title":"Prison",
+            "slug":"virtual-escape-rooms-prison",
+           
         },
         {
             "id":5,
+            "title":"Aztec",
             "slug":"virtual-escape-rooms-aztec",
         },
         {
             "id":6,
-            "slug":"virtual-escape-rooms-bomb",
+            "title":"Japan",
+            "slug":"virtual-escape-rooms-japan",
         },
         {
             "id":7,
+            "title":"Virtual Game Show Room",
             "slug":"virtual-game-show-room",
         },
        

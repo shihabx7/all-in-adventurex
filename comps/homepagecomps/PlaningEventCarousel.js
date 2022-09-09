@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Link from "next/link";
 
-const PlaningEventCarousel=({events})=>{
+const PlaningEventCarousel=(props)=>{
  
 
   const showLocation=()=>{
@@ -68,7 +68,7 @@ const PlaningEventCarousel=({events})=>{
    >
 
     {
-        events.map((event)=>{
+        props.events.map((event)=>{
 
           return(
             <div key={event.id} className="text-white bg-gray-300 game-slider-card card-border event-card bg-cover" style={{
@@ -90,11 +90,36 @@ const PlaningEventCarousel=({events})=>{
                           <p className="text-gray-200 lg:text-lg">{showDescription(event.description)}</p>
                       </div>
                       <div className="card-game-link mt-4 text-center">
-                          <button onClick={showLocation} className="border max-w-[200px] card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                      {
+                            props.locationslug &&
+
+                            <Link href={"/"+props.locationslug+"/events/"+event.slug+"#eventform"}>
+                            <a className="border max-w-[200px] card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW
+                            </a>
+                          </Link>
+                          }
+                          {
+                            !props.locationslug &&
+
+                            <button onClick={showLocation} className="border max-w-[200px] card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                          }
+                         
+                          {
+                            props.locationslug &&
+
+                            <Link href={"/"+props.locationslug+"/events/"+event.slug}>
+                            <a className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE
+                            </a>
+                          </Link>
+                          }
+                          {
+                            ! props.locationslug &&
                           <Link href={"/events/"+event.slug}>
                             <a className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE
                             </a>
                           </Link>
+                          }
+                          
                       </div>
                       
                    </div>

@@ -1,6 +1,27 @@
 import Link from "next/link";
 import TitleSeparator from "../util/TitleSeparator";
-const BuyGiftCard=()=>{
+const BuyGiftCard=(props)=>{
+    const showLocation=()=>{
+
+        document.getElementById('locmenu').classList.remove('hidden')
+        
+      }
+      const bkdata=()=>{
+        
+        if(props.bookingData){
+            return props.bookingData['gift-card']
+        }
+      }
+      
+      const openBooking=(shortname,booking)=>{
+        FH.open({
+          shortname: shortname,
+          fallback: 'simple', 
+          fullItems: 'yes', 
+          flow: booking.flow, 
+          view: { item: booking.item }
+        });
+      }
 
     return(
 
@@ -40,12 +61,27 @@ const BuyGiftCard=()=>{
                                     <span className="block w-[90%]">Car parking facility available in our location at the mall.</span>
                                 </div>
                                 <div className="gift-btn-box mt-8">
-                                    <Link href="#">
-                                        <a className="bg-red-600 card-book-btn  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full">BUY GIFT CARD</a>
-                                    </Link>
-                                    <Link href="/gift-cards">
-                                        <a className="bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full">LEARN MORE</a>
-                                    </Link>
+                                    { 
+                                        props.bookingData &&
+                                        <button onClick={()=>openBooking(props.bookingData.shortname,bkdata())} className="bg-red-600  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">BUY GIFT CARD</button>
+                                    }
+                                    { 
+                                       !props.bookingData &&
+                                        <button onClick={()=>showLocation()} className=" bg-red-600 hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">BUY GIFT CARD</button>
+                                    }
+                                    {
+                                        props.locationslug &&
+                                        <Link href={"/"+props.locationslug+"/gift-cards"}>
+                                              <a className="bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">LEARN MORE</a>
+                                         </Link>
+                                    }
+                                    {
+                                        !props.locationslug &&
+                                        <Link href="/gift-cards">
+                                              <a className="bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">LEARN MORE</a>
+                                        </Link>
+                                    }
+                                    
 
                                 </div>
                          </div>

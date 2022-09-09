@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaAngleDown,FaMapMarkerAlt,FaPhoneAlt,FaEnvelope,FaGlobe } from "react-icons/fa";
 import { getMapStyle } from "../../pages/api/getMapStyle";
 
-const LocationMap=()=>{
+const LocationMap=(props)=>{
 
     const mapStyle= getMapStyle()
     return(
@@ -11,7 +11,7 @@ const LocationMap=()=>{
 
             <GoogleMap
                 mapContainerClassName="map-container w-full h-[340px] md:h-[340px] mb-8"
-                center={{lat:47,lng:-85}}
+                center={props.position}
                 //onLoad={handleOnLoad}
                 zoom={5}
                 options={{
@@ -20,8 +20,8 @@ const LocationMap=()=>{
             >
 
                 <Marker 
-                    position={{lat:47,lng:-85}}
-                    title="Location Name"
+                    position={props.position}
+                    title={props.locname}
                     icon={{
                       url:"/assets/svg/adventure-marker.svg",
                       scale:1

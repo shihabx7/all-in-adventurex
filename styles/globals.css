@@ -59,6 +59,18 @@ opacity: 1 !important;
   -webkit-text-fill-color: transparent; 
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+}/*-------------locmenux*/
+.loc-menu-grid{
+  column-count: 4;
+  column-gap: 16px;
+}
+.loc-menu-box{
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: masonry;
+  margin-bottom: 12px;
+  break-inside: avoid;
 }
 /*=========header design=========*/
 .logo img{
@@ -705,6 +717,10 @@ background-size: cover,cover;
 }
 
 @media only screen and (max-width: 900px) {
+  .loc-menu-grid{
+    column-count: 2;
+    column-gap: 40px;
+  }
   .htb-step {
     max-width: 80px;
     text-align: center;
@@ -931,7 +947,10 @@ background-size: cover,cover;
 
 @media only screen and (max-width: 500px) {
  
- 
+  .loc-menu-grid{
+    column-count: 1;
+    column-gap: 10px;
+  }
   .logo a img{
     max-height:52px;
   }

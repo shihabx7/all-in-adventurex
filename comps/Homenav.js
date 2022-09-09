@@ -11,7 +11,9 @@ import { useEffect, useRef, useState} from 'react';
 import HeaderBtnRed from "./headerComps/HeaderBtnRed";
 import LocationBtnH from "./util/LocationBtnH";
 import HeaderNotice from "./headerComps/HeaderNotice";
-
+import HeaderBtnTrans from "./headerComps/HeaderBtnTrans";
+import MoblieBook from "./headerComps/MobileBook";
+import LocationMenuX from "./headerComps/LocationMenuX";
 
 
 const Homenav=(props)=>{
@@ -44,11 +46,22 @@ const Homenav=(props)=>{
           document.removeEventListener("mouseup", checkIfClickedOutside)
         }
       }, [showMe]);
+
+
     return(
         <> 
-        <div id="locmenu" className="loc-menu-holder hidden">
-        <LocationMenu/>
+        {
+          props.locationlist &&
+          <div id="locmenu" className="loc-menu-holder hidden">
+              <LocationMenuX locationlist={props.locationlist}/>
         </div>
+        }
+        {
+            <div id="locmenu" className="loc-menu-holder hidden">
+                <LocationMenu/>
+            </div>
+        }
+        
         
         
         <header id="header" className="bg-coffee w-full z-50">
@@ -57,11 +70,23 @@ const Homenav=(props)=>{
             <div className="header-container-s max-w-7xl mx-auto relative md:px-4" ref={ref}>
                 <div className="home-nav-bar flex justify-between items-center py-2 px-2 sm:p-1 lg:py-2 lg:px-0"> 
                     <div className="logo">
-                        <Link href="/"> 
-                            <a className="flex items-center">
-                                <SvglogoMain></SvglogoMain>
-                            </a>
-                        </Link>
+                      {
+                        props.locationslug && 
+                      
+                        <a href={"/locations/"+props.locationslug} className="flex items-center">
+                            <SvglogoMain></SvglogoMain>
+                        </a>
+                  
+                      }
+                      {
+                        !props.locationslug && 
+                      
+                        <a href="/" className="flex items-center">
+                            <SvglogoMain></SvglogoMain>
+                        </a>
+                  
+                      }
+                        
                     </div>
           
                  {/*============location search btn==========*/}
@@ -70,12 +95,29 @@ const Homenav=(props)=>{
                     <div className="home-nav-menu flex items-center space-x-0 md:space-x-10 lg:space-x-14 justify-end "> 
                         
                          <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
+                           {props.locationslug &&
+
+                             <HeaderBtnTrans locationslug={props.locationslug} btntext='BOOK EVENTS'/>
+                            
+                           }
                            
-                                 <HeaderBtnRed btntext='BOOK AN EVENT'btnbg='bg-transparent'/>
+                           {!props.locationslug &&
+                            <HeaderBtnTrans  btntext='BOOK EVENTS'/>
+                           }
+                            
                             
                          </div>
                          <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
-                           <HeaderBtnRed btntext='BOOK GAMES' btnbg='bg-red-600'/>
+                            {props.bookingall &&
+                              <HeaderBtnRed bookingall={props.bookingall} btntext='BOOK GAMES'/>
+                            }  
+                            {props.bookinggame &&
+                              <HeaderBtnRed bookinggame={props.bookinggame} btntext='BOOK NOW'/>
+                            } 
+                            {
+                              (!props.bookingall && !props.bookinggame) &&
+                              <HeaderBtnRed  btntext='BOOK GAMES' />
+                            }
                          </div>
                          <div className="menu-item hover:shadow-md hover:cursor-pointer relative" onClick={toggle}>
                             <div className="menu-icon-box p-2 bg-coffee-light"
@@ -103,9 +145,24 @@ const Homenav=(props)=>{
                 </div>
                         
                                 <div id="submenu-holder" className="submenu-holder absolute top-full right-0 z-40  w-full md:w-auto"> 
-                                {showMe &&(
+                                {
+                                (showMe && props.locationslug) &&
+                                  
+                                 
+                                     <SubMenu locationslug={props.locationslug}
+                                               eventlist={props.eventlist}
+                                               activitylist={props.activitylist}
+                                     
+                                     ></SubMenu>
+                                     }
+                                   {
+                                (showMe && !props.locationslug) &&
+                                  
+                                 
                                      <SubMenu></SubMenu>
-                                     )}
+                                     }
+                                     
+                                     
                         </div>
 
                        
@@ -113,32 +170,19 @@ const Homenav=(props)=>{
             </div>
             </div>
             {
-          showSlug &&
+              (props.locationslug && props.bookingall) &&
 
-         <div id="hbtn" className="header-book-btn-container  w-full  bg-coffee  lg:hidden z-50">
-                  <div className="max-w-7xl mx-auto flex justify-between"> 
-                     <div className="w-[48%]">
-                         <Link  href={{
-                               pathname: '/book',
-                                query: { name: 'test' },
-                                 }} hpassHref> 
-                             <a className="bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white">BOOK GAMES</a>
-                         </Link>
-                     </div>
-                     <div className="w-[48%]">
-                         <Link href={{
-                                pathname: '/book',
-                                   query: { name: 'test' },
-                                 }}> 
-                              <a className="bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white">BOOK AN EVENT</a>
-                         </Link>
-                     </div>
-                                
-                     </div>           
-                 </div>
+               <MoblieBook locationslug={props.locationslug} bookingall={props.bookingall}/>
 
 
-}
+            }
+            {
+              (props.locationslug && props.bookinggame) &&
+
+               <MoblieBook locationslug={props.locationslug} bookinggame={props.bookinggame}/>
+
+
+            }
            
         </header>
       

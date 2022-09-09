@@ -3,9 +3,14 @@ import { FaAngleDown,FaAngleRight,FaAngleUp } from "react-icons/fa";
 import { useState } from "react";
 import React from 'react';
 import { ImPlay3 } from "react-icons/im";
+import VirtualSubmenu from "./VirtualSubmenu";
+import EscapeGameSubmenu from "./EscapeGameSubmenu";
+import OhterGameSubmenu from "./OhterGameSubmenu";
+import EventSubmenu from "./EventSubmenu";
+import StaticSubmenu from "./StaticSubmenu";
 
 
-const SubMenu=()=>{
+const SubMenu=(props)=>{
 
     const [openMenu, setopenMenu] = useState('1');
     
@@ -19,21 +24,43 @@ const SubMenu=()=>{
             <div className="px-6 md:px-16 border-r border-dark-coffee"> 
                     <div className="submenu-content text-light-gold md:text-lg"> 
                             <div className="submenu-item">
-                                <Link href="/">
-                                     <a className="flex items-center">
+                               
+                               {
+                                 props.locationslug &&
+                                 <a href={"/locations/"+props.locationslug} className="flex items-center">
                                         <span className="sub-link-txt">Home</span> 
-                                     </a>
-                                </Link>
+                                  </a>
+                               }
+                               {
+                                 !props.locationslug &&
+                                 <a href="/" className="flex items-center">
+                                        <span className="sub-link-txt">Home</span> 
+                                 </a>
+                               }
+                                     
+                                
 
                             </div>
                             <div className="submenu-item">
-                                <Link href="/locations">
-                                     <a className="flex items-center">
+                               
+                                     <a href="/locations" className="flex items-center">
                                         <span className="sub-link-txt">All locations</span> 
                                      </a>
-                                </Link>
+                               
 
                             </div>
+                            {
+                              props.locationslug &&
+
+                              <div className="submenu-item">
+                               
+                                  <a href={"/"+props.locationslug+"/contact-store"} className="flex items-center">
+                                        <span className="sub-link-txt">Contact Store</span> 
+                                    </a>
+                        
+
+                              </div>
+                            }
                            {/*=========================================== Collapse menu 1========== */}
                             <div className="submenu-item"
                                 onClick={() =>
@@ -62,67 +89,17 @@ const SubMenu=()=>{
                                     display: openMenu==='1' ?"block":"none"
                                    }}
                                 > 
-                                    <Link href="/activities/escape-from-alcatraz">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Escape From Alcatraz</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/activities/treasure-island">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Treasure Island</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/activities/superheros-adventure">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Superhero's Adventure</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/activities/zombie-apocalypse">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub ">Zombie Apocalypse</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/activities/special-agent">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Special Agent</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/activities/hollywood-premiere">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Hollywood Premiere</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/activities/sherlocks-library">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Sherlocks Library</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/activities/houdinis-magic-cell">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Houdini's Magic Cell</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/activities/black-ops">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Black Ops</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/activities/lost-in-the-jungle">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Lost In The Jungle</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/activities/wizarding-school">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Wizarding School</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/activities/magic-castle">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Magic Castle</span>
-                                             </a>
-                                    </Link>
-
+                                    {
+                                       props.locationslug &&
+                                       <EscapeGameSubmenu locationslug={props.locationslug} 
+                                                         activitylist={props.activitylist}/>
+                                    }
+                                    {
+                                       !props.locationslug &&
+                                       <EscapeGameSubmenu/>
+                                    }
+                                       
+                                             
                                 </div>
 
                             </div>
@@ -158,26 +135,17 @@ const SubMenu=()=>{
                                     display: openMenu==='3' ?"block":"none"
                                    }}
                                 > 
-                                    <Link href="/activities/beat-the-seat">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Beat The Seat</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/activities/game-show-room">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Game Show Room</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/activities/axe-throwing">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Axe Throwing</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/activities/virtual-reality">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Virtual Reality</span>
-                                             </a>
-                                    </Link>
+                                {
+                                       props.locationslug &&
+                                       <OhterGameSubmenu locationslug={props.locationslug}
+                                                          activitylist={props.activitylist}
+                                       />
+                                    }
+                                    {
+                                       !props.locationslug &&
+                                       <OhterGameSubmenu/>
+                                    }
+                                  
                                     
 
                                 </div>
@@ -214,56 +182,17 @@ const SubMenu=()=>{
                                     display: openMenu==='4' ?"block":"none"
                                    }}
                                 > 
-                                    <Link href="0/events/team-building">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Team Building</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/events/birthday-party">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Birthday Party</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/events/family-events">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Family Events</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/events/bachelor-party">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Bachelor Party</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/events/bachelorette-party">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Bachelorette Party</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/events/corporate-events">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Corporate Events</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/events/school-events">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">School Events</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/events/private-party">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Private Party</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/events/reunion-party">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Reunion Party</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="/events/graduation-party">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Graduation Party</span>
-                                             </a>
-                                    </Link>
+                                {
+                                       props.locationslug &&
+                                       <EventSubmenu locationslug={props.locationslug}
+                                                       eventlist={props.eventlist}
+                                       />
+                                    }
+                                    {
+                                       !props.locationslug &&
+                                       <EventSubmenu/>
+                                    }
+                                
                                     
 
                                 </div>
@@ -299,26 +228,7 @@ const SubMenu=()=>{
                                     display: openMenu==='2' ?"block":"none"
                                    }}
                                 > 
-                                    <Link href="#">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Escape From Alcatraz</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="#">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Treasure Island</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="#">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Superhero's Adventure</span>
-                                             </a>
-                                    </Link>
-                                    <Link href="#">
-                                             <a className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Zombie Apocalypse</span>
-                                             </a>
-                                    </Link>
+                                   <VirtualSubmenu/>
                                     
                                 </div>
 
@@ -326,7 +236,24 @@ const SubMenu=()=>{
 
                             {/*=========================================== Collapse menu 2 end========== */}
                             
-                            <div className="submenu-item">
+                            
+                            {
+                              props.locationslug &&
+
+                              <div className="submenu-item">
+                               
+                                  <a href={"/"+props.locationslug+"/gift-cards"} className="flex items-center">
+                                        <span className="sub-link-txt">Gift cards</span> 
+                                    </a>
+                        
+
+                              </div>
+                            }
+                            
+                            {
+                              !props.locationslug &&
+
+                              <div className="submenu-item">
                                 <Link href="/gift-cards">
                                      <a className="flex items-center">
                                         <span className="sub-link-txt">Gift cards</span> 
@@ -334,7 +261,7 @@ const SubMenu=()=>{
                                 </Link>
 
                             </div>
-                            
+                            }
                             
                            
 
@@ -342,93 +269,9 @@ const SubMenu=()=>{
 
 
             </div>
-{/*============submenu-item-static===========*/}
+{/*=====================================================submenu-item-static=============================*/}
             <div className="px-6 md:px-16 "> 
-            <div className="submenu-content text-light-gold md:text-lg"> 
-                  <div className="submenu-item">
-                                <Link href="/testimonials">
-                                     <a className="flex items-center">
-                                        <span className="sub-link-txt">Testimonials</span> 
-                                     </a>
-                                </Link>
-
-                            </div>
-                            <div className="submenu-item">
-                                <Link href="/gallery">
-                                     <a className="flex items-center">
-                                        <span className="sub-link-txt">Customer gallery</span> 
-                                     </a>
-                                </Link>
-
-                            </div>
-                            <div className="submenu-item">
-                                <Link href="/pricing">
-                                     <a className="flex items-center">
-                                        <span className="sub-link-txt">Pricing</span> 
-                                     </a>
-                                </Link>
-
-                            </div>
-                            <div className="submenu-item">
-                                <Link href="/deals-coupons">
-                                     <a className="flex items-center">
-                                        <span className="sub-link-txt">Deals and coupons</span> 
-                                     </a>
-                                </Link>
-
-                            </div>
-                            <div className="submenu-item">
-                                <Link href="/faqs">
-                                     <a className="flex items-center">
-                                        <span className="sub-link-txt">FAQs</span> 
-                                     </a>
-                                </Link>
-
-                            </div>
-                            <div className="submenu-item">
-                                <Link href="/about">
-                                     <a className="flex items-center">
-                                        <span className="sub-link-txt">About us</span> 
-                                     </a>
-                                </Link>
-
-                            </div>
-                            <div className="submenu-item">
-                                <Link href="/careers">
-                                     <a className="flex items-center">
-                                        <span className="sub-link-txt">Careers</span> 
-                                     </a>
-                                </Link>
-
-                            </div>
-                            <div className="submenu-item">
-                                <Link href="#">
-                                     <a className="flex items-center">
-                                        <span className="sub-link-txt">Waiver</span> 
-                                     </a>
-                                </Link>
-
-                            </div>
-                            <div className="submenu-item">
-                                <Link href="/franchise">
-                                     <a className="flex items-center">
-                                        <span className="sub-link-txt">Become a franchise owner</span> 
-                                     </a>
-                                </Link>
-
-                            </div>
-                           
-                            
-                            <div className="submenu-item">
-                                <Link href="/corporate-contact">
-                                     <a className="flex items-center">
-                                        <span className="sub-link-txt">Coorporate Contact</span> 
-                                     </a>
-                                </Link>
-
-                            </div>
-
-                    </div>
+                        <StaticSubmenu/>
             </div>
 {/*============submenu-item-static end===========*/}
         </div>

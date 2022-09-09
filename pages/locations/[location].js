@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Script from 'next/script';
 import Footer from '../../comps/Footer';
 import Homenav from '../../comps/Homenav';
 import Breadcrumbs from 'nextjs-breadcrumbs';
@@ -39,7 +40,14 @@ const location=(props)=>{
 
     return (
         <>
-            <Homenav slug="slug" location={props.pagedata.locationcity+", "+props.pagedata.locationstate}/>
+     <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
+            <Homenav locationslug={props.pagedata.slug} 
+                        bookingall={props.pagedata.bookingall} 
+                         location={props.pagedata.locationcity+", "+props.pagedata.locationstate}
+                         activitylist={props.activitylist}
+                         eventlist={props.eventlist}
+                         locationlist={props.locationlist}
+                         />
                 <div id="mainContent" className='main-content'>
 
                 {/* =======header content and breadcum======== */}
@@ -66,17 +74,20 @@ const location=(props)=>{
                         {/* ===========Page Content here========= */}
                             <LocationHomeHero pagedata={props.pagedata}/>
                             <Howtobook></Howtobook>
-                             <InpersonEscapeSlider inpersongames={props.inpersongames}/>
-                             <PysicalEscape othergames={props.othergames}/>
+                             <InpersonEscapeSlider locationslug={props.pagedata.slug} inpersongames={props.inpersongames} bookingData={props.bookingData}/>
+                             <PysicalEscape othergames={props.othergames} locationslug={props.pagedata.slug} bookingData={props.bookingData}/>
                               <VirtualEscapeSlider virtualgames={props.virtualgames}/>
-                             <PlaningEventsSlider events={props.events}/>
-                             <BuyGiftCard/>
+                             <PlaningEventsSlider events={props.events} locationslug={props.pagedata.slug}/>
+                             <BuyGiftCard locationslug={props.pagedata.slug}  bookingData={props.bookingData}/>
                              <WhatIsEscape/>
                             <WhoCanplay/>
                             <HomeReviewSlider reviews={props.reviews}/>
-                            <LocationDetails/>
+                            <LocationDetails locdetail={props.pagedata.locdetail}/>
 
                 </div>
+                {
+                    console.log(props.pagedata)
+                }
 
             <Footer  location={props.pagedata.locationcity+", "+props.pagedata.locationstate}/>
         </>
@@ -113,7 +124,12 @@ export const getStaticProps=async(context)=>{
             othergames:locationHomedata.otherphysicalgames,
             virtualgames:locationHomedata.virtualgames,
             events:locationHomedata.events,
-            reviews:locationHomedata.locationreviews
+            reviews:locationHomedata.locationreviews,
+            bookingData:locationHomedata.bookingData,
+            activitylist:locationHomedata.activitylist,
+            eventlist:locationHomedata.eventlist,
+            locationlist:locationHomedata.locationlist
+          
         },
         revalidate: 30
     }

@@ -19,14 +19,14 @@ const LocationListView=({city,state})=>{
         className="locationlist ease-in-out duration-100 rounded-b bg-[#FFF9EB]"
         > 
             <div className="location-img">
-                <Link href={"/locations/"+locSlug(city.city,state)}>
+                <Link href={"/locations/"+city.slug}>
                     <a className="block cursor-pointer"><img src={city.coverimg}></img></a>
                 </Link>
                 
             </div>
             <div className="locationview-info py-4 px-4"> 
                 <div className="location-name group">
-                    <Link href={"/locations/"+locSlug(city.city,state)}>
+                    <Link href={"/locations/"+city.slug}>
                         <a> 
                              <div className="flex space-x-1 items-center text-2xl lg:text-3xl font-medium">
                                  <h3 className="golden-text"><span className="capitalize">{city.city}</span>, <span className="uppercase">{state}</span></h3> <p className="text-gold"><FaAngleRight/></p>

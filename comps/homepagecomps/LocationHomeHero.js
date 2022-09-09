@@ -2,7 +2,25 @@ import Link from "next/link";
 import LocationBtn from "../util/LocationBtn";
 const LocationHomeHero=(props)=>{
     
-        //console.log(props.slug)
+    const bookAll=(bookingData)=>{
+        FH.open({
+          shortname: bookingData.shortname,
+          fallback: 'simple', 
+          fullItems: 'yes', 
+         // flow:  bookingData.flow, 
+          view: 'items'
+        });
+      }
+
+      const bookGame=(bookingData)=>{
+        FH.open({
+          shortname: bookingData.shortname,
+          fallback: 'simple', 
+          fullItems: 'yes', 
+         flow:  bookingData.flow, 
+          view: {item:bookingData.item}
+        });
+      }
     
 
     return(
@@ -26,13 +44,14 @@ const LocationHomeHero=(props)=>{
 
                         {/*============location search btn==========*/}
                         <div className="booking-btn">
-                                <Link href={"/"+props.pagedata.locationcity+"-"+props.pagedata.locationstate+"/booking"}> 
-                                        <a className="block py-3 rounded-full text-center  text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BOOK NOW</a>
-                                </Link>
+                        {
+                            props.pagedata.bookingall &&
+                            <button onClick={()=>bookAll(props.pagedata.bookingall)} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BOOK GAMES</button>
+                        }
                          </div>
                          <div className="booking-btn mt-4">
-                                <Link href={"/"+props.pagedata.locationcity+"-"+props.pagedata.locationstate+"booking"}> 
-                                        <a className="block py-3 rounded-full text-center  text-white font-medium border-2 border-red-600  hover:bg-red-700 hover:border-red-700 text-lg">BOOK AN EVENT</a>
+                                <Link href={"/"+props.pagedata.slug+"/events#eventform"}> 
+                                        <a className="block py-3 rounded-full text-center  text-white font-medium border-2 border-red-600  hover:bg-red-700 hover:border-red-700 text-lg">BOOK EVENTS</a>
                                 </Link>
                          </div>
                          {/*============location search btn==========*/}

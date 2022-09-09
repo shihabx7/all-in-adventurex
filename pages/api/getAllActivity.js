@@ -35,7 +35,8 @@ export const getAllActivity=()=>{
                     "duration":50,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
                     "activity_slug":"escape-from-alcatraz",
-                    "activity_cover_image":"/assets/game-list-cover-img-1.jpg",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+                    
                     
                 },
                 {
@@ -50,7 +51,8 @@ export const getAllActivity=()=>{
                     "duration":50,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
                     "activity_slug":"treasure-island",
-                    "activity_cover_image":"/assets/game-list-cover-img.jpg",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-treasure-island.jpg",
+                    
                 },
                 {
                     "id":3,
@@ -64,7 +66,8 @@ export const getAllActivity=()=>{
                     "duration":60,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
                     "activity_slug":"hollywood-premiere",
-                    "activity_cover_image":"/assets/game-list-cover-img-3.jpg",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+                   
                 },
                 {
                     "id":4,
@@ -78,7 +81,8 @@ export const getAllActivity=()=>{
                     "duration":60,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
                     "activity_slug":"lost-in-the-jungle",
-                    "activity_cover_image":"/assets/game-list-cover-img-2.jpg",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-lost-in-the-jungle.jpg",
+                    
                 },
                 {
                     "id":5,
@@ -92,7 +96,8 @@ export const getAllActivity=()=>{
                     "duration":60,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
                     "activity_slug":"black-ops",
-                    "activity_cover_image":"/assets/game-list-cover-img-4.jpg",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-black-ops.jpg",
+                    
                 },
                 {
                     "id":6,
@@ -105,8 +110,9 @@ export const getAllActivity=()=>{
                     "price":28,
                     "duration":60,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                    "activity_slug":"locked-in-the-Lift",
-                    "activity_cover_image":"/assets/game-list-cover-img-5.jpg",
+                    "activity_slug":"locked-in-the-lift",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-locked-in-the-lift.jpg",
+                    
                 },
                 {
                     "id":7,
@@ -120,7 +126,8 @@ export const getAllActivity=()=>{
                     "duration":60,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
                     "activity_slug":"houdinis-magic-cell",
-                    "activity_cover_image":"/assets/game-list-cover-img-6.jpg",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+                    
                 },
                 {
                     "id":8,
@@ -134,7 +141,8 @@ export const getAllActivity=()=>{
                     "duration":60,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
                     "activity_slug":"magic-castle",
-                    "activity_cover_image":"/assets/game-list-cover-img-7.jpg",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-magic-castle.jpg",
+                    
                 },
                 {
                     "id":9,
@@ -148,22 +156,10 @@ export const getAllActivity=()=>{
                     "duration":60,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
                     "activity_slug":"superheros-adventure",
-                    "activity_cover_image":"/assets/game-list-cover-img-2.jpg",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+                    
                 },
-                {
-                    "id":10,
-                    "activity_name":"Zombie Apocalypse",
-                    "activity_type":"In person",
-                    "activity_category":"escapegame",
-                    "age":"all Aage",
-                    "min_player":2,
-                    "max_player":8,
-                    "price":28,
-                    "duration":60,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                    "activity_slug":"zombie-apocalypse",
-                    "activity_cover_image":"/assets/game-list-cover-img-4.jpg",
-                },
+                
                 {
                     "id":11,
                     "activity_name":"Special Agent",
@@ -176,7 +172,8 @@ export const getAllActivity=()=>{
                     "duration":60,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
                     "activity_slug":"special-agent",
-                    "activity_cover_image":"/assets/game-list-cover-img-6.jpg",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
+                    
                 },
                 {
                     "id":12,
@@ -190,7 +187,8 @@ export const getAllActivity=()=>{
                     "duration":60,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
                     "activity_slug":"sherlocks-library",
-                    "activity_cover_image":"/assets/game-list-cover-img-5.jpg",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+                   
                 },
                 {
                     "id":13,
@@ -204,7 +202,8 @@ export const getAllActivity=()=>{
                     "duration":60,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
                     "activity_slug":"wizarding-school ",
-                    "activity_cover_image":"/assets/game-list-cover-img-3.jpg",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-wizarding-school.jpg",
+                    
                 },
                 {
                     "id":14,
@@ -218,7 +217,8 @@ export const getAllActivity=()=>{
                     "duration":60,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
                     "activity_slug":"beat-the-seat",
-                    "activity_cover_image":"/assets/game-list-cover-img-1.jpg",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-wizarding-school.jpg",
+                    
                 },
                 {
                     "id":15,
@@ -232,7 +232,8 @@ export const getAllActivity=()=>{
                     "duration":60,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
                     "activity_slug":"game-show-room",
-                    "activity_cover_image":"/assets/game-list-cover-img-2.jpg",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-wizarding-school.jpg",
+                    
                 },
                 {
                     "id":16,
@@ -246,7 +247,8 @@ export const getAllActivity=()=>{
                     "duration":60,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
                     "activity_slug":"axe-throwing",
-                    "activity_cover_image":"/assets/game-list-cover-img-3.jpg",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-wizarding-school.jpg",
+                    
                 },
                 {
                     "id":17,
@@ -260,12 +262,13 @@ export const getAllActivity=()=>{
                     "duration":60,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
                     "activity_slug":"virtual-reality",
-                    "activity_cover_image":"/assets/game-list-cover-img-5.jpg",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-virtual-reality.jpg",
+                    
                 },
                 
                 
                 
-
+    
               ]
         
     }

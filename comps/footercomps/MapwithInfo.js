@@ -31,7 +31,7 @@ console.log(w)
           setMapZoom(4.6)
           setMapCenter({lat:39,lng:-78}) 
         }
-  });
+  },[]);
 
   const handleActiveMarker = (marker,position) => {
     if (marker === activeMarker) {
