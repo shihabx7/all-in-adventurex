@@ -10,8 +10,8 @@ import StoreContact from '../../comps/contactComps/StoreContact';
 
 
 const ViewContactStore=(props)=>{
-    const router = useRouter()
-    const getLoc=()=>{
+    
+    const getLoc=(slug)=>{
         
         var sp=router.pathname.split('/')
         var locname=sp[1].split('-')
@@ -25,7 +25,7 @@ const ViewContactStore=(props)=>{
     return(
         <>
             <Homenav locationslug={props.pagedata.locationslug}
-                     location={getLoc()}
+                     location={getLoc(props.locationslug)}
                       bookingall={props.pagedata.bookingall}
                       activitylist={props.activitylist}
                       eventlist={props.eventlist}

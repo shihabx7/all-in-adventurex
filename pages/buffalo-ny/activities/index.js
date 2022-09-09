@@ -12,8 +12,8 @@ import BreadcumNew from '../../../comps/util/BreadcumNew';
 
 const LocActivity=(props)=>{
    
-    const router = useRouter()
-    const getLoc=()=>{
+    
+    const getLoc=(slug)=>{
         
         var sp=router.pathname.split('/')
         var locname=sp[1].split('-')
@@ -40,7 +40,7 @@ const LocActivity=(props)=>{
          <>
              <Homenav locationslug={props.pagedata.locationslug} 
                       bookingall={props.pagedata.bookingall} 
-                     location={getLoc()}
+                      location={getLoc(props.locationslug)}
                     activitylist={props.activitylistSlug}
                     eventlist={props.eventlistSlug}
              />

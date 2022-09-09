@@ -12,7 +12,7 @@ import WhyAdvGiftCards from '../../comps/giftCardPageComps/WhyAdvGiftCards';
 import BuyLocGift from '../../comps/activitiyPageComps/BuyLocGift';
 
 const viewLocGift=(props)=>{
-    const router = useRouter()
+ 
     const getLoc=()=>{
         
         var sp=router.pathname.split('/')
@@ -28,7 +28,7 @@ const viewLocGift=(props)=>{
         <>
             <Homenav locationslug={props.pagedata.locationslug} 
                      bookinggame={props.pagedata.bookingdata}
-                          location={getLoc()}
+                     location={getLoc(props.locationslug)}
                           activitylist={props.activitylist}
                           eventlist={props.eventlist}
                           />

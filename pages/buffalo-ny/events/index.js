@@ -13,9 +13,9 @@ import EventList from '../../../comps/activitiyPageComps/EventList';
 import EventContact from '../../../comps/eventPageComps/EventContact';
 
 const LocEventList=(props)=>{
-    const router = useRouter()
+    
 
-    const getLoc=()=>{
+    const getLoc=(slug)=>{
         
         var sp=router.pathname.split('/')
         var locname=sp[1].split('-')
@@ -42,7 +42,7 @@ const LocEventList=(props)=>{
          <>
              <Homenav locationslug={props.pagedata.locationslug}
                      bookingall={props.pagedata.bookingall} 
-                     location={getLoc()}
+                     location={getLoc(props.locationslug)}
                      activitylist={props.activitylistSlug}
                      eventlist={props.eventlistSlug}
                      />
