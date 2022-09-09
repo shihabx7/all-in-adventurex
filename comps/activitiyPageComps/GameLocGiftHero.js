@@ -44,7 +44,7 @@ const GameLocGiftHero=(props)=>{
                         
                         {
                             props.pagedata.bookingdata &&
-                            <button onClick={()=>bookGame(props.pagedata.bookingdata)} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BOOK NOW</button>
+                            <button onClick={()=>bookGame(props.pagedata.bookingdata)} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BUY GIFT CARD NOW</button>
                         }
                         
                        

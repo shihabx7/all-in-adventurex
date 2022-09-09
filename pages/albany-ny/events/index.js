@@ -17,11 +17,12 @@ const LocEventList=(props)=>{
   
     const getLoc=(slug)=>{
        
-        var sp=router.pathname.split('/')
-        var locname=sp[1].split('-')
+        
+        var locname=slug.split('-')
         var st=locname[locname.length-1].toString()
 
-        locname=locname.slice(0,-1).join(' ')
+        locname=locname.slice(0,-1)
+        locname=locname.join(' ')
         return locname+", "+st
     }
     //console.log(locname)
