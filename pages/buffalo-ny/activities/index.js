@@ -12,9 +12,9 @@ import BreadcumNew from '../../../comps/util/BreadcumNew';
 
 const LocActivity=(props)=>{
    
-
+    const router = useRouter()
     const getLoc=()=>{
-        const router = useRouter()
+        
         var sp=router.pathname.split('/')
         var locname=sp[1].split('-')
         var st=locname[locname.length-1].toString()
