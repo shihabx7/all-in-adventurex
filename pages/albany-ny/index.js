@@ -1,6 +1,6 @@
 
 
-const locationPage=()=>{
+const locationPage=(props)=>{
 
    
 
@@ -13,7 +13,7 @@ const locationPage=()=>{
     
     return ( 
         <p>
-        
+        {props.pagedata}
         </p> 
     )
 
@@ -33,6 +33,8 @@ export async function getStaticProps() {
     }
   
     return {
-      props: {},
+        props: {
+            pagedata:"Location Home"
+          },
     };
   }
