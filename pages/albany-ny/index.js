@@ -4,14 +4,13 @@ import Router from 'next/router'
 const locationPage=()=>{
 
    
-    useEffect(() => {
+
        
         
             Router.replace('/locations/albany-ny')
           
         
-      },[]);
-
+   
     
     return ( 
         <p>
