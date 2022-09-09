@@ -31,7 +31,7 @@ const LocActivity=(props)=>{
          <>
              <Homenav locationslug={props.pagedata.locationslug} 
                       bookingall={props.pagedata.bookingall} 
-                     location={getLoc(props.locationslug)}
+                      location={getLoc(props.pagedata.locationslug)}
                     activitylist={props.activitylistSlug}
                     eventlist={props.eventlistSlug}
              />
@@ -56,7 +56,8 @@ const LocActivity=(props)=>{
  
                  </div>
  
-             <Footer  location={getLoc(props.locationslug)}/>
+          pagedata:locationHomedata.pagedata,
+             <Footer  location={getLoc(props.pagedata.locationslug)}/>
          </>
  
      )

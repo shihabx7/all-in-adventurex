@@ -28,7 +28,7 @@ const viewLocGift=(props)=>{
         <>
             <Homenav locationslug={props.pagedata.locationslug} 
                      bookinggame={props.pagedata.bookingdata}
-                     location={getLoc(props.locationslug)}
+                     location={getLoc(props.pagedata.locationslug)}
                           activitylist={props.activitylist}
                           eventlist={props.eventlist}
                           />
@@ -54,10 +54,10 @@ const viewLocGift=(props)=>{
                          <WhyAdvGiftCards locationslug={props.pagedata.locationslug} bookingdata={props.pagedata.bookingdata}/>
                          <GiftFaq faqlist={props.faqlist}/>
                             
-                            {console.log(props.pagedata)}
+                            
                  </div>
  
-             <Footer  location={getLoc(props.locationslug)}/>
+             <Footer  location={getLoc(props.pagedata.locationslug)}/>
         
         </>
     )

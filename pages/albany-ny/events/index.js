@@ -26,23 +26,12 @@ const LocEventList=(props)=>{
     }
     //console.log(locname)
     /* custom breadcum code */
- const toTitleCase=(title)=>{
-    const titlefres=title.replace(/-/g,' ')
-     const btitle=titlefres.split(' ').map((word)=>{return (word.charAt(0).toUpperCase() + word.slice(1))}).join(" ") // breadcum title capitalize
-     
-    
-     return (
- 
-       <div className='bitem flex items-center'><span>{btitle}</span> <span className='bsep text-gold'><FiChevronRight/></span></div>
-     )
-    }
-    /* customizing breadcum */
  
      return (
          <>
              <Homenav locationslug={props.pagedata.locationslug}
                      bookingall={props.pagedata.bookingall} 
-                     location={getLoc(props.locationslug)}
+                     location={getLoc(props.pagedata.locationslug)}
                      activitylist={props.activitylistSlug}
                      eventlist={props.eventlistSlug}
                      />
@@ -67,7 +56,7 @@ const LocEventList=(props)=>{
                         
                  </div>
  
-             <Footer  location={getLoc(props.locationslug)}/>
+             <Footer  location={getLoc(props.pagedata.locationslug)}/>
          </>
  
      )

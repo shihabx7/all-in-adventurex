@@ -25,7 +25,7 @@ const ViewContactStore=(props)=>{
     return(
         <>
             <Homenav locationslug={props.pagedata.locationslug}
-                     location={getLoc(props.locationslug)}
+                     location={getLoc(props.pagedata.locationslug)}
                       bookingall={props.pagedata.bookingall}
                       activitylist={props.activitylist}
                       eventlist={props.eventlist}
@@ -56,7 +56,7 @@ const ViewContactStore=(props)=>{
  
                  </div>
  
-             <Footer  location={getLoc(props.locationslug)}/>
+             <Footer  location={getLoc(props.pagedata.locationslug)}/>
         
         </>
     )
