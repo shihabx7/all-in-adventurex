@@ -3,7 +3,7 @@ import Router from 'next/router'
 
 const locationPage=()=>{
 
-    const [loaded,setLoaded] = useState(true)
+   
     useEffect(() => {
        
         
