@@ -57,7 +57,7 @@ const viewLocGift=(props)=>{
                             {console.log(props.pagedata)}
                  </div>
  
-             <Footer  location={getLoc()}/>
+             <Footer  location={getLoc(props.locationslug)}/>
         
         </>
     )

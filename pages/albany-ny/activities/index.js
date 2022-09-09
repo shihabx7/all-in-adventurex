@@ -1,10 +1,10 @@
-import { useRouter } from 'next/router'
+
 
 import Footer from '../../../comps/Footer';
 import Homenav from '../../../comps/Homenav';
-import Breadcrumbs from 'nextjs-breadcrumbs';
+
 import Head from 'next/head';
-import { FiChevronRight } from "react-icons/fi";
+
 import { getLocationIndActivityList } from '../../api/LocationIndData/getLocationIndActivityList';
 import GameLocHero from '../../../comps/activitiyPageComps/GameLocHero';
 import GameLocList from '../../../comps/activitiyPageComps/GameLocList';
@@ -24,16 +24,7 @@ const LocActivity=(props)=>{
     }
     //console.log(locname)
     /* custom breadcum code */
- const toTitleCase=(title)=>{
-    const titlefres=title.replace(/-/g,' ')
-     const btitle=titlefres.split(' ').map((word)=>{return (word.charAt(0).toUpperCase() + word.slice(1))}).join(" ") // breadcum title capitalize
-     
-    
-     return (
  
-       <div className='bitem flex items-center'><span>{btitle}</span> <span className='bsep text-gold'><FiChevronRight/></span></div>
-     )
-    }
     /* customizing breadcum */
  
      return (
@@ -61,13 +52,11 @@ const LocActivity=(props)=>{
                          {/* ===========Page Content here========= */}
                          <GameLocHero pagedata={props.pagedata}/>
                          <GameLocList activitylist={props.activitylist} locationslug={props.pagedata.locationslug} bookingdata={props.bookingdata}/>
-                             {
-                                console.log(props.pagedata)
-                             }
+                            =
  
                  </div>
  
-             <Footer  location={getLoc()}/>
+             <Footer  location={getLoc(props.locationslug)}/>
          </>
  
      )

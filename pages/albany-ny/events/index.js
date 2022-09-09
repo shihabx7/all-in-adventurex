@@ -67,7 +67,7 @@ const LocEventList=(props)=>{
                         
                  </div>
  
-             <Footer  location={getLoc()}/>
+             <Footer  location={getLoc(props.locationslug)}/>
          </>
  
      )
