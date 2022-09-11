@@ -25,7 +25,7 @@ const WhoCanplay =()=>{
                                 <div className="wcp-list-box w-full md:w-[47%] lg:w-[42%]"> 
                                         <div className="wcp-list flex items-center mb-6 md:mb-8 lg:mb-10">
                                             <div className="flex justify-center items-center wcp-list-icon p-4 rounded bg-golden">
-                                                <img src="/assets/svg/fn-icon.svg"></img>
+                                                <img src="/assets/svg/escape-games-for-kids-and-children.svg"></img>
                                             </div>
                                             <div className="wcp-list-text uppercase  py-3 md:py-4  px-4 md:px-6 lg:px-8 bg-[#111111] rounded w-full"> 
                                                  <p className="golden-text text-xl">KIDS AND CHILDREN</p>
@@ -33,7 +33,7 @@ const WhoCanplay =()=>{
                                         </div>
                                         <div className="wcp-list flex items-center mb-6 md:mb-8 lg:mb-10">
                                             <div className="flex justify-center items-center wcp-list-icon p-4 rounded bg-golden">
-                                                <img src="/assets/svg/parental-control.svg"></img>
+                                                <img src="/assets/svg/escape-games-for-friend-and-family.svg"></img>
                                             </div>
                                             <div className="wcp-list-text uppercase  py-3 md:py-4  px-4 md:px-6 lg:px-8 bg-[#111111] rounded w-full"> 
                                                  <p className="golden-text text-xl ">FAMILY AND FRIENDS</p>
@@ -41,7 +41,7 @@ const WhoCanplay =()=>{
                                         </div>
                                         <div className="wcp-list flex items-center mb-6 md:mb-0">
                                             <div className="flex justify-center items-center wcp-list-icon p-4 rounded bg-golden">
-                                                <img src="/assets/svg/team-icon.svg"></img>
+                                                <img src="/assets/svg/escape-games-for-team.svg"></img>
                                             </div>
                                             <div className="wcp-list-text uppercase  py-3 md:py-4  px-4 md:px-6 lg:px-8 bg-[#111111] rounded w-full"> 
                                                  <p className="golden-text text-xl ">TEAM AND CO-WORKERS </p>
@@ -51,7 +51,7 @@ const WhoCanplay =()=>{
                                 <div className="wcp-list-box w-full md:w-[47%] lg:w-[42%]"> 
                                          <div className="wcp-list flex items-center mb-6 md:mb-8 lg:mb-10">
                                             <div className="flex justify-center items-center wcp-list-icon p-4 rounded bg-golden">
-                                                <img src="/assets/svg/fn-icon.svg"></img>
+                                                <img src="/assets/svg/escape-games-for-dventurers.svg"></img>
                                             </div>
                                             <div className="wcp-list-text uppercase  py-3 md:py-4  px-4 md:px-6 lg:px-8 bg-[#111111] rounded w-full"> 
                                                  <p className="golden-text text-xl ">ADVENTURERS</p>
@@ -59,7 +59,7 @@ const WhoCanplay =()=>{
                                         </div>
                                         <div className="wcp-list flex items-center mb-6 md:mb-8 lg:mb-10">
                                             <div className="flex justify-center items-center wcp-list-icon p-4 rounded bg-golden ">
-                                                <img src="/assets/svg/parental-control.svg"></img>
+                                                <img src="/assets/svg/escape-games-for-event-parties.svg"></img>
                                             </div>
                                             <div className="wcp-list-text uppercase  py-3 md:py-4  px-4 md:px-6 lg:px-8 bg-[#111111] rounded w-full"> 
                                                  <p className="golden-text text-xl ">EVENT PARTICIPANTS</p>
@@ -67,7 +67,7 @@ const WhoCanplay =()=>{
                                         </div>
                                         <div className="wcp-list flex items-center mb-0">
                                             <div className="flex justify-center items-center wcp-list-icon p-4 rounded bg-golden">
-                                                <img src="/assets/svg/team-icon.svg"></img>
+                                                <img src="/assets/svg/escape-games-for-tourist.svg"></img>
                                             </div>
                                             <div className="wcp-list-text uppercase  py-3 md:py-4  px-4 md:px-6 lg:px-8 bg-[#111111] rounded w-full"> 
                                                  <p className="golden-text text-xl ">TOURISTS AND TRAVELERS</p>
