@@ -18,8 +18,8 @@ const list=[
     },
     {
         "id":3,
-        "event_name":"Family Events",
-        "event_slug":"family-events"
+        "event_name":"FAMILY FUN ACTIVITIES",
+        "event_slug":"family-fun-activity"
        
     },
     {
@@ -62,6 +62,24 @@ const list=[
         "id":10,
         "event_name":"Graduation Party",
         "event_slug":"graduation-party"
+       
+    },
+    {
+        "id":11,
+        "event_name":"PROPOSAL PARTY",
+        "event_slug":"proposal-party"
+       
+    },
+    {
+        "id":12,
+        "event_name":"DATE NIGHT / NIGHT OUT",
+        "event_slug":"date-night"
+       
+    },
+    {
+        "id":13,
+        "event_name":"GENDER REVEAL PARTY",
+        "event_slug":"gender-reveal-party"
        
     }
 

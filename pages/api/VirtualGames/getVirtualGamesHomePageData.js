@@ -15,9 +15,9 @@ export const getVirtualGamesHomePageData=()=>{
                         
                         "pagetitle":"All Virtual Escape Games",
                         "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today.",
-                        "totalLocations": "28",
-                        "totalUniqueGames": "11",
-                        "totalFiveStarReview": "60k+",
+                        "totalLocations": "16",
+                        "totalUniqueGames": "17",
+                        "totalFiveStarReview": "63k+",
                         "totalPlayerEscaped": "90k+",
                         "coverimageL":"/assets/location-hero-bg.jpg",
                         "coverimageM":"/assets/location-hero.jpg"

@@ -12,9 +12,14 @@ const PlaningEventCarousel=(props)=>{
     
   }
   const showDescription=(description)=>{
-    const cutDescription=description.slice(0, 110)+" ...";
-    return cutDescription
-} 
+    if(description.length>144){
+      const cutDescription=description.slice(0, 130)+" ...";
+      return cutDescription
+    }
+ 
+    return description
+    
+}
     const responsive = {
         desktoplg: {
             breakpoint: { max: 4000, min: 1440 },

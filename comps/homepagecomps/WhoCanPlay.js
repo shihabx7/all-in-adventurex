@@ -17,7 +17,7 @@ const WhoCanplay =()=>{
             <div className="max-w-7xl mx-auto px-4 relative z-40">
                     <TitleSeparator title='WHO CAN PLAY AN ESCAPE ROOM' color='golden-text' weight='font-bold'/>
                     <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-12 lg:mb-16">
-                         <p className="text-gray-200 md:px-8">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                         <p className="text-gray-200 md:px-8">Escape rooms are perfect for having interactive adventures and fun with your friends, family, kids or even a team building exercise with your co-workers</p>
                      </div>
                      <div className="wcp-row">
                         <div className="wcp-list-container mb-4 md:mb-8 lg:mb-12 py-6 md:py-8 px-6 lg:py-12 lg:px-10 bg-[#080808] rounded">
@@ -28,7 +28,7 @@ const WhoCanplay =()=>{
                                                 <img src="/assets/svg/fn-icon.svg"></img>
                                             </div>
                                             <div className="wcp-list-text uppercase  py-3 md:py-4  px-4 md:px-6 lg:px-8 bg-[#111111] rounded w-full"> 
-                                                 <p className="golden-text text-xl">KIDS AND CHILDREN </p>
+                                                 <p className="golden-text text-xl">KIDS AND CHILDREN</p>
                                             </div>
                                         </div>
                                         <div className="wcp-list flex items-center mb-6 md:mb-8 lg:mb-10">
@@ -36,7 +36,7 @@ const WhoCanplay =()=>{
                                                 <img src="/assets/svg/parental-control.svg"></img>
                                             </div>
                                             <div className="wcp-list-text uppercase  py-3 md:py-4  px-4 md:px-6 lg:px-8 bg-[#111111] rounded w-full"> 
-                                                 <p className="golden-text text-xl ">FAMILY AND FRIENDS </p>
+                                                 <p className="golden-text text-xl ">FAMILY AND FRIENDS</p>
                                             </div>
                                         </div>
                                         <div className="wcp-list flex items-center mb-6 md:mb-0">
@@ -54,7 +54,7 @@ const WhoCanplay =()=>{
                                                 <img src="/assets/svg/fn-icon.svg"></img>
                                             </div>
                                             <div className="wcp-list-text uppercase  py-3 md:py-4  px-4 md:px-6 lg:px-8 bg-[#111111] rounded w-full"> 
-                                                 <p className="golden-text text-xl ">KIDS AND CHILDREN </p>
+                                                 <p className="golden-text text-xl ">ADVENTURERS</p>
                                             </div>
                                         </div>
                                         <div className="wcp-list flex items-center mb-6 md:mb-8 lg:mb-10">
@@ -62,7 +62,7 @@ const WhoCanplay =()=>{
                                                 <img src="/assets/svg/parental-control.svg"></img>
                                             </div>
                                             <div className="wcp-list-text uppercase  py-3 md:py-4  px-4 md:px-6 lg:px-8 bg-[#111111] rounded w-full"> 
-                                                 <p className="golden-text text-xl ">FAMILY AND FRIENDS </p>
+                                                 <p className="golden-text text-xl ">EVENT PARTICIPANTS</p>
                                             </div>
                                         </div>
                                         <div className="wcp-list flex items-center mb-0">
@@ -70,7 +70,7 @@ const WhoCanplay =()=>{
                                                 <img src="/assets/svg/team-icon.svg"></img>
                                             </div>
                                             <div className="wcp-list-text uppercase  py-3 md:py-4  px-4 md:px-6 lg:px-8 bg-[#111111] rounded w-full"> 
-                                                 <p className="golden-text text-xl ">TEAM AND CO-WORKERS </p>
+                                                 <p className="golden-text text-xl ">TOURISTS AND TRAVELERS</p>
                                             </div>
                                         </div>
                                 </div>
@@ -79,20 +79,16 @@ const WhoCanplay =()=>{
                         </div>
                          <div className="wcp-info px-4">
                                
-                                <p className="text-gray-200 lg:text-lg mb:4">Once you complete your purchase you will be sent an email with the booking codes. 
-                                When making your booking you can give the codes to the booking agent.</p>
+                                <p className="text-gray-200 lg:text-lg mb:4">For your health and safety, all bookings will be private room bookings regardless of your group size!</p>
                                 <div className="flex  lg:text-lg text-gray-300 mt-4">
                                     <span className="block mt-1 w-6 md:w-8"><img src="/assets/svg/star-bullet.svg"></img></span>
-                                    <span className="block w-[90%]">Kids and children age 7+ can play when they're accompanied by a guardian age 18+</span>
+                                    <span className="block w-[90%]">All our escape rooms are great for first-time Escape Roomers and are the most kids friendly escape rooms.</span>
                                 </div>
                                 <div className="flex  lg:text-lg text-gray-300 mt-3">
                                     <span className="block mt-1 w-6 md:w-8"><img src="/assets/svg/star-bullet.svg"></img></span>
-                                    <span className="block w-[90%]">All our locations are wheelchair accessible.</span>
+                                    <span className="block w-[90%]">At All In Adventures, we can cater to over 75+ people at a time in most locations for holiday parties, team building, birthday parties, summer camps, school educational outings or other large events.</span>
                                 </div>
-                                <div className="flex  lg:text-lg text-gray-300 mt-3">
-                                    <span className="block mt-1 w-6 md:w-8"><img src="/assets/svg/star-bullet.svg"></img></span>
-                                    <span className="block w-[90%]">Car parking facility available in our location at the mall.</span>
-                                </div>
+                                
                                
                          </div>
                      </div>

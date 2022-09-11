@@ -9,9 +9,14 @@ const VirtualCarousel=({virtualgames})=>{
     
   }
   const showDescription=(description)=>{
-    const cutDescription=description.slice(0, 110);
-    return cutDescription
-} 
+    if(description.length>144){
+      const cutDescription=description.slice(0, 144)+" ...";
+      return cutDescription
+    }
+ 
+    return description
+    
+}
 
  // console.log("virtual car")
   //console.log(virtualgames)

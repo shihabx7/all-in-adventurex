@@ -26,10 +26,15 @@ const InpersonCarousel=(props)=>{
             });
           }
     
-    const showDescription=(description)=>{
-        const cutDescription=description.slice(0, 100);
-        return cutDescription
-    }
+          const showDescription=(description)=>{
+            if(description.length>144){
+              const cutDescription=description.slice(0, 144)+" ...";
+              return cutDescription
+            }
+         
+            return description
+            
+        }
     const responsive = {
         desktoplg: {
             breakpoint: { max: 4000, min: 1640 },

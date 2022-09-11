@@ -19,8 +19,13 @@ const PysicalCarousel=(props)=>{
     });
   }
   const showDescription=(description)=>{
-    const cutDescription=description.slice(0, 100);
-    return cutDescription
+    if(description.length>144){
+      const cutDescription=description.slice(0, 144)+" ...";
+      return cutDescription
+    }
+ 
+    return description
+    
 } 
     const responsive = {
         desktoplg: {

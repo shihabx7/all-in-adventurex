@@ -23,7 +23,7 @@ const LocActivity=(props)=>{
         locname=locname.join(' ')
         return locname+", "+st
     }
-    //console.log(locname)
+    
     /* custom breadcum code */
  
     /* customizing breadcum */

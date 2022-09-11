@@ -13,11 +13,11 @@ export const getAllEvents=()=>{
           "pagedata": {
                         "pagetitle":"ALL GROUP EVENTS AND PARTIES",
                         "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
-                         "totalLocation":"28",
-                        "totalLocations": "28",
-                        "totalUniqueGames": "11",
-                        "totalFiveStarReview": "60k+",
-                        "totalPlayerEscaped": "90k+",
+                         "totalLocation":"26",
+                        "totalLocations": "26",
+                        "totalUniqueGames": "17",
+                        "totalFiveStarReview": "750k+",
+                        "totalPlayerEscaped": "9M+",
                         "coverimageL":"/assets/home-benar-bg.jpg",
                         "coverimageM":"/assets/home-hero.jpg"
           },
@@ -54,9 +54,9 @@ export const getAllEvents=()=>{
         },
         {
           "id":5,
-          "event_name":"Parties & Events For Families",
+          "event_name":"FAMILY FUN ACTIVITIES",
           "event_desc":"Select the number of participants fill out the details. fill out the number of details.",
-          "event_slug":"family-events",
+          "event_slug":"family-fun-activity",
           "event_cover_image":"/assets/event-cover-4.jpg",
       },
       {
@@ -92,6 +92,27 @@ export const getAllEvents=()=>{
   "event_name":"Graduation Party",
   "event_desc":"Select the number of participants fill out the details. fill out the number of details.",
   "event_slug":"graduation-party",
+  "event_cover_image":"/assets/event-cover-2.jpg",
+},
+{
+  "id":11,
+  "event_name":"PROPOSAL PARTY",
+  "event_desc":"Select the number of participants fill out the details. fill out the number of details.",
+  "event_slug":"proposal-party",
+  "event_cover_image":"/assets/event-cover-2.jpg",
+},
+{
+  "id":12,
+  "event_name":"DATE NIGHT / NIGHT OUT",
+  "event_desc":"Select the number of participants fill out the details. fill out the number of details.",
+  "event_slug":"date-night",
+  "event_cover_image":"/assets/event-cover-2.jpg",
+},
+{
+  "id":13,
+  "event_name":"GENDER REVEAL PARTY",
+  "event_desc":"Select the number of participants fill out the details. fill out the number of details.",
+  "event_slug":"gender-reveal-party",
   "event_cover_image":"/assets/event-cover-2.jpg",
 },
         

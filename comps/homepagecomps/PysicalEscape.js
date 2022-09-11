@@ -16,9 +16,9 @@ const PysicalEscape=(props)=>{
           
         
         <div className="max-w-7xl mx-auto pt-4 md:pt-8 px-4 relative z-20 ">
-             <TitleSeparator title='OTHERS PHYSICAL GAMES' color='golden-text' weight='font-bold'/>
+             <TitleSeparator title='IN PERSON OTHER GAMES' color='golden-text' weight='font-bold'/>
              <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-12 lg:mb-16">
-                    <p className="text-gray-200 md:px-8">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                    <p className="text-gray-200 md:px-8">Many of our locations offer additional fun activities that can double up your adventure experience. Simply come with the desire to play more!</p>
                 </div>
         </div>
         <div className="slider-box pb-4 md:pb-8 relative">  

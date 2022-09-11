@@ -25,7 +25,7 @@ const InpersonEscapeSlider =(props)=>{
         <div className="max-w-7xl mx-auto pt-16 md:pt-28 px-4 z-20 relative">
              <TitleSeparator title='IN PERSON ESCAPE ROOMS' color='golden-text' weight='font-bold'/>
              <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-16">
-                    <p className="text-gray-200 md:px-8">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                    <p className="text-gray-200 md:px-8">Team up with your friends, family, kids (age 6+) or co-workers for an adrenaline filled 50-60 minutes real life immersive escape game experience!</p>
                 </div>
         </div>
         <div className="slider-box pb-4 md:pb-8 relative">  
