@@ -29,7 +29,7 @@ const VirtualEscapeSlider=({virtualgames})=>{
         </div>
        <div className="view-all flex justify-center pt-8 md:pt-12 lg:pt-16">
             <Link href="/virtual-games/"> 
-              <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all virtual games</span> <FaAngleRight/></a>
+              <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all virtual / remote games</span> <FaAngleRight/></a>
             </Link>
          </div>
     </div>

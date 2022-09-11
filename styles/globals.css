@@ -410,8 +410,8 @@ max-width:140px;
   border: none;
 }
 .event-card:hover{
-  box-shadow: 1px 1px 16px #B91B1B;
-  border: none;
+  box-shadow: 1px 1px 16px rgba(0,0,0,0.2);
+  border: 1px solid red;
 
 }
 .event-card .card-game-desc {

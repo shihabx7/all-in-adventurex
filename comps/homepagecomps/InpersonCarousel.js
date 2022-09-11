@@ -107,14 +107,14 @@ const InpersonCarousel=(props)=>{
                             <div className="card-head flex justify-between items-center p-4 pb-8">
                                 <div className="card-info">
                                     <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm">{inpersongame.type}</span>  </p>
-                                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm">{inpersongame.age}</span>  </p> 
+                                    <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm">{inpersongame.age} (6+)</span>  </p> 
                                     <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-time.svg"></img></span><span className="text-sm">{inpersongame.duration} Minutes</span>  </p>
                                     <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm">{inpersongame.minplayers}-{inpersongame.maxplayers} Players</span>  </p>
                                 </div>
                                 <div className="card-ribbon">
                                         <div className="inline-block text-center py-2 px-4 bg-red-600">
                                             <p className="text-lg text-white">FROM</p>
-                                            <p className="text-3xl text-white font-bold">{inpersongame.price}</p>
+                                            <p className="text-2xl md:text-3xl text-white font-bold">${inpersongame.price}</p>
                                         </div>
                                 </div>
                             </div>

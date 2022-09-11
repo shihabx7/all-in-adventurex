@@ -29,7 +29,7 @@ const HomeReviewSlider=({reviews})=>{
     </div>
     <div className="view-all flex justify-center pt-8 md:pt-12 lg:pt-16">
         <Link href="/testimonials/"> 
-          <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>See all reviews</span> <FaAngleRight/></a>
+          <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>See more customer testimonials</span> <FaAngleRight/></a>
         </Link>
      </div>
 </div>

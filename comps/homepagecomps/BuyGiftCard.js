@@ -36,7 +36,7 @@ const BuyGiftCard=(props)=>{
                 <img src="/assets/Compas-brown.png"></img>
             </div>
             <div className="max-w-7xl mx-auto px-4 z-30">
-                    <TitleSeparator title='ADVENTURE GIFT CARD' color='golden-text' weight='font-bold'/>
+                    <TitleSeparator title='All IN ADVENTURES GIFT CARDS' color='golden-text' weight='font-bold'/>
                     <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-12 lg:mb-16">
                          <p className="text-gray-200 md:px-8">Whether it's someone's birthday, anniversary or a holiday such as Christmas - an All In Adventures Gift Card is a perfect present for any occasion.</p>
                      </div>
@@ -63,11 +63,11 @@ const BuyGiftCard=(props)=>{
                                 <div className="gift-btn-box mt-8">
                                     { 
                                         props.bookingData &&
-                                        <button onClick={()=>openBooking(props.bookingData.shortname,bkdata())} className="bg-red-600  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">BUY GIFT CARD</button>
+                                        <button onClick={()=>openBooking(props.bookingData.shortname,bkdata())} className="bg-red-600  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">BUY GIFT CARDS</button>
                                     }
                                     { 
                                        !props.bookingData &&
-                                        <button onClick={()=>showLocation()} className=" bg-red-600 hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">BUY GIFT CARD</button>
+                                        <button onClick={()=>showLocation()} className=" bg-red-600 hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">BUY GIFT CARDS</button>
                                     }
                                     {
                                         props.locationslug &&

@@ -34,7 +34,7 @@ const PysicalEscape=(props)=>{
             {
             !props.locationslug &&
               <Link href={"/activities#others-physical-games"}> 
-              <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all others physical games</span> <FaAngleRight/></a>
+              <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all in person other games</span> <FaAngleRight/></a>
             </Link>
            }
             

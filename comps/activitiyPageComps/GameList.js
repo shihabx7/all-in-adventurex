@@ -51,7 +51,7 @@ const GameList=(props)=>{
                                  <div className="all-game-list-bottom">
                                         <div className=" text-center md:text-left">
                                           <h3 className="card-game-title text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-white">{activity.activity_name}</h3>
-                                          <p className="text-gray-200 lg:text-lg mx-auto md:mx-0 max-w-[490px]">{activity.activity_desc}
+                                          <p className="text-gray-200 lg:text-lg mx-auto md:mx-0 max-w-[700px]">{activity.activity_desc}
                                        </p>
                                          </div>
                                          <div className="card-game-link mt-4 text-left">

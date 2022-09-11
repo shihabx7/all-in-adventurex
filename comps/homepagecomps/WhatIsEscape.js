@@ -45,24 +45,24 @@ const WhatIsEscape=()=>{
                     <img className="block md:hidden" src="/assets/vintage-paper-v.png"></img>
                     <div className="absolute what-is-container z-20 w-full h-full top-0 left-0 flex flex-col md:flex-row justify-center space-y-4 sm:space-y-8 md:space-y-0 md:justify-between items-center md:py-0 px-8 md:px-[10%]"> 
                           {/* content 1 */}
-                          <div className="what-is content md:max-w-[48%] lg:max-w-[40%] text-center"> 
+                          <div className="what-is content md:max-w-[48%] lg:max-w-[44%] text-center"> 
                             <h2 className=" text-lg md:text-xl lg:text-[24px] font-bold pb-1 md:pb-3 lg:pb-4">ABOUT ALL IN ADVENTURES</h2>
                             <p className="text-sm md:text-base lg:text-lg">At All In Adventures (formerly Mystery Room), we strive to be the leader in providing an interactive and immersive escape room adventure through exceptional guest service, game experience and value.</p>
                              <div className="video-play-btn flex justify-center my-3 md:my-6 lg:my-8"> 
-                                        <div className="paly-btn play-lt flex space-x-2 items-center py-3 md:py-4  px-6 md:px-6 lg:px-8 rounded font-semibold">
+                                    <div className="paly-btn play-rt flex space-x-2 items-center py-3 md:py-4  px-6 md:px-6 lg:px-8 rounded font-semibold">
                                                 <span className="text-lg md:text-xl lg:text-2xl"> <FaPlay/> </span>
                                                 <span className="text-sm md:text-base">PLAY TEASER VIDEO</span>
                                             </div> 
                             </div>
                             <div className="view-all flex justify-center">
                                  <Link href="#"> 
-                                  <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-600 hover:text-red-700"><span>LEARN MORE</span> <FaAngleRight/></a>
+                                  <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-600 hover:text-red-700"><span>Learn more</span> <FaAngleRight/></a>
                                  </Link>
                           </div>
 
                         </div>
                         {/* content 2 */}
-                        <div className="what-is what-is-2 content md:max-w-[48%] lg:max-w-[40%] text-center"> 
+                        <div className="what-is what-is-2 content md:max-w-[48%] lg:max-w-[44%] text-center"> 
                             <h2 className="text-lg md:text-xl lg:text-[24px] font-bold pb-1 md:pb-3 lg:pb-4">WHAT IS AN ESCAPE ROOM</h2>
                             <p className="text-sm md:text-base lg:text-lg">An escape room is where 2-10 players team up with their friends, family or co-workers for an adrenaline filled 50-60 minute immersive experience. They must find hidden clues, solve puzzles, crack codes and escape.</p>
                              <div className="video-play-btn flex justify-center my-3 md:my-6 lg:my-8"> 
@@ -73,7 +73,7 @@ const WhatIsEscape=()=>{
                             </div>
                             <div className="view-all flex justify-center">
                                  <Link href="#"> 
-                                  <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-600 hover:text-red-700"><span>LEARN MORE</span> <FaAngleRight/></a>
+                                  <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-600 hover:text-red-700"><span>Learn more</span> <FaAngleRight/></a>
                                  </Link>
                           </div>
 

@@ -154,7 +154,7 @@ export const getAllActivity=()=>{
                     "max_player":8,
                     "price":28,
                     "duration":60,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
+                    "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
                     "activity_slug":"superheros-adventure",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                     
