@@ -337,6 +337,36 @@ const eventIndData={
                },
 },
 //********************************************************date-night end */
+//*******************************************************private-party*/
+"private-party":{
+
+  "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-private-party-hero.jpg",
+  "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-private-party-hero.jpg",
+  "coverimageM_alt":"allinadventures-events-private-party",
+  "price":"40",
+   "duration":"40",
+  "max_players":"16",
+  "min_players":"4",
+
+ "pagemeta":{
+
+   "matatilte":"title",
+   "metakeyword":"keywords",
+   "metadescription":"metadescription"
+ },
+
+  "eventdata":{
+   "why_book":"Welcome to the world of adventure. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
+   "why_book_img":"/assets/event-dt-img1.jpg",
+   "offer":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
+   "offer_img":"/assets/event-dt-img2.jpg",
+   "what_expect":"You and yer mateys need to solve the mystery and escape the island before they return. Or it’s off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
+   "what_expect_img":"/assets/event-dt-img3.jpg",
+   "videoid":"pfdyF_d4Z40"
+  
+   },
+},
+//********************************************************date-night end */
 //********************************************************reunion-party*/
 "reunion-party":{
 

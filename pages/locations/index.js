@@ -171,7 +171,7 @@ return (
     {/* ============Location list end=============*/}
 
     </div>
-   <Footer/>
+   <Footer locationlist={states}/>
     </>
    
 )
