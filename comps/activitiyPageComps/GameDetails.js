@@ -15,14 +15,14 @@ const GameDetails=(props)=>{
                         <div className="gme-dt-col order-2 md:order-1 md:w-[49%] lg:w-[45%]"> 
                             <div className="game-dt-title">
                                 <p className="md:text-lg text-[#938056] md:mb-1 uppercase">{props.activityname}</p>
-                                <GameTitleSeparator title="YOUR BACK STORY" color="golden-text" weight="font-bold"></GameTitleSeparator>
+                                <GameTitleSeparator title="THE STORYLINE" color="golden-text" weight="font-bold"></GameTitleSeparator>
 
                             </div>
                             <div className="game-dt-desc mt-4 md:mt-4 lg:mt-6">
                                 <p className="text-[#464646] md:text-[18px] lg:text-[20px]">{props.activitydata.story}</p>
                             </div>
                             <div className="game-dt-link mt-4 md:mt-4 lg:mt-6"> 
-                                    <GameDtBtn  label="I'VE READ ENOUGH! BOOK NOW" color="golden-text" weight="font-bold"/>
+                                    <GameDtBtn  label="SOUNDS GREAT! BOOK NOW" color="golden-text" weight="font-bold"/>
                             </div>
                         </div>
                         <div className="game-dt-col md:w-[49%] lg:w-[45%] order-1 mb-4 md:mb-0 md:order-2"> 
@@ -38,14 +38,14 @@ const GameDetails=(props)=>{
                         <div className="gme-dt-col md:w-[48%] lg:w-[45%]"> 
                             <div className="game-dt-title">
                             <p className="md:text-lg text-[#938056] md:mb-1 uppercase">{props.activityname}</p>
-                                <GameTitleSeparator title="THE SCENE" color="golden-text" weight="font-bold"></GameTitleSeparator>
+                                <GameTitleSeparator title="THE PLOT" color="golden-text" weight="font-bold"></GameTitleSeparator>
 
                             </div>
                             <div className="game-dt-desc mt-4 md:mt-4 lg:mt-6">
                                 <p className="text-[#464646] md:text-[18px] lg:text-[20px]">{props.activitydata.scene}</p>
                             </div>
                             <div className="game-dt-link mt-4 md:mt-4 lg:mt-6"> 
-                                    <GameDtBtn label="DON'T GIVE IT AWAY! BOOK NOW" />
+                                    <GameDtBtn label="VERY EXCITING! BOOK NOW" />
                             </div>
                         </div>
                         
@@ -63,7 +63,7 @@ const GameDetails=(props)=>{
                                 <p className="text-[#464646] md:text-[18px] lg:text-[20px]">{props.activitydata.mission}</p>
                             </div>
                             <div className="game-dt-link mt-4 md:mt-4 lg:mt-6"> 
-                                    <GameDtBtn  label="LET ME AT EM! BOOK NOW" />
+                                    <GameDtBtn  label="LET'S GET TO IT! BOOK NOW" />
                             </div>
                         </div>
                         <div className="game-dt-col md:w-[48%] lg:w-[45%] order-1 mb-4 md:mb-0 md:order-2"> 

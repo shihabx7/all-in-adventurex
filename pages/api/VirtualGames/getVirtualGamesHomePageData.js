@@ -1,8 +1,9 @@
 
-
+import { getTotal } from "../AllDataList/getTotal"
 export const getVirtualGamesHomePageData=()=>{
 
     const VirtualGamesHomePageData={
+        "locationlist":getTotal().locationlist,
         "pagemeta":{
 
             "matatilte":"title",
@@ -15,10 +16,10 @@ export const getVirtualGamesHomePageData=()=>{
                         
                         "pagetitle":"All Virtual Escape Games",
                         "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today.",
-                        "totalLocations": "16",
-                        "totalUniqueGames": "17",
-                        "totalFiveStarReview": "63k+",
-                        "totalPlayerEscaped": "90k+",
+                        "totalLocations": getTotal().totalLocations,
+                        "totalUniqueGames": getTotal().uniqueGames,
+                        "totalFiveStarReview": getTotal().totalReview,
+                        "totalPlayerEscaped": getTotal().toalPlayerEscape,
                         "coverimageL":"/assets/location-hero-bg.jpg",
                         "coverimageM":"/assets/location-hero.jpg"
           },

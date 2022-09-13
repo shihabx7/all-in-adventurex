@@ -10,7 +10,7 @@ export const getActivityData=(activitySlug)=>{
            
         "pagedata":{
             "pagetitle":activityDataset[activitySlug].activityname+" escape room",
-            "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
+            "pagesubtitle":activityDataset[activitySlug].pagesubtitle,
             "totalLocation":getTotal().totalLocations,
             "coverimageL":activityDataset[activitySlug].coverimageL,
             "coverimageM":activityDataset[activitySlug].coverimageM,
@@ -18,7 +18,7 @@ export const getActivityData=(activitySlug)=>{
             "totalLocations":26,
             "price":activityDataset[activitySlug].price,
             "duration":activityDataset[activitySlug].duration,
-            "max_players":activityDataset[activitySlug].min_players,
+            "max_players":activityDataset[activitySlug].max_players,
             "min_players":activityDataset[activitySlug].min_players,
             "activityname":activityDataset[activitySlug].activityname,
         },
@@ -37,10 +37,11 @@ const activityDataset={
   //============================================escape-from-alcatraz 1
     "escape-from-alcatraz":{
       "activityname":"Escape From Alcatraz",
-      "price":30,
-      "duration":60,
-      "max_players":12,
-      "min_players":2,
+      "pagesubtitle":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+      "price":"29.89",
+      "duration":"50",
+      "max_players":"10",
+      "min_players":"2",
       "coverimageL":"/assets/all-game-desktop-hero/allinadventures-escape-from-alcatraz.jpg",
       "coverimageM":"/assets/all-game-mobile-hero/allinadventures-escape-from-alcatraz.jpg",
       "coverimageM_alt":"escape from alcatraz allinadventures ",
@@ -52,12 +53,15 @@ const activityDataset={
         "metadescription":"metadescription"
       },
       "activitydata":{
-        "story":"Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
-        "storyimg":"/assets/game-story.png",
-        "scene":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-        "sceneimg":"/assets/game-scene.png",
-        "mission":"You and yer mateys need to solve the mystery and escape the island before they return. Or it’s off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
-        "missionimg":"/assets/game-mission.png",
+        "story":"The federal prison of Alcatraz, surrounded by the waters of San Francisco Bay, housed some of America's most dangerous and notorious felons. Escaping Alcatraz is no easy feat and the few that have tried were unsuccessful. As guards in the nation's strongest prison, it is your duty to uphold Alcatraz's stalwart reputation.",
+        "storyimg":"/assets/all-game-details/allinadventures-escape-from-alcatraz-storyline.png",
+        "storyimg_alt":"allinadventures-escape-from-alcatraz-storyline",
+        "scene":"After returning to his office, the Warden discovers that all ten keys to the prison have gone missing! He has summoned you and his most fearless guards to help find the missing keys before any prisoners use them to attempt an escape. Retrace the Warden's steps to find the keys and save Alcatraz from going into full lockdown.",
+        "sceneimg":"/assets/all-game-details/allinadventures-escape-from-alcatraz-plot.png",
+        "sceneimg_alt":"allinadventures-escape-from-alcatraz-plot",
+        "mission":"Prison protocol indicates that you have 50 minutes to locate and return all of the Warden's keys or the prison will have to go into lockdown. If you are able to find the keys in time, you will have to complete an additional investigation to find the prisoner who stole the keys and make sure they pay for their crime.",
+        "missionimg":"/assets/all-game-details/allinadventures-escape-from-alcatraz-mission.png",
+        "missionimg_alt":"allinadventures-escape-from-alcatraz-mission",
         "videoid":"pfdyF_d4Z40"
         
         },
@@ -87,15 +91,16 @@ const activityDataset={
             "img":"/assets/game-gl-5.jpg"
             }
             ]
-    },
+                           },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
     "treasure-island":{
-      "activityname":"Treasure Island",
-      "price":35,
-      "duration":50,
-      "max_players":10,
-      "min_players":2,
+      "activityname":"TREASURE ISLAND",
+      "pagesubtitle":"You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
+      "price":"29.89",
+      "duration":"50",
+      "max_players":"10",
+      "min_players":"2",
       "coverimageL":"/assets/all-game-desktop-hero/allinadventures-treasure-island.jpg",
       "coverimageM":"/assets/all-game-mobile-hero/allinadventures-treasure-island.jpg",
       "coverimageM_alt":"allinadventures treasure island",
@@ -107,12 +112,15 @@ const activityDataset={
         "metadescription":"metadescription"
       },
       "activitydata":{
-        "story":"Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
-        "storyimg":"/assets/game-story.png",
-        "scene":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-        "sceneimg":"/assets/game-scene.png",
-        "mission":"You and yer mateys need to solve the mystery and escape the island before they return. Or it’s off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
-        "missionimg":"/assets/game-mission.png",
+        "story":"Welcome aboard the vessel of the dread pirate Captain Jake Hawkins - the most feared pirate who has ever sailed the seven seas. Hawkins and his crew continue to loot and capture without remorse and you are no exception to his evil ways. You must find a way to break free from his clutches but take heed - your only way out may be to find a way in!",
+        "storyimg":"/assets/all-game-details/allinadventures-treasure-island-storyline.png",
+        "storyimg_alt":"allinadventures-treasure-island-storyline",
+        "scene":"After a long trek out at sea, you were captured by the captain and his crew. Hawkins has looted your ship and directed his crew to feed you to the sharks. However, in a rare show of kindness, Hawkins has given you a chance at mercy. He is looking for highly skilled crew members to man his ship and he is giving you the chance to prove your sea-worthiness.",
+        "sceneimg":"/assets/all-game-details/allinadventures-treasure-island-plot.png",
+        "sceneimg_alt":"allinadventures-treasure-island-plot",
+        "mission":"In order to survive, you have 50 minutes to prove to the crew that you are good enough to keep alive. Failure to follow the directions from the crew and you will be fed to the sharks! If you can prove you are worthy of Jake Hawkin's leadership, show him you can navigate these dangerous seas and a promotion may be in order for you!",
+        "missionimg":"/assets/all-game-details/allinadventures-treasure-island-mission.png",
+        "missionimg_alt":"allinadventures-treasure-island-mission",
         "videoid":"pfdyF_d4Z40"
         
         },
@@ -142,15 +150,16 @@ const activityDataset={
             "img":"/assets/game-gl-5.jpg"
             }
             ]
-    },
+                      },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure":{
       "activityname":"Superhero's Adventure",
-      "price":35,
-      "duration":50,
-      "max_players":10,
-      "min_players":2,
+      "pagesubtitle":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+      "price":"29.89",
+      "duration":"50",
+      "max_players":"10",
+      "min_players":"2",
       "coverimageL":"/assets/all-game-desktop-hero/allinadventures-superheros-adventure.jpg",
       "coverimageM":"/assets/all-game-mobile-hero/allinadventures-superheros-adventure.jpg",
       "coverimageM_alt":"allinadventures superheros adventure",
@@ -162,12 +171,15 @@ const activityDataset={
         "metadescription":"metadescription"
       },
       "activitydata":{
-        "story":"Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
-        "storyimg":"/assets/game-story.png",
-        "scene":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-        "sceneimg":"/assets/game-scene.png",
-        "mission":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
-        "missionimg":"/assets/game-mission.png",
+        "story":"Darkover City is home to the prestigious Grand Central Bank - housing and securing millions of dollars worth of gold. Superheroes across the universe have been called to protect the bank after its blueprint has mysteriously gone missing. You suspect the infamous Matador and his crew of minions have something to do with it.",
+        "storyimg":"/assets/all-game-details/allinadventures-superheros-adventure-storyline.png",
+        "storyimg_img":"allinadventures-superheros-adventure-storyline",
+        "scene":"Entrusted by the citizens of Darkover City, your team of superheroes rush to answer their call for help and work together to recover the stolen blueprint before it's too late. You must hurry because the Matador has now threatened to contaminate the gold and crash the stock market if you don't pay his hefty ransom.",
+        "sceneimg":"/assets/all-game-details/allinadventures-superheros-adventure-plot.png",
+        "sceneimg_alt":"allinadventures-superheros-adventure-plot",
+        "mission":"The Matador has hinted that he hid the blueprint in one of the city's streets, so his plan proceeds even if he is captured. You have 50 minutes to use your superpowers to recover the stolen blueprint and, if you have time, find a way to stop his plan before time runs out!",
+        "missionimg":"/assets/all-game-details/allinadventures-superheros-adventure-mission.png",
+        "missionimg_alt":"allinadventures-superheros-adventure-mission",
         "videoid":"pfdyF_d4Z40"
         
         },
@@ -202,10 +214,11 @@ const activityDataset={
     //============================================zombie-apocalypse4
     "zombie-apocalypse":{
       "activityname":"Zombie Apocalypse",
-      "price":35,
-      "duration":50,
-      "max_players":10,
-      "min_players":2,
+      "pagesubtitle":"The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "price":"29.89",
+      "duration":"50",
+      "max_players":"10",
+      "min_players":"2",
       "coverimageL":"/assets/all-game-desktop-hero/allinadventures-zombie-apocalypse.jpg",
       "coverimageM":"/assets/all-game-mobile-hero/allinadventures-zombie-apocalypse.jpg",
       "coverimageM_alt":"allinadventures zombie apocalypse",
@@ -217,12 +230,15 @@ const activityDataset={
         "metadescription":"metadescription"
       },
       "activitydata":{
-        "story":"Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
-        "storyimg":"/assets/game-story.png",
-        "scene":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-        "sceneimg":"/assets/game-scene.png",
-        "mission":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
-        "missionimg":"/assets/game-mission.png",
+        "story":"Paris, France, the place where it all began - the zombification of the human race. At first, the virus was unstoppable; anyone who came into contact with the virus was guaranteed to turn. However, your recent research shows the virus has mutated into two weaker strains. Now is the time to develop a vaccine and save humanity.",
+        "storyimg":"/assets/all-game-details/allinadventures-zombie-apocalypse-storyline.png",
+        "storyimg_alt":"allinadventures-zombie-apocalypse-storyline",
+        "scene":"Based on your research, we now know the virus is weakening and it is time to take advantage of these lesser mutations. It seems that 49% of the population is immune to Strain A while 49% are immune to Strain B. Only 2% are immune to both strains. We must make a chemical test quickly to determine how to proceed with developing the vaccine.",
+        "sceneimg":"/assets/all-game-details/allinadventures-zombie-apocalypse-plot.png",
+        "sceneimg_alt":"allinadventures-zombie-apocalypse-plot",
+        "mission":"You have 50 minutes to look over your research and create a chemical test to determine the genetic traits of those who are naturally immune. If you are able to create this test in time, you can use it to develop a vaccine to distribute to the other 98% of the population. Can you finish development before attracting the zombie horde?",
+        "missionimg":"/assets/all-game-details/allinadventures-zombie-apocalypse-mission.png",
+        "missionimg_alt":"",
         "videoid":"pfdyF_d4Z40"
         
         },
@@ -257,10 +273,11 @@ const activityDataset={
       //============================================special-agent5
       "special-agent":{
         "activityname":"Special Agent",
-        "price":35,
-        "duration":50,
-        "max_players":10,
-        "min_players":2,
+        "pagesubtitle":"After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+        "price":"29.89",
+        "duration":"50",
+        "max_players":"10",
+        "min_players":"2",
         "coverimageL":"/assets/all-game-desktop-hero/allinadventures-special-agent.jpg",
         "coverimageM":"/assets/all-game-mobile-hero/allinadventures-special-agent.jpg",
         "coverimageM_alt":"allinadventures special agent",
@@ -272,12 +289,15 @@ const activityDataset={
           "metadescription":"metadescription"
         },
         "activitydata":{
-          "story":"Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
+          "story":"Spiegel was, at least in the underground criminal world, the most respected money launderer in the business. Recently, we were able to track him down and infiltrate his operations with one of our agents. This eventually led to his capture, but unfortunately for us, we discovered he had an entire global network of operations. It is now your sole mission to stop his laundering empire.",
           "storyimg":"/assets/game-story.png",
-          "scene":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
+          "storyimg_alt":"escape room",
+          "scene":"After the capture of Spiegel, one of his associates stepped up to fill his role - Danielson. It seems Danielson doesn't use the same distribution networks and doesn't forge the same notes. We will have to start over but we must do it quickly as Danielson knows we are closing in on him.",
           "sceneimg":"/assets/game-scene.png",
-          "mission":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
+          "sceneimg_alt":"escape room",
+          "mission":"We have two objectives here, agents: Figure out which note Danielson plans on forging and, if we complete that in time, find his new distribution network. Once we are able to accomplish those, that will stop Danielson from committing future laundering and destroy the foundation of his criminal empire.",
           "missionimg":"/assets/game-mission.png",
+          "missionimg_alt":"escape room",
           "videoid":"pfdyF_d4Z40"
           
           },
@@ -312,10 +332,11 @@ const activityDataset={
        //============================================hollywood-premiere 6
        "hollywood-premiere":{
         "activityname":"Hollywood Premiere",
-        "price":35,
-        "duration":50,
-        "max_players":10,
-        "min_players":2,
+        "pagesubtitle":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+        "price":"29.89",
+        "duration":"50",
+        "max_players":"10",
+        "min_players":"2",
         "coverimageL":"/assets/all-game-desktop-hero/allinadventures-hollywood-premiere.jpg",
         "coverimageM":"/assets/all-game-mobile-hero/allinadventures-hollywood-premiere.jpg",
         "coverimageM_alt":"allinadventures hollywood premiere",
@@ -327,12 +348,15 @@ const activityDataset={
           "metadescription":"metadescription"
         },
         "activitydata":{
-          "story":"Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
+          "story":'The newest and hottest game show, "Name That Celebrity", started back in 2019. Since then, contestants have been booked constantly as they await their chance to compete and win. Recently, they completed a casting call and chose a brand new round of contestants. Much to your surprise, you were chosen to compete!',
           "storyimg":"/assets/game-story.png",
-          "scene":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
+          "storyimg_alt":"escape room",
+          "scene":"You will have to use your keen senses and pop-culture knowledge to get ahead. Search the theater and see what clues might lead you to the identity of the hidden celebrity. However, that is only one part of the game. There is a much loved bonus round in which you will have to identify which booth the celebrity is hiding in!",
           "sceneimg":"/assets/game-scene.png",
-          "mission":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
+          "sceneimg_alt":"escape room",
+          "mission":"It's"+ 'time for "Name that Celebrity" ! You have 50 minutes to identify our secret celebrity and, if'+ "you're"+ 'really good, go on for the Bonus Prize by also correctly identifying which booth they are hiding in!',
           "missionimg":"/assets/game-mission.png",
+          "missionimg_alt":"escape room",
           "videoid":"pfdyF_d4Z40"
           
           },
@@ -366,11 +390,12 @@ const activityDataset={
       //============================================hollywood-premiere 6
        //============================================sherlocks-library 7
        "sherlocks-library":{
+        "pagesubtitle":"London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         "activityname":"Sherlock's Library",
-        "price":35,
-        "duration":50,
-        "max_players":10,
-        "min_players":2,
+        "price":"29.89",
+        "duration":"50",
+        "max_players":"10",
+        "min_players":"2",
         "coverimageL":"/assets/all-game-desktop-hero/allinadventures-sherlocks-library.jpg",
         "coverimageM":"/assets/all-game-mobile-hero/allinadventures-sherlocks-library.jpg",
         "coverimageM_alt":"allinadventures sherlocks library",
@@ -382,12 +407,15 @@ const activityDataset={
           "metadescription":"metadescription"
         },
         "activitydata":{
-          "story":"Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
+          "story":"While attending a concert with London's elite, Sherlock Holmes heard a tale of a scheme created by a secret aristocrat. They are laundering money, erasing gambling debts and selling lesser titles of nobility to unsavory characters. Holmes is preparing to play his violin, which he insists will help him think clearly to solve the current case.",
           "storyimg":"/assets/game-story.png",
-          "scene":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
+          "storyimg_alt":"escape room",
+          "scene":"Holmes is sending his partner, Watson, to investigate the office of an accountant favored by London's aristocracy. Watson has asked you to go undercover with him to find any clues linked to the case without being caught. Time is sensitive but you are sure there has to be evidence hidden or locked in a local office that will reveal the prime suspects.",
           "sceneimg":"/assets/game-scene.png",
-          "mission":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
+          "sceneimg_alt":"escape room",
+          "mission":"In 50 minutes, you must help Watson search this accountant's office to pick up any clues that will solve the case. Find the case files for all suspects in question and determine who the guilty culprit is and if they had help from a potential co-conspirator.",
           "missionimg":"/assets/game-mission.png",
+          "missionimg_alt":"escape room",
           "videoid":"pfdyF_d4Z40"
           
           },
@@ -422,10 +450,11 @@ const activityDataset={
        //============================================houdinis-magic-cell 8
        "houdinis-magic-cell":{
         "activityname":"Houdini's Magic Cell",
-        "price":35,
-        "duration":50,
-        "max_players":10,
-        "min_players":2,
+        "pagesubtitle":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+        "price":"29.89",
+        "duration":"50",
+        "max_players":"10",
+        "min_players":"2",
         "coverimageL":"/assets/all-game-desktop-hero/allinadventures-houdinis-magic-cell.jpg",
         "coverimageM":"/assets/all-game-mobile-hero/allinadventures-houdinis-magic-cell.jpg",
         "coverimageM_alt":"allinadventures-houdinis-magic-cell",
@@ -477,10 +506,11 @@ const activityDataset={
        //============================================magic-castle 9
        "magic-castle":{
         "activityname":"Magic Castle",
-        "price":35,
-        "duration":50,
-        "max_players":10,
-        "min_players":2,
+        "pagesubtitle":"Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
+        "price":"29.89",
+        "duration":"50",
+        "max_players":"10",
+        "min_players":"2",
         "coverimageL":"/assets/all-game-desktop-hero/allinadventures-magic-castle.jpg",
         "coverimageM":"/assets/all-game-mobile-hero/allinadventures-magic-castle.jpg",
         "coverimageM_alt":"allinadventures magic castle",
@@ -492,12 +522,15 @@ const activityDataset={
           "metadescription":"metadescription"
         },
         "activitydata":{
-          "story":"Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
+          "story":"The Magic Castle is known as one of the toughest entrance exams any wizard can take. Any aspiring wizard who wants to get out of the muggle world must take this exam. The waiting list spans years and you have just received your entrance letter giving you your chance at the test.",
           "storyimg":"/assets/game-story.png",
-          "scene":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
+          "storyimg_alt":"escape room",
+          "scene":"While it is exciting, you must take this test seriously. Failing this test means returning to the muggle world and getting put at the bottom of the waitlist. You have 60 minutes to take the exam and complete all tasks. Now is the time to show off all of your studying!",
           "sceneimg":"/assets/game-scene.png",
-          "mission":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
+          "storyimg_alt":"escape room",
+          "mission":"Pass the exam and earn your spot in the Magic Castle! Your exam is timed and the 60 minutes will be up before you know it. Listen closely to all directions and complete all tasks in time to secure your place.",
           "missionimg":"/assets/game-mission.png",
+          "missionimg_alt":"escape room",
           "videoid":"pfdyF_d4Z40"
           
           },
@@ -528,14 +561,15 @@ const activityDataset={
               }
               ]
       },
-      //============================================houdinis-magic-cell 9
+      //============================================magic-castle end 9
       //============================================black-ops 10
       "black-ops":{
         "activityname":"Black Ops",
-        "price":35,
-        "duration":50,
-        "max_players":10,
-        "min_players":2,
+        "pagesubtitle":"After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+        "price":"29.89",
+        "duration":"50",
+        "max_players":"10",
+        "min_players":"2",
         "coverimageL":"/assets/all-game-desktop-hero/allinadventures-black-ops.jpg",
         "coverimageM":"/assets/all-game-mobile-hero/allinadventures-black-ops.jpg",
         "coverimageM_alt":"allinadventures black ops",
@@ -547,12 +581,15 @@ const activityDataset={
           "metadescription":"metadescription"
         },
         "activitydata":{
-          "story":"Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
+          "story":"As a member of an elite military unit, you are no stranger to dangerous missions - this mission will be no different. Previous operations have allowed us to obtain all the evidence necessary to initiate the capture of the international arms dealer known as The Hawk. We have located the HQ of The Hawk and it is time to raid the bunker and bring The Hawk in for questioning.",
           "storyimg":"/assets/game-story.png",
+          "storyimg_alt":"escape room",
           "scene":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
           "sceneimg":"/assets/game-scene.png",
+          "sceneimg_alt":"escape room",
           "mission":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
           "missionimg":"/assets/game-mission.png",
+          "missionimg_alt":"escape room",
           "videoid":"pfdyF_d4Z40"
           
           },
@@ -582,14 +619,15 @@ const activityDataset={
               "img":"/assets/game-gl-5.jpg"
               }
               ]
-      },
+                 },
       //============================================black-ops 10
       //============================================lost-in-the-jungle 11
       "lost-in-the-jungle":{
         "activityname":"Lost in The jungle",
-        "price":35,
-        "duration":50,
-        "max_players":10,
+        "pagesubtitle":"After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+        "price":"39.95",
+        "duration":"60",
+        "max_players":5,
         "min_players":2,
         "coverimageL":"/assets/all-game-desktop-hero/allinadventures-lost-in-the-jungle.jpg",
         "coverimageM":"/assets/all-game-mobile-hero/allinadventures-lost-in-the-jungle.jpg",
@@ -602,12 +640,15 @@ const activityDataset={
           "metadescription":"metadescription"
         },
         "activitydata":{
-          "story":"Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
+          "story":"It was just a normal day in suburbia and you were with your friends getting ready to enjoy the weekend. One of your favorite things to do was to tell stories at night, and this night, you had a special story - one about animals coming to life and taking over the city. You had no idea what would come next…",
           "storyimg":"/assets/game-story.png",
-          "scene":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
+          "storyimg_alt":"escape room",
+          "scene":"During the middle of your story, you hear a strange knocking on your roof. You and your friends decide to investigate the noise and what you discover is unbelievable. Your story has come to life and all around you are bizarre animals and puzzles. You must pass the game to save yourself, and the future of humanity!",
           "sceneimg":"/assets/game-scene.png",
-          "mission":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
+          "sceneimg_alt":"escape room",
+          "mission":"You must outsmart the jungle! Prove you are worthy by beating the jungle creatures at their own game. Solve the puzzles, decipher the riddles, and put together clues and finish the game in time to put the world back in normal order.",
           "missionimg":"/assets/game-mission.png",
+          "missionimg_alt":"escape room",
           "videoid":"pfdyF_d4Z40"
           
           },
@@ -639,68 +680,15 @@ const activityDataset={
               ]
       },
       //============================================lost-in-the-jungle end 11
-      //============================================virtual-reality 12
-      "virtual-reality":{
-        "activityname":"Virtual Reality",
-        "price":35,
-        "duration":50,
-        "max_players":10,
-        "min_players":2,
-        "coverimageL":"/assets/all-game-desktop-hero/allinadventures-virtual-reality.jpg",
-        "coverimageM":"/assets/all-game-mobile-hero/allinadventures-virtual-reality.jpg",
-        "coverimageM_alt":"allinadventures virtual reality",
-        
-        "pagemeta":{
-    
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
-        "activitydata":{
-          "story":"Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
-          "storyimg":"/assets/game-story.png",
-          "scene":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-          "sceneimg":"/assets/game-scene.png",
-          "mission":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
-          "missionimg":"/assets/game-mission.png",
-          "videoid":"pfdyF_d4Z40"
-          
-          },
-          "activitygallery":[
-              {
-              "id":1,
-              "img":"/assets/game-gl-1.jpg"
-              },
-              {
-              "id":2,
-              "img":"/assets/game-gl-2.jpg"
-              },
-              {
-              "id":3,
-              "img":"/assets/game-gl-3.jpg"
-              },
-              {
-              "id":4,
-              "img":"/assets/game-gl-4.jpg"
-              },
-              {
-              "id":5,
-              "img":"/assets/game-gl-5.jpg"
-              },
-              {
-              "id":6,
-              "img":"/assets/game-gl-5.jpg"
-              }
-              ]
-      },
-      //============================================virtual-reality end 12
+      
        //============================================wizarding-school 13
        "wizarding-school":{
         "activityname":"Wizarding School",
-        "price":35,
-        "duration":50,
-        "max_players":10,
-        "min_players":2,
+        "pagesubtitle":"Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
+        "price":"39.95",
+        "duration":"60",
+        "max_players":"4",
+        "min_players":"2",
         "coverimageL":"/assets/all-game-desktop-hero/allinadventures-wizarding-school.jpg",
         "coverimageM":"/assets/all-game-mobile-hero/allinadventures-wizarding-school.jpg",
         "coverimageM_alt":"allinadventures wizarding school",
@@ -712,12 +700,15 @@ const activityDataset={
           "metadescription":"metadescription"
         },
         "activitydata":{
-          "story":"Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
+          "story":"Wizarding School is the most revered school for magic in the land. With an admission rate of only 1%, you were extremely lucky to get into the student. You were placed in a faculty that cares highly about their reputation and they won't allow anyone in the group who may cost them their standing. You want to live up to their expectations and it all starts with your first lesson - Potions!",
           "storyimg":"/assets/game-story.png",
-          "scene":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
+          "storyimg_alt":"escape room",
+          "scene":"You studied and studied for your lessons but failed to learn one thing - the layout of the school. On your way to your potions lesson, you must have taken a wrong turn and found your way into the office of the school's highest ranking wizard! Unfortunately for you, the door locked behind you and you must use all of your wizarding knowledge to escape!",
           "sceneimg":"/assets/game-scene.png",
-          "mission":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
+          "sceneimg_alt":"escape room",
+          "mission":"You studied right? RIGHT?! Oh, alright then, good! Use your knowledge of wizarding and escape this office! You must locate and solve all puzzles located in the wizard's office and get to class on time so your faculty doesn't lose points this semester!",
           "missionimg":"/assets/game-mission.png",
+          "missionimg_alt":"escape room",
           "videoid":"pfdyF_d4Z40"
           
           },
@@ -752,10 +743,11 @@ const activityDataset={
       //============================================locked-in-the-Lift 14
       "locked-in-the-lift":{
         "activityname":"Locked in the Lift",
-        "price":35,
-        "duration":50,
-        "max_players":10,
-        "min_players":2,
+        "pagesubtitle":"Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't…",
+        "price":"29.89",
+        "duration":"30",
+        "max_players":"4",
+        "min_players":"2",
         "coverimageL":"/assets/all-game-desktop-hero/allinadventures-locked-in-the-lift.jpg",
         "coverimageM":"/assets/all-game-mobile-hero/allinadventures-locked-in-the-lift.jpg",
         "coverimageM_alt":"allinadventures locked in the lift",
@@ -767,12 +759,15 @@ const activityDataset={
           "metadescription":"metadescription"
         },
         "activitydata":{
-          "story":"Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
+          "story":"As a famous actor in the 40's, you were given luxuries that most could imagine possessing. A fancy car? Check. Nice house? Check. Debt? Of course not. There was one place all VIPs wanted to visit - the luxurious hotel on Main St. and take the elusive lift to the second floor. You just received your invite in the mail - time to get ready!",
           "storyimg":"/assets/game-story.png",
-          "scene":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
+          "storyimg_alt":"escape room",
+          "scene":"You arrive at the hotels and cameras are flashing, the crowd is cheering, and fans are asking for your autograph. As you make your way into the hotel, you see the elevator and make your way in. As the elevator begins to ascend, you hear a loud crashing noise and the elevator comes to a hard stop. You are all alone and must find a way out!",
           "sceneimg":"/assets/game-scene.png",
-          "mission":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
+          "sceneimg_alt":"escape room",
+          "mission":"The emergency phone is out and no help is coming. You must remain calm and use logic to escape the trapped lift. But hurry up, the lift will only remain secure for 60 minutes. We don't want to find out what happens after that…",
           "missionimg":"/assets/game-mission.png",
+          "missionimg_alt":"escape room",
           "videoid":"pfdyF_d4Z40"
           
           },
@@ -969,4 +964,59 @@ const activityDataset={
               ]
       },
       //============================================beat-the-seat end 17
+      //============================================virtual-reality 12
+      "virtual-reality":{
+        "activityname":"Virtual Reality",
+        "price":35,
+        "duration":50,
+        "max_players":10,
+        "min_players":2,
+        "coverimageL":"/assets/all-game-desktop-hero/allinadventures-virtual-reality.jpg",
+        "coverimageM":"/assets/all-game-mobile-hero/allinadventures-virtual-reality.jpg",
+        "coverimageM_alt":"allinadventures virtual reality",
+        
+        "pagemeta":{
+    
+          "matatilte":"title",
+          "metakeyword":"keywords",
+          "metadescription":"metadescription"
+        },
+        "activitydata":{
+          "story":"Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
+          "storyimg":"/assets/game-story.png",
+          "scene":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
+          "sceneimg":"/assets/game-scene.png",
+          "mission":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
+          "missionimg":"/assets/game-mission.png",
+          "videoid":"pfdyF_d4Z40"
+          
+          },
+          "activitygallery":[
+              {
+              "id":1,
+              "img":"/assets/game-gl-1.jpg"
+              },
+              {
+              "id":2,
+              "img":"/assets/game-gl-2.jpg"
+              },
+              {
+              "id":3,
+              "img":"/assets/game-gl-3.jpg"
+              },
+              {
+              "id":4,
+              "img":"/assets/game-gl-4.jpg"
+              },
+              {
+              "id":5,
+              "img":"/assets/game-gl-5.jpg"
+              },
+              {
+              "id":6,
+              "img":"/assets/game-gl-5.jpg"
+              }
+              ]
+      },
+      //============================================virtual-reality end 12
   }
