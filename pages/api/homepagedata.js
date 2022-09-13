@@ -29,7 +29,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                  "minplayers":"2",
                                  "price":"29.89",
                                  "slug"  :"escape-from-alcatraz",
-                                 "bgimg" :"/assets/game-1.jpg"
+                                 "bgimg" :"/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg"
                                },
                                {
                                 "id":2,
@@ -43,7 +43,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                  "minplayers":"2",
                                  "price":"30",
                                  "slug"  :"treasure-island",
-                                 "bgimg" :"/assets/game-2.jpg"
+                                 "bgimg" :"/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg"
                                },
                                {
                                 "id":3,
@@ -57,7 +57,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                 "minplayers":"2",
                                 "price":"30",
                                 "slug"  :"superheros-adventure",
-                                "bgimg" :"/assets/game-3.jpg"
+                                "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
                                },
                                {
                                 "id":4,
@@ -71,7 +71,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                 "minplayers":"2",
                                 "price":"30",
                                 "slug"  :"zombie-apocalypse",
-                                "bgimg" :"/assets/game-4.jpg"
+                                "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
                                },
                                {
                                 "id":5,
@@ -85,7 +85,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                 "minplayers":"2",
                                 "price":"30",
                                 "slug"  :"special-agent",
-                                "bgimg" :"/assets/game-5.jpg"
+                                "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
                                },
                                {
                                 "id":6,
@@ -99,7 +99,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                 "minplayers":"2",
                                 "price":"30",
                                 "slug"  :"hollywood-premiere",
-                                "bgimg" :"/assets/game-2.jpg"
+                                "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
                                },
                                {
                                 "id":7,
@@ -113,7 +113,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                 "minplayers":"2",
                                 "price":"30",
                                 "slug"  :"sherlocks-library",
-                                "bgimg" :"/assets/game-3.jpg"
+                                "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
                                },
                                {
                                 "id":8,
@@ -127,7 +127,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                 "minplayers":"2",
                                 "price":"30",
                                 "slug"  :"houdinis-magic-cell",
-                                "bgimg" :"/assets/game-4.jpg"
+                                "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
                                },
                                {
                                 "id":9,
@@ -141,7 +141,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                 "minplayers":"2",
                                 "price":"30",
                                 "slug"  :"black-ops",
-                                "bgimg" :"/assets/game-4.jpg"
+                                "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
                                },
                                {
                                 "id":10,
@@ -155,7 +155,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                 "minplayers":"2",
                                 "price":"30",
                                 "slug"  :"lost-in-the-jungle",
-                                "bgimg" :"/assets/game-3.jpg"
+                                "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
                                },
                                {
                                 "id":11,
@@ -169,7 +169,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                 "minplayers":"2",
                                 "price":"30",
                                 "slug"  :"locked-in-the-lift",
-                                "bgimg" :"/assets/game-3.jpg"
+                                "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
                                },
                                {
                                 "id":12,
@@ -183,7 +183,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                 "minplayers":"2",
                                 "price":"30",
                                 "slug"  :"wizarding-school",
-                                "bgimg" :"/assets/game-3.jpg"
+                                "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
                                },
                                {
                                   
@@ -198,7 +198,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                 "minplayers":"4",
                                 "price":"42",
                                 "slug"  :"magic-castle",
-                                "bgimg" :"/assets/py-game-2.jpg"
+                                "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
                                }
 
                              ],
@@ -216,7 +216,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                   "minplayers":"1",
                                   "price":"5",
                                   "slug"  :"beat-the-seat",
-                                  "bgimg" :"/assets/py-game-1.jpg"
+                                  "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
                                  },
                                 {
 
@@ -231,7 +231,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                     "minplayers":"4",
                                     "price":"33",
                                     "slug"  :"game-show-room",
-                                    "bgimg" :"/assets/py-game-2.jpg"
+                                    "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
                                    },
                                 {
                                   
@@ -246,7 +246,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                     "minplayers":"2",
                                     "price":"20",
                                     "slug"  :"axe-throwing",
-                                    "bgimg" :"/assets/py-game-3.jpg"
+                                    "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
                                    },
                                 {
                                   
@@ -261,7 +261,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                 "minplayers":"1",
                                 "price":"8",
                                 "slug"  :"virtual-reality",
-                                "bgimg" :"/assets/py-game-1.jpg"
+                                "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
                                }
                               
                                 ],
