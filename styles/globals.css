@@ -60,11 +60,11 @@ opacity: 1 !important;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }/*-------------locmenux*/
-.loc-menu-grid{
+.loc-menu-grid,.footer-loc-col-mess{
   column-count: 4;
   column-gap: 16px;
 }
-.loc-menu-box{
+.loc-menu-box,.footer-loc-col-box-mess{
   margin: 0;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -72,6 +72,7 @@ opacity: 1 !important;
   margin-bottom: 12px;
   break-inside: avoid;
 }
+
 /*=========header design=========*/
 .logo img{
   max-width:92px;

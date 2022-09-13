@@ -1,4 +1,6 @@
-import { getLocationsPageData } from "./getLocationsPageData";
+
+
+import { getTotal } from "./AllDataList/getTotal";
 
  export const Homepagedata =  () => {
 
@@ -6,12 +8,12 @@ import { getLocationsPageData } from "./getLocationsPageData";
 
     const Homepagedata=
        {
-         "locationlist":getLocationsPageData().states,
+         "locationlist":getTotal().locationlist,
         "homeagedata": {
-                      "totalLocations": "26",
-                      "totalUniqueGames": "17",
-                      "totalFiveStarReview": "750K+",
-                      "totalPlayerEscaped": "9M+",
+                      "totalLocations": getTotal().totalLocations,
+                      "totalUniqueGames": getTotal().uniqueGames,
+                      "totalFiveStarReview": getTotal().totalReview,
+                      "totalPlayerEscaped": getTotal().toalPlayerEscape,
                       "subtitle":"Experience family and kids friendly escape rooms, game show rooms, beat the seat, axe throwing and VR games for all skill levels. We host the most exciting birthday parties, team building activities and private events."
         },
         "inpersongames":[
@@ -268,109 +270,111 @@ import { getLocationsPageData } from "./getLocationsPageData";
                                 "id":1,
                                 "category":"event",
                                  "type": "In person",
-                                 "title": "TEAM BUILDING",
-                                 "description": "This fun and exciting interactive form of team building will bring your corporate team closer!",
-                                 "slug"  :"team-building",
-                                 "bgimg" :"/assets/sl-event-1.jpg"
-                               },
-                               {
-                                "id":2,
-                                "category":"event",
-                                 "type": "In person",
                                  "title": "BIRTHDAY PARTIES",
                                  "description": "A perfect party venue for the young at heart. No matter your age, get an unforgettable adventure!",
                                  "slug"  :"birthday-party",
-                                 "bgimg" :"/assets/sl-event-2.jpg"
+                                 "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-birthday-party.jpg"
+                               },
+                              {
+                                "id":2,
+                                "category":"event",
+                                 "type": "In person",
+                                 "title": "TEAM BUILDING",
+                                 "description": "This fun and exciting interactive form of team building will bring your corporate team closer!",
+                                 "slug"  :"team-building",
+                                 "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-team-building.jpg"
                                },
                                {
                                 "id":3,
                                 "category":"event",
                                  "type": "In person",
-                                 "title": "FAMILY FUN ACTIVITIES",
-                                 "description": "A unique family fun activity with intense real-life puzzles where you have to work together to progress!",
-                                 "slug"  :"family-fun-activity",
-                                 "bgimg" :"/assets/sl-event-3.jpg"
+                                 "title": "CORPORATE EVENTS",
+                                 "description": "Instead of a dreary meeting on how to work effectively, why not take a crack at a puzzle?",
+                                 "slug"  :"corporate-events",
+                                 "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-corporate-events.jpg"
                                },
+                               
                                {
                                 "id":4,
                                 "category":"event",
                                  "type": "In person",
-                                 "title": "Bachelor Party",
-                                 "description": "There's no better way to bond with your bachelor party before the big day — no scandals, just nonstop thrills!",
-                                 "slug"  :"bachelor-party",
-                                 "bgimg" :"/assets/sl-event-4.jpg"
+                                 "title": "FAMILY FUN ACTIVITIES",
+                                 "description": "A unique family fun activity with intense real-life puzzles where you have to work together to progress!",
+                                 "slug"  :"family-fun-activity",
+                                 "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-family-fun-activities.jpg"
                                },
                                {
                                 "id":5,
                                 "category":"event",
                                  "type": "In person",
-                                 "title": "Bachelorette Party",
-                                 "description": "Fun-filled bachelorette party without any drama that will be something long remembered by everyone!",
-                                 "slug"  :"bachelorette-party",
-                                 "bgimg" :"/assets/sl-event-4.jpg"
+                                 "title": "Bachelor Party",
+                                 "description": "There's no better way to bond with your bachelor party before the big day — no scandals, just nonstop thrills!",
+                                 "slug"  :"bachelor-party",
+                                 "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-bachelor-party.jpg"
                                },
                                {
                                 "id":6,
                                 "category":"event",
                                  "type": "In person",
-                                 "title": "CORPORATE EVENTS",
-                                 "description": "Instead of a dreary meeting on how to work effectively, why not take a crack at a puzzle?",
-                                 "slug"  :"corporate-events",
-                                 "bgimg" :"/assets/sl-event-2.jpg"
+                                 "title": "Bachelorette Party",
+                                 "description": "Fun-filled bachelorette party without any drama that will be something long remembered by everyone!",
+                                 "slug"  :"bachelorette-party",
+                                 "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-bachelorette-party.jpg"
                                },
                                {
                                 "id":7,
                                 "category":"event",
                                  "type": "In person",
-                                 "title": "SCHOOL EVENTS / FIELD TRIPS",
-                                 "description": "Students exercise critical thinking and act to become the super-spies they see in the movies!",
-                                 "slug"  :"school-events",
-                                 "bgimg" :"/assets/sl-event-2.jpg"
+                                 "title": "PROPOSAL PARTY",
+                                 "description": "A distinctive way to propose marriage where the mystery game ends with the ring in the final clue box!",
+                                 "slug"  :"proposal-party",
+                                 "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-proposal-party.jpg"
                                },
                                {
                                 "id":8,
                                 "category":"event",
                                  "type": "In person",
-                                 "title": "Private Party",
-                                 "description": "Adventure awaits for all — your family, friends, office, indoor party, church group, fraternity or sorority.",
-                                 "slug"  :"private-party",
-                                 "bgimg" :"/assets/sl-event-2.jpg"
+                                 "title": "DATE NIGHT / NIGHT OUT",
+                                 "description": "Work together and find clues to solve the mystery that will ultimately strengthen your relationship!",
+                                 "slug"  :"date-night",
+                                 "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-date-night.jpg"
                                },
                                {
                                 "id":9,
                                 "category":"event",
                                  "type": "In person",
-                                 "title": "Reunion Party",
-                                 "description": "Each game is interactive and has engaging qualities that give your reunion party an epic adventure!",
-                                 "slug"  :"reunion-party",
-                                 "bgimg" :"/assets/sl-event-2.jpg"
+                                 "title": "Private Party",
+                                 "description": "Adventure awaits for all — your family, friends, office, indoor party, church group, fraternity or sorority.",
+                                 "slug"  :"private-party",
+                                 "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-private-party.jpg"
                                },
                                {
                                 "id":10,
                                 "category":"event",
                                  "type": "In person",
-                                 "title": "Graduation Party",
-                                 "description": "Graduation is such an exciting time, no matter your age and you deserve to celebrate it in a memorable way",
-                                 "slug"  :"graduation-party",
-                                 "bgimg" :"/assets/sl-event-2.jpg"
+                                 "title": "Reunion Party",
+                                 "description": "Each game is interactive and has engaging qualities that give your reunion party an epic adventure!",
+                                 "slug"  :"reunion-party",
+                                 "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-reunion-party.jpg"
                                },
                                {
                                 "id":11,
                                 "category":"event",
                                  "type": "In person",
-                                 "title": "PROPOSAL PARTY",
-                                 "description": "A distinctive way to propose marriage where the mystery game ends with the ring in the final clue box!",
-                                 "slug"  :"proposal-party",
-                                 "bgimg" :"/assets/sl-event-2.jpg"
+                                 "title": "Graduation Party",
+                                 "description": "Graduation is such an exciting time, no matter your age and you deserve to celebrate it in a memorable way",
+                                 "slug"  :"graduation-party",
+                                 "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-graduation-party.jpg"
                                },
+                               
                                {
                                 "id":12,
                                 "category":"event",
                                  "type": "In person",
-                                 "title": "DATE NIGHT / NIGHT OUT",
-                                 "description": "Work together and find clues to solve the mystery that will ultimately strengthen your relationship!",
-                                 "slug"  :"date-night",
-                                 "bgimg" :"/assets/sl-event-2.jpg"
+                                 "title": "SCHOOL EVENTS / FIELD TRIPS",
+                                 "description": "Students exercise critical thinking and act to become the super-spies they see in the movies!",
+                                 "slug"  :"school-events",
+                                 "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-school-event.jpg"
                                },
                                {
                                 "id":13,
@@ -379,7 +383,7 @@ import { getLocationsPageData } from "./getLocationsPageData";
                                  "title": "GENDER REVEAL PARTY",
                                  "description": "Instead of simply sharing the news of your baby's gender, why not a fun way to announce it through puzzles?",
                                  "slug"  :"gender-reveal-party",
-                                 "bgimg" :"/assets/sl-event-2.jpg"
+                                 "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-gender-reveal-party-event.jpg"
                                },
 
 
@@ -398,7 +402,7 @@ import { getLocationsPageData } from "./getLocationsPageData";
                         "price":"20",
                         
                         "slug"  :"virtual-games/virtual-game-show-room",
-                        "bgimg" :"/assets/vr-game-1.jpg"
+                        "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg"
                        },
                        {
                         "id":2,
@@ -412,7 +416,7 @@ import { getLocationsPageData } from "./getLocationsPageData";
                         "minplayers":"2",
                         "price":"20",
                         "slug"  :"virtual-games",
-                        "bgimg" :"/assets/vr-game-2.jpg"
+                        "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game.jpg"
                        },
                      
                              ],

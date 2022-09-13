@@ -1,5 +1,5 @@
 import Link from "next/link"
-const UseFullLinks=()=>{
+const UseFullLinks=(props)=>{
 
     return(
         <> <h3 className='golden-text text-2xl font-bold text-center'>USEFUL LINKS</h3>
@@ -12,48 +12,85 @@ const UseFullLinks=()=>{
         <div className='hidden lg:block text-gray-400 text-2xl'> 
         <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>
-        <div className='usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2'> 
-            <Link href="/activities"> 
-                <a className='text-gray-400 text-sm  lg:text-base '>Escape Games</a>
-            </Link>
+        <div className='usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2'>
+            {
+                props.locationslug &&
+                <Link href={"/"+props.locationslug+"/activities"}> 
+                     <a className='text-gray-400 text-sm  lg:text-base '>Escape Games</a>
+             </Link>
+            } 
+             {
+                !props.locationslug &&
+                <Link href="/activities"> 
+                     <a className='text-gray-400 text-sm  lg:text-base '>Escape Games</a>
+                 </Link>
+            } 
+            
         </div>
         <div className='hidden lg:block text-gray-400 text-2xl'> 
         <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>
         <div className='usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2'> 
-            <Link href="/events"> 
+            {
+                props.locationslug &&
+                <Link href={"/"+props.locationslug+"/events"}> 
                 <a className='text-gray-400 text-sm  lg:text-base'>Events and Parites</a>
-            </Link>
+             </Link>
+            } 
+            {
+                !props.locationslug &&
+                <Link href="/events"> 
+                <a className='text-gray-400 text-sm  lg:text-base'>Events and Parites</a>
+             </Link>
+            } 
+
+            
         </div>
         <div className=' hidden lg:block text-gray-400 text-2xl'> 
         <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>
         <div className='usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2'> 
-            <Link href="/activities#others-physical-games"> 
+
+         {
+                props.locationslug &&
+                <Link href={"/"+props.locationslug+"/activities#others-physical-games"}> 
                 <a className='text-gray-400 text-sm  lg:text-base'>Others Games</a>
             </Link>
-        </div>
-        <div className=' hidden lg:block text-gray-400 text-2xl'> 
-        <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
-        </div>
-        <div className='usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2'> 
-            <Link href="/leader-board"> 
-                <a className='text-gray-400 text-sm  lg:text-base'>Leader Board</a>
+            } 
+            {
+                !props.locationslug &&
+                <Link href="/activities#others-physical-games"> 
+                <a className='text-gray-400 text-sm  lg:text-base'>Others Games</a>
             </Link>
+            }
+            
+        </div>
+        <div className=' hidden lg:block text-gray-400 text-2xl'> 
+        <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
+        </div>
+        
+        <div className=' hidden lg:block text-gray-400 text-2xl'> 
+        <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
+        </div>
+        <div className='usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2'> 
+             {
+                props.locationslug &&
+                    <Link href={"/"+props.locationslug+"/gift-cards"}> 
+                         <a className='text-gray-400 text-sm  lg:text-base'>Others Games</a>
+                    </Link>
+            } 
+             {
+                !props.locationslug &&
+                    <Link href="/gift-cards"> 
+                         <a className='text-gray-400 text-sm  lg:text-base'>Others Games</a>
+                    </Link>
+            } 
         </div>
         <div className=' hidden lg:block text-gray-400 text-2xl'> 
         <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>
         <div className='usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2'> 
-            <Link href="/gift-cards"> 
-                <a className='text-gray-400 text-sm  lg:text-base'>Gift Cards</a>
-            </Link>
-        </div>
-        <div className=' hidden lg:block text-gray-400 text-2xl'> 
-        <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
-        </div>
-        <div className='usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2'> 
-            <Link href="#"> 
+            <Link href="/virtual-games"> 
                 <a className='text-gray-400 text-sm  lg:text-base'>Virtual Games</a>
             </Link>
         </div>

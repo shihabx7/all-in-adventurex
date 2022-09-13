@@ -34,7 +34,7 @@ const sinleActivities=(props)=>{
                 <meta name="description" content="All in adventure escape games" />
       
         </Head>
-         <Homenav/>
+         <Homenav locationlist={props.locationlist}/>
             {/* =======header content ======== end */}
   
   <div id="mainContent" className='main-content nobtn-main-content'>
@@ -58,7 +58,7 @@ const sinleActivities=(props)=>{
 
       </div>
 
-        <Footer/>
+        <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
         </>
     )
 }
@@ -92,6 +92,7 @@ export const getStaticProps=async(context)=>{
         pagedata:activityPageData.pagedata,
         activitydata:activityPageData.activitydata,
         activitygallery:activityPageData.activitygallery,
+        locationlist:activityPageData.locationlist
         
 
 

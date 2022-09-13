@@ -1,8 +1,9 @@
+import { getTotal } from "./AllDataList/getTotal"
 export const getAllEvents=()=>{
 
     const eventsData={
 
-       
+       "locationlist":getTotal().locationlist,
         "pagemeta":{
 
             "matatilte":"title",
@@ -13,11 +14,11 @@ export const getAllEvents=()=>{
           "pagedata": {
                         "pagetitle":"ALL GROUP EVENTS AND PARTIES",
                         "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
-                         "totalLocation":"26",
-                        "totalLocations": "26",
-                        "totalUniqueGames": "17",
-                        "totalFiveStarReview": "750k+",
-                        "totalPlayerEscaped": "9M+",
+                         
+                        "totalLocations": getTotal().totalLocations,
+                        "totalUniqueGames": getTotal().uniqueGames,
+                        "totalFiveStarReview": getTotal().totalReview,
+                        "totalPlayerEscaped": getTotal().toalPlayerEscape,
                         "coverimageL":"/assets/home-benar-bg.jpg",
                         "coverimageM":"/assets/home-hero.jpg"
           },

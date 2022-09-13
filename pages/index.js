@@ -60,7 +60,8 @@ export default function Home({mainprops,pagedata,inpersongames,othergames,virtua
         
     
     </div>
-    <Footer/>
+    
+    <Footer locationlist={locationlist} totallocations={pagedata.totalLocations} />
     
     </>
   )

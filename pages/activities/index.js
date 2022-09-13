@@ -6,21 +6,10 @@ import { FiChevronRight } from "react-icons/fi";
 import GameHomeHero from "../../comps/activitiyPageComps/GameHomeHero";
 import GameList from "../../comps/activitiyPageComps/GameList";
 import { getAllActivity } from "../api/getAllActivity";
-import EventContact from "../../comps/eventPageComps/EventContact";
 
 
-const activityData={
-    pagedata:{
-        totalLocation:"28",
-        coverimageL:"/assets/home-benar-bg.jpg",
-        coverimageM:"/assets/home-hero.jpg",
-        totalLocations:28,
-        totalUniqueGames:"11",
-        totalFiveStarReview:"90k",
-        totalPlayerEscaped:"60k",
-        activityname:"ALL ESCAPE ROOM AND ACTIVITIES",
-    },
-}
+
+
 
 const viewAllActivities=(props)=>{
 
@@ -44,7 +33,7 @@ const viewAllActivities=(props)=>{
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
-           <Homenav/>
+           <Homenav locationlist={props.locationlist}/>
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}
@@ -74,7 +63,7 @@ const viewAllActivities=(props)=>{
   {/* =========================================================================================main content ======== end */}
         </div>
   
-          <Footer/>
+          <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
           </>
       )
 }
@@ -90,7 +79,8 @@ export const getStaticProps = async()=>{
       props:{
         pagemeta:allActivity.pagemeta,
         pagedata:allActivity.pagedata,
-        activitylist:allActivity.activity_list
+        activitylist:allActivity.activity_list,
+        locationlist:allActivity.locationlist
 
 
       },

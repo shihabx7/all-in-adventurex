@@ -15,7 +15,7 @@ const GameHomeHero=(props)=>{
             <div className='max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-20 md:py-20 lg:py-32 xl:py-40 relative z-10'>
                 <div className="page-benar-info"> 
                 
-                 <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center'>CHOOSE FROM {props.pagedata.totalLocations} US LOCATIONS</p> 
+                 <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center'>CHOOSE FROM {props.pagedata.totalLocations} U.S. LOCATIONS</p> 
                  <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os uppercase'>{
                  
                         props.pagedata.pagetitle 

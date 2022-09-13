@@ -1,16 +1,17 @@
-
+import { getTotal } from "./AllDataList/getTotal"
 export const getActivityData=(activitySlug)=>{
     const activitiesName=activitySlug.toString().split('-').join(' ')
    
    // const locationCity=extractData.slice(0, -1).join(' ')
 
     const activityData={
+        "locationlist":getTotal().locationlist,
         "pagemeta":activityDataset[activitySlug].pagemeta,
            
         "pagedata":{
             "pagetitle":activityDataset[activitySlug].activityname+" escape room",
             "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
-            "totalLocation":"26",
+            "totalLocation":getTotal().totalLocations,
             "coverimageL":activityDataset[activitySlug].coverimageL,
             "coverimageM":activityDataset[activitySlug].coverimageM,
             "coverimageM_alt":activityDataset[activitySlug].coverimageM_alt,
