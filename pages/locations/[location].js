@@ -89,7 +89,10 @@ const location=(props)=>{
                     console.log(props.pagedata)
                 }
 
-            <Footer  location={props.pagedata.locationcity+", "+props.pagedata.locationstate}/>
+            <Footer  location={props.pagedata.locationcity+", "+props.pagedata.locationstate}
+                         locationlist={props.locationlist} 
+                         locationslug={props.pagedata.slug}
+                         totallocations={props.pagedata.totalLocations}/>
         </>
 
     )

@@ -171,7 +171,7 @@ return (
     {/* ============Location list end=============*/}
 
     </div>
-   <Footer locationlist={states}/>
+   <Footer locationlist={states} totallocations={countTotalLocation(states)}/>
     </>
    
 )

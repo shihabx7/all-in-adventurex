@@ -3,6 +3,7 @@ import { getLocationsPageData } from "./getLocationsPageData";
 import { getLocationActivitySlugList } from "./LocationIndData/getLocationActivitySlugList";
 import { getLocationEventSlugList } from "./LocationIndData/getLocationEventSlugList";
 import { bookingList } from "./LocationIndData/bookingList"
+import { getTotal } from "./AllDataList/getTotal";
 
 
  export const getLocationHomepageData =  (locationslug) => {
@@ -32,7 +33,7 @@ import { bookingList } from "./LocationIndData/bookingList"
 
    const locationHomedata=
        {
-        "locationlist":getLocationsPageData().states,
+        "locationlist":getTotal().locationlist,
         "pagemeta":{
 
           "matatilte":"title",
@@ -46,7 +47,7 @@ import { bookingList } from "./LocationIndData/bookingList"
                       "locationstate":locattionstate,
                       "locationcity":getLocSpec(locationslug).city,
                       "slug":locationslug,
-                      "totalLocations": "28",
+                      "totalLocations": getTotal().totalLocations,
                       "locationaddress":getLocSpec(locationslug).mall,
                       "totalUniqueGames": "11",
                       "totalFiveStarReview": "60k+",
