@@ -123,14 +123,14 @@ const vGameData={
 
         "vgamedata":{
             "story":"The test tube containing a clear blue liquid virus accidentally slipped from the hand of the lab assistant and fell to the floor, shattering into thousands of pieces. Seconds later, the alarm sounds as the laboratory goes into automatic lock-down.",
-            "storyimg":"/assets/vgame-img/game-story.png",
-            "storyimg_alt":"virtual escape room",
+            "storyimg":"/assets/all-game-details/allinadventures-virtual-escape-room-zombie-apocalypse-storyline.png",
+            "storyimg_alt":"allinadventures-virtual-escape-room-zombie-apocalypse-storyline",
             "scene":"It is  already too late, as the vapors are wafting throughout the building via the air conditioning. After falling where they stood, the workers slowly regained life - but not in human form. The virus has transformed them into mindless zombies.",
-            "sceneimg":"/assets/game-scene.png",
-            "sceneimg_alt":"virtual escape room",
+            "sceneimg":"/assets/all-game-details/allinadventures-virtual-escape-room-zombie-apocalypse-plot.png",
+            "sceneimg_alt":"allinadventures-virtual-escape-room-zombie-apocalypse-plot",
             "mission":"Somewhere in the lab complex is an antidote. With the help of your team, look for clues as to where it's kept. You have just one hour. Failure is not an option.",
-            "missionimg":"/assets/game-mission.png",
-            "missionimg_alt":"virtual escape room",
+            "missionimg":"/assets/all-game-details/allinadventures-virtual-escape-room-zombie-apocalypse-mission.png",
+            "missionimg_alt":"allinadventures-virtual-escape-room-zombie-apocalypse-mission",
             "videoid":"YsuE-m_VEjc",
             "booking":"#"
 
@@ -160,14 +160,14 @@ const vGameData={
 
                          "vgamedata":{
                              "story":"The dire threat of a cold war nuclear holocaust is slowly deescalating. Both East and West have agreed to back down. The world can breathe again. But then, without warning, a rogue agent has deserted and taken a thermonuclear warhead with him.",
-                             "storyimg":"/assets/vgame-img/game-story.png",
-                             "storyimg_alt":"escape room",
+                             "storyimg":"/assets/all-game-details/allinadventures-virtual-escape-room-bomb-storyline.png",
+                             "storyimg_alt":"allinadventures-virtual-escape-room-bomb-storyline",
                              "scene":"We locate his headquarters deep underground. But he's a true doomsday believer and determined to see this through to the very end. The first agent we sent in is in trouble and communication has been lost. So we're sending you in.",
-                             "sceneimg":"/assets/game-scene.png",
-                             "sceneimg_alt":"escape room",
+                             "sceneimg":"/assets/all-game-details/allinadventures-virtual-escape-room-bomb-plot.png",
+                             "sceneimg_alt":"allinadventures-virtual-escape-room-bomb-plot",
                              "mission":"You're our last hope. The clock is ticking and the fate of humanity depends on your every move. Locate the bomb and defuse it before the plan can be completed. Good luck!",
-                             "missionimg":"/assets/game-mission.png",
-                             "missionimg_alt":"escape room",
+                             "missionimg":"/assets/all-game-details/allinadventures-virtual-escape-room-bomb-mission.png",
+                             "missionimg_alt":"allinadventures-virtual-escape-room-bomb-mission",
                              "videoid":"YsuE-m_VEjc",
                              "booking":"#"
 
@@ -197,14 +197,14 @@ const vGameData={
 
     "vgamedata":{
         "story":"A strong shove in the back and you're pushed into a tiny prison cell. The cold iron door clangs shut. You hear yourself pleading that this has all been a terrible mistake. You haven't done anything wrong. You've been set up to take the fall for someone else. You've been framed. But all your pleas fall on deaf ears.",
-        "storyimg":"/assets/vgame-img/game-story.png",
-        "storyimg_alt":"escape room",
+        "storyimg":"/assets/all-game-details/allinadventures-virtual-escape-room-prison-storyline.png",
+        "storyimg_alt":"allinadventures-virtual-escape-room-prison-storyline",
         "scene":"The key turns, locking your cell door firmly shut. The sound of the guard's echoing footsteps fades into the darkness. You sit heavily on your thin mattress. Of course you're innocent. But you'll need to escape from this prison to be able to prove it. Standing up in front of the bars, you try and look one way and then the other down the corridor. There appears to be no one else here in this wing. The air is heavy with expectation. And dread. There's something else going on here.",
-        "sceneimg":"/assets/game-scene.png",
-        "sceneimg_alt":"escape room",
+        "sceneimg":"/assets/all-game-details/allinadventures-virtual-escape-room-prison-plot.png",
+        "sceneimg_alt":"allinadventures-virtual-escape-room-prison-plot",
         "mission":"The guard will return in one hour. You need to move yourself and find all the clues that'll lead to the key and freedom.",
-        "missionimg":"/assets/game-mission.png",
-        "missionimg_alt":"escape room",
+        "missionimg":"/assets/all-game-details/allinadventures-virtual-escape-room-prison-mission.png",
+        "missionimg_alt":"allinadventures-virtual-escape-room-prison-mission",
         "videoid":"YsuE-m_VEjc",
         "booking":"#"
 
@@ -234,14 +234,14 @@ const vGameData={
 
     "vgamedata":{
         "story":"The year is 1519 and you find yourself in the jungle near the Mexican capital city of Tenochtitlan, as a Spanish conquistador. You have already have heard the natives speak of the treasure of the Lost City of Gold. There the Emperor Tlatoani Montezuma has hidden jewels from his palace of Axayacati.",
-        "storyimg":"/assets/vgame-img/game-story.png",
-        "storyimg_alt":"escape room",
+        "storyimg":"/assets/all-game-details/allinadventures-virtual-escape-room-aztec-storyline.png",
+        "storyimg_alt":"allinadventures-virtual-escape-room-aztec-storyline",
         "scene":"Among the jewels is the mythical Crystal Skull. But the city is not what it first seems. Not only must you decipher all the clues and puzzles, but it turns out that finding the treasure is only half the problem. The other half is how to escape with it. Buena suerte!",
-        "sceneimg":"/assets/game-scene.png",
+        "sceneimg":"/assets/all-game-details/allinadventures-virtual-escape-room-aztec-plot.png",
         "sceneimg_alt":"escape room",
         "mission":"Wade through the puzzles of the jungle to locate the jewels. Once you are able to find the jewels, you will have a very limited time to formulate a plan on how to escape with them!",
-        "missionimg":"/assets/game-mission.png",
-        "missionimg_alt":"escape room",
+        "missionimg":"/assets/all-game-details/allinadventures-virtual-escape-room-aztec-mission.png",
+        "missionimg_alt":"allinadventures-virtual-escape-room-aztec-mission",
         "videoid":"YsuE-m_VEjc",
         "booking":"#"
 
@@ -271,14 +271,14 @@ const vGameData={
 
     "vgamedata":{
         "story":"We find ourselves transported back to feudal Japan in the twelfth century at the house of a Kamakura shogun. As usual the house is full of Samurai who act as guards. The daimyo are visiting and have bought not only their own Samurai, but also the dreaded Ninja spies.",
-        "storyimg":"/assets/vgame-img/game-story.png",
+        "storyimg":"/assets/all-game-details/allinadventures-virtual-escape-room-japan-storyline.png",
         "storyimg_alt":"escape room",
         "scene":"We know that within these walls of fine rice paper, and woven bamboo matting, the shogun keeps a closely guarded treasure....the Ashikaga Samurai sword. But there's been a commotion. The Geisha are whispering that it's been stolen!",
-        "sceneimg":"/assets/game-scene.png",
-        "sceneimg_alt":"escape room",
+        "sceneimg":"/assets/all-game-details/allinadventures-virtual-escape-room-madness-plot.png",
+        "sceneimg_alt":"allinadventures-virtual-escape-room-madness-plot",
         "mission":"In order to find it, you'll need to move with stealth and speed, collecting coins and tokens along the way. You have only one hour to sort through all the clues. Failure means saying Sayonara with the sharp edge of a Katana. Ganbatte!",
-        "missionimg":"/assets/game-mission.png",
-        "missionimg_alt":"escape room",
+        "missionimg":"/assets/all-game-details/allinadventures-virtual-escape-room-japan-mission.png",
+        "missionimg_alt":"allinadventures-virtual-escape-room-japan-mission",
         "videoid":"YsuE-m_VEjc",
         "booking":"#"
 

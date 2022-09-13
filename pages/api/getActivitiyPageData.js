@@ -15,7 +15,7 @@ export const getActivityData=(activitySlug)=>{
             "coverimageL":activityDataset[activitySlug].coverimageL,
             "coverimageM":activityDataset[activitySlug].coverimageM,
             "coverimageM_alt":activityDataset[activitySlug].coverimageM_alt,
-            "totalLocations":26,
+            "totalLocations":getTotal().totalLocations,
             "price":activityDataset[activitySlug].price,
             "duration":activityDataset[activitySlug].duration,
             "max_players":activityDataset[activitySlug].max_players,
