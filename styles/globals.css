@@ -719,7 +719,7 @@ background-size: cover,cover;
 }
 
 @media only screen and (max-width: 900px) {
-  .loc-menu-grid{
+  .loc-menu-grid,.footer-loc-col-mess{
     column-count: 2;
     column-gap: 40px;
   }
@@ -874,9 +874,7 @@ background-size: cover,cover;
  
 }
 @media only screen and (max-width: 767px) {
-  .nobtn-main-content{
-   
-  }
+
 
   .home-hero {
     background-image: unset !important;
@@ -949,7 +947,7 @@ background-size: cover,cover;
 
 @media only screen and (max-width: 500px) {
  
-  .loc-menu-grid{
+  .loc-menu-grid,.footer-loc-col-mess{
     column-count: 1;
     column-gap: 10px;
   }
