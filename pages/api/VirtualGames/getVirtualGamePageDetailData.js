@@ -86,14 +86,14 @@ const vGameData={
 
                         "vgamedata":{
                             "story":"Test patients go in....but no one has ever come back out! Welcome to the mysterious and dark world of the deranged professor. Once famed for his psychiatric breakthroughs, he grew distrustful of those around him, and gradually withdrew from society.",
-                            "storyimg":"/assets/vgame-img/game-story.png",
-                            "storyimg_alt":"escape room",
+                            "storyimg":"/assets/all-game-details/allinadventures-virtual-escape-room-madness-storyline.png",
+                            "storyimg_alt":"allinadventures-virtual-escape-room-madness-storyline",
                             "scene":"Slowly he descended into madness, with his penchant for experimenting on himself causing untold damage. But his methods remain closely guarded. His office must be infiltrated and the professor must be exposed for he truly is.",
-                            "sceneimg":"/assets/game-scene.png",
+                            "sceneimg":"/assets/all-game-details/allinadventures-virtual-escape-room-madness-plot.png",
                             "sceneimg_alt":"escape room",
                             "mission":"Your job is to stealthily discover the morbid secrets of his laboratory. Time is against you and failure would mean facing an unknown and unwelcome fate at the hands of this mad genius.",
-                            "missionimg":"/assets/game-mission.png",
-                            "missionimg_alt":"escape room",
+                            "missionimg":"/assets/all-game-details/allinadventures-virtual-escape-room-madness-mission.png",
+                            "missionimg_alt":"allinadventures-virtual-escape-room-madness-mission",
                             "videoid":"YsuE-m_VEjc",
                             "booking":"#"
 

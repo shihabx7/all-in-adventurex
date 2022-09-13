@@ -18,6 +18,7 @@ import HomeReviewSlider from '../../comps/homepagecomps/HomeReviewSlider'
 import { getLocationHomepageData } from '../api/getLocationHomepageData';
 import { getLocationSlugList } from '../api/getLocationSlugList';
 import LocationDetails from '../../comps/locationsPage/LocationDetails';
+import HomeReviewSliderLoc from '../../comps/homepagecomps/HomeReviewSliderLoc';
 const location=(props)=>{
 
     /* custom breadcum code */
@@ -81,7 +82,8 @@ const location=(props)=>{
                              <BuyGiftCard locationslug={props.pagedata.slug}  bookingData={props.bookingData}/>
                              <WhatIsEscape/>
                             <WhoCanplay/>
-                            <HomeReviewSlider reviews={props.reviews}/>
+                            <HomeReviewSliderLoc reviews={props.reviews}/>
+                            
                             <LocationDetails locdetail={props.pagedata.locdetail}/>
 
                 </div>

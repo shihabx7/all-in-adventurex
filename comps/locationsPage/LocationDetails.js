@@ -43,9 +43,10 @@ const LocationDetails=(props)=>{
 
     return(
         <div className="location-details relative"
-                style={{backgroundImage:"linear-gradient(65deg, rgba(255, 249, 235, 0.1), rgba(255, 249, 235, 0.2)), url('/assets/gridbg.jpg')"}}
+                style={{backgroundImage:"linear-gradient(65deg, rgba(255, 249, 235, 0.1), rgba(255, 249, 235, 0.2)), url('/assets/game-dt-bg.jpg')"}}
             > 
-            <div className="max-w-[770px] mx-auto py-28">
+            <div className=" w-full absolute bottom-0 left-0"><img className="w-full" src="/assets/game-home-or2.jpg"></img></div>
+            <div className="max-w-[770px] mx-auto pb-28 relative z-30">
                 <div className="section-title"> 
                      <TitleSeparator title='LOCATION DETAILS' color='golden-text' weight='font-bold'/>
                         <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-16">
