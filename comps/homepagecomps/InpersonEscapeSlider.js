@@ -35,7 +35,7 @@ const InpersonEscapeSlider =(props)=>{
                         <div className="hidden md:block">Crack Codes</div><span className="text-gold hidden md:block"><FaAngleRight/></span>
                         <div>Solve Puzzles</div><span className="text-gold"><FaAngleRight/></span>
                         <div>Escape</div><span><img className="ml-2 w-[28px] md:w-[36px] lg:w-[40px]" src="/assets/svg/inperson.svg"></img></span>
-                        </div>
+                     </div>
                 
                 </div>
                 

@@ -19,6 +19,14 @@ const PysicalEscape=(props)=>{
              <TitleSeparator title='IN PERSON OTHER GAMES' color='golden-text' weight='font-bold'/>
              <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-12 lg:mb-16">
                     <p className="text-gray-200 md:px-8">Many of our locations offer additional fun activities that can double up your adventure experience. Simply come with the desire to play more!</p>
+                    <div className="mt-2 md:mt-4 escape-flow flex justify-center items-center space-x-.9 md:space-x-1 text-[18px] golden-text font-medium md:text-xl">
+
+                      <div>Locked In</div><span className="text-gold"><FaAngleRight/></span>
+                      <div className="hidden md:block">Crack Codes</div><span className="text-gold hidden md:block"><FaAngleRight/></span>
+                      <div>Solve Puzzles</div><span className="text-gold"><FaAngleRight/></span>
+                      <div>Escape</div><span><img className="ml-2 w-[28px] md:w-[36px] lg:w-[40px]" src="/assets/svg/inperson.svg"></img></span>
+                    </div>
+                
                 </div>
         </div>
         <div className="slider-box pb-4 md:pb-8 relative">  
