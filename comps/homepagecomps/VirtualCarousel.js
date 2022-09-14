@@ -47,7 +47,7 @@ const VirtualCarousel=({virtualgames})=>{
         }
       };
     return (
-    <div className="full-carousel v-slider-home md:max-w-[700px] mx-auto"> 
+    <div className="full-carousel v-slider-home md:max-w-[768px] mx-auto"> 
     <Carousel
      swipeable={true}
      draggable={true}
