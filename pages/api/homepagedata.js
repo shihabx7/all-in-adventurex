@@ -37,7 +37,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                  "type": "In person",
                                  "title": "Treasure Island",
                                  "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-                                 "age":"all age",
+                                 "age":"ll age",
                                  "duration":"50",
                                  "maxplayers":"10",
                                  "minplayers":"2",
@@ -153,7 +153,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                 "duration":"60",
                                 "maxplayers":"5",
                                 "minplayers":"2",
-                                "price":"29.89",
+                                "price":"39.95",
                                 "slug"  :"lost-in-the-jungle",
                                 "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
                                },
@@ -195,7 +195,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                 "age":"all age",
                                 "duration":"60",
                                 "maxplayers":"8",
-                                "minplayers":"4",
+                                "minplayers":"2",
                                 "price":"29.89",
                                 "slug"  :"magic-castle",
                                 "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
