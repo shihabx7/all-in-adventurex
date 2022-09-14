@@ -20,18 +20,24 @@ const HomeReviewCarousel=({reviews})=>{
 } 
   
     const responsive = {
-        desktoplg: {
-            breakpoint: { max: 4000, min: 1440 },
-            items: 5,
-            slidesToSlide: 1,
-            partialVisibilityGutter: 30
-          },
-        desktop: {
-          breakpoint: { max: 1440, min: 1024 },
-          items: 3,
-          slidesToSlide: 1,
-          partialVisibilityGutter: 24
-        },
+      desktoplg: {
+        breakpoint: { max: 4000, min: 1640 },
+        items: 5,
+        slidesToSlide: 1,
+        partialVisibilityGutter: 30
+      },
+      desktopmd: {
+        breakpoint: { max: 1640, min: 1440 },
+        items: 4,
+        slidesToSlide: 1,
+        partialVisibilityGutter: 24
+      },
+    desktop: {
+      breakpoint: { max: 1440, min: 1024 },
+      items: 3,
+      slidesToSlide: 1,
+      partialVisibilityGutter: 24
+    },
         tablet: {
           breakpoint: { max: 1024, min: 520 },
           items: 2,

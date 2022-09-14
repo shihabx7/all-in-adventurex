@@ -69,20 +69,18 @@ const UseFullLinks=(props)=>{
         <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>
         
-        <div className=' hidden lg:block text-gray-400 text-2xl'> 
-        <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
-        </div>
+       
         <div className='usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2'> 
              {
                 props.locationslug &&
                     <Link href={"/"+props.locationslug+"/gift-cards"}> 
-                         <a className='text-gray-400 text-sm  lg:text-base'>Others Games</a>
+                         <a className='text-gray-400 text-sm  lg:text-base'>Gift Cards</a>
                     </Link>
             } 
              {
                 !props.locationslug &&
                     <Link href="/gift-cards"> 
-                         <a className='text-gray-400 text-sm  lg:text-base'>Others Games</a>
+                         <a className='text-gray-400 text-sm  lg:text-base'>Gift Cards</a>
                     </Link>
             } 
         </div>

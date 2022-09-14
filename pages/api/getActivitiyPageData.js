@@ -466,13 +466,13 @@ const activityDataset={
           "metadescription":"metadescription"
         },
         "activitydata":{
-          "story":"Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
+          "story":'The famous Hungarian American magician, Houdini, performed many tricks during his lifetime; some were even death defying. Houdini was adept at all tricks ranging from simple card tricks to the most daring escape from an unbelievable scenario. There is one trick in particular that you have always wanted to outperform: The "Houdini Upside Down" - the trick involving Houdini trapped upside down, handcuffed at the feet, submerged in water. Death was just minutes away.',
           "storyimg":"/assets/all-game-details/allinadventures-houdinis-magic-cell-storyline.png",
           "storyimg_alt":"allinadventures-houdinis-magic-cell-storyline",
-          "scene":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
+          "scene":"While you may want to outperform Houdini's most outlandish trick, you must start with the basics - playing cards. Prove you can fool even the most skilled magician and, only then, will you be able to move on to the biggest challenge yet: Locks and handcuffs. Are you able to outplay the master himself in his own proving grounds?",
           "sceneimg":"/assets/all-game-details/allinadventures-houdinis-magic-cell-plot.png",
           "sceneimg_alt":"escape room",
-          "mission":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
+          "mission":"You will have 50 minutes to complete your act. First, perform a series of tricks with multiple sets of playing cards. Once you have mastered the art of cards, it will be time to perform your ultimate act involving escaping from multiple types of locks and handcuffs.",
           "missionimg":"/assets/all-game-details/allinadventures-houdinis-magic-cell-mission.png",
           "missionimg_alt":"allinadventures-houdinis-magic-cell-mission",
           "videoid":"pfdyF_d4Z40"

@@ -27,12 +27,20 @@ const PysicalCarousel=(props)=>{
     return description
     
 } 
+
+
     const responsive = {
         desktoplg: {
-            breakpoint: { max: 4000, min: 1440 },
+          breakpoint: { max: 4000, min: 1640 },
             items: 4,
             slidesToSlide: 1,
             partialVisibilityGutter: 0
+          },
+          desktopmd: {
+            breakpoint: { max: 1640, min: 1440 },
+            items: 4,
+            slidesToSlide: 1,
+            partialVisibilityGutter: 24
           },
         desktop: {
           breakpoint: { max: 1440, min: 1024 },
@@ -54,7 +62,7 @@ const PysicalCarousel=(props)=>{
         }
       };
     return (
-    <div className="full-carousel md:max-w-[88%] lg:max-w-[1366px] mx-auto pysicalescapecarousel"> 
+    <div className="full-carousel lg:max-w-[1600px] mx-auto pysicalescapecarousel"> 
     <Carousel
      swipeable={true}
      draggable={true}
