@@ -362,10 +362,10 @@ max-width:140px;
   
 }
 .physical-escape-dots{
-  display:none !important;
+  display:block ;
 }
 .vr-dots{
-  display:none !important;
+  display:block;
 }
 .vr-slider{
   

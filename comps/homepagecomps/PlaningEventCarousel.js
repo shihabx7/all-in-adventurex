@@ -88,7 +88,7 @@ const PlaningEventCarousel=(props)=>{
               <div className="card-container">
                   <div className="card-head plan-title flex justify-center pt-8 pb-8 px-4">
                       <div className="card-info text-center ">
-                        <h3 className="text-center text-xl lg:text-2xl font-bold uppercase text-white">{event.title}</h3>
+                        <h3 className="text-center text-2xl lg:text-3xl font-bold uppercase text-white">{event.title}</h3>
                       </div>
                    
                   </div>
