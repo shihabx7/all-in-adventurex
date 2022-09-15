@@ -785,9 +785,9 @@ const locPagedata={
          }
 
        ],
-      "otherphysicalgames": [
+       "otherphysicalgames": [
         {
-
+    
             "id":1,
             "category":"other",
             "type": "In person",
@@ -802,7 +802,7 @@ const locPagedata={
             "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
            },
           {
-
+    
               "id":2,
               "category":"other",
               "type": "In person",
@@ -831,21 +831,7 @@ const locPagedata={
               "slug"  :"axe-throwing",
               "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
              },
-          {
-            
-          "id":4,
-          "category":"other",
-          "type": "In person",
-          "title": "Virtual Reality",
-          "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-          "age":"All age",
-          "duration":"10 - 60",
-          "maxplayers":"4",
-          "minplayers":"1",
-          "price":"8",
-          "slug"  :"virtual-reality",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-         }
+          
         
           ],
       "events":             [
@@ -1171,7 +1157,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -1217,21 +1203,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -1558,7 +1530,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -1604,21 +1576,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -1943,7 +1901,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -1989,21 +1947,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -2329,7 +2273,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -2375,21 +2319,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -2719,7 +2649,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -2765,21 +2695,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -3109,7 +3025,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -3155,21 +3071,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -3499,7 +3401,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -3545,21 +3447,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -3885,7 +3773,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -3931,21 +3819,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -4271,7 +4145,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -4317,21 +4191,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -4657,7 +4517,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -4703,21 +4563,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -5047,7 +4893,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -5093,21 +4939,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -5436,7 +5268,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -5482,21 +5314,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -5821,7 +5639,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -5867,21 +5685,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -6207,7 +6011,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -6253,21 +6057,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -6596,7 +6386,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -6642,21 +6432,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -6982,7 +6758,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -7028,21 +6804,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -7368,7 +7130,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -7414,21 +7176,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -7759,7 +7507,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -7805,21 +7553,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -8145,7 +7879,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -8191,21 +7925,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -8536,7 +8256,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -8582,21 +8302,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -8927,7 +8633,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -8973,21 +8679,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -9316,7 +9008,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -9362,21 +9054,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -9702,7 +9380,7 @@ const locPagedata={
      }
 
    ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -9748,21 +9426,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [
@@ -9902,193 +9566,7 @@ const locPagedata={
           "metakeyword":"keywords",
           "metadescription":"metadescription"
    },
-   "inpersongames":[
-    {
-      "id":1,
-      "category":"escapegame",
-      "type": "In person",
-       "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
-       "age":"All age",
-       "duration":"50",
-       "maxplayers":"10",
-       "minplayers":"2",
-       "price":"29.89",
-       "slug"  :"escape-from-alcatraz",
-       "bgimg" :"/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg"
-     },
-     {
-      "id":2,
-      "category":"escapegame",
-       "type": "In person",
-       "title": "Treasure Island",
-       "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
-       "duration":"50",
-       "maxplayers":"10",
-       "minplayers":"2",
-       "price":"29.89",
-       "slug"  :"treasure-island",
-       "bgimg" :"/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg"
-     },
-     {
-      "id":3,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"zombie-apocalypse",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
-     },
-     {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"sherlocks-library",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
-     },
-     {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"black-ops",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
-     },
-     {
-      "id":10,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
-     },
-     {
-      "id":11,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
-      "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
-     },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-  "otherphysicalgames": [
+   "otherphysicalgames": [
     {
 
         "id":1,
@@ -10134,21 +9612,7 @@ const locPagedata={
           "slug"  :"axe-throwing",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
          },
-      {
-        
-      "id":4,
-      "category":"other",
-      "type": "In person",
-      "title": "Virtual Reality",
-      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-      "age":"All age",
-      "duration":"10 - 60",
-      "maxplayers":"4",
-      "minplayers":"1",
-      "price":"8",
-      "slug"  :"virtual-reality",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-     }
+      
     
       ],
   "events":             [

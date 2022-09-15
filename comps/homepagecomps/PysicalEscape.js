@@ -32,7 +32,7 @@ const PysicalEscape=(props)=>{
         <div className="slider-box pb-4 md:pb-8 relative">  
             <PysicalCarousel othergames={props.othergames} locationslug={props.locationslug} bookingData={props.bookingData}/>
         </div>
-        <div className="view-all flex justify-center pt-8 pb-4 md:pb-12 lg:pb-16">
+        <div className="view-all flex justify-center pt-8 md:pt-16 pb-4 md:pb-12 lg:pb-16">
            {
             props.locationslug &&
               <Link href={"/"+props.locationslug+"/activities#others-physical-games"}> 

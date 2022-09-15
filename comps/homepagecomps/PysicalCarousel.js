@@ -32,13 +32,13 @@ const PysicalCarousel=(props)=>{
     const responsive = {
         desktoplg: {
           breakpoint: { max: 4000, min: 1640 },
-            items: 4,
+            items: 3,
             slidesToSlide: 1,
             partialVisibilityGutter: 0
           },
           desktopmd: {
             breakpoint: { max: 1640, min: 1440 },
-            items: 4,
+            items: 3,
             slidesToSlide: 1,
             partialVisibilityGutter: 24
           },
@@ -62,7 +62,7 @@ const PysicalCarousel=(props)=>{
         }
       };
     return (
-    <div className="full-carousel lg:max-w-[1600px] mx-auto pysicalescapecarousel"> 
+    <div className="full-carousel lg:max-w-[1140px] mx-auto pysicalescapecarousel"> 
     <Carousel
      swipeable={true}
      draggable={true}
@@ -95,7 +95,7 @@ const PysicalCarousel=(props)=>{
             background:"url('"+othergame.bgimg+"')"
           }}>
             <div className="card-container">
-                <div className="card-head flex justify-between items-center p-4 pb-8">
+                <div className="card-head flex justify-between items-center p-4 md:pb-8">
                     <div className="card-info">
                     <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm">{othergame.type}</span>  </p>
                         <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm">{othergame.age}</span>  </p> 
@@ -112,7 +112,7 @@ const PysicalCarousel=(props)=>{
                 <div className="card-gap py-10"> 
      
                 </div>
-                <div className="card-bottom p-4 pt-12"> 
+                <div className="card-bottom p-4  md:pt-10"> 
                     <div className="card-game-desc text-center">
                         <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">{othergame.title}</h3>
                         <p className="text-gray-200 lg:text-lg">{showDescription(othergame.description)}</p>

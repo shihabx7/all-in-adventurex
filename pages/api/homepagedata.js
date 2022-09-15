@@ -248,21 +248,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                     "slug"  :"axe-throwing",
                                     "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
                                    },
-                                {
-                                  
-                                "id":4,
-                                "category":"other",
-                                "type": "In person",
-                                "title": "Virtual Reality",
-                                "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-                                "age":"All age",
-                                "duration":"10 - 60",
-                                "maxplayers":"4",
-                                "minplayers":"1",
-                                "price":"8",
-                                "slug"  :"virtual-reality",
-                                "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-                               }
+                                
                               
                                 ],
         "events":             [

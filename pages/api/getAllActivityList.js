@@ -62,12 +62,7 @@ export const getALlActivityList=()=>{
             "activity_slug":"lost-in-the-jungle"
            
         },
-        {
-            "id":11,
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
+       
         {
             "id":12,
             "activity_name":"Wizarding School",

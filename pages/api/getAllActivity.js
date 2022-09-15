@@ -58,7 +58,7 @@ export const getAllActivity=()=>{
                     
                 },
                 {
-                    "id":9,
+                    "id":3,
                     "activity_name":"Superhero's Adventure",
                     "activity_type":"In person",
                     "activity_category":"escapegame",
@@ -73,7 +73,7 @@ export const getAllActivity=()=>{
                     
                 },
                 {
-                    "id":10,
+                    "id":4,
                     "activity_name":"Zombie Apocalypse",
                     "activity_type":"In person",
                     "activity_category":"escapegame",
@@ -88,7 +88,7 @@ export const getAllActivity=()=>{
                     
                 },
                 {
-                    "id":11,
+                    "id":5,
                     "activity_name":"Special Agent",
                     "activity_type":"In person",
                     "activity_category":"escapegame",
@@ -103,7 +103,7 @@ export const getAllActivity=()=>{
                     
                 },
                 {
-                    "id":3,
+                    "id":6,
                     "activity_name":"HOLLYWOOD PREMIERE",
                     "activity_type":"In person",
                     "activity_category":"escapegame",
@@ -118,7 +118,7 @@ export const getAllActivity=()=>{
                    
                 },
                 {
-                    "id":12,
+                    "id":7,
                     "activity_name":"Sherlock's Library",
                     "activity_type":"In person",
                     "activity_category":"escapegame",
@@ -133,7 +133,7 @@ export const getAllActivity=()=>{
                    
                 },
                 {
-                    "id":7,
+                    "id":8,
                     "activity_name":"HOUDINI'S MAGIC CELL",
                     "activity_type":"In person",
                     "activity_category":"escapegame",
@@ -148,7 +148,7 @@ export const getAllActivity=()=>{
                     
                 },
                 {
-                    "id":5,
+                    "id":9,
                     "activity_name":"Black Ops",
                     "activity_type":"In person",
                     "activity_category":"escapegame",
@@ -163,7 +163,7 @@ export const getAllActivity=()=>{
                     
                 },
                 {
-                    "id":4,
+                    "id":10,
                     "activity_name":"Lost in The Jungle",
                     "activity_type":"In person",
                     "activity_category":"escapegame",
@@ -179,7 +179,7 @@ export const getAllActivity=()=>{
                 },
                
                 {
-                    "id":6,
+                    "id":11,
                     "activity_name":"Locked in the Lift",
                     "activity_type":"In person",
                     "activity_category":"escapegame",
@@ -194,7 +194,7 @@ export const getAllActivity=()=>{
                     
                 },
                 {
-                    "id":13,
+                    "id":12,
                     "activity_name":"Wizarding School ",
                     "activity_type":"In person",
                     "activity_category":"escapegame",
@@ -210,7 +210,7 @@ export const getAllActivity=()=>{
                 },
                 
                 {
-                    "id":8,
+                    "id":13,
                     "activity_name":"MAGIC CASTLE",
                     "activity_type":"In person",
                     "activity_category":"escapegame",
@@ -270,21 +270,7 @@ export const getAllActivity=()=>{
                     "activity_cover_image":"/assets/all-game-list/allinadventures-wizarding-school.jpg",
                     
                 },
-                {
-                    "id":17,
-                    "activity_name":"Virtual Reality",
-                    "activity_type":"In person",
-                    "activity_category":"other",
-                    "age":"all Aage",
-                    "min_player":2,
-                    "max_player":8,
-                    "price":28,
-                    "duration":60,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                    "activity_slug":"virtual-reality",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-virtual-reality.jpg",
-                    
-                },
+               
                 
                 
                 
