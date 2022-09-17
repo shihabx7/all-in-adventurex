@@ -13,7 +13,7 @@ const LocationDetails=(props)=>{
           googleMapsApiKey: "AIzaSyCYSGDPwfMMqKRb7ApqkuH3d5YsMjLiEiY" // Add your API key
         });
       
-        return isLoaded ? <LocationMap position={props.locdetail.position} locname={props.locdetail.slug.split("-").join(' ')}/> : null;
+        return isLoaded ? <LocationMap locdetail={props.locdetail} position={props.locdetail.position} locname={props.locdetail.slug.split("-").join(' ')}/> : null;
 
         //return isLoaded ? <div className='text-white'>Map loaded</div> : null;
       }
@@ -53,14 +53,14 @@ const LocationDetails=(props)=>{
                            <p className="text-gray-[600] md:px-8">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
                       </div>
                 </div> 
-                <div className="location-spc-map">
+                <div className="location-spc-map drop-shadow-md border-2 border-gold">
 
                     {
                         locationMap()
                     }
                     
                 </div>   
-                <div className="loc-dt-table grid grid-cols-1 md:grid-cols-2 px-4">
+                <div className="loc-dt-table grid grid-cols-1 md:grid-cols-2 px-4 mt-8">
                        
                             <div className="flex space-x-2 border-b border-[#D2C6AA] py-2 px-2 lg:py-3 md:text-lg ">
                                 <div className="loc-dt-icon w-[8%]"> 
@@ -174,17 +174,18 @@ const LocationDetails=(props)=>{
 
                 </div>
 
-                <div className="loc-notice mt-4 md:mt-8"> 
-                                             
-                                             <div className="flex  lg:text-lg text-[#424242] mt-4 justify-between">
-                                                <div className="mt-[6px] -[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
-                                                 <div className="w-[92%] font-thin">We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.</div>
-                                             </div>
-                                             <div className="flex  lg:text-lg text-[#424242] mt-3  justify-between">
-                                                <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
-                                                 <div className="w-[92%] font-thin">Our store is located on the 3rd floor food court level, just across the hall from 5 Below store.</div>
-                                             </div>
-                                             
+                <div className="loc-notice mt-4 md:mt-8 px-4 md:px-0"> 
+
+                <ul className="star-list pl-6 lg:text-lg text-[#424242] font-thin">
+                    <li className="my-2">
+                    We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.
+                    </li>
+                    <li className="my-2">
+                    Our store is located on the 3rd floor food court level, just across the hall from 5 Below store.
+                    </li>
+
+                </ul>
+             
 
                                              
                 </div>
