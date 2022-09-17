@@ -47,9 +47,7 @@ const OhterGameSubmenu=(props)=>{
                                                 <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Axe Throwing</span>
                                              </a>
                                   
-                                             <a href="/activities/virtual-reality" className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Virtual Reality</span>
-                                             </a>
+                                           
             </>
         }
                                 

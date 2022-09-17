@@ -23,7 +23,7 @@ const EventList=(props)=>{
 
                             return(
                                 <div key={event.id} className="all-game-list bg-center bg-cover p-4 md:p-6 lg:p-8" 
-                                        style={{backgroundImage:"linear-gradient(40deg,rgba(0,0,0,0.82),rgba(0,0,0,0.6),rgba(0,0,0,0.2)),url('"+event.event_cover_image+"')",
+                                        style={{backgroundImage:"linear-gradient(57deg, rgba(0,0,0,0.98),rgba(0,0,0,0)),url('"+event.event_cover_image+"')",
                                         boxShadow:"0px 0px 12px 1px rgba(0,0,0,0.25)"}}>
                                     
                                      <div className="all-game-list-gap py-[80px] md:py-[12%] lg:py-[100px]">
