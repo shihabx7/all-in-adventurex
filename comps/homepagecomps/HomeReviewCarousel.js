@@ -92,7 +92,7 @@ const HomeReviewCarousel=({reviews})=>{
                          <div className="card-rev-desc text-center">
                               <img className="inline" src="/assets/reviews/rev-5star.svg"></img>
                              <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-medium uppercase text-white">{review.title}</h3>
-                             <p className="golden-text font-light lg:text-lg italic">&quot;{showDescription(review.review_text)}</p>
+                             <p className="golden-text font-light lg:text-lg italic h-[170px] md:h-[200px]">&quot;{review.review_text}</p>
                          </div>
                          <div className="card-rev-auth mt-4 pb-8 text-center">
                          <p className="text-[#afafaf]">{review.author}</p>
