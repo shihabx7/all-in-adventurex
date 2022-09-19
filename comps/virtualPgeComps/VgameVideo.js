@@ -9,7 +9,7 @@ const VgameVideo=(props)=>{
                 <div className="s-title"> 
                     <TitleSeparator title="GAME TREASURE VIDEO" color="golden-text" weight="font-bold"/>
                     <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
-                                 <p className="text-gray-700 md:px-8">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                                 <p className="text-gray-700 md:px-8">Watch a sneak peek of the thrills and drama from the {props.activityname && <span>{props.activityname}</span>} virtual escape room.</p>
                     </div>
                 </div>
                 <div className="game-video-box pb-[57%] md:pb-[416px] lg:pb-[472px] w-[100%] md:w-[740px] lg:w-[840px] mx-auto shadow-lg relative"> 

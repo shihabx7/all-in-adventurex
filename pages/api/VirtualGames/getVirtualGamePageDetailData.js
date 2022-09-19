@@ -27,38 +27,7 @@ export const getVirtualGamePageDetailData=(gameslug)=>{
             "activityname":vGameData[gameslug].activityname,
         },
         "vgamedata":vGameData[gameslug].vgamedata,
-            "vgamegallery":[
-                {
-                "id":1,
-                "img":"/assets/vgame-img/madness-gmae1.jpg",
-                "alt":"All in adventure virtual escape games"
-                },
-                {
-                "id":2,
-                "img":"/assets/vgame-img/madness-gmae2.jpg",
-                "alt":"All in adventure virtual escape games"
-                },
-                {
-                "id":3,
-                "img":"/assets/vgame-img/madness-gmae3.jpg",
-                "alt":"All in adventure virtual escape games"
-                },
-                {
-                "id":4,
-                "img":"/assets/vgame-img/madness-gmae4.jpg",
-                "alt":"All in adventure virtual escape games"
-                },
-                {
-                "id":5,
-                "img":"/assets/vgame-img/madness-gmae5.jpg",
-                "alt":"All in adventure virtual escape games"
-                },
-                {
-                "id":6,
-                "img":"/assets/vgame-img/madness-game6.jpg",
-                "alt":"All in adventure virtual escape games"
-                }
-                ]
+            "vgamegallery":vGameData[gameslug].vgamegallery
 
 
     }
@@ -98,6 +67,38 @@ const vGameData={
                             "booking":"#"
 
                             },
+                        "vgamegallery":[
+                              {
+                              "id":1,
+                              "img":"/assets/game-gallery/allinadventures-virtual-escape-room-madness-gallery-1.jpg",
+                              "img_alt":"allinadventures-virtual-escape-room-madness-gallery-1"
+                              },
+                              {
+                              "id":2,
+                              "img":"/assets/game-gallery/allinadventures-virtual-escape-room-madness-gallery-2.jpg",
+                              "img_alt":"allinadventures-virtual-escape-room-madness-gallery-2"
+                              },
+                              {
+                              "id":3,
+                              "img":"/assets/game-gallery/allinadventures-virtual-escape-room-madness-gallery-3.jpg",
+                              "img_alt":"allinadventures-virtual-escape-room-madness-gallery-3"
+                              },
+                              {
+                              "id":4,
+                              "img":"/assets/game-gallery/allinadventures-virtual-escape-room-madness-gallery-4.jpg",
+                              "img_alt":"allinadventures-virtual-escape-room-madness-gallery-4"
+                              },
+                              {
+                              "id":5,
+                              "img":"/assets/game-gallery/allinadventures-virtual-escape-room-madness-gallery-5.jpg",
+                              "img_alt":"allinadventures-virtual-escape-room-madness-gallery-5"
+                              },
+                              {
+                              "id":6,
+                              "img":"/assets/game-gallery/allinadventures-virtual-escape-room-madness-gallery-6.jpg",
+                              "img_alt":"allinadventures-virtual-escape-room-madness-gallery-6"
+                              }
+                              ]
                         
 
 
@@ -135,6 +136,38 @@ const vGameData={
             "booking":"#"
 
             },
+            "vgamegallery":[
+              {
+              "id":1,
+              "img":"/assets/game-gallery/allinadventures-virtual-escape-room-zombie-apocalypse-gallery-1.jpg",
+              "img_alt":"allinadventures-virtual-escape-room-zombie-apocalypse-gallery-1"
+              },
+              {
+              "id":2,
+              "img":"/assets/game-gallery/allinadventures-virtual-escape-room-zombie-apocalypse-gallery-2.jpg",
+              "img_alt":"allinadventures-virtual-escape-room-zombie-apocalypse-gallery-2"
+              },
+              {
+              "id":3,
+              "img":"/assets/game-gallery/allinadventures-virtual-escape-room-zombie-apocalypse-gallery-3.jpg",
+              "img_alt":"allinadventures-virtual-escape-room-zombie-apocalypse-gallery-3"
+              },
+              {
+              "id":4,
+              "img":"/assets/game-gallery/allinadventures-virtual-escape-room-zombie-apocalypse-gallery-4.jpg",
+              "img_alt":"allinadventures-virtual-escape-room-zombie-apocalypse-gallery-4"
+              },
+              {
+              "id":5,
+              "img":"/assets/game-gallery/allinadventures-virtual-escape-room-zombie-apocalypse-gallery-5.jpg",
+              "img_alt":"allinadventures-virtual-escape-room-zombie-apocalypse-gallery-5"
+              },
+              {
+              "id":6,
+              "img":"/assets/game-gallery/allinadventures-virtual-escape-room-zombie-apocalypse-gallery-6.jpg",
+              "img_alt":"allinadventures-virtual-escape-room-zombie-apocalypse-gallery-6"
+              }
+              ]
         
 
 
@@ -172,6 +205,38 @@ const vGameData={
                              "booking":"#"
 
                              },
+                             "vgamegallery":[
+                              {
+                              "id":1,
+                              "img":"/assets/game-gallery/allinadventures-virtual-escape-room-bomb-gallery-1.jpg",
+                              "img_alt":"allinadventures-virtual-escape-room-bomb-gallery-1"
+                              },
+                              {
+                              "id":2,
+                              "img":"/assets/game-gallery/allinadventures-virtual-escape-room-bomb-gallery-2.jpg",
+                              "img_alt":"allinadventures-virtual-escape-room-bomb-gallery-2"
+                              },
+                              {
+                              "id":3,
+                              "img":"/assets/game-gallery/allinadventures-virtual-escape-room-bomb-gallery-3.jpg",
+                              "img_alt":"allinadventures-virtual-escape-room-bomb-gallery-3"
+                              },
+                              {
+                              "id":4,
+                              "img":"/assets/game-gallery/allinadventures-virtual-escape-room-bomb-gallery-4.jpg",
+                              "img_alt":"allinadventures-virtual-escape-room-bomb-gallery-4"
+                              },
+                              {
+                              "id":5,
+                              "img":"/assets/game-gallery/allinadventures-virtual-escape-room-bomb-gallery-5.jpg",
+                              "img_alt":"allinadventures-virtual-escape-room-bomb-gallery-5"
+                              },
+                              {
+                              "id":6,
+                              "img":"/assets/game-gallery/allinadventures-virtual-escape-room-bomb-gallery-6.jpg",
+                              "img_alt":"allinadventures-virtual-escape-room-bomb-gallery-6"
+                              }
+                              ]
     
 
 
@@ -209,6 +274,38 @@ const vGameData={
         "booking":"#"
 
         },
+        "vgamegallery":[
+          {
+          "id":1,
+          "img":"/assets/game-gallery/allinadventures-virtual-escape-room-prison-gallery-1.jpg",
+          "img_alt":"allinadventures-virtual-escape-room-prison-gallery-1"
+          },
+          {
+          "id":2,
+          "img":"/assets/game-gallery/allinadventures-virtual-escape-room-prison-gallery-2.jpg",
+          "img_alt":"allinadventures-virtual-escape-room-prison-gallery-2"
+          },
+          {
+          "id":3,
+          "img":"/assets/game-gallery/allinadventures-virtual-escape-room-prison-gallery-3.jpg",
+          "img_alt":"allinadventures-virtual-escape-room-prison-gallery-3"
+          },
+          {
+          "id":4,
+          "img":"/assets/game-gallery/allinadventures-virtual-escape-room-prison-gallery-4.jpg",
+          "img_alt":"allinadventures-virtual-escape-room-prison-gallery-4"
+          },
+          {
+          "id":5,
+          "img":"/assets/game-gallery/allinadventures-virtual-escape-room-prison-gallery-5.jpg",
+          "img_alt":"allinadventures-virtual-escape-room-prison-gallery-5"
+          },
+          {
+          "id":6,
+          "img":"/assets/game-gallery/allinadventures-virtual-escape-room-prison-gallery-6.jpg",
+          "img_alt":"allinadventures-virtual-escape-room-prison-gallery-6"
+          }
+          ]
 
 
 
@@ -247,6 +344,39 @@ const vGameData={
 
         },
 
+        "vgamegallery":[
+          {
+          "id":1,
+          "img":"/assets/game-gallery/allinadventures-virtual-escape-room-aztec-gallery-2.jpg",
+          "img_alt":"allinadventures-virtual-escape-room-aztec-gallery-1"
+          },
+          {
+          "id":2,
+          "img":"/assets/game-gallery/allinadventures-virtual-escape-room-aztec-gallery-2.jpg",
+          "img_alt":"allinadventures-virtual-escape-room-aztec-gallery-2"
+          },
+          {
+          "id":3,
+          "img":"/assets/game-gallery/allinadventures-virtual-escape-room-aztec-gallery-3.jpg",
+          "img_alt":"allinadventures-virtual-escape-room-aztec-gallery-3"
+          },
+          {
+          "id":4,
+          "img":"/assets/game-gallery/allinadventures-virtual-escape-room-aztec-gallery-4.jpg",
+          "img_alt":"allinadventures-virtual-escape-room-aztec-gallery-4"
+          },
+          {
+          "id":5,
+          "img":"/assets/game-gallery/allinadventures-virtual-escape-room-aztec-gallery-5.jpg",
+          "img_alt":"allinadventures-virtual-escape-room-aztec-gallery-5"
+          },
+          {
+          "id":6,
+          "img":"/assets/game-gallery/allinadventures-virtual-escape-room-aztec-gallery-6.jpg",
+          "img_alt":"allinadventures-virtual-escape-room-aztec-gallery-6"
+          }
+          ]
+
 
 
 },
@@ -284,6 +414,39 @@ const vGameData={
 
         },
 
+        "vgamegallery":[
+          {
+          "id":1,
+          "img":"/assets/game-gallery/allinadventures-virtual-escape-room-japan-gallery-1.jpg",
+          "img_alt":"allinadventures-virtual-escape-room-japan-gallery-1"
+          },
+          {
+          "id":2,
+          "img":"/assets/game-gallery/allinadventures-virtual-escape-room-japan-gallery-2.jpg",
+          "img_alt":"allinadventures-virtual-escape-room-japan-gallery-2"
+          },
+          {
+          "id":3,
+          "img":"/assets/game-gallery/allinadventures-virtual-escape-room-japan-gallery-3.jpg",
+          "img_alt":"allinadventures-virtual-escape-room-japan-gallery-3"
+          },
+          {
+          "id":4,
+          "img":"/assets/game-gallery/allinadventures-virtual-escape-room-japan-gallery-4.jpg",
+          "img_alt":"allinadventures-virtual-escape-room-japan-gallery-4"
+          },
+          {
+          "id":5,
+          "img":"/assets/game-gallery/allinadventures-virtual-escape-room-japan-gallery-5.jpg",
+          "img_alt":"allinadventures-virtual-escape-room-japan-gallery-5"
+          },
+          {
+          "id":6,
+          "img":"/assets/game-gallery/allinadventures-virtual-escape-room-japan-gallery-6.jpg",
+          "img_alt":"allinadventures-virtual-escape-room-japan-gallery-6"
+          }
+          ]
+
 
 
 },
@@ -317,6 +480,38 @@ const vGameData={
         "booking":"#"
 
         },
+        "vgamegallery":[
+          {
+          "id":1,
+          "img":"/assets/game-gallery/allinadventures-virtual-game-show-room-gallery-1.jpg",
+          "img_alt":"allinadventures-virtual-game-show-room-gallery-1"
+          },
+          {
+          "id":2,
+          "img":"/assets/game-gallery/allinadventures-virtual-game-show-room-gallery-2.jpg",
+          "img_alt":"allinadventures-virtual-game-show-room-gallery-2"
+          },
+          {
+          "id":3,
+          "img":"/assets/game-gallery/allinadventures-virtual-game-show-room-gallery-3.jpg",
+          "img_alt":"allinadventures-virtual-game-show-room-gallery-3"
+          },
+          {
+          "id":4,
+          "img":"/assets/game-gallery/allinadventures-virtual-game-show-room-gallery-4.jpg",
+          "img_alt":"allinadventures-virtual-game-show-room-gallery-4"
+          },
+          {
+          "id":5,
+          "img":"/assets/game-gallery/allinadventures-virtual-game-show-room-gallery-5.jpg",
+          "img_alt":"allinadventures-virtual-game-show-room-gallery-5"
+          },
+          {
+          "id":6,
+          "img":"/assets/game-gallery/allinadventures-virtual-game-show-room-gallery-6.jpg",
+          "img_alt":"allinadventures-virtual-game-show-room-gallery-6"
+          }
+          ]
 
 
 

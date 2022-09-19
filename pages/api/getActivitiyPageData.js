@@ -66,31 +66,37 @@ const activityDataset={
         
         },
         "activitygallery":[
-            {
-            "id":1,
-            "img":"/assets/game-gl-1.jpg"
-            },
-            {
-            "id":2,
-            "img":"/assets/game-gl-2.jpg"
-            },
-            {
-            "id":3,
-            "img":"/assets/game-gl-3.jpg"
-            },
-            {
-            "id":4,
-            "img":"/assets/game-gl-4.jpg"
-            },
-            {
-            "id":5,
-            "img":"/assets/game-gl-5.jpg"
-            },
-            {
-            "id":6,
-            "img":"/assets/game-gl-5.jpg"
-            }
-            ]
+          {
+          "id":1,
+          "img":"/assets/game-gallery/allinadventures-escape-from-alcatraz-gallery-1.jpg",
+          "img_alt":"allinadventures-escape-from-alcatraz-gallery-1"
+          },
+          {
+          "id":2,
+          "img":"/assets/game-gallery/allinadventures-escape-from-alcatraz-gallery-2.jpg",
+          "img_alt":"allinadventures-escape-from-alcatraz-gallery-2"
+          },
+          {
+          "id":3,
+          "img":"/assets/game-gallery/allinadventures-escape-from-alcatraz-gallery-3.jpg",
+          "img_alt":"allinadventures-escape-from-alcatraz-gallery-3"
+          },
+          {
+          "id":4,
+          "img":"/assets/game-gallery/allinadventures-escape-from-alcatraz-gallery-4.jpg",
+          "img_alt":"allinadventures-escape-from-alcatraz-gallery-4"
+          },
+          {
+          "id":5,
+          "img":"/assets/game-gallery/allinadventures-escape-from-alcatraz-gallery-5.jpg",
+          "img_alt":"allinadventures-escape-from-alcatraz-gallery-5"
+          },
+          {
+          "id":6,
+          "img":"/assets/game-gallery/allinadventures-escape-from-alcatraz-gallery-6.jpg",
+          "img_alt":"allinadventures-escape-from-alcatraz-gallery-6"
+          }
+          ]
                            },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
@@ -125,31 +131,37 @@ const activityDataset={
         
         },
         "activitygallery":[
-            {
-            "id":1,
-            "img":"/assets/game-gl-1.jpg"
-            },
-            {
-            "id":2,
-            "img":"/assets/game-gl-2.jpg"
-            },
-            {
-            "id":3,
-            "img":"/assets/game-gl-3.jpg"
-            },
-            {
-            "id":4,
-            "img":"/assets/game-gl-4.jpg"
-            },
-            {
-            "id":5,
-            "img":"/assets/game-gl-5.jpg"
-            },
-            {
-            "id":6,
-            "img":"/assets/game-gl-5.jpg"
-            }
-            ]
+          {
+          "id":1,
+          "img":"/assets/game-gallery/allinadventures-treasure-island-gallery-1.jpg",
+          "img_alt":"allinadventures-treasure-island-gallery-1"
+          },
+          {
+          "id":2,
+          "img":"/assets/game-gallery/allinadventures-treasure-island-gallery-2.jpg",
+          "img_alt":"allinadventures-treasure-island-gallery-2"
+          },
+          {
+          "id":3,
+          "img":"/assets/game-gallery/allinadventures-treasure-island-gallery-3.jpg",
+          "img_alt":"allinadventures-treasure-island-gallery-3"
+          },
+          {
+          "id":4,
+          "img":"/assets/game-gallery/allinadventures-treasure-island-gallery-4.jpg",
+          "img_alt":"allinadventures-treasure-island-gallery-4"
+          },
+          {
+          "id":5,
+          "img":"/assets/game-gallery/allinadventures-treasure-island-gallery-5.jpg",
+          "img_alt":"allinadventures-treasure-island-gallery-5"
+          },
+          {
+          "id":6,
+          "img":"/assets/game-gallery/allinadventures-treasure-island-gallery-6.jpg",
+          "img_alt":"allinadventures-treasure-island-gallery-6"
+          }
+          ]
                       },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
@@ -184,31 +196,37 @@ const activityDataset={
         
         },
         "activitygallery":[
-            {
-            "id":1,
-            "img":"/assets/game-gl-1.jpg"
-            },
-            {
-            "id":2,
-            "img":"/assets/game-gl-2.jpg"
-            },
-            {
-            "id":3,
-            "img":"/assets/game-gl-3.jpg"
-            },
-            {
-            "id":4,
-            "img":"/assets/game-gl-4.jpg"
-            },
-            {
-            "id":5,
-            "img":"/assets/game-gl-5.jpg"
-            },
-            {
-            "id":6,
-            "img":"/assets/game-gl-5.jpg"
-            }
-            ]
+          {
+          "id":1,
+          "img":"/assets/game-gallery/allinadventures-superheros-adventure-gallery-1.jpg",
+          "img_alt":"allinadventures-superheros-adventure-gallery-1"
+          },
+          {
+          "id":2,
+          "img":"/assets/game-gallery/allinadventures-superheros-adventure-gallery-2.jpg",
+          "img_alt":"allinadventures-superheros-adventure-gallery-2"
+          },
+          {
+          "id":3,
+          "img":"/assets/game-gallery/allinadventures-superheros-adventure-gallery-3.jpg",
+          "img_alt":"allinadventures-superheros-adventure-gallery-3"
+          },
+          {
+          "id":4,
+          "img":"/assets/game-gallery/allinadventures-superheros-adventure-gallery-4.jpg",
+          "img_alt":"allinadventures-superheros-adventure-gallery-4"
+          },
+          {
+          "id":5,
+          "img":"/assets/game-gallery/allinadventures-superheros-adventure-gallery-5.jpg",
+          "img_alt":"allinadventures-superheros-adventure-gallery-5"
+          },
+          {
+          "id":6,
+          "img":"/assets/game-gallery/allinadventures-superheros-adventure-gallery-6.jpg",
+          "img_alt":"allinadventures-superheros-adventure-gallery-6"
+          }
+          ]
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
@@ -243,31 +261,37 @@ const activityDataset={
         
         },
         "activitygallery":[
-            {
-            "id":1,
-            "img":"/assets/game-gl-1.jpg"
-            },
-            {
-            "id":2,
-            "img":"/assets/game-gl-2.jpg"
-            },
-            {
-            "id":3,
-            "img":"/assets/game-gl-3.jpg"
-            },
-            {
-            "id":4,
-            "img":"/assets/game-gl-4.jpg"
-            },
-            {
-            "id":5,
-            "img":"/assets/game-gl-5.jpg"
-            },
-            {
-            "id":6,
-            "img":"/assets/game-gl-5.jpg"
-            }
-            ]
+          {
+          "id":1,
+          "img":"/assets/game-gallery/allinadventures-zombie-apocalypse-gallery-1.jpg",
+          "img_alt":"allinadventures-zombie-apocalypse-gallery-1"
+          },
+          {
+          "id":2,
+          "img":"/assets/game-gallery/allinadventures-zombie-apocalypse-gallery-2.jpg",
+          "img_alt":"allinadventures-zombie-apocalypse-gallery-2"
+          },
+          {
+          "id":3,
+          "img":"/assets/game-gallery/allinadventures-zombie-apocalypse-gallery-3.jpg",
+          "img_alt":"allinadventures-zombie-apocalypse-gallery-3"
+          },
+          {
+          "id":4,
+          "img":"/assets/game-gallery/allinadventures-zombie-apocalypse-gallery-4.jpg",
+          "img_alt":"allinadventures-zombie-apocalypse-gallery-4"
+          },
+          {
+          "id":5,
+          "img":"/assets/game-gallery/allinadventures-zombie-apocalypse-gallery-5.jpg",
+          "img_alt":"allinadventures-zombie-apocalypse-gallery-5"
+          },
+          {
+          "id":6,
+          "img":"/assets/game-gallery/allinadventures-zombie-apocalypse-gallery-6.jpg",
+          "img_alt":"allinadventures-zombie-apocalypse-gallery-6"
+          }
+          ]
     },
     //============================================zombie-apocalypse end4
       //============================================special-agent5
@@ -302,31 +326,37 @@ const activityDataset={
           
           },
           "activitygallery":[
-              {
-              "id":1,
-              "img":"/assets/game-gl-1.jpg"
-              },
-              {
-              "id":2,
-              "img":"/assets/game-gl-2.jpg"
-              },
-              {
-              "id":3,
-              "img":"/assets/game-gl-3.jpg"
-              },
-              {
-              "id":4,
-              "img":"/assets/game-gl-4.jpg"
-              },
-              {
-              "id":5,
-              "img":"/assets/game-gl-5.jpg"
-              },
-              {
-              "id":6,
-              "img":"/assets/game-gl-5.jpg"
-              }
-              ]
+            {
+            "id":1,
+            "img":"/assets/game-gallery/allinadventures-special-agent-gallery-1.jpg",
+            "img_alt":"allinadventures-special-agent-gallery-1"
+            },
+            {
+            "id":2,
+            "img":"/assets/game-gallery/allinadventures-special-agent-gallery-2.jpg",
+            "img_alt":"allinadventures-special-agent-gallery-2"
+            },
+            {
+            "id":3,
+            "img":"/assets/game-gallery/allinadventures-special-agent-gallery-3.jpg",
+            "img_alt":"allinadventures-special-agent-gallery-3"
+            },
+            {
+            "id":4,
+            "img":"/assets/game-gallery/allinadventures-special-agent-gallery-4.jpg",
+            "img_alt":"allinadventures-special-agent-gallery-4"
+            },
+            {
+            "id":5,
+            "img":"/assets/game-gallery/allinadventures-special-agent-gallery-5.jpg",
+            "img_alt":"allinadventures-special-agent-gallery-5"
+            },
+            {
+            "id":6,
+            "img":"/assets/game-gallery/allinadventures-special-agent-gallery-6.jpg",
+            "img_alt":"allinadventures-special-agent-gallery-6"
+            }
+            ]
       },
       //============================================special-agent end5
        //============================================hollywood-premiere 6
@@ -361,31 +391,37 @@ const activityDataset={
           
           },
           "activitygallery":[
-              {
-              "id":1,
-              "img":"/assets/game-gl-1.jpg"
-              },
-              {
-              "id":2,
-              "img":"/assets/game-gl-2.jpg"
-              },
-              {
-              "id":3,
-              "img":"/assets/game-gl-3.jpg"
-              },
-              {
-              "id":4,
-              "img":"/assets/game-gl-4.jpg"
-              },
-              {
-              "id":5,
-              "img":"/assets/game-gl-5.jpg"
-              },
-              {
-              "id":6,
-              "img":"/assets/game-gl-5.jpg"
-              }
-              ]
+            {
+            "id":1,
+            "img":"/assets/game-gallery/allinadventures-hollywood-premiere-gallery-1.jpg",
+            "img_alt":"allinadventures-hollywood-premiere-gallery-1"
+            },
+            {
+            "id":2,
+            "img":"/assets/game-gallery/allinadventures-hollywood-premiere-gallery-2.jpg",
+            "img_alt":"allinadventures-hollywood-premiere-gallery-2"
+            },
+            {
+            "id":3,
+            "img":"/assets/game-gallery/allinadventures-hollywood-premiere-gallery-3.jpg",
+            "img_alt":"allinadventures-hollywood-premiere-gallery-3"
+            },
+            {
+            "id":4,
+            "img":"/assets/game-gallery/allinadventures-hollywood-premiere-gallery-4.jpg",
+            "img_alt":"allinadventures-hollywood-premiere-gallery-4"
+            },
+            {
+            "id":5,
+            "img":"/assets/game-gallery/allinadventures-hollywood-premiere-gallery-5.jpg",
+            "img_alt":"allinadventures-hollywood-premiere-gallery-5"
+            },
+            {
+            "id":6,
+            "img":"/assets/game-gallery/allinadventures-hollywood-premiere-gallery-6.jpg",
+            "img_alt":"allinadventures-hollywood-premiere-gallery-6"
+            }
+            ]
       },
       //============================================hollywood-premiere 6
        //============================================sherlocks-library 7
@@ -420,31 +456,37 @@ const activityDataset={
           
           },
           "activitygallery":[
-              {
-              "id":1,
-              "img":"/assets/game-gl-1.jpg"
-              },
-              {
-              "id":2,
-              "img":"/assets/game-gl-2.jpg"
-              },
-              {
-              "id":3,
-              "img":"/assets/game-gl-3.jpg"
-              },
-              {
-              "id":4,
-              "img":"/assets/game-gl-4.jpg"
-              },
-              {
-              "id":5,
-              "img":"/assets/game-gl-5.jpg"
-              },
-              {
-              "id":6,
-              "img":"/assets/game-gl-5.jpg"
-              }
-              ]
+            {
+            "id":1,
+            "img":"/assets/game-gallery/allinadventures-sherlocks-library-gallery-1.jpg",
+            "img_alt":"allinadventures-sherlocks-library-gallery-1"
+            },
+            {
+            "id":2,
+            "img":"/assets/game-gallery/allinadventures-sherlocks-library-gallery-2.jpg",
+            "img_alt":"allinadventures-sherlocks-library-gallery-2"
+            },
+            {
+            "id":3,
+            "img":"/assets/game-gallery/allinadventures-sherlocks-library-gallery-3.jpg",
+            "img_alt":"allinadventures-sherlocks-library-gallery-3"
+            },
+            {
+            "id":4,
+            "img":"/assets/game-gallery/allinadventures-sherlocks-library-gallery-4.jpg",
+            "img_alt":"allinadventures-sherlocks-library-gallery-4"
+            },
+            {
+            "id":5,
+            "img":"/assets/game-gallery/allinadventures-sherlocks-library-gallery-5.jpg",
+            "img_alt":"allinadventures-sherlocks-library-gallery-5"
+            },
+            {
+            "id":6,
+            "img":"/assets/game-gallery/allinadventures-sherlocks-library-gallery-6.jpg",
+            "img_alt":"allinadventures-sherlocks-library-gallery-6"
+            }
+            ]
       },
       //============================================hollywood-premiere 7
        //============================================houdinis-magic-cell 8
@@ -479,31 +521,37 @@ const activityDataset={
           
           },
           "activitygallery":[
-              {
-              "id":1,
-              "img":"/assets/game-gl-1.jpg"
-              },
-              {
-              "id":2,
-              "img":"/assets/game-gl-2.jpg"
-              },
-              {
-              "id":3,
-              "img":"/assets/game-gl-3.jpg"
-              },
-              {
-              "id":4,
-              "img":"/assets/game-gl-4.jpg"
-              },
-              {
-              "id":5,
-              "img":"/assets/game-gl-5.jpg"
-              },
-              {
-              "id":6,
-              "img":"/assets/game-gl-5.jpg"
-              }
-              ]
+            {
+            "id":1,
+            "img":"/assets/game-gallery/allinadventures-houdinis-magic-cell-gallery-1.jpg",
+            "img_alt":"allinadventures-houdinis-magic-cell-gallery-1"
+            },
+            {
+            "id":2,
+            "img":"/assets/game-gallery/allinadventures-houdinis-magic-cell-gallery-2.jpg",
+            "img_alt":"allinadventures-houdinis-magic-cell-gallery-2"
+            },
+            {
+            "id":3,
+            "img":"/assets/game-gallery/allinadventures-houdinis-magic-cell-gallery-3.jpg",
+            "img_alt":"allinadventures-houdinis-magic-cell-gallery-3"
+            },
+            {
+            "id":4,
+            "img":"/assets/game-gallery/allinadventures-houdinis-magic-cell-gallery-4.jpg",
+            "img_alt":"allinadventures-houdinis-magic-cell-gallery-4"
+            },
+            {
+            "id":5,
+            "img":"/assets/game-gallery/allinadventures-houdinis-magic-cell-gallery-5.jpg",
+            "img_alt":"allinadventures-houdinis-magic-cell-gallery-5"
+            },
+            {
+            "id":6,
+            "img":"/assets/game-gallery/allinadventures-houdinis-magic-cell-gallery-6.jpg",
+            "img_alt":"allinadventures-houdinis-magic-cell-gallery-6"
+            }
+            ]
       },
       //============================================houdinis-magic-cell 8
        //============================================magic-castle 9
@@ -538,31 +586,37 @@ const activityDataset={
           
           },
           "activitygallery":[
-              {
-              "id":1,
-              "img":"/assets/game-gl-1.jpg"
-              },
-              {
-              "id":2,
-              "img":"/assets/game-gl-2.jpg"
-              },
-              {
-              "id":3,
-              "img":"/assets/game-gl-3.jpg"
-              },
-              {
-              "id":4,
-              "img":"/assets/game-gl-4.jpg"
-              },
-              {
-              "id":5,
-              "img":"/assets/game-gl-5.jpg"
-              },
-              {
-              "id":6,
-              "img":"/assets/game-gl-5.jpg"
-              }
-              ]
+            {
+            "id":1,
+            "img":"/assets/game-gallery/allinadventures-magic-castle-gallery-1.jpg",
+            "img_alt":"allinadventures-magic-castle-gallery-1"
+            },
+            {
+            "id":2,
+            "img":"/assets/game-gallery/allinadventures-magic-castle-gallery-2.jpg",
+            "img_alt":"allinadventures-magic-castle-gallery-2"
+            },
+            {
+            "id":3,
+            "img":"/assets/game-gallery/allinadventures-magic-castle-gallery-3.jpg",
+            "img_alt":"allinadventures-magic-castle-gallery-3"
+            },
+            {
+            "id":4,
+            "img":"/assets/game-gallery/allinadventures-magic-castle-gallery-4.jpg",
+            "img_alt":"allinadventures-magic-castle-gallery-4"
+            },
+            {
+            "id":5,
+            "img":"/assets/game-gallery/allinadventures-magic-castle-gallery-5.jpg",
+            "img_alt":"allinadventures-magic-castle-gallery-5"
+            },
+            {
+            "id":6,
+            "img":"/assets/game-gallery/allinadventures-magic-castle-gallery-6.jpg",
+            "img_alt":"allinadventures-magic-castle-gallery-6"
+            }
+            ]
       },
       //============================================magic-castle end 9
       //============================================black-ops 10
@@ -597,31 +651,37 @@ const activityDataset={
           
           },
           "activitygallery":[
-              {
-              "id":1,
-              "img":"/assets/game-gl-1.jpg"
-              },
-              {
-              "id":2,
-              "img":"/assets/game-gl-2.jpg"
-              },
-              {
-              "id":3,
-              "img":"/assets/game-gl-3.jpg"
-              },
-              {
-              "id":4,
-              "img":"/assets/game-gl-4.jpg"
-              },
-              {
-              "id":5,
-              "img":"/assets/game-gl-5.jpg"
-              },
-              {
-              "id":6,
-              "img":"/assets/game-gl-5.jpg"
-              }
-              ]
+            {
+            "id":1,
+            "img":"/assets/game-gallery/allinadventures-black-ops-gallery-1.jpg",
+            "img_alt":"allinadventures-black-ops-gallery-1"
+            },
+            {
+            "id":2,
+            "img":"/assets/game-gallery/allinadventures-black-ops-gallery-2.jpg",
+            "img_alt":"allinadventures-black-ops-gallery-2"
+            },
+            {
+            "id":3,
+            "img":"/assets/game-gallery/allinadventures-black-ops-gallery-3.jpg",
+            "img_alt":"allinadventures-black-ops-gallery-3"
+            },
+            {
+            "id":4,
+            "img":"/assets/game-gallery/allinadventures-black-ops-gallery-4.jpg",
+            "img_alt":"allinadventures-black-ops-gallery-4"
+            },
+            {
+            "id":5,
+            "img":"/assets/game-gallery/allinadventures-black-ops-gallery-5.jpg",
+            "img_alt":"allinadventures-black-ops-gallery-5"
+            },
+            {
+            "id":6,
+            "img":"/assets/game-gallery/allinadventures-black-ops-gallery-6.jpg",
+            "img_alt":"allinadventures-black-ops-gallery-6"
+            }
+            ]
                  },
       //============================================black-ops 10
       //============================================lost-in-the-jungle 11
@@ -656,31 +716,37 @@ const activityDataset={
           
           },
           "activitygallery":[
-              {
-              "id":1,
-              "img":"/assets/game-gl-1.jpg"
-              },
-              {
-              "id":2,
-              "img":"/assets/game-gl-2.jpg"
-              },
-              {
-              "id":3,
-              "img":"/assets/game-gl-3.jpg"
-              },
-              {
-              "id":4,
-              "img":"/assets/game-gl-4.jpg"
-              },
-              {
-              "id":5,
-              "img":"/assets/game-gl-5.jpg"
-              },
-              {
-              "id":6,
-              "img":"/assets/game-gl-5.jpg"
-              }
-              ]
+            {
+            "id":1,
+            "img":"/assets/game-gallery/allinadventures-lost-in-the-jungle-gallery-1.jpg",
+            "img_alt":"allinadventures-lost-in-the-jungle-gallery-1"
+            },
+            {
+            "id":2,
+            "img":"/assets/game-gallery/allinadventures-lost-in-the-jungle-gallery-2.jpg",
+            "img_alt":"allinadventures-lost-in-the-jungle-gallery-2"
+            },
+            {
+            "id":3,
+            "img":"/assets/game-gallery/allinadventures-lost-in-the-jungle-gallery-3.jpg",
+            "img_alt":"allinadventures-lost-in-the-jungle-gallery-3"
+            },
+            {
+            "id":4,
+            "img":"/assets/game-gallery/allinadventures-lost-in-the-jungle-gallery-4.jpg",
+            "img_alt":"allinadventures-lost-in-the-jungle-gallery-4"
+            },
+            {
+            "id":5,
+            "img":"/assets/game-gallery/allinadventures-lost-in-the-jungle-gallery-5.jpg",
+            "img_alt":"allinadventures-lost-in-the-jungle-gallery-5"
+            },
+            {
+            "id":6,
+            "img":"/assets/game-gallery/allinadventures-lost-in-the-jungle-gallery-6.jpg",
+            "img_alt":"allinadventures-lost-in-the-jungle-gallery-6"
+            }
+            ]
       },
       //============================================lost-in-the-jungle end 11
       
@@ -716,31 +782,37 @@ const activityDataset={
           
           },
           "activitygallery":[
-              {
-              "id":1,
-              "img":"/assets/game-gl-1.jpg"
-              },
-              {
-              "id":2,
-              "img":"/assets/game-gl-2.jpg"
-              },
-              {
-              "id":3,
-              "img":"/assets/game-gl-3.jpg"
-              },
-              {
-              "id":4,
-              "img":"/assets/game-gl-4.jpg"
-              },
-              {
-              "id":5,
-              "img":"/assets/game-gl-5.jpg"
-              },
-              {
-              "id":6,
-              "img":"/assets/game-gl-5.jpg"
-              }
-              ]
+            {
+            "id":1,
+            "img":"/assets/game-gallery/allinadventures-wizarding-school-gallery-1.jpg",
+            "img_alt":"allinadventures-wizarding-school-gallery-1"
+            },
+            {
+            "id":2,
+            "img":"/assets/game-gallery/allinadventures-wizarding-school-gallery-2.jpg",
+            "img_alt":"allinadventures-wizarding-school-gallery-2"
+            },
+            {
+            "id":3,
+            "img":"/assets/game-gallery/allinadventures-wizarding-school-gallery-3.jpg",
+            "img_alt":"allinadventures-wizarding-school-gallery-3"
+            },
+            {
+            "id":4,
+            "img":"/assets/game-gallery/allinadventures-wizarding-school-gallery-4.jpg",
+            "img_alt":"allinadventures-wizarding-school-gallery-4"
+            },
+            {
+            "id":5,
+            "img":"/assets/game-gallery/allinadventures-wizarding-school-gallery-5.jpg",
+            "img_alt":"allinadventures-wizarding-school-gallery-5"
+            },
+            {
+            "id":6,
+            "img":"/assets/game-gallery/allinadventures-wizarding-school-gallery-6.jpg",
+            "img_alt":"allinadventures-wizarding-school-gallery-6"
+            }
+            ]
       },
       //============================================wizarding-school end 13
       //============================================locked-in-the-Lift 14
@@ -775,31 +847,37 @@ const activityDataset={
           
           },
           "activitygallery":[
-              {
-              "id":1,
-              "img":"/assets/game-gl-1.jpg"
-              },
-              {
-              "id":2,
-              "img":"/assets/game-gl-2.jpg"
-              },
-              {
-              "id":3,
-              "img":"/assets/game-gl-3.jpg"
-              },
-              {
-              "id":4,
-              "img":"/assets/game-gl-4.jpg"
-              },
-              {
-              "id":5,
-              "img":"/assets/game-gl-5.jpg"
-              },
-              {
-              "id":6,
-              "img":"/assets/game-gl-5.jpg"
-              }
-              ]
+            {
+            "id":1,
+            "img":"/assets/game-gallery/allinadventures-locked-in-the-lift-gallery-1.jpg",
+            "img_alt":"allinadventures-locked-in-the-lift-gallery-1"
+            },
+            {
+            "id":2,
+            "img":"/assets/game-gallery/allinadventures-locked-in-the-lift-gallery-2.jpg",
+            "img_alt":"allinadventures-locked-in-the-lift-gallery-2"
+            },
+            {
+            "id":3,
+            "img":"/assets/game-gallery/allinadventures-locked-in-the-lift-gallery-3.jpg",
+            "img_alt":"allinadventures-locked-in-the-lift-gallery-3"
+            },
+            {
+            "id":4,
+            "img":"/assets/game-gallery/allinadventures-locked-in-the-lift-gallery-4.jpg",
+            "img_alt":"allinadventures-locked-in-the-lift-gallery-4"
+            },
+            {
+            "id":5,
+            "img":"/assets/game-gallery/allinadventures-locked-in-the-lift-gallery-5.jpg",
+            "img_alt":"allinadventures-locked-in-the-lift-gallery-5"
+            },
+            {
+            "id":6,
+            "img":"/assets/game-gallery/allinadventures-locked-in-the-lift-gallery-6.jpg",
+            "img_alt":"allinadventures-locked-in-the-lift-gallery-6"
+            }
+            ]
       },
       //============================================locked-in-the-lift end 14
       //============================================game-show-room 15
@@ -831,31 +909,38 @@ const activityDataset={
           
           },
           "activitygallery":[
-              {
-              "id":1,
-              "img":"/assets/game-gl-1.jpg"
-              },
-              {
-              "id":2,
-              "img":"/assets/game-gl-2.jpg"
-              },
-              {
-              "id":3,
-              "img":"/assets/game-gl-3.jpg"
-              },
-              {
-              "id":4,
-              "img":"/assets/game-gl-4.jpg"
-              },
-              {
-              "id":5,
-              "img":"/assets/game-gl-5.jpg"
-              },
-              {
-              "id":6,
-              "img":"/assets/game-gl-5.jpg"
-              }
-              ]
+            {
+            "id":1,
+            "img":"/assets/game-gallery/allinadventures-game-show-room-gallery-1.jpg",
+            "img_alt":"allinadventures-game-show-room-gallery-1"
+            },
+            {
+            "id":2,
+            "img":"/assets/game-gallery/allinadventures-game-show-room-gallery-2.jpg",
+            "img_alt":"allinadventures-game-show-room-gallery-2"
+            },
+            {
+            "id":3,
+            "img":"/assets/game-gallery/allinadventures-game-show-room-gallery-3.jpg",
+            "img_alt":"allinadventures-game-show-room-gallery-3"
+            },
+            {
+            "id":4,
+            "img":"/assets/game-gallery/allinadventures-game-show-room-gallery-4.jpg",
+            "img_alt":"allinadventures-game-show-room-gallery-4"
+            },
+            {
+            "id":5,
+            "img":"/assets/game-gallery/allinadventures-game-show-room-gallery-5.jpg",
+            "img_alt":"allinadventures-game-show-room-gallery-5"
+            },
+            {
+            "id":6,
+            "img":"/assets/game-gallery/allinadventures-game-show-room-gallery-6.jpg",
+            "img_alt":"allinadventures-game-show-room-gallery-6"
+            }
+            ]
+          
       },
       //============================================game-show-room end 15
       //============================================axe-throwing 16
@@ -887,31 +972,39 @@ const activityDataset={
           
           },
           "activitygallery":[
-              {
-              "id":1,
-              "img":"/assets/game-gl-1.jpg"
-              },
-              {
-              "id":2,
-              "img":"/assets/game-gl-2.jpg"
-              },
-              {
-              "id":3,
-              "img":"/assets/game-gl-3.jpg"
-              },
-              {
-              "id":4,
-              "img":"/assets/game-gl-4.jpg"
-              },
-              {
-              "id":5,
-              "img":"/assets/game-gl-5.jpg"
-              },
-              {
-              "id":6,
-              "img":"/assets/game-gl-5.jpg"
-              }
-              ]
+            {
+            "id":1,
+            "img":"/assets/game-gallery/allinadventures-axe-throwing-gallery-1.jpg",
+            "img_alt":"allinadventures-axe-throwing 1"
+            },
+            {
+            "id":2,
+            "img":"/assets/game-gallery/allinadventures-axe-throwing-gallery-2.jpg",
+            "img_alt":"allinadventures-axe-throwing 2"
+            },
+            {
+            "id":3,
+            "img":"/assets/game-gallery/allinadventures-axe-throwing-gallery-3.jpg",
+            "img_alt":"allinadventures-axe-throwing 3"
+            },
+            {
+            "id":4,
+            "img":"/assets/game-gallery/allinadventures-axe-throwing-gallery-4.jpg",
+            "img_alt":"allinadventures-axe-throwing 4"
+            },
+            {
+            "id":5,
+            "img":"/assets/game-gallery/allinadventures-axe-throwing-gallery-5.jpg",
+            "img_alt":"allinadventures-axe-throwing 5"
+            },
+            {
+            "id":6,
+            "img":"/assets/game-gallery/allinadventures-axe-throwing-gallery-6.jpg",
+            "img_alt":"allinadventures-axe-throwing 6"
+            }
+            ]
+
+          
       },
       //============================================axe-throwing end 16
        //============================================beat-the-seat 17
@@ -942,30 +1035,37 @@ const activityDataset={
           "videoid":"pfdyF_d4Z40"
           
           },
-          "activitygallery":[
+          
+            "activitygallery":[
               {
               "id":1,
-              "img":"/assets/game-gl-1.jpg"
+              "img":"/assets/game-gallery/allinadventures-beat-the-seat-gallery-1.jpg",
+              "img_alt":"allinadventures-beat-the-seat-gallery-1"
               },
               {
               "id":2,
-              "img":"/assets/game-gl-2.jpg"
+              "img":"/assets/game-gallery/allinadventures-beat-the-seat-gallery-2.jpg",
+              "img_alt":"allinadventures-beat-the-seat-gallery-2"
               },
               {
               "id":3,
-              "img":"/assets/game-gl-3.jpg"
+              "img":"/assets/game-gallery/allinadventures-beat-the-seat-gallery-3.jpg",
+              "img_alt":"allinadventures-beat-the-seat-gallery-3"
               },
               {
               "id":4,
-              "img":"/assets/game-gl-4.jpg"
+              "img":"/assets/game-gallery/allinadventures-beat-the-seat-gallery-4.jpg",
+              "img_alt":"allinadventures-beat-the-seat-gallery-4"
               },
               {
               "id":5,
-              "img":"/assets/game-gl-5.jpg"
+              "img":"/assets/game-gallery/allinadventures-beat-the-seat-gallery-5.jpg",
+              "img_alt":"allinadventures-beat-the-seat-gallery-5"
               },
               {
               "id":6,
-              "img":"/assets/game-gl-5.jpg"
+              "img":"/assets/game-gallery/allinadventures-beat-the-seat-gallery-6.jpg",
+              "img_alt":"allinadventures-beat-the-seat-gallery-6"
               }
               ]
       },

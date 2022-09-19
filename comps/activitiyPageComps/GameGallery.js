@@ -41,7 +41,7 @@ const GameGallery=(props)=>{
                      
                     <TitleSeparator title="PHOTO GALLERY" color="golden-text" weight="font-bold"/>
                     <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
-                                 <p className="text-gray-700 md:px-8">Meet some of our happy adventurers and a few of the scenes from the Escape From Alcatraz escape game. Experience this escape room at All In Adventures.</p>
+                                 <p className="text-gray-700 md:px-8">Meet some of our happy adventurers and a few of the scenes from the {props.activityname && <span>{props.activityname}</span>} {!props.activityname && <span>Allinadventure</span>} escape game. Experience this escape room at All In Adventures.</p>
                     </div>
                 </div>
                 <div className="hidden md:block game-gallery"> 
@@ -50,10 +50,10 @@ const GameGallery=(props)=>{
                             props.galleryitem.map((item)=>{
 
                                 return(
-                                    <div key={item.id} className="game-gl-item cursor-pointer shadow-lg borderr-2 border-transparent hover:border-2 hover:border-[#D3A54F]"> 
+                                    <div key={item.id} className="game-gl-item cursor-pointer shadow-lg border-2 inset border-transparent hover:border-2 hover:border-[#D3A54F]"> 
                                     <img src={
                                         item.img
-                                    }></img>
+                                    } alt={item.img_alt}></img>
                                 </div>
                                 )
                             })
@@ -95,7 +95,7 @@ const GameGallery=(props)=>{
                                     <div key={item.id} className="game-gl-item"> 
                                     <img src={
                                         item.img
-                                    }></img>
+                                    } alt={item.img_alt}></img>
                                 </div>
                                 )
                             })

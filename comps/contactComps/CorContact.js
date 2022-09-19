@@ -59,7 +59,15 @@ const CorContact=()=>{
                                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between ">
                                             <div className="form-col w-full md:w-[48%]">
                                                 <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your first name? *</p>
-                                                <input type="text" className="w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Your first name" required></input>
+                                                <input 
+                                                    type="text" 
+                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-white" 
+                                                    placeholder="Your first name" 
+                                                    pattern="[a-zA-z ]{3,20}"
+                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
+                                                    required>
+
+                                                    </input>
                                          </div>
                                          <div className="form-col w-full md:w-[48%]">
                                                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your last name? *</p>
