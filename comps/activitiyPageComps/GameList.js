@@ -28,7 +28,7 @@ const GameList=(props)=>{
                             return(
                                 activity.activity_category=="escapegame" &&
                                 <div key={activity.id} className="all-game-list bg-center bg-cover p-4 md:p-6 lg:p-8" 
-                                        style={{backgroundImage:"linear-gradient(57deg, rgba(0,0,0,0.98),rgba(0,0,0,0)),url('"+activity.activity_cover_image+"')",
+                                        style={{backgroundImage:"linear-gradient(54deg, rgba(0,0,0,0.98),rgba(0,0,0,0.86),rgba(0,0,0,0.76),rgba(0,0,0,0),rgba(0,0,0,0)),url('"+activity.activity_cover_image+"')",
                                         boxShadow:"0px 0px 16px 2px rgba(0,0,0,0.45)"}}>
                                 <div className="all-game-list-head flex justify-between">
                                         <div className="all-game-info">

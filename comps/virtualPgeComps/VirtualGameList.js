@@ -19,7 +19,7 @@ const VirtualGameList=(props)=>{
                             return(
                                
                                 <div key={vgame.id} className="all-game-list bg-center bg-cover p-4 md:p-6 lg:p-8" 
-                                        style={{backgroundImage:"linear-gradient(40deg,rgba(0,0,0,0.82),rgba(0,0,0,0.6),rgba(0,0,0,0.2)),url('"+vgame.game_cover_image+"')",
+                                        style={{backgroundImage:"linear-gradient(53deg, rgba(0,0,0,0.98),rgba(0,0,0,0.86),rgba(0,0,0,0.76),rgba(0,0,0,0),rgba(0,0,0,0)),url('"+vgame.game_cover_image+"')",
                                         boxShadow:"0px 0px 16px 2px rgba(0,0,0,0.45)"}}>
                                 <div className="all-game-list-head flex justify-between">
                                         <div className="all-game-info">
@@ -42,7 +42,7 @@ const VirtualGameList=(props)=>{
                                  <div className="all-game-list-bottom">
                                         <div className=" text-center md:text-left">
                                           <h3 className="card-game-title text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-white">{vgame.game_name}</h3>
-                                          <p className="text-gray-200 lg:text-lg mx-auto md:mx-0 max-w-[490px]">{vgame.game_desc}
+                                          <p className="text-gray-200 lg:text-lg mx-auto md:mx-0 max-w-[570px]">{vgame.game_desc}
                                        </p>
                                          </div>
                                          <div className="card-game-link mt-4 text-left">

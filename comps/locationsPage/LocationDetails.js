@@ -191,7 +191,7 @@ const LocationDetails=(props)=>{
                 </div>
                 <div className="loc-cont flex justify-center mt-8">
                         
-                    <Link href={"/"+props.locdetail.slug+"/contact"}>
+                    <Link href={"/"+props.locdetail.slug+"/contact-store"}>
                         <a className="uppercase text-lg font-medium text-white bg-red-600 py-3 px-10 rounded-full">Contact store</a>
                     </Link>
 
