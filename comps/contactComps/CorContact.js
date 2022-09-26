@@ -54,7 +54,7 @@ const CorContact=()=>{
                         {/*======================== corporate contact form=======================*/}
                         <div className="c-form-form md:w-[56%] lg:w-[60%] order-1 md:order-2">
                             <div className="bg-[#F4E6C3] py-8 px-4 lg:p-8 rounded-lg drop-shadow"> 
-                                <form>
+                                <form onSubmit={()=>handleSubmit()}>
                                     {/*========================  contact form row=======================*/}
                                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between ">
                                             <div className="form-col w-full md:w-[48%]">
@@ -79,11 +79,21 @@ const CorContact=()=>{
                                  <div className="form-row flex flex-col space-y-3 md:flex-row md:space-y-0 justify-between my-3 md:my-10 lg:my-12">
                                         <div className="form-col w-full md:w-[48%]">
                                              <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your email? *</p>
-                                             <input type="text" className="w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Your email address" required></input>
+                                             <input type="email" 
+                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-white" 
+                                                    placeholder="Your email address" 
+                                                    pattern="[a-zA-z ]{3,20}"
+                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
+                                                    required></input>
                                          </div>
                                          <div className="form-col  w-full md:w-[48%]">
                                              <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your phone number? *</p>
-                                             <input type="text" className=" w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Your phone number" required></input>
+                                             <input type="text" 
+                                                    className=" w-full event-input  border-0 md:py-3 px-4 bg-white" 
+                                                    placeholder="Your phone number" 
+                                                    pattern="[+-0-9 ]{7,14}"
+                                                    title="phone number should number (0 to 9)."
+                                                    required></input>
                                          </div>
                                      </div>
                                     {/*======================================contact form row====================== */}

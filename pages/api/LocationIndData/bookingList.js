@@ -22,78 +22,75 @@ const blist={
     //**************** NY ******* */
               //===================================albany-ny===========
  "albany-ny":{
-        "shortname":"mysteryroom-austin",
+        "shortname":"mysteryroom-albany",
 
         "escape-from-alcatraz":{
-            "item":"44198",
-            "flow":"17839"
+            "item":"44609",
+            "flow":"17838"
         },
         "treasure-island":{
-            "item":"44198",
-            "flow":"17839"
+            "item":"44603",
+            "flow":"17838"
         },
         "superheros-adventure":{
-            "item":"44198",
-            "flow":"17839"
+            "item":"44606",
+            "flow":"17838"
         },
         "zombie-apocalypse":{
-            "item":"44198",
-            "flow":"17839"
+            "item":"44608",
+            "flow":"17838"
         },
         "special-agent":{
-            "item":"44198",
-            "flow":"17839"
+            "item":"44602",
+            "flow":"17838"
         },
         "hollywood-premiere":{
-            "item":"44198",
-            "flow":"17839"
+            "item":"44605",
+            "flow":"17838"
         },
         "sherlocks-library":{
-            "item":"44198",
-            "flow":"17839"
+            "item":"44607",
+            "flow":"17838"
         },
         "houdinis-magic-cell":{
-            "item":"44198",
-            "flow":"17839"
+            "item":"44601",
+            "flow":"17838"
         },
         "black-ops":{
-            "item":"44198",
-            "flow":"17839"
+            "item":"44604",
+            "flow":"17838"
         },
         "lost-in-the-jungle":{
             "item":"44198",
-            "flow":"17839"
+            "flow":"17838"
         },
-        "virtual-reality":{
-            "item":"44198",
-            "flow":"17839"
-        },
+        
         "wizarding-school":{
             "item":"44198",
-            "flow":"17839"
+            "flow":"17838"
         },
         "locked-in-the-lift":{
             "item":"44198",
-            "flow":"17839"
+            "flow":"17838"
         },
         "game-show-room":{
             "item":"44198",
-            "flow":"17839"
+            "flow":"17838"
         },
         "axe-throwing":{
             "item":"44198",
-            "flow":"17839"
+            "flow":"17838"
         },
         "beat-the-seat":{
             "item":"44198",
-            "flow":"17839"
+            "flow":"17838"
         },
         "magic-castle":{
             "item":"44198",
-            "flow":"17839"
+            "flow":"17838"
         },
         "gift-card":{
-            "item":"360204",
+            "item":"360203",
             "flow":"no"
         },
         "gift-addon":{
@@ -105,7 +102,7 @@ const blist={
             "flow":"no"
         },
         "party-package":{
-            "item":"17839",
+            "item":"44613",
             "flow":"no"
         }
       
@@ -113,55 +110,55 @@ const blist={
               //===================================albany-ny end===========
               //===================================buffalo-ny===========
  "buffalo-ny":{
-        "shortname":"mysteryroom-austin",
+        "shortname":"mysteryroom-buffalo",
 
         "escape-from-alcatraz":{
-            "item":"44198",
-            "flow":"17839"
+            "item":"44871",
+            "flow":"17840"
         },
         "treasure-island":{
-            "item":"44198",
-            "flow":"17839"
+            "item":"44874",
+            "flow":"17840"
         },
         "superheros-adventure":{
-            "item":"44198",
-            "flow":"17839"
+            "item":"44879",
+            "flow":"17840"
         },
         "zombie-apocalypse":{
-            "item":"44198",
-            "flow":"17839"
+            "item":"44877",
+            "flow":"17840"
         },
         "special-agent":{
-            "item":"44198",
-            "flow":"17839"
+            "item":"44876",
+            "flow":"17840"
         },
         "hollywood-premiere":{
-            "item":"44198",
-            "flow":"17839"
+            "item":"44872",
+            "flow":"17840"
         },
         "sherlocks-library":{
-            "item":"44198",
-            "flow":"17839"
+            "item":"44878",
+            "flow":"17840"
         },
         "houdinis-magic-cell":{
-            "item":"44198",
-            "flow":"17839"
+            "item":"44875",
+            "flow":"17840"
         },
         "black-ops":{
-            "item":"44198",
-            "flow":"17839"
+            "item":"44873",
+            "flow":"17840"
         },
         "lost-in-the-jungle":{
             "item":"44198",
-            "flow":"17839"
+            "flow":"17840"
         },
         "virtual-reality":{
             "item":"44198",
-            "flow":"17839"
+            "flow":"17840"
         },
         "wizarding-school":{
             "item":"44198",
-            "flow":"17839"
+            "flow":"17840"
         },
         "locked-in-the-lift":{
             "item":"44198",
@@ -169,22 +166,22 @@ const blist={
         },
         "game-show-room":{
             "item":"44198",
-            "flow":"17839"
+            "flow":"17840"
         },
         "axe-throwing":{
             "item":"44198",
-            "flow":"17839"
+            "flow":"17840"
         },
         "beat-the-seat":{
             "item":"44198",
-            "flow":"17839"
+            "flow":"17840"
         },
         "magic-castle":{
             "item":"44198",
-            "flow":"17839"
+            "flow":"17840"
         },
         "gift-card":{
-            "item":"360204",
+            "item":"360206",
             "flow":"no"
         },
         "gift-addon":{
@@ -196,7 +193,7 @@ const blist={
             "flow":"no"
         },
         "party-package":{
-            "item":"17839",
+            "item":"44880",
             "flow":"no"
         }
       

@@ -20,8 +20,8 @@ export const getAllActivity=()=>{
                             "totalUniqueGames": getTotal().uniqueGames,
                            "totalFiveStarReview":  getTotal().totalReview,
                           "totalPlayerEscaped":  getTotal().toalPlayerEscape,
-                            "coverimageL":"/assets/location-hero-bg.jpg",
-                            "coverimageM":"/assets/location-hero.jpg"
+                            "coverimageL":"/assets/all-game-desktop-hero/allinadventures-all-game-page-hero.jpg",
+                            "coverimageM":"/assets/all-game-mobile-hero/allinadventures-all-game-page-hero--mobile.jpg"
               },
 
               "activity_list":[
@@ -237,7 +237,7 @@ export const getAllActivity=()=>{
                     "duration":60,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
                     "activity_slug":"beat-the-seat",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-wizarding-school.jpg",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-beat-the-seat.jpg",
                     
                 },
                 {
@@ -252,7 +252,7 @@ export const getAllActivity=()=>{
                     "duration":60,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
                     "activity_slug":"game-show-room",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-wizarding-school.jpg",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-game-show-room.jpg",
                     
                 },
                 {
@@ -267,7 +267,7 @@ export const getAllActivity=()=>{
                     "duration":60,
                     "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
                     "activity_slug":"axe-throwing",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-wizarding-school.jpg",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-axe-throwing.jpg",
                     
                 },
                

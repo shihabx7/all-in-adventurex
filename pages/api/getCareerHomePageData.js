@@ -12,8 +12,8 @@ export const getCareerHomePageData=()=>{
         "pagedata":{
             "pagetitle":"CAREERS AT ALL IN ADVENTURES",
             "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
-            "coverimageL":"/assets/home-benar-bg.jpg",
-            "coverimageM":"/assets/home-hero.jpg",
+            "coverimageL":"/assets/gn-desktop-hero/allinadventures-career-hero.jpg",
+            "coverimageM":"/assets/gn-mobile-hero/allinadventures-career-hero.jpg",
           
             
         },

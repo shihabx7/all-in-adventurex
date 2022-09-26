@@ -19,8 +19,8 @@ export const getAllEvents=()=>{
                         "totalUniqueGames": getTotal().uniqueGames,
                         "totalFiveStarReview": getTotal().totalReview,
                         "totalPlayerEscaped": getTotal().toalPlayerEscape,
-                        "coverimageL":"/assets/home-benar-bg.jpg",
-                        "coverimageM":"/assets/home-hero.jpg"
+                        "coverimageL":"/assets/all-event-desktop-hero/All-Event-Page-Hero-Image-desktop.jpg",
+                        "coverimageM":"/assets/all-event-mobile-hero/All-Event-Page-Hero-Image.jpg"
           },
 
           "events_list":[
@@ -58,7 +58,7 @@ export const getAllEvents=()=>{
                                "event_name":"Bachelor Party",
                                "event_desc":"There's no better way to bond with your bachelor party before the big day — no scandals, just nonstop thrills!",
                                "event_slug":"bachelor-party",
-                               "event_cover_image":"/assets/all-event-list/allinadventures-events-family-fun-activities-card.jpg",
+                               "event_cover_image":"/assets/all-event-list/allinadventures-events-bachelor-party-card.jpg",
                               },
 
                                {

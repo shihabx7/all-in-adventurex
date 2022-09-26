@@ -28,14 +28,14 @@ const GameList=(props)=>{
                             return(
                                 activity.activity_category=="escapegame" &&
                                 <div key={activity.id} className="all-game-list bg-center bg-cover p-4 md:p-6 lg:p-8" 
-                                        style={{backgroundImage:"linear-gradient(54deg, rgba(0,0,0,0.98),rgba(0,0,0,0.86),rgba(0,0,0,0.76),rgba(0,0,0,0),rgba(0,0,0,0)),url('"+activity.activity_cover_image+"')",
+                                        style={{backgroundImage:"linear-gradient(53deg, rgba(0,0,0,0.92),rgba(0,0,0,0.82),rgba(0,0,0,0.62),rgba(0,0,0,0),rgba(0,0,0,0)),url('"+activity.activity_cover_image+"')",
                                         boxShadow:"0px 0px 16px 2px rgba(0,0,0,0.45)"}}>
                                 <div className="all-game-list-head flex justify-between">
                                         <div className="all-game-info">
-                                            <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm md:text-base">{activity.activity_type}</span>  </p>
-                                            <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm md:text-base">{activity.age}</span>  </p> 
-                                            <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-time.svg"></img></span><span className="text-sm md:text-base">{activity.duration} Minutes</span>  </p>
-                                            <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm md:text-base">{activity.min_player}-{activity.max_player} Players</span>  </p>
+                                            <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm md:text-base drop-shadow">{activity.activity_type}</span>  </p>
+                                            <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm md:text-base drop-shadow">{activity.age}</span>  </p> 
+                                            <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-time.svg"></img></span><span className="text-sm md:text-base drop-shadow">{activity.duration} Minutes</span>  </p>
+                                            <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm md:text-base drop-shadow">{activity.min_player}-{activity.max_player} Players</span>  </p>
 
                                         </div>
                                         <div className="card-ribbon">

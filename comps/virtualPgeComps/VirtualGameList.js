@@ -19,7 +19,7 @@ const VirtualGameList=(props)=>{
                             return(
                                
                                 <div key={vgame.id} className="all-game-list bg-center bg-cover p-4 md:p-6 lg:p-8" 
-                                        style={{backgroundImage:"linear-gradient(53deg, rgba(0,0,0,0.98),rgba(0,0,0,0.86),rgba(0,0,0,0.76),rgba(0,0,0,0),rgba(0,0,0,0)),url('"+vgame.game_cover_image+"')",
+                                        style={{backgroundImage:"linear-gradient(53deg, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),url('"+vgame.game_cover_image+"')",
                                         boxShadow:"0px 0px 16px 2px rgba(0,0,0,0.45)"}}>
                                 <div className="all-game-list-head flex justify-between">
                                         <div className="all-game-info">
