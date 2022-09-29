@@ -4,7 +4,8 @@ import Link from "next/link";
 const VirtualCarousel=({virtualgames})=>{
  
   const showLocation=()=>{
-
+    const body = document.getElementsByTagName('body')[0];
+        body.classList.add('overflow-hidden')
     document.getElementById('locmenu').classList.remove('hidden')
     
   }
@@ -18,8 +19,7 @@ const VirtualCarousel=({virtualgames})=>{
     
 }
 
- // console.log("virtual car")
-  //console.log(virtualgames)
+ 
     const responsive = {
         desktoplg: {
             breakpoint: { max: 4000, min: 1440 },

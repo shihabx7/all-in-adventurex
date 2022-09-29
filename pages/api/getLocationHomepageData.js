@@ -4,6 +4,7 @@ import { getLocationActivitySlugList } from "./LocationIndData/getLocationActivi
 import { getLocationEventSlugList } from "./LocationIndData/getLocationEventSlugList";
 import { bookingList } from "./LocationIndData/bookingList"
 import { getTotal } from "./AllDataList/getTotal";
+import OhterGameSubmenu from "../../comps/headerComps/OhterGameSubmenu";
 
 
  export const getLocationHomepageData =  (locationslug) => {
@@ -31,6 +32,16 @@ import { getTotal } from "./AllDataList/getTotal";
     
     const bookingGame=bookingList('',locationslug)
 
+    const othergame=(slug)=>{
+        if(locPagedata[slug].otherphysicalgames)
+        {
+          return locPagedata[slug].otherphysicalgames
+        }
+        return false
+    }
+
+    
+
    const locationHomedata=
        {
         "locationlist":getTotal().locationlist,
@@ -49,8 +60,8 @@ import { getTotal } from "./AllDataList/getTotal";
                       "slug":locationslug,
                       "totalLocations": getTotal().totalLocations,
                       "locationaddress":getLocSpec(locationslug).mall,
-                      "totalUniqueGames": "11",
-                      "totalFiveStarReview": "60k+",
+                      "totalUniqueGames": locPagedata[locationslug].inpersongames.length,
+                      "totalFiveStarReview": "20k+",
                       "totalPlayerEscaped": "90k+",
                       "coverimageL":locPagedata[locationslug].coverimageL,
                       "coverimageM":locPagedata[locationslug].coverimageM,
@@ -62,7 +73,7 @@ import { getTotal } from "./AllDataList/getTotal";
                       
         },
         "inpersongames":locPagedata[locationslug].inpersongames,
-        "otherphysicalgames":locPagedata[locationslug].otherphysicalgames ,
+        "otherphysicalgames":othergame(locationslug),
         "events": locPagedata[locationslug].events,
         "virtualgames": [
           {
@@ -234,7 +245,7 @@ const locPagedata={
                        "type": "In person",
                        "title": "Treasure Island",
                        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-                       "age":"all age",
+                       "age":"ll age",
                        "duration":"50",
                        "maxplayers":"10",
                        "minplayers":"2",
@@ -340,128 +351,10 @@ const locPagedata={
                       "slug"  :"black-ops",
                       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
                      },
-                     {
-                      "id":10,
-                      "category":"escapegame",
-                      "type": "In person",
-                      "title": "Lost in The Jungle",
-                      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
-                      "age":"all age",
-                      "duration":"60",
-                      "maxplayers":"5",
-                      "minplayers":"2",
-                      "price":"29.89",
-                      "slug"  :"lost-in-the-jungle",
-                      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
-                     },
-                     {
-                      "id":11,
-                      "category":"escapegame",
-                      "type": "In person",
-                      "title": "locked in The Lif",
-                      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
-                      "age":"all age",
-                      "duration":"30",
-                      "maxplayers":"4",
-                      "minplayers":"2",
-                      "price":"29.89",
-                      "slug"  :"locked-in-the-lift",
-                      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
-                     },
-                     {
-                      "id":12,
-                      "category":"escapegame",
-                      "type": "In person",
-                      "title": "Wizarding School ",
-                      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-                      "age":"all age",
-                      "duration":"60",
-                      "maxplayers":"4",
-                      "minplayers":"2",
-                      "price":"39.95",
-                      "slug"  :"wizarding-school",
-                      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-                     },
-                     {
-                        
-                      "id":13,
-                      "category":"escapegame",
-                      "type": "In person",
-                      "title": "Magic Castle",
-                      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-                      "age":"all age",
-                      "duration":"60",
-                      "maxplayers":"8",
-                      "minplayers":"4",
-                      "price":"29.89",
-                      "slug"  :"magic-castle",
-                      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-                     }
+                     
 
                    ],
-                  "otherphysicalgames": [
-                    {
-
-                        "id":1,
-                        "category":"other",
-                        "type": "In person",
-                        "title": "Beat The Seat",
-                        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-                        "age":"All age (6+)",
-                        "duration":"2",
-                        "maxplayers":"",
-                        "minplayers":"1",
-                        "price":"5",
-                        "slug"  :"beat-the-seat",
-                        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-                       },
-                      {
-
-                          "id":2,
-                          "category":"other",
-                          "type": "In person",
-                          "title": "Game Show Room",
-                          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-                          "age":"All age (6+)",
-                          "duration":"60",
-                          "maxplayers":"16",
-                          "minplayers":"4",
-                          "price":"33",
-                          "slug"  :"game-show-room",
-                          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-                         },
-                      {
-                        
-                          "id":3,
-                          "category":"other",
-                          "type": "In person",
-                          "title": "Axe Throwing",
-                          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-                          "age":"All age",
-                          "duration":"20",
-                          "maxplayers":"10",
-                          "minplayers":"2",
-                          "price":"20",
-                          "slug"  :"axe-throwing",
-                          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-                         },
-                      {
-                        
-                      "id":4,
-                      "category":"other",
-                      "type": "In person",
-                      "title": "Virtual Reality",
-                      "description": "Transport yourself into the magical world of Virtual Reality with multiple fully dynamic and interactive game experiences to choose from for people of all ages.",
-                      "age":"All age",
-                      "duration":"10 - 60",
-                      "maxplayers":"4",
-                      "minplayers":"1",
-                      "price":"8",
-                      "slug"  :"virtual-reality",
-                      "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-reality-game.jpg"
-                     }
-                    
-                      ],
+                  
                   "events":             [
                     {
                       "id":1,
@@ -787,7 +680,7 @@ const locPagedata={
        ],
        "otherphysicalgames": [
         {
-    
+
             "id":1,
             "category":"other",
             "type": "In person",
@@ -802,7 +695,7 @@ const locPagedata={
             "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
            },
           {
-    
+
               "id":2,
               "category":"other",
               "type": "In person",
@@ -834,129 +727,129 @@ const locPagedata={
           
         
           ],
-      "events":             [
-        {
-          "id":1,
-          "category":"event",
-           "type": "In person",
-           "title": "BIRTHDAY PARTIES",
-           "description": "A perfect party venue for the young at heart. No matter your age, get an unforgettable adventure!",
-           "slug"  :"birthday-party",
-           "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-birthday-party.jpg"
-         },
-        {
-          "id":2,
-          "category":"event",
-           "type": "In person",
-           "title": "TEAM BUILDING",
-           "description": "This fun and exciting interactive form of team building will bring your corporate team closer!",
-           "slug"  :"team-building",
-           "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-team-building.jpg"
-         },
-         {
-          "id":3,
-          "category":"event",
-           "type": "In person",
-           "title": "CORPORATE EVENTS",
-           "description": "Instead of a dreary meeting on how to work effectively, why not take a crack at a puzzle?",
-           "slug"  :"corporate-events",
-           "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-corporate-events.jpg"
-         },
-         
-         {
-          "id":4,
-          "category":"event",
-           "type": "In person",
-           "title": "FAMILY FUN ACTIVITIES",
-           "description": "A unique family fun activity with intense real-life puzzles where you have to work together to progress!",
-           "slug"  :"family-fun-activity",
-           "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-family-fun-activities.jpg"
-         },
-         {
-          "id":5,
-          "category":"event",
-           "type": "In person",
-           "title": "Bachelor Party",
-           "description": "There's no better way to bond with your bachelor party before the big day — no scandals, just nonstop thrills!",
-           "slug"  :"bachelor-party",
-           "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-bachelor-party.jpg"
-         },
-         {
-          "id":6,
-          "category":"event",
-           "type": "In person",
-           "title": "Bachelorette Party",
-           "description": "Fun-filled bachelorette party without any drama that will be something long remembered by everyone!",
-           "slug"  :"bachelorette-party",
-           "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-bachelorette-party.jpg"
-         },
-         {
-          "id":7,
-          "category":"event",
-           "type": "In person",
-           "title": "PROPOSAL PARTY",
-           "description": "A distinctive way to propose marriage where the mystery game ends with the ring in the final clue box!",
-           "slug"  :"proposal-party",
-           "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-proposal-party.jpg"
-         },
-         {
-          "id":8,
-          "category":"event",
-           "type": "In person",
-           "title": "DATE NIGHT / NIGHT OUT",
-           "description": "Work together and find clues to solve the mystery that will ultimately strengthen your relationship!",
-           "slug"  :"date-night",
-           "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-date-night.jpg"
-         },
-         {
-          "id":9,
-          "category":"event",
-           "type": "In person",
-           "title": "Private Party",
-           "description": "Adventure awaits for all — your family, friends, office, indoor party, church group, fraternity or sorority.",
-           "slug"  :"private-party",
-           "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-private-party.jpg"
-         },
-         {
-          "id":10,
-          "category":"event",
-           "type": "In person",
-           "title": "Reunion Party",
-           "description": "Each game is interactive and has engaging qualities that give your reunion party an epic adventure!",
-           "slug"  :"reunion-party",
-           "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-reunion-party.jpg"
-         },
-         {
-          "id":11,
-          "category":"event",
-           "type": "In person",
-           "title": "Graduation Party",
-           "description": "Graduation is such an exciting time, no matter your age and you deserve to celebrate it in a memorable way",
-           "slug"  :"graduation-party",
-           "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-graduation-party.jpg"
-         },
-         
-         {
-          "id":12,
-          "category":"event",
-           "type": "In person",
-           "title": "SCHOOL EVENTS / FIELD TRIPS",
-           "description": "Students exercise critical thinking and act to become the super-spies they see in the movies!",
-           "slug"  :"school-events",
-           "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-school-event.jpg"
-         },
-         {
-          "id":13,
-          "category":"event",
-           "type": "In person",
-           "title": "GENDER REVEAL PARTY",
-           "description": "Instead of simply sharing the news of your baby's gender, why not a fun way to announce it through puzzles?",
-           "slug"  :"gender-reveal-party",
-           "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-gender-reveal-party-event.jpg"
-         },
+          "events":             [
+            {
+              "id":1,
+              "category":"event",
+               "type": "In person",
+               "title": "BIRTHDAY PARTIES",
+               "description": "A perfect party venue for the young at heart. No matter your age, get an unforgettable adventure!",
+               "slug"  :"birthday-party",
+               "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-birthday-party.jpg"
+             },
+            {
+              "id":2,
+              "category":"event",
+               "type": "In person",
+               "title": "TEAM BUILDING",
+               "description": "This fun and exciting interactive form of team building will bring your corporate team closer!",
+               "slug"  :"team-building",
+               "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-team-building.jpg"
+             },
+             {
+              "id":3,
+              "category":"event",
+               "type": "In person",
+               "title": "CORPORATE EVENTS",
+               "description": "Instead of a dreary meeting on how to work effectively, why not take a crack at a puzzle?",
+               "slug"  :"corporate-events",
+               "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-corporate-events.jpg"
+             },
+             
+             {
+              "id":4,
+              "category":"event",
+               "type": "In person",
+               "title": "FAMILY FUN ACTIVITIES",
+               "description": "A unique family fun activity with intense real-life puzzles where you have to work together to progress!",
+               "slug"  :"family-fun-activity",
+               "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-family-fun-activities.jpg"
+             },
+             {
+              "id":5,
+              "category":"event",
+               "type": "In person",
+               "title": "Bachelor Party",
+               "description": "There's no better way to bond with your bachelor party before the big day — no scandals, just nonstop thrills!",
+               "slug"  :"bachelor-party",
+               "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-bachelor-party.jpg"
+             },
+             {
+              "id":6,
+              "category":"event",
+               "type": "In person",
+               "title": "Bachelorette Party",
+               "description": "Fun-filled bachelorette party without any drama that will be something long remembered by everyone!",
+               "slug"  :"bachelorette-party",
+               "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-bachelorette-party.jpg"
+             },
+             {
+              "id":7,
+              "category":"event",
+               "type": "In person",
+               "title": "PROPOSAL PARTY",
+               "description": "A distinctive way to propose marriage where the mystery game ends with the ring in the final clue box!",
+               "slug"  :"proposal-party",
+               "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-proposal-party.jpg"
+             },
+             {
+              "id":8,
+              "category":"event",
+               "type": "In person",
+               "title": "DATE NIGHT / NIGHT OUT",
+               "description": "Work together and find clues to solve the mystery that will ultimately strengthen your relationship!",
+               "slug"  :"date-night",
+               "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-date-night.jpg"
+             },
+             {
+              "id":9,
+              "category":"event",
+               "type": "In person",
+               "title": "Private Party",
+               "description": "Adventure awaits for all — your family, friends, office, indoor party, church group, fraternity or sorority.",
+               "slug"  :"private-party",
+               "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-private-party.jpg"
+             },
+             {
+              "id":10,
+              "category":"event",
+               "type": "In person",
+               "title": "Reunion Party",
+               "description": "Each game is interactive and has engaging qualities that give your reunion party an epic adventure!",
+               "slug"  :"reunion-party",
+               "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-reunion-party.jpg"
+             },
+             {
+              "id":11,
+              "category":"event",
+               "type": "In person",
+               "title": "Graduation Party",
+               "description": "Graduation is such an exciting time, no matter your age and you deserve to celebrate it in a memorable way",
+               "slug"  :"graduation-party",
+               "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-graduation-party.jpg"
+             },
+             
+             {
+              "id":12,
+              "category":"event",
+               "type": "In person",
+               "title": "SCHOOL EVENTS / FIELD TRIPS",
+               "description": "Students exercise critical thinking and act to become the super-spies they see in the movies!",
+               "slug"  :"school-events",
+               "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-school-event.jpg"
+             },
+             {
+              "id":13,
+              "category":"event",
+               "type": "In person",
+               "title": "GENDER REVEAL PARTY",
+               "description": "Instead of simply sharing the news of your baby's gender, why not a fun way to announce it through puzzles?",
+               "slug"  :"gender-reveal-party",
+               "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-gender-reveal-party-event.jpg"
+             },
 
 
-       ],
+           ],
 
       },
 //=====================================================================buffalo ny end

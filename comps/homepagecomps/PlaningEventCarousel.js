@@ -7,7 +7,8 @@ const PlaningEventCarousel=(props)=>{
  
 
   const showLocation=()=>{
-
+    const body = document.getElementsByTagName('body')[0];
+        body.classList.add('overflow-hidden')
     document.getElementById('locmenu').classList.remove('hidden')
     
   }

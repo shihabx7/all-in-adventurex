@@ -28,6 +28,23 @@ const Homenav=(props)=>{
     const [showMe, setShowMe] = useState(false);
     function toggle(){
       setShowMe(!showMe);
+      const body = document.getElementsByTagName('body')[0];
+      const winWidth=window.innerWidth;
+      if(showMe==false){
+        if(winWidth<768){
+          body.classList.add("overflow-hidden")
+
+        }
+        
+
+      }
+      else{
+        if(winWidth<768){
+          body.classList.remove("overflow-hidden")
+        }
+        
+       
+      }
     }
    
     useEffect(() => {

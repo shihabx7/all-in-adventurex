@@ -7,7 +7,8 @@ import { useEffect, useState } from 'react';
 const LocationMenu=()=>{
    
        const closelocmenu=()=>{
-     
+        const body = document.getElementsByTagName('body')[0];
+        body.classList.remove('overflow-hidden')
         document.getElementById('locmenu').classList.add('hidden')
        }
 

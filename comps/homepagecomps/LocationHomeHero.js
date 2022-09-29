@@ -36,9 +36,14 @@ const LocationHomeHero=(props)=>{
             <div className='max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-20 md:py-20 lg:py-28 xl:py-40 relative z-10'>
                 <div className="page-benar-info"> 
                 
-                 <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center uppercase'>AT {props.pagedata.locationaddress} IN {props.pagedata.locationcity}, {props.pagedata.locationstate}</p> 
-                 <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os'>ESCAPE ROOMS AND FUN ACTIVITES</h1>
-                 <p className='text-gray-100 max-w-2xl mx-auto text-center lg:text-lg'>#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend &amp; family today. </p>
+                 <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center uppercase'>AT {props.pagedata.locationaddress} IN {props.pagedata.locationcity} {props.pagedata.locationstate}</p> 
+                 <h1 className='golden-text font-bold text-center text-3xl md:text-4xl lg:text-5xl mb-8 font-os uppercase'>ESCAPE ROOM AND FUN THINGS TO DO IN {props.pagedata.locationcity} {props.pagedata.locationstate}</h1>
+                 <p className='text-gray-100 max-w-2xl mx-auto text-center lg:text-lg'>
+                        At All In Adventures {props.pagedata.locationcity} (formerly Mystery Room {props.pagedata.locationcity}),
+                         experience the #1 family and kids friendly escape rooms for all ages and skill levels.
+                          We host the most exciting birthday parties, private events and team building activities in {props.pagedata.locationcity} <span className="uppercase">{props.pagedata.locationstate}</span>.
+
+                 </p>
                  </div>
                 <div className="max-w-md mx-auto mt-8 pb-8 ">
 

@@ -3,7 +3,7 @@ import Link from "next/link"
 import { FaAngleRight } from "react-icons/fa"
 import HomeReviewCarousel from "./HomeReviewCarousel";
 
-const HomeReviewSlider=({reviews})=>{
+const HomeReviewSlider=(props)=>{
 
     return (<div className="homereview relative py-16 md:py-20 lg:py-28 overflow-hidden" style={
       {
@@ -25,13 +25,28 @@ const HomeReviewSlider=({reviews})=>{
             </div>
     </div>
     <div className="slider-box pb-4 md:pb-8 relative">  
-    <HomeReviewCarousel reviews={reviews}/>
+    <HomeReviewCarousel reviews={props.reviews}/>
     </div>
     <div className="view-all flex justify-center pt-8 md:pt-12 lg:pt-16">
-        <Link href="/testimonials/"> 
-          <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>See more customer testimonials</span> <FaAngleRight/></a>
-        </Link>
+        
+          <a href="/testimonials/" className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>See more customer testimonials</span> <FaAngleRight/></a>
+        
      </div>
+     { props.locatinslug && 
+      <div className="evt-link-btn mt-8 md:mt-16">
+           <a href="/activities" className="border-2 max-w-[280px] text-center  block  mx-auto  border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">VIEW ALL ACTIVITES</a>
+           <a href="/events" className="border-2 max-w-[280px] text-center  block  mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-gray-700 hover:text-white">VIEW ALL EVENTS</a>
+      </div>
+     
+     }
+     { !props.locatinslug && 
+      <div className="evt-link-btn mt-8 md:mt-16">
+           <a href={"/activities"} className="border-2 max-w-[280px] text-center  block  mx-auto  border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">VIEW ALL ACTIVITES</a>
+           <a href={"/events"} className="border-2 max-w-[280px] text-center  block  mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-gray-700 hover:text-white">VIEW ALL EVENTS</a>
+      </div>
+     
+     }
+         
 </div>
 )
 

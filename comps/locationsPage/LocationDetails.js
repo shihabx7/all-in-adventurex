@@ -26,6 +26,11 @@ const LocationDetails=(props)=>{
         var add=address+', '+city+', '+st+' '+zip+', '+"USA"
         return add
       }
+      const locState=(slug)=>{
+        var scity=slug.split('-')
+        var st=scity[scity.length-1].toString().toUpperCase()
+        return st
+      }
       const getDirection=(address,slug,zip,city)=>{
 
             var addr=address.toString().split(' ').join('+')+','
@@ -46,11 +51,13 @@ const LocationDetails=(props)=>{
                 style={{backgroundImage:"linear-gradient(65deg, rgba(255, 249, 235, 0.1), rgba(255, 249, 235, 0.2)), url('/assets/game-dt-bg.jpg')"}}
             > 
             <div className=" w-full absolute bottom-0 left-0"><img className="w-full" src="/assets/game-home-or2.jpg"></img></div>
-            <div className="max-w-[770px] mx-auto pb-28 relative z-30">
+            <div className="max-w-[900px] mx-auto pb-28 relative z-30">
                 <div className="section-title"> 
                      <TitleSeparator title='LOCATION DETAILS' color='golden-text' weight='font-bold'/>
                         <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-16">
-                           <p className="text-gray-[600] md:px-8">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                           <p className="text-gray-[600] md:px-8">We are conveniently located at {props.locdetail.mall} in {props.locdetail.city} {locState(props.locdetail.slug)}. 
+                           Our customers come from many surrounding cities, including Rotterdam, Troy, Clifton Park, Schenectady,
+                            Pittsfield and across the United States.</p>
                       </div>
                 </div> 
                 <div className="location-spc-map drop-shadow-md border-2 border-gold">

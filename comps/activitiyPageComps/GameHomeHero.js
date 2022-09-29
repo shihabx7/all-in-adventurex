@@ -31,11 +31,11 @@ const GameHomeHero=(props)=>{
 
 
                 </div>
-                {       props.gametotal ||
+                {       props.gametotal!='not' &&
                         <div className="mb-8"> </div>
                 }
                 
-                { props.gametotal ||
+                { props.gametotal!='not' &&
 
                 <div style={{
                     background:"#FFFBF3"

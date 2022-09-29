@@ -29,9 +29,31 @@ const PlaningEventsSlider=(props)=>{
 
     {/** =======ornamental icon end===== */}
     <div className="max-w-7xl mx-auto  px-4 relative z-20 ">
-         <TitleSeparator title='EVENTS AND PARTIES' color='golden-text' weight='font-bold'/>
-         <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
+        
+         {props.city && 
+              <>
+                <TitleSeparator title={'EVENTS AND PARTIES in '+props.city+' '+props.state} color='golden-text' weight='font-bold'/>
+              </>
+            }
+            {!props.city && 
+             
+                <TitleSeparator title='EVENTS AND PARTIES' color='golden-text' weight='font-bold'/>
+              
+            }
+
+         <div className="max-w-[720px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
+            {
+                props.city && 
+                <p className="text-gray-700 md:px-8">All In Adventures is famous for hosting {props.city}'s most memorable parties
+                 and events. We can accommodate private and corporate large groups with our multiple room settings and are
+                  happy to customize an event to suit your needs.
+                </p>
+            }
+            {
+                !props.city && 
                 <p className="text-gray-700 md:px-8">All In Adventures is famous for hosting the city's most memorable parties and events. We can accommodate large groups with our multiple room settings and are happy to customize an event to suit your needs.</p>
+            }
+              
             </div>
     </div>
     <div className="slider-box pb-4 md:pb-8 relative">  

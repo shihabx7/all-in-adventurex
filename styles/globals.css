@@ -5,7 +5,10 @@
 @tailwind utilities;
 
 
-
+html {
+  scroll-behavior: smooth;
+  transition: .8s;
+}
 html,body,a{
   font-family: 'Roboto', sans-serif;
 }
@@ -995,7 +998,7 @@ background-size: cover,cover;
     max-width: 140px;
   }
   .what-is {
-    max-width: 92% !important;
+    max-width: 96% !important;
     
   }
   .paper-back-bg{
@@ -1140,20 +1143,21 @@ background-size: cover,cover;
 }
 @media only screen and (max-width: 370px) {
   .what-is {
-    max-width: 96% !important;
+    max-width: 98% !important;
     
   }
+  
   .what-is h2{
-   font-size: 16px;
+   font-size: 18px;
     
   }
   .what-is a{
-    font-size: 12px;
+    font-size: 16px;
     font-weight:600;
      
    }
   .what-is-2 {
-    margin-top: 16px !important;
+    margin-top: 22px !important;
   }
   .paper-back-bg{
     padding: 0px 0px !important;
@@ -1163,7 +1167,7 @@ background-size: cover,cover;
   }
   .what-is p {
    
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.4;
   }
   .header-notice-box p{

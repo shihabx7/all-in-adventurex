@@ -9,12 +9,12 @@ export const getVolunteeringPageData=()=>{
           },
            
           "pagedata": {
-                        "pagetitle":"ALL IN TOGETHER",
-                        "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
+                        "pagetitle":"VOLUNTEERING - ALL IN TOGETHER",
+                        "pagesubtitle":"At All In Adventures, we believe volunteering is a two-way street that benefits both the organization and the volunteer. It is an instrumental force in promoting positive and sustainable growth within communities.",
                          
                         "totalLocations": "28",
-                        "coverimageL":"/assets/home-benar-bg.jpg",
-                        "coverimageM":"/assets/home-hero.jpg"
+                        "coverimageL":"/assets/gn-desktop-hero/allinadventures-volunteering-hero.jpg",
+                        "coverimageM":"/assets/gn-mobile-hero/allinadventures-volunteering-hero.jpg"
           },
 
     }

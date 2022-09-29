@@ -19,7 +19,7 @@ export const getMapStyleLoc =  () => {
       {
         featureType: "poi.park",
         elementType: "geometry",
-        stylers: [{ color: "#263c3f" }],
+        stylers: [{ color: "#cbf4c6" }],
       },
       {
         featureType: "poi.park",
@@ -59,7 +59,7 @@ export const getMapStyleLoc =  () => {
       {
         featureType: "transit",
         elementType: "geometry",
-        stylers: [{ color: "#2f3948" }],
+        stylers: [{ color: "#aec5e8" }],
       },
       {
         featureType: "transit.station",
@@ -69,7 +69,7 @@ export const getMapStyleLoc =  () => {
       {
         featureType: "water",
         elementType: "geometry",
-        stylers: [{ color: "#7c8eb7" }],
+        stylers: [{ color: "#D6DDE8" }],
       },
       {
         featureType: "water",

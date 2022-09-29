@@ -7,7 +7,7 @@ import { FiChevronDown,FiX } from "react-icons/fi"
 import { getMapStyleLoc } from "../../pages/api/getMapStyleLoc";
 
 const LocationMap=(props)=>{
-    const centerLat=props.position.lat+5.5
+    const centerLat=props.position.lat+.04
     const centerLng=props.position.lng
 
 
@@ -29,7 +29,7 @@ const LocationMap=(props)=>{
         var addArrLink=addArr.split(' ').join("+")
         var directionUrl="https://www.google.com/maps/dir//"+addArrLink+",+"+city.toLowerCase()+",+"+state.toLowerCase()+"+"+zip
     
-        console.log(directionUrl)
+        //console.log(directionUrl)
         return directionUrl
     }
     const getStoreUrl=(city,stateCode)=>{
@@ -50,7 +50,7 @@ const LocationMap=(props)=>{
                 mapContainerClassName="map-container singleloc-map w-full h-[540px] md:h-[540px]"
                 center={{lat:centerLat,lng:centerLng}}
                 //onLoad={handleOnLoad}
-                zoom={5}
+                zoom={11}
                 options={{
                   styles: mapStyle,
               }}

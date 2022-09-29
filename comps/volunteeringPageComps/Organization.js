@@ -16,12 +16,12 @@ const Organization=()=>{
             </div>
             <div className="max-w-7xl mx-auto px-4 relative z-40">
                     <div className="volunteering-badge mb-8 md:mb-12 lg:mb-16">
-                        <img className="mx-auto" src="/assets/all-in-adventure-volunteer-badge.png"></img>
+                        <img className="mx-auto md:max-w-[600px] block" src="/assets/allinadventure-volunteering-organization.png"></img>
 
                     </div>
                     <TitleSeparator title='EXAMPLES OF ORGANIZATIONS WE HELP' color='golden-text' weight='font-bold'/>
                     <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-12 lg:mb-16">
-                         <p className="text-gray-200 md:px-8">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                         <p className="text-gray-200 md:px-8">Giving our efforts to a worthy cause is a great way to help the community. There are many organizations we can get involved with by volunteering, and here are a few examples.</p>
                      </div>
                      <div className="wcp-row">
                         <div className="wcp-list-container mb-4 md:mb-8 lg:mb-12 py-6 md:py-8 px-2 md:px-6 lg:py-12 lg:px-10 bg-[#080808] rounded">

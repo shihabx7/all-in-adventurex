@@ -4,6 +4,8 @@ import TitleSeparator from "../util/TitleSeparator"
 
 const EventList=(props)=>{
     const showLocation=()=>{
+        const body = document.getElementsByTagName('body')[0];
+        body.classList.add('overflow-hidden')
 
         document.getElementById('locmenu').classList.remove('hidden')
         
@@ -77,7 +79,9 @@ const EventList=(props)=>{
 
                 }
                 </div>
-
+                <div className="link-btn mt-8 md:mt-16">
+                    <a href="/activities" className="border-2 max-w-[280px] text-center  block  mx-auto  border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">VIEW ACTIVITES</a>
+                </div>
                 </div>
             <div className="w-full absolute bottom-0 left-0 "><img className="w-full" src="/assets/game-home-or2.jpg"></img> </div>
         </div>

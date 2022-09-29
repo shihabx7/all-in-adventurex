@@ -4,19 +4,27 @@ import Link from "next/link"
 import { FaAngleRight } from "react-icons/fa"
 import VirtualCarousel from "./VirtualCarousel";
 
-const VirtualEscapeSlider=({virtualgames})=>{
+const VirtualEscapeSlider=(props)=>{
    // console.log("virtual:")
     //console.log(virtualgames)
     return (<div className="vr-slider bg-black relative pb-16 md:pb-24 lg:pb-28 z-20" style={
       {
           backgroundImage :  "linear-gradient(65deg,rgba(0, 0, 0,.40),rgba(0, 0, 0,.30)),url('/assets/svg/pyescape-bg.svg')"
       }}>
-        <div className="inp py-lt absolute left-0 z-20"> 
-          <img src="/assets/py-space.png"></img>
+        {
+          !props.bgicon &&
+          <div className="inp py-lt absolute left-0 z-20"> 
+              <img src="/assets/py-space.png"></img>
         </div>
-        <div className="inp py-rt absolute right-0 z-20"> 
+        }
+        {
+          !props.bgicon &&
+          <div className="inp py-rt absolute right-0 z-20"> 
           <img src="/assets/py-planet.png"></img>
         </div>
+        }
+        
+        
         
         <div className="max-w-7xl mx-auto pt-8 px-4 relative z-40">
              <TitleSeparator title='VIRTUAL / REMOTE GAMES' color='golden-text' weight='font-bold'/>
@@ -25,7 +33,7 @@ const VirtualEscapeSlider=({virtualgames})=>{
                 </div>
         </div>
         <div className="slider-box pb-4 md:pb-0 relative">  
-            <VirtualCarousel virtualgames={virtualgames}/>
+            <VirtualCarousel virtualgames={props.virtualgames}/>
         </div>
        <div className="view-all flex justify-center pt-8 md:pt-12 lg:pt-16">
             <Link href="/virtual-games/"> 

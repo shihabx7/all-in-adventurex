@@ -19,23 +19,59 @@ import { getLocationHomepageData } from '../api/getLocationHomepageData';
 import { getLocationSlugList } from '../api/getLocationSlugList';
 import LocationDetails from '../../comps/locationsPage/LocationDetails';
 import HomeReviewSliderLoc from '../../comps/homepagecomps/HomeReviewSliderLoc';
+import HowToPlay from '../../comps/homepagecomps/HowToPlay';
 const location=(props)=>{
 
-    /* custom breadcum code */
+    /* custom breadcum code 
  const toTitleCase=(title)=>{
    const titlefres=title.replace(/-/g,' ')
-    const btitle=titlefres.split(' ').map((word)=>{return (word.charAt(0).toUpperCase() + word.slice(1))}).join(" ") // breadcum title capitalize
+    const btitle=titlefres.split(' ').map((word)=>{
+        
+                return (word.charAt(0).toUpperCase() + word.slice(1))
+            
+            }).join(" ") // breadcum title capitalize
     
-    /*const  getSluglist=async ()=>{
-        const all= await getLocationSlugList();
-        return all
-    }
-    const list=getSluglist()
-    console.log(list)*/
+    
     return (
 
       <div className='bitem flex items-center'><span>{btitle}</span> <span className='bsep text-gold'><FiChevronRight/></span></div>
     )
+   }
+    custom breadcum code */
+  
+   const getCap=(title)=>{
+
+    const titlefres=title.replace(/-/g,' ')
+    var ttl=''
+    const ctl=titlefres.split(' ')
+    if(ctl[ctl.length-1].length==2){
+        const st=ctl[ctl.length-1].toUpperCase()
+        const tarr=ctl.slice(0,-1)
+       
+        ttl= tarr.map((word)=>{
+                     return (word.charAt(0).toUpperCase() + word.slice(1))
+             }
+                
+        ).join(" ") 
+
+        ttl=ttl+" "+st
+    }
+
+    else{
+         ttl=titlefres.split(' ').map((word)=>{
+        
+            return (word.charAt(0).toUpperCase() + word.slice(1))
+        
+        }).join(" ") // breadcum title capitalize
+
+    }
+
+    return (
+
+        <div className='bitem flex items-center'><span>{ttl}</span> <span className='bsep text-gold'><FiChevronRight/></span></div>
+      )
+
+
    }
    /* customizing breadcum */
 
@@ -65,20 +101,32 @@ const location=(props)=>{
                                             activeItemClassName="inline-block text-[#212121]"
                                             rootLabel="home"
                                             replaceCharacterList={[{ from: '-', to: ' ' }]}
-                                            transformLabel={(title) => { return toTitleCase(title)} }
+                                            transformLabel={(title) => { return getCap(title)} }
 
                                             >
                                       </Breadcrumbs>
+                                      
                                 </div>
                                 <div className='text-red'>{props.slug}</div>
                         {/* =======header content and breadcum======== end */}
                         {/* ===========Page Content here========= */}
                             <LocationHomeHero pagedata={props.pagedata}/>
-                            <Howtobook></Howtobook>
-                             <InpersonEscapeSlider locationslug={props.pagedata.slug} inpersongames={props.inpersongames} bookingData={props.bookingData}/>
-                             <PysicalEscape othergames={props.othergames} locationslug={props.pagedata.slug} bookingData={props.bookingData}/>
-                              <VirtualEscapeSlider virtualgames={props.virtualgames}/>
-                             <PlaningEventsSlider events={props.events} locationslug={props.pagedata.slug}/>
+                            <HowToPlay city={props.pagedata.locationcity}/>
+                             <InpersonEscapeSlider city={props.pagedata.locationcity} state={props.pagedata.locationstate} locationslug={props.pagedata.slug} inpersongames={props.inpersongames} bookingData={props.bookingData}/>
+                            {
+                                props.othergames &&
+                                <PysicalEscape city={props.pagedata.locationcity} state={props.pagedata.locationstate} othergames={props.othergames} locationslug={props.pagedata.slug} bookingData={props.bookingData}/>
+                            }
+                             {
+                                props.othergames &&
+                                <VirtualEscapeSlider virtualgames={props.virtualgames}/>
+                             }
+                             {
+                                !props.othergames &&
+                                <VirtualEscapeSlider bgicon="none" virtualgames={props.virtualgames}/>
+                             }
+                           
+                             <PlaningEventsSlider city={props.pagedata.locationcity} state={props.pagedata.locationstate} events={props.events} locationslug={props.pagedata.slug}/>
                              <BuyGiftCard locationslug={props.pagedata.slug}  bookingData={props.bookingData}/>
                              <WhatIsEscape/>
                             <WhoCanplay/>
