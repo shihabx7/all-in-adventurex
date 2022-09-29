@@ -160,7 +160,7 @@ const LocationMap=(props)=>{
                                                             <div className="map-info-link">
 
                                                                         <a target="_blank" href={getdirectionUrl(props.locdetail.address,props.locdetail.city,getState(props.locdetail.slug),props.locdetail.zip)}  className="text-[#7b7b7b] hover:text-blue-600">
-                                                                           <span className="font-medium text-blue-600">Direction: </span> {props.locdetail.address+', '+props.locdetail.city+', '+props.locdetail.state+' '+props.locdetail.zip+', '+props.locdetail.country}
+                                                                           <span className="font-medium text-blue-600">Direction: </span> {props.locdetail.address+', '+props.locdetail.city+', '+getState(props.locdetail.slug).toUpperCase()+' '+props.locdetail.zip}
                                                                         </a>
 
                                                             </div>
@@ -194,7 +194,7 @@ const LocationMap=(props)=>{
                                                             <div className="map-info-link">
 
 
-                                                                    <Link href={'/locations/'+getStoreUrl(props.locdetail.city,props.locdetail.state)}>
+                                                                    <Link href={'/locations/'+props.locdetail.slug}>
                                                                     <a  className="text-[#7b7b7b] hover:text-blue-600">
                                                                            <span className="font-medium text-[#424242]">Website :</span> Click To Visit
                                                                         </a>

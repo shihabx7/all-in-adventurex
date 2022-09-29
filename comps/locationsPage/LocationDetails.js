@@ -23,7 +23,7 @@ const LocationDetails=(props)=>{
         var scity=slug.split('-')
         var st=scity[scity.length-1].toString().toUpperCase()
 
-        var add=address+', '+city+', '+st+' '+zip+', '+"USA"
+        var add=address+', '+city+', '+st+' '+zip
         return add
       }
       const locState=(slug)=>{
@@ -70,7 +70,7 @@ const LocationDetails=(props)=>{
                 <div className="loc-dt-table grid grid-cols-1 md:grid-cols-2 px-4 mt-8">
                        
                             <div className="flex space-x-2 border-b border-[#D2C6AA] py-2 px-2 lg:py-3 md:text-lg ">
-                                <div className="loc-dt-icon w-[8%]"> 
+                                <div className="loc-dt-icon"> 
                                     <img src="/assets/svg/event-icon-pin.svg"></img>
                                 </div>
                                 <div className="loc-dt-text text-[#232323]">
@@ -143,7 +143,7 @@ const LocationDetails=(props)=>{
                                 </div>
                                 <div className="loc-dt-text text-[#232323] md:text-lg"> 
                                     <p>
-                                    <a className="md:text-lg hover:text-blue-700" href={"tel:+1 "+props.locdetail.phone}>+1 {props.locdetail.phone}</a>
+                                    <a className="md:text-lg hover:text-blue-700" href={"tel:"+props.locdetail.phone}>{props.locdetail.phone}</a>
                                     </p>
                                 </div>
                             </div>
@@ -185,10 +185,11 @@ const LocationDetails=(props)=>{
 
                 <ul className="star-list pl-6 lg:text-lg text-[#424242] font-thin">
                     <li className="my-2">
-                    We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.
+                    Use the 2nd floor mall entrance between the J.C.Penney and Pottery Barn, take a left at the escalators. We are located on the right side, between Athleta and Zara, across from Banana Republic.
                     </li>
                     <li className="my-2">
-                    Our store is located on the 3rd floor food court level, just across the hall from 5 Below store.
+                    We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.
+
                     </li>
 
                 </ul>
