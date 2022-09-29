@@ -31,6 +31,12 @@ html,body,a{
 .boder-p2{
   padding:4px;
 }
+.sep-title h2{
+  line-height:1.2 !important
+}
+.page-benar-info h1{
+  line-height:1.2 !important
+}
 /*------------------===================map design======================*/
 .gm-style .gm-style-iw-c{
   background:#FFF9EC !important;

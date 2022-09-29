@@ -50,7 +50,7 @@ const LocationMap=(props)=>{
                 mapContainerClassName="map-container singleloc-map w-full h-[540px] md:h-[540px]"
                 center={{lat:centerLat,lng:centerLng}}
                 //onLoad={handleOnLoad}
-                zoom={11}
+                zoom={12}
                 options={{
                   styles: mapStyle,
               }}

@@ -51,13 +51,12 @@ const LocationDetails=(props)=>{
                 style={{backgroundImage:"linear-gradient(65deg, rgba(255, 249, 235, 0.1), rgba(255, 249, 235, 0.2)), url('/assets/game-dt-bg.jpg')"}}
             > 
             <div className=" w-full absolute bottom-0 left-0"><img className="w-full" src="/assets/game-home-or2.jpg"></img></div>
-            <div className="max-w-[900px] mx-auto pb-28 relative z-30">
-                <div className="section-title"> 
-                     <TitleSeparator title='LOCATION DETAILS' color='golden-text' weight='font-bold'/>
+            <div className="max-w-[900px] mx-auto pb-28 relative z-30 px-4">
+                <div className="section-title max-w-[660px] mx-auto"> 
+                     <TitleSeparator title={'ALL IN ADVENTURES '+props.locdetail.city+' LOCATION DETAILS'} color='golden-text' weight='font-bold'/>
                         <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-16">
                            <p className="text-gray-[600] md:px-8">We are conveniently located at {props.locdetail.mall} in {props.locdetail.city} {locState(props.locdetail.slug)}. 
-                           Our customers come from many surrounding cities, including Rotterdam, Troy, Clifton Park, Schenectady,
-                            Pittsfield and across the United States.</p>
+                           Our customers come from many surrounding cities, including {props.locdetail.city_include} and across the United States.</p>
                       </div>
                 </div> 
                 <div className="location-spc-map drop-shadow-md border-2 border-gold">
@@ -67,7 +66,7 @@ const LocationDetails=(props)=>{
                     }
                     
                 </div>   
-                <div className="loc-dt-table grid grid-cols-1 md:grid-cols-2 px-4 mt-8">
+                <div className="loc-dt-table grid grid-cols-1 md:grid-cols-2  mt-8">
                        
                             <div className="flex space-x-2 border-b border-[#D2C6AA] py-2 px-2 lg:py-3 md:text-lg ">
                                 <div className="loc-dt-icon"> 
@@ -165,7 +164,7 @@ const LocationDetails=(props)=>{
                                     <img src="/assets/svg/event-icon-parking.svg"></img>
                                 </div>
                                 <div className="loc-dt-text md:text-lg"> 
-                                    <p>Car Parking Available</p>
+                                    <p>{props.locdetail.mall} Parking </p>
                                 </div>
                             </div>
                             <div className="flex space-x-2 border-b border-[#D2C6AA] py-2 px-2 lg:py-3">
@@ -181,11 +180,11 @@ const LocationDetails=(props)=>{
 
                 </div>
 
-                <div className="loc-notice mt-4 md:mt-8 px-4 md:px-0"> 
+                <div className="loc-notice mt-4 md:mt-8"> 
 
                 <ul className="star-list pl-6 lg:text-lg text-[#424242] font-thin">
                     <li className="my-2">
-                    Use the 2nd floor mall entrance between the J.C.Penney and Pottery Barn, take a left at the escalators. We are located on the right side, between Athleta and Zara, across from Banana Republic.
+                    {props.locdetail.entry_guid} 
                     </li>
                     <li className="my-2">
                     We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.
@@ -197,7 +196,7 @@ const LocationDetails=(props)=>{
 
                                              
                 </div>
-                <div className="loc-cont flex justify-center mt-8">
+                <div className="loc-cont flex justify-center mt-16">
                         
                     <Link href={"/"+props.locdetail.slug+"/contact-store"}>
                         <a className="uppercase text-lg font-medium text-white bg-red-600 py-3 px-10 rounded-full">Contact store</a>
