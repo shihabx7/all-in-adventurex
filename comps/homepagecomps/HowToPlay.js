@@ -37,7 +37,7 @@ const HowToPlay=(props)=>{
                 <div className='htb-steps flex justify-btween mb-10 md:justify-center items-center max-w-4xl mx-auto'>
                     <div className="htb-step"> 
                         <div className="htb-icon"> 
-                            <img src="/assets/svg/assemble-your-team.svg"></img>
+                            <img src="/assets/svg/assemble-team.svg"></img>
                         </div>
                         <h3 className="golden-text text-3xl font-bold mt-2">1</h3>
                         <div className='htb-text text-gray-700 mt-2 mb-12 font-medium'>ASSEMBLE YOUR GAME </div>
@@ -50,7 +50,7 @@ const HowToPlay=(props)=>{
                     
                     <div className="htb-step"> 
                     <div className="htb-icon"> 
-                         <img src="/assets/svg/choose-escape-game.svg"></img>
+                         <img src="/assets/svg/choose-game.svg"></img>
                         </div>
                         <h3 className="golden-text text-3xl font-bold mt-2">2</h3>
                         <div className='htb-text text-gray-700 mt-2 mb-12 font-medium'>CHOOSE YOUR GAME </div>

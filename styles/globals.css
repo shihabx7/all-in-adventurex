@@ -37,6 +37,15 @@ html,body,a{
 .page-benar-info h1{
   line-height:1.2 !important
 }
+.thank-link-box{
+  box-shadow:0px 0px 4px rgba(217, 178, 88,0.54);
+  transition:.3s;
+}
+.thank-link-box:hover{
+  box-shadow:0px 0px 6px rgba(217, 178, 88,0.72);
+  scale: 1.04;
+  transition:.3s;
+}
 /*------------------===================map design======================*/
 .gm-style .gm-style-iw-c{
   background:#FFF9EC !important;
@@ -339,7 +348,7 @@ max-width:140px;
   margin-bottom: 8px;
 }
 .card-game-desc{
-  height:184px;
+  height:154px;
   overflow: hidden;
   margin-bottom: 16px;
 }
@@ -585,6 +594,14 @@ background-size: cover,cover;
       opacity:0.4; 
   } 
 }
+@media only screen and (max-width: 2000px) {
+
+  .card-game-desc{
+    height:200px;
+    
+  }
+}
+
 
 @media only screen and (max-width: 1480px) {
   .or-el-1{
@@ -677,9 +694,13 @@ background-size: cover,cover;
     max-width: 32px;
 
   }
-  
+  .card-game-desc{
+    height:164px;
+    
+  }
 
 }
+
 @media only screen and (max-width: 1366px) {
   .inp-lt img{
     max-width:200px;
@@ -710,6 +731,10 @@ background-size: cover,cover;
   }
   .pl-or-4 img{
     max-width: 180px;
+  }
+  .card-game-desc{
+    height:172px;
+    
   }
 }
 @media only screen and (max-width: 1170px) {

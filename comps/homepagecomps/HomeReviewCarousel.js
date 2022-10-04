@@ -18,25 +18,28 @@ const HomeReviewCarousel=({reviews})=>{
   
     return cutDescription
 } 
+const shortrev=(txt)=>{
+      return txt.split(" ").splice(0,30).join(" ");
+}
   
     const responsive = {
       desktoplg: {
         breakpoint: { max: 4000, min: 1640 },
         items: 5,
         slidesToSlide: 1,
-        partialVisibilityGutter: 30
+        partialVisibilityGutter: 24
       },
       desktopmd: {
         breakpoint: { max: 1640, min: 1440 },
         items: 4,
         slidesToSlide: 1,
-        partialVisibilityGutter: 24
+        partialVisibilityGutter: 20
       },
     desktop: {
       breakpoint: { max: 1440, min: 1024 },
       items: 3,
       slidesToSlide: 1,
-      partialVisibilityGutter: 24
+      partialVisibilityGutter: 20
     },
         tablet: {
           breakpoint: { max: 1024, min: 520 },
@@ -48,7 +51,7 @@ const HomeReviewCarousel=({reviews})=>{
           breakpoint: { max: 520, min: 0 },
           items: 1,
           slidesToSlide: 1,
-          partialVisibilityGutter: 60
+          partialVisibilityGutter: 50
         }
       };
     return (
@@ -88,13 +91,40 @@ const HomeReviewCarousel=({reviews})=>{
                          </div>
                      </div>
 
-                     <div className="card-rev-bottom bg-black pt-4 px-4"> 
+                     <div className="card-rev-bottom bg-black pt-4 px-4">
+             
                          <div className="card-rev-desc text-center">
                               <img className="inline" src="/assets/reviews/rev-5star.svg"></img>
-                             <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-medium uppercase text-white">{review.title}</h3>
+                              {
+                                review.revlink &&
+                                <h3 className="card-rev-title py-3 text-lg lg:text-xl font-medium uppercase text-white">{review.title}</h3>
+                              }
+                              {
+                                !review.revlink &&
+                                <h3 className="card-rev-title py-3 text-xl lg:text-2xl font-medium uppercase text-white">{review.title}</h3>
+                              }
+                             
+                             {
+                              review.revlink &&
+                              <> 
+                              <p><span className="golden-text font-light lg:text-lg">&quot;{shortrev(review.review_text)} </span>
+                                  <span className="text-[#FFEFCD]">
+                                      <a target="_blank" href={review.revlink} className="text-[#FFEFCD]"> ... READ MORE</a>
+                                 </span>
+                                </p>
+                                
+                              </>
+                             }
+                             {
+                              !review.revlink &&
                              <p className="golden-text font-light lg:text-lg italic h-[170px] md:h-[200px]">&quot;{review.review_text}</p>
+                              }
                          </div>
                          <div className="card-rev-auth mt-4 pb-8 text-center">
+                          {
+                            review.revlink &&
+                            <img className="max-w-[32px] mx-auto" src="/assets/svg/googleicon.svg"></img>
+                          }
                          <p className="text-[#afafaf]">{review.author}</p>
                          <p className="text-[#585858]">{review.author_location}</p>
                          </div>

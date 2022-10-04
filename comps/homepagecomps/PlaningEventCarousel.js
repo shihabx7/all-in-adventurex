@@ -26,13 +26,13 @@ const PlaningEventCarousel=(props)=>{
         breakpoint: { max: 4000, min: 1640 },
         items: 5,
         slidesToSlide: 1,
-        partialVisibilityGutter: 30
+        partialVisibilityGutter: 20
       },
       desktopmd: {
         breakpoint: { max: 1640, min: 1440 },
         items: 4,
         slidesToSlide: 1,
-        partialVisibilityGutter: 24
+        partialVisibilityGutter: 20
       },
     desktop: {
       breakpoint: { max: 1440, min: 1024 },
@@ -44,13 +44,13 @@ const PlaningEventCarousel=(props)=>{
           breakpoint: { max: 1024, min: 520 },
           items: 2,
           slidesToSlide:1,
-          partialVisibilityGutter: 20
+          partialVisibilityGutter: 24
         },
         mobile: {
           breakpoint: { max: 520, min: 0 },
           items: 1,
           slidesToSlide: 1,
-          partialVisibilityGutter: 60
+          partialVisibilityGutter: 50
         }
       };
     return (
