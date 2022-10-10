@@ -1,5 +1,7 @@
 
 import { getALlActivityList } from "../getAllActivityList"
+import { getAllEventList } from "../getAllEventList"
+import { getVirtualGameSlug } from "../VirtualGames/getVirtualGameSlug"
 import { getLocationsPageData } from "../getLocationsPageData"
 
 export const totalLocation=()=>{
@@ -23,7 +25,10 @@ export const getTotal=()=>{
         "uniqueGames":uniqueGames,
         "toalPlayerEscape":"9M+",
         "totalReview":"750K+",
-        "locationlist":getLocationsPageData().states
+        "locationlist":getLocationsPageData().states,
+        "activitylistSlug":getALlActivityList(),
+        "eventlistSlug":getAllEventList(),
+        "virtualgameSlug":getVirtualGameSlug()
     }
 
     return totalData

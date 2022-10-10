@@ -176,7 +176,10 @@ const Homenav=(props)=>{
                                 (showMe && !props.locationslug) &&
                                   
                                  
-                                     <SubMenu></SubMenu>
+                                     <SubMenu
+                                     activitylist={props.activitylist}
+                                     eventlist={props.eventlist}
+                                     ></SubMenu>
                                      }
                                      
                                      

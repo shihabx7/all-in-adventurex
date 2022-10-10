@@ -16,11 +16,11 @@ const OhterGameSubmenu=(props)=>{
 
                         return(
                             activity.category=="other" &&
-                                    <>
+                                    <div key={activity.id}>
                                         <a href={"/"+props.locationslug+"/activities/"+activity.activity_slug} className="flex items-center space-x-1 my-1">
                                         <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">{activity.activity_name}</span>
                                      </a>
-                                    </>
+                                    </div>
                         )
 
                 })
@@ -31,7 +31,30 @@ const OhterGameSubmenu=(props)=>{
         </>
         }
         {
-            !props.locationslug &&
+            (!props.locationslug && props.activitylist) &&
+            <>{
+
+                        
+                props.activitylist.map((activity)=>{
+
+                        return(
+                            activity.category=="other" &&
+                                    <div key={activity.id}>
+                                        <a href={"/activities/"+activity.activity_slug} className="flex items-center space-x-1 my-1">
+                                        <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">{activity.activity_name}</span>
+                                     </a>
+                                    </div>
+                        )
+
+                })
+                      
+            } 
+                    
+                             
+        </>
+        }
+        {
+            (!props.locationslug && !props.activitylist) &&
             <>
                                         <a href="/activities/beat-the-seat" className="flex items-center space-x-1 my-1">
                                                 <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Beat The Seat</span>

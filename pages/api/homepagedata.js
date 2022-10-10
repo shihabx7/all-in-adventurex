@@ -9,6 +9,9 @@ import { getTotal } from "./AllDataList/getTotal";
     const Homepagedata=
        {
          "locationlist":getTotal().locationlist,
+         "activitylistSlug":getTotal().activitylistSlug,
+          "eventlistSlug":getTotal().eventlistSlug,
+          "virtualgameListSlug":getTotal().virtualgameSlug,
         "homeagedata": {
                       "totalLocations": getTotal().totalLocations,
                       "totalUniqueGames": getTotal().uniqueGames,

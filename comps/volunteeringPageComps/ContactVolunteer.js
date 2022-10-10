@@ -3,6 +3,9 @@ import GameTitleSeparator from "../util/GameTitleSeparator";
 const ContactVolunteer=()=>{
 
     const showVolunteeringMenu=()=>{
+        const body = document.getElementsByTagName('body')[0];
+        
+        body.classList.add('overflow-hidden')
         document.getElementById('volunteeringdloc').classList.remove('hidden')
     }
 

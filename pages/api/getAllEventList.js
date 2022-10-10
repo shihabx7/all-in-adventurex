@@ -18,7 +18,7 @@ const list=[
     },
     {
         "id":3,
-        "event_name":"FAMILY FUN ACTIVITIES",
+        "event_name":"Family Fun Activities",
         "event_slug":"family-fun-activity"
        
     },
@@ -66,19 +66,19 @@ const list=[
     },
     {
         "id":11,
-        "event_name":"PROPOSAL PARTY",
+        "event_name":"Proposal Party",
         "event_slug":"proposal-party"
        
     },
     {
         "id":12,
-        "event_name":"DATE NIGHT / NIGHT OUT",
+        "event_name":"Date Night / Night Out",
         "event_slug":"date-night"
        
     },
     {
         "id":13,
-        "event_name":"GENDER REVEAL PARTY",
+        "event_name":"Gender Reveal Party",
         "event_slug":"gender-reveal-party"
        
     }

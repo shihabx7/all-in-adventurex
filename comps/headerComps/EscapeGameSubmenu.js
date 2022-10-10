@@ -3,6 +3,7 @@ import { ImPlay3 } from "react-icons/im";
 
 const EscapeGameSubmenu=(props)=>{
 
+   console.log('gm'+props)
   
 
     return(
@@ -16,11 +17,34 @@ const EscapeGameSubmenu=(props)=>{
 
                                         return(
                                             activity.category=="escapegame" &&
-                                                    <>
+                                                    <div key={activity.id}>
                                                         <a href={"/"+props.locationslug+"/activities/"+activity.activity_slug} className="flex items-center space-x-1 my-1">
                                                         <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">{activity.activity_name}</span>
                                                      </a>
-                                                    </>
+                                                    </div>
+                                        )
+
+                                })
+                                      
+                            } 
+                                    
+                                             
+                        </>
+                     }
+                     {
+                        (!props.locationslug && props.activitylist) &&
+                        <>{
+
+                        
+                                props.activitylist.map((activity)=>{
+
+                                        return(
+                                            activity.category=="escapegame" &&
+                                                    <div key={activity.id}>
+                                                        <a href={"/activities/"+activity.activity_slug} className="flex items-center space-x-1 my-1">
+                                                        <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">{activity.activity_name}</span>
+                                                     </a>
+                                                    </div>
                                         )
 
                                 })
@@ -32,7 +56,7 @@ const EscapeGameSubmenu=(props)=>{
                      }
 
 {
-                        !props.locationslug &&
+                        (!props.locationslug && !props.activitylist) &&
                         <>
                                 <a href="/activities/escape-from-alcatraz" className="flex items-center space-x-1 my-1">
                                                 <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Escape From Alcatraz</span>

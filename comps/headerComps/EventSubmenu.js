@@ -16,11 +16,34 @@ const EventSubmenu=(props)=>{
 
                         return(
                            
-                                    <>
+                                    <div key={event.id}>
                                         <a href={"/"+props.locationslug+"/events/"+event.event_slug} className="flex items-center space-x-1 my-1">
                                         <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">{event.event_name}</span>
                                      </a>
-                                    </>
+                                    </div>
+                        )
+
+                })
+                      
+            } 
+                    
+                             
+        </>
+        }
+        {
+            (!props.locationslug && props.eventlist) &&
+            <>{
+
+                        
+                props.eventlist.map((event)=>{
+
+                        return(
+                           
+                                    <div key={event.id}>
+                                        <a href={"/"+props.locationslug+"/events/"+event.event_slug} className="flex items-center space-x-1 my-1">
+                                        <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">{event.event_name}</span>
+                                     </a>
+                                    </div>
                         )
 
                 })
@@ -32,7 +55,7 @@ const EventSubmenu=(props)=>{
         }
 
                 {
-            !props.locationslug &&
+            (!props.locationslug && !props.eventlist) &&
             <> 
                         <a href="/events/team-building" className="flex items-center space-x-1 my-1">
                                                 <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Team Building</span>

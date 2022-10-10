@@ -10,6 +10,7 @@ import GivingBack from "../comps/volunteeringPageComps/GivingBack";
 import Organization from "../comps/volunteeringPageComps/Organization";
 import ContactVolunteer from "../comps/volunteeringPageComps/ContactVolunteer";
 import VolunteeringLoc from "../comps/volunteeringPageComps/VolunteeringLoc";
+import LocationStoreMenu from "../comps/headerComps/LocationStoreMenu";
 
 
 const Volunteering=(props)=>{
@@ -33,7 +34,11 @@ const Volunteering=(props)=>{
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
-           <Homenav/>
+           <Homenav 
+           locationlist={props.locationlist}
+           activitylist={props.activitylist}
+           eventlist={props.eventlist}
+           />
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}
@@ -49,12 +54,10 @@ const Volunteering=(props)=>{
               </Breadcrumbs>
         </div>
          {/* =======breadcum content and breadcum root page template======== end */}
-         {
-            console.log(props)
-         }
+         
 
         <div id="volunteeringdloc" className="rewardloc z-[10000] fixed w-screen h-screen top-0 left-0 overflow-scroll hidden">
-            <VolunteeringLoc/>
+            <LocationStoreMenu locationlist={props.locationlist}/>
 
         </div>
         <GameHomeHero gametotal="not" pagedata={props.pagedata}/>
@@ -66,7 +69,7 @@ const Volunteering=(props)=>{
   {/* =========================================================================================main content ======== end */}
         </div>
   
-          <Footer/>
+          <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
           </>
     )
 }
@@ -80,7 +83,10 @@ export const getStaticProps=async()=>{
     return{
         props:{
             pagedata:volunteeringPageData.pagedata,
-            pagemeta:volunteeringPageData.pagemeta
+            pagemeta:volunteeringPageData.pagemeta,
+            locationlist:volunteeringPageData.locationlist,
+            activitylist:volunteeringPageData.activitylistSlug,
+            eventlist:volunteeringPageData.eventlistSlug
             
         },
         revalidate:30

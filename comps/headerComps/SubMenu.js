@@ -95,8 +95,13 @@ const SubMenu=(props)=>{
                                                          activitylist={props.activitylist}/>
                                     }
                                     {
-                                       !props.locationslug &&
-                                       <EscapeGameSubmenu/>
+                                      (!props.locationslug && props.activitylist) &&
+                                       <EscapeGameSubmenu activitylist={props.activitylist}/>
+                                       
+                                    }
+                                    {
+                                      (!props.locationslug && !props.activitylist) &&
+                                       <EscapeGameSubmenu />
                                     }
                                        
                                              
@@ -142,7 +147,12 @@ const SubMenu=(props)=>{
                                        />
                                     }
                                     {
-                                       !props.locationslug &&
+                                       (!props.locationslug && props.activitylist) &&
+                                       <OhterGameSubmenu activitylist={props.activitylist}
+                                       />
+                                    }
+                                    {
+                                       (!props.locationslug && !props.activitylist) &&
                                        <OhterGameSubmenu/>
                                     }
                                   
@@ -189,10 +199,13 @@ const SubMenu=(props)=>{
                                        />
                                     }
                                     {
-                                       !props.locationslug &&
-                                       <EventSubmenu/>
+                                       (!props.locationslug && props.eventlist) &&
+                                       <EventSubmenu eventlist={props.eventlist}/>
                                     }
-                                
+                                {
+                                       (!props.locationslug && !props.eventlist) &&
+                                       <EventSubmenu />
+                                    }
                                     
 
                                 </div>

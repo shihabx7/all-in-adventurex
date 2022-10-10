@@ -3,9 +3,12 @@ import GameTitleSeparator from "../util/GameTitleSeparator"
 import { FiChevronDown,FiMapPin } from "react-icons/fi";
 
 
-const GivingBack=()=>{
+const GivingBack=(props)=>{
 
     const showVolunteeringMenu=()=>{
+        const body = document.getElementsByTagName('body')[0];
+        
+        body.classList.add('overflow-hidden')
         document.getElementById('volunteeringdloc').classList.remove('hidden')
     }
 
