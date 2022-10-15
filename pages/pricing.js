@@ -8,6 +8,8 @@ import { getPricingPageData } from "./api/getPricingPageData";
 import GameHomeHero  from "../comps/activitiyPageComps/GameHomeHero";
 import PriceForLargerGroup from "../comps/pricingPageComps/PriceForLargerGroup";
 import PriceInperson from "../comps/pricingPageComps/PriceInperson";
+import PricingNextGen from "../comps/pricingPageComps/PricingNextGen";
+import PricingQuest from "../comps/pricingPageComps/PricingQuest";
 import PricingOthersGame from "../comps/pricingPageComps/PricingOthersGame";
 import PrivcingVirtualGames from "../comps/pricingPageComps/PrivcingVirtualGames";
 import PricingEvents from "../comps/pricingPageComps/PricingEvents";
@@ -38,7 +40,10 @@ const Pricing=(props)=>{
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
-           <Homenav/>
+           <Homenav locationlist={props.locationlist}
+           activitylist={props.activitylist}
+           eventlist={props.eventlist}
+           />
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}
@@ -58,7 +63,9 @@ const Pricing=(props)=>{
 
      
         <GameHomeHero gametotal="not" pagedata={props.pagedata}/>
-        <PriceInperson/>
+        <PriceInperson pricing={props.inpersonpricing}/>
+        <PricingNextGen pricing={props.nextgenpricing}/>
+        <PricingQuest pricing={props.questgenpricing} />
         <PricingOthersGame/>
         <PricingEvents/>
         <PricingGiftCard/>
@@ -71,7 +78,7 @@ const Pricing=(props)=>{
   {/* =========================================================================================main content ======== end */}
         </div>
   
-          <Footer/>
+          <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
           </>
     )
 }
@@ -86,6 +93,12 @@ export const getStaticProps=async()=>{
         props:{
             pagedata:pricingPageData.pagedata,
             pagemeta:pricingPageData.pagemeta,
+            locationlist:pricingPageData.locationlist,
+            activitylist:pricingPageData.activitylistSlug,
+            eventlist:pricingPageData.eventlistSlug,
+            inpersonpricing:pricingPageData.inpersonpricing,
+            nextgenpricing:pricingPageData.nextgenpricing,
+            questgenpricing:pricingPageData.questgenpricing,
             faqlist:pricingPageData.faqlist
             
         },

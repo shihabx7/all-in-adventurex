@@ -1,6 +1,11 @@
+import { getTotal } from "./AllDataList/getTotal"
 export const getPricingPageData=()=>{
 
     const pricingPageData={
+      "locationlist":getTotal().locationlist,
+      "activitylistSlug":getTotal().activitylistSlug,
+       "eventlistSlug":getTotal().eventlistSlug,
+       "virtualgameListSlug":getTotal().virtualgameSlug,
         "pagemeta":{
 
             "matatilte":"title",
@@ -9,10 +14,10 @@ export const getPricingPageData=()=>{
           },
            
           "pagedata": {
-                        "pagetitle":"PRICING",
+                        "pagetitle":"ALL IN ADVENTURES PRICING",
                         "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
                          
-                        "totalLocations": "28",
+                        "totalLocations": getTotal().totalLocations,
                         "coverimageL":"/assets/gn-desktop-hero/allinadventures-pricing-hero.jpg",
                         "coverimageM":"/assets/gn-mobile-hero/allinadventures-pricing-hero.jpg"
           },
@@ -61,7 +66,85 @@ export const getPricingPageData=()=>{
                            
        
                    }
-                ]
+                ],
+          "inpersonpricing":[
+                    {
+                      "id":1,
+                      "group_size":"Per Player",
+                      "group_text":"Minimum 2 players",
+                      "price":"29.89",
+                      "person":"Per Person"
+                    },
+                    {
+                      "id":2,
+                      "group_size":"4 Players",
+                      "group_text":"Full private room",
+                      "price":"99.00",
+                      "person":"4 Person"
+                    },
+                    {
+                      "id":3,
+                      "group_size":"6 Players",
+                      "group_text":"Full private room",
+                      "price":"149.00",
+                      "person":"6 Person"
+                    },
+                    {
+                      "id":4,
+                      "group_size":"8 Players",
+                      "group_text":"Full private room",
+                      "price":"209.00",
+                      "person":"8 Person"
+                    },
+                    {
+                      "id":5,
+                      "group_size":"10 Players",
+                      "group_text":"Full private room",
+                      "price":"269.00",
+                      "person":"10 Person"
+                    },
+                    {
+                      "id":6,
+                      "group_size":"12 Players",
+                      "group_text":"Full private room",
+                      "price":"329.00",
+                      "person":"12 Person"
+                    },
+                  ],
+          "nextgenpricing":[
+                    {
+                      "id":1,
+                      "group_size":"Per Player",
+                      "group_text":"Minimum 2 players",
+                      "price":"39.95",
+                      "person":"Per Person"
+                    },
+                    {
+                      "id":2,
+                      "group_size":"4 Players",
+                      "group_text":"Full private room",
+                      "price":"149.95",
+                      "person":"4 Person"
+                    },
+                    
+                  ],
+          "questgenpricing":[
+                    {
+                      "id":1,
+                      "group_size":"Per Player",
+                      "group_text":"Minimum 2 players",
+                      "price":"29.89",
+                      "person":"Per Person"
+                    },
+                    {
+                      "id":2,
+                      "group_size":"8 Players",
+                      "group_text":"Full private room",
+                      "price":"209.00",
+                      "person":"8 Person"
+                    },
+                    
+                  ],
 
     }
 

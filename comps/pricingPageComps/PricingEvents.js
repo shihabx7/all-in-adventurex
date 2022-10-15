@@ -8,34 +8,32 @@ const PricingEvents=()=>{
         <div className="events-pricing relative bg-center bg-cover" style={{backgroundImage:'url("/assets/game-dt-bg.jpg")'}}>
             
                 {/**=================inpersone escape game price section==================== */}
-                 <div className="section-container max-w-7xl mx-auto  py-16 md:py-20 lg:py-28 relative z-30">
-                    <div className="section-title px-4">
+                 <div className="section-container max-w-7xl mx-auto  pb-16 md:pb-20 lg:pb-28 relative z-30">
+                    <div className="section-title px-4 mb-8">
                         <TitleSeparator title="ALL EVENT AND PARTY PRICING" color="golden-text" weight="font-bold"/>
-                        <p className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-12 text-gray-700">
-                        Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure 
-                        </p>
+                        
                     </div>
-                    <div className="price-cl max-w-[800px] mx-auto">
+                    <div className="price-cl max-w-[900px] mx-auto">
                          {/** ============== inperson pricing-table- ============ */}
                          <table className="inperson-game-price-table w-full border-collapse border border-[#D2C6AA]">
                                <thead className="bg-[#EFE4CA]">
                                 {/** ==============table-head============ */}
                                   <tr >
-                                    <td className="border border-[#D2C6AA] w-[36%] md:w-[40%] p-2 md:p-3">
+                                    <td className="border border-[#D2C6AA] w-[36%] md:w-[36%] p-2 md:p-3">
                                         <h4 className="font-medium sm:text-lg md:text-[24px] text-[#000000]">
                                         Event Types
                                         </h4>
                                         
                                     </td>
-                                    <td className="border border-[#D2C6AA] w-[32%] md:w-[30%] p-2 md:p-4">
+                                    <td className="border border-[#D2C6AA] w-[32%] md:w-[32%] p-2 md:p-4">
                                         <h4 className="font-medium sm:text-lg md:text-[24px] text-[#000000]">
-                                        Upto 10 Guests
+                                        Party room rental
                                         </h4>
                                         
                                     </td>
-                                    <td className="border border-[#D2C6AA] w-[32%] md:w-[30%] p-2 md:p-4">
+                                    <td className="border border-[#D2C6AA] w-[32%] md:w-[32%] p-2 md:p-4">
                                         <h4 className="font-medium sm:text-lg md:text-[24px] text-[#000000]">
-                                        10+ Guests
+                                        Food per person
                                         </h4>
                                         
                                     </td>
@@ -48,21 +46,35 @@ const PricingEvents=()=>{
                                     <tbody className="bg-[#FBF2DC]">
                                         {/** ==============table-row============4+ players */}
                                         <tr >
-                                           <td className="border border-[#D2C6AA] w-[36%] md:w-[40%] p-2 md:p-4">
-                                               <h4 className="my-2 leading-[1.1] font-medium text-sm md:text-[20px] text-[#222222]">Birthday Partymy</h4>
-                                               <h4 className="my-2 leading-[1.1] font-medium text-sm md:text-[20px] text-[#222222]">Team Buildingmy </h4>
-                                               <h4 className="my-2 leading-[1.1] font-medium text-sm md:text-[20px] text-[#222222]">Corporate Eventmy</h4>
-                                               <h4 className="my-2 leading-[1.1] font-medium text-sm md:text-[20px] text-[#222222]">Family Eventsmy</h4>
-                                               <h4 className="my-2 leading-[1.1] font-medium text-sm md:text-[20px] text-[#222222]">And Others Private Events</h4>
+                                           <td className="border border-[#D2C6AA] w-[36%] md:w-[35%] p-2 md:p-4 text align-top">
+                                           
+                                               <h4 className="my-2 leading-[1.5] text-sm md:text-[20px] text-[#222222]">Birthday Party</h4>
+                                               <h4 className="my-2 leading-[1.5] text-sm md:text-[20px] text-[#222222]">Team Building </h4>
+                                               <h4 className="my-2 leading-[1.5] text-sm md:text-[20px] text-[#222222]">Corporate Events</h4>
+                                               <h4 className="my-2 leading-[1.5] text-sm md:text-[20px] text-[#222222]">Family Events</h4>
+                                               <h4 className="my-2 leading-[1.5] text-sm md:text-[20px] text-[#222222]">And Others Private Events</h4>
                                               
                                            </td>
-                                           <td className="border border-[#D2C6AA] w-[32%] md:w-[30%] p-2 md:p-4">
-                                              <h4 className="font-medium  md:text-[20px] text-[#000000]"> Contact store</h4>
-                                               <p className="text-[#222222] font-light text-xs sm:text-sm md:text-lg"> for special pricing</p>
+                                           <td className="border border-[#D2C6AA] w-[32%] md:w-[32%] p-2 md:p-4 align-top">
+                                            
+                                              <h4 className="mt-2 font-light text-xs sm:text-sm md:text-[20px] text-[#000000]"> <span className="font-medium">$75.00</span> + Tax / guests varies</h4>
+                                               <ul className="star-list list-inside md:list-outside mt-4 md:pl-5">
+                                                    <li className="my-2 md:my-3 text-xs sm:text-sm lg:text-lg font-light">Party room rental for 2 hours</li>
+                                                    <li className="my-2 md:my-3 text-xs sm:text-sm lg:text-lg font-light">Basic supplies (plates, napkins, utensils, etc.)</li>
+                                                    <li className="my-2 md:my-3 text-xs sm:text-sm lg:text-lg font-light">FREE All In Adventures birthday invitations (digital - can be printed)</li>
+                                                    <li className="my-2 md:my-3 text-xs sm:text-sm lg:text-lg font-light">$30 gift card for birthday child</li>
+                                               </ul>
+                                               
                                            </td>
-                                           <td className="border border-[#D2C6AA] w-[32%] md:w-[30%] p-2 md:p-4">
-                                           <h4 className="font-medium  md:text-[20px] text-[#000000]"> Contact store</h4>
-                                               <p className="text-[#222222] font-light text-xs sm:text-sm md:text-lg"> for special pricing</p>
+                                           <td className="border border-[#D2C6AA] w-[32%] md:w-[32%] p-2 md:p-4 align-top">
+                                                 <h4 className="mt-2 font-light text-xs sm:text-sm md:text-[20px] text-[#000000]"> <span className="font-medium">$75.00</span> + Tax / guests varies</h4>
+                                               <ul className="star-list mt-4 pl-5">
+                                                    <li className="my-3 text-xs sm:text-sm lg:text-lg font-light">Party room rental for 2 hours</li>
+                                                    <li className="my-3 text-xs sm:text-sm lg:text-lg font-light">Basic supplies (plates, napkins, utensils, etc.)</li>
+                                                    <li className="my-3 text-xs sm:text-sm lg:text-lg font-light">FREE All In Adventures birthday invitations (digital - can be printed)</li>
+                                                    <li className="my-3 text-xs sm:text-sm lg:text-lg font-light">$30 gift card for birthday child</li>
+                                               </ul>
+                                               
                                            </td>
 
 
@@ -77,14 +89,11 @@ const PricingEvents=()=>{
                     </div>
                     {/** ============== inperson pricing-notice- ============ */}
                     <div className="pricing-notice max-w-[800px] px-4 mx-auto mt-4 md:mt-8">
-                        <ul className="star-list pl-4 md:pl-6 md:text-lg text-[#222222] font-light">
-                            <li className="mt-3">Price per person depends on the number of people in your group and whether it's a weekend/holiday or weekday.</li>
-                            <li className="mt-3">All of our escape rooms are private when you book an escape game.</li>
-                        </ul>
-                        <div className="view-all flex justify-center pt-4 md:pt-8">
-                            <Link href="/events"> 
-                              <a className="flex lg:text-lg justify-center space-x-1 items-center text-red-500 hover:text-red-700"><span>View all events</span> <FiChevronRight/></a>
-                            </Link>
+                        
+                        <div className="view-all flex justify-center ">
+                            
+                              <a href="/events" className="flex lg:text-lg justify-center space-x-1 items-center text-red-500 hover:text-red-700 font-medium"><span>View all events</span> <FiChevronRight/></a>
+                           
                          </div>
                     </div>
                     {/** ============== inperson pricing-notice- end ============ */}
