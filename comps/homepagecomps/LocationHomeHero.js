@@ -51,13 +51,14 @@ const LocationHomeHero=(props)=>{
                         <div className="booking-btn">
                         {
                             props.pagedata.bookingall &&
-                            <button onClick={()=>bookAll(props.pagedata.bookingall)} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BOOK GAMES</button>
+                          
+                           <a href={"/"+props.pagedata.slug+"/activities"} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">VIEW ALL GAMES</a>
                         }
                          </div>
                          <div className="booking-btn mt-4">
-                                <Link href={"/"+props.pagedata.slug+"/events#eventform"}> 
-                                        <a className="block py-3 rounded-full text-center  text-white font-medium border-2 border-red-600  hover:bg-red-700 hover:border-red-700 text-lg">BOOK EVENTS</a>
-                                </Link>
+                                
+                         <a href={"/"+props.pagedata.slug+"/events"} className="block py-3 rounded-full text-center  text-white font-medium border-2 border-red-600  hover:bg-red-700 hover:border-red-700 text-lg">VIEW ALL EVENTS</a>
+                               
                          </div>
                          {/*============location search btn==========*/}
 

@@ -207,7 +207,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                 "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
                                }
 
-                             ],
+                        ],
         "otherphysicalgames": [
                               {
 

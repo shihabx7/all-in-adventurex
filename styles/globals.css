@@ -46,6 +46,12 @@ html,body,a{
   scale: 1.04;
   transition:.3s;
 }
+.thank-btm-shadow{
+  background: linear-gradient(to top,rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,9),rgba(0,0,0,0.9),rgba(0,0,0,0.9),rgba(0,0,0,.8),rgba(0,0,0,.6),rgba(0,0,0,0.04));
+}
+.thank-ev-head{
+  background: linear-gradient(to bottom,rgba(0,0,0,9),rgba(0,0,0,9),rgba(0,0,0,.8),rgba(0,0,0,.6),rgba(0,0,0,0.01));
+}
 /*------------------===================map design======================*/
 .gm-style .gm-style-iw-c{
   background:#FFF9EC !important;
@@ -283,6 +289,10 @@ filter: opacity(44%);
     top:-64px;
     right:-64px;
     animation:spin 90s linear infinite;
+}
+.ot-hero-icon{
+  top:-40px;
+  right:-128px;
 }
 .htb-bg-2 img{
   filter: opacity(24%);

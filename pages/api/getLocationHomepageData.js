@@ -230,7 +230,7 @@ const locPagedata={
                       "category":"escapegame",
                       "type": "In person",
                        "title": "Escape From Alcatraz",
-                       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
                        "age":"All age",
                        "duration":"50",
                        "maxplayers":"10",
@@ -257,22 +257,8 @@ const locPagedata={
                       "id":3,
                       "category":"escapegame",
                       "type": "In person",
-                      "title": "Superhero's Adventure",
-                      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-                      "age":"all age",
-                      "duration":"50",
-                      "maxplayers":"10",
-                      "minplayers":"2",
-                      "price":"29.89",
-                      "slug"  :"superheros-adventure",
-                      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-                     },
-                     {
-                      "id":4,
-                      "category":"escapegame",
-                      "type": "In person",
                       "title": "Zombie Apocalypse",
-                      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+                      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
                       "age":"all age",
                       "duration":"50",
                       "maxplayers":"10",
@@ -282,11 +268,69 @@ const locPagedata={
                       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
                      },
                      {
+                      "id":4,
+                      "category":"escapegame",
+                      "type": "In person",
+                      "title": "Sherlock's Library",
+                      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
+                      "age":"all age",
+                      "duration":"50",
+                      "maxplayers":"10",
+                      "minplayers":"2",
+                      "price":"29.89",
+                      "slug"  :"sherlocks-library",
+                      "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
+                     },
+                     
+                     {
                       "id":5,
                       "category":"escapegame",
                       "type": "In person",
+                      "title": "Black Ops",
+                      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
+                      "age":"all age",
+                      "duration":"50",
+                      "maxplayers":"10",
+                      "minplayers":"2",
+                      "price":"29.89",
+                      "slug"  :"black-ops",
+                      "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
+                     },
+                     {
+                      "id":6,
+                      "category":"escapegame",
+                      "type": "In person",
+                      "title": "Superhero's Adventure",
+                      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
+                      "age":"all age",
+                      "duration":"50",
+                      "maxplayers":"10",
+                      "minplayers":"2",
+                      "price":"29.89",
+                      "slug"  :"superheros-adventure",
+                      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
+                     },
+                     {
+                      "id":7,
+                      "category":"escapegame",
+                      "type": "In person",
+                      "title": "Houdini's Magic Cell",
+                      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
+                      "age":"all age",
+                      "duration":"50",
+                      "maxplayers":"10",
+                      "minplayers":"2",
+                      "price":"29.89",
+                      "slug"  :"houdinis-magic-cell",
+                      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
+                     },
+                    
+                     {
+                      "id":8,
+                      "category":"escapegame",
+                      "type": "In person",
                       "title": "Special Agent",
-                      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+                      "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
                       "age":"all age",
                       "duration":"50",
                       "maxplayers":"10",
@@ -296,11 +340,11 @@ const locPagedata={
                       "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
                      },
                      {
-                      "id":6,
+                      "id":9,
                       "category":"escapegame",
                       "type": "In person",
                       "title": "Hollywood Premiere",
-                      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                      "description": "Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
                       "age":"all age",
                       "duration":"50",
                       "maxplayers":"10",
@@ -308,52 +352,10 @@ const locPagedata={
                       "price":"29.89",
                       "slug"  :"hollywood-premiere",
                       "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-                     },
-                     {
-                      "id":7,
-                      "category":"escapegame",
-                      "type": "In person",
-                      "title": "Sherlock's Library",
-                      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
-                      "age":"all age",
-                      "duration":"50",
-                      "maxplayers":"10",
-                      "minplayers":"2",
-                      "price":"29.89",
-                      "slug"  :"sherlocks-library",
-                      "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
-                     },
-                     {
-                      "id":8,
-                      "category":"escapegame",
-                      "type": "In person",
-                      "title": "Houdini's Magic Cell",
-                      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-                      "age":"all age",
-                      "duration":"50",
-                      "maxplayers":"10",
-                      "minplayers":"2",
-                      "price":"29.89",
-                      "slug"  :"houdinis-magic-cell",
-                      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-                     },
-                     {
-                      "id":9,
-                      "category":"escapegame",
-                      "type": "In person",
-                      "title": "Black Ops",
-                      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
-                      "age":"all age",
-                      "duration":"50",
-                      "maxplayers":"10",
-                      "minplayers":"2",
-                      "price":"29.89",
-                      "slug"  :"black-ops",
-                      "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
-                     },
-                     
+                     }, 
+                    
 
-                   ],
+                      ],
                   
                   "events":             [
                     {
@@ -498,7 +500,7 @@ const locPagedata={
           "category":"escapegame",
           "type": "In person",
            "title": "Escape From Alcatraz",
-           "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+           "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
            "age":"All age",
            "duration":"50",
            "maxplayers":"10",
@@ -513,7 +515,7 @@ const locPagedata={
            "type": "In person",
            "title": "Treasure Island",
            "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-           "age":"all age",
+           "age":"ll age",
            "duration":"50",
            "maxplayers":"10",
            "minplayers":"2",
@@ -525,22 +527,8 @@ const locPagedata={
           "id":3,
           "category":"escapegame",
           "type": "In person",
-          "title": "Superhero's Adventure",
-          "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-          "age":"all age",
-          "duration":"50",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"29.89",
-          "slug"  :"superheros-adventure",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-         },
-         {
-          "id":4,
-          "category":"escapegame",
-          "type": "In person",
           "title": "Zombie Apocalypse",
-          "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+          "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
           "age":"all age",
           "duration":"50",
           "maxplayers":"10",
@@ -550,39 +538,11 @@ const locPagedata={
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
          },
          {
-          "id":5,
-          "category":"escapegame",
-          "type": "In person",
-          "title": "Special Agent",
-          "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-          "age":"all age",
-          "duration":"50",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"29.89",
-          "slug"  :"special-agent",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-         },
-         {
-          "id":6,
-          "category":"escapegame",
-          "type": "In person",
-          "title": "Hollywood Premiere",
-          "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-          "age":"all age",
-          "duration":"50",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"29.89",
-          "slug"  :"hollywood-premiere",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-         },
-         {
-          "id":7,
+          "id":4,
           "category":"escapegame",
           "type": "In person",
           "title": "Sherlock's Library",
-          "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+          "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
           "age":"all age",
           "duration":"50",
           "maxplayers":"10",
@@ -591,26 +551,13 @@ const locPagedata={
           "slug"  :"sherlocks-library",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
          },
+         
          {
-          "id":8,
-          "category":"escapegame",
-          "type": "In person",
-          "title": "Houdini's Magic Cell",
-          "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-          "age":"all age",
-          "duration":"50",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"29.89",
-          "slug"  :"houdinis-magic-cell",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-         },
-         {
-          "id":9,
+          "id":5,
           "category":"escapegame",
           "type": "In person",
           "title": "Black Ops",
-          "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
           "age":"all age",
           "duration":"50",
           "maxplayers":"10",
@@ -620,113 +567,65 @@ const locPagedata={
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
          },
          {
-          "id":10,
+          "id":6,
           "category":"escapegame",
           "type": "In person",
-          "title": "Lost in The Jungle",
-          "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+          "title": "Superhero's Adventure",
+          "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
           "age":"all age",
-          "duration":"60",
-          "maxplayers":"5",
+          "duration":"50",
+          "maxplayers":"10",
           "minplayers":"2",
           "price":"29.89",
-          "slug"  :"lost-in-the-jungle",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+          "slug"  :"superheros-adventure",
+          "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
          },
          {
-          "id":11,
+          "id":7,
           "category":"escapegame",
           "type": "In person",
-          "title": "locked in The Lif",
-          "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+          "title": "Houdini's Magic Cell",
+          "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
           "age":"all age",
-          "duration":"30",
-          "maxplayers":"4",
+          "duration":"50",
+          "maxplayers":"10",
           "minplayers":"2",
           "price":"29.89",
-          "slug"  :"locked-in-the-lift",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
+          "slug"  :"houdinis-magic-cell",
+          "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
          },
-         {
-          "id":12,
-          "category":"escapegame",
-          "type": "In person",
-          "title": "Wizarding School ",
-          "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-          "age":"all age",
-          "duration":"60",
-          "maxplayers":"4",
-          "minplayers":"2",
-          "price":"39.95",
-          "slug"  :"wizarding-school",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-         },
-         {
-            
-          "id":13,
-          "category":"escapegame",
-          "type": "In person",
-          "title": "Magic Castle",
-          "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-          "age":"all age",
-          "duration":"60",
-          "maxplayers":"8",
-          "minplayers":"4",
-          "price":"29.89",
-          "slug"  :"magic-castle",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-         }
-
-       ],
-       "otherphysicalgames": [
-        {
-
-            "id":1,
-            "category":"other",
-            "type": "In person",
-            "title": "Beat The Seat",
-            "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-            "age":"All age (6+)",
-            "duration":"2",
-            "maxplayers":"",
-            "minplayers":"1",
-            "price":"5",
-            "slug"  :"beat-the-seat",
-            "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-           },
-          {
-
-              "id":2,
-              "category":"other",
-              "type": "In person",
-              "title": "Game Show Room",
-              "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-              "age":"All age (6+)",
-              "duration":"60",
-              "maxplayers":"16",
-              "minplayers":"4",
-              "price":"33",
-              "slug"  :"game-show-room",
-              "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-             },
-          {
-            
-              "id":3,
-              "category":"other",
-              "type": "In person",
-              "title": "Axe Throwing",
-              "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-              "age":"All age",
-              "duration":"20",
-              "maxplayers":"10",
-              "minplayers":"2",
-              "price":"20",
-              "slug"  :"axe-throwing",
-              "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-             },
-          
         
+         {
+          "id":8,
+          "category":"escapegame",
+          "type": "In person",
+          "title": "Special Agent",
+          "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
+          "age":"all age",
+          "duration":"50",
+          "maxplayers":"10",
+          "minplayers":"2",
+          "price":"29.89",
+          "slug"  :"special-agent",
+          "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
+         },
+         {
+          "id":9,
+          "category":"escapegame",
+          "type": "In person",
+          "title": "Hollywood Premiere",
+          "description": "Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
+          "age":"all age",
+          "duration":"50",
+          "maxplayers":"10",
+          "minplayers":"2",
+          "price":"29.89",
+          "slug"  :"hollywood-premiere",
+          "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
+         }, 
+         
           ],
+       
           "events":             [
             {
               "id":1,
@@ -870,7 +769,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -885,7 +784,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -897,22 +796,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -922,11 +807,56 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
+      "id":4,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Sherlock's Library",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"sherlocks-library",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
+     },
+     
+     {
       "id":5,
       "category":"escapegame",
       "type": "In person",
+      "title": "Black Ops",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"black-ops",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
+     },
+     
+     {
+      "id":7,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
+     },
+    
+     {
+      "id":8,
+      "category":"escapegame",
+      "type": "In person",
       "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+      "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -936,11 +866,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
      },
      {
-      "id":6,
+      "id":9,
       "category":"escapegame",
       "type": "In person",
       "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+      "description": "Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -948,108 +878,9 @@ const locPagedata={
       "price":"29.89",
       "slug"  :"hollywood-premiere",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"sherlocks-library",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
-     },
-     {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"black-ops",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
-     },
-     {
-      "id":10,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
-     },
-     {
-      "id":11,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
-      "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
-     },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
+     }, 
+     
+      ],
    "otherphysicalgames": [
     {
 
@@ -1066,38 +897,6 @@ const locPagedata={
         "slug"  :"beat-the-seat",
         "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
        },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
-    
       ],
   "events":             [
     {
@@ -1243,7 +1042,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -1258,7 +1057,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -1270,22 +1069,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -1295,39 +1080,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -1336,26 +1093,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -1365,25 +1109,68 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
      {
-      "id":10,
+      "id":6,
       "category":"escapegame",
       "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
      {
-      "id":11,
+      "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
+     },
+    
+     {
+      "id":8,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Special Agent",
+      "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"special-agent",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
+     },
+     {
+      "id":9,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Hollywood Premiere",
+      "description": "Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"hollywood-premiere",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
+     }, 
+     {
+      "id":12,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "locked in The Lift",
+      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. Act fast and save yourself and others!",
       "age":"all age",
       "duration":"30",
       "maxplayers":"4",
@@ -1392,37 +1179,24 @@ const locPagedata={
       "slug"  :"locked-in-the-lift",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
      },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
+     
      {
         
       "id":13,
       "category":"escapegame",
       "type": "In person",
       "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
+      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards. But it's not easy",
       "age":"all age",
       "duration":"60",
       "maxplayers":"8",
-      "minplayers":"4",
+      "minplayers":"2",
       "price":"29.89",
       "slug"  :"magic-castle",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
      }
-
-   ],
+     
+      ],
    "otherphysicalgames": [
     {
 
@@ -1439,38 +1213,6 @@ const locPagedata={
         "slug"  :"beat-the-seat",
         "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
        },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
-    
       ],
   "events":             [
     {
@@ -1614,7 +1356,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -1629,7 +1371,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -1641,22 +1383,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -1666,39 +1394,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -1707,26 +1407,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -1736,113 +1423,65 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
      {
-      "id":10,
+      "id":6,
       "category":"escapegame",
       "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
      {
-      "id":11,
+      "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
      },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
     
+     {
+      "id":8,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Special Agent",
+      "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"special-agent",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
+     },
+     {
+      "id":9,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Hollywood Premiere",
+      "description": "Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"hollywood-premiere",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
+     }, 
+     
       ],
+  
   "events":             [
     {
       "id":1,
@@ -1986,7 +1625,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -2001,7 +1640,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -2013,22 +1652,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -2038,39 +1663,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -2079,93 +1676,26 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
+     
      {
-      "id":8,
+      "id":6,
       "category":"escapegame",
       "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
-     {
-      "id":9,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"black-ops",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
-     },
-     {
-      "id":10,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
-     },
-     {
-      "id":11,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
-      "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
-     },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
+     
+     
 
-   ],
+      ],
    "otherphysicalgames": [
     {
 
@@ -2197,21 +1727,7 @@ const locPagedata={
           "slug"  :"game-show-room",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
          },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
+      
       
     
       ],
@@ -2362,7 +1878,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -2377,7 +1893,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -2389,22 +1905,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -2414,39 +1916,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -2455,26 +1929,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -2484,113 +1945,37 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
      {
-      "id":10,
+      "id":6,
       "category":"escapegame",
       "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
      {
-      "id":11,
+      "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
      },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
+    
     
       ],
+   
   "events":             [
     {
       "id":1,
@@ -2738,7 +2123,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -2753,7 +2138,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -2765,22 +2150,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -2790,39 +2161,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -2831,26 +2174,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -2860,113 +2190,52 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
      {
-      "id":10,
+      "id":6,
       "category":"escapegame",
       "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
      {
-      "id":11,
+      "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
      },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
     
+     {
+      "id":8,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Special Agent",
+      "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"special-agent",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
+     },
+    
+
       ],
+   
   "events":             [
     {
       "id":1,
@@ -3114,7 +2383,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -3129,7 +2398,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -3141,22 +2410,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -3166,39 +2421,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -3207,26 +2434,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -3236,113 +2450,64 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
      {
-      "id":10,
+      "id":6,
       "category":"escapegame",
       "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
      {
-      "id":11,
+      "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
      },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
     
+     {
+      "id":8,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Special Agent",
+      "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"special-agent",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
+     },
+     {
+      "id":9,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Hollywood Premiere",
+      "description": "Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"hollywood-premiere",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
+     }, 
       ],
+   
   "events":             [
     {
       "id":1,
@@ -3486,7 +2651,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -3501,7 +2666,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -3509,68 +2674,13 @@ const locPagedata={
        "slug"  :"treasure-island",
        "bgimg" :"/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg"
      },
-     {
-      "id":3,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
+   
      {
       "id":4,
       "category":"escapegame",
       "type": "In person",
-      "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"zombie-apocalypse",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
-     },
-     {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -3579,26 +2689,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -3608,113 +2705,51 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
      {
-      "id":10,
+      "id":6,
       "category":"escapegame",
       "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
      {
-      "id":11,
+      "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
      },
+    
      {
-      "id":12,
+      "id":8,
       "category":"escapegame",
       "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
+      "title": "Special Agent",
+      "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
       "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
+      "slug"  :"special-agent",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
+     },
     
       ],
+   
   "events":             [
     {
       "id":1,
@@ -3858,7 +2893,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -3873,7 +2908,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -3885,22 +2920,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -3910,39 +2931,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -3951,26 +2944,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -3980,113 +2960,66 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
      {
+      "id":6,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
+     },
+     {
+      "id":7,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
+     },
+    
+     
+     {
+      "id":9,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Hollywood Premiere",
+      "description": "Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"hollywood-premiere",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
+     }, 
+     {
       "id":10,
       "category":"escapegame",
       "type": "In person",
       "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises!",
       "age":"all age",
       "duration":"60",
       "maxplayers":"5",
       "minplayers":"2",
-      "price":"29.89",
+      "price":"39.95",
       "slug"  :"lost-in-the-jungle",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
      },
-     {
-      "id":11,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
-      "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
-     },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
-    
+     
       ],
+   
   "events":             [
     {
       "id":1,
@@ -4230,7 +3163,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -4245,7 +3178,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -4257,22 +3190,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -4282,39 +3201,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -4323,26 +3214,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -4352,113 +3230,65 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
      {
-      "id":10,
+      "id":6,
       "category":"escapegame",
       "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
      {
-      "id":11,
+      "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
      },
+    
      {
-      "id":12,
+      "id":8,
       "category":"escapegame",
       "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
+      "title": "Special Agent",
+      "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
+      "price":"29.89",
+      "slug"  :"special-agent",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
      },
      {
-        
-      "id":13,
+      "id":9,
       "category":"escapegame",
       "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
+      "title": "Hollywood Premiere",
+      "description": "Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
       "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
+      "slug"  :"hollywood-premiere",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
+     }, 
     
       ],
+  
   "events":             [
     {
       "id":1,
@@ -4606,7 +3436,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -4621,7 +3451,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -4633,22 +3463,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -4658,39 +3474,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -4699,26 +3487,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -4728,113 +3503,50 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
      {
-      "id":10,
+      "id":6,
       "category":"escapegame",
       "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
      {
-      "id":11,
+      "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
      },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
     
+     {
+      "id":8,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Special Agent",
+      "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"special-agent",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
+     },
       ],
+   
   "events":             [
     {
       "id":1,
@@ -4981,7 +3693,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -4996,7 +3708,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -5008,22 +3720,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -5033,39 +3731,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -5074,26 +3744,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -5102,114 +3759,41 @@ const locPagedata={
       "slug"  :"black-ops",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
+     
      {
-      "id":10,
+      "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
      },
-     {
-      "id":11,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
-      "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
-     },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
     
+     
+     {
+      "id":9,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Hollywood Premiere",
+      "description": "Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"hollywood-premiere",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
+     }, 
+     
+
       ],
+   
   "events":             [
     {
       "id":1,
@@ -5352,7 +3936,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -5367,7 +3951,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -5379,22 +3963,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -5404,39 +3974,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -5445,26 +3987,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -5474,113 +4003,64 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
      {
-      "id":10,
+      "id":6,
       "category":"escapegame",
       "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
      {
-      "id":11,
+      "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
      },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
     
+     {
+      "id":8,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Special Agent",
+      "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"special-agent",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
+     },
+     {
+      "id":9,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Hollywood Premiere",
+      "description": "Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"hollywood-premiere",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
+     }, 
       ],
+   
   "events":             [
     {
       "id":1,
@@ -5724,7 +4204,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -5739,7 +4219,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -5751,22 +4231,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -5776,39 +4242,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -5817,26 +4255,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -5846,113 +4271,64 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
      {
-      "id":10,
+      "id":6,
       "category":"escapegame",
       "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
      {
-      "id":11,
+      "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
      },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
     
+     {
+      "id":8,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Special Agent",
+      "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"special-agent",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
+     },
+     {
+      "id":9,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Hollywood Premiere",
+      "description": "Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"hollywood-premiere",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
+     }, 
       ],
+  
   "events":             [
     {
       "id":1,
@@ -6099,7 +4475,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -6114,7 +4490,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -6126,22 +4502,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -6151,39 +4513,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -6192,26 +4526,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -6221,80 +4542,53 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
      {
-      "id":10,
+      "id":6,
       "category":"escapegame",
       "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
      {
-      "id":11,
+      "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
      },
+    
+     
      {
-      "id":12,
+      "id":9,
       "category":"escapegame",
       "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
+      "title": "Hollywood Premiere",
+      "description": "Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
       "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
+      "slug"  :"hollywood-premiere",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
+     }, 
+    
+      ],
    "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
+    
       {
 
           "id":2,
@@ -6310,21 +4604,7 @@ const locPagedata={
           "slug"  :"game-show-room",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
          },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
+     
       
     
       ],
@@ -6471,7 +4751,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -6486,7 +4766,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -6494,12 +4774,42 @@ const locPagedata={
        "slug"  :"treasure-island",
        "bgimg" :"/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg"
      },
+     
      {
-      "id":3,
+      "id":4,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Sherlock's Library",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"sherlocks-library",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
+     },
+     
+     {
+      "id":5,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Black Ops",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"black-ops",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
+     },
+     {
+      "id":6,
       "category":"escapegame",
       "type": "In person",
       "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -6509,67 +4819,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
      {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"zombie-apocalypse",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
-     },
-     {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
       "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"sherlocks-library",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
-     },
-     {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -6582,124 +4836,19 @@ const locPagedata={
       "id":9,
       "category":"escapegame",
       "type": "In person",
-      "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "title": "Hollywood Premiere",
+      "description": "Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"black-ops",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
-     },
-     {
-      "id":10,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
-     },
-     {
-      "id":11,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
-      "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
-     },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
-    
+      "slug"  :"hollywood-premiere",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
+     }, 
+     
       ],
+  
   "events":             [
     {
       "id":1,
@@ -6843,7 +4992,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -6858,7 +5007,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -6870,22 +5019,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -6895,39 +5030,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -6936,26 +5043,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -6965,113 +5059,64 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
      {
-      "id":10,
+      "id":6,
       "category":"escapegame",
       "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
      {
-      "id":11,
+      "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
      },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
     
+     {
+      "id":8,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Special Agent",
+      "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"special-agent",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
+     },
+     {
+      "id":9,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Hollywood Premiere",
+      "description": "Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"hollywood-premiere",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
+     }, 
       ],
+   
   "events":             [
     {
       "id":1,
@@ -7220,7 +5265,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -7235,7 +5280,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -7247,22 +5292,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -7272,39 +5303,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -7313,26 +5316,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -7342,114 +5332,51 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
      {
-      "id":10,
+      "id":6,
       "category":"escapegame",
       "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
      {
-      "id":11,
+      "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
      },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
     
+     {
+      "id":8,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Special Agent",
+      "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"special-agent",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
+     },
       ],
-  "events":             [
+   
+  "events":[
     {
       "id":1,
       "category":"event",
@@ -7571,9 +5498,9 @@ const locPagedata={
      },
 
 
-   ],
+           ],
 
-                },
+          },
 //====================================================================bowie-md end
 //=====================================================================white-marsh-md
 "white-marsh-md":{
@@ -7592,7 +5519,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -7607,7 +5534,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -7619,22 +5546,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -7644,39 +5557,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -7685,26 +5570,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -7714,113 +5586,66 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
      {
-      "id":10,
+      "id":6,
       "category":"escapegame",
       "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
      {
-      "id":11,
+      "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
      },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
     
+     {
+      "id":8,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Special Agent",
+      "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"special-agent",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
+     },
+     {
+      "id":9,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Hollywood Premiere",
+      "description": "Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"hollywood-premiere",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
+     }, 
+     
+
       ],
+   
   "events":             [
     {
       "id":1,
@@ -7969,7 +5794,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -7984,7 +5809,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -7996,22 +5821,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -8021,39 +5832,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -8062,26 +5845,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -8091,114 +5861,66 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
      {
-      "id":10,
+      "id":6,
       "category":"escapegame",
       "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
      {
-      "id":11,
+      "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
      },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
     
+     {
+      "id":8,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Special Agent",
+      "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"special-agent",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
+     },
+     {
+      "id":9,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Hollywood Premiere",
+      "description": "Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"hollywood-premiere",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
+     }, 
+     
       ],
-  "events":             [
+  
+  "events": [
     {
       "id":1,
       "category":"event",
@@ -8320,7 +6042,7 @@ const locPagedata={
      },
 
 
-   ],
+            ],
 
                 },
 //====================================================================roanoke-va end
@@ -8341,27 +6063,14 @@ const locPagedata={
           "metadescription":"metadescription"
    },
    "inpersongames":[
-    {
-      "id":1,
-      "category":"escapegame",
-      "type": "In person",
-       "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
-       "age":"All age",
-       "duration":"50",
-       "maxplayers":"10",
-       "minplayers":"2",
-       "price":"29.89",
-       "slug"  :"escape-from-alcatraz",
-       "bgimg" :"/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg"
-     },
+    
      {
       "id":2,
       "category":"escapegame",
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -8373,22 +6082,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -8398,39 +6093,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -8439,26 +6106,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -8468,64 +6122,49 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
      {
-      "id":10,
+      "id":6,
       "category":"escapegame",
       "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
      {
-      "id":11,
+      "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
      },
+    
      {
-      "id":12,
+      "id":8,
       "category":"escapegame",
       "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
+      "title": "Special Agent",
+      "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
       "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
+      "slug"  :"special-agent",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
+     },
+      ],
    "otherphysicalgames": [
     {
 
@@ -8542,38 +6181,6 @@ const locPagedata={
         "slug"  :"beat-the-seat",
         "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
        },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
-    
       ],
   "events":             [
     {
@@ -8721,7 +6328,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -8736,7 +6343,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -8744,68 +6351,13 @@ const locPagedata={
        "slug"  :"treasure-island",
        "bgimg" :"/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg"
      },
-     {
-      "id":3,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
+     
      {
       "id":4,
       "category":"escapegame",
       "type": "In person",
-      "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"zombie-apocalypse",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
-     },
-     {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -8814,26 +6366,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -8842,115 +6381,24 @@ const locPagedata={
       "slug"  :"black-ops",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
-     {
-      "id":10,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
-     },
-     {
-      "id":11,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
-      "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
-     },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
     
+     {
+      "id":7,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
+     },
       ],
-  "events":             [
+   
+  "events": [
     {
       "id":1,
       "category":"event",
@@ -9093,7 +6541,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -9108,7 +6556,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -9120,22 +6568,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -9145,39 +6579,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -9186,12 +6592,41 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
+      "id":5,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Black Ops",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"black-ops",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
+     },
+     {
+      "id":6,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
+     },
+     {
+      "id":7,
       "category":"escapegame",
       "type": "In person",
       "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -9204,125 +6639,21 @@ const locPagedata={
       "id":9,
       "category":"escapegame",
       "type": "In person",
-      "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "title": "Hollywood Premiere",
+      "description": "Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"black-ops",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
-     },
-     {
-      "id":10,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
-     },
-     {
-      "id":11,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
-      "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
-     },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
+      "slug"  :"hollywood-premiere",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
+     }, 
+     
 
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
-    
       ],
-  "events":             [
+   
+  "events": [
     {
       "id":1,
       "category":"event",
@@ -9465,7 +6796,7 @@ const locPagedata={
       "category":"escapegame",
       "type": "In person",
        "title": "Escape From Alcatraz",
-       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
        "age":"All age",
        "duration":"50",
        "maxplayers":"10",
@@ -9480,7 +6811,7 @@ const locPagedata={
        "type": "In person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"all age",
+       "age":"ll age",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -9492,22 +6823,8 @@ const locPagedata={
       "id":3,
       "category":"escapegame",
       "type": "In person",
-      "title": "Superhero's Adventure",
-      "description": "The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"superheros-adventure",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
-     },
-     {
-      "id":4,
-      "category":"escapegame",
-      "type": "In person",
       "title": "Zombie Apocalypse",
-      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -9517,39 +6834,11 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
      },
      {
-      "id":5,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Special Agent",
-      "description": "After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"special-agent",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
-     },
-     {
-      "id":6,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Hollywood Premiere",
-      "description": 'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"hollywood-premiere",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
-     },
-     {
-      "id":7,
+      "id":4,
       "category":"escapegame",
       "type": "In person",
       "title": "Sherlock's Library",
-      "description": "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -9558,26 +6847,13 @@ const locPagedata={
       "slug"  :"sherlocks-library",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
      },
+     
      {
-      "id":8,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Houdini's Magic Cell",
-      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
-      "age":"all age",
-      "duration":"50",
-      "maxplayers":"10",
-      "minplayers":"2",
-      "price":"29.89",
-      "slug"  :"houdinis-magic-cell",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
-     },
-     {
-      "id":9,
+      "id":5,
       "category":"escapegame",
       "type": "In person",
       "title": "Black Ops",
-      "description": "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
       "age":"all age",
       "duration":"50",
       "maxplayers":"10",
@@ -9587,114 +6863,51 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
      {
-      "id":10,
+      "id":6,
       "category":"escapegame",
       "type": "In person",
-      "title": "Lost in The Jungle",
-      "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
       "age":"all age",
-      "duration":"60",
-      "maxplayers":"5",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"lost-in-the-jungle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg"
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
      },
      {
-      "id":11,
+      "id":7,
       "category":"escapegame",
       "type": "In person",
-      "title": "locked in The Lif",
-      "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
       "age":"all age",
-      "duration":"30",
-      "maxplayers":"4",
+      "duration":"50",
+      "maxplayers":"10",
       "minplayers":"2",
       "price":"29.89",
-      "slug"  :"locked-in-the-lift",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg"
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
      },
-     {
-      "id":12,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Wizarding School ",
-      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"4",
-      "minplayers":"2",
-      "price":"39.95",
-      "slug"  :"wizarding-school",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
-     },
-     {
-        
-      "id":13,
-      "category":"escapegame",
-      "type": "In person",
-      "title": "Magic Castle",
-      "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-      "age":"all age",
-      "duration":"60",
-      "maxplayers":"8",
-      "minplayers":"4",
-      "price":"29.89",
-      "slug"  :"magic-castle",
-      "bgimg" :"/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg"
-     }
-
-   ],
-   "otherphysicalgames": [
-    {
-
-        "id":1,
-        "category":"other",
-        "type": "In person",
-        "title": "Beat The Seat",
-        "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        "age":"All age (6+)",
-        "duration":"2",
-        "maxplayers":"",
-        "minplayers":"1",
-        "price":"5",
-        "slug"  :"beat-the-seat",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
-       },
-      {
-
-          "id":2,
-          "category":"other",
-          "type": "In person",
-          "title": "Game Show Room",
-          "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-          "age":"All age (6+)",
-          "duration":"60",
-          "maxplayers":"16",
-          "minplayers":"4",
-          "price":"33",
-          "slug"  :"game-show-room",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
-         },
-      {
-        
-          "id":3,
-          "category":"other",
-          "type": "In person",
-          "title": "Axe Throwing",
-          "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-          "age":"All age",
-          "duration":"20",
-          "maxplayers":"10",
-          "minplayers":"2",
-          "price":"20",
-          "slug"  :"axe-throwing",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
-         },
-      
     
+     {
+      "id":8,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Special Agent",
+      "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"special-agent",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
+     },
       ],
-  "events":             [
+  
+  "events":[
     {
       "id":1,
       "category":"event",
