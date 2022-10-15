@@ -61,7 +61,7 @@ const CouponForm=(props)=>{
     /*============= coupon form function ===============*/
     /**============copy to clipboard==================== */
     const copyCoupon=()=>{
-        alert("COUPON CODE COPIED")
+       
 
         const couponId=document.getElementById('coupon'+props.id)
 
@@ -91,11 +91,23 @@ const CouponForm=(props)=>{
                     <p className="text-lg text-[#938056]">DEALS AND COUPONS</p>
                     <h2 className="golden-text font-os font-bold text-2xl md:text-3xl lg:text-4xl">{props.coupon.coupon_title}</h2>
                 </div>
-                <div className="coupon-desc mt-4 md:mt-6">
-                    <p className="text-lg text-[#464646] lg:text-lg">{props.coupon.coupon_desc}
-                    </p>
+                <div className="coupon-desc mt-4 md:mt-4">
+                    <p className="text-lg text-[#464646] lg:text-lg">{props.coupon.coupon_desc}</p>
+                    {
+                        props.coupon.social &&
+                        <div className="flex space-x-4 md:space-x-8 my-4">
+                            <a href="https://www.facebook.com/allinadventure/" target="_blank" className="cup-social transition duration-300 ease-out hover:drop-shadow-lg hover:scale-105 hover:ease-in">
+                                <img className="w-[36px] md:w-[42px]" src="/assets/svg/facebook-coupon-icon.svg"></img>                                
+                            </a>
+                            <a href="https://www.instagram.com/all_in_adventures/" target="_blank" className="cup-social transition duration-300 ease-out hover:drop-shadow-lg hover:scale-105 hover:ease-in">
+                                <img className="w-[36px] md:w-[42px]" src="/assets/svg/instagram-coupon-icon.svg"></img>                                
+                            </a>
+                        </div>
+                    }
+                    { props.coupon.coupon_point_list &&
                     <ul className="star-list pl-6 lg:text-lg text-[#464646] mt-4" >
                         {
+                            
                             props.coupon.coupon_point_list.map((point)=>{
 
                                 return(
@@ -106,9 +118,10 @@ const CouponForm=(props)=>{
                                 
                             })
                         }
-                         
+                        
                        
                     </ul>
+                     }
                 </div>
 
             </div>

@@ -1,5 +1,7 @@
 import CouponForm from "./CouponForm"
+import CouponDisplay from "./CouponDisplay"
 
+import { FiChevronRight } from "react-icons/fi";
 const AllDealsAndCoupon=(props)=>{
 
     return(
@@ -17,7 +19,12 @@ const AllDealsAndCoupon=(props)=>{
 
                         })
                     }
-                   
+                    <CouponDisplay/>
+                    <div className="view-all flex justify-center mt-8">
+                            
+                              <a href="/rewards-program" className="flex lg:text-lg  justify-center space-x-1 items-center text-red-500 hover:text-red-700 font-medium"><span>Learn more about reward program</span> <FiChevronRight/></a>
+                           
+                         </div>
                 </div>
 
              <div className="w-full absolute bottom-0 left-0 "><img className="w-full" src="/assets/game-home-or2.jpg"></img> </div>

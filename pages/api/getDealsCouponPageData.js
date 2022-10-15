@@ -1,6 +1,11 @@
+import { getTotal } from "./AllDataList/getTotal"
 export const getDealsCouponPageData=()=>{
 
     const dealsCouponPageData={
+        "locationlist":getTotal().locationlist,
+         "activitylistSlug":getTotal().activitylistSlug,
+          "eventlistSlug":getTotal().eventlistSlug,
+          "virtualgameListSlug":getTotal().virtualgameSlug,
         "pagemeta":{
 
             "matatilte":"title",
@@ -12,7 +17,7 @@ export const getDealsCouponPageData=()=>{
                         "pagetitle":"DEALS AND COUPONS",
                         "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
                          
-                        "totalLocations": "28",
+                        "totalLocations": getTotal().totalLocations,
                         "coverimageL":"/assets/gn-desktop-hero/allinadventures-deals-and-coupon-hero.jpg",
                         "coverimageM":"/assets/gn-mobile-hero/allinadventures-deals-and-coupon-hero.jpg"
           },
@@ -66,44 +71,28 @@ export const getDealsCouponPageData=()=>{
                 "couponlist":[
                     {
                         "id":1,
-                        "coupon_title":"MILITARY DISCOUNT",
-                        "coupon_desc" :"Give them a gift they'll always remember. A gift voucher for our award-winning escape rooms. A gift voucher for our award-winning escape rooms award-winning. A gift voucher for our award-winning escape rooms award-winning.",
-                        "coupon_point_list":[
-                            {
-                                "id":1,
-                                "point":"100 points - 50% off any one (1) admission"
-                            },
-                            {
-                                "id":2,
-                                "point":"100 points - 50% off any one (1) admission"
-                            }
-                        
-                        ],
-                        "coupon_offer_off":"20%",
-                        "coupon_code" :"AIAMIL20",
+                        "coupon_title":"FACEBOOK & INSTAGRAM",
+                        "coupon_desc" :"Like us on Facebook and follow us on Instagram to get $2 off!",
+                        "social":"show",
+                        "coupon_offer_off":"2%",
+                        "coupon_code" :"LIKE2022",
                         
                     },
                     {
                         "id":2,
-                        "coupon_title":"MILITARY DISCOUNT 2",
-                        "coupon_desc" :"Give them a gift they'll always remember. A gift voucher for our award-winning escape rooms. A gift voucher for our award-winning escape rooms award-winning. A gift voucher for our award-winning escape rooms award-winning.",
-                        "coupon_point_list":[
-                            {
-                                "id":1,
-                                "point":"200 points - 25% off any one (1) admission"
-                            },
-                            {
-                                "id":2,
-                                "point":"500 points - 35% off any one (1) admission"
-                            },
-                            {
-                                "id":3,
-                                "point":"1000 points - 50% off any one (1) admission"
-                            }
+                        "coupon_title":"MALL EMPLOYEE DISCOUNT",
+                        "coupon_desc" :"All mall employees get $5 off when booking with us. Use coupon code at checkout to get your savings, and bring your valid employee ID or nametag when you check-in at the store.",
                         
+                        "coupon_offer_off":"5%",
+                        "coupon_code" :"AIAMIL20",
                         
-                        ],
-                        "coupon_offer_off":"25%",
+                    },
+                    {
+                        "id":3,
+                        "coupon_title":"MILITARY DISCOUNT",
+                        "coupon_desc" :"All active & retired military personnel receive a discount of $5 OFF! Use coupon code at checkout to get $5 off your admission.",
+                        
+                        "coupon_offer_off":"5%",
                         "coupon_code" :"AIAMIL25",
                         
                     },

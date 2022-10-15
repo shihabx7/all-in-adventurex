@@ -33,7 +33,11 @@ const DealsCoupon=(props)=>{
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
-           <Homenav/>
+           <Homenav 
+                    locationlist={props.locationlist}
+                    activitylist={props.activitylist}
+                    eventlist={props.eventlist}
+                    />
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}
@@ -61,7 +65,7 @@ const DealsCoupon=(props)=>{
   {/* =========================================================================================main content ======== end */}
         </div>
   
-          <Footer/>
+          <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
           </>
     )
 }
@@ -77,7 +81,10 @@ export const getStaticProps=async()=>{
             pagedata:dealsCouponPageData.pagedata,
             pagemeta:dealsCouponPageData.pagemeta,
             faqlist:dealsCouponPageData.faqlist,
-            couponlist:dealsCouponPageData.couponlist
+            couponlist:dealsCouponPageData.couponlist,
+            locationlist:dealsCouponPageData.locationlist,
+            activitylist:dealsCouponPageData.activitylistSlug,
+            eventlist:dealsCouponPageData.eventlistSlug
             
         },
         revalidate:30
