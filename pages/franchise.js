@@ -33,7 +33,9 @@ const franchise  = (props) => {
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
-           <Homenav/>
+           <Homenav locationlist={props.locationlist}
+           activitylist={props.activitylist}
+           eventlist={props.eventlist}/>
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}
@@ -64,7 +66,7 @@ const franchise  = (props) => {
   {/* =========================================================================================main content ======== end */}
         </div>
   
-          <Footer/>
+          <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
           </>
     )
 }
@@ -77,8 +79,12 @@ export const getStaticProps=async()=>{
 
     return{
         props:{
+
             pagedata:franchisePageData.pagedata,
-            pagemeta:franchisePageData.pagemeta
+            pagemeta:franchisePageData.pagemeta,
+            locationlist:franchisePageData.locationlist,
+            activitylist:franchisePageData.activitylistSlug,
+            eventlist:franchisePageData.eventlistSlug
         },
         revalidate:30
     }

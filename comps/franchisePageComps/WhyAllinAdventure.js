@@ -5,50 +5,72 @@ const WhyAllinAdventure=()=>{
         <div className="why-adv relative bg-center bg-cover" style={{backgroundImage:'url("/assets/game-dt-bg.jpg")'}}>
             <div className="section-container max-w-7xl mx-auto px-4 py-16 md:py-20 lg:py-28">
                  <div className="section-title">
-                        <TitleSeparator title="BROWSE OUR OPEN POSITIONS" color="golden-text" weight="font-bold" />
-                        <p className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16 text-gray-700">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                        <TitleSeparator title="WHY ALL IN ADVENTURES" color="golden-text" weight="font-bold" />
+                        <p className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16 text-gray-700">What are the benefits to owning an escape room
+                         franchise? Owning a franchise allows you to go into the business for yourself but not by yourself.
+                          Here are a few key benefits to joining the All In Adventures franchise system.</p>
 
                  </div>
                    {/**=============core-value=============== */}
                     <div className="core-box grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="core-card rounded-lg bg-[#FDF0D1] p-6 lg:p-8">
                                 <p className="text-[#938056]">#CORE VALUE</p>
-                                <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">TOP END MANAGEMENT SYSTEM</h3>
-                                <p className="lg:text-lg text-gray-700 mt-2 md:mt-4">Welcome to the world of Treasure Island. 
-                                    Your adventure begins in a shadowy storage 
-                                    room aboard a weathered pirate ship. 
-                                    Once you find your way out you will be 
-                                    able to explore the entire ship while the pirates already aboard.
+                                <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">A PROVEN BUSINESS STRATEGY</h3>
+                                <p className="lg:text-lg text-gray-700 mt-2 md:mt-4">
+                                A huge benefit of owning an All In Adventures franchise is that it offers business owners
+                                 a proven business strategy. While many new escape room businesses struggle to develop a
+                                  viable and profitable business plan, we have been successful due to our ability to ensure
+                                   our franchise partners' profitability.
                                 </p>
                         </div>
                         <div className="core-card rounded-lg bg-[#FDF0D1] p-6 lg:p-8">
                                 <p className="text-[#938056]">#CORE VALUE</p>
-                                <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">TOP END MANAGEMENT SYSTEM</h3>
-                                <p className="lg:text-lg text-gray-700 mt-2 md:mt-4">Welcome to the world of Treasure Island. 
-                                    Your adventure begins in a shadowy storage 
-                                    room aboard a weathered pirate ship. 
-                                    Once you find your way out you will be 
-                                    able to explore the entire ship while the pirates already aboard.
+                                <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">BRAND NAME RECOGNITION</h3>
+                                <p className="lg:text-lg text-gray-700 mt-2 md:mt-4">
+                                It may take years for a startup business to establish a brand identity in the escape room marketplace.
+                                 Then there is no certainty that consumers will recognize them as a leader in the industry.
+                                  All In Adventures has the benefit of being the first in the U.S. market and is experiencing exponential growth.
                                 </p>
                         </div>
                         <div className="core-card rounded-lg bg-[#FDF0D1] p-6 lg:p-8 ">
                                 <p className="text-[#938056]">#CORE VALUE</p>
-                                <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">TOP END MANAGEMENT SYSTEM</h3>
-                                <p className="lg:text-lg text-gray-700 mt-2 md:mt-4">Welcome to the world of Treasure Island. 
-                                    Your adventure begins in a shadowy storage 
-                                    room aboard a weathered pirate ship. 
-                                    Once you find your way out you will be 
-                                    able to explore the entire ship while the pirates already aboard.
+                                <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">PRE-ESTABLISHED SUPPLY LINES</h3>
+                                <p className="lg:text-lg text-gray-700 mt-2 md:mt-4">
+                                Establishing reliable relationships with suppliers is another challenge new business
+                                 owners often face, and a lack of dedicated suppliers can hinder business operations
+                                  and slow down the growth. We've built relationships and pricing structures with our
+                                   vendors to ensure the best product quality and fair price is always maintained.
                                 </p>
                         </div>
                         <div className="core-card rounded-lg bg-[#FDF0D1] p-6 lg:p-8 ">
                                 <p className="text-[#938056]">#CORE VALUE</p>
-                                <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">TOP END MANAGEMENT SYSTEM</h3>
-                                <p className="lg:text-lg text-gray-700 mt-2 md:mt-4">Welcome to the world of Treasure Island. 
-                                    Your adventure begins in a shadowy storage 
-                                    room aboard a weathered pirate ship. 
-                                    Once you find your way out you will be 
-                                    able to explore the entire ship while the pirates already aboard.
+                                <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">TRAINING PROGRAMS AND EMPLOYEE POLICIES</h3>
+                                <p className="lg:text-lg text-gray-700 mt-2 md:mt-4">
+                                The Franchisor (All In Adventures) provides employee training programs for their Franchisees (You).
+                                 Our training program equips our Franchise Partners and employee's to perform their jobs efficiently
+                                  and effectively. It exposes you to actual operations and the rewards and challenges that you can expect on a daily basis.
+                                </p>
+                        </div>
+                        <div className="core-card rounded-lg bg-[#FDF0D1] p-6 lg:p-8 ">
+                                <p className="text-[#938056]">#CORE VALUE</p>
+                                <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">A BUILT-IN SUPPORT SYSTEM</h3>
+                                <p className="lg:text-lg text-gray-700 mt-2 md:mt-4">
+                                We provide a built-in support system that is quick and friendly.
+                                 We share business knowledge critical to achieving profitability,
+                                  which is a significant benefit for business owners with little
+                                   or no escape room industry experience. We ensure that our product
+                                    quality, value and customer service standards are consistently met in all locations.
+                                </p>
+                        </div>
+                        <div className="core-card rounded-lg bg-[#FDF0D1] p-6 lg:p-8 ">
+                                <p className="text-[#938056]">#CORE VALUE</p>
+                                <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">TOP-NOTCH DIGITAL MARKETING</h3>
+                                <p className="lg:text-lg text-gray-700 mt-2 md:mt-4">
+                                Opening an escape room business nowadays is equivalent to opening an online business.
+                                 Most of your bookings will happen online; therefore, a top-notch digital marketing
+                                  execution is crucial. We have a world-class online marketing team to ensure our website
+                                   gets the most internet traffic for "escape room interest" across the United States.
+
                                 </p>
                         </div>
 
@@ -59,13 +81,24 @@ const WhyAllinAdventure=()=>{
                 <div className="abt-row flex flex-col md:flex-row justify-between mt-8 md:mt-12 lg:mt-16 ">
                     <div className="abt-col md:w-[48%] lg:w-[48%] order-2 md:order-1">
                         <h2 className="golden-text text-2xl md:text-3xl lg:text-4xl font-os font-bold mt-4 md:mt-0">WHAT WE OFFER</h2>
-                        <p className="text-gray-700 lg:text-[20px] mt-4  lg:mt-8">When you start your franchise with All In Adventures, 
-                        you are gaining a team of experts that has your back every step of the way! As a franchisee, you gain…</p>
+                        <p className="text-gray-700 lg:text-[20px] mt-4  lg:mt-8">When you start your franchise with All In Adventures, you are gaining a team of experts that has your back every step of the way! As a franchisee, you gain…</p>
                         <div className="abt-notice mt-4 md:mt-6 lg:mt-8 lg:text-[20px]"> 
                                              
                                              <div className="flex  lg:text-lg text-[#464646] mt-4 justify-between">
                                                 <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
-                                                 <div className="w-[94%] lg:text-[20px]">Strong Brand Reputation &amp; Marketing Guidance</div>
+                                                 <div className="w-[94%] lg:text-[20px]">Pre-Written Clues, Training Videos, Games and Prop Packages</div>
+                                             </div>
+                                             <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-3  justify-between">
+                                                <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
+                                                 <div className="w-[94%] lg:text-[20px]">Multiple Revenue Streams</div>
+                                             </div>
+                                             <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-3  justify-between">
+                                                <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
+                                                 <div className="w-[94%] lg:text-[20px]">Strong Brand Reputation</div>
+                                             </div>
+                                             <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-3  justify-between">
+                                                <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
+                                                 <div className="w-[94%] lg:text-[20px]">Proven Marketing Tactics and Executions</div>
                                              </div>
                                              <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-3  justify-between">
                                                 <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
@@ -77,27 +110,21 @@ const WhyAllinAdventure=()=>{
                                              </div>
                                              <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-3  justify-between">
                                                 <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
-                                                 <div className="w-[94%] lg:text-[20px]">Exclusive Territory</div>
-                                             </div>
-                                             <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-3  justify-between">
-                                                <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
                                                  <div className="w-[94%] lg:text-[20px]">Field Support</div>
                                              </div>
 
                                      </div>
                        
                     </div>
-                    <div className="abt-col md:w-[48%] lg:w-[48%] order-1 md:order-2">
+                    <div className="abt-col md:w-[48%] lg:w-[48%] order-2 md:order-2">
                          <h2 className="golden-text text-2xl md:text-3xl lg:text-4xl font-os font-bold mt-4 md:mt-0">YOUR ESTIMATED INVESTMENTS</h2>
                          <div className="fans-cont-box mt-4 lg:mt-8">
                                  <p className="text-gray-700 lg:text-[20px]">Franchise Fee: $50,000</p>
-                                <p className="text-gray-700 lg:text-[20px] ">Royalty Fee: 6% of Gross Sales</p>
-                                <p className="text-gray-700 lg:text-[20px] ">Estimated Minimal Initial Investment: $245,700 (includes franchise fee)</p>
+                                <p className="text-gray-700 lg:text-[20px] ">Royalty Fee: 6% of gross sales</p>
+                                <p className="text-gray-700 lg:text-[20px] ">Estimated minimal initial investment: $245,700 (includes franchise fee)</p>
                          </div>
                          <div className="fans-cont-box mt-4 lg:mt-8">
-                                 <p className="text-gray-700 lg:text-[20px] mt-4  lg:mt-6">The total investment necessary to 
-                                 begin operation of a franchise is $245,700 to $543,100 which includes $20,000 to $50,000 working 
-                                 capital for various expenses during the first three months of operation.</p>
+                                 <p className="text-gray-700 lg:text-[20px] mt-4  lg:mt-6">The total investment necessary to begin the operation of a franchise is $245,700 to $543,100, which includes $20,000 to $50,000 working capital for various expenses during the first three months of operation.</p>
                                 
                          </div>
                          <div className="fans-cont-box mt-4 lg:mt-8">

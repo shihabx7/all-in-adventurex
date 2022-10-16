@@ -16,8 +16,8 @@ const BusinessTab=()=>{
         <div className="five-step-tab pt-16 md:pt-20">
             <div className="section-title">
                  <p className="text-lg text-[#938056] text-center">5-STEPS</p>
-                 <TitleSeparator title="BECOME A FRANCHISE BUSINESS OWNER" color="golden-text" weight="font-bold"/>
-                 <p className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16 text-gray-700">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                 <TitleSeparator title="HOW TO BECOME AN ESCAPE ROOM FRANCHISE OWNER" color="golden-text" weight="font-bold"/>
+                 <p className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16 text-gray-700">Here is the process to join this growing and rewarding industry by owning your own All In Adventures escape room franchise.</p>
 
             </div>
             <div className="section-container tab-container">
@@ -50,10 +50,10 @@ const BusinessTab=()=>{
                             <div className="step-tab-item">
                             <h3 className="font-os golden-text font-bold text-2xl md:text-3xl">WE GET TO KNOW YOU</h3>
                             <div className="tab-text mt-4 ">
-                                    <p className="text-gray-700 lg:text-lg max-w-3xl">After a brief questionnaire (completed in advance), 
-                                    you'll be assigned a Franchise Development Manager who will contact you directly 
-                                    by phone to discuss your responses and answer any preliminary questions you have. 
-                                    These calls typically last about an hour.
+                                    <p className="text-gray-700 lg:text-lg max-w-3xl">You need to fill out this brief franchise inquiry questionnaire to get started.
+                                     Our Franchise Development Manager will contact you directly to discuss your responses and answer any
+                                      preliminary questions you have. This phone call typically lasts about an hour.
+
                                     </p>
                             </div>
                         </div>
@@ -61,12 +61,11 @@ const BusinessTab=()=>{
                          {
                             showTab==2 &&
                             <div className="step-tab-item">
-                            <h3 className="font-os golden-text font-bold text-2xl md:text-3xl">WE GET TO KNOW YOU 2</h3>
+                            <h3 className="font-os golden-text font-bold text-2xl md:text-3xl">LET'S GET MOVING</h3>
                             <div className="tab-text mt-4 ">
-                                    <p className="text-gray-700 lg:text-lg max-w-3xl">After a brief questionnaire (completed in advance), 
-                                    you'll be assigned a Franchise Development Manager who will contact you directly 
-                                    by phone to discuss your responses and answer any preliminary questions you have. 
-                                    These calls typically last about an hour.
+                                    <p className="text-gray-700 lg:text-lg max-w-3xl">Your Franchise Development Manager walks you through All In Adventures's business model
+                                     in further detail. In this stage, you will also receive, complete, and return the Franchise Disclosure Document (FDD).
+                                      The FDD explains in detail what All In Adventures expect from franchisees and what you can expect from the company
                                     </p>
                             </div>
                         </div>
@@ -74,12 +73,12 @@ const BusinessTab=()=>{
                         {
                             showTab==3 &&
                             <div className="step-tab-item">
-                            <h3 className="font-os golden-text font-bold text-2xl md:text-3xl">WE GET TO KNOW YOU 3</h3>
+                            <h3 className="font-os golden-text font-bold text-2xl md:text-3xl">MEET THE FOUNDERS</h3>
                             <div className="tab-text mt-4 ">
-                                    <p className="text-gray-700 lg:text-lg max-w-3xl">After a brief questionnaire (completed in advance), 
-                                    you'll be assigned a Franchise Development Manager who will contact you directly 
-                                    by phone to discuss your responses and answer any preliminary questions you have. 
-                                    These calls typically last about an hour.
+                                    <p className="text-gray-700 lg:text-lg max-w-3xl">Your Franchise Development Manager will coordinate phone
+                                     conversations with All In Adventure's founders, John Reichel and Chetan Patel. We like to call these
+                                      "validation calls." Here, you have the chance to ask questions to get direct information about the business
+                                       and their first-hand experiences, giving you a clear vision of what's ahead.
                                     </p>
                             </div>
                         </div>
@@ -87,12 +86,13 @@ const BusinessTab=()=>{
                         {
                             showTab==4 &&
                             <div className="step-tab-item">
-                            <h3 className="font-os golden-text font-bold text-2xl md:text-3xl">WE GET TO KNOW YOU 4</h3>
+                            <h3 className="font-os golden-text font-bold text-2xl md:text-3xl">DOWN TO BUSINESS</h3>
                             <div className="tab-text mt-4 ">
-                                    <p className="text-gray-700 lg:text-lg max-w-3xl">After a brief questionnaire (completed in advance), 
-                                    you'll be assigned a Franchise Development Manager who will contact you directly 
-                                    by phone to discuss your responses and answer any preliminary questions you have. 
-                                    These calls typically last about an hour.
+                                    <p className="text-gray-700 lg:text-lg max-w-3xl">When you reach this point in your journey,
+                                     you'll want to clear up any lingering questions and concerns regarding your escape room franchise
+                                      partnership. Our escape room Franchise Development Manager will walk you through the FDD in detail,
+                                       discuss available financing options if needed, and address any remaining questions.
+
                                     </p>
                             </div>
                         </div>
@@ -100,12 +100,12 @@ const BusinessTab=()=>{
                         {
                             showTab==5 &&
                             <div className="step-tab-item">
-                            <h3 className="font-os golden-text font-bold text-2xl md:text-3xl">WE GET TO KNOW YOU 5</h3>
+                            <h3 className="font-os golden-text font-bold text-2xl md:text-3xl">DISCOVERY DAY</h3>
                             <div className="tab-text mt-4 ">
-                                    <p className="text-gray-700 lg:text-lg max-w-3xl">After a brief questionnaire (completed in advance), 
-                                    you'll be assigned a Franchise Development Manager who will contact you directly 
-                                    by phone to discuss your responses and answer any preliminary questions you have. 
-                                    These calls typically last about an hour.
+                                    <p className="text-gray-700 lg:text-lg max-w-3xl">You make a visit to All In Adventures headquarter to meet the founders
+                                     and executive team, tour the facility and "walk a day in the life" of an All In Adventures center. It's an honest look
+                                      at what it's like to be a part of the All In Adventures family. You'll leave with the Escape Room Franchise Agreement
+                                       Package containing all the required documentation to become the proud owner of an All In Adventures franchise.
                                     </p>
                             </div>
                         </div>

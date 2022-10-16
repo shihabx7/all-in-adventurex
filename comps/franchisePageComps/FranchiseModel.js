@@ -18,24 +18,25 @@ const FranchiseModel=()=>{
                         <div className="fran-model mt-4 md:mt-6 lg:mt-8"> 
                                              
                                  <p className="text-gray-700 lg:text-lg mt-4 ">
-                                    All In Adventures is distinguished from other entertainment zones because we have the 
-                                    proven model and processes in place that make us sustainable. We have relationships with 
-                                    over 10 mall companies already and aren't slowing down! Our games and experiences are 
-                                    changing every few months which keeps the local consumer base coming back for new entertainment experiences.
+                                         All In Adventures is distinguished from other entertainment
+                                          zones because we have the proven business model and processes
+                                           in place that make us sustainable. We already have relationships
+                                            with over 10 mall companies and aren't slowing down! Our games and
+                                             experiences are changing every few months which keeps the local consumer base
+                                              coming back for new entertainment experiences.
                                 </p>
                                 <p className="text-gray-700 lg:text-lg mt-4 ">
-                                    All In Adventures is distinguished from other entertainment zones because we have the 
-                                    proven model and processes in place that make us sustainable. We have relationships with 
-                                    over 10 mall companies already and aren't slowing down! Our games and experiences are 
-                                    changing every few months which keeps the local consumer base coming back for new entertainment experiences.
+                                 As a franchise partner, you are stepping into the continued expansion of a brand that has all the
+                                 right elements in place to be the best of the best! Gain insight from our leadership team as you
+                                  build your business and see just how amazing All In Adventures will be as your business!
                                 </p>
                                              
                         </div>
                         <div className="inline-block min-w-[280px] text-center bg-golden hover:bg-golden-alt  search-loc hover:cursor-pointer hover:shadow boder-p rounded-full mt-4 md:mt-6 lg:mt-8"> 
                            <div className="bg-[#FEF6E9] hover:bg-golden-alt  rounded-full items-center py-2 px-6 md:py-3 md:px-8 text-[#424242] md:text-lg gont-medium">
-                                     <Link href="/franchise-contact" hpassHref>
-                                         <a className="block"> INQUIRE NOW</a>
-                                    </Link>
+                                     
+                                         <a href="/franchise-contact" className="block"> INQUIRE NOW</a>
+                                    
     
                             </div>
                          </div>
@@ -52,25 +53,30 @@ const FranchiseModel=()=>{
                     <div className="abt-col md:w-[58%] lg:w-[48%] order-2 md:order-1">
                         <div className="section-title-sep mt-4 md:mt-0">
                             <p className="text-lg text-[#938056]">OVERVIEW</p>
-                            <GameTitleSeparator title="BECOME AN ALL IN ADVENTURES FRANCHISE OWNER" color="golden-text" weight="font-bold"/>    
+                            <GameTitleSeparator title="WHY BECOME AN ALL IN ADVENTURES FRANCHISE OWNER" color="golden-text" weight="font-bold"/>    
                          </div>
                          <div className="fran-model mt-4 md:mt-6 lg:mt-8"> 
                                              
                                              <p className="text-gray-700 lg:text-lg mt-4 ">
-                                             Why is All In Adventures worth investing in? Because we understand what it takes to be 
-                                             successful within this industry. Escape rooms, axe throwing, game show experiences, 
-                                             and 2-minute escape rooms are all streams for revenue while we keep the operation simple 
-                                             to run through. Our experiences cater to a truly family-focused environment and is a 
-                                             perfect place for any type of event from just a night out to a party or celebration event to a corporate event.
+                                             Why is All In Adventures worth investing in? Because we understand what
+                                              it takes to be successful within this emerging industry. Escape rooms,
+                                               axe throwing, game show experiences, and 2-minute escape rooms are all
+                                                streams for revenue while we keep the operation simple to run through.
+                                                 Our experiences cater to a truly family-focused environment and is a
+                                                  perfect place for any type of event from just a night out to a party
+                                                   or celebration event to a corporate event.
+                                            </p>
+                                            <p className="text-gray-700 lg:text-lg mt-4 ">
+                                            We offer exhaustive support and hands-on training to ensure that every franchisee is equipped with the proper industry knowledge, skills and expertise to operate the business successfully. 
                                             </p>
                                            
                                                          
                             </div>
                             <div className="inline-block min-w-[280px] text-center bg-golden hover:bg-golden-alt  search-loc hover:cursor-pointer hover:shadow boder-p rounded-full mt-4 md:mt-6 lg:mt-8"> 
                            <div className="bg-[#FEF6E9] hover:bg-golden-alt  rounded-full items-center py-2 px-6 md:py-3 md:px-8 text-[#424242] md:text-lg gont-medium">
-                                     <Link href="/franchise-contact">
-                                         <a className="block"> INQUIRE NOW</a>
-                                    </Link>
+                                     
+                                         <a href="/franchise-contact" className="block"> INQUIRE NOW</a>
+                                    
     
                             </div>
                          </div>
