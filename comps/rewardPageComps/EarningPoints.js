@@ -12,7 +12,7 @@ const EarningPoints=()=>{
                                 <div className="earning-pts-box mt-4 lg:mt-8">
                                      <h3 className="font-medium text-[#464646] text-lg lg:text-xl">Based on the experience played, you can earn:</h3> 
                                      <ul className="star-list pl-4 text-[#464646] mt-4">
-                                             <li className="lg:text-lg my-2 md:my-3 ">25 Points for Beat the Seat &amp; Virtual Reality</li>
+                                             <li className="lg:text-lg my-2 md:my-3 ">25 Points for Beat the Seat & Virtual Reality</li>
                                              <li className="lg:text-lg my-2 md:my-3 ">50 Points for Escape Room</li>
                                              <li className="lg:text-lg my-2 md:my-3 ">75 Points for Game Show Room</li>
 
@@ -41,6 +41,7 @@ const EarningPoints=()=>{
                                      <h3 className="font-medium text-[#464646] text-lg lg:text-xl">Once you have accumulated your points, you can redeem them for the following reward options:</h3> 
                                      <ul className="star-list pl-4 text-[#464646] mt-4">
                                              <li className="lg:text-lg my-2 md:my-3 ">50 points - $5 off any one (1) admission</li>
+                                             <li className="lg:text-lg my-2 md:my-3 ">100 points - 50% off any one (1) admission</li>
                                              <li className="lg:text-lg my-2 md:my-3 ">150 points - 1 Free Admission (to ANY experience)</li>
                                              <li className="lg:text-lg my-2 md:my-3 ">250 points - 1 Free Merchandise Item</li>
                                              <li className="lg:text-lg my-2 md:my-3 ">500 Points - 1 Free Private Room Experience*</li>
@@ -52,7 +53,9 @@ const EarningPoints=()=>{
 
                     </div>
                     <div className="reedim-note text-[#464646] mt-4 md:mt-8">
-                        <p className="lg:text-lg italic">The Rewards Program remains the property of All In Adventures. All In Adventures reserves the right at all times and in its absolute discretion and without notice to either amend these terms or with reasonable notice to terminate, withdraw or cancel the program.</p>
+                        <p className="lg:text-lg italic">The Rewards Program remains the property of All In Adventures. 
+                        All In Adventures reserves the right at all times and in its absolute discretion and without notice
+                         to either amend these terms or with reasonable notice to terminate, withdraw or cancel the program.</p>
                         <ul className="star-list pl-4 text-[#464646] mt-4">
                                              <li className="lg:text-lg my-2 md:my-3 font-medium">Exclusions may apply. See store for more details.</li>
                                              

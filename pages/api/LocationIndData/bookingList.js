@@ -565,6 +565,97 @@ const blist={
               
                 },
                 //===================================west-nyack-ny end===========
+                //===================================poughkeepsie-ny===========
+              "poughkeepsie-ny":{
+                "shortname":"mysteryroom-austin",
+        
+                "escape-from-alcatraz":{
+                    "item":"44198",
+                    "flow":"17839"
+                },
+                "treasure-island":{
+                    "item":"44198",
+                    "flow":"17839"
+                },
+                "superheros-adventure":{
+                    "item":"44198",
+                    "flow":"17839"
+                },
+                "zombie-apocalypse":{
+                    "item":"44198",
+                    "flow":"17839"
+                },
+                "special-agent":{
+                    "item":"44198",
+                    "flow":"17839"
+                },
+                "hollywood-premiere":{
+                    "item":"44198",
+                    "flow":"17839"
+                },
+                "sherlocks-library":{
+                    "item":"44198",
+                    "flow":"17839"
+                },
+                "houdinis-magic-cell":{
+                    "item":"44198",
+                    "flow":"17839"
+                },
+                "black-ops":{
+                    "item":"44198",
+                    "flow":"17839"
+                },
+                "lost-in-the-jungle":{
+                    "item":"44198",
+                    "flow":"17839"
+                },
+                "virtual-reality":{
+                    "item":"44198",
+                    "flow":"17839"
+                },
+                "wizarding-school":{
+                    "item":"44198",
+                    "flow":"17839"
+                },
+                "locked-in-the-lift":{
+                    "item":"44198",
+                    "flow":"17839"
+                },
+                "game-show-room":{
+                    "item":"44198",
+                    "flow":"17839"
+                },
+                "axe-throwing":{
+                    "item":"44198",
+                    "flow":"17839"
+                },
+                "beat-the-seat":{
+                    "item":"44198",
+                    "flow":"17839"
+                },
+                "magic-castle":{
+                    "item":"44198",
+                    "flow":"17839"
+                },
+                "gift-card":{
+                    "item":"360204",
+                    "flow":"no"
+                },
+                "gift-addon":{
+                    "item":"349134",
+                    "flow":"667679"
+                },
+                "gift-holiday":{
+                    "item":"70113",
+                    "flow":"no"
+                },
+                "party-package":{
+                    "item":"17839",
+                    "flow":"no"
+                }
+              
+                },
+                //===================================poughkeepsie-ny end===========
             
                     
      //****************-------------------------------------------------------------- NY end ******* */

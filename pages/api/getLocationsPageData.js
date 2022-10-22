@@ -328,7 +328,7 @@
                                     "id":6,
                                     "city":"West Nyack",
                                     "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
-                                        "entry_guid":"Use the 2nd floor mall entrance between the J.C.Penney and Pottery Barn, take a left at the escalators. We are located on the right side, between Athleta and Zara, across from Banana Republic.",
+                                    "entry_guid":"Use the 2nd floor mall entrance between the J.C.Penney and Pottery Barn, take a left at the escalators. We are located on the right side, between Athleta and Zara, across from Banana Republic.",
                                     "slug":"west-nyack-ny",
                                     "address":"3681 Palisades Center Dr",
                                     "zip":"10994",
@@ -385,7 +385,70 @@
 
                                 
                                   ]
-                                }
+                                },
+                                {
+                                  "id":7,
+                                  "city":"Poughkeepsie",
+                                  "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                  "entry_guid":"Upstairs from 110 Grill",
+                                  "slug":"poughkeepsie-ny",
+                                  "address":"Poughkeepsie Galleria, 2001 South Rd",
+                                  "zip":"12601",
+                                  "fivestar":"3027",
+                                  "phone":"+1 (845) 208-2919",
+                                  "coverimg":'/assets/mapcard/Poughkeepsie-ny-poughkeepsie-galleria.jpg',
+                                  "mall":"Poughkeepsie Galleria",
+                                  "alt":'allinadventures-escape-room-west-nyack-ny-palisades-mall',
+                                  "email":"store149@allinadventures.com",
+                                  "position": { lat: 41.626240482899284, lng: -73.92067928923845}, 
+                                  "hours":[
+                                    {
+                                      "day":"monday",
+                                      "open":"10 am",
+                                      "close":"9.30 pm"
+                    
+                                    },
+                                    {
+                                      "day":"tuesday",
+                                      "open":"10 am",
+                                      "close":"9.30 pm"
+                    
+                                    },
+                                    {
+                                      "day":"wednesday",
+                                      "open":"10 am",
+                                      "close":"9.30 pm"
+                    
+                                    },
+                                    {
+                                      "day":"thursday",
+                                      "open":"10 am",
+                                      "close":"9.30 pm"
+                    
+                                    },
+                                    {   
+                                      "day":"friday",
+                                      "open":"10 am",
+                                      "close":"9.30 pm"
+                    
+                                    },
+                                    {   
+                                      "day":"saturday",
+                                      "open":"10 am",
+                                      "close":"9.30 pm"
+                    
+                                    },
+                                    {   
+                                      "day":"sunday",
+                                      "open":"11 am",
+                                      "close":"6 pm"
+                    
+                                    }
+
+                              
+                                ]
+                              }
+
                                 ]
                     },
               //========================================== ============1 Ny Satate end

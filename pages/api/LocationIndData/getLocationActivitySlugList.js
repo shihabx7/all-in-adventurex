@@ -78,56 +78,8 @@ const datalist={
             "activity_slug":"black-ops"
            
         },
-        {
-            "id":10,
-            "category":"escapegame",
-            "activity_name":"Lost in The jungle",
-            "activity_slug":"lost-in-the-jungle"
-           
-        },
        
-        {
-            "id":12,
-            "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
-           
-        },
-        {
-            "id":13,
-            "category":"escapegame",
-            "activity_name":"Locked in the Lift",
-            "activity_slug":"locked-in-the-lift"
-           
-        },
-        {
-            "id":14,
-            "category":"escapegame",
-            "activity_name":"Magic Castle",
-            "activity_slug":"magic-castle"
-           
-        },
-        {
-            "id":15,
-            "category":"other",
-            "activity_name":"Game Show Room",
-            "activity_slug":"game-show-room"
-           
-        },
-        {
-            "id":16,
-            "category":"other",
-            "activity_name":"Axe Throwing",
-            "activity_slug":"axe-throwing"
-           
-        },
-        {
-            "id":17,
-            "category":"other",
-            "activity_name":"Beat the Seat",
-            "activity_slug":"beat-the-seat"
-           
-        }
+        
     ],
      // ===================================== Albany ny END=======
      // ===================================== buffalo-ny ny=======
@@ -196,62 +148,8 @@ const datalist={
             "activity_slug":"black-ops"
            
         },
-        {
-            "id":10,
-            "category":"escapegame",
-            "activity_name":"Lost in The jungle",
-            "activity_slug":"lost-in-the-jungle"
-           
-        },
-        {
-            "id":11,
-            "category":"other",
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
-        {
-            "id":12,
-            "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
-           
-        },
-        {
-            "id":13,
-            "category":"escapegame",
-            "activity_name":"Locked in the Lift",
-            "activity_slug":"locked-in-the-lift"
-           
-        },
-        {
-            "id":14,
-            "category":"escapegame",
-            "activity_name":"Magic Castle",
-            "activity_slug":"magic-castle"
-           
-        },
-        {
-            "id":15,
-            "category":"other",
-            "activity_name":"Game Show Room",
-            "activity_slug":"game-show-room"
-           
-        },
-        {
-            "id":16,
-            "category":"other",
-            "activity_name":"Axe Throwing",
-            "activity_slug":"axe-throwing"
-           
-        },
-        {
-            "id":17,
-            "category":"other",
-            "activity_name":"Beat the Seat",
-            "activity_slug":"beat-the-seat"
-           
-        }
+        
+        
     ],
      // ===================================== buffalo-ny ny END=======
      // ===================================== middletown-ny ny=======
@@ -271,13 +169,7 @@ const datalist={
             "activity_slug":"treasure-island"
            
         },
-        {
-            "id":3,
-            "category":"escapegame",
-            "activity_name":"Superhero's Adventure",
-            "activity_slug":"superheros-adventure"
-           
-        },
+        
         {
             "id":4,
             "category":"escapegame",
@@ -320,55 +212,7 @@ const datalist={
             "activity_slug":"black-ops"
            
         },
-        {
-            "id":10,
-            "category":"escapegame",
-            "activity_name":"Lost in The jungle",
-            "activity_slug":"lost-in-the-jungle"
-           
-        },
-        {
-            "id":11,
-            "category":"other",
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
-        {
-            "id":12,
-            "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
-           
-        },
-        {
-            "id":13,
-            "category":"escapegame",
-            "activity_name":"Locked in the Lift",
-            "activity_slug":"locked-in-the-lift"
-           
-        },
-        {
-            "id":14,
-            "category":"escapegame",
-            "activity_name":"Magic Castle",
-            "activity_slug":"magic-castle"
-           
-        },
-        {
-            "id":15,
-            "category":"other",
-            "activity_name":"Game Show Room",
-            "activity_slug":"game-show-room"
-           
-        },
-        {
-            "id":16,
-            "category":"other",
-            "activity_name":"Axe Throwing",
-            "activity_slug":"axe-throwing"
-           
-        },
+    
         {
             "id":17,
             "category":"other",
@@ -445,27 +289,6 @@ const datalist={
            
         },
         {
-            "id":10,
-            "category":"escapegame",
-            "activity_name":"Lost in The jungle",
-            "activity_slug":"lost-in-the-jungle"
-           
-        },
-        {
-            "id":11,
-            "category":"other",
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
-        {
-            "id":12,
-            "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
-           
-        },
-        {
             "id":13,
             "category":"escapegame",
             "activity_name":"Locked in the Lift",
@@ -479,20 +302,7 @@ const datalist={
             "activity_slug":"magic-castle"
            
         },
-        {
-            "id":15,
-            "category":"other",
-            "activity_name":"Game Show Room",
-            "activity_slug":"game-show-room"
-           
-        },
-        {
-            "id":16,
-            "category":"other",
-            "activity_name":"Axe Throwing",
-            "activity_slug":"axe-throwing"
-           
-        },
+       
         {
             "id":17,
             "category":"other",
@@ -568,62 +378,7 @@ const datalist={
             "activity_slug":"black-ops"
            
         },
-        {
-            "id":10,
-            "category":"escapegame",
-            "activity_name":"Lost in The jungle",
-            "activity_slug":"lost-in-the-jungle"
-           
-        },
-        {
-            "id":11,
-            "category":"other",
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
-        {
-            "id":12,
-            "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
-           
-        },
-        {
-            "id":13,
-            "category":"escapegame",
-            "activity_name":"Locked in the Lift",
-            "activity_slug":"locked-in-the-lift"
-           
-        },
-        {
-            "id":14,
-            "category":"escapegame",
-            "activity_name":"Magic Castle",
-            "activity_slug":"magic-castle"
-           
-        },
-        {
-            "id":15,
-            "category":"other",
-            "activity_name":"Game Show Room",
-            "activity_slug":"game-show-room"
-           
-        },
-        {
-            "id":16,
-            "category":"other",
-            "activity_name":"Axe Throwing",
-            "activity_slug":"axe-throwing"
-           
-        },
-        {
-            "id":17,
-            "category":"other",
-            "activity_name":"Beat the Seat",
-            "activity_slug":"beat-the-seat"
-           
-        }
+       
     ],
      // ===================================== watertown-ny END=======
      // =====================================west-nyack-ny ny=======
@@ -658,17 +413,61 @@ const datalist={
            
         },
         {
-            "id":5,
+            "id":7,
             "category":"escapegame",
-            "activity_name":"Special Agent",
-            "activity_slug":"special-agent"
+            "activity_name":"Sherlock's Library",
+            "activity_slug":"sherlocks-library"
+           
+        },
+       
+        
+        {
+            "id":15,
+            "category":"other",
+            "activity_name":"Game Show Room",
+            "activity_slug":"game-show-room"
+           
+        },
+        
+        {
+            "id":17,
+            "category":"other",
+            "activity_name":"Beat the Seat",
+            "activity_slug":"beat-the-seat"
+           
+        }
+    ],
+     // ===================================== west-nyack-ny END=======
+   
+      // =====================================poughkeepsie-ny=======
+      "poughkeepsie-ny":[
+        
+        {
+            "id":1,
+            "category":"escapegame",
+            "activity_name":"Escape From Alcatraz",
+            "activity_slug":"escape-from-alcatraz"
            
         },
         {
-            "id":6,
+            "id":2,
             "category":"escapegame",
-            "activity_name":"Hollywood Premiere",
-            "activity_slug":"hollywood-premiere"
+            "activity_name":"Treasure Island",
+            "activity_slug":"treasure-island"
+           
+        },
+        {
+            "id":3,
+            "category":"escapegame",
+            "activity_name":"Superhero's Adventure",
+            "activity_slug":"superheros-adventure"
+           
+        },
+        {
+            "id":4,
+            "category":"escapegame",
+            "activity_name":"Zombie Apocalypse",
+            "activity_slug":"zombie-apocalypse"
            
         },
         {
@@ -692,48 +491,8 @@ const datalist={
             "activity_slug":"black-ops"
            
         },
-        {
-            "id":10,
-            "category":"escapegame",
-            "activity_name":"Lost in The jungle",
-            "activity_slug":"lost-in-the-jungle"
-           
-        },
-        {
-            "id":11,
-            "category":"other",
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
-        {
-            "id":12,
-            "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
-           
-        },
-        {
-            "id":13,
-            "category":"escapegame",
-            "activity_name":"Locked in the Lift",
-            "activity_slug":"locked-in-the-lift"
-           
-        },
-        {
-            "id":14,
-            "category":"escapegame",
-            "activity_name":"Magic Castle",
-            "activity_slug":"magic-castle"
-           
-        },
-        {
-            "id":15,
-            "category":"other",
-            "activity_name":"Game Show Room",
-            "activity_slug":"game-show-room"
-           
-        },
+        
+        
         {
             "id":16,
             "category":"other",
@@ -741,15 +500,9 @@ const datalist={
             "activity_slug":"axe-throwing"
            
         },
-        {
-            "id":17,
-            "category":"other",
-            "activity_name":"Beat the Seat",
-            "activity_slug":"beat-the-seat"
-           
-        }
+        
     ],
-     // ===================================== west-nyack-ny END=======
+     // ===================================== poughkeepsie-ny END=======
      //*****************************************************************************NY END++++++++++++++++ */
 
     //*****************************************************************************NC END++++++++++++++++ */
@@ -784,20 +537,7 @@ const datalist={
             "activity_slug":"zombie-apocalypse"
            
         },
-        {
-            "id":5,
-            "category":"escapegame",
-            "activity_name":"Special Agent",
-            "activity_slug":"special-agent"
-           
-        },
-        {
-            "id":6,
-            "category":"escapegame",
-            "activity_name":"Hollywood Premiere",
-            "activity_slug":"hollywood-premiere"
-           
-        },
+       
         {
             "id":7,
             "category":"escapegame",
@@ -819,62 +559,7 @@ const datalist={
             "activity_slug":"black-ops"
            
         },
-        {
-            "id":10,
-            "category":"escapegame",
-            "activity_name":"Lost in The jungle",
-            "activity_slug":"lost-in-the-jungle"
-           
-        },
-        {
-            "id":11,
-            "category":"other",
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
-        {
-            "id":12,
-            "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
-           
-        },
-        {
-            "id":13,
-            "category":"escapegame",
-            "activity_name":"Locked in the Lift",
-            "activity_slug":"locked-in-the-lift"
-           
-        },
-        {
-            "id":14,
-            "category":"escapegame",
-            "activity_name":"Magic Castle",
-            "activity_slug":"magic-castle"
-           
-        },
-        {
-            "id":15,
-            "category":"other",
-            "activity_name":"Game Show Room",
-            "activity_slug":"game-show-room"
-           
-        },
-        {
-            "id":16,
-            "category":"other",
-            "activity_name":"Axe Throwing",
-            "activity_slug":"axe-throwing"
-           
-        },
-        {
-            "id":17,
-            "category":"other",
-            "activity_name":"Beat the Seat",
-            "activity_slug":"beat-the-seat"
-           
-        }
+       
     ],
      // ===================================== raleigh-nc END=======
      //*****************************************************************************NY END++++++++++++++++ */
@@ -918,13 +603,7 @@ const datalist={
             "activity_slug":"special-agent"
            
         },
-        {
-            "id":6,
-            "category":"escapegame",
-            "activity_name":"Hollywood Premiere",
-            "activity_slug":"hollywood-premiere"
-           
-        },
+        
         {
             "id":7,
             "category":"escapegame",
@@ -946,62 +625,8 @@ const datalist={
             "activity_slug":"black-ops"
            
         },
-        {
-            "id":10,
-            "category":"escapegame",
-            "activity_name":"Lost in The jungle",
-            "activity_slug":"lost-in-the-jungle"
-           
-        },
-        {
-            "id":11,
-            "category":"other",
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
-        {
-            "id":12,
-            "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
-           
-        },
-        {
-            "id":13,
-            "category":"escapegame",
-            "activity_name":"Locked in the Lift",
-            "activity_slug":"locked-in-the-lift"
-           
-        },
-        {
-            "id":14,
-            "category":"escapegame",
-            "activity_name":"Magic Castle",
-            "activity_slug":"magic-castle"
-           
-        },
-        {
-            "id":15,
-            "category":"other",
-            "activity_name":"Game Show Room",
-            "activity_slug":"game-show-room"
-           
-        },
-        {
-            "id":16,
-            "category":"other",
-            "activity_name":"Axe Throwing",
-            "activity_slug":"axe-throwing"
-           
-        },
-        {
-            "id":17,
-            "category":"other",
-            "activity_name":"Beat the Seat",
-            "activity_slug":"beat-the-seat"
-           
-        }
+      
+       
     ],
      // ===================================== bensalem-pa END=======
      //*****************************************************************************PA END++++++++++++++++ */
@@ -1072,62 +697,7 @@ const datalist={
             "activity_slug":"black-ops"
            
         },
-        {
-            "id":10,
-            "category":"escapegame",
-            "activity_name":"Lost in The jungle",
-            "activity_slug":"lost-in-the-jungle"
-           
-        },
-        {
-            "id":11,
-            "category":"other",
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
-        {
-            "id":12,
-            "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
-           
-        },
-        {
-            "id":13,
-            "category":"escapegame",
-            "activity_name":"Locked in the Lift",
-            "activity_slug":"locked-in-the-lift"
-           
-        },
-        {
-            "id":14,
-            "category":"escapegame",
-            "activity_name":"Magic Castle",
-            "activity_slug":"magic-castle"
-           
-        },
-        {
-            "id":15,
-            "category":"other",
-            "activity_name":"Game Show Room",
-            "activity_slug":"game-show-room"
-           
-        },
-        {
-            "id":16,
-            "category":"other",
-            "activity_name":"Axe Throwing",
-            "activity_slug":"axe-throwing"
-           
-        },
-        {
-            "id":17,
-            "category":"other",
-            "activity_name":"Beat the Seat",
-            "activity_slug":"beat-the-seat"
-           
-        }
+        
     ],
      // ===================================== hadley-ma END=======
      // =====================================holyoke-ma ny=======
@@ -1154,13 +724,7 @@ const datalist={
             "activity_slug":"superheros-adventure"
            
         },
-        {
-            "id":4,
-            "category":"escapegame",
-            "activity_name":"Zombie Apocalypse",
-            "activity_slug":"zombie-apocalypse"
-           
-        },
+       
         {
             "id":5,
             "category":"escapegame",
@@ -1168,13 +732,7 @@ const datalist={
             "activity_slug":"special-agent"
            
         },
-        {
-            "id":6,
-            "category":"escapegame",
-            "activity_name":"Hollywood Premiere",
-            "activity_slug":"hollywood-premiere"
-           
-        },
+        
         {
             "id":7,
             "category":"escapegame",
@@ -1196,62 +754,7 @@ const datalist={
             "activity_slug":"black-ops"
            
         },
-        {
-            "id":10,
-            "category":"escapegame",
-            "activity_name":"Lost in The jungle",
-            "activity_slug":"lost-in-the-jungle"
-           
-        },
-        {
-            "id":11,
-            "category":"other",
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
-        {
-            "id":12,
-            "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
-           
-        },
-        {
-            "id":13,
-            "category":"escapegame",
-            "activity_name":"Locked in the Lift",
-            "activity_slug":"locked-in-the-lift"
-           
-        },
-        {
-            "id":14,
-            "category":"escapegame",
-            "activity_name":"Magic Castle",
-            "activity_slug":"magic-castle"
-           
-        },
-        {
-            "id":15,
-            "category":"other",
-            "activity_name":"Game Show Room",
-            "activity_slug":"game-show-room"
-           
-        },
-        {
-            "id":16,
-            "category":"other",
-            "activity_name":"Axe Throwing",
-            "activity_slug":"axe-throwing"
-           
-        },
-        {
-            "id":17,
-            "category":"other",
-            "activity_name":"Beat the Seat",
-            "activity_slug":"beat-the-seat"
-           
-        }
+        
     ],
      // ===================================== holyoke-ma END=======
      // =====================================kingston-ma ny=======
@@ -1285,13 +788,7 @@ const datalist={
             "activity_slug":"zombie-apocalypse"
            
         },
-        {
-            "id":5,
-            "category":"escapegame",
-            "activity_name":"Special Agent",
-            "activity_slug":"special-agent"
-           
-        },
+        
         {
             "id":6,
             "category":"escapegame",
@@ -1327,55 +824,7 @@ const datalist={
             "activity_slug":"lost-in-the-jungle"
            
         },
-        {
-            "id":11,
-            "category":"other",
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
-        {
-            "id":12,
-            "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
-           
-        },
-        {
-            "id":13,
-            "category":"escapegame",
-            "activity_name":"Locked in the Lift",
-            "activity_slug":"locked-in-the-lift"
-           
-        },
-        {
-            "id":14,
-            "category":"escapegame",
-            "activity_name":"Magic Castle",
-            "activity_slug":"magic-castle"
-           
-        },
-        {
-            "id":15,
-            "category":"other",
-            "activity_name":"Game Show Room",
-            "activity_slug":"game-show-room"
-           
-        },
-        {
-            "id":16,
-            "category":"other",
-            "activity_name":"Axe Throwing",
-            "activity_slug":"axe-throwing"
-           
-        },
-        {
-            "id":17,
-            "category":"other",
-            "activity_name":"Beat the Seat",
-            "activity_slug":"beat-the-seat"
-           
-        }
+        
     ],
      // ===================================== kingston-ma END=======
      // =====================================n-attleborough-ma ny=======
@@ -1444,62 +893,7 @@ const datalist={
             "activity_slug":"black-ops"
            
         },
-        {
-            "id":10,
-            "category":"escapegame",
-            "activity_name":"Lost in The jungle",
-            "activity_slug":"lost-in-the-jungle"
-           
-        },
-        {
-            "id":11,
-            "category":"other",
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
-        {
-            "id":12,
-            "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
-           
-        },
-        {
-            "id":13,
-            "category":"escapegame",
-            "activity_name":"Locked in the Lift",
-            "activity_slug":"locked-in-the-lift"
-           
-        },
-        {
-            "id":14,
-            "category":"escapegame",
-            "activity_name":"Magic Castle",
-            "activity_slug":"magic-castle"
-           
-        },
-        {
-            "id":15,
-            "category":"other",
-            "activity_name":"Game Show Room",
-            "activity_slug":"game-show-room"
-           
-        },
-        {
-            "id":16,
-            "category":"other",
-            "activity_name":"Axe Throwing",
-            "activity_slug":"axe-throwing"
-           
-        },
-        {
-            "id":17,
-            "category":"other",
-            "activity_name":"Beat the Seat",
-            "activity_slug":"beat-the-seat"
-           
-        }
+       
     ],
      // ===================================== n-attleborough-ma END=======
      //*****************************************************************************MA END++++++++++++++++ */
@@ -1521,32 +915,12 @@ const datalist={
             "activity_slug":"treasure-island"
            
         },
-        {
-            "id":3,
-            "category":"escapegame",
-            "activity_name":"Superhero's Adventure",
-            "activity_slug":"superheros-adventure"
-           
-        },
+        
         {
             "id":4,
             "category":"escapegame",
             "activity_name":"Zombie Apocalypse",
             "activity_slug":"zombie-apocalypse"
-           
-        },
-        {
-            "id":5,
-            "category":"escapegame",
-            "activity_name":"Special Agent",
-            "activity_slug":"special-agent"
-           
-        },
-        {
-            "id":6,
-            "category":"escapegame",
-            "activity_name":"Hollywood Premiere",
-            "activity_slug":"hollywood-premiere"
            
         },
         {
@@ -1557,13 +931,6 @@ const datalist={
            
         },
         {
-            "id":8,
-            "category":"escapegame",
-            "activity_name":"Houdinis Magic Cell",
-            "activity_slug":"houdinis-magic-cell"
-           
-        },
-        {
             "id":9,
             "category":"escapegame",
             "activity_name":"Black Ops",
@@ -1571,61 +938,24 @@ const datalist={
            
         },
         {
-            "id":10,
+            "id":8,
             "category":"escapegame",
-            "activity_name":"Lost in The jungle",
-            "activity_slug":"lost-in-the-jungle"
+            "activity_name":"Houdinis Magic Cell",
+            "activity_slug":"houdinis-magic-cell"
            
         },
+        
         {
-            "id":11,
-            "category":"other",
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
-        {
-            "id":12,
+            "id":6,
             "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
+            "activity_name":"Hollywood Premiere",
+            "activity_slug":"hollywood-premiere"
            
         },
-        {
-            "id":13,
-            "category":"escapegame",
-            "activity_name":"Locked in the Lift",
-            "activity_slug":"locked-in-the-lift"
-           
-        },
-        {
-            "id":14,
-            "category":"escapegame",
-            "activity_name":"Magic Castle",
-            "activity_slug":"magic-castle"
-           
-        },
-        {
-            "id":15,
-            "category":"other",
-            "activity_name":"Game Show Room",
-            "activity_slug":"game-show-room"
-           
-        },
-        {
-            "id":16,
-            "category":"other",
-            "activity_name":"Axe Throwing",
-            "activity_slug":"axe-throwing"
-           
-        },
-        {
-            "id":17,
-            "category":"other",
-            "activity_name":"Beat the Seat",
-            "activity_slug":"beat-the-seat"
-           
-        }
+        
+       
+        
+       
     ],
      // ===================================== milford-ct END=======
      // =====================================manchester-ct=======
@@ -1646,6 +976,27 @@ const datalist={
            
         },
         {
+            "id":4,
+            "category":"escapegame",
+            "activity_name":"Zombie Apocalypse",
+            "activity_slug":"zombie-apocalypse"
+           
+        },
+        {
+            "id":7,
+            "category":"escapegame",
+            "activity_name":"Sherlock's Library",
+            "activity_slug":"sherlocks-library"
+           
+        },
+        {
+            "id":9,
+            "category":"escapegame",
+            "activity_name":"Black Ops",
+            "activity_slug":"black-ops"
+           
+        },
+        {
             "id":3,
             "category":"escapegame",
             "activity_name":"Superhero's Adventure",
@@ -1653,12 +1004,13 @@ const datalist={
            
         },
         {
-            "id":4,
+            "id":8,
             "category":"escapegame",
-            "activity_name":"Zombie Apocalypse",
-            "activity_slug":"zombie-apocalypse"
+            "activity_name":"Houdinis Magic Cell",
+            "activity_slug":"houdinis-magic-cell"
            
         },
+        
         {
             "id":5,
             "category":"escapegame",
@@ -1673,83 +1025,10 @@ const datalist={
             "activity_slug":"hollywood-premiere"
            
         },
-        {
-            "id":7,
-            "category":"escapegame",
-            "activity_name":"Sherlock's Library",
-            "activity_slug":"sherlocks-library"
-           
-        },
-        {
-            "id":8,
-            "category":"escapegame",
-            "activity_name":"Houdinis Magic Cell",
-            "activity_slug":"houdinis-magic-cell"
-           
-        },
-        {
-            "id":9,
-            "category":"escapegame",
-            "activity_name":"Black Ops",
-            "activity_slug":"black-ops"
-           
-        },
-        {
-            "id":10,
-            "category":"escapegame",
-            "activity_name":"Lost in The jungle",
-            "activity_slug":"lost-in-the-jungle"
-           
-        },
-        {
-            "id":11,
-            "category":"other",
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
-        {
-            "id":12,
-            "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
-           
-        },
-        {
-            "id":13,
-            "category":"escapegame",
-            "activity_name":"Locked in the Lift",
-            "activity_slug":"locked-in-the-lift"
-           
-        },
-        {
-            "id":14,
-            "category":"escapegame",
-            "activity_name":"Magic Castle",
-            "activity_slug":"magic-castle"
-           
-        },
-        {
-            "id":15,
-            "category":"other",
-            "activity_name":"Game Show Room",
-            "activity_slug":"game-show-room"
-           
-        },
-        {
-            "id":16,
-            "category":"other",
-            "activity_name":"Axe Throwing",
-            "activity_slug":"axe-throwing"
-           
-        },
-        {
-            "id":17,
-            "category":"other",
-            "activity_name":"Beat the Seat",
-            "activity_slug":"beat-the-seat"
-           
-        }
+        
+       
+        
+       
     ],
      // =====================================manchester-ct END=======
      // =====================================waterbury-ct=======
@@ -1769,6 +1048,29 @@ const datalist={
             "activity_slug":"treasure-island"
            
         },
+        
+       
+        {
+            "id":4,
+            "category":"escapegame",
+            "activity_name":"Zombie Apocalypse",
+            "activity_slug":"zombie-apocalypse"
+           
+        },
+        {
+            "id":7,
+            "category":"escapegame",
+            "activity_name":"Sherlock's Library",
+            "activity_slug":"sherlocks-library"
+           
+        },
+        {
+            "id":9,
+            "category":"escapegame",
+            "activity_name":"Black Ops",
+            "activity_slug":"black-ops"
+           
+        },
         {
             "id":3,
             "category":"escapegame",
@@ -1777,10 +1079,10 @@ const datalist={
            
         },
         {
-            "id":4,
+            "id":8,
             "category":"escapegame",
-            "activity_name":"Zombie Apocalypse",
-            "activity_slug":"zombie-apocalypse"
+            "activity_name":"Houdinis Magic Cell",
+            "activity_slug":"houdinis-magic-cell"
            
         },
         {
@@ -1797,83 +1099,10 @@ const datalist={
             "activity_slug":"hollywood-premiere"
            
         },
-        {
-            "id":7,
-            "category":"escapegame",
-            "activity_name":"Sherlock's Library",
-            "activity_slug":"sherlocks-library"
-           
-        },
-        {
-            "id":8,
-            "category":"escapegame",
-            "activity_name":"Houdinis Magic Cell",
-            "activity_slug":"houdinis-magic-cell"
-           
-        },
-        {
-            "id":9,
-            "category":"escapegame",
-            "activity_name":"Black Ops",
-            "activity_slug":"black-ops"
-           
-        },
-        {
-            "id":10,
-            "category":"escapegame",
-            "activity_name":"Lost in The jungle",
-            "activity_slug":"lost-in-the-jungle"
-           
-        },
-        {
-            "id":11,
-            "category":"other",
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
-        {
-            "id":12,
-            "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
-           
-        },
-        {
-            "id":13,
-            "category":"escapegame",
-            "activity_name":"Locked in the Lift",
-            "activity_slug":"locked-in-the-lift"
-           
-        },
-        {
-            "id":14,
-            "category":"escapegame",
-            "activity_name":"Magic Castle",
-            "activity_slug":"magic-castle"
-           
-        },
-        {
-            "id":15,
-            "category":"other",
-            "activity_name":"Game Show Room",
-            "activity_slug":"game-show-room"
-           
-        },
-        {
-            "id":16,
-            "category":"other",
-            "activity_name":"Axe Throwing",
-            "activity_slug":"axe-throwing"
-           
-        },
-        {
-            "id":17,
-            "category":"other",
-            "activity_name":"Beat the Seat",
-            "activity_slug":"beat-the-seat"
-           
-        }
+        
+       
+       
+        
     ],
      // =====================================waterbury-ct END=======
      //*****************************************************************************CONNECTICUT END++++++++++++++++ */

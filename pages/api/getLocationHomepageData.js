@@ -1855,8 +1855,270 @@ const locPagedata={
 
    ],
 
-                },
+        },
 //=====================================================================west-nyack-ny end
+//=====================================================================poughkeepsie-ny
+"poughkeepsie-ny":{
+  "coverimageL":"/assets/all-location-desktop-hero/Poughkeepsie-ny-poughkeepsie-galleria.jpg",
+   "coverimageM":"/assets/all-location-mobile-hero/Poughkeepsie-ny-poughkeepsie-galleria.jpg",
+   "coverimageM_alt":"allinadventures-escape-room-west-poughkeepsie-ny-palisades-mall",
+   "pagemeta":{
+
+          "matatilte":"title",
+          "metakeyword":"keywords",
+          "metadescription":"metadescription"
+   },
+   "inpersongames":[
+    {
+      "id":1,
+      "category":"escapegame",
+      "type": "In person",
+       "title": "Escape From Alcatraz",
+       "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
+       "age":"All age",
+       "duration":"50",
+       "maxplayers":"10",
+       "minplayers":"2",
+       "price":"29.89",
+       "slug"  :"escape-from-alcatraz",
+       "bgimg" :"/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg"
+     },
+     {
+      "id":2,
+      "category":"escapegame",
+       "type": "In person",
+       "title": "Treasure Island",
+       "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
+       "age":"ll age",
+       "duration":"50",
+       "maxplayers":"10",
+       "minplayers":"2",
+       "price":"29.89",
+       "slug"  :"treasure-island",
+       "bgimg" :"/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg"
+     },
+     {
+      "id":3,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Zombie Apocalypse",
+      "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"zombie-apocalypse",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg"
+     },
+     {
+      "id":4,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Sherlock's Library",
+      "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"sherlocks-library",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg"
+     },
+     {
+      "id":5,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Black Ops",
+      "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"black-ops",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
+     },
+     
+     
+     {
+      "id":6,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
+     },
+     {
+      "id":7,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Houdini's Magic Cell",
+      "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
+      "age":"all age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"houdinis-magic-cell",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
+     },
+     
+
+      ],
+   "otherphysicalgames": [
+    {
+                                  
+                                    "id":3,
+                                    "category":"other",
+                                    "type": "In person",
+                                    "title": "Axe Throwing",
+                                    "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
+                                    "age":"All age",
+                                    "duration":"20",
+                                    "maxplayers":"10",
+                                    "minplayers":"2",
+                                    "price":"20",
+                                    "slug"  :"axe-throwing",
+                                    "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
+                                   },
+                                
+      
+      
+    
+      ],
+  "events":             [
+    {
+      "id":1,
+      "category":"event",
+       "type": "In person",
+       "title": "BIRTHDAY PARTIES",
+       "description": "A perfect party venue for the young at heart. No matter your age, get an unforgettable adventure!",
+       "slug"  :"birthday-party",
+       "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-birthday-party.jpg"
+     },
+    {
+      "id":2,
+      "category":"event",
+       "type": "In person",
+       "title": "TEAM BUILDING",
+       "description": "This fun and exciting interactive form of team building will bring your corporate team closer!",
+       "slug"  :"team-building",
+       "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-team-building.jpg"
+     },
+     {
+      "id":3,
+      "category":"event",
+       "type": "In person",
+       "title": "CORPORATE EVENTS",
+       "description": "Instead of a dreary meeting on how to work effectively, why not take a crack at a puzzle?",
+       "slug"  :"corporate-events",
+       "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-corporate-events.jpg"
+     },
+     
+     {
+      "id":4,
+      "category":"event",
+       "type": "In person",
+       "title": "FAMILY FUN ACTIVITIES",
+       "description": "A unique family fun activity with intense real-life puzzles where you have to work together to progress!",
+       "slug"  :"family-fun-activity",
+       "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-family-fun-activities.jpg"
+     },
+     {
+      "id":5,
+      "category":"event",
+       "type": "In person",
+       "title": "Bachelor Party",
+       "description": "There's no better way to bond with your bachelor party before the big day — no scandals, just nonstop thrills!",
+       "slug"  :"bachelor-party",
+       "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-bachelor-party.jpg"
+     },
+     {
+      "id":6,
+      "category":"event",
+       "type": "In person",
+       "title": "Bachelorette Party",
+       "description": "Fun-filled bachelorette party without any drama that will be something long remembered by everyone!",
+       "slug"  :"bachelorette-party",
+       "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-bachelorette-party.jpg"
+     },
+     {
+      "id":7,
+      "category":"event",
+       "type": "In person",
+       "title": "PROPOSAL PARTY",
+       "description": "A distinctive way to propose marriage where the mystery game ends with the ring in the final clue box!",
+       "slug"  :"proposal-party",
+       "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-proposal-party.jpg"
+     },
+     {
+      "id":8,
+      "category":"event",
+       "type": "In person",
+       "title": "DATE NIGHT / NIGHT OUT",
+       "description": "Work together and find clues to solve the mystery that will ultimately strengthen your relationship!",
+       "slug"  :"date-night",
+       "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-date-night.jpg"
+     },
+     {
+      "id":9,
+      "category":"event",
+       "type": "In person",
+       "title": "Private Party",
+       "description": "Adventure awaits for all — your family, friends, office, indoor party, church group, fraternity or sorority.",
+       "slug"  :"private-party",
+       "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-private-party.jpg"
+     },
+     {
+      "id":10,
+      "category":"event",
+       "type": "In person",
+       "title": "Reunion Party",
+       "description": "Each game is interactive and has engaging qualities that give your reunion party an epic adventure!",
+       "slug"  :"reunion-party",
+       "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-reunion-party.jpg"
+     },
+     {
+      "id":11,
+      "category":"event",
+       "type": "In person",
+       "title": "Graduation Party",
+       "description": "Graduation is such an exciting time, no matter your age and you deserve to celebrate it in a memorable way",
+       "slug"  :"graduation-party",
+       "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-graduation-party.jpg"
+     },
+     
+     {
+      "id":12,
+      "category":"event",
+       "type": "In person",
+       "title": "SCHOOL EVENTS / FIELD TRIPS",
+       "description": "Students exercise critical thinking and act to become the super-spies they see in the movies!",
+       "slug"  :"school-events",
+       "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-school-event.jpg"
+     },
+     {
+      "id":13,
+      "category":"event",
+       "type": "In person",
+       "title": "GENDER REVEAL PARTY",
+       "description": "Instead of simply sharing the news of your baby's gender, why not a fun way to announce it through puzzles?",
+       "slug"  :"gender-reveal-party",
+       "bgimg" :"/assets/all-event-slider-bg/allinadventures-events-gender-reveal-party-event.jpg"
+     },
+
+
+   ],
+
+        },
+//=====================================================================poughkeepsie-ny end
 
 //====================================================================================NY end==============================
 

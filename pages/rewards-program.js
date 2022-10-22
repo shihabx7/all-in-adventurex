@@ -34,7 +34,9 @@ const rewardProgram=(props)=>{
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
-           <Homenav/>
+           <Homenav locationlist={props.locationlist}
+           activitylist={props.activitylist}
+           eventlist={props.eventlist}/>
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}
@@ -56,7 +58,7 @@ const rewardProgram=(props)=>{
 
         <GameHomeHero gametotal="not" pagedata={props.pagedata}/>
         <RewardsProgram/>
-        <ContactForJoin/>
+        <ContactForJoin locationlist={props.locationlist}/>
         <EarningPoints/>
         <RewardFaqs faqlist={props.faqlist}/>
          
@@ -67,7 +69,7 @@ const rewardProgram=(props)=>{
   {/* =========================================================================================main content ======== end */}
         </div>
   
-          <Footer/>
+          <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
           </>
     )
 
@@ -83,6 +85,9 @@ export const getStaticProps=async()=>{
         props:{
             pagedata:rewardPageData.pagedata,
             pagemeta:rewardPageData.pagemeta,
+            locationlist:rewardPageData.locationlist,
+            activitylist:rewardPageData.activitylistSlug,
+            eventlist:rewardPageData.eventlistSlug,
             faqlist:rewardPageData.faqlist
         },
         revalidate:30

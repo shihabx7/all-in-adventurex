@@ -47,13 +47,13 @@ export const getLocationSlugList =()=>{
             "state":"NY",
             "shortaddress":"Palisades Center"
         },
-        /*{
+        {
             "id":7,
-            "slug":"yorktown-heights-ny",
-            "city":"Yorktown Heights",
+            "slug":"poughkeepsie-ny",
+            "city":"Poughkeepsie",
             "state":"NY",
-            "shortaddress":"Jefferson Valley Mall"
-        }, */
+            "shortaddress":"Poughkeepsie Galleria"
+        }, 
         {
             "id":8,
             "slug":"raleigh-nc",
