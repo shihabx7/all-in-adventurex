@@ -68,12 +68,12 @@ const gallery=(props)=>{
 
                     <MainGallery category="escapegame" galleryitem={props.gallerylist}/>
                     <div className="gl-bottom-link mt-12 text-center">
-                      
-                          <a href="/activities" className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
+                        <Link href="/activities"> 
+                          <a className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
                            <span>View all real life escape rooms</span>
                            <span><FiChevronRight/></span> 
                             </a>
-                      
+                            </Link>
                     </div>
 
                 </div>
@@ -82,17 +82,17 @@ const gallery=(props)=>{
                 <div className="event-gallery my-16 md:my-20 lg:my-28">
                    <div className="section-title  text-center max-w-[760px] mx-auto">
                         <TitleSeparator title="EVENTS AND PARTIES" color="golden-text" weight="font-bold"/>
-                        <p className="text-gray-700 md:px-8 md:text-lg">We've hosted over 70,000 birthday parties and team-building events over the years. With more escape room themes and options being constantly added, we are always looking for ways to make your event memorable.</p>
+                        <p className="text-gray-700 md:px-8 md:text-lg">We&apos;ve hosted over 70,000 birthday parties and team-building events over the years. With more escape room themes and options being constantly added, we are always looking for ways to make your event memorable.</p>
                     </div>
 
                     <MainGallery category="events" galleryitem={props.gallerylist}/>
                     <div className="gl-bottom-link mt-12 text-center">
-                      
-                          <a href="/events" className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
+                        <Link href="/events"> 
+                          <a  className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
                            <span>View all events and parties </span>
                            <span><FiChevronRight/></span> 
                             </a>
-                    
+                            </Link>
                     </div>
 
                 </div>
@@ -107,12 +107,12 @@ const gallery=(props)=>{
 
                     <MainGallery category="others" galleryitem={props.gallerylist}/>
                     <div className="gl-bottom-link mt-12 text-center">
-                      
-                          <a href="/activities#others-physical-games" className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
+                        <Link href="/activities#others-physical-games"> 
+                          <a  className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
                            <span>View all other real life games</span>
                            <span><FiChevronRight/></span> 
                             </a>
-                      
+                            </Link>
                     </div>
 
                 </div>
@@ -127,12 +127,12 @@ const gallery=(props)=>{
 
                     <MainGallery category="virtual" galleryitem={props.gallerylist}/>
                     <div className="gl-bottom-link mt-12 text-center">
-                   
-                          <a href="/virtual-games" className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
+                        <Link href="/virtual-games"> 
+                          <a  className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
                            <span>View all virtual games </span>
                            <span><FiChevronRight/></span> 
                             </a>
-                   
+                            </Link>
                     </div>
 
                 </div>
