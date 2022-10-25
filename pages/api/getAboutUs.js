@@ -1,6 +1,12 @@
+import { getTotal } from "./AllDataList/getTotal"
 export const getAboutUs=()=>{
+    
 
     const aboutPageData={
+        "locationlist":getTotal().locationlist,
+         "activitylistSlug":getTotal().activitylistSlug,
+          "eventlistSlug":getTotal().eventlistSlug,
+          "virtualgameListSlug":getTotal().virtualgameSlug,
         "pagemeta":{
 
             "matatilte":"title",
@@ -10,11 +16,11 @@ export const getAboutUs=()=>{
            
         "pagedata":{
             "pagetitle":"ABOUT ALL IN ADVENTURES",
-            "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
-            "totalLocation":"28",
+            "pagesubtitle":"Experience fun activities, escape rooms, game show rooms, beat the seat and axe throwing with locations throughout the U.S.",
+           
             "coverimageL":"/assets/gn-desktop-hero/allinadventures-about-us-hero.jpg",
             "coverimageM":"/assets/gn-mobile-hero/allinadventures-about-us-hero.jpg",
-            "totalLocations":28,
+            "totalLocations":getTotal().totalLocations,
         },
         "team_members":[
             {

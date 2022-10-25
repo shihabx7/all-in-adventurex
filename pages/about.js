@@ -34,7 +34,9 @@ const AboutUs=(props)=>{
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
-           <Homenav/>
+           <Homenav locationlist={props.locationlist}
+           activitylist={props.activitylist}
+           eventlist={props.eventlist}/>
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}
@@ -60,7 +62,7 @@ const AboutUs=(props)=>{
 {/* =========================================================================================main content ======== end */}
 </div>
   
-  <Footer/>
+  <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
   </>
       )
 
@@ -76,6 +78,9 @@ export const getStaticProps=async()=>{
         props:{
             pagedata:aboutPageData.pagedata,
             pagemeta:aboutPageData.pagemeta,
+            locationlist:aboutPageData.locationlist,
+            activitylist:aboutPageData.activitylistSlug,
+            eventlist:aboutPageData.eventlistSlug,
             team_members:aboutPageData.team_members
         },
         revalidate:30

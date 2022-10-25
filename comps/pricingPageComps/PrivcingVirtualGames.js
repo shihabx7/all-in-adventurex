@@ -91,9 +91,9 @@ const PrivcingVirtualGames=()=>{
                     <div className="pricing-notice max-w-[800px] px-4 mx-auto mt-4 md:mt-8">
                         
                         <div className="view-all flex justify-center">
-                            <Link href="/virtual-escape-rooms"> 
-                              <a className="flex font-medium lg:text-lg justify-center space-x-1 items-center text-red-500 hover:text-red-700"><span>View all virtual game</span> <FiChevronRight/></a>
-                            </Link>
+                            
+                              <a href="/virtual-escape-rooms" className="flex font-medium lg:text-lg justify-center space-x-1 items-center text-red-500 hover:text-red-700"><span>View all virtual game</span> <FiChevronRight/></a>
+                            
                          </div>
                     </div>
                     {/** ============== inperson pricing-notice- end ============ */}

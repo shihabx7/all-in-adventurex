@@ -35,7 +35,9 @@ const gallery=(props)=>{
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
-           <Homenav/>
+           <Homenav locationlist={props.locationlist}
+           activitylist={props.activitylist}
+           eventlist={props.eventlist}/>
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}
@@ -58,39 +60,39 @@ const gallery=(props)=>{
               <div className="section-container max-w-7xl mx-auto relative z-30">
            {/* =======inperson gallery========  */}
                 <div className="inperson-gallery">
-                   <div className="section-title  text-center max-w-[600px] mx-auto">
+                   <div className="section-title  text-center max-w-[760px] mx-auto">
                         <p className="uppercase">CUSTOMER GALLERY</p>
-                        <TitleSeparator title="IN PERSON ESCAPE GAMES" color="golden-text" weight="font-bold"/>
-                        <p className="text-gray-700 md:px-8 md:text-lg">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                        <TitleSeparator title="REAL LIFE ESCAPE ROOM GAMES" color="golden-text" weight="font-bold"/>
+                        <p className="text-gray-700 md:px-8 md:text-lg">Escape rooms are one of the hottest trends in entertainment today. Players must work together to find hidden clues, solve puzzles, crack codes, complete tasks, and escape before time runs out!</p>
                     </div>
 
                     <MainGallery category="escapegame" galleryitem={props.gallerylist}/>
                     <div className="gl-bottom-link mt-12 text-center">
-                      <Link href="/activities">
-                          <a className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
-                           <span>View all In person escape rooms </span>
+                      
+                          <a href="/activities" className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
+                           <span>View all real life escape rooms</span>
                            <span><FiChevronRight/></span> 
                             </a>
-                      </Link>
+                      
                     </div>
 
                 </div>
                 {/* =======inperson gallery========  end*/}
                 {/* =======event gallery========  */}
                 <div className="event-gallery my-16 md:my-20 lg:my-28">
-                   <div className="section-title  text-center max-w-[600px] mx-auto">
+                   <div className="section-title  text-center max-w-[760px] mx-auto">
                         <TitleSeparator title="EVENTS AND PARTIES" color="golden-text" weight="font-bold"/>
-                        <p className="text-gray-700 md:px-8 md:text-lg">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                        <p className="text-gray-700 md:px-8 md:text-lg">We've hosted over 70,000 birthday parties and team-building events over the years. With more escape room themes and options being constantly added, we are always looking for ways to make your event memorable.</p>
                     </div>
 
-                    <MainGallery category="escapegame" galleryitem={props.gallerylist}/>
+                    <MainGallery category="events" galleryitem={props.gallerylist}/>
                     <div className="gl-bottom-link mt-12 text-center">
-                      <Link href="/events">
-                          <a className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
-                           <span>View all Events </span>
+                      
+                          <a href="/events" className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
+                           <span>View all events and parties </span>
                            <span><FiChevronRight/></span> 
                             </a>
-                      </Link>
+                    
                     </div>
 
                 </div>
@@ -99,18 +101,18 @@ const gallery=(props)=>{
             {/* =======OTHERS GAMES AND ACTIVITES========  */}
             <div className="other-games-gallery my-16 md:my-20 lg:my-28">
                    <div className="section-title  text-center max-w-[600px] mx-auto">
-                        <TitleSeparator title="OTHERS GAMES AND ACTIVITES" color="golden-text" weight="font-bold"/>
-                        <p className="text-gray-700 md:px-8 md:text-lg">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                        <TitleSeparator title="OTHER GAMES AND ACTIVITIES" color="golden-text" weight="font-bold"/>
+                        <p className="text-gray-700 md:px-8 md:text-lg">All In Adventures is more than an escape room place. Join us to experience more fun activities, including Escape Rooms, Game Show Rooms, Beat the Seat and Axe Throwing.</p>
                     </div>
 
-                    <MainGallery category="escapegame" galleryitem={props.gallerylist}/>
+                    <MainGallery category="others" galleryitem={props.gallerylist}/>
                     <div className="gl-bottom-link mt-12 text-center">
-                      <Link href="/activities#others-physical-games">
-                          <a className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
-                           <span>View all others physical games </span>
+                      
+                          <a href="/activities#others-physical-games" className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
+                           <span>View all other real life games</span>
                            <span><FiChevronRight/></span> 
                             </a>
-                      </Link>
+                      
                     </div>
 
                 </div>
@@ -120,17 +122,17 @@ const gallery=(props)=>{
             <div className="virtual-gallery ">
                    <div className="section-title  text-center max-w-[600px] mx-auto">
                         <TitleSeparator title="VIRTUAL GAMES" color="golden-text" weight="font-bold"/>
-                        <p className="text-gray-700 md:px-8 md:text-lg">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                        <p className="text-gray-700 md:px-8 md:text-lg">We offer a new way to stay connected while apart. For unlimited players, any time, anywhere. Your team will work together on Zoom, and a game master will broadcast live from escape room or game show room of your choice.</p>
                     </div>
 
-                    <MainGallery category="escapegame" galleryitem={props.gallerylist}/>
+                    <MainGallery category="virtual" galleryitem={props.gallerylist}/>
                     <div className="gl-bottom-link mt-12 text-center">
-                      <Link href="/virtual-games">
-                          <a className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
+                   
+                          <a href="/virtual-games" className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
                            <span>View all virtual games </span>
                            <span><FiChevronRight/></span> 
                             </a>
-                      </Link>
+                   
                     </div>
 
                 </div>
@@ -153,7 +155,7 @@ const gallery=(props)=>{
   {/* =========================================================================================main content ======== end */}
         </div>
   
-          <Footer/>
+          <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
           </>
     )
 
@@ -170,7 +172,10 @@ export const getStaticProps=async()=>{
     props:{
       pagemeta:gallerylist.pagemeta,
       pagedata:gallerylist.pagedata,
-      gallerylist:gallerylist.gallery
+      gallerylist:gallerylist.gallery,
+      locationlist:gallerylist.locationlist,
+      activitylist:gallerylist.activitylistSlug,
+      eventlist:gallerylist.eventlistSlug,
     }
   }
 }

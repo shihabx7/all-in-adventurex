@@ -161,7 +161,7 @@ const Homenav=(props)=>{
                     </div>
                 </div>
                         
-                                <div id="submenu-holder" className="submenu-holder absolute top-full right-0 z-40  w-full md:w-auto"> 
+                                <div id="submenu-holder" className="submenu-holder absolute md:top-full right-0 z-40  w-full md:w-auto"> 
                                 {
                                 (showMe && props.locationslug) &&
                                   

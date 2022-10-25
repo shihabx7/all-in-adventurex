@@ -1003,6 +1003,9 @@ background-size: cover,cover;
     column-count: 1;
     column-gap: 10px;
   }
+  .submenu-item{
+    margin: 4px 0px;
+  }
   .logo a img{
     max-height:52px;
   }

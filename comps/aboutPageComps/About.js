@@ -11,35 +11,39 @@ const About=()=>{
                 <div className="abt-row flex flex-col md:flex-row justify-between items-center">
                     <div className="abt-col md:w-[58%] lg:w-[48%] order-2 md:order-1">
                         <h2 className="golden-text text-2xl md:text-3xl lg:text-4xl font-os font-bold mt-4 md:mt-0">WHO WE ARE</h2>
-                        <p className="text-gray-700 lg:text-lg mt-4  lg:mt-8">Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.</p>
+                        <p className="text-gray-700 lg:text-lg mt-4  lg:mt-8">We've changed our name from Mystery Room to All In Adventures. Your favorite fun activity center is now more than an escape room place. Come join us to experience more entertaining activities. Now you can choose your adventures from many different themes!</p>
                         <div className="abt-notice mt-4 md:mt-6 lg:mt-8"> 
-                                             
+                
                                              <div className="flex  lg:text-lg text-[#464646] mt-4 justify-between">
                                                 <div className="mt-[6px] -[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
-                                                 <div className="w-[92%] font-medium">Kids and children age 7+ can play when they're accompanied.</div>
+                                                 <div className="w-[92%]"><span className="font-medium">Escape room:</span> Can you and your friends make it out in time? The clock is ticking!</div>
                                              </div>
-                                             <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-3  justify-between">
+                                             <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-2  justify-between">
                                                 <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
-                                                 <div className="w-[92%] font-medium">All our locations are wheelchair accessible.</div>
+                                                 <div className="w-[92%]"><span className="font-medium">Game Show Room:</span> Have you always dreamed of being on a tv game show?</div>
                                              </div>
-                                             <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-3  justify-between">
+                                             <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-2  justify-between">
                                                 <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
-                                                 <div className="w-[92%] font-medium">Car parking facility available in our location at the mall.</div>
+                                                 <div className="w-[92%]"><span className="font-medium">Beat the Seat:</span> Can you beat the seat? Intense and challenging fun!</div>
                                              </div>
-                                             <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-3  justify-between">
+                                             <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-2  justify-between">
                                                 <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
-                                                 <div className="w-[92%] font-medium">Car parking facility available in our location at the mall.</div>
+                                                 <div className="w-[92%]"><span className="font-medium">Axe throwing:</span> What's the most fun form of stress release? Yup, axe throwing wins!</div>
                                              </div>
-                                             <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-3  justify-between">
+                                             <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-2  justify-between">
                                                 <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
-                                                 <div className="w-[92%] font-medium">Car parking facility available in our location at the mall.</div>
+                                                 <div className="w-[92%]"><span className="font-medium">Virtual Escape room:</span> Can you work virtually together as a team? Who can escape?</div>
+                                             </div>
+                                             <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-2  justify-between">
+                                                <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
+                                                 <div className="w-[92%]"><span className="font-medium">Virtual Game Show Room:</span> Connect and play from anywhere! Who is going to win?</div>
                                              </div>
 
                                              
                         </div>
                     </div>
                     <div className="abt-col md:w-[40%] lg:w-[48%] order-1 md:order-2">
-                        <img src="/assets/abt-mission.jpg"></img>
+                        <img src="/assets/allinadventures-escape-room-who-we-are.jpg"></img>
                     </div>
 
 
@@ -49,18 +53,18 @@ const About=()=>{
                 <div className="abt-row flex flex-col md:flex-row justify-between mt-16 md:mt-20 items-center">
                     <div className="abt-col md:w-[58%] lg:w-[48%] order-2 md:order-1">
                         <h2 className="golden-text text-2xl md:text-3xl lg:text-4xl font-os font-bold mt-4 md:mt-0">OUR MISSION</h2>
-                        <p className="text-gray-700 lg:text-lg mt-4  lg:mt-8">Welcome to the world of Treasure Island. 
-                        Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your 
-                        way out you will be able to explore the entire ship while the pirates are on the island for the rest
-                         of the gold. Keep an eye out for the gold already aboard.</p>
-                         <p className="text-gray-700 lg:text-lg mt-4">Welcome to the world of Treasure Island. 
-                         Your adventure begins in a shadowy storage room aboard a weathered pirate ship. 
-                         Once you find your way out you will be able to explore the entire ship while the 
-                         pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.</p>
+                        <p className="text-gray-700 lg:text-lg mt-4  lg:mt-8">Our mission is to deepen relationships between people through creative entertainment.
+                         To do so, we strive to develop and provide high-quality services in amusements, celebrations,
+                          events and team-building activities throughout the United States. Our core focus is to offer
+                           a comprehensive line of innovative, top-quality family-friendly escape rooms and other fun activities,
+                            perfect for both kids and adults.</p>
+                             <p className="text-gray-700 lg:text-lg mt-4">The business will provide an exceptional level of customer service to articulate the values of the company.
+                          The team must position the business in a clear, powerful, and memorable way in the marketplace,
+                           so we can build an organization with a unique spirit that makes people eager to join and conduct business with us.</p>
                        
                     </div>
                     <div className="abt-col md:w-[40%] lg:w-[48%] order-1 md:order-2">
-                        <img src="/assets/abt-mission.jpg"></img>
+                        <img src="/assets/allinadventures-escape-room-our-mission.jpg"></img>
                     </div>
 
 
