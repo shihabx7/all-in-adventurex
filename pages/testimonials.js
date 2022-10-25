@@ -130,9 +130,9 @@ const testimonials=(props)=>{
                 <MainTestimonials category="party"  testimonials={props.testimonials}/>
                 <div className="flex justify-center mt-2 md:mt-4">
 
-                    
-                      <a href="/events" className="flex items-center space-x-1 text-red-600 hover-text-red-700 lg:text-lg font-medium"><span>View all events</span><span><FiChevronRight/></span></a>
-                    
+                    <Link href="/events"> 
+                      <a  className="flex items-center space-x-1 text-red-600 hover-text-red-700 lg:text-lg font-medium"><span>View all events</span><span><FiChevronRight/></span></a>
+                      </Link>
 
                 </div>
 
@@ -152,9 +152,9 @@ const testimonials=(props)=>{
              <MainTestimonials category="gameshowroom"  testimonials={props.testimonials}/>
              <div className="flex justify-center mt-2 md:mt-4">
 
-                 
-                   <a href="/virtual-escape-games" className="flex items-center space-x-1 text-red-600 hover-text-red-700 lg:text-lg font-medium"><span>View all virtual games</span><span><FiChevronRight/></span></a>
-                 
+                 <Link href="/virtual-escape-games"> 
+                   <a  className="flex items-center space-x-1 text-red-600 hover-text-red-700 lg:text-lg font-medium"><span>View all virtual games</span><span><FiChevronRight/></span></a>
+                   </Link>
 
              </div>
 
