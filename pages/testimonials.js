@@ -64,9 +64,9 @@ const testimonials=(props)=>{
                 <MainTestimonials category="escaperoom"  testimonials={props.testimonials}/>
                 <div className="flex justify-center mt-2 md:mt-4">
 
-                    
-                      <a href="/activities" className="flex items-center space-x-1 text-red-600 hover-text-red-700 lg:text-lg font-medium"><span>View all In person escape rooms</span><span><FiChevronRight/></span></a>
-                    
+                    <Link href="/activities"> 
+                      <a  className="flex items-center space-x-1 text-red-600 hover-text-red-700 lg:text-lg font-medium"><span>View all In person escape rooms</span><span><FiChevronRight/></span></a>
+                      </Link>
 
                 </div>
 
@@ -86,9 +86,9 @@ const testimonials=(props)=>{
                 <MainTestimonials category="birthday"  testimonials={props.testimonials}/>
                 <div className="flex justify-center mt-2 md:mt-4">
 
-                 
-                      <a href="/events/birthday-party" className="flex items-center space-x-1 text-red-600 hover-text-red-700 lg:text-lg font-medium"><span>Learn more about birthday party</span><span><FiChevronRight/></span></a>
-                 
+                      <Link href="/events/birthday-party"> 
+                      <a className="flex items-center space-x-1 text-red-600 hover-text-red-700 lg:text-lg font-medium"><span>Learn more about birthday party</span><span><FiChevronRight/></span></a>
+                      </Link>
 
                 </div>
 
@@ -108,9 +108,9 @@ const testimonials=(props)=>{
                 <MainTestimonials category="team"  testimonials={props.testimonials}/>
                 <div className="flex justify-center mt-2 md:mt-4">
 
-                    
-                      <a href="/events/events" className="flex items-center space-x-1 text-red-600 hover-text-red-700 lg:text-lg font-medium"><span>View all events</span><span><FiChevronRight/></span></a>
-                    
+                    <Link href="/events"> 
+                      <a  className="flex items-center space-x-1 text-red-600 hover-text-red-700 lg:text-lg font-medium"><span>View all events</span><span><FiChevronRight/></span></a>
+                      </Link>
 
                 </div>
 
@@ -125,7 +125,7 @@ const testimonials=(props)=>{
                 <div className="section-title text-center max-w-[800px] mx-auto">
                     <p className="text-lg text-[#938056] text-center">TESTIMONIALS</p>
                     <TitleSeparator title="PRIVATE PARTY CUSTOMERS" color="golden-text" weight="font-bold" />
-                    <p className="text-gray-700 md:px-8 md:text-lg">Not only we provide themed events for birthdays and corporate events, but also host parties of mind-bending, puzzle solving for just about any other occasion. Bring your friends, family and sense of adventure to your next special celebration, and don't forget to make it fun!</p>
+                    <p className="text-gray-700 md:px-8 md:text-lg">Not only we provide themed events for birthdays and corporate events, but also host parties of mind-bending, puzzle solving for just about any other occasion. Bring your friends, family and sense of adventure to your next special celebration, and don&apos;t forget to make it fun!</p>
                 </div>
                 <MainTestimonials category="party"  testimonials={props.testimonials}/>
                 <div className="flex justify-center mt-2 md:mt-4">
