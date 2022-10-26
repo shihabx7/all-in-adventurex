@@ -83,7 +83,7 @@ export const getGiftCardPageData=()=>{
         
                          },
                          {
-                            "id":5,
+                            "id":6,
                             "group":"GIFT_CARDS",
                             "category":"gift",
                             "ques":"Can I get a physical gift card instead of an electronic one?",
