@@ -14,7 +14,7 @@ const ContactForJoin=(props)=>{
 
             <RewardsLoc locationlist={props.locationlist}/>
         </div>
-        <div className="fran-tes bg-cover" style={{backgroundImage:"url('/assets/franchise-slider-bg.jpg')"}}>
+        <div className="fran-tes bg-cover" id="ready-to-signup" style={{backgroundImage:"url('/assets/franchise-slider-bg.jpg')"}}>
             <div className="section-container max-w-7xl mx-auto px-4 py-16 md:py-20 lg:py-28">
                 <div className="max-w-[640px] mx-auto text-center">
                     <h2 className="mb-8 md:mb-12 golden-text text-3xl md:text-4xl font-os font-bold">READY TO SIGN UP?</h2>

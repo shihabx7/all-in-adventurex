@@ -23,6 +23,7 @@ export const getAllFaq=()=>{
            
         },
         "faqlist":[
+          // ---- getting started=======
                  {
                         "id":1,
                         "group":"getting_started",
@@ -51,7 +52,7 @@ export const getAllFaq=()=>{
 
                      },
                      {
-                        "id":4,
+                        "id":3,
                         "category":"all",
                         "group":"getting_started",
                         "ques":"Is All In Adventures scary?",
@@ -65,7 +66,7 @@ export const getAllFaq=()=>{
     
                          },
                          {
-                            "id":5,
+                            "id":4,
                             "category":"all",
                             "group":"getting_started",
                             "ques":"Am I really locked in a room?",
@@ -77,7 +78,7 @@ export const getAllFaq=()=>{
                             ]
                          },
                         {
-                          "id":6,
+                          "id":5,
                           "category":"all",
                           "group":"getting_started",
                           "ques":"Is All In Adventures physically challenging?",
@@ -90,7 +91,7 @@ export const getAllFaq=()=>{
             
                         },
                         {
-                            "id":7,
+                            "id":6,
                             "category":"all",
                             "group":"getting_started",
                             "ques":"Is All In Adventures wheelchair accessible?",
@@ -99,7 +100,7 @@ export const getAllFaq=()=>{
               
                           },
                           {
-                            "id":8,
+                            "id":7,
                             "category":"all",
                             "group":"getting_started",
                             "ques":"Are your games wheelchair accessible?",
@@ -112,7 +113,7 @@ export const getAllFaq=()=>{
               
                           },
                           {
-                            "id":9,
+                            "id":8,
                             "category":"all",
                             "group":"getting_started",
                             "ques":"Is there a dress code?",
@@ -125,7 +126,7 @@ export const getAllFaq=()=>{
               
                           },
                           {
-                            "id":10,
+                            "id":9,
                             "category":"all",
                             "group":"getting_started",
                             "ques":"Is there a minimum age requirement?",
@@ -139,7 +140,7 @@ export const getAllFaq=()=>{
               
                           },
                           {
-                            "id":11,
+                            "id":10,
                             "category":"all",
                             "group":"getting_started",
                             "ques":"Can I bring my small child with me?",
@@ -150,7 +151,7 @@ export const getAllFaq=()=>{
               
                           },
                           {
-                            "id":12,
+                            "id":11,
                             "category":"all",
                             "group":"getting_started",
                             "ques":"Can I bring my small child with me?",
@@ -163,7 +164,7 @@ export const getAllFaq=()=>{
               
                           },
                           {
-                            "id":13,
+                            "id":12,
                             "category":"all",
                             "group":"getting_started",
                             "ques":"Do I need to make reservations?",
@@ -174,7 +175,7 @@ export const getAllFaq=()=>{
               
                           },
                           {
-                            "id":14,
+                            "id":13,
                             "category":"all",
                             "group":"getting_started",
                             "ques":"Will other people be in the room with us?",
@@ -185,7 +186,7 @@ export const getAllFaq=()=>{
               
                           },
                           {
-                            "id":15,
+                            "id":14,
                             "category":"all",
                             "group":"getting_started",
                             "ques":"Can you accommodate large groups?",
@@ -319,6 +320,7 @@ export const getAllFaq=()=>{
                                   
               
                           },
+
                           // =======================================escape rooms faqs
                           {
                             "id":25,
@@ -627,9 +629,228 @@ export const getAllFaq=()=>{
                                   
               
                           },
-                          
-                          
+                          // ====================gift cards
+                          {
+                            "id":47,
+                            "category":"event",
+                            "group":"CORPORATE_EVENTS",
+                            "ques":"Can you accommodate large groups?",
+                            "ans":[
+                              "Yes. While we may not be able to accommodate your entire group into one room, we can set your group up into multiple teams to start all at the same time. Full facility capacity varies by Location, but we have successfully hosted groups as large as several hundred people!",
+                            ]
+                                  
+              
+                          },
+                          {
+                            "id":48,
+                            "category":"event",
+                            "group":"CORPORATE_EVENTS",
+                            "ques":"We want to play the game as our team-building activity for a small group. How can we do that?",
+                            "ans":[
+                              "You can book out a whole room online or call us and we can put your team-building package together.",
+    
+                            ]
+                                  
+              
+                          },
+                          {
+                            "id":49,
+                            "category":"event",
+                            "group":"CORPORATE_EVENTS",
+                            "ques":"What types of organizations typically book your venue?",
+                            "ans":[
+                              "Our clients have included companies, schools, universities, churches, charity organizations, retailers, police departments, etc.",
+    
+                            ]
+                                  
+              
+                          },
+                          {
+                            "id":50,
+                            "category":"event",
+                            "group":"CORPORATE_EVENTS",
+                            "ques":"Can we bring our own food? What food options do you offer?",
+                            "ans":[
+                              "In most locations, we offer our standard pizza package option and can also offer a custom sandwich platter package or catering option in our separate party room for your party to enjoy after their escape room experience.",
+    
+                            ]
+                                  
+              
+                          },
+                          {
+                            "id":51,
+                            "category":"event",
+                            "group":"CORPORATE_EVENTS",
+                            "ques":"Can my company book the event/party without purchasing food or the escape room experience?",
+                            "ans":[
+                              "Sure. Simply contact your local store for details and pricing options.",
+                            ]
+                                  
+              
+                          },
+                          {
+                            "id":52,
+                            "category":"event",
+                            "group":"CORPORATE_EVENTS",
+                            "ques":"How much does it cost?",
+                            "ans":[
+                              "Since each event may require different needs, we are not able to quote a blanket rate for your event, but our corporate sales team will be happy to walk you through everything and provide you with an upfront cost before you book the event with us.",
+                            ]
+                                  
+              
+                          },
+                          {
+                            "id":53,
+                            "category":"event",
+                            "group":"CORPORATE_EVENTS",
+                            "ques":"How much does it cost?",
+                            "ans":[
+                              "Contact the sales office at ",
+                              "<a href=\"mailto:sales@allinadventures.com\" class=\"text-blue-600 hover:text-blue-700 \">sales@allinadventures.com</a> or ",
+                              "call <a href=\"tel:844-502-5546\" class=\"text-blue-600 hover:text-blue-700 \">844-502-5546 ex. 709.</a>",
+                            ]
+                                  
+              
+                          },
+                          // ===========gift cards
+                          {
+                            "id":54,
+                            "category":"gift",
+                            "group":"GIFT_CARDS",
+                            "ques":"How to purchase your gift cards?",
+                            "ans":[
+                              "<p>Choose the Location. Then, select the gift card amount, fill out the requested details and purchase the gift card.</p>",
+                             "<p class=\"mt-2 lg:mt-3\">Once you complete your purchase, you will be sent an email with the gift card number. If you are giving the card as a gift, follow the directions in your confirmation email to send them through email directly to the recipient. If you prefer a physical gift card, please visit your local store.</p>",
+                             "<p class=\"mt-2 lg:mt-3\"><span class=\"font-medium underline underline-offset-4\">Please note: </span>If you have not received your gift card(s), please check your spam folder.</p>",
+                            ]
+                                  
+              
+                          },{
+                            "id":55,
+                            "category":"gift",
+                            "group":"GIFT_CARDS",
+                            "ques":"How do I redeem the gift cards?",
+                            "ans":[
+                              "Gift card holders can redeem the card online at www.allinadventures.com or directly in-store where the gift card was purchased. Contact us directly at your local store or call our customer service team at ",
+                            "<a href=\"tel:844-502-5546\" class=\"text-blue-600 hover:text-blue-700 \">844-502-5546.</a> to redeem it over the phone.",
+                            ]
+                                  
+              
+                          },
+                          {
+                            "id":56,
+                            "category":"gift",
+                            "group":"GIFT_CARDS",
+                            "ques":"Do gift cards expire?",
+                            "ans":[
+                              "Our gift cards never expire from the day of issue.",
+                            ]
+                                  
+              
+                          },
+                          {
+                            "id":57,
+                            "category":"gift",
+                            "group":"GIFT_CARDS",
+                            "ques":"Do we need to make a reservation to use a gift card?",
+                            "ans":[
+                              "No reservation is needed but we always suggest making a reservation beforehand to ensure you get the experience and time slot that you prefer. Walk-ins are available but availability is not guaranteed.",
+                            ]
+                                  
+              
+                          },
+                          {
+                            "id":58,
+                            "category":"gift",
+                            "group":"GIFT_CARDS",
+                            "ques":"What happens if I prepay for my reservation in advance?",
+                            "ans":[
+                              "If you prepaid for your reservation, your payment will be refunded when you present your gift card on Location.",
+                            ]
+                                  
+              
+                          },
+                          {
+                            "id":59,
+                            "category":"gift",
+                            "group":"GIFT_CARDS",
+                            "ques":"Can I get a physical gift card instead of an electronic one?",
+                            "ans":[
+                              "Physical gift cards can be provided at our Location.",
+                            ]
+                          },  
+                          // =========== reward programm
+                          {
+                            "id":60,
+                            "category":"rewards",
+                            "group":"REWARDS_PROGRAM",
+                            "ques":"Can I get a physical gift card instead of an electronic one?",
+                            "ans":[
+                              "Physical gift cards can be provided at our Location.",
+                            ]
+                          },
                          
+                          {
+                            "id":61,
+                            "category":"rewards",
+                            "group":"REWARDS_PROGRAM",
+                            "ques":"Can I join online?",
+                            "ans":[
+                              "Yes, you can! Just visit the Rewards Program page and go to <a href=\"/rewards-program#ready-to-signup\" class=\"text-blue-600 hover:text-blue-700\">READY TO SIGN UP</a> section",
+                               "then click on CHOOSE YOUR LOCATION, and you'll be redirected to fivestars.com site for your selected All In Adventures location."
+                              
+                            ]
+                          },   
+                          {
+                            "id":62,
+                            "category":"rewards",
+                            "group":"REWARDS_PROGRAM",
+                            "ques":"How old do you have to be to join?",
+                            "ans":[
+                              "There is no age limit to join."
+                              
+                            ]
+                          },
+                          {
+                            "id":63,
+                            "category":"rewards",
+                            "group":"REWARDS_PROGRAM",
+                            "ques":"What if I already purchased an Adventure Club Passport?",
+                            "ans":[
+                              "You can bring your physical passport into the store and exchange it to be added into the new program as a VIP member for NO additional cost."
+                              
+                            ]
+                          },  
+                          {
+                            "id":64,
+                            "category":"rewards",
+                            "group":"REWARDS_PROGRAM",
+                            "ques":"What happens to the stamps I have already collected?",
+                            "ans":[
+                              "All unused stamps will be converted at a rate of 50 points per stamp."
+                              
+                            ]
+                          },
+                          {
+                            "id":65,
+                            "category":"rewards",
+                            "group":"REWARDS_PROGRAM",
+                            "ques":"Will I continue to receive $5 off every visit?",
+                            "ans":[
+                              "The new program does not include this benefit going forward. However, the new program allows you to accumulate points at a much faster rate which you can use to redeem free admissions much quicker."
+                              
+                            ]
+                          },
+                          {
+                            "id":65,
+                            "category":"rewards",
+                            "group":"REWARDS_PROGRAM",
+                            "ques":"Can I redeem points online?",
+                            "ans":[
+                              "You will have to redeem all points physically in the store."
+                              
+                            ]
+                          },
                  ]
 
         

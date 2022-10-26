@@ -32,7 +32,9 @@ const giftCard=(props)=>{
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
-           <Homenav/>
+           <Homenav locationlist={props.locationlist}
+           activitylist={props.activitylist}
+           eventlist={props.eventlist}/>
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}
@@ -58,7 +60,7 @@ const giftCard=(props)=>{
   {/* =========================================================================================main content ======== end */}
         </div>
   
-          <Footer/>
+          <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
           </>
     )
 
@@ -74,6 +76,9 @@ export const getStaticProps=async()=>{
       props:{
         pagemeta:giftpagedataData.pagemeta,
         pagedata:giftpagedataData.pagedata,
+        locationlist:giftpagedataData.locationlist,
+        activitylist:giftpagedataData.activitylistSlug,
+       eventlist:giftpagedataData.eventlistSlug,
         faqlist:giftpagedataData.gift_faq
       }
     }
