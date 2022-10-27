@@ -46,7 +46,6 @@ const eventIndData={
                  "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-birthday-party-hero.jpg",
                  "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-birthday-party-hero.jpg",
                  "coverimageM_alt":"allinadventures-events-birthday-party",
-                 
                   "age":"6+",
                  "max_players":"70",
                  "min_players":"2",
@@ -177,14 +176,13 @@ const eventIndData={
 //********************************************************team-building end */
  //********************************************************corporate-events */
  "corporate-events":{
-
+  "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
                     "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-corporate-events-hero.jpg",
                     "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-corporate-events-hero.jpg",
                     "coverimageM_alt":"allinadventures-events-corporate-events",
-                    "price":"40",
-                     "duration":"40",
-                    "max_players":"16",
-                    "min_players":"4",
+                    "age":"6+",
+                 "max_players":"70",
+                 "min_players":"2",
 
                    "pagemeta":{
                   
@@ -207,14 +205,13 @@ const eventIndData={
 //********************************************************corporate-events end */
 //********************************************************family-fun-activity */
 "family-fun-activity":{
-
+                    "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
                       "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-family-fun-activities-hero.jpg",
                       "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-family-fun-activities-hero.jpg",
                       "coverimageM_alt":"allinadventures-events-family-fun-activitie",
-                      "price":"40",
-                       "duration":"40",
-                      "max_players":"16",
-                      "min_players":"4",
+                      "age":"6+",
+                 "max_players":"70",
+                 "min_players":"2",
 
                      "pagemeta":{
                     
@@ -237,14 +234,13 @@ const eventIndData={
 //********************************************************family-fun-activity end */
 //********************************************************bachelor-party  */
 "bachelor-party":{
-
+                 "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
                   "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-bachelor-party-hero.jpg",
                   "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-bachelor-party-hero.jpg",
                   "coverimageM_alt":"allinadventures-events-bachelor-party",
-                  "price":"40",
-                   "duration":"40",
-                  "max_players":"16",
-                  "min_players":"4",
+                  "age":"6+",
+                 "max_players":"70",
+                 "min_players":"2",
 
                  "pagemeta":{
                 
@@ -267,14 +263,13 @@ const eventIndData={
 //********************************************************bachelor-party end */
 //********************************************************bachelorette-party  */
 "bachelorette-party":{
-
+                    "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
                     "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-bachelorette-party-hero.jpg",
                     "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-bachelorette-party-hero.jpg",
                     "coverimageM_alt":"allinadventures-events-bachelorette-party",
-                    "price":"40",
-                     "duration":"40",
-                    "max_players":"16",
-                    "min_players":"4",
+                    "age":"6+",
+                 "max_players":"70",
+                 "min_players":"2",
 
                    "pagemeta":{
                   
@@ -297,14 +292,13 @@ const eventIndData={
 //********************************************************bachelorette-party end */
 //********************************************************proposal-party */
 "proposal-party":{
-
+                    "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
                       "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-proposal-party-hero.jpg",
                       "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-proposal-party-hero.jpg",
                       "coverimageM_alt":"allinadventures-events-proposal-party",
-                      "price":"40",
-                       "duration":"40",
-                      "max_players":"16",
-                      "min_players":"4",
+                      "age":"6+",
+                 "max_players":"70",
+                 "min_players":"2",
 
                      "pagemeta":{
                     
@@ -327,14 +321,13 @@ const eventIndData={
 //********************************************************proposal-party end */
 //********************************************************date-night*/
 "date-night":{
-
+             "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
               "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-date-night-hero.jpg",
               "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-date-night-hero.jpg",
               "coverimageM_alt":"allinadventures-events-date-night",
-              "price":"40",
-               "duration":"40",
-              "max_players":"16",
-              "min_players":"4",
+              "age":"6+",
+                 "max_players":"70",
+                 "min_players":"2",
 
              "pagemeta":{
             
@@ -357,14 +350,13 @@ const eventIndData={
 //********************************************************date-night end */
 //*******************************************************private-party*/
 "private-party":{
-
+  "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
   "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-private-party-hero.jpg",
   "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-private-party-hero.jpg",
   "coverimageM_alt":"allinadventures-events-private-party",
-  "price":"40",
-   "duration":"40",
-  "max_players":"16",
-  "min_players":"4",
+  "age":"6+",
+    "max_players":"70",
+    "min_players":"2",
 
  "pagemeta":{
 
@@ -387,14 +379,13 @@ const eventIndData={
 //********************************************************date-night end */
 //********************************************************reunion-party*/
 "reunion-party":{
-
+                "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
                 "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-reunion-party-hero.jpg",
                 "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-reunion-party-hero.jpg",
                 "coverimageM_alt":"allinadventures-events-reunion-party",
-                "price":"40",
-                 "duration":"40",
-                "max_players":"16",
-                "min_players":"4",
+                "age":"6+",
+                 "max_players":"70",
+                 "min_players":"2",
 
                "pagemeta":{
               
@@ -417,14 +408,13 @@ const eventIndData={
 //********************************************************reunion-party end */
 //********************************************************graduation-party*/
 "graduation-party":{
-
+                "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
                   "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-graduation-party-hero.jpg",
                   "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-graduation-party-hero.jpg",
                   "coverimageM_alt":"allinadventures-events-graduation-party",
-                  "price":"40",
-                   "duration":"40",
-                  "max_players":"16",
-                  "min_players":"4",
+                  "age":"6+",
+                 "max_players":"70",
+                 "min_players":"2",
 
                  "pagemeta":{
                 
@@ -447,14 +437,13 @@ const eventIndData={
 //********************************************************graduation-party end */
 //********************************************************school-events*/
 "school-events":{
-
+  "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
                     "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-school-events-hero.jpg",
                     "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-school-events-hero.jpg",
                     "coverimageM_alt":"allinadventures-events-school-events",
-                    "price":"40",
-                     "duration":"40",
-                    "max_players":"16",
-                    "min_players":"4",
+                    "age":"6+",
+                 "max_players":"70",
+                 "min_players":"2",
 
                    "pagemeta":{
                   
@@ -477,14 +466,13 @@ const eventIndData={
 //********************************************************school-events end */
 //********************************************************school-events*/
 "gender-reveal-party":{
-
+                  "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
                    "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-gender-reveal-party-hero.jpg",
                    "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-gender-reveal-party-hero.jpg",
                    "coverimageM_alt":"allinadventures-events-gender-reveal-party",
-                   "price":"40",
-                    "duration":"40",
-                   "max_players":"16",
-                   "min_players":"4",
+                   "age":"6+",
+                 "max_players":"70",
+                 "min_players":"2",
 
                   "pagemeta":{
                   
