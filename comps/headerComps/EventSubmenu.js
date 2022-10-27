@@ -40,7 +40,7 @@ const EventSubmenu=(props)=>{
                         return(
                            
                                     <div key={event.id}>
-                                        <a href={"/"+props.locationslug+"/events/"+event.event_slug} className="flex items-center space-x-1 my-1">
+                                        <a href={"/events/"+event.event_slug} className="flex items-center space-x-1 my-1">
                                         <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">{event.event_name}</span>
                                      </a>
                                     </div>

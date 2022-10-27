@@ -31,7 +31,9 @@ const Careers=(props)=>{
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
-           <Homenav/>
+           <Homenav locationlist={props.locationlist}
+           activitylist={props.activitylist}
+           eventlist={props.eventlist}/>
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}
@@ -58,7 +60,7 @@ const Careers=(props)=>{
 {/* =========================================================================================main content ======== end */}
 </div>
   
-  <Footer/>
+  <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
   </>
       )
 }
@@ -73,6 +75,9 @@ export const getStaticProps=async()=>{
         props:{
             pagedata:cPageData.pagedata,
             pagemeta:cPageData.pagemeta,
+            locationlist:cPageData.locationlist,
+            activitylist:cPageData.activitylistSlug,
+            eventlist:cPageData.eventlistSlug,
             jobs:cPageData.jobs
         }
     }

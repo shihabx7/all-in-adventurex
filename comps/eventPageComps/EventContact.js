@@ -1,7 +1,59 @@
-
+import { useState,useEffect,useRef } from "react"
+import {FiMapPin,FiChevronDown,FiClock,FiX } from "react-icons/fi"
 import TitleSeparator from "../util/TitleSeparator"
 const EventContact=(props)=>{
-        const locEmail=props.location
+        const[showHour,setShwoHour]=useState(false)
+        const ref=useRef()
+            useEffect(() => {
+                  const checkIfClickedOutside = e => {
+         
+                   if (showHour && ref.current && !ref.current.contains(e.target)) {
+                    setShwoHour(false)
+                 }
+            }
+        
+    
+        document.addEventListener("mouseup", checkIfClickedOutside)
+    
+        return () => {
+          
+          document.removeEventListener("mouseup", checkIfClickedOutside)
+        }
+      }, [showHour]);
+        const getStAddress=(slug)=>{
+                var ctArr=slug.split("-")
+                var st=ctArr[ctArr.length-1].toUpperCase()
+
+                return st
+        }
+        const getDirection=(address,slug,zip,city)=>{
+
+            var addr=address.toString().split(' ').join('+')+','
+            var st=slug.toString().split('-')
+            var ct=city+','
+            st=[st.length-1].toString().toUpperCase()
+            var zp=zip+','
+
+            var gslug=addr+'+'+ct+'+'+st+'+'+zp+'+'+'USA'
+            var gUrl="https://www.google.com/maps/dir//"+gslug
+
+            return gUrl
+
+      }
+      const getAddress=(address,slug,zip,city)=>{
+
+   
+        var scity=slug.split('-')
+        var st=scity[scity.length-1].toString().toUpperCase()
+
+        var add=address+', '+city+', '+st+' '+zip
+        return add
+      }
+      const locState=(slug)=>{
+        var scity=slug.split('-')
+        var st=scity[scity.length-1].toString().toUpperCase()
+        return st
+      }
         return (
             <div  id="eventform" className="event-contact py-16 md:py-20 lg:py-28 relative overflow-hidden" style={{
 
@@ -13,9 +65,9 @@ const EventContact=(props)=>{
                 <div className="gift-lt absolute top-0 left-0"><img src="/assets/gift-balon-bg.png"></img></div>
                     <div className="max-w-7xl mx-auto md:px-4"> 
                      
-                        <div className="section-title  text-center max-w-[600px] mx-auto  mb-8 md:mb-12 lg:mb-16">
-                            <TitleSeparator title="BOOK YOUR EVENT" color="golden-text" weight="font-bold"/>
-                             <p className="text-gray-200 md:px-8 md:text-lg">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                        <div className="section-title  text-center max-w-[600px] mx-auto  mb-8 md:mb-12 lg:mb-16 px-4">
+                            <TitleSeparator title="SUBMIT YOUR INQUIRY NOW" color="golden-text" weight="font-bold"/>
+                             <p className="text-gray-200 md:px-8 md:text-lg">We want you to host your next birthday party at All In Adventures{props.contactdata && <span> in {props.contactdata.city+" "+getStAddress(props.contactdata.slug)}</span>}. Please fill out the inquiry form below to reach your dedicated guest experience team. We'll be in contact within 24 hours. </p>
                          </div>
 
                      
@@ -33,12 +85,12 @@ const EventContact=(props)=>{
                                                     <span>
                                                         {
                                                             props.contactdata &&
-                                                            <a className="text-[#F4E6C3]" href={"tel:+1 "+props.contactdata.phone}>+1 {props.contactdata.phone}</a>
+                                                            <a className="text-[#F4E6C3] hover:text-blue-700" href={"tel:"+props.contactdata.phone}>{props.contactdata.phone}</a>
 
                                                         }
                                                         {
                                                             !props.contactdata &&
-                                                            <a className="text-[#F4E6C3]" href="tel:+1 857 2836789">+1 857 2836789</a>
+                                                            <a className="text-[#F4E6C3] hover:text-blue-700" href="tel:+1 844-502-5546">+1 844-502-5546 ex. 709.</a>
 
                                                         }
                                                        
@@ -50,23 +102,81 @@ const EventContact=(props)=>{
                                                     <span>
                                                     {
                                                             props.contactdata &&
-                                                            <a className="text-[#F4E6C3]" href={"mailto:"+props.contactdata.email.toLowerCase()}>{props.contactdata.email}</a>
+                                                            <a className="text-[#F4E6C3] hover:text-blue-700" href={"mailto:"+props.contactdata.email.toLowerCase()}>{props.contactdata.email}</a>
 
                                                         }
                                                         {
                                                             !props.contactdata &&
-                                                            <a className="text-[#F4E6C3]" href="email:store@allinadventures.com">store@allinadventures.com</a>
+                                                            <a className="text-[#F4E6C3] hover:text-blue-700" href="email:sales@allinadventures.com">sales@allinadventures.com</a>
 
                                                         }
                                                         
                                                     </span>
                                                 </div>
-                                                <div className="event-info-list flex  items-center space-x-4 py-3 px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
-                                                    <span><img src="/assets/svg/event-icon-parking.svg"></img></span>
-                                                    <span>
-                                                        <p className="text-[#F4E6C3]">Car Parking Available</p>
-                                                    </span>
-                                                </div>
+                                                {
+                                                    props.contactdata &&
+                                                    <div className="event-info-list flex text-[#F4E6C3]  items-center space-x-4 py-3 px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
+                                                           <span className="text-[#A78849] text-[24px]"><FiMapPin/></span> <a target="_blank" href={getDirection(props.contactdata.address,props.contactdata.slug,props.contactdata.zip,props.contactdata.city)} className="text-[#F4E6C3] hover:text-blue-700">{getAddress(props.contactdata.address,props.contactdata.slug,props.contactdata.zip,props.contactdata.city)}</a>
+                                                    </div>
+                                                }
+                                                {
+                                                    props.contactdata &&
+                                                    <div ref={ref} className="relative event-info-list flex text-[#F4E6C3]  items-center space-x-4 py-3 px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
+                                                           <span className="text-[#A78849] text-[24px]"><FiClock/></span> 
+                                                           <div className="flex justify-between item-center space-x-3 md:space-x-4 hover:cursor-pointer group" onClick={()=>setShwoHour(true)}>
+                                                             <p className="text-[#1B823A]">Open Hours</p> <p className="flex items-center space-x-2 group-hover:text-blue-700">View Local Time <span className="text-xl"><FiChevronDown/></span></p>
+                                                            </div>
+
+                                                            {
+                                                                showHour && 
+                                                                        <div className="bhour-list absolute bottom-0 right-0 shadow-md bg-[#FFF9EB] drop-shadow">
+                                                                             <div className="relative p-3">  
+                                                                               <div className="map-h-notice mb-2">
+                                                                                   <p className="font-medium text-sm md:text-base text-[#222222]">Typical Business Hours</p>
+                                                                                   <p className="text-sm text-[#464646]">Actual hours may vary occasionally</p>
+                                                                                 </div>
+                                                                                 <button onClick={() => setShwoHour(false)} className="closeHour p-1 bg-gold text-[#424242] absolute -top-3 -right-3"><FiX/></button>
+                                                                         <table className="bhour-row table-auto border-collapse border border-[#CB9443] text-[#464646]">
+                                                                         <tbody>
+                                                                         <tr>  
+                                                                                 <td className=" border-b border-[#CB9443] capitalize px-2 py-1 font-medium">
+                                                                                              Day
+                                                                                              </td>
+                                                                                              <td className=" border-b border-[#CB9443] px-2 py-1 font-medium" >
+                                                                                              Open
+                                                                                              </td>
+                                                                                              <td className=" border-b border-[#CB9443] px-2 py-1 font-medium">
+                                                                                              Close
+                                                                                              </td>
+                                                                                             </tr>
+                                                                     {
+                                                                                 props.contactdata.hours.map((hours,index)=>{
+
+                                                                                     return(
+
+                                                                                        <tr key={index}>  
+                                                                                            <td  className=" border-b border-[#CB9443] capitalize px-2 py-1">
+                                                                                              {hours.day}
+                                                                                              </td>
+                                                                                              <td className="px-2 py-1 border-b border-[#CB9443]" >
+                                                                                              {hours.open}
+                                                                                              </td>
+                                                                                              <td className="px-2 py-1 border-b border-[#CB9443]">
+                                                                                              {hours.close}
+                                                                                              </td>
+                                                                                             </tr>
+
+                                                                                        )
+                                                                                 })
+                                                                             }
+                                                                              </tbody>
+                                                                             </table>
+
+                                                                             </div>
+                                                                     </div>
+                                                            }
+                                                    </div>
+                                                }
                                                 <div className="event-info-list flex  items-center space-x-4 py-3 px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
                                                     <span><img src="/assets/svg/event-icon-chair.svg"></img></span>
                                                     <span>
@@ -81,14 +191,7 @@ const EventContact=(props)=>{
                                                 <div className="mt-[6px] -[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
                                                  <div className="w-[92%] font-thin">We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.</div>
                                              </div>
-                                             <div className="flex  lg:text-lg text-[#eeeeee] mt-3  justify-between">
-                                                <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
-                                                 <div className="w-[92%] font-thin">Car parking facility available in our location at the mall.</div>
-                                             </div>
-                                             <div className="flex  lg:text-lg text-[#eeeeee] mt-3  justify-between">
-                                                <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
-                                                 <div className="w-[92%] font-thin">Kids and children age 7+ can play when they're accompanied by a guardian age 18+</div>
-                                             </div>
+                                             
 
                                              
                                         </div>
@@ -176,7 +279,7 @@ const EventContact=(props)=>{
                                                     <div className="form-col w-full">
                                                         <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your message? </p>
                                                       
-                                                        <textarea className="w-full h-[110px] md:h-[140px] event-input text-gray-500  border-0 md:py-3 px-4 bg-white" placeholder="Write your message here"> 
+                                                        <textarea className="w-full h-[80px] md:h-[100px] event-input text-gray-500  border-0 md:py-3 px-4 bg-white" placeholder="Write your message here"> 
 
                                                         </textarea>
                                                     </div>

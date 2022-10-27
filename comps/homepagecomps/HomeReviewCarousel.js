@@ -10,7 +10,7 @@ const HomeReviewCarousel=({reviews})=>{
   const showDescription=(description)=>{
     
     var cutDescription=description
-    if(description.length>150){
+    if(description.length>110){
        cutDescription=description.slice(0, 160)+" ...";
     }
 
@@ -19,7 +19,7 @@ const HomeReviewCarousel=({reviews})=>{
     return cutDescription
 } 
 const shortrev=(txt)=>{
-      return txt.split(" ").splice(0,30).join(" ");
+      return txt.split(" ").splice(0,24).join(" ");
 }
   
     const responsive = {
@@ -91,9 +91,9 @@ const shortrev=(txt)=>{
                          </div>
                      </div>
 
-                     <div className="card-rev-bottom bg-black pt-4 px-4">
+                     <div className="card-rev-bottom bg-black pt-4 px-4 ">
              
-                         <div className="card-rev-desc text-center">
+                         <div className="card-rev-desc text-center min-h-[220px]">
                               <img className="inline" src="/assets/reviews/rev-5star.svg"></img>
                               {
                                 review.revlink &&
@@ -107,7 +107,7 @@ const shortrev=(txt)=>{
                              {
                               review.revlink &&
                               <> 
-                              <p><span className="golden-text font-light lg:text-lg">&quot;{shortrev(review.review_text)} </span>
+                              <p className=" vx"><span className="golden-text font-light lg:text-lg">&quot;{shortrev(review.review_text)} </span>
                                   <span className="text-[#FFEFCD]">
                                       <a target="_blank" href={review.revlink} className="text-[#FFEFCD]"> ... READ MORE</a>
                                  </span>

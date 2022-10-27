@@ -397,7 +397,7 @@
                                   "fivestar":"3027",
                                   "phone":"+1 (845) 208-2919",
                                   "coverimg":'/assets/mapcard/Poughkeepsie-ny-poughkeepsie-galleria.jpg',
-                                  "mall":"Poughkeepsie Galleria",
+                                  "mall":"Poughkeepsie Galleria Mall",
                                   "alt":'allinadventures-escape-room-west-nyack-ny-palisades-mall',
                                   "email":"store149@allinadventures.com",
                                   "position": { lat: 41.626240482899284, lng: -73.92067928923845}, 

@@ -1,7 +1,12 @@
+import { getTotal } from "./AllDataList/getTotal"
 export const getCareerHomePageData=()=>{
 
 
     const careerPageData={
+        "locationlist":getTotal().locationlist,
+        "activitylistSlug":getTotal().activitylistSlug,
+         "eventlistSlug":getTotal().eventlistSlug,
+         "virtualgameListSlug":getTotal().virtualgameSlug,
         "pagemeta":{
 
             "matatilte":"title",
@@ -11,9 +16,10 @@ export const getCareerHomePageData=()=>{
            
         "pagedata":{
             "pagetitle":"CAREERS AT ALL IN ADVENTURES",
-            "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
+            "pagesubtitle":"Passion led us here",
             "coverimageL":"/assets/gn-desktop-hero/allinadventures-career-hero.jpg",
             "coverimageM":"/assets/gn-mobile-hero/allinadventures-career-hero.jpg",
+            "totalLocations":getTotal().totalLocations,
           
             
         },

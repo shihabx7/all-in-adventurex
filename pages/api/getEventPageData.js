@@ -14,17 +14,17 @@ export const geEventPagetData=(slug)=>{
           },
            
         "pagedata":{
-            "pagetitle":"Adventure "+eventName,
-            "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
+            "pagetitle":"ESCAPE ROOM "+eventName,
+            "pagesubtitle":eventIndData[slug].pagesubtitle,
             "coverimageL":eventIndData[slug].coverimageL,
             "coverimageM":eventIndData[slug].coverimageM,
             "coverimageM_alt":eventIndData[slug].coverimageM_alt,
             "totalLocations":getTotal().totalLocations,
-            "price":eventIndData[slug].price,
-            "duration":eventIndData[slug].duration,
+            "age":eventIndData[slug].age,
             "max_players":eventIndData[slug].max_players,
             "min_players":eventIndData[slug].min_players,
             "eventname":eventName,
+            "totalUniqueGames":getTotal().uniqueGames
         },
         "eventdata":eventIndData[slug].eventdata,
 
@@ -42,13 +42,14 @@ const eventIndData={
 //********************************************************birth day parties */
   "birthday-party":{
 
+                "pagesubtitle":"All In Adventures is famous for hosting the most memorable birthday party in the town. We offer fun-filled escape room experiences and a birthday party venue for all ages and skill levels. Both kids and adults love it!",
                  "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-birthday-party-hero.jpg",
                  "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-birthday-party-hero.jpg",
                  "coverimageM_alt":"allinadventures-events-birthday-party",
-                 "price":"40",
-                  "duration":"40",
-                 "max_players":"16",
-                 "min_players":"4",
+                 
+                  "age":"6+",
+                 "max_players":"70",
+                 "min_players":"2",
 
                 "pagemeta":{
 
@@ -58,12 +59,12 @@ const eventIndData={
                 },
 
                  "eventdata":{
-                  "why_book":"Welcome to the world of adventure. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
-                  "why_book_img":"/assets/event-dt-img1.jpg",
-                  "offer":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-                  "offer_img":"/assets/event-dt-img2.jpg",
-                  "what_expect":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
-                  "what_expect_img":"/assets/event-dt-img3.jpg",
+                  "why_book":"Your birthday is coming up and you're googling birthday party venues near me, wondering what to do for one of the most important occasions of the year. Well, celebrate it in style with our escape room birthday party, where every one of your guests, including yourself, is guaranteed to have fun. You can tailor and personalize your experience from many different escape room themes. There are no logistical nightmares, no stress of arrangements. If you wanted memorable, you've got it!",
+                  "why_book_img":"/assets/all-event-details/allinadventures-events-birthday-party-sec1.jpg",
+                  "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
+                  "offer_img":"/assets/all-event-details/allinadventures-events-birthday-party-sec2.jpg",
+                  "what_expect":"Our kids and family friendly escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any birthday party event at All In Adventures, your team will have a set time of 50-60 minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
+                  "what_expect_img":"/assets/all-event-details/allinadventures-events-birthday-party-sec3.jpg",
                   "videoid":"pfdyF_d4Z40"
                   
                   },
@@ -146,14 +147,14 @@ const eventIndData={
   //********************************************************birth day parties end*/
   //********************************************************team-building */
   "team-building":{
+                      "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
 
                       "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-team-building-hero.jpg",
                       "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-team-building-hero.jpg",
                       "coverimageM_alt":"allinadventures-events-team-building",
-                      "price":"44",
-                       "duration":"60",
-                      "max_players":"16",
-                      "min_players":"4",
+                      "age":"6+",
+                       "max_players":"70",
+                       "min_players":"2",
                     
                      "pagemeta":{
                     
@@ -163,12 +164,12 @@ const eventIndData={
                      },
                     
                       "eventdata":{
-                       "why_book":"Welcome to the world of adventure. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
-                       "why_book_img":"/assets/event-dt-img1.jpg",
-                       "offer":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-                       "offer_img":"/assets/event-dt-img2.jpg",
-                       "what_expect":"You and yer mateys need to solve the mystery and escape the island before they return. Or it’s off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
-                       "what_expect_img":"/assets/event-dt-img3.jpg",
+                       "why_book":"We provide the ideal atmosphere for working together as a team and solving even what may seem like the most unsolvable escape room puzzles you've ever experienced. Our escape rooms are perfect for unique and fun team building activities, and they bring everyone on the team working towards a common goal. Instead of a dreary meeting on how to work effectively as a team, why not take a crack at any of our escape room puzzles?",
+                       "why_book_img":"/assets/all-event-details/allinadventures-events-team-building-sec1.jpg",
+                       "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
+                       "offer_img":"/assets/all-event-details/allinadventures-events-team-building-sec2.jpg",
+                       "what_expect":"We supply many uniquely themed real life escape rooms for group size small to large. Your team will have a set time of 50-60 minutes to solve the puzzle located within the game room. There will be mysterious objects, riddles, locks, keys, maps, clues and more, all inside the escape room, ready for your team to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out. Finally, when the game is over, your team will have plenty of time to chat and reflect on their experiences.",
+                       "what_expect_img":"/assets/all-event-details/allinadventures-events-team-building-sec3.jpg",
                        "videoid":"pfdyF_d4Z40"
                       
                        },
