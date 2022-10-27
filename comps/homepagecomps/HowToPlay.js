@@ -40,7 +40,7 @@ const HowToPlay=(props)=>{
                             <img src="/assets/svg/assemble-team.svg"></img>
                         </div>
                         <h3 className="golden-text text-3xl font-bold mt-2">1</h3>
-                        <div className='htb-text text-gray-700 mt-2 mb-12 font-medium'>ASSEMBLE YOUR GAME </div>
+                        <div className='htb-text text-gray-700 mt-2 mb-12 font-medium'>ASSEMBLE YOUR TEAM </div>
                     </div>
 
                     <div className="htb-step-line"> 
