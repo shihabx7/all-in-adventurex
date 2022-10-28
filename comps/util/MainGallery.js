@@ -42,7 +42,7 @@ const MainGallery=(props)=>{
                                 
                                 return(
                                     item.category==props.category &&
-                                    <div key={item.id} className="game-gl-item cursor-pointer shadow-lg borderr-2 border-transparent hover:border-2 hover:border-[#D3A54F]"> 
+                                    <div key={item.id} className="game-gl-item cursor-pointer shadow-lg border-2 border-transparent hover:border-2 hover:border-[#D3A54F]"> 
                                     <img src={
                                         item.gallery_img
                                     }></img>
