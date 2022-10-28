@@ -35,6 +35,10 @@ const EventDetails=(props)=>{
         <div className="event-detail relative"
         style={{background:"url('/assets/game-dt-bg.jpg')"}}
         >
+            <div className="pl-or pl-or-1 absolute top-0 left-0 z-10"><img src="/assets/pl-bgi-1.png"></img></div>
+            <div className="pl-or pl-or-3 absolute top-0 right-0 z-10"><img src="/assets/pl-bgi-3.png"></img></div>
+            <div className="pl-or pl-or-2 absolute bottom-0 left-0 z-10"><img src="/assets/pl-bgi-2.png"></img></div>
+            <div className="pl-or pl-or-4 absolute bottom-0 right-0 z-10"><img src="/assets/pl-bgi-4.png"></img></div>
             <div className="absolute top-0 left-0 w-full"><img className="w-full" src="/assets/game-home-or1.jpg"></img></div>
 
                  <div className="content-container max-w-7xl mx-auto py-16 md:py-24 lg:py-36 relative z-30 px-4">
