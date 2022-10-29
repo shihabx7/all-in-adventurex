@@ -31,7 +31,9 @@ const showSingleEvent=(props)=>{
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
-           <Homenav locationlist={props.locationlist}/>
+           <Homenav locationlist={props.locationlist}
+           activitylist={props.activitylist}
+           eventlist={props.eventlist}/>
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}
@@ -92,7 +94,9 @@ export const getStaticProps=async (context)=>{
               pagedata:eventPageData.pagedata,
               eventdata:eventPageData.eventdata,
               reviews:eventPageData.reviews,
-              locationlist:eventPageData.locationlist
+              locationlist:eventPageData.locationlist,
+               activitylist:eventPageData.activitylistSlug,
+              eventlist:eventPageData.eventlistSlug,
       
       
             },

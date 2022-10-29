@@ -76,7 +76,7 @@ const EventContact=(props)=>{
                                       
                                          <div className="in-sec-title mb-4 md:mb-6 lg:mb-8">
                                                 <h2 className="golden-text font-bold text-4xl mb-4">OUR FACILITIES</h2>
-                                                <p className="text-gray-200 lg:text-lg">Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.</p>
+                                                <p className="text-gray-200 lg:text-lg">All escape rooms are completely private - for your players only! We provide an entire party with the opportunity to celebrate in a fun and unique way. Come join us to create exciting memories with your group.</p>
                                         </div>
                                         <div className="event-info-list-box">
 

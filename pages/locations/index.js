@@ -64,9 +64,6 @@ return (
   
             <div id="mainContent" className='main-content nobtn-main-content'>
 
-      {
-        console.log(states)
-      }
   {/* =======header content and breadcum======== */}
     <Head>
         <title>All in adventure Locations</title>

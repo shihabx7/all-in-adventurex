@@ -54,7 +54,7 @@ const covid19=(props)=>{
                 
                 <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-gray-800 text-center'>CHOOSE FROM {props.pagedata.totalLocations} U.S LOCATIONS</p> 
                 <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os uppercase'>COVID-19 Update</h1>
-                <p className='text-gray-700 max-w-2xl mx-auto text-center lg:text-lg'>#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend &amp; family today. </p>
+                <p className='text-gray-700 max-w-2xl mx-auto text-center lg:text-lg'> </p>
                 </div>
                 
             </div>
@@ -69,7 +69,7 @@ const covid19=(props)=>{
         <div className='section-head relative z-20'>  
               <TitleSeparator title='All In Adventures COVID-19 Update' color='golden-text' weight='font-bold'/>
               <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16">
-                    <p className="text-gray-300 md:px-8">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                    <p className="text-gray-300 md:px-8"></p>
                 </div>
         </div>
         <div className='cov-content max-w-[990px] text-[#dddddd] bg-[#111111] mx-auto py-6 px-4 md:py-8 md:px-8'>

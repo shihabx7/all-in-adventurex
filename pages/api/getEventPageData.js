@@ -6,12 +6,16 @@ export const geEventPagetData=(slug)=>{
 
     const eventData={
       "locationlist":getTotal().locationlist,
+      "activitylistSlug":getTotal().activitylistSlug,
+       "eventlistSlug":getTotal().eventlistSlug,
+       "virtualgameListSlug":getTotal().virtualgameSlug,
         "pagemeta":{
 
             "matatilte":"title",
             "metakeyword":"keywords",
             "metadescription":"metadescription"
           },
+
            
         "pagedata":{
             "pagetitle":"ESCAPE ROOM "+eventName,
@@ -176,13 +180,13 @@ const eventIndData={
 //********************************************************team-building end */
  //********************************************************corporate-events */
  "corporate-events":{
-  "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
+  "pagesubtitle":"Since 2014, thousands of companies have been using our escape rooms and 5-star guest services to foster employee engagement, run meaningful team building events and celebrate company milestones. Instead of a dreary meeting on how to work effectively, why not take a crack at our escape room puzzles?",
                     "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-corporate-events-hero.jpg",
                     "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-corporate-events-hero.jpg",
                     "coverimageM_alt":"allinadventures-events-corporate-events",
                     "age":"6+",
-                 "max_players":"70",
-                 "min_players":"2",
+                     "max_players":"70",
+                     "min_players":"2",
 
                    "pagemeta":{
                   
@@ -192,12 +196,12 @@ const eventIndData={
                    },
                  
                     "eventdata":{
-                     "why_book":"Welcome to the world of adventure. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
-                     "why_book_img":"/assets/event-dt-img1.jpg",
-                     "offer":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-                     "offer_img":"/assets/event-dt-img2.jpg",
-                     "what_expect":"You and yer mateys need to solve the mystery and escape the island before they return. Or it’s off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
-                     "what_expect_img":"/assets/event-dt-img3.jpg",
+                     "why_book":"Corporate events are frequently held at All In Adventures, and it's no surprise why! We provide a unique atmosphere where communication, leadership, and problem solving skills will all be put to the test. Our escape rooms are perfect for creative and fun team building activities, and they bring everyone on the team working towards a common goal. You can tailor and personalize your experience from many different escape room themes. There are no logistical nightmares, no stress of arrangements. If you wanted memorable, you've got it!",
+                     "why_book_img":"/assets/all-event-details/allinadventures-events-corporate-events-sec1.jpg",
+                     "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
+                     "offer_img":"/assets/all-event-details/allinadventures-events-corporate-events-sec2.jpg",
+                     "what_expect":"Our corporate escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any event at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
+                     "what_expect_img":"/assets/all-event-details/allinadventures-events-corporate-events-sec3.jpg",
                      "videoid":"pfdyF_d4Z40"
                     
                      },
@@ -205,7 +209,7 @@ const eventIndData={
 //********************************************************corporate-events end */
 //********************************************************family-fun-activity */
 "family-fun-activity":{
-                    "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
+                    "pagesubtitle":"Our family-friendly escape rooms provide a way to experience a story where you become part of the story rather than just observing. It's a safe and fun way to have a real adventure, where you and your team (your family in this case) enter into a puzzle room and solve different puzzles to ESCAPE!",
                       "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-family-fun-activities-hero.jpg",
                       "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-family-fun-activities-hero.jpg",
                       "coverimageM_alt":"allinadventures-events-family-fun-activitie",
@@ -221,12 +225,12 @@ const eventIndData={
                      },
                    
                       "eventdata":{
-                       "why_book":"Welcome to the world of adventure. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
-                       "why_book_img":"/assets/event-dt-img1.jpg",
-                       "offer":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-                       "offer_img":"/assets/event-dt-img2.jpg",
-                       "what_expect":"You and yer mateys need to solve the mystery and escape the island before they return. Or it’s off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
-                       "what_expect_img":"/assets/event-dt-img3.jpg",
+                       "why_book":"Family activities are frequently held at All In Adventures, and it's easy to see why. We provide a unique atmosphere where you can spend time with family members doing something completely different from normal life. Our escape games engage kids and adults of all ages. Kids from 10 years old will actively participate in puzzle solving and have a wonderful time. Kids 6-9 years old will need a little support from the adults but will definitely enjoy the fun experience. Kids under 6 years old can play for FREE with two or more adults paying full price.",
+                       "why_book_img":"/assets/all-event-details/allinadventures-events-family-fun-activities-sec1.jpg",
+                       "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
+                       "offer_img":"/assets/all-event-details/allinadventures-events-family-fun-activities-sec2.jpg",
+                       "what_expect":"Our family-friendly escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any family activity at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
+                       "what_expect_img":"/assets/all-event-details/allinadventures-events-family-fun-activities-sec3.jpg",
                        "videoid":"pfdyF_d4Z40"
                       
                        },

@@ -140,6 +140,11 @@ const UseFullLinks=(props)=>{
                 <a className='text-gray-400 text-sm  lg:text-base'>FAQs</a>
             </Link>
         </div>
+        <div className='usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2'> 
+            <Link href="/covid-19"> 
+                <a className='text-gray-400 text-sm  lg:text-base'>Covid-19</a>
+            </Link>
+        </div>
         <div className=' hidden lg:block text-gray-400 text-2xl'> 
             <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>

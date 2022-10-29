@@ -92,10 +92,10 @@ const EventDetails=(props)=>{
                                         <div className="pt-8 pb-4 px-4 md:p-6 lg:p-8 relative z-20"> 
                                             <div onClick={closeToast}  className="close-toast absolute top-[2px] right-[2px] text-[#dddddd] text-2xl hover:text-gold hover:cursor-pointer"><FiXSquare/> </div>
                                             <div className="mb-3 relative z-10">
-                                              <p className="text-[#eeeeee]"><span className="golden-text font-medium">Package 1:</span> You can reserve our party room for a flat fee of $75 + Tax and cater your own food for your event. There's no minimum guest requirement; max varies.</p>
+                                              <p className="text-[#eeeeee]"><span className="text-gold font-medium">Package 1:</span> You can reserve our party room for a flat fee of $75 + Tax and cater your own food for your event. There's no minimum guest requirement; max varies.</p>
                                             </div>
                                              <div >
-                                              <p className="text-[#eeeeee] relative z-10"><span className="golden-text font-medium">Package 2:</span> Let us do the work! We will order and pick up your food plus prepare your event for $18.99 per person. This package includes FREE Party Room rental with a minimum of 6 guests; max varies. Our Standard Package includes Pizza, Cookie Cake, and a drink for each guest (may vary based on item availability). Additional catering options may available, ask for our </p>
+                                              <p className="text-[#eeeeee] relative z-10"><span className="text-gold  font-medium">Package 2:</span> Let us do the work! We will order and pick up your food plus prepare your event for $18.99 per person. This package includes FREE Party Room rental with a minimum of 6 guests; max varies. Our Standard Package includes Pizza, Cookie Cake, and a drink for each guest (may vary based on item availability). Additional catering options may available, ask for our </p>
                                             </div>
                                          <div className="h-[60px] w-[60px] rotate-45 absolute bottom-0 left-0 right-0 mx-auto bg-[#111111] z-0">
 

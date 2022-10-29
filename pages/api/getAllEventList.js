@@ -12,7 +12,7 @@ const list=[
     },
     {
         "id":2,
-        "event_name":"Physical Team Building",
+        "event_name":"Team Building",
         "event_slug":"team-building"
        
     },

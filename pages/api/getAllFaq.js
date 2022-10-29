@@ -30,7 +30,7 @@ export const getAllFaq=()=>{
                         "category":"all",
                         "ques":"What changes have you made post Covid-19?",
                         "ans":["We clean and disinfect high-touch surfaces daily in our games and lobby.",
-                              "For Covid-19 updates click here."],
+                              "For Covid-19 updates <a href=\"/covid-19\" class=\"text-gold hover:text-blue-700\"> click here</a>."],
                         
 
                   },
