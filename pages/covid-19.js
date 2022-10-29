@@ -81,10 +81,10 @@ const covid19=(props)=>{
                                 a very careful and thoughtful approach to reopening and have made many changes to our
                                 operations to ensure everyone feels safe and comfortable. Some of these changes include:</p>
         <ul className='star-list  pl-4 mt-8'>
-            <li className='my-2 md:my-3 lg:text-lg'>Allowing all PRIVATE room bookings to avoid playing with people you don't know regardless of the size of your group</li>
+            <li className='my-2 md:my-3 lg:text-lg'>Allowing all PRIVATE room bookings to avoid playing with people you don&apos;t know regardless of the size of your group</li>
             <li className='my-2 md:my-3 lg:text-lg'>Deep cleaning all rooms between experiences and continuously disinfecting high touch areas</li>
             <li className='my-2 md:my-3 lg:text-lg'>Staff wearing masks and gloves and washing hands frequently</li>
-            <li className='my-2 md:my-3 lg:text-lg'>Customer's required to wear masks based on State and Local mandated guidelines</li>
+            <li className='my-2 md:my-3 lg:text-lg'>Customer&apos;s required to wear masks based on State and Local mandated guidelines</li>
             <li className='my-2 md:my-3 lg:text-lg'>Diligently following all Social Distancing guidelines</li>
             <li className='my-2 md:my-3 lg:text-lg'>On-going training of employees on health and safety procedures</li>
             <li className='my-2 md:my-3 lg:text-lg'>We have gone CASHLESS but have enabled our stores to accept additional payment methods in addition to Credit/Debit Cards including:</li>
@@ -108,7 +108,7 @@ const covid19=(props)=>{
                
                     <TitleSeparator title="GAME TRAILER" color="golden-text" weight="font-bold"/>
                     <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
-                                 <p className="text-gray-700 md:px-8">Watch a sneak peek of the thrills and drama from the {props.activityname && <span>{props.activityname}</span>} escape room.</p>
+                               
                     </div>
                 </div>
           
