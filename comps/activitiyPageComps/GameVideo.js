@@ -6,6 +6,7 @@ const GameVideo=(props)=>{
     return(
         <div className="game-video relative" style={{backgroundImage : "url('/assets/game-dt-bg.jpg')", }}> 
             <div className="max-w-7xl mx-auto pb-16 md:pb-20 lg:pb-28 px-4 relative z-30"> 
+        
                 <div className="s-title"> 
                
                     <TitleSeparator title="GAME TRAILER" color="golden-text" weight="font-bold"/>
@@ -13,6 +14,7 @@ const GameVideo=(props)=>{
                                  <p className="text-gray-700 md:px-8">Watch a sneak peek of the thrills and drama from the {props.activityname && <span>{props.activityname}</span>} escape room.</p>
                     </div>
                 </div>
+          
                 <div className="game-video-box pb-[57%] md:pb-[416px] lg:pb-[472px] w-[100%] md:w-[740px] lg:w-[840px] mx-auto shadow-lg relative"> 
                              <iframe className="absolute w-full h-full top-0 left-0"
                               src={"https://www.youtube.com/embed/"+props.videoid} 
