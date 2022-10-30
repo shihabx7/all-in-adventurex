@@ -64,7 +64,7 @@ export const getMapData =()=>{
               country:'USA',
               address:'1 Crossgates Mall Rd D212',
               mall:'Crossgates Mall',
-              phone:'(518) 240-8243',
+              phone:'+1 518-240-8243',
               email:'Store103@Allinadventures.com',
               web:'https://allinadventures.com/'
       
@@ -134,8 +134,8 @@ export const getMapData =()=>{
           zip:14225,
           country:'USA',
           address:'1 Walden Galleria b108',
-          mall:'Walden Galleria',
-          phone:'(716) 2160404',
+          mall:'Walden Galleria Mall',
+          phone:'+1 716-216-0404',
           email:'Store108@Allinadventures.com',
              
       
@@ -205,8 +205,8 @@ export const getMapData =()=>{
           zip:10941,
           country:'USA',
           address:'1 Galleria Dr a211',
-          mall:'Crystal Run',
-          phone:'(845) 2029010',
+          mall:'Crystal Run Mall',
+          phone:'+1 845-202-9010',
           email:'Store105@Allinadventures.com',
              
       
@@ -277,7 +277,7 @@ export const getMapData =()=>{
           country:'USA',
           address:'9090 Destiny USA Dr',
           mall:'Destiny USA Mall',
-          phone:'(315) 4235000',
+          phone:'+1 315-423-5000',
           email:'Store107@Allinadventures.com',
              
       
@@ -348,7 +348,7 @@ export const getMapData =()=>{
           country:'USA',
           address:'21182 Salmon Run Mall Loop W',
           mall:'Salmon Run Mall',
-          phone:'(315) 9658010',
+          phone:'+1 315-965-8010',
           email:'Store106@Allinadventures.com',
              
       
@@ -418,8 +418,8 @@ export const getMapData =()=>{
           zip:10994,
           country:'USA',
           address:'3681 Palisades Center Dr',
-          mall:'Palisades Center',
-          phone:'(845) 2082919',
+          mall:'Palisades Center Mall',
+          phone:'+1 845-208-2919',
           email:'Store101@Allinadventures.com',
              
       
@@ -491,8 +491,8 @@ export const getMapData =()=>{
           zip:27616,
           country:'USA',
           address:'5959 Triangle Town Blvd Space EU 2113',
-          mall:'Triangle Town Center',
-          phone:'(919) 2055008',
+          mall:'Triangle Town Center Mall',
+          phone:'+1 919-205-5008',
           email:'Store123@Allinadventures.com',
              
       
@@ -565,7 +565,7 @@ export const getMapData =()=>{
           country:'USA',
           address:'707 Neshaminy Mall Space 672',
           mall:'Neshaminy Mall',
-          phone:'(267) 2271101', 
+          phone:'+1 267-227-1101', 
           email:'Store130@Allinadventures.com',
           }
         },
@@ -636,7 +636,7 @@ export const getMapData =()=>{
           country:'USA',
           address:'367 Russell St A07',
           mall:'Hampshire Mall',
-          phone:'(413) 8259777', 
+          phone:'+1 413-825-9777', 
           email:'Store113@Allinadventures.com',
           }
         },
@@ -705,7 +705,7 @@ export const getMapData =()=>{
           country:'USA',
           address:'Holyoke Mall, 50 Holyoke St',
           mall:'Holyoke Mall',
-          phone:'(413) 2009777', 
+          phone:'+1 413-200-9777', 
           email:'Store114@Allinadventures.com',
           }
         },
@@ -773,8 +773,8 @@ export const getMapData =()=>{
           zip: "02364",
           country:'USA',
           address:'101 Kingston Collection Way',
-          mall:'Kingston Collection',
-          phone:'(781) 2364933', 
+          mall:'Kingston Collection Mall',
+          phone:'+1 781-236-4933', 
           email:'Store102@Allinadventures.com',
           }
         },
@@ -843,7 +843,7 @@ export const getMapData =()=>{
           country:'USA',
           address:'999 S Washington St',
           mall:'Emerald Square Mall',
-          phone:'(508) 6953100', 
+          phone:'+1 508-695-3100', 
           email:'Store110@Allinadventures.com',
           }
         },
@@ -914,7 +914,7 @@ export const getMapData =()=>{
           country:'USA',
           address:'1201 Boston Post Rd',
           mall:'Connecticut Post Mall',
-          phone:'(203) 2901916', 
+          phone:'+1 203-290-1916', 
           email:'Store109@Allinadventures.com',
           }
         },
@@ -982,8 +982,8 @@ export const getMapData =()=>{
           zip:'06042',
           country:'USA',
           address:'194 Buckland Hills Dr Space 2002',
-          mall:'Buckland Hills',
-          phone:'(860) 4143606', 
+          mall:'Buckland Hills Mall',
+          phone:'+1 860-414-3606', 
           email:'Store121@Allinadventures.com',
           }
         },
@@ -1052,7 +1052,7 @@ export const getMapData =()=>{
           country:'USA',
           address:'495 Union St # 1158',
           mall:'Brass Mills Mall',
-          phone:'(203) 3034414', 
+          phone:'+1 203-303-4414', 
           email:'Store133@Allinadventures.com',
           }
         },
@@ -1122,8 +1122,8 @@ export const getMapData =()=>{
           zip:'08816',
           country:'USA',
           address:'Brunswick Square, 755 NJ-18',
-          mall:'Brunswick Square',
-          phone:'(732) 2017285', 
+          mall:'Brunswick Square Mall',
+          phone:'+1 732-201-7285', 
           email:'Store148@Allinadventures.com',
           }
         },
@@ -1191,8 +1191,8 @@ export const getMapData =()=>{
           zip:'07866',
           country:'USA',
           address:'301 Mt Hope Ave',
-          mall:'Rockaway Townsquare',
-          phone:'(862) 2035394', 
+          mall:'Rockaway Townsquare Mall',
+          phone:'+1 862-203-5394', 
           email:'Store112@Allinadventures.com',
           }
         },
@@ -1261,7 +1261,7 @@ export const getMapData =()=>{
           country:'USA',
           address:'250 Woodbridge Center Dr',
           mall:'Woodbridge Mall',
-          phone:'(732) 3512772', 
+          phone:'+1 732-351-2772', 
           email:'Store128@Allinadventures.com',
           }
         },
@@ -1331,8 +1331,8 @@ export const getMapData =()=>{
           zip:'20716',
           country:'USA',
           address:'15421 Emerald Way',
-          mall:'Bowie Town Center',
-          phone:'(240) 2456911', 
+          mall:'Bowie Town Center Mall',
+          phone:'+1 240-245-6911', 
           email:'Store145@Allinadventures.com',
           }
         },
@@ -1401,7 +1401,7 @@ export const getMapData =()=>{
           country:'USA',
           address:'8200 Perry Hall Blvd #2005',
           mall:'White Marsh Mall',
-          phone:'(410) 4415955', 
+          phone:'+1 410-441-5955', 
           email:'Store118@Allinadventures.com',
           }
         },
@@ -1471,8 +1471,8 @@ export const getMapData =()=>{
           zip:'24012',
           country:'USA',
           address:'250 Woodbridge Center Dr',
-          mall:'Valley View',
-          phone:'(540) 9202253', 
+          mall:'Valley View Mall',
+          phone:'+1 540-920-2253', 
           email:'Store129@Allinadventures.com',
           }
         },
@@ -1543,7 +1543,7 @@ export const getMapData =()=>{
           country:'USA',
           address:'5900 Sugarloaf Pkwy Unit 134',
           mall:'Sugarloaf Mills Mall',
-          phone:'(678) 8475002', 
+          phone:'+1 678-847-5002', 
           email:'Store100@Allinadventures.com',
           }
         },
@@ -1613,8 +1613,8 @@ export const getMapData =()=>{
           zip:'43240',
           country:'USA',
           address:'1500 Polaris Pkwy Space 2252',
-          mall:'Polaris Fashion Place',
-          phone:'(614) 8395858', 
+          mall:'Polaris Fashion Place Mall',
+          phone:'+1 614-839-5858', 
           email:'Store147@Allinadventures.com',
           }
         },
@@ -1683,7 +1683,7 @@ export const getMapData =()=>{
           country:'USA',
           address:'7850 Mentor Ave #1050a',
           mall:'Great Lakes Mall',
-          phone:'(440) 4845373', 
+          phone:'+1 440-484-5373', 
           email:'Store143@Allinadventures.com',
           }
         },
@@ -1752,7 +1752,7 @@ export const getMapData =()=>{
           country:'USA',
           address:'2700 Miamisburg Centerville Rd Space 300',
           mall:'Dayton Mall',
-          phone:'(937) 2400913', 
+          phone:'+1 937-240-0913', 
           email:'Store146@Allinadventures.com',
           }
         },
@@ -1828,6 +1828,77 @@ export const getMapData =()=>{
           }
         }, */
         //TX List End
+        // ny Poughkeepsie list
+       {
+           
+          id: 27,
+          name: "All in Adventures",
+          position: { lat: 41.626240482899284, lng: -73.92067928923845},
+          
+     
+          info:{ 
+              coverimg:'/assets/mapcard/Poughkeepsie-ny-poughkeepsie-galleria.jpg',
+              alt:'allinadventures-escape-room-Poughkeepsie-ny',
+              riview:'3027',
+              
+              b_hours:[
+                {
+                  "day":"monday",
+                  "open":"10 am",
+                  "close":"9.30 pm"
+
+                },
+                {
+                  "day":"tuesday",
+                  "open":"10 am",
+                  "close":"9.30 pm"
+
+                },
+                {
+                  "day":"wednesday",
+                  "open":"10 am",
+                  "close":"9.30 pm"
+
+                },
+                {
+                  "day":"thursday",
+                  "open":"10 am",
+                  "close":"9.30 pm"
+
+                },
+                {   
+                  "day":"friday",
+                  "open":"10 am",
+                  "close":"9.30 pm"
+
+                },
+                {   
+                  "day":"saturday",
+                  "open":"10 am",
+                  "close":"9.30 pm"
+
+                },
+                {   
+                  "day":"sunday",
+                  "open":"11 am",
+                  "close":"6 pm"
+
+                }
+
+          
+            ],
+
+          city:'Poughkeepsie',
+          state:'NY',
+          zip:'12601',
+          country:'USA',
+          address:'Poughkeepsie Galleria, 2001 South Rd',
+          mall:'Poughkeepsie Galleria Mall',
+          phone:'+1 845-208-2919', 
+          email:'store149@allinadventures.com',
+          }
+        }, 
+        //ny Poughkeepsie List End
       
        
       ]
