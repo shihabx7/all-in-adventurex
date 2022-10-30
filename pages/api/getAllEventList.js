@@ -17,6 +17,12 @@ const list=[
        
     },
     {
+        "id":6,
+        "event_name":"Corporate Events",
+        "event_slug":"corporate-events"
+       
+    },
+    {
         "id":3,
         "event_name":"Family Fun Activities",
         "event_slug":"family-fun-activity"
@@ -34,18 +40,20 @@ const list=[
         "event_slug":"bachelorette-party"
        
     },
+    
     {
-        "id":6,
-        "event_name":"Corporate Events",
-        "event_slug":"corporate-events"
+        "id":11,
+        "event_name":"Proposal Party",
+        "event_slug":"proposal-party"
        
     },
     {
-        "id":7,
-        "event_name":"School Events",
-        "event_slug":"school-events"
+        "id":12,
+        "event_name":"Date Night / Night Out",
+        "event_slug":"date-night"
        
     },
+    
     {
         "id":8,
         "event_name":"Private Party",
@@ -64,16 +72,12 @@ const list=[
         "event_slug":"graduation-party"
        
     },
+    
+    
     {
-        "id":11,
-        "event_name":"Proposal Party",
-        "event_slug":"proposal-party"
-       
-    },
-    {
-        "id":12,
-        "event_name":"Date Night / Night Out",
-        "event_slug":"date-night"
+        "id":7,
+        "event_name":"School Events",
+        "event_slug":"school-events"
        
     },
     {

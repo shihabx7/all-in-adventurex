@@ -296,7 +296,7 @@ const eventIndData={
 //********************************************************bachelorette-party end */
 //********************************************************proposal-party */
 "proposal-party":{
-                    "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
+                    "pagesubtitle":"If you're both into adventures, puzzles, and surprises, then there's no better way than proposing in an escape room! Our escape games are designed to engage and challenge with hidden puzzles and a fully customizable experience. Your partner will never see this coming! Sweep your partner off their feet with a proposal they'll never forget.",
                       "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-proposal-party-hero.jpg",
                       "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-proposal-party-hero.jpg",
                       "coverimageM_alt":"allinadventures-events-proposal-party",
@@ -312,12 +312,12 @@ const eventIndData={
                      },
                    
                       "eventdata":{
-                       "why_book":"Welcome to the world of adventure. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
-                       "why_book_img":"/assets/event-dt-img1.jpg",
-                       "offer":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-                       "offer_img":"/assets/event-dt-img2.jpg",
-                       "what_expect":"You and yer mateys need to solve the mystery and escape the island before they return. Or it’s off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
-                       "what_expect_img":"/assets/event-dt-img3.jpg",
+                       "why_book":"There's nothing more romantic than a surprise proposal. Our themed escape games are ideal for romantic proposals and declarations of love. Your partner will be so distracted looking for clues, that you can get down on one knee while she discovers the ring inside an existing puzzle. Bam! Surprise! A win for you. Totally out of the blue for her. Memories forever. Also, our escape rooms are great bonding activities as you work together to solve mysterious puzzles. Let us know if you want to customize your game for a proposal party. We'll do our best to accommodate your special day for groups of all sizes.",
+                       "why_book_img":"/assets/all-event-details/allinadventures-events-proposal-party-sec1.jpg",
+                       "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
+                       "offer_img":"/assets/all-event-details/allinadventures-events-proposal-party-sec2.jpg",
+                       "what_expect":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any proposal party at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
+                       "what_expect_img":"/assets/all-event-details/allinadventures-events-proposal-party-sec3.jpg",
                        "videoid":"pfdyF_d4Z40"
                       
                        },
@@ -325,7 +325,7 @@ const eventIndData={
 //********************************************************proposal-party end */
 //********************************************************date-night*/
 "date-night":{
-             "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
+             "pagesubtitle":"If you both enjoy adventures, mysteries, and surprises, and looking for a fun date night idea or want to add a little excitement to your relationship, plan your date night to play our escape rooms. They're great for couples who love to work together to solve puzzles and complete challenges.",
               "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-date-night-hero.jpg",
               "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-date-night-hero.jpg",
               "coverimageM_alt":"allinadventures-events-date-night",
@@ -341,12 +341,12 @@ const eventIndData={
              },
            
               "eventdata":{
-               "why_book":"Welcome to the world of adventure. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
-               "why_book_img":"/assets/event-dt-img1.jpg",
-               "offer":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-               "offer_img":"/assets/event-dt-img2.jpg",
-               "what_expect":"You and yer mateys need to solve the mystery and escape the island before they return. Or it’s off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
-               "what_expect_img":"/assets/event-dt-img3.jpg",
+               "why_book":"Whether you are looking for a unique date night idea or a fun night out with friends and family, our escape rooms provide an experience that your group will never forever. We offer many different escape room themes, and you'll surely find a perfect game that interests your group. In all its fun, escape rooms have an even more meaningful benefit when it comes to date night - strengthening your relationship. In order to escape, you'll need to communicate with your partner and work together to solve mysterious puzzles. In addition, this communication also leads to you both sharing ideas and different perspectives, building your bond.",
+               "why_book_img":"/assets/all-event-details/allinadventures-events-date-night-sec1.jpg",
+               "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
+               "offer_img":"/assets/all-event-details/allinadventures-events-date-night-sec2.jpg",
+               "what_expect":"Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any date night party at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
+               "what_expect_img":"/assets/all-event-details/allinadventures-events-date-night-sec3.jpg",
                "videoid":"pfdyF_d4Z40"
               
                },
