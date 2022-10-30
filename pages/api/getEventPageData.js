@@ -238,7 +238,7 @@ const eventIndData={
 //********************************************************family-fun-activity end */
 //********************************************************bachelor-party  */
 "bachelor-party":{
-                 "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
+                 "pagesubtitle":"Are you looking for the most fun, thrilling, and downright nerdy activity for an upcoming bachelor party? Something everyone can participate in? Then play one of our escape rooms. There's no better way to bond with your bachelor party before the big day — no scandals, just nonstop thrills!",
                   "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-bachelor-party-hero.jpg",
                   "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-bachelor-party-hero.jpg",
                   "coverimageM_alt":"allinadventures-events-bachelor-party",
@@ -254,12 +254,12 @@ const eventIndData={
                  },
                
                   "eventdata":{
-                   "why_book":"Welcome to the world of adventure. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
-                   "why_book_img":"/assets/event-dt-img1.jpg",
-                   "offer":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-                   "offer_img":"/assets/event-dt-img2.jpg",
-                   "what_expect":"You and yer mateys need to solve the mystery and escape the island before they return. Or it’s off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
-                   "what_expect_img":"/assets/event-dt-img3.jpg",
+                   "why_book":"We offer a unique escape game experience perfect for bachelor parties, where every one of your guests, including yourself, is guaranteed to have fun. Your group will enter into a puzzle room and have to work together to solve riddles and find clues to ESCAPE! You can tailor and personalize your experience from many different escape room themes. If you like to plan something extra for the bachelor, just let us know. There are no logistical nightmares, no stress of arrangements. If you wanted memorable, you've got it!",
+                   "why_book_img":"/assets/all-event-details/allinadventures-events-bachelor-party-sec1.jpg",
+                   "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
+                   "offer_img":"/assets/all-event-details/allinadventures-events-bachelor-party-sec2.jpg",
+                   "what_expect":"Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any bachelor party at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out",
+                   "what_expect_img":"/assets/all-event-details/allinadventures-events-bachelor-party-sec3.jpg",
                    "videoid":"pfdyF_d4Z40"
                   
                    },
@@ -267,7 +267,7 @@ const eventIndData={
 //********************************************************bachelor-party end */
 //********************************************************bachelorette-party  */
 "bachelorette-party":{
-                    "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
+                    "pagesubtitle":"Are you planning a bachelorette party for your best friend or family member and looking for something out of the ordinary? Something everyone can participate in? Then play one of our escape rooms. There's no better way to bond with your bachelorette party before the big day — no drama, no scandals, just nonstop thrills!",
                     "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-bachelorette-party-hero.jpg",
                     "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-bachelorette-party-hero.jpg",
                     "coverimageM_alt":"allinadventures-events-bachelorette-party",
@@ -283,12 +283,12 @@ const eventIndData={
                    },
                  
                     "eventdata":{
-                     "why_book":"Welcome to the world of adventure. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
-                     "why_book_img":"/assets/event-dt-img1.jpg",
-                     "offer":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-                     "offer_img":"/assets/event-dt-img2.jpg",
-                     "what_expect":"You and yer mateys need to solve the mystery and escape the island before they return. Or it’s off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
-                     "what_expect_img":"/assets/event-dt-img3.jpg",
+                     "why_book":"We offer a unique escape game experience ideal for bachelorette parties, where every one of your guests, including yourself, is guaranteed to have fun. Your group will enter into a puzzle room and have to work together to solve riddles and find clues to ESCAPE! You can tailor and personalize your experience from many different escape room themes. If you like to plan something extra for the bride, just let us know. There are no logistical nightmares, no stress of arrangements. If you wanted memorable, you've got it!",
+                     "why_book_img":"/assets/all-event-details/allinadventures-events-bachelorette-party-sec1.jpg",
+                     "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
+                     "offer_img":"/assets/all-event-details/allinadventures-events-bachelorette-party-sec2.jpg",
+                     "what_expect":"Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any bachelorette party at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
+                     "what_expect_img":"/assets/all-event-details/allinadventures-events-bachelorette-party-sec3.jpg",
                      "videoid":"pfdyF_d4Z40"
                     
                      },
