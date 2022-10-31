@@ -354,7 +354,7 @@ const eventIndData={
 //********************************************************date-night end */
 //*******************************************************private-party*/
 "private-party":{
-  "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
+  "pagesubtitle":"We offer an array of interactive escape rooms where everyone can participate and become the star of their own action adventure. No matter what occasion you celebrate, escape room party is a great way to bring your family, friends or co-workers together and have enormous fun.",
   "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-private-party-hero.jpg",
   "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-private-party-hero.jpg",
   "coverimageM_alt":"allinadventures-events-private-party",
@@ -370,12 +370,12 @@ const eventIndData={
  },
 
   "eventdata":{
-   "why_book":"Welcome to the world of adventure. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
-   "why_book_img":"/assets/event-dt-img1.jpg",
-   "offer":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-   "offer_img":"/assets/event-dt-img2.jpg",
-   "what_expect":"You and yer mateys need to solve the mystery and escape the island before they return. Or it’s off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
-   "what_expect_img":"/assets/event-dt-img3.jpg",
+   "why_book":"We tailor each escape room private party to your unique celebration and number of guests. Whether you are a corporate office looking for a fun team-building activity or a group of friends looking for a mental challenge, our escape games give you the challenge you desire. Your group will work together to uncover hidden clues, solve puzzles, and discover secret messages in order to escape before time runs out. All In Adventures is great for families, friends and co-workers, and our out-of-the-box experience is a memorable and exciting way to bond and increase communication.",
+   "why_book_img":"/assets/all-event-details/allinadventures-events-private-party-sec1.jpg",
+   "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
+   "offer_img":"/assets/all-event-details/allinadventures-events-private-party-sec2.jpg",
+   "what_expect":"Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any private party at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
+   "what_expect_img":"/assets/all-event-details/allinadventures-events-private-party-sec3.jpg",
    "videoid":"pfdyF_d4Z40"
   
    },
@@ -383,7 +383,7 @@ const eventIndData={
 //********************************************************date-night end */
 //********************************************************reunion-party*/
 "reunion-party":{
-                "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
+                "pagesubtitle":"There's no shortage of family reunion activities. But how many of them actually involve teamwork and collaboration? That's the question! Our escape rooms are interactive and have engaging qualities that give your reunion party an epic adventure!",
                 "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-reunion-party-hero.jpg",
                 "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-reunion-party-hero.jpg",
                 "coverimageM_alt":"allinadventures-events-reunion-party",
@@ -399,12 +399,12 @@ const eventIndData={
                },
              
                 "eventdata":{
-                 "why_book":"Welcome to the world of adventure. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
-                 "why_book_img":"/assets/event-dt-img1.jpg",
-                 "offer":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-                 "offer_img":"/assets/event-dt-img2.jpg",
-                 "what_expect":"You and yer mateys need to solve the mystery and escape the island before they return. Or it’s off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
-                 "what_expect_img":"/assets/event-dt-img3.jpg",
+                 "why_book":"You can improve your ability to work with your family members during an escape room reunion party, where everyone will work together to achieve a common goal. This interactive event will lead you on how to overcome difficulties, work well with others, and have fun doing it. Your team will have to cooperate to get out of a trapped space and learn more about working together in a pressure-filled situation. Afterward, you can debrief, celebrate, and revel in your successes. It's safe and requires no special skills! Perfect fun activity for every age group.",
+                 "why_book_img":"/assets/all-event-details/allinadventures-events-reunion-party-sec1.jpg",
+                 "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
+                 "offer_img":"/assets/all-event-details/allinadventures-events-reunion-party-sec2.jpg",
+                 "what_expect":"Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any reunion party at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
+                 "what_expect_img":"/assets/all-event-details/allinadventures-events-reunion-party-sec3.jpg",
                  "videoid":"pfdyF_d4Z40"
                 
                  },
@@ -412,7 +412,7 @@ const eventIndData={
 //********************************************************reunion-party end */
 //********************************************************graduation-party*/
 "graduation-party":{
-                "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
+                "pagesubtitle":"Graduation is such an exciting time, no matter your age. You deserve to celebrate all that you have achieved. Celebrate your accomplishments in a memorable way with our escape room theme party. Make lasting memories to tell tales to your grandchildren!",
                   "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-graduation-party-hero.jpg",
                   "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-graduation-party-hero.jpg",
                   "coverimageM_alt":"allinadventures-events-graduation-party",
@@ -428,12 +428,12 @@ const eventIndData={
                  },
                
                   "eventdata":{
-                   "why_book":"Welcome to the world of adventure. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
-                   "why_book_img":"/assets/event-dt-img1.jpg",
-                   "offer":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-                   "offer_img":"/assets/event-dt-img2.jpg",
-                   "what_expect":"You and yer mateys need to solve the mystery and escape the island before they return. Or it’s off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
-                   "what_expect_img":"/assets/event-dt-img3.jpg",
+                   "why_book":"There's no shortage of graduation party ideas. But how many of them actually involve teamwork and collaboration between friends? That's the question! You can escape the same old graduation party and start cracking interactive puzzles to celebrate your graduation in style. Our escape rooms are interactive and have engaging qualities that give your graduation party an epic adventure! There are no logistical nightmares, no stress of arrangements. If you wanted memorable, you've got it!",
+                   "why_book_img":"/assets/all-event-details/allinadventures-events-graduation-party-sec1.jpg",
+                   "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
+                   "offer_img":"/assets/all-event-details/allinadventures-events-graduation-party-sec2.jpg",
+                   "what_expect":"Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any graduation party at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
+                   "what_expect_img":"/assets/all-event-details/allinadventures-events-graduation-party-sec3.jpg",
                    "videoid":"pfdyF_d4Z40"
                   
                    },

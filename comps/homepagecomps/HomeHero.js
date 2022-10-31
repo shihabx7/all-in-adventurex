@@ -7,10 +7,10 @@ const HomeHero=(props)=>{
             <div className="homehero-img md:hidden ">
                 <img src="/assets/home-hero.jpg"></img>
              </div>
-             <div className="max-w-[68px] md:max-w-[120px] lg:max-w-[144px] absolute top-[4px] lg:top-[10px] left-0 right-[4px] md:right-0 ml-auto md:mx-auto">
-             <img src="/assets/family-friendly-escape-room-games.png"></img>
+             <div className="max-w-[68px] md:max-w-[120px] lg:max-w-[144px] absolute top-[4px] md:top-[36px] lg:top-[60px] left-0 right-[4px] md:right-0 ml-auto md:mx-auto">
+             <img src="/assets/kids-and-familly-friendly-escape-rooms-allinadventures.png"></img>
              </div>
-            <div className='max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-20 md:py-28 lg:py-32 xl:py-40 relative z-10'>
+            <div className='max-w-7xl home-hero-container mx-auto px-4 pb-16 pt-16 md:pb-24 md:pt-[160px] lg:pb-28 lg:pt-[210px] relative z-10'>
                 <div className="page-benar-info"> 
                 
                  <p className=' md:mt-4 lg:mt-6 xl:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center'>CHOOSE FROM {props.pagedata.totalLocations} U.S. LOCATIONS</p> 
