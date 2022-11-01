@@ -441,7 +441,7 @@ const eventIndData={
 //********************************************************graduation-party end */
 //********************************************************school-events*/
 "school-events":{
-  "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
+  "pagesubtitle":"Are you looking for school event ideas that will excite and challenge every student in the classroom or school? Then All In Adventures is a great place for you to bring your student group. Let your students experience a challenging yet fun time at our escape rooms — excellent adventures for any age group.",
                     "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-school-events-hero.jpg",
                     "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-school-events-hero.jpg",
                     "coverimageM_alt":"allinadventures-events-school-events",
@@ -457,12 +457,12 @@ const eventIndData={
                    },
                  
                     "eventdata":{
-                     "why_book":"Welcome to the world of adventure. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
-                     "why_book_img":"/assets/event-dt-img1.jpg",
-                     "offer":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-                     "offer_img":"/assets/event-dt-img2.jpg",
-                     "what_expect":"You and yer mateys need to solve the mystery and escape the island before they return. Or it’s off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
-                     "what_expect_img":"/assets/event-dt-img3.jpg",
+                     "why_book":"It's a well-known fact that escape rooms provide the perfect activity for school events and team building, and they are also ideal for kids activities such as school trips. At All In Adventures, we provide a unique escape room environment where students develop essential key skills like team working, problem-solving and communication. Our escape rooms are incredibly fun and encourage careful and deliberate thinking in order to solve the puzzles inside the game room. Our games can also be highly educational, serve the purpose of team-building between students, and increase cooperation between classmates and teachers.",
+                     "why_book_img":"/assets/all-event-details/allinadventures-events-school-events-sec1.jpg",
+                     "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
+                     "offer_img":"/assets/all-event-details/allinadventures-events-school-events-sec2.jpg",
+                     "what_expect":"Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any school events / field trips at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
+                     "what_expect_img":"/assets/all-event-details/allinadventures-events-school-events-sec3.jpg",
                      "videoid":"pfdyF_d4Z40"
                     
                      },
@@ -470,7 +470,7 @@ const eventIndData={
 //********************************************************school-events end */
 //********************************************************school-events*/
 "gender-reveal-party":{
-                  "pagesubtitle":"Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
+                  "pagesubtitle":"All In Adventures is famous for hosting unique gender reveal parties. Escape the wild parties in exchange for an escape room gender reveal party where you look for a box that reveals your secret color. Bring your dearest friends and family as you celebrate a gift from God!",
                    "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-gender-reveal-party-hero.jpg",
                    "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-gender-reveal-party-hero.jpg",
                    "coverimageM_alt":"allinadventures-events-gender-reveal-party",
@@ -486,12 +486,12 @@ const eventIndData={
                   },
                 
                    "eventdata":{
-                    "why_book":"Welcome to the world of adventure. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
-                    "why_book_img":"/assets/event-dt-img1.jpg",
-                    "offer":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-                    "offer_img":"/assets/event-dt-img2.jpg",
-                    "what_expect":"You and yer mateys need to solve the mystery and escape the island before they return. Or it’s off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
-                    "what_expect_img":"/assets/event-dt-img3.jpg",
+                    "why_book":"We provide a unique atmosphere where parents make gender reveal parties a memorable family event. They spend time with friends and family doing something completely different from ordinary parties to solve riddles to unleash the grand secret! Reveal the gender of their baby through a series of puzzles as they find them and accomplish the tasks to open a box filled with surprises! We pack a locked box full of colored balloons and candies, cookies, or anything you would like to be locked in a box for your team to find and figure out how to open it in any of our escape room themes!",
+                    "why_book_img":"/assets/all-event-details/allinadventures-events-gender-reveal-party-sec1.jpg",
+                    "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
+                    "offer_img":"/assets/all-event-details/allinadventures-events-gender-reveal-party-sec2.jpg",
+                    "what_expect":"Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any gender reveal party at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
+                    "what_expect_img":"/assets/all-event-details/allinadventures-events-gender-reveal-party-sec3.jpg",
                     "videoid":"pfdyF_d4Z40"
                   
                     },

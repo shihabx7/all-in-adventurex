@@ -24,16 +24,19 @@ const LocationHomeHero=(props)=>{
     
 
     return(
-        <div className='home-hero' style={
+        <div className='home-hero relative' style={
             {
                 background:"url('"+props.pagedata.coverimageL+"')"
             }
            }>
+            <div className="max-w-[68px] md:max-w-[120px] lg:max-w-[144px] absolute top-[4px] md:top-[36px] lg:top-[60px] left-0 right-[4px] md:right-0 ml-auto md:mx-auto">
+             <img src="/assets/kids-and-familly-friendly-escape-rooms-allinadventures.png"></img>
+             </div>
         <div className='home-hero-holder '> 
         <div className="homehero-img md:hidden">
                 <img src={props.pagedata.coverimageM}></img>
              </div>
-            <div className='max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-20 md:py-20 lg:py-28 xl:py-40 relative z-10'>
+            <div className='max-w-7xl home-hero-container mx-auto px-4 pb-16 pt-16 md:pb-24 md:pt-[160px] lg:pb-28 lg:pt-[210px] relative z-10'>
                 <div className="page-benar-info"> 
                 
                  <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center uppercase'>AT {props.pagedata.locationaddress} IN {props.pagedata.locationcity} {props.pagedata.locationstate}</p> 
