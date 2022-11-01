@@ -12,7 +12,7 @@ const GameHomeHero=(props)=>{
         <div className="homehero-img md:hidden">
                   <img src={props.pagedata.coverimageM}></img>
              </div>
-            <div className='max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-20 md:py-20 lg:py-32 xl:py-40 relative z-10'>
+            <div className='max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-20 md:py-20 lg:py-32 xl:py-40 relative z-20'>
                 <div className="page-benar-info"> 
                 
                  <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center'>CHOOSE FROM {props.pagedata.totalLocations} U.S. LOCATIONS</p> 

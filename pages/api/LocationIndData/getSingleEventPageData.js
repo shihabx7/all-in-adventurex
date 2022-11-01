@@ -48,6 +48,9 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
       return locs+", "+st
    }
 
+   const insertLoc=(text)=>{
+      
+   }
  
      const eventData={
          "pagemeta":eventlocdata[eventslug].pagemeta,
