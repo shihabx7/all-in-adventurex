@@ -41,7 +41,7 @@ const PlaningEventsSlider=(props)=>{
               
             }
 
-         <div className="max-w-[720px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
+         <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
             {
                 props.city && 
                 <p className="text-gray-700 md:px-8">All In Adventures is famous for hosting {props.city}'s most memorable parties

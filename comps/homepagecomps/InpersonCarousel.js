@@ -135,7 +135,7 @@ const InpersonCarousel=(props)=>{
                                   }
                                     {
                                     !props.bookingData &&
-                                    <button onClick={()=>showLocation()} className="border max-w-[200px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                                    <button onClick={()=>showLocation()} className="border max-w-[190px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
                                   }
                                     {
                                     props.locationslug &&

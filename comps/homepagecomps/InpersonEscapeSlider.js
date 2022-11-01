@@ -33,11 +33,11 @@ const InpersonEscapeSlider =(props)=>{
             }
             {!props.city && 
              
-                <TitleSeparator title='IN PERSON ESCAPE ROOMS' color='golden-text' weight='font-bold'/>
+                <TitleSeparator title='PLAY REAL LIFE ESCAPE ROOMS' color='golden-text' weight='font-bold'/>
               
             }
              
-             <div className="max-w-[720px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-16">
+             <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-16">
               {
                 props.city && 
                 <p className="text-gray-200 md:px-8">Your team enters to a thematic room and in order to win, you'll need to find clues, solve puzzles, crack codes and take on many adrenaline pumping activities. </p>
@@ -66,12 +66,12 @@ const InpersonEscapeSlider =(props)=>{
           {
             props.locationslug &&
             <Link href={"/"+props.locationslug+"/activities/"}> 
-            <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all In person escape rooms</span> <FaAngleRight/></a>
+            <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all real life escape rooms</span> <FaAngleRight/></a>
           </Link>
           }
           { !props.locationslug &&
              <Link href={"/activities/"}> 
-             <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all in person escape rooms</span> <FaAngleRight/></a>
+             <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all real life escape rooms</span> <FaAngleRight/></a>
            </Link>
           }
            
