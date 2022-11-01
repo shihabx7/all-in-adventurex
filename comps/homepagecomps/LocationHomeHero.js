@@ -29,7 +29,7 @@ const LocationHomeHero=(props)=>{
                 background:"url('"+props.pagedata.coverimageL+"')"
             }
            }>
-            <div className="max-w-[68px] md:max-w-[120px] lg:max-w-[144px] absolute top-[4px] md:top-[36px] lg:top-[60px] left-0 right-[4px] md:right-0 ml-auto md:mx-auto">
+            <div className="max-w-[84px] md:max-w-[120px] lg:max-w-[144px] absolute top-[4px] md:top-[36px] lg:top-[60px] left-0 right-[4px] md:right-0 ml-auto md:mx-auto">
              <img src="/assets/kids-and-familly-friendly-escape-rooms-allinadventures.png"></img>
              </div>
         <div className='home-hero-holder '> 

@@ -65,9 +65,9 @@ const EventContact=(props)=>{
                 <div className="gift-lt absolute top-0 left-0"><img src="/assets/gift-balon-bg.png"></img></div>
                     <div className="max-w-7xl mx-auto md:px-4"> 
                      
-                        <div className="section-title  text-center max-w-[600px] mx-auto  mb-8 md:mb-12 lg:mb-16 px-4">
+                        <div className="section-title  text-center max-w-[800px] mx-auto  mb-8 md:mb-12 lg:mb-16 px-4">
                             <TitleSeparator title="SUBMIT YOUR INQUIRY NOW" color="golden-text" weight="font-bold"/>
-                             <p className="text-gray-200 md:px-8 md:text-lg">We want you to host your next birthday party at All In Adventures{props.contactdata && <span> in {props.contactdata.city+" "+getStAddress(props.contactdata.slug)}</span>}. Please fill out the inquiry form below to reach your dedicated guest experience team. We'll be in contact within 24 hours. </p>
+                             <p className="text-gray-200 md:px-8 md:text-lg mt-8">We want you to host your {props.eventname} at All In Adventures{props.contactdata && <span> in {props.contactdata.city+" "+getStAddress(props.contactdata.slug)}</span>}. We promise you'll love it! Please fill out the inquiry form below to reach our dedicated guest experience team. We'll be in contact within 24 hours. </p>
                          </div>
 
                      
@@ -228,8 +228,8 @@ const EventContact=(props)=>{
                                                {/*======================================contact form row select event====================== */}
                                                <div className="form-row flex  flex-col space-y-3 md:flex-row  md:space-y-0 justify-between my-3 md:my-4 ">
                                                     <div className="form-col w-full md:w-[48%]">
-                                                        <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Select your event type:</p>
-                                                        <select type="text" className="w-full event-input  text-gray-500 border-0 md:py-3 px-4 bg-white">
+                                                        <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Select your event type: *</p>
+                                                        <select type="text" className="w-full event-input  text-gray-500 border-0 md:py-3 px-4 bg-white" required>
                                                             <option value="0"> Choose your event type</option>
                                                             <option value="Birthday Party">Birthday Party</option>
                                                             <option value="Physical Team Building Activites">Team Building</option>
@@ -237,8 +237,8 @@ const EventContact=(props)=>{
                                                         </select>
                                                     </div>
                                                     <div className="form-col w-full md:w-[48%]">
-                                                        <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Number of your guests:</p>
-                                                        <input type="text"  className=" w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Enter number of your guests" ></input>
+                                                        <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Number of your guests: *</p>
+                                                        <input type="text"  className=" w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Enter number of your guests" required></input>
                                                     </div>
                                                 </div>
                                                 {/*======================================contact form row select event====================== */}
@@ -251,9 +251,9 @@ const EventContact=(props)=>{
                                                     <div className="form-col w-[48%]">
                                                         <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Preferred time:</p>
                                                         <select type="text" className="w-full event-input text-gray-500  border-0 md:py-3 px-4 bg-white" required>
-                                                            <option value="0">Select your prefereed time</option>
+                                                            <option value="0">Preferred time</option>
                                                             <option value="Morning">Morning</option>
-                                                            <option value=">After Noon">After Noon</option>
+                                                            <option value=">After Noon">Afternoon</option>
                                                             <option value="Evening">Evening</option>
                                                         </select>
                                                     </div>

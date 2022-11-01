@@ -125,8 +125,12 @@ const shortrev=(txt)=>{
                             review.revlink &&
                             <img className="max-w-[32px] mx-auto" src="/assets/svg/googleicon.svg"></img>
                           }
-                         <p className="text-[#afafaf]">{review.author}</p>
-                         <p className="text-[#585858]">{review.author_location}</p>
+                         <p className="text-[#afafaf] mt-4">{review.author}</p>
+                         
+                         {
+                            !review.revlink &&
+                            <p className="text-[#585858]">{review.author_location}</p>
+                          }
                          </div>
 
                       </div>

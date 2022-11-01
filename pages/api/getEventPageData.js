@@ -19,6 +19,7 @@ export const geEventPagetData=(slug)=>{
            
         "pagedata":{
             "pagetitle":"ESCAPE ROOM "+eventName,
+            "event_name":eventName,
             "pagesubtitle":eventIndData[slug].pagesubtitle,
             "coverimageL":eventIndData[slug].coverimageL,
             "coverimageM":eventIndData[slug].coverimageM,
@@ -316,7 +317,7 @@ const eventIndData={
                        "why_book_img":"/assets/all-event-details/allinadventures-events-proposal-party-sec1.jpg",
                        "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
                        "offer_img":"/assets/all-event-details/allinadventures-events-proposal-party-sec2.jpg",
-                       "what_expect":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any proposal party at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
+                       "what_expect":"Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any proposal party at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
                        "what_expect_img":"/assets/all-event-details/allinadventures-events-proposal-party-sec3.jpg",
                        "videoid":"pfdyF_d4Z40"
                       

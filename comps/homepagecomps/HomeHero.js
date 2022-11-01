@@ -7,7 +7,7 @@ const HomeHero=(props)=>{
             <div className="homehero-img md:hidden ">
                 <img src="/assets/home-hero.jpg"></img>
              </div>
-             <div className="max-w-[68px] md:max-w-[120px] lg:max-w-[144px] absolute top-[4px] md:top-[36px] lg:top-[60px] left-0 right-[4px] md:right-0 ml-auto md:mx-auto">
+             <div className="max-w-[84px] md:max-w-[120px] lg:max-w-[144px] absolute top-[4px] md:top-[36px] lg:top-[60px] left-0 right-[4px] md:right-0 ml-auto md:mx-auto">
              <img src="/assets/kids-and-familly-friendly-escape-rooms-allinadventures.png"></img>
              </div>
             <div className='max-w-7xl home-hero-container mx-auto px-4 pb-16 pt-16 md:pb-24 md:pt-[160px] lg:pb-28 lg:pt-[210px] relative z-10'>

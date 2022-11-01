@@ -57,6 +57,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
             
          "pagedata":{
              "pagetitle":"Adventure "+eventlocdata[eventslug].eventname,
+             "event_name":eventname,
              "locationslug":locationslug,
              "mall":getLocSpec(locationslug).mall,
              "location_name":locationslug.split('-').join(' '),

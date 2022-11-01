@@ -39,7 +39,7 @@ const LocationSingleEvent=(props)=>{
                         {console.log(props.pagedata)}
                         <GameLocHero pagedata={props.pagedata} eventslug={props.pagedata.slug}/>
                         <EventDetails eventdata={props.eventdata} eventname={props.pagedata.eventname}/>
-                        <EventContact contactdata={props.contactdata}/>
+                        <EventContact contactdata={props.contactdata} eventname={props.pagedata.event_name}/>
                         <HomeReviewSlider reviews={props.reviews}/>
                         
                      
