@@ -7,21 +7,20 @@ const CorContact=()=>{
         <div className="c-contact py-16 md:py-20 lg:py-28  bg-cover bg-center" style={{backgroundImage : "url('/assets/game-dt-bg.jpg')", }}>
             <div className="section-container max-w-7xl mx-auto relative z-30">
                 <div className="section-title">
-                  <TitleSeparator title='CONTACT ALL IN ADVENTURES' color='golden-text' weight='font-bold'/>
+                  <TitleSeparator title='SUBMIT CORPORATE INQUIRIES ONLY' color='golden-text' weight='font-bold'/>
                     <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-12 lg:mb-16">
-                         <p className="text-gray-700 md:px-8">Click on the link associated with the position you're most passionate about pursuing and upload a copy of your resumé today!</p>
+                         <p className="text-gray-700 md:px-8">Fill out the form below and our corporate team will be in touch shortly.</p>
                      </div>
                  </div>
                  <div className="c-contact-box flex flex-col md:flex-row md:space-x-6 lg:space-x-12 justify-between">
                         <div className="c-form-info md:w-[44%] lg:w-[38%] order-2 md:order-1 px-4 lg:px-0">
-                        <h3 className="golden-text font-os font-bold mt-8 md:mt-0 text-xl lg:text-2xl mb-2 lg:mb-4">CORPORATE OFFICE</h3>
-                        <p className="text-gray-700 lg:text-lg">Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. 
-                            Once you find your way out you will be able to explore the entire ship.
+                        <h3 className="golden-text font-os font-bold mt-8 md:mt-0 text-xl lg:text-2xl mb-2 lg:mb-4">OUR FACILITIES</h3>
+                        <p className="text-gray-700 lg:text-lg">All escape rooms are completely private - for your players only! We provide an entire party with the opportunity to celebrate in a fun and unique way. Come join us to create exciting memories with your group.
                         </p>
                         <div className="c-contact-info-list mt-6 lg:mt-8 ">
                             <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-t border-b border-[#D2C6AA]">
                                  <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg  uppercase">phone</h4>
-                                <a href="tel:+844-502-5546" className="text-lg text-[#232323] block hover:text-blue-700">+844-502-5546</a>
+                                <a href="tel:+1 844-502-5546" className="text-lg text-[#232323] block hover:text-blue-700">+1 844-502-5546</a>
                             </div>
                             <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
                                  <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg uppercase">FRANCHISING</h4>
@@ -126,7 +125,7 @@ const CorContact=()=>{
                                                <div className="form-row flex justify-center ">
                                                   
                                                 
-                                                      <button type="submit" className="text-white font-medium text-lg py-3 px-12 bg-red-600 hover:bg-red-700 rounded-full">BOOK PARTY NOW</button>
+                                                      <button type="submit" className="text-white font-medium text-lg py-3 px-12 bg-red-600 hover:bg-red-700 rounded-full">SUBMIT</button>
                                                   
                                               </div>
                                                {/*======================================contact form button====================== */}

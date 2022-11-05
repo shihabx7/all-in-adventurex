@@ -16,7 +16,7 @@ export const getCareerHomePageData=()=>{
            
         "pagedata":{
             "pagetitle":"CAREERS AT ALL IN ADVENTURES",
-            "pagesubtitle":"Passion led us here",
+            "pagesubtitle":"Passion led us here! We're incredibly passionate about placing great people in their dream roles and believe in serving our guests and each other every day. We love our awesome team! Join us.",
             "coverimageL":"/assets/gn-desktop-hero/allinadventures-career-hero.jpg",
             "coverimageM":"/assets/gn-mobile-hero/allinadventures-career-hero.jpg",
             "totalLocations":getTotal().totalLocations,
@@ -28,28 +28,28 @@ export const getCareerHomePageData=()=>{
                 "id":1,
                 "job_slug":"associate",
                 "job_title":"Associate",
-                "short_desc":"This is a great opportunity for anyone excited for the chance to grow and develop with a startup company that is looking to change the face of how people interact socially through live games and activities."
+                "short_desc":"The Associate is the guest experience specialist, who is each guest's first and last impression of All In Adventures! This position serves as the vitally important liaison between our guests and our team. The ideal candidate will greet new guests as they arrive and inquire about the experience after the game."
                
             },
             {
                 "id":2,
                 "job_slug":"store-lead",
                 "job_title":"STORE LEAD",
-                "short_desc":"This is a great opportunity for anyone excited for the chance to grow and develop with a startup company that is looking to change the face of how people interact socially through live games and activities."
+                "short_desc":"Our Store Lead positions exist to inspire, serve, and empower their team to uphold our outstanding services and hospitality standards. They are ultimately responsible for the success or failure of the store. The ideal candidate is eager to be flexible and creative in a fast-paced, high-stress environment."
                
             },
             {
                 "id":3,
                 "job_slug":"assistant-manager",
                 "job_title":"ASSISTANT MANAGER",
-                "short_desc":"This is a great opportunity for anyone excited for the chance to grow and develop with a startup company that is looking to change the face of how people interact socially through live games and activities."
+                "short_desc":"ASSISTANT MANAGER Our Assistant Manager assists the Store Manager in encouraging the team to achieve success by ensuring our guests' overall satisfaction. The ideal candidates need positive attitude, willingness to provide outstanding guest service, and a desire to succeed. They must utilize their communication skills."
                
             },
             {
                 "id":4,
                 "job_slug":"store-manager",
                 "job_title":"STORE MANAGER",
-                "short_desc":"This is a great opportunity for anyone excited for the chance to grow and develop with a startup company that is looking to change the face of how people interact socially through live games and activities."
+                "short_desc":"The Store Manager position inspires your team to achieve success by ensuring the overall satisfaction of our guests. This position requires managing the store's day-to-day operations and financial success, including growing sales through local store marketing efforts."
                
             },
     

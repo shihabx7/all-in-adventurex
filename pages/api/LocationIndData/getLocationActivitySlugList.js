@@ -1155,7 +1155,7 @@ const datalist={
      //*****************************************************************************NJ++++++++++++++++ */
       // =====================================east-brunswick-nj=======
       "east-brunswick-nj":[
-        
+
         {
             "id":1,
             "category":"escapegame",
@@ -1170,48 +1170,50 @@ const datalist={
             "activity_slug":"treasure-island"
            
         },
+        
         {
-            "id":3,
-            "category":"escapegame",
-            "activity_name":"Superhero's Adventure",
-            "activity_slug":"superheros-adventure"
-           
-        },
-        {
-            "id":6,
-            "category":"escapegame",
-            "activity_name":"Hollywood Premiere",
-            "activity_slug":"hollywood-premiere"
-           
-        },
-        {
-            "id":7,
+            "id":4,
             "category":"escapegame",
             "activity_name":"Sherlock's Library",
             "activity_slug":"sherlocks-library"
            
         },
         {
-            "id":8,
-            "category":"escapegame",
-            "activity_name":"Houdinis Magic Cell",
-            "activity_slug":"houdinis-magic-cell"
-           
-        },
-        {
-            "id":9,
+            "id":5,
             "category":"escapegame",
             "activity_name":"Black Ops",
             "activity_slug":"black-ops"
            
         },
+        {
+            "id":6,
+            "category":"escapegame",
+            "activity_name":"Superhero's Adventure",
+            "activity_slug":"superheros-adventure"
+           
+        },
+        {
+            "id":7,
+            "category":"escapegame",
+            "activity_name":"Houdinis Magic Cell",
+            "activity_slug":"houdinis-magic-cell"
+           
+        },
         
+        {
+            "id":9,
+            "category":"escapegame",
+            "activity_name":"Hollywood Premiere",
+            "activity_slug":"hollywood-premiere"
+           
+        },
         
+    
     ],
      // ===================================== east-brunswick-nj END=======
      // =====================================rockaway-nj=======
      "rockaway-nj":[
-        
+
         {
             "id":1,
             "category":"escapegame",
@@ -1229,87 +1231,49 @@ const datalist={
         {
             "id":3,
             "category":"escapegame",
-            "activity_name":"Superhero's Adventure",
-            "activity_slug":"superheros-adventure"
-           
-        },
-        {
-            "id":4,
             "category":"escapegame",
             "activity_name":"Zombie Apocalypse",
             "activity_slug":"zombie-apocalypse"
            
         },
         {
-            "id":5,
-            "category":"escapegame",
-            "activity_name":"Special Agent",
-            "activity_slug":"special-agent"
-           
-        },
-        {
-            "id":6,
-            "category":"escapegame",
-            "activity_name":"Hollywood Premiere",
-            "activity_slug":"hollywood-premiere"
-           
-        },
-        {
-            "id":7,
+            "id":4,
             "category":"escapegame",
             "activity_name":"Sherlock's Library",
             "activity_slug":"sherlocks-library"
            
         },
         {
-            "id":8,
-            "category":"escapegame",
-            "activity_name":"Houdinis Magic Cell",
-            "activity_slug":"houdinis-magic-cell"
-           
-        },
-        {
-            "id":9,
+            "id":5,
             "category":"escapegame",
             "activity_name":"Black Ops",
             "activity_slug":"black-ops"
            
         },
         {
-            "id":10,
+            "id":6,
             "category":"escapegame",
-            "activity_name":"Lost in The jungle",
-            "activity_slug":"lost-in-the-jungle"
+            "activity_name":"Superhero's Adventure",
+            "activity_slug":"superheros-adventure"
            
         },
         {
-            "id":11,
-            "category":"other",
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
-        {
-            "id":12,
+            "id":7,
             "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
+            "activity_name":"Houdinis Magic Cell",
+            "activity_slug":"houdinis-magic-cell"
            
         },
+        
         {
-            "id":13,
+            "id":9,
             "category":"escapegame",
-            "activity_name":"Locked in the Lift",
-            "activity_slug":"locked-in-the-lift"
+            "activity_name":"Hollywood Premiere",
+            "activity_slug":"hollywood-premiere"
            
         },
-        {
-            "id":14,
-            "category":"escapegame",
-            "activity_name":"Magic Castle",
-            "activity_slug":"magic-castle"
-           
-        },
+        
+       
         {
             "id":15,
             "category":"other",
@@ -1317,25 +1281,15 @@ const datalist={
             "activity_slug":"game-show-room"
            
         },
-        {
-            "id":16,
-            "category":"other",
-            "activity_name":"Axe Throwing",
-            "activity_slug":"axe-throwing"
-           
-        },
-        {
-            "id":17,
-            "category":"other",
-            "activity_name":"Beat the Seat",
-            "activity_slug":"beat-the-seat"
-           
-        }
+        
+        
+
+
     ],
      // =====================================rockaway-nj END=======
      // =====================================woodbridge-nj=======
      "woodbridge-nj":[
-        
+
         {
             "id":1,
             "category":"escapegame",
@@ -1353,108 +1307,57 @@ const datalist={
         {
             "id":3,
             "category":"escapegame",
-            "activity_name":"Superhero's Adventure",
-            "activity_slug":"superheros-adventure"
-           
-        },
-        {
-            "id":4,
             "category":"escapegame",
             "activity_name":"Zombie Apocalypse",
             "activity_slug":"zombie-apocalypse"
            
         },
         {
-            "id":5,
-            "category":"escapegame",
-            "activity_name":"Special Agent",
-            "activity_slug":"special-agent"
-           
-        },
-        {
-            "id":6,
-            "category":"escapegame",
-            "activity_name":"Hollywood Premiere",
-            "activity_slug":"hollywood-premiere"
-           
-        },
-        {
-            "id":7,
+            "id":4,
             "category":"escapegame",
             "activity_name":"Sherlock's Library",
             "activity_slug":"sherlocks-library"
            
         },
         {
-            "id":8,
-            "category":"escapegame",
-            "activity_name":"Houdinis Magic Cell",
-            "activity_slug":"houdinis-magic-cell"
-           
-        },
-        {
-            "id":9,
+            "id":5,
             "category":"escapegame",
             "activity_name":"Black Ops",
             "activity_slug":"black-ops"
            
         },
         {
-            "id":10,
+            "id":6,
             "category":"escapegame",
-            "activity_name":"Lost in The jungle",
-            "activity_slug":"lost-in-the-jungle"
+            "activity_name":"Superhero's Adventure",
+            "activity_slug":"superheros-adventure"
            
         },
         {
-            "id":11,
-            "category":"other",
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
-        {
-            "id":12,
+            "id":7,
             "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
+            "activity_name":"Houdinis Magic Cell",
+            "activity_slug":"houdinis-magic-cell"
            
         },
+        
         {
-            "id":13,
+            "id":8,
             "category":"escapegame",
-            "activity_name":"Locked in the Lift",
-            "activity_slug":"locked-in-the-lift"
+            "activity_name":"Special Agent",
+            "activity_slug":"special-agent"
            
         },
         {
-            "id":14,
+            "id":9,
             "category":"escapegame",
-            "activity_name":"Magic Castle",
-            "activity_slug":"magic-castle"
+            "activity_name":"Hollywood Premiere",
+            "activity_slug":"hollywood-premiere"
            
         },
-        {
-            "id":15,
-            "category":"other",
-            "activity_name":"Game Show Room",
-            "activity_slug":"game-show-room"
-           
-        },
-        {
-            "id":16,
-            "category":"other",
-            "activity_name":"Axe Throwing",
-            "activity_slug":"axe-throwing"
-           
-        },
-        {
-            "id":17,
-            "category":"other",
-            "activity_name":"Beat the Seat",
-            "activity_slug":"beat-the-seat"
-           
-        }
+        
+       
+
     ],
      // =====================================woodbridge-nj END=======
      //*****************************************************************************NJ END++++++++++++++++ */
@@ -2218,7 +2121,7 @@ const datalist={
      //*****************************************************************************MD++++++++++++++++ */
      // =====================================lawrenceville-ga=======
      "bowie-md":[
-        
+
         {
             "id":1,
             "category":"escapegame",
@@ -2236,113 +2139,54 @@ const datalist={
         {
             "id":3,
             "category":"escapegame",
-            "activity_name":"Superhero's Adventure",
-            "activity_slug":"superheros-adventure"
-           
-        },
-        {
-            "id":4,
             "category":"escapegame",
             "activity_name":"Zombie Apocalypse",
             "activity_slug":"zombie-apocalypse"
            
         },
         {
-            "id":5,
-            "category":"escapegame",
-            "activity_name":"Special Agent",
-            "activity_slug":"special-agent"
-           
-        },
-        {
-            "id":6,
-            "category":"escapegame",
-            "activity_name":"Hollywood Premiere",
-            "activity_slug":"hollywood-premiere"
-           
-        },
-        {
-            "id":7,
+            "id":4,
             "category":"escapegame",
             "activity_name":"Sherlock's Library",
             "activity_slug":"sherlocks-library"
            
         },
         {
-            "id":8,
-            "category":"escapegame",
-            "activity_name":"Houdinis Magic Cell",
-            "activity_slug":"houdinis-magic-cell"
-           
-        },
-        {
-            "id":9,
+            "id":5,
             "category":"escapegame",
             "activity_name":"Black Ops",
             "activity_slug":"black-ops"
            
         },
         {
-            "id":10,
+            "id":6,
             "category":"escapegame",
-            "activity_name":"Lost in The jungle",
-            "activity_slug":"lost-in-the-jungle"
+            "activity_name":"Superhero's Adventure",
+            "activity_slug":"superheros-adventure"
            
         },
         {
-            "id":11,
-            "category":"other",
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
-        {
-            "id":12,
+            "id":7,
             "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
+            "activity_name":"Houdinis Magic Cell",
+            "activity_slug":"houdinis-magic-cell"
            
         },
+        
         {
-            "id":13,
+            "id":8,
             "category":"escapegame",
-            "activity_name":"Locked in the Lift",
-            "activity_slug":"locked-in-the-lift"
+            "activity_name":"Special Agent",
+            "activity_slug":"special-agent"
            
         },
-        {
-            "id":14,
-            "category":"escapegame",
-            "activity_name":"Magic Castle",
-            "activity_slug":"magic-castle"
-           
-        },
-        {
-            "id":15,
-            "category":"other",
-            "activity_name":"Game Show Room",
-            "activity_slug":"game-show-room"
-           
-        },
-        {
-            "id":16,
-            "category":"other",
-            "activity_name":"Axe Throwing",
-            "activity_slug":"axe-throwing"
-           
-        },
-        {
-            "id":17,
-            "category":"other",
-            "activity_name":"Beat the Seat",
-            "activity_slug":"beat-the-seat"
-           
-        }
+        
+
     ],
      // ===================================== lawrenceville-ga END=======
      // =====================================lawrenceville-ga=======
      "white-marsh-md":[
-        
+
         {
             "id":1,
             "category":"escapegame",
@@ -2360,108 +2204,58 @@ const datalist={
         {
             "id":3,
             "category":"escapegame",
-            "activity_name":"Superhero's Adventure",
-            "activity_slug":"superheros-adventure"
-           
-        },
-        {
-            "id":4,
             "category":"escapegame",
             "activity_name":"Zombie Apocalypse",
             "activity_slug":"zombie-apocalypse"
            
         },
         {
-            "id":5,
-            "category":"escapegame",
-            "activity_name":"Special Agent",
-            "activity_slug":"special-agent"
-           
-        },
-        {
-            "id":6,
-            "category":"escapegame",
-            "activity_name":"Hollywood Premiere",
-            "activity_slug":"hollywood-premiere"
-           
-        },
-        {
-            "id":7,
+            "id":4,
             "category":"escapegame",
             "activity_name":"Sherlock's Library",
             "activity_slug":"sherlocks-library"
            
         },
         {
-            "id":8,
-            "category":"escapegame",
-            "activity_name":"Houdinis Magic Cell",
-            "activity_slug":"houdinis-magic-cell"
-           
-        },
-        {
-            "id":9,
+            "id":5,
             "category":"escapegame",
             "activity_name":"Black Ops",
             "activity_slug":"black-ops"
            
         },
         {
-            "id":10,
+            "id":6,
             "category":"escapegame",
-            "activity_name":"Lost in The jungle",
-            "activity_slug":"lost-in-the-jungle"
+            "activity_name":"Superhero's Adventure",
+            "activity_slug":"superheros-adventure"
            
         },
         {
-            "id":11,
-            "category":"other",
-            "activity_name":"Virtual Reality",
-            "activity_slug":"virtual-reality"
-           
-        },
-        {
-            "id":12,
+            "id":7,
             "category":"escapegame",
-            "activity_name":"Wizarding School",
-            "activity_slug":"wizarding-school"
+            "activity_name":"Houdinis Magic Cell",
+            "activity_slug":"houdinis-magic-cell"
            
         },
+        
         {
-            "id":13,
+            "id":8,
             "category":"escapegame",
-            "activity_name":"Locked in the Lift",
-            "activity_slug":"locked-in-the-lift"
+            "activity_name":"Special Agent",
+            "activity_slug":"special-agent"
            
         },
         {
-            "id":14,
+            "id":9,
             "category":"escapegame",
-            "activity_name":"Magic Castle",
-            "activity_slug":"magic-castle"
+            "activity_name":"Hollywood Premiere",
+            "activity_slug":"hollywood-premiere"
            
         },
-        {
-            "id":15,
-            "category":"other",
-            "activity_name":"Game Show Room",
-            "activity_slug":"game-show-room"
-           
-        },
-        {
-            "id":16,
-            "category":"other",
-            "activity_name":"Axe Throwing",
-            "activity_slug":"axe-throwing"
-           
-        },
-        {
-            "id":17,
-            "category":"other",
-            "activity_name":"Beat the Seat",
-            "activity_slug":"beat-the-seat"
-           
-        }
+        
+       
+
+
     ],
      // ===================================== lawrenceville-ga END=======
      
