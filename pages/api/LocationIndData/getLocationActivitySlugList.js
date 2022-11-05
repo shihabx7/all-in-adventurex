@@ -546,7 +546,7 @@ const datalist={
     //*****************************************************************************NC END++++++++++++++++ */
      // =====================================raleigh-nc ny=======
      "raleigh-nc":[
-        
+
         {
             "id":1,
             "category":"escapegame",
@@ -564,40 +564,47 @@ const datalist={
         {
             "id":3,
             "category":"escapegame",
-            "activity_name":"Superhero's Adventure",
-            "activity_slug":"superheros-adventure"
-           
-        },
-        {
-            "id":4,
             "category":"escapegame",
             "activity_name":"Zombie Apocalypse",
             "activity_slug":"zombie-apocalypse"
            
         },
-       
         {
-            "id":7,
+            "id":4,
             "category":"escapegame",
             "activity_name":"Sherlock's Library",
             "activity_slug":"sherlocks-library"
            
         },
         {
-            "id":8,
-            "category":"escapegame",
-            "activity_name":"Houdinis Magic Cell",
-            "activity_slug":"houdinis-magic-cell"
-           
-        },
-        {
-            "id":9,
+            "id":5,
             "category":"escapegame",
             "activity_name":"Black Ops",
             "activity_slug":"black-ops"
            
         },
-       
+        {
+            "id":6,
+            "category":"escapegame",
+            "activity_name":"Superhero's Adventure",
+            "activity_slug":"superheros-adventure"
+           
+        },
+        {
+            "id":7,
+            "category":"escapegame",
+            "activity_name":"Houdinis Magic Cell",
+            "activity_slug":"houdinis-magic-cell"
+           
+        },
+        
+        
+        
+        
+        
+        
+
+
     ],
      // ===================================== raleigh-nc END=======
      //*****************************************************************************NY END++++++++++++++++ */
