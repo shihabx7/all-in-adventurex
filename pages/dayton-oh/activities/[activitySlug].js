@@ -52,7 +52,7 @@ const LocSingleActivity=(props)=>{
  
                  </div>
  
-             <Footer  location="white marsh, md" locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
+             <Footer  location="dayton, oh" locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
          </>
  
      )
@@ -64,7 +64,7 @@ const LocSingleActivity=(props)=>{
 export default LocSingleActivity
 
 export const getStaticPaths=async()=>{
-    const res= await getLocationActivitySlugList("white-marsh-md");
+    const res= await getLocationActivitySlugList("dayton-oh");
   
     const paths=res.map(activityurlslug=>{
             return {
@@ -84,7 +84,7 @@ export const getStaticPaths=async()=>{
     //var router = useRouter()
    // routerSlug=routerSlug.split('-')
   
-    const locationHomedata=getLocationSingleActivitypageData(context.params.activitySlug,"white-marsh-md")
+    const locationHomedata=getLocationSingleActivitypageData(context.params.activitySlug,"dayton-oh")
    
 
 
