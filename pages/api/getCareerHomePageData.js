@@ -27,7 +27,7 @@ export const getCareerHomePageData=()=>{
             {
                 "id":1,
                 "job_slug":"associate",
-                "job_title":"Associate",
+                "job_title":"ASSOCIATE",
                 "short_desc":"The Associate is the guest experience specialist, who is each guest's first and last impression of All In Adventures! This position serves as the vitally important liaison between our guests and our team. The ideal candidate will greet new guests as they arrive and inquire about the experience after the game."
                
             },
