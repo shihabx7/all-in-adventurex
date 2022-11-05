@@ -3,7 +3,10 @@ export const getAllEvents=()=>{
 
     const eventsData={
 
-       "locationlist":getTotal().locationlist,
+      "locationlist":getTotal().locationlist,
+      "activitylistSlug":getTotal().activitylistSlug,
+       "eventlistSlug":getTotal().eventlistSlug,
+       "virtualgameListSlug":getTotal().virtualgameSlug,
         "pagemeta":{
 
             "matatilte":"title",
@@ -12,8 +15,8 @@ export const getAllEvents=()=>{
           },
            
           "pagedata": {
-                        "pagetitle":"ALL GROUP EVENTS AND PARTIES",
-                        "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
+                        "pagetitle":"PARTIES, EVENTS AND SPECIAL OCCASIONS",
+                        "pagesubtitle":"Celebrate any special event at All In Adventures escape rooms! Team up with your family, friends, kids, co-workers, and anybody and everybody for an incredible memory to last forever. Whether they are 6 or 99, we have something for everyone.",
                          
                         "totalLocations": getTotal().totalLocations,
                         "totalUniqueGames": getTotal().uniqueGames,
@@ -108,7 +111,7 @@ export const getAllEvents=()=>{
                                 
                               {
                                 "id":12,
-                                "event_name":"School Party",
+                                "event_name":"SCHOOL EVENTS / FIELD TRIPS",
                                 "event_desc":"Students exercise critical thinking and act to become the super-spies they see in the movies!",
                                 "event_slug":"school-events",
                                 "event_cover_image":"/assets/all-event-list/allinadventures-events-school-event-card.jpg",

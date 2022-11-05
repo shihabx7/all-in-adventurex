@@ -554,71 +554,7 @@ const activityDataset={
             ]
       },
       //============================================houdinis-magic-cell 8
-       //============================================magic-castle 9
-       "magic-castle":{
-        "activityname":"Magic Castle",
-        "pagesubtitle":"Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
-        "price":"29.89",
-        "duration":"50",
-        "max_players":"10",
-        "min_players":"2",
-        "coverimageL":"/assets/all-game-desktop-hero/allinadventures-magic-castle.jpg",
-        "coverimageM":"/assets/all-game-mobile-hero/allinadventures-magic-castle.jpg",
-        "coverimageM_alt":"allinadventures magic castle",
-        
-        "pagemeta":{
-    
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
-        "activitydata":{
-          "story":"The Magic Castle is known as one of the toughest entrance exams any wizard can take. Any aspiring wizard who wants to get out of the muggle world must take this exam. The waiting list spans years and you have just received your entrance letter giving you your chance at the test.",
-          "storyimg":"/assets/all-game-details/allinadventures-magic-castle-storyline.png",
-          "storyimg_alt":"allinadventures-magic-castle-storyline",
-          "scene":"While it is exciting, you must take this test seriously. Failing this test means returning to the muggle world and getting put at the bottom of the waitlist. You have 60 minutes to take the exam and complete all tasks. Now is the time to show off all of your studying!",
-          "sceneimg":"/assets/all-game-details/allinadventures-magic-castle-plot.png",
-          "storyimg_alt":"allinadventures-magic-castle-plot",
-          "mission":"Pass the exam and earn your spot in the Magic Castle! Your exam is timed and the 60 minutes will be up before you know it. Listen closely to all directions and complete all tasks in time to secure your place.",
-          "missionimg":"/assets/all-game-details/allinadventures-houdinis-magic-cell-mission.png",
-          "missionimg_alt":"allinadventures-houdinis-magic-cell-mission",
-          "videoid":"pfdyF_d4Z40"
-          
-          },
-          "activitygallery":[
-            {
-            "id":1,
-            "img":"/assets/game-gallery/allinadventures-magic-castle-gallery-1.jpg",
-            "img_alt":"allinadventures-magic-castle-gallery-1"
-            },
-            {
-            "id":2,
-            "img":"/assets/game-gallery/allinadventures-magic-castle-gallery-2.jpg",
-            "img_alt":"allinadventures-magic-castle-gallery-2"
-            },
-            {
-            "id":3,
-            "img":"/assets/game-gallery/allinadventures-magic-castle-gallery-3.jpg",
-            "img_alt":"allinadventures-magic-castle-gallery-3"
-            },
-            {
-            "id":4,
-            "img":"/assets/game-gallery/allinadventures-magic-castle-gallery-4.jpg",
-            "img_alt":"allinadventures-magic-castle-gallery-4"
-            },
-            {
-            "id":5,
-            "img":"/assets/game-gallery/allinadventures-magic-castle-gallery-5.jpg",
-            "img_alt":"allinadventures-magic-castle-gallery-5"
-            },
-            {
-            "id":6,
-            "img":"/assets/game-gallery/allinadventures-magic-castle-gallery-6.jpg",
-            "img_alt":"allinadventures-magic-castle-gallery-6"
-            }
-            ]
-      },
-      //============================================magic-castle end 9
+      
       //============================================black-ops 10
       "black-ops":{
         "activityname":"Black Ops",
@@ -642,7 +578,7 @@ const activityDataset={
           "storyimg":"/assets/all-game-details/allinadventures-black-ops-storyline.png",
           "storyimg_alt":"allinadventures-black-ops-storyline",
           "scene":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
-          "sceneimg":"/assets/all-game-details/allinadventures-black-ops-plot",
+          "sceneimg":"/assets/all-game-details/allinadventures-black-ops-plot.png",
           "sceneimg_alt":"allinadventures-black-ops-plot",
           "mission":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
           "missionimg":"/assets/all-game-details/allinadventures-black-ops-mission.png",
@@ -815,6 +751,71 @@ const activityDataset={
             ]
       },
       //============================================wizarding-school end 13
+       //============================================magic-castle 9
+       "magic-castle":{
+        "activityname":"Magic Castle",
+        "pagesubtitle":"Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
+        "price":"29.89",
+        "duration":"50",
+        "max_players":"10",
+        "min_players":"2",
+        "coverimageL":"/assets/all-game-desktop-hero/allinadventures-magic-castle.jpg",
+        "coverimageM":"/assets/all-game-mobile-hero/allinadventures-magic-castle.jpg",
+        "coverimageM_alt":"allinadventures magic castle",
+        
+        "pagemeta":{
+    
+          "matatilte":"title",
+          "metakeyword":"keywords",
+          "metadescription":"metadescription"
+        },
+        "activitydata":{
+          "story":"The Magic Castle is known as one of the toughest entrance exams any wizard can take. Any aspiring wizard who wants to get out of the muggle world must take this exam. The waiting list spans years and you have just received your entrance letter giving you your chance at the test.",
+          "storyimg":"/assets/all-game-details/allinadventures-magic-castle-storyline.png",
+          "storyimg_alt":"allinadventures-magic-castle-storyline",
+          "scene":"While it is exciting, you must take this test seriously. Failing this test means returning to the muggle world and getting put at the bottom of the waitlist. You have 60 minutes to take the exam and complete all tasks. Now is the time to show off all of your studying!",
+          "sceneimg":"/assets/all-game-details/allinadventures-magic-castle-plot.png",
+          "storyimg_alt":"allinadventures-magic-castle-plot",
+          "mission":"Pass the exam and earn your spot in the Magic Castle! Your exam is timed and the 60 minutes will be up before you know it. Listen closely to all directions and complete all tasks in time to secure your place.",
+          "missionimg":"/assets/all-game-details/allinadventures-houdinis-magic-cell-mission.png",
+          "missionimg_alt":"allinadventures-houdinis-magic-cell-mission",
+          "videoid":"pfdyF_d4Z40"
+          
+          },
+          "activitygallery":[
+            {
+            "id":1,
+            "img":"/assets/game-gallery/allinadventures-magic-castle-gallery-1.jpg",
+            "img_alt":"allinadventures-magic-castle-gallery-1"
+            },
+            {
+            "id":2,
+            "img":"/assets/game-gallery/allinadventures-magic-castle-gallery-2.jpg",
+            "img_alt":"allinadventures-magic-castle-gallery-2"
+            },
+            {
+            "id":3,
+            "img":"/assets/game-gallery/allinadventures-magic-castle-gallery-3.jpg",
+            "img_alt":"allinadventures-magic-castle-gallery-3"
+            },
+            {
+            "id":4,
+            "img":"/assets/game-gallery/allinadventures-magic-castle-gallery-4.jpg",
+            "img_alt":"allinadventures-magic-castle-gallery-4"
+            },
+            {
+            "id":5,
+            "img":"/assets/game-gallery/allinadventures-magic-castle-gallery-5.jpg",
+            "img_alt":"allinadventures-magic-castle-gallery-5"
+            },
+            {
+            "id":6,
+            "img":"/assets/game-gallery/allinadventures-magic-castle-gallery-6.jpg",
+            "img_alt":"allinadventures-magic-castle-gallery-6"
+            }
+            ]
+      },
+      //============================================magic-castle end 9
       //============================================locked-in-the-Lift 14
       "locked-in-the-lift":{
         "activityname":"Locked in the Lift",

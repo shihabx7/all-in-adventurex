@@ -31,7 +31,9 @@ const showAllevents=(props)=>{
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
-           <Homenav locationlist={props.locationlist}/>
+           <Homenav locationlist={props.locationlist}
+           activitylist={props.activitylist}
+           eventlist={props.eventlist}/>
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}
@@ -50,7 +52,7 @@ const showAllevents=(props)=>{
          
           <GameHomeHero pagedata={props.pagedata}/>
           <EventList events={props.events}/>
-          <EventContact/>
+          <EventContact locationlist={props.locationlist} eventlist={props.eventlist}/>
 
   {
       console.log(props)
@@ -76,7 +78,10 @@ export const getStaticProps=async()=>{
       pagemeta:eventsData.pagemeta,
       pagedata:eventsData.pagedata,
       events:eventsData.events_list,
-      locationlist:eventsData.locationlist
+      locationlist:eventsData.locationlist,
+      activitylist:eventsData.activitylistSlug,
+      eventlist:eventsData.eventlistSlug
+
     }
   }
 }

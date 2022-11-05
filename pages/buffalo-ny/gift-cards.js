@@ -12,7 +12,7 @@ import WhyAdvGiftCards from '../../comps/giftCardPageComps/WhyAdvGiftCards';
 import BuyLocGift from '../../comps/activitiyPageComps/BuyLocGift';
 
 const viewLocGift=(props)=>{
- 
+   
     const getLoc=(slug)=>{
        
         
@@ -55,10 +55,10 @@ const viewLocGift=(props)=>{
                          <WhyAdvGiftCards locationslug={props.pagedata.locationslug} bookingdata={props.pagedata.bookingdata}/>
                          <GiftFaq faqlist={props.faqlist}/>
                             
-                            
+                           
                  </div>
  
-             <Footer  location={getLoc(props.pagedata.locationslug)}/>
+             <Footer  location={getLoc(props.pagedata.locationslug)} locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
         
         </>
     )
@@ -80,7 +80,8 @@ export const getStaticProps=async()=>{
           pagemeta:locationGiftdata.pagemeta,
           faqlist:locationGiftdata.gift_faq,
           activitylist:locationGiftdata.activitylist,
-          eventlist:locationGiftdata.eventlist
+          eventlist:locationGiftdata.eventlist,
+          locationlist:locationGiftdata.locationlist
          
         },
         revalidate: 30

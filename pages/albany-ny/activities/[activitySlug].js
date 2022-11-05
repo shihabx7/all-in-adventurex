@@ -26,6 +26,7 @@ const LocSingleActivity=(props)=>{
                         location={props.pagedata.location_serach_name}
                         activitylist={props.activitylist}
                         eventlist={props.eventlist}
+                        locationlist={props.locationlist}
                         />
                  <div id="mainContent" className='main-content'>
  
@@ -51,7 +52,7 @@ const LocSingleActivity=(props)=>{
  
                  </div>
  
-             <Footer  location="albany, ny"/>
+             <Footer  location="albany, ny" locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
          </>
  
      )
@@ -94,7 +95,9 @@ export const getStaticPaths=async()=>{
           activitydata:locationHomedata.activitydata,
           activitygallery:locationHomedata.activitygallery,
           activitylist:locationHomedata.activitylist,
-          eventlist:locationHomedata.eventlist
+          eventlist:locationHomedata.eventlist,
+          eventlist:locationHomedata.eventlist,
+          locationlist:locationHomedata.locationlist
          
         },
         revalidate: 30

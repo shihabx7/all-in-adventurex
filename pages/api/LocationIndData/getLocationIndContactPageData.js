@@ -2,6 +2,7 @@ import { bookingList } from "./bookingList"
 import { getLocationsPageData } from "../getLocationsPageData"
 import { getLocationActivitySlugList } from "./getLocationActivitySlugList"
 import { getLocationEventSlugList } from "./getLocationEventSlugList"
+import { getLocTotal } from "../AllDataList/getLocTotal"
 export const getLocationIndContactPageData=(locationslug)=>{
 
     const bookinData=bookingList('',locationslug)
@@ -36,14 +37,14 @@ export const getLocationIndContactPageData=(locationslug)=>{
           },
            
         "pagedata":{
-            "pagetitle":"CONTACT "+locationslug.split('-').join(' ')+" STORE",
-            "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
-            "totalLocation":"28",
+            "pagetitle":"CONTACT ALL IN ADVENTURES "+locationslug.split('-').join(' ')+" STORE",
+            "pagesubtitle":"Our team is here to help you. Contact us with any questions you have about an upcoming or previous experience. Before reaching out, we recommend you check our <a href=\"/faq\" class=\"text-gold hover:text-blue-700\">FAQs</a> page first to see if your question has been answered.",
+            
             "locationslug":getLocSpec(locationslug).slug,
             "mall":getLocSpec(locationslug).mall,
             "location_name":locationName(locationslug),
-            "coverimageL":"/assets/home-benar-bg.jpg",
-            "coverimageM":"/assets/home-hero.jpg",
+            "coverimageL":"/assets/allinadventures-store-contact-hero.jpg",
+            "coverimageM":"/assets/gn-mobile-hero/allinadventures-store-contact-hero.jpg",
            
             "bookingall":{
                 "shortname":bookinData.shortname,
@@ -53,9 +54,10 @@ export const getLocationIndContactPageData=(locationslug)=>{
            
         },
         "contactdata":getLocSpec(locationslug),
-        "activitylist":getLocationActivitySlugList(locationslug),
-        "eventlist":getLocationEventSlugList(locationslug),
-    
+        "activitylist":getLocTotal(locationslug).activitylistSlug,
+        "eventlist":getLocTotal(locationslug).eventlistSlug,
+        "locationlist":getLocTotal(locationslug).locationlist,
+        "totalLocations":getLocTotal(locationslug).totalLocations,
     }
 
     return contactPageData

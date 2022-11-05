@@ -19,7 +19,7 @@ const LocationSingleEvent=(props)=>{
                      location={props.pagedata.location_serach_name}
                      activitylist={props.activitylist}
                      eventlist={props.eventlist}
-                     
+                     locationlist={props.locationlist}
                      />
                 <div id="mainContent" className='main-content'>
 
@@ -39,14 +39,14 @@ const LocationSingleEvent=(props)=>{
                         {console.log(props.pagedata)}
                         <GameLocHero pagedata={props.pagedata} eventslug={props.pagedata.slug}/>
                         <EventDetails eventdata={props.eventdata} eventname={props.pagedata.eventname}/>
-                        <EventContact contactdata={props.contactdata} eventname={props.pagedata.event_name}/>
+                        <EventContact contactdata={props.contactdata} eventname={props.pagedata.event_name} eventslug={props.pagedata.event_slug} locationlist={props.locationlist} eventlist={props.eventlist}/>
                         <HomeReviewSlider reviews={props.reviews}/>
                         
                      
 
                 </div>
 
-            <Footer  location="albany, ny"/>
+            <Footer  location="buffalo, ny" locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
         </>
 
     )
@@ -86,7 +86,8 @@ export const getStaticPaths=async()=>{
           reviews:eventsingleData.reviews,
           contactdata:eventsingleData.contactdata,
           activitylist:eventsingleData.activitylist,
-          eventlist:eventsingleData.eventlist
+          eventlist:eventsingleData.eventlist,
+          locationlist:eventsingleData.locationlist,
 
          
         },

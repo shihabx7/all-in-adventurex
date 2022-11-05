@@ -10,7 +10,7 @@ import StoreContact from '../../comps/contactComps/StoreContact';
 
 
 const ViewContactStore=(props)=>{
-  
+    
     const getLoc=(slug)=>{
        
         
@@ -22,7 +22,6 @@ const ViewContactStore=(props)=>{
         return locname+", "+st
     }
 
-
     return(
         <>
             <Homenav locationslug={props.pagedata.locationslug}
@@ -30,6 +29,7 @@ const ViewContactStore=(props)=>{
                       bookingall={props.pagedata.bookingall}
                       activitylist={props.activitylist}
                       eventlist={props.eventlist}
+                      locationlist={props.locationlist}
                       />
                  <div id="mainContent" className='main-content'>
  
@@ -51,13 +51,11 @@ const ViewContactStore=(props)=>{
                          
                        
                          
-                             {
-                                console.log(props.pagedata)
-                             }
+                            
  
                  </div>
  
-             <Footer  location={getLoc(props.pagedata.locationslug)}/>
+             <Footer  location={getLoc(props.pagedata.locationslug)} locationlist={props.locationlist} totallocations={props.totalLocations}/>
         
         </>
     )
@@ -79,7 +77,9 @@ export const getStaticProps=async()=>{
           pagemeta:locationContactdata.pagemeta,
           contactdata:locationContactdata.contactdata,
           activitylist:locationContactdata.activitylist,
-          eventlist:locationContactdata.eventlist
+          eventlist:locationContactdata.eventlist,
+          locationlist:locationContactdata.locationlist,
+          totalLocations:locationContactdata.totalLocations
           
          
         },

@@ -29,6 +29,7 @@ const ViewContactStore=(props)=>{
                       bookingall={props.pagedata.bookingall}
                       activitylist={props.activitylist}
                       eventlist={props.eventlist}
+                      locationlist={props.locationlist}
                       />
                  <div id="mainContent" className='main-content'>
  
@@ -54,7 +55,7 @@ const ViewContactStore=(props)=>{
  
                  </div>
  
-             <Footer  location={getLoc(props.pagedata.locationslug)}/>
+             <Footer  location={getLoc(props.pagedata.locationslug)} locationlist={props.locationlist} totallocations={props.totalLocations}/>
         
         </>
     )
@@ -76,7 +77,9 @@ export const getStaticProps=async()=>{
           pagemeta:locationContactdata.pagemeta,
           contactdata:locationContactdata.contactdata,
           activitylist:locationContactdata.activitylist,
-          eventlist:locationContactdata.eventlist
+          eventlist:locationContactdata.eventlist,
+          locationlist:locationContactdata.locationlist,
+          totalLocations:locationContactdata.totalLocations
           
          
         },

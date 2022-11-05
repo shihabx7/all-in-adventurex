@@ -35,6 +35,7 @@ const LocActivity=(props)=>{
                       location={getLoc(props.pagedata.locationslug)}
                     activitylist={props.activitylistSlug}
                     eventlist={props.eventlistSlug}
+                    locationlist={props.locationlist}
              />
                  <div id="mainContent" className='main-content'>
  
@@ -53,12 +54,12 @@ const LocActivity=(props)=>{
                          {/* ===========Page Content here========= */}
                          <GameLocHero pagedata={props.pagedata}/>
                          <GameLocList activitylist={props.activitylist} locationslug={props.pagedata.locationslug} bookingdata={props.bookingdata}/>
-                            =
+                           
  
                  </div>
  
-          pagedata:locationHomedata.pagedata,
-             <Footer  location={getLoc(props.pagedata.locationslug)}/>
+         
+             <Footer  location={getLoc(props.pagedata.locationslug)} locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
          </>
  
      )
@@ -84,7 +85,8 @@ export const getStaticProps=async(context)=>{
           activitylist:locationHomedata.activity_list,
           bookingdata:locationHomedata.bookingdata,
           activitylistSlug:locationHomedata.activitylist,
-          eventlistSlug:locationHomedata.eventslist
+          eventlistSlug:locationHomedata.eventslist,
+          locationlist:locationHomedata.locationlist,
 
          
         },

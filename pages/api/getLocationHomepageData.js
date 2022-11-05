@@ -835,7 +835,20 @@ const locPagedata={
       "slug"  :"black-ops",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg"
      },
-     
+     {
+      "id":6,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Superhero's Adventure",
+      "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
+      "age":"All age",
+      "duration":"50",
+      "maxplayers":"10",
+      "minplayers":"2",
+      "price":"29.89",
+      "slug"  :"superheros-adventure",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg"
+     },
      {
       "id":7,
       "category":"escapegame",
@@ -879,6 +892,20 @@ const locPagedata={
       "slug"  :"hollywood-premiere",
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
      }, 
+     {
+      "id":11,
+      "category":"escapegame",
+      "type": "In person",
+      "title": "Wizarding School ",
+      "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office!",
+      "age":"All age",
+      "duration":"60",
+      "maxplayers":"4",
+      "minplayers":"2",
+      "price":"39.95",
+      "slug"  :"wizarding-school",
+      "bgimg" :"/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg"
+     },
      
       ],
    "otherphysicalgames": [

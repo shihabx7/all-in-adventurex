@@ -1,7 +1,7 @@
 import { getLocationsPageData } from "../getLocationsPageData"
 import { bookingList } from "./bookingList"
 import { getLocationActivitySlugList } from "./getLocationActivitySlugList"
-import { getLocationEventSlugList } from "./getLocationEventSlugList"
+import { getTotal } from "../AllDataList/getTotal"
 
 export const getLocationsEventList=(locationslug)=>{
 
@@ -35,26 +35,42 @@ export const getLocationsEventList=(locationslug)=>{
       }
    }
    
+   const cityName=(loc)=>{
+    var ctname=loc.split("-")
+    var st=ctname[ctname.length-1].toUpperCase()
+    var ct=''
 
+    if(ctname.length>2){
+        for(var i=0;i<ctname.length-2 ;i++){
+            ct=ctname[i].charAt(0).toUpperCase()+ctname[i].slice(1)+' '
+        }
+    }
+    else{
+        ct=ctname[0].charAt(0).toUpperCase()+ctname[0].slice(1)+' '
+    }
+
+    return ct+st
+}
 
     const eventsData={
 
        
         "pagemeta":eventdatalist[locname].pagemeta,
+        "locationlist":getTotal().locationlist,
+        "eventlistSlug":getTotal().eventlistSlug,
            
           "pagedata": {
-                        "pagetitle":"ALL GROUP EVENTS AND PARTIES",
+                        "pagetitle":"PARTIES, EVENTS AND SPECIAL OCCASIONS IN "+cityName(locationslug),
                         "locationslug":locationslug,
                         "location_name":locationslug.split('-').join(' '),
                         "mall":getLocSpec(locationslug).mall,
-                        "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
-                         "totalLocation":totalLocation(),
-                        "totalLocations": "2",
-                        "totalUniqueGames": "11",
-                        "totalFiveStarReview": "60k+",
-                        "totalPlayerEscaped": "90k+",
-                        "coverimageL":eventdatalist[locname].coverimageL,
-                        "coverimageM":eventdatalist[locname].coverimageM,
+                        "pagesubtitle":"Celebrate any special event at All In Adventures escape rooms in "+cityName(locationslug)+"! Team up with your family, friends, kids, co-workers, and anybody and everybody for an incredible memory to last forever. Whether they are 6 or 99, we have something for everyone.",
+                        "totalLocations": getTotal().totalLocations,
+                        "totalUniqueGames": getTotal().uniqueGames,
+                        "totalFiveStarReview": getTotal().totalReview,
+                        "totalPlayerEscaped": getTotal().toalPlayerEscape,
+                        "coverimageL":"/assets/all-event-desktop-hero/All-Event-Page-Hero-Image-desktop.jpg",
+                        "coverimageM":"/assets/all-event-mobile-hero/All-Event-Page-Hero-Image.jpg",
                         "bookingall":{
                           "shortname":bookinglist.shortname,
                           
@@ -63,10 +79,10 @@ export const getLocationsEventList=(locationslug)=>{
 
           },
 
-          "events_list":eventdatalist[locname].events_list,
+          "events_list":allEventlist,
           "contactdata":getLocSpec(locationslug),
           "activitylist":getLocationActivitySlugList(locationslug),
-          "eventlist":getLocationEventSlugList(locationslug)
+       
     
 }
 
@@ -75,6 +91,109 @@ return eventsData
 
 
 // ============================data set===================================
+
+const allEventlist=[
+  {
+    "id":1,
+    "event_name":"BIRTHDAY PARTIES",
+    "event_desc":"A perfect party venue for the young at heart. No matter your age, get an unforgettable adventure!",
+    "event_slug":"birthday-party",
+    "event_cover_image":"/assets/all-event-list/allinadventures-events-birthday-party-card.jpg",
+   },
+
+    {
+      "id":2,
+      "event_name":"TEAM BUILDING ",
+      "event_desc":"This fun and exciting interactive form of team building will bring your corporate team closer!",
+      "event_slug":"team-building",
+      "event_cover_image":"/assets/all-event-list/allinadventures-events-team-building-card.jpg",
+  },
+  {
+    "id":3,
+    "event_name":"Corporate Party",
+    "event_desc":"Instead of a dreary meeting on how to work effectively, why not take a crack at a puzzle?",
+    "event_slug":"corporate-events",
+    "event_cover_image":"/assets/all-event-list/allinadventures-events-corporate-events-card.jpg",
+ },
+ {
+  "id":4,
+  "event_name":"FAMILY FUN ACTIVITIES",
+  "event_desc":"A unique family fun activity with intense real-life puzzles where you have to work together to progress!",
+  "event_slug":"family-fun-activity",
+  "event_cover_image":"/assets/all-event-list/allinadventures-events-family-fun-activities-card.jpg",
+  },
+   {
+     "id":5,
+     "event_name":"Bachelor Party",
+     "event_desc":"There's no better way to bond with your bachelor party before the big day — no scandals, just nonstop thrills!",
+     "event_slug":"bachelor-party",
+     "event_cover_image":"/assets/all-event-list/allinadventures-events-bachelor-party-card.jpg",
+    },
+
+     {
+         "id":6,
+         "event_name":"BACHELORETTE PARTIES",
+         "event_desc":"Fun-filled bachelorette party without any drama that will be something long remembered by everyone!",
+         "event_slug":"bachelorette-party",
+         "event_cover_image":"/assets/all-event-list/allinadventures-events-bachelorette-party-card.jpg",
+     },
+     {
+      "id":7,
+      "event_name":"PROPOSAL PARTY",
+      "event_desc":"A distinctive way to propose marriage where the mystery game ends with the ring in the final clue box!",
+      "event_slug":"proposal-party",
+      "event_cover_image":"/assets/all-event-list/allinadventures-events-proposal-party-card.jpg",
+    },
+    {
+      "id":8,
+      "event_name":"DATE NIGHT / NIGHT OUT",
+      "event_desc":"Work together and find clues to solve the mystery that will ultimately strengthen your relationship!",
+      "event_slug":"date-night",
+      "event_cover_image":"/assets/all-event-list/allinadventures-events-date-night-card.jpg",
+    },
+
+    {
+      "id":9,
+      "event_name":"Private Party",
+      "event_desc":"Adventure awaits for all — your family, friends, office, indoor party, church group, fraternity or sorority.",
+      "event_slug":"private-party",
+      "event_cover_image":"/assets/all-event-list/allinadventures-events-private-party-card.jpg",
+  },
+  {
+    "id":10,
+    "event_name":"Reunion Party",
+    "event_desc":"Each game is interactive and has engaging qualities that give your reunion party an epic adventure!",
+    "event_slug":"reunion-party",
+    "event_cover_image":"/assets/all-event-list/allinadventures-events-reunion-party-card.jpg",
+  },
+  {
+    "id":11,
+    "event_name":"Graduation Party",
+    "event_desc":"Graduation is such an exciting time, no matter your age and you deserve to celebrate it in a memorable way",
+    "event_slug":"graduation-party",
+    "event_cover_image":"/assets/all-event-list/allinadventures-events-graduation-party-card.jpg",
+  },
+  
+      
+    {
+      "id":12,
+      "event_name":"School Party",
+      "event_desc":"Students exercise critical thinking and act to become the super-spies they see in the movies!",
+      "event_slug":"school-events",
+      "event_cover_image":"/assets/all-event-list/allinadventures-events-school-event-card.jpg",
+  },
+{
+  "id":13,
+  "event_name":"GENDER REVEAL PARTY",
+  "event_desc":"Instead of simply sharing the news of your baby's gender, why not a fun way to announce it through puzzles?",
+  "event_slug":"gender-reveal-party",
+  "event_cover_image":"/assets/all-event-list/allinadventures-events-gender-reveal-party-card.jpg",
+},
+
+
+
+
+]
 
 const eventdatalist={
   //====================================********************************************NY=====================

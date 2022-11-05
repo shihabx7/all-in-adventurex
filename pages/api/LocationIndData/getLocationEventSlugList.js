@@ -78,7 +78,7 @@ export const getLocationEventSlugList=(locationslug)=>{
     
     {
         "id":12,
-        "event_name":"School Events",
+        "event_name":"School Events / Field Trips ",
         "event_slug":"school-events"
        
     },

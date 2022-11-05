@@ -118,7 +118,7 @@ const Footer=(props)=>{
                        {/*========================================= footer social ================ */}     
                        {/*========================================= footer copy ================ */}    
                             <div className='copy-text text-center py-8'> 
-                                <p className='text-[#858585] text-xs md:text-base'> &copy;Copyright All In Adventures | All Rights Reserved.</p>
+                                <p className='text-[#858585] text-xs md:text-base'> &copy; Copyright All In Adventures | All Rights Reserved.</p>
                                 <div className='term-policy flex justify-center space-x-2 items-center mt-2'> 
                                     <Link href="/privacy-policy"> 
                                         <a className='text-gray-600 hover-golden text-xs md:text-base'>Privacy policy</a>

@@ -58,7 +58,7 @@ const viewLocGift=(props)=>{
                            
                  </div>
  
-             <Footer  location={getLoc(props.pagedata.locationslug)}/>
+             <Footer  location={getLoc(props.pagedata.locationslug)} locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
         
         </>
     )
@@ -80,7 +80,8 @@ export const getStaticProps=async()=>{
           pagemeta:locationGiftdata.pagemeta,
           faqlist:locationGiftdata.gift_faq,
           activitylist:locationGiftdata.activitylist,
-          eventlist:locationGiftdata.eventlist
+          eventlist:locationGiftdata.eventlist,
+          locationlist:locationGiftdata.locationlist
          
         },
         revalidate: 30

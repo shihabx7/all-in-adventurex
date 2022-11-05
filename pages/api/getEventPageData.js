@@ -19,6 +19,7 @@ export const geEventPagetData=(slug)=>{
            
         "pagedata":{
             "pagetitle":"ESCAPE ROOM "+eventName,
+            "event_slug":slug,
             "event_name":eventName,
             "pagesubtitle":eventIndData[slug].pagesubtitle,
             "coverimageL":eventIndData[slug].coverimageL,
@@ -28,7 +29,7 @@ export const geEventPagetData=(slug)=>{
             "age":eventIndData[slug].age,
             "max_players":eventIndData[slug].max_players,
             "min_players":eventIndData[slug].min_players,
-            "eventname":eventName,
+            
             "totalUniqueGames":getTotal().uniqueGames
         },
         "eventdata":eventIndData[slug].eventdata,

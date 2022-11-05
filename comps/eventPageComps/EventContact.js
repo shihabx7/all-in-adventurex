@@ -1,8 +1,19 @@
-import { useState,useEffect,useRef } from "react"
+import React, { useState,useEffect,useRef } from "react"
 import {FiMapPin,FiChevronDown,FiClock,FiX } from "react-icons/fi"
 import TitleSeparator from "../util/TitleSeparator"
 const EventContact=(props)=>{
         const[showHour,setShwoHour]=useState(false)
+        const [locationSelect, setLocationSelect]=useState('0')
+        const [eventSelect, setEventSelect]=useState('0')
+        const [nameErr,setNameErr]=useState(false)
+        const [lnameErr,setLnameErr]=useState(false)
+        const [emailErr,setEmailErr]=useState(false)
+        const [phoneErr,setPhoneErr]=useState(false)
+        const [guestErr,setGuestErr]=useState(false)
+        const [timeErr,setTimeErr]=useState(false)
+        const [eventErr,setEventErr]=useState(false)
+        const [dateErr,setDateErr]=useState(false)
+        const [locationErr,setLocationErr]=useState(false)
         const ref=useRef()
             useEffect(() => {
                   const checkIfClickedOutside = e => {
@@ -53,6 +64,35 @@ const EventContact=(props)=>{
         var scity=slug.split('-')
         var st=scity[scity.length-1].toString().toUpperCase()
         return st
+      }
+     
+      const getLocationOptions=(locationlist)=>{
+            var i=0
+            var j=0
+            var id=1
+           var locarr=[]
+            for(i=0;i<locationlist.length;i++){
+               
+                    for(j=0;j<locationlist[i].cities.length;j++){
+                        locarr.push({"id":id,
+                        "city":locationlist[i].cities[j].city+", "+locState(locationlist[i].cities[j].slug),
+                        "email":locationlist[i].cities[j].email,
+                        "slug":locationlist[i].cities[j].slug
+                        })
+                        id++
+                    }        
+              
+            }
+            console.log(locarr)
+           return locarr
+      }
+      const locationHandleChange=(e)=>{
+       
+        setLocationSelect(e.target.value);
+      }
+      const eventHandleChange=(e)=>{
+        
+        setEventSelect(e.target.value);
       }
         return (
             <div  id="eventform" className="event-contact py-16 md:py-20 lg:py-28 relative overflow-hidden" style={{
@@ -205,11 +245,18 @@ const EventContact=(props)=>{
                                                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between ">
                                                     <div className="form-col w-full md:w-[48%]">
                                                         <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your first name? *</p>
-                                                        <input type="text" className="w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Your first name" required></input>
+                                                        <input type="text" className="w-full event-input  border-0 md:py-3 px-4 bg-white" style={{border: nameErr? "1px solid red":'none'}} placeholder="Your first name" required></input>
+                                                        {   nameErr &&
+                                                                 <p className="text-red-600 mt-1 text-sm md:text-md">Only letter and space allowed</p>
+                                                        }
+                                                       
                                                     </div>
                                                     <div className="form-col w-full md:w-[48%]">
                                                         <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your last name? *</p>
-                                                        <input type="text" className=" w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Your last name" required></input>
+                                                        <input type="text" className=" w-full event-input  border-0 md:py-3 px-4 bg-white" style={{border: lnameErr? "1px solid red":'none'}} placeholder="Your last name" required></input>
+                                                        {   lnameErr &&
+                                                                 <p className="text-red-600 mt-1 text-sm md:text-md">Only letter and space allowed</p>
+                                                        }
                                                     </div>
                                                 </div>
                                          {/*======================================contact form row====================== */}
@@ -217,11 +264,17 @@ const EventContact=(props)=>{
                                                 <div className="form-row flex flex-col space-y-3 md:flex-row md:space-y-0 justify-between my-3 md:my-4 ">
                                                     <div className="form-col w-full md:w-[48%]">
                                                         <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your email? *</p>
-                                                        <input type="text" className="w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Your email address" required></input>
+                                                        <input type="email" className="w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Your email address" required></input>
+                                                        {   emailErr &&
+                                                                 <p className="text-red-600 mt-1 text-sm md:text-md">Invalid email adress</p>
+                                                        }
                                                     </div>
                                                     <div className="form-col  w-full md:w-[48%]">
                                                         <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your phone number? *</p>
                                                         <input type="text" className=" w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Your phone number" required></input>
+                                                        {   phoneErr &&
+                                                                 <p className="text-red-600 mt-1 text-sm md:text-md">Invalid phone number</p>
+                                                        }
                                                     </div>
                                                 </div>
                                                 {/*======================================contact form row====================== */}
@@ -229,16 +282,29 @@ const EventContact=(props)=>{
                                                <div className="form-row flex  flex-col space-y-3 md:flex-row  md:space-y-0 justify-between my-3 md:my-4 ">
                                                     <div className="form-col w-full md:w-[48%]">
                                                         <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Select your event type: *</p>
-                                                        <select type="text" className="w-full event-input  text-gray-500 border-0 md:py-3 px-4 bg-white" required>
-                                                            <option value="0"> Choose your event type</option>
-                                                            <option value="Birthday Party">Birthday Party</option>
-                                                            <option value="Physical Team Building Activites">Team Building</option>
-                                                            <option value="Bachelorette Parties">Bachelorette Parties</option>
+                                                        <select type="text" className="w-full event-input  text-gray-500 border-0 md:py-3 px-4 bg-white" onChange={eventHandleChange} value={props.eventslug? props.eventslug:'0'} required>
+                                                            <option  value='0'>Choose event</option>
+                                                            
+                                                            {
+                                                                props.eventlist.map((event)=>{
+                                                                    return(
+                                                                        <option key={event.id} value={event.event_slug}>{event.event_name}</option>
+                                                                    )
+                                                                    
+                                                                })
+                                                            }
                                                         </select>
+                                                        {   eventErr &&
+                                                                 <p className="text-red-600 mt-1 text-sm md:text-md">Invalid phone number</p>
+                                                        }
+                                                        
                                                     </div>
                                                     <div className="form-col w-full md:w-[48%]">
                                                         <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Number of your guests: *</p>
                                                         <input type="text"  className=" w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Enter number of your guests" required></input>
+                                                        {   guestErr &&
+                                                                 <p className="text-red-600 mt-1 text-sm md:text-md">iInvalid</p>
+                                                        }
                                                     </div>
                                                 </div>
                                                 {/*======================================contact form row select event====================== */}
@@ -247,6 +313,9 @@ const EventContact=(props)=>{
                                                     <div className="form-col w-[48%]">
                                                         <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Preferred date:</p>
                                                         <input type="date"  className=" w-full event-input text-gray-500  border-0 md:py-3 px-4 bg-white" placeholder="Enter number of your guests" required></input>
+                                                        {   dateErr &&
+                                                                 <p className="text-red-600 mt-1 text-sm md:text-md">Please enter a date</p>
+                                                        }
                                                     </div>
                                                     <div className="form-col w-[48%]">
                                                         <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Preferred time:</p>
@@ -256,6 +325,9 @@ const EventContact=(props)=>{
                                                             <option value=">After Noon">Afternoon</option>
                                                             <option value="Evening">Evening</option>
                                                         </select>
+                                                        {   timeErr &&
+                                                                 <p className="text-red-600 mt-1 text-sm md:text-md">Please choose time</p>
+                                                        }
                                                     </div>
                                                 </div>
                                                 {/*======================================contact form row date event====================== */}
@@ -264,12 +336,33 @@ const EventContact=(props)=>{
                                                    
                                                     <div className="form-col w-full">
                                                         <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Choose your location: *</p>
-                                                        <select type="text" className="w-full event-input text-gray-500  border-0 md:py-3 px-4 bg-white" placeholder="Your email" required>
-                                                            <option value="0">Select your location</option>
-                                                            <option value="Morning">Albany, NY</option>
-                                                            <option value=">After Noon">Middletown, NY</option>
-                                                            <option value="Evening">Buffalo,NY</option>
+                                                        <select onChange={locationHandleChange} type="text" className="w-full event-input text-gray-500  border-0 md:py-3 px-4 bg-white" value={props.contactdata? props.contactdata.slug:"0"} placeholder="Your email" required>
+                                                          
+                                                             <option key='0' value="0">Select your location</option>
+                                                             
+                                                             {
+                                                             getLocationOptions(props.locationlist).map((item)=>{
+                                                                var sl=false
+                                                                if(item.slug=='albany-ny'){
+                                                                        sl=true
+                                                                }
+                                                                
+
+                                                                    return (
+                                                                       
+                                                                       
+                                                                        <option className="text-gray-700" key={item.id} value={item.slug}>{item.city}</option>
+                                                                       
+                
+                                                                       
+                                                                    )
+                                                             })}
+                                                           
+                                                           
                                                         </select>
+                                                        {   locationErr &&
+                                                                 <p className="text-red-600 mt-1 text-sm md:text-md">Please select your location</p>
+                                                        }
                                                     </div>
                                                 </div>
                                                 {/*======================================contact form row location event====================== */}

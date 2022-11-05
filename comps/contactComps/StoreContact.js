@@ -38,20 +38,25 @@ const StoreContact=(props)=>{
         <div className="c-contact py-16 md:py-20 lg:py-28  bg-cover bg-center" style={{backgroundImage : "url('/assets/game-dt-bg.jpg')", }}>
             <div className="section-container max-w-7xl mx-auto relative z-30">
                 <div className="section-title">
-                  <TitleSeparator title={TitleAddress(props.contactdata.slug)+" ALL IN ADVENTURES"} color='golden-text' weight='font-bold'/>
-                    <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-12 lg:mb-16">
-                         <p className="text-gray-700 md:px-8">Click on the link associated with the position you're most passionate about pursuing and upload a copy of your resumé today!</p>
+                  <TitleSeparator title={"INQUIRE TO "+TitleAddress(props.contactdata.slug)+" STORE"} color='golden-text' weight='font-bold'/>
+                    <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-12 lg:mb-16">
+                         <p className="text-gray-700 md:px-8">Fill out the form below and we will be in touch shortly.</p>
                      </div>
                  </div>
                  <div className="c-contact-box flex flex-col md:flex-row md:space-x-6 lg:space-x-12 justify-between">
                         <div className="c-form-info md:w-[44%] lg:w-[38%] order-2 md:order-1 px-4 lg:px-0">
                         <h3 className="golden-text font-os font-bold mt-8 md:mt-0 text-2xl lg:text-3xl mb-2 lg:mb-4 uppercase">OUR FACILITIES</h3>
-                        <p className="text-gray-700 lg:text-lg">Welcome to the world of Treasure Island. 
-                        Your adventure begins in a shadowy storage room aboard a weathered pirate ship. 
-                        Once you find your way out you will be able to explore the entire ship while the 
-                        pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.
+                        <p className="text-gray-700 lg:text-lg">All escape rooms are completely private - for your players only! We provide an entire party with the opportunity to celebrate in a fun and unique way. Come join us to create exciting memories with your group.
                         </p>
                         <div className="c-contact-info-list mt-6 lg:mt-8 ">
+                        <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
+                            <img src="/assets/svg/event-icon-phone.svg"></img>
+                            <a  href={"tel:"+props.contactdata.phone} className="lg:text-lg text-[#232323] block hover:text-blue-700 max-w-[300px]">{props.contactdata.phone}</a>
+                            </div>
+                            <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
+                                  <img src="/assets/svg/event-icon-email.svg"></img>
+                                <a href={"mailto:"+props.contactdata.email.toLowerCase()} className="lg:text-lg text-[#232323] block hover:text-blue-700">{props.contactdata.email}</a>
+                            </div>
                             <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-t border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
                                 <img src="/assets/svg/event-icon-pin.svg"></img>
                                 <a target="_blank" href={getDirection(props.contactdata.address,props.contactdata.slug,props.contactdata.city,props.contactdata.zip)} className="lg:text-lg text-[#232323] block hover:text-blue-700 max-w-[300px]">{getAddress(props.contactdata.address,props.contactdata.slug,props.contactdata.city,props.contactdata.zip)}</a>
@@ -112,18 +117,8 @@ const StoreContact=(props)=>{
                                 }
 
                             </div>
-                            <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
-                            <img src="/assets/svg/event-icon-phone.svg"></img>
-                            <a  href={"tel:+1"+props.contactdata.phone} className="lg:text-lg text-[#232323] block hover:text-blue-700 max-w-[300px]">+1 {props.contactdata.phone}</a>
-                            </div>
-                            <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
-                                  <img src="/assets/svg/event-icon-email.svg"></img>
-                                <a href={"mailto:"+props.contactdata.email.toLowerCase()} className="lg:text-lg text-[#232323] block hover:text-blue-700">{props.contactdata.email}</a>
-                            </div>
-                            <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
-                                <img src="/assets/svg/event-icon-parking.svg"></img>
-                                <p  className="lg:text-lg text-[#232323]">Car Parking Available</p>
-                            </div>
+                            
+                            
                             <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
                                 <img src="/assets/svg/event-icon-chair.svg"></img>
                                 <p  className="lg:text-lg text-[#232323]">Wheelchair Accessibility</p>
@@ -131,7 +126,11 @@ const StoreContact=(props)=>{
                            
 
                         </div>
-
+                        <div className="mt-8"> 
+                        <p className="text-[#464646] mb-4">{props.contactdata.entry_guid} We are located on the right side, between {props.contactdata.city_include}</p>
+                        <p className="text-[#464646]">We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.</p>
+                        </div>
+                                  
                         </div>
                         {/*======================== corporate contact form=======================*/}
                         <div className="c-form-form md:w-[56%] lg:w-[60%] order-1 md:order-2">

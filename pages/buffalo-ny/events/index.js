@@ -13,8 +13,8 @@ import EventList from '../../../comps/activitiyPageComps/EventList';
 import EventContact from '../../../comps/eventPageComps/EventContact';
 
 const LocEventList=(props)=>{
-    
-
+   
+  
     const getLoc=(slug)=>{
        
         
@@ -28,15 +28,14 @@ const LocEventList=(props)=>{
     //console.log(locname)
     /* custom breadcum code */
  
-    /* customizing breadcum */
- 
      return (
          <>
              <Homenav locationslug={props.pagedata.locationslug}
                      bookingall={props.pagedata.bookingall} 
                      location={getLoc(props.pagedata.locationslug)}
                      activitylist={props.activitylistSlug}
-                     eventlist={props.eventlistSlug}
+                     eventlist={props.eventlist}
+                     locationlist={props.locationlist}
                      />
                  <div id="mainContent" className='main-content'>
  
@@ -54,12 +53,13 @@ const LocEventList=(props)=>{
                          {/* =======header content and breadcum======== end */}
                          {/* ===========Page Content here=========  <> */}
                          <GameLocHero pagedata={props.pagedata}/>
-                         <EventList events={props.eventlist} locationslug="albany-ny"/>
-                         <EventContact contactdata={props.contactdata}/>
+                         <EventList events={props.eventLocList} locationslug="albany-ny"/>
+                         
+                         <EventContact contactdata={props.contactdata} locationlist={props.locationlist} eventlist={props.eventlist}/>
                         
                  </div>
  
-             <Footer  location={getLoc(props.pagedata.locationslug)}/>
+             <Footer  locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
          </>
  
      )
@@ -82,10 +82,12 @@ export const getStaticProps=async(context)=>{
         props:{
           pagedata:locationHomedata.pagedata,
           pagemeta:locationHomedata.pagemeta,
-          eventlist:locationHomedata.events_list,
+          eventLocList:locationHomedata.events_list,
           contactdata:locationHomedata.contactdata,
           activitylistSlug:locationHomedata.activitylist,
-          eventlistSlug:locationHomedata.eventlist
+         // eventlistSlug:locationHomedata.eventlist,
+          locationlist:locationHomedata.locationlist,
+          eventlist:locationHomedata.eventlistSlug
          
         },
         revalidate: 30

@@ -52,7 +52,7 @@ const showSingleEvent=(props)=>{
 
             <GameHomeHero pagedata={props.pagedata}/>
             <EventDetails eventdata={props.eventdata} eventname={props.pagedata.eventname}/>
-            <EventContact eventname={props.pagedata.event_name}/>
+            <EventContact eventname={props.pagedata.event_name} locationlist={props.locationlist} eventlist={props.eventlist} eventslug={props.pagedata.event_slug}/>
             <HomeReviewSlider reviews={props.reviews}/>
             
          {/* =========================================================================================main content ======== end */}

@@ -38,7 +38,7 @@ export default function Home({mainprops,pagedata,inpersongames,othergames,virtua
       
        <div className='home-hero' style={
         {
-          backgroundImage : "url('/assets/home-benar-bg.jpg')",
+          backgroundImage : "url('/assets/allinadventures-escape-room-home-hero.jpg')",
         }
        }>
         <div> {

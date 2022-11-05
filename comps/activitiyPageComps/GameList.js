@@ -12,7 +12,17 @@ const GameList=(props)=>{
         
       }
 
-      
+      const getOtherActivity=(actlist)=>{
+        var i=0
+        var act=false
+
+        for(i=0;i<actlist.lenght;i++){
+            if(actlist[i].activity_category=="other"){
+                 act=true
+            }
+            return act
+        }
+      }
 
     return(
         <div className="all-games relative bg-center bg-cover" style={{backgroundImage:"url('/assets/game-dt-bg.jpg')"}}>
@@ -20,9 +30,9 @@ const GameList=(props)=>{
             <div className="all-games-container max-w-7xl mx-auto relative  z-30 py-16 md:py-20 lg:py-28 px-4">
                     
                 <div className="all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
-                    <div className="section-title  text-center max-w-[600px] mx-auto">
-                        <TitleSeparator title="All IN PERSON ESCAPE GAMES" color="golden-text" weight="font-bold"/>
-                        <p className="text-gray-700 md:px-8 md:text-lg">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                    <div className="section-title  text-center max-w-[800px] mx-auto">
+                        <TitleSeparator title="PLAY REAL LIFE ESCAPE GAMES" color="golden-text" weight="font-bold"/>
+                        <p className="text-gray-700 md:px-8 md:text-lg">2 - 10 participants will enter an escape room and they will have 50 minutes to escape. Hidden riddles and clues throughout the room provide the necessary tools to meet this objective. Can you stay calm as the clock ticks down and the pressure mounts? Can you ESCAPE before time runs out?</p>
                     </div>
                 {
                         props.activitylist.map((activity)=>{
@@ -74,11 +84,12 @@ const GameList=(props)=>{
 
                 }
                 </div>
+{/**=========================================other in person games============== */}
 
-                <div id="others-physical-games" className="pt-20 all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
-                    <div className="section-title text-center max-w-[600px] mx-auto">
-                        <TitleSeparator title="All OTHER PHYSICAL ACTIVTY" color="golden-text" weight="font-bold"/>
-                        <p className="text-gray-700 md:px-8 md:text-lg">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+    <div id="others-physical-games" className="pt-20 all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
+                    <div className="section-title text-center max-w-[800px] mx-auto">
+                        <TitleSeparator title="IN PERSON OTHER GAMES" color="golden-text" weight="font-bold"/>
+                        <p className="text-gray-700 md:px-8 md:text-lg">We offer additional fun activities that can double up your adventure experience. Simply come with the desire to play more!</p>
                     </div>
                 {
                         props.activitylist.map((activity)=>{
@@ -109,7 +120,7 @@ const GameList=(props)=>{
                                  <div className="all-game-list-bottom">
                                         <div className=" text-center md:text-left">
                                           <h3 className="card-game-title text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-white">{activity.activity_name}</h3>
-                                          <p className="text-gray-200 lg:text-lg mx-auto md:mx-0 max-w-[490px]">{activity.activity_desc}
+                                          <p className="text-gray-200 lg:text-lg mx-auto md:mx-0 max-w-[700px]">{activity.activity_desc}
                                           fill out the number of details.</p>
                                          </div>
                                          <div className="card-game-link mt-4 text-left">
@@ -129,10 +140,20 @@ const GameList=(props)=>{
                         })
 
                 }
-                </div>
+    </div>
 
+                
+    {/**=========================================other in person games end============== */}
                 <div className="link-btn mt-8 md:mt-16">
-                    <a href="/events" className="border-2 max-w-[280px] text-center block  mx-auto  border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">VIEW EVENTS</a>
+                    {
+                        props.locationslug &&
+                        <a href={"/"+props.locationslug+"/events"} className="border-2 max-w-[280px] text-center block  mx-auto  border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">VIEW EVENTS</a>
+                    }
+                    {
+                        !props.locationslug &&
+                        <a href="/events" className="border-2 max-w-[280px] text-center block  mx-auto  border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">VIEW EVENTS</a>
+                    }
+                    
                 </div>
                 
             </div>

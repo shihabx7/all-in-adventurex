@@ -32,53 +32,57 @@ const datalist={
         {
             "id":3,
             "category":"escapegame",
-            "activity_name":"Superhero's Adventure",
-            "activity_slug":"superheros-adventure"
-           
-        },
-        {
-            "id":4,
-            "category":"escapegame",
             "activity_name":"Zombie Apocalypse",
             "activity_slug":"zombie-apocalypse"
            
         },
         {
-            "id":5,
-            "category":"escapegame",
-            "activity_name":"Special Agent",
-            "activity_slug":"special-agent"
-           
-        },
-        {
-            "id":6,
-            "category":"escapegame",
-            "activity_name":"Hollywood Premiere",
-            "activity_slug":"hollywood-premiere"
-           
-        },
-        {
-            "id":7,
+            "id":4,
             "category":"escapegame",
             "activity_name":"Sherlock's Library",
             "activity_slug":"sherlocks-library"
            
         },
         {
-            "id":8,
-            "category":"escapegame",
-            "activity_name":"Houdinis Magic Cell",
-            "activity_slug":"houdinis-magic-cell"
-           
-        },
-        {
-            "id":9,
+            "id":5,
             "category":"escapegame",
             "activity_name":"Black Ops",
             "activity_slug":"black-ops"
            
         },
-       
+        {
+            "id":6,
+            "category":"escapegame",
+            "activity_name":"Superhero's Adventure",
+            "activity_slug":"superheros-adventure"
+           
+        },
+        {
+            "id":7,
+            "category":"escapegame",
+            "activity_name":"Houdinis Magic Cell",
+            "activity_slug":"houdinis-magic-cell"
+           
+        },
+        
+        {
+            "id":8,
+            "category":"escapegame",
+            "activity_name":"Special Agent",
+            "activity_slug":"special-agent"
+           
+        },
+        {
+            "id":9,
+            "category":"escapegame",
+            "activity_name":"Hollywood Premiere",
+            "activity_slug":"hollywood-premiere"
+           
+        },
+        
+        
+        
+        
         
     ],
      // ===================================== Albany ny END=======
@@ -102,129 +106,63 @@ const datalist={
         {
             "id":3,
             "category":"escapegame",
-            "activity_name":"Superhero's Adventure",
-            "activity_slug":"superheros-adventure"
-           
-        },
-        {
-            "id":4,
-            "category":"escapegame",
             "activity_name":"Zombie Apocalypse",
             "activity_slug":"zombie-apocalypse"
            
         },
         {
-            "id":5,
-            "category":"escapegame",
-            "activity_name":"Special Agent",
-            "activity_slug":"special-agent"
-           
-        },
-        {
-            "id":6,
-            "category":"escapegame",
-            "activity_name":"Hollywood Premiere",
-            "activity_slug":"hollywood-premiere"
-           
-        },
-        {
-            "id":7,
+            "id":4,
             "category":"escapegame",
             "activity_name":"Sherlock's Library",
             "activity_slug":"sherlocks-library"
            
         },
         {
-            "id":8,
-            "category":"escapegame",
-            "activity_name":"Houdinis Magic Cell",
-            "activity_slug":"houdinis-magic-cell"
-           
-        },
-        {
-            "id":9,
+            "id":5,
             "category":"escapegame",
             "activity_name":"Black Ops",
             "activity_slug":"black-ops"
            
         },
+        {
+            "id":6,
+            "category":"escapegame",
+            "activity_name":"Superhero's Adventure",
+            "activity_slug":"superheros-adventure"
+           
+        },
+        {
+            "id":7,
+            "category":"escapegame",
+            "activity_name":"Houdinis Magic Cell",
+            "activity_slug":"houdinis-magic-cell"
+           
+        },
+        
+        {
+            "id":8,
+            "category":"escapegame",
+            "activity_name":"Special Agent",
+            "activity_slug":"special-agent"
+           
+        },
+        {
+            "id":9,
+            "category":"escapegame",
+            "activity_name":"Hollywood Premiere",
+            "activity_slug":"hollywood-premiere"
+           
+        },
+        
+        
+        
         
         
     ],
      // ===================================== buffalo-ny ny END=======
      // ===================================== middletown-ny ny=======
      "middletown-ny":[
-        
-        {
-            "id":1,
-            "category":"escapegame",
-            "activity_name":"Escape From Alcatraz",
-            "activity_slug":"escape-from-alcatraz"
-           
-        },
-        {
-            "id":2,
-            "category":"escapegame",
-            "activity_name":"Treasure Island",
-            "activity_slug":"treasure-island"
-           
-        },
-        
-        {
-            "id":4,
-            "category":"escapegame",
-            "activity_name":"Zombie Apocalypse",
-            "activity_slug":"zombie-apocalypse"
-           
-        },
-        {
-            "id":5,
-            "category":"escapegame",
-            "activity_name":"Special Agent",
-            "activity_slug":"special-agent"
-           
-        },
-        {
-            "id":6,
-            "category":"escapegame",
-            "activity_name":"Hollywood Premiere",
-            "activity_slug":"hollywood-premiere"
-           
-        },
-        {
-            "id":7,
-            "category":"escapegame",
-            "activity_name":"Sherlock's Library",
-            "activity_slug":"sherlocks-library"
-           
-        },
-        {
-            "id":8,
-            "category":"escapegame",
-            "activity_name":"Houdinis Magic Cell",
-            "activity_slug":"houdinis-magic-cell"
-           
-        },
-        {
-            "id":9,
-            "category":"escapegame",
-            "activity_name":"Black Ops",
-            "activity_slug":"black-ops"
-           
-        },
-    
-        {
-            "id":17,
-            "category":"other",
-            "activity_name":"Beat the Seat",
-            "activity_slug":"beat-the-seat"
-           
-        }
-    ],
-     // ===================================== middletown-ny END=======
-      // ===================================== syracuse-ny ny=======
-      "syracuse-ny":[
-        
+
         {
             "id":1,
             "category":"escapegame",
@@ -242,74 +180,169 @@ const datalist={
         {
             "id":3,
             "category":"escapegame",
-            "activity_name":"Superhero's Adventure",
-            "activity_slug":"superheros-adventure"
-           
-        },
-        {
-            "id":4,
             "category":"escapegame",
             "activity_name":"Zombie Apocalypse",
             "activity_slug":"zombie-apocalypse"
            
         },
         {
-            "id":5,
-            "category":"escapegame",
-            "activity_name":"Special Agent",
-            "activity_slug":"special-agent"
-           
-        },
-        {
-            "id":6,
-            "category":"escapegame",
-            "activity_name":"Hollywood Premiere",
-            "activity_slug":"hollywood-premiere"
-           
-        },
-        {
-            "id":7,
+            "id":4,
             "category":"escapegame",
             "activity_name":"Sherlock's Library",
             "activity_slug":"sherlocks-library"
            
         },
         {
-            "id":8,
-            "category":"escapegame",
-            "activity_name":"Houdinis Magic Cell",
-            "activity_slug":"houdinis-magic-cell"
-           
-        },
-        {
-            "id":9,
+            "id":5,
             "category":"escapegame",
             "activity_name":"Black Ops",
             "activity_slug":"black-ops"
            
         },
         {
-            "id":13,
+            "id":6,
+            "category":"escapegame",
+            "activity_name":"Superhero's Adventure",
+            "activity_slug":"superheros-adventure"
+           
+        },
+       
+        {
+            "id":7,
+            "category":"escapegame",
+            "activity_name":"Houdinis Magic Cell",
+            "activity_slug":"houdinis-magic-cell"
+           
+        },
+        
+        {
+            "id":8,
+            "category":"escapegame",
+            "activity_name":"Special Agent",
+            "activity_slug":"special-agent"
+           
+        },
+        {
+            "id":9,
+            "category":"escapegame",
+            "activity_name":"Hollywood Premiere",
+            "activity_slug":"hollywood-premiere"
+           
+        },
+        {
+            "id":11,
+            "category":"escapegame",
+            "activity_name":"Wizarding School",
+            "activity_slug":"wizarding-school"
+           
+        },
+     
+        {
+            "id":14,
+            "category":"other",
+            "activity_name":"Beat the Seat",
+            "activity_slug":"beat-the-seat"
+           
+        },
+       
+        
+
+
+    ],
+     // ===================================== middletown-ny END=======
+      // ===================================== syracuse-ny ny=======
+      "syracuse-ny":[
+
+        {
+            "id":1,
+            "category":"escapegame",
+            "activity_name":"Escape From Alcatraz",
+            "activity_slug":"escape-from-alcatraz"
+           
+        },
+        {
+            "id":2,
+            "category":"escapegame",
+            "activity_name":"Treasure Island",
+            "activity_slug":"treasure-island"
+           
+        },
+        {
+            "id":3,
+            "category":"escapegame",
+            "category":"escapegame",
+            "activity_name":"Zombie Apocalypse",
+            "activity_slug":"zombie-apocalypse"
+           
+        },
+        {
+            "id":4,
+            "category":"escapegame",
+            "activity_name":"Sherlock's Library",
+            "activity_slug":"sherlocks-library"
+           
+        },
+        {
+            "id":5,
+            "category":"escapegame",
+            "activity_name":"Black Ops",
+            "activity_slug":"black-ops"
+           
+        },
+        {
+            "id":6,
+            "category":"escapegame",
+            "activity_name":"Superhero's Adventure",
+            "activity_slug":"superheros-adventure"
+           
+        },
+        {
+            "id":7,
+            "category":"escapegame",
+            "activity_name":"Houdinis Magic Cell",
+            "activity_slug":"houdinis-magic-cell"
+           
+        },
+        
+        {
+            "id":8,
+            "category":"escapegame",
+            "activity_name":"Special Agent",
+            "activity_slug":"special-agent"
+           
+        },
+        {
+            "id":9,
+            "category":"escapegame",
+            "activity_name":"Hollywood Premiere",
+            "activity_slug":"hollywood-premiere"
+           
+        },
+        {
+            "id":12,
             "category":"escapegame",
             "activity_name":"Locked in the Lift",
             "activity_slug":"locked-in-the-lift"
            
         },
         {
-            "id":14,
+            "id":13,
             "category":"escapegame",
             "activity_name":"Magic Castle",
             "activity_slug":"magic-castle"
            
         },
-       
         {
-            "id":17,
+            "id":14,
             "category":"other",
             "activity_name":"Beat the Seat",
             "activity_slug":"beat-the-seat"
            
-        }
+        },
+       
+        
+
+
     ],
      // ===================================== syracuse-ny END=======
      // =====================================watertown-ny ny=======
@@ -332,53 +365,58 @@ const datalist={
         {
             "id":3,
             "category":"escapegame",
-            "activity_name":"Superhero's Adventure",
-            "activity_slug":"superheros-adventure"
-           
-        },
-        {
-            "id":4,
-            "category":"escapegame",
             "activity_name":"Zombie Apocalypse",
             "activity_slug":"zombie-apocalypse"
            
         },
         {
-            "id":5,
-            "category":"escapegame",
-            "activity_name":"Special Agent",
-            "activity_slug":"special-agent"
-           
-        },
-        {
-            "id":6,
-            "category":"escapegame",
-            "activity_name":"Hollywood Premiere",
-            "activity_slug":"hollywood-premiere"
-           
-        },
-        {
-            "id":7,
+            "id":4,
             "category":"escapegame",
             "activity_name":"Sherlock's Library",
             "activity_slug":"sherlocks-library"
            
         },
         {
-            "id":8,
-            "category":"escapegame",
-            "activity_name":"Houdinis Magic Cell",
-            "activity_slug":"houdinis-magic-cell"
-           
-        },
-        {
-            "id":9,
+            "id":5,
             "category":"escapegame",
             "activity_name":"Black Ops",
             "activity_slug":"black-ops"
            
         },
-       
+        {
+            "id":6,
+            "category":"escapegame",
+            "activity_name":"Superhero's Adventure",
+            "activity_slug":"superheros-adventure"
+           
+        },
+        {
+            "id":7,
+            "category":"escapegame",
+            "activity_name":"Houdinis Magic Cell",
+            "activity_slug":"houdinis-magic-cell"
+           
+        },
+        
+        {
+            "id":8,
+            "category":"escapegame",
+            "activity_name":"Special Agent",
+            "activity_slug":"special-agent"
+           
+        },
+        {
+            "id":9,
+            "category":"escapegame",
+            "activity_name":"Hollywood Premiere",
+            "activity_slug":"hollywood-premiere"
+           
+        },
+        
+        
+        
+        
+        
     ],
      // ===================================== watertown-ny END=======
      // =====================================west-nyack-ny ny=======

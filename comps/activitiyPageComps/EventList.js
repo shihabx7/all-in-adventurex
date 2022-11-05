@@ -16,9 +16,9 @@ const EventList=(props)=>{
              <div className="w-full absolute top-0 left-0 "><img className="w-full" src="/assets/game-home-or1.jpg"></img> </div>
                  <div className="all-games-container max-w-7xl mx-auto relative  z-30 py-16 md:py-20 lg:py-28 px-4">
                  <div className="all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
-                    <div className="section-title  text-center max-w-[600px] mx-auto">
-                        <TitleSeparator title="GROUP EVENTS AND PARTIES" color="golden-text" weight="font-bold"/>
-                        <p className="text-gray-700 md:px-8 md:text-lg">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                    <div className="section-title  text-center max-w-[800px] mx-auto">
+                        <TitleSeparator title="AN INCREDIBLE ESCAPE ROOM PARTY VENUE" color="golden-text" weight="font-bold"/>
+                        <p className="text-gray-700 md:px-8 md:text-lg">Host a new-age party like never before! Choose a game room based on the theme, group size and occasion. Our friendly game host will guide you throughout the experience. While playing, you and your team must work together to find clues and solve mysteries that help you move forward in the exciting adventure.</p>
                     </div>
                 {
                         props.events.map((event)=>{
@@ -80,7 +80,15 @@ const EventList=(props)=>{
                 }
                 </div>
                 <div className="link-btn mt-8 md:mt-16">
-                    <a href="/activities" className="border-2 max-w-[280px] text-center  block  mx-auto  border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">VIEW ACTIVITES</a>
+                    {
+                        props.locationslug &&
+                        <a  href={"/"+props.locationslug+"/activities"} className="border-2 max-w-[280px] text-center  block  mx-auto  border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">VIEW ACTIVITES</a>
+                    }
+                    {
+                        !props.locationslug &&
+                        <a href="/activities" className="border-2 max-w-[280px] text-center  block  mx-auto  border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">VIEW ACTIVITES</a>
+                    }
+                   
                 </div>
                 </div>
             <div className="w-full absolute bottom-0 left-0 "><img className="w-full" src="/assets/game-home-or2.jpg"></img> </div>
