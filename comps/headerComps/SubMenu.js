@@ -9,10 +9,30 @@ import OhterGameSubmenu from "./OhterGameSubmenu";
 import EventSubmenu from "./EventSubmenu";
 import StaticSubmenu from "./StaticSubmenu";
 
+const otherCheck=(aclist)=>{
+       
+    var res=false
+    
+    aclist.map((activity)=>{
+            if(activity.category=="other"){
+                res=true 
+            }
+    })
+    return res
+  }
+
 
 const SubMenu=(props)=>{
 
     const [openMenu, setopenMenu] = useState('1');
+
+    
+
+      const othergame=otherCheck(props.activitylist)
+
+   
+
+    
     
     return(
 
@@ -111,16 +131,17 @@ const SubMenu=(props)=>{
                             {/*=========================================== Collapse menu 1 end========== */}
 
                            
-                             {/*=========================================== Collapse menu 3========== */}
-
-                             <div className="submenu-item"
-                                onClick={() =>
-                                    setopenMenu(
-                                        openMenu === "3" ? "0":"3"
+                             {/*=========================================== all other Collapse menu 3========== */}
+                                {
+                                  othergame &&
+                                    <div className="submenu-item"
+                                            onClick={() =>
+                                                  setopenMenu(
+                                                       openMenu === "3" ? "0":"3"
                                        
-                                    )
-                                  }
-                            >
+                                                      )
+                                              }
+                                          >
                                 
                                      <p className="cursor-pointer flex items-center space-x-2">
                                         <span className="sub-link-txt"
@@ -162,7 +183,10 @@ const SubMenu=(props)=>{
 
                             </div>
 
-                            {/*=========================================== Collapse menu 3 end========== */}
+                                }
+                             
+
+                            {/*=========================================== all other  Collapse menu 3 end========== */}
                              {/*=========================================== Collapse menu 4========== */}
 
                              <div className="submenu-item"

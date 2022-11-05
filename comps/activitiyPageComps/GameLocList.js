@@ -1,9 +1,9 @@
 import Link from "next/link"
+import { useState,useEffect } from "react"
 import TitleSeparator from "../util/TitleSeparator"
 
 const GameLocList=(props)=>{
 
-    
     const bookGames=(shortname,booking)=>{
         FH.open({
           shortname: shortname,
@@ -14,17 +14,19 @@ const GameLocList=(props)=>{
         });
       }
       
-      const getOtherActivity=(actlist)=>{
-        var i=0
-        var act=false
 
-        for(i=0;i<actlist.lenght;i++){
-            if(actlist[i].activity_category=="other"){
-                 act=true
-            }
-            return act
-        }
+      const otherCheck=(aclist)=>{
+       
+        var res=false
+        aclist.map((activity)=>{
+                if(activity.activity_category=="other"){
+                    res=true 
+                }
+        })
+        return res
       }
+
+      const othergame=otherCheck(props.activitylist)
 
     return(
         <div className="all-games relative bg-center bg-cover" style={{backgroundImage:"url('/assets/game-dt-bg.jpg')"}}>
@@ -87,13 +89,14 @@ const GameLocList=(props)=>{
                 }
                 </div>
                 {
-                    getOtherActivity(props.activitylist) &&
+                    othergame &&
                     <div id="others-physical-games" className="pt-20 all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
                     <div className="section-title text-center max-w-[800px] mx-auto">
-                        <TitleSeparator title="PLAY REAL LIFE ESCAPE ROOM GAMES" color="golden-text" weight="font-bold"/>
-                        <p className="text-gray-700 md:px-8 md:text-lg">2 - 10 participants will enter an escape room and they will have 50 minutes to escape. Hidden riddles and clues throughout the room provide the necessary tools to meet this objective. Can you stay calm as the clock ticks down and the pressure mounts? Can you ESCAPE before time runs out?</p>
+                        <TitleSeparator title="IN PERSON OTHER GAMES" color="golden-text" weight="font-bold"/>
+                        <p className="text-gray-700 md:px-8 md:text-lg">We offer additional fun activities that can double up your adventure experience. Simply come with the desire to play more!</p>
                     </div>
                 {
+                    
                         props.activitylist.map((activity)=>{
                            
                             return(
