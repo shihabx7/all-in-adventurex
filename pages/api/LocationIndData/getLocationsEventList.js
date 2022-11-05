@@ -55,7 +55,12 @@ export const getLocationsEventList=(locationslug)=>{
     const eventsData={
 
        
-        "pagemeta":eventdatalist[locname].pagemeta,
+        "pagemeta":{
+
+          "matatilte":"title",
+          "metakeyword":"keywords",
+          "metadescription":"metadescription"
+        },
         "locationlist":getTotal().locationlist,
         "eventlistSlug":getTotal().eventlistSlug,
            

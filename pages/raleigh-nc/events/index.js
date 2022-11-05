@@ -59,7 +59,7 @@ const LocEventList=(props)=>{
                         
                  </div>
  
-             <Footer  locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
+             <Footer location="raleigh, nc" locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
          </>
  
      )

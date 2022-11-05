@@ -678,7 +678,7 @@ const datalist={
       //*****************************************************************************MA ++++++++++++++++ */
      // =====================================hadley-ma ny=======
      "hadley-ma":[
-        
+
         {
             "id":1,
             "category":"escapegame",
@@ -696,58 +696,59 @@ const datalist={
         {
             "id":3,
             "category":"escapegame",
-            "activity_name":"Superhero's Adventure",
-            "activity_slug":"superheros-adventure"
-           
-        },
-        {
-            "id":4,
             "category":"escapegame",
             "activity_name":"Zombie Apocalypse",
             "activity_slug":"zombie-apocalypse"
            
         },
         {
-            "id":5,
-            "category":"escapegame",
-            "activity_name":"Special Agent",
-            "activity_slug":"special-agent"
-           
-        },
-        {
-            "id":6,
-            "category":"escapegame",
-            "activity_name":"Hollywood Premiere",
-            "activity_slug":"hollywood-premiere"
-           
-        },
-        {
-            "id":7,
+            "id":4,
             "category":"escapegame",
             "activity_name":"Sherlock's Library",
             "activity_slug":"sherlocks-library"
            
         },
         {
-            "id":8,
-            "category":"escapegame",
-            "activity_name":"Houdinis Magic Cell",
-            "activity_slug":"houdinis-magic-cell"
-           
-        },
-        {
-            "id":9,
+            "id":5,
             "category":"escapegame",
             "activity_name":"Black Ops",
             "activity_slug":"black-ops"
            
         },
+        {
+            "id":6,
+            "category":"escapegame",
+            "activity_name":"Superhero's Adventure",
+            "activity_slug":"superheros-adventure"
+           
+        },
+        {
+            "id":7,
+            "category":"escapegame",
+            "activity_name":"Houdinis Magic Cell",
+            "activity_slug":"houdinis-magic-cell"
+           
+        },
         
+        {
+            "id":8,
+            "category":"escapegame",
+            "activity_name":"Special Agent",
+            "activity_slug":"special-agent"
+           
+        },
+        {
+            "id":9,
+            "category":"escapegame",
+            "activity_name":"Hollywood Premiere",
+            "activity_slug":"hollywood-premiere"
+           
+        },
     ],
      // ===================================== hadley-ma END=======
      // =====================================holyoke-ma ny=======
      "holyoke-ma":[
-        
+
         {
             "id":1,
             "category":"escapegame",
@@ -762,31 +763,30 @@ const datalist={
             "activity_slug":"treasure-island"
            
         },
-        {
-            "id":3,
-            "category":"escapegame",
-            "activity_name":"Superhero's Adventure",
-            "activity_slug":"superheros-adventure"
-           
-        },
        
         {
-            "id":5,
-            "category":"escapegame",
-            "activity_name":"Special Agent",
-            "activity_slug":"special-agent"
-           
-        },
-        
-        {
-            "id":7,
+            "id":4,
             "category":"escapegame",
             "activity_name":"Sherlock's Library",
             "activity_slug":"sherlocks-library"
            
         },
         {
-            "id":8,
+            "id":5,
+            "category":"escapegame",
+            "activity_name":"Black Ops",
+            "activity_slug":"black-ops"
+           
+        },
+        {
+            "id":6,
+            "category":"escapegame",
+            "activity_name":"Superhero's Adventure",
+            "activity_slug":"superheros-adventure"
+           
+        },
+        {
+            "id":7,
             "category":"escapegame",
             "activity_name":"Houdinis Magic Cell",
             "activity_slug":"houdinis-magic-cell"
@@ -794,62 +794,62 @@ const datalist={
         },
         {
             "id":9,
-            "category":"escapegame",
-            "activity_name":"Black Ops",
-            "activity_slug":"black-ops"
-           
-        },
-        
-    ],
-     // ===================================== holyoke-ma END=======
-     // =====================================kingston-ma ny=======
-     "kingston-ma":[
-        
-        {
-            "id":1,
-            "category":"escapegame",
-            "activity_name":"Escape From Alcatraz",
-            "activity_slug":"escape-from-alcatraz"
-           
-        },
-        {
-            "id":2,
-            "category":"escapegame",
-            "activity_name":"Treasure Island",
-            "activity_slug":"treasure-island"
-           
-        },
-        {
-            "id":3,
-            "category":"escapegame",
-            "activity_name":"Superhero's Adventure",
-            "activity_slug":"superheros-adventure"
-           
-        },
-        {
-            "id":4,
-            "category":"escapegame",
-            "activity_name":"Zombie Apocalypse",
-            "activity_slug":"zombie-apocalypse"
-           
-        },
-        
-        {
-            "id":6,
             "category":"escapegame",
             "activity_name":"Hollywood Premiere",
             "activity_slug":"hollywood-premiere"
            
         },
+
+    ],
+     // ===================================== holyoke-ma END=======
+     // =====================================kingston-ma ny=======
+     "kingston-ma":[
+
         {
-            "id":7,
+            "id":1,
+            "category":"escapegame",
+            "activity_name":"Escape From Alcatraz",
+            "activity_slug":"escape-from-alcatraz"
+           
+        },
+        {
+            "id":2,
+            "category":"escapegame",
+            "activity_name":"Treasure Island",
+            "activity_slug":"treasure-island"
+           
+        },
+        {
+            "id":3,
+            "category":"escapegame",
+            "category":"escapegame",
+            "activity_name":"Zombie Apocalypse",
+            "activity_slug":"zombie-apocalypse"
+           
+        },
+        {
+            "id":4,
             "category":"escapegame",
             "activity_name":"Sherlock's Library",
             "activity_slug":"sherlocks-library"
            
         },
         {
-            "id":8,
+            "id":5,
+            "category":"escapegame",
+            "activity_name":"Black Ops",
+            "activity_slug":"black-ops"
+           
+        },
+        {
+            "id":6,
+            "category":"escapegame",
+            "activity_name":"Superhero's Adventure",
+            "activity_slug":"superheros-adventure"
+           
+        },
+        {
+            "id":7,
             "category":"escapegame",
             "activity_name":"Houdinis Magic Cell",
             "activity_slug":"houdinis-magic-cell"
@@ -858,10 +858,11 @@ const datalist={
         {
             "id":9,
             "category":"escapegame",
-            "activity_name":"Black Ops",
-            "activity_slug":"black-ops"
+            "activity_name":"Hollywood Premiere",
+            "activity_slug":"hollywood-premiere"
            
         },
+        
         {
             "id":10,
             "category":"escapegame",
@@ -869,12 +870,12 @@ const datalist={
             "activity_slug":"lost-in-the-jungle"
            
         },
-        
+
     ],
      // ===================================== kingston-ma END=======
      // =====================================n-attleborough-ma ny=======
      "n-attleborough-ma":[
-        
+
         {
             "id":1,
             "category":"escapegame",
@@ -892,60 +893,65 @@ const datalist={
         {
             "id":3,
             "category":"escapegame",
-            "activity_name":"Superhero's Adventure",
-            "activity_slug":"superheros-adventure"
-           
-        },
-        {
-            "id":4,
             "category":"escapegame",
             "activity_name":"Zombie Apocalypse",
             "activity_slug":"zombie-apocalypse"
            
         },
         {
-            "id":5,
-            "category":"escapegame",
-            "activity_name":"Special Agent",
-            "activity_slug":"special-agent"
-           
-        },
-        {
-            "id":6,
-            "category":"escapegame",
-            "activity_name":"Hollywood Premiere",
-            "activity_slug":"hollywood-premiere"
-           
-        },
-        {
-            "id":7,
+            "id":4,
             "category":"escapegame",
             "activity_name":"Sherlock's Library",
             "activity_slug":"sherlocks-library"
            
         },
         {
-            "id":8,
-            "category":"escapegame",
-            "activity_name":"Houdinis Magic Cell",
-            "activity_slug":"houdinis-magic-cell"
-           
-        },
-        {
-            "id":9,
+            "id":5,
             "category":"escapegame",
             "activity_name":"Black Ops",
             "activity_slug":"black-ops"
            
         },
-       
+        {
+            "id":6,
+            "category":"escapegame",
+            "activity_name":"Superhero's Adventure",
+            "activity_slug":"superheros-adventure"
+           
+        },
+        {
+            "id":7,
+            "category":"escapegame",
+            "activity_name":"Houdinis Magic Cell",
+            "activity_slug":"houdinis-magic-cell"
+           
+        },
+        
+        {
+            "id":8,
+            "category":"escapegame",
+            "activity_name":"Special Agent",
+            "activity_slug":"special-agent"
+           
+        },
+        {
+            "id":9,
+            "category":"escapegame",
+            "activity_name":"Hollywood Premiere",
+            "activity_slug":"hollywood-premiere"
+           
+        },
+        
+        
+
+
     ],
      // ===================================== n-attleborough-ma END=======
      //*****************************************************************************MA END++++++++++++++++ */
  //*****************************************************************************CONNECTICUT++++++++++++++++ */
       // =====================================milford-ct=======
       "milford-ct":[
-        
+
         {
             "id":1,
             "category":"escapegame",
@@ -960,30 +966,31 @@ const datalist={
             "activity_slug":"treasure-island"
            
         },
-        
         {
-            "id":4,
+            "id":3,
+            "category":"escapegame",
             "category":"escapegame",
             "activity_name":"Zombie Apocalypse",
             "activity_slug":"zombie-apocalypse"
            
         },
         {
-            "id":7,
+            "id":4,
             "category":"escapegame",
             "activity_name":"Sherlock's Library",
             "activity_slug":"sherlocks-library"
            
         },
         {
-            "id":9,
+            "id":5,
             "category":"escapegame",
             "activity_name":"Black Ops",
             "activity_slug":"black-ops"
            
         },
+        
         {
-            "id":8,
+            "id":7,
             "category":"escapegame",
             "activity_name":"Houdinis Magic Cell",
             "activity_slug":"houdinis-magic-cell"
@@ -991,21 +998,21 @@ const datalist={
         },
         
         {
-            "id":6,
+            "id":9,
             "category":"escapegame",
             "activity_name":"Hollywood Premiere",
             "activity_slug":"hollywood-premiere"
            
         },
         
-       
-        
-       
+    
+
+
     ],
      // ===================================== milford-ct END=======
      // =====================================manchester-ct=======
      "manchester-ct":[
-        
+
         {
             "id":1,
             "category":"escapegame",
@@ -1021,35 +1028,36 @@ const datalist={
            
         },
         {
-            "id":4,
+            "id":3,
+            "category":"escapegame",
             "category":"escapegame",
             "activity_name":"Zombie Apocalypse",
             "activity_slug":"zombie-apocalypse"
            
         },
         {
-            "id":7,
+            "id":4,
             "category":"escapegame",
             "activity_name":"Sherlock's Library",
             "activity_slug":"sherlocks-library"
            
         },
         {
-            "id":9,
+            "id":5,
             "category":"escapegame",
             "activity_name":"Black Ops",
             "activity_slug":"black-ops"
            
         },
         {
-            "id":3,
+            "id":6,
             "category":"escapegame",
             "activity_name":"Superhero's Adventure",
             "activity_slug":"superheros-adventure"
            
         },
         {
-            "id":8,
+            "id":7,
             "category":"escapegame",
             "activity_name":"Houdinis Magic Cell",
             "activity_slug":"houdinis-magic-cell"
@@ -1057,28 +1065,24 @@ const datalist={
         },
         
         {
-            "id":5,
+            "id":8,
             "category":"escapegame",
             "activity_name":"Special Agent",
             "activity_slug":"special-agent"
            
         },
         {
-            "id":6,
+            "id":9,
             "category":"escapegame",
             "activity_name":"Hollywood Premiere",
             "activity_slug":"hollywood-premiere"
            
         },
-        
-       
-        
-       
     ],
      // =====================================manchester-ct END=======
      // =====================================waterbury-ct=======
      "waterbury-ct":[
-        
+
         {
             "id":1,
             "category":"escapegame",
@@ -1093,61 +1097,58 @@ const datalist={
             "activity_slug":"treasure-island"
            
         },
-        
-       
         {
-            "id":4,
+            "id":3,
+            "category":"escapegame",
             "category":"escapegame",
             "activity_name":"Zombie Apocalypse",
             "activity_slug":"zombie-apocalypse"
            
         },
         {
-            "id":7,
+            "id":4,
             "category":"escapegame",
             "activity_name":"Sherlock's Library",
             "activity_slug":"sherlocks-library"
            
         },
         {
-            "id":9,
+            "id":5,
             "category":"escapegame",
             "activity_name":"Black Ops",
             "activity_slug":"black-ops"
            
         },
         {
-            "id":3,
+            "id":6,
             "category":"escapegame",
             "activity_name":"Superhero's Adventure",
             "activity_slug":"superheros-adventure"
            
         },
         {
-            "id":8,
+            "id":7,
             "category":"escapegame",
             "activity_name":"Houdinis Magic Cell",
             "activity_slug":"houdinis-magic-cell"
            
         },
+        
         {
-            "id":5,
+            "id":8,
             "category":"escapegame",
             "activity_name":"Special Agent",
             "activity_slug":"special-agent"
            
         },
         {
-            "id":6,
+            "id":9,
             "category":"escapegame",
             "activity_name":"Hollywood Premiere",
             "activity_slug":"hollywood-premiere"
            
         },
-        
-       
-       
-        
+
     ],
      // =====================================waterbury-ct END=======
      //*****************************************************************************CONNECTICUT END++++++++++++++++ */

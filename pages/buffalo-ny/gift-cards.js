@@ -32,6 +32,7 @@ const viewLocGift=(props)=>{
                      location={getLoc(props.pagedata.locationslug)}
                           activitylist={props.activitylist}
                           eventlist={props.eventlist}
+                          locationlist={props.locationlist}
                           />
                  <div id="mainContent" className='main-content'>
  
