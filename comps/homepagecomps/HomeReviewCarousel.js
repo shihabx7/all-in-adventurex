@@ -91,9 +91,9 @@ const shortrev=(txt)=>{
                          </div>
                      </div>
 
-                     <div className="card-rev-bottom bg-black pt-4 px-4 ">
-                     <div className="card-rev-desc text-center group-hover:scale-[0.97]">
-                         <div className={"card-rev-desc text-center "+ review.revlink? "min-h-[280px]":"min-h-[200px]"}>
+                     <div className="card-rev-bottom bg-black pt-4 px-4 group-hover:px-[16px] ">
+                     <div className="card-rev-desc text-center group-hover:scale-[1]">
+                         <div className={"card-rev-desc text-center "+ review.revlink? "min-h-[270px]":"min-h-[200px]"}>
                               <img className="inline" src="/assets/reviews/rev-5star.svg"></img>
                               {
                                 review.revlink &&

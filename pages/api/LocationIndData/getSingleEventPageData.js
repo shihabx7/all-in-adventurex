@@ -97,80 +97,80 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                       
                       },
                       "reviews": [
+                    
+                        {   "id"  : 1,
+                          "star":5,
+                         "title": "WE HAD SO MUCH FUN!",
+                          "review_text": "We were a group of 8 for the Game Room, and we had so much fun! We were celebrating a birthday, and the team at this location was great! We will come here again for sure.",
+                          "revlink":"https://g.co/kgs/givxmA",
+                          "author" :"Lisa Podhayny",
+                          "author_location" :"Holyoke, MA, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-1.jpg",
+                          "rev_img_alt":"escape room in Holyoke, MA"
+                        },
+                        {   "id"  : 2,
+                          "star":5,
+                         "title": "IT WAS PERFECT!",
+                          "review_text": "As a birthday party starter, it was perfect, the balance of challenge and achievement was just right, and our hostess was excellent. I really enjoyed my birthday party there with my loved one.",
+                          "revlink":"https://g.co/kgs/ZFdQL6",
+                          "author" :"Ashley Barrett",
+                          "author_location" :"Buffalo, NY, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-2.jpg",
+                          "rev_img_alt":"escape room in Buffalo, NY"
+                        },
+                        {   "id"  : 3,
+                          "star":5,
+                         "title": "SUPER FRIENDLY STAFF!",
+                          "review_text": "The staff was super friendly and super helpful! We loved accomplishing the treasure hunt room even though we couldn't finish the master level. Would love to go back and try out the other rooms they have.",
+                          "revlink":"https://g.co/kgs/8sD4bh",
+                          "author" :"Shannon Whitney",
+                          "author_location" :"Mentor, OH, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-3.jpg",
+                          "rev_img_alt":"escape room in Lawrenceville ga"
+                        },
+                        {   "id"  : 4,
+                          "star":5,
+                         "title": "HIGHLY RECOMMENDED!",
+                          "review_text": "I visited this Escape Room for a birthday party. The host was very attentive when we needed help, and we solved it. I would definitely recommend a group visit! Highly Recommended.",
+                          "revlink":"https://g.co/kgs/N17pvA",
+                          "author" :"Mousse",
+                          "author_location" :"Albany, NY, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-4.jpg",
+                          "rev_img_alt":"escape room in Bensalem pa"
+                        },
+                        {   "id"  : 5,
+                          "star":5,
+                         "title": "CAN'T WAIT TO GO BACK!",
+                          "review_text": "It was such a fun time at the Mystery Room for the birthday party! Can't wait to go back again! (And I might have to go back for my birthday as well!!). Too Much Fun.",
+                          "revlink":"https://g.co/kgs/hzd2vr",
+                          "author" :"Jen Westervelt",
+                          "author_location" :"West Nyack, NY, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-5.jpg",
+                          "rev_img_alt":"escape room in Kingston MA"
+                        },
                         
-                           {   "id"  : 1,
-                             "star":5,
-                            "title": "BEST BIRTHDAY EVER!",
-                             "review_text": "We were a group of 8 for the Game Room and we had so much fun! We were celebrating a birthday and the team at this location were great! Afterward we were all talking about how we want to come back soon to play again! Definitely recommend.",
-                             "revlink":"https://g.co/kgs/givxmA",
-                             "author" :"Lisa Podhayny",
-                             "author_location" :"Holyoke, MA, United States",
-                             "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-1.jpg",
-                             "rev_img_alt":"escape room in Holyoke, MA"
-                           },
-                           {   "id"  : 2,
-                             "star":5,
-                            "title": "ADVENTURE OVERLOADED!",
-                             "review_text": "I traveled all the way from Brooklyn for a mall day. Steve was so charismatic he definitely sold my group on the Zombie room. Upon checking in Victoria was amazing she explained how the experience would go and even took a great photo before we left. Your team is great here and I think this experience is something everyone should do. I'll be returning soon I want to figure out the Sherlock room. Thank you again to Steve and Victoria",
-                             "revlink":"https://g.co/kgs/ZFdQL6",
-                             "author" :"Ashley Barrett",
-                             "author_location" :"Buffalo, NY, United States",
-                             "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-2.jpg",
-                             "rev_img_alt":"escape room in Buffalo, NY"
-                           },
-                           {   "id"  : 3,
-                             "star":5,
-                            "title": "HIGHLY RECOMMENDED!",
-                             "review_text": "Staff was super friendly and super helpful! We loved accomplishing the treasure hunt room even though we couldn't finish the master level. Would love to go back and try out the other rooms they have.",
-                             "revlink":"https://g.co/kgs/8sD4bh",
-                             "author" :"Shannon Whitney",
-                             "author_location" :"Mentor, OH, United States",
-                             "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-3.jpg",
-                             "rev_img_alt":"escape room in Lawrenceville ga"
-                           },
-                           {   "id"  : 4,
-                             "star":5,
-                            "title": "IT WAS SUPER EXCITING!",
-                             "review_text": "I visited this Escape Room for a birthday party. We had a booking issue when we first arrived on our end but the manager, Steve, helped us reschedule and fix it! Overall, it very fun visit. We played the Sherlock room and escaped the level 2 stage. The equipment was in good shape. There was a lot of evidence given at the start so it was a little difficult determining which pieces would be most important but the host was very attentive when we needed help and we solved it. Would definitely recommend for a group visit!",
-                             "revlink":"https://g.co/kgs/N17pvA",
-                             "author" :"Mousse",
-                             "author_location" :"Albany, NY, United States",
-                             "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-4.jpg",
-                             "rev_img_alt":"escape room in Bensalem pa"
-                           },
-                           {   "id"  : 5,
-                             "star":5,
-                            "title": "BEST ESCAPE ROOM EVER!",
-                             "review_text": "Was such a fun time at the Mystery Room in West Nyack! The employees were great and super helpful. My family did the Zombie Apocalypse room and it was a blast!!! We beat the regular room and was ONE CLUE AWAY from beating Master level - but we still had fun beating the normal level! Can't wait to go back again! (And I might have to go back for my birthday!!)",
-                             "revlink":"https://g.co/kgs/hzd2vr",
-                             "author" :"Jen Westervelt",
-                             "author_location" :"West Nyack, NY, United States",
-                             "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-5.jpg",
-                             "rev_img_alt":"escape room in Kingston MA"
-                           },
-                           
-                           {   "id"  : 6,
-                             "star":5,
-                            "title": "PERFECT GIRLS ESCAPE PARTY!",
-                             "review_text": "Tried the Sherlock Room here and WOW it was hard, but also very fun! Suggest giving it a try if you like escape rooms. The two hosts who helped (and gave some hints) were very nice.",
-                             "revlink":"https://g.co/kgs/HUdAAw",
-                             "author" :"Jenny Brescia",
-                             "author_location" :"Roanoke, VA, United States",
-                             "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-6.jpg",
-                             "rev_img_alt":"escape room in Rockaway nj"
-                           },
-                           {   "id"  : 7,
-                             "star":5,
-                            "title": "INSANE ESCAPE ROOM BIRTHDAY!",
-                             "review_text": "Our experience was amazing!!! Dayna was an awesome host and helped to provide a memorable experience for my son's birthday.  Two thumbs up and will definitely go back again.",
-                             "revlink":"https://g.co/kgs/CFerYB",
-                             "author" :"Jonathan Barnes",
-                             "author_location" :"Lawrenceville, GA, United States",
-                             "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-7.jpg",
-                             "rev_img_alt":"escape room in ga "
-                           },
-              
-                         ]
+                        {   "id"  : 6,
+                          "star":5,
+                         "title": "PERFECT GIRLS PARTY!",
+                          "review_text": "Tried the Sherlock Room here for my Birthday and WOW, it was hard, but also very fun! Suggest giving it a try if you like escape rooms. The two hosts who helped (and gave some hints) were very friendly.",
+                          "revlink":"https://g.co/kgs/HUdAAw",
+                          "author" :"Jenny Brescia",
+                          "author_location" :"Roanoke, VA, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-6.jpg",
+                          "rev_img_alt":"escape room in Rockaway nj"
+                        },
+                        {   "id"  : 7,
+                          "star":5,
+                         "title": "EXPERIENCE WAS AMAZING!",
+                          "review_text": "Our experience was amazing!!! Dayna was an awesome host and helped to provide a memorable experience for my son's birthday. Two thumbs up and will definitely go back again.",
+                          "revlink":"https://g.co/kgs/CFerYB",
+                          "author" :"Jonathan Barnes",
+                          "author_location" :"Lawrenceville, GA, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-7.jpg",
+                          "rev_img_alt":"escape room in ga "
+                        },
+           
+                      ]
                      },
       //********************************************************birth day parties end*/
       //********************************************************team-building */
@@ -201,6 +201,82 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                            "videoid":"pfdyF_d4Z40"
                           
                            },
+                           "reviews": [
+                    
+                            {   "id"  : 1,
+                              "star":5,
+                             "title": "KNOWLEDGEABLE AND KIND!",
+                              "review_text": "Our group had a great time at that location. The room setup was really cool, the clues were definitely tricky but they was knowledgeable and kind! We will definitely be back.",
+                              "revlink":"https://g.co/kgs/givxmA",
+                              "author" :"Amanda Wilson",
+                              "author_location" :"West Nyack, NY, United States",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-1.jpg",
+                              "rev_img_alt":"escape room in West Nyack, NY, United States"
+                            },
+                            {   "id"  : 2,
+                              "star":5,
+                             "title": "ABSOLUTELY AMAZING!",
+                              "review_text": "Steve was absolutely amazing! A kind welcoming host 10/10 would recommend. Very easy to talk to, helpful and communicative. Our Team Loved his energy and the rooms!",
+                              "revlink":"https://g.co/kgs/ZFdQL6",
+                              "author" :"Autumn Clouse",
+                              "author_location" :"Manchester, CT, United States",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-2.jpg",
+                              "rev_img_alt":"escape room in Manchester, CT, United States"
+                            },
+                            {   "id"  : 3,
+                              "star":5,
+                             "title": "I WOULD DO IT AGAIN!",
+                              "review_text": "It was so much fun! I brought my real estate team for a team building event with 9 of us. We did the Black Ops escape room and needed clues but we enjoyed it a lot. I would do it again.",
+                              "revlink":"https://g.co/kgs/8sD4bh",
+                              "author" :"Avery Lugo",
+                              "author_location" :"Mentor, OH, United States",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-3.jpg",
+                              "rev_img_alt":"escape room in Syracuse, NY, United States"
+                            },
+                            
+                            {   "id"  : 4,
+                              "star":5,
+                             "title": "TEAM HAD A GREAT TIME!",
+                              "review_text": "Our Team had a great time after office on Allinadventures. The room setup was really cool, the clues were tricky but we solved it. Other team & we will surely be back for sure soon.",
+                              "revlink":"https://g.co/kgs/hzd2vr",
+                              "author" :"Amanda Wilson",
+                              "author_location" :"West Nyack, NY, United States",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-4.jpg",
+                              "rev_img_alt":"escape room in West Nyack, NY, United States"
+                            },
+                            
+                            {   "id"  : 5,
+                              "star":5,
+                             "title": "CHEERFUL AND PROFESSIONAL!",
+                              "review_text": "Bridget and Victoria were both incredibly helpful, cheerful and professional. It was overall a great experience that we would recommend to others. We will be coming again to try the other rooms! ",
+                              "revlink":"https://g.co/kgs/HUdAAw",
+                              "author" :"Francesco Perez",
+                              "author_location" :"Bensalem, PA, United States",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-5.jpg",
+                              "rev_img_alt":"escape room in Bensalem, PA, United States"
+                            },
+                            {   "id"  : 6,
+                              "star":5,
+                             "title": "WON AS BEST TEAM!",
+                              "review_text": "Nora was the best host for team-building activities !! She made the entire experience so much fun, and better and her high energy is infectious, So we won. We will definitely come back again!",
+                              "revlink":"https://g.co/kgs/CFerYB",
+                              "author" :"Nen Lord",
+                              "author_location" :"Milford, CT, United States",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-6.jpg",
+                              "rev_img_alt":"escape room in Milford, CT, United States "
+                            },
+                            {   "id"  : 7,
+                              "star":5,
+                             "title": "SUPER TEAM ENGAGING!",
+                              "review_text": "We had a great time in the Hollywood Premiere room today. Our game masters were very helpful, and the facility was clean. The clues were challenging. We look forward to our next visit. Super team engaging!",
+                              "revlink":"https://g.co/kgs/N17pvA",
+                              "author" :"Shelley C",
+                              "author_location" :"Rockaway, NJ, United States",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-7.jpg",
+                              "rev_img_alt":"escape room in Rockaway, NJ, United States"
+                            },
+               
+                          ]
                           },
     //********************************************************team-building end */
      //********************************************************corporate-events */
@@ -230,6 +306,82 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                          "videoid":"pfdyF_d4Z40"
                         
                          },
+                         "reviews": [
+                    
+                          {   "id"  : 1,
+                            "star":5,
+                           "title": "WE HAD A GREAT TIME!",
+                            "review_text": "We had a great time in the Sherlock Holmes room today. Our game masters were very helpful and the facility was clean. The clues were challenging. We look forward to our next visit.",
+                            "revlink":"https://g.co/kgs/givxmA",
+                            "author" :"Shelley C",
+                            "author_location" :"Rockaway, NJ, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-corporate-events-testimonials-1.jpg",
+                            "rev_img_alt":"escape room in Rockaway, NJ, United States"
+                          },
+                          {   "id"  : 2,
+                            "star":5,
+                           "title": "HIGH ENERGY IS INFECTIOUS!",
+                            "review_text": "Allinadventures was perfect for our team bonding events. We made the entire experience so much better, and Their high energy is infectious! I will definitely come back again & bring more!",
+                            "revlink":"https://g.co/kgs/ZFdQL6",
+                            "author" :"Nen Lord",
+                            "author_location" :"Milford, CT, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-corporate-events-testimonials-2.jpg",
+                            "rev_img_alt":"escape room in Milford, CT, United States"
+                          },
+                          {   "id"  : 3,
+                            "star":5,
+                           "title": "GREAT EXPERIENCE!",
+                            "review_text": "Bridget and Victoria were both incredibly helpful, cheerful and professional for the event. It was overall a great experience that we would recommend to others. We will be coming again to try the other rooms!",
+                            "revlink":"https://g.co/kgs/8sD4bh",
+                            "author" :"Francesco Perez",
+                            "author_location" :"Bensalem, PA, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-corporate-events-testimonials-3.jpg",
+                            "rev_img_alt":"escape room in Bensalem, PA, United States"
+                          },
+                          
+                          {   "id"  : 4,
+                            "star":5,
+                           "title": "SETUP WAS REALLY COOL!",
+                            "review_text": "Perfect for corporate events & The room setup was really cool, the clues were definitely tricky and the staff member was knowledgeable and kind! Don't miss their escape room winner surprises.",
+                            "revlink":"https://g.co/kgs/hzd2vr",
+                            "author" :"Amanda Wilson",
+                            "author_location" :"West Nyack, NY, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-corporate-events-testimonials-4.jpg",
+                            "rev_img_alt":"escape room in West Nyack, NY, United States"
+                          },
+                          
+                          {   "id"  : 5,
+                            "star":5,
+                           "title": "ABSOLUTELY AMAZING!",
+                            "review_text": "Escape Room events were absolutely amazing! A kind welcoming host 10/10 would recommend. Very easy to talk to, helpful and communicative. Our Team Loved his energy and the rooms!",
+                            "revlink":"https://g.co/kgs/HUdAAw",
+                            "author" :"Autumn Clouse",
+                            "author_location" :"Manchester, CT, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-corporate-events-testimonials-5.jpg",
+                            "rev_img_alt":"escape room in Manchester, CT, United States"
+                          },
+                          {   "id"  : 6,
+                            "star":5,
+                           "title": "VISITED FOR THE 1ST TIME!",
+                            "review_text": "We Visited for the 1st time, and it was so interesting to attend, A new experience. You need to be very attentive and to think logically. But it is very exciting game! Recommend to all my colleagues!",
+                            "revlink":"https://g.co/kgs/CFerYB",
+                            "author" :"Avery Lugo",
+                            "author_location" :"Syracuse, NY, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-corporate-events-testimonials-6.jpg",
+                            "rev_img_alt":"escape room in Syracuse, NY, United States"
+                          },
+                          {   "id"  : 7,
+                            "star":5,
+                           "title": "DEFINITELY BE BACK!",
+                            "review_text": "We will definitely be back. Our group had a great time at the West Nyack allinadventures. A perfect setup for the corporate officers for the team building events. We enjoyed ourselves a lot. It was fun.",
+                            "revlink":"https://g.co/kgs/N17pvA",
+                            "author" :"Amanda Wilson",
+                            "author_location" :"West Nyack, NY, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-corporate-events-testimonials-7.jpg",
+                            "rev_img_alt":"escape room in West Nyack, NY, United States"
+                          },
+             
+                        ]
                         },
     //********************************************************corporate-events end */
     //********************************************************family-fun-activity */
@@ -259,6 +411,82 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                            "videoid":"pfdyF_d4Z40"
                           
                            },
+                           "reviews": [
+                    
+                            {   "id"  : 1,
+                              "star":5,
+                             "title": "SUPER FRIENDLY!",
+                              "review_text": "They are super friendly and super helpful! We loved accomplishing the treasure hunt room even though we couldn't finish the master level. We Family members Would love to go back again.",
+                              "revlink":"https://g.co/kgs/givxmA",
+                              "author" :"Shannon Whitney",
+                              "author_location" :"Mentor, OH, United States",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-family-fun-activities-testimonials-1.jpg",
+                              "rev_img_alt":"escape room in Mentor, OH, United States"
+                            },
+                            {   "id"  : 2,
+                              "star":5,
+                             "title": "WE & I ENJOYED!",
+                              "review_text": "Went for an escape room with my family, We & i enjoyed our time so much that we just had to go for an extra adventure. Victoria was an ABSOLUTE dear, and made the experience much more enjoyable.",
+                              "revlink":"https://g.co/kgs/ZFdQL6",
+                              "author" :"Katie Tropy",
+                              "author_location" :"Columbus, OH, United States",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-family-fun-activities-testimonials-2.jpg",
+                              "rev_img_alt":"escape room in Columbus, OH, United States"
+                            },
+                            {   "id"  : 3,
+                              "star":5,
+                             "title": "100% COMING BACK AGAIN!",
+                              "review_text": "This was such a blast! Very much recommend for a fun game night for friends and/or family. We are 100% coming back again!!!!! Steve was a great game show host and such a great guy.",
+                              "revlink":"https://g.co/kgs/8sD4bh",
+                              "author" :"Lucia Ferrera",
+                              "author_location" :"Kingston, MA, United States",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-family-fun-activities-testimonials-3.jpg",
+                              "rev_img_alt":"Kingston, MA, United States"
+                            },
+                            
+                            {   "id"  : 4,
+                              "star":5,
+                             "title": "WONDERFUL EXPERIENCE!",
+                              "review_text": "OMG such a wonderful experience so fun, and the crew were wonderful and even egged us on when we almost gave up! such a supportive and fun experience 10/10 would recommend it.",
+                              "revlink":"https://g.co/kgs/hzd2vr",
+                              "author" :"Megsy Hubbard",
+                              "author_location" :"Waterbury, CT, United States",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-family-fun-activities-testimonials-4.jpg",
+                              "rev_img_alt":"escape room in Waterbury, CT, United States"
+                            },
+                            
+                            {   "id"  : 5,
+                              "star":5,
+                             "title": "TOP PLACE TO GO!",
+                              "review_text": "We all had such a wonderful time. We are definitely coming back again. Steve was a great host! He deserves a raise!!! Our family will never forget this place, we will come again soon with more.",
+                              "revlink":"https://g.co/kgs/HUdAAw",
+                              "author" :"Manuel Alvia",
+                              "author_location" :"East Brunswick, NJ, United States",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-family-fun-activities-testimonials-5.jpg",
+                              "rev_img_alt":"escape room in East Brunswick, NJ, United States"
+                            },
+                            {   "id"  : 6,
+                              "star":5,
+                             "title": "ENTHUSIASTIC AND HELPFUL!",
+                              "review_text": "Lots of fun. Victoria and Bridget were enthusiastic and really helpful. We were able to escape with some help. Really enjoyed the experience! Never experienced this with a full family like this.",
+                              "revlink":"https://g.co/kgs/CFerYB",
+                              "author" :"Drew Birmingham",
+                              "author_location" :"Dayton, OH, United States",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-family-fun-activities-testimonials-6.jpg",
+                              "rev_img_alt":"escape room in Dayton, OH, United States"
+                            },
+                            {   "id"  : 7,
+                              "star":5,
+                             "title": "PLEASANT AND HELPFUL!",
+                              "review_text": "First time doing an escape room and what a blast I had. My family & my hosts and they where so pleasant and helpful. They made my experience, even more, the worthwhile. Best Ever.",
+                              "revlink":"https://g.co/kgs/N17pvA",
+                              "author" :"Brooklyn Zombie",
+                              "author_location" :"Bensalem, PA, United States",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-family-fun-activities-testimonials-7.jpg",
+                              "rev_img_alt":"escape room in Bensalem, PA, United States"
+                            },
+               
+                          ]
                           },
     //********************************************************family-fun-activity end */
     //********************************************************bachelor-party  */
@@ -288,6 +516,82 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                        "videoid":"pfdyF_d4Z40"
                       
                        },
+                       "reviews": [
+                    
+                        {   "id"  : 1,
+                          "star":5,
+                         "title": "THE PARTY WAS LIT!",
+                          "review_text": "We Bachelors all had such a wonderful time. We are definitely coming back again. Steve was a great host! He deserves a raise!!! The party was lit and the escape games as well. Recommended.",
+                          "revlink":"https://g.co/kgs/givxmA",
+                          "author" :"Manuel Alvia",
+                          "author_location" :"East Brunswick, NJ, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-bachelor-parties-testimonials-1.jpg",
+                          "rev_img_alt":"escape room in East Brunswick, NJ, United States"
+                        },
+                        {   "id"  : 2,
+                          "star":5,
+                         "title": "THE NIGHT WAS EPIC!",
+                          "review_text": "The night was epic and unforgettable. Escape room was a lot of fun! Sherlock's Library was a challenge, in a good way. The host/clue-giver was super nice and helpful! We Boys Will be back.",
+                          "revlink":"https://g.co/kgs/ZFdQL6",
+                          "author" :"Brooklyn Zombie",
+                          "author_location" :"Bensalem, PA, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-bachelor-parties-testimonials-2.jpg",
+                          "rev_img_alt":"escape room in Bensalem, PA, United States"
+                        },
+                        {   "id"  : 3,
+                          "star":5,
+                         "title": "FIRST TIME DOING!",
+                          "review_text": "First time doing an escape room for the bachelor party and what a blast I had. They were so pleasant and helpful. They made my experience even more exciting.",
+                          "revlink":"https://g.co/kgs/8sD4bh",
+                          "author" :"Brooklyn Zombie",
+                          "author_location" :"Bensalem, PA, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-bachelor-parties-testimonials-3.jpg",
+                          "rev_img_alt":"escape room in Bensalem, PA, United States"
+                        },
+                        
+                        {   "id"  : 4,
+                          "star":5,
+                         "title": "DEFINITELY TRICKY!",
+                          "review_text": "Our group of boys & girls had a great time at the escape room location. The room setup was really cool, the clues were definitely tricky and the staff member was knowledgeable and kind!",
+                          "revlink":"https://g.co/kgs/hzd2vr",
+                          "author" :"Amanda Wilson",
+                          "author_location" :"West Nyack, NY, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-bachelor-parties-testimonials-4.jpg",
+                          "rev_img_alt":"escape room in West Nyack, NY, United States"
+                        },
+                        
+                        {   "id"  : 5,
+                          "star":5,
+                         "title": "ENDED UP DOING 3!",
+                          "review_text": "We went in only wanting to try one room, and ended up doing three in a row! Victoria was able to accommodate all our requests, and was helpful throughout the games. I would definitely be returning.",
+                          "revlink":"https://g.co/kgs/HUdAAw",
+                          "author" :"Avery Lugo",
+                          "author_location" :"Syracuse, NY, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-bachelor-parties-testimonials-5.jpg",
+                          "rev_img_alt":"escape room in Syracuse, NY, United States"
+                        },
+                        {   "id"  : 6,
+                          "star":5,
+                         "title": "FANTASTIC & INTERESTING!",
+                          "review_text": "The escape room was fantastic & pretty interesting because we want to have best moment and we did it. We had a blast definitely try it again the SUPERHERO WAS AWESOME!! Thank You.",
+                          "revlink":"https://g.co/kgs/CFerYB",
+                          "author" :"Michelle G",
+                          "author_location" :"Woodbridge, NJ, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-bachelor-parties-testimonials-6.jpg",
+                          "rev_img_alt":"escape room in Woodbridge, NJ, United States"
+                        },
+                        {   "id"  : 7,
+                          "star":5,
+                         "title": "PERFECT FOR ALL!",
+                          "review_text": "Lots of fun. Some locks didn't want to open but we got it just in time with some time left to do the extra stuff. Victoria was an assumed narrator!!! Absolutely made my night. Perfect for all.",
+                          "revlink":"https://g.co/kgs/N17pvA",
+                          "author" :"Hey Shea",
+                          "author_location" :"Raleigh, NC, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-bachelor-parties-testimonials-7.jpg",
+                          "rev_img_alt":"escape room in Raleigh, NC, United States"
+                        },
+           
+                      ]
                  },
     //********************************************************bachelor-party end */
     //********************************************************bachelorette-party  */
@@ -317,6 +621,82 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                          "videoid":"pfdyF_d4Z40"
                         
                          },
+                         "reviews": [
+                    
+                          {   "id"  : 1,
+                            "star":5,
+                           "title": "WENT WITH A HUGE GROUP!",
+                            "review_text": "Went with a huge group of people for my friend's bachelorette. We almost made it out, were on the last clue when the time went off. The staff was great and the puzzles challenging. Would definitely go here again.",
+                            "revlink":"https://g.co/kgs/givxmA",
+                            "author" :"Megsy Hubbard",
+                            "author_location" :"Waterbury, CT, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-bachelorette-parties-testimonials-1.jpg",
+                            "rev_img_alt":"escape room in Waterbury, CT, United States"
+                          },
+                          {   "id"  : 2,
+                            "star":5,
+                           "title": "BEST PARTY PLACE!",
+                            "review_text": "Lots of fun. Some locks didn't want to open but we got it just in time with some time left to do the extra stuff. Victoria was an assume narrator!! We did all those thing which we wanted. Best party place.",
+                            "revlink":"https://g.co/kgs/ZFdQL6",
+                            "author" :"Hey Shea",
+                            "author_location" :"Raleigh, NC, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-bachelorette-parties-testimonials-2.jpg",
+                            "rev_img_alt":"escape room in Raleigh, NC, United States"
+                          },
+                          {   "id"  : 3,
+                            "star":5,
+                           "title": "PARTY WAS AWESOME!",
+                            "review_text": "Party was AWESOME!! The escape room fantasy. We had a blast definitely try it again the BACHELORETTE EVENTS WAS AWESOME!! Enjoyed with friends and mates after long time.",
+                            "revlink":"https://g.co/kgs/8sD4bh",
+                            "author" :"Michelle G",
+                            "author_location" :"Woodbridge, NJ, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-bachelorette-parties-testimonials-3.jpg",
+                            "rev_img_alt":"escape room in Woodbridge, NJ, United States"
+                          },
+                          
+                          {   "id"  : 4,
+                            "star":5,
+                           "title": "GIRLS ACHIEVEMENT!",
+                            "review_text": "Our group had a great time at the bachelorette party. The room setup was really cool, the clues were definitely tricky and the staff member (Nora, I believe) was knowledgeable and kind! We will definitely be back.",
+                            "revlink":"https://g.co/kgs/hzd2vr",
+                            "author" :"Amanda Wilson",
+                            "author_location" :"West Nyack, NY, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-bachelorette-parties-testimonials-4.jpg",
+                            "rev_img_alt":"escape room in West Nyack, NY, United States"
+                          },
+                          
+                          {   "id"  : 5,
+                            "star":5,
+                           "title": "CLUES WERE CHALLENGING!",
+                            "review_text": "We had a great time in the Sherlock Holmes room today. Our game masters were very helpful and the facility was clean. The clues were challenging & event was lit. We look forward to our next visit.",
+                            "revlink":"https://g.co/kgs/HUdAAw",
+                            "author" :"Shelley C",
+                            "author_location" :"Rockaway, NJ, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-bachelorette-parties-testimonials-5.jpg",
+                            "rev_img_alt":"Rockaway, NJ, United States"
+                          },
+                          {   "id"  : 6,
+                            "star":5,
+                           "title": "SUCH A WONDERFUL TIME!",
+                            "review_text": "We all had such a wonderful time. We are definitely coming back again. Steve was a great host! He deserves a raise!!! They made the night special for all of the guests & we really enjoyed it a lot.",
+                            "revlink":"https://g.co/kgs/CFerYB",
+                            "author" :"Manuel Alvia",
+                            "author_location" :"East Brunswick, NJ, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-bachelorette-parties-testimonials-6.jpg",
+                            "rev_img_alt":"escape room in East Brunswick, NJ, United States"
+                          },
+                          {   "id"  : 7,
+                            "star":5,
+                           "title": "ADVENTUROUS ROOM!",
+                            "review_text": "Had so much fun at mystery room! Victoria and Emmy were awesome game masters. Can't wait to go again! Event & parties arrangement were perfectly setup for the guests and players.",
+                            "revlink":"https://g.co/kgs/N17pvA",
+                            "author" :"Molly Minogue",
+                            "author_location" :"N. Attleborough, MA, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-bachelorette-parties-testimonials-7.jpg",
+                            "rev_img_alt":"escape room in N. Attleborough, MA, United States"
+                          },
+             
+                        ]
                       },
     //********************************************************bachelorette-party end */
     //********************************************************proposal-party */
@@ -346,6 +726,82 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                            "videoid":"pfdyF_d4Z40"
                           
                            },
+                           "reviews": [
+                    
+                            {   "id"  : 1,
+                              "star":5,
+                             "title": "COME AND ENJOY!",
+                              "review_text": "Had a great time at mystery room. Victoria and Dayna were amazing and we were able to escape Alcatraz! Come and enjoy your special night with the special person, mark my word.",
+                              "revlink":"https://g.co/kgs/givxmA",
+                              "author" :"Moishe Singer",
+                              "author_location" :"East Brunswick, NJ, United States",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-proposal-party-testimonials-1.jpg",
+                              "rev_img_alt":"escape room in East Brunswick, NJ, United States"
+                            },
+                            {   "id"  : 2,
+                              "star":5,
+                             "title": "EMPLOYEES WERE AMAZING!",
+                              "review_text": "Proposal west surprisingly well & we know what it takes to say yes. Awesome place can't wait to come back and try the other rooms. Employees were amazing, very knowledgeable and helpful.",
+                              "revlink":"https://g.co/kgs/ZFdQL6",
+                              "author" :"Ben Cintron",
+                              "author_location" :"Rockaway, NJ, United States",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-proposal-party-testimonials-2.jpg",
+                              "rev_img_alt":"escape room in Rockaway, NJ, United States"
+                            },
+                            {   "id"  : 3,
+                              "star":5,
+                             "title": "GONNA BE COMING BACK!",
+                              "review_text": "Had a while bunch of fun at this place with me and my girlfriend for our 6 month anniversary. Gonna be coming back here with more friends for sure in next month and enjoy with others.",
+                              "revlink":"https://g.co/kgs/8sD4bh",
+                              "author" :"Mikey R",
+                              "author_location" :"N. Attleborough, MA, United States",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-proposal-party-testimonials-3.jpg",
+                              "rev_img_alt":"escape room in N. Attleborough, MA, United States"
+                            },
+                            
+                            {   "id"  : 4,
+                              "star":5,
+                             "title": "MORE FUN THAN YOU THINK!",
+                              "review_text": "Oh my goodness! I wanted to find a fun place for my girlfriend and I to bring her 12 year old daughter to enjoy on short notice and came across this place, and WOW!! It's more fun than you think it would be.",
+                              "revlink":"https://g.co/kgs/hzd2vr",
+                              "author" :"Wise Guy",
+                              "author_location" :"Dayton, OH, United States",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-proposal-party-testimonials-4.jpg",
+                              "rev_img_alt":"escape room in Dayton, OH, United States"
+                            },
+                            
+                            {   "id"  : 5,
+                              "star":5,
+                             "title": "HE PROPOSED ME!",
+                              "review_text": "We had a ton of fun! Molly and Nora were excellent hosts and we made it out with some time to spare! We will try the next level next time we go, but it was challenging and we had to use our hints!",
+                              "revlink":"https://g.co/kgs/HUdAAw",
+                              "author" :"Kami Smith",
+                              "author_location" :"Columbus, OH, United States ",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-proposal-party-testimonials-5.jpg",
+                              "rev_img_alt":"escape room in Columbus, OH, United States "
+                            },
+                            {   "id"  : 6,
+                              "star":5,
+                             "title": "HAD A LOVELY EXPERIENCE!",
+                              "review_text": "Awesome time. Great thing to do on your birthday. Had a lovely experience, thanks to Steve! And, Nicole added t9 the fun with her stoic sense of humor. Cannot wait to do it again.",
+                              "revlink":"https://g.co/kgs/CFerYB",
+                              "author" :"Cat Silvestri",
+                              "author_location" :"Middletown, NY, United States ",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-proposal-party-testimonials-6.jpg",
+                              "rev_img_alt":"escape room in Middletown, NY, United States  "
+                            },
+                            {   "id"  : 7,
+                              "star":5,
+                             "title": "MADE ME THINKING HARD!",
+                              "review_text": "I had so much fun! The whole setting was so intriguing and really made me thinking hard, which is so needed for me! Haha The staff was very helpful and super kind! Will visit here again.",
+                              "revlink":"https://g.co/kgs/N17pvA",
+                              "author" :"Erin Kim",
+                              "author_location" :"Watertown, NY, United States ",
+                              "rev_img":"/assets/all-testimonials-image/allinadventures-events-proposal-party-testimonials-7.jpg",
+                              "rev_img_alt":"escape room in Watertown, NY, United States "
+                            },
+               
+                          ]
                         },
     //********************************************************proposal-party end */
     //********************************************************date-night*/
@@ -375,6 +831,82 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                    "videoid":"pfdyF_d4Z40"
                   
                    },
+                   "reviews": [
+                    
+                    {   "id"  : 1,
+                      "star":5,
+                     "title": "RECOMMENDED TO EVERYONE!",
+                      "review_text": "Had a while bunch of fun at this place with me and my girlfriend for our 6 month anniversary. Gonna be coming back here with more friends for sure! Recommended to everyone.",
+                      "revlink":"https://g.co/kgs/givxmA",
+                      "author" :"Mikey R",
+                      "author_location" :"N. Attleborough, MA, United States",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-date-night-testimonials-1.jpg",
+                      "rev_img_alt":"escape room in N. Attleborough, MA, United States"
+                    },
+                    {   "id"  : 2,
+                      "star":5,
+                     "title": "HELPFUL AND SUPER KIND!",
+                      "review_text": "The whole setting was so intriguing and really made me thinking hard, which is so needed for me! Haha they were very helpful and super kind! Will visit here again for another adventure ",
+                      "revlink":"https://g.co/kgs/ZFdQL6",
+                      "author" :"Erin Kim",
+                      "author_location" :"Watertown, NY, United States ",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-date-night-testimonials-2.jpg",
+                      "rev_img_alt":"escape room in Watertown, NY, United States "
+                    },
+                    {   "id"  : 3,
+                      "star":5,
+                     "title": "PERFECT NIGHT OUT!",
+                      "review_text": "We had a ton of fun! Molly and Nora were excellent hosts and we made it out with some time to spare! We will try the next level next time we go, but it was challenging and we had to use our hints! ",
+                      "revlink":"https://g.co/kgs/8sD4bh",
+                      "author" :"Kami Smith ",
+                      "author_location" :"Columbus, OH, United States ",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-date-night-testimonials-3.jpg",
+                      "rev_img_alt":"escape room in Columbus, OH, United States "
+                    },
+                    
+                    {   "id"  : 4,
+                      "star":5,
+                     "title": "LOVELY DATE NIGHT!",
+                      "review_text": "Awesome place can't wait to come back and try the other rooms. Employees were amazing, very knowledgeable and helpful. Bring your loved one and you won't regret it for sure.",
+                      "revlink":"https://g.co/kgs/hzd2vr",
+                      "author" :"Ben Cintron",
+                      "author_location" :"Rockaway, NJ, United States",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-date-night-testimonials-4.jpg",
+                      "rev_img_alt":"escape room in Rockaway, NJ, United States"
+                    },
+                    
+                    {   "id"  : 5,
+                      "star":5,
+                     "title": "CANT WAIT TO DO AGAIN!",
+                      "review_text": "Awesome time. Great thing to do on your birthday. Had a lovely experience, thanks to Steve! And, Nicole added t9 the fun with her stoic sense of humor. I cannot wait to do it again. Peace out.",
+                      "revlink":"https://g.co/kgs/HUdAAw",
+                      "author" :"Cat Silvestri",
+                      "author_location" :"Middletown, NY, United States ",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-date-night-testimonials-5.jpg",
+                      "rev_img_alt":"escape room in Middletown, NY, United States "
+                    },
+                    {   "id"  : 6,
+                      "star":5,
+                     "title": "BEST NIGHT EVER!",
+                      "review_text": "I would definitely recommend this for some family/ Date night fun. Oh my goodness! I wanted to find a fun place for my girlfriend to enjoy on short notice and came across this place, and WOW!!",
+                      "revlink":"https://g.co/kgs/CFerYB",
+                      "author" :"Wise Guy",
+                      "author_location" :"Dayton, OH, United States",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-date-night-testimonials-6.jpg",
+                      "rev_img_alt":"escape room in Dayton, OH, United States "
+                    },
+                    {   "id"  : 7,
+                      "star":5,
+                     "title": "6 MONTH CELEBRATION!",
+                      "review_text": "Gonna be coming back here with more friends for sure! Had a while bunch of fun at this place with me and my girlfriend for our 6 month anniversary. Literally we enjoyed every second of escape room.",
+                      "revlink":"https://g.co/kgs/N17pvA",
+                      "author" :"Mikey R",
+                      "author_location" :"N. Attleborough, MA, United States",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-date-night-testimonials-7.jpg",
+                      "rev_img_alt":"escape room in N. Attleborough, MA, United States"
+                    },
+       
+                  ]
     },
     //********************************************************date-night end */
     //*******************************************************private-party*/
@@ -404,6 +936,82 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
        "videoid":"pfdyF_d4Z40"
       
        },
+       "reviews": [
+                    
+        {   "id"  : 1,
+          "star":5,
+         "title": "SUPER FUN EXPERIENCE!",
+          "review_text": "Escape the Room allinadventures was a super fun experience that I would 100% recommend! Perfect for private parties and hosting an event in here. Best thing is in the escape room.",
+          "revlink":"https://g.co/kgs/givxmA",
+          "author" :"Mikey R",
+          "author_location" :"N. Attleborough, MA, United States",
+          "rev_img":"/assets/all-testimonials-image/allinadventures-events-private-parties-testimonials-1.jpg",
+          "rev_img_alt":"escape room in N. Attleborough, MA, United States"
+        },
+        {   "id"  : 2,
+          "star":5,
+         "title": "TWO THUMBS UP!",
+          "review_text": "Our experience was amazing!!! Dayna was an awesome host and helped to provide a memorable experience for my son's birthday. Two thumbs up and will definitely go back again.",
+          "revlink":"https://g.co/kgs/ZFdQL6",
+          "author" :"Jonathan Barnes",
+          "author_location" :"Lawrenceville, GA, United States",
+          "rev_img":"/assets/all-testimonials-image/allinadventures-events-private-parties-testimonials-2.jpg",
+          "rev_img_alt":"escape room in Lawrenceville, GA, United States"
+        },
+        {   "id"  : 3,
+          "star":5,
+         "title": "I'LL BE RETURNING SOON!",
+          "review_text": "Your team is great here, and I think this experience is something everyone should do. I'll be returning soon. I want to figure out the Sherlock room. Thank you again to Steve and Victoria.",
+          "revlink":"https://g.co/kgs/8sD4bh",
+          "author" :"Ashley Barrett",
+          "author_location" :"Buffalo, NY, United States",
+          "rev_img":"/assets/all-testimonials-image/allinadventures-events-private-parties-testimonials-3.jpg",
+          "rev_img_alt":"escape room in Buffalo, NY, United States"
+        },
+        
+        {   "id"  : 4,
+          "star":5,
+         "title": "SUPER EXCITING!",
+          "review_text": "I visited this Escape Room for a birthday party. The host was very attentive when we needed help and we solved it. Would definitely recommend for a group visit 7 private parties events for all.",
+          "revlink":"https://g.co/kgs/hzd2vr",
+          "author" :"Mousse",
+          "author_location" :"Albany, NY, United States",
+          "rev_img":"/assets/all-testimonials-image/allinadventures-events-private-parties-testimonials-4.jpg",
+          "rev_img_alt":"escape room in Albany, NY, United States"
+        },
+        
+        {   "id"  : 5,
+          "star":5,
+         "title": "FACILITY WAS CLEAN!",
+          "review_text": "We had a great time with teams in the Sherlock Holmes room today. Our game masters were very helpful and the facility was clean. The clues were challenging. We look forward to our next visit.",
+          "revlink":"https://g.co/kgs/HUdAAw",
+          "author" :"Shelley C",
+          "author_location" :"Rockaway, NJ, United States",
+          "rev_img":"/assets/all-testimonials-image/allinadventures-events-private-parties-testimonials-5.jpg",
+          "rev_img_alt":"escape room in Rockaway, NJ, United States"
+        },
+        {   "id"  : 6,
+          "star":5,
+         "title": "HELPFUL THROUGHOUT GAMES!",
+          "review_text": "Having done 5 escape rooms before, we thought we'd try out the new room - mixed-up minds. Victoria was able to accommodate all our requests, and was helpful throughout the games.",
+          "revlink":"https://g.co/kgs/CFerYB",
+          "author" :"Avery Lugo",
+          "author_location" :"Syracuse, NY, United States",
+          "rev_img":"/assets/all-testimonials-image/allinadventures-events-private-parties-testimonials-6.jpg",
+          "rev_img_alt":"escape room in Syracuse, NY, United States"
+        },
+        {   "id"  : 7,
+          "star":5,
+         "title": "FUN GAME NIGHT FOR ALL!",
+          "review_text": "This was such a blast! Very much recommended for a fun game night for friends and/or family. We are 100% coming back again!!!!! Steve was a great game show host and such a great guy. ",
+          "revlink":"https://g.co/kgs/N17pvA",
+          "author" :"Lucia Ferrera",
+          "author_location" :"Kingston, MA, United States",
+          "rev_img":"/assets/all-testimonials-image/allinadventures-events-private-parties-testimonials-7.jpg",
+          "rev_img_alt":"escape room in Kingston, MA, United States"
+        },
+    
+      ]
     },
     //********************************************************date-night end */
     //********************************************************reunion-party*/
@@ -433,6 +1041,82 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                      "videoid":"pfdyF_d4Z40"
                     
                      },
+                     "reviews": [
+                    
+                      {   "id"  : 1,
+                        "star":5,
+                       "title": "FUN REUNION NIGHT!",
+                        "review_text": "This was such a blast! Very much recommended for a fun reunion night for friends and/or family. We are 100% coming back again!!!!! Steve was a great game show host and such a great guy. ",
+                        "revlink":"https://g.co/kgs/givxmA",
+                        "author" :"Lucia Ferrera",
+                        "author_location" :"Kingston, MA, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-reunion-party-testimonials-1.jpg",
+                        "rev_img_alt":"escape room in Kingston, MA, United States"
+                      },
+                      {   "id"  : 2,
+                        "star":5,
+                       "title": "CELEBRATING A REUNION!",
+                        "review_text": "We were a group of 8 for the Game Room and we had so much fun! We were celebrating a reunion Afterward we were all talking about how we want to come back soon to play again! Definitely recommend. ",
+                        "revlink":"https://g.co/kgs/ZFdQL6",
+                        "author" :"Lisa Podhayny",
+                        "author_location" :"Holyoke, MA, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-reunion-party-testimonials-2.jpg",
+                        "rev_img_alt":"escape room in Manchester, CT, United States"
+                      },
+                      {   "id"  : 3,
+                        "star":5,
+                       "title": "FRIENDS GET-TOGETHER!",
+                        "review_text": "Me and my friends we super duper excited & We were able to escape with some help. Really enjoyed the experience! Thanks, allinadventures for the memorable night we really cannot forget.",
+                        "revlink":"https://g.co/kgs/8sD4bh",
+                        "author" :"Drew Birmingham",
+                        "author_location" :"Dayton, OH, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-reunion-party-testimonials-3.jpg",
+                        "rev_img_alt":"escape room in Syracuse, NY, United States"
+                      },
+                      
+                      {   "id"  : 4,
+                        "star":5,
+                       "title": "100% SATISFIED WITH GAMES!",
+                        "review_text": "This was such a blast! Very much recommend for a fun game night for friends and/or family. We are 100% satisfied with the games!!!!!",
+                        "revlink":"https://g.co/kgs/hzd2vr",
+                        "author" :"Lucia Ferrera",
+                        "author_location" :"Kingston, MA, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-reunion-party-testimonials-4.jpg",
+                        "rev_img_alt":"escape room in Kingston, MA, United States"
+                      },
+                      
+                      {   "id"  : 5,
+                        "star":5,
+                       "title": "PRIVATE FAMILY PARTY!",
+                        "review_text": "We went in only wanting to try one room, and ended up doing three in a row! They were able to accommodate all our requests, and was helpful throughout the games. I would definitely be returning.",
+                        "revlink":"https://g.co/kgs/HUdAAw",
+                        "author" :"Avery Lugo",
+                        "author_location" :"Syracuse, NY, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-reunion-party-testimonials-5.jpg",
+                        "rev_img_alt":"escape room in Syracuse, NY, United States"
+                      },
+                      {   "id"  : 6,
+                        "star":5,
+                       "title": "A TOP-NOTCH GROUP!",
+                        "review_text": "I gave my daughter a private party at the escape room yesterday. I have to give a big thank you to the manager, I truly appreciated everything that they did. A top-notch group!!! Thanks again!!! ",
+                        "revlink":"https://g.co/kgs/CFerYB",
+                        "author" :"Melodie Brewington",
+                        "author_location" :"Bowie, MD, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-reunion-party-testimonials-6.jpg",
+                        "rev_img_alt":"escape room in Bowie, MD, United States"
+                      },
+                      {   "id"  : 7,
+                        "star":5,
+                       "title": "SUPER SIBLINGS PARTY!",
+                        "review_text": "We had a great time in the Sherlock Holmes room today. Our game masters were very helpful and the facility was clean. The clues were challenging. It was super siblings party.",
+                        "revlink":"https://g.co/kgs/N17pvA",
+                        "author" :"Shelley C",
+                        "author_location" :"Rockaway, NJ, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-reunion-party-testimonials-7.jpg",
+                        "rev_img_alt":"escape room in Rockaway, NJ, United States"
+                      },
+         
+                    ]
                     },
     //********************************************************reunion-party end */
     //********************************************************graduation-party*/
@@ -462,6 +1146,82 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                        "videoid":"pfdyF_d4Z40"
                       
                        },
+                       "reviews": [
+                    
+                        {   "id"  : 1,
+                          "star":5,
+                         "title": "FUN GRADUATION NIGHT!",
+                          "review_text": "This was such a blast! Very much recommend for a fun game for graduation night with friends. We are 100% coming back again!!!!! Steve was a great game show host and such a great guy.",
+                          "revlink":"https://g.co/kgs/givxmA",
+                          "author" :"Lucia Ferrera",
+                          "author_location" :"Kingston, MA, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-graduation-party-testimonials-1.jpg",
+                          "rev_img_alt":"escape room in Kingston, MA, United States"
+                        },
+                        {   "id"  : 2,
+                          "star":5,
+                         "title": "FUN AND ENTERTAINING!",
+                          "review_text": "It was a very fun and entertaining game and it was very cleverly designed. We only got out with two minutes to spare. There were a lot of padlocks, keys and codes. I really enjoyed my party there.",
+                          "revlink":"https://g.co/kgs/ZFdQL6",
+                          "author" :"Lucia Ferrera",
+                          "author_location" :"Kingston, MA, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-graduation-party-testimonials-2.jpg",
+                          "rev_img_alt":"escape room in Kingston, MA, United States"
+                        },
+                        {   "id"  : 3,
+                          "star":5,
+                         "title": "AWESOME CLASSMATES!",
+                          "review_text": "Went with awesome classmates for the party. We almost made it out, were on the last clue when the time went off. The staff was great and the puzzles challenging. Would definitely go here again.",
+                          "revlink":"https://g.co/kgs/8sD4bh",
+                          "author" :"Avery Lugo",
+                          "author_location" :"Syracuse, NY, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-graduation-party-testimonials-3.jpg",
+                          "rev_img_alt":"escape room in Syracuse, NY, United States"
+                        },
+                        
+                        {   "id"  : 4,
+                          "star":5,
+                         "title": "WE ALL HAD A BLAST!",
+                          "review_text": "What a terrific experience we had today!! Six of us, ages 10 to adult booked our own escape room… Zombie Apocalypse!!! We all had a blast. He made it an enjoyable and memorable experience! ",
+                          "revlink":"https://g.co/kgs/hzd2vr",
+                          "author" :"Linda S",
+                          "author_location" :"Roanoke, VA, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-graduation-party-testimonials-4.jpg",
+                          "rev_img_alt":"escape room in Roanoke, VA, United States"
+                        },
+                        
+                        {   "id"  : 5,
+                          "star":5,
+                         "title": "CHILLOUT EVENTS!",
+                          "review_text": "I gave my graduation party at the escape room yesterday. They were all very accommodating, genuine, pleasant and thoughtful. It was a chillout events!!! Thanks again!!! ",
+                          "revlink":"https://g.co/kgs/HUdAAw",
+                          "author" :"Melodie Brewington",
+                          "author_location" :"Bowie, MD, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-graduation-party-testimonials-5.jpg",
+                          "rev_img_alt":"escape room in Bowie, MD, United States"
+                        },
+                        {   "id"  : 6,
+                          "star":5,
+                         "title": "GALA NIGHT SPECIAL!",
+                          "review_text": "This place was absolutely fun for gala night event, me and my friend did the sherlocks library but we did not finish it, we got many clues along the way and had so much fun trying to complete it!",
+                          "revlink":"https://g.co/kgs/CFerYB",
+                          "author" :"Cameron Burns",
+                          "author_location" :"Hadley, MA, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-graduation-party-testimonials-6.jpg",
+                          "rev_img_alt":"escape room in Hadley, MA, United States"
+                        },
+                        {   "id"  : 7,
+                          "star":5,
+                         "title": "10/10 WOULD RECOMMEND!",
+                          "review_text": "FANTASTIC!!! Steve and Dayna made this experience unforgettable. Team Robin will forever be in my memory. 10/10 would recommend it. Definitely coming back with my new friends from college.",
+                          "revlink":"https://g.co/kgs/N17pvA",
+                          "author" :"Faith Orzeck",
+                          "author_location" :"White Marsh, MD, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-graduation-party-testimonials-7.jpg",
+                          "rev_img_alt":"escape room in White Marsh, MD, United States"
+                        },
+           
+                      ]
                       },
     //********************************************************graduation-party end */
     //********************************************************school-events*/
@@ -491,6 +1251,82 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                          "videoid":"pfdyF_d4Z40"
                         
                          },
+                         "reviews": [
+                    
+                          {   "id"  : 1,
+                            "star":5,
+                           "title": "DEFINITELY GOING AGAIN!",
+                            "review_text": "This place was absolutely so fun, me and my friend did the escape room but we did not finish it, we got many clues along the way and had so much fun trying to complete it! I am definitely going again.",
+                            "revlink":"https://g.co/kgs/givxmA",
+                            "author" :"Cameron Burns",
+                            "author_location" :"Hadley, MA, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-school-events-testimonials-1.jpg",
+                            "rev_img_alt":"escape room in Hadley, MA, United States"
+                          },
+                          {   "id"  : 2,
+                            "star":5,
+                           "title": "EVERYONE SHOULD DO!",
+                            "review_text": "Our school team is great here and I think this experience is something everyone should do. I'll be returning soon I want to figure out the Sherlock room. Thank you again to Steve and Victoria.",
+                            "revlink":"https://g.co/kgs/ZFdQL6",
+                            "author" :"Ashley Barrett",
+                            "author_location" :"Buffalo, NY, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-school-events-testimonials-2.jpg",
+                            "rev_img_alt":"escape room in Buffalo, NY, United States"
+                          },
+                          {   "id"  : 3,
+                            "star":5,
+                           "title": "SUPER FANTASTIC!",
+                            "review_text": "SUPER FANTASTIC & EXCITING !!! Steve and Dayna made this experience unforgettable. Team will forever be in my memory.",
+                            "revlink":"https://g.co/kgs/8sD4bh",
+                            "author" :"Faith Orzeck",
+                            "author_location" :"White Marsh, MD, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-school-events-testimonials-3.jpg",
+                            "rev_img_alt":"escape room in White Marsh, MD, United States"
+                          },
+                          
+                          {   "id"  : 4,
+                            "star":5,
+                           "title": "AWESOME PLACE FOR FUN!",
+                            "review_text": "Awesome place for fun, me and my friend did the events, I am definitely going to come here again to try a different room. Escape room especially really nice shout out to escape from alcatraz.",
+                            "revlink":"https://g.co/kgs/hzd2vr",
+                            "author" :"Cameron Burns",
+                            "author_location" :"Hadley, MA, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-school-events-testimonials-4.jpg",
+                            "rev_img_alt":"escape room in Hadley, MA, United States"
+                          },
+                          
+                          {   "id"  : 5,
+                            "star":5,
+                           "title": "HELPFUL TO FIND CLUE!",
+                            "review_text": "Was such a fun time at the Mystery Room! The players were great and super helpful to find clue. All kids did the Zombie Apocalypse room and it was a blast!!! ",
+                            "revlink":"https://g.co/kgs/HUdAAw",
+                            "author" :"Jen Westervelt",
+                            "author_location" :"West Nyack, NY, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-school-events-testimonials-5.jpg",
+                            "rev_img_alt":"escape room in West Nyack, NY, United States"
+                          },
+                          {   "id"  : 6,
+                            "star":5,
+                           "title": "BEST FOR EVENTS!",
+                            "review_text": "We all had such a wonderful time. We are definitely coming back again. Steve was a great host! He deserves a raise!!! Thumbs Up to the allinadventures managers and masters for the help.",
+                            "revlink":"https://g.co/kgs/CFerYB",
+                            "author" :"Manuel Alvia",
+                            "author_location" :"East Brunswick, NJ, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-school-events-testimonials-6.jpg",
+                            "rev_img_alt":"escape room in East Brunswick, NJ, United States"
+                          },
+                          {   "id"  : 7,
+                            "star":5,
+                           "title": "WE MADE IT THROUGH!",
+                            "review_text": "This was a thought-provoking and exciting experience. They made the event come alive and cheered us on! We made it out and had a terrific time doing it! We will treasure the adorable winning picture he",
+                            "revlink":"https://g.co/kgs/N17pvA",
+                            "author" :"Esther Fishman",
+                            "author_location" :"Albany, NY, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-school-events-testimonials-7.jpg",
+                            "rev_img_alt":"escape room in Albany, NY, United States"
+                          },
+             
+                        ]
                         },
     //********************************************************school-events end */
     //********************************************************school-events*/
@@ -520,10 +1356,86 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                         "videoid":"pfdyF_d4Z40"
                       
                         },
+                        "reviews": [
+                    
+                          {   "id"  : 1,
+                            "star":5,
+                           "title": "OUR SURPRISE PLAN!",
+                            "review_text": "I gave my daughter a gender reveal party at the escape room yesterday. I have to give a big thank you to the manager Joe and to Sophia who did an excellent job in taking care of us when we were there.",
+                            "revlink":"https://g.co/kgs/givxmA",
+                            "author" :"Melodie Brewington",
+                            "author_location" :"Bowie, MD, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-gender-reveal-party-testimonials-1.jpg",
+                            "rev_img_alt":"escape room in Bowie, MD, United States"
+                          },
+                          {   "id"  : 2,
+                            "star":5,
+                           "title": "GREAT AND HELPFUL!",
+                            "review_text": "The actors were great and helpful. The kids were very determined to make it out. They did with 42 seconds left on the clock. It was a fun day for us and all of those who came to the party.",
+                            "revlink":"https://g.co/kgs/ZFdQL6",
+                            "author" :"Faith Orzeck",
+                            "author_location" :"White Marsh, MD, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-gender-reveal-party-testimonials-2.jpg",
+                            "rev_img_alt":"escape room in White Marsh, MD, United States"
+                          },
+                          {   "id"  : 3,
+                            "star":5,
+                           "title": "RECOMMEND FOR PARTY!",
+                            "review_text": "OMG such a wonderful experience, so much fun & exciting, even egged us on when we almost gave up! such a supportive and fun experience 10/10 would recommend for party & events.",
+                            "revlink":"https://g.co/kgs/8sD4bh",
+                            "author" :"Megsy Hubbard",
+                            "author_location" :"Waterbury, CT, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-gender-reveal-party-testimonials-3.jpg",
+                            "rev_img_alt":"escape room in Waterbury, CT, United States"
+                          },
+                          
+                          {   "id"  : 4,
+                            "star":5,
+                           "title": "UNFORGETTABLE MOMENT!",
+                            "review_text": "My family did the zombie apocalypse room and we beat the master level! Awesome time and really fun puzzles. We revealed our future baby's gender to all. An unforgettable moment for us. ",
+                            "revlink":"https://g.co/kgs/hzd2vr",
+                            "author" :"Manuel Alvia",
+                            "author_location" :"East Brunswick, NJ, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-gender-reveal-party-testimonials-4.jpg",
+                            "rev_img_alt":"escape room in East Brunswick, NJ, United States"
+                          },
+                          
+                          {   "id"  : 5,
+                            "star":5,
+                           "title": "EXPERIENCE WAS AMAZING!",
+                            "review_text": "Our experience was amazing!!! They helped to provide a memorable experience for my son's birthday & Next baby reveal. Two thumbs up and will definitely go back again with a new one.",
+                            "revlink":"https://g.co/kgs/HUdAAw",
+                            "author" :"Jonathan Barnes",
+                            "author_location" :"Lawrenceville, GA, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-gender-reveal-party-testimonials-5.jpg",
+                            "rev_img_alt":"escape room in Lawrenceville, GA, United States"
+                          },
+                          {   "id"  : 6,
+                            "star":5,
+                           "title": "GREAT FAMILY ACTIVITY!",
+                            "review_text": "My family and I had a great time. We did the superhero escape room. We booked it through Groupon. It was a great family activity. Super escape room for the party and games to play.",
+                            "revlink":"https://g.co/kgs/CFerYB",
+                            "author" :"Rachel Lichter",
+                            "author_location" :"Austin, TX, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-gender-reveal-party-testimonials-6.jpg",
+                            "rev_img_alt":"escape room in Austin, TX, United States "
+                          },
+                          {   "id"  : 7,
+                            "star":5,
+                           "title": "5 STARS WELL DESERVED!",
+                            "review_text": "Overall this place is amazing! 5 stars well deserved! They want to come back! The place has very friendly staff. The place is clean, It's affordable, and a perfect place to have fun with friends and family. ",
+                            "revlink":"https://g.co/kgs/N17pvA",
+                            "author" :"Jen Westervelt",
+                            "author_location" :"West Nyack, NY, United States",
+                            "rev_img":"/assets/all-testimonials-image/allinadventures-events-gender-reveal-party-testimonials-7.jpg",
+                            "rev_img_alt":"escape room in West Nyack, NY, United States"
+                          },
+             
+                        ]
                        },
     //********************************************************school-events end */
     }
- // all events data
+ // return page data  events data
      const eventData={
          "pagemeta":eventlocdata[eventslug].pagemeta,
          "locationlist":getLocTotal(locationslug).locationlist,
@@ -555,81 +1467,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
          },
          "eventdata":eventlocdata[eventslug].eventdata,
  
-          "reviews": [
-                      
-            {   "id"  : 1,
-              "star":5,
-             "title": "BEST BIRTHDAY EVER!",
-              "review_text": "We were a group of 8 for the Game Room and we had so much fun! We were celebrating a birthday and the team at this location were great! Afterward we were all talking about how we want to come back soon to play again! Definitely recommend.",
-              "revlink":"https://g.co/kgs/givxmA",
-              "author" :"Lisa Podhayny",
-              "author_location" :"Holyoke, MA, United States",
-              "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-1.jpg",
-              "rev_img_alt":"escape room in Holyoke, MA"
-            },
-            {   "id"  : 2,
-              "star":5,
-             "title": "ADVENTURE OVERLOADED!",
-              "review_text": "I traveled all the way from Brooklyn for a mall day. Steve was so charismatic he definitely sold my group on the Zombie room. Upon checking in Victoria was amazing she explained how the experience would go and even took a great photo before we left. Your team is great here and I think this experience is something everyone should do. I'll be returning soon I want to figure out the Sherlock room. Thank you again to Steve and Victoria",
-              "revlink":"https://g.co/kgs/ZFdQL6",
-              "author" :"Ashley Barrett",
-              "author_location" :"Buffalo, NY, United States",
-              "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-2.jpg",
-              "rev_img_alt":"escape room in Buffalo, NY"
-            },
-            {   "id"  : 3,
-              "star":5,
-             "title": "HIGHLY RECOMMENDED!",
-              "review_text": "Staff was super friendly and super helpful! We loved accomplishing the treasure hunt room even though we couldn't finish the master level. Would love to go back and try out the other rooms they have.",
-              "revlink":"https://g.co/kgs/8sD4bh",
-              "author" :"Shannon Whitney",
-              "author_location" :"Mentor, OH, United States",
-              "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-3.jpg",
-              "rev_img_alt":"escape room in Lawrenceville ga"
-            },
-            {   "id"  : 4,
-              "star":5,
-             "title": "IT WAS SUPER EXCITING!",
-              "review_text": "I visited this Escape Room for a birthday party. We had a booking issue when we first arrived on our end but the manager, Steve, helped us reschedule and fix it! Overall, it very fun visit. We played the Sherlock room and escaped the level 2 stage. The equipment was in good shape. There was a lot of evidence given at the start so it was a little difficult determining which pieces would be most important but the host was very attentive when we needed help and we solved it. Would definitely recommend for a group visit!",
-              "revlink":"https://g.co/kgs/N17pvA",
-              "author" :"Mousse",
-              "author_location" :"Albany, NY, United States",
-              "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-4.jpg",
-              "rev_img_alt":"escape room in Bensalem pa"
-            },
-            {   "id"  : 5,
-              "star":5,
-             "title": "BEST ESCAPE ROOM EVER!",
-              "review_text": "Was such a fun time at the Mystery Room in West Nyack! The employees were great and super helpful. My family did the Zombie Apocalypse room and it was a blast!!! We beat the regular room and was ONE CLUE AWAY from beating Master level - but we still had fun beating the normal level! Can't wait to go back again! (And I might have to go back for my birthday!!)",
-              "revlink":"https://g.co/kgs/hzd2vr",
-              "author" :"Jen Westervelt",
-              "author_location" :"West Nyack, NY, United States",
-              "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-5.jpg",
-              "rev_img_alt":"escape room in Kingston MA"
-            },
-            
-            {   "id"  : 6,
-              "star":5,
-             "title": "PERFECT GIRLS ESCAPE PARTY!",
-              "review_text": "Tried the Sherlock Room here and WOW it was hard, but also very fun! Suggest giving it a try if you like escape rooms. The two hosts who helped (and gave some hints) were very nice.",
-              "revlink":"https://g.co/kgs/HUdAAw",
-              "author" :"Jenny Brescia",
-              "author_location" :"Roanoke, VA, United States",
-              "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-6.jpg",
-              "rev_img_alt":"escape room in Rockaway nj"
-            },
-            {   "id"  : 7,
-              "star":5,
-             "title": "INSANE ESCAPE ROOM BIRTHDAY!",
-              "review_text": "Our experience was amazing!!! Dayna was an awesome host and helped to provide a memorable experience for my son's birthday.  Two thumbs up and will definitely go back again.",
-              "revlink":"https://g.co/kgs/CFerYB",
-              "author" :"Jonathan Barnes",
-              "author_location" :"Lawrenceville, GA, United States",
-              "rev_img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-7.jpg",
-              "rev_img_alt":"escape room in ga "
-            },
-
-          ],  
+          "reviews":eventlocdata[eventslug].reviews,  
           "contactdata":getLocSpec(locationslug) ,
           "activitylist":getLocationActivitySlugList(locationslug),
           "eventlist":getLocationEventSlugList(locationslug),   
