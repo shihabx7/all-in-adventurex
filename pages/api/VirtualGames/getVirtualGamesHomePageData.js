@@ -4,6 +4,9 @@ export const getVirtualGamesHomePageData=()=>{
 
     const VirtualGamesHomePageData={
         "locationlist":getTotal().locationlist,
+        "activitylistSlug":getTotal().activitylistSlug,
+         "eventlistSlug":getTotal().eventlistSlug,
+         "virtualgameListSlug":getTotal().virtualgameSlug,
         "pagemeta":{
 
             "matatilte":"title",

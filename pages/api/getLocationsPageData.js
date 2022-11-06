@@ -1,10 +1,15 @@
+import { getALlActivityList } from "./getAllActivityList"
+import { getAllEventList } from "./getAllEventList"
+import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
 
 
  export const getLocationsPageData =  () => {
 
     const data=
        {
-         
+        "activitylistSlug":getALlActivityList(),
+        "eventlistSlug":getAllEventList(),
+        "virtualgameSlug":getVirtualGameSlug(),
         
          "states":[
             //========================================== ============1 Ny Satate

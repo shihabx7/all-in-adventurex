@@ -1,6 +1,11 @@
+import { getTotal } from "./AllDataList/getTotal"
 export const getTermsConditionPageData=()=>{
 
     const termsConditionPageData={
+      "locationlist":getTotal().locationlist,
+      "activitylistSlug":getTotal().activitylistSlug,
+       "eventlistSlug":getTotal().eventlistSlug,
+       "virtualgameListSlug":getTotal().virtualgameSlug,
         "pagemeta":{
 
             "matatilte":"title",
@@ -15,7 +20,7 @@ export const getTermsConditionPageData=()=>{
             "totalLocation":"28",
             "coverimageL":"/assets/home-benar-bg.jpg",
             "coverimageM":"/assets/home-hero.jpg",
-            "totalLocations":28,
+            "totalLocations": getTotal().totalLocations,
           }
     }
 

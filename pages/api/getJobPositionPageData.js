@@ -4,6 +4,10 @@ export const getJobPositionPageData=(jobname)=>{
         return jobname.split('-').join(' ')
     }
     const jobPositionData={
+        "locationlist":getTotal().locationlist,
+        "activitylistSlug":getTotal().activitylistSlug,
+         "eventlistSlug":getTotal().eventlistSlug,
+         "virtualgameListSlug":getTotal().virtualgameSlug,
         "pagemeta":jobData[jobname].pagemeta,
            
         "pagedata":{

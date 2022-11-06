@@ -5,7 +5,10 @@ export const getActivityData=(activitySlug)=>{
    // const locationCity=extractData.slice(0, -1).join(' ')
 
     const activityData={
-        "locationlist":getTotal().locationlist,
+      "locationlist":getTotal().locationlist,
+      "activitylistSlug":getTotal().activitylistSlug,
+       "eventlistSlug":getTotal().eventlistSlug,
+       "virtualgameListSlug":getTotal().virtualgameSlug,
         "pagemeta":activityDataset[activitySlug].pagemeta,
            
         "pagedata":{

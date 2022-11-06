@@ -4,7 +4,10 @@ export const getVirtualGamePageDetailData=(gameslug)=>{
     const activitiesName=gameslug.toString().split('-').splice(3, 4).join(' ')
 
     const VirtualGamePageDetailData={
-        "locationlist":getTotal().locationlist,
+      "locationlist":getTotal().locationlist,
+      "activitylistSlug":getTotal().activitylistSlug,
+       "eventlistSlug":getTotal().eventlistSlug,
+       "virtualgameListSlug":getTotal().virtualgameSlug,
         "pagemeta":{
 
             "matatilte":activitiesName,

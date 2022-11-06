@@ -34,7 +34,7 @@ export const geEventPagetData=(slug)=>{
         },
         "eventdata":eventIndData[slug].eventdata,
 
-        "reviews": eventIndData["birthday-party"].reviews,
+        "reviews": eventIndData[slug].reviews,
 
 
     }
@@ -77,8 +77,8 @@ const eventIndData={
                     
                        {   "id"  : 1,
                          "star":5,
-                        "title": "BEST BIRTHDAY EVER!",
-                         "review_text": "We were a group of 8 for the Game Room and we had so much fun! We were celebrating a birthday and the team at this location were great! Afterward we were all talking about how we want to come back soon to play again! Definitely recommend.",
+                        "title": "WE HAD SO MUCH FUN!",
+                         "review_text": "We were a group of 8 for the Game Room, and we had so much fun! We were celebrating a birthday, and the team at this location was great! We will come here again for sure.",
                          "revlink":"https://g.co/kgs/givxmA",
                          "author" :"Lisa Podhayny",
                          "author_location" :"Holyoke, MA, United States",
@@ -87,8 +87,8 @@ const eventIndData={
                        },
                        {   "id"  : 2,
                          "star":5,
-                        "title": "ADVENTURE OVERLOADED!",
-                         "review_text": "I traveled all the way from Brooklyn for a mall day. Steve was so charismatic he definitely sold my group on the Zombie room. Upon checking in Victoria was amazing she explained how the experience would go and even took a great photo before we left. Your team is great here and I think this experience is something everyone should do. I'll be returning soon I want to figure out the Sherlock room. Thank you again to Steve and Victoria",
+                        "title": "IT WAS PERFECT!",
+                         "review_text": "As a birthday party starter, it was perfect, the balance of challenge and achievement was just right, and our hostess was excellent. I really enjoyed my birthday party there with my loved one.",
                          "revlink":"https://g.co/kgs/ZFdQL6",
                          "author" :"Ashley Barrett",
                          "author_location" :"Buffalo, NY, United States",
@@ -97,8 +97,8 @@ const eventIndData={
                        },
                        {   "id"  : 3,
                          "star":5,
-                        "title": "HIGHLY RECOMMENDED!",
-                         "review_text": "Staff was super friendly and super helpful! We loved accomplishing the treasure hunt room even though we couldn't finish the master level. Would love to go back and try out the other rooms they have.",
+                        "title": "SUPER FRIENDLY STAFF!",
+                         "review_text": "The staff was super friendly and super helpful! We loved accomplishing the treasure hunt room even though we couldn't finish the master level. Would love to go back and try out the other rooms they have.",
                          "revlink":"https://g.co/kgs/8sD4bh",
                          "author" :"Shannon Whitney",
                          "author_location" :"Mentor, OH, United States",
@@ -107,8 +107,8 @@ const eventIndData={
                        },
                        {   "id"  : 4,
                          "star":5,
-                        "title": "IT WAS SUPER EXCITING!",
-                         "review_text": "I visited this Escape Room for a birthday party. We had a booking issue when we first arrived on our end but the manager, Steve, helped us reschedule and fix it! Overall, it very fun visit. We played the Sherlock room and escaped the level 2 stage. The equipment was in good shape. There was a lot of evidence given at the start so it was a little difficult determining which pieces would be most important but the host was very attentive when we needed help and we solved it. Would definitely recommend for a group visit!",
+                        "title": "HIGHLY RECOMMENDED!",
+                         "review_text": "I visited this Escape Room for a birthday party. The host was very attentive when we needed help, and we solved it. I would definitely recommend a group visit! Highly Recommended.",
                          "revlink":"https://g.co/kgs/N17pvA",
                          "author" :"Mousse",
                          "author_location" :"Albany, NY, United States",
@@ -117,8 +117,8 @@ const eventIndData={
                        },
                        {   "id"  : 5,
                          "star":5,
-                        "title": "BEST ESCAPE ROOM EVER!",
-                         "review_text": "Was such a fun time at the Mystery Room in West Nyack! The employees were great and super helpful. My family did the Zombie Apocalypse room and it was a blast!!! We beat the regular room and was ONE CLUE AWAY from beating Master level - but we still had fun beating the normal level! Can't wait to go back again! (And I might have to go back for my birthday!!)",
+                        "title": "CAN'T WAIT TO GO BACK!",
+                         "review_text": "It was such a fun time at the Mystery Room for the birthday party! Can't wait to go back again! (And I might have to go back for my birthday as well!!). Too Much Fun.",
                          "revlink":"https://g.co/kgs/hzd2vr",
                          "author" :"Jen Westervelt",
                          "author_location" :"West Nyack, NY, United States",
@@ -128,8 +128,8 @@ const eventIndData={
                        
                        {   "id"  : 6,
                          "star":5,
-                        "title": "PERFECT GIRLS ESCAPE PARTY!",
-                         "review_text": "Tried the Sherlock Room here and WOW it was hard, but also very fun! Suggest giving it a try if you like escape rooms. The two hosts who helped (and gave some hints) were very nice.",
+                        "title": "PERFECT GIRLS PARTY!",
+                         "review_text": "Tried the Sherlock Room here for my Birthday and WOW, it was hard, but also very fun! Suggest giving it a try if you like escape rooms. The two hosts who helped (and gave some hints) were very friendly.",
                          "revlink":"https://g.co/kgs/HUdAAw",
                          "author" :"Jenny Brescia",
                          "author_location" :"Roanoke, VA, United States",
@@ -138,8 +138,8 @@ const eventIndData={
                        },
                        {   "id"  : 7,
                          "star":5,
-                        "title": "INSANE ESCAPE ROOM BIRTHDAY!",
-                         "review_text": "Our experience was amazing!!! Dayna was an awesome host and helped to provide a memorable experience for my son's birthday.  Two thumbs up and will definitely go back again.",
+                        "title": "EXPERIENCE WAS AMAZING!",
+                         "review_text": "Our experience was amazing!!! Dayna was an awesome host and helped to provide a memorable experience for my son's birthday. Two thumbs up and will definitely go back again.",
                          "revlink":"https://g.co/kgs/CFerYB",
                          "author" :"Jonathan Barnes",
                          "author_location" :"Lawrenceville, GA, United States",
@@ -178,6 +178,82 @@ const eventIndData={
                        "videoid":"pfdyF_d4Z40"
                       
                        },
+                      "reviews": [
+                    
+                        {   "id"  : 1,
+                          "star":5,
+                         "title": "KNOWLEDGEABLE AND KIND!",
+                          "review_text": "Our group had a great time at that location. The room setup was really cool, the clues were definitely tricky but they was knowledgeable and kind! We will definitely be back.",
+                          "revlink":"https://g.co/kgs/givxmA",
+                          "author" :"Amanda Wilson",
+                          "author_location" :"West Nyack, NY, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-1.jpg",
+                          "rev_img_alt":"escape room in West Nyack, NY, United States"
+                        },
+                        {   "id"  : 2,
+                          "star":5,
+                         "title": "ABSOLUTELY AMAZING!",
+                          "review_text": "Steve was absolutely amazing! A kind welcoming host 10/10 would recommend. Very easy to talk to, helpful and communicative. Our Team Loved his energy and the rooms!",
+                          "revlink":"https://g.co/kgs/ZFdQL6",
+                          "author" :"Autumn Clouse",
+                          "author_location" :"Manchester, CT, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-2.jpg",
+                          "rev_img_alt":"escape room in Manchester, CT, United States"
+                        },
+                        {   "id"  : 3,
+                          "star":5,
+                         "title": "I WOULD DO IT AGAIN!",
+                          "review_text": "It was so much fun! I brought my real estate team for a team building event with 9 of us. We did the Black Ops escape room and needed clues but we enjoyed it a lot. I would do it again.",
+                          "revlink":"https://g.co/kgs/8sD4bh",
+                          "author" :"Avery Lugo",
+                          "author_location" :"Mentor, OH, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-3.jpg",
+                          "rev_img_alt":"escape room in Syracuse, NY, United States"
+                        },
+                        
+                        {   "id"  : 4,
+                          "star":5,
+                         "title": "TEAM HAD A GREAT TIME!",
+                          "review_text": "Our Team had a great time after office on Allinadventures. The room setup was really cool, the clues were tricky but we solved it. Other team & we will surely be back for sure soon.",
+                          "revlink":"https://g.co/kgs/hzd2vr",
+                          "author" :"Amanda Wilson",
+                          "author_location" :"West Nyack, NY, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-4.jpg",
+                          "rev_img_alt":"escape room in West Nyack, NY, United States"
+                        },
+                        
+                        {   "id"  : 5,
+                          "star":5,
+                         "title": "CHEERFUL AND PROFESSIONAL!",
+                          "review_text": "Bridget and Victoria were both incredibly helpful, cheerful and professional. It was overall a great experience that we would recommend to others. We will be coming again to try the other rooms! ",
+                          "revlink":"https://g.co/kgs/HUdAAw",
+                          "author" :"Francesco Perez",
+                          "author_location" :"Bensalem, PA, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-5.jpg",
+                          "rev_img_alt":"escape room in Bensalem, PA, United States"
+                        },
+                        {   "id"  : 6,
+                          "star":5,
+                         "title": "WON AS BEST TEAM!",
+                          "review_text": "Nora was the best host for team-building activities !! She made the entire experience so much fun, and better and her high energy is infectious, So we won. We will definitely come back again!",
+                          "revlink":"https://g.co/kgs/CFerYB",
+                          "author" :"Nen Lord",
+                          "author_location" :"Milford, CT, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-6.jpg",
+                          "rev_img_alt":"escape room in Milford, CT, United States "
+                        },
+                        {   "id"  : 7,
+                          "star":5,
+                         "title": "SUPER TEAM ENGAGING!",
+                          "review_text": "We had a great time in the Hollywood Premiere room today. Our game masters were very helpful, and the facility was clean. The clues were challenging. We look forward to our next visit. Super team engaging!",
+                          "revlink":"https://g.co/kgs/N17pvA",
+                          "author" :"Shelley C",
+                          "author_location" :"Rockaway, NJ, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-7.jpg",
+                          "rev_img_alt":"escape room in Rockaway, NJ, United States"
+                        },
+           
+                      ]
                       },
 //********************************************************team-building end */
  //********************************************************corporate-events */
@@ -207,6 +283,82 @@ const eventIndData={
                      "videoid":"pfdyF_d4Z40"
                     
                      },
+                     "reviews": [
+                    
+                      {   "id"  : 1,
+                        "star":5,
+                       "title": "WE HAD A GREAT TIME!",
+                        "review_text": "We had a great time in the Sherlock Holmes room today. Our game masters were very helpful and the facility was clean. The clues were challenging. We look forward to our next visit.",
+                        "revlink":"https://g.co/kgs/givxmA",
+                        "author" :"Shelley C",
+                        "author_location" :"Rockaway, NJ, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-corporate-events-testimonials-1.jpg",
+                        "rev_img_alt":"escape room in Rockaway, NJ, United States"
+                      },
+                      {   "id"  : 2,
+                        "star":5,
+                       "title": "HIGH ENERGY IS INFECTIOUS!",
+                        "review_text": "Allinadventures was perfect for our team bonding events. We made the entire experience so much better, and Their high energy is infectious! I will definitely come back again & bring more!",
+                        "revlink":"https://g.co/kgs/ZFdQL6",
+                        "author" :"Nen Lord",
+                        "author_location" :"Milford, CT, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-corporate-events-testimonials-2.jpg",
+                        "rev_img_alt":"escape room in Milford, CT, United States"
+                      },
+                      {   "id"  : 3,
+                        "star":5,
+                       "title": "GREAT EXPERIENCE!",
+                        "review_text": "Bridget and Victoria were both incredibly helpful, cheerful and professional for the event. It was overall a great experience that we would recommend to others. We will be coming again to try the other rooms!",
+                        "revlink":"https://g.co/kgs/8sD4bh",
+                        "author" :"Francesco Perez",
+                        "author_location" :"Bensalem, PA, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-corporate-events-testimonials-3.jpg",
+                        "rev_img_alt":"escape room in Bensalem, PA, United States"
+                      },
+                      
+                      {   "id"  : 4,
+                        "star":5,
+                       "title": "SETUP WAS REALLY COOL!",
+                        "review_text": "Perfect for corporate events & The room setup was really cool, the clues were definitely tricky and the staff member was knowledgeable and kind! Don't miss their escape room winner surprises.",
+                        "revlink":"https://g.co/kgs/hzd2vr",
+                        "author" :"Amanda Wilson",
+                        "author_location" :"West Nyack, NY, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-corporate-events-testimonials-4.jpg",
+                        "rev_img_alt":"escape room in West Nyack, NY, United States"
+                      },
+                      
+                      {   "id"  : 5,
+                        "star":5,
+                       "title": "ABSOLUTELY AMAZING!",
+                        "review_text": "Escape Room events were absolutely amazing! A kind welcoming host 10/10 would recommend. Very easy to talk to, helpful and communicative. Our Team Loved his energy and the rooms!",
+                        "revlink":"https://g.co/kgs/HUdAAw",
+                        "author" :"Autumn Clouse",
+                        "author_location" :"Manchester, CT, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-corporate-events-testimonials-5.jpg",
+                        "rev_img_alt":"escape room in Manchester, CT, United States"
+                      },
+                      {   "id"  : 6,
+                        "star":5,
+                       "title": "VISITED FOR THE 1ST TIME!",
+                        "review_text": "We Visited for the 1st time, and it was so interesting to attend, A new experience. You need to be very attentive and to think logically. But it is very exciting game! Recommend to all my colleagues!",
+                        "revlink":"https://g.co/kgs/CFerYB",
+                        "author" :"Avery Lugo",
+                        "author_location" :"Syracuse, NY, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-corporate-events-testimonials-6.jpg",
+                        "rev_img_alt":"escape room in Syracuse, NY, United States"
+                      },
+                      {   "id"  : 7,
+                        "star":5,
+                       "title": "DEFINITELY BE BACK!",
+                        "review_text": "We will definitely be back. Our group had a great time at the West Nyack allinadventures. A perfect setup for the corporate officers for the team building events. We enjoyed ourselves a lot. It was fun.",
+                        "revlink":"https://g.co/kgs/N17pvA",
+                        "author" :"Amanda Wilson",
+                        "author_location" :"West Nyack, NY, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-corporate-events-testimonials-7.jpg",
+                        "rev_img_alt":"escape room in West Nyack, NY, United States"
+                      },
+         
+                    ]
                     },
 //********************************************************corporate-events end */
 //********************************************************family-fun-activity */
@@ -236,6 +388,82 @@ const eventIndData={
                        "videoid":"pfdyF_d4Z40"
                       
                        },
+                       "reviews": [
+                    
+                        {   "id"  : 1,
+                          "star":5,
+                         "title": "KNOWLEDGEABLE AND KIND!",
+                          "review_text": "Our group had a great time at that location. The room setup was really cool, the clues were definitely tricky but they was knowledgeable and kind! We will definitely be back.",
+                          "revlink":"https://g.co/kgs/givxmA",
+                          "author" :"Amanda Wilson",
+                          "author_location" :"West Nyack, NY, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-1.jpg",
+                          "rev_img_alt":"escape room in West Nyack, NY, United States"
+                        },
+                        {   "id"  : 2,
+                          "star":5,
+                         "title": "ABSOLUTELY AMAZING!",
+                          "review_text": "Steve was absolutely amazing! A kind welcoming host 10/10 would recommend. Very easy to talk to, helpful and communicative. Our Team Loved his energy and the rooms!",
+                          "revlink":"https://g.co/kgs/ZFdQL6",
+                          "author" :"Autumn Clouse",
+                          "author_location" :"Manchester, CT, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-2.jpg",
+                          "rev_img_alt":"escape room in Manchester, CT, United States"
+                        },
+                        {   "id"  : 3,
+                          "star":5,
+                         "title": "I WOULD DO IT AGAIN!",
+                          "review_text": "It was so much fun! I brought my real estate team for a team building event with 9 of us. We did the Black Ops escape room and needed clues but we enjoyed it a lot. I would do it again.",
+                          "revlink":"https://g.co/kgs/8sD4bh",
+                          "author" :"Avery Lugo",
+                          "author_location" :"Mentor, OH, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-3.jpg",
+                          "rev_img_alt":"escape room in Syracuse, NY, United States"
+                        },
+                        
+                        {   "id"  : 4,
+                          "star":5,
+                         "title": "TEAM HAD A GREAT TIME!",
+                          "review_text": "Our Team had a great time after office on Allinadventures. The room setup was really cool, the clues were tricky but we solved it. Other team & we will surely be back for sure soon.",
+                          "revlink":"https://g.co/kgs/hzd2vr",
+                          "author" :"Amanda Wilson",
+                          "author_location" :"West Nyack, NY, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-4.jpg",
+                          "rev_img_alt":"escape room in West Nyack, NY, United States"
+                        },
+                        
+                        {   "id"  : 5,
+                          "star":5,
+                         "title": "CHEERFUL AND PROFESSIONAL!",
+                          "review_text": "Bridget and Victoria were both incredibly helpful, cheerful and professional. It was overall a great experience that we would recommend to others. We will be coming again to try the other rooms! ",
+                          "revlink":"https://g.co/kgs/HUdAAw",
+                          "author" :"Francesco Perez",
+                          "author_location" :"Bensalem, PA, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-5.jpg",
+                          "rev_img_alt":"escape room in Bensalem, PA, United States"
+                        },
+                        {   "id"  : 6,
+                          "star":5,
+                         "title": "WON AS BEST TEAM!",
+                          "review_text": "Nora was the best host for team-building activities !! She made the entire experience so much fun, and better and her high energy is infectious, So we won. We will definitely come back again!",
+                          "revlink":"https://g.co/kgs/CFerYB",
+                          "author" :"Nen Lord",
+                          "author_location" :"Milford, CT, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-6.jpg",
+                          "rev_img_alt":"escape room in Milford, CT, United States "
+                        },
+                        {   "id"  : 7,
+                          "star":5,
+                         "title": "SUPER TEAM ENGAGING!",
+                          "review_text": "We had a great time in the Hollywood Premiere room today. Our game masters were very helpful, and the facility was clean. The clues were challenging. We look forward to our next visit. Super team engaging!",
+                          "revlink":"https://g.co/kgs/N17pvA",
+                          "author" :"Shelley C",
+                          "author_location" :"Rockaway, NJ, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-7.jpg",
+                          "rev_img_alt":"escape room in Rockaway, NJ, United States"
+                        },
+           
+                      ]
                       },
 //********************************************************family-fun-activity end */
 //********************************************************bachelor-party  */
@@ -265,6 +493,82 @@ const eventIndData={
                    "videoid":"pfdyF_d4Z40"
                   
                    },
+                   "reviews": [
+                    
+                    {   "id"  : 1,
+                      "star":5,
+                     "title": "KNOWLEDGEABLE AND KIND!",
+                      "review_text": "Our group had a great time at that location. The room setup was really cool, the clues were definitely tricky but they was knowledgeable and kind! We will definitely be back.",
+                      "revlink":"https://g.co/kgs/givxmA",
+                      "author" :"Amanda Wilson",
+                      "author_location" :"West Nyack, NY, United States",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-1.jpg",
+                      "rev_img_alt":"escape room in West Nyack, NY, United States"
+                    },
+                    {   "id"  : 2,
+                      "star":5,
+                     "title": "ABSOLUTELY AMAZING!",
+                      "review_text": "Steve was absolutely amazing! A kind welcoming host 10/10 would recommend. Very easy to talk to, helpful and communicative. Our Team Loved his energy and the rooms!",
+                      "revlink":"https://g.co/kgs/ZFdQL6",
+                      "author" :"Autumn Clouse",
+                      "author_location" :"Manchester, CT, United States",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-2.jpg",
+                      "rev_img_alt":"escape room in Manchester, CT, United States"
+                    },
+                    {   "id"  : 3,
+                      "star":5,
+                     "title": "I WOULD DO IT AGAIN!",
+                      "review_text": "It was so much fun! I brought my real estate team for a team building event with 9 of us. We did the Black Ops escape room and needed clues but we enjoyed it a lot. I would do it again.",
+                      "revlink":"https://g.co/kgs/8sD4bh",
+                      "author" :"Avery Lugo",
+                      "author_location" :"Mentor, OH, United States",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-3.jpg",
+                      "rev_img_alt":"escape room in Syracuse, NY, United States"
+                    },
+                    
+                    {   "id"  : 4,
+                      "star":5,
+                     "title": "TEAM HAD A GREAT TIME!",
+                      "review_text": "Our Team had a great time after office on Allinadventures. The room setup was really cool, the clues were tricky but we solved it. Other team & we will surely be back for sure soon.",
+                      "revlink":"https://g.co/kgs/hzd2vr",
+                      "author" :"Amanda Wilson",
+                      "author_location" :"West Nyack, NY, United States",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-4.jpg",
+                      "rev_img_alt":"escape room in West Nyack, NY, United States"
+                    },
+                    
+                    {   "id"  : 5,
+                      "star":5,
+                     "title": "CHEERFUL AND PROFESSIONAL!",
+                      "review_text": "Bridget and Victoria were both incredibly helpful, cheerful and professional. It was overall a great experience that we would recommend to others. We will be coming again to try the other rooms! ",
+                      "revlink":"https://g.co/kgs/HUdAAw",
+                      "author" :"Francesco Perez",
+                      "author_location" :"Bensalem, PA, United States",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-5.jpg",
+                      "rev_img_alt":"escape room in Bensalem, PA, United States"
+                    },
+                    {   "id"  : 6,
+                      "star":5,
+                     "title": "WON AS BEST TEAM!",
+                      "review_text": "Nora was the best host for team-building activities !! She made the entire experience so much fun, and better and her high energy is infectious, So we won. We will definitely come back again!",
+                      "revlink":"https://g.co/kgs/CFerYB",
+                      "author" :"Nen Lord",
+                      "author_location" :"Milford, CT, United States",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-6.jpg",
+                      "rev_img_alt":"escape room in Milford, CT, United States "
+                    },
+                    {   "id"  : 7,
+                      "star":5,
+                     "title": "SUPER TEAM ENGAGING!",
+                      "review_text": "We had a great time in the Hollywood Premiere room today. Our game masters were very helpful, and the facility was clean. The clues were challenging. We look forward to our next visit. Super team engaging!",
+                      "revlink":"https://g.co/kgs/N17pvA",
+                      "author" :"Shelley C",
+                      "author_location" :"Rockaway, NJ, United States",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-7.jpg",
+                      "rev_img_alt":"escape room in Rockaway, NJ, United States"
+                    },
+       
+                  ]
              },
 //********************************************************bachelor-party end */
 //********************************************************bachelorette-party  */
@@ -294,6 +598,82 @@ const eventIndData={
                      "videoid":"pfdyF_d4Z40"
                     
                      },
+                     "reviews": [
+                    
+                      {   "id"  : 1,
+                        "star":5,
+                       "title": "KNOWLEDGEABLE AND KIND!",
+                        "review_text": "Our group had a great time at that location. The room setup was really cool, the clues were definitely tricky but they was knowledgeable and kind! We will definitely be back.",
+                        "revlink":"https://g.co/kgs/givxmA",
+                        "author" :"Amanda Wilson",
+                        "author_location" :"West Nyack, NY, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-1.jpg",
+                        "rev_img_alt":"escape room in West Nyack, NY, United States"
+                      },
+                      {   "id"  : 2,
+                        "star":5,
+                       "title": "ABSOLUTELY AMAZING!",
+                        "review_text": "Steve was absolutely amazing! A kind welcoming host 10/10 would recommend. Very easy to talk to, helpful and communicative. Our Team Loved his energy and the rooms!",
+                        "revlink":"https://g.co/kgs/ZFdQL6",
+                        "author" :"Autumn Clouse",
+                        "author_location" :"Manchester, CT, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-2.jpg",
+                        "rev_img_alt":"escape room in Manchester, CT, United States"
+                      },
+                      {   "id"  : 3,
+                        "star":5,
+                       "title": "I WOULD DO IT AGAIN!",
+                        "review_text": "It was so much fun! I brought my real estate team for a team building event with 9 of us. We did the Black Ops escape room and needed clues but we enjoyed it a lot. I would do it again.",
+                        "revlink":"https://g.co/kgs/8sD4bh",
+                        "author" :"Avery Lugo",
+                        "author_location" :"Mentor, OH, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-3.jpg",
+                        "rev_img_alt":"escape room in Syracuse, NY, United States"
+                      },
+                      
+                      {   "id"  : 4,
+                        "star":5,
+                       "title": "TEAM HAD A GREAT TIME!",
+                        "review_text": "Our Team had a great time after office on Allinadventures. The room setup was really cool, the clues were tricky but we solved it. Other team & we will surely be back for sure soon.",
+                        "revlink":"https://g.co/kgs/hzd2vr",
+                        "author" :"Amanda Wilson",
+                        "author_location" :"West Nyack, NY, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-4.jpg",
+                        "rev_img_alt":"escape room in West Nyack, NY, United States"
+                      },
+                      
+                      {   "id"  : 5,
+                        "star":5,
+                       "title": "CHEERFUL AND PROFESSIONAL!",
+                        "review_text": "Bridget and Victoria were both incredibly helpful, cheerful and professional. It was overall a great experience that we would recommend to others. We will be coming again to try the other rooms! ",
+                        "revlink":"https://g.co/kgs/HUdAAw",
+                        "author" :"Francesco Perez",
+                        "author_location" :"Bensalem, PA, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-5.jpg",
+                        "rev_img_alt":"escape room in Bensalem, PA, United States"
+                      },
+                      {   "id"  : 6,
+                        "star":5,
+                       "title": "WON AS BEST TEAM!",
+                        "review_text": "Nora was the best host for team-building activities !! She made the entire experience so much fun, and better and her high energy is infectious, So we won. We will definitely come back again!",
+                        "revlink":"https://g.co/kgs/CFerYB",
+                        "author" :"Nen Lord",
+                        "author_location" :"Milford, CT, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-6.jpg",
+                        "rev_img_alt":"escape room in Milford, CT, United States "
+                      },
+                      {   "id"  : 7,
+                        "star":5,
+                       "title": "SUPER TEAM ENGAGING!",
+                        "review_text": "We had a great time in the Hollywood Premiere room today. Our game masters were very helpful, and the facility was clean. The clues were challenging. We look forward to our next visit. Super team engaging!",
+                        "revlink":"https://g.co/kgs/N17pvA",
+                        "author" :"Shelley C",
+                        "author_location" :"Rockaway, NJ, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-7.jpg",
+                        "rev_img_alt":"escape room in Rockaway, NJ, United States"
+                      },
+         
+                    ]
                   },
 //********************************************************bachelorette-party end */
 //********************************************************proposal-party */
@@ -323,6 +703,82 @@ const eventIndData={
                        "videoid":"pfdyF_d4Z40"
                       
                        },
+                       "reviews": [
+                    
+                        {   "id"  : 1,
+                          "star":5,
+                         "title": "KNOWLEDGEABLE AND KIND!",
+                          "review_text": "Our group had a great time at that location. The room setup was really cool, the clues were definitely tricky but they was knowledgeable and kind! We will definitely be back.",
+                          "revlink":"https://g.co/kgs/givxmA",
+                          "author" :"Amanda Wilson",
+                          "author_location" :"West Nyack, NY, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-1.jpg",
+                          "rev_img_alt":"escape room in West Nyack, NY, United States"
+                        },
+                        {   "id"  : 2,
+                          "star":5,
+                         "title": "ABSOLUTELY AMAZING!",
+                          "review_text": "Steve was absolutely amazing! A kind welcoming host 10/10 would recommend. Very easy to talk to, helpful and communicative. Our Team Loved his energy and the rooms!",
+                          "revlink":"https://g.co/kgs/ZFdQL6",
+                          "author" :"Autumn Clouse",
+                          "author_location" :"Manchester, CT, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-2.jpg",
+                          "rev_img_alt":"escape room in Manchester, CT, United States"
+                        },
+                        {   "id"  : 3,
+                          "star":5,
+                         "title": "I WOULD DO IT AGAIN!",
+                          "review_text": "It was so much fun! I brought my real estate team for a team building event with 9 of us. We did the Black Ops escape room and needed clues but we enjoyed it a lot. I would do it again.",
+                          "revlink":"https://g.co/kgs/8sD4bh",
+                          "author" :"Avery Lugo",
+                          "author_location" :"Mentor, OH, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-3.jpg",
+                          "rev_img_alt":"escape room in Syracuse, NY, United States"
+                        },
+                        
+                        {   "id"  : 4,
+                          "star":5,
+                         "title": "TEAM HAD A GREAT TIME!",
+                          "review_text": "Our Team had a great time after office on Allinadventures. The room setup was really cool, the clues were tricky but we solved it. Other team & we will surely be back for sure soon.",
+                          "revlink":"https://g.co/kgs/hzd2vr",
+                          "author" :"Amanda Wilson",
+                          "author_location" :"West Nyack, NY, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-4.jpg",
+                          "rev_img_alt":"escape room in West Nyack, NY, United States"
+                        },
+                        
+                        {   "id"  : 5,
+                          "star":5,
+                         "title": "CHEERFUL AND PROFESSIONAL!",
+                          "review_text": "Bridget and Victoria were both incredibly helpful, cheerful and professional. It was overall a great experience that we would recommend to others. We will be coming again to try the other rooms! ",
+                          "revlink":"https://g.co/kgs/HUdAAw",
+                          "author" :"Francesco Perez",
+                          "author_location" :"Bensalem, PA, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-5.jpg",
+                          "rev_img_alt":"escape room in Bensalem, PA, United States"
+                        },
+                        {   "id"  : 6,
+                          "star":5,
+                         "title": "WON AS BEST TEAM!",
+                          "review_text": "Nora was the best host for team-building activities !! She made the entire experience so much fun, and better and her high energy is infectious, So we won. We will definitely come back again!",
+                          "revlink":"https://g.co/kgs/CFerYB",
+                          "author" :"Nen Lord",
+                          "author_location" :"Milford, CT, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-6.jpg",
+                          "rev_img_alt":"escape room in Milford, CT, United States "
+                        },
+                        {   "id"  : 7,
+                          "star":5,
+                         "title": "SUPER TEAM ENGAGING!",
+                          "review_text": "We had a great time in the Hollywood Premiere room today. Our game masters were very helpful, and the facility was clean. The clues were challenging. We look forward to our next visit. Super team engaging!",
+                          "revlink":"https://g.co/kgs/N17pvA",
+                          "author" :"Shelley C",
+                          "author_location" :"Rockaway, NJ, United States",
+                          "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-7.jpg",
+                          "rev_img_alt":"escape room in Rockaway, NJ, United States"
+                        },
+           
+                      ]
                     },
 //********************************************************proposal-party end */
 //********************************************************date-night*/
@@ -352,6 +808,82 @@ const eventIndData={
                "videoid":"pfdyF_d4Z40"
               
                },
+               "reviews": [
+                    
+                {   "id"  : 1,
+                  "star":5,
+                 "title": "KNOWLEDGEABLE AND KIND!",
+                  "review_text": "Our group had a great time at that location. The room setup was really cool, the clues were definitely tricky but they was knowledgeable and kind! We will definitely be back.",
+                  "revlink":"https://g.co/kgs/givxmA",
+                  "author" :"Amanda Wilson",
+                  "author_location" :"West Nyack, NY, United States",
+                  "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-1.jpg",
+                  "rev_img_alt":"escape room in West Nyack, NY, United States"
+                },
+                {   "id"  : 2,
+                  "star":5,
+                 "title": "ABSOLUTELY AMAZING!",
+                  "review_text": "Steve was absolutely amazing! A kind welcoming host 10/10 would recommend. Very easy to talk to, helpful and communicative. Our Team Loved his energy and the rooms!",
+                  "revlink":"https://g.co/kgs/ZFdQL6",
+                  "author" :"Autumn Clouse",
+                  "author_location" :"Manchester, CT, United States",
+                  "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-2.jpg",
+                  "rev_img_alt":"escape room in Manchester, CT, United States"
+                },
+                {   "id"  : 3,
+                  "star":5,
+                 "title": "I WOULD DO IT AGAIN!",
+                  "review_text": "It was so much fun! I brought my real estate team for a team building event with 9 of us. We did the Black Ops escape room and needed clues but we enjoyed it a lot. I would do it again.",
+                  "revlink":"https://g.co/kgs/8sD4bh",
+                  "author" :"Avery Lugo",
+                  "author_location" :"Mentor, OH, United States",
+                  "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-3.jpg",
+                  "rev_img_alt":"escape room in Syracuse, NY, United States"
+                },
+                
+                {   "id"  : 4,
+                  "star":5,
+                 "title": "TEAM HAD A GREAT TIME!",
+                  "review_text": "Our Team had a great time after office on Allinadventures. The room setup was really cool, the clues were tricky but we solved it. Other team & we will surely be back for sure soon.",
+                  "revlink":"https://g.co/kgs/hzd2vr",
+                  "author" :"Amanda Wilson",
+                  "author_location" :"West Nyack, NY, United States",
+                  "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-4.jpg",
+                  "rev_img_alt":"escape room in West Nyack, NY, United States"
+                },
+                
+                {   "id"  : 5,
+                  "star":5,
+                 "title": "CHEERFUL AND PROFESSIONAL!",
+                  "review_text": "Bridget and Victoria were both incredibly helpful, cheerful and professional. It was overall a great experience that we would recommend to others. We will be coming again to try the other rooms! ",
+                  "revlink":"https://g.co/kgs/HUdAAw",
+                  "author" :"Francesco Perez",
+                  "author_location" :"Bensalem, PA, United States",
+                  "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-5.jpg",
+                  "rev_img_alt":"escape room in Bensalem, PA, United States"
+                },
+                {   "id"  : 6,
+                  "star":5,
+                 "title": "WON AS BEST TEAM!",
+                  "review_text": "Nora was the best host for team-building activities !! She made the entire experience so much fun, and better and her high energy is infectious, So we won. We will definitely come back again!",
+                  "revlink":"https://g.co/kgs/CFerYB",
+                  "author" :"Nen Lord",
+                  "author_location" :"Milford, CT, United States",
+                  "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-6.jpg",
+                  "rev_img_alt":"escape room in Milford, CT, United States "
+                },
+                {   "id"  : 7,
+                  "star":5,
+                 "title": "SUPER TEAM ENGAGING!",
+                  "review_text": "We had a great time in the Hollywood Premiere room today. Our game masters were very helpful, and the facility was clean. The clues were challenging. We look forward to our next visit. Super team engaging!",
+                  "revlink":"https://g.co/kgs/N17pvA",
+                  "author" :"Shelley C",
+                  "author_location" :"Rockaway, NJ, United States",
+                  "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-7.jpg",
+                  "rev_img_alt":"escape room in Rockaway, NJ, United States"
+                },
+   
+              ]
 },
 //********************************************************date-night end */
 //*******************************************************private-party*/
@@ -381,6 +913,82 @@ const eventIndData={
    "videoid":"pfdyF_d4Z40"
   
    },
+   "reviews": [
+                    
+    {   "id"  : 1,
+      "star":5,
+     "title": "KNOWLEDGEABLE AND KIND!",
+      "review_text": "Our group had a great time at that location. The room setup was really cool, the clues were definitely tricky but they was knowledgeable and kind! We will definitely be back.",
+      "revlink":"https://g.co/kgs/givxmA",
+      "author" :"Amanda Wilson",
+      "author_location" :"West Nyack, NY, United States",
+      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-1.jpg",
+      "rev_img_alt":"escape room in West Nyack, NY, United States"
+    },
+    {   "id"  : 2,
+      "star":5,
+     "title": "ABSOLUTELY AMAZING!",
+      "review_text": "Steve was absolutely amazing! A kind welcoming host 10/10 would recommend. Very easy to talk to, helpful and communicative. Our Team Loved his energy and the rooms!",
+      "revlink":"https://g.co/kgs/ZFdQL6",
+      "author" :"Autumn Clouse",
+      "author_location" :"Manchester, CT, United States",
+      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-2.jpg",
+      "rev_img_alt":"escape room in Manchester, CT, United States"
+    },
+    {   "id"  : 3,
+      "star":5,
+     "title": "I WOULD DO IT AGAIN!",
+      "review_text": "It was so much fun! I brought my real estate team for a team building event with 9 of us. We did the Black Ops escape room and needed clues but we enjoyed it a lot. I would do it again.",
+      "revlink":"https://g.co/kgs/8sD4bh",
+      "author" :"Avery Lugo",
+      "author_location" :"Mentor, OH, United States",
+      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-3.jpg",
+      "rev_img_alt":"escape room in Syracuse, NY, United States"
+    },
+    
+    {   "id"  : 4,
+      "star":5,
+     "title": "TEAM HAD A GREAT TIME!",
+      "review_text": "Our Team had a great time after office on Allinadventures. The room setup was really cool, the clues were tricky but we solved it. Other team & we will surely be back for sure soon.",
+      "revlink":"https://g.co/kgs/hzd2vr",
+      "author" :"Amanda Wilson",
+      "author_location" :"West Nyack, NY, United States",
+      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-4.jpg",
+      "rev_img_alt":"escape room in West Nyack, NY, United States"
+    },
+    
+    {   "id"  : 5,
+      "star":5,
+     "title": "CHEERFUL AND PROFESSIONAL!",
+      "review_text": "Bridget and Victoria were both incredibly helpful, cheerful and professional. It was overall a great experience that we would recommend to others. We will be coming again to try the other rooms! ",
+      "revlink":"https://g.co/kgs/HUdAAw",
+      "author" :"Francesco Perez",
+      "author_location" :"Bensalem, PA, United States",
+      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-5.jpg",
+      "rev_img_alt":"escape room in Bensalem, PA, United States"
+    },
+    {   "id"  : 6,
+      "star":5,
+     "title": "WON AS BEST TEAM!",
+      "review_text": "Nora was the best host for team-building activities !! She made the entire experience so much fun, and better and her high energy is infectious, So we won. We will definitely come back again!",
+      "revlink":"https://g.co/kgs/CFerYB",
+      "author" :"Nen Lord",
+      "author_location" :"Milford, CT, United States",
+      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-6.jpg",
+      "rev_img_alt":"escape room in Milford, CT, United States "
+    },
+    {   "id"  : 7,
+      "star":5,
+     "title": "SUPER TEAM ENGAGING!",
+      "review_text": "We had a great time in the Hollywood Premiere room today. Our game masters were very helpful, and the facility was clean. The clues were challenging. We look forward to our next visit. Super team engaging!",
+      "revlink":"https://g.co/kgs/N17pvA",
+      "author" :"Shelley C",
+      "author_location" :"Rockaway, NJ, United States",
+      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-7.jpg",
+      "rev_img_alt":"escape room in Rockaway, NJ, United States"
+    },
+
+  ]
 },
 //********************************************************date-night end */
 //********************************************************reunion-party*/
@@ -410,6 +1018,82 @@ const eventIndData={
                  "videoid":"pfdyF_d4Z40"
                 
                  },
+                 "reviews": [
+                    
+                  {   "id"  : 1,
+                    "star":5,
+                   "title": "KNOWLEDGEABLE AND KIND!",
+                    "review_text": "Our group had a great time at that location. The room setup was really cool, the clues were definitely tricky but they was knowledgeable and kind! We will definitely be back.",
+                    "revlink":"https://g.co/kgs/givxmA",
+                    "author" :"Amanda Wilson",
+                    "author_location" :"West Nyack, NY, United States",
+                    "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-1.jpg",
+                    "rev_img_alt":"escape room in West Nyack, NY, United States"
+                  },
+                  {   "id"  : 2,
+                    "star":5,
+                   "title": "ABSOLUTELY AMAZING!",
+                    "review_text": "Steve was absolutely amazing! A kind welcoming host 10/10 would recommend. Very easy to talk to, helpful and communicative. Our Team Loved his energy and the rooms!",
+                    "revlink":"https://g.co/kgs/ZFdQL6",
+                    "author" :"Autumn Clouse",
+                    "author_location" :"Manchester, CT, United States",
+                    "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-2.jpg",
+                    "rev_img_alt":"escape room in Manchester, CT, United States"
+                  },
+                  {   "id"  : 3,
+                    "star":5,
+                   "title": "I WOULD DO IT AGAIN!",
+                    "review_text": "It was so much fun! I brought my real estate team for a team building event with 9 of us. We did the Black Ops escape room and needed clues but we enjoyed it a lot. I would do it again.",
+                    "revlink":"https://g.co/kgs/8sD4bh",
+                    "author" :"Avery Lugo",
+                    "author_location" :"Mentor, OH, United States",
+                    "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-3.jpg",
+                    "rev_img_alt":"escape room in Syracuse, NY, United States"
+                  },
+                  
+                  {   "id"  : 4,
+                    "star":5,
+                   "title": "TEAM HAD A GREAT TIME!",
+                    "review_text": "Our Team had a great time after office on Allinadventures. The room setup was really cool, the clues were tricky but we solved it. Other team & we will surely be back for sure soon.",
+                    "revlink":"https://g.co/kgs/hzd2vr",
+                    "author" :"Amanda Wilson",
+                    "author_location" :"West Nyack, NY, United States",
+                    "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-4.jpg",
+                    "rev_img_alt":"escape room in West Nyack, NY, United States"
+                  },
+                  
+                  {   "id"  : 5,
+                    "star":5,
+                   "title": "CHEERFUL AND PROFESSIONAL!",
+                    "review_text": "Bridget and Victoria were both incredibly helpful, cheerful and professional. It was overall a great experience that we would recommend to others. We will be coming again to try the other rooms! ",
+                    "revlink":"https://g.co/kgs/HUdAAw",
+                    "author" :"Francesco Perez",
+                    "author_location" :"Bensalem, PA, United States",
+                    "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-5.jpg",
+                    "rev_img_alt":"escape room in Bensalem, PA, United States"
+                  },
+                  {   "id"  : 6,
+                    "star":5,
+                   "title": "WON AS BEST TEAM!",
+                    "review_text": "Nora was the best host for team-building activities !! She made the entire experience so much fun, and better and her high energy is infectious, So we won. We will definitely come back again!",
+                    "revlink":"https://g.co/kgs/CFerYB",
+                    "author" :"Nen Lord",
+                    "author_location" :"Milford, CT, United States",
+                    "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-6.jpg",
+                    "rev_img_alt":"escape room in Milford, CT, United States "
+                  },
+                  {   "id"  : 7,
+                    "star":5,
+                   "title": "SUPER TEAM ENGAGING!",
+                    "review_text": "We had a great time in the Hollywood Premiere room today. Our game masters were very helpful, and the facility was clean. The clues were challenging. We look forward to our next visit. Super team engaging!",
+                    "revlink":"https://g.co/kgs/N17pvA",
+                    "author" :"Shelley C",
+                    "author_location" :"Rockaway, NJ, United States",
+                    "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-7.jpg",
+                    "rev_img_alt":"escape room in Rockaway, NJ, United States"
+                  },
+     
+                ]
                 },
 //********************************************************reunion-party end */
 //********************************************************graduation-party*/
@@ -439,6 +1123,82 @@ const eventIndData={
                    "videoid":"pfdyF_d4Z40"
                   
                    },
+                   "reviews": [
+                    
+                    {   "id"  : 1,
+                      "star":5,
+                     "title": "KNOWLEDGEABLE AND KIND!",
+                      "review_text": "Our group had a great time at that location. The room setup was really cool, the clues were definitely tricky but they was knowledgeable and kind! We will definitely be back.",
+                      "revlink":"https://g.co/kgs/givxmA",
+                      "author" :"Amanda Wilson",
+                      "author_location" :"West Nyack, NY, United States",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-1.jpg",
+                      "rev_img_alt":"escape room in West Nyack, NY, United States"
+                    },
+                    {   "id"  : 2,
+                      "star":5,
+                     "title": "ABSOLUTELY AMAZING!",
+                      "review_text": "Steve was absolutely amazing! A kind welcoming host 10/10 would recommend. Very easy to talk to, helpful and communicative. Our Team Loved his energy and the rooms!",
+                      "revlink":"https://g.co/kgs/ZFdQL6",
+                      "author" :"Autumn Clouse",
+                      "author_location" :"Manchester, CT, United States",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-2.jpg",
+                      "rev_img_alt":"escape room in Manchester, CT, United States"
+                    },
+                    {   "id"  : 3,
+                      "star":5,
+                     "title": "I WOULD DO IT AGAIN!",
+                      "review_text": "It was so much fun! I brought my real estate team for a team building event with 9 of us. We did the Black Ops escape room and needed clues but we enjoyed it a lot. I would do it again.",
+                      "revlink":"https://g.co/kgs/8sD4bh",
+                      "author" :"Avery Lugo",
+                      "author_location" :"Mentor, OH, United States",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-3.jpg",
+                      "rev_img_alt":"escape room in Syracuse, NY, United States"
+                    },
+                    
+                    {   "id"  : 4,
+                      "star":5,
+                     "title": "TEAM HAD A GREAT TIME!",
+                      "review_text": "Our Team had a great time after office on Allinadventures. The room setup was really cool, the clues were tricky but we solved it. Other team & we will surely be back for sure soon.",
+                      "revlink":"https://g.co/kgs/hzd2vr",
+                      "author" :"Amanda Wilson",
+                      "author_location" :"West Nyack, NY, United States",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-4.jpg",
+                      "rev_img_alt":"escape room in West Nyack, NY, United States"
+                    },
+                    
+                    {   "id"  : 5,
+                      "star":5,
+                     "title": "CHEERFUL AND PROFESSIONAL!",
+                      "review_text": "Bridget and Victoria were both incredibly helpful, cheerful and professional. It was overall a great experience that we would recommend to others. We will be coming again to try the other rooms! ",
+                      "revlink":"https://g.co/kgs/HUdAAw",
+                      "author" :"Francesco Perez",
+                      "author_location" :"Bensalem, PA, United States",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-5.jpg",
+                      "rev_img_alt":"escape room in Bensalem, PA, United States"
+                    },
+                    {   "id"  : 6,
+                      "star":5,
+                     "title": "WON AS BEST TEAM!",
+                      "review_text": "Nora was the best host for team-building activities !! She made the entire experience so much fun, and better and her high energy is infectious, So we won. We will definitely come back again!",
+                      "revlink":"https://g.co/kgs/CFerYB",
+                      "author" :"Nen Lord",
+                      "author_location" :"Milford, CT, United States",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-6.jpg",
+                      "rev_img_alt":"escape room in Milford, CT, United States "
+                    },
+                    {   "id"  : 7,
+                      "star":5,
+                     "title": "SUPER TEAM ENGAGING!",
+                      "review_text": "We had a great time in the Hollywood Premiere room today. Our game masters were very helpful, and the facility was clean. The clues were challenging. We look forward to our next visit. Super team engaging!",
+                      "revlink":"https://g.co/kgs/N17pvA",
+                      "author" :"Shelley C",
+                      "author_location" :"Rockaway, NJ, United States",
+                      "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-7.jpg",
+                      "rev_img_alt":"escape room in Rockaway, NJ, United States"
+                    },
+       
+                  ]
                   },
 //********************************************************graduation-party end */
 //********************************************************school-events*/
@@ -468,6 +1228,82 @@ const eventIndData={
                      "videoid":"pfdyF_d4Z40"
                     
                      },
+                     "reviews": [
+                    
+                      {   "id"  : 1,
+                        "star":5,
+                       "title": "KNOWLEDGEABLE AND KIND!",
+                        "review_text": "Our group had a great time at that location. The room setup was really cool, the clues were definitely tricky but they was knowledgeable and kind! We will definitely be back.",
+                        "revlink":"https://g.co/kgs/givxmA",
+                        "author" :"Amanda Wilson",
+                        "author_location" :"West Nyack, NY, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-1.jpg",
+                        "rev_img_alt":"escape room in West Nyack, NY, United States"
+                      },
+                      {   "id"  : 2,
+                        "star":5,
+                       "title": "ABSOLUTELY AMAZING!",
+                        "review_text": "Steve was absolutely amazing! A kind welcoming host 10/10 would recommend. Very easy to talk to, helpful and communicative. Our Team Loved his energy and the rooms!",
+                        "revlink":"https://g.co/kgs/ZFdQL6",
+                        "author" :"Autumn Clouse",
+                        "author_location" :"Manchester, CT, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-2.jpg",
+                        "rev_img_alt":"escape room in Manchester, CT, United States"
+                      },
+                      {   "id"  : 3,
+                        "star":5,
+                       "title": "I WOULD DO IT AGAIN!",
+                        "review_text": "It was so much fun! I brought my real estate team for a team building event with 9 of us. We did the Black Ops escape room and needed clues but we enjoyed it a lot. I would do it again.",
+                        "revlink":"https://g.co/kgs/8sD4bh",
+                        "author" :"Avery Lugo",
+                        "author_location" :"Mentor, OH, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-3.jpg",
+                        "rev_img_alt":"escape room in Syracuse, NY, United States"
+                      },
+                      
+                      {   "id"  : 4,
+                        "star":5,
+                       "title": "TEAM HAD A GREAT TIME!",
+                        "review_text": "Our Team had a great time after office on Allinadventures. The room setup was really cool, the clues were tricky but we solved it. Other team & we will surely be back for sure soon.",
+                        "revlink":"https://g.co/kgs/hzd2vr",
+                        "author" :"Amanda Wilson",
+                        "author_location" :"West Nyack, NY, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-4.jpg",
+                        "rev_img_alt":"escape room in West Nyack, NY, United States"
+                      },
+                      
+                      {   "id"  : 5,
+                        "star":5,
+                       "title": "CHEERFUL AND PROFESSIONAL!",
+                        "review_text": "Bridget and Victoria were both incredibly helpful, cheerful and professional. It was overall a great experience that we would recommend to others. We will be coming again to try the other rooms! ",
+                        "revlink":"https://g.co/kgs/HUdAAw",
+                        "author" :"Francesco Perez",
+                        "author_location" :"Bensalem, PA, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-5.jpg",
+                        "rev_img_alt":"escape room in Bensalem, PA, United States"
+                      },
+                      {   "id"  : 6,
+                        "star":5,
+                       "title": "WON AS BEST TEAM!",
+                        "review_text": "Nora was the best host for team-building activities !! She made the entire experience so much fun, and better and her high energy is infectious, So we won. We will definitely come back again!",
+                        "revlink":"https://g.co/kgs/CFerYB",
+                        "author" :"Nen Lord",
+                        "author_location" :"Milford, CT, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-6.jpg",
+                        "rev_img_alt":"escape room in Milford, CT, United States "
+                      },
+                      {   "id"  : 7,
+                        "star":5,
+                       "title": "SUPER TEAM ENGAGING!",
+                        "review_text": "We had a great time in the Hollywood Premiere room today. Our game masters were very helpful, and the facility was clean. The clues were challenging. We look forward to our next visit. Super team engaging!",
+                        "revlink":"https://g.co/kgs/N17pvA",
+                        "author" :"Shelley C",
+                        "author_location" :"Rockaway, NJ, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-7.jpg",
+                        "rev_img_alt":"escape room in Rockaway, NJ, United States"
+                      },
+         
+                    ]
                     },
 //********************************************************school-events end */
 //********************************************************school-events*/
@@ -497,6 +1333,82 @@ const eventIndData={
                     "videoid":"pfdyF_d4Z40"
                   
                     },
+                    "reviews": [
+                    
+                      {   "id"  : 1,
+                        "star":5,
+                       "title": "KNOWLEDGEABLE AND KIND!",
+                        "review_text": "Our group had a great time at that location. The room setup was really cool, the clues were definitely tricky but they was knowledgeable and kind! We will definitely be back.",
+                        "revlink":"https://g.co/kgs/givxmA",
+                        "author" :"Amanda Wilson",
+                        "author_location" :"West Nyack, NY, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-1.jpg",
+                        "rev_img_alt":"escape room in West Nyack, NY, United States"
+                      },
+                      {   "id"  : 2,
+                        "star":5,
+                       "title": "ABSOLUTELY AMAZING!",
+                        "review_text": "Steve was absolutely amazing! A kind welcoming host 10/10 would recommend. Very easy to talk to, helpful and communicative. Our Team Loved his energy and the rooms!",
+                        "revlink":"https://g.co/kgs/ZFdQL6",
+                        "author" :"Autumn Clouse",
+                        "author_location" :"Manchester, CT, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-2.jpg",
+                        "rev_img_alt":"escape room in Manchester, CT, United States"
+                      },
+                      {   "id"  : 3,
+                        "star":5,
+                       "title": "I WOULD DO IT AGAIN!",
+                        "review_text": "It was so much fun! I brought my real estate team for a team building event with 9 of us. We did the Black Ops escape room and needed clues but we enjoyed it a lot. I would do it again.",
+                        "revlink":"https://g.co/kgs/8sD4bh",
+                        "author" :"Avery Lugo",
+                        "author_location" :"Mentor, OH, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-3.jpg",
+                        "rev_img_alt":"escape room in Syracuse, NY, United States"
+                      },
+                      
+                      {   "id"  : 4,
+                        "star":5,
+                       "title": "TEAM HAD A GREAT TIME!",
+                        "review_text": "Our Team had a great time after office on Allinadventures. The room setup was really cool, the clues were tricky but we solved it. Other team & we will surely be back for sure soon.",
+                        "revlink":"https://g.co/kgs/hzd2vr",
+                        "author" :"Amanda Wilson",
+                        "author_location" :"West Nyack, NY, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-4.jpg",
+                        "rev_img_alt":"escape room in West Nyack, NY, United States"
+                      },
+                      
+                      {   "id"  : 5,
+                        "star":5,
+                       "title": "CHEERFUL AND PROFESSIONAL!",
+                        "review_text": "Bridget and Victoria were both incredibly helpful, cheerful and professional. It was overall a great experience that we would recommend to others. We will be coming again to try the other rooms! ",
+                        "revlink":"https://g.co/kgs/HUdAAw",
+                        "author" :"Francesco Perez",
+                        "author_location" :"Bensalem, PA, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-5.jpg",
+                        "rev_img_alt":"escape room in Bensalem, PA, United States"
+                      },
+                      {   "id"  : 6,
+                        "star":5,
+                       "title": "WON AS BEST TEAM!",
+                        "review_text": "Nora was the best host for team-building activities !! She made the entire experience so much fun, and better and her high energy is infectious, So we won. We will definitely come back again!",
+                        "revlink":"https://g.co/kgs/CFerYB",
+                        "author" :"Nen Lord",
+                        "author_location" :"Milford, CT, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-6.jpg",
+                        "rev_img_alt":"escape room in Milford, CT, United States "
+                      },
+                      {   "id"  : 7,
+                        "star":5,
+                       "title": "SUPER TEAM ENGAGING!",
+                        "review_text": "We had a great time in the Hollywood Premiere room today. Our game masters were very helpful, and the facility was clean. The clues were challenging. We look forward to our next visit. Super team engaging!",
+                        "revlink":"https://g.co/kgs/N17pvA",
+                        "author" :"Shelley C",
+                        "author_location" :"Rockaway, NJ, United States",
+                        "rev_img":"/assets/all-testimonials-image/allinadventures-events-team-building-testimonials-7.jpg",
+                        "rev_img_alt":"escape room in Rockaway, NJ, United States"
+                      },
+         
+                    ]
                    },
 //********************************************************school-events end */
 }

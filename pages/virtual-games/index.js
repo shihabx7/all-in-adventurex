@@ -31,7 +31,9 @@ const VirtualEscapeGames=(props)=>{
                       <meta name="description" content="All in adventure escape games" />
             
               </Head>
-               <Homenav locationlist={props.locationlist}/>
+               <Homenav locationlist={props.locationlist} 
+                activitylist={props.activitylist}
+                eventlist={props.eventlist}/>
                   {/* =======header content ======== end */}
         
          {/* =========================================================================================main content ======== end */}
@@ -81,7 +83,9 @@ export const getStaticProps = async()=>{
         pagemeta:allVgames.pagemeta,
         pagedata:allVgames.pagedata,
         vgamelist:allVgames.virtual_game_list,
-        locationlist:allVgames.locationlist
+        locationlist:allVgames.locationlist,
+        activitylist:allVgames.activitylistSlug,
+      eventlistSlug:allVgames.eventlistSlug,
 
       },
       revalidate: 30

@@ -31,7 +31,9 @@ const OpenJobPosition=(props)=>{
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
-           <Homenav/>
+           <Homenav locationlist={props.locationlist}
+            activitylist={props.activitylist}
+            eventlist={props.eventlist}/>
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}
@@ -65,7 +67,7 @@ const OpenJobPosition=(props)=>{
 {/* =========================================================================================main content ======== end */}
 </div>
   
-  <Footer/>
+  <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
   </>
       )
 
@@ -103,7 +105,10 @@ export const getStaticProps=async (context)=>{
             jobroles:jobPositionPageData.job_roles,
             competencies:jobPositionPageData.key_competencies,
             traits:jobPositionPageData.desired_traits,
-            requirements:jobPositionPageData.requirements
+            requirements:jobPositionPageData.requirements,
+            locationlist:jobPositionPageData.locationlist,
+            activitylist:jobPositionPageData.activitylistSlug,
+            eventlistSlug:jobPositionPageData.eventlistSlug,
 
     
     

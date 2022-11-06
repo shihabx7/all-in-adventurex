@@ -1,7 +1,7 @@
 import { getTotal } from "./AllDataList/getTotal"
-export const getPrivacyPageData=()=>{
+export const getThankYouPageData=()=>{
 
-    const privacyPageData={
+    const data={
       "locationlist":getTotal().locationlist,
       "activitylistSlug":getTotal().activitylistSlug,
        "eventlistSlug":getTotal().eventlistSlug,
@@ -15,15 +15,15 @@ export const getPrivacyPageData=()=>{
            
           "pagedata": {
                         
-            "pagetitle":"Privacy Policy",
+            "pagetitle":"TERMS OF SERVICE",
             "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
-            "totalLocation":"28",
+         
             "coverimageL":"/assets/home-benar-bg.jpg",
             "coverimageM":"/assets/home-hero.jpg",
             "totalLocations": getTotal().totalLocations,
           }
     }
 
-    return privacyPageData
+    return data
 
 }

@@ -9,7 +9,7 @@ import { FiChevronRight } from "react-icons/fi";
 import { useEffect, useState } from 'react';
 import { getLocationsPageData } from '../api/getLocationsPageData';
 
-const Locations=({states,locationlist})=>{
+const Locations=(props)=>{
   
 
   const setTopPadding=()=>{
@@ -60,7 +60,9 @@ const ScrollTab=(id)=>{
 /* ========================page content=================== */
 return (
   <>
-      <Homenav locationlist={states}/>
+      <Homenav locationlist={props.states}
+        activitylist={props.activitylist}
+        eventlist={props.eventlist}/>
   
             <div id="mainContent" className='main-content nobtn-main-content'>
 
@@ -87,7 +89,7 @@ return (
             <div className='max-w-7xl mx-auto py-16 md:py-16 px-4 relative z-10'>
             <div className="page-benar-info"> 
                 
-                <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-gray-800 text-center'>CHOOSE FROM {countTotalLocation(states)} US LOCATIONS</p> 
+                <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-gray-800 text-center'>CHOOSE FROM {countTotalLocation(props.states)} U.S LOCATIONS</p> 
                 <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os'>ESCAPE ROOMS AND FUN ACTIVITES</h1>
                 <p className='text-gray-700 max-w-2xl mx-auto text-center lg:text-lg'>#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend &amp; family today. </p>
                 </div>
@@ -106,7 +108,7 @@ return (
        <div className='max-w-7xl mx-auto md:px-4 py-16 md:py-28'>
         <div className='section-head relative z-20'>  
               <TitleSeparator title='ALL IN ADVENTURE LOCATIONS' color='golden-text' weight='font-bold'/>
-              <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16">
+              <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16">
                     <p className="text-gray-300 md:px-8">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
                 </div>
         </div>
@@ -116,13 +118,13 @@ return (
               <div className='all-list'>
                 <button onClick={() =>
                                     setShowLoclist("ALL")} className=' min-w-[98px] md:min-w-[112px] bg-red-600 hover:bg-red-700 focus:bg-red-700 focus:border-red-700 py-3 px-2 md:py-3 md:px-2 text-sm md:text-base lg:text-lg text-white rounded-l border border-red-600'>ALL<span> ({
-                                      countTotalLocation(states)
+                                      countTotalLocation(props.states)
                                       })</span></button>
                 </div>
               <div  id="loc-tab-list-box" className='loc-tab-list-box w-full overflow-x-auto'> 
                     <div  id="loc-tab-list" className='loc-tab-list flex space-x-[1px] '> 
                     {
-                      states.map((state)=>{
+                      props.states.map((state)=>{
 
                         return(
                           <button key={state.id} onClick={() =>{
@@ -143,7 +145,7 @@ return (
           
                {
                 
-                states.map((state)=>{
+                props.states.map((state)=>{
                     
                   return(
                     state.cities.map((city)=>{
@@ -168,7 +170,7 @@ return (
     {/* ============Location list end=============*/}
 
     </div>
-   <Footer locationlist={states} totallocations={countTotalLocation(states)}/>
+   <Footer locationlist={props.states} totallocations={countTotalLocation(props.states)}/>
     </>
    
 )
@@ -183,7 +185,10 @@ export const getStaticProps=async ()=>{
   return {
     props: {
       states:pagedata.states,
-      locationlist:pagedata.states
+      locationlist:pagedata.states,
+      activitylist:pagedata.activitylistSlug,
+      eventlistSlug:pagedata.eventlistSlug,
+      
    
     },
    

@@ -33,7 +33,9 @@ const viewAllActivities=(props)=>{
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
-           <Homenav locationlist={props.locationlist}/>
+           <Homenav locationlist={props.locationlist}
+           activitylist={props.activitylist}
+           eventlist={props.eventlist}/>
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}
@@ -80,7 +82,9 @@ export const getStaticProps = async()=>{
         pagemeta:allActivity.pagemeta,
         pagedata:allActivity.pagedata,
         activitylist:allActivity.activity_list,
-        locationlist:allActivity.locationlist
+        locationlist:allActivity.locationlist,
+      eventlist:allActivity.eventlistSlug,
+      activitylist:allActivity.activitylistSlug
 
 
       },

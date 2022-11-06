@@ -400,7 +400,7 @@ import { getTotal } from "./AllDataList/getTotal";
                         "id":2,
                         "category":"virtual",
                         "type": "Virtual",
-                        "title": "6 Virtual Escape Roomss",
+                        "title": "6 Virtual Escape Rooms",
                         "description": "New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
                         "age":"All age(6+)",
                         "duration":"30",

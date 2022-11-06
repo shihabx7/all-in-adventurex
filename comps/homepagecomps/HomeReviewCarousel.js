@@ -83,7 +83,7 @@ const shortrev=(txt)=>{
     {
       reviews.map((review)=>{
           return(
-                <div key={review} className="text-white  game-slider-card rev-card">
+                <div key={review} className="text-white  game-slider-card rev-card group">
                  <div className="card-container relative">
                      <div className="rev-card-head">
                          <div className="card-img review-img px-4">
@@ -92,8 +92,8 @@ const shortrev=(txt)=>{
                      </div>
 
                      <div className="card-rev-bottom bg-black pt-4 px-4 ">
-             
-                         <div className="card-rev-desc text-center min-h-[220px]">
+                     <div className="card-rev-desc text-center group-hover:scale-[0.97]">
+                         <div className={"card-rev-desc text-center "+ review.revlink? "min-h-[280px]":"min-h-[200px]"}>
                               <img className="inline" src="/assets/reviews/rev-5star.svg"></img>
                               {
                                 review.revlink &&
@@ -107,10 +107,8 @@ const shortrev=(txt)=>{
                              {
                               review.revlink &&
                               <> 
-                              <p className=" vx"><span className="golden-text font-light lg:text-lg">&quot;{shortrev(review.review_text)} </span>
-                                  <span className="text-[#FFEFCD]">
-                                      <a target="_blank" href={review.revlink} className="text-[#FFEFCD]"> ... READ MORE</a>
-                                 </span>
+                              <p className=" vx"><span className="golden-text font-light lg:text-lg">&quot;{review.review_text} </span>
+                                  
                                 </p>
                                 
                               </>
@@ -120,7 +118,8 @@ const shortrev=(txt)=>{
                              <p className="golden-text font-light lg:text-lg italic h-[170px] md:h-[200px]">&quot;{review.review_text}</p>
                               }
                          </div>
-                         <div className="card-rev-auth mt-4 pb-8 text-center">
+                     </div>
+                       <div className="card-rev-auth mt-4 pb-8 text-center">
                           {
                             review.revlink &&
                             <img className="max-w-[32px] mx-auto" src="/assets/svg/googleicon.svg"></img>

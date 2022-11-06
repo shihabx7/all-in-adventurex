@@ -3,7 +3,10 @@ import { getTotal } from "./AllDataList/getTotal"
 export const getAllActivity=()=>{
 
     const allActivityList={
-            "locationlist":getTotal().locationlist,
+        "locationlist":getTotal().locationlist,
+        "activitylistSlug":getTotal().activitylistSlug,
+         "eventlistSlug":getTotal().eventlistSlug,
+         "virtualgameListSlug":getTotal().virtualgameSlug,
        
             "pagemeta":{
 
