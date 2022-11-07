@@ -475,7 +475,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                             
                             "phone":"+1 919-205-5008",
                             "coverimg":'/assets/mapcard/allinadventures-escape-room-raleigh-nc-triangle-town-center-mall-hero.jpg',
-                            "mall":"Triangle Town Centerl Mall",
+                            "mall":"Triangle Town Center Mall",
                             "alt":'allinadventures-escape-room-raleigh-nc-triangle-town-center-mall',
                             "email":"Store123@Allinadventures.com",
                             "position": { lat: 35.87108885072849, lng: -78.5746156605905},

@@ -28,7 +28,7 @@ export const getRewardPageData=()=>{
                    "category":"reward",
                    "group":"reward",
                     "ques":"Does the program cost anything?",
-                   "ans":"The VIP program is FREE to join.",
+                   "ans":["The VIP program is FREE to join."],
                    
 
              },
@@ -37,7 +37,7 @@ export const getRewardPageData=()=>{
                "category":"reward",
                "group":"reward",
                "ques":"Can I join online?",
-               "ans":"Yes, you can! Just visit the Rewards Program page and go to READY TO SIGN UP section, then click on CHOOSE YOUR LOCATION, and you'll be redirected to fivestars.com site for your selected All In Adventures location.",
+               "ans":["Yes, you can! Just visit the Rewards Program page and go to READY TO SIGN UP section, then click on CHOOSE YOUR LOCATION, and you'll be redirected to fivestars.com site for your selected All In Adventures location."],
                
 
                 },
@@ -55,14 +55,14 @@ export const getRewardPageData=()=>{
                        "category":"reward",
                        "group":"reward",
                        "ques":"What if I already purchased an Adventure Club Passport?",
-                       "ans":"You can bring your physical passport into the store and exchange it to be added into the new program as a VIP member for NO additional cost.",
+                       "ans":["You can bring your physical passport into the store and exchange it to be added into the new program as a VIP member for NO additional cost."],
                     },
                    {
                      "id":6,
                      "category":"reward",
                      "group":"reward",
                      "ques":"What happens to the stamps I have already collected?",
-                     "ans":"All unused stamps will be converted at a rate of 50 points per stamp.",
+                     "ans":["All unused stamps will be converted at a rate of 50 points per stamp."],
                            
        
                    },
@@ -71,7 +71,7 @@ export const getRewardPageData=()=>{
                     "category":"reward",
                     "group":"reward",
                     "ques":"Will I continue to receive $5 off every visit?",
-                    "ans":"The new program does not include this benefit going forward. However, the new program allows you to accumulate points at a much faster rate which you can use to redeem free admissions much quicker.",
+                    "ans":["The new program does not include this benefit going forward. However, the new program allows you to accumulate points at a much faster rate which you can use to redeem free admissions much quicker."],
                           
       
                   },
@@ -80,7 +80,7 @@ export const getRewardPageData=()=>{
                     "category":"reward",
                     "group":"reward",
                     "ques":"Can I redeem points online?",
-                    "ans":"You will have to redeem all points physically in the store.",
+                    "ans":["You will have to redeem all points physically in the store."],
                           
       
                   }

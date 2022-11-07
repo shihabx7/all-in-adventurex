@@ -31,9 +31,9 @@ export const getLocationIndContactPageData=(locationslug)=>{
     const contactPageData={
         "pagemeta":{
 
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
+            "title":"All in adventure contact store | escape room in "+locationName(locationslug),
+            "description":"Contact escape room in "+locationName(locationslug),
+            "keywords":"escape room, escape room contact, escape room in "+locationName(locationslug)
           },
            
         "pagedata":{

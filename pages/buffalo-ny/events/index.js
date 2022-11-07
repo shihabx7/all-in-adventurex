@@ -53,7 +53,7 @@ const LocEventList=(props)=>{
                          {/* =======header content and breadcum======== end */}
                          {/* ===========Page Content here=========  <> */}
                          <GameLocHero pagedata={props.pagedata}/>
-                         <EventList events={props.eventLocList} locationslug="albany-ny"/>
+                         <EventList events={props.eventLocList} locationslug="buffalo-ny"/>
                          
                          <EventContact contactdata={props.contactdata} locationlist={props.locationlist} eventlist={props.eventlist}/>
                         

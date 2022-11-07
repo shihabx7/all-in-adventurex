@@ -114,7 +114,7 @@ const PricingOthersGame=()=>{
                         
                         <div className="view-all flex justify-center ">
                        
-                              <a href="/activitiess#others-physical-games" className="flex font-medium lg:text-lg justify-center space-x-1 items-center text-red-500 hover:text-red-700 "><span>View all other games</span> <FiChevronRight/></a>
+                              <a href="/activities#others-physical-games" className="flex font-medium lg:text-lg justify-center space-x-1 items-center text-red-500 hover:text-red-700 "><span>View all other games</span> <FiChevronRight/></a>
                           
                          </div>
                     </div>

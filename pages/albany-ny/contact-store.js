@@ -7,6 +7,7 @@ import Head from 'next/head';
 import { getLocationIndContactPageData } from '../api/LocationIndData/getLocationIndContactPageData';
 import GameLocHero from '../../comps/activitiyPageComps/GameLocHero';
 import StoreContact from '../../comps/contactComps/StoreContact';
+import Seofields from '../../comps/util/SeoFields';
 
 
 const ViewContactStore=(props)=>{
@@ -33,18 +34,13 @@ const ViewContactStore=(props)=>{
                       />
                  <div id="mainContent" className='main-content'>
  
-                 {/* =======header content and breadcum======== */}
-                                <Head>
-                                 <title>All in adventure Locations</title>
-                                 <meta name="description" content="All in one adventure escape games" />
-                                 
- 
-                               </Head>
+                 {/* =======meta content and breadcum======== */}
+                                <Seofields meta={props.pagemeta}/>
                                <div className='breadcum py-1 md:py-1 lg:py-3 bg-[#fffceb]'>
                                     <BreadcumNew/>
                                  </div>
                                  
-                         {/* =======header content and breadcum======== end */}
+                         {/* =======meta content and breadcum======== end */}
                          {/* ===========Page Content here=========*/}
                          <GameLocHero pagedata={props.pagedata} gametotal="not"/>
                          <StoreContact contactdata={props.contactdata}/>

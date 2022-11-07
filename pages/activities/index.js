@@ -34,7 +34,7 @@ const viewAllActivities=(props)=>{
         
           </Head>
            <Homenav locationlist={props.locationlist}
-           activitylist={props.activitylist}
+           activitylist={props.activitylistSlug}
            eventlist={props.eventlist}/>
               {/* =======header content ======== end */}
     
@@ -84,7 +84,7 @@ export const getStaticProps = async()=>{
         activitylist:allActivity.activity_list,
         locationlist:allActivity.locationlist,
       eventlist:allActivity.eventlistSlug,
-      activitylist:allActivity.activitylistSlug
+      activitylistSlug:allActivity.activitylistSlug
 
 
       },

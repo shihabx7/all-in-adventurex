@@ -55,9 +55,9 @@ const WhatIsEscape=()=>{
                                             </div> 
                             </div>
                             <div className="view-all flex justify-center mt-4 md:mt-8">
-                                 <Link href="#"> 
-                                  <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-600 hover:text-red-700"><span>Learn more</span> <FaAngleRight/></a>
-                                 </Link>
+                                 
+                                  <a href="/about" className="flex lg:text-lg justify-center space-x-2 items-center text-red-600 hover:text-red-700"><span>Learn more</span> <FaAngleRight/></a>
+                                 
                           </div>
 
                         </div>
@@ -72,9 +72,9 @@ const WhatIsEscape=()=>{
                                             </div> 
                             </div>
                             <div className="view-all flex justify-center mt-4 md:mt-8">
-                                 <Link href="#"> 
-                                  <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-600 hover:text-red-700"><span>Learn more</span> <FaAngleRight/></a>
-                                 </Link>
+                                 
+                                  <a href="/abaout" className="flex lg:text-lg justify-center space-x-2 items-center text-red-600 hover:text-red-700"><span>Learn more</span> <FaAngleRight/></a>
+                                
                           </div>
 
                         </div>
