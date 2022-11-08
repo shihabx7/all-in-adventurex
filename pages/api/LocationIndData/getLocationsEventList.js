@@ -41,8 +41,8 @@ export const getLocationsEventList=(locationslug)=>{
     var ct=''
 
     if(ctname.length>2){
-        for(var i=0;i<ctname.length-2 ;i++){
-            ct=ctname[i].charAt(0).toUpperCase()+ctname[i].slice(1)+' '
+        for(var i=0;i<ctname.length-1 ;i++){
+            ct=ct+ctname[i].charAt(0).toUpperCase()+ctname[i].slice(1)+' '
         }
     }
     else{

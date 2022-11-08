@@ -33,11 +33,20 @@ import { getLocTotal } from "../AllDataList/getLocTotal"
       return locs+", "+st
    }
 
+   const salt=(cat)=>{
+      var ret="escape room"
+
+      if(cat=="other"){
+        ret=""
+      }
+      return ret
+   }
+
     const activityData={
         "pagemeta":activityDataset[gameslug].pagemeta,
            
         "pagedata":{
-            "pagetitle":activityDataset[gameslug].activityname+" escape room",
+            "pagetitle":activityDataset[gameslug].activityname+" "+salt(activityDataset[gameslug].activitydata.category),
             "pagesubtitle":activityDataset[gameslug].pagesubtitle,
             "totalLocation":"28",
             "coverimageL":activityDataset[gameslug].coverimageL,

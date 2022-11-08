@@ -50,6 +50,14 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
 
       return locs+", "+st
    }
+   const getLocationSearchName2=(slug)=>{
+    var locs=slug.split("-")
+    var st=locs[locs.length-1].toString()
+    locs=locs.slice(0,-1)
+    locs=locs.join(' ')
+
+    return locs+" "+st
+ }
    const cityName=(loc)=>{
     var ctname=loc.split("-")
     var st=ctname[ctname.length-1].toUpperCase()
@@ -71,7 +79,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
     //********************************************************birth day parties */
       "birthday-party":{
     
-                    "pagesubtitle":"All In Adventures is famous for hosting the most memorable birthday party in "+cityName(locationslug)+". We offer fun-filled escape room experiences and a birthday party venue for all ages and skill levels. Both kids and adults love it!",
+                    "pagesubtitle":"All In Adventures is famous for hosting the most memorable birthday party in "+getLocationSearchName2(locationslug)+". We offer fun-filled escape room experiences and a birthday party venue for all ages and skill levels. Both kids and adults love it!",
                      "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-birthday-party-hero.jpg",
                      "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-birthday-party-hero.jpg",
                      "coverimageM_alt":"allinadventures-events-birthday-party",
@@ -281,7 +289,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
     //********************************************************team-building end */
      //********************************************************corporate-events */
      "corporate-events":{
-      "pagesubtitle":"Since 2014, thousands of companies have been using our escape rooms and 5-star guest services to foster employee engagement, run meaningful team building events and celebrate company milestones. Instead of a dreary meeting on how to work effectively, why not take a crack at our "+cityName(locationslug)+" escape room puzzles?",
+      "pagesubtitle":"Since 2014, thousands of companies have been using our escape rooms and 5-star guest services to foster employee engagement, run meaningful team building events and celebrate company milestones. Instead of a dreary meeting on how to work effectively, why not take a crack at our "+getLocationSearchName2(locationslug)+" escape room puzzles?",
                         "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-corporate-events-hero.jpg",
                         "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-corporate-events-hero.jpg",
                         "coverimageM_alt":"allinadventures-events-corporate-events",
@@ -402,7 +410,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                          },
                        
                           "eventdata":{
-                           "why_book":"Family activities are frequently held at All In Adventures in "+cityName(locationslug)+", and it's easy to see why. We provide a unique atmosphere where you can spend time with family members doing something completely different from normal life. Our escape games engage kids and adults of all ages. Kids from 10 years old will actively participate in puzzle solving and have a wonderful time. Kids 6-9 years old will need a little support from the adults but will definitely enjoy the fun experience. Kids under 6 years old can play for FREE with two or more adults paying full price.",
+                           "why_book":"Family activities are frequently held at All In Adventures in "+getLocationSearchName2(locationslug)+", and it's easy to see why. We provide a unique atmosphere where you can spend time with family members doing something completely different from normal life. Our escape games engage kids and adults of all ages. Kids from 10 years old will actively participate in puzzle solving and have a wonderful time. Kids 6-9 years old will need a little support from the adults but will definitely enjoy the fun experience. Kids under 6 years old can play for FREE with two or more adults paying full price.",
                            "why_book_img":"/assets/all-event-details/allinadventures-events-family-fun-activities-sec1.jpg",
                            "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
                            "offer_img":"/assets/all-event-details/allinadventures-events-family-fun-activities-sec2.jpg",
@@ -491,7 +499,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
     //********************************************************family-fun-activity end */
     //********************************************************bachelor-party  */
     "bachelor-party":{
-                     "pagesubtitle":"Are you looking for the most fun, thrilling, and downright nerdy activity for an upcoming bachelor party? Something everyone can participate in? Then play one of our escape rooms in "+cityName(locationslug)+". There's no better way to bond with your bachelor party before the big day — no scandals, just nonstop thrills!",
+                     "pagesubtitle":"Are you looking for the most fun, thrilling, and downright nerdy activity for an upcoming bachelor party? Something everyone can participate in? Then play one of our escape rooms in "+getLocationSearchName2(locationslug)+". There's no better way to bond with your bachelor party before the big day — no scandals, just nonstop thrills!",
                       "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-bachelor-party-hero.jpg",
                       "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-bachelor-party-hero.jpg",
                       "coverimageM_alt":"allinadventures-events-bachelor-party",
@@ -596,7 +604,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
     //********************************************************bachelor-party end */
     //********************************************************bachelorette-party  */
     "bachelorette-party":{
-                        "pagesubtitle":"Are you planning a bachelorette party for your best friend or family member and looking for something out of the ordinary? Something everyone can participate in? Then play one of our escape rooms in "+cityName(locationslug)+". There's no better way to bond with your bachelorette party before the big day — no drama, no scandals, just nonstop thrills!",
+                        "pagesubtitle":"Are you planning a bachelorette party for your best friend or family member and looking for something out of the ordinary? Something everyone can participate in? Then play one of our escape rooms in "+getLocationSearchName2(locationslug)+". There's no better way to bond with your bachelorette party before the big day — no drama, no scandals, just nonstop thrills!",
                         "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-bachelorette-party-hero.jpg",
                         "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-bachelorette-party-hero.jpg",
                         "coverimageM_alt":"allinadventures-events-bachelorette-party",
@@ -701,7 +709,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
     //********************************************************bachelorette-party end */
     //********************************************************proposal-party */
     "proposal-party":{
-                        "pagesubtitle":"If you're both into adventures, puzzles, and surprises, then there's no better way than proposing in an escape room! Our "+cityName(locationslug)+" escape games are designed to engage and challenge with hidden puzzles and a fully customizable experience. Your partner will never see this coming! Sweep your partner off their feet with a proposal they'll never forget.",
+                        "pagesubtitle":"If you're both into adventures, puzzles, and surprises, then there's no better way than proposing in an escape room! Our "+getLocationSearchName2(locationslug)+" escape games are designed to engage and challenge with hidden puzzles and a fully customizable experience. Your partner will never see this coming! Sweep your partner off their feet with a proposal they'll never forget.",
                           "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-proposal-party-hero.jpg",
                           "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-proposal-party-hero.jpg",
                           "coverimageM_alt":"allinadventures-events-proposal-party",
@@ -806,7 +814,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
     //********************************************************proposal-party end */
     //********************************************************date-night*/
     "date-night":{
-                 "pagesubtitle":"If you both enjoy adventures, mysteries, and surprises, and looking for a fun date night idea or want to add a little excitement to your relationship, plan your date night to play our "+cityName(locationslug)+" escape rooms. They're great for couples who love to work together to solve puzzles and complete challenges. ",
+                 "pagesubtitle":"If you both enjoy adventures, mysteries, and surprises, and looking for a fun date night idea or want to add a little excitement to your relationship, plan your date night to play our "+getLocationSearchName2(locationslug)+" escape rooms. They're great for couples who love to work together to solve puzzles and complete challenges. ",
                   "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-date-night-hero.jpg",
                   "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-date-night-hero.jpg",
                   "coverimageM_alt":"allinadventures-events-date-night",
@@ -911,7 +919,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
     //********************************************************date-night end */
     //*******************************************************private-party*/
     "private-party":{
-      "pagesubtitle":"We offer an array of interactive escape rooms where everyone can participate and become the star of their own action adventure. No matter what occasion you celebrate, "+cityName(locationslug)+" escape room party is a great way to bring your family, friends or co-workers together and have enormous fun.",
+      "pagesubtitle":"We offer an array of interactive escape rooms where everyone can participate and become the star of their own action adventure. No matter what occasion you celebrate, "+getLocationSearchName2(locationslug)+" escape room party is a great way to bring your family, friends or co-workers together and have enormous fun.",
       "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-private-party-hero.jpg",
       "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-private-party-hero.jpg",
       "coverimageM_alt":"allinadventures-events-private-party",
@@ -1016,7 +1024,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
     //********************************************************date-night end */
     //********************************************************reunion-party*/
     "reunion-party":{
-                    "pagesubtitle":"There's no shortage of family reunion activities. But how many of them actually involve teamwork and collaboration? That's the question! Our "+cityName(locationslug)+" escape rooms are interactive and have engaging qualities that give your reunion party an epic adventure!",
+                    "pagesubtitle":"There's no shortage of family reunion activities. But how many of them actually involve teamwork and collaboration? That's the question! Our "+getLocationSearchName2(locationslug)+" escape rooms are interactive and have engaging qualities that give your reunion party an epic adventure!",
                     "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-reunion-party-hero.jpg",
                     "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-reunion-party-hero.jpg",
                     "coverimageM_alt":"allinadventures-events-reunion-party",
@@ -1121,7 +1129,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
     //********************************************************reunion-party end */
     //********************************************************graduation-party*/
     "graduation-party":{
-                    "pagesubtitle":"Graduation is such an exciting time, no matter your age. You deserve to celebrate all that you have achieved. Celebrate your accomplishments in a memorable way with our "+cityName(locationslug)+" escape room theme party. Make lasting memories to tell tales to your grandchildren!",
+                    "pagesubtitle":"Graduation is such an exciting time, no matter your age. You deserve to celebrate all that you have achieved. Celebrate your accomplishments in a memorable way with our "+getLocationSearchName2(locationslug)+" escape room theme party. Make lasting memories to tell tales to your grandchildren!",
                       "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-graduation-party-hero.jpg",
                       "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-graduation-party-hero.jpg",
                       "coverimageM_alt":"allinadventures-events-graduation-party",
@@ -1226,7 +1234,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
     //********************************************************graduation-party end */
     //********************************************************school-events*/
     "school-events":{
-      "pagesubtitle":"Are you looking for school event ideas that will excite and challenge every student in the classroom or school? Then All In Adventures "+cityName(locationslug)+" is a great place for you to bring your student group. Let your students experience a challenging yet fun time at our escape rooms — excellent adventures for any age group.",
+      "pagesubtitle":"Are you looking for school event ideas that will excite and challenge every student in the classroom or school? Then All In Adventures "+getLocationSearchName2(locationslug)+" is a great place for you to bring your student group. Let your students experience a challenging yet fun time at our escape rooms — excellent adventures for any age group.",
                         "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-school-events-hero.jpg",
                         "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-school-events-hero.jpg",
                         "coverimageM_alt":"allinadventures-events-school-events",
@@ -1331,7 +1339,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
     //********************************************************school-events end */
     //********************************************************school-events*/
     "gender-reveal-party":{
-                      "pagesubtitle":"All In Adventures is famous for hosting unique gender reveal parties in "+cityName(locationslug)+". Escape the wild parties in exchange for an escape room gender reveal party where you look for a box that reveals your secret color. Bring your dearest friends and family as you celebrate a gift from God!",
+                      "pagesubtitle":"All In Adventures is famous for hosting unique gender reveal parties in "+getLocationSearchName2(locationslug)+". Escape the wild parties in exchange for an escape room gender reveal party where you look for a box that reveals your secret color. Bring your dearest friends and family as you celebrate a gift from God!",
                        "coverimageL":"/assets/all-event-desktop-hero/allinadventures-events-gender-reveal-party-hero.jpg",
                        "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-gender-reveal-party-hero.jpg",
                        "coverimageM_alt":"allinadventures-events-gender-reveal-party",
@@ -1442,7 +1450,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
          "eventlistSlug":getLocTotal(locationslug).eventlistSlug,
             
          "pagedata":{
-             "pagetitle":"ESCAPE ROOM "+eventName+" in "+cityName(locationslug),
+             "pagetitle":"ESCAPE ROOM "+eventName+" in "+getLocationSearchName2(locationslug),
              "event_name":eventName,
              "event_slug":eventslug,
              "locationslug":locationslug,

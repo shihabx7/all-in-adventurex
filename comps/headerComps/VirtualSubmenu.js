@@ -38,10 +38,7 @@ const VirtualSubmenu=()=>{
                                              </a>
                                 
                                     
-                                             <a href="/virtual-games/virtual-game-show-room" className="flex items-center space-x-1 my-1">
-                                                <span className="text-gold"><ImPlay3/></span><span className="sub-link-txt-sub">Virtual Game Show Room</span>
-                                             </a>
-                                    
+                                             
         </>
     )
 }

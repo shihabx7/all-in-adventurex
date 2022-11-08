@@ -34,6 +34,10 @@ const BuyGiftCards=()=>{
                                     <span className="block mt-1 w-6 md:w-8"><img src="/assets/svg/star-bullet.svg"></img></span>
                                     <span className="block w-[90%]">All our locations are wheelchair accessible.</span>
                                 </div>
+                                <div className="flex  lg:text-lg text-gray-300 mt-3">
+                                    <span className="block mt-1 w-6 md:w-8"><img src="/assets/svg/star-bullet.svg"></img></span>
+                                    <span className="block w-[90%]">Experiences vary by location.</span>
+                                </div>
                                 
                                 <div className="gift-btn-box mt-8">
                                     

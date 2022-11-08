@@ -84,7 +84,7 @@ const EventDetails=(props)=>{
                                         props.eventdata.offer
                                     }</p>
                                     <div className="relative"> 
-                                        <p className="mt-2 md:mt-2 lg:mt-3 md:text-[18px] lg:text-[20px] text-gray-700">Also, there are two optional packages for a 2-hours party room rental. Both packages offer a FREE $35 gift card for the guest of honor and provide basic supplies such as plates, napkins, and utensils. 
+                                        <p className="mt-2 md:mt-2 lg:mt-3 md:text-[18px] lg:text-[20px] text-gray-700">Also, there are two optional packages for a 2-hours party room rental. <span className="font-medium">Packages 1</span> offer a FREE $30 gift card and <span className="font-medium">Packages 2</span> offer a FREE $35 gift card for the guest of honor and provide basic supplies such as plates, napkins, and utensils. 
                                         <span onClick={showToast} className="cursor-pointer text-blue-600 hover:text-blue-700 hover:cursor-pointer"> See package details</span></p>
                                     <div className=" w-full bg-[#111111]  rounded absolute bottom-8 right-0 shadow-md" ref={ref}>
                                        {

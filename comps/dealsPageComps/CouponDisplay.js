@@ -42,7 +42,7 @@ const CouponDisplay=()=>{
                         </div>
                        <div className="cup-list">
                             <ul className="star-list list-inside pl-4">
-                                <li className="lg:text-lg text-[#464646] my-3">Monday through Thursday</li>
+                                <li className="lg:text-lg text-[#464646] my-3">Play any day of the week</li>
                                 <li className="lg:text-lg text-[#464646] my-3">Play 1 room, get your 2nd room 50% OFF!</li>
                                 <li className="lg:text-lg text-[#464646] my-3">Offer only available on in-store purchase.</li>
                             </ul>

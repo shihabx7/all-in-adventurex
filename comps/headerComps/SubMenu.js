@@ -64,7 +64,7 @@ const SubMenu=(props)=>{
                             <div className="submenu-item">
                                
                                      <a href="/locations" className="flex items-center">
-                                        <span className="sub-link-txt">All locations</span> 
+                                        <span className="sub-link-txt">Locations</span> 
                                      </a>
                                
 
@@ -96,7 +96,7 @@ const SubMenu=(props)=>{
                                         style={{
                                             borderBottom: openMenu==='1' ? "1px solid #FFEFCD":"1px solid transparent"
                                              }}
-                                        >All in person escape rooms</span>
+                                        >In-Person Escape Rooms</span>
                                          <span className="text-gold">
                                          {openMenu==='1' ? <FaAngleUp/> : <FaAngleDown/>}
                                         </span>
@@ -148,7 +148,7 @@ const SubMenu=(props)=>{
                                         style={{
                                             borderBottom: openMenu==='3' ? "1px solid #FFEFCD":"1px solid transparent"
                                              }}
-                                        >All other in person activities</span>
+                                        >Other In-Person Activities</span>
                                          <span className="text-gold">
                                          {openMenu==='3' ? <FaAngleUp/> : <FaAngleDown/>}
                                         </span>
@@ -203,7 +203,7 @@ const SubMenu=(props)=>{
                                         style={{
                                             borderBottom: openMenu==='3' ? "1px solid #FFEFCD":"1px solid transparent"
                                              }}
-                                        >Events and parties</span>
+                                        >Events and Parties</span>
                                          <span className="text-gold">
                                          {openMenu==='4' ? <FaAngleUp/> : <FaAngleDown/>}
                                         </span>
@@ -252,7 +252,7 @@ const SubMenu=(props)=>{
                                         style={{
                                             borderBottom: openMenu==='2' ? "1px solid #FFEFCD":"1px solid transparent"
                                              }}
-                                        >All virtual escape rooms</span>
+                                        >Virtual Escape Rooms</span>
                                          <span className="text-gold">
                                          {openMenu==='2' ? <FaAngleUp/> : <FaAngleDown/>}
                                         </span>
@@ -272,7 +272,16 @@ const SubMenu=(props)=>{
                             </div>
 
                             {/*=========================================== Collapse menu 2 end========== */}
-                            
+                            <div className="submenu-item">
+                               
+                                  <a href="/virtual-games/virtual-game-show-room" className="flex items-center">
+                                        <span className="sub-link-txt">Virtual Game Show Room</span> 
+                                    </a>
+                        
+
+                              </div>
+                              
+                                    
                             
                             {
                               props.locationslug &&

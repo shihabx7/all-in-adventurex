@@ -8,6 +8,7 @@ import Breadcrumbs from 'nextjs-breadcrumbs';
 import { FiChevronRight } from "react-icons/fi";
 import { useEffect, useState } from 'react';
 import { getLocationsPageData } from '../api/getLocationsPageData';
+import Link from 'next/link';
 
 const Locations=(props)=>{
   
@@ -93,16 +94,18 @@ return (
                 <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os'>ALL IN ADVENTURES LOCATIONS</h1>
                 <p className='text-gray-700 max-w-[800px] mx-auto text-center lg:text-lg'>Browse all our escape room adventure centers across the United States. Grab your team today and head over to any of our locations to experience family and kids friendly immersive fun activities that you and your team will never forget!</p>
                 </div>
-                <div className='map-autocomplete-box pt-8 md:pt-12 lg:pt-16 z-20'>
+                <div className='map-autocomplete-box pt-6 md:pt-6 lg:pt-8 z-20'>
                   
-                {/* Search in a map */}
+                <Link href="#gamelist">
+                  <a  className='max-w-[280px] mx-auto block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg'>BROUSE LOCATIONS</a>
+                </Link>
                 </div>
             </div>
             
          </div>
     {/* ============page baner end=============*/}
     {/* ============Location list=============*/}
-    <div className='all-location-list-section buy-gift relative overflow-hidden px-4 md:px-6'> 
+    <div id="gamelist"  className='all-location-list-section buy-gift relative overflow-hidden px-4 md:px-6'> 
                 <div className="gift-lt absolute top-0 left-0"><img src="/assets/gift-balon-bg.png"></img></div>
               <div className="gift-rt absolute"><img src="/assets/Compas-brown.png"></img></div>
        <div className='max-w-7xl mx-auto md:px-4 py-16 md:py-28'>
@@ -112,7 +115,7 @@ return (
                     <p className="text-gray-300 md:px-8">We can cater to a minimum of 2 players, and our facility can host private parties and corporate events for up to 50 players at a time. Our escape rooms and other games are perfect for all ages and skill levels, so everyone can have fun and be involved. So what are you waiting for? </p>
                 </div>
         </div>
-        <div className='location-grid-box mx-auto'>
+        <div id="gamelist" className='location-grid-box mx-auto'>
           <div className='loc-list-tab mx-auto mb-4 md:mb-6 lg:mb-8 '> 
               <div className='flex'> 
               <div className='all-list'>

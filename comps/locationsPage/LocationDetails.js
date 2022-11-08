@@ -54,7 +54,7 @@ const LocationDetails=(props)=>{
             <div className="max-w-[900px] mx-auto pb-28 relative z-30 px-4">
                 <div className="section-title max-w-[660px] mx-auto"> 
                      <TitleSeparator title={'ALL IN ADVENTURES '+props.locdetail.city+' LOCATION DETAILS'} color='golden-text' weight='font-bold'/>
-                        <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-16">
+                        <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-16">
                            <p className="text-gray-[600] md:px-8">We are conveniently located at {props.locdetail.mall} in {props.locdetail.city} {locState(props.locdetail.slug)}. 
                            Our customers come from many surrounding cities, including {props.locdetail.city_include} and across the United States.</p>
                       </div>

@@ -29,7 +29,7 @@ const InpersonCarousel=(props)=>{
     
           const showDescription=(description)=>{
             if(description.length>144){
-              const cutDescription=description.slice(0, 144)+" ...";
+              const cutDescription=description.slice(0, 2000)+" ...";
               return cutDescription
             }
          
@@ -101,7 +101,7 @@ const InpersonCarousel=(props)=>{
     {
         props.inpersongames.map((inpersongame)=>{
                 return(
-                    <div key={inpersongame.id} className="text-white bg-gray-300 game-slider-card card-border" style={{
+                    <div key={inpersongame.id} className="text-white bg-gray-300 game-slider-card card-border group" style={{
                         background:"url('"+inpersongame.bgimg+"')"
                       }}>
                         <div className="card-container">
@@ -122,10 +122,10 @@ const InpersonCarousel=(props)=>{
                             <div className="card-gap py-10"> 
                  
                             </div>
-                            <div className="card-bottom p-4 pt-12"> 
-                                <div className="card-game-desc text-center">
+                            <div className="card-bottom p-4  pt-12"> 
+                                <div className="card-game-descs h-[250px] text-center">
                                     <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">{inpersongame.title}</h3>
-                                    <p className="text-gray-200 lg:text-lg">{ showDescription(inpersongame.description)
+                                    <p className="text-gray-200 lg:text-lg">{ inpersongame.description
                                                                                   }</p>
                                 </div>
                                 <div className="card-game-link mt-4 text-center">

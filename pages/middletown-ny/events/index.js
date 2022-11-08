@@ -74,7 +74,7 @@ export const getStaticProps=async(context)=>{
     //var router = useRouter()
    // routerSlug=routerSlug.split('-')
   
-    const locationHomedata=getLocationsEventList("albany-ny")
+    const locationHomedata=getLocationsEventList("middletown-ny")
    
   
 

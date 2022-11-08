@@ -17,15 +17,15 @@ import { getTotal } from "./AllDataList/getTotal";
                       "totalUniqueGames": getTotal().uniqueGames,
                       "totalFiveStarReview": getTotal().totalReview,
                       "totalPlayerEscaped": getTotal().toalPlayerEscape,
-                      "subtitle":"At All In Adventures (formerly Mystery Room), experience family and kids friendly escape rooms, game show rooms, beat the seat and axe throwing games perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, private events and more."
+                      "subtitle":"All In Adventures (formerly Mystery Room), has family and kid friendly Escape Rooms, Game Show Rooms, Beat the Seat and Axe Throwing games that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events."
         },
         "inpersongames":[
                               {
                                 "id":1,
                                 "category":"escapegame",
-                                "type": "In person",
+                                "type": "In-Person",
                                  "title": "Escape From Alcatraz",
-                                 "description": "You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them, or they escape.",
+                                 "description": "You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                                  "age":"All age",
                                  "duration":"50",
                                  "maxplayers":"10",
@@ -37,7 +37,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":2,
                                 "category":"escapegame",
-                                 "type": "In person",
+                                 "type": "In-Person",
                                  "title": "Treasure Island",
                                  "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
                                  "age":"All age",
@@ -51,7 +51,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":3,
                                 "category":"escapegame",
-                                "type": "In person",
+                                "type": "In-Person",
                                 "title": "Zombie Apocalypse",
                                 "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
                                 "age":"All age",
@@ -65,7 +65,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":4,
                                 "category":"escapegame",
-                                "type": "In person",
+                                "type": "In-Person",
                                 "title": "Sherlock's Library",
                                 "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
                                 "age":"All age",
@@ -80,7 +80,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":5,
                                 "category":"escapegame",
-                                "type": "In person",
+                                "type": "In-Person",
                                 "title": "Black Ops",
                                 "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
                                 "age":"All age",
@@ -94,9 +94,9 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":6,
                                 "category":"escapegame",
-                                "type": "In person",
+                                "type": "In-Person",
                                 "title": "Superhero's Adventure",
-                                "description": "The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. You must use your superhero powers!",
+                                "description": "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                                 "age":"All age",
                                 "duration":"50",
                                 "maxplayers":"10",
@@ -108,9 +108,9 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":7,
                                 "category":"escapegame",
-                                "type": "In person",
+                                "type": "In-Person",
                                 "title": "Houdini's Magic Cell",
-                                "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
+                                "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                                 "age":"All age",
                                 "duration":"50",
                                 "maxplayers":"10",
@@ -123,9 +123,9 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":8,
                                 "category":"escapegame",
-                                "type": "In person",
+                                "type": "In-Person",
                                 "title": "Special Agent",
-                                "description": "After capturing one of the world's most infamous money launderers, one of his associates is planning notoriously. Stop him in his tracks!",
+                                "description": "After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
                                 "age":"All age",
                                 "duration":"50",
                                 "maxplayers":"10",
@@ -137,9 +137,9 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":9,
                                 "category":"escapegame",
-                                "type": "In person",
+                                "type": "In-Person",
                                 "title": "Hollywood Premiere",
-                                "description": "Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
+                                "description": "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                                 "age":"All age",
                                 "duration":"50",
                                 "maxplayers":"10",
@@ -151,9 +151,9 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":10,
                                 "category":"escapegame",
-                                "type": "In person",
+                                "type": "In-Person",
                                 "title": "Lost in The Jungle",
-                                "description": "After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises!",
+                                "description": "Having heard the mysterious sound of drums coming from the roof, you and your friends decided to check it out. Drawn by the beat, you find yourself trapped in the game! ",
                                 "age":"All age",
                                 "duration":"60",
                                 "maxplayers":"5",
@@ -165,9 +165,9 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":11,
                                 "category":"escapegame",
-                                "type": "In person",
+                                "type": "In-Person",
                                 "title": "Wizarding School ",
-                                "description": "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office!",
+                                "description": "Your Potions lesson will begin in 60 minutes and you have gotten locked in the headmaster's office! You must put on your thinking cap and find a way to get out in time…",
                                 "age":"All age",
                                 "duration":"60",
                                 "maxplayers":"4",
@@ -179,9 +179,9 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":12,
                                 "category":"escapegame",
-                                "type": "In person",
+                                "type": "In-Person",
                                 "title": "locked in The Lift",
-                                "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. Act fast and save yourself and others!",
+                                "description": "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. See if you can piece together how to get things running again.",
                                 "age":"All age",
                                 "duration":"30",
                                 "maxplayers":"4",
@@ -195,9 +195,9 @@ import { getTotal } from "./AllDataList/getTotal";
                                   
                                 "id":13,
                                 "category":"escapegame",
-                                "type": "In person",
+                                "type": "In-Person",
                                 "title": "Magic Castle",
-                                "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards. But it's not easy",
+                                "description": "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards. Test your wits, courage, loyalty, and cunning.",
                                 "age":"All age",
                                 "duration":"60",
                                 "maxplayers":"8",
@@ -213,7 +213,7 @@ import { getTotal } from "./AllDataList/getTotal";
 
                                   "id":1,
                                   "category":"other",
-                                  "type": "In person",
+                                  "type": "In-Person",
                                   "title": "Beat The Seat",
                                   "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
                                   "age":"All age (6+)",
@@ -228,7 +228,7 @@ import { getTotal } from "./AllDataList/getTotal";
 
                                     "id":2,
                                     "category":"other",
-                                    "type": "In person",
+                                    "type": "In-Person",
                                     "title": "Game Show Room",
                                     "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
                                     "age":"All age (6+)",
@@ -243,7 +243,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                   
                                     "id":3,
                                     "category":"other",
-                                    "type": "In person",
+                                    "type": "In-Person",
                                     "title": "Axe Throwing",
                                     "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
                                     "age":"All age",
@@ -261,7 +261,7 @@ import { getTotal } from "./AllDataList/getTotal";
                               {
                                 "id":1,
                                 "category":"event",
-                                 "type": "In person",
+                                 "type": "In-Person",
                                  "title": "BIRTHDAY PARTIES",
                                  "description": "A perfect party venue for the young at heart. No matter your age, get an unforgettable adventure!",
                                  "slug"  :"birthday-party",
@@ -270,7 +270,7 @@ import { getTotal } from "./AllDataList/getTotal";
                               {
                                 "id":2,
                                 "category":"event",
-                                 "type": "In person",
+                                 "type": "In-Person",
                                  "title": "TEAM BUILDING",
                                  "description": "This fun and exciting interactive form of team building will bring your corporate team closer!",
                                  "slug"  :"team-building",
@@ -279,7 +279,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":3,
                                 "category":"event",
-                                 "type": "In person",
+                                 "type": "In-Person",
                                  "title": "CORPORATE EVENTS",
                                  "description": "Instead of a dreary meeting on how to work effectively, why not take a crack at a puzzle?",
                                  "slug"  :"corporate-events",
@@ -289,7 +289,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":4,
                                 "category":"event",
-                                 "type": "In person",
+                                 "type": "In-Person",
                                  "title": "FAMILY FUN ACTIVITIES",
                                  "description": "A unique family fun activity with intense real-life puzzles where you have to work together to progress!",
                                  "slug"  :"family-fun-activity",
@@ -298,7 +298,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":5,
                                 "category":"event",
-                                 "type": "In person",
+                                 "type": "In-Person",
                                  "title": "Bachelor Party",
                                  "description": "There's no better way to bond with your bachelor party before the big day — no scandals, just nonstop thrills!",
                                  "slug"  :"bachelor-party",
@@ -307,7 +307,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":6,
                                 "category":"event",
-                                 "type": "In person",
+                                 "type": "In-Person",
                                  "title": "Bachelorette Party",
                                  "description": "Fun-filled bachelorette party without any drama that will be something long remembered by everyone!",
                                  "slug"  :"bachelorette-party",
@@ -316,7 +316,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":7,
                                 "category":"event",
-                                 "type": "In person",
+                                 "type": "In-Person",
                                  "title": "PROPOSAL PARTY",
                                  "description": "A distinctive way to propose marriage where the mystery game ends with the ring in the final clue box!",
                                  "slug"  :"proposal-party",
@@ -325,7 +325,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":8,
                                 "category":"event",
-                                 "type": "In person",
+                                 "type": "In-Person",
                                  "title": "DATE NIGHT / NIGHT OUT",
                                  "description": "Work together and find clues to solve the mystery that will ultimately strengthen your relationship!",
                                  "slug"  :"date-night",
@@ -334,7 +334,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":9,
                                 "category":"event",
-                                 "type": "In person",
+                                 "type": "In-Person",
                                  "title": "Private Party",
                                  "description": "Adventure awaits for all — your family, friends, office, indoor party, church group, fraternity or sorority.",
                                  "slug"  :"private-party",
@@ -343,7 +343,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":10,
                                 "category":"event",
-                                 "type": "In person",
+                                 "type": "In-Person",
                                  "title": "Reunion Party",
                                  "description": "Each game is interactive and has engaging qualities that give your reunion party an epic adventure!",
                                  "slug"  :"reunion-party",
@@ -352,7 +352,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":11,
                                 "category":"event",
-                                 "type": "In person",
+                                 "type": "In-Person",
                                  "title": "Graduation Party",
                                  "description": "Graduation is such an exciting time, no matter your age and you deserve to celebrate it in a memorable way",
                                  "slug"  :"graduation-party",
@@ -362,7 +362,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":12,
                                 "category":"event",
-                                 "type": "In person",
+                                 "type": "In-Person",
                                  "title": "SCHOOL EVENTS / FIELD TRIPS",
                                  "description": "Students exercise critical thinking and act to become the super-spies they see in the movies!",
                                  "slug"  :"school-events",
@@ -371,7 +371,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                {
                                 "id":13,
                                 "category":"event",
-                                 "type": "In person",
+                                 "type": "In-Person",
                                  "title": "GENDER REVEAL PARTY",
                                  "description": "Instead of simply sharing the news of your baby's gender, why not a fun way to announce it through puzzles?",
                                  "slug"  :"gender-reveal-party",

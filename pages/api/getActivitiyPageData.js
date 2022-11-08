@@ -20,7 +20,7 @@ export const getActivityData=(activitySlug)=>{
         "pagemeta":activityDataset[activitySlug].pagemeta,
            
         "pagedata":{
-            "pagetitle":activityDataset[activitySlug].activityname+" "+actSalt(activityDataset[activitySlug].category),
+            "pagetitle":activityDataset[activitySlug].activityname+" "+actSalt(activityDataset[activitySlug].activitydata.category),
             "pagesubtitle":activityDataset[activitySlug].pagesubtitle,
             "totalLocation":getTotal().totalLocations,
             "coverimageL":activityDataset[activitySlug].coverimageL,

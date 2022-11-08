@@ -27,15 +27,17 @@ const PricingEvents=()=>{
                                     </td>
                                     <td className="border border-[#D2C6AA] w-[32%] md:w-[32%] p-2 md:p-4">
                                         <h4 className="font-medium sm:text-lg md:text-[24px] text-[#000000]">
-                                        Party room rental
+                                        Party Room Rental
+
                                         </h4>
+                                        <p className="text-[#222222]  text-xs sm:text-sm md:text-lg"> (Package 1)</p>
                                         
                                     </td>
                                     <td className="border border-[#D2C6AA] w-[32%] md:w-[32%] p-2 md:p-4">
                                         <h4 className="font-medium sm:text-lg md:text-[24px] text-[#000000]">
-                                        Food per person
+                                        Food Per Person
                                         </h4>
-                                        
+                                        <p className="text-[#222222]  text-xs sm:text-sm md:text-lg"> (Package 1)</p>
                                     </td>
                                         
 
@@ -72,7 +74,7 @@ const PricingEvents=()=>{
                                                     <li className="my-3 text-xs sm:text-sm lg:text-lg font-light">Party room rental for 2 hours</li>
                                                     <li className="my-3 text-xs sm:text-sm lg:text-lg font-light">Basic supplies (plates, napkins, utensils, etc.)</li>
                                                     <li className="my-3 text-xs sm:text-sm lg:text-lg font-light">FREE All In Adventures birthday invitations (digital - can be printed)</li>
-                                                    <li className="my-3 text-xs sm:text-sm lg:text-lg font-light">$30 gift card for birthday child</li>
+                                                    <li className="my-3 text-xs sm:text-sm lg:text-lg font-light">$35 gift card for birthday child</li>
                                                </ul>
                                                
                                            </td>

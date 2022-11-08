@@ -74,7 +74,7 @@ export const getStaticPaths=async()=>{
   export const getStaticProps=async(context)=>{
   
   
-    const eventsingleData=getSingleEventPageData(context.params.eventSlug,"albany-ny")
+    const eventsingleData=getSingleEventPageData(context.params.eventSlug,"middletown-ny")
    
   
 

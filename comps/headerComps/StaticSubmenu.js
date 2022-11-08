@@ -13,7 +13,7 @@ const StaticSubmenu=()=>{
                             <div className="submenu-item">
                               
                                      <a  href="/gallery" className="flex items-center">
-                                        <span className="sub-link-txt">Customer gallery</span> 
+                                        <span className="sub-link-txt">Customer Gallery</span> 
                                      </a>
                                 
 
@@ -29,7 +29,7 @@ const StaticSubmenu=()=>{
                             <div className="submenu-item">
                                 
                                      <a href="/deals-coupons" className="flex items-center">
-                                        <span className="sub-link-txt">Deals and coupons</span> 
+                                        <span className="sub-link-txt">Deals and Coupons</span> 
                                      </a>
                                 
 
@@ -37,7 +37,7 @@ const StaticSubmenu=()=>{
                             <div className="submenu-item">
                                 
                                      <a href="/rewards-program" className="flex items-center">
-                                        <span className="sub-link-txt">Rewards program</span> 
+                                        <span className="sub-link-txt">Rewards Program</span> 
                                      </a>
                                 
 
@@ -53,7 +53,7 @@ const StaticSubmenu=()=>{
                             <div className="submenu-item">
                                 
                                      <a href="/about" className="flex items-center">
-                                        <span className="sub-link-txt">About us</span> 
+                                        <span className="sub-link-txt">About Us</span> 
                                      </a>
                                 
 
@@ -77,7 +77,7 @@ const StaticSubmenu=()=>{
                             <div className="submenu-item">
                                
                                      <a href="/franchise" className="flex items-center">
-                                        <span className="sub-link-txt">Become a franchise owner</span> 
+                                        <span className="sub-link-txt">Become a Franchise Owner</span> 
                                      </a>
                                 
 
