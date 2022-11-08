@@ -3,6 +3,15 @@ import { getTotal } from "../AllDataList/getTotal"
 export const getVirtualGamePageDetailData=(gameslug)=>{
     const activitiesName=gameslug.toString().split('-').splice(3, 4).join(' ')
 
+    const salt=(cat)=>{
+      var ret="Virtual escape game"
+        if(cat=="showroom")
+        {
+            ret=""
+        }
+        return ret
+    }
+
     const VirtualGamePageDetailData={
       "locationlist":getTotal().locationlist,
       "activitylistSlug":getTotal().activitylistSlug,
@@ -16,7 +25,7 @@ export const getVirtualGamePageDetailData=(gameslug)=>{
           },
            
         "pagedata":{
-            "pagetitle":vGameData[gameslug].activityname+" Virtual escape room",
+            "pagetitle":vGameData[gameslug].activityname+" "+ salt(vGameData[gameslug].category),
             "pagesubtitle":vGameData[gameslug].pagesubtitle,
             "totalLocation":"26",
             "coverimageL":vGameData[gameslug].coverimageL,
@@ -30,6 +39,7 @@ export const getVirtualGamePageDetailData=(gameslug)=>{
             "activityname":vGameData[gameslug].activityname,
             "notice":vGameData[gameslug].notice? vGameData[gameslug].notice:false,
             "shortname":vGameData[gameslug].shortname? vGameData[gameslug].shortname:false,
+            "category":vGameData[gameslug].category? vGameData[gameslug].category:false,
             
         },
         "vgamedata":vGameData[gameslug].vgamedata,
@@ -470,6 +480,7 @@ const vGameData={
     "duration":"60",
     "max_players":"12",
     "min_players":"4",
+    "category":"showroom",
     "pagemeta":{
 
         "title":"meta title",
@@ -478,7 +489,7 @@ const vGameData={
       },
 
     "vgamedata":{
-        "category":"showroom",
+        
         "story":"Virtual Game Show Room is created specifically to bring small and mid-sized groups of people together during a live, online game show experience. You have the option to choose from a family, kid or adult experience. Once logged in, players will become instant game show contestants led by a professional virtual host who will guide online players through a series of interactive games.",
         "storyimg":"/assets/vgame-img/game-story.png",
         "scene":"For one (1) jam-packed hour, players get to experience a live game show - similar to popular shows seen on TV! Our games range from on-the-spot trivia to a hilarious home scavenger hunt that will keep everyone on their toes. Players are sure to have a blast seeing their friends, family, or co-workers try to outwit each other while playing 3-4 of our unique games!",
