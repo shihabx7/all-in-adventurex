@@ -31,8 +31,15 @@ const GameHomeHero=(props)=>{
 
 
                 </div>
+                {
+                    props.pagedata.notice && 
+                    <div className="home-botice-des mt-4 md:mt-8 text-[#dddddd] max-w-[700px] mx-auto text-center md:text-lg" dangerouslySetInnerHTML={{ __html: props.pagedata.notice }}>
+                                             
+                                            
+                                        </div>
+                }
                 {       props.gametotal!='not' &&
-                        <div className="mb-8"> </div>
+                        <div className="mb-6"> </div>
                 }
                 
                 { props.gametotal!='not' &&
@@ -55,8 +62,8 @@ const GameHomeHero=(props)=>{
                             props.pagedata.max_players &&
                             <div className="text-center">  
                          
-                                 <p className="golden-text text-xl md:text-4xl font-os font-bold">{props.pagedata.min_players}-{props.pagedata.max_players}</p>
-                                 <p className="text-gray-700 text-xs md:text-base lg:text-lg ">Players</p>
+                                 <p className="golden-text text-xl md:text-4xl font-os font-bold">{props.pagedata.min_players}{props.pagedata.max_players>1? "-"+props.pagedata.max_players:""}</p>
+                                 <p className="text-gray-700 text-xs md:text-base lg:text-lg ">{props.pagedata.min_players<2? "Player":"Players" }</p>
                               </div>
                         }
    

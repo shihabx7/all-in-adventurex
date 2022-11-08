@@ -75,8 +75,15 @@ const GameLocHero=(props)=>{
                         {/*============location book btn==========*/}
 
                 </div>
+                {
+                    props.pagedata.notice && 
+                    <div className="home-botice-des mt-4 md:mt-8 text-[#dddddd] max-w-[700px] mx-auto text-center md:text-lg" dangerouslySetInnerHTML={{ __html: props.pagedata.notice }}>
+                                             
+                                            
+                                        </div>
+                }
                 {       props.gametotal!='not' &&
-                        <div className="mb-8"> </div>
+                        <div className="mb-6"> </div>
                 }
                 
                 { props.gametotal!='not' &&

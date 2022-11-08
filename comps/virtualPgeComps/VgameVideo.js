@@ -7,9 +7,9 @@ const VgameVideo=(props)=>{
         <div className="game-video relative" style={{backgroundImage : "url('/assets/game-dt-bg.jpg')", }}> 
             <div className="max-w-7xl mx-auto pb-16 md:pb-20 lg:pb-28 px-4 relative z-30"> 
                 <div className="s-title"> 
-                    <TitleSeparator title="GAME TREASURE VIDEO" color="golden-text" weight="font-bold"/>
-                    <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
-                                 <p className="text-gray-700 md:px-8">Watch a sneak peek of the thrills and drama from the {props.activityname && <span>{props.activityname}</span>} virtual escape room.</p>
+                    <TitleSeparator title="GAME TRAILER" color="golden-text" weight="font-bold"/>
+                    <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
+                                 <p className="text-gray-700 md:px-8">Watch a sneak peek of the thrills and drama from {props.shortname? props.shortname:props.activityname+" virtual escape room"}.</p>
                     </div>
                 </div>
                 <div className="game-video-box pb-[57%] md:pb-[416px] lg:pb-[472px] w-[100%] md:w-[740px] lg:w-[840px] mx-auto shadow-lg relative"> 

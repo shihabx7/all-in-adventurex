@@ -2,9 +2,11 @@ import GameTitleSeparator from "../util/GameTitleSeparator"
 import GameDtBtn from "../util/GameDtBtn"
 import { ImGift } from "react-icons/im"
 
+
 const GameDetails=(props)=>{
 
     return(
+   
         <div className="game-details relative " style={{backgroundImage : "url('/assets/game-dt-bg.jpg')", }} > 
             <div className=" w-full absolute top-0 left-0">
                     <img className="w-full" src="/assets/game-home-or1.jpg"></img>
@@ -15,7 +17,7 @@ const GameDetails=(props)=>{
                         <div className="gme-dt-col order-2 md:order-1 md:w-[49%] lg:w-[45%]"> 
                             <div className="game-dt-title">
                                 <p className="md:text-lg text-[#938056] md:mb-1 uppercase">{props.activityname}</p>
-                                <GameTitleSeparator title="THE STORYLINE" color="golden-text" weight="font-bold"></GameTitleSeparator>
+                                <GameTitleSeparator title={props.activitydata.category=="other"? "HOW DOES IT WORK":"THE STORYLINE"} color="golden-text" weight="font-bold"></GameTitleSeparator>
 
                             </div>
                             <div className="game-dt-desc mt-4 md:mt-4 lg:mt-6">
@@ -38,7 +40,7 @@ const GameDetails=(props)=>{
                         <div className="gme-dt-col md:w-[48%] lg:w-[45%]"> 
                             <div className="game-dt-title">
                             <p className="md:text-lg text-[#938056] md:mb-1 uppercase">{props.activityname}</p>
-                                <GameTitleSeparator title="THE PLOT" color="golden-text" weight="font-bold"></GameTitleSeparator>
+                                <GameTitleSeparator title={props.activitydata.category=="other"? "WHAT TO EXPECT":"THE PLOT"}  color="golden-text" weight="font-bold"></GameTitleSeparator>
 
                             </div>
                             <div className="game-dt-desc mt-4 md:mt-4 lg:mt-6">
@@ -56,7 +58,7 @@ const GameDetails=(props)=>{
                         <div className="gme-dt-col order-2 md:order-1 md:w-[48%] lg:w-[45%]"> 
                             <div className="game-dt-title">
                             <p className="md:text-lg text-[#938056] md:mb-1 uppercase">{props.activityname}</p>
-                                <GameTitleSeparator title="YOUR MISSION" color="golden-text" weight="font-bold"></GameTitleSeparator>
+                                <GameTitleSeparator title={props.activitydata.category=="other"? "WHO CAN PLAY":"YOUR MISSION"}  color="golden-text" weight="font-bold"></GameTitleSeparator>
 
                             </div>
                             <div className="game-dt-desc mt-4 md:mt-4 lg:mt-6">
@@ -76,6 +78,8 @@ const GameDetails=(props)=>{
 
 
         </div>
+        
+       
     )
 }
 

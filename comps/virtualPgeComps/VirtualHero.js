@@ -21,7 +21,7 @@ const VirtualHero=(props)=>{
                         props.pagedata.pagetitle 
                  
                  } </h1>
-                 <p className='text-gray-100 max-w-2xl mx-auto text-center lg:text-lg'>{props.pagedata.pagesubtitle } </p>
+                 <p className='text-gray-100 max-w-[800px] mx-auto text-center lg:text-lg'>{props.pagedata.pagesubtitle } </p>
                  </div>
                 <div className="max-w-md mx-auto mt-8 ">
 
@@ -31,9 +31,13 @@ const VirtualHero=(props)=>{
 
 
                 </div>
-                {       props.gametotal ||
-                        <div className="mb-8"> </div>
+                {   props.pagedata.notice &&
+                    <div className="home-botice-des mt-4 md:mt-8 text-[#dddddd] max-w-[700px] mx-auto text-center md:text-lg" dangerouslySetInnerHTML={{ __html: props.pagedata.notice }}>
+                                             
+                                            
+                    </div>
                 }
+              
                 
                 { props.gametotal ||
 

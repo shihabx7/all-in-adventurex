@@ -36,7 +36,7 @@ const LocationSingleEvent=(props)=>{
                                 <div className='text-red'>{props.slug}</div>
                         {/* =======header content and breadcum======== end */}
                         {/* ===========Page Content here========= */}
-                        {console.log(props.pagedata)}
+                       
                         <GameLocHero pagedata={props.pagedata} eventslug={props.pagedata.slug}/>
                         <EventDetails eventdata={props.eventdata} eventname={props.pagedata.eventname}/>
                         <EventContact contactdata={props.contactdata} eventname={props.pagedata.event_name} eventslug={props.pagedata.event_slug} locationlist={props.locationlist} eventlist={props.eventlist}/>

@@ -12,6 +12,8 @@ import BreadcumNew from '../../../comps/util/BreadcumNew';
 import GameLocDetails from '../../../comps/activitiyPageComps/GameLocDetails';
 import GameGallery from '../../../comps/activitiyPageComps/GameGallery';
 import GameVideo from '../../../comps/activitiyPageComps/GameVideo';
+import FaqList from '../../../comps/faqComps/FaqList';
+import TitleSeparator from '../../../comps/util/TitleSeparator';
 
 const LocSingleActivity=(props)=>{
    
@@ -43,16 +45,42 @@ const LocSingleActivity=(props)=>{
                                  <div className='text-red'>{props.slug}</div>
                          {/* =======header content and breadcum======== end */}
                          {/* ===========Page Content here========= */}
-                         {console.log(props.pagedata)}
-                         <GameLocHero pagedata={props.pagedata}/>
+                        
+                         <GameLocHero pagedata={props.pagedata} category={props.activitydata.category}/>
                          <GameLocDetails bookingdata={props.pagedata.bookingdata} activityname={props.pagedata.activityname} activitydata={props.activitydata} />
-                        <GameGallery galleryitem={props.activitygallery}/>
+                        <GameGallery galleryitem={props.activitygallery} activityname={props.pagedata.activityname} category={props.activitydata.category}/>
                         <GameVideo videoid={props.activitydata.videoid} location={props.pagedata.locationslug}/>
+                        {
+                            props.activitydata.faqlist &&
+                               <div id="game-faq" className="all-faq relative bg-black py-16 md:py-24 lg:py-32 px-4 overflow-hidden md:mt-[0px]" style={{
+
+                                        background:'url("/assets/svg/gift-bg.svg"), linear-gradient(65deg, rgb(0, 0, 0), rgb(0, 0, 0))',
+                                        backgroundPosition:"bottom center,center center",
+                                        backgroundRepeat:"no-repeat"
+                                    }}>
+                                    <div className="gift-lt max-w-[72px] md:max-w-[120px] lg:max-w-[130px] opacity-[0.4] absolute top-0 left-0"><img className="w-full" src="/assets/faq-q.png"></img></div>
+                                     <div className="gift-rt absolute"><img src="/assets/Compas-brown.png"></img></div>
+                                         <div className="max-w-7xl mx-auto relative z-30">
+                                             <div className="section-title mb-8 md:mb-12">
+                                                  <TitleSeparator title="HAVE QUESTIONS ABOUT HOW THE GAME SHOW WORKS? " color="golden-text" weight="font-bold"/>
+                                                  <p className="mt-4 text-gray-100 max-w-[800px] mx-auto text-center lg:text-lg">Browse through these FAQs to find answers to commonly raised questions. If you don't see what's on your mind, reach out to us anytime on phone or email.</p>
+
+                                              </div>
+                                            <div className="gift-faq-box max-w-[1000px] mx-auto"> 
+
+                                                <FaqList faqlist={props.activitydata.faqlist}/>
+
+                                            </div>
+
+
+                                        </div>
+                               </div>
+                           }
                        
  
                  </div>
  
-             <Footer  location="kingston, ma" locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
+             <Footer  location="holyoke, ma" locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
          </>
  
      )
@@ -64,7 +92,7 @@ const LocSingleActivity=(props)=>{
 export default LocSingleActivity
 
 export const getStaticPaths=async()=>{
-    const res= await getLocationActivitySlugList("kingston-ma");
+    const res= await getLocationActivitySlugList("holyoke-ma");
   
     const paths=res.map(activityurlslug=>{
             return {
@@ -84,9 +112,9 @@ export const getStaticPaths=async()=>{
     //var router = useRouter()
    // routerSlug=routerSlug.split('-')
   
-    const locationHomedata=getLocationSingleActivitypageData(context.params.activitySlug,"kingston-ma")
+    const locationHomedata=getLocationSingleActivitypageData(context.params.activitySlug,"holyoke-ma")
    
-
+    
 
     return{
         props:{

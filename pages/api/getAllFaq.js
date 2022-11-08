@@ -699,19 +699,7 @@ export const getAllFaq=()=>{
                                   
               
                           },
-                          {
-                            "id":53,
-                            "category":"event",
-                            "group":"CORPORATE_EVENTS",
-                            "ques":"How much does it cost?",
-                            "ans":[
-                              "Contact the sales office at ",
-                              "<a href=\"mailto:sales@allinadventures.com\" class=\"text-blue-600 hover:text-blue-700 \">sales@allinadventures.com</a> or ",
-                              "call <a href=\"tel:844-502-5546\" class=\"text-blue-600 hover:text-blue-700 \">844-502-5546 ex. 709.</a>",
-                            ]
-                                  
-              
-                          },
+                          
                           // ===========gift cards
                           {
                             "id":54,

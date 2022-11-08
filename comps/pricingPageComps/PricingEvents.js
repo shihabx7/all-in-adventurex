@@ -67,7 +67,7 @@ const PricingEvents=()=>{
                                                
                                            </td>
                                            <td className="border border-[#D2C6AA] w-[32%] md:w-[32%] p-2 md:p-4 align-top">
-                                                 <h4 className="mt-2 font-light text-xs sm:text-sm md:text-[20px] text-[#000000]"> <span className="font-medium">$75.00</span> + Tax / guests varies</h4>
+                                                 <h4 className="mt-2 font-light text-xs sm:text-sm md:text-[20px] text-[#000000]"> <span className="font-medium">$18.99</span> / guests varies</h4>
                                                <ul className="star-list mt-4 pl-5">
                                                     <li className="my-3 text-xs sm:text-sm lg:text-lg font-light">Party room rental for 2 hours</li>
                                                     <li className="my-3 text-xs sm:text-sm lg:text-lg font-light">Basic supplies (plates, napkins, utensils, etc.)</li>

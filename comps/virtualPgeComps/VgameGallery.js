@@ -38,9 +38,9 @@ const VgameGallery=(props)=>{
         <div className="game-gallery " style={{backgroundImage : "url('/assets/game-dt-bg.jpg')", }}> 
             <div className="max-w-7xl mx-auto py-16 md:py-20 lg:py-28 px-4"> 
                 <div className="s-title"> 
-                    <TitleSeparator title="VIRTUAL ESCAPE GALLERY" color="golden-text" weight="font-bold"/>
-                    <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
-                                 <p className="text-gray-700 md:px-8">Meet some of our happy adventurers and a few of the scenes from the {props.activityname && <span>{props.activityname}</span>} virtual escape game. Experience this escape room at All In Adventures.</p>
+                    <TitleSeparator title="PHOTO GALLERY" color="golden-text" weight="font-bold"/>
+                    <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
+                                 <p className="text-gray-700 md:px-8">Meet some of our happy adventurers and a few of the scenes from the {props.shortname? props.shortname:props.activityname}. Experience this game virtually from anywhere in the world.</p>
                     </div>
                 </div>
                 <div className="hidden md:block game-gallery"> 

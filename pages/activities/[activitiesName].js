@@ -10,6 +10,8 @@ import GameGallery from "../../comps/activitiyPageComps/GameGallery";
 import GameVideo from "../../comps/activitiyPageComps/GameVideo";
 import { getALlActivityList } from "../api/getAllActivityList";
 import { getActivityData } from "../api/getActivitiyPageData";
+import FaqList from "../../comps/faqComps/FaqList";
+import TitleSeparator from "../../comps/util/TitleSeparator";
 
       
 const sinleActivities=(props)=>{
@@ -53,11 +55,37 @@ const sinleActivities=(props)=>{
       </div>
        {/* =======breadcum content and breadcum======== end */}
 
-        <GameHomeHero pagedata={props.pagedata} />
+        <GameHomeHero pagedata={props.pagedata} category={props.activitydata.category} />
 
-         <GameDetails activityname={props.pagedata.activityname} activitydata={props.activitydata}/>
-        <GameGallery galleryitem={props.activitygallery} activityname={props.pagedata.activityname}/>
-        <GameVideo videoid={props.activitydata.videoid} activityname={props.pagedata.activityname}/>
+         <GameDetails activityname={props.pagedata.activityname} activitydata={props.activitydata} />
+        <GameGallery galleryitem={props.activitygallery} activityname={props.pagedata.activityname} category={props.activitydata.category}/>
+        <GameVideo videoid={props.activitydata.videoid} activityname={props.pagedata.activityname} />
+        {
+            props.activitydata.faqlist &&
+            <div id="game-faq" className="all-faq relative bg-black py-16 md:py-24 lg:py-32 px-4 overflow-hidden md:mt-[0px]" style={{
+
+                background:'url("/assets/svg/gift-bg.svg"), linear-gradient(65deg, rgb(0, 0, 0), rgb(0, 0, 0))',
+                backgroundPosition:"bottom center,center center",
+                backgroundRepeat:"no-repeat"
+            }}>
+                <div className="gift-lt max-w-[72px] md:max-w-[120px] lg:max-w-[130px] opacity-[0.4] absolute top-0 left-0"><img className="w-full" src="/assets/faq-q.png"></img></div>
+                 <div className="gift-rt absolute"><img src="/assets/Compas-brown.png"></img></div>
+                     <div className="max-w-7xl mx-auto relative z-30">
+                         <div className="section-title mb-8 md:mb-12">
+                              <TitleSeparator title="HAVE QUESTIONS ABOUT HOW THE GAME SHOW WORKS? " color="golden-text" weight="font-bold"/>
+                              <p className="mt-4 text-gray-100 max-w-[800px] mx-auto text-center lg:text-lg">No worries. Your professional game host will explain the rules before each game, emcee all game questions, and enthusiastically guide playing contestants through a series of fun challenges until a winner is revealed at the end of the show. Here are the FAQs.</p>
+    
+                          </div>
+                        <div className="gift-faq-box max-w-[1000px] mx-auto"> 
+    
+                            <FaqList faqlist={props.activitydata.faqlist}/>
+    
+                        </div>
+                    
+                         
+                    </div>
+            </div>
+        }
 
       </div>
 
