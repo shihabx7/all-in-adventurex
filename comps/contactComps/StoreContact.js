@@ -127,7 +127,7 @@ const StoreContact=(props)=>{
 
                         </div>
                         <div className="mt-8"> 
-                        <p className="text-[#464646] mb-4">{props.contactdata.entry_guid} We are located on the right side, between {props.contactdata.city_include}</p>
+                        <p className="text-[#464646] mb-4">{props.contactdata.entry_guid} {props.contactdata.city_include}</p>
                         <p className="text-[#464646]">We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.</p>
                         </div>
                                   

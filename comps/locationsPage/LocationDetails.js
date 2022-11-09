@@ -55,8 +55,7 @@ const LocationDetails=(props)=>{
                 <div className="section-title max-w-[660px] mx-auto"> 
                      <TitleSeparator title={'ALL IN ADVENTURES '+props.locdetail.city+' LOCATION DETAILS'} color='golden-text' weight='font-bold'/>
                         <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-16">
-                           <p className="text-gray-[600] md:px-8">We are conveniently located at {props.locdetail.mall} in {props.locdetail.city} {locState(props.locdetail.slug)}. 
-                           {props.locdetail.city_include}</p>
+                           <p className="text-gray-[600] md:px-8">We are conveniently located at {props.locdetail.mall} in {props.locdetail.city} {locState(props.locdetail.slug)}. {props.locdetail.city_include}</p>
                       </div>
                 </div> 
                 <div className="location-spc-map drop-shadow-md border-2 border-gold">

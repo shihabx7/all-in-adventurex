@@ -1071,7 +1071,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                         "id":1,
                                         "city":"Bowie",
-                                        "city_include":" ",
+                                        "city_include":"Our customers come from many surrounding cities, including Glenn Dale, Crofton, Greenbelt, South Laurel, Mitchellville, New Carrollton, Odenton, Beltsville, Laurel, East Riverdale, College Park, Kettering, Largo, Hyattsville, Severn and many more!",
                                         "entry_guid":"Our store is between Barnes & Noble and LA Fitness.",
                                         "slug":"bowie-md",
                                         "address":"15421 Emerald Way",
@@ -1133,7 +1133,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                       "id":2,
                                       "city":"White Marsh",
-                                      "city_include":" ",
+                                      "city_include":"Our customers come from many surrounding cities, including Perry Hall, Rossville, Middle River, Overlea, Carney, Parkville, Essex, Rosedale, Towson, Joppatowne, Edgewood, Dundalk, Edgemere, Baltimore, Mays Chapel and many more!",
                                         "entry_guid":"Our Store is located on the Upper Level next to JC Penny.",
                                       "slug":"white-marsh-md",
                                       "address":"8200 Perry Hall Blvd #2005",
@@ -1204,7 +1204,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                         "id":1,
                                         "city":"East Brunswick",
-                                        "city_include":" ",
+                                        "city_include":"Our customers come from many surrounding cities, including South River, Sayreville, North Brunswick, New Brunswick, Highland Park, Old Bridge, Edison, Somerset, Metuchen, Fords, Perth Amboy, South Plainfield, Woodbridge, Iselin, Middlesex and many more!",
                                         "entry_guid":"Our store is between Panera and JC Penny.",
                                         "slug":"east-brunswick-nj",
                                         "address":"1 welder garden",
@@ -1329,7 +1329,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                   {
                                     "id":3,
                                     "city":"Woodbridge",
-                                    "city_include":" ",
+                                    "city_include":"Our customers come from many surrounding cities, including Avenel, Colonia, Fords, Iselin, Carteret, Rahway, Perth Amboy, Metuchen, Linden, Clark, Roselle, South Plainfield, Cranford, Edison, Scotch Plains and many more!",
                                     "entry_guid":"Our store is in the lower level of the JCPenney & Boscov wing.",
                                     "slug":"woodbridge-nj",
                                     "address":"250 Woodbridge Center Dr",
@@ -1730,7 +1730,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                           {
                             "id":1,
                             "city":"Lawrenceville",
-                            "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                            "city_include":"Our customers come from many surrounding cities, including Marietta, Alpharetta, Kennesaw, Loganville, Snellville, Suwanee, Duluth, Lilburn, Sugar Hill, Buford, Norcross, Tucker, Winder, Redan, Doraville,Chamblee, Monroe and many more!",
                             "entry_guid":"Our store is directly across the Bass Pro Shop inside the mall.",
                             "slug":"lawrenceville-ga",
                             "address":"5900 Sugarloaf Pkwy Unit 134",
