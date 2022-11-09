@@ -39,7 +39,7 @@ export const getAllActivity=()=>{
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                     "activity_slug":"escape-from-alcatraz",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                     
@@ -115,7 +115,7 @@ export const getAllActivity=()=>{
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                    "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                     "activity_slug":"superheros-adventure",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                     
@@ -130,7 +130,7 @@ export const getAllActivity=()=>{
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                    "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                     "activity_slug":"houdinis-magic-cell",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                     
@@ -146,7 +146,7 @@ export const getAllActivity=()=>{
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+                    "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
                     "activity_slug":"special-agent",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                     
@@ -161,7 +161,7 @@ export const getAllActivity=()=>{
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                    "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                     "activity_slug":"hollywood-premiere",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                    
@@ -179,7 +179,7 @@ export const getAllActivity=()=>{
                     "max_player":"5",
                     "price":"39.95",
                     "duration":"60",
-                    "activity_desc":"After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises and…bizarre animals?!",
+                    "activity_desc":"Having heard the mysterious sound of drums coming from the roof, you and your friends decided to check it out. Drawn by the beat, you find yourself trapped in the game!",
                     "activity_slug":"lost-in-the-jungle",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-lost-in-the-jungle.jpg",
                     
@@ -196,7 +196,7 @@ export const getAllActivity=()=>{
                     "max_player":"4",
                     "price":"39.95",
                     "duration":"60",
-                    "activity_desc":"Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
+                    "activity_desc":"Your Potions lesson will begin in 60 minutes and you have gotten locked in the headmaster's office! You must put on your thinking cap and find a way to get out in time…",
                     "activity_slug":"wizarding-school ",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-wizarding-school.jpg",
                     
@@ -211,7 +211,7 @@ export const getAllActivity=()=>{
                     "max_player":"4",
                     "price":"29.89",
                     "duration":"30",
-                    "activity_desc":"Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+                    "activity_desc":"Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. See if you can piece together how to get things running again.",
                     "activity_slug":"locked-in-the-lift",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-locked-in-the-lift.jpg",
                     
@@ -227,7 +227,7 @@ export const getAllActivity=()=>{
                     "max_player":"8",
                     "price":"29.89",
                     "duration":"60",
-                    "activity_desc":"Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
+                    "activity_desc":"Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards. Test your wits, courage, loyalty, and cunning.",
                     "activity_slug":"magic-castle",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-magic-castle.jpg",
                     

@@ -35,7 +35,7 @@ const GameLocList=(props)=>{
                     
                 <div className="all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
                     <div className="section-title  text-center max-w-[800px] mx-auto">
-                        <TitleSeparator title="PLAY REAL LIFE ESCAPE GAMES" color="golden-text" weight="font-bold"/>
+                        <TitleSeparator title="PLAY REAL-LIFE ESCAPE GAMES" color="golden-text" weight="font-bold"/>
                         <p className="text-gray-700 md:px-8 md:text-lg">Team up with your friends, family, kids (age 6+) or co-workers for an adrenaline filled 50-60 minutes real life immersive escape game experience!</p>
                     </div>
                 {
@@ -92,7 +92,7 @@ const GameLocList=(props)=>{
                     othergame &&
                     <div id="others-physical-games" className="pt-20 all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
                     <div className="section-title text-center max-w-[800px] mx-auto">
-                        <TitleSeparator title="IN PERSON OTHER GAMES" color="golden-text" weight="font-bold"/>
+                        <TitleSeparator title="OTHER IN-PERSON GAMES" color="golden-text" weight="font-bold"/>
                         <p className="text-gray-700 md:px-8 md:text-lg">We offer additional fun activities that can double up your adventure experience. Simply come with the desire to play more!</p>
                     </div>
                 {

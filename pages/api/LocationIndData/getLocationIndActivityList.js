@@ -76,14 +76,14 @@ const LocActivityData={
             {
                 "id":1,
                 "activity_name":"Escape from Alcatraz",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                 "activity_slug":"escape-from-alcatraz",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                 
@@ -92,7 +92,7 @@ const LocActivityData={
             {
                 "id":2,
                 "activity_name":"Treasure Island",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
@@ -107,7 +107,7 @@ const LocActivityData={
             {
                 "id":3,
                 "activity_name":"Zombie Apocalypse",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
@@ -122,7 +122,7 @@ const LocActivityData={
             {
                 "id":4,
                 "activity_name":"Sherlock's Library",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
@@ -137,7 +137,7 @@ const LocActivityData={
             {
                 "id":5,
                 "activity_name":"Black Ops",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
@@ -152,14 +152,14 @@ const LocActivityData={
             {
                 "id":6,
                 "activity_name":"Superhero's Adventure",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                 "activity_slug":"superheros-adventure",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                 
@@ -167,14 +167,14 @@ const LocActivityData={
             {
                 "id":7,
                 "activity_name":"HOUDINI'S MAGIC CELL",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                 "activity_slug":"houdinis-magic-cell",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                 
@@ -183,14 +183,14 @@ const LocActivityData={
             {
                 "id":8,
                 "activity_name":"Special Agent",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+                "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
                 "activity_slug":"special-agent",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                 
@@ -198,21 +198,19 @@ const LocActivityData={
             {
                 "id":9,
                 "activity_name":"HOLLYWOOD PREMIERE",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                 "activity_slug":"hollywood-premiere",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                
             },
             
-            
-
           ]
     },
         //=========================================================albany-ny list end
@@ -226,14 +224,14 @@ const LocActivityData={
             {
                 "id":1,
                 "activity_name":"Escape from Alcatraz",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                 "activity_slug":"escape-from-alcatraz",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                 
@@ -242,7 +240,7 @@ const LocActivityData={
             {
                 "id":2,
                 "activity_name":"Treasure Island",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
@@ -257,7 +255,7 @@ const LocActivityData={
             {
                 "id":3,
                 "activity_name":"Zombie Apocalypse",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
@@ -272,7 +270,7 @@ const LocActivityData={
             {
                 "id":4,
                 "activity_name":"Sherlock's Library",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
@@ -287,7 +285,7 @@ const LocActivityData={
             {
                 "id":5,
                 "activity_name":"Black Ops",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
@@ -302,14 +300,14 @@ const LocActivityData={
             {
                 "id":6,
                 "activity_name":"Superhero's Adventure",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                 "activity_slug":"superheros-adventure",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                 
@@ -317,14 +315,14 @@ const LocActivityData={
             {
                 "id":7,
                 "activity_name":"HOUDINI'S MAGIC CELL",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                 "activity_slug":"houdinis-magic-cell",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                 
@@ -333,14 +331,14 @@ const LocActivityData={
             {
                 "id":8,
                 "activity_name":"Special Agent",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+                "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
                 "activity_slug":"special-agent",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                 
@@ -348,20 +346,18 @@ const LocActivityData={
             {
                 "id":9,
                 "activity_name":"HOLLYWOOD PREMIERE",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                 "activity_slug":"hollywood-premiere",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                
-            },
-            
-            
+            }
 
           ]
     },
@@ -378,14 +374,14 @@ const LocActivityData={
             {
                 "id":1,
                 "activity_name":"Escape from Alcatraz",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                 "activity_slug":"escape-from-alcatraz",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                 
@@ -394,7 +390,7 @@ const LocActivityData={
             {
                 "id":2,
                 "activity_name":"Treasure Island",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
@@ -409,7 +405,7 @@ const LocActivityData={
             {
                 "id":3,
                 "activity_name":"Zombie Apocalypse",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
@@ -424,7 +420,7 @@ const LocActivityData={
             {
                 "id":4,
                 "activity_name":"Sherlock's Library",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
@@ -439,7 +435,7 @@ const LocActivityData={
             {
                 "id":5,
                 "activity_name":"Black Ops",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
@@ -454,14 +450,14 @@ const LocActivityData={
             {
                 "id":6,
                 "activity_name":"Superhero's Adventure",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                 "activity_slug":"superheros-adventure",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                 
@@ -469,14 +465,14 @@ const LocActivityData={
             {
                 "id":7,
                 "activity_name":"HOUDINI'S MAGIC CELL",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                 "activity_slug":"houdinis-magic-cell",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                 
@@ -485,14 +481,14 @@ const LocActivityData={
             {
                 "id":8,
                 "activity_name":"Special Agent",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+                "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
                 "activity_slug":"special-agent",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                 
@@ -500,39 +496,39 @@ const LocActivityData={
             {
                 "id":9,
                 "activity_name":"HOLLYWOOD PREMIERE",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                 "activity_slug":"hollywood-premiere",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                
             },
-            
             {
                 "id":11,
                 "activity_name":"Wizarding School ",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
                 "max_player":"4",
                 "price":"39.95",
                 "duration":"60",
-                "activity_desc":"Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office and get to class on time!",
+                "activity_desc":"Your Potions lesson will begin in 60 minutes and you have gotten locked in the headmaster's office! You must put on your thinking cap and find a way to get out in time…",
                 "activity_slug":"wizarding-school ",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-wizarding-school.jpg",
                 
             },
             
+            
             {
                 "id":14,
                 "activity_name":"Beat The Seat",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"other",
                 "age":"all Aage",
                 "min_player":2,
@@ -544,7 +540,6 @@ const LocActivityData={
                 "activity_cover_image":"/assets/all-game-list/allinadventures-beat-the-seat.jpg",
                 
             },
-
           ]
     },
         //=========================================================middletown-ny end
@@ -561,14 +556,14 @@ const LocActivityData={
             {
                 "id":1,
                 "activity_name":"Escape from Alcatraz",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                 "activity_slug":"escape-from-alcatraz",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                 
@@ -577,7 +572,7 @@ const LocActivityData={
             {
                 "id":2,
                 "activity_name":"Treasure Island",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
@@ -592,7 +587,7 @@ const LocActivityData={
             {
                 "id":3,
                 "activity_name":"Zombie Apocalypse",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
@@ -607,7 +602,7 @@ const LocActivityData={
             {
                 "id":4,
                 "activity_name":"Sherlock's Library",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
@@ -622,7 +617,7 @@ const LocActivityData={
             {
                 "id":5,
                 "activity_name":"Black Ops",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
@@ -637,14 +632,14 @@ const LocActivityData={
             {
                 "id":6,
                 "activity_name":"Superhero's Adventure",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                 "activity_slug":"superheros-adventure",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                 
@@ -652,14 +647,14 @@ const LocActivityData={
             {
                 "id":7,
                 "activity_name":"HOUDINI'S MAGIC CELL",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                 "activity_slug":"houdinis-magic-cell",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                 
@@ -668,14 +663,14 @@ const LocActivityData={
             {
                 "id":8,
                 "activity_name":"Special Agent",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+                "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
                 "activity_slug":"special-agent",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                 
@@ -683,14 +678,14 @@ const LocActivityData={
             {
                 "id":9,
                 "activity_name":"HOLLYWOOD PREMIERE",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                 "activity_slug":"hollywood-premiere",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                
@@ -698,14 +693,14 @@ const LocActivityData={
             {
                 "id":12,
                 "activity_name":"Locked in the Lift",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
                 "max_player":"4",
                 "price":"29.89",
                 "duration":"30",
-                "activity_desc":"Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. You must save yourself as it's better to not think about what will happen if you don't",
+                "activity_desc":"Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. See if you can piece together how to get things running again.",
                 "activity_slug":"locked-in-the-lift",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-locked-in-the-lift.jpg",
                 
@@ -714,14 +709,14 @@ const LocActivityData={
             {
                 "id":13,
                 "activity_name":"MAGIC CASTLE",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
                 "max_player":"8",
                 "price":"29.89",
                 "duration":"60",
-                "activity_desc":"Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards.",
+                "activity_desc":"Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards. Test your wits, courage, loyalty, and cunning.",
                 "activity_slug":"magic-castle",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-magic-castle.jpg",
                 
@@ -730,7 +725,7 @@ const LocActivityData={
             {
                 "id":14,
                 "activity_name":"Beat The Seat",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"other",
                 "age":"all Aage",
                 "min_player":2,
@@ -742,6 +737,12 @@ const LocActivityData={
                 "activity_cover_image":"/assets/all-game-list/allinadventures-beat-the-seat.jpg",
                 
             },
+            
+           
+            
+            
+            
+
           ]
     
     },
@@ -758,14 +759,14 @@ const LocActivityData={
             {
                 "id":1,
                 "activity_name":"Escape from Alcatraz",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                 "activity_slug":"escape-from-alcatraz",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                 
@@ -774,7 +775,7 @@ const LocActivityData={
             {
                 "id":2,
                 "activity_name":"Treasure Island",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
@@ -789,7 +790,7 @@ const LocActivityData={
             {
                 "id":3,
                 "activity_name":"Zombie Apocalypse",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
@@ -804,7 +805,7 @@ const LocActivityData={
             {
                 "id":4,
                 "activity_name":"Sherlock's Library",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
@@ -819,7 +820,7 @@ const LocActivityData={
             {
                 "id":5,
                 "activity_name":"Black Ops",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
@@ -834,14 +835,14 @@ const LocActivityData={
             {
                 "id":6,
                 "activity_name":"Superhero's Adventure",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                 "activity_slug":"superheros-adventure",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                 
@@ -849,14 +850,14 @@ const LocActivityData={
             {
                 "id":7,
                 "activity_name":"HOUDINI'S MAGIC CELL",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                 "activity_slug":"houdinis-magic-cell",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                 
@@ -865,14 +866,14 @@ const LocActivityData={
             {
                 "id":8,
                 "activity_name":"Special Agent",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+                "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
                 "activity_slug":"special-agent",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                 
@@ -880,14 +881,14 @@ const LocActivityData={
             {
                 "id":9,
                 "activity_name":"HOLLYWOOD PREMIERE",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                 "activity_slug":"hollywood-premiere",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                
@@ -910,14 +911,14 @@ const LocActivityData={
                 {
                     "id":1,
                     "activity_name":"Escape from Alcatraz",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                     "activity_slug":"escape-from-alcatraz",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                     
@@ -926,7 +927,7 @@ const LocActivityData={
                 {
                     "id":2,
                     "activity_name":"Treasure Island",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
@@ -941,7 +942,7 @@ const LocActivityData={
                 {
                     "id":3,
                     "activity_name":"Zombie Apocalypse",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
@@ -956,7 +957,7 @@ const LocActivityData={
                 {
                     "id":4,
                     "activity_name":"Sherlock's Library",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
@@ -968,27 +969,26 @@ const LocActivityData={
                     "activity_cover_image":"/assets/all-game-list/allinadventures-sherlocks-library.jpg",
                    
                 },
-                
+               
                 {
                     "id":6,
                     "activity_name":"Superhero's Adventure",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                    "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                     "activity_slug":"superheros-adventure",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                     
                 },
-                
                 {
                     "id":14,
                     "activity_name":"Beat The Seat",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"other",
                     "age":"all Aage",
                     "min_player":2,
@@ -1003,7 +1003,7 @@ const LocActivityData={
                 {
                     "id":15,
                     "activity_name":"Game Show Room",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"other",
                     "age":"all Aage",
                     "min_player":2,
@@ -1015,6 +1015,11 @@ const LocActivityData={
                     "activity_cover_image":"/assets/all-game-list/allinadventures-game-show-room.jpg",
                     
                 },
+                
+                
+                
+                
+    
               ]
         },
             //=========================================================west-nyack-ny end
@@ -1031,14 +1036,14 @@ const LocActivityData={
             {
                 "id":1,
                 "activity_name":"Escape from Alcatraz",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                 "activity_slug":"escape-from-alcatraz",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                 
@@ -1047,7 +1052,7 @@ const LocActivityData={
             {
                 "id":2,
                 "activity_name":"Treasure Island",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
@@ -1062,7 +1067,7 @@ const LocActivityData={
             {
                 "id":3,
                 "activity_name":"Zombie Apocalypse",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
@@ -1077,7 +1082,7 @@ const LocActivityData={
             {
                 "id":4,
                 "activity_name":"Sherlock's Library",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
@@ -1092,7 +1097,7 @@ const LocActivityData={
             {
                 "id":5,
                 "activity_name":"Black Ops",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
@@ -1107,14 +1112,14 @@ const LocActivityData={
             {
                 "id":6,
                 "activity_name":"Superhero's Adventure",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"All age(6+)",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                 "activity_slug":"superheros-adventure",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                 
@@ -1122,25 +1127,23 @@ const LocActivityData={
             {
                 "id":7,
                 "activity_name":"HOUDINI'S MAGIC CELL",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"escapegame",
                 "age":"all Aage",
                 "min_player":"2",
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                 "activity_slug":"houdinis-magic-cell",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                 
             },
-            
-            
-            
+           
             {
                 "id":16,
                 "activity_name":"Axe Throwing",
-                "activity_type":"In person",
+                "activity_type":"In-person",
                 "activity_category":"other",
                 "age":"all Aage",
                 "min_player":2,
@@ -1152,6 +1155,10 @@ const LocActivityData={
                 "activity_cover_image":"/assets/all-game-list/allinadventures-axe-throwing.jpg",
                 
             },
+           
+            
+            
+            
 
           ]
     },
@@ -1171,14 +1178,14 @@ const LocActivityData={
                 {
                     "id":1,
                     "activity_name":"Escape from Alcatraz",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                     "activity_slug":"escape-from-alcatraz",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                     
@@ -1187,7 +1194,7 @@ const LocActivityData={
                 {
                     "id":2,
                     "activity_name":"Treasure Island",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
@@ -1202,7 +1209,7 @@ const LocActivityData={
                 {
                     "id":3,
                     "activity_name":"Zombie Apocalypse",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
@@ -1217,7 +1224,7 @@ const LocActivityData={
                 {
                     "id":4,
                     "activity_name":"Sherlock's Library",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
@@ -1232,7 +1239,7 @@ const LocActivityData={
                 {
                     "id":5,
                     "activity_name":"Black Ops",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
@@ -1247,14 +1254,14 @@ const LocActivityData={
                 {
                     "id":6,
                     "activity_name":"Superhero's Adventure",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                    "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                     "activity_slug":"superheros-adventure",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                     
@@ -1262,19 +1269,19 @@ const LocActivityData={
                 {
                     "id":7,
                     "activity_name":"HOUDINI'S MAGIC CELL",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                    "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                     "activity_slug":"houdinis-magic-cell",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                     
                 },
-                
+    
               ]
         },
             //=========================================================west-nyack-ny end
@@ -1293,14 +1300,14 @@ const LocActivityData={
                 {
                     "id":1,
                     "activity_name":"Escape from Alcatraz",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                     "activity_slug":"escape-from-alcatraz",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                     
@@ -1309,7 +1316,7 @@ const LocActivityData={
                 {
                     "id":2,
                     "activity_name":"Treasure Island",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
@@ -1324,7 +1331,7 @@ const LocActivityData={
                 {
                     "id":3,
                     "activity_name":"Zombie Apocalypse",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
@@ -1339,7 +1346,7 @@ const LocActivityData={
                 {
                     "id":4,
                     "activity_name":"Sherlock's Library",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
@@ -1354,7 +1361,7 @@ const LocActivityData={
                 {
                     "id":5,
                     "activity_name":"Black Ops",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
@@ -1369,14 +1376,14 @@ const LocActivityData={
                 {
                     "id":6,
                     "activity_name":"Superhero's Adventure",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                    "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                     "activity_slug":"superheros-adventure",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                     
@@ -1384,14 +1391,14 @@ const LocActivityData={
                 {
                     "id":7,
                     "activity_name":"HOUDINI'S MAGIC CELL",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                    "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                     "activity_slug":"houdinis-magic-cell",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                     
@@ -1400,14 +1407,14 @@ const LocActivityData={
                 {
                     "id":8,
                     "activity_name":"Special Agent",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+                    "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
                     "activity_slug":"special-agent",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                     
@@ -1415,14 +1422,14 @@ const LocActivityData={
                 {
                     "id":9,
                     "activity_name":"HOLLYWOOD PREMIERE",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                    "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                     "activity_slug":"hollywood-premiere",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                    
@@ -1444,14 +1451,14 @@ const LocActivityData={
                     {
                         "id":1,
                         "activity_name":"Escape from Alcatraz",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                         "activity_slug":"escape-from-alcatraz",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                         
@@ -1460,7 +1467,7 @@ const LocActivityData={
                     {
                         "id":2,
                         "activity_name":"Treasure Island",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -1475,7 +1482,7 @@ const LocActivityData={
                     {
                         "id":3,
                         "activity_name":"Zombie Apocalypse",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -1490,7 +1497,7 @@ const LocActivityData={
                     {
                         "id":4,
                         "activity_name":"Sherlock's Library",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -1505,7 +1512,7 @@ const LocActivityData={
                     {
                         "id":5,
                         "activity_name":"Black Ops",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -1520,14 +1527,14 @@ const LocActivityData={
                     {
                         "id":6,
                         "activity_name":"Superhero's Adventure",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                        "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                         "activity_slug":"superheros-adventure",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                         
@@ -1535,14 +1542,14 @@ const LocActivityData={
                     {
                         "id":7,
                         "activity_name":"HOUDINI'S MAGIC CELL",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                         "activity_slug":"houdinis-magic-cell",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                         
@@ -1551,14 +1558,14 @@ const LocActivityData={
                     {
                         "id":8,
                         "activity_name":"Special Agent",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+                        "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
                         "activity_slug":"special-agent",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                         
@@ -1566,20 +1573,18 @@ const LocActivityData={
                     {
                         "id":9,
                         "activity_name":"HOLLYWOOD PREMIERE",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                        "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                         "activity_slug":"hollywood-premiere",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                        
                     },
-                    
-        
                   ]
             },
                 //=========================================================hadley-ma end
@@ -1596,14 +1601,14 @@ const LocActivityData={
                     {
                         "id":1,
                         "activity_name":"Escape from Alcatraz",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                         "activity_slug":"escape-from-alcatraz",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                         
@@ -1612,7 +1617,7 @@ const LocActivityData={
                     {
                         "id":2,
                         "activity_name":"Treasure Island",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -1624,11 +1629,10 @@ const LocActivityData={
                         "activity_cover_image":"/assets/all-game-list/allinadventures-treasure-island.jpg",
                         
                     },
-                  
                     {
                         "id":4,
                         "activity_name":"Sherlock's Library",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -1643,7 +1647,7 @@ const LocActivityData={
                     {
                         "id":5,
                         "activity_name":"Black Ops",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -1658,14 +1662,14 @@ const LocActivityData={
                     {
                         "id":6,
                         "activity_name":"Superhero's Adventure",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                        "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                         "activity_slug":"superheros-adventure",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                         
@@ -1673,14 +1677,14 @@ const LocActivityData={
                     {
                         "id":7,
                         "activity_name":"HOUDINI'S MAGIC CELL",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                         "activity_slug":"houdinis-magic-cell",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                         
@@ -1688,18 +1692,23 @@ const LocActivityData={
                     {
                         "id":9,
                         "activity_name":"HOLLYWOOD PREMIERE",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                        "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                         "activity_slug":"hollywood-premiere",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                        
                     },
+                    
+                   
+                    
+                    
+                    
         
                   ]
             },
@@ -1713,18 +1722,18 @@ const LocActivityData={
                  "totalPlayerEscaped": "8.7k+",
                 
                 "activity_list":[
-        
+
                     {
                         "id":1,
                         "activity_name":"Escape from Alcatraz",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
-                        "age":"all Aage",
-                        "min_player":2,
-                        "max_player":10,
-                        "price":30,
-                        "duration":50,
-                        "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
+                        "age":"All age(6+)",
+                        "min_player":"2",
+                        "max_player":"10",
+                        "price":"29.89",
+                        "duration":"50",
+                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                         "activity_slug":"escape-from-alcatraz",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                         
@@ -1733,233 +1742,126 @@ const LocActivityData={
                     {
                         "id":2,
                         "activity_name":"Treasure Island",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
-                        "age":"all Aage",
-                        "min_player":2,
-                        "max_player":8,
-                        "price":36,
-                        "duration":50,
-                        "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
+                        "age":"All age(6+)",
+                        "min_player":"2",
+                        "max_player":"10",
+                        "price":"29.89",
+                        "duration":"50",
+                        "activity_desc":"You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
                         "activity_slug":"treasure-island",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-treasure-island.jpg",
                         
                     },
                     {
                         "id":3,
-                        "activity_name":"HOLLYWOOD PREMIERE",
-                        "activity_type":"In person",
+                        "activity_name":"Zombie Apocalypse",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
-                        "age":"all Aage",
-                        "min_player":2,
-                        "max_player":8,
-                        "price":36,
-                        "duration":60,
-                        "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                        "activity_slug":"hollywood-premiere",
-                        "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
-                       
+                        "age":"All age(6+)",
+                        "min_player":"2",
+                        "max_player":"10",
+                        "price":"29.89",
+                        "duration":"50",
+                        "activity_desc":"The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+                        "activity_slug":"zombie-apocalypse",
+                        "activity_cover_image":"/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+                        
                     },
                     {
                         "id":4,
-                        "activity_name":"Lost in The Jungle",
-                        "activity_type":"In person",
+                        "activity_name":"Sherlock's Library",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
-                        "min_player":2,
-                        "max_player":8,
-                        "price":28,
-                        "duration":60,
-                        "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                        "activity_slug":"lost-in-the-jungle",
-                        "activity_cover_image":"/assets/all-game-list/allinadventures-lost-in-the-jungle.jpg",
-                        
+                        "min_player":"2",
+                        "max_player":"10",
+                        "price":"29.89",
+                        "duration":"50",
+                        "activity_desc":"London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+                        "activity_slug":"sherlocks-library",
+                        "activity_cover_image":"/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+                       
                     },
                     {
                         "id":5,
                         "activity_name":"Black Ops",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
-                        "min_player":2,
-                        "max_player":8,
-                        "price":28,
-                        "duration":60,
-                        "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
+                        "min_player":"2",
+                        "max_player":"10",
+                        "price":"29.89",
+                        "duration":"50",
+                        "activity_desc":"After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
                         "activity_slug":"black-ops",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-black-ops.jpg",
                         
                     },
                     {
                         "id":6,
-                        "activity_name":"Locked in the Lift",
-                        "activity_type":"In person",
+                        "activity_name":"Superhero's Adventure",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
-                        "age":"all Aage",
-                        "min_player":2,
-                        "max_player":8,
-                        "price":28,
-                        "duration":60,
-                        "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                        "activity_slug":"locked-in-the-lift",
-                        "activity_cover_image":"/assets/all-game-list/allinadventures-locked-in-the-lift.jpg",
+                        "age":"All age(6+)",
+                        "min_player":"2",
+                        "max_player":"10",
+                        "price":"29.89",
+                        "duration":"50",
+                        "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+                        "activity_slug":"superheros-adventure",
+                        "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                         
                     },
                     {
                         "id":7,
                         "activity_name":"HOUDINI'S MAGIC CELL",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
-                        "min_player":2,
-                        "max_player":8,
-                        "price":28,
-                        "duration":60,
-                        "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
+                        "min_player":"2",
+                        "max_player":"10",
+                        "price":"29.89",
+                        "duration":"50",
+                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                         "activity_slug":"houdinis-magic-cell",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                         
                     },
                     {
-                        "id":8,
-                        "activity_name":"MAGIC CASTLE",
-                        "activity_type":"In person",
-                        "activity_category":"escapegame",
-                        "age":"all Aage",
-                        "min_player":2,
-                        "max_player":8,
-                        "price":28,
-                        "duration":60,
-                        "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                        "activity_slug":"magic-castle",
-                        "activity_cover_image":"/assets/all-game-list/allinadventures-magic-castle.jpg",
-                        
-                    },
-                    {
                         "id":9,
-                        "activity_name":"Superhero's Adventure",
-                        "activity_type":"In person",
+                        "activity_name":"HOLLYWOOD PREMIERE",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
-                        "age":"all Aage",
-                        "min_player":2,
-                        "max_player":8,
-                        "price":28,
-                        "duration":60,
-                        "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                        "activity_slug":"superheros-adventure",
-                        "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
-                        
-                    },
-                    
-                    {
-                        "id":11,
-                        "activity_name":"Special Agent",
-                        "activity_type":"In person",
-                        "activity_category":"escapegame",
-                        "age":"all Aage",
-                        "min_player":2,
-                        "max_player":8,
-                        "price":28,
-                        "duration":60,
-                        "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                        "activity_slug":"special-agent",
-                        "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
-                        
-                    },
-                    {
-                        "id":12,
-                        "activity_name":"Sherlock's Library",
-                        "activity_type":"In person",
-                        "activity_category":"escapegame",
-                        "age":"all Aage",
-                        "min_player":2,
-                        "max_player":8,
-                        "price":28,
-                        "duration":60,
-                        "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                        "activity_slug":"sherlocks-library",
-                        "activity_cover_image":"/assets/all-game-list/allinadventures-sherlocks-library.jpg",
-                        
-                    },
-                    {
-                        "id":13,
-                        "activity_name":"Wizarding School ",
-                        "activity_type":"In person",
-                        "activity_category":"escapegame",
-                        "age":"all Aage",
-                        "min_player":2,
-                        "max_player":8,
-                        "price":28,
-                        "duration":60,
-                        "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                        "activity_slug":"wizarding-school ",
-                        "activity_cover_image":"/assets/all-game-list/allinadventures-wizarding-school.jpg",
-                       
-                    },
-                    {
-                        "id":14,
-                        "activity_name":"Beat The Seat",
-                        "activity_type":"In person",
-                        "activity_category":"other",
-                        "age":"all Aage",
-                        "min_player":2,
-                        "max_player":8,
-                        "price":28,
-                        "duration":60,
-                        "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                        "activity_slug":"beat-the-seat",
-                        "activity_cover_image":"/assets/all-game-list/allinadventures-wizarding-school.jpg",
-                        
-                    },
-                    {
-                        "id":15,
-                        "activity_name":"Game Show Room",
-                        "activity_type":"In person",
-                        "activity_category":"other",
-                        "age":"all Aage",
-                        "min_player":2,
-                        "max_player":8,
-                        "price":28,
-                        "duration":60,
-                        "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                        "activity_slug":"game-show-room",
-                        "activity_cover_image":"/assets/all-game-list/allinadventures-wizarding-school.jpg",
-                        
-                    },
-                    {
-                        "id":16,
-                        "activity_name":"Axe Throwing",
-                        "activity_type":"In person",
-                        "activity_category":"other",
-                        "age":"all Aage",
-                        "min_player":2,
-                        "max_player":8,
-                        "price":28,
-                        "duration":60,
-                        "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                        "activity_slug":"axe-throwing",
-                        "activity_cover_image":"/assets/all-game-list/allinadventures-wizarding-school.jpg",
-                        
-                    },
-                    {
-                        "id":17,
-                        "activity_name":"Virtual Reality",
-                        "activity_type":"In person",
-                        "activity_category":"other",
-                        "age":"all Aage",
-                        "min_player":2,
-                        "max_player":8,
-                        "price":28,
-                        "duration":60,
-                        "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                        "activity_slug":"virtual-reality",
-                        "activity_cover_image":"/assets/all-game-list/allinadventures-virtual-reality.jpg",
+                        "age":"All age(6+)",
+                        "min_player":"2",
+                        "max_player":"10",
+                        "price":"29.89",
+                        "duration":"50",
+                        "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+                        "activity_slug":"hollywood-premiere",
+                        "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                        
                     },
                     
                     
-                    
-        
+                   
+                    {
+                        "id":10,
+                        "activity_name":"Lost in The Jungle",
+                        "activity_type":"In-person",
+                        "activity_category":"escapegame",
+                        "age":"all Aage",
+                        "min_player":"2",
+                        "max_player":"5",
+                        "price":"39.95",
+                        "duration":"60",
+                        "activity_desc":"Having heard the mysterious sound of drums coming from the roof, you and your friends decided to check it out. Drawn by the beat, you find yourself trapped in the game!",
+                        "activity_slug":"lost-in-the-jungle",
+                        "activity_cover_image":"/assets/all-game-list/allinadventures-lost-in-the-jungle.jpg",
+                        
+                    },
                   ]
             },
                 //=========================================================kingston-ma end
@@ -1976,14 +1878,14 @@ const LocActivityData={
                     {
                         "id":1,
                         "activity_name":"Escape from Alcatraz",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                         "activity_slug":"escape-from-alcatraz",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                         
@@ -1992,7 +1894,7 @@ const LocActivityData={
                     {
                         "id":2,
                         "activity_name":"Treasure Island",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -2007,7 +1909,7 @@ const LocActivityData={
                     {
                         "id":3,
                         "activity_name":"Zombie Apocalypse",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -2022,7 +1924,7 @@ const LocActivityData={
                     {
                         "id":4,
                         "activity_name":"Sherlock's Library",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -2037,7 +1939,7 @@ const LocActivityData={
                     {
                         "id":5,
                         "activity_name":"Black Ops",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -2052,14 +1954,14 @@ const LocActivityData={
                     {
                         "id":6,
                         "activity_name":"Superhero's Adventure",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                        "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                         "activity_slug":"superheros-adventure",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                         
@@ -2067,14 +1969,14 @@ const LocActivityData={
                     {
                         "id":7,
                         "activity_name":"HOUDINI'S MAGIC CELL",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                         "activity_slug":"houdinis-magic-cell",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                         
@@ -2083,14 +1985,14 @@ const LocActivityData={
                     {
                         "id":8,
                         "activity_name":"Special Agent",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+                        "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
                         "activity_slug":"special-agent",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                         
@@ -2098,20 +2000,19 @@ const LocActivityData={
                     {
                         "id":9,
                         "activity_name":"HOLLYWOOD PREMIERE",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                        "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                         "activity_slug":"hollywood-premiere",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                        
                     },
-        
-                  ]
+                ]
             },
                 //=========================================================n-attleborough-ma end
     //********************************************************************************************MA END */
@@ -2129,14 +2030,14 @@ const LocActivityData={
                     {
                         "id":1,
                         "activity_name":"Escape from Alcatraz",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                         "activity_slug":"escape-from-alcatraz",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                         
@@ -2145,7 +2046,7 @@ const LocActivityData={
                     {
                         "id":2,
                         "activity_name":"Treasure Island",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -2160,7 +2061,7 @@ const LocActivityData={
                     {
                         "id":3,
                         "activity_name":"Zombie Apocalypse",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -2175,7 +2076,7 @@ const LocActivityData={
                     {
                         "id":4,
                         "activity_name":"Sherlock's Library",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -2190,7 +2091,7 @@ const LocActivityData={
                     {
                         "id":5,
                         "activity_name":"Black Ops",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -2202,18 +2103,17 @@ const LocActivityData={
                         "activity_cover_image":"/assets/all-game-list/allinadventures-black-ops.jpg",
                         
                     },
-                    
                     {
                         "id":7,
                         "activity_name":"HOUDINI'S MAGIC CELL",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                         "activity_slug":"houdinis-magic-cell",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                         
@@ -2221,18 +2121,21 @@ const LocActivityData={
                     {
                         "id":9,
                         "activity_name":"HOLLYWOOD PREMIERE",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                        "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                         "activity_slug":"hollywood-premiere",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                        
                     },
+                    
+                    
+        
                   ]
             },
             //=========================================================milford-ct list end
@@ -2249,14 +2152,14 @@ const LocActivityData={
                     {
                         "id":1,
                         "activity_name":"Escape from Alcatraz",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                         "activity_slug":"escape-from-alcatraz",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                         
@@ -2265,7 +2168,7 @@ const LocActivityData={
                     {
                         "id":2,
                         "activity_name":"Treasure Island",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -2280,7 +2183,7 @@ const LocActivityData={
                     {
                         "id":3,
                         "activity_name":"Zombie Apocalypse",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -2295,7 +2198,7 @@ const LocActivityData={
                     {
                         "id":4,
                         "activity_name":"Sherlock's Library",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -2310,7 +2213,7 @@ const LocActivityData={
                     {
                         "id":5,
                         "activity_name":"Black Ops",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -2325,14 +2228,14 @@ const LocActivityData={
                     {
                         "id":6,
                         "activity_name":"Superhero's Adventure",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                        "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                         "activity_slug":"superheros-adventure",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                         
@@ -2340,14 +2243,14 @@ const LocActivityData={
                     {
                         "id":7,
                         "activity_name":"HOUDINI'S MAGIC CELL",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                         "activity_slug":"houdinis-magic-cell",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                         
@@ -2356,19 +2259,33 @@ const LocActivityData={
                     {
                         "id":8,
                         "activity_name":"Special Agent",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+                        "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
                         "activity_slug":"special-agent",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                         
                     },
-        
+                    {
+                        "id":9,
+                        "activity_name":"HOLLYWOOD PREMIERE",
+                        "activity_type":"In-person",
+                        "activity_category":"escapegame",
+                        "age":"All age(6+)",
+                        "min_player":"2",
+                        "max_player":"10",
+                        "price":"29.89",
+                        "duration":"50",
+                        "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+                        "activity_slug":"hollywood-premiere",
+                        "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+                       
+                    },
                   ]
             },
             //=========================================================manchester-ct list end
@@ -2385,14 +2302,14 @@ const LocActivityData={
                     {
                         "id":1,
                         "activity_name":"Escape from Alcatraz",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                         "activity_slug":"escape-from-alcatraz",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                         
@@ -2401,7 +2318,7 @@ const LocActivityData={
                     {
                         "id":2,
                         "activity_name":"Treasure Island",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -2416,7 +2333,7 @@ const LocActivityData={
                     {
                         "id":3,
                         "activity_name":"Zombie Apocalypse",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -2431,7 +2348,7 @@ const LocActivityData={
                     {
                         "id":4,
                         "activity_name":"Sherlock's Library",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -2446,7 +2363,7 @@ const LocActivityData={
                     {
                         "id":5,
                         "activity_name":"Black Ops",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -2461,14 +2378,14 @@ const LocActivityData={
                     {
                         "id":6,
                         "activity_name":"Superhero's Adventure",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                        "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                         "activity_slug":"superheros-adventure",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                         
@@ -2476,14 +2393,14 @@ const LocActivityData={
                     {
                         "id":7,
                         "activity_name":"HOUDINI'S MAGIC CELL",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                         "activity_slug":"houdinis-magic-cell",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                         
@@ -2492,14 +2409,14 @@ const LocActivityData={
                     {
                         "id":8,
                         "activity_name":"Special Agent",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+                        "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
                         "activity_slug":"special-agent",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                         
@@ -2507,21 +2424,19 @@ const LocActivityData={
                     {
                         "id":9,
                         "activity_name":"HOLLYWOOD PREMIERE",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                        "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                         "activity_slug":"hollywood-premiere",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                        
                     },
-                    
-        
-                  ]
+                 ]
             },
             //=========================================================manchester-ct list end
     //********************************************************************************************CT END*/
@@ -2539,14 +2454,14 @@ const LocActivityData={
                     {
                         "id":1,
                         "activity_name":"Escape from Alcatraz",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                         "activity_slug":"escape-from-alcatraz",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                         
@@ -2555,7 +2470,7 @@ const LocActivityData={
                     {
                         "id":2,
                         "activity_name":"Treasure Island",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -2570,7 +2485,7 @@ const LocActivityData={
                     {
                         "id":3,
                         "activity_name":"Zombie Apocalypse",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -2585,7 +2500,7 @@ const LocActivityData={
                     {
                         "id":4,
                         "activity_name":"Sherlock's Library",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -2600,7 +2515,7 @@ const LocActivityData={
                     {
                         "id":5,
                         "activity_name":"Black Ops",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -2615,14 +2530,14 @@ const LocActivityData={
                     {
                         "id":6,
                         "activity_name":"Superhero's Adventure",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                        "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                         "activity_slug":"superheros-adventure",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                         
@@ -2630,14 +2545,14 @@ const LocActivityData={
                     {
                         "id":7,
                         "activity_name":"HOUDINI'S MAGIC CELL",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                         "activity_slug":"houdinis-magic-cell",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                         
@@ -2646,22 +2561,18 @@ const LocActivityData={
                     {
                         "id":8,
                         "activity_name":"Special Agent",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+                        "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
                         "activity_slug":"special-agent",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                         
-                    },
-                    
-                    
-        
-                  ]
+                    },]
             },
             //=========================================================bowie-md end
             //=========================================================white-marsh-md list
@@ -2677,14 +2588,14 @@ const LocActivityData={
                     {
                         "id":1,
                         "activity_name":"Escape from Alcatraz",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                         "activity_slug":"escape-from-alcatraz",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                         
@@ -2693,7 +2604,7 @@ const LocActivityData={
                     {
                         "id":2,
                         "activity_name":"Treasure Island",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -2708,7 +2619,7 @@ const LocActivityData={
                     {
                         "id":3,
                         "activity_name":"Zombie Apocalypse",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -2723,7 +2634,7 @@ const LocActivityData={
                     {
                         "id":4,
                         "activity_name":"Sherlock's Library",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -2738,7 +2649,7 @@ const LocActivityData={
                     {
                         "id":5,
                         "activity_name":"Black Ops",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -2753,14 +2664,14 @@ const LocActivityData={
                     {
                         "id":6,
                         "activity_name":"Superhero's Adventure",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                        "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                         "activity_slug":"superheros-adventure",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                         
@@ -2768,14 +2679,14 @@ const LocActivityData={
                     {
                         "id":7,
                         "activity_name":"HOUDINI'S MAGIC CELL",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                         "activity_slug":"houdinis-magic-cell",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                         
@@ -2784,14 +2695,14 @@ const LocActivityData={
                     {
                         "id":8,
                         "activity_name":"Special Agent",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+                        "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
                         "activity_slug":"special-agent",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                         
@@ -2799,20 +2710,19 @@ const LocActivityData={
                     {
                         "id":9,
                         "activity_name":"HOLLYWOOD PREMIERE",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                        "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                         "activity_slug":"hollywood-premiere",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                        
                     },
-        
-                  ]
+                     ]
             },
             //=========================================================white-marsh-md end
     //********************************************************************************************MD END*/
@@ -2830,14 +2740,14 @@ const LocActivityData={
                     {
                         "id":1,
                         "activity_name":"Escape from Alcatraz",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                         "activity_slug":"escape-from-alcatraz",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                         
@@ -2846,7 +2756,7 @@ const LocActivityData={
                     {
                         "id":2,
                         "activity_name":"Treasure Island",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -2861,7 +2771,7 @@ const LocActivityData={
                     {
                         "id":4,
                         "activity_name":"Sherlock's Library",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -2876,7 +2786,7 @@ const LocActivityData={
                     {
                         "id":5,
                         "activity_name":"Black Ops",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -2891,14 +2801,14 @@ const LocActivityData={
                     {
                         "id":6,
                         "activity_name":"Superhero's Adventure",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                        "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                         "activity_slug":"superheros-adventure",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                         
@@ -2906,36 +2816,35 @@ const LocActivityData={
                     {
                         "id":7,
                         "activity_name":"HOUDINI'S MAGIC CELL",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                         "activity_slug":"houdinis-magic-cell",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                         
                     },
+                    
                     {
                         "id":9,
                         "activity_name":"HOLLYWOOD PREMIERE",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                        "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                         "activity_slug":"hollywood-premiere",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                        
                     },
                     
-                    
-                  
                   ]
             },
             //=========================================================east-brunswick-nj end
@@ -2952,14 +2861,14 @@ const LocActivityData={
                     {
                         "id":1,
                         "activity_name":"Escape from Alcatraz",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                         "activity_slug":"escape-from-alcatraz",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                         
@@ -2968,7 +2877,7 @@ const LocActivityData={
                     {
                         "id":2,
                         "activity_name":"Treasure Island",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -2983,7 +2892,7 @@ const LocActivityData={
                     {
                         "id":3,
                         "activity_name":"Zombie Apocalypse",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -2998,7 +2907,7 @@ const LocActivityData={
                     {
                         "id":4,
                         "activity_name":"Sherlock's Library",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -3013,7 +2922,7 @@ const LocActivityData={
                     {
                         "id":5,
                         "activity_name":"Black Ops",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -3028,14 +2937,14 @@ const LocActivityData={
                     {
                         "id":6,
                         "activity_name":"Superhero's Adventure",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                        "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                         "activity_slug":"superheros-adventure",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                         
@@ -3043,38 +2952,38 @@ const LocActivityData={
                     {
                         "id":7,
                         "activity_name":"HOUDINI'S MAGIC CELL",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                         "activity_slug":"houdinis-magic-cell",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                         
                     },
-                    
                     {
                         "id":9,
                         "activity_name":"HOLLYWOOD PREMIERE",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                        "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                         "activity_slug":"hollywood-premiere",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                        
                     },
+                    
                     {
                         "id":15,
                         "activity_name":"Game Show Room",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"other",
                         "age":"all Aage",
                         "min_player":2,
@@ -3086,6 +2995,7 @@ const LocActivityData={
                         "activity_cover_image":"/assets/all-game-list/allinadventures-game-show-room.jpg",
                         
                     },
+                    
                   ]
             },
             //=========================================================rockaway-nj end
@@ -3102,14 +3012,14 @@ const LocActivityData={
                     {
                         "id":1,
                         "activity_name":"Escape from Alcatraz",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                        "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                         "activity_slug":"escape-from-alcatraz",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                         
@@ -3118,7 +3028,7 @@ const LocActivityData={
                     {
                         "id":2,
                         "activity_name":"Treasure Island",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -3133,7 +3043,7 @@ const LocActivityData={
                     {
                         "id":3,
                         "activity_name":"Zombie Apocalypse",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
@@ -3148,7 +3058,7 @@ const LocActivityData={
                     {
                         "id":4,
                         "activity_name":"Sherlock's Library",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -3163,7 +3073,7 @@ const LocActivityData={
                     {
                         "id":5,
                         "activity_name":"Black Ops",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
@@ -3178,14 +3088,14 @@ const LocActivityData={
                     {
                         "id":6,
                         "activity_name":"Superhero's Adventure",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                        "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                         "activity_slug":"superheros-adventure",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                         
@@ -3193,14 +3103,14 @@ const LocActivityData={
                     {
                         "id":7,
                         "activity_name":"HOUDINI'S MAGIC CELL",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"all Aage",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                        "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                         "activity_slug":"houdinis-magic-cell",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                         
@@ -3209,14 +3119,14 @@ const LocActivityData={
                     {
                         "id":8,
                         "activity_name":"Special Agent",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+                        "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
                         "activity_slug":"special-agent",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                         
@@ -3224,19 +3134,18 @@ const LocActivityData={
                     {
                         "id":9,
                         "activity_name":"HOLLYWOOD PREMIERE",
-                        "activity_type":"In person",
+                        "activity_type":"In-person",
                         "activity_category":"escapegame",
                         "age":"All age(6+)",
                         "min_player":"2",
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                        "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                         "activity_slug":"hollywood-premiere",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                        
                     },
-        
                   ]
             },
             //=========================================================woodbridge-nj end
@@ -3249,18 +3158,18 @@ const LocActivityData={
             "coverimageM":"/assets/location-hero.jpg",
             
             "activity_list":[
-    
+
                 {
                     "id":1,
                     "activity_name":"Escape from Alcatraz",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
-                    "age":"all Aage",
-                    "min_player":2,
-                    "max_player":10,
-                    "price":30,
-                    "duration":50,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
+                    "age":"All age(6+)",
+                    "min_player":"2",
+                    "max_player":"10",
+                    "price":"29.89",
+                    "duration":"50",
+                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                     "activity_slug":"escape-from-alcatraz",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                     
@@ -3269,233 +3178,124 @@ const LocActivityData={
                 {
                     "id":2,
                     "activity_name":"Treasure Island",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
-                    "age":"all Aage",
-                    "min_player":2,
-                    "max_player":8,
-                    "price":36,
-                    "duration":50,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
+                    "age":"All age(6+)",
+                    "min_player":"2",
+                    "max_player":"10",
+                    "price":"29.89",
+                    "duration":"50",
+                    "activity_desc":"You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
                     "activity_slug":"treasure-island",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-treasure-island.jpg",
                     
                 },
                 {
                     "id":3,
-                    "activity_name":"HOLLYWOOD PREMIERE",
-                    "activity_type":"In person",
+                    "activity_name":"Zombie Apocalypse",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
-                    "age":"all Aage",
-                    "min_player":2,
-                    "max_player":8,
-                    "price":36,
-                    "duration":60,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                    "activity_slug":"hollywood-premiere",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
-                   
+                    "age":"All age(6+)",
+                    "min_player":"2",
+                    "max_player":"10",
+                    "price":"29.89",
+                    "duration":"50",
+                    "activity_desc":"The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+                    "activity_slug":"zombie-apocalypse",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+                    
                 },
                 {
                     "id":4,
-                    "activity_name":"Lost in The Jungle",
-                    "activity_type":"In person",
+                    "activity_name":"Sherlock's Library",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
-                    "min_player":2,
-                    "max_player":8,
-                    "price":28,
-                    "duration":60,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                    "activity_slug":"lost-in-the-jungle",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-lost-in-the-jungle.jpg",
-                    
+                    "min_player":"2",
+                    "max_player":"10",
+                    "price":"29.89",
+                    "duration":"50",
+                    "activity_desc":"London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+                    "activity_slug":"sherlocks-library",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+                   
                 },
                 {
                     "id":5,
                     "activity_name":"Black Ops",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
-                    "min_player":2,
-                    "max_player":8,
-                    "price":28,
-                    "duration":60,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
+                    "min_player":"2",
+                    "max_player":"10",
+                    "price":"29.89",
+                    "duration":"50",
+                    "activity_desc":"After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
                     "activity_slug":"black-ops",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-black-ops.jpg",
                     
                 },
                 {
                     "id":6,
-                    "activity_name":"Locked in the Lift",
-                    "activity_type":"In person",
+                    "activity_name":"Superhero's Adventure",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
-                    "age":"all Aage",
-                    "min_player":2,
-                    "max_player":8,
-                    "price":28,
-                    "duration":60,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                    "activity_slug":"locked-in-the-lift",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-locked-in-the-lift.jpg",
+                    "age":"All age(6+)",
+                    "min_player":"2",
+                    "max_player":"10",
+                    "price":"29.89",
+                    "duration":"50",
+                    "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+                    "activity_slug":"superheros-adventure",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                     
                 },
                 {
                     "id":7,
                     "activity_name":"HOUDINI'S MAGIC CELL",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
-                    "min_player":2,
-                    "max_player":8,
-                    "price":28,
-                    "duration":60,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
+                    "min_player":"2",
+                    "max_player":"10",
+                    "price":"29.89",
+                    "duration":"50",
+                    "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                     "activity_slug":"houdinis-magic-cell",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                     
                 },
-                {
-                    "id":8,
-                    "activity_name":"MAGIC CASTLE",
-                    "activity_type":"In person",
-                    "activity_category":"escapegame",
-                    "age":"all Aage",
-                    "min_player":2,
-                    "max_player":8,
-                    "price":28,
-                    "duration":60,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                    "activity_slug":"magic-castle",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-magic-castle.jpg",
-                    
-                },
-                {
-                    "id":9,
-                    "activity_name":"Superhero's Adventure",
-                    "activity_type":"In person",
-                    "activity_category":"escapegame",
-                    "age":"all Aage",
-                    "min_player":2,
-                    "max_player":8,
-                    "price":28,
-                    "duration":60,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                    "activity_slug":"superheros-adventure",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
-                    
-                },
                 
                 {
-                    "id":11,
+                    "id":8,
                     "activity_name":"Special Agent",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
-                    "age":"all Aage",
-                    "min_player":2,
-                    "max_player":8,
-                    "price":28,
-                    "duration":60,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
+                    "age":"All age(6+)",
+                    "min_player":"2",
+                    "max_player":"10",
+                    "price":"29.89",
+                    "duration":"50",
+                    "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
                     "activity_slug":"special-agent",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                     
                 },
                 {
-                    "id":12,
-                    "activity_name":"Sherlock's Library",
-                    "activity_type":"In person",
+                    "id":9,
+                    "activity_name":"HOLLYWOOD PREMIERE",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
-                    "age":"all Aage",
-                    "min_player":2,
-                    "max_player":8,
-                    "price":28,
-                    "duration":60,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                    "activity_slug":"sherlocks-library",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-sherlocks-library.jpg",
-                    
-                },
-                {
-                    "id":13,
-                    "activity_name":"Wizarding School ",
-                    "activity_type":"In person",
-                    "activity_category":"escapegame",
-                    "age":"all Aage",
-                    "min_player":2,
-                    "max_player":8,
-                    "price":28,
-                    "duration":60,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                    "activity_slug":"wizarding-school ",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-wizarding-school.jpg",
+                    "age":"All age(6+)",
+                    "min_player":"2",
+                    "max_player":"10",
+                    "price":"29.89",
+                    "duration":"50",
+                    "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+                    "activity_slug":"hollywood-premiere",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                    
                 },
-                {
-                    "id":14,
-                    "activity_name":"Beat The Seat",
-                    "activity_type":"In person",
-                    "activity_category":"other",
-                    "age":"all Aage",
-                    "min_player":2,
-                    "max_player":8,
-                    "price":28,
-                    "duration":60,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                    "activity_slug":"beat-the-seat",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-wizarding-school.jpg",
-                    
-                },
-                {
-                    "id":15,
-                    "activity_name":"Game Show Room",
-                    "activity_type":"In person",
-                    "activity_category":"other",
-                    "age":"all Aage",
-                    "min_player":2,
-                    "max_player":8,
-                    "price":28,
-                    "duration":60,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                    "activity_slug":"game-show-room",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-wizarding-school.jpg",
-                    
-                },
-                {
-                    "id":16,
-                    "activity_name":"Axe Throwing",
-                    "activity_type":"In person",
-                    "activity_category":"other",
-                    "age":"all Aage",
-                    "min_player":2,
-                    "max_player":8,
-                    "price":28,
-                    "duration":60,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                    "activity_slug":"axe-throwing",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-wizarding-school.jpg",
-                    
-                },
-                {
-                    "id":17,
-                    "activity_name":"Virtual Reality",
-                    "activity_type":"In person",
-                    "activity_category":"other",
-                    "age":"all Aage",
-                    "min_player":2,
-                    "max_player":8,
-                    "price":28,
-                    "duration":60,
-                    "activity_desc":"Select the number of participants fill out the details. fill out the number of details.",
-                    "activity_slug":"virtual-reality",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-virtual-reality.jpg",
-                   
-                },
-                
-                
-                
-    
               ]
         },
         //=========================================================austin-tx end
@@ -3514,14 +3314,14 @@ const LocActivityData={
                 {
                     "id":1,
                     "activity_name":"Escape from Alcatraz",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                     "activity_slug":"escape-from-alcatraz",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                     
@@ -3530,7 +3330,7 @@ const LocActivityData={
                 {
                     "id":2,
                     "activity_name":"Treasure Island",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
@@ -3542,11 +3342,10 @@ const LocActivityData={
                     "activity_cover_image":"/assets/all-game-list/allinadventures-treasure-island.jpg",
                     
                 },
-               
                 {
                     "id":4,
                     "activity_name":"Sherlock's Library",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
@@ -3561,7 +3360,7 @@ const LocActivityData={
                 {
                     "id":5,
                     "activity_name":"Black Ops",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
@@ -3577,14 +3376,14 @@ const LocActivityData={
                 {
                     "id":7,
                     "activity_name":"HOUDINI'S MAGIC CELL",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                    "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                     "activity_slug":"houdinis-magic-cell",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                     
@@ -3592,8 +3391,7 @@ const LocActivityData={
                 
                 
                 
-                
-              
+    
               ]
         },
         //=========================================================columbus-oh end
@@ -3610,14 +3408,14 @@ const LocActivityData={
                 {
                     "id":1,
                     "activity_name":"Escape from Alcatraz",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                     "activity_slug":"escape-from-alcatraz",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                     
@@ -3626,7 +3424,7 @@ const LocActivityData={
                 {
                     "id":2,
                     "activity_name":"Treasure Island",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
@@ -3641,7 +3439,7 @@ const LocActivityData={
                 {
                     "id":3,
                     "activity_name":"Zombie Apocalypse",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
@@ -3656,7 +3454,7 @@ const LocActivityData={
                 {
                     "id":4,
                     "activity_name":"Sherlock's Library",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
@@ -3671,7 +3469,7 @@ const LocActivityData={
                 {
                     "id":5,
                     "activity_name":"Black Ops",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
@@ -3686,14 +3484,14 @@ const LocActivityData={
                 {
                     "id":6,
                     "activity_name":"Superhero's Adventure",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                    "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                     "activity_slug":"superheros-adventure",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                     
@@ -3701,38 +3499,33 @@ const LocActivityData={
                 {
                     "id":7,
                     "activity_name":"HOUDINI'S MAGIC CELL",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                    "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                     "activity_slug":"houdinis-magic-cell",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                     
                 },
-                
-                
                 {
                     "id":9,
                     "activity_name":"HOLLYWOOD PREMIERE",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                    "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                     "activity_slug":"hollywood-premiere",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                    
                 },
-                
-              
-    
               ]
         },
         //=========================================================mentor-oh end
@@ -3749,14 +3542,14 @@ const LocActivityData={
                 {
                     "id":1,
                     "activity_name":"Escape from Alcatraz",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                     "activity_slug":"escape-from-alcatraz",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                     
@@ -3765,7 +3558,7 @@ const LocActivityData={
                 {
                     "id":2,
                     "activity_name":"Treasure Island",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
@@ -3780,7 +3573,7 @@ const LocActivityData={
                 {
                     "id":3,
                     "activity_name":"Zombie Apocalypse",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
@@ -3795,7 +3588,7 @@ const LocActivityData={
                 {
                     "id":4,
                     "activity_name":"Sherlock's Library",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
@@ -3810,7 +3603,7 @@ const LocActivityData={
                 {
                     "id":5,
                     "activity_name":"Black Ops",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
@@ -3825,14 +3618,14 @@ const LocActivityData={
                 {
                     "id":6,
                     "activity_name":"Superhero's Adventure",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                    "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                     "activity_slug":"superheros-adventure",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                     
@@ -3840,14 +3633,14 @@ const LocActivityData={
                 {
                     "id":7,
                     "activity_name":"HOUDINI'S MAGIC CELL",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                    "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                     "activity_slug":"houdinis-magic-cell",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                     
@@ -3856,19 +3649,18 @@ const LocActivityData={
                 {
                     "id":8,
                     "activity_name":"Special Agent",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+                    "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
                     "activity_slug":"special-agent",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                     
                 },
-                
               ]
         },
         //=========================================================dayton-oh end
@@ -3887,14 +3679,14 @@ const LocActivityData={
                 {
                     "id":1,
                     "activity_name":"Escape from Alcatraz",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                     "activity_slug":"escape-from-alcatraz",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                     
@@ -3903,7 +3695,7 @@ const LocActivityData={
                 {
                     "id":2,
                     "activity_name":"Treasure Island",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
@@ -3918,7 +3710,7 @@ const LocActivityData={
                 {
                     "id":3,
                     "activity_name":"Zombie Apocalypse",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
@@ -3933,7 +3725,7 @@ const LocActivityData={
                 {
                     "id":4,
                     "activity_name":"Sherlock's Library",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
@@ -3948,7 +3740,7 @@ const LocActivityData={
                 {
                     "id":5,
                     "activity_name":"Black Ops",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
@@ -3963,14 +3755,14 @@ const LocActivityData={
                 {
                     "id":6,
                     "activity_name":"Superhero's Adventure",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                    "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                     "activity_slug":"superheros-adventure",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                     
@@ -3978,14 +3770,14 @@ const LocActivityData={
                 {
                     "id":7,
                     "activity_name":"HOUDINI'S MAGIC CELL",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                    "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                     "activity_slug":"houdinis-magic-cell",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                     
@@ -3994,14 +3786,14 @@ const LocActivityData={
                 {
                     "id":8,
                     "activity_name":"Special Agent",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"After the capture of one of the world's most infamous money launderers, one of his associates is planning to distribute forged notes across the globe. Discover his plans and stop him in his tracks!",
+                    "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
                     "activity_slug":"special-agent",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                     
@@ -4009,19 +3801,18 @@ const LocActivityData={
                 {
                     "id":9,
                     "activity_name":"HOLLYWOOD PREMIERE",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":'Live from Hollywood, California, You are the next lucky contestant on our exciting game show called "Name That Celebrity"! To win the game, name our secret celebrity and discover which booth they are hiding behind!',
+                    "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                     "activity_slug":"hollywood-premiere",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
                    
                 },
-    
               ]
         },
         //=========================================================roanoke-va end
@@ -4039,14 +3830,14 @@ const LocActivityData={
                 {
                     "id":1,
                     "activity_name":"Escape from Alcatraz",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them all before the prisoners make their escape.",
+                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                     "activity_slug":"escape-from-alcatraz",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                     
@@ -4055,7 +3846,7 @@ const LocActivityData={
                 {
                     "id":2,
                     "activity_name":"Treasure Island",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
@@ -4070,7 +3861,7 @@ const LocActivityData={
                 {
                     "id":3,
                     "activity_name":"Zombie Apocalypse",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
@@ -4085,7 +3876,7 @@ const LocActivityData={
                 {
                     "id":4,
                     "activity_name":"Sherlock's Library",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
@@ -4100,7 +3891,7 @@ const LocActivityData={
                 {
                     "id":5,
                     "activity_name":"Black Ops",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
@@ -4115,14 +3906,14 @@ const LocActivityData={
                 {
                     "id":6,
                     "activity_name":"Superhero's Adventure",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"All age(6+)",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"The arch-criminal, Matador, and his team of henchmen have devised an evil plan to take over the city. As protectors of Darkover City, you must use your superhero powers to stop the Matador and his henchmen from carrying out their evil plan.",
+                    "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                     "activity_slug":"superheros-adventure",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
                     
@@ -4130,25 +3921,22 @@ const LocActivityData={
                 {
                     "id":7,
                     "activity_name":"HOUDINI'S MAGIC CELL",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"escapegame",
                     "age":"all Aage",
                     "min_player":"2",
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better than Houdini himself!",
+                    "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                     "activity_slug":"houdinis-magic-cell",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
                     
                 },
-                
-               
-                
                 {
                     "id":14,
                     "activity_name":"Beat The Seat",
-                    "activity_type":"In person",
+                    "activity_type":"In-person",
                     "activity_category":"other",
                     "age":"all Aage",
                     "min_player":2,
@@ -4160,7 +3948,7 @@ const LocActivityData={
                     "activity_cover_image":"/assets/all-game-list/allinadventures-beat-the-seat.jpg",
                     
                 },
-                
+    
               ]
         },
         //=========================================================lawrenceville-ga end

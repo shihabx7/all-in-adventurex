@@ -110,7 +110,7 @@ const location=(props)=>{
                                 <div className='text-red'>{props.slug}</div>
                         {/* =======header content and breadcum======== end */}
                         {/* ===========Page Content here========= */}
-                            <LocationHomeHero pagedata={props.pagedata}/>
+                            <LocationHomeHero pagedata={props.pagedata}  activitylist={props.activitylist}/>
                             <HowToPlay city={props.pagedata.locationcity}/>
                              <InpersonEscapeSlider city={props.pagedata.locationcity} state={props.pagedata.locationstate} locationslug={props.pagedata.slug} inpersongames={props.inpersongames} bookingData={props.bookingData}/>
                             {
@@ -135,9 +135,7 @@ const location=(props)=>{
                             <LocationDetails locdetail={props.pagedata.locdetail}/>
 
                 </div>
-                {
-                    console.log(props.pagedata)
-                }
+                
 
             <Footer  location={props.pagedata.locationcity+", "+props.pagedata.locationstate}
                          locationlist={props.locationlist} 

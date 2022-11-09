@@ -21,7 +21,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                         "id":1,
                                         "city":"Albany",
-                                        "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                        "city_include":"Our customers come from many surrounding cities, including Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield and many more!",
                                         "entry_guid":"Use the 2nd floor mall entrance between the J.C.Penney and Pottery Barn, take a left at the escalators. We are located on the right side, between Athleta and Zara, across from Banana Republic.",
                                         "address":"1 Crossgates Mall",
                                         "zip":"12203",
@@ -86,7 +86,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                         "id":2,
                                         "city":"Buffalo",
                                         "address":"1 Walden Galleria b108",
-                                        "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                        "city_include":"Our customers come from many surrounding cities, including North Tonawanda, Cheektowaga, Medina, Hamburg, Amherst, and many more!",
                                         "entry_guid":"Our store is located on the 1st floor between JC Penny's and Macy's, across from Lord and Taylor.",
                                         "zip":"14225", 
                                         "fivestar":"4130",
@@ -146,7 +146,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                         "id":3,
                                         "city":"Middletown",
-                                        "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                        "city_include":"Our customers come from many surrounding cities, including Vernon, Newton, West Nyack, Poughkeepsie, Newburgh, and many more!",
                                         "entry_guid":"Our store is located on the 2nd floor. We are between H&M and American Eagle clothing stores.",
                                         "address":"1 Galleria Dr a211",
                                         "slug":"middletown-ny",
@@ -208,7 +208,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                         "id":4,
                                         "city":"Syracuse",
-                                        "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                        "city_include":"Our customers come from many surrounding cities, including Auburn, Oneida, Oswego, New York and many more!",
                                         "entry_guid":"Our store is on the 2nd floor right next to Lindt Chocolate shop.  You can use the entrance by the Cheesecake Factory.",
                                         "slug":"syracuse-ny",
                                         "address":" 9090 Destiny USA Drive",
@@ -270,7 +270,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                       "id":5,
                                       "city":"Watertown",
-                                      "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                      "city_include":"Our customers come from many surrounding cities, including Belleville, Clayton, Dexter, Oswego, Limerick and many more!",
                                       "entry_guid":"Our Store is located near Sears and next to Fun on the Run arcade.",
                                       "address":"21182 Salmon Run Mall Loop W",
                                       "slug":"watertown-ny",
@@ -332,7 +332,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                   {
                                     "id":6,
                                     "city":"West Nyack",
-                                    "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                    "city_include":"Our customers come from many surrounding cities, including Montclair, Massapequa, White Plains, Morristown, Danbury, and many more!",
                                     "entry_guid":"Our store is located on the 3rd floor food court level, just across the hall from 5 Below store.",
                                     "slug":"west-nyack-ny",
                                     "address":"3681 Palisades Center Dr",
@@ -455,7 +455,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                               }
 
                                 ]
-                    },
+                        },
               //========================================== ============1 Ny Satate end
               //========================================== 2 NORTH CAROLINA
                     {
@@ -466,7 +466,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                           {
                             "id":1,
                             "city":"Raleigh",
-                            "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                            "city_include":"Our customers come from many surrounding cities, including Chapel Hill, Morrisville, Carrboro, Cary, Apex, Holly Springs, Zebulon, Wake Forest, Hillsborough, Pittsboro and many more!",
                             "entry_guid":"We are right off exit 17 on Interstate-540, and directly off of Capital Blvd. behind Best Buy. We are attached on the outside of the mall next to Barnes & Noble.",
                             "slug":"raleigh-nc",
                             "address":"5959 Triangle Town Blvd Space EU 2113",
@@ -541,8 +541,8 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                      {
                                         "id":1,
                                         "city":"Bensalem",
-                                        "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
-                                        "entry_guid":"Our store is located in the AMC wing, across from Modell’s Sporting Goods.",
+                                        "city_include":"Our customers come from many surrounding cities, including Philadelphia, King of Prussia, Doylestown, Princeton, NJ and many more!",
+                                        "entry_guid":"Our store is located in the AMC wing, across from Modell's Sporting Goods.",
                                         "slug":"bensalem-pa",
                                         "address":"707 Neshaminy Mall Space 672",
                                         "zip":19020,
@@ -612,7 +612,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                         "id":1,
                                         "city":"Hadley",
-                                        "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                        "city_include":"Our customers come from many surrounding cities, including Easthampton, Windsor Locks, Amherst, Gardner, Northampton and many more!",
                                         "entry_guid":"Our store is located between Pinz and Jo~Ann Fabric, across from Body Spa and Elite Tae Kwon Do.",
                                         "slug":"hadley-ma",
                                         "address":"367 Russell St A07",
@@ -674,7 +674,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                       "id":2,
                                       "city":"Holyoke",
-                                      "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                      "city_include":"Our customers come from many surrounding cities, including Worcester, Williamsburg, Chesterfield, Easthampton and many more!",
                                         "entry_guid":"Our store is located on the 1st floor across from Baby Gap.",
                                       "slug":"holyoke-ma",
                                       "address":"Holyoke Mall, 50 Holyoke St",
@@ -737,7 +737,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                   {
                                     "id":3,
                                     "city":"Kingston",
-                                    "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                    "city_include":"Our customers come from many surrounding cities, including Boston, New Bedford, Plymouth, Falmouth, MA and many more!",
                                     "entry_guid":"Our store is located around the corner from the Target entrance, across from Clark's Outlet and next to Victoria's Secret.",
                                     "slug":"kingston-ma",
                                     "address":"101 Kingston Collection Way",
@@ -800,8 +800,8 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                 {
                                   "id":4,
                                   "city":"N Attleborough",
-                                  "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
-                                   "entry_guid":"Our store is on the 2nd floor near the Macy’s store.",
+                                  "city_include":"Our customers come from many surrounding cities, including Auburn, Boston, New Bedford and many more!",
+                                   "entry_guid":"Our store is on the 2nd floor near the Macy's store.",
                                   "slug":"n-attleborough-ma",
                                   "address":"999 S Washington St",
                                   "zip":"02760",
@@ -872,7 +872,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                         "id":1,
                                         "city":"Milford",
-                                        "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                        "city_include":"Our customers come from many surrounding cities, including New Haven, Stamford, Ronkonkoma, Danbury, Middletown, and many more! ",
                                         "entry_guid":"Customers can find the store fastest via the Target entrance. Head to the lower-level main corridor, take a left and we are on the right side next to Eblens.",
                                         "slug":"milford-ct",
                                         "address":"1201 Boston Post Rd",
@@ -935,8 +935,8 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                       "id":2,
                                       "city":"Manchester",
-                                      "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
-                                        "entry_guid":"Our Store is located on the 2nd floor, between Spencer’s and Sears. The best entrance to use is the mall entrance between Maggie Mcfly's and Sears.",
+                                      "city_include":"Our customers come from many surrounding cities, including Hartford, West Hartford, Middletown, Windsor Locks, Bristol, New Britain and many more!",
+                                        "entry_guid":"Our Store is located on the 2nd floor, between Spencer's and Sears. The best entrance to use is the mall entrance between Maggie Mcfly's and Sears.",
                                       "slug":"manchester-ct",
                                       "address":"194 Buckland Hills Dr Space 2002",
                                       "zip":'06042',
@@ -998,7 +998,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                   {
                                     "id":3,
                                     "city":"Waterbury",
-                                    "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                    "city_include":"Our customers come from many surrounding cities, including New Haven, Stamford, West Hartford, Danbury, Norwalk, and many more!",
                                         "entry_guid":"Our Store is located on the 1st floor between FYE and Payless across from Mix Box.",
                                     "slug":"waterbury-ct",
                                     "address":"495 Union St # 1158",
@@ -1071,7 +1071,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                         "id":1,
                                         "city":"Bowie",
-                                        "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                        "city_include":" ",
                                         "entry_guid":"Our store is between Barnes & Noble and LA Fitness.",
                                         "slug":"bowie-md",
                                         "address":"15421 Emerald Way",
@@ -1133,7 +1133,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                       "id":2,
                                       "city":"White Marsh",
-                                      "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                      "city_include":" ",
                                         "entry_guid":"Our Store is located on the Upper Level next to JC Penny.",
                                       "slug":"white-marsh-md",
                                       "address":"8200 Perry Hall Blvd #2005",
@@ -1204,7 +1204,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                         "id":1,
                                         "city":"East Brunswick",
-                                        "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                        "city_include":" ",
                                         "entry_guid":"Our store is between Panera and JC Penny.",
                                         "slug":"east-brunswick-nj",
                                         "address":"1 welder garden",
@@ -1267,7 +1267,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                       "id":2,
                                       "city":"Rockaway",
-                                      "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                      "city_include":"Our customers come from many surrounding cities, including Andover, Dover, Livingston, Morristown, Newark, New Jersey and many more!",
                                         "entry_guid":"Our store is on the lower level near the mall entrance by JC Penny.",
                                       "slug":"rockaway-nj",
                                       "address":"301 Mt Hope Ave",
@@ -1329,7 +1329,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                   {
                                     "id":3,
                                     "city":"Woodbridge",
-                                    "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                    "city_include":" ",
                                     "entry_guid":"Our store is in the lower level of the JCPenney & Boscov wing.",
                                     "slug":"woodbridge-nj",
                                     "address":"250 Woodbridge Center Dr",
@@ -1400,7 +1400,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                           {
                             "id":3,
                             "city":"Austin",
-                            "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                            "city_include":" ",
                             "entry_guid":"Use the 2nd floor mall entrance between the J.C.Penney and Pottery Barn, take a left at the escalators. We are located on the right side, between Athleta and Zara, across from Banana Republic.",
                             "slug":"austin-tx",
                             "address":"250 texas austin",
@@ -1470,7 +1470,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                           {
                             "id":1,
                             "city":"Roanoke",
-                            "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                            "city_include":"Our customers come from many surrounding cities, including Blacksburg, Christiansburg, Salem and many more!",
                             "entry_guid":"We are inside the mall beside Sears and the food court.",
                             "slug":"roanoke-va",
                             "address":"250 Woodbridge Center Dr",
@@ -1539,8 +1539,8 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                           {
                             "id":1,
                             "city":"Columbus",
-                            "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
-                            "entry_guid":"We are located inside the mall near Macy’s on the upper level.",
+                            "city_include":"Our customers come from many surrounding cities, including Bexley, Upper Arlington, Whitehall, Lincoln Village, Gahanna, Grove City, Blacklick Estates, Worthington, Hilliard, Reynoldsburg, Dublin, Westerville, Pickerington, Pataskala, Delaware and many more!",
+                            "entry_guid":"We are located inside the mall near Macy's on the upper level.",
                             "slug":"columbus-oh",
                             "address":"1500 Polaris Pkwy Space 2252",
                             "zip":'43240',
@@ -1600,8 +1600,8 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                         {
                           "id":2,
                           "city":"Mentor",
-                          "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
-                          "entry_guid":"We are located inside the mall near Dick’s Sporting Goods.",
+                          "city_include":"Our customers come from many surrounding cities, including Willoughby, Eastlake, Painesville, Willowick, Wickliffe, Euclid, Richmond Heights, Mayfield Heights, Lyndhurst, South Euclid, Cleveland Heights, East Cleveland, University Heights, Beachwood, Shaker Heights and many ",
+                          "entry_guid":"We are located inside the mall near Dick's Sporting Goods.",
                           "slug":"mentor-oh",
                           "address":"7850 Mentor Ave #1050a",
                           "zip":'44060',
@@ -1661,8 +1661,8 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                       {
                         "id":3,
                         "city":"Dayton",
-                        "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
-                        "entry_guid":" ",
+                        "city_include":"Our customers come from many surrounding cities, including Riverside, Kettering, West Carrollton City, Huber Heights, Trotwood, Beavercreek, Vandalia, Centerville, Miamisburg, Englewood, Fairborn, Clayton, Tipp City, Springboro, Xenia and many more!",
+                        "entry_guid":" CHVKED",
                         "slug":"dayton-oh",
                         "address":"2700 Miamisburg Centerville Rd Space 300",
                         "zip":'45459',
