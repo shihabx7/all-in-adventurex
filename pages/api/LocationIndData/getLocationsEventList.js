@@ -37,6 +37,7 @@ export const getLocationsEventList=(locationslug)=>{
    
    const cityName=(loc)=>{
     var ctname=loc.split("-")
+    if(ctname[0]=="n"){ ctname[0]="n."}
     var st=ctname[ctname.length-1].toUpperCase()
     var ct=''
 
@@ -67,7 +68,7 @@ export const getLocationsEventList=(locationslug)=>{
           "pagedata": {
                         "pagetitle":"PARTIES, EVENTS AND SPECIAL OCCASIONS IN "+cityName(locationslug),
                         "locationslug":locationslug,
-                        "location_name":locationslug.split('-').join(' '),
+                        "location_name":cityName(locationslug),
                         "mall":getLocSpec(locationslug).mall,
                         "pagesubtitle":"Celebrate any special event at All In Adventures escape rooms in "+cityName(locationslug)+"! Team up with your family, friends, kids, co-workers, and anybody and everybody for an incredible memory to last forever. Whether they are 6 or 99, we have something for everyone.",
                         "totalLocations": getTotal().totalLocations,

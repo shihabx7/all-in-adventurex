@@ -86,7 +86,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                         "id":2,
                                         "city":"Buffalo",
                                         "address":"1 Walden Galleria b108",
-                                        "city_include":"Our customers come from many surrounding cities, including North Tonawanda, Cheektowaga, Medina, Hamburg, Amherst, and many more!",
+                                        "city_include":"Our customers come from many surrounding cities, including North Tonawanda, Cheektowaga, Medina, Hamburg, Amherst and many more!",
                                         "entry_guid":"Our store is located on the 1st floor between JC Penny's and Macy's, across from Lord and Taylor.",
                                         "zip":"14225", 
                                         "fivestar":"4130",
@@ -146,7 +146,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                         "id":3,
                                         "city":"Middletown",
-                                        "city_include":"Our customers come from many surrounding cities, including Vernon, Newton, West Nyack, Poughkeepsie, Newburgh, and many more!",
+                                        "city_include":"Our customers come from many surrounding cities, including Vernon, Newton, West Nyack, Poughkeepsie, Newburgh and many more!",
                                         "entry_guid":"Our store is located on the 2nd floor. We are between H&M and American Eagle clothing stores.",
                                         "address":"1 Galleria Dr a211",
                                         "slug":"middletown-ny",
@@ -332,7 +332,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                   {
                                     "id":6,
                                     "city":"West Nyack",
-                                    "city_include":"Our customers come from many surrounding cities, including Montclair, Massapequa, White Plains, Morristown, Danbury, and many more!",
+                                    "city_include":"Our customers come from many surrounding cities, including Montclair, Massapequa, White Plains, Morristown, Danbury and many more!",
                                     "entry_guid":"Our store is located on the 3rd floor food court level, just across the hall from 5 Below store.",
                                     "slug":"west-nyack-ny",
                                     "address":"3681 Palisades Center Dr",
@@ -799,7 +799,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                 },
                                 {
                                   "id":4,
-                                  "city":"N Attleborough",
+                                  "city":"N. Attleborough",
                                   "city_include":"Our customers come from many surrounding cities, including Auburn, Boston, New Bedford and many more!",
                                    "entry_guid":"Our store is on the 2nd floor near the Macy's store.",
                                   "slug":"n-attleborough-ma",
@@ -998,7 +998,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                   {
                                     "id":3,
                                     "city":"Waterbury",
-                                    "city_include":"Our customers come from many surrounding cities, including New Haven, Stamford, West Hartford, Danbury, Norwalk, and many more!",
+                                    "city_include":"Our customers come from many surrounding cities, including New Haven, Stamford, West Hartford, Danbury, Norwalk and many more!",
                                         "entry_guid":"Our Store is located on the 1st floor between FYE and Payless across from Mix Box.",
                                     "slug":"waterbury-ct",
                                     "address":"495 Union St # 1158",
@@ -1662,7 +1662,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                         "id":3,
                         "city":"Dayton",
                         "city_include":"Our customers come from many surrounding cities, including Riverside, Kettering, West Carrollton City, Huber Heights, Trotwood, Beavercreek, Vandalia, Centerville, Miamisburg, Englewood, Fairborn, Clayton, Tipp City, Springboro, Xenia and many more!",
-                        "entry_guid":" CHVKED",
+                        "entry_guid":"We are located inside the Dayton Mall near Space 300.",
                         "slug":"dayton-oh",
                         "address":"2700 Miamisburg Centerville Rd Space 300",
                         "zip":'45459',

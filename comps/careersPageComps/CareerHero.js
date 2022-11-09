@@ -18,7 +18,7 @@ const CareerHero=(props)=>{
                 
                  
                  <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os uppercase'>{props.pagedata.pagetitle}</h1>
-                 <p className='text-gray-100 max-w-2xl mx-auto text-center lg:text-lg'>{props.pagedata.pagesubtitle} </p>
+                 <p className='text-gray-100 max-w-[800px] mx-auto text-center lg:text-lg'>{props.pagedata.pagesubtitle} </p>
                  </div>
                 <div className="max-w-md mx-auto mt-8 ">
 

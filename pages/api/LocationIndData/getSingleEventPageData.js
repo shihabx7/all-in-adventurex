@@ -42,14 +42,26 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
         
       }
    }
-   const getLocationSearchName=(slug)=>{
-      var locs=slug.split("-")
-      var st=locs[locs.length-1].toString()
-      locs=locs.slice(0,-1)
-      locs=locs.join(' ')
+   const locnameMod=(locname)=>{
+    var spLoc=locname.split("-")
+    if(spLoc[0]=="n"){
+      spLoc[0]=spLoc[0]+"."
+    }
+    var ret=spLoc.join(' ')
+    return ret
+  }
 
-      return locs+", "+st
-   }
+  const getLocationSearchName=(slug)=>{
+    var locs=slug.split("-")
+    if(locs[0]=="n"){
+      locs[0]="n."
+    }
+    var st=locs[locs.length-1].toString()
+    locs=locs.slice(0,-1)
+    locs=locs.join(' ')
+
+    return locs+", "+st
+ }
    const getLocationSearchName2=(slug)=>{
     var locs=slug.split("-")
     var st=locs[locs.length-1].toString()
@@ -74,6 +86,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
 
     return ct+st
 }
+
 // all events data
    const eventlocdata={
     //********************************************************birth day parties */
@@ -1450,12 +1463,12 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
          "eventlistSlug":getLocTotal(locationslug).eventlistSlug,
             
          "pagedata":{
-             "pagetitle":"ESCAPE ROOM "+eventName+" in "+getLocationSearchName2(locationslug),
+             "pagetitle":"ESCAPE ROOM "+eventName+" in "+locnameMod(locationslug),
              "event_name":eventName,
              "event_slug":eventslug,
              "locationslug":locationslug,
              "mall":getLocSpec(locationslug).mall,
-             "location_name":locationslug.split('-').join(' '),
+             "location_name":locnameMod(locationslug),
              "location_serach_name":getLocationSearchName(locationslug),
              "slug":eventslug,
              "pagesubtitle":eventlocdata[eventslug].pagesubtitle,

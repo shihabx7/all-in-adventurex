@@ -13,6 +13,9 @@ export const getLocationIndActivityList=(slug)=>{
     }
     const cityName=(loc)=>{
         var ctname=loc.split("-")
+        if(ctname[0]=="n"){
+            ctname[0]="n."
+        }
         var st=ctname[ctname.length-1].toUpperCase()
         var ct=''
 
@@ -27,6 +30,26 @@ export const getLocationIndActivityList=(slug)=>{
 
         return ct+st
     }
+    const locnameMod=(locname)=>{
+        var spLoc=locname.split("-")
+        if(spLoc[0]=="n"){
+          spLoc[0]=spLoc[0]+"."
+        }
+        var ret=spLoc.join(' ')
+        return ret
+      }
+    
+      const getLocationSearchName=(slug)=>{
+        var locs=slug.split("-")
+        if(locs[0]=="n"){
+          locs[0]="n."
+        }
+        var st=locs[locs.length-1].toString()
+        locs=locs.slice(0,-1)
+        locs=locs.join(' ')
+    
+        return locs+", "+st
+     }
 const bookingAll=bookingList('',slug)
     
     const data={
@@ -38,8 +61,8 @@ const bookingAll=bookingList('',slug)
           },
            
           "pagedata": {
-                       "pagetitle":"ALL ESCAPE ROOMS AND ADVENTURE ACTIVITIES IN "+cityName(slug),
-                       "location_name":locationName(),
+                       "pagetitle":"ALL ESCAPE ROOMS AND ADVENTURE ACTIVITIES IN "+locnameMod(slug),
+                       "location_name":locnameMod(slug),
                        "locationslug":slug,
                        "mall":LocActivityData[slug].mall,
                        "pagesubtitle":"Play the top "+cityName(slug)+" escape rooms and other adventure games. For 50 minutes, experience fun-filled immersive entertainment with friends, family, kids or co-works. Escape normal life, and be the hero of the story!",

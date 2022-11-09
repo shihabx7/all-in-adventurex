@@ -59,7 +59,7 @@ const LocSingleActivity=(props)=>{
  
                  </div>
  
-             <Footer  location="n attleborough, ma" locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
+             <Footer  location="n. attleborough, ma" locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
          </>
  
      )

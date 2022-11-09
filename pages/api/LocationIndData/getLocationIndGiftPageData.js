@@ -40,12 +40,13 @@ export const getLocationIndGiftPageData=(locationslug)=>{
 
          const cityName=(loc)=>{
           var ctname=loc.split("-")
+          if(ctname[0]=="n"){ctname[0]="n."}
           var st=ctname[ctname.length-1].toUpperCase()
           var ct=''
       
           if(ctname.length>2){
-              for(var i=0;i<ctname.length-2 ;i++){
-                  ct=ctname[i].charAt(0).toUpperCase()+ctname[i].slice(1)+' '
+              for(var i=0;i<ctname.length-1 ;i++){
+                  ct=ct+ ctname[i].charAt(0).toUpperCase()+ctname[i].slice(1)+' '
               }
           }
           else{
@@ -73,7 +74,7 @@ export const getLocationIndGiftPageData=(locationslug)=>{
             
             "coverimageL":"/assets/gn-desktop-hero/allinadventures-gift-cards-hero.jpg",
             "coverimageM":"/assets/gn-mobile-hero/allinadventures-gift-cards-hero.jpg",
-            "location_name":locationname,
+            "location_name":cityName(locationslug),
             "locationslug":locationslug,
             "mall":getLocSpec(locationslug).mall,
             "totalLocations":totalLocation(),

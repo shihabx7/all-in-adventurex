@@ -8,6 +8,7 @@ import { getLocTotal } from "../AllDataList/getLocTotal"
 
     const activitiesName=gameslug.toString().split('-').join(' ')
     const locationname=locationslug.toString().split('-').join(' ')
+    
    const malldata=getLocationIndActivityList(locationslug)
 
    const bookingdata=bookingList(gameslug,locationslug)
@@ -23,9 +24,20 @@ import { getLocTotal } from "../AllDataList/getLocTotal"
       return total
 
     }
+    const locnameMod=(locname)=>{
+      var spLoc=locname.split("-")
+      if(spLoc[0]=="n"){
+        spLoc[0]=spLoc[0]+"."
+      }
+      var ret=spLoc.join(' ')
+      return ret
+    }
 
     const getLocationSearchName=(slug)=>{
       var locs=slug.split("-")
+      if(locs[0]=="n"){
+        locs[0]="n."
+      }
       var st=locs[locs.length-1].toString()
       locs=locs.slice(0,-1)
       locs=locs.join(' ')
@@ -54,7 +66,7 @@ import { getLocTotal } from "../AllDataList/getLocTotal"
             "totalLocations":totalLocation(),
             "slug":gameslug,
             "locationslug":locationslug,
-            "location_name":locationname,
+            "location_name":locnameMod(locationslug),
             "location_serach_name":getLocationSearchName(locationslug),
             "mall":malldata.pagedata.mall,
             "price":activityDataset[gameslug].price,

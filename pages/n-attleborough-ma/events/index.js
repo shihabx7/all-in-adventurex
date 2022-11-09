@@ -19,6 +19,7 @@ const LocEventList=(props)=>{
        
         
         var locname=slug.split('-')
+        if(locname[0]=="n"){locname[0]="n."}
         var st=locname[locname.length-1].toString()
 
         locname=locname.slice(0,-1)
@@ -59,7 +60,7 @@ const LocEventList=(props)=>{
                         
                  </div>
  
-             <Footer location="n attleborough, ma" locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
+             <Footer location="n. attleborough, ma" locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
          </>
  
      )

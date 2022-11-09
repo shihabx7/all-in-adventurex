@@ -12,7 +12,7 @@ export const getJobPositionPageData=(jobname)=>{
            
         "pagedata":{
             "pagetitle":"APPLY FOR "+jobtitle(),
-            "pagesubtitle":jobData[jobname].pagesubtitle,
+            "pagesubtitle":"This is a great opportunity for anyone excited for the chance to grow and develop with a startup company that is looking to change the face of how people interact socially through live games and activities.",
             "coverimageL":jobData[jobname].coverimageL,
             "coverimageM":jobData[jobname].coverimageM,
             "job_designation":jobtitle(),
@@ -37,7 +37,7 @@ const jobData={
 
         "coverimageL":"/assets/gn-desktop-hero/allinadventures-career-associate-hero.jpg",
         "coverimageM":"/assets/gn-mobile-hero/allinadventures-career-associate-hero.jpg",
-        "pagesubtitle":"This is a great opportunity for anyone excited for the chance to grow and develop with a startup company that is looking to change the face of how people.",
+        "pagesubtitle":"This is a great opportunity for anyone excited for the chance to grow and develop with a startup company that is looking to change the face of how people interact socially through live games and activities.",
         "pagemeta":{
 
             "matatilte":"title",

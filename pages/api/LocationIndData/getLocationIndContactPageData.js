@@ -28,21 +28,41 @@ export const getLocationIndContactPageData=(locationslug)=>{
         }
      }
 
+     const locnameMod=(locname)=>{
+      var spLoc=locname.split("-")
+      if(spLoc[0]=="n"){
+        spLoc[0]=spLoc[0]+"."
+      }
+      var ret=spLoc.join(' ')
+      return ret
+    }
+
+    const getLocationSearchName=(slug)=>{
+      var locs=slug.split("-")
+      if(locs[0]=="n"){
+        locs[0]="n."
+      }
+      var st=locs[locs.length-1].toString()
+      locs=locs.slice(0,-1)
+      locs=locs.join(' ')
+
+      return locs+", "+st
+   }
     const contactPageData={
         "pagemeta":{
 
-            "title":"All in adventure contact store | escape room in "+locationName(locationslug),
-            "description":"Contact escape room in "+locationName(locationslug),
-            "keywords":"escape room, escape room contact, escape room in "+locationName(locationslug)
+            "title":"All in adventure contact store | escape room in "+locnameMod(locationslug),
+            "description":"Contact escape room in "+locnameMod(locationslug),
+            "keywords":"escape room, escape room contact, escape room in "+locnameMod(locationslug)
           },
            
         "pagedata":{
-            "pagetitle":"CONTACT ALL IN ADVENTURES "+locationslug.split('-').join(' ')+" STORE",
+            "pagetitle":"CONTACT ALL IN ADVENTURES "+locnameMod(locationslug)+" STORE",
             "pagesubtitle":"Our team is here to help you. Contact us with any questions you have about an upcoming or previous experience. Before reaching out, we recommend you check our <a href=\"/faq\" class=\"text-gold hover:text-blue-700\">FAQs</a> page first to see if your question has been answered.",
             
             "locationslug":getLocSpec(locationslug).slug,
             "mall":getLocSpec(locationslug).mall,
-            "location_name":locationName(locationslug),
+            "location_name":locnameMod(locationslug),
             "coverimageL":"/assets/allinadventures-store-contact-hero.jpg",
             "coverimageM":"/assets/gn-mobile-hero/allinadventures-store-contact-hero.jpg",
            

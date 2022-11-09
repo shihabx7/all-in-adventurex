@@ -42,7 +42,7 @@ export const getCareerHomePageData=()=>{
                 "id":3,
                 "job_slug":"assistant-manager",
                 "job_title":"ASSISTANT MANAGER",
-                "short_desc":"ASSISTANT MANAGER Our Assistant Manager assists the Store Manager in encouraging the team to achieve success by ensuring our guests' overall satisfaction. The ideal candidates need positive attitude, willingness to provide outstanding guest service, and a desire to succeed. They must utilize their communication skills."
+                "short_desc":"Our Assistant Manager assists the Store Manager in encouraging the team to achieve success by ensuring our guests' overall satisfaction. The ideal candidates need positive attitude, willingness to provide outstanding guest service, and a desire to succeed. They must utilize their communication skills."
                
             },
             {
