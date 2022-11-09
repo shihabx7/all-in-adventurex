@@ -56,7 +56,7 @@ const LocationDetails=(props)=>{
                      <TitleSeparator title={'ALL IN ADVENTURES '+props.locdetail.city+' LOCATION DETAILS'} color='golden-text' weight='font-bold'/>
                         <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-16">
                            <p className="text-gray-[600] md:px-8">We are conveniently located at {props.locdetail.mall} in {props.locdetail.city} {locState(props.locdetail.slug)}. 
-                           Our customers come from many surrounding cities, including {props.locdetail.city_include} and across the United States.</p>
+                           {props.locdetail.city_include}</p>
                       </div>
                 </div> 
                 <div className="location-spc-map drop-shadow-md border-2 border-gold">
