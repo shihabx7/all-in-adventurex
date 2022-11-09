@@ -71,7 +71,7 @@ const LocationHomeHero=(props)=>{
                  <p className='text-gray-100 max-w-[800px] mx-auto text-center lg:text-lg'>
                         All In Adventures {props.pagedata.locationcity} (formerly Mystery Room {props.pagedata.locationcity}),
                         has family and kid friendly Escape Rooms{getOtherActivity(props.activitylist)+" "} 
-                        that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in in {props.pagedata.locationcity} <span className="uppercase">{props.pagedata.locationstate}</span>.
+                        that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in {props.pagedata.locationcity} <span className="uppercase">{props.pagedata.locationstate}</span>.
 
                  </p>
                  </div>
