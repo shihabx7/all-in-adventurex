@@ -87,7 +87,7 @@ export const getTestimonialPageData=()=>{
             {
                 "id":7,
                 "category":"birthday",
-                "img":"/assets/reviews/allinadventures-escape room-customers-testimonial-2.jpg",
+                "img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-1.jpg",
                 "title":"Did A Great Job Planning Everything!",
                 "description":"We had my daughter's 8th birthday here and they were incredibly easy to work with and did a great job planning everything. It was honestly one of the easiest parties I have ever done. The kids had a great time and I would not hesitate to go back again!",
                 "location":"Albany, NY",
@@ -97,7 +97,7 @@ export const getTestimonialPageData=()=>{
             {
                 "id":8,
                 "category":"birthday",
-                "img":"/assets/reviews/allinadventures-escape room-customers-testimonial-3.jpg",
+                "img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-5.jpg",
                 "title":"Will Definitely Come Again!",
                 "description":"I came for a birthday party and had a lot of fun! We did the Hollywood escape room which was really good. Game host was very friendly and helpful to us during the entire experience. I will definitely come again! ",
                 "location":"Albany, NY",
@@ -107,7 +107,7 @@ export const getTestimonialPageData=()=>{
             {
                 "id":9,
                 "category":"birthday",
-                "img":"/assets/reviews/allinadventures-escape room-customers-testimonial-4.jpg",
+                "img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-4.jpg",
                 "title":"Great Birthday Mystery Room!",
                 "description":"Sierra was an awesome host. She helped us when we just had a few minutes left. It was a great birthday mystery room and we had a lot of fun. Just when we thought we couldn't handle another lock, she encouraged us and gave us great hints.",
                 "location":"Albany, NY",
@@ -117,7 +117,7 @@ export const getTestimonialPageData=()=>{
             {
                 "id":10,
                 "category":"birthday",
-                "img":"/assets/reviews/allinadventures-escape room-customers-testimonial-5.jpg",
+                "img":"/assets/all-testimonials-image/allinadventures-events-birthday-party-testimonials-2.jpg",
                 "title":"Celebrated Two 40 Year Old Birthdays!",
                 "description":"We had an amazing time at the Alcatraz Escape Room. We celebrated two 40 year old birthdays. Serina was an amazing hostess; she gave us clues but let us figure out the puzzles ourselves. It was a very challenging and exciting experience.",
                 "location":"Albany, NY",

@@ -28,7 +28,7 @@ const testimonials=(props)=>{
           <>
               {/* =======header content======== */}
            <Head>
-                 <title>All in adventure | Gallery</title>
+                 <title>All in adventure | testimonial</title>
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
@@ -65,7 +65,7 @@ const testimonials=(props)=>{
                 <div className="flex justify-center mt-2 md:mt-4">
 
                     <Link href="/activities"> 
-                      <a  className="flex items-center space-x-1 text-red-600 hover-text-red-700 lg:text-lg font-medium"><span>View all In person escape rooms</span><span><FiChevronRight/></span></a>
+                      <a  className="flex items-center space-x-1 text-red-600 hover-text-red-700 lg:text-lg font-medium"><span>View all In-person escape rooms</span><span><FiChevronRight/></span></a>
                       </Link>
 
                 </div>
@@ -152,8 +152,8 @@ const testimonials=(props)=>{
              <MainTestimonials category="gameshowroom"  testimonials={props.testimonials}/>
              <div className="flex justify-center mt-2 md:mt-4">
 
-                 <Link href="/virtual-escape-games"> 
-                   <a  className="flex items-center space-x-1 text-red-600 hover-text-red-700 lg:text-lg font-medium"><span>View all virtual games</span><span><FiChevronRight/></span></a>
+                 <Link href="/virtual-games"> 
+                   <a  className="flex items-center space-x-1 text-red-600 hover-text-red-700 lg:text-lg font-medium"><span>View all virtual / remote games</span><span><FiChevronRight/></span></a>
                    </Link>
 
              </div>

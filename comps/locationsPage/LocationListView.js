@@ -147,10 +147,10 @@ const LocationListView=({city,state})=>{
             </div>
             <div className="locationview-link px-4 pb-6"> 
                     <div className="flex justify-between">
-                        <Link href={"/"+locSlug(city.city,state)+"/activities"}>
+                        <Link href={"/"+city.slug+"/activities"}>
                                 <a className="w-[46%] rounded py-3 lg:py-4 bg-red-600 hover:bg-red-700 text-center text-white fonr-medium">BOOK GAMES</a>
                          </Link>
-                         <Link href={"/"+locSlug(city.city,state)+"/events"}>
+                         <Link href={"/"+city.slug+"/events"}>
                                 <a className="w-[46%] rounded py-3 lg:py-4 bg-red-600 hover:bg-red-700 text-center text-white fonr-medium">BOOK EVENTS</a>
                          </Link>
 

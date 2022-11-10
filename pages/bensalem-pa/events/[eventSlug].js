@@ -38,7 +38,7 @@ const LocationSingleEvent=(props)=>{
                         {/* ===========Page Content here========= */}
                      
                         <GameLocHero pagedata={props.pagedata} eventslug={props.pagedata.slug}/>
-                        <EventDetails eventdata={props.eventdata} eventname={props.pagedata.event_name}/>
+                        <EventDetails eventdata={props.eventdata} eventname={props.pagedata.eventname}/>
                         <EventContact contactdata={props.contactdata} eventname={props.pagedata.event_name} eventslug={props.pagedata.event_slug} locationlist={props.locationlist} eventlist={props.eventlist}/>
                         <HomeReviewSlider reviews={props.reviews}/>
                         

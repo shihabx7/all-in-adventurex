@@ -56,7 +56,7 @@ const showSingleVitualGame=(props)=>{
 
             <VirtualHero pagedata={props.pagedata}/>
           
-              <VirtualGameDetails activityname={props.pagedata.activityname} vgamedata={props.vgamedata} shortname={props.pagedata.shortname? props.pagedata.shortname:false}/>
+              <VirtualGameDetails activityname={props.pagedata.activityname} vgamedata={props.vgamedata} shortname={props.pagedata.shortname? props.pagedata.shortname:false} category={props.pagedata.category}/>
               <VgameGallery galleryitem={props.activitygallery} activityname={props.pagedata.activityname} shortname={props.pagedata.shortname? props.pagedata.shortname:false}/>
               <VgameVideo videoid={props.vgamedata.videoid} activityname={props.pagedata.activityname} shortname={props.pagedata.shortname? props.pagedata.shortname:false}/>
               {

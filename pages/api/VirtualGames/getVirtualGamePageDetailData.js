@@ -12,6 +12,7 @@ export const getVirtualGamePageDetailData=(gameslug)=>{
         return ret
     }
 
+
     const VirtualGamePageDetailData={
       "locationlist":getTotal().locationlist,
       "activitylistSlug":getTotal().activitylistSlug,
@@ -39,7 +40,7 @@ export const getVirtualGamePageDetailData=(gameslug)=>{
             "activityname":vGameData[gameslug].activityname,
             "notice":vGameData[gameslug].notice? vGameData[gameslug].notice:false,
             "shortname":vGameData[gameslug].shortname? vGameData[gameslug].shortname:false,
-            "category":vGameData[gameslug].category? vGameData[gameslug].category:false,
+            "category":vGameData[gameslug].category,
             
         },
         "vgamedata":vGameData[gameslug].vgamedata,
@@ -54,6 +55,7 @@ const vGameData={
     //====================================================== vartual game madness
     "virtual-escape-rooms-madness":{
                         "activityname":"Madness",
+                        "category":"vg",
                         "pagesubtitle":"Discover the secrets of a deranged professor and expose his twisted ways! Fail and suffer the results of his wicked ways!",
                         "coverimageL":"/assets/all-game-desktop-hero/allinadventures-virtual-escape-room-madness.jpg",
                         "coverimageM":"/assets/all-game-mobile-hero/allinadventures-virtual-escape-room-madness.jpg",
@@ -123,6 +125,7 @@ const vGameData={
     //====================================================== virtual-escape-rooms-zombie-apocalypse
     "virtual-escape-rooms-zombie-apocalypse":{
         "activityname":"Zombie Apocalypse",
+        "category":"vg",
         "pagesubtitle":"A scientist carrying a deadly virus drops the vial, spreading the virus through the A/C system. Search the lab for the antidote and distribute it before it's too late!",
         "coverimageL":"/assets/all-game-desktop-hero/allinadventures-virtual-escape-room-zombie-apocalypse.jpg",
         "coverimageM":"/assets/all-game-mobile-hero/allinadventures-virtual-escape-room-zombie-apocalypse.jpg",
@@ -192,6 +195,7 @@ const vGameData={
   //====================================================== virtual-escape-rooms-bomb
   "virtual-escape-rooms-bomb":{
                          "activityname":"Bomb",
+                         "category":"vg",
                          "pagesubtitle":"After a nuclear peace treaty was signed, one rogue agent stole a thermonuclear warhead and is planning to end the world! Figure out his plan, defuse the bomb, and save the world!",
                          "coverimageL":"/assets/all-game-desktop-hero/allinadventures-virtual-escape-room-bomb.jpg",
                          "coverimageM":"/assets/all-game-mobile-hero/allinadventures-virtual-escape-room-bomb.jpg",
@@ -261,6 +265,7 @@ const vGameData={
   //====================================================== virtual-escape-rooms-prison
   "virtual-escape-rooms-prison":{
     "activityname":"Prison",
+    "category":"vg",
     "pagesubtitle":"A case of simple misidentification has led to your wrongful conviction. You must find the key to escape this awful prison and prove your innocence!",
     "coverimageL":"/assets/all-game-desktop-hero/allinadventures-virtual-escape-room-prison.jpg",
     "coverimageM":"/assets/all-game-mobile-hero/allinadventures-virtual-escape-room-prison.jpg",
@@ -330,6 +335,7 @@ const vGameData={
 //====================================================== virtual-escape-rooms-aztec
 "virtual-escape-rooms-aztec":{
     "activityname":"Aztec",
+    "category":"vg",
     "pagesubtitle":"Hidden deep within an ancient city is the Lost City of Gold. Find the city, uncover the jewels, and find a way to escape with your treasures!",
     "coverimageL":"/assets/all-game-desktop-hero/allinadventures-virtual-escape-room-aztec.jpg",
     "coverimageM":"/assets/all-game-mobile-hero/allinadventures-virtual-escape-room-aztec.jpg",
@@ -400,6 +406,7 @@ const vGameData={
 //====================================================== virtual-escape-rooms-japan
 "virtual-escape-rooms-japan":{
     "activityname":"Japan",
+    "category":"vg",
     "pagesubtitle":"The revered Samurai sword has been stolen! Use your samurai skills to locate and recover the sword in time or face your unfortunate fate.",
     "coverimageL":"/assets/all-game-desktop-hero/allinadventures-virtual-escape-room-japan.jpg",
     "coverimageM":"/assets/all-game-mobile-hero/allinadventures-virtual-escape-room-japan.jpg",
@@ -473,9 +480,9 @@ const vGameData={
     "shortname":"Virtual game show room",
     "notice":"If you see online booking isn't available, please call us at <a href=\"tel:+1 844-502-5546\" class=\"text-gold font-medium md:text-lg\">+1 844-502-5546.</a> We can surely manage a spot for you and your team.",
     "pagesubtitle":"Are you looking for an entertaining way to connect and have fun when family, friends, and co-workers are in distant locations? Well, now you can! Enjoy our Virtual Game Show Room with friends and family from all different parts of the world without needing to gather in person. It's like a game show you've seen on TV.",
-    "coverimageL":"/assets/all-game-desktop-hero/allinadventures-virtual-escape-room-japan.jpg",
-    "coverimageM":"/assets/all-game-mobile-hero/allinadventures-virtual-escape-room-japan.jpg",
-    "coverimageM_alt":"allinadventures-virtual-escape-room-japan",
+    "coverimageL":"/assets/all-game-desktop-hero/allinadventures-virtual-game-show-room-hero-dekstop.jpg",
+    "coverimageM":"/assets/all-game-mobile-hero/allinadventures-virtual-game-show-room-hero-mobile.jpg",
+    "coverimageM_alt":"allinadventures virtual game show room",
     "price":"20",
     "duration":"60",
     "max_players":"12",
@@ -491,11 +498,11 @@ const vGameData={
     "vgamedata":{
         
         "story":"Virtual Game Show Room is created specifically to bring small and mid-sized groups of people together during a live, online game show experience. You have the option to choose from a family, kid or adult experience. Once logged in, players will become instant game show contestants led by a professional virtual host who will guide online players through a series of interactive games.",
-        "storyimg":"/assets/vgame-img/game-story.png",
+        "storyimg":"/assets/all-game-details/allinadventures-virtual-game-show-room-sec1.png",
         "scene":"For one (1) jam-packed hour, players get to experience a live game show - similar to popular shows seen on TV! Our games range from on-the-spot trivia to a hilarious home scavenger hunt that will keep everyone on their toes. Players are sure to have a blast seeing their friends, family, or co-workers try to outwit each other while playing 3-4 of our unique games!",
-        "sceneimg":"/assets/game-scene.png",
+        "sceneimg":"/assets/all-game-details/allinadventures-virtual-game-show-room-sec2.png",
         "mission":"Our Virtual Game Show Room is designed to be an interactive live game show experience for online players of all ages and backgrounds to enjoy. It's a perfect way to connect when corporate teams are spread out remotely or when friends and families live long distances from one another. It's also a great way for any group to spend time together when it's either too wet or too cold outside to interact with each other.",
-        "missionimg":"/assets/game-mission.png",
+        "missionimg":"/assets/all-game-details/allinadventures-virtual-game-show-room-sec3.png",
         "videoid":"YsuE-m_VEjc",
         "booking":"#",
         "faqlist":[

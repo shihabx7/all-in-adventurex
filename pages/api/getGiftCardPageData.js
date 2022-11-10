@@ -18,8 +18,8 @@ export const getGiftCardPageData=()=>{
             "pagetitle":"BUY ESCAPE ROOM GIFT CARDS",
             "pagesubtitle":"Birthdays, holidays, surprises and everything in between - we've got your gift needs covered. Our gift cards never expire! To buy or redeem gift cards, you must visit the location specific gift card page.",
             
-            "coverimageL":"/assets/gn-desktop-hero/allinadventures-gift-cards-hero.jpg",
-            "coverimageM":"/assets/gn-mobile-hero/allinadventures-gift-cards-hero.jpg",
+            "coverimageL":"/assets/gn-desktop-hero/allinadventures-gift-cards-hero-desktop.jpg",
+            "coverimageM":"/assets/gn-mobile-hero/allinadventures-gift-cards-hero-mobile.jpg",
             "totalLocations":getTotal().totalLocations,
            
         },

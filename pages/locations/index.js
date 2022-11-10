@@ -97,7 +97,7 @@ return (
                 <div className='map-autocomplete-box pt-6 md:pt-6 lg:pt-8 z-20'>
                   
                 <Link href="#gamelist">
-                  <a  className='max-w-[280px] mx-auto block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg'>BROUSE LOCATIONS</a>
+                  <a  className='max-w-[280px] mx-auto block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg'>BROWSE LOCATIONS</a>
                 </Link>
                 </div>
             </div>

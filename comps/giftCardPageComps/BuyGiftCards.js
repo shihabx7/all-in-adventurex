@@ -21,7 +21,7 @@ const BuyGiftCards=()=>{
                      {/* =================1st section================*/}
                      <div className="gift-row flex flex-col md:flex-row justify-center md:space-x-4 lg:space-x-8 items-center">
                         <div className="gift-poster md:w-1/2">
-                            <img src="/assets/gift-poster.png"></img>    
+                            <img src="/assets/allinadventures-gift-cards-section.png"></img>    
                          </div>
                          <div className="gift-info md:w-1/2">
                                 <h3 className="golden-text font-semibold mt-8 md:mt-0 text-xl lg:text-2xl mb-4"> ADVENTURE GIFT FOR EVERY OCCASION</h3>

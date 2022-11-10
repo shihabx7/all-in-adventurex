@@ -18,7 +18,7 @@ const VirtualGameDetails=(props)=>{
                         <div className="gme-dt-col order-2 md:order-1 md:w-[49%] lg:w-[45%]"> 
                             <div className="game-dt-title">
                                 <p className="md:text-lg text-[#938056] md:mb-1 uppercase">{props.shortname? props.shortname:props.activityname}</p>
-                                <GameTitleSeparator title={props.vgamedata.category=="showroom"? "HOW DOES IT WORK":"YOUR STORYLINE" } color="golden-text" weight="font-bold"></GameTitleSeparator>
+                                <GameTitleSeparator  title={props.category=="showroom"? "HOW DOES IT WORK":"THE STORYLINE" } color="golden-text" weight="font-bold"></GameTitleSeparator>
 
                             </div>
                             <div className="game-dt-desc mt-4 md:mt-4 lg:mt-6">
@@ -42,7 +42,7 @@ const VirtualGameDetails=(props)=>{
                         <div className="gme-dt-col md:w-[48%] lg:w-[45%]"> 
                             <div className="game-dt-title">
                             <p className="md:text-lg text-[#938056] md:mb-1 uppercase">{props.shortname? props.shortname:props.activityname}</p>
-                                <GameTitleSeparator title={props.vgamedata.category=="showroom"? "WHAT TO EXPECT":"THE PLOT" }   color="golden-text" weight="font-bold"></GameTitleSeparator>
+                                <GameTitleSeparator title={props.category=="showroom"? "WHAT TO EXPECT":"THE PLOT" }    color="golden-text" weight="font-bold"></GameTitleSeparator>
 
                             </div>
                             <div className="game-dt-desc mt-4 md:mt-4 lg:mt-6">
@@ -61,7 +61,7 @@ const VirtualGameDetails=(props)=>{
                         <div className="gme-dt-col order-2 md:order-1 md:w-[48%] lg:w-[45%]"> 
                             <div className="game-dt-title">
                             <p className="md:text-lg text-[#938056] md:mb-1 uppercase">{props.shortname? props.shortname:props.activityname}</p>
-                                <GameTitleSeparator title={props.vgamedata.category=="showroom"? "WHO COULD BE A CONTESTANT":"YOUR MISSION" }  color="golden-text" weight="font-bold"></GameTitleSeparator>
+                                <GameTitleSeparator title={props.category=="showroom"? "WHO COULD BE A CONTESTANT":"YOUR MISSION" }  color="golden-text" weight="font-bold"></GameTitleSeparator>
 
                             </div>
                             <div className="game-dt-desc mt-4 md:mt-4 lg:mt-6">

@@ -226,6 +226,14 @@ const EventContact=(props)=>{
 
                                         </div>
                                         <div className="event-notice mt-4 md:mt-8"> 
+                                        {
+                                            props.contactdata &&
+                                            <div className="flex  lg:text-lg text-[#eeeeee] mt-4 justify-between">
+                                                <div className="mt-[6px] -[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
+                                                 <div className="w-[92%] font-thin">{props.contactdata.entry_guid}</div>
+                                             </div>
+
+                                        }
                                              
                                              <div className="flex  lg:text-lg text-[#eeeeee] mt-4 justify-between">
                                                 <div className="mt-[6px] -[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>

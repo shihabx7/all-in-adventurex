@@ -18,8 +18,8 @@ export const getPrivacyPageData=()=>{
             "pagetitle":"Privacy Policy",
             "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
             "totalLocation":"28",
-            "coverimageL":"/assets/home-benar-bg.jpg",
-            "coverimageM":"/assets/home-hero.jpg",
+            "coverimageL":"/assets/gn-desktop-hero/All-In-Adventures-Generic-Hero-Image-Desktop.jpg",
+            "coverimageM":"/assets/gn-mobile-hero/All-In-Adventures-Generic-Hero-Image-Mobile.jpg",
             "totalLocations": getTotal().totalLocations,
           }
     }
