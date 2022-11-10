@@ -21,6 +21,7 @@ export const geEventPagetData=(slug)=>{
             "pagetitle":"ESCAPE ROOM "+eventName,
             "event_slug":slug,
             "event_name":eventName,
+            "eventname":eventName,
             "pagesubtitle":eventIndData[slug].pagesubtitle,
             "coverimageL":eventIndData[slug].coverimageL,
             "coverimageM":eventIndData[slug].coverimageM,

@@ -2,6 +2,7 @@ import { getLocationsPageData } from "../getLocationsPageData"
 import { bookingList } from "./bookingList"
 import { getLocationActivitySlugList } from "./getLocationActivitySlugList"
 import { getTotal } from "../AllDataList/getTotal"
+import { getLocTotal } from "../AllDataList/getLocTotal"
 
 export const getLocationsEventList=(locationslug)=>{
 
@@ -63,7 +64,8 @@ export const getLocationsEventList=(locationslug)=>{
           "metadescription":"metadescription"
         },
         "locationlist":getTotal().locationlist,
-        "eventlistSlug":getTotal().eventlistSlug,
+        "eventlistSlug":getLocTotal(locationslug).eventlistSlug,
+        "activitylist":getLocTotal(locationslug).activitylistSlug,
            
           "pagedata": {
                         "pagetitle":"PARTIES, EVENTS AND SPECIAL OCCASIONS IN "+cityName(locationslug),
@@ -71,8 +73,8 @@ export const getLocationsEventList=(locationslug)=>{
                         "location_name":cityName(locationslug),
                         "mall":getLocSpec(locationslug).mall,
                         "pagesubtitle":"Celebrate any special event at All In Adventures escape rooms in "+cityName(locationslug)+"! Team up with your family, friends, kids, co-workers, and anybody and everybody for an incredible memory to last forever. Whether they are 6 or 99, we have something for everyone.",
-                        "totalLocations": getTotal().totalLocations,
-                        "totalUniqueGames": getTotal().uniqueGames,
+                        "totalLocations": getLocTotal(locationslug).totalLocations,
+                        "totalUniqueGames": getLocTotal(locationslug).locUniqueGames,
                         "totalFiveStarReview": getTotal().totalReview,
                         "totalPlayerEscaped": getTotal().toalPlayerEscape,
                         "coverimageL":"/assets/all-event-desktop-hero/All-Event-Page-Hero-Image-desktop.jpg",
@@ -87,7 +89,7 @@ export const getLocationsEventList=(locationslug)=>{
 
           "events_list":allEventlist,
           "contactdata":getLocSpec(locationslug),
-          "activitylist":getLocationActivitySlugList(locationslug),
+         
        
     
 }

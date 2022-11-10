@@ -1465,6 +1465,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
          "pagedata":{
              "pagetitle":"ESCAPE ROOM "+eventName+" in "+locnameMod(locationslug),
              "event_name":eventName,
+             "eventname":eventName,
              "event_slug":eventslug,
              "locationslug":locationslug,
              "mall":getLocSpec(locationslug).mall,
@@ -1472,8 +1473,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
              "location_serach_name":getLocationSearchName(locationslug),
              "slug":eventslug,
              "pagesubtitle":eventlocdata[eventslug].pagesubtitle,
-            
-             "coverimageL":eventlocdata[eventslug].coverimageL,
+              "coverimageL":eventlocdata[eventslug].coverimageL,
              "coverimageM":eventlocdata[eventslug].coverimageM,
              "totalLocations":getLocTotal(locationslug).totalLocations,
              "totalUniqueGames":getLocTotal(locationslug).locUniqueGames,

@@ -3,8 +3,9 @@ import { getLocationsPageData } from "./getLocationsPageData";
 import { getLocationActivitySlugList } from "./LocationIndData/getLocationActivitySlugList";
 import { getLocationEventSlugList } from "./LocationIndData/getLocationEventSlugList";
 import { bookingList } from "./LocationIndData/bookingList"
-import { getTotal } from "./AllDataList/getTotal";
-import OhterGameSubmenu from "../../comps/headerComps/OhterGameSubmenu";
+import { getTotal } from "./AllDataList/getTotal"
+import { getLocTotal } from "./AllDataList/getLocTotal"
+
 
 
  export const getLocationHomepageData =  (locationslug) => {
@@ -40,7 +41,7 @@ import OhterGameSubmenu from "../../comps/headerComps/OhterGameSubmenu";
         return false
     }
 
-    
+
 
    const locationHomedata=
        {
@@ -60,7 +61,7 @@ import OhterGameSubmenu from "../../comps/headerComps/OhterGameSubmenu";
                       "slug":locationslug,
                       "totalLocations": getTotal().totalLocations,
                       "locationaddress":getLocSpec(locationslug).mall,
-                      "totalUniqueGames": locPagedata[locationslug].inpersongames.length,
+                      "totalUniqueGames": getLocTotal(locationslug).locUniqueGames,
                       "totalFiveStarReview": "20k+",
                       "totalPlayerEscaped": "90k+",
                       "coverimageL":locPagedata[locationslug].coverimageL,
