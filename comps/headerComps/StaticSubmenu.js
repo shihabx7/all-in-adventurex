@@ -87,7 +87,7 @@ const StaticSubmenu=()=>{
                             <div className="submenu-item">
                                
                                      <a href="/corporate-contact" className="flex items-center">
-                                        <span className="sub-link-txt">Coorporate Contact</span> 
+                                        <span className="sub-link-txt">Corporate Contact</span> 
                                      </a>
                                
 

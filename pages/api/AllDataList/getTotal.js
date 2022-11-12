@@ -23,8 +23,8 @@ export const getTotal=()=>{
 
         "totalLocations":totalLocation(),
         "uniqueGames":uniqueGames,
-        "toalPlayerEscape":"9M+",
-        "totalReview":"750K+",
+        "toalPlayerEscape":"1M+",
+        "totalReview":"25K+",
         "locationlist":getLocationsPageData().states,
         "activitylistSlug":getALlActivityList(),
         "eventlistSlug":getAllEventList(),

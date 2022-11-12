@@ -88,10 +88,10 @@ const LocationMap=(props)=>{
                                                     <span className="uppercase">All in Adventures</span> at <span>{props.locdetail.mall}</span> in <span className="capitalize">{props.locdetail.city}</span> <span className="uppercase">{props.locdetail.state}</span>
                                                 </h2>
                                                <div className="flex items-center space-x-2">
-                                                    <span className="text-[#7b7b7b] text-[16px] font-medium">5.0</span>
+                                                    <span className="text-[#7b7b7b] text-[16px] font-medium">{props.locdetail.avg_rev}</span>
                                                     <span className="rev-star"><img src="/assets/svg/map-star.svg"></img></span>
                                                     <span className="rev-count text-[#7b7b7b] text-[14px] font-medium">({
-                                                        props.locdetail.fivestar
+                                                        props.locdetail.total_rev
                                                     })</span>
                                                </div>
                                                 

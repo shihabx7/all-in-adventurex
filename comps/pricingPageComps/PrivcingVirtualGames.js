@@ -44,14 +44,13 @@ const PrivcingVirtualGames=()=>{
                                                <h4 className="font-medium md:text-[20px] text-[#000000]">
                                                Virtual Game Show Room
                                                </h4>
-                                               <p className="text-[#222222] font-light text-xs sm:text-sm md:text-lg">Min. 4 players. Max. 16 players</p>
+                                               <p className="text-[#222222] font-light text-xs sm:text-sm md:text-lg">Min 4 players Max 12 players</p>
                                             
                                            </td>
                                            <td className="border border-[#D2C6AA] w-[46%] md:w-[50%]  p-2 md:p-4">
                                               <ul className="text-xs md:text-lg">
-                                                <li className="text-[#222222] font-light mt-1"><span className="font-semibold">$132</span> / For first 4 person</li>
-                                                <li className="text-[#222222] font-light mt-1"><span className="font-semibold">$33</span>/ For each additional person</li>
-                                                <li className="text-[#222222] font-light mt-1"><span className="font-semibold">$220</span> / Private room up to 12 person</li>
+                                                <li className="text-[#222222] font-light mt-1"><span className="font-semibold">$20</span> / Person</li>
+                                                
                                             
                                               </ul>
                                            </td>
@@ -71,7 +70,7 @@ const PrivcingVirtualGames=()=>{
                                                </td>
                                                <td className="border border-[#D2C6AA] w-[46%] md:w-[50%]  p-2 md:p-4 align-top">
                                                   <ul className="text-xs md:text-lg">
-                                                    <li className="text-[#222222] font-light mt-1"><span className="font-semibold">$147</span> / Entire room for 2 - 12 person</li>
+                                                    <li className="text-[#222222] font-light mt-1"><span className="font-semibold">$147</span> / Private room for 2 - 6 person</li>
                                                
                                                   </ul>
                                                </td>

@@ -104,13 +104,13 @@ export const getLocationSlugList =()=>{
             "state":"MA",
             "shortaddress":"Emerald Square Mall"
         },
-        {
+      /*  {
             "id":15,
             "slug":"austin-tx",
             "city":"Austin",
             "state":"TX",
             "shortaddress":" "
-        },
+        },*/
         {
             "id":16,
             "slug":"milford-ct",

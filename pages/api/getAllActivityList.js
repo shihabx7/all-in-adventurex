@@ -71,7 +71,7 @@ export const getALlActivityList=()=>{
         {
             "id":10,
             "category":"escapegame",
-            "activity_name":"Lost in The jungle",
+            "activity_name":"Lost In The Jungle",
             "activity_slug":"lost-in-the-jungle"
            
         },
@@ -86,7 +86,7 @@ export const getALlActivityList=()=>{
         {
             "id":12,
             "category":"escapegame",
-            "activity_name":"Locked in the Lift",
+            "activity_name":"Locked In The Lift",
             "activity_slug":"locked-in-the-lift"
            
         },

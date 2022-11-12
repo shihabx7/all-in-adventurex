@@ -19,12 +19,12 @@ const PysicalEscape=(props)=>{
              
              {props.city && 
               <>
-                <TitleSeparator title={'OTHER IN-PERSON GAMES in'+props.city+' '+props.state} color='golden-text' weight='font-bold'/>
+                <TitleSeparator title={'OTHER IN PERSON GAMES in'+props.city+' '+props.state} color='golden-text' weight='font-bold'/>
               </>
             }
             {!props.city && 
              
-                <TitleSeparator title='OTHER IN-PERSON GAMES' color='golden-text' weight='font-bold'/>
+                <TitleSeparator title='OTHER IN PERSON GAMES' color='golden-text' weight='font-bold'/>
               
             }
              <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-12 lg:mb-16">
@@ -40,13 +40,13 @@ const PysicalEscape=(props)=>{
            {
             props.locationslug &&
               <Link href={"/"+props.locationslug+"/activities#others-physical-games"}> 
-              <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all other in-person games</span> <FaAngleRight/></a>
+              <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all other in person games</span> <FaAngleRight/></a>
             </Link>
            }
             {
             !props.locationslug &&
               <Link href={"/activities#others-physical-games"}> 
-              <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all other in-person games</span> <FaAngleRight/></a>
+              <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all other in person games</span> <FaAngleRight/></a>
             </Link>
            }
             

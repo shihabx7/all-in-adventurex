@@ -72,7 +72,7 @@ const LocationDetails=(props)=>{
                                     <img src="/assets/svg/event-icon-pin.svg"></img>
                                 </div>
                                 <div className="loc-dt-text text-[#232323]">
-                                    <a target="_blank" href={getDirection(props.locdetail.address,props.locdetail.slug,props.locdetail.zip,props.locdetail.city)} className="hover:text-blue-700">{getAddress(props.locdetail.address,props.locdetail.slug,props.locdetail.zip,props.locdetail.city)}</a>
+                                    <a target="_blank" href={getDirection(props.locdetail.address,props.locdetail.slug,props.locdetail.zip,props.locdetail.city)} className="hover:text-blue-700"><span className="text-blue-600 font-medium">Direction: </span>{getAddress(props.locdetail.address,props.locdetail.slug,props.locdetail.zip,props.locdetail.city)}</a>
                                     
                                 </div>
                             </div>

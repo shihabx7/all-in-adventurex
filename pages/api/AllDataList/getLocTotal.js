@@ -4,7 +4,7 @@ import { getLocationEventSlugList } from "../LocationIndData/getLocationEventSlu
 import { getVirtualGameSlug } from "../VirtualGames/getVirtualGameSlug"
 import { getLocationsPageData } from "../getLocationsPageData"
 
-export const totalLocation=()=>{
+ const totalLocation=()=>{
     var locdata= getLocationsPageData().states
     var total=0
     
@@ -16,6 +16,24 @@ export const totalLocation=()=>{
 
 }
 const uniqueGames=getALlActivityList().length
+const getlocData=(locationslug)=>{
+    var lslug=locationslug
+    var localdata= getLocationsPageData().states
+    var ret
+    var x 
+    var y 
+
+    for(x=0;x<localdata.length;x++){
+        for(y=0;y<localdata[x].cities.length;y++){
+            if(localdata[x].cities[y].slug==lslug)
+            {
+                ret=localdata[x].cities[y]
+            } 
+
+        }
+    }
+    return ret
+}
 
 
 export const getLocTotal=(locationslug)=>{
@@ -25,8 +43,8 @@ export const getLocTotal=(locationslug)=>{
         "totalLocations":totalLocation(),
         "uniqueGames":uniqueGames,
         "locUniqueGames":getLocationActivitySlugList(locationslug).length,
-        "locToalPlayerEscape":"30k+",
-        "locTotalReview":"5K+",
+        "locToalPlayerEscape":getlocData(locationslug).player_escaped,
+        "locTotalReview":getlocData(locationslug).fivestar,
         "toalPlayerEscape":"9M+",
         "totalReview":"750K+",
         "locationlist":getLocationsPageData().states,

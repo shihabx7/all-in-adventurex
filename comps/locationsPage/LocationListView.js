@@ -113,7 +113,7 @@ const LocationListView=({city,state})=>{
                            
                                 <a target="_blank" href={"https://www.google.com/maps/dir//"+city.address.split(' ').join('+')+',+'+city.city+',+'+state+'+'+city.zip} className="flex space-x-2 text-[#7b7b7b] hover:text-blue-600 ">
                                      <span className="mt-[4px] text-blue-600"><FaMapMarkerAlt/></span>
-                                     <p className="hover:underline underline-offset-4"><span className="text-blue-600 font-medium">Direction: </span>{city.address+", "+city.city+", "+state+" "+city.zip+", USA"} </p>
+                                     <p className="hover:underline underline-offset-4"><span className="text-blue-600 font-medium">Direction: </span>{city.address+", "+city.city+", "+state+" "+city.zip} </p>
                                 </a>
                             
                         </div>

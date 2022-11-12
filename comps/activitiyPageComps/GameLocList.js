@@ -35,7 +35,7 @@ const GameLocList=(props)=>{
                     
                 <div className="all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
                     <div className="section-title  text-center max-w-[800px] mx-auto">
-                        <TitleSeparator title="PLAY REAL-LIFE ESCAPE GAMES" color="golden-text" weight="font-bold"/>
+                        <TitleSeparator title="PLAY IN PERSON ESCAPE GAMES" color="golden-text" weight="font-bold"/>
                         <p className="text-gray-700 md:px-8 md:text-lg">Team up with your friends, family, kids (age 6+) or co-workers for an adrenaline filled 50-60 minutes real life immersive escape game experience!</p>
                     </div>
                 {
@@ -92,7 +92,7 @@ const GameLocList=(props)=>{
                     othergame &&
                     <div id="others-physical-games" className="pt-20 all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
                     <div className="section-title text-center max-w-[800px] mx-auto">
-                        <TitleSeparator title="OTHER IN-PERSON GAMES" color="golden-text" weight="font-bold"/>
+                        <TitleSeparator title="OTHER IN PERSON GAMES" color="golden-text" weight="font-bold"/>
                         <p className="text-gray-700 md:px-8 md:text-lg">We offer additional fun activities that can double up your adventure experience. Simply come with the desire to play more!</p>
                     </div>
                 {
@@ -109,7 +109,7 @@ const GameLocList=(props)=>{
                                             <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm md:text-base">{activity.activity_type}</span>  </p>
                                             <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm md:text-base">{activity.age}</span>  </p> 
                                             <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-time.svg"></img></span><span className="text-sm md:text-base">{activity.duration} Minutes</span>  </p>
-                                            <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm md:text-base">{activity.min_player}-{activity.max_player} Players</span>  </p>
+                                            <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm md:text-base">{activity.min_player==activity.max_player? activity.min_player:activity.min_player+"-"+activity.max_player}{activity.max_player<2? " Player":" Players"}</span>  </p>
 
                                         </div>
                                         <div className="card-ribbon">
@@ -126,7 +126,7 @@ const GameLocList=(props)=>{
                                         <div className=" text-center md:text-left">
                                           <h3 className="card-game-title text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-white">{activity.activity_name}</h3>
                                           <p className="text-gray-200 lg:text-lg mx-auto md:mx-0 max-w-[700px]">{activity.activity_desc}
-                                          fill out the number of details.</p>
+                                         </p>
                                          </div>
                                          <div className="card-game-link mt-4 text-left">
                                              <button onClick={()=>{bookGames(props.bookingdata.shortname,props.bookingdata[activity.activity_slug])}} className="border-2 w-[240px] block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</button>

@@ -63,7 +63,7 @@ const PriceForLargerGroup=()=>{
                                 </div>
                          </div>
                          <div className="gift-poster md:w-1/2 order-1 md:order-2">
-                            <img src="/assets/gift-poster.png"></img>    
+                            <img src="/assets/allinadventures-gift-cards-section.png"></img>    
                          </div>
                      </div>
                          {/* =================2nd section end================*/}

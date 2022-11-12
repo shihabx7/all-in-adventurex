@@ -11,7 +11,7 @@ const GameVideo=(props)=>{
                
                     <TitleSeparator title="GAME TRAILER" color="golden-text" weight="font-bold"/>
                     <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
-                                 <p className="text-gray-700 md:px-8">Watch a sneak peek of the thrills and drama from the {props.activityname && <span>{props.activityname}</span>} escape room.</p>
+                                 <p className="text-gray-700 md:px-8">Watch a sneak peek of the thrills {props.activityname=="Game Show Room"? " ":"and drama " }from {props.activityname && <span>{props.activityname}</span>}.</p>
                     </div>
                 </div>
           

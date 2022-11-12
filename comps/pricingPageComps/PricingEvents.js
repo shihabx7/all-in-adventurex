@@ -37,7 +37,7 @@ const PricingEvents=()=>{
                                         <h4 className="font-medium sm:text-lg md:text-[24px] text-[#000000]">
                                         Food Per Person
                                         </h4>
-                                        <p className="text-[#222222]  text-xs sm:text-sm md:text-lg"> (Package 1)</p>
+                                        <p className="text-[#222222]  text-xs sm:text-sm md:text-lg"> (Package 2)</p>
                                     </td>
                                         
 
@@ -59,9 +59,10 @@ const PricingEvents=()=>{
                                            </td>
                                            <td className="border border-[#D2C6AA] w-[32%] md:w-[32%] p-2 md:p-4 align-top">
                                             
-                                              <h4 className="mt-2 font-light text-xs sm:text-sm md:text-[20px] text-[#000000]"> <span className="font-medium">$75.00</span> + Tax / guests varies</h4>
+                                              <h4 className="mt-2 font-light text-xs sm:text-sm md:text-[20px] text-[#000000]"> <span className="font-medium">$75.00</span> + Tax / Guests varies</h4>
                                                <ul className="star-list list-inside md:list-outside mt-4 md:pl-5">
                                                     <li className="my-2 md:my-3 text-xs sm:text-sm lg:text-lg font-light">Party room rental for 2 hours</li>
+                                                    <li className="my-2 md:my-3 text-xs sm:text-sm lg:text-lg font-light">Bring your own store bought food</li>
                                                     <li className="my-2 md:my-3 text-xs sm:text-sm lg:text-lg font-light">Basic supplies (plates, napkins, utensils, etc.)</li>
                                                     <li className="my-2 md:my-3 text-xs sm:text-sm lg:text-lg font-light">FREE All In Adventures birthday invitations (digital - can be printed)</li>
                                                     <li className="my-2 md:my-3 text-xs sm:text-sm lg:text-lg font-light">$30 gift card for birthday child</li>
@@ -69,9 +70,11 @@ const PricingEvents=()=>{
                                                
                                            </td>
                                            <td className="border border-[#D2C6AA] w-[32%] md:w-[32%] p-2 md:p-4 align-top">
-                                                 <h4 className="mt-2 font-light text-xs sm:text-sm md:text-[20px] text-[#000000]"> <span className="font-medium">$18.99</span> / guests varies</h4>
+                                                 <h4 className="mt-2 font-light text-xs sm:text-sm md:text-[20px] text-[#000000]"> <span className="font-medium">$18.99</span> / Guests varies</h4>
                                                <ul className="star-list mt-4 pl-5">
                                                     <li className="my-3 text-xs sm:text-sm lg:text-lg font-light">Party room rental for 2 hours</li>
+                                                    <li className="my-3 text-xs sm:text-sm lg:text-lg font-light">Food includes pizza, cookie cake, and a drink for each guest</li>
+                                                    <li className="my-3 text-xs sm:text-sm lg:text-lg font-light">Minimum Guest Count: 6 people</li>
                                                     <li className="my-3 text-xs sm:text-sm lg:text-lg font-light">Basic supplies (plates, napkins, utensils, etc.)</li>
                                                     <li className="my-3 text-xs sm:text-sm lg:text-lg font-light">FREE All In Adventures birthday invitations (digital - can be printed)</li>
                                                     <li className="my-3 text-xs sm:text-sm lg:text-lg font-light">$35 gift card for birthday child</li>

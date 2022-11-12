@@ -483,7 +483,7 @@ const vGameData={
     "coverimageL":"/assets/all-game-desktop-hero/allinadventures-virtual-game-show-room-hero-dekstop.jpg",
     "coverimageM":"/assets/all-game-mobile-hero/allinadventures-virtual-game-show-room-hero-mobile.jpg",
     "coverimageM_alt":"allinadventures virtual game show room",
-    "price":"20",
+    "price":"80",
     "duration":"60",
     "max_players":"12",
     "min_players":"4",

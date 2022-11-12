@@ -59,7 +59,7 @@ const StoreContact=(props)=>{
                             </div>
                             <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-t border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
                                 <img src="/assets/svg/event-icon-pin.svg"></img>
-                                <a target="_blank" href={getDirection(props.contactdata.address,props.contactdata.slug,props.contactdata.city,props.contactdata.zip)} className="lg:text-lg text-[#232323] block hover:text-blue-700 max-w-[300px]">{getAddress(props.contactdata.address,props.contactdata.slug,props.contactdata.city,props.contactdata.zip)}</a>
+                                <a target="_blank" href={getDirection(props.contactdata.address,props.contactdata.slug,props.contactdata.city,props.contactdata.zip)} className="lg:text-lg text-[#232323] block hover:text-blue-700 max-w-[300px]"><span className="text-blue-600 font-medium">Direction: </span>{getAddress(props.contactdata.address,props.contactdata.slug,props.contactdata.city,props.contactdata.zip)}</a>
                             </div>
                             <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4 relative">
                                 <img src="/assets/svg/event-icon-watch.svg"></img>

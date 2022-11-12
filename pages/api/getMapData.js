@@ -1,4 +1,57 @@
+import { getLocationsPageData } from "./getLocationsPageData"
 export const getMapData =()=>{
+
+ const getState=(slug)=>{
+
+  const slArr=slug.split('-')
+  return slArr[slArr.length-1].toUpperCase()
+ }
+  
+  const loc=getLocationsPageData().states
+  const extractData=(locData)=>{
+    const retData=[]
+    var i 
+    var j
+    var count=1
+    var tempData
+
+    for(i=0;i<locData.length;i++){
+      for(j=0;j<locData[i].cities.length;j++){
+
+        tempData={
+          id: count,
+          name: "All in Adventures",
+          position: locData[i].cities[j].position, 
+          info:{
+            coverimg:locData[i].cities[j].coverimg,
+            alt:locData[i].cities[j].alt,
+            riview:locData[i].cities[j].total_rev,
+            avg_rev:locData[i].cities[j].avg_rev,
+            city:locData[i].cities[j].city,
+            state:getState(locData[i].cities[j].slug),
+            zip:locData[i].cities[j].zip,
+            country:'USA',
+            address:locData[i].cities[j].address,
+            mall:locData[i].cities[j].mall,
+            phone:locData[i].cities[j].phone,
+            email:locData[i].cities[j].email,
+            b_hours:locData[i].cities[j].hours
+          }
+         
+          
+        }
+        
+        retData.push(tempData)
+        count++
+
+      }
+    }
+
+    return retData
+
+  }
+  const dd=extractData(loc)
+  console.log(loc)
 
     const mapData=[
     // ny list
@@ -60,7 +113,7 @@ export const getMapData =()=>{
               ],
               city:'Albeny',
               state:'NY',
-              zip:12203,
+              zip:"12203",
               country:'USA',
               address:'1 Crossgates Mall Rd D212',
               mall:'Crossgates Mall',
@@ -1902,7 +1955,7 @@ export const getMapData =()=>{
       
        
       ]
-return mapData      
+return dd      
 
 
 

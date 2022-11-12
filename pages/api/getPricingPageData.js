@@ -15,7 +15,7 @@ export const getPricingPageData=()=>{
            
           "pagedata": {
                         "pagetitle":"ALL IN ADVENTURES PRICING",
-                        "pagesubtitle":"How much does an Escape Room cost? Nowadays, It's a very common question! Escape Room ticket prices can change based on the number of players. We offer affordable and innovative pricing for all our games and activities to appeal to groups of all sizes. ",
+                        "pagesubtitle":"How much does an Escape Room cost? Nowadays, It's a very common question! Escape Room prices vary based on the group size. We offer affordable and innovative pricing for all our games and activities to appeal to groups of all sizes. ",
                          
                         "totalLocations": getTotal().totalLocations,
                         "coverimageL":"/assets/gn-desktop-hero/allinadventures-pricing-hero.jpg",

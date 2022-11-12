@@ -62,7 +62,7 @@ const gallery=(props)=>{
                 <div className="inperson-gallery">
                    <div className="section-title  text-center max-w-[760px] mx-auto">
                         <p className="uppercase">CUSTOMER GALLERY</p>
-                        <TitleSeparator title="REAL LIFE ESCAPE ROOM GAMES" color="golden-text" weight="font-bold"/>
+                        <TitleSeparator title="IN PERSON ESCAPE ROOM GAMES" color="golden-text" weight="font-bold"/>
                         <p className="text-gray-700 md:px-8 md:text-lg">Escape rooms are one of the hottest trends in entertainment today. Players must work together to find hidden clues, solve puzzles, crack codes, complete tasks, and escape before time runs out!</p>
                     </div>
 
@@ -70,7 +70,7 @@ const gallery=(props)=>{
                     <div className="gl-bottom-link mt-12 text-center">
                         <Link href="/activities"> 
                           <a className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
-                           <span>View all real life escape rooms</span>
+                           <span>View all in person escape rooms</span>
                            <span><FiChevronRight/></span> 
                             </a>
                             </Link>
@@ -82,7 +82,7 @@ const gallery=(props)=>{
                 <div className="event-gallery my-16 md:my-20 lg:my-28">
                    <div className="section-title  text-center max-w-[760px] mx-auto">
                         <TitleSeparator title="EVENTS AND PARTIES" color="golden-text" weight="font-bold"/>
-                        <p className="text-gray-700 md:px-8 md:text-lg">We&apos;ve hosted over 70,000 birthday parties and team-building events over the years. With more escape room themes and options being constantly added, we are always looking for ways to make your event memorable.</p>
+                        <p className="text-gray-700 md:px-8 md:text-lg">We&apos;ve hosted over 10,000 birthday parties and team-building events over the years. With more escape room themes and options being constantly added, we are always looking for ways to make your event memorable.</p>
                     </div>
 
                     <MainGallery category="events" galleryitem={props.gallerylist}/>
@@ -102,14 +102,14 @@ const gallery=(props)=>{
             <div className="other-games-gallery my-16 md:my-20 lg:my-28">
                    <div className="section-title  text-center max-w-[600px] mx-auto">
                         <TitleSeparator title="OTHER GAMES AND ACTIVITIES" color="golden-text" weight="font-bold"/>
-                        <p className="text-gray-700 md:px-8 md:text-lg">All In Adventures is more than an escape room place. Join us to experience more fun activities, including Escape Rooms, Game Show Rooms, Beat the Seat and Axe Throwing.</p>
+                        <p className="text-gray-700 md:px-8 md:text-lg">All In Adventures is more than an escape room place. Join us to experience more fun activities, including Game Show Rooms, Beat the Seat and Axe Throwing.</p>
                     </div>
 
                     <MainGallery category="others" galleryitem={props.gallerylist}/>
                     <div className="gl-bottom-link mt-12 text-center">
                         <Link href="/activities#others-physical-games"> 
                           <a  className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
-                           <span>View all other real life games</span>
+                           <span>View all other in person games</span>
                            <span><FiChevronRight/></span> 
                             </a>
                             </Link>

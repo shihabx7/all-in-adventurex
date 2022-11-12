@@ -42,23 +42,23 @@ export const getRewardPageData=()=>{
 
                 },
                 {
-                   "id":4,
+                   "id":3,
                    "category":"reward",
                    "group":"reward",
                    "ques":"How old do you have to be to join?",
-                   "ans":"There is no age limit to join.",
+                   "ans":["There is no age limit to join."],
                    
 
                     },
                     {
-                       "id":5,
+                       "id":4,
                        "category":"reward",
                        "group":"reward",
                        "ques":"What if I already purchased an Adventure Club Passport?",
                        "ans":["You can bring your physical passport into the store and exchange it to be added into the new program as a VIP member for NO additional cost."],
                     },
                    {
-                     "id":6,
+                     "id":5,
                      "category":"reward",
                      "group":"reward",
                      "ques":"What happens to the stamps I have already collected?",
@@ -67,7 +67,7 @@ export const getRewardPageData=()=>{
        
                    },
                    {
-                    "id":7,
+                    "id":6,
                     "category":"reward",
                     "group":"reward",
                     "ques":"Will I continue to receive $5 off every visit?",

@@ -39,11 +39,11 @@ const BuyGiftCard=(props)=>{
             <div className="max-w-7xl mx-auto px-4 z-30">
                     <TitleSeparator title='All IN ADVENTURES GIFT CARDS' color='golden-text' weight='font-bold'/>
                     <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-12 lg:mb-16">
-                         <p className="text-gray-200 md:px-8">Whether it's someone's birthday, anniversary or a holiday such as Christmas - an All In Adventures Gift Card is a perfect present for any occasion.</p>
+                         <p className="text-gray-200 md:px-8">Whether it's someone's birthday, anniversary or a holiday such as Christmas, an All In Adventures Gift Card is a perfect present for any occasion.</p>
                      </div>
                      <div className="gift-row flex flex-col md:flex-row justify-center md:space-x-4 lg:space-x-8 items-center">
                         <div className="gift-poster md:w-1/2">
-                            <img src="/assets/gift-poster.png"></img>    
+                            <img src="/assets/allinadventures-gift-cards-section.png"></img>    
                          </div>
                          <div className="gift-info md:w-1/2">
                                 <h3 className="golden-text font-semibold mt-8 md:mt-0 text-xl lg:text-2xl mb-4">A PERFECT ADVENTURE GIFT FOR ANY AGE GROUP</h3>

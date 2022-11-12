@@ -23,10 +23,10 @@ const LocationStoreMenu=(props)=>{
             }
            }>
             <div onClick={closelocmenu} id="locclose" className="location-close-box flex justify-end pt-1 px-2 md:px-4 text-gray-400 text-xl md:text-2xl lg:text-3xl">  
-                 <span className='inline-block p-1 border-2 border-gray-500 rounded-full cursor-pointer hover:border-light-gold hover:text-gold'><FiX/></span>
+                 <span className='inline-block p-1 border-2 border-red-600  text-red-600 rounded-full cursor-pointer hover:border-light-gold hover:text-gold'><FiX/></span>
             </div>
             <div className='loc-menu-content px-4'> 
-                <TitleSeparator title='CHOOSE YOUR VENUE' color='text-white' weight='font-semibold'/>
+                <TitleSeparator title='CHOOSE YOUR LOCATION' color='text-white' weight='font-semibold'/>
                 <div className='loc-menu-grid max-w-6xl mx-auto mt-4 pb-8'> 
                 {/*==================location xcolumn======================*/}
                     {

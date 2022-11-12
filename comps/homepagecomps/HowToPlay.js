@@ -26,10 +26,10 @@ const HowToPlay=(props)=>{
             <div className="max-w-7xl mx-auto">
                 <div className="hbt-container pt-4 md:pt-16 relative z-20">
                 <TitleSeparator title='HOW TO PLAY AN ESCAPE ROOM' color='golden-text' weight='font-bold'/>
-                <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16">
+                <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16">
                     <p className="text-gray-700 md:px-8">
                     Team up with your friends, family (including kids age 6+) or co-workers, select any of our 
-                     {props.city && <> {props.city}</>} escape rooms and book your game.
+                     {props.city && <> {props.city}</>} Escape Rooms and book your game.
                      While playing, use the clues and keys you find to solve the puzzles and make your escape before time runs out!
                     </p>
                 </div>

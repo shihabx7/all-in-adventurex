@@ -321,7 +321,7 @@ const datalist={
         {
             "id":12,
             "category":"escapegame",
-            "activity_name":"Locked in the Lift",
+            "activity_name":"Locked In The Lift",
             "activity_slug":"locked-in-the-lift"
            
         },
@@ -631,48 +631,55 @@ const datalist={
         {
             "id":3,
             "category":"escapegame",
-            "activity_name":"Superhero's Adventure",
-            "activity_slug":"superheros-adventure"
-           
-        },
-        {
-            "id":4,
-            "category":"escapegame",
             "activity_name":"Zombie Apocalypse",
             "activity_slug":"zombie-apocalypse"
            
         },
         {
-            "id":5,
-            "category":"escapegame",
-            "activity_name":"Special Agent",
-            "activity_slug":"special-agent"
-           
-        },
-        
-        {
-            "id":7,
+            "id":4,
             "category":"escapegame",
             "activity_name":"Sherlock's Library",
             "activity_slug":"sherlocks-library"
            
         },
         {
-            "id":8,
-            "category":"escapegame",
-            "activity_name":"Houdini's Magic Cell",
-            "activity_slug":"houdinis-magic-cell"
-           
-        },
-        {
-            "id":9,
+            "id":5,
             "category":"escapegame",
             "activity_name":"Black Ops",
             "activity_slug":"black-ops"
            
         },
-      
-       
+        {
+            "id":6,
+            "category":"escapegame",
+            "activity_name":"Superhero's Adventure",
+            "activity_slug":"superheros-adventure"
+           
+        },
+        {
+            "id":7,
+            "category":"escapegame",
+            "activity_name":"Houdini's Magic Cell",
+            "activity_slug":"houdinis-magic-cell"
+           
+        },
+        
+        {
+            "id":8,
+            "category":"escapegame",
+            "activity_name":"Special Agent",
+            "activity_slug":"special-agent"
+           
+        },
+        {
+            "id":9,
+            "category":"escapegame",
+            "activity_name":"Hollywood Premiere",
+            "activity_slug":"hollywood-premiere"
+           
+        },
+        
+        
     ],
      // ===================================== bensalem-pa END=======
      //*****************************************************************************PA END++++++++++++++++ */
@@ -867,7 +874,7 @@ const datalist={
         {
             "id":10,
             "category":"escapegame",
-            "activity_name":"Lost in The jungle",
+            "activity_name":"Lost In The Jungle",
             "activity_slug":"lost-in-the-jungle"
            
         },
@@ -1364,7 +1371,7 @@ const datalist={
      //*****************************************************************************NJ END++++++++++++++++ */
      //*****************************************************************************TX++++++++++++++++ */
       // =====================================east-brunswick-nj=======
-      "austin-tx":[
+      /*"austin-tx":[
         
         {
             "id":1,
@@ -1485,7 +1492,7 @@ const datalist={
             "activity_slug":"beat-the-seat"
            
         }
-    ],
+    ],*/
      // ===================================== east-brunswick-nj END=======
      
      //*****************************************************************************TX END++++++++++++++++ */

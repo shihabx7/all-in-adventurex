@@ -125,7 +125,7 @@ const testimonials=(props)=>{
                 <div className="section-title text-center max-w-[800px] mx-auto">
                     <p className="text-lg text-[#938056] text-center">TESTIMONIALS</p>
                     <TitleSeparator title="PRIVATE PARTY CUSTOMERS" color="golden-text" weight="font-bold" />
-                    <p className="text-gray-700 md:px-8 md:text-lg">Not only we provide themed events for birthdays and corporate events, but also host parties of mind-bending, puzzle solving for just about any other occasion. Bring your friends, family and sense of adventure to your next special celebration, and don&apos;t forget to make it fun!</p>
+                    <p className="text-gray-700 md:px-8 md:text-lg">Not only do we provide themed events for birthdays and corporate events, but also host mind bending and puzzle solving parties for just about any other occasion. Bring your friends, family and sense of adventure to your next special celebration, and don&apos;t forget to make it fun!</p>
                 </div>
                 <MainTestimonials category="party"  testimonials={props.testimonials}/>
                 <div className="flex justify-center mt-2 md:mt-4">

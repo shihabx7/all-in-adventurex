@@ -75,8 +75,8 @@ export const getLocationsEventList=(locationslug)=>{
                         "pagesubtitle":"Celebrate any special event at All In Adventures escape rooms in "+cityName(locationslug)+"! Team up with your family, friends, kids, co-workers, and anybody and everybody for an incredible memory to last forever. Whether they are 6 or 99, we have something for everyone.",
                         "totalLocations": getLocTotal(locationslug).totalLocations,
                         "totalUniqueGames": getLocTotal(locationslug).locUniqueGames,
-                        "totalFiveStarReview": getTotal().totalReview,
-                        "totalPlayerEscaped": getTotal().toalPlayerEscape,
+                        "totalFiveStarReview": getLocTotal(locationslug).locTotalReview,
+                        "totalPlayerEscaped": getLocTotal(locationslug).locToalPlayerEscape,
                         "coverimageL":"/assets/all-event-desktop-hero/All-Event-Page-Hero-Image-desktop.jpg",
                         "coverimageM":"/assets/all-event-mobile-hero/All-Event-Page-Hero-Image.jpg",
                         "bookingall":{

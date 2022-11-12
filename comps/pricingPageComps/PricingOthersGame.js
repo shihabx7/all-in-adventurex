@@ -18,15 +18,16 @@ const PricingOthersGame=()=>{
                                <thead className="bg-[#EFE4CA]">
                                 {/** ==============table-head============ */}
                                   <tr >
-                                    <td className="border border-[#D2C6AA] w-[44%] md:w-[50%]  p-2 md:p-3">
+                                    <td className="border border-[#D2C6AA] w-[40%] md:w-[40%]  p-2 md:p-3">
                                         <h4 className="font-medium text-lg md:text-[24px] text-[#000000]">
                                         Games Name
                                         </h4>
                                       
                                     </td>
-                                    <td className="border border-[#D2C6AA] w-[46%] md:w-[50%]   p-2 md:p-4">
+                                    <td className="border border-[#D2C6AA] w-[60%] md:w-[60%]   p-2 md:p-4">
                                         <h4 className="font-medium text-lg md:text-[24px] text-[#000000]">
                                         Pricing
+                                        <p className="text-[#222222] text-xs sm:text-sm md:text-lg">(Plus applicable taxes and fees)</p>
                                         </h4>
                                        
                                     </td>
@@ -40,13 +41,13 @@ const PricingOthersGame=()=>{
                                     <tbody className="bg-[#FBF2DC]">
                                         {/** ==============table-row============4+ players */}
                                         <tr >
-                                           <td className="border border-[#D2C6AA]  w-[44%] md:w-[50%] p-2 md:p-4">
+                                           <td className="border border-[#D2C6AA]  w-[44%] md:w-[40%] p-2 md:p-4">
                                                <h4 className="font-medium md:text-[20px] text-[#000000]">
                                                Beat The Seat
                                                </h4>
                                             
                                            </td>
-                                           <td className="border border-[#D2C6AA] w-[46%] md:w-[50%]  p-2 md:p-4">
+                                           <td className="border border-[#D2C6AA] w-[40%] md:w-[40%]  p-2 md:p-4">
                                               <ul className="text-xs md:text-lg">
                                                 <li className="text-[#222222] font-light mt-1"><span className="font-semibold">$5</span> / 1-pack for 1 person / 2 minutes</li>
                                                 <li className="text-[#222222] font-light mt-1"><span className="font-semibold">$10</span>/ 3-pack for 1 person / 3X</li>
@@ -68,10 +69,10 @@ const PricingOthersGame=()=>{
                                                    <p className="text-[#222222] font-light text-xs sm:text-sm md:text-lg">Min. 4 players. Max. 16 players</p>
 
                                                </td>
-                                               <td className="border border-[#D2C6AA] w-[46%] md:w-[50%]  p-2 md:p-4">
+                                               <td className="border border-[#D2C6AA] w-[60%] md:w-[60%]  p-2 md:p-4">
                                                   <ul className="text-xs md:text-lg">
                                                     <li className="text-[#222222] font-light mt-1"><span className="font-semibold">$33</span> / Per person</li>
-                                                    <li className="text-[#222222] font-light mt-1"><span className="font-semibold">$209</span> / Private room for 8</li>
+                                                    <li className="text-[#222222] font-light mt-1"><span className="font-semibold">$264</span> / Private room for 8</li>
                                                     <li className="text-[#222222] font-light mt-1"><span className="font-semibold">$528</span> / Private room for 16</li>
                                                   
                                                   </ul>
@@ -93,7 +94,7 @@ const PricingOthersGame=()=>{
                                                </td>
                                                <td className="border border-[#D2C6AA] w-[46%] md:w-[50%] p-2 md:p-4">
                                                   <ul className="text-xs md:text-lg">
-                                                    <li className="text-[#222222] font-light mt-1"><span className="font-semibold">$29.89</span> / Per Person /30 minute </li>
+                                                    <li className="text-[#222222] font-light mt-1"><span className="font-semibold">$29.89</span> / Per Person </li>
                                                     <li className="text-[#222222] font-light mt-1"><span className="font-semibold">$110</span>/ Full lane / 1 hours</li>
                                                     <li className="text-[#222222] font-light mt-1"><span className="font-semibold">$210</span>/ Full lane / 2 hours</li>
                                                    

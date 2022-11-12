@@ -9,21 +9,22 @@ const PricingNextGen=(props)=>{
                         <TitleSeparator title="NEXT GEN ESCAPE ROOM PRICING" color="golden-text" weight="font-bold"/>
                         
                     </div>
-                    <div className="price-cl max-w-[640px] mx-auto">
+                    <div className="price-cl max-w-[740px] mx-auto">
                          {/** ============== next gen pricing-table- ============ */}
                          <table className="inperson-game-price-table w-full border-collapse border border-[#D2C6AA]">
                                <thead className="bg-[#EFE4CA]">
                                 {/** ==============table-head============ */}
                                   <tr >
-                                    <td className="border border-[#D2C6AA] w-[55%] md:w-[53%] p-2 md:p-3">
+                                    <td className="border border-[#D2C6AA] w-[40%] md:w-[50%] p-2 md:p-3">
                                         <h4 className="font-medium text-lg md:text-[24px] text-[#000000]">
                                         Group Size
                                         </h4>
                                         
                                     </td>
-                                    <td className="border border-[#D2C6AA] w-[45%] md:w-[47%] p-2 md:p-4">
+                                    <td className="border border-[#D2C6AA] w-[60%] md:w-[50%] p-2 md:p-4">
                                         <h4 className="font-medium text-lg md:text-[24px] text-[#000000]">
                                         Pricing
+                                        <p className="text-[#222222] text-xs sm:text-sm md:text-lg">(Plus applicable taxes and fees)</p>
                                         </h4>
                                         
                                     </td>
@@ -43,13 +44,13 @@ const PricingNextGen=(props)=>{
 
                                                     return(
                                                         <tr key={item.id}>
-                                                            <td className="border border-[#D2C6AA] w-[55%] md:w-[53%] p-2 md:p-4">
+                                                            <td className="border border-[#D2C6AA] w-[40%] md:w-[50%] p-2 md:p-4">
                                                                 <h4 className="font-medium md:text-[20px] text-[#000000]">
                                                                 {item.group_size}
                                                                 </h4>
                                                                 <p className="text-[#222222] font-light text-xs sm:text-sm md:text-lg">{item.group_text}</p>
                                                             </td>
-                                                            <td className="border border-[#D2C6AA] w-[47%] md:w-[45%] p-2 md:p-4">
+                                                            <td className="border border-[#D2C6AA] w-[60%] md:w-[40%] p-2 md:p-4">
                                                                <h4 className="font-medium  md:text-[20px] text-[#000000]">
                                                                ${item.price}
                                                                 </h4>

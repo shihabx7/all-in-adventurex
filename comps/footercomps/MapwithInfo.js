@@ -109,9 +109,9 @@ const getdirectionUrl =(address,city,state,zip)=>{
             >
               <div className="map-card max-w-[320px] md:max-w-[320px] bg-[rgba(255,249,236,.4)]">
                     <div className="map-card-img  bg-[#FFF9EC]">
-                      <Link href={'/locations/'+getStoreUrl(info.city,info.state)}>
-                        <a className="block cursor-pointer"><img className="w-full" src={info.coverimg} alt={info.alt}></img></a>
-                      </Link>
+                     
+                        <a href={'/locations/'+getStoreUrl(info.city,info.state)} className="block cursor-pointer"><img className="w-full" src={info.coverimg} alt={info.alt}></img></a>
+                  
                         
                     </div>
                     <div className="map-card-bus py-2  text-left px-2">
@@ -119,7 +119,7 @@ const getdirectionUrl =(address,city,state,zip)=>{
                             <span className="uppercase">{name}</span> at <span>{info.mall}</span> in <span className="capitalize">{info.city}</span> <span className="uppercase">{info.state}</span>
                         </h2>
                        <div className="flex items-center space-x-2">
-                            <span className="text-[#7b7b7b] text-[16px] font-medium">5.0</span>
+                            <span className="text-[#7b7b7b] text-[16px] font-medium">{info.avg_rev}</span>
                             <span className="rev-star"><img src="/assets/svg/map-star.svg"></img></span>
                             <span className="rev-count text-[#7b7b7b] text-[14px] font-medium">({
                                 info.riview
@@ -193,7 +193,7 @@ const getdirectionUrl =(address,city,state,zip)=>{
                                     <div className="map-info-link">
                        
                                                 <a target="_blank" href={getdirectionUrl(info.address,info.city,info.state,info.zip)} key={id} className="text-[#7b7b7b] hover:text-blue-600">
-                                                   <span className="font-medium text-blue-600">Direction: </span> {info.address+', '+info.city+', '+info.state+' '+info.zip+', '+info.country}
+                                                   <span className="font-medium text-blue-600">Direction: </span> {info.address+', '+info.city+', '+info.state+' '+info.zip}
                                                 </a>
                                            
                                     </div>
@@ -227,11 +227,11 @@ const getdirectionUrl =(address,city,state,zip)=>{
                                     <div className="map-info-link">
                                             
                                            
-                                            <Link href={'/locations/'+getStoreUrl(info.city,info.state)}>
-                                            <a  className="text-[#7b7b7b] hover:text-blue-600">
+                                            
+                                            <a href={'/locations/'+getStoreUrl(info.city,info.state)}  className="text-[#7b7b7b] hover:text-blue-600">
                                                    <span className="font-medium text-[#424242]">Website :</span> Click To Visit
                                                 </a>
-                                            </Link>
+                                          
                                                 
                                             
                                     </div>

@@ -156,7 +156,7 @@ const EventContact=(props)=>{
                                                 {
                                                     props.contactdata &&
                                                     <div className="event-info-list flex text-[#F4E6C3]  items-center space-x-4 py-3 px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
-                                                           <span className="text-[#A78849] text-[24px]"><FiMapPin/></span> <a target="_blank" href={getDirection(props.contactdata.address,props.contactdata.slug,props.contactdata.zip,props.contactdata.city)} className="text-[#F4E6C3] hover:text-blue-700">{getAddress(props.contactdata.address,props.contactdata.slug,props.contactdata.zip,props.contactdata.city)}</a>
+                                                           <span className="text-[#A78849] text-[24px]"><FiMapPin/></span> <a target="_blank" href={getDirection(props.contactdata.address,props.contactdata.slug,props.contactdata.zip,props.contactdata.city)} className="text-[#F4E6C3] hover:text-blue-700"><span class="text-blue-600 font-medium">Direction: </span>{getAddress(props.contactdata.address,props.contactdata.slug,props.contactdata.zip,props.contactdata.city)}</a>
                                                     </div>
                                                 }
                                                 {

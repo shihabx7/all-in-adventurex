@@ -16,7 +16,7 @@ const BuyGiftCards=()=>{
             <div className="max-w-7xl mx-auto px-4 z-30">
                     <TitleSeparator title='ALL IN ADVENTURES GIFT CARDS' color='golden-text' weight='font-bold'/>
                     <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-12 lg:mb-16">
-                         <p className="text-gray-200 md:px-8">In this product polluted world, consider giving a gift of memories, not things! Our escape room gift cards are perfect for your mystery loving friends, families and colleagues. Everyone loves it! </p>
+                         <p className="text-gray-200 md:px-8">In this product polluted world, consider giving a gift of memories! Our gift cards are perfect for your adventure loving friends, families and colleagues. Everyone loves it! </p>
                      </div>
                      {/* =================1st section================*/}
                      <div className="gift-row flex flex-col md:flex-row justify-center md:space-x-4 lg:space-x-8 items-center">
@@ -69,7 +69,7 @@ const BuyGiftCards=()=>{
                                         </div>
                                         <div className="gift-option-box mb-6 lg:mb-8">
                                              <h3 className="golden-text font-semibold mt-8 md:mt-0 text-xl lg:text-2xl mb-4 uppercase">
-                                                OPTION 2 (TRADITIONAL)
+                                                OPTION 2 (MOST SURPRISING)
                                              </h3>
                                              <p className="text-[#BEBEBE] lg:text-lg">
                                              Let us do the work for you with an added element of MYSTERY and SURPRISE.

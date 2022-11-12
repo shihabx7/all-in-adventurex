@@ -40,8 +40,8 @@ const Footer=(props)=>{
                             <p className='text-gray-300 md:text-lg pt-4'>All In Adventures (formerly Mystery Room) 
                                         is one of the pioneers in bringing escape rooms to the United States
                                         and now operates in {props.totallocations? props.totallocations:"27"} locations. Established in 2014 and a registered
-                                        franchise brand since 2014, All In Adventures has gained vast experience
-                                        in the escape room, game show room, beat the seat, virtual reality and axe throwing industry.</p>
+                                        franchise brand since 2020, All In Adventures has gained vast experience
+                                        in the escape room, game show room, beat the seat and axe throwing industry.</p>
                                         <p className='text-gray-300 md:text-lg pt-4 pb-8'>We're your one stop shop for any private event. 
                                         We have you covered for birthday parties, team building, corporate events, holiday parties, 
                                         bachelor or bachelorette parties and so much more!</p>
