@@ -62,7 +62,7 @@ const GameHomeHero=(props)=>{
                             props.pagedata.max_players &&
                             <div className="text-center">  
                          
-                                 <p className="golden-text text-xl md:text-4xl font-os font-bold">{props.pagedata.min_players}{props.pagedata.max_players>1? "-"+props.pagedata.max_players:""}</p>
+                                 <p className="golden-text text-xl md:text-4xl font-os font-bold">{props.pagedata.max_players==props.pagedata.min_players? props.pagedata.min_players:props.pagedata.min_players+"-"+props.pagedata.max_players}</p>
                                  <p className="text-gray-700 text-xs md:text-base lg:text-lg ">{props.pagedata.min_players<2? "Player":"Players" }</p>
                               </div>
                         }

@@ -235,7 +235,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                     "duration":"60",
                                     "maxplayers":"16",
                                     "minplayers":"4",
-                                    "price":"33",
+                                    "price":"80",
                                     "slug"  :"game-show-room",
                                     "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
                                    },
@@ -248,7 +248,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                     "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
                                     "age":"All Age (13+)",
                                     "duration":"60",
-                                    "maxplayers":"4",
+                                    "maxplayers":"6",
                                     "minplayers":"2",
                                     "price":"29.89",
                                     "slug"  :"axe-throwing",

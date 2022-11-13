@@ -45,7 +45,7 @@ const RewardsLoc=(props)=>{
                                                     return(
                                                         <div key={loc.id+item.id} className=' loc-item py-2 border-b border-dark-coffee'>
                                                                
-                                                                    <a href={"https://fivestars.com/locations/"+item.slug} target="_blank" className='loc-link'> 
+                                                                    <a href={"https://www.fivestars.com/accounts/login/?b_uid="+item.b_uid} target="_blank" className='loc-link'> 
                                                                         <div className='flex space-x-1 items-center md:text-lg'> 
                                                                             <span className='golden-text'>{item.city}, {loc.state}</span>
                                                                             <span className='text-gold'><FaAngleRight/></span>
