@@ -10,9 +10,8 @@ const CoreValue=()=>{
                         <TitleSeparator title="Core Value" color="golden-text" weight="font-bold" />
                         <p className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16 text-gray-700">
                             Our core value is we strive to be the leader in providing an interactive and
-                             immersive escape room adventure and other fun activities through exceptional
-                              guest service and amazing game experience. Following are a few more values
-                               we really care about a lot.
+                            engaging adventure through exceptional
+                              guest service and amazing game experience. Following are additional values that are important to us and core to our business..
                         </p>
 
                     </div>
@@ -46,7 +45,7 @@ const CoreValue=()=>{
                                 <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">GROW OR DIE</h3>
                                 <p className="lg:text-lg text-gray-700 mt-2 md:mt-4">We are a relatively young company,
                                  but are growing at warp speed! What started out as a single escape room venture in Georgia
-                                  has rapidly expanded to over 27 locations in 11 different states. We believe either
+                                  has rapidly expanded to over 26 locations in 11 different states. We believe either
                                    we grow or we die! Here we're growing fast.
                                 </p>
                         </div>

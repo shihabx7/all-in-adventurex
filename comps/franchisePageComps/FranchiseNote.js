@@ -5,10 +5,10 @@ const FranchiseNote=()=>{
     return(
         <div className="Frans-note pt-16 md:pt-20 lg:pt-28">
                 <div className="">
-                <div className="section-title-sep mt-4 md:mt-0">
-                            <p className="text-lg text-[#938056] text-center">NOTE</p>
+                <div className="section-title-sep mt-4 md:mt-0 mb-8">
+                           
                             <TitleSeparator title="NOTE FROM ALL IN ADVENTURES DIRECTORS" color="golden-text" weight="font-bold"/>
-                            <p className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16 text-gray-700">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                            
                             
                  </div>
                  <div className="frans-note-box grid grid-cols-1 gap-y-4 md:gap-y-0 gap-x-0 md:grid-cols-2 md:gap-x-4">

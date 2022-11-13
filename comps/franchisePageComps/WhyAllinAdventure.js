@@ -7,7 +7,7 @@ const WhyAllinAdventure=()=>{
                  <div className="section-title">
                         <TitleSeparator title="WHY ALL IN ADVENTURES" color="golden-text" weight="font-bold" />
                         <p className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16 text-gray-700">What are the benefits to owning an escape room
-                         franchise? Owning a franchise allows you to go into the business for yourself but not by yourself.
+                         franchise? Owning a franchise allows you to go into business for yourself but not by yourself.
                           Here are a few key benefits to joining the All In Adventures franchise system.</p>
 
                  </div>

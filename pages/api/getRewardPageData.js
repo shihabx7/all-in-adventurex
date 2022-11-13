@@ -15,7 +15,7 @@ export const getRewardPageData=()=>{
            
           "pagedata": {
                         "pagetitle":"ALL IN ADVENTURES REWARDS PROGRAM",
-                        "pagesubtitle":"In partnership with FIVESTARS, our all-new rewards program offers you to earn points for all experiences, free experience on birthdays, surprise offers, and much more. To join go to READY TO SIGN UP section below. ",
+                        "pagesubtitle":"In partnership with FIVESTARS, our rewards program offers you to earn points for all experiences, free experience on birthdays, surprise offers, and much more. To join go to READY TO SIGN UP section below. ",
                          "totalLocation":"28",
                         "totalLocations": getTotal().totalLocations,
                         "coverimageL":"/assets/gn-desktop-hero/allinadventures-reward-program-hero.jpg",

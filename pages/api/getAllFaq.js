@@ -106,7 +106,7 @@ export const getAllFaq=()=>{
                             "ques":"Are your games wheelchair accessible?",
                             "ans":[
                               "Yes. We pride ourselves on having totally accessible games.",
-                              "There maybe occasional puzzles that require additional assistance but",
+                              "There maybe occasional puzzles that require additional assistance but ",
                               "in general everyone can play an active part in all aspects of the games."
                             ],
                                   
@@ -118,7 +118,7 @@ export const getAllFaq=()=>{
                             "group":"getting_started",
                             "ques":"Is there a dress code?",
                             "ans":[
-                              "Just come as you are! Just make sure you are comfortable as all of your senses",
+                              "Just come as you are! Just make sure you are comfortable as all of your senses ",
                               "will be on high alert and monitored by a game master! There is no dress code but",
                               "we recommend wearing clothing that you will be able to comfortably move around in while playing."
                             ],
@@ -131,21 +131,10 @@ export const getAllFaq=()=>{
                             "group":"getting_started",
                             "ques":"Is there a minimum age requirement?",
                             "ans":[
-                              "No, players of all ages are welcome. We have a variety of levels of difficulty,",
-                              "making it fun for all ages. A paying adult, 18 or older, must participate with anyone",
-                              "that is 13 and under. Also, any participants under the age of 18 will need an adult to",
+                              "No, players of all ages are welcome. We have a variety of levels of difficulty, ",
+                              "making it fun for all ages. A paying adult, 18 or older, must participate with anyone ",
+                              "that is 13 and under. Also, any participants under the age of 18 will need an adult to ",
                               "sign their waiver."
-                            ],
-                                  
-              
-                          },
-                          {
-                            "id":10,
-                            "category":"all",
-                            "group":"getting_started",
-                            "ques":"Can I bring my small child with me?",
-                            "ans":[
-                              "Yes! Any child that is age 6 and under can come along with you and will be free of charge."
                             ],
                                   
               
@@ -202,8 +191,8 @@ export const getAllFaq=()=>{
                             "group":"getting_started",
                             "ques":"Can I bring outside food and/or drinks?",
                             "ans":[
-                              "Food and drink packages are available with special events, and guests",
-                               "are permitted to bring their own store-bought or commercially prepared foods",
+                              "Food and drink packages are available with special events, and guests ",
+                               "are permitted to bring their own store-bought or commercially prepared foods ",
                                 "with the rental of the party room. Please contact us for more information."
                             ],
                                   
@@ -239,7 +228,7 @@ export const getAllFaq=()=>{
                             "group":"getting_started",
                             "ques":"Are there cameras in the escape rooms?",
                             "ans":[
-                              "Yes. Cameras are used to monitor your live experience. ",
+                              "Yes. In some locations cameras are used to monitor the location",
                                
                             ],
                                   
@@ -277,7 +266,7 @@ export const getAllFaq=()=>{
                             "group":"getting_started",
                             "ques":"How do I get my pictures of our group after we finished All In Adventures?",
                             "ans":[
-                              "Navigate to the Gallery on our website and choose a location to find and download your photos",
+                              "Each player that filled out a waiver and added a valid email will receive a link 24 hours after the event to the Facebook page where you can download your photos.",
                                
                             ],
                                   
@@ -289,7 +278,7 @@ export const getAllFaq=()=>{
                             "group":"getting_started",
                             "ques":"What room(s) would you recommend for children?",
                             "ans":[
-                              "For children under the age of 12, we would recommend starting with any Level 1 room. Superhero's Adventure is very popular and great for kids. Treasure Island is great for families.",
+                              "All of our games are children friendly.  Superhero’s Adventure is very popular and great for kids.  Treasure Island is great for families.",
                                
                             ],
                                   
@@ -313,7 +302,7 @@ export const getAllFaq=()=>{
                             "group":"getting_started",
                             "ques":"How can I work at The Escape Game?",
                             "ans":[
-                              "Please visit <a href=\"'/career'\" class=\"text-blue-600 hover:text-blue-700 \"> allinadventures.com/careers</a>",
+                              "Please visit <a href=\"/careers\" class=\"text-blue-600 hover:text-blue-700 \"> allinadventures.com/careers</a>",
                               " to view all available positions.",
                                
                             ],
@@ -404,8 +393,7 @@ export const getAllFaq=()=>{
                             "group":"escape_rooms",
                             "ques":"What if we need help during the game?",
                             "ans":[
-                              "You'll be monitored closely via multiple surveillance cameras linked directly",
-                              " to your dedicated Game Master in our control room. If you are stuck you may ask them for a hint!",
+                              "You can simply press the call button and one of our Game Masters will be notified to come help you.  If you are stuck you may ask them for a hint!",
                             ]
                                   
               
@@ -416,7 +404,7 @@ export const getAllFaq=()=>{
                             "group":"escape_rooms",
                             "ques":"What happens if we don't solve anything?",
                             "ans":[
-                              "We will be monitoring your progress throughout the escape game. Our game masters will provide clues if you get stuck _ after all, we want you to have fun! Remember, it's not only about trying to escape the room; it's about the fun experience. But if you're just dying to break out, we do have some tips and tactics as well as suggestions on when to ask for a hint.",
+                              "Our game masters will provide clues if you get stuck _ after all, we want you to have fun! Remember, it's not only about trying to escape the room; it's about the fun experience. But if you're just dying to break out, we do have some tips and tactics as well as suggestions on when to ask for a hint.",
                             ]
                                   
               
@@ -768,15 +756,7 @@ export const getAllFaq=()=>{
                             ]
                           },  
                           // =========== reward programm
-                          {
-                            "id":60,
-                            "category":"rewards",
-                            "group":"REWARDS_PROGRAM",
-                            "ques":"Can I get a physical gift card instead of an electronic one?",
-                            "ans":[
-                              "Physical gift cards can be provided at our Location.",
-                            ]
-                          },
+                         
                          
                           {
                             "id":61,

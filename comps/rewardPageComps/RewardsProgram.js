@@ -13,16 +13,11 @@ const RewardsProgram=()=>{
                             <p className="text-lg text-[#938056]">NEW VIP</p>
                             <GameTitleSeparator title="REWARDS PROGRAM" color="golden-text" weight="font-bold"/>    
                          </div>
-                        <p className="text-gray-700 lg:text-lg mt-4  lg:mt-6">Welcome to our ALL-NEW digital Rewards Program that will provide you with more value on every visit. 
+                        <p className="text-gray-700 lg:text-lg mt-4  lg:mt-6">Welcome to our digital Rewards Program that will provide you with more value on every visit. 
                         This program will apply to all experiences All In Adventures has to offer including Escape Rooms,
                          Game Show Room, Axe Throwing and more that will be coming soon! We have partnered with an industry
                           leading rewards program company named Fivestars. Download their free app on your phone so you can
-                           track and manage all your rewards in one convenient place.Welcome to our all-new digital Rewards
-                            Program that will provide you with more value on every visit. This program will apply to all
-                             experiences All In Adventures has to offer including Escape Rooms, Game Show Room
-                             , Axe Throwing and more that will be coming soon! We have partnered with an industry
-                              leading rewards program company named FIVESTARS. Download their free app on your
-                               phone so you can track and manage all your rewards in one convenient place.</p>
+                           track and manage all your rewards in one convenient place.</p>
                         <div className="abt-notice-list mt-4 md:mt-4 lg:mt-6">
                             <h3 className="font-medium text-[#464646] text-xl">Here are just a few of the reasons why you should join:</h3> 
                             <ul className="star-list pl-4 text-[#464646] mt-4">

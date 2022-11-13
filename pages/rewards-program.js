@@ -58,8 +58,9 @@ const rewardProgram=(props)=>{
 
         <GameHomeHero gametotal="not" pagedata={props.pagedata}/>
         <RewardsProgram/>
-        <ContactForJoin locationlist={props.locationlist}/>
+        
         <EarningPoints/>
+        <ContactForJoin locationlist={props.locationlist}/>
         <RewardFaqs faqlist={props.faqlist}/>
          
        

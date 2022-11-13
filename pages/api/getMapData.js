@@ -51,7 +51,7 @@ export const getMapData =()=>{
 
   }
   const dd=extractData(loc)
-  console.log(loc)
+ 
 
     const mapData=[
     // ny list

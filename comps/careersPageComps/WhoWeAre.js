@@ -29,7 +29,7 @@ const WhoWeAre=()=>{
                     <div className="abt-col md:w-[48%]">
                         <h2 className="golden-text text-2xl md:text-3xl lg:text-4xl font-os font-bold mt-4 md:mt-0">WHO WE ARE</h2>
                         <p className="text-gray-700 lg:text-[20px] mt-4  lg:mt-8">We are a leader in providing an interactive 
-                        immersive escape room experience that allows our guests a chance to become real-life detectives </p>
+                        engaging escape room experience that allows our guests a chance to become real-life detectives </p>
                          <p className="text-gray-700 lg:text-[20px] mt-4">With 50 minutes on the clock, guest and their team must find clues, 
                          solve puzzles, and decipher codes to escape the room of their choice..</p>
                        

@@ -149,7 +149,7 @@ const ProjectTimeLine=()=>{
                                     <div className="tab-text mt-4 md:mt-6 lg:mt-8 ">
                                        <ul className="star-list pl-6 lg:text-lg">
                                             <li className="my-3 lg:my-4 text-[#464646]">Hiring and training employees</li>
-                                            <li className="my-3 lg:my-4 text-[#464646]">Launch the local website under the allinadventures.com domain and open the reservation systemt</li>
+                                            <li className="my-3 lg:my-4 text-[#464646]">Launch the local website under the allinadventures.com domain and open the reservation system</li>
                                             <li className="my-3 lg:my-4 text-[#464646]">Launch pre-opening advertising campaigns</li>
                                             <li className="my-3 lg:my-4 text-[#464646]">Make online marketing campaigns and resources in place to get the momentum coming FAST.</li>
 

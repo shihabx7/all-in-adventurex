@@ -39,7 +39,7 @@ const LocationListView=({city,state})=>{
                 </div>
                 <div className="loaction-business-hour mt-1 relative"> 
                     <div className="location-review-ind flex items-center space-x-2 lg:text-lg">
-                        <span className="text-[#7b7b7b] font-medium">5.0</span>
+                        <span className="text-[#7b7b7b] font-medium">{city.avg_rev}</span>
                         <span><img src="/assets/reviews/fivestar.svg"></img></span>
                         <span className="text-[#7b7b7b] font-medium">({city.fivestar})</span>
                     </div>

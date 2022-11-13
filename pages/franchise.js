@@ -56,7 +56,7 @@ const franchise  = (props) => {
          }
          <FranchiseHero pagedata={props.pagedata} label="INQUIRY NOW" linkloc="/franchise-contact"/>
          <FranchiseModel/>
-         <FranchiseTestimonials/>
+        {/*<FranchiseTestimonials/> */} 
          <WhyAllinAdventure/>
          <ProjectTimeLine/>
          <KeytoSuccess/>

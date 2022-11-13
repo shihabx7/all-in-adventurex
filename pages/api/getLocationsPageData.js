@@ -554,81 +554,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                         ]
                     },
                //========================================== 2 NORTH CAROLINA end
-                     //========================================== 3 PENNSYLVANIA
-                    {
-                        "id":3,
-                        "state":"PA",
-                        "state_name":"PENNSYLVANIA",
-                        "cities":[
-                            
-                                     {
-                                        "id":1,
-                                        "city":"Bensalem",
-                                        "city_include":"Our customers come from many surrounding cities, including Philadelphia, King of Prussia, Doylestown, Princeton, NJ and many more!",
-                                        "entry_guid":"Our store is located in the AMC wing, across from Modell's Sporting Goods.",
-                                        "slug":"bensalem-pa",
-                                        "address":"707 Neshaminy Mall",
-                                        "zip":"19020",
-                                        "fivestar":"600+",
-                                        "total_rev":"864",
-                                        "avg_rev":"4.6",
-                                        "player_escaped":"15K+",
-                                        "phone":"+1 267-227-1101",
-                                        "coverimg":'/assets/mapcard/allinadventures-escape-room-bensalem-pa-neshaminy-mall-hero.jpg',
-                                        "mall":"Neshaminy Mall",
-                                        "alt":'allinadventures-escape-room-bensalem-pa-neshaminy-mall-hero',
-                                        "email":"Store130@Allinadventures.com",
-                                        "position": { lat: 40.14369469629309, lng: -74.95479885308148},
-                                        "hours":[
-                                          {
-                                            "day":"monday",
-                                            "open":"12 am",
-                                            "close":"8 pm"
-                          
-                                          },
-                                          {
-                                            "day":"tuesday",
-                                            "open":"12 am",
-                                            "close":"8 pm"
-                          
-                                          },
-                                          {
-                                            "day":"wednesday",
-                                            "open":"12 am",
-                                            "close":"8 pm"
-                          
-                                          },
-                                          {
-                                            "day":"thursday",
-                                            "open":"12 am",
-                                            "close":"8 pm"
-                          
-                                          },
-                                          {   
-                                            "day":"friday",
-                                            "open":"12 am",
-                                            "close":"8 pm"
-                          
-                                          },
-                                          {   
-                                            "day":"saturday",
-                                            "open":"12 am",
-                                            "close":"8 pm"
-                          
-                                          },
-                                          {   
-                                            "day":"sunday",
-                                            "open":"12 am",
-                                            "close":"6 pm"
-                          
-                                          }
-        
-                                    
-                                           ]
-                                       }
-                                ]
-                    },
-              //========================================== 3 PENNSYLVANIA end
+                    
                     //========================================== 4 MASSACHUSETTS
                     {
                         "id":4,
@@ -1108,6 +1034,81 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                 ]
                     },
    //========================================== 5 CONNECTICUT end
+    //========================================== 3 PENNSYLVANIA
+    {
+      "id":3,
+      "state":"PA",
+      "state_name":"PENNSYLVANIA",
+      "cities":[
+          
+                   {
+                      "id":1,
+                      "city":"Bensalem",
+                      "city_include":"Our customers come from many surrounding cities, including Philadelphia, King of Prussia, Doylestown, Princeton, NJ and many more!",
+                      "entry_guid":"Our store is located in the AMC wing, across from Modell's Sporting Goods.",
+                      "slug":"bensalem-pa",
+                      "address":"707 Neshaminy Mall",
+                      "zip":"19020",
+                      "fivestar":"600+",
+                      "total_rev":"864",
+                      "avg_rev":"4.6",
+                      "player_escaped":"15K+",
+                      "phone":"+1 267-227-1101",
+                      "coverimg":'/assets/mapcard/allinadventures-escape-room-bensalem-pa-neshaminy-mall-hero.jpg',
+                      "mall":"Neshaminy Mall",
+                      "alt":'allinadventures-escape-room-bensalem-pa-neshaminy-mall-hero',
+                      "email":"Store130@Allinadventures.com",
+                      "position": { lat: 40.14369469629309, lng: -74.95479885308148},
+                      "hours":[
+                        {
+                          "day":"monday",
+                          "open":"12 am",
+                          "close":"8 pm"
+        
+                        },
+                        {
+                          "day":"tuesday",
+                          "open":"12 am",
+                          "close":"8 pm"
+        
+                        },
+                        {
+                          "day":"wednesday",
+                          "open":"12 am",
+                          "close":"8 pm"
+        
+                        },
+                        {
+                          "day":"thursday",
+                          "open":"12 am",
+                          "close":"8 pm"
+        
+                        },
+                        {   
+                          "day":"friday",
+                          "open":"12 am",
+                          "close":"8 pm"
+        
+                        },
+                        {   
+                          "day":"saturday",
+                          "open":"12 am",
+                          "close":"8 pm"
+        
+                        },
+                        {   
+                          "day":"sunday",
+                          "open":"12 am",
+                          "close":"6 pm"
+        
+                        }
+
+                  
+                         ]
+                     }
+              ]
+  },
+//========================================== 3 PENNSYLVANIA end
        //========================================== 6 Marryland
                  
                     {
@@ -1474,10 +1475,10 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                             "total_rev":"768",
                             "avg_rev":"4.7",
                             "player_escaped":"19K+",
-                            "player_escaped":"8.6k",
+                            
                             "phone":"+1 540-920-2253",
                             "coverimg":'/assets/mapcard/allinadventures-escape-room-roanoke-va-valley-view-mall-hero.jpg',
-                            "mall":"Valley View Mall",
+                            "mall":"Rockaway Townsquare",
                             "alt":'allinadventures-escape-room-roanoke-va-valley-view-mall-hero',
                             "email":"Store129@Allinadventures.com",
                             "position": { lat: 37.30926890765125, lng: -79.96414296359808},
@@ -1528,6 +1529,81 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                         }
                                 ]
                     },
+                      //========================================== 9 VIRGINIA end
+                      //========================================== 11 GEORGIA
+                    {
+                      "id":11,
+                      "state":"GA",
+                      "state_name":"GEORGIA",
+                      "cities":[
+                        {
+                          "id":1,
+                          "city":"Lawrenceville",
+                          "city_include":"Our customers come from many surrounding cities, including Marietta, Alpharetta, Kennesaw, Loganville, Snellville, Suwanee, Duluth, Lilburn, Sugar Hill, Buford, Norcross, Tucker, Winder, Redan, Doraville,Chamblee, Monroe and many more!",
+                          "entry_guid":"Our store is directly across the Bass Pro Shop inside the mall.",
+                          "slug":"lawrenceville-ga",
+                          "address":"5900 Sugarloaf Pkwy",
+                          "zip":'30043',
+  
+                          "fivestar":"2300+",
+                          "total_rev":"2,695",
+                          "avg_rev":"4.8",
+                          "player_escaped":"24K+",
+                          "phone":"+1 678-847-5002",
+                          "coverimg":'/assets/mapcard/allinadventures-escape-room-lawrenceville-ga-sugarloaf-mills-mall-hero.jpg',
+                          "mall":"Sugarloaf Mills",
+                          "alt":'allinadventures-escape-room-lawrenceville-ga-sugarloaf-mills-mall-hero',
+                          "email":"Store100@Allinadventures.com",
+                          "position": { lat: 33.986421448068036, lng: -84.08483070501663},
+                          "hours":[
+                             
+                            {
+                              "day":"monday",
+                              "open":"11 am",
+                              "close":"8 pm"
+            
+                            },
+                            {
+                              "day":"tuesday",
+                              "open":"11 am",
+                              "close":"8 pm"
+            
+                            },
+                            {
+                              "day":"wednesday",
+                              "open":"11 am",
+                              "close":"8 pm"
+            
+                            },
+                            {
+                              "day":"thursday",
+                              "open":"11 am",
+                              "close":"8 pm"
+            
+                            },
+                            {   
+                              "day":"friday",
+                              "open":"10 am",
+                              "close":"9 pm"
+            
+                            },
+                            {   
+                              "day":"saturday",
+                              "open":"10 am",
+                              "close":"9 pm"
+            
+                            },
+                            {   
+                              "day":"sunday",
+                              "open":"11 am",
+                              "close":"6 pm"
+            
+                            }
+                        ]
+                      }
+                       ]
+                  },
+                  //========================================== 11 ga end
                     //========================================== 10 OHIO
                     {
                         "id":10,
@@ -1729,80 +1805,8 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                     }
                      ]
                     },
-                    //========================================== 11 GEORGIA
-                    {
-                        "id":11,
-                        "state":"GA",
-                        "state_name":"GEORGIA",
-                        "cities":[
-                          {
-                            "id":1,
-                            "city":"Lawrenceville",
-                            "city_include":"Our customers come from many surrounding cities, including Marietta, Alpharetta, Kennesaw, Loganville, Snellville, Suwanee, Duluth, Lilburn, Sugar Hill, Buford, Norcross, Tucker, Winder, Redan, Doraville,Chamblee, Monroe and many more!",
-                            "entry_guid":"Our store is directly across the Bass Pro Shop inside the mall.",
-                            "slug":"lawrenceville-ga",
-                            "address":"5900 Sugarloaf Pkwy",
-                            "zip":'30043',
-    
-                            "fivestar":"2300+",
-                            "total_rev":"2,695",
-                            "avg_rev":"4.8",
-                            "player_escaped":"24K+",
-                            "phone":"+1 678-847-5002",
-                            "coverimg":'/assets/mapcard/allinadventures-escape-room-lawrenceville-ga-sugarloaf-mills-mall-hero.jpg',
-                            "mall":"Sugarloaf Mills",
-                            "alt":'allinadventures-escape-room-lawrenceville-ga-sugarloaf-mills-mall-hero',
-                            "email":"Store100@Allinadventures.com",
-                            "position": { lat: 33.986421448068036, lng: -84.08483070501663},
-                            "hours":[
-                               
-                              {
-                                "day":"monday",
-                                "open":"11 am",
-                                "close":"8 pm"
-              
-                              },
-                              {
-                                "day":"tuesday",
-                                "open":"11 am",
-                                "close":"8 pm"
-              
-                              },
-                              {
-                                "day":"wednesday",
-                                "open":"11 am",
-                                "close":"8 pm"
-              
-                              },
-                              {
-                                "day":"thursday",
-                                "open":"11 am",
-                                "close":"8 pm"
-              
-                              },
-                              {   
-                                "day":"friday",
-                                "open":"10 am",
-                                "close":"9 pm"
-              
-                              },
-                              {   
-                                "day":"saturday",
-                                "open":"10 am",
-                                "close":"9 pm"
-              
-                              },
-                              {   
-                                "day":"sunday",
-                                "open":"11 am",
-                                "close":"6 pm"
-              
-                              }
-                          ]
-                        }
-                         ]
-                    }
-                    //========================================== 11 ga end
+                     //========================================== 10 OHIO end
+                  
 
                 ]
 

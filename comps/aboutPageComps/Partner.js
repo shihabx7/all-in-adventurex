@@ -17,7 +17,7 @@ const Partner=()=>{
             <div className="section-container max-w-7xl mx-auto relative z-30 px-4">
                     <div className="section-title">
                         <TitleSeparator title="WE ARE IN THE MEDIA" color="golden-text" weight="font-bold" />
-                        <p className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16 text-gray-100">The escape room industry is all over the media, and here we're too!</p>
+                        <p className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16 text-gray-100">The escape room industry is all over the media, and here we are too!</p>
 
                     </div>
                 <div className="partner-box">
@@ -106,22 +106,12 @@ const Partner=()=>{
                                 </div>
                                 <div className="p-desc mt-2 text-center">
                                     <p className="text-[#818181] mb-2">March 5, 2018</p>
-                                    <a href="www.gazettenet.com/puzzled-escape-games-14823150" target="_blank" className="flex space-x-1 justify-center items-center text-red-600 text-lg">
+                                    <a href="https://www.gazettenet.com/puzzled-escape-games-14823150" target="_blank" className="flex space-x-1 justify-center items-center text-red-600 text-lg">
                                     <span>Learn more</span><span><FiChevronRight/></span>
                                     </a>
                                 </div>
                             </div>
-                            <div className="partner-item bg-[#111111] px-4 py-4 rounded-md md:w-1/3">
-                                <div className="p-img min-h-[80px]">
-                                    <img className="mx-auto max-h-[100%]" src="/assets/partner-8.png"></img>
-                                </div>
-                                <div className="p-desc mt-2 text-center">
-                                    <p className="text-[#818181] mb-2">February 6, 2018</p>
-                                    <a href="http://voyagechicago.com/interview/meet-john-reichel-adventures-aurora/" target="_blank" className="flex space-x-1 justify-center items-center text-red-600 text-lg">
-                                    <span>Learn more</span><span><FiChevronRight/></span>
-                                    </a>
-                                </div>
-                            </div>
+                            
                             <div className="partner-item bg-[#111111] px-4 py-4 rounded-md md:w-1/3">
                                 <div className="p-img min-h-[80px]">
                                     <img className="mx-auto max-h-[100%]" src="/assets/partner-9.png"></img>
@@ -133,11 +123,6 @@ const Partner=()=>{
                                     </a>
                                 </div>
                             </div>
-                            </div>
-                        {/**=====================partner-row 3 end----------------- */}
-                        {/**=====================partner-row 4----------------- */}
-                        <div className="partner-row flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 lg:space-x-8 justify-center  mt-4 lg:mt-8">
-
                             <div className="partner-item bg-[#111111] px-4 py-4 rounded-md md:w-1/3">
                                 <div className="p-img min-h-[80px]">
                                     <img className="mx-auto max-h-[100%]" src="/assets/partner-10.png"></img>
@@ -149,6 +134,12 @@ const Partner=()=>{
                                     </a>
                                 </div>
                             </div>
+                            </div>
+                        {/**=====================partner-row 3 end----------------- */}
+                        {/**=====================partner-row 4----------------- */}
+                        <div className="partner-row flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 lg:space-x-8 justify-center  mt-4 lg:mt-8">
+
+                            
                         </div>
                         {/**=====================partner-row 4 end----------------- */}
                      

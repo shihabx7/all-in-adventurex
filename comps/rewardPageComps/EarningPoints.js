@@ -2,7 +2,7 @@ const EarningPoints=()=>{
 
     return(
         <div className="our-mission-vission relative bg-center bg-cover" style={{backgroundImage:'url("/assets/game-dt-bg.jpg")'}}>
-        <div className="w-full absolute top-0 left-0 "><img className="w-full" src="/assets/game-home-or1.jpg"></img> </div>
+     
                 <div className="section-container max-w-7xl mx-auto px-4 py-16 md:py-20 lg:py-28 relative z-30">
                     <div className="abt-row flex flex-col md:flex-row justify-between ">
                         <div className="abt-col md:w-[48%] lg:w-[48%] ">
@@ -12,8 +12,9 @@ const EarningPoints=()=>{
                                 <div className="earning-pts-box mt-4 lg:mt-8">
                                      <h3 className="font-medium text-[#464646] text-lg lg:text-xl">Based on the experience played, you can earn:</h3> 
                                      <ul className="star-list pl-4 text-[#464646] mt-4">
-                                             <li className="lg:text-lg my-2 md:my-3 ">25 Points for Beat the Seat & Virtual Reality</li>
-                                             <li className="lg:text-lg my-2 md:my-3 ">50 Points for Escape Room</li>
+                                             <li className="lg:text-lg my-2 md:my-3 ">25 Points for Beat the Seat</li>
+                                             <li className="lg:text-lg my-2 md:my-3 ">50 Points for Escape Room and Axe Throwing</li>
+                                             
                                              <li className="lg:text-lg my-2 md:my-3 ">75 Points for Game Show Room</li>
 
                                      </ul>

@@ -35,7 +35,7 @@ const CouponDisplay=()=>{
                             
                                
                                 <div className="flex items-center justify-center coupon-hider absolute top-0 left-0 h-full rounded w-[100%] bg-golden text-center text-white border-2 border-dashed border-[#FDF1D3">
-                                     <p className="lg:text-lg">Available On In-store</p> 
+                                     <p className="lg:text-lg">Available In-store</p> 
                             </div>
                             
                             

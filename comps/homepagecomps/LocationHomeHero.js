@@ -68,12 +68,10 @@ const LocationHomeHero=(props)=>{
                 
                  <p className=' md:mt-0 font-semibold text-lg md:text-2xl  mb-2 text-white text-center uppercase '>AT {props.pagedata.locationaddress} IN {props.pagedata.locationcity} {props.pagedata.locationstate}</p> 
                  <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os uppercase max-w-[1000px] mx-auto'>ESCAPE ROOM AND FUN THINGS TO DO IN {props.pagedata.locationcity} {props.pagedata.locationstate}</h1>
-                 <p className='text-gray-100 max-w-[800px] mx-auto text-center lg:text-lg'>
-                        All In Adventures {props.pagedata.locationcity} (formerly Mystery Room {props.pagedata.locationcity}),
-                        has family and kid friendly Escape Rooms{getOtherActivity(props.activitylist)+" "} 
-                        that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in {props.pagedata.locationcity} <span className="uppercase">{props.pagedata.locationstate}</span>.
+                 <div className='text-gray-100 max-w-[800px] mx-auto text-center lg:text-lg' dangerouslySetInnerHTML={{ __html: props.pagedata.pagesubtitle }}>
+                     
 
-                 </p>
+                 </div>
                  </div>
                 <div className="max-w-md mx-auto mt-8 pb-8 ">
 

@@ -32,7 +32,7 @@ const CorContact=()=>{
                             </div>
                             <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
                                  <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg  uppercase">CUSTOMER SERVICE</h4>
-                                <a href="mail:custsvc@allinadventures.com" className="text-lg text-[#232323] block hover:text-blue-700">custsvc@allinadventures.com</a>
+                                <a href="mail:custsvc@allinadventures.com" className="text-lg text-[#232323] block hover:text-blue-700">support@allinadventures.com</a>
                             </div>
                             <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
                                  <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg  uppercase">OPERATIONS</h4>
