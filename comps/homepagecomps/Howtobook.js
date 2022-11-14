@@ -1,11 +1,60 @@
 import TitleSeparator from "../util/TitleSeparator";
 import { FaPlay } from "react-icons/fa"
+import TeaserVideo from "../util/TeaserVideo";
+import { useState } from "react";
+import { FiX } from "react-icons/fi";
+
 
 
 
 const Howtobook=()=>{
+    const [showTeaser,setShowTeaser]=useState(false)
+
+    const playTeaser=()=>{
+        setShowTeaser(true)
+        const body = document.getElementsByTagName('body')[0];
+        body.classList.add('overflow-hidden')
+      document.getElementById('ytv').classList.remove('mhide')
+      document.getElementById('ytv').classList.add('mshow')
+     
+
+    }
+    const closeTeaser=()=>{
+        setShowTeaser(false)
+        const body = document.getElementsByTagName('body')[0];
+        body.classList.remove('overflow-hidden')
+        document.getElementById('ytv').classList.remove('mshow')
+       document.getElementById('ytv').classList.add('mhide')
+        
+
+       }
+    
 
     return(
+        <> 
+        {/*======================= teaser videow modal============== */}
+       
+          
+    <div id="ytv" className="fixed top-0 bg-[rgba(0,0,0,0.8)] w-screen h-screen z-[12000] mhide"> 
+            <div onClick={closeTeaser}  className="absolute top-4 right-4 text-xl md:text-2xl lg:text-3xl">  
+                 <span className='inline-block p-1 border-2 border-red-600 text-red-600 rounded-full cursor-pointer hover:border-light-gold hover:text-gold'><FiX/></span>
+            </div>
+            <div className="max-w-[1200px] h-full mx-auto text-center flex items-center justify-center">
+                <div className="teaser-content w-[90%] md:w-auto"> 
+                     <h2 className="text-[#dddddd] mb-2 md:mb-4 text-[24px] md:text-[36px] font-medium">All adventure game teaser</h2>
+                     {showTeaser && 
+                    <TeaserVideo videoid="pfdyF_d4Z40"/>
+               
+                } 
+                    
+                </div>
+              
+                   
+                     
+             </div>
+            
+    </div>
+         {/*======================= teaser videow modal end============== */}
         <div className="htb relative py-16 md:py-20 lg:py-28 px-4 overflow-hidden" style={
             {
                 backgroundImage :  "linear-gradient(65deg,rgba(255, 249, 235,.1),rgba(255, 249, 235,.2)),url('/assets/gridbg.jpg')"
@@ -66,7 +115,7 @@ const Howtobook=()=>{
                     </div>
                 </div>
                 {/* How to book 3 steps  end*/}
-                <div className="video-play-btn flex justify-center mt-4 mb-4 md:mb-12"> 
+                <div className="video-play-btn flex justify-center mt-4 mb-4 md:mb-12" onClick={()=>{playTeaser()}}> 
                     <div className="paly-btn flex space-x-2 items-center py-4 px-8 rounded font-semibold">
                             <span className="text-2xl"> <FaPlay/> </span>
                             <span>PLAY TEASER VIDEO</span>
@@ -76,6 +125,7 @@ const Howtobook=()=>{
              </div>
 
         </div>
+        </>
     )
 }
 

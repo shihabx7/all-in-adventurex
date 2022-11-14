@@ -53,6 +53,27 @@ html,body,a{
 .thank-ev-head{
   background: linear-gradient(to bottom,rgba(0,0,0,9),rgba(0,0,0,9),rgba(0,0,0,.8),rgba(0,0,0,.6),rgba(0,0,0,0.01));
 }
+/*================= modal sesign=============*/
+
+.mhide{ 
+  
+  animation: manimout .5s ease-out;
+  display: none;
+}
+.mshow{ 
+  display: block;
+  animation: manim .5s ease-in;
+}
+@keyframes manim {
+  0%   { height:0%;}
+
+  100% { height:100%;}
+}
+@keyframes manimout {
+  0%   { height:100%;}
+
+  100% { height:0%;}
+}
 /*------------------===================map design======================*/
 .gm-style .gm-style-iw-c{
   background:#FFF9EC !important;
