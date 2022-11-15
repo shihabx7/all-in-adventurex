@@ -17,7 +17,7 @@ export const getVirtualGamesHomePageData=()=>{
           "pagedata": {
                         
                         
-                        "pagetitle":"All Virtual Escape Games",
+                        "pagetitle":"All Virtual Games",
                         "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today.",
                         "totalLocations": getTotal().totalLocations,
                         "totalUniqueGames": getTotal().uniqueGames,

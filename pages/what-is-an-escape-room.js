@@ -1,21 +1,19 @@
+
 import Head from "next/dist/shared/lib/head";
 import Homenav from "../comps/Homenav";
 import Footer from "../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
 // page template=============
-import { getVolunteeringPageData } from "./api/getVolunteeringPageData";
-import GameHomeHero  from "../comps/activitiyPageComps/GameHomeHero";
-import GivingBack from "../comps/volunteeringPageComps/GivingBack";
-import Organization from "../comps/volunteeringPageComps/Organization";
-import ContactVolunteer from "../comps/volunteeringPageComps/ContactVolunteer";
-import VolunteeringLoc from "../comps/volunteeringPageComps/VolunteeringLoc";
-import LocationStoreMenu from "../comps/headerComps/LocationStoreMenu";
+
+import { getWhatisEscape } from "./api/getWhatisEscape";
+import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
+import WhatisEscapeBlog from "../comps/util/WhatisEscapeBlog";
 
 
-const Volunteering=(props)=>{
-    /* customizing breadcum */
-    const toTitleCase=(title)=>{
+const WhtatisEscape=(props)=>{
+     /* customizing breadcum */
+     const toTitleCase=(title)=>{
         const titlefres=title.replace(/-/g,' ')
         const btitle=titlefres.split(' ').map((word)=>{return (word.charAt(0).toUpperCase() + word.slice(1))}).join(" ") // breadcum title capitalize
          
@@ -25,13 +23,12 @@ const Volunteering=(props)=>{
           )
          }
          /* customizing breadcum */
- 
-  
-      return(
-          <>
-              {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | Volunteering</title>
+
+ return(
+    <>
+        {/* =======header content======== */}
+        <Head>
+                 <title>All in adventure | What is an escape room</title>
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
@@ -42,9 +39,7 @@ const Volunteering=(props)=>{
            eventlist={props.eventlist}
            />
               {/* =======header content ======== end */}
-    
-     {/* =========================================================================================main content ======== end */}
-    <div id="mainContent" className='main-content nobtn-main-content bg-center relative' >
+              <div id="mainContent" className='main-content nobtn-main-content bg-center relative' >
            {/* =======breadcum content and breadcum========  */}
            <div className='breadcums  py-1 md:py-2 bg-[#fffceb]'>
              <Breadcrumbs  replaceCharacterList={[{ from: '-', to: ' ' }]} 
@@ -57,30 +52,27 @@ const Volunteering=(props)=>{
         </div>
          {/* =======breadcum content and breadcum root page template======== end */}
          
-
-        <div id="volunteeringdloc" className="rewardloc z-[10000] fixed w-screen h-screen top-0 left-0 overflow-scroll hidden">
-            <LocationStoreMenu locationlist={props.locationlist}/>
-
-        </div>
         <GameHomeHero gametotal="not" pagedata={props.pagedata}/>
-        <GivingBack/>
-        <Organization/>
-        <ContactVolunteer/>
+        <WhatisEscapeBlog/>
+       
    
 
   {/* =========================================================================================main content ======== end */}
         </div>
-  
-          <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
-          </>
-    )
+
+
+        <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
+    </>
+ )
+
+
 }
 
-export default Volunteering
+export default WhtatisEscape
 
 export const getStaticProps=async()=>{
 
-    const volunteeringPageData=await getVolunteeringPageData()
+    const volunteeringPageData=await getWhatisEscape()
 
     return{
         props:{

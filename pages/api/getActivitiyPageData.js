@@ -77,7 +77,8 @@ const activityDataset={
         "mission":"Prison protocol indicates that you have 50 minutes to locate and return all of the Warden's keys or the prison will have to go into lockdown. If you are able to find the keys in time, you will have to complete an additional investigation to find the prisoner who stole the keys and make sure they pay for their crime.",
         "missionimg":"/assets/all-game-details/allinadventures-escape-from-alcatraz-mission.png",
         "missionimg_alt":"allinadventures-escape-from-alcatraz-mission",
-        "videoid":"pfdyF_d4Z40"
+        "videoid":"pfdyF_d4Z40",
+        "videothumb":"/assets/video-thumb/allinadventures-treasure-island-thumb.jpg"
         
         },
         "activitygallery":[
@@ -144,7 +145,8 @@ const activityDataset={
         "mission":"In order to survive, you have 50 minutes to prove to the crew that you are good enough to keep alive. Failure to follow the directions from the crew and you will be fed to the sharks! If you can prove you are worthy of Jake Hawkin's leadership, show him you can navigate these dangerous seas and a promotion may be in order for you!",
         "missionimg":"/assets/all-game-details/allinadventures-treasure-island-mission.png",
         "missionimg_alt":"allinadventures-treasure-island-mission",
-        "videoid":"pfdyF_d4Z40"
+        "videoid":"pfdyF_d4Z40",
+        "videothumb":"/assets/video-thumb/allinadventures-treasure-island-thumb.jpg"
         
         },
         "activitygallery":[
@@ -211,7 +213,8 @@ const activityDataset={
         "mission":"The Matador has hinted that he hid the blueprint in one of the city's streets, so his plan proceeds even if he is captured. You have 50 minutes to use your superpowers to recover the stolen blueprint and, if you have time, find a way to stop his plan before time runs out!",
         "missionimg":"/assets/all-game-details/allinadventures-superheros-adventure-mission.png",
         "missionimg_alt":"allinadventures-superheros-adventure-mission",
-        "videoid":"pfdyF_d4Z40"
+        "videoid":"pfdyF_d4Z40",
+        "videothumb":"/assets/video-thumb/allinadventures-treasure-island-thumb.jpg"
         
         },
         "activitygallery":[
@@ -278,7 +281,8 @@ const activityDataset={
         "mission":"You have 50 minutes to look over your research and create a chemical test to determine the genetic traits of those who are naturally immune. If you are able to create this test in time, you can use it to develop a vaccine to distribute to the other 98% of the population. Can you finish development before attracting the zombie horde?",
         "missionimg":"/assets/all-game-details/allinadventures-zombie-apocalypse-mission.png",
         "missionimg_alt":"",
-        "videoid":"pfdyF_d4Z40"
+        "videoid":"pfdyF_d4Z40",
+        "videothumb":"/assets/video-thumb/allinadventures-treasure-island-thumb.jpg"
         
         },
         "activitygallery":[
@@ -345,7 +349,8 @@ const activityDataset={
           "mission":"We have two objectives here, agents: Figure out which note Danielson plans on forging and, if we complete that in time, find his new distribution network. Once we are able to accomplish those, that will stop Danielson from committing future laundering and destroy the foundation of his criminal empire.",
           "missionimg":"/assets/all-game-details/allinadventures-special-agent-mission.png",
           "missionimg_alt":"allinadventures-special-agent-mission",
-          "videoid":"pfdyF_d4Z40"
+          "videoid":"pfdyF_d4Z40",
+          "videothumb":"/assets/video-thumb/allinadventures-treasure-island-thumb.jpg"
           
           },
           "activitygallery":[
@@ -412,7 +417,8 @@ const activityDataset={
           "mission":"It's "+ 'time for "Name that Celebrity"! You have 50 minutes to identify our secret celebrity and, if '+ "you're "+ 'really good, go on for the Bonus Prize by also correctly identifying which booth they are hiding in!',
           "missionimg":"/assets/all-game-details/allinadventures-hollywood-premiere-mission.png",
           "missionimg_alt":"allinadventures-hollywood-premiere-mission",
-          "videoid":"pfdyF_d4Z40"
+          "videoid":"pfdyF_d4Z40",
+          "videothumb":"/assets/video-thumb/allinadventures-treasure-island-thumb.jpg"
           
           },
           "activitygallery":[
@@ -480,7 +486,8 @@ const activityDataset={
           "mission":"In 50 minutes, you must help Watson search this accountant's office to pick up any clues that will solve the case. Find the case files for all suspects in question and determine who the guilty culprit is and if they had help from a potential co-conspirator.",
           "missionimg":"/assets/all-game-details/allinadventures-sherlocks-library-mission.png",
           "missionimg_alt":"allinadventures-sherlocks-library-mission",
-          "videoid":"pfdyF_d4Z40"
+          "videoid":"pfdyF_d4Z40",
+          "videothumb":"/assets/video-thumb/allinadventures-treasure-island-thumb.jpg"
           
           },
           "activitygallery":[
@@ -547,7 +554,8 @@ const activityDataset={
           "mission":"You will have 50 minutes to complete your act. First, perform a series of tricks with multiple sets of playing cards. Once you have mastered the art of cards, it will be time to perform your ultimate act involving escaping from multiple types of locks and handcuffs.",
           "missionimg":"/assets/all-game-details/allinadventures-houdinis-magic-cell-mission.png",
           "missionimg_alt":"allinadventures-houdinis-magic-cell-mission",
-          "videoid":"pfdyF_d4Z40"
+          "videoid":"pfdyF_d4Z40",
+          "videothumb":"/assets/video-thumb/allinadventures-treasure-island-thumb.jpg"
           
           },
           "activitygallery":[
@@ -615,7 +623,8 @@ const activityDataset={
           "mission":"You must make it out alive. In 50 minutes, you must defuse all booby-traps to save your squad. However, you cannot lose sight of the main mission - capturing The Hawk. If you are able to disarm all traps, you must search the bunker to find additional information that will help us discover The Hawk's true location so we can continue the hunt.",
           "missionimg":"/assets/all-game-details/allinadventures-black-ops-mission.png",
           "missionimg_alt":"allinadventures-black-ops-mission",
-          "videoid":"pfdyF_d4Z40"
+          "videoid":"pfdyF_d4Z40",
+          "videothumb":"/assets/video-thumb/allinadventures-treasure-island-thumb.jpg"
           
           },
           "activitygallery":[
@@ -682,7 +691,8 @@ const activityDataset={
           "mission":"You must outsmart the jungle! Prove you are worthy by beating the jungle creatures at their own game. Solve the puzzles, decipher the riddles, and put together clues and finish the game in time to put the world back in normal order.",
           "missionimg":"/assets/all-game-details/allinadventures-lost-in-the-jungle-mission.png",
           "missionimg_alt":"allinadventures-lost-in-the-jungle-mission",
-          "videoid":"pfdyF_d4Z40"
+          "videoid":"pfdyF_d4Z40",
+          "videothumb":"/assets/video-thumb/allinadventures-treasure-island-thumb.jpg"
           
           },
           "activitygallery":[
@@ -750,7 +760,8 @@ const activityDataset={
           "mission":"You studied right? RIGHT?! Oh, alright then, good! Use your knowledge of wizarding and escape this office! You must locate and solve all puzzles located in the wizard's office and get to class on time so your faculty doesn't lose points this semester!",
           "missionimg":"/assets/all-game-details/allinadventures-wizarding-school-mission.png",
           "missionimg_alt":"allinadventures-wizarding-school-mission",
-          "videoid":"pfdyF_d4Z40"
+          "videoid":"pfdyF_d4Z40",
+          "videothumb":"/assets/video-thumb/allinadventures-treasure-island-thumb.jpg"
           
           },
           "activitygallery":[
@@ -817,7 +828,8 @@ const activityDataset={
           "mission":"Pass the exam and earn your spot in the Magic Castle! Your exam is timed and the 60 minutes will be up before you know it. Listen closely to all directions and complete all tasks in time to secure your place.",
           "missionimg":"/assets/all-game-details/allinadventures-houdinis-magic-cell-mission.png",
           "missionimg_alt":"allinadventures-houdinis-magic-cell-mission",
-          "videoid":"pfdyF_d4Z40"
+          "videoid":"pfdyF_d4Z40",
+          "videothumb":"/assets/video-thumb/allinadventures-treasure-island-thumb.jpg"
           
           },
           "activitygallery":[
@@ -884,7 +896,8 @@ const activityDataset={
           "mission":"The emergency phone is out and no help is coming. You must remain calm and use logic to escape the trapped lift. But hurry up, the lift will only remain secure for 60 minutes. We don't want to find out what happens after that…",
           "missionimg":"/assets/all-game-details/allinadventures-locked-in-the-lift-mission.png",
           "missionimg_alt":"allinadventures-locked-in-the-lift-mission",
-          "videoid":"pfdyF_d4Z40"
+          "videoid":"pfdyF_d4Z40",
+          "videothumb":"/assets/video-thumb/allinadventures-treasure-island-thumb.jpg"
           
           },
           "activitygallery":[
@@ -950,6 +963,7 @@ const activityDataset={
           "mission":"This is the perfect pastime for those looking for a highly energetic, super entertaining corporate team building event, birthday party, bachelor / bachelorette party, church / family reunion or an outing with friends or family!",
           "missionimg":"/assets/all-game-details/allinadventures-game-show-room-sec3.png",
           "videoid":"pfdyF_d4Z40",
+          "videothumb":"/assets/video-thumb/allinadventures-treasure-island-thumb.jpg",
           "faqlist":[
             {
                    "id":1,
@@ -1120,7 +1134,8 @@ const activityDataset={
           "sceneimg":"/assets/all-game-details/allinadventures-axe-throwing-sec2.png",
           "mission":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
           "missionimg":"/assets/all-game-details/allinadventures-axe-throwing-sec3.png",
-          "videoid":"pfdyF_d4Z40"
+          "videoid":"pfdyF_d4Z40",
+          "videothumb":"/assets/video-thumb/allinadventures-treasure-island-thumb.jpg"
           
           },
           "activitygallery":[
@@ -1186,7 +1201,8 @@ const activityDataset={
           "sceneimg":"/assets/all-game-details/allinadventures-beat-the-seat-sec2.png",
           "mission":"The great thing is that it can be played by anyone 8 years and older as we have a child mode too! Anyone can play it over and over again as the sequencing of the game changes every time. Try to beat the best times or compete with your friends and family in this new and unique experience.",
           "missionimg":"/assets/all-game-details/allinadventures-beat-the-seat-sec3.png",
-          "videoid":"pfdyF_d4Z40"
+          "videoid":"pfdyF_d4Z40",
+          "videothumb":"/assets/video-thumb/allinadventures-treasure-island-thumb.jpg"
           
           },
           

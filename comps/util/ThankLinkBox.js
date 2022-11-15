@@ -1,8 +1,10 @@
 const ThankLinkBox=()=>{
     return(
       <div className="thank-bottom grid grid-cols-1 md:grid-cols-3  gap-y-4 md:gap-y-0 md:gap-x-4 lg:gap-x-8 mt-16">
-                            <div href="/activities" className="group thank-link-box relative">
-                              <div className="thank-ev-head absolute top-0 left-0 w-full z-10 pt-8 pb-12 md:pb-8 lg:pb-14"> </div>
+                            <div className="group thank-link-box relative">
+                              <div className="thank-ev-head absolute top-0 left-0 w-full z-10 pt-16 pb-12 md:pb-8 lg:pb-14">
+                                    <h2 className="text-[#eeeeee] font-bold text-[26px] text-center">ESCAPE ROOMS</h2>
+                                 </div>
                                 <div className="border-left-img absolute top-0 left-0 h-full z-10">
                                   <img className="block h-full" src="/assets/border/Game-Border-left-right.png"></img>
                                 </div>
@@ -41,7 +43,9 @@ const ThankLinkBox=()=>{
                                 <div className=" absolute top-0 left-0 w-full z-20 pb-8">
                                    <img className="block w-full" src="/assets/border/event-card-header.png"></img>
                                 </div>
-                                <div className="thank-ev-head absolute top-0 left-0 w-full z-10 pt-8 pb-12 md:pb-8 lg:pb-14"></div>
+                                <div className="thank-ev-head absolute top-0 left-0 w-full z-10 pt-16 pb-12 md:pb-8 lg:pb-14">
+                                    <h2 className="text-[#eeeeee] font-bold text-[26px] text-center">EVENTS AND PARTIES</h2>
+                                </div>
                                <div className="border-top-img w-full absolute top-0 left-0  z-10">
                                   <img className="block w-full" src="/assets/border/event-card-Border-top.png"></img>
                                 </div>
@@ -64,7 +68,9 @@ const ThankLinkBox=()=>{
                                     
                             </div>
                             <div className="block group thank-link-box relative ">
-                            <div className="thank-ev-head absolute top-0 left-0 w-full z-10 pt-8 pb-12 md:pb-8 lg:pb-14"> </div>
+                            <div className="thank-ev-head absolute top-0 left-0 w-full z-10 pt-16 pb-12 md:pb-8 lg:pb-14"> 
+                                <h2 className="text-[#eeeeee] font-bold text-[26px] text-center">VIRTUAL GAMES</h2>
+                            </div>
                                     <div className="absolute top-0 right-0 ml-auto w-[14%] z-20">
                                          <img className="block w-full" src="/assets/border/virtual-game-right-corner.png"></img>
                                     </div>

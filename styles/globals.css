@@ -74,6 +74,20 @@ html,body,a{
 
   100% { height:0%;}
 }
+.vid-play-btn{
+  
+  transition: .6s;
+  animation: pulse .6s ease-in-out infinite;
+}
+.vid-play-btn:hover{
+  box-shadow: 0px 0px 12px 20px rgba(242,191,114,0.7);
+  transition: .6s;
+}
+@keyframes pulse {
+  0%   {  box-shadow: 0px 0px 8px 12px rgba(242,191,114,0.62);}
+
+  100% { box-shadow: 0px 0px 12px 20px rgba(242,191,114,0.66);}
+}
 /*------------------===================map design======================*/
 .gm-style .gm-style-iw-c{
   background:#FFF9EC !important;
