@@ -65,7 +65,10 @@ const LocationHomeHero=(props)=>{
              </div>
             <div className='max-w-7xl home-hero-container mx-auto px-4 pb-16 pt-16 md:pb-24 md:pt-[160px] lg:pb-28 lg:pt-[210px] relative z-10'>
                 <div className="page-benar-info"> 
-                
+                    {
+                        !props.pagedata.publish_status &&
+                            <h3 className="text-center font-bold text-red-600 text-[32px] md:text-[52px] font-os drop-shadow-lg">...COMMING SOON...</h3>
+                    }
                  <p className=' md:mt-0 font-semibold text-lg md:text-2xl  mb-2 text-white text-center uppercase '>AT {props.pagedata.locationaddress} IN {props.pagedata.locationcity} {props.pagedata.locationstate}</p> 
                  <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os uppercase max-w-[1000px] mx-auto'>ESCAPE ROOM AND FUN THINGS TO DO IN {props.pagedata.locationcity} {props.pagedata.locationstate}</h1>
                  <div className='text-gray-100 max-w-[800px] mx-auto text-center lg:text-lg' dangerouslySetInnerHTML={{ __html: props.pagedata.pagesubtitle }}>
@@ -77,11 +80,11 @@ const LocationHomeHero=(props)=>{
 
                         {/*============location search btn==========*/}
                         <div className="booking-btn">
-                        {
-                            props.pagedata.bookingall &&
+                        
                           
                            <a href={"/"+props.pagedata.slug+"/activities"} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">VIEW ALL GAMES</a>
-                        }
+                        
+                        
                          </div>
                          <div className="booking-btn mt-4">
                                 

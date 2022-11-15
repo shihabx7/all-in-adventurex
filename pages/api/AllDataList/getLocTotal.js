@@ -45,6 +45,7 @@ export const getLocTotal=(locationslug)=>{
         "locUniqueGames":getLocationActivitySlugList(locationslug).length,
         "locToalPlayerEscape":getlocData(locationslug).player_escaped,
         "locTotalReview":getlocData(locationslug).fivestar,
+        "publish_status":getlocData(locationslug).publish_status? getlocData(locationslug).publish_status:true,
         "toalPlayerEscape":"9M+",
         "totalReview":"750K+",
         "locationlist":getLocationsPageData().states,

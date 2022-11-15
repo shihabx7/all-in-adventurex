@@ -21,6 +21,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                         "id":1,
                                         "city":"Albany",
+                                        "publish_status":true,
                                         "city_include":"Our customers come from many surrounding cities, including Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield and many more!",
                                         "entry_guid":"Use the 2nd floor mall entrance between the J.C.Penney and Pottery Barn, take a left at the escalators. We are located on the right side, between Athleta and Zara, across from Banana Republic.",
                                         "address":"1 Crossgates Mall Rd",
@@ -89,6 +90,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                         "id":2,
                                         "city":"Buffalo",
+                                        "publish_status":true,
                                         "address":"1 Walden Galleria",
                                         "city_include":"Our customers come from many surrounding cities, including North Tonawanda, Cheektowaga, Medina, Hamburg, Amherst and many more!",
                                         "entry_guid":"Our store is located on the 1st floor between JC Penny's and Macy's, across from Lord and Taylor.",
@@ -154,6 +156,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                         "id":3,
                                         "city":"Middletown",
+                                        "publish_status":true,
                                         "city_include":"Our customers come from many surrounding cities, including Vernon, Newton, West Nyack, Poughkeepsie, Newburgh and many more!",
                                         "entry_guid":"Our store is located on the 2nd floor. We are between H&M and American Eagle clothing stores.",
                                         "address":"1 Galleria Dr",
@@ -220,6 +223,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                         "id":4,
                                         "city":"Syracuse",
+                                        "publish_status":true,
                                         "city_include":"Our customers come from many surrounding cities, including Auburn, Oneida, Oswego, New York and many more!",
                                         "entry_guid":"Our store is on the 2nd floor right next to Lindt Chocolate shop.  You can use the entrance by the Cheesecake Factory.",
                                         "slug":"syracuse-ny",
@@ -286,6 +290,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                       "id":5,
                                       "city":"Watertown",
+                                      "publish_status":true,
                                       "city_include":"Our customers come from many surrounding cities, including Belleville, Clayton, Dexter, Oswego, Limerick and many more!",
                                       "entry_guid":"Our Store is located near Sears and next to Fun on the Run arcade.",
                                       "address":"21182 Salmon Run Mall Loop W",
@@ -352,6 +357,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                   {
                                     "id":6,
                                     "city":"West Nyack",
+                                    "publish_status":true,
                                     "city_include":"Our customers come from many surrounding cities, including Montclair, Massapequa, White Plains, Morristown, Danbury and many more!",
                                     "entry_guid":"Our store is located on the 3rd floor food court level, just across the hall from 5 Below store.",
                                     "slug":"west-nyack-ny",
@@ -419,6 +425,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                   "id":7,
                                   "city":"Poughkeepsie",
                                   "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                  "publish_status":false,
                                   "entry_guid":"Upstairs from 110 Grill.",
                                   "slug":"poughkeepsie-ny",
                                   "address":"2001 South Rd",
@@ -494,6 +501,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                           {
                             "id":1,
                             "city":"Raleigh",
+                            "publish_status":true,
                             "city_include":"Our customers come from many surrounding cities, including Chapel Hill, Morrisville, Carrboro, Cary, Apex, Holly Springs, Zebulon, Wake Forest, Hillsborough, Pittsboro and many more!",
                             "entry_guid":"We are right off exit 17 on Interstate-540, and directly off of Capital Blvd. behind Best Buy. We are attached on the outside of the mall next to Barnes & Noble.",
                             "slug":"raleigh-nc",
@@ -572,6 +580,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                         "id":1,
                                         "city":"Hadley",
+                                        "publish_status":true,
                                         "city_include":"Our customers come from many surrounding cities, including Easthampton, Windsor Locks, Amherst, Gardner, Northampton and many more!",
                                         "entry_guid":"Our store is located between Pinz and Jo~Ann Fabric, across from Body Spa and Elite Tae Kwon Do.",
                                         "slug":"hadley-ma",
@@ -638,6 +647,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                       "id":2,
                                       "city":"Holyoke",
+                                      "publish_status":true,
                                       "city_include":"Our customers come from many surrounding cities, including Worcester, Williamsburg, Chesterfield, Easthampton and many more!",
                                         "entry_guid":"Our store is located on the 1st floor across from Baby Gap.",
                                       "slug":"holyoke-ma",
@@ -705,6 +715,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                   {
                                     "id":3,
                                     "city":"Kingston",
+                                    "publish_status":true,
                                     "city_include":"Our customers come from many surrounding cities, including Boston, New Bedford, Plymouth, Falmouth, MA and many more!",
                                     "entry_guid":"Our store is located around the corner from the Target entrance, across from Clark's Outlet and next to Victoria's Secret.",
                                     "slug":"kingston-ma",
@@ -772,6 +783,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                 {
                                   "id":4,
                                   "city":"N. Attleborough",
+                                  "publish_status":true,
                                   "city_include":"Our customers come from many surrounding cities, including Auburn, Boston, New Bedford and many more!",
                                    "entry_guid":"Our store is on the 2nd floor near the Macy's store.",
                                   "slug":"n-attleborough-ma",
@@ -848,6 +860,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                         "id":1,
                                         "city":"Milford",
+                                        "publish_status":true,
                                         "city_include":"Our customers come from many surrounding cities, including New Haven, Stamford, Ronkonkoma, Danbury, Middletown, and many more! ",
                                         "entry_guid":"Customers can find the store fastest via the Target entrance. Head to the lower-level main corridor, take a left and we are on the right side next to Eblens.",
                                         "slug":"milford-ct",
@@ -915,6 +928,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                       "id":2,
                                       "city":"Manchester",
+                                      "publish_status":true,
                                       "city_include":"Our customers come from many surrounding cities, including Hartford, West Hartford, Middletown, Windsor Locks, Bristol, New Britain and many more!",
                                         "entry_guid":"Our Store is located on the 2nd floor, between Spencer's and Sears. The best entrance to use is the mall entrance between Maggie Mcfly's and Sears.",
                                       "slug":"manchester-ct",
@@ -982,6 +996,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                   {
                                     "id":3,
                                     "city":"Waterbury",
+                                    "publish_status":true,
                                     "city_include":"Our customers come from many surrounding cities, including New Haven, Stamford, West Hartford, Danbury, Norwalk and many more!",
                                     "entry_guid":"Our Store is located on the 1st floor between FYE and Payless across from Mix Box.",
                                     "slug":"waterbury-ct",
@@ -1059,6 +1074,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                    {
                       "id":1,
                       "city":"Bensalem",
+                      "publish_status":true,
                       "city_include":"Our customers come from many surrounding cities, including Philadelphia, King of Prussia, Doylestown, Princeton, NJ and many more!",
                       "entry_guid":"Our store is located in the AMC wing, across from Modell's Sporting Goods.",
                       "slug":"bensalem-pa",
@@ -1135,6 +1151,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                         "id":1,
                                         "city":"Bowie",
+                                        "publish_status":true,
                                         "city_include":"Our customers come from many surrounding cities, including Glenn Dale, Crofton, Greenbelt, South Laurel, Mitchellville, New Carrollton, Odenton, Beltsville, Laurel, East Riverdale, College Park, Kettering, Largo, Hyattsville, Severn and many more!",
                                         "entry_guid":"Our store is between Barnes & Noble and LA Fitness.",
                                         "slug":"bowie-md",
@@ -1201,6 +1218,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                       "id":2,
                                       "city":"White Marsh",
+                                      "publish_status":true,
                                       "city_include":"Our customers come from many surrounding cities, including Perry Hall, Rossville, Middle River, Overlea, Carney, Parkville, Essex, Rosedale, Towson, Joppatowne, Edgewood, Dundalk, Edgemere, Baltimore, Mays Chapel and many more!",
                                         "entry_guid":"Our Store is located on the Upper Level next to JC Penny.",
                                       "slug":"white-marsh-md",
@@ -1276,6 +1294,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                         "id":1,
                                         "city":"East Brunswick",
+                                        "publish_status":true,
                                         "city_include":"Our customers come from many surrounding cities, including South River, Sayreville, North Brunswick, New Brunswick, Highland Park, Old Bridge, Edison, Somerset, Metuchen, Fords, Perth Amboy, South Plainfield, Woodbridge, Iselin, Middlesex and many more!",
                                         "entry_guid":"Our store is between Panera and JC Penny.",
                                         "slug":"east-brunswick-nj",
@@ -1343,6 +1362,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     {
                                       "id":2,
                                       "city":"Rockaway",
+                                      "publish_status":true,
                                       "city_include":"Our customers come from many surrounding cities, including Andover, Dover, Livingston, Morristown, Newark, New Jersey and many more!",
                                         "entry_guid":"Our store is on the lower level near the mall entrance by JC Penny.",
                                       "slug":"rockaway-nj",
@@ -1409,6 +1429,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                   {
                                     "id":3,
                                     "city":"Woodbridge",
+                                    "publish_status":true,
                                     "city_include":"Our customers come from many surrounding cities, including Avenel, Colonia, Fords, Iselin, Carteret, Rahway, Perth Amboy, Metuchen, Linden, Clark, Roselle, South Plainfield, Cranford, Edison, Scotch Plains and many more!",
                                     "entry_guid":"Our store is in the lower level of the JCPenney & Boscov wing.",
                                     "slug":"woodbridge-nj",
@@ -1486,6 +1507,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                           {
                             "id":1,
                             "city":"Roanoke",
+                            "publish_status":true,
                             "city_include":"Our customers come from many surrounding cities, including Blacksburg, Christiansburg, Salem and many more!",
                             "entry_guid":"We are inside the mall beside Sears and the food court.",
                             "slug":"roanoke-va",
@@ -1561,6 +1583,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                         {
                           "id":1,
                           "city":"Lawrenceville",
+                          "publish_status":true,
                           "city_include":"Our customers come from many surrounding cities, including Marietta, Alpharetta, Kennesaw, Loganville, Snellville, Suwanee, Duluth, Lilburn, Sugar Hill, Buford, Norcross, Tucker, Winder, Redan, Doraville,Chamblee, Monroe and many more!",
                           "entry_guid":"Our store is directly across the Bass Pro Shop inside the mall.",
                           "slug":"lawrenceville-ga",
@@ -1636,6 +1659,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                           {
                             "id":1,
                             "city":"Columbus",
+                            "publish_status":true,
                             "city_include":"Our customers come from many surrounding cities, including Bexley, Upper Arlington, Whitehall, Lincoln Village, Gahanna, Grove City, Blacklick Estates, Worthington, Hilliard, Reynoldsburg, Dublin, Westerville, Pickerington, Pataskala, Delaware and many more!",
                             "entry_guid":"We are located inside the mall near Macy's on the upper level.",
                             "slug":"columbus-oh",
@@ -1702,6 +1726,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                         {
                           "id":2,
                           "city":"Mentor",
+                          "publish_status":true,
                           "city_include":"Our customers come from many surrounding cities, including Willoughby, Eastlake, Painesville, Willowick, Wickliffe, Euclid, Richmond Heights, Mayfield Heights, Lyndhurst, South Euclid, Cleveland Heights, East Cleveland, University Heights, Beachwood, Shaker Heights and many ",
                           "entry_guid":"We are located inside the mall near Dick's Sporting Goods.",
                           "slug":"mentor-oh",
@@ -1767,6 +1792,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                       {
                         "id":3,
                         "city":"Dayton",
+                        "publish_status":true,
                         "city_include":"Our customers come from many surrounding cities, including Riverside, Kettering, West Carrollton City, Huber Heights, Trotwood, Beavercreek, Vandalia, Centerville, Miamisburg, Englewood, Fairborn, Clayton, Tipp City, Springboro, Xenia and many more!",
                         "entry_guid":"We are located inside the Dayton Mall near Space 300.",
                         "slug":"dayton-oh",

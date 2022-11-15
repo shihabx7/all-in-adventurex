@@ -6,6 +6,7 @@ import { FiChevronDown,FiX } from "react-icons/fi";
 const LocationListView=({city,state})=>{
     
     const [showHour,setShwoHour]=useState(null)
+    
    
     const locSlug=(city,state)=>{
         const slug=city+'-'+state
@@ -15,9 +16,14 @@ const LocationListView=({city,state})=>{
 
     return (
        
-        <div
-        className="locationlist ease-in-out duration-100 rounded-b bg-[#FFF9EB]"
-        > 
+        <div className="locationlist ease-in-out duration-100 rounded-b bg-[#FFF9EB] relative overflow-hidden"> 
+        {
+            !city.publish_status &&
+            <div className="px-4 py-2 cm-rib absolute rotate-45 top-[10%] right-[-30%] bg-red-600 text-[#fff] text-[18px] lg:text-[20px] text-center w-full"> 
+                COOMING SOON
+            </div>
+        }
+            
             <div className="location-img">
                 <Link href={"/locations/"+city.slug}>
                     <a className="block cursor-pointer"><img src={city.coverimg}></img></a>

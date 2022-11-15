@@ -59,6 +59,7 @@ import { getLocTotal } from "./AllDataList/getLocTotal"
                       "locationstate":locattionstate,
                       "locationcity":getLocSpec(locationslug).city,
                       "pagesubtitle":locPagedata[locationslug].pagesubtitle,
+                      "publish_status":getLocSpec(locationslug).publish_status,
                       "slug":locationslug,
                       "totalLocations": getTotal().totalLocations,
                       "locationaddress":getLocSpec(locationslug).mall,
@@ -4002,7 +4003,7 @@ const locPagedata={
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-milford-ct-connecticut-post-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-milford-ct-connecticut-post-mall",
    "pagesubtitle":"All In Adventures Milford (formerly Escape the Mystery Room Milford) has family and kid friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Milford CT.",
-   "pagesubtitle":"",
+
    "pagemeta":{
 
           "matatilte":"title",
