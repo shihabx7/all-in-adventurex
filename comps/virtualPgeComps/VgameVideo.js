@@ -1,7 +1,16 @@
 import TitleSeparator from "../util/TitleSeparator"
 import Link from "next/dist/client/link"
+import { FaPlay } from "react-icons/fa";
+import { useState } from "react";
+
 
 const VgameVideo=(props)=>{
+
+    const[playVid,setPlayVid]=useState(false)
+
+    const startVid=()=>{
+        setPlayVid(true)
+    }
 
     return(
         <div className="game-video relative" style={{backgroundImage : "url('/assets/game-dt-bg.jpg')", }}> 
@@ -12,15 +21,33 @@ const VgameVideo=(props)=>{
                                  <p className="text-gray-700 md:px-8">Watch a sneak peek of the thrills and drama from {props.shortname? props.shortname:props.activityname+" virtual escape room"}.</p>
                     </div>
                 </div>
-                <div className="game-video-box pb-[57%] md:pb-[416px] lg:pb-[472px] w-[100%] md:w-[740px] lg:w-[840px] mx-auto shadow-lg relative"> 
-                             <iframe className="absolute w-full h-full top-0 left-0"
-                              src={"https://www.youtube.com/embed/"+props.videoid} 
-                              title="Treasure Island 1881 // Reality Escape Game" 
-                              frameBorder="0" 
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                              allowFullScreen>
+                <div className="bg-[#000000] game-video-box pb-[57%] md:pb-[416px] lg:pb-[472px] w-[100%] md:w-[740px] lg:w-[840px] mx-auto shadow-lg relative">
+                            {
+                                !playVid &&
+                                <div className="vid-tumb absolute top-0 left-0 w-full h-full overflow-hidden">
+                                <div className="vid-thubb-play relative w-full h-full"> 
+                                        <img className="w-full" src="/assets/video-thumb/allinadventures-treasure-island-thumb.jpg"/>
+                                        <div onClick={()=>{setPlayVid(true)}} className="cursor-pointer text-[28px] md:text-[36px] lg:text-[44px] vid-play-btn w-[60px] h-[60px] md:w-[96px] md:h-[96px] lg:w-[104px] lg:h-[104px] rounded-full bg-[#000000] text-red-600 z-10 absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center" style={{margin:"auto"}}>
+                                                <FaPlay/>
+                                        </div>
+                                </div>
                                 
-                             </iframe>
+                            </div> 
+                            }
+                            
+                            {
+                                playVid &&
+                                <iframe className="absolute w-full h-full top-0 left-0"
+                                src={"https://www.youtube.com/embed/"+props.videoid+"?autoplay=1"} 
+                                title="Treasure Island 1881 // Reality Escape Game" 
+                                frameBorder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowFullScreen>
+                                  
+                               </iframe>
+
+                            }
+                            
 
                
                 </div>
