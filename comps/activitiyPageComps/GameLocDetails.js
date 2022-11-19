@@ -23,7 +23,22 @@ const GameLocDetails=(props)=>{
                                 <p className="text-[#464646] md:text-[18px] lg:text-[20px]">{props.activitydata.story}</p>
                             </div>
                             <div className="game-dt-link mt-4 md:mt-4 lg:mt-6"> 
-                                    <GameDtBtn bookingdata={props.bookingdata} label="I'VE READ ENOUGH! BOOK NOW" color="golden-text" weight="font-bold"/>
+                            {
+                                props.publish==false &&
+                                
+                                    <div className="inline-block bg-golden hover:bg-golden-alt search-loc hover:cursor-pointer hover:shadow boder-p rounded-full">
+                                        <div className="bg-[#FEF6E9] hover:bg-golden-alt rounded-full items-center text-[#424242] md:text-lg gont-medium">
+                                        <button className="block py-2 px-6 md:py-3 md:px-8">COMING SOON
+                                         </button>
+                                        </div>
+                                    </div>
+                               
+                            }
+                               {
+                                props.publish==undefined &&
+                                <GameDtBtn bookingdata={props.bookingdata} label="I'VE READ ENOUGH! BOOK NOW" color="golden-text" weight="font-bold"/>
+                               }
+                                   
                             </div>
                         </div>
                         <div className="game-dt-col md:w-[49%] lg:w-[45%] order-1 mb-4 md:mb-0 md:order-2"> 
@@ -46,7 +61,22 @@ const GameLocDetails=(props)=>{
                                 <p className="text-[#464646] md:text-[18px] lg:text-[20px]">{props.activitydata.scene}</p>
                             </div>
                             <div className="game-dt-link mt-4 md:mt-4 lg:mt-6"> 
-                                    <GameDtBtn bookingdata={props.bookingdata}  label="DON'T GIVE IT AWAY! BOOK NOW" />
+                            {
+                                props.publish==false &&
+                                
+                                    <div className="inline-block bg-golden hover:bg-golden-alt search-loc hover:cursor-pointer hover:shadow boder-p rounded-full">
+                                        <div className="bg-[#FEF6E9] hover:bg-golden-alt rounded-full items-center text-[#424242] md:text-lg gont-medium">
+                                        <button className="block py-2 px-6 md:py-3 md:px-8">COMING SOON
+                                         </button>
+                                        </div>
+                                    </div>
+                               
+                            }
+                            {
+                                props.publish==undefined &&
+                                <GameDtBtn bookingdata={props.bookingdata}  label="DON'T GIVE IT AWAY! BOOK NOW" />
+                               }
+                                   
                             </div>
                         </div>
                         
@@ -64,7 +94,22 @@ const GameLocDetails=(props)=>{
                                 <p className="text-[#464646] md:text-[18px] lg:text-[20px]">{props.activitydata.mission}</p>
                             </div>
                             <div className="game-dt-link mt-4 md:mt-4 lg:mt-6"> 
-                                    <GameDtBtn bookingdata={props.bookingdata}  label="LET ME AT EM! BOOK NOW" />
+                            {
+                                props.publish==false &&
+                                
+                                    <div className="inline-block bg-golden hover:bg-golden-alt search-loc hover:cursor-pointer hover:shadow boder-p rounded-full">
+                                        <div className="bg-[#FEF6E9] hover:bg-golden-alt rounded-full items-center text-[#424242] md:text-lg gont-medium">
+                                        <button className="block py-2 px-6 md:py-3 md:px-8">COMING SOON
+                                         </button>
+                                        </div>
+                                    </div>
+                               
+                            }
+                            {
+                                props.publish==undefined &&
+                                <GameDtBtn bookingdata={props.bookingdata}  label="LET ME AT EM! BOOK NOW" />
+                               }
+                                    
                             </div>
                         </div>
                         <div className="game-dt-col md:w-[48%] lg:w-[45%] order-1 mb-4 md:mb-0 md:order-2"> 
