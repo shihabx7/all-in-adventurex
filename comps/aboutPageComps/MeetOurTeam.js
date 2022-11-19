@@ -18,9 +18,9 @@ const MeetOurTeam=(props)=>{
                                 return(
                                 <div key={member.id} className="team-list">
                                     <div className="member-img">
-                                         <img className="rounded-full max-w-[148px] md:max-w-[160px] lg:max-w-[190px] mx-auto drop-shadow-lg" src={member.img}></img>
+                                         <img className="rounded-full max-w-[140px] md:max-w-[160px] lg:max-w-[190px] mx-auto drop-shadow-lg" src={member.img}></img>
                                      </div>
-                                     <div className="member-info text-center">
+                                     <div className="member-info text-center mt-2">
                                         <h3 className="md:text-[18px] lg:text-[22px] font-medium text-[#222222]">{member.name}</h3>
                                             <p className="lg:text-lg text-[#464646]">{member.designation}</p>
                                      </div>

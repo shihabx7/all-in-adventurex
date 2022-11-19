@@ -25,63 +25,63 @@ export const getAboutUs=()=>{
         "team_members":[
             {
                 "id":1,
-                "name":"Leo Michael A.",
-                "designation":"CEO",
-                "img":"/assets/team-img-1.png"
+                "name":"Reichel, John",
+                "designation":"Founder/CEO",
+                "img":"/assets/team-member/John-Reichel.png"
             },
             {
                 "id":2,
-                "name":"Leo Michael A.",
-                "designation":"CEO",
-                "img":"/assets/team-img-1.png"
+                "name":"Patel, Chetan",
+                "designation":"President",
+                "img":"/assets/team-member/Chetan-Patel.png"
             },
             {
                 "id":3,
-                "name":"Leo Michael A.",
-                "designation":"CEO",
-                "img":"/assets/team-img-1.png"
+                "name":"Reshoft, Sara",
+                "designation":"Vice President of Planning and Facilities",
+                "img":"/assets/team-member/Sara-Reshoft.png"
             },
             {
                 "id":4,
-                "name":"Leo Michael A.",
-                "designation":"CEO",
-                "img":"/assets/team-img-1.png"
+                "name":"Reichel, Jennifer",
+                "designation":"Human Resources Specialist",
+                "img":"/assets/team-member/Jen-Reichel.png"
             },
             {
                 "id":5,
-                "name":"Leo Michael A.",
-                "designation":"CEO",
-                "img":"/assets/team-img-1.png"
+                "name":"Palmer, Beth",
+                "designation":"Director of Employee Development",
+                "img":"/assets/team-member/Beth-Palmer.png"
             },
             {
                 "id":6,
-                "name":"Leo Michael A.",
-                "designation":"CEO",
-                "img":"/assets/team-img-1.png"
+                "name":"Reshoft, John",
+                "designation":"Director of Construction and Facilities",
+                "img":"/assets/team-member/John-Reshoft.png"
             },
             {
                 "id":7,
-                "name":"Leo Michael A.",
-                "designation":"CEO",
-                "img":"/assets/team-img-1.png"
+                "name":"Capps, Brian",
+                "designation":"Director of Game Development",
+                "img":"/assets/team-member/Brian-Capps.png"
             },
             {
                 "id":8,
-                "name":"Leo Michael A.",
-                "designation":"CEO",
-                "img":"/assets/team-img-1.png"
+                "name":"Pursell, Jordan",
+                "designation":"Regional Manager",
+                "img":"/assets/team-member/Jordan-Pursell.png"
             },
             {
                 "id":9,
-                "name":"Leo Michael A.",
-                "designation":"CEO",
-                "img":"/assets/team-img-1.png"
+                "name":"Seide, Bruce",
+                "designation":"Regional Manager",
+                "img":"/assets/team-member/Bruce-Seide.png"
             },
             {
                 "id":10,
-                "name":"Leo Michael A.",
-                "designation":"CEO",
-                "img":"/assets/team-img-1.png"
+                "name":"Spink, Adam",
+                "designation":"Regional Manager",
+                "img":"/assets/team-member/Adam-Spink.png"
             },
 
         ]
