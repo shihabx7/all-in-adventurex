@@ -70,6 +70,7 @@ export const getLocationsEventList=(locationslug)=>{
           "pagedata": {
                         "pagetitle":"PARTIES, EVENTS AND SPECIAL OCCASIONS IN "+cityName(locationslug),
                         "locationslug":locationslug,
+                        "publish_status":getLocTotal(locationslug).publish_status,
                         "location_name":cityName(locationslug),
                         "mall":getLocSpec(locationslug).mall,
                         "pagesubtitle":"Celebrate any special event at All In Adventures escape rooms in "+cityName(locationslug)+"! Team up with your family, friends, kids, co-workers, and anybody and everybody for an incredible memory to last forever. Whether they are 6 or 99, we have something for everyone.",

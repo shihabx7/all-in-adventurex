@@ -60,6 +60,7 @@ import { getLocTotal } from "../AllDataList/getLocTotal"
         "pagedata":{
             "pagetitle":activityDataset[gameslug].activityname+" "+salt(activityDataset[gameslug].activitydata.category),
             "pagesubtitle":activityDataset[gameslug].pagesubtitle,
+            "publish_status":getLocTotal(locationslug).publish_status,
             "totalLocation":"28",
             "coverimageL":activityDataset[gameslug].coverimageL,
            "coverimageM":activityDataset[gameslug].coverimageM,

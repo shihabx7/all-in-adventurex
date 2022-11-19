@@ -59,8 +59,15 @@ const InpersonEscapeSlider =(props)=>{
                 </div>
                 
         </div>
-        <div className="slider-box pb-4 md:pb-8 relative">  
-        <InpersonCarousel inpersongames={props.inpersongames} locationslug={props.locationslug} bookingData={props.bookingData}/>
+        <div className="slider-box pb-4 md:pb-8 relative"> 
+        {
+          props.publish &&
+          <InpersonCarousel publish={props.publish} inpersongames={props.inpersongames} locationslug={props.locationslug} bookingData={props.bookingData}/>
+        } 
+        {
+          !props.publish &&
+          <InpersonCarousel inpersongames={props.inpersongames} locationslug={props.locationslug} bookingData={props.bookingData}/>
+        } 
         </div>
         <div className="view-all flex justify-center pt-8 md:pt-12 lg:pt-16 pb-16">
           {

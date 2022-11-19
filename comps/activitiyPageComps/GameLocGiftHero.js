@@ -43,8 +43,12 @@ const GameLocGiftHero=(props)=>{
                         {/*============location search btn==========*/}
                         
                         {
-                            props.pagedata.bookingdata &&
+                            (props.pagedata.bookingdata && props.pagedata.publish_status==true) &&
                             <button onClick={()=>bookGame(props.pagedata.bookingdata)} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BUY GIFT CARD NOW</button>
+                        }
+                        {
+                            (props.pagedata.bookingdata && props.pagedata.publish_status==false) &&
+                            <button className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">COMMING SOON</button>
                         }
                         
                        

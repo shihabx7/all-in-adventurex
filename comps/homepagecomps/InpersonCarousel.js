@@ -130,8 +130,12 @@ const InpersonCarousel=(props)=>{
                                 </div>
                                 <div className="card-game-link mt-4 text-center">
                                   {
-                                    props.bookingData &&
+                                    (props.bookingData && props.publish) &&
                                     <button onClick={()=>openBooking(props.bookingData.shortname,props.bookingData[inpersongame.slug])} className="border max-w-[200px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                                  }
+                                  {
+                                    (props.bookingData && !props.publish) &&
+                                    <button className="border max-w-[200px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-7 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">COMMING SOON</button>
                                   }
                                     {
                                     !props.bookingData &&

@@ -71,7 +71,7 @@ export const getLocationIndGiftPageData=(locationslug)=>{
         "pagedata":{
             "pagetitle":"BUY "+cityName(locationslug)+" GIFT CARDS",
             "pagesubtitle":"Birthdays, holidays, surprises and everything in between – we've got your gift needs covered. Recipients can choose from all available in-person games when they redeem their escape room gift cards, and they can be used any time with any group. Our gift cards never expire!",
-            
+            "publish_status":getLocTotal(locationslug).publish_status,
             "coverimageL":"/assets/gn-desktop-hero/allinadventures-gift-cards-hero-desktop.jpg",
             "coverimageM":"/assets/gn-mobile-hero/allinadventures-gift-cards-hero-mobile.jpg",
             "location_name":cityName(locationslug),

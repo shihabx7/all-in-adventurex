@@ -34,7 +34,15 @@ const PysicalEscape=(props)=>{
                 </div>
         </div>
         <div className="slider-box pb-4 md:pb-8 relative">  
-            <PysicalCarousel othergames={props.othergames} locationslug={props.locationslug} bookingData={props.bookingData}/>
+        {
+          props.publish &&
+          <PysicalCarousel publish={props.publish} othergames={props.othergames} locationslug={props.locationslug} bookingData={props.bookingData}/>
+        }
+        {
+          !props.publish &&
+          <PysicalCarousel othergames={props.othergames} locationslug={props.locationslug} bookingData={props.bookingData}/>
+        }
+            
         </div>
         <div className="view-all flex justify-center pt-8 md:pt-16 pb-4 md:pb-12 lg:pb-16">
            {

@@ -112,10 +112,10 @@ const location=(props)=>{
                         {/* ===========Page Content here========= */}
                             <LocationHomeHero pagedata={props.pagedata}  activitylist={props.activitylist}/>
                             <HowToPlay city={props.pagedata.locationcity}/>
-                             <InpersonEscapeSlider city={props.pagedata.locationcity} state={props.pagedata.locationstate} locationslug={props.pagedata.slug} inpersongames={props.inpersongames} bookingData={props.bookingData}/>
+                             <InpersonEscapeSlider publish={props.pagedata.publish_status} city={props.pagedata.locationcity} state={props.pagedata.locationstate} locationslug={props.pagedata.slug} inpersongames={props.inpersongames} bookingData={props.bookingData}/>
                             {
                                 props.othergames &&
-                                <PysicalEscape city={props.pagedata.locationcity} state={props.pagedata.locationstate} othergames={props.othergames} locationslug={props.pagedata.slug} bookingData={props.bookingData}/>
+                                <PysicalEscape  publish={props.pagedata.publish_status} city={props.pagedata.locationcity} state={props.pagedata.locationstate} othergames={props.othergames} locationslug={props.pagedata.slug} bookingData={props.bookingData}/>
                             }
                              {
                                 props.othergames &&

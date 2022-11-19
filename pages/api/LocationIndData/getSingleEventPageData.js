@@ -1464,6 +1464,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
             
          "pagedata":{
              "pagetitle":"ESCAPE ROOM "+eventName+" in "+locnameMod(locationslug),
+             "publish_status":getLocTotal(locationslug).publish_status,
              "event_name":eventName,
              "eventname":eventName,
              "event_slug":eventslug,

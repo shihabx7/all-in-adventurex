@@ -73,7 +73,7 @@ const WhatIsEscape=()=>{
                             </div>
                             <div className="view-all flex justify-center mt-4 md:mt-8">
                                  
-                                  <a href="/abaout" className="flex lg:text-lg justify-center space-x-2 items-center text-red-600 hover:text-red-700"><span>Learn more</span> <FaAngleRight/></a>
+                                  <a href="/what-is-an-escape-room" className="flex lg:text-lg justify-center space-x-2 items-center text-red-600 hover:text-red-700"><span>Learn more</span> <FaAngleRight/></a>
                                 
                           </div>
 
