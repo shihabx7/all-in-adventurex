@@ -30,8 +30,8 @@ export default function Home({mainprops,pagedata,inpersongames,othergames,virtua
    
     <div id="mainContent" className='main-content' >
       <Head>
-        <title>All in adventure</title>
-        <meta name="description" content="All in one adventure escape games" />
+        <title>All In Adventures</title>
+        <meta name="description" content="All In Adventures" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

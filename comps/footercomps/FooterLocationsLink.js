@@ -2,7 +2,11 @@ import { FaAngleRight } from "react-icons/fa"
 
 const FooterLocationsLink=(props)=>{
 
-
+const getState=(slug)=>{
+    var stArr=slug.split('-')
+    var st=stArr[stArr.length-1].toUpperCase()
+    return st
+}
     return(
             <div className="footer-location-link-mess"> 
 
@@ -26,7 +30,7 @@ const FooterLocationsLink=(props)=>{
                                                     return (
                                                         <div key={loc.id+item.id} className='footer-loc-link-box '> 
                                     
-                                                                <a href={"/locations/"+item.slug} className='footer-link underline-offset-4 flex space-x-2 items-center my-2 text-sm lg:text-base'>{item.city} Escape Room<span><FaAngleRight/></span></a>
+                                                                <a href={"/locations/"+item.slug} className='footer-link underline-offset-4 flex space-x-2 items-center my-2 text-sm lg:text-base'>{item.city}, {getState(item.slug)}<span><FaAngleRight/></span></a>
                                        
                                         
                                                           </div>

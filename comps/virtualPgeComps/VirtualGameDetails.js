@@ -3,8 +3,17 @@ import GameTitleSeparator from "../util/GameTitleSeparator"
 import { ImGift } from "react-icons/im"
 import VgameBtn from "../util/VgameBtn"
 
+
 const VirtualGameDetails=(props)=>{
-   
+    const openBooking=(booking)=>{
+        FH.open({
+          shortname: booking.shortname,
+          fallback: 'simple', 
+          fullItems: 'yes', 
+          flow: booking.flow, 
+          view: { item: booking.item }
+        });
+      }
 
     return(
         <div className="game-details relative " style={{backgroundImage : "url('/assets/game-dt-bg.jpg')", }} > 
@@ -25,7 +34,18 @@ const VirtualGameDetails=(props)=>{
                                 <p className="text-[#464646] md:text-[18px] lg:text-[20px]">{props.vgamedata.story}</p>
                             </div>
                             <div className="game-dt-link mt-4 md:mt-4 lg:mt-6"> 
+                            {
+                                props.vgamedata.booking &&
+                                <div className="inline-block" onClick={()=>{openBooking(props.vgamedata.booking)}}>
                                 <VgameBtn label="SOUNDS GREAT! BOOK NOW" />
+                                </div>
+                            }
+                                {
+                                props.vgamedata.bookinglink &&
+                                <div className="inline-block">
+                                <VgameBtn bookinglink={props.vgamedata.bookinglink} label="SOUNDS GREAT! BOOK NOW" />
+                                </div>
+                            }
                                     
                             </div>
                         </div>
@@ -48,8 +68,20 @@ const VirtualGameDetails=(props)=>{
                             <div className="game-dt-desc mt-4 md:mt-4 lg:mt-6">
                                 <p className="text-[#464646] md:text-[18px] lg:text-[20px]">{props.vgamedata.scene}</p>
                             </div>
-                            <div className="game-dt-link mt-4 md:mt-4 lg:mt-6"> 
+                            <div className="game-dt-link mt-4 md:mt-4 lg:mt-6">
+                            {
+                                props.vgamedata.booking &&
+                                <div className="inline-block" onClick={()=>{openBooking(props.vgamedata.booking)}}> 
                                     <VgameBtn label="VERY EXCITING! BOOK NOW" />
+                                    </div>
+                            }
+
+                            {
+                                props.vgamedata.bookinglink &&
+                                <div className="inline-block">
+                                <VgameBtn bookinglink={props.vgamedata.bookinglink} label="VERY EXCITING! BOOK NOW" />
+                                </div>
+                            }
                                    
                             </div>
                         </div>
@@ -68,7 +100,20 @@ const VirtualGameDetails=(props)=>{
                                 <p className="text-[#464646] md:text-[18px] lg:text-[20px]">{props.vgamedata.mission}</p>
                             </div>
                             <div className="game-dt-link mt-4 md:mt-4 lg:mt-6"> 
-                                     <VgameBtn label="LET'S GET TO IT! BOOK NOW" />
+                                    
+                                     {
+                                      props.vgamedata.booking &&
+                                         <div className="inline-block" onClick={()=>{openBooking(props.vgamedata.booking)}}> 
+                                            <VgameBtn label="LET'S GET TO IT! BOOK NOW" />
+                                        </div>
+                                   }
+
+                                  {
+                                  props.vgamedata.bookinglink &&
+                                       <div className="inline-block">
+                                         <VgameBtn bookinglink={props.vgamedata.bookinglink} label="LET'S GET TO IT! BOOK NOW" />
+                                        </div>
+                                     }
                                
                             </div>
                         </div>

@@ -20,7 +20,7 @@ const LocationListView=({city,state})=>{
         {
             !city.publish_status &&
             <div className="px-4 py-2 cm-rib absolute -rotate-45 top-[8%] left-[-30%] bg-red-600 text-[#fff] text-[18px] lg:text-[18px] text-center w-full"> 
-                COOMING SOON
+                COMING SOON
             </div>
         }
             

@@ -861,7 +861,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                         "id":1,
                                         "city":"Milford",
                                         "publish_status":true,
-                                        "city_include":"Our customers come from many surrounding cities, including New Haven, Stamford, Ronkonkoma, Danbury, Middletown, and many more! ",
+                                        "city_include":"Our customers come from many surrounding cities, including New Haven, Stamford, Danbury, Middletown, and many more! ",
                                         "entry_guid":"Customers can find the store fastest via the Target entrance. Head to the lower-level main corridor, take a left and we are on the right side next to Eblens.",
                                         "slug":"milford-ct",
                                         "address":"1201 Boston Post Rd",

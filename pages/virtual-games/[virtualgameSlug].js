@@ -53,8 +53,16 @@ const showSingleVitualGame=(props)=>{
               </Breadcrumbs>
         </div>
          {/* =======breadcum content and breadcum root page template======== end */}
-
-            <VirtualHero pagedata={props.pagedata}/>
+          {
+            props.vgamedata.booking &&
+            <VirtualHero booking={props.vgamedata.booking} pagedata={props.pagedata}/>
+          }
+          {
+            props.vgamedata.bookinglink &&
+            <VirtualHero bookinglink={props.vgamedata.bookinglink} pagedata={props.pagedata}/>
+          }
+          
+            
           
               <VirtualGameDetails activityname={props.pagedata.activityname} vgamedata={props.vgamedata} shortname={props.pagedata.shortname? props.pagedata.shortname:false} category={props.pagedata.category}/>
               <VgameGallery galleryitem={props.activitygallery} activityname={props.pagedata.activityname} shortname={props.pagedata.shortname? props.pagedata.shortname:false}/>

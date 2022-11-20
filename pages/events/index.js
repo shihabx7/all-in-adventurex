@@ -9,6 +9,7 @@ import GameList from "../../comps/activitiyPageComps/GameList";
 import { getAllEvents } from "../api/getAllEvents";
 import EventList from "../../comps/activitiyPageComps/EventList";
 import EventContact from "../../comps/eventPageComps/EventContact";
+import WebForm from "../../comps/eventPageComps/Webform";
 
 const showAllevents=(props)=>{
     const toTitleCase=(title)=>{
@@ -53,6 +54,7 @@ const showAllevents=(props)=>{
           <GameHomeHero pagedata={props.pagedata}/>
           <EventList events={props.events}/>
           <EventContact locationlist={props.locationlist} eventlist={props.eventlist}/>
+          <WebForm/>
 
   {
       console.log(props)

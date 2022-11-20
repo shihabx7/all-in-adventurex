@@ -1,9 +1,21 @@
 import Link from "next/link"
 import TitleSeparator from "../util/TitleSeparator"
+import Script from "next/script"
 
 const VirtualGameList=(props)=>{
+    const openBooking=(booking)=>{
+        FH.open({
+          shortname: booking.shortname,
+          fallback: 'simple', 
+          fullItems: 'yes', 
+          flow: booking.flow, 
+          view: { item: booking.item }
+        });
+      }
 
     return(
+        <>
+        <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
         <div className="all-games relative bg-center bg-cover" style={{backgroundImage:"url('/assets/game-dt-bg.jpg')"}}>
          <div className="w-full absolute top-0 left-0 "><img className="w-full" src="/assets/game-home-or1.jpg"></img> </div>
             <div className="all-games-container max-w-7xl mx-auto relative  z-30 py-16 md:py-20 lg:py-28 px-4">
@@ -31,7 +43,7 @@ const VirtualGameList=(props)=>{
                                         </div>
                                         <div className="card-ribbon">
                                               <div className="inline-block text-center py-2 px-4 bg-red-600">
-                                                    <p className="text-lg text-white">FROM</p>
+                                                    <p className="lg:text-lg text-white">{vgame.gametype=="showroom"? "PER PERSON":"PER GROUP"}</p>
                                                     <p className="text-3xl text-white font-bold">${vgame.price}</p>
                                              </div>
                                          </div>
@@ -46,7 +58,8 @@ const VirtualGameList=(props)=>{
                                        </p>
                                          </div>
                                          <div className="card-game-link mt-4 text-left">
-                                             <button className="border-2 w-[240px] card-book-btn block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</button>
+                                            
+                                             <button onClick={()=>{openBooking(vgame.booking)}} className="border-2 w-[240px] card-book-btn block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</button>
                                              <Link href={"/virtual-games/"+vgame.game_slug}> 
                                                                                         
                                               <a className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
@@ -88,7 +101,7 @@ const VirtualGameList=(props)=>{
                                         </div>
                                         <div className="card-ribbon">
                                               <div className="inline-block text-center py-2 px-4 bg-red-600">
-                                                    <p className="text-lg text-white">FROM</p>
+                                                    <p className="lg:text-lg text-white">{vgame.gametype=="showroom"? "PER PERSON":"PER GROUP"}</p>
                                                     <p className="text-3xl text-white font-bold">${vgame.price}</p>
                                              </div>
                                          </div>
@@ -103,7 +116,7 @@ const VirtualGameList=(props)=>{
                                        </p>
                                          </div>
                                          <div className="card-game-link mt-4 text-left">
-                                             <button className="border-2 w-[240px] card-book-btn block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</button>
+                                             <a target={"_blank"} href={vgame.bookinglink} className="text-center border-2 w-[240px] card-book-btn block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</a>
                                              <Link href={"/virtual-games/"+vgame.game_slug}> 
                                                                                         
                                               <a className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
@@ -127,6 +140,7 @@ const VirtualGameList=(props)=>{
             <div className="w-full absolute bottom-0 left-0 "><img className="w-full" src="/assets/game-home-or2.jpg"></img> </div>
 
         </div>
+        </>
     )
 
 }

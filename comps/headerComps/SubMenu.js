@@ -289,7 +289,7 @@ const SubMenu=(props)=>{
                               <div className="submenu-item">
                                
                                   <a href={"/"+props.locationslug+"/gift-cards"} className="flex items-center">
-                                        <span className="sub-link-txt">Gift cards</span> 
+                                        <span className="sub-link-txt">Gift Cards</span> 
                                     </a>
                         
 
@@ -302,7 +302,7 @@ const SubMenu=(props)=>{
                               <div className="submenu-item">
                                 <Link href="/gift-cards">
                                      <a className="flex items-center">
-                                        <span className="sub-link-txt">Gift cards</span> 
+                                        <span className="sub-link-txt">Gift Cards</span> 
                                      </a>
                                 </Link>
 

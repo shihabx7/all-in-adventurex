@@ -18,7 +18,15 @@ const VirtualCarousel=({virtualgames})=>{
     return description
     
 }
-
+const openBooking=(booking)=>{
+  FH.open({
+    shortname: booking.shortname,
+    fallback: 'simple', 
+    fullItems: 'yes', 
+    flow: booking.flow, 
+    view: { item: booking.item }
+  });
+}
  
     const responsive = {
         desktoplg: {
@@ -90,7 +98,7 @@ const VirtualCarousel=({virtualgames})=>{
                       </div>
                       <div className="card-ribbon">
                               <div className="inline-block text-center py-2 px-4 bg-red-600">
-                                  <p className="text-lg text-white">FROM</p>
+                                  <p className="text-md text-white">{virtualgame.category=="showroom"? "PER PERSON":"PER GROUP"}</p>
                                   <p className="text-3xl text-white font-bold">${virtualgame.price}</p>
                               </div>
                       </div>
@@ -104,7 +112,15 @@ const VirtualCarousel=({virtualgames})=>{
                           <p className="text-gray-200 lg:text-lg">{ showDescription(virtualgame.description)}</p>
                       </div>
                       <div className="card-game-link text-center">
-                          <button onClick={showLocation} className="border block max-w-[200px] mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                         
+                          {
+                           virtualgame.bookinglink &&
+                           <a target="_blank" href={virtualgame.bookinglink} className="border block max-w-[200px] mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</a>
+                          }
+                          {
+                           virtualgame.booking &&
+                           <button onClick={()=>openBooking(virtualgame.booking)} className="border block max-w-[200px] mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                          }
                           <Link href={"/"+virtualgame.slug }>
                              <a className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</a>
                           </Link>

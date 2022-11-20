@@ -62,7 +62,7 @@ const vGameData={
                         "coverimageM_alt":"allinadventures-virtual-escape-room-madness",
                         "price":"147",
                         "duration":"30",
-                        "max_players":"6",
+                        "max_players":"12",
                         "min_players":"2",
                         "pagemeta":{
 
@@ -82,7 +82,7 @@ const vGameData={
                             "missionimg":"/assets/all-game-details/allinadventures-virtual-escape-room-madness-mission.png",
                             "missionimg_alt":"allinadventures-virtual-escape-room-madness-mission",
                             "videoid":"YsuE-m_VEjc",
-                            "booking":"#"
+                            "bookinglink":"https://www.virtualmysteryroom.com/online-escape-rooms/madness",
 
                             },
                         "vgamegallery":[
@@ -132,7 +132,7 @@ const vGameData={
         "coverimageM_alt":"allinadventures-virtual-escape-room-zombie-apocalypse",
         "price":"147",
         "duration":"30",
-        "max_players":"6",
+        "max_players":"12",
         "min_players":"2",
         "pagemeta":{
 
@@ -152,7 +152,7 @@ const vGameData={
             "missionimg":"/assets/all-game-details/allinadventures-virtual-escape-room-zombie-apocalypse-mission.png",
             "missionimg_alt":"allinadventures-virtual-escape-room-zombie-apocalypse-mission",
             "videoid":"YsuE-m_VEjc",
-            "booking":"#"
+            "bookinglink":"https://www.virtualmysteryroom.com/online-escape-rooms/zombie",
 
             },
             "vgamegallery":[
@@ -202,7 +202,7 @@ const vGameData={
                          "coverimageM_alt":"allinadventures-virtual-escape-room-bomb",
                          "price":"147",
                          "duration":"30",
-                         "max_players":"6",
+                         "max_players":"12",
                          "min_players":"2",
                          "pagemeta":{
 
@@ -222,7 +222,7 @@ const vGameData={
                              "missionimg":"/assets/all-game-details/allinadventures-virtual-escape-room-bomb-mission.png",
                              "missionimg_alt":"allinadventures-virtual-escape-room-bomb-mission",
                              "videoid":"YsuE-m_VEjc",
-                             "booking":"#"
+                             "bookinglink":"https://www.virtualmysteryroom.com/online-escape-rooms/bomb",
 
                              },
                              "vgamegallery":[
@@ -272,7 +272,7 @@ const vGameData={
     "coverimageM_alt":"allinadventures-virtual-escape-room-prison",
     "price":"147",
     "duration":"30",
-    "max_players":"6",
+    "max_players":"12",
     "min_players":"2",
     "pagemeta":{
 
@@ -292,7 +292,7 @@ const vGameData={
         "missionimg":"/assets/all-game-details/allinadventures-virtual-escape-room-prison-mission.png",
         "missionimg_alt":"allinadventures-virtual-escape-room-prison-mission",
         "videoid":"YsuE-m_VEjc",
-        "booking":"#"
+        "bookinglink":"https://www.virtualmysteryroom.com/online-escape-rooms/prison",
 
         },
         "vgamegallery":[
@@ -342,7 +342,7 @@ const vGameData={
     "coverimageM_alt":"allinadventures-virtual-escape-room-aztec",
     "price":"147",
     "duration":"30",
-    "max_players":"6",
+    "max_players":"12",
     "min_players":"2",
     "pagemeta":{
 
@@ -362,7 +362,7 @@ const vGameData={
         "missionimg":"/assets/all-game-details/allinadventures-virtual-escape-room-aztec-mission.png",
         "missionimg_alt":"allinadventures-virtual-escape-room-aztec-mission",
         "videoid":"YsuE-m_VEjc",
-        "booking":"#"
+        "bookinglink":"https://www.virtualmysteryroom.com/online-escape-rooms/aztec",
 
         },
 
@@ -413,7 +413,7 @@ const vGameData={
     "coverimageM_alt":"allinadventures-virtual-escape-room-japan",
     "price":"147",
     "duration":"30",
-    "max_players":"6",
+    "max_players":"12",
     "min_players":"2",
     "pagemeta":{
 
@@ -433,7 +433,7 @@ const vGameData={
         "missionimg":"/assets/all-game-details/allinadventures-virtual-escape-room-japan-mission.png",
         "missionimg_alt":"allinadventures-virtual-escape-room-japan-mission",
         "videoid":"YsuE-m_VEjc",
-        "booking":"#"
+        "bookinglink":"https://www.virtualmysteryroom.com/online-escape-rooms/japan",
 
         },
 
@@ -478,16 +478,16 @@ const vGameData={
 "virtual-game-show-room":{
     "activityname":"BOOK YOUR VIRTUAL GAME SHOW EXPERIENCE WITH A LIVE HOST",
     "shortname":"Virtual game show room",
+    "category":"showroom",
     "notice":"If you see online booking isn't available, please call us at <a href=\"tel:+1 844-502-5546\" class=\"text-gold font-medium md:text-lg\">+1 844-502-5546.</a> We can surely manage a spot for you and your team.",
     "pagesubtitle":"Are you looking for an entertaining way to connect and have fun when family, friends, and co-workers are in distant locations? Well, now you can! Enjoy our Virtual Game Show Room with friends and family from all different parts of the world without needing to gather in person. It's like a game show you've seen on TV.",
     "coverimageL":"/assets/all-game-desktop-hero/allinadventures-virtual-game-show-room-hero-dekstop.jpg",
     "coverimageM":"/assets/all-game-mobile-hero/allinadventures-virtual-game-show-room-hero-mobile.jpg",
     "coverimageM_alt":"allinadventures virtual game show room",
-    "price":"80",
+    "price":"20",
     "duration":"60",
     "max_players":"12",
     "min_players":"4",
-    "category":"showroom",
     "pagemeta":{
 
         "title":"meta title",
@@ -504,7 +504,11 @@ const vGameData={
         "mission":"Our Virtual Game Show Room is designed to be an interactive live game show experience for online players of all ages and backgrounds to enjoy. It's a perfect way to connect when corporate teams are spread out remotely or when friends and families live long distances from one another. It's also a great way for any group to spend time together when it's either too wet or too cold outside to interact with each other.",
         "missionimg":"/assets/all-game-details/allinadventures-virtual-game-show-room-sec3.png",
         "videoid":"YsuE-m_VEjc",
-        "booking":"#",
+        "booking":{
+          "shortname":"virtualgameshowroom",
+          "item":"285707",
+         "flow":"594928"
+        },
         "faqlist":[
           {
                  "id":1,

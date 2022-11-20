@@ -7,12 +7,12 @@ const VgameBtn=(props)=>{
      
 
     return(
-        props.link?
+        props.bookinglink?
         <div className="inline-block bg-golden hover:bg-golden-alt  search-loc hover:cursor-pointer hover:shadow boder-p rounded-full"> 
              <div className="bg-[#FEF6E9] hover:bg-golden-alt  rounded-full items-center  text-[#424242] md:text-lg gont-medium">
-                    <Link href={props.link}>
-                        <a className="block py-2 px-6  md:py-3 md:px-8"> {props.label}</a>
-                    </Link>
+                    
+                        <a target={"_blank"} href={props.bookinglink} className="block py-2 px-6  md:py-3 md:px-8"> {props.label}</a>
+                    
     
             </div>
          </div>

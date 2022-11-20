@@ -32,14 +32,19 @@ export const getVirtualGamesHomePageData=()=>{
                 "gametype":"showroom",
                 "game_name":"Virtual game show room",
                 "game_desc":"Are you looking for an entertaining way to connect and have fun when family, friends, and co-workers are in distant locations? Well, now you can! Enjoy our Virtual Game Show Room with friends and family from all different parts of the world without needing to gather in person. It's like a game show you've seen on TV.",
-                "game_slug":"virtual-game-show-roomc",
+                "game_slug":"virtual-game-show-room",
                 "game_cover_image":"/assets/all-game-desktop-hero/allinadventures-virtual-game-show-room-hero-dekstop.jpg",
                 "game_type":"Virtual",
                 "max_player":"12",
                 "min_player":"4",
                 "duration":"60",
-                "age":"All Age (6+)",
-                "price":"80",
+                "age":"All Ages (6+)",
+                "price":"20",
+                "booking":{
+                    "shortname":"virtualgameshowroom",
+                    "item":"285707",
+                   "flow":"594928"
+                  },
                 
                 
             },
@@ -52,12 +57,12 @@ export const getVirtualGamesHomePageData=()=>{
                 "game_slug":"virtual-escape-rooms-madness",
                 "game_cover_image":"/assets/all-game-list/allinadventures-virtual-escape-room-madness.jpg",
                 "game_type":"Virtual",
-                "max_player":"6",
+                "max_player":"12",
                 "min_player":"2",
                 "duration":"30",
-                "age":"All Age (6+)",
+                "age":"All Ages (6+)",
                 "price":"147",
-                "booking_link":"#"
+                "bookinglink":"https://www.virtualmysteryroom.com/online-escape-rooms/madness",
 
             },
             {
@@ -68,11 +73,12 @@ export const getVirtualGamesHomePageData=()=>{
                 "game_slug":"virtual-escape-rooms-bomb",
                 "game_cover_image":"/assets/all-game-list/allinadventures-virtual-escape-room-bomb.jpg",
                 "game_type":"Virtual",
-                "max_player":"6",
+                "max_player":"12",
                 "min_player":"2",
                 "duration":"30",
-                "age":"All Age (6+)",
+                "age":"All Ages (6+)",
                 "price":"147",
+                "bookinglink":"https://www.virtualmysteryroom.com/online-escape-rooms/bomb",
                 
                 
             },
@@ -84,11 +90,12 @@ export const getVirtualGamesHomePageData=()=>{
                 "game_slug":"virtual-escape-rooms-zombie-apocalypse",
                 "game_cover_image":"/assets/all-game-list/allinadventures-virtual-escape-room-zombie-apocalypse.jpg",
                 "game_type":"Virtual",
-                "max_player":"6",
+                "max_player":"12",
                 "min_player":"2",
                 "duration":"30",
-                "age":"All Age (6+)",
+                "age":"All Ages (6+)",
                 "price":"147",
+                "bookinglink":"https://www.virtualmysteryroom.com/online-escape-rooms/zombie",
                 
                 
             },
@@ -100,11 +107,12 @@ export const getVirtualGamesHomePageData=()=>{
                 "game_slug":"virtual-escape-rooms-prison",
                 "game_cover_image":"/assets/all-game-list/allinadventures-virtual-escape-room-prison.jpg",
                 "game_type":"Virtual",
-                "max_player":"6",
+                "max_player":"12",
                 "min_player":"2",
                 "duration":"30",
-                "age":"All Age (6+)",
+                "age":"All Ages (6+)",
                 "price":"147",
+                "bookinglink":"https://www.virtualmysteryroom.com/online-escape-rooms/prison",
                 
                 
             },
@@ -116,11 +124,12 @@ export const getVirtualGamesHomePageData=()=>{
                 "game_slug":"virtual-escape-rooms-japan",
                 "game_cover_image":"/assets/all-game-list/allinadventures-virtual-escape-room-japan.jpg",
                 "game_type":"Virtual",
-                "max_player":"6",
+                "max_player":"12",
                 "min_player":"2",
                 "duration":"30",
-                "age":"All Age (6+)",
+                "age":"All Ages (6+)",
                 "price":"147",
+                "bookinglink":"https://www.virtualmysteryroom.com/online-escape-rooms/japan",
                 
                 
             },
@@ -132,11 +141,12 @@ export const getVirtualGamesHomePageData=()=>{
                 "game_slug":"virtual-escape-rooms-aztec",
                 "game_cover_image":"/assets/all-game-list/allinadventures-virtual-escape-room-aztec.jpg",
                 "game_type":"Virtual",
-                "max_player":"6",
+                "max_player":"12",
                 "min_player":"2",
                 "duration":"30",
-                "age":"All Age (6+)",
+                "age":"All Ages (6+)",
                 "price":"147",
+                "bookinglink":"https://www.virtualmysteryroom.com/online-escape-rooms/aztec",
                 
                 
             },

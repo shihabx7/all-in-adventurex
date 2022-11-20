@@ -114,9 +114,9 @@ const PysicalCarousel=(props)=>{
      
                 </div>
                 <div className="card-bottom p-4  md:pt-10"> 
-                    <div className="card-game-desc text-center">
+                    <div className="card-game min-h-[200px]  md:min-h-[220px] text-center">
                         <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">{othergame.title}</h3>
-                        <p className="text-gray-200 lg:text-lg">{showDescription(othergame.description)}</p>
+                        <p className="text-gray-200 lg:text-lg">{othergame.description}</p>
                     </div>
                     <div className="card-game-link mt-4 text-center">
                       {
@@ -125,7 +125,7 @@ const PysicalCarousel=(props)=>{
                       }
                       {
                         (props.bookingData && !props.publish) &&
-                        <button className="border max-w-[200px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-7 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">COOMING SOON</button>
+                        <button className="border max-w-[200px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-7 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">COMING SOON</button>
                       }
                       {
                         !props.bookingData &&

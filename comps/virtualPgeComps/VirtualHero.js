@@ -1,8 +1,20 @@
 
-
+import Script from "next/script";
 const VirtualHero=(props)=>{
 
+    const openBooking=(booking)=>{
+        FH.open({
+          shortname: booking.shortname,
+          fallback: 'simple', 
+          fullItems: 'yes', 
+          flow: booking.flow, 
+          view: { item: booking.item }
+        });
+      }
+
     return(
+        <>
+        <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
         <div className='home-hero' style={
             {
                 background:"url('"+props.pagedata.coverimageL+"')"
@@ -28,9 +40,19 @@ const VirtualHero=(props)=>{
                  </div>
                 <div className="max-w-md mx-auto mt-8 ">
 
-                        {/*============location search btn==========*/}
-                       <button className="w-full text-center bg-red-600 hover:bg-red-700 py-3 md:py-4 px-6 font-medium text-lg text-white rounded-full">BOOK NOW</button>
-                         {/*============location search btn==========*/}
+                        {/*============book btn==========*/}
+                        {
+                            props.booking &&
+                            <button onClick={()=>{openBooking(props.booking)}} className="w-full text-center bg-red-600 hover:bg-red-700 py-3 md:py-4 px-6 font-medium text-lg text-white rounded-full">BOOK NOW</button>
+                            
+                        }
+                        {
+                            props.bookinglink &&
+                            <a target={"_blank"} href={props.bookinglink} className="block text-center bg-red-600 hover:bg-red-700 py-3 md:py-4 px-6 font-medium text-lg text-white rounded-full">BOOK NOW</a>
+                            
+                        }
+                       
+                         {/*============book btn==========*/}
 
 
                 </div>
@@ -78,7 +100,7 @@ const VirtualHero=(props)=>{
                          {   props.pagedata.price &&
                                 <div  className="text-center"> 
                                   <p className="golden-text text-xl md:text-4xl font-os font-bold">${ props.pagedata.price}</p>
-                                    <p className="text-gray-700 text-xs md:text-base lg:text-lg">Per Player</p>
+                                    <p className="text-gray-700 text-xs md:text-base lg:text-lg">{props.pagedata.category=="showroom"? "Per Player":"Per Group"}</p>
     
                                 </div>
                         }
@@ -107,6 +129,7 @@ const VirtualHero=(props)=>{
             </div>
         </div>
         </div>
+        </>
     )
 }
 

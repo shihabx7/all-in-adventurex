@@ -940,7 +940,7 @@ const activityDataset={
         "shortname":"Game Show Room",
         "notice":"48 HOURS ADVANCE BOOKING REQUIRED. If you see online booking isn't available, please call us at <a href=\"tel:+1 844-502-5546\" class=\"text-medium text-gold hover:text-blue-700\">+1 844-502-5546</a>. We can surely manage a spot for you and your team.",
         "pagesubtitle":"Have you always dreamed of being a contestant on a tv game show? Well, dream no more because we've brought the game show experience to you! We offer a unique, unpredictable, family-friendly live game show experience for guests of all different ages, backgrounds and group sizes.",
-        "price":80,
+        "price":33,
         "duration":60,
         "max_players":16,
         "min_players":4,

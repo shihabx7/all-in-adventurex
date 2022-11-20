@@ -107,7 +107,9 @@ const EventContact=(props)=>{
                      
                         <div className="section-title  text-center max-w-[800px] mx-auto  mb-8 md:mb-12 lg:mb-16 px-4">
                             <TitleSeparator title="SUBMIT YOUR INQUIRY NOW" color="golden-text" weight="font-bold"/>
-                             <p className="text-gray-200 md:px-8 md:text-lg mt-8">We want you to host your {props.eventname} at All In Adventures{props.contactdata && <span> in {props.contactdata.city+" "+getStAddress(props.contactdata.slug)}</span>}. We promise you'll love it! Please fill out the inquiry form below to reach our dedicated guest experience team. We'll be in contact within 24 hours. </p>
+                             <p className="text-gray-200 md:px-8 md:text-lg mt-8">
+                             Let us help host your {props.eventname? props.eventname:"event"} at All In Adventures{props.contactdata && <span> in {props.contactdata.city+" "+getStAddress(props.contactdata.slug)}</span>}. We promise you'll love it! Please fill out the inquiry form below to reach our dedicated guest experience team. We'll be in contact within 24 hours.
+                               </p>
                          </div>
 
                      

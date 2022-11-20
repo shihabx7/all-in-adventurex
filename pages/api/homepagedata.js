@@ -17,7 +17,7 @@ import { getTotal } from "./AllDataList/getTotal";
                       "totalUniqueGames": getTotal().uniqueGames,
                       "totalFiveStarReview": getTotal().totalReview,
                       "totalPlayerEscaped": getTotal().toalPlayerEscape,
-                      "subtitle":"All In Adventures (formerly Mystery Room), has family and kid friendly Escape Rooms, Game Show Rooms, Beat the Seat and Axe Throwing games that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events."
+                      "subtitle":"All In Adventures (formerly Mystery Room), has family and kid-friendly Escape Rooms, Game Show Rooms, Beat the Seat, and Axe Throwing games that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events."
         },
         "inpersongames":[
                               {
@@ -40,7 +40,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                  "type": "In-Person",
                                  "title": "Treasure Island",
                                  "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-                                 "age":"All Age (6+)",
+                                 "age":"All Ages (6+)",
                                  "duration":"50",
                                  "maxplayers":"10",
                                  "minplayers":"2",
@@ -216,7 +216,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                   "type": "In-Person",
                                   "title": "Beat The Seat",
                                   "description": "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-                                  "age":"All Age (6+)",
+                                  "age":"All Ages (6+)",
                                   "duration":"2",
                                   "maxplayers":"",
                                   "minplayers":"1",
@@ -231,11 +231,11 @@ import { getTotal } from "./AllDataList/getTotal";
                                     "type": "In-Person",
                                     "title": "Game Show Room",
                                     "description": "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-                                    "age":"All Age (6+)",
+                                    "age":"All Ages (6+)",
                                     "duration":"60",
                                     "maxplayers":"16",
                                     "minplayers":"4",
-                                    "price":"80",
+                                    "price":"33",
                                     "slug"  :"game-show-room",
                                     "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
                                    },
@@ -245,8 +245,8 @@ import { getTotal } from "./AllDataList/getTotal";
                                     "category":"other",
                                     "type": "In-Person",
                                     "title": "Axe Throwing",
-                                    "description": "Having a bad day? Come and throw axes. It involves a competitor throwing an axe at a target, attempting to hit the bullseye as near as possible.",
-                                    "age":"All Age (13+)",
+                                    "description": "Having a bad day? Don't worry! We have an awesome way to burn off that negativity and get you back to your stress-free fun self! Come throw some axes at our exciting interactive targets with your friends and family!",
+                                    "age":"All Ages (13+)",
                                     "duration":"60",
                                     "maxplayers":"6",
                                     "minplayers":"2",
@@ -383,32 +383,37 @@ import { getTotal } from "./AllDataList/getTotal";
     "virtualgames": [
                       {
                         "id":1,
-                        "category":"Virtual",
+                        "category":"showroom",
                         "type": "Virtual",
                         "title": "Virtual Game Show Room",
                         "description": "It's designed to be an interactive live game show experience for online players of all ages and backgrounds to enjoy.",
-                        "age":"All Age (6+)",
+                        "age":"All Ages (6+)",
                         "duration":"60",
                         "maxplayers":"12",
                         "minplayers":"4",
-                        "price":"80",
-                        
+                        "price":"20",
+                        "booking":{
+                          "shortname":"virtualgameshowroom",
+                          "item":"285707",
+                         "flow":"594928"
+                        },
                         "slug"  :"virtual-games/virtual-game-show-room",
                         "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg"
                        },
                        {
                         "id":2,
-                        "category":"Virtual",
+                        "category":"game",
                         "type": "Virtual",
                         "title": "6 Virtual Escape Rooms",
                         "description": "New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
-                        "age":"All Age (6+)",
+                        "age":"All Ages (6+)",
                         "duration":"60",
-                        "maxplayers":"6",
+                        "maxplayers":"12",
                         "minplayers":"2",
                         "price":"147",
                         "slug"  :"virtual-games",
-                        "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game.jpg"
+                        "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game.jpg",
+                        "bookinglink":"https://www.virtualmysteryroom.com",
                        },
                      
                              ],

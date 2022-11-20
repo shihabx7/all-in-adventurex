@@ -119,7 +119,7 @@ export const getAllFaq=()=>{
                             "ques":"Is there a dress code?",
                             "ans":[
                               "Just come as you are! Just make sure you are comfortable as all of your senses ",
-                              "will be on high alert and monitored by a game master! There is no dress code but",
+                              "will be on high alert and monitored by a game master! There is no dress code but ",
                               "we recommend wearing clothing that you will be able to comfortably move around in while playing."
                             ],
                                   
