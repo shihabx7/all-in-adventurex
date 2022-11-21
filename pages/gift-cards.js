@@ -51,7 +51,7 @@ const giftCard=(props)=>{
         </div>
          {/* =======breadcum content and breadcum root page template======== end */}
          <GameHomeHero gametotal="not" pagedata={props.pagedata}/>
-         <BuyGiftCards/>
+         <BuyGiftCards locationlist={props.locationlist}/>
           <WhyAdvGiftCards/>
           <GiftFaq faqlist={props.faqlist}/>
 

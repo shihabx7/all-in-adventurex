@@ -14,8 +14,8 @@ export const getRewardPageData=()=>{
           },
            
           "pagedata": {
-                        "pagetitle":"ALL IN ADVENTURES REWARDS PROGRAM",
-                        "pagesubtitle":"In partnership with FIVESTARS, our rewards program offers you to earn points for all experiences, free experience on birthdays, surprise offers, and much more. To join go to READY TO SIGN UP section below. ",
+                        "pagetitle":"WE LOVE OUR LOYAL CUSTOMERS",
+                        "pagesubtitle":"In partnership with FIVESTARS, our rewards program offers you the opportunity to earn points for each and every AIA game experience. Those points ultimately accumulate into rewards you can redeem for future use/admissions. The program even includes surprise offers, free experiences on your birthdays, and so much more. To join, click the locations button under the READY TO SIGN UP section below.",
                          "totalLocation":"28",
                         "totalLocations": getTotal().totalLocations,
                         "coverimageL":"/assets/gn-desktop-hero/allinadventures-reward-program-hero.jpg",

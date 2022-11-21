@@ -47,8 +47,8 @@ const WhatIsEscape=()=>{
                           {/* content 1 */}
                           <div className="what-is content md:max-w-[49%] lg:max-w-[46%] text-center"> 
                             <h2 className=" text-[20px] md:text-[24px] lg:text-[28px] font-bold pb-1 md:pb-3 lg:pb-4">ABOUT ALL IN ADVENTURES</h2>
-                            <p className="text-sm md:text-[18px] lg:text-[20px] lg:leading-8 md:leading-6 md:mt-4">At All In Adventures (formerly Mystery Room), we strive to be the leader in providing an interactive and engaging adventure through exceptional guest service, game experience and value.</p>
-                             <div className="video-play-btn flex justify-center my-3 md:my-6 lg:my-8 hidden"> 
+                            <p className="text-sm md:text-[18px] lg:text-[19px] lg:leading-8 md:leading-6 md:mt-4">At All In Adventures (formerly Mystery Room), we strive to be the leader in providing an interactive and engaging adventure through exceptional guest service, game experience and value.</p>
+                             <div className="video-play-btn  justify-center my-3 md:my-6 lg:my-8 hidden"> 
                                     <div className=" paly-btn play-rt flex space-x-2 items-center py-3 md:py-4  px-6 md:px-6 lg:px-8 rounded font-semibold ">
                                                 <span className="text-lg md:text-xl lg:text-2xl"> <FaPlay/> </span>
                                                 <span className="text-sm md:text-base">PLAY TEASER VIDEO</span>
@@ -64,7 +64,7 @@ const WhatIsEscape=()=>{
                         {/* content 2 */}
                         <div className="what-is what-is-2 content md:max-w-[49%] lg:max-w-[46%] text-center"> 
                             <h2 className="text-[20px] md:text-[24px] lg:text-[28px] font-bold pb-1 md:pb-3 lg:pb-4">WHAT IS AN ESCAPE ROOM</h2>
-                            <p className="text-sm md:text-[18px] lg:text-[20px] lg:leading-8 md:leading-6 md:mt-4">An escape room is where 2-10 players team up with their friends, family or co-workers for an adrenaline filled 50-60 minute engaging experience. They must find hidden clues, solve puzzles, crack codes and escape.</p>
+                            <p className="text-sm md:text-[18px] lg:text-[19px] lg:leading-8 md:leading-6 md:mt-4">An escape room is where 2-10 players team up with their friends, family or co-workers for an adrenaline filled 50-60 minute engaging experience. They must find hidden clues, solve puzzles, crack codes and escape.</p>
                              <div className="video-play-btn  justify-center my-3 md:my-6 lg:my-8 hidden"> 
                                         <div className="paly-btn play-rt flex space-x-2 items-center py-3 md:py-4  px-6 md:px-6 lg:px-8 rounded font-semibold">
                                                 <span className="text-lg md:text-xl lg:text-2xl"> <FaPlay/> </span>

@@ -116,7 +116,7 @@ const getdirectionUrl =(address,city,state,zip)=>{
                     </div>
                     <div className="map-card-bus py-2  text-left px-2">
                         <h2 className="map-card-name text-gold golden-text text-[18px] font-semibold">
-                            <span className="uppercase">{name}</span> at <span>{info.mall}</span> in <span className="capitalize">{info.city}</span> <span className="uppercase">{info.state}</span>
+                            <span className="uppercase">{name}</span> at <span>{info.mall}</span> in <span className="capitalize">{info.city}, </span> <span className="uppercase">{info.state}</span>
                         </h2>
                        <div className="flex items-center space-x-2">
                             <span className="text-[#7b7b7b] text-[16px] font-medium">{info.avg_rev}</span>

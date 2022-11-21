@@ -16,7 +16,7 @@ export const getGiftCardPageData=()=>{
            
         "pagedata":{
             "pagetitle":"BUY GIFT CARDS",
-            "pagesubtitle":"Birthdays, holidays, surprises, and everything in between - we've got your gift needs covered. Our Gift Cards never expire! To buy or redeem Gift Cards, you must visit the location specific Gift Card page.",
+            "pagesubtitle":"We've got your gift needs covered for birthdays, holidays, special surprises, and just about everything else in between. You’ll be pleased to know that unlike a lot of other gift programs, our Gift Cards never expire! To buy or redeem Gift Cards, visit the location-specific Gift Card page to find a local store near you.",
             
             "coverimageL":"/assets/gn-desktop-hero/allinadventures-gift-cards-hero-desktop.jpg",
             "coverimageM":"/assets/gn-mobile-hero/allinadventures-gift-cards-hero-mobile.jpg",

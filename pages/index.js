@@ -56,7 +56,7 @@ export default function Home({mainprops,pagedata,inpersongames,othergames,virtua
        <PysicalEscape othergames={othergames}/>
        <VirtualEscapeSlider virtualgames={virtualgames}/>
        <PlaningEventsSlider events={events}/>
-       <BuyGiftCard/>
+       <BuyGiftCard locationlist={locationlist}/>
        <WhatIsEscape/>
        <WhoCanplay/>
        <HomeReviewSlider reviews={reviews}/>

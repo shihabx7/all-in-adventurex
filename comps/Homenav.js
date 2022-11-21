@@ -129,7 +129,7 @@ const Homenav=(props)=>{
                               <HeaderBtnRed bookingall={props.bookingall} btntext='BOOK GAMES'/>
                             }  
                             {props.bookinggame &&
-                              <HeaderBtnRed bookinggame={props.bookinggame} btntext='BOOK NOW'/>
+                              <HeaderBtnRed bookinggame={props.bookinggame} btntext='BOOK THIS GAME'/>
                             } 
                             {
                               (!props.bookingall && !props.bookinggame) &&

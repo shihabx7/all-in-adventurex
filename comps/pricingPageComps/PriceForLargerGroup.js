@@ -9,9 +9,9 @@ const PriceForLargerGroup=()=>{
             <div className="gift-lt absolute top-0 left-0"><img src="/assets/gift-balon-bg.png"></img></div>
             <div className="gift-rt absolute"><img src="/assets/Compas-brown.png"></img></div>
             <div className="max-w-7xl mx-auto px-4 z-30">
-                    <TitleSeparator title='PRICES FOR LARGER GROUP' color='golden-text' weight='font-bold'/>
+                    <TitleSeparator title='PRICING FOR LARGER GROUP' color='golden-text' weight='font-bold'/>
                     <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-12 lg:mb-16">
-                         <p className="text-gray-200 md:px-8">We love hosting large parties and corporate events. We have a full-time team dedicated to helping coordinate all of the details for you.</p>
+                         <p className="text-gray-200 md:px-8">We love hosting large parties and corporate events. We have a full-time dedicated team to co-ordinate all of the details for your next event.</p>
                      </div>
                      {/* =================1st section================*/}
                      <div className="gift-row flex flex-col md:flex-row justify-center md:space-x-4 lg:space-x-8 items-center mb-8 md:mb-16">
@@ -19,7 +19,7 @@ const PriceForLargerGroup=()=>{
                             <img src="/assets/pricing-for-larger-group.png"></img>    
                          </div>
                          <div className="gift-info md:w-1/2">
-                                <h3 className="golden-text font-semibold mt-8 md:mt-0 text-xl lg:text-2xl mb-4">PRICES FOR LARGER GROUP</h3>
+                                <h3 className="golden-text font-semibold mt-8 md:mt-0 text-xl lg:text-2xl mb-4">WE HOST LARGE EVENTS</h3>
                                 <p className="text-gray-200 lg:text-lg mb:4">All In Adventures is famous for hosting the city's most memorable parties and events. We can accommodate large groups with our multiple room settings and are happy to customize an event to suit your needs.</p>
                                 <div className="flex  lg:text-lg text-gray-300 mt-4">
                                     <span className="block mt-1 w-6 md:w-8"><img src="/assets/svg/star-bullet.svg"></img></span>
@@ -40,19 +40,18 @@ const PriceForLargerGroup=()=>{
                          <div className="gift-row flex flex-col md:flex-row justify-center md:space-x-4 lg:space-x-8 items-center">
                         
                          <div className="gift-info md:w-1/2 order-2 md:order-1">
-                                <h3 className="golden-text font-semibold mt-8 md:mt-0 text-xl lg:text-2xl mb-4"> ADVENTURE GIFT FOR EVERY OCCASION</h3>
-                                <p className="text-gray-200 lg:text-lg mb:4">Birthdays, holidays, surprises, and everything in between - we've got your
-                                 gift needs covered. Recipients can choose from all available in-person games when they redeem their escape
-                                  room gift cards, and they can be used any time with any group. Our gift cards never expire!</p>
+                                <h3 className="golden-text font-semibold mt-8 md:mt-0 text-xl lg:text-2xl mb-4">THE GIFT OF ADVENTURE</h3>
+                                <p className="text-gray-200 lg:text-lg mb:4">The AIA Gift Card programs allows your gift recipients the freedom to choose a unique experience at any of our 27 locations. Whether your purchase is for someone's birthday, anniversary, holiday, or “just because” - give them the gift of adventure!</p>
+                                <p className="text-gray-300 md:text-lg font-bold lg:text-xl mt-4 lg:mt-8">Two More Reasons to Consider an AIA Gift Card:</p>
                                 <div className="flex  lg:text-lg text-gray-300 mt-4">
                                     <span className="block mt-1 w-6 md:w-8"><img src="/assets/svg/star-bullet.svg"></img></span>
-                                    <span className="block w-[90%]">The one you care about gets a unique, exhilarating experience as a gift</span>
+                                    <span className="block w-[90%]">This is a unique, exhilarating gift experience EVERYONE can enjoy! </span>
                                 </div>
                                 <div className="flex  lg:text-lg text-gray-300 mt-3">
                                     <span className="block mt-1 w-6 md:w-8"><img src="/assets/svg/star-bullet.svg"></img></span>
-                                    <span className="block w-[90%]">There is a big chance he or she will invite you to play along, so you will enjoy it too!</span>
+                                    <span className="block w-[90%]">Chances are, you'll enjoy it too when your recipient (most likely) invites you to join in on the shared experience!</span>
                                 </div>
-                                
+                                <p className=" text-gray-300 lg:text-lg italic mt-4 lg:mt-8">* Experiences vary by location. Please ensure availability before purchase.</p>
                                 <div className="gift-btn-box mt-8">
                                     
                                 

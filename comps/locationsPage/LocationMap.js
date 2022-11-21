@@ -85,7 +85,7 @@ const LocationMap=(props)=>{
                                             </div>
                                             <div className="map-card-bus py-2  text-left px-2">
                                                 <h2 className="map-card-name text-gold golden-text text-[18px] font-semibold">
-                                                    <span className="uppercase">All in Adventures</span> at <span>{props.locdetail.mall}</span> in <span className="capitalize">{props.locdetail.city}</span> <span className="uppercase">{props.locdetail.state}</span>
+                                                    <span className="uppercase">All in Adventures</span> at <span>{props.locdetail.mall}</span> in <span className="capitalize">{props.locdetail.city}, </span> <span className="uppercase">{getState(props.locdetail.slug)}</span>
                                                 </h2>
                                                <div className="flex items-center space-x-2">
                                                     <span className="text-[#7b7b7b] text-[16px] font-medium">{props.locdetail.avg_rev}</span>

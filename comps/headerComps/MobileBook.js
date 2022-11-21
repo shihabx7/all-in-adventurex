@@ -23,24 +23,25 @@ const MoblieBook=(props)=>{
         <div className="max-w-7xl mx-auto flex justify-between"> 
            <div className="w-[48%]">
                
-               {
-             
-                props.bookingall &&
-                <button onClick={()=>bookAll(props.bookingall)} className='w-full bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white'>BOOK GAMES</button>
-
-               }
-                {
-             
-             props.bookinggame &&
-             <button onClick={()=>bookGame(props.bookinggame)} className='w-full bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white'>BOOK GAMES</button>
-
-            }
+           <a href={"/"+props.locationslug+"/events#eventform"} className="bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white">BOOK  EVENTS</a>
                    
                
            </div>
            <div className="w-[48%]">
                
-                    <a href={"/"+props.locationslug+"/events#eventform"} className="bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white">BOOK  EVENT</a>
+           {
+             
+             props.bookingall &&
+             <button onClick={()=>bookAll(props.bookingall)} className='w-full bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white'>BOOK GAMES</button>
+
+            }
+             {
+          
+          props.bookinggame &&
+          <button onClick={()=>bookGame(props.bookinggame)} className='w-full bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white'>BOOK THIS GAME</button>
+
+         }
+                  
               
            </div>
                       

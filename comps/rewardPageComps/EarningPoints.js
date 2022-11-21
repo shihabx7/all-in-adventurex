@@ -39,19 +39,18 @@ const EarningPoints=()=>{
                         <div className="abt-col md:w-[48%] lg:w-[48%] order-1 md:order-2 mt-8 md:mt-0" id="redeeming">
                         <h2 className="golden-text text-3xl lg:text-4xl font-os font-bold ">REDEEMING POINTS</h2>
                                 <div className="earning-pts-box mt-4 lg:mt-8">
-                                     <h3 className="font-medium text-[#464646] text-lg lg:text-xl">Once you have accumulated your points, you can redeem them for the following reward options:</h3> 
+                                     <h3 className="font-medium text-[#464646] text-lg lg:text-xl">Once you have accumulated your points, you may redeem them for the following rewards:</h3> 
                                      <ul className="star-list pl-4 text-[#464646] mt-4">
-                                             <li className="lg:text-lg my-2 md:my-3 ">50 points - $5 off any one (1) admission</li>
-                                             <li className="lg:text-lg my-2 md:my-3 ">100 points - 50% off any one (1) admission</li>
-                                             <li className="lg:text-lg my-2 md:my-3 ">150 points - 1 Free Admission (to ANY experience)</li>
-                                             <li className="lg:text-lg my-2 md:my-3 ">250 points - 1 Free Merchandise Item</li>
-                                             <li className="lg:text-lg my-2 md:my-3 ">500 Points - 1 Free Private Room Experience*</li>
+                                             <li className="lg:text-lg my-2 md:my-3 ">50 points - $5 off one (1) admission (choose any game experience)</li>
+                                             <li className="lg:text-lg my-2 md:my-3 ">100 points - 50% off one (1) admission (choose any game experience)</li>
+                                             <li className="lg:text-lg my-2 md:my-3 ">150 points - One (1) free admission (choose any game experience)</li>
+                                             <li className="lg:text-lg my-2 md:my-3 ">250 points - One (1) free merchandise item</li>
+                                             <li className="lg:text-lg my-2 md:my-3 ">500 Points - One (1) free private room experience*</li>
 
                                      </ul>
                                 </div>
                         </div>
-
-
+                        
                     </div>
                     <div className="reedim-note text-[#464646] mt-4 md:mt-8">
                         <p className="lg:text-lg italic">The Rewards Program remains the property of All In Adventures. 

@@ -29,7 +29,11 @@ const GameLocGiftHero=(props)=>{
              </div>
             <div className='max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-20 md:py-20 lg:py-32 xl:py-40 relative z-10'>
                 <div className="page-benar-info"> 
-                
+                {
+                        props.pagedata.publish_status==false &&
+                        <div className="text-center font-bold text-red-600 text-[32px] md:text-[52px] font-os cm-title py-4"><img className="max-w-[400px] mx-auto" src="/assets/svg/coming-soon.svg"></img></div>
+                      }
+                          
                  <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center uppercase'>At {props.pagedata.mall} in {props.pagedata.location_name}</p> 
                  <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os uppercase'>{
                  
@@ -44,7 +48,7 @@ const GameLocGiftHero=(props)=>{
                         
                         {
                             (props.pagedata.bookingdata && props.pagedata.publish_status==true) &&
-                            <button onClick={()=>bookGame(props.pagedata.bookingdata)} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BUY GIFT CARD NOW</button>
+                            <button onClick={()=>bookGame(props.pagedata.bookingdata)} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BUY GIFT CARDS NOW</button>
                         }
                         {
                             (props.pagedata.bookingdata && props.pagedata.publish_status==false) &&

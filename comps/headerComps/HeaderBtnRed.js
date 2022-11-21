@@ -3,6 +3,8 @@ import Link from "next/link"
 
 const HeaderBtnRed =(props)=>{
     const showloc=()=>{
+      const body = document.getElementsByTagName('body')[0];
+      body.classList.add('overflow-hidden')
         document.getElementById('locmenu').classList.remove('hidden')
       }
 

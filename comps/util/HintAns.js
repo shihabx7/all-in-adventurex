@@ -39,7 +39,7 @@ const HintAns=(props)=>{
 
                                 return(
                                     <div key={item.id} className="hint-box border-[1px] border-[#DAC89F] my-6 md:my-8 lg:my-12"> 
-                                        <div className="hint-ques px-4 py-3 lg:px-6 lg:py-4 bg-[#F4E1B5]"><h3 className="text-[20px] lg:text-[24px] golden-text font-os font-medium"><span>{index+1}. </span>{item.ques}</h3></div>
+                                        <div className="hint-ques px-4 py-3 lg:px-6 lg:py-4 bg-[#F4E1B5]"><h3 className="text-[20px] lg:text-[24px] text-dark font-os font-medium"><span>{index+1}. </span>{item.ques}</h3></div>
                                         <div className="hints">
                                              {
                                                 item.hint!="" &&
