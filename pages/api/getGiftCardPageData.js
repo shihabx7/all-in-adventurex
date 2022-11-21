@@ -16,7 +16,7 @@ export const getGiftCardPageData=()=>{
            
         "pagedata":{
             "pagetitle":"BUY GIFT CARDS",
-            "pagesubtitle":"Birthdays, holidays, surprises and everything in between - we've got your gift needs covered. Our gift cards never expire! To buy or redeem gift cards, you must visit the location specific gift card page.",
+            "pagesubtitle":"Birthdays, holidays, surprises, and everything in between - we've got your gift needs covered. Our Gift Cards never expire! To buy or redeem Gift Cards, you must visit the location specific Gift Card page.",
             
             "coverimageL":"/assets/gn-desktop-hero/allinadventures-gift-cards-hero-desktop.jpg",
             "coverimageM":"/assets/gn-mobile-hero/allinadventures-gift-cards-hero-mobile.jpg",
@@ -30,9 +30,9 @@ export const getGiftCardPageData=()=>{
                         "category":"gift",
                         "ques":"How to purchase your Gift Cards?",
                         "ans":[
-                            "Choose the Location. Then, select the gift card amount, fill out the requested details and purchase the gift card.",
-                            "<p class=\"mt-2 lg:mt-3\">Once you complete your purchase, you will be sent an email with the gift card number. If you are giving the card as a gift, follow the directions in your confirmation email to send them through email directly to the recipient. If you prefer a physical gift card, please visit your local store.</p>",
-                            "<p class=\"mt-2 lg:mt-3\"><span class=\"underline underline-offset-4 font-medium\">Please note:</span> If you have not received your gift card(s), please check your spam folder.</p>"
+                            "Choose the Location. Then, select the Gift Card amount, fill out the requested details, add it to your cart, and checkout. ",
+                            "<p class=\"mt-2 lg:mt-3\">Once you complete your purchase, you will be sent an email with the Gift Card number. If you are giving the card as a gift, follow the directions in your confirmation email to send them through email directly to the recipient. If you prefer a physical Gift Card, please visit your local store.</p>",
+                            "<p class=\"mt-2 lg:mt-3\"><span class=\"underline underline-offset-4 font-medium\">Please note:</span> If you have not received your Gift Card(s), please check your spam folder.</p>"
                         ]
                         
 
@@ -41,9 +41,9 @@ export const getGiftCardPageData=()=>{
                     "id":2,
                     "group":"GIFT_CARDS",
                     "category":"gift",
-                    "ques":"How do I redeem the gift cards?",
+                    "ques":"How do I redeem the Gift Cards?",
                     "ans":[
-                        "Gift card holders can redeem the card online at www.allinadventures.com or directly in-store where the gift card was purchased. Contact us directly at your local store or call our customer service team at ",
+                        "Gift card holders can redeem the card online at www.allinadventures.com or directly in-store where the Gift Card was purchased. Contact us directly at your local store or call our customer service team at ",
                         "<a href=\"tel:844-502-5546\" class=\"text-blue-600 hover:text-blue-700\">844-502-5546</a> to redeem it over the phone."
                     ]
                     
@@ -53,9 +53,9 @@ export const getGiftCardPageData=()=>{
                 "id":3,
                 "group":"GIFT_CARDS",
                 "category":"gift",
-                "ques":"Do gift cards expire?",
+                "ques":"Do Gift Cards expire?",
                 "ans":[
-                    "Our gift cards never expire from the day of issue."
+                    "Our Gift Cards never expire from the day of issue."
                 ]
                 
 
@@ -64,7 +64,7 @@ export const getGiftCardPageData=()=>{
                     "id":4,
                     "group":"GIFT_CARDS",
                     "category":"gift",
-                    "ques":"Do we need to make a reservation to use a gift card?",
+                    "ques":"Do we need to make a reservation to use a Gift Card?",
                     "ans":[
                         "No reservation is needed but we always suggest making a reservation beforehand to ensure you get the experience and time slot that you prefer. Walk-ins are available but availability is not guaranteed."
                     ]
@@ -77,7 +77,7 @@ export const getGiftCardPageData=()=>{
                         "category":"gift",
                         "ques":"What happens if I prepay for my reservation in advance?",
                         "ans":[
-                            "If you prepaid for your reservation, your payment will be refunded when you present your gift card on Location."
+                            "If you prepaid for your reservation, your payment will be refunded when you present your Gift Card on Location."
                         ]
                         
         
@@ -86,9 +86,9 @@ export const getGiftCardPageData=()=>{
                             "id":6,
                             "group":"GIFT_CARDS",
                             "category":"gift",
-                            "ques":"Can I get a physical gift card instead of an electronic one?",
+                            "ques":"Can I get a physical Gift Card instead of an electronic one?",
                             "ans":[
-                                "Physical gift cards can be provided at our Location."
+                                "Physical Gift Cards can be provided at our Location."
                             ]
                             
             

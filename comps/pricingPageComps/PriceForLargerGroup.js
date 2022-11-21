@@ -10,7 +10,7 @@ const PriceForLargerGroup=()=>{
             <div className="gift-rt absolute"><img src="/assets/Compas-brown.png"></img></div>
             <div className="max-w-7xl mx-auto px-4 z-30">
                     <TitleSeparator title='PRICES FOR LARGER GROUP' color='golden-text' weight='font-bold'/>
-                    <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-12 lg:mb-16">
+                    <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-12 lg:mb-16">
                          <p className="text-gray-200 md:px-8">We love hosting large parties and corporate events. We have a full-time team dedicated to helping coordinate all of the details for you.</p>
                      </div>
                      {/* =================1st section================*/}
@@ -41,7 +41,7 @@ const PriceForLargerGroup=()=>{
                         
                          <div className="gift-info md:w-1/2 order-2 md:order-1">
                                 <h3 className="golden-text font-semibold mt-8 md:mt-0 text-xl lg:text-2xl mb-4"> ADVENTURE GIFT FOR EVERY OCCASION</h3>
-                                <p className="text-gray-200 lg:text-lg mb:4">Birthdays, holidays, surprises and everything in between - we've got your
+                                <p className="text-gray-200 lg:text-lg mb:4">Birthdays, holidays, surprises, and everything in between - we've got your
                                  gift needs covered. Recipients can choose from all available in-person games when they redeem their escape
                                   room gift cards, and they can be used any time with any group. Our gift cards never expire!</p>
                                 <div className="flex  lg:text-lg text-gray-300 mt-4">

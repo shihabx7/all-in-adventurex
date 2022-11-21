@@ -28,7 +28,7 @@ const VirtualHero=(props)=>{
                 <div className="page-benar-info"> 
                 {
                     props.pagedata.category!="showroom" &&
-                    <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center'>CHOOSE FROM {props.pagedata.totalLocations} US LOCATIONS</p> 
+                    <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center'>CHOOSE FROM {props.pagedata.totalLocations} U.S. LOCATIONS</p> 
                 }
                 
                  <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os uppercase'>{

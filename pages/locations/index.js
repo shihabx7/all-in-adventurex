@@ -90,7 +90,7 @@ return (
             <div className='max-w-7xl mx-auto py-16 md:py-16 px-4 relative z-10'>
             <div className="page-benar-info"> 
                 
-                <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-gray-800 text-center'>CHOOSE FROM {countTotalLocation(props.states)} U.S LOCATIONS</p> 
+                <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-gray-800 text-center'>CHOOSE FROM {countTotalLocation(props.states)} U.S. LOCATIONS</p> 
                 <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os'>ALL IN ADVENTURES LOCATIONS</h1>
                 <p className='text-gray-700 max-w-[800px] mx-auto text-center lg:text-lg'>Browse all our escape room adventure centers across the United States. Grab your team today and head over to any of our locations to experience family and kids friendly interactive fun activities that you and your team will never forget!</p>
                 </div>

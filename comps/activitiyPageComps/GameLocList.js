@@ -35,7 +35,7 @@ const GameLocList=(props)=>{
                     
                 <div className="all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
                     <div className="section-title  text-center max-w-[800px] mx-auto">
-                        <TitleSeparator title="PLAY IN PERSON ESCAPE GAMES" color="golden-text" weight="font-bold"/>
+                        <TitleSeparator title="PLAY IN-PERSON ESCAPE GAMES" color="golden-text" weight="font-bold"/>
                         <p className="text-gray-700 md:px-8 md:text-lg">Team up with your friends, family, kids (age 6+) or co-workers for an adrenaline filled 50-60 minutes real life immersive escape game experience!</p>
                     </div>
                 {
@@ -79,10 +79,10 @@ const GameLocList=(props)=>{
                                             <button  className="border-2 w-[240px] block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">COMING SOON</button>
                                             
                                             }
-                                             <Link href={"/"+props.locationslug+"/activities/"+activity.activity_slug}> 
+                                            
                                                                                         
-                                              <a className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
-                                              </Link>
+                                              <a href={"/"+props.locationslug+"/activities/"+activity.activity_slug} className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
+                                             
                                         </div>
                                     
                                  </div>
@@ -99,7 +99,7 @@ const GameLocList=(props)=>{
                     othergame &&
                     <div id="others-physical-games" className="pt-20 all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
                     <div className="section-title text-center max-w-[800px] mx-auto">
-                        <TitleSeparator title="OTHER IN PERSON GAMES" color="golden-text" weight="font-bold"/>
+                        <TitleSeparator title="OTHER IN-PERSON GAMES" color="golden-text" weight="font-bold"/>
                         <p className="text-gray-700 md:px-8 md:text-lg">We offer additional fun activities that can double up your adventure experience. Simply come with the desire to play more!</p>
                     </div>
                 {
@@ -145,10 +145,10 @@ const GameLocList=(props)=>{
                                             
                                             }
                                              
-                                             <Link href={"/"+props.locationslug+"/activities/"+activity.activity_slug}> 
+                                             
                                                                                         
-                                              <a className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
-                                              </Link>
+                                              <a href={"/"+props.locationslug+"/activities/"+activity.activity_slug} className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
+                                             
                                         </div>
                                     
                                  </div>

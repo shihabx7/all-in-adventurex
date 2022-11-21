@@ -39,12 +39,11 @@ const Footer=(props)=>{
                             <h3 className='golden-text pt-6 font-os font-bold text-3xl md:text-3xl lg:text-4xl'>ALL IN ADVENTURES</h3>
                             <p className='text-gray-300 md:text-lg pt-4'>All In Adventures (formerly Mystery Room) 
                                         is one of the pioneers in bringing escape rooms to the United States
-                                        and now operates in {props.totallocations? props.totallocations:"27"} locations. Established in 2014 and a registered
-                                        franchise brand since 2020, All In Adventures has gained vast experience
-                                        in the escape room, game show room, beat the seat and axe throwing industry.</p>
-                                        <p className='text-gray-300 md:text-lg pt-4 pb-8'>We're your one stop shop for any private event. 
+                                        and now operates in {props.totallocations? props.totallocations:"26"} locations. Established in 2014 and a registered
+                                        franchise brand since 2020, All In Adventures has gained vast industry experience through our popular Escape Room, Game Show Room, Beat the Seat, and Axe Throwing games.</p>
+                                        <p className='text-gray-300 md:text-lg pt-4 pb-8'>We're your one-stop shop for any private event. 
                                         We have you covered for birthday parties, team building, corporate events, holiday parties, 
-                                        bachelor or bachelorette parties and so much more!</p>
+                                        bachelor or bachelorette parties… and so much more!</p>
                             <div className='max-w-[400px] mx-auto'>
                             <LocationBtn location={props.location} borderbg='bg-red-600' borderbghover='bg-red-900' innerbg='bg-[#111111]' innerborder='border-[#111111]' innerbghover='bg-grey-200' innerborderhover='border-gray-200' color="text-white"/>
 

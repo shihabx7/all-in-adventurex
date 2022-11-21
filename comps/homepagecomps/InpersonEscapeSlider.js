@@ -28,12 +28,12 @@ const InpersonEscapeSlider =(props)=>{
         <div className="max-w-7xl mx-auto pt-16 md:pt-28 px-4 z-20 relative">
             {props.city && 
               <>
-                <TitleSeparator title={'PLAY IN PERSON ESCAPE ROOMS in '+props.city+' '+props.state} color='golden-text' weight='font-bold'/>
+                <TitleSeparator title={'PLAY IN-PERSON ESCAPE ROOMS in '+props.city+' '+props.state} color='golden-text' weight='font-bold'/>
               </>
             }
             {!props.city && 
              
-                <TitleSeparator title='PLAY IN PERSON ESCAPE ROOMS' color='golden-text' weight='font-bold'/>
+                <TitleSeparator title='PLAY IN-PERSON ESCAPE ROOMS' color='golden-text' weight='font-bold'/>
               
             }
              
@@ -73,12 +73,12 @@ const InpersonEscapeSlider =(props)=>{
           {
             props.locationslug &&
             <Link href={"/"+props.locationslug+"/activities/"}> 
-            <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all in person escape rooms</span> <FaAngleRight/></a>
+            <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all in-person escape rooms</span> <FaAngleRight/></a>
           </Link>
           }
           { !props.locationslug &&
              <Link href={"/activities/"}> 
-             <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all in person escape rooms</span> <FaAngleRight/></a>
+             <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all in-person escape rooms</span> <FaAngleRight/></a>
            </Link>
           }
            

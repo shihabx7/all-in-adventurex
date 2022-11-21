@@ -25,6 +25,19 @@ const BreadcumNew=(props)=>{
         return x
 
    }
+   const locnameMod=(locname)=>{
+    var spLoc=locname.split("-")
+    if(spLoc[0]=="n"){
+      spLoc[0]=spLoc[0]+"."
+    }
+    var st=spLoc[spLoc.length-1].toString().toUpperCase()
+    spLoc=spLoc.slice(0,-1)
+    spLoc=spLoc.join(' ')
+    
+    var ret=spLoc+", "+st
+    return ret
+  }
+
    const getLabel=(slug)=>{
     var y=slug.split("-")
     y=y.join(' ')

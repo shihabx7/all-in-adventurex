@@ -25,7 +25,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                 "category":"escapegame",
                                 "type": "In-Person",
                                  "title": "Escape From Alcatraz",
-                                 "description": "You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+                                 "description": "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                                  "age":"All Ages (6+)",
                                  "duration":"50",
                                  "maxplayers":"10",

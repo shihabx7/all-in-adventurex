@@ -33,7 +33,11 @@ export const getLocationIndContactPageData=(locationslug)=>{
       if(spLoc[0]=="n"){
         spLoc[0]=spLoc[0]+"."
       }
-      var ret=spLoc.join(' ')
+      var st=spLoc[spLoc.length-1].toString()
+      spLoc=spLoc.slice(0,-1)
+      spLoc=spLoc.join(' ')
+      
+      var ret=spLoc+", "+st
       return ret
     }
 

@@ -22,8 +22,8 @@ const VirtualGameList=(props)=>{
                     {/*==========================virtual games show room end========================== */}
                 <div className="all-gamelist-box show-room grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
                     <div className="section-title  text-center max-w-[800px] mx-auto">
-                        <TitleSeparator title="VIRTUAL GAME SHOWROOM" color="golden-text" weight="font-bold"/>
-                        <p className="text-gray-700 md:px-8 md:text-lg">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                        <TitleSeparator title="VIRTUAL GAME SHOW ROOM" color="golden-text" weight="font-bold"/>
+                        <p className="text-gray-700 md:px-8 md:text-lg">Book your Virtual Game Show experience with a live host. It's like a game show you've seen on TV. You choose which friends, family, or co-workers you want to virtually face-off against - from across the street or across the world. Let's play!</p>
                     </div>
                 {
                         props.vgamelist.map((vgame)=>{
@@ -60,10 +60,10 @@ const VirtualGameList=(props)=>{
                                          <div className="card-game-link mt-4 text-left">
                                             
                                              <button onClick={()=>{openBooking(vgame.booking)}} className="border-2 w-[240px] card-book-btn block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</button>
-                                             <Link href={"/virtual-games/"+vgame.game_slug}> 
+                                           
                                                                                         
-                                              <a className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
-                                              </Link>
+                                              <a href={"/virtual-games/"+vgame.game_slug} className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
+                                           
                                         </div>
                                     
                                  </div>
@@ -80,8 +80,8 @@ const VirtualGameList=(props)=>{
                 {/*==========================virtual games========================== */}
                 <div className="all-gamelist-box v-games-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8 mt-16 md:mt-20">
                     <div className="section-title  text-center max-w-[800px] mx-auto">
-                        <TitleSeparator title="All VIRTUAL ESCAPE GAMES" color="golden-text" weight="font-bold"/>
-                        <p className="text-gray-700 md:px-8 md:text-lg">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
+                        <TitleSeparator title="VIRTUAL ESCAPE ROOMS" color="golden-text" weight="font-bold"/>
+                        <p className="text-gray-700 md:px-8 md:text-lg">These new generation of escape rooms are exactly like physical escape rooms, but can be played from anywhere in the world via a Zoom call. The Game Master is the team's Avatar, who's physically in a real brick and mortar escape room. Thanks to a live cam, the Game Master acts as each team's eyes, ears, and hands as he follows their directions.</p>
                     </div>
                 {
                         props.vgamelist.map((vgame)=>{
@@ -117,10 +117,10 @@ const VirtualGameList=(props)=>{
                                          </div>
                                          <div className="card-game-link mt-4 text-left">
                                              <a target={"_blank"} href={vgame.bookinglink} className="text-center border-2 w-[240px] card-book-btn block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</a>
-                                             <Link href={"/virtual-games/"+vgame.game_slug}> 
+                                           
                                                                                         
-                                              <a className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
-                                              </Link>
+                                              <a href={"/virtual-games/"+vgame.game_slug} className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
+                                             
                                         </div>
                                     
                                  </div>

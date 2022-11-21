@@ -36,23 +36,18 @@ export const getLocationsEventList=(locationslug)=>{
       }
    }
    
-   const cityName=(loc)=>{
-    var ctname=loc.split("-")
-    if(ctname[0]=="n"){ ctname[0]="n."}
-    var st=ctname[ctname.length-1].toUpperCase()
-    var ct=''
-
-    if(ctname.length>2){
-        for(var i=0;i<ctname.length-1 ;i++){
-            ct=ct+ctname[i].charAt(0).toUpperCase()+ctname[i].slice(1)+' '
-        }
+   const locnameMod=(locname)=>{
+    var spLoc=locname.split("-")
+    if(spLoc[0]=="n"){
+      spLoc[0]=spLoc[0]+"."
     }
-    else{
-        ct=ctname[0].charAt(0).toUpperCase()+ctname[0].slice(1)+' '
-    }
-
-    return ct+st
-}
+    var st=spLoc[spLoc.length-1].toString()
+    spLoc=spLoc.slice(0,-1)
+    spLoc=spLoc.join(' ')
+    
+    var ret=spLoc+", "+st
+    return ret
+  }
 
     const eventsData={
 
@@ -68,12 +63,12 @@ export const getLocationsEventList=(locationslug)=>{
         "activitylist":getLocTotal(locationslug).activitylistSlug,
            
           "pagedata": {
-                        "pagetitle":"PARTIES, EVENTS AND SPECIAL OCCASIONS IN "+cityName(locationslug),
+                        "pagetitle":"PARTIES, EVENTS AND SPECIAL OCCASIONS IN "+locnameMod(locationslug),
                         "locationslug":locationslug,
                         "publish_status":getLocTotal(locationslug).publish_status,
-                        "location_name":cityName(locationslug),
+                        "location_name":locnameMod(locationslug),
                         "mall":getLocSpec(locationslug).mall,
-                        "pagesubtitle":"Celebrate any special event at All In Adventures escape rooms in "+cityName(locationslug)+"! Team up with your family, friends, kids, co-workers, and anybody and everybody for an incredible memory to last forever. Whether they are 6 or 99, we have something for everyone.",
+                        "pagesubtitle":"Celebrate any special event at All In Adventures escape rooms in "+locnameMod(locationslug)+"! Team up with your family, friends, kids, co-workers, and anybody and everybody for an incredible memory to last forever. Whether they are 6 or 99, we have something for everyone.",
                         "totalLocations": getLocTotal(locationslug).totalLocations,
                         "totalUniqueGames": getLocTotal(locationslug).locUniqueGames,
                         "totalFiveStarReview": getLocTotal(locationslug).locTotalReview,

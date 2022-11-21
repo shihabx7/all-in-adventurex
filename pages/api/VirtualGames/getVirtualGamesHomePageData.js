@@ -17,12 +17,12 @@ export const getVirtualGamesHomePageData=()=>{
           "pagedata": {
                         
                         
-                        "pagetitle":"All Virtual Games",
-                        "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today.",
+                        "pagetitle":"ALL VIRTUAL / REMOTE GAMES",
+                        "pagesubtitle":"Enjoy the adventure and thrills of an Escape Room and Game Show Room with friends and family from all different parts of the world without needing to gather in person.",
                         "totalLocations": getTotal().totalLocations,
-                        "totalUniqueGames": getTotal().uniqueGames,
-                        "totalFiveStarReview": getTotal().totalReview,
-                        "totalPlayerEscaped": getTotal().toalPlayerEscape,
+                        "totalUniqueGames": "7",
+                        "totalFiveStarReview": "25K+",
+                        "totalPlayerEscaped": "1M+",
                         "coverimageL":"/assets/all-game-desktop-hero/All-virutal-Game-Page-Hero-Image.jpg",
                         "coverimageM":"/assets/all-game-mobile-hero/All-virutal-Game-Page-Hero-Image-mobile.jpg"
           },

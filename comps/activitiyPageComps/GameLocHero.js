@@ -23,6 +23,7 @@ const GameLocHero=(props)=>{
           view: {item:bookingData.item}
         });
       }
+      
 
     return(
         <> <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />

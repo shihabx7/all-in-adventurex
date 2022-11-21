@@ -39,7 +39,7 @@ export const getAllActivity=()=>{
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+                    "activity_desc":"You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                     "activity_slug":"escape-from-alcatraz",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
                     

@@ -17,7 +17,7 @@ const WhoCanplay =()=>{
             <div className="max-w-7xl mx-auto px-4 relative z-40">
                     <TitleSeparator title='WHO CAN PLAY AN ESCAPE ROOM' color='golden-text' weight='font-bold'/>
                     <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-12 lg:mb-16">
-                         <p className="text-gray-200 md:px-8">Escape rooms are perfect for having interactive adventures and fun with your friends, family, kids or even a team building exercise with your co-workers</p>
+                         <p className="text-gray-200 md:px-8">Escape rooms are perfect for having interactive adventures and fun with your friends, family, kids, or even team building with co-workers!</p>
                      </div>
                      <div className="wcp-row">
                         <div className="wcp-list-container mb-4 md:mb-8 lg:mb-12 py-6 md:py-8 px-6 lg:py-12 lg:px-10 bg-[#080808] rounded">
@@ -86,7 +86,7 @@ const WhoCanplay =()=>{
                                 </div>
                                 <div className="flex  lg:text-lg text-gray-300 mt-3">
                                     <span className="block mt-1 w-6 md:w-8"><img src="/assets/svg/star-bullet.svg"></img></span>
-                                    <span className="block w-[90%]">At All In Adventures, we can cater to over 75+ people at a time in most locations for holiday parties, team building, birthday parties, summer camps, school educational outings or other large events.</span>
+                                    <span className="block w-[90%]">At All In Adventures, we can cater to over 75+ people at a time in most locations for holiday parties, team building, birthday parties, summer camps, school field trips, or other large events!</span>
                                 </div>
                                 
                                

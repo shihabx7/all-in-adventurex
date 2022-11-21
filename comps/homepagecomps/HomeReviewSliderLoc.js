@@ -21,8 +21,8 @@ const HomeReviewSliderLoc=({reviews})=>{
     {/** =======ornamental icon end===== */}
     <div className="max-w-7xl mx-auto  px-4 relative z-30 ">
          <TitleSeparator title='CUSTOMERS LOVE ALL IN ADVENTURES' color='golden-text' weight='font-bold'/>
-         <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
-                <p className="text-gray-700 md:px-8">Our escape room game masters are amazing and make sure everyone feels like a rockstar while playing. Players say it is the best and the most fun experience they've ever had.</p>
+         <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
+                <p className="text-gray-700 md:px-8">Our Game Masters are passionate and always work to ensure everyone feels like a rockstar while playing! Over 25,000 guests have raved about their experience at All in Adventures!</p>
             </div>
     </div>
     <div className="slider-box pb-4 md:pb-8 relative">  
