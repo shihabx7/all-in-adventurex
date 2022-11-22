@@ -6,6 +6,7 @@ import { FiChevronRight } from "react-icons/fi";
 // page template=============
 import { getJobApplicationData } from "../api/getJobApplicationData";
 import GameHomeHero  from "../../comps/activitiyPageComps/GameHomeHero";
+import CareerHero from "../../comps/careersPageComps/CareerHero";
 
 import LocationStoreMenu from "../../comps/headerComps/LocationStoreMenu";
 
@@ -28,7 +29,7 @@ const apply=(props)=>{
           <>
               {/* =======header content======== */}
            <Head>
-                 <title>All in adventure | Volunteering</title>
+                 <title>All In Adventures | Apply</title>
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
@@ -59,7 +60,7 @@ const apply=(props)=>{
             <LocationStoreMenu locationlist={props.locationlist}/>
 
         </div>
-        <GameHomeHero gametotal="not" pagedata={props.pagedata}/>
+        <CareerHero jobname="apply" pagedata={props.pagedata}/>
         
    
 

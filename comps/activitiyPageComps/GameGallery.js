@@ -41,7 +41,7 @@ const GameGallery=(props)=>{
                      
                     <TitleSeparator title="PHOTO GALLERY" color="golden-text" weight="font-bold"/>
                     <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
-                                 <p className="text-gray-700 md:px-8">Meet some of our happy adventurers and a few of the scenes from {props.activityname && <span>{props.activityname}</span>}{!props.activityname && <span>Allinadventure</span>}{props.category=="other"? "":" escape game"}. Experience this game at All In Adventures.</p>
+                                 <p className="text-gray-700 md:px-8">Meet some of our happy adventurers and a few of the scenes from our {props.activityname && <span>{props.activityname}</span>}{!props.activityname && <span>Allinadventure</span>}{props.category=="other"? "":" escape game"}. Experience this game at All In Adventures.</p>
                     </div>
                 </div>
                 <div className="hidden md:block game-gallery"> 

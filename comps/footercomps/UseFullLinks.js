@@ -40,7 +40,7 @@ const UseFullLinks=(props)=>{
             {
                 !props.locationslug &&
                
-                <a href="/events" className='text-gray-400 text-sm  lg:text-base'>Events and Parites</a>
+                <a href="/events" className='text-gray-400 text-sm  lg:text-base'>Events and Parties</a>
              
             } 
 
@@ -113,7 +113,7 @@ const UseFullLinks=(props)=>{
         </div>
         <div className='usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2'> 
             <Link href="/rewards-program"> 
-                <a className='text-gray-400 text-sm  lg:text-base'>Rewards Pogram</a>
+                <a className='text-gray-400 text-sm  lg:text-base'>Rewards Program</a>
             </Link>
         </div>
         <div className=' hidden lg:block text-gray-400 text-2xl'> 

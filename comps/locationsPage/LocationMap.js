@@ -78,7 +78,7 @@ const LocationMap=(props)=>{
                                 {/* =============================card info================================*/}
                                 <div className="map-card max-w-[320px] md:max-w-[320px] bg-[rgba(255,249,236,.4)]">
                                             <div className="map-card-img  bg-[#FFF9EC]">
-                                              <Link href={'/locations/'+getStoreUrl(props.locdetail.city,props.locdetail.state)}>
+                                              <Link href={'/locations/'+props.locdetail.slug}>
                                                 <a className="block cursor-pointer"><img className="w-full" src={props.locdetail.coverimg} alt={props.locdetail.alt}></img></a>
                                               </Link>
 

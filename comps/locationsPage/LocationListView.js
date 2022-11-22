@@ -23,14 +23,16 @@ const LocationListView=({city,state})=>{
                 COMING SOON
             </div>
         }
-            
-            <div className="location-img">
+            <div className="loc-bt flex flex-col justify-between h-full">
+                <div> 
+                <div className="location-img">
                 <Link href={"/locations/"+city.slug}>
                     <a className="block cursor-pointer"><img src={city.coverimg}></img></a>
                 </Link>
                 
-            </div>
-            <div className="locationview-info py-4 px-4"> 
+                 </div>
+            
+                    <div className="locationview-info py-4 px-4"> 
                 <div className="location-name group">
                     <Link href={"/locations/"+city.slug}>
                         <a> 
@@ -150,18 +152,19 @@ const LocationListView=({city,state})=>{
                 </div>
 
 
-            </div>
-            <div className="locationview-link px-4 pb-6"> 
+                    </div>
+                    </div> 
+                     <div className="locationview-link px-4 pb-6"> 
                     <div className="flex justify-between">
-                        <Link href={"/"+city.slug+"/activities"}>
-                                <a className="w-[46%] rounded py-3 lg:py-4 bg-red-600 hover:bg-red-700 text-center text-white fonr-medium">BOOK GAMES</a>
-                         </Link>
-                         <Link href={"/"+city.slug+"/events"}>
-                                <a className="w-[46%] rounded py-3 lg:py-4 bg-red-600 hover:bg-red-700 text-center text-white fonr-medium">BOOK EVENTS</a>
-                         </Link>
+                        
+                                <a href={"/"+city.slug+"/activities"} className="w-[46%] rounded py-3 lg:py-4 bg-red-600 hover:bg-red-700 text-center text-white fonr-medium">BOOK GAMES</a>
+                         
+                                <a href={"/"+city.slug+"/events"} className="w-[46%] rounded py-3 lg:py-4 bg-red-600 hover:bg-red-700 text-center text-white fonr-medium">BOOK EVENTS</a>
+                         
 
                     </div>
 
+                     </div>
             </div>
         </div>
     )

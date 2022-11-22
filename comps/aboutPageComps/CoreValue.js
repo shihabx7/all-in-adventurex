@@ -20,8 +20,8 @@ const CoreValue=()=>{
                                 <p className="text-[#938056]">#CORE VALUE</p>
                                 <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">BUILDING FOR EVERYONE</h3>
                                 <p className="lg:text-lg text-gray-700 mt-2 md:mt-4">Escape rooms have become super popular over the last couple of years.
-                                 As we've built all our facilities perfect for all ages and skill levels, people from all different ages and
-                                  backgrounds have found themselves enjoying the thrill and challenge of trying to escape one or more of our rooms.
+                                 As we've built all our facilities perfect for all ages and skill levels. People from all different ages and backgrounds have
+                                  found themselves enjoying the thrill and challenge of trying to escape one or more of our rooms.
                                 </p>
                         </div>
                         <div className="core-card rounded-lg bg-[#FDF0D1] p-6 lg:p-8">
@@ -35,9 +35,7 @@ const CoreValue=()=>{
                         <div className="core-card rounded-lg bg-[#FDF0D1] p-6 lg:p-8 ">
                                 <p className="text-[#938056]">#CORE VALUE</p>
                                 <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">OPEN CONCEPT AND FRIENDLY STAFF</h3>
-                                <p className="lg:text-lg text-gray-700 mt-2 md:mt-4">We pride ourselves on offering open-air, clean,
-                                 spacious, well-maintained facilities, and we hope you enjoy your time with our friendly escape room
-                                  attendants who are there for support when you need it.
+                                <p className="lg:text-lg text-gray-700 mt-2 md:mt-4">We pride ourselves on offering open-air, clean, spacious, well-maintained facilities. We hope you enjoy your time with our friendly escape room attendants who are there for support when you need it.
                                 </p>
                         </div>
                         <div className="core-card rounded-lg bg-[#FDF0D1] p-6 lg:p-8 ">

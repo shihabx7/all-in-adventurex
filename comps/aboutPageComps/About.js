@@ -58,9 +58,7 @@ const About=()=>{
                           events and team-building activities throughout the United States. Our core focus is to offer
                            a comprehensive line of innovative, top-quality family-friendly escape rooms and other fun activities,
                             perfect for both kids and adults.</p>
-                             <p className="text-gray-700 lg:text-lg mt-4">The business will provide an exceptional level of customer service to articulate the values of the company.
-                          The team must position the business in a clear, powerful, and memorable way in the marketplace,
-                           so we can build an organization with a unique spirit that makes people eager to join and conduct business with us.</p>
+                             <p className="text-gray-700 lg:text-lg mt-4">The business will provide an exceptional level of customer service to articulate the values of the company. The team must position the business in a clear, powerful, and memorable way in the marketplace.  By doing this we strive to build an organization with a unique spirit that makes people eager to join and conduct business with us.</p>
                        
                     </div>
                     <div className="abt-col md:w-[40%] lg:w-[48%] order-1 md:order-2">

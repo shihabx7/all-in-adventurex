@@ -17,10 +17,7 @@ const WhyAllinAdventure=()=>{
                                 <p className="text-[#938056]">#CORE VALUE</p>
                                 <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">A PROVEN BUSINESS STRATEGY</h3>
                                 <p className="lg:text-lg text-gray-700 mt-2 md:mt-4">
-                                A huge benefit of owning an All In Adventures franchise is that it offers business owners
-                                 a proven business strategy. While many new escape room businesses struggle to develop a
-                                  viable and profitable business plan, we have been successful due to our ability to ensure
-                                   our franchise partners' profitability.
+                                A huge benefit of owning an All In Adventures franchise is that it offers business owners a proven business strategy. Many new escape room businesses struggle to develop a viable and profitable business plan. We have been successful due to our ability to ensure our franchise partners' profitability.
                                 </p>
                         </div>
                         <div className="core-card rounded-lg bg-[#FDF0D1] p-6 lg:p-8">
@@ -36,10 +33,7 @@ const WhyAllinAdventure=()=>{
                                 <p className="text-[#938056]">#CORE VALUE</p>
                                 <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">PRE-ESTABLISHED SUPPLY LINES</h3>
                                 <p className="lg:text-lg text-gray-700 mt-2 md:mt-4">
-                                Establishing reliable relationships with suppliers is another challenge new business
-                                 owners often face, and a lack of dedicated suppliers can hinder business operations
-                                  and slow down the growth. We've built relationships and pricing structures with our
-                                   vendors to ensure the best product quality and fair price is always maintained.
+                                Establishing reliable relationships with suppliers is another challenge new business owners often face.  A lack of dedicated suppliers can hinder business operations and slow down the growth. We've built relationships and pricing structures with our vendors to ensure the best product quality and fair price is always maintained.
                                 </p>
                         </div>
                         <div className="core-card rounded-lg bg-[#FDF0D1] p-6 lg:p-8 ">
@@ -55,11 +49,7 @@ const WhyAllinAdventure=()=>{
                                 <p className="text-[#938056]">#CORE VALUE</p>
                                 <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">A BUILT-IN SUPPORT SYSTEM</h3>
                                 <p className="lg:text-lg text-gray-700 mt-2 md:mt-4">
-                                We provide a built-in support system that is quick and friendly.
-                                 We share business knowledge critical to achieving profitability,
-                                  which is a significant benefit for business owners with little
-                                   or no escape room industry experience. We ensure that our product
-                                    quality, value and customer service standards are consistently met in all locations.
+                                We provide a built-in support system that is quick and friendly. We share business knowledge critical to achieving profitability. There is a significant benefit for business owners with little or no escape room industry experience. We ensure that our product quality, value and customer service standards are consistently met in all locations.
                                 </p>
                         </div>
                         <div className="core-card rounded-lg bg-[#FDF0D1] p-6 lg:p-8 ">

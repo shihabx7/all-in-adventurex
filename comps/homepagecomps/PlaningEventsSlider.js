@@ -44,14 +44,13 @@ const PlaningEventsSlider=(props)=>{
          <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
             {
                 props.city && 
-                <p className="text-gray-700 md:px-8">All In Adventures is famous for hosting {props.city}'s most memorable parties
-                 and events. We can accommodate private and corporate large groups with our multiple room settings and are
-                  happy to customize an event to suit your needs.
+                <p className="text-gray-700 md:px-8">
+                  All In Adventures is famous for hosting  {props.city}'s most memorable parties and events. We can accommodate large private and corporate groups. With our multiple-room settings and are happy to customize an event to suit your needs.
                 </p>
             }
             {
                 !props.city && 
-                <p className="text-gray-700 md:px-8">All In Adventures is famous for hosting the city's most memorable parties and events. We can accommodate large groups with our multiple room settings and are happy to customize an event to suit your needs.</p>
+                <p className="text-gray-700 md:px-8">All In Adventures is famous for hosting most memorable parties and events. We can accommodate large private and corporate groups. With our multiple-room settings and are happy to customize an event to suit your needs..</p>
             }
               
             </div>

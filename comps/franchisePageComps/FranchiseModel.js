@@ -18,17 +18,14 @@ const FranchiseModel=()=>{
                         <div className="fran-model mt-4 md:mt-6 lg:mt-8"> 
                                              
                                  <p className="text-gray-700 lg:text-lg mt-4 ">
-                                         All In Adventures is distinguished from other entertainment
-                                          zones because we have the proven business model and processes
-                                           in place that make us sustainable. We already have relationships
-                                            with over 10 mall companies and aren't slowing down! Our games and
-                                             experiences are changing every few months which keeps the local consumer base
-                                              coming back for new entertainment experiences.
+                                 All In Adventures is distinguished from other entertainment zones in that we have the
+                                  proven business model and processes in place that make us sustainable. We already have
+                                   relationships with over 10 mall companies and aren't slowing down! Our games and experiences
+                                    are changing every few months. This keeps the local consumer base coming back for new entertainment
+                                     experiences.
                                 </p>
                                 <p className="text-gray-700 lg:text-lg mt-4 ">
-                                 As a franchise partner, you are stepping into the continued expansion of a brand that has all the
-                                 right elements in place to be the best of the best! Gain insight from our leadership team as you
-                                  build your business and see just how amazing All In Adventures will be as your business!
+                                As a franchise partner, you are stepping into the continued expansion of a brand that has all the right elements in place to be the best of the best! Gain insight from our leadership team as you build your business. You will see just how amazing All In Adventures will be as your business!
                                 </p>
                                              
                         </div>
@@ -58,16 +55,10 @@ const FranchiseModel=()=>{
                          <div className="fran-model mt-4 md:mt-6 lg:mt-8"> 
                                              
                                              <p className="text-gray-700 lg:text-lg mt-4 ">
-                                             Why is All In Adventures worth investing in? Because we understand what
-                                              it takes to be successful within this emerging industry. Escape rooms,
-                                               axe throwing, game show experiences, and 2-minute escape rooms are all
-                                                streams for revenue while we keep the operation simple to run through.
-                                                 Our experiences cater to a truly family-focused environment and is a
-                                                  perfect place for any type of event from just a night out to a party
-                                                   or celebration event to a corporate event.
+                                             Why is All In Adventures worth investing in? Because we understand what it takes to be successful within this emerging industry. Escape rooms, axe throwing, game show experiences, and 2-minute escape rooms are all streams for revenue while we keep the operation simple to run through. Our experiences cater to a truly family-focused environment. It is a perfect place for any type of event from just a night out to a party or celebration event to a corporate event.
                                             </p>
                                             <p className="text-gray-700 lg:text-lg mt-4 ">
-                                            We offer exhaustive support and hands-on training to ensure that every franchisee is equipped with the proper industry knowledge, skills and expertise to operate the business successfully. 
+                                            We offer exhaustive support and hands-on training. We will ensure that every franchisee is equipped with the proper industry knowledge, skills and expertise to operate the business successfully.
                                             </p>
                                            
                                                          

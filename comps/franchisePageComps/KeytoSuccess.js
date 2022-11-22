@@ -26,12 +26,7 @@ const KeytoSuccess=()=>{
                                      Training and Business Systems make up the backbone of the business.
                                 </p>
                                 <p className="text-gray-700 lg:text-lg mt-4 ">
-                                We love this kid and family friendly entertainment business and hope you will
-                                 too! We are looking for franchise partners who share a passion for offering
-                                  games that is fun, challenging and enjoyable while delivering an outstanding
-                                   customer experience to everyone, every time. When you offer great service like we do,
-                                    people react. They feel good about doing something that contributes positively to their
-                                     relationships with friends, families and co-workers.
+                                We love this kid and family-friendly entertainment business and hope you will too! We are looking for franchise partners who share a passion for offering games that are fun, challenging, and enjoyable while delivering an outstanding customer experience to everyone, every time. When you offer excellent service like we do, people react. They feel good about doing something that contributes positively to their relationships with friends, families, and co-workers.
                                 </p>
                                 
                                              

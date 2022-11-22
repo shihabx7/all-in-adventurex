@@ -84,7 +84,7 @@ import { getLocTotal } from "./AllDataList/getLocTotal"
             "category":"showroom",
             "type": "Virtual",
             "title": "Virtual Game Show Room",
-            "description": "It's designed to be an interactive live game show experience for online players of all ages and backgrounds to enjoy.",
+            "description": "An interactive live game show experience that players of all ages and backgrounds can come together and play from across the globe",
             "age":"All Ages (6+)",
             "duration":"60",
             "maxplayers":"12",
