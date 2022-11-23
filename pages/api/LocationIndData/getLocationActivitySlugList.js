@@ -1634,14 +1634,7 @@ const datalist={
             "activity_slug":"treasure-island"
            
         },
-        {
-            "id":3,
-            "category":"escapegame",
-            "category":"escapegame",
-            "activity_name":"Zombie Apocalypse",
-            "activity_slug":"zombie-apocalypse"
-           
-        },
+        
         {
             "id":4,
             "category":"escapegame",
@@ -1656,13 +1649,7 @@ const datalist={
             "activity_slug":"black-ops"
            
         },
-        {
-            "id":6,
-            "category":"escapegame",
-            "activity_name":"Superhero's Adventure",
-            "activity_slug":"superheros-adventure"
-           
-        },
+        
         {
             "id":7,
             "category":"escapegame",
@@ -1754,13 +1741,7 @@ const datalist={
      // =====================================lawrenceville-ga=======
      "lawrenceville-ga":[
 
-        {
-            "id":1,
-            "category":"escapegame",
-            "activity_name":"Escape From Alcatraz",
-            "activity_slug":"escape-from-alcatraz"
-           
-        },
+       
         {
             "id":2,
             "category":"escapegame",
@@ -1804,7 +1785,13 @@ const datalist={
             "activity_slug":"houdinis-magic-cell"
            
         },
-        
+        {
+            "id":8,
+            "category":"escapegame",
+            "activity_name":"Special Agent",
+            "activity_slug":"special-agent"
+           
+        },
         
        
         {

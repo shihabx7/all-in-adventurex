@@ -76,8 +76,8 @@ import { getLocTotal } from "../AllDataList/getLocTotal"
             "mall":malldata.pagedata.mall,
             "price":activityDataset[gameslug].price,
             "duration":activityDataset[gameslug].duration,
-            "max_players":activityDataset[gameslug].max_players,
-            "min_players":activityDataset[gameslug].min_players,
+            "max_players":activityGuest[locationslug][gameslug].max_players,
+            "min_players":activityGuest[locationslug][gameslug].min_players,
             "activityname":activityDataset[gameslug].shortname? activityDataset[gameslug].shortname:activityDataset[gameslug].activityname,
             "notice":activityDataset[gameslug].notice? activityDataset[gameslug].notice:false,
             "bookingdata":bookingdata
@@ -2335,3 +2335,2156 @@ const activityDataset={
         
         //============================================virtual-reality end 12
     }
+
+    const activityGuest={
+      //********************************************************************************************NY */
+      //=========================================================albany-ny list
+      "albany-ny":{
+        //============================================escape-from-alcatraz 1
+      "escape-from-alcatraz":{
+                      "id":1,
+                     "max_players":"10",
+                     "min_players":"2",
+        
+                             },
+      //============================================escape-from-alcatraz end 1
+      //============================================treasure-island 2
+      "treasure-island":{
+                  "id":2,
+                 "max_players":"10",
+                 "min_players":"2",
+      
+                        },
+      //============================================treasure-island end 2
+      //============================================superheros-adventure3
+      "superheros-adventure":{
+        "id":3,
+        "max_players":"10",
+        "min_players":"2",
+       
+      },
+      //============================================superheros-adventure end3
+      //============================================zombie-apocalypse4
+      "zombie-apocalypse":{
+        "id":4,
+        "max_players":"10",
+        "min_players":"2",
+        
+      },
+      //============================================zombie-apocalypse end4
+        //============================================special-agent5
+        "special-agent":{
+          "id":5,
+          "max_players":"10",
+          "min_players":"2",
+          
+          
+        },
+        //============================================special-agent end5
+         //============================================hollywood-premiere 6
+         "hollywood-premiere":{
+          "id":6,
+          "max_players":"6",
+          "min_players":"2",
+         
+        },
+        //============================================hollywood-premiere 6
+         //============================================sherlocks-library 7
+         "sherlocks-library":{
+          "id":7,
+          "max_players":"10",
+          "min_players":"2",
+        
+        },
+        //============================================hollywood-premiere 7
+         //============================================houdinis-magic-cell 8
+         "houdinis-magic-cell":{
+          "id":8,
+          "max_players":"10",
+          "min_players":"2",
+          
+        },
+        //============================================houdinis-magic-cell 8
+        
+        //============================================black-ops 10
+        "black-ops":{
+          "id":9,
+          "max_players":"10",
+          "min_players":"2",
+         
+                   },
+        //============================================black-ops 10
+        //============================================lost-in-the-jungle 11
+        "lost-in-the-jungle":{
+         
+          "max_players":5,
+          "min_players":2,
+         
+        },
+        //============================================lost-in-the-jungle end 11
+        
+         //============================================wizarding-school 13
+         "wizarding-school":{
+          
+          "max_players":"4",
+          "min_players":"2",
+          
+        },
+        //============================================wizarding-school end 13
+         //============================================magic-castle 9
+         "magic-castle":{
+          
+          "max_players":"10",
+          "min_players":"2",
+       
+        },
+        //============================================magic-castle end 9
+        //============================================locked-in-the-Lift 14
+        "locked-in-the-lift":{
+      
+          "max_players":"4",
+          "min_players":"2",
+         
+        },
+        //============================================locked-in-the-lift end 14
+        //============================================game-show-room 15
+        "game-show-room":{
+          
+          "max_players":16,
+          "min_players":4,
+         
+            
+        },
+        //============================================game-show-room end 15
+        //============================================axe-throwing 16
+        "axe-throwing":{
+         
+          "max_players":4,
+          "min_players":2,
+          
+        },
+        //============================================axe-throwing end 16
+         //============================================beat-the-seat 17
+         "beat-the-seat":{
+          
+          "max_players":1,
+          "min_players":1,
+          
+        },
+        //============================================beat-the-seat end 17
+                   },
+          //=========================================================albany-ny list end
+           //=========================================================Buffalo ny list
+      "buffalo-ny":{
+        //============================================escape-from-alcatraz 1
+      "escape-from-alcatraz":{
+                      "id":1,
+                     "max_players":"8",
+                     "min_players":"2",
+        
+                             },
+      //============================================escape-from-alcatraz end 1
+      //============================================treasure-island 2
+      "treasure-island":{
+                  "id":2,
+                 "max_players":"8",
+                 "min_players":"2",
+      
+                        },
+      //============================================treasure-island end 2
+      //============================================superheros-adventure3
+      "superheros-adventure":{
+        "id":3,
+        "max_players":"8",
+        "min_players":"2",
+       
+      },
+      //============================================superheros-adventure end3
+      //============================================zombie-apocalypse4
+      "zombie-apocalypse":{
+        "id":4,
+        "max_players":"8",
+        "min_players":"2",
+        
+      },
+      //============================================zombie-apocalypse end4
+        //============================================special-agent5
+        "special-agent":{
+          "id":5,
+          "max_players":"8",
+          "min_players":"2",
+          
+          
+        },
+        //============================================special-agent end5
+         //============================================hollywood-premiere 6
+         "hollywood-premiere":{
+          "id":6,
+          "max_players":"8",
+          "min_players":"2",
+         
+        },
+        //============================================hollywood-premiere 6
+         //============================================sherlocks-library 7
+         "sherlocks-library":{
+          "id":7,
+          "max_players":"8",
+          "min_players":"2",
+        
+        },
+        //============================================hollywood-premiere 7
+         //============================================houdinis-magic-cell 8
+         "houdinis-magic-cell":{
+          "id":8,
+          "max_players":"12",
+          "min_players":"2",
+          
+        },
+        //============================================houdinis-magic-cell 8
+        
+        //============================================black-ops 10
+        "black-ops":{
+          "id":9,
+          "max_players":"8",
+          "min_players":"2",
+         
+                   },
+        //============================================black-ops 10
+        
+                   },
+          //=========================================================albany-ny list end
+          //=========================================================middletown-ny list
+      "middletown-ny":{
+        //============================================escape-from-alcatraz 1
+      "escape-from-alcatraz":{
+                      "id":1,
+                     "max_players":"12",
+                     "min_players":"2",
+        
+                             },
+      //============================================escape-from-alcatraz end 1
+      //============================================treasure-island 2
+      "treasure-island":{
+       
+                 "max_players":"12",
+                 "min_players":"2",
+      
+                        },
+      //============================================treasure-island end 2
+      //============================================superheros-adventure3
+      "superheros-adventure":{
+      
+        "max_players":"12",
+        "min_players":"2",
+       
+      },
+      //============================================superheros-adventure end3
+      //============================================zombie-apocalypse4
+      "zombie-apocalypse":{
+        "max_players":"12",
+        "min_players":"2",
+        
+      },
+      //============================================zombie-apocalypse end4
+        //============================================special-agent5
+        "special-agent":{
+         
+          "max_players":"12",
+          "min_players":"2",
+          
+          
+        },
+        //============================================special-agent end5
+         //============================================hollywood-premiere 6
+         "hollywood-premiere":{
+          
+          "max_players":"12",
+          "min_players":"2",
+         
+        },
+        //============================================hollywood-premiere 6
+         //============================================sherlocks-library 7
+         "sherlocks-library":{
+  
+          "max_players":"12",
+          "min_players":"2",
+        
+        },
+        //============================================hollywood-premiere 7
+         //============================================houdinis-magic-cell 8
+         "houdinis-magic-cell":{
+         
+          "max_players":"12",
+          "min_players":"2",
+          
+        },
+        //============================================houdinis-magic-cell 8
+        
+        //============================================black-ops 10
+        "black-ops":{
+          
+          "max_players":"10",
+          "min_players":"2",
+         
+                   },
+        //============================================black-ops 10
+   
+        
+         //============================================wizarding-school 13
+         "wizarding-school":{
+          
+          "max_players":"4",
+          "min_players":"2",
+          
+        },
+        //============================================wizarding-school end 13
+        
+         //============================================beat-the-seat 17
+         "beat-the-seat":{
+          
+          "max_players":1,
+          "min_players":1,
+          
+        },
+        //============================================beat-the-seat end 17
+                   },
+          //=========================================================middletown-ny end
+          //=========================================================syracuse-ny list
+      "syracuse-ny":{
+        //============================================escape-from-alcatraz 1
+      "escape-from-alcatraz":{
+        
+                     "max_players":"10",
+                     "min_players":"2",
+        
+                             },
+      //============================================escape-from-alcatraz end 1
+      //============================================treasure-island 2
+      "treasure-island":{
+       
+                 "max_players":"10",
+                 "min_players":"2",
+      
+                        },
+      //============================================treasure-island end 2
+      //============================================superheros-adventure3
+      "superheros-adventure":{
+      
+        "max_players":"10",
+        "min_players":"2",
+       
+      },
+      //============================================superheros-adventure end3
+      //============================================zombie-apocalypse4
+      "zombie-apocalypse":{
+        "max_players":"12",
+        "min_players":"2",
+        
+      },
+      //============================================zombie-apocalypse end4
+        //============================================special-agent5
+        "special-agent":{
+         
+          "max_players":"10",
+          "min_players":"2",
+          
+          
+        },
+        //============================================special-agent end5
+         //============================================hollywood-premiere 6
+         "hollywood-premiere":{
+          
+          "max_players":"10",
+          "min_players":"2",
+         
+        },
+        //============================================hollywood-premiere 6
+         //============================================sherlocks-library 7
+         "sherlocks-library":{
+  
+          "max_players":"10",
+          "min_players":"2",
+        
+        },
+        //============================================hollywood-premiere 7
+         //============================================houdinis-magic-cell 8
+         "houdinis-magic-cell":{
+         
+          "max_players":"10",
+          "min_players":"2",
+          
+        },
+        //============================================houdinis-magic-cell 8
+        
+        //============================================black-ops 10
+        "black-ops":{
+          
+          "max_players":"10",
+          "min_players":"2",
+         
+                   },
+        //============================================black-ops 10
+     
+         //============================================magic-castle 9
+         "magic-castle":{
+          
+          "max_players":"4",
+          "min_players":"2",
+       
+        },
+        //============================================magic-castle end 9
+        //============================================locked-in-the-Lift 14
+        "locked-in-the-lift":{
+      
+          "max_players":"4",
+          "min_players":"2",
+         
+        },
+        //============================================locked-in-the-lift end 14
+        
+         //============================================beat-the-seat 17
+         "beat-the-seat":{
+          
+          "max_players":1,
+          "min_players":1,
+          
+        },
+        //============================================beat-the-seat end 17
+                   },
+          //=========================================================syracuse-ny end
+             //=========================================================watertown-ny list
+      "watertown-ny":{
+        //============================================escape-from-alcatraz 1
+      "escape-from-alcatraz":{
+        
+                     "max_players":"8",
+                     "min_players":"2",
+        
+                             },
+      //============================================escape-from-alcatraz end 1
+      //============================================treasure-island 2
+      "treasure-island":{
+       
+                 "max_players":"10",
+                 "min_players":"2",
+      
+                        },
+      //============================================treasure-island end 2
+      //============================================superheros-adventure3
+      "superheros-adventure":{
+      
+        "max_players":"8",
+        "min_players":"2",
+       
+      },
+      //============================================superheros-adventure end3
+      //============================================zombie-apocalypse4
+      "zombie-apocalypse":{
+        "max_players":"10",
+        "min_players":"2",
+        
+      },
+      //============================================zombie-apocalypse end4
+        //============================================special-agent5
+        "special-agent":{
+         
+          "max_players":"8",
+          "min_players":"2",
+          
+          
+        },
+        //============================================special-agent end5
+         //============================================hollywood-premiere 6
+         "hollywood-premiere":{
+          
+          "max_players":"8",
+          "min_players":"2",
+         
+        },
+        //============================================hollywood-premiere 6
+         //============================================sherlocks-library 7
+         "sherlocks-library":{
+  
+          "max_players":"8",
+          "min_players":"2",
+        
+        },
+        //============================================hollywood-premiere 7
+         //============================================houdinis-magic-cell 8
+         "houdinis-magic-cell":{
+         
+          "max_players":"10",
+          "min_players":"2",
+          
+        },
+        //============================================houdinis-magic-cell 8
+        
+        //============================================black-ops 10
+        "black-ops":{
+          
+          "max_players":"8",
+          "min_players":"2",
+         
+                   },
+        //============================================black-ops 10
+       
+        //============================================beat-the-seat end 17
+                   },
+          //=========================================================watertown-ny end
+             //=========================================================west-nyack-ny list
+      "west-nyack-ny":{
+        //============================================escape-from-alcatraz 1
+      "escape-from-alcatraz":{
+        
+                     "max_players":"12",
+                     "min_players":"2",
+        
+                             },
+      //============================================escape-from-alcatraz end 1
+      //============================================treasure-island 2
+      "treasure-island":{
+       
+                 "max_players":"10",
+                 "min_players":"2",
+      
+                        },
+      //============================================treasure-island end 2
+      //============================================superheros-adventure3
+      "superheros-adventure":{
+      
+        "max_players":"12",
+        "min_players":"2",
+       
+      },
+      //============================================superheros-adventure end3
+      //============================================zombie-apocalypse4
+      "zombie-apocalypse":{
+        "max_players":"6",
+        "min_players":"2",
+        
+      },
+      //============================================zombie-apocalypse end4
+        
+         //============================================sherlocks-library 7
+         "sherlocks-library":{
+  
+          "max_players":"6",
+          "min_players":"2",
+        
+        },
+        //============================================hollywood-premiere 7
+         
+        //============================================game-show-room 15
+        "game-show-room":{
+          
+          "max_players":8,
+          "min_players":4,
+         
+            
+        },
+        //============================================game-show-room end 15
+        
+         //============================================beat-the-seat 17
+         "beat-the-seat":{
+          
+          "max_players":1,
+          "min_players":1,
+          
+        },
+        //============================================beat-the-seat end 17
+                   },
+              //=========================================================west-nyack-ny end
+              //=========================================================poughkeepsie-ny list
+      "poughkeepsie-ny":{
+        //============================================escape-from-alcatraz 1
+      "escape-from-alcatraz":{
+        
+                     "max_players":"8",
+                     "min_players":"2",
+        
+                             },
+      //============================================escape-from-alcatraz end 1
+      //============================================treasure-island 2
+      "treasure-island":{
+       
+                 "max_players":"8",
+                 "min_players":"2",
+      
+                        },
+      //============================================treasure-island end 2
+      //============================================superheros-adventure3
+      "superheros-adventure":{
+      
+        "max_players":"8",
+        "min_players":"2",
+       
+      },
+      //============================================superheros-adventure end3
+      //============================================zombie-apocalypse4
+      "zombie-apocalypse":{
+        "max_players":"8",
+        "min_players":"2",
+        
+      },
+      //============================================zombie-apocalypse end4
+      
+         //============================================sherlocks-library 7
+         "sherlocks-library":{
+  
+          "max_players":"8",
+          "min_players":"2",
+        
+        },
+        //============================================hollywood-premiere 7
+         //============================================houdinis-magic-cell 8
+         "houdinis-magic-cell":{
+         
+          "max_players":"8",
+          "min_players":"2",
+          
+        },
+        //============================================houdinis-magic-cell 8
+        
+        //============================================black-ops 10
+        "black-ops":{
+          
+          "max_players":"8",
+          "min_players":"2",
+         
+                   },
+        //============================================black-ops 10
+       
+        //============================================axe-throwing 16
+        "axe-throwing":{
+         
+          "max_players":4,
+          "min_players":2,
+          
+        },
+        //============================================axe-throwing end 16
+        
+                   },
+          //=========================================================poughkeepsie-ny end
+  //********************************************************************************************NY END */
+  //********************************************************************************************NC */
+             //=========================================================west-nyack-ny list
+             "raleigh-nc":{
+              //============================================escape-from-alcatraz 1
+            "escape-from-alcatraz":{
+              
+                           "max_players":"10",
+                           "min_players":"2",
+              
+                                   },
+            //============================================escape-from-alcatraz end 1
+            //============================================treasure-island 2
+            "treasure-island":{
+             
+                       "max_players":"10",
+                       "min_players":"2",
+            
+                              },
+            //============================================treasure-island end 2
+            //============================================superheros-adventure3
+            "superheros-adventure":{
+            
+              "max_players":"10",
+              "min_players":"2",
+             
+            },
+            //============================================superheros-adventure end3
+            //============================================zombie-apocalypse4
+            "zombie-apocalypse":{
+              "max_players":"10",
+              "min_players":"2",
+              
+            },
+            //============================================zombie-apocalypse end4
+             
+               //============================================sherlocks-library 7
+               "sherlocks-library":{
+        
+                "max_players":"10",
+                "min_players":"2",
+              
+              },
+              //============================================hollywood-premiere 7
+               //============================================houdinis-magic-cell 8
+               "houdinis-magic-cell":{
+               
+                "max_players":"8",
+                "min_players":"2",
+                
+              },
+              //============================================houdinis-magic-cell 8
+              
+              //============================================black-ops 10
+              "black-ops":{
+                
+                "max_players":"10",
+                "min_players":"2",
+               
+                         },
+              //============================================black-ops 10
+              
+                         },
+              //=========================================================west-nyack-ny end
+  //********************************************************************************************NC END*/
+  //********************************************************************************************PA */
+              //=========================================================bensalem-palist
+             "bensalem-pa":{
+              //============================================escape-from-alcatraz 1
+            "escape-from-alcatraz":{
+              
+                           "max_players":"10",
+                           "min_players":"2",
+              
+                                   },
+            //============================================escape-from-alcatraz end 1
+            //============================================treasure-island 2
+            "treasure-island":{
+             
+                       "max_players":"6",
+                       "min_players":"2",
+            
+                              },
+            //============================================treasure-island end 2
+            //============================================superheros-adventure3
+            "superheros-adventure":{
+            
+              "max_players":"10",
+              "min_players":"2",
+             
+            },
+            //============================================superheros-adventure end3
+            //============================================zombie-apocalypse4
+            "zombie-apocalypse":{
+              "max_players":"6",
+              "min_players":"2",
+              
+            },
+            //============================================zombie-apocalypse end4
+              //============================================special-agent5
+              "special-agent":{
+               
+                "max_players":"6",
+                "min_players":"2",
+                
+                
+              },
+              //============================================special-agent end5
+               //============================================hollywood-premiere 6
+               "hollywood-premiere":{
+                
+                "max_players":"6",
+                "min_players":"2",
+               
+              },
+              //============================================hollywood-premiere 6
+               //============================================sherlocks-library 7
+               "sherlocks-library":{
+        
+                "max_players":"6",
+                "min_players":"2",
+              
+              },
+              //============================================hollywood-premiere 7
+               //============================================houdinis-magic-cell 8
+               "houdinis-magic-cell":{
+               
+                "max_players":"6",
+                "min_players":"2",
+                
+              },
+              //============================================houdinis-magic-cell 8
+              
+              //============================================black-ops 10
+              "black-ops":{
+                
+                "max_players":"10",
+                "min_players":"2",
+               
+                         },
+              //============================================black-ops 10
+             
+                         },
+              //=========================================================bensalem-pa end
+  //********************************************************************************************PA END */
+  //********************************************************************************************MA */
+              //=========================================================hadley-ma list
+              "hadley-ma":{
+                //============================================escape-from-alcatraz 1
+              "escape-from-alcatraz":{
+                
+                             "max_players":"6",
+                             "min_players":"2",
+                
+                                     },
+              //============================================escape-from-alcatraz end 1
+              //============================================treasure-island 2
+              "treasure-island":{
+               
+                         "max_players":"6",
+                         "min_players":"2",
+              
+                                },
+              //============================================treasure-island end 2
+              //============================================superheros-adventure3
+              "superheros-adventure":{
+              
+                "max_players":"6",
+                "min_players":"2",
+               
+              },
+              //============================================superheros-adventure end3
+              //============================================zombie-apocalypse4
+              "zombie-apocalypse":{
+                "max_players":"8",
+                "min_players":"2",
+                
+              },
+              //============================================zombie-apocalypse end4
+                //============================================special-agent5
+                "special-agent":{
+                 
+                  "max_players":"8",
+                  "min_players":"2",
+                  
+                  
+                },
+                //============================================special-agent end5
+                 //============================================hollywood-premiere 6
+                 "hollywood-premiere":{
+                  
+                  "max_players":"6",
+                  "min_players":"2",
+                 
+                },
+                //============================================hollywood-premiere 6
+                 //============================================sherlocks-library 7
+                 "sherlocks-library":{
+          
+                  "max_players":"8",
+                  "min_players":"2",
+                
+                },
+                //============================================hollywood-premiere 7
+                 //============================================houdinis-magic-cell 8
+                 "houdinis-magic-cell":{
+                 
+                  "max_players":"8",
+                  "min_players":"2",
+                  
+                },
+                //============================================houdinis-magic-cell 8
+                
+                //============================================black-ops 10
+                "black-ops":{
+                  
+                  "max_players":"6",
+                  "min_players":"2",
+                 
+                           },
+                //============================================black-ops 10
+                
+                           },
+                  //=========================================================hadley-ma end
+                  //=========================================================holyoke-ma list
+              "holyoke-ma":{
+                //============================================escape-from-alcatraz 1
+              "escape-from-alcatraz":{
+                
+                             "max_players":"10",
+                             "min_players":"2",
+                
+                                     },
+              //============================================escape-from-alcatraz end 1
+              //============================================treasure-island 2
+              "treasure-island":{
+               
+                         "max_players":"8",
+                         "min_players":"2",
+              
+                                },
+              //============================================treasure-island end 2
+              //============================================superheros-adventure3
+              "superheros-adventure":{
+              
+                "max_players":"10",
+                "min_players":"2",
+               
+              },
+              //============================================superheros-adventure end3
+             
+                 //============================================hollywood-premiere 6
+                 "hollywood-premiere":{
+                  
+                  "max_players":"8",
+                  "min_players":"2",
+                 
+                },
+                //============================================hollywood-premiere 6
+                 //============================================sherlocks-library 7
+                 "sherlocks-library":{
+          
+                  "max_players":"8",
+                  "min_players":"2",
+                
+                },
+                //============================================hollywood-premiere 7
+                 //============================================houdinis-magic-cell 8
+                 "houdinis-magic-cell":{
+                 
+                  "max_players":"8",
+                  "min_players":"2",
+                  
+                },
+                //============================================houdinis-magic-cell 8
+                
+                //============================================black-ops 10
+                "black-ops":{
+                  
+                  "max_players":"8",
+                  "min_players":"2",
+                 
+                           },
+                //============================================black-ops 10
+              
+                           },
+                  //=========================================================holyoke-ma end
+                  //=========================================================kingston-ma list
+              "kingston-ma":{
+                //============================================escape-from-alcatraz 1
+              "escape-from-alcatraz":{
+                
+                             "max_players":"8",
+                             "min_players":"2",
+                
+                                     },
+              //============================================escape-from-alcatraz end 1
+              //============================================treasure-island 2
+              "treasure-island":{
+               
+                         "max_players":"10",
+                         "min_players":"2",
+              
+                                },
+              //============================================treasure-island end 2
+              //============================================superheros-adventure3
+              "superheros-adventure":{
+              
+                "max_players":"10",
+                "min_players":"2",
+               
+              },
+              //============================================superheros-adventure end3
+              //============================================zombie-apocalypse4
+              "zombie-apocalypse":{
+                "max_players":"10",
+                "min_players":"2",
+                
+              },
+              //============================================zombie-apocalypse end4
+                
+                 //============================================hollywood-premiere 6
+                 "hollywood-premiere":{
+                  
+                  "max_players":"8",
+                  "min_players":"2",
+                 
+                },
+                //============================================hollywood-premiere 6
+                 //============================================sherlocks-library 7
+                 "sherlocks-library":{
+          
+                  "max_players":"10",
+                  "min_players":"2",
+                
+                },
+                //============================================hollywood-premiere 7
+                 //============================================houdinis-magic-cell 8
+                 "houdinis-magic-cell":{
+                 
+                  "max_players":"8",
+                  "min_players":"2",
+                  
+                },
+                //============================================houdinis-magic-cell 8
+                
+                //============================================black-ops 10
+                "black-ops":{
+                  
+                  "max_players":"8",
+                  "min_players":"2",
+                 
+                           },
+                //============================================black-ops 10
+                //============================================lost-in-the-jungle 11
+                "lost-in-the-jungle":{
+                 
+                  "max_players":4,
+                  "min_players":2,
+                 
+                },
+                //============================================lost-in-the-jungle end 11
+                
+                 
+                           },
+                  //=========================================================kingston-ma end
+                      //=========================================================n-attleborough-ma list
+              "n-attleborough-ma":{
+                //============================================escape-from-alcatraz 1
+              "escape-from-alcatraz":{
+                
+                             "max_players":"10",
+                             "min_players":"2",
+                
+                                     },
+              //============================================escape-from-alcatraz end 1
+              //============================================treasure-island 2
+              "treasure-island":{
+               
+                         "max_players":"8",
+                         "min_players":"2",
+              
+                                },
+              //============================================treasure-island end 2
+              //============================================superheros-adventure3
+              "superheros-adventure":{
+              
+                "max_players":"10",
+                "min_players":"2",
+               
+              },
+              //============================================superheros-adventure end3
+              //============================================zombie-apocalypse4
+              "zombie-apocalypse":{
+                "max_players":"8",
+                "min_players":"2",
+                
+              },
+              //============================================zombie-apocalypse end4
+                //============================================special-agent5
+                "special-agent":{
+                 
+                  "max_players":"8",
+                  "min_players":"2",
+                  
+                  
+                },
+                //============================================special-agent end5
+                 //============================================hollywood-premiere 6
+                 "hollywood-premiere":{
+                  
+                  "max_players":"8",
+                  "min_players":"2",
+                 
+                },
+                //============================================hollywood-premiere 6
+                 //============================================sherlocks-library 7
+                 "sherlocks-library":{
+          
+                  "max_players":"8",
+                  "min_players":"2",
+                
+                },
+                //============================================hollywood-premiere 7
+                 //============================================houdinis-magic-cell 8
+                 "houdinis-magic-cell":{
+                 
+                  "max_players":"10",
+                  "min_players":"2",
+                  
+                },
+                //============================================houdinis-magic-cell 8
+                
+                //============================================black-ops 10
+                "black-ops":{
+                  
+                  "max_players":"10",
+                  "min_players":"2",
+                 
+                           },
+                //============================================black-ops 10
+                
+                           },
+                  //=========================================================n-attleborough-ma end
+      //********************************************************************************************MA END */
+  
+      //********************************************************************************************CT */
+              //=========================================================milford-ct list
+              "milford-ct":{
+                //============================================escape-from-alcatraz 1
+              "escape-from-alcatraz":{
+                
+                             "max_players":"10",
+                             "min_players":"2",
+                
+                                     },
+              //============================================escape-from-alcatraz end 1
+              //============================================treasure-island 2
+              "treasure-island":{
+               
+                         "max_players":"10",
+                         "min_players":"2",
+              
+                                },
+              //============================================treasure-island end 2
+             
+              //============================================zombie-apocalypse4
+              "zombie-apocalypse":{
+                "max_players":"10",
+                "min_players":"2",
+                
+              },
+              //============================================zombie-apocalypse end4
+               
+                 //============================================hollywood-premiere 6
+                 "hollywood-premiere":{
+                  
+                  "max_players":"6",
+                  "min_players":"2",
+                 
+                },
+                //============================================hollywood-premiere 6
+                 //============================================sherlocks-library 7
+                 "sherlocks-library":{
+          
+                  "max_players":"10",
+                  "min_players":"2",
+                
+                },
+                //============================================hollywood-premiere 7
+                 //============================================houdinis-magic-cell 8
+                 "houdinis-magic-cell":{
+                 
+                  "max_players":"10",
+                  "min_players":"2",
+                  
+                },
+                //============================================houdinis-magic-cell 8
+                
+                //============================================black-ops 10
+                "black-ops":{
+                  
+                  "max_players":"10",
+                  "min_players":"2",
+                 
+                           },
+                //============================================black-ops 10
+               
+                           },
+              //=========================================================milford-ct list end
+              //=========================================================manchester-ct list
+              "manchester-ct":{
+                //============================================escape-from-alcatraz 1
+              "escape-from-alcatraz":{
+                
+                             "max_players":"10",
+                             "min_players":"2",
+                
+                                     },
+              //============================================escape-from-alcatraz end 1
+              //============================================treasure-island 2
+              "treasure-island":{
+               
+                         "max_players":"8",
+                         "min_players":"2",
+              
+                                },
+              //============================================treasure-island end 2
+              //============================================superheros-adventure3
+              "superheros-adventure":{
+              
+                "max_players":"8",
+                "min_players":"2",
+               
+              },
+              //============================================superheros-adventure end3
+              //============================================zombie-apocalypse4
+              "zombie-apocalypse":{
+                "max_players":"8",
+                "min_players":"2",
+                
+              },
+              //============================================zombie-apocalypse end4
+                //============================================special-agent5
+                "special-agent":{
+                 
+                  "max_players":"8",
+                  "min_players":"2",
+                  
+                  
+                },
+                //============================================special-agent end5
+                 //============================================hollywood-premiere 6
+                 "hollywood-premiere":{
+                  
+                  "max_players":"8",
+                  "min_players":"2",
+                 
+                },
+                //============================================hollywood-premiere 6
+                 //============================================sherlocks-library 7
+                 "sherlocks-library":{
+          
+                  "max_players":"8",
+                  "min_players":"2",
+                
+                },
+                //============================================hollywood-premiere 7
+                 //============================================houdinis-magic-cell 8
+                 "houdinis-magic-cell":{
+                 
+                  "max_players":"8",
+                  "min_players":"2",
+                  
+                },
+                //============================================houdinis-magic-cell 8
+                
+                //============================================black-ops 10
+                "black-ops":{
+                  
+                  "max_players":"10",
+                  "min_players":"2",
+                 
+                           },
+                //============================================black-ops 10
+                
+                           },
+              //=========================================================manchester-ct list end
+              //=========================================================manchester-ct list
+              "waterbury-ct":{
+                //============================================escape-from-alcatraz 1
+              "escape-from-alcatraz":{
+                
+                             "max_players":"8",
+                             "min_players":"2",
+                
+                                     },
+              //============================================escape-from-alcatraz end 1
+              //============================================treasure-island 2
+              "treasure-island":{
+               
+                         "max_players":"8",
+                         "min_players":"2",
+              
+                                },
+              //============================================treasure-island end 2
+              //============================================superheros-adventure3
+              "superheros-adventure":{
+              
+                "max_players":"6",
+                "min_players":"2",
+               
+              },
+              //============================================superheros-adventure end3
+              //============================================zombie-apocalypse4
+              "zombie-apocalypse":{
+                "max_players":"8",
+                "min_players":"2",
+                
+              },
+              //============================================zombie-apocalypse end4
+                //============================================special-agent5
+                "special-agent":{
+                 
+                  "max_players":"8",
+                  "min_players":"2",
+                  
+                  
+                },
+                //============================================special-agent end5
+                 //============================================hollywood-premiere 6
+                 "hollywood-premiere":{
+                  
+                  "max_players":"6",
+                  "min_players":"2",
+                 
+                },
+                //============================================hollywood-premiere 6
+                 //============================================sherlocks-library 7
+                 "sherlocks-library":{
+          
+                  "max_players":"6",
+                  "min_players":"2",
+                
+                },
+                //============================================hollywood-premiere 7
+                 //============================================houdinis-magic-cell 8
+                 "houdinis-magic-cell":{
+                 
+                  "max_players":"8",
+                  "min_players":"2",
+                  
+                },
+                //============================================houdinis-magic-cell 8
+                
+                //============================================black-ops 10
+                "black-ops":{
+                  
+                  "max_players":"8",
+                  "min_players":"2",
+                 
+                           },
+                //============================================black-ops 10
+                
+                           },
+              //=========================================================manchester-ct list end
+      //********************************************************************************************CT END*/
+        //********************************************************************************************MD */
+              //=========================================================bowie-md list
+              "bowie-md":{
+                //============================================escape-from-alcatraz 1
+              "escape-from-alcatraz":{
+                
+                             "max_players":"8",
+                             "min_players":"2",
+                
+                                     },
+              //============================================escape-from-alcatraz end 1
+              //============================================treasure-island 2
+              "treasure-island":{
+               
+                         "max_players":"8",
+                         "min_players":"2",
+              
+                                },
+              //============================================treasure-island end 2
+              //============================================superheros-adventure3
+              "superheros-adventure":{
+              
+                "max_players":"8",
+                "min_players":"2",
+               
+              },
+              //============================================superheros-adventure end3
+              //============================================zombie-apocalypse4
+              "zombie-apocalypse":{
+                "max_players":"8",
+                "min_players":"2",
+                
+              },
+              //============================================zombie-apocalypse end4
+                //============================================special-agent5
+                "special-agent":{
+                 
+                  "max_players":"8",
+                  "min_players":"2",
+                  
+                  
+                },
+                //============================================special-agent end5
+                 
+                 //============================================sherlocks-library 7
+                 "sherlocks-library":{
+          
+                  "max_players":"8",
+                  "min_players":"2",
+                
+                },
+                //============================================hollywood-premiere 7
+                 //============================================houdinis-magic-cell 8
+                 "houdinis-magic-cell":{
+                 
+                  "max_players":"8",
+                  "min_players":"2",
+                  
+                },
+                //============================================houdinis-magic-cell 8
+                
+                //============================================black-ops 10
+                "black-ops":{
+                  
+                  "max_players":"8",
+                  "min_players":"2",
+                 
+                           },
+                //============================================black-ops 10
+               
+                           },
+              //=========================================================bowie-md end
+              //=========================================================white-marsh-md list
+              "white-marsh-md":{
+                //============================================escape-from-alcatraz 1
+              "escape-from-alcatraz":{
+                
+                             "max_players":"8",
+                             "min_players":"2",
+                
+                                     },
+              //============================================escape-from-alcatraz end 1
+              //============================================treasure-island 2
+              "treasure-island":{
+               
+                         "max_players":"8",
+                         "min_players":"2",
+              
+                                },
+              //============================================treasure-island end 2
+              //============================================superheros-adventure3
+              "superheros-adventure":{
+              
+                "max_players":"8",
+                "min_players":"2",
+               
+              },
+              //============================================superheros-adventure end3
+              //============================================zombie-apocalypse4
+              "zombie-apocalypse":{
+                "max_players":"8",
+                "min_players":"2",
+                
+              },
+              //============================================zombie-apocalypse end4
+                //============================================special-agent5
+                "special-agent":{
+                 
+                  "max_players":"8",
+                  "min_players":"2",
+                  
+                  
+                },
+                //============================================special-agent end5
+                 //============================================hollywood-premiere 6
+                 "hollywood-premiere":{
+                  
+                  "max_players":"8",
+                  "min_players":"2",
+                 
+                },
+                //============================================hollywood-premiere 6
+                 //============================================sherlocks-library 7
+                 "sherlocks-library":{
+          
+                  "max_players":"8",
+                  "min_players":"2",
+                
+                },
+                //============================================hollywood-premiere 7
+                 //============================================houdinis-magic-cell 8
+                 "houdinis-magic-cell":{
+                 
+                  "max_players":"8",
+                  "min_players":"2",
+                  
+                },
+                //============================================houdinis-magic-cell 8
+                
+                //============================================black-ops 10
+                "black-ops":{
+                  
+                  "max_players":"8",
+                  "min_players":"2",
+                 
+                           },
+                //============================================black-ops 10
+               
+                           },
+              //=========================================================white-marsh-md end
+      //********************************************************************************************MD END*/
+       //********************************************************************************************NJ */
+              //=========================================================east-brunswick-nj list
+              "east-brunswick-nj":{
+                //============================================escape-from-alcatraz 1
+              "escape-from-alcatraz":{
+                
+                             "max_players":"6",
+                             "min_players":"2",
+                
+                                     },
+              //============================================escape-from-alcatraz end 1
+              //============================================treasure-island 2
+              "treasure-island":{
+               
+                         "max_players":"6",
+                         "min_players":"2",
+              
+                                },
+              //============================================treasure-island end 2
+              //============================================superheros-adventure3
+              "superheros-adventure":{
+              
+                "max_players":"6",
+                "min_players":"2",
+               
+              },
+              //============================================superheros-adventure end3
+              
+                 //============================================hollywood-premiere 6
+                 "hollywood-premiere":{
+                  
+                  "max_players":"6",
+                  "min_players":"2",
+                 
+                },
+                //============================================hollywood-premiere 6
+                 //============================================sherlocks-library 7
+                 "sherlocks-library":{
+          
+                  "max_players":"6",
+                  "min_players":"2",
+                
+                },
+                //============================================hollywood-premiere 7
+                 //============================================houdinis-magic-cell 8
+                 "houdinis-magic-cell":{
+                 
+                  "max_players":"6",
+                  "min_players":"2",
+                  
+                },
+                //============================================houdinis-magic-cell 8
+                
+                //============================================black-ops 10
+                "black-ops":{
+                  
+                  "max_players":"6",
+                  "min_players":"2",
+                 
+                           },
+                //============================================black-ops 10
+               
+                           },
+              //=========================================================east-brunswick-nj end
+              //=========================================================rockaway-nj list
+              "rockaway-nj":{
+                //============================================escape-from-alcatraz 1
+              "escape-from-alcatraz":{
+                
+                             "max_players":"12",
+                             "min_players":"2",
+                
+                                     },
+              //============================================escape-from-alcatraz end 1
+              //============================================treasure-island 2
+              "treasure-island":{
+               
+                         "max_players":"8",
+                         "min_players":"2",
+              
+                                },
+              //============================================treasure-island end 2
+              //============================================superheros-adventure3
+              "superheros-adventure":{
+              
+                "max_players":"8",
+                "min_players":"2",
+               
+              },
+              //============================================superheros-adventure end3
+              //============================================zombie-apocalypse4
+              "zombie-apocalypse":{
+                "max_players":"8",
+                "min_players":"2",
+                
+              },
+              //============================================zombie-apocalypse end4
+               
+                 //============================================hollywood-premiere 6
+                 "hollywood-premiere":{
+                  
+                  "max_players":"4",
+                  "min_players":"2",
+                 
+                },
+                //============================================hollywood-premiere 6
+                 //============================================sherlocks-library 7
+                 "sherlocks-library":{
+          
+                  "max_players":"8",
+                  "min_players":"2",
+                
+                },
+                //============================================hollywood-premiere 7
+                 //============================================houdinis-magic-cell 8
+                 "houdinis-magic-cell":{
+                 
+                  "max_players":"8",
+                  "min_players":"2",
+                  
+                },
+                //============================================houdinis-magic-cell 8
+                
+                //============================================black-ops 10
+                "black-ops":{
+                  
+                  "max_players":"8",
+                  "min_players":"2",
+                 
+                           },
+                //============================================black-ops 10
+                
+                //============================================game-show-room 15
+                "game-show-room":{
+                  
+                  "max_players":8,
+                  "min_players":4,
+                 
+                    
+                },
+                //============================================game-show-room end 15
+                
+                           },
+              //=========================================================rockaway-nj end
+              //=========================================================woodbridge-nj list
+              "woodbridge-nj":{
+                //============================================escape-from-alcatraz 1
+              "escape-from-alcatraz":{
+                
+                             "max_players":"8",
+                             "min_players":"2",
+                
+                                     },
+              //============================================escape-from-alcatraz end 1
+              //============================================treasure-island 2
+              "treasure-island":{
+               
+                         "max_players":"12",
+                         "min_players":"2",
+              
+                                },
+              //============================================treasure-island end 2
+              //============================================superheros-adventure3
+              "superheros-adventure":{
+              
+                "max_players":"10",
+                "min_players":"2",
+               
+              },
+              //============================================superheros-adventure end3
+              //============================================zombie-apocalypse4
+              "zombie-apocalypse":{
+                "max_players":"6",
+                "min_players":"2",
+                
+              },
+              //============================================zombie-apocalypse end4
+                //============================================special-agent5
+                "special-agent":{
+                 
+                  "max_players":"6",
+                  "min_players":"2",
+                  
+                  
+                },
+                //============================================special-agent end5
+                 //============================================hollywood-premiere 6
+                 "hollywood-premiere":{
+                  
+                  "max_players":"8",
+                  "min_players":"2",
+                 
+                },
+                //============================================hollywood-premiere 6
+                 //============================================sherlocks-library 7
+                 "sherlocks-library":{
+          
+                  "max_players":"10",
+                  "min_players":"2",
+                
+                },
+                //============================================hollywood-premiere 7
+                 //============================================houdinis-magic-cell 8
+                 "houdinis-magic-cell":{
+                 
+                  "max_players":"8",
+                  "min_players":"2",
+                  
+                },
+                //============================================houdinis-magic-cell 8
+                
+                //============================================black-ops 10
+                "black-ops":{
+                  
+                  "max_players":"10",
+                  "min_players":"2",
+                 
+                           },
+                //============================================black-ops 10
+               
+                           },
+              //=========================================================woodbridge-nj end
+      //********************************************************************************************NJ END*/
+      //********************************************************************************************TX */
+          //=========================================================austin-tx list
+          /*"austin-tx":{
+              "mall":"crossgate mall",
+              "coverimageL":"/assets/location-hero-bg.jpg",
+              "coverimageM":"/assets/location-hero.jpg",
+              
+              "activity_list":[
+  
+                  {
+                      "id":1,
+                      "activity_name":"Escape from Alcatraz",
+                      "activity_type":"In-person",
+                      "activity_category":"escapegame",
+                      "age":"All Ages (6+)",
+                      "min_player":"2",
+                      "max_player":"10",
+                      "price":"29.89",
+                      "duration":"50",
+                      "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+                      "activity_slug":"escape-from-alcatraz",
+                      "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+                      
+                      
+                  },
+                  {
+                      "id":2,
+                      "activity_name":"Treasure Island",
+                      "activity_type":"In-person",
+                      "activity_category":"escapegame",
+                      "age":"All Ages (6+)",
+                      "min_player":"2",
+                      "max_player":"10",
+                      "price":"29.89",
+                      "duration":"50",
+                      "activity_desc":"You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
+                      "activity_slug":"treasure-island",
+                      "activity_cover_image":"/assets/all-game-list/allinadventures-treasure-island.jpg",
+                      
+                  },
+                  {
+                      "id":3,
+                      "activity_name":"Zombie Apocalypse",
+                      "activity_type":"In-person",
+                      "activity_category":"escapegame",
+                      "age":"All Ages (6+)",
+                      "min_player":"2",
+                      "max_player":"10",
+                      "price":"29.89",
+                      "duration":"50",
+                      "activity_desc":"The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
+                      "activity_slug":"zombie-apocalypse",
+                      "activity_cover_image":"/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+                      
+                  },
+                  {
+                      "id":4,
+                      "activity_name":"Sherlock's Library",
+                      "activity_type":"In-person",
+                      "activity_category":"escapegame",
+                      "age":"All Ages (6+)",
+                      "min_player":"2",
+                      "max_player":"10",
+                      "price":"29.89",
+                      "duration":"50",
+                      "activity_desc":"London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+                      "activity_slug":"sherlocks-library",
+                      "activity_cover_image":"/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+                     
+                  },
+                  {
+                      "id":5,
+                      "activity_name":"Black Ops",
+                      "activity_type":"In-person",
+                      "activity_category":"escapegame",
+                      "age":"All Ages (6+)",
+                      "min_player":"2",
+                      "max_player":"10",
+                      "price":"29.89",
+                      "duration":"50",
+                      "activity_desc":"After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+                      "activity_slug":"black-ops",
+                      "activity_cover_image":"/assets/all-game-list/allinadventures-black-ops.jpg",
+                      
+                  },
+                  {
+                      "id":6,
+                      "activity_name":"Superhero's Adventure",
+                      "activity_type":"In-person",
+                      "activity_category":"escapegame",
+                      "age":"All Ages (6+)",
+                      "min_player":"2",
+                      "max_player":"10",
+                      "price":"29.89",
+                      "duration":"50",
+                      "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+                      "activity_slug":"superheros-adventure",
+                      "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+                      
+                  },
+                  {
+                      "id":7,
+                      "activity_name":"HOUDINI'S MAGIC CELL",
+                      "activity_type":"In-person",
+                      "activity_category":"escapegame",
+                      "age":"All Ages (6+)",
+                      "min_player":"2",
+                      "max_player":"10",
+                      "price":"29.89",
+                      "duration":"50",
+                      "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+                      "activity_slug":"houdinis-magic-cell",
+                      "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+                      
+                  },
+                  
+                  {
+                      "id":8,
+                      "activity_name":"Special Agent",
+                      "activity_type":"In-person",
+                      "activity_category":"escapegame",
+                      "age":"All Ages (6+)",
+                      "min_player":"2",
+                      "max_player":"10",
+                      "price":"29.89",
+                      "duration":"50",
+                      "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+                      "activity_slug":"special-agent",
+                      "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
+                      
+                  },
+                  {
+                      "id":9,
+                      "activity_name":"HOLLYWOOD PREMIERE",
+                      "activity_type":"In-person",
+                      "activity_category":"escapegame",
+                      "age":"All Ages (6+)",
+                      "min_player":"2",
+                      "max_player":"10",
+                      "price":"29.89",
+                      "duration":"50",
+                      "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+                      "activity_slug":"hollywood-premiere",
+                      "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+                     
+                  },
+                ]
+          }, */
+          //=========================================================austin-tx end
+  //********************************************************************************************TX END*/
+  //********************************************************************************************OH */
+          //=========================================================columbus-oh list
+          "columbus-oh":{
+            //============================================escape-from-alcatraz 1
+          "escape-from-alcatraz":{
+            
+                         "max_players":"10",
+                         "min_players":"2",
+            
+                                 },
+          //============================================escape-from-alcatraz end 1
+          //============================================treasure-island 2
+          "treasure-island":{
+           
+                     "max_players":"10",
+                     "min_players":"2",
+          
+                            },
+          //============================================treasure-island end 2
+          
+           
+             //============================================sherlocks-library 7
+             "sherlocks-library":{
+      
+              "max_players":"8",
+              "min_players":"2",
+            
+            },
+            //============================================hollywood-premiere 7
+             //============================================houdinis-magic-cell 8
+             "houdinis-magic-cell":{
+             
+              "max_players":"6",
+              "min_players":"2",
+              
+            },
+            //============================================houdinis-magic-cell 8
+            
+            //============================================black-ops 10
+            "black-ops":{
+              
+              "max_players":"8",
+              "min_players":"2",
+             
+                       },
+            //============================================black-ops 10
+           
+                       },
+          //=========================================================columbus-oh end
+          //=========================================================mentor-oh list
+          "mentor-oh":{
+            //============================================escape-from-alcatraz 1
+          "escape-from-alcatraz":{
+            
+                         "max_players":"8",
+                         "min_players":"2",
+            
+                                 },
+          //============================================escape-from-alcatraz end 1
+          //============================================treasure-island 2
+          "treasure-island":{
+           
+                     "max_players":"8",
+                     "min_players":"2",
+          
+                            },
+          //============================================treasure-island end 2
+      
+             //============================================hollywood-premiere 6
+             "hollywood-premiere":{
+              
+              "max_players":"8",
+              "min_players":"2",
+             
+            },
+            //============================================hollywood-premiere 6
+             //============================================sherlocks-library 7
+             "sherlocks-library":{
+      
+              "max_players":"8",
+              "min_players":"2",
+            
+            },
+            //============================================hollywood-premiere 7
+             //============================================houdinis-magic-cell 8
+             "houdinis-magic-cell":{
+             
+              "max_players":"8",
+              "min_players":"2",
+              
+            },
+            //============================================houdinis-magic-cell 8
+            
+            //============================================black-ops 10
+            "black-ops":{
+              
+              "max_players":"8",
+              "min_players":"2",
+             
+                       },
+            //============================================black-ops 10
+           
+                       },
+          //=========================================================mentor-oh end
+          //=========================================================dayton-oh  list
+          "dayton-oh":{
+            //============================================escape-from-alcatraz 1
+          "escape-from-alcatraz":{
+            
+                         "max_players":"10",
+                         "min_players":"2",
+            
+                                 },
+          //============================================escape-from-alcatraz end 1
+          //============================================treasure-island 2
+          "treasure-island":{
+           
+                     "max_players":"10",
+                     "min_players":"2",
+          
+                            },
+          //============================================treasure-island end 2
+          //============================================superheros-adventure3
+          "superheros-adventure":{
+          
+            "max_players":"10",
+            "min_players":"2",
+           
+          },
+          //============================================superheros-adventure end3
+          //============================================zombie-apocalypse4
+          "zombie-apocalypse":{
+            "max_players":"10",
+            "min_players":"2",
+            
+          },
+          //============================================zombie-apocalypse end4
+            //============================================special-agent5
+            "special-agent":{
+             
+              "max_players":"10",
+              "min_players":"2",
+              
+              
+            },
+            //============================================special-agent end5
+           
+             //============================================sherlocks-library 7
+             "sherlocks-library":{
+      
+              "max_players":"10",
+              "min_players":"2",
+            
+            },
+            //============================================hollywood-premiere 7
+             //============================================houdinis-magic-cell 8
+             "houdinis-magic-cell":{
+             
+              "max_players":"10",
+              "min_players":"2",
+              
+            },
+            //============================================houdinis-magic-cell 8
+            
+            //============================================black-ops 10
+            "black-ops":{
+              
+              "max_players":"10",
+              "min_players":"2",
+             
+                       },
+            //============================================black-ops 10
+           
+                       },
+          //=========================================================dayton-oh end
+  //********************************************************************************************OH END*/
+  //********************************************************************************************VA */
+          //=========================================================roanoke-va list
+          "roanoke-va":{
+            //============================================escape-from-alcatraz 1
+          "escape-from-alcatraz":{
+                          "id":1,
+                         "max_players":"10",
+                         "min_players":"2",
+            
+                                 },
+          //============================================escape-from-alcatraz end 1
+          //============================================treasure-island 2
+          "treasure-island":{
+                      "id":2,
+                     "max_players":"10",
+                     "min_players":"2",
+          
+                            },
+          //============================================treasure-island end 2
+          //============================================superheros-adventure3
+          "superheros-adventure":{
+            "id":3,
+            "max_players":"10",
+            "min_players":"2",
+           
+          },
+          //============================================superheros-adventure end3
+          //============================================zombie-apocalypse4
+          "zombie-apocalypse":{
+            "id":4,
+            "max_players":"10",
+            "min_players":"2",
+            
+          },
+          //============================================zombie-apocalypse end4
+            //============================================special-agent5
+            "special-agent":{
+              "id":5,
+              "max_players":"10",
+              "min_players":"2",
+              
+              
+            },
+            //============================================special-agent end5
+             //============================================hollywood-premiere 6
+             "hollywood-premiere":{
+              "id":6,
+              "max_players":"6",
+              "min_players":"2",
+             
+            },
+            //============================================hollywood-premiere 6
+             //============================================sherlocks-library 7
+             "sherlocks-library":{
+              "id":7,
+              "max_players":"10",
+              "min_players":"2",
+            
+            },
+            //============================================hollywood-premiere 7
+             //============================================houdinis-magic-cell 8
+             "houdinis-magic-cell":{
+              "id":8,
+              "max_players":"10",
+              "min_players":"2",
+              
+            },
+            //============================================houdinis-magic-cell 8
+            
+            //============================================black-ops 10
+            "black-ops":{
+              "id":9,
+              "max_players":"10",
+              "min_players":"2",
+             
+                       },
+            //============================================black-ops 10
+           
+                       },
+          //=========================================================roanoke-va end
+  //********************************************************************************************VA END*/
+  //********************************************************************************************GA */
+          //=========================================================lawrenceville-ga list
+          "lawrenceville-ga":{
+            
+          //============================================treasure-island 2
+          "treasure-island":{
+                      "id":2,
+                     "max_players":"10",
+                     "min_players":"2",
+          
+                            },
+          //============================================treasure-island end 2
+          //============================================superheros-adventure3
+          "superheros-adventure":{
+            "id":3,
+            "max_players":"10",
+            "min_players":"2",
+           
+          },
+          //============================================superheros-adventure end3
+          //============================================zombie-apocalypse4
+          "zombie-apocalypse":{
+            "id":4,
+            "max_players":"8",
+            "min_players":"2",
+            
+          },
+          //============================================zombie-apocalypse end4
+            //============================================special-agent5
+            "special-agent":{
+              "id":5,
+              "max_players":"8",
+              "min_players":"2",
+              
+              
+            },
+            //============================================special-agent end5
+            
+             //============================================sherlocks-library 7
+             "sherlocks-library":{
+              "id":7,
+              "max_players":"6",
+              "min_players":"2",
+            
+            },
+            //============================================hollywood-premiere 7
+             //============================================houdinis-magic-cell 8
+             "houdinis-magic-cell":{
+              "id":8,
+              "max_players":"8",
+              "min_players":"2",
+              
+            },
+            //============================================houdinis-magic-cell 8
+            
+            //============================================black-ops 10
+            "black-ops":{
+              "id":9,
+              "max_players":"6",
+              "min_players":"2",
+             
+                       },
+            //============================================black-ops 10
+            "beat-the-seat":{
+              "id":2,
+             "max_players":"1",
+             "min_players":"1",
+  
+                    },
+           
+                       },
+          //=========================================================lawrenceville-ga end
+  //********************************************************************************************GA END*/
+  
+  }
