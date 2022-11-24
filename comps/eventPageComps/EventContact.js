@@ -1,19 +1,10 @@
 import React, { useState,useEffect,useRef } from "react"
 import {FiMapPin,FiChevronDown,FiClock,FiX } from "react-icons/fi"
 import TitleSeparator from "../util/TitleSeparator"
+import Script from "next/script"
 const EventContact=(props)=>{
         const[showHour,setShwoHour]=useState(false)
-        const [locationSelect, setLocationSelect]=useState('0')
-        const [eventSelect, setEventSelect]=useState('0')
-        const [nameErr,setNameErr]=useState(false)
-        const [lnameErr,setLnameErr]=useState(false)
-        const [emailErr,setEmailErr]=useState(false)
-        const [phoneErr,setPhoneErr]=useState(false)
-        const [guestErr,setGuestErr]=useState(false)
-        const [timeErr,setTimeErr]=useState(false)
-        const [eventErr,setEventErr]=useState(false)
-        const [dateErr,setDateErr]=useState(false)
-        const [locationErr,setLocationErr]=useState(false)
+       
         const ref=useRef()
             useEffect(() => {
                   const checkIfClickedOutside = e => {
@@ -60,40 +51,26 @@ const EventContact=(props)=>{
         var add=address+', '+city+', '+st+' '+zip
         return add
       }
-      const locState=(slug)=>{
-        var scity=slug.split('-')
-        var st=scity[scity.length-1].toString().toUpperCase()
-        return st
-      }
+    
      
-      const getLocationOptions=(locationlist)=>{
-            var i=0
-            var j=0
-            var id=1
-           var locarr=[]
-            for(i=0;i<locationlist.length;i++){
-               
-                    for(j=0;j<locationlist[i].cities.length;j++){
-                        locarr.push({"id":id,
-                        "city":locationlist[i].cities[j].city+", "+locState(locationlist[i].cities[j].slug),
-                        "email":locationlist[i].cities[j].email,
-                        "slug":locationlist[i].cities[j].slug
-                        })
-                        id++
-                    }        
-              
-            }
-            console.log(locarr)
-           return locarr
-      }
-      const locationHandleChange=(e)=>{
-       
-        setLocationSelect(e.target.value);
-      }
-      const eventHandleChange=(e)=>{
+      const changeStyle=()=>{
         
-        setEventSelect(e.target.value);
+        
+        var formContainer=document.querySelector("iframe").contentWindow
+        //var formContainer=document.querySelector(".pipedriveWebForms")
+          // var elmnt = formContainer.contentWindow.document.querySelector("head");
+          const style = document.createElement('style');
+
+           style.textContent = `.gDhlQr{max-width: 100%;background:red;}`;
+         var h= formContainer.document.getElementsByTagName("body")[0]
+         //h.style.maxWidth="100%"
+         console.log(h)
+         
+            
+     
       }
+
+    
         return (
             <div  id="eventform" className="event-contact py-16 md:py-20 lg:py-28 relative overflow-hidden" style={{
 
@@ -158,7 +135,7 @@ const EventContact=(props)=>{
                                                 {
                                                     props.contactdata &&
                                                     <div className="event-info-list flex text-[#F4E6C3]  items-center space-x-4 py-3 px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
-                                                           <span className="text-[#A78849] text-[24px]"><FiMapPin/></span> <a target="_blank" href={getDirection(props.contactdata.address,props.contactdata.slug,props.contactdata.zip,props.contactdata.city)} className="text-[#F4E6C3] hover:text-blue-700"><span class="text-blue-600 font-medium">Direction: </span>{getAddress(props.contactdata.address,props.contactdata.slug,props.contactdata.zip,props.contactdata.city)}</a>
+                                                           <span className="text-[#A78849] text-[24px]"><FiMapPin/></span> <a target="_blank" href={getDirection(props.contactdata.address,props.contactdata.slug,props.contactdata.zip,props.contactdata.city)} className="text-[#F4E6C3] hover:text-blue-700"><span className="text-blue-600 font-medium">Direction: </span>{getAddress(props.contactdata.address,props.contactdata.slug,props.contactdata.zip,props.contactdata.city)}</a>
                                                     </div>
                                                 }
                                                 {
@@ -248,156 +225,17 @@ const EventContact=(props)=>{
                                 </div>
                                 
                                 <div id="eventform-form" className="order-1 md:order-2 contact-form-box w-full md:w-[58%] lg:w-[54%]">
-                                    <div className="contact-form-bg bg-[#F4E6C3] px-4 py-8 md:p-6 lg:p-8 md:rounded">
-                {/*==========================================================contact form to book event======================= */}
-                                        <form > 
-                                         {/*======================================contact form row====================== */}
-                                                <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between ">
-                                                    <div className="form-col w-full md:w-[48%]">
-                                                        <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your first name? *</p>
-                                                        <input type="text" className="w-full event-input  border-0 md:py-3 px-4 bg-white" style={{border: nameErr? "1px solid red":'none'}} placeholder="Your first name" required></input>
-                                                        {   nameErr &&
-                                                                 <p className="text-red-600 mt-1 text-sm md:text-md">Only letter and space allowed</p>
-                                                        }
-                                                       
-                                                    </div>
-                                                    <div className="form-col w-full md:w-[48%]">
-                                                        <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your last name? *</p>
-                                                        <input type="text" className=" w-full event-input  border-0 md:py-3 px-4 bg-white" style={{border: lnameErr? "1px solid red":'none'}} placeholder="Your last name" required></input>
-                                                        {   lnameErr &&
-                                                                 <p className="text-red-600 mt-1 text-sm md:text-md">Only letter and space allowed</p>
-                                                        }
-                                                    </div>
-                                                </div>
-                                         {/*======================================contact form row====================== */}
-                                         {/*======================================contact form row====================== */}
-                                                <div className="form-row flex flex-col space-y-3 md:flex-row md:space-y-0 justify-between my-3 md:my-4 ">
-                                                    <div className="form-col w-full md:w-[48%]">
-                                                        <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your email? *</p>
-                                                        <input type="email" className="w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Your email address" required></input>
-                                                        {   emailErr &&
-                                                                 <p className="text-red-600 mt-1 text-sm md:text-md">Invalid email adress</p>
-                                                        }
-                                                    </div>
-                                                    <div className="form-col  w-full md:w-[48%]">
-                                                        <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your phone number? *</p>
-                                                        <input type="text" className=" w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Your phone number" required></input>
-                                                        {   phoneErr &&
-                                                                 <p className="text-red-600 mt-1 text-sm md:text-md">Invalid phone number</p>
-                                                        }
-                                                    </div>
-                                                </div>
-                                                {/*======================================contact form row====================== */}
-                                               {/*======================================contact form row select event====================== */}
-                                               <div className="form-row flex  flex-col space-y-3 md:flex-row  md:space-y-0 justify-between my-3 md:my-4 ">
-                                                    <div className="form-col w-full md:w-[48%]">
-                                                        <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Select your event type: *</p>
-                                                        <select type="text" className="w-full event-input  text-gray-500 border-0 md:py-3 px-4 bg-white" onChange={eventHandleChange} value={props.eventslug? props.eventslug:'0'} required>
-                                                            <option  value='0'>Choose event</option>
-                                                            
-                                                            {
-                                                                props.eventlist.map((event)=>{
-                                                                    return(
-                                                                        <option key={event.id} value={event.event_slug}>{event.event_name}</option>
-                                                                    )
-                                                                    
-                                                                })
-                                                            }
-                                                        </select>
-                                                        {   eventErr &&
-                                                                 <p className="text-red-600 mt-1 text-sm md:text-md">Invalid phone number</p>
-                                                        }
-                                                        
-                                                    </div>
-                                                    <div className="form-col w-full md:w-[48%]">
-                                                        <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Number of your guests: *</p>
-                                                        <input type="text"  className=" w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Enter number of your guests" required></input>
-                                                        {   guestErr &&
-                                                                 <p className="text-red-600 mt-1 text-sm md:text-md">iInvalid</p>
-                                                        }
-                                                    </div>
-                                                </div>
-                                                {/*======================================contact form row select event====================== */}
-                                                {/*======================================contact form row date event====================== */}
-                                                <div className="form-row flex justify-between my-4 ">
-                                                    <div className="form-col w-[48%]">
-                                                        <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Preferred date:</p>
-                                                        <input type="date"  className=" w-full event-input text-gray-500  border-0 md:py-3 px-4 bg-white" placeholder="Enter number of your guests" required></input>
-                                                        {   dateErr &&
-                                                                 <p className="text-red-600 mt-1 text-sm md:text-md">Please enter a date</p>
-                                                        }
-                                                    </div>
-                                                    <div className="form-col w-[48%]">
-                                                        <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Preferred time:</p>
-                                                        <select type="text" className="w-full event-input text-gray-500  border-0 md:py-3 px-4 bg-white" required>
-                                                            <option value="0">Preferred time</option>
-                                                            <option value="Morning">Morning</option>
-                                                            <option value=">After Noon">Afternoon</option>
-                                                            <option value="Evening">Evening</option>
-                                                        </select>
-                                                        {   timeErr &&
-                                                                 <p className="text-red-600 mt-1 text-sm md:text-md">Please choose time</p>
-                                                        }
-                                                    </div>
-                                                </div>
-                                                {/*======================================contact form row date event====================== */}
-                                                {/*======================================contact form row location event====================== */}
-                                                <div className="form-row flex justify-between my-4 ">
-                                                   
-                                                    <div className="form-col w-full">
-                                                        <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Choose your location: *</p>
-                                                        <select onChange={locationHandleChange} type="text" className="w-full event-input text-gray-500  border-0 md:py-3 px-4 bg-white" value={props.contactdata? props.contactdata.slug:"0"} placeholder="Your email" required>
-                                                          
-                                                             <option key='0' value="0">Select your location</option>
-                                                             
-                                                             {
-                                                             getLocationOptions(props.locationlist).map((item)=>{
-                                                                var sl=false
-                                                                if(item.slug=='albany-ny'){
-                                                                        sl=true
-                                                                }
-                                                                
-
-                                                                    return (
-                                                                       
-                                                                       
-                                                                        <option className="text-gray-700" key={item.id} value={item.slug}>{item.city}</option>
-                                                                       
-                
-                                                                       
-                                                                    )
-                                                             })}
-                                                           
-                                                           
-                                                        </select>
-                                                        {   locationErr &&
-                                                                 <p className="text-red-600 mt-1 text-sm md:text-md">Please select your location</p>
-                                                        }
-                                                    </div>
-                                                </div>
-                                                {/*======================================contact form row location event====================== */}
-                                                {/*======================================contact form row message event====================== */}
-                                                <div className="form-row flex justify-between my-4 ">
-                                                   
-                                                    <div className="form-col w-full">
-                                                        <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your message? </p>
-                                                      
-                                                        <textarea className="w-full h-[80px] md:h-[100px] event-input text-gray-500  border-0 md:py-3 px-4 bg-white" placeholder="Write your message here"> 
-
-                                                        </textarea>
-                                                    </div>
-                                                </div>
-                                                {/*======================================contact form row message event====================== */}
-                                                <div className="form-row flex justify-center  my-4 ">
-                                                   
-                                                 
-                                                       <button type="submit" className="text-white font-medium text-lg py-3 px-12 bg-red-600 hover:bg-red-700 rounded-full">BOOK PARTY NOW</button>
-                                                   
-                                               </div>
-                                                {/*======================================contact form row message event====================== */}
-                                        </form>
-                  {/*==========================================================contact form to book event end======================= */}
-                                    </div>
+                                <div className="contact-form-bg bg-[#F4E6C3] px-4 py-8 md:p-6 lg:p-8 md:rounded w-full">
+                                <div   className="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/2Z8oYdTLMSxVLHnPNqdaCK2ahvhHMkNFoFfebqWt5VSs9ZbiVTSqmH2oMGze3j57l">
+                                    <Script onLoad={()=>{changeStyle()}}
+                                            src="https://webforms.pipedrive.com/f/loader"
+                                            strategy="afterInteractive"
+                                            >
+                                            
+                                    </Script>
+                                  
+                                  </div>
+                                  </div>
                                 </div>
                         </div>
 
