@@ -54,7 +54,7 @@ const showAllevents=(props)=>{
           <GameHomeHero pagedata={props.pagedata}/>
           <EventList events={props.events}/>
           <EventContact locationlist={props.locationlist} eventlist={props.eventlist}/>
-          <WebForm/>
+       
 
   {
       console.log(props)
