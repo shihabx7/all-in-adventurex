@@ -38,7 +38,7 @@ const MoblieBook=(props)=>{
              {
           
           props.bookinggame &&
-          <button onClick={()=>bookGame(props.bookinggame)} className='w-full bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white'>BOOK THIS GAME</button>
+          <button onClick={()=>bookGame(props.bookinggame)} className='w-full bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white'>{props.bookinggame.type=="gift"? "BUY GIFT CARDS":"BOOK THIS GAME"}</button>
 
          }
                   

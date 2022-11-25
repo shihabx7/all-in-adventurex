@@ -116,7 +116,7 @@ const VirtualGameList=(props)=>{
                                        </p>
                                          </div>
                                          <div className="card-game-link mt-4 text-left">
-                                             <a target={"_blank"} href={vgame.bookinglink} className="text-center border-2 w-[240px] card-book-btn block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</a>
+                                             <a target={"_blank"} href={vgame.bookinglink} className="text-center border-2 w-[240px]  block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</a>
                                            
                                                                                         
                                               <a href={"/virtual-games/"+vgame.game_slug} className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>

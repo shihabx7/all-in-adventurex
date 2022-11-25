@@ -72,11 +72,11 @@ const BuyLocGift=(props)=>{
                                 <div className="gift-btn-box mt-8">
                                     { 
                                         props.bookingdata &&
-                                        <button onClick={()=>openBooking(props.bookingdata)} className="bg-red-600  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">BUY GIFT CARD</button>
+                                        <button onClick={()=>openBooking(props.bookingdata)} className="bg-red-600  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">BUY GIFT CARDS</button>
                                     }
                                     { 
                                        !props.bookingdata &&
-                                        <button onClick={()=>showLocation()} className=" bg-red-600 hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">BUY GIFT CARD</button>
+                                        <button onClick={()=>showLocation()} className=" bg-red-600 hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">BUY GIFT CARDS</button>
                                     }
                                     {
                                         props.locationslug &&

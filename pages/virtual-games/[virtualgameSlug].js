@@ -35,9 +35,24 @@ const showSingleVitualGame=(props)=>{
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
-           <Homenav locationlist={props.locationlist}
+
+          {
+            props.vgamedata.booking &&
+            <Homenav locationlist={props.locationlist}
             activitylist={props.activitylist}
-            eventlist={props.eventlist}/>
+            eventlist={props.eventlist}
+            vgamebooking={props.vgamedata.booking}
+            />
+            
+          }
+          {
+            props.vgamedata.bookinglink &&
+            <Homenav locationlist={props.locationlist}
+            activitylist={props.activitylist}
+            eventlist={props.eventlist}
+            vgamebookinglink={props.vgamedata.bookinglink}/>
+          }
+          
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}

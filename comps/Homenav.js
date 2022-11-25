@@ -129,10 +129,16 @@ const Homenav=(props)=>{
                               <HeaderBtnRed bookingall={props.bookingall} btntext='BOOK GAMES'/>
                             }  
                             {props.bookinggame &&
-                              <HeaderBtnRed bookinggame={props.bookinggame} btntext='BOOK THIS GAME'/>
+                              <HeaderBtnRed bookinggame={props.bookinggame} btntext={props.bookinggame.type=="gift"? "BUY GIFT CARDS":'BOOK THIS GAME'}/>
+                            } 
+                            {props.vgamebooking &&
+                              <HeaderBtnRed vgamebooking={props.vgamebooking} btntext='BOOK THIS GAME'/>
+                            } 
+                            {props.vgamebookinglink &&
+                              <HeaderBtnRed vgamebookinglink={props.vgamebookinglink} btntext='BOOK THIS GAME'/>
                             } 
                             {
-                              (!props.bookingall && !props.bookinggame) &&
+                              (!props.bookingall && !props.bookinggame && !props.vgamebooking && !props.vgamebookinglink) &&
                               <HeaderBtnRed  btntext='BOOK GAMES' />
                             }
                          </div>

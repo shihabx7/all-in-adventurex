@@ -12,6 +12,7 @@ export const bookingList=(activityslug,locationslug)=>{
         "shortname":blist[locationslug].shortname,
         "item":blist[locationslug][activityslug].item,
         "flow":blist[locationslug][activityslug].flow,
+        "type":blist[locationslug][activityslug].type? blist[locationslug][activityslug].type:"games",
     }
    
     return bookingdata
@@ -61,7 +62,7 @@ const blist={
             "flow":"17838"
         },
         
-        "gift-card":{
+        "gift-card":{ "type":"gift",
             "item":"360203",
             "flow":"no"
         },
@@ -121,7 +122,7 @@ const blist={
             "flow":"17840"
         },
        
-        "gift-card":{
+        "gift-card":{ "type":"gift",
             "item":"360206",
             "flow":"no"
         },
@@ -193,7 +194,7 @@ const blist={
                     "flow":"17844"
                 },
                 
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360208",
                     "flow":"no"
                 },
@@ -267,7 +268,7 @@ const blist={
                     "item":"333635",
                     "flow":"17847"
                 },
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360211",
                     "flow":"no"
                 },
@@ -327,7 +328,7 @@ const blist={
                     "flow":"17848"
                 },
                
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360212",
                     "flow":"no"
                 },
@@ -381,7 +382,7 @@ const blist={
                     "flow":"17839"
                 },
                 
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360213",
                     "flow":"no"
                 },
@@ -472,7 +473,7 @@ const blist={
                     "item":"44198",
                     "flow":"17839"
                 },
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360204",
                     "flow":"no"
                 },
@@ -530,7 +531,7 @@ const blist={
                     "flow":"16807"
                 },
                 
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360258",
                     "flow":"no"
                 },
@@ -593,7 +594,7 @@ const blist={
                     "flow":"19822"
                 },
                
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360247",
                     "flow":"no"
                 },
@@ -656,7 +657,7 @@ const blist={
                     "flow":"15424"
                 },
                 
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360214",
                     "flow":"no"
                 },
@@ -708,7 +709,7 @@ const blist={
                     "flow":"15419"
                 },
                 
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360215",
                     "flow":"no"
                 },
@@ -769,7 +770,7 @@ const blist={
                     "flow":"17841"
                 },
                 
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360207",
                     "flow":"no"
                 },
@@ -829,7 +830,7 @@ const blist={
                     "flow":"17846"
                 },
                 
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360205",
                     "flow":"no"
                 },
@@ -921,7 +922,7 @@ const blist={
                     "item":"44198",
                     "flow":"17839"
                 },
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360204",
                     "flow":"no"
                 },
@@ -979,7 +980,7 @@ const blist={
                     "flow":"2018"
                 },
                 
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360209",
                     "flow":"no"
                 },
@@ -1038,7 +1039,7 @@ const blist={
                     "item":"54560",
                     "flow":"1750"
                 },
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360244",
                     "flow":"no"
                 },
@@ -1097,7 +1098,7 @@ const blist={
                     "flow":"751"
                 },
                
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360245",
                     "flow":"no"
                 },
@@ -1159,7 +1160,7 @@ const blist={
                     "flow":"16814"
                 },
                
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360249",
                     "flow":"no"
                 },
@@ -1221,7 +1222,7 @@ const blist={
                     "flow":"17098"
                 },
                 
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360210",
                     "flow":"no"
                 },
@@ -1275,7 +1276,7 @@ const blist={
                     "flow":"29545"
                 },
                 
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360251",
                     "flow":"no"
                 },
@@ -1337,7 +1338,7 @@ const blist={
                     "flow":"29227"
                 },
                 
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360250",
                     "flow":"no"
                 },
@@ -1397,7 +1398,7 @@ const blist={
                     "flow":"14683"
                 },
                 
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360217",
                     "flow":"no"
                 },
@@ -1458,7 +1459,7 @@ const blist={
                     "flow":"5835"
                 },
                
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360257",
                     "flow":"no"
                 },
@@ -1521,7 +1522,7 @@ const blist={
                 },
                 
                 
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"357804",
                     "flow":"no"
                 },
@@ -1571,7 +1572,7 @@ const blist={
                     "flow":"16809"
                 },
                
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360253",
                     "flow":"no"
                 },
@@ -1628,7 +1629,7 @@ const blist={
                     "flow":"16802"
                 },
                 
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360254",
                     "flow":"no"
                 },
@@ -1685,7 +1686,7 @@ const blist={
                     "flow":"7366"
                 },
                
-                "gift-card":{
+                "gift-card":{ "type":"gift",
                     "item":"360255",
                     "flow":"no"
                 },
