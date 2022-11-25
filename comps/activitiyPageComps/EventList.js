@@ -41,10 +41,10 @@ const EventList=(props)=>{
                                          <div className="card-game-link mt-4 text-left">
                                             
                                                 <button onClick={showLocation} className="border-2 w-[240px] card-book-btn block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</button>
-                                                <Link href={"/events/"+event.event_slug}> 
+                                               
                                                                                         
-                                                <a className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
-                                                </Link>
+                                                <a href={"/events/"+event.event_slug} className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
+                                                
                                             
                                              
                                             
@@ -54,15 +54,15 @@ const EventList=(props)=>{
                                         props.locationslug &&
                                          <div className="card-game-link mt-4 text-left">
                                             
-                                                <Link href={"/"+props.locationslug+"/events/"+event.event_slug+"#eventform"}> 
+                                               
                                                                                         
-                                                     <a className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-red-600 py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</a>
-                                                 </Link>
+                                                     <a href={"/"+props.locationslug+"/events/"+event.event_slug+"#eventform"} className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-red-600 py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</a>
+                                                 
                                                                                     
-                                                <Link href={"/"+props.locationslug+"/events/"+event.event_slug}> 
+                                              
                                                                                         
-                                                <a className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
-                                                </Link>
+                                                <a href={"/"+props.locationslug+"/events/"+event.event_slug} className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
+                                               
                                             
                                              
                                             

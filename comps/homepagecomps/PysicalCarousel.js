@@ -133,14 +133,14 @@ const PysicalCarousel=(props)=>{
                       }
                         
                        {props.locationslug && 
-                         <Link href={"/"+props.locationslug+"/activities/"+othergame.slug}> 
-                            <a className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</a>
-                       </Link>
+                         
+                            <a href={"/"+props.locationslug+"/activities/"+othergame.slug} className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</a>
+                       
                        }
                        { !props.locationslug && 
-                         <Link href={"/activities/"+othergame.slug}> 
-                            <a className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</a>
-                       </Link>
+                      
+                            <a href={"/activities/"+othergame.slug} className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</a>
+                     
                        }
                         
                     </div>

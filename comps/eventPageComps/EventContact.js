@@ -58,13 +58,13 @@ const EventContact=(props)=>{
         
         var formContainer=document.querySelector("iframe").contentWindow
         //var formContainer=document.querySelector(".pipedriveWebForms")
-          // var elmnt = formContainer.contentWindow.document.querySelector("head");
+           var elmnt = document.querySelector(".pipedriveWebForms");
           const style = document.createElement('style');
 
-           style.textContent = `.gDhlQr{max-width: 100%;background:red;}`;
-         var h= formContainer.document.getElementsByTagName("body")[0]
-         //h.style.maxWidth="100%"
-         console.log(h)
+           style.textContent = `.gDhlQr{max-width: 30% !important;background:red;}`;
+         //var h= formContainer.document.getElementsByClassName(".gDhlQr")[0]
+         elmnt.appendChild(style)
+       //  console.log(h)
          
             
      
@@ -226,15 +226,19 @@ const EventContact=(props)=>{
                                 
                                 <div id="eventform-form" className="order-1 md:order-2 contact-form-box w-full md:w-[58%] lg:w-[54%]">
                                 <div className="contact-form-bg bg-[#F4E6C3] px-4 py-8 md:p-6 lg:p-8 md:rounded w-full">
-                                <div   className="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/2Z8oYdTLMSxVLHnPNqdaCK2ahvhHMkNFoFfebqWt5VSs9ZbiVTSqmH2oMGze3j57l">
+                                
+                                    
+                                <div className="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/2Z8p4ZqukDQoxgiqFVoNKFZfVoGoClX7qWK065Gmf005eEwiLpSddFegYnUHnvLJV">
                                     <Script onLoad={()=>{changeStyle()}}
                                             src="https://webforms.pipedrive.com/f/loader"
                                             strategy="afterInteractive"
                                             >
                                             
                                     </Script>
+                                        
+                                </div>
                                   
-                                  </div>
+                                  
                                   </div>
                                 </div>
                         </div>

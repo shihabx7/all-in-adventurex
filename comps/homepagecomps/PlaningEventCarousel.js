@@ -105,10 +105,10 @@ const PlaningEventCarousel=(props)=>{
                       {
                             props.locationslug &&
 
-                            <Link href={"/"+props.locationslug+"/events/"+event.slug+"#eventform"}>
-                            <a className="border max-w-[200px] card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW
+                           
+                            <a  href={"/"+props.locationslug+"/events/"+event.slug+"#eventform"} className="border max-w-[200px] card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW
                             </a>
-                          </Link>
+                         
                           }
                           {
                             !props.locationslug &&
@@ -119,17 +119,17 @@ const PlaningEventCarousel=(props)=>{
                           {
                             props.locationslug &&
 
-                            <Link href={"/"+props.locationslug+"/events/"+event.slug}>
-                            <a className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE
+                            
+                            <a href={"/"+props.locationslug+"/events/"+event.slug} className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE
                             </a>
-                          </Link>
+                        
                           }
                           {
-                            ! props.locationslug &&
-                          <Link href={"/events/"+event.slug}>
-                            <a className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE
+                            !props.locationslug &&
+                         
+                            <a  href={"/events/"+event.slug} className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE
                             </a>
-                          </Link>
+                          
                           }
                           
                       </div>

@@ -131,9 +131,7 @@ const Homenav=(props)=>{
                             {(props.bookingall && props.publish_status==false ) &&
                               <HeaderBtnRed  btntext={'COMING SOON'}/>
                             } 
-                            {(props.bookingall && (props.publish_status==true || props.publish_status==undefined)) &&
-                              <HeaderBtnRed bookingall={props.bookingall} btntext='BOOK GAMES'/>
-                            } 
+                            
                             {(props.bookinggame && (props.publish_status==true || props.publish_status==undefined)) &&
                               <HeaderBtnRed bookinggame={props.bookinggame} btntext={props.bookinggame.type=="gift"? "BUY GIFT CARDS":'BOOK THIS GAME'}/>
                             } 
