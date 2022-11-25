@@ -125,12 +125,21 @@ const Homenav=(props)=>{
                             
                          </div>
                          <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
-                            {props.bookingall &&
+                            {(props.bookingall && (props.publish_status==true || props.publish_status==undefined)) &&
                               <HeaderBtnRed bookingall={props.bookingall} btntext='BOOK GAMES'/>
-                            }  
-                            {props.bookinggame &&
+                            } 
+                            {(props.bookingall && props.publish_status==false ) &&
+                              <HeaderBtnRed  btntext={'COMING SOON'}/>
+                            } 
+                            {(props.bookingall && (props.publish_status==true || props.publish_status==undefined)) &&
+                              <HeaderBtnRed bookingall={props.bookingall} btntext='BOOK GAMES'/>
+                            } 
+                            {(props.bookinggame && (props.publish_status==true || props.publish_status==undefined)) &&
                               <HeaderBtnRed bookinggame={props.bookinggame} btntext={props.bookinggame.type=="gift"? "BUY GIFT CARDS":'BOOK THIS GAME'}/>
                             } 
+                            {(props.bookinggame && props.publish_status==false ) &&
+                              <HeaderBtnRed  btntext={'COMING SOON'}/>
+                            }
                             {props.vgamebooking &&
                               <HeaderBtnRed vgamebooking={props.vgamebooking} btntext='BOOK THIS GAME'/>
                             } 
@@ -198,14 +207,14 @@ const Homenav=(props)=>{
             {
               (props.locationslug && props.bookingall) &&
 
-               <MoblieBook locationslug={props.locationslug} bookingall={props.bookingall}/>
+               <MoblieBook locationslug={props.locationslug} bookingall={props.bookingall} publish_status={props.publish_status}/>
 
 
             }
             {
               (props.locationslug && props.bookinggame) &&
 
-               <MoblieBook locationslug={props.locationslug} bookinggame={props.bookinggame}/>
+               <MoblieBook locationslug={props.locationslug} bookinggame={props.bookinggame} publish_status={props.publish_status}/>
 
 
             }

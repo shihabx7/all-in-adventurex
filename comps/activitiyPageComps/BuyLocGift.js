@@ -71,12 +71,12 @@ const BuyLocGift=(props)=>{
                                 
                                 <div className="gift-btn-box mt-8">
                                     { 
-                                        props.bookingdata &&
+                                       ( props.bookingdata && (props.publish_status==true || props.publish_status==undefined)) &&
                                         <button onClick={()=>openBooking(props.bookingdata)} className="bg-red-600  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">BUY GIFT CARDS</button>
                                     }
                                     { 
-                                       !props.bookingdata &&
-                                        <button onClick={()=>showLocation()} className=" bg-red-600 hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">BUY GIFT CARDS</button>
+                                       props.publish_status==false &&
+                                        <button  className=" bg-red-600 hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">COMING SOON</button>
                                     }
                                     {
                                         props.locationslug &&

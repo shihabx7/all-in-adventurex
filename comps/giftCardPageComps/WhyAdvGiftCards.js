@@ -58,25 +58,28 @@ const WhyAdvGiftCards=(props)=>{
                  <div className="why-gift-link mt-12 ">
 
                  {
-                            props.bookingdata &&
+                         ( props.bookingdata && (props.publish_status==true || props.publish_status==undefined)) &&
                             <button onClick={()=>bookGame(props.bookingdata)} className="block w-[290px] lg:max-w-sm mx-auto py-3 px-12 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BUY GIFT CARDS</button>
                         }
-                             
+                           {
+                          ( props.bookingdata && props.publish_status==false) &&
+                            <button className="block w-[290px] lg:max-w-sm mx-auto py-3 px-12 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">COOMING SOON</button>
+                        }   
                         {
                             !props.bookingdata &&
                             <button onClick={()=>showLocation()} className="block w-[290px] lg:max-w-sm mx-auto py-3 px-16 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BUY GIFT CARDS</button>
                         }
                         {
                             props.locationslug &&
-                                    <Link href={"/"+props.locationslug+"/activities"} hpassHref>
-                                        <a className="ln block mx-auto bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 w-[290px] lg:max-w-sm text-center text-gray-800 hover:text-gray-100 rounded-full font-medium">VIEW ALL GAMES</a>
-                                    </Link>
+                                    
+                                        <a href={"/"+props.locationslug+"/activities"} className="ln block mx-auto bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 w-[290px] lg:max-w-sm text-center text-gray-800 hover:text-gray-100 rounded-full font-medium">VIEW ALL GAMES</a>
+                                    
                         }
                         {
                             !props.locationslug &&
-                                 <Link href="/activities" hpassHref>
-                                    <a className="block mx-auto bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 w-[290px] lg:max-w-sm text-center text-gray-800 hover:text-gray-100 rounded-full font-medium">VIEW ALL GAMES</a>
-                             </Link>
+                               
+                                    <a href="/activities" className="block mx-auto bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 w-[290px] lg:max-w-sm text-center text-gray-800 hover:text-gray-100 rounded-full font-medium">VIEW ALL GAMES</a>
+                            
                         }
                                     
                 </div>

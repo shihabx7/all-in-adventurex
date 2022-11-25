@@ -31,14 +31,26 @@ const MoblieBook=(props)=>{
                
            {
              
-             props.bookingall &&
+             (props.bookingall && (props.publish_status==undefined || props.publish_status==true)) &&
              <button onClick={()=>bookAll(props.bookingall)} className='w-full bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white'>BOOK GAMES</button>
 
             }
              {
+             
+             (props.bookingall && props.publish_status==false) &&
+             <button className='w-full bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white'>COMING SOON</button>
+
+            }
+             {
           
-          props.bookinggame &&
+          (props.bookinggame && (props.publish_status==undefined || props.publish_status==true)) &&
           <button onClick={()=>bookGame(props.bookinggame)} className='w-full bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white'>{props.bookinggame.type=="gift"? "BUY GIFT CARDS":"BOOK THIS GAME"}</button>
+
+         }
+         {
+          
+          (props.bookinggame && props.publish_status==false) &&
+          <button className='w-full bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white'>{props.bookinggame.type=="gift"? "BUY GIFT CARDS":"BOOK THIS GAME"}</button>
 
          }
                   

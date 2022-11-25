@@ -33,6 +33,7 @@ const viewLocGift=(props)=>{
                           activitylist={props.activitylist}
                           eventlist={props.eventlist}
                           locationlist={props.locationlist}
+                          publish_status={props.pagedata.publish_status}
                           />
                  <div id="mainContent" className='main-content'>
  
@@ -52,8 +53,8 @@ const viewLocGift=(props)=>{
                          <GameLocHero pagedata={props.pagedata}/>
                          */}
                          <GameLocGiftHero pagedata={props.pagedata}/>
-                         <BuyLocGift locationslug={props.pagedata.locationslug} bookingdata={props.pagedata.bookingdata}/>
-                         <WhyAdvGiftCards locationslug={props.pagedata.locationslug} bookingdata={props.pagedata.bookingdata}/>
+                         <BuyLocGift locationslug={props.pagedata.locationslug} publish_status={props.pagedata.publish_status} bookingdata={props.pagedata.bookingdata}/>
+                         <WhyAdvGiftCards locationslug={props.pagedata.locationslug} publish_status={props.pagedata.publish_status} bookingdata={props.pagedata.bookingdata}/>
                          <GiftFaq faqlist={props.faqlist}/>
                             
                            
