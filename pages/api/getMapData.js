@@ -35,7 +35,8 @@ export const getMapData =()=>{
             mall:locData[i].cities[j].mall,
             phone:locData[i].cities[j].phone,
             email:locData[i].cities[j].email,
-            b_hours:locData[i].cities[j].hours
+            b_hours:locData[i].cities[j].hours,
+            slug:locData[i].cities[j].slug
           }
          
           

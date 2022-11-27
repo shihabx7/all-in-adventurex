@@ -57,6 +57,47 @@ html,body,a{
 .pipedriveWebForms iframe .gDhlQr{
   max-width: 100% !important;
 }
+.nocopy{
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*================== star rating==============*/
+.stars-outer {
+  display: inline-block;
+  position: relative;
+  
+  white-space: nowrap;
+  line-height: 1;
+}
+
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+ 
+  line-height: 1;
+  
+}
+.stars-outer::before {
+  content: "\2605 \2605 \2605 \2605 \2605";
+  color: #7b7b7b;
+  font-size: 28px;
+  line-height: 1;
+  
+}
+.stars-inner::before {
+  content: "\2605 \2605 \2605 \2605 \2605";
+  font-size: 28px;
+  color: #FFC203;
+  line-height: 1;
+}
+
 /*================= modal sesign=============*/
 
 .mhide{ 
@@ -391,13 +432,13 @@ max-width:140px;
 
 .game-slider-card{
  
-  box-shadow:1px 1px 8px 2px rgba(216, 174, 84,0.38);
+  box-shadow:1px 1px 8px 2px rgba(216, 174, 84,0.28);
   cursor: pointer;
 }
 .game-slider-card:hover{
   
-  border:1px solid rgba(219, 181, 91,.9);
-  box-shadow:1px 1px 8px 2px rgba(0, 0, 0,0.38);
+  box-shadow:1px 1px 6px 2px rgba(216, 174, 84,0.82);
+  
 }
 .card-head{
   background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7),rgba(0,0,0,0.1));
@@ -494,12 +535,12 @@ max-width:140px;
   max-width: 200px;
 }
 .event-card{
-  box-shadow: 1px 1px 16px rgba(207, 157, 73,0.9);
-  border: none;
+  box-shadow: 1px 1px 10px #464646;
+  border:1px solid #464646
 }
 .event-card:hover{
-  box-shadow: 1px 1px 16px rgba(0,0,0,0.2);
-  border: 1px solid red;
+  box-shadow: 1px 1px 20px #E0BF62; ;
+  border:1px solid #CA9342 
 
 }
 .event-card .card-game-desc {

@@ -1,9 +1,15 @@
 import { getALlActivityList } from "./getAllActivityList"
 import { getAllEventList } from "./getAllEventList"
 import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
+import getYextData from "./YextApi/getYextLocationData";
 
 
- export const getLocationsPageData =  () => {
+
+ export const getLocationsPageData=()=> {
+  
+  
+   
+  
 
     const data=
        {
@@ -1522,7 +1528,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                             "phone":"+1 540-920-2253",
                             "b_uid":"80da445abe054678b64f5c03def262f0",
                             "coverimg":'/assets/mapcard/allinadventures-escape-room-roanoke-va-valley-view-mall-hero.jpg',
-                            "mall":"Rockaway Townsquare",
+                            "mall":"Valley View Mall",
                             "alt":'allinadventures-escape-room-roanoke-va-valley-view-mall-hero',
                             "email":"Store129@Allinadventures.com",
                             "position": { lat: 37.30926890765125, lng: -79.96414296359808},
@@ -1860,14 +1866,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                      //========================================== 10 OHIO end
                   
 
-                ]
-
-                             
+                ],
+               
         }
-      
-    
-
-      
 
       return data
 

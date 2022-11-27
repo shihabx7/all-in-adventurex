@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaAngleRight,FaMapMarkerAlt,FaPhoneAlt,FaEnvelope, FaAngleDown } from "react-icons/fa"
 import { FiChevronDown,FiX } from "react-icons/fi";
+import StarRating from "../util/StarRating";
 
 const LocationListView=({city,state})=>{
     
@@ -48,7 +49,7 @@ const LocationListView=({city,state})=>{
                 <div className="loaction-business-hour mt-1 relative"> 
                     <div className="location-review-ind flex items-center space-x-2 lg:text-lg">
                         <span className="text-[#7b7b7b] font-medium">{city.avg_rev}</span>
-                        <span><img src="/assets/reviews/fivestar.svg"></img></span>
+                        <span><StarRating rating={city.avg_rev}/></span>
                         <span className="text-[#7b7b7b] font-medium">({city.fivestar})</span>
                     </div>
                     <div className="location-hour-ind flex items-center space-x-2 lg:text-lg ">

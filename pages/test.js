@@ -3,18 +3,14 @@ import Homenav from "../comps/Homenav";
 import Footer from "../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
-import Link from "next/link";
-import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
-// page data
-import { getAboutUs } from "./api/getAboutUs"
-import About from "../comps/aboutPageComps/About";
-import CoreValue from "../comps/aboutPageComps/CoreValue";
-import MeetOurTeam from "../comps/aboutPageComps/MeetOurTeam";
-import Partner from "../comps/aboutPageComps/Partner";
-import HappyTeam from "../comps/aboutPageComps/HappyTeam";
-const AboutUs=(props)=>{
+// page template=============
+import LocationStoreMenu from "../comps/headerComps/LocationStoreMenu";
+import GameHomeHero  from "../comps/activitiyPageComps/GameHomeHero";
+import getStructuredYextData from "./api/YextApi/getStructuredYextData";
 
-    console.log(props.pagedata.app)
+
+const Test=(props)=>{
+    /* customizing breadcum */
     const toTitleCase=(title)=>{
         const titlefres=title.replace(/-/g,' ')
         const btitle=titlefres.split(' ').map((word)=>{return (word.charAt(0).toUpperCase() + word.slice(1))}).join(" ") // breadcum title capitalize
@@ -29,19 +25,25 @@ const AboutUs=(props)=>{
   
       return(
           <>
+          {
+            console.log(props.states)
+          }
               {/* =======header content======== */}
            <Head>
-                 <title>All in adventure | About</title>
+                 <title>All in adventure | Volunteering</title>
                   <meta name="description" content="All in adventure escape games" />
         
           </Head>
-           <Homenav locationlist={props.locationlist}
+          
+           <Homenav 
+           locationlist={props.states}
            activitylist={props.activitylist}
-           eventlist={props.eventlist}/>
+           eventlist={props.eventlist}
+           />
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}
-    <div id="mainContent" className='main-content nobtn-main-content bg-center' style={{backgroundImage : "url('/assets/game-dt-bg.jpg')", }}>
+    <div id="mainContent" className='main-content nobtn-main-content bg-center relative' >
            {/* =======breadcum content and breadcum========  */}
            <div className='breadcums  py-1 md:py-2 bg-[#fffceb]'>
              <Breadcrumbs  replaceCharacterList={[{ from: '-', to: ' ' }]} 
@@ -53,40 +55,43 @@ const AboutUs=(props)=>{
               </Breadcrumbs>
         </div>
          {/* =======breadcum content and breadcum root page template======== end */}
-         <GameHomeHero gametotal="not" pagedata={props.pagedata}/>
-         <About/>
-         <CoreValue/>
-         <MeetOurTeam team_members={props.team_members}/>
-         <Partner/>
-         <HappyTeam/>
+         
 
-{/* =========================================================================================main content ======== end */}
-</div>
+        <div id="volunteeringdloc" className="rewardloc z-[10000] fixed w-screen h-screen top-0 left-0 overflow-scroll hidden">
+            <LocationStoreMenu locationlist={props.locationlist}/>
+
+        </div>
+        <GameHomeHero pagedata={props.pagedata}/>
+      
+        <div className="test-cont bg-[#FFFCEB] text-[#232323] py-20 px-4 text-center">
+
+                <h1 className="font-os text-3xl font-bold"> Check entities</h1>
+                <p>{props.pagedata.totalLocations}</p>
+        </div>
+
+  {/* =========================================================================================main content ======== end */}
+        </div>
   
-  <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
-  </>
-      )
-
-
+          <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
+          </>
+    )
 }
 
-export default AboutUs
+export default Test
 
 export const getStaticProps=async()=>{
-    const aboutPageData=await getAboutUs()
-    //const getdata = await fetch(`https://api.yext.com/v2/accounts/me/entities?api_key=7bd809cf968d3f58da77e54e3e116925&v=20221126&limit=5`);
-    //const data = await getdata.json();
-    
+
+    const LocationData=await getStructuredYextData()
 
     return{
         props:{
-           // app:data,
-            pagedata:aboutPageData.pagedata,
-            pagemeta:aboutPageData.pagemeta,
-            locationlist:aboutPageData.locationlist,
-            activitylist:aboutPageData.activitylistSlug,
-            eventlist:aboutPageData.eventlistSlug,
-            team_members:aboutPageData.team_members
+            pagedata:LocationData.pagedata,
+            pagemeta:LocationData.pagemeta,
+            locationlist:LocationData.locationlist,
+            activitylist:LocationData.activitylistSlug,
+            eventlist:LocationData.eventlistSlug,
+            states:LocationData.states
+            
         },
         revalidate:30
     }

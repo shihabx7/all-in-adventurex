@@ -83,10 +83,10 @@ const PlaningEventCarousel=(props)=>{
         props.events.map((event)=>{
 
           return(
-            <div key={event.id} className="text-white bg-gray-300 game-slider-card card-border event-card bg-cover" style={{
+            <div key={event.id} className="text-white bg-gray-300 game-slider-card card-border event-card bg-cover" >
+              <div className="card-container" style={{
               background:"url('"+event.bgimg+"')"
             }}>
-              <div className="card-container">
                   <div className="card-head plan-title flex justify-center pt-8 pb-8 px-4">
                       <div className="card-info text-center ">
                         <h3 className="text-center text-2xl lg:text-3xl font-bold uppercase text-white">{event.title}</h3>

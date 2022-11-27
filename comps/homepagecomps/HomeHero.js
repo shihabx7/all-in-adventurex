@@ -16,7 +16,7 @@ const HomeHero=(props)=>{
                  <p className=' md:mt-4 lg:mt-6 xl:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center'>CHOOSE FROM {props.pagedata.totalLocations} U.S. LOCATIONS</p> 
                  <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os outline-tile'>ESCAPE ROOMS AND ADVENTURE ACTIVITIES
                     </h1>
-                 <p className='text-gray-100 max-w-2xl mx-auto text-center lg:text-lg'>{props.pagedata.subtitle}</p>
+                 <p className='text-gray-100 max-w-2xl mx-auto text-center lg:text-lg nocopy'>{props.pagedata.subtitle}</p>
                  </div>
                 <div className="max-w-md mx-auto mt-8 pb-8 ">
 

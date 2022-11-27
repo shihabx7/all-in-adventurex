@@ -5,6 +5,7 @@ import { FaAngleDown,FaMapMarkerAlt,FaPhoneAlt,FaEnvelope,FaGlobe } from "react-
 import { FiChevronDown,FiX } from "react-icons/fi"
 
 import { getMapStyleLoc } from "../../pages/api/getMapStyleLoc";
+import StarRating from "../util/StarRating";
 
 const LocationMap=(props)=>{
     const centerLat=props.position.lat+.04
@@ -32,15 +33,7 @@ const LocationMap=(props)=>{
         //console.log(directionUrl)
         return directionUrl
     }
-    const getStoreUrl=(city,stateCode)=>{
-
-        const urlSlug=city+'-'+stateCode
-        urlSlug=urlSlug.toLocaleLowerCase()
-        console.log(urlSlug)
-        return urlSlug
-        
-    
-      }
+  
 
     const mapStyle= getMapStyleLoc()
     return(
@@ -78,9 +71,9 @@ const LocationMap=(props)=>{
                                 {/* =============================card info================================*/}
                                 <div className="map-card max-w-[320px] md:max-w-[320px] bg-[rgba(255,249,236,.4)]">
                                             <div className="map-card-img  bg-[#FFF9EC]">
-                                              <Link href={'/locations/'+props.locdetail.slug}>
-                                                <a className="block cursor-pointer"><img className="w-full" src={props.locdetail.coverimg} alt={props.locdetail.alt}></img></a>
-                                              </Link>
+                                              
+                                                <a href={'/locations/'+props.locdetail.slug} className="block cursor-pointer"><img className="w-full" src={props.locdetail.coverimg} alt={props.locdetail.alt}></img></a>
+                                            
 
                                             </div>
                                             <div className="map-card-bus py-2  text-left px-2">
@@ -89,7 +82,7 @@ const LocationMap=(props)=>{
                                                 </h2>
                                                <div className="flex items-center space-x-2">
                                                     <span className="text-[#7b7b7b] text-[16px] font-medium">{props.locdetail.avg_rev}</span>
-                                                    <span className="rev-star"><img src="/assets/svg/map-star.svg"></img></span>
+                                                    <span><StarRating rating={props.locdetail.avg_rev}/></span>
                                                     <span className="rev-count text-[#7b7b7b] text-[14px] font-medium">({
                                                         props.locdetail.total_rev
                                                     })</span>

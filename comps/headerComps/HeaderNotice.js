@@ -6,7 +6,11 @@ const HeaderNotice=()=>{
 
     const [showNotice,setShownotice]=useState(false)
     const closeNotice=()=>{
-        setCookie('header-notice', true);
+        setCookie('header-notice', true,{
+            path: "/",
+            maxAge: 3600, // Expires after 1hr
+            sameSite: true,
+            });
         setShownotice(false)
       
     }

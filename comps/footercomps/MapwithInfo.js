@@ -6,6 +6,7 @@ import { FaAngleDown,FaMapMarkerAlt,FaPhoneAlt,FaEnvelope,FaGlobe } from "react-
 import { getMapStyle } from "../../pages/api/getMapStyle";
 import { getMapData } from "../../pages/api/getMapData";
 import { FiChevronDown,FiX } from "react-icons/fi"
+import StarRating from "../util/StarRating";
 
 
 
@@ -26,7 +27,7 @@ const [shwoHour,setShwoHour]=useState(null)
         || document.documentElement.clientWidth
         || document.body.clientWidth;
 
-console.log(w)
+//console.log(w)
         if(w<640){
           setMapZoom(4.6)
           setMapCenter({lat:39,lng:-78}) 
@@ -54,24 +55,9 @@ const getdirectionUrl =(address,city,state,zip)=>{
     return directionUrl
 }
 
-  const handleOnLoad = (map) => {
-    const bounds = new google.maps.LatLngBounds();
-    LocationMarkers.forEach(({ position }) => bounds.extend(position));
-    map.fitBounds(bounds);
-  };
-
   const closeInfo=()=>{
     setActiveMarker(null)
     setShwoHour(null)
-  }
-  const getStoreUrl=(city,stateCode)=>{
-
-    const urlSlug=city+'-'+stateCode
-    urlSlug=urlSlug.toLocaleLowerCase()
-    console.log(urlSlug)
-    return urlSlug
-    
-
   }
  
   return (
@@ -93,7 +79,7 @@ const getdirectionUrl =(address,city,state,zip)=>{
           position={position}
           icon={{
             url:"/assets/svg/adventure-marker.svg",
-            scale:1
+            scale:.9
           }}
           onClick={() => handleActiveMarker(id,position)}
           title={info.city+' '+info.state}
@@ -110,7 +96,7 @@ const getdirectionUrl =(address,city,state,zip)=>{
               <div className="map-card max-w-[320px] md:max-w-[320px] bg-[rgba(255,249,236,.4)]">
                     <div className="map-card-img  bg-[#FFF9EC]">
                      
-                        <a href={'/locations/'+getStoreUrl(info.city,info.state)} className="block cursor-pointer"><img className="w-full" src={info.coverimg} alt={info.alt}></img></a>
+                        <a href={'/locations/'+info.slug} className="block cursor-pointer"><img className="w-full" src={info.coverimg} alt={info.alt}></img></a>
                   
                         
                     </div>
@@ -118,10 +104,12 @@ const getdirectionUrl =(address,city,state,zip)=>{
                         <h2 className="map-card-name text-gold golden-text text-[18px] font-semibold">
                             <span className="uppercase">{name}</span> at <span>{info.mall}</span> in <span className="capitalize">{info.city}, </span> <span className="uppercase">{info.state}</span>
                         </h2>
-                       <div className="flex items-center space-x-2">
+                       <div className="flex items-center pt-1 space-x-2">
                             <span className="text-[#7b7b7b] text-[16px] font-medium">{info.avg_rev}</span>
-                            <span className="rev-star"><img src="/assets/svg/map-star.svg"></img></span>
-                            <span className="rev-count text-[#7b7b7b] text-[14px] font-medium">({
+                            <span className="rev-star">
+                              <StarRating rating={info.avg_rev}/>
+                            </span>
+                            <span className="rev-count text-[#7b7b7b] text-[16px] font-medium">({
                                 info.riview
                             })</span>
                        </div>
@@ -228,7 +216,7 @@ const getdirectionUrl =(address,city,state,zip)=>{
                                             
                                            
                                             
-                                            <a href={'/locations/'+getStoreUrl(info.city,info.state)}  className="text-[#7b7b7b] hover:text-blue-600">
+                                            <a href={'/locations/'+info.slug}  className="text-[#7b7b7b] hover:text-blue-600">
                                                    <span className="font-medium text-[#424242]">Website :</span> Click To Visit
                                                 </a>
                                           
