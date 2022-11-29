@@ -5,10 +5,12 @@ import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
 // page template=============
 import { getJobApplicationData } from "../api/getJobApplicationData";
-import GameHomeHero  from "../../comps/activitiyPageComps/GameHomeHero";
+
 import CareerHero from "../../comps/careersPageComps/CareerHero";
+import JobApplication from "../../comps/careersPageComps/JobApplication";
 
 import LocationStoreMenu from "../../comps/headerComps/LocationStoreMenu";
+
 
 
 const apply=(props)=>{
@@ -61,7 +63,7 @@ const apply=(props)=>{
 
         </div>
         <CareerHero jobname="apply" pagedata={props.pagedata}/>
-        
+        <JobApplication/>
    
 
   {/* =========================================================================================main content ======== end */}
