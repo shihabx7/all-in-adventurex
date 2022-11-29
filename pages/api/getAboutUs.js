@@ -1,5 +1,5 @@
 import { getTotal } from "./AllDataList/getTotal"
-import getYextData from "./YextApi/getYextData"
+
 
 
 export const getAboutUs=async()=>{
