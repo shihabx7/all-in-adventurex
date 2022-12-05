@@ -27,6 +27,7 @@ export const getActivityData=(activitySlug)=>{
             "coverimageM":activityDataset[activitySlug].coverimageM,
             "coverimageM_alt":activityDataset[activitySlug].coverimageM_alt,
             "totalLocations":getTotal().totalLocations,
+            "groupcat":activityDataset[activitySlug].groupcat? activityDataset[activitySlug].groupcat:'',
             "price":activityDataset[activitySlug].price,
             "duration":activityDataset[activitySlug].duration,
             "max_players":activityDataset[activitySlug].max_players,
@@ -1111,11 +1112,12 @@ const activityDataset={
       "axe-throwing":{
         "activityname":"Axe Throwing",
         
-        "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today.",
+        "pagesubtitle":"Come throw axes at our exciting interactive targets with your friends and family! Test your hand-eye coordination and see if you can hit a bull's eye.",
         "price":29.89,
         "duration":60,
         "max_players":4,
         "min_players":2,
+        "groupcat":"Per Lane",
         "coverimageL":"/assets/all-game-desktop-hero/allinadventures-axe-throwing.jpg",
         "coverimageM":"/assets/all-game-mobile-hero/allinadventures-axe-throwing.jpg",
         "coverimageM_alt":"allinadventures-axe-throwing",
@@ -1128,11 +1130,11 @@ const activityDataset={
         },
         "activitydata":{
           "category":"other",
-          "story":"Welcome to the world of Treasure Island. Your adventure begins in a shadowy storage room aboard a weathered pirate ship. Once you find your way out you will be able to explore the entire ship while the pirates are on the island for the rest of the gold. Keep an eye out for the gold already aboard.",
+          "story":"With our interactive lanes, you can practice throwing at traditional targets or choose from other games. Utilizing a projection system, you can not only easily switch between games, but you can also allow it to do the scoring for you. Using sensors to mark your hits, our lanes can track the score for you and let you focus on the fun.",
           "storyimg":"/assets/all-game-details/allinadventures-axe-throwing-sec1.png",
-          "scene":"You are part of the crew aboard HMS Lion, currently hunting the pirate ship The Dancing Lady believed operating in the Caribbean. Wreckage found last month from the merchant ship Salty Dog indicates The Dancing Lady is be trying to bury their loot on one of the many islands in the area.",
+          "scene":"Once one of our Axe-perts gets you all set up in your lane, you and your party will be taking turns throwing at the target down range. This means that while you are throwing you will have your very own cheering squad backing you up! The system will track your score for you, so you can practice on your form.",
           "sceneimg":"/assets/all-game-details/allinadventures-axe-throwing-sec2.png",
-          "mission":"You and yer mateys need to solve the mystery and escape the island before they return. Or it's off with yer heads! There is a treasure map hidden in the tavern that leads to Captain Flint's Treasure! Find the map, and the treasure could be yours. You must find it fast for there are bloodthirsty pirates!",
+          "mission":"Axe Throwing is great for groups both large and small. Lanes hold up to 4 players, and we can accommodate larger groups by booking multiple lanes. Players 13 to 100 with closed-toed shoes are welcome to heft an axe and join in the fun.",
           "missionimg":"/assets/all-game-details/allinadventures-axe-throwing-sec3.png",
           "videoid":"pfdyF_d4Z40",
           "videothumb":"/assets/video-thumb/allinadventures-treasure-island-thumb.jpg"

@@ -63,7 +63,7 @@ const apply=(props)=>{
 
         </div>
         <CareerHero jobname="apply" pagedata={props.pagedata}/>
-        <JobApplication/>
+        <JobApplication  locationlist={props.locationlist}/>
    
 
   {/* =========================================================================================main content ======== end */}

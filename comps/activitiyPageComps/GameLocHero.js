@@ -123,7 +123,7 @@ const GameLocHero=(props)=>{
                         <div className="text-center">  
                      
                              <p className="golden-text text-xl md:text-4xl font-os font-bold">{props.pagedata.max_players==props.pagedata.min_players? props.pagedata.min_players:props.pagedata.min_players+"-"+props.pagedata.max_players}</p>
-                             <p className="text-gray-700 text-xs md:text-base lg:text-lg ">{props.pagedata.max_players<2? "player":"Players"}</p>
+                             <p className="text-gray-700 text-xs md:text-base lg:text-lg ">{props.pagedata.max_players<2? "player":"Players"} {props.pagedata.groupcat && <span className="text-[10px] md:text-[14px]">/ {props.pagedata.groupcat}</span> }</p>
                           </div>
                     }
 
