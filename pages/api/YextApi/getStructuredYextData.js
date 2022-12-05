@@ -114,7 +114,7 @@ var hArr=[]
 var dayArr=Object.keys(hours)
 
 var k 
-for(k=0;k<dayArr.length;k++){
+for(k=0;k<7;k++){
 
   var hdata= {
 
