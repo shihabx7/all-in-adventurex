@@ -1,6 +1,7 @@
 import TitleSeparator from "../util/TitleSeparator"
 import Link from "next/dist/client/link"
 import { FaPlay } from "react-icons/fa";
+import { ImPlay3 } from "react-icons/im";
 import { useState } from "react";
 import autoprefixer from "autoprefixer";
 
@@ -28,9 +29,9 @@ const GameVideo=(props)=>{
                                 !playVid &&
                                 <div className="vid-tumb absolute top-0 left-0 w-full h-full overflow-hidden">
                                 <div className="vid-thubb-play relative w-full h-full"> 
-                                        <img className="w-full" src="/assets/video-thumb/allinadventures-treasure-island-thumb.jpg"/>
-                                        <div onClick={()=>{setPlayVid(true)}} className="cursor-pointer text-[28px] md:text-[36px] lg:text-[44px] vid-play-btn w-[60px] h-[60px] md:w-[96px] md:h-[96px] lg:w-[104px] lg:h-[104px] rounded-full bg-[#000000] text-red-600 z-10 absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center" style={{margin:"auto"}}>
-                                                <FaPlay/>
+                                        <img className="w-full" src={props.videothumb}/>
+                                        <div onClick={()=>{setPlayVid(true)}} className="cursor-pointer text-[28px] md:text-[36px] lg:text-[48px] vid-play-btn w-[60px] h-[60px] md:w-[96px] md:h-[96px] lg:w-[104px] lg:h-[104px] rounded-full bg-[#000000] text-red-600 z-10 absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center" style={{margin:"auto"}}>
+                                                <ImPlay3/>
                                         </div>
                                 </div>
                                 

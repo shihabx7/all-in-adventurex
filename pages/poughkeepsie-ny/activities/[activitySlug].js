@@ -49,7 +49,7 @@ const LocSingleActivity=(props)=>{
                          <GameLocHero pagedata={props.pagedata} category={props.activitydata.category}/>
                          <GameLocDetails publish={props.pagedata.publish_status} bookingdata={props.pagedata.bookingdata} activityname={props.pagedata.activityname} activitydata={props.activitydata} />
                         <GameGallery galleryitem={props.activitygallery} activityname={props.pagedata.activityname} category={props.activitydata.category}/>
-                        <GameVideo activityname={props.pagedata.activityname} videoid={props.activitydata.videoid} location={props.pagedata.locationslug}/>
+                        <GameVideo activityname={props.pagedata.activityname} videothumb={props.activitydata.videothumb} videoid={props.activitydata.videoid} location={props.pagedata.locationslug}/>
                         {
                           props.activitydata.faqlist &&
                                 <>

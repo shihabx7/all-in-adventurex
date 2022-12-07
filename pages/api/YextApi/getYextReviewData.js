@@ -15,7 +15,7 @@ const getYextReviewData=async()=>{
 	}
 	var cd=year+month+day
 
-console.log(cd)
+
     try {
 		//const getdata = await fetch(`https://api.yext.com/v2/accounts/me/entities?api_key=7bd809cf968d3f58da77e54e3e116925&v=20221126&entityTypes=location&limit=5`);
 		//const liveapi= await fetch(`https://liveapi.yext.com/v2/accounts/me/entities?api_key=7bd809cf968d3f58da77e54e3e116925&v=`+cd+`&entityTypes=location&filter={"closed": {"$eq": false}}&limit=50`)

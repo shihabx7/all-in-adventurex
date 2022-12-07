@@ -82,6 +82,7 @@ const vGameData={
                             "missionimg":"/assets/all-game-details/allinadventures-virtual-escape-room-madness-mission.png",
                             "missionimg_alt":"allinadventures-virtual-escape-room-madness-mission",
                             "videoid":"YsuE-m_VEjc",
+                            "videothumb":"/assets/video-thumb/allinadventures-virtual-games.jpg",
                             "bookinglink":"https://www.virtualmysteryroom.com/online-escape-rooms/madness",
 
                             },
@@ -152,6 +153,7 @@ const vGameData={
             "missionimg":"/assets/all-game-details/allinadventures-virtual-escape-room-zombie-apocalypse-mission.png",
             "missionimg_alt":"allinadventures-virtual-escape-room-zombie-apocalypse-mission",
             "videoid":"YsuE-m_VEjc",
+            "videothumb":"/assets/video-thumb/allinadventures-virtual-games.jpg",
             "bookinglink":"https://www.virtualmysteryroom.com/online-escape-rooms/zombie",
 
             },
@@ -222,6 +224,7 @@ const vGameData={
                              "missionimg":"/assets/all-game-details/allinadventures-virtual-escape-room-bomb-mission.png",
                              "missionimg_alt":"allinadventures-virtual-escape-room-bomb-mission",
                              "videoid":"YsuE-m_VEjc",
+                            "videothumb":"/assets/video-thumb/allinadventures-virtual-games.jpg",
                              "bookinglink":"https://www.virtualmysteryroom.com/online-escape-rooms/bomb",
 
                              },
@@ -292,6 +295,7 @@ const vGameData={
         "missionimg":"/assets/all-game-details/allinadventures-virtual-escape-room-prison-mission.png",
         "missionimg_alt":"allinadventures-virtual-escape-room-prison-mission",
         "videoid":"YsuE-m_VEjc",
+        "videothumb":"/assets/video-thumb/allinadventures-virtual-games.jpg",
         "bookinglink":"https://www.virtualmysteryroom.com/online-escape-rooms/prison",
 
         },
@@ -362,6 +366,7 @@ const vGameData={
         "missionimg":"/assets/all-game-details/allinadventures-virtual-escape-room-aztec-mission.png",
         "missionimg_alt":"allinadventures-virtual-escape-room-aztec-mission",
         "videoid":"YsuE-m_VEjc",
+        "videothumb":"/assets/video-thumb/allinadventures-virtual-games.jpg",
         "bookinglink":"https://www.virtualmysteryroom.com/online-escape-rooms/aztec",
 
         },
@@ -433,6 +438,7 @@ const vGameData={
         "missionimg":"/assets/all-game-details/allinadventures-virtual-escape-room-japan-mission.png",
         "missionimg_alt":"allinadventures-virtual-escape-room-japan-mission",
         "videoid":"YsuE-m_VEjc",
+         "videothumb":"/assets/video-thumb/allinadventures-virtual-games.jpg",
         "bookinglink":"https://www.virtualmysteryroom.com/online-escape-rooms/japan",
 
         },
@@ -504,6 +510,7 @@ const vGameData={
         "mission":"Our Virtual Game Show Room is designed to be an interactive live game show experience for online players of all ages and backgrounds to enjoy. It's a perfect way to connect when corporate teams are spread out remotely or when friends and families live long distances from one another. It's also a great way for any group to spend time together when it's either too wet or too cold outside to interact with each other.",
         "missionimg":"/assets/all-game-details/allinadventures-virtual-game-show-room-sec3.png",
         "videoid":"YsuE-m_VEjc",
+         "videothumb":"/assets/video-thumb/allinadventures-virtual-games.jpg",
         "booking":{
           "shortname":"virtualgameshowroom",
           "item":"285707",

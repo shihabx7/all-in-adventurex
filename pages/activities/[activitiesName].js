@@ -58,7 +58,7 @@ const sinleActivities=(props)=>{
 
          <GameDetails activityname={props.pagedata.activityname} activitydata={props.activitydata} />
         <GameGallery galleryitem={props.activitygallery} activityname={props.pagedata.activityname} category={props.activitydata.category}/>
-        <GameVideo videoid={props.activitydata.videoid} activityname={props.pagedata.activityname} />
+        <GameVideo videoid={props.activitydata.videoid} activityname={props.pagedata.activityname} videothumb={props.activitydata.videothumb}/>
               {
                           props.activitydata.faqlist &&
                                 <>

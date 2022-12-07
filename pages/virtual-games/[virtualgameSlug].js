@@ -81,7 +81,7 @@ const showSingleVitualGame=(props)=>{
           
               <VirtualGameDetails activityname={props.pagedata.activityname} vgamedata={props.vgamedata} shortname={props.pagedata.shortname? props.pagedata.shortname:false} category={props.pagedata.category}/>
               <VgameGallery galleryitem={props.activitygallery} activityname={props.pagedata.activityname} shortname={props.pagedata.shortname? props.pagedata.shortname:false}/>
-              <VgameVideo videoid={props.vgamedata.videoid} activityname={props.pagedata.activityname} shortname={props.pagedata.shortname? props.pagedata.shortname:false}/>
+              <VgameVideo videoid={props.vgamedata.videoid} videothumb={props.vgamedata.videothumb} activityname={props.pagedata.activityname} shortname={props.pagedata.shortname? props.pagedata.shortname:false}/>
               {
                 props.vgamedata.faqlist &&
                 <div id="game-faq" className="all-faq relative bg-black py-16 md:py-24 lg:py-32 px-4 overflow-hidden md:mt-[0px]" style={{
