@@ -8,6 +8,7 @@ import { getLocationIndContactPageData } from '../api/LocationIndData/getLocatio
 import GameLocHero from '../../comps/activitiyPageComps/GameLocHero';
 import StoreContact from '../../comps/contactComps/StoreContact';
 import Seofields from '../../comps/util/SeoFields';
+import ContactLocHero from '../../comps/activitiyPageComps/ContactLocHero';
 
 
 const ViewContactStore=(props)=>{
@@ -43,7 +44,7 @@ const ViewContactStore=(props)=>{
                                  
                          {/* =======meta content and breadcum======== end */}
                          {/* ===========Page Content here=========*/}
-                         <GameLocHero pagedata={props.pagedata} gametotal="not"/>
+                         <ContactLocHero pagedata={props.pagedata} gametotal="not"/>
                          <StoreContact contactdata={props.contactdata}/>
                          
                        

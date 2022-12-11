@@ -49,15 +49,12 @@ const EventDetails=(props)=>{
                                 <div className="event-dt-desc py-4 md:py-0">
                                      <p className="md:text-lg text-[#938056] uppercase leading-[1]">{props.eventname}</p>
                                      <GameTitleSeparator title={"WHY ALL IN ADVENTURES FOR YOUR "+props.eventname} color="golden-text" weight="font-bold"></GameTitleSeparator>
-                                    <p className="mt-3 md:mt-3 lg:mt-4 md:text-[18px] lg:text-[20px] text-gray-700">
-                                        {
-
-                                                props.eventdata.why_book
-                                    }</p>
+                                    <div className="mt-3 md:mt-3 lg:mt-4 md:text-[18px] lg:text-[20px] text-gray-700" dangerouslySetInnerHTML={{ __html: props.eventdata.why_book  }}>
+                                    </div>
                                     {
                                         (props.eventbooking && props.eventbooking.eventstatus==true) &&
                                         <div className="event-notice mt-4 md:mt-6 lg:mt-8"> 
-                                        <EventBookBtn label="BOOK YOUR EVENTS" eventbooking={props.eventbooking}/>
+                                        <EventBookBtn label="BOOK YOUR PARTY" eventbooking={props.eventbooking}/>
                                         </div>
                                     }
                                      {
@@ -130,7 +127,7 @@ const EventDetails=(props)=>{
                                     {
                                         (props.eventbooking && props.eventbooking.eventstatus==true) &&
                                         <div className="event-notice mt-4 md:mt-6 lg:mt-8"> 
-                                        <EventBookBtn label="BOOK YOUR EVENTS" eventbooking={props.eventbooking}/>
+                                        <EventBookBtn label="BOOK YOUR PARTY" eventbooking={props.eventbooking}/>
                                         </div>
                                     }
                                      {
@@ -161,18 +158,15 @@ const EventDetails=(props)=>{
                                 <div className="event-dt-desc py-4 md:py-0">
                                     <p className="md:text-lg text-[#938056] leading-[1] uppercase">{props.eventname}</p>
                                      <GameTitleSeparator title={"WHAT YOU CAN EXPECT FROM AN ESCAPE ROOM "+props.eventname} color="golden-text" weight="font-bold"></GameTitleSeparator>
-                                    <p className="mt-3 md:mt-3 lg:mt-4 md:text-[18px] lg:text-[20px] text-gray-700">
-                                        {
-                                            
-                                        props.eventdata.what_expect
-                                    }
-                                        
-                                    </p>
+                                
+                                      <div className="mt-3 md:mt-3 lg:mt-4 md:text-[18px] lg:text-[20px] text-gray-700" dangerouslySetInnerHTML={{ __html: props.eventdata.what_expect  }}>
+                                    </div>  
+                                    
                                     <div className="event-notice mt-4 md:mt-6 lg:mt-8"> 
                                     {
                                         (props.eventbooking && props.eventbooking.eventstatus==true) &&
                                         <div className="event-notice mt-4 md:mt-6 lg:mt-8"> 
-                                        <EventBookBtn label="BOOK YOUR EVENTS" eventbooking={props.eventbooking}/>
+                                        <EventBookBtn label="BOOK YOUR PARTY" eventbooking={props.eventbooking}/>
                                         </div>
                                     }
                                      {
