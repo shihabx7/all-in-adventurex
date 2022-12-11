@@ -21,6 +21,15 @@ const PlaningEventCarousel=(props)=>{
     return description
     
 }
+const bookGame=(bookingData)=>{
+  FH.open({
+    shortname: bookingData.shortname,
+    fallback: 'simple', 
+    fullItems: 'yes', 
+   flow:  bookingData.flow, 
+    view: {item:bookingData.item}
+  });
+}
     const responsive = {
       desktoplg: {
         breakpoint: { max: 4000, min: 1640 },
@@ -103,13 +112,21 @@ const PlaningEventCarousel=(props)=>{
                       </div>
                       <div className="card-game-link mt-4 text-center">
                       {
-                            props.locationslug &&
-
-                           
-                            <a  href={"/"+props.locationslug+"/events/"+event.slug+"#eventform"} className="border max-w-[200px] card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW
+                            (props.locationslug && props.eventbooking) &&
+                            <> 
+                            {
+                              props.eventbooking.eventstatus==true &&
+                              <button onClick={()=>{bookGame(props.eventbooking)}} className="border max-w-[200px] block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                            }
+                            {
+                              props.eventbooking.eventstatus==false &&
+                            <a  href={"/"+props.locationslug+"/events/"+event.slug+"#eventform"} className="border max-w-[200px] block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW
                             </a>
+                            }
+                            </>
                          
                           }
+                         
                           {
                             !props.locationslug &&
 

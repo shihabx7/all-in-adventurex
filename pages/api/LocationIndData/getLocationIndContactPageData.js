@@ -73,6 +73,13 @@ export const getLocationIndContactPageData=(locationslug)=>{
             "bookingall":{
                 "shortname":bookinData.shortname,
             },
+            "eventbooking":{
+
+              "shortname":bookinData.shortname,
+                 "item" :bookinData["party-package"].item,
+                 "flow" :bookinData["party-package"].flow,
+                 "eventstatus":bookinData["party-package"].eventstatus,
+               },
 
             
            

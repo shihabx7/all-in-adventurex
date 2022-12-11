@@ -55,6 +55,13 @@ import { getLocTotal } from "./AllDataList/getLocTotal"
         "activitylist":getLocationActivitySlugList(locationslug),
         "eventlist":getLocationEventSlugList(locationslug),
         "bookingData":bookingGame,
+        "eventbooking":{
+
+          "shortname":bookingGame.shortname,
+             "item" :bookingGame["party-package"].item,
+             "flow" :bookingGame["party-package"].flow,
+             "eventstatus":bookingGame["party-package"].eventstatus,
+           },
         "pagedata": {
                       "locationstate":locattionstate,
                       "locationcity":getLocSpec(locationslug).city,

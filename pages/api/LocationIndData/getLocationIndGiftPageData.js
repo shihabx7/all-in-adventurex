@@ -9,7 +9,9 @@ export const getLocationIndGiftPageData=(locationslug)=>{
     var locstat= locd[locd.length-1]
     var locdx=locd.slice(0, -1).join('')
 
-    const locationname=locdx+", "+locstat
+    const eventbook=locdx+", "+locstat
+
+  const evbook= bookingList("",locationslug)
 
     var locsdata= getLocationsPageData().states
     var locData=getLocationsPageData()
@@ -73,7 +75,14 @@ export const getLocationIndGiftPageData=(locationslug)=>{
             "locationslug":locationslug,
             "mall":getLocSpec(locationslug).mall,
             "totalLocations":totalLocation(),
-            "bookingdata":bookingList("gift-card",locationslug)
+            "bookingdata":bookingList("gift-card",locationslug),
+            "eventbooking":{
+
+              "shortname":evbook.shortname,
+                 "item" :evbook["party-package"].item,
+                 "flow" :evbook["party-package"].flow,
+                 "eventstatus":evbook["party-package"].eventstatus,
+               },   
            
         },
         "gift_faq":[

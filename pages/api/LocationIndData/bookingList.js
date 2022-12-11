@@ -76,7 +76,8 @@ const blist={
         },
         "party-package":{
             "item":"44613",
-            "flow":"no"
+            "flow":"no",
+            "eventstatus":true,
         }
       
               },
@@ -136,7 +137,8 @@ const blist={
         },
         "party-package":{
             "item":"44880",
-            "flow":"no"
+            "flow":"no",
+            "eventstatus":false,
         }
       
       
@@ -208,7 +210,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"44769",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
               
@@ -282,7 +285,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"44861",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
                 },
@@ -342,7 +346,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"44799",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
                 },
@@ -396,7 +401,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"17839",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":false,
                 }
               
                 },
@@ -487,7 +493,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"17839",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
                 },
@@ -545,7 +552,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"53895",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
                       },
@@ -608,7 +616,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"54906",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
                       },
@@ -671,7 +680,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"50101",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
                       },
@@ -723,7 +733,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"17839",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
                       },
@@ -784,7 +795,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"44592",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
                       },
@@ -844,7 +856,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"48113",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
              },
              //===================================n-attleborough-ma=========== 
@@ -994,7 +1007,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"44849",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
                       },
@@ -1053,7 +1067,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"54571",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
             },
              //===================================manchester-ct========== 
@@ -1112,7 +1127,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"54908",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
              },
              //===================================waterbury-ct========== 
@@ -1174,7 +1190,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"55163",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
                       },
@@ -1236,7 +1253,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"47198",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
              },
@@ -1290,7 +1308,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"177619",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
                       },
@@ -1352,7 +1371,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"104527",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
                       },
@@ -1412,7 +1432,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"17839",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":false,
                 }
               
                       },
@@ -1473,7 +1494,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"54397",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
                       },
@@ -1536,7 +1558,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"44742",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
                       },
@@ -1586,7 +1609,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"55177",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
                       },
@@ -1643,7 +1667,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"53894",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
                       },
@@ -1700,7 +1725,8 @@ const blist={
                 },
                 "party-package":{
                     "item":"55219",
-                    "flow":"no"
+                    "flow":"no",
+                    "eventstatus":true,
                 }
               
                       },

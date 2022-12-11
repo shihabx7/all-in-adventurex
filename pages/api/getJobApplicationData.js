@@ -15,7 +15,7 @@ export const getJobApplicationData=()=>{
            
           "pagedata": {
                         "pagetitle":"Employment Application",
-                        "pagesubtitle":"Interested in joining our super engaged, guest-centric team of associates? Fill out the application form below to be considered for employment.",
+                        "pagesubtitle":"Interested in joining our super engaged, guest-centric team of associates?",
                          
                         "totalLocations": getTotal().totalLocations,
                         "coverimageL":"/assets/gn-desktop-hero/allinadventures-career-hero.jpg",

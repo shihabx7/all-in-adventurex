@@ -56,7 +56,7 @@ const PlaningEventsSlider=(props)=>{
             </div>
     </div>
     <div className="slider-box pb-4 md:pb-8 relative">  
-    <PlaningEventCarousel events={props.events} locationslug={props.locationslug}/>
+    <PlaningEventCarousel  events={props.events} locationslug={props.locationslug} eventbooking={props.eventbooking}/>
     </div>
     <div className="view-all flex justify-center pt-8 md:pt-12 lg:pt-16">
     {

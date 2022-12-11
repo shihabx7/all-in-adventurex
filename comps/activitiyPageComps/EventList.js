@@ -10,7 +10,15 @@ const EventList=(props)=>{
         document.getElementById('locmenu').classList.remove('hidden')
         
       }
-
+      const bookGame=(bookingData)=>{
+        FH.open({
+          shortname: bookingData.shortname,
+          fallback: 'simple', 
+          fullItems: 'yes', 
+         flow:  bookingData.flow, 
+          view: {item:bookingData.item}
+        });
+      }
     return(
         <div className="all-events relative bg-center bg-cover pt-4 md:pt-8 lg:pt-12" style={{backgroundImage:"url('/assets/game-dt-bg.jpg')"}}>
              <div className="w-full absolute top-0 left-0 "><img className="w-full" src="/assets/game-home-or1.jpg"></img> </div>
@@ -36,38 +44,49 @@ const EventList=(props)=>{
                                           <h3 className="card-game-title text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-white">{event.event_name}</h3>
                                           <p className="text-gray-200 lg:text-lg mx-auto md:mx-0 max-w-[490px]">{event.event_desc}</p>
                                          </div>
+
                                          {
-                                                !props.locationslug &&
+                                        (props.locationslug && props.eventbooking) &&
+
                                          <div className="card-game-link mt-4 text-left">
-                                            
-                                                <button onClick={showLocation} className="border-2 w-[240px] card-book-btn block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</button>
-                                               
-                                                                                        
-                                                <a href={"/events/"+event.event_slug} className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
-                                                
-                                            
-                                             
-                                            
-                                        </div>
-                                        }
-                                        {
-                                        props.locationslug &&
-                                         <div className="card-game-link mt-4 text-left">
-                                            
-                                               
-                                                                                        
-                                                     <a href={"/"+props.locationslug+"/events/"+event.event_slug+"#eventform"} className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-red-600 py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</a>
-                                                 
-                                                                                    
-                                              
+                                            {
+                                                props.eventbooking.eventstatus==true &&
+                                                <button onClick={()=>{bookGame(props.eventbooking)}} className="border-2 w-[240px] block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</button>
+
+                                            }
+                                            {
+                                                props.eventbooking.eventstatus==false &&
+                                                <a href={"/"+props.locationslug+"/events/"+event.event_slug+"#eventform"} className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-red-600 py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</a>
+
+                                            }
                                                                                         
                                                 <a href={"/"+props.locationslug+"/events/"+event.event_slug} className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
                                                
-                                            
-                                             
-                                            
                                         </div>
                                         }
+                                        {
+                                                (props.locationslug && !props.eventbooking) &&
+                                                <div className="card-game-link mt-4 text-left">
+                                                <a href={"/"+props.locationslug+"/events/"+event.event_slug+"#eventform"} className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-red-600 py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</a>
+                                                <a href={"/"+props.locationslug+"/events/"+event.event_slug} className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
+                                                </div>
+                                        }
+                                         
+                                         {
+                                                !props.locationslug &&
+                                                 <div className="card-game-link mt-4 text-left">
+
+                                                        <button onClick={showLocation} className="border-2 w-[240px] card-book-btn block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</button>
+
+
+                                                        <a href={"/events/"+event.event_slug} className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
+
+
+
+
+                                                </div>
+                                        }
+                                        
                                     
                                  </div>
 

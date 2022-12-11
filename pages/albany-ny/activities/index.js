@@ -32,13 +32,16 @@ const LocActivity=(props)=>{
          <>
              <Homenav locationslug={props.pagedata.locationslug} 
                       bookingall={props.pagedata.bookingall} 
+                      eventbooking={props.pagedata.eventbooking}
                       location={getLoc(props.pagedata.locationslug)}
                     activitylist={props.activitylistSlug}
                     eventlist={props.eventlistSlug}
                     locationlist={props.locationlist}
              />
                  <div id="mainContent" className='main-content'>
- 
+ {
+     console.log(props.pagedata)
+ }
                  {/* =======header content and breadcum======== */}
                              <Head>
                                  <title>All in adventure Locations</title>
@@ -76,7 +79,7 @@ export const getStaticProps=async(context)=>{
   
     const locationHomedata=getLocationIndActivityList("albany-ny")
    
-    console.log(locationHomedata)
+   
 
     return{
         props:{

@@ -112,10 +112,13 @@ const Homenav=(props)=>{
                     <div className="home-nav-menu flex items-center space-x-0 md:space-x-10 lg:space-x-14 justify-end "> 
                         
                          <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
-                           {props.locationslug &&
-
-                             <HeaderBtnTrans locationslug={props.locationslug} btntext='BOOK EVENTS'/>
-                            
+                           {(props.locationslug && props.eventbooking) &&
+                                <HeaderBtnTrans locationslug={props.locationslug} eventbooking={props.eventbooking} btntext='BOOK YOUR EVENTS'/>
+                             
+                           }
+                           {(props.locationslug && !props.eventbooking) &&
+                                <HeaderBtnTrans locationslug={props.locationslug} btntext='BOOK EVENTS'/>
+                             
                            }
                            
                            {!props.locationslug &&
@@ -203,16 +206,16 @@ const Homenav=(props)=>{
             </div>
             </div>
             {
-              (props.locationslug && props.bookingall) &&
+              (props.locationslug && props.bookingall ) &&
 
-               <MoblieBook locationslug={props.locationslug} bookingall={props.bookingall} publish_status={props.publish_status}/>
+               <MoblieBook locationslug={props.locationslug} bookingall={props.bookingall} publish_status={props.publish_status} eventbooking={props.eventbooking}/>
 
 
             }
             {
               (props.locationslug && props.bookinggame) &&
 
-               <MoblieBook locationslug={props.locationslug} bookinggame={props.bookinggame} publish_status={props.publish_status}/>
+               <MoblieBook locationslug={props.locationslug} bookinggame={props.bookinggame} publish_status={props.publish_status} eventbooking={props.eventbooking}/>
 
 
             }

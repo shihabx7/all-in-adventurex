@@ -29,13 +29,16 @@ const viewLocGift=(props)=>{
         <>
             <Homenav locationslug={props.pagedata.locationslug} 
                      bookinggame={props.pagedata.bookingdata}
+                     eventbooking={props.pagedata.eventbooking}
                      location={getLoc(props.pagedata.locationslug)}
                           activitylist={props.activitylist}
                           eventlist={props.eventlist}
                           locationlist={props.locationlist}
                           />
                  <div id="mainContent" className='main-content'>
- 
+        {
+            console.log(props.pagedata)
+        }
                  {/* =======header content and breadcum======== */}
                                 <Head>
                                  <title>All in adventure Locations</title>

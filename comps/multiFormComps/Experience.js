@@ -13,7 +13,7 @@ const Experience=(props)=>{
             <div className="form-holedr"> 
                  {/*========================  contact form job exp =======================*/}
                
-                        <p className="md:text-lg mt-4 pb-2">List your last (max-3) jobs, beginning with your current or most recent position. Include all seasonal, part-time, summer, self-employment, etc. Please ensure all dates/job files in this section are accurate.</p>
+                        <p className="md:text-lg mt-4 pb-2">List your last three (3) jobs, beginning with your current or most recent position. Include all seasonal, part-time, summer, self-employment, etc. Please ensure all dates/job files in this section are accurate.</p>
                          {/*========================  contact form job exp 1=======================*/}
                         <div className="form-exp-box bg-[#FFF7EA] p-4 md:p-6 mt-4 shadow-md"> 
                              <div className="f-job-head flex justify-between items-center cursor-pointer" onClick={()=>{exp==1? setExp(null):setExp(1)}}> 
@@ -24,11 +24,11 @@ const Experience=(props)=>{
                                 <div className="f-job-bottom mt-2 border-t border-gray-300"> 
                                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between my-3">
                                            <div className="form-col w-full md:w-[48%]">
-                                               <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Employer Name</p>
+                                               <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Employer' Name</p>
                                                <input 
                                                    type="text" 
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
-                                                   placeholder="Your employer Name" 
+                                                   placeholder="Your employer's name" 
                                                    pattern="[a-zA-z ]{3,20}"
                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                    required>
@@ -51,11 +51,11 @@ const Experience=(props)=>{
                                 </div>
                                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between my-3">
                                            <div className="form-col w-full md:w-[48%]">
-                                               <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Supervisor Name</p>
+                                               <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Supervisor's Name</p>
                                                <input 
                                                    type="text" 
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
-                                                   placeholder="Your supervisor name" 
+                                                   placeholder="Your supervisor's name" 
                                                    pattern="[a-zA-z ]{3,20}"
                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                    required>
@@ -64,7 +64,7 @@ const Experience=(props)=>{
                                                    <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden"></p>
                                         </div>
                                         <div className="form-col w-full md:w-[48%]">
-                                               <p className=" mb-1 lg:text-lg evevt-input-label text-gray-800">Supervisor Phone</p>
+                                               <p className=" mb-1 lg:text-lg evevt-input-label text-gray-800">Supervisor's Phone</p>
                                                <input  type="text"
                                                        className=" w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-red"
                                                        placeholder="Supervisor's phone number"
@@ -111,7 +111,7 @@ const Experience=(props)=>{
                                                <input 
                                                    type="text"
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
-                                                   placeholder="Your first name" 
+                                                   placeholder="" 
                                                    pattern="[a-zA-z ]{3,20}"
                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                    id="mn"
@@ -124,7 +124,7 @@ const Experience=(props)=>{
                                                <input 
                                                    type="text"
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
-                                                   placeholder="Your first name" 
+                                                   placeholder="" 
                                                    pattern="[a-zA-z ]{3,20}"
                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                    id="mn"
@@ -140,18 +140,18 @@ const Experience=(props)=>{
                          {/*========================  contact form job exp 2=======================*/}
                          <div className="form-exp-box bg-[#FFF7EA] p-4 md:p-6 mt-4 shadow-md"> 
                              <div className="f-job-head flex justify-between items-center cursor-pointer" onClick={()=>{exp==2? setExp(null):setExp(2)}}> 
-                                 <h3 className="md:text-xl">Job 1</h3> <span className="md:text-xl text-[#333105]">{exp==2? <FiMinus/>:<FiPlus/>}</span>
+                                 <h3 className="md:text-xl">Job 2</h3> <span className="md:text-xl text-[#333105]">{exp==2? <FiMinus/>:<FiPlus/>}</span>
                             </div>
                             {
                                 exp==2 &&
                                 <div className="f-job-bottom mt-2 border-t border-gray-300"> 
                                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between my-3">
                                            <div className="form-col w-full md:w-[48%]">
-                                               <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Employer Name</p>
+                                               <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Employer's Name</p>
                                                <input 
                                                    type="text" 
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
-                                                   placeholder="Your employer Name" 
+                                                   placeholder="Your employer's Name" 
                                                    pattern="[a-zA-z ]{3,20}"
                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                    required>
@@ -174,11 +174,11 @@ const Experience=(props)=>{
                                 </div>
                                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between my-3">
                                            <div className="form-col w-full md:w-[48%]">
-                                               <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Supervisor Name</p>
+                                               <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Supervisor's Name</p>
                                                <input 
                                                    type="text" 
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
-                                                   placeholder="Your supervisor name" 
+                                                   placeholder="Your supervisor' name" 
                                                    pattern="[a-zA-z ]{3,20}"
                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                    required>
@@ -187,7 +187,7 @@ const Experience=(props)=>{
                                                    <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden"></p>
                                         </div>
                                         <div className="form-col w-full md:w-[48%]">
-                                               <p className=" mb-1 lg:text-lg evevt-input-label text-gray-800">Supervisor Phone</p>
+                                               <p className=" mb-1 lg:text-lg evevt-input-label text-gray-800">Supervisor's Phone</p>
                                                <input  type="text"
                                                        className=" w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-red"
                                                        placeholder="Supervisor's phone number"
@@ -205,7 +205,7 @@ const Experience=(props)=>{
                                                <input 
                                                    type="date"
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
-                                                   placeholder="Your first name" 
+                                                   placeholder="" 
                                                    pattern="[a-zA-z ]{3,20}"
                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                    id="mn"
@@ -217,7 +217,7 @@ const Experience=(props)=>{
                                                <p className=" mb-1 lg:text-lg evevt-input-label text-gray-800">If offer made, may we contact?</p>
                                                <select 
                                                        className=" w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-red"
-                                                       placeholder="Your last name"
+                                                       placeholder=""
                                                        pattern="[a-zA-z ]{3,20}"
                                                        title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                        >
@@ -234,7 +234,7 @@ const Experience=(props)=>{
                                                <input 
                                                    type="text"
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
-                                                   placeholder="Your first name" 
+                                                   placeholder="" 
                                                    pattern="[a-zA-z ]{3,20}"
                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                    id="mn"
@@ -247,7 +247,7 @@ const Experience=(props)=>{
                                                <input 
                                                    type="text"
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
-                                                   placeholder="Your first name" 
+                                                   placeholder="" 
                                                    pattern="[a-zA-z ]{3,20}"
                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                    id="mn"
@@ -263,18 +263,18 @@ const Experience=(props)=>{
                         {/*========================  contact form job exp 3=======================*/}
                         <div className="form-exp-box bg-[#FFF7EA] p-4 md:p-6 mt-4 shadow-md"> 
                              <div className="f-job-head flex justify-between items-center cursor-pointer" onClick={()=>{exp==3? setExp(null):setExp(3)}}> 
-                                 <h3 className="md:text-xl">Job 1</h3> <span className="md:text-xl text-[#333105]">{exp==3? <FiMinus/>:<FiPlus/>}</span>
+                                 <h3 className="md:text-xl">Job 3</h3> <span className="md:text-xl text-[#333105]">{exp==3? <FiMinus/>:<FiPlus/>}</span>
                             </div>
                             {
                                 exp==3 &&
                                 <div className="f-job-bottom mt-2 border-t border-gray-300"> 
                                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between my-3">
                                            <div className="form-col w-full md:w-[48%]">
-                                               <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Employer Name</p>
+                                               <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Employer's Name</p>
                                                <input 
                                                    type="text" 
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
-                                                   placeholder="Your employer Name" 
+                                                   placeholder="Your employer's name" 
                                                    pattern="[a-zA-z ]{3,20}"
                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                    required>
@@ -301,7 +301,7 @@ const Experience=(props)=>{
                                                <input 
                                                    type="text" 
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
-                                                   placeholder="Your supervisor name" 
+                                                   placeholder="Your supervisor's name" 
                                                    pattern="[a-zA-z ]{3,20}"
                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                    required>
@@ -310,7 +310,7 @@ const Experience=(props)=>{
                                                    <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden"></p>
                                         </div>
                                         <div className="form-col w-full md:w-[48%]">
-                                               <p className=" mb-1 lg:text-lg evevt-input-label text-gray-800">Supervisor Phone</p>
+                                               <p className=" mb-1 lg:text-lg evevt-input-label text-gray-800">Supervisor's Phone</p>
                                                <input  type="text"
                                                        className=" w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-red"
                                                        placeholder="Supervisor's phone number"
@@ -328,7 +328,7 @@ const Experience=(props)=>{
                                                <input 
                                                    type="date"
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
-                                                   placeholder="Your first name" 
+                                                   placeholder="" 
                                                    pattern="[a-zA-z ]{3,20}"
                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                    id="mn"
@@ -340,7 +340,7 @@ const Experience=(props)=>{
                                                <p className=" mb-1 lg:text-lg evevt-input-label text-gray-800">If offer made, may we contact?</p>
                                                <select 
                                                        className=" w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-red"
-                                                       placeholder="Your last name"
+                                                       placeholder=""
                                                        pattern="[a-zA-z ]{3,20}"
                                                        title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                        >
@@ -357,7 +357,7 @@ const Experience=(props)=>{
                                                <input 
                                                    type="text"
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
-                                                   placeholder="Your first name" 
+                                                   placeholder="" 
                                                    pattern="[a-zA-z ]{3,20}"
                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                    id="mn"
@@ -370,7 +370,7 @@ const Experience=(props)=>{
                                                <input 
                                                    type="text"
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
-                                                   placeholder="Your first name" 
+                                                   placeholder="" 
                                                    pattern="[a-zA-z ]{3,20}"
                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                    id="mn"

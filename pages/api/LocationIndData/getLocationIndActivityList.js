@@ -79,7 +79,14 @@ const bookingAll=bookingList('',slug)
                         "coverimageM":"/assets/all-game-mobile-hero/allinadventures-all-game-page-hero--mobile.jpg",
                         "bookingall":{
                             "shortname":bookingAll.shortname
-                        }
+                        },
+                        "eventbooking":{
+
+                            "shortname":bookingAll.shortname,
+                               "item" :bookingAll["party-package"].item,
+                               "flow" :bookingAll["party-package"].flow,
+                               "eventstatus":bookingAll["party-package"].eventstatus,
+                             },
           },
 
           "activity_list":LocActivityData[slug].activity_list,
@@ -1159,7 +1166,7 @@ const LocActivityData={
                 "activity_category":"escapegame",
                 "age":"All Ages (6+)",
                 "min_player":"2",
-                "max_player":"8",
+                "max_player":"4",
                 "price":"29.89",
                 "duration":"50",
                 "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",

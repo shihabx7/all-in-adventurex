@@ -48,13 +48,46 @@ const GameLocGiftHero=(props)=>{
                         
                         {
                             (props.pagedata.bookingdata && props.pagedata.publish_status==true) &&
-                            <button onClick={()=>bookGame(props.pagedata.bookingdata)} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BUY GIFT CARDS NOW</button>
+                            <button onClick={()=>bookGame(props.pagedata.bookingdata)} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BUY GIFT CARDS</button>
                         }
                         {
                             (props.pagedata.bookingdata && props.pagedata.publish_status==false) &&
                             <button className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">COMMING SOON</button>
                         }
-                        
+                            {
+                            props.pagedata.eventbooking && 
+                            <>
+                                {
+                                    props.pagedata.eventbooking.eventstatus==true &&
+                                  
+                                         <button onClick={()=>bookGame(props.pagedata.eventbooking)} className="block w-full py-3 mt-4 rounded-full text-center text-white font-medium border-2 border-red-600 bg-transparent hover:border-red-700 hover:bg-red-700 text-lg">BOOK A PARTY</button>
+                                 
+                                }
+                                {
+                                    props.pagedata.eventbooking.eventstatus==false &&
+                                  
+                                         <a href={"/"+props.pagedata.locationslug+"/events#eventform"} className="block w-full mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-transparent hover:border-red-700 hover:bg-red-700 text-lg">BOOK A PARTY </a>
+                                 
+                                }
+                            </>
+                        }
+                        {
+                            !props.pagedata.eventbooking && 
+                            <>
+                                {
+                                    props.pagedata.eventbooking.eventstatus==true &&
+                                  
+                                         <button onClick={()=>bookGame(props.pagedata.eventbooking)} className="block w-full mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-transparent hover:border-red-700 hover:bg-red-700 text-lg">BOOK A PARTY</button>
+                                 
+                                }
+                                {
+                                    props.pagedata.eventbooking.eventstatus==false &&
+                                  
+                                         <a href={"/"+props.pagedata.locationslug+"/events#eventform"} className="block mt-4 w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-transparent hover:border-red-700 hover:bg-red-700 text-lg">BOOK A PARTY </a>
+                                 
+                                }
+                            </>
+                        }
                        
                        
                         

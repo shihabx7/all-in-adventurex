@@ -78,7 +78,14 @@ export const getLocationsEventList=(locationslug)=>{
                         "bookingall":{
                           "shortname":bookinglist.shortname,
                           
-                      }
+                      },
+                      "eventbooking":{
+
+                        "shortname":bookinglist.shortname,
+                           "item" :bookinglist["party-package"].item,
+                           "flow" :bookinglist["party-package"].flow,
+                           "eventstatus":bookinglist["party-package"].eventstatus,
+                         },
                       
 
           },

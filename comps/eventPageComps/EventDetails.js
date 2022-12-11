@@ -3,6 +3,7 @@ import EventDbtn from "../util/EventDbtn"
 import GameDtBtn from "../util/GameDtBtn"
 import GameTitleSeparator from "../util/GameTitleSeparator"
 import { FiXSquare } from "react-icons/fi";
+import EventBookBtn from "../util/EventBookBtn";
 
 const EventDetails=(props)=>{
 
@@ -53,10 +54,28 @@ const EventDetails=(props)=>{
 
                                                 props.eventdata.why_book
                                     }</p>
-                                    <div className="event-notice mt-4 md:mt-6 lg:mt-8"> 
+                                    {
+                                        (props.eventbooking && props.eventbooking.eventstatus==true) &&
+                                        <div className="event-notice mt-4 md:mt-6 lg:mt-8"> 
+                                        <EventBookBtn label="BOOK YOUR EVENTS" eventbooking={props.eventbooking}/>
+                                        </div>
+                                    }
+                                     {
+                                        (props.eventbooking && props.eventbooking.eventstatus==false) &&
+                                        <div className="event-notice mt-4 md:mt-6 lg:mt-8"> 
                                             <EventDbtn link="#eventform" label="INQUIRE NOW"/>
                                            
                                     </div>
+                                    }
+                                    {
+                                        !props.eventbooking &&
+                                        <div className="event-notice mt-4 md:mt-6 lg:mt-8"> 
+                                            <EventDbtn link="#eventform" label="INQUIRE NOW"/>
+                                           
+                                    </div>
+
+                                    }
+                                    
                                 </div>
                             </div>
                             <div className="event-dt-col w-full md:w-[47%] order-1 md:order-2"> 
@@ -108,7 +127,27 @@ const EventDetails=(props)=>{
                                     <div className="event-notice mt-4 md:mt-6 lg:mt-8"> 
                                     <p className="md:text-lg text-[#938056] md:mb-1 uppercase">{props.activityname}</p>
                                              
-                                            <EventDbtn link="#eventform" label="INQUIRE NOW"/>   
+                                    {
+                                        (props.eventbooking && props.eventbooking.eventstatus==true) &&
+                                        <div className="event-notice mt-4 md:mt-6 lg:mt-8"> 
+                                        <EventBookBtn label="BOOK YOUR EVENTS" eventbooking={props.eventbooking}/>
+                                        </div>
+                                    }
+                                     {
+                                        (props.eventbooking && props.eventbooking.eventstatus==false) &&
+                                        <div className="event-notice mt-4 md:mt-6 lg:mt-8"> 
+                                            <EventDbtn link="#eventform" label="INQUIRE NOW"/>
+                                           
+                                    </div>
+                                    }
+                                    {
+                                        !props.eventbooking &&
+                                        <div className="event-notice mt-4 md:mt-6 lg:mt-8"> 
+                                            <EventDbtn link="#eventform" label="INQUIRE NOW"/>
+                                           
+                                    </div>
+
+                                    }
                                     </div>
                                 </div>
                             </div>
@@ -130,7 +169,27 @@ const EventDetails=(props)=>{
                                         
                                     </p>
                                     <div className="event-notice mt-4 md:mt-6 lg:mt-8"> 
-                                    <EventDbtn link="#eventform" label="INQUIRE NOW"/>   
+                                    {
+                                        (props.eventbooking && props.eventbooking.eventstatus==true) &&
+                                        <div className="event-notice mt-4 md:mt-6 lg:mt-8"> 
+                                        <EventBookBtn label="BOOK YOUR EVENTS" eventbooking={props.eventbooking}/>
+                                        </div>
+                                    }
+                                     {
+                                        (props.eventbooking && props.eventbooking.eventstatus==false) &&
+                                        <div className="event-notice mt-4 md:mt-6 lg:mt-8"> 
+                                            <EventDbtn link="#eventform" label="INQUIRE NOW"/>
+                                           
+                                    </div>
+                                    }
+                                    {
+                                        !props.eventbooking &&
+                                        <div className="event-notice mt-4 md:mt-6 lg:mt-8"> 
+                                            <EventDbtn link="#eventform" label="INQUIRE NOW"/>
+                                           
+                                    </div>
+
+                                    }  
                                              
                                     </div>
                                 </div>

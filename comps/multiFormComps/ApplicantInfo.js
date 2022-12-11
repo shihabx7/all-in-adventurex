@@ -23,7 +23,7 @@ const ApplicantInfo=({setFormName})=>{
                                                     <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden">First name *</p>
                                          </div>
                                          <div className="form-col w-full md:w-[48%]">
-                                                <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Last name? *</p>
+                                                <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Last name *</p>
                                                 <input  type="text"
                                                         className=" w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-red"
                                                         placeholder="Your last name"

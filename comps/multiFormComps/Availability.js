@@ -57,17 +57,16 @@ const Availability=(props)=>{
                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between my-3">
                                             <div className="form-col w-full bg-[#FFF9EC] p-4 md:py-8 md:px-6 my-2 md:my-4">
                                                 <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Please indicate hours you're available to work during both day and evening *</p>
-                                                <p className="mb-1 lg:text-lg evevt-input-label text-[#565656]">(i.e. start - close; 9am-12pm; or Any)</p>
+                                                <p className="mb-1 lg:text-lg evevt-input-label text-[#565656]">(i.e. Start - Close; 9 am-12 pm; or Any)</p>
                                                     {/*======================== sunday=======================*/}
                                                     <div className="avl-work-week sunday"> 
                                                             <div className="avl-row flex  justify-between items-center space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
                                                                     <div className="avl-day text-sm md:text-xl"><p>Sunday :</p></div>
                                                                     <div className="flex justify-between items-center w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
-                                                                    <div className="avl-start w-[48%]"> 
+                                                                        <div className="avl-start w-[48%]"> 
                                                                              <select type="text" className=" text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                            <option value="Start">Start</option>
-                                                                                            <option value="7 am">7 am</option>
-                                                                                            <option value="8 am">8 am</option>
+                                                                                            <option value="Start"><span className="font-medium">Start</span> </option>
+                                                                                            <option value="Any">Any</option>
                                                                                             <option value="9 am">9 am</option>
                                                                                             <option value="10 am">10 am</option>
                                                                                             <option value="11 am">11 am</option>
@@ -78,15 +77,14 @@ const Availability=(props)=>{
                                                                                             <option value="4 pm">4 pm</option>
                                                                                             <option value="5 pm">5 pm</option>
                                                                                             <option value="6 pm">6 pm</option>
-                                                                                            <option value="7 pm">7 pm</option>
+                                                                                   
                                                                             </select>
-                                                                    </div>
-                                                                    <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
-                                                                    <div className="avl-end w-[48%]"> 
+                                                                        </div>
+                                                                        <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        <div className="avl-end w-[48%]"> 
                                                                              <select type="text" className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                             <option value="Close">Close</option>
-                                                                                            <option value="10 am">10 am</option>
-                                                                                            <option value="11 am">11 am</option>
+                                                                                          <option value="Clsoe"><span className="font-medium">Clsoe</span> </option>
+                                                                                          <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
                                                                                             <option value="11 am">2 pm</option>
@@ -100,7 +98,7 @@ const Availability=(props)=>{
                                                                                             <option value="8 pm">10 pm</option>
                                                                                         
                                                                             </select>
-                                                                    </div>
+                                                                         </div>
                                                                     </div>
                                                             </div>
 
@@ -111,11 +109,10 @@ const Availability=(props)=>{
                                                             <div className="avl-row flex  justify-between items-center space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
                                                                     <div className="avl-day text-sm md:text-xl"><p>Monday :</p></div>
                                                                     <div className="flex justify-between items-center w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
-                                                                    <div className="avl-start w-[48%]"> 
+                                                                        <div className="avl-start w-[48%]"> 
                                                                              <select type="text" className=" text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                            <option value="Start">Start</option>
-                                                                                            <option value="7 am">7 am</option>
-                                                                                            <option value="8 am">8 am</option>
+                                                                                            <option value="Start"><span className="font-medium">Start</span> </option>
+                                                                                            <option value="Any">Any</option>
                                                                                             <option value="9 am">9 am</option>
                                                                                             <option value="10 am">10 am</option>
                                                                                             <option value="11 am">11 am</option>
@@ -126,15 +123,14 @@ const Availability=(props)=>{
                                                                                             <option value="4 pm">4 pm</option>
                                                                                             <option value="5 pm">5 pm</option>
                                                                                             <option value="6 pm">6 pm</option>
-                                                                                            <option value="7 pm">7 pm</option>
+                                                                                   
                                                                             </select>
-                                                                    </div>
-                                                                    <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
-                                                                    <div className="avl-end w-[48%]"> 
+                                                                        </div>
+                                                                        <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        <div className="avl-end w-[48%]"> 
                                                                              <select type="text" className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                             <option value="Close">Close</option>
-                                                                                            <option value="10 am">10 am</option>
-                                                                                            <option value="11 am">11 am</option>
+                                                                                          <option value="Clsoe"><span className="font-medium">Clsoe</span> </option>
+                                                                                          <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
                                                                                             <option value="11 am">2 pm</option>
@@ -148,7 +144,7 @@ const Availability=(props)=>{
                                                                                             <option value="8 pm">10 pm</option>
                                                                                         
                                                                             </select>
-                                                                    </div>
+                                                                         </div>
                                                                     </div>
                                                             </div>
 
@@ -159,11 +155,10 @@ const Availability=(props)=>{
                                                             <div className="avl-row flex  justify-between items-center space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
                                                                     <div className="avl-day text-sm md:text-xl"><p>Tuesday :</p></div>
                                                                     <div className="flex justify-between items-center w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
-                                                                    <div className="avl-start w-[48%]"> 
+                                                                        <div className="avl-start w-[48%]"> 
                                                                              <select type="text" className=" text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                            <option value="Start">Start</option>
-                                                                                            <option value="7 am">7 am</option>
-                                                                                            <option value="8 am">8 am</option>
+                                                                                            <option value="Start"><span className="font-medium">Start</span> </option>
+                                                                                            <option value="Any">Any</option>
                                                                                             <option value="9 am">9 am</option>
                                                                                             <option value="10 am">10 am</option>
                                                                                             <option value="11 am">11 am</option>
@@ -174,15 +169,14 @@ const Availability=(props)=>{
                                                                                             <option value="4 pm">4 pm</option>
                                                                                             <option value="5 pm">5 pm</option>
                                                                                             <option value="6 pm">6 pm</option>
-                                                                                            <option value="7 pm">7 pm</option>
+                                                                                   
                                                                             </select>
-                                                                    </div>
-                                                                    <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
-                                                                    <div className="avl-end w-[48%]"> 
+                                                                        </div>
+                                                                        <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        <div className="avl-end w-[48%]"> 
                                                                              <select type="text" className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                             <option value="Close">Close</option>
-                                                                                            <option value="10 am">10 am</option>
-                                                                                            <option value="11 am">11 am</option>
+                                                                                          <option value="Clsoe"><span className="font-medium">Clsoe</span> </option>
+                                                                                          <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
                                                                                             <option value="11 am">2 pm</option>
@@ -196,7 +190,7 @@ const Availability=(props)=>{
                                                                                             <option value="8 pm">10 pm</option>
                                                                                         
                                                                             </select>
-                                                                    </div>
+                                                                         </div>
                                                                     </div>
                                                             </div>
 
@@ -207,11 +201,10 @@ const Availability=(props)=>{
                                                             <div className="avl-row flex  justify-between items-center space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
                                                                     <div className="avl-day text-sm md:text-xl"><p>Wednesday :</p></div>
                                                                     <div className="flex justify-between items-center w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
-                                                                    <div className="avl-start w-[48%]"> 
+                                                                        <div className="avl-start w-[48%]"> 
                                                                              <select type="text" className=" text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                            <option value="Start">Start</option>
-                                                                                            <option value="7 am">7 am</option>
-                                                                                            <option value="8 am">8 am</option>
+                                                                                            <option value="Start"><span className="font-medium">Start</span> </option>
+                                                                                            <option value="Any">Any</option>
                                                                                             <option value="9 am">9 am</option>
                                                                                             <option value="10 am">10 am</option>
                                                                                             <option value="11 am">11 am</option>
@@ -222,15 +215,14 @@ const Availability=(props)=>{
                                                                                             <option value="4 pm">4 pm</option>
                                                                                             <option value="5 pm">5 pm</option>
                                                                                             <option value="6 pm">6 pm</option>
-                                                                                            <option value="7 pm">7 pm</option>
+                                                                                   
                                                                             </select>
-                                                                    </div>
-                                                                    <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
-                                                                    <div className="avl-end w-[48%]"> 
+                                                                        </div>
+                                                                        <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        <div className="avl-end w-[48%]"> 
                                                                              <select type="text" className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                             <option value="Close">Close</option>
-                                                                                            <option value="10 am">10 am</option>
-                                                                                            <option value="11 am">11 am</option>
+                                                                                          <option value="Clsoe"><span className="font-medium">Clsoe</span> </option>
+                                                                                          <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
                                                                                             <option value="11 am">2 pm</option>
@@ -244,7 +236,7 @@ const Availability=(props)=>{
                                                                                             <option value="8 pm">10 pm</option>
                                                                                         
                                                                             </select>
-                                                                    </div>
+                                                                         </div>
                                                                     </div>
                                                             </div>
 
@@ -255,11 +247,10 @@ const Availability=(props)=>{
                                                             <div className="avl-row flex  justify-between items-center space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
                                                                     <div className="avl-day text-sm md:text-xl"><p>Thursday :</p></div>
                                                                     <div className="flex justify-between items-center w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
-                                                                    <div className="avl-start w-[48%]"> 
+                                                                        <div className="avl-start w-[48%]"> 
                                                                              <select type="text" className=" text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                            <option value="Start">Start</option>
-                                                                                            <option value="7 am">7 am</option>
-                                                                                            <option value="8 am">8 am</option>
+                                                                                            <option value="Start"><span className="font-medium">Start</span> </option>
+                                                                                            <option value="Any">Any</option>
                                                                                             <option value="9 am">9 am</option>
                                                                                             <option value="10 am">10 am</option>
                                                                                             <option value="11 am">11 am</option>
@@ -270,15 +261,14 @@ const Availability=(props)=>{
                                                                                             <option value="4 pm">4 pm</option>
                                                                                             <option value="5 pm">5 pm</option>
                                                                                             <option value="6 pm">6 pm</option>
-                                                                                            <option value="7 pm">7 pm</option>
+                                                                                   
                                                                             </select>
-                                                                    </div>
-                                                                    <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
-                                                                    <div className="avl-end w-[48%]"> 
+                                                                        </div>
+                                                                        <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        <div className="avl-end w-[48%]"> 
                                                                              <select type="text" className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                             <option value="Close">Close</option>
-                                                                                            <option value="10 am">10 am</option>
-                                                                                            <option value="11 am">11 am</option>
+                                                                                          <option value="Clsoe"><span className="font-medium">Clsoe</span> </option>
+                                                                                          <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
                                                                                             <option value="11 am">2 pm</option>
@@ -292,7 +282,7 @@ const Availability=(props)=>{
                                                                                             <option value="8 pm">10 pm</option>
                                                                                         
                                                                             </select>
-                                                                    </div>
+                                                                         </div>
                                                                     </div>
                                                             </div>
 
@@ -303,11 +293,10 @@ const Availability=(props)=>{
                                                             <div className="avl-row flex  justify-between items-center space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
                                                                     <div className="avl-day text-sm md:text-xl"><p>Friday :</p></div>
                                                                     <div className="flex justify-between items-center w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
-                                                                    <div className="avl-start w-[48%]"> 
+                                                                        <div className="avl-start w-[48%]"> 
                                                                              <select type="text" className=" text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                            <option value="Start">Start</option>
-                                                                                            <option value="7 am">7 am</option>
-                                                                                            <option value="8 am">8 am</option>
+                                                                                            <option value="Start"><span className="font-medium">Start</span> </option>
+                                                                                            <option value="Any">Any</option>
                                                                                             <option value="9 am">9 am</option>
                                                                                             <option value="10 am">10 am</option>
                                                                                             <option value="11 am">11 am</option>
@@ -318,15 +307,14 @@ const Availability=(props)=>{
                                                                                             <option value="4 pm">4 pm</option>
                                                                                             <option value="5 pm">5 pm</option>
                                                                                             <option value="6 pm">6 pm</option>
-                                                                                            <option value="7 pm">7 pm</option>
+                                                                                   
                                                                             </select>
-                                                                    </div>
-                                                                    <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
-                                                                    <div className="avl-end w-[48%]"> 
+                                                                        </div>
+                                                                        <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        <div className="avl-end w-[48%]"> 
                                                                              <select type="text" className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                             <option value="Close">Close</option>
-                                                                                            <option value="10 am">10 am</option>
-                                                                                            <option value="11 am">11 am</option>
+                                                                                          <option value="Clsoe"><span className="font-medium">Clsoe</span> </option>
+                                                                                          <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
                                                                                             <option value="11 am">2 pm</option>
@@ -340,7 +328,7 @@ const Availability=(props)=>{
                                                                                             <option value="8 pm">10 pm</option>
                                                                                         
                                                                             </select>
-                                                                    </div>
+                                                                         </div>
                                                                     </div>
                                                             </div>
 
@@ -351,11 +339,10 @@ const Availability=(props)=>{
                                                             <div className="avl-row flex  justify-between items-center space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
                                                                     <div className="avl-day text-sm md:text-xl"><p>Saturday :</p></div>
                                                                     <div className="flex justify-between items-center w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
-                                                                    <div className="avl-start w-[48%]"> 
+                                                                        <div className="avl-start w-[48%]"> 
                                                                              <select type="text" className=" text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                            <option value="Start">Start</option>
-                                                                                            <option value="7 am">7 am</option>
-                                                                                            <option value="8 am">8 am</option>
+                                                                                            <option value="Start"><span className="font-medium">Start</span> </option>
+                                                                                            <option value="Any">Any</option>
                                                                                             <option value="9 am">9 am</option>
                                                                                             <option value="10 am">10 am</option>
                                                                                             <option value="11 am">11 am</option>
@@ -366,15 +353,14 @@ const Availability=(props)=>{
                                                                                             <option value="4 pm">4 pm</option>
                                                                                             <option value="5 pm">5 pm</option>
                                                                                             <option value="6 pm">6 pm</option>
-                                                                                            <option value="7 pm">7 pm</option>
+                                                                                   
                                                                             </select>
-                                                                    </div>
-                                                                    <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
-                                                                    <div className="avl-end w-[48%]"> 
+                                                                        </div>
+                                                                        <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        <div className="avl-end w-[48%]"> 
                                                                              <select type="text" className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                             <option value="Close">Close</option>
-                                                                                            <option value="10 am">10 am</option>
-                                                                                            <option value="11 am">11 am</option>
+                                                                                          <option value="Clsoe"><span className="font-medium">Clsoe</span> </option>
+                                                                                          <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
                                                                                             <option value="11 am">2 pm</option>
@@ -388,7 +374,7 @@ const Availability=(props)=>{
                                                                                             <option value="8 pm">10 pm</option>
                                                                                         
                                                                             </select>
-                                                                    </div>
+                                                                         </div>
                                                                     </div>
                                                             </div>
 

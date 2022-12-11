@@ -32,7 +32,7 @@ const Footer=(props)=>{
                 <div className="max-w-7xl mx-auto px-4"> 
                     <div className="footer-info-row max-w-[850px]  mx-auto pt-20">
                         <div className="footer-logo text-center">
-                            <img className='max-w-[120px] mx-auto' src="/assets/svg/logo.svg"></img>
+                            <img className='max-w-[120px] mx-auto' src="/assets/svg/All-In-Adventures-Logo.svg"></img>
                             {/* svg image will be added */}
                         </div>
                         <div className='footer-info text-center'>

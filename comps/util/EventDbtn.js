@@ -18,9 +18,9 @@ const EventDbtn=(props)=>{
              <div className="bg-[#FEF6E9] hover:bg-golden-alt  rounded-full items-center  text-[#424242] md:text-lg gont-medium">
                  
                        
-                        <Link href={props.link}>
-                            <a className="block py-2 px-6  md:py-3 md:px-8">{props.label}</a>
-                        </Link>
+                       
+                            <a href={props.link} className="block py-2 px-6  md:py-3 md:px-8">{props.label}</a>
+                      
                  
     
             </div>

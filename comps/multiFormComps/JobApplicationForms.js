@@ -49,7 +49,7 @@ const JobApplicationForms=(props)=>{
     return (
         <div className="job-form">
             <div className="job-form-head"> 
-                <div className="job-name flex justify-between mb-4"><h3 className="font-medium text-2xl text-[#464646]">{formName}</h3><p className="font-medium text-lg text-[#464646]">Step {formStep+1} of 5</p></div>
+                <div className="job-name flex justify-between mb-4"><h3 className="font-medium text-2xl text-[#464646]">{formName}</h3><p className="font-medium text-lg text-[#464646]">Step {formStep+1} of 6</p></div>
                 <div className="bg-[#cdcdcd] rounded"> 
                     <div className={"bg-golden-alt h-[4px] rounded"} style={{width:getPw()+"%"}}></div>
                 </div>

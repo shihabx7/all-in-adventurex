@@ -50,13 +50,13 @@ const ApplicantInfo2=(props)=>{
                                                                Assistant Manager
                                                                </option>
                                                                <option value="Associate">
-                                                               Store Manger
+                                                               Store Manager
                                                                </option>
                                                                <option value="Associate">
                                                                Area Store Manager
                                                                </option>
                                                                <option value="Associate">
-                                                               Regional Store manager
+                                                               Regional Store Manager
                                                                </option>
                                              </select>
                                              <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden">Phone *</p>
@@ -66,9 +66,11 @@ const ApplicantInfo2=(props)=>{
                 {/*========================  contact form row pay range + d schedule=======================*/}
                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between my-3">
                                             <div className="form-col w-full md:w-[48%]">
-                                                <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Pay Range Desired</p>
+                                                <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Desired ($) Pay</p>
                                                 <input 
-                                                    type="number" 
+                                                    type="number"
+                                                    min="0"
+                                                    
                                                     className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green" 
                                                     placeholder=" " 
                                                     pattern="[0-9 ]{3,20}"
@@ -96,7 +98,7 @@ const ApplicantInfo2=(props)=>{
                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between my-4">
                                             <div className="form-col w-full md:w-[48%]">
                                              <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Are you 18 years of age or older?*</p>
-                                                <div className="flex space-x-8 items-center mt-2 md:mt-4"> 
+                                            <div className="flex space-x-8 items-center mt-2 md:mt-4"> 
                                                 <div className="flex space-x-3 items-center"> 
                                                   <input
                                                        type="radio"
@@ -118,7 +120,7 @@ const ApplicantInfo2=(props)=>{
                                                             />
                                                      <label htmlFor="age-no">No</label>
                                                      </div>  
-                                                </div>
+                                            </div>
                                                     
                                                 
                                                 <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden">email *</p>

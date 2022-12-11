@@ -29,10 +29,17 @@ const CareerHero=(props)=>{
 
                         }
                         {
-                            props.jobname &&
-                            <Link href="mailto:careers@allinadventures.com" hpassHref>
-                                <a className="block py-3 px-10 bg-red-600 hover:bg-red-700 text-white text-center md:text-lg rounded-full">SUBMIT YOUR APPLICATION</a>
-                            </Link>
+                            (props.jobname && props.jobid) &&
+                            
+                                <a href={"/careers/apply#"+props.jobid} className="block py-3 px-10 bg-red-600 hover:bg-red-700 text-white text-center md:text-lg rounded-full">SUBMIT YOUR APPLICATION</a>
+                         
+                            
+                        }
+                        {
+                            (props.jobname && !props.jobid) &&
+                            
+                                <a href={"/careers/apply"} className="block py-3 px-10 bg-red-600 hover:bg-red-700 text-white text-center md:text-lg rounded-full">SUBMIT YOUR APPLICATION</a>
+                         
                             
                         }
                            

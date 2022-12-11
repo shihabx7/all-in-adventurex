@@ -8,6 +8,7 @@ import { getTotal } from "../AllDataList/getTotal"
 import { getLocTotal } from "../AllDataList/getLocTotal"
 
 
+
 export const getSingleEventPageData=(eventslug,locationslug)=>{
 
      const bookinglist=bookingList('',locationslug)  
@@ -1489,10 +1490,17 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
              "bookingall":{
               "shortname":bookinglist.shortname,
               
-          }
+               },
+               "eventbooking":{
+
+                "shortname":bookinglist.shortname,
+                   "item" :bookinglist["party-package"].item,
+                   "flow" :bookinglist["party-package"].flow,
+                   "eventstatus":bookinglist["party-package"].eventstatus,
+                 },
          },
          "eventdata":eventlocdata[eventslug].eventdata,
- 
+         
           "reviews":eventlocdata[eventslug].reviews,  
           "contactdata":getLocSpec(locationslug) ,
           "activitylist":getLocationActivitySlugList(locationslug),

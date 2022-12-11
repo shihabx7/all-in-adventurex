@@ -6,6 +6,7 @@ import Homenav from '../../../comps/Homenav';
 import Head from 'next/head';
 import { FiChevronRight } from "react-icons/fi";
 import { getLocationsEventList } from '../../api/LocationIndData/getLocationsEventList';
+import EventLocHero from '../../../comps/eventPageComps/EventLocHero';
 import GameLocHero from '../../../comps/activitiyPageComps/GameLocHero';
 import GameLocList from '../../../comps/activitiyPageComps/GameLocList';
 import BreadcumNew from '../../../comps/util/BreadcumNew';
@@ -31,6 +32,7 @@ const LocEventList=(props)=>{
      return (
          <>
              <Homenav locationslug={props.pagedata.locationslug}
+                    eventbooking={props.pagedata.eventbooking}
                      bookingall={props.pagedata.bookingall} 
                      location={getLoc(props.pagedata.locationslug)}
                      activitylist={props.activitylistSlug}
@@ -52,8 +54,8 @@ const LocEventList=(props)=>{
                                  <div className='text-red'>{props.slug}</div>
                          {/* =======header content and breadcum======== end */}
                          {/* ===========Page Content here=========  <> */}
-                         <GameLocHero pagedata={props.pagedata}/>
-                         <EventList events={props.eventLocList} locationslug="albany-ny"/>
+                         <EventLocHero pagedata={props.pagedata} eventbooking={props.pagedata.eventbooking}/>
+                         <EventList events={props.eventLocList} eventbooking={props.pagedata.eventbooking} locationslug="albany-ny" />
                          
                          <EventContact contactdata={props.contactdata} locationlist={props.locationlist} eventlist={props.eventlist}/>
                         

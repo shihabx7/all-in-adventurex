@@ -80,6 +80,7 @@ const location=(props)=>{
      <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
             <Homenav locationslug={props.pagedata.slug} 
                         bookingall={props.pagedata.bookingall} 
+                        eventbooking={props.eventbooking}
                          location={props.pagedata.locationcity+", "+props.pagedata.locationstate}
                          activitylist={props.activitylist}
                          eventlist={props.eventlist}
@@ -127,7 +128,7 @@ const location=(props)=>{
                                 <VirtualEscapeSlider bgicon="none" virtualgames={props.virtualgames}/>
                              }
                            
-                             <PlaningEventsSlider city={props.pagedata.locationcity} state={props.pagedata.locationstate} events={props.events} locationslug={props.pagedata.slug}/>
+                             <PlaningEventsSlider eventbooking={props.eventbooking} city={props.pagedata.locationcity} state={props.pagedata.locationstate} events={props.events} locationslug={props.pagedata.slug}/>
                              <BuyGiftCard locationslug={props.pagedata.slug}  bookingData={props.bookingData}/>
                              <WhatIsEscape/>
                             <WhoCanplay/>
@@ -178,6 +179,7 @@ export const getStaticProps=async(context)=>{
             events:locationHomedata.events,
             reviews:locationHomedata.locationreviews,
             bookingData:locationHomedata.bookingData,
+            eventbooking:locationHomedata.eventbooking,
             activitylist:locationHomedata.activitylist,
             eventlist:locationHomedata.eventlist,
             locationlist:locationHomedata.locationlist

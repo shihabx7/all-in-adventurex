@@ -28,6 +28,7 @@ const ViewContactStore=(props)=>{
             <Homenav locationslug={props.pagedata.locationslug}
                      location={getLoc(props.pagedata.locationslug)}
                       bookingall={props.pagedata.bookingall}
+                      eventbooking={props.pagedata.eventbooking}
                       activitylist={props.activitylist}
                       eventlist={props.eventlist}
                       locationlist={props.locationlist}

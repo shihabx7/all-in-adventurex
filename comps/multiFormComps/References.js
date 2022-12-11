@@ -33,7 +33,7 @@ const References=(props)=>{
             <div className="form-holedr"> 
                  {/*========================  contact form job ref =======================*/}
                
-                        <p className=" text-gray-700 mt-4 pb-2">Please list (min-1) professional references who can provide a reference of your character and skills – no friends, family members, etc. Note: At least one (1) of the references must be from a current or former supervisor and include their work contact information. If you have never been employed, your references should be someone such as a school leader, teacher, coach or a professional mentor.</p>
+                        <p className=" text-gray-700 mt-4 pb-2">List your last three (3) professional references who can provide a reference of your character and skills - no friends, family members, etc. Note: At least one (1) of the references must be from a current or former supervisor and include their work contact information. If you have never been employed, your references should be someone such as a school leader, teacher, coach or a professional mentor.</p>
                          {/*========================  contact form job ref 1=======================*/}
                         <div className="form-exp-box bg-[#FFF7EA] p-4 md:p-6 mt-4 shadow-md"> 
                              <div className="f-job-head flex justify-between items-center cursor-pointer" onClick={()=>{exp==1? setExp(null):setExp(1)}}> 
@@ -95,7 +95,7 @@ const References=(props)=>{
                                                         <option value="Co-Worker/Peer">Co-Worker/Peer</option>
                                                         <option value="Mentor/Coach/Teacher">Mentor/Coach/Teacher</option>
                                                         <option value="Pastor">Pastor</option>
-                                                        <option value="Pastor">Friend</option>
+                                             
                                                     </select>
                                                     <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden">First name? *</p>
                                         </div>
@@ -208,7 +208,7 @@ const References=(props)=>{
                                                         <option value="Co-Worker/Peer">Co-Worker/Peer</option>
                                                         <option value="Mentor/Coach/Teacher">Mentor/Coach/Teacher</option>
                                                         <option value="Pastor">Pastor</option>
-                                                        <option value="Pastor">Friend</option>
+                                                     
                                                     </select>
                                                     <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden">First name? *</p>
                                         </div>
@@ -321,7 +321,7 @@ const References=(props)=>{
                                                         <option value="Co-Worker/Peer">Co-Worker/Peer</option>
                                                         <option value="Mentor/Coach/Teacher">Mentor/Coach/Teacher</option>
                                                         <option value="Pastor">Pastor</option>
-                                                        <option value="Pastor">Friend</option>
+                                                     
                                                     </select>
                                                     <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden">First name? *</p>
                                         </div>

@@ -1,7 +1,7 @@
 
 import Script from "next/script";
 
-const GameLocHero=(props)=>{
+const EventLocHero=(props)=>{
     
     const bookAll=(bookingData)=>{
         FH.open({
@@ -54,58 +54,32 @@ const GameLocHero=(props)=>{
                  <div className='text-gray-100 max-w-[800px] mx-auto text-center lg:text-lg'  dangerouslySetInnerHTML={{ __html: props.pagedata.pagesubtitle  }}></div>
                  </div>
                 <div className="max-w-md mx-auto mt-8 ">
+                    {/*============party-booking  search btn==========*/}
+                     {
+                            props.eventbooking.eventstatus &&
+                           
+                           
+                                 <button onClick={()=>bookGame(props.eventbooking)} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BOOK YOUR PARTY</button>
+            
+                        }
+                         {
+                           !props.eventbooking.eventstatus &&
+                            
+                            <a href={"/"+props.pagedata.locationslug+"/events#eventform"} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BOOK YOUR PARTY</a>
+                        
+                        }
 
                         {/*============location search btn==========*/}
                         {
                             (props.pagedata.bookingall && props.pagedata.publish_status==true) &&
-                            <button onClick={()=>bookAll(props.pagedata.bookingall)} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BOOK GAMES</button>
+                            <button onClick={()=>bookAll(props.pagedata.bookingall)} className="block w-full mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">BOOK YOUR GAMES</button>
                         }
                          {
                             (props.pagedata.bookingall && props.pagedata.publish_status==false) &&
-                            <button className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">COMING SOON</button>
+                            <button className="block mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">COMING SOON</button>
                         }
-                        {
-                           (props.pagedata.bookingdata && props.pagedata.publish_status==true) &&
-                            <button onClick={()=>bookGame(props.pagedata.bookingdata)} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BOOK THIS GAME</button>
-                        }
-                        {
-                           (props.pagedata.bookingdata && props.pagedata.publish_status==false) &&
-                            <button className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">COMING SOON</button>
-                        }
-                        {
-                            (props.pagedata.eventbooking && props.eventslug) && 
-                            <>
-                            {
-                                props.pagedata.eventbooking.eventstatus==true &&
-                                <button onClick={()=>{bookGame(props.pagedata.eventbooking)}} className="block mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">{props.pagedata.bookingall? "BOOK A PARTY":"BOOK YOUR PARTY"}</button>
-                            }
-                            {
-                                props.pagedata.eventbooking.eventstatus==false &&
-                                <a href="#eventform" className="block mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">{props.pagedata.bookingall? "BOOK A PARTY":"BOOK YOUR PARTY"}</a>
-                            }
-                            </>
-                        }
-                        {
-                            (props.eventslug && !props.pagedata.eventbooking) &&
-                            
-                            <a href="#eventform" className="block mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">BOOK EVENTS</a>
-                       
-                        }
-                         {
-                            (!props.eventslug && props.pagedata.eventbooking)  &&
-                            <>
-                            {props.pagedata.eventbooking.eventstatus==true &&
-                             <button onClick={()=>{bookGame(props.pagedata.eventbooking)}} className="w-full block mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">{props.pagedata.bookingall? "BOOK A PARTY":"BOOK YOUR PARTY"}</button>
-                            }
-                            {props.pagedata.eventbooking.eventstatus==false &&
-                             <a  href={"/"+props.pagedata.slug+"/events#eventform" }className="w-full block mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">{props.pagedata.bookingall? "BOOK A PARTY":"BOOK YOUR PARTY"}</a>
-                            }
-                            </>
-                            
-                           
                         
-                        }
-                    
+                        
                        
                        
                         
@@ -201,4 +175,4 @@ const GameLocHero=(props)=>{
     )
 }
 
-export default GameLocHero;
+export default EventLocHero;
