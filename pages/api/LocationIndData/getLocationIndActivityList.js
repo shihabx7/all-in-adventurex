@@ -1181,6 +1181,7 @@ const LocActivityData={
                 "activity_type":"In-person",
                 "activity_category":"other",
                 "age":"All Ages (13+)",
+                "groupcat":"Per Lane",
                 "min_player":"2",
                 "max_player":"4",
                 "price":"29.89",

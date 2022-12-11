@@ -101,7 +101,7 @@ const PysicalCarousel=(props)=>{
                     <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm">{othergame.type}</span>  </p>
                         <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm">{othergame.age}</span>  </p> 
                         <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-time.svg"></img></span><span className="text-sm">{othergame.duration} Minutes</span>  </p>
-                        <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm">{othergame.minplayers}{othergame.maxplayers!="" && <span> -</span>} {othergame.maxplayers} {(othergame.maxplayers!='')? 'Players':"Player"}</span>  </p>
+                        <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-xs md:text-sm">{othergame.minplayers}{othergame.maxplayers!="" && <span> -</span>} {othergame.maxplayers} {(othergame.maxplayers!='')? 'Players':"Player"}{othergame.groupcat? " / "+othergame.groupcat:''}</span> </p>
                     </div>
                     <div className="card-ribbon">
                             <div className="inline-block text-center py-2 px-4 bg-red-600">

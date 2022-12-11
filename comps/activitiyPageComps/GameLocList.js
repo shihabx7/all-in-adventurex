@@ -51,7 +51,7 @@ const GameLocList=(props)=>{
                                             <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm md:text-base">{activity.activity_type}</span>  </p>
                                             <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm md:text-base">{activity.age}</span>  </p> 
                                             <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-time.svg"></img></span><span className="text-sm md:text-base">{activity.duration} Minutes</span>  </p>
-                                            <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm md:text-base">{activity.min_player}-{activity.max_player} Players</span>  </p>
+                                            <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm md:text-base">{activity.min_player}-{activity.max_player} Players{activity.groupcat? " / "+activity.groupcat:''}</span>  </p>
 
                                         </div>
                                         <div className="card-ribbon">
@@ -116,7 +116,7 @@ const GameLocList=(props)=>{
                                             <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/inperson.svg"></img></span><span className="text-sm md:text-base">{activity.activity_type}</span>  </p>
                                             <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-age.svg"></img></span><span className="text-sm md:text-base">{activity.age}</span>  </p> 
                                             <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-time.svg"></img></span><span className="text-sm md:text-base">{activity.duration} Minutes</span>  </p>
-                                            <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm md:text-base">{activity.min_player==activity.max_player? activity.min_player:activity.min_player+"-"+activity.max_player}{activity.max_player<2? " Player":" Players"}</span>  </p>
+                                            <p className="flex items-center space-x-2 text-gray-50 my-1"><span><img src="/assets/svg/card-person.svg"></img></span><span className="text-sm md:text-base">{activity.min_player==activity.max_player? activity.min_player:activity.min_player+"-"+activity.max_player}{activity.max_player<2? " Player":" Players"}{activity.groupcat? "/ "+activity.groupcat:''}</span>  </p>
 
                                         </div>
                                         <div className="card-ribbon">
