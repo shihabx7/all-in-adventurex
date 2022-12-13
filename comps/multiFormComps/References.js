@@ -33,7 +33,7 @@ const References=(props)=>{
             <div className="form-holedr"> 
                  {/*========================  contact form job ref =======================*/}
                
-                        <p className=" text-gray-700 mt-4 pb-2">List your last three (3) professional references who can provide a reference of your character and skills - no friends, family members, etc. Note: At least one (1) of the references must be from a current or former supervisor and include their work contact information. If you have never been employed, your references should be someone such as a school leader, teacher, coach or a professional mentor.</p>
+                        <p className=" text-gray-700 mt-4 pb-2">List three (3) professional references who can provide a testimonial of your character and skills - no friends, family members, etc. Note: At least one (1) of the references must be from a current or former supervisor and include their work contact information. If you have never been employed, your references should be someone such as a school leader, teacher, coach or a professional mentor.</p>
                          {/*========================  contact form job ref 1=======================*/}
                         <div className="form-exp-box bg-[#FFF7EA] p-4 md:p-6 mt-4 shadow-md"> 
                              <div className="f-job-head flex justify-between items-center cursor-pointer" onClick={()=>{exp==1? setExp(null):setExp(1)}}> 

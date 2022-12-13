@@ -83,7 +83,7 @@ const Availability=(props)=>{
                                                                         <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
                                                                         <div className="avl-end w-[48%]"> 
                                                                              <select type="text" className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                          <option value="Clsoe"><span className="font-medium">Clsoe</span> </option>
+                                                                                          <option value="Close"><span className="font-medium">Close</span> </option>
                                                                                           <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
@@ -129,7 +129,7 @@ const Availability=(props)=>{
                                                                         <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
                                                                         <div className="avl-end w-[48%]"> 
                                                                              <select type="text" className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                          <option value="Clsoe"><span className="font-medium">Clsoe</span> </option>
+                                                                                          <option value="Close"><span className="font-medium">Close</span> </option>
                                                                                           <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
@@ -175,7 +175,7 @@ const Availability=(props)=>{
                                                                         <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
                                                                         <div className="avl-end w-[48%]"> 
                                                                              <select type="text" className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                          <option value="Clsoe"><span className="font-medium">Clsoe</span> </option>
+                                                                                          <option value="Close"><span className="font-medium">Close</span> </option>
                                                                                           <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
@@ -221,7 +221,7 @@ const Availability=(props)=>{
                                                                         <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
                                                                         <div className="avl-end w-[48%]"> 
                                                                              <select type="text" className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                          <option value="Clsoe"><span className="font-medium">Clsoe</span> </option>
+                                                                                          <option value="Close"><span className="font-medium">Close</span> </option>
                                                                                           <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
@@ -267,7 +267,7 @@ const Availability=(props)=>{
                                                                         <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
                                                                         <div className="avl-end w-[48%]"> 
                                                                              <select type="text" className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                          <option value="Clsoe"><span className="font-medium">Clsoe</span> </option>
+                                                                                          <option value="Close"><span className="font-medium">Close</span> </option>
                                                                                           <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
@@ -313,7 +313,7 @@ const Availability=(props)=>{
                                                                         <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
                                                                         <div className="avl-end w-[48%]"> 
                                                                              <select type="text" className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                          <option value="Clsoe"><span className="font-medium">Clsoe</span> </option>
+                                                                                          <option value="Close"><span className="font-medium">Close</span> </option>
                                                                                           <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
@@ -359,7 +359,7 @@ const Availability=(props)=>{
                                                                         <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
                                                                         <div className="avl-end w-[48%]"> 
                                                                              <select type="text" className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                          <option value="Clsoe"><span className="font-medium">Clsoe</span> </option>
+                                                                                          <option value="Close"><span className="font-medium">Close</span> </option>
                                                                                           <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>

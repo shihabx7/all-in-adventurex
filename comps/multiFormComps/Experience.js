@@ -24,11 +24,11 @@ const Experience=(props)=>{
                                 <div className="f-job-bottom mt-2 border-t border-gray-300"> 
                                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between my-3">
                                            <div className="form-col w-full md:w-[48%]">
-                                               <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Employer' Name</p>
+                                               <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Company Name</p>
                                                <input 
                                                    type="text" 
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
-                                                   placeholder="Your employer's name" 
+                                                   placeholder="Your company name" 
                                                    pattern="[a-zA-z ]{3,20}"
                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                    required>
@@ -80,7 +80,7 @@ const Experience=(props)=>{
                                            <div className="form-col w-full md:w-[48%]">
                                                <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Dates of Employment (Mo/Year)</p>
                                                <input 
-                                                   type="date"
+                                                   type="text"
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
                                                    placeholder="Your first name" 
                                                    pattern="[a-zA-z ]{3,20}"
@@ -147,11 +147,11 @@ const Experience=(props)=>{
                                 <div className="f-job-bottom mt-2 border-t border-gray-300"> 
                                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between my-3">
                                            <div className="form-col w-full md:w-[48%]">
-                                               <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Employer's Name</p>
+                                               <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Company Name</p>
                                                <input 
                                                    type="text" 
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
-                                                   placeholder="Your employer's Name" 
+                                                   placeholder="Your company name" 
                                                    pattern="[a-zA-z ]{3,20}"
                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                    required>
@@ -203,7 +203,7 @@ const Experience=(props)=>{
                                            <div className="form-col w-full md:w-[48%]">
                                                <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Dates of Employment (Mo/Year)</p>
                                                <input 
-                                                   type="date"
+                                                   type="text"
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
                                                    placeholder="" 
                                                    pattern="[a-zA-z ]{3,20}"
@@ -270,11 +270,11 @@ const Experience=(props)=>{
                                 <div className="f-job-bottom mt-2 border-t border-gray-300"> 
                                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between my-3">
                                            <div className="form-col w-full md:w-[48%]">
-                                               <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Employer's Name</p>
+                                               <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Company Name</p>
                                                <input 
                                                    type="text" 
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
-                                                   placeholder="Your employer's name" 
+                                                   placeholder="Your company name" 
                                                    pattern="[a-zA-z ]{3,20}"
                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                    required>
@@ -326,7 +326,7 @@ const Experience=(props)=>{
                                            <div className="form-col w-full md:w-[48%]">
                                                <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Dates of Employment (Mo/Year)</p>
                                                <input 
-                                                   type="date"
+                                                   type="text"
                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" 
                                                    placeholder="" 
                                                    pattern="[a-zA-z ]{3,20}"

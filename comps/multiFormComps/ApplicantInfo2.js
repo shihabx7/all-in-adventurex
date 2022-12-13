@@ -84,7 +84,7 @@ const ApplicantInfo2=(props)=>{
                                                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Desired Schedule (i.e. FT/PT)*</p>
                                                 <input  type="text"
                                                         className=" w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-red"
-                                                        placeholder="9 am - 6 pm"
+                                                        placeholder="..."
                                                         pattern="[a-zA-z ]{3,20}"
                                                         title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                         required>
