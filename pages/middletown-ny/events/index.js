@@ -1,13 +1,12 @@
-import { useRouter } from 'next/router'
+
 
 import Footer from '../../../comps/Footer';
 import Homenav from '../../../comps/Homenav';
 
 import Head from 'next/head';
-import { FiChevronRight } from "react-icons/fi";
+
 import { getLocationsEventList } from '../../api/LocationIndData/getLocationsEventList';
-import GameLocHero from '../../../comps/activitiyPageComps/GameLocHero';
-import GameLocList from '../../../comps/activitiyPageComps/GameLocList';
+import EventLocHero from '../../../comps/eventPageComps/EventLocHero';
 import BreadcumNew from '../../../comps/util/BreadcumNew';
 import EventList from '../../../comps/activitiyPageComps/EventList';
 import EventContact from '../../../comps/eventPageComps/EventContact';
@@ -31,7 +30,8 @@ const LocEventList=(props)=>{
      return (
          <>
              <Homenav locationslug={props.pagedata.locationslug}
-                     bookingall={props.pagedata.bookingall} 
+                     bookingall={props.pagedata.bookingall}
+                     eventbooking={props.pagedata.eventbooking} 
                      location={getLoc(props.pagedata.locationslug)}
                      activitylist={props.activitylistSlug}
                      eventlist={props.eventlist}
@@ -52,8 +52,8 @@ const LocEventList=(props)=>{
                                  <div className='text-red'>{props.slug}</div>
                          {/* =======header content and breadcum======== end */}
                          {/* ===========Page Content here=========  <> */}
-                         <GameLocHero pagedata={props.pagedata}/>
-                         <EventList events={props.eventLocList} locationslug="middletown-ny"/>
+                         <EventLocHero pagedata={props.pagedata} eventbooking={props.pagedata.eventbooking}/>
+                         <EventList events={props.eventLocList} eventbooking={props.pagedata.eventbooking}  locationslug="middletown-ny"/>
                          
                          <EventContact contactdata={props.contactdata} locationlist={props.locationlist} eventlist={props.eventlist}/>
                         

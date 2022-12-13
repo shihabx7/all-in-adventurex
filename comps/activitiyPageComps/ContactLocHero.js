@@ -98,7 +98,7 @@ const ContactLocHero=(props)=>{
                              <button onClick={()=>{bookGame(props.pagedata.eventbooking)}} className="w-full block mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">BOOK YOUR PARTY</button>
                             }
                             {props.pagedata.eventbooking.eventstatus==false &&
-                             <a  href={"/"+props.pagedata.slug+"/events#eventform" }className="w-full block mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">BOOK YOUR PARTY</a>
+                             <a  href={"/"+props.pagedata.locationslug+"/events#eventform" }className="w-full block mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">BOOK YOUR PARTY</a>
                             }
                             </>
                             

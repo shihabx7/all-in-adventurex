@@ -24,6 +24,7 @@ const LocSingleActivity=(props)=>{
          <>
              <Homenav locationslug={props.pagedata.locationslug} 
                         bookinggame={props.pagedata.bookingdata} 
+                        eventbooking={props.pagedata.eventbooking} 
                         location={props.pagedata.location_serach_name}
                         activitylist={props.activitylist}
                         eventlist={props.eventlist}

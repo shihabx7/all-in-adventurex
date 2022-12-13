@@ -23,7 +23,8 @@ const LocSingleActivity=(props)=>{
      return (
          <>
              <Homenav locationslug={props.pagedata.locationslug} 
-                        bookinggame={props.pagedata.bookingdata} 
+                        bookinggame={props.pagedata.bookingdata}
+                        eventbooking={props.pagedata.eventbooking}  
                         location={props.pagedata.location_serach_name}
                         activitylist={props.activitylist}
                         eventlist={props.eventlist}
@@ -59,7 +60,7 @@ const LocSingleActivity=(props)=>{
  
                  </div>
  
-             <Footer  location="holyoke, ma" locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
+             <Footer  location="Kingston, ma" locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
          </>
  
      )
@@ -91,7 +92,7 @@ export const getStaticPaths=async()=>{
     //var router = useRouter()
    // routerSlug=routerSlug.split('-')
   
-    const locationHomedata=getLocationSingleActivitypageData(context.params.activitySlug,"holyoke-ma")
+    const locationHomedata=getLocationSingleActivitypageData(context.params.activitySlug,"kingston-ma")
    
     
 

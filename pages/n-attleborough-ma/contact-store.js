@@ -1,12 +1,13 @@
-import { useRouter } from 'next/router'
+
 
 import Footer from '../../comps/Footer';
 import Homenav from '../../comps/Homenav';
 import BreadcumNew from '../../comps/util/BreadcumNew';
 import Head from 'next/head';
 import { getLocationIndContactPageData } from '../api/LocationIndData/getLocationIndContactPageData';
-import GameLocHero from '../../comps/activitiyPageComps/GameLocHero';
+import ContactLocHero from '../../comps/activitiyPageComps/ContactLocHero';
 import StoreContact from '../../comps/contactComps/StoreContact';
+import Seofields from '../../comps/util/SeoFields';
 
 
 const ViewContactStore=(props)=>{
@@ -30,6 +31,7 @@ const ViewContactStore=(props)=>{
             <Homenav locationslug={props.pagedata.locationslug}
                      location={getLoc(props.pagedata.locationslug)}
                       bookingall={props.pagedata.bookingall}
+                      eventbooking={props.pagedata.eventbooking}
                       activitylist={props.activitylist}
                       eventlist={props.eventlist}
                       locationlist={props.locationlist}
@@ -49,7 +51,7 @@ const ViewContactStore=(props)=>{
                                  
                          {/* =======header content and breadcum======== end */}
                          {/* ===========Page Content here=========*/}
-                         <GameLocHero pagedata={props.pagedata} gametotal="not"/>
+                         <ContactLocHero pagedata={props.pagedata} gametotal="not"/>
                          <StoreContact contactdata={props.contactdata}/>
                          
                        

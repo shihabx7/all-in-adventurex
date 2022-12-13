@@ -31,6 +31,7 @@ const LocActivity=(props)=>{
      return (
          <>
              <Homenav locationslug={props.pagedata.locationslug} 
+                        eventbooking={props.pagedata.eventbooking}
                       bookingall={props.pagedata.bookingall} 
                       location={getLoc(props.pagedata.locationslug)}
                     activitylist={props.activitylistSlug}

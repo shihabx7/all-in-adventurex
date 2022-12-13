@@ -102,12 +102,12 @@ const covid19=(props)=>{
         </ul>                
         </div>
         <div className='cov-vid'>
-        <div className="max-w-7xl mx-auto px-4 relative z-30"> 
+        <div className="max-w-7xl mx-auto mt-10 md:mt-12 lg:mt-16 px-4 relative z-30"> 
         
                 <div className="s-title"> 
                
-                    <TitleSeparator title="GAME TRAILER" color="golden-text" weight="font-bold"/>
-                    <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
+                    <TitleSeparator title="COVID PRECAUTIONS" color="golden-text" weight="font-bold"/>
+                    <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-8">
                                
                     </div>
                 </div>

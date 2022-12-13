@@ -5,7 +5,7 @@ import Head from 'next/head';
 import BreadcumNew from '../../../comps/util/BreadcumNew';
 import { getSingleEventPageData } from "../../api/LocationIndData/getSingleEventPageData"
 import { getLocationEventSlugList } from "../../api/LocationIndData/getLocationEventSlugList"
-import GameLocHero from '../../../comps/activitiyPageComps/GameLocHero';
+import EventLocHero from '../../../comps/eventPageComps/EventLocHero';
 import EventDetails from '../../../comps/eventPageComps/EventDetails';
 import EventContact from '../../../comps/eventPageComps/EventContact';
 import HomeReviewSlider from '../../../comps/homepagecomps/HomeReviewSlider';
@@ -16,6 +16,7 @@ const LocationSingleEvent=(props)=>{
         <>
             <Homenav locationslug={props.pagedata.locationslug} 
                         bookingall={props.pagedata.bookingall}
+                        eventbooking={props.pagedata.eventbooking}
                      location={props.pagedata.location_serach_name}
                      activitylist={props.activitylist}
                      eventlist={props.eventlist}
@@ -37,9 +38,8 @@ const LocationSingleEvent=(props)=>{
                                 <div className='text-red'>{props.slug}</div>
                         {/* =======header content and breadcum======== end */}
                         {/* ===========Page Content here========= */}
-                        {console.log(props.pagedata)}
-                        <GameLocHero pagedata={props.pagedata} eventslug={props.pagedata.slug}/>
-                        <EventDetails eventdata={props.eventdata} eventname={props.pagedata.eventname}/>
+                        <EventLocHero pagedata={props.pagedata} eventbooking={props.pagedata.eventbooking}/>
+                        <EventDetails eventdata={props.eventdata} eventname={props.pagedata.eventname} eventbooking={props.pagedata.eventbooking}/>
                         <EventContact contactdata={props.contactdata} eventname={props.pagedata.event_name} eventslug={props.pagedata.event_slug} locationlist={props.locationlist} eventlist={props.eventlist}/>
                         <HomeReviewSlider reviews={props.reviews}/>
                         

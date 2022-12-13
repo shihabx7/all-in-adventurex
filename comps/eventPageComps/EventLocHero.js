@@ -57,31 +57,24 @@ const EventLocHero=(props)=>{
                     {/*============party-booking  search btn==========*/}
                      {
                             props.eventbooking.eventstatus &&
-                           
-                           
-                                 <button onClick={()=>bookGame(props.eventbooking)} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BOOK YOUR PARTY</button>
+                           <button onClick={()=>bookGame(props.eventbooking)} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BOOK YOUR PARTY</button>
             
                         }
                          {
                            !props.eventbooking.eventstatus &&
                             
-                            <a href={"/"+props.pagedata.locationslug+"/events#eventform"} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BOOK YOUR PARTY</a>
-                        
+                            <a href={"#eventform"} className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BOOK YOUR PARTY</a>
                         }
 
                         {/*============location search btn==========*/}
                         {
                             (props.pagedata.bookingall && props.pagedata.publish_status==true) &&
-                            <a href={"/"+props.pagedata.locationslug+"/events#eventform"} className="block w-full mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">VIEW ALL GAMES</a>
+                            <a href={"/"+props.pagedata.locationslug+"/activities"} className="block w-full mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">VIEW ALL GAMES</a>
                         }
                          {
                             (props.pagedata.bookingall && props.pagedata.publish_status==false) &&
-                            <button className="block mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">COMING SOON</button>
+                            <button className="w-full block mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">COMING SOON</button>
                         }
-                        
-                        
-                       
-                       
                         
                         {/*============location book btn==========*/}
 
@@ -89,9 +82,8 @@ const EventLocHero=(props)=>{
                 {
                     props.pagedata.notice && 
                     <div className="home-botice-des mt-4 md:mt-8 text-[#dddddd] max-w-[700px] mx-auto text-center md:text-lg" dangerouslySetInnerHTML={{ __html: props.pagedata.notice }}>
-                                             
-                                            
-                                        </div>
+                                       
+                    </div>
                 }
                 {       props.gametotal!='not' &&
                         <div className="mb-6"> </div>

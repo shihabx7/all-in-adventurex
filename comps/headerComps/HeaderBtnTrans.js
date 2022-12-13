@@ -22,12 +22,12 @@ const HeaderBtnTrans =(props)=>{
              <div> 
                 {
                     props.eventbooking.eventstatus==true &&
-                    <button onClick={()=>{bookGame(props.eventbooking)}} className='bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border border-red-600 hover:border-red-700 transition duration-300'>BOOK A PARTY</button>
+                    <button onClick={()=>{bookGame(props.eventbooking)}} className='bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300'>BOOK A PARTY</button>
 
                 }
                 {
                     props.eventbooking.eventstatus==false &&
-                    <a href={"/"+props.locationslug+"/events"} className='bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border border-red-600 hover:border-red-700 transition duration-300'>
+                    <a href={"/"+props.locationslug+"/events"} className='bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300'>
                           BOOK A PARTY
                       </a>
 
@@ -39,13 +39,13 @@ const HeaderBtnTrans =(props)=>{
 
         {
             (props.locationslug && !props.eventbooking) && 
-            <a href={"/"+props.locationslug+"/events"} className='bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border border-red-600 hover:border-red-700 transition duration-300'>
+            <a href={"/"+props.locationslug+"/events"} className='bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300'>
                     {props.btntext}
             </a>
         }
                {
             !props.locationslug &&
-            <button onClick={showloc} className='bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border border-red-600 hover:border-red-700 transition duration-300'>{props.btntext}</button>
+            <button onClick={showloc} className='bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300'>{props.btntext}</button>
         } 
          
                   

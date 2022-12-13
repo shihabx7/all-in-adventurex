@@ -95,10 +95,10 @@ const GameLocHero=(props)=>{
                             (!props.eventslug && props.pagedata.eventbooking)  &&
                             <>
                             {props.pagedata.eventbooking.eventstatus==true &&
-                             <button onClick={()=>{bookGame(props.pagedata.eventbooking)}} className="w-full block mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">{props.pagedata.bookingall? "BOOK A PARTY":"BOOK YOUR PARTY"}</button>
+                             <a  href={"/"+props.pagedata.locationslug+"/events" }className="w-full block mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">VIEW ALL EVENTS</a>
                             }
                             {props.pagedata.eventbooking.eventstatus==false &&
-                             <a  href={"/"+props.pagedata.slug+"/events#eventform" }className="w-full block mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">{props.pagedata.bookingall? "BOOK A PARTY":"BOOK YOUR PARTY"}</a>
+                             <a  href={"/"+props.pagedata.locationslug+"/events" }className="w-full block mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">VIEW ALL EVENTS</a>
                             }
                             </>
                             

@@ -494,7 +494,7 @@ const blist={
                 "party-package":{
                     "item":"17839",
                     "flow":"no",
-                    "eventstatus":true,
+                    "eventstatus":false,
                 }
               
                 },
@@ -732,7 +732,7 @@ const blist={
                     "flow":"no"
                 },
                 "party-package":{
-                    "item":"17839",
+                    "item":"51224",
                     "flow":"no",
                     "eventstatus":true,
                 }

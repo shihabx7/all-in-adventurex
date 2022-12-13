@@ -29,6 +29,7 @@ const viewLocGift=(props)=>{
         <>
             <Homenav locationslug={props.pagedata.locationslug} 
                      bookinggame={props.pagedata.bookingdata}
+                     eventbooking={props.pagedata.eventbooking}
                      location={getLoc(props.pagedata.locationslug)}
                           activitylist={props.activitylist}
                           eventlist={props.eventlist}

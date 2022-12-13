@@ -5,8 +5,9 @@ import Homenav from '../../comps/Homenav';
 import BreadcumNew from '../../comps/util/BreadcumNew';
 import Head from 'next/head';
 import { getLocationIndContactPageData } from '../api/LocationIndData/getLocationIndContactPageData';
-import GameLocHero from '../../comps/activitiyPageComps/GameLocHero';
+import ContactLocHero from '../../comps/activitiyPageComps/ContactLocHero';
 import StoreContact from '../../comps/contactComps/StoreContact';
+import Seofields from '../../comps/util/SeoFields';
 
 
 const ViewContactStore=(props)=>{
@@ -26,6 +27,7 @@ const ViewContactStore=(props)=>{
         <>
             <Homenav locationslug={props.pagedata.locationslug}
                      location={getLoc(props.pagedata.locationslug)}
+                     eventbooking={props.pagedata.eventbooking} 
                       bookingall={props.pagedata.bookingall}
                       activitylist={props.activitylist}
                       eventlist={props.eventlist}
@@ -46,7 +48,7 @@ const ViewContactStore=(props)=>{
                                  
                          {/* =======header content and breadcum======== end */}
                          {/* ===========Page Content here=========*/}
-                         <GameLocHero pagedata={props.pagedata} gametotal="not"/>
+                         <ContactLocHero pagedata={props.pagedata} gametotal="not"/>
                          <StoreContact contactdata={props.contactdata}/>
                          
                        

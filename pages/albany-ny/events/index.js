@@ -6,10 +6,10 @@ import Homenav from '../../../comps/Homenav';
 import Head from 'next/head';
 import { FiChevronRight } from "react-icons/fi";
 import { getLocationsEventList } from '../../api/LocationIndData/getLocationsEventList';
-import EventLocHero from '../../../comps/eventPageComps/EventLocHero';
-import GameLocHero from '../../../comps/activitiyPageComps/GameLocHero';
-import GameLocList from '../../../comps/activitiyPageComps/GameLocList';
+
+
 import BreadcumNew from '../../../comps/util/BreadcumNew';
+import EventLocHero from '../../../comps/eventPageComps/EventLocHero';
 import EventList from '../../../comps/activitiyPageComps/EventList';
 import EventContact from '../../../comps/eventPageComps/EventContact';
 

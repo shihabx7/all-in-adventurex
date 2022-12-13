@@ -22,7 +22,7 @@ export const getCovidPageData=()=>{
             "coverimageL":"/assets/home-benar-bg.jpg",
             "coverimageM":"/assets/home-hero.jpg",
             "totalLocations":getTotal().totalLocations,
-            "videoid":"b0Em6UkV-OM"
+            "videoid":"b_Kjdwdg0_o"
           }
     }
 

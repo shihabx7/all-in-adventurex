@@ -1,13 +1,11 @@
-import { useRouter } from 'next/router'
 
 import Footer from '../../../comps/Footer';
 import Homenav from '../../../comps/Homenav';
 
 import Head from 'next/head';
-import { FiChevronRight } from "react-icons/fi";
+
 import { getLocationsEventList } from '../../api/LocationIndData/getLocationsEventList';
-import GameLocHero from '../../../comps/activitiyPageComps/GameLocHero';
-import GameLocList from '../../../comps/activitiyPageComps/GameLocList';
+import EventLocHero from '../../../comps/eventPageComps/EventLocHero';
 import BreadcumNew from '../../../comps/util/BreadcumNew';
 import EventList from '../../../comps/activitiyPageComps/EventList';
 import EventContact from '../../../comps/eventPageComps/EventContact';
@@ -32,6 +30,7 @@ const LocEventList=(props)=>{
          <>
              <Homenav locationslug={props.pagedata.locationslug}
                      bookingall={props.pagedata.bookingall} 
+                     eventbooking={props.pagedata.eventbooking}
                      location={getLoc(props.pagedata.locationslug)}
                      activitylist={props.activitylistSlug}
                      eventlist={props.eventlist}
@@ -44,7 +43,6 @@ const LocEventList=(props)=>{
                                  <title>All in adventure Locations</title>
                                  <meta name="description" content="All in one adventure escape games" />
                                  
- 
                                </Head>
                                <div className='breadcum py-1 md:py-1 lg:py-3 bg-[#fffceb]'>
                                     <BreadcumNew/>
@@ -52,10 +50,10 @@ const LocEventList=(props)=>{
                                  <div className='text-red'>{props.slug}</div>
                          {/* =======header content and breadcum======== end */}
                          {/* ===========Page Content here=========  <> */}
-                         <GameLocHero pagedata={props.pagedata}/>
-                         <EventList events={props.eventLocList} locationslug="dayton-oh"/>
+                         <EventLocHero pagedata={props.pagedata} eventbooking={props.pagedata.eventbooking}/>
+                         <EventList events={props.eventLocList} eventbooking={props.pagedata.eventbooking} locationslug="dayton-oh"/>
                          
-                         <EventContact contactdata={props.contactdata} locationlist={props.locationlist} eventlist={props.eventlist}/>
+                         <EventContact contactdata={props.contactdata} locationlist={props.locationlist} eventlist={props.eventlist} />
                         
                  </div>
  
