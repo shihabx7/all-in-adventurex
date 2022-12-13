@@ -48,7 +48,7 @@ const EventDetails=(props)=>{
                             <div className="event-dt-col w-full md:w-[47%] order-2 md:order-1"> 
                                 <div className="event-dt-desc py-4 md:py-0">
                                      <p className="md:text-lg text-[#938056] uppercase leading-[1]">{props.eventname}</p>
-                                     <GameTitleSeparator title={"WHY ALL IN ADVENTURES FOR YOUR "+props.eventname} color="golden-text" weight="font-bold"></GameTitleSeparator>
+                                     <GameTitleSeparator title={"WHY ALL IN ADVENTURES"} color="golden-text" weight="font-bold"></GameTitleSeparator>
                                     <div className="mt-3 md:mt-3 lg:mt-4 md:text-[18px] lg:text-[20px] text-gray-700" dangerouslySetInnerHTML={{ __html: props.eventdata.why_book  }}>
                                     </div>
                                     {
@@ -94,13 +94,16 @@ const EventDetails=(props)=>{
                             <div className="event-dt-col w-full md:w-[47%]"> 
                                 <div className="event-dt-desc">
                                      <p className="md:text-lg text-[#938056] leading-[1] uppercase">{props.eventname}</p>
-                                     <GameTitleSeparator title={"WHAT WE OFFER TO MAKE YOUR "+props.eventname+" MEMORABLE"} color="golden-text" weight="font-bold"></GameTitleSeparator>
+                                     <GameTitleSeparator title={"MAKE IT MEMORABLE!"} color="golden-text" weight="font-bold"></GameTitleSeparator>
                                     <p className="mt-3 md:mt-3 lg:mt-4 md:text-[18px] lg:text-[20px] text-gray-700">
                                         {
                                         props.eventdata.offer
                                     }</p>
+                                     <p className="lg:text-lg italic mt-4 lg:mt-8">* See your location's party package booking page for specific details, offerings and experience may vary by location and package choice.</p>
+                                    {/** 
                                     <div className="relative"> 
                                         <p className="mt-2 md:mt-2 lg:mt-3 md:text-[18px] lg:text-[20px] text-gray-700">Also, there are two optional packages for a 2-hours party room rental. <span className="font-medium">Packages 1</span> offer a FREE $30 gift card and <span className="font-medium">Packages 2</span> offer a FREE $35 gift card for the guest of honor and provide basic supplies such as plates, napkins, and utensils. 
+                                    
                                         <span onClick={showToast} className="cursor-pointer text-blue-600 hover:text-blue-700 hover:cursor-pointer"> See package details</span></p>
                                     <div className=" w-full bg-[#111111]  rounded absolute bottom-8 right-0 shadow-md" ref={ref}>
                                        {
@@ -121,6 +124,7 @@ const EventDetails=(props)=>{
                                        
                                     </div>
                                     </div>
+                                    */}
                                     <div className="event-notice mt-4 md:mt-6 lg:mt-8"> 
                                     <p className="md:text-lg text-[#938056] md:mb-1 uppercase">{props.activityname}</p>
                                              
@@ -157,7 +161,7 @@ const EventDetails=(props)=>{
                             <div className="event-dt-col w-full md:w-[47%] order-2 md:order-1"> 
                                 <div className="event-dt-desc py-4 md:py-0">
                                     <p className="md:text-lg text-[#938056] leading-[1] uppercase">{props.eventname}</p>
-                                     <GameTitleSeparator title={"WHAT YOU CAN EXPECT FROM AN ESCAPE ROOM "+props.eventname} color="golden-text" weight="font-bold"></GameTitleSeparator>
+                                     <GameTitleSeparator title={"WHAT TO EXPECT:"} color="golden-text" weight="font-bold"></GameTitleSeparator>
                                 
                                       <div className="mt-3 md:mt-3 lg:mt-4 md:text-[18px] lg:text-[20px] text-gray-700" dangerouslySetInnerHTML={{ __html: props.eventdata.what_expect  }}>
                                     </div>  

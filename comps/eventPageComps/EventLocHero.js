@@ -72,7 +72,7 @@ const EventLocHero=(props)=>{
                         {/*============location search btn==========*/}
                         {
                             (props.pagedata.bookingall && props.pagedata.publish_status==true) &&
-                            <button onClick={()=>bookAll(props.pagedata.bookingall)} className="block w-full mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">BOOK YOUR GAMES</button>
+                            <a href={"/"+props.pagedata.locationslug+"/events#eventform"} className="block w-full mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg">VIEW ALL GAMES</a>
                         }
                          {
                             (props.pagedata.bookingall && props.pagedata.publish_status==false) &&

@@ -64,12 +64,12 @@ const eventIndData={
                   "metadescription":"metadescription"
                 },
 
-                 "eventdata":{
-                  "why_book":"Your birthday is coming up and you're googling birthday party venues near me, wondering what to do for one of the most important occasions of the year. Well, celebrate it in style with our escape room birthday party, where every one of your guests, including yourself, is guaranteed to have fun. You can tailor and personalize your experience from many different escape room themes. There are no logistical nightmares, no stress of arrangements. If you wanted memorable, you've got it!",
+                "eventdata":{
+                  "why_book":"Nothing beats the excitement of an Escape Room Birthday Party! They're the perfect challenge for celebrating the birthday of your favorite little puzzle-solver, or a unique party experience for adults with adventure still in their hearts! With three difficulty levels, there's something for everyone!",
                   "why_book_img":"/assets/all-event-details/allinadventures-events-birthday-party-sec1.jpg",
-                  "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
+                  "offer":"Choose from our two-party package options! Whether you want to bring your own food or have us cater, each option allows you to select one or more escape rooms and get our private party room* for two hours! Don't worry about your plates, napkins, and utensils - we've got you covered with either option! Plus, receive an All in Adventures gift card for your birthday honoree!",
                   "offer_img":"/assets/all-event-details/allinadventures-events-birthday-party-sec2.jpg",
-                  "what_expect":"Our kids and family friendly escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any birthday party event at All In Adventures, your team will have a set time of 50-60 minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
+                  "what_expect":"Our family-friendly escape rooms are designed to be challenging and fun activities for all ages and skill levels. Your party will have 50 minutes to solve their mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
                   "what_expect_img":"/assets/all-event-details/allinadventures-events-birthday-party-sec3.jpg",
                   "videoid":"pfdyF_d4Z40"
                   
@@ -169,16 +169,16 @@ const eventIndData={
                        "metadescription":"metadescription"
                      },
                     
-                      "eventdata":{
-                       "why_book":"We provide the ideal atmosphere for working together as a team and solving even what may seem like the most unsolvable escape room puzzles you've ever experienced. Our escape rooms are perfect for unique and fun team building activities, and they bring everyone on the team working towards a common goal. Instead of a dreary meeting on how to work effectively as a team, why not take a crack at any of our escape room puzzles?",
-                       "why_book_img":"/assets/all-event-details/allinadventures-events-team-building-sec1.jpg",
-                       "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
-                       "offer_img":"/assets/all-event-details/allinadventures-events-team-building-sec2.jpg",
-                       "what_expect":"We supply many uniquely themed real life escape rooms for group size small to large. Your team will have a set time of 50-60 minutes to solve the puzzle located within the game room. There will be mysterious objects, riddles, locks, keys, maps, clues and more, all inside the escape room, ready for your team to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out. Finally, when the game is over, your team will have plenty of time to chat and reflect on their experiences.",
-                       "what_expect_img":"/assets/all-event-details/allinadventures-events-team-building-sec3.jpg",
-                       "videoid":"pfdyF_d4Z40"
-                      
-                       },
+                     "eventdata":{
+                      "why_book":"We provide the ideal atmosphere to strengthen teamwork, communication, and problem-solving skills! Our escape rooms bring teams together towards a common goal and offer the thrill of collaborative success! Instead of another dreary meeting, why not have an adventure into the unknown?",
+                      "why_book_img":"/assets/all-event-details/allinadventures-events-team-building-sec1.jpg",
+                      "offer":"Your group can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Looking for lunch? Check out our catered party option and let us do the work! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your next team outing!",
+                      "offer_img":"/assets/all-event-details/allinadventures-events-team-building-sec2.jpg",
+                      "what_expect":"Our escape rooms are designed to be challenging and fun activities for all ages and skill levels. Your team will have 50 minutes to solve their mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
+                      "what_expect_img":"/assets/all-event-details/allinadventures-events-team-building-sec3.jpg",
+                      "videoid":"pfdyF_d4Z40"
+                     
+                      },
                       "reviews": [
                     
                         {   "id"  : 1,
@@ -274,16 +274,16 @@ const eventIndData={
                      "metadescription":"metadescription"
                    },
                  
-                    "eventdata":{
-                     "why_book":"Corporate events are frequently held at All In Adventures, and it's no surprise why! We provide a unique atmosphere where communication, leadership, and problem solving skills will all be put to the test. Our escape rooms are perfect for creative and fun team building activities, and they bring everyone on the team working towards a common goal. You can tailor and personalize your experience from many different escape room themes. There are no logistical nightmares, no stress of arrangements. If you wanted memorable, you've got it!",
-                     "why_book_img":"/assets/all-event-details/allinadventures-events-corporate-events-sec1.jpg",
-                     "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
-                     "offer_img":"/assets/all-event-details/allinadventures-events-corporate-events-sec2.jpg",
-                     "what_expect":"Our corporate escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any event at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
-                     "what_expect_img":"/assets/all-event-details/allinadventures-events-corporate-events-sec3.jpg",
-                     "videoid":"pfdyF_d4Z40"
-                    
-                     },
+                   "eventdata":{
+                    "why_book":"Corporate events are frequently held at All In Adventures, and it's no surprise why! We provide a unique atmosphere where communication, leadership, and problem-solving skills will all be put to the test. Our escape rooms bring everyone on the team together to work towards a common goal!",
+                    "why_book_img":"/assets/all-event-details/allinadventures-events-corporate-events-sec1.jpg",
+                    "offer":"Your group can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Need some brain food? Check out our catered party option and let us do the work! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your next corporate outing!",
+                    "offer_img":"/assets/all-event-details/allinadventures-events-corporate-events-sec2.jpg",
+                    "what_expect":"Our escape rooms are designed to be challenging and fun activities for all ages and skill levels. With 50 minutes on the clock, your group will have to solve their mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
+                    "what_expect_img":"/assets/all-event-details/allinadventures-events-corporate-events-sec3.jpg",
+                    "videoid":"pfdyF_d4Z40"
+                   
+                    },
                      "reviews": [
                     
                       {   "id"  : 1,
@@ -369,8 +369,8 @@ const eventIndData={
                       "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-family-fun-activities-hero.jpg",
                       "coverimageM_alt":"allinadventures-events-family-fun-activitie",
                       "age":"6+",
-                 "max_players":"70",
-                 "min_players":"2",
+                      "max_players":"70",
+                      "min_players":"2",
 
                      "pagemeta":{
                     
@@ -379,16 +379,16 @@ const eventIndData={
                        "metadescription":"metadescription"
                      },
                    
-                      "eventdata":{
-                       "why_book":"Family activities are frequently held at All In Adventures, and it's easy to see why. We provide a unique atmosphere where you can spend time with family members doing something completely different from normal life. Our escape games engage kids and adults of all ages. Kids from 10 years old will actively participate in puzzle solving and have a wonderful time. Kids 6-9 years old will need a little support from the adults but will definitely enjoy the fun experience. Kids under 6 years old can play for FREE with two or more adults paying full price.",
-                       "why_book_img":"/assets/all-event-details/allinadventures-events-family-fun-activities-sec1.jpg",
-                       "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
-                       "offer_img":"/assets/all-event-details/allinadventures-events-family-fun-activities-sec2.jpg",
-                       "what_expect":"Our family-friendly escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any family activity at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
-                       "what_expect_img":"/assets/all-event-details/allinadventures-events-family-fun-activities-sec3.jpg",
-                       "videoid":"pfdyF_d4Z40"
-                      
-                       },
+                     "eventdata":{
+                      "why_book":"Put your incredible family dynamic on display in one of our fun escape rooms! We provide a unique, screen-free atmosphere to spend time together as a family! Kids over 6 can contribute, and ages 10 and up will be active problem-solving participants! Kids under six can play for FREE alongside two or more full-price adults!",
+                      "why_book_img":"/assets/all-event-details/allinadventures-events-family-fun-activities-sec1.jpg",
+                      "offer":"Your family can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Save time in your day by checking out our catered party option and let us do the work! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your next family outing!",
+                      "offer_img":"/assets/all-event-details/allinadventures-events-family-fun-activities-sec2.jpg",
+                      "what_expect":"Our escape rooms are designed to be challenging and fun activities for all ages and skill levels. With 50 minutes on the clock, your family will have to solve their mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
+                      "what_expect_img":"/assets/all-event-details/allinadventures-events-family-fun-activities-sec3.jpg",
+                      "videoid":"pfdyF_d4Z40"
+                     
+                      },
                        "reviews": [
                     
                         {   "id"  : 1,
@@ -484,16 +484,16 @@ const eventIndData={
                    "metadescription":"metadescription"
                  },
                
-                  "eventdata":{
-                   "why_book":"We offer a unique escape game experience perfect for bachelor parties, where every one of your guests, including yourself, is guaranteed to have fun. Your group will enter into a puzzle room and have to work together to solve riddles and find clues to ESCAPE! You can tailor and personalize your experience from many different escape room themes. If you like to plan something extra for the bachelor, just let us know. There are no logistical nightmares, no stress of arrangements. If you wanted memorable, you've got it!",
-                   "why_book_img":"/assets/all-event-details/allinadventures-events-bachelor-party-sec1.jpg",
-                   "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
-                   "offer_img":"/assets/all-event-details/allinadventures-events-bachelor-party-sec2.jpg",
-                   "what_expect":"Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any bachelor party at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out",
-                   "what_expect_img":"/assets/all-event-details/allinadventures-events-bachelor-party-sec3.jpg",
-                   "videoid":"pfdyF_d4Z40"
-                  
-                   },
+                 "eventdata":{
+                  "why_book":"Our unique escape room experiences are a perfect addition to bachelor parties! Your group of guys will have to come ready to play if you have any chance at escaping! Pick a room theme that best fits your crew and let us know if there's something special you'd like done for the groom-to-be!",
+                  "why_book_img":"/assets/all-event-details/allinadventures-events-bachelor-party-sec1.jpg",
+                  "offer":"Your party can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Check out our catered party option and let us satisfy your need to feed! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your next guys' night out!",
+                  "offer_img":"/assets/all-event-details/allinadventures-events-bachelor-party-sec2.jpg",
+                  "what_expect":"We have escape rooms for all skill levels to challenge you and your groomsmen. With 50 minutes on the clock, your party will have to solve their mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
+                  "what_expect_img":"/assets/all-event-details/allinadventures-events-bachelor-party-sec3.jpg",
+                  "videoid":"pfdyF_d4Z40"
+                 
+                  },
                    "reviews": [
                     
                     {   "id"  : 1,
@@ -590,11 +590,11 @@ const eventIndData={
                    },
                  
                     "eventdata":{
-                     "why_book":"We offer a unique escape game experience ideal for bachelorette parties, where every one of your guests, including yourself, is guaranteed to have fun. Your group will enter into a puzzle room and have to work together to solve riddles and find clues to ESCAPE! You can tailor and personalize your experience from many different escape room themes. If you like to plan something extra for the bride, just let us know. There are no logistical nightmares, no stress of arrangements. If you wanted memorable, you've got it!",
+                     "why_book":"Our unique escape room experiences are a perfect addition to bachelorette parties! Your group of gals will have to come ready to play to have any chance at escaping! Pick a room theme that best fits your bridal party and let us know if there's something special you'd like done for the bride-to-be!",
                      "why_book_img":"/assets/all-event-details/allinadventures-events-bachelorette-party-sec1.jpg",
-                     "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
+                     "offer":"Your party can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Check out our catered party option for a post-game tasty treat! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your next girls' night out!",
                      "offer_img":"/assets/all-event-details/allinadventures-events-bachelorette-party-sec2.jpg",
-                     "what_expect":"Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any bachelorette party at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
+                     "what_expect":"We have escape rooms for all skill levels to challenge you and your bridesmaids. With 50 minutes on the clock, your party will have to solve their mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
                      "what_expect_img":"/assets/all-event-details/allinadventures-events-bachelorette-party-sec3.jpg",
                      "videoid":"pfdyF_d4Z40"
                     
@@ -694,16 +694,16 @@ const eventIndData={
                        "metadescription":"metadescription"
                      },
                    
-                      "eventdata":{
-                       "why_book":"There's nothing more romantic than a surprise proposal. Our themed escape games are ideal for romantic proposals and declarations of love. Your partner will be so distracted looking for clues, that you can get down on one knee while she discovers the ring inside an existing puzzle. Bam! Surprise! A win for you. Totally out of the blue for her. Memories forever. Also, our escape rooms are great bonding activities as you work together to solve mysterious puzzles. Let us know if you want to customize your game for a proposal party. We'll do our best to accommodate your special day for groups of all sizes.",
-                       "why_book_img":"/assets/all-event-details/allinadventures-events-proposal-party-sec1.jpg",
-                       "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
-                       "offer_img":"/assets/all-event-details/allinadventures-events-proposal-party-sec2.jpg",
-                       "what_expect":"Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any proposal party at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
-                       "what_expect_img":"/assets/all-event-details/allinadventures-events-proposal-party-sec3.jpg",
-                       "videoid":"pfdyF_d4Z40"
-                      
-                       },
+                     "eventdata":{
+                      "why_book":"It's no mystery: a surprise proposal can be the memory of a lifetime! Our escape rooms are ideal for a unique way to pop the question. Your partner will be so focused on victory, you'll have the perfect chance to drop to one knee! Let us know if you want to customize the game for your proposal and we'll do our best to accommodate your special day!",
+                      "why_book_img":"/assets/all-event-details/allinadventures-events-proposal-party-sec1.jpg",
+                      "offer":"You can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Check out our catered party option for a celebratory gathering after your game! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your first date night as fiancés!",
+                      "offer_img":"/assets/all-event-details/allinadventures-events-proposal-party-sec2.jpg",
+                      "what_expect":"You can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Check out our catered party option for a celebratory gathering after your game! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your first date night as fiancés!",
+                      "what_expect_img":"/assets/all-event-details/allinadventures-events-proposal-party-sec3.jpg",
+                      "videoid":"pfdyF_d4Z40"
+                     
+                      },
                        "reviews": [
                     
                         {   "id"  : 1,
@@ -799,16 +799,16 @@ const eventIndData={
                "metadescription":"metadescription"
              },
            
-              "eventdata":{
-               "why_book":"Whether you are looking for a unique date night idea or a fun night out with friends and family, our escape rooms provide an experience that your group will never forever. We offer many different escape room themes, and you'll surely find a perfect game that interests your group. In all its fun, escape rooms have an even more meaningful benefit when it comes to date night - strengthening your relationship. In order to escape, you'll need to communicate with your partner and work together to solve mysterious puzzles. In addition, this communication also leads to you both sharing ideas and different perspectives, building your bond.",
-               "why_book_img":"/assets/all-event-details/allinadventures-events-date-night-sec1.jpg",
-               "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
-               "offer_img":"/assets/all-event-details/allinadventures-events-date-night-sec2.jpg",
-               "what_expect":"Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any date night party at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
-               "what_expect_img":"/assets/all-event-details/allinadventures-events-date-night-sec3.jpg",
-               "videoid":"pfdyF_d4Z40"
-              
-               },
+             "eventdata":{
+              "why_book":"Perfect for double dates, or just some quality time together as a couple, our escape rooms can help strengthen relationships through collaboration, communication, and fun! Use your balance of strengths together to overcome puzzles and gain a new perspective on each other!",
+              "why_book_img":"/assets/all-event-details/allinadventures-events-date-night-sec1.jpg",
+              "offer":"You can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Skip the packed, noisy restaurant and check out our catered party option for a casual, private dining option! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your next date night!",
+              "offer_img":"/assets/all-event-details/allinadventures-events-date-night-sec2.jpg",
+              "what_expect":"We have escape rooms for all skill levels to challenge you and your date. With 50 minutes on the clock, you'll have to solve your mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
+              "what_expect_img":"/assets/all-event-details/allinadventures-events-date-night-sec3.jpg",
+              "videoid":"pfdyF_d4Z40"
+             
+              },
                "reviews": [
                     
                 {   "id"  : 1,
@@ -904,16 +904,16 @@ const eventIndData={
    "metadescription":"metadescription"
  },
 
-  "eventdata":{
-   "why_book":"We tailor each escape room private party to your unique celebration and number of guests. Whether you are a corporate office looking for a fun team-building activity or a group of friends looking for a mental challenge, our escape games give you the challenge you desire. Your group will work together to uncover hidden clues, solve puzzles, and discover secret messages in order to escape before time runs out. All In Adventures is great for families, friends and co-workers, and our out-of-the-box experience is a memorable and exciting way to bond and increase communication.",
-   "why_book_img":"/assets/all-event-details/allinadventures-events-private-party-sec1.jpg",
-   "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
-   "offer_img":"/assets/all-event-details/allinadventures-events-private-party-sec2.jpg",
-   "what_expect":"Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any private party at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
-   "what_expect_img":"/assets/all-event-details/allinadventures-events-private-party-sec3.jpg",
-   "videoid":"pfdyF_d4Z40"
-  
-   },
+ "eventdata":{
+  "why_book":"We work to make each escape room private party a unique experience for you and your guests. Whether you are in a corporate office looking for an exciting team-building activity, or a group of friends looking for a mental workout, our escape rooms give you the challenge you're seeking. All In Adventures is great for all types of groups and is a memorable way to come together for fun!",
+  "why_book_img":"/assets/all-event-details/allinadventures-events-private-party-sec1.jpg",
+  "offer":"You can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Feed your crowd with our catered party option and let us do the work! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your visit!",
+  "offer_img":"/assets/all-event-details/allinadventures-events-private-party-sec2.jpg",
+  "what_expect":"We have escape rooms for all skill levels to challenge your party. With 50 minutes on the clock, you'll have to solve your mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
+  "what_expect_img":"/assets/all-event-details/allinadventures-events-private-party-sec3.jpg",
+  "videoid":"pfdyF_d4Z40"
+ 
+  },
    "reviews": [
                     
     {   "id"  : 1,
@@ -1010,11 +1010,11 @@ const eventIndData={
                },
              
                 "eventdata":{
-                 "why_book":"You can improve your ability to work with your family members during an escape room reunion party, where everyone will work together to achieve a common goal. This interactive event will lead you on how to overcome difficulties, work well with others, and have fun doing it. Your team will have to cooperate to get out of a trapped space and learn more about working together in a pressure-filled situation. Afterward, you can debrief, celebrate, and revel in your successes. It's safe and requires no special skills! Perfect fun activity for every age group.",
+                 "why_book":"Bring together your entire extended family for an unforgettable reunion! Whether you all work cooperatively, or pit family versus family in an epic battle of the minds, our escape rooms are a thrilling way to enjoy your time together! With difficulties for all ages and skill levels, All in Adventures is a cross-generational, memory-making experience!",
                  "why_book_img":"/assets/all-event-details/allinadventures-events-reunion-party-sec1.jpg",
-                 "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
+                 "offer":"You can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Feed your crowd with our catered party option and let us take care of clean-up! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card!",
                  "offer_img":"/assets/all-event-details/allinadventures-events-reunion-party-sec2.jpg",
-                 "what_expect":"Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any reunion party at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
+                 "what_expect":"We have escape rooms for all skill levels to challenge your party. With 50 minutes on the clock, you'll have to solve your mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
                  "what_expect_img":"/assets/all-event-details/allinadventures-events-reunion-party-sec3.jpg",
                  "videoid":"pfdyF_d4Z40"
                 
@@ -1114,16 +1114,16 @@ const eventIndData={
                    "metadescription":"metadescription"
                  },
                
-                  "eventdata":{
-                   "why_book":"There's no shortage of graduation party ideas. But how many of them actually involve teamwork and collaboration between friends? That's the question! You can escape the same old graduation party and start cracking interactive puzzles to celebrate your graduation in style. Our escape rooms are interactive and have engaging qualities that give your graduation party an epic adventure! There are no logistical nightmares, no stress of arrangements. If you wanted memorable, you've got it!",
-                   "why_book_img":"/assets/all-event-details/allinadventures-events-graduation-party-sec1.jpg",
-                   "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
-                   "offer_img":"/assets/all-event-details/allinadventures-events-graduation-party-sec2.jpg",
-                   "what_expect":"Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any graduation party at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
-                   "what_expect_img":"/assets/all-event-details/allinadventures-events-graduation-party-sec3.jpg",
-                   "videoid":"pfdyF_d4Z40"
-                  
-                   },
+                 "eventdata":{
+                  "why_book":"Our unique escape room experiences are a perfect addition to your graduation party! Your school of scholars will have to bring their sharp minds and keen intuition if they're to have any chance at escaping! Pick a room theme that best fits their interest and let us know if there's something special you'd like done for your graduate!",
+                  "why_book_img":"/assets/all-event-details/allinadventures-events-graduation-party-sec1.jpg",
+                  "offer":"You can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Need to refuel on brain food? Check out our catered party option and let us take care of the clean-up! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card for your graduate!",
+                  "offer_img":"/assets/all-event-details/allinadventures-events-graduation-party-sec2.jpg",
+                  "what_expect":"We have escape rooms for all skill levels to challenge your party. With 50 minutes on the clock, you'll have to solve your mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
+                  "what_expect_img":"/assets/all-event-details/allinadventures-events-graduation-party-sec3.jpg",
+                  "videoid":"pfdyF_d4Z40"
+                 
+                  },
                    "reviews": [
                     
                     {   "id"  : 1,
@@ -1219,16 +1219,16 @@ const eventIndData={
                      "metadescription":"metadescription"
                    },
                  
-                    "eventdata":{
-                     "why_book":"It's a well-known fact that escape rooms provide the perfect activity for school events and team building, and they are also ideal for kids activities such as school trips. At All In Adventures, we provide a unique escape room environment where students develop essential key skills like team working, problem-solving and communication. Our escape rooms are incredibly fun and encourage careful and deliberate thinking in order to solve the puzzles inside the game room. Our games can also be highly educational, serve the purpose of team-building between students, and increase cooperation between classmates and teachers.",
-                     "why_book_img":"/assets/all-event-details/allinadventures-events-school-events-sec1.jpg",
-                     "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
-                     "offer_img":"/assets/all-event-details/allinadventures-events-school-events-sec2.jpg",
-                     "what_expect":"Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any school events / field trips at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
-                     "what_expect_img":"/assets/all-event-details/allinadventures-events-school-events-sec3.jpg",
-                     "videoid":"pfdyF_d4Z40"
-                    
-                     },
+                   "eventdata":{
+                    "why_book":"Problem-solving, critical thinking, and observational awareness - all important skills for growing young minds to strengthen. Our escape rooms will require your students to work together for an exciting intellectual challenge that's more than your average field trip! With rooms that pair well with historical and literary themes, you can effortlessly weave them into your lesson plan!",
+                    "why_book_img":"/assets/all-event-details/allinadventures-events-gender-reveal-party-sec1.jpg",
+                    "offer":"You can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Time for lunch? Check out our catered party option and let us take care of the clean-up! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card for your next class trip!",
+                    "offer_img":"/assets/all-event-details/allinadventures-events-gender-reveal-party-sec2.jpg",
+                    "what_expect":"We have escape rooms for all skill levels to challenge your class. With 50 minutes on the clock, your students will have to solve their mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
+                    "what_expect_img":"/assets/all-event-details/allinadventures-events-gender-reveal-party-sec3.jpg",
+                    "videoid":"pfdyF_d4Z40"
+                  
+                    },
                      "reviews": [
                     
                       {   "id"  : 1,
@@ -1324,12 +1324,12 @@ const eventIndData={
                     "metadescription":"metadescription"
                   },
                 
-                   "eventdata":{
-                    "why_book":"We provide a unique atmosphere where parents make gender reveal parties a memorable family event. They spend time with friends and family doing something completely different from ordinary parties to solve riddles to unleash the grand secret! Reveal the gender of their baby through a series of puzzles as they find them and accomplish the tasks to open a box filled with surprises! We pack a locked box full of colored balloons and candies, cookies, or anything you would like to be locked in a box for your team to find and figure out how to open it in any of our escape room themes!",
+                  "eventdata":{
+                    "why_book":"We provide a unique atmosphere where parents make gender reveal parties a memorable family event. The big surprise awaits your party at the conclusion of your game with the final box being packed with your ideal way of announcing the gender of your baby! Pick a room theme and let us know if there's something special you'd like done for your reveal!",
                     "why_book_img":"/assets/all-event-details/allinadventures-events-gender-reveal-party-sec1.jpg",
-                    "offer":"Your group can choose one or multiple escape rooms to play. The standard price is $29.89 + Tax per person for one round of the escape room experience.",
+                    "offer":"You can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Check out our catered party option for your reveal after-party and let us take care of the clean-up! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card!",
                     "offer_img":"/assets/all-event-details/allinadventures-events-gender-reveal-party-sec2.jpg",
-                    "what_expect":"Our escape rooms are designed to be challenging but perfect fun activities for all ages and skill levels. Like any gender reveal party at All In Adventures, your team will have a set time of 50-minutes to solve the puzzle located within the escape room. There will be mysterious objects, locks, keys, clues, maps, riddles and more, all inside the escape room, ready for your group to crack the codes. All you need is teamwork, critical thinking and a fun attitude in order to find your way out of the escape room before the time runs out.",
+                    "what_expect":"We have escape rooms for all skill levels to challenge your party. With 50 minutes on the clock, your guests will have to solve their mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
                     "what_expect_img":"/assets/all-event-details/allinadventures-events-gender-reveal-party-sec3.jpg",
                     "videoid":"pfdyF_d4Z40"
                   

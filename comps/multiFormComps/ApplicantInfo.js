@@ -20,7 +20,7 @@ const ApplicantInfo=({setFormName})=>{
                                                     required>
 
                                                     </input>
-                                                    <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden">First name *</p>
+                                                    <p className="mt-1 text-xs md:text-sm evevt-input-label text-red-700 fErr hidden">First name *</p>
                                          </div>
                                          <div className="form-col w-full md:w-[48%]">
                                                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Last name *</p>
