@@ -5,6 +5,8 @@ import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
 // page template=============
 
+import GnHero from "../comps/privacyTermsComps/GnHero";
+
 import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
 import { getTermsConditionPageData } from "./api/getTermsConditionPageData"
 import PrivacyPolicy from "../comps/privacyTermsComps/PrivacyPolicy";
@@ -49,7 +51,7 @@ const termsAndCondition=(props)=>{
               </Breadcrumbs>
         </div>
          {/* =======breadcum content and breadcum root page template======== end */}
-         <GameHomeHero gametotal="not" pagedata={props.pagedata}/> 
+         <GnHero gametotal="not" pagedata={props.pagedata}/> 
          <TermsAndCondition/>
 
 

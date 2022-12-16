@@ -2,20 +2,11 @@ import TitleSeparator from "../util/TitleSeparator"
 const TermsAndCondition=()=>{
 
     return(
-        <div className="privacy relative bg-center bg-cover" style={{
-            backgroundImage:"url('/assets/game-dt-bg.jpg')"
-        }}>
-            <div className="w-full absolute top-0 left-0 "><img className="w-full" src="/assets/game-home-or1.jpg"></img></div>
+        <div className="privacy relative bg-center bg-cover bg-[#FFF7EA]">
+            
 
                     <div className="section-container max-w-7xl mx-auto py-16 md:py-20 lg:py-28 relative z-30 px-4">
-                            <div className="section-title">
-                                 <div className="section-title">
-                                    <p className="lg:text-lg uppercase text-center text-[#938056]">ALL IN ADVENTURES</p>
-                                     <TitleSeparator title="TERMS OF SERVICE" color="golden-text" weight="font-bold" />
-                                   <p className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16 text-gray-700">Step inside your exclusive 60 minute private step adventure. Step inside your exclusive 60 minute private step adventure </p>
-
-                                 </div>
-                            </div>
+                            
                             <div className="privacy-content-box max-w-[1040px] mx-auto">
                                 {/*=============privacy-content 1==============*/}
                                 <div className="privacy-content">
@@ -463,7 +454,7 @@ const TermsAndCondition=()=>{
 
                             </div>
                     </div>
-                    <div className="w-full absolute bottom-0 left-0 "><img className="w-full" src="/assets/game-home-or2.jpg"></img></div>
+               
 
            
         </div>

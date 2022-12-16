@@ -18,6 +18,14 @@ module.exports = {
         'light-gold'    : '#B4A27E',
         'dark-coffee'   :'#232323'
       },
+      listStyleType: {
+        none: 'none',
+        disc: 'disc',
+        decimal: 'decimal',
+        circle: 'circle',
+        squeare:'square',
+        roman: 'upper-roman',
+      }
     },
 
     gradients: theme => ({

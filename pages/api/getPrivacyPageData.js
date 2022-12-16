@@ -15,7 +15,7 @@ export const getPrivacyPageData=()=>{
            
           "pagedata": {
                         
-            "pagetitle":"Privacy Policy",
+            "pagetitle":"ALL IN ADVENTURES PRIVACY POLICY",
             "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
             "totalLocation":"28",
             "coverimageL":"/assets/gn-desktop-hero/All-In-Adventures-Generic-Hero-Image-Desktop.jpg",

@@ -32,7 +32,7 @@ const ThankLinkBox=()=>{
 
                                 <img className="w-full" src="/assets/all-in-adventure-all-activities-card1.jpg"></img>
                                 <div className="pt-16 pb-10 w-full text-center items-center justify-center thank-btm-shadow absolute bottom-0 left-0 ">
-                                        <a href="/events" className=" text-[#eeeeee] lg:text-lg font-medium text-center bg-red-600 group-hover:bg-red-700 block mx-auto w-[90%] py-3 lg:py-3 rounded-full">
+                                        <a href="/activities" className=" text-[#eeeeee] lg:text-lg font-medium text-center bg-red-600 group-hover:bg-red-700 block mx-auto w-[90%] py-3 lg:py-3 rounded-full">
                                             VIEW ALL GAMES                                               
                                         </a>
                                      </div>
