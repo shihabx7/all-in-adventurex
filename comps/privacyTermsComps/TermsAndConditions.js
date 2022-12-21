@@ -724,7 +724,41 @@ const TermsAndCondition=()=>{
                                                <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">12.8 FORCE MAJEURE.</h3>
                                               
                                                     <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
-                                                    12.8 FORCE MAJEURE.
+                                                    AIA shall not be liable for any delay or failure to perform resulting from causes
+                                                     outside its reasonable control, including, but not limited to, acts of God, war,
+                                                      terrorism, riots, pandemic, embargos, acts of civil or military authorities, fire,
+                                                       floods, accidents, strikes or shortages of transportation facilities, fuel, energy,
+                                                        labor or materials, telecommunications, or utilities.
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">12.9 NO WAIVER.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    
+                                                       Our failure to enforce any provision of these Terms will not be deemed a waiver of that or any other provision of these Terms.
+
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">12.10 SECTION HEADINGS.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    
+                                                    The section titles in these Terms are solely used for the convenience of the parties and have no legal or contractual significance. The words “include”, “including”, and all other forms of “include” are deemed to be followed by “without limitation.”
+
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">12.11 SURVIVAL OF CERTAIN PROVISIONS.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    
+                                                    Those provisions outlined here that normally would survive after you cease using the Services and Content and all provisions indicating an ongoing obligation, which include Section 6 (Disclaimers); Section 7 (Release and Indemnification); Section 8 (Limitation of Liability); Section 9 (Disputes Resolution) and Section 13 (Miscellaneous), shall survive any termination or expiration of these Terms, but shall not imply or create any continued right to use the Service after the termination of these Terms.
+
                                                     </p>
                                                             
                                         </div>
@@ -732,6 +766,18 @@ const TermsAndCondition=()=>{
                                      
                                  </div>
                                  {/*=============12. MISCELLANEOUS end==============*/}
+                                 {/*============= 13. CONTACT US=============*/}
+                                 <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
+                                      <h3 className="text-gray-700  font-os font-bold text-xl md:text-2xl lg:text-3xl ">13. CONTACT US</h3>
+                                      <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                      If you have any questions about these Terms, please write to us by mail at Mystery Room, LLC,
+                                       <span className="font-medium">Address:</span> 3883 Rogers Bridge Rd NW Suite 501 Duluth, GA 30097,
+                                        or email us at <a className="text-blue-600 hover:text-blue-700 underline underline-offset-4" href="mailto:privacy@allinadventures.com">privacy@allinadventures.com.</a> or call us at <a href="tel:+1 844-502-5546" className="text-blue-600 underline hover:text-blue-700">+1 844-502-5546</a>.
+                                               </p>
+                                        
+                                        
+                                 </div>
+                                 {/*=============13. CONTACT US end==============*/}
 
                             </div>
                     </div>
