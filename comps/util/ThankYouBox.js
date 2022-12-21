@@ -17,7 +17,7 @@ const ThankYouBox=(props)=>{
                                 <h2 className="text-[#aaaaaa] text-lg md:text-xl mt-1">We will be in touch and contact you soon</h2>
 
                         </div>
-                        <div className="thank-mid text-center mt-8">
+                        <div className="thank-mid text-center mt-8 mb-16">
                             <h3 className="text-3xl golden-text font-semibold mb-4">For more info </h3>
                             <div className="text-center text-[#aaaaaa]">
                                     <a className="block md:text-lg hover:text-[#FFEFCD]" href="tel:+18445025546"> <span className="md:text-xl">Call us :</span> <span className="underline underline-offset-4">+1(844) 502-5546</span> </a>

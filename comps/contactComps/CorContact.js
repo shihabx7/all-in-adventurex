@@ -1,6 +1,7 @@
 import TitleSeparator  from "../util/TitleSeparator"
-import Link from "next/dist/client/link"
+
 import { useState } from "react"
+import { useRouter } from 'next/router'
 
 const CorContact=()=>{
 
@@ -22,6 +23,7 @@ const CorContact=()=>{
         msg:''
 
     })
+    const router = useRouter()
 
    
 // ========================================================first name validation=================
@@ -185,9 +187,6 @@ const CorContact=()=>{
             
         }
     }
-
-   
-     
     const submitForm=async (event)=>{
         event.preventDefault()
         if(!err){
@@ -205,8 +204,15 @@ const CorContact=()=>{
 
                         })
                         const result = await response.json()
+
                         console.log(result.data)
                         console.log(result.success)
+                        if(result.success){
+                            router.push({
+                                pathname: '/thank-you',
+                               
+                            }) 
+                        }
             }
 
         }
@@ -317,7 +323,7 @@ const CorContact=()=>{
                                                     }
                                          </div>
                                 </div>
-                                 {/*========================  contact form row first name = last name========================*/}
+                                 {/*========================  contact form row first name = last name end========================*/}
                                  {/*======================================contact form row emal+phone====================== */}
                                  <div className="form-row flex flex-col space-y-3 md:flex-row md:space-y-0 justify-between mt-3 md:mt-10 lg:mt-12">
                                         <div className="relative form-col w-full md:w-[48%]">
@@ -363,7 +369,7 @@ const CorContact=()=>{
                                                   onChange={(e)=>checkComSub(e)} 
                                                   required>
                                                    <option value="">I am communicating because...</option>
-                                                   <option value="Morning">Party booking</option>
+                                                   <option value="Party booking">Party booking</option>
                                                    <option value=">After Noon">About job</option>
                                                    <option value="Evening">Other</option>
                                                </select>
@@ -382,10 +388,11 @@ const CorContact=()=>{
                                                      
                                                        <textarea 
                                                         name="msg"
+                                                        required
                                                         onChange={(e)=>{getMsg(e)}}
                                                         id="msg"
                                                        className="w-full h-[110px] md:h-[180px] event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green" placeholder="Write your message here"> 
-
+                                                        
                                                        </textarea>
                                                    </div>
                                                </div>

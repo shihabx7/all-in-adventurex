@@ -1,60 +1,104 @@
 import { useState } from "react";
 import { BsFillCheckCircleFill,BsCheck } from "react-icons/bs";
+import { useRouter } from 'next/router'
 const CouponForm=(props)=>{
 
     const [showCoupon,setShowcoupon]=useState(false)
+    const [err,setErr]=useState(false)
+    const [emptyErr,setEmptyErr]=useState(true)
+    const [formErr,setFormErr]=useState({
+          
+            nameErr:false,
+            emailErr:false,
+            
+    })
+    const [fieldVlue,setFieldValue]=useState({
+        
+        name:'',
+        email:'',
+       
+
+    })
+    const router = useRouter()
 
      /*============= coupon form function ===============*/
+      // ========================================================last name validation=================
+    const checkName=(e)=>{
+
+        const name=e.target.value.trim()
+
+        const namePatt=/^[a-zA-Z ]*$/
+        if(name.length>2 && name.length<21){
+            if(!namePatt.test(name)){
+                    setErr(true)
+                    setFormErr({...formErr,lNameErr:true})
+                    e.target.classList.remove("focus-green")
+                  e.target.classList.add("focus-red")
+            }
+            else{
+                    setErr(false)
+                    setFormErr({...formErr,lNameErr:false})
+                    setFieldValue({...fieldVlue,name:name})
+                    e.target.classList.remove("focus-red")
+                    e.target.classList.add("focus-green")
+            }
+        }
+        else{
+            setErr(true)
+            setFormErr({...formErr,nameErr:true})
+            e.target.classList.remove("focus-green")
+            e.target.classList.add("focus-red")
+            
+        }
+    }
+    // ========================================================email validation=================
+
+    const checkEmail=(e)=>{
+
+        const email=e.target.value.trim()
+
+        const emailPatt=/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        if(email.length>2){
+            if(!emailPatt.test(email)){
+                    setErr(true)
+                    setFormErr({...formErr,emailErr:true})
+                    e.target.classList.remove("focus-green")
+                  e.target.classList.add("focus-red")
+            }
+            else{
+                    setErr(false)
+                    setFormErr({...formErr,emailErr:false})
+                    setFieldValue({...fieldVlue,email:email})
+                    e.target.classList.remove("focus-red")
+                    e.target.classList.add("focus-green")
+            }
+        }
+        else{
+            setErr(true)
+            setFormErr({...formErr,emailErr:true})
+            e.target.classList.remove("focus-green")
+            e.target.classList.add("focus-red")
+            
+        }
+    }
     const showcouponnow=(e)=>{
 
         e.preventDefault()
-        const namePatt=/^[A-Za-z ]+$/
-
-        const name=document.getElementById('name'+props.id)
-        const email=document.getElementById('email'+props.id)
-        const nameErr=document.getElementById('err-name'+props.id)
+        if(!err){
+            if(fieldVlue.name!='' && fieldVlue.email!='')
+            {
+                console.log(fieldVlue)
+                setShowcoupon(true)
+                setFieldValue({...fieldVlue,name:''})
+                setFieldValue({...fieldVlue,email:''})
+            }
+        }
+        else{
+            console.log(formErr)
+        }
         
 
-        console.log(email.value)
        
-
-        if(name.value!=''  && email.value!=''){
-
-            if(name.value.length > 2 && name.value.match(namePatt))
-            {
-                setShowcoupon(true)
-                nameErr.classList.add('hidden')
-                name.classList.add('border-0')
-                 name.classList.add('event-input')
-                name.classList.remove('border-1')
-                name.classList.remove('border-[#DB2427]')
-            }
-            else{
-                nameErr.classList.remove('hidden')
-                name.classList.remove('border-0')
-                 name.classList.remove('event-input')
-                name.classList.add('border-1')
-                name.classList.add('border-[#DB2427]')
-            }
-            
-
-           
-        }
-
-        else{
-            
-
-            name.classList.remove('border-0')
-            name.classList.remove('event-input')
-            name.classList.add('border-1')
-            name.classList.add('border-[#DB2427]')
-
-            email.classList.remove('border-0')
-            email.classList.remove('event-input')
-            email.classList.add('border-1')
-            email.classList.add('border-[#DB2427]')
-         
-        }
 
         
     }
@@ -83,13 +127,15 @@ const CouponForm=(props)=>{
     }
 
     /**============copy to clipboard==================== */
+    /*==================== rand saving============== */
+    
     return(
         <div className="couponcard bg-[#FFF3D8] border border-[#DAC89F] drop-shadow-sm my-4">
             {/* ==================coupon desc============================= */}
             <div className="copoun-desc-box px-4 py-4 md:px-6 md:py-6">
                 <div className="coupon-title">
                     <p className="text-lg text-[#938056]">DEALS AND COUPONS</p>
-                    <h2 className="golden-text font-os font-bold text-2xl md:text-3xl lg:text-4xl">{props.coupon.coupon_title}</h2>
+                    <h2 className="golden-text font-os font-bold text-2xl md:text-3xl lg:text-4xl uppercase">{props.coupon.coupon_title}</h2>
                 </div>
                 <div className="coupon-desc mt-4 md:mt-4">
                     <p className="text-lg text-[#464646] lg:text-lg">{props.coupon.coupon_desc}</p>
@@ -131,9 +177,9 @@ const CouponForm=(props)=>{
                 <div className="md:w-1/3 coupon-offer-col bg-[#000000]  text-center">
                     <div className="py-12">
                         <p className="golden-text text-[64px] font-bold font-os leading-[1.2]">{props.coupon.coupon_offer_off}</p>
-                        <p className="golden-text text-[48px] font-os uppercase">off</p>
+                        <p className="golden-text text-[48px] font-os font-medium uppercase">off</p>
                     </div>
-                    <div className="bg-[#DAC89F] py-2 text-[#464646] md:text-lg">COUPON CODE</div>
+                    <div className="bg-[#DAC89F] py-2 text-[#222] md:text-lg">{props.coupon.offer_per}</div>
                 </div>
                 <div className="coupon-form-col md:w-2/3 px-4 flex flex-col justify-between ">
                         <div className="coupon-form-top flex justify-between items-center mt-2 md:mt-4">
@@ -171,12 +217,25 @@ const CouponForm=(props)=>{
                                
                                 <div className="coupon-form-col md:w-1/3">
                                         <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your name? *</p>
-                                        <input id={"name"+props.id} type="text" className="w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Your name" required></input>
+                                        <input id={"name"+props.id}
+                                        onChange={(e)=>checkName(e)}
+                                         type="text"
+                                         value={fieldVlue.name}
+                                          className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                                           placeholder="Your Name"
+                                            required></input>
+                                             
                                         
                                 </div>
                                 <div className="coupon-form-col md:w-1/3">
                                          <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your email? *</p>
-                                        <input id={"email"+props.id} type="email" className=" w-full event-input  border-0 md:py-3 px-4 bg-white" placeholder="Your Email" required></input>
+                                        <input id={"email"+props.id}
+                                         onChange={(e)=>checkEmail(e)}
+                                         value={fieldVlue.email}
+                                         type="email" className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                                          placeholder="Your Email"
+                                           required></input>
+                                            
                                 </div>
                                 <div className="coupon-form-col md:w-1/3">
                                     {

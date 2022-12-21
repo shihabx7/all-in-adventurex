@@ -43,25 +43,41 @@ export const getLocationIndActivityList=(slug)=>{
         return ret
       }
     
-      const getLocationSearchName=(slug)=>{
-        var locs=slug.split("-")
-        if(locs[0]=="n"){
-          locs[0]="n."
+      const getLocationSearchNameLw=(s)=>{
+        var spLoc=s.split("-")
+        if(spLoc[0]=="n." || spLoc[0]=="N."){
+          spLoc[0]="North"
         }
-        var st=locs[locs.length-1].toString()
-        locs=locs.slice(0,-1)
-        locs=locs.join(' ')
-    
-        return locs+", "+st
+        var st=spLoc[spLoc.length-1].toString()
+        spLoc=spLoc.slice(0,-1)
+        spLoc=spLoc.join(' ')
+
+        var nsp=spLoc.split(' ')
+        var x
+
+        for(x=0;x<nsp.length;x++){
+
+            var upc=nsp[x].charAt(0).toUpperCase()
+            var nnsp=nsp[x].substring(0,0) + upc + nsp[x].substring(0+1)
+            nsp[x]= nnsp
+        }
+
+        nsp=nsp.join(' ')
+        
+        var ret=nsp+" "+st.toUpperCase()
+        return ret
      }
 const bookingAll=bookingList('',slug)
     
     const data={
         "pagemeta":{
 
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
+                "title":"All Escape Rooms in "+getLocationSearchNameLw(slug)+" - All In Adventures at "+LocActivityData[slug].mall,
+                "description":"All In Adventures, formerly Mystery Room, run live escape rooms and other games in "+getLocationSearchNameLw(slug)+". Choose from many escape rooms at "+LocActivityData[slug].mall+" location.",
+                "keywords":"all games albany, all games "+getLocationSearchNameLw(slug)+", all escape rooms "+getLocationSearchNameLw(slug)+", all escape games "+getLocationSearchNameLw(slug)+", all games crossgates mall, all games "+LocActivityData[slug].mall.toLowerCase()+", all escape rooms "+LocActivityData[slug].mall.toLowerCase()+", all escape games "+LocActivityData[slug].mall.toLowerCase()+", all in adventures all games "+LocActivityData[slug].mall.toLowerCase()+" "+getLocationSearchNameLw(slug)+", mystery room all games "+LocActivityData[slug].mall.toLowerCase()+" "+getLocationSearchNameLw(slug),
+                "url":"/"+slug+"/activities",
+                "metaindex":true,
+                "metaimg":"/assets/all-game-mobile-hero/allinadventures-all-game-page-hero--mobile.jpg"
           },
            
           "pagedata": {

@@ -5,452 +5,733 @@ const TermsAndCondition=()=>{
         <div className="privacy relative bg-center bg-cover bg-[#FFF7EA]">
             
 
-                    <div className="section-container max-w-7xl mx-auto py-16 md:py-20 lg:py-28 relative z-30 px-4">
-                            
+            <div className="section-container max-w-7xl mx-auto py-16 md:py-20 lg:py-28 relative z-30 px-4">
+                            <div className="section-title">
+                                 <div className="section-title">
+                                   
+                                  
+
+                                 </div>
+                            </div>
                             <div className="privacy-content-box max-w-[1040px] mx-auto">
-                                {/*=============privacy-content 1==============*/}
+                                {/*============WELCOME TO ALL IN ADVENTURES! Last Updated: January 26th, 2022==============*/}
                                 <div className="privacy-content">
-                                     <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">GENERAL</h3>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
-                                      This website (the “Site”) is owned and operated by All In Adventures d/b/a 
-                                       <a href="https://gameshowroom.com/" className="hover:text-blue-600 cursor-pointer font-medium" target="_blank"> https://gameshowroom.com/ </a>(“COMPANY,” “we” or “us”). By using the Site, you 
-                                      agree to be bound by these Terms of Service and to use the Site in accordance 
-                                      with these Terms of Service, our Privacy Policy and any additional terms and conditions 
-                                      that may apply to specific sections of the Site or to products and services available 
-                                      through the Site or from COMPANY. Accessing the Site, in any manner, whether automated or otherwise, 
-                                      constitutes use of the Site and your agreement to be bound by these Terms of Service.
-
-                                      </p>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
-                                      We reserve the right to change these Terms of Service or to impose new conditions on use of the Site, 
-                                      from time to time, in which case we will post the revised Terms of Service on this website. 
-                                      By continuing to use the Site after we post any such changes, you accept the Terms of Service, as modified.
-                                     <span className="block font-medium"> 
-                                     Intellectual Property rights
-                                    </span> 
-                                      </p>
+                                <h3 className="text-gray-700  font-os font-bold text-xl md:text-2xl lg:text-3xl ">WELCOME TO ALL IN ADVENTURES!</h3>
+                                      <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                      All In Adventures, LLC (together with all subsidiaries and affiliates,
+                                       “<b>All In Adventures</b>”, “<b>AIA</b>”, “<b>our</b>”, “<b>we</b>”, or “<b>us</b>”) provides unique one-player and multi-player adventure,
+                                        escape room, mystery room, party, and puzzle games (collectively, “<b>Games</b>”) that you can enjoy either online
+                                         through a virtual experience or live in-store.
+                                     </p>
+                                     <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-3">
+                                     These Terms of Services (“<b>Terms</b>”) sets out the general terms and conditions on your use of our Games
+                                      (including our online virtual experience), our websites (and related sub-domains) (“<b>Websites</b>”),
+                                       and the services and products offered by AIA, and any other online or offline interaction with AIA
+                                        (together with Games and Websites, collectively, “<b>Services</b>”). The Terms do not apply to websites
+                                         controlled by All In Adventures that do not link to these Terms or to third-party websites linked
+                                          from our Website. By downloading, accessing, or using any portions of our Services, clicking on
+                                           the “I accept” button, completing the booking of a Game or participating in a Game, you represent
+                                            that you have read, understand, and agree to be bound by these Terms. You are deemed to have accepted
+                                             these Terms each time you access our Websites and each time you contact us via our Website or phone calls.
+                                              If you do not agree to be bound by these Terms, you may not access or use our Website. Certain portions
+                                               of the Services may have additional terms and conditions, and you may be asked to sign waivers or release
+                                                prior to participating in a Game. When these Services are used, you agree to be further bound by
+                                                 the associated additional terms and conditions.
+                                     </p>
+                                     <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-3">
+                                     <b>IMPORTANT NOTICE:</b> YOUR USE, ACCESS, DOWNLOAD, AND/OR RECEIVING OF ANY OF OUR SERVICES IS SUBJECT TO AN ARBITRATION PROVISION IN SECTION 9 OF THIS AGREEMENT, REQUIRING ALL CLAIMS TO BE RESOLVED BY WAY OF BINDING ARBITRATION, UNLESS PROHIBITED BY LAW OR YOU EXPRESSLY OPT OUT OF ARBITRATION AS DESCRIBED IN THAT SECTION.
+                                     </p>
                                  </div>
-                                  {/*=============privacy-content 1 end==============*/}
-                                 {/*=============privacy-content 2==============*/}
+                                  {/*=============tnc-content Last Updated: January 26th, 2022 end==============*/}
+                                 {/*=============1. ALL IN ADVENTURES SERVICES==============*/}
                                  <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
-                                      <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">OUR LIMITED LICENSE TO YOU</h3>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">This Site and all the materials available on the Site are the property of us and/or our 
-                                      affiliates or licensors, and are protected by copyright, trademark, and other intellectual property laws. The Site is provided solely for
-                                       your personal noncommercial use. You may not use the Site or the materials available on the Site in a manner that constitutes an infringement 
-                                       of our rights or that has not been authorized by us. More specifically, unless explicitly authorized in these Terms of Service or by the owner 
-                                       of the materials, you may not modify, copy, reproduce, republish, upload, post, transmit, translate, sell, create derivative works, exploit, 
-                                       or distribute in any manner or medium (including by email or other electronic means) any material from the Site. You may, however, from time to 
-                                       time, download and/or print one copy of individual pages of the Site for your personal, non-commercial use, provided that you keep 
-                                       intact all copyright and other proprietary notices.
+                                      <h3 className="text-gray-700  font-os font-bold text-xl md:text-2xl lg:text-3xl ">1. ALL IN ADVENTURES SERVICES</h3>
+                                      <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">1.1 NATURE OF THE AIA SERVICES.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">AIA Services include: (a) physical or virtual Games that you may book using
+                                                     the Website and other means; (b) access to, and use of, our Website and other third party services which facilitates your booking and Game
+                                                      experience; and (c) any other or related Content (defined below), products or services we make available to you, subject to the other
+                                                       provisions of these Terms. We reserve the right to discontinue or modify any promotion at any time with respect to any Services.
+                                                    </p>
+                                        </div>
+                                      <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">1.2 USER ELIGIBILITY.</h3>
+                                              
+                                               <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                                    <h3 className="text-gray-700  font-os font-bold md:text-lg lg:text-xl ">1.2.A INDIVIDUAL USERS.</h3>
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">You may voluntarily contact us by submitting Personal Information,
+                                                     such as your first and last name, email and phone number, by calling us, emailing us,
+                                                      or reaching us via live chat features or web forms located on our Websites. Personal
+                                                       Information collected by the “Contact Us” feature is used to contact you to respond
+                                                        to your inquiries and is not used to add you to our newsletter or another unsolicited
+                                                         marketing message (unless you also otherwise provide us with your Personal Information for those purposes).
+                                                    </p>
+                                     
+                                             </div>
+                                             <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                                    <h3 className="text-gray-700  font-os font-bold md:text-lg lg:text-xl ">1.2.B GROUP BOOKING.</h3>
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">Any individual purporting to represent a company entity represents and warrants that
+                                                     it is authorized to enter into the Agreement on behalf of the company entity it identifies and forms a legally binding agreement.
+                                                      A company entity shall remain responsible for the acts and omissions of the individual players invited or otherwise permitted by
+                                                       the company entity to use our Services or participate in our Games.
+                                                    </p>
+                                     
+                                             </div>
+                                             <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                                    <h3 className="text-gray-700  font-os font-bold md:text-lg lg:text-xl ">1.2.C REGISTERED USERS AND USER ACCOUNTS.</h3>
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">Certain portions of our Service may only be available to
+                                                     Registered Users. If you successfully register with our Service, you will be considered a “Registered User” of and will
+                                                      have a “User Account” for the Service. As a Registered User, you agree not to access any portion of the Service for
+                                                       which we do not intentionally provide you access. Without limiting the generality of the foregoing, you shall not
+                                                        access or use (or attempt to access or use) another Registered User's account, except as expressly allowed hereunder.
+                                                         You are responsible for providing accurate and truthful information to register for a User Account and are responsible
+                                                          for keeping your User Account secure.
+                                                    </p>
+                                     
+                                             </div>
+                                     
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">1.3 LICENSE TO USE OUR WEBSITE AND CONTENT.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">Our Services contain text, software, images, photographs, graphics, audio, video,
+                                                     applications, user interfaces, visual interfaces, logos, designs, product names, data, information and technical specifications
+                                                      (“Content”) which are derived in whole or in part from information and materials supplied by us and other sources, including without
+                                                       limitation, third party providers, and are protected by copyright, trademark, patent, and other applicable laws. Our Content does not
+                                                        include your data. Our Websites and their Content (excluding your data) are copyrighted as a collective work under United States copyright
+                                                         laws and are protected by other laws. Trademarks, logos, and service marks displayed on our Websites are registered and unregistered
+                                                          trademarks of All In Adventures, its licensors or content providers, or other third parties. Any unauthorized use of our intellectual
+                                                           property, including our marks, our copyrighted material, and our trade dress, is strictly prohibited and may be prosecuted to the
+                                                            fullest extent that the law provides. On the condition that you comply with all your obligations under these Terms, we hereby grant
+                                                             you a limited, non-exclusive, revocable, non-assignable, non-transferable authorization to view and use our Services and any Content
+                                                              for the purposes expressly authorized by All In Adventures. Other than the features related to group bookings, our Website is
+                                                               provided for your personal information and non-commercial use. Nothing in these Terms is intended to, or may be construed as,
+                                                                conferring by implication, estoppel or otherwise any license or other grant of right to use any patent, copyright, trademark,
+                                                                 service mark or other intellectual property of All In Adventures or any third party, except as expressly provided in these Terms.
+                                                                  You agree not to remove, obscure, or modify any trademark legend or copyright notice, author attribution, or other notice placed
+                                                                   on or contained within any of the Content. All rights not otherwise expressly granted by these Terms are reserved by us.
+                                                    </p>
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">1.4 NECESSARY EQUIPMENT, SOFTWARE, AND CONNECTIVITY.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">You must provide all equipment and software necessary to connect to
+                                                     and receive our Services, including but not limited to, a computer or mobile device that is suitable to connect with and use our Website.
+                                                      We do not guarantee that our Website will operate with your computer, tablet, mobile device, network, installed software, internet or
+                                                       mobile carrier service plans, or with any particular computer or other piece of hardware, software, equipment, or device you install
+                                                        on or use with your computer. You are solely responsible for any fees, including telecommunication, Internet connection or mobile fees,
+                                                         that you incur when accessing or using any of our Services. If your applicable device does not have coverage, network capacity,
+                                                          and reception, or such connection is congested, jammed, or otherwise unavailable, our Services may not work properly.
+                                                    </p>
+                                        </div>
+                                     
+                                 </div>
+                                 {/*=============1. INTRODUCTION end==============*/}
+                                 {/*============= 2. ACCEPTABLE USER CONDUCT=============*/}
+                                 <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
+                                      <h3 className="text-gray-700  font-os font-bold text-xl md:text-2xl lg:text-3xl ">2. ACCEPTABLE USER CONDUCT</h3>
+                                      <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">You agree to use our Services only for the purposes that are permitted by
+                                       these Terms. If you are under 18, you may use our Services only with involvement of a parent or guardian.
                                       </p>
+                                      <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">2.1 PROHIBITED CONDUCT.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">By using and accessing our Services, you acknowledge and agree that you must NOT:
+                                                    </p>
+                                                            <ul className="mt-4 pl-6 list-disc lg:text-lg text-gray-800">
+                                                              <li className="my-2"> 
+                                                              Personally identifiable contact information such as your address, email, phone number, or other information you submit when communicating with us, such as when using the “contact us” sections of our Services.
+                                                              </li>
+                                                              <li className="my-2"> 
+                                                              Demographic information such as your name, gender, date of birth, and zip code.
+                                                              </li>
+                                                              <li className="my-2"> 
+                                                              Purchase information, such as items you purchase, shipping address, and contact information for order details, statuses, or issues.
+                                                              </li>
+                                                              <li className="my-2"> 
+                                                              Payment information, such as your payment method, payment details (debit or credit card number and information) and billing address.
+                                                              </li>
+                                                              <li className="my-2"> 
+                                                              Account and profile information, which may include your photo or other information included in your account or profile.
+                                                              </li>
+                                                              <li className="my-2"> 
+                                                              Information you publish or submit on publicly available websites, blogs, chat rooms, and social media networks.
+
+                                                              </li>
+                                                            </ul>
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">2.2 INVESTIGATIONS.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">Although AIA does not generally monitor user activity occurring in connection with our Services, if AIA becomes aware of any possible violations by you of any provision of this Terms, AIA reserves the right to investigate such violations, and AIA may, at its sole discretion, immediately terminate your license to use our Services without prior notice to you or anyone else.
+                                                    </p>
+                                                            
+                                        </div>
+                                     
+                                     
+                                 </div>
+                                 {/*=============2. ACCEPTABLE USER CONDUCT end==============*/}
+                                {/*============= 3. USER MATERIALS=============*/}
+                                <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
+                                      <h3 className="text-gray-700  font-os font-bold text-xl md:text-2xl lg:text-3xl ">3. USER MATERIALS</h3>
                                       
-                                 </div>
-                                 {/*=============privacy-content 2 end==============*/}
-                                 {/*=============privacy-content 3==============*/}
-                                 <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
-                                      <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">YOUR LICENSE TO US</h3>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">By posting or submitting any material 
-                                      (including, without limitation, comments, blog entries, Facebook postings, photos and videos) to us via the Site, 
-                                      internet groups, social media venues, or to any of our staff via email, text or otherwise, you are representing: (i) 
-                                      that you are the owner of the material, or are making your posting or submission with the express consent of the owner 
-                                      of the material; and (ii) that you are thirteen years of age or older. In addition, when you submit, email, 
-                                      text or deliver or post any material, you are granting us, and anyone authorized by us, a royalty-free, perpetual, 
-                                      irrevocable, non-exclusive, unrestricted, worldwide license to use, copy, modify, transmit, sell, exploit, 
-                                      create derivative works from, distribute, and/or publicly perform or display such material, in whole or in part, 
-                                      in any manner or medium, now known or hereafter developed, for any purpose. The foregoing grant shall include the 
-                                      right to exploit any proprietary rights in such posting or submission, including, but not limited to, rights under 
-                                      copyright, trademark, service mark or patent laws under any relevant jurisdiction. Also, in connection with the exercise 
-                                      of such rights, you grant us, and anyone authorized by us, the right to identify you as the author of any of your postings 
-                                      or submissions by name, email address or screen name, as we deem appropriate.
-
-                                      </p>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">You acknowledge and agree that any contributions 
-                                      originally created by you for us shall be deemed a “work made for hire” when the work performed is within the 
-                                      scope of the definition of a work made for hire in Section 101 of the United States Copyright Law, as amended. 
-                                      As such, the copyrights in those works shall belong to COMPANY from their creation. Thus, COMPANY shall be 
-                                      deemed the author and exclusive owner thereof and shall have the right to exploit any or all of the results 
-                                      and proceeds in any and all media, now known or hereafter devised, throughout the universe, in perpetuity, 
-                                      in all languages, as COMPANY determines. In the event that any of the results and proceeds of your submissions 
-                                      hereunder are not deemed a “work made for hire” under Section 101 of the Copyright Act, as amended, you hereby, 
-                                      without additional compensation, irrevocably assign, convey and transfer to COMPANY all proprietary rights, 
-                                      including without limitation, all copyrights and trademarks throughout the universe, in perpetuity in every 
-                                      medium, whether now known or hereafter devised, to such material and any and all right, title and interest 
-                                      in and to all such proprietary rights in every medium, whether now known or hereafter devised, throughout the 
-                                      universe, in perpetuity. Any posted material which are reproductions of prior works by you shall be co-owned by us.
-                                    </p>
-                                    <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
-                                    You acknowledge that COMPANY has the right but not the obligation to use and display any postings or contributions 
-                                    of any kind and that COMPANY may elect to cease the use and display of any such materials (or any portion thereof), 
-                                    at any time for any reason whatsoever.
-
-                                    </p>
-                                    <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
-                                        Limitations on Linking and Framing. You may establish a hypertext link to the Site so long as the link does not state or imply any sponsorship of your site by us or by the Site. 
-                                         However, you may not, without our prior written permission, frame or inline link any of the content of the Site, 
-                                         or incorporate into another website or other service any of our material, content or intellectual property.
-                                    </p>
+                                      <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">3.1 USER GENERATED MATERIALS.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    Content, information, texts, images, data, videos, recordings and other materials posted or provided by
+                                                     users via our Website (collectively, "<b>User Materials</b>") are the intellectual property of the specific users
+                                                      of our Website who post such User Materials. You are solely responsible for (a) User Materials, including
+                                                       the accuracy and completeness thereof, and (b) obtaining and documenting any waivers or consents from any
+                                                        third parties required for All In Adventures (and its third party contractors or processors) to perform
+                                                         its obligations and receive, process, transmit, and display User Materials as contemplated under these Terms.
+                                                          By your submission, posting or delivering of User Materials to us, you hereby grant to us a transferable,
+                                                           non-exclusive, worldwide, perpetual, royalty-free license to access, use, reproduce, modify, edit, adapt,
+                                                            publish, translate, display, distribute, sell, sublicense, and create derivative works and compilations
+                                                             incorporating your User Materials. We will use commercially reasonable efforts to comply with our privacy
+                                                              related obligations under our Privacy Policy with respect to such User Materials, and <b>you represent and warrant
+                                                               that you have the right to make such User Materials available to us</b>. Some of our Websites may allow for a
+                                                                “live chat” feature. Any communication that you have or content that you submit via the live chat feature is
+                                                                 considered to be User Material and is subject to the same terms and conditions set forth here. In particular,
+                                                                  we don't guarantee any confidentiality with respect to any live chat.
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">3.2 FEEDBACK.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    You agree that submission of any ideas, suggestions, documents, and/or proposals to All In Adventures through its suggestion,
+                                                     feedback, contact, or other similar pages on our Website or our Facebook page or other social media pages (“<b>Feedback</b>”)
+                                                      is at your own risk and that All In Adventures has no obligation (including without limitation obligations of confidentiality)
+                                                       with respect to such Feedback. You represent and warrant that you have all rights necessary to submit the Feedback.
+                                                        You hereby grant to All In Adventures a fully paid, royalty-free, perpetual, irrevocable, worldwide, non-exclusive,
+                                                         and fully sub-licensable right and license to use, reproduce, perform, display, distribute, adapt, modify, re-format,
+                                                          create derivative works of, and otherwise commercially or non-commercially exploit in any manner, any and all Feedback,
+                                                           and to sublicense the foregoing rights, in connection with the operation, maintenance and improvement of our Services.
+                                                    </p>
+                                                            
+                                        </div>
+                                     
                                      
                                  </div>
-                                 {/*=============privacy-content 3 end==============*/}
-                                 {/*=============privacy-content 4==============*/}
-                                 <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
-                                      <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">DISCLAIMERS</h3>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">Throughout the Site, we may provide 
-                                      links and pointers to Internet sites maintained by third parties. Our linking to such third-party 
-                                      sites does not imply an endorsement or sponsorship of such sites, or the information, products or 
-                                      services offered on or through the sites. In addition, neither we nor affiliates operate or control 
-                                      in any respect any information, products or services that third parties may provide on or through the 
-                                      Site or on websites linked to by us on the Site.
-
-                                      </p>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">If applicable, any opinions, advice, statements, 
-                                      services, offers, or other information or content expressed or made available by third parties, 
-                                      including information providers, are those of the respective authors or distributors, and not COMPANY. 
-                                      Neither COMPANY nor any third-party provider of information guarantees the accuracy, completeness, or 
-                                      usefulness of any content. Furthermore, COMPANY neither endorses nor is responsible for the accuracy and 
-                                      reliability of any opinion, advice, or statement made on any of the Sites by anyone other than an authorized 
-                                      COMPANY representative while acting in his/her official capacity.
-                                        </p>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">THE INFORMATION, PRODUCTS AND SERVICES OFFERED ON OR 
-                                      THROUGH THE SITE AND BY COMPANY AND ANY THIRD-PARTY SITES ARE PROVIDED “AS IS” AND WITHOUT WARRANTIES OF ANY KIND 
-                                      EITHER EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMISSIBLE PURSUANT TO APPLICABLE LAW, WE DISCLAIM ALL WARRANTIES, 
-                                      EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A 
-                                      PARTICULAR PURPOSE. WE DO NOT WARRANT THAT THE SITE OR ANY OF ITS FUNCTIONS WILL BE UNINTERRUPTED OR ERROR-FREE, 
-                                      THAT DEFECTS WILL BE CORRECTED, OR THAT ANY PART OF THIS SITE, INCLUDING BULLETIN BOARDS, OR THE SERVERS THAT MAKE 
-                                      IT AVAILABLE, ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.
-                                      </p>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">WE DO NOT WARRANT OR MAKE ANY REPRESENTATIONS 
-                                      REGARDING THE USE OR THE RESULTS OF THE USE OF THE SITE OR MATERIALS ON THIS SITE OR ON THIRD-PARTY SITES IN 
-                                      TERMS OF THEIR CORRECTNESS, ACCURACY, TIMELINESS, RELIABILITY OR OTHERWISE.
-
-                                      </p>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">You agree at all times to defend, indemnify and hold harmless 
-                                      COMPANY its affiliates, their successors, transferees, assignees and licensees and their respective parent and subsidiary companies, 
-                                      agents, associates, officers, directors, shareholders and employees of each from and against any and all claims, causes of action, 
-                                      damages, liabilities, costs and expenses, including legal fees and expenses, arising out of or related to your breach of any obligation, 
-                                      warranty, representation or covenant set forth herein.
-
-                                      </p>
+                                 {/*=============3. USER MATERIALS end==============*/}
+                                  {/*============= 4. FEES AND ECONOMIC TERMS=============*/}
+                                <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
+                                      <h3 className="text-gray-700  font-os font-bold text-xl md:text-2xl lg:text-3xl ">4. FEES AND ECONOMIC TERMS</h3>
                                       
-
+                                      <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">4.1 SERVICE FEES</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    In consideration for access to and use of the Services, AIA shall be entitled to charge you:
+                                                     (i) tickets for participating in the Games, and (ii) any ancillary costs or expenses AIA incurs in
+                                                      connection with the transactions relating to providing the Services; in each case, as more thoroughly
+                                                       described in the Website, as applicable and as then in effect, and subject to change from time to time in
+                                                        the sole discretion of AIA. As and if requested, you should provide AIA payment information, including credit
+                                                         card or bank account information for AIA to process payments.
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">4.2 PRODUCT LISTINGS AND PURCHASES.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    In addition to any other terms and policies relating to product purchases on our Websites, the following terms apply
+                                                     when you purchase a product on our Websites:
+                                                    </p>
+                                                    <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                                        <h3 className="text-gray-700 font-os font-bold md:text-lg lg:text-xl ">4.2.A PRICING; PAYMENT.</h3>
+                                              
+                                                        <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                        All prices are shown in U.S. dollars and are subject to change. AIA reserves its right to expire or modify
+                                                         any promotion at any time. Taxes, shipping and handling charges are additional. All prices and taxes are subject
+                                                          to change or adjustment without notice. You are responsible for paying all costs associated with your purchase,
+                                                           and for providing accurate and current payment information. We will process your payment immediately upon our
+                                                            acceptance of your order.
+                                                       </p>
+                                                            
+                                                  </div>
+                                                  <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                                        <h3 className="text-gray-700 font-os font-bold md:text-lg lg:text-xl ">4.2.B AVAILABILITY.</h3>
+                                              
+                                                        <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                        All items are subject to availability and we reserve the right to impose quantity limits on any order,
+                                                         to reject all or part of an order and to discontinue products without notice, even if you have already
+                                                          placed your order. Please note that some items may be backordered or unavailable, even if our Website
+                                                           indicates that they are in-stock, and adding an item to your cart does not guarantee the availability of that item.
+                                                       </p>
+                                                            
+                                                  </div>
+                                                  <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                                        <h3 className="text-gray-700 font-os font-bold md:text-lg lg:text-xl ">4.2.C SHIPPING AND HANDLING.</h3>
+                                              
+                                                        <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                        You agree to pay the shipping and any handling charges shown on the Site when your order is placed. We reserve the right to increase,
+                                                         decrease and add or eliminate charges from time to time and without prior notice. Any shipping or handling charges may or may not
+                                                          reflect actual costs. All orders are shipment contracts, not destination contracts. Any shipping times shown on the Website are
+                                                           estimates only - actual delivery dates may vary. You are solely responsible for providing all information necessary for us to
+                                                            ship purchased products to you.
+                                                       </p>
+                                                            
+                                                  </div>
+                                                  <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                                        <h3 className="text-gray-700 font-os font-bold md:text-lg lg:text-xl ">4.2.D NOT FOR RESALE.</h3>
+                                              
+                                                        <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                        The products purchased on our Website are for private and domestic use only and are not for resale or distribution.
+                                                         We reserve the right to cancel orders and/or suspend accounts where we believe products are being ordered in breach
+                                                          of this provision.
+                                                       </p>
+                                                            
+                                                  </div>
+                                                  <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                                        <h3 className="text-gray-700 font-os font-bold md:text-lg lg:text-xl ">4.2.E PRODUCT RECALL.</h3>
+                                              
+                                                        <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                        In the event of a product recall, we will publish a notice on our Website and/or notify you via contact information provided to us. The notice will provide instructions on how to obtain a replacement for the recalled product. It is your responsibility to check the Site or to provide us with up-to-date contact information.
+                                                       </p>
+                                                            
+                                                  </div>
+                                                  <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                                        <h3 className="text-gray-700 font-os font-bold md:text-lg lg:text-xl ">4.2.F PRODUCT RETURN.</h3>
+                                              
+                                                        <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                        Our policy governing the return, exchange and refund of our product can be found on our Website.
+                                                       </p>
+                                                            
+                                                  </div>
+                                                            
+                                        </div>
+                                     
                                      
                                  </div>
-                                 {/*=============privacy-content 4 end==============*/}
-                                 {/*=============privacy-content 5==============*/}
+                                 {/*=============4. FEES AND ECONOMIC TERMS end==============*/}
+                                 {/*============= 5. PRIVACY=============*/}
                                  <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
-                                      <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">ONLINE COMMERCE</h3>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">Certain sections of the Site may allow you to 
-                                      purchase many different types of products and services online that are provided by third parties. We are not 
-                                      responsible for the quality, accuracy, timeliness, reliability or any other aspect of these products and services. 
-                                      If you make a purchase from a merchant on the Site or on a site linked to by the Site, 
-                                      the information obtained during your visit to that merchant's online store or site, and the information that 
-                                      you give as part of the transaction, such as your credit card number and contact information, 
-                                      may be collected by both the merchant and us. A merchant may have privacy and data collection practices that are 
-                                      different from ours. We have no responsibility or liability for these independent policies. In addition, 
-                                      when you purchase products or services on or through the Site, you may be subject to additional terms and 
-                                      conditions that specifically apply to your purchase or use of such products or services. For more information 
-                                      regarding a merchant, its online store, its privacy policies, and/or any additional terms and 
-                                      conditions that may apply, visit that merchant's website and click on its information links or 
-                                      contact the merchant directly. You release us and our affiliates from any damages that you incur, 
-                                      and agree not to assert any claims against us or them, arising from your purchase or use of any products 
-                                      or services made available by third parties through the Site.
-
-                                      </p>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">Your participation, correspondence or business 
-                                      dealings with any third party found on or through our Site, regarding payment and delivery of specific goods 
-                                      and services, and any other terms, conditions, representations or warranties associated with such dealings, 
-                                      are solely between you and such third party. You agree that COMPANY shall not be responsible or liable for any 
-                                      loss, damage, or other matters of any sort incurred as the result of such dealings.
-
-                                    </p>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">You agree to be financially responsible for all 
-                                      purchases made by you or someone acting on your behalf through the Site. You agree to use the Site and to 
-                                      purchase services or products through the Site for legitimate, non-commercial purposes only. You also agree
-                                       not to make any purchases for speculative, false or fraudulent purposes or for the purpose of anticipating 
-                                       demand for a particular product or service. You agree to only purchase goods or services for yourself or 
-                                       for another person for whom you are legally permitted to do so. When making a purchase for a third party 
-                                       that requires you to submit the third party's personal information to us or a merchant, you represent that 
-                                       you have obtained the express consent of such third party to provide such third party's personal information.
-                                    </p>
-                                    <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">Your purchase is for personal use only. 
-                                    Sharing of purchases is not permitted and will be considered unauthorized, 
-                                    an infringing use of our copyrighted material, and may subject violators to liability.
-
-                                    </p>
-                                    <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">If payment for a course is declined, our system will automatically disable access 
-                                    to our premium materials. (We understand. This usually happens because a credit card expires.) We want to help restore your access, 
-                                    so we'll make every attempt to contact you to help resolve this issue. Once the billing issue is resolved, we'll restore access
-
-                                    </p>
-                                     
-                                 </div>
-                                 {/*=============privacy-content 5 end==============*/}
-                                 {/*=============privacy-content 6==============*/}
-                                 <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
-                                      <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">INTERACTIVE FEATURES</h3>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">This Site may include a variety of features, 
-                                      such as bulletin boards, web logs, chat rooms, and email services, which allow feedback to us and 
-                                      real-time interaction between users, and other features which allow users to communicate with others. 
-                                      Responsibility for what is posted on bulletin boards, web logs, chat rooms, and other public posting areas on the Site, 
-                                      or sent via any email services on the Site, lies with each user - you alone are responsible for the material 
-                                      you post or send. We do not control the messages, information or files that you or others may provide through the Site. 
-                                      It is a condition of your use of the Site that you do not:
-
-                                      </p>
-                                      <ul className="star-list mt-2 md:mt-3 lg:mt-4 list-outside pl-6">
-                                             <li className="my-2 md:my-3 text-gray-700 font-thin lg:text-lg">
-                                                  Restrict or inhibit any other user from using and enjoying the Site.
-                                             </li>
-                                             <li className="my-2 md:my-3 text-gray-700 font-thin lg:text-lg">
-                                                     Use the Site to impersonate any person or entity, or falsely state or otherwise misrepresent 
-                                                     your affiliation with a person or entity.
-                                             </li>
-                                             <li className="my-2 md:my-3 text-gray-700 font-thin lg:text-lg">
-                                                    Interfere with or disrupt any servers or networks used to provide the Site or its features, 
-                                                    or disobey any requirements, procedures, policies or regulations of the networks we use to provide the Site.
-                                             </li>
-                                             <li className="my-2 md:my-3 text-gray-700 font-thin lg:text-lg">
-                                                     Use the Site to instigate or encourage others to commit illegal activities or cause injury or 
-                                                     property damage to any person.
-                                             </li>
-                                             <li className="my-2 md:my-3 text-gray-700 font-thin lg:text-lg">
-                                                    Gain unauthorized access to the Site, or any account, computer system, or network connected to this Site, 
-                                                    by means such as hacking, password mining or other illicit means.
-                                             </li>
-                                             <li className="my-2 md:my-3 text-gray-700 font-thin lg:text-lg">
-                                                     Obtain or attempt to obtain any materials or information through any means not 
-                                                     intentionally made available through this Site.
-                                            </li>
-                                             <li className="my-2 md:my-3 text-gray-700 font-thin lg:text-lg">
-                                                    Use the Site to post or transmit any unlawful, threatening, abusive, libelous, defamatory, obscene, 
-                                                    vulgar, pornographic, profane or indecent information of any kind, including without limitation any 
-                                                    transmissions constituting or encouraging conduct that would constitute a criminal offense, give rise 
-                                                    to civil liability or otherwise violate any local, state, national or international law.                                             </li>
-                                             <li className="my-2 md:my-3 text-gray-700 font-thin lg:text-lg">
-                                                     Use the Site to post or transmit any information, software or other material that violates or infringes upon the rights of others, 
-                                                     including material that is an invasion of privacy or publicity rights or that is protected by copyright, trademark or other proprietary right, 
-                                                     or derivative works with respect thereto, without first obtaining permission from the owner or rights holder.
-                                             </li>
-                                             <li className="my-2 md:my-3 text-gray-700 font-thin lg:text-lg">
-                                                     Use the Site to post or transmit any information, software or other material that contains a virus or other 
-                                                     harmful component.
-                                             </li>
-                                             <li className="my-2 md:my-3 text-gray-700 font-thin lg:text-lg">
-                                                  Use the Site to post, transmit or in any way exploit any information, software or other material for commercial 
-                                                  purposes, or that contains advertising.
-                                             </li>
-                                             <li className="my-2 md:my-3 text-gray-700 font-thin lg:text-lg">
-                                                     Use the Site to advertise or solicit to anyone to buy or sell products or services, or to make donations 
-                                                     of any kind, without our express written approval.
-                                             </li>
-                                             <li className="my-2 md:my-3 text-gray-700 font-thin lg:text-lg">
-                                                     Gather for marketing purposes any email addresses or other personal information that has 
-                                                     been posted by other users of the Site.
-                                             </li>
-                                        </ul>
-
-                                        <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
-                                             ALL IN ADVENTURES may host message boards, chats and other public forums on its Sites. 
-                                             Any user failing to comply with the terms and conditions of this Agreement may be 
-                                             expelled from and refused continued access to, the message boards, chats or other public forums 
-                                             in the future. ALL IN ADVENTURES or its designated agents may remove or alter any user-created 
-                                             content at any time for any reason. Message boards, chats and other public forums are intended 
-                                             to serve as discussion centers for users and subscribers. Information and content posted within 
-                                             these public forums may be provided by ALL IN ADVENTURES staff, ALL IN ADVENTURES's outside contributors, 
-                                             or by users not connected with COMPANY, some of whom may employ anonymous user names. 
-                                             ALL IN ADVENTURES expressly disclaims all responsibility and endorsement and makes no 
-                                             representation as to the validity of any opinion, advice, information or statement made or 
-                                             displayed in these forums by third parties, nor are we responsible for any errors or omissions 
-                                             in such postings, or for hyperlinks embedded in any messages. Under no circumstances will we, 
-                                             our affiliates, suppliers or agents be liable for any loss or damage caused by your reliance on 
-                                             information obtained through these forums. The opinions expressed in these forums are solely the 
-                                             opinions of the participants, and do not reflect the opinions of ALL IN ADVENTURES or any of its 
-                                             subsidiaries or affiliates.
-
-
+                                      <h3 className="text-gray-700  font-os font-bold text-xl md:text-2xl lg:text-3xl ">5. PRIVACY</h3>
+                                      <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                      Your privacy is important to use. We make our Privacy Policy available to you regarding how we collect,
+                                       use and share your Personal Information. We encourage you to read our Privacy Policy, and to use it to help
+                                        you make informed decisions. AIA (and our service providers or third parties) may anonymize and aggregate
+                                         your personal information provided to us and use the de-identified information for other purposes, including
+                                          to improve our product and services during or after the term.
                                         </p>
-                                        <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
-                                                ALL IN ADVENTURES has no obligation whatsoever to monitor any of the content or 
-                                                postings on the message boards, chat rooms or other public forums on the Sites. 
-                                                However, you acknowledge and agree that we have the absolute right to monitor the 
-                                                same at our sole discretion. In addition, we reserve the right to alter, edit, 
-                                                refuse to post or remove any postings or content, in whole or in part, for any 
-                                                reason and to disclose such materials and the circumstances surrounding their 
-                                                transmission to any third party in order to satisfy any applicable law, regulation, 
-                                                legal process or governmental request and to protect ourselves, our clients, sponsors, 
-                                                users and visitors.
-                                         </p>
-                                        <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
-                                                We occasionally include access to an online community as part of our programs. 
-                                                We want every single member to add value to the group. Our goal is to make your 
-                                                community the most valuable community you're a member of. 
-                                                Therefore, we reserve the right to remove anyone at any time. 
-                                                We rarely do this, but we want to let you know how seriously we take our communities.
-                                        </p>
-                                      
-                                     
-                                 </div>
-                                 {/*=============privacy-content 6 end==============*/}
-                                 {/*=============privacy-content 7==============*/}
-                                 <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
-                                      <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">REGISTRATION</h3>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
-                                            To access certain features of the Site, we may ask you to provide certain demographic information including your gender, 
-                                            year of birth, zip code and country. In addition, if you elect to sign-up for a particular feature of the Site, 
-                                            such as chat rooms, web logs, or bulletin boards, you may also be asked to register with us on the form provided 
-                                            and such registration may require you to provide personally identifiable information such as your name and email address. 
-                                            You agree to provide true, accurate, current and complete information about yourself as prompted by the Site's registration form. 
-                                            If we have reasonable grounds to suspect that such information is untrue, inaccurate, or incomplete, we have the right to suspend 
-                                            or terminate your account and refuse any and all current or future use of the Site (or any portion thereof). Our use of any personally 
-                                            identifiable information you provide to us as part of the registration process is governed by the terms of our Privacy Policy.
-
-                                      </p>
-                                </div>
-                                 {/*=============privacy-content 7 end==============*/}
-                                 {/*=============privacy-content 8==============*/}
-                                 <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
-                                      <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">PASSWORDS</h3>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
-                                            To use certain features of the Site, you will need a username and password, which you will receive through the Site's 
-                                            registration process. You are responsible for maintaining the confidentiality of the password and account, 
-                                            and are responsible for all activities (whether by you or by others) that occur under your password or account. 
-                                            You agree to notify us immediately of any unauthorized use of your password or account or any other breach of security, 
-                                            and to ensure that you exit from your account at the end of each session. We cannot and will not be liable for 
-                                            any loss or damage arising from your failure to protect your password or account information.
-
-                                      </p>
-                                    </div>
-                                 {/*=============privacy-content 8 end==============*/}
-                                 {/*=============privacy-content 9==============*/}
-                                 <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
-                                      <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">LIMITATION OF LIABILITY</h3>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
-                                              UNDER NO CIRCUMSTANCES, INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE, SHALL WE, 
-                                              OUR SUBSIDIARY AND PARENT COMPANIES OR AFFILIATES BE LIABLE FOR ANY DIRECT, INDIRECT, 
-                                              INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES THAT RESULT FROM THE USE OF, 
-                                              OR THE INABILITY TO USE, THE SITE, INCLUDING OUR MESSAGING, BLOGS, COMMENTS 
-                                              OF OTHERS, BOOKS, EMAILS, PRODUCTS, OR SERVICES, OR THIRD-PARTY MATERIALS, PRODUCTS, 
-                                              OR SERVICES MADE AVAILABLE THROUGH THE SITE OR BY US IN ANY WAY, EVEN IF WE ARE ADVISED 
-                                              BEFOREHAND OF THE POSSIBILITY OF SUCH DAMAGES. (BECAUSE SOME STATES DO NOT ALLOW THE EXCLUSION 
-                                              OR LIMITATION OF CERTAIN CATEGORIES OF DAMAGES, THE ABOVE LIMITATION MAY NOT APPLY TO YOU. 
-                                              IN SUCH STATES, OUR LIABILITY AND THE LIABILITY OF OUR SUBSIDIARY AND PARENT COMPANIES OR AFFILIATES 
-                                              IS LIMITED TO THE FULLEST EXTENT PERMITTED BY SUCH STATE LAW.) YOU SPECIFICALLY ACKNOWLEDGE AND AGREE 
-                                              THAT WE ARE NOT LIABLE FOR ANY DEFAMATORY, OFFENSIVE OR ILLEGAL CONDUCT OF ANY USER. 
-                                              IF YOU ARE DISSATISFIED WITH THE SITE, ANY MATERIALS, PRODUCTS, OR SERVICES ON THE SITE, 
-                                              OR WITH ANY OF THE SITE'S TERMS AND CONDITIONS, YOUR SOLE AND EXCLUSIVE REMEDY IS 
-                                              TO DISCONTINUE USING THE SITE AND THE PRODUCTS, SERVICES AND/OR MATERIALS COMPANY IS NOT AN 
-                                              INVESTMENT ADVISORY SERVICE, IS NOT AN INVESTMENT ADVISER, AND DOES NOT PROVIDE PERSONALIZED FINANCIAL 
-                                              ADVICE OR ACT AS A FINANCIAL ADVISOR.
-
-                                        </p>
-                                        <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4 font-semibold">
-                                             WE EXIST FOR EDUCATIONAL PURPOSES ONLY, AND THE MATERIALS AND INFORMATION CONTAINED HEREIN AND IN 
-                                             OUR PRODUCTS AND SERVICES ARE FOR GENERAL INFORMATIONAL PURPOSES ONLY. NONE OF THE 
-                                             INFORMATION PROVIDED BY US IS INTENDED AS INVESTMENT, TAX, ACCOUNTING OR LEGAL ADVICE, 
-                                             AS AN OFFER OR SOLICITATION OF AN OFFER TO BUY OR SELL, OR AS AN ENDORSEMENT, RECOMMENDATION 
-                                             OR SPONSORSHIP OF ANY COMPANY, SECURITY, OR FUND. OUR INFORMATION SHOULD NOT BE RELIED UPON FOR 
-                                             PURPOSES OF TRANSACTING IN SECURITIES OR OTHER INVESTMENTS.
-
-
-                                        </p>
-                                        <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4 ">
-                                            WE DO NOT OFFER OR PROVIDE TAX, LEGAL OR INVESTMENT ADVICE AND YOU 
-                                            ARE RESPONSIBLE FOR CONSULTING TAX, LEGAL, OR FINANCIAL PROFESSIONALS 
-                                            BEFORE ACTING ON ANY INFORMATION PROVIDED BY US. THIS SITE IS CONTINUALLY 
-                                            UNDER DEVELOPMENT AND COMPANY MAKES NO WARRANTY OF ANY KIND, IMPLIED OR EXPRESS, 
-                                            AS TO ITS ACCURACY, COMPLETENESS OR APPROPRIATENESS FOR ANY PURPOSE.
-
-                                        </p>
-                                        <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4 ">
-                                                YOU acknowledge and agrees that no representation has been made by COMPANY OR ITS AFFILIATES and 
-                                                relied upon as to the future income, expenses, sales volume or potential profitability that may 
-                                                be derived from the participation in THIS PROGRAM.
-                                         </p>
-                                    </div>
-                                 {/*=============privacy-content 9 end==============*/}
-                                 {/*=============privacy-content 10==============*/}
-                                 <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
-                                      <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">TERMINATION</h3>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
-                                            We may cancel or terminate your right to use the Site or any part of the Site at any time without notice. 
-                                            In the event of cancellation or termination, you are no longer authorized to access the part of the 
-                                            Site affected by such cancellation or termination. The restrictions imposed on you with respect to 
-                                            material downloaded from the Site, and the disclaimers and limitations of liabilities set forth in 
-                                            these Terms of Service, shall survive.
-
-                                        </p>
-                                        
-                                    </div>
-                                 {/*=============privacy-content 10 end==============*/}
-                                 {/*=============privacy-content 10==============*/}
-                                 <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
-                                      <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">REFUND POLICY</h3>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
-                                      Your purchase of a product or service or ticket to an event may or may not provide for any refund. 
-                                      Each specific product, service, event or course will specify its own refund policy.
-
-                                        </p>
-                                        
-                                    </div>
-                                 {/*=============privacy-content 10 end==============*/}
-                                 {/*=============privacy-content 11==============*/}
-                                 <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
-                                      <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">OTHER</h3>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
-                                         The Digital Millennium Copyright Act of 1998 (the “DMCA”) provides recourse for copyright owners who 
-                                         believe that material appearing on the Internet infringes their rights under the U.S. copyright law. 
-                                         If you believe in good faith that materials hosted by COMPANY infringe your copyright, you, or your 
-                                         agent may send to COMPANY a notice requesting that the material be removed or access to it be blocked. 
-                                         Any notification by a copyright owner or a person authorized to act on its behalf that fails to comply 
-                                         with requirements of the DMCA shall not be considered sufficient notice and shall not be deemed to confer 
-                                         upon COMPANY actual knowledge of facts or circumstances from which infringing material or acts are evident. 
-                                         If you believe in good faith that a notice of copyright infringement has been wrongly filed against you, 
-                                         the DMCA permits you to send to COMPANY a counter-notice. All notices and counter notices must meet the 
-                                         then current statutory requirements imposed by the DMCA; see <a href="http://www.loc.gov/copyright" target="" className="cursor-pointer hover:text-blue-600 font-medium"> http://www.loc.gov/copyright  </a>for details. 
-                                         COMPANY's Copyright Agent for notice of claims of copyright infringement or counter notices can be reached as 
-                                         follows: support@samovens.com
-
-
-                                        </p>
-                                        <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
-                                        This Agreement shall be binding upon and inure to the benefit of COMPANY and our respective assigns, 
-                                        successors, heirs, and legal representatives. Neither this Agreement nor any rights hereunder may be 
-                                        assigned without the prior written consent of COMPANY. Notwithstanding the foregoing, all rights and 
-                                        obligations under this Agreement may be freely assigned by COMPANY to any affiliated entity or any of 
-                                        its wholly owned subsidiaries
-                                        </p>
-                                        <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
-                                          These Terms of Use shall be governed by and construed in accordance with the 
-                                          laws of the State of Gwinnett County, Georgia, United States and any dispute shall 
-                                          be subject to binding arbitration in ­­­Gwinnett County, Georgia, United States. 
-                                          If any provision of this agreement shall be unlawful, void or for any reason 
-                                          unenforceable, then that provision shall be deemed severable from this agreement 
-                                          and shall not affect the validity and enforceability of any remaining provisions.
-                                        </p>
-                                        
-                                    </div>
-                                 {/*=============privacy-content 11 end==============*/}
-                                 {/*=============privacy-content 11==============*/}
-                                 <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
-                                      <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">OTHER</h3>
-                                      <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
-                                      Although it is highly unlikely, This policy may be changed at any time at our discretion. 
-                                      If we should update this policy, we will post the updates to this page on our Website.
-                                    </p>
+                                    
                                        
-                                        <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
-                                        If you have any questions or concerns regarding our privacy policy please direct them to: 
-                                        <a 
-                                        target="_blank"
-                                        href="mailto:custsvc@allinadventures.com"
-                                        className="cursor-pointer hover:text-blue-600 font-medium"
-                                        >
-                                        custsvc@allinadventures.com
-                                            </a>
-                                        </p>
+                                     
+                                     
+                                 </div>
+                                 {/*=============5. PRIVACY end==============*/}
+                                 {/*============= 6. DISCLAIMERS=============*/}
+                                 <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
+                                      <h3 className="text-gray-700  font-os font-bold text-xl md:text-2xl lg:text-3xl ">6. DISCLAIMERS</h3>
+                                      
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">6.1 GENERAL.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    To the maximum extent permitted by law, our Services are provided “AS IS” and “AS AVAILABLE”,
+                                                     and at your sole risk. We expressly disclaim all warranties of any kind, whether express or implied,
+                                                      including, without limitation, the implied warranties of merchantability, fitness for a particular use
+                                                       or purpose, title, and non-infringement. Without limitation, we make no warranty that our Services will
+                                                        meet your requirements, that use of the foregoing will be uninterrupted, timely, secure, or error-free,
+                                                         that defects in the operation or functionality and any content or information found on our site will be
+                                                          accurate or reliable, that defects in the operation or functionality of our Services will be corrected,
+                                                           virus-free, or that the quality of information, content, or other materials obtained through our Services
+                                                            will meet your expectations. No advice or information from AIA in any manner will create any warranty as
+                                                             to our Services or any product, service or material available through the Website. If for any reason you
+                                                              are not satisfied with our Services, your sole remedy is to cease using such Services, even if such remedy
+                                                               should fail of its essential purpose. AIA does not make any warranty or representation regarding:
+                                                                (a) the results that may be obtained from use of our Services; (b) any content obtained from our Website;
+                                                                 or (c) the accuracy or reliability of any Content. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF
+                                                                  CERTAIN WARRANTIES, ACCORDINGLY, SOME OF THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">6.2 THIRD PARTY LINKS.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    Our Services may contain links to, or be accessed through links on, or rely on the services provided by,
+                                                     third party websites which are managed and operated by or on behalf of independent third party entities.
+                                                      Such entities are not a part of All In Adventures or agents of us. We do not have control over such third
+                                                       party websites or the content of such websites. As a result, we do not have responsibility for the information,
+                                                        misinformation, errors, availability, service level, privacy, operation or performance of any such third party
+                                                         website. Reference to any product, recording, event, process, publication, service, or offering of
+                                                          any third party by name, trade name, trademark, service mark, company name or otherwise does not constitute or imply
+                                                           the endorsement or recommendation of such by us. Any views expressed by third parties on the Services are solely the
+                                                            views of such third party and we assume no responsibility for the accuracy or veracity of any statement made by such
+                                                             third party. It is up to you to take precautions to ensure that whatever you select for your use or download is free
+                                                              of such items as viruses, worms, Trojan horses, and other items of a destructive nature. If you decide to access any
+                                                               of the third party websites linked to the Services, you do this entirely at your own risk. You agree that we will not
+                                                                be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused in connection
+                                                                 with your use of or your reliance on any of these third party's presentations, content, goods or website made available
+                                                                  through the third party site or resource.
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">6.3 THIRD PARTY ACTIVITIES.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    AIA MAKES NO REPRESENTATIONS OR WARRANTIES AS TO THE CONDUCT OF OTHER GAME PLAYERS,
+                                                     SERVICE PROVIDERS AND OTHER USERS OF OUR SERVICES. YOU AGREE TO USE YOUR OWN DISCRETION
+                                                      IN ALL INTERACTIONS OR TRANSACTIONS WITH ANY THIRD PARTIES. We make no representation,
+                                                       warranty or endorsement regarding any third parties. By using the Services, you agree
+                                                        that the sole remedy for any damage or harm inflicted by a third party using our Services
+                                                         (including other Game players) will be limited to claims against such third party, and that you will
+                                                          not seek monetary damages or any other remedy from AIA in connection with such events. You agree that we
+                                                           are not responsible for any use or disclosure of User Materials by other users of the Services or any third
+                                                            party who gains access to it through the Services (which may include unintended activities by third parties,
+                                                             such as by hackers). All In Adventures HEREBY DISCLAIMS ALL LIABILITY FOR ANY ACT OR OMISSION OF ANY THIRD PARTIES
+                                                              (INCLUDING OTHER GAME PLAYERS, SERVICE PROVIDERS OR OTHER USERS OF OUR SERVICES).
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">6.4 SYSTEM UNAVAILABILITY & ERRORS.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    Our Services may be unavailable from time to time due to mechanical, telecommunication,
+                                                     software, and third-party vendor failures. All In Adventures cannot predict or control when
+                                                      such downtime may occur and cannot control the duration of such downtime. Reasonable efforts
+                                                       are taken to ensure the accuracy and integrity of information and related materials provided
+                                                        by All In Adventures via our Services, but All In Adventures is not responsible for misprints,
+                                                         out-of-date information, technical or pricing inaccuracies, or typographical or other errors.
+                                                          Information and related materials are subject to change without notice. As a result, All In
+                                                           Adventures cannot and does not have any liability for such failures or errors. The internet
+                                                            is subject to outages, communication and data flow failures, interruptions and delays inherent
+                                                             in internet communications. You recognize that problems with the internet, including equipment,
+                                                              software and network failures, impairments or congestion or the configuration of your computer systems,
+                                                               may prevent, interrupt or delay your access to our Services. AIA is not liable for any delays, interruptions,
+                                                                suspensions or unavailability of our Services, or any portion of our Services, attributable to problems with
+                                                                 the internet or configuration of your computer systems. There is no warranty or guarantee that access or
+                                                                  use of our Services will be uninterrupted or error-free.
+                                                    </p>
+                                                            
+                                        </div>
+                                     
+                                     
+                                     
+                                 </div>
+                                 {/*=============6. DISCLAIMERS end==============*/}
+                                 {/*============= 7. RELEASE AND INDEMNIFICATION=============*/}
+                                 <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
+                                      <h3 className="text-gray-700  font-os font-bold text-xl md:text-2xl lg:text-3xl ">7. RELEASE AND INDEMNIFICATION</h3>
+                                      
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">7.1 RELEASE.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    To the extent permitted by applicable law, you hereby release AIA and its parents,
+                                                     subsidiaries, affiliates, directors, officers, employees, agents, partners, service providers,
+                                                      agents, advisors and licensors (collectively, the “TEG Parties”) from claims, demands and damages
+                                                       (actual and consequential) of every kind and nature, known and unknown, arising out of or in any
+                                                        way connected with your use or reliance on our Services for any purposes, other than informational
+                                                         purposes pursuant to the disclaimers of these Terms. If you are a California resident, you waive
+                                                          California Civil Code 1542, which says: “A general release does not extend to claims which the
+                                                           creditor does not know or suspect to exist in his favor at the time of executing the release,
+                                                            which if known by him must have materially affected his settlement with the debtor.” If you are
+                                                             a resident of another state with a similar law, you hereby make a similar waiver.
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">7.2 INDEMNIFICATION.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    To the extent allowed by law, you will indemnify AIA Parties, against any and all claims,
+                                                     actions, proceedings, suits, liabilities, losses, damages, costs, expenses and attorney's fees arising
+                                                      out of or related to: (a) your participation in or relationship with any Games, or your acts,
+                                                       omissions, and statements regarding any Games, including any loss, damage to, or destruction
+                                                        of property and/or death or injury to persons; (b) any claim that the User Materials infringe or
+                                                         misappropriate the intellectual property rights of any third party, or applicable laws or regulations;
+                                                          (c) your negligence, fraudulent or willful misconduct; (d) your breach of these Terms; or (e) your use
+                                                           of the Services. We reserve the right to assume the sole control of the defense and settlement of any
+                                                            claim, action, suit or proceeding for which you are obliged to indemnify us. You will cooperate with
+                                                             us with respect to such defense and settlement. Without limitation of the foregoing, if we receive
+                                                              a subpoena or similar requirement to disclose User Materials issued by any court or governmental
+                                                               authority, and we are not a party to the proceeding in question, you will reimburse us for our
+                                                                reasonable costs and expenses of complying with such subpoena, including time spent by our personnel
+                                                                 and our attorneys at time and materials rates.
+                                                    </p>
+                                                            
+                                        </div>
+                                 </div>
+                                 {/*=============7. RELEASE AND INDEMNIFICATION end==============*/}
+                                {/*============= 8. LIMITATION OF LIABILITY=============*/}
+                                <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
+                                      <h3 className="text-gray-700  font-os font-bold text-xl md:text-2xl lg:text-3xl ">8. LIMITATION OF LIABILITY</h3>
+                                      
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">8.1 DISCLAIMER OF CERTAIN DAMAGES.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    YOU UNDERSTAND AND AGREE THAT IN NO EVENT SHALL AIA PARTIES BE LIABLE FOR ANY INDIRECT,
+                                                     INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR IN CONNECTION
+                                                      WITH OUR SERVICES OR ANY CONTENT, INCLUDING, WITHOUT LIMITATION, ANY DAMAGES RESULTING
+                                                       FROM LOSS OF USE, DATA, OR PROFITS, WHETHER OR NOT AIA HAS BEEN ADVISED OF THE POSSIBILITY
+                                                        OF SUCH DAMAGES, OR FOR ANY DAMAGES FOR PERSONAL OR BODILY INJURY OR EMOTIONAL DISTRESS
+                                                         ARISING OUT OF OR IN CONNECTION WITH THESE TERMS, OR FROM ANY SERVICES, ON ANY THEORY
+                                                          OF LIABILITY, RESULTING FROM: (1) THE USE OR INABILITY TO USE OUR SERVICES; (2)
+                                                           THE COST OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; OR (3) ANY OTHER MATTER RELATED
+                                                            TO OUR SERVICES, WHETHER BASED ON WARRANTY, COPYRIGHT, CONTRACT, TORT
+                                                             (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR ANY OTHER LEGAL THEORY.
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">8.2 CAP ON LIABILITY.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    UNDER NO CIRCUMSTANCES WILL THE AIA PARTIES BE LIABLE TO YOU OR ANYONE ELSE FOR MORE THAN
+                                                     THE AMOUNT RECEIVED BY AIA AS A RESULT OF YOUR USE OF OUR SERVICES. IF YOU HAVE NOT PAID AIA
+                                                      ANY AMOUNTS, AIA'S SOLE AND EXCLUSIVE LIABILITY SHALL BE LIMITED FIFTY DOLLARS ($50 USD).
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">8.3 EXCEPTION</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES OR LIMITATION OR
+                                                     EXCLUSION OF LIABILITY FOR LOSS OR DAMAGE CAUSED BY NEGLIGENCE, BREACH OF CONTRACT
+                                                      OR BREACH OF IMPLIED TERMS, OR INCIDENTAL OR CONSEQUENTIAL DAMAGES. ACCORDINGLY,
+                                                       ONLY THE ABOVE LIMITATIONS WHICH ARE LAWFUL IN YOUR JURISDICTION WILL APPLY TO YOU
+                                                        AND AIA'S LIABILITY WILL BE LIMITED TO THE MAXIMUM EXTENT PERMITTED BY LAW.
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">8.4 BASIS OF BARGAIN</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES OR LIMITATION OR
+                                                     EXCLUSION OF LIABILITY FOR LOSS OR DAMAGE CAUSED BY NEGLIGENCE, BREACH OF CONTRACT
+                                                      OR BREACH OF IMPLIED TERMS, OR INCIDENTAL OR CONSEQUENTIAL DAMAGES. ACCORDINGLY,
+                                                       ONLY THE ABOVE LIMITATIONS WHICH ARE LAWFUL IN YOUR JURISDICTION WILL APPLY TO YOU
+                                                        AND AIA'S LIABILITY WILL BE LIMITED TO THE MAXIMUM EXTENT PERMITTED BY LAW.
+                                                    </p>
+                                                            
+                                        </div>
+                                 </div>
+                                 {/*=============8. LIMITATION OF LIABILITY end==============*/}
+                                
+                                 {/*============= 9. DISPUTES RESOLUTION=============*/}
+                                 <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
+                                      <h3 className="text-gray-700  font-os font-bold text-xl md:text-2xl lg:text-3xl ">9. DISPUTES RESOLUTION</h3>
+                                      <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                      These Terms (including without limitation the validity, construction and performance of duties related
+                                       to the Terms) are governed by and construed in accordance with the laws of the United States of
+                                        America and the laws of the State of Georgia without giving effect to any principles of conflicts of laws.
+                                         You shall first contact us at privacy@allinaventures.com regarding any claim or controversy arising out
+                                          of or relating to these Terms, or any breach thereof, or the use of our Website , except such claims or
+                                           controversies for which injunctive relief is available. Any claim or controversy that cannot be resolved
+                                            by the parties after the exercise of good faith discussion within thirty (30) days shall be finally
+                                             settled by arbitration administered by the American Arbitration Association in accordance with its
+                                              Commercial Arbitration Rules including the Supplementary Procedures for Consumer-Related Disputes
+                                               (collectively, “<b>AAA Rules</b>”), and judgment on the award rendered by the arbitrator(s) may be entered
+                                                in any court having jurisdiction thereof. The AAA Rules are available online at <a className="text-blue-600 hover:text-blue-700 underline underline-offset-4" href="https://adr.org/" target="_blank">https://adr.org/</a>.
+                                                 You agree that, by accepting these Terms, you and All In Adventures are each waiving the right
+                                                  to a trial by jury or to participate in a class action. These Terms evidence a transaction in
+                                                   interstate commerce, and thus the Federal Arbitration Act governs the interpretation and
+                                                    enforcement of this provision. Unless you and All In Adventures agree otherwise,
+                                                     any arbitration hearings will take place in the state of Georgia. In the event that
+                                                      binding arbitration is not enforceable, you consent to the exclusive jurisdiction
+                                                       of any federal or state court located in the State of Georgia, U.S.A. for the
+                                                        resolution any disputes. Any cause of action you may have with respect to your
+                                                         use of our Services must be commenced within six (6) months after the claim or
+                                                          cause of action arises.
+
+                                                    </p>
                                         
-                                    </div>
-                                 {/*=============privacy-content 12 end==============*/}
+                                        
+                                 </div>
+                                 {/*=============9. DISPUTES RESOLUTION end==============*/}
+                                 {/*============= 10. COPYRIGHT AND COPYRIGHT NOTICES=============*/}
+                                 <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
+                                      <h3 className="text-gray-700  font-os font-bold text-xl md:text-2xl lg:text-3xl ">10. COPYRIGHT AND COPYRIGHT NOTICES</h3>
+                                      <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                      We respect the intellectual property of others, and we ask our users to do the same.
+                                       We will promptly review and remove Content from our Services if properly notified that
+                                        the materials infringe a third party's copyright. If you believe that your work has been
+                                         copied in a way that constitutes copyright infringement, please provide us with the following information:
+                                        </p>
+                                        <ul className="mt-4 pl-6 list-disc lg:text-lg text-gray-800"> 
+                                             <li className="my-2">an electronic or physical signature of the owner or person authorized to act on behalf of the owner of the copyright interest;</li>
+                                             <li className="my-2">a description of the copyrighted work that you claim has been infringed;</li>
+                                             <li className="my-2">a description of where the material that you claim is infringing is located on the website sufficient to allow us to locate the allegedly infringing material;</li>
+                                             <li className="my-2">your name and contact information (including address, telephone number and e-mail address);</li>
+                                             <li className="my-2">a statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent or the law; and</li>
+                                             <li className="my-2">a statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner’s behalf.</li>
+                                        </ul>
+                                        <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                        Please contact our designated agent for notice of claims of copyright infringement at:
+                                        </p>
+                                        <p className="lg:text-lg text-gray-800 mt-2  lg:mt-2" > 
+                                             <b>Mystery Room, LLC</b><br/>
+                                              <b>Address:</b> 3883 Rogers Bridge Rd NW Suite 501 Duluth, GA 30097<br/>
+                                             <a className="text-blue-600 hover:text-blue-700 underline underline-offset-4" href="mailto:privacy@allinaventures.com">privacy@allinaventures.com</a>
+
+                                        </p>
+                                        <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4 italic font-medium" > 
+                                        Counter Notices
+                                        </p>
+                                        <p className="lg:text-lg text-gray-800 mt-2  lg:mt-2" > 
+                                        If material that you have posted to our Services has been removed or disabled,
+                                         you may file a counter notice pursuant to 17 U.S.C. §512 (g). To be effective,
+                                          the counter notice must be a written communication sent to the designated agent
+                                           address listed above that includes the following: (i) a physical or electronic
+                                            signature of the subscriber; (ii) identification of the material that has been
+                                             removed or to which access has been disabled and the location at which the material
+                                              appeared before it was removed or access to it was disabled; (iii) a statement under
+                                               penalty of perjury that you have a good faith belief that the material was removed or
+                                                disabled as a result of mistake or misidentification of the material to be removed or
+                                                 disabled; and (iv) your name, address, and telephone number, and a statement that you
+                                                  consent to the jurisdiction of Federal District Court for the judicial district in which
+                                                   the address is located or, if your address is outside of the United States, for any judicial
+                                                    district in which All In Adventures may be found, and that you will accept service of process
+                                                     from the person who provided notification under subsection 17 U.S.C. §512 (c)(1)(C) or an
+                                                      agent of such person. Repeat Infringers
+                                        </p>
+                                        <p className="lg:text-lg text-gray-800 mt-2  lg:mt-2" > 
+                                             It is our policy to terminate in appropriate circumstances the accounts of users that are repeat infringers or repeatedly violate these Terms.
+                                        </p>
+
+                                        
+                                        
+                                 </div>
+                                 {/*=============10. COPYRIGHT AND COPYRIGHT NOTICES end==============*/}
+                                 
+                                 {/*============= 11. MODIFICATIONS TO THESE TERMS=============*/}
+                                 <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
+                                      <h3 className="text-gray-700  font-os font-bold text-xl md:text-2xl lg:text-3xl ">11. MODIFICATIONS TO THESE TERMS</h3>
+                                      <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                      We reserve the right to modify these Terms at any time, effective upon posting.
+                                       You can tell when changes have been made to these Terms by referring to the “Last Updated”
+                                        legend on top of this page. We will provide you with advance notice of a major change.
+                                         For example, we may (i) require that you reaccept the updated version of these Terms,
+                                          (ii) send you an electronic notification advising of the update to these Terms, or (iii)
+                                           include a notice on our Website. We do not ordinarily provide advance notice of a minor change.
+                                            We encourage you to check these Terms every time you visit our Website. Your continued use of
+                                             the Website and/or utilization of any Services benefits after these Terms have been updated
+                                              (and after advance notice for a major change) indicates your agreement and acceptance of the
+                                               updated version of these Terms.
+                                               </p>
+                                        
+                                        
+                                 </div>
+                                 {/*=============11. MODIFICATIONS TO THESE TERMS end==============*/}
+                                 {/*============= 12. MISCELLANEOUS=============*/}
+                                <div className="privacy-content mt-4 md:mt-6 lg:mt-8">
+                                      <h3 className="text-gray-700  font-os font-bold text-xl md:text-2xl lg:text-3xl ">12. MISCELLANEOUS</h3>
+                                      
+                                      <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">12.1 CONSENT TO DO BUSINESS ELECTRONICALLY.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    We use and rely upon electronic records and electronic signatures for the execution and delivery of these Terms and
+                                                     any other agreements, undertakings, notices, disclosures or other documents, communications or information of
+                                                      any type sent or received in performing our obligations and exercising our rights under these Terms. Neither
+                                                       you nor AIA will prevent or inhibit in any way the other party from printing, saving, or otherwise storing
+                                                        electronic records sent or otherwise made available to the other party. You agree not to contest the authorization
+                                                         for, or validity or enforceability of, electronic records and electronic signatures, or the admissibility of
+                                                          copies thereof, under any applicable law relating to whether certain agreements, files, or electronic records
+                                                           are to be in writing or signed by you to be bound thereby. You will bear your own costs and expenses in
+                                                            conducting business electronically, and will undertake all steps necessary, including software, hardware,
+                                                             and other equipment upgrades and purchases, in order to be able to conduct business electronically.
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">12.2 ACCESS FROM OUTSIDE OF THE UNITED STATES.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    Our Website and the Content is hosted in the United States and is governed by the laws of the United States.
+                                                     Our products and Services, and other Content on our Website, are only directed at those located within the
+                                                      United States. If you are using our Services from outside the United States, please be aware that your
+                                                       information may be transferred to, stored and processed in the United States where our servers are located
+                                                        and our central database is operated. The data protection and other laws of the United States and other
+                                                         countries might not be as comprehensive as those in your country. By using our Services in any way,
+                                                          you hereby consent to the transfer of your data and information to, and the storage and processing of
+                                                           such data and information in, the United States of America.
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">12.3 TERM AND TERMINATION.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    These Terms are effective unless and until terminated by All In Adventures or you.
+                                                     All In Adventures may, in its sole discretion, terminate your use of our Services or any part
+                                                      thereof if you fail to comply with any term of provision of these Terms. You may terminate these
+                                                       Terms at any time by discontinuing all use of our Services. Termination or cancellation of these
+                                                        Terms shall not affect any right or relief to which either All In Adventures or you may be entitled
+                                                         at law or in equity. Upon termination, you must terminate all use of our Services and destroy all
+                                                          materials, including any Content, obtained using our Services and all copies thereof.
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">12.4 NOTICE.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    Where AIA requires that you provide an email address, you are responsible for providing AIA with your most
+                                                     current email address. In the event that the last email address you provided to AIA is not valid, or for
+                                                      any reason is not capable of delivering to you any notices required/ permitted by these Terms, AIA's dispatch
+                                                       of the email containing such notice will nonetheless constitute effective notice. You may give notice to AIA
+                                                        at the following address: Mystery Room, LLC, 3883 Rogers Bridge Rd NW Suite 501 Duluth, GA 30097. Such notice
+                                                         shall be deemed given when received by AIA by letter delivered by nationally recognized overnight delivery service
+                                                          or first class postage prepaid mail at the above address.
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">12.5 ENTIRE AGREEMENT.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    These Terms, together with the Privacy Policy, any amendments and any additional written agreement
+                                                     you may enter into with All In Adventures in connection with our Services, constitute the entire
+                                                      agreement between you and us with respect to the subject matter hereof, and supersede all prior
+                                                       and contemporaneous agreements and understandings, whether written or oral, concerning the subject matter hereof.
+                                                        Any conflicting or supplementary terms and conditions to these Terms proposed by you in any e-mail or other
+                                                         communication shall not be binding on us, and are hereby objected to and expressly rejected.
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">12.6 SEVERABILITY.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    If any portion of these Terms is held invalid or unenforceable under applicable law, that portion shall be construed
+                                                     in a manner consistent with applicable law to accomplish, as nearly as possible, the objective thereof, or severed
+                                                      from the document if and solely to the limited extent such construction is not possible, and the remaining portion
+                                                       of these Terms and the Privacy Policy shall remain in full force and effect.
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">12.7 RELATIONSHIP OF THE PARTIES.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    No joint venture, partnership, employment or agency relationship exists between you and us as a result of these Terms or your use of our Services.
+                                                    </p>
+                                                            
+                                        </div>
+                                        <div className=" mt-3 md:mt-5 lg:mt-6 pl-2 md:pl-4">
+                                               <h3 className="text-gray-700  font-os font-bold text-lg md:text-xl lg:text-2xl ">12.8 FORCE MAJEURE.</h3>
+                                              
+                                                    <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
+                                                    12.8 FORCE MAJEURE.
+                                                    </p>
+                                                            
+                                        </div>
+                                     
+                                     
+                                 </div>
+                                 {/*=============12. MISCELLANEOUS end==============*/}
 
                             </div>
                     </div>

@@ -14,14 +14,16 @@ import Footer from '../comps/Footer'
 import { useEffect, useState } from 'react'
 import Script from 'next/script'
 import {Homepagedata} from './api/homepagedata' 
+import Seofields from '../comps/util/SeoFields'
 
 
-export default function Home({mainprops,pagedata,inpersongames,othergames,virtualgames,events,reviews,locationlist,activitylistSlug,eventlistSlug,virtualgameListSlug}) {
+export default function Home({pagemeta,pagedata,inpersongames,othergames,virtualgames,events,reviews,locationlist,activitylistSlug,eventlistSlug,virtualgameListSlug}) {
  
  
  
   return (
     <> 
+    <Seofields meta={pagemeta}/>
     <Homenav 
     locationlist={locationlist}
     activitylist={activitylistSlug}
@@ -29,13 +31,7 @@ export default function Home({mainprops,pagedata,inpersongames,othergames,virtua
     />
    
     <div id="mainContent" className='main-content' >
-      <Head>
-        <title>All In Adventures</title>
-        <meta name="description" content="All In Adventures" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      
+    
        <div className='home-hero' style={
         {
           backgroundImage : "url('/assets/allinadventures-escape-room-home-hero.jpg')",
@@ -75,7 +71,7 @@ export const getStaticProps=async ()=>{
   const pagedata= await Homepagedata();
   return {
     props: {
-      mainprops:pagedata,
+      pagemeta:pagedata.pagemeta,
       pagedata:pagedata.homeagedata,
       inpersongames:pagedata.inpersongames,
       othergames:pagedata.otherphysicalgames,

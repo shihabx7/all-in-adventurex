@@ -9,10 +9,12 @@ export const getAllActivity=()=>{
          "virtualgameListSlug":getTotal().virtualgameSlug,
        
             "pagemeta":{
-
-                "matatilte":"title",
-                "metakeyword":"keywords",
-                "metadescription":"metadescription"
+                "title":"All Escape Rooms - All In Adventures (Formerly Mystery Room)",
+                "description":"All In Adventures, formerly Mystery Room, run live escape rooms and other games. Choose from a number of escape rooms at our centers across the United States.",
+                "keywords":"all games, all escape rooms, all escape games, all games all in adventures, all games allinadventures, all games mystery room, all escape games all in adventures, all escape games allinadventures, all escape games mystery room, all escape room games all in adventures, all escape room games allinadventures, all escape room games mystery room,",
+                "url":"/activities",
+                "metaindex":true,
+                "metaimg":"/assets/all-game-mobile-hero/allinadventures-all-game-page-hero--mobile.jpg"
               },
                
               "pagedata": {

@@ -72,28 +72,31 @@ export const getDealsCouponPageData=()=>{
                     {
                         "id":1,
                         "coupon_title":"FACEBOOK & INSTAGRAM",
-                        "coupon_desc" :"Like us on Facebook and follow us on Instagram to get $2 off!",
+                        "coupon_desc" :"Like us on Facebook and follow us on Instagram to get $2 OFF for each person in your party. Use coupon code at checkout to get your savings, and have everyone show us their Facebook Like or Instagram Follow on their phone when everyone checks-in at the store.",
                         "social":"show",
                         "coupon_offer_off":"$2",
-                        "coupon_code" :"LIKE2022",
+                        "offer_per":"PER PERSON",
+                        "coupon_code" :"FACEBOOK",
                         
                     },
                     {
                         "id":2,
-                        "coupon_title":"MALL EMPLOYEE DISCOUNT",
-                        "coupon_desc" :"All mall employees get $5 off when booking with us. Use coupon code at checkout to get your savings, and bring your valid employee ID or nametag when you check-in at the store.",
+                        "coupon_title":"Mall Employee Discount",
+                        "coupon_desc" :"All mall employees receive $5 OFF for each person in their party when booking with us. Use coupon code at checkout to get your savings, and show us your valid employee ID or nametag when you check-in at the store.",
                         
                         "coupon_offer_off":"$5",
-                        "coupon_code" :"AIAMIL20",
+                        "offer_per":"PER PERSON",
+                        "coupon_code" :"EMPLOYEE",
                         
                     },
                     {
                         "id":3,
-                        "coupon_title":"MILITARY DISCOUNT",
-                        "coupon_desc" :"All active & retired military personnel receive a discount of $5 OFF! Use coupon code at checkout to get $5 off your admission.",
+                        "coupon_title":"Military Discount",
+                        "coupon_desc" :"All active & retired military personnel receive $5 OFF for each person in their party when booking with us.  Use coupon code at checkout to get your savings, and show us your valid military ID when you check-in at the store.",
                         
                         "coupon_offer_off":"$5",
-                        "coupon_code" :"AIAMIL25",
+                        "offer_per":"PER PERSON",
+                        "coupon_code" :"MILITARY",
                         
                     },
                 ]

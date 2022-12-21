@@ -40,6 +40,32 @@ import { getLocTotal } from "./AllDataList/getLocTotal"
         }
         return false
     }
+    const locAddCam=()=>{
+      var cname=getLocSpec(locationslug).city
+      var sname=locattionstate
+      cname=cname.split(' ')
+      if(cname[0]=='N.' || cname[0]=='n.')
+      {
+        cname[0]='North'
+      }
+      cname=cname.join(' ')
+
+      return cname+' '+locattionstate
+      
+    }
+    const locAddLow=()=>{
+      var cname=getLocSpec(locationslug).city
+      var sname=locattionstate.toLowerCase()
+      cname=cname.split(' ')
+      if(cname[0]=='N.' || cname[0]=='n.')
+      {
+        cname[0]='North'
+      }
+      cname=cname.join(' ').toLowerCase()
+
+      return cname+' '+locattionstate
+      
+    }
 
 
 
@@ -48,9 +74,12 @@ import { getLocTotal } from "./AllDataList/getLocTotal"
         "locationlist":getTotal().locationlist,
         "pagemeta":{
 
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
+          "title":"Escape Room in "+locAddCam()+" - All In Adventures at "+getLocSpec(locationslug).mall,
+          "keywords":"all in adventures "+locAddLow()+", allinadventures "+locAddLow()+", all in adventure "+locAddLow()+", allinadventure "+locAddLow()+", mystery room "+locAddLow()+", mysteryroom "+locAddLow()+", mystery rooms "+locAddLow()+", mysteryrooms "+locAddLow()+", escape room "+locAddLow()+", escape rooms "+locAddLow()+", escape room near me, birthday party "+locAddLow()+", birthday party places "+locAddLow()+", birthday party venue "+locAddLow()+", team building "+locAddLow()+", team building activities "+locAddLow()+", all in adventures "+getLocSpec(locationslug).mall+", allinadventures "+getLocSpec(locationslug).mall+", all in adventure "+getLocSpec(locationslug).mall+", allinadventure crossgates mall, mystery room "+getLocSpec(locationslug).mall+", mysteryroom "+getLocSpec(locationslug).mall+", mystery rooms "+getLocSpec(locationslug).mall+", mysteryrooms "+getLocSpec(locationslug).mall+", escape room "+getLocSpec(locationslug).mall+", escape rooms "+getLocSpec(locationslug).mall+", birthday party "+getLocSpec(locationslug).mall+", birthday party places "+getLocSpec(locationslug).mall+", birthday party venue "+getLocSpec(locationslug).mall+", team building "+getLocSpec(locationslug).mall+", team building activities "+getLocSpec(locationslug).mall+",",
+          "description":"Looking for escape room near me? Play the best escape room in "+locAddCam()+". Live escape rooms at "+getLocSpec(locationslug).mall+" by All In Adventures, formerly Mystery Room.",
+          "url":"/locations/"+locationslug,
+          "metaindex":true,
+          "metaimg":locPagedata[locationslug].coverimageM
         },
         "activitylist":getLocationActivitySlugList(locationslug),
         "eventlist":getLocationEventSlugList(locationslug),

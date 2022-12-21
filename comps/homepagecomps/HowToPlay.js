@@ -38,9 +38,9 @@ const HowToPlay=(props)=>{
                 </div>
                 <div className="max-w-[1200px] h-full mx-auto text-center flex items-center justify-center">
                     <div className="teaser-content w-[90%] md:w-auto"> 
-                         <h2 className="text-[#dddddd] mb-2 md:mb-4 text-[24px] md:text-[36px] font-medium">All adventure game teaser</h2>
+                         <h2 className="mb-2 md:mb-4 text-[24px] md:text-[42px] font-bold golden-text font-os">ALL IN ADVENTURES TEASER</h2>
                          {showTeaser && 
-                        <TeaserVideo videoid="pfdyF_d4Z40"/>
+                        <TeaserVideo videoid="H5QaIL7QnTw"/>
                    
                     } 
                         

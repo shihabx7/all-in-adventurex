@@ -8,7 +8,7 @@ const HeaderNotice=()=>{
     const closeNotice=()=>{
         setCookie('header-notice', true,{
             path: "/",
-            maxAge: 3600, // Expires after 1hr
+            maxAge: 172800, // Expires after 48 hours
             sameSite: true,
             });
         setShownotice(false)

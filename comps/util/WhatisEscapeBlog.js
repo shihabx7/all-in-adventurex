@@ -1,12 +1,11 @@
+import ThankLinkBox from "./ThankLinkBox"
 
 const WhatisEscapeBlog=()=>{
 
     return(
         <>
-            <div className="blog-content relative py-12 md:py-20"  style={{backgroundImage : "url('/assets/game-dt-bg.jpg')", }} >
-                <div className=" w-full absolute top-0 left-0">
-                    <img className="w-full" src="/assets/game-home-or1.jpg"></img>
-                 </div>
+            <div className="blog-content relative py-10 md:py-12 bg-[#FFF8EB]"  >
+               
                  <div className="blog-content-box max-w-[1024px] mx-auto relative z-10 md:py-12 md:px-8  bg-[#FFF8EB] px-4">
                                 {/*=============WHAT IS AN IN-PERSON ESCAPE ROOM?==============*/}
                                 <div className="blog-section">
@@ -14,7 +13,7 @@ const WhatisEscapeBlog=()=>{
                                       <p className="text-lg md:text-xl font-medium  text-gray-700 mt-2 md:mt-3 lg:mt-4">
                                       You may be asking yourself, <span className="italic">"What exactly is an escape room?"</span>  Well, let us happily enlighten you . . .
                                       </p>
-                                      <div className="mt-4"> 
+                                      <div className="my-6 md:my-8 lg:my-10"> 
                                         <img className="w-full" src="/assets/blog/what-is-an-in-person-escape-room.jpg" alt="what is an in person escape room"></img>
                                       </div>
                                       <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
@@ -51,7 +50,7 @@ const WhatisEscapeBlog=()=>{
                                          computer or tablet) to search and navigate through hidden
                                           riddles, clues and puzzles . . . all in an attempt to "escape" the room before the allotted time runs out!
                                       </p>
-                                      <div className="mt-4"> 
+                                      <div className="my-6 md:my-8 lg:my-10"> 
                                         <img className="w-full" src="/assets/blog/what-is-a-virtual-online-escape-room.jpg" alt="what is an in person escape room"></img>
                                       </div>
                                       <p className="text-lg md:text-xl font-medium  text-gray-800 mt-4  lg:mt-6">
@@ -81,7 +80,7 @@ const WhatisEscapeBlog=()=>{
                                 <div className="blog-section mt-6 md:mt-8">
                                      <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">THE HISTORY OF ESCAPE ROOMS</h3>
                                     
-                                      <div className="mt-4"> 
+                                      <div className="my-6 md:my-8 lg:my-10"> 
                                         <img className="w-full" src="/assets/blog/history-of-escape-rooms.jpg" alt="history of escape rooms"></img>
                                       </div>
                                       
@@ -109,7 +108,7 @@ const WhatisEscapeBlog=()=>{
                                         mystery novels of Agatha Christie. It didn't take long before this trend started spreading around the world.
                                          Hungary was the first European country to open an escape room. 
                                       </p>
-                                      <div className="mt-4"> 
+                                      <div className="my-6 md:my-8 lg:my-10"> 
                                         <img className="w-full" src="/assets/blog/What-is-an-escape-room.jpg" alt="What is an escape room"></img>
                                       </div>
                                       <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
@@ -131,7 +130,7 @@ const WhatisEscapeBlog=()=>{
                                     {/*=============HOW TO BOOK YOUR FIRST ESCAPE ROOM==============*/}
                                 <div className="blog-section mt-6 md:mt-8">
                                      <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">HOW TO BOOK YOUR FIRST ESCAPE ROOM</h3>
-                                     <div className="mt-4"> 
+                                     <div className="my-6 md:my-8 lg:my-10"> 
                                         <img className="w-full" src="/assets/blog/how-to-book-your-first-escape-room.jpg" alt="how to book your first escape room"></img>
                                       </div>
                                       <p className="text-lg md:text-xl font-medium text-gray-800 mt-4 lg:mt-6">
@@ -151,6 +150,10 @@ const WhatisEscapeBlog=()=>{
                                       
                                  </div>
                                   {/*=============HOW TO BOOK YOUR FIRST ESCAPE ROOM end==============*/}
+                                  <div className="my-8 md:my-12">
+                                  <h2 className="text-gold font-os text-3xl md:text-4xl font-bold  mb-8">SEE ALL GAMES AND EVENTS</h2>
+                                             <ThankLinkBox/>
+                                  </div>
                                    {/*=============WHO CAN PLAY AN ESCAPE ROOM?==============*/}
                                 <div className="blog-section mt-6 md:mt-8">
                                      <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">WHO CAN PLAY AN ESCAPE ROOM?</h3>
@@ -229,7 +232,7 @@ const WhatisEscapeBlog=()=>{
                                     {/*=============WHAT GENRES OF ESCAPE ROOM ARE THERE?==============*/}
                                 <div className="blog-section mt-6 md:mt-8">
                                      <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">WHAT GENRES OF ESCAPE ROOM ARE THERE?</h3>
-                                     <div className="mt-4"> 
+                                     <div className="my-6 md:my-8 lg:my-10"> 
                                         <img className="w-full" src="/assets/blog/genres-of-escape-rooms-are-there-escape-room-rules.jpg" alt="genres of escape rooms are there escape room rules"></img>
                                       </div>
                                       <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
@@ -309,7 +312,7 @@ const WhatisEscapeBlog=()=>{
                                    {/*=============WHAT TO EXPECT==============*/}
                                 <div className="blog-section mt-6 md:mt-8">
                                      <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">WHAT TO EXPECT</h3>
-                                     <div className="mt-4"> 
+                                     <div className="my-6 md:my-8 lg:my-10"> 
                                         <img className="w-full" src="/assets/blog/what-to-expect-escape-room.jpg" alt="what to expect escape room"></img>
                                       </div>
                                      <div className="mt-3 lg:mt-4">
@@ -439,7 +442,7 @@ const WhatisEscapeBlog=()=>{
                                           be a potential clue or puzzle waiting to be solved. But hurry, the clock
                                            starts ticking the moment you enter the escape room!
                                            </p>
-                                     <div className="mt-4"> 
+                                     <div className="my-6 md:my-8 lg:my-10"> 
                                         <img className="w-full" src="/assets/blog/escape-room-tips-tricks.jpg" alt="escape room tips tricks"></img>
                                       </div>
    
@@ -507,7 +510,7 @@ const WhatisEscapeBlog=()=>{
                                    {/*=============ESCAPE ROOM TIPS==============*/}
                                 <div className="blog-section mt-6 md:mt-8">
                                      <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">ESCAPE ROOM - THE MOVIE</h3>
-                                     <div className="mt-4"> 
+                                     <div className="my-6 md:my-8 lg:my-10"> 
                                         <img className="w-full" src="/assets/blog/escape-room-the-movie-play-game.jpg" alt="escape room the movie play game"></img>
                                       </div>
                                      <p className="lg:text-lg text-gray-700 mt-4 lg:mt-6">There's an escape room movie, you ask? Well . . . sort of! The "Escape Room" psychological
@@ -541,9 +544,7 @@ const WhatisEscapeBlog=()=>{
 
                 </div>
 
-                 <div className=" w-full absolute bottom-0 left-0">
-                    <img className="w-full" src="/assets/game-home-or2.jpg"></img>
-                 </div>
+                
 
             </div>
         </>

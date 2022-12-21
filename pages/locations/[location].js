@@ -20,6 +20,7 @@ import { getLocationSlugList } from '../api/getLocationSlugList';
 import LocationDetails from '../../comps/locationsPage/LocationDetails';
 import HomeReviewSliderLoc from '../../comps/homepagecomps/HomeReviewSliderLoc';
 import HowToPlay from '../../comps/homepagecomps/HowToPlay';
+import Seofields from '../../comps/util/SeoFields';
 const location=(props)=>{
 
     /* custom breadcum code 
@@ -77,6 +78,7 @@ const location=(props)=>{
 
     return (
         <>
+        <Seofields meta={props.pagemeta}/>
      <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
             <Homenav locationslug={props.pagedata.slug} 
                         bookingall={props.pagedata.bookingall} 
@@ -90,12 +92,7 @@ const location=(props)=>{
                 <div id="mainContent" className='main-content'>
 
                 {/* =======header content and breadcum======== */}
-                            <Head>
-                                <title>All in adventure Locations</title>
-                                <meta name="description" content="All in one adventure escape games" />
-                                
-
-                              </Head>
+               
                               <div className='breadcum py-1 md:py-1 lg:py-3 bg-[#fffceb]'>
                                      <Breadcrumbs
                                             listClassName="max-w-7xl mx-auto px-2 md:px-4 breadcum-list text-sm md:text-base lg:text-lg"
@@ -172,6 +169,7 @@ export const getStaticProps=async(context)=>{
 
     return{
         props:{
+            pagemeta:locationHomedata.pagemeta,
             pagedata:locationHomedata.pagedata,
             inpersongames:locationHomedata.inpersongames,
             othergames:locationHomedata.otherphysicalgames,

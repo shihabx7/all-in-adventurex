@@ -6,6 +6,7 @@ import { FiChevronRight } from "react-icons/fi";
 import GameHomeHero from "../../comps/activitiyPageComps/GameHomeHero";
 import GameList from "../../comps/activitiyPageComps/GameList";
 import { getAllActivity } from "../api/getAllActivity";
+import Seofields from "../../comps/util/SeoFields";
 
 
 
@@ -27,12 +28,9 @@ const viewAllActivities=(props)=>{
   
       return(
           <>
+          <Seofields meta={props.pagemeta}/>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure Activities</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+           
            <Homenav locationlist={props.locationlist}
            activitylist={props.activitylistSlug}
            eventlist={props.eventlist}/>

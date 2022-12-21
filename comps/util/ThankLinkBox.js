@@ -1,6 +1,6 @@
 const ThankLinkBox=()=>{
     return(
-      <div className="thank-bottom grid grid-cols-1 md:grid-cols-3  gap-y-4 md:gap-y-0 md:gap-x-4 lg:gap-x-8 mt-16">
+      <div className="thank-bottom grid grid-cols-1 md:grid-cols-3  gap-y-4 md:gap-y-0 md:gap-x-4 lg:gap-x-8 ">
                             <div className="group thank-link-box relative">
                               <div className="thank-ev-head absolute top-0 left-0 w-full z-10 pt-16 pb-12 md:pb-8 lg:pb-14">
                                     <h2 className="text-[#eeeeee] font-bold text-[26px] text-center">ESCAPE ROOMS</h2>

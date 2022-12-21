@@ -12,6 +12,15 @@ import { getTotal } from "./AllDataList/getTotal";
          "activitylistSlug":getTotal().activitylistSlug,
           "eventlistSlug":getTotal().eventlistSlug,
           "virtualgameListSlug":getTotal().virtualgameSlug,
+          "pagemeta":{
+            "title":"All In Adventures | Formerly Mystery Room | "+getTotal().totalLocations+" Escape Room Venues",
+            "description":"All In Adventures, formerly Mystery Room, is a multi-location escape room, game show room, beat the seat, and axe throwing destination in the United States.",
+            "keywords":"all in adventures, allinadventures, all in adventure, allinadventure, mystery room, mysteryroom, mystery rooms, mysteryrooms, escape room near me, escape rooms near me, escape rooms, escaperooms,escape room near by, escape room, escaperoom, escape games, escapegames, escape game, escapegame, family friendly escape rooms, kids friendly escape rooms, birthday party, birthday party places, birthday party venue, team building, team building activities",
+            "metaindex":true,
+            
+            "metaimg":'/assets/gn-mobile-hero/allinadventures-escape-room-home-hero.jpg'
+
+          },
         "homeagedata": {
                       "totalLocations": getTotal().totalLocations,
                       "totalUniqueGames": getTotal().uniqueGames,

@@ -639,17 +639,20 @@ background-size: cover,cover;
 .event-input{
   box-shadow:0px 1px #855800,1px 1px 2px rgba(0,0,0,0.12);
 }
+.frans-contact-box .event-input:focus{
+  box-shadow: 0px 1px red,1px 1px 2px rgba(0,0,0,0.12);
+}
 .focus-green{
   box-shadow: 0px 1px green,1px 1px 2px rgba(0,0,0,0.16);
 }
 .focus-green:focus{
-  box-shadow: 0px 1px green,1px 1px 2px rgba(0,0,0,0.12);
+  box-shadow: 0px 1px green,1px 1px 2px rgba(0,0,0,0.12) !important;
 }
 .focus-red{
   box-shadow: 0px 1px red,1px 1px 2px rgba(0,0,0,0.16);
 }
 .focus-red:focus{
-  box-shadow: 0px 1px red,1px 1px 2px rgba(0,0,0,0.12);
+  box-shadow: 0px 1px red,1px 1px 2px rgba(0,0,0,0.12) ;
 }
 
 .core-card{
@@ -690,7 +693,7 @@ background-size: cover,cover;
 }
 
 .dgency-copy{
-  opacity: 0.4;
+  opacity: 0.7;
   animation:jap 2.6s linear infinite;
 }
 @keyframes jap {
@@ -699,8 +702,8 @@ background-size: cover,cover;
     opacity:1; 
 } 
   100% { 
-      -webkit-opacity: 0.4; 
-      opacity:0.4; 
+      -webkit-opacity: 0.7; 
+      opacity:0.7; 
   } 
 }
 /*=============================contact form design=====================*/

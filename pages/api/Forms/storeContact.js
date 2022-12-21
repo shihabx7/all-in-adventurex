@@ -11,7 +11,8 @@ export default async function corContactHandler(req, res) {
         "Email":body.email,
         "Phone":body.phone,
         "comSub":body.comSubject,
-        "mEssage":body.msg
+        "mEssage":body.msg,
+        "toEmail":body.toEmail
 
     }
   
@@ -40,7 +41,7 @@ export default async function corContactHandler(req, res) {
           to: "shihabx7@gmail.com",
           //cc:"shihabx7@gmail.com",
          // bcc:"dgency.com@gmail.com",
-          subject: `Corporate Contact from ${retData.Name}`,
+          subject: `Store Contact from ${retData.Name}`,
           html: `
                 <p><strong>Name: </strong> ${retData.Name}</p>
               <p><strong>Phone: </strong> ${retData.Phone}</p>

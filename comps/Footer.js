@@ -119,15 +119,15 @@ const Footer=(props)=>{
                             <div className='copy-text text-center py-8'> 
                                 <p className='text-[#858585] text-xs md:text-base'> &copy; Copyright All In Adventures | All Rights Reserved.</p>
                                 <div className='term-policy flex justify-center space-x-2 items-center mt-2'> 
-                                    <Link href="/privacy-policy"> 
-                                        <a className='text-gray-600 hover-golden text-xs md:text-base'>Privacy policy</a>
-                                    </Link>
+                                    
+                                        <a  href="/privacy-policy" className='text-gray-600 hover-golden text-xs md:text-base'>Privacy Policy</a>
+                                    
                                     <div className=' text-gray-600 text-2xl'> 
                                         <span className='block w-1 h-1 rounded-full bg-gray-600'></span>
                                      </div>
-                                     <Link href="/terms-and-conditions"> 
-                                        <a className='text-gray-600 hover-golden text-xs md:text-base'>Terms of use</a>
-                                    </Link>
+                                     
+                                        <a href="/terms-of-services" className='text-gray-600 hover-golden text-xs md:text-base'>Terms of Services</a>
+                                    
                                 </div>
                             </div>
                        {/*========================================= footer copy ================ */}    
@@ -141,7 +141,7 @@ const Footer=(props)=>{
                        <p>Website designed, developed and marketed by</p>
                        
                     
-                    <a href="https://dgency.com/" target="_blank" className='dgency-copy text-gray-50 flex space-x-2 items-center'><span>Dgency.com</span> <span className='md:text-lg'><FiExternalLink/></span></a>
+                    <a href="https://dgency.com/" target="_blank" className='dgency-copy text-gray-50 flex space-x-2 items-center'><span>dgency.com</span> <span className='md:text-lg'><FiExternalLink/></span></a>
                           
                        
                  </div>
