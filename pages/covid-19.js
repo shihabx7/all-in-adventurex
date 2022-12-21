@@ -114,7 +114,7 @@ const covid19=(props)=>{
           
                 <div className="game-video-box pb-[57%] md:pb-[416px] lg:pb-[472px] w-[100%] md:w-[740px] lg:w-[840px] mx-auto shadow-lg relative"> 
                              <iframe className="absolute w-full h-full top-0 left-0"
-                              src={"https://www.youtube.com/embed/"+props.pagedata.videoid} 
+                              src={"https://www.youtube.com/embed/"+props.pagedata.videoid+"?rel=0"} 
                               title="Treasure Island 1881 // Reality Escape Game" 
                               frameBorder="0" 
                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

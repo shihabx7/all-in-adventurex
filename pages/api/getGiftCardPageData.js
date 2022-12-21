@@ -7,13 +7,15 @@ export const getGiftCardPageData=()=>{
          "eventlistSlug":getTotal().eventlistSlug,
          "virtualgameListSlug":getTotal().virtualgameSlug,
 
-        "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
-           
+         "pagemeta":{
+  
+            "title":"Escape Room Gift Cards - All In Adventures",
+            "description":"Whether it's someone's birthday, anniversary or a holiday such as Christmas - an All In Adventures Gift Card is a perfect present for any occasion.",
+            "keywords":"escape room gift cards, escape room gift card, escape room gift certificate, escape room gift certificates, escape room gift vouchers, escape room gift voucher, all in adventures gift cards, all in adventures gift card, mystery room gift cards, mystery room gift card",
+            "url":"/gift-cards",
+            "metaindex":true,
+            "metaimg":"/assets/gn-mobile-hero/allinadventures-gift-cards-hero-mobile.jpg"
+                    },
         "pagedata":{
             "pagetitle":"BUY GIFT CARDS",
             "pagesubtitle":"We've got your gift needs covered for birthdays, holidays, special surprises, and just about everything else in between. You’ll be pleased to know that unlike a lot of other gift programs, our Gift Cards never expire! To buy or redeem Gift Cards, visit the location-specific Gift Card page to find a local store near you.",

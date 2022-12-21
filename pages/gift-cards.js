@@ -10,6 +10,7 @@ import { getGiftCardPageData } from "./api/getGiftCardPageData";
 import BuyGiftCards from "../comps/giftCardPageComps/BuyGiftCards";
 import WhyAdvGiftCards from "../comps/giftCardPageComps/WhyAdvGiftCards";
 import GiftFaq from "../comps/giftCardPageComps/GiftFaq";
+import Seofields from "../comps/util/SeoFields";
 
 const giftCard=(props)=>{
     const toTitleCase=(title)=>{
@@ -27,11 +28,7 @@ const giftCard=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | Gift Cards</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+           <Seofields meta={props.pagemeta}/>
            <Homenav locationlist={props.locationlist}
            activitylist={props.activitylist}
            eventlist={props.eventlist}/>

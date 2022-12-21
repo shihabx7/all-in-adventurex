@@ -15,7 +15,7 @@ export const getDealsCouponPageData=()=>{
            
           "pagedata": {
                         "pagetitle":"DEALS AND COUPONS",
-                        "pagesubtitle":"#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
+                        "pagesubtitle":"Check out the best discounts on escape rooms and other fun games for any All In Adventures location. Grab the deal using the promo codes below!",
                          
                         "totalLocations": getTotal().totalLocations,
                         "coverimageL":"/assets/gn-desktop-hero/allinadventures-deals-and-coupon-hero.jpg",

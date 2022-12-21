@@ -11,6 +11,7 @@ import GameVideo from "../../comps/activitiyPageComps/GameVideo";
 import { getALlActivityList } from "../api/getAllActivityList";
 import { getActivityData } from "../api/getActivitiyPageData";
 import GameFaq from "../../comps/activitiyPageComps/GameFaq";
+import Seofields from "../../comps/util/SeoFields";
 
       
 const sinleActivities=(props)=>{
@@ -29,12 +30,9 @@ const sinleActivities=(props)=>{
 
     return(
         <>
+        <Seofields meta={props.pagemeta}/>
             {/* =======header content======== */}
-         <Head>
-               <title>All in adventure Activities | {props.pagedata.activityname}</title>
-                <meta name="description" content="All in adventure escape games" />
-      
-        </Head>
+         
          <Homenav locationlist={props.locationlist}
            activitylist={props.activitylist}
            eventlist={props.eventlist}

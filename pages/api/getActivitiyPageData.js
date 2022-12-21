@@ -63,9 +63,12 @@ const activityDataset={
       
       "pagemeta":{
   
-        "matatilte":"title",
-        "metakeyword":"keywords",
-        "metadescription":"metadescription"
+               "title":"Escape From Alcatraz Escape Room - All In Adventures",
+                "description":"You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them or they'll escape.",
+                "keywords":"escape from alcatraz, escape from alcatraz escape room, all in adventure escape from alcatraz, mystery room escape from alcatraz,  alcatraz escape room, prison break escape room, prison break escape room near me, jail break escape room, escape from alcatraz escape room near me, prison themed escape room, escape alcatraz escape room, escape from alcatraz escape game",
+                "url":"/activities/escape-from-alcatraz",
+                "metaindex":true,
+                "metaimg":"/assets/all-game-mobile-hero/allinadventures-escape-from-alcatraz.jpg"
       },
       "activitydata":{
         "category":"escapegames",
@@ -131,9 +134,12 @@ const activityDataset={
       
       "pagemeta":{
   
-        "matatilte":"title",
-        "metakeyword":"keywords",
-        "metadescription":"metadescription"
+                "title":"Treasure Island Escape Room - All In Adventures",
+                "description":"You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
+                "keywords":"treasure island, treasure island escape room, all in adventures treasure island, mystery room treasure island, treasure pirate escape room, treasure escape room, treasure escape game, pirate escape game, treasure island escape room near me, pirate escape room, pirate themed escape room, treasure hunt escape room, treasure island escape game,",
+                "url":"/activities/treasure-island",
+                "metaindex":true,
+                "metaimg":"/assets/all-game-mobile-hero/allinadventures-treasure-island.jpg"
       },
       "activitydata":{
         "category":"escapegames",
@@ -199,10 +205,13 @@ const activityDataset={
       
       "pagemeta":{
   
-        "matatilte":"title",
-        "metakeyword":"keywords",
-        "metadescription":"metadescription"
-      },
+        "title":"Superhero's Adventure Escape Room - All In Adventures",
+        "description":"You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
+        "keywords":"superheros adventure, superhero adventure escape room, superhero adventure mystery room, all in adventure superhero adventure, superhero escape room, escape room superhero, superhero adventure escape room near me, superhero escape room near me, escape room superhero near me, superhero theme escape room, superhero escape game, mystery room superhero escape room",
+        "url":"/activities/superheros-adventure",
+        "metaindex":true,
+        "metaimg":"/assets/all-game-mobile-hero/allinadventures-superheros-adventure.jpg"
+                },
       "activitydata":{
         "category":"escapegames",
         "story":"Darkover City is home to the prestigious Grand Central Bank - housing and securing millions of dollars worth of gold. Superheroes across the universe have been called to protect the bank after its blueprint has mysteriously gone missing. You suspect the infamous Matador and his crew of minions have something to do with it.",
@@ -267,10 +276,13 @@ const activityDataset={
       
       "pagemeta":{
   
-        "matatilte":"title",
-        "metakeyword":"keywords",
-        "metadescription":"metadescription"
-      },
+        "title":"Zombie Apocalypse Escape Room - All In Adventures",
+        "description":"The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
+        "keywords":"zombie apocalypse, zombie apocalypse escape room, zombie apocalypse mystery room, mystery room zombie escape room, all in adventure zombie apocalypse, zombie escape room, escape room zombie, zombie apocalypse escape room near me, zombie escape room near me, escape room zombie near me, zombie theme escape room, zombie escape game,  scary escape room, horror escape room",
+        "url":"/activities/zombie-apocalypse",
+        "metaindex":true,
+        "metaimg":"/assets/all-game-mobile-hero/allinadventures-zombie-apocalypse.jpg"
+                },
       "activitydata":{
         "category":"escapegames",
         "story":" You are in Paris, France, the place where the zombification of the human race began.. At first, the virus was unstoppable; anyone who came into contact with the virus was guaranteed to turn. However, your recent research shows the virus has mutated into two weaker strains. Now is the time to develop a vaccine and save humanity.",
@@ -334,11 +346,14 @@ const activityDataset={
         "coverimageM_alt":"allinadventures special agent",
         
         "pagemeta":{
-    
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
+  
+          "title":"Special Agent Escape Room - All In Adventures",
+          "description":"After capturing one of the world's most infamous money launderers, one of his associates is planning a new scheme. Stop him in his tracks!",
+          "keywords":"special agent, special agent escape room, investigation themed escape room, special agent mystery room, all in adventure special agent, spy agent escape room, special force escape room, special agent escape room near me, investigation themed escape room near me, spy agent escape room near me, special force escape room near me, mystery room special agent escape room,",
+          "url":"/activities/special-agent",
+          "metaindex":true,
+          "metaimg":"/assets/all-game-mobile-hero/allinadventures-special-agent.jpg"
+                  },
         "activitydata":{
           "category":"escapegames",
           "story":"Spiegel was, at least in the underground criminal world, the most respected money launderer in the business. Recently, we were able to track him down and infiltrate his operations with one of our agents. This eventually led to his capture, but unfortunately for us, we discovered he had an entire global network of operations. It is now your sole mission to stop his laundering empire.",
@@ -402,11 +417,14 @@ const activityDataset={
         "coverimageM_alt":"allinadventures hollywood premiere",
         
         "pagemeta":{
-    
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
+  
+          "title":"Hollywood Premiere Escape Room - All In Adventures",
+          "description":"Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
+          "keywords":"hollywood premiere escape room, hollywood escape room, hollywood premiere mystery room, all in adventure hollywood premiere, hollywood theme escape room, hollywood celebrity escape room, hollywood premiere mystery room, hollywood mystery escape room, hollywood premiere escape room near me, hollywood escape room near me, hollywood theme escape room near me, hollywood celebrity escape room near me, hollywood premiere mystery room near me, hollywood mystery escape room near me",
+          "url":"/activities/hollywood-premiere",
+          "metaindex":true,
+          "metaimg":"/assets/all-game-mobile-hero/allinadventures-hollywood-premiere.jpg"
+                  },
         "activitydata":{
           "category":"escapegames",
           "story":'The newest and hottest game show, "Name That Celebrity", started back in 2019. Since then, contestants have been booked constantly as they await their chance to compete and win. Recently, they completed a casting call and chose a brand new round of contestants. Much to your surprise, you were chosen to compete!',
@@ -471,11 +489,14 @@ const activityDataset={
         "coverimageM_alt":"allinadventures sherlocks library",
         
         "pagemeta":{
-    
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
+  
+          "title":"Sherlock's Library Escape Room - All In Adventures",
+          "description":"London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
+          "keywords":"sherlocks library, sherlock library escape room, sherlock library mystery room, all in adventure sherlock library, all in adventure sherlock library, sherlock escape room, spy escape room, investigation escape room, sherlock holmes escape room, investigator escape room, sherlock library mystery room, sherlock library escape room near me, sherlock escape room near me, spy escape room near me, investigation escape room near me, sherlock holmes escape room near me, sherlock library mystery room near me, mystery room sherlock escape room",
+          "url":"/activities/sherlocks-library",
+          "metaindex":true,
+          "metaimg":"/assets/all-game-mobile-hero/allinadventures-sherlocks-library.jpg"
+                  },
         "activitydata":{
           "category":"escapegames",
           "story":"While attending a concert with London's elite, Sherlock Holmes heard a tale of a scheme created by a secret aristocrat. They are laundering money, erasing gambling debts, and selling lesser titles of nobility to unsavory characters. Holmes is preparing to play his violin to solve the current case.",
@@ -539,11 +560,14 @@ const activityDataset={
         "coverimageM_alt":"allinadventures-houdinis-magic-cell",
         
         "pagemeta":{
-    
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
+  
+          "title":"Houdini's Magic Cell Escape Room - All In Adventures",
+          "description":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
+          "keywords":"houdinis magic cell, houdinis magic cell escape room, all in adventure houdini magic cell, mystery room houdinis magic cell, houdini escape room, magic theme escape room, magician escape room, houdinis magic cell mystery room, houdinis magic cell escape room near me, houdini escape room near me, magic theme escape room near me, magician escape room near me, houdinis magic cell mystery room near me,",
+          "url":"/activities/houdinis-magic-cell",
+          "metaindex":true,
+          "metaimg":"/assets/all-game-mobile-hero/allinadventures-houdinis-magic-cell.jpg"
+                  },
         "activitydata":{
           "category":"escapegames",
           "story":'The famous Hungarian American magician, Houdini, performed many tricks during his lifetime; some were even death defying. Houdini was adept at all tricks ranging from simple card tricks to the most daring escape from an unbelievable scenario. There is one trick in particular that you have always wanted to outperform: the "Houdini Upside Down" - the trick involving Houdini trapped upside down, handcuffed at the feet, submerged in water. Death was just minutes away.',
@@ -608,11 +632,14 @@ const activityDataset={
         "coverimageM_alt":"allinadventures black ops",
         
         "pagemeta":{
-    
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
+  
+          "title":"Black Ops Escape Room - All In Adventures",
+          "description":"After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
+          "keywords":"black ops, black ops escape room, all in adventure black ops, black ops mystery room, action escape room, war theme escape room, black ops escape game, black ops mystery room, black ops escape room near me, action escape room near me, war theme escape room near me, black ops escape game near me, black ops mystery room near me",
+          "url":"/activities/black-ops",
+          "metaindex":true,
+          "metaimg":"/assets/all-game-mobile-hero/allinadventures-black-ops.jpg"
+                  },
         "activitydata":{
           "category":"escapegames",
           "story":"As a member of an elite military unit, you are no stranger to dangerous missions - this mission will be no different. Previous operations have allowed us to obtain all the evidence necessary to initiate the capture of the international arms dealer known as The Hawk. We have located the HQ of The Hawk, and it is time to raid the bunker and bring The Hawk in for questioning.",
@@ -676,11 +703,14 @@ const activityDataset={
         "coverimageM_alt":"allinadventures lost in the jungle",
         
         "pagemeta":{
-    
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
+  
+          "title":"Lost in The Jungle Escape Room - All In Adventures",
+          "description":"After hearing some strange noises on your roof, you decide to investigate. Your future is dependent on learning more about the strange noises!",
+          "keywords":"lost in jungle escape room, adventure jungle escape room, jungle theme escape room, lost in the jungle mystery room, lost in jungle escape room near me, adventure jungle escape room near me, jungle theme escape room near me, lost in the jungle mystery room, all in adventure lost in the jungle",
+          "url":"/activities/lost-in-the-jungle",
+          "metaindex":true,
+          "metaimg":"/assets/all-game-mobile-hero/allinadventures-lost-in-the-jungle.jpg"
+                  },
         "activitydata":{
           "category":"escapegames",
           "story":"It was just a normal day in suburbia and you were with your friends getting ready to enjoy the weekend. One of your favorite things to do was to tell stories at night, and this night, you had a special story - one about animals coming to life and taking over the city. You had no idea what would come next…",
@@ -745,11 +775,14 @@ const activityDataset={
         "coverimageM_alt":"allinadventures wizarding school",
         
         "pagemeta":{
-    
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
+  
+          "title":"Wizarding School Escape Room - All In Adventures",
+          "description":"Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office!",
+          "keywords":"wizarding school escape room, wizard escape room, wizarding escape room, wizarding school mystery room, wizarding school escape room near me, wizard escape room near me, wizarding escape room near me, wizarding school mystery room, all in adventure wizarding school",
+          "url":"/activities/wizarding-school",
+          "metaindex":true,
+          "metaimg":"/assets/all-game-mobile-hero/allinadventures-wizarding-school.jpg"
+                  },
         "activitydata":{
           "category":"escapegames",
           "story":"Wizarding School is the most revered school for magic in the land. With an admission rate of only 1%, you were extremely lucky to get into the school. You were placed in a house that cares highly about their reputation, and they won't allow anyone in the group who may cost them their standing. You want to live up to their expectations and it all starts with your first lesson - Potions!",
@@ -812,12 +845,16 @@ const activityDataset={
         "coverimageM":"/assets/all-game-mobile-hero/allinadventures-magic-castle.jpg",
         "coverimageM_alt":"allinadventures magic castle",
         
+        
         "pagemeta":{
-    
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
+  
+          "title":"Magic Castle Escape Room - All In Adventures",
+          "description":"Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards. But it's not easy!",
+          "keywords":"magic castle escape room, magic escape room, magic castle escape game, magic castle mystery room, magic castle escape room near me, magic escape room near me, magic castle escape game near me, magic castle mystery room, all in adventure magic castle,",
+          "url":"/activities/magic-castle",
+          "metaindex":true,
+          "metaimg":"/assets/all-game-mobile-hero/allinadventures-magic-castle.jpg"
+                  },
         "activitydata":{
           "category":"escapegames",
           "story":"The Magic Castle is known as one of the toughest entrance exams any wizard can take. Any aspiring wizard who wants to get out of the muggle world must take this exam. The waiting list spans years, and you have just received your entrance letter giving you your chance at the test.",
@@ -881,11 +918,14 @@ const activityDataset={
         "coverimageM_alt":"allinadventures locked in the lift",
         
         "pagemeta":{
-    
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
+  
+          "title":"Locked in The Lift Escape Room - All In Adventures",
+          "description":"Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. Act fast and save yourself and others!",
+          "keywords":"locked in the lift escape room, locked escape room, locked in the lift escape game, locked in the lift mystery room, locked in the lift escape room near me, locked escape room near me, locked in the lift escape game near me, locked in the lift mystery room, all in adventure locked in the lift",
+          "url":"/activities/locked-in-the-lift",
+          "metaindex":true,
+          "metaimg":"/assets/all-game-mobile-hero/allinadventures-locked-in-the-lift.jpg"
+                  },
         "activitydata":{
           "category":"escapegames",
           "story":"As a famous actor in the 40's, you were given luxuries that most couldn't imagine possessing. A fancy car? Check. Nice house? Check. Debt? Of course not. There was one place all the VIPs wanted to visit—the luxurious hotel on Main Street to take the elusive lift to the second floor. You just received your invite in the mail - time to get ready!",
