@@ -7,7 +7,7 @@ import { FiChevronRight } from "react-icons/fi";
 import { getAnswerPageData } from "./api/getAnswerPageData";
 import GameHomeHero  from "../comps/activitiyPageComps/GameHomeHero";
 import HintAns from "../comps/util/HintAns";
-import Seofields from "../comps/util/Seofields";
+import Seofields from '../comps/util/SeoFields';
 
 
 

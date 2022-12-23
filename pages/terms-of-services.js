@@ -1,4 +1,4 @@
-import Head from "next/dist/shared/lib/head";
+
 import Homenav from "../comps/Homenav";
 import Footer from "../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
@@ -7,11 +7,12 @@ import { FiChevronRight } from "react-icons/fi";
 
 import GnHero from "../comps/privacyTermsComps/GnHero";
 
-import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
 import { getTermsConditionPageData } from "./api/getTermsConditionPageData"
-import PrivacyPolicy from "../comps/privacyTermsComps/PrivacyPolicy";
+
 import TermsAndCondition from "../comps/privacyTermsComps/TermsAndConditions";
-import Seofields from "../comps/util/Seofields";
+
+import Seofields from '../comps/util/SeoFields';
+
 
 const termsAndCondition=(props)=>{
     const toTitleCase=(title)=>{

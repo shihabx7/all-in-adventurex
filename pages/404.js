@@ -4,7 +4,7 @@ import Footer from "../comps/Footer";
 import Custom404Err from "../comps/util/Custom404Err";
 import getErrPageData from "./api/getErrPageData";
 
-import Seofields from "../comps/util/Seofields";
+import Seofields from '../comps/util/SeoFields';
 const Custom404=(props)=>{
 
  

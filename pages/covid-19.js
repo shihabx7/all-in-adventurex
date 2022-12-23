@@ -7,7 +7,7 @@ import Breadcrumbs from 'nextjs-breadcrumbs';
 import { FiChevronRight } from "react-icons/fi";
 
 import { getCovidPageData } from './api/getCovidPageData';
-import Seofields from '../comps/util/Seofields';
+import Seofields from '../comps/util/SeoFields';
 import Link from 'next/link';
 
 

@@ -11,8 +11,8 @@ const ThankYou=(props)=>{
                 <>
                     <Seofields meta={props.pagemeta}/>
                      <Homenav  locationlist={props.locationlist}
-            activitylist={props.activitylist}
-            eventlist={props.eventlist}/>
+                                 activitylist={props.activitylist}
+                                 eventlist={props.eventlist}/>
                      <ThankYouBox/>
                      <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
                 </>
