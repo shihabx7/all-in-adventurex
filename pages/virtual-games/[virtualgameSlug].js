@@ -13,8 +13,8 @@ import VgameGallery from "../../comps/virtualPgeComps/VgameGallery";
 import VgameVideo from "../../comps/virtualPgeComps/VgameVideo";
 import TitleSeparator from "../../comps/util/TitleSeparator";
 import FaqList from "../../comps/faqComps/FaqList";
-import Seofields from "../../comps/util/Seofields";
 
+import Seofields from "../../comps/util/SeoFields";
 
 const showSingleVitualGame=(props)=>{
 

@@ -3,7 +3,7 @@ import Homenav from "../comps/Homenav";
 import Footer from "../comps/Footer";
 import ThankYouBox from "../comps/util/ThankYouBox";
 import { getThankYouStorePageData } from "./api/getThankYouStorePageData";
-import Seofields from "../comps/util/Seofields";
+import Seofields from '../comps/util/SeoFields';
 const ThankYou=(props)=>{
 
  

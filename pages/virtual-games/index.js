@@ -8,7 +8,7 @@ import { FiChevronRight } from "react-icons/fi";
 import { getVirtualGamesHomePageData } from "../api/VirtualGames/getVirtualGamesHomePageData";
 import VirtualHero from "../../comps/virtualPgeComps/VirtualHero";
 import VirtualGameList from "../../comps/virtualPgeComps/VirtualGameList";
-import Seofields from "../../comps/util/Seofields";
+import Seofields from "../../comps/util/SeoFields";
 
 const VirtualEscapeGames=(props)=>{
     /* custom breadcum code */
