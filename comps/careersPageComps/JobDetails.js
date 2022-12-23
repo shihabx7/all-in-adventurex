@@ -49,9 +49,9 @@ const JobDetails=(props)=>{
                              </div>
                              <div className="job-dt-bottom-link mt-6 lg:mt-8">
                                      <p className="job-note font-semibold lg:text-lg text-[#464646] mb-6 lg:mb-8">If you are interested in applying for this role, please click below to complete an employment application and submit your resume for review by our recruiting team.</p>
-                                        <Link href={"/careers/apply/?job="+props.jobname}>
-                                            <a className="inline-block bg-red-600 hover:bg-red-700 text-white lg:text-lg py-3 px-10 md:py-4 md:px-12 rounded-full">SUBMIT YOUR APPLICATION</a>
-                                        </Link>
+                                        
+                                            <a href={"/careers/apply/"} className="inline-block bg-red-600 hover:bg-red-700 text-white lg:text-lg py-3 px-10 md:py-4 md:px-12 rounded-full">SUBMIT YOUR APPLICATION</a>
+                                       
                                     <p className="font-thin text-[#464646] lg:text-lg mt-6 lg:mt-8">All in Adventures, LLC. is an equal opportunity employer and affirmatively seeks diversity in its workforce. 
                                         All in Adventures recruits qualified applicants and advances in employment its employees without regard to race, 
                                         color, religion, gender, sexual orientation, gender identity, gender expression, age, disability, genetic information, 
@@ -131,9 +131,9 @@ const JobDetails=(props)=>{
                         {/**============WANT TO JOIN OUR TEAM?====================== */}
                 <div className="section-row text-center pt-20">
                   <h2 className="golden-text text-3xl md:text-3xl lg:text-4xl font-os font-bold mb-8">WANT TO JOIN OUR TEAM?</h2>
-                  <Link href="/careers">
-                            <a className="inline-block rounded-full border-2 border-red-700 hover:bg-red-700 text-[#111111] hover:text-white py-3 px-12">VIEW ALL JOB POSITIONS</a>         
-                  </Link>
+                 
+                            <a href="/careers" className="inline-block rounded-full border-2 border-red-700 hover:bg-red-700 text-[#111111] hover:text-white py-3 px-12">VIEW ALL JOB POSITIONS</a>         
+                 
                 </div>
                          {/**============WANT TO JOIN OUR TEAM?====================== */}
 

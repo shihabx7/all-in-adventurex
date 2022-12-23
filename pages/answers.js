@@ -1,4 +1,4 @@
-import Head from "next/dist/shared/lib/head";
+
 import Homenav from "../comps/Homenav";
 import Footer from "../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
@@ -7,6 +7,7 @@ import { FiChevronRight } from "react-icons/fi";
 import { getAnswerPageData } from "./api/getAnswerPageData";
 import GameHomeHero  from "../comps/activitiyPageComps/GameHomeHero";
 import HintAns from "../comps/util/HintAns";
+import Seofields from "../comps/util/Seofields";
 
 
 
@@ -27,11 +28,7 @@ const Answers=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | Answers</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+           <Seofields meta={props.pagemeta}/>
           
            <Homenav 
            locationlist={props.locationlist}

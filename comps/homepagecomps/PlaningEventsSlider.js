@@ -61,14 +61,14 @@ const PlaningEventsSlider=(props)=>{
     <div className="view-all flex justify-center pt-8 md:pt-12 lg:pt-16">
     {
             props.locationslug &&
-            <Link href={"/"+props.locationslug+"/events/"}> 
-            <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all events and parties </span> <FaAngleRight/></a>
-          </Link>
+            
+            <a href={"/"+props.locationslug+"/events/"} className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all events and parties </span> <FaAngleRight/></a>
+         
           }
           { !props.locationslug &&
-             <Link href={"/events/"}> 
-             <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all events and parties </span> <FaAngleRight/></a>
-           </Link>
+             
+             <a href={"/events/"} className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all events and parties </span> <FaAngleRight/></a>
+           
           }
      </div>
 </div>

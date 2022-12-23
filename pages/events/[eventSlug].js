@@ -9,6 +9,7 @@ import { getAllEventList } from "../api/getAllEventList";
 import GameHomeHero from "../../comps/activitiyPageComps/GameHomeHero";
 import HomeReviewSlider from "../../comps/homepagecomps/HomeReviewSlider";
 import EventDetails from "../../comps/eventPageComps/EventDetails";
+import Seofields from "../../comps/util/SeoFields";
 
 
 const showSingleEvent=(props)=>{
@@ -26,11 +27,7 @@ const showSingleEvent=(props)=>{
     return(
        <>
        {/* =======header content======== */}
-       <Head>
-                 <title>All in adventure | Events</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+          <Seofields meta={props.pagemeta}/>
            <Homenav locationlist={props.locationlist}
            activitylist={props.activitylist}
            eventlist={props.eventlist}/>

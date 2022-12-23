@@ -990,11 +990,14 @@ const activityDataset={
         "coverimageM_alt":"allinadventures-game-show-room",
         
         "pagemeta":{
-    
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
+  
+          "title":"Game Show Room | All In Adventures | Formerly Mystery Room",
+          "description":"We offer a unique, unpredictable, family-friendly live game show experience for guests of all different ages, backgrounds and group sizes.",
+          "keywords":"game show room, game show room near you,",
+          "url":"/activities/game-show-room",
+          "metaindex":true,
+          "metaimg":"/assets/all-game-mobile-hero/allinadventures-game-show-room.jpg"
+                  },
         "activitydata":{
           "category":"other",
           "story":"Our real-life Game Show Room is created to bring friends, family or co-workers together. It's a fun, group-oriented activity you share with other live players. You have the option to choose from a family, kid or adult experience. Once your group come in, players will become instant game show contestants led by a professional game host who will guide players through a series of interactive games.",
@@ -1163,11 +1166,14 @@ const activityDataset={
         "coverimageM_alt":"allinadventures-axe-throwing",
         
         "pagemeta":{
-    
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
+  
+          "title":"Axe Throwing | All In Adventures | Formerly Mystery Room",
+          "description":"Come throw axes at our exciting interactive targets with your friends and family! Test your hand-eye coordination and see if you can hit a bull's eye.",
+          "keywords":"axe throwing, axe throwing near you,",
+          "url":"/activities/axe-throwing",
+          "metaindex":true,
+          "metaimg":"/assets/all-game-mobile-hero/allinadventures-axe-throwing.jpg"
+                  },
         "activitydata":{
           "category":"other",
           "story":"With our interactive lanes, you can practice throwing at traditional targets or choose from other games. Utilizing a projection system, you can not only easily switch between games, but you can also allow it to do the scoring for you. Using sensors to mark your hits, our lanes can track the score for you and let you focus on the fun.",
@@ -1230,11 +1236,14 @@ const activityDataset={
         "coverimageM_alt":"allinadventures-beat-the-seat",
         
         "pagemeta":{
-    
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
+  
+          "title":"Beat The Seat | All In Adventures | Formerly Mystery Room",
+          "description":"Beat the Seat is a two-minute, fun-filled, exhilarating experience where you'll test your endurance, coordination, and ability to think on your feet.",
+          "keywords":"beat the seat, beat the seat game, beat the seat near you,",
+          "url":"/activities/beat-the-seat",
+          "metaindex":true,
+          "metaimg":"/assets/all-game-mobile-hero/allinadventures-beat-the-seat.jpg"
+                  },
         "activitydata":{
           "category":"other",
           "story":"Beat The Seat is an intense and challenging fun game! You'll be required to solve several different challenges and combinations while holding down the button on the seat, and this must be completed within two minutes. If that sounds simple, well, just wait till you're in there, and you may think a little differently.",

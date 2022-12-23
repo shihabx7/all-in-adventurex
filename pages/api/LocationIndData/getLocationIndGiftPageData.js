@@ -52,22 +52,80 @@ export const getLocationIndGiftPageData=(locationslug)=>{
           var ret=spLoc+", "+st
           return ret
         }
+        // ===============seo fields
+        const capCity=(locname)=>{
+          var spLoc=locname.split("-")
+          if(spLoc[0]=="n" || spLoc[0]=="N"){
+            spLoc[0]='North'
+          }
+          var st=spLoc[spLoc.length-1].toString()
+          spLoc=spLoc.slice(0,-1)
+          var x
 
+          for(x=0;x<spLoc.length;x++){
+    
+              var upc=spLoc[x].charAt(0).toUpperCase()
+              var nnsp=spLoc[x].substring(0,0) + upc + spLoc[x].substring(0+1)
+              spLoc[x]= nnsp
+          }
+          spLoc=spLoc.join(' ')
+          
+          var ret=spLoc+" "+st.toUpperCase()
+          return ret
+        }
+        const lowCity=(locname)=>{
+          var spLoc=locname.split("-")
+          if(spLoc[0]=="n" || spLoc[0]=="N"){
+            spLoc[0]='North'
+          }
+         
+          spLoc=spLoc.join(' ')
+          
+         
+          return spLoc
+        }
+
+        const capMall=(mall)=>{
+          var mallArr=mall.split(' ')
+          var appArr=['to','at','in','for','of','it','a','an']
+         
+          var y
+      
+          for(y=0;y<mallArr.length;y++){
+            if(!appArr.includes(mallArr[y]) && mallArr[y]!='USA'){
+              if(mallArr[y]=='usa'){
+                mallArr[y]==mallArr[y].toUpperCase()
+              }
+              var upc=mallArr[y].charAt(0).toUpperCase()
+              var nnsp=mallArr[y].substring(0,0) + upc + mallArr[y].substring(0+1)
+              
+              mallArr[y]= nnsp
+            }
+            
+              
+          }
+          var capmall=mallArr.join(' ')
+      
+         return capmall
+         }
+         // ===============seo fields end
     const giftcardData={
 
       "activitylist":getLocTotal(locationslug).activitylistSlug,
       "eventlist":getLocTotal(locationslug).eventlistSlug,
       "locationlist":getLocTotal(locationslug).locationlist,
-        "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+      "pagemeta":{
+        "title":"All In Adventures Gift Cards in "+capCity(locationslug)+" - Escape Rooms and More",
+        "description":"Whether it's someone's birthday, anniversary or a holiday such as Christmas - an All In Adventures Gift Card is a perfect present for any occasion.",
+        "keywords":"escape room gift cards, escape room gift card, escape room gift certificate "+lowCity(locationslug)+", escape room gift certificates "+lowCity(locationslug)+", escape room gift vouchers, escape room gift voucher "+lowCity(locationslug)+", all in adventures gift cards "+lowCity(locationslug)+", all in adventures gift card "+lowCity(locationslug)+", mystery room gift cards, mystery room gift card",
+        "url":"/"+locationslug+"/gift-cards",
+        "metaindex":true,
+        "metaimg":"/assets/gn-mobile-hero/allinadventures-gift-cards-hero-mobile.jpg"
+      },
            
         "pagedata":{
             "pagetitle":"BUY GIFT CARDS IN "+locnameMod(locationslug),
-            "pagesubtitle":"We've got your gift needs covered for birthdays, holidays, special surprises, and just about everything else in between. You’ll be pleased to know that unlike a lot of other gift programs, our Gift Cards never expire! To buy or redeem Gift Cards, visit the location-specific Gift Card page to find a local store near you.",
+            "pagesubtitle":"We've got your gift needs covered for birthdays, holidays, special surprises, and just about everything else in between. You'll be pleased to know that unlike a lot of other gift programs, our Gift Cards never expire! To buy or redeem Gift Cards, visit the location-specific Gift Card page to find a local store near you.",
             "publish_status":getLocTotal(locationslug).publish_status,
             "coverimageL":"/assets/gn-desktop-hero/allinadventures-gift-cards-hero-desktop.jpg",
             "coverimageM":"/assets/gn-mobile-hero/allinadventures-gift-cards-hero-mobile.jpg",

@@ -1,18 +1,15 @@
-import Head from "next/dist/shared/lib/head";
+
 import Homenav from "../comps/Homenav";
 import Footer from "../comps/Footer";
 import ThankYouBox from "../comps/util/ThankYouBox";
-import { getThankYouPageData } from "./api/getThankYouPageData";
-const ThankYouStore=(props)=>{
+import { getThankYouStorePageData } from "./api/getThankYouStorePageData";
+import Seofields from "../comps/util/Seofields";
+const ThankYou=(props)=>{
 
  
     return(
                 <>
-                    <Head>
-                           <title>All in adventure | Thank you franchise</title>
-                              <meta name="description" content="All in adventure escape games" />
-        
-                     </Head>
+                    <Seofields meta={props.pagemeta}/>
                      <Homenav  locationlist={props.locationlist}
             activitylist={props.activitylist}
             eventlist={props.eventlist}/>
@@ -22,11 +19,11 @@ const ThankYouStore=(props)=>{
     )
 }
 
-export default ThankYouStore
+export default ThankYou
 
 export const getStaticProps=async()=>{
 
-    const tdata=await getThankYouPageData()
+    const tdata=await getThankYouStorePageData()
 
     return {
         props:{

@@ -92,6 +92,7 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
     return ct+st
 }
 
+
 // all events data
    const eventlocdata={
     //********************************************************birth day parties */
@@ -105,11 +106,13 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                      "max_players":"70",
                      "min_players":"2",
     
-                    "pagemeta":{
-    
-                      "matatilte":"title",
-                      "metakeyword":"keywords",
-                      "metadescription":"metadescription"
+                     "pagemeta":{
+                      "title":"Escape Room Birthday Party in CITY - All In Adventures",
+                      "description":"Join us at MALL. A perfect birthday party venue for the young at heart. No matter your age, get an unforgettable adventure! Book Now",
+                      "keywords":"birthday party escape room CITY, birthday party events CITY, kids birthday party place CITY, birthday party venues MALL, birthday party celebration CITY, birthday party things to do near me CITY, birthday party activities to do near me MALL, birthday party escape room near me CITY, birthday party events near me CITY, kids birthday party place near me MALL, birthday party venues near me MALL, birthday party celebration near me CITY, escape room for birthday party CITY",
+                      "url":"/events/birthday-party",
+                      "metaindex":true,
+                      "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-birthday-party-hero.jpg"
                     },
     
                      "eventdata":{
@@ -210,12 +213,14 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                            "max_players":"70",
                            "min_players":"2",
                         
-                         "pagemeta":{
-                        
-                           "matatilte":"title",
-                           "metakeyword":"keywords",
-                           "metadescription":"metadescription"
-                         },
+                           "pagemeta":{
+                            "title":"Escape Room Team Building in CITY - All In Adventures",
+                            "description":"Join us at MALL. This fun and exciting interactive form of team building will bring your corporate team closer! Book Now",
+                            "keywords":"team building escape room CITY, team building events CITY, corporate team building place MALL, team building venues MALL, team building activities CITY, team building things to do near me CITY, team building activities to do near me MALL, team building escape room near me CITY, team building events near me CITY, corporate team building place near me CITY, team building venues near me CITY, team building activities near me CITY, escape room for team building MALL",
+                            "url":"/events/team-building",
+                            "metaindex":true,
+                            "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-team-building-hero.jpg"
+                          },
                         
                           "eventdata":{
                            "why_book":"We provide the ideal atmosphere to strengthen teamwork, communication, and problem-solving skills! Our escape rooms bring teams together towards a common goal and offer the thrill of collaborative success! Instead of another dreary meeting, why not have an adventure into the unknown?",
@@ -315,12 +320,14 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                          "max_players":"70",
                          "min_players":"2",
     
-                       "pagemeta":{
-                      
-                         "matatilte":"title",
-                         "metakeyword":"keywords",
-                         "metadescription":"metadescription"
-                       },
+                         "pagemeta":{
+                          "title":"Escape Room Corporate Events in CITY - All In Adventures",
+                          "description":"Join us at MALL. Instead of a dreary meeting on how to work effectively, why not take a crack at a puzzle? Book Now",
+                          "keywords":"corporate events near me CITY, corporate party in escape room CITY, escape room for corporate party MALL, corporate party place for fun CITY, corporate party venues MALL, corporate party activities CITY, corporate party things to do near me CITY, corporate party activities to do near me CITY, corporate event party escape room near me CITY, corporate party place near me CITY, events for corporate party place near me CITY, corporate party venues nearby CITY, corporate party activities near me MALL, escape room for corporate events CITY",
+                          "url":"/events/corporate-events",
+                          "metaindex":true,
+                          "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-corporate-events-hero.jpg"
+                        },
                      
                         "eventdata":{
                          "why_book":"Corporate events are frequently held at All In Adventures, and it's no surprise why! We provide a unique atmosphere where communication, leadership, and problem-solving skills will all be put to the test. Our escape rooms bring everyone on the team together to work towards a common goal!",
@@ -420,12 +427,14 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                          "max_players":"70",
                         "min_players":"2",
     
-                         "pagemeta":{
-                        
-                           "matatilte":"title",
-                           "metakeyword":"keywords",
-                           "metadescription":"metadescription"
-                         },
+                        "pagemeta":{
+                          "title":"Escape Room Family Activities in CITY - All In Adventures",
+                          "description":"Join us at MALL. A unique family fun activity with intense real-life puzzles where you have to work together to progress! Book Now",
+                          "keywords":"family events in escape room CITY, escape room for family events CITY, family events place for fun MALL, family events venues MALL, family events activities MALL, family events things to do near me CITY, family events activities to do near me CITY, family event party escape room near me MALL, family events place near me CITY, events for family place near me CITY, family events venues nearby MALL, family events activities near me CITY, escape room for family events MALL",
+                          "url":"/events/family-fun-activity",
+                          "metaindex":true,
+                          "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-family-fun-activities-hero.jpg"
+                        },
                        
                           "eventdata":{
                            "why_book":"Put your incredible family dynamic on display in one of our fun escape rooms! We provide a unique, screen-free atmosphere to spend time together as a family! Kids over 6 can contribute, and ages 10 and up will be active problem-solving participants! Kids under six can play for FREE alongside two or more full-price adults!",
@@ -526,11 +535,13 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                      "min_players":"2",
     
                      "pagemeta":{
-                    
-                       "matatilte":"title",
-                       "metakeyword":"keywords",
-                       "metadescription":"metadescription"
-                     },
+                      "title":"Escape Room Bachelor Parties in CITY - All In Adventures",
+                      "description":"Join us at MALL. There's no better way than to bond with your bachelor party before the big day - no scandals, just nonstop thrills! Book Now",
+                      "keywords":"bachelor party escape room MALL, escape room for bachelor party CITY, bachelor party place for fun CITY, bachelor party venues CITY, bachelor party activities CITY, bachelor party things to do near me CITY, bachelor party activities to do near me CITY, bachelor event party escape room near me MALL, bachelor party place near me MALL, events for bachelor party place near me MALL, bachelor party venues nearby CITY, bachelor party activities near me MALL, escape room for bachelor party MALL",
+                      "url":"/events/bachelor-party",
+                      "metaindex":true,
+                      "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-bachelor-party-hero.jpg"
+                    },
                    
                      "eventdata":{
                       "why_book":"Our unique escape room experiences are a perfect addition to bachelor parties! Your group of guys will have to come ready to play if you have any chance at escaping! Pick a room theme that best fits your crew and let us know if there's something special you'd like done for the groom-to-be!",
@@ -627,15 +638,17 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                         "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-bachelorette-party-hero.jpg",
                         "coverimageM_alt":"allinadventures-events-bachelorette-party",
                         "age":"6+",
-                     "max_players":"70",
-                     "min_players":"2",
+                         "max_players":"70",
+                        "min_players":"2",
     
-                       "pagemeta":{
-                      
-                         "matatilte":"title",
-                         "metakeyword":"keywords",
-                         "metadescription":"metadescription"
-                       },
+                     "pagemeta":{
+                               "title":"Escape Room Bachelorette Parties in CITY - All In Adventures",
+                               "description":"Join us at MALL. Fun-filled bachelorette party without any drama that will be something long remembered by everyone! Book Now",
+                               "keywords":"bachelorette party escape room MALL, escape room for bachelorette party MALL, bachelorette party place for fun MALL, bachelorette party venues MALL, bachelorette party activities MALL, bachelorette party things to do near me CITY, bachelorette party activities to do near me CITY, bachelorette event party escape room near me CITY, bachelorette party place near me CITY, events for bachelorette party place near me CITY, bachelorette party venues nearby CITY, bachelorette party activities near me CITY, escape room for bachelorette party CITY",
+                               "url":"/events/bachelorette-party",
+                               "metaindex":true,
+                               "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-bachelorette-party-hero.jpg"
+                              },
                      
                        "eventdata":{
                         "why_book":"Our unique escape room experiences are a perfect addition to bachelorette parties! Your group of gals will have to come ready to play to have any chance at escaping! Pick a room theme that best fits your bridal party and let us know if there's something special you'd like done for the bride-to-be!",
@@ -732,15 +745,17 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                           "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-proposal-party-hero.jpg",
                           "coverimageM_alt":"allinadventures-events-proposal-party",
                           "age":"6+",
-                     "max_players":"70",
-                     "min_players":"2",
+                          "max_players":"70",
+                          "min_players":"2",
     
-                         "pagemeta":{
-                        
-                           "matatilte":"title",
-                           "metakeyword":"keywords",
-                           "metadescription":"metadescription"
-                         },
+                     "pagemeta":{
+                            "title":"Escape Room Proposal Party in CITY- All In Adventures",
+                            "description":"Join us at MALL. A distinctive marriage proposal where the mystery ends with the ring in the final clue box! Book Now",
+                            "keywords":"proposal party place CITY, proposal party venue CITY, escape room proposal party CITY, proposal party places MALL, proposal party place near me MALL, proposal party venue nearby MALL, proposal party in escape room MALL, proposal party CITY",
+                            "url":"/events/proposal-party",
+                            "metaindex":true,
+                            "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-proposal-party-hero.jpg"
+                          },
                        
                          "eventdata":{
                           "why_book":"It's no mystery: a surprise proposal can be the memory of a lifetime! Our escape rooms are ideal for a unique way to pop the question. Your partner will be so focused on victory, you'll have the perfect chance to drop to one knee! Let us know if you want to customize the game for your proposal and we'll do our best to accommodate your special day!",
@@ -840,12 +855,14 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                      "max_players":"70",
                      "min_players":"2",
     
-                 "pagemeta":{
-                
-                   "matatilte":"title",
-                   "metakeyword":"keywords",
-                   "metadescription":"metadescription"
-                 },
+                     "pagemeta":{
+                      "title":"Escape Room Date Night in CITY - All In Adventures",
+                      "description":"Join us at MALL. Work together and find clues to solve the mystery that will ultimately strengthen your relationship! Book Now",
+                      "keywords":"date night ideas MALL, escape room date night MALL, date night places MALL, date night things to doCITY, date night puzzle CITY, escape room date night near me CITY, date night idea CITY",
+                      "url":"/events/date-night",
+                      "metaindex":true,
+                      "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-date-night-hero.jpg"
+                    },
                
                  "eventdata":{
                   "why_book":"Perfect for double dates, or just some quality time together as a couple, our escape rooms can help strengthen relationships through collaboration, communication, and fun! Use your balance of strengths together to overcome puzzles and gain a new perspective on each other!",
@@ -945,12 +962,14 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
         "max_players":"70",
         "min_players":"2",
     
-     "pagemeta":{
-    
-       "matatilte":"title",
-       "metakeyword":"keywords",
-       "metadescription":"metadescription"
-     },
+        "pagemeta":{
+          "title":"Escape Room Private Parties in CITY - All In Adventures",
+          "description":"Join us at MALL. Adventure awaits for all - your family, friends, office, indoor party, church group, fraternity or sorority. Book Now",
+          "keywords":"private events near me MALL, private party in escape room MALL, escape room for private party MALL, private party place for fun MALL, private party venues MALL, private party activities MALL, private party things to do near me MALL, private party activities to do near me MALL, private event party escape room near me CITY, private party place near me CITY, events for private party place near me CITY, private party venues nearby CITY, private party activities near me CITY, escape room for private party CITY",
+          "url":"/events/private-party",
+          "metaindex":true,
+          "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-private-party-hero.jpg"
+        },
     
      "eventdata":{
       "why_book":"We work to make each escape room private party a unique experience for you and your guests. Whether you are in a corporate office looking for an exciting team-building activity, or a group of friends looking for a mental workout, our escape rooms give you the challenge you're seeking. All In Adventures is great for all types of groups and is a memorable way to come together for fun!",
@@ -1050,12 +1069,14 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                      "max_players":"70",
                      "min_players":"2",
     
-                   "pagemeta":{
-                  
-                     "matatilte":"title",
-                     "metakeyword":"keywords",
-                     "metadescription":"metadescription"
-                   },
+                     "pagemeta":{
+                      "title":"Escape Room Reunion Party in CITY - All In Adventures",
+                      "description":"Join us at MALL. Each game is interactive and has engaging qualities that give your reunion party an epic adventure! Book Now",
+                      "keywords":"reunion events near me MALL, reunion party in escape room MALL, escape room for reunion party MALL, reunion party place for fun MALL, reunion party venues MALL, reunion party activities MALL, reunion party things to do near me MALL, reunion party activities to do near me MALL, reunion event party escape room near me CITY, reunion party place near me CITY, events for reunion party place near me CITY, reunion party venues nearby CITY, reunion party activities near me CITY, escape room for reunion party CITY",
+                      "url":"/events/reunion-party",
+                      "metaindex":true,
+                      "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-reunion-party-hero.jpg"
+                    },
                  
                    "eventdata":{
                     "why_book":"Bring together your entire extended family for an unforgettable reunion! Whether you all work cooperatively, or pit family versus family in an epic battle of the minds, our escape rooms are a thrilling way to enjoy your time together! With difficulties for all ages and skill levels, All in Adventures is a cross-generational, memory-making experience!",
@@ -1156,11 +1177,13 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                      "min_players":"2",
     
                      "pagemeta":{
-                    
-                       "matatilte":"title",
-                       "metakeyword":"keywords",
-                       "metadescription":"metadescription"
-                     },
+                      "title":"Escape Room Graduation Party in CITY - All In Adventures",
+                      "description":"Join us at MALL. Graduation is such an exciting time, no matter your age and you deserve to celebrate it in a memorable way. Book Now",
+                      "keywords":"graduation events near me MALL, graduation party in escape room MALL, escape room for graduation party MALL, graduation party place for fun MALL, graduation party venues MALL, graduation party activities MALL, graduation party things to do near me MALL, graduation party activities to do near me MALL, graduation event party escape room near me MALL, graduation party place near me CITY, events for graduation party place near me CITY, graduation party venues nearby CITY, graduation party activities near me CITY, escape room for graduation party CITY",
+                      "url":"/events/graduation-party",
+                      "metaindex":true,
+                      "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-graduation-party-hero.jpg"
+                    },
                    
                      "eventdata":{
                       "why_book":"Our unique escape room experiences are a perfect addition to your graduation party! Your school of scholars will have to bring their sharp minds and keen intuition if they're to have any chance at escaping! Pick a room theme that best fits their interest and let us know if there's something special you'd like done for your graduate!",
@@ -1260,12 +1283,14 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                      "max_players":"70",
                      "min_players":"2",
     
-                       "pagemeta":{
-                      
-                         "matatilte":"title",
-                         "metakeyword":"keywords",
-                         "metadescription":"metadescription"
-                       },
+                     "pagemeta":{
+                      "title":"Escape Room School Events in CITY - All In Adventures",
+                      "description":"Join us at MALL. Students exercise critical thinking and act to become the super-spies they see in the movies! Book Now",
+                      "keywords":"school events near me MALL, school party in escape room MALL, escape room for school party MALL, school party place for fun MALL, school party venues MALL, school party activities MALL, school party things to do near me MALL, school party activities to do near me MALL, school event party escape room near me CITY, school party place near me CITY, events for school party place near me CITY, school party venues nearby CITY, school party activities near me CITY, escape room for school party CITY",
+                      "url":"/events/school-events",
+                      "metaindex":true,
+                      "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-school-events-hero.jpg"
+                    },
                      
                        "eventdata":{
                         "why_book":"Problem-solving, critical thinking, and observational awareness - all important skills for growing young minds to strengthen. Our escape rooms will require your students to work together for an exciting intellectual challenge that's more than your average field trip! With rooms that pair well with historical and literary themes, you can effortlessly weave them into your lesson plan!",
@@ -1365,12 +1390,14 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                      "max_players":"70",
                      "min_players":"2",
     
-                      "pagemeta":{
-                      
-                        "matatilte":"title",
-                        "metakeyword":"keywords",
-                        "metadescription":"metadescription"
-                      },
+                     "pagemeta":{
+                      "title":"Escape Room Gender Reveal Party in CITY - All In Adventures",
+                      "description":"Join us at MALL. Instead of simply sharing the news of your baby's gender, why not announce it through fun puzzles? Book Now",
+                      "keywords":"gender reveal party place MALL, gender reveal party venue MALL, escape room gender reveal party MALL, gender reveal party places MALL, gender reveal party place near me MALL, gender reveal party venue nearby CITY, gender reveal party in escape room CITY, gender reveal party CITY",
+                      "url":"/events/gender-reveal-party",
+                      "metaindex":true,
+                      "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-gender-reveal-party-hero.jpg"
+                    },
                     
                        "eventdata":{
                         "why_book":"We provide a unique atmosphere where parents make gender reveal parties a memorable family event. The big surprise awaits your party at the conclusion of your game with the final box being packed with your ideal way of announcing the gender of your baby! Pick a room theme and let us know if there's something special you'd like done for your reveal!",
@@ -1461,9 +1488,77 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                        },
     //********************************************************school-events end */
     }
+     // SEO FUNCTION===========
+   const capCity=(str,lslug)=>{
+    var cityArr=lslug.split('-')
+    if(cityArr[0]=="n" || cityArr[0]=="N"){
+      cityArr[0]="North"
+    }
+    var citySt=cityArr[cityArr.length-1].toString().toUpperCase()
+   
+    cityArr=cityArr.slice(0,-1)
+    var x
+
+    for(x=0;x<cityArr.length;x++){
+
+        var upc=cityArr[x].charAt(0).toUpperCase()
+        var nnsp=cityArr[x].substring(0,0) + upc + cityArr[x].substring(0+1)
+        cityArr[x]= nnsp
+    }
+    var upcity=cityArr.join(' ')+' '+citySt
+
+   return str.replaceAll('CITY', upcity)
+
+
+ }
+ const lowCityMAll=(str,slug,mall)=>{
+  var locn=slug.split('-')
+  if(locn[0]=="n" || locn[0]=="N"){
+    locn[0]="North"
+  }
+  var upmall=mall.toLowerCase()
+  var upcity=locn.join(' ')
+
+ return str.replaceAll('CITY', upcity).replaceAll('MALL', upmall)
+ 
+
+
+}
+ const capMall=(str,mall)=>{
+  var mallArr=mall.split(' ')
+  var appArr=['to','at','in','for','of','it','a','an']
+ 
+  var y
+
+  for(y=0;y<mallArr.length;y++){
+    if(!appArr.includes(mallArr[y]) && mallArr[y]!='USA'){
+      if(mallArr[y]=='usa'){
+        mallArr[y]==mallArr[y].toUpperCase()
+      }
+      var upc=mallArr[y].charAt(0).toUpperCase()
+      var nnsp=mallArr[y].substring(0,0) + upc + mallArr[y].substring(0+1)
+      
+      mallArr[y]= nnsp
+    }
+    
+      
+  }
+  var capmall=mallArr.join(' ')
+
+ return str.replaceAll('MALL', capmall)
+ }
+// SEO FUNCTION end===========
  // return page data  events data
      const eventData={
-         "pagemeta":eventlocdata[eventslug].pagemeta,
+         //"pagemeta":eventlocdata[eventslug].pagemeta,
+         "pagemeta":{
+          "title":capCity(eventlocdata[eventslug].pagemeta.title,locationslug),
+          "description":capMall(eventlocdata[eventslug].pagemeta.description,getLocSpec(locationslug).mall),
+          "keywords":lowCityMAll(eventlocdata[eventslug].pagemeta.keywords,locationslug,getLocSpec(locationslug).mall),
+          "url":"/"+locationslug+eventlocdata[eventslug].pagemeta.url,
+          "metaindex":eventlocdata[eventslug].pagemeta.metaindex,
+          "metaimg":eventlocdata[eventslug].pagemeta.metaimg
+        },
          "locationlist":getLocTotal(locationslug).locationlist,
          "eventlistSlug":getLocTotal(locationslug).eventlistSlug,
             

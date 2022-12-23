@@ -54,7 +54,7 @@ export const getLocationIndActivityList=(slug)=>{
 
         var nsp=spLoc.split(' ')
         var x
-
+        var appArr=['to','at','in','for','of','it','a','an']
         for(x=0;x<nsp.length;x++){
 
             var upc=nsp[x].charAt(0).toUpperCase()
@@ -72,23 +72,51 @@ export const getLocationIndActivityList=(slug)=>{
         var x
 
         for(x=0;x<capstr.length;x++){
-
-            var upc=capstr[x].charAt(0).toUpperCase()
+            if(capstr[x]!='usa'){
+                var upc=capstr[x].charAt(0).toUpperCase()
             var nnsp=capstr[x].substring(0,0) + upc + capstr[x].substring(0+1)
             capstr[x]= nnsp
+            }
+            else{
+                capstr[x]= capstr[x].toUpperCase()
+            }
+            
         }
 
         return capstr.join(' ')
 
      }
+     const capMall=(mall)=>{
+        var mallArr=mall.split(' ')
+        var appArr=['to','at','in','for','of','it','a','an']
+       
+        var y
+    
+        for(y=0;y<mallArr.length;y++){
+          if(!appArr.includes(mallArr[y]) && mallArr[y]!='USA'){
+            if(mallArr[y]=='usa'){
+              mallArr[y]==mallArr[y].toUpperCase()
+            }
+            var upc=mallArr[y].charAt(0).toUpperCase()
+            var nnsp=mallArr[y].substring(0,0) + upc + mallArr[y].substring(0+1)
+            
+            mallArr[y]= nnsp
+          }
+          
+            
+        }
+        var capmall=mallArr.join(' ')
+    
+       return capmall
+       }
 const bookingAll=bookingList('',slug)
     
     const data={
         "pagemeta":{
 
-                "title":"All Escape Rooms in "+getLocationSearchNameLw(slug)+" - All In Adventures at "+capCase(LocActivityData[slug].mall),
+                "title":"All Escape Rooms in "+getLocationSearchNameLw(slug)+" - All In Adventures at "+capMall(LocActivityData[slug].mall),
                 "description":"All In Adventures, formerly Mystery Room, run live escape rooms and other games in "+getLocationSearchNameLw(slug)+". Choose from many escape rooms at "+LocActivityData[slug].mall+" location.",
-                "keywords":"all games albany, all games "+getLocationSearchNameLw(slug).toLocaleLowerCase()+", all escape rooms "+getLocationSearchNameLw(slug).toLocaleLowerCase()+", all escape games "+getLocationSearchNameLw(slug).toLocaleLowerCase()+", all games crossgates mall, all games "+LocActivityData[slug].mall.toLowerCase()+", all escape rooms "+LocActivityData[slug].mall.toLowerCase()+", all escape games "+LocActivityData[slug].mall.toLowerCase()+", all in adventures all games "+LocActivityData[slug].mall.toLowerCase()+" "+getLocationSearchNameLw(slug).toLocaleLowerCase()+", mystery room all games "+LocActivityData[slug].mall.toLowerCase()+" "+getLocationSearchNameLw(slug).toLocaleLowerCase(),
+                "keywords":"all games albany, all games "+getLocationSearchNameLw(slug).toLowerCase()+", all escape rooms "+getLocationSearchNameLw(slug).toLowerCase()+", all escape games "+getLocationSearchNameLw(slug).toLowerCase()+", all games crossgates mall, all games "+LocActivityData[slug].mall.toLowerCase()+", all escape rooms "+LocActivityData[slug].mall.toLowerCase()+", all escape games "+LocActivityData[slug].mall.toLowerCase()+", all in adventures all games "+LocActivityData[slug].mall.toLowerCase()+" "+getLocationSearchNameLw(slug).toLowerCase()+", mystery room all games "+LocActivityData[slug].mall.toLowerCase()+" "+getLocationSearchNameLw(slug).toLowerCase(),
                 "url":"/"+slug+"/activities",
                 "metaindex":true,
                 "metaimg":"/assets/all-game-mobile-hero/allinadventures-all-game-page-hero--mobile.jpg"

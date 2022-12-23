@@ -3,12 +3,11 @@
 import Footer from '../../../comps/Footer';
 import Homenav from '../../../comps/Homenav';
 
-import Head from 'next/head';
-
 import { getLocationIndActivityList } from '../../api/LocationIndData/getLocationIndActivityList';
 import GameLocHero from '../../../comps/activitiyPageComps/GameLocHero';
 import GameLocList from '../../../comps/activitiyPageComps/GameLocList';
 import BreadcumNew from '../../../comps/util/BreadcumNew';
+import Seofields from '../../../comps/util/SeoFields';
 
 const LocActivity=(props)=>{
    
@@ -30,6 +29,7 @@ const LocActivity=(props)=>{
  
      return (
          <>
+         <Seofields meta={props.pagemeta}/>
              <Homenav locationslug={props.pagedata.locationslug} 
                       bookingall={props.pagedata.bookingall}
                       eventbooking={props.pagedata.eventbooking} 
@@ -41,12 +41,7 @@ const LocActivity=(props)=>{
                  <div id="mainContent" className='main-content'>
  
                  {/* =======header content and breadcum======== */}
-                             <Head>
-                                 <title>All in adventure Locations</title>
-                                 <meta name="description" content="All in one adventure escape games" />
-                                 
- 
-                               </Head>
+                            
                                <div className='breadcum py-1 md:py-1 lg:py-3 bg-[#fffceb]'>
                                     <BreadcumNew/>
                                  </div>
@@ -72,13 +67,10 @@ const LocActivity=(props)=>{
 export default LocActivity
 
 export const getStaticProps=async(context)=>{
-    //var router = useRouter()
-   // routerSlug=routerSlug.split('-')
+    
   
     const locationHomedata=getLocationIndActivityList("west-nyack-ny")
    
-    console.log(locationHomedata)
-
     return{
         props:{
           pagedata:locationHomedata.pagedata,

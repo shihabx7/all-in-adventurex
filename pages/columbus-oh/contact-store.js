@@ -25,6 +25,7 @@ const ViewContactStore=(props)=>{
 
     return(
         <>
+        <Seofields meta={props.pagemeta}/>
             <Homenav locationslug={props.pagedata.locationslug}
                      location={getLoc(props.pagedata.locationslug)}
                      eventbooking={props.pagedata.eventbooking}
@@ -36,12 +37,7 @@ const ViewContactStore=(props)=>{
                  <div id="mainContent" className='main-content'>
  
                  {/* =======header content and breadcum======== */}
-                                <Head>
-                                 <title>All in adventure Locations</title>
-                                 <meta name="description" content="All in one adventure escape games" />
-                                 
- 
-                               </Head>
+             
                                <div className='breadcum py-1 md:py-1 lg:py-3 bg-[#fffceb]'>
                                     <BreadcumNew/>
                                  </div>

@@ -7,12 +7,16 @@ export const getCovidPageData=()=>{
          "activitylistSlug":getTotal().activitylistSlug,
           "eventlistSlug":getTotal().eventlistSlug,
           "virtualgameListSlug":getTotal().virtualgameSlug,
-        "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
+          "pagemeta":{
+  
+            "title":"Covid-19 | All In Adventures | Formerly Mystery Room",
+            "description":"We are taking a very careful and thoughtful approach to reopening and have made many changes to our operations to ensure everyone feels safe and comfortable.",
+            "keywords":"covid 19 all in adventures, covid 19 mystery room",
+            "url":"/covid-19",
+            "metaindex":false,
+            "metaimg":"/assets/home-hero.jpg"
           },
+     
            
           "pagedata": {
                         

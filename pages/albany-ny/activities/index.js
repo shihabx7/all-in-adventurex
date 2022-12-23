@@ -3,8 +3,6 @@
 import Footer from '../../../comps/Footer';
 import Homenav from '../../../comps/Homenav';
 
-import Head from 'next/head';
-
 import { getLocationIndActivityList } from '../../api/LocationIndData/getLocationIndActivityList';
 import GameLocHero from '../../../comps/activitiyPageComps/GameLocHero';
 import GameLocList from '../../../comps/activitiyPageComps/GameLocList';

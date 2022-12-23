@@ -80,15 +80,15 @@ const BuyLocGift=(props)=>{
                                     }
                                     {
                                         props.locationslug &&
-                                        <Link href={"/"+props.locationslug+"/activities"}>
-                                              <a className="bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full uppercase">View All Games</a>
-                                         </Link>
+                                        
+                                              <a href={"/"+props.locationslug+"/activities"} className="bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full uppercase">View All Games</a>
+                                       
                                     }
                                     {
                                         !props.locationslug &&
-                                        <Link href="/activities">
-                                              <a className="bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full uppercase">View All Games</a>
-                                        </Link>
+                                      
+                                              <a href="/activities" className="bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full uppercase">View All Games</a>
+                                       
                                     }
                                     
 

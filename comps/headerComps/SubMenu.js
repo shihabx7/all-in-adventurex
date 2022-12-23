@@ -36,7 +36,7 @@ const SubMenu=(props)=>{
     
     return(
 
-        <div className="flex flex-col md:flex-row submenu-box md:justify-between pb-[140px] pt-4 md:pb-12 md:pt-10 overflow-scroll md:overflow-hidden h-screen md:h-auto " style={
+        <div className="flex flex-col md:flex-row submenu-box md:justify-between pb-[170px] pt-4 md:pb-12 md:pt-10 overflow-scroll md:overflow-hidden h-screen md:h-auto " style={
             {
               backgroundImage : "url(/assets/submenu-bg.png),linear-gradient(#111111,#111111)",
             }

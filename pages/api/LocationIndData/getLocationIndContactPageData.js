@@ -41,23 +41,70 @@ export const getLocationIndContactPageData=(locationslug)=>{
       return ret
     }
 
-    const getLocationSearchName=(slug)=>{
-      var locs=slug.split("-")
-      if(locs[0]=="n"){
-        locs[0]="n."
+    const capCity=(locname)=>{
+      var spLoc=locname.split("-")
+      if(spLoc[0]=="n" || spLoc[0]=="N"){
+        spLoc[0]='North'
       }
-      var st=locs[locs.length-1].toString()
-      locs=locs.slice(0,-1)
-      locs=locs.join(' ')
+      var st=spLoc[spLoc.length-1].toString()
+      spLoc=spLoc.slice(0,-1)
+      var x
 
-      return locs+", "+st
-   }
+      for(x=0;x<spLoc.length;x++){
+
+          var upc=spLoc[x].charAt(0).toUpperCase()
+          var nnsp=spLoc[x].substring(0,0) + upc + spLoc[x].substring(0+1)
+          spLoc[x]= nnsp
+      }
+      spLoc=spLoc.join(' ')
+      
+      var ret=spLoc+" "+st.toUpperCase()
+      return ret
+    }
+    const lowCity=(locname)=>{
+      var spLoc=locname.split("-")
+      if(spLoc[0]=="n" || spLoc[0]=="N"){
+        spLoc[0]='North'
+      }
+     
+      spLoc=spLoc.join(' ')
+      
+     
+      return spLoc
+    }
+
+    const capMall=(mall)=>{
+      var mallArr=mall.split(' ')
+      var appArr=['to','at','in','for','of','it','a','an']
+     
+      var y
+  
+      for(y=0;y<mallArr.length;y++){
+        if(!appArr.includes(mallArr[y]) && mallArr[y]!='USA'){
+          if(mallArr[y]=='usa'){
+            mallArr[y]==mallArr[y].toUpperCase()
+          }
+          var upc=mallArr[y].charAt(0).toUpperCase()
+          var nnsp=mallArr[y].substring(0,0) + upc + mallArr[y].substring(0+1)
+          
+          mallArr[y]= nnsp
+        }
+        
+          
+      }
+      var capmall=mallArr.join(' ')
+  
+     return capmall
+     }
     const contactPageData={
         "pagemeta":{
 
-            "title":"All in adventure contact store | escape room in "+locnameMod(locationslug),
-            "description":"Contact escape room in "+locnameMod(locationslug),
-            "keywords":"escape room, escape room contact, escape room in "+locnameMod(locationslug)
+            "title":"Contact Store - All In Adventures in "+capCity(locationslug),
+            "description":"Our team is here to help you. Contact our store in "+capCity(locationslug)+" at "+capMall(getLocSpec(locationslug).mall)+" with any questions you have about an upcoming or previous experience.",
+            "keywords":"all in adventures albany ny, allinadventures "+lowCity(locationslug)+", all in adventure "+lowCity(locationslug)+", allinadventure "+lowCity(locationslug)+", mystery room "+lowCity(locationslug)+", mysteryroom "+lowCity(locationslug)+", mystery rooms "+lowCity(locationslug)+", mysteryrooms "+lowCity(locationslug)+", escape room near me "+lowCity(locationslug)+", escape rooms near me "+lowCity(locationslug)+", escape rooms "+lowCity(locationslug)+", escaperooms "+lowCity(locationslug)+",escape room near by "+lowCity(locationslug)+", escape room albany ny, escaperoom "+lowCity(locationslug)+", escape games "+lowCity(locationslug)+", escapegames "+lowCity(locationslug)+", escape game "+lowCity(locationslug)+", escapegame "+lowCity(locationslug)+", family friendly escape rooms "+lowCity(locationslug)+", kids friendly escape rooms "+lowCity(locationslug)+", birthday party "+lowCity(locationslug)+", birthday party places "+lowCity(locationslug)+", birthday party venue "+lowCity(locationslug)+", team building "+lowCity(locationslug)+", team building activities "+lowCity(locationslug)+",",
+            "url":"/"+locationslug+"/contact-store",
+            "metaindex":true,
+            "metaimg":"/assets/gn-mobile-hero/allinadventures-store-contact-hero.jpg"
           },
            
         "pagedata":{

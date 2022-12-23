@@ -10,6 +10,7 @@ import GiftFaq from "../../comps/giftCardPageComps/GiftFaq";
 import WhyAdvGiftCards from '../../comps/giftCardPageComps/WhyAdvGiftCards';
 
 import BuyLocGift from '../../comps/activitiyPageComps/BuyLocGift';
+import Seofields from '../../comps/util/SeoFields';
 
 const viewLocGift=(props)=>{
    
@@ -27,6 +28,7 @@ const viewLocGift=(props)=>{
 
     return(
         <>
+        <Seofields meta={props.pagemeta}/>
             <Homenav locationslug={props.pagedata.locationslug} 
                      bookinggame={props.pagedata.bookingdata}
                      eventbooking={props.pagedata.eventbooking}
@@ -39,12 +41,7 @@ const viewLocGift=(props)=>{
                  <div id="mainContent" className='main-content'>
  
                  {/* =======header content and breadcum======== */}
-                                <Head>
-                                 <title>All in adventure Locations</title>
-                                 <meta name="description" content="All in one adventure escape games" />
-                                 
- 
-                               </Head>
+                               
                                <div className='breadcum py-1 md:py-1 lg:py-3 bg-[#fffceb]'>
                                     <BreadcumNew/>
                                  </div>
@@ -70,13 +67,10 @@ const viewLocGift=(props)=>{
 export default viewLocGift
 
 export const getStaticProps=async()=>{
-    //var router = useRouter()
-   // routerSlug=routerSlug.split('-')
+  
   
     const locationGiftdata=getLocationIndGiftPageData("poughkeepsie-ny")
    
-    
-
     return{
         props:{
           pagedata:locationGiftdata.pagedata,

@@ -3,7 +3,7 @@
 import Footer from '../../comps/Footer';
 import Homenav from '../../comps/Homenav';
 import BreadcumNew from '../../comps/util/BreadcumNew';
-import Head from 'next/head';
+
 import { getLocationIndContactPageData } from '../api/LocationIndData/getLocationIndContactPageData';
 import ContactLocHero from '../../comps/activitiyPageComps/ContactLocHero';
 import StoreContact from '../../comps/contactComps/StoreContact';
@@ -28,6 +28,7 @@ const ViewContactStore=(props)=>{
 
     return(
         <>
+        <Seofields meta={props.pagemeta}/>
             <Homenav locationslug={props.pagedata.locationslug}
                      location={getLoc(props.pagedata.locationslug)}
                       bookingall={props.pagedata.bookingall}
@@ -39,12 +40,7 @@ const ViewContactStore=(props)=>{
                  <div id="mainContent" className='main-content'>
  
                  {/* =======header content and breadcum======== */}
-                                <Head>
-                                 <title>All in adventure Locations</title>
-                                 <meta name="description" content="All in one adventure escape games" />
-                                 
- 
-                               </Head>
+                                
                                <div className='breadcum py-1 md:py-1 lg:py-3 bg-[#fffceb]'>
                                     <BreadcumNew/>
                                  </div>
@@ -55,9 +51,6 @@ const ViewContactStore=(props)=>{
                          <StoreContact contactdata={props.contactdata}/>
                          
                        
-                         
-                            
- 
                  </div>
  
              <Footer  location={getLoc(props.pagedata.locationslug)} locationlist={props.locationlist} totallocations={props.totalLocations}/>
@@ -69,8 +62,7 @@ const ViewContactStore=(props)=>{
 export default ViewContactStore
 
 export const getStaticProps=async()=>{
-    //var router = useRouter()
-   // routerSlug=routerSlug.split('-')
+    
   
     const locationContactdata=getLocationIndContactPageData("n-attleborough-ma")
    

@@ -6,12 +6,15 @@ export const getPrivacyPageData=()=>{
       "activitylistSlug":getTotal().activitylistSlug,
        "eventlistSlug":getTotal().eventlistSlug,
        "virtualgameListSlug":getTotal().virtualgameSlug,
-        "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+       "pagemeta":{
+  
+                  "title":"Privacy Policy | All In Adventures | Formerly Mystery Room",
+                  "description":"Our Privacy Policy explains how we handle Personal Information provided to us through our Games (including our online virtual experience) and websites.",
+                  "keywords":"escape room privacy policy, all in adventures privacy policy, mystery room privacy policy,",
+                  "url":"/privacy-policy",
+                  "metaindex":false,
+                  "metaimg":"/assets/gn-mobile-hero/All-In-Adventures-Generic-Hero-Image-Mobile.jpg"
+                },
            
           "pagedata": {
                         

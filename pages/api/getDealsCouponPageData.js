@@ -27,8 +27,8 @@ export const getDealsCouponPageData=()=>{
                    "id":1,
                    "category":"deals",
                    "group":"deals",
-                    "ques":"Does the program cost anything?",
-                   "ans":["All In Adventure is the world's No. 1 fastest growing escape-the-room franchise. It is a high adrenaline escape game where players are locked inside a themed room and must complete their mission before time runs out. During the 60-minute experience players are immersed into a real-life adventure where they must find hidden clues, crack codes."],
+                    "ques":"How can I get a discount?",
+                   "ans":["Glad you asked! Our best offers come from our VIP Rewards Program where you will receive points each time you play that you can use to redeem free experiences and receive additional surprise offers every month! In addition, we offer many other discounts such as our Play It Again offer or our military or mall employee discounts."],
                    
 
              },
@@ -36,36 +36,55 @@ export const getDealsCouponPageData=()=>{
                "id":2,
                "category":"deals",
                "group":"deals",
-               "ques":"Can I join online?",
-               "ans":["All In Adventure is the world's No. 1 fastest growing escape-the-room franchise. It is a high adrenaline escape game where players are locked inside a themed room and must complete their mission before time runs out. During the 60-minute experience players are immersed into a real-life adventure where they must find hidden clues, crack codes."],
+               "ques":"How do I use my discounts?",
+               "ans":["Many offers will have a promotional code that can be applied to your cart during the checkout process. Some promotions are only available in-store and must be applied by one of our team members. If you have any issues, please contact your local All In Adventures store for further assistance."],
                
 
                 },
                 {
-                   "id":4,
+                   "id":3,
                    "category":"deals",
                    "group":"deals",
-                   "ques":"What skills do I need to play?",
-                   "ans":["All In Adventure is the world's No. 1 fastest growing escape-the-room franchise. It is a high adrenaline escape game where players are locked inside a themed room and must complete their mission before time runs out. During the 60-minute experience players are immersed into a real-life adventure where they must find hidden clues, crack codes."],
+                   "ques":"It's my birthday! Do you have any discounts for me?",
+                   "ans":["Yes! By signing up for our VIP Rewards Program, you will earn a FREE admission on your birthday each year! Choose a location here to sign up."],
                    
 
                     },
                     {
-                       "id":5,
+                       "id":4,
                        "category":"deals",
                        "group":"deals",
-                       "ques":"May I leave the room in the middle of the game?",
-                       "ans":["All In Adventure is the world's No. 1 fastest growing escape-the-room franchise. It is a high adrenaline escape game where players are locked inside a themed room and must complete their mission before time runs out. During the 60-minute experience players are immersed into a real-life adventure where they must find hidden clues, crack codes."],
+                       "ques":"I am already a VIP Rewards Member. How many discounts can I use at one time?",
+                       "ans":["Yes! By signing up for our VIP Rewards Program, you will earn a FREE admission on your birthday each year! Choose a location here to sign up."],
                     },
                    {
-                     "id":6,
+                     "id":5,
                      "category":"deals",
                      "group":"deals",
                      "ques":"What if we need help during the game?",
-                     "ans":["All In Adventure is the world's No. 1 fastest growing escape-the-room franchise. It is a high adrenaline escape game where players are locked inside a themed room and must complete their mission before time runs out. During the 60-minute experience players are immersed into a real-life adventure where they must find hidden clues, crack codes."],
+                     "ans":["You can only use one offer at a time per transaction."],
                            
        
-                   }
+                   },
+                   {
+                    "id":6,
+                    "category":"deals",
+                    "group":"deals",
+                    "ques":"Do you have any discounts for first responders?",
+                    "ans":["Absolutely! We invite you to take advantage of our Military discount. Just show proof of employment upon arriving for your booking!"],
+                          
+      
+                  },
+                   {
+                    "id":7,
+                    "category":"deals",
+                    "group":"deals",
+                    "ques":"What if we need help during the game?",
+                    "ans":["We do! Please check out our events page here for more information and group rates. Have more questions? Reach out to us at <a href=\"mailto:sales@allinadventures.com\" class=\"text-gold hover:text-blue-700\"> sales@allinadventures.com</a> for additional help."],
+                          
+      
+                  },
+                
                 ],
 
                 "couponlist":[

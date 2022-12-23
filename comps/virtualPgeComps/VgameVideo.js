@@ -27,8 +27,8 @@ const VgameVideo=(props)=>{
                                 <div className="vid-tumb absolute top-0 left-0 w-full h-full overflow-hidden">
                                 <div className="vid-thubb-play relative w-full h-full"> 
                                         <img className="w-full" src={props.videothumb}/>
-                                        <div onClick={()=>{setPlayVid(true)}} className="cursor-pointer text-[28px] md:text-[36px] lg:text-[44px] vid-play-btn w-[60px] h-[60px] md:w-[96px] md:h-[96px] lg:w-[104px] lg:h-[104px] rounded-full bg-[#000000] text-red-600 z-10 absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center" style={{margin:"auto"}}>
-                                                <ImPlay3/>
+                                        <div onClick={()=>{setPlayVid(true)}} className="cursor-pointer text-[40px] md:text-[60px] lg:text-[72px] vid-play-btn w-[60px] h-[60px] md:w-[104px] md:h-[104px] lg:w-[116px] lg:h-[116px] rounded-full bg-[#000000] text-red-600 z-10 absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center" style={{margin:"auto"}}>
+                                                <ImPlay3 className="ml-2"/>
                                         </div>
                                 </div>
                                 
@@ -54,12 +54,11 @@ const VgameVideo=(props)=>{
                 <div className="game-b-btnbox mt-8 md:mt-16 lg:mt-20">
                         
                              <div className="game-btn-all ">
-                                 <Link href="/virtual-games/" hpassHref>
-                                   <a className="max-w-[290px] md:max-w-[320px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-white font-medium border-2 border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 rounded-full text-center">View All Virtual Games</a>
-                                 </Link>
-                                 <Link href="/activities/" hpassHref>
-                                     <a className="max-w-[290px] md:max-w-[320px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-[#424242] hover:text-white font-medium border-2 border-red-600 hover:border-red-700 hover:bg-red-700 rounded-full text-center">View All Escape Games</a>
-                                  </Link>
+                                 
+                                   <a href="/virtual-games/" className="max-w-[290px] md:max-w-[320px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-white font-medium border-2 border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 rounded-full text-center">View All Virtual Games</a>
+                                 
+                                     <a href="/activities/" className="max-w-[290px] md:max-w-[320px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-[#424242] hover:text-white font-medium border-2 border-red-600 hover:border-red-700 hover:bg-red-700 rounded-full text-center">View All Escape Games</a>
+                                  
                              </div>
 
                         

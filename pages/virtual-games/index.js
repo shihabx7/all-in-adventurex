@@ -1,5 +1,4 @@
 
-import Head from "next/dist/shared/lib/head";
 import Homenav from "../../comps/Homenav";
 import Footer from "../../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
@@ -9,6 +8,7 @@ import { FiChevronRight } from "react-icons/fi";
 import { getVirtualGamesHomePageData } from "../api/VirtualGames/getVirtualGamesHomePageData";
 import VirtualHero from "../../comps/virtualPgeComps/VirtualHero";
 import VirtualGameList from "../../comps/virtualPgeComps/VirtualGameList";
+import Seofields from "../../comps/util/Seofields";
 
 const VirtualEscapeGames=(props)=>{
     /* custom breadcum code */
@@ -26,11 +26,7 @@ const VirtualEscapeGames=(props)=>{
           return(
               <>
                   {/* =======header content======== */}
-               <Head>
-                     <title>All in adventure | Virtual Escape Games</title>
-                      <meta name="description" content="All in adventure escape games" />
-            
-              </Head>
+               <Seofields meta={props.pagemeta}/>
                <Homenav locationlist={props.locationlist} 
                 activitylist={props.activitylist}
                 eventlist={props.eventlist}/>
@@ -51,19 +47,7 @@ const VirtualEscapeGames=(props)=>{
              {/* =======breadcum content and breadcum root page template======== end */}
              <VirtualHero pagedata={props.pagedata}/>
              <VirtualGameList vgamelist={props.vgamelist}/>
-             
-       
-    
-    {
-        console.log(props)
-    }
-                
-             
-                
             
-      
-    
-    
       {/* =========================================================================================main content ======== end */}
             </div>
       

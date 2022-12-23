@@ -7,11 +7,14 @@ export const getVirtualGamesHomePageData=()=>{
         "activitylistSlug":getTotal().activitylistSlug,
          "eventlistSlug":getTotal().eventlistSlug,
          "virtualgameListSlug":getTotal().virtualgameSlug,
-        "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
+         "pagemeta":{
+  
+            "title":"All Virtual Escape Rooms and Game Show | All In Adventures",
+            "description":"Enjoy the adventure and thrills of an Escape Room and Game Show Room with friends from all different parts of the world without needing to gather in person.virtual escape room, online escape room, remote escape room",
+            "keywords":"virtual escape room, online escape room, remote escape room",
+            "url":"/virtual-games",
+            "metaindex":true,
+            "metaimg":"/assets/all-game-mobile-hero/All-virutal-Game-Page-Hero-Image-mobile.jpg"
           },
            
           "pagedata": {

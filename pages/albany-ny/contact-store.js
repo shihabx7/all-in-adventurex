@@ -1,9 +1,9 @@
-import { useRouter } from 'next/router'
+
 
 import Footer from '../../comps/Footer';
 import Homenav from '../../comps/Homenav';
 import BreadcumNew from '../../comps/util/BreadcumNew';
-import Head from 'next/head';
+
 import { getLocationIndContactPageData } from '../api/LocationIndData/getLocationIndContactPageData';
 import GameLocHero from '../../comps/activitiyPageComps/GameLocHero';
 import StoreContact from '../../comps/contactComps/StoreContact';
@@ -26,6 +26,7 @@ const ViewContactStore=(props)=>{
 
     return(
         <>
+        <Seofields meta={props.pagemeta}/>
             <Homenav locationslug={props.pagedata.locationslug}
                      location={getLoc(props.pagedata.locationslug)}
                       bookingall={props.pagedata.bookingall}
@@ -37,7 +38,7 @@ const ViewContactStore=(props)=>{
                  <div id="mainContent" className='main-content'>
  
                  {/* =======meta content and breadcum======== */}
-                                <Seofields meta={props.pagemeta}/>
+                                
                                <div className='breadcum py-1 md:py-1 lg:py-3 bg-[#fffceb]'>
                                     <BreadcumNew/>
                                  </div>

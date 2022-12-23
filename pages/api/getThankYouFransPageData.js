@@ -1,5 +1,5 @@
 import { getTotal } from "./AllDataList/getTotal"
-export const getThankYouPageData=()=>{
+export const getThankYouFransPageData=()=>{
 
     const data={
       "locationlist":getTotal().locationlist,
@@ -8,9 +8,9 @@ export const getThankYouPageData=()=>{
        "virtualgameListSlug":getTotal().virtualgameSlug,
        "pagemeta":{
   
-                  "title":"Thank You (Corporate) | All In Adventures",
+                  "title":"Thank You (Franchise) | All In Adventures",
                   "description":"Your submission has been received. We will get in touch with you shortly.",
-                  "keywords":"thank you corporate",
+                  "keywords":"thank you franchise",
                   "url":"/Thank-you",
                   "metaindex":false,
                   "metaimg":"/assets/gn-mobile-hero/All-In-Adventures-Generic-Hero-Image-Mobile.jpg"

@@ -145,7 +145,7 @@ const ProjectTimeLine=()=>{
                             <div className="step-tab-item flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 items-center justify-between" >
                                 <div className="md:w-[54%] lg:w-[60%] order-2 md:order-1 mt-4 md:mt-0">
                                     <p className="lg:text-lg text-[#938056]">1-12 WEEKS</p> 
-                                    <h3 className="font-os golden-text font-bold text-2xl md:text-3xl">TRANING</h3>
+                                    <h3 className="font-os golden-text font-bold text-2xl md:text-3xl">TRAINING</h3>
                                     <div className="tab-text mt-4 md:mt-6 lg:mt-8 ">
                                        <ul className="star-list pl-6 lg:text-lg">
                                             <li className="my-3 lg:my-4 text-[#464646]">Hiring and training employees</li>

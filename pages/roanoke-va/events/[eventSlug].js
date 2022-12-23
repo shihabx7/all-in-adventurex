@@ -1,7 +1,6 @@
 import Footer from '../../../comps/Footer';
 import Homenav from '../../../comps/Homenav';
 
-import Head from 'next/head';
 import BreadcumNew from '../../../comps/util/BreadcumNew';
 import { getSingleEventPageData } from "../../api/LocationIndData/getSingleEventPageData"
 import { getLocationEventSlugList } from "../../api/LocationIndData/getLocationEventSlugList"
@@ -9,11 +8,13 @@ import EventLocHero from '../../../comps/eventPageComps/EventLocHero';
 import EventDetails from '../../../comps/eventPageComps/EventDetails';
 import EventContact from '../../../comps/eventPageComps/EventContact';
 import HomeReviewSlider from '../../../comps/homepagecomps/HomeReviewSlider';
+import Seofields from '../../../comps/util/SeoFields';
 const LocationSingleEvent=(props)=>{
 
 
     return (
         <>
+        <Seofields meta={props.pagemeta}/>
             <Homenav locationslug={props.pagedata.locationslug} 
                         bookingall={props.pagedata.bookingall}
                         eventbooking={props.pagedata.eventbooking}
@@ -25,12 +26,7 @@ const LocationSingleEvent=(props)=>{
                 <div id="mainContent" className='main-content'>
 
                 {/* =======header content and breadcum======== */}
-                            <Head>
-                                <title>All in adventure | event </title>
-                                <meta name="description" content="All in one adventure escape games" />
-                                
-
-                              </Head>
+                      
                               <div className='breadcum py-1 md:py-1 lg:py-3 bg-[#fffceb]'>
                                    <BreadcumNew gameslug={props.pagedata.slug} locationslug={props.pagedata.locationslug} pagetype={"events"}/>
                                 </div>

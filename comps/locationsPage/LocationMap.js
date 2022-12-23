@@ -187,11 +187,11 @@ const LocationMap=(props)=>{
                                                             <div className="map-info-link">
 
 
-                                                                    <Link href={'/locations/'+props.locdetail.slug}>
-                                                                    <a  className="text-[#7b7b7b] hover:text-blue-600">
+                                                                   
+                                                                    <a href={'/locations/'+props.locdetail.slug} className="text-[#7b7b7b] hover:text-blue-600">
                                                                            <span className="font-medium text-[#424242]">Website :</span> Click To Visit
                                                                         </a>
-                                                                    </Link>
+                                                                 
 
 
                                                             </div>

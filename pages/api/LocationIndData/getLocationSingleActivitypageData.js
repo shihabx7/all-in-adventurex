@@ -58,9 +58,77 @@ import { getLocTotal } from "../AllDataList/getLocTotal"
       }
       return ret
    }
+   // SEO FUNCTION===========
+   const capCity=(str,lslug)=>{
+      var cityArr=lslug.split('-')
+      if(cityArr[0]=="n" || cityArr[0]=="N"){
+        cityArr[0]="North"
+      }
+      var citySt=cityArr[cityArr.length-1].toString().toUpperCase()
+     
+      cityArr=cityArr.slice(0,-1)
+      var x
 
+      for(x=0;x<cityArr.length;x++){
+
+          var upc=cityArr[x].charAt(0).toUpperCase()
+          var nnsp=cityArr[x].substring(0,0) + upc + cityArr[x].substring(0+1)
+          cityArr[x]= nnsp
+      }
+      var upcity=cityArr.join(' ')+' '+citySt
+
+     return str.replaceAll('CITY', upcity)
+
+
+   }
+   const lowCity=(str,slug)=>{
+    var locn=slug.split('-')
+    if(locn[0]=="n" || locn[0]=="N"){
+      locn[0]="North"
+    }
+    
+    var upcity=locn.join(' ')
+
+   return str.replaceAll('CITY', upcity)
+   
+
+
+ }
+   const capMall=(str,mall)=>{
+    var mallArr=mall.split(' ')
+    var appArr=['to','at','in','for','of','it','a','an']
+   
+    var y
+
+    for(y=0;y<mallArr.length;y++){
+      if(!appArr.includes(mallArr[y]) && mallArr[y]!='USA'){
+        if(mallArr[y]=='usa'){
+          mallArr[y]==mallArr[y].toUpperCase()
+        }
+        var upc=mallArr[y].charAt(0).toUpperCase()
+        var nnsp=mallArr[y].substring(0,0) + upc + mallArr[y].substring(0+1)
+        
+        mallArr[y]= nnsp
+      }
+      
+        
+    }
+    var capmall=mallArr.join(' ')
+
+   return str.replaceAll('MALL', capmall)
+   }
+// SEO FUNCTION end===========
     const activityData={
-        "pagemeta":activityDataset[gameslug].pagemeta,
+        //"pagemeta":activityDataset[gameslug].pagemeta,
+        "pagemeta":{
+  
+          "title":capCity(activityDataset[gameslug].pagemeta.title,locationslug),
+          "description":capMall(activityDataset[gameslug].pagemeta.description,malldata.pagedata.mall),
+          "keywords":lowCity(activityDataset[gameslug].pagemeta.keywords,locationslug),
+          "url":"/"+locationslug+"/"+activityDataset[gameslug].pagemeta.url,
+          "metaindex":activityDataset[gameslug].pagemeta.metaindex,
+          "metaimg":activityDataset[gameslug].pagemeta.metaimg
+                  },
            
         "pagedata":{
             "pagetitle":activityDataset[gameslug].activityname+" "+salt(activityDataset[gameslug].activitydata.category),
@@ -1161,11 +1229,14 @@ const activityDataset={
         "coverimageM_alt":"escape from alcatraz allinadventures ",
         
         "pagemeta":{
-    
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
+  
+          "title":"Escape From Alcatraz Escape Room in CITY - All In Adventures",
+           "description":"Join us at MALL. You are prison guards at the maximum security prison, Alcatraz. The Warden's keys have gone missing! Find them or they'll escape.",
+           "keywords":"escape from alcatraz, escape from alcatraz escape room CITY, all in adventure escape from alcatraz CITY, mystery room escape from alcatraz,  alcatraz escape room, prison break escape room CITY, prison break escape room near me, jail break escape room CITY, escape from alcatraz escape room near me CITY, prison themed escape room CITY, escape alcatraz escape room, escape from alcatraz escape game CITY,",
+           "url":"/activities/escape-from-alcatraz",
+           "metaindex":true,
+           "metaimg":"/assets/all-game-mobile-hero/allinadventures-escape-from-alcatraz.jpg"
+          },
         "activitydata":{
           "category":"escapegames",
           "story":"The federal prison of Alcatraz, surrounded by the waters of San Francisco Bay, housed some of America's most dangerous and notorious felons. Escaping Alcatraz is no easy feat, and the few that have tried were unsuccessful. As guards in the nation's strongest prison, it is your duty to uphold Alcatraz's stalwart reputation.",
@@ -1229,11 +1300,14 @@ const activityDataset={
         "coverimageM_alt":"allinadventures treasure island",
         
         "pagemeta":{
-    
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
+  
+          "title":"Treasure Island Escape Room in CITY - All In Adventures ",
+          "description":"Join us at MALL. You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
+          "keywords":"treasure island, treasure island escape room CITY, all in adventures treasure island CITY, mystery room treasure island CITY, treasure pirate escape room CITY, treasure escape room CITY, treasure escape game CITY, pirate escape game CITY, treasure island escape room near me CITY, pirate escape room CITY, pirate themed escape room, treasure hunt escape room, treasure island escape game",
+          "url":"/activities/treasure-island",
+          "metaindex":true,
+          "metaimg":"/assets/all-game-mobile-hero/allinadventures-treasure-island.jpg"
+          },
         "activitydata":{
           "category":"escapegames",
           "story":"Welcome aboard the vessel of the dread pirate, Captain Jake Hawkins - the most feared pirate who has ever sailed the seven seas. Hawkins and his crew continue to loot and capture without remorse, and you are no exception to his evil ways. You must find a way to break free from his clutches but take heed - your only way out may be to find a way in!",
@@ -1297,11 +1371,14 @@ const activityDataset={
         "coverimageM_alt":"allinadventures superheros adventure",
         
         "pagemeta":{
-    
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
+  
+          "title":"Superhero's Adventure Escape Room in CITY - All In Adventures",
+          "description":"Join us at MALL. The arch-criminal, Matador and his team of henchmen, have devised an evil plan to take over the city. Use your superpowers to stop them!",
+          "keywords":"superheros adventure, superhero adventure escape room CITY, superhero adventure mystery room, all in adventure superhero adventure, superhero escape room, escape room superhero, superhero adventure escape room near me, superhero escape room near me, escape room superhero near me CITY, superhero theme escape room, superhero escape game CITY, mystery room superhero escape room,",
+          "url":"/activities/superheros-adventure",
+          "metaindex":true,
+          "metaimg":"/assets/all-game-mobile-hero/allinadventures-superheros-adventure.jpg"
+                  },
         "activitydata":{
           "category":"escapegames",
           "story":"Darkover City is home to the prestigious Grand Central Bank - housing and securing millions of dollars worth of gold. Superheroes across the universe have been called to protect the bank after its blueprint has mysteriously gone missing. You suspect the infamous Matador and his crew of minions have something to do with it.",
@@ -1365,11 +1442,14 @@ const activityDataset={
         "coverimageM_alt":"allinadventures zombie apocalypse",
         
         "pagemeta":{
-    
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
+  
+          "title":"Zombie Apocalypse Escape Room in CITY- All In Adventures",
+          "description":"Join us at MALL. The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
+          "keywords":"zombie apocalypse CITY, zombie apocalypse escape room, zombie apocalypse mystery room CITY, mystery room zombie escape room CITY, all in adventure zombie apocalypse, zombie escape room, escape room zombie, zombie apocalypse escape room near me, zombie escape room near me, escape room zombie near me CITY, zombie theme escape room, zombie escape game CITY,  scary escape room, horror escape room,",
+          "url":"/activities/zombie-apocalypse",
+          "metaindex":true,
+          "metaimg":"/assets/all-game-mobile-hero/allinadventures-zombie-apocalypse.jpg"
+                  },
         "activitydata":{
           "category":"escapegames",
           "story":" You are in Paris, France, the place where the zombification of the human race began.. At first, the virus was unstoppable; anyone who came into contact with the virus was guaranteed to turn. However, your recent research shows the virus has mutated into two weaker strains. Now is the time to develop a vaccine and save humanity.",
@@ -1433,11 +1513,14 @@ const activityDataset={
           "coverimageM_alt":"allinadventures special agent",
           
           "pagemeta":{
-      
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+  
+            "title":"Special Agent Escape Room in CITY - All In Adventures",
+            "description":"Join us at MALL. After capturing one of the world's most infamous money launderers, one of his associates is planning a new scheme. Stop him in his tracks!",
+            "keywords":"special agent, special agent escape room CITY, investigation themed escape room CITY, special agent mystery room, all in adventure special agent CITY, spy agent escape room, special force escape room CITY, special agent escape room near me CITY, investigation themed escape room near me CITY, spy agent escape room near me, special force escape room near me CITY, mystery room special agent escape room",
+            "url":"/activities/special-agent",
+            "metaindex":true,
+            "metaimg":"/assets/all-game-mobile-hero/allinadventures-special-agent.jpg"
+                    },
           "activitydata":{
             "category":"escapegames",
             "story":"Spiegel was, at least in the underground criminal world, the most respected money launderer in the business. Recently, we were able to track him down and infiltrate his operations with one of our agents. This eventually led to his capture, but unfortunately for us, we discovered he had an entire global network of operations. It is now your sole mission to stop his laundering empire.",
@@ -1501,11 +1584,14 @@ const activityDataset={
           "coverimageM_alt":"allinadventures hollywood premiere",
           
           "pagemeta":{
-      
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+  
+            "title":"Hollywood Premiere Escape Room in CITY - All In Adventures",
+            "description":"Join us at MALL. Live from Hollywood, California. You're the next lucky contestant on our exciting game show! To win the game, name our secret celebrity!",
+            "keywords":"hollywood premiere escape room, hollywood escape room, hollywood premiere mystery room CITY, all in adventure hollywood premiere CITY, hollywood theme escape room CITY, hollywood celebrity escape room, hollywood premiere mystery room, hollywood mystery escape room CITY, hollywood premiere escape room near me, hollywood escape room near me CITY, hollywood theme escape room near me, hollywood celebrity escape room near me CITY, hollywood premiere mystery room near me, hollywood mystery escape room near me,",
+            "url":"/activities/hollywood-premiere",
+            "metaindex":true,
+            "metaimg":"/assets/all-game-mobile-hero/allinadventures-hollywood-premiere.jpg"
+                    },
           "activitydata":{
             "category":"escapegames",
             "story":'The newest and hottest game show, "Name That Celebrity", started back in 2019. Since then, contestants have been booked constantly as they await their chance to compete and win. Recently, they completed a casting call and chose a brand new round of contestants. Much to your surprise, you were chosen to compete!',
@@ -1570,11 +1656,14 @@ const activityDataset={
           "coverimageM_alt":"allinadventures sherlocks library",
           
           "pagemeta":{
-      
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+  
+            "title":"Sherlock's Library Escape Room in CITY - All In Adventures",
+            "description":"Join us at MALL. London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
+            "keywords":"sherlocks library, sherlock library escape room CITY, sherlock library mystery room, all in adventure sherlock library, all in adventure sherlock library, sherlock escape room, spy escape room, investigation escape room, sherlock holmes escape room, investigator escape room, sherlock library mystery room, sherlock library escape room near me, sherlock escape room near me, spy escape room near me, investigation escape room near me, sherlock holmes escape room near me, sherlock library mystery room near me, mystery room sherlock escape room,",
+            "url":"/activities/sherlocks-library",
+            "metaindex":true,
+            "metaimg":"/assets/all-game-mobile-hero/allinadventures-sherlocks-library.jpg"
+                    },
           "activitydata":{
             "category":"escapegames",
             "story":"While attending a concert with London's elite, Sherlock Holmes heard a tale of a scheme created by a secret aristocrat. They are laundering money, erasing gambling debts, and selling lesser titles of nobility to unsavory characters. Holmes is preparing to play his violin to solve the current case.",
@@ -1638,11 +1727,14 @@ const activityDataset={
           "coverimageM_alt":"allinadventures-houdinis-magic-cell",
           
           "pagemeta":{
-      
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+  
+            "title":"Houdini's Magic Cell Escape Room in CITY - All In Adventures",
+            "description":"Join us at MALL. As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you are better!",
+            "keywords":"houdinis magic cell, houdinis magic cell escape room CITY, all in adventure houdini magic cell CITY, mystery room houdinis magic cell, houdini escape room, magic theme escape room, magician escape room CITY, houdinis magic cell mystery room, houdinis magic cell escape room near me, houdini escape room near me, magic theme escape room near me CITY, magician escape room near me CITY, houdinis magic cell mystery room near me CITY,",
+            "url":"/activities/houdinis-magic-cell",
+            "metaindex":true,
+            "metaimg":"/assets/all-game-mobile-hero/allinadventures-houdinis-magic-cell.jpg"
+                    },
           "activitydata":{
             "category":"escapegames",
             "story":'The famous Hungarian American magician, Houdini, performed many tricks during his lifetime; some were even death defying. Houdini was adept at all tricks ranging from simple card tricks to the most daring escape from an unbelievable scenario. There is one trick in particular that you have always wanted to outperform: the "Houdini Upside Down" - the trick involving Houdini trapped upside down, handcuffed at the feet, submerged in water. Death was just minutes away.',
@@ -1707,11 +1799,14 @@ const activityDataset={
           "coverimageM_alt":"allinadventures black ops",
           
           "pagemeta":{
-      
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+  
+            "title":"Black Ops Escape Room in CITY - All In Adventures",
+            "description":"Join us at MALL. After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
+            "keywords":"black ops, black ops escape room CITY, all in adventure black ops CITY, black ops mystery room, action escape room, war theme escape room CITY, black ops escape game, black ops mystery room CITY, black ops escape room near me CITY, action escape room near me, war theme escape room near me CITY, black ops escape game near me, black ops mystery room near me,",
+            "url":"/activities/black-ops",
+            "metaindex":true,
+            "metaimg":"/assets/all-game-mobile-hero/allinadventures-black-ops.jpg"
+                    },
           "activitydata":{
             "category":"escapegames",
             "story":"As a member of an elite military unit, you are no stranger to dangerous missions - this mission will be no different. Previous operations have allowed us to obtain all the evidence necessary to initiate the capture of the international arms dealer known as The Hawk. We have located the HQ of The Hawk, and it is time to raid the bunker and bring The Hawk in for questioning.",
@@ -1775,11 +1870,14 @@ const activityDataset={
           "coverimageM_alt":"allinadventures lost in the jungle",
           
           "pagemeta":{
-      
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+  
+            "title":"Lost In The Jungle Escape Room in CITY - All In Adventures",
+            "description":"Join us at MALL. Having heard the mysterious sound of drums coming from the roof, you and your friends decided to check it out. Drawn by the beat, you find yourself trapped in the game!",
+            "keywords":"lost in jungle escape room, adventure jungle escape room CITY, jungle theme escape room CITY, lost in the jungle mystery room CITY, lost in jungle escape room near me, adventure jungle escape room near me, jungle theme escape room near me, lost in the jungle mystery room near me, all in adventure lost in the jungle CITY",
+            "url":"/activities/lost-in-the-jungle",
+            "metaindex":true,
+            "metaimg":"/assets/all-game-mobile-hero/allinadventures-lost-in-the-jungle.jpg"
+                    },
           "activitydata":{
             "category":"escapegames",
             "story":"It was just a normal day in suburbia and you were with your friends getting ready to enjoy the weekend. One of your favorite things to do was to tell stories at night, and this night, you had a special story - one about animals coming to life and taking over the city. You had no idea what would come next…",
@@ -1844,11 +1942,14 @@ const activityDataset={
           "coverimageM_alt":"allinadventures wizarding school",
           
           "pagemeta":{
-      
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+  
+            "title":"Wizarding School Escape Room in CITY - All In Adventures",
+            "description":"Join us at MALL. Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office!",
+            "keywords":"wizard escape room, wizarding school escape rooms, wizard escape room near me CITY, wizard escape game, wizard escape games CITY, wizard escape game near me, wizard allinadventures, wizard all in adventures CITY, wizarding school escape room, wizard escape room, wizarding escape room, wizarding school mystery room, wizarding school escape room near me, wizard escape room near me, wizarding escape room near me, wizarding school mystery room near me CITY, all in adventure wizarding school CITY",
+            "url":"/activities/wizarding-school",
+            "metaindex":true,
+            "metaimg":"/assets/all-game-mobile-hero/allinadventures-wizarding-school.jpg"
+                    },
           "activitydata":{
             "category":"escapegames",
             "story":"Wizarding School is the most revered school for magic in the land. With an admission rate of only 1%, you were extremely lucky to get into the school. You were placed in a house that cares highly about their reputation, and they won't allow anyone in the group who may cost them their standing. You want to live up to their expectations and it all starts with your first lesson - Potions!",
@@ -1912,11 +2013,14 @@ const activityDataset={
           "coverimageM_alt":"allinadventures magic castle",
           
           "pagemeta":{
-      
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+  
+            "title":"Magic Castle Escape Room in CITY - All In Adventures",
+            "description":"Join us at MALL. Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards. But it's not easy!",
+            "keywords":"magic castle escape room, magic escape room CITY, magic castle escape game CITY, magic castle mystery room CITY, magic castle escape room near me CITY, magic escape room near me CITY, magic castle escape game near me, magic castle mystery room, all in adventure magic castle,",
+            "url":"/activities/magic-castle",
+            "metaindex":true,
+            "metaimg":"/assets/all-game-mobile-hero/allinadventures-magic-castle.jpg"
+                    },
           "activitydata":{
             "category":"escapegames",
             "story":"The Magic Castle is known as one of the toughest entrance exams any wizard can take. Any aspiring wizard who wants to get out of the muggle world must take this exam. The waiting list spans years, and you have just received your entrance letter giving you your chance at the test.",
@@ -1980,11 +2084,14 @@ const activityDataset={
           "coverimageM_alt":"allinadventures locked in the lift",
           
           "pagemeta":{
-      
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+  
+            "title":"Locked in The Lift Escape Room in CITY - All In Adventures",
+            "description":"Join us at MALL. Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. Act fast and save yourself and others!",
+            "keywords":"locked in the lift escape room, locked escape room CITY, locked in the lift escape game CITY, locked in the lift mystery room, locked in the lift escape room near me CITY, locked escape room near me, locked in the lift escape game near me CITY, locked in the lift mystery room CITY, all in adventure locked in the lift,",
+            "url":"/activities/locked-in-the-lift",
+            "metaindex":true,
+            "metaimg":"/assets/all-game-mobile-hero/allinadventures-locked-in-the-lift.jpg"
+                    },
           "activitydata":{
             "category":"escapegames",
             "story":"As a famous actor in the 40's, you were given luxuries that most couldn't imagine possessing. A fancy car? Check. Nice house? Check. Debt? Of course not. There was one place all the VIPs wanted to visit—the luxurious hotel on Main Street to take the elusive lift to the second floor. You just received your invite in the mail - time to get ready!",
@@ -2049,11 +2156,14 @@ const activityDataset={
           "coverimageM_alt":"allinadventures-game-show-room",
           
           "pagemeta":{
-      
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+  
+            "title":"Game Show Room in CITY | All In Adventures",
+            "description":"We offer a unique, unpredictable, family-friendly live game show experience for guests of all different ages, backgrounds and group sizes.",
+            "keywords":"game show room, game show room near you, game show room CITY, game show room in CITY,",
+            "url":"/activities/game-show-room",
+            "metaindex":true,
+            "metaimg":"/assets/all-game-mobile-hero/allinadventures-game-show-room.jpg"
+                    },
           "activitydata":{
             "category":"other",
             "story":"Our real-life Game Show Room is created to bring friends, family or co-workers together. It's a fun, group-oriented activity you share with other live players. You have the option to choose from a family, kid or adult experience. Once your group come in, players will become instant game show contestants led by a professional game host who will guide players through a series of interactive games.",
@@ -2222,11 +2332,14 @@ const activityDataset={
           "coverimageM_alt":"allinadventures-axe-throwing",
           
           "pagemeta":{
-      
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+  
+            "title":"Axe Throwing in CITY | All In Adventures",
+            "description":"Come throw axes at our exciting interactive targets with your friends and family! Test your hand-eye coordination and see if you can hit a bull's eye.",
+            "keywords":"axe throwing, axe throwing near you, axe throwing CITY, axe throwing in CITY",
+            "url":"/activities/axe-throwing",
+            "metaindex":true,
+            "metaimg":"/assets/all-game-mobile-hero/allinadventures-axe-throwing.jpg"
+                    },
           "activitydata":{
             "category":"other",
             "story":"With our interactive lanes, you can practice throwing at traditional targets or choose from other games. Utilizing a projection system, you can not only easily switch between games, but you can also allow it to do the scoring for you. Using sensors to mark your hits, our lanes can track the score for you and let you focus on the fun.",
@@ -2289,11 +2402,14 @@ const activityDataset={
           "coverimageM_alt":"allinadventures-beat-the-seat",
           
           "pagemeta":{
-      
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+  
+            "title":"Beat The Seat Game in CITY | All In Adventures",
+            "description":"Beat the Seat is a two-minute, fun-filled, exhilarating experience where you'll test your endurance, coordination, and ability to think on your feet.",
+            "keywords":"beat the seat, beat the seat game, beat the seat near you, beat the seat CITY, beat the seat game CITY, beat the seat in CITY",
+            "url":"/activities/beat-the-seat",
+            "metaindex":true,
+            "metaimg":"/assets/all-game-mobile-hero/allinadventures-beat-the-seat.jpg"
+                    },
           "activitydata":{
             "category":"other",
             "story":"Beat The Seat is an intense and challenging fun game! You'll be required to solve several different challenges and combinations while holding down the button on the seat, and this must be completed within two minutes. If that sounds simple, well, just wait till you're in there, and you may think a little differently.",

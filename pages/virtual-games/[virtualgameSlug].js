@@ -1,4 +1,4 @@
-import Head from "next/dist/shared/lib/head";
+
 import Homenav from "../../comps/Homenav";
 import Footer from "../../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
@@ -13,6 +13,7 @@ import VgameGallery from "../../comps/virtualPgeComps/VgameGallery";
 import VgameVideo from "../../comps/virtualPgeComps/VgameVideo";
 import TitleSeparator from "../../comps/util/TitleSeparator";
 import FaqList from "../../comps/faqComps/FaqList";
+import Seofields from "../../comps/util/Seofields";
 
 
 const showSingleVitualGame=(props)=>{
@@ -30,11 +31,7 @@ const showSingleVitualGame=(props)=>{
     return(
        <>
        {/* =======header content======== */}
-       <Head>
-                 <title>All in adventure | {props.pagemeta.title}</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+       <Seofields meta={props.pagemeta}/>
 
           {
             props.vgamedata.booking &&

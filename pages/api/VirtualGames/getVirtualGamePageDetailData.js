@@ -18,12 +18,7 @@ export const getVirtualGamePageDetailData=(gameslug)=>{
       "activitylistSlug":getTotal().activitylistSlug,
        "eventlistSlug":getTotal().eventlistSlug,
        "virtualgameListSlug":getTotal().virtualgameSlug,
-        "pagemeta":{
-
-            "matatilte":activitiesName,
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+        "pagemeta":vGameData[gameslug].pagemeta,
            
         "pagedata":{
             "pagetitle":vGameData[gameslug].activityname+" "+ salt(vGameData[gameslug].category),
@@ -65,11 +60,14 @@ const vGameData={
                         "max_players":"12",
                         "min_players":"2",
                         "pagemeta":{
-
-                            "title":"meta title",
-                            "metakeyword":"keywords",
-                            "metadescription":"metadescription"
-                          },
+  
+                          "title":"AMadness Virtual Escape Rooms | All In Adventures",
+                          "description":"Discover the secrets of a deranged professor and expose his twisted ways! Fail and suffer the results of his wicked ways! Book your virtual escape room now.",
+                          "keywords":"madness virtual escape rooms, virtual escape rooms madness,",
+                          "url":"/virtual-games/virtual-escape-rooms-madness",
+                          "metaindex":true,
+                          "metaimg":"/assets/all-game-mobile-hero/allinadventures-virtual-escape-room-madness.jpg"
+                        },
 
                         "vgamedata":{
                             "story":"Test patients go in....but no one has ever come back out! Welcome to the mysterious and dark world of the deranged professor. Once famed for his psychiatric breakthroughs, he grew distrustful of those around him, and gradually withdrew from society.",
@@ -136,11 +134,14 @@ const vGameData={
         "max_players":"12",
         "min_players":"2",
         "pagemeta":{
-
-            "title":"meta title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+  
+          "title":"Zombie Apocalypse Virtual Escape Rooms | All In Adventures",
+          "description":"A scientist carrying a deadly virus drops the vial, spreading the virus through the A/C system. Search the lab for the antidote and distribute it before it's too late!",
+          "keywords":"zombie apocalypse virtual escape rooms, virtual escape rooms zombie apocalypse",
+          "url":"/virtual-games/virtual-escape-rooms-zombie-apocalypse",
+          "metaindex":true,
+          "metaimg":"/assets/all-game-mobile-hero/allinadventures-virtual-escape-room-zombie-apocalypse.jpg"
+        },
 
         "vgamedata":{
             "story":"The test tube containing a clear blue liquid virus accidentally slipped from the hand of the lab assistant and fell to the floor, shattering into thousands of pieces. Seconds later, the alarm sounds as the laboratory goes into automatic lock-down.",
@@ -206,12 +207,16 @@ const vGameData={
                          "duration":"30",
                          "max_players":"12",
                          "min_players":"2",
-                         "pagemeta":{
 
-                             "title":"meta title",
-                             "metakeyword":"keywords",
-                             "metadescription":"metadescription"
-                           },
+                         "pagemeta":{
+  
+                                  "title":"Bomb Virtual Escape Rooms | All In Adventures",
+                                  "description":"After a nuclear peace treaty was signed, one rogue agent stole a thermonuclear warhead and is planning to end the world! Figure out his plan to save the world!",
+                                  "keywords":"bomb virtual escape rooms, virtual escape rooms bomb",
+                                  "url":"/virtual-games/virtual-escape-rooms-bomb",
+                                  "metaindex":true,
+                                  "metaimg":"/assets/all-game-mobile-hero/allinadventures-virtual-escape-room-bomb.jpg"
+                                },
 
                          "vgamedata":{
                              "story":"The dire threat of a cold war nuclear holocaust is slowly deescalating. Both East and West have agreed to back down. The world can breathe again. But then, without warning, a rogue agent has deserted and taken a thermonuclear warhead with him.",
@@ -277,12 +282,15 @@ const vGameData={
     "duration":"30",
     "max_players":"12",
     "min_players":"2",
-    "pagemeta":{
-
-        "title":"meta title",
-        "metakeyword":"keywords",
-        "metadescription":"metadescription"
-      },
+      "pagemeta":{
+      
+            "title":"Prison Virtual Escape Rooms | All In Adventures",
+            "description":"A case of simple misidentification has led to your wrongful conviction. You must find the key to escape this awful prison and prove your innocence!",
+            "keywords":"prison virtual escape rooms, virtual escape rooms prison",
+            "url":"/virtual-games/virtual-escape-rooms-prison",
+            "metaindex":true,
+            "metaimg":"/assets/all-game-mobile-hero/allinadventures-virtual-escape-room-prison.jpg"
+          },
 
     "vgamedata":{
         "story":"A strong shove in the back and you're pushed into a tiny prison cell. The cold iron door clangs shut. You hear yourself pleading that this has all been a terrible mistake. You haven't done anything wrong. You've been set up to take the fall for someone else. You've been framed. But all your pleas fall on deaf ears.",
@@ -349,11 +357,14 @@ const vGameData={
     "max_players":"12",
     "min_players":"2",
     "pagemeta":{
-
-        "title":"meta title",
-        "metakeyword":"keywords",
-        "metadescription":"metadescription"
-      },
+  
+      "title":"Aztec Virtual Escape Rooms | All In Adventures",
+      "description":"Hidden deep within an ancient city is the Lost City of Gold. Find the city, uncover the jewels, and find a way to escape with your treasures!",
+      "keywords":"aztec virtual escape rooms, virtual escape rooms aztec,",
+      "url":"/virtual-games/virtual-escape-rooms-aztec",
+      "metaindex":true,
+      "metaimg":"/assets/all-game-mobile-hero/allinadventures-virtual-escape-room-aztec.jpg"
+    },
 
     "vgamedata":{
         "story":"The year is 1519 and you find yourself in the jungle near the Mexican capital city of Tenochtitlan, as a Spanish conquistador. You have already have heard the natives speak of the treasure of the Lost City of Gold. There the Emperor Tlatoani Montezuma has hidden jewels from his palace of Axayacati.",
@@ -421,11 +432,15 @@ const vGameData={
     "max_players":"12",
     "min_players":"2",
     "pagemeta":{
-
-        "title":"meta title",
-        "metakeyword":"keywords",
-        "metadescription":"metadescription"
-      },
+  
+      "title":"Japan Virtual Escape Rooms | All In Adventures",
+      "description":"The revered Samurai sword has been stolen! Use your samurai skills to locate and recover the sword in time or face your unfortunate fate.",
+      "keywords":"japan virtual escape rooms, virtual escape rooms japan",
+     
+      "url":"/virtual-escape-rooms-japan",
+      "metaindex":true,
+      "metaimg":"/assets/all-game-mobile-hero/allinadventures-virtual-escape-room-japan.jpg"
+    },
 
     "vgamedata":{
         "story":"We find ourselves transported back to feudal Japan in the twelfth century at the house of a Kamakura shogun. As usual the house is full of Samurai who act as guards. The daimyo are visiting and have bought not only their own Samurai, but also the dreaded Ninja spies.",
@@ -495,11 +510,14 @@ const vGameData={
     "max_players":"12",
     "min_players":"4",
     "pagemeta":{
-
-        "title":"meta title",
-        "metakeyword":"keywords",
-        "metadescription":"metadescription"
-      },
+  
+      "title":"Virtual Game Show Room | All In Adventures",
+      "description":"Enjoy our Virtual Game Show Room with friends and family from all different parts of the world without needing to gather in person. It's like a TV game show.",
+      "keywords":"virtual game show room, online game show room, remote game show room",
+      "url":"/virtual-games/virtual-game-show-room",
+      "metaindex":true,
+      "metaimg":"/assets/all-game-mobile-hero/allinadventures-virtual-game-show-room-hero-mobile.jpg"
+    },
 
     "vgamedata":{
         

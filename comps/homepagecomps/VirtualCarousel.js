@@ -121,9 +121,9 @@ const openBooking=(booking)=>{
                            virtualgame.booking &&
                            <button onClick={()=>openBooking(virtualgame.booking)} className="border block max-w-[200px] mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
                           }
-                          <Link href={"/"+virtualgame.slug }>
-                             <a className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</a>
-                          </Link>
+                         
+                             <a href={"/"+virtualgame.slug } className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</a>
+                        
                       </div>
                       
                    </div>

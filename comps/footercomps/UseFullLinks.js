@@ -104,90 +104,90 @@ const UseFullLinks=(props)=>{
         <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>
         <div className='usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2'> 
-            <Link href="/gallery"> 
-                <a className='text-gray-400 text-sm  lg:text-base'>Gallery</a>
-            </Link>
+            
+                <a href="/gallery" className='text-gray-400 text-sm  lg:text-base'>Gallery</a>
+            
         </div>
         <div className=' hidden lg:block text-gray-400 text-2xl'> 
         <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>
         <div className='usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2'> 
-            <Link href="/rewards-program"> 
-                <a className='text-gray-400 text-sm  lg:text-base'>Rewards Program</a>
-            </Link>
+            
+                <a href="/rewards-program" className='text-gray-400 text-sm  lg:text-base'>Rewards Program</a>
+            
         </div>
         <div className=' hidden lg:block text-gray-400 text-2xl'> 
             <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>
         <div className='usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2'> 
-            <Link href="/pricing"> 
-                <a className='text-gray-400 text-sm  lg:text-base'>Pricing</a>
-            </Link>
+            
+                <a href="/pricing" className='text-gray-400 text-sm  lg:text-base'>Pricing</a>
+           
         </div>
         <div className=' hidden lg:block text-gray-400 text-2xl'> 
             <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>
         <div className='usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2'> 
-            <Link href="/deals-coupons"> 
-                <a className='text-gray-400 text-sm  lg:text-base'>Deals and Coupons</a>
-            </Link>
+            
+                <a href="/deals-coupons" className='text-gray-400 text-sm  lg:text-base'>Deals and Coupons</a>
+            
         </div>
         <div className=' hidden lg:block text-gray-400 text-2xl'> 
             <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>
        
         <div className='usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2'> 
-            <Link href="/faqs"> 
-                <a className='text-gray-400 text-sm  lg:text-base'>FAQs</a>
-            </Link>
+            
+                <a href="/faqs" className='text-gray-400 text-sm  lg:text-base'>FAQs</a>
+           
         </div>
         <div className=' hidden lg:block text-gray-400 text-2xl'> 
             <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>
       <div className='usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2'> 
-            <Link href="/covid-19"> 
-                <a className='text-gray-400 text-sm  lg:text-base'>Covid-19</a>
-            </Link>
+            
+                <a href="/covid-19" className='text-gray-400 text-sm  lg:text-base'>Covid-19</a>
+            
         </div>  
         <div className=' hidden lg:block text-gray-400 text-2xl'> 
             <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>
         <div className='usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2'> 
-            <Link href="/about"> 
-                <a className='text-gray-400 text-sm  lg:text-base'>About</a>
-            </Link>
+           
+                <a href="/about" className='text-gray-400 text-sm  lg:text-base'>About</a>
+            
         </div>
         <div className=' hidden lg:block text-gray-400 text-2xl'> 
             <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>
         <div className='usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2'> 
-            <Link href="/careers"> 
-                <a className='text-gray-400 text-sm  lg:text-base'>Careers</a>
-            </Link>
+           
+                <a href="/careers" className='text-gray-400 text-sm  lg:text-base'>Careers</a>
+           
         </div>
         <div className=' hidden lg:block text-gray-400 text-2xl'> 
             <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>
         <div className='usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2'> 
-            <Link href="/franchise"> 
-                <a className='text-gray-400 text-sm  lg:text-base'>Franchise</a>
-            </Link>
+           
+                <a href="/franchise" className='text-gray-400 text-sm  lg:text-base'>Franchise</a>
+           
         </div>
         <div className=' hidden lg:block text-gray-400 text-2xl'> 
             <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>
         <div className='usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2'> 
-            <Link href="/volunteering"> 
-                <a className='text-gray-400 text-sm  lg:text-base'>Volunteering</a>
-            </Link>
+           
+                <a href="/volunteering" className='text-gray-400 text-sm  lg:text-base'>Volunteering</a>
+          
         </div>
         <div className=' hidden lg:block text-gray-400 text-2xl'> 
             <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>
         <div className='usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2'> 
-            <Link href="/corporate-contact"> 
-                <a className='text-gray-400 text-sm  lg:text-base'>Corporate Contact</a>
-            </Link>
+           
+                <a href="/corporate-contact" className='text-gray-400 text-sm  lg:text-base'>Corporate Contact</a>
+            
         </div>
         
     </div>

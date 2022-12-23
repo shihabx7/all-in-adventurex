@@ -1,18 +1,16 @@
-import Head from "next/dist/shared/lib/head";
+
 import Homenav from "../comps/Homenav";
 import Footer from "../comps/Footer";
 import Custom404Err from "../comps/util/Custom404Err";
 import getErrPageData from "./api/getErrPageData";
+
+import Seofields from "../comps/util/Seofields";
 const Custom404=(props)=>{
 
  
     return(
                 <>
-                    <Head>
-                           <title>All in adventure | Page not found</title>
-                              <meta name="description" content="All in adventure escape games" />
-        
-                     </Head>
+                    <Seofields meta={props.pagemeta}/>
                      <Homenav locationlist={props.locationlist}
             activitylist={props.activitylist}
             eventlist={props.eventlist}/>
@@ -27,7 +25,7 @@ export default Custom404
 export const getStaticProps=async()=>{
 
     const tdata=await getErrPageData()
-    console.log(tdata)
+ 
 
     return {
         props:{

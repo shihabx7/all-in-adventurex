@@ -3,8 +3,6 @@
 import Footer from '../../../comps/Footer';
 import Homenav from '../../../comps/Homenav';
 
-import Head from 'next/head';
-
 import { getLocationActivitySlugList } from '../../api/LocationIndData/getLocationActivitySlugList';
 import { getLocationSingleActivitypageData } from '../../api/LocationIndData/getLocationSingleActivitypageData';
 import GameLocHero from '../../../comps/activitiyPageComps/GameLocHero';
@@ -13,6 +11,7 @@ import GameLocDetails from '../../../comps/activitiyPageComps/GameLocDetails';
 import GameGallery from '../../../comps/activitiyPageComps/GameGallery';
 import GameVideo from '../../../comps/activitiyPageComps/GameVideo';
 import GameFaq from '../../../comps/activitiyPageComps/GameFaq';
+import Seofields from '../../../comps/util/SeoFields';
 
 const LocSingleActivity=(props)=>{
    
@@ -22,6 +21,7 @@ const LocSingleActivity=(props)=>{
  
      return (
          <>
+         <Seofields meta={props.pagemeta}/>
              <Homenav locationslug={props.pagedata.locationslug} 
                         bookinggame={props.pagedata.bookingdata} 
                         eventbooking={props.pagedata.eventbooking} 
@@ -33,12 +33,7 @@ const LocSingleActivity=(props)=>{
                  <div id="mainContent" className='main-content'>
  
                  {/* =======header content and breadcum======== */}
-                             <Head>
-                                 <title>All in adventure | Albany NY</title>
-                                 <meta name="description" content="All in one adventure escape games" />
-                                 
- 
-                               </Head>
+                             
                                <div className='breadcum py-1 md:py-1 lg:py-3 bg-[#fffceb]'>
                                     <BreadcumNew gameslug={props.pagedata.slug} locationslug={props.pagedata.locationslug} pagetype={"activities"}/>
                                  </div>
@@ -89,8 +84,7 @@ export const getStaticPaths=async()=>{
   }
 
   export const getStaticProps=async(context)=>{
-    //var router = useRouter()
-   // routerSlug=routerSlug.split('-')
+ 
   
     const locationHomedata=getLocationSingleActivitypageData(context.params.activitySlug,"milford-ct")
    

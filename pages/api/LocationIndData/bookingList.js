@@ -409,78 +409,46 @@ const blist={
                 //===================================west-nyack-ny end===========
                 //===================================poughkeepsie-ny===========
 "poughkeepsie-ny":{
-                "shortname":"mysteryroom-austin",
+                "shortname":"allinadventures-poughkeepsie",
         
                 "escape-from-alcatraz":{
-                    "item":"44198",
-                    "flow":"17839"
+                    "item":"224037",
+                    "flow":"365583"
                 },
                 "treasure-island":{
-                    "item":"44198",
-                    "flow":"17839"
+                    "item":"224032",
+                    "flow":"365583"
                 },
                 "superheros-adventure":{
-                    "item":"44198",
-                    "flow":"17839"
+                    "item":"224038",
+                    "flow":"365583"
                 },
                 "zombie-apocalypse":{
-                    "item":"44198",
-                    "flow":"17839"
+                    "item":"224071",
+                    "flow":"365583"
                 },
-                "special-agent":{
-                    "item":"44198",
-                    "flow":"17839"
-                },
-                "hollywood-premiere":{
-                    "item":"44198",
-                    "flow":"17839"
-                },
+               
                 "sherlocks-library":{
-                    "item":"44198",
-                    "flow":"17839"
+                    "item":"224063",
+                    "flow":"365583"
                 },
                 "houdinis-magic-cell":{
-                    "item":"44198",
-                    "flow":"17839"
+                    "item":"224057",
+                    "flow":"365583"
                 },
                 "black-ops":{
-                    "item":"44198",
-                    "flow":"17839"
+                    "item":"224006",
+                    "flow":"365583"
                 },
-                "lost-in-the-jungle":{
-                    "item":"44198",
-                    "flow":"17839"
-                },
-                "virtual-reality":{
-                    "item":"44198",
-                    "flow":"17839"
-                },
-                "wizarding-school":{
-                    "item":"44198",
-                    "flow":"17839"
-                },
-                "locked-in-the-lift":{
-                    "item":"44198",
-                    "flow":"17839"
-                },
-                "game-show-room":{
-                    "item":"44198",
-                    "flow":"17839"
-                },
+               
                 "axe-throwing":{
                     "item":"44198",
-                    "flow":"17839"
+                    "flow":"365583"
                 },
-                "beat-the-seat":{
-                    "item":"44198",
-                    "flow":"17839"
-                },
-                "magic-castle":{
-                    "item":"44198",
-                    "flow":"17839"
-                },
-                "gift-card":{ "type":"gift",
-                    "item":"360204",
+               
+                "gift-card":{ 
+                    "type":"gift",
+                    "item":"360256",
                     "flow":"no"
                 },
                 "gift-addon":{
@@ -492,9 +460,9 @@ const blist={
                     "flow":"no"
                 },
                 "party-package":{
-                    "item":"17839",
+                    "item":"426690",
                     "flow":"no",
-                    "eventstatus":false,
+                    "eventstatus":true,
                 }
               
                 },

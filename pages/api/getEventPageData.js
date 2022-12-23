@@ -9,12 +9,7 @@ export const geEventPagetData=(slug)=>{
       "activitylistSlug":getTotal().activitylistSlug,
        "eventlistSlug":getTotal().eventlistSlug,
        "virtualgameListSlug":getTotal().virtualgameSlug,
-        "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+       "pagemeta":eventIndData[slug].pagemeta,
 
            
         "pagedata":{
@@ -57,11 +52,13 @@ const eventIndData={
                  "max_players":"70",
                  "min_players":"2",
 
-                "pagemeta":{
-
-                  "matatilte":"title",
-                  "metakeyword":"keywords",
-                  "metadescription":"metadescription"
+                 "pagemeta":{
+                  "title":"Escape Room Birthday Party - All In Adventures",
+                  "description":"A perfect birthday party venue for the young at heart. No matter your age, get an unforgettable adventure! Book your adventure today!",
+                  "keywords":"birthday party escape room, birthday party events, kids birthday party place, birthday party venues, birthday party celebration, birthday party things to do near me, birthday party activities to do near me, birthday party escape room near me, birthday party events near me, kids birthday party place near me, birthday party venues near me, birthday party celebration near me, escape room for birthday party",
+                  "url":"/events/birthday-party",
+                  "metaindex":true,
+                  "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-birthday-party-hero.jpg"
                 },
 
                 "eventdata":{
@@ -162,12 +159,14 @@ const eventIndData={
                        "max_players":"70",
                        "min_players":"2",
                     
-                     "pagemeta":{
-                    
-                       "matatilte":"title",
-                       "metakeyword":"keywords",
-                       "metadescription":"metadescription"
-                     },
+                       "pagemeta":{
+                        "title":"Escape Room Team Building - All In Adventures",
+                        "description":"This fun and exciting interactive form of team building will bring your corporate team closer! Book your adventure today!",
+                        "keywords":"team building escape room, team building events, corporate team building place, team building venues, team building activities, team building things to do near me, team building activities to do near me, team building escape room near me, team building events near me, corporate team building place near me, team building venues near me, team building activities near me, escape room for team building",
+                        "url":"/events/team-building",
+                        "metaindex":true,
+                        "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-team-building-hero.jpg"
+                      },
                     
                      "eventdata":{
                       "why_book":"We provide the ideal atmosphere to strengthen teamwork, communication, and problem-solving skills! Our escape rooms bring teams together towards a common goal and offer the thrill of collaborative success! Instead of another dreary meeting, why not have an adventure into the unknown?",
@@ -267,12 +266,14 @@ const eventIndData={
                      "max_players":"70",
                      "min_players":"2",
 
-                   "pagemeta":{
-                  
-                     "matatilte":"title",
-                     "metakeyword":"keywords",
-                     "metadescription":"metadescription"
-                   },
+                     "pagemeta":{
+                      "title":"Escape Room Corporate Events - All In Adventures",
+                      "description":"Instead of a dreary meeting on how to work effectively, why not take a crack at a puzzle? Book your adventure today!",
+                      "keywords":"corporate events near me, corporate party in escape room, escape room for corporate party, corporate party place for fun, corporate party venues, corporate party activities, corporate party things to do near me, corporate party activities to do near me, corporate event party escape room near me, corporate party place near me, events for corporate party place near me, corporate party venues nearbv, corporate party activities near me, escape room for corporate events",
+                      "url":"/events/corporate-events",
+                      "metaindex":true,
+                      "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-corporate-events-hero.jpg"
+                    },
                  
                    "eventdata":{
                     "why_book":"Corporate events are frequently held at All In Adventures, and it's no surprise why! We provide a unique atmosphere where communication, leadership, and problem-solving skills will all be put to the test. Our escape rooms bring everyone on the team together to work towards a common goal!",
@@ -372,12 +373,14 @@ const eventIndData={
                       "max_players":"70",
                       "min_players":"2",
 
-                     "pagemeta":{
-                    
-                       "matatilte":"title",
-                       "metakeyword":"keywords",
-                       "metadescription":"metadescription"
-                     },
+                      "pagemeta":{
+                        "title":"Escape Room Family Fun Activities - All In Adventures",
+                        "description":"A unique family fun activity with intense real-life puzzles where you have to work together to progress! Book your adventure today!",
+                        "keywords":"family events in escape room, escape room for family events, family events place for fun, family events venues, family events activities, family events things to do near me, family events activities to do near me, family event party escape room near me, family events place near me, events for family place near me, family events venues nearbv, family events activities near me, escape room for family events",
+                        "url":"/events/family-fun-activity",
+                        "metaindex":true,
+                        "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-family-fun-activities-hero.jpg"
+                      },
                    
                      "eventdata":{
                       "why_book":"Put your incredible family dynamic on display in one of our fun escape rooms! We provide a unique, screen-free atmosphere to spend time together as a family! Kids over 6 can contribute, and ages 10 and up will be active problem-solving participants! Kids under six can play for FREE alongside two or more full-price adults!",
@@ -478,11 +481,13 @@ const eventIndData={
                  "min_players":"2",
 
                  "pagemeta":{
-                
-                   "matatilte":"title",
-                   "metakeyword":"keywords",
-                   "metadescription":"metadescription"
-                 },
+                  "title":"Escape Room Bachelor Parties - All In Adventures",
+                  "description":"There's no better way than to bond with your bachelor party before the big day - no scandals, just nonstop thrills! Book your adventure today!",
+                  "keywords":"bachelor party escape room, escape room for bachelor party, bachelor party place for fun, bachelor party venues, bachelor party activities, bachelor party things to do near me, bachelor party activities to do near me, bachelor event party escape room near me, bachelor party place near me, events for bachelor party place near me, bachelor party venues nearbv, bachelor party activities near me, escape room for bachelor party,",
+                  "url":"/events/bachelor-party",
+                  "metaindex":true,
+                  "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-bachelor-party-hero.jpg"
+                },
                
                  "eventdata":{
                   "why_book":"Our unique escape room experiences are a perfect addition to bachelor parties! Your group of guys will have to come ready to play if you have any chance at escaping! Pick a room theme that best fits your crew and let us know if there's something special you'd like done for the groom-to-be!",
@@ -582,12 +587,14 @@ const eventIndData={
                  "max_players":"70",
                  "min_players":"2",
 
-                   "pagemeta":{
-                  
-                     "matatilte":"title",
-                     "metakeyword":"keywords",
-                     "metadescription":"metadescription"
-                   },
+                 "pagemeta":{
+                  "title":"Escape Room Bachelorette Parties - All In Adventures",
+                  "description":"Fun-filled bachelorette party without any drama that will be something long remembered by everyone! Book your adventure today!",
+                  "keywords":"bachelorette party escape room, escape room for bachelorette party, bachelorette party place for fun, bachelorette party venues, bachelorette party activities, bachelorette party things to do near me, bachelorette party activities to do near me, bachelorette event party escape room near me, bachelorette party place near me, events for bachelorette party place near me, bachelorette party venues nearby, bachelorette party activities near me, escape room for bachelorette party",
+                  "url":"/events/bachelorette-party",
+                  "metaindex":true,
+                  "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-bachelorette-party-hero.jpg"
+                          },
                  
                     "eventdata":{
                      "why_book":"Our unique escape room experiences are a perfect addition to bachelorette parties! Your group of gals will have to come ready to play to have any chance at escaping! Pick a room theme that best fits your bridal party and let us know if there's something special you'd like done for the bride-to-be!",
@@ -684,15 +691,17 @@ const eventIndData={
                       "coverimageM":"/assets/all-event-mobile-hero/allinadventures-events-proposal-party-hero.jpg",
                       "coverimageM_alt":"allinadventures-events-proposal-party",
                       "age":"6+",
-                 "max_players":"70",
-                 "min_players":"2",
+                      "max_players":"70",
+                      "min_players":"2",
 
-                     "pagemeta":{
-                    
-                       "matatilte":"title",
-                       "metakeyword":"keywords",
-                       "metadescription":"metadescription"
-                     },
+                      "pagemeta":{
+                        "title":"Escape Room Proposal Party - All In Adventures",
+                        "description":"A distinctive marriage proposal where the mystery ends with the ring in the final clue box! Book your adventure today!",
+                        "keywords":"proposal party place, proposal party venue, escape room proposal party, proposal party places, proposal party place near me, proposal party venue nearby, proposal party in escape room, proposal party",
+                        "url":"/events/proposal-party",
+                        "metaindex":true,
+                        "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-proposal-party-hero.jpg"
+                      },
                    
                      "eventdata":{
                       "why_book":"It's no mystery: a surprise proposal can be the memory of a lifetime! Our escape rooms are ideal for a unique way to pop the question. Your partner will be so focused on victory, you'll have the perfect chance to drop to one knee! Let us know if you want to customize the game for your proposal and we'll do our best to accommodate your special day!",
@@ -792,12 +801,14 @@ const eventIndData={
                  "max_players":"70",
                  "min_players":"2",
 
-             "pagemeta":{
-            
-               "matatilte":"title",
-               "metakeyword":"keywords",
-               "metadescription":"metadescription"
-             },
+                 "pagemeta":{
+                  "title":"Escape Room Date Night - All In Adventures",
+                  "description":"Work together and find clues to solve the mystery that will ultimately strengthen your relationship! Book your adventure today!",
+                  "keywords":"date night ideas, escape room date night, date night places, date night things to do, date night puzzle, escape room date night near me, date night idea",
+                  "url":"/events/date-night",
+                  "metaindex":true,
+                  "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-date-night-hero.jpg"
+                },
            
              "eventdata":{
               "why_book":"Perfect for double dates, or just some quality time together as a couple, our escape rooms can help strengthen relationships through collaboration, communication, and fun! Use your balance of strengths together to overcome puzzles and gain a new perspective on each other!",
@@ -897,12 +908,14 @@ const eventIndData={
     "max_players":"70",
     "min_players":"2",
 
- "pagemeta":{
-
-   "matatilte":"title",
-   "metakeyword":"keywords",
-   "metadescription":"metadescription"
- },
+    "pagemeta":{
+      "title":"Escape Room Private Parties - All In Adventures",
+      "description":"Adventure awaits for all - your family, friends, office, indoor party, church group, fraternity or sorority. Book your adventure today!",
+      "keywords":"private events near me, private party in escape room, escape room for private party, private party place for fun, private party venues, private party activities, private party things to do near me, private party activities to do near me, private event party escape room near me, private party place near me, events for private party place near me, private party venues nearby, private party activities near me, escape room for private party",
+      "url":"/events/private-party",
+      "metaindex":true,
+      "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-private-party-hero.jpg"
+    },
 
  "eventdata":{
   "why_book":"We work to make each escape room private party a unique experience for you and your guests. Whether you are in a corporate office looking for an exciting team-building activity, or a group of friends looking for a mental workout, our escape rooms give you the challenge you're seeking. All In Adventures is great for all types of groups and is a memorable way to come together for fun!",
@@ -1002,12 +1015,14 @@ const eventIndData={
                  "max_players":"70",
                  "min_players":"2",
 
-               "pagemeta":{
-              
-                 "matatilte":"title",
-                 "metakeyword":"keywords",
-                 "metadescription":"metadescription"
-               },
+                 "pagemeta":{
+                  "title":"Escape Room Reunion Party - All In Adventures",
+                  "description":"Each game is interactive and has engaging qualities that give your reunion party an epic adventure! Book your adventure today!",
+                  "keywords":"reunion events near me, reunion party in escape room, escape room for reunion party, reunion party place for fun, reunion party venues, reunion party activities, reunion party things to do near me, reunion party activities to do near me, reunion event party escape room near me, reunion party place near me, events for reunion party place near me, reunion party venues nearby, reunion party activities near me, escape room for reunion party",
+                  "url":"/events/reunion-party",
+                  "metaindex":true,
+                  "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-reunion-party-hero.jpg"
+                },
              
                 "eventdata":{
                  "why_book":"Bring together your entire extended family for an unforgettable reunion! Whether you all work cooperatively, or pit family versus family in an epic battle of the minds, our escape rooms are a thrilling way to enjoy your time together! With difficulties for all ages and skill levels, All in Adventures is a cross-generational, memory-making experience!",
@@ -1108,11 +1123,13 @@ const eventIndData={
                  "min_players":"2",
 
                  "pagemeta":{
-                
-                   "matatilte":"title",
-                   "metakeyword":"keywords",
-                   "metadescription":"metadescription"
-                 },
+                  "title":"Escape Room Graduation Party - All In Adventures",
+                  "description":"Graduation is such an exciting time, no matter your age and you deserve to celebrate it in a memorable way. Book your adventure today!",
+                  "keywords":"graduation events near me ,graduation party in escape room, escape room for graduation party, graduation party place for fun, graduation party venues, graduation party activities, graduation party things to do near me, graduation party activities to do near me, graduation event party escape room near me, graduation party place near me, events for graduation party place near me, graduation party venues nearby, graduation party activities near me, escape room for graduation party,",
+                  "url":"/events/graduation-party",
+                  "metaindex":true,
+                  "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-graduation-party-hero.jpg"
+                },
                
                  "eventdata":{
                   "why_book":"Our unique escape room experiences are a perfect addition to your graduation party! Your school of scholars will have to bring their sharp minds and keen intuition if they're to have any chance at escaping! Pick a room theme that best fits their interest and let us know if there's something special you'd like done for your graduate!",
@@ -1212,12 +1229,14 @@ const eventIndData={
                  "max_players":"70",
                  "min_players":"2",
 
-                   "pagemeta":{
-                  
-                     "matatilte":"title",
-                     "metakeyword":"keywords",
-                     "metadescription":"metadescription"
-                   },
+                 "pagemeta":{
+                  "title":"Escape Room School Events - All In Adventures",
+                  "description":"Students exercise critical thinking and act to become the super-spies they see in the movies! Book your adventure today!",
+                  "keywords":"school events near me, school party in escape room, escape room for school party, school party place for fun, school party venues, school party activities, school party things to do near me, school party activities to do near me, school event party escape room near me, school party place near me, events for school party place near me, school party venues nearby, school party activities near me, escape room for school party",
+                  "url":"/events/school-events",
+                  "metaindex":true,
+                  "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-school-events-hero.jpg"
+                },
                  
                    "eventdata":{
                     "why_book":"Problem-solving, critical thinking, and observational awareness - all important skills for growing young minds to strengthen. Our escape rooms will require your students to work together for an exciting intellectual challenge that's more than your average field trip! With rooms that pair well with historical and literary themes, you can effortlessly weave them into your lesson plan!",
@@ -1317,12 +1336,14 @@ const eventIndData={
                  "max_players":"70",
                  "min_players":"2",
 
-                  "pagemeta":{
-                  
-                    "matatilte":"title",
-                    "metakeyword":"keywords",
-                    "metadescription":"metadescription"
-                  },
+                 "pagemeta":{
+                  "title":"Escape Room Gender Reveal Party - All In Adventures",
+                  "description":"Instead of simply sharing the news of your baby's gender, why not announce it through fun puzzles? Book your adventure today!",
+                  "keywords":"gender reveal party place, gender reveal party venue, escape room gender reveal party, gender reveal party places, gender reveal party place near me, gender reveal party venue nearby, gender reveal party in escape room, gender reveal party",
+                  "url":"/events/gender-reveal-party",
+                  "metaindex":true,
+                  "metaimg":"/assets/all-event-mobile-hero/allinadventures-events-gender-reveal-party-hero.jpg"
+                },
                 
                   "eventdata":{
                     "why_book":"We provide a unique atmosphere where parents make gender reveal parties a memorable family event. The big surprise awaits your party at the conclusion of your game with the final box being packed with your ideal way of announcing the gender of your baby! Pick a room theme and let us know if there's something special you'd like done for your reveal!",

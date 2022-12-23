@@ -10,6 +10,7 @@ import { getAllEvents } from "../api/getAllEvents";
 import EventList from "../../comps/activitiyPageComps/EventList";
 import EventContact from "../../comps/eventPageComps/EventContact";
 import WebForm from "../../comps/eventPageComps/Webform";
+import Seofields from "../../comps/util/SeoFields";
 
 const showAllevents=(props)=>{
     const toTitleCase=(title)=>{
@@ -27,11 +28,7 @@ const showAllevents=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | Events</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+           <Seofields meta={props.pagemeta}/>
            <Homenav locationlist={props.locationlist}
            activitylist={props.activitylist}
            eventlist={props.eventlist}/>

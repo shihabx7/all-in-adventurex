@@ -2,7 +2,8 @@
 import Homenav from "../comps/Homenav";
 import Footer from "../comps/Footer";
 import ThankYouBox from "../comps/util/ThankYouBox";
-import { getThankYouFransPageData } from "./api/getThankYouFransPageData";
+import { getThankYouPageData } from "./api/getThankYouPageData";
+import { getThankYouEventPageData } from "./api/getThankYouEventPageData";
 import Seofields from "../comps/util/Seofields";
 const ThankYou=(props)=>{
 
@@ -23,7 +24,7 @@ export default ThankYou
 
 export const getStaticProps=async()=>{
 
-    const tdata=await getThankYouFransPageData()
+    const tdata=await getThankYouEventPageData()
 
     return {
         props:{

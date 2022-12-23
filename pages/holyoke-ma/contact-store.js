@@ -25,6 +25,7 @@ const ViewContactStore=(props)=>{
 
     return(
         <>
+        <Seofields meta={props.pagemeta}/>
             <Homenav locationslug={props.pagedata.locationslug}
                      location={getLoc(props.pagedata.locationslug)}
                       bookingall={props.pagedata.bookingall}
@@ -66,13 +67,10 @@ const ViewContactStore=(props)=>{
 export default ViewContactStore
 
 export const getStaticProps=async()=>{
-    //var router = useRouter()
-   // routerSlug=routerSlug.split('-')
+
   
     const locationContactdata=getLocationIndContactPageData("holyoke-ma")
    
-    
-
     return{
         props:{
           pagedata:locationContactdata.pagedata,

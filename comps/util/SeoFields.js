@@ -10,7 +10,7 @@ const Seofields=(props)=>{
                  <meta name="description" content={props.meta.description? props.meta.description:"All In Adventures, formerly Mystery Room, is a multi-location escape room, game show room, beat the seat, and axe throwing destination in the United States."}/>
                  <meta name="keywords" content={props.meta.keywords}/>
                  <meta name="author" content="All In Adventures"/>
-                 <meta http-equiv="content-language" content="en-us"/>
+                 <meta httpEquiv="content-language" content="en-us"/>
                  
                 {
                     props.meta.metaindex==false &&

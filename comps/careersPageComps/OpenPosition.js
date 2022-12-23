@@ -22,9 +22,9 @@ const OpenPosition=(props)=>{
                                           <p className="md:text[18px] lg:text-[20px] text-[#333333] mt-2 md:mt-4">{job.short_desc}
                                           </p>
                                           <div className="jop-pg-link mt-6 lg:mt-8">
-                                                  <Link href={"/careers/"+job.job_slug}>
-                                                          <a className="inline-block py-3 px-10 lg:py-4 lg:px-12 bg-red-600 hover:bg-red-700 text-white lg:text-lg rounded-full">LEARN MORE</a>
-                                                  </Link>
+                                                 
+                                                          <a href={"/careers/"+job.job_slug} className="inline-block py-3 px-10 lg:py-4 lg:px-12 bg-red-600 hover:bg-red-700 text-white lg:text-lg rounded-full">LEARN MORE</a>
+                                                 
                                           </div>
                                     </div>
                                 )

@@ -2,13 +2,12 @@
 import Footer from '../../../comps/Footer';
 import Homenav from '../../../comps/Homenav';
 
-import Head from 'next/head';
-
 import { getLocationsEventList } from '../../api/LocationIndData/getLocationsEventList';
 import EventLocHero from '../../../comps/eventPageComps/EventLocHero';
 import BreadcumNew from '../../../comps/util/BreadcumNew';
 import EventList from '../../../comps/activitiyPageComps/EventList';
 import EventContact from '../../../comps/eventPageComps/EventContact';
+import Seofields from '../../../comps/util/SeoFields';
 
 const LocEventList=(props)=>{
    
@@ -23,11 +22,11 @@ const LocEventList=(props)=>{
         locname=locname.join(' ')
         return locname+", "+st
     }
-    //console.log(locname)
-    /* custom breadcum code */
+   
  
      return (
          <>
+         <Seofields meta={props.pagemeta}/>
              <Homenav locationslug={props.pagedata.locationslug}
                      bookingall={props.pagedata.bookingall} 
                      eventbooking={props.pagedata.eventbooking}
@@ -39,12 +38,7 @@ const LocEventList=(props)=>{
                  <div id="mainContent" className='main-content'>
  
                  {/* =======header content and breadcum======== */}
-                             <Head>
-                                 <title>All in adventure Locations</title>
-                                 <meta name="description" content="All in one adventure escape games" />
-                                 
- 
-                               </Head>
+                            
                                <div className='breadcum py-1 md:py-1 lg:py-3 bg-[#fffceb]'>
                                     <BreadcumNew/>
                                  </div>
@@ -70,8 +64,7 @@ const LocEventList=(props)=>{
 export default LocEventList
 
 export const getStaticProps=async(context)=>{
-    //var router = useRouter()
-   // routerSlug=routerSlug.split('-')
+   
   
     const locationHomedata=getLocationsEventList("roanoke-va")
    

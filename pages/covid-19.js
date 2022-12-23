@@ -1,12 +1,13 @@
-import Head from 'next/head'
+
 import styles from '../styles/alllocations.module.css'
 import TitleSeparator from "../comps/util/TitleSeparator";
 import Footer from '../comps/Footer';
 import Homenav from '../comps/Homenav';
 import Breadcrumbs from 'nextjs-breadcrumbs';
 import { FiChevronRight } from "react-icons/fi";
-import Link from 'next/link';
+
 import { getCovidPageData } from './api/getCovidPageData';
+import Seofields from '../comps/util/Seofields';
 
 
 
@@ -24,6 +25,7 @@ const covid19=(props)=>{
 
    return(
     <>
+    <Seofields meta={props.pagemeta}/>
          <Homenav locationlist={props.locationlist}
            activitylist={props.activitylist}
            eventlist={props.eventlist}/>
@@ -31,11 +33,7 @@ const covid19=(props)=>{
                  <div id="mainContent" className='main-content nobtn-main-content'>
 
                      {/* =======header content and breadcum======== */}
-    <Head>
-        <title>All in adventure Locations</title>
-        <meta name="description" content="All in one adventure escape games" />
-        
-      </Head>
+    
       <div className='breadcums  py-1 md:py-2 bg-[#fffceb]'>
              <Breadcrumbs  replaceCharacterList={[{ from: '-', to: ' ' }]} 
                     listClassName="max-w-7xl mx-auto px-2 md:px-4 breadcum-list text-sm md:text-base lg:text-lg" 
@@ -128,21 +126,20 @@ const covid19=(props)=>{
                         {
                             props.location?
                             <div className="game-btn-all ">
-                            <Link href={"/"+props.location+"/activities/"} hpassHref>
-                              <a className="max-w-[260px] md:max-w-[280px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-white font-medium border-2 border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 rounded-full text-center">VIEW ALL GAMES</a>
-                            </Link>
-                            <Link href={"/"+props.location+"/events/"} hpassHref>
-                                <a className="max-w-[260px] md:max-w-[280px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-[#424242] hover:text-white font-medium border-2 border-red-600 hover:border-red-700 hover:bg-red-700 rounded-full text-center">VIEW ALL EVENTS</a>
-                             </Link>
+                           
+                              <a href={"/"+props.location+"/activities/"} className="max-w-[260px] md:max-w-[280px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-white font-medium border-2 border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 rounded-full text-center">VIEW ALL GAMES</a>
+                            
+                                <a href={"/"+props.location+"/events/"} className="max-w-[260px] md:max-w-[280px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-[#424242] hover:text-white font-medium border-2 border-red-600 hover:border-red-700 hover:bg-red-700 rounded-full text-center">VIEW ALL EVENTS</a>
+                             
                         </div>
                              :
                              <div className="game-btn-all ">
-                                 <Link href="/activities/" hpassHref>
-                                   <a className="max-w-[260px] md:max-w-[280px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-white font-medium border-2 border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 rounded-full text-center">VIEW ALL GAMES</a>
-                                 </Link>
-                                 <Link href="/events/" hpassHref>
-                                     <a className="max-w-[260px] md:max-w-[280px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-[#dddddd] hover:text-white font-medium border-2 border-red-600 hover:border-red-700 hover:bg-red-700 rounded-full text-center">VIEW ALL EVENTS</a>
-                                  </Link>
+                                 
+                                   <a href="/activities/" className="max-w-[260px] md:max-w-[280px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-white font-medium border-2 border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 rounded-full text-center">VIEW ALL GAMES</a>
+                                 
+                                 
+                                     <a href="/events/" className="max-w-[260px] md:max-w-[280px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-[#dddddd] hover:text-white font-medium border-2 border-red-600 hover:border-red-700 hover:bg-red-700 rounded-full text-center">VIEW ALL EVENTS</a>
+                                  
                              </div>
 
                         } 

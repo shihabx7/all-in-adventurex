@@ -3,16 +3,13 @@ import Homenav from "../comps/Homenav";
 import Footer from "../comps/Footer";
 import ThankYouBox from "../comps/util/ThankYouBox";
 import { getThankYouPageData } from "./api/getThankYouPageData";
+import Seofields from "../comps/util/Seofields";
 const ThankYou=(props)=>{
 
  
     return(
                 <>
-                    <Head>
-                           <title>All in adventure | Thank you</title>
-                              <meta name="description" content="All in adventure escape games" />
-        
-                     </Head>
+                    <Seofields meta={props.pagemeta}/>
                      <Homenav  locationlist={props.locationlist}
             activitylist={props.activitylist}
             eventlist={props.eventlist}/>

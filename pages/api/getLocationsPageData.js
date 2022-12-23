@@ -431,7 +431,7 @@ import getYextData from "./YextApi/getYextLocationData";
                                   "id":7,
                                   "city":"Poughkeepsie",
                                   "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
-                                  "publish_status":false,
+                                  "publish_status":true,
                                   "entry_guid":"Upstairs from 110 Grill.",
                                   "slug":"poughkeepsie-ny",
                                   "address":"2001 South Rd",

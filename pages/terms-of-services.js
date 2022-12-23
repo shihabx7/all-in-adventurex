@@ -11,6 +11,7 @@ import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
 import { getTermsConditionPageData } from "./api/getTermsConditionPageData"
 import PrivacyPolicy from "../comps/privacyTermsComps/PrivacyPolicy";
 import TermsAndCondition from "../comps/privacyTermsComps/TermsAndConditions";
+import Seofields from "../comps/util/Seofields";
 
 const termsAndCondition=(props)=>{
     const toTitleCase=(title)=>{
@@ -28,11 +29,7 @@ const termsAndCondition=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | Terms and Conditions</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+           <Seofields meta={props.pagemeta}/>
            <Homenav locationlist={props.locationlist}
             activitylist={props.activitylist}
             eventlist={props.eventlist}/>

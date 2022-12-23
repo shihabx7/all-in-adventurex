@@ -5,7 +5,7 @@ import Availability from "./Availability"
 import Education from "./Education" 
 import Experience from "./Experience"
 import References from "./References" 
-import Disclaimer from "./Disclaimer"
+
 
 
 const JobApplicationForms=(props)=>{
@@ -13,14 +13,132 @@ const JobApplicationForms=(props)=>{
     const [formStep, setFormStep]=useState(0) 
     const [formName,setFormName]=useState('')
     const [formErrFlag, setFormErrFlag]=useState(false)
-    const [formData,setFormData]=useState({
-                                         fName:'',
-                                         lName:'',
-                                         email:'',
-                                         phone:'',
-                                         dLocation:'',
-    
+    const [appInfo1,setAppInfo1]=useState({
+                                            fName:'',
+                                            lName:'',
+                                            email:'',
+                                            phone:'',
+                                            stAdd1:'',
+                                            stAdd2:'',
+                                            city:'',
+                                            state:'',
+                                            zip:'',
+                                            country:'',
+                                         })
+    const [appInfo2,setAppInfo2]=useState({
+                                            dLocation:'',
+                                            dPosition:'',
+                                            dPay:'',
+                                            dSchedule:'',
+                                            isAge:'',
+                                            isEligible:'',
+                                            everWorkPast:'',
+                                            workUnderOther:'',
+                                            learnAboutPos:'',
+                                            whatAttracted:'',
+                                         })
+    const [availability,setAvailability]=useState({
+                                         careerObjective:'',
+                                         avlStartDate:'',
+                                         avlToWork:'',
+                                         howLongStay:'',
+                                         sunday:{
+                                                 start:'',
+                                                 close:'',
+                                                 },
+                                        monday:{
+                                                 start:'',
+                                                 close:'',
+                                                 },
+                                        tuesday:{
+                                                 start:'',
+                                                 close:'',
+                                                },
+                                        wednesday:{
+                                                 start:'',
+                                                 close:'',
+                                                },
+                                        thursday :{
+                                                 start:'',
+                                                 close:'',
+                                                    },
+                                        friday  :{
+                                                 start:'',
+                                                 close:'',
+                                                    },
+                                        saturday  :{
+                                                 start:'',
+                                                 close:'',
+                                             },
+                                         })
+   const [education,setEducation]=useState({
+                                             hSchoolName:'',
+                                             hSchoolAttendDate:'',
+                                             hSchoolGraduated:'',
+                                             hSchoolDegree:'',
+                                             uinName:'',
+                                             uinAttendDate:'',
+                                             uinGraduated:'',
+                                             uinDegree:'',
+                                             otherName:'',
+                                             otherAttendDate:'',
+                                             otherGraduated:'',
+                                             otherDegree:'',
+                                            })
+    const [jobExp,setJobExp]=useState({
+                                         isEmployed:'',
+                                         skillList:'',
+                                         company1:'',
+                                         title1:'',
+                                         spName1:'',
+                                         spPhone1:'',
+                                         dateOfEmployment1:'',
+                                         isContact1:'',
+                                         majorResponsibility1:'',
+                                         reasonForLeaving1:'',
+                                         company2:'',
+                                         title2:'',
+                                         spName2:'',
+                                         spPhone2:'',
+                                         dateOfEmployment2:'',
+                                         isContact2:'',
+                                         majorResponsibility2:'',
+                                         reasonForLeaving2:'',
+                                         company3:'',
+                                         title3:'',
+                                         spName3:'',
+                                         spPhone3:'',
+                                         dateOfEmployment3:'',
+                                         isContact3:'',
+                                         majorResponsibility3:'',
+                                         reasonForLeaving3:'',
+                                        })
+   const [references,setReferences]=useState({
+                                             refName1:'',
+                                             refCompany1:'',
+                                             refTitle1:'',
+                                             refRelation1:'',
+                                             refTimeLength1:'',
+                                             refPhone1:'',
+                                             refEmail1:'',
+
+                                             refName2:'',
+                                             refCompany2:'',
+                                             refTitle2:'',
+                                             refRelation2:'',
+                                             refTimeLength2:'',
+                                             refPhone2:'',
+                                             refEmail2:'',
+
+                                             refName3:'',
+                                             refCompany3:'',
+                                             refTitle3:'',
+                                             refRelation3:'',
+                                             refTimeLength3:'',
+                                             refPhone3:'',
+                                             refEmail3:'',
                                            })
+
     const [formErr,setFormErr]=useState({
                                          fName:'',
                                          lName:'',
@@ -30,7 +148,7 @@ const JobApplicationForms=(props)=>{
 
                                          })   
     const getPw=()=>{
-        var step=Math.floor(((formStep+1)/6)*100)
+        var step=Math.floor(((formStep)/6)*100)
 
         return step
     } 
@@ -57,27 +175,27 @@ const JobApplicationForms=(props)=>{
             <div className="job-form-body">
                 {
                     formStep==0 && 
-                    <ApplicantInfo  setFormName={setFormName}/>
+                    <ApplicantInfo  setFormName={setFormName} appInfo1={appInfo1} setAppInfo1={setAppInfo1}/>
                 }
                 {
                     formStep==1 && 
-                    <ApplicantInfo2  locationlist={props.locationlist} setFormName={setFormName}/>
+                    <ApplicantInfo2  locationlist={props.locationlist} setFormName={setFormName} appInfo2={appInfo2} setAppInfo2={setAppInfo2}/>
                 }
                 {
                     formStep==2 && 
-                    <Availability setFormName={setFormName}/>
+                    <Availability setFormName={setFormName} availability={availability} setAvailability={setAvailability}/>
                 }
                  {
                     formStep==3 && 
-                    <Education setFormName={setFormName}/>
+                    <Education setFormName={setFormName} education={education} setEducation={setEducation}/>
                 }
                  {
                     formStep==4 && 
-                    <Experience setFormName={setFormName}/>
+                    <Experience setFormName={setFormName} jobExp={jobExp} setJobExp={setJobExp}/>
                 }
                 {
                     formStep==5 && 
-                    <References setFormName={setFormName}/>
+                    <References setFormName={setFormName} references={references} setReferences={setReferences}/>
                 }
 
             </div>

@@ -48,16 +48,98 @@ export const getLocationsEventList=(locationslug)=>{
     var ret=spLoc+", "+st
     return ret
   }
+   // ===============seo fields
+   const capCity=(locname)=>{
+    var spLoc=locname.split("-")
+    if(spLoc[0]=="n" || spLoc[0]=="N"){
+      spLoc[0]='North'
+    }
+    var st=spLoc[spLoc.length-1].toString()
+    spLoc=spLoc.slice(0,-1)
+    var x
+
+    for(x=0;x<spLoc.length;x++){
+
+        var upc=spLoc[x].charAt(0).toUpperCase()
+        var nnsp=spLoc[x].substring(0,0) + upc + spLoc[x].substring(0+1)
+        spLoc[x]= nnsp
+    }
+    spLoc=spLoc.join(' ')
+    
+    var ret=spLoc+" "+st.toUpperCase()
+    return ret
+  }
+  const lowCity=(locname)=>{
+    var spLoc=locname.split("-")
+    if(spLoc[0]=="n" || spLoc[0]=="N"){
+      spLoc[0]='North'
+    }
+   
+    spLoc=spLoc.join(' ')
+    
+   
+    return spLoc
+  }
+
+  const capMall=(mall)=>{
+    var mallArr=mall.split(' ')
+    var appArr=['to','at','in','for','of','it','a','an']
+   
+    var y
+
+    for(y=0;y<mallArr.length;y++){
+      if(!appArr.includes(mallArr[y]) && mallArr[y]!='USA'){
+        if(mallArr[y]=='usa'){
+          mallArr[y]==mallArr[y].toUpperCase()
+        }
+        var upc=mallArr[y].charAt(0).toUpperCase()
+        var nnsp=mallArr[y].substring(0,0) + upc + mallArr[y].substring(0+1)
+        
+        mallArr[y]= nnsp
+      }
+      
+        
+    }
+    var capmall=mallArr.join(' ')
+
+   return capmall
+   }
+   const lowMall=(mall)=>{
+    var mallArr=mall.split(' ')
+    var appArr=['to','at','in','for','of','it','a','an']
+   
+    var y
+
+    for(y=0;y<mallArr.length;y++){
+      if(!appArr.includes(mallArr[y]) && mallArr[y]!='USA'){
+        if(mallArr[y]=='usa'){
+          mallArr[y]==mallArr[y].toUpperCase()
+        }
+        var upc=mallArr[y].charAt(0).toLowerCase()
+        var nnsp=mallArr[y].substring(0,0) + upc + mallArr[y].substring(0+1)
+        
+        mallArr[y]= nnsp
+      }
+      
+        
+    }
+    var capmall=mallArr.join(' ')
+
+   return capmall
+   }
+   // ===============seo fields end
 
     const eventsData={
 
        
-        "pagemeta":{
-
-          "matatilte":"title",
-          "metakeyword":"keywords",
-          "metadescription":"metadescription"
-        },
+      "pagemeta":{
+        "title":"All Events and Parties in "+capCity(locationslug)+" - All In Adventures at "+capMall(getLocSpec(locationslug).mall),
+        "description":"All In Adventures at "+capMall(getLocSpec(locationslug).mall)+", formerly Mystery Room, is famous for hosting the most memorable parties and events in "+capCity(locationslug)+". Perfect for all ages.",
+        "keywords":"all events "+lowCity(locationslug)+", all events "+lowCity(locationslug)+", all escape rooms "+lowCity(locationslug)+", all escape events "+lowCity(locationslug)+", all events "+lowMall(getLocSpec(locationslug).mall)+", all escape rooms "+lowMall(getLocSpec(locationslug).mall)+", all escape events "+lowMall(getLocSpec(locationslug).mall)+", all in adventures "+lowMall(getLocSpec(locationslug).mall)+" "+lowCity(locationslug)+", mystery room all events "+lowMall(getLocSpec(locationslug).mall)+" "+lowCity(locationslug)+", all parties "+lowCity(locationslug)+", all escape rooms "+lowCity(locationslug)+", all escape parties "+lowCity(locationslug)+", all parties "+lowMall(getLocSpec(locationslug).mall)+", all escape rooms "+lowMall(getLocSpec(locationslug).mall)+", all escape parties "+lowMall(getLocSpec(locationslug).mall)+", all in adventures all parties "+lowMall(getLocSpec(locationslug).mall)+" "+lowCity(locationslug)+", mystery room all parties "+lowMall(getLocSpec(locationslug).mall)+" "+lowCity(locationslug)+",",
+        "url":"/"+locationslug+"/events",
+        "metaindex":true,
+        "metaimg":"/assets/all-event-mobile-hero/All-Event-Page-Hero-Image.jpg"
+      },
         "locationlist":getTotal().locationlist,
         "eventlistSlug":getLocTotal(locationslug).eventlistSlug,
         "activitylist":getLocTotal(locationslug).activitylistSlug,

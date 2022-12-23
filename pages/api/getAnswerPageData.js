@@ -6,11 +6,14 @@ export const getAnswerPageData=()=>{
          "activitylistSlug":getTotal().activitylistSlug,
           "eventlistSlug":getTotal().eventlistSlug,
           "virtualgameListSlug":getTotal().virtualgameSlug,
-        "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
+          "pagemeta":{
+  
+            "title":"Answers | All In Adventures | Formerly Mystery Room",
+            "description":"We are taking a very careful and thoughtful approach to reopening and have made many changes to our operations to ensure everyone feels safe and comfortable.",
+            "keywords":"escape room gift answers, mystery room answers,",
+            "url":"/covid-19",
+            "metaindex":false,
+            "metaimg":"/assets/home-hero.jpg"
           },
            
           "pagedata": {

@@ -34,11 +34,9 @@ const MeetOurTeam=(props)=>{
                     </div>
                     <div className="join-link mt-8 lg:mt-16 text-center">
                         <h2 className="golden-text font-os font-bold text-center text-2xl md:text-3xl mb-8">WANT TO JOIN OUR TEAM?</h2>
-                        <Link href="/careers">
-                            <a className="inline-block bg-red-600 hover:bg-red-700 text-white md:text-lg py-3 px-8 rounded-full">VIEW JOB OPENINGS</a>
-                        
-                        </Link>
-
+                       
+                            <a href="/careers" className="inline-block bg-red-600 hover:bg-red-700 text-white md:text-lg py-3 px-8 rounded-full">VIEW JOB OPENINGS</a>
+                   
                     </div>
 
 

@@ -72,14 +72,14 @@ const InpersonEscapeSlider =(props)=>{
         <div className="view-all flex justify-center pt-8 md:pt-12 lg:pt-16 pb-16">
           {
             props.locationslug &&
-            <Link href={"/"+props.locationslug+"/activities/"}> 
-            <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all in-person escape rooms</span> <FaAngleRight/></a>
-          </Link>
+           
+            <a href={"/"+props.locationslug+"/activities/"} className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all in-person escape rooms</span> <FaAngleRight/></a>
+         
           }
           { !props.locationslug &&
-             <Link href={"/activities/"}> 
-             <a className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all in-person escape rooms</span> <FaAngleRight/></a>
-           </Link>
+            
+             <a href={"/activities/"} className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all in-person escape rooms</span> <FaAngleRight/></a>
+           
           }
            
          </div>

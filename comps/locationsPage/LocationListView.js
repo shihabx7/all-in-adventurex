@@ -27,23 +27,23 @@ const LocationListView=({city,state})=>{
             <div className="loc-bt flex flex-col justify-between h-full">
                 <div> 
                 <div className="location-img">
-                <Link href={"/locations/"+city.slug}>
-                    <a className="block cursor-pointer"><img src={city.coverimg}></img></a>
-                </Link>
+                
+                    <a href={"/locations/"+city.slug} className="block cursor-pointer"><img src={city.coverimg}></img></a>
+                
                 
                  </div>
             
                     <div className="locationview-info py-4 px-4"> 
                 <div className="location-name group">
-                    <Link href={"/locations/"+city.slug}>
-                        <a> 
+                   
+                        <a href={"/locations/"+city.slug}> 
                              <div className="flex space-x-1 items-center text-2xl lg:text-3xl font-medium">
                                  <h3 className="golden-text"><span className="capitalize">{city.city}</span>, <span className="uppercase">{state}</span></h3> <p className="text-gold"><FaAngleRight/></p>
                              </div>
                               <div className="text-lg text-[#4a4a4a] group-hover:text-red-700">{city.mall}</div>
 
                         </a>
-                    </Link> 
+                   
                    
                 </div>
                 <div className="loaction-business-hour mt-1 relative"> 

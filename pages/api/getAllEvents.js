@@ -7,12 +7,14 @@ export const getAllEvents=()=>{
       "activitylistSlug":getTotal().activitylistSlug,
        "eventlistSlug":getTotal().eventlistSlug,
        "virtualgameListSlug":getTotal().virtualgameSlug,
-        "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+       "pagemeta":{
+        "title":"All Events and Parties - All In Adventures (Formerly Mystery Room)",
+        "description":"All In Adventures, formerly Mystery Room, is famous for hosting the most memorable parties and events in the United States. Perfect for all ages.",
+        "keywords":"all events, all escape rooms, all escape events, all events all in adventures, all events allinadventures, all events mystery room, all escape events all in adventures, all escape events allinadventures, all escape events mystery room, all escape room events all in adventures, all escape room events allinadventures, all escape room events mystery room, all parties, all escape rooms, all escape parties, all parties all in adventures, all parties allinadventures, all parties mystery room, all escape parties all in adventures, all escape parties allinadventures, all escape parties mystery room, all escape room parties all in adventures, all escape room parties allinadventures, all escape room parties mystery room",
+        "url":"/events",
+        "metaindex":true,
+        "metaimg":"/assets/all-event-mobile-hero/All-Event-Page-Hero-Image.jpg"
+      },
            
           "pagedata": {
                         "pagetitle":"PARTIES, EVENTS AND SPECIAL OCCASIONS",
