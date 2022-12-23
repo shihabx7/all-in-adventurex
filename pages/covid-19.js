@@ -8,6 +8,7 @@ import { FiChevronRight } from "react-icons/fi";
 
 import { getCovidPageData } from './api/getCovidPageData';
 import Seofields from '../comps/util/Seofields';
+import Link from 'next/link';
 
 
 
@@ -126,20 +127,21 @@ const covid19=(props)=>{
                         {
                             props.location?
                             <div className="game-btn-all ">
-                           
-                              <a href={"/"+props.location+"/activities/"} className="max-w-[260px] md:max-w-[280px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-white font-medium border-2 border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 rounded-full text-center">VIEW ALL GAMES</a>
-                            
-                                <a href={"/"+props.location+"/events/"} className="max-w-[260px] md:max-w-[280px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-[#424242] hover:text-white font-medium border-2 border-red-600 hover:border-red-700 hover:bg-red-700 rounded-full text-center">VIEW ALL EVENTS</a>
-                             
+                           <Link href={"/"+props.location+"/activities/"}> 
+                              <a  className="max-w-[260px] md:max-w-[280px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-white font-medium border-2 border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 rounded-full text-center">VIEW ALL GAMES</a>
+                              </Link>
+                              <Link href={"/"+props.location+"/events/"}> 
+                                <a  className="max-w-[260px] md:max-w-[280px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-[#424242] hover:text-white font-medium border-2 border-red-600 hover:border-red-700 hover:bg-red-700 rounded-full text-center">VIEW ALL EVENTS</a>
+                                </Link>
                         </div>
                              :
                              <div className="game-btn-all ">
-                                 
-                                   <a href="/activities/" className="max-w-[260px] md:max-w-[280px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-white font-medium border-2 border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 rounded-full text-center">VIEW ALL GAMES</a>
-                                 
-                                 
-                                     <a href="/events/" className="max-w-[260px] md:max-w-[280px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-[#dddddd] hover:text-white font-medium border-2 border-red-600 hover:border-red-700 hover:bg-red-700 rounded-full text-center">VIEW ALL EVENTS</a>
-                                  
+                                 <Link href="/activities/"> 
+                                   <a  className="max-w-[260px] md:max-w-[280px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-white font-medium border-2 border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 rounded-full text-center">VIEW ALL GAMES</a>
+                                   </Link>
+                                 <Link href="/events/"> 
+                                     <a className="max-w-[260px] md:max-w-[280px] my-4 block mx-auto uppercase py-3 md:py-4 px-6 text-lg text-[#dddddd] hover:text-white font-medium border-2 border-red-600 hover:border-red-700 hover:bg-red-700 rounded-full text-center">VIEW ALL EVENTS</a>
+                                     </Link>
                              </div>
 
                         } 
