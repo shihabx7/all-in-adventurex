@@ -9,7 +9,7 @@ import GiftFaq from "../../comps/giftCardPageComps/GiftFaq";
 import WhyAdvGiftCards from '../../comps/giftCardPageComps/WhyAdvGiftCards';
 
 import BuyLocGift from '../../comps/activitiyPageComps/BuyLocGift';
-import Seofields from '../../comps/util/Seofields';
+import Seofields from '../../comps/util/SeoFields';
 
 const viewLocGift=(props)=>{
    
