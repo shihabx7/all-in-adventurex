@@ -5,7 +5,7 @@ import Homenav from '../../comps/Homenav';
 import BreadcumNew from '../../comps/util/BreadcumNew';
 
 import { getLocationIndContactPageData } from '../api/LocationIndData/getLocationIndContactPageData';
-import GameLocHero from '../../comps/activitiyPageComps/GameLocHero';
+
 import StoreContact from '../../comps/contactComps/StoreContact';
 import Seofields from '../../comps/util/SeoFields';
 import ContactLocHero from '../../comps/activitiyPageComps/ContactLocHero';

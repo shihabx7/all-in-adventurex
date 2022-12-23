@@ -16,9 +16,6 @@ import Seofields from '../../../comps/util/SeoFields';
 const LocSingleActivity=(props)=>{
    
 
-  
-  
- 
      return (
          <>
          <Seofields meta={props.pagemeta}/>

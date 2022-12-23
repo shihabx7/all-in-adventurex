@@ -38,9 +38,7 @@ const viewLocGift=(props)=>{
                           locationlist={props.locationlist}
                           />
                  <div id="mainContent" className='main-content'>
-        {
-            console.log(props.pagedata)
-        }
+        
                  {/* =======header content and breadcum======== */}
                                 
                                <div className='breadcum py-1 md:py-1 lg:py-3 bg-[#fffceb]'>
