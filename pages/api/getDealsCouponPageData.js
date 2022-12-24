@@ -6,12 +6,15 @@ export const getDealsCouponPageData=()=>{
          "activitylistSlug":getTotal().activitylistSlug,
           "eventlistSlug":getTotal().eventlistSlug,
           "virtualgameListSlug":getTotal().virtualgameSlug,
-        "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+          "pagemeta":{
+  
+            "title":"Deals and Coupons | All In Adventures | Formerly Mystery Room",
+            "description":"Check out the best discounts on escape rooms and other fun games for any All In Adventures location. Grab the deal using the promo codes below!",
+            "keywords":"escape room deals, escape room coupons, escape room discounts, all in adventures deals, all in adventures coupons, all in adventures discounts, mystery room deals, mystery room coupons, mystery room discounts",
+            "url":"/deals-coupons",
+            "metaindex":true,
+            "metaimg":"/assets/gn-mobile-hero/allinadventures-deals-and-coupon-hero.jpg"
+                    },
            
           "pagedata": {
                         "pagetitle":"DEALS AND COUPONS",
@@ -55,17 +58,9 @@ export const getDealsCouponPageData=()=>{
                        "category":"deals",
                        "group":"deals",
                        "ques":"I am already a VIP Rewards Member. How many discounts can I use at one time?",
-                       "ans":["Yes! By signing up for our VIP Rewards Program, you will earn a FREE admission on your birthday each year! Choose a location here to sign up."],
+                       "ans":["You can only use one offer at a time per transaction."],
                     },
-                   {
-                     "id":5,
-                     "category":"deals",
-                     "group":"deals",
-                     "ques":"What if we need help during the game?",
-                     "ans":["You can only use one offer at a time per transaction."],
-                           
-       
-                   },
+                 
                    {
                     "id":6,
                     "category":"deals",
@@ -79,8 +74,8 @@ export const getDealsCouponPageData=()=>{
                     "id":7,
                     "category":"deals",
                     "group":"deals",
-                    "ques":"What if we need help during the game?",
-                    "ans":["We do! Please check out our events page here for more information and group rates. Have more questions? Reach out to us at <a href=\"mailto:sales@allinadventures.com\" class=\"text-gold hover:text-blue-700\"> sales@allinadventures.com</a> for additional help."],
+                    "ques":"Do you have any discounts for larger groups?",
+                    "ans":["We do! Please check out our <a href=\"/events\" class=\"text-gold hover:text-blue-700\">events</a> page here for more information and group rates. Have more questions? Reach out to us at <a href=\"mailto:sales@allinadventures.com\" class=\"text-gold hover:text-blue-700\"> sales@allinadventures.com</a> for additional help."],
                           
       
                   },

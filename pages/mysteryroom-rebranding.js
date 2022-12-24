@@ -9,6 +9,7 @@ import OtherHero from "../comps/util/OtherHero";
 import Rebranding from "../comps/util/Rebrannding";
 import ThankLinkBox from "../comps/util/ThankLinkBox";
 import TitleSeparator from "../comps/util/TitleSeparator";
+import Seofields from "../comps/util/SeoFields";
 
 const MysteryRoomRebrand =(props)=>{
     const toTitleCase=(title)=>{
@@ -24,11 +25,7 @@ const MysteryRoomRebrand =(props)=>{
          return(
             <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | Rebranding</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+           <Seofields meta={props.pagemeta}/>
            <Homenav 
            locationlist={props.locationlist}
            activitylist={props.activitylist}

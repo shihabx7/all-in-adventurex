@@ -1,4 +1,4 @@
-import Head from "next/dist/shared/lib/head";
+
 import Homenav from "../../comps/Homenav";
 import Footer from "../../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
@@ -8,6 +8,7 @@ import CareerHero from "../../comps/careersPageComps/CareerHero"
 import WhoWeAre from "../../comps/careersPageComps/WhoWeAre";
 import OpenPosition from "../../comps/careersPageComps/OpenPosition";
 import { getCareerHomePageData } from "../api/getCareerHomePageData";
+import Seofields from "../../comps/util/SeoFields";
 
 const Careers=(props)=>{
 
@@ -26,11 +27,7 @@ const Careers=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | Careers</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+          <Seofields meta={props.pagemeta}/>
            <Homenav locationlist={props.locationlist}
            activitylist={props.activitylist}
            eventlist={props.eventlist}/>

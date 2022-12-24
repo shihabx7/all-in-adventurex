@@ -158,7 +158,7 @@ import { getLocTotal } from "./AllDataList/getLocTotal"
                "review_text": "I visited All In Adventures with my friend for my first escape room experience, which was super fun! We had a great time and I will definitely return if I am in the area. Highly recommended!",
                "author" :"Myla S.",
                "author_location" :"Albany, NY, United States",
-               "rev_img":"/assets/all-testimonials-image/allinadventures-escape-room-testimonials-private-party.jpg",
+               "rev_img":"/assets/all-testimonials-image/allinadventures-testimonial-11.jpg",
                "rev_img_alt":"allinadventures-escape-room-private-party.jpg"
              },
              {   "id"  : 2,

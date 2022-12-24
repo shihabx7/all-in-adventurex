@@ -12,6 +12,7 @@ import RewardsProgram from "../comps/rewardPageComps/RewardsProgram";
 import ContactForJoin from "../comps/rewardPageComps/ContactForJoin";
 import RewardFaqs from "../comps/rewardPageComps/RewardFaqs";
 import EarningPoints from "../comps/rewardPageComps/EarningPoints";
+import Seofields from "../comps/util/SeoFields";
 
 const rewardProgram=(props)=>{
     const toTitleCase=(title)=>{
@@ -29,11 +30,7 @@ const rewardProgram=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | Rewards Program</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+           <Seofields meta={props.pagemeta}/>
            <Homenav locationlist={props.locationlist}
            activitylist={props.activitylist}
            eventlist={props.eventlist}/>
@@ -52,9 +49,7 @@ const rewardProgram=(props)=>{
               </Breadcrumbs>
         </div>
          {/* =======breadcum content and breadcum root page template======== end */}
-         {
-            console.log(props)
-         }
+         
 
         <GameHomeHero gametotal="not" pagedata={props.pagedata}/>
         <RewardsProgram/>

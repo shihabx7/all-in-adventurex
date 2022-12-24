@@ -1,4 +1,4 @@
-import Head from "next/dist/shared/lib/head";
+
 import Homenav from "../comps/Homenav";
 import Footer from "../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
@@ -8,6 +8,7 @@ import { FiChevronRight } from "react-icons/fi";
 import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
 import { getContactPageData } from "./api/getContactPageData";
 import CorContact from "../comps/contactComps/CorContact";
+import Seofields from "../comps/util/SeoFields";
 
 const Contact=(props)=>{
 
@@ -26,11 +27,7 @@ const Contact=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | Corporate Contact</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+          <Seofields meta={props.pagemeta}/>
            <Homenav locationlist={props.locationlist}
            activitylist={props.activitylist}
            eventlist={props.eventlist}/>

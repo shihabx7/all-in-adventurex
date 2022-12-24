@@ -1,4 +1,4 @@
-import Head from "next/dist/shared/lib/head";
+
 import Homenav from "../comps/Homenav";
 import Footer from "../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
@@ -8,6 +8,7 @@ import { getDealsCouponPageData } from "./api/getDealsCouponPageData";
 import GameHomeHero  from "../comps/activitiyPageComps/GameHomeHero";
 import DealsFaqs from "../comps/dealsPageComps/DealsFaqs";
 import AllDealsAndCoupon from "../comps/dealsPageComps/AllDealsAndCoupon";
+import Seofields from "../comps/util/SeoFields";
 
 
 
@@ -28,11 +29,7 @@ const DealsCoupon=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | Deals and Coupon</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+           <Seofields meta={props.pagemeta}/>
            <Homenav 
                     locationlist={props.locationlist}
                     activitylist={props.activitylist}

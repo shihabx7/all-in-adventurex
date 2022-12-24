@@ -8,6 +8,7 @@ import CareerHero from "../../comps/careersPageComps/CareerHero"
 import { getJobSlug } from "../api/getJobSlag";
 import { getJobPositionPageData } from "../api/getJobPositionPageData";
 import JobDetails from "../../comps/careersPageComps/JobDetails";
+import Seofields from "../../comps/util/SeoFields";
 
 const OpenJobPosition=(props)=>{
 
@@ -26,11 +27,7 @@ const OpenJobPosition=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | Careers</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+           <Seofields meta={props.pagemeta}/>
            <Homenav locationlist={props.locationlist}
             activitylist={props.activitylist}
             eventlist={props.eventlist}/>

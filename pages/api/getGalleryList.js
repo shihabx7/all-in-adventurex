@@ -9,11 +9,14 @@ export const getGalleryList=()=>{
       "eventlistSlug":getTotal().eventlistSlug,
       "virtualgameListSlug":getTotal().virtualgameSlug,
       "pagemeta":{
-
-        "matatilte":"title",
-        "metakeyword":"keywords",
-        "metadescription":"metadescription"
-      },
+  
+        "title":"Customer Gallery | All In Adventures | Formerly Mystery Room",
+        "description":"Look at some fun-filled photos of our customers after their escape room and other gaming experiences at All In Adventures (formerly Mystery Room).",
+        "keywords":"escape room customers, escape room players, escape room groups, all in adventures customers, all in adventures players, all in adventures groups, mystery room customers, mystery room players, mystery room groups, escape game customers, escape game players, escape game groups",
+        "url":"/gallery",
+        "metaindex":true,
+        "metaimg":"/assets/gn-mobile-hero/allinadventures-customer-gallery-hero.jpg"
+                },
        
     "pagedata":{
         "pagetitle":"ALL IN ADVENTURES CUSTOMER GALLERY",

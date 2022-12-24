@@ -1,4 +1,4 @@
-import Head from "next/dist/shared/lib/head";
+
 import Homenav from "../comps/Homenav";
 import Footer from "../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
@@ -11,6 +11,7 @@ import FranchiseTestimonials from "../comps/franchisePageComps/FranchiseTestimon
 import WhyAllinAdventure from "../comps/franchisePageComps/WhyAllinAdventure";
 import ProjectTimeLine from "../comps/franchisePageComps/ProjectTimeLine";
 import KeytoSuccess from "../comps/franchisePageComps/KeytoSuccess";
+import Seofields from "../comps/util/SeoFields";
 
 const franchise  = (props) => {
     const toTitleCase=(title)=>{
@@ -28,11 +29,7 @@ const franchise  = (props) => {
       return(
           <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | Franchise</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+          <Seofields meta={props.pagemeta}/>
            <Homenav locationlist={props.locationlist}
            activitylist={props.activitylist}
            eventlist={props.eventlist}/>
@@ -51,9 +48,7 @@ const franchise  = (props) => {
               </Breadcrumbs>
         </div>
          {/* =======breadcum content and breadcum root page template======== end */}
-         {
-            console.log(props)
-         }
+         
          <FranchiseHero pagedata={props.pagedata} label="INQUIRY NOW" linkloc="/franchise-contact"/>
          <FranchiseModel/>
         {/*<FranchiseTestimonials/> */} 

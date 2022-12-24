@@ -1,4 +1,4 @@
-import Head from "next/dist/shared/lib/head";
+
 import Homenav from "../comps/Homenav";
 import Footer from "../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
@@ -7,6 +7,7 @@ import { FiChevronRight } from "react-icons/fi";
 import FranchiseHero from '../comps/franchisePageComps/FranchiseHero';
 import { getFranchiseContactPageData } from './api/getFranchiseContactPageData';
 import FranchiseContactForm from "../comps/franchisePageComps/FranchiseContact";
+import Seofields from "../comps/util/SeoFields";
 
 const FranchiseContact=(props)=>{
     const toTitleCase=(title)=>{
@@ -24,11 +25,7 @@ const FranchiseContact=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | Franchise contact</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+           <Seofields meta={props.pagemeta}/>
            <Homenav locationlist={props.locationlist}
            activitylist={props.activitylist}
            eventlist={props.eventlist}/>
@@ -47,9 +44,7 @@ const FranchiseContact=(props)=>{
               </Breadcrumbs>
         </div>
          {/* =======breadcum content and breadcum root page template======== end */}
-         {
-            console.log(props)
-         }
+       
          <FranchiseHero pagedata={props.pagedata} label="FILL OUT THE INQUIRY FORM" linkloc="#inquiry"/>
          
          <div className="inquiry-form" id="inquiry">

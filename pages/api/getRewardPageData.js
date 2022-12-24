@@ -6,12 +6,15 @@ export const getRewardPageData=()=>{
          "activitylistSlug":getTotal().activitylistSlug,
           "eventlistSlug":getTotal().eventlistSlug,
           "virtualgameListSlug":getTotal().virtualgameSlug,
-        "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+          "pagemeta":{
+  
+            "title":"Rewards Program | All In Adventures | Formerly Mystery Room",
+            "description":"Our rewards program offers you to earn points for each and every game experience. It includes surprise offers, free experiences on your birthdays and more.",
+            "keywords":"escape room rewards program, all in adventures rewards program, mystery room rewards program",
+            "url":"/rewards-program",
+            "metaindex":true,
+            "metaimg":"/assets/gn-mobile-hero/allinadventures-reward-program-hero.jpg"
+                    },
            
           "pagedata": {
                         "pagetitle":"WE LOVE OUR LOYAL CUSTOMERS",

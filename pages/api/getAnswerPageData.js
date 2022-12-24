@@ -18,7 +18,7 @@ export const getAnswerPageData=()=>{
            
           "pagedata": {
                         "pagetitle":"ANSWERS",
-                        "pagesubtitle":"At All In Adventures, we believe volunteering is a two-way street that benefits both the organization and the volunteer. It is an instrumental force in promoting positive and sustainable growth within communities.",
+                        "pagesubtitle":"If you need answers for MYSTERY and SURPRISE you can find them here.",
                          
                         "totalLocations": getTotal().totalLocations,
                         "coverimageL":"/assets/gn-desktop-hero/All-In-Adventures-Generic-Hero-Image-Desktop.jpg",

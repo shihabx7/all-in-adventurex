@@ -23,22 +23,7 @@ import HowToPlay from '../../comps/homepagecomps/HowToPlay';
 import Seofields from '../../comps/util/SeoFields';
 const location=(props)=>{
 
-    /* custom breadcum code 
- const toTitleCase=(title)=>{
-   const titlefres=title.replace(/-/g,' ')
-    const btitle=titlefres.split(' ').map((word)=>{
-        
-                return (word.charAt(0).toUpperCase() + word.slice(1))
-            
-            }).join(" ") // breadcum title capitalize
     
-    
-    return (
-
-      <div className='bitem flex items-center'><span>{btitle}</span> <span className='bsep text-gold'><FiChevronRight/></span></div>
-    )
-   }
-    custom breadcum code */
   
    const getCap=(title)=>{
 

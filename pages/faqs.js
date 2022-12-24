@@ -6,6 +6,7 @@ import { FiChevronRight } from "react-icons/fi";
 import { getAllFaq } from "./api/getAllFaq";
 import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
 import AllFaq from "../comps/faqComps/AllFaq";
+import Seofields from "../comps/util/SeoFields";
 
 
 const faqs=(props)=>{
@@ -27,11 +28,7 @@ const faqs=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | Faqs</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+              <Seofields meta={props.pagemeta}/>
            <Homenav locationlist={props.locationlist}
            activitylist={props.activitylist}
            eventlist={props.eventlist}/>

@@ -426,7 +426,7 @@ const WhatisEscapeBlog=()=>{
                                       <div className="mt-3 lg:mt-4">
                                              
                                              <p className="lg:text-lg text-gray-700 ">
-                                             Get more answers to frequently asked escape room questions <a href="/faq" className="text-blue-600 hover:text-blue-700 underline underline-offset-2">here!</a>
+                                             Get more answers to frequently asked escape room questions <a href="/faqs" className="text-blue-600 hover:text-blue-700 underline underline-offset-2">here!</a>
                                                 
                                              </p>
                                              

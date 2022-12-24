@@ -10,6 +10,7 @@ import CareerHero from "../../comps/careersPageComps/CareerHero";
 import JobApplication from "../../comps/careersPageComps/JobApplication";
 
 import LocationStoreMenu from "../../comps/headerComps/LocationStoreMenu";
+import Seofields from "../../comps/util/SeoFields";
 
 
 
@@ -30,11 +31,7 @@ const apply=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All In Adventures | Apply</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+           <Seofields meta={props.pagemeta}/>
           
            <Homenav 
            locationlist={props.locationlist}

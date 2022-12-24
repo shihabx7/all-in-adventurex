@@ -6,12 +6,16 @@ export const getPricingPageData=()=>{
       "activitylistSlug":getTotal().activitylistSlug,
        "eventlistSlug":getTotal().eventlistSlug,
        "virtualgameListSlug":getTotal().virtualgameSlug,
-        "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+       "pagemeta":{
+  
+        "title":"Pricing | All In Adventures | Formerly Mystery Room",
+        "description":"Escape Room prices vary based on the group size. We offer affordable and innovative pricing for all our games and activities to appeal to groups of all sizes.",
+        "keywords":"escape room pricing, escape room cost, all in adventures pricing, all in adventures cost, mystery room pricing, mystery room cost, escape game pricing, escape game cost,",
+        "url":"/pricing",
+        "metaindex":true,
+        "metaimg":"/assets/gn-mobile-hero/allinadventures-pricing-hero.jpg"
+                },
+       
            
           "pagedata": {
                         "pagetitle":"ALL IN ADVENTURES PRICING",

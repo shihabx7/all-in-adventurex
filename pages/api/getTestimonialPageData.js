@@ -6,12 +6,15 @@ export const getTestimonialPageData=()=>{
          "activitylistSlug":getTotal().activitylistSlug,
           "eventlistSlug":getTotal().eventlistSlug,
           "virtualgameListSlug":getTotal().virtualgameSlug,
-        "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
-          },
+          "pagemeta":{
+  
+            "title":"Testimonials | All In Adventures | Formerly Mystery Room",
+            "description":"Our escape room games have fueled epic adventures all across the US. Just listen to the fascinating stories from families, friends and corporate players.",
+            "keywords":"escape room testimonial, escape room testimonials, escape room review, escape room reviews, all in adventures testimonial, all in adventures testimonials, all in adventures review, all in adventures reviews, mystery room testimonial, mystery room testimonials, mystery room review, mystery room reviews, escape game testimonial, escape game testimonials, escape game review, escape game reviews,",
+            "url":"/testimonials",
+            "metaindex":true,
+            "metaimg":"/assets/gn-mobile-hero/allinadventures-testimonials-hero.jpg"
+                    },
            
         "pagedata":{
             "pagetitle":"ALL IN ADVENTURES TESTIMONIALS",

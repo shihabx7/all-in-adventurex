@@ -9,6 +9,7 @@ import { FiChevronRight } from "react-icons/fi";
 import { getWhatisEscape } from "./api/getWhatisEscape";
 import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
 import WhatisEscapeBlog from "../comps/util/WhatisEscapeBlog";
+import Seofields from "../comps/util/SeoFields";
 
 
 const WhtatisEscape=(props)=>{
@@ -27,11 +28,7 @@ const WhtatisEscape=(props)=>{
  return(
     <>
         {/* =======header content======== */}
-        <Head>
-                 <title>All in adventure | What is an escape room</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+        <Seofields meta={props.pagemeta}/>
           
            <Homenav 
            locationlist={props.locationlist}

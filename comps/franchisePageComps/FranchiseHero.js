@@ -22,13 +22,13 @@ const FranchiseHero=(props)=>{
                         props.pagedata.pagetitle 
                  
                  } </h1>
-                 <p className='text-gray-100 max-w-2xl mx-auto text-center lg:text-lg'>{props.pagedata.pagesubtitle } </p>
+                 <p className='text-gray-100 max-w-[760px] mx-auto text-center lg:text-lg'>{props.pagedata.pagesubtitle } </p>
                  </div>
                 <div className="max-w-md mx-auto mt-8 ">
 
                         {/*============location search btn==========*/}
                        
-                            <a href={'#fransform'} className="bg-red-600 hover:bg-red-700 rounded-full py-3 px-8 lg:py-4 lg:px-12 max-w-sm block mx-auto text-white text-lg text-center ">{props.label}</a>
+                            <a href={'/franchise-contact'} className="bg-red-600 hover:bg-red-700 rounded-full py-3 px-8 lg:py-4 lg:px-12 max-w-sm block mx-auto text-white text-lg text-center ">{props.label}</a>
                         
                       
                          {/*============location search btn==========*/}

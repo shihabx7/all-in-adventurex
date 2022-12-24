@@ -238,12 +238,12 @@ const StoreContact=(props)=>{
 
                         console.log(result.data)
                         console.log(result.success)
-                      //  if(result.success){
-                      //      router.push({
-                      //          pathname: '/thank-you-store',
+                      if(result.success){
+                       router.push({
+                                pathname: '/thank-you-store',
                                
-                       //     }) 
-                       // }
+                           }) 
+                        }
             }
 
         }

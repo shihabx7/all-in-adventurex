@@ -24,22 +24,36 @@ export default async function corContactHandler(req, res) {
   
     // Found the name.
     // Sends a HTTP success code
-    const transporter = nodemailer.createTransport({
-        host: "smtp.gmail.com",
-        port: 465,
-        secure: true,
+   // const transporter = nodemailer.createTransport({
+   //     host: "smtp.gmail.com",
+   //     port: 465,
+   //     secure: true,
+   //     auth: {
+    //      user: 'shihab.dgency@gmail.com',
+    //      pass: 'figvrianzmbiucmu'
+    //    }
+    //  });
+
+      const transporter = nodemailer.createTransport({
+        host: "smtp.office365.com",
+        port: 587,
+        secureConnection: false,
+        tls: {
+          ciphers: 'SSLv3'
+      },
         auth: {
-          user: 'shihab.dgency@gmail.com',
-          pass: 'figvrianzmbiucmu'
+          user: 'sender@allinadventures.com',
+          pass: 'DgencyAIA@2023'
         }
       });
+      
 
       try {
         await transporter.sendMail({
-          from: retData.Email,
-          to: "shihabx7@gmail.com",
-          //cc:"shihabx7@gmail.com",
-         // bcc:"dgency.com@gmail.com",
+          from: "sender@allinadventures.com",
+          to: "sales@allinadventures.com",
+          cc:"dgency.com@gmail.com ",
+          bcc:"shihab.dgency@gmail.com",
           subject: `Corporate Contact from ${retData.Name}`,
           html: `
                 <p><strong>Name: </strong> ${retData.Name}</p>

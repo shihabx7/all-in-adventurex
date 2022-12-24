@@ -1,4 +1,4 @@
-import Head from 'next/head'
+
 import styles from '../../styles/alllocations.module.css'
 import TitleSeparator from "../../comps/util/TitleSeparator";
 import LocationListView from  "../../comps/locationsPage/LocationListView";
@@ -6,10 +6,10 @@ import Footer from '../../comps/Footer';
 import Homenav from '../../comps/Homenav';
 import Breadcrumbs from 'nextjs-breadcrumbs';
 import { FiChevronRight } from "react-icons/fi";
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { getLocationsPageData } from '../api/getLocationsPageData';
 import Link from 'next/link';
-
+import Seofields from '../../comps/util/SeoFields';
 const Locations=(props)=>{
   
 
@@ -61,6 +61,7 @@ const ScrollTab=(id)=>{
 /* ========================page content=================== */
 return (
   <>
+    <Seofields meta={props.pagemeta}/>
       <Homenav locationlist={props.states}
         activitylist={props.activitylist}
         eventlist={props.eventlist}/>
@@ -68,11 +69,7 @@ return (
             <div id="mainContent" className='main-content nobtn-main-content'>
 
   {/* =======header content and breadcum======== */}
-    <Head>
-        <title>All in adventure Locations</title>
-        <meta name="description" content="All in one adventure escape games" />
-        
-      </Head>
+    
       <div className='breadcums  py-1 md:py-2 bg-[#fffceb]'>
              <Breadcrumbs  replaceCharacterList={[{ from: '-', to: ' ' }]} 
                     listClassName="max-w-7xl mx-auto px-2 md:px-4 breadcum-list text-sm md:text-base lg:text-lg" 
@@ -191,12 +188,21 @@ export const getStaticProps=async ()=>{
       locationlist:pagedata.states,
       activitylist:pagedata.activitylistSlug,
       eventlistSlug:pagedata.eventlistSlug,
+      pagemeta:{
+  
+        "title":"All Locations | All In Adventures | Formerly Mystery Room",
+        "description":"Browse all our escape room locations across the United States. Grab your team and head over to any of our locations to experience interactive fun activities.",
+        "keywords":"escape room venue, escape room venues, escape room location, escape room locations, escape room center, escape room centers, all in adventures venue, all in adventures venues, all in adventures location, all in adventures locations, all in adventures center, all in adventures centers, mystery room venue, mystery room venues, mystery room location, mystery room locations, mystery room center, mystery room centers, escape game venue, escape game venues, escape game location, escape game locations, escape game center, escape game centers,",
+        "url":"/locations",
+        "metaindex":true,
+        "metaimg":"/assets/gn-mobile-hero/All-In-Adventures-Generic-Hero-Image-Mobile.jpg"
+                },
       
    
     },
    
     // - At most once every 10 seconds
-   // revalidate: 30, // In seconds
+   revalidate: 100, 
   }
 
 

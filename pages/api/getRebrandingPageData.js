@@ -6,11 +6,14 @@ export const getRebrandingPageData=()=>{
          "activitylistSlug":getTotal().activitylistSlug,
           "eventlistSlug":getTotal().eventlistSlug,
           "virtualgameListSlug":getTotal().virtualgameSlug,
-        "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
+          "pagemeta":{
+  
+            "title":"Mystery Room is Now All In Adventures | Rebranding",
+            "description":"We're changing our name from Mystery Room to All In Adventures. Your favorite fun activity center is now more than an escape room place.",
+            "keywords":"mystery room is now all in adventures, mystery room rebranding, all in adventures rebranding",
+            "url":"/mysteryroom-rebranding",
+            "metaindex":true,
+            "metaimg":"/assets/gn-mobile-hero/All-In-Adventures-Generic-Hero-Image-Mobile.jpg"
           },
            
           "pagedata": {

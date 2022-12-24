@@ -9,7 +9,7 @@ import TitleSeparator from "../comps/util/TitleSeparator";
 import MainGallery from "../comps/util/MainGallery";
 import Link from "next/link";
 
-
+import Seofields from "../comps/util/SeoFields";
 
 const gallery=(props)=>{
 
@@ -30,11 +30,7 @@ const gallery=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | Gallery</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+              <Seofields meta={props.pagemeta}/>
            <Homenav locationlist={props.locationlist}
            activitylist={props.activitylist}
            eventlist={props.eventlist}/>
@@ -145,12 +141,6 @@ const gallery=(props)=>{
 
         
 
- 
-     {
-      console.log(props)
-     }
-          
-  
 
   {/* =========================================================================================main content ======== end */}
         </div>

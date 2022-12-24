@@ -13,11 +13,14 @@ export const getAboutUs=async()=>{
          "activitylistSlug":td.activitylistSlug,
           "eventlistSlug":td.eventlistSlug,
           "virtualgameListSlug":td.virtualgameSlug,
-        "pagemeta":{
-            
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
+          "pagemeta":{
+  
+            "title":"About Us | All In Adventures | Formerly Mystery Room",
+            "description":"All In Adventures (formerly Mystery Room) is now more than an escape room place. Come join us to experience more entertaining activities. ",
+            "keywords":"all in adventures about us, all in adventures about, mystery room about us, mystery room about",
+            "url":"/about",
+            "metaindex":true,
+            "metaimg":"/assets/gn-mobile-hero/allinadventures-about-us-hero.jpg"
           },
            
         "pagedata":{

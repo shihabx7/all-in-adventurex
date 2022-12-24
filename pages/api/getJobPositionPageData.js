@@ -39,10 +39,13 @@ const jobData={
         "coverimageM":"/assets/gn-mobile-hero/allinadventures-career-associate-hero.jpg",
         "pagesubtitle":"This is a great opportunity for anyone excited for the chance to grow and develop with a startup company that is looking to change the face of how people interact socially through live games and activities.",
         "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
+  
+            "title":"Apply For Associate Position | All In Adventures",
+            "description":"This is a great opportunity for anyone excited for the chance to grow and develop with a startup company. Apply today!",
+            "keywords":"all in adventures careers, all in adventures jobs, all in adventures associate",
+            "url":"/careers/associate",
+            "metaindex":true,
+            "metaimg":"/assets/gn-mobile-hero/allinadventures-career-associate-hero.jpg"
           },
         "job_roles":[
             {
@@ -176,10 +179,13 @@ const jobData={
         "coverimageM":"/assets/gn-mobile-hero/allinadventures-career-store-lead-hero.jpg",
         "pagesubtitle":"This is a great opportunity for anyone excited for the chance to grow and develop with a startup company that is looking to change the face of how people.",
         "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
+  
+            "title":"Apply For Store Lead Position | All In Adventures",
+            "description":"This is a great opportunity for anyone excited for the chance to grow and develop with a startup company. Apply today!",
+            "keywords":"all in adventures careers, all in adventures jobs, all in adventures store lead,",
+            "url":"/careers/store-lead",
+            "metaindex":true,
+            "metaimg":"/assets/gn-mobile-hero/allinadventures-career-store-lead-hero.jpg"
           },
         "job_roles":[
             {
@@ -345,10 +351,13 @@ const jobData={
         "coverimageM":"/assets/gn-mobile-hero/allinadventures-career-assistant-manager-hero.jpg",
         "pagesubtitle":"This is a great opportunity for anyone excited for the chance to grow and develop with a startup company that is looking to change the face of how people.",
         "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
+  
+            "title":"Apply For Assistant Manager Position | All In Adventures",
+            "description":"This is a great opportunity for anyone excited for the chance to grow and develop with a startup company. Apply today!",
+            "keywords":"all in adventures careers, all in adventures jobs, all in adventures assistant manager",
+            "url":"/careers/assistant-manager",
+            "metaindex":true,
+            "metaimg":"/assets/gn-mobile-hero/allinadventures-career-assistant-manager-hero.jpg"
           },
         "job_roles":[
             {
@@ -514,10 +523,13 @@ const jobData={
         "coverimageM":"/assets/gn-mobile-hero/allinadventures-career-store-manager-hero.jpg",
         "pagesubtitle":"This is a great opportunity for anyone excited for the chance to grow and develop with a startup company that is looking to change the face of how people.",
         "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
+  
+            "title":"Apply For Store Manager Position | All In Adventures",
+            "description":"This is a great opportunity for anyone excited for the chance to grow and develop with a startup company. Apply today!",
+            "keywords":"all in adventures careers, all in adventures jobs, all in adventures store manager",
+            "url":"/careers/store-manager",
+            "metaindex":true,
+            "metaimg":"/assets/gn-mobile-hero/allinadventures-career-store-manager-hero.jpg"
           },
         "job_roles":[
             {

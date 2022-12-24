@@ -52,12 +52,6 @@ const showAllevents=(props)=>{
           <EventList events={props.events}/>
           <EventContact locationlist={props.locationlist} eventlist={props.eventlist}/>
        
-
-  {
-      console.log(props)
-  }
-
-
   {/* =========================================================================================main content ======== end */}
         </div>
   

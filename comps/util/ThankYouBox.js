@@ -13,7 +13,7 @@ const ThankYouBox=(props)=>{
                 <div className="px-4 py-4 rounded-md thank-box">
                         <div className="thank-head text-center">
                                 <h1 className="thn-title golden-text drop-shadow-lg text-5xl md:text-7xl font-extrabold font-os">THANK YOU</h1>
-                                <h2 className="text-[#aaaaaa] text-lg md:text-xl mt-4">Your submission has been recieved</h2>
+                                <h2 className="text-[#aaaaaa] text-lg md:text-xl mt-4">Your submission has been received.</h2>
                                 <h2 className="text-[#aaaaaa] text-lg md:text-xl mt-1">We will get in touch with you shortly.</h2>
 
                         </div>
@@ -21,7 +21,7 @@ const ThankYouBox=(props)=>{
                             <h3 className="text-3xl golden-text font-semibold mb-4">FOR MORE INFORMATION</h3>
                             <div className="text-center text-[#aaaaaa]">
                                     <a className="block md:text-lg hover:text-[#FFEFCD]" href="tel:+1 844-502-5546"> <span className="md:text-xl">Call us :</span> <span className="underline underline-offset-4">+1 844-502-5546</span> </a>
-                                    <a className="mt-1 block md:text-lg hover:text-[#FFEFCD]" href="mail:custsvc@allinadventures.com"><span className="md:text-xl">Email us :</span > <span className="underline underline-offset-4">custsvc@allinadventures.com</span></a> 
+                                    <a className="mt-1 block md:text-lg hover:text-[#FFEFCD]" href="mailto:custsvc@allinadventures.com"><span className="md:text-xl">Email us :</span > <span className="underline underline-offset-4">custsvc@allinadventures.com</span></a> 
                              </div>
                              <div className="flex justify-center space-x-4 thank-social-box mt-4"> 
                                    

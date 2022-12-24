@@ -7,11 +7,16 @@ export const getAllFaq=()=>{
        "eventlistSlug":getTotal().eventlistSlug,
        "virtualgameListSlug":getTotal().virtualgameSlug,
 
-        "pagemeta":{
-            "metatitle":"All in Adventure Faq",
-            "meta_descriptin":"Escape games faq",
-            "meta_keyword":"escape rooms, escape games, faq"
-                     },
+       "pagemeta":{
+  
+                    "title":"Frequently Asked Questions | All In Adventures",
+                    "description":"Browse through these FAQs to find answers to commonly raised questions. If you don't see what's on your mind, reach out to us anytime on phone or email.",
+                    "keywords":"escape room faqs, escape room faq, escape room frequently asked questions, all in adventures faqs, all in adventures faq, all in adventures frequently asked questions, mystery room faqs, mystery room faq, mystery room frequently asked questions,",
+                    "url":"/faqs",
+                    "metaindex":true,
+                    "metaimg":"/assets/gn-mobile-hero/allinadventures-faq-hero.jpg"
+                  },
+       
         "pagedata":{
             "pagetitle":"FREQUENTLY ASKED QUESTIONS",
             "pagesubtitle":"Have you ever wished, just for a moment, you could live inside an adventure movie? Want to be the hero that solves the mystery or saves the world? Well, now you can! Book your adventures today! ",

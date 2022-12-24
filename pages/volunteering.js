@@ -1,4 +1,4 @@
-import Head from "next/dist/shared/lib/head";
+
 import Homenav from "../comps/Homenav";
 import Footer from "../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
@@ -11,6 +11,7 @@ import Organization from "../comps/volunteeringPageComps/Organization";
 import ContactVolunteer from "../comps/volunteeringPageComps/ContactVolunteer";
 import VolunteeringLoc from "../comps/volunteeringPageComps/VolunteeringLoc";
 import LocationStoreMenu from "../comps/headerComps/LocationStoreMenu";
+import Seofields from "../comps/util/SeoFields";
 
 
 const Volunteering=(props)=>{
@@ -30,12 +31,8 @@ const Volunteering=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | Volunteering</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
-          
+           
+          <Seofields meta={props.pagemeta}/>
            <Homenav 
            locationlist={props.locationlist}
            activitylist={props.activitylist}

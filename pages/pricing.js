@@ -15,7 +15,7 @@ import PrivcingVirtualGames from "../comps/pricingPageComps/PrivcingVirtualGames
 import PricingEvents from "../comps/pricingPageComps/PricingEvents";
 import PricingGiftCard from "../comps/pricingPageComps/PricingGiftCard";
 
-
+import Seofields from "../comps/util/SeoFields";
 
 
 
@@ -35,11 +35,7 @@ const Pricing=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | Pricing</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+          <Seofields meta={props.pagemeta}/>
            <Homenav locationlist={props.locationlist}
            activitylist={props.activitylist}
            eventlist={props.eventlist}

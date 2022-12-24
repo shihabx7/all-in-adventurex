@@ -161,7 +161,7 @@ const JobApplicationForms=(props)=>{
     }
     const submitForm=()=>{
 
-        alert("form submition success")
+        alert("Your application has been received")
     }
 
     return (
@@ -175,27 +175,27 @@ const JobApplicationForms=(props)=>{
             <div className="job-form-body">
                 {
                     formStep==0 && 
-                    <ApplicantInfo  setFormName={setFormName} appInfo1={appInfo1} setAppInfo1={setAppInfo1}/>
+                    <ApplicantInfo  setFormName={setFormName} appInfo1={appInfo1} setAppInfo1={setAppInfo1} setFormErrFlag={setFormErrFlag}/>
                 }
                 {
                     formStep==1 && 
-                    <ApplicantInfo2  locationlist={props.locationlist} setFormName={setFormName} appInfo2={appInfo2} setAppInfo2={setAppInfo2}/>
+                    <ApplicantInfo2  locationlist={props.locationlist} setFormName={setFormName} appInfo2={appInfo2} setAppInfo2={setAppInfo2} setFormErrFlag={setFormErrFlag}/>
                 }
                 {
                     formStep==2 && 
-                    <Availability setFormName={setFormName} availability={availability} setAvailability={setAvailability}/>
+                    <Availability setFormName={setFormName} availability={availability} setAvailability={setAvailability} setFormErrFlag={setFormErrFlag}/>
                 }
                  {
                     formStep==3 && 
-                    <Education setFormName={setFormName} education={education} setEducation={setEducation}/>
+                    <Education setFormName={setFormName} education={education} setEducation={setEducation} setFormErrFlag={setFormErrFlag}/>
                 }
                  {
                     formStep==4 && 
-                    <Experience setFormName={setFormName} jobExp={jobExp} setJobExp={setJobExp}/>
+                    <Experience setFormName={setFormName} jobExp={jobExp} setJobExp={setJobExp} setFormErrFlag={setFormErrFlag}/>
                 }
                 {
                     formStep==5 && 
-                    <References setFormName={setFormName} references={references} setReferences={setReferences}/>
+                    <References setFormName={setFormName} references={references} setReferences={setReferences} setFormErrFlag={setFormErrFlag}/>
                 }
 
             </div>

@@ -1,8 +1,6 @@
 import { getALlActivityList } from "./getAllActivityList"
 import { getAllEventList } from "./getAllEventList"
 import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
-import getYextData from "./YextApi/getYextLocationData";
-
 
 
  export const getLocationsPageData=()=> {

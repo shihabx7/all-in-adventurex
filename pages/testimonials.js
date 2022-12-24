@@ -1,4 +1,4 @@
-import Head from "next/dist/shared/lib/head";
+
 import Homenav from "../comps/Homenav";
 import Footer from "../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
@@ -9,6 +9,7 @@ import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
 import TitleSeparator from "../comps/util/TitleSeparator";
 import MainTestimonials from "../comps/testimonialPageComps/MainTestimonials";
 import Link from "next/link";
+import Seofields from '../comps/util/SeoFields';
 
 const testimonials=(props)=>{
   
@@ -27,11 +28,7 @@ const testimonials=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | testimonial</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+         <Seofields meta={props.pagemeta}/>
            <Homenav locationlist={props.locationlist}
            activitylist={props.activitylist}
            eventlist={props.eventlist}/>

@@ -2321,7 +2321,7 @@ const activityDataset={
         "axe-throwing":{
           "activityname":"Axe Throwing",
           
-          "pagesubtitle":"Come throw axes at our exciting interactive targets with your friends and family! Test your hand-eye coordination and see if you can hit a bull's eye.",
+          "pagesubtitle":"Come throw axes at our exciting interactive targets with your friends and family! Test your hand-eye coordination and see if you can hit a bull's eye. We can accommodate up to 24 players on the 6 lanes.",
           "price":29.89,
           "duration":60,
           "max_players":4,

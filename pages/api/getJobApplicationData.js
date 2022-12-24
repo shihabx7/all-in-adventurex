@@ -6,11 +6,14 @@ export const getJobApplicationData=()=>{
          "activitylistSlug":getTotal().activitylistSlug,
           "eventlistSlug":getTotal().eventlistSlug,
           "virtualgameListSlug":getTotal().virtualgameSlug,
-        "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
+          "pagemeta":{
+  
+            "title":"Apply for job | All In Adventures | Formerly Mystery Room",
+            "description":"We're incredibly passionate about placing great people in their dream roles and believe in serving our guests and each other every day. Join us.",
+            "keywords":"escape room careers, all in adventures careers, mystery room careers, escape room jobs, all in adventures jobs, mystery room jobs,",
+            "url":"/careers/apply",
+            "metaindex":true,
+            "metaimg":"/assets/gn-mobile-hero/allinadventures-career-hero.jpg"
           },
            
           "pagedata": {

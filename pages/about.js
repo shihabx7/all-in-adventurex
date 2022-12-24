@@ -12,9 +12,10 @@ import CoreValue from "../comps/aboutPageComps/CoreValue";
 import MeetOurTeam from "../comps/aboutPageComps/MeetOurTeam";
 import Partner from "../comps/aboutPageComps/Partner";
 import HappyTeam from "../comps/aboutPageComps/HappyTeam";
+import Seofields from "../comps/util/SeoFields";
 const AboutUs=(props)=>{
 
-    console.log(props.pagedata.app)
+    
     const toTitleCase=(title)=>{
         const titlefres=title.replace(/-/g,' ')
         const btitle=titlefres.split(' ').map((word)=>{return (word.charAt(0).toUpperCase() + word.slice(1))}).join(" ") // breadcum title capitalize
@@ -30,11 +31,7 @@ const AboutUs=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-           <Head>
-                 <title>All in adventure | About</title>
-                  <meta name="description" content="All in adventure escape games" />
-        
-          </Head>
+           <Seofields meta={props.pagemeta}/>
            <Homenav locationlist={props.locationlist}
            activitylist={props.activitylist}
            eventlist={props.eventlist}/>
@@ -74,13 +71,12 @@ export default AboutUs
 
 export const getStaticProps=async()=>{
     const aboutPageData=await getAboutUs()
-    //const getdata = await fetch(`https://api.yext.com/v2/accounts/me/entities?api_key=7bd809cf968d3f58da77e54e3e116925&v=20221126&limit=5`);
-    //const data = await getdata.json();
+   
     
 
     return{
         props:{
-           // app:data,
+           
             pagedata:aboutPageData.pagedata,
             pagemeta:aboutPageData.pagemeta,
             locationlist:aboutPageData.locationlist,

@@ -182,7 +182,7 @@ const CorContact=()=>{
      }
     const getMsg=(e)=>{
         const msg=e.target.value.trim()
-        if(msg.length>4){
+        if(msg.length>2){
             setFieldValue({...fieldVlue,msg:escape(msg)})
             
         }
@@ -294,6 +294,7 @@ const CorContact=()=>{
                                                     type="text"
                                                     id="fname" 
                                                     name="fname"
+                                                    
                                                     className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent" 
                                                     placeholder="Your first name" 
                                                     pattern="[a-zA-z ]{3,20}"

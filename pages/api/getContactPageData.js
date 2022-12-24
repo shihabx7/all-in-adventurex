@@ -7,11 +7,14 @@ export const getContactPageData=()=>{
          "activitylistSlug":getTotal().activitylistSlug,
           "eventlistSlug":getTotal().eventlistSlug,
           "virtualgameListSlug":getTotal().virtualgameSlug,
-        "pagemeta":{
-
-            "matatilte":"title",
-            "metakeyword":"keywords",
-            "metadescription":"metadescription"
+          "pagemeta":{
+  
+            "title":"Corporate Contact | All In Adventures | Formerly Mystery Room",
+            "description":"The whole purpose of this contact form is ONLY corporate related communication. Fill out the form below and our corporate team will be in touch shortly.",
+            "keywords":"all in adventures corporate contact, mystery room corporate contact,",
+            "url":"/corporate-contact",
+            "metaindex":true,
+            "metaimg":"/assets/gn-mobile-hero/allinadventures-corporate-contact-hero.jpg"
           },
            
         "pagedata":{

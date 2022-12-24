@@ -1,5 +1,18 @@
 import { useState } from "react"
-const ApplicantInfo=({setFormName})=>{
+const ApplicantInfo=({setFormName,appInfo1,setAppInfo1,setFormErrFlag})=>{
+
+    const [appInfoErr,setAppInfoErr]=useState({
+                                                 fnameErr:false,
+                                                 lnameErr:false,
+                                                 emailErr:false,
+                                                 phoneErr:false,
+                                                 stAddressErr:false,
+                                                 stAddressErr:false,
+                                                 cityErr:false,
+                                                 stateErr:false,
+                                                 zipErr:false,
+                                                 countryErr:false,
+                                             })
    
 
     return(
@@ -13,26 +26,33 @@ const ApplicantInfo=({setFormName})=>{
                                                 <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">First name *</p>
                                                 <input 
                                                     type="text" 
-                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green" 
+                                                    className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent" 
                                                     placeholder="Your first name" 
                                                     pattern="[a-zA-z ]{3,20}"
                                                     title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                     required>
 
                                                     </input>
-                                                    <p className="mt-1 text-xs md:text-sm evevt-input-label text-red-700 fErr hidden">First name *</p>
+                                                    {
+                                                            appInfoErr.fnameErr &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr ">Invalid name. Only letter and space allowed (between 3-20 character)</p>
+                                                    }
+                                                    
                                          </div>
                                          <div className="form-col w-full md:w-[48%]">
                                                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Last name *</p>
                                                 <input  type="text"
-                                                        className=" w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-red"
+                                                        className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                                                         placeholder="Your last name"
                                                         pattern="[a-zA-z ]{3,20}"
                                                         title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                         required>
 
                                                      </input>
-                                                     <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden">First name? *</p>
+                                                     {
+                                                            appInfoErr.lnameErr &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr ">Invalid name. Only letter and space allowed (between 3-20 character)</p>
+                                                    }
                                          </div>
                         </div>
                 {/*======================== contact form row fname + lname end=======================*/}
@@ -42,26 +62,32 @@ const ApplicantInfo=({setFormName})=>{
                                                 <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Email *</p>
                                                 <input 
                                                     type="email" 
-                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green" 
+                                                    className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent" 
                                                     placeholder="Your email" 
                                                     pattern="[a-zA-z ]{3,20}"
                                                     title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                     required>
 
                                                     </input>
-                                                    <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden">email *</p>
+                                                     {
+                                                            appInfoErr.emailErr &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr ">Invalid email address.</p>
+                                                    }
                                          </div>
                                          <div className="form-col w-full md:w-[48%]">
                                                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Phone number *</p>
                                                 <input  type="text"
-                                                        className=" w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-red"
+                                                        className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                                                         placeholder="Your phone number"
                                                         pattern="[a-zA-z ]{3,20}"
                                                         title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                         required>
 
                                                      </input>
-                                                     <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden">Phone *</p>
+                                                     {
+                                                            appInfoErr.phoneErr &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr ">Invalid phone number.</p>
+                                                    }
                                          </div>
                 </div>
                 {/*======================== contact form row email + phone end=======================*/}
@@ -71,26 +97,32 @@ const ApplicantInfo=({setFormName})=>{
                                                 <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Street address *</p>
                                                 <input 
                                                     type="email" 
-                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green" 
+                                                    className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent" 
                                                     placeholder="Address" 
                                                     pattern="[a-zA-z ]{3,20}"
                                                     title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                     required>
 
                                                     </input>
-                                                    <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden">email *</p>
+                                                    {
+                                                            appInfoErr.stAddressErr &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr ">Invalid Address</p>
+                                                    }
                                          </div>
                                          <div className="form-col w-full md:w-[48%]">
                                                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Street address 2</p>
                                                 <input  type="text"
-                                                        className=" w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-red"
+                                                        className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                                                         placeholder="Address 2"
                                                         pattern="[a-zA-z ]{3,20}"
                                                         title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                         required>
 
                                                      </input>
-                                                     <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden">Phone *</p>
+                                                     {
+                                                            appInfoErr.stAddressErr2 &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr ">Invalid Address</p>
+                                                    }
                                          </div>
                 </div>
                 {/*======================== Street adress   + Street adress  2 end=======================*/}
@@ -100,26 +132,32 @@ const ApplicantInfo=({setFormName})=>{
                                                 <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">City *</p>
                                                 <input 
                                                     type="email" 
-                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green" 
+                                                    className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent" 
                                                     placeholder="Your city name" 
                                                     pattern="[a-zA-z ]{3,20}"
                                                     title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                     required>
 
                                                     </input>
-                                                    <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden">email *</p>
+                                                    {
+                                                            appInfoErr.cityErr &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr ">Invalid city name</p>
+                                                    }
                                          </div>
                                          <div className="form-col w-full md:w-[48%]">
                                                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">State / Province / Region*</p>
                                                 <input  type="text"
-                                                        className=" w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-red"
+                                                        className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                                                         placeholder="State / Province / Region"
                                                         pattern="[a-zA-z ]{3,20}"
                                                         title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                         required>
 
                                                      </input>
-                                                     <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden">Phone *</p>
+                                                     {
+                                                            appInfoErr.stateErr &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr ">Invalid state name</p>
+                                                    }
                                          </div>
                 </div>
                 {/*======================== contact form row city   + region end=======================*/}
@@ -129,19 +167,22 @@ const ApplicantInfo=({setFormName})=>{
                                                 <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Zip *</p>
                                                 <input 
                                                     type="email" 
-                                                    className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green" 
+                                                    className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent" 
                                                     placeholder="Zip / Postal code" 
                                                     pattern="[a-zA-z ]{3,20}"
                                                     title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                     required>
 
                                                     </input>
-                                                    <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden">email *</p>
+                                                    {
+                                                            appInfoErr.zipErr &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr ">Invalid zip code</p>
+                                                    }
                                          </div>
                                          <div className="form-col w-full md:w-[48%]">
                                                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Country *</p>
                                                
-                                               <select type="text" className="w-full event-input text-gray-500  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green"  required>
+                                               <select type="text" className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent"  required>
                                                <option value="United States">United States</option>
 
                                                 
@@ -398,7 +439,10 @@ const ApplicantInfo=({setFormName})=>{
                                                     <option value="Zambia">Zambia</option>
                                                     <option value="Zimbabwe">Zimbabwe</option>
                                                </select>
-                                                <p className="mt-1 text-sm md:text-base evevt-input-label text-red-700 fErr hidden">Phone *</p>
+                                               {
+                                                            appInfoErr.countryErr &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr ">Invalid zip code</p>
+                                                    }
                                          </div>
                 </div>
                 {/*======================== contact form row city   + region end=======================*/}
