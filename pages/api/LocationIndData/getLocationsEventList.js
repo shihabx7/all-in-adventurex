@@ -38,14 +38,22 @@ export const getLocationsEventList=(locationslug)=>{
    
    const locnameMod=(locname)=>{
     var spLoc=locname.split("-")
-    if(spLoc[0]=="n"){
-      spLoc[0]=spLoc[0]+"."
+    if(spLoc[0]=="n" || spLoc[0]=="N"){
+      spLoc[0]='North'
     }
     var st=spLoc[spLoc.length-1].toString()
     spLoc=spLoc.slice(0,-1)
+    var x
+
+    for(x=0;x<spLoc.length;x++){
+
+        var upc=spLoc[x].charAt(0).toUpperCase()
+        var nnsp=spLoc[x].substring(0,0) + upc + spLoc[x].substring(0+1)
+        spLoc[x]= nnsp
+    }
     spLoc=spLoc.join(' ')
     
-    var ret=spLoc+", "+st
+    var ret=spLoc+", "+st.toUpperCase()
     return ret
   }
    // ===============seo fields

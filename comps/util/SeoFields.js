@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 
 const Seofields=(props)=>{
 
@@ -35,7 +36,7 @@ const Seofields=(props)=>{
                 <meta name="twitter:description" content={props.meta.description? props.meta.description:"All In Adventures, formerly Mystery Room, is a multi-location escape room, game show room, beat the seat, and axe throwing destination in the United States."} />
                 <meta name="twitter:image" content={siteURL+props.meta.metaimg} />
                                  
- 
+            
                 </Head>
     )
                             

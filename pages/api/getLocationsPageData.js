@@ -2,13 +2,8 @@ import { getALlActivityList } from "./getAllActivityList"
 import { getAllEventList } from "./getAllEventList"
 import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
 
-
  export const getLocationsPageData=()=> {
-  
-  
-   
-  
-
+ 
     const data=
        {
         "activitylistSlug":getALlActivityList(),
@@ -40,10 +35,11 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                         "mall":"Crossgates Mall",
                                         "alt":'allinadventures-escape-room-albany-ny-crossgates-mall-hero',
                                         "slug":"albany-ny",
-                                        "email":"Store103@Allinadventures.com",
-                                        "position": { lat: 42.694650871225996, lng: -73.84925962422682 },
+                                        "email":"store103@allinadventures.com",
+                                        "mgremail":"mgr103@allinadventures.com",
+                                        "position": { lat: 42.68923100209555, lng: -73.84921468465942 },
                                         "hours":[
-                              
+                                        
                                           {
                                             "day":"monday",
                                             "open":"11 am",
@@ -109,8 +105,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                         "mall":"Walden Galleria",
                                         "alt":'allinadventures-escape-room-buffalo-ny-walden-galleria-mall-hero',
                                         "slug":"buffalo-ny",
-                                        "email":"Store108@Allinadventures.com",
-                                        "position": { lat: 42.918199478928365, lng: -78.76365703939328 }, 
+                                        "email":"store108@allinadventures.com",
+                                        "mgremail":"mgr108@allinadventures.com",
+                                        "position": { lat: 42.914213620049225, lng: -78.76344044602178 },
                                         "hours":[
                                                 {
                                                       "day":"monday",
@@ -175,8 +172,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                         "coverimg":'/assets/mapcard/allinadventures-escape-room-middletown-ny-galleria-at-crystal-run-mall-hero.jpg',
                                         "mall":"Galleria at Crystal Run",
                                         "alt":'allinadventures-escape-room-middletown-ny-galleria-at-crystal-run-mall-hero',
-                                        "email":"Store105@Allinadventures.com",
-                                        "position": { lat: 41.45901376711506, lng: -74.36864051972913}, 
+                                        "email":"store105@allinadventures.com",
+                                        "mgremail":"mgr105@allinadventures.com",
+                                        "position": { lat: 41.454179533147965, lng: -74.36946970738413}, 
                                         "hours":[
                                           {
                                             "day":"monday",
@@ -242,8 +240,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                         "coverimg":'/assets/mapcard/allinadventures-escape-room-syracuse-ny-destiny-usa-mall-hero.jpg',
                                         "mall":"Destiny USA",
                                         "alt":'allinadventures-escape-room-syracuse-ny-destiny-usa-mall-hero',
-                                        "email":"Store107@Allinadventures.com",
-                                        "position": { lat: 43.06932097705075, lng: -76.1709514598213},  
+                                        "email":"store107@allinadventures.com",
+                                        "mgremail":"mgr103@allinadventures.com",
+                                        "position": { lat: 43.06821706293749, lng: -76.17159336874649},
                                         "hours":[
                                                 {
                                                   "day":"monday",
@@ -309,8 +308,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                       "coverimg":'/assets/mapcard/allinadventures-escape-room-watertown-ny-salmon-run-mall-hero.jpg',
                                       "mall":"Salmon Run Mall",
                                       "alt":'allinadventures-escape-room-watertown-ny-salmon-run-mall-hero',
-                                      "email":"Store106@Allinadventures.com",
-                                      "position": { lat: 43.97758505149379, lng: -75.95263770212158},
+                                      "email":"store106@allinadventures.com",
+                                      "mgremail":"mgr106@allinadventures.com",
+                                      "position": { lat: 43.977652923527444, lng: -75.95351031534058}, 
                                       "hours":[
                                         {
                                           "day":"monday",
@@ -376,8 +376,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     "coverimg":'/assets/mapcard/allinadventures-escape-room-west-nyack-ny-palisades-mall-hero.jpg',
                                     "mall":"Palisades Center",
                                     "alt":'allinadventures-escape-room-west-nyack-ny-palisades-mall',
-                                    "email":"Store101@Allinadventures.com",
-                                    "position": { lat: 43.97758505149379, lng: -75.95263770212158}, 
+                                    "email":"store101@allinadventures.com",
+                                    "mgremail":"mgr101@allinadventures.com",
+                                    "position": { lat: 41.09906394978139, lng: -73.9550745},
                                     "hours":[
                                       {
                                         "day":"monday",
@@ -438,13 +439,14 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                   "total_rev":"361",
                                   "avg_rev":"4.8",
                                   "player_escaped":"8K+",
-                                  "phone":"+1 845-208-2919",
+                                  "phone":"+1 845-218-0002",
                                   "b_uid":"08695bcfdbd0498d8cd25a03361cf80d",
                                   "coverimg":'/assets/mapcard/Poughkeepsie-ny-poughkeepsie-galleria.jpg',
                                   "mall":"Poughkeepsie Galleria",
                                   "alt":'allinadventures-escape-room-west-nyack-ny-palisades-mall',
                                   "email":"store149@allinadventures.com",
-                                  "position": { lat: 41.626240482899284, lng: -73.92067928923845}, 
+                                  "mgremail":"mgr149@allinadventures.com",
+                                  "position": { lat: 41.62658537585491, lng: -73.9208724},
                                   "hours":[
                                     {
                                       "day":"monday",
@@ -520,8 +522,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                             "coverimg":'/assets/mapcard/allinadventures-escape-room-raleigh-nc-triangle-town-center-mall-hero.jpg',
                             "mall":"Triangle Town Center",
                             "alt":'allinadventures-escape-room-raleigh-nc-triangle-town-center-mall',
-                            "email":"Store123@Allinadventures.com",
-                            "position": { lat: 35.87108885072849, lng: -78.5746156605905},
+                            "email":"store123@allinadventures.com",
+                            "mgremail":"mgr123@allinadventures.com",
+                            "position": { lat: 35.866883791061504, lng: -78.57422718465942}, 
                             "hours":[
                               {
                                 "day":"monday",
@@ -599,8 +602,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                         "coverimg":'/assets/mapcard/allinadventures-escape-room-hadley-ma-hampshire-mall-hero.jpg',
                                         "mall":"Hampshire Mall",
                                         "alt":'allinadventures-escape-room-hadley-ma-hampshire-mall-hero',
-                                        "email":"Store113@Allinadventures.com",
-                                        "position": { lat: 42.36108594695472, lng: -72.54765208077018},
+                                        "email":"store113@allinadventures.com",
+                                        "mgremail":"mgr113@allinadventures.com",
+                                        "position": { lat: 42.35706401455254, lng: -72.54730672272471},
                                         "hours":[
                                           {
                                             "day":"monday",
@@ -667,8 +671,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                       "coverimg":'/assets/mapcard/allinadventures-escape-room-holyoke-ma-holyoke-mall-hero.jpg',
                                       "mall":"Holyoke Mall",
                                       "alt":'allinadventures-escape-room-holyoke-ma-holyoke-mall-hero',
-                                      "email":"Store114@Allinadventures.com",
-                                      "position": { lat: 42.173237321123935, lng: -72.63991905070128},
+                                      "email":"store114@allinadventures.com",
+                                      "mgremail":"mgr114@allinadventures.com",
+                                      "position": { lat: 42.16721653698669, lng: -72.6411134349249},
                                       "hours":[
                                         {
                                           "day":"monday",
@@ -735,8 +740,10 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     "coverimg":'/assets/mapcard/allinadventures-escape-room-kingston-ma-kingston-collection-mall-hero.jpg',
                                     "mall":" Kingston Collection",
                                     "alt":'allinadventures-escape-room-kingston-ma-kingston-collection-mall-hero',
-                                    "email":"Store102@Allinadventures.com",
-                                    "position": { lat: 41.973979082363485, lng: -70.71796156179091},
+                                    "email":"store102@allinadventures.com",
+                                    "mgremail":"mgr102@allinadventures.com",
+                                    "position": { lat: 41.971504359907684, lng: -70.71610091534059},
+                                    
                                     "hours":[
                                       {
                                         "day":"monday",
@@ -804,7 +811,8 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                   "mall":"Emerald Square Mall",
                                   "alt":'allinadventures-escape-room-north-attleborough-ma-emerald-square-mall-hero',
                                   "email":"store110@allinadventures.com",
-                                  "position": { lat: 41.95085653943048, lng: -71.35152473980524},
+                                  "mgremail":"mgr110@allinadventures.com",
+                                  "position": { lat: 41.94654504785334, lng: -71.35015866136237},
                                   "hours":[
                                     {
                                       "day":"monday",
@@ -880,8 +888,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                         "coverimg":'/assets/mapcard/allinadventures-escape-room-milford-ct-connecticut-post-mall-hero.jpg',
                                         "mall":"Connecticut Post Mall",
                                         "alt":'allinadventures-escape-room-milford-ct-connecticut-post-mall',
-                                        "email":"Store109@Allinadventures.com",
-                                        "position": { lat: 41.23618337923384, lng: -73.03556385987913}, 
+                                        "email":"store109@allinadventures.com",
+                                        "mgremail":"mgr109@allinadventures.com",
+                                        "position": { lat:41.23564539065722, lng: -73.03691284602178},
                                         "hours":[
                                           {
                                             "day":"monday",
@@ -948,8 +957,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                       "coverimg":'/assets/mapcard/allinadventures-escape-room-manchester-ct-buckland-hills-mall-hero.jpg',
                                       "mall":"The Shoppes at Buckland Hills",
                                       "alt":'allinadventures-escape-room-manchester-ct-buckland-hills-mall-hero',
-                                      "email":"Store121@Allinadventures.com",
-                                      "position": { lat: 41.811417406121315, lng: -72.54741454441613},
+                                      "email":"store121@allinadventures.com",
+                                      "mgremail":"mgr121@allinadventures.com",
+                                      "position": { lat: 41.80829777324081, lng: -72.5470819}, 
                                       "hours":[
                                         {
                                           "day":"monday",
@@ -1016,8 +1026,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     "coverimg":'/assets/mapcard/allinadventures-escape-room-waterbury-ct-brass-mills-mall-hero.jpg',
                                     "mall":"Brass Mills Center",
                                     "alt":'allinadventures-escape-room-waterbury-ct-brass-mills-mall-hero',
-                                    "email":"Store133@Allinadventures.com",
-                                    "position": { lat: 41.55358939724869, lng: -73.02502768474506}, 
+                                    "email":"store133@allinadventures.com",
+                                    "mgremail":"mgr133@allinadventures.com",
+                                    "position": { lat: 41.55057317796164, lng: -73.02589548465942},
                                     "hours":[
                                       {
                                         "day":"monday",
@@ -1093,8 +1104,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                       "coverimg":'/assets/mapcard/allinadventures-escape-room-bensalem-pa-neshaminy-mall-hero.jpg',
                       "mall":"Neshaminy Mall",
                       "alt":'allinadventures-escape-room-bensalem-pa-neshaminy-mall-hero',
-                      "email":"Store130@Allinadventures.com",
-                      "position": { lat: 40.14369469629309, lng: -74.95479885308148},
+                      "email":"store130@allinadventures.com",
+                      "mgremail":"mgr130@allinadventures.com",
+                      "position": { lat: 40.13936888915535, lng: -74.95415301534058},
                       "hours":[
                         {
                           "day":"monday",
@@ -1170,8 +1182,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                         "coverimg":'/assets/mapcard/allinadventures-escape-room-bowie-md-bowie-town-center-mall-hero.jpg',
                                         "mall":"Bowie Town Center",
                                         "alt":'allinadventures-escape-room-bowie-md-bowie-town-center-mall-hero',
-                                        "email":"Store145@Allinadventures.com",
-                                        "position": { lat: 38.944309962794854, lng: -76.73636950227818},  
+                                        "email":"store145@allinadventures.com",
+                                        "mgremail":"mgr145@allinadventures.com",
+                                        "position": { lat: 38.94490769636057, lng: -76.73640168465941},  
                                         "hours":[
                                           {
                                             "day":"monday",
@@ -1237,8 +1250,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                       "coverimg":'/assets/mapcard/allinadventures-escape-room-white-marsh-md-white-marsh-mall-hero.jpg',
                                       "mall":"White Marsh Mall",
                                       "alt":'allinadventures-escape-room-white-marsh-md-white-marsh-mall-hero',
-                                      "email":"Store118@Allinadventures.com",
-                                      "position": { lat: 39.37957021829345, lng: -76.46891952269905},
+                                      "email":"store118@allinadventures.com",
+                                      "mgremail":"mgr118@allinadventures.com",
+                                      "position": { lat: 39.376232633607614, lng: -76.4684810846594},
                                       "hours":[
                                         {
                                           "day":"monday",
@@ -1314,8 +1328,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                         "coverimg":'/assets/mapcard/allinadventures-escape-room-east-brunswick-nj-brunswick-square-mall-hero.jpg',
                                         "mall":"Brunswick Square",
                                         "alt":'aallinadventures-escape-room-east-brunswick-nj-brunswick-square-mall',
-                                        "email":"Store148@Allinadventures.com",
-                                        "position": { lat: 40.42998776602108, lng: -74.38402078940565},
+                                        "email":"store148@allinadventures.com",
+                                        "mgremail":"mgr148@allinadventures.com",
+                                        "position": { lat: 40.42413145507812, lng: -74.3825894306812}, 
                                         "hours":[
                                           {
                                             "day":"monday",
@@ -1382,8 +1397,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                       "coverimg":'/assets/mapcard/allinadventures-escape-room-rockaway-nj-rockaway-townsquare-mall-hero.jpg',
                                       "mall":"Rockaway Townsquare",
                                       "alt":'allinadventures-escape-room-rockaway-nj-rockaway-townsquare-mall',
-                                      "email":"Store112@Allinadventures.com",
-                                      "position": { lat: 40.912492907069215, lng: -74.55436310565122}, 
+                                      "email":"store112@allinadventures.com",
+                                      "mgremail":"mgr112@allinadventures.com",
+                                      "position": { lat: 40.90715628555328, lng: -74.55337978465941},
                                       "hours":[
                                         {
                                           "day":"monday",
@@ -1449,8 +1465,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     "coverimg":'/assets/mapcard/allinadventures-escape-room-woodbridge-nj-woodbridge-mall-hero.jpg',
                                     "mall":"Woodbridge Center",
                                     "alt":'allinadventures-escape-room-woodbridge-nj-woodbridge-mall-hero',
-                                    "email":"Store128@Allinadventures.com",
-                                    "position": { lat: 40.561122974306876, lng: -74.29765370334478}, 
+                                    "email":"store128@allinadventures.com",
+                                    "mgremail":"mgr128@allinadventures.com",
+                                    "position": { lat: 40.55608042620422, lng: -74.2976153153406},  
                                     "hours":[
                                       {
                                         "day":"monday",
@@ -1528,8 +1545,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                             "coverimg":'/assets/mapcard/allinadventures-escape-room-roanoke-va-valley-view-mall-hero.jpg',
                             "mall":"Valley View Mall",
                             "alt":'allinadventures-escape-room-roanoke-va-valley-view-mall-hero',
-                            "email":"Store129@Allinadventures.com",
-                            "position": { lat: 37.30926890765125, lng: -79.96414296359808},
+                            "email":"store129@allinadventures.com",
+                            "mgremail":"mgr129@allinadventures.com",
+                            "position": { lat: 40.555937140097235, lng: -74.29757505972002}, 
                             "hours":[
                               {
                                 "day":"monday",
@@ -1603,8 +1621,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                           "coverimg":'/assets/mapcard/allinadventures-escape-room-lawrenceville-ga-sugarloaf-mills-mall-hero.jpg',
                           "mall":"Sugarloaf Mills",
                           "alt":'allinadventures-escape-room-lawrenceville-ga-sugarloaf-mills-mall-hero',
-                          "email":"Store100@Allinadventures.com",
-                          "position": { lat: 33.986421448068036, lng: -84.08483070501663},
+                          "email":"store100@allinadventures.com",
+                          "mgremail":"mgr100@allinadventures.com",
+                          "position": { lat: 33.98048073987589, lng: -84.0831118},
                           "hours":[
                              
                             {
@@ -1680,8 +1699,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                             "coverimg":'/assets/mapcard/allinadventures-escape-room-columbus-oh-polaris-fashion-place-mall-hero.jpg',
                             "mall":" Polaris Fashion Place",
                             "alt":'allinadventures-escape-room-columbus-oh-polaris-fashion-place-mall-hero',
-                            "email":"Store147@Allinadventures.com",
-                            "position": { lat: 40.15019562598685, lng: -82.98034309378431}, 
+                            "email":"store147@allinadventures.com",
+                            "mgremail":"mgr147@allinadventures.com",
+                            "position": { lat: 40.145673407245866, lng: -82.98214343068119},
                             "hours":[
                               {
                                 "day":"monday",
@@ -1746,8 +1766,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                           "coverimg":'/assets/mapcard/allinadventures-escape-room-mentor-oh-great-lakes-mall-hero.jpg',
                           "mall":"Great Lakes Mall",
                           "alt":'allinadventures-escape-room-mentor-oh-great-lakes-mall',
-                          "email":"Store143@Allinadventures.com",
-                          "position": { lat: 41.66255323325249, lng: -81.35798410389197},
+                          "email":"store143@allinadventures.com",
+                          "mgremail":"mgr143@allinadventures.com",
+                          "position": { lat: 41.6560461813886641, lng: -81.36200461534058}, 
                           "hours":[
                             {
                               "day":"monday",
@@ -1812,8 +1833,9 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                         "coverimg":'/assets/mapcard/allinadventures-escape-room-dayton-oh-dayton-mall-hero.jpg',
                         "mall":"Dayton Mall",
                         "alt":'allinadventures-escape-room-dayton-oh-dayton-mall-hero',
-                        "email":"Store146@Allinadventures.com",
-                        "position": { lat: 39.63934536750076, lng: -84.22165216910368},
+                        "email":"store146@allinadventures.com",
+                        "mgremail":"mgr146@allinadventures.com",
+                        "position": { lat: 39.634435826032885, lng: -84.22006898465943},
                         "hours":[
                           {
                             "day":"monday",

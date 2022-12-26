@@ -149,6 +149,7 @@ const UseFullLinks=(props)=>{
                 <a href="/covid-19" className='text-gray-400 text-sm  lg:text-base'>Covid-19</a>
             
         </div>  
+        
         <div className=' hidden lg:block text-gray-400 text-2xl'> 
             <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>
@@ -161,10 +162,27 @@ const UseFullLinks=(props)=>{
             <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>
         <div className='usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2'> 
+        
+        <a href="/mystery-room-rebranding" className='text-gray-400 text-sm  lg:text-base'>Rebranding</a>
+    
+        </div> 
+        <div className=' hidden lg:block text-gray-400 text-2xl'> 
+            <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
+        </div>
+    <div className='usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2'> 
+       
+            <a href="/what-is-an-escape-room" className='text-gray-400 text-sm  lg:text-base'>What is an Escape Room</a>
+       
+    </div>
+        <div className=' hidden lg:block text-gray-400 text-2xl'> 
+            <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
+        </div>
+        <div className='usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2'> 
            
                 <a href="/careers" className='text-gray-400 text-sm  lg:text-base'>Careers</a>
            
         </div>
+       
         <div className=' hidden lg:block text-gray-400 text-2xl'> 
             <span className='block w-1 h-1 rounded-full bg-gray-400'></span>
         </div>

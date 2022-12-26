@@ -13,6 +13,127 @@ const ApplicantInfo=({setFormName,appInfo1,setAppInfo1,setFormErrFlag})=>{
                                                  zipErr:false,
                                                  countryErr:false,
                                              })
+
+    // ========================================================first name validation=================
+    const checkFName=(e)=>{
+
+        const fname=e.target.value.trim()
+
+        const namePatt=/^[a-zA-Z ]*$/
+        if(fname.length>2 && fname.length<21){
+            if(!namePatt.test(fname)){
+                    setErr(true)
+                    setFormErr({...formErr,fNameErr:true})
+                    e.target.classList.remove("focus-green")
+                    e.target.classList.add("focus-red")
+                    
+            }
+            else{
+                    setErr(false)
+                    setFormErr({...formErr,fNameErr:false})
+                    setFieldValue({...fieldVlue,fName:fname})
+                    e.target.classList.remove("focus-red")
+                    e.target.classList.add("focus-green")
+                    
+            }
+        }
+        else{
+            setErr(true)
+            setFormErr({...formErr,fNameErr:true})
+            e.target.classList.remove("focus-green")
+            e.target.classList.add("focus-red")
+        }
+    }
+    // ========================================================last name validation=================
+    const checkLName=(e)=>{
+
+        const lname=e.target.value.trim()
+
+        const namePatt=/^[a-zA-Z ]*$/
+        if(lname.length>2 && lname.length<21){
+            if(!namePatt.test(lname)){
+                    setErr(true)
+                    setFormErr({...formErr,lNameErr:true})
+                    e.target.classList.remove("focus-green")
+                  e.target.classList.add("focus-red")
+            }
+            else{
+                    setErr(false)
+                    setFormErr({...formErr,lNameErr:false})
+                    setFieldValue({...fieldVlue,lName:lname})
+                    e.target.classList.remove("focus-red")
+                    e.target.classList.add("focus-green")
+            }
+        }
+        else{
+            setErr(true)
+            setFormErr({...formErr,lNameErr:true})
+            e.target.classList.remove("focus-green")
+            e.target.classList.add("focus-red")
+            
+        }
+    }
+    // ========================================================email validation=================
+
+    const checkEmail=(e)=>{
+
+        const email=e.target.value.trim()
+
+        const emailPatt=/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        if(email.length>2){
+            if(!emailPatt.test(email)){
+                    setErr(true)
+                    setFormErr({...formErr,emailErr:true})
+                    e.target.classList.remove("focus-green")
+                  e.target.classList.add("focus-red")
+            }
+            else{
+                    setErr(false)
+                    setFormErr({...formErr,emailErr:false})
+                    setFieldValue({...fieldVlue,email:email})
+                    e.target.classList.remove("focus-red")
+                    e.target.classList.add("focus-green")
+            }
+        }
+        else{
+            setErr(true)
+            setFormErr({...formErr,emailErr:true})
+            e.target.classList.remove("focus-green")
+            e.target.classList.add("focus-red")
+            
+        }
+    }
+    // ========================================================phone validation=================
+
+    const checkPhone=(e)=>{
+
+        const phone=e.target.value.trim()
+        const numPatt=/^[ 0-9-+/./(/)]*$/
+
+        if(phone.length>6 && phone.length<18){
+            
+            if(!numPatt.test(phone)){
+                    setErr(true)
+                    setFormErr({...formErr,phoneErr:true})
+                    e.target.classList.remove("focus-green")
+                  e.target.classList.add("focus-red")
+            }
+            else{
+                    setErr(false)
+                    setFormErr({...formErr,phoneErr:false})
+                    setFieldValue({...fieldVlue,phone:phone})
+                    e.target.classList.remove("focus-red")
+                    e.target.classList.add("focus-green")
+            }
+        }
+        else{
+            setErr(true)
+            setFormErr({...formErr,phoneErr:true})
+            e.target.classList.remove("focus-green")
+            e.target.classList.add("focus-red")
+            
+        }
+    }                                       
    
 
     return(

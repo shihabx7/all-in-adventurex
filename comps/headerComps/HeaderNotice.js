@@ -31,7 +31,7 @@ const HeaderNotice=()=>{
                                 <img className="max-w-[24px] md:max-w-[30px] lg:max-w-[36px]"  src="/assets/svg/header-notice-icon.svg"></img>
                                 <p className="text-[#FFEFCD] text-xs md:text-base lg:text-lg">Mystery Room is now All In Adventures.</p>
                                 <div>
-                                <a href="/mysteryroom-rebranding" target="_blank" className='golden-text  flex space-x-1 md:space-x-2 items-center text-xs md:text-base lg:text-lg'><span>Learn more</span> <span className='md:text-lg text-gold'><FiExternalLink/></span></a>
+                                <a href="/mystery-room-rebranding" target="_blank" className='golden-text  flex space-x-1 md:space-x-2 items-center text-xs md:text-base lg:text-lg'><span>Learn more</span> <span className='md:text-lg text-gold'><FiExternalLink/></span></a>
                                 </div>
                             </div>
                             <div className="header-notice-close flex items-center">

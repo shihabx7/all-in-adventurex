@@ -60,6 +60,14 @@ const StaticSubmenu=()=>{
                             </div>
                             <div className="submenu-item">
                                 
+                                     <a href="/mystery-room-rebranding" className="flex items-center">
+                                        <span className="sub-link-txt">Rebranding</span> 
+                                     </a>
+                                
+
+                            </div>
+                            <div className="submenu-item">
+                                
                                      <a href="/what-is-an-escape-room" className="flex items-center">
                                         <span className="sub-link-txt">What is an Escape Room</span> 
                                      </a>

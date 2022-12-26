@@ -8,7 +8,7 @@ import { getMapStyleLoc } from "../../pages/api/getMapStyleLoc";
 import StarRating from "../util/StarRating";
 
 const LocationMap=(props)=>{
-    const centerLat=props.position.lat+.04
+    const centerLat=props.position.lat
     const centerLng=props.position.lng
 
 
@@ -43,7 +43,7 @@ const LocationMap=(props)=>{
                 mapContainerClassName="map-container singleloc-map w-full h-[540px] md:h-[540px]"
                 center={{lat:centerLat,lng:centerLng}}
                 //onLoad={handleOnLoad}
-                zoom={12}
+                zoom={15}
                 options={{
                   styles: mapStyle,
               }}
@@ -56,6 +56,7 @@ const LocationMap=(props)=>{
                       url:"/assets/svg/adventure-marker.svg",
                       scale:1
                     }}
+                    
 
                     onClick={() => setShowInfo(true)}
                 >

@@ -128,7 +128,7 @@ const bookingAll=bookingList('',slug)
                        "locationslug":slug,
                        "mall":LocActivityData[slug].mall,
                        "publish_status":getLocTotal(slug).publish_status,
-                       "pagesubtitle":"Play the top "+cityName(slug)+" escape rooms and other adventure games. For 50-60 minutes, experience fun-filled immersive entertainment with friends, family, kids or co-works. Escape normal life, and be the hero of the story!",
+                       "pagesubtitle":"Play the top "+cityName(slug)+" escape rooms and other adventure games. For 50-60 minutes, experience fun-filled interactive entertainment with friends, family, kids or co-works. Escape normal life, and be the hero of the story!",
                        "totalLocations": getTotal().totalLocations,
                       "totalUniqueGames": getLocationActivitySlugList(slug).length,
                       "totalFiveStarReview": getLocTotal(slug).locTotalReview,

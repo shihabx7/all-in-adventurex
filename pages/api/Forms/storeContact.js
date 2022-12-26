@@ -10,7 +10,8 @@ export default async function corContactHandler(req, res) {
         "Phone":body.phone,
         "comSub":body.comSubject,
         "mEssage":body.msg,
-        "toEmail":body.toEmail
+        "toEmail":body.toEmail,
+        "toMgrEmail":body.toMgrEmail
 
     }
   
@@ -31,7 +32,7 @@ export default async function corContactHandler(req, res) {
       try {
         await transporter.sendMail({
           from: retData.Email,
-          to: retData.toEmail,
+          to: retData.toEmail+","+retData.toMgrEmail,
           cc:"dgency.com@gmail.com ",
           bcc:"shihab.dgency@gmail.com",
           subject: `Store Contact from ${retData.Name}`,

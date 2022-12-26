@@ -5,16 +5,16 @@ export const getMapStyleLoc =  () => {
     const mapStyle=    [
       { elementType: "geometry", stylers: [{ color: "#F4F4F4" }] },
     // { elementType: "labels.text.stroke", stylers: [{ color: "#8E8E8E" }] },
-      { elementType: "labels.text.fill", stylers: [{ color: "#8E8E8E" }] },
+      { elementType: "labels.text.fill", stylers: [{ color: "#898989" }] },
       {
         featureType: "administrative.locality",
         elementType: "labels.text.fill",
-        stylers: [{ color: "#8E8E8E" }],
+        stylers: [{ color: "#898989" }],
       },
       {
         featureType: "poi",
         elementType: "labels.text.fill",
-        stylers: [{ color: "#d59563" }],
+        stylers: [{ color: "#898989" }],
       },
       {
         featureType: "poi.park",
@@ -26,15 +26,16 @@ export const getMapStyleLoc =  () => {
         elementType: "labels.text.fill",
         stylers: [{ color: "#6b9a76" }],
       },
+      
       {
         featureType: "road",
         elementType: "geometry",
-        stylers: [{ color: "#CCC0A8" }],
+        stylers: [{ color: "#ffffff" }],
       },
       {
         featureType: "road",
         elementType: "geometry.stroke",
-        stylers: [{ color: "#212a37" }],
+        stylers: [{ color: "#F6F6F4" }],
       },
       {
         featureType: "road",
@@ -44,12 +45,12 @@ export const getMapStyleLoc =  () => {
       {
         featureType: "road.highway",
         elementType: "geometry",
-        stylers: [{ color: "#CCC0A8" }],
+        stylers: [{ color: "#ffffff" }],
       },
       {
         featureType: "road.highway",
         elementType: "geometry.stroke",
-        stylers: [{ color: "#CCC0A8" }],
+        stylers: [{ color: "#F6F6F4" }],
       },
       {
         featureType: "road.highway",
@@ -69,7 +70,7 @@ export const getMapStyleLoc =  () => {
       {
         featureType: "water",
         elementType: "geometry",
-        stylers: [{ color: "#D6DDE8" }],
+        stylers: [{ color: "#CAD2D3" }],
       },
       {
         featureType: "water",

@@ -2,39 +2,40 @@
 
 export const getMapStyle =  () => {
 
-    const mapStyle=    [
+    const mapStyle=  [
       { elementType: "geometry", stylers: [{ color: "#F4F4F4" }] },
     // { elementType: "labels.text.stroke", stylers: [{ color: "#8E8E8E" }] },
-      { elementType: "labels.text.fill", stylers: [{ color: "#8E8E8E" }] },
+      { elementType: "labels.text.fill", stylers: [{ color: "#898989" }] },
       {
         featureType: "administrative.locality",
         elementType: "labels.text.fill",
-        stylers: [{ color: "#8E8E8E" }],
+        stylers: [{ color: "#898989" }],
       },
       {
         featureType: "poi",
         elementType: "labels.text.fill",
-        stylers: [{ color: "#d59563" }],
+        stylers: [{ color: "#898989" }],
       },
       {
         featureType: "poi.park",
         elementType: "geometry",
-        stylers: [{ color: "#263c3f" }],
+        stylers: [{ color: "#cbf4c6" }],
       },
       {
         featureType: "poi.park",
         elementType: "labels.text.fill",
         stylers: [{ color: "#6b9a76" }],
       },
+      
       {
         featureType: "road",
         elementType: "geometry",
-        stylers: [{ color: "#CCC0A8" }],
+        stylers: [{ color: "#ffffff" }],
       },
       {
         featureType: "road",
         elementType: "geometry.stroke",
-        stylers: [{ color: "#212a37" }],
+        stylers: [{ color: "#F6F6F4" }],
       },
       {
         featureType: "road",
@@ -44,12 +45,12 @@ export const getMapStyle =  () => {
       {
         featureType: "road.highway",
         elementType: "geometry",
-        stylers: [{ color: "#CCC0A8" }],
+        stylers: [{ color: "#ffffff" }],
       },
       {
         featureType: "road.highway",
         elementType: "geometry.stroke",
-        stylers: [{ color: "#CCC0A8" }],
+        stylers: [{ color: "#F6F6F4" }],
       },
       {
         featureType: "road.highway",
@@ -59,7 +60,7 @@ export const getMapStyle =  () => {
       {
         featureType: "transit",
         elementType: "geometry",
-        stylers: [{ color: "#2f3948" }],
+        stylers: [{ color: "#aec5e8" }],
       },
       {
         featureType: "transit.station",
@@ -69,7 +70,7 @@ export const getMapStyle =  () => {
       {
         featureType: "water",
         elementType: "geometry",
-        stylers: [{ color: "#D6DDE8" }],
+        stylers: [{ color: "#CAD2D3" }],
       },
       {
         featureType: "water",
