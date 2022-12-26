@@ -4,7 +4,7 @@ const HomeHero=(props)=>{
     return(
         
         <div className='home-hero-holder relative'> 
-            <div className="homehero-img md:hidden w-full min-h-[220px] bg-[#111111]">
+            <div className="homehero-img md:hidden w-full min-h-[280px] bg-[#000000]">
                 <img alt="allinadventures escape room home " src="/assets/gn-mobile-hero/allinadventures-escape-room-home-hero.jpg"></img>
              </div>
              <div className="max-w-[84px] md:max-w-[120px] lg:max-w-[144px] absolute top-[4px] md:top-[36px] lg:top-[60px] left-0 right-[4px] md:right-0 ml-auto md:mx-auto">

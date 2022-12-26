@@ -60,7 +60,7 @@ const LocationHomeHero=(props)=>{
              <img src="/assets/kids-and-familly-friendly-escape-rooms-allinadventures.png"></img>
              </div>
         <div className='home-hero-holder '> 
-        <div className="homehero-img md:hidden w-full min-h-[220px] bg-[#111111]">
+        <div className="homehero-img md:hidden w-full min-h-[280px] bg-[#000000]">
                 <img src={props.pagedata.coverimageM}></img>
              </div>
             <div className='max-w-7xl home-hero-container mx-auto px-4 pb-16 pt-0 md:pb-24 md:pt-[160px] lg:pb-28 lg:pt-[210px] relative z-10'>
