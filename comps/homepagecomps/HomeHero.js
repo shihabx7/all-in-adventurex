@@ -4,11 +4,11 @@ const HomeHero=(props)=>{
     return(
         
         <div className='home-hero-holder relative'> 
-            <div className="homehero-img md:hidden min-h-[66%] bg-[#111111]">
-                <img alt="allinadventures escape room home hero" src="/assets/gn-mobile-hero/allinadventures-escape-room-home-hero.jpg"></img>
+            <div className="homehero-img md:hidden h-[66%] bg-[#111111]">
+                <img alt="allinadventures escape room home " src="/assets/gn-mobile-hero/allinadventures-escape-room-home-hero.jpg"></img>
              </div>
              <div className="max-w-[84px] md:max-w-[120px] lg:max-w-[144px] absolute top-[4px] md:top-[36px] lg:top-[60px] left-0 right-[4px] md:right-0 ml-auto md:mx-auto">
-             <img src="/assets/kids-and-familly-friendly-escape-rooms-allinadventures.png"></img>
+             <img  alt="kids-and-familly-friendly-escape-rooms allinadventures" src="/assets/kids-and-familly-friendly-escape-rooms-allinadventures.png"></img>
              </div>
             <div className='max-w-7xl home-hero-container mx-auto px-4 pb-16 pt-0 md:pb-24 md:pt-[160px] lg:pb-28 lg:pt-[210px] relative z-10'>
                 <div className="page-benar-info"> 

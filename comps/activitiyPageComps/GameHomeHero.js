@@ -9,7 +9,7 @@ const GameHomeHero=(props)=>{
             }
            }>
         <div className='home-hero-holder '> 
-        <div className="homehero-img min-h-[66%] md:hidden">
+        <div className="homehero-img h-[66%] bg-[#111111] md:hidden">
                   <img src={props.pagedata.coverimageM}></img>
              </div>
             <div className='max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-20 md:py-20 lg:py-32 xl:py-40 relative z-20'>
