@@ -52,9 +52,27 @@ const LocationMap=(props)=>{
                 <Marker 
                     position={props.position}
                     title={props.locname}
+                   label={
+                    {
+                        text:"All in Adventures Escape Room",
+                      
+                       //labelContent: "aaaaaaa <br/> bbbb <br/> cccc",
+                        color:"#DC2626",
+                        fontWeight:'500',
+                        fontSize:'13px',
+                        width:'130px',
+                        height:'60px',
+                        background:"red",
+                        width:"200"
+                    }
+                    
+
+                   }
+                   
                     icon={{
                       url:"/assets/svg/adventure-marker.svg",
-                      scale:1
+                      scale:1.8,
+                      labelOrigin: { x: 68, y: 48}
                     }}
                     
 

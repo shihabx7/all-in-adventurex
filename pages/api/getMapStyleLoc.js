@@ -26,6 +26,8 @@ export const getMapStyleLoc =  () => {
         elementType: "labels.text.fill",
         stylers: [{ color: "#6b9a76" }],
       },
+
+    
       
       {
         featureType: "road",

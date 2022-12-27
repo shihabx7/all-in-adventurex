@@ -1547,7 +1547,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                             "alt":'allinadventures-escape-room-roanoke-va-valley-view-mall-hero',
                             "email":"store129@allinadventures.com",
                             "mgremail":"mgr129@allinadventures.com",
-                            "position": { lat: 40.555937140097235, lng: -74.29757505972002}, 
+                            "position": { lat:37.30350364111658, lng: -79.9631108},
                             "hours":[
                               {
                                 "day":"monday",
