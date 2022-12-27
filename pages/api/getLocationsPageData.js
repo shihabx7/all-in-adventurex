@@ -429,7 +429,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                 {
                                   "id":7,
                                   "city":"Poughkeepsie",
-                                  "city_include":"Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield",
+                                  "city_include":"Our customers come from many surrounding cities, including Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield and many more!",
                                   "publish_status":true,
                                   "entry_guid":"Upstairs from 110 Grill.",
                                   "slug":"poughkeepsie-ny",

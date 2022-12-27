@@ -43,7 +43,7 @@ const Howtobook=()=>{
                 <div className="teaser-content w-[90%] md:w-auto"> 
                      <h2 className="mb-2 md:mb-4 text-[24px] md:text-[42px] font-bold golden-text font-os">ALL IN ADVENTURES TEASER</h2>
                      {showTeaser && 
-                    <TeaserVideo videoid="0lsVAy4ESos"/>
+                    <TeaserVideo videoid="D6hImT3hfKg"/>
                
                 } 
                     
