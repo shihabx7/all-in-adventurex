@@ -4543,6 +4543,12 @@ const activityDataset={
           //=========================================================lawrenceville-ga list
           "lawrenceville-ga":{
             
+            "escape-from-alcatraz":{
+              "id":1,
+             "max_players":"10",
+             "min_players":"2",
+
+                     },
           //============================================treasure-island 2
           "treasure-island":{
                       "id":2,
@@ -4567,15 +4573,7 @@ const activityDataset={
             
           },
           //============================================zombie-apocalypse end4
-            //============================================special-agent5
-            "special-agent":{
-              "id":5,
-              "max_players":"8",
-              "min_players":"2",
-              
-              
-            },
-            //============================================special-agent end5
+            
             
              //============================================sherlocks-library 7
              "sherlocks-library":{

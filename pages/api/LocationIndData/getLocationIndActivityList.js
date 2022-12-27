@@ -3892,7 +3892,22 @@ const LocActivityData={
             "totalFiveStarReview": "3.8k",
             "totalPlayerEscaped": "9.4k+",
             "activity_list":[
-
+                {
+                    "id":1,
+                    "activity_name":"Escape from Alcatraz",
+                    "activity_type":"In-person",
+                    "activity_category":"escapegame",
+                    "age":"All Ages (6+)",
+                    "min_player":"2",
+                    "max_player":"10",
+                    "price":"29.89",
+                    "duration":"50",
+                    "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+                    "activity_slug":"escape-from-alcatraz",
+                    "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+                    
+                    
+                },
                 
                 {
                     "id":2,
@@ -3924,21 +3939,7 @@ const LocActivityData={
                     "activity_cover_image":"/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
                     
                 },
-                {
-                    "id":8,
-                    "activity_name":"Special Agent",
-                    "activity_type":"In-person",
-                    "activity_category":"escapegame",
-                    "age":"All Ages (6+)",
-                    "min_player":"2",
-                    "max_player":"8",
-                    "price":"29.89",
-                    "duration":"50",
-                    "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
-                    "activity_slug":"special-agent",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
-                    
-                },
+                
                 {
                     "id":4,
                     "activity_name":"Sherlock's Library",

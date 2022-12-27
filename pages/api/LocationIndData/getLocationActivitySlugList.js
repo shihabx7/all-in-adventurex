@@ -1740,7 +1740,13 @@ const datalist={
 //*****************************************************************************GA++++++++++++++++ */
      // =====================================lawrenceville-ga=======
      "lawrenceville-ga":[
-
+        {
+            "id":1,
+            "category":"escapegame",
+            "activity_name":"Escape From Alcatraz",
+            "activity_slug":"escape-from-alcatraz"
+           
+        },
        
         {
             "id":2,
@@ -1785,15 +1791,8 @@ const datalist={
             "activity_slug":"houdinis-magic-cell"
            
         },
-        {
-            "id":8,
-            "category":"escapegame",
-            "activity_name":"Special Agent",
-            "activity_slug":"special-agent"
-           
-        },
-        
        
+        
         {
             "id":14,
             "category":"other",
