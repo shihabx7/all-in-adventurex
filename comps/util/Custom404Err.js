@@ -9,7 +9,7 @@ const Custom404Err=()=>{
 
                         <div className="cerr">
                             <h1 className="text-center text-[#231800] text-6xl md:text-8xl font-extrabold">404</h1>
-                            <p className="md:text-xl text-gray-700 text-center">Ops... The page you are looking for is not exist</p>
+                            <p className="md:text-xl text-gray-700 text-center">OOPS! It looks like you've reached a URL that doesn't exist. Please use the navigation above to find your way back to our a-maize-ing website.</p>
                         </div>
                         <div className="cerr-linking mt-8">
                                 <div className="mb-8">
