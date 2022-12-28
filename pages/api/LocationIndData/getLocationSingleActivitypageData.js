@@ -4545,7 +4545,7 @@ const activityDataset={
             
             "escape-from-alcatraz":{
               "id":1,
-             "max_players":"10",
+             "max_players":"8",
              "min_players":"2",
 
                      },

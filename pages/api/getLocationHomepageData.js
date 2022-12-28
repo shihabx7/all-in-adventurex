@@ -6446,7 +6446,7 @@ const locPagedata={
        "description": "You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
        "age":"All Ages (6+)",
        "duration":"50",
-       "maxplayers":"10",
+       "maxplayers":"8",
        "minplayers":"2",
        "price":"29.89",
        "slug"  :"escape-from-alcatraz",

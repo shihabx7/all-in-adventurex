@@ -3899,7 +3899,7 @@ const LocActivityData={
                     "activity_category":"escapegame",
                     "age":"All Ages (6+)",
                     "min_player":"2",
-                    "max_player":"10",
+                    "max_player":"8",
                     "price":"29.89",
                     "duration":"50",
                     "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
