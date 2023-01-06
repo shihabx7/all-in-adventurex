@@ -48,13 +48,13 @@ const PysicalEscape=(props)=>{
            {
             props.locationslug &&
              
-              <a href={"/"+props.locationslug+"/activities#others-physical-games"} className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all other in-person games</span> <FaAngleRight/></a>
+              <a href={"/"+props.locationslug+"/activities#others-physical-games"} className="flex relative z-20 font-medium text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all other in-person games</span> <FaAngleRight/></a>
             
            }
             {
             !props.locationslug &&
              
-              <a href={"/activities#others-physical-games"} className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all other in-person games</span> <FaAngleRight/></a>
+              <a href={"/activities#others-physical-games"} className="flex relative z-20 font-medium text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all other in-person games</span> <FaAngleRight/></a>
            
            }
             

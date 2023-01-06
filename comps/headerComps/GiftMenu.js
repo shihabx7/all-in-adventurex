@@ -1,8 +1,7 @@
 import TitleSeparator from '../util/TitleSeparator'
 import { FiX } from "react-icons/fi"
 import { FaAngleRight } from "react-icons/fa"
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
+
 
 const GiftMenu=(props)=>{
    

@@ -27,11 +27,11 @@ const PriceForLargerGroup=()=>{
                                 </div>
                                 <div className="flex  lg:text-lg text-gray-300 mt-3">
                                     <span className="block mt-1 w-6 md:w-8"><img src="/assets/svg/star-bullet.svg"></img></span>
-                                    <span className="block w-[90%]">Reach our guest experience team by calling <a href="tel:844-502-5546 ex. 709" className="font-medium text-blue-600 hover:text-blue-700">844-502-5546 ex. 709</a> or by emailing <a href="mailto:sales@allinadventures.com" className="font-medium text-blue-600 hover:text-blue-700">sales@allinadventures.com</a></span>
+                                    <span className="block w-[90%]">Reach our guest experience team by calling <a href="tel:844-502-5546 ex. 709" className="font-medium text-red-600 hover:text-red-700">844-502-5546 ex. 709</a> or by emailing <a href="mailto:sales@allinadventures.com" className="font-medium text-red-600 hover:text-red-700">sales@allinadventures.com</a></span>
                                 </div>
                                
                                 <div className="gift-btn-box mt-8">
-                                        <a href="/events" className="bg-red-600 card-book-btnx  w-[300px] md:w-[320px] hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full">VIEW ALL EVENTS</a>
+                                        <a href="/events" className="bg-red-600 card-book-btnx  w-[300px] md:w-[320px] hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full font-medium">VIEW ALL EVENTS</a>
                                 </div>
                          </div>
                      </div>
@@ -55,7 +55,7 @@ const PriceForLargerGroup=()=>{
                                 <div className="gift-btn-box mt-8">
                                     
                                 
-                                        <a href="/gift-cards" className="bg-red-600 card-book-btnx  w-[300px] md:w-[320px] hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full">BUY GIFT CARDS</a>
+                                        <a href="/gift-cards" className="bg-red-600 card-book-btnx  w-[300px] md:w-[320px] hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full font-medium">BUY GIFT CARDS</a>
                                     
                                     
 

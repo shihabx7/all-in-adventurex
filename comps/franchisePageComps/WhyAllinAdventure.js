@@ -131,6 +131,18 @@ const WhyAllinAdventure=()=>{
                   {/**=====================row-3 end-============ */}
 
                     </div>
+                    {/** inq btn */}
+                    <div className="wf-btn"> 
+
+                    <div className=" max-w-[280px] mx-auto text-center  search-loc hover:cursor-pointer hover:shadow boder-p rounded-full mt-4 md:mt-6 lg:mt-8"> 
+                           <div className="bg-red-600 hover:bg-red-700  font-medium rounded-full items-center py-2 px-6 md:py-3 md:px-8 text-[#ffffff] md:text-lg gont-medium">
+                                     
+                                         <a href="/franchise-contact" className="block"> INQUIRE NOW</a>
+                                    
+    
+                            </div>
+                         </div>
+                    </div>
             </div>
 
         </div>

@@ -32,7 +32,7 @@ const KeytoSuccess=()=>{
                                              
                         </div>
                         <div className="inline-block min-w-[280px] text-center bg-golden hover:bg-golden-alt  search-loc hover:cursor-pointer hover:shadow boder-p rounded-full mt-4 md:mt-6 lg:mt-8"> 
-                           <div className="bg-[#FEF6E9] hover:bg-golden-alt  rounded-full items-center py-2 px-6 md:py-3 md:px-8 text-[#424242] md:text-lg gont-medium">
+                           <div className="bg-[#FEF6E9] hover:bg-golden-alt  font-medium rounded-full items-center py-2 px-6 md:py-3 md:px-8 text-[#424242] md:text-lg gont-medium">
                                      
                                          <a href="/franchise-contact" className="block"> INQUIRE NOW</a>
                                     

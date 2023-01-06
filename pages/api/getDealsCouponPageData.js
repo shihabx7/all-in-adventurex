@@ -75,7 +75,7 @@ export const getDealsCouponPageData=()=>{
                     "category":"deals",
                     "group":"deals",
                     "ques":"Do you have any discounts for larger groups?",
-                    "ans":["We do! Please check out our <a href=\"/events\" class=\"text-gold hover:text-blue-700\">events</a> page here for more information and group rates. Have more questions? Reach out to us at <a href=\"mailto:sales@allinadventures.com\" class=\"text-gold hover:text-blue-700\"> sales@allinadventures.com</a> for additional help."],
+                    "ans":["We do! Please check out our <a href=\"/events\" class=\"text-red-600 hover:text-red-700\">events</a> page here for more information and group rates. Have more questions? Reach out to us at <a href=\"mailto:sales@allinadventures.com\" class=\"text-red-600 hover:text-red-700\"> sales@allinadventures.com</a> for additional help."],
                           
       
                   },

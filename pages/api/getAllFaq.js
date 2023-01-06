@@ -35,7 +35,7 @@ export const getAllFaq=()=>{
                         "category":"all",
                         "ques":"What changes have you made post Covid-19?",
                         "ans":["We clean and disinfect high-touch surfaces daily in our games and lobby.",
-                              "For Covid-19 updates <a href=\"/covid-19\" class=\"text-gold hover:text-blue-700\"> click here</a>."],
+                              "For Covid-19 updates <a href=\"/covid-19\" class=\"text-red-600 hover:text-red-700\"> click here</a>."],
                         
 
                   },
@@ -283,7 +283,7 @@ export const getAllFaq=()=>{
                             "group":"getting_started",
                             "ques":"What room(s) would you recommend for children?",
                             "ans":[
-                              "All of our games are children friendly.  Superhero’s Adventure is very popular and great for kids.  Treasure Island is great for families.",
+                              "All of our games are children friendly.  Superhero's Adventure is very popular and great for kids.  Treasure Island is great for families.",
                                
                             ],
                                   
@@ -307,7 +307,7 @@ export const getAllFaq=()=>{
                             "group":"getting_started",
                             "ques":"How can I work at The Escape Game?",
                             "ans":[
-                              "Please visit <a href=\"/careers\" class=\"text-blue-600 hover:text-blue-700 \"> allinadventures.com/careers</a>",
+                              "Please visit <a href=\"/careers\" class=\"text-red-600 hover:text-red-700 \"> allinadventures.com/careers</a>",
                               " to view all available positions.",
                                
                             ],
@@ -420,7 +420,7 @@ export const getAllFaq=()=>{
                             "group":"escape_rooms",
                             "ques":"It's my first escape room. Any advice?",
                             "ans":[
-                              "Watch this quick video for a few tips and guidelines for our first-time escapees!",
+                              "<a class=\"text-red-600 hover:text-red-700\" href=\"/what-is-an-escape-room\">Read this article</a> for tips and guidelines for our first-time escapees!",
                             ]
                                   
               
@@ -499,8 +499,8 @@ export const getAllFaq=()=>{
                             "ans":[
                               "Absolutely! We love hosting large parties and corporate events. We have a full-time team dedicated to helping coordinate all of the details for you.",
                               "<p class=\"mt-2 lg:mt-3\">You can reach our guest experience team by calling ", 
-                              "<a href=\"tel:844-502-5546\" class=\" font-medium text-blue-600 hover:text-blue-700\">844-502-5546 ex. 709</a> or by emailing ", 
-                              "<a href=\"mailto:sales@allinadventures.com\" class=\" font-medium text-blue-600 hover:text-blue-700\">sales@allinadventures.com</a></p>",
+                              "<a href=\"tel:844-502-5546\" class=\" font-medium text-red-600 hover:text-red-700\">844-502-5546 ex. 709</a> or by emailing ", 
+                              "<a href=\"mailto:sales@allinadventures.com\" class=\" font-medium text-red-600 hover:text-red-700\">sales@allinadventures.com</a></p>",
                               "<p class=\"mt-3 lg:mt-4 font-medium golden-text\">Here's how the events and parties work: </p>",
                               "<p class=\"mt-1 lg:mt-2\">Firstly, you choose which themed room you are interested in (rooms may vary in their capacity). Many of our guests choose one room to start with for the first round, then take a break for food and drinks, and then choose a second room for the second round. The standard price is $29.89 per person plus applicable taxes and fees for one round of the escape room experience. Private room discounts are available - if you are maxing out the room capacity, be sure to book a private room for additional savings! </p>",
                             ]
@@ -536,8 +536,8 @@ export const getAllFaq=()=>{
                               "<li class=\"my-2 lg:my-2\">Minimum Guest Count: 6 people</>",
                               "</ul>",
                               "<p class=\"mt-2 lg:mt-3\">For more information or to further customize your event, you can reach our guest experience team by calling ", 
-                              "<a href=\"tel:844-502-5546\" class=\" font-medium text-blue-600 hover:text-blue-700\">844-502-5546 ex. 709</a> or by emailing ", 
-                              "<a href=\"mailto:sales@allinadventures.com\" class=\" font-medium text-blue-600 hover:text-blue-700\">sales@allinadventures.com</a></p>",
+                              "<a href=\"tel:844-502-5546\" class=\" font-medium text-red-600 hover:text-red-700\">844-502-5546 ex. 709</a> or by emailing ", 
+                              "<a href=\"mailto:sales@allinadventures.com\" class=\" font-medium text-red-600 hover:text-red-700\">sales@allinadventures.com</a></p>",
                               "<p class=\"mt-2 lg:mt-3\">We understand this is your special day, so let us handle all of the little details while you immerse yourself in all of the fun.</p>",
                               "<p class=\"mt-2 lg:mt-3\">To book online, start by selecting your Location. Choose the &quot;BOOK YOUR EVENT&quot; button and follow the steps.</p>",
                             ]
@@ -713,7 +713,7 @@ export const getAllFaq=()=>{
                             "ques":"How do I redeem the gift cards?",
                             "ans":[
                               "Gift card holders can redeem the card online at www.allinadventures.com or directly in-store where the gift card was purchased. Contact us directly at your local store or call our customer service team at ",
-                            "<a href=\"tel:844-502-5546\" class=\"text-blue-600 hover:text-blue-700 \">844-502-5546.</a> to redeem it over the phone.",
+                            "<a href=\"tel:844-502-5546\" class=\"text-red-600 hover:text-red-700 \">844-502-5546.</a> to redeem it over the phone.",
                             ]
                                   
               
@@ -769,7 +769,7 @@ export const getAllFaq=()=>{
                             "group":"REWARDS_PROGRAM",
                             "ques":"Can I join online?",
                             "ans":[
-                              "Yes, you can! Just visit the Rewards Program page and go to <a href=\"/rewards-program#ready-to-signup\" class=\"text-blue-600 hover:text-blue-700\">READY TO SIGN UP</a> section",
+                              "Yes, you can! Just visit the Rewards Program page and go to <a href=\"/rewards-program#ready-to-signup\" class=\"text-red-600 hover:text-red-700\">READY TO SIGN UP</a> section",
                                "then click on CHOOSE YOUR LOCATION, and you'll be redirected to fivestars.com site for your selected All In Adventures location."
                               
                             ]
@@ -815,7 +815,7 @@ export const getAllFaq=()=>{
                             ]
                           },
                           {
-                            "id":65,
+                            "id":66,
                             "category":"rewards",
                             "group":"REWARDS_PROGRAM",
                             "ques":"Can I redeem points online?",

@@ -1,4 +1,4 @@
-import Head from "next/dist/shared/lib/head";
+
 import Homenav from "../comps/Homenav";
 import Footer from "../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
@@ -35,7 +35,7 @@ const giftCard=(props)=>{
               {/* =======header content ======== end */}
     
      {/* =========================================================================================main content ======== end */}
-    <div id="mainContent" className='main-content nobtn-main-content bg-center' >
+  
            {/* =======breadcum content and breadcum========  */}
            <div className='breadcums  py-1 md:py-2 bg-[#fffceb]'>
              <Breadcrumbs  replaceCharacterList={[{ from: '-', to: ' ' }]} 
@@ -55,7 +55,7 @@ const giftCard=(props)=>{
 
 
   {/* =========================================================================================main content ======== end */}
-        </div>
+        
   
           <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
           </>

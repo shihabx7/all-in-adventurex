@@ -54,29 +54,29 @@ const gallery=(props)=>{
          <div className="gallery-section py-16 md:py-20 lg:py-28 relative" style={{backgroundImage:"url('/assets/game-dt-bg.jpg')"}}>
             <div className="w-full absolute top-0 left-0 "><img className="w-full" src="/assets/game-home-or1.jpg"></img> </div>
               <div className="section-container max-w-7xl mx-auto relative z-30">
-           {/* =======inperson gallery========  */}
+           {/* =======customer  gallery========  */}
                 <div className="inperson-gallery">
-                   <div className="section-title  text-center max-w-[760px] mx-auto">
+                   <div className="section-title  text-center max-w-[800px] mx-auto px-4 md:px-0">
                         <p className="uppercase">CUSTOMER GALLERY</p>
-                        <TitleSeparator title="IN PERSON ESCAPE ROOM GAMES" color="golden-text" weight="font-bold"/>
+                        <TitleSeparator title="IN-PERSON ESCAPE ROOM GAMES" color="golden-text" weight="font-bold"/>
                         <p className="text-gray-700 md:px-8 md:text-lg">Escape rooms are one of the hottest trends in entertainment today. Players must work together to find hidden clues, solve puzzles, crack codes, complete tasks, and escape before time runs out!</p>
                     </div>
 
                     <MainGallery category="escapegame" galleryitem={props.gallerylist}/>
                     <div className="gl-bottom-link mt-12 text-center">
                         <Link href="/activities"> 
-                          <a className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
-                           <span>View all in person escape rooms</span>
+                          <a className="flex text-lg justify-center space-x-1 font-medium items-center text-red-600 hover:text-red-700">
+                           <span>View all in-person escape rooms</span>
                            <span><FiChevronRight/></span> 
                             </a>
-                            </Link>
+                        </Link>
                     </div>
 
                 </div>
                 {/* =======inperson gallery========  end*/}
                 {/* =======event gallery========  */}
                 <div className="event-gallery my-16 md:my-20 lg:my-28">
-                   <div className="section-title  text-center max-w-[760px] mx-auto">
+                   <div className="section-title  text-center max-w-[800px] mx-auto px-4 md:px-0">
                         <TitleSeparator title="EVENTS AND PARTIES" color="golden-text" weight="font-bold"/>
                         <p className="text-gray-700 md:px-8 md:text-lg">We&apos;ve hosted over 10,000 birthday parties and team-building events over the years. With more escape room themes and options being constantly added, we are always looking for ways to make your event memorable.</p>
                     </div>
@@ -84,7 +84,7 @@ const gallery=(props)=>{
                     <MainGallery category="events" galleryitem={props.gallerylist}/>
                     <div className="gl-bottom-link mt-12 text-center">
                         <Link href="/events"> 
-                          <a  className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
+                          <a  className="flex text-lg justify-center space-x-1 font-medium items-center text-red-600 hover:text-red-700">
                            <span>View all events and parties </span>
                            <span><FiChevronRight/></span> 
                             </a>
@@ -96,7 +96,7 @@ const gallery=(props)=>{
             {/* =======event gallery========  end*/}
             {/* =======OTHERS GAMES AND ACTIVITES========  */}
             <div className="other-games-gallery my-16 md:my-20 lg:my-28">
-                   <div className="section-title  text-center max-w-[600px] mx-auto">
+                   <div className="section-title  text-center max-w-[800px] mx-auto px-4 md:px-0">
                         <TitleSeparator title="OTHER GAMES AND ACTIVITIES" color="golden-text" weight="font-bold"/>
                         <p className="text-gray-700 md:px-8 md:text-lg">All In Adventures is more than an escape room place. Join us to experience more fun activities, including Game Show Rooms, Beat the Seat and Axe Throwing.</p>
                     </div>
@@ -104,7 +104,7 @@ const gallery=(props)=>{
                     <MainGallery category="others" galleryitem={props.gallerylist}/>
                     <div className="gl-bottom-link mt-12 text-center">
                         <Link href="/activities#others-physical-games"> 
-                          <a  className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
+                          <a  className="flex text-lg justify-center space-x-1 font-medium items-center text-red-600 hover:text-red-700">
                            <span>View all other in person games</span>
                            <span><FiChevronRight/></span> 
                             </a>
@@ -116,7 +116,7 @@ const gallery=(props)=>{
             {/* =======OTHERS GAMES AND ACTIVITES========  end*/}
             {/* =======VIRTUAL GAMES========  */}
             <div className="virtual-gallery ">
-                   <div className="section-title  text-center max-w-[600px] mx-auto">
+                   <div className="section-title  text-center max-w-[800px] mx-auto px-4 md:px-0">
                         <TitleSeparator title="VIRTUAL GAMES" color="golden-text" weight="font-bold"/>
                         <p className="text-gray-700 md:px-8 md:text-lg">We offer a new way to stay connected while apart. For unlimited players, any time, anywhere. Your team will work together on Zoom, and a game master will broadcast live from escape room or game show room of your choice.</p>
                     </div>
@@ -124,7 +124,7 @@ const gallery=(props)=>{
                     <MainGallery category="virtual" galleryitem={props.gallerylist}/>
                     <div className="gl-bottom-link mt-12 text-center">
                         <Link href="/virtual-games"> 
-                          <a  className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
+                          <a  className="flex text-lg justify-center space-x-1 font-medium items-center text-red-600 hover:text-red-700">
                            <span>View all virtual games </span>
                            <span><FiChevronRight/></span> 
                             </a>

@@ -62,10 +62,10 @@ const BuyGiftCards=(props)=>{
                                 
                                 <div className="gift-btn-box mt-8">
                                     
-                                        <button onClick={showLocation} className="bg-red-600 card-book-btnx  w-[300px] md:w-[320px] hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full">BUY GIFT CARDS</button>
+                                        <button onClick={showLocation} className="bg-red-600 card-book-btnx  w-[300px] md:w-[320px] hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block max-w-sm text-center text-gray-100 rounded-full font-medium">BUY GIFT CARDS</button>
                                     
                                    
-                                        <a href="/activities" className="bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[300px]  md:w-[320px] text-center text-gray-100 rounded-full">VIEW ALL GAMES</a>
+                                        <a href="/activities" className="bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[300px]  md:w-[320px] text-center text-gray-100 rounded-full font-medium">VIEW ALL GAMES</a>
                                     
 
                                 </div>
@@ -100,12 +100,12 @@ const BuyGiftCards=(props)=>{
                                         <div className="gift-option-link flex flex-col md:flex-row space-y-2 md:space-y-0 justify-between">
                                              <div> 
                                                 <Link href="#gift-faq">
-                                                    <a className="flex items-center space-x-1 text-red-600 hover:text-red-700 lg:text-lg"><span>How to buy Gift Cards</span><span><FiChevronRight/></span></a>
+                                                    <a className="flex items-center space-x-1 text-red-600 hover:text-red-700 font-medium text-lg"><span>How to buy Gift Cards</span><span><FiChevronRight/></span></a>
                                                 </Link>
                                              </div>
                                              <div> 
                                                 <Link href="#gift-faq">
-                                                    <a className="flex space-x-1  items-center text-red-600 hover:text-red-700 lg:text-lg"><span>How to redeem Gift Cards</span><span><FiChevronRight/></span></a>
+                                                    <a className="flex space-x-1  items-center text-red-600 hover:text-red-700 font-medium text-lg"><span>How to redeem Gift Cards</span><span><FiChevronRight/></span></a>
                                                 </Link>
                                              </div>
                                         </div>

@@ -164,7 +164,7 @@ export const getLocationIndGiftPageData=(locationslug)=>{
                   "ques":"How do I redeem the Gift Cards?",
                   "ans":[
                       "Gift card holders can redeem the card online at www.allinadventures.com or directly in-store where the Gift Card was purchased. Contact us directly at your local store or call our customer service team at ",
-                      "<a href=\"tel:844-502-5546\" class=\"text-blue-600 hover:text-blue-700\">844-502-5546</a> to redeem it over the phone."
+                      "<a href=\"tel:844-502-5546\" class=\"text-red-600 hover:text-red-700\">844-502-5546</a> to redeem it over the phone."
                   ]
                   
 

@@ -26,7 +26,7 @@ const DealsFaqs=(props)=>{
                     <FaqList faqlist={props.faqlist}/>
                     <div className="gl-bottom-link mt-12 text-center">
                           
-                              <a href="/faqs" className="flex lg:text-lg justify-center space-x-1 font-medium items-center text-red-500 hover:text-red-700">
+                              <a href="/faqs" className="flex text-lg justify-center space-x-1 font-medium items-center text-red-600 hover:text-red-700">
                                <span>Read more FAQ's </span>
                                <span><FiChevronRight/></span> 
                                 </a>

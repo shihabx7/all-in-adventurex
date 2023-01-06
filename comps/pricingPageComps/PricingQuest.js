@@ -76,7 +76,7 @@ const PricingQuest=(props)=>{
                        
                         <div className="view-all flex justify-center ">
                             
-                              <a href="/activities" className="flex lg:text-lg justify-center space-x-1 items-center text-red-500 hover:text-red-700 font-medium"><span>View all in-person escape rooms</span> <FiChevronRight/></a>
+                              <a href="/activities" className="flex text-lg justify-center space-x-1 items-center text-red-600 hover:text-red-700 font-medium"><span>View all in-person escape rooms</span> <FiChevronRight/></a>
                             
                          </div>
                     </div>

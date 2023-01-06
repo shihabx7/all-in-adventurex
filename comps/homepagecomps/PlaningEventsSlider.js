@@ -45,12 +45,12 @@ const PlaningEventsSlider=(props)=>{
             {
                 props.city && 
                 <p className="text-gray-700 md:px-8">
-                  All In Adventures is famous for hosting  {props.city}'s most memorable parties and events. We can accommodate large private and corporate groups. With our multiple-room settings and are happy to customize an event to suit your needs.
+                  All In Adventures is famous for hosting  {props.city}'s most memorable parties and events. We can accommodate large private and corporate groups with our multiple-room settings and are happy to customize an event to suit your needs.
                 </p>
             }
             {
                 !props.city && 
-                <p className="text-gray-700 md:px-8">All In Adventures is famous for hosting most memorable parties and events. We can accommodate large private and corporate groups. With our multiple-room settings and are happy to customize an event to suit your needs..</p>
+                <p className="text-gray-700 md:px-8">All In Adventures is famous for hosting most memorable parties and events. We can accommodate large private and corporate groups with our multiple-room settings and are happy to customize an event to suit your needs..</p>
             }
               
             </div>
@@ -62,12 +62,12 @@ const PlaningEventsSlider=(props)=>{
     {
             props.locationslug &&
             
-            <a href={"/"+props.locationslug+"/events/"} className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all events and parties </span> <FaAngleRight/></a>
+            <a href={"/"+props.locationslug+"/events/"} className="flex relative z-20 font-medium text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all events and parties </span> <FaAngleRight/></a>
          
           }
           { !props.locationslug &&
              
-             <a href={"/events/"} className="flex lg:text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all events and parties </span> <FaAngleRight/></a>
+             <a href={"/events/"} className="flex relative z-20 font-medium text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"><span>View all events and parties </span> <FaAngleRight/></a>
            
           }
      </div>

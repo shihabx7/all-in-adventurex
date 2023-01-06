@@ -104,12 +104,12 @@ const EventContact=(props)=>{
                                                     <span>
                                                         {
                                                             props.contactdata &&
-                                                            <a className="text-[#F4E6C3] hover:text-blue-700" href={"tel:"+props.contactdata.phone}>{props.contactdata.phone}</a>
+                                                            <a className="text-[#F4E6C3] hover:text-red-700" href={"tel:"+props.contactdata.phone}>{props.contactdata.phone}</a>
 
                                                         }
                                                         {
                                                             !props.contactdata &&
-                                                            <a className="text-[#F4E6C3] hover:text-blue-700" href="tel:+1 844-502-5546">+1 844-502-5546 ex. 709.</a>
+                                                            <a className="text-[#F4E6C3] hover:text-red-700" href="tel:+1 844-502-5546">+1 844-502-5546 ex. 709.</a>
 
                                                         }
                                                        
@@ -121,12 +121,12 @@ const EventContact=(props)=>{
                                                     <span>
                                                     {
                                                             props.contactdata &&
-                                                            <a className="text-[#F4E6C3] hover:text-blue-700" href={"mailto:"+props.contactdata.email.toLowerCase()}>{props.contactdata.email}</a>
+                                                            <a className="text-[#F4E6C3] hover:text-red-700" href={"mailto:"+props.contactdata.email.toLowerCase()}>{props.contactdata.email}</a>
 
                                                         }
                                                         {
                                                             !props.contactdata &&
-                                                            <a className="text-[#F4E6C3] hover:text-blue-700" href="email:sales@allinadventures.com">sales@allinadventures.com</a>
+                                                            <a className="text-[#F4E6C3] hover:text-red-700" href="email:sales@allinadventures.com">sales@allinadventures.com</a>
 
                                                         }
                                                         

@@ -91,7 +91,7 @@ const PrivcingVirtualGames=()=>{
                         
                         <div className="view-all flex justify-center">
                             
-                              <a href="/virtual-games" className="flex font-medium lg:text-lg justify-center space-x-1 items-center text-red-500 hover:text-red-700"><span>View all virtual game</span> <FiChevronRight/></a>
+                              <a href="/virtual-games" className="flex font-medium text-lg justify-center space-x-1 items-center text-red-600 hover:text-red-700"><span>View all virtual game</span> <FiChevronRight/></a>
                             
                          </div>
                     </div>

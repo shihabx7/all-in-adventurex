@@ -18,7 +18,7 @@ export const getFranchisePageData=()=>{
            
           "pagedata": {
                         "pagetitle":"BECOME AN ESCAPE ROOM FRANCHISE OWNER",
-                        "pagesubtitle":"Starting an escape room business can be challenging, but our partnership can surely help you avoid costly mistakes. Since 2014 All In Adventures escape room franchise model has been hyper-profitable and already working on every level, from venue development to game setup to branding to operation to advertising",
+                        "pagesubtitle":"Starting an escape room business can be challenging, but our partnership can surely help you avoid costly mistakes. Since 2014 All In Adventures escape room centers have been hyper-profitable and already working on every level, from venue development to game setup to branding to operation to advertising.",
                          
                         "totalLocations": getTotal().totalLocations,
                         "coverimageL":"/assets/gn-desktop-hero/allinadventures-franchise-hero.jpg",

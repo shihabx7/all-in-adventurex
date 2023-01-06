@@ -76,7 +76,7 @@ const PricingNextGen=(props)=>{
                        
                         <div className="view-all flex justify-center ">
                             
-                              <a href="/activities" className="flex font-medium lg:text-lg justify-center space-x-1 items-center text-red-500 hover:text-red-700"><span>View all in-person escape rooms</span> <FiChevronRight/></a>
+                              <a href="/activities" className="flex font-medium text-lg justify-center space-x-1 items-center text-red-600 hover:text-red-700"><span>View all in-person escape rooms</span> <FiChevronRight/></a>
                             
                          </div>
                     </div>

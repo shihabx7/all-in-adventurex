@@ -300,11 +300,11 @@ const SubMenu=(props)=>{
                               !props.locationslug &&
 
                               <div className="submenu-item">
-                                <Link href="/gift-cards">
-                                     <a className="flex items-center">
+                              
+                                     <a href="/gift-cards" className="flex items-center">
                                         <span className="sub-link-txt">Gift Cards</span> 
                                      </a>
-                                </Link>
+                                
 
                             </div>
                             }

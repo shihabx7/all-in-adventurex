@@ -133,7 +133,7 @@ const PricingGiftCard=(props)=>{
                        
                         <div className="view-all flex justify-center">
                             
-                              <a  href="/gift-cards" className="flex font-medium lg:text-lg justify-center space-x-1 items-center text-red-500 hover:text-red-700"><span>Buy gift cards</span> <FiChevronRight/></a>
+                              <a  href="/gift-cards" className="flex font-medium text-lg justify-center space-x-1 items-center text-red-600 hover:text-red-700"><span>Buy gift cards</span> <FiChevronRight/></a>
                             
                          </div>
                     </div>

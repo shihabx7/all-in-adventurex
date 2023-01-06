@@ -22,7 +22,7 @@ const EarningPoints=()=>{
                                 <div className="earning-pts-box mt-4 lg:mt-6">
                                      <h3 className="font-medium text-[#464646] text-lg lg:text-xl">Earn bonus points when you achieve the following:</h3> 
                                      <ul className="star-list pl-4 text-[#464646] mt-4">
-                                             <li className="lg:text-lg my-2 md:my-3 ">100 bonus points for beating the quarterly Local Wall of Fame record</li>
+                                             
                                              <li className="lg:text-lg my-2 md:my-3 ">150 bonus points for beating the quarterly Global Wall of Fame record</li>
                                              
 

@@ -124,12 +124,12 @@ const BuyLocGift=(props)=>{
                                         <div className="gift-option-link flex flex-col md:flex-row space-y-2 md:space-y-0 justify-between">
                                              <div> 
                                                 <Link href="#gift-faq">
-                                                    <a className="flex items-center space-x-1 text-red-600 hover:text-red-700 lg:text-lg"><span>How to buy Gift Cards</span><span><FiChevronRight/></span></a>
+                                                    <a className="flex items-center space-x-1 text-red-600 hover:text-red-700 font-medium text-lg"><span>How to buy Gift Cards</span><span><FiChevronRight/></span></a>
                                                 </Link>
                                              </div>
                                              <div> 
                                                 <Link href="#gift-faq">
-                                                    <a className="flex space-x-1  items-center text-red-600 hover:text-red-700 lg:text-lg"><span>How to redeem Gift Cards</span><span><FiChevronRight/></span></a>
+                                                    <a className="flex space-x-1  items-center text-red-600 hover:text-red-700 font-medium text-lg"><span>How to redeem Gift Cards</span><span><FiChevronRight/></span></a>
                                                 </Link>
                                              </div>
                                         </div>

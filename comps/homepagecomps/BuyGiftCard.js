@@ -84,22 +84,22 @@ const BuyGiftCard=(props)=>{
                                 <div className="gift-btn-box mt-8">
                                     { 
                                         props.bookingData &&
-                                        <button onClick={()=>openBooking(props.bookingData.shortname,bkdata())} className="bg-red-600  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">BUY GIFT CARDS</button>
+                                        <button onClick={()=>openBooking(props.bookingData.shortname,bkdata())} className="bg-red-600  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full font-medium">BUY GIFT CARDS</button>
                                     }
                                     { 
                                        !props.bookingData &&
-                                        <button onClick={()=>showLocation()} className=" bg-red-600 hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">BUY GIFT CARDS</button>
+                                        <button onClick={()=>showLocation()} className=" bg-red-600 hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full font-medium">BUY GIFT CARDS</button>
                                     }
                                     {
                                         props.locationslug &&
                                         
-                                              <a href={"/"+props.locationslug+"/gift-cards"} className="bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">LEARN MORE</a>
+                                              <a href={"/"+props.locationslug+"/gift-cards"} className="bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full font-medium">LEARN MORE</a>
                                          
                                     }
                                     {
                                         !props.locationslug &&
                                         
-                                              <a href="/gift-cards" className="bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full">LEARN MORE</a>
+                                              <a href="/gift-cards" className="bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full font-medium">LEARN MORE</a>
                                       
                                     }
                                     

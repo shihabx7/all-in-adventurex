@@ -251,31 +251,31 @@ const CorContact=()=>{
                         <div className="c-contact-info-list mt-6 lg:mt-8 ">
                             <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-t border-b border-[#D2C6AA]">
                                  <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg  uppercase">phone</h4>
-                                <a href="tel:+1 844-502-5546" className="text-lg text-[#232323] block hover:text-blue-700">+1 844-502-5546</a>
+                                <a href="tel:+1 844-502-5546" className="text-lg text-[#232323] block hover:text-red-700">+1 844-502-5546</a>
                             </div>
                             <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
                                  <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg uppercase">FRANCHISING</h4>
-                                <a href="mailto:franchise@allinadventures.com" className="text-lg text-[#232323] block hover:text-blue-700">franchise@allinadventures.com</a>
+                                <a href="mailto:franchise@allinadventures.com" className="text-lg text-[#232323] block hover:text-red-700">franchise@allinadventures.com</a>
                             </div>
                             <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
                                  <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg uppercase">SALES</h4>
-                                <a href="mailto:sales@allinadventures.com" className="text-lg text-[#232323] block hover:text-blue-700">sales@allinadventures.com</a>
+                                <a href="mailto:sales@allinadventures.com" className="text-lg text-[#232323] block hover:text-red-700">sales@allinadventures.com</a>
                             </div>
                             <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
                                  <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg  uppercase">CUSTOMER SERVICE</h4>
-                                <a href="mail:custsvc@allinadventures.com" className="text-lg text-[#232323] block hover:text-blue-700">support@allinadventures.com</a>
+                                <a href="mail:custsvc@allinadventures.com" className="text-lg text-[#232323] block hover:text-red-700">support@allinadventures.com</a>
                             </div>
                             <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
                                  <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg  uppercase">OPERATIONS</h4>
-                                <a href="mailto:ops@allinadventures.com" className="text-lg text-[#232323] block hover:text-blue-700">ops@allinadventures.com</a>
+                                <a href="mailto:ops@allinadventures.com" className="text-lg text-[#232323] block hover:text-red-700">ops@allinadventures.com</a>
                             </div>
                             <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
                                  <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg  uppercase">CAREERS</h4>
-                                <a href="mailto:careers@allinadventures.com" className="text-lg text-[#232323] block hover:text-blue-700">careers@allinadventures.com</a>
+                                <a href="mailto:careers@allinadventures.com" className="text-lg text-[#232323] block hover:text-red-700">careers@allinadventures.com</a>
                             </div>
                             <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
                                  <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg uppercase">BILLING</h4>
-                                <a href="mailto:billing@allinadventures.com" className="text-lg text-[#232323] block hover:text-blue-700">billing@allinadventures.com</a>
+                                <a href="mailto:billing@allinadventures.com" className="text-lg text-[#232323] block hover:text-red-700">billing@allinadventures.com</a>
                             </div>
 
                         </div>

@@ -533,7 +533,7 @@ const TermsAndCondition=()=>{
                                              settled by arbitration administered by the American Arbitration Association in accordance with its
                                               Commercial Arbitration Rules including the Supplementary Procedures for Consumer-Related Disputes
                                                (collectively, “<b>AAA Rules</b>”), and judgment on the award rendered by the arbitrator(s) may be entered
-                                                in any court having jurisdiction thereof. The AAA Rules are available online at <a className="text-blue-600 hover:text-blue-700 underline underline-offset-4" href="https://adr.org/" target="_blank">https://adr.org/</a>.
+                                                in any court having jurisdiction thereof. The AAA Rules are available online at <a className="text-red-600 hover:text-red-700 underline underline-offset-4" href="https://adr.org/" target="_blank">https://adr.org/</a>.
                                                  You agree that, by accepting these Terms, you and All In Adventures are each waiving the right
                                                   to a trial by jury or to participate in a class action. These Terms evidence a transaction in
                                                    interstate commerce, and thus the Federal Arbitration Act governs the interpretation and
@@ -573,7 +573,7 @@ const TermsAndCondition=()=>{
                                         <p className="lg:text-lg text-gray-800 mt-2  lg:mt-2" > 
                                              <b>Mystery Room, LLC</b><br/>
                                               <b>Address:</b> 3883 Rogers Bridge Rd NW Suite 501 Duluth, GA 30097<br/>
-                                             <a className="text-blue-600 hover:text-blue-700 underline underline-offset-4" href="mailto:privacy@allinaventures.com">privacy@allinaventures.com</a>
+                                             <a className="text-red-600 hover:text-red-700 underline underline-offset-4" href="mailto:privacy@allinaventures.com">privacy@allinaventures.com</a>
 
                                         </p>
                                         <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4 italic font-medium" > 
@@ -772,7 +772,7 @@ const TermsAndCondition=()=>{
                                       <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
                                       If you have any questions about these Terms, please write to us by mail at Mystery Room, LLC,
                                        <span className="font-medium">Address:</span> 3883 Rogers Bridge Rd NW Suite 501 Duluth, GA 30097,
-                                        or email us at <a className="text-blue-600 hover:text-blue-700 underline underline-offset-4" href="mailto:privacy@allinadventures.com">privacy@allinadventures.com.</a> or call us at <a href="tel:+1 844-502-5546" className="text-blue-600 underline hover:text-blue-700">+1 844-502-5546</a>.
+                                        or email us at <a className="text-red-600 hover:text-red-700 underline underline-offset-4" href="mailto:privacy@allinadventures.com">privacy@allinadventures.com.</a> or call us at <a href="tel:+1 844-502-5546" className="text-red-600 underline hover:text-red-700">+1 844-502-5546</a>.
                                                </p>
                                         
                                         

@@ -231,8 +231,8 @@ const PrivacyPolicy=()=>{
                                                  We may also use these analytics services to record clicks, movements, scrolling activity,
                                                   as well as any text that you type into our Services. For example, we use Google Analytics
                                                    on our Websites to track user trends and usage. For more information on Google Analytics processing
-                                                    of Personal Information as it relates to our Website, please visit <a className="text-blue-600 underline  hover:text-blue-700" target="_blank" href="https://policies.google.com/technologies/partner-sites">here</a>. By using a browser plugin
-                                                     provided by Google by clicking <a className="text-blue-600 hover:text-blue-700 underline underline-offset-2" target="_blank" href="https://tools.google.com/dlpage/gaoptout">here</a>, you can opt out of Google Analytics.
+                                                    of Personal Information as it relates to our Website, please visit <a className="text-red-600 underline  hover:text-red-700" target="_blank" href="https://policies.google.com/technologies/partner-sites">here</a>. By using a browser plugin
+                                                     provided by Google by clicking <a className="text-red-600 hover:text-red-700 underline underline-offset-2" target="_blank" href="https://tools.google.com/dlpage/gaoptout">here</a>, you can opt out of Google Analytics.
                                                </p>
                                      
                                         </div>
@@ -255,7 +255,7 @@ const PrivacyPolicy=()=>{
                                                  and other storage technologies to collect or receive information from our website and elsewhere
                                                   on the internet to provide marketing services to us, including targeted advertising. If you want
                                                    to learn more, including how you may opt-out of targeted advertising, you should visit the following
-                                                    websites:<a className="text-blue-600 hover:text-blue-700 underline underline-offset-2" target="_blank" href="https://www.aboutads.info/choices/">https://www.aboutads.info/choices</a>, <a className="text-blue-600 hover:text-blue-700 underline underline-offset-2" target="_blank" href="https://www.networkadvertising.org">https://www.networkadvertising.org</a>, <a className="text-blue-600 hover:text-blue-700 underline underline-offset-2" target="_blank" href="https://www.youradchoices.com">https://www.youradchoices.com</a>
+                                                    websites:<a className="text-red-600 hover:text-red-700 underline underline-offset-2" target="_blank" href="https://www.aboutads.info/choices/">https://www.aboutads.info/choices</a>, <a className="text-red-600 hover:text-red-700 underline underline-offset-2" target="_blank" href="https://www.networkadvertising.org">https://www.networkadvertising.org</a>, <a className="text-red-600 hover:text-red-700 underline underline-offset-2" target="_blank" href="https://www.youradchoices.com">https://www.youradchoices.com</a>
                                                      (please note: we do not operate or control these third party sites, and there may be additional ways for
                                                       you to opt out of online advertising). When you opt-out using these links, please note that you may still
                                                        receive advertisements. They just will not be personalized based on your interests.
@@ -368,7 +368,7 @@ const PrivacyPolicy=()=>{
                                          the scope of the breach and restore reasonable integrity to the system, as well as for the legitimate needs of law enforcement,
                                           if notification would impede a criminal investigation. From time to time, we evaluate new technologies for protecting information and,
                                            when appropriate, we will undertake reasonable efforts to upgrade our information security systems. If you notice or suspect any security
-                                            violations, please contact us by sending an email to <a class="text-blue-600 hover:text-blue-700 underline underline-offset-4" href="mailto:privacy@allinadventures.com">privacy@allinadventures.com.</a> 
+                                            violations, please contact us by sending an email to <a class="text-red-600 hover:text-red-700 underline underline-offset-4" href="mailto:privacy@allinadventures.com">privacy@allinadventures.com.</a> 
 
                                       </p>
                                     
@@ -538,9 +538,9 @@ const PrivacyPolicy=()=>{
                                       <h3 className="text-gray-700 font-os font-bold text-xl md:text-2xl lg:text-3xl ">11. CONTACT US</h3>
                                       <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
                                       If you have any questions about this Privacy Policy or any of the above,
-                                       please email us at <a class="text-blue-600 hover:text-blue-700 underline underline-offset-4" href="mailto:privacy@allinadventures.com">privacy@allinadventures.com.</a> You may contact us by mail
+                                       please email us at <a class="text-red-600 hover:text-red-700 underline underline-offset-4" href="mailto:privacy@allinadventures.com">privacy@allinadventures.com.</a> You may contact us by mail
                                         at: Mystery Room LLC, Address: 3883 Rogers Bridge Rd NW Suite 501 Duluth, GA 30097,
-                                         call us at <a  href="tel:+1 844-502-5546" class="text-blue-600 underline hover:text-blue-700">+1 844-502-5546</a>.
+                                         call us at <a  href="tel:+1 844-502-5546" class="text-red-600 underline hover:text-red-700">+1 844-502-5546</a>.
                                     </p>
                                    
                                      

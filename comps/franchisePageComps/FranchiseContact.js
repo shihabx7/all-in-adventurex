@@ -586,7 +586,7 @@ const FranchiseContactForm=()=>{
     return(
         <div id="fransform" className="our-mission-vission relative bg-center bg-cover" style={{backgroundImage:'url("/assets/game-dt-bg.jpg")'}}>
         <div className="w-full absolute top-0 left-0 "><img className="w-full" src="/assets/game-home-or1.jpg"></img> </div>
-            <div className="section-container max-w-7xl mx-auto  py-16 md:py-20 lg:py-28 relative z-30">
+            <div className="section-container max-w-7xl mx-auto  py-24 md:py-30 lg:py-40 relative z-30">
                 <div className="section-title px-4 mb-8">
                         <p className="text-lg text-center text-[#938056]">LET'S GET STARTED</p>
                         <TitleSeparator title="SUBMIT THE FRANCHISE INQUIRY FORM" color="golden-text" weight="font-bold" />

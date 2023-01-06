@@ -22,7 +22,7 @@ const AllDealsAndCoupon=(props)=>{
                     <CouponDisplay/>
                     <div className="view-all flex justify-center mt-8">
                             
-                              <a href="/rewards-program" className="flex lg:text-lg  justify-center space-x-1 items-center text-red-500 hover:text-red-700 font-medium"><span>Learn more about reward program</span> <FiChevronRight/></a>
+                              <a href="/rewards-program" className="flex text-lg  justify-center space-x-1 items-center text-red-600 hover:text-red-700 font-medium"><span>Learn more about reward program</span> <FiChevronRight/></a>
                            
                          </div>
                 </div>

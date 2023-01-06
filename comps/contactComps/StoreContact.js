@@ -286,11 +286,11 @@ const StoreContact=(props)=>{
                         <div className="c-contact-info-list mt-6 lg:mt-8 ">
                         <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
                             <img src="/assets/svg/event-icon-phone.svg"></img>
-                            <a  href={"tel:"+props.contactdata.phone} className="lg:text-lg text-[#232323] block hover:text-blue-700 max-w-[300px]">{props.contactdata.phone}</a>
+                            <a  href={"tel:"+props.contactdata.phone} className="lg:text-lg text-[#232323] block hover:text-red-700 max-w-[300px]">{props.contactdata.phone}</a>
                             </div>
                             <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
                                   <img src="/assets/svg/event-icon-email.svg"></img>
-                                <a href={"mailto:"+props.contactdata.email.toLowerCase()} className="lg:text-lg text-[#232323] block hover:text-blue-700">{props.contactdata.email}</a>
+                                <a href={"mailto:"+props.contactdata.email.toLowerCase()} className="lg:text-lg text-[#232323] block hover:text-red-700">{props.contactdata.email}</a>
                                
                             </div>
                             <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-t border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
@@ -301,7 +301,7 @@ const StoreContact=(props)=>{
                                 <img src="/assets/svg/event-icon-watch.svg"></img>
                                 <div className="flex items-center space-x-2 lg:text-lg group cursor-pointer" onClick={()=>{setShowHours(true)}}> 
                                     <p className="text-[#1B823A]">Open Hours</p>
-                                    <p className="flex items-center space-x-2 group-hover:text-blue-700">View Local Time <span><FiChevronDown/></span> </p>
+                                    <p className="flex items-center space-x-2 group-hover:text-red-700">View Local Time <span><FiChevronDown/></span> </p>
                                 </div>
                                 {
                                     showHour && 

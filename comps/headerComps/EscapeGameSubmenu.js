@@ -3,7 +3,7 @@ import { ImPlay3 } from "react-icons/im";
 
 const EscapeGameSubmenu=(props)=>{
 
-   console.log('gm'+props)
+   console.log(props)
   
 
     return(

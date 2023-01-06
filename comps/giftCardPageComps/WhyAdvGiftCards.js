@@ -67,7 +67,7 @@ const WhyAdvGiftCards=(props)=>{
                         }   
                         {
                             !props.bookingdata &&
-                            <button onClick={()=>showLocation()} className="block w-[290px] lg:max-w-sm mx-auto py-3 px-16 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg">BUY GIFT CARDS</button>
+                            <button onClick={()=>showLocation()} className="block w-[290px] lg:max-w-sm mx-auto py-3 px-16 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg ">BUY GIFT CARDS</button>
                         }
                         {
                             props.locationslug &&

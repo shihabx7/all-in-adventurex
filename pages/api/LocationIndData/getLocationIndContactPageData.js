@@ -109,7 +109,7 @@ export const getLocationIndContactPageData=(locationslug)=>{
            
         "pagedata":{
             "pagetitle":"CONTACT ALL IN ADVENTURES "+locnameMod(locationslug)+" STORE",
-            "pagesubtitle":"Our team is here to help you. Contact us with any questions you have about an upcoming or previous experience. Before reaching out, we recommend you check our <a href=\"/faqs\" class=\"text-gold hover:text-blue-700\">FAQs</a> page first to see if your question has been answered.",
+            "pagesubtitle":"Our team is here to help you. Contact us with any questions you have about an upcoming or previous experience. Before reaching out, we recommend you check our <a href=\"/faqs\" class=\"text-red-600 font-medium hover:text-red-700\">FAQs</a> page first to see if your question has been answered.",
             "publish_status":getLocTotal(locationslug).publish_status,
             "locationslug":getLocSpec(locationslug).slug,
             "mall":getLocSpec(locationslug).mall,
