@@ -1392,7 +1392,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                       "total_rev":"402",
                                       "avg_rev":"4.7",
                                       "player_escaped":"22K+",
-                                      "phone":"+1 862-203-5394",
+                                      "phone":"+1 862-244-3062",
                                       "b_uid":"f44827aa62c544f58eb5510b38f95f3c",
                                       "coverimg":'/assets/mapcard/allinadventures-escape-room-rockaway-nj-rockaway-townsquare-mall-hero.jpg',
                                       "mall":"Rockaway Townsquare",
