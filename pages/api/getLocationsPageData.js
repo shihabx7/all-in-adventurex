@@ -468,7 +468,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                     },
                                     {
                                       "day":"thursday",
-                                      "open":"1 am",
+                                      "open":"11 am",
                                       "close":"8 pm"
                     
                                     },
