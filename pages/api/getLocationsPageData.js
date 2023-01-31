@@ -450,38 +450,38 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                   "hours":[
                                     {
                                       "day":"monday",
-                                      "open":"10 am",
-                                      "close":"9.30 pm"
+                                      "open":"11 am",
+                                      "close":"8 pm"
                     
                                     },
                                     {
                                       "day":"tuesday",
-                                      "open":"10 am",
-                                      "close":"9.30 pm"
+                                      "open":"11 am",
+                                      "close":"8 pm"
                     
                                     },
                                     {
                                       "day":"wednesday",
-                                      "open":"10 am",
-                                      "close":"9.30 pm"
+                                      "open":"11 am",
+                                      "close":"8 pm"
                     
                                     },
                                     {
                                       "day":"thursday",
-                                      "open":"10 am",
-                                      "close":"9.30 pm"
+                                      "open":"1 am",
+                                      "close":"8 pm"
                     
                                     },
                                     {   
                                       "day":"friday",
-                                      "open":"10 am",
-                                      "close":"9.30 pm"
+                                      "open":"11 am",
+                                      "close":"9 pm"
                     
                                     },
                                     {   
                                       "day":"saturday",
-                                      "open":"10 am",
-                                      "close":"9.30 pm"
+                                      "open":"11 am",
+                                      "close":"9 pm"
                     
                                     },
                                     {   
