@@ -49,7 +49,7 @@ const franchise  = (props) => {
         </div>
          {/* =======breadcum content and breadcum root page template======== end */}
          
-         <FranchiseHero pagedata={props.pagedata} label="INQUIRY NOW" linkloc="/franchise-contact"/>
+         <FranchiseHero pagedata={props.pagedata} label="INQUIRY NOW" />
          <FranchiseModel/>
         {/*<FranchiseTestimonials/> */} 
          <WhyAllinAdventure/>
