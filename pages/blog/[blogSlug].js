@@ -15,7 +15,7 @@ import BlogInfo from "../../comps/blogPageComps/BlogInfo";
 import BlogSideBar from "../../comps/blogPageComps/BlogSideBar";
 import RelatedBlogs from "../../comps/blogPageComps/RelatedBlogs";
 
-const single=(props)=>{
+const SingleBlog=(props)=>{
     const [blpadding,setBlpadding]=useState('100px')
     useEffect(()=>{
         const blpadel=document.querySelector('#sbl-content')
@@ -97,7 +97,7 @@ const single=(props)=>{
       )
 }
 
-export default single
+export default SingleBlog
 
 
 export const getStaticPaths=async()=>{
