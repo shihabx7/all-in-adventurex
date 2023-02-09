@@ -52,7 +52,7 @@ useEffect(()=>{
                                     props.blogcat.map((item)=>{
                                                 return(
                                                      
-                                                         <a key={item.id}   href={"/blogs/"+item.slug} className="inline-block bl-cat-item blog-cat-item  bg-[#FFF3D8] px-4 md:px-6 py-2 text-[#464646]">{item.cat}</a>
+                                                         <a key={item.id}   href={"/blog/"+item.slug} className="inline-block bl-cat-item blog-cat-item  bg-[#FFF3D8] px-4 md:px-6 py-2 text-[#464646]">{item.cat}</a>
                                                    
                                                 )
                                     })

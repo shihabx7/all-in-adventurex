@@ -2,13 +2,7 @@
 import BlogCards from "./BlogCards"
 
 const RecentBlogs=(props)=>{
-    const getBlogExp=(txt)=>{
-        var ret=txt 
-        if(ret.length>140){
-            ret=ret.substring(0, 140)+"..."
-        }
-        return ret
-    }
+    
 
     return(
         <div className='bl-arc-row pb-16'>

@@ -9,7 +9,8 @@ const AllBlogs=(props)=>{
 
    
     const  showMore=(pageno)=>{
-
+        stCurrentPage(nextPage)
+        setNextPage(nextPage+1)
     }
 
     return(
@@ -24,7 +25,7 @@ const AllBlogs=(props)=>{
                
              </div>
              <div className="show-more-blog flex justify-center mt-8"> 
-                        <button className="flex space-x-1 text-red-600 hover:text-700 font-medium text-lg lg:text-xl items-center" onClick={showMore(nextPage)}>Load more<FiChevronDown/></button>
+                        <button className="flex space-x-1 text-red-600 hover:text-700 font-medium text-lg lg:text-xl items-center" >Load more<FiChevronDown/></button>
              </div>
         </div>
     )
