@@ -26,13 +26,9 @@ export const getBlogSlug=()=>{
         {
             "id":5,
             "title":"Why You Should Book The Escape Game for Your Company",
-            "slug":"why-you-should-book-the-escape",
-        },
-        {
-            "id":6,
-            "title":"Why You Should Book The Escape Game for Your Company",
             "slug":"why-you-should-book-escape-game",
         },
+       
        
        
     ]
