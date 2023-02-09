@@ -43,7 +43,7 @@ export default async function corContactHandler(req, res) {
       },
         auth: {
           user: 'sender@allinadventures.com',
-          pass: 'DgencyAIA@2023'
+          pass: 'Mystery007%%'
         }
       });
       

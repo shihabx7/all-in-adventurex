@@ -37,13 +37,13 @@ export default async function fransContactHandler(req, res) {
     },
       auth: {
         user: 'sender@allinadventures.com',
-        pass: 'DgencyAIA@2023'
+        pass: 'Mystery007%%'
       }
     });
 
       try {
         await transporter.sendMail({
-          from: retData.Email,
+          from: "sender@allinadventures.com",
           to: "franchise@allinadventures.com",
           cc:"dgency.com@gmail.com ",
           bcc:"shihab.dgency@gmail.com",
