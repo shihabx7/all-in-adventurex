@@ -29,7 +29,7 @@ export const getBlogHomePageData=()=>{
         "recentblogs":[
             {
                 "id":"1",
-                "slug":"what-kind-of-leaf-is-this",
+                "slug":"why-you-should-book-the-escape-game-for-your-company",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
                 "title":"What kind of leaf is this?",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
@@ -52,7 +52,7 @@ export const getBlogHomePageData=()=>{
             },
             {
                 "id":"2",
-                "slug":"what-kind-of-leaf-is-this",
+                "slug":"why-you-should-book-the-escape-game-for-your-company",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
                 "title":"1. What kind of leaf is this What kind of leaf is this?",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
@@ -79,7 +79,7 @@ export const getBlogHomePageData=()=>{
         "popularblogs":[
             {
                 "id":"1",
-                "slug":"what-kind-of-leaf-is-this",
+                "slug":"why-you-should-book-the-escape-game-for-your-company",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
                 "title":"What kind of leaf is this?",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
@@ -102,7 +102,7 @@ export const getBlogHomePageData=()=>{
             },
             {
                 "id":"2",
-                "slug":"what-kind-of-leaf-is-this",
+                "slug":"why-you-should-book-the-escape-game-for-your-company",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
                 "title":"1. What kind of leaf is this What kind of leaf is this?",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
@@ -125,7 +125,7 @@ export const getBlogHomePageData=()=>{
             },
             {
                 "id":"3",
-                "slug":"what-kind-of-leaf-is-this",
+                "slug":"why-you-should-book-the-escape-game-for-your-company",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
                 "title":"What kind of leaf is this?",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
@@ -148,7 +148,7 @@ export const getBlogHomePageData=()=>{
             },
             {
                 "id":"4",
-                "slug":"what-kind-of-leaf-is-this",
+                "slug":"why-you-should-book-the-escape-game-for-your-company",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
                 "title":"1. What kind of leaf is this What kind of leaf is this?",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
@@ -175,7 +175,7 @@ export const getBlogHomePageData=()=>{
         "allblogs":[
             {
                 "id":"1",
-                "slug":"what-kind-of-leaf-is-this",
+                "slug":"why-you-should-book-the-escape-game-for-your-company",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
                 "title":"What kind of leaf is this?",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
@@ -198,7 +198,7 @@ export const getBlogHomePageData=()=>{
             },
             {
                 "id":"2",
-                "slug":"what-kind-of-leaf-is-this",
+                "slug":"why-you-should-book-the-escape-game-for-your-company",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
                 "title":"1. What kind of leaf is this What kind of leaf is this?",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
@@ -221,7 +221,7 @@ export const getBlogHomePageData=()=>{
             },
             {
                 "id":"3",
-                "slug":"what-kind-of-leaf-is-this",
+                "slug":"why-you-should-book-the-escape-game-for-your-company",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
                 "title":"What kind of leaf is this?",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
@@ -244,7 +244,7 @@ export const getBlogHomePageData=()=>{
             },
             {
                 "id":"4",
-                "slug":"what-kind-of-leaf-is-this",
+                "slug":"why-you-should-book-the-escape-game-for-your-company",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
                 "title":"1. What kind of leaf is this What kind of leaf is this?",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
