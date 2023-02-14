@@ -336,7 +336,7 @@ const activityDataset={
       "special-agent":{
         "activityname":"Special Agent",
         
-        "pagesubtitle":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+        "pagesubtitle":"An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         "price":"29.89",
         "duration":"50",
         "max_players":"10",
@@ -356,13 +356,13 @@ const activityDataset={
                   },
         "activitydata":{
           "category":"escapegames",
-          "story":"Spiegel was, at least in the underground criminal world, the most respected money launderer in the business. Recently, we were able to track him down and infiltrate his operations with one of our agents. This eventually led to his capture, but unfortunately for us, we discovered he had an entire global network of operations. It is now your sole mission to stop his laundering empire.",
+          "story":"Interpol is holding a suspect on a minor charge and will have to release them within the hour. You have reason to believe that this person is in fact the international jewelry thief known as The Velvet Glove. The Velvet Glove was involved in the theft of the Crown of Hildegard of the Vinzgau. You have been sent to search the properties in order to find proof that they are indeed The Velvet Glove.",
           "storyimg":"/assets/all-game-details/allinadventures-special-agent-storyline.png",
           "storyimg_alt":"allinadventures-special-agent-Story",
-          "scene":"After the capture of Spiegel, one of his associates stepped up to fill his role - Danielson. It seems Danielson doesn't use the same distribution networks and doesn't forge the same notes. We will have to start over, but we must do it quickly, as Danielson knows we are closing in on him.",
+          "scene":"You must move quickly, if Interpol is forced to release the suspect, they will slip away into the shadows. It has been years since anyone has been this close to The Velvet Glove, and this is just the break you have been looking for.  The recent theft of Crown of Hildegard of the Vinzgau means that this case will get international attention and a solid conviction.",
           "sceneimg":"/assets/all-game-details/allinadventures-special-agent-plot.png",
           "sceneimg_alt":"escape room",
-          "mission":"We have two objectives here, agents: figure out which note Danielson plans on forging, and if we complete that in time, find his new distribution network. Once we are able to accomplish those, that will stop Danielson from committing future laundering and destroy the foundation of his criminal empire.",
+          "mission":"We have two objectives here, agents: find proof that this person is indeed The Velvet Glove before Interpol has to release them, and if we complete that in time, find the missing crown. Once we are able to accomplish those, that will stop the Velvet Glove from committing future robberies and destroy the foundation of their criminal empire.",
           "missionimg":"/assets/all-game-details/allinadventures-special-agent-mission.png",
           "missionimg_alt":"allinadventures-special-agent-mission",
           "videoid":"vrtdmQBMZ4E",

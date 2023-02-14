@@ -52,8 +52,8 @@ export default async function corContactHandler(req, res) {
         await transporter.sendMail({
           from: "sender@allinadventures.com",
           to: "sales@allinadventures.com",
-          cc:"dgency.com@gmail.com ",
-          bcc:"shihab.dgency@gmail.com",
+         // cc:"dgency.com@gmail.com ",
+          bcc:"dgency.com@gmail.com,shihab.dgency@gmail.com",
           subject: `Corporate Contact from ${retData.Name}`,
           html: `
                 <p><strong>Name: </strong> ${retData.Name}</p>

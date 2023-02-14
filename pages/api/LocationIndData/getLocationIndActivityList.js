@@ -283,7 +283,7 @@ const LocActivityData={
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+                "activity_desc":"An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
                 "activity_slug":"special-agent",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                 
@@ -431,7 +431,7 @@ const LocActivityData={
                 "max_player":"8",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+                "activity_desc":"An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
                 "activity_slug":"special-agent",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                 
@@ -581,7 +581,7 @@ const LocActivityData={
                 "max_player":"12",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+                "activity_desc":"An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
                 "activity_slug":"special-agent",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                 
@@ -763,7 +763,7 @@ const LocActivityData={
                 "max_player":"10",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+                "activity_desc":"An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
                 "activity_slug":"special-agent",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                 
@@ -966,7 +966,7 @@ const LocActivityData={
                 "max_player":"8",
                 "price":"29.89",
                 "duration":"50",
-                "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+                "activity_desc":"An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
                 "activity_slug":"special-agent",
                 "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                 
@@ -1508,7 +1508,7 @@ const LocActivityData={
                     "max_player":"6",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+                    "activity_desc":"An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
                     "activity_slug":"special-agent",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                     
@@ -1659,7 +1659,7 @@ const LocActivityData={
                         "max_player":"8",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+                        "activity_desc":"An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
                         "activity_slug":"special-agent",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                         
@@ -2086,7 +2086,7 @@ const LocActivityData={
                         "max_player":"8",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+                        "activity_desc":"An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
                         "activity_slug":"special-agent",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                         
@@ -2360,7 +2360,7 @@ const LocActivityData={
                         "max_player":"8",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+                        "activity_desc":"An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
                         "activity_slug":"special-agent",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                         
@@ -2510,7 +2510,7 @@ const LocActivityData={
                         "max_player":"8",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+                        "activity_desc":"An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
                         "activity_slug":"special-agent",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                         
@@ -2662,7 +2662,7 @@ const LocActivityData={
                         "max_player":"10",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+                        "activity_desc":"An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
                         "activity_slug":"special-agent",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                         
@@ -2796,7 +2796,7 @@ const LocActivityData={
                         "max_player":"8",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+                        "activity_desc":"An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
                         "activity_slug":"special-agent",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                         
@@ -3220,7 +3220,7 @@ const LocActivityData={
                         "max_player":"6",
                         "price":"29.89",
                         "duration":"50",
-                        "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+                        "activity_desc":"An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
                         "activity_slug":"special-agent",
                         "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                         
@@ -3370,7 +3370,7 @@ const LocActivityData={
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+                    "activity_desc":"An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
                     "activity_slug":"special-agent",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                     
@@ -3722,7 +3722,7 @@ const LocActivityData={
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+                    "activity_desc":"An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
                     "activity_slug":"special-agent",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                     
@@ -3859,7 +3859,7 @@ const LocActivityData={
                     "max_player":"10",
                     "price":"29.89",
                     "duration":"50",
-                    "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+                    "activity_desc":"An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
                     "activity_slug":"special-agent",
                     "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
                     

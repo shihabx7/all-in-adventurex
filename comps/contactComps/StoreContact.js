@@ -34,6 +34,11 @@ const StoreContact=(props)=>{
 
             return address+', '+city+', '+st+' '+zip+' United States'
     }
+    const stat=(slug)=>{
+        var ret=slug.split("-")
+        var retst=ret[ret.length-1].toUpperCase()
+        return retst
+    }
     // form submission area==============
     const [err,setErr]=useState(false)
     const [emptyErr,setEmptyErr]=useState(true)
@@ -53,6 +58,8 @@ const StoreContact=(props)=>{
         msg:'',
         toEmail:props.contactdata.email.toLowerCase(),
         toMgrEmail:props.contactdata.mgremail.toLowerCase(),
+        fromCity:props.contactdata.city,
+        fromState:stat(props.contactdata.slug)
 
     })
     const router = useRouter()
@@ -270,6 +277,9 @@ const StoreContact=(props)=>{
 
     return(
         <div className="c-contact py-16 md:py-20 lg:py-28  bg-cover bg-center" style={{backgroundImage : "url('/assets/game-dt-bg.jpg')", }}>
+            {
+                console.log(props.contactdata)
+            }
             <div className="section-container max-w-7xl mx-auto relative z-30">
                 <div className="section-title">
                   <TitleSeparator title={"INQUIRE TO "+TitleAddress(props.contactdata.slug)+" STORE"} color='golden-text' weight='font-bold'/>

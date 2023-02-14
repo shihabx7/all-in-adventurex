@@ -11,7 +11,9 @@ export default async function corContactHandler(req, res) {
         "comSub":body.comSubject,
         "mEssage":body.msg,
         "toEmail":body.toEmail,
-        "toMgrEmail":body.toMgrEmail
+        "toMgrEmail":body.toMgrEmail,
+        "fromCity":body.fromCity,
+        "fromState":body.fromState,
 
     }
   
@@ -25,17 +27,17 @@ export default async function corContactHandler(req, res) {
     },
       auth: {
         user: 'sender@allinadventures.com',
-        pass: 'DgencyAIA@2023'
+        pass: 'Mystery007%%'
       }
     });
 
       try {
         await transporter.sendMail({
-          from: retData.Email,
+          from: "sender@allinadventures.com",
           to: retData.toEmail+","+retData.toMgrEmail,
-          cc:"dgency.com@gmail.com ",
-          bcc:"shihab.dgency@gmail.com",
-          subject: `Store Contact from ${retData.Name}`,
+        //  cc:"dgency.com@gmail.com ",
+          bcc:"dgency.com@gmail.com,shihab.dgency@gmail.com",
+          subject: `Store Contact from ${retData.fromCity}, ${retData.fromState}`,
           html: `
                 <p><strong>Name: </strong> ${retData.Name}</p>
               <p><strong>Phone: </strong> ${retData.Phone}</p>

@@ -134,7 +134,7 @@ import { getTotal } from "./AllDataList/getTotal";
                                 "category":"escapegame",
                                 "type": "In-Person",
                                 "title": "Special Agent",
-                                "description": "After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
+                                "description": "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
                                 "age":"All Ages (6+)",
                                 "duration":"50",
                                 "maxplayers":"10",
