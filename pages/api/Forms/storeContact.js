@@ -26,8 +26,8 @@ export default async function corContactHandler(req, res) {
         ciphers: 'SSLv3'
     },
       auth: {
-        user: 'sender@allinadventures.com',
-        pass: 'Mystery007%%'
+        user: process.env.MAIL_SENDER_USER,
+          pass: process.env.MAIL_SENDER_PASS
       }
     });
 
@@ -35,7 +35,6 @@ export default async function corContactHandler(req, res) {
         await transporter.sendMail({
           from: "sender@allinadventures.com",
           to: retData.toEmail+","+retData.toMgrEmail,
-       
           bcc:"dgency.com@gmail.com,shihab.dgency@gmail.com",
           subject: `Store Contact - ${retData.fromCity}, ${retData.fromState}`,
           html: `

@@ -36,8 +36,8 @@ export default async function fransContactHandler(req, res) {
         ciphers: 'SSLv3'
     },
       auth: {
-        user: 'sender@allinadventures.com',
-        pass: 'Mystery007%%'
+        user: process.env.MAIL_SENDER_USER,
+        pass: process.env.MAIL_SENDER_PASS
       }
     });
 
