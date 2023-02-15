@@ -1961,7 +1961,7 @@ const activityDataset={
             "mission":"You studied right? RIGHT?! Oh, alright then, good! Use your knowledge of wizarding and escape this office! You must locate and solve all puzzles located in the wizard's office and get to class on time so your faculty doesn't lose points this semester!",
             "missionimg":"/assets/all-game-details/allinadventures-wizarding-school-mission.png",
             "missionimg_alt":"allinadventures-wizarding-school-mission",
-            "videoid":"pfdyF_d4Z40",
+            "videoid":"nkIcpyXyhks",
             "videothumb":"/assets/video-thumb/allinadventures-wizarding-school.jpg"
             
             },

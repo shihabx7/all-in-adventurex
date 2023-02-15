@@ -1,7 +1,7 @@
 const Availability=(props)=>{
 
     return(
-        <div onLoad={props.setFormName('Availability')}>
+        <div >
             
             <div className="form-holedr mt-4"> 
                       {/*========================   career objective=======================*/}

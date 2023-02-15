@@ -8,7 +8,7 @@ const Experience=(props)=>{
 
     return(
         
-        <div onLoad={ props.setFormName('Work Experience')}>
+        <div>
             
             <div className="form-holedr"> 
                  {/*========================  contact form job exp =======================*/}

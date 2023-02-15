@@ -2,7 +2,7 @@ const ApplicantInfo2=(props)=>{
 
     
     return(
-        <div onLoad={props.setFormName('Applicant info 2')}>
+        <div>
             
             <div className="form-holedr"> 
                  {/*========================  contact form row LOCATION + Position Desired*=======================*/}

@@ -35,14 +35,14 @@ export default async function corContactHandler(req, res) {
         await transporter.sendMail({
           from: "sender@allinadventures.com",
           to: retData.toEmail+","+retData.toMgrEmail,
-        //  cc:"dgency.com@gmail.com ",
+       
           bcc:"dgency.com@gmail.com,shihab.dgency@gmail.com",
-          subject: `Store Contact from ${retData.fromCity}, ${retData.fromState}`,
+          subject: `Store Contact - ${retData.fromCity}, ${retData.fromState}`,
           html: `
                 <p><strong>Name: </strong> ${retData.Name}</p>
               <p><strong>Phone: </strong> ${retData.Phone}</p>
             <p><strong>Email: </strong> ${retData.Email}</p>
-            <p><strong>Subject of communication: </strong> ${retData.comSub}</p>
+            <p><strong>Enquiry type: </strong> ${retData.comSub}</p>
             <p><strong>Message: </strong> <br> ${retData.mEssage}</p>
           `
         });

@@ -277,9 +277,7 @@ const StoreContact=(props)=>{
 
     return(
         <div className="c-contact py-16 md:py-20 lg:py-28  bg-cover bg-center" style={{backgroundImage : "url('/assets/game-dt-bg.jpg')", }}>
-            {
-                console.log(props.contactdata)
-            }
+            
             <div className="section-container max-w-7xl mx-auto relative z-30">
                 <div className="section-title">
                   <TitleSeparator title={"INQUIRE TO "+TitleAddress(props.contactdata.slug)+" STORE"} color='golden-text' weight='font-bold'/>
@@ -458,7 +456,7 @@ const StoreContact=(props)=>{
                                     <div className="form-row flex justify-between mt-3 md:mt-10 lg:mt-12 ">
                                                    
                                         <div className="relative form-col w-full">
-                                               <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Subject of your communications? *</p>
+                                               <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Enquiry type *</p>
                                                <select
                                                 name="comsub"
                                                 id="comsub" 
@@ -466,10 +464,14 @@ const StoreContact=(props)=>{
                                                  placeholder="Your email"
                                                   onChange={(e)=>checkComSub(e)} 
                                                   required>
-                                                   <option value="">I am communicating because...</option>
-                                                   <option value="Party booking">Party booking</option>
-                                                   <option value=">After Noon">About job</option>
-                                                   <option value="Evening">Other</option>
+                                                   
+                                                   <option value="General enquiry">General enquiry</option>
+                                                   <option value="Group booking">Group booking</option>
+                                                   <option value="Birthday party">Birthday party</option>
+                                                   <option value="Corporate event">Corporate event</option>
+                                                   <option value="Careers">Careers</option>
+                                                   <option value="Franchise enquiry">Franchise enquiry</option>
+                                                   <option value="Other">Other</option>
                                                </select>
                                                {
                                                         formErr.comErr &&

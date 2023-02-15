@@ -2,7 +2,7 @@ const Education=(props)=>{
 
     return(
         
-        <div onLoad={ props.setFormName('Education')}>
+        <div>
             
             <div className="form-holedr"> 
                  {/*========================  contact form High School=======================*/}

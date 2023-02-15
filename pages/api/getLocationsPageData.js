@@ -42,37 +42,37 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                         
                                           {
                                             "day":"monday",
-                                            "open":"10 am",
+                                            "open":"11 am",
                                             "close":"8 pm"
                           
                                           },
                                           {
                                             "day":"tuesday",
-                                            "open":"10 am",
+                                            "open":"11 am",
                                             "close":"8 pm"
                           
                                           },
                                           {
                                             "day":"wednesday",
-                                            "open":"10 am",
+                                            "open":"11 am",
                                             "close":"8 pm"
                           
                                           },
                                           {
                                             "day":"thursday",
-                                            "open":"10 am",
+                                            "open":"11 am",
                                             "close":"8 pm"
                           
                                           },
                                           {   
                                             "day":"friday",
-                                            "open":"10 am",
+                                            "open":"11 am",
                                             "close":"9 pm"
                           
                                           },
                                           {   
                                             "day":"saturday",
-                                            "open":"10 am",
+                                            "open":"11 am",
                                             "close":"9 pm"
                           
                                           },
@@ -964,25 +964,25 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                         {
                                           "day":"monday",
                                           "open":"12 pm",
-                                          "close":"9 pm"
+                                          "close":"8 pm"
                         
                                         },
                                         {
                                           "day":"tuesday",
                                           "open":"12 pm",
-                                          "close":"9 pm"
+                                          "close":"8 pm"
                         
                                         },
                                         {
                                           "day":"wednesday",
                                           "open":"12 pm",
-                                          "close":"9 pm"
+                                          "close":"8 pm"
                         
                                         },
                                         {
                                           "day":"thursday",
                                           "open":"12 pm",
-                                          "close":"9 pm"
+                                          "close":"8 pm"
                         
                                         },
                                         {   
@@ -1111,25 +1111,25 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                         {
                           "day":"monday",
                           "open":"12 pm",
-                          "close":"7 pm"
+                          "close":"8 pm"
         
                         },
                         {
                           "day":"tuesday",
                           "open":"12 pm",
-                          "close":"7 pm"
+                          "close":"8 pm"
         
                         },
                         {
                           "day":"wednesday",
                           "open":"12 pm",
-                          "close":"7 pm"
+                          "close":"8 pm"
         
                         },
                         {
                           "day":"thursday",
                           "open":"12 pm",
-                          "close":"7 pm"
+                          "close":"8 pm"
         
                         },
                         {   
@@ -1140,13 +1140,13 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                         },
                         {   
                           "day":"saturday",
-                          "open":"12 pm",
+                          "open":"11 pm",
                           "close":"8 pm"
         
                         },
                         {   
                           "day":"sunday",
-                          "open":"12 pm",
+                          "open":"11 pm",
                           "close":"6 pm"
         
                         }
@@ -1334,7 +1334,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                         "hours":[
                                           {
                                             "day":"monday",
-                                            "open":"2 pm",
+                                            "open":"12 pm",
                                             "close":"8 pm"
                           
                                           },
@@ -1358,7 +1358,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                           },
                                           {   
                                             "day":"friday",
-                                            "open":"2 pm",
+                                            "open":"12 pm",
                                             "close":"8 pm"
                           
                                           },
@@ -1551,31 +1551,31 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                             "hours":[
                               {
                                 "day":"monday",
-                                "open":"11 am",
+                                "open":"12 pm",
                                 "close":"8 pm"
               
                               },
                               {
                                 "day":"tuesday",
-                                "open":"11 am",
+                                "open":"12 pm",
                                 "close":"8 pm"
               
                               },
                               {
                                 "day":"wednesday",
-                                "open":"11 am",
+                                "open":"12 pm",
                                 "close":"8 pm"
               
                               },
                               {
                                 "day":"thursday",
-                                "open":"11 am",
+                                "open":"12 pm",
                                 "close":"8 pm"
               
                               },
                               {   
                                 "day":"friday",
-                                "open":"11 am",
+                                "open":"12 pm",
                                 "close":"8 pm"
               
                               },

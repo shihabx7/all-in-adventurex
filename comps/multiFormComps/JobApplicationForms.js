@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import ApplicantInfo from "./ApplicantInfo"
 import ApplicantInfo2 from "./ApplicantInfo2" 
 import Availability from "./Availability"
@@ -11,7 +11,26 @@ import References from "./References"
 const JobApplicationForms=(props)=>{
 
     const [formStep, setFormStep]=useState(0) 
-    const [formName,setFormName]=useState('')
+
+    const [formName,setFormName]=useState('Applicant info 1')
+    useEffect(() => {
+        if(formStep==1){
+            setFormName('Applicant info 2')
+        }
+        if(formStep==2){
+            setFormName('Availability')
+        }
+        if(formStep==3){
+            setFormName('Education')
+        }
+        if(formStep==4){
+            setFormName('Work Experience')
+        }
+        if(formStep==5){
+            setFormName('Professional References')
+        }
+        
+      }, [formStep]);
     const [formErrFlag, setFormErrFlag]=useState(false)
     const [appInfo1,setAppInfo1]=useState({
                                             fName:'',
@@ -158,7 +177,10 @@ const JobApplicationForms=(props)=>{
     }
     const nextStep=()=>{
         setFormStep(formStep+1)
+        console.log(appInfo1)
+        console.log(formErrFlag)
     }
+   
     const submitForm=()=>{
 
         alert("Your application has been received")
@@ -167,7 +189,7 @@ const JobApplicationForms=(props)=>{
     return (
         <div className="job-form">
             <div className="job-form-head"> 
-                <div className="job-name flex justify-between mb-4"><h3 className="font-medium text-2xl text-[#464646]">{formName}</h3><p className="font-medium text-lg text-[#464646]">Step {formStep+1} of 6</p></div>
+                <div className="job-name flex justify-between mb-4"><h3 id="fhead" className="font-medium text-2xl text-[#464646]">{formName}</h3><p className="font-medium text-lg text-[#464646]">Step {formStep+1} of 6</p></div>
                 <div className="bg-[#cdcdcd] rounded"> 
                     <div className={"bg-golden-alt h-[4px] rounded"} style={{width:getPw()+"%"}}></div>
                 </div>
@@ -175,27 +197,27 @@ const JobApplicationForms=(props)=>{
             <div className="job-form-body">
                 {
                     formStep==0 && 
-                    <ApplicantInfo  setFormName={setFormName} appInfo1={appInfo1} setAppInfo1={setAppInfo1} setFormErrFlag={setFormErrFlag}/>
+                    <ApplicantInfo appInfo1={appInfo1} setAppInfo1={setAppInfo1} setFormErrFlag={setFormErrFlag}/>
                 }
                 {
                     formStep==1 && 
-                    <ApplicantInfo2  locationlist={props.locationlist} setFormName={setFormName} appInfo2={appInfo2} setAppInfo2={setAppInfo2} setFormErrFlag={setFormErrFlag}/>
+                    <ApplicantInfo2  locationlist={props.locationlist} appInfo2={appInfo2} setAppInfo2={setAppInfo2} setFormErrFlag={setFormErrFlag}/>
                 }
                 {
                     formStep==2 && 
-                    <Availability setFormName={setFormName} availability={availability} setAvailability={setAvailability} setFormErrFlag={setFormErrFlag}/>
+                    <Availability availability={availability} setAvailability={setAvailability} setFormErrFlag={setFormErrFlag}/>
                 }
                  {
                     formStep==3 && 
-                    <Education setFormName={setFormName} education={education} setEducation={setEducation} setFormErrFlag={setFormErrFlag}/>
+                    <Education education={education} setEducation={setEducation} setFormErrFlag={setFormErrFlag}/>
                 }
                  {
                     formStep==4 && 
-                    <Experience setFormName={setFormName} jobExp={jobExp} setJobExp={setJobExp} setFormErrFlag={setFormErrFlag}/>
+                    <Experience jobExp={jobExp} setJobExp={setJobExp} setFormErrFlag={setFormErrFlag}/>
                 }
                 {
                     formStep==5 && 
-                    <References setFormName={setFormName} references={references} setReferences={setReferences} setFormErrFlag={setFormErrFlag}/>
+                    <References  references={references} setReferences={setReferences} setFormErrFlag={setFormErrFlag}/>
                 }
 
             </div>
