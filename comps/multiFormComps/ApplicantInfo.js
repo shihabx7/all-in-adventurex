@@ -1,5 +1,6 @@
-import { useState } from "react"
+import {useState } from "react"
 const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
+    
 
     const [appInfoErr,setAppInfoErr]=useState({
                                                  fnameErr:false,
@@ -13,7 +14,7 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
                                                  zipErr:false,
                                                  countryErr:false,
                                              })
-
+    
     // ========================================================first name validation=================
     const escape=(htmlStr)=> {
         return htmlStr.replace(/&/g, "and")
@@ -26,19 +27,20 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
     const checkFName=(e)=>{
 
         const fname=e.target.value.trim()
+        //console.log(fname.length)
 
         const namePatt=/^[a-zA-Z ]*$/
         if(fname.length>2 && fname.length<21){
             if(!namePatt.test(fname)){
                      setFormErrFlag(true)
-                    setAppInfoErr({...appInfoErr,fNameErr:true})
+                    setAppInfoErr({...appInfoErr,fnameErr:true})
                     e.target.classList.remove("focus-green")
                     e.target.classList.add("focus-red")
                     
             }
             else{
                 setFormErrFlag(false)
-                setAppInfoErr({...appInfoErr,fNameErr:false})
+                setAppInfoErr({...appInfoErr,fnameErr:false})
                      setAppInfo1({...appInfo1,fName:fname})
                     e.target.classList.remove("focus-red")
                     e.target.classList.add("focus-green")
@@ -47,10 +49,13 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
         }
         else{
           setFormErrFlag(true)
-            setAppInfoErr({...appInfoErr,fNameErr:true})
+            setAppInfoErr({...appInfoErr,fnameErr:true})
+            setAppInfo1({...appInfo1,fName:fname})
             e.target.classList.remove("focus-green")
             e.target.classList.add("focus-red")
         }
+         
+        
     }
     // ========================================================last name validation=================
     const checkLName=(e)=>{
@@ -76,10 +81,12 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
         else{
            setFormErrFlag(true)
             setAppInfoErr({...appInfoErr,lnameErr:true})
+            setAppInfo1({...appInfo1,lName:lname})
             e.target.classList.remove("focus-green")
             e.target.classList.add("focus-red")
             
         }
+        
     }
     // ========================================================email validation=================
 
@@ -107,6 +114,7 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
         else{
             setFormErrFlag(true)
             setAppInfoErr({...appInfoErr,emailErr:true})
+            setAppInfo1({...appInfo1,email:cemail})
             e.target.classList.remove("focus-green")
             e.target.classList.add("focus-red")
             
@@ -139,6 +147,7 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
         else{
            setFormErrFlag(true)
             setAppInfoErr({...appInfoErr,phoneErr:true})
+            setAppInfo1({...appInfo1,phone:cphone})
             e.target.classList.remove("focus-green")
             e.target.classList.add("focus-red")
             
@@ -155,7 +164,7 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
 
         if(stAdd.length>4 && stAdd.length<30){
             
-           setFormErrFlag(false)
+              setFormErrFlag(false)
                 setAppInfoErr({...appInfoErr,stAddressErr:false})
                 setAppInfo1({...appInfo1,stAdd1:stAdd})
                     
@@ -164,8 +173,9 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
             
         }
         else{
-          setFormErrFlag(true)
+             setFormErrFlag(true)
             setAppInfoErr({...appInfoErr,stAddressErr:true})
+            setAppInfo1({...appInfo1,stAdd1:stAdd})
             e.target.classList.remove("focus-green")
             e.target.classList.add("focus-red")
             
@@ -175,22 +185,28 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
     const checkStAddress2=(e)=>{
 
         const inpAdd2=e.target.value.trim()
-        const stAdd2=escape(inpAdd2)
+        const stAddex=escape(inpAdd2)
 
         
 
-        if(stAdd2.length>4 && stAdd2.length<30){
+        if(stAddex.length>3 && stAddex.length<30){
             
            
                 setAppInfoErr({...appInfoErr,stAddressErr2:false})
-                setAppInfo1({...appInfo1,stAdd2:stAdd2})
+                setAppInfo1({...appInfo1,stAdd2:stAddex})
                     
                     e.target.classList.remove("focus-red")
                     e.target.classList.add("focus-green")
             
         }
+        else if(stAddex.length<1){
+            setAppInfoErr({...appInfoErr,stAddressErr2:false})
+            setAppInfo1({...appInfo1,stAdd2:stAddex})
+            e.target.classList.remove("focus-red")
+        }
         else{
             setAppInfoErr({...appInfoErr,stAddressErr2:true})
+            setAppInfo1({...appInfo1,stAdd2:stAddex})
             e.target.classList.remove("focus-green")
             e.target.classList.add("focus-red")
             
@@ -225,6 +241,7 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
         else{
             setFormErrFlag(true)
             setAppInfoErr({...appInfoErr,cityErr:true})
+            setAppInfo1({...appInfo1,city:cityname})
             e.target.classList.remove("focus-green")
             e.target.classList.add("focus-red")
             
@@ -259,6 +276,7 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
         else{
            setFormErrFlag(true)
             setAppInfoErr({...appInfoErr,stateErr:true})
+            setAppInfo1({...appInfo1,state:statename})
             e.target.classList.remove("focus-green")
             e.target.classList.add("focus-red")
             
@@ -293,19 +311,14 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
         else{
             setFormErrFlag(true)
             setAppInfoErr({...appInfoErr,zipErr:true})
+            setAppInfo1({...appInfo1,zip:zip})
             e.target.classList.remove("focus-green")
             e.target.classList.add("focus-red")
             
         }
     } 
     // ========================================================country validation =================
-    const setInitCountry=(e,country)=>{
-
-        const inpinitCon=country
-        setAppInfo1({...appInfo1,country:inpinitCon})
-        
-
-    }   
+     
 
     const checkCountry=(e)=>{
 
@@ -327,33 +340,50 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
                                                 <input 
                                                     onChange={(e)=>checkFName(e)}
                                                     type="text" 
-                                                    className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent" 
+                                                    className={"w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent "+ (appInfo1.fName.length>2? "focus-green":"")}
                                                     placeholder="Your first name" 
-                                                 
+                                                    defaultValue={appInfo1.fName}
                                                     title="Name should be alphabets (a to z) and 3 to 20 charecter."
-                                                    required>
-
-                                                    </input>
+                                                    />
+                                                    
                                                     {
-                                                            appInfoErr.fnameErr &&
-                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Invalid name. Only letter and space allowed (between 3-20 character)</p>
+                                                            (appInfoErr.fnameErr && appInfo1.fName.length>0 ) &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Only letter and space allowed (between 3-20 character)</p>
                                                     }
+                                                    {
+                                                            (appInfoErr.fnameErr && appInfo1.fName.length==0) &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
+                                                    }
+                                                    {
+                                                        ((prevFormErr && appInfo1.fName=='') && !appInfoErr.fnameErr) &&
+                                                        <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
+                                                    }
+                                                    
                                                     
                                          </div>
                                          <div className="form-col w-full md:w-[49%]">
                                                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Last name *</p>
                                                 <input  type="text"
                                                         onChange={(e)=>checkLName(e)}
-                                                        className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                                                        className={"w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent "+(appInfo1.lName.length>2? "focus-green":"")}
                                                         placeholder="Your last name"
-                                                        
+                                                        defaultValue={appInfo1.lName}
                                                         title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                         required>
 
                                                      </input>
+                                                     
                                                      {
-                                                            appInfoErr.lnameErr &&
-                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr  text-xs md:text-sm">Invalid name. Only letter and space allowed (between 3-20 character)</p>
+                                                            (appInfoErr.lnameErr && appInfo1.lName.length>0 ) &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Only letter and space allowed (between 3-20 character)</p>
+                                                    }
+                                                    {
+                                                            (appInfoErr.lnameErr && appInfo1.lName.length==0) &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
+                                                    }
+                                                    {
+                                                        ((prevFormErr && appInfo1.lName=='') && !appInfoErr.lnameErr) &&
+                                                        <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
                                                     }
                                          </div>
                         </div>
@@ -365,32 +395,50 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
                                                 <input 
                                                     onChange={(e)=>checkEmail(e)}
                                                     type="email" 
-                                                    className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent" 
+                                                    className={"w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent "+(appInfo1.email.length>6? "focus-green":"")} 
                                                     placeholder="Your email" 
-                                                   
+                                                    defaultValue={appInfo1.email}
                                                     title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                     required>
 
                                                     </input>
-                                                     {
-                                                            appInfoErr.emailErr &&
+                                                   
+                                                    {
+                                                            (appInfoErr.emailErr && appInfo1.email.length>0 ) &&
                                                             <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr ">Invalid email address.</p>
+                                                    }
+                                                    {
+                                                            (appInfoErr.emailErr && appInfo1.email.length==0) &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
+                                                    }
+                                                    {
+                                                        ((prevFormErr && appInfo1.email=='') && !appInfoErr.emailErr) &&
+                                                        <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
                                                     }
                                          </div>
                                          <div className="form-col w-full md:w-[49%]">
                                                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Phone number *</p>
                                                 <input  type="text"
                                                       onChange={(e)=>checkPhone(e)}
-                                                        className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                                                        className={"w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent " + (appInfo1.phone.length>7? "focus-green":"")}
                                                         placeholder="Your phone number"
-                                                       
+                                                        defaultValue={appInfo1.phone}
                                                         title="nonly number -,(,) and + are allowed"
                                                         required>
 
                                                      </input>
-                                                     {
-                                                            appInfoErr.phoneErr &&
+                                                   
+                                                    {
+                                                            (appInfoErr.phoneErr && appInfo1.phone.length>0 ) &&
                                                             <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr ">Invalid phone number.</p>
+                                                    }
+                                                    {
+                                                            (appInfoErr.phoneErr && appInfo1.phone.length==0) &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
+                                                    }
+                                                    {
+                                                        ((prevFormErr && appInfo1.phone=='') && !appInfoErr.phoneErr) &&
+                                                        <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
                                                     }
                                          </div>
                 </div>
@@ -402,25 +450,35 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
                                                 <input 
                                                  onChange={(e)=>checkStAddress(e)}
                                                     type="text" 
-                                                    className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent" 
+                                                    className={"w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent "+(appInfo1.stAdd1.length>3? "focus-green":"")} 
                                                     placeholder="Address" 
-                                                    
+                                                    defaultValue={appInfo1.stAdd1}
                                                     title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                     required>
 
                                                     </input>
+                                                   
                                                     {
-                                                            appInfoErr.stAddressErr &&
+                                                            (appInfoErr.stAddressErr && appInfo1.stAdd1.length>0 ) &&
                                                             <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr ">Invalid Address</p>
                                                     }
+                                                    {
+                                                            (appInfoErr.stAddressErr && appInfo1.stAdd1.length==0) &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
+                                                    }
+                                                    {
+                                                        ((prevFormErr && appInfo1.stAdd1=='') && !appInfoErr.stAddressErr) &&
+                                                        <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
+                                                    }
+                                                    
                                          </div>
                                          <div className="form-col w-full md:w-[49%]">
                                                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Street address 2</p>
                                                 <input  type="text"
                                                   onChange={(e)=>checkStAddress2(e)}
-                                                        className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                                                        className={"w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent "+(appInfo1.stAdd2.length>3? "focus-green":"")}
                                                         placeholder="Address 2"
-                                                      
+                                                        defaultValue={appInfo1.stAdd2}
                                                         title="Name should be alphabets (a to z) and 3 to 20 charecter."
                                                         >
 
@@ -439,32 +497,51 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
                                                 <input 
                                                     onChange={(e)=>checkCity(e)}
                                                     type="text" 
-                                                    className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent" 
+                                                    className={"w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent "+(appInfo1.city.length>3? "focus-green":"") }
                                                     placeholder="Your city name" 
-                                                    
-                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
+                                                    defaultValue={appInfo1.city}
+                                                    title="City name should be alphabets (a to z) and 3 to 20 charecter."
                                                     required>
 
                                                     </input>
+                                                    
                                                     {
-                                                            appInfoErr.cityErr &&
+                                                            (appInfoErr.cityErr && appInfo1.city.length>0 ) &&
                                                             <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr ">Invalid city name</p>
+                                                    }
+                                                    {
+                                                            (appInfoErr.cityErr && appInfo1.city.length==0) &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
+                                                    }
+                                                    
+                                                    {
+                                                        ((prevFormErr && appInfo1.city=='') && !appInfoErr.cityErr) &&
+                                                        <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
                                                     }
                                          </div>
                                          <div className="form-col w-full md:w-[49%]">
                                                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">State / Province / Region*</p>
                                                 <input  type="text"
                                                         onChange={(e)=>checkState(e)}
-                                                        className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                                                        className={"w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent "+(appInfo1.state.length>2? "focus-green":"")}
                                                         placeholder="State / Province / Region"
-                                                        
-                                                        title="Name should be alphabets (a to z) and 3 to 20 charecter."
+                                                        defaultValue={appInfo1.state}
+                                                        title="State name should be alphabets (a to z) and 3 to 20 charecter."
                                                         required>
 
                                                      </input>
-                                                     {
-                                                            appInfoErr.stateErr &&
+                                                     
+                                                    {
+                                                            (appInfoErr.stateErr && appInfo1.state.length>0 ) &&
                                                             <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr ">Invalid state/ province name</p>
+                                                    }
+                                                    {
+                                                            (appInfoErr.stateErr && appInfo1.state.length==0) &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
+                                                    }
+                                                    {
+                                                        ((prevFormErr && appInfo1.state=='') && !appInfoErr.stateErr) &&
+                                                        <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
                                                     }
                                          </div>
                 </div>
@@ -476,25 +553,35 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
                                                 <input 
                                                     onChange={(e)=>checkZip(e)}
                                                     type="text" 
-                                                    className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent" 
+                                                    className={"w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent "+(appInfo1.zip.length>0? "focus-green":"") }
                                                     placeholder="Zip / Postal code" 
-                                                    
-                                                    title="Name should be alphabets (a to z) and 3 to 20 charecter."
+                                                    defaultValue={appInfo1.zip}
+                                                    title="Country name should be alphabets (a to z) and 3 to 20 charecter."
                                                     required>
 
                                                     </input>
+                                                    
+                                                     {
+                                                            (appInfoErr.zipErr && appInfo1.zip.length>0 ) &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr ">Invalid state/ province name</p>
+                                                    }
                                                     {
-                                                            appInfoErr.zipErr &&
-                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr ">Invalid zip code</p>
+                                                            (appInfoErr.zipErr && appInfo1.zip.length==0) &&
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
+                                                    }
+                                                    {
+                                                        ((prevFormErr && appInfo1.zip=='') && !appInfoErr.zipErr) &&
+                                                        <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
                                                     }
                                          </div>
                                          <div className="form-col w-full md:w-[49%]">
                                                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Country *</p>
                                                
                                                <select
-                                                 onLoad={(e)=>setInitCountry(e,"United States")}
+                                                 
                                                  onChange={(e)=>checkCountry(e)}
-                                                className="w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                                                className={"w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent "+(appInfo1.country.length>0? "focus-green":"")}
+                                                defaultValue={appInfo1.country}
                                                   required>
                                                 
                                                   <option value="United States">United States</option>

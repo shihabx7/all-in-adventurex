@@ -1033,7 +1033,7 @@ const FranchiseContactForm=()=>{
                                                         name="oExp"
                                                         onChange={(e)=>getProfExp(e)} 
                                                         className="w-full h-[100px] md:h-[120px]  event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
-                                                        placeholder="Write about yourexperiences here"> 
+                                                        placeholder="Write about your experiences here"> 
 
                                                        </textarea>
                                                    </div>
