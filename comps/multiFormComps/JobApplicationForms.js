@@ -10,7 +10,7 @@ import References from "./References"
 
 const JobApplicationForms=(props)=>{
 
-    const [formStep, setFormStep]=useState(5) 
+    const [formStep, setFormStep]=useState(0) 
 
     const [formName,setFormName]=useState('Applicant Information ')
     useEffect(() => {
