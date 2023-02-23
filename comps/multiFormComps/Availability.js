@@ -7,13 +7,20 @@ const Availability=({prevFormErr,availability,setAvailability,setFormErrFlag})=>
         avlStartDateErr:false,
         avlToWorkErr:false,
         howLongStayErr:false,
-        sundayErr:false,
-        mondayErr:false,
-        tuesdayErr:false,
-        wednesdayErr:false,
-        thursdayErr:false,
-        fridayErr:false,
-        saturdayErr:false,
+        sundayErr1:false,
+        sundayErr2:false,
+        mondayErr1:false,
+        mondayErr2:false,
+        tuesdayErr1:false,
+        tuesdayErr2:false,
+        wednesdayErr1:false,
+        wednesdayErr2:false,
+        thursdayErr1:false,
+        thursdayErr2:false,
+        fridayErr1:false,
+        fridayErr2:false,
+        saturdayErr1:false,
+        saturdayErr2:false,
        
     })
     const escape=(htmlStr)=> {
@@ -144,8 +151,23 @@ const checkStartTime=(e,day)=>{
 
     const checkTime=e.target.value
     const checkDay=day.toLowerCase()
+    const dayerr=checkDay+'Err1'
+
+   if(checkTime!=''){
+    setFormErrFlag(false)
+    setAvlErr({...avlErr,[dayerr]:false})
+    setAvailability({...availability,[checkDay]:{...availability[checkDay],start:checkTime}})
+    e.target.classList.remove("focus-red")
+    e.target.classList.add("focus-green")
+   }
+   else{
+    setFormErrFlag(true)
+    setAvlErr({...avlErr,[dayerr]:true})
+    setAvailability({...availability,[checkDay]:{...availability[checkDay],start:checkTime}})
+    e.target.classList.remove("focus-green")
+    e.target.classList.add("focus-red")
+   }
    
-   setAvailability({...availability,[checkDay]:{...availability[checkDay],start:checkTime}})
     //console.log(checkDay)
    // console.log(availability[checkDay])
    // console.log(availability)
@@ -155,8 +177,25 @@ const checkCloseTime=(e,day)=>{
 
     const checkcTime=e.target.value
     const checkcDay=day.toLowerCase()
+
+    const dayerr=checkcDay+'Err2'
+
+    if(checkcTime!=''){
+     setFormErrFlag(false)
+     setAvlErr({...avlErr,[dayerr]:false})
+     setAvailability({...availability,[checkcDay]:{...availability[checkcDay],close:checkcTime}})
+     e.target.classList.remove("focus-red")
+     e.target.classList.add("focus-green")
+    }
+    else{
+     setFormErrFlag(true)
+     setAvlErr({...avlErr,[dayerr]:true})
+     setAvailability({...availability,[checkcDay]:{...availability[checkcDay],close:checkcTime}})
+     e.target.classList.remove("focus-green")
+     e.target.classList.add("focus-red")
+    }
    
-   setAvailability({...availability,[checkcDay]:{...availability[checkcDay],close:checkcTime}})
+   //setAvailability({...availability,[checkcDay]:{...availability[checkcDay],close:checkcTime}})
    // console.log(checkcDay)
    // console.log(availability[checkcDay])
    // console.log(availability)
@@ -304,15 +343,15 @@ const checkOfferjob=(e)=>{
                                                 <p className="mb-1 lg:text-lg evevt-input-label text-[#565656]">(i.e. Start - Close; 9 am-12 pm; or Any)</p>
                                                     {/*======================== sunday=======================*/}
                                                     <div className="avl-work-week sunday"> 
-                                                            <div className="avl-row flex  justify-between items-center space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
-                                                                    <div className="avl-day text-sm md:text-xl"><p>Sunday :</p></div>
-                                                                    <div className="flex justify-between items-center w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
+                                                            <div className="avl-row flex  justify-between  space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
+                                                                    <div className="avl-day text-sm md:text-xl mt-[6px] md:mt-[6px]"><p>Sunday :</p></div>
+                                                                    <div className="flex justify-between w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
                                                                         <div className="avl-start w-[48%]"> 
-                                                                             <select type="text"
+                                                                             <select 
                                                                              defaultValue={availability.sunday.start}
                                                                              onChange={(e)=>checkStartTime(e,'sunday')}
-                                                                              className=" text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green" >
-                                                                                            <option value="Start">Start</option>
+                                                                              className={"text-xs md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent "+(availability.sunday.start!=''? 'focus-green':'')+((prevFormErr==true && availability.sunday.start=='')? 'focus-red':'')+((avlErr.sundayErr1 && availability.sunday.start=='')? 'focus-red':'')} >
+                                                                                            <option value="">Start time</option>
                                                                                             <option value="Any">Any</option>
                                                                                             <option value="9 am">9 am</option>
                                                                                             <option value="10 am">10 am</option>
@@ -326,14 +365,25 @@ const checkOfferjob=(e)=>{
                                                                                             <option value="6 pm">6 pm</option>
                                                                                    
                                                                             </select>
+                                                                            {
+                                                                                 (avlErr.sundayErr1 && availability.sunday.start=='') &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select start time.</p>
+                                                                             }
+                                                                              {
+                                                                                 ((prevFormErr && availability.sunday.start=='') && !avlErr.sundayErr1) &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select start time.</p>
+                                                                             }
                                                                         </div>
-                                                                        <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        <div> 
+                                                                            <div className="mt-[16px] md:mt-[20px] w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        </div>
+                                                                        
                                                                         <div className="avl-end w-[48%]"> 
                                                                              <select 
                                                                              defaultValue={availability.sunday.close}
                                                                              onChange={(e)=>checkCloseTime(e,'sunday')}
-                                                                              className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                          <option value="Close"> Close </option>
+                                                                             className={"text-xs md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent "+(availability.sunday.close!=''? 'focus-green':'')+((prevFormErr==true && availability.sunday.close=='')? 'focus-red':'')+((avlErr.sundayErr2 && availability.sunday.close=='')? 'focus-red':'')} >
+                                                                                          <option value="">Close time  </option>
                                                                                           <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
@@ -348,6 +398,14 @@ const checkOfferjob=(e)=>{
                                                                                             <option value="8 pm">10 pm</option>
                                                                                         
                                                                             </select>
+                                                                            {
+                                                                                 (avlErr.sundayErr2 && availability.sunday.close=='') &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select close time.</p>
+                                                                             }
+                                                                              {
+                                                                                 ((prevFormErr && availability.sunday.close=='') && !avlErr.sundayErr2) &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select close time.</p>
+                                                                             }
                                                                          </div>
                                                                     </div>
                                                             </div>
@@ -356,15 +414,15 @@ const checkOfferjob=(e)=>{
                                                      {/*======================== sunday end=======================*/}
                                                      {/*======================== monday=======================*/}
                                                      <div className="avl-work-week monday"> 
-                                                            <div className="avl-row flex  justify-between items-center space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
-                                                                    <div className="avl-day text-sm md:text-xl"><p>Monday :</p></div>
-                                                                    <div className="flex justify-between items-center w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
+                                                            <div className="avl-row flex  justify-between space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
+                                                                    <div className="avl-day text-sm md:text-xl mt-[6px] md:mt-[6px]"><p>Monday :</p></div>
+                                                                    <div className="flex justify-between w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
                                                                         <div className="avl-start w-[48%]"> 
                                                                              <select 
                                                                               defaultValue={availability.monday.start}
                                                                               onChange={(e)=>checkStartTime(e,'monday')}
-                                                                              className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                            <option value="Start">Start</option>
+                                                                              className={"text-xs md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent "+(availability.monday.start!=''? 'focus-green':'')+((prevFormErr==true && availability.monday.start=='')? 'focus-red':'')+((avlErr.mondayErr1 && availability.monday.start=='')? 'focus-red':'')} >
+                                                                                            <option value="">Start time</option>
                                                                                             <option value="Any">Any</option>
                                                                                             <option value="9 am">9 am</option>
                                                                                             <option value="10 am">10 am</option>
@@ -378,14 +436,24 @@ const checkOfferjob=(e)=>{
                                                                                             <option value="6 pm">6 pm</option>
                                                                                    
                                                                             </select>
+                                                                            {
+                                                                                 (avlErr.mondayErr1 && availability.monday.start=='') &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select start time.</p>
+                                                                             }
+                                                                              {
+                                                                                 ((prevFormErr && availability.monday.start=='') && !avlErr.mondayErr1) &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select start time.</p>
+                                                                             }
                                                                         </div>
-                                                                        <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        <div> 
+                                                                            <div className="mt-[16px] md:mt-[20px] w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        </div>
                                                                         <div className="avl-end w-[48%]"> 
                                                                              <select
                                                                              defaultValue={availability.monday.close}
                                                                              onChange={(e)=>checkCloseTime(e,'monday')}
-                                                                              className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                          <option value="Close">Close</option>
+                                                                             className={"text-xs md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent "+(availability.monday.close!=''? 'focus-green':'')+((prevFormErr==true && availability.monday.close=='')? 'focus-red':'')+((avlErr.mondayErr2 && availability.monday.close=='')? 'focus-red':'')} >
+                                                                                          <option value="">Close time</option>
                                                                                           <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
@@ -400,6 +468,14 @@ const checkOfferjob=(e)=>{
                                                                                             <option value="8 pm">10 pm</option>
                                                                                         
                                                                             </select>
+                                                                            {
+                                                                                 (avlErr.mondayErr2 && availability.monday.close=='') &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select close time.</p>
+                                                                             }
+                                                                              {
+                                                                                 ((prevFormErr && availability.monday.close=='') && !avlErr.mondayErr2) &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select close time.</p>
+                                                                             }
                                                                          </div>
                                                                     </div>
                                                             </div>
@@ -408,15 +484,15 @@ const checkOfferjob=(e)=>{
                                                      {/*======================== monday end=======================*/}
                                                      {/*======================== Tuesday=======================*/}
                                                      <div className="avl-work-week tuesday"> 
-                                                            <div className="avl-row flex  justify-between items-center space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
-                                                                    <div className="avl-day text-sm md:text-xl"><p>Tuesday :</p></div>
-                                                                    <div className="flex justify-between items-center w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
+                                                            <div className="avl-row flex  justify-between  space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
+                                                                    <div className="avl-day text-sm md:text-xl mt-[6px] md:mt-[6px]"><p>Tuesday :</p></div>
+                                                                    <div className="flex justify-between w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
                                                                         <div className="avl-start w-[48%]"> 
                                                                              <select 
                                                                               defaultValue={availability.tuesday.start}
                                                                               onChange={(e)=>checkStartTime(e,'tuesday')}
-                                                                              className=" text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                            <option value="Start">Start</option>
+                                                                              className={"text-xs md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent "+(availability.tuesday.start!=''? 'focus-green':'')+((prevFormErr==true && availability.tuesday.start=='')? 'focus-red':'')+((avlErr.tuesdayErr1 && availability.tuesday.start=='')? 'focus-red':'')} >
+                                                                                            <option value="">Start time</option>
                                                                                             <option value="Any">Any</option>
                                                                                             <option value="9 am">9 am</option>
                                                                                             <option value="10 am">10 am</option>
@@ -430,14 +506,24 @@ const checkOfferjob=(e)=>{
                                                                                             <option value="6 pm">6 pm</option>
                                                                                    
                                                                             </select>
+                                                                            {
+                                                                                 (avlErr.tuesdayErr1 && availability.tuesday.start=='') &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select start time.</p>
+                                                                             }
+                                                                              {
+                                                                                 ((prevFormErr && availability.tuesday.start=='') && !avlErr.tuesdayErr1) &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select start time.</p>
+                                                                             }
                                                                         </div>
-                                                                        <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        <div> 
+                                                                            <div className="mt-[16px] md:mt-[20px] w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        </div>
                                                                         <div className="avl-end w-[48%]"> 
                                                                              <select 
                                                                              defaultValue={availability.tuesday.close}
                                                                              onChange={(e)=>checkCloseTime(e,'tuesday')}
-                                                                              className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                          <option value="Close">Close</option>
+                                                                             className={"text-xs md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent "+(availability.tuesday.close!=''? 'focus-green':'')+((prevFormErr==true && availability.tuesday.close=='')? 'focus-red':'')+((avlErr.tuesdayErr2 && availability.tuesday.close=='')? 'focus-red':'')} >
+                                                                                          <option value="">Close time</option>
                                                                                           <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
@@ -452,6 +538,14 @@ const checkOfferjob=(e)=>{
                                                                                             <option value="8 pm">10 pm</option>
                                                                                         
                                                                             </select>
+                                                                            {
+                                                                                 (avlErr.tuesdayErr2 && availability.tuesday.close=='') &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select close time.</p>
+                                                                             }
+                                                                              {
+                                                                                 ((prevFormErr && availability.tuesday.close=='') && !avlErr.tuesdayErr2) &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select close time.</p>
+                                                                             }
                                                                          </div>
                                                                     </div>
                                                             </div>
@@ -460,15 +554,15 @@ const checkOfferjob=(e)=>{
                                                      {/*======================== Tuesday end=======================*/}
                                                      {/*======================== Wednesday=======================*/}
                                                     <div className="avl-work-week wednesday"> 
-                                                            <div className="avl-row flex  justify-between items-center space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
-                                                                    <div className="avl-day text-sm md:text-xl"><p>Wednesday :</p></div>
-                                                                    <div className="flex justify-between items-center w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
+                                                            <div className="avl-row flex  justify-between space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
+                                                                    <div className="avl-day text-sm md:text-xl mt-[6px] md:mt-[6px]"><p>Wednesday :</p></div>
+                                                                    <div className="flex justify-between w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
                                                                         <div className="avl-start w-[48%]"> 
                                                                              <select 
                                                                              defaultValue={availability.wednesday.start}
                                                                              onChange={(e)=>checkStartTime(e,'wednesday')}
-                                                                              className=" text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                            <option value="Start">Start</option>
+                                                                             className={"text-xs md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent "+(availability.wednesday.start!=''? 'focus-green':'')+((prevFormErr==true && availability.wednesday.start=='')? 'focus-red':'')+((avlErr.wednesdayErr1 && availability.wednesday.start=='')? 'focus-red':'')} >
+                                                                                            <option value="">Start time</option>
                                                                                             <option value="Any">Any</option>
                                                                                             <option value="9 am">9 am</option>
                                                                                             <option value="10 am">10 am</option>
@@ -482,14 +576,24 @@ const checkOfferjob=(e)=>{
                                                                                             <option value="6 pm">6 pm</option>
                                                                                    
                                                                             </select>
+                                                                            {
+                                                                                 (avlErr.wednesdayErr1 && availability.wednesday.start=='') &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select start time.</p>
+                                                                             }
+                                                                              {
+                                                                                 ((prevFormErr && availability.wednesday.start=='') && !avlErr.wednesdayErr1) &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select start time.</p>
+                                                                             }
                                                                         </div>
-                                                                        <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        <div> 
+                                                                            <div className="mt-[16px] md:mt-[20px] w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        </div>
                                                                         <div className="avl-end w-[48%]"> 
                                                                              <select 
                                                                              defaultValue={availability.wednesday.close}
                                                                              onChange={(e)=>checkCloseTime(e,'wednesday')}
-                                                                              className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                          <option value="Close">Close</option>
+                                                                             className={"text-xs md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent "+(availability.wednesday.close!=''? 'focus-green':'')+((prevFormErr==true && availability.wednesday.close=='')? 'focus-red':'')+((avlErr.wednesdayErr2 && availability.wednesday.close=='')? 'focus-red':'')} >
+                                                                                          <option value="">Close time</option>
                                                                                           <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
@@ -504,6 +608,14 @@ const checkOfferjob=(e)=>{
                                                                                             <option value="8 pm">10 pm</option>
                                                                                         
                                                                             </select>
+                                                                            {
+                                                                                 (avlErr.wednesdayErr2 && availability.wednesday.close=='') &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select close time.</p>
+                                                                             }
+                                                                              {
+                                                                                 ((prevFormErr && availability.wednesday.close=='') && !avlErr.wednesdayErr2) &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select close time.</p>
+                                                                             }
                                                                          </div>
                                                                     </div>
                                                             </div>
@@ -512,15 +624,15 @@ const checkOfferjob=(e)=>{
                                                      {/*======================== Wednesday end=======================*/}
                                                      {/*======================== Thursday=======================*/}
                                                      <div className="avl-work-week thursday"> 
-                                                            <div className="avl-row flex  justify-between items-center space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
-                                                                    <div className="avl-day text-sm md:text-xl"><p>Thursday :</p></div>
-                                                                    <div className="flex justify-between items-center w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
+                                                            <div className="avl-row flex  justify-between space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
+                                                                    <div className="avl-day text-sm md:text-xl mt-[6px] md:mt-[6px]"><p>Thursday :</p></div>
+                                                                    <div className="flex justify-between w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
                                                                         <div className="avl-start w-[48%]"> 
                                                                              <select
                                                                              defaultValue={availability.thursday.start}
                                                                              onChange={(e)=>checkStartTime(e,'thursday')}
-                                                                              className=" text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                            <option value="Start">Start</option>
+                                                                             className={"text-xs md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent "+(availability.thursday.start!=''? 'focus-green':'')+((prevFormErr==true && availability.thursday.start=='')? 'focus-red':'')+((avlErr.thursdayErr1 && availability.thursday.start=='')? 'focus-red':'')} >
+                                                                                            <option value="">Start Time</option>
                                                                                             <option value="Any">Any</option>
                                                                                             <option value="9 am">9 am</option>
                                                                                             <option value="10 am">10 am</option>
@@ -534,14 +646,24 @@ const checkOfferjob=(e)=>{
                                                                                             <option value="6 pm">6 pm</option>
                                                                                    
                                                                             </select>
+                                                                            {
+                                                                                 (avlErr.thursdayErr1 && availability.thursday.start=='') &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select start time.</p>
+                                                                             }
+                                                                              {
+                                                                                 ((prevFormErr && availability.thursday.start=='') && !avlErr.thursdayErr1) &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select start time.</p>
+                                                                             }
                                                                         </div>
-                                                                        <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        <div> 
+                                                                            <div className="mt-[16px] md:mt-[20px] w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        </div>
                                                                         <div className="avl-end w-[48%]"> 
                                                                              <select 
                                                                              defaultValue={availability.thursday.close}
                                                                              onChange={(e)=>checkCloseTime(e,'thursday')}
-                                                                              className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                          <option value="Close">Close</option>
+                                                                             className={"text-xs md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent "+(availability.thursday.close!=''? 'focus-green':'')+((prevFormErr==true && availability.thursday.close=='')? 'focus-red':'')+((avlErr.thursdayErr2 && availability.thursday.close=='')? 'focus-red':'')} >
+                                                                                          <option value="">Close time</option>
                                                                                           <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
@@ -556,6 +678,14 @@ const checkOfferjob=(e)=>{
                                                                                             <option value="8 pm">10 pm</option>
                                                                                         
                                                                             </select>
+                                                                            {
+                                                                                 (avlErr.thursdayErr2 && availability.thursday.close=='') &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select close time.</p>
+                                                                             }
+                                                                              {
+                                                                                 ((prevFormErr && availability.thursday.close=='') && !avlErr.thursdayErr2) &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select close time.</p>
+                                                                             }
                                                                          </div>
                                                                     </div>
                                                             </div>
@@ -564,15 +694,15 @@ const checkOfferjob=(e)=>{
                                                      {/*======================== Thursday end=======================*/}
                                                      {/*======================== Friday=======================*/}
                                                      <div className="avl-work-week friday"> 
-                                                            <div className="avl-row flex  justify-between items-center space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
-                                                                    <div className="avl-day text-sm md:text-xl"><p>Friday :</p></div>
-                                                                    <div className="flex justify-between items-center w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
+                                                            <div className="avl-row flex  justify-between space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
+                                                                    <div className="avl-day text-sm md:text-xl mt-[6px] md:mt-[6px]"><p>Friday :</p></div>
+                                                                    <div className="flex justify-between w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
                                                                         <div className="avl-start w-[48%]"> 
                                                                              <select 
                                                                               defaultValue={availability.friday.start}
                                                                               onChange={(e)=>checkStartTime(e,'friday')}
-                                                                              className=" text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                            <option value="Start">Start</option>
+                                                                              className={"text-xs md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent "+(availability.friday.start!=''? 'focus-green':'')+((prevFormErr==true && availability.friday.start=='')? 'focus-red':'')+((avlErr.fridayErr1 && availability.friday.start=='')? 'focus-red':'')} >
+                                                                                            <option value="">Start time</option>
                                                                                             <option value="Any">Any</option>
                                                                                             <option value="9 am">9 am</option>
                                                                                             <option value="10 am">10 am</option>
@@ -586,14 +716,24 @@ const checkOfferjob=(e)=>{
                                                                                             <option value="6 pm">6 pm</option>
                                                                                    
                                                                             </select>
+                                                                            {
+                                                                                 (avlErr.fridayErr1 && availability.friday.start=='') &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select start time.</p>
+                                                                             }
+                                                                              {
+                                                                                 ((prevFormErr && availability.friday.start=='') && !avlErr.fridayErr1) &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select start time.</p>
+                                                                             }
                                                                         </div>
-                                                                        <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        <div> 
+                                                                            <div className="mt-[16px] md:mt-[20px] w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        </div>
                                                                         <div className="avl-end w-[48%]"> 
                                                                              <select 
                                                                              defaultValue={availability.friday.close}
                                                                              onChange={(e)=>checkCloseTime(e,'friday')}
-                                                                              className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                          <option value="Close">Close</option>
+                                                                             className={"text-xs md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent "+(availability.friday.close!=''? 'focus-green':'')+((prevFormErr==true && availability.friday.close=='')? 'focus-red':'')+((avlErr.fridayErr2 && availability.friday.close=='')? 'focus-red':'')} >
+                                                                                          <option value="">Close time</option>
                                                                                           <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
@@ -608,6 +748,14 @@ const checkOfferjob=(e)=>{
                                                                                             <option value="8 pm">10 pm</option>
                                                                                         
                                                                             </select>
+                                                                            {
+                                                                                 (avlErr.fridayErr2 && availability.friday.close=='') &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select close time.</p>
+                                                                             }
+                                                                              {
+                                                                                 ((prevFormErr && availability.friday.close=='') && !avlErr.fridayErr2) &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select close time.</p>
+                                                                             }
                                                                          </div>
                                                                     </div>
                                                             </div>
@@ -616,15 +764,15 @@ const checkOfferjob=(e)=>{
                                                      {/*======================== Friday end=======================*/}
                                                      {/*======================== Saturday=======================*/}
                                                      <div className="avl-work-week saturday"> 
-                                                            <div className="avl-row flex  justify-between items-center space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
-                                                                    <div className="avl-day text-sm md:text-xl"><p>Saturday :</p></div>
-                                                                    <div className="flex justify-between items-center w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
+                                                            <div className="avl-row flex  justify-between space-x-2 md:space-x-6 md:max-w-[800px] mt-4 ">
+                                                                    <div className="avl-day text-sm md:text-xl mt-[6px] md:mt-[6px]"><p>Saturday :</p></div>
+                                                                    <div className="flex justify-between w-[68%] xs:w-[66%] sm:w-[78%] md:w-[80%] space-x-2 md:space-x-6 "> 
                                                                         <div className="avl-start w-[48%]"> 
                                                                              <select 
                                                                               defaultValue={availability.saturday.start}
                                                                               onChange={(e)=>checkStartTime(e,'saturday')}
-                                                                              className=" text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                            <option value="Start">Start</option>
+                                                                              className={"text-xs md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent "+(availability.saturday.start!=''? 'focus-green':'')+((prevFormErr==true && availability.saturday.start=='')? 'focus-red':'')+((avlErr.saturdayErr1 && availability.saturday.start=='')? 'focus-red':'')} >
+                                                                                            <option value="">Start time</option>
                                                                                             <option value="Any">Any</option>
                                                                                             <option value="9 am">9 am</option>
                                                                                             <option value="10 am">10 am</option>
@@ -638,14 +786,24 @@ const checkOfferjob=(e)=>{
                                                                                             <option value="6 pm">6 pm</option>
                                                                                    
                                                                             </select>
+                                                                            {
+                                                                                 (avlErr.saturdayErr1 && availability.saturday.start=='') &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select start time.</p>
+                                                                             }
+                                                                              {
+                                                                                 ((prevFormErr && availability.saturday.start=='') && !avlErr.saturdayErr1) &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select start time.</p>
+                                                                             }
                                                                         </div>
-                                                                        <div className="w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        <div> 
+                                                                            <div className="mt-[16px] md:mt-[20px] w-[10px] md:w-[16px] h-[2px] md:h-[3px] bg-[#464646]"></div>
+                                                                        </div>
                                                                         <div className="avl-end w-[48%]"> 
                                                                              <select
                                                                              defaultValue={availability.saturday.close}
                                                                              onChange={(e)=>checkCloseTime(e,'saturday')}
-                                                                              className="text-sm md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent focus-green"  required>
-                                                                                          <option value="Close">Close</option>
+                                                                             className={"text-xs md:text-base w-full event-input text-gray-800  border-0 md:py-2 px-2 md:px-4 bg-[#F4E6C3] focus:ring-transparent "+(availability.saturday.close!=''? 'focus-green':'')+((prevFormErr==true && availability.saturday.close=='')? 'focus-red':'')+((avlErr.saturdayErr2 && availability.saturday.close=='')? 'focus-red':'')} >
+                                                                                          <option value="">Close time</option>
                                                                                           <option value="Any">Any</option>
                                                                                             <option value="12 pm">12 pm</option>
                                                                                             <option value="1 pm">1 pm</option>
@@ -660,6 +818,14 @@ const checkOfferjob=(e)=>{
                                                                                             <option value="8 pm">10 pm</option>
                                                                                         
                                                                             </select>
+                                                                            {
+                                                                                 (avlErr.saturdayErr2 && availability.saturday.close=='') &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select close time.</p>
+                                                                             }
+                                                                              {
+                                                                                 ((prevFormErr && availability.saturday.close=='') && !avlErr.saturdayErr2) &&
+                                                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select close time.</p>
+                                                                             }
                                                                          </div>
                                                                     </div>
                                                             </div>

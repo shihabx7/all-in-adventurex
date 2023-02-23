@@ -74,7 +74,7 @@ const checkPayRange=(e)=>{
         //console.log(fname.length)
 
         //const payPatt=/^[A-Za90-9 ]*$/
-        if(payRange.length>2 ){
+        if(payRange.length>0 ){
             
                 setFormErrFlag(false)
                 setAppInfo2Err({...appInfo2Err,dPayErr:false})

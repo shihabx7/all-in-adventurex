@@ -10,7 +10,7 @@ import References from "./References"
 
 const JobApplicationForms=(props)=>{
 
-    const [formStep, setFormStep]=useState(0) 
+    const [formStep, setFormStep]=useState(5) 
 
     const [formName,setFormName]=useState('Applicant info 1')
     useEffect(() => {
@@ -117,32 +117,32 @@ const JobApplicationForms=(props)=>{
                                          },
                                          howLongStay:'',
                                          sunday:{
-                                                 start:'Start',
-                                                 close:'Close',
+                                                 start:'',
+                                                 close:'',
                                                  },
                                         monday:{
-                                                     start:'Start',
-                                                     close:'Close',
+                                                     start:'',
+                                                     close:'',
                                                  },
                                         tuesday:{
-                                                start:'Start',
-                                                close:'Close',
+                                                start:'',
+                                                close:'',
                                                 },
                                         wednesday:{
-                                                    start:'Start',
-                                                    close:'Close',
+                                                    start:'',
+                                                    close:'',
                                                 },
                                         thursday :{
-                                                     start:'Start',
-                                                     close:'Close',
+                                                     start:'',
+                                                     close:'',
                                                     },
                                         friday  :{
-                                                     start:'Start',
-                                                     close:'Close',
+                                                     start:'',
+                                                     close:'',
                                                     },
                                         saturday  :{
-                                                     start:'Start',
-                                                     close:'Close',
+                                                     start:'',
+                                                     close:'',
                                              },
                                          })
      const checkAvailablity=()=>{
@@ -174,6 +174,48 @@ const JobApplicationForms=(props)=>{
             }
             if(key=='howLongStay'){
                 if(availability[key]==''){
+                    emptycount=emptycount+1
+                } 
+                
+            }
+            if(key=='sunday'){
+                if(availability[key].start=='' || availability[key].close==''){
+                    emptycount=emptycount+1
+                } 
+                
+            }
+            if(key=='monday'){
+                if(availability[key].start=='' || availability[key].close==''){
+                    emptycount=emptycount+1
+                } 
+                
+            }
+            if(key=='tuesday'){
+                if(availability[key].start=='' || availability[key].close==''){
+                    emptycount=emptycount+1
+                } 
+                
+            }
+            if(key=='wednesday'){
+                if(availability[key].start=='' || availability[key].close==''){
+                    emptycount=emptycount+1
+                } 
+                
+            }
+            if(key=='thursday'){
+                if(availability[key].start=='' || availability[key].close==''){
+                    emptycount=emptycount+1
+                } 
+                
+            }
+            if(key=='friday'){
+                if(availability[key].start=='' || availability[key].close==''){
+                    emptycount=emptycount+1
+                } 
+                
+            }
+            if(key=='saturday'){
+                if(availability[key].start=='' || availability[key].close==''){
                     emptycount=emptycount+1
                 } 
                 
@@ -576,6 +618,7 @@ const [formErr,setFormErr]=useState({
     }
    // form step controll end===============
    // ==============================submit form
+   const [isSend, setIsSend]=useState(false)
     const submitForm=async(event)=>{
         event.preventDefault()
         if(formErrFlag==false){
@@ -609,10 +652,18 @@ const [formErr,setFormErr]=useState({
                     body:JSON.stringify(formData)
 
             })
+            setIsSend(true)
             const result = await response.json()
 
-                        console.log(result.data)
-                        console.log(result.success)
+            if(result.success==true){
+                window.location.href = "/thank-you-career";
+                setIsSend(false)
+            }
+            else{
+                alert('Network Error')
+            }
+                      //  console.log(result.data)
+                       // console.log(result.success)
             }
             else{
                 setFormStep(5)
@@ -664,7 +715,7 @@ const [formErr,setFormErr]=useState({
             </div>
             <div className="form-bottom flex justify-end items-center space-x-2 mt-8">
                 {
-                    formStep>0 && 
+                    (formStep>0 && !isSend ) &&
                     <button onClick={()=>{backStep()}} className="btn-back px-6 py-2 text-lg rounded bg-red-600 hover:bg-red-700 text-center text-white">BACK</button>
                 } 
                  {
@@ -673,8 +724,12 @@ const [formErr,setFormErr]=useState({
                 } 
               
               {
-                    formStep==5 && 
+                    (formStep==5 && !isSend) &&
                     <button onClick={(event)=>{submitForm(event)}} className="btn-back px-6 py-2 text-lg rounded bg-red-600 hover:bg-red-700 text-center text-white">SUBMIT</button>
+                } 
+                {
+                    isSend &&
+                    <button onClick={(event)=>{submitForm(event)}} className="btn-back px-6 py-2 text-lg rounded bg-red-600 hover:bg-red-700 text-center text-white">Sending...</button>
                 } 
               
                 

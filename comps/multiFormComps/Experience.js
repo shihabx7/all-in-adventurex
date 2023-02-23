@@ -121,7 +121,7 @@ const Experience=({jobExp,setJobExp,setFormErrFlag,jobPrevErr})=>{
         const jobname='job'+job
         const errname='jobErr'+job
         const namePatt=/^[A-Za-z0-9 ]*$/ 
-        if(cname.length>5 && cname.length<41){
+        if(cname.length>2 && cname.length<41){
             if(!namePatt.test(cname)){
                      setFormErrFlag(true)
                      setExpErr({...expErr,[errname]:{...expErr[errname],spName:true}})
@@ -188,23 +188,23 @@ const Experience=({jobExp,setJobExp,setFormErrFlag,jobPrevErr})=>{
         const jobname='job'+job
         const errname='jobErr'+job
       //  const namePatt=/^[0-9-+/./(/)]*$/ 
-        const namePatt= /^(\d{1,2})\/(\d{4})(.*)/
-        if(cname.length>4 && cname.length<16){
-            if(!namePatt.test(cname)){
+       // const namePatt= /^(\d{1,2})\/(\d{4})(.*)/
+       /* if(!namePatt.test(cname)){
                      setFormErrFlag(true)
                      setExpErr({...expErr,[errname]:{...expErr[errname],dateOfEmployment:true}})
                     e.target.classList.remove("focus-green")
                     e.target.classList.add("focus-red")
                     
-            }
-            else{
+            }*/
+        if(cname.length>2 && cname.length<21){
+            
+        
                 setFormErrFlag(false)
                 setExpErr({...expErr,[errname]:{...expErr[errname],dateOfEmployment:false}})
                 setJobExp({...jobExp,[jobname]:{...jobExp[jobname],dateOfEmployment:cname}})
                     e.target.classList.remove("focus-red")
                     e.target.classList.add("focus-green")
-                    
-            }
+         
         }
        
         else{
@@ -422,7 +422,7 @@ const Experience=({jobExp,setJobExp,setFormErrFlag,jobPrevErr})=>{
                                                    </input>
                                                    {
                                                             (expErr.jobErr1.spName && jobExp.job1.spName.length>0 ) &&
-                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">invalid phone number</p>
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Only letter, number and space allowed (between 3-40 character)</p>
                                                     }
                                                    
                                                     {
@@ -442,7 +442,7 @@ const Experience=({jobExp,setJobExp,setFormErrFlag,jobPrevErr})=>{
                                                     </input>
                                                     {
                                                             (expErr.jobErr1.spPhone && jobExp.job1.spPhone.length>0 ) &&
-                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Only letter, number and space allowed (between 6-40 character)</p>
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Invalid phone number</p>
                                                     }
                                                    
                                                     {
@@ -547,7 +547,7 @@ const Experience=({jobExp,setJobExp,setFormErrFlag,jobPrevErr})=>{
                             </div>
                             {
                                 exp==2 &&
-                                <div className="f-job-bottom mt-2 border-t border-gray-300"> 
+                                <div className={"f-job-bottom mt-2 border-t border-gray-300 "+(jobPrevErr.jobErr2==true?"focus-red":'')}> 
                                         <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between my-3">
                                             <div className="form-col w-full md:w-[49%]">
                                                <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Company Name</p>
@@ -608,7 +608,7 @@ const Experience=({jobExp,setJobExp,setFormErrFlag,jobPrevErr})=>{
                                                    </input>
                                                    {
                                                             (expErr.jobErr2.spName && jobExp.job2.spName.length>0 ) &&
-                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">invalid phone number</p>
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Only letter, number and space allowed (between 3-40 character)</p>
                                                     }
                                                    
                                                     {
@@ -628,7 +628,7 @@ const Experience=({jobExp,setJobExp,setFormErrFlag,jobPrevErr})=>{
                                                     </input>
                                                     {
                                                             (expErr.jobErr2.spPhone && jobExp.job2.spPhone.length>0 ) &&
-                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Only letter, number and space allowed (between 6-40 character)</p>
+                                                            <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Invalid phone number</p>
                                                     }
                                                    
                                                     {
@@ -677,7 +677,7 @@ const Experience=({jobExp,setJobExp,setFormErrFlag,jobPrevErr})=>{
                                                     }
                                                    
                                                     {
-                                                        ((jobPrevErr.jobErr2 && jobExp.job1.isContact=='') && !expErr.jobErr2.isContact) &&
+                                                        ((jobPrevErr.jobErr2 && jobExp.job2.isContact=='') && !expErr.jobErr2.isContact) &&
                                                         <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
                                                     }
                                             </div>
@@ -732,7 +732,7 @@ const Experience=({jobExp,setJobExp,setFormErrFlag,jobPrevErr})=>{
                             </div>
                             {
                                 exp==3 &&
-                                <div className="f-job-bottom mt-2 border-t border-gray-300"> 
+                                <div className={"f-job-bottom mt-2 border-t border-gray-300 "+(jobPrevErr.jobErr3==true?"focus-red":'')}> 
                                      <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between my-3">
                                             <div className="form-col w-full md:w-[49%]">
                                                <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Company Name</p>
@@ -793,7 +793,7 @@ const Experience=({jobExp,setJobExp,setFormErrFlag,jobPrevErr})=>{
                                                  </input>
                                                  {
                                                           (expErr.jobErr3.spName && jobExp.job3.spName.length>0 ) &&
-                                                          <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">invalid phone number</p>
+                                                          <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Only letter, number and space allowed (between 3-40 character)</p>
                                                   }
                                                  
                                                   {
@@ -813,7 +813,7 @@ const Experience=({jobExp,setJobExp,setFormErrFlag,jobPrevErr})=>{
                                                  </input>
                                                  {
                                                          (expErr.jobErr3.spPhone && jobExp.job3.spPhone.length>0 ) &&
-                                                         <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Only letter, number and space allowed (between 6-40 character)</p>
+                                                         <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Invalid phone number</p>
                                                  }
 
                                                  {
@@ -846,7 +846,7 @@ const Experience=({jobExp,setJobExp,setFormErrFlag,jobPrevErr})=>{
                                              <div className="form-col w-full md:w-[49%]">
                                        <p className=" mb-1 lg:text-lg evevt-input-label text-gray-800">If offer made, may we contact?</p>
                                        <select 
-                                               defaultValue={jobExp.job2.isContact}
+                                               defaultValue={jobExp.job3.isContact}
                                                onChange={(e)=>checkIsContact(e,2)}
                                                className={"w-full max-h-[68px] event-input border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent "+ (jobExp.job2.isContact>0? "focus-green ":"")+((jobPrevErr.jobErr2 && jobExp.job2.isContact=='')?"focus-red":"")}
                                                
@@ -857,12 +857,12 @@ const Experience=({jobExp,setJobExp,setFormErrFlag,jobPrevErr})=>{
 
                                             </select>
                                             {
-                                                    (expErr.jobErr2.isContact && jobExp.job2.isContact=='' ) &&
+                                                    (expErr.jobErr3.isContact && jobExp.job3.isContact=='' ) &&
                                                     <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Select one option</p>
                                             }
                                            
                                             {
-                                                ((jobPrevErr.jobErr2 && jobExp.job1.isContact=='') && !expErr.jobErr2.isContact) &&
+                                                ((jobPrevErr.jobErr3 && jobExp.job3.isContact=='') && !expErr.jobErr3.isContact) &&
                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
                                             }
                                             </div>
@@ -872,18 +872,18 @@ const Experience=({jobExp,setJobExp,setFormErrFlag,jobPrevErr})=>{
                                        <p className="mb-1 lg:text-lg evevt-input-label text-gray-800">Major Responsibilities</p>
                                        <input 
                                            type="text"
-                                           defaultValue={jobExp.job2.majorResponsibility}
+                                           defaultValue={jobExp.job3.majorResponsibility}
                                             onChange={(e)=>checkMajorResponsibility(e,2)}
                                             className={"w-full max-h-[68px] event-input border-0 md:py-3 px-4 bg-[#F4E6C3] focus:ring-transparent "+ (jobExp.job2.majorResponsibility>5? "focus-green ":"")+((jobPrevErr.jobErr2 && jobExp.job2.majorResponsibility.length<5)?"focus-red":"")}
                                             />
                                            
                                            {
-                                                    (expErr.jobErr2.majorResponsibility && jobExp.job2.majorResponsibility!='' ) &&
+                                                    (expErr.jobErr3.majorResponsibility && jobExp.job3.majorResponsibility!='' ) &&
                                                     <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Only letter, number and space allowed (between 6-40 character)</p>
                                             }
                                            
                                             {
-                                                ((jobPrevErr.jobErr2 && jobExp.job2.majorResponsibility=='') && !expErr.jobErr2.majorResponsibility) &&
+                                                ((jobPrevErr.jobErr3 && jobExp.job2.majorResponsibility=='') && !expErr.jobErr3.majorResponsibility) &&
                                                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">This field must not be empty</p>
                                             }
                                             </div>

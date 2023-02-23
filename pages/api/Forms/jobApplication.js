@@ -99,18 +99,19 @@ var users = [
       try {
         await transporter.sendMail({
           from: "sender@allinadventures.com",
-          to: "dgency.com@gmail.com",
-          bcc:"shihab.dgency@gmail.com",
-          subject: `Job Application from PDF`,
+          to: "careers@allinadventures.com",
+          bcc:"shihab.dgency@gmail.com,dgency.com@gmail.com",
+          subject: `Job Application - ${retbody.info1.lName} ${retbody.info1.fName}`,
           html: `
-                <h2><strong>Name: </strong> Pdf test </h2>
-                <hr/>
-              <p><strong>Company: </strong> ${retbody.refinfo.ref1.refCompany}</p>
-              <p><strong>Title: </strong> ${retbody.refinfo.ref1.refTitle}</p>
-              <p><strong>Relationship: </strong> ${retbody.refinfo.ref1.refRelation}</p>
-              <p><strong>Length of Time Known: </strong> ${retbody.refinfo.ref1.refTimeLength}</p>
-              <p><strong>Phone: </strong> ${retbody.refinfo.ref1.refPhone}</p>
-              <p><strong>Email: </strong> ${retbody.refinfo.ref1.refEmail}</p>
+              <p><strong>Name: </strong> ${retbody.info1.lName} ${retbody.info1.fName} </p>
+               <p><strong>Phone: </strong> ${retbody.info1.phone} </p>
+              <p><strong>Email: </strong> ${retbody.info1.email} </p>
+              <p><strong>Address: </strong> ${retbody.info1.stAdd1} </p>
+              <p><strong>City: </strong> ${retbody.info1.city} </p>
+              <p><strong>State: </strong> ${retbody.info1.state} </p>
+              <p><strong>Country: </strong> ${retbody.info1.country}</p>
+              </br>
+              <p><strong>Career objective: </strong>${retbody.avlinfo.careerObjective}</p>
            
           `,
           attachments: [
@@ -122,7 +123,13 @@ var users = [
       } catch (error) {
         return res.status(500).json({ data: retbody,success:false,errors:error});
       }
-  
+      fs.unlink(outpath, (err) => {
+        if (err) {
+            throw err;
+        }
+    
+        console.log("Delete File successfully.");
+    });
     
     res.status(200).json({ data: retbody,success:true})
   }

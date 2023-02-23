@@ -11,7 +11,7 @@
 			letter-spacing: 1.9;
 		}
 		p{
-			margin:4px 0px;
+			margin:2px 0px;
 			line-height: 1.6;
 		}
 		.title{
@@ -90,34 +90,36 @@
 	<div class="container app-info">
     	<h1 class="title">Applicant Information</h1>
 		<div class="app-row">
-			<p><b>Name:</b> Mark Lois</p>
+			<p><b>Name:</b> {{info.info1.lName}} {{info.info1.fName}}</p>
 		 </div>
 		 <!-- ============Email+ Phone===============-->
 		 <div class="app-row flex-row">
 			<table> 
 				<tbody> 
 					<tr> 
-						<td><p class="space-2"><b>Email:</b> mrkklk@gmail.com</p> </td>
-						<td><p><b>Phone:</b> 123456789</p> </td>
+						<td><p class="space-2"><b>Email:</b> {{info.info1.email}}</p> </td>
+						<td><p><b>Phone:</b> {{info.info1.phone}}</p> </td>
 					</tr>
 				</tbody>
 			</table>
 		 </div>
 		 <div class="app-row flex-row">
-			<p ><b>Street address :</b> 274, lee ave, boston</p>
+			<p ><b>Street address:</b> {{info.info1.stAdd1}}</p>
 			
 		 </div>
+		 {{#ifCond info.info1.stAdd2 '!=' ''}}
 		 <div class="app-row flex-row">
-			<p ><b>Street address2 :</b> 274, lee ave, boston</p>
+			<p ><b>Street address2:</b> {{info.info1.stAdd2}}</p>
 			
 		 </div>
+		 {{/ifCond}}
 		 <!-- ============City + state===============-->
 		 <div class="app-row flex-row">
 			<table> 
 				<tbody> 
 					<tr> 
-						<td><p class="space-2"><b>City:</b> Tempe</p> </td>
-						<td><p><b>State / Province / Region:</b> New toek</p></td>
+						<td><p class="space-2"><b>City:</b> {{info.info1.city}}</p> </td>
+						<td><p><b>State / Province / Region:</b> {{info.info1.state}}</p></td>
 					</tr>
 				</tbody>
 			</table>
@@ -128,8 +130,8 @@
 			<table> 
 				<tbody> 
 					<tr> 
-						<td><p class="space-2"><b>Zip:</b> 55100</p></td>
-						<td><p ><b>Country:</b> Unitad States</p></td>
+						<td><p class="space-2"><b>Zip:</b> {{info.info1.zip}}</p></td>
+						<td><p ><b>Country:</b> {{info.info1.country}}</p></td>
 					</tr>
 				</tbody>
 			</table>
@@ -140,8 +142,8 @@
 			<table> 
 				<tbody> 
 					<tr> 
-						<td><p class="space-2"><b>Desired Location:</b> Alany, NY</p></td>
-						<td><p ><b>Desired Position:</b> Store Manager</p></td>
+						<td><p class="space-2"><b>Desired Location:</b> {{info.info2.dLocation}}</p></td>
+						<td><p ><b>Desired Position:</b> {{info.info2.dPosition}}</p></td>
 					</tr>
 				</tbody>
 			</table>
@@ -151,8 +153,8 @@
 			<table> 
 				<tbody> 
 					<tr> 
-						<td><p class="space-2"><b>Desired Pay Range:</b> 3000-5000 usd</p></td>
-						<td><p ><b>Desired Schedule:</b> Full time</p></td>
+						<td><p class="space-2"><b>Desired Pay Range:</b> {{info.info2.dPay}}</p></td>
+						<td><p ><b>Desired Schedule:</b> {{info.info2.dSchedule}}</p></td>
 					</tr>
 				</tbody>
 			</table>
@@ -164,8 +166,8 @@
 			<table> 
 				<tbody> 
 					<tr> 
-						<td><p class="space-2"><b>Are you 18 years of age or older? :</b> Yes</p></td>
-						<td><p><b>Are you eligible to work in the US?:</b> Yes</p></td>
+						<td><p class="space-2"><b>Are you 18 years of age or older? :</b> {{info.info2.isAge}}</p></td>
+						<td><p><b>Are you eligible to work in the US? :</b> {{info.info2.isEligible}}</p></td>
 					</tr>
 				</tbody>
 			</table>
@@ -174,31 +176,37 @@
 		 </div>
 		 <!-- ============other names?===============-->
 		 <div class="app-row flex-row">
-			<p class="space-2"><b>Worked under any other names?:</b> homtown escape, red button escape</p>
+			<p class="space-2"><b>Worked under any other names? :</b> {{info.info2.workUnderOther}}</p>
 			
 		 </div>
 		 <!-- ============>How did you learn about the position?===========-->
 		 <div class="app-row flex-row">
 			
-			<p class="space-2"><b>How did you learn about the position?:</b> Friends</p>
+			<p class="space-2"><b>How did you learn about the position?:</b> {{info.info2.learnAboutPos}}</p>
 		 </div>
 		 <div class="app-row mt-2">
 			<p class="sub-title">Career objective </p>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			<p>{{info.avlinfo.careerObjective}}</p>
 		 </div>
+		 {{#ifCond info.info2.everWorkPast '!=' ''}}
 		 <div class="app-row ">
 			<p class="sub-title">Have you ever worked for All In Adventures, Escape the Mystery Room, or Mystery Room in the past? </p>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			<p>{{info.info2.everWorkPast}}</p>
 		 </div>
+		 {{/ifCond}}
+		 {{#ifCond info.info2.whatAttracted '!=' ''}}
 		 <div class="app-row ">
 			<p class="sub-title">What attracted you to the company?  </p>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
+			<p>{{info.info2.whatAttracted}} </p>
 		 </div>
-		
+		 {{/ifCond}}
     	
 	</div>
 	<!-- ============Applicant availablity===============-->
 	<div class="container availablity mt">
+
+
+
     	<h1 class="title">Availability</h1>
 		<div class="app-row flex-row item-center">
 			<p class="space-2 "><b>Availability start date:</b> {{info.avlinfo.avlStartDate}}</p>
@@ -279,7 +287,7 @@
 			
 		 </div>
 		 {{#ifCond info.avlinfo.howLongStay "!=" ''}}
-		 <div class="app-row mt-2">howLongStay
+		 <div class="app-row mt-2">
 			<p class="sub-title">If offered a job, how long do you plan to stay?</p>
 			<p>{{info.avlinfo.howLongStay}}</p>
 		 </div>
