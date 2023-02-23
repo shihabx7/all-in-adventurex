@@ -187,13 +187,14 @@ const CorContact=()=>{
             
         }
     }
+    const[isSend,setIsSend]=useState(false)
     const submitForm=async (event)=>{
         event.preventDefault()
         if(!err){
             if(fieldVlue.fName!='' && fieldVlue.lName!='' && fieldVlue.email!='' && fieldVlue.phone!='' && fieldVlue.comSubject!='' && fieldVlue.comSubject!='0'){
                         console.log("Sending..."+fieldVlue)
                        
-
+                        setIsSend(true)
                         const response = await  fetch('/api/Forms/corContact',{
                                 method:"POST",
                                 headers:{
@@ -205,13 +206,16 @@ const CorContact=()=>{
                         })
                         const result = await response.json()
 
-                        console.log(result.data)
-                        console.log(result.success)
+                        //console.log(result.data)
+                        //console.log(result.success)
                         if(result.success){
-                            router.push({
-                                pathname: '/thank-you',
-                               
-                            }) 
+                            setIsSend(false)
+                            window.location.href = "/thank-you";
+                            
+                        }
+                        else{
+                            setIsSend(false)
+                            alert('Network Error')
                         }
             }
 
@@ -401,12 +405,17 @@ const CorContact=()=>{
                                                    </div>
                                                </div>
                                                {/*======================================contact form row message event====================== */}
-                                               <div className="form-row flex justify-center ">
-                                                  
-                                                
-                                                      <button type="submit" className="text-white font-medium text-lg py-3 px-12 bg-red-600 hover:bg-red-700 rounded-full">SUBMIT</button>
-                                                  
-                                              </div>
+                                               {
+                                                !isSend &&
+                                                <div className="form-row flex justify-center ">
+                                                    <button type="submit" className="text-white font-medium text-lg py-3 px-12 bg-red-600 hover:bg-red-700 rounded-full">SUBMIT</button>
+                                                </div>
+                                               }
+                                              
+                                              {
+                                                          isSend==true &&
+                                                          <div  className="max-w-[170px] mx-auto btn-back px-6 py-2 md:text-lg rounded-full font-medium bg-red-600 hover:bg-red-700  text-white "><div class=" font-medium loader">Submitting</div></div>
+                                                      } 
                                                {/*======================================contact form button====================== */}
 
                                  </form>

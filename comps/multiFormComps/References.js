@@ -304,8 +304,8 @@ const checkName=(e,ref)=>{
         setRefErr({...refErr,isAgreeErr:true})
       setReferences({...references,isAgree:check})
     }
-    console.log(refErr)
-    console.log(references)
+   // console.log(refErr)
+   // console.log(references)
    
  }
 

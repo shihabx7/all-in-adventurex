@@ -10,7 +10,7 @@ import References from "./References"
 
 const JobApplicationForms=(props)=>{
 
-    const [formStep, setFormStep]=useState(0) 
+    const [formStep, setFormStep]=useState(5) 
 
     const [formName,setFormName]=useState('Applicant Information ')
     useEffect(() => {
@@ -664,6 +664,7 @@ const [formErr,setFormErr]=useState({
                   //  console.log(result.success)
             }
             else{
+                setIsSend(false)
                 alert('Network Error')
             }
                       //  console.log(result.data)
@@ -734,7 +735,7 @@ const [formErr,setFormErr]=useState({
                 } 
                 {
                     isSend==true &&
-                    <button  className="btn-back px-6 py-2 text-lg rounded bg-red-600 hover:bg-red-700 text-center text-white flex items-center space-x-4"><span>Submitting</span> <div className="lds-ring"><div></div><div></div><div></div><div></div></div></button>
+                    <div  className="btn-back px-6 py-2 md:text-lg rounded bg-red-600 hover:bg-red-700  text-white w-[170px]"><div class="loader font-medium">Submitting</div></div>
                 } 
               
                 

@@ -450,7 +450,7 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
                                                 <input 
                                                  onChange={(e)=>checkStAddress(e)}
                                                     type="text" 
-                                                    className={"w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent "+(appInfo1.stAdd1.length>3? "focus-green":"")} 
+                                                    className={"w-full event-input border-0 md:py-3 px-4 bg-white focus:ring-transparent "+(appInfo1.stAdd1.length>2? "focus-green":"")} 
                                                     placeholder="Address" 
                                                     defaultValue={appInfo1.stAdd1}
                                                     title="Name should be alphabets (a to z) and 3 to 20 charecter."

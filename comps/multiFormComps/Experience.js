@@ -54,7 +54,7 @@ const Experience=({jobExp,setJobExp,setFormErrFlag,jobPrevErr})=>{
         const jobname='job'+job
         const errname='jobErr'+job
         const namePatt=/^[A-Za-z0-9 ]*$/ 
-        if(cname.length>5 && cname.length<41){
+        if(cname.length>2 && cname.length<41){
             if(!namePatt.test(cname)){
                      setFormErrFlag(true)
                      setExpErr({...expErr,[errname]:{...expErr[errname],companyName:true}})
@@ -87,7 +87,7 @@ const Experience=({jobExp,setJobExp,setFormErrFlag,jobPrevErr})=>{
         const jobname='job'+job
         const errname='jobErr'+job
         const namePatt=/^[A-Za-z0-9 ]*$/ 
-        if(cname.length>5 && cname.length<41){
+        if(cname.length>2 && cname.length<41){
             if(!namePatt.test(cname)){
                      setFormErrFlag(true)
                      setExpErr({...expErr,[errname]:{...expErr[errname],title:true}})
