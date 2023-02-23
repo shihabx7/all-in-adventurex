@@ -37,7 +37,7 @@ const checkCareerObj=(e)=>{
 
     const cob=escape(e.target.value.trim())
     
-    if(cob.length>9 && cob.length<181){
+    if(cob.length>2 && cob.length<261){
             
         setFormErrFlag(false)
           setAvlErr({...avlErr,careerObjectiveErr:false})
@@ -207,7 +207,7 @@ const checkOfferjob=(e)=>{
 
     const hlt=escape(e.target.value.trim())
     
-    if(hlt.length>9 && hlt.length<121){
+    if(hlt.length>2 && hlt.length<261){
             
         setFormErrFlag(false)
           setAvlErr({...avlErr,howLongStayErr:false})

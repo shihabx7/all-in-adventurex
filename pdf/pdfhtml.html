@@ -57,7 +57,10 @@
 		.tik{
 			font-weight: bold;
 			font-size: 18px;
-			width:20px;
+			width:16px;
+			height: 16px;
+			display: inline-block;
+			background: #232323;
 			
 		}
 		.space-between{
@@ -214,15 +217,16 @@
 		 </div>
 		
 		 <div class="app-row flex-row item-center aval-work-day">
-			<p class="space-2 "><b>Be available to work:</b></p>
+			<p class="space-2 "><b> Be available to work:</b></p>
 				<!-- ============Applicant Be available to work===============-->
 			<table> 
 				<tbody> 
 					<tr> 
-						{{#ifCond info.avlinfo.avlToWork.tg '==' 'true'}}<td class="mr-2 "><span class="tik"><img width="100%" src="data:image/png;base64,{{logo}}" alt="Logo" /></span> <span class="mr-4">Thanksgiving (week of) </span></td>{{/ifCond}} 
-						{{#ifCond info.avlinfo.avlToWork.cmp '==' 'true'}}<td class="mr-2"><span class="tik"><img width="100%" src="data:image/png;base64,{{logo}}" alt="Logo" /></span> <span class="mr-4">Christmas (week prior)</span</td>{{/ifCond}}
-							{{#ifCond info.avlinfo.avlToWork.cmo '==' 'true'}}<td class="mr-2"><span class="tik"><img width="100%" src="data:image/png;base64,{{logo}}" alt="Logo" /></span> {{/ifCond}}<span class="mr-4">Christmas (week of)</span</td>
-								{{#ifCond info.avlinfo.avlToWork.none '==' 'true'}}<td class="mr-2"><span class="tik"><img width="100%" src="data:image/png;base64,{{logo}}" alt="Logo" /></span> <span class="mr-4">None</span</td>{{/ifCond}}
+			
+						{{#ifCond info.avlinfo.avlToWork.tg '==' 'true'}}<td class="mr-2 "><span class="tik"></span> <span class="mr-4">Thanksgiving (week of) </span></td>{{/ifCond}} 
+						{{#ifCond info.avlinfo.avlToWork.cmp '==' 'true'}}<td class="mr-2"><span class="tik"></span> <span class="mr-4">Christmas (week prior)</span</td>{{/ifCond}}
+							{{#ifCond info.avlinfo.avlToWork.cmo '==' 'true'}}<td class="mr-2"><span class="tik"></span> {{/ifCond}}<span class="mr-4">Christmas (week of)</span</td>
+								{{#ifCond info.avlinfo.avlToWork.none '==' 'true'}}<td class="mr-2"><span class="tik"></span> <span class="mr-4">None</span</td>{{/ifCond}}
 					</tr>
 				</tbody>
 			</table>

@@ -10,12 +10,12 @@ import References from "./References"
 
 const JobApplicationForms=(props)=>{
 
-    const [formStep, setFormStep]=useState(5) 
+    const [formStep, setFormStep]=useState(0) 
 
-    const [formName,setFormName]=useState('Applicant info 1')
+    const [formName,setFormName]=useState('Applicant Information ')
     useEffect(() => {
         if(formStep==1){
-            setFormName('Applicant info 2')
+            setFormName('Applicant Information')
         }
         if(formStep==2){
             setFormName('Availability')
@@ -643,6 +643,8 @@ const [formErr,setFormErr]=useState({
                     refinfo:references
 
                 }
+                setIsSend(true)
+           
                 const response = await  fetch('/api/Forms/jobApplication',{
                     method:"POST",
                     headers:{
@@ -652,12 +654,14 @@ const [formErr,setFormErr]=useState({
                     body:JSON.stringify(formData)
 
             })
-            setIsSend(true)
+            
             const result = await response.json()
 
             if(result.success==true){
-                window.location.href = "/thank-you-career";
+               window.location.href = "/thank-you-career";
                 setIsSend(false)
+               // console.log(result.data)
+                  //  console.log(result.success)
             }
             else{
                 alert('Network Error')
@@ -675,6 +679,7 @@ const [formErr,setFormErr]=useState({
         else{
             setFormStep(5) 
         }
+        console.log(isSend)
         
     }
 // ==============================submit form end
@@ -724,12 +729,12 @@ const [formErr,setFormErr]=useState({
                 } 
               
               {
-                    (formStep==5 && !isSend) &&
+                    (formStep==5 && isSend==false) &&
                     <button onClick={(event)=>{submitForm(event)}} className="btn-back px-6 py-2 text-lg rounded bg-red-600 hover:bg-red-700 text-center text-white">SUBMIT</button>
                 } 
                 {
-                    isSend &&
-                    <button onClick={(event)=>{submitForm(event)}} className="btn-back px-6 py-2 text-lg rounded bg-red-600 hover:bg-red-700 text-center text-white">Sending...</button>
+                    isSend==true &&
+                    <button  className="btn-back px-6 py-2 text-lg rounded bg-red-600 hover:bg-red-700 text-center text-white flex items-center space-x-4"><span>Submitting</span> <div className="lds-ring"><div></div><div></div><div></div><div></div></div></button>
                 } 
               
                 

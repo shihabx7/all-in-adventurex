@@ -162,7 +162,7 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
 
         
 
-        if(stAdd.length>4 && stAdd.length<30){
+        if(stAdd.length>2 && stAdd.length<101){
             
               setFormErrFlag(false)
                 setAppInfoErr({...appInfoErr,stAddressErr:false})
@@ -189,7 +189,7 @@ const ApplicantInfo=({prevFormErr,appInfo1,setAppInfo1,setFormErrFlag})=>{
 
         
 
-        if(stAddex.length>3 && stAddex.length<30){
+        if(stAddex.length>2 && stAddex.length<101){
             
            
                 setAppInfoErr({...appInfoErr,stAddressErr2:false})

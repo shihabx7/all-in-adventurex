@@ -74,7 +74,7 @@ const checkPayRange=(e)=>{
         //console.log(fname.length)
 
         //const payPatt=/^[A-Za90-9 ]*$/
-        if(payRange.length>0 ){
+        if(payRange.length>0 && payRange.length<101 ){
             
                 setFormErrFlag(false)
                 setAppInfo2Err({...appInfo2Err,dPayErr:false})
@@ -138,7 +138,7 @@ const checkPastwork=(e)=>{
 
         
 
-        if(stAdd.length>5 && stAdd.length<100){
+        if(stAdd.length>2 && stAdd.length<261){
             
               setFormErrFlag(false)
                 setAppInfo2Err({...appInfo2Err,everWorkPastErr:false})
@@ -164,7 +164,7 @@ const checkOtherwork=(e)=>{
 
     const othertwork=e.target.value.trim()
     const otwork=escape(othertwork)
-        if(otwork.length>5 && otwork.length<101){
+        if(otwork.length>2 && otwork.length<131){
             
               setFormErrFlag(false)
                 setAppInfo2Err({...appInfo2Err,workUnderOtherErr:false})
@@ -191,7 +191,7 @@ const checkLearnposition=(e)=>{
     const lp=e.target.value.trim()
     const lpos=escape(lp)
        
-        if(lpos.length>5 && lpos.length<101){
+        if(lpos.length>2 && lpos.length<101){
             
               setFormErrFlag(false)
                 setAppInfo2Err({...appInfo2Err,learnAboutPosErr:false})
@@ -219,7 +219,7 @@ const checkWhatattracted=(e)=>{
     const atxt=e.target.value.trim()
     const atr=escape(atxt)
        
-        if(atr.length>5 && atr.length<121){
+        if(atr.length>2 && atr.length<261){
             
                  setFormErrFlag(false)
                 setAppInfo2Err({...appInfo2Err,whatAttractedErr:false})

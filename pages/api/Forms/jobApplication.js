@@ -34,9 +34,9 @@ export default async function jobApplicationHandler(req, res) {
        //   }
       }
   };
-  var bitmap=fs.readFileSync(path.join(process.cwd(), 'pdf/tik.png'))
+  var logo=fs.readFileSync(path.join(process.cwd(), 'pdf/tik.jpg'),'base64')
   //const bitmap = fs.readFileSync(__dirname+ "/pdf/tik.png");
-const logo = bitmap.toString('base64');
+//const logo = bitmap.toString('base64');
  
 var users = [
     {
@@ -54,7 +54,7 @@ var users = [
   ];
     
   var d=new Date()
-  var pdfnpath='pdf/Job_Application_'+d.getFullYear()+d.getFullYear()+d.getDate()+d.getHours()+d.getMinutes()+d.getMilliseconds()+'aia.pdf'
+  var pdfnpath='pdf/Job_Application_'+retbody.info1.fName.trim()+d.getFullYear()+d.getFullYear()+d.getDate()+d.getHours()+d.getMinutes()+d.getMilliseconds()+'.pdf'
   
  
   
@@ -103,15 +103,14 @@ var users = [
           bcc:"shihab.dgency@gmail.com,dgency.com@gmail.com",
           subject: `Job Application - ${retbody.info1.lName} ${retbody.info1.fName}`,
           html: `
-              <p><strong>Name: </strong> ${retbody.info1.lName} ${retbody.info1.fName} </p>
-               <p><strong>Phone: </strong> ${retbody.info1.phone} </p>
-              <p><strong>Email: </strong> ${retbody.info1.email} </p>
-              <p><strong>Address: </strong> ${retbody.info1.stAdd1} </p>
-              <p><strong>City: </strong> ${retbody.info1.city} </p>
-              <p><strong>State: </strong> ${retbody.info1.state} </p>
-              <p><strong>Country: </strong> ${retbody.info1.country}</p>
-              </br>
-              <p><strong>Career objective: </strong>${retbody.avlinfo.careerObjective}</p>
+              <p style="margin:4px 0px"><strong>Name: </strong> ${retbody.info1.lName} ${retbody.info1.fName} </p>
+              <p style="margin:4px 0px"><strong>Phone: </strong> ${retbody.info1.phone} </p>
+              <p style="margin:4px 0px"><strong>Email: </strong> ${retbody.info1.email} </p>
+              <p style="margin:4px 0px"><strong>Address: </strong> ${retbody.info1.stAdd1} </p>
+              <p style="margin:4px 0px"><strong>City: </strong> ${retbody.info1.city} </p>
+              <p style="margin:4px 0px"><strong>State: </strong> ${retbody.info1.state} </p>
+              <p style="margin:4px 0px"><strong>Country: </strong> ${retbody.info1.country}</p>
+              <p style="margin:4px 0px"><strong>Career objective: </strong>${retbody.avlinfo.careerObjective}</p>
            
           `,
           attachments: [
