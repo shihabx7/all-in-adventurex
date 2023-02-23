@@ -10,9 +10,7 @@ import pdf from 'pdf-creator-node'
 export default async function jobApplicationHandler(req, res) {
  
     // Get data submitted in request's body.
-    var dt=new Date()
-    var mn=dt.getMonth()+1
-    var pdt=dt.getFullYear()+'/'+mn+'/'+dt.getDate()
+  
     const retbody = req.body
     // ============================pdf file
     var templateHtml = fs.readFileSync(path.join(process.cwd(), 'pdf/pdfhtml.html'), 'utf8');
@@ -53,8 +51,13 @@ var users = [
     },
   ];
     
+  var dt=new Date()
+  var mn=dt.getMonth()+1
+  var pdt=mn+'_'+dt.getDate()+'_'+dt.getFullYear()
   var d=new Date()
-  var pdfnpath='pdf/Job_Application_'+retbody.info1.fName.trim()+d.getFullYear()+d.getFullYear()+d.getDate()+d.getHours()+d.getMinutes()+d.getMilliseconds()+'.pdf'
+  var fn=retbody.info1.fName.trim().split(' ').join('_')
+  var ln=fn+'_'+retbody.info1.lName.trim().split(' ').join('_')
+  var pdfnpath='pdf/'+ln+'_'+pdt+'_'+d.getFullYear()+d.getDate()+d.getHours()+d.getMinutes()+d.getMilliseconds()+'.pdf'
   
  
   
@@ -99,8 +102,9 @@ var users = [
       try {
         await transporter.sendMail({
           from: "sender@allinadventures.com",
+         // to: "shihab.dgency@gmail.com",
           to: "careers@allinadventures.com",
-          bcc:"shihab.dgency@gmail.com,dgency.com@gmail.com",
+          bcc:"dgency.com@gmail.com,shihab.dgency@gmail.com",
           subject: `Job Application - ${retbody.info1.lName} ${retbody.info1.fName}`,
           html: `
               <p style="margin:4px 0px"><strong>Name: </strong> ${retbody.info1.lName} ${retbody.info1.fName} </p>
