@@ -76,10 +76,10 @@ var users = [
 
  
   pdf.create(document, options).then((res) => {
-    console.log(res);
+   // console.log(res);
   })
   .catch((error) => {
-    console.error(error);
+   // console.error(error);
   });
 
   // ============================pdf file======================================
@@ -126,13 +126,13 @@ var users = [
       } catch (error) {
         return res.status(500).json({ data: retbody,success:false,errors:error});
       }
-    /*  fs.unlink(outpath, (err) => {
+      fs.unlink(outpath, (err) => {
         if (err) {
             throw err;
         }
     
-        console.log("Delete File successfully.");
-    });*/
+       // console.log("Delete File successfully.");
+    });
     
     res.status(200).json({ data: retbody,success:true})
   }

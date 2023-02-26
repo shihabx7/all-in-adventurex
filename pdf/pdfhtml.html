@@ -4,21 +4,21 @@
     <meta charset="utf-8" />
     <title>AIA job application form</title>
 	<style>
-		html { zoom: 0.55; }
+		html { zoom: 0.60; }
 		body{
 			color:#232323;
-			font-size: 14px;
+			font-size: 16px;
 			/*font-family: 'Roboto','Open Sans', 'Helvetica Neue', sans-serif;*/
 			font-family: Verdana, Geneva, Tahoma, sans-serif;
 			letter-spacing: 1;
 		}
 		p{
 			margin:2px 0px;
-			font-size: 14px;
+			font-size: 15px;
 			line-height: 1.7;
 		}
 		.title{
-			font-size: 22px;
+			font-size: 24px;
 			color:#111111;
 			border-bottom: 1px solid #bababa;
 			padding-bottom: 8px;
@@ -91,11 +91,18 @@
 			
 			width:140px;
 		}
+		.w-160{
+			
+			width:106px;
+		}
 		.mr-8{
 			margin-right: 32px;
 		}
 		.tbl-head{
-			font-size: 16px;
+			padding-top: 16px;
+			padding-bottom: 4px;
+			border-bottom: 1px solid #aaaaaa;
+			font-size: 15px;
 			font-weight: 600;
 		}
 		.edu-sub{
@@ -277,43 +284,43 @@
 								<tbody> 
 									<tr> 
 										<td class="mr-2"><p class="tbl-head w-200">Day</p></td>
-										<td class="mr-2"><p class="tbl-head w-200">Start</p></td>
-										<td class="mr-2"><p class="tbl-head w-200">Close</p>	</td>
+										<td class="mr-2"><p class="tbl-head w-160">Start</p></td>
+										<td class="mr-2"><p class="tbl-head w-260">Close</p>	</td>
 									</tr>
 									<tr> 
 										<td class="mr-2"><p class="tbl-head w-200">Sunday</p></td>
-										<td class="mr-2"><p class="tbl-hour w-200">{{info.avlinfo.sunday.start}}</p></td>
-										<td class="mr-2"><p class="tbl-hour w-200">{{info.avlinfo.sunday.close}}</p></td>
+										<td class="mr-2"><p class="tbl-hour w-160">{{info.avlinfo.sunday.start}}</p></td>
+										<td class="mr-2"><p class="tbl-hour w-160">{{info.avlinfo.sunday.close}}</p></td>
 									</tr>
 									<tr> 
 										<td class="mr-2"><p class="tbl-head w-200">Monday</p></td>
-										<td class="mr-2"><p class="tbl-hour w-200">{{info.avlinfo.monday.start}}</p></td>
-										<td class="mr-2"><p class="tbl-hour w-200">{{info.avlinfo.monday.close}}</p></td>
+										<td class="mr-2"><p class="tbl-hour w-160">{{info.avlinfo.monday.start}}</p></td>
+										<td class="mr-2"><p class="tbl-hour w-160">{{info.avlinfo.monday.close}}</p></td>
 									</tr>
 									<tr> 
 										<td class="mr-2"><p class="tbl-head w-200">Tuesday</p></td>
-										<td class="mr-2"><p class="tbl-hour w-200">{{info.avlinfo.tuesday.start}}</p></td>
-										<td class="mr-2"><p class="tbl-hour w-200">{{info.avlinfo.tuesday.close}}</p></td>
+										<td class="mr-2"><p class="tbl-hour w-160">{{info.avlinfo.tuesday.start}}</p></td>
+										<td class="mr-2"><p class="tbl-hour w-160">{{info.avlinfo.tuesday.close}}</p></td>
 									</tr>
 									<tr> 
 										<td class="mr-2"><p class="tbl-head w-200">Wednesday</p></td>
-										<td class="mr-2"><p class="tbl-hour w-200">{{info.avlinfo.wednesday.start}}</p></td>
-										<td class="mr-2"><p class="tbl-hour w-200">{{info.avlinfo.wednesday.close}}</p></td>
+										<td class="mr-2"><p class="tbl-hour w-160">{{info.avlinfo.wednesday.start}}</p></td>
+										<td class="mr-2"><p class="tbl-hour w-160">{{info.avlinfo.wednesday.close}}</p></td>
 									</tr>
 									<tr> 
 										<td class="mr-2"><p class="tbl-head w-200">Thursday</p></td>
-										<td class="mr-2"><p class="tbl-hour w-200">{{info.avlinfo.thursday.start}}</p></td>
-										<td class="mr-2"><p class="tbl-hour w-200">{{info.avlinfo.thursday.close}}</p></td>
+										<td class="mr-2"><p class="tbl-hour w-160">{{info.avlinfo.thursday.start}}</p></td>
+										<td class="mr-2"><p class="tbl-hour w-160">{{info.avlinfo.thursday.close}}</p></td>
 									</tr>
 									<tr> 
 										<td class="mr-2"><p class="tbl-head w-200">Friday</p></td>
-										<td class="mr-2"><p class="tbl-hour w-200">{{info.avlinfo.friday.start}}</p></td>
-										<td class="mr-2"><p class="tbl-hour w-200">{{info.avlinfo.friday.close}}</p></td>
+										<td class="mr-2"><p class="tbl-hour w-160">{{info.avlinfo.friday.start}}</p></td>
+										<td class="mr-2"><p class="tbl-hour w-160">{{info.avlinfo.friday.close}}</p></td>
 									</tr>
 									<tr> 
 										<td class="mr-2"><p class="tbl-head w-200">Saturday</p></td>
-										<td class="mr-2"><p class="tbl-hour w-200">{{info.avlinfo.saturday.start}}</p></td>
-										<td class="mr-2"><p class="tbl-hour w-200">{{info.avlinfo.saturday.close}}</p></td>
+										<td class="mr-2"><p class="tbl-hour w-160">{{info.avlinfo.saturday.start}}</p></td>
+										<td class="mr-2"><p class="tbl-hour w-160">{{info.avlinfo.saturday.close}}</p></td>
 									</tr>
 								</tbody>
 							</table>
