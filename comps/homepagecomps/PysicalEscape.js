@@ -19,7 +19,7 @@ const PysicalEscape=(props)=>{
              
              {props.city && 
               <>
-                <TitleSeparator title={'OTHER IN-PERSON GAMES in'+props.city+' '+props.state} color='golden-text' weight='font-bold'/>
+                <TitleSeparator title={'OTHER IN-PERSON GAMES in '+props.city+' '+props.state} color='golden-text' weight='font-bold'/>
               </>
             }
             {!props.city && 

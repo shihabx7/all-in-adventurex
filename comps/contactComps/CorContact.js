@@ -210,7 +210,9 @@ const CorContact=()=>{
                         //console.log(result.success)
                         if(result.success){
                             setIsSend(false)
-                            window.location.href = "/thank-you";
+                            window.location.replace( "/thank-you");
+                            
+                            
                             
                         }
                         else{
