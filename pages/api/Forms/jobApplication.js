@@ -102,8 +102,8 @@ var users = [
       try {
         await transporter.sendMail({
           from: "sender@allinadventures.com",
-         // to: "shihab.dgency@gmail.com",
-          to: "careers@allinadventures.com",
+          //to: "shihab.dgency@gmail.com",
+         to: "careers@allinadventures.com",
           bcc:"dgency.com@gmail.com,shihab.dgency@gmail.com",
           subject: `Job Application - ${retbody.info1.lName} ${retbody.info1.fName}`,
           html: `
@@ -126,13 +126,13 @@ var users = [
       } catch (error) {
         return res.status(500).json({ data: retbody,success:false,errors:error});
       }
-      fs.unlink(outpath, (err) => {
+    /*  fs.unlink(outpath, (err) => {
         if (err) {
             throw err;
         }
     
         console.log("Delete File successfully.");
-    });
+    });*/
     
     res.status(200).json({ data: retbody,success:true})
   }

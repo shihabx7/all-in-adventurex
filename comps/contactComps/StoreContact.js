@@ -249,7 +249,8 @@ const StoreContact=(props)=>{
                         //console.log(result.success)
                       if(result.success){
                         setIsSend(false)
-                        window.location.href = "/thank-you-store";
+                        window.location.replace( "/thank-you-store");
+                        //window.location.href = "/thank-you-store";
                        
                         }
                         else{

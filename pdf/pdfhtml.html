@@ -24,6 +24,7 @@
 			margin-top:0px;
 		}
 		.sub-title{
+			margin-top: 10px;
 			font-size: 15px;
 			color:#111111;
 			font-weight:600;
@@ -56,6 +57,9 @@
 		.mr-4{
 			margin-right:16px;
 		}
+	.pr-2{
+		padding-right:6px;
+	}
 		.tik{
 			font-weight: bold;
 			font-size: 18px;
@@ -63,6 +67,14 @@
 			height: 12px;
 			display: inline-block;
 			background: #232323;
+			
+		}
+		.tik-img{
+			
+			width:14px;
+		
+			display: inline-block;
+			
 			
 		}
 		.space-between{
@@ -212,10 +224,7 @@
 	</div>
 	<!-- ============Applicant availablity===============-->
 	<div class="container availablity mt">
-
-
-
-    	<h3 class="title">Availability</h3>
+		<h3 class="title">Availability</h3>
 		<div class="app-row flex-row item-center">
 			<p class="space-2 "><b>Availability start date:</b> {{info.avlinfo.avlStartDate}}</p>
 				
@@ -228,10 +237,29 @@
 				<tbody> 
 					<tr> 
 			
-						{{#ifCond info.avlinfo.avlToWork.tg '&&' 'true'}}<td class="mr-4"><span class="tik"></span > <span class="tik">Thanksgiving (week of) </span></td>{{/ifCond}} 
-						{{#ifCond info.avlinfo.avlToWork.cmp '&&' 'true'}}<td class="mr-4"><span class="tik"></span> <span class="tik">Christmas (week prior)</span</td>{{/ifCond}}
-						{{#ifCond info.avlinfo.avlToWork.cmo '&&' 'true'}}<td class="mr-4"><span class="tik"></span><span class="tik">Christmas (week of)</span</td> {{/ifCond}}
-						{{#ifCond info.avlinfo.avlToWork.none '&&' 'true'}}<td class="mr-2"><span class="tik"></span> <span class="tik">None</span</td>{{/ifCond}}
+						{{#ifCond info.avlinfo.avlToWork.tg '&&' 'true'}}
+							<td class="pr-4">
+									<span class="tik-img"><img width="100%" src="data:image/png;base64,{{tik}}" alt="Logo" /></span> 
+								<span class="mr-4">Thanksgiving (week of) </span>
+							</td>
+							{{/ifCond}} 
+						{{#ifCond info.avlinfo.avlToWork.cmp '&&' 'true'}}
+								<td class="pr-4">
+									<span class="tik-img"><img width="100%" src="data:image/png;base64,{{tik}}" alt="Logo" /></span> 
+									 <span class="mr-4">Christmas (week prior)</span>
+								</td>
+						{{/ifCond}}
+						{{#ifCond info.avlinfo.avlToWork.cmo '&&' 'true'}}
+								<td class="pr-4">
+									<span class="tik-img"><img width="100%" src="data:image/png;base64,{{tik}}" alt="Logo" /></span> 
+									<span class="mr-4">Christmas (week of)</span>
+								</td> 
+						{{/ifCond}}
+						{{#ifCond info.avlinfo.avlToWork.none '&&' 'true'}}
+						<td>
+							<span class="tik-img"><img width="100%" src="data:image/png;base64,{{tik}}" alt="Logo" /></span> 
+							<span>None</span></td>
+						{{/ifCond}}
 					</tr>
 				</tbody>
 			</table>
@@ -329,7 +357,7 @@
 			<table> 
 				<tbody> 
 					<tr> 
-						<td class="tbl-row-ttl"><p class="sub-title edu-sub mr-8">High School:</p></td>
+						<td class="tbl-row-ttl"><p class="sub-title edu-sub mr-8">College:</p></td>
 						<td>
 							<p><b>Institution Name</b> {{info.eduinfo.college.insname}}</p>
 							<p><b>Date of attended:</b> {{info.eduinfo.college.attendDate}}</p>

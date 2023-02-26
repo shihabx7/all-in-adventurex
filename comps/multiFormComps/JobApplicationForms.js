@@ -658,7 +658,7 @@ const [formErr,setFormErr]=useState({
             const result = await response.json()
 
             if(result.success==true){
-               window.location.href = "/thank-you-career";
+              window.location.replace( "/thank-you-career");
                 setIsSend(false)
                // console.log(result.data)
                   //  console.log(result.success)
@@ -680,7 +680,7 @@ const [formErr,setFormErr]=useState({
         else{
             setFormStep(5) 
         }
-        console.log(isSend)
+       // console.log(isSend)
         
     }
 // ==============================submit form end

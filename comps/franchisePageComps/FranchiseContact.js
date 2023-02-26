@@ -571,7 +571,8 @@ const FranchiseContactForm=()=>{
                        // console.log(result.success)
                         if(result.success){
                             setIsSend(false)
-                            window.location.href = "/thank-you-franchise";
+                            window.location.replace( "/thank-you-franchise");
+                            //window.location.href = "/thank-you-franchise";
                             
                         }
                         else{
