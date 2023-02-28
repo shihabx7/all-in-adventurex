@@ -103,28 +103,31 @@ if(check){
              setAvailability({...availability,avlToWork:{...availability.avlToWork,cmo:true}})
          } 
          if(checkval=='none'){
+            //console.log('none clicked')
+          
             setAvailability({...availability,avlToWork:{...availability.avlToWork,none:true}})
+           // console.log(availability.avlToWork)
         } 
     }
     else{
        
         if(checkval=='tg'){
             setAvailability({...availability,avlToWork:{...availability.avlToWork,tg:false}})
-            if( availability.avlToWork.cmp==false && availability.avlToWork.cmo==false){
+            if( availability.avlToWork.cmp==false && availability.avlToWork.cmo==false && availability.avlToWork.none==false){
                 setFormErrFlag(true)
                 setAvlErr({...avlErr,avlToWorkErr:true})
             }
         }
         if(checkval=='cmp'){
             setAvailability({...availability,avlToWork:{...availability.avlToWork,cmp:false}})
-            if(availability.avlToWork.tg==false &&  availability.avlToWork.cmo==false){
+            if(availability.avlToWork.tg==false &&  availability.avlToWork.cmo==false && availability.avlToWork.none==false){
                 setFormErrFlag(true)
                 setAvlErr({...avlErr,avlToWorkErr:true})
             }
         }
         if(checkval=='cmo'){
             setAvailability({...availability,avlToWork:{...availability.avlToWork,cmo:false}})
-            if(availability.avlToWork.tg==false && availability.avlToWork.cmp==false ){
+            if(availability.avlToWork.tg==false && availability.avlToWork.cmp==false && availability.avlToWork.none==false){
                 setFormErrFlag(true)
                 setAvlErr({...avlErr,avlToWorkErr:true})
             }
@@ -132,7 +135,7 @@ if(check){
         } 
         if(checkval=='none'){
             setAvailability({...availability,avlToWork:{...availability.avlToWork,none:false}})
-            if(availability.avlToWork.tg==false && availability.avlToWork.cmp==false ){
+            if(availability.avlToWork.tg==false && availability.avlToWork.cmp==false && availability.avlToWork.cmo==false ){
                 setFormErrFlag(true)
                 setAvlErr({...avlErr,avlToWorkErr:true})
             }
@@ -318,7 +321,7 @@ const checkOfferjob=(e)=>{
                                                         onChange={(e)=>checkAvltowork(e,'none')}
                                                         checked={availability.avlToWork.none==true? "checked":''}
                                                         value='none'
-                                                         id="cwo"/>
+                                                         id="none"/>
                                                          <label htmlFor="none" className="text-[#464646]">None</label> 
                                                         </div>
 
@@ -327,11 +330,11 @@ const checkOfferjob=(e)=>{
                                              
                                                      {
                                                         avlErr.avlToWorkErr &&  
-                                                        <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Check at least one option</p>
+                                                        <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Check at least one option </p>
                                                     }
                                                      {
-                                                        (prevFormErr && ((!availability.avlToWork.tg && !availability.avlToWork.cmp) && !availability.avlToWork.cmo)) &&
-                                                        <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Check at least one option</p>
+                                                        (prevFormErr && ((!availability.avlToWork.tg && !availability.avlToWork.cmp) && (!availability.avlToWork.cmo && !availability.avlToWork.none))) &&
+                                                        <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">Check at least one option </p>
                                                     }
                                          </div>
                         </div>

@@ -16,7 +16,7 @@ const About=()=>{
                 
                                              <div className="flex  lg:text-lg text-[#464646] mt-4 justify-between">
                                                 <div className="mt-[6px] -[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
-                                                 <div className="w-[92%]"><span className="font-medium">Escape room:</span> Can you and your friends make it out in time? The clock is ticking!</div>
+                                                 <div className="w-[92%]"><span className="font-medium">Escape Room:</span> Can you and your friends make it out in time? The clock is ticking!</div>
                                              </div>
                                              <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-2  justify-between">
                                                 <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
@@ -24,15 +24,15 @@ const About=()=>{
                                              </div>
                                              <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-2  justify-between">
                                                 <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
-                                                 <div className="w-[92%]"><span className="font-medium">Beat the Seat:</span> Can you beat the seat? Intense and challenging fun!</div>
+                                                 <div className="w-[92%]"><span className="font-medium">Beat The Seat:</span> Can you beat the seat? Intense and challenging fun!</div>
                                              </div>
                                              <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-2  justify-between">
                                                 <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
-                                                 <div className="w-[92%]"><span className="font-medium">Axe throwing:</span> What's the most fun form of stress release? Yup, axe throwing wins!</div>
+                                                 <div className="w-[92%]"><span className="font-medium">Axe Throwing:</span> What's the most fun form of stress release? Yup, axe throwing wins!</div>
                                              </div>
                                              <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-2  justify-between">
                                                 <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>
-                                                 <div className="w-[92%]"><span className="font-medium">Virtual Escape room:</span> Can you work virtually together as a team? Who can escape?</div>
+                                                 <div className="w-[92%]"><span className="font-medium">Virtual Escape Room:</span> Can you work virtually together as a team? Who can escape?</div>
                                              </div>
                                              <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-2  justify-between">
                                                 <div className="mt-[6px] w-[20px] lg:w-[24px]"><img  src="/assets/svg/star-bullet.svg"></img></div>

@@ -20,7 +20,7 @@ const CoreValue=()=>{
                                 <p className="text-[#938056]">#CORE VALUE</p>
                                 <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">BUILDING FOR EVERYONE</h3>
                                 <p className="lg:text-lg text-gray-700 mt-2 md:mt-4">Escape rooms have become super popular over the last couple of years.
-                                 As we've built all our facilities perfect for all ages and skill levels. People from all different ages and backgrounds have
+                                 We've built all our facilities perfect for all ages and skill levels. People from all different ages and backgrounds have
                                   found themselves enjoying the thrill and challenge of trying to escape one or more of our rooms.
                                 </p>
                         </div>

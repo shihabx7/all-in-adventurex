@@ -22,6 +22,7 @@ const FranchiseContactForm=()=>{
             schoiceCityErr:false,
             pTimeErr:false,
             otherFErr:false,
+            planForVentureErr:false
     })
     const [fieldVlue,setFieldValue]=useState({
         fName:'',
@@ -262,8 +263,8 @@ const FranchiseContactForm=()=>{
 
             const nworth=e.target.value.trim()
     
-            const namePatt=/^[0-9/,/./]*$/
-            if(nworth.length>2){
+            const namePatt=/^[a-zA-Z0-9,.-]*$/
+            if(nworth.length>0 && nworth.length<25){
                 if(!namePatt.test(nworth)){
                         setErr(true)
                         setFormErr({...formErr,netWorthErr:true})
@@ -292,8 +293,8 @@ const FranchiseContactForm=()=>{
 
             const lqAssets=e.target.value.trim()
     
-            const namePatt=/^[0-9/,/./]*$/
-            if(lqAssets.length>2){
+            const namePatt=/^[a-zA-Z0-9,.-]*$/
+            if(lqAssets.length>0 && lqAssets.length<25){
                 if(!namePatt.test(lqAssets)){
                         setErr(true)
                         setFormErr({...formErr,liqAssetErr:true})
@@ -484,15 +485,20 @@ const FranchiseContactForm=()=>{
      }
        // ========================================================plan for venture=================
     const getPlanForVenture=(e)=>{
-        const planV=e.target.value.trim()
+        const planV=escape(e.target.value.trim())
         if(planV.length>3){
-            setFieldValue({...fieldVlue,planForVenture:escape(planV)})
+            setFieldValue({...fieldVlue,planForVenture:planV})
+            setErr(false)
+            setFormErr({...formErr,planForVentureErr:false})
             e.target.classList.remove("focus-red")
             e.target.classList.add("focus-green")
             
             
         }
         else{
+            setErr(true)
+            setFormErr({...formErr,planForVentureErr:true})
+            setFieldValue({...fieldVlue,planForVentureErr:''})
             e.target.classList.remove("focus-green")
             e.target.classList.add("focus-red")
         }
@@ -830,16 +836,20 @@ const FranchiseContactForm=()=>{
                                                  <div className="form-row flex justify-between my-4 ">
                                                    
                                                    <div className="form-col w-full">
-                                                       <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What is your plan for funding a venture of this nature? </p>
+                                                       <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What is your plan for funding a venture of this nature? * </p>
                                                      
                                                        <textarea
                                                        id="fplan" 
                                                        name="flan"
                                                        onChange={(e)=>getPlanForVenture(e)} 
                                                         className="w-full h-[100px] md:h-[120px] event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
-                                                        placeholder="Write your plan here"> 
+                                                        placeholder="Write your plan here" required> 
 
                                                        </textarea>
+                                                       {
+                                                                     formErr.planForVentureErr &&
+                                                                    <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr ">This field must not be empty. (3-260 character allowed)</p>
+                                                                     }
                                                    </div>
                                                </div>
                                                {/*======================================contact form row What is your plan for funding a venture of this nature?====================== */}
@@ -865,13 +875,13 @@ const FranchiseContactForm=()=>{
                                                                     }
                                                                 </div>
                                                                 <div className="form-col md:w-[49%] lg:w-[49%]">
-                                                                    <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Your preferred state to open a new venue?</p>
+                                                                    <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Your preferred state to open a new venue? *</p>
                                                                     <select type="text"
                                                                              id="pstate" 
                                                                              name="pstate"
                                                                              onChange={(e)=>pState(e)}
                                                                              className="w-full event-input text-gray-700  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
-                                                                              >
+                                                                             required >
                                                                                 <option value="">Select preferred state</option>
                                                                                 <option value="Alabama">Alabama</option>
                                                                                 <option value="Alaska">Alaska</option>
@@ -937,13 +947,13 @@ const FranchiseContactForm=()=>{
                                                 {/*======================================contact form first choice/second choice===================== */}
                                                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between my-4 ">
                                                                 <div className="form-col md:w-[49%] lg:w-[49%]">
-                                                                    <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Do you have a first choice city/town in mind?</p>
+                                                                    <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Do you have a first choice city/town in mind? *</p>
                                                                     <input type="text"
                                                                     id="fchoice" 
                                                                     name="fchoice"
                                                                     onChange={(e)=>fchoiceCity(e)} 
                                                                      className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
-                                                                      placeholder="City/Town">
+                                                                      placeholder="City/Town" required>
 
                                                                       </input>
                                                                       {
@@ -952,13 +962,13 @@ const FranchiseContactForm=()=>{
                                                                     }
                                                                 </div>
                                                                 <div className="form-col md:w-[49%] lg:w-[49%]">
-                                                                    <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Do you have a second choice, if your first isn't available?</p>
+                                                                    <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Do you have a second choice, if your first isn't available? *</p>
                                                                     <input type="text"
                                                                         id="schoice" 
                                                                         name="schoice"
                                                                         onChange={(e)=>schoiceCity(e)} 
                                                                          className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
-                                                                         placeholder="City/Town">
+                                                                         placeholder="City/Town" required>
 
                                                                       </input>
                                                                           {
@@ -1011,7 +1021,7 @@ const FranchiseContactForm=()=>{
                                                 <div className="form-row flex justify-between my-4 ">
                                                    
                                                    <div className="form-col w-full">
-                                                       <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Tell us a little about your operations plan?</p>
+                                                       <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Tell us a little about your operations plan? *</p>
                                                      
                                                        <textarea 
                                                         id="oplan" 
@@ -1019,7 +1029,7 @@ const FranchiseContactForm=()=>{
                                                         onChange={(e)=>getOpPlan(e)} 
                                                         className="w-full h-[100px] md:h-[120px]  event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                                                         placeholder="Write your operations plan here"
-                                                        > 
+                                                        required> 
 
                                                        </textarea>
                                                    </div>
@@ -1029,14 +1039,14 @@ const FranchiseContactForm=()=>{
                                                 <div className="form-row flex justify-between my-4 ">
                                                    
                                                    <div className="form-col w-full">
-                                                       <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Tell us about your other professional/relevant experiences?</p>
+                                                       <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Tell us about your other professional/relevant experiences? *</p>
                                                      
                                                        <textarea
                                                         id="oExp" 
                                                         name="oExp"
                                                         onChange={(e)=>getProfExp(e)} 
                                                         className="w-full h-[100px] md:h-[120px]  event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
-                                                        placeholder="Write about your experiences here"> 
+                                                        placeholder="Write about your experiences here" required> 
 
                                                        </textarea>
                                                    </div>
@@ -1046,14 +1056,14 @@ const FranchiseContactForm=()=>{
                                                <div className="form-row flex justify-between my-4 ">
                                                    
                                                    <div className="form-col w-full">
-                                                       <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What do you believe will make you a great ALL IN ADVENTURES franchisee?</p>
+                                                       <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What do you believe will make you a great ALL IN ADVENTURES franchisee? *</p>
                                                      
                                                        <textarea 
                                                        id="oExp" 
                                                        name="oExp"
                                                        onChange={(e)=>getUrBlv(e)} 
                                                        className="w-full h-[100px] md:h-[120px]  event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
-                                                       placeholder="Write your message here"> 
+                                                       placeholder="Write your message here" required> 
 
                                                        </textarea>
                                                    </div>

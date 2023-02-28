@@ -151,11 +151,11 @@ const JobApplicationForms=(props)=>{
         for (const key in availability) { 
             if(key=='avlToWork'){
                 for(const k in availability.avlToWork){
-                    if(availability.avlToWork[k]==''){
+                    if(availability.avlToWork[k]==false){
                         emptyavlw=emptyavlw+1
                     } 
                 }
-                if(emptyavlw==3){
+                if(emptyavlw==4){
                     emptycount=emptycount+1
                 }
             }
@@ -222,10 +222,14 @@ const JobApplicationForms=(props)=>{
             }
             
         } 
+        //console.log(emptyavlw)
+       // console.log(availability.avlToWork)
+        
         //console.log(emptycount)
         if(emptycount!=0){
             return false
         }
+       
         return true
      }
 // ===================applicant availablity data set end
