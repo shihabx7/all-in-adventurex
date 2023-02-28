@@ -23,7 +23,7 @@ export default async function jobApplicationHandler(req, res) {
           //contents: '<div style="background:#FFF7EA;"><p style="margin:0px;">Job application form</p> <p style="margin:4px; color:#888888">'+pdt+'</p></div>'
       },
       footer: {
-          height: "4mm",
+          height: "2mm",
         //  contents: {
         // //     first: '',
         //      2: '', // Any page number is working. 1-based index

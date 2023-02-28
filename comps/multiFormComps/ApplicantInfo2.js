@@ -19,7 +19,7 @@ const escape=(htmlStr)=> {
     return htmlStr.replace(/&/g, "and")
           .replace(/</g, " ")
           .replace(/>/g, " ")
-          .replace(/(?:\r\n|\r|\n)/g, '<br>');
+          //.replace(/(?:\r\n|\r|\n)/g, '<br>');
                  
  
  }
