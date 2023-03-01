@@ -814,10 +814,337 @@ const albanyRed=[
       
       ]
    // =========================================-------------kingston-ma  MA
+   // =========================================-------------n-attleborough-ma MA 
+   const nAttleboroughRed=[
+
+    {
+      source: '/locations/n-attleborough-ma/events',
+       destination: '/n-attleborough-ma/events',
+       permanent: prm,
+     },
+     {
+      source: '/rooms/category/n-attleborough-ma',
+       destination: '/n-attleborough-ma/activities',
+       permanent: prm,
+     },
+     
+     {
+      source: '/rooms/treasure-island-n-attleborough-ma',
+       destination: '/n-attleborough-ma/activities/treasure-island',
+       permanent: prm,
+     },
+     {
+      source: '/rooms/superheros-adventure-n-attleborough-ma',
+       destination: '/n-attleborough-ma/activities/superheros-adventure',
+       permanent: prm,
+     },
+    
+    
+     {
+      source: '/rooms/zombie-apocalypse-n-attleborough-ma',
+       destination: '/n-attleborough-ma/activities/zombie-apocalypse',
+       permanent: prm,
+     },
+     {
+      source: '/rooms/special-agent-n-attleborough-ma',
+       destination: '/n-attleborough-ma/activities/special-agent',
+       permanent: prm,
+     },
+     {
+      source: '/rooms/hollywood-premiere-n-attleborough-ma',
+       destination: '/n-attleborough-ma/activities/hollywood-premiere',
+       permanent: prm,
+     },
+     {
+      source: '/rooms/sherlocks-library-n-attleborough-ma',
+       destination: '/n-attleborough-ma/activities/sherlocks-library',
+       permanent: prm,
+     },
+     {
+      source: '/rooms/houdinis-magic-cell-n-attleborough-ma',
+       destination: '/n-attleborough-ma/activities/houdinis-magic-cell',
+       permanent: prm,
+     },
+     {
+      source: '/rooms/black-ops-n-attleborough-ma',
+       destination: '/n-attleborough-ma/activities/black-ops',
+       permanent: prm,
+     },
+     {
+      source: '/rooms/escape-from-alcatraz-n-attleborough-ma',
+       destination: '/n-attleborough-ma/activities/escape-from-alcatraz',
+       permanent: prm,
+     },
+     
+    
+    ]
+ // =========================================-------------n-attleborough-ma  MA
+ // =========================================-------------milford-ct CT 
+ const milfordRed=[
+
+  {
+    source: '/locations/milford-ct/events',
+     destination: '/milford-ct/events',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/category/milford-ct',
+     destination: '/milford-ct/activities',
+     permanent: prm,
+   },
+   
+   {
+    source: '/rooms/treasure-island-milford-ct',
+     destination: '/milford-ct/activities/treasure-island',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/superheros-adventure-milford-ct',
+     destination: '/milford-ct/activities/superheros-adventure',
+     permanent: prm,
+   },
+  
+  
+   {
+    source: '/rooms/zombie-apocalypse-milford-ct',
+     destination: '/milford-ct/activities/zombie-apocalypse',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/special-agent-milford-ct',
+     destination: '/milford-ct/activities/special-agent',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/hollywood-premiere-milford-ct',
+     destination: '/milford-ct/activities/hollywood-premiere',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/sherlocks-library-milford-ct',
+     destination: '/milford-ct/activities/sherlocks-library',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/houdinis-magic-cell-milford-ct',
+     destination: '/milford-ct/activities/houdinis-magic-cell',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-milford-ct',
+     destination: '/milford-ct/activities/black-ops',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/escape-from-alcatraz-milford-ct',
+     destination: '/milford-ct/activities/escape-from-alcatraz',
+     permanent: prm,
+   },
+   
+  
+  ]
+// =========================================-------------milford-ct  CT
+// =========================================-------------manchester-ct CT 
+const manchesterRed=[
+
+  {
+    source: '/locations/manchester-ct/events',
+     destination: '/manchester-ct/events',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/category/manchester-ct',
+     destination: '/manchester-ct/activities',
+     permanent: prm,
+   },
+   
+   {
+    source: '/rooms/treasure-island-manchester-ct',
+     destination: '/manchester-ct/activities/treasure-island',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/superheros-adventure-manchester-ct',
+     destination: '/manchester-ct/activities/superheros-adventure',
+     permanent: prm,
+   },
+  
+  
+   {
+    source: '/rooms/zombie-apocalypse-manchester-ct',
+     destination: '/manchester-ct/activities/zombie-apocalypse',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/special-agent-manchester-ct',
+     destination: '/manchester-ct/activities/special-agent',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/hollywood-premiere-manchester-ct',
+     destination: '/manchester-ct/activities/hollywood-premiere',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/sherlocks-library-manchester-ct',
+     destination: '/manchester-ct/activities/sherlocks-library',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/houdinis-magic-cell-manchester-ct',
+     destination: '/manchester-ct/activities/houdinis-magic-cell',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-manchester-ct',
+     destination: '/manchester-ct/activities/black-ops',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/escape-from-alcatraz-manchester-ct',
+     destination: '/manchester-ct/activities/escape-from-alcatraz',
+     permanent: prm,
+   },
+   
+  
+  ]
+// =========================================-------------manchester-ct  CT
+// =========================================-------------waterbury-ct CT 
+const waterburyRed=[
+
+  {
+    source: '/locations/waterbury-ct/events',
+     destination: '/waterbury-ct/events',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/category/waterbury-ct',
+     destination: '/waterbury-ct/activities',
+     permanent: prm,
+   },
+   
+   {
+    source: '/rooms/treasure-island-waterbury-ct',
+     destination: '/waterbury-ct/activities/treasure-island',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/superheros-adventure-waterbury-ct',
+     destination: '/waterbury-ct/activities/superheros-adventure',
+     permanent: prm,
+   },
+  
+  
+   {
+    source: '/rooms/zombie-apocalypse-waterbury-ct',
+     destination: '/waterbury-ct/activities/zombie-apocalypse',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/special-agent-waterbury-ct',
+     destination: '/waterbury-ct/activities/special-agent',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/hollywood-premiere-waterbury-ct',
+     destination: '/waterbury-ct/activities/hollywood-premiere',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/sherlocks-library-waterbury-ct',
+     destination: '/waterbury-ct/activities/sherlocks-library',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/houdinis-magic-cell-waterbury-ct',
+     destination: '/waterbury-ct/activities/houdinis-magic-cell',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-waterbury-ct',
+     destination: '/waterbury-ct/activities/black-ops',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/escape-from-alcatraz-waterbury-ct',
+     destination: '/waterbury-ct/activities/escape-from-alcatraz',
+     permanent: prm,
+   },
+   
+  
+  ]
+// =========================================-------------waterbury-ct  CT
+// =========================================-------------east-brunswick-nj NJ 
+const eastBrunswickRed=[
+
+  {
+    source: '/locations/east-brunswick-nj/events',
+     destination: '/east-brunswick-nj/events',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/category/east-brunswick-nj',
+     destination: '/east-brunswick-nj/activities',
+     permanent: prm,
+   },
+   
+   {
+    source: '/rooms/treasure-island-east-brunswick-nj',
+     destination: '/east-brunswick-nj/activities/treasure-island',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/superheros-adventure-east-brunswick-nj',
+     destination: '/east-brunswick-nj/activities/superheros-adventure',
+     permanent: prm,
+   },
+  
+  
+   {
+    source: '/rooms/zombie-apocalypse-east-brunswick-nj',
+     destination: '/east-brunswick-nj/activities/zombie-apocalypse',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/special-agent-east-brunswick-nj',
+     destination: '/east-brunswick-nj/activities/special-agent',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/hollywood-premiere-east-brunswick-nj',
+     destination: '/east-brunswick-nj/activities/hollywood-premiere',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/sherlocks-library-east-brunswick-nj',
+     destination: '/east-brunswick-nj/activities/sherlocks-library',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/houdinis-magic-cell-east-brunswick-nj',
+     destination: '/east-brunswick-nj/activities/houdinis-magic-cell',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-east-brunswick-nj',
+     destination: '/east-brunswick-nj/activities/black-ops',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/escape-from-alcatraz-east-brunswick-nj',
+     destination: '/east-brunswick-nj/activities/escape-from-alcatraz',
+     permanent: prm,
+   },
+   
+  
+  ]
+// =========================================-------------east-brunswick-nj  NJ
     
 
  const allRed=[...gnRed,...albanyRed,...buffaloRed,...middletownRed,...syracuseRed,...watertownRed,
-                ...westnykRed,...raleighRed,...bensalemRed,...holyokeRed,...hadleyRed,...kingstonRed]
+                ...westnykRed,...raleighRed,...bensalemRed,...holyokeRed,...hadleyRed,...kingstonRed,
+              ...nAttleboroughRed,...milfordRed,...manchesterRed,...waterburyRed,...eastBrunswickRed]
+
 module.exports = {
  
 
