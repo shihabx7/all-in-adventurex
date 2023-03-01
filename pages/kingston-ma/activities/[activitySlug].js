@@ -67,7 +67,7 @@ const LocSingleActivity=(props)=>{
 export default LocSingleActivity
 
 export const getStaticPaths=async()=>{
-    const res= await getLocationActivitySlugList("holyoke-ma");
+    const res= await getLocationActivitySlugList("kingston-ma");
   
     const paths=res.map(activityurlslug=>{
             return {
