@@ -683,7 +683,7 @@ const FranchiseContactForm=()=>{
                                                {/*======================================contact form row select state====================== */}
                                                <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between ">
                                                     <div className="form-col w-full md:w-[49%] lg:w-[49%]">
-                                                        <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">City* </p>
+                                                        <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">City * </p>
                                                         <input type="text"
                                                          onChange={(e)=>checkCity(e)} 
                                                          name="city"
@@ -697,7 +697,7 @@ const FranchiseContactForm=()=>{
                                                              }
                                                     </div>
                                                     <div className="form-col w-full md:w-[49%] lg:w-[49%]">
-                                                        <p className=" mb-1 lg:text-lg  evevt-input-label text-[#313030]">State* </p>
+                                                        <p className=" mb-1 lg:text-lg  evevt-input-label text-[#313030]">State * </p>
                                                         <select type="text"
                                                         name="state"
                                                         id="state"
@@ -773,7 +773,7 @@ const FranchiseContactForm=()=>{
                                                 <div className="form-row flex justify-between my-4 ">
                                                    
                                                     <div className="form-col w-full">
-                                                        <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Address*</p>
+                                                        <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Address *</p>
                                                         <input type="text"
                                                          id="address" 
                                                          name="address"
@@ -800,7 +800,7 @@ const FranchiseContactForm=()=>{
                                                         {/*======================================contact form row What's your current net worth?===================== */}
                                                             <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between ">
                                                                 <div className="form-col md:w-[49%] lg:w-[49%]">
-                                                                    <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Your current net worth?*</p>
+                                                                    <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Your current net worth? *</p>
                                                                     <input type="text"
                                                                         id="address" 
                                                                         name="address"
@@ -816,7 +816,7 @@ const FranchiseContactForm=()=>{
                                                           
                                                                 </div>
                                                                 <div className="form-col md:w-[49%] lg:w-[49%]">
-                                                                    <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Your current liquid assets (investor/loaned)?*</p>
+                                                                    <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Your current liquid assets (investor/loaned)? *</p>
                                                                     <input type="text"
                                                                         id="address" 
                                                                         name="address"
@@ -857,7 +857,7 @@ const FranchiseContactForm=()=>{
                                                 {/*======================================contact form Have you visited ?===================== */}
                                                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between my-4">
                                                                 <div className="form-col md:w-[49%] lg:w-[49%]">
-                                                                    <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Have you visited an ALL IN ADVENTURES before?*</p>
+                                                                    <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">Have you visited an ALL IN ADVENTURES before? *</p>
                                                                     <select 
                                                                     id="vsitaia" 
                                                                     name="vsitaia"
@@ -982,7 +982,7 @@ const FranchiseContactForm=()=>{
                                                 {/*======================================contact form preferred timeframe?===================== */}
                                                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between my-4">
                                                                 <div className="form-col md:w-[49%] lg:w-[49%]">
-                                                                    <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">What is your preferred timeframe?*</p>
+                                                                    <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">What is your preferred timeframe? *</p>
                                                                     <input type="date"
                                                                      id="schoice" 
                                                                      name="schoice"
@@ -996,7 +996,7 @@ const FranchiseContactForm=()=>{
                                                                         }
                                                                 </div>
                                                                 <div className="form-col md:w-[49%] lg:w-[49%]">
-                                                                    <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Do you have any involvement with other franchisees?*</p>
+                                                                    <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Do you have any involvement with other franchisees? *</p>
                                                                     <select 
                                                                     id="schoice" 
                                                                     name="schoice"

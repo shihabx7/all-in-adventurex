@@ -29,12 +29,12 @@ export const getBlogHomePageData=()=>{
         "recentblogs":[
             {
                 "id":"1",
-                "slug":"why-you-should-book-the-escape-game-for-your-company",
-                "ftimg":"/assets/blogs/blog-ft.jpg",
-                "title":"What kind of leaf is this?",
-                "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+                "slug":"can-you-do-an-escape-room-as-a-couple",
+                "ftimg":"/assets/blogs/CAN-YOU-DO-AN-ESCAPE-ROOM-AS-A-COUPLE.jpg",
+                "title":"CAN YOU DO AN ESCAPE ROOM AS A COUPLE?",
+                "blogdesc":"Looking for something better than the typical dinner and a movie? It might be time to do something more exciting than usual, shed out and experience something different. Escape room for couples is a wonderful idea to make date night more exciting.",
                 "authimg":"assets/blogs/blog-auth1.png",
-                "authname":"by Brian Capps",
+                "authname":"Brian Capps",
                 "blogcategory":[
                     {
                         "id":"1",
@@ -48,16 +48,16 @@ export const getBlogHomePageData=()=>{
                     },
                 
                 ],
-                "lastupdate":"April 02, 2022"
+                "lastupdate":"March 02, 2023"
             },
             {
                 "id":"2",
-                "slug":"why-you-should-book-the-escape-game-for-your-company",
-                "ftimg":"/assets/blogs/blog-ft.jpg",
-                "title":"1. What kind of leaf is this What kind of leaf is this?",
-                "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+                "slug":"what-makes-a-good-escape-room",
+                "ftimg":"/assets/blogs/WHAT-MAKES-A-GOOD-ESCAPE-ROOM.jpg",
+                "title":"WHAT MAKES A GOOD ESCAPE ROOM?",
+                "blogdesc":"A lot goes into designing a successful escape room experience, from the story and outlook of the set to the fluidity and difficulty level of clues and puzzles in the game.",
                 "authimg":"assets/blogs/blog-auth1.png",
-                "authname":"by Brian Capps",
+                "authname":"Brian Capps",
                 "blogcategory":[
                     {
                         "id":"1",
@@ -71,7 +71,7 @@ export const getBlogHomePageData=()=>{
                     },
                 
                 ],
-                "lastupdate":"May 18, 2022"
+                "lastupdate":"March 02, 2023"
             },
            
     
@@ -79,9 +79,9 @@ export const getBlogHomePageData=()=>{
         "popularblogs":[
             {
                 "id":"1",
-                "slug":"why-you-should-book-the-escape-game-for-your-company",
+                "slug":"why-are-escape-rooms-so-popular",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
-                "title":"What kind of leaf is this?",
+                "title":"WHY ARE ESCAPE ROOMS SO POPULAR?",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
                 "authimg":"assets/blogs/blog-auth1.png",
                 "authname":"by Brian Capps",
@@ -102,9 +102,9 @@ export const getBlogHomePageData=()=>{
             },
             {
                 "id":"2",
-                "slug":"why-you-should-book-the-escape-game-for-your-company",
+                "slug":"how-to-improve-your-chances-of-escaping-an-escape-room",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
-                "title":"1. What kind of leaf is this What kind of leaf is this?",
+                "title":"HOW TO IMPROVE YOUR CHANCES OF ESCAPING AN ESCAPE ROOM?",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
                 "authimg":"assets/blogs/blog-auth1.png",
                 "authname":"by Brian Capps",
@@ -125,9 +125,9 @@ export const getBlogHomePageData=()=>{
             },
             {
                 "id":"3",
-                "slug":"why-you-should-book-the-escape-game-for-your-company",
+                "slug":"the-most-common-escape-room-mistakes",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
-                "title":"What kind of leaf is this?",
+                "title":"THE MOST COMMON ESCAPE ROOM MISTAKES",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
                 "authimg":"assets/blogs/blog-auth1.png",
                 "authname":"by Brian Capps",
@@ -148,9 +148,9 @@ export const getBlogHomePageData=()=>{
             },
             {
                 "id":"4",
-                "slug":"why-you-should-book-the-escape-game-for-your-company",
+                "slug":"everything-you-need-to-know-before-playing-an-escape-room",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
-                "title":"1. What kind of leaf is this What kind of leaf is this?",
+                "title":"EVERYTHING YOU NEED TO KNOW BEFORE PLAYING AN ESCAPE ROOM",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
                 "authimg":"assets/blogs/blog-auth1.png",
                 "authname":"by Brian Capps",
@@ -175,9 +175,9 @@ export const getBlogHomePageData=()=>{
         "allblogs":[
             {
                 "id":"1",
-                "slug":"why-you-should-book-the-escape-game-for-your-company",
+                "slug":"why-are-escape-rooms-so-popular",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
-                "title":"What kind of leaf is this?",
+                "title":"WHY ARE ESCAPE ROOMS SO POPULAR?",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
                 "authimg":"assets/blogs/blog-auth1.png",
                 "authname":"by Brian Capps",
@@ -198,9 +198,9 @@ export const getBlogHomePageData=()=>{
             },
             {
                 "id":"2",
-                "slug":"why-you-should-book-the-escape-game-for-your-company",
+                "slug":"the-most-common-escape-room-mistakes",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
-                "title":"1. What kind of leaf is this What kind of leaf is this?",
+                "title":"THE MOST COMMON ESCAPE ROOM MISTAKES",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
                 "authimg":"assets/blogs/blog-auth1.png",
                 "authname":"by Brian Capps",
@@ -221,9 +221,9 @@ export const getBlogHomePageData=()=>{
             },
             {
                 "id":"3",
-                "slug":"why-you-should-book-the-escape-game-for-your-company",
+                "slug":"how-to-improve-your-chances-of-escaping-an-escape-room",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
-                "title":"What kind of leaf is this?",
+                "title":"HOW TO IMPROVE YOUR CHANCES OF ESCAPING AN ESCAPE ROOM?",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
                 "authimg":"assets/blogs/blog-auth1.png",
                 "authname":"by Brian Capps",
@@ -244,9 +244,9 @@ export const getBlogHomePageData=()=>{
             },
             {
                 "id":"4",
-                "slug":"why-you-should-book-the-escape-game-for-your-company",
+                "slug":"how-escape-rooms-help-communication",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
-                "title":"1. What kind of leaf is this What kind of leaf is this?",
+                "title":"HOW ESCAPE ROOMS HELP COMMUNICATION",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
                 "authimg":"assets/blogs/blog-auth1.png",
                 "authname":"by Brian Capps",

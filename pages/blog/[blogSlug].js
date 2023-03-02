@@ -31,7 +31,7 @@ const SingleBlog=(props)=>{
         const btitle=titlefres.split(' ').map((word)=>{return (word.charAt(0).toUpperCase() + word.slice(1))}).join(" ") // breadcum title capitalize
         var bret=btitle 
         if(bret.length>15){
-            bret=bret.substring(0, 15).trim()+"..."
+            bret=bret.substring(0, 20).trim()+"..."
         }
           return (
             
@@ -76,7 +76,7 @@ const SingleBlog=(props)=>{
               <div className="flex sbl-content flex-col md:flex-row justify-between space-x-0 space-y-2 md:space-y-0 md:space-x-8 lg:space-x-12"> 
                 <div className="sbl-main max-w-[700px]"> 
                 <BlogInfo bloginfo={props.bloginfo}/>
-                  <SingleBlogContent blogdesc={props.blogdesc}/>
+                  <SingleBlogContent blogdesc={props.blogdesc} pagedata={props.pagedata}/>
                 </div>
                 <div className="sbl-sidebar md:h-screen md:sticky md:top-10">
                 <BlogSideBar/>

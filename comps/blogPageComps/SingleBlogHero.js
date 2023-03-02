@@ -14,7 +14,8 @@ const SingleBlogHero=(props)=>{
      <div className='sbl-home-hero-holder '> 
         
         <div className='max-w-7xl  mx-auto px-4 pt-8 pb-12 md:pt-12 md:pb-20 lg:pt-16 lg:pb-24 relative z-20'>
-            <div className="blog-share-btn-cont fixed top-[300px]  z-20"> 
+          {/* =============================share btn=========================================== */}
+            <div className="blog-share-btn-cont fixed top-[300px]  z-20 hidden md:block"> 
                 <div className="bg-[#fbf0d9] p-3 flex flex-col space-y-1"> 
                     <div className="share-item"> 
                     <FacebookShareButton
@@ -38,6 +39,7 @@ const SingleBlogHero=(props)=>{
                     </div>
                 </div>
             </div>
+             {/* =============================share btn=========================================== */}
             <div className="page-benar-info"> 
             
            

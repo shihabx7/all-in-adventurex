@@ -1139,11 +1139,448 @@ const eastBrunswickRed=[
   
   ]
 // =========================================-------------east-brunswick-nj  NJ
+// =========================================-------------rockaway-nj NJ 
+const rockawayRed=[
+
+  {
+    source: '/locations/rockaway-nj/events',
+     destination: '/rockaway-nj/events',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/category/rockaway-nj',
+     destination: '/rockaway-nj/activities',
+     permanent: prm,
+   },
+
+{
+    source: '/locations/rockaway-nj/rockaway-events',
+     destination: '/rockaway-nj/events',
+     permanent: prm,
+   },
+{
+    source: '/rooms/game-show-room-rockaway-nj',
+     destination: '/rockaway-nj/activities/game-show-room',
+     permanent: prm,
+   },
+   
+   {
+    source: '/rooms/treasure-island-rockaway-nj',
+     destination: '/rockaway-nj/activities/treasure-island',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/superheros-adventure-rockaway-nj',
+     destination: '/rockaway-nj/activities/superheros-adventure',
+     permanent: prm,
+   },
+  
+  
+   {
+    source: '/rooms/zombie-apocalypse-rockaway-nj',
+     destination: '/rockaway-nj/activities/zombie-apocalypse',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/special-agent-rockaway-nj',
+     destination: '/rockaway-nj/activities/special-agent',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/hollywood-premiere-rockaway-nj',
+     destination: '/rockaway-nj/activities/hollywood-premiere',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/sherlocks-library-rockaway-nj',
+     destination: '/rockaway-nj/activities/sherlocks-library',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/houdinis-magic-cell-rockaway-nj',
+     destination: '/rockaway-nj/activities/houdinis-magic-cell',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-rockaway-nj',
+     destination: '/rockaway-nj/activities/black-ops',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/escape-from-alcatraz-rockaway-nj',
+     destination: '/rockaway-nj/activities/escape-from-alcatraz',
+     permanent: prm,
+   },
+   
+  
+  ]
+// =========================================-------------rockaway-nj  NJ
+// =========================================-------------woodbridge-nj NJ 
+const woodbridgeRed=[
+
+  {
+    source: '/locations/woodbridge-nj/events',
+     destination: '/woodbridge-nj/events',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/category/woodbridge-nj',
+     destination: '/woodbridge-nj/activities',
+     permanent: prm,
+   },
+
+{
+    source: '/locations/woodbridge-nj/woodbridge-events',
+     destination: '/woodbridge-nj/events',
+     permanent: prm,
+   },
+
+   
+   {
+    source: '/rooms/treasure-island-woodbridge-nj',
+     destination: '/woodbridge-nj/activities/treasure-island',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/superheros-adventure-woodbridge-nj',
+     destination: '/woodbridge-nj/activities/superheros-adventure',
+     permanent: prm,
+   },
+  
+  
+   {
+    source: '/rooms/zombie-apocalypse-woodbridge-nj',
+     destination: '/woodbridge-nj/activities/zombie-apocalypse',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/special-agent-woodbridge-nj',
+     destination: '/woodbridge-nj/activities/special-agent',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/hollywood-premiere-woodbridge-nj',
+     destination: '/woodbridge-nj/activities/hollywood-premiere',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/sherlocks-library-woodbridge-nj',
+     destination: '/woodbridge-nj/activities/sherlocks-library',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/houdinis-magic-cell-woodbridge-nj',
+     destination: '/woodbridge-nj/activities/houdinis-magic-cell',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-woodbridge-nj',
+     destination: '/woodbridge-nj/activities/black-ops',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/escape-from-alcatraz-woodbridge-nj',
+     destination: '/woodbridge-nj/activities/escape-from-alcatraz',
+     permanent: prm,
+   },
+   
+  
+  ]
+// =========================================-------------woodbridge-nj  NJ
+// =========================================-------------bowie-md MD 
+const bowieRed=[
+
+  {
+    source: '/locations/bowie-md/events',
+     destination: '/bowie-md/events',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/category/bowie-md',
+     destination: '/bowie-md/activities',
+     permanent: prm,
+   },
+
+
+{
+    source: '/rooms/game-show-room-bowie-md',
+     destination: '/bowie-md/activities/game-show-room',
+     permanent: prm,
+   },
+   
+   {
+    source: '/rooms/treasure-island-bowie-md',
+     destination: '/bowie-md/activities/treasure-island',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/superheros-adventure-bowie-md',
+     destination: '/bowie-md/activities/superheros-adventure',
+     permanent: prm,
+   },
+  
+  
+   {
+    source: '/rooms/zombie-apocalypse-bowie-md',
+     destination: '/bowie-md/activities/zombie-apocalypse',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/special-agent-bowie-md',
+     destination: '/bowie-md/activities/special-agent',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/hollywood-premiere-bowie-md',
+     destination: '/bowie-md/activities/hollywood-premiere',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/sherlocks-library-bowie-md',
+     destination: '/bowie-md/activities/sherlocks-library',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/houdinis-magic-cell-bowie-md',
+     destination: '/bowie-md/activities/houdinis-magic-cell',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-bowie-md',
+     destination: '/bowie-md/activities/black-ops',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/escape-from-alcatraz-bowie-md',
+     destination: '/bowie-md/activities/escape-from-alcatraz',
+     permanent: prm,
+   },
+   
+  
+  ]
+// =========================================-------------bowie-md  MD
+// =========================================-------------white-marsh-md MD 
+const whitemarshRed=[
+
+  {
+    source: '/locations/white-marsh-md/events',
+     destination: '/white-marsh-md/events',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/category/white-marsh-md',
+     destination: '/white-marsh-md/activities',
+     permanent: prm,
+   },
+
+{
+    source: '/locations/white-marsh-md/white-marsh-events',
+     destination: '/white-marsh-md/events',
+     permanent: prm,
+   },
+
+   
+   {
+    source: '/rooms/treasure-island-white-marsh',
+     destination: '/white-marsh-md/activities/treasure-island',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/superheros-adventure-white-marsh',
+     destination: '/white-marsh-md/activities/superheros-adventure',
+     permanent: prm,
+   },
+  
+  
+   {
+    source: '/rooms/zombie-apocalypse-white-marsh',
+     destination: '/white-marsh-md/activities/zombie-apocalypse',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/special-agent-white-marsh',
+     destination: '/white-marsh-md/activities/special-agent',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/hollywood-premiere-white-marsh',
+     destination: '/white-marsh-md/activities/hollywood-premiere',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/sherlocks-library-white-marsh',
+     destination: '/white-marsh-md/activities/sherlocks-library',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/houdinis-magic-cell-white-marsh',
+     destination: '/white-marsh-md/activities/houdinis-magic-cell',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-white-marsh',
+     destination: '/white-marsh-md/activities/black-ops',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/escape-from-alcatraz-white-marsh',
+     destination: '/white-marsh-md/activities/escape-from-alcatraz',
+     permanent: prm,
+   },
+   
+  
+  ]
+// =========================================-------------white-marsh-md  MD
+// =========================================-------------roanoke-va VA 
+const roanokeRed=[
+
+  {
+    source: '/locations/roanoke-va/events',
+     destination: '/roanoke-va/events',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/category/roanoke-va',
+     destination: '/roanoke-va/activities',
+     permanent: prm,
+   },
+
+
+{
+    source: '/rooms/game-show-room-roanoke-va',
+     destination: '/roanoke-va/activities/game-show-room',
+     permanent: prm,
+   },
+   
+   {
+    source: '/rooms/treasure-island-roanoke-va',
+     destination: '/roanoke-va/activities/treasure-island',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/superheros-adventure-roanoke-va',
+     destination: '/roanoke-va/activities/superheros-adventure',
+     permanent: prm,
+   },
+  
+  
+   {
+    source: '/rooms/zombie-apocalypse-roanoke-va',
+     destination: '/roanoke-va/activities/zombie-apocalypse',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/special-agent-roanoke-va',
+     destination: '/roanoke-va/activities/special-agent',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/hollywood-premiere-roanoke-va',
+     destination: '/roanoke-va/activities/hollywood-premiere',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/sherlocks-library-roanoke-va',
+     destination: '/roanoke-va/activities/sherlocks-library',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/houdinis-magic-cell-roanoke-va',
+     destination: '/roanoke-va/activities/houdinis-magic-cell',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-roanoke-va',
+     destination: '/roanoke-va/activities/black-ops',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/escape-from-alcatraz-roanoke-va',
+     destination: '/roanoke-va/activities/escape-from-alcatraz',
+     permanent: prm,
+   },
+   
+  
+  ]
+// =========================================-------------roanoke-va  VA
+// =========================================-------------lawrenceville-ga GA 
+const lawrencevilleRed=[
+
+  {
+    source: '/locations/lawrenceville-ga/events',
+     destination: '/lawrenceville-ga/events',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/category/lawrenceville-ga',
+     destination: '/lawrenceville-ga/activities',
+     permanent: prm,
+   },
+
+
+{
+    source: '/rooms/game-show-room-lawrenceville-ga',
+     destination: '/lawrenceville-ga/activities/game-show-room',
+     permanent: prm,
+   },
+   
+   {
+    source: '/rooms/treasure-island-lawrenceville-ga',
+     destination: '/lawrenceville-ga/activities/treasure-island',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/superheros-adventure-lawrenceville-ga',
+     destination: '/lawrenceville-ga/activities/superheros-adventure',
+     permanent: prm,
+   },
+  
+  
+   {
+    source: '/rooms/zombie-apocalypse-lawrenceville-ga',
+     destination: '/lawrenceville-ga/activities/zombie-apocalypse',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/special-agent-lawrenceville-ga',
+     destination: '/lawrenceville-ga/activities/special-agent',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/hollywood-premiere-lawrenceville-ga',
+     destination: '/lawrenceville-ga/activities/hollywood-premiere',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/sherlocks-library-lawrenceville-ga',
+     destination: '/lawrenceville-ga/activities/sherlocks-library',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/houdinis-magic-cell-lawrenceville-ga',
+     destination: '/lawrenceville-ga/activities/houdinis-magic-cell',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-lawrenceville-ga',
+     destination: '/lawrenceville-ga/activities/black-ops',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/beat-the-seat-lawrenceville-ga',
+     destination: '/lawrenceville-ga/activities/beat-the-seat',
+     permanent: prm,
+   },
+   
+  
+  ]
+// =========================================-------------lawrenceville-ga  GA
     
 
  const allRed=[...gnRed,...albanyRed,...buffaloRed,...middletownRed,...syracuseRed,...watertownRed,
                 ...westnykRed,...raleighRed,...bensalemRed,...holyokeRed,...hadleyRed,...kingstonRed,
-              ...nAttleboroughRed,...milfordRed,...manchesterRed,...waterburyRed,...eastBrunswickRed]
+                ...nAttleboroughRed,...milfordRed,...manchesterRed,...waterburyRed,...eastBrunswickRed,
+                ...rockawayRed,...woodbridgeRed,...bowieRed,...whitemarshRed,...roanokeRed,...lawrencevilleRed]
 
 module.exports = {
  
