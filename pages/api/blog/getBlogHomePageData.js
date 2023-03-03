@@ -80,9 +80,9 @@ export const getBlogHomePageData=()=>{
             {
                 "id":"1",
                 "slug":"why-are-escape-rooms-so-popular",
-                "ftimg":"/assets/blogs/blog-ft.jpg",
+                "ftimg":"/assets/blogs/WHY-ARE-ESCAPE-ROOMS-SO-POPULAR-hero.jpg",
                 "title":"WHY ARE ESCAPE ROOMS SO POPULAR?",
-                "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+                "blogdesc":"Escape rooms have become extremely popular over the past few years. For those who are not familiar, an escape room is a real-life adventure game where the players are locked in a game room and must use clues inside the room to solve a series of interesting puzzles and escape within 50-60 minutes. It's a safe activity where anyone can get out of the room anytime during the game.",
                 "authimg":"assets/blogs/blog-auth1.png",
                 "authname":"by Brian Capps",
                 "blogcategory":[
@@ -103,7 +103,7 @@ export const getBlogHomePageData=()=>{
             {
                 "id":"2",
                 "slug":"how-to-improve-your-chances-of-escaping-an-escape-room",
-                "ftimg":"/assets/blogs/blog-ft.jpg",
+                "ftimg":"/assets/blogs/HOW-TO-IMPROVE-YOUR-CHANCES-OF-ESCAPING-AN-ESCAPE-ROOM.jpg",
                 "title":"HOW TO IMPROVE YOUR CHANCES OF ESCAPING AN ESCAPE ROOM?",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
                 "authimg":"assets/blogs/blog-auth1.png",
@@ -121,16 +121,16 @@ export const getBlogHomePageData=()=>{
                     },
                 
                 ],
-                "lastupdate":"May 18, 2022"
+                "lastupdate":"February 15, 2022"
             },
             {
                 "id":"3",
                 "slug":"the-most-common-escape-room-mistakes",
-                "ftimg":"/assets/blogs/blog-ft.jpg",
+                "ftimg":"/assets/blogs/THE-MOST-COMMON-ESCAPE-ROOM-MISTAKES.jpg",
                 "title":"THE MOST COMMON ESCAPE ROOM MISTAKES",
-                "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+                "blogdesc":"It is natural to want to beat the escape room as soon as you possibly can, emerge victorious and feel like a detective. In haste to do so, many groups end up making the same mistakes, so we thought we could help you avoid such commonly seen mistakes.",
                 "authimg":"assets/blogs/blog-auth1.png",
-                "authname":"by Brian Capps",
+                "authname":"Brian Capps",
                 "blogcategory":[
                     {
                         "id":"1",
@@ -144,7 +144,7 @@ export const getBlogHomePageData=()=>{
                     },
                 
                 ],
-                "lastupdate":"April 02, 2022"
+                "lastupdate":"February 24, 2023"
             },
             {
                 "id":"4",
@@ -176,11 +176,11 @@ export const getBlogHomePageData=()=>{
             {
                 "id":"1",
                 "slug":"why-are-escape-rooms-so-popular",
-                "ftimg":"/assets/blogs/blog-ft.jpg",
+                "ftimg":"/assets/blogs/WHY-ARE-ESCAPE-ROOMS-SO-POPULAR-hero.jpg",
                 "title":"WHY ARE ESCAPE ROOMS SO POPULAR?",
-                "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+                "blogdesc":"Escape rooms have become extremely popular over the past few years. For those who are not familiar, an escape room is a real-life adventure game where the players are locked in a game room and must use clues inside the room to solve a series of interesting puzzles and escape within 50-60 minutes. It's a safe activity where anyone can get out of the room anytime during the game.",
                 "authimg":"assets/blogs/blog-auth1.png",
-                "authname":"by Brian Capps",
+                "authname":"Brian Capps",
                 "blogcategory":[
                     {
                         "id":"1",
@@ -199,11 +199,11 @@ export const getBlogHomePageData=()=>{
             {
                 "id":"2",
                 "slug":"the-most-common-escape-room-mistakes",
-                "ftimg":"/assets/blogs/blog-ft.jpg",
+                "ftimg":"/assets/blogs/THE-MOST-COMMON-ESCAPE-ROOM-MISTAKES.jpg",
                 "title":"THE MOST COMMON ESCAPE ROOM MISTAKES",
-                "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+                "blogdesc":"It is natural to want to beat the escape room as soon as you possibly can, emerge victorious and feel like a detective. In haste to do so, many groups end up making the same mistakes, so we thought we could help you avoid such commonly seen mistakes.",
                 "authimg":"assets/blogs/blog-auth1.png",
-                "authname":"by Brian Capps",
+                "authname":"Brian Capps",
                 "blogcategory":[
                     {
                         "id":"1",
@@ -217,12 +217,12 @@ export const getBlogHomePageData=()=>{
                     },
                 
                 ],
-                "lastupdate":"May 18, 2022"
+                "lastupdate":"February 22, 2023"
             },
             {
                 "id":"3",
                 "slug":"how-to-improve-your-chances-of-escaping-an-escape-room",
-                "ftimg":"/assets/blogs/blog-ft.jpg",
+                "ftimg":"/assets/blogs/HOW-TO-IMPROVE-YOUR-CHANCES-OF-ESCAPING-AN-ESCAPE-ROOM.jpg",
                 "title":"HOW TO IMPROVE YOUR CHANCES OF ESCAPING AN ESCAPE ROOM?",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
                 "authimg":"assets/blogs/blog-auth1.png",
@@ -240,7 +240,7 @@ export const getBlogHomePageData=()=>{
                     },
                 
                 ],
-                "lastupdate":"April 02, 2022"
+                "lastupdate":"February 15, 2023"
             },
             {
                 "id":"4",
