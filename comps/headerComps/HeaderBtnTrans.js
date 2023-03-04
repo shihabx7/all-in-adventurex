@@ -27,7 +27,7 @@ const HeaderBtnTrans =(props)=>{
                 }
                 {
                     props.eventbooking.eventstatus==false &&
-                    <a href={"/"+props.locationslug+"/events"} className='bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300'>
+                    <a href={"/"+props.locationslug+"/events#eventform"} className='bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300'>
                           BOOK A PARTY
                       </a>
 
