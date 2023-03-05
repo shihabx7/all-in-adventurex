@@ -61,7 +61,7 @@ const Blogs=(props)=>{
                 <BlogCat blogcat={props.blogcat}/>
                 <RecentBlogs blogdata={props.recentblogs}/>
                 <PopularBlogs blogdata={props.popularblogs} />
-                <AllBlogs  blogdata={props.popularblogs}/>
+                <AllBlogs  blogdata={props.allblogs}/>
                 
             </div>
 

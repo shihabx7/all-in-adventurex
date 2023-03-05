@@ -9,7 +9,7 @@ export const getSingleBlogData=(slug)=>{
          "virtualgameListSlug":getTotal().virtualgameSlug,
          "pagemeta":{
   
-            "title":blogData[slug].pagedata.pagetitle,
+            "title":blogData[slug].pagemeta.title,
             "description":blogData[slug].pagemeta.description,
             "keywords":blogData[slug].pagemeta.keywords,
             "url":"/blog/"+slug,
@@ -38,7 +38,7 @@ const blogData={
     "can-you-do-an-escape-room-as-a-couple":{
         "pagemeta":{
   
-            "title":"All In Adventures Blog | Can You Do An Escape Room As A Couple?",
+            "title":"Can You Do An Escape Room As A Couple?",
             "description":"Can you play an escape room game as a couple? The answer is yes! Escape room is an excellent idea for couples looking to do something new and exciting. Escape room might even spark your romance without you realizing it. ",
             "keywords":"play an escape room game as a couple,escape room blog, all in adventures blog, play an escape room, escape room news, all in adventures articles,",
             "url":"/blog/can-you-do-an-escape-room-as-a-couple",
@@ -192,7 +192,7 @@ const blogData={
     "what-makes-a-good-escape-room":{
         "pagemeta":{
   
-            "title":"All In Adventures Blog | What Makes A Good Escape Room?",
+            "title":"What Makes A Good Escape Room?",
             "description":"A lot goes into designing a successful escape room experience, from the story and outlook of the set to the fluidity and difficulty level of clues and puzzles in the game. A great escape room should be planned to take participants on an enveloping, challenging adventure that pushes your thought boundaries as you have fun",
             "keywords":"escape room blog, all in adventures blog, mystery room blog, escape room news, all in adventures news, mystery room articles,",
             "url":"/blog/what-makes-a-good-escape-room",
@@ -347,7 +347,7 @@ const blogData={
     "why-are-escape-rooms-so-popular":{
         "pagemeta":{
   
-            "title":"All In Adventures Blog | What Makes A Good Escape Room?",
+            "title":"What Makes A Good Escape Room?",
             "description":"Escape rooms have become extremely popular over the past few years. For those who are not familiar, an escape room is a real-life adventure game where the players are locked in a game room and must use clues inside the room to solve a series of interesting puzzles and escape within 50-60 minutes. It's a safe activity where anyone can get out of the room anytime during the game.",
             "keywords":"escape room blog, all in adventures blog, mystery room blog, escape room news, all in adventures news, mystery room articles,",
             "url":"/blog/why-are-escape-rooms-so-popular",
@@ -609,7 +609,7 @@ const blogData={
     "the-most-common-escape-room-mistakes":{
         "pagemeta":{
   
-            "title":"All In Adventures Blog | The Most Common Escape Room Mistakes",
+            "title":"The Most Common Escape Room Mistakes",
             "description":"It is natural to want to beat the escape room as soon as you possibly can, emerge victorious and feel like a detective. In haste to do so, many groups end up making the same mistakes, so we thought we could help you avoid such commonly seen mistakes.",
             "keywords":"escape room mistakes,escape room blog, all in adventures blog, mystery room blog, escape room news, all in adventures news, mystery room articles,",
             "url":"/blog/the-most-common-escape-room-mistakes",
@@ -775,7 +775,7 @@ const blogData={
     "how-to-improve-your-chances-of-escaping-an-escape-room":{
         "pagemeta":{
   
-            "title":"All In Adventures Blog | How To Improve Your Chances Of Escaping An Escape Room?",
+            "title":"How To Improve Your Chances Of Escaping An Escape Room?",
             "description":"It is commonly believed that being good at escape rooms is a matter of being good at puzzles and solving problems; while it is a valuable skill to have in an escape room, remember that an escape room game is a team game. The real key to escaping is strategically getting your team to work together most efficiently.",
             "keywords":"escape room skill, all in adventures blog, mystery room blog, escape room improvement, all in adventures news, mystery room articles,",
             "url":"/blog/how-to-improve-your-chances-of-escaping-an-escape-room",
@@ -963,17 +963,17 @@ const blogData={
     "how-escape-rooms-help-communication":{
         "pagemeta":{
   
-            "title":"All In Adventures Blog | What Makes A Good Escape Room?",
-            "description":"A lot goes into designing a successful escape room experience, from the story and outlook of the set to the fluidity and difficulty level of clues and puzzles in the game. A great escape room should be planned to take participants on an enveloping, challenging adventure that pushes your thought boundaries as you have fun",
+            "title":"How Escape Rooms Help Communication?",
+            "description":"There is no denying that good communication skills are imperative to the business world, with the rising demand for clear communicators in every industry. ",
             "keywords":"escape room blog, all in adventures blog, mystery room blog, escape room news, all in adventures news, mystery room articles,",
             "url":"/blog/how-escape-rooms-help-communication",
             "metaindex":true,
-            "metaimg":"/assets/blogs/WHAT-MAKES-A-GOOD-ESCAPE-ROOM.jpg"
+            "metaimg":"/assets/blogs/HOW-ESCAPE-ROOMS-HELP-COMMUNICATION.jpg"
           },
           "pagedata":{
-            "pagetitle":"WHAT MAKES A GOOD ESCAPE ROOM?",
-            "description":"A lot goes into designing a successful escape room experience, from the story and outlook of the set to the fluidity and difficulty level of clues and puzzles in the game.",
-            "ftimg":"/assets/blogs/WHAT-MAKES-A-GOOD-ESCAPE-ROOM.jpg",
+            "pagetitle":"HOW ESCAPE ROOMS HELP COMMUNICATION",
+            "description":"There is no denying that good communication skills are imperative to the business world, with the rising demand for clear communicators in every industry. ",
+            "ftimg":"/assets/blogs/HOW-ESCAPE-ROOMS-HELP-COMMUNICATION.jpg",
             
             "totalLocations":getTotal().totalLocations,
           
@@ -981,7 +981,7 @@ const blogData={
         },
         "bloginfo":{
                 "authimg":"/assets/blogs/blog-auth1.png",
-                "authname":"by Brian Capps",
+                "authname":"Brian Capps",
                 "blogcategory":[
                     {
                         "id":"1",
@@ -995,69 +995,70 @@ const blogData={
                     },
                 
                 ],
-                "lastupdate":"April 02, 2022",
+                "lastupdate":"Ferbruary 4, 2023",
                 
         },
         "blogdesc":[
             "<div class=\"sbl-block\">",
-                "<p>A lot goes into designing a successful escape room experience, from the story and outlook of the set to the fluidity and difficulty level of clues and puzzles in the game.</p>",
-                "<p>A great escape room should be planned to take participants on an enveloping, challenging adventure that pushes your thought boundaries as you have fun.</p>",
+                "<p>There is no denying that good communication skills are imperative to the business world, with the rising demand for clear communicators in every industry. This demand has led to the opening of numerous workshops and lectures, all claiming to enhance communication skills among employees and between the management of the workforce.</p>",
+                "<p>No workshop, however, can claim that everyone engaged is guaranteed to have fun or get to know each other better while developing team-building communication skills.</p>",
+               
+                "<p>Escape rooms have been designed so that not only does it provide the players with an exciting boost to their morale, it does so while focusing on the particular skills that will lead to more effective communication when everyone gets back to their regular lives and work. Escape room games might be the answer to help teams work harder and more effectively.</p>",
+                "<p>Reading this article, you will discover how communication-based games, in this case, escape rooms, can help develop effective communication among team members.</p>",
                 "<p>Unfamiliar with the concept of an escape room? <a href=\"/what-is-an-escape-room\" class=\"text-red-600 hover:text-red-700\">Click here</a> to learn more.</p>",
-                "<p>There are a few aspects that make great escape rooms stand out:</p>",
-                "<div>",
-                    "<h3>A COMPELLING STORY</h3>",
-                    "<p>The best escape room games all come with a story that drives you from the beginning to the end. You would naturally want to see how the story ends, and you would want to feel like a detective who solves the mystery.</p>",
-                    "<p>Without the plot of the story, there is hardly any motivation to see the escape room experience through to the end.</p>",
-                    "<p><img src=\"/assets/blogs/A-COMPELLING-STORY.jpg\"/></p>",
-                    "<p>While designing such a driving plot of the story is not easy, it must also make players feel like it's worth the effort to see the end of the game, leaving them with a sense of fulfillment.</p>",
-                    "<p>Unfamiliar with the concept of an escape room? <a href=\"/what-is-an-escape-room\" class=\"text-red-600 hover:text-red-700\">Click here</a> to learn more.</p>",
-                    "<p>Check out the plots and stories of our <a href=\"/activities\" class=\"text-red-600 hover:text-red-700\">escape rooms</a> here at All In Adventures.</p>",
-                "</div>",
-                "<div>",
-                    "<h3>PURPOSEFUL DECOR</h3>",
-                    "<p>As you know, escape rooms have a theme and follow a plot, and the theme is communicated through the room's decor. An Escape room should thus be immaculately decorated and detailed. Every piece of furniture, art, book, every detail should fit into the world of the escape room. The player should feel that every single object could be a potential clue.</p>",
-                  
-                    
-                "</div>",
-                "<div>",
-                    "<h3>A SENSE OF NARRATIVE FLOW</h3>",
-                    "<p>Storytelling draws people into the plot, and that's why movies, books, and shows are multibillion-dollar industries. It is also why people obsess over developing stories and try to read between the lines, looking for something to make complete sense of the tale being woven.</p>",
-                    "<p>With escape rooms, designers use the hook of storytelling to fuel curiosity. Finding that next clue becomes ever more important if you learn why the clue was left there in the first place. On the other hand, creating backstories and characters for the challenges offer an extra subtext to guide the next decision, making the experience more engaging and memorable.</p>",
-                    "<p>Check out <a href=\"/activities\" class=\"text-red-600 hover:text-red-700\">all our escape rooms</a> and their stories here at All In Adventures.</p>",
-                   
-                "</div>",
-                "<div>",
-                    "<h3>INTERESTING PUZZLES</h3>",
-                    "<p>Escape rooms make players face puzzles they must solve to progress in the game, achieving a sense of accomplishment upon completion.</p>",
-                    "<p>While the puzzles shouldn't be too easy, they also shouldn't be so complex that players get frustrated and feel stuck for a long time without making any progress. If this happens, the game becomes uninteresting and discouraging to the players.</p>",
-                    
-                "</div>",
-                "<div>",
-                    "<h3>INSPIRE TEAMWORK</h3>",
-                    "<p>One of the main reasons escape room games are so successful is that they require teamwork to win.</p>",
-                    "<p>Take, for example, the clues provided usually to solve the puzzle; by combining the team members' work effort and mental resources, the puzzle can be solved much faster.</p>",
-                    
-                "</div>",
-                "<div>",
-                    "<h3>CREATES UNIQUE MEMORIES</h3>",
-                    "<p>As you exit your first escape room, you will get a sense of achieving something great. You had to push your thinking beyond the boundaries and work as a team to accomplish it.</p>",
-                    "<p>This feeling of accomplishment is what you take away and make some good memories to look back to the good times with some special people.</p>",
-                   
-                    "<p>Visit our <a href=\"/gallery\" class=\"text-red-600 hover:text-red-700\">adventurer's gallery</a> and look at the wonderful memories being made here at All In Adventures.</p>",
-                "</div>",
-                "<div>",
-                    "<h3>BRINGING THOSE ELEMENTS TOGETHER</h3>",
-                    "<p>Finally, ensuring all the mentioned elements, set design, and puzzles are cohesive with the chosen theme will make the game much more immersive.</p>",
-                    "<p>Checking all these boxes is what makes an escape room great, and players can expect better gameplay with increased immersion and unique puzzles.</p>",
-                   
-                    "<p>Visit our <a href=\"/gallery\" class=\"text-red-600 hover:text-red-700\">adventurer's gallery</a> and look at the wonderful memories being made here at All In Adventures.</p>",
-                "</div>",
+                
             "</div>",
+            "<div class=\"sbl-block\">",
+                    "<h2>ESCAPE ROOMS BENEFIT TEAM COMMUNICATION:</h2>",
+                    "<p>While it is educational, workshops and lectures do not require the participants to interact with each other, and often, employee job titles and rank keep from developing trust and effective relationships. </p>",
+                    "<p><img src=\"/assets/blogs/ESCAPE-ROOMS-BENEFIT-TEAM-COMMUNICATION.jpg\"/></p>",
+                    
+                    "<p>Escape games for work are anything but boring, making them a more effective alternative to a lecture. Every task in the room escape game is unique, so if a team wants to escape, they must talk it out together and cooperate.</p>",
+                "<div>",
+                    "<h3>BOOST TEAM SPIRIT WITH COMMON GOALS</h3>",
+                    "<p>By sharing a common goal where everyone feels invested in the outcome, escape room team building can encourage team members to become involved in identifying potential solutions. </p>",
+                    "<p>Not only does this increase their sense of contribution to the success or failure of the team, but it also boosts their motivation to participate in the group. This can foster a more enthusiastic team spirit, encouraging more effective communication and engagement even after the experience.</p>",
+                   
+                "</div>",
+                "<div>",
+                    "<h3>NATURAL LEADERSHIP SKILLS ARE MANIFESTED</h3>",
+                    "<p>To be more efficient with your limited time, the team needs to cover more areas of the room and solve puzzles as quickly as possible. The team needs a leader to assign tasks or split them into pairs, aiming to cover more ground and find clues faster. </p>",
+                    "<p>Not all groups will function well immediately, so one member might feel the need to take charge. This will reveal the member with potential leadership skills that can be used, even in corporate settings.</p>",
+                    
+                "</div>",
+                "<div>",
+                    "<h3>IDENTIFICATION OF POTENTIAL ROADBLOCKS</h3>",
+                    "<p>Escape rooms will naturally force your team members to grow closer together as they communicate, interact, formulate, and implement their plans to escape. </p>",
+                    "<p>Team leaders are to note and examine each team member's specific strengths, weaknesses, and how the team works together as a group. This will help identify barricades, the removal of which can help the team work together better.</p>",
+                    
+                   
+                "</div>",
+                "<div>",
+                    "<h3>ESCAPE ROOMS ARE DESIGNED TO BOOST TEAMWORK</h3>",
+                    "<p>In terms of a corporate team, the barrier that might exist between management and employees collapses in moments when the team has a clear common goal, outside of their work environment, with everyone working together as a team to successfully escape their confinement.</p>",
+                    "<p>Escape room games teach participants to actually listen. Though this may seem simple, the benefits are immediately seen as soon they start listening to each other rather than simply hearing.</p>",
+                    
+                "</div>",
+                "<div>",
+                    "<h3>ESCAPE ROOM GAMES EXPOSE STRENGTHS AND WEAKNESSES</h3>",
+                    "<p>Escape rooms push players to step up to the challenges. The one you expected to take the lead in the game may end up solving puzzles or connecting clues. </p>",
+                    "<p>Maybe the one you thought wouldn't do as well end up being the one who figures out how to solve the most complex problems. Having escape room as the main team-building activity can be full of surprises that reveal a player's hidden skills.</p>",
+                    
+                "</div>",
+                "<div>",
+                    "<h3>EACH INDIVIDUAL GETS A VOICE IN THE ESCAPE ROOM</h3>",
+                    "<p>Everyone's input is essential in the escape room game. The attention shifts from convincing others to creating trust with the team. Escape room sharpens team performance under pressure, as simulations are made to appear like a high-stakes situation.</p>",
+                    "<p>Escape room game is perfect for transforming a room full of friends, family and coworkers into a tight-knit group of people; truly a team effort.</p>",
+                   
+                   
+                "</div>",
+               
+              "</div>",
             
              "<div class=\"sbl-block\">",
                  "<h2>HOW TO BOOK YOUR NEXT EVENT</h2>",
                  "<p>Looking for an escape room adventure? Look no further than <a href=\"/activities\" class=\"text-red-600 hover:text-red-700\">All In Adventures</a> for your next escape room experience! Book now and prepare to be fully immersed in a thrilling world of puzzles, challenges, and excitement.</p>",
-                 "<p><img src=\"/assets/blogs/ARE-YOU-EXCITED-FOR-YOUR-NEXT-ADVENTURE.jpg\"/></p>",
+                 "<p><img src=\"/assets/blogs/com-ARE-YOU-EXCITED-FOR-YOUR-NEXT-ADVENTURE.jpg\"/></p>",
                  "<p>Click the <b>\"BOOK GAMES\"</b> button and choose your location to get an instant online booking for a group of 2-10 people.</p>",
                  "<p><a href=\"/events\" class=\"text-red-600 hover:text-red-700\">Planning an event</a> with a large group of over 10 people? We've got you covered! Contact one of our <a href=\"/locations\" class=\"text-red-600 hover:text-red-700\">local stores</a>, and we will take you through the process and get you our special deals.</p>",
                  
@@ -1118,17 +1119,17 @@ const blogData={
     "everything-you-need-to-know-before-playing-an-escape-room":{
         "pagemeta":{
   
-            "title":"All In Adventures Blog | What Makes A Good Escape Room?",
-            "description":"A lot goes into designing a successful escape room experience, from the story and outlook of the set to the fluidity and difficulty level of clues and puzzles in the game. A great escape room should be planned to take participants on an enveloping, challenging adventure that pushes your thought boundaries as you have fun",
+            "title":"Everything You Need To Know Before Playing An Escape Room",
+            "description":"Before you approach the escape game, there are some definite tips about escape rooms that you need to know. Knowing these ahead, you can do better at the game and have more fun playing.",
             "keywords":"escape room blog, all in adventures blog, mystery room blog, escape room news, all in adventures news, mystery room articles,",
             "url":"/blog/what-makes-a-good-escape-room",
             "metaindex":true,
-            "metaimg":"/assets/blogs/WHAT-MAKES-A-GOOD-ESCAPE-ROOM.jpg"
+            "metaimg":"/assets/blogs/EVERYTHING-YOU-NEED-TO-KNOW-BEFORE-PLAYING-AN-ESCAPE-ROOM.jpg"
           },
           "pagedata":{
             "pagetitle":"EVERYTHING YOU NEED TO KNOW BEFORE PLAYING AN ESCAPE ROOM",
-            "description":"A lot goes into designing a successful escape room experience, from the story and outlook of the set to the fluidity and difficulty level of clues and puzzles in the game.",
-            "ftimg":"/assets/blogs/WHAT-MAKES-A-GOOD-ESCAPE-ROOM.jpg",
+            "description":"Before you approach the escape game, there are some definite tips about escape rooms that you need to know. Knowing these ahead, you can do better at the game and have more fun playing.",
+            "ftimg":"/assets/blogs/EVERYTHING-YOU-NEED-TO-KNOW-BEFORE-PLAYING-AN-ESCAPE-ROOM.jpg",
             
             "totalLocations":getTotal().totalLocations,
           
@@ -1136,7 +1137,7 @@ const blogData={
         },
         "bloginfo":{
                 "authimg":"/assets/blogs/blog-auth1.png",
-                "authname":"by Brian Capps",
+                "authname":"Brian Capps",
                 "blogcategory":[
                     {
                         "id":"1",
@@ -1150,28 +1151,30 @@ const blogData={
                     },
                 
                 ],
-                "lastupdate":"April 02, 2022",
+                "lastupdate":"Fabruary 10, 2023"
                 
         },
         "blogdesc":[
             "<div class=\"sbl-block\">",
-                "<p>A lot goes into designing a successful escape room experience, from the story and outlook of the set to the fluidity and difficulty level of clues and puzzles in the game.</p>",
-                "<p>A great escape room should be planned to take participants on an enveloping, challenging adventure that pushes your thought boundaries as you have fun.</p>",
-                "<p>Unfamiliar with the concept of an escape room? <a href=\"/what-is-an-escape-room\" class=\"text-red-600 hover:text-red-700\">Click here</a> to learn more.</p>",
-                "<p>There are a few aspects that make great escape rooms stand out:</p>",
-                "<div>",
-                    "<h3>A COMPELLING STORY</h3>",
-                    "<p>The best escape room games all come with a story that drives you from the beginning to the end. You would naturally want to see how the story ends, and you would want to feel like a detective who solves the mystery.</p>",
-                    "<p>Without the plot of the story, there is hardly any motivation to see the escape room experience through to the end.</p>",
-                    "<p><img src=\"/assets/blogs/A-COMPELLING-STORY.jpg\"/></p>",
-                    "<p>While designing such a driving plot of the story is not easy, it must also make players feel like it's worth the effort to see the end of the game, leaving them with a sense of fulfillment.</p>",
-                    "<p>Unfamiliar with the concept of an escape room? <a href=\"/what-is-an-escape-room\" class=\"text-red-600 hover:text-red-700\">Click here</a> to learn more.</p>",
-                    "<p>Check out the plots and stories of our <a href=\"/activities\" class=\"text-red-600 hover:text-red-700\">escape rooms</a> here at All In Adventures.</p>",
+                "<p>Are you planning to play an escape room for the first time? </p>",
+                "<p>If you're unfamiliar with the escape room concept, you should start by checking out our <a href=\"/what-is-an-escape-room\" class=\"text-red-600 hover:text-red-700\">Click here</a>\"What is a room escape\" post. It should answer most of your questions and probably a few you didn't think to ask.</p>",
+                "<p>Before you approach the escape game, there are some definite tips about escape rooms that you need to know. Knowing these ahead, you can do better at the game and have more fun playing.</p>",
+               
+            "</div>",
+            "<div class=\"sbl-block\">",
+                 "<h2>THINGS YOU NEED TO KNOW BEFORE PLAYING AN ESCAPE ROOM GAME</h2>",
+                 "<p><img src=\"/assets/blogs/THINGS-YOU-NEED-TO-KNOW-BEFORE-PLAYING-AN-ESCAPE-ROOM-GAME.jpg\"/></p>",
+                 "<div>",
+                    "<h3>MAKE RESERVATIONS AHEAD AND BE PUNCTUAL</h3>",
+                    "<p>Ensure your team agrees on the same date and time when making a game reservation. On the day of the game, arrive 15 to 20 minutes early so you can prepare before the game starts.</p>",
+                    "<p>This ensures no delay in starting the game, and everyone feels more ready for the challenge. </p>",
+                    "<p>Find your nearest All In Adventures location and book today! We have 26 locations all over the United States.</p>",
+                   
                 "</div>",
                 "<div>",
-                    "<h3>PURPOSEFUL DECOR</h3>",
-                    "<p>As you know, escape rooms have a theme and follow a plot, and the theme is communicated through the room's decor. An Escape room should thus be immaculately decorated and detailed. Every piece of furniture, art, book, every detail should fit into the world of the escape room. The player should feel that every single object could be a potential clue.</p>",
-                  
+                    "<h3>DRESS APPROPRIATELY</h3>",
+                    "<p>Leave your fancy clothes at home. You may need to crawl on the floor, so save your nice dress, shirt and pant for another time. Wear sneakers and clothes which are comfortable and allow mobility.</p>",
+                    
                     
                 "</div>",
                 "<div>",
@@ -1182,37 +1185,64 @@ const blogData={
                    
                 "</div>",
                 "<div>",
-                    "<h3>INTERESTING PUZZLES</h3>",
-                    "<p>Escape rooms make players face puzzles they must solve to progress in the game, achieving a sense of accomplishment upon completion.</p>",
-                    "<p>While the puzzles shouldn't be too easy, they also shouldn't be so complex that players get frustrated and feel stuck for a long time without making any progress. If this happens, the game becomes uninteresting and discouraging to the players.</p>",
+                    "<h3>GO WITH PEOPLE YOU GET ALONG WITH</h3>",
+                    "<p>Playing escape room games demand a lot of coordination and communication. To increase your chances of making an escape, you need to direct instructions and divide into different roles. It makes more sense and is fun to play with people you are comfortable with rather than plain acquaintances.</p>",
+                    "<p>Another thing you can do to widen your chances of winning is to ensure diversity among your teammates; this goes a long way to helping you succeed. For example, if you are not good at maths, then chances are, someone else in your team is.</p>",
                     
                 "</div>",
                 "<div>",
-                    "<h3>INSPIRE TEAMWORK</h3>",
-                    "<p>One of the main reasons escape room games are so successful is that they require teamwork to win.</p>",
-                    "<p>Take, for example, the clues provided usually to solve the puzzle; by combining the team members' work effort and mental resources, the puzzle can be solved much faster.</p>",
+                    "<h3>ESCAPE ROOM IS CHALLENGING</h3>",
+                    "<p>Don't expect escape rooms to be a walk in the park. You might be surprised to find that escape rooms can be difficult, especially if this is the first experience for you and your group. </p>",
+                    "<p>Try to keep your cool and not let the challenge demotivate you; remember that the challenge is an integral part of the escape room experience, and besides, what would be the fun if it was too easy, right? It will be less frustrating when you know that you may struggle with the puzzles.</p>",
                     
                 "</div>",
                 "<div>",
-                    "<h3>CREATES UNIQUE MEMORIES</h3>",
-                    "<p>As you exit your first escape room, you will get a sense of achieving something great. You had to push your thinking beyond the boundaries and work as a team to accomplish it.</p>",
-                    "<p>This feeling of accomplishment is what you take away and make some good memories to look back to the good times with some special people.</p>",
-                   
-                    "<p>Visit our <a href=\"/gallery\" class=\"text-red-600 hover:text-red-700\">adventurer's gallery</a> and look at the wonderful memories being made here at All In Adventures.</p>",
+                    "<h3>START RIGHT AWAY</h3>",
+                    "<p>Time is of the essence in an escape room, so there is none to waste. The moment the game begins, you should instantly start opening things, moving around and searching for clues or anything unusual and interesting. If you start slowly, you will likely keep that slow pace and reduce your chances of winning.</p>",
+                    
                 "</div>",
                 "<div>",
-                    "<h3>BRINGING THOSE ELEMENTS TOGETHER</h3>",
-                    "<p>Finally, ensuring all the mentioned elements, set design, and puzzles are cohesive with the chosen theme will make the game much more immersive.</p>",
-                    "<p>Checking all these boxes is what makes an escape room great, and players can expect better gameplay with increased immersion and unique puzzles.</p>",
+                    "<h3>FORGET ABOUT YOUR POCKETS</h3>",
+                    "<p>This is a pro tip you might get from an experienced escape artist. Potentially, any clue, key or object in an escape room game may be your way out. If you put something you picked up into your pocket, you may forget about it entirely and set yourself up for failure. </p>",
+                    "<p>It would be best if you designated a place in the room for every clue or item of interest you find during the game. Forget your pockets exist until your escape.</p>",
                    
+                "</div>",
+                "<div>",
+                    "<h3>COMMUNICATE WITH YOUR TEAM</h3>",
+                    "<p>In an escape game, strong communication between teammates is crucial. The whole game might fall apart if you forget to inform your team about any clue or item you found. </p>",
+                    "<p>Speak up and don't be shy, for your best shot at escaping. Don't forget that listening makes up merely half of communication, so remember to keep your ears open and listen to your teammates.</p>",
+                   
+                "</div>",
+                "<div>",
+                    "<h3>TRY THE OBVIOUS SOLUTION FIRST</h3>",
+                    "<p>Though escape games can be difficult, it's always best to start with the easiest solution to a puzzle before trying the complex solutions. You don't want to waste your time making complex calculations before trying the basic solutions first, and don't overthink it when playing an escape room.</p>",
+                    
+                   
+                "</div>",
+                "<div>",
+                    "<h3>SUSPENSION OF DISBELIEF</h3>",
+                    "<p>While this may not help you win the game, it certainly will help you have more fun. Suspending disbelief and surrendering yourself to the experience or, in other words, really believing that you are in the story and all of this is real.</p>",
+                    "<p>Don't be that guy who says, \"It's just a game\" and kill everyone's fun. Just think about it from an innocent perspective; it guarantees a memorable experience.</p>",
+                   
+                "</div>",
+                "<div>",
+                    "<h3>KEEP AN EYE ON THE CLOCK</h3>",
+                    "<p>Time flies very fast in an escape room! Keeping an eye on the time you have left will allow you to plan your next steps accordingly and decide when to ask for a hint. Escape rooms are designed so that you are able to solve and open everything within an hour.</p>",
+                    "<p>Don't be hesitant to ask for help. The rule of thumb is if you haven't found any clues or made any progress in five minutes, ask for help.</p>",
+                   
+                "</div>",
+                "<div>",
+                    "<h3>DON'T FORGET TO HAVE FUN</h3>",
+                    "<p>The primary goal should be to have fun. These games are designed to challenge you, make you think, laugh, and enjoy an hour with your team members. </p>",
+                    "<p>It doesn't matter whether you are coming for a corporate team-building event or for a family activity; escape rooms should always leave you smiling, not angry or frustrated. As long as you enjoy your time, you will win!</p>",
                     "<p>Visit our <a href=\"/gallery\" class=\"text-red-600 hover:text-red-700\">adventurer's gallery</a> and look at the wonderful memories being made here at All In Adventures.</p>",
                 "</div>",
-            "</div>",
+             "</div>",
             
              "<div class=\"sbl-block\">",
                  "<h2>HOW TO BOOK YOUR NEXT EVENT</h2>",
                  "<p>Looking for an escape room adventure? Look no further than <a href=\"/activities\" class=\"text-red-600 hover:text-red-700\">All In Adventures</a> for your next escape room experience! Book now and prepare to be fully immersed in a thrilling world of puzzles, challenges, and excitement.</p>",
-                 "<p><img src=\"/assets/blogs/ARE-YOU-EXCITED-FOR-YOUR-NEXT-ADVENTURE.jpg\"/></p>",
+                 "<p><img src=\"/assets/blogs/Every-ARE-YOU-EXCITED-FOR-YOUR-NEXT-ADVENTURE.jpg\"/></p>",
                  "<p>Click the <b>\"BOOK GAMES\"</b> button and choose your location to get an instant online booking for a group of 2-10 people.</p>",
                  "<p><a href=\"/events\" class=\"text-red-600 hover:text-red-700\">Planning an event</a> with a large group of over 10 people? We've got you covered! Contact one of our <a href=\"/locations\" class=\"text-red-600 hover:text-red-700\">local stores</a>, and we will take you through the process and get you our special deals.</p>",
                  

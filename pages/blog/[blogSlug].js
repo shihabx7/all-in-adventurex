@@ -44,7 +44,7 @@ const SingleBlog=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-              <Seofields meta={props.pagemeta}/>
+          <Seofields meta={props.pagemeta}/>
            <Homenav locationlist={props.locationlist}
            activitylist={props.activitylist}
            eventlist={props.eventlist}/>
@@ -74,11 +74,11 @@ const SingleBlog=(props)=>{
 <div className="single-blog-content-holder bg-[#FFFCEB]" style={{paddingTop:blpadding}}> 
             <div id="sbl-content-box" className="blog-container max-w-[1060px] mx-auto px-4 ">
               <div className="flex sbl-content flex-col md:flex-row justify-between space-x-0 space-y-2 md:space-y-0 md:space-x-8 lg:space-x-12"> 
-                <div className="sbl-main max-w-[700px] pb-16 border-b border-[#c4c4c4]"> 
+                <div className="sbl-main max-w-[700px] pb-0 md:pb-12 md:border-b md:border-[#c4c4c4]"> 
                 <BlogInfo bloginfo={props.bloginfo}/>
                   <SingleBlogContent blogdesc={props.blogdesc} pagedata={props.pagedata}/>
                 </div>
-                <div className="sbl-sidebar md:h-screen md:sticky md:top-10">
+                <div className="sbl-sidebar pb-12 md:pb-0 border-b border-[#c4c4c4] md:border-none md:border-transparent md:h-screen md:sticky md:top-10">
                 <BlogSideBar/>
                 </div>
 

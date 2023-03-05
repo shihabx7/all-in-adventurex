@@ -107,7 +107,7 @@ export const getBlogHomePageData=()=>{
                 "title":"HOW TO IMPROVE YOUR CHANCES OF ESCAPING AN ESCAPE ROOM?",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
                 "authimg":"assets/blogs/blog-auth1.png",
-                "authname":"by Brian Capps",
+                "authname":"Brian Capps",
                 "blogcategory":[
                     {
                         "id":"1",
@@ -149,11 +149,11 @@ export const getBlogHomePageData=()=>{
             {
                 "id":"4",
                 "slug":"everything-you-need-to-know-before-playing-an-escape-room",
-                "ftimg":"/assets/blogs/blog-ft.jpg",
+                "ftimg":"/assets/blogs/EVERYTHING-YOU-NEED-TO-KNOW-BEFORE-PLAYING-AN-ESCAPE-ROOM.jpg",
                 "title":"EVERYTHING YOU NEED TO KNOW BEFORE PLAYING AN ESCAPE ROOM",
                 "blogdesc":"Before you approach the escape game, there are some definite tips about escape rooms that you need to know. Knowing these ahead, you can do better at the game and have more fun playing.",
                 "authimg":"assets/blogs/blog-auth1.png",
-                "authname":"by Brian Capps",
+                "authname":"Brian Capps",
                 "blogcategory":[
                     {
                         "id":"1",
@@ -167,7 +167,7 @@ export const getBlogHomePageData=()=>{
                     },
                 
                 ],
-                "lastupdate":"May 18, 2022"
+                "lastupdate":"Fabruary 10, 2023"
             },
            
     
@@ -226,7 +226,7 @@ export const getBlogHomePageData=()=>{
                 "title":"HOW TO IMPROVE YOUR CHANCES OF ESCAPING AN ESCAPE ROOM?",
                 "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
                 "authimg":"assets/blogs/blog-auth1.png",
-                "authname":"by Brian Capps",
+                "authname":"Brian Capps",
                 "blogcategory":[
                     {
                         "id":"1",
@@ -245,11 +245,11 @@ export const getBlogHomePageData=()=>{
             {
                 "id":"4",
                 "slug":"how-escape-rooms-help-communication",
-                "ftimg":"/assets/blogs/blog-ft.jpg",
+                "ftimg":"/assets/blogs/HOW-ESCAPE-ROOMS-HELP-COMMUNICATION.jpg",
                 "title":"HOW ESCAPE ROOMS HELP COMMUNICATION",
-                "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+                "blogdesc":"There is no denying that good communication skills are imperative to the business world, with the rising demand for clear communicators in every industry. ",
                 "authimg":"assets/blogs/blog-auth1.png",
-                "authname":"by Brian Capps",
+                "authname":"Brian Capps",
                 "blogcategory":[
                     {
                         "id":"1",
@@ -263,7 +263,7 @@ export const getBlogHomePageData=()=>{
                     },
                 
                 ],
-                "lastupdate":"May 18, 2022"
+                "lastupdate":"Ferbruary 4, 2023",
             },
            
     
