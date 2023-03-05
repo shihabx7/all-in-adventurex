@@ -24,17 +24,17 @@ const BlogCards=(props)=>{
                                         <img className="w-full" src={blogitem.ftimg}></img>
                                     </a>
                                  </div> 
-                                 <div className="bl-auth flex items-center px-3 md:px-4 lg:px-6 py-2 text-[#818181] text-[12px] md:text-[14px] "> 
+                                 <div className="bl-auth flex items-center px-3 md:px-4 lg:px-6 pt-3 pb-1 text-[#818181] text-[12px] md:text-[14px] "> 
                                     <div className="bl-item-auth-img mr-2 md:mr-4"><img className="max-w-[32px] md:max-w-[36px]" src={blogitem.authimg}></img> </div>
                                     <div className="bl-item-auth">by {blogitem.authname}</div>
                                     <div className="mx-1 w-[3px] h-[3px] rounded-full bg-[#818181]"></div>
-                                    <div>Updated {blogitem.lastupdate}</div>
+                                    <div>{blogitem.lastupdate}</div>
                                  </div>
 
                          </div>
-                         <div className="bl-card-content px-3 md:px-4 lg:px-6 pt-0 md:pt-2 pb-4 md:pb-6 h-full flex flex-col justify-between space-y-4">
+                         <div className="bl-card-content px-3 md:px-4 lg:px-6 pt-0 md:pt-0 pb-4 md:pb-6 h-full flex flex-col justify-between space-y-4">
                             <div className="bl-content-up">
-                                    <div className="blog-item-cat flex items-center">
+                                    <div className="blog-item-cat flex items-center pb-2">
                                           {
                                             blogitem.blogcategory.map((cat,index)=>{
                                                     return(

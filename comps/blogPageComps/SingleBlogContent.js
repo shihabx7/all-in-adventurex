@@ -4,7 +4,7 @@ const SingleBlogContent=(props)=>{
 
 
     return(
-        <> 
+        <div> 
         <div className="sbl-desc"  dangerouslySetInnerHTML={{ __html: props.blogdesc.join('') }}> 
               
 
@@ -39,7 +39,7 @@ const SingleBlogContent=(props)=>{
          </div>
      </div>
       {/* =============================share btn=========================================== */}
-      </>
+      </div>
     )
 }
 
