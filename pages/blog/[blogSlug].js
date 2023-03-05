@@ -44,7 +44,7 @@ const SingleBlog=(props)=>{
       return(
           <>
               {/* =======header content======== */}
-          <Seofields meta={props.pagemeta}/>
+              <Seofields meta={props.pagemeta}/>
            <Homenav locationlist={props.locationlist}
            activitylist={props.activitylist}
            eventlist={props.eventlist}/>
