@@ -1,7 +1,7 @@
 const BlogInfo=(props)=>{
 
     return(
-        <div className="sbl-info py-4">
+        <div className="sbl-info pb-4 pt-4 md:pt-10">
             <div className="sbl-info-up flex items-center space-x-4">
                 <div className="sbl-auth-img max-w-[36px]">
                     <img src={props.bloginfo.authimg}></img>
@@ -9,7 +9,7 @@ const BlogInfo=(props)=>{
                  <div className="sbl-auth-name flex space-x-2 items-center text-[#818181] text-[14px] md:text-[16px]">
                     <p>by {props.bloginfo.authname}</p> 
                     <div className="mx-1 w-[3px] h-[3px] rounded-full bg-[#818181]"></div>
-                    <div>Updated {props.bloginfo.lastupdate}</div>
+                    <div>{props.bloginfo.lastupdate}</div>
 
                  </div>
 

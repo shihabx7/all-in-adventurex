@@ -51,7 +51,7 @@ const BlogCards=(props)=>{
                                     </div>
                                     <div className="bl-title mb-2">
                                         <a href={"/blog/"+blogitem.slug} className="text-[#4E4D4B]"> 
-                                              <h2 className="text-2xl md:text-3xl font-bold font-os">{blogitem.title}</h2>
+                                              <h2 className="text-[20px] md:text-[24px] font-medium font-os capitalize">{blogitem.title}</h2>
                                         </a>
                                     </div>
                                     <div className="bl-exp"> 
