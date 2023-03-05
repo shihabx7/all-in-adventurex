@@ -27,12 +27,13 @@ export const getBlogHomePageData=()=>{
             
         },
         "recentblogs":[
+            
             {
                 "id":"1",
-                "slug":"can-you-do-an-escape-room-as-a-couple",
-                "ftimg":"/assets/blogs/CAN-YOU-DO-AN-ESCAPE-ROOM-AS-A-COUPLE.jpg",
-                "title":"CAN YOU DO AN ESCAPE ROOM AS A COUPLE?",
-                "blogdesc":"Looking for something better than the typical dinner and a movie? It might be time to do something more exciting than usual, shed out and experience something different. Escape room for couples is a wonderful idea to make date night more exciting.",
+                "slug":"the-most-common-escape-room-mistakes",
+                "ftimg":"/assets/blogs/THE-MOST-COMMON-ESCAPE-ROOM-MISTAKES.jpg",
+                "title":"THE MOST COMMON ESCAPE ROOM MISTAKES",
+                "blogdesc":"It is natural to want to beat the escape room as soon as you possibly can, emerge victorious and feel like a detective. In haste to do so, many groups end up making the same mistakes, so we thought we could help you avoid such commonly seen mistakes.",
                 "authimg":"assets/blogs/blog-auth1.png",
                 "authname":"Brian Capps",
                 "blogcategory":[
@@ -48,14 +49,14 @@ export const getBlogHomePageData=()=>{
                     },
                 
                 ],
-                "lastupdate":"March 02, 2023"
+                "lastupdate":"February 22, 2023"
             },
             {
                 "id":"2",
-                "slug":"what-makes-a-good-escape-room",
-                "ftimg":"/assets/blogs/WHAT-MAKES-A-GOOD-ESCAPE-ROOM.jpg",
-                "title":"WHAT MAKES A GOOD ESCAPE ROOM?",
-                "blogdesc":"A lot goes into designing a successful escape room experience, from the story and outlook of the set to the fluidity and difficulty level of clues and puzzles in the game.",
+                "slug":"how-to-improve-your-chances-of-escaping-an-escape-room",
+                "ftimg":"/assets/blogs/HOW-TO-IMPROVE-YOUR-CHANCES-OF-ESCAPING-AN-ESCAPE-ROOM.jpg",
+                "title":"HOW TO IMPROVE YOUR CHANCES OF ESCAPING AN ESCAPE ROOM?",
+                "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
                 "authimg":"assets/blogs/blog-auth1.png",
                 "authname":"Brian Capps",
                 "blogcategory":[
@@ -71,9 +72,8 @@ export const getBlogHomePageData=()=>{
                     },
                 
                 ],
-                "lastupdate":"March 02, 2023"
+                "lastupdate":"February 15, 2023"
             },
-           
     
         ],
         "popularblogs":[
@@ -198,10 +198,10 @@ export const getBlogHomePageData=()=>{
             },
             {
                 "id":"2",
-                "slug":"the-most-common-escape-room-mistakes",
-                "ftimg":"/assets/blogs/THE-MOST-COMMON-ESCAPE-ROOM-MISTAKES.jpg",
-                "title":"THE MOST COMMON ESCAPE ROOM MISTAKES",
-                "blogdesc":"It is natural to want to beat the escape room as soon as you possibly can, emerge victorious and feel like a detective. In haste to do so, many groups end up making the same mistakes, so we thought we could help you avoid such commonly seen mistakes.",
+                "slug":"can-you-do-an-escape-room-as-a-couple",
+                "ftimg":"/assets/blogs/CAN-YOU-DO-AN-ESCAPE-ROOM-AS-A-COUPLE.jpg",
+                "title":"CAN YOU DO AN ESCAPE ROOM AS A COUPLE?",
+                "blogdesc":"Looking for something better than the typical dinner and a movie? It might be time to do something more exciting than usual, shed out and experience something different. Escape room for couples is a wonderful idea to make date night more exciting.",
                 "authimg":"assets/blogs/blog-auth1.png",
                 "authname":"Brian Capps",
                 "blogcategory":[
@@ -217,14 +217,14 @@ export const getBlogHomePageData=()=>{
                     },
                 
                 ],
-                "lastupdate":"February 22, 2023"
+                "lastupdate":"March 02, 2023"
             },
             {
                 "id":"3",
-                "slug":"how-to-improve-your-chances-of-escaping-an-escape-room",
-                "ftimg":"/assets/blogs/HOW-TO-IMPROVE-YOUR-CHANCES-OF-ESCAPING-AN-ESCAPE-ROOM.jpg",
-                "title":"HOW TO IMPROVE YOUR CHANCES OF ESCAPING AN ESCAPE ROOM?",
-                "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+                "slug":"what-makes-a-good-escape-room",
+                "ftimg":"/assets/blogs/WHAT-MAKES-A-GOOD-ESCAPE-ROOM.jpg",
+                "title":"WHAT MAKES A GOOD ESCAPE ROOM?",
+                "blogdesc":"A lot goes into designing a successful escape room experience, from the story and outlook of the set to the fluidity and difficulty level of clues and puzzles in the game.",
                 "authimg":"assets/blogs/blog-auth1.png",
                 "authname":"Brian Capps",
                 "blogcategory":[
@@ -240,7 +240,7 @@ export const getBlogHomePageData=()=>{
                     },
                 
                 ],
-                "lastupdate":"February 15, 2023"
+                "lastupdate":"March 02, 2023"
             },
             {
                 "id":"4",
