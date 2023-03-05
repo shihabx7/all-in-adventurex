@@ -151,7 +151,7 @@ export const getBlogHomePageData=()=>{
                 "slug":"everything-you-need-to-know-before-playing-an-escape-room",
                 "ftimg":"/assets/blogs/blog-ft.jpg",
                 "title":"EVERYTHING YOU NEED TO KNOW BEFORE PLAYING AN ESCAPE ROOM",
-                "blogdesc":"You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+                "blogdesc":"Before you approach the escape game, there are some definite tips about escape rooms that you need to know. Knowing these ahead, you can do better at the game and have more fun playing.",
                 "authimg":"assets/blogs/blog-auth1.png",
                 "authname":"by Brian Capps",
                 "blogcategory":[

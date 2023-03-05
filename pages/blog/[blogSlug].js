@@ -19,10 +19,10 @@ const SingleBlog=(props)=>{
     const [blpadding,setBlpadding]=useState('100px')
     useEffect(()=>{
         const blpadel=document.querySelector('#sbl-content')
-        const ftimgheight=document.querySelector("#sbl-ftimg").clientHeight
+        const ftimgheight=document.querySelector("#sbl-ftimg").offsetHeight
 
-        const pt=Math.floor(ftimgheight/2)
-        setBlpadding(pt+'px')
+        const pt=Math.floor(ftimgheight/2)+'px'
+        setBlpadding(pt)
 
     },[])
 

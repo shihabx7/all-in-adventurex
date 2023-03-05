@@ -146,11 +146,11 @@ const GameList=(props)=>{
                 <div className="link-btn mt-8 md:mt-16">
                     {
                         props.locationslug &&
-                        <a href={"/"+props.locationslug+"/events"} className="border-2 max-w-[280px] text-center block  mx-auto  border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">VIEW EVENTS</a>
+                        <a href={"/"+props.locationslug+"/events"} className="border-2 max-w-[280px] text-center block  mx-auto  border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">VIEW ALL EVENTS</a>
                     }
                     {
                         !props.locationslug &&
-                        <a href="/events" className="border-2 max-w-[280px] text-center block  mx-auto  border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">VIEW EVENTS</a>
+                        <a href="/events" className="border-2 max-w-[280px] text-center block  mx-auto  border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">VIEW ALL EVENTS</a>
                     }
                     
                 </div>

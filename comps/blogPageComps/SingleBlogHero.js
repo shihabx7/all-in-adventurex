@@ -57,8 +57,8 @@ const SingleBlogHero=(props)=>{
 
                 </div>
 
-                <div id="sbl-ftimg" className="sbl-ft-img-box max-w-[700px] mx-auto">
-                    <img className="sbl-ft-img  mb-[-38%]" src={props.pagedata.ftimg}></img>
+                <div id="sbl-ftimg" className="sbl-ft-img-box max-w-[840px] mx-auto">
+                    <img className="sbl-ft-img  mb-[-35%]" src={props.pagedata.ftimg}></img>
 
                 </div>
            

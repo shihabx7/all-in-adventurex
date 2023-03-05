@@ -429,7 +429,7 @@ const blogData={
                     "<p>Dating back to 2008 in Japan, The first escape game emerged. The inventor, Takao Kato, was a game creator and a Manga fanatic. The idea came to Kato as he wondered why interesting things never happened in his life as they happened in Mangas.</p>",
                     "<p>It all started with a unique adventure in story format and invited people to take part in the story. Suddenly, this art of his became a unique new form of entertainment.</p>",
                     "<p>This newly emerged form of entertainment quickly popularized itself across Asia, spread rapidly to Europe and then made its way into the Americas.</p>",
-                    "<p>The rest is history as you know it, but the burning question is, why did escape rooms become so popular?<b>Let's explore and find out, shall we!</b></p>",
+                    "<p>The rest is history as you know it, but the burning question is, why did escape rooms become so popular? Let's explore and find out, shall we!</p>",
                 "</div>",
                 "<div>",
                     "<h3>ESCAPE FROM DAILY ROUTINE</h3>",
@@ -448,7 +448,7 @@ const blogData={
                     "<h3>LOVE OF GAMES</h3>",
                     "<p>People have always loved playing games in one form or another. Games have been a top form of entertainment for many people since the early ages.</p>",
                     "<p>Instead of being on a board or computer screen, escape room game is now all around you multi-dimensionally with the added elements of sound, lighting, and ambiance that can immerse you even further into the game.</p>",
-                    "<p>Check out <a href=\"/activities\" class=\"text-red-600 hover:text-red-700\">all our escape room</a> here at All In Adventures.</p>",
+                    "<p>Check out <a href=\"/activities\" class=\"text-red-600 hover:text-red-700\">all our escape rooms</a> here at All In Adventures.</p>",
                 "</div>",
                 "<div>",
                     "<h3>DESIRE FOR CURIOSITY</h3>",
@@ -966,7 +966,7 @@ const blogData={
             "title":"All In Adventures Blog | What Makes A Good Escape Room?",
             "description":"A lot goes into designing a successful escape room experience, from the story and outlook of the set to the fluidity and difficulty level of clues and puzzles in the game. A great escape room should be planned to take participants on an enveloping, challenging adventure that pushes your thought boundaries as you have fun",
             "keywords":"escape room blog, all in adventures blog, mystery room blog, escape room news, all in adventures news, mystery room articles,",
-            "url":"/blog/what-makes-a-good-escape-room",
+            "url":"/blog/how-escape-rooms-help-communication",
             "metaindex":true,
             "metaimg":"/assets/blogs/WHAT-MAKES-A-GOOD-ESCAPE-ROOM.jpg"
           },
@@ -1126,7 +1126,7 @@ const blogData={
             "metaimg":"/assets/blogs/WHAT-MAKES-A-GOOD-ESCAPE-ROOM.jpg"
           },
           "pagedata":{
-            "pagetitle":"WHAT MAKES A GOOD ESCAPE ROOM?",
+            "pagetitle":"EVERYTHING YOU NEED TO KNOW BEFORE PLAYING AN ESCAPE ROOM",
             "description":"A lot goes into designing a successful escape room experience, from the story and outlook of the set to the fluidity and difficulty level of clues and puzzles in the game.",
             "ftimg":"/assets/blogs/WHAT-MAKES-A-GOOD-ESCAPE-ROOM.jpg",
             
