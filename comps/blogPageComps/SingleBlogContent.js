@@ -14,7 +14,7 @@ const SingleBlogContent=(props)=>{
          <div className="blog-share-btn-cont md:hidden"> 
          <div className="bg-[#fbf0d9] p-2 flex space-x-2 items-center"> 
              <div className="share-item pr-4"> 
-               <p className="font-os font-medium">SHARE NOW</p>
+               <p className="font-os font-medium share-hd">SHARE NOW</p>
              </div>
              <div className="share-item"> 
                     <FacebookShareButton

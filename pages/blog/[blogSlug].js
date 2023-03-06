@@ -17,6 +17,7 @@ import RelatedBlogs from "../../comps/blogPageComps/RelatedBlogs";
 
 const SingleBlog=(props)=>{
     const [blpadding,setBlpadding]=useState('100px')
+
     useEffect(()=>{
         const blpadel=document.querySelector('#sbl-content')
         const ftimgheight=document.querySelector("#sbl-ftimg").offsetHeight
@@ -71,7 +72,7 @@ const SingleBlog=(props)=>{
 {/* =========================================================================================main content ======== end */}
 </div>
 {/*=========================== blog content area===================*/}
-<div className="single-blog-content-holder bg-[#FFFCEB]" style={{paddingTop:blpadding}}> 
+<div className="single-blog-content-holder bg-[#FFFCEB] "> 
             <div id="sbl-content-box" className="blog-container max-w-[1060px] mx-auto px-4 ">
               <div className="flex sbl-content flex-col md:flex-row justify-between space-x-0 space-y-2 md:space-y-0 md:space-x-8 lg:space-x-12"> 
                 <div className="sbl-main max-w-[700px] pb-0 md:pb-12 md:border-b md:border-[#c4c4c4]"> 

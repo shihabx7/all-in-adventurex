@@ -16,8 +16,8 @@ const SingleBlogHero=(props)=>{
         <div className='max-w-7xl  mx-auto px-4 pt-8 pb-12 md:pt-12 md:pb-20 lg:pt-16 lg:pb-24 relative z-20'>
           {/* =============================share btn=========================================== */}
             <div className="blog-share-btn-cont fixed top-[300px]  z-20 hidden md:block"> 
-                <div className="bg-[#fbf0d9] p-2 pb-1 flex flex-col space-y-1"> 
-                    <div className="share-item"> 
+                <div className="bg-[#fbf0d9] p-2 pb-1 flex flex-col "> 
+                    <div className="share-item-desk"> 
                     <FacebookShareButton
                         url={"https://allinadventures.com"+props.pagedata.shareurl}
                         quote={props.pagedata.pagetitle}
@@ -28,7 +28,7 @@ const SingleBlogHero=(props)=>{
                         <FacebookIcon size={32}  /> 
                       </FacebookShareButton>
                     </div>
-                    <div className="share-item"> 
+                    <div className="share-item-desk mb-[4px] mt-[2px]"> 
                     <TwitterShareButton
                         title={props.pagedata.pagetitle }
                         via={"All in adventures"}
@@ -39,7 +39,7 @@ const SingleBlogHero=(props)=>{
                         <TwitterIcon size={32} />
                       </TwitterShareButton>
                       </div>
-                      <div className="share-item"> 
+                      <div className="share-item-desk"> 
                       <EmailShareButton
                       subject={props.pagedata.pagetitle }
                       body={props.pagedata.description}
@@ -68,8 +68,8 @@ const SingleBlogHero=(props)=>{
 
                 </div>
 
-                <div id="sbl-ftimg" className="sbl-ft-img-box max-w-[840px] mx-auto">
-                    <img className="sbl-ft-img  mb-[-38%] md:mb-[-35%]" src={props.pagedata.ftimg}></img>
+                <div id="sbl-ftimg" className="sbl-ft-img-box  mx-auto">
+                    <img className="sbl-ft-img  mb-[-38%] md:mb-[-35%] mx-auto" src={props.pagedata.ftimg}></img>
 
                 </div>
            

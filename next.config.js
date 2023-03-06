@@ -12,6 +12,11 @@ const gnRed=[
      permanent: prm,
    },
    {
+    source: '/terms-of-service',
+     destination: '/terms-of-services',
+     permanent: prm,
+   },
+   {
      source: '/gift-card',
       destination: '/gift-cards',
       permanent: prm,
@@ -28,7 +33,7 @@ const gnRed=[
     },
     {
      source: '/corporate-events',
-      destination: '/corporate-events',
+      destination: '/events/corporate-events',
       permanent: prm,
     },
     {
