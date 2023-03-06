@@ -51,6 +51,11 @@ const gnRed=[
       destination: '/corporate-contact',
       permanent: prm,
     },
+    {
+      source: '/careers/associates',
+       destination: '/careers/associate',
+       permanent: prm,
+     },
 
   ]
   // =========================================genarel redirect end
@@ -1580,12 +1585,142 @@ const lawrencevilleRed=[
   
   ]
 // =========================================-------------lawrenceville-ga  GA
+// =========================================-------------columbus-oh Oh 
+const columbusRed=[
+
+  {
+    source: '/locations/columbus-oh/events',
+     destination: '/columbus-oh/events',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/category/columbus-oh',
+     destination: '/columbus-oh/activities',
+     permanent: prm,
+   },
+
+
+{
+    source: '/rooms/beat-the-bomb-columbus-oh/',
+     destination: '/locations/columbus-oh',
+     permanent: prm,
+   },
+   
+   {
+    source: '/rooms/treasure-island-columbus-oh',
+     destination: '/columbus-oh/activities/treasure-island',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/superheros-adventure-columbus-oh',
+     destination: '/columbus-oh/activities/superheros-adventure',
+     permanent: prm,
+   },
+  
+  
+   {
+    source: '/rooms/zombie-apocalypse-columbus-oh',
+     destination: '/columbus-oh/activities/zombie-apocalypse',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/special-agent-columbus-oh',
+     destination: '/columbus-oh/activities/special-agent',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/hollywood-premiere-columbus-oh',
+     destination: '/columbus-oh/activities/hollywood-premiere',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/sherlocks-library-columbus-oh',
+     destination: '/columbus-oh/activities/sherlocks-library',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/houdinis-magic-cell-columbus-oh',
+     destination: '/columbus-oh/activities/houdinis-magic-cell',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-columbus-oh',
+     destination: '/columbus-oh/activities/black-ops',
+     permanent: prm,
+   },
+   
+   
+  
+  ]
+// =========================================-------------columbus-oh  Oh
+// =========================================-------------dayton-oh Oh 
+const daytonRed=[
+
+  {
+    source: '/locations/dayton-oh/events',
+     destination: '/dayton-oh/events',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/category/dayton-oh',
+     destination: '/dayton-oh/activities',
+     permanent: prm,
+   },
+   
+   {
+    source: '/rooms/treasure-island-dayton-oh',
+     destination: '/dayton-oh/activities/treasure-island',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/superheros-adventure-dayton-oh',
+     destination: '/dayton-oh/activities/superheros-adventure',
+     permanent: prm,
+   },
+  
+  
+   {
+    source: '/rooms/zombie-apocalypse-dayton-oh',
+     destination: '/dayton-oh/activities/zombie-apocalypse',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/special-agent-dayton-oh',
+     destination: '/dayton-oh/activities/special-agent',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/hollywood-premiere-dayton-oh',
+     destination: '/dayton-oh/activities/hollywood-premiere',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/sherlocks-library-dayton-oh',
+     destination: '/dayton-oh/activities/sherlocks-library',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/houdinis-magic-cell-dayton-oh',
+     destination: '/dayton-oh/activities/houdinis-magic-cell',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-dayton-oh',
+     destination: '/dayton-oh/activities/black-ops',
+     permanent: prm,
+   },
+  
+   
+  
+  ]
+// =========================================-------------dayton-oh  Oh
     
 
  const allRed=[...gnRed,...albanyRed,...buffaloRed,...middletownRed,...syracuseRed,...watertownRed,
                 ...westnykRed,...raleighRed,...bensalemRed,...holyokeRed,...hadleyRed,...kingstonRed,
                 ...nAttleboroughRed,...milfordRed,...manchesterRed,...waterburyRed,...eastBrunswickRed,
-                ...rockawayRed,...woodbridgeRed,...bowieRed,...whitemarshRed,...roanokeRed,...lawrencevilleRed]
+                ...rockawayRed,...woodbridgeRed,...bowieRed,...whitemarshRed,...roanokeRed,...lawrencevilleRed,
+              ...columbusRed,daytonRed]
 
 module.exports = {
  
