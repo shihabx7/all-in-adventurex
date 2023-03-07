@@ -1714,13 +1714,723 @@ const daytonRed=[
   
   ]
 // =========================================-------------dayton-oh  Oh
+// =========================================------------common
+const commonRed=[
+
+  {
+    source: '/2017/08',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/offline',
+     destination: '/',
+     permanent: prm,
+   },
+   
+   {
+    source: '/rooms/category',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2018/02',
+     destination: '/',
+     permanent: prm,
+   },
+  
+  
+   {
+    source: '/2017/page/120',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/2017/page/104',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/2017/10/29',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/category/monroeville-pa',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/12/12',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/2017/page/123',
+     destination: '/',
+     permanent: prm,
+   },
+    {
+    source: '/2017/09/16',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/2017/09/20',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/galleries/page/100',
+     destination: '/gallery',
+     permanent: prm,
+   },
+   {
+    source: '/category/florence-sc',
+     destination: '/locations',
+     permanent: prm,
+   },
+  {
+    source: '/category/aurora-il',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/category/spartanburg-sc',
+     destination: '/locations',
+     permanent: prm,
+   },
+   
+   {
+    source: '/category/florence-ky',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/locations/columbus-ga',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/category/scranton-pa',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/locations/winstonsalem-nc',
+     destination: '/locations',
+     permanent: prm,
+   },
+   
+   {
+    source: '/rooms/escape-from-alcatraz-winston-salem-nc',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/treasure-island-winston-salem-nc',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/superheros-adventure-winston-salem-nc',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/zombie-apocalypse-winston-salem-nc',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/hollywood-premiere-winston-salem-nc',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/sherlocks-library-winston-salem-nc',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/houdinis-magic-cell-winston-salem-nc',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-winston-salem-nc',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/locations/selinsgrove-pa',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-winston-salem-nc',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-winston-salem-nc',
+     destination: '/locations',
+     permanent: prm,
+   },
+   //===========================selinsgrove
+   {
+    source: '/category/selinsgrove-pa/page/11',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/09/18/september-17th-2017-selinsgrove-pa',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/escape-from-alcatraz-selinsgrove',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/treasure-island-selinsgrove',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/superheros-adventure-selinsgrove',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/zombie-apocalypse-selinsgrove',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/special-agent-selinsgrove',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/special-agent-selinsgrove',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/hollywood-premiere-selinsgrove',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/sherlocks-library-selinsgrove',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/houdinis-magic-cell-selinsgrove',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-selinsgrove',
+     destination: '/locations',
+     permanent: prm,
+   },
+   // ================================york town
+   {
+    source: '/locations/yorktown-heights-ny',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/escape-from-alcatraz-yorktown-heights-ny',
+     destination: '/locations',
+     permanent: prm,
+   },
+    {
+    source: '/rooms/treasure-island-yorktown-heights-ny',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/superheros-adventure-yorktown-heights-ny',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/escape-from-alcatraz-room-2-yorktown-heights-ny',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/zombie-apocalypse-yorktown-heights-ny',
+     destination: '/locations',
+     permanent: prm,
+   },
+    {
+    source: '/rooms/special-agent-yorktown-heights-ny',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/hollywood-premiere-yorktown-heights-ny',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/sherlocks-library-yorktown-heights-ny',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/houdinis-magic-cell-yorktown-heights-ny',
+     destination: '/locations',
+     permanent: prm,
+   },
+    {
+    source: '/rooms/black-ops-yorktown-heights-ny',
+     destination: '/locations',
+     permanent: prm,
+   },
+     {
+    source: '/category/asheville-nc',
+     destination: '/locations',
+     permanent: prm,
+   },
+    {
+    source: '/category/tuscaloosa-al',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2018/02/07',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/2017/11/20',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/2017/12/23',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/2017/09/21',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/2017/10/02',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/2017/08/page/3',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/2017/12/04/12317-aurora',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/09/29/092917-aurora',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/11/29/112817-aurora',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/11/29/112817-aurora',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/11/08/11717-aurora',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/beat-the-seat-scranton-pa',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/09/04/september-4-2017',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/09/24/september-24-2017',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/10/08/october-7th-2017',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/12/30/december-29-2017',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2018/01/16/january-15-2018',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/11/25/112017-112417-waterbury',
+     destination: '/locations/waterbury-ct',
+     permanent: prm,
+   },
+   
+   {
+    source: '/2017/07/29/july-29-2017',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/2017/10/23/october-22-2017',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/2017/09/22/september-21st-2017',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/2017/12/23/december-23-selinsgrove',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/2017/11/19/111917-asheville-nc',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/10/08/octpber-8th-2017',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/2018/01/09/december-12-2017',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/2017/10/12/october-112017-florencesc',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2018/01/08/january-8-2018',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/2017/07/25/july-25-2017-holyoke',
+     destination: '/locations/holyoke-ma',
+     permanent: prm,
+   },
+   {
+    source: '/2018/01/09/jan-8th-2018-asheville',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/12/18/december-17-2017-2',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/11/12/november-12-2017-roanoke',
+     destination: '/locations/roanoke-va',
+     permanent: prm,
+   },
+   {
+    source: '/2017/10/10/october-10th-2017-hadley',
+     destination: '/locations/hadley-ma',
+     permanent: prm,
+   },
+   {
+    source: '/2017/07/27/may-12-2017-hadley',
+     destination: '/locations/hadley-ma',
+     permanent: prm,
+   },
+   {
+    source: '/2017/09/21/september-21st-2017-hadley',
+     destination: '/locations/hadley-ma',
+     permanent: prm,
+   },
+   {
+    source: '/2017/09/29/september-28th-2017-hadley',
+     destination: '/locations/hadley-ma',
+     permanent: prm,
+   },
+   {
+    source: '/2017/09/23/september-23rd-2017-hadley',
+     destination: '/locations/hadley-ma',
+     permanent: prm,
+   },
+    {
+    source: '/2017/09/03/september-3-2017-hadley',
+     destination: '/locations/hadley-ma',
+     permanent: prm,
+   },
+   {
+    source: '/2017/08/22/august-21-2017-selinsgrove',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/11/06/november-6-2017-manchester',
+     destination: '/locations/manchester-ct',
+     permanent: prm,
+   },
+   {
+    source: '/2017/12/18/waterbury-12-17-17',
+     destination: '/locations/waterbury-ct',
+     permanent: prm,
+   },
+   {
+    source: '/2018/01/03/waterbury-1-2-18',
+     destination: '/locations/waterbury-ct',
+     permanent: prm,
+   },
+   {
+    source: '/2017/12/23/december-22-2017-waterbury',
+     destination: '/locations/waterbury-ct',
+     permanent: prm,
+   },
+   {
+    source: '/2017/12/09/december-9-2017-holyoke',
+     destination: '/locations/holyoke-ma',
+     permanent: prm,
+   },
+   {
+    source: '/2017/07/31/july-30-2017-hadley',
+     destination: '/locations/hadley-ma',
+     permanent: prm,
+   },
+   {
+    source: '/2017/12/24/december-24-2017-chattanooga',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2018/01/10/january-10-2018-holyoke',
+     destination: '/locations/holyoke-ma',
+     permanent: prm,
+   },
+   {
+    source: '/2017/11/18/november-18-2017-roanoke',
+     destination: '/locations/roanoke-va',
+     permanent: prm,
+   },
+   {
+    source: '/2017/10/23/selinsgrove-october-23-2017',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/07/27/june-11-2017-hadley',
+     destination: '/locations/hadley-ma',
+     permanent: prm,
+   },
+   {
+    source: '/2017/10/22/october-222017-florence-sc',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/10/22/october-22-2017-manchester',
+     destination: '/locations/manchester-ct',
+     permanent: prm,
+   },
+    {
+    source: '/2017/12/15/december-15-2017-waterbury',
+     destination: '/locations/waterbury-ct',
+     permanent: prm,
+   },
+    {
+    source: '/2017/11/08/november-8-2017-chattanooga',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/2017/08/31/august-31-2017-hadley',
+     destination: '/locations/hadley-ma',
+     permanent: prm,
+   },
+   {
+    source: '/2017/08/12/august-11-2017-florence',
+     destination: '/',
+     permanent: prm,
+   },
+    {
+    source: '/2017/08/14/august-13-2917-holyoke',
+     destination: '/locations/holyoke-ma',
+     permanent: prm,
+   },
+   {
+    source: '/2017/12/31/december-31-2017-hadley',
+     destination: '/locations/hadley-ma',
+     permanent: prm,
+   },
+   {
+    source: '/2017/10/25/october-25-2017-hadley-ma',
+     destination: '/locations/hadley-ma',
+     permanent: prm,
+   },
+   {
+    source: '/2018/01/09/florence-ky-1-8-18',
+     destination: '/locations',
+     permanent: prm,
+   },
+    {
+    source: '/2018/01/01/january-1-2017-spartanburg-sc',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/12/20/december-20-2017-waterbury-ct',
+     destination: '/locations/waterbury-ct',
+     permanent: prm,
+   },
+    {
+    source: '/2018/01/02/january-1-2018-waterbury-ct',
+     destination: '/locations/waterbury-ct',
+     permanent: prm,
+   },
+   {
+    source: '/2017/12/24/waterbury-ct-12-24-17',
+     destination: '/locations/waterbury-ct',
+     permanent: prm,
+   },
+   {
+    source: '/2017/12/29/december-28-2017-bensalem-pa',
+     destination: '/locations/bensalem-pa',
+     permanent: prm,
+   },
+   {
+    source: '/2017/12/09/december-8-2017white-marsh',
+     destination: '/locations/white-marsh-md',
+     permanent: prm,
+   },
+   {
+    source: '/2017/12/29/december-28-2017-white-marsh',
+     destination: '/locations/white-marsh-md',
+     permanent: prm,
+   },
+   {
+    source: '/2017/09/15/september-15-2017-white-marsh',
+     destination: '/locations/white-marsh-md',
+     permanent: prm,
+   },
+    {
+    source: '/2017/11/11/november-11-2017-white-marsh',
+     destination: '/locations/white-marsh-md',
+     permanent: prm,
+   },
+   {
+    source: '/2017/09/19/september-19th-2017-white-marsh',
+     destination: '/locations/white-marsh-md',
+     permanent: prm,
+   },
+   {
+    source: '/2018/01/09/december-19-2017-scranton-pa',
+     destination: '/locations',
+     permanent: prm,
+   },
+    {
+    source: '/2017/12/21/florence-ky-12-20-17',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2018/01/02/january-1-2018-bensalem-pa',
+     destination: '/locations/bensalem-pa',
+     permanent: prm,
+   },
+   {
+    source: '/2017/12/20/december-19-2017-waterbury-ct',
+     destination: '/locations/waterbury-ct',
+     permanent: prm,
+   },
+   {
+    source: '/2017/10/08/october-8-2017-white-marsh-md',
+     destination: '/locations/white-marsh-md',
+     permanent: prm,
+   },
+   {
+    source: '/2017/11/25/november-25-2017-white-marsh-md',
+     destination: '/locations/white-marsh-md',
+     permanent: prm,
+   },
+   {
+    source: '/2017/12/15/december-11-14-2017-florence-sc',
+     destination: '/locations',
+     permanent: prm,
+   },
+   {
+    source: '/2017/09/12/september-8-2017-white-marsh-2',
+     destination: '/locations/white-marsh-md',
+     permanent: prm,
+   },
+    {
+    source: '/2017/11/25/november-25-2017-white-marsh-2',
+     destination: '/locations/white-marsh-md',
+     permanent: prm,
+   },
+   {
+    source: '/2017/11/09/november-9-2017-white-marsh-md',
+     destination: '/locations/white-marsh-md',
+     permanent: prm,
+   },
+   // ========================================evs
+   {
+    source: '/locations/winstonsalem-nc/events',
+     destination: '/events',
+     permanent: prm,
+   },
+   {
+    source: '/locations/selinsgrove-pa/events',
+     destination: '/events',
+     permanent: prm,
+   },
+   {
+    source: '/locations/yorktown-heights-ny/events',
+     destination: '/events',
+     permanent: prm,
+   },
+    {
+    source: '/locations/scranton-pa/events',
+     destination: '/events',
+     permanent: prm,
+   },
+  
+  ]
+// =========================================-------------Common
     
 
  const allRed=[...gnRed,...albanyRed,...buffaloRed,...middletownRed,...syracuseRed,...watertownRed,
                 ...westnykRed,...raleighRed,...bensalemRed,...holyokeRed,...hadleyRed,...kingstonRed,
                 ...nAttleboroughRed,...milfordRed,...manchesterRed,...waterburyRed,...eastBrunswickRed,
                 ...rockawayRed,...woodbridgeRed,...bowieRed,...whitemarshRed,...roanokeRed,...lawrencevilleRed,
-              ...columbusRed,daytonRed]
+              ...columbusRed,...daytonRed,...commonRed]
 
 module.exports = {
  
