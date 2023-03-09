@@ -381,7 +381,7 @@ const checkOther=(e)=>{
         else{
             setFormErrFlag(false)
             setEduErr({...eduErr,cdegreeErr:false})
-            setEducation({...education,college:{...education.college,degree:deg}})
+            setEducation({...education,college:{...education.other,degree:deg}})
                 e.target.classList.remove("focus-red")
                 e.target.classList.add("focus-green")
                 
@@ -391,7 +391,7 @@ const checkOther=(e)=>{
     else{
       setFormErrFlag(true)
       setEduErr({...eduErr,cdegreeErr:true})
-      setEducation({...education,college:{...education.college,degree:deg}})
+      setEducation({...education,college:{...education.other,degree:deg}})
         e.target.classList.remove("focus-green")
         e.target.classList.add("focus-red")
     }
