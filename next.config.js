@@ -1695,7 +1695,7 @@ const daytonRed=[
      permanent: prm,
    },
    {
-    source: '/rooms/ rooms/escape-from-alcatraz-dayton-oh/',
+    source: '/rooms/ rooms/escape-from-alcatraz-dayton-oh',
      destination: '/dayton-oh/activities/escape-from-alcatraz',
      permanent: prm,
    },
