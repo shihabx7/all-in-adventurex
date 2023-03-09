@@ -1294,11 +1294,11 @@ export const getSingleEventPageData=(eventslug,locationslug)=>{
                      
                        "eventdata":{
                         "why_book":"Problem-solving, critical thinking, and observational awareness - all important skills for growing young minds to strengthen. Our escape rooms will require your students to work together for an exciting intellectual challenge that's more than your average field trip! With rooms that pair well with historical and literary themes, you can effortlessly weave them into your lesson plan!",
-                        "why_book_img":"/assets/all-event-details/allinadventures-events-gender-reveal-party-sec1.jpg",
+                        "why_book_img":"/assets/all-event-details/allinadventures-events-school-events-sec1.jpg",
                         "offer":"You can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Time for lunch? Check out our catered party option and let us take care of the clean-up! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card for your next class trip!",
-                        "offer_img":"/assets/all-event-details/allinadventures-events-gender-reveal-party-sec2.jpg",
+                        "offer_img":"/assets/all-event-details/allinadventures-events-school-events-sec2.jpg",
                         "what_expect":"We have escape rooms for all skill levels to challenge your class. With 50 minutes on the clock, your students will have to solve their mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
-                        "what_expect_img":"/assets/all-event-details/allinadventures-events-gender-reveal-party-sec3.jpg",
+                        "what_expect_img":"/assets/all-event-details/allinadventures-events-school-events-sec3.jpg",
                         "videoid":"pfdyF_d4Z40"
                       
                         },
