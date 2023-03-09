@@ -68,8 +68,9 @@ const JobDisclaimer=()=>{
                                      </p>
                                  </div>
                                  <div className="flex flex-col md:flex-row justify-center md:space-x-4 mt-8 md:mt-12 lg:mt-16 "> 
-                                 <a href="/careers/apply" className="w-[290px] mx-auto md:mx-1  md:w-[300px] my-2 uppercase py-2 md:py-3   text-lg text-white font-medium border-2 border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 rounded-full text-center">APPLY NOW</a>
-                                 <a href="/careers" className="w-[290px] mx-auto md:mx-1md:w-[300px] my-2 uppercase py-2 md:py-3  text-lg text-[#464646] hover:text-white font-medium border-2 border-red-600 hover:border-red-700 bg-transparent hover:bg-red-700 rounded-full text-center">VIEW ALL JOB POSITION</a>
+                                
+                                 <a href="/careers" className="w-[290px] mx-auto md:mx-1 md:w-[300px] my-2 uppercase py-2 md:py-3  text-lg text-white  font-medium border-2 border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 rounded-full text-center">VIEW ALL JOB POSITIONS</a>
+                                 <a href="/careers/apply" className="w-[290px] mx-auto md:mx-1  md:w-[300px] my-2 uppercase py-2 md:py-3   text-lg text-[#464646] hover:text-white font-medium border-2 bg-transparent border-red-600 hover:border-red-700  hover:bg-red-700 rounded-full text-center">APPLY NOW</a>
                                  </div>
                                   {/*=============privacy-content Last Updated: January 26th, 2022 end==============*/}
                                  
