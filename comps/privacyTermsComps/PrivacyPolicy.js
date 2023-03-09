@@ -368,7 +368,7 @@ const PrivacyPolicy=()=>{
                                          the scope of the breach and restore reasonable integrity to the system, as well as for the legitimate needs of law enforcement,
                                           if notification would impede a criminal investigation. From time to time, we evaluate new technologies for protecting information and,
                                            when appropriate, we will undertake reasonable efforts to upgrade our information security systems. If you notice or suspect any security
-                                            violations, please contact us by sending an email to <a class="text-red-600 hover:text-red-700 underline underline-offset-4" href="mailto:privacy@allinadventures.com">privacy@allinadventures.com.</a> 
+                                            violations, please contact us by sending an email to <a className="text-red-600 hover:text-red-700 underline underline-offset-4" href="mailto:privacy@allinadventures.com">privacy@allinadventures.com.</a> 
 
                                       </p>
                                     
@@ -538,9 +538,9 @@ const PrivacyPolicy=()=>{
                                       <h3 className="text-gray-700 font-os font-bold text-xl md:text-2xl lg:text-3xl ">11. CONTACT US</h3>
                                       <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
                                       If you have any questions about this Privacy Policy or any of the above,
-                                       please email us at <a class="text-red-600 hover:text-red-700 underline underline-offset-4" href="mailto:privacy@allinadventures.com">privacy@allinadventures.com.</a> You may contact us by mail
+                                       please email us at <a className="text-red-600 hover:text-red-700 underline underline-offset-4" href="mailto:privacy@allinadventures.com">privacy@allinadventures.com.</a> You may contact us by mail
                                         at: Mystery Room LLC, Address: 3883 Rogers Bridge Rd NW Suite 501 Duluth, GA 30097,
-                                         call us at <a  href="tel:+1 844-502-5546" class="text-red-600 underline hover:text-red-700">+1 844-502-5546</a>.
+                                         call us at <a  href="tel:+1 844-502-5546" className="text-red-600 underline hover:text-red-700">+1 844-502-5546</a>.
                                     </p>
                                    
                                      
