@@ -1,11 +1,48 @@
 import LocationBtn from "../util/LocationBtn";
 import { FacebookShareButton, TwitterShareButton,EmailShareButton } from "react-share";
 import { FacebookIcon, TwitterIcon,EmailIcon } from "react-share";
+import { useState,useCallback,useEffect } from "react";
 const SingleBlogHero=(props)=>{
+  const [scrollY, setScrollY] = useState(0);
+  const onScroll = useCallback(event => {
+    const headerHeight=document.getElementById('header').offsetHeight
+
+    //const heroHeight=document.querySelector('.single-blog-hero').offsetHeight
+   // const contentHeight=document.querySelector('.sbl-desc').offsetHeight
+   const heroHeight=document.getElementById('sblh').offsetHeight
+    const contentHeight=document.getElementById('sbld').offsetHeight
+    const relatedHeight=document.getElementById('related-blog').offsetHeight
+    const totalHeigth=headerHeight+heroHeight+contentHeight
+    const desktopShare=document.getElementById('dsk-share')
+    const { pageYOffset, scrollY } = window;
+    if(scrollY>totalHeigth){
+      desktopShare.classList.remove('md:block')
+      desktopShare.classList.add('hidden')
+
+    }
+    else{
+      desktopShare.classList.remove('hidden')
+      desktopShare.classList.add('md:block')
+    }
+
+    
+   // console.log("headerHeight", headerHeight, "heroHeight", heroHeight,'content',contentHeight, 'total',totalHeigth);
+    //console.log("yOffset", pageYOffset, "scrollY", scrollY);
+    setScrollY(window.pageYOffset);
+}, []);
+
+useEffect(() => {
+  //add eventlistener to window
+  window.addEventListener("scroll", onScroll, { passive: true });
+  // remove event on unmount to prevent a memory leak with the cleanup
+  return () => {
+     window.removeEventListener("scroll", onScroll, { passive: true });
+  }
+}, []);
 
     return (
    
-    <div className="single-blog-hero" style={{
+    <div id="sblh" className="single-blog-hero" style={{
         background:"linear-gradient(0deg, rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url('/assets/blogs/single-blog-bg.png')",
         backgroundSize:"cover"
         
@@ -15,7 +52,7 @@ const SingleBlogHero=(props)=>{
         
         <div className='max-w-7xl  mx-auto px-4 pt-8 pb-12 md:pt-12 md:pb-20 lg:pt-16 lg:pb-24 relative z-20'>
           {/* =============================share btn=========================================== */}
-            <div className="blog-share-btn-cont fixed top-[300px]  z-20 hidden md:block"> 
+            <div id="dsk-share" className="blog-share-btn-cont fixed top-[300px]  z-20 hidden md:block"> 
                 <div className="bg-[#fbf0d9] p-2 pb-1 flex flex-col "> 
                     <div className="share-item-desk"> 
                     <FacebookShareButton
@@ -68,8 +105,8 @@ const SingleBlogHero=(props)=>{
 
                 </div>
 
-                <div id="sbl-ftimg" className="sbl-ft-img-box  mx-auto">
-                    <img className="sbl-ft-img  mb-[-38%] md:mb-[-35%] mx-auto" src={props.pagedata.ftimg}></img>
+                <div id="sbl-ftimg" className="sbl-ft-img-box  mx-auto pt-2 md:pt-4">
+                    <img className="blog-ft-shadow sbl-ft-img mb-[-38%] md:mb-[-35%] mx-auto " src={props.pagedata.ftimg}></img>
 
                 </div>
            

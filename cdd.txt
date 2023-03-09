@@ -5,3 +5,11 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/shihabx7/all-in-adventure.git
 git push -u origin main
+
+// blog cat
+escaoe room
+tips & tricks
+team building
+event & party
+things to do
+gift ideas

@@ -950,6 +950,7 @@ const checkName=(e,ref)=>{
                                    <input 
                                         type="checkbox"  
                                         onChange={(e)=>checkIsagree(e)}
+                                        checked={references.isAgree==true? "checked":''}
                                         id="tq"/> 
                                         <label htmlFor="tq" className="text-[#222222] text-lg">I agree</label> 
                                         

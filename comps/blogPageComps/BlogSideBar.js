@@ -1,7 +1,7 @@
 const BlogSideBar=()=>{
 return (
   <> 
-    <div className="font-os pb-4 md:pb-2 pt-10 md:pt-14 text-2xl lg:text-2xl xl:text-3xl text-[#4E4D4B] font-semibold md:text-center">SEE WHAT WE OFFER </div>
+    <div className="font-os pb-4 md:pb-2 pt-10 md:pt-[108px] text-2xl lg:text-2xl xl:text-3xl text-[#4E4D4B] font-semibold md:text-center">SEE WHAT WE OFFER </div>
     <div className="thank-bottom grid grid-cols-1  gap-y-8 md:gap-y-4 mt-2 ">
                             <div className="group thank-link-box relative">
                               <div className="thank-ev-head absolute top-0 left-0 w-full z-10 pt-10 pb-8 md:pb-8 lg:pb-12">

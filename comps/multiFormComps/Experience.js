@@ -319,7 +319,7 @@ const Experience=({jobExp,setJobExp,setFormErrFlag,jobPrevErr})=>{
             e.target.classList.remove("focus-green")
              e.target.classList.add("focus-red")
         }
-        console.log(jobExp)
+        //console.log(jobExp)
      }
      // checckskill validation------------------------
      const checkSkillList=(e)=>{

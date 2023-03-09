@@ -5,13 +5,13 @@ const SingleBlogContent=(props)=>{
 
     return(
         <div> 
-        <div className="sbl-desc"  dangerouslySetInnerHTML={{ __html: props.blogdesc.join('') }}> 
+        <div id="sbld" className="sbl-desc"  dangerouslySetInnerHTML={{ __html: props.blogdesc.join('') }}> 
               
 
                     
         </div>
          {/* =============================share btn=========================================== */}
-         <div className="blog-share-btn-cont md:hidden"> 
+         <div  className="blog-share-btn-cont md:hidden"> 
          <div className="bg-[#fbf0d9] p-2 flex space-x-2 items-center"> 
              <div className="share-item pr-4"> 
                <p className="font-os font-medium share-hd">SHARE NOW</p>

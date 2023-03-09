@@ -2,7 +2,7 @@
 import BlogCards from "./BlogCards"
 const RelatedBlogs=(props)=>{
     return (
-        <div className="bg-[#FFFCEB] ">
+        <div id="related-blog" className="bg-[#FFFCEB] ">
             <div className="max-w-[1060px] mx-auto px-4 pt-10 pb-16 md:py-16">
                 <div className="blog-cat-title">
                 <h3 className="font-medium font-os text-xl md:text-2xl text-[#4E4D4B] uppercase">More Blog Post Like This</h3>

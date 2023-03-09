@@ -739,7 +739,7 @@ const [formErr,setFormErr]=useState({
                 } 
                 {
                     isSend==true &&
-                    <div  className="btn-back px-6 py-2 md:text-lg rounded bg-red-600 hover:bg-red-700  text-white w-[170px]"><div class="loader font-medium">Submitting</div></div>
+                    <div  className="btn-back px-6 py-2 md:text-lg rounded bg-red-600 hover:bg-red-700  text-white w-[170px]"><div className="loader font-medium">Submitting</div></div>
                 } 
               
                 
