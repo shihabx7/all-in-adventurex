@@ -78,22 +78,34 @@ window.onscroll = function() {
  
 
     var currentScrollPos = window.pageYOffset;
+    //console.log("prev",prevScrollpos)
+//console.log("curr",currentScrollPos)
   
-  if (prevScrollpos > currentScrollPos) {
+  if (prevScrollpos > currentScrollPos ) {
     
-    document.getElementById('header').style.top = "0px"
-  } 
-  else{
-    if(w<768){
-      document.getElementById('header').style.top = "-"+headerHeight
-    }
-    
-  }
- prevScrollpos = currentScrollPos;
+         
+          document.getElementById('header').style.top = "0px"
+          //prevScrollpos = currentScrollPos-10;
+          
+         }
+          
+   else{
+         if(w<768){
+   
+            document.getElementById('header').style.top = "-"+headerHeight
+            
+          //  prevScrollpos = currentScrollPos;
+                     
+                   }
 
+                  
+                   
+          }
+          prevScrollpos = currentScrollPos 
+          
   }
   else{
     document.getElementById('header').style.position = "unset"
   }
-
+ 
 }
