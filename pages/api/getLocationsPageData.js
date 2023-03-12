@@ -241,7 +241,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                         "mall":"Destiny USA",
                                         "alt":'allinadventures-escape-room-syracuse-ny-destiny-usa-mall-hero',
                                         "email":"store107@allinadventures.com",
-                                        "mgremail":"mgr103@allinadventures.com",
+                                        "mgremail":"mgr107@allinadventures.com",
                                         "position": { lat: 43.06821706293749, lng: -76.17159336874649},
                                         "hours":[
                                                 {

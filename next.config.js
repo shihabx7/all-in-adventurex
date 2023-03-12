@@ -17,6 +17,12 @@ const gnRed=[
      permanent: prm,
    },
    {
+    source: '/locations/austin-tx/events',
+     destination: '/events',
+     permanent: prm,
+   },
+   
+   {
      source: '/gift-card',
       destination: '/gift-cards',
       permanent: prm,
@@ -1601,7 +1607,7 @@ const columbusRed=[
 
 
 {
-    source: '/rooms/beat-the-bomb-columbus-oh/',
+    source: '/rooms/beat-the-bomb-columbus-oh',
      destination: '/locations/columbus-oh',
      permanent: prm,
    },
@@ -1633,6 +1639,12 @@ const columbusRed=[
      destination: '/columbus-oh/activities/hollywood-premiere',
      permanent: prm,
    },
+   {
+    source: '/rooms/escape-from-alcatraz-columbus-oh',
+     destination: '/columbus-oh/activities/escape-from-alcatraz',
+     permanent: prm,
+   },
+   
    {
     source: '/rooms/sherlocks-library-columbus-oh',
      destination: '/columbus-oh/activities/sherlocks-library',

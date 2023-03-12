@@ -305,7 +305,7 @@ export const getAllFaq=()=>{
                             "id":24,
                             "category":"all",
                             "group":"getting_started",
-                            "ques":"How can I work at The Escape Game?",
+                            "ques":"How can I work at All In Adventures?",
                             "ans":[
                               "Please visit <a href=\"/careers\" class=\"text-red-600 hover:text-red-700 \"> allinadventures.com/careers</a>",
                               " to view all available positions.",

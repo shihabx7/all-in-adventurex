@@ -78,14 +78,19 @@ window.onscroll = function() {
  
 
     var currentScrollPos = window.pageYOffset;
-    //console.log("prev",prevScrollpos)
-//console.log("curr",currentScrollPos)
+    console.log("prev",prevScrollpos)
+console.log("curr",currentScrollPos)
   
   if (prevScrollpos > currentScrollPos ) {
     
-         
+        if((prevScrollpos-currentScrollPos)>100) {
           document.getElementById('header').style.top = "0px"
-          //prevScrollpos = currentScrollPos-10;
+        }    
+        else{
+          prevScrollpos = currentScrollPos;
+        }
+          
+          
           
          }
           
@@ -94,14 +99,14 @@ window.onscroll = function() {
    
             document.getElementById('header').style.top = "-"+headerHeight
             
-          //  prevScrollpos = currentScrollPos;
+            
                      
                    }
 
-                  
+                   prevScrollpos = currentScrollPos;
                    
           }
-          prevScrollpos = currentScrollPos 
+          //prevScrollpos = currentScrollPos 
           
   }
   else{
