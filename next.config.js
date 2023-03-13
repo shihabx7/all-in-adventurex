@@ -1712,7 +1712,7 @@ const daytonRed=[
      permanent: prm,
    },
    {
-    source: '/rooms/rooms/escape-from-alcatraz-dayton-oh',
+    source: '/rooms/escape-from-alcatraz-dayton-oh',
      destination: '/dayton-oh/activities/escape-from-alcatraz',
      permanent: prm,
    },
@@ -2658,7 +2658,7 @@ const commonRed=[
                 ...westnykRed,...raleighRed,...bensalemRed,...holyokeRed,...hadleyRed,...kingstonRed,
                 ...nAttleboroughRed,...milfordRed,...manchesterRed,...waterburyRed,...eastBrunswickRed,
                 ...rockawayRed,...woodbridgeRed,...bowieRed,...whitemarshRed,...roanokeRed,...lawrencevilleRed,
-              ...columbusRed,...daytonRed,...commonRed]
+              ...columbusRed,...daytonRed,...mentorRed,...albanyRed,...austinRed,...commonRed]
 
 module.exports = {
  
