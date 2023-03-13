@@ -1780,7 +1780,7 @@ const mentorRed=[
      permanent: prm,
    },
    {
-    source: '/rooms/rooms/escape-from-alcatraz-mentor-oh',
+    source: '/rooms/escape-from-alcatraz-mentor-oh',
      destination: '/mentor-oh/activities/escape-from-alcatraz',
      permanent: prm,
    },
@@ -1848,7 +1848,7 @@ const poughkeepsieRed=[
      permanent: prm,
    },
    {
-    source: '/rooms/rooms/escape-from-alcatraz-poughkeepsie-ny',
+    source: '/rooms/escape-from-alcatraz-poughkeepsie-ny',
      destination: '/poughkeepsie-ny/activities/escape-from-alcatraz',
      permanent: prm,
    },
@@ -1916,7 +1916,7 @@ const austinRed=[
      permanent: prm,
    },
    {
-    source: '/rooms/rooms/escape-from-alcatraz-austin-tx',
+    source: '/rooms/escape-from-alcatraz-austin-tx',
      destination: '/',
      permanent: prm,
    },
@@ -2658,7 +2658,7 @@ const commonRed=[
                 ...westnykRed,...raleighRed,...bensalemRed,...holyokeRed,...hadleyRed,...kingstonRed,
                 ...nAttleboroughRed,...milfordRed,...manchesterRed,...waterburyRed,...eastBrunswickRed,
                 ...rockawayRed,...woodbridgeRed,...bowieRed,...whitemarshRed,...roanokeRed,...lawrencevilleRed,
-              ...columbusRed,...daytonRed,...mentorRed,...albanyRed,...austinRed,...commonRed]
+              ...columbusRed,...daytonRed,...mentorRed,...poughkeepsieRed,...austinRed,...commonRed]
 
 module.exports = {
  
