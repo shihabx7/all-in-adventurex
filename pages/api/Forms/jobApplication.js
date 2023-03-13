@@ -99,8 +99,8 @@ export default async function jobApplicationHandler(req, res) {
       try {
         await transporter.sendMail({
           from: "sender@allinadventures.com",
-          to: "shihab.dgency@gmail.com",
-        //to: "careers@allinadventures.com",
+          //to: "shihab.dgency@gmail.com",
+        to: "careers@allinadventures.com",
         bcc:"dgency.com@gmail.com,shihab.dgency@gmail.com",
           subject: `Job Application - ${retbody.info1.lName} ${retbody.info1.fName}`,
           html: `
