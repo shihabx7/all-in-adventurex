@@ -348,8 +348,8 @@ const checkOther=(e)=>{
         
       
             setFormErrFlag(false)
-            setEduErr({...eduErr,cgradErr:false})
-            setEducation({...education,college:{...education.college,isGraduated:gard}})
+            setEduErr({...eduErr,otgradErr:false})
+            setEducation({...education,other:{...education.other,isGraduated:gard}})
                 e.target.classList.remove("focus-red")
                 e.target.classList.add("focus-green")
                 
@@ -357,7 +357,7 @@ const checkOther=(e)=>{
     }
     else{
      
-      setEducation({...education,college:{...education.college,isGraduated:gard}})
+      setEducation({...education,other:{...education.other,isGraduated:gard}})
         e.target.classList.remove("focus-green")
        // e.target.classList.add("focus-red")
     }
@@ -373,15 +373,15 @@ const checkOther=(e)=>{
     if(deg.length>2 && deg.length<41){
         if(!digPatt.test(deg)){
                  setFormErrFlag(true)
-                 setEduErr({...eduErr,cdegreeErr:true})
+                 setEduErr({...eduErr,otdegreeErr:true})
                 e.target.classList.remove("focus-green")
                 e.target.classList.add("focus-red")
                 
         }
         else{
             setFormErrFlag(false)
-            setEduErr({...eduErr,cdegreeErr:false})
-            setEducation({...education,college:{...education.other,degree:deg}})
+            setEduErr({...eduErr,otdegreeErr:false})
+            setEducation({...education,other:{...education.other,degree:deg}})
                 e.target.classList.remove("focus-red")
                 e.target.classList.add("focus-green")
                 
@@ -390,8 +390,8 @@ const checkOther=(e)=>{
     
     else{
       setFormErrFlag(true)
-      setEduErr({...eduErr,cdegreeErr:true})
-      setEducation({...education,college:{...education.other,degree:deg}})
+      setEduErr({...eduErr,otdegreeErr:true})
+      setEducation({...education,other:{...education.other,degree:deg}})
         e.target.classList.remove("focus-green")
         e.target.classList.add("focus-red")
     }

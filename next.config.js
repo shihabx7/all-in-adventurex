@@ -1766,7 +1766,7 @@ const mentorRed=[
   
    {
     source: '/rooms/zombie-apocalypse-mentor-oh',
-     destination: '/mentor-oh/activities/zombie-apocalypse',
+     destination: '/mentor-oh/activities',
      permanent: prm,
    },
    {
