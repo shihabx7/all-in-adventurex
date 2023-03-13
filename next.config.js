@@ -21,6 +21,11 @@ const gnRed=[
      destination: '/events',
      permanent: prm,
    },
+   {
+    source: '/rooms/black-ops-austin-tx',
+     destination: '/',
+     permanent: prm,
+   },
    
    {
      source: '/gift-card',
@@ -1733,6 +1738,210 @@ const daytonRed=[
   
   ]
 // =========================================-------------dayton-oh  Oh
+// =========================================-------------mentor-oh Oh 
+const mentorRed=[
+
+  {
+    source: '/locations/mentor-oh/events',
+     destination: '/mentor-oh/events',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/category/mentor-oh',
+     destination: '/mentor-oh/activities',
+     permanent: prm,
+   },
+   
+   {
+    source: '/rooms/treasure-island-mentor-oh',
+     destination: '/mentor-oh/activities/treasure-island',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/superheros-adventure-mentor-oh',
+     destination: '/mentor-oh/activities/superheros-adventure',
+     permanent: prm,
+   },
+  
+  
+   {
+    source: '/rooms/zombie-apocalypse-mentor-oh',
+     destination: '/mentor-oh/activities/zombie-apocalypse',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/special-agent-mentor-oh',
+     destination: '/mentor-oh/activities/special-agent',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/hollywood-premiere-mentor-oh',
+     destination: '/mentor-oh/activities/hollywood-premiere',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/rooms/escape-from-alcatraz-mentor-oh',
+     destination: '/mentor-oh/activities/escape-from-alcatraz',
+     permanent: prm,
+   },
+
+  
+   {
+    source: '/rooms/sherlocks-library-mentor-oh',
+     destination: '/mentor-oh/activities/sherlocks-library',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/houdinis-magic-cell-mentor-oh',
+     destination: '/mentor-oh/activities/houdinis-magic-cell',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-mentor-oh',
+     destination: '/mentor-oh/activities/black-ops',
+     permanent: prm,
+   },
+  
+   
+  
+  ]
+// =========================================-------------mentor-oh  Oh
+// =========================================------------poughkeepsieRed  ny
+const poughkeepsieRed=[
+
+  {
+    source: '/locations/poughkeepsie-ny/events',
+     destination: '/poughkeepsie-ny/events',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/category/poughkeepsie-ny',
+     destination: '/poughkeepsie-ny/activities',
+     permanent: prm,
+   },
+   
+   {
+    source: '/rooms/treasure-island-poughkeepsie-ny',
+     destination: '/poughkeepsie-ny/activities/treasure-island',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/superheros-adventure-poughkeepsie-ny',
+     destination: '/poughkeepsie-ny/activities/superheros-adventure',
+     permanent: prm,
+   },
+  
+  
+   {
+    source: '/rooms/zombie-apocalypse-poughkeepsie-ny',
+     destination: '/poughkeepsie-ny/activities/zombie-apocalypse',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/special-agent-poughkeepsie-ny',
+     destination: '/poughkeepsie-ny/activities/special-agent',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/hollywood-premiere-poughkeepsie-ny',
+     destination: '/poughkeepsie-ny/activities/hollywood-premiere',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/rooms/escape-from-alcatraz-poughkeepsie-ny',
+     destination: '/poughkeepsie-ny/activities/escape-from-alcatraz',
+     permanent: prm,
+   },
+
+  
+   {
+    source: '/rooms/sherlocks-library-poughkeepsie-ny',
+     destination: '/poughkeepsie-ny/activities/sherlocks-library',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/houdinis-magic-cell-poughkeepsie-ny',
+     destination: '/poughkeepsie-ny/activities/houdinis-magic-cell',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-poughkeepsie-ny',
+     destination: '/poughkeepsie-ny/activities/black-ops',
+     permanent: prm,
+   },
+  
+   
+  
+  ]
+// =========================================------------poughkeepsieRed  ny
+// =========================================------------austin  tx
+const austinRed=[
+
+  {
+    source: '/locations/austin-tx/events',
+     destination: '/events',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/category/austin-tx',
+     destination: '/activities',
+     permanent: prm,
+   },
+   
+   {
+    source: '/rooms/treasure-island-austin-tx',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/superheros-adventure-austin-tx',
+     destination: '/',
+     permanent: prm,
+   },
+  
+  
+   {
+    source: '/rooms/zombie-apocalypse-austin-tx',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/special-agent-austin-tx',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/hollywood-premiere-austin-tx',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/rooms/escape-from-alcatraz-austin-tx',
+     destination: '/',
+     permanent: prm,
+   },
+
+  
+   {
+    source: '/rooms/sherlocks-library-austin-tx',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/houdinis-magic-cell-austin-tx',
+     destination: '/',
+     permanent: prm,
+   },
+   {
+    source: '/rooms/black-ops-austin-tx',
+     destination: '/',
+     permanent: prm,
+   },
+  
+   
+  
+  ]
+// =========================================------------austin  tx
 // =========================================------------common
 const commonRed=[
 
