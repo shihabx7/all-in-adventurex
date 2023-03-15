@@ -82,7 +82,7 @@ const InpersonCarousel=(props)=>{
      
      responsive={responsive}
      ssr={true} // means to render carousel on server-side.
-     infinite={true}
+     infinite={false}
     // autoPlay={this.props.deviceType !== "mobile" ? true : false}
     autoPlay={ false }
     // autoPlaySpeed={5000}
@@ -90,7 +90,8 @@ const InpersonCarousel=(props)=>{
      customTransition=".5s ease-in-out"
      transitionDuration={500}
      containerClass="carousel-container"
-     removeArrowOnDeviceType={["tablet", "mobile"]}
+     rewindWithAnimation={true}
+   //  removeArrowOnDeviceType={["tablet", "mobile"]}
      //deviceType={this.props.deviceType}
      dotListClass="custom-dot-list-style"
      itemClass="game-carousel-card px-2 lg:px-3 py-4 md:py-8"

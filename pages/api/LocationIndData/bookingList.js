@@ -1304,11 +1304,11 @@ const blist={
                     "flow":"29227"
                 },
                 "zombie-apocalypse":{
-                    "item":"44198",
+                    "item":"104500",
                     "flow":"29227"
                 },
                 "special-agent":{
-                    "item":"44198",
+                    "item":"104498",
                     "flow":"29227"
                 },
                 
