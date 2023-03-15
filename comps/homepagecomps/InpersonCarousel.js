@@ -78,7 +78,7 @@ const InpersonCarousel=(props)=>{
      swipeable={true}
      draggable={true}
      showDots={true}
-     arrows={false}
+     arrows={true}
      
      responsive={responsive}
      ssr={true} // means to render carousel on server-side.
