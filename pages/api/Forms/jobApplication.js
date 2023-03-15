@@ -130,7 +130,7 @@ try {
     from: "sender@allinadventures.com",
     //to: "shihab.dgency@gmail.com",
   to: `${retbody.info1.email}`,
-  bcc:"dgency.com@gmail.com,shihab.dgency@gmail.com",
+  bcc:"dgency.com@gmail.com",
     subject: `Here's Your Job Application at All In Adventures`,
     html: `
         <p style="margin:4px 0p;x"> Dear ${retbody.info1.fName} ${retbody.info1.lName},  </p>
