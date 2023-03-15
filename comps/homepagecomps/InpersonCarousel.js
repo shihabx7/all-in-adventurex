@@ -41,19 +41,19 @@ const InpersonCarousel=(props)=>{
             breakpoint: { max: 4000, min: 1640 },
             items: 5,
             slidesToSlide: 1,
-            partialVisibilityGutter: 20
+            partialVisibilityGutter: 0
           },
           desktopmd: {
             breakpoint: { max: 1640, min: 1440 },
             items: 4,
             slidesToSlide: 1,
-            partialVisibilityGutter: 20
+            partialVisibilityGutter: 0
           },
         desktop: {
           breakpoint: { max: 1440, min: 1024 },
           items: 3,
           slidesToSlide: 1,
-          partialVisibilityGutter: 24
+          partialVisibilityGutter: 8
         },
         tablet: {
           breakpoint: { max: 1024, min: 520 },
@@ -71,7 +71,7 @@ const InpersonCarousel=(props)=>{
 
      
     return (
-    <div className="full-carousel inpersongame  "> 
+    <div className="full-carousel inpersongame inp-car "> 
      <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
 
     <Carousel
@@ -90,7 +90,7 @@ const InpersonCarousel=(props)=>{
      customTransition=".5s ease-in-out"
      transitionDuration={500}
      containerClass="carousel-container"
-     rewindWithAnimation={true}
+    // rewindWithAnimation={true}
    //  removeArrowOnDeviceType={["tablet", "mobile"]}
      //deviceType={this.props.deviceType}
      dotListClass="custom-dot-list-style"
