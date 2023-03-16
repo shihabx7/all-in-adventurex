@@ -53,19 +53,19 @@ const InpersonCarousel=(props)=>{
           breakpoint: { max: 1440, min: 1024 },
           items: 3,
           slidesToSlide: 1,
-          partialVisibilityGutter: 12
+          partialVisibilityGutter: 0
         },
         tablet: {
           breakpoint: { max: 1024, min: 520 },
           items: 2,
           slidesToSlide:1,
-          partialVisibilityGutter: 24
+          partialVisibilityGutter: 0
         },
         mobile: {
           breakpoint: { max: 520, min: 0 },
           items: 1,
           slidesToSlide: 1,
-          partialVisibilityGutter: 24
+          partialVisibilityGutter: 0
         }
       };
 

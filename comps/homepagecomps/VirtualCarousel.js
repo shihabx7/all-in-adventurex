@@ -45,13 +45,13 @@ const openBooking=(booking)=>{
           breakpoint: { max: 1024, min: 640 },
           items: 2,
           slidesToSlide:1,
-          partialVisibilityGutter: 20
+          partialVisibilityGutter: 0
         },
         mobile: {
           breakpoint: { max: 640, min: 0 },
           items: 1,
           slidesToSlide: 1,
-          partialVisibilityGutter: 16
+          partialVisibilityGutter: 0
         }
       };
     return (
