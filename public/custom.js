@@ -86,7 +86,7 @@ window.onscroll = function() {
         
           document.getElementById('header').style.top = "0px"
         
-         prevScrollpos = currentScrollPos+30;
+         prevScrollpos = currentScrollPos+30
    
           
           
