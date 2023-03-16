@@ -849,6 +849,26 @@ transition: .3s;
         color: gold;
         
       }
+      .inp-car.ev-car .react-multiple-carousel__arrow--left {
+      
+        top:38%;
+        
+      }
+      .inp-car.ev-car .react-multiple-carousel__arrow--right {
+      
+        top:38%;
+        
+      }
+      .inp-car.tst .react-multiple-carousel__arrow--left {
+      
+        top:32%;
+        
+      }
+      .inp-car.tst .react-multiple-carousel__arrow--right {
+      
+        top:32%;
+        
+      }
 
 @media only screen and (max-width: 2000px) {
   .single-blog-content-holder{

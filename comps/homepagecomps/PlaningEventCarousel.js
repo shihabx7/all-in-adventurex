@@ -35,13 +35,13 @@ const bookGame=(bookingData)=>{
         breakpoint: { max: 4000, min: 1640 },
         items: 5,
         slidesToSlide: 1,
-        partialVisibilityGutter: 20
+        partialVisibilityGutter: 0
       },
       desktopmd: {
         breakpoint: { max: 1640, min: 1440 },
         items: 4,
         slidesToSlide: 1,
-        partialVisibilityGutter: 20
+        partialVisibilityGutter: 0
       },
     desktop: {
       breakpoint: { max: 1440, min: 1024 },
@@ -59,20 +59,20 @@ const bookGame=(bookingData)=>{
           breakpoint: { max: 520, min: 0 },
           items: 1,
           slidesToSlide: 1,
-          partialVisibilityGutter: 50
+          partialVisibilityGutter: 20
         }
       };
     return (
-    <div className="full-carousel planning-event-carousel  "> 
+    <div className="full-carousel planning-event-carousel inp-car ev-car"> 
     <Carousel
      swipeable={true}
      draggable={true}
      showDots={true}
-     arrows={false}
+     arrows={true}
      
      responsive={responsive}
      ssr={true} // means to render carousel on server-side.
-     infinite={true}
+     infinite={false}
     // autoPlay={this.props.deviceType !== "mobile" ? true : false}
     autoPlay={ false }
     // autoPlaySpeed={5000}
@@ -80,7 +80,7 @@ const bookGame=(bookingData)=>{
      customTransition=".5s ease-in-out"
      transitionDuration={500}
      containerClass="carousel-container"
-     removeArrowOnDeviceType={["tablet", "mobile"]}
+     //removeArrowOnDeviceType={["tablet", "mobile"]}
      //deviceType={this.props.deviceType}
      dotListClass="custom-dot-list-style"
      itemClass="game-carousel-card px-2 lg:px-3 py-4 md:py-8"
@@ -102,11 +102,11 @@ const bookGame=(bookingData)=>{
                       </div>
                    
                   </div>
-                  <div className="card-gap py-8"> 
+                  <div className="card-gap py-4 lg:py-8"> 
        
                   </div>
-                  <div className="card-bottom p-4 pt-12"> 
-                      <div className="card-game-desc text-center">
+                  <div className="card-bottom p-4 pt-4 md:pt-10 lg:pt-12"> 
+                      <div className="h-[80px] md:h-[90px] lg:h-[100px] 2xl:h-[92px] text-center">
                           
                           <p className="text-gray-200 lg:text-lg">{showDescription(event.description)}</p>
                       </div>

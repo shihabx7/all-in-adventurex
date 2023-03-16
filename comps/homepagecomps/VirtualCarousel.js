@@ -45,26 +45,26 @@ const openBooking=(booking)=>{
           breakpoint: { max: 1024, min: 640 },
           items: 2,
           slidesToSlide:1,
-          partialVisibilityGutter: 0
+          partialVisibilityGutter: 20
         },
         mobile: {
           breakpoint: { max: 640, min: 0 },
           items: 1,
           slidesToSlide: 1,
-          partialVisibilityGutter: 40
+          partialVisibilityGutter: 16
         }
       };
     return (
-    <div className="full-carousel v-slider-home md:max-w-[768px] mx-auto md:pb-8"> 
+    <div className="full-carousel v-slider-home inp-car md:max-w-[768px] mx-auto md:pb-8"> 
     <Carousel
      swipeable={true}
      draggable={true}
      showDots={true}
-     arrows={false}
+     arrows={true}
      
      responsive={responsive}
      ssr={true} // means to render carousel on server-side.
-     infinite={true}
+     infinite={false}
     // autoPlay={this.props.deviceType !== "mobile" ? true : false}
     autoPlay={ false }
     // autoPlaySpeed={5000}
@@ -72,7 +72,7 @@ const openBooking=(booking)=>{
      customTransition=".5s ease-in-out"
      transitionDuration={500}
      containerClass="carousel-container"
-     removeArrowOnDeviceType={["tablet", "mobile"]}
+    // removeArrowOnDeviceType={["tablet", "mobile"]}
      //deviceType={this.props.deviceType}
      dotListClass="custom-dot-list-style vr-dots"
      itemClass="game-carousel-card px-2 lg:px-3 py-4 md:py-8"
@@ -103,11 +103,11 @@ const openBooking=(booking)=>{
                               </div>
                       </div>
                   </div>
-                  <div className="card-gap py-10"> 
+                  <div className="card-gap py-5 md:py-8 lg:py-10"> 
        
                   </div>
                   <div className="card-bottom p-4 pt-8"> 
-                      <div className="card-game-desc text-center">
+                      <div className="card-game-desc h-[180px] md:h-[180px] lg:h-[220px] text-center">
                           <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">{virtualgame.title}</h3>
                           <p className="text-gray-200 lg:text-lg">{ showDescription(virtualgame.description)}</p>
                       </div>

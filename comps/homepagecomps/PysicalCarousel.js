@@ -41,7 +41,7 @@ const PysicalCarousel=(props)=>{
             breakpoint: { max: 1640, min: 1440 },
             items: 3,
             slidesToSlide: 1,
-            partialVisibilityGutter: 24
+            partialVisibilityGutter: 0
           },
         desktop: {
           breakpoint: { max: 1440, min: 1024 },
@@ -59,20 +59,20 @@ const PysicalCarousel=(props)=>{
           breakpoint: { max: 520, min: 0 },
           items: 1,
           slidesToSlide: 1,
-          partialVisibilityGutter: 40
+          partialVisibilityGutter: 16
         }
       };
     return (
-    <div className="full-carousel lg:max-w-[1140px] mx-auto pysicalescapecarousel"> 
+    <div className="full-carousel lg:max-w-[1140px] mx-auto pysicalescapecarousel inp-car"> 
     <Carousel
      swipeable={true}
      draggable={true}
      showDots={true}
-     arrows={false}
+     arrows={true}
      
      responsive={responsive}
      ssr={true} // means to render carousel on server-side.
-     infinite={true}
+     infinite={false}
     // autoPlay={this.props.deviceType !== "mobile" ? true : false}
     autoPlay={ false }
     
@@ -80,7 +80,7 @@ const PysicalCarousel=(props)=>{
      customTransition=".5s ease-in-out"
      transitionDuration={500}
      containerClass="carousel-container"
-     removeArrowOnDeviceType={["tablet", "mobile"]}
+    // removeArrowOnDeviceType={["tablet", "mobile"]}
      //deviceType={this.props.deviceType}
      dotListClass="custom-dot-list-style physical-escape-dots"
      itemClass="game-carousel-card px-2 lg:px-3 py-4 md:py-8"
@@ -110,11 +110,11 @@ const PysicalCarousel=(props)=>{
                             </div>
                     </div>
                 </div>
-                <div className="card-gap py-10"> 
+                <div className="card-gap py-6 md:py-8 lg:py-10"> 
      
                 </div>
                 <div className="card-bottom p-4  md:pt-10"> 
-                    <div className="card-game min-h-[200px]  md:min-h-[220px] text-center">
+                    <div className="card-game h-[180px] md:h-[180px] lg:h-[220px] text-center">
                         <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">{othergame.title}</h3>
                         <p className="text-gray-200 lg:text-lg">{othergame.description}</p>
                     </div>

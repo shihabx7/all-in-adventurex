@@ -78,17 +78,16 @@ window.onscroll = function() {
  
 
     var currentScrollPos = window.pageYOffset;
-    console.log("prev",prevScrollpos)
-console.log("curr",currentScrollPos)
+    //console.log("prev",prevScrollpos)
+//console.log("curr",currentScrollPos)
   
-  if (prevScrollpos > currentScrollPos ) {
+  if (prevScrollpos > currentScrollPos+30 ) {
     
-        if((prevScrollpos-currentScrollPos)>100) {
+        
           document.getElementById('header').style.top = "0px"
-        }    
-        else{
-          prevScrollpos = currentScrollPos;
-        }
+        
+         prevScrollpos = currentScrollPos+30;
+   
           
           
           
@@ -103,10 +102,10 @@ console.log("curr",currentScrollPos)
                      
                    }
 
-                   prevScrollpos = currentScrollPos;
+                 prevScrollpos = currentScrollPos;
                    
           }
-          //prevScrollpos = currentScrollPos 
+         // prevScrollpos = currentScrollPos 
           
   }
   else{

@@ -27,44 +27,44 @@ const shortrev=(txt)=>{
         breakpoint: { max: 4000, min: 1640 },
         items: 5,
         slidesToSlide: 1,
-        partialVisibilityGutter: 24
+        partialVisibilityGutter: 8
       },
       desktopmd: {
         breakpoint: { max: 1640, min: 1440 },
         items: 4,
         slidesToSlide: 1,
-        partialVisibilityGutter: 20
+        partialVisibilityGutter: 8
       },
     desktop: {
       breakpoint: { max: 1440, min: 1024 },
       items: 3,
       slidesToSlide: 1,
-      partialVisibilityGutter: 20
+      partialVisibilityGutter: 16
     },
         tablet: {
           breakpoint: { max: 1024, min: 520 },
           items: 2,
           slidesToSlide:1,
-          partialVisibilityGutter: 20
+          partialVisibilityGutter: 0
         },
         mobile: {
           breakpoint: { max: 520, min: 0 },
           items: 1,
           slidesToSlide: 1,
-          partialVisibilityGutter: 50
+          partialVisibilityGutter: 0
         }
       };
     return (
-    <div className="full-carousel pysicalescapecarousel revcarousel"> 
+    <div className="full-carousel pysicalescapecarousel revcarousel tst inp-car"> 
     <Carousel
      swipeable={true}
      draggable={true}
      showDots={true}
-     arrows={false}
+     arrows={true}
      
      responsive={responsive}
      ssr={true} // means to render carousel on server-side.
-     infinite={true}
+     infinite={false}
     // autoPlay={this.props.deviceType !== "mobile" ? true : false}
     autoPlay={ false }
     
@@ -72,7 +72,7 @@ const shortrev=(txt)=>{
      customTransition=".5s ease-in-out"
      transitionDuration={500}
      containerClass="carousel-container"
-     removeArrowOnDeviceType={["tablet", "mobile"]}
+    // removeArrowOnDeviceType={["tablet", "mobile"]}
      //deviceType={this.props.deviceType}
      dotListClass="custom-dot-list-style"
      itemClass="game-carousel-card home review-carousel px-2 lg:px-3 py-4 md:py-8"
@@ -91,9 +91,9 @@ const shortrev=(txt)=>{
                          </div>
                      </div>
 
-                     <div className="card-rev-bottom bg-black pt-4 px-4">
+                     <div className="card-rev-bottom bg-black pt-4 md:pt-6 lg:pt-8 px-4">
                      <div className="card-rev-desc text-center">
-                         <div className={"card-rev-desc text-center "+ review.revlink? "min-h-[270px]":"min-h-[200px]"}>
+                         <div className="card-rev-desc text-center min-h-[200px]">
                               <img className="inline" src="/assets/reviews/rev-5star.svg"></img>
                               {
                                 review.revlink &&
@@ -115,7 +115,7 @@ const shortrev=(txt)=>{
                              }
                              {
                               !review.revlink &&
-                             <p className="golden-text font-light lg:text-lg italic h-[170px] md:h-[200px]">&quot;{review.review_text}</p>
+                             <p className="text-gold font-light lg:text-lg italic h-[128px] md:h-[160px]">&quot;{review.review_text}</p>
                               }
                          </div>
                      </div>

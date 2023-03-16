@@ -53,7 +53,7 @@ const InpersonCarousel=(props)=>{
           breakpoint: { max: 1440, min: 1024 },
           items: 3,
           slidesToSlide: 1,
-          partialVisibilityGutter: 8
+          partialVisibilityGutter: 12
         },
         tablet: {
           breakpoint: { max: 1024, min: 520 },
@@ -65,7 +65,7 @@ const InpersonCarousel=(props)=>{
           breakpoint: { max: 520, min: 0 },
           items: 1,
           slidesToSlide: 1,
-          partialVisibilityGutter: 50
+          partialVisibilityGutter: 24
         }
       };
 
@@ -120,11 +120,11 @@ const InpersonCarousel=(props)=>{
                                         </div>
                                 </div>
                             </div>
-                            <div className="card-gap py-10"> 
+                            <div className="card-gap py-5 md:py-8 lg:py-10"> 
                  
                             </div>
                             <div className="card-bottom p-4  pt-12"> 
-                                <div className="card-game-descs h-[250px] text-center">
+                                <div className="card-game-descs h-[170px] md:h-[160px] lg:h-[200px] 2xl:h-[192px] text-center">
                                     <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">{inpersongame.title}</h3>
                                     <p className="text-gray-200 lg:text-lg">{ inpersongame.description
                                                                                   }</p>
