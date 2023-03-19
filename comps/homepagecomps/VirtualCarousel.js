@@ -55,7 +55,7 @@ const openBooking=(booking)=>{
         }
       };
     return (
-    <div className="full-carousel v-slider-home inp-car md:max-w-[768px] mx-auto md:pb-8"> 
+    <div className="full-carousel v-slider-home inp-car md:max-w-[100%] lg:max-w-[62%] 2xl:max-w-[41%] mx-auto md:pb-8"> 
     <Carousel
      swipeable={true}
      draggable={true}
@@ -107,7 +107,7 @@ const openBooking=(booking)=>{
        
                   </div>
                   <div className="card-bottom p-4 pt-8"> 
-                      <div className="card-game-desc h-[180px] md:h-[180px] lg:h-[220px] text-center">
+                      <div className="card-game-desc h-[170px] md:h-[160px] lg:h-[200px] 2xl:h-[192px] text-center">
                           <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">{virtualgame.title}</h3>
                           <p className="text-gray-200 lg:text-lg">{ showDescription(virtualgame.description)}</p>
                       </div>

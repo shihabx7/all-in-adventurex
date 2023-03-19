@@ -245,11 +245,6 @@ import { getLocTotal } from "./AllDataList/getLocTotal"
 
            ]
                             }
-                            
-    
-
-      
-
       return  locationHomedata
 
 
@@ -2059,7 +2054,7 @@ const locPagedata={
                                     "type": "In-Person",
                                     "title": "Axe Throwing",
                                     "groupcat":"Per Lane",
-                                    "description": "Having a bad day? Don't worry! We have an awesome way to burn off that negativity and get you back to your stress-free fun self! Come throw some axes at our exciting interactive targets with your friends and family!",
+                                    "description": "Having a bad day? Don't worry! Come throw some axes at our exciting interactive targets with your friends and family!",
                                     "age":"All Ages (13+)",
                                     "duration":"60",
                                     "maxplayers":"4",
