@@ -2652,9 +2652,17 @@ const commonRed=[
   
   ]
 // =========================================-------------Common
+const wwwToHttps=[
+  {
+    source: '/:path*',
+    has: [{ type: 'host', value: 'www.allinadventures.com' }],
+    destination: 'https://allinadventures.com/:path*',
+    permanent: true
+  }
+]
     
 
- const allRed=[...gnRed,...albanyRed,...buffaloRed,...middletownRed,...syracuseRed,...watertownRed,
+ const allRed=[...wwwToHttps,...gnRed,...albanyRed,...buffaloRed,...middletownRed,...syracuseRed,...watertownRed,
                 ...westnykRed,...raleighRed,...bensalemRed,...holyokeRed,...hadleyRed,...kingstonRed,
                 ...nAttleboroughRed,...milfordRed,...manchesterRed,...waterburyRed,...eastBrunswickRed,
                 ...rockawayRed,...woodbridgeRed,...bowieRed,...whitemarshRed,...roanokeRed,...lawrencevilleRed,
