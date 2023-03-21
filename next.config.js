@@ -2655,7 +2655,7 @@ const commonRed=[
 const wwwToHttps=[
   {
     source: '/:path*',
-    has: [{type: 'header', key: 'host', value: 'http://www.allinadventures.com/' }],
+    has: [{type: 'host',  value: 'www.allinadventures.com' }],
     destination: 'https://allinadventures.com/:path*',
     permanent: false
   }
