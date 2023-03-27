@@ -82,7 +82,7 @@ const WhoCanplay =()=>{
                                 <p className="text-gray-200 lg:text-lg mb:4">For your health and safety, all bookings will be private room bookings regardless of your group size!</p>
                                 <div className="flex  lg:text-lg text-gray-300 mt-4">
                                     <span className="block mt-1 w-6 md:w-8"><img src="/assets/svg/star-bullet.svg"></img></span>
-                                    <span className="block w-[90%]">All our escape rooms are great for first-time Escape Roomers and are the most kids friendly escape rooms.</span>
+                                    <span className="block w-[90%]">All our escape rooms are great for first-time Escape Roomers and are the most kid and family friendly escape rooms.</span>
                                 </div>
                                 <div className="flex  lg:text-lg text-gray-300 mt-3">
                                     <span className="block mt-1 w-6 md:w-8"><img src="/assets/svg/star-bullet.svg"></img></span>

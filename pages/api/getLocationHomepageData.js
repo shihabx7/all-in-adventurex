@@ -257,7 +257,7 @@ const locPagedata={
                   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-albany-ny-crossgates-mall-hero.jpg",
                    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-albany-ny-crossgates-mall-hero.jpg",
                    "coverimageM_alt":"allinadventures escape room albany ny crossgates mall-hero",
-                   "pagesubtitle":"All In Adventures Albany (formerly Mystery Room Albany), has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Albany, NY.",
+                   "pagesubtitle":"All In Adventures Albany (formerly Mystery Room Albany), has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Albany, NY.",
                    "pagemeta":{
 
                           "matatilte":"title",
@@ -528,7 +528,7 @@ const locPagedata={
       "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-buffalo-ny-walden-galleria-mall-hero.jpg",
        "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-buffalo-ny-walden-galleria-mall-hero.jpg",
        "coverimageM_alt":"allinadventures escape room buffalo ny walden galleria mall hero",
-      "pagesubtitle":"All In Adventures Buffalo (formerly Mystery Room Buffalo), has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Buffalo, NY.",
+      "pagesubtitle":"All In Adventures Buffalo (formerly Mystery Room Buffalo), has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Buffalo, NY.",
        "pagemeta":{
 
               "matatilte":"title",
@@ -799,7 +799,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-middletown-ny-galleria-at-crystal-run-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-middletown-ny-galleria-at-crystal-run-mall-hero.jpg",
    "coverimageM_alt":"allinadventures escape room middletown ny galleria at crystal run mall",
-   "pagesubtitle":"All In Adventures Middletown (formerly Mystery Room Middletown), has family and kid-friendly Escape Rooms and Beat the Seat that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Middletown, NY.",
+   "pagesubtitle":"All In Adventures Middletown (formerly Mystery Room Middletown), has kid and family friendly Escape Rooms and Beat the Seat that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Middletown, NY.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -1100,7 +1100,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-syracuse-ny-destiny-usa-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-syracuse-ny-destiny-usa-mall-hero.jpg",
    "coverimageM_alt":"allinadventures escape room syracuse ny destiny usa mall",
-   "pagesubtitle":"All In Adventures Syracuse (formerly Mystery Room Syracuse), has family and kid-friendly Escape Rooms and Beat the Seat that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Syracuse, NY.",
+   "pagesubtitle":"All In Adventures Syracuse (formerly Mystery Room Syracuse), has kid and family friendly Escape Rooms and Beat the Seat that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Syracuse, NY.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -1415,7 +1415,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-watertown-ny-salmon-run-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-watertown-ny-salmon-run-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-watertown-ny-salmon-run-mall",
-   "pagesubtitle":"All In Adventures Watertown (formerly Mystery Room Watertown), has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Watertown, NY.",
+   "pagesubtitle":"All In Adventures Watertown (formerly Mystery Room Watertown), has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Watertown, NY.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -1685,7 +1685,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-west-nyack-ny-palisades-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-west-nyack-ny-palisades-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-west-nyack-ny-palisades-mall",
-   "pagesubtitle":"All In Adventures West Nyack (formerly Mystery Room West Nyack), has family and kid-friendly Escape Rooms, Beat the Seat, and Game Show Room that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in West Nyack, NY.",
+   "pagesubtitle":"All In Adventures West Nyack (formerly Mystery Room West Nyack), has kid and family friendly Escape Rooms, Beat the Seat, and Game Show Room that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in West Nyack, NY.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -1935,7 +1935,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/Poughkeepsie-ny-poughkeepsie-galleria.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/Poughkeepsie-ny-poughkeepsie-galleria.jpg",
    "coverimageM_alt":"allinadventures-escape-room-west-poughkeepsie-ny-palisades-mall",
-   "pagesubtitle":"All In Adventures Poughkeepsie has family and kid-friendly Escape Rooms and Axe Throwing that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Poughkeepsie, NY.",
+   "pagesubtitle":"All In Adventures Poughkeepsie has kid and family friendly Escape Rooms and Axe Throwing that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Poughkeepsie, NY.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -2203,7 +2203,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-raleigh-nc-triangle-town-center-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-raleigh-nc-triangle-town-center-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-raleigh-nc-triangle-town-center-mall-hero",
-   "pagesubtitle":"All In Adventures Raleigh has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Raleigh, NC.",
+   "pagesubtitle":"All In Adventures Raleigh has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Raleigh, NC.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -2449,7 +2449,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-bensalem-pa-neshaminy-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-bensalem-pa-neshaminy-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-bensalem-pa-neshaminy-mall",
-   "pagesubtitle":"All In Adventures Bensalem has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Bensalem, PA.",
+   "pagesubtitle":"All In Adventures Bensalem has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Bensalem, PA.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -2724,7 +2724,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-hadley-ma-hampshire-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-hadley-ma-hampshire-mall-hero.jpg",
    "coverimageM_alt":"allinadventures escape room hadley ma hampshire mall",
-   "pagesubtitle":"All In Adventures Hadley has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Hadley, MA.",
+   "pagesubtitle":"All In Adventures Hadley has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Hadley, MA.",
       "pagemeta":{
 
           "matatilte":"title",
@@ -2993,7 +2993,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-holyoke-ma-holyoke-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-holyoke-ma-holyoke-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-holyoke-ma-holyoke-mall",
-   "pagesubtitle":"All In Adventures Holyoke has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Holyoke, MA.",
+   "pagesubtitle":"All In Adventures Holyoke has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Holyoke, MA.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -3237,7 +3237,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-kingston-ma-kingston-collection-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-kingston-ma-kingston-collection-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-kingston-ma-kingston-collection-mall",
-   "pagesubtitle":"All In Adventures Kingston (formerly Escape the Mystery Room Kingston) has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Kingston, MA.",
+   "pagesubtitle":"All In Adventures Kingston (formerly Escape the Mystery Room Kingston) has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Kingston, MA.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -3508,7 +3508,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-north-attleborough-ma-emerald-square-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-north-attleborough-ma-emerald-square-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-north-attleborough-ma-emerald-square-mall",
-   "pagesubtitle":"All In Adventures N. Attleborough (formerly Mystery Room N. Attleborough), has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in N. Attleborough, MA.",
+   "pagesubtitle":"All In Adventures N. Attleborough (formerly Mystery Room N. Attleborough), has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in N. Attleborough, MA.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -4040,7 +4040,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-milford-ct-connecticut-post-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-milford-ct-connecticut-post-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-milford-ct-connecticut-post-mall",
-   "pagesubtitle":"All In Adventures Milford (formerly Escape the Mystery Room Milford) has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Milford, CT.",
+   "pagesubtitle":"All In Adventures Milford (formerly Escape the Mystery Room Milford) has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Milford, CT.",
 
    "pagemeta":{
 
@@ -4285,7 +4285,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-manchester-ct-buckland-hills-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-manchester-ct-buckland-hills-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-manchester-ct-buckland-hills-mall",
-   "pagesubtitle":"All In Adventures Manchester (formerly Escape the Mystery Room Manchester) has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Manchester, CT.",
+   "pagesubtitle":"All In Adventures Manchester (formerly Escape the Mystery Room Manchester) has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Manchester, CT.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -4554,7 +4554,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-waterbury-ct-brass-mills-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-waterbury-ct-brass-mills-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-milford-ct-connecticut-post-mall",
-   "pagesubtitle":"All In Adventures Waterbury has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Waterbury, CT.",
+   "pagesubtitle":"All In Adventures Waterbury has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Waterbury, CT.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -4826,7 +4826,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-rockaway-nj-rockaway-townsquare-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-rockaway-nj-rockaway-townsquare-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-rockaway-nj-rockaway-townsquare-mall",
-   "pagesubtitle":"All In Adventures Rockaway (formerly Mystery Room Rockaway), has family and kid-friendly Escape Rooms and Game Show Room that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Rockaway, NJ.",
+   "pagesubtitle":"All In Adventures Rockaway (formerly Mystery Room Rockaway), has kid and family friendly Escape Rooms and Game Show Room that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Rockaway, NJ.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -5103,7 +5103,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-east-brunswick-nj-brunswick-square-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-east-brunswick-nj-brunswick-square-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-east-brunswick-nj-brunswick-square-mall",
-   "pagesubtitle":"All In Adventures East Brunswick has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in East Brunswick, NJ.",
+   "pagesubtitle":"All In Adventures East Brunswick has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in East Brunswick, NJ.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -5345,7 +5345,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-woodbridge-nj-woodbridge-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-woodbridge-nj-woodbridge-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-woodbridge-nj-woodbridge-mall",
-   "pagesubtitle":"All In Adventures Woodbridge (formerly Mystery Room Woodbridge), has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Woodbridge, NJ.",
+   "pagesubtitle":"All In Adventures Woodbridge (formerly Mystery Room Woodbridge), has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Woodbridge, NJ.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -5619,7 +5619,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-bowie-md-bowie-town-center-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-bowie-md-bowie-town-center-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-bowie-md-bowie-town-center-mall",
-   "pagesubtitle":"All In Adventures Bowie has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Bowie, MD.",
+   "pagesubtitle":"All In Adventures Bowie has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Bowie, MD.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -5874,7 +5874,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-white-marsh-md-white-marsh-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-white-marsh-md-white-marsh-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-white-marsh-md-white-marsh-mall",
-   "pagesubtitle":"All In Adventures White Marsh has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in White Marsh, MD.",
+   "pagesubtitle":"All In Adventures White Marsh has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in White Marsh, MD.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -6150,7 +6150,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-roanoke-va-valley-view-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-roanoke-va-valley-view-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-roanoke-va-valley-view-mall",
-   "pagesubtitle":"All In Adventures Roanoke (formerly Mystery Room Roanoke), has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Roanoke, VA.",
+   "pagesubtitle":"All In Adventures Roanoke (formerly Mystery Room Roanoke), has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Roanoke, VA.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -6425,7 +6425,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-lawrenceville-ga-sugarloaf-mills-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-lawrenceville-ga-sugarloaf-mills-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-lawrenceville-ga-sugarloaf-mills-mall",
-   "pagesubtitle":"All In Adventures Lawrenceville (formerly Mystery Room Lawrenceville), has family and kid-friendly Escape Rooms and Beat the Seat that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Lawrenceville, GA.",
+   "pagesubtitle":"All In Adventures Lawrenceville (formerly Mystery Room Lawrenceville), has kid and family friendly Escape Rooms and Beat the Seat that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Lawrenceville, GA.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -6689,7 +6689,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-columbus-oh-polaris-fashion-place-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-columbus-oh-polaris-fashion-place-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-lawrenceville-ga-sugarloaf-mills-mall",
-   "pagesubtitle":"All In Adventures Columbus has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Columbus, OH.",
+   "pagesubtitle":"All In Adventures Columbus has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Columbus, OH.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -6903,7 +6903,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-mentor-oh-great-lakes-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-mentor-oh-great-lakes-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-mentor-oh-great-lakes-mall",
-   "pagesubtitle":"All In Adventures Mentor has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Mentor, OH.",
+   "pagesubtitle":"All In Adventures Mentor has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Mentor, OH.",
    "pagemeta":{
 
           "matatilte":"title",
@@ -7133,7 +7133,7 @@ const locPagedata={
   "coverimageL":"/assets/all-location-desktop-hero/allinadventures-escape-room-dayton-oh-dayton-mall-hero.jpg",
    "coverimageM":"/assets/all-location-mobile-hero/allinadventures-escape-room-dayton-oh-dayton-mall-hero.jpg",
    "coverimageM_alt":"allinadventures-escape-room-dayton-oh-dayton-mall",
-   "pagesubtitle":"All In Adventures Dayton has family and kid-friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Dayton, OH.",
+   "pagesubtitle":"All In Adventures Dayton has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Dayton, OH.",
    "pagemeta":{
 
           "matatilte":"title",

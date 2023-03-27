@@ -35,7 +35,7 @@ const GameLocDetails=(props)=>{
                                
                             }
                                {
-                                props.publish==undefined &&
+                                (props.publish==true || props.publish==undefined) &&
                                 <GameDtBtn bookingdata={props.bookingdata} label="I'VE READ ENOUGH! BOOK NOW" color="golden-text" weight="font-bold"/>
                                }
                                    
@@ -73,7 +73,7 @@ const GameLocDetails=(props)=>{
                                
                             }
                             {
-                                props.publish==undefined &&
+                               (props.publish==true || props.publish==undefined) &&
                                 <GameDtBtn bookingdata={props.bookingdata}  label="DON'T GIVE IT AWAY! BOOK NOW" />
                                }
                                    
@@ -106,7 +106,7 @@ const GameLocDetails=(props)=>{
                                
                             }
                             {
-                                props.publish==undefined &&
+                                (props.publish==true || props.publish==undefined) &&
                                 <GameDtBtn bookingdata={props.bookingdata}  label="LET ME AT EM! BOOK NOW" />
                                }
                                     

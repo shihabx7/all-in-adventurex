@@ -105,7 +105,7 @@ const gallery=(props)=>{
                     <div className="gl-bottom-link mt-12 text-center">
                         <Link href="/activities#others-physical-games"> 
                           <a  className="flex text-lg justify-center space-x-1 font-medium items-center text-red-600 hover:text-red-700">
-                           <span>View all other in person games</span>
+                           <span>View all other in-person games</span>
                            <span><FiChevronRight/></span> 
                             </a>
                             </Link>

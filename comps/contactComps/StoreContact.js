@@ -284,7 +284,7 @@ const StoreContact=(props)=>{
         <div className="c-contact py-16 md:py-20 lg:py-28  bg-cover bg-center" style={{backgroundImage : "url('/assets/game-dt-bg.jpg')", }}>
             
             <div className="section-container max-w-7xl mx-auto relative z-30">
-                <div className="section-title">
+                <div className="section-title px-4">
                   <TitleSeparator title={"INQUIRE TO "+TitleAddress(props.contactdata.slug)+" STORE"} color='golden-text' weight='font-bold'/>
                     <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-12 lg:mb-16">
                          <p className="text-gray-700 md:px-8">Fill out the form below and we will be in touch shortly.</p>

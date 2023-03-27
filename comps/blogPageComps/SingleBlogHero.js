@@ -7,6 +7,7 @@ const SingleBlogHero=(props)=>{
   const onScroll = useCallback(event => {
     const headerHeight=document.getElementById('header').offsetHeight
 
+    const wW=screen.width
     //const heroHeight=document.querySelector('.single-blog-hero').offsetHeight
    // const contentHeight=document.querySelector('.sbl-desc').offsetHeight
    const heroHeight=document.getElementById('sblh').offsetHeight
@@ -15,6 +16,11 @@ const SingleBlogHero=(props)=>{
     const totalHeigth=headerHeight+heroHeight+contentHeight
     const desktopShare=document.getElementById('dsk-share')
     const { pageYOffset, scrollY } = window;
+    
+console.log(wW)
+   if(wW>1000){
+
+   
     if(scrollY>totalHeigth){
       desktopShare.classList.remove('md:block')
       desktopShare.classList.add('hidden')
@@ -24,7 +30,7 @@ const SingleBlogHero=(props)=>{
       desktopShare.classList.remove('hidden')
       desktopShare.classList.add('md:block')
     }
-
+  }
     
    // console.log("headerHeight", headerHeight, "heroHeight", heroHeight,'content',contentHeight, 'total',totalHeigth);
     //console.log("yOffset", pageYOffset, "scrollY", scrollY);

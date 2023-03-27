@@ -440,7 +440,7 @@ import { getVirtualGameSlug } from "./VirtualGames/getVirtualGameSlug"
                                   "avg_rev":"4.8",
                                   "player_escaped":"8K+",
                                   "phone":"+1 845-218-0002",
-                                  "b_uid":"08695bcfdbd0498d8cd25a03361cf80d",
+                                  "b_uid":"4839a23169024bc8932f64b6d1f2c504",
                                   "coverimg":'/assets/mapcard/Poughkeepsie-ny-poughkeepsie-galleria.jpg',
                                   "mall":"Poughkeepsie Galleria",
                                   "alt":'allinadventures-escape-room-west-nyack-ny-palisades-mall',

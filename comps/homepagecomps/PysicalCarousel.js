@@ -92,7 +92,7 @@ const PysicalCarousel=(props)=>{
       props.othergames.map((othergame)=>{
 
         return(
-          <div key={othergame.id} className="text-white bg-gray-300 game-slider-card card-border" style={{
+          <div key={othergame.id} className="text-white bg-gray-300 game-slider-card card-border mb-shadow" style={{
             background:"url('"+othergame.bgimg+"')"
           }}>
             <div className="card-container">
@@ -114,7 +114,7 @@ const PysicalCarousel=(props)=>{
      
                 </div>
                 <div className="card-bottom p-4  md:pt-10"> 
-                    <div className="card-game h-[170px] md:h-[160px] lg:h-[200px] 2xl:h-[192px] text-center">
+                    <div className="card-game h-[170px] md:h-[160px] lg:h-[200px] 2xl:h-[204px] text-center">
                         <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">{othergame.title}</h3>
                         <p className="text-gray-200 lg:text-lg">{othergame.description}</p>
                     </div>

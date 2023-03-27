@@ -26,7 +26,7 @@ import { getTotal } from "./AllDataList/getTotal";
                       "totalUniqueGames": getTotal().uniqueGames,
                       "totalFiveStarReview": getTotal().totalReview,
                       "totalPlayerEscaped": getTotal().toalPlayerEscape,
-                      "subtitle":"All In Adventures (formerly Mystery Room), has family and kid-friendly Escape Rooms, Game Show Rooms, Beat the Seat, and Axe Throwing games that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events."
+                      "subtitle":"All In Adventures (formerly Mystery Room), has kid and family friendly Escape Rooms, Game Show Rooms, Beat the Seat, and Axe Throwing games that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events."
         },
         "inpersongames":[
                               {

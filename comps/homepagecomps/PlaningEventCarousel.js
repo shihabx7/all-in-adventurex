@@ -106,7 +106,7 @@ const bookGame=(bookingData)=>{
        
                   </div>
                   <div className="card-bottom p-4 pt-4 md:pt-10 lg:pt-12"> 
-                      <div className="h-[80px] md:h-[90px] lg:h-[100px] 2xl:h-[92px] text-center">
+                      <div className="h-[80px] md:h-[90px] lg:h-[100px] 2xl:h-[100px] text-center">
                           
                           <p className="text-gray-200 lg:text-lg">{showDescription(event.description)}</p>
                       </div>
