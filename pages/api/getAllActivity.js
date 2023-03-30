@@ -273,7 +273,7 @@ export const getAllActivity=()=>{
                     "age":"All Ages (13+)",
                     "min_player":2,
                     "max_player":4,
-                    "price":"29.89",
+                    "price":"23.89",
                     "duration":"60",
                     "activity_desc":"Having a bad day? Don't worry! We have an awesome way to burn off that negativity and get you back to your stress-free fun self! Come throw some axes at our exciting interactive targets with your friends and family!",
                     "activity_slug":"axe-throwing",

@@ -2059,7 +2059,7 @@ const locPagedata={
                                     "duration":"60",
                                     "maxplayers":"4",
                                     "minplayers":"2",
-                                    "price":"29.89",
+                                    "price":"23.89",
                                     "slug"  :"axe-throwing",
                                     "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
                                    },
