@@ -14,8 +14,8 @@ const LocationHomeRedirect=()=>{
       }, [isLoaded])
 
       return(
-        <div onLoad={()=>setIsLoaded(true)}>
-
+        <div>
+            <img onLoad={()=>setIsLoaded(true)} src="/assets/allinadventures-escape-room-home-hero.jpg"></img>
         </div>
       )
 
