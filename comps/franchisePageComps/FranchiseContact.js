@@ -1059,8 +1059,8 @@ const FranchiseContactForm=()=>{
                                                        <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What do you believe will make you a great ALL IN ADVENTURES franchisee?*</p>
                                                      
                                                        <textarea 
-                                                       id="oExp" 
-                                                       name="oExp"
+                                                       id="urBlv" 
+                                                       name="urBlv"
                                                        onChange={(e)=>getUrBlv(e)} 
                                                        className="w-full h-[100px] md:h-[120px]  event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                                                        placeholder="Write your message here" required> 
@@ -1080,7 +1080,7 @@ const FranchiseContactForm=()=>{
                                                }
                                                      {
                                                           isSend==true &&
-                                                          <div  className="max-w-[170px] mx-auto btn-back px-6 py-2 md:text-lg rounded-full font-medium bg-red-600 hover:bg-red-700  text-white "><div class=" font-medium loader">Submitting</div></div>
+                                                          <div  className="max-w-[170px] mx-auto btn-back px-6 py-2 md:text-lg rounded-full font-medium bg-red-600 hover:bg-red-700  text-white "><div className=" font-medium loader">Submitting</div></div>
                                                       } 
                                                
                                                {/*======================================contact form row message event====================== */}

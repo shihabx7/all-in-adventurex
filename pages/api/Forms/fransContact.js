@@ -45,7 +45,7 @@ export default async function fransContactHandler(req, res) {
         await transporter.sendMail({
           from: "sender@allinadventures.com",
           to: "franchise@allinadventures.com",
-         
+         // to: "shihabx7@gmail.com",
           bcc:"dgency.com@gmail.com,shihab.dgency@gmail.com",
           subject: `Franchise Contact`,
           html: `
@@ -69,7 +69,7 @@ export default async function fransContactHandler(req, res) {
      
           <p><strong>Involvement with other franchisees: </strong> ${retData.otherInvolvement}</p>
           <p><strong>Operations plan: </strong> ${retData.opPlan}</p>
-          <p><strong>Other professional/relevant experiences: </strong> ${retData.urBelieve}</p>
+          <p><strong>Other professional/relevant experiences: </strong> ${retData.profExp}</p>
           <p><strong>What will make you a great ALL IN ADVENTURES franchisee: </strong> ${retData.urBelieve}</p>
           `
         });
