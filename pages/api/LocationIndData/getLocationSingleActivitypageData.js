@@ -2030,8 +2030,8 @@ const activityDataset={
             "sceneimg":"/assets/all-game-details/allinadventures-magic-castle-plot.png",
             "storyimg_alt":"allinadventures-magic-castle-plot",
             "mission":"Pass the exam and earn your spot in the Magic Castle! Your exam is timed and the 60 minutes will be up before you know it. Listen closely to all directions and complete all tasks in time to secure your place.",
-            "missionimg":"/assets/all-game-details/allinadventures-houdinis-magic-cell-mission.png",
-            "missionimg_alt":"allinadventures-houdinis-magic-cell-mission",
+            "missionimg":"/assets/all-game-details/allinadventures-magic-castle-mission.png",
+            "missionimg_alt":"allinadventures-magic-castle-mission",
             "videoid":"z6cXBauEvdc",
           "videothumb":"/assets/video-thumb/allinadventures-magic-castle.jpg"
             

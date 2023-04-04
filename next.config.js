@@ -2674,4 +2674,8 @@ module.exports = {
   async redirects() {
     return allRed
   },
+ 
+    "presets": ["next/babel"]
+  
+  
 }

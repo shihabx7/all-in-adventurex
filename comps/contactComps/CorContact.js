@@ -294,7 +294,7 @@ const CorContact=()=>{
                                     {/*========================  contact form row first name = last name=======================*/}
                                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between ">
                                             <div className="form-col w-full md:w-[48%] relative">
-                                                <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your first name? *</p>
+                                                <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your first name?*</p>
                                                 <input 
                                                     onChange={(e)=>checkFName(e)}
                                                     type="text"
@@ -315,7 +315,7 @@ const CorContact=()=>{
                                                     
                                          </div>
                                          <div className="form-col w-full md:w-[48%] relative">
-                                                <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your last name? *</p>
+                                                <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your last name?*</p>
                                                 <input
                                                      onChange={(e)=>checkLName(e)}
                                                     type="text"
@@ -334,7 +334,7 @@ const CorContact=()=>{
                                  {/*======================================contact form row emal+phone====================== */}
                                  <div className="form-row flex flex-col space-y-3 md:flex-row md:space-y-0 justify-between mt-3 md:mt-10 lg:mt-12">
                                         <div className="relative form-col w-full md:w-[48%]">
-                                             <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your email? *</p>
+                                             <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your email?*</p>
                                              <input type="email"
                                                     name="email"
                                                     id="email" 
@@ -367,7 +367,7 @@ const CorContact=()=>{
                                     <div className="form-row flex justify-between mt-3 md:mt-10 lg:mt-12 ">
                                                    
                                         <div className="relative form-col w-full">
-                                               <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Enquiry type  *</p>
+                                               <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">Enquiry type*</p>
                                                <select
                                                 name="comsub"
                                                 id="comsub" 
