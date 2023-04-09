@@ -70,7 +70,7 @@ const LocationHomeHero=(props)=>{
                             <div className="text-center font-bold text-red-600 text-[32px] md:text-[52px] font-os cm-title py-4"><img className="max-w-[400px] mx-auto" src="/assets/svg/coming-soon.svg"></img></div>
                     }
                  <p className=' md:mt-0 font-semibold text-lg md:text-2xl  mb-2 text-white text-center uppercase '>AT {props.pagedata.locationaddress} IN {props.pagedata.locationcity}, {props.pagedata.locationstate}</p> 
-                 <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-4 md:mb-8 font-os uppercase max-w-[1000px] mx-auto'>ESCAPE ROOMS AND FUN THINGS TO DO IN {props.pagedata.locationcity}, {props.pagedata.locationstate}</h1>
+                 <h1 className='text-gold font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-4 md:mb-8 font-os uppercase max-w-[1000px] mx-auto'>ESCAPE ROOMS AND FUN THINGS TO DO IN {props.pagedata.locationcity}, {props.pagedata.locationstate}</h1>
                  <div className='text-gray-100 max-w-[800px] mx-auto text-center lg:text-lg' dangerouslySetInnerHTML={{ __html: props.pagedata.pagesubtitle }}>
                      
 

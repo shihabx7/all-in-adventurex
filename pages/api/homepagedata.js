@@ -263,6 +263,40 @@ import { getTotal } from "./AllDataList/getTotal";
                                     "slug"  :"axe-throwing",
                                     "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
                                    },
+                                   {
+                                    "id":4,
+                                    "category":"showroom",
+                                    "type": "Virtual",
+                                    "title": "Virtual Game Show Room",
+                                    "description": "An interactive live game show experience that players of all ages and backgrounds can come together and play from across the globe",
+                                    "age":"All Ages (6+)",
+                                    "duration":"60",
+                                    "maxplayers":"12",
+                                    "minplayers":"4",
+                                    "price":"20",
+                                    "booking":{
+                                      "shortname":"virtualgameshowroom",
+                                      "item":"285707",
+                                     "flow":"594928"
+                                    },
+                                    "slug"  :"virtual-games/virtual-game-show-room",
+                                    "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg"
+                                   },
+                                   {
+                                    "id":5,
+                                    "category":"game",
+                                    "type": "Virtual",
+                                    "title": "6 Virtual Escape Rooms",
+                                    "description": "New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
+                                    "age":"All Ages (6+)",
+                                    "duration":"60",
+                                    "maxplayers":"12",
+                                    "minplayers":"2",
+                                    "price":"147",
+                                    "slug"  :"virtual-games",
+                                    "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game.jpg",
+                                    "bookinglink":"https://www.virtualmysteryroom.com",
+                                   },
                                 
                               
                                 ],

@@ -6,6 +6,7 @@ const CouponForm=(props)=>{
     const [showCoupon,setShowcoupon]=useState(false)
     const [err,setErr]=useState(false)
     const [emptyErr,setEmptyErr]=useState(true)
+    const [isSend,setIsSend]=useState(false)
     const [formErr,setFormErr]=useState({
           
             nameErr:false,
@@ -26,18 +27,18 @@ const CouponForm=(props)=>{
     const checkName=(e)=>{
 
         const name=e.target.value.trim()
-
+            console.log(name)
         const namePatt=/^[a-zA-Z ]*$/
         if(name.length>2 && name.length<21){
             if(!namePatt.test(name)){
                     setErr(true)
-                    setFormErr({...formErr,lNameErr:true})
+                    setFormErr({...formErr,nameErr:true})
                     e.target.classList.remove("focus-green")
                   e.target.classList.add("focus-red")
             }
             else{
                     setErr(false)
-                    setFormErr({...formErr,lNameErr:false})
+                    setFormErr({...formErr,nameErr:false})
                     setFieldValue({...fieldVlue,name:name})
                     e.target.classList.remove("focus-red")
                     e.target.classList.add("focus-green")
@@ -81,14 +82,40 @@ const CouponForm=(props)=>{
             
         }
     }
-    const showcouponnow=(e)=>{
+    const showcouponnow=async(e)=>{
 
         e.preventDefault()
         if(!err){
             if(fieldVlue.name!='' && fieldVlue.email!='')
             {
-                console.log(fieldVlue)
-                setShowcoupon(true)
+                //console.log(e)
+                setIsSend(true)
+                const response = await  fetch('/api/Forms/couponForm',{
+                        method:"POST",
+                        headers:{
+                            "Accept":"application/json,text/plain,*/*",
+                            "Content-Type":"application/json"
+                        },
+                        body:JSON.stringify(fieldVlue)
+
+                })
+                const result = await response.json()
+              
+                if(result.success){
+                    setIsSend(false)
+                    setShowcoupon(true)
+                    e.target.reset()
+                    //window.location.replace( "/thank-you-franchise");
+                   
+                    
+                }
+                else{
+                    setIsSend(false)
+                    setShowcoupon(false)
+                    e.target.reset()
+                }
+
+                
                 setFieldValue({...fieldVlue,name:''})
                 setFieldValue({...fieldVlue,email:''})
             }
@@ -206,8 +233,18 @@ const CouponForm=(props)=>{
                             </div>
                             {
                                 !showCoupon &&
-                                <div className="flex items-center justify-center coupon-hider absolute top-0 left-0 h-full rounded-l w-[80%] bg-golden text-center text-white ">
-                                     <p className="lg:text-lg">Show Coupon Code</p> 
+                                <div className="flex items-center justify-center  coupon-hider absolute top-0 left-0 h-full rounded-l w-[85%] md:w-[80%] bg-golden text-center text-white ">
+                                     {
+                                        !isSend && 
+                                        <p className="lg:text-lg">Show Coupon Code</p> 
+                                     }
+                                      {
+                                        isSend && 
+                                        <div className="progress-bar3 text-white flex items-center justify-center" > 
+                                            Generating Coupon Code
+                                         </div>    
+                                     }
+                                     
                             </div>
                             }
                             
@@ -220,7 +257,7 @@ const CouponForm=(props)=>{
                                         <input id={"name"+props.id}
                                         onChange={(e)=>checkName(e)}
                                          type="text"
-                                         value={fieldVlue.name}
+                                       //  value={fieldVlue.name}
                                           className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                                            placeholder="Your Name"
                                             required></input>
@@ -231,7 +268,7 @@ const CouponForm=(props)=>{
                                          <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">What's your email? *</p>
                                         <input id={"email"+props.id}
                                          onChange={(e)=>checkEmail(e)}
-                                         value={fieldVlue.email}
+                                       //  value={fieldVlue.email}
                                          type="email" className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                                           placeholder="Your Email"
                                            required></input>

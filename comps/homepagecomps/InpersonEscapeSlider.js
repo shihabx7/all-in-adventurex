@@ -12,28 +12,17 @@ const InpersonEscapeSlider =(props)=>{
 
     //console.log(props.inpersongames)
 
-    return (<div className="inpsliderhome bg-black relative pb-4">
-        <div className="inp inp-lt absolute top-0 left-0"> 
-          <img src="/assets/inperson-angel-bg.png"></img>
-        </div>
-        <div className="inp inp-rt absolute top-0 right-0"> 
-          <img src="/assets/inperson-space-bg.png"></img>
-        </div>
-        <div className="inp inp-lb absolute bottom-8 left-0"> 
-          <img src="/assets/inperson-rock-bg.png"></img>
-        </div>
-        <div className="inp inp-rb absolute bottom-12 right-0"> 
-          <img src="/assets/inperson-planet-bg.png"></img>
-        </div>
+    return (<div className="inpsliderhome  bg-black game-bg-pattern-dark relative pb-4">
+       
         <div className="max-w-7xl mx-auto pt-16 md:pt-28 px-4 z-20 relative">
             {props.city && 
               <>
-                <TitleSeparator title={'PLAY IN-PERSON ESCAPE ROOMS in '+props.city+' '+props.state} color='golden-text' weight='font-bold'/>
+                <TitleSeparator title={'PLAY IN-PERSON ESCAPE ROOMS in '+props.city+' '+props.state} color='text-gold' weight='font-bold'/>
               </>
             }
             {!props.city && 
              
-                <TitleSeparator title='PLAY IN-PERSON ESCAPE ROOMS' color='golden-text' weight='font-bold'/>
+                <TitleSeparator title='PLAY IN-PERSON ESCAPE ROOMS' color='text-gold' weight='font-bold'/>
               
             }
              

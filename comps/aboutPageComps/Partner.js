@@ -3,10 +3,7 @@ import { FiChevronRight } from "react-icons/fi";
 const Partner=()=>{
 
     return(
-        <div className="buy-gift py-20 md:py-28  relative overflow-hidden" style={
-            {
-                backgroundImage :  "url('/assets/svg/gift-bg.svg'),linear-gradient(65deg,rgba(0, 0, 0,1),rgba(0, 0, 0,1))",
-            }}> 
+        <div className="buy-gift py-20 md:py-28 bg-black  relative overflow-hidden"> 
             <div className="gift-lt absolute top-0 left-0"> 
                 <img src="/assets/gift-balon-bg.png"></img>
             </div>

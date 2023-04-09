@@ -5,7 +5,7 @@ import { FiChevronRight } from "react-icons/fi";
 const PriceForLargerGroup=()=>{
 
     return(
-        <div className="price-for-larger-grop md:mt-0 py-16 md:py-20 lg:py-28 relative overflow-hidden" style={{backgroundImage:"url('/assets/svg/gift-bg.svg'),linear-gradient(65deg,rgba(0, 0, 0,1),rgba(0, 0, 0,1))"}}>
+        <div className="price-for-larger-grop bg-black md:mt-0 py-16 md:py-20 lg:py-28 relative overflow-hidden">
             <div className="gift-lt absolute top-0 left-0"><img src="/assets/gift-balon-bg.png"></img></div>
             <div className="gift-rt absolute"><img src="/assets/Compas-brown.png"></img></div>
             <div className="max-w-7xl mx-auto px-4 z-30">

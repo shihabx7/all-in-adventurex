@@ -72,12 +72,7 @@ const EventContact=(props)=>{
 
     
         return (
-            <div  id="eventform" className="event-contact py-16 md:py-20 lg:py-28 relative overflow-hidden" style={{
-
-                background:'url("/assets/svg/gift-bg.svg"), linear-gradient(65deg, rgb(0, 0, 0), rgb(0, 0, 0))',
-                backgroundPosition:"bottom center,center center",
-                backgroundRepeat:"no-repeat"
-            }}>
+            <div  id="eventform" className="event-contact bg-black py-16 md:py-20 lg:py-28 relative overflow-hidden">
                 <div className="gift-rt absolute"><img src="/assets/Compas-brown.png"></img></div>
                 <div className="gift-lt absolute top-0 left-0"><img src="/assets/gift-balon-bg.png"></img></div>
                     <div className="max-w-7xl mx-auto md:px-4"> 

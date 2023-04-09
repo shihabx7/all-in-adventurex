@@ -23,12 +23,7 @@ const AllFaq=(props)=>{
 
     return (
 
-        <div className="all-faq relative bg-black py-16 md:py-24 lg:py-32 px-4 overflow-hidden mt-[-60px] md:mt-[0px]" style={{
-
-            background:'url("/assets/svg/gift-bg.svg"), linear-gradient(65deg, rgb(0, 0, 0), rgb(0, 0, 0))',
-            backgroundPosition:"bottom center,center center",
-            backgroundRepeat:"no-repeat"
-        }}>
+        <div className="all-faq relative bg-black py-16 md:py-24 lg:py-32 px-4 overflow-hidden mt-[-60px] md:mt-[0px]">
             <div className="gift-lt max-w-[72px] md:max-w-[120px] lg:max-w-[130px] opacity-[0.4] absolute top-0 left-0"><img className="w-full" src="/assets/faq-q.png"></img></div>
             <div className="gift-rt absolute"><img src="/assets/Compas-brown.png"></img></div>
             <div className="max-w-7xl mx-auto relative z-30">

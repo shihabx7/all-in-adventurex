@@ -280,6 +280,42 @@ export const getAllActivity=()=>{
                     "activity_cover_image":"/assets/all-game-list/allinadventures-axe-throwing.jpg",
                     
                 },
+                {
+                    "id":17,
+                    "activity_name":"Virtual game show room",
+                    "activity_type":"Virtual",
+                    "activity_category":"other",
+                    "age":"All Ages (6+)",
+                    "min_player":4,
+                    "max_player":12,
+                    "price":"20",
+                    "duration":"60",
+                    "activity_desc":"An interactive live game show experience that players of all ages and backgrounds can come together and play from across the globe",
+                    "activity_slug":"virtual-games/virtual-game-show-room",
+                    "activity_cover_image":"/assets/all-game-list/All-In-Adventures-Virtual-Game-Show-Room.jpg",
+                    "booking":{
+                        "shortname":"virtualgameshowroom",
+                        "item":"285707",
+                       "flow":"594928"
+                      },
+                    
+                },
+                {
+                    "id":18,
+                    "activity_name":"6 Virtual Escape Rooms",
+                    "activity_type":"Virtual",
+                    "activity_category":"other",
+                    "age":"All Ages (6+)",
+                    "min_player":2,
+                    "max_player":12,
+                    "price":"147",
+                    "duration":"60",
+                    "activity_desc":"New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
+                    "activity_slug":"virtual-games",
+                    "activity_cover_image":"/assets/all-game-list/All-In-Adventures-6-Virtual-Escape-Room.jpg",
+                    "bookinglink":"https://www.virtualmysteryroom.com",
+                    
+                },
                
                 
                 

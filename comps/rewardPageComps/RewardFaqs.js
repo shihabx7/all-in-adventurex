@@ -6,12 +6,7 @@ import { FiChevronRight} from "react-icons/fi";
 const RewardFaqs=(props)=>{
 
 return(
-    <div className="reward-faq relative bg-black py-16 md:py-24 lg:py-32 px-4 overflow-hidden" style={{
-
-        background:'url("/assets/svg/gift-bg.svg"), linear-gradient(65deg, rgb(0, 0, 0), rgb(0, 0, 0))',
-        backgroundPosition:"bottom center,center center",
-        backgroundRepeat:"no-repeat"
-    }}>
+    <div className="reward-faq relative bg-black py-16 md:py-24 lg:py-32 px-4 overflow-hidden">
         <div className="gift-lt max-w-[72px] md:max-w-[120px] lg:max-w-[130px] opacity-[0.4] absolute top-0 left-0"><img className="w-full" src="/assets/faq-q.png"></img></div>
         <div className="gift-rt absolute"><img src="/assets/Compas-brown.png"></img></div>
         <div className="max-w-[990px] mx-auto relative z-30">

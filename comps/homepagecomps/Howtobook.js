@@ -74,7 +74,7 @@ const Howtobook=()=>{
 
             <div className="max-w-7xl mx-auto">
                 <div className="hbt-container pt-4 md:pt-16 relative z-20">
-                <TitleSeparator title='HOW TO BOOK YOUR ADVENTURE' color='golden-text' weight='font-bold'/>
+                <TitleSeparator title='HOW TO BOOK YOUR ADVENTURE' color='dark-gold' weight='font-bold'/>
                 <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16">
                     <p className="text-gray-700 md:px-8">You can book instantly online for groups of 2-10 people. Have a large group of more than 10, or are you planning a big event? Contact your local store and let us help get you set up with special deals.</p>
                 </div>

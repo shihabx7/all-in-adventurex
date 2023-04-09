@@ -34,18 +34,10 @@ const BuyGiftCard=(props)=>{
                 </div>
         }
             
-        <div className="buy-gift py-20 md:py-28  relative overflow-hidden" style={
-            {
-                backgroundImage :  "url('/assets/svg/gift-bg.svg'),linear-gradient(65deg,rgba(0, 0, 0,1),rgba(0, 0, 0,1))",
-            }}> 
-            <div className="gift-lt absolute top-0 left-0"> 
-                <img src="/assets/gift-balon-bg.png"></img>
-            </div>
-            <div className="gift-rt absolute"> 
-                <img src="/assets/Compas-brown.png"></img>
-            </div>
+        <div className="buy-gift bg-black gift-pattern py-20 md:py-28  relative overflow-hidden"> 
+           
             <div className="max-w-7xl mx-auto px-4 z-30">
-                    <TitleSeparator title='All IN ADVENTURES GIFT CARDS' color='golden-text' weight='font-bold'/>
+                    <TitleSeparator title='All IN ADVENTURES GIFT CARDS' color='text-gold' weight='font-bold'/>
                     <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-12 lg:mb-16">
                          <p className="text-gray-200 md:px-8">Have you ever considered giving the “gift of memories”? Well, our gift cards may be just what you're searching for! All In Adventures gift cards are perfect for your adventure loving friends/family and colleagues. You absolutely can't go wrong with this gift idea - it's something everyone will love and favor!</p>
                      </div>

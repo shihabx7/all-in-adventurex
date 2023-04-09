@@ -46,7 +46,7 @@ const ContactLocHero=(props)=>{
                     
                 
                  <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center uppercase'>At {props.pagedata.mall} in {props.pagedata.location_name}</p> 
-                 <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os uppercase max-w-[1000px] mx-auto'>{
+                 <h1 className='text-gold aia-shadow font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os uppercase max-w-[1000px] mx-auto'>{
                  
                         props.pagedata.pagetitle 
                  

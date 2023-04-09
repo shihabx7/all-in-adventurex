@@ -100,7 +100,7 @@ export default async function jobApplicationHandler(req, res) {
         await transporter.sendMail({
           from: "sender@allinadventures.com",
           //to: "shihab.dgency@gmail.com",
-        to: "careers@allinadventures.com",
+       to: "careers@allinadventures.com",
         bcc:"dgency.com@gmail.com,shihab.dgency@gmail.com",
           subject: `Job Application - ${retbody.info1.lName} ${retbody.info1.fName}`,
           html: `
@@ -133,15 +133,14 @@ try {
   bcc:"dgency.com@gmail.com",
     subject: `Here's Your Job Application at All In Adventures`,
     html: `
-        <p style="margin:4px 0p;x"> Dear ${retbody.info1.fName} ${retbody.info1.lName},  </p>
-        <p style="margin:4px 0px;">This letter is to inform you that we received your job application. We appreciate you taking the time to apply.</p>
-        <p style="margin:4px 0px;">We are currently in the process of taking job applications. If you are selected for an interview, our human resources department will be in contact with you.</p>
-        <p style="margin:4px 0px;">Thank you again for the time you invested in your application.</p>
+        <p style="margin:4px 0p;x"> Dear ${retbody.info1.fName} ${retbody.info1.lName},</p>
+        <p style="margin:12px 0px;">This letter is to inform you that we received your job application. We appreciate you taking the time to apply.</p>
+        <p style="margin:12px 0px;">Once we have an opportunity to review the application and it aligns with one of our job openings, one of our team members will be in contact with you.</p>
+        <p style="margin:12px 0px;">Thank you again for the time you invested in your application.</p>
         <p style="margin-top:16px; margin-bottom:1px;"><strong>Beth Palmer</strong> </p>
         <p style="margin-top:1px; margin-bottom:1px;">Training and Development/Onboarding Manager</p>
         <p style="margin-top:1px; margin-bottom:1px;"><a href="https://allinadventures.com">allinadventures.com</a> </p>
         <p style="margin-top:12px; margin-bottom:0px;"><a href="mailto:careers@allinadventures.com">careers@allinadventures.com</a></p>
-        <p style="margin:1px 0px;"><a href="tel:678-303-6543">678-303-6543</a></p>
         <p style="margin:12px 0px 0px 0px;">Please find your application attached.</p>
      
     `,

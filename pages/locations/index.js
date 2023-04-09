@@ -102,9 +102,8 @@ return (
          </div>
     {/* ============page baner end=============*/}
     {/* ============Location list=============*/}
-    <div id="gamelist"  className='all-location-list-section buy-gift relative overflow-hidden px-4 md:px-6'> 
-                <div className="gift-lt absolute top-0 left-0"><img src="/assets/gift-balon-bg.png"></img></div>
-              <div className="gift-rt absolute"><img src="/assets/Compas-brown.png"></img></div>
+    <div id="gamelist"  className='all-location-list-section bg-black relative overflow-hidden px-4 md:px-6'> 
+              
        <div className='max-w-7xl mx-auto md:px-4 py-16 md:py-28'>
         <div className='section-head relative z-20'>  
               <TitleSeparator title='CHOOSE YOUR LOCATION' color='golden-text' weight='font-bold'/>
@@ -113,6 +112,8 @@ return (
                 </div>
         </div>
         <div id="gamelist" className='location-grid-box mx-auto'>
+        <div className="gift-lt absolute top-0 left-0"><img src="/assets/gift-balon-bg.png"></img></div>
+        <div className="gift-rt absolute"><img src="/assets/Compas-brown.png"></img></div>
           <div className='loc-list-tab mx-auto mb-4 md:mb-6 lg:mb-8 '> 
               <div className='flex'> 
               <div className='all-list'>

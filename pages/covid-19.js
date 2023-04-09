@@ -61,7 +61,7 @@ const covid19=(props)=>{
          </div>
     {/* ============page baner end=============*/}
     {/* ============Location list=============*/}
-    <div className='all-location-list-section buy-gift relative overflow-hidden px-4 md:px-6'> 
+    <div className='all-location-list-section buy-gift bg-black relative overflow-hidden px-4 md:px-6'> 
                 <div className="gift-lt absolute top-0 left-0"><img src="/assets/gift-balon-bg.png"></img></div>
               <div className="gift-rt absolute"><img src="/assets/Compas-brown.png"></img></div>
        <div className='max-w-7xl mx-auto md:px-4 py-16 md:py-28'>

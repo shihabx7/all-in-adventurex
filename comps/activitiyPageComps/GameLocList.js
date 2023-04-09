@@ -13,7 +13,15 @@ const GameLocList=(props)=>{
           view: {item:booking.item}
         });
       }
-      
+      const openVgBooking=(booking)=>{
+        FH.open({
+          shortname: booking.shortname,
+          fallback: 'simple', 
+          fullItems: 'yes', 
+          flow: booking.flow, 
+          view: { item: booking.item }
+        });
+      }
 
       const otherCheck=(aclist)=>{
        
@@ -35,7 +43,7 @@ const GameLocList=(props)=>{
                     
                 <div className="all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
                     <div className="section-title  text-center max-w-[800px] mx-auto">
-                        <TitleSeparator title="PLAY IN-PERSON ESCAPE GAMES" color="golden-text" weight="font-bold"/>
+                        <TitleSeparator title="PLAY IN-PERSON ESCAPE GAMES" color="dark-gold" weight="font-bold"/>
                         <p className="text-gray-700 md:px-8 md:text-lg">Team up with your friends, family, kids (age 6+) or co-workers for an adrenaline filled 50-60 minutes real life interactive and engaging escape game experience!</p>
                     </div>
                 {
@@ -95,7 +103,7 @@ const GameLocList=(props)=>{
                     othergame &&
                     <div id="others-physical-games" className="pt-20 all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
                     <div className="section-title text-center max-w-[800px] mx-auto">
-                        <TitleSeparator title="OTHER IN-PERSON GAMES" color="golden-text" weight="font-bold"/>
+                        <TitleSeparator title="OTHER GAMES" color="dark-gold" weight="font-bold"/>
                         <p className="text-gray-700 md:px-8 md:text-lg">We offer additional fun activities that can double up your adventure experience. Simply come with the desire to play more!</p>
                     </div>
                 {
@@ -117,7 +125,18 @@ const GameLocList=(props)=>{
                                         </div>
                                         <div className="card-ribbon">
                                               <div className="inline-block text-center py-2 px-4 bg-red-600">
-                                                    <p className="text-lg text-white">FROM</p>
+                                                    {
+                                                       (activity.activity_type =="Virtual" && activity.booking) && 
+                                                       <p className="text-lg text-white">PER PERSON</p>
+                                                    }
+                                                    {
+                                                       (activity.activity_type =="Virtual" && activity.bookinglink) && 
+                                                       <p className="text-lg text-white">PER GROUP</p>
+                                                    }
+                                                     {
+                                                       activity.activity_type !="Virtual" &&  
+                                                       <p className="text-lg text-white">FROM</p>
+                                                    }
                                                     <p className="text-3xl text-white font-bold">${activity.price}</p>
                                              </div>
                                          </div>
@@ -131,7 +150,27 @@ const GameLocList=(props)=>{
                                           <p className="text-gray-200 lg:text-lg mx-auto md:mx-0 max-w-[700px]">{activity.activity_desc}
                                          </p>
                                          </div>
-                                         <div className="card-game-link mt-4 text-left">
+                                         { 
+                                            activity.activity_type=="Virtual" && 
+                                            <div className="card-game-link mt-4 text-left">
+                                                {
+                                                    activity.booking && 
+                                                    <button onClick={()=>{openVgBooking(activity.booking)}} className="border-2 w-[240px]  block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</button>
+
+                                                }
+                                                 {
+                                                    activity.bookinglink && 
+                                                    <a target={"_blank"} href={activity.bookinglink} className="text-center border-2 w-[240px]  block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</a>
+
+                                                }                                  
+                                                 <a href={"/"+activity.activity_slug} className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
+                                            
+                                             </div>
+
+                                         }
+                                         {
+                                            activity.activity_type !="Virtual" && 
+                                            <div className="card-game-link mt-4 text-left">
                                             { props.publish==undefined &&
                                             <button onClick={()=>{bookGames(props.bookingdata.shortname,props.bookingdata[activity.activity_slug])}} className="border-2 w-[240px] block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white">BOOK NOW</button>
                                             
@@ -146,6 +185,9 @@ const GameLocList=(props)=>{
                                               <a href={"/"+props.locationslug+"/activities/"+activity.activity_slug} className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white">LEARN MORE</a>
                                              
                                         </div>
+
+                                         }
+                                         
                                     
                                  </div>
 

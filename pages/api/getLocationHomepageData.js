@@ -396,8 +396,9 @@ const locPagedata={
                     
 
                       ],
+                   
                   
-                  "events":             [
+                  "events":[
                     {
                       "id":1,
                       "category":"event",
@@ -667,8 +668,8 @@ const locPagedata={
         
 
           ],
-       
-          "events":             [
+        
+        "events":[
             {
               "id":1,
               "category":"event",
@@ -967,7 +968,42 @@ const locPagedata={
         "slug"  :"beat-the-seat",
         "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
        },
+       {
+        "id":2,
+        "category":"showroom",
+        "type": "Virtual",
+        "title": "Virtual Game Show Room",
+        "description": "An interactive live game show experience that players of all ages and backgrounds can come together and play from across the globe",
+        "age":"All Ages (6+)",
+        "duration":"60",
+        "maxplayers":"12",
+        "minplayers":"4",
+        "price":"20",
+        "booking":{
+          "shortname":"virtualgameshowroom",
+          "item":"285707",
+         "flow":"594928"
+        },
+        "slug"  :"virtual-games/virtual-game-show-room",
+        "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg"
+       },
+       {
+        "id":3,
+        "category":"game",
+        "type": "Virtual",
+        "title": "6 Virtual Escape Rooms",
+        "description": "New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
+        "age":"All Ages (6+)",
+        "duration":"60",
+        "maxplayers":"12",
+        "minplayers":"2",
+        "price":"147",
+        "slug"  :"virtual-games",
+        "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game.jpg",
+        "bookinglink":"https://www.virtualmysteryroom.com",
+       },
       ],
+     
   "events":             [
     {
       "id":1,
@@ -1270,7 +1306,6 @@ const locPagedata={
       ],
    "otherphysicalgames": [
     {
-
         "id":1,
         "category":"other",
         "type": "In-Person",
@@ -1284,8 +1319,43 @@ const locPagedata={
         "slug"  :"beat-the-seat",
         "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
        },
+       {
+        "id":2,
+        "category":"showroom",
+        "type": "Virtual",
+        "title": "Virtual Game Show Room",
+        "description": "An interactive live game show experience that players of all ages and backgrounds can come together and play from across the globe",
+        "age":"All Ages (6+)",
+        "duration":"60",
+        "maxplayers":"12",
+        "minplayers":"4",
+        "price":"20",
+        "booking":{
+          "shortname":"virtualgameshowroom",
+          "item":"285707",
+         "flow":"594928"
+        },
+        "slug"  :"virtual-games/virtual-game-show-room",
+        "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg"
+       },
+       {
+        "id":3,
+        "category":"game",
+        "type": "Virtual",
+        "title": "6 Virtual Escape Rooms",
+        "description": "New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
+        "age":"All Ages (6+)",
+        "duration":"60",
+        "maxplayers":"12",
+        "minplayers":"2",
+        "price":"147",
+        "slug"  :"virtual-games",
+        "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game.jpg",
+        "bookinglink":"https://www.virtualmysteryroom.com",
+       },
       ],
-  "events":             [
+     
+  "events":[
     {
       "id":1,
       "category":"event",
@@ -1801,10 +1871,44 @@ const locPagedata={
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
          },
       
-      
+         {
+          "id":3,
+          "category":"showroom",
+          "type": "Virtual",
+          "title": "Virtual Game Show Room",
+          "description": "An interactive live game show experience that players of all ages and backgrounds can come together and play from across the globe",
+          "age":"All Ages (6+)",
+          "duration":"60",
+          "maxplayers":"12",
+          "minplayers":"4",
+          "price":"20",
+          "booking":{
+            "shortname":"virtualgameshowroom",
+            "item":"285707",
+           "flow":"594928"
+          },
+          "slug"  :"virtual-games/virtual-game-show-room",
+          "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg"
+         },
+         {
+          "id":4,
+          "category":"game",
+          "type": "Virtual",
+          "title": "6 Virtual Escape Rooms",
+          "description": "New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
+          "age":"All Ages (6+)",
+          "duration":"60",
+          "maxplayers":"12",
+          "minplayers":"2",
+          "price":"147",
+          "slug"  :"virtual-games",
+          "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game.jpg",
+          "bookinglink":"https://www.virtualmysteryroom.com",
+         },
     
       ],
-  "events":             [
+     
+  "events":[
     {
       "id":1,
       "category":"event",
@@ -2047,9 +2151,8 @@ const locPagedata={
 
       ],
    "otherphysicalgames": [
-    {
-                                  
-                                    "id":3,
+                             {
+                                "id":3,
                                     "category":"other",
                                     "type": "In-Person",
                                     "title": "Axe Throwing",
@@ -2064,11 +2167,45 @@ const locPagedata={
                                     "bgimg" :"/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg"
                                    },
                                 
-      
+                                   {
+                                    "id":2,
+                                    "category":"showroom",
+                                    "type": "Virtual",
+                                    "title": "Virtual Game Show Room",
+                                    "description": "An interactive live game show experience that players of all ages and backgrounds can come together and play from across the globe",
+                                    "age":"All Ages (6+)",
+                                    "duration":"60",
+                                    "maxplayers":"12",
+                                    "minplayers":"4",
+                                    "price":"20",
+                                    "booking":{
+                                      "shortname":"virtualgameshowroom",
+                                      "item":"285707",
+                                     "flow":"594928"
+                                    },
+                                    "slug"  :"virtual-games/virtual-game-show-room",
+                                    "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg"
+                                   },
+                                   {
+                                    "id":3,
+                                    "category":"game",
+                                    "type": "Virtual",
+                                    "title": "6 Virtual Escape Rooms",
+                                    "description": "New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
+                                    "age":"All Ages (6+)",
+                                    "duration":"60",
+                                    "maxplayers":"12",
+                                    "minplayers":"2",
+                                    "price":"147",
+                                    "slug"  :"virtual-games",
+                                    "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game.jpg",
+                                    "bookinglink":"https://www.virtualmysteryroom.com",
+                                   },
       
     
-      ],
-  "events":             [
+                            ],
+
+  "events": [
     {
       "id":1,
       "category":"event",
@@ -2313,8 +2450,8 @@ const locPagedata={
     
     
       ],
-   
-  "events":             [
+  
+  "events": [
     {
       "id":1,
       "category":"event",
@@ -2436,7 +2573,7 @@ const locPagedata={
      },
 
 
-   ],
+        ],
 
                 },
 //=====================================================================raleigh-nc end
@@ -2588,8 +2725,8 @@ const locPagedata={
     
 
       ],
-   
-  "events":             [
+     
+  "events": [
     {
       "id":1,
       "category":"event",
@@ -2861,7 +2998,7 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
      }, 
       ],
-   
+      
   "events":[
     {
       "id":1,
@@ -3105,8 +3242,9 @@ const locPagedata={
      
     
       ],
+    
    
-  "events":             [
+  "events":[
     {
       "id":1,
       "category":"event",
@@ -3244,7 +3382,7 @@ const locPagedata={
           "metakeyword":"keywords",
           "metadescription":"metadescription"
    },
-"inpersongames":[
+  "inpersongames":[
     {
       "id":1,
       "category":"escapegame",
@@ -3376,8 +3514,9 @@ const locPagedata={
      },
      
       ],
+ 
    
-  "events":             [
+  "events":[
     {
       "id":1,
       "category":"event",
@@ -3646,8 +3785,9 @@ const locPagedata={
      }, 
     
       ],
+
   
-  "events":             [
+  "events":[
     {
       "id":1,
       "category":"event",
@@ -4154,8 +4294,8 @@ const locPagedata={
      
 
       ],
-   
-  "events":             [
+    
+  "events": [
     {
       "id":1,
       "category":"event",
@@ -4422,6 +4562,7 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
      }, 
       ],
+ 
    
   "events":             [
     {
@@ -4691,8 +4832,9 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
      }, 
       ],
+     
   
-  "events":             [
+  "events":[
     {
       "id":1,
       "category":"event",
@@ -4955,7 +5097,7 @@ const locPagedata={
     
       {
 
-          "id":2,
+          "id":1,
           "category":"other",
           "type": "In-Person",
           "title": "Game Show Room",
@@ -4968,11 +5110,46 @@ const locPagedata={
           "slug"  :"game-show-room",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg"
          },
-     
+         {
+          "id":2,
+          "category":"showroom",
+          "type": "Virtual",
+          "title": "Virtual Game Show Room",
+          "description": "An interactive live game show experience that players of all ages and backgrounds can come together and play from across the globe",
+          "age":"All Ages (6+)",
+          "duration":"60",
+          "maxplayers":"12",
+          "minplayers":"4",
+          "price":"20",
+          "booking":{
+            "shortname":"virtualgameshowroom",
+            "item":"285707",
+           "flow":"594928"
+          },
+          "slug"  :"virtual-games/virtual-game-show-room",
+          "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg"
+         },
+         {
+          "id":3,
+          "category":"game",
+          "type": "Virtual",
+          "title": "6 Virtual Escape Rooms",
+          "description": "New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
+          "age":"All Ages (6+)",
+          "duration":"60",
+          "maxplayers":"12",
+          "minplayers":"2",
+          "price":"147",
+          "slug"  :"virtual-games",
+          "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game.jpg",
+          "bookinglink":"https://www.virtualmysteryroom.com",
+         },
+ 
       
     
       ],
-  "events":             [
+    
+  "events": [
     {
       "id":1,
       "category":"event",
@@ -5213,6 +5390,7 @@ const locPagedata={
      }, 
      
       ],
+ 
   
   "events":             [
     {
@@ -5482,6 +5660,7 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg"
      }, 
       ],
+  
    
   "events":             [
     {
@@ -5742,6 +5921,7 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
      },
       ],
+   
    
   "events":[
     {
@@ -6013,7 +6193,7 @@ const locPagedata={
      
 
       ],
-   
+     
   "events":             [
     {
       "id":1,
@@ -6288,6 +6468,7 @@ const locPagedata={
      }, 
      
       ],
+   
   
   "events": [
     {
@@ -6553,8 +6734,43 @@ const locPagedata={
         "slug"  :"beat-the-seat",
         "bgimg" :"/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg"
        },
+       {
+        "id":2,
+        "category":"showroom",
+        "type": "Virtual",
+        "title": "Virtual Game Show Room",
+        "description": "An interactive live game show experience that players of all ages and backgrounds can come together and play from across the globe",
+        "age":"All Ages (6+)",
+        "duration":"60",
+        "maxplayers":"12",
+        "minplayers":"4",
+        "price":"20",
+        "booking":{
+          "shortname":"virtualgameshowroom",
+          "item":"285707",
+         "flow":"594928"
+        },
+        "slug"  :"virtual-games/virtual-game-show-room",
+        "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg"
+       },
+       {
+        "id":3,
+        "category":"game",
+        "type": "Virtual",
+        "title": "6 Virtual Escape Rooms",
+        "description": "New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
+        "age":"All Ages (6+)",
+        "duration":"60",
+        "maxplayers":"12",
+        "minplayers":"2",
+        "price":"147",
+        "slug"  :"virtual-games",
+        "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game.jpg",
+        "bookinglink":"https://www.virtualmysteryroom.com",
+       },
       
       ],
+     
   "events":             [
     {
       "id":1,
@@ -6771,7 +6987,7 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg"
      },
       ],
-   
+     
   "events": [
     {
       "id":1,
@@ -7001,6 +7217,7 @@ const locPagedata={
      
 
       ],
+      
    
   "events": [
     {
@@ -7256,6 +7473,7 @@ const locPagedata={
       "bgimg" :"/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg"
      },
       ],
+     
   
   "events":[
     {

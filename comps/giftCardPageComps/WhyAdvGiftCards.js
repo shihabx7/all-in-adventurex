@@ -25,7 +25,7 @@ const WhyAdvGiftCards=(props)=>{
         <div className="why-adv-gift py-16 md:py-20 lg:py-28 px-4 bg-cover bg-center" style={{backgroundImage : "url('/assets/game-dt-bg.jpg')", }}>
             <div className="section-container max-w-7xl mx-auto relative z-30">
                 <div className="section-title">
-                  <TitleSeparator title='WHY ALL IN ADVENTURES GIFT CARDS' color='golden-text' weight='font-bold'/>
+                  <TitleSeparator title='WHY ALL IN ADVENTURES GIFT CARDS' color='dark-gold' weight='font-bold'/>
                     <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-12 lg:mb-16">
                          <p className="text-gray-700 md:px-8">This isn't your average gift card. Our gift card program offers you the chance to “share an experience” with friends/family/coworkers, etc. Gift recipients will enjoy choosing from many available experiences such as Escape Rooms, Game Show Room, Beat The Seat, and more! * </p>
                      </div>

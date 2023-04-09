@@ -50,7 +50,7 @@ export default function Home({pagemeta,pagedata,inpersongames,othergames,virtual
        <Howtobook></Howtobook>
        <InpersonEscapeSlider inpersongames={inpersongames}/>
        <PysicalEscape othergames={othergames}/>
-       <VirtualEscapeSlider virtualgames={virtualgames}/>
+    
        <PlaningEventsSlider events={events}/>
        <BuyGiftCard locationlist={locationlist}/>
        <WhatIsEscape/>

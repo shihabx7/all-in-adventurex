@@ -101,14 +101,7 @@ const location=(props)=>{
                                 props.othergames &&
                                 <PysicalEscape  publish={props.pagedata.publish_status} city={props.pagedata.locationcity} state={props.pagedata.locationstate} othergames={props.othergames} locationslug={props.pagedata.slug} bookingData={props.bookingData}/>
                             }
-                             {
-                                props.othergames &&
-                                <VirtualEscapeSlider virtualgames={props.virtualgames}/>
-                             }
-                             {
-                                !props.othergames &&
-                                <VirtualEscapeSlider bgicon="none" virtualgames={props.virtualgames}/>
-                             }
+                             
                            
                              <PlaningEventsSlider eventbooking={props.eventbooking} city={props.pagedata.locationcity} state={props.pagedata.locationstate} events={props.events} locationslug={props.pagedata.slug}/>
                              <BuyGiftCard locationslug={props.pagedata.slug}  bookingData={props.bookingData}/>

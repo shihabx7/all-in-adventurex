@@ -15,7 +15,7 @@ const WhoCanplay =()=>{
                 <img src="/assets/Compas-brown.png"></img>
             </div>
             <div className="max-w-7xl mx-auto px-4 relative z-40">
-                    <TitleSeparator title='WHO CAN PLAY AN ESCAPE ROOM' color='golden-text' weight='font-bold'/>
+                    <TitleSeparator title='WHO CAN PLAY AN ESCAPE ROOM' color='text-gold' weight='font-bold'/>
                     <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-12 lg:mb-16">
                          <p className="text-gray-200 md:px-8">Escape rooms are perfect for having interactive adventures and fun with your friends, family, kids, or even team building with co-workers!</p>
                      </div>

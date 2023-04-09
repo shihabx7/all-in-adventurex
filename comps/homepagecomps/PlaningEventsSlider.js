@@ -32,12 +32,12 @@ const PlaningEventsSlider=(props)=>{
         
          {props.city && 
               <>
-                <TitleSeparator title={'EVENTS AND PARTIES in '+props.city+' '+props.state} color='golden-text' weight='font-bold'/>
+                <TitleSeparator title={'EVENTS AND PARTIES in '+props.city+' '+props.state} color='dark-gold' weight='font-bold'/>
               </>
             }
             {!props.city && 
              
-                <TitleSeparator title='EVENTS AND PARTIES' color='golden-text' weight='font-bold'/>
+                <TitleSeparator title='EVENTS AND PARTIES' color='dark-gold' weight='font-bold'/>
               
             }
 

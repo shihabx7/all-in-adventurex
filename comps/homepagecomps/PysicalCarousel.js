@@ -19,6 +19,15 @@ const PysicalCarousel=(props)=>{
       view: { item: booking.item }
     });
   }
+  const virtualBooking=(booking)=>{
+    FH.open({
+      shortname: booking.shortname,
+      fallback: 'simple', 
+      fullItems: 'yes', 
+      flow: booking.flow, 
+      view: { item: booking.item }
+    });
+  }
   const showDescription=(description)=>{
     if(description.length>144){
       const cutDescription=description.slice(0, 144)+" ...";
@@ -33,13 +42,13 @@ const PysicalCarousel=(props)=>{
     const responsive = {
         desktoplg: {
           breakpoint: { max: 4000, min: 1640 },
-            items: 3,
+            items: 5,
             slidesToSlide: 1,
             partialVisibilityGutter: 0
           },
           desktopmd: {
             breakpoint: { max: 1640, min: 1440 },
-            items: 3,
+            items:4,
             slidesToSlide: 1,
             partialVisibilityGutter: 0
           },
@@ -63,7 +72,7 @@ const PysicalCarousel=(props)=>{
         }
       };
     return (
-    <div className="full-carousel lg:max-w-[1280px] 2xl:max-w-[62%] mx-auto pysicalescapecarousel inp-car"> 
+    <div className="full-carousel mx-auto pysicalescapecarousel inp-car"> 
     <Carousel
      swipeable={true}
      draggable={true}
@@ -105,7 +114,19 @@ const PysicalCarousel=(props)=>{
                     </div>
                     <div className="card-ribbon">
                             <div className="inline-block text-center py-2 px-4 bg-red-600">
-                                <p className="text-lg text-white">FROM</p>
+                                
+                                {
+                                  (othergame.type=='Virtual' &&  othergame.booking) &&
+                                  <p className="text-lg text-white">PER PERSON</p>
+                                }
+                                 {
+                                  (othergame.type=='Virtual' &&  othergame.bookinglink) &&
+                                  <p className="text-lg text-white">PER GROUP</p>
+                                }
+                                {
+                                  othergame.type !='Virtual' && 
+                                  <p className="text-lg text-white">FROM</p>
+                                }
                                 <p className="text-2xl md:text-3xl text-white font-bold">${othergame.price}</p>
                             </div>
                     </div>
@@ -118,7 +139,26 @@ const PysicalCarousel=(props)=>{
                         <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">{othergame.title}</h3>
                         <p className="text-gray-200 lg:text-lg">{othergame.description}</p>
                     </div>
-                    <div className="card-game-link mt-4 text-center">
+                    {
+                      othergame.type=='Virtual' && 
+                      <div className="card-game-link text-center mt-4">
+                         
+                      {
+                       othergame.bookinglink &&
+                       <a target="_blank" href={othergame.bookinglink} className="border block max-w-[200px] mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</a>
+                      }
+                      {
+                       othergame.booking &&
+                       <button onClick={()=>virtualBooking(othergame.booking)} className="border block max-w-[200px] mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
+                      }
+                     
+                         <a href={"/"+othergame.slug } className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700">LEARN MORE</a>
+                    
+                     </div>
+                    }
+                    {
+                      othergame.type!='Virtual' && 
+                      <div className="card-game-link mt-4 text-center">
                       {
                         (props.bookingData && props.publish) &&
                         <button onClick={()=>openBooking(props.bookingData.shortname,props.bookingData[othergame.slug])} className="border max-w-[200px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">BOOK NOW</button>
@@ -144,6 +184,8 @@ const PysicalCarousel=(props)=>{
                        }
                         
                     </div>
+                    }
+                   
                     
                  </div>
             </div>
