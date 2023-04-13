@@ -12,7 +12,7 @@ const Rebranding=()=>{
                         <div className="sec-col md:w-[55%] lg:w-[64%] order-2 md:order-1 mt-4 md:mt-0">
                              <div className="section-title-sep mt-4 md:mt-0">
                                     <p className="text-lg text-[#938056] uppercase">ANNOUNCEMENT</p>
-                                     <GameTitleSeparator title="MEET YOUR FAVORITE ALL IN ADVENTURES" color="golden-text" weight="font-bold"/>    
+                                     <GameTitleSeparator title="MEET YOUR FAVORITE ALL IN ADVENTURES" color="text-gold" weight="font-bold"/>    
                              </div>
                              <p className="text-[#BEBEBE] lg:text-lg mt-4  lg:mt-8">
                               Today, we're bringing all of our locations together under the name of All In Adventures.

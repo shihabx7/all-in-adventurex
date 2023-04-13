@@ -37,7 +37,7 @@ const InpersonEscapeSlider =(props)=>{
                 <p className="text-gray-200 md:px-8">Team up with your friends, family, kids (age 6+), or co-workers for an adrenaline filled 50-60 minutes in-person interactive and engaging escape game experience!</p>
               }
                     
-                    <div className="mt-2 md:mt-4 escape-flow flex justify-center items-center space-x-.9 md:space-x-1 text-[18px] golden-text font-medium md:text-xl">
+                    <div className="mt-2 md:mt-4 escape-flow flex justify-center items-center space-x-.9 md:space-x-1 text-[18px] text-gold font-medium md:text-xl">
 
                         <div>Team Up</div><span className="text-gold"><FaAngleRight/></span>
                         <div className="hidden md:block">Find Clues</div><span className="text-gold hidden md:block"><FaAngleRight/></span>

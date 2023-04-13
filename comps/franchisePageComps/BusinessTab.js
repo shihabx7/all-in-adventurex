@@ -16,7 +16,7 @@ const BusinessTab=()=>{
         <div className="five-step-tab pt-16 md:pt-20">
             <div className="section-title">
                  <p className="text-lg text-[#938056] text-center">5-STEPS</p>
-                 <TitleSeparator title="HOW TO BECOME AN ESCAPE ROOM FRANCHISE OWNER" color="golden-text" weight="font-bold"/>
+                 <TitleSeparator title="HOW TO BECOME AN ESCAPE ROOM FRANCHISE OWNER" color="dark-gold" weight="font-bold"/>
                  <p className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16 text-gray-700">Here is the process to join this growing and rewarding industry by owning your own All In Adventures escape room franchise.</p>
 
             </div>

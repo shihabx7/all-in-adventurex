@@ -16,11 +16,7 @@ const FaqList=({faqlist})=>{
 
    }
 
-   
-    
-
-
-
+ 
 return(
     <div className="faq-liscont">
     {

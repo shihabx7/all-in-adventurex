@@ -17,7 +17,7 @@ const ContactForJoin=(props)=>{
         <div className="fran-tes bg-cover" id="ready-to-signup" style={{backgroundImage:"url('/assets/franchise-slider-bg.jpg')"}}>
             <div className="section-container max-w-7xl mx-auto px-4 py-16 md:py-20 lg:py-28">
                 <div className="max-w-[800px] mx-auto text-center">
-                    <h2 className="mb-8 md:mb-12 golden-text text-3xl md:text-4xl font-os font-bold">READY TO SIGN UP?</h2>
+                    <h2 className="mb-8 md:mb-12 dark-gold text-3xl md:text-4xl font-os font-bold">READY TO SIGN UP?</h2>
                     <button onClick={showRewardMenu} className="rounded-full mx-auto text-center py-3 md:py-3 lg:py-4 px-4 md:px-8 lg:px-10 flex justify-between items-center space-x-8 md:space-x-12 lg:space-x-16 bg-red-600 hover:bg-red-700 text-white uppercase">
                         <div className="flex space-x-2 items-center">
                         

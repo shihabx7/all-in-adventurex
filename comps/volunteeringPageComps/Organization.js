@@ -16,7 +16,7 @@ const Organization=()=>{
                         <img className="mx-auto md:max-w-[600px] block" src="/assets/allinadventure-volunteering-organization.png"></img>
 
                     </div>
-                    <TitleSeparator title='EXAMPLES OF ORGANIZATIONS WE HELP' color='golden-text' weight='font-bold'/>
+                    <TitleSeparator title='EXAMPLES OF ORGANIZATIONS WE HELP' color='text-gold' weight='font-bold'/>
                     <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-12 lg:mb-16">
                          <p className="text-gray-200 md:px-8">Giving our efforts to a worthy cause is a great way to help the community. There are many organizations we can get involved with by volunteering, and here are a few examples.</p>
                      </div>

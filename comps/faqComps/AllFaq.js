@@ -28,7 +28,7 @@ const AllFaq=(props)=>{
             <div className="gift-rt absolute"><img src="/assets/Compas-brown.png"></img></div>
             <div className="max-w-7xl mx-auto relative z-30">
                 <div className="section-title mb-8 md:mb-12">
-                    <TitleSeparator title="EVERYTHING YOU NEED TO KNOW" color="golden-text" weight="font-bold"/>
+                    <TitleSeparator title="EVERYTHING YOU NEED TO KNOW" color="text-gold" weight="font-bold"/>
                     <p className="mt-4 text-gray-100 max-w-2xl mx-auto text-center lg:text-lg">Browse through these FAQs to find answers to commonly raised questions. If you don't see what's on your mind, reach out to us anytime on phone or email.</p>
 
                 </div>
@@ -38,7 +38,7 @@ const AllFaq=(props)=>{
 
                         return (
                             <div key={index} className="faq-container py-4 md:py-8 max-w-6xl mx-auto  transition duration-150 ease-in ">
-                                <div className="faq-group-title golden-text pb-2 md:pb-6 lg:pb-8">
+                                <div className="faq-group-title text-gold pb-2 md:pb-6 lg:pb-8">
                                       <h2 className="text-[24px] md:text-2xl lg:text-3xl font-bold font-os uppercase">{faq[0].split('_').join(' ')} </h2>  
                                 </div>
                                 <div className="faq-box ">

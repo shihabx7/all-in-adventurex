@@ -6,7 +6,7 @@ const PricingQuest=(props)=>{
         <div className="inperson-activities-pricing relative bg-center bg-cover" style={{backgroundImage:'url("/assets/game-dt-bg.jpg")'}}>
             <div className="section-container max-w-7xl mx-auto  pb-16 md:pb-24 lg:pb-28 relative z-30">
                     <div className="section-title px-4 mb-8">
-                        <TitleSeparator title="PORTABLE QUEST PRICING" color="golden-text" weight="font-bold"/>
+                        <TitleSeparator title="PORTABLE QUEST PRICING" color="dark-gold" weight="font-bold"/>
                         
                     </div>
                     <div className="price-cl max-w-[740px] mx-auto">

@@ -11,7 +11,7 @@ const RewardsProgram=()=>{
                     <div className="abt-col md:w-[58%] lg:w-[48%] order-2 md:order-1">
                       <div className="section-title-sep mt-4 md:mt-0">
                             <p className="text-lg text-[#938056]">NEW VIP</p>
-                            <GameTitleSeparator title="REWARDS PROGRAM" color="golden-text" weight="font-bold"/>    
+                            <GameTitleSeparator title="REWARDS PROGRAM" color="dark-gold" weight="font-bold"/>    
                          </div>
                         <p className="text-gray-700 lg:text-lg mt-4  lg:mt-6">Welcome to our digital Rewards Program which provides you with more value each time you
                          visit/play at an All In Adventures location. This program applies to all experiences All In Adventures offers,

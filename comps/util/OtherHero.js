@@ -15,7 +15,7 @@ const OtherHero=(props)=>{
                 <div className="page-benar-info"> 
                 
                  <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-[#111111] text-center'>CHOOSE FROM {props.pagedata.totalLocations} U.S. LOCATIONS</p> 
-                 <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os uppercase'>{
+                 <h1 className='dark-gold font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os uppercase'>{
                  
                         props.pagedata.pagetitle 
                  

@@ -8,7 +8,7 @@ const EarningPoints=()=>{
                         <div className="abt-col md:w-[48%] lg:w-[48%] ">
 
                             <div className="abt-notice-list">
-                                <h2 className="golden-text text-3xl lg:text-4xl font-os font-bold ">EARNING POINTS</h2>
+                                <h2 className="dark-gold text-3xl lg:text-4xl font-os font-bold ">EARNING POINTS</h2>
                                 <div className="earning-pts-box mt-4 lg:mt-8">
                                      <h3 className="font-medium text-[#464646] text-lg lg:text-xl">Based on the experience played, you can earn:</h3> 
                                      <ul className="star-list pl-4 text-[#464646] mt-4">
@@ -37,7 +37,7 @@ const EarningPoints=()=>{
                             </div>
                         </div>
                         <div className="abt-col md:w-[48%] lg:w-[48%] order-1 md:order-2 mt-8 md:mt-0" id="redeeming">
-                        <h2 className="golden-text text-3xl lg:text-4xl font-os font-bold ">REDEEMING POINTS</h2>
+                        <h2 className="dark-gold text-3xl lg:text-4xl font-os font-bold ">REDEEMING POINTS</h2>
                                 <div className="earning-pts-box mt-4 lg:mt-8">
                                      <h3 className="font-medium text-[#464646] text-lg lg:text-xl">Once you have accumulated your points, you may redeem them for the following rewards:</h3> 
                                      <ul className="star-list pl-4 text-[#464646] mt-4">

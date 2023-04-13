@@ -57,9 +57,9 @@ const MysteryRoomRebrand =(props)=>{
           <div className="w-full absolute top-0 left-0 "><img className="w-full" src="/assets/game-home-or1.jpg"></img></div>
             <div className="htb-bg-icon htb-bg-2 ot-hero-icon absolute right[-104px]"><img src="/assets/Compas-brown.png"></img></div>
           <div className="sec-container max-w-7xl mx-auto px-4 py-16 md:py-24 lg:py-28 relative z-30">
-                    <div className="section-title-sep mt-4 md:mt-0">
+                    <div className="section-title-sep mt-4 md:mt-0 mb-4 md:mb-8">
                                     
-                                     <TitleSeparator title="EVERYTHING WE OFFER" color="golden-text" weight="font-bold"/>
+                                     <TitleSeparator title="EVERYTHING WE OFFER" color="dark-gold" weight="font-bold"/>
                                      <p className="max-w-[700px] mx-auto text-center lg:text-lg text-[#333333] mt-4">Play thrilling escape rooms with a variety of game themes that are perfect for having fun with your friends, family and coworkers. We host the most exciting birthday parties, team building activities and private events.</p>
                              </div>
               <ThankLinkBox/>

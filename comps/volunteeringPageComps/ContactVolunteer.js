@@ -20,7 +20,7 @@ const ContactVolunteer=()=>{
                         
                          <div className="section-title-sep mt-4 md:mt-0 inline-block md:block mx-auto md:mx-0">
                             <p className="text-lg text-[#938056] uppercase">Volunteering</p>
-                            <GameTitleSeparator title="WANT OUR HELP?" color="golden-text" weight="font-bold"/>    
+                            <GameTitleSeparator title="WANT OUR HELP?" color="dark-gold" weight="font-bold"/>    
                          </div>
                          </div>
                          <div className="v-gam-list mt-4 md:mt-0">
@@ -47,7 +47,7 @@ const ContactVolunteer=()=>{
 
                 </div>
                 <div className="max-w-[640px] mx-auto text-center mt-8 md:mt-12 lg:mt-16">
-                    <h2 className="mb-8 md:mb-12 golden-text text-3xl md:text-4xl font-os font-bold">CONTACT YOUR LOCAL ALL IN ADVENTURES</h2>
+                    <h2 className="mb-8 md:mb-12 dark-gold text-3xl md:text-4xl font-os font-bold">CONTACT YOUR LOCAL ALL IN ADVENTURES</h2>
                     <button onClick={showVolunteeringMenu} className="rounded-full mx-auto text-center py-3 md:py-3 lg:py-4 px-4 md:px-8 lg:px-10 flex justify-between items-center space-x-8 md:space-x-12 lg:space-x-16 bg-red-600 hover:bg-red-700 text-white uppercase">
                         <div className="flex space-x-2 items-center">
                         

@@ -13,7 +13,7 @@ const Partner=()=>{
 
             <div className="section-container max-w-7xl mx-auto relative z-30 px-4">
                     <div className="section-title">
-                        <TitleSeparator title="WE ARE IN THE MEDIA" color="golden-text" weight="font-bold" />
+                        <TitleSeparator title="WE ARE IN THE MEDIA" color="dark-gold" weight="font-bold" />
                         <p className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16 text-gray-100">The escape room industry is all over the media, and here we are too!</p>
 
                     </div>

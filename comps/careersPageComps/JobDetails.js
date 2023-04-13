@@ -30,7 +30,7 @@ const JobDetails=(props)=>{
                 <div className="section-row flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 lg:space-x-8 ">
                     {/*==========================about the role====================== */}
                     <div className="section-col md:w-2/3 pb-8 md:pb-0 px-4">
-                            <h2 className="golden-text text-3xl md:text-4xl lg:text-5xl font-os font-bold">ABOUT THE ROLE </h2>
+                            <h2 className="dark-gold text-3xl md:text-4xl lg:text-5xl font-os font-bold">ABOUT THE ROLE </h2>
                             <p className="text-lg md:text[20px] lg:text-[24px] text-[#464646] font-medium mt-2 md:mt-4">As {getDasignation(props.designation)}, you will:</p>
                                 
                             <div className="abt-role mt-4 md:mt-6 lg:mt-8 text-lg "> 
@@ -130,7 +130,7 @@ const JobDetails=(props)=>{
                 </div>
                         {/**============WANT TO JOIN OUR TEAM?====================== */}
                 <div className="section-row text-center pt-20">
-                  <h2 className="golden-text text-3xl md:text-3xl lg:text-4xl font-os font-bold mb-8">WANT TO JOIN OUR TEAM?</h2>
+                  <h2 className="dark-gold text-3xl md:text-3xl lg:text-4xl font-os font-bold mb-8">WANT TO JOIN OUR TEAM?</h2>
                  
                             <a href="/careers" className="inline-block rounded-full border-2 border-red-700 hover:bg-red-700 text-[#111111] hover:text-white py-3 px-12">VIEW ALL JOB POSITIONS</a>         
                  

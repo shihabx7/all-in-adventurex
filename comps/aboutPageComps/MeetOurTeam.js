@@ -5,7 +5,7 @@ const MeetOurTeam=(props)=>{
         <div className="meet-team relative bg-center bg-cover" style={{backgroundImage:'url("/assets/game-dt-bg.jpg")'}}>
                 <div className="section-container max-w-7xl mx-auto px-4 pb-16 md:pb-20 lg:pb-28 relative z-30">
                     <div className="section-title">
-                        <TitleSeparator title="MEET OUR ENERGETIC TEAM" color="golden-text" weight="font-bold" />
+                        <TitleSeparator title="MEET OUR ENERGETIC TEAM" color="dark-gold" weight="font-bold" />
                         <p className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16 text-gray-700">
                              We are in business for the long haul and believe we will travel farther as a team than we would as individuals.
                         </p>
@@ -33,7 +33,7 @@ const MeetOurTeam=(props)=>{
 
                     </div>
                     <div className="join-link mt-8 lg:mt-16 text-center">
-                        <h2 className="golden-text font-os font-bold text-center text-2xl md:text-3xl mb-8">WANT TO JOIN OUR TEAM?</h2>
+                        <h2 className="dark-gold font-os font-bold text-center text-2xl md:text-3xl mb-8">WANT TO JOIN OUR TEAM?</h2>
                        
                             <a href="/careers" className="inline-block bg-red-600 hover:bg-red-700 text-white md:text-lg py-3 px-8 rounded-full">VIEW JOB OPENINGS</a>
                    

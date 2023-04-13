@@ -11,7 +11,7 @@ return(
         <div className="gift-rt absolute"><img src="/assets/Compas-brown.png"></img></div>
         <div className="max-w-[990px] mx-auto relative z-30">
             <div className="section-title mb-8 md:mb-12">
-                <TitleSeparator title="FREQUENTLY ASKED QUESTIONS" color="golden-text" weight="font-bold"/>
+                <TitleSeparator title="FREQUENTLY ASKED QUESTIONS" color="text-gold" weight="font-bold"/>
                 <p className="mt-4 text-gray-100 max-w-2xl mx-auto text-center lg:text-lg">Browse the rewards program FAQs to find answers to commonly asked questions. If you don't see what's on your mind, reach out to us anytime via phone or by email.</p>
 
             </div>

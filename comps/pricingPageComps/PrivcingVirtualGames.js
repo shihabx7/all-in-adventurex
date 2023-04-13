@@ -9,7 +9,7 @@ const PrivcingVirtualGames=()=>{
                 {/**=================inpersone escape game price section==================== */}
                  <div className="section-container max-w-7xl mx-auto  pb-16 md:pb-20 lg:pb-28 relative z-30">
                     <div className="section-title px-4 mb-8">
-                        <TitleSeparator title="VIRTUAL GAME PRICING" color="golden-text" weight="font-bold"/>
+                        <TitleSeparator title="VIRTUAL GAME PRICING" color="dark-gold" weight="font-bold"/>
                         
                     </div>
                     <div className="price-cl max-w-[800px] mx-auto">

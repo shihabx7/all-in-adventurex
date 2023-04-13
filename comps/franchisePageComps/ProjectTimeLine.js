@@ -15,7 +15,7 @@ const ProjectTimeLine=()=>{
             <div className="section-container max-w-7xl mx-auto px-4 py-16 md:py-20 lg:py-28">
                     <div className="section-title">
                          <p className="text-lg text-[#938056] text-center">6-STEPS</p>
-                         <TitleSeparator title="GENERAL PROJECT TIMELINE" color="golden-text" weight="font-bold"/>
+                         <TitleSeparator title="GENERAL PROJECT TIMELINE" color="dark-gold" weight="font-bold"/>
                          <p className="max-w-[834px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16 text-gray-700">By partnering with All In Adventures, you are using knowledge from dozens of successful projects and years of experience, from venue selection principles to construction support to seamless onsite installation to day-to-day operation. We provide you with a holistic project management handbook and hands-on support so that you can focus on the next task without stress.</p>
 
                     </div>

@@ -88,7 +88,7 @@ return (
             <div className="page-benar-info"> 
                 
                 <p className=' md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-gray-800 text-center'>CHOOSE FROM {countTotalLocation(props.states)} U.S. LOCATIONS</p> 
-                <h1 className='golden-text font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os'>ALL IN ADVENTURES LOCATIONS</h1>
+                <h1 className='dark-gold font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os'>ALL IN ADVENTURES LOCATIONS</h1>
                 <p className='text-gray-700 max-w-[800px] mx-auto text-center lg:text-lg'>Browse all our escape room adventure centers across the United States. Grab your team today and head over to any of our locations to experience family and kids friendly interactive fun activities that you and your team will never forget!</p>
                 </div>
                 <div className='map-autocomplete-box pt-6 md:pt-6 lg:pt-8 z-20'>
@@ -106,7 +106,7 @@ return (
               
        <div className='max-w-7xl mx-auto md:px-4 py-16 md:py-28'>
         <div className='section-head relative z-20'>  
-              <TitleSeparator title='CHOOSE YOUR LOCATION' color='golden-text' weight='font-bold'/>
+              <TitleSeparator title='CHOOSE YOUR LOCATION' color='text-gold' weight='font-bold'/>
               <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16">
                     <p className="text-gray-300 md:px-8">We can cater to a minimum of 2 players, and our facility can host private parties and corporate events for up to 75 players at a time. Our escape rooms and other games are perfect for all ages and skill levels, so everyone can have fun and be involved. So what are you waiting for? </p>
                 </div>

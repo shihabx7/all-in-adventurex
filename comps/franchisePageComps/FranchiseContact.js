@@ -598,7 +598,7 @@ const FranchiseContactForm=()=>{
             <div className="section-container max-w-7xl mx-auto  py-24 md:py-30 lg:py-40 relative z-30">
                 <div className="section-title px-4 mb-8">
                         <p className="text-lg text-center text-[#938056]">LET'S GET STARTED</p>
-                        <TitleSeparator title="SUBMIT THE FRANCHISE INQUIRY FORM" color="golden-text" weight="font-bold" />
+                        <TitleSeparator title="SUBMIT THE FRANCHISE INQUIRY FORM" color="dark-gold" weight="font-bold" />
                         
 
                  </div>

@@ -21,7 +21,7 @@ const GivingBack=(props)=>{
                     <div className="abt-col md:w-[58%] lg:w-[48%] order-2 md:order-1">
                       <div className="section-title-sep mt-4 md:mt-0">
                             <p className="text-lg text-[#938056] uppercase">Volunteering</p>
-                            <GameTitleSeparator title="GIVING BACK TO COMMUNITIES" color="golden-text" weight="font-bold"/>    
+                            <GameTitleSeparator title="GIVING BACK TO COMMUNITIES" color="dark-gold" weight="font-bold"/>    
                          </div>
                         <p className="text-gray-700 lg:text-lg mt-4  lg:mt-8">
                          As you know, at All In Adventures, we connect family, friends, and co-workers through shared,

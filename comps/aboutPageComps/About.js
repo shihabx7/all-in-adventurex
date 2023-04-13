@@ -10,7 +10,7 @@ const About=()=>{
                 {/**===================who we are============================= */}
                 <div className="abt-row flex flex-col md:flex-row justify-between items-center">
                     <div className="abt-col md:w-[58%] lg:w-[48%] order-2 md:order-1">
-                        <h2 className="golden-text text-2xl md:text-3xl lg:text-4xl font-os font-bold mt-4 md:mt-0">WHO WE ARE</h2>
+                        <h2 className="dark-gold text-2xl md:text-3xl lg:text-4xl font-os font-bold mt-4 md:mt-0">WHO WE ARE</h2>
                         <p className="text-gray-700 lg:text-lg mt-4  lg:mt-8">We've changed our name from Mystery Room to All In Adventures. Your favorite fun activity center is now more than an escape room place. Come join us to experience more entertaining activities. Now you can choose your adventures from many different themes!</p>
                         <div className="abt-notice mt-4 md:mt-6 lg:mt-8"> 
                 
@@ -52,7 +52,7 @@ const About=()=>{
                      {/**===================our mission============================= */}
                 <div className="abt-row flex flex-col md:flex-row justify-between mt-16 md:mt-20 items-center">
                     <div className="abt-col md:w-[58%] lg:w-[48%] order-2 md:order-1">
-                        <h2 className="golden-text text-2xl md:text-3xl lg:text-4xl font-os font-bold mt-4 md:mt-0">OUR MISSION</h2>
+                        <h2 className="dark-gold text-2xl md:text-3xl lg:text-4xl font-os font-bold mt-4 md:mt-0">OUR MISSION</h2>
                         <p className="text-gray-700 lg:text-lg mt-4  lg:mt-8">Our mission is to deepen relationships between people through creative entertainment.
                          To do so, we strive to develop and provide high-quality services in amusements, celebrations,
                           events and team-building activities throughout the United States. Our core focus is to offer

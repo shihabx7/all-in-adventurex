@@ -7,7 +7,7 @@ const FranchiseNote=()=>{
                 <div className="">
                 <div className="section-title-sep mt-4 md:mt-0 mb-8">
                            
-                            <TitleSeparator title="MESSAGE FROM THE FOUNDER AND PRESIDENT" color="golden-text" weight="font-bold"/>
+                            <TitleSeparator title="MESSAGE FROM THE FOUNDER AND PRESIDENT" color="dark-gold" weight="font-bold"/>
                             
                             
                  </div>

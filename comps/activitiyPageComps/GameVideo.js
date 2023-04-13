@@ -18,7 +18,7 @@ const GameVideo=(props)=>{
         
                 <div className="s-title"> 
                
-                    <TitleSeparator title="GAME TRAILER" color="golden-text" weight="font-bold"/>
+                    <TitleSeparator title="GAME TRAILER" color="dark-gold" weight="font-bold"/>
                     <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-8">
                                  <p className="text-gray-700 md:px-8">Watch a sneak peek of the thrills {props.activityname=="Game Show Room"? " ":"and drama " }from {props.activityname && <span>{props.activityname}</span>}.</p>
                     </div>

@@ -7,7 +7,7 @@ const OpenPosition=(props)=>{
 
             <div className="section-container max-w-7xl mx-auto relative z-30 pb-16 md:pb-20 lg:pb-28 px-4">
                  <div className="section-title">
-                        <TitleSeparator title="BROWSE OUR OPEN POSITIONS" color="golden-text" weight="font-bold" />
+                        <TitleSeparator title="BROWSE OUR OPEN POSITIONS" color="dark-gold" weight="font-bold" />
                         <p className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16 text-gray-700">Our mission-based culture means our work is challenging and intense, but also incredibly rewarding and fun! Does this sound epic to you? Join us.</p>
 
                  </div>

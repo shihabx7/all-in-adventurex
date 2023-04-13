@@ -13,7 +13,7 @@ const FranchiseModel=()=>{
                     <div className="abt-col md:w-[58%] lg:w-[48%] order-2 md:order-1">
                         <div className="section-title-sep mt-4 md:mt-0">
                             <p className="text-lg text-[#938056]">OVERVIEW</p>
-                            <GameTitleSeparator title="ALL IN ADVENTURES FRANCHISE BUSINESS MODEL" color="golden-text" weight="font-bold"/>    
+                            <GameTitleSeparator title="ALL IN ADVENTURES FRANCHISE BUSINESS MODEL" color="dark-gold" weight="font-bold"/>    
                          </div>
                         <div className="fran-model mt-4 md:mt-6 lg:mt-8"> 
                                              

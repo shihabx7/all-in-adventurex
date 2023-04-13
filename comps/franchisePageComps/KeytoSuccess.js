@@ -14,7 +14,7 @@ const KeytoSuccess=()=>{
                     <div className="abt-col md:w-[58%] lg:w-[48%] order-2 md:order-1">
                         <div className="section-title-sep mt-4 md:mt-0">
                             <p className="text-lg text-[#938056]">ESCAPE ROOM FRANCHISE</p>
-                            <GameTitleSeparator title="THE KEY TO SUCCESS" color="golden-text" weight="font-bold"/>    
+                            <GameTitleSeparator title="THE KEY TO SUCCESS" color="dark-gold" weight="font-bold"/>    
                          </div>
                         <div className="fran-model mt-4 md:mt-6 lg:mt-8"> 
                                              

@@ -9,7 +9,7 @@ const WhatisEscapeBlog=()=>{
                  <div className="blog-content-box max-w-[1024px] mx-auto relative z-10 md:py-12 md:px-8  bg-[#FFF8EB] px-4">
                                 {/*=============WHAT IS AN IN-PERSON ESCAPE ROOM?==============*/}
                                 <div className="blog-section">
-                                     <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">WHAT IS AN IN-PERSON ESCAPE ROOM?</h3>
+                                     <h3 className="dark-gold font-os font-bold text-xl md:text-2xl lg:text-3xl ">WHAT IS AN IN-PERSON ESCAPE ROOM?</h3>
                                       <p className="text-lg md:text-xl font-medium  text-gray-700 mt-2 md:mt-3 lg:mt-4">
                                       You may be asking yourself, <span className="italic">"What exactly is an escape room?"</span>  Well, let us happily enlighten you . . .
                                       </p>
@@ -42,7 +42,7 @@ const WhatisEscapeBlog=()=>{
                                   {/*=============WHAT IS AN IN-PERSON ESCAPE ROOM? end==============*/}
                                   {/*=============WHAT IS A VIRTUAL / ONLINE ESCAPE ROOM?==============*/}
                                 <div className="blog-section mt-6 md:mt-8">
-                                     <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">WHAT IS A VIRTUAL / ONLINE ESCAPE ROOM?</h3>
+                                     <h3 className="dark-gold font-os font-bold text-xl md:text-2xl lg:text-3xl ">WHAT IS A VIRTUAL / ONLINE ESCAPE ROOM?</h3>
                                       <p className=" md:text-lg   text-gray-700 mt-2 md:mt-3 lg:mt-4">
                                       Virtual Escape Rooms and Online Escape Rooms take place "virtually" over the internet,
                                        with remote participants (friends, family, co-workers, etc.,)
@@ -78,7 +78,7 @@ const WhatisEscapeBlog=()=>{
                                   {/*=============WHAT IS A VIRTUAL / ONLINE ESCAPE ROOM? end==============*/}
                                   {/*=============THE HISTORY OF ESCAPE ROOMS==============*/}
                                 <div className="blog-section mt-6 md:mt-8">
-                                     <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">THE HISTORY OF ESCAPE ROOMS</h3>
+                                     <h3 className="dark-gold font-os font-bold text-xl md:text-2xl lg:text-3xl ">THE HISTORY OF ESCAPE ROOMS</h3>
                                     
                                       <div className="my-6 md:my-8 lg:my-10"> 
                                         <img className="w-full" src="/assets/blog/history-of-escape-rooms.jpg" alt="history of escape rooms"></img>
@@ -100,7 +100,7 @@ const WhatisEscapeBlog=()=>{
                                   {/*=============THE HISTORY OF ESCAPE ROOMS end==============*/}
                                   {/*=============WHAT WAS THE FIRST ESCAPE ROOM GAME?==============*/}
                                 <div className="blog-section mt-6 md:mt-8">
-                                     <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">WHAT WAS THE FIRST ESCAPE ROOM GAME?</h3>
+                                     <h3 className="dark-gold font-os font-bold text-xl md:text-2xl lg:text-3xl ">WHAT WAS THE FIRST ESCAPE ROOM GAME?</h3>
                                     
                                       <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
                                       In 2007, the very first real-life escape room game was created by SCRAP,
@@ -129,7 +129,7 @@ const WhatisEscapeBlog=()=>{
 
                                     {/*=============HOW TO BOOK YOUR FIRST ESCAPE ROOM==============*/}
                                 <div className="blog-section mt-6 md:mt-8">
-                                     <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">HOW TO BOOK YOUR FIRST ESCAPE ROOM</h3>
+                                     <h3 className="dark-gold font-os font-bold text-xl md:text-2xl lg:text-3xl ">HOW TO BOOK YOUR FIRST ESCAPE ROOM</h3>
                                      <div className="my-6 md:my-8 lg:my-10"> 
                                         <img className="w-full" src="/assets/blog/how-to-book-your-first-escape-room.jpg" alt="how to book your first escape room"></img>
                                       </div>
@@ -151,7 +151,7 @@ const WhatisEscapeBlog=()=>{
                                  </div>
                                   {/*=============HOW TO BOOK YOUR FIRST ESCAPE ROOM end==============*/}
                                   <div className="my-8 md:my-12">
-                                  <h2 className="text-gold font-os text-3xl md:text-4xl font-bold  mb-8">SEE ALL GAMES AND EVENTS</h2>
+                                  <h2 className="dark-gold font-os text-3xl md:text-4xl font-bold  mb-8">SEE ALL GAMES AND EVENTS</h2>
                                              <ThankLinkBox/>
                                   </div>
                                    {/*=============WHO CAN PLAY AN ESCAPE ROOM?==============*/}
@@ -176,7 +176,7 @@ const WhatisEscapeBlog=()=>{
                                   {/*=============WHO CAN PLAY AN ESCAPE ROOM? end==============*/}
                                    {/*=============COMMON THEMES==============*/}
                                 <div className="blog-section mt-6 md:mt-8">
-                                     <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">COMMON THEMES</h3>
+                                     <h3 className="dark-gold font-os font-bold text-xl md:text-2xl lg:text-3xl ">COMMON THEMES</h3>
                                      
                                       <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
                                       Escape rooms are a whole new way of experiencing storytelling.
@@ -211,7 +211,7 @@ const WhatisEscapeBlog=()=>{
                                   {/*=============COMMON THEMES end==============*/}
                                    {/*=============WHAT HAPPENS WHEN WE GO INTO THE ESCAPE ROOM?==============*/}
                                 <div className="blog-section mt-6 md:mt-8">
-                                     <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">WHAT HAPPENS WHEN WE GO INTO THE ESCAPE ROOM?</h3>
+                                     <h3 className="dark-gold font-os font-bold text-xl md:text-2xl lg:text-3xl ">WHAT HAPPENS WHEN WE GO INTO THE ESCAPE ROOM?</h3>
                                      
                                       <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
                                       When you arrive at an All In Adventures venue, you are greeted by a Game Master.
@@ -231,7 +231,7 @@ const WhatisEscapeBlog=()=>{
                                   {/*=============WHAT HAPPENS WHEN WE GO INTO THE ESCAPE ROOM? end==============*/}
                                     {/*=============WHAT GENRES OF ESCAPE ROOM ARE THERE?==============*/}
                                 <div className="blog-section mt-6 md:mt-8">
-                                     <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">WHAT GENRES OF ESCAPE ROOM ARE THERE?</h3>
+                                     <h3 className="dark-gold font-os font-bold text-xl md:text-2xl lg:text-3xl ">WHAT GENRES OF ESCAPE ROOM ARE THERE?</h3>
                                      <div className="my-6 md:my-8 lg:my-10"> 
                                         <img className="w-full" src="/assets/blog/genres-of-escape-rooms-are-there-escape-room-rules.jpg" alt="genres of escape rooms are there escape room rules"></img>
                                       </div>
@@ -276,7 +276,7 @@ const WhatisEscapeBlog=()=>{
                                   {/*============WHAT GENRES OF ESCAPE ROOM ARE THERE? end==============*/}
                                    {/*=============WHAT RULES ARE THERE IN ESCAPE ROOMS?==============*/}
                                 <div className="blog-section mt-6 md:mt-8">
-                                     <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">WHAT RULES ARE THERE IN ESCAPE ROOMS?</h3>
+                                     <h3 className="dark-gold font-os font-bold text-xl md:text-2xl lg:text-3xl ">WHAT RULES ARE THERE IN ESCAPE ROOMS?</h3>
                                      
                                       <p className="lg:text-lg text-gray-700 mt-2 md:mt-3 lg:mt-4">
                                       Your Game Master will go over all rules and instructions for your specific escape room before you begin.
@@ -311,7 +311,7 @@ const WhatisEscapeBlog=()=>{
                                   {/*============WHAT RULES ARE THERE IN ESCAPE ROOMS? end==============*/}
                                    {/*=============WHAT TO EXPECT==============*/}
                                 <div className="blog-section mt-6 md:mt-8">
-                                     <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">WHAT TO EXPECT</h3>
+                                     <h3 className="dark-gold font-os font-bold text-xl md:text-2xl lg:text-3xl ">WHAT TO EXPECT</h3>
                                      <div className="my-6 md:my-8 lg:my-10"> 
                                         <img className="w-full" src="/assets/blog/what-to-expect-escape-room.jpg" alt="what to expect escape room"></img>
                                       </div>
@@ -384,7 +384,7 @@ const WhatisEscapeBlog=()=>{
                                   {/*============WHAT TO EXPECT end==============*/}
                                   {/*=============FREQUENTLY ASKED QUESTIONS==============*/}
                                 <div className="blog-section mt-6 md:mt-8">
-                                     <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">FREQUENTLY ASKED QUESTIONS</h3>
+                                     <h3 className="dark-gold font-os font-bold text-xl md:text-2xl lg:text-3xl ">FREQUENTLY ASKED QUESTIONS</h3>
                                      
                                      <div className="mt-3 lg:mt-4">
                                              <h3 className="text-lg lg:text-xl font-bold text-gray-700">
@@ -436,7 +436,7 @@ const WhatisEscapeBlog=()=>{
 
                                   {/*=============ESCAPE ROOM TIPS==============*/}
                                 <div className="blog-section mt-6 md:mt-8">
-                                     <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">ESCAPE ROOM TIPS</h3>
+                                     <h3 className="dark-gold font-os font-bold text-xl md:text-2xl lg:text-3xl ">ESCAPE ROOM TIPS</h3>
                                      <p className="lg:text-lg text-gray-700 mt-4 lg:mt-6">Escape rooms require you to uncover hidden clues, crack tough codes,
                                          and solve challenging puzzles. Everything you notice in the room could
                                           be a potential clue or puzzle waiting to be solved. But hurry, the clock
@@ -509,7 +509,7 @@ const WhatisEscapeBlog=()=>{
                                   {/*============ESCAPE ROOM TIPS end==============*/}
                                    {/*=============ESCAPE ROOM TIPS==============*/}
                                 <div className="blog-section mt-6 md:mt-8">
-                                     <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">ESCAPE ROOM - THE MOVIE</h3>
+                                     <h3 className="dark-gold font-os font-bold text-xl md:text-2xl lg:text-3xl ">ESCAPE ROOM - THE MOVIE</h3>
                                      <div className="my-6 md:my-8 lg:my-10"> 
                                         <img className="w-full" src="/assets/blog/escape-room-the-movie-play-game.jpg" alt="escape room the movie play game"></img>
                                       </div>
@@ -529,7 +529,7 @@ const WhatisEscapeBlog=()=>{
                                   {/*============ESCAPE ROOM TIPS end==============*/}
                                   {/*=============ESCAPE ROOM TIPS==============*/}
                                 <div className="blog-section mt-6 md:mt-8">
-                                     <h3 className="golden-text font-os font-bold text-xl md:text-2xl lg:text-3xl ">READY TO PLAY?</h3>
+                                     <h3 className="dark-gold font-os font-bold text-xl md:text-2xl lg:text-3xl ">READY TO PLAY?</h3>
                                     
                                      <p className="lg:text-lg text-gray-700 mt-4 lg:mt-6">We think you are! You should have everything you need to book your next great escape with All In Adventures!
                                            </p>
