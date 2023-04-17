@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import LocationBtn from './util/LocationBtn';
-
+import React, { useEffect, useState } from "react";
 import { FaAngleDown,FaAngleRight,FaLinkedin,FaFacebookSquare,FaTwitterSquare,FaInstagramSquare } from "react-icons/fa";
 import Script from 'next/script'
 import Link from "next/link"
@@ -10,21 +10,29 @@ import { FiExternalLink } from "react-icons/fi";
 import UseFullLinks from './footercomps/UseFullLinks';
 import FooterLocationsLink from './footercomps/FooterLocationsLink';
 import FooterLocationsLinkX from './footercomps/FooterLocationsLinkX';
+import FooterEmbedMap from './footercomps/FooterEmbedMap';
 
 
 
 const Footer=(props)=>{
 
-    
-     const FooterMap=()=> {
-        const { isLoaded } = useLoadScript({
-          googleMapsApiKey: "AIzaSyCYSGDPwfMMqKRb7ApqkuH3d5YsMjLiEiY" // Add 
-        });
-      
-        return isLoaded ? <MapwithInfo/> : null;
+  const [isPgLoad, setPgLoad]=useState(false)
 
-        //return isLoaded ? <div className='text-white'>Map loaded</div> : null;
-      }
+  useEffect(()=>{
+    setPgLoad(true)
+  })
+    
+
+    const FooterMap=()=> {
+        
+      
+      return  <FooterEmbedMap/>;
+
+     
+    }
+
+
+     
 
     return(
         <>
@@ -59,9 +67,10 @@ const Footer=(props)=>{
 
                         <div className='footer-map'>
                           {
-                            FooterMap()
+                            isPgLoad && 
+                            <> <FooterEmbedMap/></>
                           }
-                            {/* map will be added */}
+                          
                         </div>
                     
                     </div>
