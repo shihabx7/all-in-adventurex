@@ -653,22 +653,7 @@ const LocActivityData={
                   },
                 
             },
-            {
-                "id":18,
-                "activity_name":"6 Virtual Escape Rooms",
-                "activity_type":"Virtual",
-                "activity_category":"other",
-                "age":"All Ages (6+)",
-                "min_player":2,
-                "max_player":12,
-                "price":"147",
-                "duration":"60",
-                "activity_desc":"New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
-                "activity_slug":"virtual-games",
-                "activity_cover_image":"/assets/all-game-list/All-In-Adventures-6-Virtual-Escape-Room.jpg",
-                "bookinglink":"https://www.virtualmysteryroom.com",
-                
-            },
+           
           ]
     },
         //=========================================================middletown-ny end
@@ -886,27 +871,6 @@ const LocActivityData={
                   },
                 
             },
-            {
-                "id":18,
-                "activity_name":"6 Virtual Escape Rooms",
-                "activity_type":"Virtual",
-                "activity_category":"other",
-                "age":"All Ages (6+)",
-                "min_player":2,
-                "max_player":12,
-                "price":"147",
-                "duration":"60",
-                "activity_desc":"New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
-                "activity_slug":"virtual-games",
-                "activity_cover_image":"/assets/all-game-list/All-In-Adventures-6-Virtual-Escape-Room.jpg",
-                "bookinglink":"https://www.virtualmysteryroom.com",
-                
-            },
-            
-           
-            
-            
-            
 
           ]
     
@@ -1201,24 +1165,6 @@ const LocActivityData={
                       },
                     
                 },
-                {
-                    "id":18,
-                    "activity_name":"6 Virtual Escape Rooms",
-                    "activity_type":"Virtual",
-                    "activity_category":"other",
-                    "age":"All Ages (6+)",
-                    "min_player":2,
-                    "max_player":12,
-                    "price":"147",
-                    "duration":"60",
-                    "activity_desc":"New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
-                    "activity_slug":"virtual-games",
-                    "activity_cover_image":"/assets/all-game-list/All-In-Adventures-6-Virtual-Escape-Room.jpg",
-                    "bookinglink":"https://www.virtualmysteryroom.com",
-                    
-                },
-                
-                
     
               ]
         },
@@ -1377,25 +1323,6 @@ const LocActivityData={
                   },
                 
             },
-            {
-                "id":18,
-                "activity_name":"6 Virtual Escape Rooms",
-                "activity_type":"Virtual",
-                "activity_category":"other",
-                "age":"All Ages (6+)",
-                "min_player":2,
-                "max_player":12,
-                "price":"147",
-                "duration":"60",
-                "activity_desc":"New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
-                "activity_slug":"virtual-games",
-                "activity_cover_image":"/assets/all-game-list/All-In-Adventures-6-Virtual-Escape-Room.jpg",
-                "bookinglink":"https://www.virtualmysteryroom.com",
-                
-            },
-            
-            
-
           ]
     },
         //=========================================================poughkeepsie-ny end
@@ -3251,22 +3178,7 @@ const LocActivityData={
                           },
                         
                     },
-                    {
-                        "id":18,
-                        "activity_name":"6 Virtual Escape Rooms",
-                        "activity_type":"Virtual",
-                        "activity_category":"other",
-                        "age":"All Ages (6+)",
-                        "min_player":2,
-                        "max_player":12,
-                        "price":"147",
-                        "duration":"60",
-                        "activity_desc":"New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
-                        "activity_slug":"virtual-games",
-                        "activity_cover_image":"/assets/all-game-list/All-In-Adventures-6-Virtual-Escape-Room.jpg",
-                        "bookinglink":"https://www.virtualmysteryroom.com",
-                        
-                    },
+                    
                     
                   ]
             },
@@ -4213,22 +4125,7 @@ const LocActivityData={
                       },
                     
                 },
-                {
-                    "id":18,
-                    "activity_name":"6 Virtual Escape Rooms",
-                    "activity_type":"Virtual",
-                    "activity_category":"other",
-                    "age":"All Ages (6+)",
-                    "min_player":2,
-                    "max_player":12,
-                    "price":"147",
-                    "duration":"60",
-                    "activity_desc":"New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
-                    "activity_slug":"virtual-games",
-                    "activity_cover_image":"/assets/all-game-list/All-In-Adventures-6-Virtual-Escape-Room.jpg",
-                    "bookinglink":"https://www.virtualmysteryroom.com",
-                    
-                },
+               
     
               ]
         },

@@ -68,7 +68,7 @@ const Footer=(props)=>{
                         <div className='footer-map'>
                           {
                             isPgLoad && 
-                            <> <FooterEmbedMap/></>
+                            <> <FooterEmbedMap/> </>
                           }
                           
                         </div>

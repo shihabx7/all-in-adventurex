@@ -1,12 +1,19 @@
 import TitleSeparator  from "../util/TitleSeparator"
 
 import { FiChevronDown,FiX } from "react-icons/fi"
-import { useState } from "react"
+import { useState,useEffect } from "react"
 import { useRouter } from 'next/router'
+import LocationMap from "../locationsPage/LocationMap"
 
 const StoreContact=(props)=>{
 
     const[showHour,setShowHours]=useState(false)
+    const [isPgLoaded, setIsPageLoaded]=useState(false)
+
+    useEffect(()=>{
+        setIsPageLoaded(true)
+    })
+
 
     const TitleAddress=(slug)=>{
         var stt=slug.split('-')
@@ -383,7 +390,7 @@ const StoreContact=(props)=>{
                                   
                         </div>
                     {/*=========================================================contact details============================ */}
-                        {/*======================== corporate contact form=======================*/}
+                        {/*========================  contact form=======================*/}
                         <div className="c-form-form md:w-[62%] lg:w-[60%] order-1 md:order-2">
                             <div className="bg-[#F4E6C3] py-8 px-4 lg:p-8 rounded-lg drop-shadow"> 
                                 <form onSubmit={(event)=>submitForm(event)}>
@@ -520,8 +527,21 @@ const StoreContact=(props)=>{
                             </div>
                         </div>
                         {/*======================== corporate contact form=======================*/}
+
+                        
                  </div>
-                
+                {/* location map map */}
+                <div className="location-spc-map drop-shadow-md border-2 border-gold max-w-[1040px] mx-auto mt-12 rounded">
+
+                    {
+                        isPgLoaded && 
+                        <div className="emb-map w-full  h-[400px] md:h-[600px]">
+                            <LocationMap position={props.contactdata.position} place_id={props.contactdata.place_id}/>
+                         </div>
+                    }
+
+                </div> 
+                   {/* location map map end*/}
 
             </div>
 

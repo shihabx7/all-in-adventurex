@@ -987,21 +987,7 @@ const locPagedata={
         "slug"  :"virtual-games/virtual-game-show-room",
         "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg"
        },
-       {
-        "id":3,
-        "category":"game",
-        "type": "Virtual",
-        "title": "6 Virtual Escape Rooms",
-        "description": "New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
-        "age":"All Ages (6+)",
-        "duration":"60",
-        "maxplayers":"12",
-        "minplayers":"2",
-        "price":"147",
-        "slug"  :"virtual-games",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game.jpg",
-        "bookinglink":"https://www.virtualmysteryroom.com",
-       },
+       
       ],
      
   "events":             [
@@ -1338,21 +1324,7 @@ const locPagedata={
         "slug"  :"virtual-games/virtual-game-show-room",
         "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg"
        },
-       {
-        "id":3,
-        "category":"game",
-        "type": "Virtual",
-        "title": "6 Virtual Escape Rooms",
-        "description": "New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
-        "age":"All Ages (6+)",
-        "duration":"60",
-        "maxplayers":"12",
-        "minplayers":"2",
-        "price":"147",
-        "slug"  :"virtual-games",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game.jpg",
-        "bookinglink":"https://www.virtualmysteryroom.com",
-       },
+       
       ],
      
   "events":[
@@ -1890,21 +1862,7 @@ const locPagedata={
           "slug"  :"virtual-games/virtual-game-show-room",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg"
          },
-         {
-          "id":4,
-          "category":"game",
-          "type": "Virtual",
-          "title": "6 Virtual Escape Rooms",
-          "description": "New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
-          "age":"All Ages (6+)",
-          "duration":"60",
-          "maxplayers":"12",
-          "minplayers":"2",
-          "price":"147",
-          "slug"  :"virtual-games",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game.jpg",
-          "bookinglink":"https://www.virtualmysteryroom.com",
-         },
+       
     
       ],
      
@@ -2186,23 +2144,6 @@ const locPagedata={
                                     "slug"  :"virtual-games/virtual-game-show-room",
                                     "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg"
                                    },
-                                   {
-                                    "id":3,
-                                    "category":"game",
-                                    "type": "Virtual",
-                                    "title": "6 Virtual Escape Rooms",
-                                    "description": "New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
-                                    "age":"All Ages (6+)",
-                                    "duration":"60",
-                                    "maxplayers":"12",
-                                    "minplayers":"2",
-                                    "price":"147",
-                                    "slug"  :"virtual-games",
-                                    "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game.jpg",
-                                    "bookinglink":"https://www.virtualmysteryroom.com",
-                                   },
-      
-    
                             ],
 
   "events": [
@@ -5129,24 +5070,7 @@ const locPagedata={
           "slug"  :"virtual-games/virtual-game-show-room",
           "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg"
          },
-         {
-          "id":3,
-          "category":"game",
-          "type": "Virtual",
-          "title": "6 Virtual Escape Rooms",
-          "description": "New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
-          "age":"All Ages (6+)",
-          "duration":"60",
-          "maxplayers":"12",
-          "minplayers":"2",
-          "price":"147",
-          "slug"  :"virtual-games",
-          "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game.jpg",
-          "bookinglink":"https://www.virtualmysteryroom.com",
-         },
- 
-      
-    
+         
       ],
     
   "events": [
@@ -6753,21 +6677,7 @@ const locPagedata={
         "slug"  :"virtual-games/virtual-game-show-room",
         "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg"
        },
-       {
-        "id":3,
-        "category":"game",
-        "type": "Virtual",
-        "title": "6 Virtual Escape Rooms",
-        "description": "New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
-        "age":"All Ages (6+)",
-        "duration":"60",
-        "maxplayers":"12",
-        "minplayers":"2",
-        "price":"147",
-        "slug"  :"virtual-games",
-        "bgimg" :"/assets/all-game-slider-bg/allinadventures-virtual-game.jpg",
-        "bookinglink":"https://www.virtualmysteryroom.com",
-       },
+      
       
       ],
      

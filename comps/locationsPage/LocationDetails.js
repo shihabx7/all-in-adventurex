@@ -1,22 +1,19 @@
 import TitleSeparator from "../util/TitleSeparator"
-import { useLoadScript } from "@react-google-maps/api"
+
 import LocationMap from "./LocationMap"
-import Link from "next/link"
+
 import { FiChevronDown,FiX  } from "react-icons/fi"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const LocationDetails=(props)=>{
     const[showHour,setShwoHour]=useState(false)
+    const [isPgLoaded, setIsPageLoaded]=useState(false)
 
-    const locationMap=()=> {
-        const { isLoaded } = useLoadScript({
-          googleMapsApiKey: "AIzaSyCYSGDPwfMMqKRb7ApqkuH3d5YsMjLiEiY" // Add your API key
-        });
-      
-        return isLoaded ? <LocationMap locdetail={props.locdetail} position={props.locdetail.position} locname={props.locdetail.slug.split("-").join(' ')}/> : null;
+    useEffect(()=>{
+        setIsPageLoaded(true)
+    })
 
-        //return isLoaded ? <div className='text-white'>Map loaded</div> : null;
-      }
+   
       const getAddress=(address,slug,zip,city)=>{
 
    
@@ -61,7 +58,10 @@ const LocationDetails=(props)=>{
                 <div className="location-spc-map drop-shadow-md border-2 border-gold">
 
                     {
-                        locationMap()
+                        isPgLoaded && 
+                        <div className="emb-map w-full h-[400px] md:h-[600px]">
+                            <LocationMap position={props.locdetail.position} place_id={props.locdetail.place_id}/>
+                         </div>
                     }
                     
                 </div>   

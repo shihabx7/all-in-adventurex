@@ -1,6 +1,5 @@
 export const getVirtualGameSlug=()=>{
-
-    const VirtualGameSlug=[
+    const VirtualGameSlugold=[
         {
             "id":1,
             "title":"Madness",
@@ -33,6 +32,15 @@ export const getVirtualGameSlug=()=>{
             "title":"Japan",
             "slug":"virtual-escape-rooms-japan",
         },
+        {
+            "id":7,
+            "title":"Virtual Game Show Room",
+            "slug":"virtual-game-show-room",
+        },
+       
+    ]
+    const VirtualGameSlug=[
+       
         {
             "id":7,
             "title":"Virtual Game Show Room",

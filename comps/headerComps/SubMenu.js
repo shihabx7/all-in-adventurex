@@ -235,7 +235,8 @@ const SubMenu=(props)=>{
                             {/*===========================submenu-item 4 end--------------------*/}
                              {/*=========================================== Collapse menu 2========== */}
 
-                             <div className="submenu-item"
+                            {/**
+                             *  <div className="submenu-item"
                                 onClick={() =>
                                     setopenMenu(
                                         openMenu === "2" ? "0":"2"
@@ -266,7 +267,7 @@ const SubMenu=(props)=>{
                                     
                                 </div>
 
-                            </div>
+                            </div> */} 
 
                             {/*=========================================== Collapse menu 2 end========== */}
                             <div className="submenu-item">
