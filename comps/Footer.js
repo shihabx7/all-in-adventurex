@@ -1,11 +1,9 @@
-import Image from 'next/image'
+
 import LocationBtn from './util/LocationBtn';
 import React, { useEffect, useState } from "react";
 import { FaAngleDown,FaAngleRight,FaLinkedin,FaFacebookSquare,FaTwitterSquare,FaInstagramSquare } from "react-icons/fa";
 import Script from 'next/script'
-import Link from "next/link"
-import { useLoadScript } from "@react-google-maps/api"
-import MapwithInfo from './footercomps/MapwithInfo'
+
 import { FiExternalLink } from "react-icons/fi";
 import UseFullLinks from './footercomps/UseFullLinks';
 import FooterLocationsLink from './footercomps/FooterLocationsLink';

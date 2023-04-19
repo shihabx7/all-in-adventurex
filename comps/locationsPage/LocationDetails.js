@@ -59,7 +59,7 @@ const LocationDetails=(props)=>{
 
                     {
                         isPgLoaded && 
-                        <div className="emb-map w-full h-[400px] md:h-[600px]">
+                        <div className="emb-map w-full h-[500px] md:h-[600px]">
                             <LocationMap position={props.locdetail.position} place_id={props.locdetail.place_id}/>
                          </div>
                     }

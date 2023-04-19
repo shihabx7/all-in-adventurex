@@ -149,8 +149,8 @@ const testimonials=(props)=>{
              <MainTestimonials category="gameshowroom"  testimonials={props.testimonials}/>
              <div className="flex justify-center mt-2 md:mt-4">
 
-                 <Link href="/virtual-games"> 
-                   <a  className="flex items-center space-x-1 text-red-600 hover-text-red-700 text-lg font-medium"><span>View all virtual / remote games</span><span><FiChevronRight/></span></a>
+                 <Link href="/virtual-games/virtual-game-show-room"> 
+                   <a  className="flex items-center space-x-1 text-red-600 hover-text-red-700 text-lg font-medium"><span>View virtual game show room</span><span><FiChevronRight/></span></a>
                    </Link>
 
              </div>

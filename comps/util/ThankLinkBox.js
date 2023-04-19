@@ -32,7 +32,7 @@ const ThankLinkBox=()=>{
 
                                 <img className="w-full" src="/assets/all-in-adventure-all-activities-card1.jpg"></img>
                                 <div className="pt-16 pb-10 w-full text-center items-center justify-center thank-btm-shadow absolute bottom-0 left-0 ">
-                                        <a href="/activities" className=" text-[#eeeeee] lg:text-lg font-medium text-center bg-red-600 group-hover:bg-red-700 block mx-auto w-[90%] py-3 lg:py-3 rounded-full">
+                                        <a href="/activities" className=" text-[#eeeeee] text-[16px] font-medium text-center bg-red-600 group-hover:bg-red-700 block mx-auto w-[90%] py-3 lg:py-3 rounded-full">
                                             VIEW ALL GAMES                                               
                                         </a>
                                      </div>
@@ -61,7 +61,7 @@ const ThankLinkBox=()=>{
 
                                     <img className="w-full" src="/assets/all-in-adventure-all-events-card.jpg"></img>
                                     <div className="pt-16 pb-10 w-full text-center items-center justify-center thank-btm-shadow absolute bottom-0 left-0 ">
-                                        <a href="/events" className=" text-[#eeeeee] lg:text-lg font-medium text-center bg-red-600 group-hover:bg-red-700 block mx-auto w-[90%] py-3 lg:py-3 rounded-full">
+                                        <a href="/events" className=" text-[#eeeeee] text-[16px] font-medium text-center bg-red-600 group-hover:bg-red-700 block mx-auto w-[90%] py-3 lg:py-3 rounded-full">
                                             VIEW ALL EVENTS                                               
                                         </a>
                                      </div>
@@ -69,7 +69,7 @@ const ThankLinkBox=()=>{
                             </div>
                             <div className="block group thank-link-box relative ">
                             <div className="thank-ev-head absolute top-0 left-0 w-full z-10 pt-16 pb-12 md:pb-8 lg:pb-14"> 
-                                <h2 className="text-[#eeeeee] font-bold text-[26px] text-center">VIRTUAL GAMES</h2>
+                                <h2 className="text-[#eeeeee] font-bold text-[26px] text-center">VIRTUAL GAME SHOW ROOM</h2>
                             </div>
                                     <div className="absolute top-0 right-0 ml-auto w-[14%] z-20">
                                          <img className="block w-full" src="/assets/border/virtual-game-right-corner.png"></img>
@@ -86,11 +86,11 @@ const ThankLinkBox=()=>{
                                          <div className="border-right-img h-full absolute top-0 right-0  z-10">
                                            <img className="block h-full ml-auto" src="/assets/border/virtual-game-right-border.png"></img>
                                          </div>
-                                     <img className="w-full" src="/assets/all-in-adventure-all-virtual-games-card.jpg"></img>
+                                     <img className="w-full" src="/assets/allinadventures-virtual-game-showroom-t.jpg"></img>
                                      
                                      <div className="pt-16 pb-10 w-full text-center items-center justify-center thank-btm-shadow absolute bottom-0 left-0 ">
-                                        <a href="/virtual-games" className=" text-[#eeeeee] lg:text-lg font-medium text-center bg-red-600 group-hover:bg-red-700 block mx-auto w-[90%] py-3 lg:py-3 rounded-full">
-                                            VIEW ALL VIRTUAL GAMES                                               
+                                        <a href="/virtual-games/virtual-game-show-room" className=" text-[#eeeeee] text-[16px] font-medium text-center bg-red-600 group-hover:bg-red-700 block mx-auto w-[90%] py-3 lg:py-3 rounded-full">
+                                             VIRTUAL GAME SHOW ROOM                                               
                                         </a>
                                      </div>
                             </div>

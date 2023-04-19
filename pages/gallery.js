@@ -118,14 +118,14 @@ const gallery=(props)=>{
             <div className="virtual-gallery ">
                    <div className="section-title  text-center max-w-[800px] mx-auto px-4 md:px-0">
                         <TitleSeparator title="VIRTUAL GAMES" color="golden-text" weight="font-bold"/>
-                        <p className="text-gray-700 md:px-8 md:text-lg">We offer a new way to stay connected while apart. For unlimited players, any time, anywhere. Your team will work together on Zoom, and a game master will broadcast live from escape room or game show room of your choice.</p>
+                        <p className="text-gray-700 md:px-8 md:text-lg">We offer a new way to stay connected while apart. For unlimited players, any time, anywhere. Your team will work together on Zoom, and a game master will broadcast live from the game show room.</p>
                     </div>
 
                     <MainGallery category="virtual" galleryitem={props.gallerylist}/>
                     <div className="gl-bottom-link mt-12 text-center">
-                        <Link href="/virtual-games"> 
+                        <Link href="/virtual-games/virtual-game-show-room"> 
                           <a  className="flex text-lg justify-center space-x-1 font-medium items-center text-red-600 hover:text-red-700">
-                           <span>View all virtual games </span>
+                           <span>View virtual game show room </span>
                            <span><FiChevronRight/></span> 
                             </a>
                             </Link>

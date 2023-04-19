@@ -11,7 +11,7 @@ const LocationMap=(props)=>{
 
 const buildFrame=()=>{
     const mapkey="AIzaSyBS0vGJ-Mr17vG4KvmX3VvC_JNI8isALq0"
-    const mapurl="https://www.google.com/maps/embed/v1/place?key="+mapkey+"&center="+centerLat+","+centerLng+"&zoom=16"+"&q=place_id:"+place_id
+    const mapurl="https://www.google.com/maps/embed/v1/place?key="+mapkey+"&center="+centerLat+","+centerLng+"&zoom=12"+"&q=place_id:"+place_id
     console.log(mapurl)
     return mapurl
 }

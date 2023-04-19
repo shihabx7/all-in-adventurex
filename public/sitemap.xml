@@ -161,11 +161,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>1</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/virtual-games</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>1</priority>
-   </url>
+  
    <url>
       <loc>https://allinadventures.com/franchise</loc>
      <lastmod>2023-03-24</lastmod>
@@ -656,16 +652,7 @@
       <priority>0.8</priority>
    </url>
   
-   <url>
-      <loc>https://allinadventures.com/virtual-games/virtual-escape-rooms-zombie-apocalypse</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://allinadventures.com/virtual-games/virtual-escape-rooms-madness</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+  
    
    <url>
       <loc>https://allinadventures.com/raleigh-nc/events</loc>
@@ -736,21 +723,13 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/virtual-games/virtual-escape-rooms-japan</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
    <url>
       <loc>https://allinadventures.com/woodbridge-nj/activities/hollywood-premiere</loc>
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/virtual-games/virtual-escape-rooms-prison</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
   
    <url>
       <loc>https://allinadventures.com/milford-ct/events/bachelorette-party</loc>
@@ -828,11 +807,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/virtual-games/virtual-escape-rooms-bomb</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
    
    <url>
       <loc>https://allinadventures.com/west-nyack-ny/events/bachelorette-party</loc>
@@ -902,12 +877,6 @@
    </url>
    <url>
       <loc>https://allinadventures.com/west-nyack-ny/events/reunion-party</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
-  
-   <url>
-      <loc>https://allinadventures.com/virtual-games/virtual-escape-rooms-aztec</loc>
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>

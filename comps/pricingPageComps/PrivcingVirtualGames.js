@@ -60,23 +60,7 @@ const PrivcingVirtualGames=()=>{
                                          </tr>
                                          {/** ==============table-row end============ */}
                                          {/** ==============table-row===========   3-4 Players */}
-                                        <tr >
-                                            <td className="border border-[#D2C6AA]  w-[44%] md:w-[50%] p-2 md:p-4 align-top">
-                                                   <h4 className="font-medium md:text-[20px] text-[#000000]">
-                                                   Virtual Escape Room
-                                                   </h4>
-                                                   <p className="text-[#222222] font-light text-xs sm:text-sm md:text-lg">Choose from any of 6 games</p>
-
-                                               </td>
-                                               <td className="border border-[#D2C6AA] w-[46%] md:w-[50%]  p-2 md:p-4 align-top">
-                                                  <ul className="text-xs md:text-lg">
-                                                    <li className="text-[#222222] font-light mt-1"><span className="font-semibold">$147</span> / Private room for 2 - 6 person</li>
-                                               
-                                                  </ul>
-                                               </td>
-
-
-                                         </tr>
+                        
                                          {/** ==============table-row end============ */}
                                           
                                         
@@ -91,7 +75,7 @@ const PrivcingVirtualGames=()=>{
                         
                         <div className="view-all flex justify-center">
                             
-                              <a href="/virtual-games" className="flex font-medium text-lg justify-center space-x-1 items-center text-red-600 hover:text-red-700"><span>View all virtual game</span> <FiChevronRight/></a>
+                              <a href="/virtual-games/virtual-game-show-room" className="flex font-medium text-lg justify-center space-x-1 items-center text-red-600 hover:text-red-700"><span>View virtual game show room</span> <FiChevronRight/></a>
                             
                          </div>
                     </div>
