@@ -91,12 +91,12 @@ html,body,a{
 }
 /*================ dark bg- pattern =====================*/
 .game-bg-pattern-dark{
-  background-image: linear-gradient(to right, rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('/assets/svg/pattern/All-In-Adventures-Background-Games-Pattern.svg');
+  background-image: linear-gradient(to right, rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url('/assets/svg/pattern/All-In-Adventures-Background-Games-Pattern.svg');
   background-repeat: repeat;
   background-size: 150px 150px;
 }
 .gift-pattern{
-  background-image: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('/assets/svg/pattern/All-In-Adventures-Background-Gift-Card-Pattern.svg');
+  background-image: linear-gradient(to right, rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('/assets/svg/pattern/All-In-Adventures-Background-Gift-Card-Pattern.svg');
   background-repeat: repeat;
   background-size: 500px 500px;
   
