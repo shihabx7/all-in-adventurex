@@ -97,7 +97,3 @@ export const getStaticProps=async()=>{
     }
 }
 
-Bank name: The city Bank
-name:MD ZIAUL HAQUE
-ACC/NO:2302544429001
-Branch: Pallabi
