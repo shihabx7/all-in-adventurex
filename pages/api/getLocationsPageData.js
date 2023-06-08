@@ -1160,7 +1160,9 @@ export const getLocationsPageData = () => {
             alt: "allinadventures-escape-room-white-marsh-md-white-marsh-mall-hero",
             email: "store118@allinadventures.com",
             mgremail: "mgr118@allinadventures.com",
-            position: { lat: 39.376232633607614, lng: -76.4684810846594 },
+
+            position: { lat: 39.37628236535558, lng: -76.46849181680405 },
+            place_id: "ChIJr2ltJz0IyIkRGQ5TWpCKWLw",
             hours: [
               {
                 day: "monday",
