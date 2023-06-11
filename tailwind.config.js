@@ -22,6 +22,11 @@ module.exports = {
         squeare: "square",
         roman: "upper-roman",
       },
+      screens: {
+        "3xl": "1600px",
+        "4xl": "2000px",
+        "5xl": "2380px",
+      },
     },
 
     gradients: (theme) => ({

@@ -11,19 +11,19 @@ const GameDetails = (props) => {
       <div className=" w-full absolute top-0 left-0">
         <img className="w-full" src="/assets/game-home-or1.jpg"></img>
       </div>
-      <div className="content-container-game pt-16 md:pt-24 lg:pt-32 px-4 relative z-10">
+      <div className="content-container-game pt-16 md:pt-24 lg:pt-32 md:px-4 relative z-10">
         {/*=========== game story=====*/}
-        <div className="game-dt-container storyline-bg relative">
+        <div className="game-dt-container storyline-bg relative overflow-x-hidden md:overflow-visible">
           {props.activitydata.story_bg && (
-            <div className="st-bg absolute top-[38%] right-0 md:left-[-20px] md:top-[-40px] lg:top-[-110px] xl:top-[-80px] 2xl:top-[-40px] 2xl:left-[-60px]">
+            <div className="st-bg absolute top-[38%] right-0 md:left-[-20px] md:top-[-40px] lg:top-[-110px] xl:top-[-80px] 2xl:top-[-40px] 2xl:left-[-60px] 4xl:left-[172px] 5xl:left-[210px]">
               <img
-                className="w-[110px] md:w-[130px] lg:w-[180px] xl:w-[200px] 2xl:w-[380px]"
+                className="w-[196px] md:w-[130px] lg:w-[180px] xl:w-[200px] 2xl:w-[380px] 4xl:w-[466px] 5xl:w-[492px]"
                 src={props.activitydata.story_bg}
               ></img>
             </div>
           )}
 
-          <div className="game-dt-row max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between md:px-4">
+          <div className="game-dt-row max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
             <div className="gme-dt-col order-2 md:order-1 md:w-[49%] lg:w-[45%]">
               <div className="game-dt-title">
                 <p className="md:text-lg text-[#938056] md:mb-1 uppercase">
@@ -59,17 +59,17 @@ const GameDetails = (props) => {
         </div>
         {/*=========== game story=====*/}
         {/*=========== game scene=====*/}
-        <div className="game-dt-container plot-bg relative">
+        <div className="game-dt-container plot-bg relative overflow-x-hidden md:overflow-visible">
           {props.activitydata.scene_bg && (
-            <div className="pt-bg absolute top-[38%] right-[0px] md:top-[-100px] lg:top-[-124px] xl:top-[-110px] 2xl:top-[-140px] 2xl:right-[0px]">
+            <div className="pt-bg absolute top-[38%] right-[-20px] md:top-[-100px] lg:top-[-124px] xl:top-[-110px] 2xl:top-[-140px] 2xl:right-[0px] 4xl:right-[220px] 5xl:right-[330px]">
               <img
-                className="w-[120px] md:w-[240px] lg:w-[280px] xl:w-[300px] 2xl:w-[400px]"
+                className="w-[240px] md:w-[240px] lg:w-[280px] xl:w-[300px] 2xl:w-[400px] 4xl:w-[520px] 5xl:w-[550px]"
                 src={props.activitydata.scene_bg}
               ></img>
             </div>
           )}
 
-          <div className="game-dt-row max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between  md:px-4 py-12 md:py-16 lg:py-20">
+          <div className="game-dt-row max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-12 md:py-16 lg:py-20">
             <div className="game-dt-col md:w-[48%] lg:w-[45%]  mb-4 md:mb-0 ">
               <img src={props.activitydata.sceneimg}></img>
             </div>
@@ -101,20 +101,20 @@ const GameDetails = (props) => {
         </div>
         {/*=========== game scene=====*/}
         {/*=========== game mission=====*/}
-        <div className="game-dt-container mission-bg relative">
-          <div className="msn-bg-l absolute top-[40%] right-[-10px] md:left-0 md:top-[-160px] lg:top-[-120px] xl:top-[-140px] 2xl:top-0  z-20">
+        <div className="game-dt-container mission-bg relative overflow-x-hidden md:overflow-visible">
+          <div className="msn-bg-l absolute top-[40%] right-[-10px] hidden md:block md:left-0 md:top-[-160px] lg:top-[-120px] xl:top-[-140px] 2xl:top-0 4xl:left-[200px] 5xl:left-[300px] 4xl:top-[-160px]  z-20">
             <img
-              className=" -scale-x-100 md:scale-x-100 w-[120px] md:w-[140px] lg:w-[170px] xl:w-[200px] xl:opacity-80 2xl:w-[280px] 2xl:opacity-90"
+              className=" -scale-x-100 md:scale-x-100 w-[120px] md:w-[140px] lg:w-[170px] xl:w-[200px] xl:opacity-80 2xl:w-[280px] 2xl:opacity-90 4xl:w-[320px] 5xl:w-[380px] "
               src="/assets/svg/game-bg-pattern/direction.svg"
             ></img>
           </div>
-          <div className="msn-bg-r absolute bottom-[-100px]  right-0 md:bottom-[-80px] md:right-[0px] lg:bottom-[-120px] lg:right-[-10px] xl:bottom-[-130px] xl:right-[-10px] 2xl:bottom-[-180px] 2xl:right-[120px] z-20">
+          <div className="msn-bg-r absolute bottom-[36%] rotate-[-27deg]  right-[-80px] md:rotate-[-25deg]  md:bottom-[-80px] md:right-[0px] lg:bottom-[-120px] lg:right-[-10px] xl:bottom-[-130px] xl:right-[-10px] 2xl:bottom-[-180px] 2xl:right-[120px] 4xl:right-[300px] 4xl:bottom-[-240px] 5xl:right-[340px] z-20">
             <img
-              className="w-[280px] md:w-[340px] lg:w-[360px] xl:w-[420px] xl:opacity-90 2xl:w-[490px] 2xl:opacity-100"
+              className="w-[280px] md:w-[340px] lg:w-[360px] xl:w-[420px] xl:opacity-90 2xl:w-[500px] 2xl:opacity-100 4xl:w-[540px] 5xl:w-[620px]"
               src="/assets/svg/game-bg-pattern/settings.svg"
             ></img>
           </div>
-          <div className="game-dt-row max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between md:px-4 relative z-20">
+          <div className="game-dt-row max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 relative z-20">
             <div className="gme-dt-col order-2 md:order-1 md:w-[48%] lg:w-[45%]">
               <div className="game-dt-title">
                 <p className="md:text-lg text-[#938056] md:mb-1 uppercase">
