@@ -133,13 +133,13 @@ const GameLocDetails = (props) => {
               src="/assets/svg/game-bg-pattern/direction.svg"
             ></img>
           </div>
-          <div className="msn-bg-r absolute bottom-[36%] rotate-[-27deg]  right-[-80px] md:rotate-[-25deg]  md:bottom-[-80px] md:right-[0px] lg:bottom-[-120px] lg:right-[-10px] xl:bottom-[-130px] xl:right-[-10px] 2xl:bottom-[-180px] 2xl:right-[120px] 4xl:right-[300px] 4xl:bottom-[-240px] 5xl:right-[340px] z-20">
+          <div className="msn-bg-r absolute bottom-[36%] rotate-[-15deg]  right-[-80px] md:rotate-[-20deg]  md:bottom-[-80px] md:right-[0px] lg:bottom-[-120px] lg:right-[-10px] xl:bottom-[-130px] xl:right-[-10px] 2xl:bottom-[-180px] 2xl:right-[120px] 4xl:right-[300px] 4xl:bottom-[-240px] 5xl:right-[340px] z-20">
             <img
               className="w-[280px] md:w-[340px] lg:w-[360px] xl:w-[420px] xl:opacity-90 2xl:w-[500px] 2xl:opacity-100 4xl:w-[540px] 5xl:w-[620px]"
               src="/assets/svg/game-bg-pattern/settings.svg"
             ></img>
           </div>
-          <div className="game-dt-row max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+          <div className="game-dt-row max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 relative z-30">
             <div className="gme-dt-col order-2 md:order-1 md:w-[48%] lg:w-[45%]">
               <div className="game-dt-title">
                 <p className="md:text-lg text-[#938056] md:mb-1 uppercase">
