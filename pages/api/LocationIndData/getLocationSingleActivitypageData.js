@@ -1499,19 +1499,19 @@ const activityDataset = {
     activitydata: {
       category: "escapegames",
       story:
-        " You are in Paris, France, the place where the zombification of the human race began.. At first, the virus was unstoppable; anyone who came into contact with the virus was guaranteed to turn. However, your recent research shows the virus has mutated into two weaker strains. Now is the time to develop a vaccine and save humanity.",
+        "You are a group of low-level scientists working at the ominous Umbra Industries. As you get ready to leave for the day, the biosafety alert system begins to go off. The alert announces that the entire laboratory has been sealed for quarantine and that authorized personnel have one hour to exit the facility using their ID badge.",
       storyimg:
         "/assets/all-game-details/allinadventures-zombie-apocalypse-storyline.png",
       storyimg_alt: "allinadventures-zombie-apocalypse-storyline",
       scene:
-        "Based on your research, we now know the virus is weakening and it is time to take advantage of these lesser mutations. It seems that 49% of the population is immune to Strain A while 49% are immune to Strain B. Only 2% are immune to both strains. We must make a chemical test quickly to determine how to proceed with developing the vaccine.",
+        "Making your way toward your administrator's personal laboratory, you come face to face with the horrifying cause of the lockdown: Zombies! There is little time to try and develop a cure for the virus and escape the facility. You must use the top-secret chemicals in the lab to create a vaccine and find your administrator's key card. Time is running out as it has already taken you ten minutes to safely reach the administrator's laboratory.",
       sceneimg:
         "/assets/all-game-details/allinadventures-zombie-apocalypse-plot.png",
       sceneimg_alt: "allinadventures-zombie-apocalypse-plot",
       story_bg: "/assets/svg/game-bg-pattern/chemistry.svg",
       scene_bg: "/assets/svg/game-bg-pattern/microscope.svg",
       mission:
-        "You have 50 minutes to look over your research and create a chemical test to determine the genetic traits of those who are naturally immune. If you are able to create this test in time, you can use it to develop a vaccine to distribute to the other 98% of the population. Can you finish development before attracting the zombie horde?",
+        "You have 50 minutes to find your administrator's key card and create a vaccine using the chemicals that you are able to find in the lab. Can you finish in time, or will you be trapped in the lockdown with the growing zombie horde?",
       missionimg:
         "/assets/all-game-details/allinadventures-zombie-apocalypse-mission.png",
       missionimg_alt: "",
