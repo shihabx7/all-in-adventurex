@@ -314,7 +314,7 @@ const activityDataset = {
     activityname: "Zombie Apocalypse",
 
     pagesubtitle:
-      "The zombification virus has mutated, and it is up to you to save humanity! Double check your research, create an immunity chemical test, and quickly develop the vaccine!",
+      "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
     price: "29.89",
     duration: "50",
     max_players: "10",
