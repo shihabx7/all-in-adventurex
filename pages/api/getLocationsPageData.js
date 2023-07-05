@@ -340,7 +340,7 @@ export const getLocationsPageData = () => {
             entry_guid:
               "Our store is located on the 3rd floor food court level, just across the hall from 5 Below store.",
             slug: "west-nyack-ny",
-            address: "Escape the Mystery Room+3681 Palisades Center Dr",
+            address: "Escape the Mystery Room 3681 Palisades Center Dr",
             zip: "10994",
             fivestar: "1000+ ",
             total_rev: "1317",

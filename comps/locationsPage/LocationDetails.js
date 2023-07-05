@@ -82,7 +82,7 @@ const LocationDetails = (props) => {
         </div>
         <div className="loc-dt-table grid grid-cols-1 md:grid-cols-2  mt-8">
           <div className="flex space-x-2 border-b border-[#D2C6AA] py-2 px-2 lg:py-3 md:text-lg ">
-            <div className="loc-dt-icon">
+            <div className="loc-dt-icon w-[30px] md:w-[36px]">
               <img src="/assets/svg/event-icon-pin.svg"></img>
             </div>
             <div className="loc-dt-text text-[#232323]">
