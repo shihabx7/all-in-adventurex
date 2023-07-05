@@ -169,7 +169,7 @@ const activityDataset = {
       story:
         "Welcome aboard the vessel of the dread pirate, Captain Jake Hawkins - the most feared pirate who has ever sailed the seven seas. Hawkins and his crew continue to loot and capture without remorse, and you are no exception to his evil ways. You must find a way to break free from his clutches but take heed - your only way out may be to find a way in!",
       storyimg:
-        "/assets/all-game-details/allinadventures-treasure-island-storyline.png",
+        "/assets/all-game-details/allinadventures-treasure-island-storyline-updated.png",
       storyimg_alt: "allinadventures-treasure-island-storyline",
 
       scene:
@@ -424,20 +424,20 @@ const activityDataset = {
       story:
         "Interpol is holding a suspect on a minor charge and will have to release them within the hour. You have reason to believe that this person is in fact the international jewelry thief known as The Velvet Glove. The Velvet Glove was involved in the theft of the Crown of Hildegard of the Vinzgau. You have been sent to search the properties in order to find proof that they are indeed The Velvet Glove.",
       storyimg:
-        "/assets/all-game-details/allinadventures-special-agent-storyline.png",
+        "/assets/all-game-details/allinadventures-special-agent-storyline-updated.png",
       storyimg_alt: "allinadventures-special-agent-Story",
 
       scene:
         "You must move quickly, if Interpol is forced to release the suspect, they will slip away into the shadows. It has been years since anyone has been this close to The Velvet Glove, and this is just the break you have been looking for.  The recent theft of Crown of Hildegard of the Vinzgau means that this case will get international attention and a solid conviction.",
       sceneimg:
-        "/assets/all-game-details/allinadventures-special-agent-plot.png",
+        "/assets/all-game-details/allinadventures-special-agent-plot-updated.png",
       sceneimg_alt: "escape room",
       story_bg: "/assets/svg/game-bg-pattern/case-file.svg",
       scene_bg: "/assets/svg/game-bg-pattern/crown.svg",
       mission:
         "We have two objectives here, agents: find proof that this person is indeed The Velvet Glove before Interpol has to release them, and if we complete that in time, find the missing crown. Once we are able to accomplish those, that will stop the Velvet Glove from committing future robberies and destroy the foundation of their criminal empire.",
       missionimg:
-        "/assets/all-game-details/allinadventures-special-agent-mission.png",
+        "/assets/all-game-details/allinadventures-special-agent-mission-updated.png",
       missionimg_alt: "allinadventures-special-agent-mission",
       videoid: "vrtdmQBMZ4E",
       videothumb: "/assets/video-thumb/allinadventures-special-agent.jpg",

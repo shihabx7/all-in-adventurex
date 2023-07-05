@@ -23,7 +23,7 @@ export const getLocationsPageData = () => {
               "Our customers come from many surrounding cities, including Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield and many more!",
             entry_guid:
               "Use the 2nd floor mall entrance between the J.C.Penney and Pottery Barn, take a left at the escalators. We are located on the right side, between Athleta and Zara, across from Banana Republic.",
-            address: "1 Crossgates Mall Rd",
+            address: "All In Adventures Escape Rooms 1 Crossgates Mall Rd D212",
             zip: "12203",
             fivestar: "1200+",
             total_rev: "1603",
@@ -82,7 +82,7 @@ export const getLocationsPageData = () => {
             id: 2,
             city: "Buffalo",
             publish_status: true,
-            address: "1 Walden Galleria",
+            address: "Escape the Mystery Room 1 Walden Galleria",
             city_include:
               "Our customers come from many surrounding cities, including North Tonawanda, Cheektowaga, Medina, Hamburg, Amherst and many more!",
             entry_guid:
@@ -149,7 +149,7 @@ export const getLocationsPageData = () => {
               "Our customers come from many surrounding cities, including Vernon, Newton, West Nyack, Poughkeepsie, Newburgh and many more!",
             entry_guid:
               "Our store is located on the 2nd floor. We are between H&M and American Eagle clothing stores.",
-            address: "1 Galleria Dr",
+            address: "Escape the Mystery Room 1 Galleria Dr Suite 211",
             slug: "middletown-ny",
             zip: "10941",
             fivestar: "500+",
@@ -213,7 +213,7 @@ export const getLocationsPageData = () => {
             entry_guid:
               "Our store is on the 2nd floor right next to Lindt Chocolate shop.  You can use the entrance by the Cheesecake Factory.",
             slug: "syracuse-ny",
-            address: "1 Destiny USA Drive",
+            address: "Escape the Mystery Room 9090 Destiny USA Dr K201",
             zip: "13204",
             fivestar: "2400+",
             total_rev: "2798",
@@ -275,7 +275,8 @@ export const getLocationsPageData = () => {
               "Our customers come from many surrounding cities, including Belleville, Clayton, Dexter, Oswego, Limerick and many more!",
             entry_guid:
               "Our Store is located near Sears and next to Fun on the Run arcade.",
-            address: "21182 Salmon Run Mall Loop W",
+            address:
+              "Escape the Mystery Room 21182 Salmon Run Mall Loop W Suite D",
             slug: "watertown-ny",
             zip: "13601",
             fivestar: "300+",
@@ -339,7 +340,7 @@ export const getLocationsPageData = () => {
             entry_guid:
               "Our store is located on the 3rd floor food court level, just across the hall from 5 Below store.",
             slug: "west-nyack-ny",
-            address: "1000 Palisades Center Dr",
+            address: "Escape the Mystery Room+3681 Palisades Center Dr",
             zip: "10994",
             fivestar: "1000+ ",
             total_rev: "1317",
@@ -401,7 +402,7 @@ export const getLocationsPageData = () => {
             publish_status: true,
             entry_guid: "Upstairs from 110 Grill.",
             slug: "poughkeepsie-ny",
-            address: "2001 South Rd",
+            address: "All In Adventures Escape Rooms 2001 South Rd Space C205",
             zip: "12601",
             fivestar: "200+",
             total_rev: "361",
@@ -473,7 +474,8 @@ export const getLocationsPageData = () => {
             entry_guid:
               "We are right off exit 17 on Interstate-540, and directly off of Capital Blvd. behind Best Buy. We are attached on the outside of the mall next to Barnes & Noble.",
             slug: "raleigh-nc",
-            address: "5959 Triangle Town Blvd",
+            address:
+              "All In Adventures Escape Rooms 5959 Triangle Town Blvd Space EU 2113",
             zip: "27616",
             fivestar: "600+",
             total_rev: "737",
@@ -488,7 +490,7 @@ export const getLocationsPageData = () => {
             email: "store123@allinadventures.com",
             mgremail: "mgr123@allinadventures.com",
             position: { lat: 35.86645773496303, lng: -78.57430228994644 },
-            place_id: "ChIJdaEpYZI53YkRf3OB1Cnqgz0",
+            place_id: "ChIJ9YSANOJZrIkRMjidQFrtx7Q",
             hours: [
               {
                 day: "monday",
@@ -546,7 +548,7 @@ export const getLocationsPageData = () => {
             entry_guid:
               "Our store is located between Pinz and Jo~Ann Fabric, across from Body Spa and Elite Tae Kwon Do.",
             slug: "hadley-ma",
-            address: "367 Russell St",
+            address: "All In Adventures Escape Rooms 367 Russell St A07",
             zip: "01035",
             fivestar: "300+",
             total_rev: "402",
@@ -609,8 +611,8 @@ export const getLocationsPageData = () => {
             entry_guid:
               "Our store is located on the 1st floor across from Baby Gap.",
             slug: "holyoke-ma",
-            address: "50 Holyoke St",
-            zip: "01035",
+            address: "All In Adventures Escape Rooms 50 Holyoke St Space F292",
+            zip: "01040",
 
             fivestar: "200+",
             total_rev: "361",
@@ -673,7 +675,8 @@ export const getLocationsPageData = () => {
             entry_guid:
               "Our store is located around the corner from the Target entrance, across from Clark's Outlet and next to Victoria's Secret.",
             slug: "kingston-ma",
-            address: "101 Kingston Collection Way",
+            address:
+              "Escape the Mystery Room+1 Kingston Collection Way Unit B106",
             zip: "02364",
 
             fivestar: "200+",
@@ -737,7 +740,7 @@ export const getLocationsPageData = () => {
               "Our customers come from many surrounding cities, including Auburn, Boston, New Bedford and many more!",
             entry_guid: "Our store is on the 2nd floor near the Macy's store.",
             slug: "n-attleborough-ma",
-            address: "999 S Washington St",
+            address: "Escape the Mystery Room 999 S Washington St W213",
             zip: "02760",
 
             fivestar: "200+",
@@ -810,7 +813,8 @@ export const getLocationsPageData = () => {
             entry_guid:
               "Customers can find the store fastest via the Target entrance. Head to the lower-level main corridor, take a left and we are on the right side next to Eblens.",
             slug: "milford-ct",
-            address: "1201 Boston Post Rd",
+            address:
+              "All In Adventures Escape Rooms 1201 Boston Post Rd Suite 1220",
             zip: "06460",
 
             fivestar: "1100+",
@@ -874,7 +878,7 @@ export const getLocationsPageData = () => {
             entry_guid:
               "Our Store is located on the 2nd floor, between Spencer's and Sears. The best entrance to use is the mall entrance between Maggie Mcfly's and Sears.",
             slug: "manchester-ct",
-            address: "194 Buckland Hills Dr",
+            address: "All In Adventures Escape Rooms 194 Buckland Hills Dr",
             zip: "06042",
 
             fivestar: "300+",
@@ -938,7 +942,7 @@ export const getLocationsPageData = () => {
             entry_guid:
               "Our Store is located on the 1st floor between FYE and Payless across from Mix Box.",
             slug: "waterbury-ct",
-            address: "495 Union St",
+            address: "All In Adventures Escape Rooms 495 Union St",
             zip: "06706",
 
             fivestar: "100+",
@@ -1011,7 +1015,8 @@ export const getLocationsPageData = () => {
             entry_guid:
               "Our store is located in the AMC wing, across from Modell's Sporting Goods.",
             slug: "bensalem-pa",
-            address: "707 Neshaminy Mall",
+            address:
+              "All In Adventures Escape Rooms 707 Neshaminy Mall Space 672",
             zip: "19020",
             fivestar: "600+",
             total_rev: "864",
@@ -1083,7 +1088,7 @@ export const getLocationsPageData = () => {
               "Our customers come from many surrounding cities, including Glenn Dale, Crofton, Greenbelt, South Laurel, Mitchellville, New Carrollton, Odenton, Beltsville, Laurel, East Riverdale, College Park, Kettering, Largo, Hyattsville, Severn and many more!",
             entry_guid: "Our store is between Barnes & Noble and LA Fitness.",
             slug: "bowie-md",
-            address: "15421 Emerald Way",
+            address: "All In Adventures Escape Rooms 15421 Emerald Way",
             zip: "20716",
             fivestar: "500+",
             total_rev: "684",
@@ -1146,7 +1151,7 @@ export const getLocationsPageData = () => {
             entry_guid:
               "Our Store is located on the Upper Level next to JC Penny.",
             slug: "white-marsh-md",
-            address: "8200 Perry Hall Blvd",
+            address: "All In Adventures Escape Rooms 8200 Perry Hall Blvd",
             zip: "21236",
             fivestar: "700+",
             total_rev: "860",
@@ -1218,7 +1223,7 @@ export const getLocationsPageData = () => {
               "Our customers come from many surrounding cities, including South River, Sayreville, North Brunswick, New Brunswick, Highland Park, Old Bridge, Edison, Somerset, Metuchen, Fords, Perth Amboy, South Plainfield, Woodbridge, Iselin, Middlesex and many more!",
             entry_guid: "Our store is between Panera and JC Penny.",
             slug: "east-brunswick-nj",
-            address: "755 NJ-18",
+            address: "All In Adventures Escape Rooms 755 NJ-18 Space 544",
             zip: "08816",
 
             fivestar: "100+",
@@ -1282,7 +1287,7 @@ export const getLocationsPageData = () => {
             entry_guid:
               "Our store is on the lower level near the mall entrance by JC Penny.",
             slug: "rockaway-nj",
-            address: "301 Mt Hope Ave",
+            address: "Escape+the Mystery Room 301 Mt Hope Ave Suite 1001c",
             zip: "07866",
 
             fivestar: "700+",
@@ -1346,7 +1351,8 @@ export const getLocationsPageData = () => {
             entry_guid:
               "Our store is in the lower level of the JCPenney & Boscov wing.",
             slug: "woodbridge-nj",
-            address: "250 Woodbridge Center Dr",
+            address:
+              "Adventures Escape Rooms 250 Woodbridge Center Dr Suite 2285",
             zip: "07095",
 
             fivestar: "200+",
@@ -1420,7 +1426,8 @@ export const getLocationsPageData = () => {
             entry_guid:
               "We are inside the mall beside Sears and the food court.",
             slug: "roanoke-va",
-            address: "4802 Valley View Blvd NW",
+            address:
+              "All In Adventures Escape Rooms 4802 Valley View Blvd NW Space LD 150",
             zip: "24012",
 
             fivestar: "500+",
@@ -1494,7 +1501,7 @@ export const getLocationsPageData = () => {
             entry_guid:
               "Our store is directly across the Bass Pro Shop inside the mall.",
             slug: "lawrenceville-ga",
-            address: "5900 Sugarloaf Pkwy",
+            address: "Escape the Mystery Room 5900 Sugarloaf Pkwy Unit 134",
             zip: "30043",
 
             fivestar: "2300+",
@@ -1567,7 +1574,8 @@ export const getLocationsPageData = () => {
             entry_guid:
               "We are located inside the mall near Macy's on the upper level.",
             slug: "columbus-oh",
-            address: "1500 Polaris Pkwy",
+            address:
+              "All In Adventures Escape Rooms 1500 Polaris Pkwy Space 2252",
             zip: "43240",
 
             fivestar: "1000+",
@@ -1632,7 +1640,8 @@ export const getLocationsPageData = () => {
             entry_guid:
               "We are located inside the mall near Dick's Sporting Goods.",
             slug: "mentor-oh",
-            address: "7850 Mentor Ave",
+            address:
+              "All In Adventures Escape Rooms 7850 Mentor Ave Space 1050A",
             zip: "44060",
 
             fivestar: "200+",
@@ -1695,7 +1704,8 @@ export const getLocationsPageData = () => {
               "Our customers come from many surrounding cities, including Riverside, Kettering, West Carrollton City, Huber Heights, Trotwood, Beavercreek, Vandalia, Centerville, Miamisburg, Englewood, Fairborn, Clayton, Tipp City, Springboro, Xenia and many more!",
             entry_guid: "We are located inside the Dayton Mall near Space 300.",
             slug: "dayton-oh",
-            address: "2700 Miamisburg Centerville Rd",
+            address:
+              "All In Adventures Escape Rooms 2700 Miamisburg Centerville Rd Space 300",
             zip: "45459",
 
             fivestar: "300+",
