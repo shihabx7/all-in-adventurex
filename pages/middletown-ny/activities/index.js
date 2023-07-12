@@ -16,9 +16,9 @@ const LocActivity = (props) => {
     locname = locname.join(" ");
     return locname + ", " + st;
   };
-  console.log(props.activitylist);
-  console.log(props.pagedata.locationslug);
-  console.log(props.bookingdata);
+  // console.log(props.activitylist);
+  //console.log(props.pagedata.locationslug);
+  //console.log(props.bookingdata);
   /* custom breadcum code */
 
   /* customizing breadcum */

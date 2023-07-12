@@ -57,11 +57,6 @@ const GameLocList = (props) => {
             </p>
           </div>
           {props.activitylist.map((activity) => {
-            console.log(
-              activity.activity_slug +
-                ": " +
-                props.bookingdata[activity.activity_slug]
-            );
             return (
               activity.activity_category == "escapegame" && (
                 <div
