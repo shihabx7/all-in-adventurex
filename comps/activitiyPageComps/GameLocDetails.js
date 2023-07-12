@@ -54,12 +54,25 @@ const GameLocDetails = (props) => {
                   </div>
                 )}
                 {(props.publish == true || props.publish == undefined) && (
-                  <GameDtBtn
-                    bookingdata={props.bookingdata}
-                    label="I'VE READ ENOUGH! BOOK NOW"
-                    color="dark-gold"
-                    weight="font-bold"
-                  />
+                  <>
+                    {props.bookingdata.active == true && (
+                      <GameDtBtn
+                        bookingdata={props.bookingdata}
+                        label="I'VE READ ENOUGH! BOOK NOW"
+                        color="dark-gold"
+                        weight="font-bold"
+                      />
+                    )}
+                    {props.bookingdata.active == false && (
+                      <div className="inline-block bg-golden hover:bg-golden-alt search-loc hover:cursor-pointer hover:shadow boder-p rounded-full">
+                        <div className="bg-[#FEF6E9] hover:bg-golden-alt rounded-full items-center text-[#424242] md:text-lg gont-medium">
+                          <button className="block py-2 px-6 md:py-3 md:px-8">
+                            COMING SOON
+                          </button>
+                        </div>
+                      </div>
+                    )}
+                  </>
                 )}
               </div>
             </div>
@@ -115,10 +128,23 @@ const GameLocDetails = (props) => {
                   </div>
                 )}
                 {(props.publish == true || props.publish == undefined) && (
-                  <GameDtBtn
-                    bookingdata={props.bookingdata}
-                    label="DON'T GIVE IT AWAY! BOOK NOW"
-                  />
+                  <>
+                    {props.bookingdata.active == true && (
+                      <GameDtBtn
+                        bookingdata={props.bookingdata}
+                        label="DON'T GIVE IT AWAY! BOOK NOW"
+                      />
+                    )}
+                    {props.bookingdata.active == false && (
+                      <div className="inline-block bg-golden hover:bg-golden-alt search-loc hover:cursor-pointer hover:shadow boder-p rounded-full">
+                        <div className="bg-[#FEF6E9] hover:bg-golden-alt rounded-full items-center text-[#424242] md:text-lg gont-medium">
+                          <button className="block py-2 px-6 md:py-3 md:px-8">
+                            COMING SOON
+                          </button>
+                        </div>
+                      </div>
+                    )}
+                  </>
                 )}
               </div>
             </div>
@@ -171,10 +197,23 @@ const GameLocDetails = (props) => {
                   </div>
                 )}
                 {(props.publish == true || props.publish == undefined) && (
-                  <GameDtBtn
-                    bookingdata={props.bookingdata}
-                    label="LET ME AT EM! BOOK NOW"
-                  />
+                  <>
+                    {props.bookingdata.active == true && (
+                      <GameDtBtn
+                        bookingdata={props.bookingdata}
+                        label="LET ME AT EM! BOOK NOW"
+                      />
+                    )}
+                    {props.bookingdata.active == false && (
+                      <div className="inline-block bg-golden hover:bg-golden-alt search-loc hover:cursor-pointer hover:shadow boder-p rounded-full">
+                        <div className="bg-[#FEF6E9] hover:bg-golden-alt rounded-full items-center text-[#424242] md:text-lg gont-medium">
+                          <button className="block py-2 px-6 md:py-3 md:px-8">
+                            COMING SOON
+                          </button>
+                        </div>
+                      </div>
+                    )}
+                  </>
                 )}
               </div>
             </div>

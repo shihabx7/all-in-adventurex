@@ -873,7 +873,7 @@ const LocActivityData = {
         activity_cover_image:
           "/assets/all-game-list/allinadventures-locked-in-the-lift.jpg",
       },
-
+      /*
       {
         id: 13,
         activity_name: "MAGIC CASTLE",
@@ -890,7 +890,7 @@ const LocActivityData = {
         activity_cover_image:
           "/assets/all-game-list/allinadventures-magic-castle.jpg",
       },
-
+*/
       {
         id: 14,
         activity_name: "Beat The Seat",

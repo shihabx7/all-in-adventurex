@@ -1499,7 +1499,7 @@ const locPagedata = {
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg",
       },
-
+      /*
       {
         id: 13,
         category: "escapegame",
@@ -1515,7 +1515,7 @@ const locPagedata = {
         slug: "magic-castle",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg",
-      },
+      },*/
     ],
     otherphysicalgames: [
       {

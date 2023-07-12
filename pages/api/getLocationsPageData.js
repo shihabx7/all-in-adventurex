@@ -855,7 +855,7 @@ export const getLocationsPageData = () => {
               {
                 day: "friday",
                 open: "12 pm",
-                close: "8 pm",
+                close: "9 pm",
               },
               {
                 day: "saturday",
