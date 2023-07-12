@@ -658,7 +658,7 @@ const LocActivityData = {
         duration: "60",
         activity_desc:
           "Your Potions lesson will begin in 60 minutes and you have gotten locked in the headmaster's office! You must put on your thinking cap and find a way to get out in time…",
-        activity_slug: "wizarding-school ",
+        activity_slug: "wizarding-school",
         activity_cover_image:
           "/assets/all-game-list/allinadventures-wizarding-school.jpg",
       },
