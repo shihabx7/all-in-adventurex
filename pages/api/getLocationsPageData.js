@@ -1661,27 +1661,27 @@ export const getLocationsPageData = () => {
             hours: [
               {
                 day: "monday",
-                open: "4 pm",
+                open: "1 pm",
                 close: "8 pm",
               },
               {
                 day: "tuesday",
-                open: "4 pm",
+                open: "1 pm",
                 close: "8 pm",
               },
               {
                 day: "wednesday",
-                open: "4 pm",
+                open: "1 pm",
                 close: "8 pm",
               },
               {
                 day: "thursday",
-                open: "4 pm",
+                open: "1 pm",
                 close: "8 pm",
               },
               {
                 day: "friday",
-                open: "4 pm",
+                open: "1 pm",
                 close: "8 pm",
               },
               {
