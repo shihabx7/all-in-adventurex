@@ -39,14 +39,14 @@ const blogData = {
       url: "/blog/why-escape-rooms-make-a-memorable-bachelorette-party",
       metaindex: true,
       metaimg:
-        "/assets/blogs/hero-image-get-marriage-ready-by-hosting-escape-room-bachelor-party.jpg",
+        "/assets/blogs/hero-image-why-escape-rooms-make-a-memorable-bachelorette-party.jpg",
     },
     pagedata: {
       pagetitle: "WHY ESCAPE ROOMS MAKE A MEMORABLE BACHELORETTE PARTY",
       description:
         "An escape room game is a team-based activity where you and your squad will be locked in a themed room and work together to solve puzzles, riddles, and challenges to escape within a set time limit. Not only will you have a blast, but it's also the perfect opportunity to test your problem-solving skills, communication, and teamwork - all of which will come in handy in married life.",
       ftimg:
-        "/assets/blogs/hero-image-get-marriage-ready-by-hosting-escape-room-bachelor-party.jpg",
+        "/assets/blogs/hero-image-why-escape-rooms-make-a-memorable-bachelorette-party.jpg",
     },
     bloginfo: {
       authimg: "/assets/blogs/blog-auth1.png",
@@ -74,7 +74,7 @@ const blogData = {
 
       '<div class="sbl-block">',
       "<h2>A UNIQUE AND MEMORABLE EXPERIENCE TO SHARE</h2>",
-      '<p><img src="/assets/blogs/unique-and-memorable-experience-to-remember.jpg"/></p>',
+      '<p><img src="/assets/blogs/a-unique-and-memorable-experience-to-share.jpg"/></p>',
       "<p>Hosting a bachelorette party at All In Adventures escape room is a fantastic and one-of-a-kind way to celebrate with your closest gal pals. Our themed rooms offer a fun, exciting challenge that tests your problem-solving and communication skills. Working together, you and your friends will have a blast trying to escape within the set time limit.</p>",
       "<p>Say goodbye to the traditional bachelorette party, and embark on a thrilling adventure that will create memories to last a lifetime. Instead of settling for the ordinary, why not make your bachelorette party extraordinary and bond with your friends before the big day?</p>",
       '<p>Check out the unforgettable <a href="/gallery" class="text-red-600 hover:text-red-700">memories being made </a>at All In Adventures.</p>',
@@ -94,7 +94,7 @@ const blogData = {
       "</div>",
       '<div class="sbl-block">',
       "<h2>A DAY OF CELEBRATION AND PARTYING</h2>",
-      '<p><img src="/assets/blogs/a-night-of-celebration-and-partying.jpg"/></p>',
+      '<p><img src="/assets/blogs/a-day-of-celebration-and-partying.jpg"/></p>',
       "<p>Hosting a bachelorette party event at an escape room is an ideal way to kick off a day of celebration and fun. It's a thrilling and extraordinary experience that will make a lasting impression on you and your friends.</p>",
       "<p>Not only will you enjoy working with your best girls to solve puzzles and challenges, but you'll also have the opportunity to bond with them and create unforgettable memories.</p>",
       "<p>Starting your celebration with a high-energy escape game sets the tone for an exciting day of celebration and adventure. After finishing the escape room, the night is yours to keep the party going and make it a night you'll never forget.</p>",
@@ -115,7 +115,7 @@ const blogData = {
 
       '<div class="sbl-block">',
       "<h2>LET LOOSE IN A SAFE AND CONTROLLED ENVIRONMENT</h2>",
-      '<p><img src="/assets/blogs/safe-and-controlled-environment-to-let-loose.jpg"/></p>',
+      '<p><img src="/assets/blogs/let-loose-in-a-safe-and-controlled-environment.jpg"/></p>',
       "<p>At an escape room bachelorette party, you and your friends can enjoy a thrilling and unforgettable experience without the risks associated with traditional bachelorette party activities. Instead of bar hopping or engaging in activities that could lead to harm, an escape room provides a safe and controlled environment where you can let your hair down and have fun.</p>",
 
       "<p>In addition to being safer, an escape room is an excellent way to challenge your problem-solving skills and bond with your friends while creating lasting memories. So, avoid the scandals, let your inner party animal out, and enjoy an exciting and unique bachelorette party that you and your friends will cherish for years to come!</p>",
@@ -140,7 +140,7 @@ const blogData = {
       "</div>",
       '<div class="sbl-block">',
       "<h2>CUSTOMIZABLE EXPERIENCE FOR THE BRIDE-TO-BE</h2>",
-      '<p><img src="/assets/blogs/customizable-experience-for-the-groom-to-be.jpg"/></p>',
+      '<p><img src="/assets/blogs/customizable-experience-for-the-bride-to-be.jpg"/></p>',
       "<p>That's right! All In Adventures offers a range of customizable options to help make your bachelorette party experience unforgettable. Whether you want to surprise the bachelorette with a special message or add unique challenges to the escape room game, the staff is happy to work with you to make it happen. </p>",
       "<p>With our years of expertise and creativity, you can create a one-of-a-kind custom adventure that will be talked about for years to come.</p>",
       '<p>Don&prime;t hesitate to drop your <a href="/events/bachelorette-party#eventform" class="text-red-600 hover:text-red-700">inquiries</a></p>',
@@ -576,6 +576,169 @@ const blogData = {
 
       '<p>Click the <b>"BOOK GAMES"</b> button and choose your location to get an instant online booking for a group of 2-10 people.</p>',
       '<p><a href="/events" class="text-red-600 hover:text-red-700">Planning an event</a> with a large group of over 10 people? We\'ve got you covered! Contact one of our <a href="/locations" class="text-red-600 hover:text-red-700">local stores</a>, and we will take you through the process and get you our special deals.</p>',
+
+      "</div>",
+    ],
+    relatedblogdata: [
+      {
+        id: "1",
+        slug: "what-kind-of-leaf-is-this",
+        ftimg: "/assets/blogs/blog-ft.jpg",
+        title: "What kind of leaf is this?",
+        blogdesc:
+          "You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+        authimg: "/assets/blogs/blog-auth1.png",
+        authname: "by Brian Capps",
+        blogcategory: [
+          {
+            id: "1",
+            name: "Escape Room",
+            slug: "escape-room",
+          },
+        ],
+        lastupdate: "April 02, 2022",
+      },
+      {
+        id: "2",
+        slug: "what-kind-of-leaf-is-this",
+        ftimg: "/assets/blogs/blog-ft.jpg",
+        title: "1. What kind of leaf is this What kind of leaf is this?",
+        blogdesc:
+          "You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+        authimg: "/assets/blogs/blog-auth1.png",
+        authname: "by Brian Capps",
+        blogcategory: [
+          {
+            id: "1",
+            name: "Escape Room",
+            slug: "escape-room",
+          },
+          {
+            id: "2",
+            name: "Team Building",
+            slug: "team-building",
+          },
+        ],
+        lastupdate: "May 18, 2022",
+      },
+    ],
+  },
+  "get-marriage-ready-by-hosting-escape-room-bachelor-party": {
+    pagemeta: {
+      title: "GET MARRIAGE READY BY HOSTING ESCAPE ROOM BACHELOR PARTY",
+      description:
+        "An escape room is a team-based activity where you and your Bachelor Party squad will be seemingly &quote;locked&quote; in your themed room of choice and must solve a series of puzzles, riddles, and challenges to escape within a set time limit. It's perfect for testing your problem-solving skills, communication, and teamwork, which will &quote;prep you up&quote; for married life.",
+      keywords:
+        "escape room blog, all in adventures blog, mystery room blog, escape room news, all in adventures news, mystery room articles,",
+      url: "/blog/get-marriage-ready-by-hosting-escape-room-bachelor-party",
+      metaindex: true,
+      metaimg:
+        "/assets/blogs/hero-image-get-marriage-ready-by-hosting-escape-room-bachelor-party.jpg",
+    },
+    pagedata: {
+      pagetitle: "WHY ESCAPE ROOMS MAKE A MEMORABLE BACHELORETTE PARTY",
+      description:
+        "An escape room is a team-based activity where you and your Bachelor Party squad will be seemingly &quote;locked&quote; in your themed room of choice and must solve a series of puzzles, riddles, and challenges to escape within a set time limit. It's perfect for testing your problem-solving skills, communication, and teamwork, which will &quote;prep you up&quote; for married life.",
+      ftimg:
+        "/assets/blogs/hero-image-get-marriage-ready-by-hosting-escape-room-bachelor-party.jpg",
+    },
+    bloginfo: {
+      authimg: "/assets/blogs/blog-auth1.png",
+      authname: "Brian Capps",
+      popular: true,
+      blogcategory: [
+        {
+          id: "1",
+          name: "Escape Room",
+          slug: "escape-room",
+        },
+      ],
+      createdate: "july 06, 2023",
+      lastupdate: "july 06, 2023",
+    },
+    blogdesc: [
+      '<div class="sbl-block">',
+      "<p>An escape room is a team-based activity where you and your Bachelor Party squad will be seemingly &quote;locked&quote; in your themed room of choice and must solve a series of puzzles, riddles, and challenges to escape within a set time limit. It's perfect for testing your problem-solving skills, communication, and teamwork, which will &quote;prep you up&quote; for married life.</p>",
+      // '<p><img src="/assets/blogs/unique-and-memorable-experience-to-remember.jpg"/></p>',
+      '<p>Get to know <a href="/what-is-an-escape-room" class="text-red-600 hover:text-red-700">what an escape room is</a> if you&prime;re unfamiliar with it.</p>',
+      '<p>At All In Adventures, we have a <a href="/activities" class="text-red-600 hover:text-red-700">variety of thrilling themes</a>, such as Treasure Island, Hollywood Premiere, and Special Agent, that are perfect for creating an unforgettable team-building experience. Use our private party room before or after the game, enjoy our catering options, or bring your own snacks. Our escape rooms provide an excellent opportunity for a fun day out with your bachelor party squad and celebrate your last day as a carefree bachelor with a boom!</p>',
+      "<p>Escape rooms are a trendy, unique, and memorable means to celebrate bachelor party events. It prepares you for the hardships of married life by encouraging group participation and promoting communication, collaboration, and individual strengths. The high-pressure environment enhances skills on multiple levels as you have an absolute blast with your bachelor squad. So gather your team, book an escape room, and prepare for an unforgettable bachelor party!</p>",
+      '<p>Click here to <a href="/events/bachelor-party" class="text-red-600 hover:text-red-700">learn more and book your Bachelor Party event</a> </p>',
+      "<p>Read on to discover why so many bachelors are choosing escape rooms to host their big Bachelor Party event...</p>",
+      "<div>",
+      "<h3>1. UNIQUE AND MEMORABLE EXPERIENCE TO REMEMBER</h3>",
+      '<p><img src="/assets/blogs/unique-and-memorable-experience-to-remember.jpg"/></p>',
+      "<p>Hosting a bachelor party at All In Adventures escape room is a unique and unforgettable experience you and your friends will cherish for years. With exciting themed rooms designed to challenge your problem-solving skills and test your communication and collaboration, you and your friends will have an incredible time working together to escape within the set time limit. </p>",
+      "<p>It is not your typical bachelor party celebration but an adventure that will create memories to last a lifetime. So why settle for the same old bachelor party when you can have a truly extraordinary experience and bond with your buddies before the big day!</p>",
+      '<p>Check out the unforgettable <a href="/gallery" class="text-red-600 hover:text-red-700">memories being made</a> at All In Adventures.</p>',
+      "</div>",
+      "<div>",
+      "<h3>2. BOND WITH YOUR FRIENDS AND WORK TOGETHER </h3>",
+      "<p>Hosting a bachelor party event at an escape room is a great way to bond with friends. You'll work together as a team towards a common goal; escaping the room before time runs out. The puzzles and challenges you'll face will require collaboration and communication, making it an excellent opportunity to strengthen the bond with your closest friends. </p>",
+      "<p>Plus, you'll have a blast solving puzzles, cracking codes, and finding clues, creating memories you and your friends will never forget.</p>",
+      "</div>",
+      "<div>",
+      "<h3>3. CHALLENGE YOUR PROBLEM-SOLVING SKILLS IN A FUN WAY</h3>",
+      // '<p><img src="/assets/blogs/many-interesting-themes.jpg"/></p>',
+      "<p>At All In Adventures' escape rooms, you and your friends will have the opportunity to challenge your problem-solving skills in a fun and exciting manner. This thrilling experience will test your ability to work together while strengthening your bond among your teammates. </p>",
+      "<p>Solving puzzles, deciphering clues, and racing against time to escape the room, all while laughing and having the time of your life, it&prime;s an unforgettable and exciting adventure that you and your friends will cherish forever.</p>",
+
+      "</div>",
+      "<div>",
+      "<h3>4. A NIGHT OF CELEBRATION AND PARTYING</h3>",
+      '<p><img src="/assets/blogs/a-night-of-celebration-and-partying.jpg"/></p>',
+      "<p>Hosting a bachelor party event at an escape room is a perfect way to start off a night of celebration and partying. It's an exciting and unique experience that will leave a lasting impression on you and your friends.</p>",
+      "<p>Not only will you have fun solving puzzles and challenges, but you'll also have the opportunity to bond with your friends and give them and yourself a night to remember. </p>",
+      "<p>It's a great way to start the party and set the tone for the rest of the night. After playing a heart-pumping escape game, the night is still young for you and your friends to party on and make it one of the most exciting nights of your life.</p>",
+      "</div>",
+      "<div>",
+      "<h3>5. TRY SOMETHING NEW AND BREAK OUT OF THE MOLD</h3>",
+
+      "<p>Hosting a bachelor party at an escape room is the perfect way to break away from the traditional bachelor party activities and mix things up with something new. Rather than getting involved in the usual bar hopping and strip clubs, you and your friends can work together, think creatively, and solve puzzles in an exciting and challenging environment.</p>",
+      "<p>The very novelty and individuality of this experience will surely make it a memorable night for you and your friends for years to come.</p>",
+      "</div>",
+      "</div>",
+      '<div class="sbl-block">',
+      //  "<h2>THERE ARE MORE REASONS WHY ESCAPE ROOMS ARE SO POPULAR IN 2023</h2>",
+      //'<p><img src="/assets/blogs/a-brief-history.jpg"/></p>',
+
+      "<div>",
+      "<h3>6. RELATIVELY VERY AFFORDABLE BACHELOR PARTY OPTION</h3>",
+      "<p>Planning a bachelor party can be stressful, especially considering the cost of popular options like trips abroad, expensive dinners, or hiring private entertainment. However, hosting an escape room bachelor party at All In Adventures is not only more affordable, but also a more exciting and memorable activity. </p>",
+      "<p>While those other options may be flashy, they lack the team-building, problem-solving, distinctiveness, and memorable aspects that an escape room offers. Challenge yourself and your friends and celebrate the last night of your bachelor life in a fun and interactive way that won't break the bank, and you can save up for your honeymoon.</p>",
+      '<p>Check out our <a href="/events/bachelor-party" class="text-red-600 hover:text-red-700">affordable Bachelor Party option</a></p>',
+
+      "</div>",
+      "<div>",
+      "<h3>7. SAFE AND CONTROLLED ENVIRONMENT TO LET LOOSE</h3>",
+      '<p><img src="/assets/blogs/safe-and-controlled-environment-to-let-loose.jpg"/></p>',
+      "<p>At an escape room bachelor party, you and your friends can let loose and have a great time in a safe and controlled environment. Compared to traditional bachelor party activities that may involve excessive drinking or danger, an escape room offers a more fun and exciting alternative without scandals. </p>",
+      "<p>Not only is it safer, but it's also a great way to challenge yourself and your friends while making memories. So don't be afraid to let your party animal out.</p>",
+
+      "</div>",
+      "<div>",
+      "<h3>8. CHOOSE FROM VARIOUS THEMED ROOMS</h3>",
+      "<p>At All In Adventures, you&prime;ll have the opportunity to choose from a variety of themed rooms to match your interests and preferences. Whether you&prime;re a fan of mysteries, horror, adventure, or action, there&prime;s a themed room that will captivate your attention and challenge your problem-solving skills. </p>",
+      "<p>You can immerse yourself in the world of spies, superheroes, pirates, or wizards and work together with your friends to uncover clues, solve puzzles, and escape. With so many different themes, you can try something new and exciting every time you are to visit All In Adventures.</p>",
+      '<p>Check out all our <a href="/activities" class="text-red-600 hover:text-red-700">exciting themed rooms</a></p>',
+      "</div>",
+      "<div>",
+      "<h3>9. PROFESSIONAL AND FRIENDLY STAFF TO GUIDE THE EVENT</h3>",
+      "<p>At All In Adventures, you can rest assured that you'll have a fantastic time with a professional and friendly staff to guide you through the escape room experience. They'll provide you with a thorough briefing before the game and be available to answer any questions or provide assistance during the game.</p>",
+      "<p>Staff will ensure that everything runs smoothly and safely, so you can focus on enjoying your last night as a bachelor to the fullest. They&prime;ll also help create a fun and exciting atmosphere that will keep you and your friends engaged and entertained throughout the game.</p>",
+
+      "</div>",
+      "<div>",
+      "<h3>10. CUSTOMIZABLE EXPERIENCE FOR THE GROOM-TO-BE</h3>",
+      '<p><img src="/assets/blogs/customizable-experience-for-the-groom-to-be.jpg"/></p>',
+      "<p>At All In Adventures, you can customize your bachelor party experience and add special surprises or challenges to make the night unforgettable. The professional and friendly staff will work with you to create a unique and personalized adventure, tailored upon request, so the bachelor and his friends can have an extra special time. </p>",
+      "<p>Whether adding custom decorations, incorporating inside jokes, or even orchestrating a surprise, the staff at All In Adventures is happy to work with you to make the experience truly one-of-a-kind.</p>",
+      '<p>Don&prime;t hesitate to <a href="/events/bachelor-party#eventform" class="text-red-600 hover:text-red-700">drop your inquiries.</a></p>',
+      '<p>Congratulations! You have discovered the ideal way to host a Bachelor Party and make it memorable for the groom-to-be and friends. All In Adventures offers a <a href="/activities" class="text-red-600 hover:text-red-700">variety of themed escape rooms</a> perfect for challenging your problem-solving abilities, communication skills, and team spirit while everyone has a blast!</p>',
+      '<p>Explore <a href="/events" class="text-red-600 hover:text-red-700">all the fun and exciting events</a> you can host at All In Adventures, </p>',
+      "<p>Whether you are the best man, a close friend or the groom-to-be, hosting your bachelor party at All In Adventures will help you create an exciting and memorable event that you can&prime;t help but love.</p>",
+      '<p>Don&primr;t miss out on this opportunity to make your bachelor party the best it can be. <a href="/events/bachelor-party" class="text-red-600 hover:text-red-700">Book your bachelor party event</a>. at All In Adventures today and prepare for an adventure you&prime;ll never forget!</p>',
+      "</div>",
 
       "</div>",
     ],

@@ -45,6 +45,11 @@ export const getBlogSlug = () => {
       title: "WHY ARE ESCAPE ROOMS GREAT FOR HOLIDAY PARTIES",
       slug: "why-are-escape-rooms-great-for-holiday-parties",
     },
+    {
+      id: 10,
+      title: "GET MARRIAGE READY BY HOSTING ESCAPE ROOM BACHELOR PARTY",
+      slug: "get-marriage-ready-by-hosting-escape-room-bachelor-party",
+    },
   ];
   return blogSlug;
 };
