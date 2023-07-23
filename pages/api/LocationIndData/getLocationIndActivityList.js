@@ -1161,7 +1161,7 @@ const LocActivityData = {
       },
 
       {
-        id: 6,
+        id: 5,
         activity_name: "Superhero's Adventure",
         activity_type: "In-person",
         activity_category: "escapegame",
@@ -1177,7 +1177,24 @@ const LocActivityData = {
           "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
       },
       {
-        id: 14,
+        id: 9,
+        activity_name: "Axe Throwing",
+        activity_type: "In-person",
+        activity_category: "other",
+        age: "All Ages (13+)",
+        groupcat: "Per Lane",
+        min_player: "2",
+        max_player: "4",
+        price: "23.89",
+        duration: "60",
+        activity_desc:
+          "Having a bad day? Don't worry! We have an awesome way to burn off that negativity and get you back to your stress-free fun self! Come throw some axes at our exciting interactive targets with your friends and family!",
+        activity_slug: "axe-throwing",
+        activity_cover_image:
+          "/assets/all-game-list/allinadventures-axe-throwing.jpg",
+      },
+      {
+        id: 6,
         activity_name: "Beat The Seat",
         activity_type: "In-person",
         activity_category: "other",
@@ -1193,7 +1210,7 @@ const LocActivityData = {
           "/assets/all-game-list/allinadventures-beat-the-seat.jpg",
       },
       {
-        id: 15,
+        id: 7,
         activity_name: "Game Show Room",
         activity_type: "In-person",
         activity_category: "other",
@@ -1210,7 +1227,7 @@ const LocActivityData = {
       },
 
       {
-        id: 17,
+        id: 8,
         activity_name: "Virtual game show room",
         activity_type: "Virtual",
         activity_category: "other",

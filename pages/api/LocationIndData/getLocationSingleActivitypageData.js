@@ -113,10 +113,15 @@ export const getLocationSingleActivitypageData = (gameslug, locationslug) => {
     //"pagemeta":activityDataset[gameslug].pagemeta,
     pagemeta: {
       title: capCity(activityDataset[gameslug].pagemeta.title, locationslug),
-      description: capMall(
-        activityDataset[gameslug].pagemeta.description,
-        malldata.pagedata.mall
-      ),
+      description: activityGuest[locationslug][gameslug].pagesubtitle
+        ? capMall(
+            activityGuest[locationslug][gameslug].pagesubtitle,
+            malldata.pagedata.mall
+          )
+        : capMall(
+            activityDataset[gameslug].pagesubtitle,
+            malldata.pagedata.mall
+          ),
       keywords: lowCity(
         activityDataset[gameslug].pagemeta.keywords,
         locationslug
@@ -131,7 +136,9 @@ export const getLocationSingleActivitypageData = (gameslug, locationslug) => {
         activityDataset[gameslug].activityname +
         " " +
         salt(activityDataset[gameslug].activitydata.category),
-      pagesubtitle: activityDataset[gameslug].pagesubtitle,
+      pagesubtitle: activityGuest[locationslug][gameslug].pagesubtitle
+        ? activityGuest[locationslug][gameslug].pagesubtitle
+        : activityDataset[gameslug].pagesubtitle,
       publish_status: getLocTotal(locationslug).publish_status,
       totalLocation: "28",
       coverimageL: activityDataset[gameslug].coverimageL,
@@ -3091,6 +3098,14 @@ const activityGuest = {
       min_players: 1,
     },
     //============================================beat-the-seat end 17
+    //============================================axe-throwing 16
+    "axe-throwing": {
+      max_players: 4,
+      min_players: 2,
+      pagesubtitle:
+        "Come throw axes at our exciting interactive targets with your friends and family! Test your hand-eye coordination and see if you can hit a bull's eye. We can accommodate up to 64 players on the 16 lanes.",
+    },
+    //============================================axe-throwing e
   },
   //=========================================================west-nyack-ny end
   //=========================================================poughkeepsie-ny list

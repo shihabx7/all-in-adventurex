@@ -365,20 +365,26 @@ const datalist = {
       activity_slug: "zombie-apocalypse",
     },
     {
-      id: 7,
+      id: 5,
       category: "escapegame",
       activity_name: "Sherlock's Library",
       activity_slug: "sherlocks-library",
     },
     {
-      id: 17,
+      id: 8,
+      category: "other",
+      activity_name: "Axe Throwing",
+      activity_slug: "axe-throwing",
+    },
+    {
+      id: 6,
       category: "other",
       activity_name: "Beat the Seat",
       activity_slug: "beat-the-seat",
     },
 
     {
-      id: 15,
+      id: 7,
       category: "other",
       activity_name: "Game Show Room",
       activity_slug: "game-show-room",

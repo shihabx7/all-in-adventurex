@@ -2116,6 +2116,23 @@ const locPagedata = {
     ],
     otherphysicalgames: [
       {
+        id: 4,
+        category: "other",
+        type: "In-Person",
+        title: "Axe Throwing",
+        groupcat: "Per Lane",
+        description:
+          "Having a bad day? Don't worry! Come throw some axes at our exciting interactive targets with your friends and family!",
+        age: "All Ages (13+)",
+        duration: "60",
+        maxplayers: "4",
+        minplayers: "2",
+        price: "23.89",
+        slug: "axe-throwing",
+        bgimg:
+          "/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg",
+      },
+      {
         id: 1,
         category: "other",
         type: "In-Person",

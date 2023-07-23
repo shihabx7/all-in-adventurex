@@ -23,7 +23,7 @@ const GameLocDetails = (props) => {
           )}
 
           <div className="game-dt-row max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
-            <div className="gme-dt-col order-2 md:order-1 md:w-[49%] lg:w-[45%]">
+            <div className="gme-dt-col order-2 md:order-1 md:w-[49%] lg:w-[45%] relative z-20">
               <div className="game-dt-title">
                 <p className="md:text-lg text-[#938056] md:mb-1 uppercase">
                   {props.activityname}
@@ -97,7 +97,7 @@ const GameLocDetails = (props) => {
             <div className="game-dt-col md:w-[48%] lg:w-[45%]  mb-4 md:mb-0 ">
               <img src={props.activitydata.sceneimg}></img>
             </div>
-            <div className="gme-dt-col md:w-[48%] lg:w-[45%]">
+            <div className="gme-dt-col md:w-[48%] lg:w-[45%] relative z-30">
               <div className="game-dt-title">
                 <p className="md:text-lg text-[#938056] md:mb-1 uppercase">
                   {props.activityname}
@@ -166,7 +166,7 @@ const GameLocDetails = (props) => {
             ></img>
           </div>
           <div className="game-dt-row max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 relative z-30">
-            <div className="gme-dt-col order-2 md:order-1 md:w-[48%] lg:w-[45%]">
+            <div className="gme-dt-col order-2 md:order-1 md:w-[48%] lg:w-[45%] relative z-30">
               <div className="game-dt-title">
                 <p className="md:text-lg text-[#938056] md:mb-1 uppercase">
                   {props.activityname}

@@ -24,7 +24,7 @@ const GameDetails = (props) => {
           )}
 
           <div className="game-dt-row max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
-            <div className="gme-dt-col order-2 md:order-1 md:w-[49%] lg:w-[45%]">
+            <div className="gme-dt-col order-2 md:order-1 md:w-[49%] lg:w-[45%] relative z-20">
               <div className="game-dt-title">
                 <p className="md:text-lg text-[#938056] md:mb-1 uppercase">
                   {props.activityname}
