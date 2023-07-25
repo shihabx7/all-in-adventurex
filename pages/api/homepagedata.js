@@ -286,8 +286,7 @@ export const Homepagedata = () => {
         minplayers: "2",
         price: "23.89",
         slug: "axe-throwing",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-axe-throwing-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/axe-throwing.jpg",
       },
       {
         id: 4,
