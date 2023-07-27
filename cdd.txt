@@ -40,3 +40,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T28HX9S"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+<p className="mt-4 lg:text-lg">
+ <b>MYSTERY ROOM ONLY:</b> Earn up to 50 bonus points by
+  completing our Time Challenge!
+    </p>
+                <ul className="star-list pl-4 text-[#464646] mt-4">
+                  <li className="lg:text-lg my-2 md:my-3 ">
+                    Gold (50 Points): Complete your room with 28 minutes or more
+                    remaining!
+                  </li>
+                  <li className="lg:text-lg my-2 md:my-3 ">
+                    Silver (35 Points): Complete your room between 18 and 28
+                    minutes remaining.
+                  </li>
+                  <li className="lg:text-lg my-2 md:my-3 ">
+                    Bronze (25 Points): Complete your room with less than 18
+                    minutes remaining.
+                  </li>
+                </ul>

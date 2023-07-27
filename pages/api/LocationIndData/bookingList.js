@@ -434,9 +434,9 @@ const blist = {
       flow: "17839",
     },
     "axe-throwing": {
-      active: false,
-      item: "399794",
-      flow: "365583",
+      active: true,
+      item: "476830",
+      flow: "17839",
     },
     "gift-card": { active: true, type: "gift", item: "360213", flow: "no" },
     "gift-addon": {
