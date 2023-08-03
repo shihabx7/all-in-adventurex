@@ -33,10 +33,22 @@ const EarningPoints = () => {
                   Earn bonus points when you achieve the following:
                 </h3>
 
+                <p className="mt-4 lg:text-lg">
+                  <b>MYSTERY ROOM ONLY:</b> Earn up to 50 bonus points by
+                  completing our Time Challenge!
+                </p>
                 <ul className="star-list pl-4 text-[#464646] mt-4">
                   <li className="lg:text-lg my-2 md:my-3 ">
-                    150 bonus points for beating the quarterly Global Wall of
-                    Fame record
+                    Gold (50 Points): Complete your room with 28 minutes or more
+                    remaining!
+                  </li>
+                  <li className="lg:text-lg my-2 md:my-3 ">
+                    Silver (35 Points): Complete your room between 18 and 28
+                    minutes remaining.
+                  </li>
+                  <li className="lg:text-lg my-2 md:my-3 ">
+                    Bronze (25 Points): Complete your room with less than 18
+                    minutes remaining.
                   </li>
                 </ul>
               </div>
