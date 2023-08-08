@@ -1241,7 +1241,7 @@ const blogData = {
     bloginfo: {
       authimg: "/assets/blogs/blog-auth1.png",
       authname: "Brian Capps",
-      popular: false,
+      popular: true,
       blogcategory: [
         {
           id: "1",
