@@ -40,7 +40,7 @@ const BlogCat = (props) => {
       <div className="box flex items-center justify-center">
         <div className="all-blogs h-[44px]  my-2">
           <a
-            href="/blogs"
+            href="/blog"
             className="block blog-cat-item bg-[#FFF3D8] px-4 md:px-6 lg:px-8 py-2 text-[#464646] font-medium"
           >
             ALL
@@ -60,7 +60,7 @@ const BlogCat = (props) => {
               return (
                 <a
                   key={item.id}
-                  href={"/blog/" + item.slug}
+                  href={"/blog/category/?category=" + item.slug}
                   className="inline-block bl-cat-item blog-cat-item  bg-[#FFF3D8] px-4 md:px-6 py-2 text-[#464646]"
                 >
                   {item.cat}

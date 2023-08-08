@@ -28,6 +28,258 @@ export const getSingleBlogData = (slug) => {
   return getSingleBlog;
 };
 
+export const getAllBlogSlug = () => {
+  let keys = Object.keys(blogData);
+  let sluglist = [];
+  for (let i = 0; i < keys.length; i++) {
+    let blist = {
+      id: i,
+      slug: keys[i],
+    };
+    sluglist.push(blist);
+  }
+  return sluglist;
+};
+
+// search related blog
+const searchRelBlogs = (catslug, blogslug) => {
+  let cnt = 0;
+  let relData = [];
+  let blogArr = Object.values(blogData);
+
+  for (let i = 0; i < blogArr.length; i++) {
+    if (blogArr[i].pagemeta.url != blogslug) {
+      let catMacth = blogArr[i].bloginfo.blogcategory;
+      if (cnt < 2) {
+        catMacth.forEach((item) => {
+          if (catslug == item.slug) {
+            let matchBlogData = {
+              id: cnt + 1,
+              slug: blogArr[i].pagemeta.url,
+              ftimg: blogArr[i].pagedata.ftimg,
+              title: blogArr[i].pagedata.pagetitle,
+              blogdesc: blogArr[i].pagedata.description,
+
+              authimg: blogArr[i].bloginfo.authimg,
+              authname: blogArr[i].bloginfo.authname,
+              blogcategory: blogArr[i].bloginfo.blogcategory,
+              lastupdate: blogArr[i].bloginfo.lastupdate,
+            };
+            relData.push(matchBlogData);
+            cnt++;
+          }
+        });
+      } else {
+        break;
+      }
+    }
+  }
+
+  return relData;
+};
+// search latest 2 blogs
+const getLatestRelBlogs = () => {
+  let relBlogs = [];
+  let blogArr = Object.values(blogData);
+  for (let i = 0; i < 2; i++) {
+    let matchBlogData = {
+      id: i + 1,
+      slug: blogArr[i].pagemeta.url,
+      ftimg: blogArr[i].pagedata.ftimg,
+      title: blogArr[i].pagedata.pagetitle,
+      blogdesc: blogArr[i].pagedata.description,
+
+      authimg: blogArr[i].bloginfo.authimg,
+      authname: blogArr[i].bloginfo.authname,
+      blogcategory: blogArr[i].bloginfo.blogcategory,
+      lastupdate: blogArr[i].bloginfo.lastupdate,
+    };
+    relBlogs.push(matchBlogData);
+  }
+
+  return relBlogs;
+};
+
+// get related blog
+export const getRelatedBlogs = (slug) => {
+  let relBlog = [];
+  let bc = blogData[slug].bloginfo.blogcategory;
+
+  bc.forEach((el) => {
+    let resBlog = searchRelBlogs(el.slug, slug);
+    if (resBlog.length > 0) {
+      relBlog = relBlog.concat(resBlog);
+    }
+  });
+  if (relBlog.length < 1) {
+    let resblogs = getLatestRelBlogs();
+    relBlog = relBlog.concat(resblogs);
+  }
+  if (relBlog.length > 2) {
+    for (let i = 0; i < relBlog.length; i++) {
+      if ((i + 1) % 2 == 0) {
+        relBlog = relBlog.splice(i, 1);
+      }
+    }
+  }
+
+  return relBlog;
+};
+
+// recent blogs
+export const recentBlogs = () => {
+  let ctBlogkey = Object.keys(blogData);
+  let rblog = [];
+  for (let i = 0; i < 2; i++) {
+    let rblogobj = {
+      id: i + 1,
+      slug: ctBlogkey[i],
+      ftimg: blogData[ctBlogkey[i]].pagedata.ftimg,
+      title: blogData[ctBlogkey[i]].pagedata.pagetitle,
+      blogdesc: blogData[ctBlogkey[i]].pagedata.description,
+      authimg: blogData[ctBlogkey[i]].bloginfo.authimg,
+      authname: blogData[ctBlogkey[i]].bloginfo.authname,
+      blogcategory: blogData[ctBlogkey[i]].bloginfo.blogcategory,
+      lastupdate: blogData[ctBlogkey[i]].bloginfo.lastupdate,
+    };
+    rblog.push(rblogobj);
+  }
+
+  return rblog;
+};
+
+// popular blogs
+export const popularBlogs = () => {
+  let ctBlogkey = Object.keys(blogData);
+  let rblog = [];
+  for (let i = 0; i < 4; i++) {
+    if (blogData[ctBlogkey[i]].bloginfo.popular) {
+      let rblogobj = {
+        id: i + 1,
+        slug: ctBlogkey[i],
+        ftimg: blogData[ctBlogkey[i]].pagedata.ftimg,
+        title: blogData[ctBlogkey[i]].pagedata.pagetitle,
+        blogdesc: blogData[ctBlogkey[i]].pagedata.description,
+        authimg: blogData[ctBlogkey[i]].bloginfo.authimg,
+        authname: blogData[ctBlogkey[i]].bloginfo.authname,
+        blogcategory: blogData[ctBlogkey[i]].bloginfo.blogcategory,
+        lastupdate: blogData[ctBlogkey[i]].bloginfo.lastupdate,
+      };
+      rblog.push(rblogobj);
+    }
+  }
+  return rblog;
+};
+// all blogs first 4
+export const homeAllBlogs = () => {
+  let ctBlogkey = Object.keys(blogData);
+  let rblog = [];
+  for (let i = 2; i < 6; i++) {
+    let rblogobj = {
+      id: i + 1,
+      slug: ctBlogkey[i],
+      ftimg: blogData[ctBlogkey[i]].pagedata.ftimg,
+      title: blogData[ctBlogkey[i]].pagedata.pagetitle,
+      blogdesc: blogData[ctBlogkey[i]].pagedata.description,
+      authimg: blogData[ctBlogkey[i]].bloginfo.authimg,
+      authname: blogData[ctBlogkey[i]].bloginfo.authname,
+      blogcategory: blogData[ctBlogkey[i]].bloginfo.blogcategory,
+      lastupdate: blogData[ctBlogkey[i]].bloginfo.lastupdate,
+    };
+    rblog.push(rblogobj);
+  }
+  return rblog;
+};
+// get prev 4 blogs
+
+export const getPrevBlogs = (pageid) => {
+  let rblog = [];
+  let keys = Object.keys(blogData);
+  //console.log(keys);
+  let start = pageid * 4 + 2;
+  let end = start + 4;
+  if (start > keys.length) {
+    return false;
+  }
+  if (pageid < 2) {
+    for (let i = 6; i < 10; i++) {
+      let rblogobj = {
+        id: i + 1,
+        slug: keys[i],
+        ftimg: blogData[keys[i]].pagedata.ftimg,
+        title: blogData[keys[i]].pagedata.pagetitle,
+        blogdesc: blogData[keys[i]].pagedata.description,
+        authimg: blogData[keys[i]].bloginfo.authimg,
+        authname: blogData[keys[i]].bloginfo.authname,
+        blogcategory: blogData[keys[i]].bloginfo.blogcategory,
+        lastupdate: blogData[keys[i]].bloginfo.lastupdate,
+      };
+      rblog.push(rblogobj);
+    }
+    return rblog;
+  } else {
+    for (let i = start; i < end; i++) {
+      if (i + 1 > keys.length) {
+        break;
+      }
+      let rblogobj = {
+        id: i + 1,
+        slug: keys[i],
+        ftimg: blogData[keys[i]].pagedata.ftimg,
+        title: blogData[keys[i]].pagedata.pagetitle,
+        blogdesc: blogData[keys[i]].pagedata.description,
+        authimg: blogData[keys[i]].bloginfo.authimg,
+        authname: blogData[keys[i]].bloginfo.authname,
+        blogcategory: blogData[keys[i]].bloginfo.blogcategory,
+        lastupdate: blogData[keys[i]].bloginfo.lastupdate,
+      };
+      rblog.push(rblogobj);
+    }
+    return rblog;
+  }
+};
+// 8 blogs for cat
+
+const catmatchblog = (catslug, catarr) => {
+  let mf = 0;
+  for (let i = 0; i < catarr.length; i++) {
+    if (catarr[i].slug == catslug) {
+      mf++;
+    }
+  }
+
+  if (mf > 0) {
+    return true;
+  }
+  return false;
+};
+export const getCatHomeBlogs = (catslug) => {
+  let rblog = [];
+  let keys = Object.keys(blogData);
+  let counter = 1;
+  for (let i = 0; i < keys.length; i++) {
+    if (counter == 8) {
+      break;
+    }
+    if (catmatchblog(catslug, blogData[keys[i]].bloginfo.blogcategory)) {
+      let rblogobj = {
+        id: i + 1,
+        slug: keys[i],
+        ftimg: blogData[keys[i]].pagedata.ftimg,
+        title: blogData[keys[i]].pagedata.pagetitle,
+        blogdesc: blogData[keys[i]].pagedata.description,
+        authimg: blogData[keys[i]].bloginfo.authimg,
+        authname: blogData[keys[i]].bloginfo.authname,
+        blogcategory: blogData[keys[i]].bloginfo.blogcategory,
+        lastupdate: blogData[keys[i]].bloginfo.lastupdate,
+      };
+      rblog.push(rblogobj);
+    }
+  }
+  return rblog;
+};
+export const getPrevCatBlogs = (catslug, pageid) => {};
+// blog data
 const blogData = {
   "why-escape-rooms-make-a-memorable-bachelorette-party": {
     pagemeta: {
@@ -36,7 +288,7 @@ const blogData = {
         "An escape room game is a team-based activity where you and your squad will be locked in a themed room and work together to solve puzzles, riddles, and challenges to escape within a set time limit. Not only will you have a blast, but it's also the perfect opportunity to test your problem-solving skills, communication, and teamwork - all of which will come in handy in married life.",
       keywords:
         "bachelorette party,customizable bachelorette party, play an escape room,book bachelorette party, escape room news, all in adventures articles,",
-      url: "/blog/why-escape-rooms-make-a-memorable-bachelorette-party",
+      url: "why-escape-rooms-make-a-memorable-bachelorette-party",
       metaindex: true,
       metaimg:
         "/assets/blogs/hero-image-why-escape-rooms-make-a-memorable-bachelorette-party.jpg",
@@ -56,7 +308,7 @@ const blogData = {
         {
           id: "1",
           name: "Enent & parties",
-          slug: "escape-room",
+          slug: "event-and-parties",
         },
       ],
       createdate: "july 02, 2023",
@@ -206,7 +458,7 @@ const blogData = {
         "When the holidays are upon us, we all seek an escape from our regular routine to relax and have an enjoyable time with our loved ones and co-workers. If you find that merely going out and having dinner with your family or spending your holiday at another cliche corporate party is just as mundane as your regular routine, playing an escape room game might be just what you are looking for! ",
       keywords:
         "holiday party,customizable holiday party, play an escape room,book holiday party, escape room news, all in adventures articles,",
-      url: "/blog/why-are-escape-rooms-great-for-holiday-parties",
+      url: "why-are-escape-rooms-great-for-holiday-parties",
       metaindex: true,
       metaimg:
         "/assets/blogs/hero-image-why-are-escape-rooms-great-for-holiday-parties.jpg",
@@ -221,12 +473,12 @@ const blogData = {
     bloginfo: {
       authimg: "/assets/blogs/blog-auth1.png",
       authname: "Brian Capps",
-      popular: true,
+      popular: false,
       blogcategory: [
         {
           id: "1",
           name: "Enent & parties",
-          slug: "escape-room",
+          slug: "event-and-parties",
         },
       ],
       createdate: "july 05, 2023",
@@ -390,7 +642,7 @@ const blogData = {
         "For those who are not familiar, an escape room is a real-life adventure game where the players have 50 minutes in a game room and must use clues inside of the room to solve a series of interesting puzzles to complete their challenge. It's a safe activity where anyone can get out of the room at any time during the game.",
       keywords:
         "escape room blog, all in adventures blog, mystery room blog, escape room news, all in adventures news, mystery room articles,",
-      url: "/blog/why-are-escape-rooms-so-popular",
+      url: "why-are-escape-rooms-so-popular",
       metaindex: true,
       metaimg: "/assets/blogs/hero-image-why-are-escape-rooms-so-popular.jpg",
     },
@@ -630,13 +882,13 @@ const blogData = {
         "An escape room is a team-based activity where you and your Bachelor Party squad will be seemingly &quote;locked&quote; in your themed room of choice and must solve a series of puzzles, riddles, and challenges to escape within a set time limit. It's perfect for testing your problem-solving skills, communication, and teamwork, which will &quote;prep you up&quote; for married life.",
       keywords:
         "escape room blog, all in adventures blog, mystery room blog, escape room news, all in adventures news, mystery room articles,",
-      url: "/blog/get-marriage-ready-by-hosting-escape-room-bachelor-party",
+      url: "get-marriage-ready-by-hosting-escape-room-bachelor-party",
       metaindex: true,
       metaimg:
         "/assets/blogs/hero-image-get-marriage-ready-by-hosting-escape-room-bachelor-party.jpg",
     },
     pagedata: {
-      pagetitle: "WHY ESCAPE ROOMS MAKE A MEMORABLE BACHELORETTE PARTY",
+      pagetitle: "GET MARRIAGE READY BY HOSTING ESCAPE ROOM BACHELOR PARTY",
       description:
         "An escape room is a team-based activity where you and your Bachelor Party squad will be seemingly &quote;locked&quote; in your themed room of choice and must solve a series of puzzles, riddles, and challenges to escape within a set time limit. It's perfect for testing your problem-solving skills, communication, and teamwork, which will &quote;prep you up&quote; for married life.",
       ftimg:
@@ -649,8 +901,8 @@ const blogData = {
       blogcategory: [
         {
           id: "1",
-          name: "Escape Room",
-          slug: "escape-room",
+          name: "Events & Parties",
+          slug: "event-and-parties",
         },
       ],
       createdate: "july 06, 2023",
@@ -786,6 +1038,187 @@ const blogData = {
       },
     ],
   },
+  "why-escape-rooms-are-the-ultimate-family-bonding-experience": {
+    pagemeta: {
+      title: "WHY ESCAPE ROOMS ARE THE ULTIMATE FAMILY BONDING EXPERIENCE",
+      description:
+        "An escape room game is a team-based activity where you and your family will seemingly be &qoute;locked&quote; in a themed room and work together to solve puzzles, riddles, and challenges to escape within a set time limit. Not only will you have a blast, but it's also the perfect opportunity to test your problem-solving skills, communication, and teamwork - all of which will come in handy in your family life.",
+      keywords:
+        "escape room blog, all in adventures blog, mystery room blog, escape room news, all in adventures news, mystery room articles,",
+      url: "why-escape-rooms-are-the-ultimate-family-bonding-experience",
+      metaindex: true,
+      metaimg:
+        "/assets/blogs/hero-image-why-escape-rooms-are-the-ultimate-family-bonding-experience.jpg",
+    },
+    pagedata: {
+      pagetitle: "WHY ESCAPE ROOMS ARE THE ULTIMATE FAMILY BONDING EXPERIENCE",
+      description:
+        "An escape room game is a team-based activity where you and your family will seemingly be &qoute;locked&quote; in a themed room and work together to solve puzzles, riddles, and challenges to escape within a set time limit. Not only will you have a blast, but it's also the perfect opportunity to test your problem-solving skills, communication, and teamwork - all of which will come in handy in your family life.",
+      ftimg:
+        "/assets/blogs/hero-image-why-escape-rooms-are-the-ultimate-family-bonding-experience.jpg",
+    },
+    bloginfo: {
+      authimg: "/assets/blogs/blog-auth1.png",
+      authname: "Brian Capps",
+      popular: true,
+      blogcategory: [
+        {
+          id: "1",
+          name: "Escape Room",
+          slug: "escape-room",
+        },
+      ],
+      createdate: "july 27, 2023",
+      lastupdate: "july 27, 2023",
+    },
+    blogdesc: [
+      '<div class="sbl-block">',
+      "<p>An escape room game is a team-based activity where you and your family will seemingly be &quot;locked&quot; in a themed room and work together to solve puzzles, riddles, and challenges to escape within a set time limit. Not only will you have a blast, but it's also the perfect opportunity to test your problem-solving skills, communication, and teamwork - all of which will come in handy in your family life.</p>",
+      // '<p><img src="/assets/blogs/unique-and-memorable-experience-to-remember.jpg"/></p>',
+      '<p>If you&prime;re unfamiliar, it&prime;s worth learning <a href="/what-is-an-escape-room" class="text-red-600 hover:text-red-700">what an escape room is</a></p>',
+      '<p>All In Adventures offers a <a href="/activities">range of exciting themes</a> like Treasure Island, Hollywood Premiere, and Zombie Apocalypse that are perfect for a family fun activity. Our escape rooms provide an unforgettable experience for bonding with your family. Before or after the game, you can unwind and enjoy our private party room and catering options or bring in your own snacks and drinks. Our escape rooms are perfect for a fun day out with your family. Get ready to make lasting memories together!</p>',
+      "<p>Escape rooms are a memorable way to have fun with your family! Not only will you have a blast with your loved ones, but it's also an opportunity to improve your problem-solving skills, communication, and teamwork as a family- all while having fun! So gather your family members, book an escape room, and prepare for an exciting day out with your whole family!</p>",
+      '<p>Click here to schedule and learn and learn more about <a href="/events/family-fun-activity" class="text-red-600 hover:text-red-700">family fun activity</a> </p>',
+      "<p>Read on to find out why escape rooms are the trending new choice for family fun activity events...</p>",
+      "</div>",
+
+      '<div class="sbl-block">',
+      "<h2>AN EXCITING AND UNIQUE EXPERIENCE FOR ALL AGES</h2>",
+      '<p><img src="/assets/blogs/an-exciting-and-unique-experience-for-all-ages.jpg"/></p>',
+      "<p>An escape room is an exciting and unique experience for all ages and skill levels. It offers a thrilling adventure that will keep your family on the edge of their seats while challenging their minds and problem-solving skills. The variety of kid and family friendly themes and storylines available at All In Adventures means there is something for everyone to enjoy, whether it's a treasure hunt or a mission to save the world from a deadly virus.  </p>",
+      "<p>Escape rooms are designed to be immersive, with realistic settings and puzzles that require you to work together as a team to escape. It&prime;s a great way to bring your family together for a fun, unique, and memorable experience everyone will discuss for years to come.</p>",
+      "</div>",
+      '<div class="sbl-block">',
+      "<h2>FUN AND CHALLENGING PUZZLES FOR THE WHOLE FAMILY</h2>",
+      //'<p><img src="/assets/blogs/an-exciting-and-unique-experience-for-all-ages.jpg"/></p>',
+      "<p>Escape rooms are the perfect activity for families looking for a fun and challenging experience. At All In Adventures, our escape rooms are designed to offer a variety of puzzles and challenges that will test your family's problem-solving skills and teamwork abilities. </p>",
+      "<p>From hunting for treasures with pirates to busting international thieves, our puzzles are entertaining and thought-provoking. Each escape room has a unique theme and storyline, which adds an extra layer of excitement and engagement to the immersive experience. </p>",
+      "<p>Whether your family is new to escape rooms or you&prime;ve done them before, our rooms are suitable for all ages and skill levels. It&prime;s an opportunity to bond as a family and work together towards a common goal while simultaneously having the time of your lives.</p>",
+      "</div>",
+      '<div class="sbl-block">',
+      "<h2>STRENGTHEN FAMILY BONDS THROUGH TEAMWORK</h2>",
+      '<p><img src="/assets/blogs/strengthen-family-bonds-through-teamwork.jpg"/></p>',
+      "<p>Escape rooms are a great and fun way to strengthen family bonds through teamwork. In escape rooms, families must work together to solve puzzles, find clues, and ultimately escape the room before time runs out.</p>",
+      "<p>The experience requires constant communication, collaboration, and mutual support, all essential skills for building strong family relationships. </p>",
+      "<p>Moreover, solving problems together and achieving a common goal can foster a sense of pride and accomplishment among family members, further strengthening the family bond.</p>",
+      "</div>",
+      '<div class="sbl-block">',
+      "<h2>ENJOY QUALITY TIME TOGETHER IN A THRILLING ENVIRONMENT</h2>",
+      //'<p><img src="/assets/blogs/strengthen-family-bonds-through-teamwork.jpg"/></p>',
+      "<p>An escape room is an excellent way for families to bond and spend quality time together in a thrilling environment. You'll be immersed in an exciting adventure and challenged to work together to solve puzzles, riddles, and clues to escape the room. </p>",
+      "<p>It's a fun and unique way to spend quality time with your family. You may even discover hidden talents and strengths in each other that you may not have known before!</p>",
+
+      "</div>",
+      '<div class="sbl-block">',
+      "<h2>DISCOVER HIDDEN TALENTS IN YOUR FAMILY MEMBERS</h2>",
+      '<p><img src="/assets/blogs/discover-hidden-talents-in-your-family-members.jpg"/></p>',
+      "<p>Hosting a family fun activity event at an escape room is an opportunity for everyone to have a good time and discover hidden talents and strengths in your family members. Each escape room at All In Adventures features unique challenges requiring different skill sets. </p>",
+      "<p>This means each family member can contribute their strengths and skills to the team effort. For example, some family members may excel at solving riddles, while others may be great at finding hidden objects or putting together puzzles. </p>",
+      "<p>Working together to escape the room can reveal new talents and abilities you may not have known your family members had. So, give it a shot and see what your family is capable of.</p>",
+      "</div>",
+      '<div class="sbl-block">',
+      "<h2>CREATE LASTING MEMORIES WITH YOUR LOVED ONES</h2>",
+      //'<p><img src="/assets/blogs/strengthen-family-bonds-through-teamwork.jpg"/></p>',
+      "<p>An escape room is not just an activity but an experience that your family will cherish forever. It's a chance to create lasting memories with your loved ones as you work together to solve puzzles and escape the room. </p>",
+      "<p>Whether celebrating a special occasion or just looking for a fun day out, an escape room offers a unique and exciting opportunity to bond with your family.</p>",
+      '<p>Check out the <a href="/gallery" class="text-red-600 hover:text-red-700">lasting memories</a> being created here at All In Adventures.</p>',
+      "</div>",
+      '<div class="sbl-block">',
+      "<h2>ESCAPE THE MUNDANE AND ENTER A WORLD OF ADVENTURE</h2>",
+      '<p><img src="/assets/blogs/escape-the-mundane-and-enter-a-world-of-adventure.jpg"/></p>',
+      "<p>An escape room provides a break from the mundane routine of daily life. It transports you and your family into a world of adventure. As soon as you step into the themed room, you'll be immersed in a different world where you have to work together to solve puzzles, uncover hidden clues, and escape the room before the time runs out.</p>",
+      "<p>It's an exhilarating experience that will leave you energized and excited with an adrenaline rush. So, step out of your comfort zone and into a world of adventure with your family at All In Adventures.</p>",
+
+      "</div>",
+      '<div class="sbl-block">',
+      "<h2>PERFECT FOR CELEBRATING SPECIAL OCCASIONS WITH FAMILY</h2>",
+      //'<p><img src="/assets/blogs/strengthen-family-bonds-through-teamwork.jpg"/></p>',
+      "<p>Escape rooms are a unique and exciting way to celebrate special occasions with your loved ones. Whether it's a birthday, anniversary, or just a fun family outing, All In Adventures has various themed rooms that will make your celebration unforgettable. You'll work together to solve challenging puzzles and escape before time runs out, creating memories of a lifetime.</p>",
+      "<p>With a private party room and catering options available, you can make the day even more special. Don't settle for a typical celebration - make it extraordinary with an escape room experience at All In Adventures.</p>",
+      '<p>Check out <a href="/events" class="text-red-600 hover:text-red-700">all the events</a> you can host at All In Adventures.</p>',
+      "</div>",
+      '<div class="sbl-block">',
+      "<h2>A SAFE AND CONTROLLED ENVIRONMENT FOR FAMILY FUN</h2>",
+      //'<p><img src="/assets/blogs/strengthen-family-bonds-through-teamwork.jpg"/></p>',
+      "<p>At an escape room, you can enjoy a fun-filled adventure in a safe and controlled environment. The puzzles and challenges are designed to be challenging but not dangerous, making it the perfect kid and family friendly activity for all ages. </p>",
+      "<p>Our rooms are equipped with safety features, and our staff is always on hand to ensure everyone's safety. So you can relax and have fun, knowing that you and your loved ones are in good hands. </p>",
+      "<p>The excitement and thrills of the game will keep everyone engaged and entertained for hours, making it an unforgettable experience for all.</p>",
+
+      "</div>",
+      '<div class="sbl-block">',
+      "<h2>EXPLORE DIFFERENT THEMES AND STORYLINES OF ADVENTURES</h2>",
+      '<p><img src="/assets/blogs/explore-different-themes-and-storylines-of-adventures.jpg"/></p>',
+      "<p>At an escape room, you can explore a variety of different themes and storylines that will transport you and your family to exciting worlds of adventure. From testing your knowledge of pop culture in Hollywood to stopping a daring escape from happening at the maximum security prison of Alcatraz, each room has a unique story waiting to be discovered. </p>",
+      "<p>You'll be able to step into a different world and use your problem-solving skills to unravel the puzzles and challenges that await you. With so many themes and storylines, there's always a new adventure in an escape room.</p>",
+
+      '<p>Feel free to explore <a href="/activities" class="text-red-600 hover:text-red-700">all our themes</a> at All In Adventures.</p>',
+      "</div>",
+      '<div class="sbl-block">',
+      "<h2>CUSTOMIZABLE PACKAGES FOR YOUR UNIQUE FAMILY EVENT</h2>",
+      //'<p><img src="/assets/blogs/strengthen-family-bonds-through-teamwork.jpg"/></p>',
+      "<p>All In Adventures offers customizable packages to create the perfect family fun activity experience. From birthdays to family reunions, our escape rooms provide a fun, thrilling and challenging atmosphere for all ages. </p>",
+      "<p>With various themes and storylines, our team can work with you to tailor your event to your specific needs and preferences. Whether you want to include catering or bring in your own food and drinks, we have options to suit your needs. Make unforgettable memories with your loved ones at All In Adventures.</p>",
+
+      "</div>",
+      '<div class="sbl-block">',
+      "<h2>A FUN ALTERNATIVE TO TRADITIONAL FAMILY ACTIVITIES</h2>",
+      //'<p><img src="/assets/blogs/strengthen-family-bonds-through-teamwork.jpg"/></p>',
+      "<p>Escape rooms offer a fun and challenging alternative to traditional family activities that will keep everyone engaged and entertained. With diverse themes and puzzles to choose from, each member of your family is sure to find something they enjoy.</p>",
+      "<p>Escape rooms are a perfect way to bond with your family as you work together to solve puzzles and riddles. You'll strengthen your relationships and create lasting memories through teamwork and communication. Plus, escape rooms offer a stimulating environment that will keep everyone on their toes and excited for what's next.</p>",
+      "<p>At All In Adventures, we offer customizable packages for your unique family event. Whether celebrating a birthday, anniversary or just looking for a fun day out, we've got you covered.</p>",
+      "<p>With our safe and controlled environment, you can rest assured that your family will have a great time while staying safe. So why not try something new and exciting for your next family activity?</p>",
+
+      '<p>Don&prime;t hesitate to<a href="/events/family-fun-activity#eventform" class="text-red-600 hover:text-red-700"> drop your inquir</a> </p>',
+      "<p>Congratulations on discovering the perfect way to host an unforgettable family fun activity with your loved ones! All In Adventures offers a range of themed escape rooms perfect for challenging your family's problem-solving abilities, communication skills, and teamwork, all while spending quality family time!</p>",
+      '<p>Check out <a href="/events" class="text-red-600 hover:text-red-700">all the fun and exciting events</a> available to host at All In Adventures.</p>',
+      "<p>Whether you're a parent, a grandparent, or a child, hosting your family fun activity at our escape rooms will help you create an exciting and memorable event that everyone will love.</p>",
+      '<p>Why not take advantage of this opportunity to make your family fun activity the best it can be? <a href="/events/family-fun-activity" class="text-red-600 hover:text-red-700">Book your family fun activity event</a> at All In Adventures today and prepare for a fun-filled family adventure you&prime;ll never forget!</p>',
+      "</div>",
+    ],
+    relatedblogdata: [
+      {
+        id: "1",
+        slug: "what-kind-of-leaf-is-this",
+        ftimg: "/assets/blogs/blog-ft.jpg",
+        title: "What kind of leaf is this?",
+        blogdesc:
+          "You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+        authimg: "/assets/blogs/blog-auth1.png",
+        authname: "by Brian Capps",
+        blogcategory: [
+          {
+            id: "1",
+            name: "Escape Room",
+            slug: "escape-room",
+          },
+        ],
+        lastupdate: "April 02, 2022",
+      },
+      {
+        id: "2",
+        slug: "what-kind-of-leaf-is-this",
+        ftimg: "/assets/blogs/blog-ft.jpg",
+        title: "1. What kind of leaf is this What kind of leaf is this?",
+        blogdesc:
+          "You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+        authimg: "/assets/blogs/blog-auth1.png",
+        authname: "by Brian Capps",
+        blogcategory: [
+          {
+            id: "1",
+            name: "Escape Room",
+            slug: "escape-room",
+          },
+          {
+            id: "2",
+            name: "Team Building",
+            slug: "team-building",
+          },
+        ],
+        lastupdate: "May 18, 2022",
+      },
+    ],
+  },
   // new blog end
   "can-you-do-an-escape-room-as-a-couple": {
     pagemeta: {
@@ -794,7 +1227,7 @@ const blogData = {
         "Can you play an escape room game as a couple? The answer is yes! Escape room is an excellent idea for couples looking to do something new and exciting. Escape room might even spark your romance without you realizing it. ",
       keywords:
         "play an escape room game as a couple,escape room blog, all in adventures blog, play an escape room, escape room news, all in adventures articles,",
-      url: "/blog/can-you-do-an-escape-room-as-a-couple",
+      url: "can-you-do-an-escape-room-as-a-couple",
       metaindex: true,
       metaimg: "/assets/blogs/CAN-YOU-DO-AN-ESCAPE-ROOM-AS-A-COUPLE.jpg",
     },
@@ -808,7 +1241,7 @@ const blogData = {
     bloginfo: {
       authimg: "/assets/blogs/blog-auth1.png",
       authname: "Brian Capps",
-      popular: true,
+      popular: false,
       blogcategory: [
         {
           id: "1",
@@ -946,7 +1379,7 @@ const blogData = {
         "A lot goes into designing a successful escape room experience, from the story and outlook of the set to the fluidity and difficulty level of clues and puzzles in the game. A great escape room should be planned to take participants on an enveloping, challenging adventure that pushes your thought boundaries as you have fun",
       keywords:
         "escape room blog, all in adventures blog, mystery room blog, escape room news, all in adventures news, mystery room articles,",
-      url: "/blog/what-makes-a-good-escape-room",
+      url: "what-makes-a-good-escape-room",
       metaindex: true,
       metaimg: "/assets/blogs/WHAT-MAKES-A-GOOD-ESCAPE-ROOM.jpg",
     },
@@ -961,7 +1394,13 @@ const blogData = {
     bloginfo: {
       authimg: "/assets/blogs/blog-auth1.png",
       authname: "by Brian Capps",
+      popular: true,
       blogcategory: [
+        {
+          id: "1",
+          name: "Things to Do",
+          slug: "things-to-do",
+        },
         {
           id: "1",
           name: "Escape Room",
@@ -1096,7 +1535,7 @@ const blogData = {
         "It is natural to want to beat the escape room as soon as you possibly can, emerge victorious and feel like a detective. In haste to do so, many groups end up making the same mistakes, so we thought we could help you avoid such commonly seen mistakes.",
       keywords:
         "escape room mistakes,escape room blog, all in adventures blog, mystery room blog, escape room news, all in adventures news, mystery room articles,",
-      url: "/blog/the-most-common-escape-room-mistakes",
+      url: "the-most-common-escape-room-mistakes",
       metaindex: true,
       metaimg: "/assets/blogs/THE-MOST-COMMON-ESCAPE-ROOM-MISTAKES.jpg",
     },
@@ -1111,6 +1550,7 @@ const blogData = {
     bloginfo: {
       authimg: "/assets/blogs/blog-auth1.png",
       authname: "Brian Capps",
+      popular: true,
       blogcategory: [
         {
           id: "1",
@@ -1119,8 +1559,8 @@ const blogData = {
         },
         {
           id: "2",
-          name: "Team Building",
-          slug: "team-building",
+          name: "Tips & Tricks",
+          slug: "tips-and-tricks",
         },
       ],
       lastupdate: "February 22, 2023",
@@ -1256,7 +1696,7 @@ const blogData = {
         "It is commonly believed that being good at escape rooms is a matter of being good at puzzles and solving problems; while it is a valuable skill to have in an escape room, remember that an escape room game is a team game. The real key to escaping is strategically getting your team to work together most efficiently.",
       keywords:
         "escape room skill, all in adventures blog, mystery room blog, escape room improvement, all in adventures news, mystery room articles,",
-      url: "/blog/how-to-improve-your-chances-of-escaping-an-escape-room",
+      url: "how-to-improve-your-chances-of-escaping-an-escape-room",
       metaindex: true,
       metaimg:
         "/assets/blogs/HOW-TO-IMPROVE-YOUR-CHANCES-OF-ESCAPING-AN-ESCAPE-ROOM.jpg",
@@ -1281,8 +1721,8 @@ const blogData = {
         },
         {
           id: "2",
-          name: "Team Building",
-          slug: "team-building",
+          name: "things to Do",
+          slug: "things-to-do",
         },
       ],
       lastupdate: "February 15, 2023",
@@ -1440,7 +1880,7 @@ const blogData = {
         "There is no denying that good communication skills are imperative to the business world, with the rising demand for clear communicators in every industry. ",
       keywords:
         "escape room blog, all in adventures blog, mystery room blog, escape room news, all in adventures news, mystery room articles,",
-      url: "/blog/how-escape-rooms-help-communication",
+      url: "how-escape-rooms-help-communication",
       metaindex: true,
       metaimg: "/assets/blogs/HOW-ESCAPE-ROOMS-HELP-COMMUNICATION.jpg",
     },
@@ -1455,16 +1895,12 @@ const blogData = {
     bloginfo: {
       authimg: "/assets/blogs/blog-auth1.png",
       authname: "Brian Capps",
+      popular: false,
       blogcategory: [
         {
           id: "1",
           name: "Escape Room",
           slug: "escape-room",
-        },
-        {
-          id: "2",
-          name: "Team Building",
-          slug: "team-building",
         },
       ],
       lastupdate: "Ferbruary 4, 2023",
@@ -1589,7 +2025,7 @@ const blogData = {
         "Before you approach the escape game, there are some definite tips about escape rooms that you need to know. Knowing these ahead, you can do better at the game and have more fun playing.",
       keywords:
         "escape room blog, all in adventures blog, mystery room blog, escape room news, all in adventures news, mystery room articles,",
-      url: "/blog/what-makes-a-good-escape-room",
+      url: "what-makes-a-good-escape-room",
       metaindex: true,
       metaimg:
         "/assets/blogs/EVERYTHING-YOU-NEED-TO-KNOW-BEFORE-PLAYING-AN-ESCAPE-ROOM.jpg",
@@ -1606,6 +2042,7 @@ const blogData = {
     bloginfo: {
       authimg: "/assets/blogs/blog-auth1.png",
       authname: "Brian Capps",
+      popular: false,
       blogcategory: [
         {
           id: "1",
@@ -1614,8 +2051,8 @@ const blogData = {
         },
         {
           id: "2",
-          name: "Team Building",
-          slug: "team-building",
+          name: "things to Do ",
+          slug: "things-to-do",
         },
       ],
       lastupdate: "Fabruary 10, 2023",

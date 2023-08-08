@@ -2,13 +2,17 @@ import { useState } from "react";
 import { FiChevronUp, FiChevronDown } from "react-icons/fi";
 import BlogCards from "./BlogCards";
 
-const AllBlogs = (props) => {
+const AllCatBlogs = (props) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [blogData, setBlogData] = useState([]);
   const [success, setsuccess] = useState(0);
 
   const fetchData = async () => {
-    let url = "/api/blog/getOldBlogs/?id=" + currentPage;
+    let url =
+      "/api/blog/getOldCatBlogs/?id=" +
+      currentPage +
+      "&category=" +
+      props.blogcat;
     const req = await fetch(url, { method: "GET" });
     const newBlogs = await req.json();
 
@@ -31,8 +35,8 @@ const AllBlogs = (props) => {
   return (
     <div className="bl-arc-row pb-16">
       <div className="blog-cat-title">
-        <h3 className="font-medium font-os text-xl md:text-2xl text-[#4E4D4B] uppercase">
-          ALL
+        <h3 className="font-medium font-os text-xl md:text-2xl text-red-500 uppercase">
+          {props.catname}
         </h3>
       </div>
       <div className="all-bl-card-box mt-4 grid sm:grid-cols-2 gap-y-4 gap-x-0 sm:gap-4 md:gap-6 lg:gap-10">
@@ -43,8 +47,8 @@ const AllBlogs = (props) => {
           </>
         )}
       </div>
-
-      {success != 1 && (
+      {console.log(props.blogdata.length)}
+      {(success != 1 || props.blogdata.length < 8) && (
         <div className="show-more-blog flex justify-center mt-8">
           <button
             className="flex space-x-1 text-red-600 hover:text-700 font-medium text-lg lg:text-xl items-center"
@@ -59,4 +63,4 @@ const AllBlogs = (props) => {
   );
 };
 
-export default AllBlogs;
+export default AllCatBlogs;
