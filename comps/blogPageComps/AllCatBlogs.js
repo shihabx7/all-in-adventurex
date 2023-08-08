@@ -40,15 +40,19 @@ const AllCatBlogs = (props) => {
         </h3>
       </div>
       <div className="all-bl-card-box mt-4 grid sm:grid-cols-2 gap-y-4 gap-x-0 sm:gap-4 md:gap-6 lg:gap-10">
-        <BlogCards blogdata={props.blogdata} />
-        {blogData.length > 0 && (
+        {props.blogdata.length > 0 && (
           <>
-            <BlogCards blogdata={blogData} />
+            <BlogCards blogdata={props.blogdata} />
+          </>
+        )}
+        {props.blogdata.length == 0 && (
+          <>
+            <p className="text-2xl font-medium py-10">No Blog Found</p>
           </>
         )}
       </div>
-      {console.log(props.blogdata.length)}
-      {(success != 1 || props.blogdata.length < 8) && (
+
+      {success != 1 && props.blogdata.length > 8 && (
         <div className="show-more-blog flex justify-center mt-8">
           <button
             className="flex space-x-1 text-red-600 hover:text-700 font-medium text-lg lg:text-xl items-center"
