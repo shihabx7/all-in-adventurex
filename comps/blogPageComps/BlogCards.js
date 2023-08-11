@@ -38,7 +38,7 @@ const BlogCards = (props) => {
                       <div key={cat.id} className=" flex items-center">
                         <a
                           className="text-[#CA9342] font-medium text-[14px] md:text-[16px]"
-                          href={"/blog/" + cat.slug}
+                          href={"/blog/category/?category=" + cat.slug}
                         >
                           {cat.name}
                         </a>

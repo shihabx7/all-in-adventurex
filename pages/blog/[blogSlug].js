@@ -62,7 +62,7 @@ const SingleBlog = (props) => {
         eventlist={props.eventlist}
       />
       {/* =======header content ======== end */}
-      {console.log(props.relblog)}
+      {/*console.log(props.relblog)*/}
       {/* =========================================================================================main content ======== end */}
       <div
         id="mainContent"

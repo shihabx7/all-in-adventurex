@@ -48,7 +48,7 @@ export const catPageData = (slug) => {
 
     pagedata: {
       pagetitle: searchCat(slug)
-        ? "ALL IN ADVENTURES " + blogCatData[slug].cat + " BLOGS"
+        ? "ALL IN ADVENTURES " + blogCatData[slug].cat + " BLOG"
         : "ALL IN ADVENTURES BLOGS",
       pagesubtitle:
         "Passion led us here! We're incredibly passionate about placing great people in their dream roles and believe in serving our guests and each other every day. We love our awesome team! Join us.",

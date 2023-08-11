@@ -14,9 +14,9 @@ export const getBlogHomePageData = () => {
         "We're incredibly passionate about placing great people in their dream roles and believe in serving our guests and each other every day. Join us.",
       keywords:
         "escape room blog, all in adventures blog, mystery room blog, escape room news, all in adventures news, mystery room articles,",
-      url: "/careers",
+      url: "/blog",
       metaindex: true,
-      metaimg: "/assets/gn-mobile-hero/allinadventures-career-hero.jpg",
+      metaimg: "/assets/blogs/blog-bg-l.jpg",
     },
 
     pagedata: {

@@ -1,5 +1,5 @@
 import { getPrevBlogs } from "./getSingleBlogData";
-export default async function corContactHandler(req, res) {
+export default async function getOldBlogs(req, res) {
   const query = req.query;
   const { id } = query;
 

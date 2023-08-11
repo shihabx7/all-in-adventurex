@@ -1,296 +1,9 @@
 import { getTotal } from "../AllDataList/getTotal";
-import { AllblogData } from "./getAllblogData";
-export const getSingleBlogData = (slug) => {
-  const getSingleBlog = {
-    locationlist: getTotal().locationlist,
-    activitylistSlug: getTotal().activitylistSlug,
-    eventlistSlug: getTotal().eventlistSlug,
-    virtualgameListSlug: getTotal().virtualgameSlug,
-    pagemeta: {
-      title: blogData[slug].pagemeta.title,
-      description: blogData[slug].pagemeta.description,
-      keywords: blogData[slug].pagemeta.keywords,
-      url: "/blog/" + slug,
-      metaindex: true,
-      metaimg: blogData[slug].pagedata.ftimg,
-    },
-    pagedata: {
-      pagetitle: blogData[slug].pagedata.pagetitle,
-      ftimg: blogData[slug].pagedata.ftimg,
-      // "description":blogData[slug].pagedata.description,
-      totalLocations: getTotal().totalLocations,
-      shareurl: "/blog/" + slug,
-    },
-    bloginfo: blogData[slug].bloginfo,
-    blogdesc: blogData[slug].blogdesc,
-    relatedblogdata: blogData[slug].relatedblogdata,
-  };
-
-  return getSingleBlog;
+export const AllblogData = () => {
+  return AllblogDataobj;
 };
 
-export const getAllBlogSlug = () => {
-  let keys = Object.keys(blogData);
-  let sluglist = [];
-  for (let i = 0; i < keys.length; i++) {
-    let blist = {
-      id: i,
-      slug: keys[i],
-    };
-    sluglist.push(blist);
-  }
-  return sluglist;
-};
-
-// search related blog
-const searchRelBlogs = (catslug, blogslug) => {
-  let cnt = 0;
-  let relData = [];
-  let blogArr = Object.values(blogData);
-
-  for (let i = 0; i < blogArr.length; i++) {
-    if (blogArr[i].pagemeta.url != blogslug) {
-      let catMacth = blogArr[i].bloginfo.blogcategory;
-      if (cnt < 2) {
-        catMacth.forEach((item) => {
-          if (catslug == item.slug) {
-            let matchBlogData = {
-              id: cnt + 1,
-              slug: blogArr[i].pagemeta.url,
-              ftimg: blogArr[i].pagedata.ftimg,
-              title: blogArr[i].pagedata.pagetitle,
-              blogdesc: blogArr[i].pagedata.description,
-
-              authimg: blogArr[i].bloginfo.authimg,
-              authname: blogArr[i].bloginfo.authname,
-              blogcategory: blogArr[i].bloginfo.blogcategory,
-              lastupdate: blogArr[i].bloginfo.lastupdate,
-            };
-            relData.push(matchBlogData);
-            cnt++;
-          }
-        });
-      } else {
-        break;
-      }
-    }
-  }
-
-  return relData;
-};
-// search latest 2 blogs
-const getLatestRelBlogs = () => {
-  let relBlogs = [];
-  let blogArr = Object.values(blogData);
-  for (let i = 0; i < 2; i++) {
-    let matchBlogData = {
-      id: i + 1,
-      slug: blogArr[i].pagemeta.url,
-      ftimg: blogArr[i].pagedata.ftimg,
-      title: blogArr[i].pagedata.pagetitle,
-      blogdesc: blogArr[i].pagedata.description,
-
-      authimg: blogArr[i].bloginfo.authimg,
-      authname: blogArr[i].bloginfo.authname,
-      blogcategory: blogArr[i].bloginfo.blogcategory,
-      lastupdate: blogArr[i].bloginfo.lastupdate,
-    };
-    relBlogs.push(matchBlogData);
-  }
-
-  return relBlogs;
-};
-
-// get related blog
-export const getRelatedBlogs = (slug) => {
-  let relBlog = [];
-  let bc = blogData[slug].bloginfo.blogcategory;
-
-  bc.forEach((el) => {
-    let resBlog = searchRelBlogs(el.slug, slug);
-    if (resBlog.length > 0) {
-      relBlog = relBlog.concat(resBlog);
-    }
-  });
-  if (relBlog.length < 1) {
-    let resblogs = getLatestRelBlogs();
-    relBlog = relBlog.concat(resblogs);
-  }
-  if (relBlog.length > 2) {
-    for (let i = 0; i < relBlog.length; i++) {
-      if ((i + 1) % 2 == 0) {
-        relBlog = relBlog.splice(i, 1);
-      }
-    }
-  }
-
-  return relBlog;
-};
-
-// recent blogs
-export const recentBlogs = () => {
-  let ctBlogkey = Object.keys(blogData);
-  let rblog = [];
-  for (let i = 0; i < 2; i++) {
-    let rblogobj = {
-      id: i + 1,
-      slug: ctBlogkey[i],
-      ftimg: blogData[ctBlogkey[i]].pagedata.ftimg,
-      title: blogData[ctBlogkey[i]].pagedata.pagetitle,
-      blogdesc: blogData[ctBlogkey[i]].pagedata.description,
-      authimg: blogData[ctBlogkey[i]].bloginfo.authimg,
-      authname: blogData[ctBlogkey[i]].bloginfo.authname,
-      blogcategory: blogData[ctBlogkey[i]].bloginfo.blogcategory,
-      lastupdate: blogData[ctBlogkey[i]].bloginfo.lastupdate,
-    };
-    rblog.push(rblogobj);
-  }
-
-  return rblog;
-};
-
-// popular blogs
-export const popularBlogs = () => {
-  let ctBlogkey = Object.keys(blogData);
-  let rblog = [];
-  let cnt = 1;
-  for (let i = 0; i < ctBlogkey.length; i++) {
-    if (cnt < 5) {
-      if (blogData[ctBlogkey[i]].bloginfo.popular == true) {
-        let rblogobj = {
-          id: i + 1,
-          slug: ctBlogkey[i],
-          ftimg: blogData[ctBlogkey[i]].pagedata.ftimg,
-          title: blogData[ctBlogkey[i]].pagedata.pagetitle,
-          blogdesc: blogData[ctBlogkey[i]].pagedata.description,
-          authimg: blogData[ctBlogkey[i]].bloginfo.authimg,
-          authname: blogData[ctBlogkey[i]].bloginfo.authname,
-          blogcategory: blogData[ctBlogkey[i]].bloginfo.blogcategory,
-          lastupdate: blogData[ctBlogkey[i]].bloginfo.lastupdate,
-        };
-        rblog.push(rblogobj);
-        cnt++;
-      }
-    } else {
-      break;
-    }
-  }
-  return rblog;
-};
-// all blogs first 4 HOME PAGE
-export const homeAllBlogs = () => {
-  let ctBlogkey = Object.keys(blogData);
-  let rblog = [];
-  for (let i = 2; i < 6; i++) {
-    let rblogobj = {
-      id: i + 1,
-      slug: ctBlogkey[i],
-      ftimg: blogData[ctBlogkey[i]].pagedata.ftimg,
-      title: blogData[ctBlogkey[i]].pagedata.pagetitle,
-      blogdesc: blogData[ctBlogkey[i]].pagedata.description,
-      authimg: blogData[ctBlogkey[i]].bloginfo.authimg,
-      authname: blogData[ctBlogkey[i]].bloginfo.authname,
-      blogcategory: blogData[ctBlogkey[i]].bloginfo.blogcategory,
-      lastupdate: blogData[ctBlogkey[i]].bloginfo.lastupdate,
-    };
-    rblog.push(rblogobj);
-  }
-  return rblog;
-};
-// get prev 4 blogs
-
-export const getPrevBlogs = (pageid) => {
-  let rblog = [];
-  let keys = Object.keys(blogData);
-  //console.log(keys);
-  let start = pageid * 4 + 2;
-  let end = start + 4;
-  if (start > keys.length) {
-    return false;
-  }
-  if (pageid < 2) {
-    for (let i = 6; i < 10; i++) {
-      let rblogobj = {
-        id: i + 1,
-        slug: keys[i],
-        ftimg: blogData[keys[i]].pagedata.ftimg,
-        title: blogData[keys[i]].pagedata.pagetitle,
-        blogdesc: blogData[keys[i]].pagedata.description,
-        authimg: blogData[keys[i]].bloginfo.authimg,
-        authname: blogData[keys[i]].bloginfo.authname,
-        blogcategory: blogData[keys[i]].bloginfo.blogcategory,
-        lastupdate: blogData[keys[i]].bloginfo.lastupdate,
-      };
-      rblog.push(rblogobj);
-    }
-    return rblog;
-  } else {
-    for (let i = start; i < end; i++) {
-      if (i + 1 > keys.length) {
-        break;
-      }
-      let rblogobj = {
-        id: i + 1,
-        slug: keys[i],
-        ftimg: blogData[keys[i]].pagedata.ftimg,
-        title: blogData[keys[i]].pagedata.pagetitle,
-        blogdesc: blogData[keys[i]].pagedata.description,
-        authimg: blogData[keys[i]].bloginfo.authimg,
-        authname: blogData[keys[i]].bloginfo.authname,
-        blogcategory: blogData[keys[i]].bloginfo.blogcategory,
-        lastupdate: blogData[keys[i]].bloginfo.lastupdate,
-      };
-      rblog.push(rblogobj);
-    }
-    return rblog;
-  }
-};
-// 8 blogs for cat
-
-const catmatchblog = (catslug, catarr) => {
-  let mf = 0;
-  for (let i = 0; i < catarr.length; i++) {
-    if (catarr[i].slug == catslug) {
-      mf++;
-    }
-  }
-
-  if (mf > 0) {
-    return true;
-  }
-  return false;
-};
-export const getCatHomeBlogs = (catslug) => {
-  let rblog = [];
-  let keys = Object.keys(blogData);
-  let counter = 1;
-  for (let i = 0; i < keys.length; i++) {
-    if (counter == 8) {
-      break;
-    }
-    if (catmatchblog(catslug, blogData[keys[i]].bloginfo.blogcategory)) {
-      let rblogobj = {
-        id: i + 1,
-        slug: keys[i],
-        ftimg: blogData[keys[i]].pagedata.ftimg,
-        title: blogData[keys[i]].pagedata.pagetitle,
-        blogdesc: blogData[keys[i]].pagedata.description,
-        authimg: blogData[keys[i]].bloginfo.authimg,
-        authname: blogData[keys[i]].bloginfo.authname,
-        blogcategory: blogData[keys[i]].bloginfo.blogcategory,
-        lastupdate: blogData[keys[i]].bloginfo.lastupdate,
-      };
-      rblog.push(rblogobj);
-    }
-  }
-  return rblog;
-};
-export const getPrevCatBlogs = (catslug, pageid) => {};
-// blog data
-
-const blogData = AllblogData();
-/*
-const blogData = {
+const AllblogDataobj = {
   "why-escape-rooms-are-a-trendy-way-to-team-build": {
     pagemeta: {
       title: "WHY ESCAPE ROOMS ARE A TRENDY WAY TO TEAM-BUILD",
@@ -326,8 +39,8 @@ const blogData = {
           slug: "event-and-parties",
         },
       ],
-      createdate: "july 14, 2023",
-      lastupdate: "july 14, 2023",
+      createdate: "July 14, 2023",
+      lastupdate: "July 14, 2023",
     },
     blogdesc: [
       '<div class="sbl-block">',
@@ -355,67 +68,96 @@ const blogData = {
       "<p>Learn more <a href='/blog/how-escape-rooms-help-communication'>about how escape rooms help communication</a></p>",
       "</div>",
       '<div class="sbl-block">',
-      "<h2>A FUN WAY TO CHALLENGE YOUR PROBLEM-SOLVING SKILLS</h2>",
-      "<p>At All In Adventures' escape rooms, you and your friends will challenge your problem-solving skills in a fun and exciting manner. This thrilling experience will test your ability to work together while strengthening your bond with your teammates. </p>",
-      "<p>Solving puzzles, deciphering clues, and racing against time to escape the room, all while laughing and having the time of your life is an unforgettable and exciting adventure that you and your friends will cherish forever.</p>",
+      "<h2>3) ENCOURAGES TEAMWORKA</h2>",
+      "<p>Escape rooms are known for their ability to encourage teamwork. In an escape room, group participation is crucial to success, as each member brings their unique strengths and skills to the table. Working together to solve puzzles and overcome challenges promotes communication, collaboration, and cooperation.</p>",
+      "<p>It fosters a sense of camaraderie and team spirit, which can carry over to the workplace and improve team dynamics. Participation in an escape room teaches team members to rely on each other and develop trust, which is essential to any successful team.</p>",
 
       "</div>",
       '<div class="sbl-block">',
-      "<h2>A DAY OF CELEBRATION AND PARTYING</h2>",
-      '<p><img src="/assets/blogs/a-day-of-celebration-and-partying.jpg"/></p>',
-      "<p>Hosting a bachelorette party event at an escape room is an ideal way to kick off a day of celebration and fun. It's a thrilling and extraordinary experience that will make a lasting impression on you and your friends.</p>",
-      "<p>Not only will you enjoy working with your best girls to solve puzzles and challenges, but you'll also have the opportunity to bond with them and create unforgettable memories.</p>",
-      "<p>Starting your celebration with a high-energy escape game sets the tone for an exciting day of celebration and adventure. After finishing the escape room, the night is yours to keep the party going and make it a night you'll never forget.</p>",
-      "</div>",
-      '<div class="sbl-block">',
-      "<h2>NOVELTY OF THE EXPERIENCE</h2>",
-      "<p>Hosting a bachelorette party at an escape room is the perfect way to break away from the traditional bachelorette party activities and try something new. Instead of going for the usual spa day or night out on the town, you and your friends can work together to solve puzzles, think creatively, and challenge yourselves in an exciting environment.</p>",
-      "<p>Escape rooms are an excellent way for you and your partner to practice remaining calm under pressure. Escape rooms are safe places to practice patience by searching for all possible solutions to a problem while keeping calm and composed.This unique experience will make for a memorable night for you and your friends and will indeed be talked about for years. So, if you want to try something different and create lasting memories with your closest friends, consider hosting your bachelorette party at an escape room with All In Adventures.</p>",
+      "<h2>4) BUILDS PROBLEM-SOLVING SKILLS</h2>",
+      '<p><img src="/assets/blogs/builds-problem-solving-skills.jpg"/></p>',
+      "<p>By design, escape rooms are meant to be challenging, with intricate puzzles and clues that require problem-solving skills to decode. Participating in an escape room encourages team members to think creatively and critically to find solutions to problems within a set time frame.</p>",
+      "<p>It improves problem-solving abilities and helps to identify and address issues more effectively in the workplace. As team members work together to solve the puzzles, they learn to think outside the box and develop a better understanding of how to approach a problem. It leads to better collaboration and communication, which is essential for any successful team.</p>",
 
       "</div>",
       '<div class="sbl-block">',
-      "<h2>VERY AFFORDABLE BACHELORETTE PARTY OPTION</h2>",
-      "<p>Planning a bachelorette party can be overwhelming, especially when considering the cost of popular options like luxurious vacations, fancy dinners, or hiring private entertainment. However, hosting an escape room bachelorette party at All In Adventures is much more affordable and a more unique and unforgettable experience.</p>",
-      "<p>While other options may be glamorous, they lack the team-building, problem-solving, and other memorable aspects that an escape room provides. Spend the night with your closest friends, working together to solve puzzles, and celebrate your last night as a bachelorette in a fun and interactive way that won't break the bank, leaving you more to spend on your honeymoon.</p>",
-      '<p>Check out our <a href="/events/bachelorette-party" class="text-red-600 hover:text-red-700">affordable bachelorette party option</a> </p>',
+      "<h2>5) MOVES PEOPLE OUT OF THE OFFICE</h2>",
+      "<p>Escape rooms are a great way to move your team out of the office and into a new environment where they can work together to solve puzzles and complete challenges. Getting your team out of the office and into a new space can be a refreshing change of pace and help break down communication barriers in the workplace. </p>",
+      "<p>Taking your team out of their typical work environment can create a unique experience that will encourage collaboration and creativity in a new setting. The excitement and challenge of an escape room can be a great way to energize your team and build a stronger bond between team members.</p>",
+
+      "</div>",
+      '<div class="sbl-block">',
+      "<h2>6) DEVELOPS GOOD TIME MANAGEMENT</h2>",
+      '<p><img src="/assets/blogs/develops-good-time-management.jpg"/></p>',
+      "<p>In addition to promoting communication, collaboration, and teamwork, escape rooms are a great way to encourage good time management skills. With limited time to complete the puzzles and escape the room, your team will need to work efficiently and prioritize tasks to succeed. </p>",
+      "<p>It can help your team members develop strong time management skills that they can bring back to the office and apply to their daily work. By working together to meet a tight deadline, your team will also learn how to manage stress and pressure, which can be valuable skills in any workplace.</p>",
+      "</div>",
+
+      '<div class="sbl-block">',
+      "<h2>7) ESCAPE ROOMS TEACH TASK MANAGEMENT</h2>",
+
+      "<p>Escape rooms are a great way to teach time management skills to your team. With limited time to solve puzzles and escape the room, your team members must work together efficiently and prioritize tasks to succeed. </p>",
+      "<p>It can help them develop strong time management skills that they can apply to their daily work in the office. By learning to work effectively under time pressure, your team members will be better equipped to handle stress and meet deadlines.</p>",
+
+      "</div>",
+      '<div class="sbl-block">',
+      "<h2>8) ENHANCES ON-THE-SPOT PROBLEM-SOLVING ABILITY</h2>",
+      '<p><img src="/assets/blogs/enhances-on-the-spot-problem-solving.jpg"/></p>',
+      "<p>Playing an escape room game can also help develop on-the-spot problem-solving capacity in your team. As your team works to solve puzzles and escape the room, they must think creatively and adapt to new challenges as they arise. </p>",
+      "<p>It helps them develop the ability to think on their feet and develop innovative solutions to problems they encounter in their daily work lives. Moreover, the time limit in an escape room can help your team learn to work well under pressure, which is valuable in any fast-paced work environment. </p>",
+
+      "<p>By hosting a team-building event at an escape room, you can help your team develop their problem-solving skills and become better equipped to handle unexpected challenges in the workplace.</p>",
 
       "</div>",
 
       '<div class="sbl-block">',
-      "<h2>LET LOOSE IN A SAFE AND CONTROLLED ENVIRONMENT</h2>",
-      '<p><img src="/assets/blogs/let-loose-in-a-safe-and-controlled-environment.jpg"/></p>',
-      "<p>At an escape room bachelorette party, you and your friends can enjoy a thrilling and unforgettable experience without the risks associated with traditional bachelorette party activities. Instead of bar hopping or engaging in activities that could lead to harm, an escape room provides a safe and controlled environment where you can let your hair down and have fun.</p>",
+      "<h2>9) THEY ENCOURAGE FIRM DECISION MAKING</h2>",
+      "<p>Playing escape games can also encourage firm decision-making in your team. As they work to solve puzzles, your team members will need to make quick and decisive choices to move forward, helping them develop the confidence to make firm decisions in their daily work, even in high-pressure scenarios. </p>",
+      "<p>The collaborative nature of escape rooms can also encourage your team members to seek input from each other and work together to make the best decisions. </p>",
 
-      "<p>In addition to being safer, an escape room is an excellent way to challenge your problem-solving skills and bond with your friends while creating lasting memories. So, avoid the scandals, let your inner party animal out, and enjoy an exciting and unique bachelorette party that you and your friends will cherish for years to come!</p>",
-
-      "</div>",
-      '<div class="sbl-block">',
-      "<h2>VARIOUS THEMED ROOMS TO CHOOSE FROM</h2>",
-      "<p>At All In Adventures, you can choose from a range of themed rooms tailored to suit your interests and preferences, making it an ideal bachelorette party activity. Whether you're a fan of crime-solving mysteries, thrilling adventures, or magical worlds, there's a themed room that will capture your attention and challenge your problem-solving skills.</p>",
-      "<p>With the exciting themes, you and your friends can work together to uncover clues, solve puzzles, and escape before time runs out. The variety of options ensures that you can have a unique and exciting experience every time you visit All In Adventures for any event.</p>",
-
-      '<p>Check out all our <a href="/events" class="text-red-600 hover:text-red-700">exciting themed rooms</a>.</p>',
-
-      "</div>",
-
-      '<div class="sbl-block">',
-      "<h2>PROFESSIONAL AND FRIENDLY STAFF TO GUIDE THE EVENT</h2>",
-      "<p>When you book your escape room bachelorette party at All In Adventures, you can count on the highly trained and experienced staff to make your experience unforgettable. From the moment you arrive, you'll be greeted with a warm welcome and provided with all the information you need to get started.</p>",
-      "<p>The staff will be readily available to answer any questions and ensure that the party and game run smoothly. They'll also create a fun and challenging atmosphere, pushing you and your friends to work together to solve puzzles and escape before time runs out.</p>",
-
-      "<p>With a friendly and professional staff guiding you through the experience, you&prime;ll be able to relax and have a great time with your closest gals, knowing that everything is taken care of.</p>",
+      "<p>By hosting a team-building event at an escape room, you can help your team develop their decision-making skills and become better equipped to handle difficult choices in the workplace.</p>",
 
       "</div>",
       '<div class="sbl-block">',
-      "<h2>CUSTOMIZABLE EXPERIENCE FOR THE BRIDE-TO-BE</h2>",
-      '<p><img src="/assets/blogs/customizable-experience-for-the-bride-to-be.jpg"/></p>',
-      "<p>That's right! All In Adventures offers a range of customizable options to help make your bachelorette party experience unforgettable. Whether you want to surprise the bachelorette with a special message or add unique challenges to the escape room game, the staff is happy to work with you to make it happen. </p>",
-      "<p>With our years of expertise and creativity, you can create a one-of-a-kind custom adventure that will be talked about for years to come.</p>",
-      '<p>Don&prime;t hesitate to drop your <a href="/events/bachelorette-party#eventform" class="text-red-600 hover:text-red-700">inquiries</a></p>',
-      '<p>Congratulations on discovering the perfect way to host an unforgettable bachelorette party with your favorite girls! All In Adventures offers a <a href="/activities" class="text-red-600 hover:text-red-700">variety of themed escape rooms</a>  perfect for challenging your problem-solving abilities, communication skills, and team spirit while everyone has a blast!</p>',
-      '<p>Explore  <a href="/events" class="text-red-600 hover:text-red-700">all the fun and exciting events</a> you can host at All In Adventures.</p>',
-      "<p>Whether you&prime;re the maid of honor, a close friend, or the bride-to-be, hosting your bachelorette party at our escape rooms will help you create an exciting and memorable event you all will love.</p>",
-      '<p>Don&prime;t miss out on this opportunity to make your bachelorette party the best you can make it. <a href="/events" class="text-red-600 hover:text-red-700">Book your bachelorette party event</a> at All In Adventures today and prepare for an adventure you&prime;ll never forget!</p>',
+      "<h2>10) BRING OUT STRENGTHS AND WEAKNESSES</h2>",
+      '<p><img src="/assets/blogs/brings-out-strengths-and-weaknesses.jpg"/></p>',
+      "<p>Escape rooms help bring the strengths and weaknesses of your team members to light. As they work together to escape the room, each team member can showcase their skills and strengths, helping team leaders identify areas where team members excel and where they may need additional support or training.</p>",
+      "<p>Additionally, collaboration while playing escape room games can encourage team members to work together and support each other in areas where they may be weaker. </p>",
+      "<p>By hosting a team-building event at an escape room, you can help your team understand and appreciate each other&primes strengths and weaknesses and work together more effectively in the workplace.</p>",
+
+      "</div>",
+      '<div class="sbl-block">',
+      "<h2>11) ENHANCES TEAM SPIRIT</h2>",
+
+      "<p>Escape rooms are also great for building team spirit. As your team works together to solve puzzles and escape the room through a team effort, they bond and develop a shared experience they can reflect on and celebrate. </p>",
+      "<p>This shared experience can help create a sense of harmony and teamwork that can be carried over into the workplace. The challenges and successes of an escape room can help boost team morale and confidence as team members work together to achieve a common goal. </p>",
+      "<p>Hosting a team-building event at an escape room can help your team develop a strong sense of unity and companionship that can benefit their organizational productivity.</p>",
+
+      "</div>",
+      '<div class="sbl-block">',
+      "<h2>12) BUILDS TRUST</h2>",
+
+      "<p>To successfully escape the room, team members must rely on each other and trust that everyone is working towards the same goal. It helps break down barriers and improve communication and collaboration between team members. </p>",
+      "<p>The high-pressure and time-sensitive environment of an escape room can also help team members learn to trust their instincts and take risks in a safe and supportive environment. </p>",
+      "<p>Hosting a team-building event at an escape room helps your team develop a strong sense of trust and collaboration that can easily translate into better teamwork and productivity in the workplace.</p>",
+
+      "</div>",
+      '<div class="sbl-block">',
+      "<h2>13) HELPS IDENTIFY NATURAL LEADERS</h2>",
+      '<p><img src="/assets/blogs/helps-identify-natural-leaders.jpg"/></p>',
+      "<p>Escape rooms can be an excellent tool for identifying natural leaders within your team. In the high-pressure environment of an escape room, team members may naturally turn to those with strong leadership skills to guide them through the challenges. </p>",
+      "<p>It unveils those team members with a natural talent for leadership, allowing you to better identify and hone those leadership skills in the workplace. Challenges of an escape room can also help team members learn to step up and take charge when necessary, developing their leadership skills in the process.</p>",
+      "<p>Hosting a team-building event at an escape room will help you identify natural leaders who can help drive your organization toward success.</p>",
+
+      "</div>",
+
+      '<div class="sbl-block">',
+      "<h2>14) CONVENIENT AND ENJOYABLE TEAM-BUILDING EXERCISE</h2>",
+
+      "<p>Escape rooms help bring the strengths and weaknesses of your team members to light. As they work together to escape the room, each team member can showcase their skills and strengths, helping team leaders identify areas where team members excel and where they may need additional support or training.</p>",
+      "<p>Additionally, collaboration while playing escape room games can encourage team members to work together and support each other in areas where they may be weaker. </p>",
+      "<p>By hosting a team-building event at an escape room, you can help your team understand and appreciate each other&primes strengths and weaknesses and work together more effectively in the workplace.</p>",
+
       "</div>",
     ],
     relatedblogdata: [
@@ -2384,4 +2126,4 @@ const blogData = {
       },
     ],
   },
-}; */
+};
