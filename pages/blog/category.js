@@ -100,7 +100,16 @@ const blogcat = (props) => {
 export default blogcat;
 export const getServerSideProps = async (context) => {
   const category = context.query.category;
-  //console.log(category);
+
+  console.log(category);
+  if (!category) {
+    return {
+      redirect: {
+        destination: "/blog",
+        permanent: false,
+      },
+    };
+  }
   const singlecatBlogData = await catPageData(category);
   // const bl = await getRelatedBlogs(context.params.blogSlug);
 

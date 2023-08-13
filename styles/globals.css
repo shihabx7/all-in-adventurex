@@ -887,7 +887,15 @@ a {
   padding-top: 8%;
 }
 .sbl-main {
-  max-width: 700px;
+  max-width: 740px;
+}
+.sbl-main ul {
+  padding-left: 1.6rem;
+}
+.sbl-main ul li {
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 8px 0px;
 }
 .blog-ft-shadow {
   box-shadow: 0px 2px 24px 3px rgba(204, 150, 68, 0.82);
@@ -1273,6 +1281,10 @@ a {
   }
   .sbl-main {
     max-width: 100%;
+  }
+  .sbl-main > ul li {
+    font-size: 18px !important;
+    line-height: 1.5 !important;
   }
   .single-blog-content-holder {
     padding-top: 32%;
