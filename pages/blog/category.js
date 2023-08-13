@@ -101,7 +101,7 @@ export default blogcat;
 export const getServerSideProps = async (context) => {
   const category = context.query.category;
 
-  console.log(category);
+  //console.log(category);
   if (!category) {
     return {
       redirect: {
