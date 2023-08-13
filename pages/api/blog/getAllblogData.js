@@ -30,13 +30,13 @@ const AllblogDataobj = {
       blogcategory: [
         {
           id: "1",
-          name: "Escape room",
-          slug: "escape-room",
+          name: "Tips & Tricks",
+          slug: "tips-and-tricks",
         },
         {
           id: "2",
-          name: "Enent & parties",
-          slug: "event-and-parties",
+          name: "Franchise",
+          slug: "franchise",
         },
       ],
       createdate: "May 29, 2023",
