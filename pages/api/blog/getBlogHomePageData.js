@@ -9,7 +9,7 @@ export const getBlogHomePageData = () => {
     eventlistSlug: getTotal().eventlistSlug,
     virtualgameListSlug: getTotal().virtualgameSlug,
     pagemeta: {
-      title: "Blogs | All In Adventures | Formerly Mystery Room",
+      title: "Blog | All In Adventures | Formerly Mystery Room",
       description:
         "We're incredibly passionate about placing great people in their dream roles and believe in serving our guests and each other every day. Join us.",
       keywords:

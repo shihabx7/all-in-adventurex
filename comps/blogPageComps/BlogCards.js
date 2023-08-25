@@ -35,7 +35,7 @@ const BlogCards = (props) => {
                 <div className="blog-item-cat flex items-center pb-2">
                   {blogitem.blogcategory.map((cat, index) => {
                     return (
-                      <div key={cat.id} className=" flex items-center">
+                      <div key={index} className=" flex items-center">
                         <a
                           className="text-[#CA9342] font-medium text-[14px] md:text-[16px]"
                           href={"/blog/category/?category=" + cat.slug}

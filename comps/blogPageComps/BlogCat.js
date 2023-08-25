@@ -26,14 +26,12 @@ const BlogCat = (props) => {
     <div className="blog-cat-container  pb-4">
       {showNav && (
         <div className="blog-cat-nav flex justify-end space-x-2 items-center">
-          <div className="blog-cat-prev cursor-pointer hover:bg-[#FFF3D8] hover:text-[#111111]  w-8 h-8 border border-[#464646] rounded-full text-[#464646] flex justify-center items-center">
-            {" "}
+          <button className="blog-cat-prev cursor-pointer hover:bg-[#FFF3D8] hover:text-[#111111]  w-8 h-8 border border-[#464646] rounded-full text-[#464646] flex justify-center items-center">
             <FiChevronLeft></FiChevronLeft>
-          </div>
-          <div className="blog-cat-next cursor-pointer hover:bg-[#FFF3D8] hover:text-[#111111]  w-8 h-8 border border-[#464646] rounded-full text-[#464646] flex justify-center items-center">
-            {" "}
+          </button>
+          <button className="blog-cat-next cursor-pointer hover:bg-[#FFF3D8] hover:text-[#111111]  w-8 h-8 border border-[#464646] rounded-full text-[#464646] flex justify-center items-center">
             <FiChevronRight></FiChevronRight>
-          </div>
+          </button>
         </div>
       )}
 

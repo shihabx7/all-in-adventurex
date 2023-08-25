@@ -35,7 +35,7 @@ const AllCatBlogs = (props) => {
   return (
     <div className="bl-arc-row pb-16">
       <div className="blog-cat-title">
-        <h3 className="font-medium font-os text-xl md:text-2xl text-red-500 uppercase">
+        <h3 className="font-medium font-os text-xl md:text-2xl xl:text-3xl text-[#232323] uppercase">
           {props.catname}
         </h3>
       </div>

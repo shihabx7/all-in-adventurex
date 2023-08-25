@@ -35,8 +35,8 @@ export const catPageData = (slug) => {
     virtualgameListSlug: getTotal().virtualgameSlug,
     pagemeta: {
       title: searchCat(slug)
-        ? blogCatData[slug].cat + "Blogs | All In Adventures"
-        : "Blogs | All In Adventures",
+        ? blogCatData[slug].cat + " Blog | All In Adventures"
+        : "Blog | All In Adventures",
       description:
         "We're incredibly passionate about placing great people in their dream roles and believe in serving our guests and each other every day. Join us.",
       keywords:
