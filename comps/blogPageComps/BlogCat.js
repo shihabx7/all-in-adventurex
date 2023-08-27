@@ -12,8 +12,8 @@ const BlogCat = (props) => {
   const showNextCat = (e) => {
     e.preventDefault();
     const catTotal = document.querySelectorAll(".bl-cat-item");
-    console.log(catTotal.length);
-    console.log(currentNav);
+    //console.log(catTotal.length);
+    //console.log(currentNav);
     const catBox = document.querySelector("#bolg-cat-cont");
     if (currentNav < catTotal.length - 2) {
       const currentNavWidth = catTotal[currentNav].offsetWidth;
@@ -58,7 +58,7 @@ const BlogCat = (props) => {
     const catTabWidth = document.querySelector("#blog-cat-box").offsetWidth;
     var catWidth = 0;
     for (let i = 0; i < catItem.length; i++) {
-      console.log("item-w" + i + ":" + catItem[i].offsetWidth);
+      //console.log("item-w" + i + ":" + catItem[i].offsetWidth);
       catWidth = catWidth + catItem[i].offsetWidth + 76;
       //console.log("total" + catWidth);
     }
