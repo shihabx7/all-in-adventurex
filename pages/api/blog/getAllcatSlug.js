@@ -79,7 +79,7 @@ const blogcat = [
   },
   {
     id: "3",
-    cat: "Things To Do",
+    cat: "Things to Do",
     slug: "things-to-do",
   },
 

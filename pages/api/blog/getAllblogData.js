@@ -4,6 +4,670 @@ export const AllblogData = () => {
 };
 
 const AllblogDataobj = {
+  "innovative-team-building-ideas-to-strengthen-bonds": {
+    pagemeta: {
+      title: "INNOVATIVE TEAM-BUILDING IDEAS TO STRENGTHEN BONDS",
+      description:
+        "Team building activities can be a powerful tool for improving workplace dynamics and team performance. By engaging in collaborative and interactive exercises, team members can strengthen their bonds and develop essential skills such as communication, problem-solving, and creativity.",
+      keywords:
+        "escape room team building,escape room tips,escape room guid, play an escape room,book escape room, escape room news, all in adventures articles,",
+      url: "innovative-team-building-ideas-to-strengthen-bonds",
+      metaindex: true,
+      metaimg:
+        "/assets/blogs/hero-innovative-team-building-ideas-to-strengthen-bonds.jpg",
+    },
+    pagedata: {
+      pagetitle: "INNOVATIVE TEAM-BUILDING IDEAS TO STRENGTHEN BONDS ",
+      description:
+        "Team building activities can be a powerful tool for improving workplace dynamics and team performance. By engaging in collaborative and interactive exercises, team members can strengthen their bonds and develop essential skills such as communication, problem-solving, and creativity.",
+      ftimg:
+        "/assets/blogs/hero-innovative-team-building-ideas-to-strengthen-bonds.jpg",
+    },
+    bloginfo: {
+      authimg: "/assets/blogs/blog-auth1.png",
+      authname: "Brian Capps",
+      popular: false,
+      blogcategory: [
+        {
+          id: "1",
+          name: "Escape Room",
+          slug: "escape-room",
+        },
+        {
+          id: "2",
+          name: "Tips & tricks",
+          slug: "tips-and-tricks",
+        },
+      ],
+      createdate: "July 03, 2023",
+      lastupdate: "July 03, 2023",
+    },
+    blogdesc: [
+      '<div class="sbl-block">',
+      "<p>Team building activities can be a powerful tool for improving workplace dynamics and team performance. By engaging in collaborative and interactive exercises, team members can strengthen their bonds and develop essential skills such as communication, problem-solving, and creativity.</p>",
+      "<p>In the modern, fast-paced, highly competitive business world, investing in effective team-building strategies is more critical than ever; whether a small organization or a large multinational corporation, a cohesive and high-performing team could make all the difference in achieving your organizational goals.</p>",
+      "<p>In this blog post, we shall explore some innovative team-building ideas that can help you strengthen the bonds within your team and promote a positive and productive work environment. There are countless ways to engage your team and enhance their skills and abilities, from virtual team-building activities to outdoor adventure challenges. So, let's dive right in and discover how you can build a stronger, more effective team today!</p>",
+
+      "</div>",
+
+      "<div class='sbl-block'>",
+      "<h2>1) PLAY AN ESCAPE ROOM GAME AT ALL IN ADVENTURES</h2>",
+      "<p><img alt='play an escape room game at all in adventures' src='/assets/blogs/play-an-escape-room-game-at-all-in-adventures.jpg'/></p>",
+      "<p>Are you tired of the same old boring team-building exercises that feel more like a chore than a fun bonding experience? Look no further than the thrilling world of escape rooms! These challenging games not only provide an exciting adventure but also offer an excellent opportunity to enhance collaboration and teamwork skills among colleagues. By choosing All in Adventures for your team-building activity, you can create a memorable experience that both entertains and improves team collaboration and productivity.</p>",
+      "<p>As you work together to escape the room before time runs out, you'll find yourselves communicating better, distributing tasks effectively, and solving complex problems as an integrated team. </p>",
+      "<p>So, put on your thinking cap and prepare to escape to a world of team collaboration like never before!</p>",
+      "<p>Click here to <a href='/what-is-an-escape-room'>learn more about escape rooms</a></p>",
+      "<h3>Applying Escape Room Lessons for Workplace Collaboration</h3>",
+      "<p><img alt='applying escape room lessons for workplace collaboration' src='/assets/blogs/applying-escape-room-lessons-for-workplace-collaboration.jpg'/></p>",
+      "<p>The communication skills developed in an escape room, such as active listening and understanding of precise task assignments, can be applied to workplace situations where effective communication is essential. Similarly, problem-solving techniques, such as breaking down complex issues into smaller parts, can be used to tackle challenges in the workplace. Delegation, another critical skill learned in escape rooms, can help team members identify their strengths and weaknesses and work collaboratively to achieve common goals. </p>",
+      "<p>By applying these skills to the work environment, colleagues can foster a culture of teamwork and mutual support, leading to more efficient and successful outcomes. Moreover, the shared experience of an escape room can build trust among team members and create a sense of harmony that, when carried into the workplace, can have tangible benefits for team collaboration and contribute to a more productive and successful organization.</p>",
+      "<p>Learn more about <a href='/blog/how-escape-rooms-help-communication'>how escape rooms help communication</a></p>",
+      "</div>",
+
+      "<div class='sbl-block'>",
+
+      "<h2>2) TEAM-BUILDING GAMES</h2>",
+      "<p>Team-building games are a fun and effective way to promote collaboration, communication, and teamwork among coworkers. These games are enjoyable and help foster a sense of community and create a positive work environment. Whether you're looking for a quick icebreaker or a more extended team-building activity, there is a variety of games to choose from</p>",
+
+      "<div class='mt-8'>",
+      "<h3>i) Coworker Bingo</h3>",
+      "<p><img alt='co-worker bingo' src='/assets/blogs/co-worker-bingo.jpg'/></p>",
+      "<p><b>Time:</b> 40-50 minutes</p>",
+      "<p><b>Number of People:</b> At least 6</p>",
+      "<p><b>Things Needed to Play:</b> Pre-made bingo sheet </p>",
+      "<p><b>How to Play:</b> Inform the group that they have 30 minutes to socialize, introduce themselves, and identify individuals who possess the traits listed on their bingo card (i.e., &quot;Has been to Europe,&quot; &quot;Is afraid of heights,&quot; &quot;Has a master's degree&quot;). They should fill the corresponding box with the person's name or ask them to sign it. The game ends when someone successfully fills five boxes in a row, either horizontally or vertically, and shouts, &quot;Bingo!&quot;. </p>",
+      "</div>",
+
+      "<div class='mt-8'>",
+      "<h3>ii) Helium Stick</h3>",
+      "<p><img alt='helium stick' src='/assets/blogs/helium-stick.jpg'/></p>",
+      "<p><b>Time:</b> 10-20 minutes</p>",
+      "<p><b>Number of People:</b> 5-10 people</p>",
+      "<p><b>Things Needed to Play:</b> A long, lightweight stick of some sort (can use the handle part of a broomstick)</p>",
+      "<p><b>How to Play:</b> Arrange the players in two rows facing each other and instruct them to extend their index fingers on both hands. Then, place a stick on their row of fingers and instruct them to lower it to the ground. The challenge is that everyone's fingers must remain in contact with the stick. If any player's finger loses contact with the stick, they must restart the activity from the beginning.</p>",
+      "</div>",
+
+      "<div class='mt-8'>",
+      "<h3>iii) Team Trivia</h3>",
+      "<p><img alt='team trivia' src='/assets/blogs/team-trivia.jpg'/></p>",
+      "<p><b>Time:</b> 20-30 minutes</p>",
+      "<p><b>Number of People:</b> 6-20 people</p>",
+      "<p><b>Things Needed to Play:</b> Any trivia game access</p>",
+      "<p><b>How to Play:</b> First, divide your team into smaller groups (at least three in each group) and have them challenge off in a trivia battle. You can choose a specific topic for the trivia or create a customized game based on your workplace to make it more engaging.</p>",
+      "</div>",
+
+      "<div class='mt-8'>",
+      "<h3>iv) Weekend in One Word</h3>",
+      "<p><img alt='weekend in one word' src='/assets/blogs/weekend-in-one-word.jpg'/></p>",
+      "<p><b>Time:</b> 3-20 minutes (about one minute per team member)</p>",
+      "<p><b>Number of People:</b> 2-10 people</p>",
+      "<p><b>Things Needed to Play:</b> Just your game spirit</p>",
+      "<p><b>How to Play:</b> In this team-building activity, team members take turns sharing a one-word description of their weekend, but with a twist. Each word must start with a different letter in alphabetical order. It adds an extra challenge to the activity and encourages participants to be creative with their word choices. Team members can also explain why they chose their word or share a funny story about their weekend to make it more engaging. The first person would start with the letter A, and the next person would use the letter B, and so on.</p>",
+      "</div>",
+
+      "<div class='mt-8'>",
+      "<h3>v) Quick Puzzle</h3>",
+      "<p><img alt='quick puzzle' src='/assets/blogs/quick-puzzle.jpg'/></p>",
+      "<p><b>Time:</b> 15-30 minutes</p>",
+      "<p><b>Number of People:</b> 4-15 people</p>",
+      "<p><b>Things Needed to Play:</b> Puzzles of 100 pieces or less</p>",
+      "<p><b>How to Play:</b> To promote teamwork and problem-solving skills, divide your group into smaller teams and give them an unsolved puzzle to solve. The team that finishes the puzzle first wins the game. This activity encourages teams to collaborate and communicate effectively to reach a common goal.</p>",
+      "</div>",
+
+      "<div class='mt-8'>",
+      "<h3>vi) Silent Building Project</h3>",
+      "<p><img alt='silent building project' src='/assets/blogs/silent-building-project.jpg'/></p>",
+      "<p><b>Time:</b> 15-30 minutes</p>",
+      "<p><b>Number of People:</b> 4-20 people</p>",
+      "<p><b>Things Needed to Play:</b> Toothpicks and tape</p>",
+      "<p><b>How to Play:</b> Divide your team into smaller groups and task them with recreating a famous building or site using toothpicks and tape. The catch is that they cannot communicate with each other verbally as they build. Once the teams have completed their creations, have everyone vote on which one resembles the original the most.</p>",
+      "</div>",
+
+      "<div class='mt-8'>",
+      "<h3>vii) Ice Breaker Questions</h3>",
+      "<p><img alt='ice breaker questions' src='/assets/blogs/ice-breaker-questions.jpg'/></p>",
+      "<p><b>Time:</b> 5-10 minutes</p>",
+      "<p><b>Number of People:</b> 5-15 people</p>",
+      "<p><b>Things Needed to Play:</b>  A set of icebreaker questions (<a target='_blank' href='https://asana.com/resources/icebreaker-questions-team-building'>here are 110+ great icebreaker questions!</a>)</p>",
+      "<p><b>How to Play:</b> You can initiate your team-building session by asking an icebreaker question that everyone can answer, or you can distribute a set of questions to each team member to ask one another. This allows your team to connect and get to know each other better, building stronger relationships and improving collaboration.</p>",
+      "</div>",
+
+      "</div>",
+
+      '<div class="sbl-block">',
+      "<h2>3) GROUP VOLUNTEER WORK</h2>",
+      "<p>Group volunteering work is a great way to build stronger relationships among team members while positively impacting your community. Volunteering as a group allows team members to work together towards a common goal, encouraging a sense of unity and shared purpose. Whether volunteering at a local food bank, blood drive, helping clean up a park, or participating in a charity event, group volunteering can be a meaningful and a rewarding experience on its own.</p>",
+      "<p>Working together in a new and unfamiliar environment can challenge team members to think creatively and develop innovative solutions to problems. It is also a good moral-self booster as well as a great team-building activity.</p>",
+
+      "</div>",
+
+      '<div class="sbl-block">',
+      "<h2>4) COMMUNICATION WORKSHOPS</h2>",
+      "<p><img alt='communication workshop' src='/assets/blogs/communication-workshop.jpg'/></p>",
+      "<p>Communication workshops are designed to help individuals and teams enhance their communication skills. They typically cover various topics, from basic communication skills, such as active listening and clear expression, to more complex skills, such as conflict resolution and nonverbal communication.</p>",
+      "<p>Led by a professional facilitator or trainer, the workshops can be tailored to the specific needs of the group or organization. Through instruction, activities, and discussions, participants can learn and practice new communication skills, ultimately improving relationships, reducing misunderstandings, and achieving their goals more effectively.</p>",
+      "</div>",
+
+      '<div class="sbl-block">',
+      "<h2>5) OUTDOOR TEAM-BUILDING ACTIVITIES</h2>",
+
+      "<p>Outdoor team-building activities are excellent for developing teamwork and collaboration while enjoying the outdoors. These activities can take many forms, from traditional ropes and obstacle courses to scavenger hunts and group challenges. Participants must communicate effectively, trust each other, and collaborate to complete the courses. The physical challenges of the courses also require teamwork and support, as individuals may need assistance to reach certain areas or overcome difficult obstacles.</p>",
+      "<p>The benefits of outdoor team-building activities include improved communication, problem-solving, and leadership skills and increased trust and communion among team members. Outdoor activities can help individuals step outside their comfort zones, building resilience and adaptability. Outdoor team-building activities provide a unique and exciting way to strengthen teams and promote a positive and productive work environment.</p>",
+      "<p>If you're looking for an effective way to boost team collaboration and enhance workplace relationships, escape rooms at All in Adventures should be at the top of your list, all in the guise of having fun. The immersive and challenging environment of an escape room provides a unique opportunity for team members to develop communication, problem-solving, and delegation skills while building trust and rapport. </p>",
+      "<p>All in Adventures offers a variety of escape room themes and difficulty levels, ensuring that there is something for everyone. Plus, our <a href='/events/team-building'>team-building package</a> provides a private party room where you can discuss the experience after the game, perhaps over lunch; choose your catering options and let us do the rest.</p>",
+      "<p>So, what are you waiting for? <a href='/events/team-building#eventform'>Book an escape room experience with All in Adventures</a> today and see the difference it can make for your team!</p>",
+      "</div>",
+    ],
+    relatedblogdata: [
+      {
+        id: "1",
+        slug: "what-kind-of-leaf-is-this",
+        ftimg: "/assets/blogs/blog-ft.jpg",
+        title: "What kind of leaf is this?",
+        blogdesc:
+          "You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+        authimg: "/assets/blogs/blog-auth1.png",
+        authname: "by Brian Capps",
+        blogcategory: [
+          {
+            id: "1",
+            name: "Escape Room",
+            slug: "escape-room",
+          },
+          {
+            id: "2",
+            name: "Team Building",
+            slug: "team-building",
+          },
+        ],
+        lastupdate: "April 02, 2022",
+      },
+      {
+        id: "2",
+        slug: "what-kind-of-leaf-is-this",
+        ftimg: "/assets/blogs/blog-ft.jpg",
+        title: "1. What kind of leaf is this What kind of leaf is this?",
+        blogdesc:
+          "You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+        authimg: "/assets/blogs/blog-auth1.png",
+        authname: "by Brian Capps",
+        blogcategory: [
+          {
+            id: "1",
+            name: "Escape Room",
+            slug: "escape-room",
+          },
+          {
+            id: "2",
+            name: "Team Building",
+            slug: "team-building",
+          },
+        ],
+        lastupdate: "May 18, 2022",
+      },
+    ],
+  },
+  "how-to-improve-your-chances-of-escaping-an-escape-room": {
+    pagemeta: {
+      title: "HOW TO IMPROVE YOUR CHANCES OF ESCAPING AN ESCAPE ROOM",
+      description:
+        "It is commonly believed that being good at escape rooms is a matter of being good at puzzles and solving problems; while it is a valuable skill to have in an escape room, remember that an escape room game is a team game. The real key to escaping is strategically getting your team to work together most efficiently.",
+      keywords:
+        "escape room improve,escape room tips,escape room guid, play an escape room,book escape room, escape room news, all in adventures articles,",
+      url: "how-to-improve-your-chances-of-escaping-an-escape-room",
+      metaindex: true,
+      metaimg:
+        "/assets/blogs/hero-how-to-improve-your-chances-of-escaping-an-escape-room.jpg",
+    },
+    pagedata: {
+      pagetitle: "HOW TO IMPROVE YOUR CHANCES OF ESCAPING AN ESCAPE ROOM",
+      description:
+        "It is commonly believed that being good at escape rooms is a matter of being good at puzzles and solving problems; while it is a valuable skill to have in an escape room, remember that an escape room game is a team game. The real key to escaping is strategically getting your team to work together most efficiently.",
+      ftimg:
+        "/assets/blogs/hero-how-to-improve-your-chances-of-escaping-an-escape-room.jpg",
+    },
+    bloginfo: {
+      authimg: "/assets/blogs/blog-auth1.png",
+      authname: "Brian Capps",
+      popular: false,
+      blogcategory: [
+        {
+          id: "1",
+          name: "Escape Room",
+          slug: "escape-room",
+        },
+        {
+          id: "2",
+          name: "Tips & tricks",
+          slug: "tips-and-tricks",
+        },
+      ],
+      createdate: "June 27, 2023",
+      lastupdate: "June 27, 2023",
+    },
+    blogdesc: [
+      '<div class="sbl-block">',
+      "<p>It is commonly believed that being good at escape rooms is a matter of being good at puzzles and solving problems; while it is a valuable skill to have in an escape room, remember that an escape room game is a team game. The real key to escaping is strategically getting your team to work together most efficiently.</p>",
+      "<p>Unfamiliar with the concept of an escape room? <a href='/what-is-an-escape-room'>Click here</a> to learn more.</p>",
+      "<p>Escape rooms are a fun and exciting way to test your problem-solving skills with friends or family, but they can be pretty challenging if you are unfamiliar with the best methods to make a successful escape. </p>",
+      "<p>This article shall touch upon some of the best tips and strategies to help you and your team improve your chances of escaping an escape room.</p>",
+      "</div>",
+
+      '<div class="sbl-block">',
+
+      "<h3>ASSEMBLE YOUR TEAM WISELY</h3>",
+      "<p><img alt='assemble your team wisely' src='/assets/blogs/assemble-your-team-wisely.jpg'/></p>",
+      "<p>When it comes to solving escape room puzzles, effective communication and coordination among teammates are essential. This also means that choosing the right group of people and assigning them to tasks that best suit them, can make all the difference.</p>",
+      "<p>The main goal of an escape room experience is to have fun, so it's always a good idea to do an escape room with good friends, colleagues and people you get along well with. </p>",
+      "<p>It would be best to consider that different skills from each of your teammates will bring something different to the table; an escape room may involve number puzzles, so it is always worth having someone good with numbers on your team. People in an escape room may surprise you with their dormant talents, and you might find out they have a skill you didn't know about before the game!</p>",
+
+      "<h3>ENSURE PROPER COMMUNICATION</h3>",
+      "<p>Work together as a team. Escape rooms are designed to be solved together, so make sure to communicate and cooperate with your teammates, and encourage the team to not be afraid to share your thoughts and ideas.</p>",
+      "<p>It is easy to lose yourself in your thoughts and forget that you have an entire team there to help you. Two heads are better than one, so use as many of them as you can! Make sure that if you or your teammates find a clue, communicate it to the rest of your group. They likely have other pieces of the puzzle that connect to your clue.</p>",
+      "<p>Furthermore, if you have been stuck with a specific clue or puzzle, don't hesitate to ask the rest of your team for help! Sometimes all you need is another set of eyes that will see things differently. Don't hesitate to ask your fellow teammates for help. It is a team game, after all!</p>",
+
+      "<h3>SEARCH EVERYWHERE AND EVERYPLACE</h3>",
+      "<p><img alt='search everywhere and everyplace' src='/assets/blogs/search-everywhere-and-everyplace.jpg'/></p>",
+      "<p>Make sure to thoroughly search the room for objects and puzzles. Try to seek out tricky spots where an item of interest might be hidden. But don't waste time looking in places where you need to break something or apply excessive force to get to; it's not there! Listen to the rules and know where not to look; it'll save you a lot of time. </p>",
+      "<p>Sometimes in the haste of it all, players waste valuable time searching in irrelevant places, so listen to the instructions carefully. Make sure the room is combed thoroughly and no area is being overlooked.</p>",
+
+      "<h3>TIME MANAGEMENT</h3>",
+      "<p>Always keep an eye on the clock; otherwise, your time will quickly start slipping away, even though an hour might initially seem to be a long time. When you first enter the room, it is a good idea to not waste time and start looking for clues and collecting items from around the room. This will also help you to start off at a fast pace. </p>",
+      "<p>If you find yourself stuck on a puzzle, don't waste too much time on it. Chances are that you might not yet have all the information to solve it, so move on elsewhere, and then you can return to it with more information or a fresh perspective.</p>",
+
+      "<h3>ORGANIZE YOUR ITEMS INTO AN INVENTORY</h3>",
+      "<p>Organizing the items you find in your escape room will make your life much easier. If you happen to find something that looks like a puzzle but doesn't do anything yet, there is a good chance you will need it later in the game. </p>",
+      "<p>Try keeping all your items in one place; that way, you don't have to rush and think about where you left the item when you will need it. Once you use something, forget about it, most escape rooms won't make you use items twice, and you will only have a few items to worry about and focus on.</p>",
+
+      "<h3>SOLUTION IN SIMPLICITY</h3>",
+      "<p>A lot of groups tend to overcomplicate everything. Trying to think up of the most complex of solutions. The truth is, most of the time, the most straightforward answer turns out to be the correct answer.</p>",
+      "<p>Remember that you don't need outside knowledge to solve most escape rooms; everything that you could possibly need to make your escape is provided inside the room.</p>",
+
+      "<h3>DIVIDE AND CONQUER</h3>",
+      "<p><img alt='getting stuck at beginning' src='/assets/blogs/divide-and-conquer.jpg'/></p>",
+      "<p>Splitting the team into pairs, groups or on your own when trying to solve puzzles is crucial. You are wasting valuable time if everyone groups around one puzzle trying to solve it at the same time. </p>",
+      "<p>Dividing and covering more ground should be your tactic in the room. If you struggle to solve a puzzle, don't bring everyone together to solve it; just move on to a different puzzle and swap with another person.</p>",
+
+      "<h3>DON'T BE RELUCTANT TO ASK FOR A CLUE</h3>",
+
+      "<p>If you are stuck, feel free to ask for a clue. You don't wanna end up having wasted your time on one puzzle; that will be a real bummer as this will result in you not having enough time left to complete the room and not fully enjoying the experience. </p>",
+      "<p>The clues are there to help you, and they will be designed so that each puzzle will have several different clues so that the first clue will not reveal too much but can give you a gentle push in the right direction.</p>",
+
+      "</div>",
+
+      '<div class="sbl-block">',
+      "<h2>ADDITIONAL TIPS</h2>",
+      "<p><img alt='additional tips' getting stuck at beginning' src='/assets/blogs/additional-tips-2.jpg'/></p>",
+      "<p>As long as you follow the mentioned tips as your guideline, it will increase your chance to win by a few times fold. </p>",
+      "<p>There are still a few more simple tips that can easily be overlooked or not paid much attention to, have a quick look:</p>",
+      "<ul class='list-disc'> ",
+      "<li>Decide on a group leader before the game starts.</li>",
+      "<li>Listen to the instructions and guidelines carefully.</li>",
+      "<li>Observe and take note of your surroundings.</li>",
+      "<li>Think outside the box.</li>",
+      "<li>Remain calm and focused.</li>",
+      "<li>Don't overdress.</li>",
+      "<li>Last but not least, HAVE FUN!</li>",
+
+      "</ul>",
+      "</div>",
+
+      '<div class="sbl-block">',
+      "<h2>HOW TO BOOK YOUR NEXT EVENT</h2>",
+      "<p>Looking for an escape room adventure? Look no further than <a href='/locations'>All In Adventures</a> for your next escape room experience! Book now and prepare to be fully immersed in a thrilling world of puzzles, challenges, and excitement.</p>",
+      "<p>Click the &quot;BOOK GAMES&quot; button and choose your location to get an instant online booking for a group of 2-10 people.</p>",
+      "<p><a href='/events'>Planning an event</a> with a large group of over 10 people? We've got you covered! Contact one of our <a href='/locations'>local stores</a>, and we will take you through the process and get you our special deals.</p>",
+      "</div>",
+    ],
+    relatedblogdata: [
+      {
+        id: "1",
+        slug: "what-kind-of-leaf-is-this",
+        ftimg: "/assets/blogs/blog-ft.jpg",
+        title: "What kind of leaf is this?",
+        blogdesc:
+          "You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+        authimg: "/assets/blogs/blog-auth1.png",
+        authname: "by Brian Capps",
+        blogcategory: [
+          {
+            id: "1",
+            name: "Escape Room",
+            slug: "escape-room",
+          },
+          {
+            id: "2",
+            name: "Team Building",
+            slug: "team-building",
+          },
+        ],
+        lastupdate: "April 02, 2022",
+      },
+      {
+        id: "2",
+        slug: "what-kind-of-leaf-is-this",
+        ftimg: "/assets/blogs/blog-ft.jpg",
+        title: "1. What kind of leaf is this What kind of leaf is this?",
+        blogdesc:
+          "You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+        authimg: "/assets/blogs/blog-auth1.png",
+        authname: "by Brian Capps",
+        blogcategory: [
+          {
+            id: "1",
+            name: "Escape Room",
+            slug: "escape-room",
+          },
+          {
+            id: "2",
+            name: "Team Building",
+            slug: "team-building",
+          },
+        ],
+        lastupdate: "May 18, 2022",
+      },
+    ],
+  },
+  "how-to-avoid-the-most-common-escape-room-mistakes": {
+    pagemeta: {
+      title: "HOW TO AVOID THE MOST COMMON ESCAPE ROOM MISTAKES",
+      description:
+        "It is natural to want to beat the escape room as soon as you possibly can, emerge victorious and feel like a detective. In haste to do so, many groups end up making the same mistakes, so we thought we could help you avoid such commonly seen mistakes.",
+      keywords:
+        "escape room mistake,avoid escape room mistake,escape room tips,escape room guid, play an escape room,book escape room, escape room news, all in adventures articles,",
+      url: "how-to-avoid-the-most-common-escape-room-mistakes",
+      metaindex: true,
+      metaimg:
+        "/assets/blogs/hero-image-how-to-avoid-the-most-common-escape-room-mistakes.jpg",
+    },
+    pagedata: {
+      pagetitle: "HOW TO AVOID THE MOST COMMON ESCAPE ROOM MISTAKES",
+      description:
+        "It is natural to want to beat the escape room as soon as you possibly can, emerge victorious and feel like a detective. In haste to do so, many groups end up making the same mistakes, so we thought we could help you avoid such commonly seen mistakes.",
+      ftimg:
+        "/assets/blogs/hero-image-how-to-avoid-the-most-common-escape-room-mistakes.jpg",
+    },
+    bloginfo: {
+      authimg: "/assets/blogs/blog-auth1.png",
+      authname: "Brian Capps",
+      popular: false,
+      blogcategory: [
+        {
+          id: "1",
+          name: "Escape Room",
+          slug: "escape-room",
+        },
+        {
+          id: "2",
+          name: "Tips & tricks",
+          slug: "tips-and-tricks",
+        },
+      ],
+      createdate: "June 22, 2023",
+      lastupdate: "June 22, 2023",
+    },
+    blogdesc: [
+      '<div class="sbl-block">',
+      "<p>It is natural to want to beat the escape room as soon as you possibly can, emerge victorious and feel like a detective. In haste to do so, many groups end up making the same mistakes, so we thought we could help you avoid such commonly seen mistakes.</p>",
+      "<p>Unfamiliar with the concept of an escape room? <a href='/what-is-an-escape-room'>Click here</a> to learn more.</p>",
+      "<p>Remember that escape rooms aren't designed to be super easy, but you will widen your chance to be victorious if you avoid these common escape room mistakes, as listed below!</p>",
+
+      "</div>",
+
+      '<div class="sbl-block">',
+
+      "<h3>NOT COMMUNICATING</h3>",
+      "<p><img alt='not communicating' src='/assets/blogs/hta-not-communicating.jpg'/></p>",
+      "<p>This takes the prize when it comes to the biggest mistake teams make in the game. When you find anything interesting, make sure your teammates know all the information regarding the item or clue.</p>",
+      "<p>Never return things of interest to where you found them; otherwise, your teammates won't know it's been found.</p>",
+      "<p>Also, feel free to share your thoughts and ideas with the rest when solving a puzzle! Even if you're worried that it's silly or that you might be wrong, you never know when one of your teammates might have their eureka moment and solve the puzzle.</p>",
+      "<p>Communication also includes listening, so pay attention to your teammates! Don't disregard any ideas, even if they seem like grasping at straws or appear silly.</p>",
+
+      "<h3>POOR TIME MANAGEMENT</h3>",
+      "<p>Due to the limited time in an escape room, if your team is unable to solve all the puzzles and make an escape, the game will be lost. </p>",
+      "<p>Once the clock starts to click, you have no time to waste and should dive right in, looking for clues and anything of interest.</p>",
+      "<p>Not all puzzles are easy to solve, so if you and your team spend too much time on one puzzle, it's a good strategy to move on to the next and return to this puzzle later. </p>",
+      "<p>Splitting up the team for individual tasks is another option to cover more within the limited time and focus on various tasks simultaneously.</p>",
+
+      "<h3>NOT TAKING INVENTORY</h3>",
+
+      "<p>Your group may be stuck and can't find the combination of a lock, but the combination has actually already been found, just overlooked or forgotten about.</p>",
+      "<p>To avoid running into such issues, make an inventory, and divide them into two separate piles - a pile of all the objects that have been used and another pile of things yet to be used.</p>",
+      "<p>This organization system can help you when you are stuck; you can revisit the pile of items instead of wandering around the room.</p>",
+
+      "<h3>NOT ASKING FOR HELP</h3>",
+      "<p><img alt='not asking for help' src='/assets/blogs/not-asking-for-help.jpg'/></p>",
+      "<p>A big ego won't help your escape! If you've spent over five minutes without any solid leads on a puzzle, feel free to ask for help. It's way better to escape by asking for clues than to not escape without any help; there isn't any penalty if you seek help.</p>",
+      "<p>It's okay to admit when you need help. It doesn't mean you're not smart, it usually means you've probably just overlooked something small, and you only need a slight nudge in the right direction to get the momentum going.</p>",
+
+      "<h3>KEEPING THE GOOD IDEAS TO YOURSELF</h3>",
+      "<p>In the escape room, information is as invaluable as time. Patterns, numbers, intuitions, educated guesses, leaps of faith that you cannot explain, any of these might potentially be the key to solving the puzzles.</p>",
+      "<p>Withholding information in the hope that you can figure out a puzzle all by yourself will not bode your team well in the escape room.</p>",
+      "<p>Remember that the game is not designed to be done with all alone; it's all about teamwork.</p>",
+
+      "<h3>LOSING YOUR COOL</h3>",
+      "<p><img alt='losing your cool' src='/assets/blogs/losing-your-cool.jpg'/></p>",
+      "<p>An escape room is no place for an argument; however, it happens frequently and is detrimental to the entire team.</p>",
+      "<p>Between the drama of the escape room scenario, the ticking of the clock, and adrenaline surges, keeping your cool will be of an invaluable advantage.</p>",
+
+      "<h3>NOT PAYING ATTENTION TO THE GIVEN INFORMATION</h3>",
+      "<p>All the information you are provided inside the escape room is important; keep your excitement from making you less attentive to detail.</p>",
+      "<p>Listening to the briefing and the story can help you understand what to look for, what to ignore and how to utilize your time in the game. </p>",
+
+      "<h3>GETTING STUCK AT THE BEGINNING</h3>",
+      "<p><img alt='getting stuck at beginning' src='/assets/blogs/getting-stuck-at-beginning.jpg'/></p>",
+      "<p>If you can't solve a puzzle, don't waste too much time; move on. Because a puzzle presents itself first in the escape room doesn't mean it must be solved immediately, and it may be something that can be solved later with a new piece of information.</p>",
+
+      "<h3>GIVING UP TOO SOON</h3>",
+      "<p>Obviously, escape rooms are not meant to be easy, but don't let that sway you from your goal of seeing this game through to the end. </p>",
+      "<p>So, whenever you feel stuck, don't have the answer, or simply have a moment of confusion in solving a puzzle, remember that you are not alone and are here to make a memorable experience.</p>",
+      "<p>Visit our adventurers' gallery and look at the wonderful memories being made here at All In Adventures.</p>",
+      "<p>Okay, so to sum it up, as long as you follow the points mentioned above and use them as a guide to prevent you from making the same mistakes, you have an excellent chance to ace your next escape room game.</p>",
+      "<p>However, don't get lost in all these guidelines and forget to have fun. Not having fun is the biggest mistake you could possibly make in an escape room, as it defeats the very purpose of playing the game. </p>",
+      "<p>So, whatever you do, remember to have fun!</p>",
+      "<p>Have more questions? Chances are, your questions have already been covered in the FAQ section.</p>",
+
+      "</div>",
+
+      '<div class="sbl-block">',
+      "<h2>HOW TO BOOK YOUR NEXT EVENT</h2>",
+      "<p>Looking for an escape room adventure? Look no further than <a href='/locations'>All In Adventures</a> for your next escape room experience! Book now and prepare to be fully immersed in a thrilling world of puzzles, challenges, and excitement.</p>",
+      "<p>Click the &quot;BOOK GAMES&quot; button and choose your location to get an instant online booking for a group of 2-10 people.</p>",
+      "<p><a href='/events'>Planning an event</a> with a large group of over 10 people? We've got you covered! Contact one of our <a href='/locations'>local stores</a>, and we will take you through the process and get you our special deals.</p>",
+      "</div>",
+    ],
+    relatedblogdata: [
+      {
+        id: "1",
+        slug: "what-kind-of-leaf-is-this",
+        ftimg: "/assets/blogs/blog-ft.jpg",
+        title: "What kind of leaf is this?",
+        blogdesc:
+          "You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+        authimg: "/assets/blogs/blog-auth1.png",
+        authname: "by Brian Capps",
+        blogcategory: [
+          {
+            id: "1",
+            name: "Escape Room",
+            slug: "escape-room",
+          },
+          {
+            id: "2",
+            name: "Team Building",
+            slug: "team-building",
+          },
+        ],
+        lastupdate: "April 02, 2022",
+      },
+      {
+        id: "2",
+        slug: "what-kind-of-leaf-is-this",
+        ftimg: "/assets/blogs/blog-ft.jpg",
+        title: "1. What kind of leaf is this What kind of leaf is this?",
+        blogdesc:
+          "You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+        authimg: "/assets/blogs/blog-auth1.png",
+        authname: "by Brian Capps",
+        blogcategory: [
+          {
+            id: "1",
+            name: "Escape Room",
+            slug: "escape-room",
+          },
+          {
+            id: "2",
+            name: "Team Building",
+            slug: "team-building",
+          },
+        ],
+        lastupdate: "May 18, 2022",
+      },
+    ],
+  },
+  "how-to-assemble-your-team-for-an-epic-escape-room-experience": {
+    pagemeta: {
+      title: "HOW TO ASSEMBLE YOUR TEAM FOR AN EPIC ESCAPE ROOM EXPERIENCE",
+      description:
+        "Escape room is the game that has taken the world by storm. It's fun and exciting. And most importantly, it's an experience that involves players of all ages and skill levels. Escape room games transform the world around adventure seekers through an immersive experience. Each room has a specific theme, and players are encouraged to play different characters for a fun experience.",
+      keywords:
+        "escape room party,escape room party hosting,escape room guest,escape room tutorial, play an escape room,book escape room, escape room news, all in adventures articles,",
+      url: "how-to-assemble-your-team-for-an-epic-escape-room-experience",
+      metaindex: true,
+      metaimg:
+        "/assets/blogs/hero-how-to-assemble-your-team-for-an-epic-escape-room-experience.jpg",
+    },
+    pagedata: {
+      pagetitle: "HOW TO ASSEMBLE YOUR TEAM FOR AN EPIC ESCAPE ROOM EXPERIENCE",
+      description:
+        "Escape room is the game that has taken the world by storm. It's fun and exciting. And most importantly, it's an experience that involves players of all ages and skill levels. Escape room games transform the world around adventure seekers through an immersive experience. Each room has a specific theme, and players are encouraged to play different characters for a fun experience.",
+      ftimg:
+        "/assets/blogs/hero-how-to-assemble-your-team-for-an-epic-escape-room-experience.jpg",
+    },
+    bloginfo: {
+      authimg: "/assets/blogs/blog-auth1.png",
+      authname: "Brian Capps",
+      popular: false,
+      blogcategory: [
+        {
+          id: "1",
+          name: "Escape Room",
+          slug: "escape-room",
+        },
+        {
+          id: "2",
+          name: "Things to Do",
+          slug: "things-to-do",
+        },
+      ],
+      createdate: "June 16, 2023",
+      lastupdate: "June 16, 2023",
+    },
+    blogdesc: [
+      '<div class="sbl-block">',
+      "<p>Escape room is the game that has taken the world by storm. It's fun and exciting. And most importantly, it's an experience that involves players of all ages and skill levels. Escape room games transform the world around adventure seekers through an immersive experience. Each room has a specific theme, and players are encouraged to play different characters for a fun experience.</p>",
+      "<p>Have a look at <a href='/activities'>all our game themes</a> at All In Adventures.</p>",
+      "<p>No matter the theme, every escape room has a straightforward objective: beat the clock. With just fifty minutes to the game, players have to work together to unlock the mysteries of the room and solve the puzzles. It's a mission; you'll need the best escape room team to win.</p>",
+      "<p>Need to familiarize yourself with the concept of an escape room? <a href='/what-is-an-escape-room'>Click here</a> to learn more.</p>",
+
+      "</div>",
+
+      '<div class="sbl-block">',
+      "<h2>DRAFTING YOUR ESCAPE ROOM TEAM</h2>",
+
+      "<h3>JUST GATHER YOUR CLOSEST FEW FRIENDS</h3>",
+      "<p><img alt='Escape room Leader' src='/assets/blogs/gather-your-closest-few-friends.jpg'/></p>",
+      "<p>This is the most common strategy; gather the ones you usually go to the movies or hang out with. While this may feel like the right thing to do, it could also leave your team lacking in some areas. This is the strategy for people who only care a little about winning.</p>",
+      "<p>It's okay to experience something with your friends over the thrilling sensation of winning; perhaps you can have both! But for those who really hate the thought of losing, read on to check out more strategies.</p>",
+
+      "<h3>THE RANDOMIZATION STRATEGY</h3>",
+      "<p>This one may or may not be better than the previous method of choosing your closest friends. However, random selection will expel any biased you may have in selecting your teammates and will ensure that the team is comprised of a more diverse skillset and mentality of people. However you want to choose your teammates is up to you, but do keep in mind the following aspects that your team should have for a better shot at winning.</p>",
+      "<h3>THE LEADER:</h3>",
+      "<p><img alt='Escape room Leader' src='/assets/blogs/leader.jpg'/></p>",
+      "<p>Every group needs a leader. And if you're organizing the event, you are likely the leader. As the leader, you will bring order to your group. You will ensure communication and direct your teammates as they carry out their duties. Make sure you have a booking, and your team is punctual.</p>",
+      "<p>Book your escape room at All In Adventures.</p>",
+      "<p>But remember, this is a game. The best leaders are non-judgmental and support the team; they always know when and where to lend a hand.</p>",
+      "<h3>THE HUNTER:</h3>",
+      "<p>The hunter is responsible for fishing out clues. Once the clock has started, &quot;the hunter&quot; searches every nook and cranny for possible leads. When a clue is found, it should be handed to the leader to be put into the inventory for later use.</p>",
+      "<p>The hunter is an essential part of the group. Find your friend with a curious nature, one who loves to explore. They will enjoy the opportunity to be the investigator of the group.</p>",
+
+      "<h3>PUZZLE MASTER:</h3>",
+      "<p><img alt='Escape room Leader' src='/assets/blogs/puzzle-master.jpg'/></p>",
+      "<p>This could be your friend who is good at math. Or maybe, it could be your friend who is a bookworm. In any case, this is the teammate who tends to analyze everything. They will inevitably become one of your puzzle masters. The analyst comes in handy with complex clues. Let the puzzle master sit down with a puzzle and think it through.</p>",
+      "<p>Having two Puzzle Masters may not be such a bad idea. This could be your street-smart friend. They never overthink anything; they say it as they see it. The unassuming genius is excellent for quickly solving clues without the headache of overcomplicated critique. Explore how you can couple or divide the efforts of your two puzzle masters. Combining the talents of both book and street smarts.</p>",
+
+      "<h3>THE SUPPORT:</h3>",
+      "<p>This is an essential member of your team. They might not be searching for clues or solving puzzles, but they are there to complement everyone's efforts, like a cheerleader. The support encourages the team when the group is having difficulty finding clues.</p>",
+      "<p>This will ensure high morale for your squad throughout the game. Each escape room team will benefit from a supportive teammate who can maintain a good spirit and energize everyone.</p>",
+
+      "<h3>THE ORGANIZER:</h3>",
+      "<p><img alt='Escape room Leader' src='/assets/blogs/the-organizer.jpg'/></p>",
+      "<p>This is the player in your team who has a knack for organizing. If you have a friend who likes bringing order to chaos, recruit them as your organizer.</p>",
+      "<p>In this role, your friend will get to organize and categorize clues. They will bring the game to a system that will clear the way for better thinking and faster solving.</p>",
+
+      "<h3>THE JOKER:</h3>",
+      "<p><img alt='Escape room Leader' src='/assets/blogs/the-joker.jpg'/></p>",
+      "<p>You might have a friend who is just there for a laugh. They may want to take advantage to have a good laugh and might not even be sure what an escape room is.</p>",
+      "<p>While everyone else tries to solve the puzzle and find clues, the joker will ensure the team stays light-hearted. During an intense 50 minutes escape game, the team needs someone to keep things light; remember that the purpose of playing an escape room game is to have fun!</p>",
+      "<p>Check out the <a href='/gallery'>fun memories made here at All In Adventures.</a></p>",
+      "</div>",
+
+      '<div class="sbl-block">',
+      "<h2>HOW TO BOOK YOUR NEXT EVENT</h2>",
+      "<p>Looking for an escape room adventure? Look no further than <a href='/locations'>All In Adventures</a> for your next escape room experience! Book now and prepare to be fully immersed in a thrilling world of puzzles, challenges, and excitement.</p>",
+      "<p>Click the &quot;BOOK GAMES&quot; button and choose your location to get an instant online booking for a group of 2-10 people.</p>",
+      "<p><a href='/events'>Planning an event</a> with a large group of over 10 people? We've got you covered! Contact one of our <a href='/locations'>local stores</a>, and we will take you through the process and get you our special deals.</p>",
+      "</div>",
+    ],
+    relatedblogdata: [
+      {
+        id: "1",
+        slug: "what-kind-of-leaf-is-this",
+        ftimg: "/assets/blogs/blog-ft.jpg",
+        title: "What kind of leaf is this?",
+        blogdesc:
+          "You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+        authimg: "/assets/blogs/blog-auth1.png",
+        authname: "by Brian Capps",
+        blogcategory: [
+          {
+            id: "1",
+            name: "Escape Room",
+            slug: "escape-room",
+          },
+          {
+            id: "2",
+            name: "Team Building",
+            slug: "team-building",
+          },
+        ],
+        lastupdate: "April 02, 2022",
+      },
+      {
+        id: "2",
+        slug: "what-kind-of-leaf-is-this",
+        ftimg: "/assets/blogs/blog-ft.jpg",
+        title: "1. What kind of leaf is this What kind of leaf is this?",
+        blogdesc:
+          "You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
+        authimg: "/assets/blogs/blog-auth1.png",
+        authname: "by Brian Capps",
+        blogcategory: [
+          {
+            id: "1",
+            name: "Escape Room",
+            slug: "escape-room",
+          },
+          {
+            id: "2",
+            name: "Team Building",
+            slug: "team-building",
+          },
+        ],
+        lastupdate: "May 18, 2022",
+      },
+    ],
+  },
   "how-hosting-an-escape-room-party-leaves-your-guests-in-awe": {
     pagemeta: {
       title: "HOW HOSTING AN ESCAPE ROOM PARTY LEAVES YOUR GUESTS IN AWE",
@@ -2120,18 +2784,13 @@ const AllblogDataobj = {
       blogcategory: [
         {
           id: "1",
-          name: "Things to Do",
-          slug: "things-to-do",
-        },
-        {
-          id: "1",
           name: "Escape Room",
           slug: "escape-room",
         },
         {
           id: "2",
-          name: "Team Building",
-          slug: "team-building",
+          name: "Things to Do",
+          slug: "things-to-do",
         },
       ],
       lastupdate: "April 12, 2023",
@@ -2411,190 +3070,7 @@ const AllblogDataobj = {
       },
     ],
   },
-  "how-to-improve-your-chances-of-escaping-an-escape-room": {
-    pagemeta: {
-      title: "How To Improve Your Chances Of Escaping An Escape Room?",
-      description:
-        "It is commonly believed that being good at escape rooms is a matter of being good at puzzles and solving problems; while it is a valuable skill to have in an escape room, remember that an escape room game is a team game. The real key to escaping is strategically getting your team to work together most efficiently.",
-      keywords:
-        "escape room skill, all in adventures blog, mystery room blog, escape room improvement, all in adventures news, mystery room articles,",
-      url: "how-to-improve-your-chances-of-escaping-an-escape-room",
-      metaindex: true,
-      metaimg:
-        "/assets/blogs/HOW-TO-IMPROVE-YOUR-CHANCES-OF-ESCAPING-AN-ESCAPE-ROOM.jpg",
-    },
-    pagedata: {
-      pagetitle: "HOW TO IMPROVE YOUR CHANCES OF ESCAPING AN ESCAPE ROOM?",
-      description:
-        "It is commonly believed that being good at escape rooms is a matter of being good at puzzles and solving problems; while it is a valuable skill to have in an escape room, remember that an escape room game is a team game. The real key to escaping is strategically getting your team to work together most efficiently.",
-      ftimg:
-        "/assets/blogs/HOW-TO-IMPROVE-YOUR-CHANCES-OF-ESCAPING-AN-ESCAPE-ROOM.jpg",
 
-      totalLocations: getTotal().totalLocations,
-    },
-    bloginfo: {
-      authimg: "/assets/blogs/blog-auth1.png",
-      authname: "Brian Capps",
-      blogcategory: [
-        {
-          id: "1",
-          name: "Escape Room",
-          slug: "escape-room",
-        },
-        {
-          id: "2",
-          name: "things to Do",
-          slug: "things-to-do",
-        },
-      ],
-      lastupdate: "March 28, 2023",
-    },
-    blogdesc: [
-      '<div class="sbl-block">',
-      "<p>It is commonly believed that being good at escape rooms is a matter of being good at puzzles and solving problems; while it is a valuable skill to have in an escape room, remember that an escape room game is a team game. The real key to escaping is strategically getting your team to work together most efficiently.</p>",
-      '<p>Unfamiliar with the concept of an escape room? <a href="/what-is-an-escape-room" class="text-red-600 hover:text-red-700">Click here</a> to learn more.</p>',
-      "<p>Escape rooms are a fun and exciting way to test your problem-solving skills with friends or family, but they can be pretty challenging if you are unfamiliar with the best methods to make a successful escape. </p>",
-      "<p>This article shall touch upon some of the best tips and strategies to help you and your team improve your chances of escaping an escape room</p>",
-      "<div>",
-      "<h3>ASSEMBLE YOUR TEAM WISELY</h3>",
-      "<p>When it comes to solving escape room puzzles, effective communication and coordination among teammates are essential. This also means that choosing the right group of people and assigning them to tasks that best suit them, can make all the difference. </p>",
-      '<p><img src="/assets/blogs/A-COMPELLING-STORY.jpg"/></p>',
-      "<p>The main goal of an escape room experience is to have fun, so it's always a good idea to do an escape room with good friends, colleagues and people you get along well with. </p>",
-
-      "<p>It would be best to consider that different skills from each of your teammates will bring something different to the table; an escape room may involve number puzzles, so it is always worth having someone good with numbers on your team. People in an escape room may surprise you with their dormant talents, and you might find out they have a skill you didn't know about before the game!</p>",
-
-      "</div>",
-      "<div>",
-      "<h3>PURPOSEFUL DECOR</h3>",
-      "<p>As you know, escape rooms have a theme and follow a plot, and the theme is communicated through the room's decor. An Escape room should thus be immaculately decorated and detailed. Every piece of furniture, art, book, every detail should fit into the world of the escape room. The player should feel that every single object could be a potential clue.</p>",
-
-      "</div>",
-      "<div>",
-      "<h3>ENSURE PROPER COMMUNICATION</h3>",
-      "<p>Work together as a team. Escape rooms are designed to be solved together, so make sure to communicate and cooperate with your teammates, and encourage the team to not be afraid to share your thoughts and ideas.</p>",
-      "<p>It is easy to lose yourself in your thoughts and forget that you have an entire team there to help you. Two heads are better than one, so use as many of them as you can! Make sure that if you or your teammates find a clue, communicate it to the rest of your group. They likely have other pieces of the puzzle that connect to your clue.</p>",
-      "<p>Furthermore, if you have been stuck with a specific clue or puzzle, don't hesitate to ask the rest of your team for help! Sometimes all you need is another set of eyes that will see things differently. Don't hesitate to ask your fellow teammates for help. It is a team game, after all!</p>",
-
-      "</div>",
-      "<div>",
-      "<h3>SEARCH EVERYWHERE AND EVERYPLACE</h3>",
-      "<p>Make sure to thoroughly search the room for objects and puzzles. Try to seek out tricky spots where an item of interest might be hidden. But don't waste time looking in places where you need to break something or apply excessive force to get to; it's not there! Listen to the rules and know where not to look; it'll save you a lot of time. </p>",
-      "<p>Sometimes in the haste of it all, players waste valuable time searching in irrelevant places, so listen to the instructions carefully. Make sure the room is combed thoroughly and no area is being overlooked.</p>",
-
-      "</div>",
-      "<div>",
-      "<h3>TIME MANAGEMENT</h3>",
-      "<p>Always keep an eye on the clock; otherwise, your time will quickly start slipping away, even though an hour might initially seem to be a long time. When you first enter the room, it is a good idea to not waste time and start looking for clues and collecting items from around the room. This will also help you to start off at a fast pace. </p>",
-      "<p>If you find yourself stuck on a puzzle, don't waste too much time on it. Chances are that you might not yet have all the information to solve it, so move on elsewhere, and then you can return to it with more information or a fresh perspective.</p>",
-
-      "</div>",
-      "<div>",
-      "<h3>ORGANIZE YOUR ITEMS INTO AN INVENTORY</h3>",
-      "<p>Organizing the items you find in your escape room will make your life much easier. If you happen to find something that looks like a puzzle but doesn't do anything yet, there is a good chance you will need it later in the game. </p>",
-      "<p>Try keeping all your items in one place; that way, you don't have to rush and think about where you left the item when you will need it. Once you use something, forget about it, most escape rooms won't make you use items twice, and you will only have a few items to worry about and focus on.</p>",
-
-      "</div>",
-      "<div>",
-      "<h3>SOLUTION IN SIMPLICITY</h3>",
-      "<p>A lot of groups tend to overcomplicate everything. Trying to think up of the most complex of solutions. The truth is, most of the time, the most straightforward answer turns out to be the correct answer.</p>",
-      "<p>Remember that you don't need outside knowledge to solve most escape rooms; everything that you could possibly need to make your escape is provided inside the room.</p>",
-
-      "</div>",
-      "<div>",
-      "<h3>SOLUTION IN SIMPLICITY</h3>",
-      "<p>A lot of groups tend to overcomplicate everything. Trying to think up of the most complex of solutions. The truth is, most of the time, the most straightforward answer turns out to be the correct answer.</p>",
-      "<p>Remember that you don't need outside knowledge to solve most escape rooms; everything that you could possibly need to make your escape is provided inside the room.</p>",
-
-      "</div>",
-      "<div>",
-      "<h3>DIVIDE AND COVER MORE GROUND</h3>",
-      "<p>Splitting the team into pairs, groups or on your own when trying to solve puzzles is crucial. You are wasting valuable time if everyone groups around one puzzle trying to solve it at the same time. </p>",
-      "<p>Dividing and covering more ground should be your tactic in the room. If you struggle to solve a puzzle, don't bring everyone together to solve it; just move on to a different puzzle and swap with another person.</p>",
-
-      "</div>",
-      "<div>",
-      "<h3>DON'T BE RELUCTANT TO ASK FOR A CLUE</h3>",
-      "<p>If you are stuck, feel free to ask for a clue. You don't wanna end up having wasted your time on one puzzle; that will be a real bummer as this will result in you not having enough time left to complete the room and not fully enjoying the experience.</p>",
-      "<p>The clues are there to help you, and they will be designed so that each puzzle will have several different clues so that the first clue will not reveal too much but can give you a gentle push in the right direction.</p>",
-
-      "</div>",
-      "</div>",
-
-      '<div class="sbl-block">',
-      "<h2>ADDITIONAL TIPS</h2>",
-      '<p><img src="/assets/blogs/ADDITIONAL-TIPS.jpg"/></p>',
-      "<p>As long as you follow the mentioned tips as your guideline, it will increase your chance to win by a few times fold. There are still a few more simple tips that can easily be overlooked or not paid much attention to, have a quick look:</p>",
-
-      '<p>Click the <b>"BOOK GAMES"</b> button and choose your location to get an instant online booking for a group of 2-10 people.</p>',
-      "<ul>",
-      "<li>Decide on a group leader before the game starts.</li>",
-      "<li>Listen to the instructions and guidelines carefully.</li>",
-      "<li>Observe and take note of your surroundings.</li>",
-      "<li>Think outside the box.</li>",
-      "<li>Remain calm and focused.</li>",
-      "<li>Don't overdress.</li>",
-      "<li>Last but not least, HAVE FUN!</li>",
-      "</ul>",
-
-      "</div>",
-      '<div class="sbl-block">',
-      "<h2>HOW TO BOOK YOUR NEXT EVENT</h2>",
-      '<p>Looking for an escape room adventure? Look no further than <a href="/activities" class="text-red-600 hover:text-red-700">All In Adventures</a> for your next escape room experience! Book now and prepare to be fully immersed in a thrilling world of puzzles, challenges, and excitement.</p>',
-      '<p><img src="/assets/blogs/ARE-YOU-EXCITED-FOR-YOUR-NEXT-ADVENTURE.jpg"/></p>',
-      '<p>Click the <b>"BOOK GAMES"</b> button and choose your location to get an instant online booking for a group of 2-10 people.</p>',
-      '<p><a href="/events" class="text-red-600 hover:text-red-700">Planning an event</a> with a large group of over 10 people? We\'ve got you covered! Contact one of our <a href="/locations" class="text-red-600 hover:text-red-700">local stores</a>, and we will take you through the process and get you our special deals.</p>',
-
-      "</div>",
-    ],
-    relatedblogdata: [
-      {
-        id: "1",
-        slug: "what-kind-of-leaf-is-this",
-        ftimg: "/assets/blogs/blog-ft.jpg",
-        title: "What kind of leaf is this?",
-        blogdesc:
-          "You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
-        authimg: "/assets/blogs/blog-auth1.png",
-        authname: "by Brian Capps",
-        blogcategory: [
-          {
-            id: "1",
-            name: "Escape Room",
-            slug: "escape-room",
-          },
-          {
-            id: "2",
-            name: "Team Building",
-            slug: "team-building",
-          },
-        ],
-        lastupdate: "April 02, 2022",
-      },
-      {
-        id: "2",
-        slug: "what-kind-of-leaf-is-this",
-        ftimg: "/assets/blogs/blog-ft.jpg",
-        title: "1. What kind of leaf is this What kind of leaf is this?",
-        blogdesc:
-          "You'd better baylieve that the game is going to get harder from here! You'd better baylieve that the game is going to get harder from here! You'd better",
-        authimg: "/assets/blogs/blog-auth1.png",
-        authname: "by Brian Capps",
-        blogcategory: [
-          {
-            id: "1",
-            name: "Escape Room",
-            slug: "escape-room",
-          },
-          {
-            id: "2",
-            name: "Team Building",
-            slug: "team-building",
-          },
-        ],
-        lastupdate: "May 18, 2022",
-      },
-    ],
-  },
   "how-escape-rooms-help-communication": {
     pagemeta: {
       title: "How Escape Rooms Help Communication?",
@@ -2773,7 +3249,7 @@ const AllblogDataobj = {
         },
         {
           id: "2",
-          name: "things to Do ",
+          name: "Things to Do ",
           slug: "things-to-do",
         },
       ],
