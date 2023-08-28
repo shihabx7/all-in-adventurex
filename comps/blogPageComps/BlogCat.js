@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
+import { Router, useRouter } from "next/router";
 
 const BlogCat = (props) => {
   const [catBoxWidth, setCatBoxWidth] = useState("0px");
@@ -72,6 +73,9 @@ const BlogCat = (props) => {
     setCatBoxWidth(catWidth + "px");
   }, []);
 
+  const router = useRouter();
+  const { category } = router.query;
+  console.log(category);
   return (
     <div className="blog-cat-container  pb-4">
       <div className="blog-cat-nav flex justify-end space-x-2 items-center">
@@ -97,7 +101,11 @@ const BlogCat = (props) => {
         <div className="all-blogs h-[44px]  my-2">
           <a
             href="/blog"
-            className="block blog-cat-item bg-[#FFF3D8] px-4 md:px-6 lg:px-8 py-2 text-[#464646] font-medium"
+            className={
+              !category
+                ? "block blog-cat-item bg-[#FFF3D8] px-4 md:px-6 lg:px-8 py-2 text-[#464646] font-medium catactive"
+                : "block blog-cat-item bg-[#FFF3D8] px-4 md:px-6 lg:px-8 py-2 text-[#464646] font-medium"
+            }
           >
             ALL
           </a>
@@ -122,7 +130,11 @@ const BlogCat = (props) => {
                 <a
                   key={item.id}
                   href={"/blog/category/?category=" + item.slug}
-                  className="inline-block bl-cat-item blog-cat-item  bg-[#FFF3D8] px-4 md:px-6 py-2 text-[#464646]"
+                  className={
+                    category == item.slug
+                      ? "inline-block bl-cat-item blog-cat-item  bg-[#FFF3D8] px-4 md:px-6 py-2 text-[#464646] catactive"
+                      : "inline-block bl-cat-item blog-cat-item  bg-[#FFF3D8] px-4 md:px-6 py-2 text-[#464646] "
+                  }
                 >
                   {item.cat}
                 </a>

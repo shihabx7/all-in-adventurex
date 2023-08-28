@@ -1150,27 +1150,6 @@ const locPagedata = {
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg",
       },
-      {
-        id: 2,
-        category: "showroom",
-        type: "Virtual",
-        title: "Virtual Game Show Room",
-        description:
-          "An interactive live game show experience that players of all ages and backgrounds can come together and play from across the globe",
-        age: "All Ages (6+)",
-        duration: "60",
-        maxplayers: "12",
-        minplayers: "4",
-        price: "20",
-        booking: {
-          shortname: "virtualgameshowroom",
-          item: "285707",
-          flow: "594928",
-        },
-        slug: "virtual-games/virtual-game-show-room",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg",
-      },
     ],
 
     events: [
@@ -1533,27 +1512,6 @@ const locPagedata = {
         slug: "beat-the-seat",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg",
-      },
-      {
-        id: 2,
-        category: "showroom",
-        type: "Virtual",
-        title: "Virtual Game Show Room",
-        description:
-          "An interactive live game show experience that players of all ages and backgrounds can come together and play from across the globe",
-        age: "All Ages (6+)",
-        duration: "60",
-        maxplayers: "12",
-        minplayers: "4",
-        price: "20",
-        booking: {
-          shortname: "virtualgameshowroom",
-          item: "285707",
-          flow: "594928",
-        },
-        slug: "virtual-games/virtual-game-show-room",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg",
       },
     ],
 
@@ -2163,28 +2121,6 @@ const locPagedata = {
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg",
       },
-
-      {
-        id: 3,
-        category: "showroom",
-        type: "Virtual",
-        title: "Virtual Game Show Room",
-        description:
-          "An interactive live game show experience that players of all ages and backgrounds can come together and play from across the globe",
-        age: "All Ages (6+)",
-        duration: "60",
-        maxplayers: "12",
-        minplayers: "4",
-        price: "20",
-        booking: {
-          shortname: "virtualgameshowroom",
-          item: "285707",
-          flow: "594928",
-        },
-        slug: "virtual-games/virtual-game-show-room",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg",
-      },
     ],
 
     events: [
@@ -2481,28 +2417,6 @@ const locPagedata = {
         price: "23.89",
         slug: "axe-throwing",
         bgimg: "/assets/all-game-slider-bg/axe-throwing.jpg",
-      },
-
-      {
-        id: 2,
-        category: "showroom",
-        type: "Virtual",
-        title: "Virtual Game Show Room",
-        description:
-          "An interactive live game show experience that players of all ages and backgrounds can come together and play from across the globe",
-        age: "All Ages (6+)",
-        duration: "60",
-        maxplayers: "12",
-        minplayers: "4",
-        price: "20",
-        booking: {
-          shortname: "virtualgameshowroom",
-          item: "285707",
-          flow: "594928",
-        },
-        slug: "virtual-games/virtual-game-show-room",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg",
       },
     ],
 
@@ -5805,27 +5719,6 @@ const locPagedata = {
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg",
       },
-      {
-        id: 2,
-        category: "showroom",
-        type: "Virtual",
-        title: "Virtual Game Show Room",
-        description:
-          "An interactive live game show experience that players of all ages and backgrounds can come together and play from across the globe",
-        age: "All Ages (6+)",
-        duration: "60",
-        maxplayers: "12",
-        minplayers: "4",
-        price: "20",
-        booking: {
-          shortname: "virtualgameshowroom",
-          item: "285707",
-          flow: "594928",
-        },
-        slug: "virtual-games/virtual-game-show-room",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg",
-      },
     ],
 
     events: [
@@ -7646,27 +7539,6 @@ const locPagedata = {
         slug: "beat-the-seat",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg",
-      },
-      {
-        id: 2,
-        category: "showroom",
-        type: "Virtual",
-        title: "Virtual Game Show Room",
-        description:
-          "An interactive live game show experience that players of all ages and backgrounds can come together and play from across the globe",
-        age: "All Ages (6+)",
-        duration: "60",
-        maxplayers: "12",
-        minplayers: "4",
-        price: "20",
-        booking: {
-          shortname: "virtualgameshowroom",
-          item: "285707",
-          flow: "594928",
-        },
-        slug: "virtual-games/virtual-game-show-room",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg",
       },
     ],
 

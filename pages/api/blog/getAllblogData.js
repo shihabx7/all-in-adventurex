@@ -34,7 +34,7 @@ const AllblogDataobj = {
         },
         {
           id: "2",
-          name: "Tips & tricks",
+          name: "Tips & Tricks",
           slug: "tips-and-tricks",
         },
       ],
@@ -173,7 +173,7 @@ const AllblogDataobj = {
         },
         {
           id: "2",
-          name: "Tips & tricks",
+          name: "Tips & Tricks",
           slug: "tips-and-tricks",
         },
       ],
@@ -376,7 +376,7 @@ const AllblogDataobj = {
         },
         {
           id: "2",
-          name: "Tips & tricks",
+          name: "Tips & Tricks",
           slug: "tips-and-tricks",
         },
       ],
@@ -537,7 +537,7 @@ const AllblogDataobj = {
         },
         {
           id: "2",
-          name: "Tips & tricks",
+          name: "Tips & Tricks",
           slug: "tips-and-tricks",
         },
       ],

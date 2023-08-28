@@ -228,14 +228,6 @@ const SubMenu = (props) => {
                             </div> */}
 
           {/*=========================================== Collapse menu 2 end========== */}
-          <div className="submenu-item">
-            <a
-              href="/virtual-games/virtual-game-show-room"
-              className="flex items-center"
-            >
-              <span className="sub-link-txt">Virtual Game Show Room</span>
-            </a>
-          </div>
 
           {props.locationslug && (
             <div className="submenu-item">

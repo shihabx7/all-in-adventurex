@@ -841,6 +841,12 @@ a {
   box-shadow: 0px 1px 0px #855800;
   transition: 0.3s;
 }
+.blog-cat-item.catactive {
+  border-bottom: 2px solid #855800;
+  box-shadow: 0px 1px 0px #855800;
+  transition: 0.3s;
+}
+
 .bl-item {
   box-shadow: 0px 2px 4px rgba(213, 169, 82, 0.4);
   transition: 0.3s;

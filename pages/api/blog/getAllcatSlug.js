@@ -10,14 +10,12 @@ const otherCat = (catslug) => {
   let otCat = [];
 
   for (let i = 0; i < catkeys.length; i++) {
-    if (catkeys[i] != catslug) {
-      let catobj = {
-        id: i + 1,
-        cat: blogCatData[catkeys[i]].cat,
-        slug: blogCatData[catkeys[i]].slug,
-      };
-      otCat.push(catobj);
-    }
+    let catobj = {
+      id: i + 1,
+      cat: blogCatData[catkeys[i]].cat,
+      slug: blogCatData[catkeys[i]].slug,
+    };
+    otCat.push(catobj);
   }
   //console.log(otCat);
   return otCat;

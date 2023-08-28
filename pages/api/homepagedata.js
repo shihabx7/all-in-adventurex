@@ -288,7 +288,7 @@ export const Homepagedata = () => {
         slug: "axe-throwing",
         bgimg: "/assets/all-game-slider-bg/axe-throwing.jpg",
       },
-      {
+      /*  {
         id: 4,
         category: "showroom",
         type: "Virtual",
@@ -308,7 +308,7 @@ export const Homepagedata = () => {
         slug: "virtual-games/virtual-game-show-room",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-virtual-game-showroom.jpg",
-      },
+      },*/
     ],
     events: [
       {
