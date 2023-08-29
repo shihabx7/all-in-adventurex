@@ -933,7 +933,7 @@ export const getLocationsPageData = () => {
               },
             ],
           },
-          {
+          /* {
             id: 3,
             city: "Waterbury",
             publish_status: true,
@@ -996,7 +996,7 @@ export const getLocationsPageData = () => {
                 close: "6 pm",
               },
             ],
-          },
+          },*/
         ],
       },
       //========================================== 5 CONNECTICUT end

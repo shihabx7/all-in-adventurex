@@ -5242,7 +5242,7 @@ const locPagedata = {
   },
   //====================================================================manchester-ct end
   //=====================================================================waterbury-ct
-  "waterbury-ct": {
+  /*"waterbury-ct": {
     coverimageL:
       "/assets/all-location-desktop-hero/allinadventures-escape-room-waterbury-ct-brass-mills-mall-hero.jpg",
     coverimageM:
@@ -5551,7 +5551,7 @@ const locPagedata = {
           "/assets/all-event-slider-bg/allinadventures-events-gender-reveal-party-event.jpg",
       },
     ],
-  },
+  }, */
   //====================================================================waterbury-ct end
   //******************************************************************************************CT end==============================
 

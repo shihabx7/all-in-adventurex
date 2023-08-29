@@ -128,11 +128,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>1</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/locations/waterbury-ct</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>1</priority>
-   </url>
+   
    <url>
       <loc>https://allinadventures.com/locations/milford-ct</loc>
      <lastmod>2023-03-24</lastmod>
@@ -181,11 +177,7 @@
       <priority>0.8</priority>
    </url>
    
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/activities/escape-from-alcatraz</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+  
    <url>
       <loc>https://allinadventures.com/milford-ct/activities/sherlocks-library</loc>
      <lastmod>2023-03-24</lastmod>
@@ -231,16 +223,8 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/activities/hollywood-premiere</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/activities/special-agent</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+  
+   
    
    <url>
       <loc>https://allinadventures.com/milford-ct/activities/houdinis-magic-cell</loc>
@@ -298,16 +282,8 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/activities/houdinis-magic-cell</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/events</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
+  
    
    <url>
       <loc>https://allinadventures.com/milford-ct/activities/treasure-island</loc>
@@ -360,21 +336,8 @@
       <priority>0.8</priority>
    </url>
    
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/activities/superheros-adventure</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/events/gender-reveal-party</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/activities/sherlocks-library</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+  
+  
    
    <url>
       <loc>https://allinadventures.com/milford-ct/activities/black-ops</loc>
@@ -435,22 +398,6 @@
       <priority>0.8</priority>
    </url>
    
-   
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/activities/treasure-island</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/events/date-night</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/activities/zombie-apocalypse</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
    
    <url>
       <loc>https://allinadventures.com/rockaway-nj/activities/hollywood-premiere</loc>
@@ -517,16 +464,7 @@
       <priority>0.8</priority>
    </url>
    
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/activities/black-ops</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/events/birthday-party</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
   
    
    <url>
@@ -608,12 +546,6 @@
       <priority>0.8</priority>
    </url>
    
-   
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/events/team-building</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
    <url>
       <loc>https://allinadventures.com/albany-ny/activities/hollywood-premiere</loc>
      <lastmod>2023-03-24</lastmod>
@@ -691,11 +623,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/events/family-fun-activity</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+  
    <url>
       <loc>https://allinadventures.com/albany-ny/activities/zombie-apocalypse</loc>
      <lastmod>2023-03-24</lastmod>
@@ -758,11 +686,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/events/proposal-party</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+ 
    
    <url>
       <loc>https://allinadventures.com/albany-ny/activities/superheros-adventure</loc>
@@ -797,11 +721,7 @@
       <priority>0.8</priority>
    </url>
    
-   <url>
-      <loc>https://allinadventures.com/virtual-games/virtual-game-show-room</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+  
    <url>
       <loc>https://allinadventures.com/woodbridge-nj/activities/escape-from-alcatraz</loc>
      <lastmod>2023-03-24</lastmod>
@@ -842,11 +762,6 @@
       <priority>0.8</priority>
    </url>
   
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/events/bachelor-party</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
    
    <url>
       <loc>https://allinadventures.com/east-brunswick-nj/activities/escape-from-alcatraz</loc>
@@ -923,11 +838,7 @@
       <priority>0.8</priority>
    </url>
    
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/events/private-party</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
    
    <url>
       <loc>https://allinadventures.com/east-brunswick-nj/activities/treasure-island</loc>
@@ -1010,11 +921,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/events/graduation-party</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+  
    <url>
       <loc>https://allinadventures.com/bensalem-pa/events/family-fun-activity</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1112,11 +1019,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/events/corporate-events</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+  
    <url>
       <loc>https://allinadventures.com/bensalem-pa/events/proposal-party</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1193,11 +1096,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/events/bachelorette-party</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
    <url>
       <loc>https://allinadventures.com/bensalem-pa/events/team-building</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1289,11 +1188,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/events/reunion-party</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+  
    <url>
       <loc>https://allinadventures.com/bensalem-pa/events/bachelorette-party</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1381,11 +1276,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/events/school-events</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+  
    <url>
       <loc>https://allinadventures.com/bensalem-pa/events/date-night</loc>
      <lastmod>2023-03-24</lastmod>
@@ -3325,11 +3216,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>.7</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/waterbury-ct/gift-cards</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>.7</priority>
-   </url>
+   
    <url>
       <loc>https://allinadventures.com/woodbridge-nj/gift-cards</loc>
      <lastmod>2023-03-24</lastmod>
@@ -3551,11 +3438,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.7</priority>
    </url>
-    <url>
-      <loc>https://allinadventures.com/waterbury-ct/contact-store</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.7</priority>
-   </url>
+    
    <url>
       <loc>https://allinadventures.com/kingston-ma/contact-store</loc>
      <lastmod>2023-03-24</lastmod>
