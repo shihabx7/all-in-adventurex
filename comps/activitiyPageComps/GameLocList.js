@@ -46,7 +46,7 @@ const GameLocList = (props) => {
         <div className="all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
           <div className="section-title  text-center max-w-[800px] mx-auto">
             <TitleSeparator
-              title="PLAY IN-PERSON ESCAPE GAMES"
+              title="REAL LIFE ESCAPE ROOM GAMES"
               color="dark-gold"
               weight="font-bold"
             />
@@ -74,14 +74,6 @@ const GameLocList = (props) => {
                     <div className="all-game-info">
                       <p className="flex items-center space-x-2 text-gray-50 my-1">
                         <span>
-                          <img src="/assets/svg/inperson.svg"></img>
-                        </span>
-                        <span className="text-sm md:text-base">
-                          {activity.activity_type}
-                        </span>{" "}
-                      </p>
-                      <p className="flex items-center space-x-2 text-gray-50 my-1">
-                        <span>
                           <img src="/assets/svg/card-age.svg"></img>
                         </span>
                         <span className="text-sm md:text-base">
@@ -94,7 +86,7 @@ const GameLocList = (props) => {
                         </span>
                         <span className="text-sm md:text-base">
                           {activity.duration} Minutes
-                        </span>{" "}
+                        </span>
                       </p>
                       <p className="flex items-center space-x-2 text-gray-50 my-1">
                         <span>
@@ -103,8 +95,18 @@ const GameLocList = (props) => {
                         <span className="text-sm md:text-base">
                           {activity.min_player}-{activity.max_player} Players
                           {activity.groupcat ? " / " + activity.groupcat : ""}
-                        </span>{" "}
+                        </span>
                       </p>
+                      {activity.success_rate && (
+                        <p className="flex items-center space-x-2 text-gray-50 my-1">
+                          <span>
+                            <img src="/assets/svg/inperson.svg"></img>
+                          </span>
+                          <span className="text-sm md:text-base drop-shadow">
+                            Success Rate {activity.success_rate}%
+                          </span>
+                        </p>
+                      )}
                     </div>
                     <div className="card-ribbon">
                       <div className="inline-block text-center py-2 px-4 bg-red-600">
@@ -201,14 +203,6 @@ const GameLocList = (props) => {
                   >
                     <div className="all-game-list-head flex justify-between">
                       <div className="all-game-info">
-                        <p className="flex items-center space-x-2 text-gray-50 my-1">
-                          <span>
-                            <img src="/assets/svg/inperson.svg"></img>
-                          </span>
-                          <span className="text-sm md:text-base">
-                            {activity.activity_type}
-                          </span>{" "}
-                        </p>
                         <p className="flex items-center space-x-2 text-gray-50 my-1">
                           <span>
                             <img src="/assets/svg/card-age.svg"></img>

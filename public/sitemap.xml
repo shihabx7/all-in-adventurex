@@ -118,12 +118,6 @@
    </url>
    
    <url>
-      <loc>https://allinadventures.com/locations/dayton-oh</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>1</priority>
-   </url>
-   
-   <url>
       <loc>https://allinadventures.com/locations/manchester-ct</loc>
      <lastmod>2023-03-24</lastmod>
       <priority>1</priority>
@@ -1102,11 +1096,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/activities/treasure-island</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
    <url>
       <loc>https://allinadventures.com/east-brunswick-nj/events/date-night</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1178,11 +1168,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/activities/houdinis-magic-cell</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
    <url>
       <loc>https://allinadventures.com/bensalem-pa/events/graduation-party</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1194,11 +1180,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/activities/escape-from-alcatraz</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+  
    <url>
       <loc>https://allinadventures.com/east-brunswick-nj/events/birthday-party</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1261,11 +1243,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/activities/zombie-apocalypse</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
    <url>
       <loc>https://allinadventures.com/watertown-ny/events/gender-reveal-party</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1287,11 +1265,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/activities/special-agent</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
    <url>
       <loc>https://allinadventures.com/east-brunswick-nj/events/gender-reveal-party</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1369,11 +1343,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/events</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
    <url>
       <loc>https://allinadventures.com/watertown-ny/events/birthday-party</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1399,16 +1369,8 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/activities/black-ops</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/events/private-party</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+  
+   
    <url>
       <loc>https://allinadventures.com/east-brunswick-nj/events/reunion-party</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1479,16 +1441,8 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/events/reunion-party</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/activities/superheros-adventure</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
+   
    <url>
       <loc>https://allinadventures.com/watertown-ny/events/reunion-party</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1514,16 +1468,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/activities/sherlocks-library</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/events/bachelor-party</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
    <url>
       <loc>https://allinadventures.com/east-brunswick-nj/events/proposal-party</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1596,11 +1541,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/events/gender-reveal-party</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
    <url>
       <loc>https://allinadventures.com/watertown-ny/events/bachelor-party</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1626,11 +1567,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/events/corporate-events</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
    <url>
       <loc>https://allinadventures.com/east-brunswick-nj/events/corporate-events</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1698,11 +1635,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/events/date-night</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
    <url>
       <loc>https://allinadventures.com/columbus-oh/events/date-night</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1738,11 +1671,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/events/birthday-party</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
    <url>
       <loc>https://allinadventures.com/east-brunswick-nj/events/family-fun-activity</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1815,11 +1744,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/events/proposal-party</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+  
    <url>
       <loc>https://allinadventures.com/columbus-oh/events/birthday-party</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1850,11 +1775,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/events/team-building</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
    <url>
       <loc>https://allinadventures.com/mentor-oh/activities/hollywood-premiere</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1927,11 +1848,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/events/bachelorette-party</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
    <url>
       <loc>https://allinadventures.com/columbus-oh/events/team-building</loc>
      <lastmod>2023-03-24</lastmod>
@@ -1963,11 +1880,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/events/graduation-party</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
    
    <url>
       <loc>https://allinadventures.com/mentor-oh/activities/escape-from-alcatraz</loc>
@@ -2029,11 +1942,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/events/family-fun-activity</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+  
    <url>
       <loc>https://allinadventures.com/columbus-oh/events/graduation-party</loc>
      <lastmod>2023-03-24</lastmod>
@@ -2071,11 +1980,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/events/school-events</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.8</priority>
-   </url>
+   
    
    <url>
       <loc>https://allinadventures.com/activities/sherlocks-library</loc>
@@ -3248,11 +3153,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>.7</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/gift-cards</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>.7</priority>
-   </url>
+   
    <url>
       <loc>https://allinadventures.com/albany-ny/gift-cards</loc>
      <lastmod>2023-03-24</lastmod>
@@ -3428,11 +3329,7 @@
      <lastmod>2023-03-24</lastmod>
       <priority>0.7</priority>
    </url>
-   <url>
-      <loc>https://allinadventures.com/dayton-oh/contact-store</loc>
-     <lastmod>2023-03-24</lastmod>
-      <priority>0.7</priority>
-   </url>
+   
    <url>
       <loc>https://allinadventures.com/poughkeepsie-ny/contact-store</loc>
      <lastmod>2023-03-24</lastmod>

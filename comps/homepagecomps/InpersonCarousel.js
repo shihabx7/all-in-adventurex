@@ -106,12 +106,6 @@ const InpersonCarousel = (props) => {
                   <div className="card-info">
                     <p className="flex items-center space-x-2 text-gray-50 my-1">
                       <span>
-                        <img src="/assets/svg/inperson.svg"></img>
-                      </span>
-                      <span className="text-sm">{inpersongame.type}</span>{" "}
-                    </p>
-                    <p className="flex items-center space-x-2 text-gray-50 my-1">
-                      <span>
                         <img src="/assets/svg/card-age.svg"></img>
                       </span>
                       <span className="text-sm">{inpersongame.age}</span>{" "}
@@ -131,8 +125,18 @@ const InpersonCarousel = (props) => {
                       <span className="text-sm">
                         {inpersongame.minplayers}-{inpersongame.maxplayers}{" "}
                         Players
-                      </span>{" "}
+                      </span>
                     </p>
+                    {inpersongame.success_rate && (
+                      <p className="flex items-center space-x-2 text-gray-50 my-1">
+                        <span>
+                          <img src="/assets/svg/inperson.svg"></img>
+                        </span>
+                        <span className="text-sm">
+                          Success Rate {inpersongame.success_rate}%
+                        </span>
+                      </p>
+                    )}
                   </div>
                   <div className="card-ribbon">
                     <div className="inline-block text-center py-2 px-4 bg-red-600">

@@ -33,6 +33,7 @@ export const Homepagedata = () => {
         id: 1,
         category: "escapegame",
         type: "In-Person",
+        success_rate: "56",
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
@@ -50,6 +51,7 @@ export const Homepagedata = () => {
         category: "escapegame",
         type: "In-Person",
         title: "Treasure Island",
+        success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         age: "All Ages (6+)",
@@ -66,6 +68,7 @@ export const Homepagedata = () => {
         category: "escapegame",
         type: "In-Person",
         title: "Zombie Apocalypse",
+        success_rate: "37",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         age: "All Ages (6+)",
@@ -82,6 +85,7 @@ export const Homepagedata = () => {
         category: "escapegame",
         type: "In-Person",
         title: "Sherlock's Library",
+        success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
         age: "All Ages (6+)",
@@ -99,6 +103,7 @@ export const Homepagedata = () => {
         category: "escapegame",
         type: "In-Person",
         title: "Black Ops",
+        success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         age: "All Ages (6+)",
@@ -114,6 +119,7 @@ export const Homepagedata = () => {
         category: "escapegame",
         type: "In-Person",
         title: "Superhero's Adventure",
+        success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "All Ages (6+)",
@@ -130,6 +136,7 @@ export const Homepagedata = () => {
         category: "escapegame",
         type: "In-Person",
         title: "Houdini's Magic Cell",
+        success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         age: "All Ages (6+)",
@@ -147,6 +154,7 @@ export const Homepagedata = () => {
         category: "escapegame",
         type: "In-Person",
         title: "Special Agent",
+        success_rate: "37",
         description:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         age: "All Ages (6+)",
@@ -163,6 +171,7 @@ export const Homepagedata = () => {
         category: "escapegame",
         type: "In-Person",
         title: "Hollywood Premiere",
+        success_rate: "45",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "All Ages (6+)",
@@ -179,6 +188,7 @@ export const Homepagedata = () => {
         category: "escapegame",
         type: "In-Person",
         title: "Lost in The Jungle",
+        success_rate: "54",
         description:
           "Having heard the mysterious sound of drums coming from the roof, you and your friends decided to check it out. Drawn by the beat, you find yourself trapped in the game! ",
         age: "All Ages (6+)",
@@ -195,6 +205,7 @@ export const Homepagedata = () => {
         category: "escapegame",
         type: "In-Person",
         title: "Wizarding School ",
+        success_rate: "47",
         description:
           "Your Potions lesson will begin in 60 minutes and you have gotten locked in the headmaster's office! You must put on your thinking cap and find a way to get out in time…",
         age: "All Ages (6+)",
@@ -211,6 +222,7 @@ export const Homepagedata = () => {
         category: "escapegame",
         type: "In-Person",
         title: "locked in The Lift",
+        success_rate: "63",
         description:
           "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. See if you can piece together how to get things running again.",
         age: "All Ages (6+)",
@@ -228,6 +240,7 @@ export const Homepagedata = () => {
         category: "escapegame",
         type: "In-Person",
         title: "Magic Castle",
+        success_rate: "42",
         description:
           "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards. Test your wits, courage, loyalty, and cunning.",
         age: "All Ages (6+)",

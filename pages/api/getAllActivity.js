@@ -41,6 +41,7 @@ export const getAllActivity = () => {
         age: "All Ages (6+)",
         min_player: "2",
         max_player: "10",
+        success_rate: "56",
         price: "29.89",
         duration: "50",
         activity_desc:
@@ -58,6 +59,8 @@ export const getAllActivity = () => {
         min_player: "2",
         max_player: "10",
         price: "29.89",
+        success_rate: "67",
+
         duration: "50",
         activity_desc:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
@@ -74,6 +77,7 @@ export const getAllActivity = () => {
         min_player: "2",
         max_player: "10",
         price: "29.89",
+        success_rate: "37",
         duration: "50",
         activity_desc:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
@@ -90,6 +94,7 @@ export const getAllActivity = () => {
         min_player: "2",
         max_player: "10",
         price: "29.89",
+        success_rate: "42",
         duration: "50",
         activity_desc:
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
@@ -106,6 +111,7 @@ export const getAllActivity = () => {
         min_player: "2",
         max_player: "10",
         price: "29.89",
+        success_rate: "46",
         duration: "50",
         activity_desc:
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
@@ -122,6 +128,7 @@ export const getAllActivity = () => {
         min_player: "2",
         max_player: "10",
         price: "29.89",
+        success_rate: "61",
         duration: "50",
         activity_desc:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
@@ -137,6 +144,7 @@ export const getAllActivity = () => {
         age: "All Ages (6+)",
         min_player: "2",
         max_player: "10",
+        success_rate: "18",
         price: "29.89",
         duration: "50",
         activity_desc:
@@ -155,6 +163,7 @@ export const getAllActivity = () => {
         min_player: "2",
         max_player: "10",
         price: "29.89",
+        success_rate: "37",
         duration: "50",
         activity_desc:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
@@ -171,6 +180,7 @@ export const getAllActivity = () => {
         min_player: "2",
         max_player: "10",
         price: "29.89",
+        success_rate: "45",
         duration: "50",
         activity_desc:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
@@ -187,6 +197,7 @@ export const getAllActivity = () => {
         age: "All Ages (6+)",
         min_player: "2",
         max_player: "5",
+        success_rate: "54",
         price: "39.95",
         duration: "60",
         activity_desc:
@@ -205,6 +216,7 @@ export const getAllActivity = () => {
         min_player: "2",
         max_player: "4",
         price: "39.95",
+        success_rate: "47",
         duration: "60",
         activity_desc:
           "Your Potions lesson will begin in 60 minutes and you have gotten locked in the headmaster's office! You must put on your thinking cap and find a way to get out in time…",
@@ -220,6 +232,7 @@ export const getAllActivity = () => {
         age: "All Ages (6+)",
         min_player: "2",
         max_player: "4",
+        success_rate: "63",
         price: "29.89",
         duration: "30",
         activity_desc:
@@ -238,6 +251,7 @@ export const getAllActivity = () => {
         min_player: "2",
         max_player: "8",
         price: "29.89",
+        success_rate: "42",
         duration: "60",
         activity_desc:
           "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards. Test your wits, courage, loyalty, and cunning.",
@@ -293,27 +307,6 @@ export const getAllActivity = () => {
         activity_slug: "axe-throwing",
         activity_cover_image:
           "/assets/all-game-list/allinadventures-axe-throwing.jpg",
-      },
-      {
-        id: 17,
-        activity_name: "Virtual game show room",
-        activity_type: "Virtual",
-        activity_category: "other",
-        age: "All Ages (6+)",
-        min_player: 4,
-        max_player: 12,
-        price: "20",
-        duration: "60",
-        activity_desc:
-          "An interactive live game show experience that players of all ages and backgrounds can come together and play from across the globe",
-        activity_slug: "virtual-games/virtual-game-show-room",
-        activity_cover_image:
-          "/assets/all-game-list/All-In-Adventures-Virtual-Game-Show-Room.jpg",
-        booking: {
-          shortname: "virtualgameshowroom",
-          item: "285707",
-          flow: "594928",
-        },
       },
     ],
   };

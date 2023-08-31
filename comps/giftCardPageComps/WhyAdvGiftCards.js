@@ -46,7 +46,7 @@ const WhyAdvGiftCards = (props) => {
             </h3>
             <p className="lg:text-lg">
               The AIA Gift Card programs allows your gift recipients the freedom
-              to choose a unique experience at any of our 26 locations. Whether
+              to choose a unique experience at any of our locations. Whether
               your purchase is for someone's birthday, anniversary, holiday, or
               “just because” - give them the gift of adventure!
             </p>

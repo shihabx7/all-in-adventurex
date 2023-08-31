@@ -14,5 +14,6 @@ const FooterEmbedMap = () => {
     </div>
   );
 };
+//src="https://www.google.com/maps/d/embed?mid=1XniDBpW7F60KkSK_e7i7VhyDf8AzfjY&ehbc=2E312F"
 
 export default FooterEmbedMap;

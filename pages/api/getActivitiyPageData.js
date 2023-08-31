@@ -1378,7 +1378,7 @@ const activityDataset = {
         "Axe Throwing is great for groups both large and small. Lanes hold up to 4 players, and we can accommodate larger groups by booking multiple lanes. Players 13 to 100 with closed-toed shoes are welcome to heft an axe and join in the fun.",
       missionimg:
         "/assets/all-game-details/allinadventures-axe-throwing-sec3.png",
-      videoid: "4pDw2AJEA7k",
+      videoid: "OEgWueitKTY",
       videothumb: "/assets/video-thumb/allinadventures-axe-throwing.jpg",
     },
     activitygallery: [

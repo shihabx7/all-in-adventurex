@@ -1696,7 +1696,7 @@ export const getLocationsPageData = () => {
               },
             ],
           },
-          {
+          /*{
             id: 3,
             city: "Dayton",
             publish_status: true,
@@ -1759,7 +1759,7 @@ export const getLocationsPageData = () => {
                 close: "6 pm",
               },
             ],
-          },
+          },*/
         ],
       },
       //========================================== 10 OHIO end

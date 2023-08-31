@@ -189,13 +189,13 @@ export const getLocationSlugList = () => {
       state: "OH",
       shortaddress: "Great Lakes Mall",
     },
-    {
+    /* {
       id: 28,
       slug: "dayton-oh",
       city: "Dayton",
       state: "OH",
       shortaddress: "Dayton Mall",
-    },
+    },*/
   ];
 
   return LocationSlugs;
