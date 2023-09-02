@@ -2340,14 +2340,20 @@ const activityDataset = {
         "Our real-life Game Show Room is created to bring friends, family or co-workers together. It's a fun, group-oriented activity you share with other live players. You have the option to choose from a family, kid or adult experience. Once your group come in, players will become instant game show contestants led by a professional game host who will guide players through a series of interactive games.",
       storyimg:
         "/assets/all-game-details/allinadventures-game-show-room-sec1.png",
+      storyimg_alt: "allinadventures game show room story",
       scene:
         "For one (1) fun-filled hour, you get to experience a live game show - similar to popular shows seen on TV! Our game ranges from a variety of mentally challenging puzzles to on-the-spot trivia and quiz questions. Plus, we even offer games which will challenge your group's physical skills and talents! As a Game Show Room contestant, you'll have a blast and make long-lasting memories while actively participating in an amusing, uber challenging live-game show setting!",
       sceneimg:
         "/assets/all-game-details/allinadventures-game-show-room-sec2.png",
+      sceneimg_alt: "allinadventures game show room plot",
+      story_bg: "/assets/svg/game-bg-pattern/cup-pong.svg",
+      scene_bg: "/assets/svg/game-bg-pattern/cup-stacks.svg",
       mission:
         "This is the perfect pastime for those looking for a highly energetic, super entertaining corporate team building event, birthday party, bachelor / bachelorette party, church / family reunion or an outing with friends or family!",
       missionimg:
         "/assets/all-game-details/allinadventures-game-show-room-sec3.png",
+      missionimg_alt: "allinadventures game show room mission",
+
       videoid: "9imesyfsms4",
       videothumb: "/assets/video-thumb/allinadventures-game-show-room.jpg",
       faqlist: [
@@ -2528,14 +2534,19 @@ const activityDataset = {
         "With our interactive lanes, you can practice throwing at traditional targets or choose from other games. Utilizing a projection system, you can not only easily switch between games, but you can also allow it to do the scoring for you. Using sensors to mark your hits, our lanes can track the score for you and let you focus on the fun.",
       storyimg:
         "/assets/all-game-details/allinadventures-axe-throwing-sec1.png",
+      storyimg_alt: "allinadventures axe throwing story",
       scene:
         "Once one of our Axe-perts gets you all set up in your lane, you and your party will be taking turns throwing at the target down range. This means that while you are throwing you will have your very own cheering squad backing you up! The system will track your score for you, so you can practice on your form.",
       sceneimg:
         "/assets/all-game-details/allinadventures-axe-throwing-sec2.png",
+      sceneimg_alt: "allinadventures axe throwingplot",
+      story_bg: "/assets/svg/game-bg-pattern/bulls-eye.svg",
+      scene_bg: "/assets/svg/game-bg-pattern/axe.svg",
       mission:
         "Axe Throwing is great for groups both large and small. Lanes hold up to 4 players, and we can accommodate larger groups by booking multiple lanes. Players 13 to 100 with closed-toed shoes are welcome to heft an axe and join in the fun.",
       missionimg:
         "/assets/all-game-details/allinadventures-axe-throwing-sec3.png",
+      missionimg_alt: "allinadventures axe throwing mission",
       videoid: "OEgWueitKTY",
       videothumb: "/assets/video-thumb/allinadventures-axe-throwing.jpg",
     },
@@ -2605,14 +2616,19 @@ const activityDataset = {
         "Beat The Seat is an intense and challenging fun game! You'll be required to solve several different challenges and combinations while holding down the button on the seat, and this must be completed within two minutes. If that sounds simple, well, just wait till you're in there, and you may think a little differently.",
       storyimg:
         "/assets/all-game-details/allinadventures-beat-the-seat-sec1.png",
+      storyimg_alt: "allinadventures beat the seat story",
       scene:
         "It's the game of ultimate fast-paced challenge. This fun and exciting game will test your endurance, coordination and ability to think on your feet. Literally! The best part is you can play over and over again and always be challenged as the sequencing in the games change every time. You can even try to beat your fastest time or a friend's time.",
       sceneimg:
         "/assets/all-game-details/allinadventures-beat-the-seat-sec2.png",
+      sceneimg_alt: "allinadventures beat the seat plot",
+      story_bg: "/assets/svg/game-bg-pattern/chair.svg",
+      scene_bg: "/assets/svg/game-bg-pattern/buzzer.svg",
       mission:
         "The great thing is that it can be played by anyone 8 years and older as we have a child mode too! Anyone can play it over and over again as the sequencing of the game changes every time. Try to beat the best times or compete with your friends and family in this new and unique experience.",
       missionimg:
         "/assets/all-game-details/allinadventures-beat-the-seat-sec3.png",
+      missionimg_alt: "allinadventures beat the seat mission",
       videoid: "XhMSjpex4tA",
       videothumb: "/assets/video-thumb/allinadventures-beat-the-seat.jpg",
     },
