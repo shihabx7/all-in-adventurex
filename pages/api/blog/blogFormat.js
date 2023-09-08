@@ -1,9 +1,9 @@
 const format = {
-  "skills-that-escape-room-games-can-improve": {
+  "must-watch-tv-shows-for-escape-room-fans": {
     pagemeta: {
-      title: "SKILLS THAT ESCAPE ROOM GAMES CAN IMPROVE",
+      title: "MUST WATCH TV SHOWS FOR ESCAPE ROOM FANS",
       description:
-        "Escape rooms have steadily become one of the most vibrant indoor attractions in the United States and around the globe. Not only are escape rooms entertaining, but they also inspire participants to discover their dormant skills.",
+        "With the rising popularity of escape rooms, it's no surprise that they have made their way onto our TV screens. ",
       keywords:
         "escape room skills,escape room tips and tricks,escape room guide, play an escape room,book escape room, escape room news, all in adventures articles,",
       url: "skills-that-escape-room-games-can-improve",
@@ -14,7 +14,7 @@ const format = {
     pagedata: {
       pagetitle: "SKILLS THAT ESCAPE ROOM GAMES CAN IMPROVE",
       description:
-        "Escape rooms have steadily become one of the most vibrant indoor attractions in the United States and around the globe. Not only are escape rooms entertaining, but they also inspire participants to discover their dormant skills.",
+        "With the rising popularity of escape rooms, it's no surprise that they have made their way onto our TV screens.",
       ftimg: "/assets/blogs/hero-skills-that-escape-room-games-can-improve.jpg",
     },
     bloginfo: {
