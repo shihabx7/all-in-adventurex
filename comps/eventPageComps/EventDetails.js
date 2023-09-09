@@ -108,7 +108,7 @@ const EventDetails = (props) => {
         </div>
         {/*===============================event row -1 WHY BOOK A PARTY WITH ALL IN ADVENTURE?================= */}
         {/*===============================event row WHAT WE OFFER?================= */}
-        <div className="evt-dt-container offer-bg relative overflow-x-hidden md:overflow-visible">
+        <div className="evt-dt-container offer-bg relative overflow-x-hidden md:overflow-visible py-8 lg:py-12">
           <div className="st-bg absolute bottom-[54%] right-[-10px] md:left-[-30px] md:bottom-[30px] lg:bottom-[20px] lg:left-[-60px] xl:bottom-[0px] xl:left-[-80px] 2xl:bottom-[30px] 2xl:left-[100px] 4xl:left-[220px] 5xl:left-[380px] w-[148px] md:w-[240px] lg:w-[280px] xl:w-[310px] 2xl:w-[330px] 4xl:w-[360px] 5xl:w-[380px]">
             <img
               className="w-[140px] md:w-[180px] lg:w-[200px] xl:w-[310px] 2xl:w-[330px] 4xl:w-[360px] 5xl:w-[380px]"
