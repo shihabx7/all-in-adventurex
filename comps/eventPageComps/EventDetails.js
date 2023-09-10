@@ -202,11 +202,11 @@ const EventDetails = (props) => {
         <div className="evt-dt-container storyline-bg relative overflow-x-hidden md:overflow-visible">
           <div className="msn-bg-l absolute bottom-[46%] right-[-10px] md:right-[-20px] md:bottom-[20px] lg:bottom-[0px] lg:right-[-20px] xl:bottom-[0px] xl:right-[-70px] 2xl:bottom-[-12%] 2xl:right-[100px] 4xl:right-[300px] 4xl:bottom-[-14%] 5xl:right-[420px] z-20">
             <img
-              className=" -scale-x-100 md:scale-x-100 w-[160px] md:w-[190px] lg:w-[200px] xl:w-[300px]  2xl:w-[370px]  4xl:w-[380px] 5xl:w-[400px] "
+              className=" -scale-x-100 md:scale-x-100 z-10 w-[160px] md:w-[190px] lg:w-[200px] xl:w-[300px]  2xl:w-[370px]  4xl:w-[380px] 5xl:w-[400px] "
               src="/assets/svg/util/compass.svg"
             ></img>
           </div>
-          <div className="event-dt-row max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+          <div className="relative z-20 event-dt-row max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
             <div className="event-dt-col order-2 md:order-1 md:w-[49%] lg:w-[48%]">
               <div className="event-dt-desc py-4 md:py-0">
                 <p className="md:text-lg text-[#938056] leading-[1] uppercase">
