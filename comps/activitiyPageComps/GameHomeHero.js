@@ -46,30 +46,15 @@ const GameHomeHero = (props) => {
           {props.gametotal != "not" && <div className="mb-6"> </div>}
 
           {props.gametotal != "not" && (
-            <div
-              style={{
-                background: "#FFFBF3",
-              }}
-              className={
-                props.pagedata.success_rate
-                  ? "drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[90%] md:max-w-3xl mx-auto bottom-[-15%] md:bottom-[-8%] left-0 right-0 absolute bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded"
-                  : "un-games  max-w-2xl mx-auto bottom-4 left-0 right-0 absolute bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded"
-              }
-            >
-              <div
-                className={
-                  props.pagedata.success_rate
-                    ? "flex flex-wrap w-full justify-center md:grid md:grid-cols-5  md:justify-evenly items-center "
-                    : "grid grid-cols-3 justify-evenly items-center divide-x devide-gray-500"
-                }
-              >
+            <div className="drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[90%] md:max-w-3xl mx-auto bottom-[-15%] md:bottom-[-8%] left-0 right-0 absolute bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded">
+              <div className="flex flex-wrap w-full justify-center md:grid md:grid-cols-5  md:justify-evenly items-center ">
                 {props.pagedata.totalUniqueGames && (
                   <div className="text-center">
                     <p className="golden-text text-xl md:text-4xl font-os font-bold">
                       {props.pagedata.totalUniqueGames}
                     </p>
                     <p className="text-gray-700 text-xs md:text-base lg:text-lg ">
-                      Unique Games
+                      Themed Games
                     </p>
                   </div>
                 )}
@@ -119,6 +104,30 @@ const GameHomeHero = (props) => {
                     </div>
                   </div>
                 )}
+                {!props.pagedata.age && (
+                  <div className="text-center w-[33%] md:w-auto">
+                    <div className="border-l border-gray-300">
+                      <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                        6-99
+                      </p>
+                      <p className="text-gray-700 text-xs md:text-base lg:text-lg">
+                        Age Range
+                      </p>
+                    </div>
+                  </div>
+                )}
+                {!props.pagedata.duration && (
+                  <div className="text-center w-[33%] md:w-auto">
+                    <div className="border-l border-gray-300 ">
+                      <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                        YES
+                      </p>
+                      <p className="text-gray-700 text-xs md:text-base lg:text-lg">
+                        Private Events
+                      </p>
+                    </div>
+                  </div>
+                )}
                 {props.pagedata.duration && (
                   <div
                     className={
@@ -150,23 +159,19 @@ const GameHomeHero = (props) => {
                   </div>
                 )}
                 {props.pagedata.totalFiveStarReview && (
-                  <div className="text-center ">
-                    <p className="golden-text text-xl md:text-4xl font-os font-bold">
-                      {props.pagedata.totalFiveStarReview}
-                    </p>
-                    <p className="text-gray-700 text-xs md:text-base lg:text-lg">
-                      5-Star Reviews
-                    </p>
+                  <div className="text-center w-[44%] md:w-auto pt-2 mt-3 border-t border-gray-300 md:pt-0 md:mt-0 md:border-t-0">
+                    <div className="border-l-0 border-gray-300 md:border-l ">
+                      <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                        {props.pagedata.totalFiveStarReview}
+                      </p>
+                      <p className="text-gray-700 text-xs md:text-base lg:text-lg">
+                        Rave Reviews
+                      </p>
+                    </div>
                   </div>
                 )}
                 {props.pagedata.price && (
-                  <div
-                    className={
-                      props.pagedata.success_rate
-                        ? "text-center w-[44%] md:w-auto pt-2 mt-3 border-t border-gray-300 md:pt-0 md:mt-0 md:border-t-0"
-                        : "text-center"
-                    }
-                  >
+                  <div className="text-center w-[44%] md:w-auto pt-2 mt-3 border-t border-gray-300 md:pt-0 md:mt-0 md:border-t-0">
                     <div className="border-l border-gray-300 ">
                       <p className="golden-text text-xl md:text-4xl font-os font-bold">
                         ${props.pagedata.price}
@@ -178,13 +183,15 @@ const GameHomeHero = (props) => {
                   </div>
                 )}
                 {props.pagedata.totalPlayerEscaped && (
-                  <div className="text-center">
-                    <p className="golden-text text-xl md:text-4xl font-os font-bold">
-                      {props.pagedata.totalPlayerEscaped}
-                    </p>
-                    <p className="text-gray-700 text-xs md:text-base lg:text-lg">
-                      Players Escaped
-                    </p>
+                  <div className="text-center w-[44%] md:w-auto pt-2 mt-3 border-t border-gray-300 md:pt-0 md:mt-0 md:border-t-0">
+                    <div className="border-l border-gray-300 ">
+                      <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                        {props.pagedata.totalPlayerEscaped}
+                      </p>
+                      <p className="text-gray-700 text-xs md:text-base lg:text-lg">
+                        Guests Served
+                      </p>
+                    </div>
                   </div>
                 )}
               </div>

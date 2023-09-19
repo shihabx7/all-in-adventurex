@@ -111,7 +111,7 @@ const LocationHomeHero = (props) => {
                     {props.pagedata.totalUniqueGames}
                   </p>
                   <p className="text-gray-700 text-xs md:text-base lg:text-lg ">
-                    Unique Games
+                    Themed Games
                   </p>
                 </div>
               </div>
@@ -141,7 +141,7 @@ const LocationHomeHero = (props) => {
                     {props.pagedata.totalFiveStarReview}
                   </p>
                   <p className="text-gray-700 text-xs md:text-base lg:text-lg">
-                    5-Star Reviews
+                    Rave Reviews
                   </p>
                 </div>
               </div>
@@ -151,7 +151,7 @@ const LocationHomeHero = (props) => {
                     {props.pagedata.totalPlayerEscaped}
                   </p>
                   <p className="text-gray-700 text-xs md:text-base lg:text-lg">
-                    Players Escaped
+                    Guests Served
                   </p>
                 </div>
               </div>
