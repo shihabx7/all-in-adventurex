@@ -21,6 +21,8 @@ export const geEventPagetData = (slug) => {
       coverimageM: eventIndData[slug].coverimageM,
       coverimageM_alt: eventIndData[slug].coverimageM_alt,
       totalLocations: getTotal().totalLocations,
+      totalPlayerEscaped: getTotal().toalPlayerEscape,
+      catering: "yes",
       age: eventIndData[slug].age,
       max_players: eventIndData[slug].max_players,
       min_players: eventIndData[slug].min_players,
