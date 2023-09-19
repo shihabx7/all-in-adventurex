@@ -11,9 +11,9 @@ const GameDetails = (props) => {
       <div className=" w-full absolute top-0 left-0">
         <img className="w-full" src="/assets/game-home-or1.jpg"></img>
       </div>
-      <div className="content-container-game pt-16 md:pt-24 lg:pt-32 md:px-4 relative z-10">
+      <div className="content-container-game pt-20 md:pt-24 lg:pt-32 md:px-4 relative z-10">
         {/*=========== game story=====*/}
-        <div className="game-dt-container storyline-bg relative overflow-x-hidden md:overflow-visible">
+        <div className="game-dt-container storyline-bg relative overflow-x-hidden md:overflow-visible ">
           {props.activitydata.story_bg && (
             <div className="st-bg absolute top-[38%] right-0 md:left-[-20px] md:top-[-40px] lg:top-[-110px] xl:top-[-80px] 2xl:top-[-40px] 2xl:left-[-60px] 4xl:left-[172px] 5xl:left-[210px]">
               <img
@@ -61,7 +61,7 @@ const GameDetails = (props) => {
         {/*=========== game scene=====*/}
         <div className="game-dt-container plot-bg relative overflow-x-hidden md:overflow-visible">
           {props.activitydata.scene_bg && (
-            <div className="pt-bg absolute top-[38%] right-[-20px] md:top-[-100px] lg:top-[-124px] xl:top-[-110px] 2xl:top-[-140px] 2xl:right-[0px] 4xl:right-[220px] 5xl:right-[330px]">
+            <div className="pt-bg absolute top-[38%] right-[-20px] md:top-[-100px] lg:top-[-124px] xl:top-[-110px] 2xl:top-[-140px] 2xl:right-[0px] 4xl:right-[220px] 5xl:right-[330px] w-[240px] md:w-[240px] lg:w-[280px] xl:w-[300px] 2xl:w-[400px] 4xl:w-[520px] 5xl:w-[550px]">
               <img
                 className="w-[240px] md:w-[240px] lg:w-[280px] xl:w-[300px] 2xl:w-[400px] 4xl:w-[520px] 5xl:w-[550px]"
                 src={props.activitydata.scene_bg}
@@ -102,7 +102,7 @@ const GameDetails = (props) => {
         {/*=========== game scene=====*/}
         {/*=========== game mission=====*/}
         <div className="game-dt-container mission-bg relative overflow-x-hidden md:overflow-visible">
-          <div className="msn-bg-l absolute top-[40%] right-[-10px] hidden md:block md:left-0 md:top-[-160px] lg:top-[-120px] xl:top-[-140px] 2xl:top-0 4xl:left-[200px] 5xl:left-[300px] 4xl:top-[-160px]  z-20">
+          <div className="msn-bg-l absolute top-[40%] right-[-10px] hidden md:block md:left-0 md:top-[-160px] lg:top-[-120px] xl:top-[-140px] 2xl:top-0 4xl:left-[200px] 5xl:left-[300px] 4xl:top-[-160px]  z-20 w-[120px] md:w-[140px] lg:w-[170px] xl:w-[200px] xl:opacity-80 2xl:w-[280px] 2xl:opacity-90 4xl:w-[320px] 5xl:w-[380px] ">
             <img
               className=" -scale-x-100 md:scale-x-100 w-[120px] md:w-[140px] lg:w-[170px] xl:w-[200px] xl:opacity-80 2xl:w-[280px] 2xl:opacity-90 4xl:w-[320px] 5xl:w-[380px] "
               src="/assets/svg/game-bg-pattern/direction.svg"

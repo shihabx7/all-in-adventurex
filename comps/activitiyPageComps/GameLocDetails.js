@@ -10,7 +10,7 @@ const GameLocDetails = (props) => {
       <div className=" w-full absolute top-0 left-0">
         <img className="w-full" src="/assets/game-home-or1.jpg"></img>
       </div>
-      <div className="content-container-game  pt-16 md:pt-24 lg:pt-32  relative z-30">
+      <div className="content-container-game  pt-20 md:pt-24 lg:pt-32  relative z-30">
         {/*=========== game story=====*/}
         <div className="game-dt-container storyline-bg relative overflow-x-hidden md:overflow-visible">
           {props.activitydata.story_bg && (
@@ -153,7 +153,7 @@ const GameLocDetails = (props) => {
         {/*=========== game scene=====*/}
         {/*=========== game mission=====*/}
         <div className="game-dt-container mission-bg relative overflow-x-hidden md:overflow-visible">
-          <div className="msn-bg-l absolute top-[40%] right-[-10px] hidden md:block md:left-0 md:top-[-160px] lg:top-[-120px] xl:top-[-140px] 2xl:top-0 4xl:left-[200px] 5xl:left-[300px] 4xl:top-[-160px]  z-20">
+          <div className="msn-bg-l absolute top-[40%] right-[-10px] hidden md:block md:left-0 md:top-[-160px] lg:top-[-120px] xl:top-[-140px] 2xl:top-0 4xl:left-[200px] 5xl:left-[300px] 4xl:top-[-160px]  z-20 w-[120px] md:w-[140px] lg:w-[170px] xl:w-[200px] xl:opacity-80 2xl:w-[280px] 2xl:opacity-90 4xl:w-[320px] 5xl:w-[380px]">
             <img
               className=" -scale-x-100 md:scale-x-100 w-[120px] md:w-[140px] lg:w-[170px] xl:w-[200px] xl:opacity-80 2xl:w-[280px] 2xl:opacity-90 4xl:w-[320px] 5xl:w-[380px] "
               src="/assets/svg/game-bg-pattern/direction.svg"

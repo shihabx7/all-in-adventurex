@@ -23,6 +23,8 @@ export const Homepagedata = () => {
     homeagedata: {
       totalLocations: getTotal().totalLocations,
       totalUniqueGames: getTotal().uniqueGames,
+      age: "6-99",
+      private_events: "Yes",
       totalFiveStarReview: getTotal().totalReview,
       totalPlayerEscaped: getTotal().toalPlayerEscape,
       subtitle:
@@ -299,7 +301,8 @@ export const Homepagedata = () => {
         minplayers: "2",
         price: "23.89",
         slug: "axe-throwing",
-        bgimg: "/assets/all-game-slider-bg/axe-throwing.jpg",
+        bgimg:
+          "/assets/all-game-slider-bg/allinadventures-axe-throwing-party.jpg",
       },
       /*  {
         id: 4,

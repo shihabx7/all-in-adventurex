@@ -36,6 +36,12 @@ export const getActivityData = (activitySlug) => {
       duration: activityDataset[activitySlug].duration,
       max_players: activityDataset[activitySlug].max_players,
       min_players: activityDataset[activitySlug].min_players,
+      age: activityDataset[activitySlug].age
+        ? activityDataset[activitySlug].age
+        : false,
+      success_rate: activityDataset[activitySlug].success_rate
+        ? activityDataset[activitySlug].success_rate
+        : false,
       activityname: activityDataset[activitySlug].shortname
         ? activityDataset[activitySlug].shortname
         : activityDataset[activitySlug].activityname,
@@ -61,6 +67,8 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
+    age: "6+",
+    success_rate: "56%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-escape-from-alcatraz.jpg",
     coverimageM:
@@ -147,6 +155,8 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
+    age: "6+",
+    success_rate: "67%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-treasure-island.jpg",
     coverimageM:
@@ -233,6 +243,8 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
+    age: "6+",
+    success_rate: "61%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-superheros-adventure.jpg",
     coverimageM:
@@ -319,6 +331,8 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
+    age: "6+",
+    success_rate: "37%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-zombie-apocalypse.jpg",
     coverimageM:
@@ -403,6 +417,8 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
+    age: "6+",
+    success_rate: "37%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-special-agent.jpg",
     coverimageM:
@@ -486,6 +502,8 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
+    age: "6+",
+    success_rate: "45%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-hollywood-premiere.jpg",
     coverimageM:
@@ -573,6 +591,8 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
+    age: "6+",
+    success_rate: "42%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-sherlocks-library.jpg",
     coverimageM:
@@ -658,6 +678,8 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
+    age: "6+",
+    success_rate: "18%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-houdinis-magic-cell.jpg",
     coverimageM:
@@ -743,6 +765,8 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
+    age: "6+",
+    success_rate: "46%",
     coverimageL: "/assets/all-game-desktop-hero/allinadventures-black-ops.jpg",
     coverimageM: "/assets/all-game-mobile-hero/allinadventures-black-ops.jpg",
     coverimageM_alt: "allinadventures black ops",
@@ -823,6 +847,8 @@ const activityDataset = {
     duration: "60",
     max_players: 5,
     min_players: 2,
+    age: "6+",
+    success_rate: "54%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-lost-in-the-jungle.jpg",
     coverimageM:
@@ -908,6 +934,8 @@ const activityDataset = {
     duration: "60",
     max_players: "4",
     min_players: "2",
+    age: "6+",
+    success_rate: "47%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-wizarding-school.jpg",
     coverimageM:
@@ -992,6 +1020,8 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
+    age: "6+",
+    success_rate: "42%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-magic-castle.jpg",
     coverimageM:
@@ -1075,6 +1105,8 @@ const activityDataset = {
     duration: "30",
     max_players: "4",
     min_players: "2",
+    age: "6+",
+    success_rate: "63%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-locked-in-the-lift.jpg",
     coverimageM:
