@@ -76,7 +76,9 @@ const GameHomeHero = (props) => {
                             props.pagedata.max_players}
                       </p>
                       <p className="text-gray-700 text-xs md:text-base lg:text-lg ">
-                        {props.pagedata.min_players < 2 ? "Player" : "Players"}{" "}
+                        {props.pagedata.min_players < 2
+                          ? "Player"
+                          : "Team Size"}{" "}
                         {props.pagedata.groupcat && (
                           <span className="text-[10px] md:text-[14px]">
                             / {props.pagedata.groupcat}
@@ -87,13 +89,7 @@ const GameHomeHero = (props) => {
                   </div>
                 )}
                 {props.pagedata.age && (
-                  <div
-                    className={
-                      props.pagedata.success_rate
-                        ? "text-center w-[33%] md:w-auto"
-                        : "text-center"
-                    }
-                  >
+                  <div className="text-center w-[33%] md:w-auto">
                     <div className="border-l border-gray-300">
                       <p className="golden-text text-xl md:text-4xl font-os font-bold">
                         {props.pagedata.age}
@@ -129,13 +125,7 @@ const GameHomeHero = (props) => {
                   </div>
                 )}
                 {props.pagedata.duration && (
-                  <div
-                    className={
-                      props.pagedata.success_rate
-                        ? "text-center w-[33%] md:w-auto"
-                        : "text-center"
-                    }
-                  >
+                  <div className="text-center w-[33%] md:w-auto">
                     <div className="border-l border-gray-300 ">
                       <p className="golden-text text-xl md:text-4xl font-os font-bold">
                         {props.pagedata.duration} MIN

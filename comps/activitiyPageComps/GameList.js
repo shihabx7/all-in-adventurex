@@ -43,7 +43,7 @@ const GameList = (props) => {
         <div className="w-full absolute top-0 left-0 ">
           <img className="w-full" src="/assets/game-home-or1.jpg"></img>{" "}
         </div>
-        <div className="all-games-container max-w-7xl mx-auto relative  z-30 py-16 md:py-20 lg:py-28 px-4">
+        <div className="all-games-container max-w-7xl mx-auto relative  z-30 pt-20 pb-16 md:py-20 lg:py-28 px-4">
           <div className="all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
             <div className="section-title  text-center max-w-[800px] mx-auto">
               <TitleSeparator
