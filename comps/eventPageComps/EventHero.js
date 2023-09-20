@@ -46,7 +46,7 @@ const EventHero = (props) => {
           {props.gametotal != "not" && <div className="mb-6"> </div>}
 
           {props.gametotal != "not" && (
-            <div className="game-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[90%] md:max-w-3xl mx-auto bottom-[-66px] md:bottom-[-8%] left-0 right-0 absolute bg-white px-0 py-4 md:py-4 md:px-4 lg:py-6  rounded">
+            <div className="evt-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[90%] md:max-w-3xl mx-auto bottom-[-66px] md:bottom-[-8%] left-0 right-0 absolute bg-white px-0 py-4 md:py-4 md:px-4 lg:py-6  rounded">
               <div className="flex flex-wrap w-full justify-center md:grid md:grid-cols-5  md:justify-evenly items-center ">
                 {props.pagedata.totalUniqueGames && (
                   <div className="text-center w-[33%] md:w-auto">
@@ -65,7 +65,7 @@ const EventHero = (props) => {
                       2-70
                     </p>
                     <p className="text-gray-700 text-xs md:text-base lg:text-lg">
-                      Team Size
+                      Guest Capacity
                     </p>
                   </div>
                 </div>
@@ -81,30 +81,16 @@ const EventHero = (props) => {
                   </div>
                 </div>
 
-                {props.pagedata.totalFiveStarReview && (
-                  <div className="text-center w-[44%] md:w-auto pt-2 mt-3 border-t border-gray-300 md:pt-0 md:mt-0 md:border-t-0">
-                    <div className="border-l-0 border-gray-300 md:border-l ">
-                      <p className="golden-text text-xl md:text-4xl font-os font-bold">
-                        {props.pagedata.totalFiveStarReview}
-                      </p>
-                      <p className="text-gray-700 text-xs md:text-base lg:text-lg">
-                        Rave Reviews
-                      </p>
-                    </div>
+                <div className="text-center w-[44%] md:w-auto pt-2 mt-3 border-t border-gray-300 md:pt-0 md:mt-0 md:border-t-0">
+                  <div className="border-l-0 border-gray-300 md:border-l ">
+                    <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                      YES
+                    </p>
+                    <p className="text-gray-700 text-xs md:text-base lg:text-lg">
+                      Catering
+                    </p>
                   </div>
-                )}
-                {props.pagedata.catering && (
-                  <div className="text-center w-[44%] md:w-auto pt-2 mt-3 border-t border-gray-300 md:pt-0 md:mt-0 md:border-t-0">
-                    <div className="border-l-0 border-gray-300 md:border-l ">
-                      <p className="golden-text text-xl md:text-4xl font-os font-bold">
-                        YES
-                      </p>
-                      <p className="text-gray-700 text-xs md:text-base lg:text-lg">
-                        Catering
-                      </p>
-                    </div>
-                  </div>
-                )}
+                </div>
 
                 {props.pagedata.totalPlayerEscaped && (
                   <div className="text-center w-[44%] md:w-auto pt-2 mt-3 border-t border-gray-300 md:pt-0 md:mt-0 md:border-t-0">

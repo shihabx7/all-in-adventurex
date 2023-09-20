@@ -125,7 +125,7 @@ const EventLocHero = (props) => {
                         2-70
                       </p>
                       <p className="text-gray-700 text-xs md:text-base lg:text-lg">
-                        Team Size
+                        Guest Capacity
                       </p>
                     </div>
                   </div>
@@ -141,30 +141,16 @@ const EventLocHero = (props) => {
                     </div>
                   </div>
 
-                  {props.pagedata.totalFiveStarReview && (
-                    <div className="text-center w-[44%] md:w-auto pt-2 mt-3 border-t border-gray-300 md:pt-0 md:mt-0 md:border-t-0">
-                      <div className="border-l-0 border-gray-300 md:border-l ">
-                        <p className="golden-text text-xl md:text-4xl font-os font-bold">
-                          {props.pagedata.totalFiveStarReview}
-                        </p>
-                        <p className="text-gray-700 text-xs md:text-base lg:text-lg">
-                          Rave Reviews
-                        </p>
-                      </div>
+                  <div className="text-center w-[44%] md:w-auto pt-2 mt-3 border-t border-gray-300 md:pt-0 md:mt-0 md:border-t-0">
+                    <div className="border-l-0 border-gray-300 md:border-l ">
+                      <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                        YES
+                      </p>
+                      <p className="text-gray-700 text-xs md:text-base lg:text-lg">
+                        Catering
+                      </p>
                     </div>
-                  )}
-                  {props.pagedata.catering && (
-                    <div className="text-center w-[44%] md:w-auto pt-2 mt-3 border-t border-gray-300 md:pt-0 md:mt-0 md:border-t-0">
-                      <div className="border-l-0 border-gray-300 md:border-l ">
-                        <p className="golden-text text-xl md:text-4xl font-os font-bold">
-                          YES
-                        </p>
-                        <p className="text-gray-700 text-xs md:text-base lg:text-lg">
-                          Catering
-                        </p>
-                      </div>
-                    </div>
-                  )}
+                  </div>
 
                   {props.pagedata.totalPlayerEscaped && (
                     <div className="text-center w-[44%] md:w-auto pt-2 mt-3 border-t border-gray-300 md:pt-0 md:mt-0 md:border-t-0">
