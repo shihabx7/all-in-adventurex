@@ -43,7 +43,7 @@ const GameList = (props) => {
         <div className="w-full absolute top-0 left-0 ">
           <img className="w-full" src="/assets/game-home-or1.jpg"></img>{" "}
         </div>
-        <div className="all-games-container max-w-7xl mx-auto relative  z-30 pt-20 pb-16 md:py-20 lg:py-28 px-4">
+        <div className="all-games-container max-w-7xl mx-auto relative  z-30 pt-[110px] pb-16 md:py-20 lg:py-28 px-4">
           <div className="all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
             <div className="section-title  text-center max-w-[800px] mx-auto">
               <TitleSeparator
@@ -88,15 +88,16 @@ const GameList = (props) => {
                             <img src="/assets/svg/card-time.svg"></img>
                           </span>
                           <span className="text-sm md:text-base drop-shadow">
-                            {activity.duration} Minutes
-                          </span>{" "}
+                            Duration {activity.duration} Min
+                          </span>
                         </p>
                         <p className="flex items-center space-x-2 text-gray-50 my-1">
                           <span>
                             <img src="/assets/svg/card-person.svg"></img>
                           </span>
                           <span className="text-sm md:text-base drop-shadow">
-                            {activity.min_player}-{activity.max_player} Players
+                            Team Size {activity.min_player}-
+                            {activity.max_player}
                           </span>{" "}
                         </p>
                         <p className="flex items-center space-x-2 text-gray-50 my-1">
@@ -184,18 +185,10 @@ const GameList = (props) => {
                       <div className="all-game-info">
                         <p className="flex items-center space-x-2 text-gray-50 my-1">
                           <span>
-                            <img src="/assets/svg/inperson.svg"></img>
-                          </span>
-                          <span className="text-sm md:text-base">
-                            {activity.activity_type}
-                          </span>
-                        </p>
-                        <p className="flex items-center space-x-2 text-gray-50 my-1">
-                          <span>
                             <img src="/assets/svg/card-age.svg"></img>
                           </span>
                           <span className="text-sm md:text-base">
-                            Age Range{activity.age}
+                            Age Range {activity.age}
                           </span>
                         </p>
                         <p className="flex items-center space-x-2 text-gray-50 my-1">
@@ -203,7 +196,7 @@ const GameList = (props) => {
                             <img src="/assets/svg/card-time.svg"></img>
                           </span>
                           <span className="text-sm md:text-base">
-                            {activity.duration} Minutes
+                            Duration {activity.duration} Min
                           </span>
                         </p>
                         <p className="flex items-center space-x-2 text-gray-50 my-1">
@@ -211,14 +204,24 @@ const GameList = (props) => {
                             <img src="/assets/svg/card-person.svg"></img>
                           </span>
                           <span className="text-sm md:text-base">
+                            {!activity.gorupcat && (
+                              <>
+                                {activity.max_player < 2
+                                  ? "Guest "
+                                  : "Team Size "}
+                              </>
+                            )}
+                            {activity.gorupcat && (
+                              <>{"Guests " + activity.gorupcat + " "}</>
+                            )}
+
                             {activity.min_player == activity.max_player
                               ? activity.min_player
                               : activity.min_player +
                                 "-" +
                                 activity.max_player +
                                 "  "}
-                            {activity.max_player < 2 ? "Player" : "Players"}
-                          </span>{" "}
+                          </span>
                         </p>
                       </div>
                       <div className="card-ribbon">

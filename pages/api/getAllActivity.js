@@ -297,6 +297,7 @@ export const getAllActivity = () => {
         id: 16,
         activity_name: "Axe Throwing",
         activity_type: "In person",
+        gorupcat: "Per Lane",
         activity_category: "other",
         age: "13-99",
         min_player: 2,

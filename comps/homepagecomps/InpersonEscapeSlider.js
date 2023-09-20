@@ -94,7 +94,7 @@ const InpersonEscapeSlider = (props) => {
             href={"/" + props.locationslug + "/activities/"}
             className="flex relative z-20 font-medium text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"
           >
-            <span>View all r eal-life escape room games</span> <FaAngleRight />
+            <span>View all real-life escape rooms</span> <FaAngleRight />
           </a>
         )}
         {!props.locationslug && (
@@ -102,7 +102,7 @@ const InpersonEscapeSlider = (props) => {
             href={"/activities/"}
             className="flex relative z-20 font-medium text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"
           >
-            <span>View all real-life escape room games</span> <FaAngleRight />
+            <span>View all real-life escape rooms</span> <FaAngleRight />
           </a>
         )}
       </div>

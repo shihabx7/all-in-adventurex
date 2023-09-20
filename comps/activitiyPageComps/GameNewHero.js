@@ -23,7 +23,6 @@ const GameLocHero = (props) => {
   // console.log(props.pagedata.bookingdata.active);
   return (
     <>
-      {" "}
       <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
       <div
         className="home-hero"

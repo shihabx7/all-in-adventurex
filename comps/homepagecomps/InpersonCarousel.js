@@ -110,23 +110,23 @@ const InpersonCarousel = (props) => {
                       </span>
                       <span className="text-sm">
                         Age Range {inpersongame.age}
-                      </span>{" "}
+                      </span>
                     </p>
                     <p className="flex items-center space-x-2 text-gray-50 my-1">
                       <span>
                         <img src="/assets/svg/card-time.svg"></img>
                       </span>
                       <span className="text-sm">
-                        {inpersongame.duration} Minutes
-                      </span>{" "}
+                        Duration {inpersongame.duration} Min
+                      </span>
                     </p>
                     <p className="flex items-center space-x-2 text-gray-50 my-1">
                       <span>
                         <img src="/assets/svg/card-person.svg"></img>
                       </span>
                       <span className="text-sm">
-                        {inpersongame.minplayers}-{inpersongame.maxplayers}{" "}
-                        Players
+                        Team Size {inpersongame.minplayers}-
+                        {inpersongame.maxplayers}{" "}
                       </span>
                     </p>
                     {inpersongame.success_rate && (

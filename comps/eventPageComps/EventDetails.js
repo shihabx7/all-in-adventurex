@@ -49,7 +49,7 @@ const EventDetails = (props) => {
         <img className="w-full" src="/assets/game-home-or1.jpg"></img>
       </div>
 
-      <div className="content-container pt-20 pb-16 md:py-24 lg:py-32 md:px-4 relative z-20">
+      <div className="content-container pt-[116px] pb-16 md:py-24 lg:py-32 md:px-4 relative z-20">
         {/*===============================event row -1 WHY BOOK A PARTY WITH ALL IN ADVENTURE?================= */}
         <div className="evt-dt-container wbook-bg relative overflow-x-hidden md:overflow-visible">
           <div className="st-bg absolute bottom-[44%] right-0 md:right-[-30px] md:bottom-[0px] lg:bottom-[-40px] lg:right-[-60px] xl:bottom-[-16%] xl:right-[-80px] 2xl:bottom-[-4%] 4xl:bottom-[-8%]  2xl:right-[100px] 4xl:right-[200px] 5xl:right-[380px]">

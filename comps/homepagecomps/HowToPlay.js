@@ -64,7 +64,7 @@ const HowToPlay = (props) => {
       </div>
       {/*======================= teaser videow modal end============== */}
       <div
-        className="htb relative pt-20 pb-16 md:py-20 lg:py-28 px-4 overflow-hidden"
+        className="htb relative pt-[100px] pb-16 md:py-20 lg:py-28 px-4 overflow-hidden"
         style={{
           backgroundImage:
             "linear-gradient(65deg,rgba(255, 249, 235,.1),rgba(255, 249, 235,.2)),url('/assets/gridbg.jpg')",

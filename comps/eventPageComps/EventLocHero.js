@@ -35,7 +35,7 @@ const EventLocHero = (props) => {
           <div className="homehero-img w-full min-h-[280px] md:hidden">
             <img src={props.pagedata.coverimageM}></img>
           </div>
-          <div className="max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-20 md:py-20 lg:py-32 xl:py-40 relative z-20">
+          <div className="max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-[100px] md:py-20 lg:py-32 xl:py-40 relative z-20">
             <div className="page-benar-info">
               {props.pagedata.publish_status == false && (
                 <div className="text-center font-bold text-red-600 text-[32px] md:text-[52px] font-os cm-title py-4">

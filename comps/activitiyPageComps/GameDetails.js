@@ -11,7 +11,7 @@ const GameDetails = (props) => {
       <div className=" w-full absolute top-0 left-0">
         <img className="w-full" src="/assets/game-home-or1.jpg"></img>
       </div>
-      <div className="content-container-game pt-20 md:pt-24 lg:pt-32 md:px-4 relative z-10">
+      <div className="content-container-game pt-[116px] md:pt-24 lg:pt-32 md:px-4 relative z-10">
         {/*=========== game story=====*/}
         <div className="game-dt-container storyline-bg relative overflow-x-hidden md:overflow-visible ">
           {props.activitydata.story_bg && (

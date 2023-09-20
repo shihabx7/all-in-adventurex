@@ -444,12 +444,12 @@ a {
   text-align: center;
 }
 .htb-bg-1 {
-  top: 16px;
+  top: 0px;
   left: 0;
   transform: rotate(-30deg);
 }
 .htb-bg-1 img {
-  max-width: 130px;
+  max-width: 160px;
   filter: opacity(44%);
 }
 .htb-bg-2 {
@@ -1139,7 +1139,7 @@ a {
     text-align: center;
   }
   .htb-bg-1 img {
-    max-width: 100px;
+    max-width: 130px;
   }
   .htb-bg-2 img {
     max-width: 180px;
@@ -1266,6 +1266,13 @@ a {
   }
   .single-blog-content-holder {
     padding-top: 24%;
+  }
+  .htb-bg-2 {
+    top: -30px;
+    right: -70px;
+  }
+  .htb-bg-1 img {
+    max-width: 120px;
   }
 }
 @media only screen and (max-width: 820px) {

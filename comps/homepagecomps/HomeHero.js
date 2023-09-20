@@ -14,7 +14,7 @@ const HomeHero = (props) => {
           src="/assets/kids-and-familly-friendly-escape-rooms-allinadventures.png"
         ></img>
       </div>
-      <div className="max-w-7xl home-hero-container mx-auto px-4 pb-16 pt-0 md:pb-24 md:pt-[160px] lg:pb-28 lg:pt-[210px] relative z-10">
+      <div className="max-w-7xl home-hero-container mx-auto px-4 pb-[90px] pt-0 md:pb-24 md:pt-[160px] lg:pb-28 lg:pt-[210px] relative z-10">
         <div className="page-benar-info">
           <p className=" md:mt-4 lg:mt-6 xl:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center">
             CHOOSE FROM {props.pagedata.totalLocations} U.S. LOCATIONS

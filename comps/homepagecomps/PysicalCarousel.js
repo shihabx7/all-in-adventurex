@@ -113,7 +113,7 @@ const PysicalCarousel = (props) => {
                         <img src="/assets/svg/card-time.svg"></img>
                       </span>
                       <span className="text-sm">
-                        {othergame.duration} Minutes
+                        Duration {othergame.duration} Min
                       </span>
                     </p>
                     <p className="flex items-center space-x-2 text-gray-50 my-1">
@@ -121,12 +121,20 @@ const PysicalCarousel = (props) => {
                         <img src="/assets/svg/card-person.svg"></img>
                       </span>
                       <span className="text-xs md:text-sm">
+                        {!othergame.groupcat && (
+                          <>
+                            {othergame.maxplayers != ""
+                              ? "Team Size "
+                              : "Guest "}
+                          </>
+                        )}
+                        {othergame.groupcat
+                          ? "Guests " + othergame.groupcat + " "
+                          : ""}
                         {othergame.minplayers}
-                        {othergame.maxplayers != "" && <span> -</span>}{" "}
-                        {othergame.maxplayers}{" "}
-                        {othergame.maxplayers != "" ? "Players" : "Player"}
-                        {othergame.groupcat ? " / " + othergame.groupcat : ""}
-                      </span>{" "}
+                        {othergame.maxplayers != "" && <span>-</span>}
+                        {othergame.maxplayers}
+                      </span>
                     </p>
                   </div>
                   <div className="card-ribbon">

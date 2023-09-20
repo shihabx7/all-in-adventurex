@@ -59,7 +59,7 @@ const LocationHomeHero = (props) => {
         <div className="homehero-img md:hidden w-full min-h-[280px] bg-[#000000]">
           <img src={props.pagedata.coverimageM}></img>
         </div>
-        <div className="max-w-7xl home-hero-container mx-auto px-4 pb-16 pt-0 md:pb-24 md:pt-[160px] lg:pb-28 lg:pt-[210px] relative z-10">
+        <div className="max-w-7xl home-hero-container mx-auto px-4 pb-[90px] pt-0 md:pb-24 md:pt-[160px] lg:pb-28 lg:pt-[210px] relative z-10">
           <div className="page-benar-info">
             {!props.pagedata.publish_status && (
               <div className="text-center font-bold text-red-600 text-[32px] md:text-[52px] font-os cm-title py-4">
