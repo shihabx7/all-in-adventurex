@@ -106,7 +106,7 @@ const EventLocHero = (props) => {
             {props.gametotal != "not" && <div className="mb-6"> </div>}
 
             {props.gametotal != "not" && (
-              <div className="game-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[90%] md:max-w-3xl mx-auto bottom-[-12%] md:bottom-[-8%] left-0 right-0 absolute bg-white px-0 py-4 md:py-4 md:px-4 lg:py-6  rounded">
+              <div className="game-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[90%] md:max-w-3xl mx-auto bottom-[-66px] md:bottom-[-8%] left-0 right-0 absolute bg-white px-0 py-4 md:py-4 md:px-4 lg:py-6  rounded">
                 <div className="flex flex-wrap w-full justify-center md:grid md:grid-cols-5  md:justify-evenly items-center ">
                   {props.pagedata.totalUniqueGames && (
                     <div className="text-center w-[33%] md:w-auto">

@@ -42,6 +42,9 @@ export const getActivityData = (activitySlug) => {
       success_rate: activityDataset[activitySlug].success_rate
         ? activityDataset[activitySlug].success_rate
         : false,
+      private_events: activityDataset[activitySlug].private_events
+        ? activityDataset[activitySlug].private_events
+        : false,
       activityname: activityDataset[activitySlug].shortname
         ? activityDataset[activitySlug].shortname
         : activityDataset[activitySlug].activityname,
@@ -1193,6 +1196,7 @@ const activityDataset = {
     duration: 60,
     max_players: 16,
     min_players: 4,
+    private_events: "YES",
     age: "6-99",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-game-show-room.jpg",
@@ -1387,6 +1391,7 @@ const activityDataset = {
     duration: 60,
     max_players: 4,
     min_players: 2,
+    private_events: "YES",
     groupcat: "Per Lane",
     age: "13-99",
     coverimageL:
@@ -1470,6 +1475,7 @@ const activityDataset = {
     duration: 2,
     max_players: 1,
     min_players: 1,
+    private_events: "YES",
     age: "6-99",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-beat-the-seat.jpg",

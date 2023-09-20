@@ -46,7 +46,7 @@ const GameHomeHero = (props) => {
           {props.gametotal != "not" && <div className="mb-6"> </div>}
 
           {props.gametotal != "not" && (
-            <div className="game-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[90%] md:max-w-3xl mx-auto bottom-[-15%] md:bottom-[-8%] left-0 right-0 absolute bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded">
+            <div className="game-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[90%] md:max-w-3xl mx-auto bottom-[-66px] md:bottom-[-8%] left-0 right-0 absolute bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded">
               <div className="flex flex-wrap w-full justify-center md:grid md:grid-cols-5  md:justify-evenly items-center ">
                 {props.pagedata.totalUniqueGames && (
                   <div className="text-center w-[33%] md:w-auto">
@@ -70,12 +70,17 @@ const GameHomeHero = (props) => {
                             props.pagedata.max_players}
                       </p>
                       <p className="text-gray-700 text-xs md:text-base lg:text-lg ">
-                        {props.pagedata.min_players < 2
-                          ? "Player"
-                          : "Team Size"}{" "}
+                        {!props.pagedata.groupcat && (
+                          <>
+                            {props.pagedata.min_players < 2
+                              ? "Player"
+                              : "Team Size"}
+                          </>
+                        )}
+
                         {props.pagedata.groupcat && (
-                          <span className="text-[10px] md:text-[14px]">
-                            / {props.pagedata.groupcat}
+                          <span className="text-gray-700 text-xs md:text-base lg:text-lg">
+                            Team {props.pagedata.groupcat}
                           </span>
                         )}
                       </p>
@@ -106,7 +111,7 @@ const GameHomeHero = (props) => {
                     </div>
                   </div>
                 )}
-                {!props.pagedata.duration && (
+                {props.pagedata.private_events && (
                   <div className="text-center w-[33%] md:w-auto">
                     <div className="border-l border-gray-300 ">
                       <p className="golden-text text-xl md:text-4xl font-os font-bold">
@@ -119,8 +124,20 @@ const GameHomeHero = (props) => {
                   </div>
                 )}
                 {props.pagedata.duration && (
-                  <div className="text-center w-[33%] md:w-auto">
-                    <div className="border-l border-gray-300 ">
+                  <div
+                    className={
+                      props.pagedata.private_events
+                        ? "text-center w-[44%] md:w-auto"
+                        : "text-center w-[33%] md:w-auto"
+                    }
+                  >
+                    <div
+                      className={
+                        props.pagedata.private_events
+                          ? "pt-2 mt-3 border-t md:border-t-0 md:pt-0 md:mt-0 md:border-l border-gray-300 "
+                          : "border-l border-gray-300 "
+                      }
+                    >
                       <p className="golden-text text-xl md:text-4xl font-os font-bold">
                         {props.pagedata.duration} MIN
                       </p>

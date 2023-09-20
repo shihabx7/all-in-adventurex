@@ -26,6 +26,7 @@ export const getAllActivity = () => {
       totalUniqueGames: getTotal().uniqueGames,
       totalFiveStarReview: getTotal().totalReview,
       totalPlayerEscaped: getTotal().toalPlayerEscape,
+      private_events: "YES",
       coverimageL:
         "/assets/all-game-desktop-hero/allinadventures-all-game-page-hero.jpg",
       coverimageM:

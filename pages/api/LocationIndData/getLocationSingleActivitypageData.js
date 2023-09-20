@@ -169,6 +169,9 @@ export const getLocationSingleActivitypageData = (gameslug, locationslug) => {
         ? activityDataset[gameslug].notice
         : false,
       bookingdata: bookingdata,
+      private_events: activityDataset[gameslug].private_events
+        ? activityDataset[gameslug].private_events
+        : false,
       eventbooking: {
         shortname: eventbookinglist.shortname,
         item: eventbookinglist["party-package"].item,
@@ -2350,6 +2353,7 @@ const activityDataset = {
     max_players: 16,
     min_players: 4,
     age: "6-99",
+    private_events: "YES",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-game-show-room.jpg",
     coverimageM:
@@ -2545,6 +2549,7 @@ const activityDataset = {
     max_players: 4,
     min_players: 2,
     groupcat: "Per Lane",
+    private_events: "YES",
     age: "13-99",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-axe-throwing.jpg",
@@ -2629,6 +2634,7 @@ const activityDataset = {
     max_players: 1,
     min_players: 1,
     age: "6-99",
+    private_events: "YES",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-beat-the-seat.jpg",
     coverimageM:

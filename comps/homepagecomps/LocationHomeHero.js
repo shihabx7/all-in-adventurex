@@ -103,7 +103,7 @@ const LocationHomeHero = (props) => {
             {/*============location search btn==========*/}
           </div>
 
-          <div className="drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)]  mx-auto bottom-[-14%] max-w-[90%] md:max-w-3xl md:bottom-[-8%] left-0 right-0 absolute bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded">
+          <div className="drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)]  mx-auto bottom-[-66px] max-w-[90%] md:max-w-3xl md:bottom-[-8%] left-0 right-0 absolute bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded">
             <div className="flex flex-wrap md:grid justify-center items-center md:grid-cols-5 ">
               <div className="text-center w-[33%] md:w-auto">
                 <div>
