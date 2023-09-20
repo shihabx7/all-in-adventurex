@@ -156,6 +156,7 @@ export const getLocationIndActivityList = (slug) => {
       totalUniqueGames: getLocationActivitySlugList(slug).length,
       totalFiveStarReview: getLocTotal(slug).locTotalReview,
       totalPlayerEscaped: getLocTotal(slug).locToalPlayerEscape,
+      private_events: "yes",
       coverimageL:
         "/assets/all-game-desktop-hero/allinadventures-all-game-page-hero.jpg",
       coverimageM:
