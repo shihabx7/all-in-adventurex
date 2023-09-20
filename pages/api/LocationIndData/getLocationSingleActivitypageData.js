@@ -1239,7 +1239,7 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
-    age: "6+",
+    age: "6-99",
     success_rate: "56%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-escape-from-alcatraz.jpg",
@@ -1326,7 +1326,7 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
-    age: "6+",
+    age: "6-99",
     success_rate: "67%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-treasure-island.jpg",
@@ -1412,7 +1412,7 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
-    age: "6+",
+    age: "6-99",
     success_rate: "61%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-superheros-adventure.jpg",
@@ -1498,7 +1498,7 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
-    age: "6+",
+    age: "6-99",
     success_rate: "37%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-zombie-apocalypse.jpg",
@@ -1583,7 +1583,7 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
-    age: "6+",
+    age: "6-99",
     success_rate: "37%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-special-agent.jpg",
@@ -1667,7 +1667,7 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
-    age: "6+",
+    age: "6-99",
     success_rate: "45%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-hollywood-premiere.jpg",
@@ -1755,7 +1755,7 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
-    age: "6+",
+    age: "6-99",
     success_rate: "42%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-sherlocks-library.jpg",
@@ -1840,7 +1840,7 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
-    age: "6+",
+    age: "6-99",
     success_rate: "18%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-houdinis-magic-cell.jpg",
@@ -1926,7 +1926,7 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
-    age: "6+",
+    age: "6-99",
     success_rate: "46%",
     coverimageL: "/assets/all-game-desktop-hero/allinadventures-black-ops.jpg",
     coverimageM: "/assets/all-game-mobile-hero/allinadventures-black-ops.jpg",
@@ -2007,7 +2007,7 @@ const activityDataset = {
     duration: "60",
     max_players: 5,
     min_players: 2,
-    age: "6+",
+    age: "6-99",
     success_rate: "54%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-lost-in-the-jungle.jpg",
@@ -2093,7 +2093,7 @@ const activityDataset = {
     duration: "60",
     max_players: "4",
     min_players: "2",
-    age: "6+",
+    age: "6-99",
     success_rate: "47%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-wizarding-school.jpg",
@@ -2178,7 +2178,7 @@ const activityDataset = {
     duration: "50",
     max_players: "10",
     min_players: "2",
-    age: "6+",
+    age: "6-99",
     success_rate: "42%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-magic-castle.jpg",
@@ -2262,7 +2262,7 @@ const activityDataset = {
     duration: "30",
     max_players: "4",
     min_players: "2",
-    age: "6+",
+    age: "6-99",
     success_rate: "63%",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-locked-in-the-lift.jpg",
@@ -2349,6 +2349,7 @@ const activityDataset = {
     duration: 60,
     max_players: 16,
     min_players: 4,
+    age: "6-99",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-game-show-room.jpg",
     coverimageM:
@@ -2544,6 +2545,7 @@ const activityDataset = {
     max_players: 4,
     min_players: 2,
     groupcat: "Per Lane",
+    age: "13-99",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-axe-throwing.jpg",
     coverimageM:
@@ -2626,6 +2628,7 @@ const activityDataset = {
     duration: 2,
     max_players: 1,
     min_players: 1,
+    age: "6-99",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-beat-the-seat.jpg",
     coverimageM:

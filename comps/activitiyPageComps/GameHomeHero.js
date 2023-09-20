@@ -46,10 +46,10 @@ const GameHomeHero = (props) => {
           {props.gametotal != "not" && <div className="mb-6"> </div>}
 
           {props.gametotal != "not" && (
-            <div className="drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[90%] md:max-w-3xl mx-auto bottom-[-15%] md:bottom-[-8%] left-0 right-0 absolute bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded">
+            <div className="game-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[90%] md:max-w-3xl mx-auto bottom-[-15%] md:bottom-[-8%] left-0 right-0 absolute bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded">
               <div className="flex flex-wrap w-full justify-center md:grid md:grid-cols-5  md:justify-evenly items-center ">
                 {props.pagedata.totalUniqueGames && (
-                  <div className="text-center">
+                  <div className="text-center w-[33%] md:w-auto">
                     <p className="golden-text text-xl md:text-4xl font-os font-bold">
                       {props.pagedata.totalUniqueGames}
                     </p>
@@ -59,13 +59,7 @@ const GameHomeHero = (props) => {
                   </div>
                 )}
                 {props.pagedata.max_players && (
-                  <div
-                    className={
-                      props.pagedata.success_rate
-                        ? "text-center w-[33%] md:w-auto"
-                        : "text-center"
-                    }
-                  >
+                  <div className="text-center w-[33%] md:w-auto">
                     <div className=" ">
                       <p className="golden-text text-xl md:text-4xl font-os font-bold">
                         {props.pagedata.max_players ==
@@ -95,7 +89,7 @@ const GameHomeHero = (props) => {
                         {props.pagedata.age}
                       </p>
                       <p className="text-gray-700 text-xs md:text-base lg:text-lg">
-                        Age
+                        Age Range
                       </p>
                     </div>
                   </div>
@@ -167,7 +161,7 @@ const GameHomeHero = (props) => {
                         ${props.pagedata.price}
                       </p>
                       <p className="text-gray-700 text-xs md:text-base lg:text-lg">
-                        Per Player
+                        Per Guest
                       </p>
                     </div>
                   </div>

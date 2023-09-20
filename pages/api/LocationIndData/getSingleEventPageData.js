@@ -1976,7 +1976,9 @@ export const getSingleEventPageData = (eventslug, locationslug) => {
       coverimageM: eventlocdata[eventslug].coverimageM,
       totalLocations: getLocTotal(locationslug).totalLocations,
       totalUniqueGames: getLocTotal(locationslug).locUniqueGames,
+      totalPlayerEscaped: getLocTotal(locationslug).locToalPlayerEscape,
       age: eventlocdata[eventslug].age,
+      catering: "YES",
       max_players: eventlocdata[eventslug].max_players,
       min_players: eventlocdata[eventslug].min_players,
 

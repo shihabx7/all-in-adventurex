@@ -172,7 +172,7 @@ export const getLocationHomepageData = (locationslug) => {
         title: "Virtual Game Show Room",
         description:
           "An interactive live game show experience that players of all ages and backgrounds can come together and play from across the globe",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "60",
         maxplayers: "12",
         minplayers: "4",
@@ -193,7 +193,7 @@ export const getLocationHomepageData = (locationslug) => {
         title: "6 Virtual Escape Rooms",
         description:
           "New generation of escape rooms that are exactly like physical escape rooms, but can be played from anywhere.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "60",
         maxplayers: "12",
         minplayers: "2",
@@ -354,7 +354,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -371,7 +371,7 @@ const locPagedata = {
         title: "Treasure Island",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -388,7 +388,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -405,7 +405,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -423,7 +423,7 @@ const locPagedata = {
         title: "Black Ops",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -439,7 +439,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -456,7 +456,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -474,7 +474,7 @@ const locPagedata = {
         title: "Special Agent",
         description:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -491,7 +491,7 @@ const locPagedata = {
         title: "Hollywood Premiere",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "6",
         minplayers: "2",
@@ -675,7 +675,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -692,7 +692,7 @@ const locPagedata = {
         title: "Treasure Island",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -709,7 +709,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -726,7 +726,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -744,7 +744,7 @@ const locPagedata = {
         title: "Black Ops",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -760,7 +760,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -777,7 +777,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -795,7 +795,7 @@ const locPagedata = {
         title: "Special Agent",
         description:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -812,7 +812,7 @@ const locPagedata = {
         title: "Hollywood Premiere",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "6",
         minplayers: "2",
@@ -996,7 +996,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1013,7 +1013,7 @@ const locPagedata = {
         title: "Treasure Island",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1030,7 +1030,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1047,7 +1047,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1065,7 +1065,7 @@ const locPagedata = {
         title: "Black Ops",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1081,7 +1081,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1098,7 +1098,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1116,7 +1116,7 @@ const locPagedata = {
         title: "Special Agent",
         description:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1133,7 +1133,7 @@ const locPagedata = {
         title: "Hollywood Premiere",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "6",
         minplayers: "2",
@@ -1150,7 +1150,7 @@ const locPagedata = {
         title: "Wizarding School ",
         description:
           "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "60",
         maxplayers: "4",
         minplayers: "2",
@@ -1170,7 +1170,7 @@ const locPagedata = {
         title: "Beat The Seat",
         description:
           "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "2",
         maxplayers: "",
         minplayers: "1",
@@ -1354,7 +1354,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1371,7 +1371,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1388,7 +1388,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1405,7 +1405,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1423,7 +1423,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1439,7 +1439,7 @@ const locPagedata = {
         success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1456,7 +1456,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1474,7 +1474,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1491,7 +1491,7 @@ const locPagedata = {
         success_rate: "45",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1509,7 +1509,7 @@ const locPagedata = {
         success_rate: "63",
         description:
           "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. See if you can piece together how to get things running again.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "30",
         maxplayers: "4",
         minplayers: "2",
@@ -1527,7 +1527,7 @@ const locPagedata = {
         title: "Beat The Seat",
         description:
           "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "2",
         maxplayers: "",
         minplayers: "1",
@@ -1710,7 +1710,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1727,7 +1727,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1744,7 +1744,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1761,7 +1761,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1779,7 +1779,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1795,7 +1795,7 @@ const locPagedata = {
         success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1812,7 +1812,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1830,7 +1830,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -1847,7 +1847,7 @@ const locPagedata = {
         success_rate: "45",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2030,7 +2030,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2047,7 +2047,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2064,7 +2064,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2081,7 +2081,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2099,7 +2099,7 @@ const locPagedata = {
         success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2118,7 +2118,7 @@ const locPagedata = {
         groupcat: "Per Lane",
         description:
           "Having a bad day? Don't worry! Come throw some axes at our exciting interactive targets with your friends and family!",
-        age: "All Ages (13+)",
+        age: "13-99",
         duration: "60",
         maxplayers: "4",
         minplayers: "2",
@@ -2134,7 +2134,7 @@ const locPagedata = {
         title: "Beat The Seat",
         description:
           "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "2",
         maxplayers: "",
         minplayers: "1",
@@ -2150,7 +2150,7 @@ const locPagedata = {
         title: "Game Show Room",
         description:
           "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "60",
         maxplayers: "8",
         minplayers: "4",
@@ -2334,7 +2334,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2351,7 +2351,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2368,7 +2368,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2385,7 +2385,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2403,7 +2403,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2419,7 +2419,7 @@ const locPagedata = {
         success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2436,7 +2436,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2455,7 +2455,7 @@ const locPagedata = {
         groupcat: "Per Lane",
         description:
           "Having a bad day? Don't worry! Come throw some axes at our exciting interactive targets with your friends and family!",
-        age: "All Ages (13+)",
+        age: "13-99",
         duration: "60",
         maxplayers: "4",
         minplayers: "2",
@@ -2643,7 +2643,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2660,7 +2660,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2677,7 +2677,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2694,7 +2694,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2712,7 +2712,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2728,7 +2728,7 @@ const locPagedata = {
         success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2745,7 +2745,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2932,7 +2932,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2949,7 +2949,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2966,7 +2966,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -2983,7 +2983,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3001,7 +3001,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3017,7 +3017,7 @@ const locPagedata = {
         success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3034,7 +3034,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3052,7 +3052,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3069,7 +3069,7 @@ const locPagedata = {
         success_rate: "45",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3255,7 +3255,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3272,7 +3272,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3289,7 +3289,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3306,7 +3306,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3324,7 +3324,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3340,7 +3340,7 @@ const locPagedata = {
         success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3357,7 +3357,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3375,7 +3375,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3392,7 +3392,7 @@ const locPagedata = {
         success_rate: "45",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3575,7 +3575,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3592,7 +3592,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3610,7 +3610,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3628,7 +3628,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3644,7 +3644,7 @@ const locPagedata = {
         success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3661,7 +3661,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3679,7 +3679,7 @@ const locPagedata = {
         success_rate: "45",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3863,7 +3863,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3880,7 +3880,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3897,7 +3897,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3914,7 +3914,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3932,7 +3932,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3948,7 +3948,7 @@ const locPagedata = {
         success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3965,7 +3965,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -3983,7 +3983,7 @@ const locPagedata = {
         success_rate: "45",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -4000,7 +4000,7 @@ const locPagedata = {
         success_rate: "54",
         description:
           "Having heard the mysterious sound of drums coming from the roof, you and your friends decided to check it out. Drawn by the beat, you find yourself trapped in the game! ",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "60",
         maxplayers: "5",
         minplayers: "2",
@@ -4184,7 +4184,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -4201,7 +4201,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -4218,7 +4218,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -4235,7 +4235,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -4253,7 +4253,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -4269,7 +4269,7 @@ const locPagedata = {
         success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -4286,7 +4286,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -4304,7 +4304,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -4321,7 +4321,7 @@ const locPagedata = {
         success_rate: "45",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -4504,7 +4504,7 @@ const locPagedata = {
       "type": "In-Person",
        "title": "Escape From Alcatraz",
        "description": "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-       "age":"All Ages (6+)",
+       "age":"6-99",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -4518,7 +4518,7 @@ const locPagedata = {
        "type": "In-Person",
        "title": "Treasure Island",
        "description": "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-       "age":"All Ages (6+)",
+       "age":"6-99",
        "duration":"50",
        "maxplayers":"10",
        "minplayers":"2",
@@ -4532,7 +4532,7 @@ const locPagedata = {
       "type": "In-Person",
       "title": "Zombie Apocalypse",
       "description": "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
-      "age":"All Ages (6+)",
+      "age":"6-99",
       "duration":"50",
       "maxplayers":"10",
       "minplayers":"2",
@@ -4546,7 +4546,7 @@ const locPagedata = {
       "type": "In-Person",
       "title": "Sherlock's Library",
       "description": "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-      "age":"All Ages (6+)",
+      "age":"6-99",
       "duration":"50",
       "maxplayers":"10",
       "minplayers":"2",
@@ -4561,7 +4561,7 @@ const locPagedata = {
       "type": "In-Person",
       "title": "Black Ops",
       "description": "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-      "age":"All Ages (6+)",
+      "age":"6-99",
       "duration":"50",
       "maxplayers":"10",
       "minplayers":"2",
@@ -4575,7 +4575,7 @@ const locPagedata = {
       "type": "In-Person",
       "title": "Superhero's Adventure",
       "description": "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-      "age":"All Ages (6+)",
+      "age":"6-99",
       "duration":"50",
       "maxplayers":"10",
       "minplayers":"2",
@@ -4589,7 +4589,7 @@ const locPagedata = {
       "type": "In-Person",
       "title": "Houdini's Magic Cell",
       "description": "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-      "age":"All Ages (6+)",
+      "age":"6-99",
       "duration":"50",
       "maxplayers":"10",
       "minplayers":"2",
@@ -4604,7 +4604,7 @@ const locPagedata = {
       "type": "In-Person",
       "title": "Special Agent",
       "description": "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
-      "age":"All Ages (6+)",
+      "age":"6-99",
       "duration":"50",
       "maxplayers":"10",
       "minplayers":"2",
@@ -4768,7 +4768,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -4785,7 +4785,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -4802,7 +4802,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -4819,7 +4819,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -4837,7 +4837,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -4854,7 +4854,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -4872,7 +4872,7 @@ const locPagedata = {
         success_rate: "45",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -5056,7 +5056,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -5073,7 +5073,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -5090,7 +5090,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -5107,7 +5107,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -5125,7 +5125,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -5141,7 +5141,7 @@ const locPagedata = {
         success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -5158,7 +5158,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -5176,7 +5176,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -5193,7 +5193,7 @@ const locPagedata = {
         success_rate: "45",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -5376,7 +5376,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "8",
         minplayers: "2",
@@ -5392,7 +5392,7 @@ const locPagedata = {
         title: "Treasure Island",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "8",
         minplayers: "2",
@@ -5408,7 +5408,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         description:
           "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "8",
         minplayers: "2",
@@ -5424,7 +5424,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "6",
         minplayers: "2",
@@ -5441,7 +5441,7 @@ const locPagedata = {
         title: "Black Ops",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "8",
         minplayers: "2",
@@ -5456,7 +5456,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "6",
         minplayers: "2",
@@ -5472,7 +5472,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "8",
         minplayers: "2",
@@ -5489,7 +5489,7 @@ const locPagedata = {
         title: "Special Agent",
         description:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "8",
         minplayers: "2",
@@ -5505,7 +5505,7 @@ const locPagedata = {
         title: "Hollywood Premiere",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "6",
         minplayers: "2",
@@ -5692,7 +5692,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -5709,7 +5709,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -5726,7 +5726,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -5743,7 +5743,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -5761,7 +5761,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -5777,7 +5777,7 @@ const locPagedata = {
         success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -5794,7 +5794,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -5812,7 +5812,7 @@ const locPagedata = {
         success_rate: "45",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -5830,7 +5830,7 @@ const locPagedata = {
         title: "Game Show Room",
         description:
           "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "60",
         maxplayers: "8",
         minplayers: "4",
@@ -6014,7 +6014,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6031,7 +6031,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6049,7 +6049,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6067,7 +6067,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6083,7 +6083,7 @@ const locPagedata = {
         success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6100,7 +6100,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6118,7 +6118,7 @@ const locPagedata = {
         success_rate: "45",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6302,7 +6302,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6319,7 +6319,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6336,7 +6336,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6353,7 +6353,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6371,7 +6371,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6387,7 +6387,7 @@ const locPagedata = {
         success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6404,7 +6404,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6422,7 +6422,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6439,7 +6439,7 @@ const locPagedata = {
         success_rate: "45",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6627,7 +6627,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6644,7 +6644,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6661,7 +6661,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6678,7 +6678,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6696,7 +6696,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6712,7 +6712,7 @@ const locPagedata = {
         success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6729,7 +6729,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6747,7 +6747,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6931,7 +6931,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6948,7 +6948,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6965,7 +6965,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -6982,7 +6982,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7000,7 +7000,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7016,7 +7016,7 @@ const locPagedata = {
         success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7033,7 +7033,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7051,7 +7051,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7068,7 +7068,7 @@ const locPagedata = {
         success_rate: "45",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7255,7 +7255,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7272,7 +7272,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7289,7 +7289,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7306,7 +7306,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7324,7 +7324,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7340,7 +7340,7 @@ const locPagedata = {
         success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7357,7 +7357,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7375,7 +7375,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7392,7 +7392,7 @@ const locPagedata = {
         success_rate: "45",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7580,7 +7580,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7597,7 +7597,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7614,7 +7614,7 @@ const locPagedata = {
         success_rate: "37",
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7631,7 +7631,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7649,7 +7649,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7665,7 +7665,7 @@ const locPagedata = {
         success_rate: "61",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7682,7 +7682,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7700,7 +7700,7 @@ const locPagedata = {
         title: "Beat The Seat",
         description:
           "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "2",
         maxplayers: "",
         minplayers: "1",
@@ -7887,7 +7887,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7904,7 +7904,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7922,7 +7922,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7940,7 +7940,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -7957,7 +7957,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -8140,7 +8140,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -8157,7 +8157,7 @@ const locPagedata = {
         success_rate: "67",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -8175,7 +8175,7 @@ const locPagedata = {
         success_rate: "42",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -8193,7 +8193,7 @@ const locPagedata = {
         success_rate: "46",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -8210,7 +8210,7 @@ const locPagedata = {
         success_rate: "18",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -8228,7 +8228,7 @@ const locPagedata = {
         success_rate: "45",
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -8410,7 +8410,7 @@ const locPagedata = {
         title: "Escape From Alcatraz",
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -8426,7 +8426,7 @@ const locPagedata = {
         title: "Treasure Island",
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -8442,7 +8442,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         description:
           "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -8458,7 +8458,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -8475,7 +8475,7 @@ const locPagedata = {
         title: "Black Ops",
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -8490,7 +8490,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -8506,7 +8506,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
@@ -8523,7 +8523,7 @@ const locPagedata = {
         title: "Special Agent",
         description:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
-        age: "All Ages (6+)",
+        age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",

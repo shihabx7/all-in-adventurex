@@ -106,7 +106,7 @@ const PysicalCarousel = (props) => {
                       <span>
                         <img src="/assets/svg/card-age.svg"></img>
                       </span>
-                      <span className="text-sm">{othergame.age}</span>{" "}
+                      <span className="text-sm">Age Range {othergame.age}</span>{" "}
                     </p>
                     <p className="flex items-center space-x-2 text-gray-50 my-1">
                       <span>
@@ -114,7 +114,7 @@ const PysicalCarousel = (props) => {
                       </span>
                       <span className="text-sm">
                         {othergame.duration} Minutes
-                      </span>{" "}
+                      </span>
                     </p>
                     <p className="flex items-center space-x-2 text-gray-50 my-1">
                       <span>

@@ -72,14 +72,14 @@ const GameLocList = (props) => {
                 >
                   <div className="all-game-list-head flex justify-between">
                     <div className="all-game-info">
-                      <p className="flex items-center space-x-2 text-gray-50 my-1">
+                      <div className="flex items-center space-x-2 text-gray-50 my-1">
                         <span>
                           <img src="/assets/svg/card-age.svg"></img>
                         </span>
-                        <span className="text-sm md:text-base">
-                          {activity.age}
-                        </span>{" "}
-                      </p>
+                        <p className="text-sm md:text-base">
+                          Age Range {activity.age}
+                        </p>
+                      </div>
                       <p className="flex items-center space-x-2 text-gray-50 my-1">
                         <span>
                           <img src="/assets/svg/card-time.svg"></img>
@@ -203,14 +203,14 @@ const GameLocList = (props) => {
                   >
                     <div className="all-game-list-head flex justify-between">
                       <div className="all-game-info">
-                        <p className="flex items-center space-x-2 text-gray-50 my-1">
+                        <div className="flex items-center space-x-2 text-gray-50 my-1">
                           <span>
                             <img src="/assets/svg/card-age.svg"></img>
                           </span>
-                          <span className="text-sm md:text-base">
-                            {activity.age}
-                          </span>{" "}
-                        </p>
+                          <p className="text-sm md:text-base">
+                            Age Range {activity.age}
+                          </p>
+                        </div>
                         <p className="flex items-center space-x-2 text-gray-50 my-1">
                           <span>
                             <img src="/assets/svg/card-time.svg"></img>

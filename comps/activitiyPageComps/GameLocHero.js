@@ -179,13 +179,7 @@ const GameLocHero = (props) => {
                     </div>
                   )}
                   {props.pagedata.max_players && (
-                    <div
-                      className={
-                        props.pagedata.success_rate
-                          ? "text-center w-[33%] md:w-auto"
-                          : "text-center"
-                      }
-                    >
+                    <div className="text-center w-[33%] md:w-auto">
                       <div className=" ">
                         <p className="golden-text text-xl md:text-4xl font-os font-bold">
                           {props.pagedata.max_players ==
@@ -198,12 +192,7 @@ const GameLocHero = (props) => {
                         <p className="text-gray-700 text-xs md:text-base lg:text-lg ">
                           {props.pagedata.min_players < 2
                             ? "Player"
-                            : "Team Size"}{" "}
-                          {props.pagedata.groupcat && (
-                            <span className="text-[10px] md:text-[14px]">
-                              / {props.pagedata.groupcat}
-                            </span>
-                          )}
+                            : "Team Size"}
                         </p>
                       </div>
                     </div>
@@ -215,7 +204,7 @@ const GameLocHero = (props) => {
                           {props.pagedata.age}
                         </p>
                         <p className="text-gray-700 text-xs md:text-base lg:text-lg">
-                          Age
+                          Age Range
                         </p>
                       </div>
                     </div>

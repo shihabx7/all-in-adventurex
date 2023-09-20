@@ -80,7 +80,7 @@ const GameList = (props) => {
                             <img src="/assets/svg/card-age.svg"></img>
                           </span>
                           <span className="text-sm md:text-base drop-shadow">
-                            {activity.age}
+                            Age Range {activity.age}
                           </span>
                         </p>
                         <p className="flex items-center space-x-2 text-gray-50 my-1">
@@ -188,15 +188,15 @@ const GameList = (props) => {
                           </span>
                           <span className="text-sm md:text-base">
                             {activity.activity_type}
-                          </span>{" "}
+                          </span>
                         </p>
                         <p className="flex items-center space-x-2 text-gray-50 my-1">
                           <span>
                             <img src="/assets/svg/card-age.svg"></img>
                           </span>
                           <span className="text-sm md:text-base">
-                            {activity.age}
-                          </span>{" "}
+                            Age Range{activity.age}
+                          </span>
                         </p>
                         <p className="flex items-center space-x-2 text-gray-50 my-1">
                           <span>
@@ -204,7 +204,7 @@ const GameList = (props) => {
                           </span>
                           <span className="text-sm md:text-base">
                             {activity.duration} Minutes
-                          </span>{" "}
+                          </span>
                         </p>
                         <p className="flex items-center space-x-2 text-gray-50 my-1">
                           <span>
