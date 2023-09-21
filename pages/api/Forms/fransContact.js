@@ -1,54 +1,54 @@
 import nodemailer from "nodemailer";
 export default async function fransContactHandler(req, res) {
-    // Get data submitted in request's body.
-    const body = req.body
-  
-    // Optional logging to see the responses
-    // in the command line where next.js app is running.
-   // console.log('Name: ', body.fName)
-    const retData={
-        "Name":body.fName+' '+body.lName,
-        "Email":body.email,
-        "Phone":body.phone,
-        "City":body.city,
-        "State":body.state,
-        "Address":body.address,
-        "NetWorth":body.netWorth,
-        "LiqAssets":body.liqAssets,
-        "visitAIA":body.visitAIA,
-        "preferredstate":body.preferredstate,
-        "planForVenture":body.planForVenture,
-        "preferredCity1":body.fchoiceCity,
-        "preferredCity2":body.schoiceCity,
-        "preferredTimeFrame":body.preferredTimeFrame,
-        "otherInvolvement":body.otherInvolvement,
-        "opPlan":body.opPlan,
-        "profExp":body.profExp,
-        "urBelieve":body.urBelieve 
+  // Get data submitted in request's body.
+  const body = req.body;
 
-    }
-  
-    const transporter = nodemailer.createTransport({
-      host: "smtp.office365.com",
-      port: 587,
-      secureConnection: false,
-      tls: {
-        ciphers: 'SSLv3'
+  // Optional logging to see the responses
+  // in the command line where next.js app is running.
+  // console.log('Name: ', body.fName)
+  const retData = {
+    Name: body.fName + " " + body.lName,
+    Email: body.email,
+    Phone: body.phone,
+    City: body.city,
+    State: body.state,
+    Address: body.address,
+    NetWorth: body.netWorth,
+    LiqAssets: body.liqAssets,
+    visitAIA: body.visitAIA,
+    preferredstate: body.preferredstate,
+    planForVenture: body.planForVenture,
+    preferredCity1: body.fchoiceCity,
+    preferredCity2: body.schoiceCity,
+    preferredTimeFrame: body.preferredTimeFrame,
+    otherInvolvement: body.otherInvolvement,
+    opPlan: body.opPlan,
+    profExp: body.profExp,
+    urBelieve: body.urBelieve,
+  };
+
+  const transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: false,
+    auth: {
+      type: "OAuth2",
+      user: process.env.MAIL_SENDER_USER, // Your email address
+      serviceClient: process.env.CLIENT_ID,
+      privateKey: process.env.PRIVATE_KEY,
+      accessUrl: process.env.TOKEN_URI,
     },
-      auth: {
-        user: process.env.MAIL_SENDER_USER,
-        pass: process.env.MAIL_SENDER_PASS
-      }
-    });
+  });
 
-      try {
-        await transporter.sendMail({
-          from: "sender@allinadventures.com",
-          to: "franchise@allinadventures.com",
-         // to: "shihabx7@gmail.com",
-          bcc:"dgency.com@gmail.com,shihab.dgency@gmail.com",
-          subject: `Franchise Contact`,
-          html: `
+  try {
+    await transporter.verify();
+    await transporter.sendMail({
+      from: "sender@allinadventures.com",
+      to: "franchise@allinadventures.com",
+      // to: "shihabx7@gmail.com",
+      bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
+      subject: `Franchise Contact`,
+      html: `
           
           <p style="padding:8px 0px;border-bottom:1px solid #888888; color:#565656 font-size:20px; font-weight:600; max-width:600px;">CONTACT DETAILS</p>
                 <p><strong>Name: </strong> ${retData.Name}</p>
@@ -71,10 +71,10 @@ export default async function fransContactHandler(req, res) {
           <p><strong>Operations plan: </strong> ${retData.opPlan}</p>
           <p><strong>Other professional/relevant experiences: </strong> ${retData.profExp}</p>
           <p><strong>What will make you a great ALL IN ADVENTURES franchisee: </strong> ${retData.urBelieve}</p>
-          `
-        });
-      } catch (error) {
-        return res.status(500).json({ data: error,success:false});
-      }
-    res.status(200).json({ data: retData,success:true})
+          `,
+    });
+  } catch (error) {
+    return res.status(500).json({ data: error, success: false });
   }
+  res.status(200).json({ data: retData, success: true });
+}

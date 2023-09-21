@@ -81,15 +81,15 @@ export default async function jobApplicationHandler(req, res) {
   // ============================pdf file======================================
 
   const transporter = nodemailer.createTransport({
-    host: "smtp.office365.com",
-    port: 587,
-    secureConnection: false,
-    tls: {
-      ciphers: "SSLv3",
-    },
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: false,
     auth: {
-      user: process.env.MAIL_SENDER_USER,
-      pass: process.env.MAIL_SENDER_PASS,
+      type: "OAuth2",
+      user: process.env.MAIL_SENDER_USER, // Your email address
+      serviceClient: process.env.CLIENT_ID,
+      privateKey: process.env.PRIVATE_KEY,
+      accessUrl: process.env.TOKEN_URI,
     },
   });
   var emailErrors = {
@@ -102,6 +102,7 @@ export default async function jobApplicationHandler(req, res) {
   };
 
   try {
+    await transporter.verify();
     await transporter.sendMail({
       from: "sender@allinadventures.com",
       //to: "shihab.dgency@gmail.com",
@@ -133,6 +134,7 @@ export default async function jobApplicationHandler(req, res) {
   }
   // sending email to applicant=========================
   try {
+    await transporter.verify();
     await transporter.sendMail({
       from: "sender@allinadventures.com",
       //to: "shihab.dgency@gmail.com",
