@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/gapi": "^0.0.45",
     "cookies-next": "^2.1.1",
     "google-auth-library": "^9.0.0",
+    "googleapis": "^126.0.1",
     "next": "12.1.6",
     "nextjs-breadcrumbs": "^1.1.9",
     "nodemailer": "^6.8.0",

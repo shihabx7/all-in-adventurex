@@ -1,4 +1,6 @@
 import nodemailer from "nodemailer";
+import { google } from "googleapis";
+
 export default async function fransContactHandler(req, res) {
   // Get data submitted in request's body.
   const body = req.body;
@@ -26,24 +28,34 @@ export default async function fransContactHandler(req, res) {
     profExp: body.profExp,
     urBelieve: body.urBelieve,
   };
+  const { OAuth2 } = google.auth;
 
-  const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: false,
-    auth: {
-      type: "OAuth2",
-      user: process.env.MAIL_SENDER_USER, // Your email address
-      serviceClient: process.env.CLIENT_ID,
-      privateKey: process.env.PRIVATE_KEY,
-      accessUrl: process.env.TOKEN_URI,
-    },
+  const client_id = process.env.GS_CLIENT_ID;
+  const client_secret = process.env.GS_CLIENT_SECRET;
+  const redirect_uri = process.env.GS_REDIRECT_URI;
+  const refreshtoken = process.env.GS_REFRESH_TOKEN;
+
+  const oauth2Client = new OAuth2(client_id, client_secret, redirect_uri);
+
+  oauth2Client.setCredentials({
+    refresh_token: refreshtoken,
   });
 
   try {
-    await transporter.verify();
+    const access_token = await oauth2Client.getAccessToken();
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        type: "OAuth2",
+        user: "sender@allinadventures.com",
+        clientId: client_id,
+        clientSecret: client_secret,
+        refreshToken: refreshtoken,
+        accessToken: access_token,
+      },
+    });
     await transporter.sendMail({
-      from: "sender@allinadventures.com",
+      from: '"AIA Franschise Contact" <sender@allinadventures.com>',
       to: "franchise@allinadventures.com",
       // to: "shihabx7@gmail.com",
       bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",

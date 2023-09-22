@@ -5,6 +5,7 @@ import fs from "fs";
 
 import pdf from "pdf-creator-node";
 //import handlebars from 'handlebars'
+import { google } from "googleapis";
 
 export default async function jobApplicationHandler(req, res) {
   // Get data submitted in request's body.
@@ -80,18 +81,19 @@ export default async function jobApplicationHandler(req, res) {
 
   // ============================pdf file======================================
 
-  const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: false,
-    auth: {
-      type: "OAuth2",
-      user: process.env.MAIL_SENDER_USER, // Your email address
-      serviceClient: process.env.CLIENT_ID,
-      privateKey: process.env.PRIVATE_KEY,
-      accessUrl: process.env.TOKEN_URI,
-    },
+  const { OAuth2 } = google.auth;
+
+  const client_id = process.env.GS_CLIENT_ID;
+  const client_secret = process.env.GS_CLIENT_SECRET;
+  const redirect_uri = process.env.GS_REDIRECT_URI;
+  const refreshtoken = process.env.GS_REFRESH_TOKEN;
+
+  const oauth2Client = new OAuth2(client_id, client_secret, redirect_uri);
+
+  oauth2Client.setCredentials({
+    refresh_token: refreshtoken,
   });
+
   var emailErrors = {
     applicantErr: "",
     aiaErr: "",
@@ -102,12 +104,23 @@ export default async function jobApplicationHandler(req, res) {
   };
 
   try {
-    await transporter.verify();
+    const access_token = await oauth2Client.getAccessToken();
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        type: "OAuth2",
+        user: "sender@allinadventures.com",
+        clientId: client_id,
+        clientSecret: client_secret,
+        refreshToken: refreshtoken,
+        accessToken: access_token,
+      },
+    });
     await transporter.sendMail({
-      from: "sender@allinadventures.com",
+      from: '"AIA Job Application"<sender@allinadventures.com>"',
       //to: "shihab.dgency@gmail.com",
       to: "careers@allinadventures.com",
-      bcc: "dgency.com@gmail.com",
+      bcc: "dgency.com@gmail.com, shihab.dgency@gmail.com",
       //  bcc: "dgency.com@gmail.com",
       subject: `Job Application - ${retbody.info1.lName} ${retbody.info1.fName}`,
       html: `

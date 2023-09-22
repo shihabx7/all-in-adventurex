@@ -476,7 +476,7 @@ const CorContact = () => {
 
                 {isSend == true && (
                   <div className="max-w-[170px] mx-auto btn-back px-6 py-2 text-lg md:text-xl rounded-full font-medium bg-red-600 hover:bg-red-700  text-white ">
-                    <div class=" font-medium loader">Sending</div>
+                    <div className=" font-medium loader">Sending</div>
                   </div>
                 )}
                 {/*======================================contact form button====================== */}

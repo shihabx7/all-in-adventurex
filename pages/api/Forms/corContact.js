@@ -1,11 +1,10 @@
 import nodemailer from "nodemailer";
+import { google } from "googleapis";
+
 export default async function corContactHandler(req, res) {
   // Get data submitted in request's body.
   const body = req.body;
 
-  // Optional logging to see the responses
-  // in the command line where next.js app is running.
-  // console.log('Name: ', body.fName)
   const retData = {
     Name: body.fName + " " + body.lName,
     Email: body.email,
@@ -14,38 +13,34 @@ export default async function corContactHandler(req, res) {
     mEssage: body.msg,
   };
 
-  /* const transporter = nodemailer.createTransport({
-        host: "smtp.office365.com",
-        port: 587,
-        secureConnection: false,
-        tls: {
-          ciphers: 'SSLv3'
-      },
-        auth: {
-          user: process.env.MAIL_SENDER_USER,
-          pass: process.env.MAIL_SENDER_PASS
-        }
-      });*/
+  const { OAuth2 } = google.auth;
 
-  const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
-    auth: {
-      type: "OAuth2",
-      user: process.env.MAIL_SENDER_USER, // Your email address
-      serviceClient: process.env.CLIENT_ID,
-      privateKey: process.env.PRIVATE_KEY,
-      accessUrl: process.env.TOKEN_URI,
-    },
+  const client_id = process.env.GS_CLIENT_ID;
+  const client_secret = process.env.GS_CLIENT_SECRET;
+  const redirect_uri = process.env.GS_REDIRECT_URI;
+  const refreshtoken = process.env.GS_REFRESH_TOKEN;
+
+  const oauth2Client = new OAuth2(client_id, client_secret, redirect_uri);
+
+  oauth2Client.setCredentials({
+    refresh_token: refreshtoken,
   });
 
   try {
-    const vf = await transporter.verify();
-    console.log(vf);
-
+    const access_token = await oauth2Client.getAccessToken();
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        type: "OAuth2",
+        user: "sender@allinadventures.com",
+        clientId: client_id,
+        clientSecret: client_secret,
+        refreshToken: refreshtoken,
+        accessToken: access_token,
+      },
+    });
     const mailOptions = {
-      from: '"Allinadventures" <sender@allinadventures.com>', // sender address
+      from: '"AIA Corporate Contact" <sender@allinadventures.com>', // sender address
       to: "support@allinadventures.com", // list of receivers
       bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
       subject: `Corporate Contact`,

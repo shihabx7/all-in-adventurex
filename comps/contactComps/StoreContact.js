@@ -67,7 +67,7 @@ const StoreContact = (props) => {
     lName: "",
     email: "",
     phone: "",
-    comSubject: "",
+    comSubject: "General enquiry",
     msg: "",
     toEmail: props.contactdata.email.toLowerCase(),
     toMgrEmail: props.contactdata.mgremail.toLowerCase(),
