@@ -18,10 +18,9 @@ const CorContact = () => {
     lName: "",
     email: "",
     phone: "",
-    comSubject: "",
+    comSubject: "General enquiry",
     msg: "",
   });
-  const router = useRouter();
 
   // ========================================================first name validation=================
   const checkFName = (e) => {
@@ -161,6 +160,8 @@ const CorContact = () => {
   const [isSend, setIsSend] = useState(false);
   const submitForm = async (event) => {
     event.preventDefault();
+    console.log("clicked");
+    console.log(fieldVlue);
     if (!err) {
       if (
         fieldVlue.fName != "" &&

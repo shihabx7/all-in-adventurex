@@ -30,7 +30,7 @@ const EventDetails = (props) => {
 
   return (
     <div
-      className="event-detail relative"
+      className="event-detail relative overflow-hidden"
       style={{ background: "url('/assets/game-dt-bg.jpg')" }}
     >
       <div className="pl-or pl-or-1 absolute top-0 left-0 z-10">

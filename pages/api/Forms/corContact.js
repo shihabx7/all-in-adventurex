@@ -41,7 +41,8 @@ export default async function corContactHandler(req, res) {
   });
 
   try {
-    await transporter.verify();
+    const vf = await transporter.verify();
+    console.log(vf);
 
     const mailOptions = {
       from: '"Allinadventures" <sender@allinadventures.com>', // sender address
