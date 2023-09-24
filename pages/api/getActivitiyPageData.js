@@ -1424,7 +1424,7 @@ const activityDataset = {
       story_bg: "/assets/svg/game-bg-pattern/bulls-eye.svg",
       scene_bg: "/assets/svg/game-bg-pattern/axe.svg",
       mission:
-        "Axe Throwing is great for groups both large and small. Lanes hold up to 4 players, and we can accommodate larger groups by booking multiple lanes. Players 13 to 100 with closed-toed shoes are welcome to heft an axe and join in the fun.",
+        "Axe Throwing is great for groups both large and small. Lanes hold up to 4 players, and we can accommodate larger groups by booking multiple lanes. Players 13 to 99 with closed-toed shoes are welcome to heft an axe and join in the fun.",
       missionimg:
         "/assets/all-game-details/allinadventures-axe-throwing-sec3.png",
       missionimg_alt: "allinadventures axe throwing mission",

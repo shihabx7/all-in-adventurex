@@ -301,14 +301,11 @@ const GameLocList = (props) => {
                       )}
                       {activity.activity_type != "Virtual" && (
                         <div className="card-game-link mt-4 text-left">
-                          {props.publish == undefined && (
+                          {(props.publish == undefined ||
+                            props.publish == true) && (
                             <>
-                              {(props.bookingdata[activity.activity_slug]
-                                .active == true ||
-                                props.bookingdata[activity.activity_slug]
-                                  .active == undefined ||
-                                props.bookingdata[activity.activity_slug]
-                                  .active == null) && (
+                              {props.bookingdata[activity.activity_slug]
+                                .active == true && (
                                 <button
                                   onClick={() => {
                                     bookGames(

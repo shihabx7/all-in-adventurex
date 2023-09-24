@@ -837,8 +837,8 @@ const AllblogDataobj = {
         },
         {
           id: "2",
-          name: "Event & Parties",
-          slug: "event-and-parties",
+          name: "Events & Parties",
+          slug: "events-and-parties",
         },
       ],
       createdate: "June 09, 2023",
@@ -1080,8 +1080,8 @@ const AllblogDataobj = {
       blogcategory: [
         {
           id: "1",
-          name: "Event & Parties",
-          slug: "event-and-parties",
+          name: "Events & Parties",
+          slug: "events-and-parties",
         },
         {
           id: "2",
@@ -1631,8 +1631,8 @@ const AllblogDataobj = {
         },
         {
           id: "2",
-          name: "Enent & parties",
-          slug: "event-and-parties",
+          name: "Events & Parties",
+          slug: "events-and-parties",
         },
       ],
       createdate: "May 24, 2023",
@@ -1831,8 +1831,8 @@ const AllblogDataobj = {
       blogcategory: [
         {
           id: "1",
-          name: "Enent & parties",
-          slug: "event-and-parties",
+          name: "Events & Parties",
+          slug: "events-and-parties",
         },
       ],
       createdate: "May 18, 2023",
@@ -2001,8 +2001,8 @@ const AllblogDataobj = {
       blogcategory: [
         {
           id: "1",
-          name: "Enent & parties",
-          slug: "event-and-parties",
+          name: "Events & Parties",
+          slug: "events-and-parties",
         },
       ],
       createdate: "May 11, 2023",
@@ -2426,7 +2426,7 @@ const AllblogDataobj = {
         {
           id: "1",
           name: "Events & Parties",
-          slug: "event-and-parties",
+          slug: "events-and-parties",
         },
       ],
       createdate: "April 30, 2023",

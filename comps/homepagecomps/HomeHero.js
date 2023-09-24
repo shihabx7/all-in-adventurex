@@ -10,8 +10,8 @@ const HomeHero = (props) => {
       </div>
       <div className="max-w-[84px] md:max-w-[120px] lg:max-w-[144px] absolute top-[4px] md:top-[36px] lg:top-[60px] left-0 right-[4px] md:right-0 ml-auto md:mx-auto">
         <img
-          alt="kids-and-familly-friendly-escape-rooms allinadventures"
-          src="/assets/kids-and-familly-friendly-escape-rooms-allinadventures.png"
+          alt="Kid and familly friendly escape rooms Allinadventures"
+          src="/assets/kid-and-familly-friendly-escape-rooms-allinadventures.png"
         ></img>
       </div>
       <div className="max-w-7xl home-hero-container mx-auto px-4 pb-[90px] pt-0 md:pb-24 md:pt-[160px] lg:pb-28 lg:pt-[210px] relative z-10">

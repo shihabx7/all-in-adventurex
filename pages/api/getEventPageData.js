@@ -586,10 +586,9 @@ const eventIndData = {
     pagesubtitle:
       "Are you looking for the most fun, thrilling, and downright nerdy activity for an upcoming bachelor party? Something everyone can participate in? Then play one of our escape rooms. There's no better way to bond with your bachelor party before the big day — no scandals, just nonstop thrills!",
     coverimageL:
-      "/assets/all-event-desktop-hero/allinadventures-events-bachelor-party-hero.jpg",
-    coverimageM:
-      "/assets/all-event-mobile-hero/allinadventures-events-bachelor-party-hero.jpg",
-    coverimageM_alt: "allinadventures-events-bachelor-party",
+      "/assets/all-event-desktop-hero/large-escape-room-bachelor-party.jpg",
+    coverimageM: "/assets/all-event-mobile-hero/escape-room-bachelor-party.jpg",
+    coverimageM_alt: "Escape room bachelor party",
     age: "6+",
     max_players: "70",
     min_players: "2",
@@ -602,23 +601,25 @@ const eventIndData = {
         "bachelor party escape room, escape room for bachelor party, bachelor party place for fun, bachelor party venues, bachelor party activities, bachelor party things to do near me, bachelor party activities to do near me, bachelor event party escape room near me, bachelor party place near me, events for bachelor party place near me, bachelor party venues nearbv, bachelor party activities near me, escape room for bachelor party,",
       url: "/events/bachelor-party",
       metaindex: true,
-      metaimg:
-        "/assets/all-event-mobile-hero/allinadventures-events-bachelor-party-hero.jpg",
+      metaimg: "/assets/all-event-mobile-hero/escape-room-bachelor-party.jpg",
     },
 
     eventdata: {
       why_book:
         "Our unique escape room experiences are a perfect addition to bachelor parties! Your group of guys will have to come ready to play if you have any chance at escaping! Pick a room theme that best fits your crew and let us know if there's something special you'd like done for the groom-to-be!",
       why_book_img:
-        "/assets/all-event-details/allinadventures-events-bachelor-party-sec1.jpg",
+        "/assets/all-event-details/escape-room-bachelor-party-all-in-adventure.png",
+      why_book_alt: "Escape room bachelor party by Allinadventure",
       offer:
         "Your party can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Check out our catered party option and let us satisfy your need to feed! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your next guys' night out!",
       offer_img:
-        "/assets/all-event-details/allinadventures-events-bachelor-party-sec2.jpg",
+        "/assets/all-event-details/escape-room-bachelor-party-memories.png",
+      offer_alt: "Escape room bachelor party memories",
       what_expect:
         "We have escape rooms for all skill levels to challenge you and your groomsmen. With 50 minutes on the clock, your party will have to solve their mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
       what_expect_img:
-        "/assets/all-event-details/allinadventures-events-bachelor-party-sec3.jpg",
+        "/assets/all-event-details/escape-room-bachelor-party-expectation.png",
+      what_expect_alt: "Escape room bachelor party expectation",
       videoid: "pfdyF_d4Z40",
     },
     reviews: [

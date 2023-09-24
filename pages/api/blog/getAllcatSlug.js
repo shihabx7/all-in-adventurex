@@ -73,7 +73,7 @@ const blogcat = [
   {
     id: "2",
     cat: "Events & Parties",
-    slug: "event-and-parties",
+    slug: "events-and-parties",
   },
   {
     id: "3",
@@ -99,10 +99,10 @@ const blogCatData = {
     cat: "Escape Room",
     slug: "escape-room",
   },
-  "event-and-parties": {
+  "events-and-parties": {
     id: "2",
     cat: "Events & Parties",
-    slug: "event-and-parties",
+    slug: "events-and-parties",
   },
   "things-to-do": {
     id: "3",
