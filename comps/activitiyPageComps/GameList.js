@@ -51,7 +51,7 @@ const GameList = (props) => {
                 color="dark-gold"
                 weight="font-bold"
               />
-              <p className="text-gray-700 md:px-8 md:text-lg">
+              <p className="text-gray-700 mt-4 md:mt-6 mb-4 md:mb-6 md:px-8 md:text-lg">
                 2 - 10 participants will enter an escape room and they will have
                 50-60 minutes to escape. Hidden riddles and clues throughout the
                 room provide the necessary tools to meet this objective. Can you

@@ -52,9 +52,9 @@ const EventDetails = (props) => {
       <div className="content-container pt-[116px] pb-16 md:py-24 lg:py-32 md:px-4 relative z-20">
         {/*===============================event row -1 WHY BOOK A PARTY WITH ALL IN ADVENTURE?================= */}
         <div className="evt-dt-container wbook-bg relative overflow-x-hidden md:overflow-visible">
-          <div className="st-bg absolute bottom-[44%] right-0 md:right-[-30px] md:bottom-[0px] lg:bottom-[-40px] lg:right-[-60px] xl:bottom-[-16%] xl:right-[-80px] 2xl:bottom-[-16%] 4xl:bottom-[-16%]  2xl:right-[100px] 4xl:right-[200px] 5xl:right-[380px]">
+          <div className="st-bg absolute bottom-[44%] right-0 sm:bottom-[20%] md:right-[-30px] md:bottom-[0px] lg:bottom-[-40px] lg:right-[-60px] xl:bottom-[-16%] xl:right-[-80px] 2xl:bottom-[-16%] 4xl:bottom-[-16%]  2xl:right-[100px] 4xl:right-[200px] 5xl:right-[380px]">
             <img
-              className="w-[134px] md:w-[160px] lg:w-[180px] xl:w-[280px] 2xl:w-[340px] 4xl:w-[350px] 5xl:w-[370px]"
+              className="w-[134px] sm:w-[190px] md:w-[160px] lg:w-[180px] xl:w-[280px] 2xl:w-[340px] 4xl:w-[350px] 5xl:w-[370px]"
               src="/assets/svg/util/cake-and-gift.svg"
             ></img>
           </div>
@@ -99,7 +99,7 @@ const EventDetails = (props) => {
             <div className="event-dt-col w-full md:w-[49%] lg:w-[48%] order-1 mb-4 md:mb-0 md:order-2">
               <div className="event-dt-img">
                 <img
-                  className="rounded drop-shadow"
+                  className="rounded"
                   src={props.eventdata.why_book_img}
                   alt={props.eventdata.why_book_alt}
                 ></img>
@@ -110,9 +110,9 @@ const EventDetails = (props) => {
         {/*===============================event row -1 WHY BOOK A PARTY WITH ALL IN ADVENTURE?================= */}
         {/*===============================event row WHAT WE OFFER?================= */}
         <div className="evt-dt-container offer-bg relative overflow-x-hidden md:overflow-visible py-8 lg:py-12">
-          <div className="st-bg absolute bottom-[54%] right-[-10px] md:left-[-30px] md:bottom-[30px] lg:bottom-[20px] lg:left-[-60px] xl:bottom-[0px] xl:left-[-80px] 2xl:bottom-[30px] 2xl:left-[100px] 4xl:left-[220px] 5xl:left-[380px] w-[148px] md:w-[240px] lg:w-[280px] xl:w-[310px] 2xl:w-[330px] 4xl:w-[360px] 5xl:w-[380px]">
+          <div className="st-bg absolute bottom-[54%] sm:bottom-[32%] right-[-10px] md:left-[-30px] md:bottom-[30px] lg:bottom-[20px] lg:left-[-60px] xl:bottom-[0px] xl:left-[-80px] 2xl:bottom-[30px] 2xl:left-[100px] 4xl:left-[220px] 5xl:left-[380px] w-[148px] md:w-[240px] lg:w-[280px] xl:w-[310px] 2xl:w-[330px] 4xl:w-[360px] 5xl:w-[380px]">
             <img
-              className="w-[140px] md:w-[180px] lg:w-[200px] xl:w-[310px] 2xl:w-[330px] 4xl:w-[360px] 5xl:w-[380px]"
+              className="w-[140px] sm:w-[180px] md:w-[180px] lg:w-[200px] xl:w-[310px] 2xl:w-[330px] 4xl:w-[360px] 5xl:w-[380px]"
               src="/assets/svg/util/lock-and-key.svg"
             ></img>
           </div>
@@ -120,7 +120,7 @@ const EventDetails = (props) => {
             <div className="event-dt-col w-full md:w-[49%] lg:w-[48%]  mb-4 md:mb-0 ">
               <div className="event-dt-img rounded">
                 <img
-                  className="rounded drop-shadow"
+                  className="rounded"
                   src={props.eventdata.offer_img}
                   alt={props.eventdata.offer_alt}
                 ></img>
@@ -202,9 +202,9 @@ const EventDetails = (props) => {
         {/*===============================event row -1 WHAT WE OFFER? ================= */}
         {/*===============================event row -1 WHAT YOU CAN EXPECT FROM AN ESCAPE ROOM + PARTY?================= */}
         <div className="evt-dt-container storyline-bg relative overflow-x-hidden md:overflow-visible">
-          <div className="msn-bg-l absolute bottom-[46%] right-[-10px] md:right-[-20px] md:bottom-[20px] lg:bottom-[0px] lg:right-[-20px] xl:bottom-[0px] xl:right-[-70px] 2xl:bottom-[-12%] 2xl:right-[100px] 4xl:right-[300px] 4xl:bottom-[-14%] 5xl:right-[420px] z-20">
+          <div className="msn-bg-l absolute bottom-[46%] sm:bottom-[22%] right-[-10px] md:right-[-20px] md:bottom-[20px] lg:bottom-[0px] lg:right-[-20px] xl:bottom-[0px] xl:right-[-70px] 2xl:bottom-[-12%] 2xl:right-[100px] 4xl:right-[300px] 4xl:bottom-[-14%] 5xl:right-[420px] z-20">
             <img
-              className=" -scale-x-100 md:scale-x-100 z-10 w-[160px] md:w-[190px] lg:w-[200px] xl:w-[300px]  2xl:w-[370px]  4xl:w-[380px] 5xl:w-[400px] "
+              className=" -scale-x-100 md:scale-x-100 z-10 w-[160px] sm:w-[180px] md:w-[190px] lg:w-[200px] xl:w-[300px]  2xl:w-[370px]  4xl:w-[380px] 5xl:w-[400px] "
               src="/assets/svg/util/compass.svg"
             ></img>
           </div>
@@ -254,7 +254,7 @@ const EventDetails = (props) => {
             <div className="event-dt-col w-full md:w-[49%] lg:w-[48%] order-1 mb-4 md:mb-0 md:order-2">
               <div className="event-dt-img">
                 <img
-                  className="rounded drop-shadow"
+                  className="rounded "
                   src={props.eventdata.what_expect_img}
                   alt={props.eventdata.what_expect_alt}
                 ></img>
