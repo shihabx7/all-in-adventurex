@@ -43,10 +43,9 @@ const eventIndData = {
     pagesubtitle:
       "All In Adventures is famous for hosting the most memorable birthday party in the town. We offer fun-filled escape room experiences and a birthday party venue for all ages and skill levels. Both kids and adults love it!",
     coverimageL:
-      "/assets/all-event-desktop-hero/AIA-birthday-party-hero-desktop.jpg",
-    coverimageM:
-      "/assets/all-event-mobile-hero/AIA-birthday-party-hero-mobile.jpg",
-    coverimageM_alt: "allinadventures-events-birthday-party",
+      "/assets/all-event-desktop-hero/large-escape-room-birthday-party.jpg",
+    coverimageM: "/assets/all-event-mobile-hero/escape-room-birthday-party.jpg",
+    coverimageM_alt: "Escape room birthday party",
     age: "6+",
     max_players: "70",
     min_players: "2",
@@ -59,20 +58,26 @@ const eventIndData = {
         "birthday party escape room, birthday party events, kids birthday party place, birthday party venues, birthday party celebration, birthday party things to do near me, birthday party activities to do near me, birthday party escape room near me, birthday party events near me, kids birthday party place near me, birthday party venues near me, birthday party celebration near me, escape room for birthday party",
       url: "/events/birthday-party",
       metaindex: true,
-      metaimg:
-        "/assets/all-event-mobile-hero/AIA-birthday-party-hero-desktop.jpg",
+      metaimg: "/assets/all-event-mobile-hero/escape-room-birthday-party.jpg",
     },
 
     eventdata: {
       why_book:
         "Nothing beats the excitement of an Escape Room Birthday Party! They're the perfect challenge for celebrating the birthday of your favorite little puzzle-solver, or a unique party experience for adults with adventure still in their hearts! With three difficulty levels, there's something for everyone!",
-      why_book_img: "/assets/all-event-details/birthday-party-section-1.png",
+      why_book_img:
+        "/assets/all-event-details/escape-room-birthday-party-all-in-adventures.png",
+      why_book_alt: "Escape room birthday party All In Adventures",
       offer:
         "Choose from our two-party package options! Whether you want to bring your own food or have us cater, each option allows you to select one or more escape rooms and get our private party room* for two hours! Don't worry about your plates, napkins, and utensils - we've got you covered with either option! Plus, receive an All in Adventures gift card for your birthday honoree!",
-      offer_img: "/assets/all-event-details/birthday-party-section-2.png",
+      offer_img:
+        "/assets/all-event-details/escape-room-birthday-party-memories.png",
+
+      offer_alt: "Escape room birthday party memories",
       what_expect:
         "Our family-friendly escape rooms are designed to be challenging and fun activities for all ages and skill levels. Your party will have 50 minutes to solve their mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
-      what_expect_img: "/assets/all-event-details/birthday-party-section-3.png",
+      what_expect_img:
+        "/assets/all-event-details/escape-room-birthday-party-expectation.png",
+      what_expect_alt: "Escape room birthday party expectation",
       videoid: "pfdyF_d4Z40",
     },
     reviews: [
@@ -177,10 +182,9 @@ const eventIndData = {
       "Our escape rooms are designed to be collaborative, integrated team building experiences that leave teams stronger than when they started. Bring your groups, employees, students or volunteers to create exciting memories while strengthening the relationship as a team.",
 
     coverimageL:
-      "/assets/all-event-desktop-hero/allinadventures-events-team-building-hero.jpg",
-    coverimageM:
-      "/assets/all-event-mobile-hero/allinadventures-events-team-building-hero.jpg",
-    coverimageM_alt: "allinadventures-events-team-building",
+      "/assets/all-event-desktop-hero/large-escape-room-team-building.jpg",
+    coverimageM: "/assets/all-event-mobile-hero/escape-room-team-building.jpg",
+    coverimageM_alt: "Escape room team building",
     age: "6+",
     max_players: "70",
     min_players: "2",
@@ -193,23 +197,25 @@ const eventIndData = {
         "team building escape room, team building events, corporate team building place, team building venues, team building activities, team building things to do near me, team building activities to do near me, team building escape room near me, team building events near me, corporate team building place near me, team building venues near me, team building activities near me, escape room for team building",
       url: "/events/team-building",
       metaindex: true,
-      metaimg:
-        "/assets/all-event-mobile-hero/allinadventures-events-team-building-hero.jpg",
+      metaimg: "/assets/all-event-mobile-hero/escape-room-team-building.jpg",
     },
 
     eventdata: {
       why_book:
         "We provide the ideal atmosphere to strengthen teamwork, communication, and problem-solving skills! Our escape rooms bring teams together towards a common goal and offer the thrill of collaborative success! Instead of another dreary meeting, why not have an adventure into the unknown?",
       why_book_img:
-        "/assets/all-event-details/allinadventures-events-team-building-sec1.jpg",
+        "/assets/all-event-details/escape-room-team-building-all-in-adventures.png",
+      why_book_alt: "escape Room Team Building All In Adventures",
       offer:
         "Your group can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Looking for lunch? Check out our catered party option and let us do the work! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your next team outing!",
       offer_img:
-        "/assets/all-event-details/allinadventures-events-team-building-sec2.jpg",
+        "/assets/all-event-details/escape-room-team-building-memories.png",
+      offer_alt: "Escape room team building memories",
       what_expect:
         "Our escape rooms are designed to be challenging and fun activities for all ages and skill levels. Your team will have 50 minutes to solve their mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
       what_expect_img:
-        "/assets/all-event-details/allinadventures-events-team-building-sec3.jpg",
+        "/assets/all-event-details/escape-room-team-building-expectation.png",
+      what_expect_alt: "Escape room team building expectation",
       videoid: "pfdyF_d4Z40",
     },
     reviews: [
@@ -314,10 +320,10 @@ const eventIndData = {
     pagesubtitle:
       "Since 2014, thousands of companies have been using our escape rooms and 5-star guest services to foster employee engagement, run meaningful team building events and celebrate company milestones. Instead of a dreary meeting on how to work effectively, why not take a crack at our escape room puzzles?",
     coverimageL:
-      "/assets/all-event-desktop-hero/AIA-corporate-event-hero-desktop.jpg",
+      "/assets/all-event-desktop-hero/large-escape-room-corporate-event.jpg",
     coverimageM:
-      "/assets/all-event-mobile-hero/AIA-corporate-event-hero-mobile.jpg",
-    coverimageM_alt: "allinadventures-events-corporate-events",
+      "/assets/all-event-mobile-hero/escape-room-corporate-event.jpg",
+    coverimageM_alt: "Escape room corporate event",
     age: "6+",
     max_players: "70",
     min_players: "2",
@@ -330,21 +336,25 @@ const eventIndData = {
         "corporate events near me, corporate party in escape room, escape room for corporate party, corporate party place for fun, corporate party venues, corporate party activities, corporate party things to do near me, corporate party activities to do near me, corporate event party escape room near me, corporate party place near me, events for corporate party place near me, corporate party venues nearbv, corporate party activities near me, escape room for corporate events",
       url: "/events/corporate-events",
       metaindex: true,
-      metaimg:
-        "/assets/all-event-mobile-hero/AIA-corporate-event-hero-desktop.jpg",
+      metaimg: "/assets/all-event-mobile-hero/escape-room-corporate-event.jpg",
     },
 
     eventdata: {
       why_book:
         "Corporate events are frequently held at All In Adventures, and it's no surprise why! We provide a unique atmosphere where communication, leadership, and problem-solving skills will all be put to the test. Our escape rooms bring everyone on the team together to work towards a common goal!",
-      why_book_img: "/assets/all-event-details/corporate-event-section-1.png",
+      why_book_img:
+        "/assets/all-event-details/escape-room-corporate-event-all-in-adventures.png",
+      why_book_alt: "Escape room corporate event All In Adventures",
       offer:
         "Your group can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Need some brain food? Check out our catered party option and let us do the work! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your next corporate outing!",
-      offer_img: "/assets/all-event-details/corporate-event-section-2.png",
+      offer_img:
+        "/assets/all-event-details/escape-room-corporate-event-memories.png",
+      offer_alt: "Escape room corporate event memories",
       what_expect:
         "Our escape rooms are designed to be challenging and fun activities for all ages and skill levels. With 50 minutes on the clock, your group will have to solve their mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
       what_expect_img:
-        "/assets/all-event-details/corporate-event-section-3.png",
+        "/assets/all-event-details/escape-room-corporate-event-expectations.png",
+      what_expect_alt: "Escape room corporate event expectations",
       videoid: "pfdyF_d4Z40",
     },
     reviews: [
@@ -448,11 +458,9 @@ const eventIndData = {
   "family-fun-activity": {
     pagesubtitle:
       "Our family-friendly escape rooms provide a way to experience a story where you become part of the story rather than just observing. It's a safe and fun way to have a real adventure, where you and your team (your family in this case) enter into a puzzle room and solve different puzzles to ESCAPE!",
-    coverimageL:
-      "/assets/all-event-desktop-hero/allinadventures-events-family-fun-activities-hero.jpg",
-    coverimageM:
-      "/assets/all-event-mobile-hero/allinadventures-events-family-fun-activities-hero.jpg",
-    coverimageM_alt: "allinadventures-events-family-fun-activitie",
+    coverimageL: "/assets/all-event-desktop-hero/large-family-fun-activity.jpg",
+    coverimageM: "/assets/all-event-mobile-hero/family-fun-activity.jpg",
+    coverimageM_alt: "Escape room Family fun activity",
     age: "6+",
     max_players: "70",
     min_players: "2",
@@ -465,23 +473,25 @@ const eventIndData = {
         "family events in escape room, escape room for family events, family events place for fun, family events venues, family events activities, family events things to do near me, family events activities to do near me, family event party escape room near me, family events place near me, events for family place near me, family events venues nearbv, family events activities near me, escape room for family events",
       url: "/events/family-fun-activity",
       metaindex: true,
-      metaimg:
-        "/assets/all-event-mobile-hero/allinadventures-events-family-fun-activities-hero.jpg",
+      metaimg: "/assets/all-event-mobile-hero/family-fun-activity.jpg",
     },
 
     eventdata: {
       why_book:
         "Put your incredible family dynamic on display in one of our fun escape rooms! We provide a unique, screen-free atmosphere to spend time together as a family! Kids over 6 can contribute, and ages 10 and up will be active problem-solving participants! Kids under six can play for FREE alongside two or more full-price adults!",
       why_book_img:
-        "/assets/all-event-details/allinadventures-events-family-fun-activities-sec1.jpg",
+        "/assets/all-event-details/escape-room-family-fun-activity-all-in-adventures.png",
+      why_book_alt: "Escape room family fun activity All In Adventures",
       offer:
         "Your family can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Save time in your day by checking out our catered party option and let us do the work! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your next family outing!",
       offer_img:
-        "/assets/all-event-details/allinadventures-events-family-fun-activities-sec2.jpg",
+        "/assets/all-event-details/escape-room-family-fun-activity-memories.png",
+      offer_alt: "escape room family fun activity memories",
       what_expect:
         "Our escape rooms are designed to be challenging and fun activities for all ages and skill levels. With 50 minutes on the clock, your family will have to solve their mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
       what_expect_img:
-        "/assets/all-event-details/allinadventures-events-family-fun-activities-sec3.jpg",
+        "/assets/all-event-details/escape-room-family-fun-activity-expectation.png",
+      what_expect_alt: "escape room family fun activity expectation",
       videoid: "pfdyF_d4Z40",
     },
     reviews: [
@@ -608,8 +618,8 @@ const eventIndData = {
       why_book:
         "Our unique escape room experiences are a perfect addition to bachelor parties! Your group of guys will have to come ready to play if you have any chance at escaping! Pick a room theme that best fits your crew and let us know if there's something special you'd like done for the groom-to-be!",
       why_book_img:
-        "/assets/all-event-details/escape-room-bachelor-party-all-in-adventure.png",
-      why_book_alt: "Escape room bachelor party by Allinadventure",
+        "/assets/all-event-details/escape-room-bachelor-party-all-in-adventures.png",
+      why_book_alt: "Escape room bachelor party by All in Adventures",
       offer:
         "Your party can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Check out our catered party option and let us satisfy your need to feed! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your next guys' night out!",
       offer_img:
@@ -724,10 +734,10 @@ const eventIndData = {
     pagesubtitle:
       "Are you planning a bachelorette party for your best friend or family member and looking for something out of the ordinary? Something everyone can participate in? Then play one of our escape rooms. There's no better way to bond with your bachelorette party before the big day — no drama, no scandals, just nonstop thrills!",
     coverimageL:
-      "/assets/all-event-desktop-hero/allinadventures-events-bachelorette-party-hero.jpg",
+      "/assets/all-event-desktop-hero/large-escape-room-bachelorette-party.jpg",
     coverimageM:
-      "/assets/all-event-mobile-hero/allinadventures-events-bachelorette-party-hero.jpg",
-    coverimageM_alt: "allinadventures-events-bachelorette-party",
+      "/assets/all-event-mobile-hero/escape-room-bachelorette-party.jpg",
+    coverimageM_alt: "escape room bachelorette party",
     age: "6+",
     max_players: "70",
     min_players: "2",
@@ -741,22 +751,25 @@ const eventIndData = {
       url: "/events/bachelorette-party",
       metaindex: true,
       metaimg:
-        "/assets/all-event-mobile-hero/allinadventures-events-bachelorette-party-hero.jpg",
+        "/assets/all-event-mobile-hero/escape room bachelorette party.jpg",
     },
 
     eventdata: {
       why_book:
         "Our unique escape room experiences are a perfect addition to bachelorette parties! Your group of gals will have to come ready to play to have any chance at escaping! Pick a room theme that best fits your bridal party and let us know if there's something special you'd like done for the bride-to-be!",
       why_book_img:
-        "/assets/all-event-details/allinadventures-events-bachelorette-party-sec1.jpg",
+        "/assets/all-event-details/escape-room-bachelorette-party-all-in-adventures.png",
+      why_book_alt: "Escape room bachelorette party All In Adventures",
       offer:
         "Your party can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Check out our catered party option for a post-game tasty treat! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your next girls' night out!",
       offer_img:
-        "/assets/all-event-details/allinadventures-events-bachelorette-party-sec2.jpg",
+        "/assets/all-event-details/escape-room-bachelorette-party-memories.png",
+      offer_alt: "Escape room bachelorette party memories",
       what_expect:
         "We have escape rooms for all skill levels to challenge you and your bridesmaids. With 50 minutes on the clock, your party will have to solve their mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
       what_expect_img:
-        "/assets/all-event-details/allinadventures-events-bachelorette-party-sec3.jpg",
+        "/assets/all-event-details/escape-room-bachelorette-party-expectation.png",
+      what_expect_alt: "escape room bachelorette party expectation",
       videoid: "pfdyF_d4Z40",
     },
     reviews: [
@@ -861,10 +874,9 @@ const eventIndData = {
     pagesubtitle:
       "If you're both into adventures, puzzles, and surprises, then there's no better way than proposing in an escape room! Our escape games are designed to engage and challenge with hidden puzzles and a fully customizable experience. Your partner will never see this coming! Sweep your partner off their feet with a proposal they'll never forget.",
     coverimageL:
-      "/assets/all-event-desktop-hero/allinadventures-events-proposal-party-hero.jpg",
-    coverimageM:
-      "/assets/all-event-mobile-hero/allinadventures-events-proposal-party-hero.jpg",
-    coverimageM_alt: "allinadventures-events-proposal-party",
+      "/assets/all-event-desktop-hero/large-escape-room-proposal-party.jpg",
+    coverimageM: "/assets/all-event-mobile-hero/escape-room-proposal-party.jpg",
+    coverimageM_alt: "Escape room proposal party",
     age: "6+",
     max_players: "70",
     min_players: "2",
@@ -877,23 +889,25 @@ const eventIndData = {
         "proposal party place, proposal party venue, escape room proposal party, proposal party places, proposal party place near me, proposal party venue nearby, proposal party in escape room, proposal party",
       url: "/events/proposal-party",
       metaindex: true,
-      metaimg:
-        "/assets/all-event-mobile-hero/allinadventures-events-proposal-party-hero.jpg",
+      metaimg: "/assets/all-event-mobile-hero/escape-room-proposal-party.jpg",
     },
 
     eventdata: {
       why_book:
         "It's no mystery: a surprise proposal can be the memory of a lifetime! Our escape rooms are ideal for a unique way to pop the question. Your partner will be so focused on victory, you'll have the perfect chance to drop to one knee! Let us know if you want to customize the game for your proposal and we'll do our best to accommodate your special day!",
       why_book_img:
-        "/assets/all-event-details/allinadventures-events-proposal-party-sec1.jpg",
+        "/assets/all-event-details/escape-room-proposal-party-all-in-adventures.png",
+      why_book_alt: "Escape room proposal party All In Adventures",
       offer:
         "You can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Check out our catered party option for a celebratory gathering after your game! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your first date night as fiancés!",
       offer_img:
-        "/assets/all-event-details/allinadventures-events-proposal-party-sec2.jpg",
+        "/assets/all-event-details/escape-room-proposal-party-memories.png",
+      offer_alt: "Escape room proposal party memories",
       what_expect:
         "You can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Check out our catered party option for a celebratory gathering after your game! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your first date night as fiancés!",
       what_expect_img:
-        "/assets/all-event-details/allinadventures-events-proposal-party-sec3.jpg",
+        "/assets/all-event-details/escape-room-proposal-party-expectation.png",
+      what_expect_alt: "Escape proposal party expectation",
       videoid: "pfdyF_d4Z40",
     },
     reviews: [
@@ -998,10 +1012,9 @@ const eventIndData = {
     pagesubtitle:
       "If you both enjoy adventures, mysteries, and surprises, and looking for a fun date night idea or want to add a little excitement to your relationship, plan your date night to play our escape rooms. They're great for couples who love to work together to solve puzzles and complete challenges.",
     coverimageL:
-      "/assets/all-event-desktop-hero/allinadventures-events-date-night-hero.jpg",
-    coverimageM:
-      "/assets/all-event-mobile-hero/allinadventures-events-date-night-hero.jpg",
-    coverimageM_alt: "allinadventures-events-date-night",
+      "/assets/all-event-desktop-hero/large-escape-room-date-night.jpg",
+    coverimageM: "/assets/all-event-mobile-hero/escape-room-date-night.jpg",
+    coverimageM_alt: "escape room date night",
     age: "6+",
     max_players: "70",
     min_players: "2",
@@ -1014,23 +1027,25 @@ const eventIndData = {
         "date night ideas, escape room date night, date night places, date night things to do, date night puzzle, escape room date night near me, date night idea",
       url: "/events/date-night",
       metaindex: true,
-      metaimg:
-        "/assets/all-event-mobile-hero/allinadventures-events-date-night-hero.jpg",
+      metaimg: "/assets/all-event-mobile-hero/escape-room-date-night.jpg",
     },
 
     eventdata: {
       why_book:
         "Perfect for double dates, or just some quality time together as a couple, our escape rooms can help strengthen relationships through collaboration, communication, and fun! Use your balance of strengths together to overcome puzzles and gain a new perspective on each other!",
       why_book_img:
-        "/assets/all-event-details/allinadventures-events-date-night-sec1.jpg",
+        "/assets/all-event-details/escape-room-date-night-all-in-adventures.png",
+      why_book_alt: "Escape room date night All In Adventures",
       offer:
         "You can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Skip the packed, noisy restaurant and check out our catered party option for a casual, private dining option! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your next date night!",
       offer_img:
-        "/assets/all-event-details/allinadventures-events-date-night-sec2.jpg",
+        "/assets/all-event-details/escape-room-date-night-memories.png",
+      offer_alt: "Escape room date night memories",
       what_expect:
         "We have escape rooms for all skill levels to challenge you and your date. With 50 minutes on the clock, you'll have to solve your mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
       what_expect_img:
-        "/assets/all-event-details/allinadventures-events-date-night-sec3.jpg",
+        "/assets/all-event-details/escape-room-date-night-expectation.png",
+      what_expect_alt: "Escape date night expectation",
       videoid: "pfdyF_d4Z40",
     },
     reviews: [
@@ -1135,10 +1150,9 @@ const eventIndData = {
     pagesubtitle:
       "We offer an array of interactive escape rooms where everyone can participate and become the star of their own action adventure. No matter what occasion you celebrate, escape room party is a great way to bring your family, friends or co-workers together and have enormous fun.",
     coverimageL:
-      "/assets/all-event-desktop-hero/allinadventures-events-private-party-hero.jpg",
-    coverimageM:
-      "/assets/all-event-mobile-hero/allinadventures-events-private-party-hero.jpg",
-    coverimageM_alt: "allinadventures-events-private-party",
+      "/assets/all-event-desktop-hero/large-escape-room-parivate-party.jpg",
+    coverimageM: "/assets/all-event-mobile-hero/escape-room-parivate-party.jpg",
+    coverimageM_alt: "Escape room parivate party",
     age: "6+",
     max_players: "70",
     min_players: "2",
@@ -1151,23 +1165,25 @@ const eventIndData = {
         "private events near me, private party in escape room, escape room for private party, private party place for fun, private party venues, private party activities, private party things to do near me, private party activities to do near me, private event party escape room near me, private party place near me, events for private party place near me, private party venues nearby, private party activities near me, escape room for private party",
       url: "/events/private-party",
       metaindex: true,
-      metaimg:
-        "/assets/all-event-mobile-hero/allinadventures-events-private-party-hero.jpg",
+      metaimg: "/assets/all-event-mobile-hero/escape-room-parivate-party.jpg",
     },
 
     eventdata: {
       why_book:
         "We work to make each escape room private party a unique experience for you and your guests. Whether you are in a corporate office looking for an exciting team-building activity, or a group of friends looking for a mental workout, our escape rooms give you the challenge you're seeking. All In Adventures is great for all types of groups and is a memorable way to come together for fun!",
       why_book_img:
-        "/assets/all-event-details/allinadventures-events-private-party-sec1.jpg",
+        "/assets/all-event-details/escape-room-private-party-all-in-adventures.png",
+      why_book_alt: "Escape room private party All In Adventures",
       offer:
         "You can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Feed your crowd with our catered party option and let us do the work! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card you can use for your visit!",
       offer_img:
-        "/assets/all-event-details/allinadventures-events-private-party-sec2.jpg",
+        "/assets/all-event-details/escape-room-private-party-memories.png",
+      offer_alt: "Escape room private party memories",
       what_expect:
         "We have escape rooms for all skill levels to challenge your party. With 50 minutes on the clock, you'll have to solve your mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
       what_expect_img:
-        "/assets/all-event-details/allinadventures-events-private-party-sec3.jpg",
+        "/assets/all-event-details/escape-room-private-party-expectation.png",
+      what_expect_alt: "Escape room private party expectation",
       videoid: "pfdyF_d4Z40",
     },
     reviews: [
@@ -1272,10 +1288,9 @@ const eventIndData = {
     pagesubtitle:
       "There's no shortage of family reunion activities. But how many of them actually involve teamwork and collaboration? That's the question! Our escape rooms are interactive and have engaging qualities that give your reunion party an epic adventure!",
     coverimageL:
-      "/assets/all-event-desktop-hero/allinadventures-events-reunion-party-hero.jpg",
-    coverimageM:
-      "/assets/all-event-mobile-hero/allinadventures-events-reunion-party-hero.jpg",
-    coverimageM_alt: "allinadventures-events-reunion-party",
+      "/assets/all-event-desktop-hero/large-escape-room-reunion-party.jpg",
+    coverimageM: "/assets/all-event-mobile-hero/escape-room-reunion-party.jpg",
+    coverimageM_alt: "escape room reunion party",
     age: "6+",
     max_players: "70",
     min_players: "2",
@@ -1288,23 +1303,25 @@ const eventIndData = {
         "reunion events near me, reunion party in escape room, escape room for reunion party, reunion party place for fun, reunion party venues, reunion party activities, reunion party things to do near me, reunion party activities to do near me, reunion event party escape room near me, reunion party place near me, events for reunion party place near me, reunion party venues nearby, reunion party activities near me, escape room for reunion party",
       url: "/events/reunion-party",
       metaindex: true,
-      metaimg:
-        "/assets/all-event-mobile-hero/allinadventures-events-reunion-party-hero.jpg",
+      metaimg: "/assets/all-event-mobile-hero/escape-room-reunion-party.jpg",
     },
 
     eventdata: {
       why_book:
         "Bring together your entire extended family for an unforgettable reunion! Whether you all work cooperatively, or pit family versus family in an epic battle of the minds, our escape rooms are a thrilling way to enjoy your time together! With difficulties for all ages and skill levels, All in Adventures is a cross-generational, memory-making experience!",
       why_book_img:
-        "/assets/all-event-details/allinadventures-events-reunion-party-sec1.jpg",
+        "/assets/all-event-details/escape-room-reunion-party-all-in-adventures.png",
+      why_book_alt: "Escape room reunion party All In Adventures",
       offer:
         "You can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Feed your crowd with our catered party option and let us take care of clean-up! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card!",
       offer_img:
-        "/assets/all-event-details/allinadventures-events-reunion-party-sec2.jpg",
+        "/assets/all-event-details/escape-room-reunion-party-memories.png",
+      offer_alt: "Escape room reunion party memories",
       what_expect:
         "We have escape rooms for all skill levels to challenge your party. With 50 minutes on the clock, you'll have to solve your mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
       what_expect_img:
-        "/assets/all-event-details/allinadventures-events-reunion-party-sec3.jpg",
+        "/assets/all-event-details/escape-room-reunion-party-expectation.png",
+      what_expect_alt: "Escape room reunion party expectation",
       videoid: "pfdyF_d4Z40",
     },
     reviews: [
@@ -1409,10 +1426,10 @@ const eventIndData = {
     pagesubtitle:
       "Graduation is such an exciting time, no matter your age. You deserve to celebrate all that you have achieved. Celebrate your accomplishments in a memorable way with our escape room theme party. Make lasting memories to tell tales to your grandchildren!",
     coverimageL:
-      "/assets/all-event-desktop-hero/allinadventures-events-graduation-party-hero.jpg",
+      "/assets/all-event-desktop-hero/large-escape-room-graduation-party.jpg",
     coverimageM:
-      "/assets/all-event-mobile-hero/allinadventures-events-graduation-party-hero.jpg",
-    coverimageM_alt: "allinadventures-events-graduation-party",
+      "/assets/all-event-mobile-hero/escape-room-graduation-party.jpg",
+    coverimageM_alt: "Escape room graduation party",
     age: "6+",
     max_players: "70",
     min_players: "2",
@@ -1425,23 +1442,25 @@ const eventIndData = {
         "graduation events near me ,graduation party in escape room, escape room for graduation party, graduation party place for fun, graduation party venues, graduation party activities, graduation party things to do near me, graduation party activities to do near me, graduation event party escape room near me, graduation party place near me, events for graduation party place near me, graduation party venues nearby, graduation party activities near me, escape room for graduation party,",
       url: "/events/graduation-party",
       metaindex: true,
-      metaimg:
-        "/assets/all-event-mobile-hero/allinadventures-events-graduation-party-hero.jpg",
+      metaimg: "/assets/all-event-mobile-hero/escape-room-graduation-party.jpg",
     },
 
     eventdata: {
       why_book:
         "Our unique escape room experiences are a perfect addition to your graduation party! Your school of scholars will have to bring their sharp minds and keen intuition if they're to have any chance at escaping! Pick a room theme that best fits their interest and let us know if there's something special you'd like done for your graduate!",
       why_book_img:
-        "/assets/all-event-details/allinadventures-events-graduation-party-sec1.jpg",
+        "/assets/all-event-details/escape-room-graduation-party-all-in-adventures.png",
+      why_book_alt: "Escape room graduation party All In Adventures",
       offer:
         "You can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Need to refuel on brain food? Check out our catered party option and let us take care of the clean-up! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card for your graduate!",
       offer_img:
-        "/assets/all-event-details/allinadventures-events-graduation-party-sec2.jpg",
+        "/assets/all-event-details/escape-room-graduation-party-memories.png",
+      offer_alt: "escape room graduation party memories",
       what_expect:
         "We have escape rooms for all skill levels to challenge your party. With 50 minutes on the clock, you'll have to solve your mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
       what_expect_img:
-        "/assets/all-event-details/allinadventures-events-graduation-party-sec3.jpg",
+        "/assets/all-event-details/escape-room-graduation-party-expectation.png",
+      what_expect_alt: "Escape room graduation party expectation",
       videoid: "pfdyF_d4Z40",
     },
     reviews: [
@@ -1546,10 +1565,9 @@ const eventIndData = {
     pagesubtitle:
       "Are you looking for school event ideas that will excite and challenge every student in the classroom or school? Then All In Adventures is a great place for you to bring your student group. Let your students experience a challenging yet fun time at our escape rooms — excellent adventures for any age group.",
     coverimageL:
-      "/assets/all-event-desktop-hero/allinadventures-events-school-events-hero.jpg",
-    coverimageM:
-      "/assets/all-event-mobile-hero/allinadventures-events-school-events-hero.jpg",
-    coverimageM_alt: "allinadventures-events-school-events",
+      "/assets/all-event-desktop-hero/large-escape-room-school-event.jpg",
+    coverimageM: "/assets/all-event-mobile-hero/escape-room-school-event.jpg",
+    coverimageM_alt: "Escape room school event",
     age: "6+",
     max_players: "70",
     min_players: "2",
@@ -1562,23 +1580,25 @@ const eventIndData = {
         "school events near me, school party in escape room, escape room for school party, school party place for fun, school party venues, school party activities, school party things to do near me, school party activities to do near me, school event party escape room near me, school party place near me, events for school party place near me, school party venues nearby, school party activities near me, escape room for school party",
       url: "/events/school-events",
       metaindex: true,
-      metaimg:
-        "/assets/all-event-mobile-hero/allinadventures-events-school-events-hero.jpg",
+      metaimg: "/assets/all-event-mobile-hero/escape-room-school-event.jpg",
     },
 
     eventdata: {
       why_book:
         "Problem-solving, critical thinking, and observational awareness - all important skills for growing young minds to strengthen. Our escape rooms will require your students to work together for an exciting intellectual challenge that's more than your average field trip! With rooms that pair well with historical and literary themes, you can effortlessly weave them into your lesson plan!",
       why_book_img:
-        "/assets/all-event-details/allinadventures-events-school-events-sec1.jpg",
+        "/assets/all-event-details/escape-room-school-event-all-in-adventures.png",
+      why_book_alt: "Escape room school event All In Adventures",
       offer:
         "You can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Time for lunch? Check out our catered party option and let us take care of the clean-up! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card for your next class trip!",
       offer_img:
-        "/assets/all-event-details/allinadventures-events-school-events-sec2.jpg",
+        "/assets/all-event-details/escape-room-school-event-memories.png",
+      offer_alt: "Escape room school event memories",
       what_expect:
         "We have escape rooms for all skill levels to challenge your class. With 50 minutes on the clock, your students will have to solve their mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
       what_expect_img:
-        "/assets/all-event-details/allinadventures-events-school-events-sec3.jpg",
+        "/assets/all-event-details/escape-room-school-event-expectation.png",
+      what_expect_alt: "Escape room school event expectation",
       videoid: "pfdyF_d4Z40",
     },
     reviews: [
@@ -1683,10 +1703,10 @@ const eventIndData = {
     pagesubtitle:
       "All In Adventures is famous for hosting unique gender reveal parties. Escape the wild parties in exchange for an escape room gender reveal party where you look for a box that reveals your secret color. Bring your dearest friends and family as you celebrate a gift from God!",
     coverimageL:
-      "/assets/all-event-desktop-hero/allinadventures-events-gender-reveal-party-hero.jpg",
+      "/assets/all-event-desktop-hero/large-escape-room-gender-reveal-party.jpg",
     coverimageM:
-      "/assets/all-event-mobile-hero/allinadventures-events-gender-reveal-party-hero.jpg",
-    coverimageM_alt: "allinadventures-events-gender-reveal-party",
+      "/assets/all-event-mobile-hero/escape-room-gender-reveal-party.jpg",
+    coverimageM_alt: "Escape room gender reveal party",
     age: "6+",
     max_players: "70",
     min_players: "2",
@@ -1700,22 +1720,25 @@ const eventIndData = {
       url: "/events/gender-reveal-party",
       metaindex: true,
       metaimg:
-        "/assets/all-event-mobile-hero/allinadventures-events-gender-reveal-party-hero.jpg",
+        "/assets/all-event-mobile-hero/escape-room-gender-reveal-party.jpg",
     },
 
     eventdata: {
       why_book:
         "We provide a unique atmosphere where parents make gender reveal parties a memorable family event. The big surprise awaits your party at the conclusion of your game with the final box being packed with your ideal way of announcing the gender of your baby! Pick a room theme and let us know if there's something special you'd like done for your reveal!",
       why_book_img:
-        "/assets/all-event-details/allinadventures-events-gender-reveal-party-sec1.jpg",
+        "/assets/all-event-details/esccape-room-gender-reveal-party-all-in-adventures.png",
+      why_book_alt: "Esccape room gender reveal party All In Adventures",
       offer:
         "You can choose one or more escape rooms to play and take advantage of our private party room* after you've finished your games. Check out our catered party option for your reveal after-party and let us take care of the clean-up! All party room packages include plates, napkins, and utensils - and an All in Adventures gift card!",
       offer_img:
-        "/assets/all-event-details/allinadventures-events-gender-reveal-party-sec2.jpg",
+        "/assets/all-event-details/esccape-room-gender-reveal-party-memories.png",
+      offer_alt: "Esccape room gender reveal party memories",
       what_expect:
         "We have escape rooms for all skill levels to challenge your party. With 50 minutes on the clock, your guests will have to solve their mystery and find a way to escape! Crack the code using mysterious clues, hidden keys, and puzzling riddles! Use teamwork, critical thinking, and your sense of adventure to find your way out of the room before the time runs out!",
       what_expect_img:
-        "/assets/all-event-details/allinadventures-events-gender-reveal-party-sec3.jpg",
+        "/assets/all-event-details/esccape-room-gender-reveal-party-expectation.png",
+      what_expect_alt: "esccape room gender reveal party expectation",
       videoid: "pfdyF_d4Z40",
     },
     reviews: [

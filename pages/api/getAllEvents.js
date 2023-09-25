@@ -27,9 +27,10 @@ export const getAllEvents = () => {
       totalFiveStarReview: getTotal().totalReview,
       totalPlayerEscaped: getTotal().toalPlayerEscape,
       coverimageL:
-        "/assets/all-event-desktop-hero/All-Event-Page-Hero-Image-desktop.jpg",
+        "/assets/all-event-desktop-hero/large-parties-events-and-spacial-occasions.jpg",
       coverimageM:
-        "/assets/all-event-mobile-hero/All-Event-Page-Hero-Image.jpg",
+        "/assets/all-event-mobile-hero/parties-events-and-spacial-occasions.jpg",
+      coverimageM_alt: "Escape room parties events and spacial occasions",
     },
 
     events_list: [

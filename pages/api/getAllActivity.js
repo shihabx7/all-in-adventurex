@@ -28,9 +28,10 @@ export const getAllActivity = () => {
       totalPlayerEscaped: getTotal().toalPlayerEscape,
       private_events: "YES",
       coverimageL:
-        "/assets/all-game-desktop-hero/allinadventures-all-game-page-hero.jpg",
+        "/assets/all-game-desktop-hero/large-all-escape-rooms-and-adventure-activities.jpg",
       coverimageM:
-        "/assets/all-game-mobile-hero/allinadventures-all-game-page-hero--mobile.jpg",
+        "/assets/all-game-mobile-hero/all-escape-rooms-and-adventure-activities.jpg",
+      coverimageM_alt: "All escape rooms and adventure activities",
     },
 
     activity_list: [

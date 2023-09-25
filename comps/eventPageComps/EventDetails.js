@@ -52,7 +52,7 @@ const EventDetails = (props) => {
       <div className="content-container pt-[116px] pb-16 md:py-24 lg:py-32 md:px-4 relative z-20">
         {/*===============================event row -1 WHY BOOK A PARTY WITH ALL IN ADVENTURE?================= */}
         <div className="evt-dt-container wbook-bg relative overflow-x-hidden md:overflow-visible">
-          <div className="st-bg absolute bottom-[44%] right-0 md:right-[-30px] md:bottom-[0px] lg:bottom-[-40px] lg:right-[-60px] xl:bottom-[-16%] xl:right-[-80px] 2xl:bottom-[-12%] 4xl:bottom-[-10%]  2xl:right-[100px] 4xl:right-[200px] 5xl:right-[380px]">
+          <div className="st-bg absolute bottom-[44%] right-0 md:right-[-30px] md:bottom-[0px] lg:bottom-[-40px] lg:right-[-60px] xl:bottom-[-16%] xl:right-[-80px] 2xl:bottom-[-16%] 4xl:bottom-[-16%]  2xl:right-[100px] 4xl:right-[200px] 5xl:right-[380px]">
             <img
               className="w-[134px] md:w-[160px] lg:w-[180px] xl:w-[280px] 2xl:w-[340px] 4xl:w-[350px] 5xl:w-[370px]"
               src="/assets/svg/util/cake-and-gift.svg"

@@ -33,7 +33,10 @@ const EventLocHero = (props) => {
       >
         <div className="home-hero-holder ">
           <div className="homehero-img w-full min-h-[280px] md:hidden">
-            <img src={props.pagedata.coverimageM}></img>
+            <img
+              src={props.pagedata.coverimageM}
+              alt={props.pagedata.coverimageM_alt}
+            ></img>
           </div>
           <div className="max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-[100px] md:py-20 lg:py-32 xl:py-40 relative z-20">
             <div className="page-benar-info">
