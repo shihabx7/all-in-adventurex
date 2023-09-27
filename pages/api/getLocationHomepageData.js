@@ -142,6 +142,7 @@ export const getLocationHomepageData = (locationslug) => {
       flow: bookingGame["party-package"].flow,
       eventstatus: bookingGame["party-package"].eventstatus,
     },
+
     pagedata: {
       locationstate: locattionstate,
       locationcity: getLocSpec(locationslug).city,

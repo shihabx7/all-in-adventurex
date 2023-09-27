@@ -240,8 +240,7 @@ const allEventlist = [
     event_desc:
       "A perfect party venue for the young at heart. No matter your age, get an unforgettable adventure!",
     event_slug: "birthday-party",
-    event_cover_image:
-      "/assets/all-event-list/allinadventures-events-birthday-party-card.jpg",
+    event_cover_image: "/assets/all-event-list/birthday-party.jpg",
   },
 
   {
@@ -250,8 +249,7 @@ const allEventlist = [
     event_desc:
       "This fun and exciting interactive form of team building will bring your corporate team closer!",
     event_slug: "team-building",
-    event_cover_image:
-      "/assets/all-event-list/allinadventures-events-team-building-card.jpg",
+    event_cover_image: "/assets/all-event-list/team-building.jpg",
   },
   {
     id: 3,
@@ -259,8 +257,7 @@ const allEventlist = [
     event_desc:
       "Instead of a dreary meeting on how to work effectively, why not take a crack at a puzzle?",
     event_slug: "corporate-events",
-    event_cover_image:
-      "/assets/all-event-list/allinadventures-events-corporate-events-card.jpg",
+    event_cover_image: "/assets/all-event-list/corporate-party.jpg",
   },
   {
     id: 4,
@@ -268,8 +265,7 @@ const allEventlist = [
     event_desc:
       "A unique family fun activity with intense real-life puzzles where you have to work together to progress!",
     event_slug: "family-fun-activity",
-    event_cover_image:
-      "/assets/all-event-list/allinadventures-events-family-fun-activities-card.jpg",
+    event_cover_image: "/assets/all-event-list/family-fun.jpg",
   },
   {
     id: 5,
@@ -277,8 +273,7 @@ const allEventlist = [
     event_desc:
       "There's no better way to bond with your bachelor party before the big day — no scandals, just nonstop thrills!",
     event_slug: "bachelor-party",
-    event_cover_image:
-      "/assets/all-event-list/allinadventures-events-bachelor-party-card.jpg",
+    event_cover_image: "/assets/all-event-list/bachelor-party.jpg",
   },
 
   {
@@ -287,8 +282,7 @@ const allEventlist = [
     event_desc:
       "Fun-filled bachelorette party without any drama that will be something long remembered by everyone!",
     event_slug: "bachelorette-party",
-    event_cover_image:
-      "/assets/all-event-list/allinadventures-events-bachelorette-party-card.jpg",
+    event_cover_image: "/assets/all-event-list/bachelorette-party.jpg",
   },
   {
     id: 7,
@@ -296,8 +290,7 @@ const allEventlist = [
     event_desc:
       "A distinctive way to propose marriage where the mystery game ends with the ring in the final clue box!",
     event_slug: "proposal-party",
-    event_cover_image:
-      "/assets/all-event-list/allinadventures-events-proposal-party-card.jpg",
+    event_cover_image: "/assets/all-event-list/proposal-party.jpg",
   },
   {
     id: 8,
@@ -305,8 +298,7 @@ const allEventlist = [
     event_desc:
       "Work together and find clues to solve the mystery that will ultimately strengthen your relationship!",
     event_slug: "date-night",
-    event_cover_image:
-      "/assets/all-event-list/allinadventures-events-date-night-card.jpg",
+    event_cover_image: "/assets/all-event-list/date-night.jpg",
   },
 
   {
@@ -315,8 +307,7 @@ const allEventlist = [
     event_desc:
       "Adventure awaits for all — your family, friends, office, indoor party, church group, fraternity or sorority.",
     event_slug: "private-party",
-    event_cover_image:
-      "/assets/all-event-list/allinadventures-events-private-party-card.jpg",
+    event_cover_image: "/assets/all-event-list/private-party.jpg",
   },
   {
     id: 10,
@@ -324,8 +315,7 @@ const allEventlist = [
     event_desc:
       "Each game is interactive and has engaging qualities that give your reunion party an epic adventure!",
     event_slug: "reunion-party",
-    event_cover_image:
-      "/assets/all-event-list/allinadventures-events-reunion-party-card.jpg",
+    event_cover_image: "/assets/all-event-list/reunion-party.jpg",
   },
   {
     id: 11,
@@ -333,18 +323,16 @@ const allEventlist = [
     event_desc:
       "Graduation is such an exciting time, no matter your age and you deserve to celebrate it in a memorable way",
     event_slug: "graduation-party",
-    event_cover_image:
-      "/assets/all-event-list/allinadventures-events-graduation-party-card.jpg",
+    event_cover_image: "/assets/all-event-list/graduation-party.jpg",
   },
 
   {
     id: 12,
-    event_name: "School Party",
+    event_name: "SCHOOL EVENTS / FIELD TRIPS",
     event_desc:
       "Students exercise critical thinking and act to become the super-spies they see in the movies!",
     event_slug: "school-events",
-    event_cover_image:
-      "/assets/all-event-list/allinadventures-events-school-event-card.jpg",
+    event_cover_image: "/assets/all-event-list/school-event.jpg",
   },
   {
     id: 13,
@@ -352,8 +340,7 @@ const allEventlist = [
     event_desc:
       "Instead of simply sharing the news of your baby's gender, why not a fun way to announce it through puzzles?",
     event_slug: "gender-reveal-party",
-    event_cover_image:
-      "/assets/all-event-list/allinadventures-events-gender-reveal-party-card.jpg",
+    event_cover_image: "/assets/all-event-list/gender-reveal-party.jpg",
   },
 ];
 

@@ -54,7 +54,7 @@ const EventList = (props) => {
                   boxShadow: "0px 0px 12px 1px rgba(0,0,0,0.25)",
                 }}
               >
-                <div className="all-game-list-gap py-[80px] md:py-[12%] lg:py-[100px]"></div>
+                <div className="all-game-list-gap py-[104px] md:py-[12%] lg:py-[116px]"></div>
                 <div className="all-game-list-bottom">
                   <div className=" text-center md:text-left">
                     <h3 className="card-game-title text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-white">

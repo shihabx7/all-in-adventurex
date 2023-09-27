@@ -455,6 +455,11 @@ const blist = {
       flow: "no",
       eventstatus: true,
     },
+    "axe-throwing-party": {
+      active: true,
+      item: "484181",
+      flow: "no",
+    },
   },
   //===================================west-nyack-ny end===========
   //===================================poughkeepsie-ny===========
@@ -525,6 +530,11 @@ const blist = {
       item: "426690",
       flow: "no",
       eventstatus: true,
+    },
+    "axe-throwing-party": {
+      active: true,
+      item: "491574",
+      flow: "no",
     },
   },
   //===================================poughkeepsie-ny end===========
