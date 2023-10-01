@@ -147,7 +147,18 @@ export default async function jobApplicationHandler(req, res) {
   }
   // sending email to applicant=========================
   try {
-    await transporter.verify();
+    const access_token = await oauth2Client.getAccessToken();
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        type: "OAuth2",
+        user: "sender@allinadventures.com",
+        clientId: client_id,
+        clientSecret: client_secret,
+        refreshToken: refreshtoken,
+        accessToken: access_token,
+      },
+    });
     await transporter.sendMail({
       from: "sender@allinadventures.com",
       //to: "shihab.dgency@gmail.com",
