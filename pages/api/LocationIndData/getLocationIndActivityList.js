@@ -205,7 +205,7 @@ const LocActivityData = {
           "You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -222,7 +222,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -239,7 +239,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -256,7 +256,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -273,7 +273,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -290,7 +290,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -307,7 +307,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -325,7 +325,7 @@ const LocActivityData = {
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-special-agent.jpg",
+          "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
       },
       {
         id: 9,
@@ -342,7 +342,7 @@ const LocActivityData = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -368,7 +368,7 @@ const LocActivityData = {
           "You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -385,7 +385,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -402,7 +402,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -419,7 +419,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -436,7 +436,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -453,7 +453,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -470,7 +470,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -488,7 +488,7 @@ const LocActivityData = {
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-special-agent.jpg",
+          "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
       },
       {
         id: 9,
@@ -505,7 +505,7 @@ const LocActivityData = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -533,7 +533,7 @@ const LocActivityData = {
           "You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -550,7 +550,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -567,7 +567,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -584,7 +584,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -601,7 +601,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -618,7 +618,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -635,7 +635,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -653,7 +653,7 @@ const LocActivityData = {
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-special-agent.jpg",
+          "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
       },
       {
         id: 9,
@@ -670,7 +670,7 @@ const LocActivityData = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
       },
       {
         id: 11,
@@ -687,7 +687,7 @@ const LocActivityData = {
           "Your Potions lesson will begin in 60 minutes and you have gotten locked in the headmaster's office! You must put on your thinking cap and find a way to get out in time…",
         activity_slug: "wizarding-school",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-wizarding-school.jpg",
+          "/assets/all-game-list/wizarding-school-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -732,7 +732,7 @@ const LocActivityData = {
           "You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -748,7 +748,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -764,7 +764,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -780,7 +780,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -796,7 +796,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -812,7 +812,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -828,7 +828,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -845,7 +845,7 @@ const LocActivityData = {
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-special-agent.jpg",
+          "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
       },
       {
         id: 9,
@@ -861,7 +861,7 @@ const LocActivityData = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
       },
       {
         id: 12,
@@ -877,7 +877,7 @@ const LocActivityData = {
           "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. See if you can piece together how to get things running again.",
         activity_slug: "locked-in-the-lift",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-locked-in-the-lift.jpg",
+          "/assets/all-game-list/locked-in-the-lift-all-in-adventures-escape-room.jpg",
       },
       /*
       {
@@ -894,7 +894,7 @@ const LocActivityData = {
           "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards. Test your wits, courage, loyalty, and cunning.",
         activity_slug: "magic-castle",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-magic-castle.jpg",
+          "/assets/all-game-list/magic-castle-all-in-adventures-escape-room.jpg",
       },
 */
       {
@@ -951,7 +951,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -969,7 +969,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -986,7 +986,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -1003,7 +1003,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -1020,7 +1020,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -1037,7 +1037,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -1054,7 +1054,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -1072,7 +1072,7 @@ const LocActivityData = {
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-special-agent.jpg",
+          "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
       },
       {
         id: 9,
@@ -1089,7 +1089,7 @@ const LocActivityData = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -1107,7 +1107,7 @@ const LocActivityData = {
           "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. See if you can piece together how to get things running again.",
         activity_slug: "locked-in-the-lift",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-locked-in-the-lift.jpg",
+          "/assets/all-game-list/locked-in-the-lift-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -1152,7 +1152,7 @@ const LocActivityData = {
           "You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -1169,7 +1169,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -1186,7 +1186,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -1203,7 +1203,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -1220,7 +1220,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -1237,7 +1237,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -1254,7 +1254,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -1272,7 +1272,7 @@ const LocActivityData = {
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-special-agent.jpg",
+          "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
       },
       {
         id: 9,
@@ -1289,7 +1289,7 @@ const LocActivityData = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -1317,7 +1317,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -1335,7 +1335,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -1352,7 +1352,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -1369,7 +1369,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -1387,7 +1387,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -1466,7 +1466,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -1484,7 +1484,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -1501,7 +1501,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -1518,7 +1518,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -1535,7 +1535,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -1552,7 +1552,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -1569,7 +1569,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -1618,7 +1618,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -1636,7 +1636,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -1653,7 +1653,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -1670,7 +1670,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -1687,7 +1687,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -1704,7 +1704,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -1721,7 +1721,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -1752,7 +1752,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -1770,7 +1770,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -1787,7 +1787,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -1804,7 +1804,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -1821,7 +1821,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -1838,7 +1838,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -1855,7 +1855,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -1873,7 +1873,7 @@ const LocActivityData = {
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-special-agent.jpg",
+          "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
       },
       {
         id: 9,
@@ -1890,7 +1890,7 @@ const LocActivityData = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -1920,7 +1920,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -1938,7 +1938,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -1955,7 +1955,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -1972,7 +1972,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -1989,7 +1989,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -2006,7 +2006,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -2023,7 +2023,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -2041,7 +2041,7 @@ const LocActivityData = {
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-special-agent.jpg",
+          "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
       },
       {
         id: 9,
@@ -2058,7 +2058,7 @@ const LocActivityData = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -2086,7 +2086,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -2104,7 +2104,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -2122,7 +2122,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -2139,7 +2139,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -2156,7 +2156,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -2173,7 +2173,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -2191,7 +2191,7 @@ const LocActivityData = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -2220,7 +2220,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -2238,7 +2238,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -2255,7 +2255,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -2272,7 +2272,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -2289,7 +2289,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -2306,7 +2306,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -2323,7 +2323,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -2341,7 +2341,7 @@ const LocActivityData = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -2359,7 +2359,7 @@ const LocActivityData = {
           "Having heard the mysterious sound of drums coming from the roof, you and your friends decided to check it out. Drawn by the beat, you find yourself trapped in the game!",
         activity_slug: "lost-in-the-jungle",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-lost-in-the-jungle.jpg",
+          "/assets/all-game-list/lost-in-the-jungle-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -2388,7 +2388,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -2406,7 +2406,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -2423,7 +2423,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -2440,7 +2440,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -2457,7 +2457,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -2474,7 +2474,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -2491,7 +2491,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -2509,7 +2509,7 @@ const LocActivityData = {
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-special-agent.jpg",
+          "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
       },
       {
         id: 9,
@@ -2526,7 +2526,7 @@ const LocActivityData = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -2557,7 +2557,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -2575,7 +2575,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -2592,7 +2592,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -2609,7 +2609,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -2626,7 +2626,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -2644,7 +2644,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -2662,7 +2662,7 @@ const LocActivityData = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -2691,7 +2691,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -2709,7 +2709,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -2726,7 +2726,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -2743,7 +2743,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -2760,7 +2760,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -2777,7 +2777,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -2794,7 +2794,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -2812,7 +2812,7 @@ const LocActivityData = {
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-special-agent.jpg",
+          "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
       },
       {
         id: 9,
@@ -2829,7 +2829,7 @@ const LocActivityData = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -2863,7 +2863,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -2881,7 +2881,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -2898,7 +2898,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -2915,7 +2915,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -2932,7 +2932,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -2949,7 +2949,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -2966,7 +2966,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -2984,7 +2984,7 @@ const LocActivityData = {
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-special-agent.jpg",
+          "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -3013,7 +3013,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -3031,7 +3031,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -3048,7 +3048,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -3065,7 +3065,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -3082,7 +3082,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -3099,7 +3099,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -3116,7 +3116,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -3134,7 +3134,7 @@ const LocActivityData = {
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-special-agent.jpg",
+          "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -3165,7 +3165,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -3183,7 +3183,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -3201,7 +3201,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -3218,7 +3218,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -3235,7 +3235,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -3253,7 +3253,7 @@ const LocActivityData = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -3282,7 +3282,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -3300,7 +3300,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -3317,7 +3317,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -3334,7 +3334,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -3351,7 +3351,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -3368,7 +3368,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -3385,7 +3385,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -3403,7 +3403,7 @@ const LocActivityData = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -3432,7 +3432,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -3450,7 +3450,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -3467,7 +3467,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -3484,7 +3484,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -3501,7 +3501,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -3518,7 +3518,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -3535,7 +3535,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -3553,7 +3553,7 @@ const LocActivityData = {
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-special-agent.jpg",
+          "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
       },
       {
         id: 9,
@@ -3570,7 +3570,7 @@ const LocActivityData = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -3597,7 +3597,7 @@ const LocActivityData = {
                     "duration":"50",
                     "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
                     "activity_slug":"escape-from-alcatraz",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+                    "activity_cover_image":"/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
                     
                     
                 },
@@ -3613,7 +3613,7 @@ const LocActivityData = {
                     "duration":"50",
                     "activity_desc":"You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
                     "activity_slug":"treasure-island",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-treasure-island.jpg",
+                    "activity_cover_image":"/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
                     
                 },
                 {
@@ -3628,7 +3628,7 @@ const LocActivityData = {
                     "duration":"50",
                     "activity_desc":"You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
                     "activity_slug":"zombie-apocalypse",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+                    "activity_cover_image":"/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
                     
                 },
                 {
@@ -3643,7 +3643,7 @@ const LocActivityData = {
                     "duration":"50",
                     "activity_desc":"London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
                     "activity_slug":"sherlocks-library",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+                    "activity_cover_image":"/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
                    
                 },
                 {
@@ -3658,7 +3658,7 @@ const LocActivityData = {
                     "duration":"50",
                     "activity_desc":"After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
                     "activity_slug":"black-ops",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-black-ops.jpg",
+                    "activity_cover_image":"/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
                     
                 },
                 {
@@ -3673,7 +3673,7 @@ const LocActivityData = {
                     "duration":"50",
                     "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
                     "activity_slug":"superheros-adventure",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+                    "activity_cover_image":"/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
                     
                 },
                 {
@@ -3688,7 +3688,7 @@ const LocActivityData = {
                     "duration":"50",
                     "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
                     "activity_slug":"houdinis-magic-cell",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+                    "activity_cover_image":"/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
                     
                 },
                 
@@ -3704,7 +3704,7 @@ const LocActivityData = {
                     "duration":"50",
                     "activity_desc":"An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
                     "activity_slug":"special-agent",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
+                    "activity_cover_image":"/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
                     
                 },
                 {
@@ -3719,7 +3719,7 @@ const LocActivityData = {
                     "duration":"50",
                     "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
                     "activity_slug":"hollywood-premiere",
-                    "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+                    "activity_cover_image":"/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
                    
                 },
               ]
@@ -3751,7 +3751,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -3769,7 +3769,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -3787,7 +3787,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -3804,7 +3804,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -3822,7 +3822,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -3851,7 +3851,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -3869,7 +3869,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -3887,7 +3887,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -3904,7 +3904,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -3922,7 +3922,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -3940,7 +3940,7 @@ const LocActivityData = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -3968,7 +3968,7 @@ const LocActivityData = {
           "You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -3984,7 +3984,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -4000,7 +4000,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -4016,7 +4016,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -4032,7 +4032,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -4048,7 +4048,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -4064,7 +4064,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -4081,7 +4081,7 @@ const LocActivityData = {
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-special-agent.jpg",
+          "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
       },
     ],
   },*/
@@ -4112,7 +4112,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -4130,7 +4130,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -4147,7 +4147,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -4164,7 +4164,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -4181,7 +4181,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -4198,7 +4198,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -4215,7 +4215,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {
@@ -4233,7 +4233,7 @@ const LocActivityData = {
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-special-agent.jpg",
+          "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
       },
       {
         id: 9,
@@ -4250,7 +4250,7 @@ const LocActivityData = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
+          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
       },
     ],
   },
@@ -4280,7 +4280,7 @@ const LocActivityData = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
+          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
       },
       {
         id: 2,
@@ -4298,7 +4298,7 @@ const LocActivityData = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-treasure-island.jpg",
+          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
       {
         id: 3,
@@ -4315,7 +4315,7 @@ const LocActivityData = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
       },
       {
         id: 4,
@@ -4332,7 +4332,7 @@ const LocActivityData = {
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-sherlocks-library.jpg",
+          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
       },
       {
         id: 5,
@@ -4349,7 +4349,7 @@ const LocActivityData = {
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-black-ops.jpg",
+          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
       },
       {
         id: 6,
@@ -4366,7 +4366,7 @@ const LocActivityData = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-superheros-adventure.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
       {
         id: 7,
@@ -4383,7 +4383,7 @@ const LocActivityData = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
-          "/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
+          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
       },
 
       {

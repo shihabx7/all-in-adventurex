@@ -337,7 +337,7 @@ export const Homepagedata = () => {
           "A perfect party venue for the young at heart. No matter your age, get an unforgettable adventure!",
         slug: "birthday-party",
         bgimg:
-          "/assets/all-event-slider-bg/allinadventures-events-birthday-party.jpg",
+          "/assets/all-event-slider-bg/all-in-adventures-birthday-party.jpg",
       },
       {
         id: 2,
@@ -348,7 +348,7 @@ export const Homepagedata = () => {
           "This fun and exciting interactive form of team building will bring your corporate team closer!",
         slug: "team-building",
         bgimg:
-          "/assets/all-event-slider-bg/allinadventures-events-team-building.jpg",
+          "/assets/all-event-slider-bg/all-in-adventures-team-building.jpg",
       },
       {
         id: 3,
@@ -359,7 +359,7 @@ export const Homepagedata = () => {
           "Instead of a dreary meeting on how to work effectively, why not take a crack at a puzzle?",
         slug: "corporate-events",
         bgimg:
-          "/assets/all-event-slider-bg/allinadventures-events-corporate-events.jpg",
+          "/assets/all-event-slider-bg/all-in-adventures-corporate-party.jpg",
       },
 
       {
@@ -370,8 +370,7 @@ export const Homepagedata = () => {
         description:
           "A unique family fun activity with intense real-life puzzles where you have to work together to progress!",
         slug: "family-fun-activity",
-        bgimg:
-          "/assets/all-event-slider-bg/allinadventures-events-family-fun-activities.jpg",
+        bgimg: "/assets/all-event-slider-bg/all-in-adventures-family-fun.jpg",
       },
       {
         id: 5,
@@ -382,7 +381,7 @@ export const Homepagedata = () => {
           "There's no better way to bond with your bachelor party before the big day — no scandals, just nonstop thrills!",
         slug: "bachelor-party",
         bgimg:
-          "/assets/all-event-slider-bg/allinadventures-events-bachelor-party.jpg",
+          "/assets/all-event-slider-bg/all-in-adventures-bachelor-party.jpg",
       },
       {
         id: 6,
@@ -393,7 +392,7 @@ export const Homepagedata = () => {
           "Fun-filled bachelorette party without any drama that will be something long remembered by everyone!",
         slug: "bachelorette-party",
         bgimg:
-          "/assets/all-event-slider-bg/allinadventures-events-bachelorette-party.jpg",
+          "/assets/all-event-slider-bg/all-in-adventures-bachelorette-party.jpg",
       },
       {
         id: 7,
@@ -404,7 +403,7 @@ export const Homepagedata = () => {
           "A distinctive way to propose marriage where the mystery game ends with the ring in the final clue box!",
         slug: "proposal-party",
         bgimg:
-          "/assets/all-event-slider-bg/allinadventures-events-proposal-party.jpg",
+          "/assets/all-event-slider-bg/all-in-adventures-proposal-party.jpg",
       },
       {
         id: 8,
@@ -414,8 +413,7 @@ export const Homepagedata = () => {
         description:
           "Work together and find clues to solve the mystery that will ultimately strengthen your relationship!",
         slug: "date-night",
-        bgimg:
-          "/assets/all-event-slider-bg/allinadventures-events-date-night.jpg",
+        bgimg: "/assets/all-event-slider-bg/all-in-adventures-date-night.jpg",
       },
       {
         id: 9,
@@ -426,7 +424,7 @@ export const Homepagedata = () => {
           "Adventure awaits for all — your family, friends, office, indoor party, church group, fraternity or sorority.",
         slug: "private-party",
         bgimg:
-          "/assets/all-event-slider-bg/allinadventures-events-private-party.jpg",
+          "/assets/all-event-slider-bg/all-in-adventures-private-party.jpg",
       },
       {
         id: 10,
@@ -437,7 +435,7 @@ export const Homepagedata = () => {
           "Each game is interactive and has engaging qualities that give your reunion party an epic adventure!",
         slug: "reunion-party",
         bgimg:
-          "/assets/all-event-slider-bg/allinadventures-events-reunion-party.jpg",
+          "/assets/all-event-slider-bg/all-in-adventures-reunion-party.jpg",
       },
       {
         id: 11,
@@ -448,7 +446,7 @@ export const Homepagedata = () => {
           "Graduation is such an exciting time, no matter your age and you deserve to celebrate it in a memorable way",
         slug: "graduation-party",
         bgimg:
-          "/assets/all-event-slider-bg/allinadventures-events-graduation-party.jpg",
+          "/assets/all-event-slider-bg/all-in-adventures-graduation-party.jpg",
       },
 
       {
@@ -459,8 +457,7 @@ export const Homepagedata = () => {
         description:
           "Students exercise critical thinking and act to become the super-spies they see in the movies!",
         slug: "school-events",
-        bgimg:
-          "/assets/all-event-slider-bg/allinadventures-events-school-event.jpg",
+        bgimg: "/assets/all-event-slider-bg/all-in-adventures-school-event.jpg",
       },
       {
         id: 13,
@@ -471,7 +468,7 @@ export const Homepagedata = () => {
           "Instead of simply sharing the news of your baby's gender, why not a fun way to announce it through puzzles?",
         slug: "gender-reveal-party",
         bgimg:
-          "/assets/all-event-slider-bg/allinadventures-events-gender-reveal-party-event.jpg",
+          "/assets/all-event-slider-bg/all-in-adventures-gender-reveal-party.jpg",
       },
     ],
     virtualgames: [

@@ -64,7 +64,7 @@ const GameList = (props) => {
                 activity.activity_category == "escapegame" && (
                   <div
                     key={activity.id}
-                    className="all-game-list bg-center bg-cover p-4 md:p-6 lg:p-8"
+                    className="all-game-list bg-center bg-cover p-4 md:p-6 lg:p-8 "
                     style={{
                       backgroundImage:
                         "linear-gradient(53deg, rgba(0,0,0,0.92),rgba(0,0,0,0.82),rgba(0,0,0,0.62),rgba(0,0,0,0),rgba(0,0,0,0)),url('" +
