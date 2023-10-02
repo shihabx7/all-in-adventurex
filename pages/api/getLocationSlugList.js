@@ -182,13 +182,7 @@ export const getLocationSlugList = () => {
       state: "OH",
       shortaddress: "Polaris Fashion Place",
     },
-    {
-      id: 27,
-      slug: "mentor-oh",
-      city: "Mentor",
-      state: "OH",
-      shortaddress: "Great Lakes Mall",
-    },
+
     /* {
       id: 28,
       slug: "dayton-oh",
