@@ -1631,7 +1631,7 @@ export const getLocationsPageData = () => {
               },
             ],
           },
-          {
+          /*  {
             id: 2,
             city: "Mentor",
             publish_status: true,
@@ -1695,7 +1695,7 @@ export const getLocationsPageData = () => {
                 close: "6 pm",
               },
             ],
-          },
+          },*/
           /*{
             id: 3,
             city: "Dayton",
