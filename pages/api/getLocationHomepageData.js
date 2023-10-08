@@ -5084,7 +5084,7 @@ const locPagedata = {
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         age: "6-99",
         duration: "50",
-        maxplayers: "10",
+        maxplayers: "12",
         minplayers: "2",
         price: "29.89",
         slug: "escape-from-alcatraz",
@@ -5101,7 +5101,7 @@ const locPagedata = {
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         age: "6-99",
         duration: "50",
-        maxplayers: "10",
+        maxplayers: "8",
         minplayers: "2",
         price: "29.89",
         slug: "treasure-island",
@@ -5118,7 +5118,7 @@ const locPagedata = {
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         age: "6-99",
         duration: "50",
-        maxplayers: "10",
+        maxplayers: "8",
         minplayers: "2",
         price: "29.89",
         slug: "zombie-apocalypse",
@@ -5135,7 +5135,7 @@ const locPagedata = {
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
         age: "6-99",
         duration: "50",
-        maxplayers: "10",
+        maxplayers: "8",
         minplayers: "2",
         price: "29.89",
         slug: "sherlocks-library",
@@ -5153,7 +5153,7 @@ const locPagedata = {
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         age: "6-99",
         duration: "50",
-        maxplayers: "10",
+        maxplayers: "8",
         minplayers: "2",
         price: "29.89",
         slug: "black-ops",
@@ -5169,7 +5169,7 @@ const locPagedata = {
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "50",
-        maxplayers: "10",
+        maxplayers: "8",
         minplayers: "2",
         price: "29.89",
         slug: "superheros-adventure",
@@ -5186,7 +5186,7 @@ const locPagedata = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "50",
-        maxplayers: "10",
+        maxplayers: "8",
         minplayers: "2",
         price: "29.89",
         slug: "houdinis-magic-cell",
@@ -5204,7 +5204,7 @@ const locPagedata = {
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "50",
-        maxplayers: "10",
+        maxplayers: "4",
         minplayers: "2",
         price: "29.89",
         slug: "hollywood-premiere",
@@ -7311,7 +7311,7 @@ const locPagedata = {
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         age: "6-99",
         duration: "50",
-        maxplayers: "10",
+        maxplayers: "8",
         minplayers: "2",
         price: "29.89",
         slug: "black-ops",
@@ -7328,7 +7328,7 @@ const locPagedata = {
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "50",
-        maxplayers: "10",
+        maxplayers: "6",
         minplayers: "2",
         price: "29.89",
         slug: "houdinis-magic-cell",
@@ -7483,569 +7483,6 @@ const locPagedata = {
     ],
   },
   //====================================================================columbus-oh end
-  //=====================================================================mentor-oh
-  "mentor-oh": {
-    coverimageL:
-      "/assets/all-location-desktop-hero/allinadventures-escape-room-mentor-oh-great-lakes-mall-hero.jpg",
-    coverimageM:
-      "/assets/all-location-mobile-hero/allinadventures-escape-room-mentor-oh-great-lakes-mall-hero.jpg",
-    coverimageM_alt: "allinadventures-escape-room-mentor-oh-great-lakes-mall",
-    pagesubtitle:
-      "All In Adventures Mentor has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Mentor, OH.",
-    pagemeta: {
-      matatilte: "title",
-      metakeyword: "keywords",
-      metadescription: "metadescription",
-    },
-    inpersongames: [
-      {
-        id: 1,
-        category: "escapegame",
-        type: "In-Person",
-        success_rate: "56",
-        title: "Escape From Alcatraz",
-        description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "6-99",
-        duration: "50",
-        maxplayers: "10",
-        minplayers: "2",
-        price: "29.89",
-        slug: "escape-from-alcatraz",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
-      },
-      {
-        id: 2,
-        category: "escapegame",
-        type: "In-Person",
-        title: "Treasure Island",
-        success_rate: "67",
-        description:
-          "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "6-99",
-        duration: "50",
-        maxplayers: "10",
-        minplayers: "2",
-        price: "29.89",
-        slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
-      },
-
-      {
-        id: 4,
-        category: "escapegame",
-        type: "In-Person",
-        title: "Sherlock's Library",
-        success_rate: "42",
-        description:
-          "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "6-99",
-        duration: "50",
-        maxplayers: "10",
-        minplayers: "2",
-        price: "29.89",
-        slug: "sherlocks-library",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
-      },
-
-      {
-        id: 5,
-        category: "escapegame",
-        type: "In-Person",
-        title: "Black Ops",
-        success_rate: "46",
-        description:
-          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "6-99",
-        duration: "50",
-        maxplayers: "10",
-        minplayers: "2",
-        price: "29.89",
-        slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
-      },
-
-      {
-        id: 7,
-        category: "escapegame",
-        type: "In-Person",
-        title: "Houdini's Magic Cell",
-        success_rate: "18",
-        description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "6-99",
-        duration: "50",
-        maxplayers: "10",
-        minplayers: "2",
-        price: "29.89",
-        slug: "houdinis-magic-cell",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
-      },
-
-      {
-        id: 9,
-        category: "escapegame",
-        type: "In-Person",
-        title: "Hollywood Premiere",
-        success_rate: "45",
-        description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        age: "6-99",
-        duration: "50",
-        maxplayers: "10",
-        minplayers: "2",
-        price: "29.89",
-        slug: "hollywood-premiere",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
-      },
-    ],
-
-    events: [
-      {
-        id: 1,
-        category: "event",
-        type: "In-Person",
-        title: "BIRTHDAY PARTIES",
-        description:
-          "A perfect party venue for the young at heart. No matter your age, get an unforgettable adventure!",
-        slug: "birthday-party",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-birthday-party.jpg",
-      },
-      {
-        id: 2,
-        category: "event",
-        type: "In-Person",
-        title: "TEAM BUILDING",
-        description:
-          "This fun and exciting interactive form of team building will bring your corporate team closer!",
-        slug: "team-building",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-team-building.jpg",
-      },
-      {
-        id: 3,
-        category: "event",
-        type: "In-Person",
-        title: "CORPORATE EVENTS",
-        description:
-          "Instead of a dreary meeting on how to work effectively, why not take a crack at a puzzle?",
-        slug: "corporate-events",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-corporate-party.jpg",
-      },
-
-      {
-        id: 4,
-        category: "event",
-        type: "In-Person",
-        title: "FAMILY FUN ACTIVITIES",
-        description:
-          "A unique family fun activity with intense real-life puzzles where you have to work together to progress!",
-        slug: "family-fun-activity",
-        bgimg: "/assets/all-event-slider-bg/all-in-adventures-family-fun.jpg",
-      },
-      {
-        id: 5,
-        category: "event",
-        type: "In-Person",
-        title: "Bachelor Party",
-        description:
-          "There's no better way to bond with your bachelor party before the big day — no scandals, just nonstop thrills!",
-        slug: "bachelor-party",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-bachelor-party.jpg",
-      },
-      {
-        id: 6,
-        category: "event",
-        type: "In-Person",
-        title: "Bachelorette Party",
-        description:
-          "Fun-filled bachelorette party without any drama that will be something long remembered by everyone!",
-        slug: "bachelorette-party",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-bachelorette-party.jpg",
-      },
-      {
-        id: 7,
-        category: "event",
-        type: "In-Person",
-        title: "PROPOSAL PARTY",
-        description:
-          "A distinctive way to propose marriage where the mystery game ends with the ring in the final clue box!",
-        slug: "proposal-party",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-proposal-party.jpg",
-      },
-      {
-        id: 8,
-        category: "event",
-        type: "In-Person",
-        title: "DATE NIGHT / NIGHT OUT",
-        description:
-          "Work together and find clues to solve the mystery that will ultimately strengthen your relationship!",
-        slug: "date-night",
-        bgimg: "/assets/all-event-slider-bg/all-in-adventures-date-night.jpg",
-      },
-      {
-        id: 9,
-        category: "event",
-        type: "In-Person",
-        title: "Private Party",
-        description:
-          "Adventure awaits for all — your family, friends, office, indoor party, church group, fraternity or sorority.",
-        slug: "private-party",
-        bgimg:
-          "/assets/all-event-slider-bg/allinadventures-events-private-party.jpg",
-      },
-      {
-        id: 10,
-        category: "event",
-        type: "In-Person",
-        title: "Reunion Party",
-        description:
-          "Each game is interactive and has engaging qualities that give your reunion party an epic adventure!",
-        slug: "reunion-party",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-reunion-party.jpg",
-      },
-      {
-        id: 11,
-        category: "event",
-        type: "In-Person",
-        title: "Graduation Party",
-        description:
-          "Graduation is such an exciting time, no matter your age and you deserve to celebrate it in a memorable way",
-        slug: "graduation-party",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-graduation-party.jpg",
-      },
-
-      {
-        id: 12,
-        category: "event",
-        type: "In-Person",
-        title: "SCHOOL EVENTS / FIELD TRIPS",
-        description:
-          "Students exercise critical thinking and act to become the super-spies they see in the movies!",
-        slug: "school-events",
-        bgimg: "/assets/all-event-slider-bg/all-in-adventures-school-event.jpg",
-      },
-      {
-        id: 13,
-        category: "event",
-        type: "In-Person",
-        title: "GENDER REVEAL PARTY",
-        description:
-          "Instead of simply sharing the news of your baby's gender, why not a fun way to announce it through puzzles?",
-        slug: "gender-reveal-party",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-gender-reveal-party.jpg",
-      },
-    ],
-  },
-  //====================================================================mentor-oh end
-  //=====================================================================dayton-oh
-  /* "dayton-oh": {
-    coverimageL:
-      "/assets/all-location-desktop-hero/allinadventures-escape-room-dayton-oh-dayton-mall-hero.jpg",
-    coverimageM:
-      "/assets/all-location-mobile-hero/allinadventures-escape-room-dayton-oh-dayton-mall-hero.jpg",
-    coverimageM_alt: "allinadventures-escape-room-dayton-oh-dayton-mall",
-    pagesubtitle:
-      "All In Adventures Dayton has kid and family friendly Escape Rooms that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in Dayton, OH.",
-    pagemeta: {
-      matatilte: "title",
-      metakeyword: "keywords",
-      metadescription: "metadescription",
-    },
-    inpersongames: [
-      {
-        id: 1,
-        category: "escapegame",
-        type: "In-Person",
-        title: "Escape From Alcatraz",
-        description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        age: "6-99",
-        duration: "50",
-        maxplayers: "10",
-        minplayers: "2",
-        price: "29.89",
-        slug: "escape-from-alcatraz",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
-      },
-      {
-        id: 2,
-        category: "escapegame",
-        type: "In-Person",
-        title: "Treasure Island",
-        description:
-          "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        age: "6-99",
-        duration: "50",
-        maxplayers: "10",
-        minplayers: "2",
-        price: "29.89",
-        slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
-      },
-      {
-        id: 3,
-        category: "escapegame",
-        type: "In-Person",
-        title: "Zombie Apocalypse",
-        description:
-          "The zombification virus has mutated and it is up to you to save humanity! Double check your research and create an immunity chemical test!",
-        age: "6-99",
-        duration: "50",
-        maxplayers: "10",
-        minplayers: "2",
-        price: "29.89",
-        slug: "zombie-apocalypse",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
-      },
-      {
-        id: 4,
-        category: "escapegame",
-        type: "In-Person",
-        title: "Sherlock's Library",
-        description:
-          "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
-        age: "6-99",
-        duration: "50",
-        maxplayers: "10",
-        minplayers: "2",
-        price: "29.89",
-        slug: "sherlocks-library",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
-      },
-
-      {
-        id: 5,
-        category: "escapegame",
-        type: "In-Person",
-        title: "Black Ops",
-        description:
-          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
-        age: "6-99",
-        duration: "50",
-        maxplayers: "10",
-        minplayers: "2",
-        price: "29.89",
-        slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
-      },
-      {
-        id: 6,
-        category: "escapegame",
-        type: "In-Person",
-        title: "Superhero's Adventure",
-        description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        age: "6-99",
-        duration: "50",
-        maxplayers: "10",
-        minplayers: "2",
-        price: "29.89",
-        slug: "superheros-adventure",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
-      },
-      {
-        id: 7,
-        category: "escapegame",
-        type: "In-Person",
-        title: "Houdini's Magic Cell",
-        description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        age: "6-99",
-        duration: "50",
-        maxplayers: "10",
-        minplayers: "2",
-        price: "29.89",
-        slug: "houdinis-magic-cell",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
-      },
-
-      {
-        id: 8,
-        category: "escapegame",
-        type: "In-Person",
-        title: "Special Agent",
-        description:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
-        age: "6-99",
-        duration: "50",
-        maxplayers: "10",
-        minplayers: "2",
-        price: "29.89",
-        slug: "special-agent",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg",
-      },
-    ],
-
-    events: [
-      {
-        id: 1,
-        category: "event",
-        type: "In-Person",
-        title: "BIRTHDAY PARTIES",
-        description:
-          "A perfect party venue for the young at heart. No matter your age, get an unforgettable adventure!",
-        slug: "birthday-party",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-birthday-party.jpg",
-      },
-      {
-        id: 2,
-        category: "event",
-        type: "In-Person",
-        title: "TEAM BUILDING",
-        description:
-          "This fun and exciting interactive form of team building will bring your corporate team closer!",
-        slug: "team-building",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-team-building.jpg",
-      },
-      {
-        id: 3,
-        category: "event",
-        type: "In-Person",
-        title: "CORPORATE EVENTS",
-        description:
-          "Instead of a dreary meeting on how to work effectively, why not take a crack at a puzzle?",
-        slug: "corporate-events",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-corporate-party.jpg",
-      },
-
-      {
-        id: 4,
-        category: "event",
-        type: "In-Person",
-        title: "FAMILY FUN ACTIVITIES",
-        description:
-          "A unique family fun activity with intense real-life puzzles where you have to work together to progress!",
-        slug: "family-fun-activity",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-family-fun.jpg",
-      },
-      {
-        id: 5,
-        category: "event",
-        type: "In-Person",
-        title: "Bachelor Party",
-        description:
-          "There's no better way to bond with your bachelor party before the big day — no scandals, just nonstop thrills!",
-        slug: "bachelor-party",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-bachelor-party.jpg",
-      },
-      {
-        id: 6,
-        category: "event",
-        type: "In-Person",
-        title: "Bachelorette Party",
-        description:
-          "Fun-filled bachelorette party without any drama that will be something long remembered by everyone!",
-        slug: "bachelorette-party",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-bachelorette-party.jpg",
-      },
-      {
-        id: 7,
-        category: "event",
-        type: "In-Person",
-        title: "PROPOSAL PARTY",
-        description:
-          "A distinctive way to propose marriage where the mystery game ends with the ring in the final clue box!",
-        slug: "proposal-party",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-proposal-party.jpg",
-      },
-      {
-        id: 8,
-        category: "event",
-        type: "In-Person",
-        title: "DATE NIGHT / NIGHT OUT",
-        description:
-          "Work together and find clues to solve the mystery that will ultimately strengthen your relationship!",
-        slug: "date-night",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-date-night.jpg",
-      },
-      {
-        id: 9,
-        category: "event",
-        type: "In-Person",
-        title: "Private Party",
-        description:
-          "Adventure awaits for all — your family, friends, office, indoor party, church group, fraternity or sorority.",
-        slug: "private-party",
-        bgimg:
-          "/assets/all-event-slider-bg/allinadventures-events-private-party.jpg",
-      },
-      {
-        id: 10,
-        category: "event",
-        type: "In-Person",
-        title: "Reunion Party",
-        description:
-          "Each game is interactive and has engaging qualities that give your reunion party an epic adventure!",
-        slug: "reunion-party",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-reunion-party.jpg",
-      },
-      {
-        id: 11,
-        category: "event",
-        type: "In-Person",
-        title: "Graduation Party",
-        description:
-          "Graduation is such an exciting time, no matter your age and you deserve to celebrate it in a memorable way",
-        slug: "graduation-party",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-graduation-party.jpg",
-      },
-
-      {
-        id: 12,
-        category: "event",
-        type: "In-Person",
-        title: "SCHOOL EVENTS / FIELD TRIPS",
-        description:
-          "Students exercise critical thinking and act to become the super-spies they see in the movies!",
-        slug: "school-events",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-school-event.jpg",
-      },
-      {
-        id: 13,
-        category: "event",
-        type: "In-Person",
-        title: "GENDER REVEAL PARTY",
-        description:
-          "Instead of simply sharing the news of your baby's gender, why not a fun way to announce it through puzzles?",
-        slug: "gender-reveal-party",
-        bgimg:
-          "/assets/all-event-slider-bg/all-in-adventures-gender-reveal-party.jpg",
-      },
-    ],
-  },*/
-  //====================================================================dayton-oh end
 
   //******************************************************************************************OH end==============================
 };

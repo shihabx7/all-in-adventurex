@@ -3274,7 +3274,7 @@ const LocActivityData = {
         activity_category: "escapegame",
         age: "6-99",
         min_player: "2",
-        max_player: "10",
+        max_player: "12",
         success_rate: "56",
         price: "29.89",
         duration: "50",
@@ -3291,7 +3291,7 @@ const LocActivityData = {
         activity_category: "escapegame",
         age: "6-99",
         min_player: "2",
-        max_player: "10",
+        max_player: "8",
         price: "29.89",
         success_rate: "67",
 
@@ -3309,7 +3309,7 @@ const LocActivityData = {
         activity_category: "escapegame",
         age: "6-99",
         min_player: "2",
-        max_player: "10",
+        max_player: "8",
         price: "29.89",
         success_rate: "37",
         duration: "50",
@@ -3326,7 +3326,7 @@ const LocActivityData = {
         activity_category: "escapegame",
         age: "6-99",
         min_player: "2",
-        max_player: "10",
+        max_player: "8",
         price: "29.89",
         success_rate: "42",
         duration: "50",
@@ -3343,7 +3343,7 @@ const LocActivityData = {
         activity_category: "escapegame",
         age: "6-99",
         min_player: "2",
-        max_player: "10",
+        max_player: "8",
         price: "29.89",
         success_rate: "46",
         duration: "50",
@@ -3360,7 +3360,7 @@ const LocActivityData = {
         activity_category: "escapegame",
         age: "6-99",
         min_player: "2",
-        max_player: "10",
+        max_player: "8",
         price: "29.89",
         success_rate: "61",
         duration: "50",
@@ -3377,7 +3377,7 @@ const LocActivityData = {
         activity_category: "escapegame",
         age: "6-99",
         min_player: "2",
-        max_player: "10",
+        max_player: "8",
         success_rate: "18",
         price: "29.89",
         duration: "50",
@@ -3395,7 +3395,7 @@ const LocActivityData = {
         activity_category: "escapegame",
         age: "6-99",
         min_player: "2",
-        max_player: "10",
+        max_player: "4",
         price: "29.89",
         success_rate: "45",
         duration: "50",
@@ -3649,7 +3649,7 @@ const LocActivityData = {
         activity_category: "escapegame",
         age: "6-99",
         min_player: "2",
-        max_player: "10",
+        max_player: "8",
         price: "29.89",
         success_rate: "46",
         duration: "50",
@@ -3667,7 +3667,7 @@ const LocActivityData = {
         activity_category: "escapegame",
         age: "6-99",
         min_player: "2",
-        max_player: "10",
+        max_player: "6",
         success_rate: "18",
         price: "29.89",
         duration: "50",
@@ -3680,265 +3680,7 @@ const LocActivityData = {
     ],
   },
   //=========================================================columbus-oh end
-  //=========================================================mentor-oh list
-  "mentor-oh": {
-    mall: "Great Lakes mall",
-    coverimageL: "/assets/location-hero-bg.jpg",
-    coverimageM: "/assets/location-hero.jpg",
-    totalFiveStarReview: "4.2k",
-    totalPlayerEscaped: "10k+",
 
-    activity_list: [
-      {
-        id: 1,
-        activity_name: "Escape from Alcatraz",
-        activity_type: "In person",
-        activity_category: "escapegame",
-        age: "6-99",
-        min_player: "2",
-        max_player: "10",
-        success_rate: "56",
-        price: "29.89",
-        duration: "50",
-        activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        activity_slug: "escape-from-alcatraz",
-        activity_cover_image:
-          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
-      },
-      {
-        id: 2,
-        activity_name: "Treasure Island",
-        activity_type: "In person",
-        activity_category: "escapegame",
-        age: "6-99",
-        min_player: "2",
-        max_player: "10",
-        price: "29.89",
-        success_rate: "67",
-
-        duration: "50",
-        activity_desc:
-          "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        activity_slug: "treasure-island",
-        activity_cover_image:
-          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
-      },
-
-      {
-        id: 4,
-        activity_name: "Sherlock's Library",
-        activity_type: "In person",
-        activity_category: "escapegame",
-        age: "6-99",
-        min_player: "2",
-        max_player: "10",
-        price: "29.89",
-        success_rate: "42",
-        duration: "50",
-        activity_desc:
-          "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
-        activity_slug: "sherlocks-library",
-        activity_cover_image:
-          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
-      },
-      {
-        id: 5,
-        activity_name: "Black Ops",
-        activity_type: "In person",
-        activity_category: "escapegame",
-        age: "6-99",
-        min_player: "2",
-        max_player: "10",
-        price: "29.89",
-        success_rate: "46",
-        duration: "50",
-        activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
-        activity_slug: "black-ops",
-        activity_cover_image:
-          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
-      },
-
-      {
-        id: 7,
-        activity_name: "HOUDINI'S MAGIC CELL",
-        activity_type: "In person",
-        activity_category: "escapegame",
-        age: "6-99",
-        min_player: "2",
-        max_player: "10",
-        success_rate: "18",
-        price: "29.89",
-        duration: "50",
-        activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        activity_slug: "houdinis-magic-cell",
-        activity_cover_image:
-          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
-      },
-
-      {
-        id: 9,
-        activity_name: "HOLLYWOOD PREMIERE",
-        activity_type: "In person",
-        activity_category: "escapegame",
-        age: "6-99",
-        min_player: "2",
-        max_player: "10",
-        price: "29.89",
-        success_rate: "45",
-        duration: "50",
-        activity_desc:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-        activity_slug: "hollywood-premiere",
-        activity_cover_image:
-          "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
-      },
-    ],
-  },
-  //=========================================================mentor-oh end
-  //=========================================================dayton-oh  list
-  /* "dayton-oh": {
-    mall: "Dayton Mall",
-    coverimageL: "/assets/location-hero-bg.jpg",
-    coverimageM: "/assets/location-hero.jpg",
-    totalFiveStarReview: "4.8k",
-    totalPlayerEscaped: "12.7k+",
-
-    activity_list: [
-      {
-        id: 1,
-        activity_name: "Escape from Alcatraz",
-        activity_type: "In-person",
-        activity_category: "escapegame",
-        age: "6-99",
-        min_player: "2",
-        max_player: "10",
-        price: "29.89",
-        duration: "50",
-        activity_desc:
-          "You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-        activity_slug: "escape-from-alcatraz",
-        activity_cover_image:
-          "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
-      },
-      {
-        id: 2,
-        activity_name: "Treasure Island",
-        activity_type: "In-person",
-        activity_category: "escapegame",
-        age: "6-99",
-        min_player: "2",
-        max_player: "10",
-        price: "29.89",
-        duration: "50",
-        activity_desc:
-          "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-        activity_slug: "treasure-island",
-        activity_cover_image:
-          "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
-      },
-      {
-        id: 3,
-        activity_name: "Zombie Apocalypse",
-        activity_type: "In-person",
-        activity_category: "escapegame",
-        age: "6-99",
-        min_player: "2",
-        max_player: "10",
-        price: "29.89",
-        duration: "50",
-        activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
-        activity_slug: "zombie-apocalypse",
-        activity_cover_image:
-          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
-      },
-      {
-        id: 4,
-        activity_name: "Sherlock's Library",
-        activity_type: "In-person",
-        activity_category: "escapegame",
-        age: "6-99",
-        min_player: "2",
-        max_player: "10",
-        price: "29.89",
-        duration: "50",
-        activity_desc:
-          "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
-        activity_slug: "sherlocks-library",
-        activity_cover_image:
-          "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
-      },
-      {
-        id: 5,
-        activity_name: "Black Ops",
-        activity_type: "In-person",
-        activity_category: "escapegame",
-        age: "6-99",
-        min_player: "2",
-        max_player: "10",
-        price: "29.89",
-        duration: "50",
-        activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
-        activity_slug: "black-ops",
-        activity_cover_image:
-          "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
-      },
-      {
-        id: 6,
-        activity_name: "Superhero's Adventure",
-        activity_type: "In-person",
-        activity_category: "escapegame",
-        age: "6-99",
-        min_player: "2",
-        max_player: "10",
-        price: "29.89",
-        duration: "50",
-        activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-        activity_slug: "superheros-adventure",
-        activity_cover_image:
-          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
-      },
-      {
-        id: 7,
-        activity_name: "HOUDINI'S MAGIC CELL",
-        activity_type: "In-person",
-        activity_category: "escapegame",
-        age: "6-99",
-        min_player: "2",
-        max_player: "10",
-        price: "29.89",
-        duration: "50",
-        activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        activity_slug: "houdinis-magic-cell",
-        activity_cover_image:
-          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
-      },
-
-      {
-        id: 8,
-        activity_name: "Special Agent",
-        activity_type: "In-person",
-        activity_category: "escapegame",
-        age: "6-99",
-        min_player: "2",
-        max_player: "10",
-        price: "29.89",
-        duration: "50",
-        activity_desc:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
-        activity_slug: "special-agent",
-        activity_cover_image:
-          "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
-      },
-    ],
-  },*/
-  //=========================================================dayton-oh end
   //********************************************************************************************OH END*/
   //********************************************************************************************VA */
   //=========================================================roanoke-va list
