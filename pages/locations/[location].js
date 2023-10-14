@@ -21,6 +21,7 @@ import LocationDetails from "../../comps/locationsPage/LocationDetails";
 import HomeReviewSliderLoc from "../../comps/homepagecomps/HomeReviewSliderLoc";
 import HowToPlay from "../../comps/homepagecomps/HowToPlay";
 import Seofields from "../../comps/util/SeoFields";
+import NewLoactionDetails from "../../comps/locationsPage/NewLoactionDetails";
 const location = (props) => {
   const getCap = (title) => {
     const titlefres = title.replace(/-/g, " ");
@@ -133,7 +134,8 @@ const location = (props) => {
         <WhoCanplay />
         <HomeReviewSliderLoc reviews={props.reviews} />
 
-        <LocationDetails locdetail={props.pagedata.locdetail} />
+        {/*<LocationDetails locdetail={props.pagedata.locdetail} />*/}
+        <NewLoactionDetails locdetail={props.pagedata.locdetail} />
       </div>
 
       <Footer
