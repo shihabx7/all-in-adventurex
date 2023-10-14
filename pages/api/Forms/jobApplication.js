@@ -197,11 +197,17 @@ export default async function jobApplicationHandler(req, res) {
     // console.log("Delete File successfully.");
   });
   // return res.status(500).json({ data: retbody,success:false,errors:error});
-  if (!successItem.aiaSuccess && !successItem.applicantSuccess) {
+  if (!successItem.aiaSuccess) {
     return res
       .status(500)
       .json({ data: retbody, success: false, errors: emailErrors });
   } else {
-    res.status(200).json({ data: retbody, success: true });
+    res
+      .status(200)
+      .json({
+        data: retbody,
+        allsuccess: successItem.applicantSuccess,
+        success: true,
+      });
   }
 }
