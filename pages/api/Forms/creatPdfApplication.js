@@ -27,19 +27,20 @@ export async function creatPdfApplication(pdfData) {
     },
   };
   var logo = fs.readFileSync(path.join(process.cwd(), "pdf/tik.jpg"), "base64");
-  //const bitmap = fs.readFileSync(__dirname+ "/pdf/tik.png");
-  //const logo = bitmap.toString('base64');
 
   var dt = new Date();
   var mn = dt.getMonth() + 1;
   var pdt = mn + "_" + dt.getDate() + "_" + dt.getFullYear();
   var pubdate = mn + "-" + dt.getDate() + "-" + dt.getFullYear();
   var d = new Date();
-  var fn = pdfData.info1.fName.trim().split(" ").join("_");
-  var ln = fn + "_" + pdfData.info1.lName.trim().split(" ").join("_");
+  var fileTxtname =
+    pdfData.info1.fName.trim().split(" ").join("_") +
+    "_" +
+    pdfData.info1.lName.trim().split(" ").join("_");
+
   var pdfnpath =
     "pdf/" +
-    ln +
+    fileTxtname +
     "_" +
     pdt +
     "_" +
