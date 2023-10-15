@@ -598,6 +598,7 @@ const JobApplicationForms = (props) => {
           expinfo: jobExp,
           refinfo: references,
         };
+        console.log(formData);
         setIsSend(true);
 
         const response = await fetch("/api/Forms/jobApplication", {
@@ -609,19 +610,38 @@ const JobApplicationForms = (props) => {
           body: JSON.stringify(formData),
         });
 
-        const result = await response.json();
+        const clientRes = await response.json();
 
-        if (result.success == true) {
-          window.location.replace("/thank-you-career");
-          setIsSend(false);
-          // console.log(result.data)
-          //  console.log(result.success)
-        } else {
+        let recpData = "";
+        let mailAllErr = false;
+        if (!clientRes.success) {
           setIsSend(false);
           alert("Network Error");
+          mailAllErr = true;
+        } else {
+          recpData = clientRes.data;
         }
-        //  console.log(result.data)
-        // console.log(result.success)
+        console.log(clientRes.data);
+        const recpRes = await fetch("/api/Forms/replayApplication", {
+          method: "POST",
+          headers: {
+            Accept: "application/json,text/plain,*/*",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(recpData),
+        });
+        const recpResult = await recpRes.json();
+
+        if (!mailAllErr && !recpResult.success) {
+          alert(
+            "Yor job application can't be sent at this moment. Send Your cv to carrer@allinadventures.com "
+          );
+          setIsSend(false);
+        } else {
+          setIsSend(false);
+          console.log(recpResult.data);
+          window.location.replace("/thank-you-career");
+        }
       } else {
         setFormStep(5);
       }

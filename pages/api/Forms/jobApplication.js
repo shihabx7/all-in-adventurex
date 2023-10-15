@@ -1,18 +1,31 @@
 import nodemailer from "nodemailer";
 //import puppeteer from 'puppeteer';
-import path from "path";
-import fs from "fs";
+//import path from "path";
+//import fs from "fs";
 
-import pdf from "pdf-creator-node";
-//import handlebars from 'handlebars'
+//import pdf from "pdf-creator-node";
 import { google } from "googleapis";
+//import handlebars from "handlebars";
+import { creatPdfApplication } from "./creatPdfApplication";
+
+const client_id = process.env.GS_CLIENT_ID;
+const client_secret = process.env.GS_CLIENT_SECRET;
+const redirect_uri = process.env.GS_REDIRECT_URI;
+const refreshtoken = process.env.GS_REFRESH_TOKEN;
+const mailUser = process.env.MAIL_SENDER_USER;
+const mailService = process.env.MAIL_SERVICE;
+const mailAuthType = process.env.MAIL_AUTH_TYPE;
+const mailReceiver = process.env.MAIL_RECEIVER_CAREER;
+const mailReceiverBcc = process.env.MAIL_BCC;
 
 export default async function jobApplicationHandler(req, res) {
   // Get data submitted in request's body.
 
   const retbody = req.body;
+
+  console.log(retbody);
   // ============================pdf file
-  var templateHtml = fs.readFileSync(
+  /* var templateHtml = fs.readFileSync(
     path.join(process.cwd(), "pdf/pdfhtml.html"),
     "utf8"
   );
@@ -73,43 +86,44 @@ export default async function jobApplicationHandler(req, res) {
   pdf
     .create(document, options)
     .then((res) => {
-      // console.log(res);
+      console.log(res);
     })
     .catch((error) => {
-      // console.error(error);
+      console.error(error);
     });
-
+*/
   // ============================pdf file======================================
 
-  const { OAuth2 } = google.auth;
+  const pdfRes = await creatPdfApplication(retbody);
+  //const pdfRes = JSON.parse(pdfResResult);
+  // console.log(pdfRes);
+  var emailErrors = {
+    applicantErr: "",
+    aiaErr: "",
+    pdfErr: "Server Error. File can't be create.",
+  };
+  let mailsend = true;
+  if (!pdfRes.success) {
+    return res
+      .status(500)
+      .json({ data: retbody, success: false, errors: emailErrors.pdfErr });
+  }
 
-  const client_id = process.env.GS_CLIENT_ID;
-  const client_secret = process.env.GS_CLIENT_SECRET;
-  const redirect_uri = process.env.GS_REDIRECT_URI;
-  const refreshtoken = process.env.GS_REFRESH_TOKEN;
+  const { OAuth2 } = google.auth;
 
   const oauth2Client = new OAuth2(client_id, client_secret, redirect_uri);
 
   oauth2Client.setCredentials({
     refresh_token: refreshtoken,
   });
-
-  var emailErrors = {
-    applicantErr: "",
-    aiaErr: "",
-  };
-  var successItem = {
-    aiaSuccess: true,
-    applicantSuccess: true,
-  };
-
+  let recname = retbody.info1.fName + " " + retbody.info1.lName;
   try {
     const access_token = await oauth2Client.getAccessToken();
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      service: mailService,
       auth: {
-        type: "OAuth2",
-        user: "sender@allinadventures.com",
+        type: mailAuthType,
+        user: mailUser,
         clientId: client_id,
         clientSecret: client_secret,
         refreshToken: refreshtoken,
@@ -117,12 +131,12 @@ export default async function jobApplicationHandler(req, res) {
       },
     });
     await transporter.sendMail({
-      from: '"AIA Job Application"<sender@allinadventures.com>"',
+      from: `"AIA Job Application"<${mailUser}>"`,
       //to: "shihab.dgency@gmail.com",
-      to: "careers@allinadventures.com",
-      bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
+      to: `${mailReceiver}`,
+      bcc: `${mailReceiverBcc}`,
       //  bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
-      subject: `Job Application - ${retbody.info1.lName} ${retbody.info1.fName}`,
+      subject: `Job Application - ${recname}`,
       html: `
               <p style="margin:4px 0px;"><strong>Name: </strong> ${retbody.info1.lName} ${retbody.info1.fName} </p>
               <p style="margin:4px 0px;"><strong>Phone: </strong> ${retbody.info1.phone} </p>
@@ -137,77 +151,31 @@ export default async function jobApplicationHandler(req, res) {
       attachments: [
         {
           // utf-8 string as an attachment
-          path: outpath,
+          path: pdfRes.pdfpath,
         },
       ],
     });
   } catch (error) {
     emailErrors.aiaErr = error;
-    successItem.aiaSuccess = false;
+    mailsend = false;
   }
   // sending email to applicant=========================
-  try {
-    const access_token = await oauth2Client.getAccessToken();
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        type: "OAuth2",
-        user: "sender@allinadventures.com",
-        clientId: client_id,
-        clientSecret: client_secret,
-        refreshToken: refreshtoken,
-        accessToken: access_token,
-      },
-    });
-    await transporter.sendMail({
-      from: "sender@allinadventures.com",
-      //to: "shihab.dgency@gmail.com",
-      to: `${retbody.info1.email}`,
-      bcc: "dgency.com@gmail.com",
-      subject: `Here's Your Job Application at All In Adventures`,
-      html: `
-        <p style="margin:4px 0p;x"> Dear ${retbody.info1.fName} ${retbody.info1.lName},</p>
-        <p style="margin:12px 0px;">This letter is to inform you that we received your job application. We appreciate you taking the time to apply.</p>
-        <p style="margin:12px 0px;">Once we have an opportunity to review the application and it aligns with one of our job openings, one of our team members will be in contact with you.</p>
-        <p style="margin:12px 0px;">Thank you again for the time you invested in your application.</p>
-        <p style="margin-top:16px; margin-bottom:1px;"><strong>Beth Palmer</strong> </p>
-        <p style="margin-top:1px; margin-bottom:1px;">Training and Development/Onboarding Manager</p>
-        <p style="margin-top:1px; margin-bottom:1px;"><a href="https://allinadventures.com">allinadventures.com</a> </p>
-        <p style="margin-top:12px; margin-bottom:0px;"><a href="mailto:careers@allinadventures.com">careers@allinadventures.com</a></p>
-        <p style="margin:12px 0px 0px 0px;">Please find your application attached.</p>
-     
-    `,
-      attachments: [
-        {
-          // utf-8 string as an attachment
-          path: outpath,
-        },
-      ],
-    });
-  } catch (error) {
-    emailErrors.applicantErr = error;
-    successItem.applicantSuccess = false;
-  }
-  // sending email to applicant=========================
-  fs.unlink(outpath, (err) => {
-    if (err) {
-      throw err;
-    }
 
-    // console.log("Delete File successfully.");
-  });
   // return res.status(500).json({ data: retbody,success:false,errors:error});
-  if (!successItem.aiaSuccess) {
+  if (!mailsend) {
+    emailErrors.pdfErr = "file created but mail not send";
     return res
       .status(500)
       .json({ data: retbody, success: false, errors: emailErrors });
   } else {
-    res
-      .status(200)
-      .json({
-        data: retbody,
-        allsuccess: successItem.applicantSuccess,
-        success: true,
-      });
+    res.status(200).json({
+      data: {
+        email: retbody.info1.email,
+        name: recname,
+        filepath: pdfRes.pdfpath,
+      },
+
+      success: true,
+    });
   }
 }
