@@ -7,6 +7,7 @@ import nodemailer from "nodemailer";
 import { google } from "googleapis";
 //import handlebars from "handlebars";
 import { creatPdfApplication } from "./creatPdfApplication";
+import { newPdfApp } from "./newPdfApp";
 
 const client_id = process.env.GS_CLIENT_ID;
 const client_secret = process.env.GS_CLIENT_SECRET;
@@ -95,8 +96,9 @@ export default async function jobApplicationHandler(req, res) {
 */
   // ============================pdf file======================================
 
-  const pdfRes = await creatPdfApplication(retbody);
+  const pdfRes = await newPdfApp(retbody);
   //const pdfRes = JSON.parse(pdfResResult);
+  /// console.log("pdfRes");
   // console.log(pdfRes);
   var emailErrors = {
     applicantErr: "",
@@ -135,8 +137,8 @@ export default async function jobApplicationHandler(req, res) {
       from: `"AIA Job Application"<${mailUser}>"`,
       //to: "shihab.dgency@gmail.com",
       to: `${mailReceiver}`,
-      bcc: `${mailReceiverBcc}`,
-      //  bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
+      //bcc: `${mailReceiverBcc}`,
+      bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
       subject: `Job Application - ${recname}`,
       html: `
               <p style="margin:4px 0px;"><strong>Name: </strong> ${retbody.info1.lName} ${retbody.info1.fName} </p>
@@ -173,7 +175,7 @@ export default async function jobApplicationHandler(req, res) {
       data: {
         email: retbody.info1.email,
         name: recname,
-        filepath: pdfRes.pdfpath,
+        filepath: pdfRes.pdfPath,
       },
 
       success: true,

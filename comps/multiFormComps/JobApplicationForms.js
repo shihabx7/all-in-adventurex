@@ -639,7 +639,7 @@ const JobApplicationForms = (props) => {
           setIsSend(false);
         } else {
           setIsSend(false);
-          console.log(recpResult.data);
+          //  console.log(recpResult.data);
           window.location.replace("/thank-you-career");
         }
       } else {
