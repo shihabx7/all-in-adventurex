@@ -599,7 +599,7 @@ const JobApplicationForms = (props) => {
           refinfo: references,
         };
         console.log(formData);
-        setIsSend(true);
+        setIsSend(false);
 
         const response = await fetch("/api/Forms/jobApplication", {
           method: "POST",
