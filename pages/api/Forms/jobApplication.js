@@ -23,8 +23,8 @@ export default async function jobApplicationHandler(req, res) {
 
   const retbody = req.body;
 
-  console.log("PDFDATA");
-  console.log(retbody);
+  //console.log("PDFDATA");
+  // console.log(retbody);
   // ============================pdf file
   /* var templateHtml = fs.readFileSync(
     path.join(process.cwd(), "pdf/pdfhtml.html"),

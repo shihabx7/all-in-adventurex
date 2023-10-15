@@ -33,14 +33,14 @@ export async function creatPdfApplication(pdfData) {
   var pdt = mn + "_" + dt.getDate() + "_" + dt.getFullYear();
   var pubdate = mn + "-" + dt.getDate() + "-" + dt.getFullYear();
   var d = new Date();
-  var fileTxtname =
+  /* var fileTxtname =
     pdfData.info1.fName.trim().split(" ").join("_") +
     "_" +
-    pdfData.info1.lName.trim().split(" ").join("_");
+    pdfData.info1.lName.trim().split(" ").join("_");*/
 
   var pdfnpath =
     "pdf/" +
-    fileTxtname +
+    "aia" +
     "_" +
     pdt +
     "_" +
