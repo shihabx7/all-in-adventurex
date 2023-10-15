@@ -33,11 +33,8 @@ export async function newPdfApp(pdfData) {
   });
 
   //helper
-
-  var templateHtml = fs.readFileSync(
-    path.join(process.cwd(), "pdf/pdfhtml.html"),
-    "utf8"
-  );
+  //path.join(process.cwd(), "../../../pdf/pdfhtml.html"),
+  var templateHtml = fs.readFileSync("../../../pdf/pdfhtml.html", "utf8");
   const template = handlebars.compile(templateHtml);
   var logo = fs.readFileSync(path.join(process.cwd(), "pdf/tik.jpg"), "base64");
 
@@ -77,6 +74,7 @@ export async function newPdfApp(pdfData) {
     ".pdf";
 
   var outpath = path.join(process.cwd(), pdfnpath);
+  // var outpath = "../../../" + pdfnpath;
 
   const htpData = {
     info: pdfData,
@@ -88,10 +86,10 @@ export async function newPdfApp(pdfData) {
   return new Promise((resolve) => {
     pdf.create(html, options).toFile(outpath, function (pdfErr, res) {
       if (pdfErr) {
-        resolve({ success: false, pdfPath: outpath });
+        resolve({ success: false, pdfPath: outpath, msg: pdfErr });
       } else {
-        //console.log("PDF created:", res);
-        resolve({ success: true, pdfPath: outpath });
+        console.log("PDF created:", res);
+        resolve({ success: true, pdfPath: outpath, msg: res });
       }
     });
   });

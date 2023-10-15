@@ -107,14 +107,12 @@ export default async function jobApplicationHandler(req, res) {
   };
   let mailsend = true;
   if (!pdfRes.success) {
-    return res
-      .status(500)
-      .json({
-        data: retbody,
-        success: false,
-        errors: emailErrors.pdfErr,
-        pdf: pdfRes,
-      });
+    return res.status(500).json({
+      data: retbody,
+      success: false,
+      errors: emailErrors.pdfErr,
+      pdf: pdfRes,
+    });
   }
 
   const { OAuth2 } = google.auth;
@@ -140,10 +138,10 @@ export default async function jobApplicationHandler(req, res) {
     });
     await transporter.sendMail({
       from: `"AIA Job Application"<${mailUser}>"`,
-      //to: "shihab.dgency@gmail.com",
-      to: `${mailReceiver}`,
+      to: "shihab.dgency@gmail.com",
+      // to: `${mailReceiver}`,
       //bcc: `${mailReceiverBcc}`,
-      bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
+      // bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
       subject: `Job Application - ${recname}`,
       html: `
               <p style="margin:4px 0px;"><strong>Name: </strong> ${retbody.info1.lName} ${retbody.info1.fName} </p>
