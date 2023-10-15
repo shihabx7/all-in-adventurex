@@ -98,8 +98,8 @@ export default async function jobApplicationHandler(req, res) {
 
   const pdfRes = await newPdfApp(retbody);
   //const pdfRes = JSON.parse(pdfResResult);
-  /// console.log("pdfRes");
-  // console.log(pdfRes);
+  console.log("pdfRes");
+  console.log(pdfRes);
   var emailErrors = {
     applicantErr: "",
     aiaErr: "",
@@ -109,7 +109,12 @@ export default async function jobApplicationHandler(req, res) {
   if (!pdfRes.success) {
     return res
       .status(500)
-      .json({ data: retbody, success: false, errors: emailErrors.pdfErr });
+      .json({
+        data: retbody,
+        success: false,
+        errors: emailErrors.pdfErr,
+        pdf: pdfRes,
+      });
   }
 
   const { OAuth2 } = google.auth;
