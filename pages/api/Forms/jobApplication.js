@@ -8,6 +8,7 @@ import { google } from "googleapis";
 //import handlebars from "handlebars";
 import { creatPdfApplication } from "./creatPdfApplication";
 import { newPdfApp } from "./newPdfApp";
+import { pdfPup } from "./pdfPup";
 
 const client_id = process.env.GS_CLIENT_ID;
 const client_secret = process.env.GS_CLIENT_SECRET;
@@ -96,7 +97,7 @@ export default async function jobApplicationHandler(req, res) {
 */
   // ============================pdf file======================================
 
-  const pdfRes = await newPdfApp(retbody);
+  const pdfRes = await pdfPup(retbody);
   //const pdfRes = JSON.parse(pdfResResult);
   console.log("pdfRes");
   console.log(pdfRes);
@@ -114,6 +115,7 @@ export default async function jobApplicationHandler(req, res) {
       pdf: pdfRes,
     });
   }
+  const pdfpath = pdfRes.pdfPath;
 
   const { OAuth2 } = google.auth;
 
@@ -138,10 +140,10 @@ export default async function jobApplicationHandler(req, res) {
     });
     await transporter.sendMail({
       from: `"AIA Job Application"<${mailUser}>"`,
-      to: "shihab.dgency@gmail.com",
-      // to: `${mailReceiver}`,
+      // to: "shihab.dgency@gmail.com",
+      to: `${mailReceiver}`,
       //bcc: `${mailReceiverBcc}`,
-      // bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
+      bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
       subject: `Job Application - ${recname}`,
       html: `
               <p style="margin:4px 0px;"><strong>Name: </strong> ${retbody.info1.lName} ${retbody.info1.fName} </p>
@@ -157,7 +159,7 @@ export default async function jobApplicationHandler(req, res) {
       attachments: [
         {
           // utf-8 string as an attachment
-          path: pdfRes.pdfpath,
+          path: pdfpath,
         },
       ],
     });

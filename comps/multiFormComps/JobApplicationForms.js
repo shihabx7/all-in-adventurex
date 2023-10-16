@@ -633,14 +633,15 @@ const JobApplicationForms = (props) => {
         const recpResult = await recpRes.json();
 
         if (!mailAllErr && !recpResult.success) {
+          //if (!mailAllErr) {
           alert(
             "Yor job application can't be sent at this moment. Send Your cv to carrer@allinadventures.com "
           );
           setIsSend(false);
         } else {
           setIsSend(false);
-          //  console.log(recpResult.data);
-          window.location.replace("/thank-you-career");
+          console.log(recpResult.data);
+          // window.location.replace("/thank-you-career");
         }
       } else {
         setFormStep(5);

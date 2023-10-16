@@ -4,19 +4,13 @@
     <meta charset="utf-8" />
     <title>AIA job application form</title>
 	<style>
-		html { zoom: 0.84; }
+		html { zoom: 0.64; }
 		body{
 			color:#232323;
-			font-size: 17px;
-			font-family: 'Roboto','Open Sans', 'Helvetica Neue', sans-serif;
-			/*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+			font-size: 16px;
+			/*font-family: 'Roboto','Open Sans', 'Helvetica Neue', sans-serif;*/
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
 			letter-spacing: 1;
-		}
-		.top-con{
-			
-			padding-top:80px;
-			padding-left:80px;
-			padding-right:80px;
 		}
 		p{
 			margin:2px 0px;
@@ -39,7 +33,7 @@
 		}
 		.sub-title{
 			margin-top: 10px;
-			font-size: 17px;
+			font-size: 15px;
 			color:#111111;
 			font-weight:600;
 		}
@@ -85,7 +79,7 @@
 		}
 		.tik-img{
 			
-			width:15px;
+			width:14px;
 		
 			display: inline-block;
 			
@@ -114,7 +108,7 @@
 		.tbl-head{
 			
 
-			font-size: 16px;
+			font-size: 15px;
 			font-weight: 600;
 		}
 		.bot-bor{
@@ -126,7 +120,7 @@
 			padding-bottom: 4px;
 		}
 		.edu-sub{
-			width: 198px;
+			width: 180px;
 		}
 		.tbl-row-ttl{
 			vertical-align: top;
@@ -134,9 +128,8 @@
 	</style>
   </head>
   <body>
-	<div class="body-container top-con"> 
 	<!-- ============Applicant info===============-->
-	<div class="container app-info ">
+	<div class="container app-info">
     	<h3 class="title">Applicant Information</h3>
 		<div class="app-row">
 			<p><b>Name:</b> {{info.info1.lName}} {{info.info1.fName}}</p>
@@ -277,7 +270,7 @@
 									<span class="tik-img"><img width="100%" src="data:image/png;base64,{{tik}}" alt="Logo" /></span> 
 									 <span class="mr-4">Christmas (week prior)</span>
 								</td>
-						{{/ifCond}}
+						{{/ifCond}} 
 						{{#ifCond info.avlinfo.avlToWork.cmo '&&' 'true'}}
 								<td class="pr-4">
 									<span class="tik-img"><img width="100%" src="data:image/png;base64,{{tik}}" alt="Logo" /></span> 
@@ -559,7 +552,7 @@
 	<div class="container app-reff mt">
     	<h3 class="title">Disclaimer & Signature</h3>
 		<!-- =================================Disclaimer & Signature=============-->
-		 <div class="app-row  mt-2" >
+		 <div class="app-row flex-row mt-2" >
 			<p>I certify that all information I have provided on this application is true, complete and correct.
 				 I understand that any information provided by me that is found to be false, incomplete or misrepresented in any respect,
 				  will be sufficient cause to cancel further consideration of this application, or immediately discharge me from employment
@@ -599,6 +592,5 @@
 		 
 		 
 	</div>
-</div>
   </body>
 </html>
