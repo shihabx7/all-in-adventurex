@@ -598,7 +598,7 @@ const JobApplicationForms = (props) => {
           expinfo: jobExp,
           refinfo: references,
         };
-        console.log(formData);
+        console.log("Data send " + formData);
         setIsSend(false);
 
         const response = await fetch("/api/Forms/jobApplication", {
@@ -621,7 +621,8 @@ const JobApplicationForms = (props) => {
         } else {
           recpData = clientRes.data;
         }
-        console.log(clientRes.data);
+
+        console.log("Data receive f1 " + clientRes.data);
         const recpRes = await fetch("/api/Forms/replayApplication", {
           method: "POST",
           headers: {

@@ -9,6 +9,7 @@ import { google } from "googleapis";
 import { creatPdfApplication } from "./creatPdfApplication";
 import { newPdfApp } from "./newPdfApp";
 import { pdfPup } from "./pdfPup";
+import { pdfPdfLib } from "./pdfPdfLib";
 
 const client_id = process.env.GS_CLIENT_ID;
 const client_secret = process.env.GS_CLIENT_SECRET;
@@ -97,7 +98,7 @@ export default async function jobApplicationHandler(req, res) {
 */
   // ============================pdf file======================================
 
-  const pdfRes = await pdfPup(retbody);
+  const pdfRes = await newPdfApp(retbody);
   //const pdfRes = JSON.parse(pdfResResult);
   console.log("pdfRes");
   console.log(pdfRes);
