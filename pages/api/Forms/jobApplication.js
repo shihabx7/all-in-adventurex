@@ -100,8 +100,8 @@ export default async function jobApplicationHandler(req, res) {
 
   const pdfRes = await creatPdfApplication(retbody);
   //const pdfRes = JSON.parse(pdfResResult);
-  console.log("pdfRes");
-  console.log(pdfRes);
+  // console.log("pdfRes");
+  // console.log(pdfRes);
   var emailErrors = {
     applicantErr: "",
     aiaErr: "",

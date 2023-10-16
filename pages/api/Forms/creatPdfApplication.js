@@ -40,7 +40,7 @@ export async function creatPdfApplication(pdfData) {
     const options = {
       format: "A4",
       orientation: "portrait",
-      border: "8mm",
+      border: "4mm",
       header: {
         height: "1mm",
         // contents: '<div style="text-align: center;">Header</div>',

@@ -598,7 +598,8 @@ const JobApplicationForms = (props) => {
           expinfo: jobExp,
           refinfo: references,
         };
-        console.log("Data send " + formData);
+        console.log("Data send ");
+        console.log(formData);
         setIsSend(false);
 
         const response = await fetch("/api/Forms/jobApplication", {
@@ -622,7 +623,8 @@ const JobApplicationForms = (props) => {
           recpData = clientRes.data;
         }
 
-        console.log("Data receive f1 " + clientRes.data);
+        console.log("Data sendto replay");
+        console.log(recpData);
         const recpRes = await fetch("/api/Forms/replayApplication", {
           method: "POST",
           headers: {
@@ -641,7 +643,7 @@ const JobApplicationForms = (props) => {
           setIsSend(false);
         } else {
           setIsSend(false);
-          console.log(recpResult.data);
+          console.log(recpResult);
           // window.location.replace("/thank-you-career");
         }
       } else {
