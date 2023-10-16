@@ -15,7 +15,7 @@ const mailAuthType = process.env.MAIL_AUTH_TYPE;
 export default async function replayApplication(req, res) {
   const recpData = req.body;
 
-  console.log(recpData);
+  // console.log(recpData);
   let mailsend = true;
   let mailErr = "";
   let flieDeletErr = false;
