@@ -98,7 +98,7 @@ export default async function jobApplicationHandler(req, res) {
 */
   // ============================pdf file======================================
 
-  const pdfRes = await newPdfApp(retbody);
+  const pdfRes = await pdfPup(retbody);
   //const pdfRes = JSON.parse(pdfResResult);
   console.log("pdfRes");
   console.log(pdfRes);
