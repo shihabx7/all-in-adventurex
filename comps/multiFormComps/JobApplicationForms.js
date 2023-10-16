@@ -8,6 +8,7 @@ import References from "./References";
 
 const JobApplicationForms = (props) => {
   const [formStep, setFormStep] = useState(0);
+  const [repErrMsg, setRepErrMsg] = useState(false);
 
   const [formName, setFormName] = useState("Applicant Information ");
   useEffect(() => {
@@ -598,9 +599,9 @@ const JobApplicationForms = (props) => {
           expinfo: jobExp,
           refinfo: references,
         };
-        console.log("Data send ");
-        console.log(formData);
-        setIsSend(false);
+        console.log("waiting to create pdf");
+        //  console.log(formData);
+        setIsSend(true);
 
         const response = await fetch("/api/Forms/jobApplication", {
           method: "POST",
@@ -623,8 +624,8 @@ const JobApplicationForms = (props) => {
           recpData = clientRes.data;
         }
 
-        console.log("Data sendto replay");
-        console.log(recpData);
+        console.log("waiting to send replay");
+        // console.log(recpData);
         const recpRes = await fetch("/api/Forms/replayApplication", {
           method: "POST",
           headers: {
@@ -636,15 +637,13 @@ const JobApplicationForms = (props) => {
         const recpResult = await recpRes.json();
 
         if (!mailAllErr && !recpResult.success) {
-          //if (!mailAllErr) {
-          alert(
-            "Yor job application can't be sent at this moment. Send Your cv to carrer@allinadventures.com "
-          );
           setIsSend(false);
+          setRepErrMsg(true);
         } else {
           setIsSend(false);
-          console.log(recpResult);
-          // window.location.replace("/thank-you-career");
+          setRepErrMsg(false);
+          // console.log(recpResult);
+          window.location.replace("/thank-you-career");
         }
       } else {
         setFormStep(5);
@@ -762,6 +761,19 @@ const JobApplicationForms = (props) => {
         {isSend == true && (
           <div className="btn-back px-6 py-2 md:text-lg rounded bg-red-600 hover:bg-red-700  text-white w-[170px]">
             <div className="loader font-medium">Submitting</div>
+          </div>
+        )}
+        {repErrMsg && (
+          <div className="mt-4 md:mt-6">
+            <p className="text-sm text-red-700">
+              Yor job application can't be sent at this moment. Send Your
+              Application to
+              <a href="carrer@allinadventures.com">
+                <span className="font-medium underline text-[#212121]">
+                  carrer@allinadventures.com
+                </span>
+              </a>
+            </p>
           </div>
         )}
       </div>

@@ -62,10 +62,10 @@ export async function creatPdfApplication(pdfData) {
       type: "pdf",
     };
     await pdf.create(document, options);
-    console.log("PDF generated successfully. PDF path:", outpath);
+    // console.log("PDF generated successfully. PDF path:", outpath);
     return { success: true, pdfPath: outpath };
   } catch (error) {
-    console.error("Error generating PDF:", error);
+    // console.error("Error generating PDF:", error);
     return { success: false, error: error.message };
   }
 }
