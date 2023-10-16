@@ -34,7 +34,10 @@ export async function newPdfApp(pdfData) {
 
   //helper
   //path.join(process.cwd(), "../../../pdf/pdfhtml.html"),
-  var templateHtml = fs.readFileSync("../../../pdf/pdfhtml.html", "utf8");
+  var templateHtml = fs.readFileSync(
+    path.join(process.cwd(), "pdf/pdfhtml.html"),
+    "utf8"
+  );
   const template = handlebars.compile(templateHtml);
   var logo = fs.readFileSync(path.join(process.cwd(), "pdf/tik.jpg"), "base64");
 
