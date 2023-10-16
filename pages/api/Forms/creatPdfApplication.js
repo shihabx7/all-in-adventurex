@@ -48,6 +48,11 @@ export async function creatPdfApplication(pdfData) {
       footer: {
         height: "1mm",
       },
+      childProcessOptions: {
+        env: {
+          OPENSSL_CONF: "/dev/null",
+        },
+      },
     };
 
     const document = {
