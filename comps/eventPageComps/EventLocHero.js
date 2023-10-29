@@ -1,6 +1,40 @@
 import Script from "next/script";
+import LocationHours from "../locationsPage/LocationHours";
+import { FiX } from "react-icons/fi";
+import { FaAngleDown } from "react-icons/fa";
+import TitleWithSubTitle from "../util/TitleWithSubTitle";
+import { useState, useEffect, useRef } from "react";
 
 const EventLocHero = (props) => {
+  const [showHours, setShowHours] = useState(false);
+  const hourref = useRef();
+  const closeHourDetails = () => {
+    setShowHours(false);
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.remove("overflow-hidden");
+  };
+  const showHourDetails = () => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.add("overflow-hidden");
+
+    setShowHours(true);
+  };
+
+  useEffect(() => {
+    const checkIfClickedOutsidehrs = (e) => {
+      if (showHours && hourref.current && !hourref.current.contains(e.target)) {
+        setShowHours(false);
+        const body = document.getElementsByTagName("body")[0];
+        body.classList.remove("overflow-hidden");
+      }
+    };
+
+    document.addEventListener("mouseup", checkIfClickedOutsidehrs);
+
+    return () => {
+      document.removeEventListener("mouseup", checkIfClickedOutsidehrs);
+    };
+  }, [showHours]);
   const bookAll = (bookingData) => {
     FH.open({
       shortname: bookingData.shortname,
@@ -23,8 +57,36 @@ const EventLocHero = (props) => {
 
   return (
     <>
-      {" "}
       <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
+      {props.locdetail && showHours && (
+        <div className="overflow-y-scroll h-screen w-screen bg-[rgba(0,0,0,0.8)] z-[1000000] top-0 left-0  pb-10 md:pb-0 fixed">
+          <div className="max-w-[1024px] mx-auto px-3 md:px-6 lg:px-4 relative">
+            <div
+              onClick={closeHourDetails}
+              id="lochourclose"
+              className="location-close-box flex justify-end pt-1 px-2 md:px-4 text-gray-400 text-xl md:text-2xl lg:text-3xl absolute top-[-50px] right-[4px] md:top-[-70px] xl:top-[-60px] xl:right-[-40px]"
+            >
+              <span className="inline-block p-1 border-2 border-red-600 text-red-600 rounded-full cursor-pointer hover:border-light-gold hover:text-gold">
+                <FiX />
+              </span>
+            </div>
+            <div
+              ref={hourref}
+              className="bg-[#FFF7E9] pt-5 lg:pt-8 mt-[60px] md:top-[80px] lg:mt-[92px] border-2 border-[#CA9342]"
+            >
+              <div>
+                <TitleWithSubTitle
+                  title="All in adventure"
+                  mall={props.pagedata.locationaddress}
+                  city={props.pagedata.locationcity}
+                  state={props.pagedata.locationstate}
+                />
+              </div>
+              <LocationHours locdetail={props.locdetail} />
+            </div>
+          </div>
+        </div>
+      )}
       <div
         className="home-hero"
         style={{
@@ -38,7 +100,7 @@ const EventLocHero = (props) => {
               alt={props.pagedata.coverimageM_alt}
             ></img>
           </div>
-          <div className="max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-[100px] md:py-20 lg:py-32 xl:py-40 relative z-20">
+          <div className="max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-[130px] md:py-20 lg:py-32 xl:py-40 relative z-50">
             <div className="page-benar-info">
               {props.pagedata.publish_status == false && (
                 <div className="text-center font-bold text-red-600 text-[32px] md:text-[52px] font-os cm-title py-4">
@@ -109,7 +171,7 @@ const EventLocHero = (props) => {
             {props.gametotal != "not" && <div className="mb-6"> </div>}
 
             {props.gametotal != "not" && (
-              <div className="game-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[90%] md:max-w-3xl mx-auto bottom-[-66px] md:bottom-[-8%] left-0 right-0 absolute bg-white px-0 py-4 md:py-4 md:px-4 lg:py-6  rounded">
+              <div className="game-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[90%] md:max-w-3xl mx-auto bottom-[-20%] md:bottom-[-16%] left-0 right-0 absolute bg-white px-0 py-4 md:py-4 md:px-4 lg:py-6  rounded">
                 <div className="flex flex-wrap w-full justify-center md:grid md:grid-cols-5  md:justify-evenly items-center ">
                   {props.pagedata.totalUniqueGames && (
                     <div className="text-center w-[33%] md:w-auto">
@@ -168,6 +230,26 @@ const EventLocHero = (props) => {
                     </div>
                   )}
                 </div>
+                {/*============location hours info ==========*/}
+                <div className="show-hours-btn details flex items-center justify-center mt-6 md:mt-8">
+                  <div className="shb-container text-center ">
+                    <button
+                      onClick={showHourDetails}
+                      className="mx-auto px-6 py-2 md:py-3 text-[15px] md:text-[16px] flex items-center space-x-2 text-red-600 border-2 border-gold rounded-full font-medium"
+                    >
+                      <span>STORE DETAILS</span>
+                      <span className="text-xl mt-[1px]">
+                        <FaAngleDown />
+                      </span>
+                    </button>
+
+                    <p className="text-[#464646] text-sm md:text-base mt-2">
+                      See open hours, direction and phone
+                    </p>
+                  </div>
+                </div>
+
+                {/*============location hours info ==========*/}
               </div>
             )}
           </div>

@@ -41,7 +41,7 @@ export default async function couponFormHandler(req, res) {
     const info = await transporter.sendMail({
       from: '"AIA Coupon" <sender@allinadventures.com>',
       to: "sales@allinadventures.com",
-
+      replyTo: retData.Email,
       bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
       subject: `Deals and Coupon Subscriber`,
       html: `

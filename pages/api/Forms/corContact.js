@@ -43,6 +43,7 @@ export default async function corContactHandler(req, res) {
       from: '"AIA Corporate Contact" <sender@allinadventures.com>', // sender address
       to: "support@allinadventures.com", // list of receivers
       bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
+      replyTo: retData.Email,
       subject: `Corporate Contact`,
       html: `
                 <p><strong>Name: </strong> ${retData.Name}</p>

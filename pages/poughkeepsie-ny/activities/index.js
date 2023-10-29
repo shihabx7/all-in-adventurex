@@ -39,7 +39,10 @@ const LocActivity = (props) => {
 
         {/* =======header content and breadcum======== end */}
         {/* ===========Page Content here========= */}
-        <GameLocHero pagedata={props.pagedata} />
+        <GameLocHero
+          pagedata={props.pagedata}
+          locdetail={props.pagedata.locdetail}
+        />
         <GameLocList
           publish={props.pagedata.publish_status}
           activitylist={props.activitylist}

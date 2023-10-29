@@ -12,6 +12,7 @@ import EventList from "../../comps/activitiyPageComps/EventList";
 import EventContact from "../../comps/eventPageComps/EventContact";
 import WebForm from "../../comps/eventPageComps/Webform";
 import Seofields from "../../comps/util/SeoFields";
+import EventRootList from "../../comps/activitiyPageComps/EventRootList";
 
 const showAllevents = (props) => {
   const toTitleCase = (title) => {
@@ -67,7 +68,7 @@ const showAllevents = (props) => {
         {/* =======breadcum content and breadcum root page template======== end */}
 
         <EventHero pagedata={props.pagedata} />
-        <EventList events={props.events} />
+        <EventRootList events={props.events} />
         <EventContact
           locationlist={props.locationlist}
           eventlist={props.eventlist}

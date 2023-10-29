@@ -77,6 +77,92 @@ export const getLocationsPageData = () => {
                 close: "6 pm",
               },
             ],
+
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Veterans Day",
+                date: " 11/10/2023",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black Friday",
+                date: "11/24/2023",
+                open: "10 am",
+                close: "9 pm",
+              },
+              {
+                holiday_name: "Christmas Eve",
+                date: "12/24/2023",
+                open: "9 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "12/25/2023",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "New Year's Eve",
+                date: "12/31/2023",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New Year's Day",
+                date: "01/01/24",
+                open: "10 am",
+                close: "5 pm",
+              },
+            ],
           },
           {
             id: 2,
@@ -138,6 +224,91 @@ export const getLocationsPageData = () => {
                 day: "sunday",
                 open: "11 am",
                 close: "6 pm",
+              },
+            ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Veterans Day",
+                date: " 11/10/2023",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black Friday",
+                date: "11/24/2023",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas Eve",
+                date: "12/24/2023",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "12/25/2023",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "New Year's Eve",
+                date: "12/31/2023",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New Year's Day",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
               },
             ],
           },
@@ -203,6 +374,92 @@ export const getLocationsPageData = () => {
                 close: "6 pm",
               },
             ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+
+            holiday_hours: [
+              {
+                holiday_name: "Veterans Day",
+                date: " 11/10/2023",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black Friday",
+                date: "11/24/2023",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas Eve",
+                date: "12/24/2023",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "12/25/2023",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New Year's Eve",
+                date: "12/31/2023",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New Year's Day",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
+              },
+            ],
           },
           {
             id: 4,
@@ -264,6 +521,91 @@ export const getLocationsPageData = () => {
                 day: "sunday",
                 open: "11 am",
                 close: "6 pm",
+              },
+            ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Veterans Day",
+                date: " 11/10/2023",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black Friday",
+                date: "11/24/2023",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas Eve",
+                date: "12/24/2023",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "12/25/2023",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New Year's Eve",
+                date: "12/31/2023",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New Year's Day",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
               },
             ],
           },
@@ -330,6 +672,91 @@ export const getLocationsPageData = () => {
                 close: "6 pm",
               },
             ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Veterans Day",
+                date: " 11/10/2023",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black Friday",
+                date: "11/24/2023",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas Eve",
+                date: "12/24/2023",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "12/25/2023",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New Year's Eve",
+                date: "12/31/2023",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New Year's Day",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
+              },
+            ],
           },
           {
             id: 6,
@@ -393,6 +820,91 @@ export const getLocationsPageData = () => {
                 close: "7 pm",
               },
             ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Veterans Day",
+                date: " 11/10/2023",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black Friday",
+                date: "11/24/2023",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas Eve",
+                date: "12/24/2023",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "12/25/2023",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New Year's Eve",
+                date: "12/31/2023",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New Year's Day",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
+              },
+            ],
           },
           {
             id: 7,
@@ -453,6 +965,91 @@ export const getLocationsPageData = () => {
                 day: "sunday",
                 open: "11 am",
                 close: "6 pm",
+              },
+            ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Veterans Day",
+                date: " 11/10/2023",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black Friday",
+                date: "11/24/2023",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas Eve",
+                date: "12/24/2023",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "12/25/2023",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New Year's Eve",
+                date: "12/31/2023",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New Year's Day",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
               },
             ],
           },
@@ -528,6 +1125,91 @@ export const getLocationsPageData = () => {
                 close: "6 pm",
               },
             ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Veterans Day",
+                date: " 11/10/2023",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black Friday",
+                date: "11/24/2023",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas Eve",
+                date: "12/24/2023",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "12/25/2023",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New Year's Eve",
+                date: "12/31/2023",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New Year's Day",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
+              },
+            ],
           },
         ],
       },
@@ -601,6 +1283,91 @@ export const getLocationsPageData = () => {
                 close: "6 pm",
               },
             ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Veterans Day",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black friday ",
+                date: "11/24/23",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas eve",
+                date: "12/24/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years eve",
+                date: "31/12/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
+              },
+            ],
           },
           {
             id: 2,
@@ -663,6 +1430,91 @@ export const getLocationsPageData = () => {
                 day: "sunday",
                 open: "12:30 pm",
                 close: "6 pm",
+              },
+            ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Veterans Day",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black friday ",
+                date: "11/24/23",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas eve",
+                date: "12/24/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years eve",
+                date: "31/12/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
               },
             ],
           },
@@ -731,6 +1583,91 @@ export const getLocationsPageData = () => {
                 close: "6 pm",
               },
             ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Veterans Day",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black friday ",
+                date: "11/24/23",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas eve",
+                date: "12/24/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years eve",
+                date: "31/12/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
+              },
+            ],
           },
           {
             id: 4,
@@ -792,6 +1729,91 @@ export const getLocationsPageData = () => {
                 day: "sunday",
                 open: "11 am",
                 close: "6 pm",
+              },
+            ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Veterans Day",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black friday ",
+                date: "11/24/23",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas eve",
+                date: "12/24/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years eve",
+                date: "31/12/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
               },
             ],
           },
@@ -868,6 +1890,91 @@ export const getLocationsPageData = () => {
                 close: "6 pm",
               },
             ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Veterans Day",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black friday ",
+                date: "11/24/23",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas eve",
+                date: "12/24/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years eve",
+                date: "31/12/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
+              },
+            ],
           },
           {
             id: 2,
@@ -930,6 +2037,91 @@ export const getLocationsPageData = () => {
                 day: "sunday",
                 open: "12 pm",
                 close: "6 pm",
+              },
+            ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Veterans Day",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black friday ",
+                date: "11/24/23",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas eve",
+                date: "12/24/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years eve",
+                date: "31/12/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
               },
             ],
           },
@@ -1069,6 +2261,91 @@ export const getLocationsPageData = () => {
                 close: "6 pm",
               },
             ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Veterans Day",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black friday ",
+                date: "11/24/23",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas eve",
+                date: "12/24/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years eve",
+                date: "31/12/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
+              },
+            ],
           },
         ],
       },
@@ -1141,6 +2418,91 @@ export const getLocationsPageData = () => {
                 close: "6 pm",
               },
             ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Veterans Day",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black friday ",
+                date: "11/24/23",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas eve",
+                date: "12/24/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years eve",
+                date: "31/12/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
+              },
+            ],
           },
           {
             id: 2,
@@ -1203,6 +2565,91 @@ export const getLocationsPageData = () => {
                 day: "sunday",
                 open: "12 pm",
                 close: "6 pm",
+              },
+            ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Veterans Day",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black friday ",
+                date: "11/24/23",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas eve",
+                date: "12/24/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years eve",
+                date: "31/12/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
               },
             ],
           },
@@ -1277,6 +2724,91 @@ export const getLocationsPageData = () => {
                 close: "6 pm",
               },
             ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Veterans Day",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black friday ",
+                date: "11/24/23",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas eve",
+                date: "12/24/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years eve",
+                date: "31/12/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
+              },
+            ],
           },
           {
             id: 2,
@@ -1339,6 +2871,91 @@ export const getLocationsPageData = () => {
                 day: "sunday",
                 open: "11 am",
                 close: "6 pm",
+              },
+            ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Veterans Day",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black friday ",
+                date: "11/24/23",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas eve",
+                date: "12/24/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years eve",
+                date: "31/12/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
               },
             ],
           },
@@ -1404,6 +3021,91 @@ export const getLocationsPageData = () => {
                 day: "sunday",
                 open: "12 pm",
                 close: "6 pm",
+              },
+            ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Veterans Day",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black friday ",
+                date: "11/24/23",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas eve",
+                date: "12/24/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years eve",
+                date: "31/12/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
               },
             ],
           },
@@ -1482,6 +3184,91 @@ export const getLocationsPageData = () => {
                 close: "6 pm",
               },
             ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Veterans Day",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black friday ",
+                date: "11/24/23",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas eve",
+                date: "12/24/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years eve",
+                date: "31/12/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
+              },
+            ],
           },
         ],
       },
@@ -1553,6 +3340,91 @@ export const getLocationsPageData = () => {
                 day: "sunday",
                 open: "11 am",
                 close: "7 pm",
+              },
+            ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Veterans Day",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black friday ",
+                date: "11/24/23",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas eve",
+                date: "12/24/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years eve",
+                date: "31/12/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
               },
             ],
           },
@@ -1628,6 +3500,91 @@ export const getLocationsPageData = () => {
                 day: "sunday",
                 open: "12 pm",
                 close: "6 pm",
+              },
+            ],
+            special_hours: {
+              start_date: "11/24/23",
+              end_date: "12/10/23",
+              hours: [
+                {
+                  day: "monday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "tuesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "wednesday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "thursday",
+                  open: "10 am",
+                  close: "8 pm",
+                },
+                {
+                  day: "friday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "saturday",
+                  open: "10 am",
+                  close: "9 pm",
+                },
+                {
+                  day: "sunday",
+                  open: "11 am",
+                  close: "6 pm",
+                },
+              ],
+            },
+            holiday_hours: [
+              {
+                holiday_name: "Thanksgiving",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Christmas",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Veterans Day",
+                date: "11/23/23",
+                open: "",
+                close: "",
+              },
+              {
+                holiday_name: "Black friday ",
+                date: "11/24/23",
+                open: "7 am",
+                close: "10:30 pm",
+              },
+              {
+                holiday_name: "Christmas eve",
+                date: "12/24/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years eve",
+                date: "31/12/23",
+                open: "11 am",
+                close: "5 pm",
+              },
+              {
+                holiday_name: "New years",
+                date: "01/01/24",
+                open: "11 am",
+                close: "5 pm",
               },
             ],
           },

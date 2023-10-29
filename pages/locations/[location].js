@@ -95,6 +95,7 @@ const location = (props) => {
         <LocationHomeHero
           pagedata={props.pagedata}
           activitylist={props.activitylist}
+          locdetail={props.pagedata.locdetail}
         />
         <HowToPlay
           city={props.pagedata.locationcity}

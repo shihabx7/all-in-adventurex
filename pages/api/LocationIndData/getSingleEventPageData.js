@@ -2024,6 +2024,7 @@ export const getSingleEventPageData = (eventslug, locationslug) => {
         flow: bookinglist["party-package"].flow,
         eventstatus: bookinglist["party-package"].eventstatus,
       },
+      locdetail: getLocSpec(locationslug),
     },
     eventdata: eventlocdata[eventslug].eventdata,
 

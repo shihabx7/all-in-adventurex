@@ -5,6 +5,18 @@ import { getLocationActivitySlugList } from "./getLocationActivitySlugList";
 import { getLocationEventSlugList } from "./getLocationEventSlugList";
 import { getLocTotal } from "../AllDataList/getLocTotal";
 export const getLocationSingleActivitypageData = (gameslug, locationslug) => {
+  const locData = getLocationsPageData();
+  const getLocSpec = (slug) => {
+    var i = 0;
+    var j = 0;
+    for (i = 0; i < locData.states.length; i++) {
+      for (j = 0; j < locData.states[i].cities.length; j++) {
+        if (locData.states[i].cities[j].slug == slug) {
+          return locData.states[i].cities[j];
+        }
+      }
+    }
+  };
   const activitiesName = gameslug.toString().split("-").join(" ");
   const locationname = locationslug.toString().split("-").join(" ");
 
@@ -178,6 +190,7 @@ export const getLocationSingleActivitypageData = (gameslug, locationslug) => {
         flow: eventbookinglist["party-package"].flow,
         eventstatus: eventbookinglist["party-package"].eventstatus,
       },
+      locdetail: getLocSpec(locationslug),
     },
     activitydata: activityDataset[gameslug].activitydata,
     activitygallery: activityDataset[gameslug].activitygallery,

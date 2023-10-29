@@ -1,4 +1,5 @@
 import LocActivity from "../../albany-ny/activities";
+import { getLocationsPageData } from "../getLocationsPageData";
 import { bookingList } from "./bookingList";
 import { getLocationActivitySlugList } from "./getLocationActivitySlugList";
 import { getLocationEventSlugList } from "./getLocationEventSlugList";
@@ -6,6 +7,19 @@ import { getTotal } from "../AllDataList/getTotal";
 import { getLocTotal } from "../AllDataList/getLocTotal";
 
 export const getLocationIndActivityList = (slug) => {
+  const locData = getLocationsPageData();
+  const getLocSpec = (locslug) => {
+    var i = 0;
+    var j = 0;
+    for (i = 0; i < locData.states.length; i++) {
+      for (j = 0; j < locData.states[i].cities.length; j++) {
+        if (locData.states[i].cities[j].slug == locslug) {
+          return locData.states[i].cities[j];
+        }
+      }
+    }
+  };
+
   const locationName = () => {
     var locname = slug.split("-").join(", ");
     return locname;
@@ -171,6 +185,7 @@ export const getLocationIndActivityList = (slug) => {
         flow: bookingAll["party-package"].flow,
         eventstatus: bookingAll["party-package"].eventstatus,
       },
+      locdetail: getLocSpec(slug),
     },
 
     activity_list: LocActivityData[slug].activity_list,

@@ -117,7 +117,7 @@ const LocationHours = (props) => {
 
       <div className="loc-hrs-tbl flex flex-col  md:flex-row border-y border-[#D2C6AA]">
         <div className="loc-tb-hrs md:min-w-[32%] lg:min-w-[30%]">
-          <div className="pt-2 pb-1 px-0 md:px-2 md:py-3 lg:px-4 tbl-h border-b border-[#D2C6AA]">
+          <div className="pt-2 pb-2 px-2 md:px-2 md:py-3 lg:px-4 tbl-h border-b border-[#D2C6AA]">
             <h3 className="text-[#232323] font-medium lg:text-lg">
               Typical Business Hours
             </h3>
@@ -125,7 +125,7 @@ const LocationHours = (props) => {
               Actual hours may vary occasionally
             </p>
           </div>
-          <div className="tbl-cont px-0 md:px-1 lg:px-2 py-2 ">
+          <div className="tbl-cont px-2 md:px-1 lg:px-2 py-2 ">
             {props.locdetail.hours && (
               <table className="bhour-row table-auto border-collapse  text-[#464646] w-full">
                 <tbody>
@@ -161,7 +161,7 @@ const LocationHours = (props) => {
           </div>
         </div>
         <div className="loc-tb-hrs md:border-x border-[#D2C6AA] md:min-w-[32%] lg:min-w-[30%]">
-          <div className="pt-2 pb-1 px-0 md:px-2 md:py-3 lg:px-4 tbl-h border-t md:border-t-0 border-b border-[#D2C6AA]">
+          <div className="pt-2 pb-2 px-2 md:px-2 md:py-3 lg:px-4 tbl-h border-t md:border-t-0 border-b border-[#D2C6AA]">
             <h3 className="text-[#232323] font-medium lg:text-lg">
               Special Hours
             </h3>
@@ -176,7 +176,7 @@ const LocationHours = (props) => {
               </p>
             )}
           </div>
-          <div className="tbl-cont px-0 md:px-1 lg:px-2 py-2 ">
+          <div className="tbl-cont px-2 md:px-1 lg:px-2 py-2 ">
             {props.locdetail.special_hours ? (
               <table className="bhour-row table-auto border-collapse  text-[#464646] w-full">
                 <tbody>
@@ -243,7 +243,7 @@ const LocationHours = (props) => {
           </div>
         </div>
         <div className="loc-tb-hrs md:min-w-[32%] lg:min-w-[40%]">
-          <div className="pt-2 pb-1 px-0 md:px-2 md:py-3 lg:px-4 tbl-h border-t md:border-t-0 border-b border-[#D2C6AA]">
+          <div className="pt-2 pb-2 px-2 md:px-2 md:py-3 lg:px-4 tbl-h border-t md:border-t-0 border-b border-[#D2C6AA]">
             <h3 className="text-[#232323] font-medium lg:text-lg">
               Holiday Hours
             </h3>
@@ -251,7 +251,7 @@ const LocationHours = (props) => {
               Actual hours may vary occasionally
             </p>
           </div>
-          <div className="tbl-cont px-0 md:px-1 lg:px-2 py-2 ">
+          <div className="tbl-cont px-2 md:px-1 lg:px-2 py-2 ">
             {props.locdetail.holiday_hours ? (
               <table className="bhour-row table-auto border-collapse  text-[#464646] w-full">
                 <tbody>
@@ -263,20 +263,20 @@ const LocationHours = (props) => {
                     <td className=" px-2 py-1 font-medium">Open</td>
                     <td className=" px-2 py-1 font-medium">Close</td>
                   </tr>
-                  {props.locdetail.holiday_hours.hours.map((holiday, index) => {
+                  {props.locdetail.holiday_hours.map((holiday, index) => {
                     return (
                       <tr key={index}>
-                        <td className="  capitalize px-2 py-1">
-                          {holiday.name}
+                        <td className="  capitalize px-2 py-1 text-xs md:text-sm lg:text-base">
+                          {holiday.holiday_name}
                         </td>
-                        <td className="  capitalize px-2 py-1">
+                        <td className="  capitalize px-2 py-1 text-xs md:text-sm lg:text-base">
                           {holiday.date}
                         </td>
-                        <td className="px-2 py-1 ">
-                          {holiday.open ? holiday.open : "-"}
+                        <td className="px-2 py-1 text-xs md:text-sm lg:text-base">
+                          {holiday.open ? holiday.open : "Closed"}
                         </td>
-                        <td className="px-2 py-1  ">
-                          {holiday.close ? holiday.close : "Close"}
+                        <td className="px-2 py-1 text-xs md:text-sm lg:text-base ">
+                          {holiday.close ? holiday.close : "-"}
                         </td>
                       </tr>
                     );
