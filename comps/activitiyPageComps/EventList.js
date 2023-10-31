@@ -19,7 +19,7 @@ const EventList = (props) => {
   };
   return (
     <div
-      className="all-events relative bg-center bg-cover  md:pt-8 lg:pt-12"
+      className="all-events relative bg-center bg-cover  md:pt-8 lg:pt-12 z-20"
       style={{ backgroundImage: "url('/assets/game-dt-bg.jpg')" }}
     >
       <div className="w-full absolute top-0 left-0 ">

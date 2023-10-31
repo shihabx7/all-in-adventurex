@@ -235,7 +235,7 @@ const EventLocHero = (props) => {
                   <div className="shb-container text-center ">
                     <button
                       onClick={showHourDetails}
-                      className="mx-auto px-6 py-2 md:py-3 text-[15px] md:text-[16px] flex items-center space-x-2 text-red-600 border-2 border-gold rounded-full font-medium"
+                      className="mx-auto px-6 py-2 md:py-3 text-[15px] md:text-[16px] flex items-center space-x-2 text-red-600 border-2 border-gold hover:text-red-700 hover:border-red-700 transition duration-350 ease-in-out rounded-full font-medium"
                     >
                       <span>STORE DETAILS</span>
                       <span className="text-xl mt-[1px]">
