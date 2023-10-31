@@ -76,10 +76,10 @@ const EventLocHero = (props) => {
             >
               <div>
                 <TitleWithSubTitle
-                  title="All in adventure"
-                  mall={props.pagedata.locationaddress}
-                  city={props.pagedata.locationcity}
-                  state={props.pagedata.locationstate}
+                  title="All in adventures"
+                  mall={props.pagedata.mall}
+                  city={props.pagedata.city}
+                  state={props.pagedata.state}
                 />
               </div>
               <LocationHours locdetail={props.locdetail} />
@@ -100,7 +100,7 @@ const EventLocHero = (props) => {
               alt={props.pagedata.coverimageM_alt}
             ></img>
           </div>
-          <div className="max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-[130px] md:py-20 lg:py-32 xl:py-40 relative z-50">
+          <div className="max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-[130px] md:py-20 lg:py-32 xl:py-40 relative z-30">
             <div className="page-benar-info">
               {props.pagedata.publish_status == false && (
                 <div className="text-center font-bold text-red-600 text-[32px] md:text-[52px] font-os cm-title py-4">

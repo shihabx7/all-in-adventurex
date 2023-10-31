@@ -126,6 +126,10 @@ export const getLocationsEventList = (locationslug) => {
 
     return capmall;
   };
+  const getState = (locslug) => {
+    var stArr = locslug.split("-");
+    return stArr[stArr.length - 1].toUpperCase();
+  };
   // ===============seo fields end
 
   const eventsData = {
@@ -200,6 +204,8 @@ export const getLocationsEventList = (locationslug) => {
       publish_status: getLocTotal(locationslug).publish_status,
       location_name: locnameMod(locationslug),
       mall: getLocSpec(locationslug).mall,
+      city: getLocSpec(locationslug).city,
+      state: getState(locationslug),
       pagesubtitle:
         "Celebrate any special event at All In Adventures escape rooms in " +
         locnameMod(locationslug) +

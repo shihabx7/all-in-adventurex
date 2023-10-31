@@ -76,10 +76,10 @@ const GameLocHero = (props) => {
             >
               <div>
                 <TitleWithSubTitle
-                  title="All in adventure"
-                  mall={props.pagedata.locationaddress}
-                  city={props.pagedata.locationcity}
-                  state={props.pagedata.locationstate}
+                  title="All in adventures"
+                  mall={props.pagedata.mall}
+                  city={props.pagedata.city}
+                  state={props.pagedata.state}
                 />
               </div>
               <LocationHours locdetail={props.locdetail} />

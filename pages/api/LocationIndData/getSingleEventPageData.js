@@ -1971,6 +1971,10 @@ export const getSingleEventPageData = (eventslug, locationslug) => {
 
     return str.replaceAll("MALL", capmall);
   };
+  const getState = (locslug) => {
+    var stArr = locslug.split("-");
+    return stArr[stArr.length - 1].toUpperCase();
+  };
   // SEO FUNCTION end===========
   // return page data  events data
   const eventData = {
@@ -2001,6 +2005,8 @@ export const getSingleEventPageData = (eventslug, locationslug) => {
       event_slug: eventslug,
       locationslug: locationslug,
       mall: getLocSpec(locationslug).mall,
+      city: getLocSpec(locationslug).city,
+      state: getState(locationslug),
       location_name: locnameMod(locationslug),
       location_serach_name: getLocationSearchName(locationslug),
       slug: eventslug,

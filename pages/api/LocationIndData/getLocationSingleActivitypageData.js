@@ -120,6 +120,10 @@ export const getLocationSingleActivitypageData = (gameslug, locationslug) => {
 
     return str.replaceAll("MALL", capmall);
   };
+  const getState = (locslug) => {
+    var stArr = locslug.split("-");
+    return stArr[stArr.length - 1].toUpperCase();
+  };
   // SEO FUNCTION end===========
   const activityData = {
     //"pagemeta":activityDataset[gameslug].pagemeta,
@@ -164,6 +168,9 @@ export const getLocationSingleActivitypageData = (gameslug, locationslug) => {
       location_name: locnameMod(locationslug),
       location_serach_name: getLocationSearchName(locationslug),
       mall: malldata.pagedata.mall,
+      city: getLocSpec(locationslug).city,
+      state: getState(locationslug),
+      mall: getLocSpec(locationslug).mall,
       price: activityDataset[gameslug].price,
       duration: activityDataset[gameslug].duration,
       max_players: activityGuest[locationslug][gameslug].max_players,

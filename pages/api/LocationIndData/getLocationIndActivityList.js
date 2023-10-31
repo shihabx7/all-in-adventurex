@@ -91,6 +91,10 @@ export const getLocationIndActivityList = (slug) => {
 
     return capstr.join(" ");
   };
+  const getState = (locslug) => {
+    var stArr = locslug.split("-");
+    return stArr[stArr.length - 1].toUpperCase();
+  };
   const capMall = (mall) => {
     var mallArr = mall.split(" ");
     var appArr = ["to", "at", "in", "for", "of", "it", "a", "an"];
@@ -160,7 +164,9 @@ export const getLocationIndActivityList = (slug) => {
         "ALL ESCAPE ROOMS AND ADVENTURE ACTIVITIES IN " + locnameMod(slug),
       location_name: locnameMod(slug),
       locationslug: slug,
-      mall: LocActivityData[slug].mall,
+      city: getLocSpec(slug).city,
+      state: getState(slug),
+      mall: capMall(LocActivityData[slug].mall),
       publish_status: getLocTotal(slug).publish_status,
       pagesubtitle:
         "Play the top " +
