@@ -128,7 +128,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -158,7 +158,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "10 am",
                 close: "5 pm",
               },
@@ -276,7 +276,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -306,7 +306,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -425,7 +425,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -455,7 +455,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -573,7 +573,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -603,7 +603,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -722,7 +722,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -752,7 +752,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -870,7 +870,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -900,7 +900,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "10 am",
                 close: "8 pm",
               },
@@ -1017,7 +1017,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -1047,7 +1047,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -1175,7 +1175,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -1205,7 +1205,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -1333,7 +1333,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -1363,7 +1363,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -1482,7 +1482,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -1512,7 +1512,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -1633,7 +1633,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -1663,7 +1663,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -1781,7 +1781,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -1811,7 +1811,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -1940,7 +1940,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -1970,7 +1970,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -2089,7 +2089,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -2119,7 +2119,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -2311,7 +2311,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -2341,7 +2341,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -2468,7 +2468,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -2498,7 +2498,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -2611,19 +2611,19 @@ export const getLocationsPageData = () => {
             holiday_hours: [
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
               {
                 holiday_name: "Christmas",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
               {
                 holiday_name: "Veterans Day",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -2647,7 +2647,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New years",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -2774,7 +2774,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -2804,7 +2804,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -2923,7 +2923,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -2953,7 +2953,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -3073,7 +3073,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -3103,7 +3103,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -3234,7 +3234,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -3264,7 +3264,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -3392,7 +3392,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -3422,7 +3422,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "5 pm",
               },
@@ -3552,7 +3552,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Thanksgiving",
-                date: "11/23/23",
+                date: "11/23/2023",
                 open: "",
                 close: "",
               },
@@ -3582,7 +3582,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "New Year's Day",
-                date: "01/01/24",
+                date: "01/01/2024",
                 open: "11 am",
                 close: "8 pm",
               },

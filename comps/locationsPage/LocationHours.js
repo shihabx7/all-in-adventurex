@@ -242,7 +242,7 @@ const LocationHours = (props) => {
             )}
           </div>
                 </div>*/}
-        <div className="loc-tb-hrs md:min-w-[56%] md:border-l border-[#D2C6AA]">
+        <div className="loc-tb-hrs md:min-w-[54%] md:border-l border-[#D2C6AA]">
           <div className="pt-2 pb-2 px-2 md:px-2 md:py-3 lg:px-4 tbl-h border-t md:border-t-0 border-b border-[#D2C6AA]">
             <h3 className="text-[#232323] font-medium lg:text-lg">
               Holiday Hours

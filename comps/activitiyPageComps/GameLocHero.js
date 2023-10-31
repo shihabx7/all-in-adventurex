@@ -104,7 +104,7 @@ const GameLocHero = (props) => {
               }
             ></img>
           </div>
-          <div className="max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-[130px] md:pt-20 md:pb-28 lg:py-32 xl:py-36 relative z-30">
+          <div className="max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-[130px] md:pt-20 md:pb-28 lg:py-32 xl:py-36 relative z-40">
             <div className="page-benar-info">
               {props.pagedata.publish_status == false && (
                 <div className="text-center font-bold text-red-600 text-[32px] md:text-[52px] font-os cm-title py-4">
@@ -402,7 +402,7 @@ const GameLocHero = (props) => {
                     </button>
 
                     <p className="text-[#464646] text-sm md:text-base mt-2">
-                      See open hours, direction and phone
+                      See open hours, direction and contact details
                     </p>
                   </div>
                 </div>

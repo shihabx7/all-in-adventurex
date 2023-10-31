@@ -100,7 +100,7 @@ const LocationHomeHero = (props) => {
             >
               <div>
                 <TitleWithSubTitle
-                  title="All in adventure"
+                  title="All in adventures"
                   mall={props.pagedata.locationaddress}
                   city={props.pagedata.locationcity}
                   state={props.pagedata.locationstate}
@@ -241,7 +241,7 @@ const LocationHomeHero = (props) => {
                   </button>
 
                   <p className="text-[#464646] text-sm md:text-base mt-2">
-                    See open hours, direction and phone
+                    See open hours, direction and contact details
                   </p>
                 </div>
               </div>

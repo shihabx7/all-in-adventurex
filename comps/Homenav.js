@@ -64,7 +64,7 @@ const Homenav = (props) => {
         </div>
       }
 
-      <header id="header" className="bg-coffee w-full z-50">
+      <header id="header" className="bg-coffee w-full ">
         <div id="header-container-s" className="header-container-s">
           {/*<HeaderNotice/>*/}
           <div
@@ -189,7 +189,7 @@ const Homenav = (props) => {
 
             <div
               id="submenu-holder"
-              className="submenu-holder absolute md:top-full right-0 z-40  w-full md:w-auto"
+              className="submenu-holder absolute md:top-full right-0 z-[100]  w-full md:w-auto"
             >
               {showMe && props.locationslug && (
                 <SubMenu
