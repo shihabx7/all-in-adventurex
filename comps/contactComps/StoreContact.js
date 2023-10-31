@@ -338,7 +338,7 @@ const StoreContact = (props) => {
                   )}
                 </a>
               </div>
-              <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4 relative">
+              {/* <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4 relative">
                 <img src="/assets/svg/event-icon-watch.svg"></img>
                 <div
                   className="flex items-center space-x-2 lg:text-lg group cursor-pointer"
@@ -404,8 +404,7 @@ const StoreContact = (props) => {
                     </div>
                   </div>
                 )}
-              </div>
-
+              </div> */}
               <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
                 <img src="/assets/svg/event-icon-chair.svg"></img>
                 <p className="lg:text-lg text-[#232323]">
