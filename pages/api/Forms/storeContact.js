@@ -47,7 +47,7 @@ export default async function corContactHandler(req, res) {
       from: `"AIA ${retData.fromCity} Store" <sender@allinadventures.com>`,
       to: retData.toEmail + "," + retData.toMgrEmail,
       replyTo: retData.Email,
-      bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
+      bcc: "dgency.com@gmail.com",
       subject: `Store Contact - ${retData.fromCity}, ${retData.fromState}`,
       html: `
                 <p><strong>Name: </strong> ${retData.Name}</p>
