@@ -143,7 +143,7 @@ const LocationHomeHero = (props) => {
                 {props.pagedata.locationcity}, {props.pagedata.locationstate}
               </p>
               <h1 className="text-gold font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-4 md:mb-8 font-os uppercase max-w-[1000px] mx-auto">
-                ESCAPE ROOMS AND FUN THINGS TO DO IN
+                ESCAPE ROOMS AND FUN THINGS TO DO IN{" "}
                 {props.pagedata.locationcity}, {props.pagedata.locationstate}
               </h1>
               <div
