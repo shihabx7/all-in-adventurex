@@ -286,9 +286,9 @@ const StoreContact = (props) => {
             </p>
           </div>
         </div>
-        <div className="c-contact-box flex flex-col md:flex-row md:space-x-6 lg:space-x-12 justify-between">
+        <div className="c-contact-box flex flex-col md:flex-row md:space-x-1 lg:space-x-12 justify-between items-center">
           {/*=========================================================contact details============================ */}
-          <div className="c-form-info md:w-[44%] lg:w-[38%] order-2 md:order-1 px-4 lg:px-0">
+          <div className="c-form-info md:w-[43%] lg:w-[44%] order-2 md:order-1 px-4 lg:px-0">
             <h3 className="golden-text font-os font-bold mt-8 md:mt-0 text-2xl lg:text-3xl mb-2 lg:mb-4 uppercase">
               OUR FACILITIES
             </h3>
@@ -298,8 +298,8 @@ const StoreContact = (props) => {
               fun and unique way. Come join us to create exciting memories with
               your group.
             </p>
-            <div className="c-contact-info-list mt-6 lg:mt-8 ">
-              <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
+            <div className="c-contact-info-list mt-4 lg:mt-2 ">
+              <div className="c-contact-item px-2  lg:px-4 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
                 <img src="/assets/svg/event-icon-phone.svg"></img>
                 <a
                   href={"tel:" + props.contactdata.phone}
@@ -308,7 +308,7 @@ const StoreContact = (props) => {
                   {props.contactdata.phone}
                 </a>
               </div>
-              <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
+              <div className="c-contact-item px-2  lg:px-4 py-2 lg:py-3  flex items-center space-x-3 lg:space-x-4">
                 <img src="/assets/svg/event-icon-email.svg"></img>
                 <a
                   href={"mailto:" + props.contactdata.email.toLowerCase()}
@@ -317,7 +317,7 @@ const StoreContact = (props) => {
                   {props.contactdata.email}
                 </a>
               </div>
-              <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-t border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
+              <div className="c-contact-item px-2  lg:px-4 py-2 lg:py-3 border-t border-b border-[#D2C6AA] flex items-start space-x-3 lg:space-x-4">
                 <img src="/assets/svg/event-icon-pin.svg"></img>
                 <a
                   target="_blank"
@@ -327,7 +327,7 @@ const StoreContact = (props) => {
                     props.contactdata.city,
                     props.contactdata.zip
                   )}
-                  className="lg:text-lg text-[#232323] block hover:text-blue-700 max-w-[300px]"
+                  className="lg:text-lg text-[#232323] block hover:text-blue-700 "
                 >
                   <span className="text-blue-600 font-medium">Direction: </span>
                   {getAddress(
@@ -338,93 +338,206 @@ const StoreContact = (props) => {
                   )}
                 </a>
               </div>
-              {/* <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4 relative">
-                <img src="/assets/svg/event-icon-watch.svg"></img>
-                <div
-                  className="flex items-center space-x-2 lg:text-lg group cursor-pointer"
-                  onClick={() => {
-                    setShowHours(true);
-                  }}
-                >
-                  <p className="text-[#1B823A]">Open Hours</p>
-                  <p className="flex items-center space-x-2 group-hover:text-red-700">
-                    View Local Time{" "}
-                    <span>
-                      <FiChevronDown />
-                    </span>{" "}
-                  </p>
-                </div>
-                {showHour && (
-                  <div className="bhour-list absolute top-[-10px] right-0 shadow-md bg-[#FFF9EB] drop-shadow">
-                    <div className="relative p-3">
-                      <div className="map-h-notice mb-2">
-                        <p className="font-medium text-sm md:text-base text-[#222222]">
-                          Typical Business Hours
-                        </p>
-                        <p className="text-sm text-[#464646]">
-                          Actual hours may vary occasionally
-                        </p>
-                      </div>
-                      <button
-                        onClick={() => setShowHours(false)}
-                        className="closeHour p-1 bg-gold text-[#424242] absolute -top-3 -right-3"
-                      >
-                        <FiX />
-                      </button>
-                      <table className="bhour-row table-auto border-collapse border border-[#CB9443] text-[#464646]">
-                        <tbody>
-                          <tr>
-                            <td className=" border-b border-[#CB9443] capitalize px-2 py-1 font-medium">
-                              Day
-                            </td>
-                            <td className=" border-b border-[#CB9443] px-2 py-1 font-medium">
-                              Open
-                            </td>
-                            <td className=" border-b border-[#CB9443] px-2 py-1 font-medium">
-                              Close
-                            </td>
-                          </tr>
-                          {props.contactdata.hours.map((hours, index) => {
-                            return (
-                              <tr key={index}>
-                                <td className=" border-b border-[#CB9443] capitalize px-2 py-1">
-                                  {hours.day}
-                                </td>
-                                <td className="px-2 py-1 border-b border-[#CB9443]">
-                                  {hours.open}
-                                </td>
-                                <td className="px-2 py-1 border-b border-[#CB9443]">
-                                  {hours.close}
-                                </td>
-                              </tr>
-                            );
-                          })}
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                )}
-              </div> */}
-              <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
+
+              <div className="c-contact-item px-2  lg:px-4 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
                 <img src="/assets/svg/event-icon-chair.svg"></img>
                 <p className="lg:text-lg text-[#232323]">
                   Wheelchair Accessibility
                 </p>
               </div>
-            </div>
-            <div className="mt-8">
-              <p className="text-[#464646] mb-4">
-                {props.contactdata.entry_guid}
-              </p>
-              <p className="text-[#464646]">
-                We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo,
-                Zelle, Cash App and in some locations Apple Pay and Samsung Pay.
-              </p>
+              {/*========== std business hours=========== */}
+              <div className="loc-tb-hrs">
+                <div className="pt-2 pb-2 px-2 md:px-2 md:py-3 lg:px-4 tbl-h border-b border-[#D2C6AA]">
+                  <h3 className="text-[#232323] font-medium lg:text-lg">
+                    Standard Business Hours
+                  </h3>
+                  <p className="font-thin text-sm lg:text-base">
+                    Hours may vary sometimes
+                  </p>
+                </div>
+                <div className="tbl-cont px-2 md:px-1 lg:px-2 py-2 ">
+                  {props.contactdata.hours && (
+                    <table className="bhour-row table-auto border-collapse  text-[#464646] w-full">
+                      <tbody>
+                        <tr>
+                          <td className=" capitalize px-2 py-1 font-medium text-sm lg:text-base">
+                            Day
+                          </td>
+                          <td className=" px-2 py-1 font-medium text-sm lg:text-base">
+                            Open
+                          </td>
+                          <td className=" px-2 py-1 font-medium text-sm lg:text-base">
+                            Close
+                          </td>
+                        </tr>
+                        {props.contactdata.hours.map((hours, index) => {
+                          return (
+                            <tr key={index}>
+                              <td className="capitalize px-2 py-1 text-sm lg:text-base">
+                                {hours.day}
+                              </td>
+                              <td className="px-2 py-1 text-sm lg:text-base">
+                                {hours.open}
+                              </td>
+                              <td className="px-2 py-1 text-sm lg:text-base ">
+                                {hours.close}
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                  )}
+                </div>
+              </div>
+              {/*========== std business hours end=========== */}
+              {/*========== holiday business hours=========== */}
+              <div className="loc-tb-hrs md:min-w-[54%] md:border-y border-[#D2C6AA]">
+                <div className="pt-2 pb-2 px-2 md:px-2 md:py-3 lg:px-4 tbl-h border-t md:border-t-0 border-b border-[#D2C6AA]">
+                  <h3 className="text-[#232323] font-medium lg:text-lg">
+                    Holiday Hours
+                  </h3>
+                  <p className="font-thin text-sm lg:text-base">
+                    Hours may vary sometimes
+                  </p>
+                </div>
+                <div className="tbl-cont px-2 md:px-1 lg:px-2 py-2 ">
+                  {props.contactdata.holiday_hours ? (
+                    <table className="bhour-row table-auto border-collapse  text-[#464646] w-full">
+                      <tbody>
+                        <tr>
+                          <td className=" capitalize px-2 py-1 font-medium">
+                            Holyday
+                          </td>
+                          <td className=" capitalize px-2 py-1 font-medium">
+                            Date
+                          </td>
+                          <td className=" px-2 py-1 font-medium">Open</td>
+                          <td className=" px-2 py-1 font-medium">Close</td>
+                        </tr>
+                        {props.contactdata.holiday_hours.map(
+                          (holiday, index) => {
+                            return (
+                              <tr key={index}>
+                                <td className="  capitalize px-2 py-1 text-xs md:text-sm lg:text-base">
+                                  {holiday.holiday_name}
+                                </td>
+                                <td className="  capitalize px-2 py-1 text-xs md:text-sm lg:text-base">
+                                  {holiday.date}
+                                </td>
+                                <td className="px-2 py-1 text-xs md:text-sm lg:text-base">
+                                  {holiday.open ? holiday.open : "Closed"}
+                                </td>
+                                <td className="px-2 py-1 text-xs md:text-sm lg:text-base ">
+                                  {holiday.close ? holiday.close : "-"}
+                                </td>
+                              </tr>
+                            );
+                          }
+                        )}
+                      </tbody>
+                    </table>
+                  ) : (
+                    <table className="bhour-row table-auto border-collapse  text-[#464646] w-full">
+                      <tbody>
+                        <tr>
+                          <td className=" capitalize pl-2 py-1 font-medium text-sm lg:text-base">
+                            Holyday
+                          </td>
+                          <td className=" capitalize px-2 py-1 font-medium text-sm lg:text-base">
+                            Date
+                          </td>
+                          <td className=" px-2 py-1 font-medium text-sm lg:text-base">
+                            Open
+                          </td>
+                          <td className=" px-2 py-1 font-medium text-sm lg:text-base">
+                            Close
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td className="  capitalize pl-2 py-1 text-sm lg:text-base">
+                            Thanksgiving
+                          </td>
+                          <td className="px-2 py-1 text-xs md:text-sm lg:text-base">
+                            11/23/23
+                          </td>
+                          <td className="px-2 py-1 text-xs md:text-sm lg:text-base">
+                            --
+                          </td>
+                          <td className="px-2 py-1 text-xs md:text-sm lg:text-base">
+                            Close
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td className="  capitalize pl-2 py-1 text-sm lg:text-base">
+                            Christmas Eve
+                          </td>
+                          <td className="px-2 py-1 text-xs md:text-sm lg:text-base">
+                            12/24/23
+                          </td>
+                          <td className="px-2 py-1 text-xs md:text-sm lg:text-base">
+                            11am - 5pm
+                          </td>
+                          <td className="px-2 py-1 text-xs md:text-sm lg:text-base">
+                            --
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td className="  capitalize pl-2 py-1 text-sm lg:text-base">
+                            Christmas Day
+                          </td>
+                          <td className="px-2 py-1 text-xs md:text-sm lg:text-base">
+                            11/23/23
+                          </td>
+                          <td className="px-2 py-1 text-xs md:text-sm lg:text-base">
+                            --
+                          </td>
+                          <td className="px-2 py-1  text-xs md:text-sm lg:text-base">
+                            Close
+                          </td>
+                        </tr>
+                        <tr>
+                          <td className="  capitalize pl-2 py-1 text-sm lg:text-base">
+                            New Year's Eve{" "}
+                          </td>
+                          <td className="px-2 py-1 text-xs md:text-sm lg:text-base">
+                            12/31/23
+                          </td>
+                          <td className="px-2 py-1 text-xs md:text-sm lg:text-base">
+                            11am - 5pm
+                          </td>
+                          <td className="px-2 py-1 text-xs md:text-sm lg:text-base">
+                            --
+                          </td>
+                        </tr>
+                        <tr>
+                          <td className="  capitalize pl-2 py-1 text-sm lg:text-base">
+                            New Year's Day
+                          </td>
+                          <td className="px-2 py-1 text-xs md:text-sm lg:text-base">
+                            01/01/24
+                          </td>
+                          <td className="px-2 py-1 text-xs md:text-sm lg:text-base">
+                            11am - 5pm
+                          </td>
+                          <td className="px-2 py-1 text-xs md:text-sm lg:text-base">
+                            --
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  )}
+                </div>
+              </div>
+              {/*========== holiday business hours end=========== */}
             </div>
           </div>
           {/*=========================================================contact details============================ */}
           {/*========================  contact form=======================*/}
-          <div className="c-form-form md:w-[62%] lg:w-[60%] order-1 md:order-2">
+          <div className="c-form-form md:w-[57%] lg:w-[56%] order-1 md:order-2 pr-0 md:pr-4">
             <div className="bg-[#F4E6C3] py-8 px-4 lg:p-8 rounded-lg drop-shadow">
               <form onSubmit={(event) => submitForm(event)}>
                 {/*========================  contact form row first name = last name=======================*/}
@@ -586,13 +699,22 @@ const StoreContact = (props) => {
                 {/*======================================contact form button====================== */}
               </form>
             </div>
+            <div className="px-4 mt-6 lg:mt-10">
+              <p className="text-[#464646] mb-4 lg:text-lg">
+                {props.contactdata.entry_guid}
+              </p>
+              <p className="text-[#464646] lg:text-lg">
+                We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo,
+                Zelle, Cash App and in some locations Apple Pay and Samsung Pay.
+              </p>
+            </div>
           </div>
           {/*======================== corporate contact form=======================*/}
         </div>
         {/* location map map */}
-        <div className="location-spc-map drop-shadow-md border-2 border-gold max-w-[1040px] mx-auto mt-12 rounded">
+        <div className="location-spc-map drop-shadow-md border-2 border-gold max-w-7xl mx-auto mt-12 rounded">
           {isPgLoaded && (
-            <div className="emb-map w-full  h-[400px] md:h-[600px]">
+            <div className="emb-map w-full  h-[400px] md:h-[440px] lg:h-[540px]">
               <LocationMap
                 position={props.contactdata.position}
                 place_id={props.contactdata.place_id}
