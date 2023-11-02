@@ -42,7 +42,7 @@ export default async function replayApplication(req, res) {
       },
     });
     await transporter.sendMail({
-      from: `"AIA Adventures Career "<${mailUser}>"`,
+      from: `"AIA Career "<${mailUser}>"`,
       //to: "shihab.dgency@gmail.com",
       to: `${recpData.email}`,
       bcc: "dgency.com@gmail.com",
