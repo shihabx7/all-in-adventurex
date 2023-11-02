@@ -184,6 +184,7 @@ export const getLocationIndActivityList = (slug) => {
       coverimageM_alt: "All escape rooms and adventure activities",
       bookingall: {
         shortname: bookingAll.shortname,
+        flow: bookingAll.flow,
       },
       eventbooking: {
         shortname: bookingAll.shortname,

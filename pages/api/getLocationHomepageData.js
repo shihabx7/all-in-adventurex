@@ -159,6 +159,7 @@ export const getLocationHomepageData = (locationslug) => {
       coverimageM_alt: locPagedata[locationslug].coverimageM_alt,
       bookingall: {
         shortname: bookingGame.shortname,
+        flow: bookingGame.flow,
       },
       locdetail: getLocSpec(locationslug),
     },

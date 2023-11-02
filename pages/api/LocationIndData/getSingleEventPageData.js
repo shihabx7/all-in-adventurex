@@ -2023,6 +2023,7 @@ export const getSingleEventPageData = (eventslug, locationslug) => {
 
       bookingall: {
         shortname: bookinglist.shortname,
+        flow: bookinglist.flow,
       },
       eventbooking: {
         shortname: bookinglist.shortname,

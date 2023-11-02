@@ -221,6 +221,7 @@ export const getLocationsEventList = (locationslug) => {
       coverimageM_alt: "Escape room parties events and spacial occasions",
       bookingall: {
         shortname: bookinglist.shortname,
+        flow: bookinglist.flow,
       },
       eventbooking: {
         shortname: bookinglist.shortname,

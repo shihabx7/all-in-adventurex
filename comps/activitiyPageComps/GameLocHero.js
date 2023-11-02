@@ -9,11 +9,12 @@ const GameLocHero = (props) => {
   const [showHours, setShowHours] = useState(false);
   const hourref = useRef();
   const bookAll = (bookingData) => {
+    console.log(bookingData);
     FH.open({
       shortname: bookingData.shortname,
       fallback: "simple",
       fullItems: "yes",
-      // flow:  bookingData.flow,
+      flow: bookingData.flow,
       view: "items",
     });
   };
@@ -58,6 +59,7 @@ const GameLocHero = (props) => {
   return (
     <>
       <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
+      {/* ?autolightframe=yes*/}
       {props.locdetail && showHours && (
         <div className="overflow-y-scroll h-screen w-screen bg-[rgba(0,0,0,0.8)] z-[1000000] top-0 left-0  pb-10 md:pb-0 fixed">
           <div className="max-w-[1024px] mx-auto px-3 md:px-6 lg:px-4 relative">

@@ -22,7 +22,7 @@ const blist = {
   //===================================albany-ny===========
   "albany-ny": {
     shortname: "mysteryroom-albany",
-
+    flow: "17838",
     "escape-from-alcatraz": {
       active: true,
       item: "44609",
@@ -91,6 +91,7 @@ const blist = {
   //===================================buffalo-ny===========
   "buffalo-ny": {
     shortname: "mysteryroom-buffalo",
+    flow: "17840",
 
     "escape-from-alcatraz": {
       active: true,
@@ -160,7 +161,7 @@ const blist = {
   //===================================middletown-ny===========
   "middletown-ny": {
     shortname: "mysteryroom-middletown",
-
+    flow: "17844",
     "escape-from-alcatraz": {
       active: true,
       item: "44759",
@@ -241,7 +242,7 @@ const blist = {
   //===================================syracuse-ny===========
   "syracuse-ny": {
     shortname: "mysteryroom-syracuse",
-
+    flow: "17847",
     "escape-from-alcatraz": {
       active: true,
       item: "44853",
@@ -326,7 +327,7 @@ const blist = {
   //===================================watertown-ny===========
   "watertown-ny": {
     shortname: "mysteryroom-watertown",
-
+    flow: "17848",
     "escape-from-alcatraz": {
       active: true,
       item: "44796",
@@ -395,7 +396,7 @@ const blist = {
   //===================================west-nyack-ny===========
   "west-nyack-ny": {
     shortname: "mysteryroom-westnyack",
-
+    flow: "17849",
     "escape-from-alcatraz": {
       active: true,
       item: "44539",
@@ -465,7 +466,7 @@ const blist = {
   //===================================poughkeepsie-ny===========
   "poughkeepsie-ny": {
     shortname: "allinadventures-poughkeepsie",
-
+    flow: "365583",
     "escape-from-alcatraz": {
       active: true,
       item: "224037",
@@ -544,7 +545,7 @@ const blist = {
   //===================================raleigh-nc===========
   "raleigh-nc": {
     shortname: "allinadventures-raleigh",
-
+    flow: "16807",
     "escape-from-alcatraz": {
       active: true,
       item: "53870",
@@ -607,7 +608,7 @@ const blist = {
   //===================================bensalem-pa===========
   "bensalem-pa": {
     shortname: "allinadventures-bensalem",
-
+    flow: "19822",
     "escape-from-alcatraz": {
       active: true,
       item: "54868",
@@ -679,7 +680,7 @@ const blist = {
   //===================================hadley-ma===========
   "hadley-ma": {
     shortname: "allinadventures-hadley",
-
+    flow: "15424",
     "escape-from-alcatraz": {
       active: true,
       item: "49949",
@@ -748,7 +749,7 @@ const blist = {
   //===================================holyoke-ma===========
   "holyoke-ma": {
     shortname: "allinadventures-holyoke",
-
+    flow: "15419",
     "escape-from-alcatraz": {
       active: true,
       item: "51210",
@@ -807,7 +808,7 @@ const blist = {
   //===================================kingston-ma===========
   "kingston-ma": {
     shortname: "mysteryroom-kingston",
-
+    flow: "17841",
     "escape-from-alcatraz": {
       active: true,
       item: "44587",
@@ -876,7 +877,7 @@ const blist = {
   //===================================n-attleborough-ma===========
   "n-attleborough-ma": {
     shortname: "mysteryroom-attleboro",
-
+    flow: "17846",
     "escape-from-alcatraz": {
       active: true,
       item: "44779",
@@ -946,7 +947,7 @@ const blist = {
   //===================================austin-tx===========
   "austin-tx": {
     shortname: "mysteryroom-austin",
-
+    flow: "17839",
     "escape-from-alcatraz": {
       item: "44198",
       flow: "17839",
@@ -1036,7 +1037,7 @@ const blist = {
   //===================================milford-ct===========
   "milford-ct": {
     shortname: "mysteryroom-milford",
-
+    flow: "2018",
     "escape-from-alcatraz": {
       active: true,
       item: "44820",
@@ -1096,7 +1097,7 @@ const blist = {
   //===================================manchester-ct===========
   "manchester-ct": {
     shortname: "allinadventures-manchester",
-
+    flow: "1750",
     "escape-from-alcatraz": {
       active: true,
       item: "54562",
@@ -1164,7 +1165,7 @@ const blist = {
   //===================================waterbury-ct===========
   "waterbury-ct": {
     shortname: "allinadventures-waterbury",
-
+    flow: "751",
     "escape-from-alcatraz": {
       active: true,
       item: "54883",
@@ -1236,7 +1237,7 @@ const blist = {
   //===================================rockaway-nj===========
   "woodbridge-nj": {
     shortname: "allinadventures-woodbridge",
-
+    flow: "16814",
     "escape-from-alcatraz": {
       active: true,
       item: "55030",
@@ -1305,7 +1306,7 @@ const blist = {
   //===================================east-brunswick-nj==========
   "rockaway-nj": {
     shortname: "mysteryroom-rockaway",
-
+    flow: "17098",
     "escape-from-alcatraz": {
       active: true,
       item: "44839",
@@ -1376,7 +1377,7 @@ const blist = {
   //===================================woodbridge-nj==========
   "east-brunswick-nj": {
     shortname: "allinadventures-east-brunswick-nj",
-
+    flow: "29545",
     "escape-from-alcatraz": {
       active: true,
       item: "177623",
@@ -1440,7 +1441,7 @@ const blist = {
   //===================================bowie-md===========
   "bowie-md": {
     shortname: "allinadventures-bowie",
-
+    flow: "17839",
     "escape-from-alcatraz": {
       active: true,
       item: "104494",
@@ -1505,7 +1506,7 @@ const blist = {
   //===================================white-marsh-md==========
   "white-marsh-md": {
     shortname: "allinadventures-whitemarsh",
-
+    flow: "14683",
     "escape-from-alcatraz": {
       active: true,
       item: "53750",
@@ -1575,7 +1576,7 @@ const blist = {
   //===================================roanoke-va==========
   "roanoke-va": {
     shortname: "allinadventures-roanoke",
-
+    flow: "5835",
     "escape-from-alcatraz": {
       active: true,
       item: "54385",
@@ -1647,7 +1648,7 @@ const blist = {
   //===================================lawrenceville-ga==========
   "lawrenceville-ga": {
     shortname: "mysteryroom-lawrenceville",
-
+    flow: "17843",
     "escape-from-alcatraz": {
       active: true,
       item: "415147",
@@ -1716,7 +1717,7 @@ const blist = {
   //===================================columbus-oh==========
   "columbus-oh": {
     shortname: "allinadventures-columbus-oh",
-
+    flow: "16809",
     "escape-from-alcatraz": {
       active: true,
       item: "55169",
@@ -1766,7 +1767,7 @@ const blist = {
   //===================================mentor-oh==========
   "mentor-oh": {
     shortname: "allinadventures-mentor",
-
+    flow: "16802",
     "escape-from-alcatraz": {
       active: true,
       item: "53871",
@@ -1832,7 +1833,7 @@ const blist = {
   //===================================dayton-oh==========
   "dayton-oh": {
     shortname: "allinadventures-dayton",
-
+    flow: "7366",
     "escape-from-alcatraz": {
       active: true,
       item: "55209",

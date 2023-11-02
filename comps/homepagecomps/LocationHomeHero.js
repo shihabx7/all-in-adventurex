@@ -14,7 +14,7 @@ const LocationHomeHero = (props) => {
       shortname: bookingData.shortname,
       fallback: "simple",
       fullItems: "yes",
-      // flow:  bookingData.flow,
+      flow: bookingData.flow,
       view: "items",
     });
   };
