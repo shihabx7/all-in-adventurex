@@ -9,7 +9,6 @@ const GameLocHero = (props) => {
   const [showHours, setShowHours] = useState(false);
   const hourref = useRef();
   const bookAll = (bookingData) => {
-    console.log(bookingData);
     FH.open({
       shortname: bookingData.shortname,
       fallback: "simple",
