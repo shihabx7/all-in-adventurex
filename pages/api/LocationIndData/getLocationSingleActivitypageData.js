@@ -2931,7 +2931,7 @@ const activityGuest = {
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure": {
-      max_players: "12",
+      max_players: "15",
       min_players: "2",
     },
     //============================================superheros-adventure end3
@@ -2968,7 +2968,7 @@ const activityGuest = {
 
     //============================================black-ops 10
     "black-ops": {
-      max_players: "10",
+      max_players: "12",
       min_players: "2",
     },
     //============================================black-ops 10
@@ -3107,7 +3107,7 @@ const activityGuest = {
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
     "sherlocks-library": {
-      max_players: "8",
+      max_players: "10",
       min_players: "2",
     },
     //============================================hollywood-premiere 7
@@ -3177,7 +3177,7 @@ const activityGuest = {
     //============================================beat-the-seat end 17
     //============================================axe-throwing 16
     "axe-throwing": {
-      max_players: 4,
+      max_players: 56,
       min_players: 2,
       pagesubtitle:
         "Come throw axes at our exciting interactive targets with your friends and family! Test your hand-eye coordination and see if you can hit a bull's eye. We can accommodate up to 64 players on the 16 lanes.",
@@ -3234,7 +3234,7 @@ const activityGuest = {
 
     //============================================axe-throwing 16
     "axe-throwing": {
-      max_players: 4,
+      max_players: 24,
       min_players: 2,
     },
     //============================================axe-throwing end 16
@@ -3514,7 +3514,7 @@ const activityGuest = {
     //============================================black-ops 10
     //============================================lost-in-the-jungle 11
     "lost-in-the-jungle": {
-      max_players: 4,
+      max_players: 5,
       min_players: 2,
     },
     //============================================lost-in-the-jungle end 11
