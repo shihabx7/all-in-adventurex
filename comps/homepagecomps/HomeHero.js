@@ -4,6 +4,7 @@ const HomeHero = (props) => {
     <div className="home-hero-holder relative">
       <div className="homehero-img md:hidden w-full min-h-[280px] bg-[#000000]">
         <img
+          className="w-full"
           alt="allinadventures escape room home "
           src="/assets/gn-mobile-hero/allinadventures-escape-room-home-hero.jpg"
         ></img>
