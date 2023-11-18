@@ -228,16 +228,19 @@ const GameLocList = (props) => {
                                 {activity.max_player < 2
                                   ? "Guest "
                                   : "Team Size "}
+                                {activity.min_player == activity.max_player
+                                  ? activity.min_player
+                                  : activity.min_player +
+                                    "-" +
+                                    activity.max_player +
+                                    "  "}
                               </>
                             )}
-                            {activity.groupcat && <>Guests Per Lane </>}
-
-                            {activity.min_player == activity.max_player
-                              ? activity.min_player
-                              : activity.min_player +
-                                "-" +
-                                activity.max_player +
-                                "  "}
+                            {activity.groupcat && (
+                              <>
+                                {activity.groupcat + " " + activity.max_player}
+                              </>
+                            )}
                           </span>
                         </p>
                       </div>

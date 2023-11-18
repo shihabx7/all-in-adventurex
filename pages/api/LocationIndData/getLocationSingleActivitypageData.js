@@ -2568,7 +2568,7 @@ const activityDataset = {
     duration: 60,
     max_players: 4,
     min_players: 2,
-    groupcat: "Per Lane",
+    groupcat: "Guest Capacity",
     private_events: "YES",
     age: "13-99",
     coverimageL:
@@ -3107,7 +3107,7 @@ const activityGuest = {
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
     "sherlocks-library": {
-      max_players: "10",
+      max_players: "8",
       min_players: "2",
     },
     //============================================hollywood-premiere 7
@@ -3501,7 +3501,7 @@ const activityGuest = {
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
-      max_players: "8",
+      max_players: "6",
       min_players: "2",
     },
     //============================================houdinis-magic-cell 8
@@ -4203,7 +4203,7 @@ const activityGuest = {
 
     //============================================sherlocks-library 7
     "sherlocks-library": {
-      max_players: "8",
+      max_players: "10",
       min_players: "2",
     },
     //============================================hollywood-premiere 7

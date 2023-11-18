@@ -209,18 +209,19 @@ const GameList = (props) => {
                                 {activity.max_player < 2
                                   ? "Guest "
                                   : "Team Size "}
+                                {activity.min_player == activity.max_player
+                                  ? activity.min_player
+                                  : activity.min_player +
+                                    "-" +
+                                    activity.max_player +
+                                    "  "}
                               </>
                             )}
                             {activity.gorupcat && (
-                              <>{"Guests " + activity.gorupcat + " "}</>
+                              <>
+                                {activity.gorupcat + " " + activity.max_player}{" "}
+                              </>
                             )}
-
-                            {activity.min_player == activity.max_player
-                              ? activity.min_player
-                              : activity.min_player +
-                                "-" +
-                                activity.max_player +
-                                "  "}
                           </span>
                         </p>
                       </div>

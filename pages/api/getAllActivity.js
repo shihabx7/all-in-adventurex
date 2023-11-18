@@ -298,11 +298,11 @@ export const getAllActivity = () => {
         id: 16,
         activity_name: "Axe Throwing",
         activity_type: "In person",
-        gorupcat: "Per Lane",
+        gorupcat: "Guest Capacity",
         activity_category: "other",
         age: "13-99",
         min_player: 2,
-        max_player: 4,
+        max_player: 56,
         price: "23.89",
         duration: "60",
         activity_desc:
