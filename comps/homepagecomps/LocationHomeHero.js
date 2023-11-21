@@ -126,7 +126,7 @@ const LocationHomeHero = (props) => {
         </div>
         <div className="home-hero-holder ">
           <div className="homehero-img md:hidden w-full min-h-[280px] bg-[#000000]">
-            <img src={props.pagedata.coverimageM}></img>
+            <img className="w-full" src={props.pagedata.coverimageM}></img>
           </div>
           <div className="max-w-7xl home-hero-container mx-auto px-4 pb-[120px] pt-0 md:pb-24 md:pt-[160px] lg:pb-28 lg:pt-[210px] relative z-10">
             <div className="page-benar-info">
@@ -143,8 +143,23 @@ const LocationHomeHero = (props) => {
                 {props.pagedata.locationcity}, {props.pagedata.locationstate}
               </p>
               <h1 className="text-gold font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-4 md:mb-8 font-os uppercase max-w-[1000px] mx-auto">
-                ESCAPE ROOMS AND FUN THINGS TO DO IN{" "}
-                {props.pagedata.locationcity}, {props.pagedata.locationstate}
+                {(props.pagedata.locationcity == "West Nyack" ||
+                  props.pagedata.locationcity == "Poughkeepsie") && (
+                  <>
+                    ESCAPE ROOMS AND AXE THROWING IN{" "}
+                    {props.pagedata.locationcity},{" "}
+                    {props.pagedata.locationstate}
+                  </>
+                )}
+                {props.pagedata.locationcity !== "West Nyack" &&
+                  props.pagedata.locationcity !== "Poughkeepsie" && (
+                    <>
+                      {" "}
+                      ESCAPE ROOMS AND FUN THINGS TO DO IN{" "}
+                      {props.pagedata.locationcity},{" "}
+                      {props.pagedata.locationstate}
+                    </>
+                  )}
               </h1>
               <div
                 className="text-gray-100 max-w-[800px] mx-auto text-center lg:text-lg"

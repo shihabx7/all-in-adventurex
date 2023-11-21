@@ -329,7 +329,7 @@ export const getSingleEventPageData = (eventslug, locationslug) => {
         {
           id: 5,
           star: 5,
-          title: "CHEERFUL AND PROFESSIONAL!",
+          title: "CHEERFUL & PROFESSIONAL!",
           review_text:
             "Bridget and Victoria were both incredibly helpful, cheerful and professional. It was overall a great experience that we would recommend to others. We will be coming again to try the other rooms! ",
           revlink: "https://g.co/kgs/HUdAAw",

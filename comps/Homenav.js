@@ -12,7 +12,7 @@ import HeaderNotice from "./headerComps/HeaderNotice";
 import HeaderBtnTrans from "./headerComps/HeaderBtnTrans";
 import MoblieBook from "./headerComps/MobileBook";
 import LocationMenuX from "./headerComps/LocationMenuX";
-
+import StickyGiftBar from "./giftCardPageComps/StickyGiftBar";
 const Homenav = (props) => {
   const [showSlug, setShowSlug] = useState(null);
 
@@ -63,7 +63,12 @@ const Homenav = (props) => {
           <LocationMenu />
         </div>
       }
-
+      <StickyGiftBar
+        locationlist={props.locationlist}
+        giftbookinglist={props.giftbookinglist}
+        locationslug={props.locationslug ? props.locationslug : false}
+        bookinggame={props.bookinggame ? props.bookinggame : false}
+      />
       <header id="header" className="bg-coffee w-full ">
         <div id="header-container-s" className="header-container-s">
           {/*<HeaderNotice/>*/}

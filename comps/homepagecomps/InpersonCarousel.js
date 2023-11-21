@@ -155,7 +155,7 @@ const InpersonCarousel = (props) => {
                     <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">
                       {inpersongame.title}
                     </h3>
-                    <p className="text-gray-200 lg:text-lg">
+                    <p className="text-gray-200 lg:text-[16px] 2xl:text-lg">
                       {inpersongame.description}
                     </p>
                   </div>
