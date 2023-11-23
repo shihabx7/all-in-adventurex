@@ -11,7 +11,7 @@ const GiftHeroBaner = (props) => {
       <div className="gft-bg-decor absolute w-full h-full z-20">
         <div className="decor-inner w-full h-full relative z-20">
           <img
-            className="tl-ribbon absolute top-[-10px] left-[-10px] max-w-[100px] md:max-w-[180px] lg:max-w-[200px]  z-20"
+            className="tl-ribbon absolute top-[-10px] left-[-10px] md:top-[-20px] md:left-[-20px] lg:top-[-28px] lg:left-[-28px] max-w-[100px] md:max-w-[180px] lg:max-w-[200px]  z-20"
             src="/assets/gift-images/hero/Gift-Ribbon-Left-Side.png"
           ></img>
           <img
