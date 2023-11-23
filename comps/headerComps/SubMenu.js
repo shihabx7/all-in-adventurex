@@ -50,6 +50,43 @@ const SubMenu = (props) => {
             </a>
           </div>
           {props.locationslug && (
+            <div className="my-2">
+              <a
+                href={"/" + props.locationslug + "/gift-cards"}
+                className=" inline-block bg-[#FFF9EB] p-1 text-[#4A2F03] hover:bg-[#F4E9D1]  hover:text-red-600 rounded"
+              >
+                <div className="p-1 flex space-x-2 items-center rounded border border-dashed border-[#A78849]">
+                  <p className="text-lg leading-[1]">Gift Cards</p>
+                  <div className="w-[20px]">
+                    <img
+                      className="w-full"
+                      src="/assets/gift-images/hero/gift-card-icon-for-title.svg"
+                    ></img>
+                  </div>
+                </div>
+              </a>
+            </div>
+          )}
+
+          {!props.locationslug && (
+            <div className="my-2">
+              <a
+                href={"/gift-cards"}
+                className=" inline-block bg-[#FFF9EB] p-1 text-[#4A2F03] hover:bg-[#F4E9D1]  hover:text-red-600 rounded"
+              >
+                <div className="p-1 flex space-x-2 items-center rounded border border-dashed border-[#A78849]">
+                  <p className="text-lg leading-[1]">Gift Cards</p>
+                  <div className="w-[20px]">
+                    <img
+                      className="w-full"
+                      src="/assets/gift-images/hero/gift-card-icon-for-title.svg"
+                    ></img>
+                  </div>
+                </div>
+              </a>
+            </div>
+          )}
+          {props.locationslug && (
             <div className="submenu-item">
               <a
                 href={"/" + props.locationslug + "/contact-store"}
@@ -228,25 +265,6 @@ const SubMenu = (props) => {
                             </div> */}
 
           {/*=========================================== Collapse menu 2 end========== */}
-
-          {props.locationslug && (
-            <div className="submenu-item">
-              <a
-                href={"/" + props.locationslug + "/gift-cards"}
-                className="flex items-center"
-              >
-                <span className="sub-link-txt">Gift Cards</span>
-              </a>
-            </div>
-          )}
-
-          {!props.locationslug && (
-            <div className="submenu-item">
-              <a href="/gift-cards" className="flex items-center">
-                <span className="sub-link-txt">Gift Cards</span>
-              </a>
-            </div>
-          )}
         </div>
       </div>
       {/*=====================================================submenu-item-static=============================*/}

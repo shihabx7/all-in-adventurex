@@ -3,6 +3,7 @@ import { bookingList } from "./bookingList";
 import { getLocationActivitySlugList } from "./getLocationActivitySlugList";
 import { getLocationEventSlugList } from "./getLocationEventSlugList";
 import { getLocTotal } from "../AllDataList/getLocTotal";
+import { getRedeemGames } from "../getLocationHomepageData";
 
 export const getLocationIndGiftPageData = (locationslug) => {
   var locd = locationslug.toString().split("-");
@@ -207,6 +208,7 @@ export const getLocationIndGiftPageData = (locationslug) => {
         ans: ["Physical Gift Cards can be provided at our Location."],
       },
     ],
+    redeemgames: getRedeemGames(locationslug),
   };
 
   return giftcardData;

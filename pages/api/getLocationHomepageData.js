@@ -330,6 +330,9 @@ export const getLocationHomepageData = (locationslug) => {
   };
   return locationHomedata;
 };
+export const getRedeemGames = (slug) => {
+  return locPagedata[slug].inpersongames;
+};
 
 const locPagedata = {
   //==================================NY==============================

@@ -2,15 +2,26 @@ import Homenav from "../comps/Homenav";
 import Footer from "../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
-import GiftHeroBaner from "../comps/giftCardPageComps/GiftHeroBaner";
+
 // page template=============
 
 import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
 import { getGiftCardPageData } from "./api/getGiftCardPageData";
 import BuyGiftCards from "../comps/giftCardPageComps/BuyGiftCards";
 import WhyAdvGiftCards from "../comps/giftCardPageComps/WhyAdvGiftCards";
-import GiftFaq from "../comps/giftCardPageComps/GiftFaq";
+
 import Seofields from "../comps/util/SeoFields";
+import GiftHeroBaner from "../comps/giftCardPageComps/GiftHeroBaner";
+import GiftSpotOn from "../comps/giftCardPageComps/GiftSpotOn";
+import GiftVenGram from "../comps/giftCardPageComps/GiftVenGram";
+import HowGiftCardsWork from "../comps/giftCardPageComps/HowGiftCardsWork";
+import GiftRedeem from "../comps/giftCardPageComps/GiftRedeem";
+import GiftPerfectFor from "../comps/giftCardPageComps/GiftPerfectFor";
+import GiftGallery from "../comps/giftCardPageComps/GiftGallery";
+import GiftEffect from "../comps/giftCardPageComps/GiftEffect";
+import GiftFaq from "../comps/giftCardPageComps/GiftFaq";
+import GiftMenu from "../comps/headerComps/GiftMenu";
+import { useState } from "react";
 
 const giftCard = (props) => {
   const toTitleCase = (title) => {
@@ -31,10 +42,20 @@ const giftCard = (props) => {
       </div>
     );
   };
+  const [showGiftBookingList, setShowGiftBookingList] = useState(false);
   /* customizing breadcum */
 
   return (
     <>
+      {showGiftBookingList && (
+        <div className="gftmenu">
+          <GiftMenu
+            locationlist={props.locationlist}
+            setShowGiftBookingList={setShowGiftBookingList}
+          />
+        </div>
+      )}
+
       {/* =======header content======== */}
       <Seofields meta={props.pagemeta} />
       <Homenav
@@ -60,11 +81,31 @@ const giftCard = (props) => {
         ></Breadcrumbs>
         </div>*/}
       {/* =======breadcum content and breadcum root page template======== end */}
-      {/*<GiftHeroBaner pagedata={props.pagedata} />*/}
-      <GameHomeHero gametotal="not" pagedata={props.pagedata} />
-      <BuyGiftCards locationlist={props.locationlist} />
-      <WhyAdvGiftCards />
-      <GiftFaq faqlist={props.faqlist} />
+
+      <GiftHeroBaner
+        pagedata={props.pagedata}
+        locationlist={props.locationlist}
+        setShowGiftBookingList={setShowGiftBookingList}
+      />
+
+      <GiftSpotOn setShowGiftBookingList={setShowGiftBookingList} />
+      <GiftVenGram setShowGiftBookingList={setShowGiftBookingList} />
+      <HowGiftCardsWork setShowGiftBookingList={setShowGiftBookingList} />
+      <GiftRedeem
+        redeemgames={props.redeemgames}
+        setShowGiftBookingList={setShowGiftBookingList}
+      />
+      <GiftPerfectFor setShowGiftBookingList={setShowGiftBookingList} />
+      <GiftGallery setShowGiftBookingList={setShowGiftBookingList} />
+      <GiftEffect setShowGiftBookingList={setShowGiftBookingList} />
+
+      <GiftFaq
+        faqlist={props.faqlist}
+        setShowGiftBookingList={setShowGiftBookingList}
+      />
+      {/*<GameHomeHero gametotal="not" pagedata={props.pagedata} />*/}
+      {/*<BuyGiftCards locationlist={props.locationlist} />*/}
+      {/*<WhyAdvGiftCards />*/}
 
       {/* =========================================================================================main content ======== end */}
 
@@ -80,7 +121,7 @@ export default giftCard;
 
 export const getStaticProps = async () => {
   const giftpagedataData = await getGiftCardPageData();
-
+  // console.log(giftpagedataData.redeemgames);
   return {
     props: {
       pagemeta: giftpagedataData.pagemeta,
@@ -89,6 +130,7 @@ export const getStaticProps = async () => {
       activitylist: giftpagedataData.activitylistSlug,
       eventlist: giftpagedataData.eventlistSlug,
       faqlist: giftpagedataData.gift_faq,
+      redeemgames: giftpagedataData.redeemgames,
     },
   };
 };

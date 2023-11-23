@@ -14,7 +14,7 @@ function StickyGiftBar(props) {
       setShowGiftBookingList(true);
     } else {
       if (!bookinggame || bookinggame.type !== "gift") {
-        window.location.href.href = "/" + locationslug + "/gift-cards";
+        window.location.href = "/" + locationslug + "/gift-cards";
       } else {
         const bookingData = bookingList("gift-card", locationslug);
         console.log(bookingData);

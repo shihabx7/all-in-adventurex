@@ -13,7 +13,7 @@ const GiftCardsMenuBooking = (props) => {
   };
 
   return (
-    <div className="loc-menu bg-black menu-pattern  fixed w-full h-full overflow-scroll">
+    <div className="loc-menu bg-black menu-pattern  fixed w-full h-full overflow-scroll md:overflow-hidden">
       <div
         onClick={closelocmenu}
         id="giftloccloseicon"
