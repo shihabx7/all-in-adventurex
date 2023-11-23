@@ -23,7 +23,8 @@ import GiftFaq from "../comps/giftCardPageComps/GiftFaq";
 import GiftMenu from "../comps/headerComps/GiftMenu";
 import { useState } from "react";
 
-const giftCard = (props) => {
+const GiftCard = (props) => {
+  const [showGiftBookingList, setShowGiftBookingList] = useState(false);
   const toTitleCase = (title) => {
     const titlefres = title.replace(/-/g, " ");
     const btitle = titlefres
@@ -42,7 +43,7 @@ const giftCard = (props) => {
       </div>
     );
   };
-  const [showGiftBookingList, setShowGiftBookingList] = useState(false);
+
   /* customizing breadcum */
 
   return (
@@ -117,7 +118,7 @@ const giftCard = (props) => {
   );
 };
 
-export default giftCard;
+export default GiftCard;
 
 export const getStaticProps = async () => {
   const giftpagedataData = await getGiftCardPageData();

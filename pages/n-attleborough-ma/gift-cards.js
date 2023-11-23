@@ -6,7 +6,7 @@ import BreadcumNew from "../../comps/util/BreadcumNew";
 import Head from "next/head";
 import { getLocationIndGiftPageData } from "../api/LocationIndData/getLocationIndGiftPageData";
 import GameLocGiftHero from "../../comps/activitiyPageComps/GameLocGiftHero";
-import GiftFaq from "../../comps/giftCardPageComps/GiftFaq";
+
 import WhyAdvGiftCards from "../../comps/giftCardPageComps/WhyAdvGiftCards";
 
 import BuyLocGift from "../../comps/activitiyPageComps/BuyLocGift";
