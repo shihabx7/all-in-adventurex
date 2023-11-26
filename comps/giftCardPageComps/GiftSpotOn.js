@@ -14,8 +14,8 @@ function GiftSpotOn(props) {
               weight="font-bold"
             />
             <p className="text-lg text-white mt-2 text-center">
-              Escape room gift cards are the universal perfect gift, proven by
-              mathematics.
+              Become a gifting genius this holiday season with All In Adventures
+              Gift Cards.
             </p>
           </div>
           {/*======================section container======== */}
