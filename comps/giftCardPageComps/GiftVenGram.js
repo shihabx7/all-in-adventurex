@@ -23,7 +23,7 @@ function GiftVenGram(props) {
             </div>
           </div>
           <div className="sec-btn ss-btn  mt-12 md:mt-16">
-            <p className="text-[#4A2F03] text-xl text-center">
+            <p className="text-[#4A2F03] text-[18px] lg:text-xl text-center">
               Still on the fence?
             </p>
             <div className="flex  justify-center mt-4">

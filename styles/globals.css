@@ -519,12 +519,21 @@ a {
     rgba(0, 0, 0, 0.1)
   );
 }
+
 .card-bottom {
   background: linear-gradient(
     rgba(0, 0, 0, 0.1),
     rgba(0, 0, 0, 0.78),
     rgba(0, 0, 0, 0.88),
     rgba(0, 0, 0, 0.98)
+  );
+}
+.card-bottom-gift {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.01),
+    rgba(0, 0, 0, 0.76),
+    rgba(0, 0, 0, 0.86),
+    rgba(0, 0, 0, 0.96)
   );
 }
 .card-game-title {

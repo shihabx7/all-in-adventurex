@@ -92,7 +92,7 @@ const GiftHeroBaner = (props) => {
       {/* =======card bg images end========  */}
       {/* =======card content container========  */}
       <div className="gift-hero-container-wrapper  relative z-[50]">
-        <div className="max-w-7xl py-20 md:py-24 xl:py-26 3xl:py-28 mx-auto px-8 lg:px-12 ">
+        <div className="max-w-7xl pt-14 pb-20 md:py-24 xl:py-26 3xl:py-28 mx-auto px-8 lg:px-12 ">
           <div className="gh-content flex flex-col lg:flex-row justify-between items-center">
             {/* =======card content text========  */}
 
@@ -101,11 +101,11 @@ const GiftHeroBaner = (props) => {
                 <p className="text-[#4A2F03]  md:text-[22px] xl:text-[22px] 2xl:text-[24px] 3xl:text-[28px]">
                   ALL IN ADVENTURES GIFT CARDS
                 </p>
-                <h1 className="text-[40px] md:text-[42px] lg:text-[46px] xl:text-[54px] 3xl:text-[60px] leading-[1.2] text-[#CA9342] font-os font-bold">
+                <h1 className="text-[36px] md:text-[42px] lg:text-[46px] xl:text-[54px] 3xl:text-[60px] leading-[1.2] text-[#CA9342] font-os font-bold">
                   <span>'TIS THE SEASON OF GIVING</span>
                   <span className="ml-[12px]">
                     <img
-                      className="w-[52px] h-[52px] inline-block align-middle mt-[-12px]"
+                      className="w-[32px] h-[36px] md:w-[44px] md:h-[44px] lg:w-[52px] lg:h-[52px] inline-block align-middle mt-[-12px]"
                       src="/assets/gift-images/hero/gift-card-icon-for-title.svg"
                     ></img>
                   </span>
