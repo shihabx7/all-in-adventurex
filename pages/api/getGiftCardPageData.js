@@ -97,7 +97,7 @@ export const getGiftCardPageData = () => {
         price: "29.89",
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/gift-slider/allinadventures-escape-from-alcatraz-game.jpg",
       },
       {
         id: 2,
@@ -113,8 +113,7 @@ export const getGiftCardPageData = () => {
         minplayers: "2",
         price: "29.89",
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/gift-slider/allinadventures-treasure-island-game.jpg",
       },
       {
         id: 3,
@@ -130,8 +129,7 @@ export const getGiftCardPageData = () => {
         minplayers: "2",
         price: "29.89",
         slug: "zombie-apocalypse",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+        bgimg: "/assets/gift-slider/allinadventures-zombie-apocalypse-game.jpg",
       },
       {
         id: 4,
@@ -147,8 +145,7 @@ export const getGiftCardPageData = () => {
         minplayers: "2",
         price: "29.89",
         slug: "sherlocks-library",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+        bgimg: "/assets/gift-slider/allinadventures-sherlocks-library-game.jpg",
       },
 
       {
@@ -165,7 +162,7 @@ export const getGiftCardPageData = () => {
         minplayers: "2",
         price: "29.89",
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/gift-slider/allinadventures-black-ops-game.jpg",
       },
       {
         id: 6,
@@ -182,7 +179,7 @@ export const getGiftCardPageData = () => {
         price: "29.89",
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/gift-slider/allinadventures-superheros-Adventure-game.jpg",
       },
       {
         id: 7,
@@ -199,7 +196,7 @@ export const getGiftCardPageData = () => {
         price: "29.89",
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/gift-slider/allinadventures-houdinis-magic-cell-game.jpg",
       },
 
       {
@@ -216,8 +213,7 @@ export const getGiftCardPageData = () => {
         minplayers: "2",
         price: "29.89",
         slug: "special-agent",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg",
+        bgimg: "/assets/gift-slider/allinadventures-special-agent-game.jpg",
       },
       {
         id: 9,
@@ -234,7 +230,7 @@ export const getGiftCardPageData = () => {
         price: "29.89",
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/gift-slider/allinadventures-hollywood-premiere-game.jpg",
       },
       {
         id: 10,
@@ -251,7 +247,7 @@ export const getGiftCardPageData = () => {
         price: "39.95",
         slug: "lost-in-the-jungle",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg",
+          "/assets/gift-slider/allinadventures-lost-in-the-jungle-game.jpg",
       },
       {
         id: 11,
@@ -267,8 +263,7 @@ export const getGiftCardPageData = () => {
         minplayers: "2",
         price: "39.95",
         slug: "wizarding-school",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg",
+        bgimg: "/assets/gift-slider/allinadventures-wizarding-school-game.jpg",
       },
       {
         id: 12,
@@ -285,7 +280,7 @@ export const getGiftCardPageData = () => {
         price: "29.89",
         slug: "locked-in-the-lift",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg",
+          "/assets/gift-slider/allinadventures-locked-in-the-lift-game.jpg",
       },
 
       {
@@ -302,8 +297,7 @@ export const getGiftCardPageData = () => {
         minplayers: "2",
         price: "29.89",
         slug: "magic-castle",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg",
+        bgimg: "/assets/gift-slider/allinadventures-magic-castle-game.jpg",
       },
     ],
   };

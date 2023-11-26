@@ -331,7 +331,20 @@ export const getLocationHomepageData = (locationslug) => {
   return locationHomedata;
 };
 export const getRedeemGames = (slug) => {
-  return locPagedata[slug].inpersongames;
+  let giftCarData = locPagedata[slug].inpersongames;
+  let giftCarArr = [];
+  for (let i = 0; i < giftCarData.length; i++) {
+    let imgSource = giftCarData[i].bgimg;
+    let newSourse = imgSource.replace(/all-game-slider-bg/g, "gift-slider");
+    let giftCarObj = {
+      id: i + 1,
+      title: giftCarData[i].title,
+      description: giftCarData[i].description,
+      bgimg: newSourse,
+    };
+    giftCarArr.push(giftCarObj);
+  }
+  return giftCarArr;
 };
 
 const locPagedata = {
