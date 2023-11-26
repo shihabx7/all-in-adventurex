@@ -137,8 +137,7 @@ const GiftHeroBaner = (props) => {
                       src="/assets/gift-images/hero/gift-icon-for-hero-point-text.svg"
                     ></img>
                     <p className="text-[#2E2E2E]  xl:text-[18px]">
-                      All In Adventures Gift Cards <b>NEVER</b> expire Perfect
-                      for al
+                      All In Adventures Gift Cards <b>NEVER</b> expire
                     </p>
                   </div>
                   <div className="gh-item flex justify-start space-x-2 items-start md:items-center my-3">

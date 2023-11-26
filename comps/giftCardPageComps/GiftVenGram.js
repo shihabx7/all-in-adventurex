@@ -3,7 +3,7 @@ import TitleSeparator from "../util/TitleSeparator";
 import GiftBigBtn from "./GiftBigBtn";
 function GiftVenGram(props) {
   return (
-    <div className="gift-venn  overflow-hidden md:mt-[0px] bg-[#FFF9EB] bg-[url('/assets/svg/pattern/venn-diagram-background-pattern.svg')] bg-[length:500px_500px] bg-repeat">
+    <div className="gift-venn  overflow-hidden md:mt-[0px] bg-[#FFF9EB] bg-[url('/assets/svg/pattern/venn-diagram-background-pattern.svg')] bg-[length:320px_320px] md:bg-[length:360px_360px] lg:bg-[length:500px_500px] bg-repeat">
       <div className="gift-venn-container-wrapper max-w-7xl mx-auto py-16 md:py-24 lg:py-32 px-4 md:px-8">
         <div className="gsvenn-container ">
           <div className="sec-title gs-title max-w-[768px] mx-auto">

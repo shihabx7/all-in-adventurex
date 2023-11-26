@@ -218,8 +218,11 @@ function GiftPerfectFor(props) {
                       especially when it comes to gifts. Why deny them that
                       thrill with a traditional gift, when you can surprise them
                       with All In Adventures escape room gift cards for
-                      Christmas, their Birthday, Anniversary, Promotion,
-                      Retirement - or just to bring them joy!
+                      Christmas, Birthday, Anniversary, Holiday, or just to
+                      bring them joy!” with “when you can surprise them with All
+                      In Adventures escape room gift cards for Christmas, their
+                      Birthday, Anniversary, Promotion, Retirement - or just to
+                      bring them joy!
                     </p>
                   </div>
                   <div className="gprf-img md:max-w-[45%] order-1 md:order-2">
