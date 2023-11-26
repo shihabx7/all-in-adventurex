@@ -69,7 +69,7 @@ const HowGiftCardsWork = (props) => {
         {/*==============Section bottom content ============= */}
         <div className="whwgift-bottom mt-8 md:mt-12">
           <p className="text-[#ADADAD] md:text-lg italic">
-            <span className="text-gold">Easy To Redeem :</span> Gift card
+            <span className="text-gold">Easy to Redeem :</span> Gift card
             holders can redeem the card online at allinadventures.com or
             directly in-store where the Gift Card was purchased. Contact us
             directly at your local All In Adventures store or call our customer

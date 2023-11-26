@@ -13,7 +13,7 @@ function GiftVenGram(props) {
               weight="font-bold"
             />
             <p className="text-lg text-[#2e2e2e] mt-2 text-center">
-              Escape room gift cards are the <b>universal perfect gift,</b>
+              Escape room gift cards are the <b>universal perfect gift, </b>
               proven by mathematics. 😁
             </p>
           </div>
