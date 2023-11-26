@@ -3,8 +3,20 @@ import TitleSeparator from "../util/TitleSeparator";
 import GiftGnBtn from "./GiftGnBtn";
 function GiftGallery(props) {
   return (
-    <div className="gift-venn  overflow-hidden md:mt-[0px] bg-[#FFF9EB] bg-[url('/assets/svg/pattern/venn-diagram-background-pattern.svg')] bg-[length:500px_500px] bg-repeat">
-      <div className="gift-venn-container-wrapper max-w-7xl mx-auto py-16 md:py-24 lg:py-32 px-4 md:px-8">
+    <div className="gift-gallery  relative  py-16 md:py-24 lg:py-32 px-4 overflow-hidden md:mt-[0px] bg-[url('/assets/svg/pattern/brown-color-bg-pattern.svg')] bg-[length:600px_600px] bg-repeat">
+      <div className="btop absolute top-0 left-0 w-full">
+        <img
+          className="w-full"
+          src="/assets/svg/pattern/brown-color-border.svg"
+        ></img>
+      </div>
+      <div className="btop absolute bottom-0 left-0 w-full">
+        <img
+          className="w-full rotate-180"
+          src="/assets/svg/pattern/brown-color-border.svg"
+        ></img>
+      </div>
+      <div className="gift-gal-container-wrapper max-w-7xl mx-auto ">
         <div className="gsvenn-container ">
           <div className="sec-title gs-title max-w-[768px] mx-auto">
             <TitleSeparator
@@ -24,15 +36,15 @@ function GiftGallery(props) {
               {/*========================gallery grid item======================*/}
               <div className="gl-item ">
                 <img
-                  className="rounded-lg"
+                  className="rounded-lg shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]"
                   alt="friends at all in adventures escape room after redeeming gift card"
                   src="/assets/gift-images/gallery/friends-at-all-in-adventures-escape-room-after-redeeming-gift-card.jpg"
                 ></img>
               </div>
               {/*========================gallery grid item======================*/}
-              <div className="gl-item">
+              <div className="gl-item ">
                 <img
-                  className="rounded-lg"
+                  className="rounded-lg shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]"
                   alt="friends at all in adventures escape room after redeeming gift card"
                   src="/assets/gift-images/gallery/escape-room-santa-claus-at-all-in-adventures.jpg"
                 ></img>
@@ -40,7 +52,7 @@ function GiftGallery(props) {
               {/*========================gallery grid item======================*/}
               <div className="gl-item ">
                 <img
-                  className="rounded-lg"
+                  className="rounded-lg shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]"
                   alt="friends at all in adventures escape room after redeeming gift card"
                   src="/assets/gift-images/gallery/kids-at-all-in-adventures-escape-room-using-gift-cards.jpg"
                 ></img>
@@ -48,7 +60,7 @@ function GiftGallery(props) {
               {/*========================gallery grid item======================*/}
               <div className="gl-item ">
                 <img
-                  className="rounded-lg"
+                  className="rounded-lg shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]"
                   alt="friends at all in adventures escape room after redeeming gift card"
                   src="/assets/gift-images/gallery/kids-all-in-adventures-escape-room-birthday-party.jpg"
                 ></img>
@@ -56,7 +68,7 @@ function GiftGallery(props) {
               {/*========================gallery grid item======================*/}
               <div className="gl-item ">
                 <img
-                  className="rounded-lg"
+                  className="rounded-lg shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]"
                   alt="friends at all in adventures escape room after redeeming gift card"
                   src="/assets/gift-images/gallery/young-adults-at-escape-room-after-redeeming-all-in-adventures-gift-cards.jpg"
                 ></img>
@@ -64,7 +76,7 @@ function GiftGallery(props) {
               {/*========================gallery grid item======================*/}
               <div className="gl-item ">
                 <img
-                  className="rounded-lg w-full"
+                  className="rounded-lg w-full shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]"
                   alt="friends at all in adventures escape room after redeeming gift card"
                   src="/assets/gift-images/gallery/escape-room-team-building-corporates-using-all-in-adventures-gift-card.jpg"
                 ></img>

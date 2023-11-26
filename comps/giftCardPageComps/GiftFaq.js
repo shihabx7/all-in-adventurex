@@ -28,9 +28,9 @@ const GiftFaq = (props) => {
             weight="font-bold"
           />
           <p className="mt-4 text-[#2E2E2E] max-w-[800px] mx-auto text-center lg:text-lg">
-            Browse through these FAQs to find answers to commonly raised
-            questions. If you don't see what's on your mind, reach out to us
-            anytime on phone or email.
+            Explore these FAQs to uncover answers to popular questions about All
+            In Adventures Gift Cards. If your specific query isn't covered,
+            reach us anytime on phone or email.
           </p>
         </div>
         <div className="gift-faq-box max-w-[1000px] mx-auto">

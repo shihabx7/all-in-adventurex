@@ -5,6 +5,7 @@ const HowGiftCardsWork = (props) => {
     <div className="hwgift-works bg-black">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 lg:py-32">
         <div className="hwgift-container">
+          {/*==============Section Title============= */}
           <div className="sec-title gs-title max-w-[768px] mx-auto">
             <TitleSeparator
               title="HOW OUR GIFT CARDS WORK"
@@ -15,6 +16,8 @@ const HowGiftCardsWork = (props) => {
               Get your All In Adventures Gift Cards in 3 simple steps
             </p>
           </div>
+          {/*==============Section Title end============= */}
+          {/*==============Section mid content ============= */}
           <div className="hwgift-content flex flex-col lg:flex-row justify-between items-center mt-8">
             <div className="hwgift-img w-full lg:max-w-[42%]">
               <img src="/assets/gift-images/how-it-work-all-in-adventures-gift-card.png"></img>
@@ -61,16 +64,26 @@ const HowGiftCardsWork = (props) => {
               </div>
             </div>
           </div>
+          {/*==============Section mid content end============= */}
         </div>
+        {/*==============Section bottom content ============= */}
         <div className="whwgift-bottom mt-8 md:mt-12">
           <p className="text-[#ADADAD] md:text-lg italic">
             <span className="text-gold">Easy To Redeem :</span> Gift card
             holders can redeem the card online at allinadventures.com or
             directly in-store where the Gift Card was purchased. Contact us
             directly at your local All In Adventures store or call our customer
-            service team at 844-502-5546 to redeem it over the phone.
+            service team at{" "}
+            <a
+              className="text-red-600 hover:text-red-700"
+              href="tel:844-502-5546"
+            >
+              844-502-5546
+            </a>{" "}
+            to redeem it over the phone.
           </p>
         </div>
+        {/*==============Section bottom content end============= */}
       </div>
     </div>
   );

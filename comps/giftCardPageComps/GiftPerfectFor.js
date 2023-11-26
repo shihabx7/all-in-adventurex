@@ -7,7 +7,7 @@ function GiftPerfectFor(props) {
       <div className="gift-spoton-container-wrapper max-w-7xl mx-auto py-16 md:py-24 lg:py-32 px-4 md:px-8">
         <div className="gs-container ">
           <div className="gs-box-container flex flex-col  space-y-4 md:space-y-6     mt-8 md:mt-12 max-w-[1100px] mx-auto">
-            {/* =======Box content ======== ================================ */}
+            {/* =======Box content 1 ======== ================================ */}
             <div className="gprf-box-col w-full  bg-[#FFF9EB]  relative rounded-lg ">
               {/* =======card border========  */}
               <div className="bg-or p-3 md:p-4 absolute z-[10] w-full h-full top-0 left-0 ">
@@ -36,7 +36,7 @@ function GiftPerfectFor(props) {
                     src="/assets/gift-images/ocassion/Confetti-top-and-bottom-for-mobile.svg"
                   ></img>
                   <img
-                    className="tl-ribbon absolute bottom-[16px] left-[20px] md:bottom-[16px] lg:bottom-[30px] md:left-[6%]  z-20 max-w-[30px] md:max-w-[24px] lg:max-w-[40px]"
+                    className="tl-ribbon absolute bottom-[16px] left-[20px] md:bottom-[16px] lg:bottom-[16px] md:left-[5%]  z-20 max-w-[30px] md:max-w-[24px] lg:max-w-[40px]"
                     src="/assets/gift-images/hero/Star-1.png"
                   ></img>
                   <img
@@ -81,8 +81,8 @@ function GiftPerfectFor(props) {
                 </div>
               </div>
             </div>
-            {/* =======Box content ======== end =================*/}
-            {/* =======Box content ========  ===============================*/}
+            {/* =======Box content 1 ======== end =================*/}
+            {/* =======Box content 2 ========  ===============================*/}
             <div className="gprf-box-col w-full  bg-[#FFF9EB]  relative rounded-lg ">
               {/* =======card border========  */}
               <div className="bg-or p-3 md:p-4 absolute z-[10] w-full h-full top-0 left-0 ">
@@ -111,7 +111,7 @@ function GiftPerfectFor(props) {
                     src="/assets/gift-images/ocassion/Confetti-top-and-bottom-for-mobile.svg"
                   ></img>
                   <img
-                    className="tl-ribbon absolute bottom-[16px] left-[20px] md:bottom-[16px] lg:bottom-[30px] md:left-[6%]  z-20 max-w-[30px] md:max-w-[24px] lg:max-w-[40px]"
+                    className="tl-ribbon absolute bottom-[16px] left-[20px] md:bottom-[16px] lg:bottom-[16px] md:left-[5%]  z-20 max-w-[30px] md:max-w-[24px] lg:max-w-[40px]"
                     src="/assets/gift-images/hero/Star-1.png"
                   ></img>
                   <img
@@ -136,13 +136,13 @@ function GiftPerfectFor(props) {
                       PERFECT FOR
                     </p>
                     <h3 className="text-[#CA9342] font-os font-bold text-[32px] leading-[1.2] ">
-                      Co-workers and Corporates
+                      Companies and Co-Workers
                     </h3>
                     <p className="text-[#4A2F03] lg:text-lg leading-[1.6] mt-2">
                       Buy the gift cards in bulk and effortlessly distribute
                       them among co-workers and picture them strengthening their
                       bonds and communication, all thanks to your escape room
-                      gift cards. Don't wait to secure this unbreakable
+                      gift cards. Don’t wait to secure this unbreakable
                       team-building opportunity this holiday season!
                     </p>
                   </div>
@@ -156,8 +156,8 @@ function GiftPerfectFor(props) {
                 </div>
               </div>
             </div>
-            {/* =======Box content ======== end ================*/}
-            {/* =======Box content ========  ===============================*/}
+            {/* =======Box content 2 ======== end ================*/}
+            {/* =======Box content 3========  ===============================*/}
             <div className="gprf-box-col w-full  bg-[#FFF9EB]  relative rounded-lg ">
               {/* =======card border========  */}
               <div className="bg-or p-3 md:p-4 absolute z-[10] w-full h-full top-0 left-0 ">
@@ -186,7 +186,7 @@ function GiftPerfectFor(props) {
                     src="/assets/gift-images/ocassion/Confetti-top-and-bottom-for-mobile.svg"
                   ></img>
                   <img
-                    className="tl-ribbon absolute bottom-[16px] left-[20px] md:bottom-[16px] lg:bottom-[30px] md:left-[6%]  z-20 max-w-[30px] md:max-w-[24px] lg:max-w-[40px]"
+                    className="tl-ribbon absolute bottom-[16px] left-[20px] md:bottom-[16px] lg:bottom-[16px] md:left-[5%]  z-20 max-w-[30px] md:max-w-[24px] lg:max-w-[40px]"
                     src="/assets/gift-images/hero/Star-1.png"
                   ></img>
                   <img
@@ -218,8 +218,8 @@ function GiftPerfectFor(props) {
                       especially when it comes to gifts. Why deny them that
                       thrill with a traditional gift, when you can surprise them
                       with All In Adventures escape room gift cards for
-                      Christmas, Birthday, Anniversary, Holiday, or just to
-                      bring them joy!
+                      Christmas, their Birthday, Anniversary, Promotion,
+                      Retirement - or just to bring them joy!
                     </p>
                   </div>
                   <div className="gprf-img md:max-w-[45%] order-1 md:order-2">
@@ -232,7 +232,7 @@ function GiftPerfectFor(props) {
                 </div>
               </div>
             </div>
-            {/* =======Box content ======== end ================*/}
+            {/* =======Box content 3======== end ================*/}
           </div>
           <div className="sec-btn ss-btn flex justify-center mt-12 md:mt-16">
             <GiftGnBtn

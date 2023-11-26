@@ -43,8 +43,8 @@ function GiftEffect(props) {
                 <div className="geft-img">
                   <img
                     className="rounded-[30px]"
-                    alt="escape room family holiday using all in adventures gift card"
-                    src="/assets/gift-images/effect/escape-room-family-holiday-using-all-in-adventures-gift-card.jpg"
+                    alt="all in adventure dubbed a gift genius"
+                    src="/assets/gift-images/effect/all-in-adventure-dubbed-agift-genius.jpg"
                   ></img>
                 </div>
                 <div className="geft-content mt-2">
@@ -96,8 +96,8 @@ function GiftEffect(props) {
                 <div className="geft-img">
                   <img
                     className="rounded-[30px]"
-                    alt="escape room family holiday using all in adventures gift card"
-                    src="/assets/gift-images/effect/escape-room-family-holiday-using-all-in-adventures-gift-card.jpg"
+                    alt="all in adventure stress free gifting"
+                    src="/assets/gift-images/effect/all-in-adventure-stress-free-gifting.jpg"
                   ></img>
                 </div>
                 <div className="geft-content mt-2">
@@ -117,7 +117,7 @@ function GiftEffect(props) {
                     className="w-[150px] mx-auto"
                     src="/assets/gift-images/effect/five-star.svg"
                   ></img>
-                  <p className="text-center text-[#A17F47] mt-1">Eric V.</p>
+                  <p className="text-center text-[#A17F47] mt-1">Suzana V.</p>
                 </div>
               </div>
             </div>
@@ -151,8 +151,8 @@ function GiftEffect(props) {
                   <div className="geft-img">
                     <img
                       className="rounded-[30px]"
-                      alt="escape room family holiday using all in adventures gift card"
-                      src="/assets/gift-images/effect/escape-room-family-holiday-using-all-in-adventures-gift-card.jpg"
+                      alt="all in adventure Gift Cards beyond just a gift"
+                      src="/assets/gift-images/effect/all-in-adventure-beyond-just-a-gift.jpg"
                     ></img>
                   </div>
                   <div className="geft-content mt-2">

@@ -5,7 +5,7 @@ const GiftRedeem = (props) => {
   return (
     <div
       id="gift-redem"
-      className="all-faq relative  py-16 md:py-24 lg:py-32 px-4 overflow-hidden md:mt-[0px] bg-[url('/assets/svg/pattern/brown-color-bg-pattern.svg')] bg-[length:600px_600px] bg-repeat"
+      className="gift-redeem relative  py-16 md:py-24 lg:py-32 px-4 overflow-hidden md:mt-[0px] bg-[url('/assets/svg/pattern/brown-color-bg-pattern.svg')] bg-[length:600px_600px] bg-repeat"
     >
       <div className="btop absolute top-0 left-0 w-full">
         <img
@@ -20,6 +20,7 @@ const GiftRedeem = (props) => {
         ></img>
       </div>
       <div className="giftrdm-container relative z-30">
+        {/** =================section title============= */}
         <div className="section-title mb-8 md:mb-12">
           <TitleSeparator
             title="REDEEM TO UNLOCK THESE ESCAPE ROOMS"
@@ -32,6 +33,7 @@ const GiftRedeem = (props) => {
             mystery will they unravel?
           </p>
         </div>
+        {/** =================section title end============= */}
         <div className="gift-rdm-carusel-container  mx-auto">
           <GiftRdmCarousel redeemgames={props.redeemgames} />
         </div>

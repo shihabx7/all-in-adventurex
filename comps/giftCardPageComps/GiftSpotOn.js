@@ -14,17 +14,17 @@ function GiftSpotOn(props) {
               weight="font-bold"
             />
             <p className="text-lg text-white mt-2 text-center">
-              Become a gifting genius this holiday season with All In Adventures
-              Gift Cards.
+              Escape room gift cards are the universal perfect gift, proven by
+              mathematics.
             </p>
           </div>
           {/*======================section container======== */}
           <div className="gs-box-container flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6   lg:space-x-0 lg:space-y-0 lg:justify-between mt-8 md:mt-12 flex-wrap">
             {/*======================box-column 1======== */}
             <div className="gs-box-col w-full md:max-w-[47%] lg:max-w-[32%] bg-[#FFF9EB]  relative rounded-lg">
-              <div className="br-img absolute bottom-0 right-0 z-[20] w-[76px]">
+              <div className="br-img absolute bottom-0 right-0 z-[20] w-[60px] md:w-[68px] 2xl:w-[75px]">
                 <img
-                  className=" w-[75px]"
+                  className=" w-[60px] md:w-[68px] 2xl:w-[75px]"
                   src="/assets/gift-images/usp/usp-gift-box.svg"
                 ></img>
               </div>
@@ -45,20 +45,21 @@ function GiftSpotOn(props) {
                 </div>
               </div>
               <div className="gs-cintent relative z-[30] px-10 py-16">
-                <h3 className="text-[#CA9342] font-os font-bold text-[32px] text-center">
+                <h3 className="text-[#CA9342] font-os font-bold text-[24px] md:text-[28px] xl:text-[32px] text-center">
                   MEMORIES OVER MATERIALS
                 </h3>
                 <p className="text-[#4A2F03] text-center mt-4">
-                  Physical gifts may fade, but experiences and memories last a
-                  lifetime, making your present unforgettable.
+                  Physical gifts may fade in time, but experiences and memories
+                  of escape rooms will last a lifetime, making your present
+                  unforgettable.
                 </p>
               </div>
             </div>
             {/*======================box-column 2 ======== */}
             <div className="gs-box-col  w-full md:max-w-[47%] lg:max-w-[32%] bg-[#FFF9EB]  relative rounded-lg">
-              <div className="br-img absolute bottom-0 right-0 z-[20] w-[76px]">
+              <div className="br-img absolute bottom-0 right-0 z-[20] w-[60px] md:w-[68px] 2xl:w-[75px]">
                 <img
-                  className=" w-[75px]"
+                  className=" w-[60px] md:w-[68px] 2xl:w-[75px]"
                   src="/assets/gift-images/usp/usp-gift-box.svg"
                 ></img>
               </div>
@@ -79,21 +80,22 @@ function GiftSpotOn(props) {
                 </div>
               </div>
               <div className="gs-cintent relative z-[30] px-10 py-16">
-                <h3 className="text-[#CA9342] font-os font-bold text-[32px] text-center max-w-[80%] mx-auto">
+                <h3 className="text-[#CA9342] font-os font-bold text-[24px] md:text-[28px] xl:text-[32px] text-center max-w-[80%] mx-auto">
                   HASSLE-FREE GIFTING
                 </h3>
                 <p className="text-[#4A2F03] text-center mt-4">
-                  All In Adventures Gift Cards make gifting a breeze — because
-                  everyone deserves a little hassle-free happiness.
+                  All In Adventures Gift Cards can be sent digitally, making
+                  gifting a breeze — because everyone deserves a little
+                  hassle-free happiness.
                 </p>
               </div>
             </div>
-            {/*======================box-column 2======== */}
+            {/*======================box-column 3======== */}
             <div className="gs-box-col  w-full md:pt-[24px] lg:pt-0 lg:mt-0 md:max-w-[47%] lg:max-w-[32%] relative">
               <div className="bg-[#FFF9EB]  relative rounded-lg">
-                <div className="br-img absolute bottom-0 right-0 z-[20] w-[76px] ">
+                <div className="br-img absolute bottom-0 right-0 z-[20] w-[60px] md:w-[68px] 2xl:w-[75px] ">
                   <img
-                    className=" w-[75px]"
+                    className=" w-[60px] md:w-[68px] 2xl:w-[75px]"
                     src="/assets/gift-images/usp/usp-gift-box.svg"
                   ></img>
                 </div>
@@ -114,13 +116,13 @@ function GiftSpotOn(props) {
                   </div>
                 </div>
                 <div className="gs-cintent relative z-[30] px-10 py-16">
-                  <h3 className="text-[#CA9342] font-os font-bold text-[32px] text-center">
+                  <h3 className="text-[#CA9342] font-os font-bold text-[24px] md:text-[28px] xl:text-[32px] text-center">
                     MAKE MEMORIES, NOT ASSUMPTIONS
                   </h3>
                   <p className="text-[#4A2F03]  text-center mt-4">
                     Traditional gifts may assume preferences. Our Gift Cards
-                    allow recipients to create lasting memories, ensuring your
-                    present stands out.
+                    allow recipients to create lasting memories, making your
+                    present stand out.
                   </p>
                 </div>
               </div>

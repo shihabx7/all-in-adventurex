@@ -160,9 +160,8 @@ export const getLocationIndGiftPageData = (locationslug) => {
         category: "gift",
         ques: "How to purchase your Gift Cards?",
         ans: [
-          "Choose the Location. Then, select the Gift Card amount, fill out the requested details, add it to your cart, and checkout.",
-          '<p class="mt-2 lg:mt-3">Once you complete your purchase, you will be sent an email with the Gift Card number. If you are giving the card as a gift, follow the directions in your confirmation email to send them through email directly to the recipient. If you prefer a physical Gift Card, please visit your local store.</p>',
-          '<p class="mt-2 lg:mt-3"><span class="underline underline-offset-4 font-medium">Please note:</span> If you have not received your Gift Card(s), please check your spam folder.</p>',
+          "Pick your location, choose the amount, fill in details, add to the cart, and checkout. You'll get an email with the Gift Card number. For gifts, follow the email instructions. For physical cards, Visit your local store. ",
+          '<p class="mt-2 lg:mt-3"><i><b>Note:</b> Check your spam folder if you haven&quot;t received your Gift Card(s).</i></p>',
         ],
       },
       {
@@ -171,8 +170,7 @@ export const getLocationIndGiftPageData = (locationslug) => {
         category: "gift",
         ques: "How do I redeem the Gift Cards?",
         ans: [
-          "Gift card holders can redeem the card online at www.allinadventures.com or directly in-store where the Gift Card was purchased. Contact us directly at your local store or call our customer service team at ",
-          '<a href="tel:844-502-5546" class="text-red-600 hover:text-red-700">844-502-5546</a> to redeem it over the phone.',
+          "Gift card holders can redeem online at <a href='https://allinadventures.com' class='text-red-600 hover:text-red-700'>www.allinadventures.com</a> or in-store where purchased. For assistance, contact your local store or call our customer service at <a href='tel:844-502-5546' class='text-red-600 hover:text-red-700'>844-502-5546</a>",
         ],
       },
       {
@@ -180,7 +178,7 @@ export const getLocationIndGiftPageData = (locationslug) => {
         group: "GIFT_CARDS",
         category: "gift",
         ques: "Do Gift Cards expire?",
-        ans: ["Our Gift Cards never expire from the day of issue."],
+        ans: ["Our Gift Cards never expire and last forever."],
       },
       {
         id: 4,
@@ -188,7 +186,7 @@ export const getLocationIndGiftPageData = (locationslug) => {
         category: "gift",
         ques: "Do we need to make a reservation to use a Gift Card?",
         ans: [
-          "No reservation is needed but we always suggest making a reservation beforehand to ensure you get the experience and time slot that you prefer. Walk-ins are available but availability is not guaranteed.",
+          "While reservations aren't required, we recommend booking in advance for your preferred experience and time slot. Walk-ins are welcome, but availability is not guaranteed.",
         ],
       },
       {
@@ -197,7 +195,7 @@ export const getLocationIndGiftPageData = (locationslug) => {
         category: "gift",
         ques: "What happens if I prepay for my reservation in advance?",
         ans: [
-          "If you prepaid for your reservation, your payment will be refunded when you present your Gift Card on Location.",
+          "For prepaid reservations, your payment will be refunded upon presenting your Gift Card at the store location.",
         ],
       },
       {
@@ -205,7 +203,7 @@ export const getLocationIndGiftPageData = (locationslug) => {
         group: "GIFT_CARDS",
         category: "gift",
         ques: "Can I get a physical Gift Card instead of an electronic one?",
-        ans: ["Physical Gift Cards can be provided at our Location."],
+        ans: ["Physical Gift Cards are available at our location."],
       },
     ],
     redeemgames: getRedeemGames(locationslug),
