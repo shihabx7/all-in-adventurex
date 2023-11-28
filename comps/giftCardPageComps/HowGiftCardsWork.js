@@ -25,7 +25,7 @@ const HowGiftCardsWork = (props) => {
             <div className="hwgift-content-box w-full lg:max-w-[52%] mt-6 md:mt-8 lg:mt-0">
               <div className="hwgift-item my-6">
                 <h3 className="text-gold font-medium text-[24px] md:text-[28px]">
-                  Choose Your Gift Card
+                  Choose Your Gift Card Amount
                 </h3>
                 <p className="text-white md:text-lg mt-1 md:mt-2">
                   You can choose from $25, $50, $100, or set a custom amount.

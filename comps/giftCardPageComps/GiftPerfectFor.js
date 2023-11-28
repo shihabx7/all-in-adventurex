@@ -217,9 +217,9 @@ function GiftPerfectFor(props) {
                       People inherently love a touch of suspense and thrill,
                       especially when it comes to gifts. Why deny them that
                       thrill with a traditional gift, when you can surprise them
-                      with All In Adventures escape room gift cards? Perfect for
-                      Christmas, Birthday, Anniversary, Holiday, or just to
-                      bring them joy!
+                      with an All In Adventures escape room gift card for
+                      Christmas, their birthday, anniversary, promotion,
+                      retirement - or just to bring them joy!
                     </p>
                   </div>
                   <div className="gprf-img md:max-w-[45%] order-1 md:order-2">

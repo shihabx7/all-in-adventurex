@@ -25,7 +25,7 @@ const GiftCardsMenuBooking = (props) => {
       </div>
       <div className="loc-menu-content px-4">
         <TitleSeparator
-          title="CHOOSE YOUR LOCATION TO BUY GIFT CARD"
+          title="CHOOSE THE LOCATION TO BUY GIFT CARDS"
           color="text-white"
           weight="font-semibold"
         />
