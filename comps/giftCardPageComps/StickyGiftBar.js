@@ -76,7 +76,7 @@ function StickyGiftBar(props) {
                 ></img>
                 <div className="hidden md:block">
                   <div className=" [text-shadow:_0_3px_0_rgb(0_0_0_/_30%)] text-[30px] leading-[1.4] font-os font-bold text-white flex space-x-2 justify-center items-center">
-                    <span>CLICK TO BUY GIFT CARDS -</span>
+                    <span>BUY GIFT CARDS -</span>
 
                     <span>$25</span>
                     <span className="h-[8px] w-[8px] rounded-full bg-white"></span>
