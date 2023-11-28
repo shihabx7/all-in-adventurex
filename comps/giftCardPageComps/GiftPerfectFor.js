@@ -139,11 +139,11 @@ function GiftPerfectFor(props) {
                       Companies and Co-Workers
                     </h3>
                     <p className="text-[#4A2F03] lg:text-lg leading-[1.6] mt-2">
-                      Buy the gift cards in bulk and effortlessly distribute
-                      them among co-workers and picture them strengthening their
-                      bonds and communication, all thanks to your escape room
-                      gift cards. Don’t wait to secure this unbreakable
-                      team-building opportunity this holiday season!
+                      Buy gift cards in bulk and make it easy to distribute them
+                      among your co-workers. Picture them strengthening their
+                      problem-solving, bonds, and communication, all thanks to
+                      your escape room gift cards. Don't wait to secure this
+                      unbreakable team-building opportunity this holiday season!
                     </p>
                   </div>
                   <div className="gprf-img md:max-w-[45%] order-1 md:order-2">
@@ -217,11 +217,8 @@ function GiftPerfectFor(props) {
                       People inherently love a touch of suspense and thrill,
                       especially when it comes to gifts. Why deny them that
                       thrill with a traditional gift, when you can surprise them
-                      with All In Adventures escape room gift cards for
+                      with All In Adventures escape room gift cards? Perfect for
                       Christmas, Birthday, Anniversary, Holiday, or just to
-                      bring them joy!” with “when you can surprise them with All
-                      In Adventures escape room gift cards for Christmas, their
-                      Birthday, Anniversary, Promotion, Retirement - or just to
                       bring them joy!
                     </p>
                   </div>

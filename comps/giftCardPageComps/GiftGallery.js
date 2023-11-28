@@ -18,18 +18,22 @@ function GiftGallery(props) {
       </div>
       <div className="gift-gal-container-wrapper max-w-7xl mx-auto ">
         <div className="gsvenn-container ">
+          {/*========================Section Title======================*/}
           <div className="sec-title gs-title max-w-[768px] mx-auto">
             <TitleSeparator
-              title="ALL IN ADVENTURES GALLERY"
+              title="ADVENTURE GALLERY"
               color="dark-gold"
               weight="font-bold"
             />
             <p className="text-lg text-[#2e2e2e] mt-2 text-center">
-              Meet some of our happy adventurers and a few of the scenes from
-              our Escape From Alcatraz escape game. Experience this game at All
-              In Adventures.
+              Teams can have their group picture taken after their room with
+              exciting props and a variety of backgrounds to choose from. This
+              digital memento is included in the experience at no extra charge
+              and is great for sharing with friends and family to commemorate
+              the experience.
             </p>
           </div>
+          {/*========================Section Title end======================*/}
           {/*========================gallery grid======================*/}
           <div className="ggl-container flex justify-center mt-8 md:mt-12 ">
             <div className="grid gridcols-1 md:grid-cols-2 gap-3 md:gap-4 lg:grid-cols-3 lg:gap-6">

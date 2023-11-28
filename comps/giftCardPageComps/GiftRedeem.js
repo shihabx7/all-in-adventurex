@@ -28,9 +28,9 @@ const GiftRedeem = (props) => {
             weight="font-bold"
           />
           <p className="mt-4 text-[#2E2E2E] max-w-[800px] mx-auto text-center lg:text-lg">
-            Your gift recipients are in for a treat to experience one of these
-            escape room games at the chosen All In Adventures store — what
-            mystery will they unravel?
+            Your gift recipients are in for a treat when they experience one of
+            these great escape room games at their local All In Adventures store
+            — what mystery will they unravel?
           </p>
         </div>
         {/** =================section title end============= */}

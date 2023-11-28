@@ -28,9 +28,8 @@ const HowGiftCardsWork = (props) => {
                   Choose Your Gift Card
                 </h3>
                 <p className="text-white md:text-lg mt-1 md:mt-2">
-                  Set the mood by choosing from the 2 color themes, Black or
-                  Golden. Get to tailor your gift according to your desired
-                  monetary value.
+                  You can choose from $25, $50, $100, or set a custom amount.
+                  There is no limit to your gifting.
                 </p>
               </div>
               <div className="hwgift-item my-6">
@@ -47,12 +46,12 @@ const HowGiftCardsWork = (props) => {
                   Instant Digital Delivery
                 </h3>
                 <p className="text-white md:text-lg mt-1 md:mt-2">
-                  Input recipient name and email to have it delivered instantly
-                  to the inbox without any hassle. Zip, zap, zoom! Simple,
-                  speedy, and oh-so-fun!
+                  Fill in your recipient's name and email to have it delivered
+                  instantly to their inbox without any hassle. Zip, zap, zoom!
+                  Simple, speedy, and oh-so-fun!
                 </p>
               </div>
-              <div className="hwgift-item mt-12">
+              <div className="hwgft-btn hwgift-item mt-12">
                 <GiftGnBtn
                   setShowGiftBookingList={
                     props.setShowGiftBookingList
@@ -70,10 +69,9 @@ const HowGiftCardsWork = (props) => {
         <div className="whwgift-bottom mt-8 md:mt-12">
           <p className="text-[#ADADAD] md:text-lg italic">
             <span className="text-gold">Easy to Redeem :</span> Gift card
-            holders can redeem the card online at allinadventures.com or
-            directly in-store where the Gift Card was purchased. Contact us
-            directly at your local All In Adventures store or call our customer
-            service team at{" "}
+            recipients can redeem the card online at allinadventures.com or
+            in-store where the Gift Card was purchased. Contact your local All
+            In Adventures store or call our customer service team at{" "}
             <a
               className="text-red-600 hover:text-red-700"
               href="tel:844-502-5546"

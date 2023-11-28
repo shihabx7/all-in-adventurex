@@ -158,10 +158,10 @@ export const getLocationIndGiftPageData = (locationslug) => {
         id: 1,
         group: "GIFT_CARDS",
         category: "gift",
-        ques: "How to purchase your Gift Cards?",
+        ques: "How do I purchase the Gift Cards?",
         ans: [
-          "Pick your location, choose the amount, fill in details, add to the cart, and checkout. You'll get an email with the Gift Card number. For gifts, follow the email instructions. For physical cards, Visit your local store. ",
-          '<p class="mt-2 lg:mt-3"><i><b>Note:</b> Check your spam folder if you haven&quot;t received your Gift Card(s).</i></p>',
+          " Pick your location, choose the amount you want to give, fill in details, add to the cart, and checkout. You'll get an email with the Gift Card number. For gifts, follow the email instructions. Physical cards can be purchased at your local store. (Gift Cards are redeemable only at the location where purchased)",
+          '<p class="mt-2 lg:mt-3"><i><b>Note:</b> Check your spam folder if you haven&apos;t received your Gift Card(s).</i></p>',
         ],
       },
       {
@@ -170,7 +170,7 @@ export const getLocationIndGiftPageData = (locationslug) => {
         category: "gift",
         ques: "How do I redeem the Gift Cards?",
         ans: [
-          "Gift card holders can redeem online at <a href='https://allinadventures.com' class='text-red-600 hover:text-red-700'>www.allinadventures.com</a> or in-store where purchased. For assistance, contact your local store or call our customer service at <a href='tel:844-502-5546' class='text-red-600 hover:text-red-700'>844-502-5546</a>",
+          "Gift card holders can redeem online at <a href='https://allinadventures.com' class='text-red-600 hover:text-red-700'>allinadventures.com</a> or in-store where purchased. For assistance, contact your local store or call our customer service at <a href='tel:844-502-5546' class='text-red-600 hover:text-red-700'>844-502-5546</a>",
         ],
       },
       {
