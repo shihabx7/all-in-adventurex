@@ -35,23 +35,14 @@ const EventLocHero = (props) => {
       document.removeEventListener("mouseup", checkIfClickedOutsidehrs);
     };
   }, [showHours]);
+
   const bookAll = (bookingData) => {
     FH.open({
       shortname: bookingData.shortname,
       fallback: "simple",
       fullItems: "yes",
-      // flow:  bookingData.flow,
-      view: "items",
-    });
-  };
-
-  const bookGame = (bookingData) => {
-    FH.open({
-      shortname: bookingData.shortname,
-      fallback: "simple",
-      fullItems: "yes",
       flow: bookingData.flow,
-      view: { item: bookingData.item },
+      view: "items",
     });
   };
 
@@ -114,7 +105,7 @@ const EventLocHero = (props) => {
               <p className=" md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center uppercase">
                 At {props.pagedata.mall} in {props.pagedata.location_name}
               </p>
-              <h1 className="text-gold aia-shadow font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os uppercase max-w-[1000px] mx-auto">
+              <h1 className="text-gold aia-shadow font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os uppercase max-w-[1024px] mx-auto">
                 {props.pagedata.pagetitle}{" "}
               </h1>
               <div
@@ -127,19 +118,33 @@ const EventLocHero = (props) => {
             <div className="max-w-md mx-auto mt-8 ">
               {/*============party-booking  search btn==========*/}
               {props.eventbooking.eventstatus && (
-                <button
-                  onClick={() => bookGame(props.eventbooking)}
-                  className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg"
-                >
-                  BOOK YOUR PARTY
-                </button>
+                <>
+                  {" "}
+                  {props.pagedata.event_slug != "date-night" ? (
+                    <a
+                      href={"#eventbooking"}
+                      className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg"
+                    >
+                      BOOK YOUR EVENT
+                    </a>
+                  ) : (
+                    <button
+                      onClick={() => {
+                        bookAll(props.pagedata.bookingall);
+                      }}
+                      className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg"
+                    >
+                      BOOK YOUR ESCAPE ROOM
+                    </button>
+                  )}
+                </>
               )}
               {!props.eventbooking.eventstatus && (
                 <a
-                  href={"#eventform"}
+                  href={"#eventbooking"}
                   className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg"
                 >
-                  BOOK YOUR PARTY
+                  BOOK YOUR EVENT
                 </a>
               )}
 

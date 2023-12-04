@@ -1141,6 +1141,9 @@ a {
 }
 
 @media only screen and (max-width: 900px) {
+  .logo a img {
+    max-height: 80px;
+  }
   .loc-menu-grid,
   .footer-loc-col-mess {
     column-count: 2;

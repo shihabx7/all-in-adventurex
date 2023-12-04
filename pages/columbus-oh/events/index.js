@@ -9,6 +9,7 @@ import BreadcumNew from "../../../comps/util/BreadcumNew";
 import EventList from "../../../comps/activitiyPageComps/EventList";
 import EventContact from "../../../comps/eventPageComps/EventContact";
 import Seofields from "../../../comps/util/SeoFields";
+import BookYourEvent from "../../../comps/eventPageComps/BookYourEvent";
 
 const LocEventList = (props) => {
   const getLoc = (slug) => {
@@ -48,7 +49,12 @@ const LocEventList = (props) => {
         />
         <EventList
           events={props.eventLocList}
-          locationslug="columbus-oh"
+          eventbooking={props.pagedata.eventbooking}
+          bookingall={props.pagedata.bookingall}
+          locationslug={props.pagedata.locationslug}
+        />
+        <BookYourEvent
+          bookingall={props.pagedata.bookingall}
           eventbooking={props.pagedata.eventbooking}
         />
 
@@ -56,6 +62,7 @@ const LocEventList = (props) => {
           contactdata={props.contactdata}
           locationlist={props.locationlist}
           eventlist={props.eventlist}
+          eventFaq={props.eventFaq}
         />
       </div>
 
@@ -83,6 +90,7 @@ export const getStaticProps = async (context) => {
       // eventlistSlug:locationHomedata.eventlist,
       locationlist: locationHomedata.locationlist,
       eventlist: locationHomedata.eventlistSlug,
+      eventFaq: locationHomedata.event_faq,
     },
     revalidate: 30,
   };

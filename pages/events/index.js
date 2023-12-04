@@ -69,10 +69,10 @@ const showAllevents = (props) => {
 
         <EventHero pagedata={props.pagedata} />
         <EventRootList events={props.events} />
-        <EventContact
+        {/*<EventContact
           locationlist={props.locationlist}
           eventlist={props.eventlist}
-        />
+          />*/}
 
         {/* =========================================================================================main content ======== end */}
       </div>

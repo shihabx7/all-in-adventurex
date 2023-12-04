@@ -1,27 +1,24 @@
 import TitleSeparator from "../util/TitleSeparator";
 import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa";
-import HomeReviewCarousel from "./HomeReviewCarousel";
+import HomeReviewCarousel from "../homepagecomps/HomeReviewCarousel";
 
-const HomeReviewSlider = (props) => {
+const EventRootReview = (props) => {
   return (
-    <div
-      className="homereview relative py-16 md:py-20 lg:py-28 overflow-hidden"
-      style={{
-        backgroundImage:
-          "linear-gradient(65deg,rgba(255, 249, 235,.1),rgba(255, 249, 235,.2)),url('/assets/gridbg.jpg')",
-      }}
-    >
+    <div className="homereview relative py-16 md:py-20 lg:py-28 overflow-hidden bg-center bg-[url('/assets/svg/pattern/brown-color-bg-pattern.svg')] bg-[length:320px_320px] md:bg-[length:460px_460px] lg:bg-[length:600px_600px] bg-repeat">
       {/** =======ornamental icon===== */}
-      <div className="pl-or pl-or-1 absolute top-0 left-0">
-        <img src="/assets/pl-bgi-1.png"></img>
+
+      <div className="bbottom absolute bottom-0 left-0 w-full">
+        <img
+          className="w-full rotate-180"
+          src="/assets/svg/pattern/brown-color-border.svg"
+        ></img>
       </div>
+
       <div className="htb-bg-icon htb-bg-3 absolute">
         <img src="/assets/Navigation.png"></img>
       </div>
-      <div className="htb-bg-icon htb-bg-2 absolute">
-        <img src="/assets/Compas-brown.png"></img>
-      </div>
+
       <div className="htb-bg-icon htb-bg-4 absolute">
         <img src="/assets/Skull.png"></img>
       </div>
@@ -33,7 +30,7 @@ const HomeReviewSlider = (props) => {
           color="dark-gold"
           weight="font-bold"
         />
-        <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
+        <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-8">
           <p className="text-gray-700 md:px-8">
             Our Game Masters are passionate and always work to ensure everyone
             feels like a rockstar while playing! Over 25,000 guests have raved
@@ -56,4 +53,4 @@ const HomeReviewSlider = (props) => {
   );
 };
 
-export default HomeReviewSlider;
+export default EventRootReview;

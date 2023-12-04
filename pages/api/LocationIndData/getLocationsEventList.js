@@ -234,6 +234,45 @@ export const getLocationsEventList = (locationslug) => {
 
     events_list: allEventlist,
     contactdata: getLocSpec(locationslug),
+    event_faq: [
+      {
+        id: 1,
+        group: "event",
+        category: "event",
+        ques: "Can you accommodate large events?",
+        ans: [
+          "Absolutely! We love hosting large parties and corporate events. While we may not be able to accommodate your entire group into one room, we can set your group up into multiple teams to start all at the same time. Full facility capacity varies, but we have successfully hosted groups as large as several hundred people!",
+        ],
+      },
+      {
+        id: 2,
+        group: "event",
+        category: "event",
+        ques: "How much does an escape room cost?",
+        ans: [
+          "The standard cost is $29.89/person (plus tax and fees in those states that it applies) for one escape room experience. We do provide a discount for full-room bookings. Children 6 and under are free with a paying adult.",
+        ],
+      },
+      {
+        id: 3,
+        group: "event",
+        category: "event",
+        ques: "How long is a party?",
+        ans: [
+          "A typical party can last anywhere between 2-3 hours. We are flexible to tailor the experience for any duration and budget that fits your needs.",
+        ],
+      },
+      {
+        id: 4,
+        group: "event",
+        category: "event",
+        ques: "Can I bring my own food?",
+        ans: [
+          "We offer our standard pizza package option and can also offer a custom sandwich platter package or catering option in our separate party room for your party to enjoy after their escape room experience.",
+          "<p class='mt-2 md:mt-3'>We offer our standard pizza package option and can also offer a custom sandwich platter package or catering option in our separate party room for your party to enjoy after their escape room experience.</p>",
+        ],
+      },
+    ],
   };
 
   return eventsData;

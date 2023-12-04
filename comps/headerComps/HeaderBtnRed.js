@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Script from "next/script";
 
 const HeaderBtnRed = (props) => {
   const showloc = () => {
@@ -38,63 +39,50 @@ const HeaderBtnRed = (props) => {
     window.open(link, "_blank");
   };
   return (
-    <div className="heade-btn">
-      {props.bookingall && (
-        <button
-          onClick={() => bookAll(props.bookingall)}
-          className="bg-red-600 cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border border-red-600 hover:border-red-700 transition duration-300"
-        >
-          {props.btntext}
-        </button>
-      )}
-      {props.bookinggame && (
-        <>
-          {props.bookinggame.active == true && (
-            <button
-              onClick={() => bookGame(props.bookinggame)}
-              className="bg-red-600 cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border border-red-600 hover:border-red-700 transition duration-300"
-            >
-              {props.btntext}
-            </button>
-          )}
-          {props.bookinggame.active == false && (
-            <button
-              // onClick={() => bookGame(props.bookinggame)}
-              className="bg-red-600 cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border border-red-600 hover:border-red-700 transition duration-300"
-            >
-              COMING SOON
-            </button>
-          )}
-        </>
-      )}
-      {props.vgamebooking && (
-        <button
-          onClick={() => bookVgame(props.vgamebooking)}
-          className="bg-red-600 cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border border-red-600 hover:border-red-700 transition duration-300"
-        >
-          {props.btntext}
-        </button>
-      )}
-      {props.vgamebookinglink && (
-        <button
-          onClick={() => bookVgameLink(props.vgamebookinglink)}
-          className="bg-red-600 cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border border-red-600 hover:border-red-700 transition duration-300"
-        >
-          {props.btntext}
-        </button>
-      )}
-      {!props.bookinggame &&
-        !props.bookingall &&
-        !props.vgamebooking &&
-        !props.vgamebookinglink && (
+    <>
+      <div className="heade-btn">
+        {props.bookingall && (
           <button
-            onClick={showloc}
+            onClick={() => bookAll(props.bookingall)}
             className="bg-red-600 cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border border-red-600 hover:border-red-700 transition duration-300"
           >
             {props.btntext}
           </button>
         )}
-    </div>
+        {props.bookinggame && (
+          <>
+            {props.bookinggame.active == true && (
+              <button
+                onClick={() => bookGame(props.bookinggame)}
+                className="bg-red-600 cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border border-red-600 hover:border-red-700 transition duration-300"
+              >
+                {props.btntext}
+              </button>
+            )}
+            {props.bookinggame.active == false && (
+              <button
+                // onClick={() => bookGame(props.bookinggame)}
+                className="bg-red-600 cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border border-red-600 hover:border-red-700 transition duration-300"
+              >
+                COMING SOON
+              </button>
+            )}
+          </>
+        )}
+
+        {!props.bookinggame &&
+          !props.bookingall &&
+          !props.vgamebooking &&
+          !props.vgamebookinglink && (
+            <button
+              onClick={showloc}
+              className="bg-red-600 cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border border-red-600 hover:border-red-700 transition duration-300"
+            >
+              {props.btntext}
+            </button>
+          )}
+      </div>
+    </>
   );
 };
 export default HeaderBtnRed;

@@ -7,14 +7,18 @@ import { getLocationEventSlugList } from "../../api/LocationIndData/getLocationE
 import EventLocHero from "../../../comps/eventPageComps/EventLocHero";
 import EventDetails from "../../../comps/eventPageComps/EventDetails";
 import EventContact from "../../../comps/eventPageComps/EventContact";
-import HomeReviewSlider from "../../../comps/homepagecomps/HomeReviewSlider";
+
 import Seofields from "../../../comps/util/SeoFields";
+import BookYourEvent from "../../../comps/eventPageComps/BookYourEvent";
+import EventReview from "../../../comps/eventPageComps/EventReview";
+import EventRootReview from "../../../comps/eventPageComps/EventRootReview";
 const LocationSingleEvent = (props) => {
   return (
     <>
       <Seofields meta={props.pagemeta} />
       <Homenav
         locationslug={props.pagedata.locationslug}
+        eventslug={props.pagedata.event_slug}
         bookingall={props.pagedata.bookingall}
         eventbooking={props.pagedata.eventbooking}
         location={props.pagedata.location_serach_name}
@@ -44,15 +48,35 @@ const LocationSingleEvent = (props) => {
           eventdata={props.eventdata}
           eventname={props.pagedata.eventname}
           eventbooking={props.pagedata.eventbooking}
+          bookingall={props.pagedata.bookingall}
         />
-        <EventContact
-          contactdata={props.contactdata}
-          eventname={props.pagedata.event_name}
-          eventslug={props.pagedata.event_slug}
-          locationlist={props.locationlist}
-          eventlist={props.eventlist}
-        />
-        <HomeReviewSlider reviews={props.reviews} />
+        {props.pagedata.event_slug != "date-night" && (
+          <>
+            <BookYourEvent
+              bookingall={
+                props.pagedata.bookingall ? props.pagedata.bookingall : false
+              }
+              eventbooking={
+                props.pagedata.eventbooking
+                  ? props.pagedata.eventbooking
+                  : false
+              }
+            />
+            <EventContact
+              contactdata={props.contactdata}
+              eventname={props.pagedata.event_name}
+              eventslug={props.pagedata.event_slug}
+              locationlist={props.locationlist}
+              eventlist={props.eventlist}
+              eventFaq={props.eventFaq}
+            />
+          </>
+        )}
+        {props.pagedata.event_slug != "date-night" ? (
+          <EventReview reviews={props.reviews} />
+        ) : (
+          <EventRootReview reviews={props.reviews} />
+        )}
       </div>
 
       <Footer
@@ -97,6 +121,7 @@ export const getStaticProps = async (context) => {
       activitylist: eventsingleData.activitylist,
       eventlist: eventsingleData.eventlist,
       locationlist: eventsingleData.locationlist,
+      eventFaq: eventsingleData.event_faq,
     },
     revalidate: 30,
   };

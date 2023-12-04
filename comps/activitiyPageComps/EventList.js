@@ -1,14 +1,19 @@
 import Link from "next/link";
 import TitleSeparator from "../util/TitleSeparator";
+import BookYourEvent from "../eventPageComps/BookYourEvent";
 
+const bookAll = (bookingData) => {
+  FH.open({
+    shortname: bookingData.shortname,
+    fallback: "simple",
+    fullItems: "yes",
+    flow: bookingData.flow,
+    view: "items",
+  });
+};
 const EventList = (props) => {
-  const showLocation = () => {
-    const body = document.getElementsByTagName("body")[0];
-    body.classList.add("overflow-hidden");
-
-    document.getElementById("locmenu").classList.remove("hidden");
-  };
-  const bookGame = (bookingData) => {
+  {
+    /*const bookGame = (bookingData) => {
     FH.open({
       shortname: bookingData.shortname,
       fallback: "simple",
@@ -16,16 +21,19 @@ const EventList = (props) => {
       flow: bookingData.flow,
       view: { item: bookingData.item },
     });
-  };
+  };*/
+  }
   return (
-    <div
-      className="all-events relative bg-center bg-cover  md:pt-8 lg:pt-12 z-20"
-      style={{ backgroundImage: "url('/assets/game-dt-bg.jpg')" }}
-    >
-      <div className="w-full absolute top-0 left-0 ">
-        <img className="w-full" src="/assets/game-home-or1.jpg"></img>{" "}
+    <div className="all-events relative  md:pt-8 lg:pt-12  z-20 bg-[url('/assets/svg/pattern/brown-color-bg-pattern.svg')] bg-[length:320px_320px] md:bg-[length:460px_460px] lg:bg-[length:600px_600px] bg-repeat">
+      <div className="btop absolute top-0 left-0 w-full">
+        <img
+          className="w-full"
+          src="/assets/svg/pattern/brown-color-border.svg"
+        ></img>
       </div>
-      <div className="all-games-container max-w-7xl mx-auto relative  z-30 pt-[150px] pb-16 md:py-20 lg:py-28 px-4">
+
+      {/**=================== all event list============*/}
+      <div className="all-games-container max-w-7xl mx-auto relative  z-30 pt-[150px] pb-2 md:pt-20 lg:pt-28 px-4">
         <div className="all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
           <div className="section-title  text-center max-w-[800px] mx-auto">
             <TitleSeparator
@@ -68,14 +76,31 @@ const EventList = (props) => {
                   {props.locationslug && props.eventbooking && (
                     <div className="card-game-link mt-4 text-left">
                       {props.eventbooking.eventstatus == true && (
-                        <button
-                          onClick={() => {
-                            bookGame(props.eventbooking);
-                          }}
-                          className="border-2 w-[240px] block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white"
-                        >
-                          BOOK NOW
-                        </button>
+                        <>
+                          {event.event_slug == "date-night" ? (
+                            <button
+                              onClick={() => {
+                                bookAll(props.bookingall);
+                              }}
+                              className="text-center border-2 w-[260px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-red-600 py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white"
+                            >
+                              BOOK YOUR GAME
+                            </button>
+                          ) : (
+                            <a
+                              href={
+                                "/" +
+                                props.locationslug +
+                                "/events/" +
+                                event.event_slug +
+                                "#eventbooking"
+                              }
+                              className="text-center border-2 w-[260px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-red-600 py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white"
+                            >
+                              BOOK EVENT
+                            </a>
+                          )}
+                        </>
                       )}
                       {props.eventbooking.eventstatus == false && (
                         <a
@@ -84,11 +109,11 @@ const EventList = (props) => {
                             props.locationslug +
                             "/events/" +
                             event.event_slug +
-                            "#eventform"
+                            "#eventbooking"
                           }
                           className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-red-600 py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white"
                         >
-                          BOOK NOW
+                          BOOK EVENT
                         </a>
                       )}
 
@@ -113,11 +138,11 @@ const EventList = (props) => {
                           props.locationslug +
                           "/events/" +
                           event.event_slug +
-                          "#eventform"
+                          "#eventbooking"
                         }
                         className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-red-600 py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white"
                       >
-                        BOOK NOW
+                        BOOK EVENT
                       </a>
                       <a
                         href={
@@ -139,7 +164,7 @@ const EventList = (props) => {
                         onClick={showLocation}
                         className="border-2 w-[240px] card-book-btn block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white"
                       >
-                        BOOK NOW
+                        BOOK EVENT
                       </button>
 
                       <a
@@ -174,9 +199,7 @@ const EventList = (props) => {
           )}
         </div>
       </div>
-      <div className="w-full absolute bottom-0 left-0 ">
-        <img className="w-full" src="/assets/game-home-or2.jpg"></img>{" "}
-      </div>
+      {/**=================== all event list============*/}
     </div>
   );
 };

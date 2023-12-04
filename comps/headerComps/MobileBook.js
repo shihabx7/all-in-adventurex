@@ -24,33 +24,58 @@ const MoblieBook = (props) => {
       className="header-book-btn-container  w-full  bg-coffee  lg:hidden z-50"
     >
       <div className="max-w-7xl mx-auto flex justify-between">
+        {/**============event booking================= */}
         <div className="w-[48%]">
           {props.eventbooking && props.eventbooking.eventstatus == true && (
-            <button
-              onClick={() => bookGame(props.eventbooking)}
-              className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white"
-            >
-              BOOK A PARTY
-            </button>
+            <>
+              {!props.eventslug ? (
+                <a
+                  href={"/" + props.locationslug + "/events#eventbooking"}
+                  className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white"
+                >
+                  BOOK EVENT
+                </a>
+              ) : (
+                <>
+                  {props.eventslug == "date-night" ? (
+                    <a
+                      href={"/" + props.locationslug + "/events#eventbooking"}
+                      className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white"
+                    >
+                      BOOK EVENT
+                    </a>
+                  ) : (
+                    <a
+                      href={"#eventbooking"}
+                      className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white"
+                    >
+                      BOOK EVENT
+                    </a>
+                  )}
+                </>
+              )}
+            </>
           )}
           {props.eventbooking && props.eventbooking.eventstatus == false && (
             <a
-              href={"/" + props.locationslug + "/events#eventform"}
+              href={"/" + props.locationslug + "/events#eventbooking"}
               className="bg-red-600 font-medium hover:bg-red-700 py-2 px-2 block text-center text-white"
             >
-              BOOK A PARTY
+              BOOK EVENT
             </a>
           )}
 
           {!props.eventbooking && (
             <a
-              href={"/" + props.locationslug + "/events#eventform"}
+              href={"/" + props.locationslug + "/events#eventbooking"}
               className="bg-red-600 font-medium hover:bg-red-700 py-2 px-2 block text-center text-white"
             >
-              BOOK EVENTS
+              BOOK EVENT
             </a>
           )}
         </div>
+        {/**============event booking end================= */}
+        {/**============game booking================= */}
         <div className="w-[48%]">
           {props.bookingall &&
             (props.publish_status == undefined ||
@@ -96,6 +121,7 @@ const MoblieBook = (props) => {
             </button>
           )}
         </div>
+        {/**============game booking end================= */}
       </div>
     </div>
   );

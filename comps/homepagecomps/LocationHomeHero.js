@@ -4,6 +4,7 @@ import LocationHours from "../locationsPage/LocationHours";
 import { FiX } from "react-icons/fi";
 import { FaAngleDown } from "react-icons/fa";
 import TitleWithSubTitle from "../util/TitleWithSubTitle";
+import Script from "next/script";
 import { useState, useEffect, useRef } from "react";
 
 const LocationHomeHero = (props) => {
@@ -82,6 +83,7 @@ const LocationHomeHero = (props) => {
 
   return (
     <>
+      <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
       {props.locdetail && showHours && (
         <div className="overflow-y-scroll h-screen w-screen bg-[rgba(0,0,0,0.8)] z-[1000000] top-0 left-0  pb-10 md:pb-0 fixed">
           <div className="max-w-[1024px] mx-auto px-3 md:px-6 lg:px-4 relative">

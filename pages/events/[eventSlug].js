@@ -6,9 +6,10 @@ import { FiChevronRight } from "react-icons/fi";
 import { geEventPagetData } from "../api/getEventPageData";
 import EventContact from "../../comps/eventPageComps/EventContact";
 import { getAllEventList } from "../api/getAllEventList";
+import EventRootDetails from "../../comps/eventPageComps/EventRootDetails";
 
 import EventHero from "../../comps/eventPageComps/EventHero";
-import HomeReviewSlider from "../../comps/homepagecomps/HomeReviewSlider";
+import EventRootReview from "../../comps/eventPageComps/EventRootReview";
 import EventDetails from "../../comps/eventPageComps/EventDetails";
 import Seofields from "../../comps/util/SeoFields";
 
@@ -65,17 +66,17 @@ const showSingleEvent = (props) => {
         {/* =======breadcum content and breadcum root page template======== end */}
 
         <EventHero pagedata={props.pagedata} />
-        <EventDetails
+        <EventRootDetails
           eventdata={props.eventdata}
           eventname={props.pagedata.eventname}
         />
-        <EventContact
+        {/*<EventContact
           eventname={props.pagedata.event_name}
           locationlist={props.locationlist}
           eventlist={props.eventlist}
           eventslug={props.pagedata.event_slug}
-        />
-        <HomeReviewSlider reviews={props.reviews} />
+          />*/}
+        <EventRootReview reviews={props.reviews} />
 
         {/* =========================================================================================main content ======== end */}
       </div>

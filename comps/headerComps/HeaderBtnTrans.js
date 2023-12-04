@@ -4,7 +4,8 @@ const HeaderBtnTrans = (props) => {
   const showloc = () => {
     document.getElementById("locmenu").classList.remove("hidden");
   };
-  const bookGame = (bookingData) => {
+  {
+    /* const bookGame = (bookingData) => {
     FH.open({
       shortname: bookingData.shortname,
       fallback: "simple",
@@ -12,7 +13,8 @@ const HeaderBtnTrans = (props) => {
       flow: bookingData.flow,
       view: { item: bookingData.item },
     });
-  };
+  };*/
+  }
 
   // new party booking setion
 
@@ -21,21 +23,41 @@ const HeaderBtnTrans = (props) => {
       {props.locationslug && props.eventbooking && (
         <div>
           {props.eventbooking.eventstatus == true && (
-            <button
-              onClick={() => {
-                bookGame(props.eventbooking);
-              }}
-              className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
-            >
-              BOOK A PARTY
-            </button>
+            <>
+              {props.eventslug ? (
+                <>
+                  {props.eventslug == "date-night" ? (
+                    <a
+                      href={"/" + props.locationslug + "/events#eventbooking"}
+                      className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+                    >
+                      BOOK EVENT
+                    </a>
+                  ) : (
+                    <a
+                      href={"#eventbooking"}
+                      className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+                    >
+                      BOOK EVENT
+                    </a>
+                  )}
+                </>
+              ) : (
+                <a
+                  href={"/" + props.locationslug + "/events#eventbooking"}
+                  className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+                >
+                  BOOK EVENT
+                </a>
+              )}
+            </>
           )}
           {props.eventbooking.eventstatus == false && (
             <a
-              href={"/" + props.locationslug + "/events#eventform"}
+              href={"/" + props.locationslug + "/events#eventbooking"}
               className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
             >
-              BOOK A PARTY
+              BOOK EVENT
             </a>
           )}
         </div>

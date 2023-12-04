@@ -6,7 +6,7 @@ import { FiXSquare } from "react-icons/fi";
 import EventBookBtn from "../util/EventBookBtn";
 import BookYourEvent from "./BookYourEvent";
 
-const EventDetails = (props) => {
+const EventRootDetails = (props) => {
   const [showPack, setShowPack] = useState(false);
   const showToast = () => {
     setShowPack(true);
@@ -30,7 +30,7 @@ const EventDetails = (props) => {
   }, [showPack]);
 
   return (
-    <div className="event-detail relative overflow-hidden bg-[url('/assets/svg/pattern/brown-color-bg-pattern.svg')] bg-[length:320px_320px] md:bg-[length:460px_460px] lg:bg-[length:600px_600px] bg-repeat">
+    <div className="event-detail relative overflow-hidden bg-center bg-[url('/assets/svg/pattern/brown-color-bg-pattern.svg')] bg-[length:320px_320px] md:bg-[length:460px_460px] lg:bg-[length:600px_600px] bg-repeat">
       <div className="pl-or pl-or-1 absolute top-0 left-0 z-10">
         <img src="/assets/pl-bgi-1.png"></img>
       </div>
@@ -46,7 +46,7 @@ const EventDetails = (props) => {
       </div>
 
       {/**=========================== section content========================= */}
-      <div className="content-container pt-[134px]  md:pt-32  lg:pt-36 pb-4 xl:pb-6  relative z-20">
+      <div className="content-container py-16  md:pt-24  lg:pt-28 relative z-20">
         {/*===============================event row -1 WHY BOOK A PARTY WITH ALL IN ADVENTURE?================= */}
         <div className="evt-dt-container wbook-bg relative overflow-x-hidden md:overflow-visible">
           <div className="st-bg absolute bottom-[44%] right-0 sm:bottom-[20%] md:right-[-30px] md:bottom-[0px] lg:bottom-[-40px] lg:right-[-60px] xl:bottom-[-16%] xl:right-[-80px] 2xl:bottom-[-16%] 4xl:bottom-[-16%]  2xl:right-[100px] 4xl:right-[200px] 5xl:right-[380px]">
@@ -76,18 +76,10 @@ const EventDetails = (props) => {
                 {props.eventbooking &&
                   props.eventbooking.eventstatus == true && (
                     <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                      {props.eventname == "date night" ? (
-                        <EventBookBtn
-                          label="BOOK YOUR ESCAPE ROOM"
-                          eventbooking={props.eventbooking}
-                          bookingall={props.bookingall}
-                        />
-                      ) : (
-                        <EventBookBtn
-                          label="BOOK YOUR EVENT"
-                          eventbooking={props.eventbooking}
-                        />
-                      )}
+                      <EventBookBtn
+                        label="BOOK YOUR EVENT"
+                        eventbooking={props.eventbooking}
+                      />
                     </div>
                   )}
                 {props.eventbooking &&
@@ -162,18 +154,10 @@ const EventDetails = (props) => {
                   {props.eventbooking &&
                     props.eventbooking.eventstatus == true && (
                       <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                        {props.eventname == "date night" ? (
-                          <EventBookBtn
-                            label="BOOK YOUR ESCAPE ROOM"
-                            eventbooking={props.eventbooking}
-                            bookingall={props.bookingall}
-                          />
-                        ) : (
-                          <EventBookBtn
-                            label="BOOK YOUR EVENT"
-                            eventbooking={props.eventbooking}
-                          />
-                        )}
+                        <EventBookBtn
+                          label="BOOK YOUR EVENT"
+                          eventbooking={props.eventbooking}
+                        />
                       </div>
                     )}
                   {props.eventbooking &&
@@ -229,18 +213,10 @@ const EventDetails = (props) => {
                   {props.eventbooking &&
                     props.eventbooking.eventstatus == true && (
                       <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                        {props.eventname == "date night" ? (
-                          <EventBookBtn
-                            label="BOOK YOUR ESCAPE ROOM"
-                            eventbooking={props.eventbooking}
-                            bookingall={props.bookingall}
-                          />
-                        ) : (
-                          <EventBookBtn
-                            label="BOOK YOUR EVENT"
-                            eventbooking={props.eventbooking}
-                          />
-                        )}
+                        <EventBookBtn
+                          label="BOOK YOUR EVENT"
+                          eventbooking={props.eventbooking}
+                        />
                       </div>
                     )}
                   {props.eventbooking &&
@@ -278,4 +254,4 @@ const EventDetails = (props) => {
   );
 };
 
-export default EventDetails;
+export default EventRootDetails;

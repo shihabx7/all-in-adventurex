@@ -1,18 +1,25 @@
 import TitleSeparator from "../util/TitleSeparator";
 import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa";
-import HomeReviewCarousel from "./HomeReviewCarousel";
+import HomeReviewCarousel from "../homepagecomps/HomeReviewCarousel";
 
-const HomeReviewSlider = (props) => {
+const EventReview = (props) => {
   return (
-    <div
-      className="homereview relative py-16 md:py-20 lg:py-28 overflow-hidden"
-      style={{
-        backgroundImage:
-          "linear-gradient(65deg,rgba(255, 249, 235,.1),rgba(255, 249, 235,.2)),url('/assets/gridbg.jpg')",
-      }}
-    >
+    <div className="homereview relative py-16 md:py-20 lg:py-28 overflow-hidden bg-center bg-[url('/assets/svg/pattern/brown-color-bg-pattern.svg')] bg-[length:320px_320px] md:bg-[length:460px_460px] lg:bg-[length:600px_600px] bg-repeat">
       {/** =======ornamental icon===== */}
+      <div className="btop absolute top-0 left-0 w-full">
+        <img
+          className="w-full "
+          src="/assets/svg/pattern/brown-color-border.svg"
+        ></img>
+      </div>
+      <div className="bbottom absolute bottom-0 left-0 w-full">
+        <img
+          className="w-full rotate-180"
+          src="/assets/svg/pattern/brown-color-border.svg"
+        ></img>
+      </div>
+
       <div className="pl-or pl-or-1 absolute top-0 left-0">
         <img src="/assets/pl-bgi-1.png"></img>
       </div>
@@ -56,4 +63,4 @@ const HomeReviewSlider = (props) => {
   );
 };
 
-export default HomeReviewSlider;
+export default EventReview;

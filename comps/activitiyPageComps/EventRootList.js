@@ -18,13 +18,20 @@ const EventRootList = (props) => {
     });
   };
   return (
-    <div
-      className="all-events relative bg-center bg-cover  md:pt-8 lg:pt-12"
-      style={{ backgroundImage: "url('/assets/game-dt-bg.jpg')" }}
-    >
-      <div className="w-full absolute top-0 left-0 ">
-        <img className="w-full" src="/assets/game-home-or1.jpg"></img>{" "}
+    <div className="all-events relative   md:pt-8 lg:pt-12 bg-[url('/assets/svg/pattern/brown-color-bg-pattern.svg')] bg-[length:320px_320px] md:bg-[length:460px_460px] lg:bg-[length:600px_600px] bg-repeat">
+      <div className="btop absolute top-0 left-0 w-full">
+        <img
+          className="w-full"
+          src="/assets/svg/pattern/brown-color-border.svg"
+        ></img>
       </div>
+      <div className="bbottom absolute bottom-0 left-0 w-full">
+        <img
+          className="w-full rotate-180"
+          src="/assets/svg/pattern/brown-color-border.svg"
+        ></img>
+      </div>
+      {/**=================== all event list============*/}
       <div className="all-games-container max-w-7xl mx-auto relative  z-30 pt-[110px] pb-16 md:py-20 lg:py-28 px-4">
         <div className="all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
           <div className="section-title  text-center max-w-[800px] mx-auto">
@@ -74,7 +81,7 @@ const EventRootList = (props) => {
                           }}
                           className="border-2 w-[240px] block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white"
                         >
-                          BOOK NOW
+                          BOOK EVENT
                         </button>
                       )}
                       {props.eventbooking.eventstatus == false && (
@@ -88,7 +95,7 @@ const EventRootList = (props) => {
                           }
                           className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-red-600 py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white"
                         >
-                          BOOK NOW
+                          BOOK EVENT
                         </a>
                       )}
 
@@ -117,7 +124,7 @@ const EventRootList = (props) => {
                         }
                         className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-red-600 py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white"
                       >
-                        BOOK NOW
+                        BOOK EVENT
                       </a>
                       <a
                         href={
@@ -139,7 +146,7 @@ const EventRootList = (props) => {
                         onClick={showLocation}
                         className="border-2 w-[240px] card-book-btn block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white"
                       >
-                        BOOK NOW
+                        BOOK EVENT
                       </button>
 
                       <a
@@ -174,9 +181,7 @@ const EventRootList = (props) => {
           )}
         </div>
       </div>
-      <div className="w-full absolute bottom-0 left-0 ">
-        <img className="w-full" src="/assets/game-home-or2.jpg"></img>{" "}
-      </div>
+      {/**=================== all event list============*/}
     </div>
   );
 };

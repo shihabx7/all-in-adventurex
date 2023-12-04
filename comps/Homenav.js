@@ -77,6 +77,7 @@ const Homenav = (props) => {
             ref={ref}
           >
             <div className="home-nav-bar flex justify-between items-center py-2 px-2 sm:p-1 lg:py-2 lg:px-0">
+              {/**==========================logo================== */}
               <div className="logo">
                 {props.locationslug && (
                   <a
@@ -92,7 +93,7 @@ const Homenav = (props) => {
                   </a>
                 )}
               </div>
-
+              {/**==========================logo end================== */}
               {/*============location search btn==========*/}
               <LocationBtnH location={props.location} />
               {/*============location search btn==========*/}
@@ -102,18 +103,20 @@ const Homenav = (props) => {
                     <HeaderBtnTrans
                       locationslug={props.locationslug}
                       eventbooking={props.eventbooking}
-                      btntext="BOOK YOUR EVENTS"
+                      eventslug={props.eventslug ? props.eventslug : false}
+                      btntext="BOOK EVENT"
                     />
                   )}
                   {props.locationslug && !props.eventbooking && (
                     <HeaderBtnTrans
                       locationslug={props.locationslug}
-                      btntext="BOOK EVENTS"
+                      eventslug={props.eventslug ? props.eventslug : false}
+                      btntext="BOOK EVENT"
                     />
                   )}
 
                   {!props.locationslug && (
-                    <HeaderBtnTrans btntext="BOOK EVENTS" />
+                    <HeaderBtnTrans btntext="BOOK EVENT" />
                   )}
                 </div>
                 <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
@@ -215,6 +218,7 @@ const Homenav = (props) => {
         {props.locationslug && props.bookingall && (
           <MoblieBook
             locationslug={props.locationslug}
+            eventslug={props.eventslug ? props.eventslug : false}
             bookingall={props.bookingall}
             publish_status={props.publish_status}
             eventbooking={props.eventbooking}
@@ -223,6 +227,7 @@ const Homenav = (props) => {
         {props.locationslug && props.bookinggame && (
           <MoblieBook
             locationslug={props.locationslug}
+            eventslug={props.eventslug ? props.eventslug : false}
             bookinggame={props.bookinggame}
             publish_status={props.publish_status}
             eventbooking={props.eventbooking}
