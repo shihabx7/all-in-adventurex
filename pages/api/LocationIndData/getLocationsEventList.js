@@ -228,6 +228,7 @@ export const getLocationsEventList = (locationslug) => {
         item: bookinglist["party-package"].item,
         flow: bookinglist["party-package"].flow,
         eventstatus: bookinglist["party-package"].eventstatus,
+        locationslug: locationslug,
       },
       locdetail: getLocSpec(locationslug),
     },

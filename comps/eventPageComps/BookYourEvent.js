@@ -104,7 +104,7 @@ function BookYourEvent(props) {
                    text-white text-center font-medium
                     py-4  rounded-full mx-auto text-[16px] lg:text-[14px] xl:text-[16px] w-full block"
                         >
-                          BOOK PARTY ROOM & ESCAPE ROOM
+                          CONTACT US
                         </a>
                       </>
                     )}
