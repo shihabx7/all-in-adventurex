@@ -58,11 +58,7 @@ const Homenav = (props) => {
           <LocationMenuX locationlist={props.locationlist} />
         </div>
       )}
-      {
-        <div id="locmenu" className="loc-menu-holder hidden">
-          <LocationMenu />
-        </div>
-      }
+
       <StickyGiftBar
         locationlist={props.locationlist}
         giftbookinglist={props.giftbookinglist}

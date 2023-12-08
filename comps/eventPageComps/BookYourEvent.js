@@ -92,16 +92,36 @@ function BookYourEvent(props) {
                     </div>
                   </div>
                   <div className="bk-btn text-center pb-5 md:pb-8 px-3 md:px-3 xl:px-5">
-                    <button
-                      onClick={() => {
-                        bookEvent(props.eventbooking);
-                      }}
-                      className="bg-red-600 hover:bg-red-700
+                    {!props.eventbooking.eventstatus && (
+                      <>
+                        <a
+                          href={
+                            "/" +
+                            props.eventbooking.locationslug +
+                            "/contact-store"
+                          }
+                          className="bg-red-600 hover:bg-red-700
+                   text-white text-center font-medium
+                    py-4  rounded-full mx-auto text-[16px] lg:text-[14px] xl:text-[16px] w-full block"
+                        >
+                          BOOK PARTY ROOM & ESCAPE ROOM
+                        </a>
+                      </>
+                    )}
+                    {props.eventbooking.eventstatus && (
+                      <>
+                        <button
+                          onClick={() => {
+                            bookEvent(props.eventbooking);
+                          }}
+                          className="bg-red-600 hover:bg-red-700
                    text-white text-center font-medium
                     py-4  rounded-full mx-auto text-[16px] lg:text-[14px] xl:text-[16px] w-full"
-                    >
-                      BOOK PARTY ROOM & ESCAPE ROOM
-                    </button>
+                        >
+                          BOOK PARTY ROOM & ESCAPE ROOM
+                        </button>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>

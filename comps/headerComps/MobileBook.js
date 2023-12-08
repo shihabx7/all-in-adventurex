@@ -26,7 +26,7 @@ const MoblieBook = (props) => {
       <div className="max-w-7xl mx-auto flex justify-between">
         {/**============event booking================= */}
         <div className="w-[48%]">
-          {props.eventbooking && props.eventbooking.eventstatus == true && (
+          {props.eventbooking && (
             <>
               {!props.eventslug ? (
                 <a
@@ -55,14 +55,6 @@ const MoblieBook = (props) => {
                 </>
               )}
             </>
-          )}
-          {props.eventbooking && props.eventbooking.eventstatus == false && (
-            <a
-              href={"/" + props.locationslug + "/events#eventbooking"}
-              className="bg-red-600 font-medium hover:bg-red-700 py-2 px-2 block text-center text-white"
-            >
-              BOOK EVENT
-            </a>
           )}
 
           {!props.eventbooking && (

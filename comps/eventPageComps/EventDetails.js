@@ -73,29 +73,23 @@ const EventDetails = (props) => {
                   className="mt-3 md:mt-3 lg:mt-4 md:text-[18px] lg:text-[20px] text-gray-700"
                   dangerouslySetInnerHTML={{ __html: props.eventdata.why_book }}
                 ></div>
-                {props.eventbooking &&
-                  props.eventbooking.eventstatus == true && (
-                    <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                      {props.eventname == "date night" ? (
-                        <EventBookBtn
-                          label="BOOK YOUR ESCAPE ROOM"
-                          eventbooking={props.eventbooking}
-                          bookingall={props.bookingall}
-                        />
-                      ) : (
-                        <EventBookBtn
-                          label="BOOK YOUR EVENT"
-                          eventbooking={props.eventbooking}
-                        />
-                      )}
-                    </div>
-                  )}
-                {props.eventbooking &&
-                  props.eventbooking.eventstatus == false && (
-                    <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                      <EventDbtn link="#eventbooking" label="BOOK YOUR EVENT" />
-                    </div>
-                  )}
+                {props.eventbooking && (
+                  <div className="event-notice mt-4 md:mt-6 lg:mt-8">
+                    {props.eventname == "date night" ? (
+                      <EventBookBtn
+                        label="BOOK YOUR ESCAPE ROOM"
+                        eventbooking={props.eventbooking}
+                        bookingall={props.bookingall}
+                      />
+                    ) : (
+                      <EventBookBtn
+                        label="BOOK YOUR EVENT"
+                        eventbooking={props.eventbooking}
+                      />
+                    )}
+                  </div>
+                )}
+
                 {!props.eventbooking && (
                   <div className="event-notice mt-4 md:mt-6 lg:mt-8">
                     <EventDbtn link="#eventbooking" label="BOOK YOUR EVENT" />
@@ -159,32 +153,23 @@ const EventDetails = (props) => {
                     {props.activityname}
                   </p>
 
-                  {props.eventbooking &&
-                    props.eventbooking.eventstatus == true && (
-                      <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                        {props.eventname == "date night" ? (
-                          <EventBookBtn
-                            label="BOOK YOUR ESCAPE ROOM"
-                            eventbooking={props.eventbooking}
-                            bookingall={props.bookingall}
-                          />
-                        ) : (
-                          <EventBookBtn
-                            label="BOOK YOUR EVENT"
-                            eventbooking={props.eventbooking}
-                          />
-                        )}
-                      </div>
-                    )}
-                  {props.eventbooking &&
-                    props.eventbooking.eventstatus == false && (
-                      <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                        <EventDbtn
-                          link="#eventbooking"
-                          label="BOOK YOUR EVENT"
+                  {props.eventbooking && (
+                    <div className="event-notice mt-4 md:mt-6 lg:mt-8">
+                      {props.eventname == "date night" ? (
+                        <EventBookBtn
+                          label="BOOK YOUR ESCAPE ROOM"
+                          eventbooking={props.eventbooking}
+                          bookingall={props.bookingall}
                         />
-                      </div>
-                    )}
+                      ) : (
+                        <EventBookBtn
+                          label="BOOK YOUR EVENT"
+                          eventbooking={props.eventbooking}
+                        />
+                      )}
+                    </div>
+                  )}
+
                   {!props.eventbooking && (
                     <div className="event-notice mt-4 md:mt-6 lg:mt-8">
                       <EventDbtn link="#eventbooking" label="BOOK YOUR EVENT" />
@@ -226,32 +211,23 @@ const EventDetails = (props) => {
                 ></div>
 
                 <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                  {props.eventbooking &&
-                    props.eventbooking.eventstatus == true && (
-                      <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                        {props.eventname == "date night" ? (
-                          <EventBookBtn
-                            label="BOOK YOUR ESCAPE ROOM"
-                            eventbooking={props.eventbooking}
-                            bookingall={props.bookingall}
-                          />
-                        ) : (
-                          <EventBookBtn
-                            label="BOOK YOUR EVENT"
-                            eventbooking={props.eventbooking}
-                          />
-                        )}
-                      </div>
-                    )}
-                  {props.eventbooking &&
-                    props.eventbooking.eventstatus == false && (
-                      <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                        <EventDbtn
-                          link="#eventbooking"
-                          label="BOOK YOUR EVENT"
+                  {props.eventbooking && (
+                    <div className="event-notice mt-4 md:mt-6 lg:mt-8">
+                      {props.eventname == "date night" ? (
+                        <EventBookBtn
+                          label="BOOK YOUR ESCAPE ROOM"
+                          eventbooking={props.eventbooking}
+                          bookingall={props.bookingall}
                         />
-                      </div>
-                    )}
+                      ) : (
+                        <EventBookBtn
+                          label="BOOK YOUR EVENT"
+                          eventbooking={props.eventbooking}
+                        />
+                      )}
+                    </div>
+                  )}
+
                   {!props.eventbooking && (
                     <div className="event-notice mt-4 md:mt-6 lg:mt-8">
                       <EventDbtn link="#eventbooking" label="BOOK YOUR EVENT" />

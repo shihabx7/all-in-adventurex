@@ -7,7 +7,7 @@ import { getLocationEventSlugList } from "../../api/LocationIndData/getLocationE
 import EventLocHero from "../../../comps/eventPageComps/EventLocHero";
 import EventDetails from "../../../comps/eventPageComps/EventDetails";
 import EventContact from "../../../comps/eventPageComps/EventContact";
-import HomeReviewSlider from "../../../comps/homepagecomps/HomeReviewSlider";
+
 import Seofields from "../../../comps/util/SeoFields";
 import BookYourEvent from "../../../comps/eventPageComps/BookYourEvent";
 import EventReview from "../../../comps/eventPageComps/EventReview";
@@ -120,6 +120,7 @@ export const getStaticProps = async (context) => {
       contactdata: eventsingleData.contactdata,
       activitylist: eventsingleData.activitylist,
       eventlist: eventsingleData.eventlist,
+      locationlist: eventsingleData.locationlist,
       eventFaq: eventsingleData.event_faq,
     },
     revalidate: 30,
