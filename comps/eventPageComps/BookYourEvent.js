@@ -84,10 +84,23 @@ function BookYourEvent(props) {
                         PARTY ROOM + ESCAPE ROOM
                       </h3>
                       <p className="text-[#232323] text-[16px] md:text-[17px] xl:text-[18px] font-thin text-center mt-2">
-                        Ideal for groups of 6-10 people looking to enjoy both
-                        the party room and the excitement of an escape room.
-                        Confirm your booking online by choosing your party room,
-                        catering package, and escape room theme.
+                        {!props.eventbooking.eventstatus && (
+                          <>
+                            To reserve our Party Room and arrange catering
+                            services at this location, please contact our store
+                            manager directly, as online booking is not available
+                            for this location. However, you can book games
+                            online.
+                          </>
+                        )}
+                        {props.eventbooking.eventstatus && (
+                          <>
+                            Ideal for groups of 6-10 people looking to enjoy
+                            both the party room and the excitement of an escape
+                            room. Confirm your booking online by choosing your
+                            party room, catering package, and escape room theme.
+                          </>
+                        )}
                       </p>
                     </div>
                   </div>
