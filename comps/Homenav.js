@@ -13,6 +13,8 @@ import HeaderBtnTrans from "./headerComps/HeaderBtnTrans";
 import MoblieBook from "./headerComps/MobileBook";
 import LocationMenuX from "./headerComps/LocationMenuX";
 import StickyGiftBar from "./giftCardPageComps/StickyGiftBar";
+import { isActiveGiftBooking } from "../pages/api/LocationIndData/bookingList";
+
 const Homenav = (props) => {
   const [showSlug, setShowSlug] = useState(null);
 
@@ -36,6 +38,9 @@ const Homenav = (props) => {
       }
     }
   }
+  const isGiftActiveForLoaction = (locationSlug) => {
+    return isActiveGiftBooking(locationSlug);
+  };
 
   useEffect(() => {
     const checkIfClickedOutside = (e) => {
@@ -58,13 +63,22 @@ const Homenav = (props) => {
           <LocationMenuX locationlist={props.locationlist} />
         </div>
       )}
-
-      <StickyGiftBar
-        locationlist={props.locationlist}
-        giftbookinglist={props.giftbookinglist}
-        locationslug={props.locationslug ? props.locationslug : false}
-        bookinggame={props.bookinggame ? props.bookinggame : false}
-      />
+      {props.locationslug && isGiftActiveForLoaction(props.locationslug) && (
+        <StickyGiftBar
+          locationlist={props.locationlist}
+          giftbookinglist={props.giftbookinglist}
+          locationslug={props.locationslug ? props.locationslug : false}
+          bookinggame={props.bookinggame ? props.bookinggame : false}
+        />
+      )}
+      {!props.locationslug && (
+        <StickyGiftBar
+          locationlist={props.locationlist}
+          giftbookinglist={props.giftbookinglist}
+          locationslug={props.locationslug ? props.locationslug : false}
+          bookinggame={props.bookinggame ? props.bookinggame : false}
+        />
+      )}
       <header id="header" className="bg-coffee w-full ">
         <div id="header-container-s" className="header-container-s">
           {/*<HeaderNotice/>*/}
@@ -200,6 +214,7 @@ const Homenav = (props) => {
                   locationslug={props.locationslug}
                   eventlist={props.eventlist}
                   activitylist={props.activitylist}
+                  activeGiftCards={isActiveGiftBooking(props.locationslug)}
                 ></SubMenu>
               )}
               {showMe && !props.locationslug && (

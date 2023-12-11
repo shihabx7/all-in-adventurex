@@ -17,6 +17,9 @@ export const bookingList = (activityslug, locationslug) => {
   return bookingdata;
 };
 
+export const isActiveGiftBooking = (slug) => {
+  return blist[slug]["gift-card"].active;
+};
 const blist = {
   //**************** NY ******* */
   //===================================albany-ny===========
@@ -139,7 +142,7 @@ const blist = {
       flow: "17840",
     },
 
-    "gift-card": { active: true, type: "gift", item: "360206", flow: "no" },
+    "gift-card": { active: false, type: "gift", item: "360206", flow: "no" },
     "gift-addon": {
       active: true,
       item: "349134",

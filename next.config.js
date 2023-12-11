@@ -146,6 +146,12 @@ const buffaloRed = [
     permanent: prm,
   },
   {
+    source: "/buffalo-ny/gift-cards",
+    destination: "/buffalo-ny",
+    permanent: false,
+  },
+
+  {
     source: "/rooms/category/buffalo-ny",
     destination: "/buffalo-ny/activities",
     permanent: prm,

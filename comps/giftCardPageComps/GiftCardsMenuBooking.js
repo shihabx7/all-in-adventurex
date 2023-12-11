@@ -3,7 +3,7 @@ import { FiX } from "react-icons/fi";
 import { FaAngleRight } from "react-icons/fa";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { bookingList } from "../../pages/api/LocationIndData/bookingList";
+import { isActiveGiftBooking } from "../../pages/api/LocationIndData/bookingList";
 const GiftCardsMenuBooking = (props) => {
   const closelocmenu = () => {
     const body = document.getElementsByTagName("body")[0];
@@ -45,27 +45,31 @@ const GiftCardsMenuBooking = (props) => {
                 <div className="loc-item-box py-2 border-dark-coffee">
                   {loc.cities.map((item) => {
                     return (
-                      <div
-                        key={loc.id + item.id}
-                        className=" loc-item py-2 border-b border-dark-coffee"
-                      >
-                        <a
-                          href={"/" + item.slug + "/gift-cards"}
-                          className="loc-link"
-                        >
-                          <div className="flex space-x-1 items-center md:text-lg">
-                            <span className="golden-text">
-                              {item.city}, {loc.state}
-                            </span>
-                            <span className="text-gold">
-                              <FaAngleRight />
-                            </span>
+                      <>
+                        {isActiveGiftBooking(item.slug) && (
+                          <div
+                            key={loc.id + item.id}
+                            className=" loc-item py-2 border-b border-dark-coffee"
+                          >
+                            <a
+                              href={"/" + item.slug + "/gift-cards"}
+                              className="loc-link"
+                            >
+                              <div className="flex space-x-1 items-center md:text-lg">
+                                <span className="golden-text">
+                                  {item.city}, {loc.state}
+                                </span>
+                                <span className="text-gold">
+                                  <FaAngleRight />
+                                </span>
+                              </div>
+                              <div className="text-gray-500  text-sm md:text-base ">
+                                {item.mall}
+                              </div>
+                            </a>
                           </div>
-                          <div className="text-gray-500  text-sm md:text-base ">
-                            {item.mall}
-                          </div>
-                        </a>
-                      </div>
+                        )}
+                      </>
                     );
                   })}
                 </div>
