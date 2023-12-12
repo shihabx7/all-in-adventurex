@@ -76,7 +76,7 @@ const location = (props) => {
       />
       <div id="mainContent" className="main-content">
         {/* =======header content and breadcum======== */}
-        {console.log(props.eventbooking[1])}
+
         <div className="breadcum py-1 md:py-1 lg:py-3 bg-[#fffceb]">
           <Breadcrumbs
             listClassName="max-w-7xl mx-auto px-2 md:px-4 breadcum-list text-sm md:text-base lg:text-lg"
@@ -127,10 +127,15 @@ const location = (props) => {
           events={props.events}
           locationslug={props.pagedata.slug}
         />
-        <BuyGiftCard
-          locationslug={props.pagedata.slug}
-          bookingData={props.bookingData}
-        />
+        {props.bookingData["gift-card"].active && (
+          <>
+            <BuyGiftCard
+              locationslug={props.pagedata.slug}
+              bookingData={props.bookingData}
+            />
+          </>
+        )}
+
         <WhatIsEscape />
         <WhoCanplay />
         <HomeReviewSliderLoc reviews={props.reviews} />

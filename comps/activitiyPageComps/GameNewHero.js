@@ -25,7 +25,7 @@ const GameLocHero = (props) => {
     <>
       <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
       <div
-        className="home-hero"
+        className="home-hero bg-[#111111]"
         style={{
           background: "url('" + props.pagedata.coverimageL + "')",
         }}

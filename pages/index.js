@@ -40,21 +40,12 @@ export default function Home({
 
       <div id="mainContent" className="main-content">
         <div
-          className="home-hero"
+          className="home-hero bg-[#111111]"
           style={{
             backgroundImage:
               "url('/assets/allinadventures-escape-room-home-hero.jpg')",
           }}
         >
-          <div>
-            {" "}
-            {
-              //console.log(mainprops)
-            }
-            {
-              //console.log(reviews)
-            }
-          </div>
           <HomeHero pagedata={pagedata}></HomeHero>
         </div>
         <Howtobook></Howtobook>
