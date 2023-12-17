@@ -85,6 +85,33 @@ const LocationDetails = (props) => {
             <div className="loc-dt-icon w-[30px] md:w-[36px]">
               <img src="/assets/svg/event-icon-pin.svg"></img>
             </div>
+
+            <div className="loc-dt-text text-[#232323]">
+              <a
+                target="_blank"
+                href={getDirection(
+                  props.locdetail.address,
+                  props.locdetail.slug,
+                  props.locdetail.zip,
+                  props.locdetail.city
+                )}
+                className="hover:text-blue-700"
+              >
+                <span className="text-blue-600 font-medium">Direction: </span>
+                {getAddress(
+                  props.locdetail.address,
+                  props.locdetail.slug,
+                  props.locdetail.zip,
+                  props.locdetail.city
+                )}
+              </a>
+            </div>
+          </div>
+          <div className="flex space-x-2 border-b border-[#D2C6AA] py-2 px-2 lg:py-3 md:text-lg ">
+            <div className="loc-dt-icon w-[30px] md:w-[36px]">
+              <img src="/assets/svg/event-icon-pin.svg"></img>
+            </div>
+
             <div className="loc-dt-text text-[#232323]">
               <a
                 target="_blank"
@@ -228,11 +255,8 @@ const LocationDetails = (props) => {
 
         <div className="loc-notice mt-4 md:mt-8">
           <ul className="star-list pl-6 lg:text-lg text-[#424242] font-thin">
-            <li className="my-2">{props.locdetail.entry_guid}</li>
-            <li className="my-2">
-              We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo,
-              Zelle, Cash App and in some locations Apple Pay and Samsung Pay.
-            </li>
+            <li className="my-2">{props.locdetail.entry_guid} </li>
+            <li className="my-2">{props.locdetail.payment_options}</li>
           </ul>
         </div>
         <div className="loc-cont flex justify-center mt-16">

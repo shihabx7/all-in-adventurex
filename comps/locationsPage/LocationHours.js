@@ -30,12 +30,15 @@ const LocationHours = (props) => {
   return (
     <div>
       <div className="loc-info-tbl mt-8">
-        <div className="locinfo-row border-y border-[#D2C6AA] py-2 px-2 lg:py-3">
-          <div className="flex space-x-1 md:items-center md:text-lg ">
-            <div className="loc-dt-icon w-[44px] md:w-auto">
-              <img src="/assets/svg/event-icon-pin.svg"></img>
+        <div className="store-map locinfo-row border-y border-[#D2C6AA] py-2 px-2 lg:py-3">
+          <div className="flex space-x-2 md:items-center md:text-lg ">
+            <div className="loc-dt-icon  md:w-auto">
+              <img
+                className="w-[24px]"
+                src="/assets/svg/event-icon-pin.svg"
+              ></img>
             </div>
-            <div className="loc-dt-text text-[#232323]">
+            <div className="loc-dt-text text-[#232323] flex-1">
               <a
                 target="_blank"
                 href={getDirection(
@@ -46,7 +49,7 @@ const LocationHours = (props) => {
                 )}
                 className="hover:text-blue-700"
               >
-                <span className="text-blue-600 font-medium">Direction: </span>
+                <span className=" font-medium">Store Map: </span>
                 {getAddress(
                   props.locdetail.address,
                   props.locdetail.slug,
@@ -57,13 +60,39 @@ const LocationHours = (props) => {
             </div>
           </div>
         </div>
+        <div className="direction locinfo-row border-b border-[#D2C6AA] py-2 px-2 lg:py-3">
+          <div className="flex space-x-2  md:text-lg ">
+            <div className="loc-dt-icon  md:w-auto ">
+              <img
+                className="w-[24px]"
+                src="/assets/svg/util/store_direction.svg"
+              ></img>
+            </div>
+            <div className="loc-dt-text text-[#232323] flex-1">
+              <div>
+                <span>
+                  <b>Diection: </b>
+                </span>
+                <span> {props.locdetail.entry_guid}</span>
+              </div>
+              {props.locdetail.entry_guid2 && (
+                <div className="mt-2">
+                  <span>{props.locdetail.entry_guid2}</span>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
         <div className="locinfo-row border-b border-[#D2C6AA] py-2 px-2 lg:py-3">
           <div className="flex  flex-col md:flex-row justify-between md:space-x-1 space-y-2 md:space-y-0 md:items-center md:text-lg ">
-            <div className="flex space-x-2 md:w-[50%]">
+            <div className="flex space-x-2 items-center md:w-[50%]">
               <div className="loc-dt-icon">
-                <img src="/assets/svg/event-icon-phone.svg"></img>
+                <img
+                  className="w-[24px]"
+                  src="/assets/svg/event-icon-phone.svg"
+                ></img>
               </div>
-              <div className="loc-dt-text text-[#232323] md:text-lg">
+              <div className="loc-dt-text text-[#232323] md:text-lg flex-1">
                 <p>
                   <a
                     className="md:text-lg hover:text-blue-700"
@@ -74,9 +103,12 @@ const LocationHours = (props) => {
                 </p>
               </div>
             </div>
-            <div className="flex space-x-2 md:w-[50%]">
+            <div className="flex space-x-2 items-center md:w-[50%]">
               <div className="loc-dt-icon">
-                <img src="/assets/svg/event-icon-email.svg"></img>
+                <img
+                  className="w-[24px]"
+                  src="/assets/svg/event-icon-email.svg"
+                ></img>
               </div>
               <div className="loc-dt-text">
                 <p>
@@ -95,19 +127,25 @@ const LocationHours = (props) => {
         </div>
         <div className="locinfo-row  py-2 px-2 lg:py-3">
           <div className="flex  flex-col md:flex-row justify-between md:space-x-1 space-y-2 md:space-y-0 md:items-center md:text-lg ">
-            <div className="flex space-x-2 md:w-[50%]">
+            <div className="flex space-x-2 items-center md:w-[50%]">
               <div className="loc-dt-icon">
-                <img src="/assets/svg/event-icon-parking.svg"></img>
+                <img
+                  className="w-[24px]"
+                  src="/assets/svg/event-icon-parking.svg"
+                ></img>
               </div>
-              <div className="loc-dt-text md:text-lg">
+              <div className="loc-dt-text md:text-lg flex-1">
                 <p>{props.locdetail.mall} Parking </p>
               </div>
             </div>
-            <div className="flex space-x-2 md:w-[50%]">
+            <div className="flex space-x-2 items-center md:w-[50%]">
               <div className="loc-dt-icon">
-                <img src="/assets/svg/event-icon-chair.svg"></img>
+                <img
+                  className="w-[24px]"
+                  src="/assets/svg/event-icon-chair.svg"
+                ></img>
               </div>
-              <div className="loc-dt-text md:text-lg">
+              <div className="loc-dt-text md:text-lg flex-1">
                 <p>Wheelchair Accessibility</p>
               </div>
             </div>

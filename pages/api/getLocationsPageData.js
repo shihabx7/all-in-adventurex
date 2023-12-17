@@ -22,7 +22,10 @@ export const getLocationsPageData = () => {
             city_include:
               "Our customers come from many surrounding cities, including Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield and many more!",
             entry_guid:
-              "Use the 2nd floor mall entrance between the J.C.Penney and Pottery Barn, take a left at the escalators. We are located on the right side, between Athleta and Zara, across from Banana Republic.",
+              "Use the 2nd floor mall entrance between the J.C.Penney and Qlz, take a left at the escalators. We are located on the right side, between Athleta and Zara, across from Banana Republic.",
+
+            payment_options:
+              "We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             address: "All In Adventures Escape Rooms 1 Crossgates Mall Rd D212",
             zip: "12203",
             fivestar: "2000+",
@@ -172,7 +175,9 @@ export const getLocationsPageData = () => {
             city_include:
               "Our customers come from many surrounding cities, including North Tonawanda, Cheektowaga, Medina, Hamburg, Amherst and many more!",
             entry_guid:
-              "Our store is located on the 1st floor between JC Penny's and Macy's, across from Lord and Taylor.",
+              "Our store is located on the 1st floor near Macy's, next to Foot Locker.",
+            payment_options:
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             zip: "14225",
             fivestar: "4600+",
             total_rev: "4279",
@@ -320,6 +325,8 @@ export const getLocationsPageData = () => {
               "Our customers come from many surrounding cities, including Vernon, Newton, West Nyack, Poughkeepsie, Newburgh and many more!",
             entry_guid:
               "Our store is located on the 2nd floor. We are between H&M and American Eagle clothing stores.",
+            payment_options:
+              "We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             address: "Escape the Mystery Room 1 Galleria Dr Suite 211",
             slug: "middletown-ny",
             zip: "10941",
@@ -468,7 +475,9 @@ export const getLocationsPageData = () => {
             city_include:
               "Our customers come from many surrounding cities, including Auburn, Oneida, Oswego, New York and many more!",
             entry_guid:
-              "Our store is on the 2nd floor right next to Lindt Chocolate shop.  You can use the entrance by the Cheesecake Factory.",
+              "Our store is on the 2nd floor right next to Eddie Bauer. You can use the entrance by the Cheesecake Factory.",
+            payment_options:
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "syracuse-ny",
             address: "Escape the Mystery Room 9090 Destiny USA Dr K201",
             zip: "13204",
@@ -616,7 +625,9 @@ export const getLocationsPageData = () => {
             city_include:
               "Our customers come from many surrounding cities, including Belleville, Clayton, Dexter, Oswego, Limerick and many more!",
             entry_guid:
-              "Our Store is located near Sears and next to Fun on the Run arcade.",
+              "Our Store is located near Hobby Lobby, across from Billy Beez.",
+            payment_options:
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             address:
               "Escape the Mystery Room 21182 Salmon Run Mall Loop W Suite D",
             slug: "watertown-ny",
@@ -765,7 +776,11 @@ export const getLocationsPageData = () => {
             city_include:
               "Our customers come from many surrounding cities, including Montclair, Massapequa, White Plains, Morristown, Danbury and many more!",
             entry_guid:
-              "Our store is located on the 3rd floor food court level, just across the hall from 5 Below store.",
+              "Our store is located on the third floor three stores from bath and body works, the closest parking is located outside five star appliances. If you enter from five star appliances on the second floor come see us one floor up on level three across from five below.",
+            entry_guid2:
+              "Our Axe throwing store is also located on level three next to five below.",
+            payment_options:
+              "We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "west-nyack-ny",
             address: "Escape the Mystery Room 3681 Palisades Center Dr",
             zip: "10994",
@@ -913,6 +928,8 @@ export const getLocationsPageData = () => {
               "Our customers come from many surrounding cities, including Rotterdam, Troy, Clifton Park, Schenectady, Pittsfield and many more!",
             publish_status: true,
             entry_guid: "Upstairs from 110 Grill.",
+            payment_options:
+              "We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "poughkeepsie-ny",
             address: "All In Adventures Escape Rooms 2001 South Rd Space C205",
             zip: "12601",
@@ -1071,6 +1088,8 @@ export const getLocationsPageData = () => {
               "Our customers come from many surrounding cities, including Chapel Hill, Morrisville, Carrboro, Cary, Apex, Holly Springs, Zebulon, Wake Forest, Hillsborough, Pittsboro and many more!",
             entry_guid:
               "We are right off exit 17 on Interstate-540, and directly off of Capital Blvd. behind Best Buy. We are attached on the outside of the mall next to Barnes & Noble.",
+            payment_options:
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations.",
             slug: "raleigh-nc",
             address:
               "All In Adventures Escape Rooms 5959 Triangle Town Blvd Space EU 2113",
@@ -1231,6 +1250,8 @@ export const getLocationsPageData = () => {
               "Our customers come from many surrounding cities, including Easthampton, Windsor Locks, Amherst, Gardner, Northampton and many more!",
             entry_guid:
               "Our store is located between Pinz and Jo~Ann Fabric, across from Body Spa and Elite Tae Kwon Do.",
+            payment_options:
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "hadley-ma",
             address: "All In Adventures Escape Rooms 367 Russell St A07",
             zip: "01035",
@@ -1378,7 +1399,9 @@ export const getLocationsPageData = () => {
             city_include:
               "Our customers come from many surrounding cities, including Worcester, Williamsburg, Chesterfield, Easthampton and many more!",
             entry_guid:
-              "Our store is located on the 1st floor across from Baby Gap.",
+              "Our store is located on the 1st floor across from Gap and Hobby Lobby. The best entrance is to the left of Round 1.",
+            payment_options:
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "holyoke-ma",
             address: "All In Adventures Escape Rooms 50 Holyoke St Space F292",
             zip: "01040",
@@ -1527,7 +1550,9 @@ export const getLocationsPageData = () => {
             city_include:
               "Our customers come from many surrounding cities, including Boston, New Bedford, Plymouth, Falmouth, MA and many more!",
             entry_guid:
-              "Our store is located around the corner from the Target entrance, across from Clark's Outlet and next to Victoria's Secret.",
+              "Our store is located around the corner from the Target entrance, across from Lenscrafters and next to Garden Essence.",
+            payment_options:
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "kingston-ma",
             address:
               "Escape the Mystery Room+1 Kingston Collection Way Unit B106",
@@ -1677,7 +1702,10 @@ export const getLocationsPageData = () => {
             publish_status: true,
             city_include:
               "Our customers come from many surrounding cities, including Auburn, Boston, New Bedford and many more!",
-            entry_guid: "Our store is on the 2nd floor near the Macy's store.",
+            payment_options:
+              "We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
+            entry_guid:
+              "Our store is on the 2nd floor near the main Macy's store (not Macy's Men's store).",
             slug: "n-attleborough-ma",
             address: "Escape the Mystery Room 999 S Washington St W213",
             zip: "02760",
@@ -1835,7 +1863,9 @@ export const getLocationsPageData = () => {
             city_include:
               "Our customers come from many surrounding cities, including New Haven, Stamford, Danbury, Middletown, and many more! ",
             entry_guid:
-              "Customers can find the store fastest via the Target entrance. Head to the lower-level main corridor, take a left and we are on the right side next to Eblens.",
+              "Customers can find the store fastest by entering the mall from the front or the back, near Target. You are on the lower level. Head up the main mall corridor and we are on the right, between Track 23 and Snipes.",
+            payment_options:
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "milford-ct",
             address:
               "All In Adventures Escape Rooms 1201 Boston Post Rd Suite 1220",
@@ -1985,7 +2015,9 @@ export const getLocationsPageData = () => {
             city_include:
               "Our customers come from many surrounding cities, including Hartford, West Hartford, Middletown, Windsor Locks, Bristol, New Britain and many more!",
             entry_guid:
-              "Our Store is located on the 2nd floor, between Spencer's and Sears. The best entrance to use is the mall entrance between Maggie Mcfly's and Sears.",
+              "Our Store is located on the 2nd floor at the end across from Track 23. The best entrance is next to Maggie McFly's, use the escalator closest to the entrance.",
+            payment_options:
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "manchester-ct",
             address: "All In Adventures Escape Rooms 194 Buckland Hills Dr",
             zip: "06042",
@@ -2142,8 +2174,9 @@ export const getLocationsPageData = () => {
             publish_status: true,
             city_include:
               "Our customers come from many surrounding cities, including Philadelphia, King of Prussia, Doylestown, Princeton, NJ and many more!",
-            entry_guid:
-              "Our store is located in the AMC wing, across from Modell's Sporting Goods.",
+            entry_guid: "Our store is located on the AMC Theatre wing.",
+            payment_options:
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "bensalem-pa",
             address:
               "All In Adventures Escape Rooms 707 Neshaminy Mall Space 672",
@@ -2301,7 +2334,10 @@ export const getLocationsPageData = () => {
             publish_status: true,
             city_include:
               "Our customers come from many surrounding cities, including Glenn Dale, Crofton, Greenbelt, South Laurel, Mitchellville, New Carrollton, Odenton, Beltsville, Laurel, East Riverdale, College Park, Kettering, Largo, Hyattsville, Severn and many more!",
-            entry_guid: "Our store is between Barnes & Noble and LA Fitness.",
+            entry_guid:
+              "Our store is located across from GNC and directly next to Gold USA.",
+            payment_options:
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "bowie-md",
             address: "All In Adventures Escape Rooms 15421 Emerald Way",
             zip: "20716",
@@ -2450,6 +2486,8 @@ export const getLocationsPageData = () => {
               "Our customers come from many surrounding cities, including Perry Hall, Rossville, Middle River, Overlea, Carney, Parkville, Essex, Rosedale, Towson, Joppatowne, Edgewood, Dundalk, Edgemere, Baltimore, Mays Chapel and many more!",
             entry_guid:
               "Our Store is located on the Upper Level next to JC Penny.",
+            payment_options:
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "white-marsh-md",
             address: "All In Adventures Escape Rooms 8200 Perry Hall Blvd",
             zip: "21236",
@@ -2606,7 +2644,9 @@ export const getLocationsPageData = () => {
             publish_status: true,
             city_include:
               "Our customers come from many surrounding cities, including South River, Sayreville, North Brunswick, New Brunswick, Highland Park, Old Bridge, Edison, Somerset, Metuchen, Fords, Perth Amboy, South Plainfield, Woodbridge, Iselin, Middlesex and many more!",
-            entry_guid: "Our store is between Panera and JC Penny.",
+            entry_guid: "Our store is near JCPenny, across from Sketchers.",
+            payment_options:
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "east-brunswick-nj",
             address: "All In Adventures Escape Rooms 755 NJ-18 Space 544",
             zip: "08816",
@@ -2756,6 +2796,8 @@ export const getLocationsPageData = () => {
               "Our customers come from many surrounding cities, including Andover, Dover, Livingston, Morristown, Newark, New Jersey and many more!",
             entry_guid:
               "Our store is on the lower level near the mall entrance by JC Penny.",
+            payment_options:
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "rockaway-nj",
             address: "Escape+the Mystery Room 301 Mt Hope Ave Suite 1001c",
             zip: "07866",
@@ -2905,6 +2947,8 @@ export const getLocationsPageData = () => {
               "Our customers come from many surrounding cities, including Avenel, Colonia, Fords, Iselin, Carteret, Rahway, Perth Amboy, Metuchen, Linden, Clark, Roselle, South Plainfield, Cranford, Edison, Scotch Plains and many more!",
             entry_guid:
               "Our store is in the lower level of the JCPenney & Boscov wing.",
+            payment_options:
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "woodbridge-nj",
             address:
               "Adventures Escape Rooms 250 Woodbridge Center Dr Suite 2285",
@@ -3065,6 +3109,8 @@ export const getLocationsPageData = () => {
               "Our customers come from many surrounding cities, including Blacksburg, Christiansburg, Salem and many more!",
             entry_guid:
               "We are inside the mall beside Sears and the food court.",
+            payment_options:
+              "We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "roanoke-va",
             address:
               "All In Adventures Escape Rooms 4802 Valley View Blvd NW Space LD 150",
@@ -3225,6 +3271,8 @@ export const getLocationsPageData = () => {
               "Our customers come from many surrounding cities, including Marietta, Alpharetta, Kennesaw, Loganville, Snellville, Suwanee, Duluth, Lilburn, Sugar Hill, Buford, Norcross, Tucker, Winder, Redan, Doraville,Chamblee, Monroe and many more!",
             entry_guid:
               "Our store is directly across the Bass Pro Shop inside the mall.",
+            payment_options:
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "lawrenceville-ga",
             address: "Escape the Mystery Room 5900 Sugarloaf Pkwy Unit 134",
             zip: "30043",
@@ -3382,7 +3430,9 @@ export const getLocationsPageData = () => {
             city_include:
               "Our customers come from many surrounding cities, including Bexley, Upper Arlington, Whitehall, Lincoln Village, Gahanna, Grove City, Blacklick Estates, Worthington, Hilliard, Reynoldsburg, Dublin, Westerville, Pickerington, Pataskala, Delaware and many more!",
             entry_guid:
-              "We are located inside the mall near Macy's on the upper level.",
+              "Park in between Macy's & Fieldhouse USA. We are located across from Stash House and Go! Toys & Games on the upper level.",
+            payment_options:
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "columbus-oh",
             address:
               "All In Adventures Escape Rooms 1500 Polaris Pkwy Space 2252",

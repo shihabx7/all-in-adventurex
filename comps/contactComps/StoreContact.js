@@ -700,13 +700,44 @@ const StoreContact = (props) => {
               </form>
             </div>
             <div className="px-4 mt-6 lg:mt-10">
-              <p className="text-[#464646] mb-4 lg:text-lg">
-                {props.contactdata.entry_guid}
-              </p>
-              <p className="text-[#464646] lg:text-lg">
-                We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo,
-                Zelle, Cash App and in some locations Apple Pay and Samsung Pay.
-              </p>
+              <div className="direction locinfo-row border-b border-[#D2C6AA] py-2 px-2 lg:py-3">
+                <div className="flex space-x-2  md:text-lg ">
+                  <div className="loc-dt-icon  md:w-auto ">
+                    <img
+                      className="w-[24px]"
+                      src="/assets/svg/util/store_direction.svg"
+                    ></img>
+                  </div>
+                  <div className="loc-dt-text text-[#232323] flex-1">
+                    <div>
+                      <span>
+                        <b>Diection: </b>
+                      </span>
+                      <span> {props.contactdata.entry_guid}</span>
+                    </div>
+                    {props.contactdata.entry_guid2 && (
+                      <div className="mt-2">
+                        <span>{props.contactdata.entry_guid2}</span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+              <div className="payment locinfo-row border-b border-[#D2C6AA] py-2 px-2 lg:py-3">
+                <div className="flex space-x-2  md:text-lg ">
+                  <div className="loc-dt-icon  md:w-auto ">
+                    <img
+                      className="w-[24px]"
+                      src="/assets/svg/util/payment_options.svg"
+                    ></img>
+                  </div>
+                  <div className="loc-dt-text text-[#232323] flex-1">
+                    <p>
+                      <span> {props.contactdata.payment_options}</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           {/*======================== corporate contact form=======================*/}
