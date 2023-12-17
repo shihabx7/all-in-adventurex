@@ -2075,7 +2075,7 @@ export const getSingleEventPageData = (eventslug, locationslug) => {
         ques: "Can I bring my own food?",
         ans: [
           "We offer our standard pizza package option and can also offer a custom sandwich platter package or catering option in our separate party room for your party to enjoy after their escape room experience.",
-          "<p class='mt-2 md:mt-3'>We offer our standard pizza package option and can also offer a custom sandwich platter package or catering option in our separate party room for your party to enjoy after their escape room experience.</p>",
+          "<p class='mt-2 md:mt-3'>Guests are permitted to bring their own store-bought or commercially prepared foods with the rental of the party room. Please contact us for more information.</p>",
         ],
       },
     ],
