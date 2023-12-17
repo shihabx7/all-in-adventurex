@@ -49,7 +49,7 @@ const LocationHours = (props) => {
                 )}
                 className="hover:text-blue-800"
               >
-                <span className=" font-medium text-blue-600">Store Map: </span>
+                <span className="font-medium text-blue-600">Store Map: </span>
                 {getAddress(
                   props.locdetail.address,
                   props.locdetail.slug,
@@ -198,88 +198,7 @@ const LocationHours = (props) => {
             )}
           </div>
         </div>
-        {/*  <div className="loc-tb-hrs md:border-x border-[#D2C6AA] md:min-w-[32%] lg:min-w-[30%]">
-          <div className="pt-2 pb-2 px-2 md:px-2 md:py-3 lg:px-4 tbl-h border-t md:border-t-0 border-b border-[#D2C6AA]">
-            <h3 className="text-[#232323] font-medium lg:text-lg">
-              Special Hours
-            </h3>
-            {props.locdetail.special_hours ? (
-              <p className="font-thin text-sm lg:text-base">
-                {props.locdetail.special_hours.start_date} -{" "}
-                {props.locdetail.special_hours.end_date}
-              </p>
-            ) : (
-              <p className="font-thin text-sm lg:text-base">
-                11/23/2023 - 1/15/2024
-              </p>
-            )}
-          </div>
-          <div className="tbl-cont px-2 md:px-1 lg:px-2 py-2 ">
-            {props.locdetail.special_hours ? (
-              <table className="bhour-row table-auto border-collapse  text-[#464646] w-full">
-                <tbody>
-                  <tr>
-                    <td className=" capitalize px-2 py-1 font-medium text-sm lg:text-base">
-                      Day
-                    </td>
-                    <td className=" px-2 py-1 font-medium text-sm lg:text-base">
-                      Open
-                    </td>
-                    <td className=" px-2 py-1 font-medium text-sm lg:text-base">
-                      Close
-                    </td>
-                  </tr>
-                  {props.locdetail.special_hours.hours.map((hours, index) => {
-                    return (
-                      <tr key={index}>
-                        <td className="capitalize px-2 py-1 text-sm lg:text-base">
-                          {hours.day}
-                        </td>
-                        <td className="px-2 py-1 text-sm lg:text-base">
-                          {hours.open}
-                        </td>
-                        <td className="px-2 py-1  text-sm lg:text-base">
-                          {hours.close}
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            ) : (
-              <table className="bhour-row table-auto border-collapse  text-[#464646] w-full">
-                <tbody>
-                  <tr>
-                    <td className=" capitalize px-2 py-1 font-medium text-sm lg:text-base">
-                      Day
-                    </td>
-                    <td className=" px-2 py-1 font-medium text-sm lg:text-base">
-                      Open
-                    </td>
-                    <td className=" px-2 py-1 font-medium text-sm lg:text-base">
-                      Close
-                    </td>
-                  </tr>
-                  {props.locdetail.hours.map((hours, index) => {
-                    return (
-                      <tr key={index}>
-                        <td className="  capitalize px-2 py-1 text-sm lg:text-base">
-                          {hours.day}
-                        </td>
-                        <td className="px-2 py-1 text-sm lg:text-base">
-                          {hours.open}
-                        </td>
-                        <td className="px-2 py-1 text-sm lg:text-base">
-                          {hours.close}
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            )}
-          </div>
-                </div>*/}
+
         <div className="loc-tb-hrs md:min-w-[54%] md:border-l border-[#D2C6AA]">
           <div className="pt-2 pb-2 px-2 md:px-2 md:py-3 lg:px-4 tbl-h border-t md:border-t-0 border-b border-[#D2C6AA]">
             <h3 className="text-[#232323] font-medium lg:text-lg">

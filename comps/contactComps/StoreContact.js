@@ -327,9 +327,9 @@ const StoreContact = (props) => {
                     props.contactdata.city,
                     props.contactdata.zip
                   )}
-                  className="lg:text-lg text-[#232323] block hover:text-blue-700 "
+                  className="lg:text-lg text-[#232323] block hover:text-blue-800 "
                 >
-                  <span className="text-blue-600 font-medium">Direction: </span>
+                  <span className="text-blue-600 font-medium">Store Map: </span>
                   {getAddress(
                     props.contactdata.address,
                     props.contactdata.slug,
