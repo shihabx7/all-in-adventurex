@@ -47,9 +47,9 @@ const LocationHours = (props) => {
                   props.locdetail.zip,
                   props.locdetail.city
                 )}
-                className="hover:text-blue-700"
+                className="hover:text-blue-800"
               >
-                <span className=" font-medium">Store Map: </span>
+                <span className=" font-medium text-blue-600">Store Map: </span>
                 {getAddress(
                   props.locdetail.address,
                   props.locdetail.slug,
@@ -71,7 +71,7 @@ const LocationHours = (props) => {
             <div className="loc-dt-text text-[#232323] flex-1">
               <div>
                 <span>
-                  <b>Diection: </b>
+                  <b>Direction: </b>
                 </span>
                 <span> {props.locdetail.entry_guid}</span>
               </div>

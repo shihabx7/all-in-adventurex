@@ -711,7 +711,7 @@ const StoreContact = (props) => {
                   <div className="loc-dt-text text-[#232323] flex-1">
                     <div>
                       <span>
-                        <b>Diection: </b>
+                        <b>Direction: </b>
                       </span>
                       <span> {props.contactdata.entry_guid}</span>
                     </div>
