@@ -1089,7 +1089,7 @@ export const getLocationsPageData = () => {
             entry_guid:
               "We are right off exit 17 on Interstate-540, and directly off of Capital Blvd. behind Best Buy. We are attached on the outside of the mall next to Barnes & Noble.",
             payment_options:
-              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations.",
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "raleigh-nc",
             address:
               "All In Adventures Escape Rooms 5959 Triangle Town Blvd Space EU 2113",
@@ -1703,7 +1703,7 @@ export const getLocationsPageData = () => {
             city_include:
               "Our customers come from many surrounding cities, including Auburn, Boston, New Bedford and many more!",
             payment_options:
-              "We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
+              "We accept Cash, Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             entry_guid:
               "Our store is on the 2nd floor near the main Macy's store (not Macy's Men's store).",
             slug: "n-attleborough-ma",
