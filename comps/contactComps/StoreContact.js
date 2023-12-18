@@ -299,26 +299,35 @@ const StoreContact = (props) => {
               your group.
             </p>
             <div className="c-contact-info-list mt-4 lg:mt-2 ">
-              <div className="c-contact-item px-2  lg:px-4 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
-                <img src="/assets/svg/event-icon-phone.svg"></img>
+              <div className="c-contact-item px-2  lg:px-4 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-2 lg:space-x-3">
+                <img
+                  className="w-[18px] md:w-[20px]"
+                  src="/assets/svg/util/event-icon-phone.svg"
+                ></img>
                 <a
                   href={"tel:" + props.contactdata.phone}
-                  className="lg:text-lg text-[#232323] block hover:text-red-700 max-w-[300px]"
+                  className="lg:text-lg text-[#232323] block hover:text-red-700 max-w-[300px] flex-1"
                 >
                   {props.contactdata.phone}
                 </a>
               </div>
-              <div className="c-contact-item px-2  lg:px-4 py-2 lg:py-3  flex items-center space-x-3 lg:space-x-4">
-                <img src="/assets/svg/event-icon-email.svg"></img>
+              <div className="c-contact-item px-2  lg:px-4 py-2 lg:py-3  flex items-center space-x-4 lg:space-x-3">
+                <img
+                  className="w-[18px] md:w-[20px]"
+                  src="/assets/svg/event-icon-email.svg"
+                ></img>
                 <a
                   href={"mailto:" + props.contactdata.email.toLowerCase()}
-                  className="lg:text-lg text-[#232323] block hover:text-red-700"
+                  className="lg:text-lg text-[#232323] block hover:text-red-700 flex-1"
                 >
                   {props.contactdata.email}
                 </a>
               </div>
-              <div className="c-contact-item px-2  lg:px-4 py-2 lg:py-3 border-t border-b border-[#D2C6AA] flex items-start space-x-3 lg:space-x-4">
-                <img src="/assets/svg/event-icon-pin.svg"></img>
+              <div className="c-contact-item px-2  lg:px-4 py-2 lg:py-3 border-t border-b border-[#D2C6AA] flex items-start space-x-2 lg:space-x-3">
+                <img
+                  className="w-[18px] md:w-[20px]"
+                  src="/assets/svg/event-icon-pin.svg"
+                ></img>
                 <a
                   target="_blank"
                   href={getDirection(
@@ -327,7 +336,7 @@ const StoreContact = (props) => {
                     props.contactdata.city,
                     props.contactdata.zip
                   )}
-                  className="lg:text-lg text-[#232323] block hover:text-blue-800 "
+                  className="lg:text-lg text-[#232323] block hover:text-blue-800 flex-1"
                 >
                   <span className="text-blue-600 font-medium">Store Map: </span>
                   {getAddress(
@@ -339,9 +348,12 @@ const StoreContact = (props) => {
                 </a>
               </div>
 
-              <div className="c-contact-item px-2  lg:px-4 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-3 lg:space-x-4">
-                <img src="/assets/svg/event-icon-chair.svg"></img>
-                <p className="lg:text-lg text-[#232323]">
+              <div className="c-contact-item px-2  lg:px-4 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-2 lg:space-x-3">
+                <img
+                  className="w-[18px] md:w-[20px]"
+                  src="/assets/svg/event-icon-chair.svg"
+                ></img>
+                <p className="lg:text-lg text-[#232323] flex-1">
                   Wheelchair Accessibility
                 </p>
               </div>

@@ -89,7 +89,7 @@ const LocationHours = (props) => {
               <div className="loc-dt-icon">
                 <img
                   className="w-[24px]"
-                  src="/assets/svg/event-icon-phone.svg"
+                  src="/assets/svg/util/event-icon-phone.svg"
                 ></img>
               </div>
               <div className="loc-dt-text text-[#232323] md:text-lg flex-1">
