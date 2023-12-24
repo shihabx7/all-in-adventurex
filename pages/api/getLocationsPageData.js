@@ -1843,7 +1843,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "New Year's Day",
                 date: "01/01/2024",
                 open: "12 pm",
-                close: "9 pm",
+                close: "6 pm",
               },
             ],
           },

@@ -84,7 +84,7 @@ const NewLoactionDetails = (props) => {
         <LocationHours locdetail={props.locdetail} />
 
         <div className="loc-notice mt-4 md:mt-8">
-          <div className="direction locinfo-row border-b border-[#D2C6AA] py-2 px-2 lg:py-3">
+          <div className="payment locinfo-row border-b border-[#D2C6AA] py-2 px-2 lg:py-3">
             <div className="flex space-x-2  md:text-lg ">
               <div className="loc-dt-icon  md:w-auto ">
                 <img

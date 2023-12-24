@@ -29,25 +29,36 @@ const MoblieBook = (props) => {
           {props.eventbooking && (
             <>
               {!props.eventslug ? (
-                <a
-                  href={"/" + props.locationslug + "/events#eventbooking"}
-                  className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white"
-                >
-                  BOOK EVENT
-                </a>
+                <>
+                  {props.gameslug && props.gameslug == "axe-throwing" ? (
+                    <button
+                      onClick={() => bookGame(props.bookingParty)}
+                      className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white"
+                    >
+                      BOOK YOUR PARTY
+                    </button>
+                  ) : (
+                    <a
+                      href={"/" + props.locationslug + "/events#eventbooking"}
+                      className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white"
+                    >
+                      BOOK EVENT
+                    </a>
+                  )}
+                </>
               ) : (
                 <>
                   {props.eventslug == "date-night" ? (
                     <a
                       href={"/" + props.locationslug + "/events#eventbooking"}
-                      className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white"
+                      className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white"
                     >
                       BOOK EVENT
                     </a>
                   ) : (
                     <a
                       href={"#eventbooking"}
-                      className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white"
+                      className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white"
                     >
                       BOOK EVENT
                     </a>
@@ -74,13 +85,13 @@ const MoblieBook = (props) => {
               props.publish_status == true) && (
               <button
                 onClick={() => bookAll(props.bookingall)}
-                className="w-full bg-red-600 font-medium hover:bg-red-700 py-2 px-2 block text-center text-white"
+                className="w-full bg-red-600 font-medium hover:bg-red-700 py-2 px-1 block text-center text-white"
               >
                 BOOK GAMES
               </button>
             )}
           {props.bookingall && props.publish_status == false && (
-            <button className="w-full bg-red-600 hover:bg-red-700 py-2 px-2 block text-center font-medium text-white">
+            <button className="w-full bg-red-600 hover:bg-red-700 py-2 px-1 block text-center font-medium text-white">
               COMING SOON
             </button>
           )}
@@ -91,7 +102,7 @@ const MoblieBook = (props) => {
                 {props.bookinggame.active == true && (
                   <button
                     onClick={() => bookGame(props.bookinggame)}
-                    className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white"
+                    className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white"
                   >
                     {props.bookinggame.type == "gift"
                       ? "BUY GIFT CARDS"
@@ -99,14 +110,14 @@ const MoblieBook = (props) => {
                   </button>
                 )}
                 {props.bookinggame.active == false && (
-                  <button className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-2 block text-center text-white">
+                  <button className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white">
                     COMING SOON
                   </button>
                 )}
               </>
             )}
           {props.bookinggame && props.publish_status == false && (
-            <button className="w-full bg-red-600 font-medium hover:bg-red-700 py-2 px-2 block text-center text-white">
+            <button className="w-full bg-red-600 font-medium hover:bg-red-700 py-2 px-1 block text-center text-white">
               {props.bookinggame.type == "gift"
                 ? "BUY GIFT CARDS"
                 : "BOOK THIS GAME"}

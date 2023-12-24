@@ -133,17 +133,33 @@ const GameLocList = (props) => {
                           undefined ||
                         props.bookingdata[activity.activity_slug].active ==
                           null) && (
-                        <button
-                          onClick={() => {
-                            bookGames(
-                              props.bookingdata.shortname,
-                              props.bookingdata[activity.activity_slug]
-                            );
-                          }}
-                          className="border-2 w-[240px] block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white"
-                        >
-                          BOOK NOW
-                        </button>
+                        <>
+                          {activity.bookingSlug ? (
+                            <button
+                              onClick={() => {
+                                bookGames(
+                                  props.bookingdata.shortname,
+                                  props.bookingdata[activity.bookingSlug]
+                                );
+                              }}
+                              className="border-2 w-[240px] block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white"
+                            >
+                              BOOK PARTY
+                            </button>
+                          ) : (
+                            <button
+                              onClick={() => {
+                                bookGames(
+                                  props.bookingdata.shortname,
+                                  props.bookingdata[activity.activity_slug]
+                                );
+                              }}
+                              className="border-2 w-[240px] block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white"
+                            >
+                              BOOK NOW
+                            </button>
+                          )}
+                        </>
                       )}
                       {props.bookingdata[activity.activity_slug].active ==
                         false && (
@@ -309,17 +325,37 @@ const GameLocList = (props) => {
                             <>
                               {props.bookingdata[activity.activity_slug]
                                 .active == true && (
-                                <button
-                                  onClick={() => {
-                                    bookGames(
-                                      props.bookingdata.shortname,
-                                      props.bookingdata[activity.activity_slug]
-                                    );
-                                  }}
-                                  className="border-2 w-[240px] block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white"
-                                >
-                                  BOOK NOW
-                                </button>
+                                <>
+                                  {activity.bookingSlug ? (
+                                    <button
+                                      onClick={() => {
+                                        bookGames(
+                                          props.bookingdata.shortname,
+                                          props.bookingdata[
+                                            activity.bookingSlug
+                                          ]
+                                        );
+                                      }}
+                                      className="border-2 w-[240px] block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white"
+                                    >
+                                      BOOK PARTY
+                                    </button>
+                                  ) : (
+                                    <button
+                                      onClick={() => {
+                                        bookGames(
+                                          props.bookingdata.shortname,
+                                          props.bookingdata[
+                                            activity.activity_slug
+                                          ]
+                                        );
+                                      }}
+                                      className="border-2 w-[240px] block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white"
+                                    >
+                                      BOOK NOW
+                                    </button>
+                                  )}
+                                </>
                               )}
                               {props.bookingdata[activity.activity_slug]
                                 .active == false && (

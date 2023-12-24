@@ -1,5 +1,5 @@
 import { getLocationsPageData } from "../getLocationsPageData";
-import { bookingList } from "./bookingList";
+import { bookingList, hasAxeParty } from "./bookingList";
 import { getLocationActivitySlugList } from "./getLocationActivitySlugList";
 import { getTotal } from "../AllDataList/getTotal";
 import { getLocTotal } from "../AllDataList/getLocTotal";
@@ -230,6 +230,9 @@ export const getLocationsEventList = (locationslug) => {
         eventstatus: bookinglist["party-package"].eventstatus,
         locationslug: locationslug,
       },
+      bookingParty: hasAxeParty(locationslug)
+        ? bookingList("axe-throwing-party", locationslug)
+        : false,
       locdetail: getLocSpec(locationslug),
     },
 

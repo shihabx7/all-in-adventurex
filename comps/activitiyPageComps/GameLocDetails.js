@@ -56,12 +56,32 @@ const GameLocDetails = (props) => {
                 {(props.publish == true || props.publish == undefined) && (
                   <>
                     {props.bookingdata.active == true && (
-                      <GameDtBtn
-                        bookingdata={props.bookingdata}
-                        label="I'VE READ ENOUGH! BOOK NOW"
-                        color="dark-gold"
-                        weight="font-bold"
-                      />
+                      <>
+                        {props.bookingParty &&
+                        props.gameslug == "axe-throwing" ? (
+                          <div className="flex space-x-4">
+                            <GameDtBtn
+                              bookingdata={props.bookingdata}
+                              label="BOOK GAME"
+                              color="dark-gold"
+                              weight="font-bold"
+                            />
+                            <GameDtBtn
+                              bookingdata={props.bookingParty}
+                              label="BOOK PARTY"
+                              color="dark-gold"
+                              weight="font-bold"
+                            />
+                          </div>
+                        ) : (
+                          <GameDtBtn
+                            bookingdata={props.bookingdata}
+                            label="I'VE READ ENOUGH! BOOK NOW"
+                            color="dark-gold"
+                            weight="font-bold"
+                          />
+                        )}
+                      </>
                     )}
                     {props.bookingdata.active == false && (
                       <div className="inline-block bg-golden hover:bg-golden-alt search-loc hover:cursor-pointer hover:shadow boder-p rounded-full">
@@ -130,10 +150,32 @@ const GameLocDetails = (props) => {
                 {(props.publish == true || props.publish == undefined) && (
                   <>
                     {props.bookingdata.active == true && (
-                      <GameDtBtn
-                        bookingdata={props.bookingdata}
-                        label="DON'T GIVE IT AWAY! BOOK NOW"
-                      />
+                      <>
+                        {props.bookingParty &&
+                        props.gameslug == "axe-throwing" ? (
+                          <div className="flex space-x-4">
+                            <GameDtBtn
+                              bookingdata={props.bookingdata}
+                              label="BOOK GAME"
+                              color="dark-gold"
+                              weight="font-bold"
+                            />
+                            <GameDtBtn
+                              bookingdata={props.bookingParty}
+                              label="BOOK PARTY"
+                              color="dark-gold"
+                              weight="font-bold"
+                            />
+                          </div>
+                        ) : (
+                          <GameDtBtn
+                            bookingdata={props.bookingdata}
+                            label="DON'T GIVE IT AWAY! BOOK NOW"
+                            color="dark-gold"
+                            weight="font-bold"
+                          />
+                        )}
+                      </>
                     )}
                     {props.bookingdata.active == false && (
                       <div className="inline-block bg-golden hover:bg-golden-alt search-loc hover:cursor-pointer hover:shadow boder-p rounded-full">
@@ -199,10 +241,32 @@ const GameLocDetails = (props) => {
                 {(props.publish == true || props.publish == undefined) && (
                   <>
                     {props.bookingdata.active == true && (
-                      <GameDtBtn
-                        bookingdata={props.bookingdata}
-                        label="LET ME AT EM! BOOK NOW"
-                      />
+                      <>
+                        {props.bookingParty &&
+                        props.gameslug == "axe-throwing" ? (
+                          <div className="flex space-x-4">
+                            <GameDtBtn
+                              bookingdata={props.bookingdata}
+                              label="BOOK GAME"
+                              color="dark-gold"
+                              weight="font-bold"
+                            />
+                            <GameDtBtn
+                              bookingdata={props.bookingParty}
+                              label="BOOK PARTY"
+                              color="dark-gold"
+                              weight="font-bold"
+                            />
+                          </div>
+                        ) : (
+                          <GameDtBtn
+                            bookingdata={props.bookingdata}
+                            label="LET ME AT EM! BOOK NOW"
+                            color="dark-gold"
+                            weight="font-bold"
+                          />
+                        )}
+                      </>
                     )}
                     {props.bookingdata.active == false && (
                       <div className="inline-block bg-golden hover:bg-golden-alt search-loc hover:cursor-pointer hover:shadow boder-p rounded-full">

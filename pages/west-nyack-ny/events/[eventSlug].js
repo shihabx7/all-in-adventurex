@@ -10,6 +10,7 @@ import EventContact from "../../../comps/eventPageComps/EventContact";
 
 import Seofields from "../../../comps/util/SeoFields";
 import BookYourEvent from "../../../comps/eventPageComps/BookYourEvent";
+import BookYourEvent2 from "../../../comps/eventPageComps/BookYourEvent2";
 import EventReview from "../../../comps/eventPageComps/EventReview";
 import EventRootReview from "../../../comps/eventPageComps/EventRootReview";
 const LocationSingleEvent = (props) => {
@@ -52,16 +53,30 @@ const LocationSingleEvent = (props) => {
         />
         {props.pagedata.event_slug != "date-night" && (
           <>
-            <BookYourEvent
-              bookingall={
-                props.pagedata.bookingall ? props.pagedata.bookingall : false
-              }
-              eventbooking={
-                props.pagedata.eventbooking
-                  ? props.pagedata.eventbooking
-                  : false
-              }
-            />
+            {props.pagedata.bookingParty ? (
+              <BookYourEvent2
+                bookingall={
+                  props.pagedata.bookingall ? props.pagedata.bookingall : false
+                }
+                bookingParty={props.pagedata.bookingParty}
+                eventbooking={
+                  props.pagedata.eventbooking
+                    ? props.pagedata.eventbooking
+                    : false
+                }
+              />
+            ) : (
+              <BookYourEvent
+                bookingall={
+                  props.pagedata.bookingall ? props.pagedata.bookingall : false
+                }
+                eventbooking={
+                  props.pagedata.eventbooking
+                    ? props.pagedata.eventbooking
+                    : false
+                }
+              />
+            )}
             <EventContact
               contactdata={props.contactdata}
               eventname={props.pagedata.event_name}

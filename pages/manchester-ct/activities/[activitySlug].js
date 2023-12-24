@@ -23,6 +23,10 @@ const LocSingleActivity = (props) => {
         activitylist={props.activitylist}
         eventlist={props.eventlist}
         locationlist={props.locationlist}
+        bookingParty={
+          props.pagedata.bookingParty ? props.pagedata.bookingParty : false
+        }
+        gameslug={props.pagedata.slug}
       />
       <div id="mainContent" className="main-content">
         {/* =======header content and breadcum======== */}
@@ -42,6 +46,10 @@ const LocSingleActivity = (props) => {
           pagedata={props.pagedata}
           category={props.activitydata.category}
           locdetail={props.pagedata.locdetail}
+          bookingParty={
+            props.pagedata.bookingParty ? props.pagedata.bookingParty : false
+          }
+          gameslug={props.pagedata.slug}
         />
         <GameLocDetails
           bookingdata={props.pagedata.bookingdata}

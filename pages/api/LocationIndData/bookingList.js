@@ -16,7 +16,12 @@ export const bookingList = (activityslug, locationslug) => {
 
   return bookingdata;
 };
-
+export const hasAxeParty = (slug) => {
+  if (blist[slug]["axe-throwing-party"]) {
+    return true;
+  }
+  return false;
+};
 export const isActiveGiftBooking = (slug) => {
   return blist[slug]["gift-card"].active;
 };

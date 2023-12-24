@@ -1,6 +1,6 @@
 import { getLocationsPageData } from "../getLocationsPageData";
 import { getLocationsEventList } from "./getLocationsEventList";
-import { bookingList } from "./bookingList";
+import { bookingList, hasAxeParty } from "./bookingList";
 import { getLocationActivitySlugList } from "./getLocationActivitySlugList";
 import { getLocationEventSlugList } from "./getLocationEventSlugList";
 import { getTotal } from "../AllDataList/getTotal";
@@ -2025,6 +2025,9 @@ export const getSingleEventPageData = (eventslug, locationslug) => {
         shortname: bookinglist.shortname,
         flow: bookinglist.flow,
       },
+      bookingParty: hasAxeParty(locationslug)
+        ? bookingList("axe-throwing-party", locationslug)
+        : false,
       eventbooking: {
         shortname: bookinglist.shortname,
         item: bookinglist["party-package"].item,

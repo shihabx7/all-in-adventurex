@@ -115,6 +115,10 @@ const Homenav = (props) => {
                       eventbooking={props.eventbooking}
                       eventslug={props.eventslug ? props.eventslug : false}
                       btntext="BOOK EVENT"
+                      gameslug={props.gameslug ? props.gameslug : false}
+                      bookingParty={
+                        props.bookingParty ? props.bookingParty : false
+                      }
                     />
                   )}
                   {props.locationslug && !props.eventbooking && (
@@ -122,6 +126,10 @@ const Homenav = (props) => {
                       locationslug={props.locationslug}
                       eventslug={props.eventslug ? props.eventslug : false}
                       btntext="BOOK EVENT"
+                      gameslug={props.gameslug ? props.gameslug : false}
+                      bookingParty={
+                        props.bookingParty ? props.bookingParty : false
+                      }
                     />
                   )}
 
@@ -233,6 +241,8 @@ const Homenav = (props) => {
             bookingall={props.bookingall}
             publish_status={props.publish_status}
             eventbooking={props.eventbooking}
+            gameslug={props.gameslug ? props.gameslug : false}
+            bookingParty={props.bookingParty ? props.bookingParty : false}
           />
         )}
         {props.locationslug && props.bookinggame && (
@@ -242,6 +252,8 @@ const Homenav = (props) => {
             bookinggame={props.bookinggame}
             publish_status={props.publish_status}
             eventbooking={props.eventbooking}
+            gameslug={props.gameslug ? props.gameslug : false}
+            bookingParty={props.bookingParty ? props.bookingParty : false}
           />
         )}
       </header>

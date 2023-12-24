@@ -1411,6 +1411,41 @@ const LocActivityData = {
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
+      {
+        id: 16,
+        activity_name: "Axe Throwing Game",
+        activity_type: "In person",
+        activity_category: "other",
+        age: "13-99",
+        min_player: 2,
+        max_player: 56,
+        groupcat: "Guest Capacity",
+        price: "23.89",
+        duration: "60",
+        activity_desc:
+          "Experience the excitement of Axe Throwing! Challenge your aim and have a blast with friends. It's the perfect adventure for all. Book now and enjoy!",
+        activity_slug: "axe-throwing",
+        activity_cover_image:
+          "/assets/all-game-list/allinadventures-axe-throwing.jpg",
+      },
+      {
+        id: 17,
+        activity_name: "Axe Throwing Party",
+        activity_type: "In person",
+        activity_category: "other",
+        age: "13-99",
+        min_player: 2,
+        max_player: 56,
+        groupcat: "Guest Capacity",
+        price: "75",
+        duration: "120",
+        bookingSlug: "axe-throwing-party",
+        activity_desc:
+          "Host an unforgettable Axe Throwing Party with a private room, catering, and a lively setting - perfect for birthdays and team events. Make it a hit!",
+        activity_slug: "axe-throwing",
+        activity_cover_image:
+          "/assets/all-game-list/axe-throwing-party-booking.jpg",
+      },
 
       {
         id: 14,
@@ -1443,23 +1478,6 @@ const LocActivityData = {
         activity_slug: "game-show-room",
         activity_cover_image:
           "/assets/all-game-list/allinadventures-game-show-room.jpg",
-      },
-      {
-        id: 16,
-        activity_name: "Axe Throwing",
-        activity_type: "In person",
-        activity_category: "other",
-        age: "13-99",
-        min_player: 2,
-        max_player: 56,
-        groupcat: "Guest Capacity",
-        price: "23.89",
-        duration: "60",
-        activity_desc:
-          "Having a bad day? Don't worry! We have an awesome way to burn off that negativity and get you back to your stress-free fun self! Come throw some axes at our exciting interactive targets with your friends and family!",
-        activity_slug: "axe-throwing",
-        activity_cover_image:
-          "/assets/all-game-list/allinadventures-axe-throwing.jpg",
       },
     ],
   },
@@ -1596,7 +1614,7 @@ const LocActivityData = {
 
       {
         id: 16,
-        activity_name: "Axe Throwing",
+        activity_name: "Axe Throwing Game",
         activity_type: "In person",
         activity_category: "other",
         age: "13-99",
@@ -1606,10 +1624,28 @@ const LocActivityData = {
         price: "23.89",
         duration: "60",
         activity_desc:
-          "Having a bad day? Don't worry! We have an awesome way to burn off that negativity and get you back to your stress-free fun self! Come throw some axes at our exciting interactive targets with your friends and family!",
+          "Experience the excitement of Axe Throwing! Challenge your aim and have a blast with friends. It's the perfect adventure for all. Book now and enjoy!",
         activity_slug: "axe-throwing",
         activity_cover_image:
           "/assets/all-game-list/allinadventures-axe-throwing.jpg",
+      },
+      {
+        id: 17,
+        activity_name: "Axe Throwing Party",
+        activity_type: "In person",
+        activity_category: "other",
+        age: "13-99",
+        min_player: 2,
+        max_player: 24,
+        groupcat: "Guest Capacity",
+        price: "75",
+        duration: "120",
+        bookingSlug: "axe-throwing-party",
+        activity_desc:
+          "Host an unforgettable Axe Throwing Party with a private room, catering, and a lively setting - perfect for birthdays and team events. Make it a hit!",
+        activity_slug: "axe-throwing",
+        activity_cover_image:
+          "/assets/all-game-list/axe-throwing-party-booking.jpg",
       },
     ],
   },

@@ -2114,13 +2114,13 @@ const locPagedata = {
     ],
     otherphysicalgames: [
       {
-        id: 4,
+        id: 1,
         category: "other",
         type: "In-Person",
-        title: "Axe Throwing",
+        title: "Axe Throwing Game",
         groupcat: "Guest Capacity",
         description:
-          "Having a bad day? Don't worry! Come throw some axes at our exciting interactive targets with your friends and family!",
+          "Experience the excitement of Axe Throwing! Challenge your aim and have a blast with friends. It's the perfect adventure for all. Book now and enjoy!",
         age: "13-99",
         duration: "60",
         maxplayers: "56",
@@ -2131,7 +2131,25 @@ const locPagedata = {
           "/assets/all-game-slider-bg/allinadventures-axe-throwing-party.jpg",
       },
       {
-        id: 1,
+        id: 11,
+        category: "other",
+        type: "In-Person",
+        title: "AXE THROWING PARTY",
+        groupcat: "Guest Capacity",
+        description:
+          "Host an unforgettable Axe Throwing Party with a private room, catering, and a lively setting - perfect for birthdays and team events. Make it a hit!",
+        age: "13-99",
+        duration: "120",
+        maxplayers: "24",
+        minplayers: "2",
+        price: "75",
+        bookingSlug: "axe-throwing-party",
+        slug: "axe-throwing",
+        bgimg:
+          "/assets/all-game-slider-bg/allinadventures-axe-throwing-party-package.jpg",
+      },
+      {
+        id: 2,
         category: "other",
         type: "In-Person",
         title: "Beat The Seat",
@@ -2147,7 +2165,7 @@ const locPagedata = {
           "/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg",
       },
       {
-        id: 2,
+        id: 3,
         category: "other",
         type: "In-Person",
         title: "Game Show Room",
@@ -2448,13 +2466,13 @@ const locPagedata = {
     ],
     otherphysicalgames: [
       {
-        id: 3,
+        id: 1,
         category: "other",
         type: "In-Person",
-        title: "Axe Throwing",
+        title: "Axe Throwing Game",
         groupcat: "Guest Capacity",
         description:
-          "Having a bad day? Don't worry! Come throw some axes at our exciting interactive targets with your friends and family!",
+          "Experience the excitement of Axe Throwing! Challenge your aim and have a blast with friends. It's the perfect adventure for all. Book now and enjoy!",
         age: "13-99",
         duration: "60",
         maxplayers: "24",
@@ -2463,6 +2481,24 @@ const locPagedata = {
         slug: "axe-throwing",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-axe-throwing-party.jpg",
+      },
+      {
+        id: 2,
+        category: "other",
+        type: "In-Person",
+        title: "AXE THROWING PARTY",
+        groupcat: "Guest Capacity",
+        description:
+          "Host an unforgettable Axe Throwing Party with a private room, catering, and a lively setting - perfect for birthdays and team events. Make it a hit!",
+        age: "13-99",
+        duration: "120",
+        maxplayers: "24",
+        minplayers: "2",
+        price: "75",
+        bookingSlug: "axe-throwing-party",
+        slug: "axe-throwing",
+        bgimg:
+          "/assets/all-game-slider-bg/allinadventures-axe-throwing-party-package.jpg",
       },
     ],
 

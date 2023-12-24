@@ -257,6 +257,24 @@ export const Homepagedata = () => {
     ],
     otherphysicalgames: [
       {
+        id: 3,
+        category: "other",
+        type: "In-Person",
+        title: "Axe Throwing",
+        description:
+          "Experience the excitement of Axe Throwing! Challenge your aim and have a blast with friends. It's the perfect adventure for all. Book now and enjoy!",
+        age: "13-99",
+        duration: "60",
+        maxplayers: "56",
+        groupcat: "Guest Capacity",
+        minplayers: "2",
+        price: "23.89",
+        slug: "axe-throwing",
+        bgimg:
+          "/assets/all-game-slider-bg/allinadventures-axe-throwing-party.jpg",
+      },
+
+      {
         id: 1,
         category: "other",
         type: "In-Person",
@@ -288,23 +306,7 @@ export const Homepagedata = () => {
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg",
       },
-      {
-        id: 3,
-        category: "other",
-        type: "In-Person",
-        title: "Axe Throwing",
-        description:
-          "Having a bad day? Don't worry! Come throw some axes at our exciting interactive targets with your friends and family!",
-        age: "13-99",
-        duration: "60",
-        maxplayers: "56",
-        groupcat: "Guest Capacity",
-        minplayers: "2",
-        price: "23.89",
-        slug: "axe-throwing",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-axe-throwing-party.jpg",
-      },
+
       /*  {
         id: 4,
         category: "showroom",

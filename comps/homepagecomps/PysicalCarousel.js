@@ -50,7 +50,7 @@ const PysicalCarousel = (props) => {
     },
     desktop: {
       breakpoint: { max: 1440, min: 1024 },
-      items: 3,
+      items: 4,
       slidesToSlide: 1,
       partialVisibilityGutter: 0,
     },
@@ -167,96 +167,82 @@ const PysicalCarousel = (props) => {
                       {othergame.description}
                     </p>
                   </div>
-                  {othergame.type == "Virtual" && (
-                    <div className="card-game-link text-center mt-4">
-                      {othergame.bookinglink && (
-                        <a
-                          target="_blank"
-                          href={othergame.bookinglink}
-                          className="border block max-w-[200px] mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700"
-                        >
-                          BOOK NOW
-                        </a>
-                      )}
-                      {othergame.booking && (
-                        <button
-                          onClick={() => virtualBooking(othergame.booking)}
-                          className="border block max-w-[200px] mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700"
-                        >
-                          BOOK NOW
-                        </button>
-                      )}
 
+                  <div className="card-game-link mt-4 text-center">
+                    {props.bookingData && props.publish && (
+                      <>
+                        {props.bookingData[othergame.slug].active == true && (
+                          <>
+                            {props.bookingData[othergame.bookingSlug] ? (
+                              <button
+                                onClick={() =>
+                                  openBooking(
+                                    props.bookingData.shortname,
+                                    props.bookingData[othergame.bookingSlug]
+                                  )
+                                }
+                                className="border w-[210px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700"
+                              >
+                                BOOK PARTY
+                              </button>
+                            ) : (
+                              <button
+                                onClick={() =>
+                                  openBooking(
+                                    props.bookingData.shortname,
+                                    props.bookingData[othergame.slug]
+                                  )
+                                }
+                                className="border w-[210px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700"
+                              >
+                                BOOK NOW
+                              </button>
+                            )}
+                          </>
+                        )}
+                        {props.bookingData[othergame.slug].active == false && (
+                          <button className="border w-[220px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">
+                            COMING SOON
+                          </button>
+                        )}
+                      </>
+                    )}
+                    {props.bookingData && !props.publish && (
+                      <button className="border w-[220px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-7 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">
+                        COMING SOON
+                      </button>
+                    )}
+                    {!props.bookingData && (
+                      <button
+                        onClick={() => showLocation()}
+                        className="border w-[210px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700"
+                      >
+                        BOOK NOW
+                      </button>
+                    )}
+
+                    {props.locationslug && (
                       <a
-                        href={"/" + othergame.slug}
-                        className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700"
+                        href={
+                          "/" +
+                          props.locationslug +
+                          "/activities/" +
+                          othergame.slug
+                        }
+                        className="border w-[210px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700"
                       >
                         LEARN MORE
                       </a>
-                    </div>
-                  )}
-                  {othergame.type != "Virtual" && (
-                    <div className="card-game-link mt-4 text-center">
-                      {props.bookingData && props.publish && (
-                        <>
-                          {props.bookingData[othergame.slug].active == true && (
-                            <button
-                              onClick={() =>
-                                openBooking(
-                                  props.bookingData.shortname,
-                                  props.bookingData[othergame.slug]
-                                )
-                              }
-                              className="border max-w-[200px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700"
-                            >
-                              BOOK NOW
-                            </button>
-                          )}
-                          {props.bookingData[othergame.slug].active ==
-                            false && (
-                            <button className="border max-w-[240px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">
-                              COMING SOON
-                            </button>
-                          )}
-                        </>
-                      )}
-                      {props.bookingData && !props.publish && (
-                        <button className="border max-w-[200px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-7 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">
-                          COMING SOON
-                        </button>
-                      )}
-                      {!props.bookingData && (
-                        <button
-                          onClick={() => showLocation()}
-                          className="border max-w-[200px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700"
-                        >
-                          BOOK NOW
-                        </button>
-                      )}
-
-                      {props.locationslug && (
-                        <a
-                          href={
-                            "/" +
-                            props.locationslug +
-                            "/activities/" +
-                            othergame.slug
-                          }
-                          className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700"
-                        >
-                          LEARN MORE
-                        </a>
-                      )}
-                      {!props.locationslug && (
-                        <a
-                          href={"/activities/" + othergame.slug}
-                          className="border max-w-[200px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700"
-                        >
-                          LEARN MORE
-                        </a>
-                      )}
-                    </div>
-                  )}
+                    )}
+                    {!props.locationslug && (
+                      <a
+                        href={"/activities/" + othergame.slug}
+                        className="border w-[210px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700"
+                      >
+                        LEARN MORE
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>

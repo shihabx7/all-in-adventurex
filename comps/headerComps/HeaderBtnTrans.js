@@ -5,15 +5,15 @@ const HeaderBtnTrans = (props) => {
     document.getElementById("locmenu").classList.remove("hidden");
   };
   {
-    /* const bookGame = (bookingData) => {
-    FH.open({
-      shortname: bookingData.shortname,
-      fallback: "simple",
-      fullItems: "yes",
-      flow: bookingData.flow,
-      view: { item: bookingData.item },
-    });
-  };*/
+    const bookGame = (bookingData) => {
+      FH.open({
+        shortname: bookingData.shortname,
+        fallback: "simple",
+        fullItems: "yes",
+        flow: bookingData.flow,
+        view: { item: bookingData.item },
+      });
+    };
   }
 
   // new party booking setion
@@ -41,23 +41,38 @@ const HeaderBtnTrans = (props) => {
               )}
             </>
           ) : (
-            <a
-              href={"/" + props.locationslug + "/events#eventbooking"}
-              className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
-            >
-              BOOK EVENT
-            </a>
+            <>
+              {props.gameslug && props.gameslug == "axe-throwing" ? (
+                <button
+                  onClick={() => {
+                    bookGame(props.bookingParty);
+                  }}
+                  className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+                >
+                  BOOK YOUR PARTY
+                </button>
+              ) : (
+                <a
+                  href={"/" + props.locationslug + "/events#eventbooking"}
+                  className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+                >
+                  BOOK EVENT
+                </a>
+              )}
+            </>
           )}
         </div>
       )}
 
       {props.locationslug && !props.eventbooking && (
-        <a
-          href={"/" + props.locationslug + "/events"}
-          className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
-        >
-          {props.btntext}
-        </a>
+        <>
+          <a
+            href={"/" + props.locationslug + "/events"}
+            className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+          >
+            {props.btntext}
+          </a>
+        </>
       )}
       {!props.locationslug && (
         <button

@@ -1,6 +1,6 @@
 import { getLocationIndActivityList } from "./getLocationIndActivityList";
 import { getLocationsPageData } from "../getLocationsPageData";
-import { bookingList } from "./bookingList";
+import { bookingList, hasAxeParty } from "./bookingList";
 import { getLocationActivitySlugList } from "./getLocationActivitySlugList";
 import { getLocationEventSlugList } from "./getLocationEventSlugList";
 import { getLocTotal } from "../AllDataList/getLocTotal";
@@ -23,6 +23,7 @@ export const getLocationSingleActivitypageData = (gameslug, locationslug) => {
   const malldata = getLocationIndActivityList(locationslug);
 
   const bookingdata = bookingList(gameslug, locationslug);
+
   const eventbookinglist = bookingList("", locationslug);
 
   const totalLocation = () => {
@@ -188,6 +189,9 @@ export const getLocationSingleActivitypageData = (gameslug, locationslug) => {
         ? activityDataset[gameslug].notice
         : false,
       bookingdata: bookingdata,
+      bookingParty: hasAxeParty(locationslug)
+        ? bookingList("axe-throwing-party", locationslug)
+        : false,
       private_events: activityDataset[gameslug].private_events
         ? activityDataset[gameslug].private_events
         : false,

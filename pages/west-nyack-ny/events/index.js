@@ -8,6 +8,7 @@ import EventList from "../../../comps/activitiyPageComps/EventList";
 import EventContact from "../../../comps/eventPageComps/EventContact";
 import Seofields from "../../../comps/util/SeoFields";
 import BookYourEvent from "../../../comps/eventPageComps/BookYourEvent";
+import BookYourEvent2 from "../../../comps/eventPageComps/BookYourEvent2";
 
 const LocEventList = (props) => {
   const getLoc = (slug) => {
@@ -51,10 +52,18 @@ const LocEventList = (props) => {
           bookingall={props.pagedata.bookingall}
           locationslug={props.pagedata.locationslug}
         />
-        <BookYourEvent
-          bookingall={props.pagedata.bookingall}
-          eventbooking={props.pagedata.eventbooking}
-        />
+        {props.pagedata.bookingParty ? (
+          <BookYourEvent2
+            bookingall={props.pagedata.bookingall}
+            eventbooking={props.pagedata.eventbooking}
+            bookingParty={props.pagedata.bookingParty}
+          />
+        ) : (
+          <BookYourEvent
+            bookingall={props.pagedata.bookingall}
+            eventbooking={props.pagedata.eventbooking}
+          />
+        )}
 
         <EventContact
           contactdata={props.contactdata}
