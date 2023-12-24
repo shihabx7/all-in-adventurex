@@ -60,7 +60,7 @@ function BookYourEvent2(props) {
               weight="font-bold"
             />
             <p className="text-[#333333] md:text-lg mt-3 md:mt-3 xl:mt-4">
-              Choose the perfect option for your group from the three choices
+              Choose the perfect option for your group from the four choices
               below.
             </p>
           </div>
