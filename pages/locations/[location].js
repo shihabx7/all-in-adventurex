@@ -99,6 +99,7 @@ const location = (props) => {
         />
         <HowToPlay
           city={props.pagedata.locationcity}
+          publish_status={props.pagedata.publish_status}
           bookingall={props.pagedata.bookingall}
         />
         <InpersonEscapeSlider

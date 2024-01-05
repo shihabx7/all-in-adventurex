@@ -197,12 +197,18 @@ const HowToPlay = (props) => {
             </div>
             <div className="game-book-btnbox mt-8 md:mt-16 lg:mt-20">
               <div className="game-btn-all max-w-sm mx-auto">
-                <button
-                  onClick={() => bookAll(props.bookingall)}
-                  className="w-full my-4 block  uppercase py-3 md:py-4 px-6 text-lg text-white font-medium border-2 border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 rounded-full text-center"
-                >
-                  BOOK YOUR ADVENTURES
-                </button>
+                {props.publish_status === false ? (
+                  <button className="w-full my-4 block  uppercase py-3 md:py-4 px-6 text-lg text-white font-medium border-2 border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 rounded-full text-center">
+                    COMING SOON
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => bookAll(props.bookingall)}
+                    className="w-full my-4 block  uppercase py-3 md:py-4 px-6 text-lg text-white font-medium border-2 border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 rounded-full text-center"
+                  >
+                    BOOK YOUR ADVENTURES
+                  </button>
+                )}
               </div>
             </div>
           </div>
