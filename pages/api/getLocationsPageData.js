@@ -197,38 +197,38 @@ export const getLocationsPageData = () => {
             hours: [
               {
                 day: "monday",
-                open: "11 am",
-                close: "8 pm",
+                open: "Temporarily Closed",
+                close: "-",
               },
               {
                 day: "tuesday",
-                open: "11 am",
-                close: "8 pm",
+                open: "Temporarily Closed",
+                close: "-",
               },
               {
                 day: "wednesday",
-                open: "11 am",
-                close: "8 pm",
+                open: "Temporarily Closed",
+                close: "-",
               },
               {
                 day: "thursday",
-                open: "11 am",
-                close: "8 pm",
+                open: "Temporarily Closed",
+                close: "-",
               },
               {
                 day: "friday",
-                open: "11 am",
-                close: "8 pm",
+                open: "Temporarily Closed",
+                close: "-",
               },
               {
                 day: "saturday",
-                open: "11 am",
-                close: "9 pm",
+                open: "Temporarily Closed",
+                close: "-",
               },
               {
                 day: "sunday",
-                open: "11 am",
-                close: "6 pm",
+                open: "Temporarily Closed",
+                close: "-",
               },
             ],
             special_hours: {
