@@ -31,6 +31,7 @@ const LocActivity = (props) => {
         activitylist={props.activitylistSlug}
         eventlist={props.eventlistSlug}
         locationlist={props.locationlist}
+        publish_status={props.pagedata.publish_status}
       />
       <div id="mainContent" className="main-content">
         {/* =======header content and breadcum======== */}

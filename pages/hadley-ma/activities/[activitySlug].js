@@ -27,6 +27,7 @@ const LocSingleActivity = (props) => {
           props.pagedata.bookingParty ? props.pagedata.bookingParty : false
         }
         gameslug={props.pagedata.slug}
+        publish_status={props.pagedata.publish_status}
       />
       <div id="mainContent" className="main-content">
         {/* =======header content and breadcum======== */}

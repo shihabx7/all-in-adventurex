@@ -56,6 +56,7 @@ const LocationSingleEvent = (props) => {
           <>
             {props.pagedata.bookingParty ? (
               <BookYourEvent2
+                publish_status={props.pagedata.publish_status}
                 bookingall={
                   props.pagedata.bookingall ? props.pagedata.bookingall : false
                 }
@@ -68,6 +69,7 @@ const LocationSingleEvent = (props) => {
               />
             ) : (
               <BookYourEvent
+                publish_status={props.pagedata.publish_status}
                 bookingall={
                   props.pagedata.bookingall ? props.pagedata.bookingall : false
                 }

@@ -55,12 +55,14 @@ const LocEventList = (props) => {
         />
         {props.pagedata.bookingParty ? (
           <BookYourEvent2
+            publish_status={props.pagedata.publish_status}
             bookingall={props.pagedata.bookingall}
             eventbooking={props.pagedata.eventbooking}
             bookingParty={props.pagedata.bookingParty}
           />
         ) : (
           <BookYourEvent
+            publish_status={props.pagedata.publish_status}
             bookingall={props.pagedata.bookingall}
             eventbooking={props.pagedata.eventbooking}
           />

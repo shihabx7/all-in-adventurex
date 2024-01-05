@@ -170,7 +170,7 @@ export const getLocationsPageData = () => {
           {
             id: 2,
             city: "Buffalo",
-            publish_status: true,
+            publish_status: false,
             address: "Escape the Mystery Room 1 Walden Galleria",
             city_include:
               "Our customers come from many surrounding cities, including North Tonawanda, Cheektowaga, Medina, Hamburg, Amherst and many more!",

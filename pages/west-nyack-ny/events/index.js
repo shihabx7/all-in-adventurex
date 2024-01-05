@@ -31,6 +31,7 @@ const LocEventList = (props) => {
         activitylist={props.activitylistSlug}
         eventlist={props.eventlist}
         locationlist={props.locationlist}
+        publish_status={props.pagedata.publish_status}
       />
       <div id="mainContent" className="main-content">
         {/* =======header content and breadcum======== */}
@@ -54,12 +55,14 @@ const LocEventList = (props) => {
         />
         {props.pagedata.bookingParty ? (
           <BookYourEvent2
+            publish_status={props.pagedata.publish_status}
             bookingall={props.pagedata.bookingall}
             eventbooking={props.pagedata.eventbooking}
             bookingParty={props.pagedata.bookingParty}
           />
         ) : (
           <BookYourEvent
+            publish_status={props.pagedata.publish_status}
             bookingall={props.pagedata.bookingall}
             eventbooking={props.pagedata.eventbooking}
           />

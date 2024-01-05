@@ -46,6 +46,7 @@ const viewLocGift = (props) => {
         activitylist={props.activitylist}
         eventlist={props.eventlist}
         locationlist={props.locationlist}
+        publish_status={props.pagedata.publish_status}
       />
       <div id="mainContent" className="main-content">
         <GiftHeroBaner

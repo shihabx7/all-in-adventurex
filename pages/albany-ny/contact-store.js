@@ -1,88 +1,76 @@
+import Footer from "../../comps/Footer";
+import Homenav from "../../comps/Homenav";
+import BreadcumNew from "../../comps/util/BreadcumNew";
 
+import { getLocationIndContactPageData } from "../api/LocationIndData/getLocationIndContactPageData";
 
-import Footer from '../../comps/Footer';
-import Homenav from '../../comps/Homenav';
-import BreadcumNew from '../../comps/util/BreadcumNew';
+import StoreContact from "../../comps/contactComps/StoreContact";
+import Seofields from "../../comps/util/SeoFields";
+import ContactLocHero from "../../comps/activitiyPageComps/ContactLocHero";
 
-import { getLocationIndContactPageData } from '../api/LocationIndData/getLocationIndContactPageData';
+const ViewContactStore = (props) => {
+  const getLoc = (slug) => {
+    var locname = slug.split("-");
+    var st = locname[locname.length - 1].toString();
 
-import StoreContact from '../../comps/contactComps/StoreContact';
-import Seofields from '../../comps/util/SeoFields';
-import ContactLocHero from '../../comps/activitiyPageComps/ContactLocHero';
+    locname = locname.slice(0, -1);
+    locname = locname.join(" ");
+    return locname + ", " + st;
+  };
 
+  return (
+    <>
+      <Seofields meta={props.pagemeta} />
+      <Homenav
+        locationslug={props.pagedata.locationslug}
+        location={getLoc(props.pagedata.locationslug)}
+        bookingall={props.pagedata.bookingall}
+        eventbooking={props.pagedata.eventbooking}
+        activitylist={props.activitylist}
+        eventlist={props.eventlist}
+        locationlist={props.locationlist}
+        publish_status={props.pagedata.publish_status}
+      />
+      <div id="mainContent" className="main-content">
+        {/* =======meta content and breadcum======== */}
 
-const ViewContactStore=(props)=>{
-    
-    const getLoc=(slug)=>{
-       
-        
-        var locname=slug.split('-')
-        var st=locname[locname.length-1].toString()
+        <div className="breadcum py-1 md:py-1 lg:py-3 bg-[#fffceb]">
+          <BreadcumNew />
+        </div>
 
-        locname=locname.slice(0,-1)
-        locname=locname.join(' ')
-        return locname+", "+st
-    }
+        {/* =======meta content and breadcum======== end */}
+        {/* ===========Page Content here=========*/}
+        <ContactLocHero pagedata={props.pagedata} gametotal="not" />
+        <StoreContact contactdata={props.contactdata} />
+      </div>
 
-    return(
-        <>
-        <Seofields meta={props.pagemeta}/>
-            <Homenav locationslug={props.pagedata.locationslug}
-                     location={getLoc(props.pagedata.locationslug)}
-                      bookingall={props.pagedata.bookingall}
-                      eventbooking={props.pagedata.eventbooking}
-                      activitylist={props.activitylist}
-                      eventlist={props.eventlist}
-                      locationlist={props.locationlist}
-                      />
-                 <div id="mainContent" className='main-content'>
- 
-                 {/* =======meta content and breadcum======== */}
-                                
-                               <div className='breadcum py-1 md:py-1 lg:py-3 bg-[#fffceb]'>
-                                    <BreadcumNew/>
-                                 </div>
-                                 
-                         {/* =======meta content and breadcum======== end */}
-                         {/* ===========Page Content here=========*/}
-                         <ContactLocHero pagedata={props.pagedata} gametotal="not"/>
-                         <StoreContact contactdata={props.contactdata}/>
-                         
-                       
-                         
-                            
- 
-                 </div>
- 
-             <Footer  location={getLoc(props.pagedata.locationslug)} locationlist={props.locationlist} totallocations={props.totalLocations}/>
-        
-        </>
-    )
-}
+      <Footer
+        location={getLoc(props.pagedata.locationslug)}
+        locationlist={props.locationlist}
+        totallocations={props.totalLocations}
+      />
+    </>
+  );
+};
 
-export default ViewContactStore
+export default ViewContactStore;
 
-export const getStaticProps=async()=>{
-    //var router = useRouter()
-   // routerSlug=routerSlug.split('-')
-  
-    const locationContactdata=getLocationIndContactPageData("albany-ny")
-   
-    
+export const getStaticProps = async () => {
+  //var router = useRouter()
+  // routerSlug=routerSlug.split('-')
 
-    return{
-        props:{
-          pagedata:locationContactdata.pagedata,
-          pagemeta:locationContactdata.pagemeta,
-          contactdata:locationContactdata.contactdata,
-          activitylist:locationContactdata.activitylist,
-          eventlist:locationContactdata.eventlist,
-          locationlist:locationContactdata.locationlist,
-          totalLocations:locationContactdata.totalLocations
-          
-         
-        },
-        revalidate: 30
-    }
+  const locationContactdata = getLocationIndContactPageData("albany-ny");
 
-}
+  return {
+    props: {
+      pagedata: locationContactdata.pagedata,
+      pagemeta: locationContactdata.pagemeta,
+      contactdata: locationContactdata.contactdata,
+      activitylist: locationContactdata.activitylist,
+      eventlist: locationContactdata.eventlist,
+      locationlist: locationContactdata.locationlist,
+      totalLocations: locationContactdata.totalLocations,
+    },
+    revalidate: 30,
+  };
+};

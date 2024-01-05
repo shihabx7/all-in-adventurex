@@ -102,42 +102,42 @@ const blist = {
     flow: "17840",
 
     "escape-from-alcatraz": {
-      active: true,
+      active: false,
       item: "44871",
       flow: "17840",
     },
     "treasure-island": {
-      active: true,
+      active: false,
       item: "44874",
       flow: "17840",
     },
     "superheros-adventure": {
-      active: true,
+      active: false,
       item: "44879",
       flow: "17840",
     },
     "zombie-apocalypse": {
-      active: true,
+      active: false,
       item: "44877",
       flow: "17840",
     },
     "special-agent": {
-      active: true,
+      active: false,
       item: "44876",
       flow: "17840",
     },
     "hollywood-premiere": {
-      active: true,
+      active: false,
       item: "44872",
       flow: "17840",
     },
     "sherlocks-library": {
-      active: true,
+      active: false,
       item: "44878",
       flow: "17840",
     },
     "houdinis-magic-cell": {
-      active: true,
+      active: false,
       item: "44875",
       flow: "17840",
     },
@@ -154,12 +154,12 @@ const blist = {
       flow: "667679",
     },
     "gift-holiday": {
-      active: true,
+      active: false,
       item: "70113",
       flow: "no",
     },
     "party-package": {
-      active: true,
+      active: false,
       item: "44880",
       flow: "no",
       eventstatus: true,

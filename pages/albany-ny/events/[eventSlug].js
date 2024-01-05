@@ -26,6 +26,7 @@ const LocationSingleEvent = (props) => {
         activitylist={props.activitylist}
         eventlist={props.eventlist}
         locationlist={props.locationlist}
+        publish_status={props.pagedata.publish_status}
       />
       <div id="mainContent" className="main-content">
         {/* =======header content and breadcum======== */}
@@ -55,6 +56,7 @@ const LocationSingleEvent = (props) => {
         {props.pagedata.event_slug != "date-night" && (
           <>
             <BookYourEvent
+              publish_status={props.pagedata.publish_status}
               bookingall={
                 props.pagedata.bookingall ? props.pagedata.bookingall : false
               }
