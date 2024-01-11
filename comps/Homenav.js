@@ -63,22 +63,22 @@ const Homenav = (props) => {
           <LocationMenuX locationlist={props.locationlist} />
         </div>
       )}
-      {props.locationslug && isGiftActiveForLoaction(props.locationslug) && (
+      {/*props.locationslug && isGiftActiveForLoaction(props.locationslug) && (
+       <StickyGiftBar
+          locationlist={props.locationlist}
+          giftbookinglist={props.giftbookinglist}
+          locationslug={props.locationslug ? props.locationslug : false}
+          bookinggame={props.bookinggame ? props.bookinggame : false}
+        />
+      )*/}
+      {/*!props.locationslug && (
         <StickyGiftBar
           locationlist={props.locationlist}
           giftbookinglist={props.giftbookinglist}
           locationslug={props.locationslug ? props.locationslug : false}
           bookinggame={props.bookinggame ? props.bookinggame : false}
         />
-      )}
-      {!props.locationslug && (
-        <StickyGiftBar
-          locationlist={props.locationlist}
-          giftbookinglist={props.giftbookinglist}
-          locationslug={props.locationslug ? props.locationslug : false}
-          bookinggame={props.bookinggame ? props.bookinggame : false}
-        />
-      )}
+      ) */}
       <header id="header" className="bg-coffee w-full ">
         <div id="header-container-s" className="header-container-s">
           {/*<HeaderNotice/>*/}
