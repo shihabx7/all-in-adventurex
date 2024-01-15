@@ -185,17 +185,17 @@ function BookYourEvent(props) {
                   <div className="bk-btn text-center pb-5 md:pb-8 px-3 md:px-3 xl:px-5">
                     {!props.publish_status ? (
                       <button
-                        onClick={() => {
-                          bookAll(props.bookingall);
-                        }}
                         className="bg-red-600 hover:bg-red-700
                    text-white text-center font-medium
-                    py-4  rounded-full mx-auto text-[16px] lg:text-[14px] xl:text-[16px] w-full"
+                    py-4 rounded-full mx-auto text-[16px] lg:text-[14px] xl:text-[16px] w-full"
                       >
                         COMING SOON
                       </button>
                     ) : (
                       <button
+                        onClick={() => {
+                          bookAll(props.bookingall);
+                        }}
                         className="bg-red-600 hover:bg-red-700
                    text-white text-center font-medium
                     py-4  rounded-full mx-auto text-[16px] lg:text-[14px] xl:text-[16px] w-full"
