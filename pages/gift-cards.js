@@ -82,32 +82,32 @@ const GiftCard = (props) => {
         ></Breadcrumbs>
         </div>*/}
       {/* =======breadcum content and breadcum root page template======== end */}
+      <div id="mainContent" className="main-content">
+        <GiftHeroBaner
+          pagedata={props.pagedata}
+          locationlist={props.locationlist}
+          setShowGiftBookingList={setShowGiftBookingList}
+        />
 
-      <GiftHeroBaner
-        pagedata={props.pagedata}
-        locationlist={props.locationlist}
-        setShowGiftBookingList={setShowGiftBookingList}
-      />
+        <GiftSpotOn setShowGiftBookingList={setShowGiftBookingList} />
+        <GiftVenGram setShowGiftBookingList={setShowGiftBookingList} />
+        <HowGiftCardsWork setShowGiftBookingList={setShowGiftBookingList} />
+        <GiftRedeem
+          redeemgames={props.redeemgames}
+          setShowGiftBookingList={setShowGiftBookingList}
+        />
+        <GiftPerfectFor setShowGiftBookingList={setShowGiftBookingList} />
+        <GiftGallery setShowGiftBookingList={setShowGiftBookingList} />
+        <GiftEffect setShowGiftBookingList={setShowGiftBookingList} />
 
-      <GiftSpotOn setShowGiftBookingList={setShowGiftBookingList} />
-      <GiftVenGram setShowGiftBookingList={setShowGiftBookingList} />
-      <HowGiftCardsWork setShowGiftBookingList={setShowGiftBookingList} />
-      <GiftRedeem
-        redeemgames={props.redeemgames}
-        setShowGiftBookingList={setShowGiftBookingList}
-      />
-      <GiftPerfectFor setShowGiftBookingList={setShowGiftBookingList} />
-      <GiftGallery setShowGiftBookingList={setShowGiftBookingList} />
-      <GiftEffect setShowGiftBookingList={setShowGiftBookingList} />
-
-      <GiftFaq
-        faqlist={props.faqlist}
-        setShowGiftBookingList={setShowGiftBookingList}
-      />
-      {/*<GameHomeHero gametotal="not" pagedata={props.pagedata} />*/}
-      {/*<BuyGiftCards locationlist={props.locationlist} />*/}
-      {/*<WhyAdvGiftCards />*/}
-
+        <GiftFaq
+          faqlist={props.faqlist}
+          setShowGiftBookingList={setShowGiftBookingList}
+        />
+        {/*<GameHomeHero gametotal="not" pagedata={props.pagedata} />*/}
+        {/*<BuyGiftCards locationlist={props.locationlist} />*/}
+        {/*<WhyAdvGiftCards />*/}
+      </div>
       {/* =========================================================================================main content ======== end */}
 
       <Footer
