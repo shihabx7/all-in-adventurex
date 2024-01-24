@@ -126,7 +126,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "11 am",
                 close: "8 pm",
               },
@@ -242,7 +242,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "Temporarily Closed",
                 close: "-",
               },
@@ -357,7 +357,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "11 am",
                 close: "8 pm",
               },
@@ -473,7 +473,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "11 am",
                 close: "9 pm",
               },
@@ -589,7 +589,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "1 pm",
                 close: "8 pm",
               },
@@ -706,7 +706,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "11 am",
                 close: "8 pm",
               },
@@ -820,7 +820,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "11 am",
                 close: "8 pm",
               },
@@ -945,7 +945,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "12 pm",
                 close: "8 pm",
               },
@@ -1070,7 +1070,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "11 am",
                 close: "8 pm",
               },
@@ -1186,7 +1186,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "11 am",
                 close: "8 pm",
               },
@@ -1304,7 +1304,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "11 am",
                 close: "9 pm",
               },
@@ -1420,7 +1420,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "12 pm",
                 close: "9 pm",
               },
@@ -1546,7 +1546,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "12 pm",
                 close: "8 pm",
               },
@@ -1662,7 +1662,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "12 pm",
                 close: "8 pm",
               },
@@ -1786,7 +1786,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "12 pm",
                 close: "8 pm",
               },
@@ -1911,7 +1911,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "12 pm",
                 close: "9 pm",
               },
@@ -2027,7 +2027,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "12 pm",
                 close: "8 pm",
               },
@@ -2129,7 +2129,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Easter",
                 date: "03/31/2024",
                 open: "Closed",
-                close: "",
+                close: "-",
               },
               {
                 holiday_name: "Memorial Day",
@@ -2151,7 +2151,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "11 am",
                 close: "8 pm",
               },
@@ -2267,7 +2267,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "12 pm",
                 close: "8 pm",
               },
@@ -2384,7 +2384,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "12 pm",
                 close: "8 pm",
               },
@@ -2512,7 +2512,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "12 pm",
                 close: "8 pm",
               },
@@ -2637,7 +2637,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "10 am",
                 close: "8 pm",
               },
@@ -2742,7 +2742,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Easter",
                 date: "03/31/2024",
                 open: "Closed",
-                close: "",
+                close: "-",
               },
               {
                 holiday_name: "Memorial Day",
@@ -2764,7 +2764,7 @@ export const getLocationsPageData = () => {
               },
               {
                 holiday_name: "Labor Day",
-                date: "01/01/2024",
+                date: "09/02/2024",
                 open: "11 am",
                 close: "8 pm",
               },
