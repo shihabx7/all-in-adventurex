@@ -15,6 +15,7 @@ const LocSingleActivity = (props) => {
   return (
     <>
       <Seofields meta={props.pagemeta} />
+
       <Homenav
         locationslug={props.pagedata.locationslug}
         bookinggame={props.pagedata.bookingdata}

@@ -188,6 +188,9 @@ export const getLocationSingleActivitypageData = (gameslug, locationslug) => {
       notice: activityDataset[gameslug].notice
         ? activityDataset[gameslug].notice
         : false,
+      notice_img: activityGuest[locationslug][gameslug].notice_img
+        ? activityGuest[locationslug][gameslug].notice_img
+        : false,
       bookingdata: bookingdata,
       bookingParty: hasAxeParty(locationslug)
         ? bookingList("axe-throwing-party", locationslug)
@@ -214,25 +217,21 @@ export const getLocationSingleActivitypageData = (gameslug, locationslug) => {
       storyimg: activityGuest[locationslug][gameslug].storyimg
         ? activityGuest[locationslug][gameslug].storyimg
         : activityDataset[gameslug].activitydata.storyimg,
-
       storyimg_alt: activityGuest[locationslug][gameslug].storyimg_alt
         ? activityGuest[locationslug][gameslug].storyimg_alt
         : activityDataset[gameslug].activitydata.storyimg_alt,
       story_bg: activityGuest[locationslug][gameslug].story_bg
         ? activityGuest[locationslug][gameslug].story_bg
         : activityDataset[gameslug].activitydata.story_bg,
-
       scene: activityGuest[locationslug][gameslug].scene
         ? activityGuest[locationslug][gameslug].scene
         : activityDataset[gameslug].activitydata.scene,
       sceneimg: activityGuest[locationslug][gameslug].sceneimg
         ? activityGuest[locationslug][gameslug].sceneimg
         : activityDataset[gameslug].activitydata.sceneimg,
-
       sceneimg_alt: activityGuest[locationslug][gameslug].sceneimg_alt
         ? activityGuest[locationslug][gameslug].sceneimg_alt
         : activityDataset[gameslug].activitydata.sceneimg_alt,
-
       scene_bg: activityGuest[locationslug][gameslug].scene_bg
         ? activityGuest[locationslug][gameslug].scene_bg
         : activityDataset[gameslug].activitydata.scene_bg,
@@ -470,7 +469,7 @@ const activityDataset = {
         "Darkover City is home to the prestigious Grand Central Bank - housing and securing millions of dollars worth of gold. Superheroes across the universe have been called to protect the bank after its blueprint has mysteriously gone missing. You suspect the infamous Matador and his crew of minions have something to do with it.",
       storyimg:
         "/assets/all-game-details/allinadventures-superheros-adventure-storyline.png",
-      storyimg_img: "allinadventures-superheros-adventure-storyline",
+      storyimg_alt: "allinadventures-superheros-adventure-storyline",
       scene:
         "Entrusted by the citizens of Darkover City, your team of superheroes rush to answer their call for help and work together to recover the stolen blueprint before it's too late. You must hurry because the Matador has now threatened to contaminate the gold and crash the stock market if you don't pay his hefty ransom.",
       sceneimg:
@@ -1382,6 +1381,7 @@ const activityDataset = {
     duration: 60,
     max_players: 16,
     min_players: 4,
+    success_rate: false,
     age: "6-99",
     private_events: "YES",
     coverimageL:
@@ -1578,6 +1578,7 @@ const activityDataset = {
     duration: 60,
     max_players: 4,
     min_players: 2,
+    success_rate: false,
     groupcat: "Guest Capacity",
     private_events: "YES",
     age: "13-99",
@@ -1664,6 +1665,7 @@ const activityDataset = {
     max_players: 1,
     min_players: 1,
     age: "6-99",
+    success_rate: false,
     private_events: "YES",
     coverimageL:
       "/assets/all-game-desktop-hero/allinadventures-beat-the-seat.jpg",
@@ -2005,6 +2007,7 @@ const activityGuest = {
       max_players: "10",
       min_players: "2",
       success_rate: "32%",
+      notice_img: "/assets/svg/new-game-in-beta",
       pagesubtitle:
         "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
       story:
@@ -2659,6 +2662,7 @@ const activityGuest = {
       max_players: "10",
       min_players: "2",
       success_rate: "32%",
+      page_notice_img: "/assets/svg/new-game-in-beta",
       pagesubtitle:
         "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
       story:
@@ -3014,6 +3018,7 @@ const activityGuest = {
       max_players: "8",
       min_players: "2",
       success_rate: "32%",
+      page_notice_img: "/assets/svg/new-game-in-beta",
       pagesubtitle:
         "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
       story:
