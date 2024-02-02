@@ -115,6 +115,14 @@ const GameLocHero = (props) => {
                   ></img>
                 </div>
               )}
+              {props.pagedata.notice_img && (
+                <div className="text-center font-bold text-red-600 text-[32px] md:text-[52px] font-os cm-title py-4">
+                  <img
+                    className="max-w-[420px] md:max-w-[480px] lg:max-w-[520px] mx-auto"
+                    src="/assets/svg/new-game-in-beta.svg"
+                  ></img>
+                </div>
+              )}
 
               <p className=" md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center uppercase">
                 At {props.pagedata.mall} in {props.pagedata.location_name}

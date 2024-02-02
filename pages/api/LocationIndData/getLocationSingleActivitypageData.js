@@ -2007,7 +2007,7 @@ const activityGuest = {
       max_players: "10",
       min_players: "2",
       success_rate: "32%",
-      notice_img: "/assets/svg/new-game-in-beta",
+      notice_img: "/assets/svg/new-game-in-beta.svg",
       pagesubtitle:
         "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
       story:
@@ -2662,7 +2662,7 @@ const activityGuest = {
       max_players: "10",
       min_players: "2",
       success_rate: "32%",
-      page_notice_img: "/assets/svg/new-game-in-beta",
+      notice_img: "/assets/svg/new-game-in-beta.svg",
       pagesubtitle:
         "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
       story:
@@ -3018,7 +3018,7 @@ const activityGuest = {
       max_players: "8",
       min_players: "2",
       success_rate: "32%",
-      page_notice_img: "/assets/svg/new-game-in-beta",
+      notice_img: "/assets/svg/new-game-in-beta.svg",
       pagesubtitle:
         "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
       story:
@@ -3083,156 +3083,7 @@ const activityGuest = {
   },
   //=========================================================woodbridge-nj end
   //********************************************************************************************NJ END*/
-  //********************************************************************************************TX */
-  //=========================================================austin-tx list
-  /*"austin-tx":{
-              "mall":"crossgate mall",
-              "coverimageL":"/assets/location-hero-bg.jpg",
-              "coverimageM":"/assets/location-hero.jpg",
-              
-              "activity_list":[
-  
-                  {
-                      "id":1,
-                      "activity_name":"Escape from Alcatraz",
-                      "activity_type":"In-person",
-                      "activity_category":"escapegame",
-                      "age":"All Ages (6+)",
-                      "min_player":"2",
-                      "max_player":"10",
-                      "price":"29.89",
-                      "duration":"50",
-                      "activity_desc":"You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
-                      "activity_slug":"escape-from-alcatraz",
-                      "activity_cover_image":"/assets/all-game-list/allinadventures-escape-from-alcatraz.jpg",
-                      
-                      
-                  },
-                  {
-                      "id":2,
-                      "activity_name":"Treasure Island",
-                      "activity_type":"In-person",
-                      "activity_category":"escapegame",
-                      "age":"All Ages (6+)",
-                      "min_player":"2",
-                      "max_player":"10",
-                      "price":"29.89",
-                      "duration":"50",
-                      "activity_desc":"You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
-                      "activity_slug":"treasure-island",
-                      "activity_cover_image":"/assets/all-game-list/allinadventures-treasure-island.jpg",
-                      
-                  },
-                  {
-                      "id":3,
-                      "activity_name":"Zombie Apocalypse",
-                      "activity_type":"In-person",
-                      "activity_category":"escapegame",
-                      "age":"All Ages (6+)",
-                      "min_player":"2",
-                      "max_player":"10",
-                      "price":"29.89",
-                      "duration":"50",
-                      "activity_desc":"The zombification virus has mutated and it is up to you to save humanity! Double check your research, create an immunity chemical test and quickly develop the vaccine!",
-                      "activity_slug":"zombie-apocalypse",
-                      "activity_cover_image":"/assets/all-game-list/allinadventures-zombie-apocalypse.jpg",
-                      
-                  },
-                  {
-                      "id":4,
-                      "activity_name":"Sherlock's Library",
-                      "activity_type":"In-person",
-                      "activity_category":"escapegame",
-                      "age":"All Ages (6+)",
-                      "min_player":"2",
-                      "max_player":"10",
-                      "price":"29.89",
-                      "duration":"50",
-                      "activity_desc":"London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
-                      "activity_slug":"sherlocks-library",
-                      "activity_cover_image":"/assets/all-game-list/allinadventures-sherlocks-library.jpg",
-                     
-                  },
-                  {
-                      "id":5,
-                      "activity_name":"Black Ops",
-                      "activity_type":"In-person",
-                      "activity_category":"escapegame",
-                      "age":"All Ages (6+)",
-                      "min_player":"2",
-                      "max_player":"10",
-                      "price":"29.89",
-                      "duration":"50",
-                      "activity_desc":"After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
-                      "activity_slug":"black-ops",
-                      "activity_cover_image":"/assets/all-game-list/allinadventures-black-ops.jpg",
-                      
-                  },
-                  {
-                      "id":6,
-                      "activity_name":"Superhero's Adventure",
-                      "activity_type":"In-person",
-                      "activity_category":"escapegame",
-                      "age":"All Ages (6+)",
-                      "min_player":"2",
-                      "max_player":"10",
-                      "price":"29.89",
-                      "duration":"50",
-                      "activity_desc":"The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
-                      "activity_slug":"superheros-adventure",
-                      "activity_cover_image":"/assets/all-game-list/allinadventures-superheros-adventure.jpg",
-                      
-                  },
-                  {
-                      "id":7,
-                      "activity_name":"HOUDINI'S MAGIC CELL",
-                      "activity_type":"In-person",
-                      "activity_category":"escapegame",
-                      "age":"All Ages (6+)",
-                      "min_player":"2",
-                      "max_player":"10",
-                      "price":"29.89",
-                      "duration":"50",
-                      "activity_desc":"As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-                      "activity_slug":"houdinis-magic-cell",
-                      "activity_cover_image":"/assets/all-game-list/allinadventures-houdinis-magic-cell.jpg",
-                      
-                  },
-                  
-                  {
-                      "id":8,
-                      "activity_name":"Special Agent",
-                      "activity_type":"In-person",
-                      "activity_category":"escapegame",
-                      "age":"All Ages (6+)",
-                      "min_player":"2",
-                      "max_player":"10",
-                      "price":"29.89",
-                      "duration":"50",
-                      "activity_desc":"After bringing down an international money launderer, your team is in pursuit of one of his known associates, the master forger, Danielson. Can your team stop him before the clock runs out?",
-                      "activity_slug":"special-agent",
-                      "activity_cover_image":"/assets/all-game-list/allinadventures-special-agent.jpg",
-                      
-                  },
-                  {
-                      "id":9,
-                      "activity_name":"HOLLYWOOD PREMIERE",
-                      "activity_type":"In-person",
-                      "activity_category":"escapegame",
-                      "age":"All Ages (6+)",
-                      "min_player":"2",
-                      "max_player":"10",
-                      "price":"29.89",
-                      "duration":"50",
-                      "activity_desc":"Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
-                      "activity_slug":"hollywood-premiere",
-                      "activity_cover_image":"/assets/all-game-list/allinadventures-hollywood-premiere.jpg",
-                     
-                  },
-                ]
-          }, */
-  //=========================================================austin-tx end
-  //********************************************************************************************TX END*/
+
   //********************************************************************************************OH */
   //=========================================================columbus-oh list
   "columbus-oh": {
