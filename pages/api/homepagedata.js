@@ -262,7 +262,7 @@ export const Homepagedata = () => {
         type: "In-Person",
         title: "Axe Throwing",
         description:
-          "Experience the excitement of Axe Throwing! Challenge your aim and have a blast with friends. It's the perfect adventure for all. Book now and enjoy!",
+          "Experience the excitement of Axe Throwing! Challenge your aim and have a blast with friends. It's the perfect adventure for all.",
         age: "13-99",
         duration: "60",
         maxplayers: "56",

@@ -2120,7 +2120,7 @@ const locPagedata = {
         title: "Axe Throwing Game",
         groupcat: "Guest Capacity",
         description:
-          "Experience the excitement of Axe Throwing! Challenge your aim and have a blast with friends. It's the perfect adventure for all. Book now and enjoy!",
+          "Experience the excitement of Axe Throwing! Challenge your aim and have a blast with friends. It's the perfect adventure for all.",
         age: "13-99",
         duration: "60",
         maxplayers: "56",
@@ -2472,7 +2472,7 @@ const locPagedata = {
         title: "Axe Throwing Game",
         groupcat: "Guest Capacity",
         description:
-          "Experience the excitement of Axe Throwing! Challenge your aim and have a blast with friends. It's the perfect adventure for all. Book now and enjoy!",
+          "Experience the excitement of Axe Throwing! Challenge your aim and have a blast with friends. It's the perfect adventure for all.",
         age: "13-99",
         duration: "60",
         maxplayers: "24",
@@ -2489,7 +2489,7 @@ const locPagedata = {
         title: "AXE THROWING PARTY",
         groupcat: "Guest Capacity",
         description:
-          "Host an unforgettable Axe Throwing Party with a private room, catering, and a lively setting - perfect for birthdays and team events. Make it a hit!",
+          "Host an unforgettable Axe Throwing Party with a private room, catering, and a lively setting - perfect for birthdays and team events.",
         age: "13-99",
         duration: "120",
         maxplayers: "24",

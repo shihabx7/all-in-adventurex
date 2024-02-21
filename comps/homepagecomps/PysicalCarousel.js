@@ -43,14 +43,14 @@ const PysicalCarousel = (props) => {
       partialVisibilityGutter: 0,
     },
     desktopmd: {
-      breakpoint: { max: 1640, min: 1440 },
+      breakpoint: { max: 1640, min: 1300 },
       items: 4,
       slidesToSlide: 1,
       partialVisibilityGutter: 0,
     },
     desktop: {
-      breakpoint: { max: 1440, min: 1024 },
-      items: 4,
+      breakpoint: { max: 1300, min: 1024 },
+      items: 3,
       slidesToSlide: 1,
       partialVisibilityGutter: 0,
     },
@@ -159,11 +159,11 @@ const PysicalCarousel = (props) => {
                 </div>
                 <div className="card-gap py-6 md:py-8 lg:py-10"></div>
                 <div className="card-bottom p-4  md:pt-10">
-                  <div className="card-game h-[170px] md:h-[160px] lg:h-[200px] 2xl:h-[204px] text-center">
+                  <div className="card-game h-[170px] md:h-[160px] lg:h-[200px] 2xl:h-[188px] text-center">
                     <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">
                       {othergame.title}
                     </h3>
-                    <p className="text-gray-200 lg:text-lg">
+                    <p className="text-gray-200 lg:text-[16px] 2xl:text-lg">
                       {othergame.description}
                     </p>
                   </div>
