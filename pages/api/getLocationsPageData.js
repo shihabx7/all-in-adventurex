@@ -2458,7 +2458,7 @@ export const getLocationsPageData = () => {
               },
               {
                 day: "saturday",
-                open: "11 am",
+                open: "12 pm",
                 close: "8 pm",
               },
               {
