@@ -68,7 +68,7 @@ const PysicalCarousel = (props) => {
     },
   };
   return (
-    <div className="full-carousel mx-auto pysicalescapecarousel inp-car">
+    <div className="full-carousel md:max-w-[84%] lg:max-w-[80%] xl:max-w-[100%] mx-auto pysicalescapecarousel inp-car">
       <Carousel
         swipeable={true}
         draggable={true}
@@ -159,7 +159,7 @@ const PysicalCarousel = (props) => {
                 </div>
                 <div className="card-gap py-6 md:py-8 lg:py-10"></div>
                 <div className="card-bottom p-4  md:pt-10">
-                  <div className="card-game h-[170px] md:h-[160px] lg:h-[200px] 2xl:h-[188px] text-center">
+                  <div className="card-game h-[148px] md:h-[160px] lg:h-[150px] 2xl:h-[188px] text-center">
                     <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">
                       {othergame.title}
                     </h3>
