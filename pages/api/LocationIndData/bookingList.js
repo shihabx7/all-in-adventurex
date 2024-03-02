@@ -1747,6 +1747,11 @@ const blist = {
       item: "55171",
       flow: "16809",
     },
+    "zombie-apocalypse": {
+      active: false,
+      item: "55171",
+      flow: "16809",
+    },
     "black-ops": {
       active: true,
       item: "55166",

@@ -3464,7 +3464,23 @@ const LocActivityData = {
         activity_cover_image:
           "/assets/all-game-list/treasure-island-all-in-adventures-escape-room.jpg",
       },
-
+      {
+        id: 3,
+        activity_name: "Zombie Apocalypse",
+        activity_type: "In-person",
+        activity_category: "escapegame",
+        age: "6-99",
+        min_player: "2",
+        max_player: "10",
+        price: "29.89",
+        duration: "50",
+        success_rate: "37",
+        activity_desc:
+          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+        activity_slug: "zombie-apocalypse",
+        activity_cover_image:
+          "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
+      },
       {
         id: 4,
         activity_name: "Sherlock's Library",

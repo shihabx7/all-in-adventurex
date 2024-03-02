@@ -437,6 +437,7 @@ a {
 .home-hero {
   background-position: center !important;
   background-size: cover !important;
+  background: #111111;
 }
 .htb {
   background-position: top center, top center;

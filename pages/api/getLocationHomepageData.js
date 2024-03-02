@@ -7335,7 +7335,23 @@ const locPagedata = {
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
       },
-
+      {
+        id: 3,
+        category: "escapegame",
+        type: "In-Person",
+        title: "Zombie Apocalypse",
+        success_rate: "37",
+        description:
+          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+        age: "6-99",
+        duration: "50",
+        maxplayers: "10",
+        minplayers: "2",
+        price: "29.89",
+        slug: "zombie-apocalypse",
+        bgimg:
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+      },
       {
         id: 4,
         category: "escapegame",

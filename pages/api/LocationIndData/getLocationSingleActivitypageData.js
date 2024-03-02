@@ -3099,6 +3099,13 @@ const activityGuest = {
       min_players: "2",
     },
     //============================================treasure-island end 2
+    //============================================zombie-apocalypse4
+    "zombie-apocalypse": {
+      id: 4,
+      max_players: "10",
+      min_players: "2",
+    },
+    //============================================zombie-apocalypse end4
 
     //============================================sherlocks-library 7
     "sherlocks-library": {
