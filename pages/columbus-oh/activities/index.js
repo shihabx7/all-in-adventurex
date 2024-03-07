@@ -4,6 +4,7 @@ import Homenav from "../../../comps/Homenav";
 import { getLocationIndActivityList } from "../../api/LocationIndData/getLocationIndActivityList";
 import GameLocHero from "../../../comps/activitiyPageComps/GameLocHero";
 import GameLocList from "../../../comps/activitiyPageComps/GameLocList";
+
 import BreadcumNew from "../../../comps/util/BreadcumNew";
 import Seofields from "../../../comps/util/SeoFields";
 

@@ -1742,14 +1742,14 @@ const blist = {
       item: "55172",
       flow: "16809",
     },
-    "houdinis-magic-cell": {
+    /*"houdinis-magic-cell": {
       active: true,
       item: "55171",
       flow: "16809",
-    },
+    },*/
     "zombie-apocalypse": {
-      active: false,
-      item: "55171",
+      active: true,
+      item: "530130",
       flow: "16809",
     },
     "black-ops": {

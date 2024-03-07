@@ -1471,7 +1471,7 @@ const activityDataset = {
 
     pagesubtitle:
       "Beat the Seat is a two-minute, fun-filled, exhilarating experience where you'll test your endurance, coordination, and ability to think on your feet. Can you handle it? Do you have the skills to beat the seat? Well, let's find out!",
-    price: 5,
+    price: 2,
     duration: 2,
     max_players: 1,
     min_players: 1,

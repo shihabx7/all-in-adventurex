@@ -102,52 +102,82 @@ const InpersonCarousel = (props) => {
               }}
             >
               <div className="card-container">
-                <div className="card-head flex justify-between items-center p-4 pb-8">
-                  <div className="card-info">
-                    <p className="flex items-center space-x-2 text-gray-50 my-1">
+                <div className="card-head flex justify-between items-center px-2 pt-4 md:px-3 pb-8">
+                  <div className="card-info w-[48%]">
+                    <p className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">
                       <span>
                         <img src="/assets/svg/card-age.svg"></img>
                       </span>
-                      <span className="text-sm">
+                      <span className="text-[13px] md:text-sm">
                         Age Range {inpersongame.age}
                       </span>
                     </p>
-                    <p className="flex items-center space-x-2 text-gray-50 my-1">
+                    <p className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">
                       <span>
                         <img src="/assets/svg/card-time.svg"></img>
                       </span>
-                      <span className="text-sm">
+                      <span className="text-[13px] md:text-sm">
                         Duration {inpersongame.duration} Min
                       </span>
                     </p>
-                    <p className="flex items-center space-x-2 text-gray-50 my-1">
+                    <p className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">
                       <span>
                         <img src="/assets/svg/card-person.svg"></img>
                       </span>
-                      <span className="text-sm">
+                      <span className="text-[13px] md:text-sm">
                         Team Size {inpersongame.minplayers}-
                         {inpersongame.maxplayers}{" "}
                       </span>
                     </p>
                     {inpersongame.success_rate && (
-                      <p className="flex items-center space-x-2 text-gray-50 my-1">
+                      <p className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">
                         <span>
                           <img src="/assets/svg/inperson.svg"></img>
                         </span>
-                        <span className="text-sm">
+                        <span className="text-[13px] md:text-sm">
                           Success Rate {inpersongame.success_rate}%
                         </span>
                       </p>
                     )}
                   </div>
-                  <div className="card-ribbon">
-                    <div className="inline-block text-center py-2 px-4 bg-red-600">
-                      <p className="text-lg text-white">FROM</p>
-                      <p className="text-2xl md:text-3xl text-white font-bold">
-                        ${inpersongame.price}
-                      </p>
+                  {typeof inpersongame.price != "object" ? (
+                    <div className="card-ribbon">
+                      <div className="inline-block text-center py-2 px-4 bg-red-600">
+                        <p className="text-lg text-white">FROM</p>
+                        <p className="text-2xl md:text-3xl text-white font-bold">
+                          ${inpersongame.price}
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  ) : (
+                    <div className="pricelist-container  w-[50%] max-w-[260px] p-[2px] md:p-[6px] bg-red-600">
+                      <div className="priceDataTable border border-dashed border-gray-200">
+                        <div className="pdt-head flex justify-center items-center border-b border-[#ba2121]">
+                          <p className="w-1/2 p-1 md:p-1 text-center text-[12px] sm:text-[14px] text-white font-medium border-r border-[#ba2121]">
+                            Team Size
+                          </p>
+                          <p className="w-1/2 p-1 md:p-1 text-center text-[12px] sm:text-[14px] text-white font-medium">
+                            Per Guest
+                          </p>
+                        </div>
+                        {inpersongame.price.map((priceItem, index) => {
+                          return (
+                            <div
+                              key={index}
+                              className="pdt-head flex justify-center items-center border-b border-[#ba2121]"
+                            >
+                              <p className="w-1/2 p-1 md:p-[4px] leading-[1]  text-center text-[12px] sm:text-[14px] text-white font-medium border-r border-[#ba2121]">
+                                {priceItem.teamSize}
+                              </p>
+                              <p className="w-1/2 p-1 md:p-[4px] leading-[1] text-center text-[12px] sm:text-[14px] text-white font-medium">
+                                ${priceItem.perGuest}
+                              </p>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
                 </div>
                 <div className="card-gap py-5 md:py-8 lg:py-10"></div>
                 <div className="card-bottom p-4  pt-12">

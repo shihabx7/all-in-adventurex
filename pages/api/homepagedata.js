@@ -285,7 +285,7 @@ export const Homepagedata = () => {
         duration: "2",
         maxplayers: "16",
         minplayers: "1",
-        price: "5",
+        price: "2",
         slug: "beat-the-seat",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg",

@@ -1513,6 +1513,11 @@ const lawrencevilleRed = [
 // =========================================-------------columbus-oh Oh
 const columbusRed = [
   {
+    source: "/columbus-oh/activities/houdinis-magic-cell",
+    destination: "/lawrenceville-ga/activities",
+    permanent: prm,
+  },
+  {
     source: "/locations/columbus-oh/events",
     destination: "/columbus-oh/events",
     permanent: prm,

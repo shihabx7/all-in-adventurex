@@ -23,7 +23,6 @@ module.exports = {
         roman: "upper-roman",
       },
       screens: {
-        "2xl": "1400px",
         "3xl": "1600px",
         "4xl": "2000px",
         "5xl": "2380px",

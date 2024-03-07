@@ -172,8 +172,12 @@ export const getLocationSingleActivitypageData = (gameslug, locationslug) => {
       city: getLocSpec(locationslug).city,
       state: getState(locationslug),
       mall: getLocSpec(locationslug).mall,
-      price: activityDataset[gameslug].price,
-      duration: activityDataset[gameslug].duration,
+      price: activityGuest[locationslug][gameslug].price
+        ? activityGuest[locationslug][gameslug].price
+        : activityDataset[gameslug].price,
+      duration: activityGuest[locationslug][gameslug].duration
+        ? activityGuest[locationslug][gameslug].duration
+        : activityDataset[gameslug].duration,
       max_players: activityGuest[locationslug][gameslug].max_players,
       min_players: activityGuest[locationslug][gameslug].min_players,
       age: activityDataset[gameslug].age
@@ -1660,7 +1664,7 @@ const activityDataset = {
 
     pagesubtitle:
       "Beat the Seat is a two-minute, fun-filled, exhilarating experience where you'll test your endurance, coordination, and ability to think on your feet. Can you handle it? Do you have the skills to beat the seat? Well, let's find out!",
-    price: 5,
+    price: 2,
     duration: 2,
     max_players: 1,
     min_players: 1,
@@ -3102,7 +3106,7 @@ const activityGuest = {
     //============================================zombie-apocalypse4
     "zombie-apocalypse": {
       id: 4,
-      max_players: "10",
+      max_players: "6",
       min_players: "2",
     },
     //============================================zombie-apocalypse end4
@@ -3302,12 +3306,43 @@ const activityGuest = {
       id: 1,
       max_players: "8",
       min_players: "2",
+      price: [
+        {
+          teamSize: "1-3",
+          perGuest: "32.99",
+        },
+        {
+          teamSize: "4-6",
+          perGuest: "29.99",
+        },
+        {
+          teamSize: "7+",
+          perGuest: "26.99",
+        },
+      ],
+      duration: "60",
     },
     //============================================treasure-island 2
     "treasure-island": {
       id: 2,
       max_players: "10",
       min_players: "2",
+
+      price: [
+        {
+          teamSize: "1-3",
+          perGuest: "32.99",
+        },
+        {
+          teamSize: "4-6",
+          perGuest: "29.99",
+        },
+        {
+          teamSize: "7+",
+          perGuest: "26.99",
+        },
+      ],
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
@@ -3315,6 +3350,21 @@ const activityGuest = {
       id: 3,
       max_players: "10",
       min_players: "2",
+      price: [
+        {
+          teamSize: "1-3",
+          perGuest: "32.99",
+        },
+        {
+          teamSize: "4-6",
+          perGuest: "29.99",
+        },
+        {
+          teamSize: "7+",
+          perGuest: "26.99",
+        },
+      ],
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
@@ -3322,6 +3372,21 @@ const activityGuest = {
       id: 4,
       max_players: "8",
       min_players: "2",
+      price: [
+        {
+          teamSize: "1-3",
+          perGuest: "32.99",
+        },
+        {
+          teamSize: "4-6",
+          perGuest: "29.99",
+        },
+        {
+          teamSize: "7+",
+          perGuest: "26.99",
+        },
+      ],
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
 
@@ -3330,6 +3395,21 @@ const activityGuest = {
       id: 7,
       max_players: "6",
       min_players: "2",
+      price: [
+        {
+          teamSize: "1-3",
+          perGuest: "32.99",
+        },
+        {
+          teamSize: "4-6",
+          perGuest: "29.99",
+        },
+        {
+          teamSize: "7+",
+          perGuest: "26.99",
+        },
+      ],
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
@@ -3337,6 +3417,21 @@ const activityGuest = {
       id: 8,
       max_players: "8",
       min_players: "2",
+      price: [
+        {
+          teamSize: "1-3",
+          perGuest: "32.99",
+        },
+        {
+          teamSize: "4-6",
+          perGuest: "29.99",
+        },
+        {
+          teamSize: "7+",
+          perGuest: "26.99",
+        },
+      ],
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -3345,6 +3440,21 @@ const activityGuest = {
       id: 9,
       max_players: "6",
       min_players: "2",
+      price: [
+        {
+          teamSize: "1-3",
+          perGuest: "32.99",
+        },
+        {
+          teamSize: "4-6",
+          perGuest: "29.99",
+        },
+        {
+          teamSize: "7+",
+          perGuest: "26.99",
+        },
+      ],
+      duration: "60",
     },
     //============================================black-ops 10
     "beat-the-seat": {

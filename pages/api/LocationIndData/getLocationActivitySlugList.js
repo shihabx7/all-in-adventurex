@@ -1229,12 +1229,12 @@ const datalist = {
       activity_name: "Black Ops",
       activity_slug: "black-ops",
     },
-    {
+    /*{
       id: 7,
       category: "escapegame",
       activity_name: "Houdini's Magic Cell",
       activity_slug: "houdinis-magic-cell",
-    },
+    },*/
   ],
   // ===================================== columbus-oh END=======
   // =====================================mentor-oh=======

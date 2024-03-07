@@ -6,6 +6,7 @@ import Head from "next/head";
 import { getLocationIndActivityList } from "../../api/LocationIndData/getLocationIndActivityList";
 import GameLocHero from "../../../comps/activitiyPageComps/GameLocHero";
 import GameLocList from "../../../comps/activitiyPageComps/GameLocList";
+import GameLocListNew from "../../../comps/update/GameLocListNew";
 import BreadcumNew from "../../../comps/util/BreadcumNew";
 import Seofields from "../../../comps/util/SeoFields";
 
@@ -49,7 +50,7 @@ const LocActivity = (props) => {
           pagedata={props.pagedata}
           locdetail={props.pagedata.locdetail}
         />
-        <GameLocList
+        <GameLocListNew
           activitylist={props.activitylist}
           locationslug={props.pagedata.locationslug}
           bookingdata={props.bookingdata}
