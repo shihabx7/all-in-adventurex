@@ -3,9 +3,9 @@ import LocationBtn from "../util/LocationBtn";
 const BlogGnHero = (props) => {
   return (
     <div
-      className="bl-hero bg-[#FFFCEB]"
+      className="bl-hero bg-[#111111]"
       style={{
-        background: "url('" + props.pagedata.coverimageL + "')",
+        backgroundImage: "url('" + props.pagedata.coverimageL + "')",
       }}
     >
       <div className="home-hero-holder ">

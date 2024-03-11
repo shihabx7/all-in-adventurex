@@ -55,6 +55,7 @@ const LocationSingleEvent = (props) => {
         {props.pagedata.event_slug != "date-night" && (
           <>
             <BookYourEvent
+              publish_status={props.pagedata.publish_status}
               bookingall={
                 props.pagedata.bookingall ? props.pagedata.bookingall : false
               }

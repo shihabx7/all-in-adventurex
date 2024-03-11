@@ -55,6 +55,7 @@ const LocEventList = (props) => {
         <BookYourEvent
           bookingall={props.pagedata.bookingall}
           eventbooking={props.pagedata.eventbooking}
+          publish_status={props.pagedata.publish_status}
         />
 
         <EventContact

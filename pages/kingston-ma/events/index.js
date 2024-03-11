@@ -26,6 +26,7 @@ const LocEventList = (props) => {
       <Seofields meta={props.pagemeta} />
       <Homenav
         locationslug={props.pagedata.locationslug}
+        eventbooking={props.pagedata.eventbooking}
         bookingall={props.pagedata.bookingall}
         location={getLoc(props.pagedata.locationslug)}
         activitylist={props.activitylistSlug}
@@ -56,6 +57,7 @@ const LocEventList = (props) => {
         <BookYourEvent
           bookingall={props.pagedata.bookingall}
           eventbooking={props.pagedata.eventbooking}
+          publish_status={props.pagedata.publish_status}
         />
 
         <EventContact
