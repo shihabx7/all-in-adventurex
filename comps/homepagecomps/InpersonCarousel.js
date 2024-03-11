@@ -102,7 +102,7 @@ const InpersonCarousel = (props) => {
               }}
             >
               <div className="card-container">
-                <div className="card-head flex justify-between items-center px-2 pt-4 md:px-3 pb-8">
+                <div className="card-head flex justify-between items-center px-2 pt-4 md:px-[10px] pb-8">
                   <div className="card-info w-[48%]">
                     <p className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">
                       <span>
@@ -153,10 +153,10 @@ const InpersonCarousel = (props) => {
                     <div className="pricelist-container  w-[50%] max-w-[260px] p-[2px] md:p-[6px] bg-red-600">
                       <div className="priceDataTable border border-dashed border-gray-200">
                         <div className="pdt-head flex justify-center items-center border-b border-[#ba2121]">
-                          <p className="w-1/2 p-1 md:p-1 text-center text-[12px] sm:text-[14px] text-white font-medium border-r border-[#ba2121]">
+                          <p className="w-1/2 p-1 md:p-1 text-center text-[12px] sm:text-[13px] text-white font-medium border-r border-[#ba2121]">
                             Team Size
                           </p>
-                          <p className="w-1/2 p-1 md:p-1 text-center text-[12px] sm:text-[14px] text-white font-medium">
+                          <p className="w-1/2 p-1 md:p-1 text-center text-[12px] sm:text-[13px] text-white font-medium">
                             Per Guest
                           </p>
                         </div>

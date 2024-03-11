@@ -115,9 +115,9 @@ const LocationHomeHero = (props) => {
       )}
 
       <div
-        className="bg-[#111111] home-hero location relative "
+        className="bg-[#111111] home-hero location relative"
         style={{
-          background: "url('" + props.pagedata.coverimageL + "')",
+          backgroundImage: "url('" + props.pagedata.coverimageL + "')",
         }}
       >
         <div className="max-w-[84px] md:max-w-[120px] lg:max-w-[144px] absolute top-[4px] md:top-[36px] lg:top-[60px] left-0 right-[4px] md:right-0 ml-auto md:mx-auto">

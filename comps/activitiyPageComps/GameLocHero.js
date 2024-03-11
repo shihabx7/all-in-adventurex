@@ -91,7 +91,7 @@ const GameLocHero = (props) => {
       <div
         className="bg-[#111111] home-hero"
         style={{
-          background: "url('" + props.pagedata.coverimageL + "')",
+          backgroundImage: "url('" + props.pagedata.coverimageL + "')",
         }}
       >
         <div className="home-hero-holder ">
