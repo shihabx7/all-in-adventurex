@@ -5,10 +5,12 @@ import { FiChevronRight } from "react-icons/fi";
 // page template=============
 import { getVolunteeringPageData } from "./api/getVolunteeringPageData";
 import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
+import Vhero from "../comps/volunteeringPageComps/Vhero";
 import GivingBack from "../comps/volunteeringPageComps/GivingBack";
 import Organization from "../comps/volunteeringPageComps/Organization";
-import ContactVolunteer from "../comps/volunteeringPageComps/ContactVolunteer";
+import Vhelp from "../comps/volunteeringPageComps/Vhelp";
 import VolunteeringLoc from "../comps/volunteeringPageComps/VolunteeringLoc";
+import Vcontact from "../comps/volunteeringPageComps/Vcontact";
 import LocationStoreMenu from "../comps/headerComps/LocationStoreMenu";
 import Seofields from "../comps/util/SeoFields";
 
@@ -72,11 +74,11 @@ const Volunteering = (props) => {
         >
           <LocationStoreMenu locationlist={props.locationlist} />
         </div>
-        <GameHomeHero gametotal="not" pagedata={props.pagedata} />
+        <Vhero gametotal="not" pagedata={props.pagedata} />
         <GivingBack />
         <Organization />
-        <ContactVolunteer />
-
+        <Vhelp />
+        <Vcontact locationMailData={props.locationMailData} />
         {/* =========================================================================================main content ======== end */}
       </div>
 
@@ -100,6 +102,7 @@ export const getStaticProps = async () => {
       locationlist: volunteeringPageData.locationlist,
       activitylist: volunteeringPageData.activitylistSlug,
       eventlist: volunteeringPageData.eventlistSlug,
+      locationMailData: volunteeringPageData.locationMailData,
     },
     revalidate: 30,
   };

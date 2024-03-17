@@ -393,7 +393,7 @@ const CorContact = () => {
                   </div>
                   <div className="relative form-col  w-full md:w-[48%]">
                     <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
-                      What's your phone number? *
+                      What's your phone number?*
                     </p>
                     <input
                       type="tel"
@@ -416,7 +416,7 @@ const CorContact = () => {
                 <div className="form-row flex justify-between mt-3 md:mt-10 lg:mt-12 ">
                   <div className="relative form-col w-full">
                     <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
-                      Enquiry type*
+                      Inquiry type*
                     </p>
                     <select
                       name="comsub"
@@ -425,13 +425,14 @@ const CorContact = () => {
                       onChange={(e) => checkComSub(e)}
                       required
                     >
-                      <option value="General enquiry">General enquiry</option>
+                      <option value="">Choose Inquiry Type</option>
+                      <option value="General enquiry">General Inquiry</option>
                       <option value="Group booking">Group booking</option>
                       <option value="Birthday party">Birthday party</option>
                       <option value="Corporate event">Corporate event</option>
                       <option value="Careers">Careers</option>
                       <option value="Franchise enquiry">
-                        Franchise enquiry
+                        Franchise Inquiry
                       </option>
                       <option value="Other">Other</option>
                     </select>

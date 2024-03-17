@@ -58,11 +58,7 @@ export const getLocationHomepageData = (locationslug) => {
   const locationHomedata = {
     locationlist: getTotal().locationlist,
     pagemeta: {
-      title:
-        "Escape Room in " +
-        locAddCam() +
-        " - All In Adventures at " +
-        getLocSpec(locationslug).mall,
+      title: "Escape Room in " + locAddCam() + " - All In Adventures ",
       keywords:
         "all in adventures " +
         locAddLow() +
@@ -128,7 +124,7 @@ export const getLocationHomepageData = (locationslug) => {
         locAddCam() +
         ". Live escape rooms at " +
         getLocSpec(locationslug).mall +
-        " by All In Adventures, formerly Mystery Room.",
+        " by All In Adventures.",
       url: "/locations/" + locationslug,
       metaindex: true,
       metaimg: locPagedata[locationslug].coverimageM,

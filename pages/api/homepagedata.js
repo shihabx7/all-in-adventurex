@@ -8,9 +8,9 @@ export const Homepagedata = () => {
     virtualgameListSlug: getTotal().virtualgameSlug,
     pagemeta: {
       title:
-        "All In Adventures | Formerly Mystery Room | " +
+        "All In Adventures | " +
         getTotal().totalLocations +
-        " Escape Room Venues",
+        " Escape Room Venues in U.S.",
       description:
         "All In Adventures, formerly Mystery Room, is a multi-location escape room, game show room, beat the seat, and axe throwing destination in the United States.",
       keywords:

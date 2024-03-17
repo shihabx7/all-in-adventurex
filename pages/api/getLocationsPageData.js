@@ -566,8 +566,8 @@ export const getLocationsPageData = () => {
               {
                 holiday_name: "Easter",
                 date: "03/31/2024",
-                open: "Closed",
-                close: "-",
+                open: "11 am",
+                close: "6 pm",
               },
               {
                 holiday_name: "Memorial Day",
