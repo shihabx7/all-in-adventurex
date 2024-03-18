@@ -417,20 +417,19 @@ const Vcontact = (props) => {
             </p>
 
             <p className="text-[#464646] xl:text-lg mt-1">
-              <span className="font-medium">- Workshop</span> &#40;Girl/Boy
-              Scouts, Boys and Girls Club, etc.&#41;
+              <span className="font-medium">- Workshop</span> &#40;We help
+              develop a unique program for your organization's goals&#41;
             </p>
             <p className="text-[#464646] xl:text-lg mt-1">
               <span className="font-medium">
                 - Neighbor-to-Neighbor Programs{" "}
               </span>
-              &#40;Connections with other vendors within malls/shopping
-              centers&#41;
+              &#40;Partner with us for social events and shared activities&#41;
             </p>
             <p className="text-[#464646] xl:text-lg mt-1">
               <span className="font-medium">- Space Rental </span>
-              &#40;Donate space such as party rooms to groups who need it such
-              as a pet adoption event&#41;
+              &#40;Host meetings, parties, or other events in our community
+              space&#41;
             </p>
           </div>
         </div>
