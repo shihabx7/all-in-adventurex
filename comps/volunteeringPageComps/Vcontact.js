@@ -328,7 +328,7 @@ const Vcontact = (props) => {
               <div className="form-row flex  flex-col space-y-3 md:flex-row  md:space-y-0 justify-between my-3 md:my-4 ">
                 <div className="form-col w-full md:w-[48.5%]">
                   <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">
-                    Choose Inquiry type*
+                    Choose inquiry type*
                   </p>
                   <select
                     type="text"
@@ -336,7 +336,7 @@ const Vcontact = (props) => {
                     onChange={(e) => checkInqType(e)}
                     required
                   >
-                    <option value="">Choose Inquiry type</option>
+                    <option value="">Inquiry type...</option>
                     <option value="Volunteer Request">Volunteer Request</option>
                     <option value="Fundraising">Fundraising</option>
                     <option value="Workshop">Workshop</option>
@@ -361,7 +361,7 @@ const Vcontact = (props) => {
                       onChange={(e) => checkLocation(e, localdataWithMail)}
                       required
                     >
-                      <option value="">Select your location</option>
+                      <option value="">Your location...</option>
                       {props.locationMailData.map((location, index) => {
                         return (
                           <option key={index} value={location.city}>
@@ -387,7 +387,7 @@ const Vcontact = (props) => {
 
                   <textarea
                     className="w-full h-[80px] md:h-[100px] event-input text-gray-500  border-0 md:py-3 px-4 bg-white"
-                    placeholder="Write your message here"
+                    placeholder="Write your message here..."
                     onChange={(e) => getMsg(e)}
                   ></textarea>
                 </div>
@@ -404,6 +404,34 @@ const Vcontact = (props) => {
               {/*======================================contact form row message event====================== */}
             </form>
             {/*==========================================================contact form to book event end======================= */}
+          </div>
+        </div>
+        <div className="inq-type-text px-4 md:px-8 mt-8 pb-16 md:pb-0">
+          <h3 className="text-[#212121] font-bold text-xl">Inquiry Types:</h3>
+          <div className="inq-list sm:ml-3 lg:ml-4 mt-2">
+            <p className="text-[#464646] xl:text-lg">
+              <span className="font-medium">- Volunteer Request</span>
+            </p>
+            <p className="text-[#464646] xl:text-lg mt-1">
+              <span className="font-medium">- Fundraising</span>
+            </p>
+
+            <p className="text-[#464646] xl:text-lg mt-1">
+              <span className="font-medium">- Workshop</span> &#40;Girl/Boy
+              Scouts, Boys and Girls Club, etc.&#41;
+            </p>
+            <p className="text-[#464646] xl:text-lg mt-1">
+              <span className="font-medium">
+                - Neighbor-to-Neighbor Programs{" "}
+              </span>
+              &#40;Connections with other vendors within malls/shopping
+              centers&#41;
+            </p>
+            <p className="text-[#464646] xl:text-lg mt-1">
+              <span className="font-medium">- Space Rental </span>
+              &#40;Donate space such as party rooms to groups who need it such
+              as a pet adoption event&#41;
+            </p>
           </div>
         </div>
       </div>
