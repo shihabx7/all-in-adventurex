@@ -823,10 +823,10 @@ const datalist = {
     },
 
     {
-      id: 7,
+      id: 6,
       category: "escapegame",
-      activity_name: "Houdini's Magic Cell",
-      activity_slug: "houdinis-magic-cell",
+      activity_name: "Superhero's Adventure",
+      activity_slug: "superheros-adventure",
     },
 
     {

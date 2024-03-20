@@ -2470,21 +2470,21 @@ const LocActivityData = {
       },
 
       {
-        id: 7,
-        activity_name: "HOUDINI'S MAGIC CELL",
+        id: 6,
+        activity_name: "Superhero's Adventure",
         activity_type: "In person",
         activity_category: "escapegame",
         age: "6-99",
         min_player: "2",
         max_player: "10",
-        success_rate: "18",
         price: "29.89",
+        success_rate: "61",
         duration: "50",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
-        activity_slug: "houdinis-magic-cell",
+          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+        activity_slug: "superheros-adventure",
         activity_cover_image:
-          "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
+          "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
 
       {

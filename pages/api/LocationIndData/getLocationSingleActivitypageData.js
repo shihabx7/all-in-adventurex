@@ -2645,7 +2645,7 @@ const activityGuest = {
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
-    "houdinis-magic-cell": {
+    "superheros-adventure": {
       max_players: "10",
       min_players: "2",
     },

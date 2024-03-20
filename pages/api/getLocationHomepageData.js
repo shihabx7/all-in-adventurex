@@ -4601,23 +4601,22 @@ const locPagedata = {
         slug: "black-ops",
         bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
       },
-
       {
-        id: 7,
+        id: 6,
         category: "escapegame",
         type: "In-Person",
-        title: "Houdini's Magic Cell",
-        success_rate: "18",
+        title: "Superhero's Adventure",
+        success_rate: "61",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "50",
         maxplayers: "10",
         minplayers: "2",
         price: "29.89",
-        slug: "houdinis-magic-cell",
+        slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
       },
 
       {

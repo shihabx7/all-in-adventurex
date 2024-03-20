@@ -1073,9 +1073,9 @@ const blist = {
       item: "44825",
       flow: "2018",
     },
-    "houdinis-magic-cell": {
+    "superheros-adventure": {
       active: true,
-      item: "44826",
+      item: "44821",
       flow: "2018",
     },
     "black-ops": {
