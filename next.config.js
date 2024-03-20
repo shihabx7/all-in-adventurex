@@ -862,6 +862,11 @@ const nAttleboroughRed = [
 // =========================================-------------milford-ct CT
 const milfordRed = [
   {
+    source: "/milford-ct/activities/houdinis-magic-cell",
+    destination: "/milford-ct/activities",
+    permanent: prm,
+  },
+  {
     source: "/locations/milford-ct/events",
     destination: "/milford-ct/events",
     permanent: prm,
