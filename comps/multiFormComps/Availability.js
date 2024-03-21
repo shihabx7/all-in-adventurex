@@ -188,7 +188,7 @@ const Availability = ({
       setAvlErr({ ...avlErr, [dayerr]: true });
       setAvailability({
         ...availability,
-        [checkDay]: { ...availability[checkDay], start: checkTime },
+        [checkDay]: { ...availability[checkDay], close: checkTime },
       });
       e.target.classList.remove("focus-green");
       e.target.classList.add("focus-red");
@@ -196,7 +196,7 @@ const Availability = ({
 
     //console.log(checkDay)
     // console.log(availability[checkDay])
-    // console.log(availability)
+    console.log(availability);
   };
   const checkCloseTime = (e, day) => {
     const checkcTime = e.target.value;
@@ -477,6 +477,7 @@ const Availability = ({
                     >
                       <option value="">Close time </option>
                       <option value="Any">Any</option>
+                      <option value="None">None</option>
                       <option value="12 pm">12 pm</option>
                       <option value="1 pm">1 pm</option>
                       <option value="11 am">2 pm</option>
@@ -530,6 +531,7 @@ const Availability = ({
                     >
                       <option value="">Start time</option>
                       <option value="Any">Any</option>
+
                       <option value="None">None</option>
                       <option value="9 am">9 am</option>
                       <option value="10 am">10 am</option>
@@ -575,6 +577,7 @@ const Availability = ({
                     >
                       <option value="">Close time</option>
                       <option value="Any">Any</option>
+                      <option value="None">None</option>
                       <option value="12 pm">12 pm</option>
                       <option value="1 pm">1 pm</option>
                       <option value="11 am">2 pm</option>
@@ -677,6 +680,7 @@ const Availability = ({
                     >
                       <option value="">Close time</option>
                       <option value="Any">Any</option>
+                      <option value="None">None</option>
                       <option value="12 pm">12 pm</option>
                       <option value="1 pm">1 pm</option>
                       <option value="11 am">2 pm</option>
@@ -784,6 +788,7 @@ const Availability = ({
                     >
                       <option value="">Close time</option>
                       <option value="Any">Any</option>
+                      <option value="None">None</option>
                       <option value="12 pm">12 pm</option>
                       <option value="1 pm">1 pm</option>
                       <option value="11 am">2 pm</option>
@@ -892,6 +897,7 @@ const Availability = ({
                     >
                       <option value="">Close time</option>
                       <option value="Any">Any</option>
+                      <option value="None">None</option>
                       <option value="12 pm">12 pm</option>
                       <option value="1 pm">1 pm</option>
                       <option value="11 am">2 pm</option>
@@ -991,6 +997,7 @@ const Availability = ({
                     >
                       <option value="">Close time</option>
                       <option value="Any">Any</option>
+                      <option value="None">None</option>
                       <option value="12 pm">12 pm</option>
                       <option value="1 pm">1 pm</option>
                       <option value="11 am">2 pm</option>
@@ -1098,6 +1105,7 @@ const Availability = ({
                     >
                       <option value="">Close time</option>
                       <option value="Any">Any</option>
+                      <option value="None">None</option>
                       <option value="12 pm">12 pm</option>
                       <option value="1 pm">1 pm</option>
                       <option value="11 am">2 pm</option>
