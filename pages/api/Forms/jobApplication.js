@@ -141,7 +141,7 @@ export default async function jobApplicationHandler(req, res) {
     });
     await transporter.sendMail({
       from: `"AIA Job Application"<${mailUser}>"`,
-      // to: "shihab.dgency@gmail.com",
+      //to: "shihab.dgency@gmail.com",
       to: `${mailReceiver}`,
       //bcc: `${mailReceiverBcc}`,
       bcc: "dgency.com@gmail.com",

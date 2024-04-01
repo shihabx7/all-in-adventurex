@@ -1758,6 +1758,7 @@ const activityGuest = {
       id: 1,
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
@@ -1765,6 +1766,7 @@ const activityGuest = {
       id: 2,
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
@@ -1772,6 +1774,7 @@ const activityGuest = {
       id: 3,
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
@@ -1779,6 +1782,7 @@ const activityGuest = {
       id: 4,
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
     //============================================special-agent5
@@ -1786,6 +1790,7 @@ const activityGuest = {
       id: 5,
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================special-agent end5
     //============================================hollywood-premiere 6
@@ -1793,6 +1798,7 @@ const activityGuest = {
       id: 6,
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
@@ -1800,6 +1806,7 @@ const activityGuest = {
       id: 7,
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
@@ -1807,6 +1814,7 @@ const activityGuest = {
       id: 8,
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -1815,12 +1823,14 @@ const activityGuest = {
       id: 9,
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
     //============================================lost-in-the-jungle 11
     "lost-in-the-jungle": {
       max_players: 5,
       min_players: 2,
+      duration: "60",
     },
     //============================================lost-in-the-jungle end 11
 
@@ -1828,18 +1838,21 @@ const activityGuest = {
     "wizarding-school": {
       max_players: "4",
       min_players: "2",
+      duration: "60",
     },
     //============================================wizarding-school end 13
     //============================================magic-castle 9
     "magic-castle": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================magic-castle end 9
     //============================================locked-in-the-Lift 14
     "locked-in-the-lift": {
       max_players: "4",
       min_players: "2",
+      duration: "60",
     },
     //============================================locked-in-the-lift end 14
     //============================================game-show-room 15
@@ -1852,6 +1865,7 @@ const activityGuest = {
     "axe-throwing": {
       max_players: 4,
       min_players: 2,
+      duration: "60",
     },
     //============================================axe-throwing end 16
     //============================================beat-the-seat 17
@@ -1869,6 +1883,7 @@ const activityGuest = {
       id: 1,
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
@@ -1876,6 +1891,7 @@ const activityGuest = {
       id: 2,
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
@@ -1883,6 +1899,7 @@ const activityGuest = {
       id: 3,
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
@@ -1890,6 +1907,7 @@ const activityGuest = {
       id: 4,
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
     //============================================special-agent5
@@ -1897,6 +1915,7 @@ const activityGuest = {
       id: 5,
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================special-agent end5
     //============================================hollywood-premiere 6
@@ -1904,6 +1923,7 @@ const activityGuest = {
       id: 6,
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
@@ -1911,6 +1931,7 @@ const activityGuest = {
       id: 7,
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
@@ -1918,6 +1939,7 @@ const activityGuest = {
       id: 8,
       max_players: "12",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -1926,6 +1948,7 @@ const activityGuest = {
       id: 9,
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
   },
@@ -1937,48 +1960,56 @@ const activityGuest = {
       id: 1,
       max_players: "12",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
     "treasure-island": {
       max_players: "12",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure": {
       max_players: "15",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
     "zombie-apocalypse": {
       max_players: "12",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
     //============================================special-agent5
     "special-agent": {
       max_players: "12",
       min_players: "2",
+      duration: "60",
     },
     //============================================special-agent end5
     //============================================hollywood-premiere 6
     "hollywood-premiere": {
       max_players: "12",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
     "sherlocks-library": {
       max_players: "12",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
       max_players: "12",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -1986,6 +2017,7 @@ const activityGuest = {
     "black-ops": {
       max_players: "12",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
 
@@ -1993,6 +2025,7 @@ const activityGuest = {
     "wizarding-school": {
       max_players: "4",
       min_players: "2",
+      duration: "60",
     },
     //============================================wizarding-school end 13
 
@@ -2011,6 +2044,7 @@ const activityGuest = {
       max_players: "10",
       min_players: "2",
       success_rate: "32%",
+      duration: "60",
       notice_img: "/assets/svg/new-game-in-beta.svg",
       pagesubtitle:
         "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
@@ -2028,42 +2062,49 @@ const activityGuest = {
     "treasure-island": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
     "zombie-apocalypse": {
       max_players: "12",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
     //============================================special-agent5
     "special-agent": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================special-agent end5
     //============================================hollywood-premiere 6
     "hollywood-premiere": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
     "sherlocks-library": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -2071,20 +2112,22 @@ const activityGuest = {
     "black-ops": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
 
     //============================================magic-castle 9
-    "magic-castle": {
-      max_players: "4",
-      min_players: "2",
-    },
+    // "magic-castle": {
+    //   max_players: "4",
+    //  min_players: "2",
+    // duration: "60",
+    // },
     //============================================magic-castle end 9
     //============================================locked-in-the-Lift 14
-    "locked-in-the-lift": {
-      max_players: "4",
-      min_players: "2",
-    },
+    // "locked-in-the-lift": {
+    //  max_players: "4",
+    //  min_players: "2",
+    // },
     //============================================locked-in-the-lift end 14
 
     //============================================beat-the-seat 17
@@ -2101,48 +2144,56 @@ const activityGuest = {
     "escape-from-alcatraz": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
     "treasure-island": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
     "zombie-apocalypse": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
     //============================================special-agent5
     "special-agent": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================special-agent end5
     //============================================hollywood-premiere 6
     "hollywood-premiere": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
     "sherlocks-library": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -2150,6 +2201,7 @@ const activityGuest = {
     "black-ops": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
 
@@ -2162,24 +2214,28 @@ const activityGuest = {
     "escape-from-alcatraz": {
       max_players: "12",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
     "treasure-island": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure": {
       max_players: "12",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
     "zombie-apocalypse": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
 
@@ -2187,6 +2243,7 @@ const activityGuest = {
     "sherlocks-library": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
 
@@ -2219,24 +2276,29 @@ const activityGuest = {
     "escape-from-alcatraz": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
     "treasure-island": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
+
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
     "zombie-apocalypse": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
 
@@ -2244,12 +2306,14 @@ const activityGuest = {
     "sherlocks-library": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
       max_players: "4",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -2257,6 +2321,7 @@ const activityGuest = {
     "black-ops": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
 
@@ -2276,24 +2341,28 @@ const activityGuest = {
     "escape-from-alcatraz": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
     "treasure-island": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
     "zombie-apocalypse": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
 
@@ -2301,12 +2370,14 @@ const activityGuest = {
     "sherlocks-library": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -2314,6 +2385,7 @@ const activityGuest = {
     "black-ops": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
   },
@@ -2326,48 +2398,56 @@ const activityGuest = {
     "escape-from-alcatraz": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
     "treasure-island": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
     "zombie-apocalypse": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
     //============================================special-agent5
     "special-agent": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================special-agent end5
     //============================================hollywood-premiere 6
     "hollywood-premiere": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
     "sherlocks-library": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -2375,6 +2455,7 @@ const activityGuest = {
     "black-ops": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
   },
@@ -2387,48 +2468,56 @@ const activityGuest = {
     "escape-from-alcatraz": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
     "treasure-island": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
     "zombie-apocalypse": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
     //============================================special-agent5
     "special-agent": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================special-agent end5
     //============================================hollywood-premiere 6
     "hollywood-premiere": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
     "sherlocks-library": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -2436,6 +2525,7 @@ const activityGuest = {
     "black-ops": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
   },
@@ -2446,18 +2536,21 @@ const activityGuest = {
     "escape-from-alcatraz": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
     "treasure-island": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
 
@@ -2465,18 +2558,21 @@ const activityGuest = {
     "hollywood-premiere": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
     "sherlocks-library": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -2484,6 +2580,7 @@ const activityGuest = {
     "black-ops": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
   },
@@ -2494,24 +2591,28 @@ const activityGuest = {
     "escape-from-alcatraz": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
     "treasure-island": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
     "zombie-apocalypse": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
 
@@ -2519,18 +2620,21 @@ const activityGuest = {
     "hollywood-premiere": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
     "sherlocks-library": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -2538,12 +2642,14 @@ const activityGuest = {
     "black-ops": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
     //============================================lost-in-the-jungle 11
     "lost-in-the-jungle": {
       max_players: 5,
       min_players: 2,
+      duration: "60",
     },
     //============================================lost-in-the-jungle end 11
   },
@@ -2554,48 +2660,56 @@ const activityGuest = {
     "escape-from-alcatraz": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
     "treasure-island": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
     "zombie-apocalypse": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
     //============================================special-agent5
     "special-agent": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================special-agent end5
     //============================================hollywood-premiere 6
     "hollywood-premiere": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
     "sherlocks-library": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -2603,6 +2717,7 @@ const activityGuest = {
     "black-ops": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
   },
@@ -2616,12 +2731,14 @@ const activityGuest = {
     "escape-from-alcatraz": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
     "treasure-island": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
 
@@ -2629,6 +2746,7 @@ const activityGuest = {
     "zombie-apocalypse": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
 
@@ -2636,18 +2754,21 @@ const activityGuest = {
     "hollywood-premiere": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
     "sherlocks-library": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "superheros-adventure": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -2655,6 +2776,7 @@ const activityGuest = {
     "black-ops": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
   },
@@ -2666,6 +2788,7 @@ const activityGuest = {
       max_players: "10",
       min_players: "2",
       success_rate: "32%",
+      duration: "60",
       notice_img: "/assets/svg/new-game-in-beta.svg",
       pagesubtitle:
         "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
@@ -2683,42 +2806,49 @@ const activityGuest = {
     "treasure-island": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
     "zombie-apocalypse": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
     //============================================special-agent5
     "special-agent": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================special-agent end5
     //============================================hollywood-premiere 6
     "hollywood-premiere": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
     "sherlocks-library": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -2726,6 +2856,7 @@ const activityGuest = {
     "black-ops": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
   },
@@ -2736,48 +2867,56 @@ const activityGuest = {
     "escape-from-alcatraz": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
     "treasure-island": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
     "zombie-apocalypse": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
     //============================================special-agent5
     "special-agent": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================special-agent end5
     //============================================hollywood-premiere 6
     "hollywood-premiere": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
     "sherlocks-library": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -2785,6 +2924,7 @@ const activityGuest = {
     "black-ops": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
   },
@@ -2797,30 +2937,35 @@ const activityGuest = {
     "escape-from-alcatraz": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
     "treasure-island": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
     "zombie-apocalypse": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
     //============================================special-agent5
     "special-agent": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================special-agent end5
 
@@ -2828,12 +2973,14 @@ const activityGuest = {
     "sherlocks-library": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -2841,6 +2988,7 @@ const activityGuest = {
     "black-ops": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
   },
@@ -2851,48 +2999,56 @@ const activityGuest = {
     "escape-from-alcatraz": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
     "treasure-island": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
     "zombie-apocalypse": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
     //============================================special-agent5
     "special-agent": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================special-agent end5
     //============================================hollywood-premiere 6
     "hollywood-premiere": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
     "sherlocks-library": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -2900,6 +3056,7 @@ const activityGuest = {
     "black-ops": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
   },
@@ -2912,18 +3069,21 @@ const activityGuest = {
     "escape-from-alcatraz": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
     "treasure-island": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
 
@@ -2931,18 +3091,21 @@ const activityGuest = {
     "hollywood-premiere": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
     "sherlocks-library": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -2950,6 +3113,7 @@ const activityGuest = {
     "black-ops": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
   },
@@ -2960,11 +3124,13 @@ const activityGuest = {
     "escape-from-alcatraz": {
       max_players: "12",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
     "treasure-island": {
       max_players: "8",
+      duration: "60",
       min_players: "2",
     },
     //============================================treasure-island end 2
@@ -2972,12 +3138,14 @@ const activityGuest = {
     "superheros-adventure": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
     "zombie-apocalypse": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
 
@@ -2985,18 +3153,21 @@ const activityGuest = {
     "hollywood-premiere": {
       max_players: "4",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
     "sherlocks-library": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -3004,6 +3175,7 @@ const activityGuest = {
     "black-ops": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
 
@@ -3011,17 +3183,19 @@ const activityGuest = {
     "game-show-room": {
       max_players: 8,
       min_players: 4,
+      duration: "60",
     },
     //============================================game-show-room end 15
   },
   //=========================================================rockaway-nj end
-  //=========================================================woodbridge-nj list
+  //=========================================================woodbridge-nj list. page hero section data can be changed here
   "woodbridge-nj": {
     //============================================escape-from-alcatraz 1
     "escape-from-alcatraz": {
       max_players: "8",
       min_players: "2",
       success_rate: "32%",
+      duration: "60",
       notice_img: "/assets/svg/new-game-in-beta.svg",
       pagesubtitle:
         "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
@@ -3039,42 +3213,49 @@ const activityGuest = {
     "treasure-island": {
       max_players: "12",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
     "superheros-adventure": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
     "zombie-apocalypse": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
     //============================================special-agent5
     "special-agent": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================special-agent end5
     //============================================hollywood-premiere 6
     "hollywood-premiere": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
     "sherlocks-library": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -3082,6 +3263,7 @@ const activityGuest = {
     "black-ops": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
   },
@@ -3095,12 +3277,14 @@ const activityGuest = {
     "escape-from-alcatraz": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
     "treasure-island": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================zombie-apocalypse4
@@ -3108,6 +3292,7 @@ const activityGuest = {
       id: 4,
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
 
@@ -3115,12 +3300,14 @@ const activityGuest = {
     "sherlocks-library": {
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
     "houdinis-magic-cell": {
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -3128,6 +3315,7 @@ const activityGuest = {
     "black-ops": {
       max_players: "8",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
   },
@@ -3237,6 +3425,7 @@ const activityGuest = {
       id: 1,
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================escape-from-alcatraz end 1
     //============================================treasure-island 2
@@ -3244,6 +3433,7 @@ const activityGuest = {
       id: 2,
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================treasure-island end 2
     //============================================superheros-adventure3
@@ -3251,6 +3441,7 @@ const activityGuest = {
       id: 3,
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================superheros-adventure end3
     //============================================zombie-apocalypse4
@@ -3258,6 +3449,7 @@ const activityGuest = {
       id: 4,
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================zombie-apocalypse end4
     //============================================special-agent5
@@ -3265,6 +3457,7 @@ const activityGuest = {
       id: 5,
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================special-agent end5
     //============================================hollywood-premiere 6
@@ -3272,6 +3465,7 @@ const activityGuest = {
       id: 6,
       max_players: "6",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 6
     //============================================sherlocks-library 7
@@ -3279,6 +3473,7 @@ const activityGuest = {
       id: 7,
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================hollywood-premiere 7
     //============================================houdinis-magic-cell 8
@@ -3286,6 +3481,7 @@ const activityGuest = {
       id: 8,
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================houdinis-magic-cell 8
 
@@ -3294,6 +3490,7 @@ const activityGuest = {
       id: 9,
       max_players: "10",
       min_players: "2",
+      duration: "60",
     },
     //============================================black-ops 10
   },

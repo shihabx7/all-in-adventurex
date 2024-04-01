@@ -258,12 +258,12 @@ const datalist = {
       activity_name: "Hollywood Premiere",
       activity_slug: "hollywood-premiere",
     },
-    {
+    /* {
       id: 12,
       category: "escapegame",
       activity_name: "Locked In The Lift",
       activity_slug: "locked-in-the-lift",
-    },
+    },*/
     /*{
             "id":13,
             "category":"escapegame",

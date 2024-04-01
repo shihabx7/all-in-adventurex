@@ -67,7 +67,7 @@ const activityDataset = {
     pagesubtitle:
       "You are prison guards at the maximum security prison, Alcatraz, and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -155,7 +155,7 @@ const activityDataset = {
     pagesubtitle:
       "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -243,7 +243,7 @@ const activityDataset = {
     pagesubtitle:
       "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -331,7 +331,7 @@ const activityDataset = {
     pagesubtitle:
       "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -417,7 +417,7 @@ const activityDataset = {
     pagesubtitle:
       "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -502,7 +502,7 @@ const activityDataset = {
     pagesubtitle:
       "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -591,7 +591,7 @@ const activityDataset = {
     activityname: "Sherlock's Library",
     category: "escapegames",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -678,7 +678,7 @@ const activityDataset = {
     pagesubtitle:
       "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -765,7 +765,7 @@ const activityDataset = {
     pagesubtitle:
       "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -1014,13 +1014,13 @@ const activityDataset = {
   },
   //============================================wizarding-school end 13
   //============================================magic-castle 9
-  "magic-castle": {
+  /*"magic-castle": {
     activityname: "Magic Castle",
 
     pagesubtitle:
       "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards. Test your wits, courage, loyalty, and cunning.",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -1096,16 +1096,16 @@ const activityDataset = {
         img_alt: "allinadventures-magic-castle-gallery-6",
       },
     ],
-  },
+  },*/
   //============================================magic-castle end 9
   //============================================locked-in-the-Lift 14
-  "locked-in-the-lift": {
+  /* "locked-in-the-lift": {
     activityname: "Locked In The Lift",
 
     pagesubtitle:
       "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. See if you can piece together how to get things running again.",
     price: "29.89",
-    duration: "30",
+    duration: "60",
     max_players: "4",
     min_players: "2",
     age: "6-99",
@@ -1182,7 +1182,7 @@ const activityDataset = {
         img_alt: "allinadventures-locked-in-the-lift-gallery-6",
       },
     ],
-  },
+  },*/
   //============================================locked-in-the-lift end 14
   //============================================game-show-room 15
   "game-show-room": {

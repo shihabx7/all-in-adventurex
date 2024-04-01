@@ -7,6 +7,16 @@ const prm = false;
 // =========================================genarel redirect
 const gnRed = [
   {
+    source: "/activities/locked-in-the-lift",
+    destination: "/activities",
+    permanent: prm,
+  },
+  {
+    source: "/activities/magic-castle",
+    destination: "/activities",
+    permanent: prm,
+  },
+  {
     source: "/franchising",
     destination: "/franchise",
     permanent: prm,
@@ -317,12 +327,22 @@ const syracuseRed = [
   },
   {
     source: "/rooms/locked-in-the-lift-syracuse-ny",
-    destination: "/syracuse-ny/activities/locked-in-the-lift",
+    destination: "/syracuse-ny/activities",
+    permanent: prm,
+  },
+  {
+    source: "/syracuse-ny/activities/locked-in-the-lift",
+    destination: "/syracuse-ny/activities",
+    permanent: prm,
+  },
+  {
+    source: "/syracuse-ny/activities/magic-castle",
+    destination: "/syracuse-ny/activities/",
     permanent: prm,
   },
   {
     source: "/rooms/magic-castle-syracuse-ny",
-    destination: "/syracuse-ny/activities/magic-castle",
+    destination: "/syracuse-ny/activities",
     permanent: prm,
   },
 

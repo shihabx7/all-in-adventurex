@@ -393,12 +393,13 @@ const GameLocHero = (props) => {
                       <div className="border-l border-gray-300 ">
                         <p className="golden-text text-xl md:text-4xl font-os font-bold">
                           {typeof props.pagedata.price != "object"
-                            ? "$" + props.pagedata.price
+                            ? //"$" + props.pagedata.price
+                              "YES"
                             : "YES"}
                         </p>
                         <p className="text-gray-700 text-xs md:text-base lg:text-lg">
                           {typeof props.pagedata.price != "object"
-                            ? "Per Guest"
+                            ? "Private"
                             : "Private"}
                         </p>
                       </div>

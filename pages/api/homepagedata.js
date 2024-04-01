@@ -40,10 +40,23 @@ export const Homepagedata = () => {
         description:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         age: "6-99",
-        duration: "50",
+        duration: "60",
         maxplayers: "10",
         minplayers: "2",
-        price: "29.89",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
         slug: "escape-from-alcatraz",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
@@ -57,10 +70,23 @@ export const Homepagedata = () => {
         description:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         age: "6-99",
-        duration: "50",
+        duration: "60",
         maxplayers: "10",
         minplayers: "2",
-        price: "29.89",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
         slug: "treasure-island",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
@@ -74,10 +100,23 @@ export const Homepagedata = () => {
         description:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         age: "6-99",
-        duration: "50",
+        duration: "60",
         maxplayers: "10",
         minplayers: "2",
-        price: "29.89",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
         slug: "zombie-apocalypse",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
@@ -91,10 +130,23 @@ export const Homepagedata = () => {
         description:
           "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
         age: "6-99",
-        duration: "50",
+        duration: "60",
         maxplayers: "10",
         minplayers: "2",
-        price: "29.89",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
         slug: "sherlocks-library",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
@@ -109,10 +161,23 @@ export const Homepagedata = () => {
         description:
           "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         age: "6-99",
-        duration: "50",
+        duration: "60",
         maxplayers: "10",
         minplayers: "2",
-        price: "29.89",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
         slug: "black-ops",
         bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
       },
@@ -125,10 +190,23 @@ export const Homepagedata = () => {
         description:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
-        duration: "50",
+        duration: "60",
         maxplayers: "10",
         minplayers: "2",
-        price: "29.89",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
         slug: "superheros-adventure",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
@@ -142,10 +220,23 @@ export const Homepagedata = () => {
         description:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         age: "6-99",
-        duration: "50",
+        duration: "60",
         maxplayers: "10",
         minplayers: "2",
-        price: "29.89",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
         slug: "houdinis-magic-cell",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
@@ -160,10 +251,23 @@ export const Homepagedata = () => {
         description:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         age: "6-99",
-        duration: "50",
+        duration: "60",
         maxplayers: "10",
         minplayers: "2",
-        price: "29.89",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
         slug: "special-agent",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg",
@@ -177,10 +281,23 @@ export const Homepagedata = () => {
         description:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
-        duration: "50",
+        duration: "60",
         maxplayers: "10",
         minplayers: "2",
-        price: "29.89",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
         slug: "hollywood-premiere",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
@@ -197,7 +314,16 @@ export const Homepagedata = () => {
         duration: "60",
         maxplayers: "5",
         minplayers: "2",
-        price: "39.95",
+        price: [
+          {
+            teamSize: "1-4",
+            perGuest: "39.95",
+          },
+          {
+            teamSize: "5+",
+            perGuest: "37.99",
+          },
+        ],
         slug: "lost-in-the-jungle",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg",
@@ -214,12 +340,21 @@ export const Homepagedata = () => {
         duration: "60",
         maxplayers: "4",
         minplayers: "2",
-        price: "39.95",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "39.95",
+          },
+          {
+            teamSize: "4+",
+            perGuest: "37.49",
+          },
+        ],
         slug: "wizarding-school",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg",
       },
-      {
+      /*{
         id: 12,
         category: "escapegame",
         type: "In-Person",
@@ -231,13 +366,22 @@ export const Homepagedata = () => {
         duration: "30",
         maxplayers: "4",
         minplayers: "2",
-        price: "29.89",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+        ],
         slug: "locked-in-the-lift",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-locked-in-the-lift-game.jpg",
-      },
+      },*/
 
-      {
+      /* {
         id: 13,
         category: "escapegame",
         type: "In-Person",
@@ -249,11 +393,24 @@ export const Homepagedata = () => {
         duration: "60",
         maxplayers: "8",
         minplayers: "2",
-        price: "29.89",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
         slug: "magic-castle",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-magic-castle-game.jpg",
-      },
+      },*/
     ],
     otherphysicalgames: [
       {

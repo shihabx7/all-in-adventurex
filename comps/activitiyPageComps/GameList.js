@@ -73,51 +73,74 @@ const GameList = (props) => {
                       boxShadow: "0px 0px 16px 2px rgba(0,0,0,0.45)",
                     }}
                   >
-                    <div className="all-game-list-head flex justify-between">
-                      <div className="all-game-info">
-                        <p className="flex items-center space-x-2 text-gray-50 my-1">
+                    <div className="all-game-list-head flex justify-between space-x-1 items-center">
+                      <div className="all-game-info max-w-[50%]">
+                        <div className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">
                           <span>
                             <img src="/assets/svg/card-age.svg"></img>
                           </span>
-                          <span className="text-sm md:text-base drop-shadow">
+                          <p className="text-[13px] xs:text-[14px] md:text-base">
                             Age Range {activity.age}
-                          </span>
-                        </p>
-                        <p className="flex items-center space-x-2 text-gray-50 my-1">
+                          </p>
+                        </div>
+                        <p className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">
                           <span>
                             <img src="/assets/svg/card-time.svg"></img>
                           </span>
-                          <span className="text-sm md:text-base drop-shadow">
+                          <span className="text-[13px] xs:text-[14px] md:text-base">
                             Duration {activity.duration} Min
                           </span>
                         </p>
-                        <p className="flex items-center space-x-2 text-gray-50 my-1">
+                        <p className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">
                           <span>
                             <img src="/assets/svg/card-person.svg"></img>
                           </span>
-                          <span className="text-sm md:text-base drop-shadow">
+                          <span className="text-[13px] xs:text-[14px] md:text-base">
                             Team Size {activity.min_player}-
                             {activity.max_player}
-                          </span>{" "}
-                        </p>
-                        <p className="flex items-center space-x-2 text-gray-50 my-1">
-                          <span>
-                            <img src="/assets/svg/inperson.svg"></img>
-                          </span>
-                          <span className="text-sm md:text-base drop-shadow">
-                            Success Rate {activity.success_rate}%
                           </span>
                         </p>
-                      </div>
-                      <div className="card-ribbon">
-                        <div className="inline-block text-center py-2 px-4 bg-red-600">
-                          <p className="text-lg text-white">FROM</p>
-                          <p className="text-3xl text-white font-bold">
-                            ${activity.price}
+                        {activity.success_rate && (
+                          <p className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">
+                            <span>
+                              <img src="/assets/svg/inperson.svg"></img>
+                            </span>
+                            <span className="text-[13px] xs:text-[14px] md:text-base drop-shadow">
+                              Success Rate {activity.success_rate}%
+                            </span>
                           </p>
+                        )}
+                      </div>
+
+                      <div className="pricelist-container  w-[50%] max-w-[220px] p-[2px] md:p-[6px] bg-red-600">
+                        <div className="priceDataTable border border-dashed border-gray-200">
+                          <div className="pdt-head flex justify-center items-center border-b border-[#ba2121]">
+                            <p className="w-1/2 p-1 md:p-1 text-center text-[12px] sm:text-[14px] text-white font-medium border-r border-[#ba2121]">
+                              Team Size
+                            </p>
+                            <p className="w-1/2 p-1 md:p-1 text-center text-[12px] sm:text-[14px] text-white font-medium">
+                              Per Guest
+                            </p>
+                          </div>
+                          {activity.price.map((priceItem, index) => {
+                            return (
+                              <div
+                                key={index}
+                                className="pdt-head flex justify-center items-center border-b border-[#ba2121]"
+                              >
+                                <p className="w-1/2 p-1 md:p-[4px] leading-[1]  text-center text-[12px] sm:text-[14px] text-white font-medium border-r border-[#ba2121]">
+                                  {priceItem.teamSize}
+                                </p>
+                                <p className="w-1/2 p-1 md:p-[4px] leading-[1] text-center text-[12px] sm:text-[14px] text-white font-medium">
+                                  ${priceItem.perGuest}
+                                </p>
+                              </div>
+                            );
+                          })}
                         </div>
                       </div>
                     </div>
+
                     <div className="all-game-list-gap py-[52px] md:py-[8%] lg:py-[72px]"></div>
                     <div className="all-game-list-bottom">
                       <div className=" text-center md:text-left">

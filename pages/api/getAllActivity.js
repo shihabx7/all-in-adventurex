@@ -44,8 +44,21 @@ export const getAllActivity = () => {
         min_player: "2",
         max_player: "10",
         success_rate: "56",
-        price: "29.89",
-        duration: "50",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
+        duration: "60",
         activity_desc:
           "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
         activity_slug: "escape-from-alcatraz",
@@ -60,10 +73,23 @@ export const getAllActivity = () => {
         age: "6-99",
         min_player: "2",
         max_player: "10",
-        price: "29.89",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
         success_rate: "67",
 
-        duration: "50",
+        duration: "60",
         activity_desc:
           "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
         activity_slug: "treasure-island",
@@ -78,9 +104,22 @@ export const getAllActivity = () => {
         age: "6-99",
         min_player: "2",
         max_player: "10",
-        price: "29.89",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
         success_rate: "37",
-        duration: "50",
+        duration: "60",
         activity_desc:
           "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
         activity_slug: "zombie-apocalypse",
@@ -95,9 +134,22 @@ export const getAllActivity = () => {
         age: "6-99",
         min_player: "2",
         max_player: "10",
-        price: "29.89",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
         success_rate: "42",
-        duration: "50",
+        duration: "60",
         activity_desc:
           "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
         activity_slug: "sherlocks-library",
@@ -112,9 +164,22 @@ export const getAllActivity = () => {
         age: "6-99",
         min_player: "2",
         max_player: "10",
-        price: "29.89",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
         success_rate: "46",
-        duration: "50",
+        duration: "60",
         activity_desc:
           "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
         activity_slug: "black-ops",
@@ -129,9 +194,22 @@ export const getAllActivity = () => {
         age: "6-99",
         min_player: "2",
         max_player: "10",
-        price: "29.89",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
         success_rate: "61",
-        duration: "50",
+        duration: "60",
         activity_desc:
           "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
@@ -147,8 +225,21 @@ export const getAllActivity = () => {
         min_player: "2",
         max_player: "10",
         success_rate: "18",
-        price: "29.89",
-        duration: "50",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
+        duration: "60",
         activity_desc:
           "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
@@ -164,9 +255,22 @@ export const getAllActivity = () => {
         age: "6-99",
         min_player: "2",
         max_player: "10",
-        price: "29.89",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
         success_rate: "37",
-        duration: "50",
+        duration: "60",
         activity_desc:
           "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
         activity_slug: "special-agent",
@@ -181,9 +285,22 @@ export const getAllActivity = () => {
         age: "6-99",
         min_player: "2",
         max_player: "10",
-        price: "29.89",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "4-6",
+            perGuest: "29.99",
+          },
+          {
+            teamSize: "7+",
+            perGuest: "26.99",
+          },
+        ],
         success_rate: "45",
-        duration: "50",
+        duration: "60",
         activity_desc:
           "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
@@ -200,7 +317,16 @@ export const getAllActivity = () => {
         min_player: "2",
         max_player: "5",
         success_rate: "54",
-        price: "39.95",
+        price: [
+          {
+            teamSize: "1-4",
+            perGuest: "32.99",
+          },
+          {
+            teamSize: "5+",
+            perGuest: "37.99",
+          },
+        ],
         duration: "60",
         activity_desc:
           "Having heard the mysterious sound of drums coming from the roof, you and your friends decided to check it out. Drawn by the beat, you find yourself trapped in the game!",
@@ -217,7 +343,16 @@ export const getAllActivity = () => {
         age: "6-99",
         min_player: "2",
         max_player: "4",
-        price: "39.95",
+        price: [
+          {
+            teamSize: "1-3",
+            perGuest: "39.95",
+          },
+          {
+            teamSize: "4+",
+            perGuest: "37.49",
+          },
+        ],
         success_rate: "47",
         duration: "60",
         activity_desc:
@@ -226,7 +361,7 @@ export const getAllActivity = () => {
         activity_cover_image:
           "/assets/all-game-list/wizarding-school-all-in-adventures-escape-room.jpg",
       },
-      {
+      /* {
         id: 12,
         activity_name: "Locked in the Lift",
         activity_type: "In person",
@@ -242,9 +377,9 @@ export const getAllActivity = () => {
         activity_slug: "locked-in-the-lift",
         activity_cover_image:
           "/assets/all-game-list/locked-in-the-lift-all-in-adventures-escape-room.jpg",
-      },
+      },*/
 
-      {
+      /*  {
         id: 13,
         activity_name: "MAGIC CASTLE",
         activity_type: "In person",
@@ -260,7 +395,7 @@ export const getAllActivity = () => {
         activity_slug: "magic-castle",
         activity_cover_image:
           "/assets/all-game-list/magic-castle-all-in-adventures-escape-room.jpg",
-      },
+      },*/
 
       {
         id: 14,

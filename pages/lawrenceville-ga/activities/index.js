@@ -50,7 +50,7 @@ const LocActivity = (props) => {
           pagedata={props.pagedata}
           locdetail={props.pagedata.locdetail}
         />
-        <GameLocListNew
+        <GameLocList
           activitylist={props.activitylist}
           locationslug={props.pagedata.locationslug}
           bookingdata={props.bookingdata}

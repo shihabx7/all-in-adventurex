@@ -189,10 +189,10 @@ const GameHomeHero = (props) => {
                   <div className="text-center w-[44%] md:w-auto pt-2 mt-3 border-t border-gray-300 md:pt-0 md:mt-0 md:border-t-0">
                     <div className="border-l border-gray-300 ">
                       <p className="golden-text text-xl md:text-4xl font-os font-bold">
-                        ${props.pagedata.price}
+                        YES
                       </p>
                       <p className="text-gray-700 text-xs md:text-base lg:text-lg">
-                        Per Guest
+                        Private
                       </p>
                     </div>
                   </div>
