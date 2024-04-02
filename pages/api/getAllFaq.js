@@ -364,7 +364,7 @@ export const getAllFaq = () => {
         group: "PRICING,_DISCOUNTS_AND_COUPONS",
         ques: "How much does it cost?",
         ans: [
-          "Our escape room starting price is $26.99/person (plus tax and fees in those states that it applies) for one escape room experience when you've group of 7 or more people. We do provide a discount for full-room bookings. Children 6 and under are free with a paying adult. To learn more about our detailed pricing <a class='text-red-600 hover:text-red-700' href='/pricing'>Click Here</a>.",
+          "Our escape room pricing starts at $26.99/person (plus tax and fees in those states that it applies) for one escape room experience when you have a group of 7 or more people. Children 6 and under are free with a paying adult. To learn more about our detailed pricing <a class='text-red-600 hover:text-red-700' href='/pricing'>Click Here</a>.",
         ],
       },
 

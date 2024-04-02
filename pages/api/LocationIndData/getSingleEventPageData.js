@@ -2059,7 +2059,7 @@ export const getSingleEventPageData = (eventslug, locationslug) => {
         category: "event",
         ques: "How much does an escape room cost?",
         ans: [
-          "The standard cost is $29.89/person (plus tax and fees in those states that it applies) for one escape room experience. We do provide a discount for full-room bookings. Children 6 and under are free with a paying adult.",
+          "Our escape room pricing starts at $26.99/person (plus tax and fees in those states that it applies) for one escape room experience when you have a group of 7 or more people. Children 6 and under are free with a paying adult. To learn more about our detailed pricing <a class='text-red-600 hover:text-red-700' href='/pricing'>Click Here</a>.",
         ],
       },
       {
