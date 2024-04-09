@@ -18,9 +18,13 @@ import FooterEmbedMap from "./footercomps/FooterEmbedMap";
 
 const Footer = (props) => {
   const [isPgLoad, setPgLoad] = useState(false);
+  const [copyDtae, setCopyDate] = useState("2023");
 
   useEffect(() => {
     setPgLoad(true);
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
+    setCopyDate(currentYear);
   });
 
   const FooterMap = () => {
@@ -158,7 +162,8 @@ const Footer = (props) => {
             <div className="copy-text text-center py-8">
               <p className="text-[#858585] text-xs md:text-base">
                 {" "}
-                &copy; Copyright All In Adventures | All Rights Reserved.
+                Copyright &copy; {copyDtae} by All In Adventures | All Rights
+                Reserved
               </p>
               <div className="term-policy flex justify-center space-x-2 items-center mt-2">
                 <a
@@ -189,11 +194,11 @@ const Footer = (props) => {
           <p>Website designed, developed and marketed by</p>
 
           <a
-            href="https://dgency.com/"
+            href="https://escaperoommarketer.com"
             target="_blank"
             className="dgency-copy text-gray-50 flex space-x-2 items-center"
           >
-            <span>dgency.com</span>{" "}
+            <span>EscapeRoomMarketer.com</span>{" "}
             <span className="md:text-lg">
               <FiExternalLink />
             </span>

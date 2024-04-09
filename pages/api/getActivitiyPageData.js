@@ -587,7 +587,7 @@ const activityDataset = {
   //============================================sherlocks-library 7
   "sherlocks-library": {
     pagesubtitle:
-      "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. Detectives work with Watson to solve the mystery and name the guilty suspect responsible for the crimes committed.",
+      "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
     activityname: "Sherlock's Library",
     category: "escapegames",
     price: "29.89",
@@ -616,13 +616,13 @@ const activityDataset = {
     activitydata: {
       category: "escapegames",
       story:
-        "While attending a concert with London's elite, Sherlock Holmes heard a tale of a scheme created by a secret aristocrat. They are laundering money, erasing gambling debts, and selling lesser titles of nobility to unsavory characters. Holmes is preparing to play his violin to solve the current case.",
+        "The great Sherlock Holmes has gone missing! His stalwart partner, Dr. Watson, suspects that a member of the London aristocracy is to blame. The four aristocrats that recently inquired into the duo's services all share the same accountant... a detail Watson looks to investigate!",
       storyimg:
         "/assets/all-game-details/allinadventures-sherlocks-library-storyline.png",
       storyimg_alt: "allinadventures-sherlocks-library-storyline",
 
       scene:
-        "Holmes is sending his partner, Watson, to investigate the office of an accountant favored by London's aristocracy. Watson has asked you to go undercover with him to find any clues linked to the case without being caught. Time is sensitive, but you are sure there has to be evidence hidden or locked in a local office that will reveal the prime suspects.",
+        "While Watson works with police to track Holmes down, you have been sent by Sherlock's brother to sniff out any involvement from the accountant. Upon entering the office, you immediately detect a carefully calibrated ruse!",
       sceneimg:
         "/assets/all-game-details/allinadventures-sherlocks-library-plot.png",
 
@@ -630,7 +630,7 @@ const activityDataset = {
       story_bg: "/assets/svg/game-bg-pattern/money-and-coin.svg",
       scene_bg: "/assets/svg/game-bg-pattern/fingerprint.svg",
       mission:
-        "In 50 minutes, you must help Watson search this accountant's office to pick up any clues that will solve the case. Find the case files for all suspects in question and determine who the guilty culprit is and if they had help from a potential co-conspirator.",
+        "You have one hour to follow the trail of breadcrumbs left behind by Sherlock. Search the estate portfolios of each aristocrat found throughout the office to determine who is behind the kidnapping and discover how deep this nefarious plot goes!",
       missionimg:
         "/assets/all-game-details/allinadventures-sherlocks-library-mission.png",
       missionimg_alt: "allinadventures-sherlocks-library-mission",

@@ -36,14 +36,14 @@ const InpersonEscapeSlider = (props) => {
           {props.city && (
             <p className="text-gray-200 md:px-8">
               Team up with your friends, family, kids (age 6+), or co-workers
-              for an adrenaline filled 50-60 minutes in-person interactive and
+              for an adrenaline filled 60 minute in-person interactive and
               engaging escape game experience!
             </p>
           )}
           {!props.city && (
             <p className="text-gray-200 md:px-8">
               Team up with your friends, family, kids (age 6+), or co-workers
-              for an adrenaline filled 50-60 minutes in-person interactive and
+              for an adrenaline filled 60 minute in-person interactive and
               engaging escape game experience!
             </p>
           )}

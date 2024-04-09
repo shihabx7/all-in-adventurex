@@ -21,7 +21,7 @@ export const getAllActivity = () => {
     pagedata: {
       pagetitle: "ALL ESCAPE ROOMS AND ADVENTURE ACTIVITIES",
       pagesubtitle:
-        "Play the top escape rooms and other adventure games. For 50-60 minutes, experience fun-filled interactive entertainment with friends, family, kids or co-works. Escape normal life, and be the hero of the story!",
+        "Play the top escape rooms and other adventure games. For 60 minute, experience fun-filled interactive entertainment with friends, family, kids or co-works. Escape normal life, and be the hero of the story!",
       totalLocations: getTotal().totalLocations,
       totalUniqueGames: getTotal().uniqueGames,
       totalFiveStarReview: getTotal().totalReview,
@@ -151,7 +151,7 @@ export const getAllActivity = () => {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "London's top detective duo, Sherlock Holmes & Dr. John H. Watson, have been called upon to solve their next case. As detectives work with Watson to solve the mystery and name the guilty suspect responsible for these crimes committed.",
+          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",

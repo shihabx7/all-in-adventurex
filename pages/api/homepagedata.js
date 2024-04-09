@@ -128,7 +128,7 @@ export const Homepagedata = () => {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "London's top detective duo, Sherlock Holmes and Dr. John H. Watson, have been called upon to solve their next big case.",
+          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
