@@ -52,8 +52,8 @@ const GameLocListNew = (props) => {
             />
             <p className="text-gray-700 mt-4 md:mt-6 mb-4 md:mb-6 md:px-8 md:text-lg">
               Team up with your friends, family, kids (age 6+) or co-workers for
-              an adrenaline filled 50-60 minutes real life interactive and
-              engaging escape game experience!
+              an adrenaline filled 60 minute real life interactive and engaging
+              escape game experience!
             </p>
           </div>
           {props.activitylist.map((activity) => {

@@ -171,7 +171,7 @@ export const getLocationIndActivityList = (slug) => {
       pagesubtitle:
         "Play the top " +
         cityName(slug) +
-        " escape rooms and other adventure games. For 50-60 minutes, experience fun-filled interactive entertainment with friends, family, kids or co-works. Escape normal life, and be the hero of the story!",
+        " escape rooms and other adventure games. For 60 minute, experience fun-filled interactive entertainment with friends, family, kids or co-works. Escape normal life, and be the hero of the story!",
       totalLocations: getTotal().totalLocations,
       totalUniqueGames: getLocationActivitySlugList(slug).length,
       totalFiveStarReview: getLocTotal(slug).locTotalReview,
