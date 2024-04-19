@@ -367,7 +367,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -389,7 +389,7 @@ const locPagedata = {
         success_rate: "56",
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -418,8 +418,7 @@ const locPagedata = {
         ],
         success_rate: "67",
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -427,7 +426,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Zombie Apocalypse",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -449,7 +448,7 @@ const locPagedata = {
         success_rate: "37",
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -457,7 +456,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Sherlock's Library",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -479,7 +478,7 @@ const locPagedata = {
         success_rate: "42",
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -509,7 +508,7 @@ const locPagedata = {
         ],
         success_rate: "46",
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -517,7 +516,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Superhero's Adventure",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -539,7 +538,7 @@ const locPagedata = {
         success_rate: "61",
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -547,7 +546,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Houdini's Magic Cell",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -569,7 +568,7 @@ const locPagedata = {
         success_rate: "18",
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
 
       {
@@ -578,7 +577,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Special Agent",
         description:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -599,8 +598,7 @@ const locPagedata = {
         ],
         success_rate: "37",
         slug: "special-agent",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-special-agent.jpg",
       },
       {
         id: 9,
@@ -608,7 +606,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Hollywood Premiere",
         description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -630,7 +628,7 @@ const locPagedata = {
         success_rate: "45",
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere.jpg",
       },
     ],
 
@@ -802,7 +800,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -824,7 +822,7 @@ const locPagedata = {
         success_rate: "56",
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -853,8 +851,7 @@ const locPagedata = {
         ],
         success_rate: "67",
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -862,7 +859,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Zombie Apocalypse",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -884,7 +881,7 @@ const locPagedata = {
         success_rate: "37",
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -892,7 +889,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Sherlock's Library",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -914,7 +911,7 @@ const locPagedata = {
         success_rate: "42",
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -944,7 +941,7 @@ const locPagedata = {
         ],
         success_rate: "46",
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -952,7 +949,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Superhero's Adventure",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -974,7 +971,7 @@ const locPagedata = {
         success_rate: "61",
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -982,7 +979,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Houdini's Magic Cell",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "12",
@@ -1004,7 +1001,7 @@ const locPagedata = {
         success_rate: "18",
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
 
       {
@@ -1013,7 +1010,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Special Agent",
         description:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -1034,8 +1031,7 @@ const locPagedata = {
         ],
         success_rate: "37",
         slug: "special-agent",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-special-agent.jpg",
       },
       {
         id: 9,
@@ -1043,7 +1039,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Hollywood Premiere",
         description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -1065,7 +1061,7 @@ const locPagedata = {
         success_rate: "45",
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere.jpg",
       },
     ],
 
@@ -1237,7 +1233,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "12",
@@ -1259,7 +1255,7 @@ const locPagedata = {
         success_rate: "56",
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -1288,8 +1284,7 @@ const locPagedata = {
         ],
         success_rate: "67",
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -1297,7 +1292,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Zombie Apocalypse",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "12",
@@ -1319,7 +1314,7 @@ const locPagedata = {
         success_rate: "37",
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -1327,7 +1322,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Sherlock's Library",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "12",
@@ -1349,7 +1344,7 @@ const locPagedata = {
         success_rate: "42",
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -1379,7 +1374,7 @@ const locPagedata = {
         ],
         success_rate: "46",
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -1387,7 +1382,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Superhero's Adventure",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "15",
@@ -1409,7 +1404,7 @@ const locPagedata = {
         success_rate: "61",
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -1417,7 +1412,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Houdini's Magic Cell",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "12",
@@ -1439,7 +1434,7 @@ const locPagedata = {
         success_rate: "18",
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
 
       {
@@ -1448,7 +1443,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Special Agent",
         description:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         age: "6-99",
         duration: "60",
         maxplayers: "12",
@@ -1469,8 +1464,7 @@ const locPagedata = {
         ],
         success_rate: "37",
         slug: "special-agent",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-special-agent.jpg",
       },
       {
         id: 9,
@@ -1478,7 +1472,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Hollywood Premiere",
         description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "60",
         maxplayers: "12",
@@ -1500,7 +1494,7 @@ const locPagedata = {
         success_rate: "45",
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere.jpg",
       },
       {
         id: 11,
@@ -1508,7 +1502,7 @@ const locPagedata = {
         type: "In-Person",
         title: "Wizarding School ",
         description:
-          "Lost in the Wizarding School, locked in the office and late for class - this is not the key to success. Find your way out of the office!",
+          "You have gotten locked in the headmaster's office! You must put on your thinking cap and find a way out in time for your next class.",
         age: "6-99",
         duration: "60",
         maxplayers: "4",
@@ -1526,7 +1520,7 @@ const locPagedata = {
         success_rate: "47",
         slug: "wizarding-school",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-wizarding-school.jpg",
       },
     ],
 
@@ -1544,8 +1538,7 @@ const locPagedata = {
         minplayers: "1",
         price: "2",
         slug: "beat-the-seat",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-beat-the-seat.jpg",
       },
     ],
 
@@ -1739,7 +1732,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -1768,8 +1761,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -1778,7 +1770,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "12",
@@ -1799,7 +1791,7 @@ const locPagedata = {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -1808,7 +1800,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -1829,7 +1821,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -1859,7 +1851,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -1868,7 +1860,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -1889,7 +1881,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -1898,7 +1890,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         success_rate: "18",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -1919,7 +1911,7 @@ const locPagedata = {
         ],
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
 
       {
@@ -1929,7 +1921,7 @@ const locPagedata = {
         title: "Special Agent",
         success_rate: "37",
         description:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -1949,8 +1941,7 @@ const locPagedata = {
           },
         ],
         slug: "special-agent",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-special-agent.jpg",
       },
       {
         id: 9,
@@ -1959,7 +1950,7 @@ const locPagedata = {
         title: "Hollywood Premiere",
         success_rate: "45",
         description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -1980,7 +1971,7 @@ const locPagedata = {
         ],
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere.jpg",
       },
 
       /* {
@@ -2024,8 +2015,7 @@ const locPagedata = {
         minplayers: "1",
         price: "2",
         slug: "beat-the-seat",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-beat-the-seat.jpg",
       },
     ],
 
@@ -2197,7 +2187,7 @@ const locPagedata = {
         success_rate: "56",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -2218,7 +2208,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -2247,8 +2237,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -2257,7 +2246,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -2278,7 +2267,7 @@ const locPagedata = {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -2287,7 +2276,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -2308,7 +2297,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -2338,7 +2327,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -2347,7 +2336,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -2368,7 +2357,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -2377,7 +2366,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         success_rate: "18",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -2398,7 +2387,7 @@ const locPagedata = {
         ],
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
 
       {
@@ -2408,7 +2397,7 @@ const locPagedata = {
         title: "Special Agent",
         success_rate: "37",
         description:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -2428,8 +2417,7 @@ const locPagedata = {
           },
         ],
         slug: "special-agent",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-special-agent.jpg",
       },
       {
         id: 9,
@@ -2438,7 +2426,7 @@ const locPagedata = {
         title: "Hollywood Premiere",
         success_rate: "45",
         description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -2459,7 +2447,7 @@ const locPagedata = {
         ],
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere.jpg",
       },
     ],
 
@@ -2631,7 +2619,7 @@ const locPagedata = {
         success_rate: "56",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "12",
@@ -2652,7 +2640,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -2681,8 +2669,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -2691,7 +2678,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -2708,7 +2695,7 @@ const locPagedata = {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -2717,7 +2704,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -2734,7 +2721,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -2744,7 +2731,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "12",
@@ -2765,7 +2752,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
     ],
     otherphysicalgames: [
@@ -2776,15 +2763,14 @@ const locPagedata = {
         title: "Axe Throwing Game",
         groupcat: "Guest Capacity",
         description:
-          "Experience the excitement of Axe Throwing! Challenge your aim and have a blast with friends. It's the perfect adventure for all.",
+          "Experience the excitement of Axe Throwing! Have a blast with friends and see who has the chops to win. It's the perfect adventure for all.",
         age: "13-99",
         duration: "60",
         maxplayers: "56",
         minplayers: "2",
         price: "23.89",
         slug: "axe-throwing",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-axe-throwing-party.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-axe-throwing.jpg",
       },
       {
         id: 11,
@@ -2802,7 +2788,7 @@ const locPagedata = {
         bookingSlug: "axe-throwing-party",
         slug: "axe-throwing",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-axe-throwing-party-package.jpg",
+          "/assets/all-game-slider-bg/allinadventures-axe-throwing-party.jpg",
       },
       {
         id: 2,
@@ -2817,8 +2803,7 @@ const locPagedata = {
         minplayers: "1",
         price: "2",
         slug: "beat-the-seat",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-beat-the-seat.jpg",
       },
       {
         id: 3,
@@ -2826,15 +2811,14 @@ const locPagedata = {
         type: "In-Person",
         title: "Game Show Room",
         description:
-          "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
+          "Always dreamed of being on a game show? Dream no more, you can be the next contestant in this exciting game show experience!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
         minplayers: "4",
         price: "33",
         slug: "game-show-room",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-game-show-room.jpg",
       },
     ],
 
@@ -3007,7 +2991,7 @@ const locPagedata = {
         success_rate: "56",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -3028,7 +3012,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -3057,8 +3041,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -3067,7 +3050,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -3088,7 +3071,7 @@ const locPagedata = {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -3097,7 +3080,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -3118,7 +3101,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -3148,7 +3131,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -3157,7 +3140,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -3178,7 +3161,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -3187,7 +3170,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         success_rate: "18",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "4",
@@ -3204,7 +3187,7 @@ const locPagedata = {
         ],
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
     ],
     otherphysicalgames: [
@@ -3215,15 +3198,14 @@ const locPagedata = {
         title: "Axe Throwing Game",
         groupcat: "Guest Capacity",
         description:
-          "Experience the excitement of Axe Throwing! Challenge your aim and have a blast with friends. It's the perfect adventure for all.",
+          "Experience the excitement of Axe Throwing! Have a blast with friends and see who has the chops to win. It's the perfect adventure for all.",
         age: "13-99",
         duration: "60",
         maxplayers: "24",
         minplayers: "2",
         price: "23.89",
         slug: "axe-throwing",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-axe-throwing-party.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-axe-throwing.jpg",
       },
       {
         id: 2,
@@ -3241,7 +3223,7 @@ const locPagedata = {
         bookingSlug: "axe-throwing-party",
         slug: "axe-throwing",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-axe-throwing-party-package.jpg",
+          "/assets/all-game-slider-bg/allinadventures-axe-throwing-party.jpg",
       },
     ],
 
@@ -3418,7 +3400,7 @@ const locPagedata = {
         success_rate: "56",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -3439,7 +3421,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -3468,8 +3450,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -3478,7 +3459,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -3499,7 +3480,7 @@ const locPagedata = {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -3508,7 +3489,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -3529,7 +3510,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -3559,7 +3540,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -3568,7 +3549,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -3589,7 +3570,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -3598,7 +3579,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         success_rate: "18",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -3619,7 +3600,7 @@ const locPagedata = {
         ],
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
     ],
 
@@ -3795,7 +3776,7 @@ const locPagedata = {
         success_rate: "56",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -3816,7 +3797,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -3841,8 +3822,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -3851,7 +3831,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -3868,7 +3848,7 @@ const locPagedata = {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -3877,7 +3857,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -3894,7 +3874,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -3924,7 +3904,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -3933,7 +3913,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -3954,7 +3934,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -3963,7 +3943,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         success_rate: "18",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -3980,7 +3960,7 @@ const locPagedata = {
         ],
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
 
       {
@@ -3990,7 +3970,7 @@ const locPagedata = {
         title: "Special Agent",
         success_rate: "37",
         description:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -4006,8 +3986,7 @@ const locPagedata = {
           },
         ],
         slug: "special-agent",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-special-agent.jpg",
       },
       {
         id: 9,
@@ -4016,7 +3995,7 @@ const locPagedata = {
         title: "Hollywood Premiere",
         success_rate: "45",
         description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -4033,7 +4012,7 @@ const locPagedata = {
         ],
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere.jpg",
       },
     ],
     events: [
@@ -4208,7 +4187,7 @@ const locPagedata = {
         success_rate: "56",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "50",
         maxplayers: "6",
@@ -4225,7 +4204,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -4250,8 +4229,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -4260,7 +4238,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -4281,7 +4259,7 @@ const locPagedata = {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -4290,7 +4268,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -4311,7 +4289,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -4337,7 +4315,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -4346,7 +4324,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -4363,7 +4341,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -4372,7 +4350,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         success_rate: "18",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -4393,7 +4371,7 @@ const locPagedata = {
         ],
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
 
       {
@@ -4403,7 +4381,7 @@ const locPagedata = {
         title: "Special Agent",
         success_rate: "37",
         description:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -4423,8 +4401,7 @@ const locPagedata = {
           },
         ],
         slug: "special-agent",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-special-agent.jpg",
       },
       {
         id: 9,
@@ -4433,7 +4410,7 @@ const locPagedata = {
         title: "Hollywood Premiere",
         success_rate: "45",
         description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -4450,7 +4427,7 @@ const locPagedata = {
         ],
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere.jpg",
       },
     ],
 
@@ -4622,7 +4599,7 @@ const locPagedata = {
         success_rate: "56",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -4643,7 +4620,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -4672,8 +4649,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
 
       {
@@ -4683,7 +4659,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -4704,7 +4680,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -4734,7 +4710,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -4743,7 +4719,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -4764,7 +4740,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -4773,7 +4749,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         success_rate: "18",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -4794,7 +4770,7 @@ const locPagedata = {
         ],
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
 
       {
@@ -4804,7 +4780,7 @@ const locPagedata = {
         title: "Hollywood Premiere",
         success_rate: "45",
         description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -4825,7 +4801,7 @@ const locPagedata = {
         ],
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere.jpg",
       },
     ],
 
@@ -4998,7 +4974,7 @@ const locPagedata = {
         success_rate: "56",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -5019,7 +4995,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -5048,8 +5024,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -5058,7 +5033,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -5079,7 +5054,7 @@ const locPagedata = {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -5088,7 +5063,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -5109,7 +5084,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -5139,7 +5114,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -5148,7 +5123,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -5169,7 +5144,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -5178,7 +5153,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         success_rate: "18",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -5195,7 +5170,7 @@ const locPagedata = {
         ],
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
 
       {
@@ -5205,7 +5180,7 @@ const locPagedata = {
         title: "Hollywood Premiere",
         success_rate: "45",
         description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -5226,7 +5201,7 @@ const locPagedata = {
         ],
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere.jpg",
       },
       {
         id: 10,
@@ -5235,7 +5210,7 @@ const locPagedata = {
         title: "Lost in The Jungle",
         success_rate: "54",
         description:
-          "Having heard the mysterious sound of drums coming from the roof, you and your friends decided to check it out. Drawn by the beat, you find yourself trapped in the game! ",
+          "The mysterious sound of drums lure you in, promising adventure. You find yourself trapped in the game, and the only way out is to win!",
         age: "6-99",
         duration: "60",
         maxplayers: "5",
@@ -5252,7 +5227,7 @@ const locPagedata = {
         ],
         slug: "lost-in-the-jungle",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle.jpg",
       },
     ],
 
@@ -5425,7 +5400,7 @@ const locPagedata = {
         success_rate: "56",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -5446,7 +5421,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -5475,8 +5450,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -5485,7 +5459,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -5506,7 +5480,7 @@ const locPagedata = {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -5515,7 +5489,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -5536,7 +5510,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -5566,7 +5540,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -5575,7 +5549,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -5596,7 +5570,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -5605,7 +5579,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         success_rate: "18",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -5626,7 +5600,7 @@ const locPagedata = {
         ],
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
 
       {
@@ -5636,7 +5610,7 @@ const locPagedata = {
         title: "Special Agent",
         success_rate: "37",
         description:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -5656,8 +5630,7 @@ const locPagedata = {
           },
         ],
         slug: "special-agent",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-special-agent.jpg",
       },
       {
         id: 9,
@@ -5666,7 +5639,7 @@ const locPagedata = {
         title: "Hollywood Premiere",
         success_rate: "45",
         description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -5687,7 +5660,7 @@ const locPagedata = {
         ],
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere.jpg",
       },
     ],
 
@@ -5868,7 +5841,7 @@ const locPagedata = {
         success_rate: "56",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -5889,7 +5862,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -5918,8 +5891,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -5928,7 +5900,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -5949,7 +5921,7 @@ const locPagedata = {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -5958,7 +5930,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -5979,7 +5951,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -6009,7 +5981,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -6018,7 +5990,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -6039,7 +6011,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
 
       {
@@ -6049,7 +6021,7 @@ const locPagedata = {
         title: "Hollywood Premiere",
         success_rate: "45",
         description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -6066,7 +6038,7 @@ const locPagedata = {
         ],
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere.jpg",
       },
     ],
 
@@ -6260,7 +6232,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -6289,8 +6261,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -6299,7 +6270,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -6320,7 +6291,7 @@ const locPagedata = {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -6329,7 +6300,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -6350,7 +6321,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -6380,7 +6351,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -6389,7 +6360,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -6410,7 +6381,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -6419,7 +6390,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         success_rate: "18",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -6440,7 +6411,7 @@ const locPagedata = {
         ],
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
 
       {
@@ -6450,7 +6421,7 @@ const locPagedata = {
         title: "Special Agent",
         success_rate: "37",
         description:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -6470,8 +6441,7 @@ const locPagedata = {
           },
         ],
         slug: "special-agent",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-special-agent.jpg",
       },
       {
         id: 9,
@@ -6480,7 +6450,7 @@ const locPagedata = {
         title: "Hollywood Premiere",
         success_rate: "45",
         description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -6501,7 +6471,7 @@ const locPagedata = {
         ],
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere.jpg",
       },
     ],
 
@@ -6678,7 +6648,7 @@ const locPagedata = {
         success_rate: "56",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "12",
@@ -6699,7 +6669,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -6728,8 +6698,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -6738,7 +6707,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -6759,7 +6728,7 @@ const locPagedata = {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -6768,7 +6737,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -6789,7 +6758,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -6819,7 +6788,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -6828,7 +6797,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -6849,7 +6818,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -6858,7 +6827,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         success_rate: "18",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -6879,7 +6848,7 @@ const locPagedata = {
         ],
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
 
       {
@@ -6889,7 +6858,7 @@ const locPagedata = {
         title: "Hollywood Premiere",
         success_rate: "45",
         description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "60",
         maxplayers: "4",
@@ -6906,7 +6875,7 @@ const locPagedata = {
         ],
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere.jpg",
       },
     ],
     otherphysicalgames: [
@@ -6916,15 +6885,14 @@ const locPagedata = {
         type: "In-Person",
         title: "Game Show Room",
         description:
-          "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
+          "Always dreamed of being on a game show? Dream no more, you can be the next contestant in this exciting game show experience!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
         minplayers: "4",
         price: "33",
         slug: "game-show-room",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-game-show-room.jpg",
       },
     ],
 
@@ -7097,7 +7065,7 @@ const locPagedata = {
         success_rate: "56",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -7114,7 +7082,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -7139,8 +7107,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
 
       {
@@ -7150,7 +7117,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -7167,7 +7134,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -7193,7 +7160,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -7202,7 +7169,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -7219,7 +7186,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -7228,7 +7195,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         success_rate: "18",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -7245,7 +7212,7 @@ const locPagedata = {
         ],
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
 
       {
@@ -7255,7 +7222,7 @@ const locPagedata = {
         title: "Hollywood Premiere",
         success_rate: "45",
         description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -7272,7 +7239,7 @@ const locPagedata = {
         ],
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere.jpg",
       },
     ],
 
@@ -7466,7 +7433,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -7495,8 +7462,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -7505,7 +7471,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -7522,7 +7488,7 @@ const locPagedata = {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -7531,7 +7497,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -7552,7 +7518,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -7582,7 +7548,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -7591,7 +7557,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -7612,7 +7578,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -7621,7 +7587,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         success_rate: "18",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -7642,7 +7608,7 @@ const locPagedata = {
         ],
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
 
       {
@@ -7652,7 +7618,7 @@ const locPagedata = {
         title: "Special Agent",
         success_rate: "37",
         description:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -7668,8 +7634,7 @@ const locPagedata = {
           },
         ],
         slug: "special-agent",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-special-agent.jpg",
       },
       {
         id: 9,
@@ -7678,7 +7643,7 @@ const locPagedata = {
         title: "Hollywood Premiere",
         success_rate: "45",
         description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -7699,7 +7664,7 @@ const locPagedata = {
         ],
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere.jpg",
       },
     ],
 
@@ -7876,7 +7841,7 @@ const locPagedata = {
         success_rate: "56",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -7897,7 +7862,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -7926,8 +7891,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -7936,7 +7900,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -7957,7 +7921,7 @@ const locPagedata = {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -7966,7 +7930,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -7987,7 +7951,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -8017,7 +7981,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -8026,7 +7990,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -8047,7 +8011,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -8056,7 +8020,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         success_rate: "18",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -8077,7 +8041,7 @@ const locPagedata = {
         ],
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
 
       {
@@ -8087,7 +8051,7 @@ const locPagedata = {
         title: "Special Agent",
         success_rate: "37",
         description:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -8107,8 +8071,7 @@ const locPagedata = {
           },
         ],
         slug: "special-agent",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-special-agent.jpg",
       },
     ],
 
@@ -8281,7 +8244,7 @@ const locPagedata = {
         success_rate: "56",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -8302,7 +8265,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -8331,8 +8294,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -8341,7 +8303,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -8362,7 +8324,7 @@ const locPagedata = {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -8371,7 +8333,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -8392,7 +8354,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -8422,7 +8384,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -8431,7 +8393,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -8452,7 +8414,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -8461,7 +8423,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         success_rate: "18",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -8482,7 +8444,7 @@ const locPagedata = {
         ],
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
 
       {
@@ -8492,7 +8454,7 @@ const locPagedata = {
         title: "Special Agent",
         success_rate: "37",
         description:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -8512,8 +8474,7 @@ const locPagedata = {
           },
         ],
         slug: "special-agent",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-special-agent.jpg",
       },
       {
         id: 9,
@@ -8522,7 +8483,7 @@ const locPagedata = {
         title: "Hollywood Premiere",
         success_rate: "45",
         description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -8543,7 +8504,7 @@ const locPagedata = {
         ],
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere.jpg",
       },
     ],
 
@@ -8719,7 +8680,7 @@ const locPagedata = {
         success_rate: "56",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -8740,7 +8701,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -8769,8 +8730,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -8779,7 +8739,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -8800,7 +8760,7 @@ const locPagedata = {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -8809,7 +8769,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -8830,7 +8790,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -8860,7 +8820,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -8869,7 +8829,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -8890,7 +8850,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -8899,7 +8859,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         success_rate: "18",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -8920,7 +8880,7 @@ const locPagedata = {
         ],
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
 
       {
@@ -8930,7 +8890,7 @@ const locPagedata = {
         title: "Special Agent",
         success_rate: "37",
         description:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -8950,8 +8910,7 @@ const locPagedata = {
           },
         ],
         slug: "special-agent",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-special-agent.jpg",
       },
       {
         id: 9,
@@ -8960,7 +8919,7 @@ const locPagedata = {
         title: "Hollywood Premiere",
         success_rate: "45",
         description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -8981,7 +8940,7 @@ const locPagedata = {
         ],
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere.jpg",
       },
     ],
 
@@ -9158,7 +9117,7 @@ const locPagedata = {
         success_rate: "56",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -9180,7 +9139,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -9209,8 +9168,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -9219,7 +9177,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -9240,7 +9198,7 @@ const locPagedata = {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -9249,7 +9207,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -9266,7 +9224,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -9292,7 +9250,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -9301,7 +9259,7 @@ const locPagedata = {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -9322,7 +9280,7 @@ const locPagedata = {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -9331,7 +9289,7 @@ const locPagedata = {
         title: "Houdini's Magic Cell",
         success_rate: "18",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "8",
@@ -9352,7 +9310,7 @@ const locPagedata = {
         ],
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
     ],
     otherphysicalgames: [
@@ -9369,8 +9327,7 @@ const locPagedata = {
         minplayers: "1",
         price: "2",
         slug: "beat-the-seat",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-beat-the-seat.jpg",
       },
     ],
 
@@ -9546,7 +9503,7 @@ const locPagedata = {
         success_rate: "56",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -9567,7 +9524,7 @@ const locPagedata = {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -9596,8 +9553,7 @@ const locPagedata = {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -9606,7 +9562,7 @@ const locPagedata = {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "6",
@@ -9623,7 +9579,7 @@ const locPagedata = {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -9632,7 +9588,7 @@ const locPagedata = {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -9653,7 +9609,7 @@ const locPagedata = {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -9683,7 +9639,7 @@ const locPagedata = {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
     ],
 

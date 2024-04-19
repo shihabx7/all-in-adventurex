@@ -116,12 +116,12 @@ a {
 .game-bg-pattern-dark {
   background-image: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.55)
+      rgba(0, 0, 0, 0.77),
+      rgba(0, 0, 0, 0.77)
     ),
     url("/assets/svg/pattern/All-In-Adventures-Background-Games-Pattern.svg");
   background-repeat: repeat;
-  background-size: 150px 150px;
+  background-size: 130px 130px;
 }
 .gift-pattern {
   background-image: linear-gradient(
@@ -515,13 +515,29 @@ a {
 }
 .card-head {
   background: linear-gradient(
+    rgba(0, 0, 0, 0.96),
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.02)
+  );
+}
+
+.card-bottom {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.03),
+    rgba(0, 0, 0, 0.77),
+    rgba(0, 0, 0, 0.88),
+    rgba(0, 0, 0, 0.99)
+  );
+}
+.otg-head {
+  background: linear-gradient(
     rgba(0, 0, 0, 0.9),
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.1)
   );
 }
-
-.card-bottom {
+.otg-bottom {
   background: linear-gradient(
     rgba(0, 0, 0, 0.1),
     rgba(0, 0, 0, 0.78),
@@ -529,6 +545,7 @@ a {
     rgba(0, 0, 0, 0.98)
   );
 }
+
 .card-bottom-gift {
   background: linear-gradient(
     rgba(0, 0, 0, 0.01),
@@ -927,7 +944,7 @@ a {
   min-width: 56px;
   min-height: 56px;
   left: calc(0% + 3px);
-  top: 32%;
+  top: 38%;
   background-color: #231800;
   box-shadow: 0px 0px 4px 2px rgba(216, 174, 84, 0.42);
   border: 2px solid gold;
@@ -936,7 +953,7 @@ a {
   min-width: 56px;
   min-height: 56px;
   right: calc(0% + 2px);
-  top: 32%;
+  top: 38%;
   background-color: #231800;
   box-shadow: 0px 0px 2px 2px rgba(216, 174, 84, 0.42);
   border: 2px solid gold;

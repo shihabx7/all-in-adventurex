@@ -38,7 +38,7 @@ export const Homepagedata = () => {
         success_rate: "56",
         title: "Escape From Alcatraz",
         description:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -59,7 +59,7 @@ export const Homepagedata = () => {
         ],
         slug: "escape-from-alcatraz",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-escape-from-alcatraz.jpg",
       },
       {
         id: 2,
@@ -88,8 +88,7 @@ export const Homepagedata = () => {
           },
         ],
         slug: "treasure-island",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-treasure-island-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-treasure-island.jpg",
       },
       {
         id: 3,
@@ -98,7 +97,7 @@ export const Homepagedata = () => {
         title: "Zombie Apocalypse",
         success_rate: "37",
         description:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -119,7 +118,7 @@ export const Homepagedata = () => {
         ],
         slug: "zombie-apocalypse",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-zombie-apocalypse.jpg",
       },
       {
         id: 4,
@@ -128,7 +127,7 @@ export const Homepagedata = () => {
         title: "Sherlock's Library",
         success_rate: "42",
         description:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -149,7 +148,7 @@ export const Homepagedata = () => {
         ],
         slug: "sherlocks-library",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-sherlocks-library-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-sherlocks-library.jpg",
       },
 
       {
@@ -179,7 +178,7 @@ export const Homepagedata = () => {
           },
         ],
         slug: "black-ops",
-        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-black-ops.jpg",
       },
       {
         id: 6,
@@ -188,7 +187,7 @@ export const Homepagedata = () => {
         title: "Superhero's Adventure",
         success_rate: "61",
         description:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -209,7 +208,7 @@ export const Homepagedata = () => {
         ],
         slug: "superheros-adventure",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-superheros-Adventure-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-superheros-adventure.jpg",
       },
       {
         id: 7,
@@ -218,7 +217,7 @@ export const Homepagedata = () => {
         title: "Houdini's Magic Cell",
         success_rate: "18",
         description:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -239,7 +238,7 @@ export const Homepagedata = () => {
         ],
         slug: "houdinis-magic-cell",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-houdinis-magic-cell.jpg",
       },
 
       {
@@ -249,7 +248,7 @@ export const Homepagedata = () => {
         title: "Special Agent",
         success_rate: "37",
         description:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team can find the clues to stop them from escaping before it is too late?",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -269,8 +268,7 @@ export const Homepagedata = () => {
           },
         ],
         slug: "special-agent",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-special-agent-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-special-agent.jpg",
       },
       {
         id: 9,
@@ -279,7 +277,7 @@ export const Homepagedata = () => {
         title: "Hollywood Premiere",
         success_rate: "45",
         description:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
@@ -300,7 +298,7 @@ export const Homepagedata = () => {
         ],
         slug: "hollywood-premiere",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-hollywood-premiere.jpg",
       },
       {
         id: 10,
@@ -309,7 +307,7 @@ export const Homepagedata = () => {
         title: "Lost in The Jungle",
         success_rate: "54",
         description:
-          "Having heard the mysterious sound of drums coming from the roof, you and your friends decided to check it out. Drawn by the beat, you find yourself trapped in the game! ",
+          "The mysterious sound of drums lure you in, promising adventure. You find yourself trapped in the game, and the only way out is to win!",
         age: "6-99",
         duration: "60",
         maxplayers: "5",
@@ -326,16 +324,16 @@ export const Homepagedata = () => {
         ],
         slug: "lost-in-the-jungle",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-lost-in-the-jungle.jpg",
       },
       {
         id: 11,
         category: "escapegame",
         type: "In-Person",
-        title: "Wizarding School ",
+        title: "Wizarding School",
         success_rate: "47",
         description:
-          "Your Potions lesson will begin in 60 minutes and you have gotten locked in the headmaster's office! You must put on your thinking cap and find a way to get out in time…",
+          "You have gotten locked in the headmaster's office! You must put on your thinking cap and find a way out in time for your next class.",
         age: "6-99",
         duration: "60",
         maxplayers: "4",
@@ -352,7 +350,7 @@ export const Homepagedata = () => {
         ],
         slug: "wizarding-school",
         bgimg:
-          "/assets/all-game-slider-bg/allinadventures-wizarding-school-game.jpg",
+          "/assets/all-game-slider-bg/allinadventures-wizarding-school.jpg",
       },
       /*{
         id: 12,
@@ -419,7 +417,7 @@ export const Homepagedata = () => {
         type: "In-Person",
         title: "Axe Throwing",
         description:
-          "Experience the excitement of Axe Throwing! Challenge your aim and have a blast with friends. It's the perfect adventure for all.",
+          "Experience the excitement of Axe Throwing! Have a blast with friends and see who has the chops to win. It's the perfect adventure for all.",
         age: "13-99",
         duration: "60",
         maxplayers: "56",
@@ -427,8 +425,7 @@ export const Homepagedata = () => {
         minplayers: "2",
         price: "23.89",
         slug: "axe-throwing",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-axe-throwing-party.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-axe-throwing.jpg",
       },
 
       {
@@ -444,8 +441,7 @@ export const Homepagedata = () => {
         minplayers: "1",
         price: "2",
         slug: "beat-the-seat",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-beat-the-seat-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-beat-the-seat.jpg",
       },
       {
         id: 2,
@@ -453,15 +449,14 @@ export const Homepagedata = () => {
         type: "In-Person",
         title: "Game Show Room",
         description:
-          "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
+          "Always dreamed of being on a game show? Dream no more, you can be the next contestant in this exciting game show experience!",
         age: "6-99",
         duration: "60",
         maxplayers: "16",
         minplayers: "4",
         price: "33",
         slug: "game-show-room",
-        bgimg:
-          "/assets/all-game-slider-bg/allinadventures-game-show-room-game.jpg",
+        bgimg: "/assets/all-game-slider-bg/allinadventures-game-show-room.jpg",
       },
 
       /*  {

@@ -237,7 +237,7 @@ const LocActivityData = {
         success_rate: "56",
         duration: "60",
         activity_desc:
-          "You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -297,7 +297,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "37",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -327,7 +327,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "42",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -357,7 +357,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "46",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -387,7 +387,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "61",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -417,7 +417,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "18",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -448,7 +448,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "37",
         activity_desc:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
           "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
@@ -478,7 +478,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "45",
         activity_desc:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
           "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
@@ -517,7 +517,7 @@ const LocActivityData = {
         success_rate: "56",
         duration: "60",
         activity_desc:
-          "You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -577,7 +577,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "37",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -607,7 +607,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "42",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -637,7 +637,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "46",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -667,7 +667,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "61",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -697,7 +697,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "18",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -728,7 +728,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "37",
         activity_desc:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
           "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
@@ -758,7 +758,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "45",
         activity_desc:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
           "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
@@ -799,7 +799,7 @@ const LocActivityData = {
         success_rate: "56",
         duration: "60",
         activity_desc:
-          "You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -859,7 +859,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "37",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -889,7 +889,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "42",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -919,7 +919,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "46",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -949,7 +949,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "61",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -979,7 +979,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "18",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -1010,7 +1010,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "37",
         activity_desc:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
           "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
@@ -1040,7 +1040,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "45",
         activity_desc:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
           "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
@@ -1066,7 +1066,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "47",
         activity_desc:
-          "Your Potions lesson will begin in 60 minutes and you have gotten locked in the headmaster's office! You must put on your thinking cap and find a way to get out in time…",
+          "You have gotten locked in the headmaster's office! You must put on your thinking cap and find a way out in time for your next class.",
         activity_slug: "wizarding-school",
         activity_cover_image:
           "/assets/all-game-list/wizarding-school-all-in-adventures-escape-room.jpg",
@@ -1125,7 +1125,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -1186,7 +1186,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -1216,7 +1216,7 @@ const LocActivityData = {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -1246,7 +1246,7 @@ const LocActivityData = {
         success_rate: "46",
         duration: "60",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -1276,7 +1276,7 @@ const LocActivityData = {
         success_rate: "61",
         duration: "60",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -1306,7 +1306,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -1337,7 +1337,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
           "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
@@ -1367,7 +1367,7 @@ const LocActivityData = {
         success_rate: "45",
         duration: "60",
         activity_desc:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
           "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
@@ -1443,7 +1443,7 @@ const LocActivityData = {
         success_rate: "56",
         duration: "60",
         activity_desc:
-          "You are prison guards at the maximum security prison, Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -1503,7 +1503,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "37",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -1533,7 +1533,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "42",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -1563,7 +1563,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "46",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -1593,7 +1593,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "61",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -1623,7 +1623,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "18",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -1654,7 +1654,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "37",
         activity_desc:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
           "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
@@ -1684,7 +1684,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "45",
         activity_desc:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
           "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
@@ -1725,7 +1725,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -1782,7 +1782,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -1808,7 +1808,7 @@ const LocActivityData = {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -1839,7 +1839,7 @@ const LocActivityData = {
         success_rate: "61",
         duration: "60",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -1856,7 +1856,7 @@ const LocActivityData = {
         price: "23.89",
         duration: "60",
         activity_desc:
-          "Experience the excitement of Axe Throwing! Challenge your aim and have a blast with friends. It's the perfect adventure for all. Book now and enjoy!",
+          "Experience the excitement of Axe Throwing! Have a blast with friends and see who has the chops to win. It's the perfect adventure for all.",
         activity_slug: "axe-throwing",
         activity_cover_image:
           "/assets/all-game-list/allinadventures-axe-throwing.jpg",
@@ -1907,7 +1907,7 @@ const LocActivityData = {
         price: 33,
         duration: 60,
         activity_desc:
-          "Have you always dreamed of being a contestant on a TV game show? Well, dream no more because we've brought the game show experience to you!",
+          "Always dreamed of being on a game show? Dream no more, you can be the next contestant in this exciting game show experience!",
         activity_slug: "game-show-room",
         activity_cover_image:
           "/assets/all-game-list/allinadventures-game-show-room.jpg",
@@ -1949,7 +1949,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -2010,7 +2010,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -2040,7 +2040,7 @@ const LocActivityData = {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -2070,7 +2070,7 @@ const LocActivityData = {
         success_rate: "46",
         duration: "60",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -2100,7 +2100,7 @@ const LocActivityData = {
         success_rate: "61",
         duration: "60",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -2126,7 +2126,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -2144,7 +2144,7 @@ const LocActivityData = {
         price: "23.89",
         duration: "60",
         activity_desc:
-          "Experience the excitement of Axe Throwing! Challenge your aim and have a blast with friends. It's the perfect adventure for all. Book now and enjoy!",
+          "Experience the excitement of Axe Throwing! Have a blast with friends and see who has the chops to win. It's the perfect adventure for all.",
         activity_slug: "axe-throwing",
         activity_cover_image:
           "/assets/all-game-list/allinadventures-axe-throwing.jpg",
@@ -2206,7 +2206,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -2267,7 +2267,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -2297,7 +2297,7 @@ const LocActivityData = {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -2327,7 +2327,7 @@ const LocActivityData = {
         success_rate: "46",
         duration: "60",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -2357,7 +2357,7 @@ const LocActivityData = {
         success_rate: "61",
         duration: "60",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -2387,7 +2387,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -2431,7 +2431,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -2484,7 +2484,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -2510,7 +2510,7 @@ const LocActivityData = {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -2540,7 +2540,7 @@ const LocActivityData = {
         success_rate: "46",
         duration: "60",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -2570,7 +2570,7 @@ const LocActivityData = {
         success_rate: "61",
         duration: "60",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -2596,7 +2596,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -2623,7 +2623,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
           "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
@@ -2649,7 +2649,7 @@ const LocActivityData = {
         success_rate: "45",
         duration: "60",
         activity_desc:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
           "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
@@ -2688,7 +2688,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -2745,7 +2745,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -2775,7 +2775,7 @@ const LocActivityData = {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -2801,7 +2801,7 @@ const LocActivityData = {
         success_rate: "46",
         duration: "60",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -2827,7 +2827,7 @@ const LocActivityData = {
         success_rate: "61",
         duration: "60",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -2857,7 +2857,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -2888,7 +2888,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
           "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
@@ -2914,7 +2914,7 @@ const LocActivityData = {
         success_rate: "45",
         duration: "60",
         activity_desc:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
           "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
@@ -2955,7 +2955,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -3017,7 +3017,7 @@ const LocActivityData = {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -3047,7 +3047,7 @@ const LocActivityData = {
         success_rate: "46",
         duration: "60",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -3077,7 +3077,7 @@ const LocActivityData = {
         success_rate: "61",
         duration: "60",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -3107,7 +3107,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -3138,7 +3138,7 @@ const LocActivityData = {
         success_rate: "45",
         duration: "60",
         activity_desc:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
           "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
@@ -3180,7 +3180,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -3241,7 +3241,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -3271,7 +3271,7 @@ const LocActivityData = {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -3301,7 +3301,7 @@ const LocActivityData = {
         success_rate: "46",
         duration: "60",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -3331,7 +3331,7 @@ const LocActivityData = {
         success_rate: "61",
         duration: "60",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -3357,7 +3357,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -3388,7 +3388,7 @@ const LocActivityData = {
         success_rate: "45",
         duration: "60",
         activity_desc:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
           "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
@@ -3415,7 +3415,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "Having heard the mysterious sound of drums coming from the roof, you and your friends decided to check it out. Drawn by the beat, you find yourself trapped in the game!",
+          "The mysterious sound of drums lure you in, promising adventure. You find yourself trapped in the game, and the only way out is to win!",
         activity_slug: "lost-in-the-jungle",
         activity_cover_image:
           "/assets/all-game-list/lost-in-the-jungle-all-in-adventures-escape-room.jpg",
@@ -3457,7 +3457,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -3518,7 +3518,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -3548,7 +3548,7 @@ const LocActivityData = {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -3578,7 +3578,7 @@ const LocActivityData = {
         success_rate: "46",
         duration: "60",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -3608,7 +3608,7 @@ const LocActivityData = {
         success_rate: "61",
         duration: "60",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -3638,7 +3638,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -3669,7 +3669,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
           "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
@@ -3699,7 +3699,7 @@ const LocActivityData = {
         success_rate: "45",
         duration: "60",
         activity_desc:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
           "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
@@ -3743,7 +3743,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -3804,7 +3804,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -3834,7 +3834,7 @@ const LocActivityData = {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -3864,7 +3864,7 @@ const LocActivityData = {
         success_rate: "46",
         duration: "60",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -3895,7 +3895,7 @@ const LocActivityData = {
         success_rate: "61",
         duration: "60",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -3922,7 +3922,7 @@ const LocActivityData = {
         success_rate: "45",
         duration: "60",
         activity_desc:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
           "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
@@ -3964,7 +3964,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -4025,7 +4025,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -4055,7 +4055,7 @@ const LocActivityData = {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -4085,7 +4085,7 @@ const LocActivityData = {
         success_rate: "46",
         duration: "60",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -4115,7 +4115,7 @@ const LocActivityData = {
         success_rate: "61",
         duration: "60",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -4145,7 +4145,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -4176,7 +4176,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
           "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
@@ -4206,7 +4206,7 @@ const LocActivityData = {
         success_rate: "45",
         duration: "60",
         activity_desc:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
           "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
@@ -4253,7 +4253,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -4314,7 +4314,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -4344,7 +4344,7 @@ const LocActivityData = {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -4374,7 +4374,7 @@ const LocActivityData = {
         success_rate: "46",
         duration: "60",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -4404,7 +4404,7 @@ const LocActivityData = {
         success_rate: "61",
         duration: "60",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -4434,7 +4434,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -4465,7 +4465,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
           "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
@@ -4507,7 +4507,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -4568,7 +4568,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -4598,7 +4598,7 @@ const LocActivityData = {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -4628,7 +4628,7 @@ const LocActivityData = {
         success_rate: "46",
         duration: "60",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -4658,7 +4658,7 @@ const LocActivityData = {
         success_rate: "61",
         duration: "60",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -4688,7 +4688,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -4719,7 +4719,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
           "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
@@ -4759,7 +4759,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -4813,7 +4813,7 @@ const LocActivityData = {
         success_rate: "46",
         duration: "60",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -4839,7 +4839,7 @@ const LocActivityData = {
         success_rate: "61",
         duration: "60",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -4865,7 +4865,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -4892,7 +4892,7 @@ const LocActivityData = {
         success_rate: "45",
         duration: "60",
         activity_desc:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
           "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
@@ -4934,7 +4934,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -4995,7 +4995,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -5025,7 +5025,7 @@ const LocActivityData = {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -5055,7 +5055,7 @@ const LocActivityData = {
         success_rate: "46",
         duration: "60",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -5085,7 +5085,7 @@ const LocActivityData = {
         success_rate: "61",
         duration: "60",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -5115,7 +5115,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -5142,7 +5142,7 @@ const LocActivityData = {
         success_rate: "45",
         duration: "60",
         activity_desc:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
           "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
@@ -5184,7 +5184,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -5241,7 +5241,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -5271,7 +5271,7 @@ const LocActivityData = {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -5301,7 +5301,7 @@ const LocActivityData = {
         success_rate: "46",
         duration: "60",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -5331,7 +5331,7 @@ const LocActivityData = {
         success_rate: "61",
         duration: "60",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -5361,7 +5361,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -5388,7 +5388,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
           "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
@@ -5418,7 +5418,7 @@ const LocActivityData = {
         success_rate: "45",
         duration: "60",
         activity_desc:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
           "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
@@ -5465,7 +5465,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -5526,7 +5526,7 @@ const LocActivityData = {
         duration: "60",
         success_rate: "37",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -5556,7 +5556,7 @@ const LocActivityData = {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -5586,7 +5586,7 @@ const LocActivityData = {
         success_rate: "46",
         duration: "60",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -5631,7 +5631,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -5692,7 +5692,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -5722,7 +5722,7 @@ const LocActivityData = {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -5752,7 +5752,7 @@ const LocActivityData = {
         success_rate: "46",
         duration: "60",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -5782,7 +5782,7 @@ const LocActivityData = {
         success_rate: "61",
         duration: "60",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -5812,7 +5812,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",
@@ -5843,7 +5843,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         activity_slug: "special-agent",
         activity_cover_image:
           "/assets/all-game-list/special-agent-all-in-adventures-escape-room.jpg",
@@ -5873,7 +5873,7 @@ const LocActivityData = {
         success_rate: "45",
         duration: "60",
         activity_desc:
-          "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+          "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
         activity_slug: "hollywood-premiere",
         activity_cover_image:
           "/assets/all-game-list/hollywood-premiere-all-in-adventures-escape-room.jpg",
@@ -5916,7 +5916,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -5976,7 +5976,7 @@ const LocActivityData = {
         success_rate: "37",
         duration: "60",
         activity_desc:
-          "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+          "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
         activity_slug: "zombie-apocalypse",
         activity_cover_image:
           "/assets/all-game-list/zombie-apocalypse-all-in-adventures-escape-room.jpg",
@@ -6002,7 +6002,7 @@ const LocActivityData = {
         success_rate: "42",
         duration: "60",
         activity_desc:
-          "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+          "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
         activity_slug: "sherlocks-library",
         activity_cover_image:
           "/assets/all-game-list/sherlocks-library-all-in-adventures-escape-room.jpg",
@@ -6028,7 +6028,7 @@ const LocActivityData = {
         success_rate: "46",
         duration: "60",
         activity_desc:
-          "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+          "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
         activity_slug: "black-ops",
         activity_cover_image:
           "/assets/all-game-list/black-ops-all-in-adventures-escape-room.jpg",
@@ -6058,7 +6058,7 @@ const LocActivityData = {
         success_rate: "61",
         duration: "60",
         activity_desc:
-          "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+          "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
         activity_slug: "superheros-adventure",
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
@@ -6088,7 +6088,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+          "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
         activity_slug: "houdinis-magic-cell",
         activity_cover_image:
           "/assets/all-game-list/houdinis-magic-cell-all-in-adventures-escape-room.jpg",

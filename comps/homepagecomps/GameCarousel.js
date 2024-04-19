@@ -4,7 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import { useEffect, useState } from "react";
 import Script from "next/script";
 
-const InpersonCarousel = (props) => {
+const GameCarousel = (props) => {
   //console.log(inpersongames)
   const [gameSlug, setGamSlug] = useState(null);
 
@@ -94,7 +94,7 @@ const InpersonCarousel = (props) => {
         //  removeArrowOnDeviceType={["tablet", "mobile"]}
         //deviceType={this.props.deviceType}
         dotListClass="custom-dot-list-style"
-        itemClass="game-carousel-card px-2 lg:px-4 2xl:px-5 3xl:px-2 4xl:px-5 py-4 md:py-8"
+        itemClass="game-carousel-card px-2 lg:px-4 xl:px-3 3xl:px-2 4xl:px-5 py-4 md:py-8"
         renderDotsOutside={true}
         partialVisible={true}
       >
@@ -186,10 +186,10 @@ const InpersonCarousel = (props) => {
 
                 <div className="card-bottom px-2 md:px-3 lg:px-4 xl:px-3 3xl:px-2 4xl:px-3 pb-6 pt-12">
                   <div className="card-game-descs  text-center mb-6">
-                    <h3 className="card-game-title text-[22px] rm:text-[25px] sm:text-2xl lg:text-3xl xl:text-[28px] 3xl:text-[27px] 4xl:text-3xl font-bold uppercase text-white">
+                    <h3 className="card-game-title text-2xl lg:text-3xl 3xl:text-[27px] 4xl:text-3xl font-bold uppercase text-white">
                       {inpersongame.title}
                     </h3>
-                    <p className="text-gray-200 text-[13px] rm:text-[15px] lg:text-[16px] 3xl:text-[15px] 4xl:text-[17px]">
+                    <p className="text-gray-200 lg:text-[16px] 3xl:text-[15px] 4xl:text-[17px] md:h-[94px] lg:h-[90px]  2xl:h-[74px] 3xl:h-[90px]">
                       {inpersongame.description}
                     </p>
                   </div>
@@ -264,4 +264,4 @@ const InpersonCarousel = (props) => {
   );
 };
 
-export default InpersonCarousel;
+export default GameCarousel;

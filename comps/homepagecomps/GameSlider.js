@@ -1,10 +1,11 @@
 import TitleSeparator from "../util/TitleSeparator";
-import InpersonCarousel from "./InpersonCarousel";
+//import InpersonCarousel from "./InpersonCarousel";
+import GameCarousel from "./GameCarousel";
 import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa";
 import { GiExitDoor } from "react-icons/gi";
 
-const InpersonEscapeSlider = (props) => {
+const GameSlider = (props) => {
   //console.log(props.inpersongames)
 
   return (
@@ -49,9 +50,7 @@ const InpersonEscapeSlider = (props) => {
           )}
 
           <div className="mt-2 md:mt-4 escape-flow flex justify-center items-center space-x-.9 md:space-x-1 text-[18px] text-gold font-medium md:text-xl">
-            <div className="text-[14px] rm:text-[16px] md:text-[18px]">
-              Team Up
-            </div>
+            <div>Team Up</div>
             <span className="text-gold">
               <FaAngleRight />
             </span>
@@ -59,15 +58,11 @@ const InpersonEscapeSlider = (props) => {
             <span className="text-gold hidden md:block">
               <FaAngleRight />
             </span>
-            <div className="text-[14px] rm:text-[16px] md:text-[18px]">
-              Solve Puzzles
-            </div>
+            <div>Solve Puzzles</div>
             <span className="text-gold">
               <FaAngleRight />
             </span>
-            <div className="text-[14px] rm:text-[16px] md:text-[18px]">
-              Escape
-            </div>
+            <div>Escape</div>
             <span>
               <img
                 className="ml-2 w-[28px] md:w-[36px] lg:w-[40px]"
@@ -79,7 +74,7 @@ const InpersonEscapeSlider = (props) => {
       </div>
       <div className="slider-box pb-4 md:pb-8 relative">
         {props.publish && (
-          <InpersonCarousel
+          <GameCarousel
             publish={props.publish}
             inpersongames={props.inpersongames}
             locationslug={props.locationslug}
@@ -87,7 +82,7 @@ const InpersonEscapeSlider = (props) => {
           />
         )}
         {!props.publish && (
-          <InpersonCarousel
+          <GameCarousel
             inpersongames={props.inpersongames}
             locationslug={props.locationslug}
             bookingData={props.bookingData}
@@ -116,4 +111,4 @@ const InpersonEscapeSlider = (props) => {
   );
 };
 
-export default InpersonEscapeSlider;
+export default GameSlider;

@@ -198,7 +198,7 @@ const GameLocListNew = (props) => {
                         }
                         className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white"
                       >
-                        LEARN MORE
+                        EXPLORE
                       </a>
                     </div>
                   </div>
@@ -281,8 +281,8 @@ const GameLocListNew = (props) => {
                           </span>
                         </p>
                       </div>
-                      <div className="card-ribbon">
-                        <div className="inline-block text-center py-2 px-4 bg-red-600">
+                      <div className="card-ribbon p-[2px] md:p-[6px] bg-red-600">
+                        <div className="inline-block text-center py-2 px-4 border border-dashed border-gray-200">
                           {activity.activity_type == "Virtual" &&
                             activity.booking && (
                               <p className="text-lg text-white">PER PERSON</p>
@@ -402,7 +402,7 @@ const GameLocListNew = (props) => {
                             }
                             className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white"
                           >
-                            LEARN MORE
+                            EXPLORE
                           </a>
                         </div>
                       )}

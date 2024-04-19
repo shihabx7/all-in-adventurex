@@ -95,7 +95,7 @@ const PlaningEventCarousel = (props) => {
                   backgroundPosition: "center top",
                 }}
               >
-                <div className="card-head h-[216px] lg:h-[200px] flex justify-center pt-8 lg:pt-8 lg:pb-8 px-4">
+                <div className="card-head otg-head h-[216px] lg:h-[200px] flex justify-center pt-8 lg:pt-8 lg:pb-8 px-4">
                   <div className="card-info text-center ">
                     <h3 className="text-center text-2xl lg:text-3xl font-bold uppercase text-white">
                       {event.title}
@@ -103,7 +103,7 @@ const PlaningEventCarousel = (props) => {
                   </div>
                 </div>
                 <div className="card-gap py-4 lg:py-8"></div>
-                <div className="card-bottom p-4 pt-4 md:pt-10 lg:pt-12">
+                <div className="card-bottom otg-bottom p-4 pt-4 md:pt-10 lg:pt-12">
                   <div className="h-[80px] md:h-[90px] lg:h-[100px] 2xl:h-[100px] text-center">
                     <p className="text-gray-200 lg:text-lg">
                       {showDescription(event.description)}

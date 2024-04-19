@@ -36,20 +36,26 @@ const PysicalCarousel = (props) => {
   };
 
   const responsive = {
+    desktopxl: {
+      breakpoint: { max: 2560, min: 2100 },
+      items: 3,
+      slidesToSlide: 1,
+      partialVisibilityGutter: 0,
+    },
     desktoplg: {
-      breakpoint: { max: 4000, min: 1640 },
-      items: 5,
+      breakpoint: { max: 2100, min: 1500 },
+      items: 3,
       slidesToSlide: 1,
       partialVisibilityGutter: 0,
     },
     desktopmd: {
-      breakpoint: { max: 1640, min: 1300 },
-      items: 4,
+      breakpoint: { max: 1500, min: 1280 },
+      items: 3,
       slidesToSlide: 1,
       partialVisibilityGutter: 0,
     },
     desktop: {
-      breakpoint: { max: 1300, min: 1024 },
+      breakpoint: { max: 1280, min: 1024 },
       items: 3,
       slidesToSlide: 1,
       partialVisibilityGutter: 0,
@@ -68,7 +74,7 @@ const PysicalCarousel = (props) => {
     },
   };
   return (
-    <div className="full-carousel md:max-w-[84%] lg:max-w-[80%] xl:max-w-[100%] mx-auto pysicalescapecarousel inp-car">
+    <div className="full-carousel md:max-w-[96%] lg:max-w-[86%] xl:max-w-[94%] 2xl:max-w-[86%] 3xl:max-w-[1200px] 4xl:max-w-[60%] mx-auto pysicalescapecarousel inp-car">
       <Carousel
         swipeable={true}
         draggable={true}
@@ -86,7 +92,7 @@ const PysicalCarousel = (props) => {
         // removeArrowOnDeviceType={["tablet", "mobile"]}
         //deviceType={this.props.deviceType}
         dotListClass="custom-dot-list-style physical-escape-dots"
-        itemClass="game-carousel-card px-2 lg:px-3 py-4 md:py-8"
+        itemClass="game-carousel-card px-2 lg:px-4 2xl:px-5 3xl:px-2 4xl:px-5 py-4 md:py-8"
         renderDotsOutside={true}
         partialVisible={true}
       >
@@ -94,13 +100,11 @@ const PysicalCarousel = (props) => {
           return (
             <div
               key={othergame.id}
-              className="text-white bg-gray-300 game-slider-card card-border mb-shadow"
-              style={{
-                background: "url('" + othergame.bgimg + "')",
-              }}
+              className="text-white relative bg-gray-800 game-slider-card card-border mb-shadow"
             >
-              <div className="card-container">
-                <div className="card-head flex justify-between items-center p-4 md:pb-8">
+              <img className="w-full" src={othergame.bgimg}></img>
+              <div className="card-container absolute top-0 left-0 w-full h-full flex flex-col justify-between">
+                <div className="card-head  flex justify-between items-center p-4 md:pb-8">
                   <div className="card-info">
                     <p className="flex items-center space-x-2 text-gray-50 my-1">
                       <span>
@@ -140,8 +144,8 @@ const PysicalCarousel = (props) => {
                       </span>
                     </p>
                   </div>
-                  <div className="card-ribbon">
-                    <div className="inline-block text-center py-2 px-4 bg-red-600">
+                  <div className="card-ribbon p-[2px] md:p-[5px] bg-red-600">
+                    <div className="inline-block text-center py-2 px-4  border border-dashed border-gray-300">
                       {othergame.type == "Virtual" && othergame.booking && (
                         <p className="text-lg text-white">PER PERSON</p>
                       )}
@@ -157,18 +161,18 @@ const PysicalCarousel = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="card-gap py-6 md:py-8 lg:py-10"></div>
-                <div className="card-bottom p-4  md:pt-10">
-                  <div className="card-game h-[148px] md:h-[160px] lg:h-[150px] 2xl:h-[188px] text-center">
-                    <h3 className="card-game-title text-2xl lg:text-3xl font-bold uppercase text-white">
+
+                <div className="card-bottom px-2 md:px-3 lg:px-4 xl:px-3 3xl:px-2 4xl:px-4 pb-6 pt-12">
+                  <div className="card-game text-center mb-6">
+                    <h3 className="card-game-title text-[22px] rm:text-[25px] sm:text-2xl lg:text-3xl xl:text-[28px] 3xl:text-[27px] 4xl:text-3xl font-bold uppercase text-white">
                       {othergame.title}
                     </h3>
-                    <p className="text-gray-200 lg:text-[16px] 2xl:text-lg">
+                    <p className="text-gray-200 text-[13px] rm:text-[15px] lg:text-[16px] 3xl:text-[15px] 4xl:text-[17px]">
                       {othergame.description}
                     </p>
                   </div>
 
-                  <div className="card-game-link mt-4 text-center">
+                  <div className="card-game-link mt-4 flex justify-between text-center">
                     {props.bookingData && props.publish && (
                       <>
                         {props.bookingData[othergame.slug].active == true && (
@@ -181,7 +185,7 @@ const PysicalCarousel = (props) => {
                                     props.bookingData[othergame.bookingSlug]
                                   )
                                 }
-                                className="border w-[210px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700"
+                                className="border w-[48%] card-book-btnxx border-red-600 bg-red-600 py-2 md:py-3  rounded-full font-medium text-lg hover:bg-red-700 hover:border-red-700"
                               >
                                 BOOK PARTY
                               </button>
@@ -193,7 +197,7 @@ const PysicalCarousel = (props) => {
                                     props.bookingData[othergame.slug]
                                   )
                                 }
-                                className="border w-[210px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700"
+                                className="border w-[48%] card-book-btnxx border-red-600 bg-red-600 py-2 md:py-3  rounded-full font-medium text-lg hover:bg-red-700 hover:border-red-700"
                               >
                                 BOOK NOW
                               </button>
@@ -201,21 +205,21 @@ const PysicalCarousel = (props) => {
                           </>
                         )}
                         {props.bookingData[othergame.slug].active == false && (
-                          <button className="border w-[220px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">
+                          <button className="border w-[48%] card-book-btnxx border-red-600 bg-red-600 py-2 md:py-3  rounded-full font-medium text-lg hover:bg-red-700 hover:border-red-700">
                             COMING SOON
                           </button>
                         )}
                       </>
                     )}
                     {props.bookingData && !props.publish && (
-                      <button className="border w-[220px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-7 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700">
+                      <button className="border w-[48%] card-book-btnxx border-red-600 bg-red-600 py-2 md:py-3  rounded-full font-medium text-lg hover:bg-red-700 hover:border-red-700">
                         COMING SOON
                       </button>
                     )}
                     {!props.bookingData && (
                       <button
                         onClick={() => showLocation()}
-                        className="border w-[210px] card-book-btnxx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700"
+                        className="border w-[48%] card-book-btnxx border-red-600 bg-red-600 py-2 md:py-3  rounded-full font-medium text-lg hover:bg-red-700 hover:border-red-700"
                       >
                         BOOK NOW
                       </button>
@@ -229,17 +233,17 @@ const PysicalCarousel = (props) => {
                           "/activities/" +
                           othergame.slug
                         }
-                        className="border w-[210px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700"
+                        className="border w-[48%] card-book-btnxx border-red-600 bg-transparent py-2 md:py-3 rounded-full font-medium text-lg hover:bg-red-700 hover:border-red-700"
                       >
-                        LEARN MORE
+                        EXPLORE
                       </a>
                     )}
                     {!props.locationslug && (
                       <a
                         href={"/activities/" + othergame.slug}
-                        className="border w-[210px] block mx-auto  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700"
+                        className="border w-[48%] card-book-btnxx border-red-600 bg-transparent py-2 md:py-3 rounded-full font-medium text-lg hover:bg-red-700 hover:border-red-700"
                       >
-                        LEARN MORE
+                        EXPLORE
                       </a>
                     )}
                   </div>

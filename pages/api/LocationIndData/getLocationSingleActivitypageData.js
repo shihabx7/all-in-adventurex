@@ -270,9 +270,9 @@ const activityDataset = {
     activityname: "Escape From Alcatraz",
 
     pagesubtitle:
-      "You are prison guards at the maximum security prison, Alcatraz, and the Warden's keys have gone missing on your watch! Can you find them before this turns into an escape attempt?",
+      "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -310,7 +310,7 @@ const activityDataset = {
       story_bg: "/assets/svg/game-bg-pattern/lock-and-key.svg",
       scene_bg: "/assets/svg/game-bg-pattern/broken-handcuff.svg",
       mission:
-        "Prison protocol indicates that you have 50 minutes to locate and return all of the Warden's keys or the prison will have to go into lockdown. If you are able to find the keys in time, you will have to complete an additional investigation to find the prisoner who stole the keys, and make sure they pay for their crime.",
+        "Prison protocol indicates that you have 60 minutes to locate and return all of the Warden's keys or the prison will have to go into lockdown. If you are able to find the keys in time, you will have to complete an additional investigation to find the prisoner who stole the keys, and make sure they pay for their crime.",
       missionimg:
         "/assets/all-game-details/allinadventures-escape-from-alcatraz-mission.png",
       missionimg_alt: "allinadventures-escape-from-alcatraz-mission",
@@ -359,7 +359,7 @@ const activityDataset = {
     pagesubtitle:
       "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -396,7 +396,7 @@ const activityDataset = {
       story_bg: "/assets/svg/game-bg-pattern/ship-wheel.svg",
       scene_bg: "/assets/svg/game-bg-pattern/shark.svg",
       mission:
-        "In order to survive, you have 50 minutes to prove to the crew that you are good enough to keep alive. Failure to follow the directions from the crew and you will be fed to the sharks! If you can prove you are worthy of Jake Hawkin's leadership, show him you can navigate these dangerous seas, and a promotion may be in order for you!",
+        "In order to survive, you have 60 minutes to prove to the crew that you are good enough to keep alive. Failure to follow the directions from the crew and you will be fed to the sharks! If you can prove you are worthy of Jake Hawkin's leadership, show him you can navigate these dangerous seas, and a promotion may be in order for you!",
       missionimg:
         "/assets/all-game-details/allinadventures-treasure-island-mission.png",
       missionimg_alt: "allinadventures-treasure-island-mission",
@@ -443,9 +443,9 @@ const activityDataset = {
     activityname: "Superhero's Adventure",
 
     pagesubtitle:
-      "The arch-criminal Matador and his team of henchmen have devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
+      "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -482,7 +482,7 @@ const activityDataset = {
       story_bg: "/assets/svg/game-bg-pattern/bank.svg",
       scene_bg: "/assets/svg/game-bg-pattern/locker-money.svg",
       mission:
-        "The Matador has hinted that he hid the blueprint in one of the city's streets, so his plan proceeds even if he is captured. You have 50 minutes to use your superpowers to recover the stolen blueprint, and if you have time, find a way to stop his plan before time runs out!",
+        "The Matador has hinted that he hid the blueprint in one of the city's streets, so his plan proceeds even if he is captured. You have 60 minutes to use your superpowers to recover the stolen blueprint, and if you have time, find a way to stop his plan before time runs out!",
       missionimg:
         "/assets/all-game-details/allinadventures-superheros-adventure-mission.png",
       missionimg_alt: "allinadventures-superheros-adventure-mission",
@@ -529,9 +529,9 @@ const activityDataset = {
     activityname: "Zombie Apocalypse",
 
     pagesubtitle:
-      "You are trapped in a lab lockdown with a growing zombie horde and need to find your way out before it is too late!",
+      "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -568,7 +568,7 @@ const activityDataset = {
       story_bg: "/assets/svg/game-bg-pattern/chemistry.svg",
       scene_bg: "/assets/svg/game-bg-pattern/microscope.svg",
       mission:
-        "You have 50 minutes to find your administrator's key card and create a vaccine using the chemicals that you are able to find in the lab. Can you finish in time, or will you be trapped in the lockdown with the growing zombie horde?",
+        "You have 60 minutes to find your administrator's key card and create a vaccine using the chemicals that you are able to find in the lab. Can you finish in time, or will you be trapped in the lockdown with the growing zombie horde?",
       missionimg:
         "/assets/all-game-details/allinadventures-zombie-apocalypse-mission.png",
       missionimg_alt: "",
@@ -614,9 +614,9 @@ const activityDataset = {
     activityname: "Special Agent",
 
     pagesubtitle:
-      "An international jewel thief is about to slip free, can you and your team stop them from escaping before it is too late?",
+      "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -698,9 +698,9 @@ const activityDataset = {
     activityname: "Hollywood Premiere",
 
     pagesubtitle:
-      "Live from Hollywood, California, you're the next lucky contestant on our exciting game show! Solve our puzzles and see if you can name our secret celebrity!",
+      "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -738,7 +738,7 @@ const activityDataset = {
       scene_bg: "/assets/svg/game-bg-pattern/film-camera.svg",
       mission:
         "It's " +
-        'time for "Name that Celebrity"! You have 50 minutes to identify our secret celebrity, and if ' +
+        'time for "Name that Celebrity"! You have 60 minutes to identify our secret celebrity, and if ' +
         "you're " +
         "really good, go on for the Bonus Prize by also correctly identifying which booth they are hiding in!",
       missionimg:
@@ -784,11 +784,11 @@ const activityDataset = {
   //============================================sherlocks-library 7
   "sherlocks-library": {
     pagesubtitle:
-      "The great detective Sherlock Holmes has gone missing, but left a trail of clues for you to find him.",
+      "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
     activityname: "Sherlock's Library",
     category: "escapegames",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -871,9 +871,9 @@ const activityDataset = {
     activityname: "Houdini's Magic Cell",
 
     pagesubtitle:
-      "As an aspiring magician, you have always looked up to Houdini and his impressive skills. Now, it is your chance to prove you have what it takes to be a Master Magician!",
+      "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -910,7 +910,7 @@ const activityDataset = {
       story_bg: "/assets/svg/game-bg-pattern/handcuffs.svg",
       scene_bg: "/assets/svg/game-bg-pattern/playing-cards.svg",
       mission:
-        "You will have 50 minutes to complete your act. First, perform a series of tricks with multiple sets of playing cards. Once you have mastered the art of cards, it will be time to perform your ultimate act and escape from multiple types of locks and handcuffs.",
+        "You will have 60 minutes to complete your act. First, perform a series of tricks with multiple sets of playing cards. Once you have mastered the art of cards, it will be time to perform your ultimate act and escape from multiple types of locks and handcuffs.",
       missionimg:
         "/assets/all-game-details/allinadventures-houdinis-magic-cell-mission.png",
       missionimg_alt: "allinadventures-houdinis-magic-cell-mission",
@@ -957,9 +957,9 @@ const activityDataset = {
     activityname: "Black Ops",
 
     pagesubtitle:
-      "After acquiring all the necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer known as The Hawk.",
+      "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -986,13 +986,13 @@ const activityDataset = {
         "/assets/all-game-details/allinadventures-black-ops-storyline.png",
       storyimg_alt: "allinadventures-black-ops-storyline",
       scene:
-        "The bunker raid has begun, but you realize it's a trap. The Hawk was anticipating your arrival, and the bunker has been booby-trapped and is rigged to explode in 50 minutes! There is no way you can make it out in time and must defuse all explosives. We can't let The Hawk get away with this either - continue to search the bunker for information that will certainly lead to their future capture.",
+        "The bunker raid has begun, but you realize it's a trap. The Hawk was anticipating your arrival, and the bunker has been booby-trapped and is rigged to explode in 60 minutes! There is no way you can make it out in time and must defuse all explosives. We can't let The Hawk get away with this either - continue to search the bunker for information that will certainly lead to their future capture.",
       sceneimg: "/assets/all-game-details/allinadventures-black-ops-plot.png",
       sceneimg_alt: "allinadventures-black-ops-plot",
       story_bg: "/assets/svg/game-bg-pattern/explosion.svg",
       scene_bg: "/assets/svg/game-bg-pattern/helmet.svg",
       mission:
-        "You must make it out alive. In 50 minutes, you must defuse all booby-traps to save your squad. However, you cannot lose sight of the main mission - capturing The Hawk. If you are able to disarm all traps, you must search the bunker to find additional information that will help us discover The Hawk's true location so we can continue the hunt.",
+        "You must make it out alive. In 60 minutes, you must defuse all booby-traps to save your squad. However, you cannot lose sight of the main mission - capturing The Hawk. If you are able to disarm all traps, you must search the bunker to find additional information that will help us discover The Hawk's true location so we can continue the hunt.",
       missionimg:
         "/assets/all-game-details/allinadventures-black-ops-mission.png",
       missionimg_alt: "allinadventures-black-ops-mission",
@@ -1038,7 +1038,7 @@ const activityDataset = {
     activityname: "Lost In The Jungle",
 
     pagesubtitle:
-      "Having heard the mysterious sound of drums coming from the roof, you and your friends decided to check it out. Drawn by the beat, you find yourself trapped in the game!",
+      "The mysterious sound of drums lure you in, promising adventure. You find yourself trapped in the game, and the only way out is to win!",
     price: "39.95",
     duration: "60",
     max_players: 5,
@@ -1124,7 +1124,7 @@ const activityDataset = {
     activityname: "Wizarding School",
 
     pagesubtitle:
-      "Your Potions lesson will begin in 60 minutes, and you have gotten locked in the headmaster's office! You must put on your thinking cap and find a way to get out in time…",
+      "You have gotten locked in the headmaster's office! You must put on your thinking cap and find a way out in time for your next class.",
     price: "39.95",
     duration: "60",
     max_players: "4",
@@ -1211,7 +1211,7 @@ const activityDataset = {
     pagesubtitle:
       "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards. Test your wits, courage, loyalty, and cunning.",
     price: "29.89",
-    duration: "50",
+    duration: "60",
     max_players: "10",
     min_players: "2",
     age: "6-99",
@@ -1380,7 +1380,7 @@ const activityDataset = {
     notice:
       '48 HOURS ADVANCE BOOKING REQUIRED. If you see online booking isn\'t available, please call us at <a href="tel:+1 844-502-5546" class="text-medium text-gold hover:text-blue-700">+1 844-502-5546</a>. We can surely manage a spot for you and your team.',
     pagesubtitle:
-      "Have you always dreamed of being a contestant on a tv game show? Well, dream no more because we've brought the game show experience to you! We offer a unique, unpredictable, family-friendly live game show experience for guests of all different ages, backgrounds and group sizes.",
+      "Always dreamed of being on a game show? Dream no more, you can be the next contestant in this exciting game show experience!",
     price: 33,
     duration: 60,
     max_players: 16,
@@ -1577,7 +1577,7 @@ const activityDataset = {
     activityname: "Axe Throwing",
 
     pagesubtitle:
-      "Come throw axes at our exciting interactive targets with your friends and family! Test your hand-eye coordination and see if you can hit a bull's eye. We can accommodate up to 24 players on the 6 lanes.",
+      "You have gotten locked in the headmaster's office! You must put on your thinking cap and find a way out in time for your next class.",
     price: 23.89,
     duration: 60,
     max_players: 4,
@@ -1663,7 +1663,7 @@ const activityDataset = {
     activityname: "Beat The Seat",
 
     pagesubtitle:
-      "Beat the Seat is a two-minute, fun-filled, exhilarating experience where you'll test your endurance, coordination, and ability to think on your feet. Can you handle it? Do you have the skills to beat the seat? Well, let's find out!",
+      "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet.",
     price: 2,
     duration: 2,
     max_players: 1,

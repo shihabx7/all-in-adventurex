@@ -2,9 +2,10 @@ import Head from "next/head";
 import HomeHero from "../comps/homepagecomps/HomeHero";
 import Howtobook from "../comps/homepagecomps/Howtobook";
 import InpersonEscapeSlider from "../comps/homepagecomps/InpersonEscapeSlider";
+import GameSlider from "../comps/homepagecomps/GameSlider";
 import PlaningEventsSlider from "../comps/homepagecomps/PlaningEventsSlider";
 import PysicalEscape from "../comps/homepagecomps/PysicalEscape";
-import VirtualEscapeSlider from "../comps/homepagecomps/VirtualEscapeSlider";
+
 import BuyGiftCard from "../comps/homepagecomps/BuyGiftCard";
 import WhatIsEscape from "../comps/homepagecomps/WhatIsEscape";
 import WhoCanplay from "../comps/homepagecomps/WhoCanPlay";
