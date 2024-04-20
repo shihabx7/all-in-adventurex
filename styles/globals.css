@@ -515,18 +515,20 @@ a {
 }
 .card-head {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.96),
+    rgba(0, 0, 0, 0.99),
+    rgba(0, 0, 0, 0.9),
     rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.02)
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.01)
   );
 }
 
 .card-bottom {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.03),
-    rgba(0, 0, 0, 0.77),
-    rgba(0, 0, 0, 0.88),
+    rgba(0, 0, 0, 0.01),
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9),
     rgba(0, 0, 0, 0.99)
   );
 }

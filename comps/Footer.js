@@ -196,11 +196,14 @@ const Footer = (props) => {
           <a
             href="https://escaperoommarketer.com"
             target="_blank"
-            className="dgency-copy text-gray-50 flex space-x-2 items-center"
+            className="dgency-copy text-gray-50 flex space-x-3 items-center"
           >
             <span>EscapeRoomMarketer.com</span>{" "}
-            <span className="md:text-lg">
-              <FiExternalLink />
+            <span className="bg-white p-[5px]">
+              <img
+                className="w-[92px]"
+                src="/assets/util/escaperoom-marketer-logo.svg"
+              ></img>
             </span>
           </a>
         </div>
