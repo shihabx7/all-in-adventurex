@@ -99,10 +99,10 @@ const Locations = (props) => {
           </div>
           <div className="max-w-7xl mx-auto py-16 md:py-16 px-4 relative z-10">
             <div className="page-benar-info">
-              <p className=" md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-gray-800 text-center">
+              <p className=" md:mt-0 font-semibold text-lg md:text-2xl mb-1 text-gray-800 text-center">
                 CHOOSE FROM {countTotalLocation(props.states)} U.S. LOCATIONS
               </p>
-              <h1 className="dark-gold font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os">
+              <h1 className="dark-gold font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-2 rm:mb-2 md:mb-4 lg:mb-6 font-os">
                 ALL IN ADVENTURES LOCATIONS
               </h1>
               <p className="text-gray-700 max-w-[800px] mx-auto text-center lg:text-lg">

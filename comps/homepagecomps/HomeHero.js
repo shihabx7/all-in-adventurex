@@ -9,7 +9,7 @@ const HomeHero = (props) => {
           src="/assets/gn-mobile-hero/allinadventures-escape-room-home-hero.jpg"
         ></img>
       </div>
-      <div className="max-w-[84px] md:max-w-[120px] lg:max-w-[144px] absolute top-[4px] md:top-[36px] lg:top-[60px] left-0 right-[4px] md:right-0 ml-auto md:mx-auto">
+      <div className="max-w-[84px] md:max-w-[120px] lg:max-w-[144px] absolute top-[4px] md:top-[26px] lg:top-[46px] left-0 right-[4px] md:right-0 ml-auto md:mx-auto">
         <img
           alt="Kid and familly friendly escape rooms Allinadventures"
           src="/assets/kid-and-familly-friendly-escape-rooms-allinadventures.png"
@@ -17,13 +17,13 @@ const HomeHero = (props) => {
       </div>
       <div className="max-w-7xl home-hero-container mx-auto px-4 pb-[90px] pt-0 md:pb-24 md:pt-[160px] lg:pb-28 lg:pt-[210px] relative z-10">
         <div className="page-benar-info">
-          <p className=" md:mt-4 lg:mt-6 xl:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center">
+          <p className=" md:mt-4 lg:mt-6 xl:mt-0 font-semibold text-lg md:text-2xl mb-1 text-white text-center">
             CHOOSE FROM {props.pagedata.totalLocations} U.S. LOCATIONS
           </p>
-          <h1 className="text-gold font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-4 md:mb-8 font-os outline-tile">
+          <h1 className="text-gold font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-2 rm:mb-2 md:mb-4 lg:mb-6 font-os outline-tile">
             ESCAPE ROOMS AND ADVENTURE ACTIVITIES
           </h1>
-          <p className="text-gray-100 max-w-2xl mx-auto text-center lg:text-lg nocopy">
+          <p className="text-gray-100 max-w-[800px] mx-auto text-center lg:text-lg nocopy">
             {props.pagedata.subtitle}
           </p>
         </div>

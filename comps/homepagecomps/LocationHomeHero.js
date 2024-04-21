@@ -120,7 +120,7 @@ const LocationHomeHero = (props) => {
           backgroundImage: "url('" + props.pagedata.coverimageL + "')",
         }}
       >
-        <div className="max-w-[84px] md:max-w-[120px] lg:max-w-[144px] absolute top-[4px] md:top-[36px] lg:top-[60px] left-0 right-[4px] md:right-0 ml-auto md:mx-auto">
+        <div className="max-w-[84px] md:max-w-[120px] lg:max-w-[144px] absolute top-[4px] md:top-[26px] lg:top-[46px] left-0 right-[4px] md:right-0 ml-auto md:mx-auto">
           <img
             alt="Kid and familly friendly escape rooms Allinadventures"
             src="/assets/kid-and-familly-friendly-escape-rooms-allinadventures.png"
@@ -140,11 +140,11 @@ const LocationHomeHero = (props) => {
                   ></img>
                 </div>
               )}
-              <p className=" md:mt-0 font-semibold text-lg md:text-2xl  mb-2 text-white text-center uppercase ">
+              <p className=" md:mt-0 font-semibold text-lg md:text-2xl  mb-1 text-white text-center uppercase ">
                 AT {props.pagedata.locationaddress} IN{" "}
                 {props.pagedata.locationcity}, {props.pagedata.locationstate}
               </p>
-              <h1 className="text-gold font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-4 md:mb-8 font-os uppercase max-w-[1000px] mx-auto">
+              <h1 className="text-gold font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-2 rm:mb-2 md:mb-4 lg:mb-6 font-os uppercase max-w-[1000px] mx-auto">
                 {(props.pagedata.locationcity == "West Nyack" ||
                   props.pagedata.locationcity == "Poughkeepsie") && (
                   <>

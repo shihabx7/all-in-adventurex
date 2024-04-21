@@ -8,6 +8,8 @@ import {
   FaTwitterSquare,
   FaInstagramSquare,
 } from "react-icons/fa";
+import { FiArrowUpRight } from "react-icons/fi";
+
 import Script from "next/script";
 
 import { FiExternalLink } from "react-icons/fi";
@@ -190,21 +192,30 @@ const Footer = (props) => {
 
           {/*========================================= footer copyright row================ */}
         </div>
-        <div className="dgency-row py-3 bg-dgency-purple text-center text-dgency-light text-xs md:text-sm flex justify-center space-x-1 items-center">
-          <p>Website designed, developed and marketed by</p>
+        <div className="dgency-row py-3 bg-[#FFF7F5] text-center flex flex-col md:flex-row justify-center space-x-1 items-center">
+          <p className="text-[#414141] text-[15px] md:text-[16px]">
+            Website designed, developed and marketed by
+          </p>
 
           <a
             href="https://escaperoommarketer.com"
             target="_blank"
-            className="dgency-copy text-gray-50 flex space-x-3 items-center"
+            className=" text-[#FF492C] hover:text-[#D43C24] flex items-center"
           >
-            <span>EscapeRoomMarketer.com</span>{" "}
-            <span className="bg-white p-[5px]">
-              <img
-                className="w-[92px]"
-                src="/assets/util/escaperoom-marketer-logo.svg"
-              ></img>
+            <span>EscapeRoomMarketer.com</span>
+            <span className="text-lg pl-[1px]">
+              <FiArrowUpRight />
             </span>
+          </a>
+          <a
+            href="https://escaperoommarketer.com"
+            target="_blank"
+            className="pt-2 md:pt-0 md:pl-2"
+          >
+            <img
+              className="w-[146px]"
+              src="/assets/util/escaperoom-marketer-logo.svg"
+            ></img>
           </a>
         </div>
       </footer>

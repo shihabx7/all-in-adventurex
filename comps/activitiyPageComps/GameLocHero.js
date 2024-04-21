@@ -108,9 +108,9 @@ const GameLocHero = (props) => {
           <div className="max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-[130px] md:pt-20 md:pb-28 lg:py-32 xl:py-36 relative z-40">
             <div className="page-benar-info">
               {props.pagedata.themeImage && (
-                <div className="flex justify-center mb-3 md:mb-4">
+                <div className="flex justify-center mb-1 md:mb-2">
                   <img
-                    className="max-w-[196px] rm:max-w-[220px] md:max-w-[300px] lg:max-w-[320px] 3xl:max-w-[330px]"
+                    className="max-h-[30px] md:max-h-[32px] lg:max-h-[36px] 3xl:max-h-[40px]"
                     src={props.pagedata.themeImage}
                     alt={props.pagedata.themeImageAlt}
                   ></img>
@@ -133,10 +133,10 @@ const GameLocHero = (props) => {
                 </div>
               )}
 
-              <p className=" md:mt-0 font-semibold rm:text-lg md:text-2xl mb-2 text-white text-center uppercase">
+              <p className=" md:mt-0 font-semibold text-lg md:text-2xl mb-2 text-white text-center uppercase">
                 At {props.pagedata.mall} in {props.pagedata.location_name}
               </p>
-              <h1 className="text-gold aia-shadow font-bold text-center  text-[26px] rm:text-3xl md:text-5xl lg:text-6xl mb-3 rm:mb-4 md:mb-6 lg:mb-8 font-os uppercase max-w-[1000px] mx-auto">
+              <h1 className="text-gold aia-shadow font-bold text-center  text-3xl md:text-5xl lg:text-6xl mb-2 rm:mb-2 md:mb-4 lg:mb-6 font-os uppercase max-w-[1000px] mx-auto">
                 {props.pagedata.pagetitle}{" "}
               </h1>
               <div

@@ -15,7 +15,7 @@ const CareerHero = (props) => {
         </div>
         <div className="max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-20 md:py-20 lg:py-32 xl:py-40 relative z-10">
           <div className="page-benar-info">
-            <h1 className="text-gold font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-8 font-os uppercase">
+            <h1 className="text-gold font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-2 rm:mb-2 md:mb-4 lg:mb-6 font-os uppercase">
               {props.pagedata.pagetitle}
             </h1>
             <p className="text-gray-100 max-w-[800px] mx-auto text-center lg:text-lg">
