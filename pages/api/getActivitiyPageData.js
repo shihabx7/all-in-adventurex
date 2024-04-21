@@ -23,6 +23,8 @@ export const getActivityData = (activitySlug) => {
         activityDataset[activitySlug].activityname +
         " " +
         actSalt(activityDataset[activitySlug].activitydata.category),
+      themeImage: activityDataset[activitySlug].themeImage,
+      themeImageAlt: activityDataset[activitySlug].themeImageAlt,
       pagesubtitle: activityDataset[activitySlug].pagesubtitle,
       totalLocation: getTotal().totalLocations,
       coverimageL: activityDataset[activitySlug].coverimageL,
@@ -63,7 +65,9 @@ const activityDataset = {
   //============================================escape-from-alcatraz 1
   "escape-from-alcatraz": {
     activityname: "Escape From Alcatraz",
-
+    themeImage:
+      "/assets/theme/all-in-adventures-escape-room-escape-from-alcatraz-theme-prison-break.png",
+    themeImageAlt: "prison break escape room theme",
     pagesubtitle:
       "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
     price: "29.89",
@@ -151,7 +155,9 @@ const activityDataset = {
   //============================================treasure-island 2
   "treasure-island": {
     activityname: "Treasure Island",
-
+    themeImage:
+      "/assets/theme/all-in-adventures-escape-room-treasure-island-theme-pirate-adventure.png",
+    themeImageAlt: "Private Adventure escape room theme",
     pagesubtitle:
       "You've been captured by a notorious gang of pirates. Prove you're worthy of becoming part of the crew or prepare to walk the plank!",
     price: "29.89",
@@ -239,7 +245,9 @@ const activityDataset = {
   //============================================superheros-adventure3
   "superheros-adventure": {
     activityname: "Superhero's Adventure",
-
+    themeImage:
+      "/assets/theme/all-in-adventures-escape-room-superheros-adventure-theme-comic-book-heroes.png",
+    themeImageAlt: "Comic book heroes escape room theme",
     pagesubtitle:
       "The arch-criminal Matador has devised an evil plan to take over the city. You must use your superhero powers to help save the day!",
     price: "29.89",
@@ -327,7 +335,9 @@ const activityDataset = {
   //============================================zombie-apocalypse4
   "zombie-apocalypse": {
     activityname: "Zombie Apocalypse",
-
+    themeImage:
+      "/assets/theme/all-in-adventures-escape-room-zombie-apocalypse-theme-biohazard-breakout.png",
+    themeImageAlt: "Biohazard breakout escape room theme",
     pagesubtitle:
       "Trapped in a lab lockdown with a growing zombie horde, can you develope a vaccine and escape the facility before it is too late?",
     price: "29.89",
@@ -413,7 +423,9 @@ const activityDataset = {
   //============================================special-agent5
   "special-agent": {
     activityname: "Special Agent",
-
+    themeImage:
+      "/assets/theme/all-in-adventures-escape-room-special-agent-theme-espionage.png",
+    themeImageAlt: "Special agent escape room theme",
     pagesubtitle:
       "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
     price: "29.89",
@@ -498,7 +510,9 @@ const activityDataset = {
   //============================================hollywood-premiere 6
   "hollywood-premiere": {
     activityname: "Hollywood Premiere",
-
+    themeImage:
+      "/assets/theme/all-in-adventures-escape-room-hollywood-premiere-theme-movie-mystery.png",
+    themeImageAlt: "Movie mystery escape room theme",
     pagesubtitle:
       "You're the next lucky contestant on an exciting Hollywood game show! Solve our puzzles and see if you can name our secret celebrity!",
     price: "29.89",
@@ -586,6 +600,9 @@ const activityDataset = {
   //============================================hollywood-premiere 6
   //============================================sherlocks-library 7
   "sherlocks-library": {
+    themeImage:
+      "/assets/theme/all-in-adventures-escape-room-sherlocks-library-theme-super-sleuth.png",
+    themeImageAlt: "Super sleuth escape room theme",
     pagesubtitle:
       "The great detective Sherlock Holmes has gone missing, but things are not always as they seem. Follow the trail of clues to find him.",
     activityname: "Sherlock's Library",
@@ -674,7 +691,9 @@ const activityDataset = {
   //============================================houdinis-magic-cell 8
   "houdinis-magic-cell": {
     activityname: "Houdini's Magic Cell",
-
+    themeImage:
+      "/assets/theme/all-in-adventures-escape-room-houdinis-magic-cell-theme-escape-artist.png",
+    themeImageAlt: "Escape artist escape room theme",
     pagesubtitle:
       "As a magician, you have always looked up to Houdini and his impressive skills. Prove you have what it takes to be a Master Magician!",
     price: "29.89",
@@ -761,7 +780,9 @@ const activityDataset = {
   //============================================black-ops 10
   "black-ops": {
     activityname: "Black Ops",
-
+    themeImage:
+      "/assets/theme/all-in-adventures-escape-room-black-ops-theme-covert-operations.png",
+    themeImageAlt: "Covert operations escape room theme",
     pagesubtitle:
       "After acquiring all necessary evidence, it is time to execute your mission. Infiltrate the enemy bunker and apprehend the arms dealer!",
     price: "29.89",
@@ -843,7 +864,9 @@ const activityDataset = {
   //============================================lost-in-the-jungle 11
   "lost-in-the-jungle": {
     activityname: "Lost In The Jungle",
-
+    themeImage:
+      "/assets/theme/all-in-adventures-escape-room-lost-in-the-jungle-theme-adventure.png",
+    themeImageAlt: "Adventure escape room theme",
     pagesubtitle:
       "The mysterious sound of drums lure you in, promising adventure. You find yourself trapped in the game, and the only way out is to win!",
     price: "39.95",
@@ -930,7 +953,9 @@ const activityDataset = {
   //============================================wizarding-school 13
   "wizarding-school": {
     activityname: "Wizarding School",
-
+    themeImage:
+      "/assets/theme/all-in-adventures-escape-room-wizarding-school-theme-magic-academy.png",
+    themeImageAlt: "Magic academy escape room theme",
     pagesubtitle:
       "You have gotten locked in the headmaster's office! You must put on your thinking cap and find a way out in time for your next class.",
     price: "39.95",
@@ -1016,7 +1041,9 @@ const activityDataset = {
   //============================================magic-castle 9
   /*"magic-castle": {
     activityname: "Magic Castle",
-
+   themeImage:
+      "/assets/theme/all-in-adventures-escape-room-magic-castle-theme-fantasy-magic.png",
+    themeImageAlt: "Fantasy Magic escape room theme",
     pagesubtitle:
       "Welcome to the Magic Castle! Pass your entrance exam to prove you belong among the most prestigious wizards. Test your wits, courage, loyalty, and cunning.",
     price: "29.89",
@@ -1101,7 +1128,9 @@ const activityDataset = {
   //============================================locked-in-the-Lift 14
   /* "locked-in-the-lift": {
     activityname: "Locked In The Lift",
-
+   themeImage:
+      "/assets/theme/all-in-adventures-escape-room-locked-in-the-lift-theme-thriller-survival.png",
+    themeImageAlt: "Thriller Survival escape room theme",
     pagesubtitle:
       "Welcome to the 40's! You are trapped in a luxurious lift meant only for the most exclusive VIPs. See if you can piece together how to get things running again.",
     price: "29.89",
