@@ -248,7 +248,7 @@ export const Homepagedata = () => {
         title: "Special Agent",
         success_rate: "37",
         description:
-          "An international jewel thief is about to slip free. Can your team can find the clues to stop them from escaping before it is too late?",
+          "An international jewel thief is about to slip free. Can your team find the clues to stop them from escaping before it is too late?",
         age: "6-99",
         duration: "60",
         maxplayers: "10",
