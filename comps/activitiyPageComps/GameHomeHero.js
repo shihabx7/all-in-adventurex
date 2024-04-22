@@ -22,7 +22,7 @@ const GameHomeHero = (props) => {
         </div>
         <div className="max-w-7xl home-hero-container mx-auto px-4 pt-0 pb-[100px] md:py-20 lg:py-32 xl:py-40 relative z-20">
           <div className="page-benar-info">
-            {props.pagedata.themeImage && (
+            {props.pagedata.themeImage ? (
               <div className="flex justify-center mb-1 md:mb-2">
                 <img
                   className="max-h-[30px] md:max-h-[32px] lg:max-h-[36px] 3xl:max-h-[40px]"
@@ -30,6 +30,8 @@ const GameHomeHero = (props) => {
                   alt={props.pagedata.themeImageAlt}
                 ></img>
               </div>
+            ) : (
+              ""
             )}
 
             <p className=" md:mt-0 font-semibold text-lg md:text-2xl mb-1 text-white text-center">

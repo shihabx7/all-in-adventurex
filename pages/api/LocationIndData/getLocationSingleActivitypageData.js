@@ -156,8 +156,12 @@ export const getLocationSingleActivitypageData = (gameslug, locationslug) => {
       pagesubtitle: activityGuest[locationslug][gameslug].pagesubtitle
         ? activityGuest[locationslug][gameslug].pagesubtitle
         : activityDataset[gameslug].pagesubtitle,
-      themeImage: activityDataset[gameslug].themeImage,
-      themeImageAlt: activityDataset[gameslug].themeImageAlt,
+      themeImage: activityDataset[gameslug].themeImage
+        ? activityDataset[gameslug].themeImage
+        : false,
+      themeImageAlt: activityDataset[gameslug].themeImageAlt
+        ? activityDataset[gameslug].themeImageAlt
+        : false,
       publish_status: getLocTotal(locationslug).publish_status,
       totalLocation: "28",
       coverimageL: activityDataset[gameslug].coverimageL,

@@ -23,8 +23,12 @@ export const getActivityData = (activitySlug) => {
         activityDataset[activitySlug].activityname +
         " " +
         actSalt(activityDataset[activitySlug].activitydata.category),
-      themeImage: activityDataset[activitySlug].themeImage,
-      themeImageAlt: activityDataset[activitySlug].themeImageAlt,
+      themeImage: activityDataset[activitySlug].themeImage
+        ? activityDataset[activitySlug].themeImage
+        : false,
+      themeImageAlt: activityDataset[activitySlug].themeImageAlt
+        ? activityDataset[activitySlug].themeImageAlt
+        : false,
       pagesubtitle: activityDataset[activitySlug].pagesubtitle,
       totalLocation: getTotal().totalLocations,
       coverimageL: activityDataset[activitySlug].coverimageL,
