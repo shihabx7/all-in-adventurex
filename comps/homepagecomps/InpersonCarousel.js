@@ -205,28 +205,28 @@ const InpersonCarousel = (props) => {
                                 props.bookingData[inpersongame.slug]
                               )
                             }
-                            className="border w-[48%] card-book-btnxx border-red-600 bg-red-600 py-2 md:py-3  rounded-full font-medium text-lg hover:bg-red-700 hover:border-red-700"
+                            className="border w-[48%] card-book-btnxx border-red-600 bg-red-600 py-[10px] md:py-3  rounded-full font-medium text-lg hover:bg-red-700 hover:border-red-700"
                           >
                             BOOK NOW
                           </button>
                         )}
                         {props.bookingData[inpersongame.slug].active ==
                           false && (
-                          <button className="border w-[48%] card-book-btnxx border-red-600 bg-red-600 py-2 md:py-3 rounded-full font-medium text-lg hover:bg-red-700 hover:border-red-700">
+                          <button className="border w-[48%] card-book-btnxx border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium text-lg hover:bg-red-700 hover:border-red-700">
                             COMING SOON
                           </button>
                         )}
                       </>
                     )}
                     {props.bookingData && !props.publish && (
-                      <button className="border w-[48%] card-book-btnxx border-red-600 bg-red-600 py-2 md:py-3 rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700">
+                      <button className="border w-[48%] card-book-btnxx border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700">
                         COMING SOON
                       </button>
                     )}
                     {!props.bookingData && (
                       <button
                         onClick={() => showLocation()}
-                        className="border w-[48%] card-book-btnxx   border-red-600 bg-red-600 py-2 md:py-3 rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700"
+                        className="border w-[48%] card-book-btnxx   border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700"
                       >
                         BOOK NOW
                       </button>
@@ -239,7 +239,7 @@ const InpersonCarousel = (props) => {
                           "/activities/" +
                           inpersongame.slug
                         }
-                        className="border w-[48%] border-red-600 bg-transparent py-2 md:py-3  rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700"
+                        className="border w-[48%] border-red-600 bg-transparent py-[10px] md:py-3  rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700"
                       >
                         EXPLORE
                       </a>
@@ -247,7 +247,7 @@ const InpersonCarousel = (props) => {
                     {!props.locationslug && (
                       <a
                         href={"/activities/" + inpersongame.slug}
-                        className="border w-[48%]  border-red-600 bg-transparent py-2 md:py-3 rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700"
+                        className="border w-[48%]  border-red-600 bg-transparent py-[10px] md:py-3 rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700"
                       >
                         EXPLORE
                       </a>

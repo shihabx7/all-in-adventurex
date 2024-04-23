@@ -132,7 +132,7 @@ export const getLocationsPageData = () => {
               },
             ],
           },
-          {
+          /*{
             id: 2,
             city: "Buffalo",
             publish_status: false,
@@ -247,7 +247,7 @@ export const getLocationsPageData = () => {
                 close: "-",
               },
             ],
-          },
+          },*/
           {
             id: 3,
             city: "Middletown",

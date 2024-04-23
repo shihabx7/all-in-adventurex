@@ -140,7 +140,7 @@ const LocationHomeHero = (props) => {
                   ></img>
                 </div>
               )}
-              <p className=" md:mt-0 font-semibold text-lg md:text-2xl  mb-1 text-white text-center uppercase ">
+              <p className="leading-[1.2] md:mt-0 font-semibold text-lg md:text-2xl  mb-1 text-white text-center uppercase ">
                 AT {props.pagedata.locationaddress} IN{" "}
                 {props.pagedata.locationcity}, {props.pagedata.locationstate}
               </p>

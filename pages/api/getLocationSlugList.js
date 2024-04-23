@@ -7,13 +7,13 @@ export const getLocationSlugList = () => {
       state: "NY",
       shortaddress: "Crossgates Mall",
     },
-    {
+    /* {
       id: 2,
       slug: "buffalo-ny",
       city: "Buffalo",
       state: "NY",
       shortaddress: "Walden Galleria Mall",
-    },
+    },*/
     {
       id: 3,
       slug: "middletown-ny",

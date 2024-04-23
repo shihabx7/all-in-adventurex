@@ -13,6 +13,16 @@ body,
 a {
   font-family: "Roboto", sans-serif;
 }
+
+::selection {
+  color: whitesmoke;
+  background: blue;
+}
+::-moz-selection {
+  /* Code for Firefox */
+  color: whitesmoke;
+  background: blue;
+}
 .font-os {
   font-family: "Oswald", sans-serif;
 }
@@ -267,15 +277,9 @@ a {
 }
 /*===================================map end----------------------*/
 .golden-text {
-  background-color: #e0bf62;
-  background-image: linear-gradient(to right, #ca9342, #e0bf62);
-  background-size: 100%;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-} /*-------------locmenux*/
+  color: #ca9342;
+}
+
 .loc-menu-grid,
 .footer-loc-col-mess {
   column-count: 4;
@@ -954,7 +958,7 @@ a {
 .inp-car .react-multiple-carousel__arrow--right {
   min-width: 56px;
   min-height: 56px;
-  right: calc(0% + 2px);
+  right: calc(0% + 0px);
   top: 38%;
   background-color: #231800;
   box-shadow: 0px 0px 2px 2px rgba(216, 174, 84, 0.42);

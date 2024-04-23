@@ -17,7 +17,7 @@ const HomeHero = (props) => {
       </div>
       <div className="max-w-7xl home-hero-container mx-auto px-4 pb-[90px] pt-0 md:pb-24 md:pt-[160px] lg:pb-28 lg:pt-[210px] relative z-10">
         <div className="page-benar-info">
-          <p className=" md:mt-4 lg:mt-6 xl:mt-0 font-semibold text-lg md:text-2xl mb-1 text-white text-center">
+          <p className="leading-[1.2] md:mt-4 lg:mt-6 xl:mt-0 font-semibold text-lg md:text-2xl mb-1 text-white text-center">
             CHOOSE FROM {props.pagedata.totalLocations} U.S. LOCATIONS
           </p>
           <h1 className="text-gold font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-2 rm:mb-2 md:mb-4 lg:mb-6 font-os outline-tile">
@@ -44,10 +44,10 @@ const HomeHero = (props) => {
         <div className="drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)]  mx-auto bottom-[-66px] max-w-[90%] md:max-w-3xl md:bottom-[-8%] left-0 right-0 absolute bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded">
           <div className="flex flex-wrap md:grid justify-center items-center md:grid-cols-5 ">
             <div className="text-center w-[33%] md:w-auto">
-              <div className="">
-                <p className="golden-text text-xl md:text-4xl font-os font-bold">
+              <div className="boarf">
+                <h3 className="golden-text text-xl md:text-4xl font-os font-bold">
                   {props.pagedata.totalUniqueGames}
-                </p>
+                </h3>
                 <p className="text-gray-700 text-xs md:text-base lg:text-lg ">
                   Themed Games
                 </p>
@@ -55,9 +55,9 @@ const HomeHero = (props) => {
             </div>
             <div className="text-center w-[33%] md:w-auto">
               <div className="border-l border-gray-300">
-                <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                <h3 className="golden-text text-xl md:text-4xl font-os font-bold">
                   6-99
-                </p>
+                </h3>
                 <p className="text-gray-700 text-xs md:text-base lg:text-lg ">
                   Age Range
                 </p>
@@ -65,9 +65,9 @@ const HomeHero = (props) => {
             </div>
             <div className="text-center w-[33%] md:w-auto">
               <div className="border-l border-gray-300">
-                <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                <h3 className="golden-text text-xl md:text-4xl font-os font-bold">
                   YES
-                </p>
+                </h3>
                 <p className="text-gray-700 text-xs md:text-base lg:text-lg ">
                   Private Events
                 </p>
@@ -75,9 +75,9 @@ const HomeHero = (props) => {
             </div>
             <div className="text-center w-[44%] md:w-auto border-t pt-2 mt-3 md:pt-0 md:mt-0 md:border-t-0  border-gray-300">
               <div className="md:border-l border-gray-300">
-                <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                <h3 className="golden-text text-xl md:text-4xl font-os font-bold">
                   {props.pagedata.totalFiveStarReview}
-                </p>
+                </h3>
                 <p className="text-gray-700 text-xs md:text-base lg:text-lg">
                   Rave Reviews
                 </p>
@@ -85,9 +85,9 @@ const HomeHero = (props) => {
             </div>
             <div className="text-center w-[44%] md:w-auto border-t md:border-t-0 pt-2 mt-3 md:pt-0 md:mt-0 border-gray-300">
               <div className="border-l  border-gray-300">
-                <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                <h3 className="golden-text text-xl md:text-4xl font-os font-bold">
                   {props.pagedata.totalPlayerEscaped}
-                </p>
+                </h3>
                 <p className="text-gray-700 text-xs md:text-base lg:text-lg">
                   Guests Served
                 </p>
