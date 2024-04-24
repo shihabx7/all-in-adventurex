@@ -7,10 +7,16 @@ const prm = false;
 // =========================================genarel redirect
 const gnRed = [
   {
-    source: "/activities/locked-in-the-lift",
+    source: "/virtual-games/virtual-game-show-room",
+    destination: "/activities/locked-in-the-lift",
+    permanent: prm,
+  },
+  {
+    source: "/activities/game-show-room",
     destination: "/activities",
     permanent: prm,
   },
+
   {
     source: "/activities/magic-castle",
     destination: "/activities",

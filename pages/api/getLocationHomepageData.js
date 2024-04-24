@@ -336,7 +336,7 @@ export const getRedeemGames = (slug) => {
       id: i + 1,
       title: giftCarData[i].title,
       description: giftCarData[i].description,
-      bgimg: newSourse,
+      bgimg: imgSource,
     };
     giftCarArr.push(giftCarObj);
   }

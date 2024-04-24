@@ -170,7 +170,7 @@ const Footer = (props) => {
               <div className="term-policy flex justify-center space-x-2 items-center mt-2">
                 <a
                   href="/privacy-policy"
-                  className="text-gray-600 hover-golden text-xs md:text-base"
+                  className="text-gray-600 hover:text-[#CA9342] text-xs md:text-base"
                 >
                   Privacy Policy
                 </a>
@@ -181,7 +181,7 @@ const Footer = (props) => {
 
                 <a
                   href="/terms-of-services"
-                  className="text-gray-600 hover-golden text-xs md:text-base"
+                  className="text-gray-600 hover:text-[#CA9342] text-xs md:text-base"
                 >
                   Terms of Services
                 </a>
