@@ -211,8 +211,8 @@ const testimonials = (props) => {
               <p className="text-gray-700 md:px-8 md:text-lg">
                 We offer a special, unpredictable, family-friendly live game
                 show experience for guests of all different ages, background and
-                group sizes. You'll have a blast and make long-lasting memories
-                while actively participating.
+                group sizes. You&quote;ll have a blast and make long-lasting
+                memories while actively participating.
               </p>
             </div>
             <MainTestimonials
