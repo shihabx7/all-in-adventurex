@@ -8,6 +8,7 @@ import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
 import TitleSeparator from "../comps/util/TitleSeparator";
 import MainTestimonials from "../comps/testimonialPageComps/MainTestimonials";
 import Link from "next/link";
+import PageLink from "../comps/util/PageLink";
 import Seofields from "../comps/util/SeoFields";
 
 const testimonials = (props) => {
@@ -92,15 +93,10 @@ const testimonials = (props) => {
               testimonials={props.testimonials}
             />
             <div className="flex justify-center mt-2 md:mt-4">
-              <a
-                href="/activities"
-                className="flex items-center space-x-1 text-red-600 hover-text-red-700 text-lg font-medium"
-              >
-                <span>View all in-person escape rooms</span>
-                <span>
-                  <FiChevronRight />
-                </span>
-              </a>
+              <PageLink
+                link="/activities"
+                label="View all in-person escape rooms"
+              />
             </div>
           </div>
         </div>
@@ -130,15 +126,10 @@ const testimonials = (props) => {
               testimonials={props.testimonials}
             />
             <div className="flex justify-center mt-2 md:mt-4">
-              <a
-                href="/events/birthday-party"
-                className="flex items-center space-x-1 text-red-600 hover-text-red-700 text-lg font-medium"
-              >
-                <span>Learn more about birthday party</span>
-                <span>
-                  <FiChevronRight />
-                </span>
-              </a>
+              <PageLink
+                link="/events/birthday-party"
+                label="Learn more about birthday party"
+              />
             </div>
           </div>
         </div>
@@ -168,15 +159,7 @@ const testimonials = (props) => {
               testimonials={props.testimonials}
             />
             <div className="flex justify-center mt-2 md:mt-4">
-              <a
-                href="/events"
-                className="flex items-center space-x-1 text-red-600 hover-text-red-700 text-lg font-medium"
-              >
-                <span>View all events</span>
-                <span>
-                  <FiChevronRight />
-                </span>
-              </a>
+              <PageLink link="/events" label="View all events" />
             </div>
           </div>
         </div>
@@ -207,15 +190,7 @@ const testimonials = (props) => {
               testimonials={props.testimonials}
             />
             <div className="flex justify-center mt-2 md:mt-4">
-              <a
-                href="/events"
-                className="flex items-center space-x-1 text-red-600 hover-text-red-700 text-lg font-medium"
-              >
-                <span>View all events</span>
-                <span>
-                  <FiChevronRight />
-                </span>
-              </a>
+              <PageLink link="/events" label="View all events" />
             </div>
           </div>
         </div>
@@ -236,7 +211,7 @@ const testimonials = (props) => {
               <p className="text-gray-700 md:px-8 md:text-lg">
                 We offer a special, unpredictable, family-friendly live game
                 show experience for guests of all different ages, background and
-                group sizes. You’ll have a blast and make long-lasting memories
+                group sizes. You'll have a blast and make long-lasting memories
                 while actively participating.
               </p>
             </div>
@@ -245,15 +220,10 @@ const testimonials = (props) => {
               testimonials={props.testimonials}
             />
             <div className="flex justify-center mt-2 md:mt-4">
-              <a
-                href="/activities"
-                className="flex items-center space-x-1 text-red-600 hover-text-red-700 text-lg font-medium"
-              >
-                <span>View all in-person escape rooms</span>
-                <span>
-                  <FiChevronRight />
-                </span>
-              </a>
+              <PageLink
+                link="/activities"
+                label="View all in-person escape rooms"
+              />
             </div>
           </div>
           <div className="w-full absolute bottom-0 left-0 ">
