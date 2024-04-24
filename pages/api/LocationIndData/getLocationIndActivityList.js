@@ -237,7 +237,7 @@ const LocActivityData = {
         success_rate: "56",
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -517,7 +517,7 @@ const LocActivityData = {
         success_rate: "56",
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -799,7 +799,7 @@ const LocActivityData = {
         success_rate: "56",
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -1125,7 +1125,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -1443,7 +1443,7 @@ const LocActivityData = {
         success_rate: "56",
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -1725,7 +1725,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -1949,7 +1949,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -2206,7 +2206,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -2431,7 +2431,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -2688,7 +2688,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -2955,7 +2955,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -3180,7 +3180,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -3457,7 +3457,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -3743,7 +3743,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -3964,7 +3964,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -4253,7 +4253,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -4507,7 +4507,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -4759,7 +4759,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -4934,7 +4934,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -5184,7 +5184,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -5465,7 +5465,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -5631,7 +5631,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
@@ -5916,7 +5916,7 @@ const LocActivityData = {
         ],
         duration: "60",
         activity_desc:
-          "You are prison guards at Alcatraz and the Warden's keys have gone missing! Can you find them before there is an escape attempt?",
+          "As a library trustee, you have access to a crew that can help with your escape plan. Will you make it out of your cell, and off this miserable rock?",
         activity_slug: "escape-from-alcatraz",
         activity_cover_image:
           "/assets/all-game-list/escape-from-alcatraz-all-in-adventures-escape-room.jpg",
