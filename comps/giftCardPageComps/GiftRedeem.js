@@ -5,7 +5,7 @@ const GiftRedeem = (props) => {
   return (
     <div
       id="gift-redem"
-      className="gift-redeem relative  py-16 md:py-24 lg:py-32 px-4 overflow-hidden md:mt-[0px] bg-[url('/assets/svg/pattern/brown-color-bg-pattern.svg')] bg-[length:320px_320px] md:bg-[length:460px_460px] lg:bg-[length:600px_600px] bg-repeat"
+      className="gift-redeem relative  py-16 md:py-24 lg:py-32  overflow-hidden md:mt-[0px] bg-[url('/assets/svg/pattern/brown-color-bg-pattern.svg')] bg-[length:320px_320px] md:bg-[length:460px_460px] lg:bg-[length:600px_600px] bg-repeat"
     >
       <div className="btop absolute top-0 left-0 w-full">
         <img
