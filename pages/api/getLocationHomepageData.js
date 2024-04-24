@@ -331,7 +331,7 @@ export const getRedeemGames = (slug) => {
   let giftCarArr = [];
   for (let i = 0; i < giftCarData.length; i++) {
     let imgSource = giftCarData[i].bgimg;
-    let newSourse = imgSource.replace(/all-game-slider-bg/g, "gift-slider");
+    //let newSourse = imgSource.replace(/all-game-slider-bg/g, "gift-slider");
     let giftCarObj = {
       id: i + 1,
       title: giftCarData[i].title,
