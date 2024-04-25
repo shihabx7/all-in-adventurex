@@ -22,19 +22,18 @@ module.exports = {
         squeare: "square",
         roman: "upper-roman",
       },
-      screens: {
-        rm: "350px",
-        sm: "580px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1280px",
-        "2xl": "1400px",
-        "3xl": "1500px",
-        "4xl": "2000px",
-        "5xl": "2380px",
-      },
     },
-
+    screens: {
+      rm: "350px",
+      sm: "580px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1400px",
+      "3xl": "1500px",
+      "4xl": "2000px",
+      "5xl": "2380px",
+    },
     gradients: (theme) => ({
       // Array definition (defaults to linear gradients).
       topaz: ["30deg", theme("colors.orange.500"), theme("colors.pink.400")],

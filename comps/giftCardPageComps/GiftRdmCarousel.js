@@ -90,18 +90,18 @@ const GiftRdmCarousel = (props) => {
                 <img className="rounded-lg" src={game.bgimg}></img>
               </div>
               <div className="rounded-lg card-container absolute top-0 left-0 w-full h-full flex flex-col justify-end">
-                <div className="card-bottom-gift rounded-[6px] py-4 px-2 pt-6  pb-12">
+                <div className="card-bottom-gift rounded-[6px] py-4 px-2 pt-6 pb-8 2xl:pb-10 4xl:pb-12">
                   <div className="mb-3">
                     <img
                       className="max-w-[120px] mx-auto"
                       src="/assets/gift-images/escape-room-tag.png"
                     ></img>
                   </div>
-                  <div className="card-game-descs  text-center">
+                  <div className="card-game-descs text-center">
                     <h3 className="card-game-title text-[22px] rm:text-[25px] sm:text-2xl lg:text-3xl xl:text-[27px] 3xl:text-[26px] 4xl:text-3xl font-bold uppercase text-white">
                       {game.title}
                     </h3>
-                    <p className="text-gray-200 text-[13px] rm:text-[15px] lg:text-[15px] 3xl:text-[14px] 4xl:text-[17px]">
+                    <p className="text-gray-200 text-[13px] rm:text-[15px] lg:text-[16px] 3xl:text-[15px] 4xl:text-[17px] px-2 lg:px-3 3xl:px-2 4xl:px-3">
                       {game.description}
                     </p>
                   </div>
