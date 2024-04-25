@@ -27,7 +27,7 @@ const GiftRedeem = (props) => {
             color="text-[#CA9342]"
             weight="font-bold"
           />
-          <p className="mt-4 text-[#2E2E2E] max-w-[800px] mx-auto text-center lg:text-lg">
+          <p className="mt-4 text-[#2E2E2E] max-w-[800px] mx-auto text-center md:text-lg px-4">
             Your gift recipients are in for a treat when they experience one of
             these great escape room games at their local All In Adventures store
             — what mystery will they unravel?
