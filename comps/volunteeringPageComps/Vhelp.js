@@ -9,10 +9,7 @@ const Vhelp = () => {
   };
 
   return (
-    <div
-      className="fran-tes bg-cover"
-      style={{ backgroundImage: "url('/assets/game-dt-bg.jpg')" }}
-    >
+    <div className="fran-tes bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px]">
       <div className="section-container max-w-7xl mx-auto px-4 pt-16 md:pt-20 lg:pt-28">
         <div className="v-help flex flex-col md:flex-row justify-between items-center space-x-0 space-y-4 md:space-y-0 md:space-x-6 lg:space-x-8">
           <div className="w-full md:w-1/2">

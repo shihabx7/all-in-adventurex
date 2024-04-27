@@ -4,10 +4,7 @@ import { FiChevronRight } from "react-icons/fi";
 
 const PricingEvents = () => {
   return (
-    <div
-      className="events-pricing relative bg-center bg-cover"
-      style={{ backgroundImage: 'url("/assets/game-dt-bg.jpg")' }}
-    >
+    <div className="events-pricing relative bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px]">
       {/**=================inpersone escape game price section==================== */}
       <div className="section-container max-w-7xl mx-auto  pb-16 md:pb-20 lg:pb-28 relative z-30">
         <div className="section-title px-4 mb-8">

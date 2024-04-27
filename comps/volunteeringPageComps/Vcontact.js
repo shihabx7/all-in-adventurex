@@ -238,9 +238,7 @@ const Vcontact = (props) => {
   return (
     <div
       id="contact-v"
-      style={{ backgroundImage: "url('/assets/game-dt-bg.jpg')" }}
-      className="py
-        -16 pt-16 pb-0 md:py-20 lg:py-28"
+      className="py-16 pt-16 pb-0 md:py-20 lg:py-28 bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px]"
     >
       <div className="max-w-[1100px] mx-auto">
         <div className=" text-center px-4">

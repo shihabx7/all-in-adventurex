@@ -499,12 +499,30 @@ const FranchiseContactForm = () => {
   return (
     <div
       id="fransform"
-      className="our-mission-vission relative bg-center bg-cover"
-      style={{ backgroundImage: 'url("/assets/game-dt-bg.jpg")' }}
+      className="our-mission-vission relative bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px]"
     >
-      <div className="w-full absolute top-0 left-0 ">
-        <img className="w-full" src="/assets/game-home-or1.jpg"></img>{" "}
+      {/*======================= boder img============== */}
+      <div className="sec-divider-top w-full absolute top-0 left-0 ">
+        <img
+          className="w-full hidden md:block"
+          src="/assets/svg/pattern/Light-Brown-Color-BG-Top.svg"
+        ></img>
+        <img
+          className="w-full rotate-180 md:hidden"
+          src="/assets/svg/pattern/light-brown-color-bg-mobile.svg"
+        ></img>
       </div>
+      <div className="sec-divider-bottom w-full absolute bottom-0 left-0">
+        <img
+          className="w-full hidden md:block"
+          src="/assets/svg/pattern/Light-Brown-Color-BG-Bottom.svg"
+        ></img>
+        <img
+          className="w-full  md:hidden"
+          src="/assets/svg/pattern/light-brown-color-bg-mobile.svg"
+        ></img>
+      </div>
+      {/*======================= boder img end============== */}
       <div className="section-container max-w-7xl mx-auto  py-24 md:py-30 lg:py-40 relative z-30">
         <div className="section-title px-4 mb-8">
           <p className="text-lg text-center text-[#938056]">
@@ -1088,10 +1106,6 @@ const FranchiseContactForm = () => {
             {/*==========================================================contact form to book event end======================= */}
           </div>
         </div>
-      </div>
-
-      <div className="w-full absolute bottom-0 left-0 ">
-        <img className="w-full" src="/assets/game-home-or2.jpg"></img>{" "}
       </div>
     </div>
   );

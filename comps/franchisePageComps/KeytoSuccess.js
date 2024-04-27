@@ -4,10 +4,7 @@ import FranchiseNote from "./FranchiseNote";
 
 const KeytoSuccess = () => {
   return (
-    <div
-      className="our-mission-vission relative bg-center bg-cover"
-      style={{ backgroundImage: 'url("/assets/game-dt-bg.jpg")' }}
-    >
+    <div className="our-mission-vission relative bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px]">
       <div className="section-container max-w-7xl mx-auto px-4 py-16 md:py-20 lg:py-28 relative z-30">
         {/**===================who we are============================= */}
         <div className="abt-row flex flex-col md:flex-row justify-between items-center">
