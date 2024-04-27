@@ -3,21 +3,21 @@ import Script from "next/script";
 import Footer from "../../comps/Footer";
 import Homenav from "../../comps/Homenav";
 import Breadcrumbs from "nextjs-breadcrumbs";
-import Head from "next/head";
+
 import { FiChevronRight } from "react-icons/fi";
 import LocationHomeHero from "../../comps/homepagecomps/LocationHomeHero";
-import Howtobook from "../../comps/homepagecomps/Howtobook";
+
 import InpersonEscapeSlider from "../../comps/homepagecomps/InpersonEscapeSlider";
 import PlaningEventsSlider from "../../comps/homepagecomps/PlaningEventsSlider";
 import PysicalEscape from "../../comps/homepagecomps/PysicalEscape";
-import VirtualEscapeSlider from "../../comps/homepagecomps/VirtualEscapeSlider";
+
 import BuyGiftCard from "../../comps/homepagecomps/BuyGiftCard";
 import WhatIsEscape from "../../comps/homepagecomps/WhatIsEscape";
 import WhoCanplay from "../../comps/homepagecomps/WhoCanPlay";
-import HomeReviewSlider from "../../comps/homepagecomps/HomeReviewSlider";
+
 import { getLocationHomepageData } from "../api/getLocationHomepageData";
 import { getLocationSlugList } from "../api/getLocationSlugList";
-import LocationDetails from "../../comps/locationsPage/LocationDetails";
+
 import HomeReviewSliderLoc from "../../comps/homepagecomps/HomeReviewSliderLoc";
 import HowToPlay from "../../comps/homepagecomps/HowToPlay";
 import Seofields from "../../comps/util/SeoFields";

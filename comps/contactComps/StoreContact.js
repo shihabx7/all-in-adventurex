@@ -267,10 +267,7 @@ const StoreContact = (props) => {
   // form submission area==============
 
   return (
-    <div
-      className="c-contact py-16 md:py-20 lg:py-28  bg-cover bg-center"
-      style={{ backgroundImage: "url('/assets/game-dt-bg.jpg')" }}
-    >
+    <div className="c-contact py-16 md:py-20 lg:py-28  bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] bg-repeat">
       <div className="section-container max-w-7xl mx-auto relative z-30">
         <div className="section-title px-4">
           <TitleSeparator

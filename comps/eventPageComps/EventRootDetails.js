@@ -30,19 +30,25 @@ const EventRootDetails = (props) => {
   }, [showPack]);
 
   return (
-    <div className="event-detail relative overflow-hidden bg-center bg-[url('/assets/svg/pattern/brown-color-bg-pattern.svg')] bg-[length:320px_320px] md:bg-[length:460px_460px] lg:bg-[length:600px_600px] bg-repeat">
+    <div className="event-detail relative overflow-hidden bg-center bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] bg-repeat">
+      {/*======================= boder img============== */}
+      <div className="sec-divider-top w-full absolute top-0 left-0 ">
+        <img
+          className="w-full hidden md:block"
+          src="/assets/svg/pattern/Light-Brown-Color-BG-Top.svg"
+        ></img>
+        <img
+          className="w-full rotate-180 md:hidden"
+          src="/assets/svg/pattern/light-brown-color-bg-mobile.svg"
+        ></img>
+      </div>
+
+      {/*======================= boder img end============== */}
       <div className="pl-or pl-or-1 absolute top-0 left-0 z-10">
         <img src="/assets/pl-bgi-1.png"></img>
       </div>
       <div className="pl-or pl-or-3 absolute top-0 right-0 z-10">
         <img src="/assets/pl-bgi-3.png"></img>
-      </div>
-
-      <div className="btop absolute top-0 left-0 w-full">
-        <img
-          className="w-full"
-          src="/assets/svg/pattern/brown-color-border.svg"
-        ></img>
       </div>
 
       {/**=========================== section content========================= */}

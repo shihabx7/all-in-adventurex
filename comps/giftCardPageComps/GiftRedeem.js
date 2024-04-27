@@ -5,20 +5,30 @@ const GiftRedeem = (props) => {
   return (
     <div
       id="gift-redem"
-      className="gift-redeem relative  py-16 md:py-24 lg:py-32  overflow-hidden md:mt-[0px] bg-[url('/assets/svg/pattern/brown-color-bg-pattern.svg')] bg-[length:320px_320px] md:bg-[length:460px_460px] lg:bg-[length:600px_600px] bg-repeat"
+      className="gift-redeem relative  py-16 md:py-24 lg:py-32  overflow-hidden md:mt-[0px] bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] bg-repeat"
     >
-      <div className="btop absolute top-0 left-0 w-full">
+      {/*======================= boder img============== */}
+      <div className="sec-divider-top w-full absolute top-0 left-0 ">
         <img
-          className="w-full"
-          src="/assets/svg/pattern/brown-color-border.svg"
+          className="w-full hidden md:block"
+          src="/assets/svg/pattern/Light-Brown-Color-BG-Top.svg"
+        ></img>
+        <img
+          className="w-full rotate-180 md:hidden"
+          src="/assets/svg/pattern/light-brown-color-bg-mobile.svg"
         ></img>
       </div>
-      <div className="btop absolute bottom-0 left-0 w-full">
+      <div className="sec-divider-bottom w-full absolute bottom-0 left-0">
         <img
-          className="w-full rotate-180"
-          src="/assets/svg/pattern/brown-color-border.svg"
+          className="w-full hidden md:block"
+          src="/assets/svg/pattern/Light-Brown-Color-BG-Bottom.svg"
+        ></img>
+        <img
+          className="w-full  md:hidden"
+          src="/assets/svg/pattern/light-brown-color-bg-mobile.svg"
         ></img>
       </div>
+      {/*======================= boder img end============== */}
       <div className="giftrdm-container relative z-30">
         {/** =================section title============= */}
         <div className="section-title mb-8 md:mb-12">

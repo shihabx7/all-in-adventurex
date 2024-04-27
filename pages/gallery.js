@@ -8,6 +8,7 @@ import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
 import TitleSeparator from "../comps/util/TitleSeparator";
 import MainGallery from "../comps/util/MainGallery";
 import Link from "next/link";
+import PageLink from "../comps/util/PageLink";
 
 import Seofields from "../comps/util/SeoFields";
 
@@ -46,8 +47,7 @@ const gallery = (props) => {
       {/* =========================================================================================main content ======== end */}
       <div
         id="mainContent"
-        className="main-content nobtn-main-content bg-center bg-repeat-y"
-        style={{ backgroundImage: "url('/assets/game-dt-bg.jpg')" }}
+        className="main-content nobtn-main-content bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px]"
       >
         {/* =======breadcum content and breadcum========  */}
         <div className="breadcums  py-1 md:py-2 bg-[#fffceb]">
@@ -65,13 +65,29 @@ const gallery = (props) => {
         {/* =======breadcum content and breadcum root page template======== end */}
         <GameHomeHero gametotal="not" pagedata={props.pagedata} />
 
-        <div
-          className="gallery-section py-16 md:py-20 lg:py-28 relative"
-          style={{ backgroundImage: "url('/assets/game-dt-bg.jpg')" }}
-        >
-          <div className="w-full absolute top-0 left-0 ">
-            <img className="w-full" src="/assets/game-home-or1.jpg"></img>{" "}
+        <div className="gallery-section py-16 md:py-20 lg:py-28 relative bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px]">
+          {/*======================= boder img============== */}
+          <div className="sec-divider-top w-full absolute top-0 left-0 ">
+            <img
+              className="w-full hidden md:block"
+              src="/assets/svg/pattern/Light-Brown-Color-BG-Top.svg"
+            ></img>
+            <img
+              className="w-full rotate-180 md:hidden"
+              src="/assets/svg/pattern/light-brown-color-bg-mobile.svg"
+            ></img>
           </div>
+          <div className="sec-divider-bottom w-full absolute bottom-0 left-0">
+            <img
+              className="w-full hidden md:block"
+              src="/assets/svg/pattern/Light-Brown-Color-BG-Bottom.svg"
+            ></img>
+            <img
+              className="w-full  md:hidden"
+              src="/assets/svg/pattern/light-brown-color-bg-mobile.svg"
+            ></img>
+          </div>
+          {/*======================= boder img end============== */}
           <div className="section-container max-w-7xl mx-auto relative z-30">
             {/* =======customer  gallery========  */}
             <div className="inperson-gallery">
@@ -95,14 +111,10 @@ const gallery = (props) => {
                 galleryitem={props.gallerylist}
               />
               <div className="gl-bottom-link mt-12 text-center">
-                <Link href="/activities">
-                  <a className="flex text-lg justify-center space-x-1 font-medium items-center text-red-600 hover:text-red-700">
-                    <span>View all in-person escape rooms</span>
-                    <span>
-                      <FiChevronRight />
-                    </span>
-                  </a>
-                </Link>
+                <PageLink
+                  link="/activities"
+                  label="View all in-person escape rooms"
+                />
               </div>
             </div>
             {/* =======inperson gallery========  end*/}
@@ -124,14 +136,7 @@ const gallery = (props) => {
 
               <MainGallery category="events" galleryitem={props.gallerylist} />
               <div className="gl-bottom-link mt-12 text-center">
-                <Link href="/events">
-                  <a className="flex text-lg justify-center space-x-1 font-medium items-center text-red-600 hover:text-red-700">
-                    <span>View all events and parties </span>
-                    <span>
-                      <FiChevronRight />
-                    </span>
-                  </a>
-                </Link>
+                <PageLink link="/events" label="View all events and parties" />
               </div>
             </div>
 
@@ -153,14 +158,10 @@ const gallery = (props) => {
 
               <MainGallery category="others" galleryitem={props.gallerylist} />
               <div className="gl-bottom-link mt-12 text-center">
-                <Link href="/activities#others-physical-games">
-                  <a className="flex text-lg justify-center space-x-1 font-medium items-center text-red-600 hover:text-red-700">
-                    <span>View all other in-person games</span>
-                    <span>
-                      <FiChevronRight />
-                    </span>
-                  </a>
-                </Link>
+                <PageLink
+                  link="/activities#others-physical-games"
+                  label="View all other in-person games"
+                />
               </div>
             </div>
 
@@ -168,10 +169,6 @@ const gallery = (props) => {
             {/* =======VIRTUAL GAMES========  */}
 
             {/* =======VIRTUAL GAMES========  end*/}
-          </div>
-
-          <div className="w-full absolute bottom-0 left-0 ">
-            <img className="w-full" src="/assets/game-home-or2.jpg"></img>{" "}
           </div>
         </div>
 

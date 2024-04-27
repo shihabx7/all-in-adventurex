@@ -157,6 +157,21 @@ const albanyRed = [
 // =========================================-------------buffalo-ny NY
 const buffaloRed = [
   {
+    source: "/locations/buffalo-ny",
+    destination: "/",
+    permanent: prm,
+  },
+  {
+    source: "/buffalo-ny/activities",
+    destination: "/activities",
+    permanent: prm,
+  },
+  {
+    source: "/buffalo-ny/events",
+    destination: "/events",
+    permanent: prm,
+  },
+  {
     source: "/locations/buffalo-ny/events",
     destination: "/buffalo-ny/events",
     permanent: prm,

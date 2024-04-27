@@ -44,17 +44,21 @@ const NewLoactionDetails = (props) => {
   };
 
   return (
-    <div
-      className="location-details relative"
-      style={{
-        backgroundImage:
-          "linear-gradient(65deg, rgba(255, 249, 235, 0.1), rgba(255, 249, 235, 0.2)), url('/assets/game-dt-bg.jpg')",
-      }}
-    >
-      <div className=" w-full absolute bottom-0 left-0">
-        <img className="w-full" src="/assets/game-home-or2.jpg"></img>
+    <div className="location-details relative bg-center bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px]">
+      {/*======================= boder img============== */}
+
+      <div className="sec-divider-bottom w-full absolute bottom-0 left-0">
+        <img
+          className="w-full hidden md:block"
+          src="/assets/svg/pattern/Light-Brown-Color-BG-Bottom.svg"
+        ></img>
+        <img
+          className="w-full  md:hidden"
+          src="/assets/svg/pattern/light-brown-color-bg-mobile.svg"
+        ></img>
       </div>
-      <div className="max-w-[1000px] mx-auto pb-28 relative z-30 px-4">
+      {/*======================= boder img end============== */}
+      <div className="max-w-[1000px] mx-auto pb-16 md:pb-24 lg:pb-28 relative z-30 px-4">
         <div className="section-title max-w-[800px] mx-auto">
           <TitleSeparator
             title={
