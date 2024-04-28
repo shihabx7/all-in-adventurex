@@ -289,9 +289,9 @@ export const getLocationHomepageData = (locationslug) => {
       {
         id: 8,
         star: 5,
-        title: "10/10 RECOMMENDED!",
+        title: "EVERYONE LOVED IT",
         review_text:
-          "As the bride to be, this was the perfect start to my bachelorette party! Staffs were amazing at getting us started and celebrating our win with us! 10/10 absolutely recommended!",
+          "We had a blast at All In Adventures! Escaping with my 10 cousins, ages 6 to 13, was unforgettable. Everyone loved it! Can't wait to go back for more fun!",
         author: "Brittany W.",
         author_location: "Roanoke, VA, United States",
         rev_img:
@@ -301,9 +301,9 @@ export const getLocationHomepageData = (locationslug) => {
       {
         id: 9,
         star: 5,
-        title: "GREAT FAMILY ACTIVITY!",
+        title: "HIGHLY RECOMMENDED!",
         review_text:
-          "We had a great time at All In Adventures! The Super Hero escape room was such a great family activity. Our group ranged from 6 years old to 42 and everyone had a blast!",
+          "A few days back, we organized a girls' night out at All In Adventures. We played “Escape From Alcatraz” there, and it was really thrilling! The puzzles were challenging from start to finish, and the staff was fantastic. Highly Recommended!",
         author: "Gabriela Y.",
         author_location: "Rockaway, NJ, United States",
         rev_img:
@@ -313,10 +313,10 @@ export const getLocationHomepageData = (locationslug) => {
       {
         id: 10,
         star: 5,
-        title: "TEAM BUILDING EVENT!",
+        title: "Planning our next visit!",
         review_text:
-          "It was so much fun! I brought my real estate team for a team building event and it was 9 of us. We did the Black Ops escape room and needed clues but we enjoyed it a lot. Would do it again.",
-        author: "India H.",
+          "All In Adventures made our reunion electrifying! Solving puzzles with old pals brought back memories and created new ones. A perfect blend of nostalgia and thrill! We're already planning our next visit!",
+        author: "Sandra J.",
         author_location: "Bowie, MD, United States",
         rev_img:
           "/assets/all-testimonials-image/allinadventures-escape-room-testimonials-business-lady-with-team.jpg",
