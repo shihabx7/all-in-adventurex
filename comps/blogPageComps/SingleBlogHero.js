@@ -1,4 +1,5 @@
 import LocationBtn from "../util/LocationBtn";
+import Image from "next/image";
 import {
   FacebookShareButton,
   TwitterShareButton,
@@ -6,6 +7,46 @@ import {
 } from "react-share";
 import { FacebookIcon, TwitterIcon, EmailIcon } from "react-share";
 import { useState, useCallback, useEffect } from "react";
+
+const getFbHashTags = (hashTags) => {
+  let tempTag = hashTags.trim();
+  let tagsArr = hashTags.trim().split(",");
+
+  if (tagsArr.length > 0) {
+    tempTag = tagsArr[0];
+  }
+  tempTag = tempTag.trim().split(" ").join("_").replace("#", "");
+
+  return "#" + tempTag;
+};
+const getTwHashTags = (hashTags) => {
+  let twTags = hashTags.trim();
+  let tempTagsArr = [
+    "Escape_room",
+    "Escape_games",
+    "Escape_room_blog",
+    "Allinadventures_escape_room",
+  ];
+
+  let tagsArr = twTags.split(",");
+
+  if (tagsArr.length > 0) {
+    for (let i = 0; i < tagsArr.length; i++) {
+      if (i < 4) {
+        tempTagsArr[i] = tagsArr[i].replace("#", "").split(" ").join("_");
+      }
+    }
+  }
+
+  return tempTagsArr;
+};
+const getSocialDesc = (desc) => {
+  let des = desc;
+  if (des.length > 60) {
+    des = des.substring(0, 57).trim();
+  }
+  des = des + "...";
+};
 const SingleBlogHero = (props) => {
   const [scrollY, setScrollY] = useState(0);
   const onScroll = useCallback((event) => {
@@ -14,14 +55,16 @@ const SingleBlogHero = (props) => {
     const wW = screen.width;
     //const heroHeight=document.querySelector('.single-blog-hero').offsetHeight
     // const contentHeight=document.querySelector('.sbl-desc').offsetHeight
-    const heroHeight = document.getElementById("sblh").offsetHeight;
-    const contentHeight = document.getElementById("sbld").offsetHeight;
+    const heroHeight = document.getElementById("single-blog-hero").offsetHeight;
+    const contentHeight = document.getElementById(
+      "single-blog-content"
+    ).offsetHeight;
     const relatedHeight = document.getElementById("related-blog").offsetHeight;
     const totalHeigth = headerHeight + heroHeight + contentHeight;
     const desktopShare = document.getElementById("dsk-share");
     const { pageYOffset, scrollY } = window;
 
-    console.log(wW);
+    //console.log(wW);
     if (wW > 1000) {
       if (scrollY > totalHeigth) {
         desktopShare.classList.remove("md:block");
@@ -48,8 +91,8 @@ const SingleBlogHero = (props) => {
 
   return (
     <div
-      id="sblh"
-      className="single-blog-hero bg-[#111111]"
+      id="single-blog-hero"
+      className="single-blog-hero"
       style={{
         background:
           "linear-gradient(0deg, rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url('/assets/blogs/single-blog-bg.png')",
@@ -67,9 +110,21 @@ const SingleBlogHero = (props) => {
               <div className="share-item-desk">
                 <FacebookShareButton
                   url={"https://allinadventures.com" + props.pagedata.shareurl}
-                  quote={props.pagedata.pagetitle}
-                  hashtag={"#All_in_adventures_escape_room"}
-                  description={props.pagedata.description}
+                  quote={
+                    props.facebookMeta.title
+                      ? props.facebookMeta.title
+                      : props.pagedata.pagetitle
+                  }
+                  hashtag={
+                    props.facebookMeta.hashTags
+                      ? getFbHashTags(props.facebookMeta.hashTags)
+                      : "#All_in_adventures_escape_room"
+                  }
+                  description={
+                    props.facebookMeta.description
+                      ? props.facebookMeta.description
+                      : getSocialDesc(props.pagedata.description)
+                  }
                   className="Demo__some-network__share-button"
                 >
                   <FacebookIcon size={32} />
@@ -77,16 +132,24 @@ const SingleBlogHero = (props) => {
               </div>
               <div className="share-item-desk mb-[4px] mt-[2px]">
                 <TwitterShareButton
-                  title={props.pagedata.pagetitle}
-                  via={"All in adventures"}
+                  title={
+                    props.twitterMeta.title
+                      ? props.twitterMeta.title
+                      : props.pagedata.pagetitle
+                  }
+                  via={"AllinAdventures"}
                   url={"https://allinadventures.com" + props.pagedata.shareurl}
-                  hashtags={[
-                    "Escape_room",
-                    "Escape_room_games",
-                    "Escape_room_blog",
-                    "All_in_adventures_escape_room",
-                  ]}
-                  related={["AllinAdventure"]}
+                  hashtags={
+                    props.twitterMeta.hashTags
+                      ? getTwHashTags(props.twitterMeta.hashTags)
+                      : [
+                          "Escape_room",
+                          "Escape_room_games",
+                          "Escape_room_blog",
+                          "All_in_adventures_escape_room",
+                        ]
+                  }
+                  related={["AllinAdventures"]}
                 >
                   <TwitterIcon size={32} />
                 </TwitterShareButton>
@@ -123,12 +186,15 @@ const SingleBlogHero = (props) => {
 
             <div
               id="sbl-ftimg"
-              className="sbl-ft-img-box  mx-auto pt-2 md:pt-4"
+              className="sbl-ft-img-box  mx-auto pt-2 md:pt-4 mb-[-38%] md:mb-[-33%] lg:mb-[-27%] xl:mb-[-24%] "
             >
-              <img
-                className="blog-ft-shadow sbl-ft-img mb-[-38%] md:mb-[-35%] mx-auto "
+              <Image
+                className="blog-ft-shadow sbl-ft-img  mx-auto"
                 src={props.pagedata.ftimg}
-              ></img>
+                alt={props.pagedata.ftimgAlt}
+                width={props.pagedata.ftimgWidth}
+                height={props.pagedata.ftimgHeight}
+              />
             </div>
           </div>
         </div>

@@ -1,15 +1,14 @@
-import Homenav from "../../comps/Homenav";
-import Footer from "../../comps/Footer";
+import getBlogCategorySlugs from "../../api/blog/getBlogCategorySlugs";
+import { getBlogCategoryData } from "../../api/blog/getBlogCategoryData";
+import Homenav from "../../../comps/Homenav";
+import Footer from "../../../comps/Footer";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
-import BlogPostSeo from "../../comps/blogPageComps/BlogPostSeo";
-import { getBlogHomePageData } from "../api/blog/getBlogHomePageData";
-import BlogGnHero from "../../comps/blogPageComps/BlogGnHero";
-import BlogCat from "../../comps/blogPageComps/BlogCat";
 
-import RecentBlogs from "../../comps/blogPageComps/RecentBlogs";
-import PopularBlogs from "../../comps/blogPageComps/PopularBlogs";
-import AllBlogs from "../../comps/blogPageComps/AllBlogs";
+import BlogGnHero from "../../../comps/blogPageComps/BlogGnHero";
+import BlogCat from "../../../comps/blogPageComps/BlogCat";
+import BlogPostSeo from "../../../comps/blogPageComps/BlogPostSeo";
+import AllCatBlogs from "../../../comps/blogPageComps/AllCatBlogs";
 const toTitleCase = (title) => {
   const titlefres = title.replace(/-/g, " ");
   const btitle = titlefres
@@ -30,7 +29,7 @@ const toTitleCase = (title) => {
 };
 /* customizing breadcum */
 
-const Blogs = (props) => {
+const BlogCateory = (props) => {
   return (
     <>
       {/* =======header content======== */}
@@ -69,10 +68,14 @@ const Blogs = (props) => {
       </div>
       <div className="blog-content bg-[#FFFCEB]">
         <div className="blog-container max-w-[1170px] mx-auto px-4 pt-4 md:pt-8">
-          <BlogCat blogcat={props.blogcat} />
-          <RecentBlogs blogdata={props.recentblogs} />
-          <PopularBlogs blogdata={props.popularblogs} />
-          <AllBlogs blogdata={props.allblogs} />
+          <BlogCat blogcat={props.blogcat} categorySlug={props.categorySlug} />
+
+          <AllCatBlogs
+            blogdata={props.allblogs}
+            categorySlug={props.categorySlug}
+            categoryName={props.categoryName}
+            ismoreblog={props.ismoreblog}
+          />
         </div>
       </div>
 
@@ -83,25 +86,39 @@ const Blogs = (props) => {
     </>
   );
 };
+export default BlogCateory;
 
-export default Blogs;
+export const getStaticPaths = async () => {
+  const res = await getBlogCategorySlugs();
 
-export const getStaticProps = async () => {
-  const bPageData = await getBlogHomePageData();
+  const paths = res.map((blogCategorySlug) => {
+    return {
+      params: { categorySlug: blogCategorySlug.slug },
+    };
+  });
 
-  // console.log(bPageData);
+  return {
+    paths,
+    fallback: false,
+  };
+};
+export const getStaticProps = async (context) => {
+  const blogCategoryData = await getBlogCategoryData(
+    context.params.categorySlug
+  );
 
   return {
     props: {
-      pagedata: bPageData.pagedata,
-      pagemeta: bPageData.pagemeta,
-      locationlist: bPageData.locationlist,
-      activitylist: bPageData.activitylistSlug,
-      eventlist: bPageData.eventlistSlug,
-      recentblogs: bPageData.recentblogs,
-      popularblogs: bPageData.popularblogs,
-      allblogs: bPageData.allblogs,
-      blogcat: bPageData.blogcat,
+      pagedata: blogCategoryData.pagedata,
+      pagemeta: blogCategoryData.pagemeta,
+      locationlist: blogCategoryData.locationlist,
+      activitylist: blogCategoryData.activitylistSlug,
+      eventlist: blogCategoryData.eventlistSlug,
+      categorySlug: blogCategoryData.categorySlug,
+      categoryName: blogCategoryData.categoryName,
+      allblogs: blogCategoryData.allblogs,
+      ismoreblog: blogCategoryData.ismoreblog,
+      blogcat: blogCategoryData.blogcat,
     },
     revalidate: 30,
   };

@@ -1,16 +1,13 @@
+// import data
+import getBlogSlugs from "../api/blog/getBlogSlugs";
+import { getSingleBlogData } from "../api/blog/getSingleBlogData";
+// import header footer component
+
 import Homenav from "../../comps/Homenav";
 import Footer from "../../comps/Footer";
-import Breadcrumbs from "nextjs-breadcrumbs";
-import { FiChevronRight } from "react-icons/fi";
 
-import Seofields from "../../comps/util/SeoFields";
-
-//import { getBlogSlug } from "../api/blog/getBlogSlug";
-import {
-  getSingleBlogData,
-  getAllBlogSlug,
-  getRelatedBlogs,
-} from "../api/blog/getSingleBlogData";
+import BlogBreadCrumbs from "../../comps/blogPageComps/BlogBreadCrumbs";
+import BlogPostSeo from "../../comps/blogPageComps/BlogPostSeo";
 import SingleBlogHero from "../../comps/blogPageComps/SingleBlogHero";
 import BlogInfo from "../../comps/blogPageComps/BlogInfo";
 import SingleBlogContent from "../../comps/blogPageComps/SingleBlogContent";
@@ -29,40 +26,17 @@ const SingleBlog = (props) => {
     setBlpadding(pt);
   }, []);
 
-  const toTitleCase = (title) => {
-    const titlefres = title.replace(/-/g, " ");
-    const btitle = titlefres
-      .split(" ")
-      .map((word) => {
-        return word.charAt(0).toUpperCase() + word.slice(1);
-      })
-      .join(" "); // breadcum title capitalize
-    var bret = btitle;
-    if (bret.length > 15) {
-      bret = bret.substring(0, 20).trim() + "...";
-    }
-    return (
-      <div className="bitem flex items-center">
-        <span>{bret}</span>{" "}
-        <span className="bsep text-gold">
-          <FiChevronRight />
-        </span>
-      </div>
-    );
-  };
-  /* customizing breadcum */
-
   return (
     <>
       {/* =======header content======== */}
-      <Seofields meta={props.pagemeta} />
+      <BlogPostSeo meta={props.pagemeta} />
       <Homenav
         locationlist={props.locationlist}
         activitylist={props.activitylist}
         eventlist={props.eventlist}
       />
       {/* =======header content ======== end */}
-      {/*console.log(props.relblog)*/}
+
       {/* =========================================================================================main content ======== end */}
       <div
         id="mainContent"
@@ -70,22 +44,15 @@ const SingleBlog = (props) => {
         style={{ backgroundImage: "url('/assets/game-dt-bg.jpg')" }}
       >
         {/* =======breadcum content and breadcum========  */}
-        <div className="breadcums  py-1 md:py-2 bg-[#fffceb]">
-          <Breadcrumbs
-            replaceCharacterList={[{ from: "-", to: " " }]}
-            listClassName="max-w-7xl mx-auto px-2 md:px-4 breadcum-list text-sm md:text-base lg:text-lg"
-            inactiveItemClassName="inline-block text-[#6a6a6a] hover:text-red-700"
-            activeItemClassName="inline-block text-[#212121]"
-            rootLabel="home"
-            transformLabel={(title) => {
-              return toTitleCase(title);
-            }}
-          ></Breadcrumbs>
-        </div>
+        <BlogBreadCrumbs />
 
         {/* =======breadcum content and breadcum root page template======== end */}
 
-        <SingleBlogHero pagedata={props.pagedata} />
+        <SingleBlogHero
+          pagedata={props.pagedata}
+          facebookMeta={props.pagemeta.facebookMeta}
+          twitterMeta={props.pagemeta.twitterMeta}
+        />
 
         {/* =========================================================================================main content ======== end */}
       </div>
@@ -110,7 +77,11 @@ const SingleBlog = (props) => {
         </div>
       </div>
       {/*===========================related blog area===================*/}
-      <RelatedBlogs relatedblogdata={props.relatedblogdata} />
+      {props.relatedblogdata && (
+        <>
+          <RelatedBlogs relatedblogdata={props.relatedblogdata} />
+        </>
+      )}
 
       <Footer
         locationlist={props.locationlist}
@@ -123,11 +94,11 @@ const SingleBlog = (props) => {
 export default SingleBlog;
 
 export const getStaticPaths = async () => {
-  const res = await getAllBlogSlug();
+  const res = await getBlogSlugs();
 
   const paths = res.map((blogslug) => {
     return {
-      params: { blogSlug: blogslug.slug.toString() },
+      params: { blogSlug: blogslug.slug },
     };
   });
 
@@ -139,7 +110,6 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const singleBlogData = await getSingleBlogData(context.params.blogSlug);
-  const bl = await getRelatedBlogs(context.params.blogSlug);
 
   return {
     props: {
@@ -147,11 +117,10 @@ export const getStaticProps = async (context) => {
       pagedata: singleBlogData.pagedata,
       bloginfo: singleBlogData.bloginfo,
       blogdesc: singleBlogData.blogdesc,
-      relatedblogdata: bl,
+      relatedblogdata: singleBlogData.relatedblogdata,
       locationlist: singleBlogData.locationlist,
       activitylist: singleBlogData.activitylistSlug,
       eventlist: singleBlogData.eventlistSlug,
-      relblog: bl,
     },
     revalidate: 30,
   };

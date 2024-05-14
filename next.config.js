@@ -2632,4 +2632,7 @@ module.exports = {
   },
 
   presets: ["next/babel"],
+  images: {
+    domains: ["cdn.allinadventures.com"],
+  },
 };

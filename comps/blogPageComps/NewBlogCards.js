@@ -1,4 +1,5 @@
-const BlogCards = (props) => {
+import Image from "next/image";
+const NewBlogCards = (props) => {
   const getBlogExp = (txt) => {
     var ret = txt;
     if (ret.length > 140) {
@@ -15,7 +16,12 @@ const BlogCards = (props) => {
             <div className="bl-card-head">
               <div className="bl-ft-img">
                 <a className="block w-full" href={"/blog/" + blogitem.slug}>
-                  <img className="w-full" src={blogitem.ftimg}></img>
+                  <Image
+                    src={blogitem.ftimg}
+                    alt={blogitem.ftimgAlt}
+                    width={blogitem.ftimgWidth}
+                    height={blogitem.ftimgHeight}
+                  />
                 </a>
               </div>
               <div className="bl-auth flex items-center px-3 md:px-4 lg:px-6 pt-3 pb-1 text-[#818181] text-[12px] md:text-[14px] ">
@@ -38,7 +44,7 @@ const BlogCards = (props) => {
                       <div key={index} className=" flex items-center">
                         <a
                           className="text-[#CA9342] font-medium text-[14px] md:text-[16px]"
-                          href={"/blog/category/?category=" + cat.slug}
+                          href={"/blog/category/" + cat.slug}
                         >
                           {cat.name}
                         </a>
@@ -51,23 +57,22 @@ const BlogCards = (props) => {
                 </div>
                 <div className="bl-title mb-2">
                   <a href={"/blog/" + blogitem.slug} className="text-[#4E4D4B]">
-                    <h2 className="text-[20px] md:text-[24px] font-medium font-os capitalize">
+                    <h2 className="text-[22px] md:text-[28px] leading-[1.3] font-medium font-os capitalize">
                       {blogitem.title}
                     </h2>
                   </a>
                 </div>
-                <div className="bl-exp">
-                  <p className="lg:text-lg text-[#4E4E4E]">
-                    {getBlogExp(blogitem.blogdesc)}
-                  </p>
-                </div>
+                <div
+                  className="bl-exp lg:text-lg text-[#4E4E4E]"
+                  dangerouslySetInnerHTML={{ __html: blogitem.blogdesc }}
+                ></div>
               </div>
               <div className="bl-read-btn">
                 <a
                   href={"/blog/" + blogitem.slug}
                   className="inline-block px-8 py-2 bg-red-600 hover:bg-red-700 rounded-full text-white md:text-lg"
                 >
-                  Continue Reading{" "}
+                  Continue Reading
                 </a>
               </div>
             </div>
@@ -78,4 +83,4 @@ const BlogCards = (props) => {
   );
 };
 
-export default BlogCards;
+export default NewBlogCards;

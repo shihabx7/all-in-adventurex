@@ -1080,7 +1080,7 @@ const LocActivityData = {
         age: "6-99",
         min_player: "1",
         max_player: "1",
-        price: "2",
+        price: "5",
         duration: "2",
         activity_desc:
           "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet. ",
@@ -1399,7 +1399,7 @@ const LocActivityData = {
         age: "6-99",
         min_player: 1,
         max_player: 1,
-        price: 2,
+        price: 5,
         duration: 2,
         activity_desc:
           "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet. ",
@@ -1888,7 +1888,7 @@ const LocActivityData = {
         age: "6-99",
         min_player: 1,
         max_player: 1,
-        price: 2,
+        price: 5,
         duration: 2,
         activity_desc:
           "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet. ",
@@ -6102,7 +6102,7 @@ const LocActivityData = {
         age: "6-99",
         min_player: 1,
         max_player: 1,
-        price: 2,
+        price: 5,
         duration: 2,
         activity_desc:
           "It's a 2 minute fun filled, exhilarating experience where you will test your endurance, coordination and ability to think on your feet. ",

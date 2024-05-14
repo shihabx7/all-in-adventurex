@@ -8,9 +8,9 @@ const SingleBlogContent = (props) => {
   return (
     <div>
       <div
-        id="sbld"
-        className="sbl-desc"
-        dangerouslySetInnerHTML={{ __html: props.blogdesc.join("") }}
+        id="single-blog-content"
+        className="sbl-desc sbl-block"
+        dangerouslySetInnerHTML={{ __html: props.blogdesc }}
       ></div>
       {/* =============================share btn=========================================== */}
       <div className="blog-share-btn-cont md:hidden">

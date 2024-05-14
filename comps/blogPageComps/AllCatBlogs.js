@@ -1,65 +1,93 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FiChevronUp, FiChevronDown } from "react-icons/fi";
-import BlogCards from "./BlogCards";
+import NewBlogCards from "./NewBlogCards";
 
 const AllCatBlogs = (props) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [blogData, setBlogData] = useState([]);
-  const [success, setsuccess] = useState(0);
+  const [isLoading, setisLoading] = useState(false);
+  const [catId, setCatId] = useState(props.catid);
+  const [isLoadMore, setIsLoadMore] = useState(true);
 
   const fetchData = async () => {
     let url =
-      "/api/blog/getOldCatBlogs/?id=" +
+      "/api/blog/getPrevCatBlogs/?pageId=" +
       currentPage +
-      "&category=" +
-      props.blogcat;
+      "&categorySlug=" +
+      props.categorySlug;
     const req = await fetch(url, { method: "GET" });
     const newBlogs = await req.json();
+    //console.log(newBlogs);
 
-    if (!newBlogs.success || newBlogs.blogs.length < 1) {
-      return setsuccess(1);
+    if (!newBlogs.success) {
+      setIsLoadMore(false);
+
+      return false;
     }
-    setsuccess(2);
-    let contactedata = blogData.concat(newBlogs.blogs);
-    return setBlogData(contactedata);
-  };
-  const showMore = (event) => {
-    event.preventDefault();
-    fetchData();
-    setCurrentPage(currentPage + 1);
-    setsuccess(0);
+    if (newBlogs.success && !newBlogs.loadmore) {
+      let contactedBlog = blogData.concat(newBlogs.blogs);
+      setBlogData(contactedBlog);
+      setIsLoadMore(false);
 
-    console.log(blogData);
+      return false;
+    } else {
+      let contactedBlog = blogData.concat(newBlogs.blogs);
+      setBlogData(contactedBlog);
+
+      setIsLoadMore(true);
+      return true;
+    }
+  };
+  const showMore = async (event) => {
+    event.preventDefault();
+    setisLoading(true);
+    const moreblogs = await fetchData();
+    if (moreblogs) {
+      setCurrentPage(currentPage + 1);
+    }
+    setisLoading(false);
+    //console.log(blogData);
   };
 
   return (
     <div className="bl-arc-row pb-16">
       <div className="blog-cat-title">
-        <h3 className="font-medium font-os text-xl md:text-2xl xl:text-3xl text-[#232323] uppercase">
-          {props.catname}
+        <h3 className="font-medium font-os text-xl md:text-2xl xl:text-3xl text-[#38290A] uppercase">
+          {props.categoryName}
         </h3>
       </div>
       <div className="all-bl-card-box mt-4 grid sm:grid-cols-2 gap-y-4 gap-x-0 sm:gap-4 md:gap-6 lg:gap-10">
-        {props.blogdata.length > 0 && (
+        {props.blogdata.length > 0 ? (
           <>
-            <BlogCards blogdata={props.blogdata} />
+            <NewBlogCards blogdata={props.blogdata} />
           </>
+        ) : (
+          "NO BLOG POST FOUND"
         )}
-        {props.blogdata.length == 0 && (
+        {blogData.length > 0 && (
           <>
-            <p className="text-2xl font-medium py-10">No Blog Found</p>
+            <NewBlogCards blogdata={blogData} />
           </>
         )}
       </div>
 
-      {success != 1 && props.blogdata.length > 8 && (
-        <div className="show-more-blog flex justify-center mt-8">
+      {isLoading && (
+        <div className="text-center text-xl font-medium my-6 md:my-8 lg:my-12 text-[#101010]">
+          Loading...
+        </div>
+      )}
+      {isLoadMore && props.blogdata.length > 3 && (
+        <div className="show-more-blog flex justify-center my-6 md:my-8 lg:my-12">
           <button
-            className="flex space-x-1 text-red-600 hover:text-700 font-medium text-lg lg:text-xl items-center"
+            className="flex space-x-1 text-red-600 hover:text-700 font-medium text-xl lg:text-xl items-center"
             onClick={showMore}
           >
-            Load more
-            <FiChevronDown />
+            {!isLoading && (
+              <>
+                Load more
+                <FiChevronDown />
+              </>
+            )}
           </button>
         </div>
       )}
