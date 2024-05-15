@@ -164,7 +164,7 @@ const PysicalCarousel = (props) => {
 
                 <div className="card-bottom px-2 md:px-3 lg:px-4 xl:px-3 3xl:px-2 4xl:px-4 pb-6 pt-12">
                   <div className="card-game text-center mb-6">
-                    <h3 className="card-game-title text-[22px] rm:text-[25px] sm:text-2xl lg:text-3xl xl:text-[28px] 3xl:text-[27px] 4xl:text-3xl font-bold uppercase text-[#E0BF62]">
+                    <h3 className="card-game-title text-[22px] rm:text-[25px] sm:text-2xl lg:text-3xl xl:text-[28px] 3xl:text-[26px] 4xl:text-3xl font-bold uppercase text-[#E0BF62]">
                       {othergame.title}
                     </h3>
                     <p className="text-gray-200 text-[13px] rm:text-[15px] lg:text-[16px] 3xl:text-[15px] 4xl:text-[17px]">

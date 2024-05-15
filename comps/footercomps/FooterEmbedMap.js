@@ -5,7 +5,7 @@ const FooterEmbedMap = () => {
       <div className="mt-[-60px]">
         <div className="w-full h-[520px] md:h-[640px] lg:h-[720px]">
           <iframe
-            src="https://www.google.com/maps/d/embed?mid=1XniDBpW7F60KkSK_e7i7VhyDf8AzfjY&ehbc=2E312F"
+            src="https://www.google.com/maps/d/embed?mid=1XniDBpW7F60KkSK_e7i7VhyDf8AzfjY&hl=en&ehbc=2E312F"
             width="100%"
             height="100% "
           ></iframe>
