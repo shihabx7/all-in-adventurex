@@ -11,11 +11,11 @@ const gnRed = [
     destination: "/activities/locked-in-the-lift",
     permanent: prm,
   },
-  {
-    source: "/activities/game-show-room",
-    destination: "/activities",
+  /* {
+  source: "/activities/game-show-room",
+ destination: "/activities",
     permanent: prm,
-  },
+  },*/
 
   {
     source: "/activities/magic-castle",
