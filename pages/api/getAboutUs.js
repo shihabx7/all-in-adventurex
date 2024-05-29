@@ -85,9 +85,9 @@ export const getAboutUs = async () => {
             },*/
       {
         id: 10,
-        name: "Adam Spink",
+        name: "Erin Halseyl",
         designation: "Regional Manager",
-        img: "/assets/team-member/Adam-Spink.png",
+        img: "/assets/team-member/Erin-Halseyl.png",
       },
     ],
   };

@@ -45,7 +45,7 @@ export default async function volunteerContactHandler(req, res) {
     const mailOptions = {
       from: '"AIA Volunteer Contact" <sender@allinadventures.com>', // sender address
       to:
-        "jordan@allinadventures.com,adam@allinadventures.com," +
+        "jordan@allinadventures.com,erin@allinadventures.com," +
         retData.StoreEmail +
         "," +
         retData.ManagerEmail,
@@ -55,7 +55,7 @@ export default async function volunteerContactHandler(req, res) {
       //  "," +
       // retData.ManagerEmail,
       // list of receivers
-      bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
+      bcc: "dgency.com@gmail.com",
       // bcc: "shihab.dgency@gmail.com",
       replyTo: retData.Email,
       subject: `Volunteer Contact`,

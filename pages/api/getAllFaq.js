@@ -624,58 +624,6 @@ export const getAllFaq = () => {
         ans: ["Physical gift cards can be provided at our Location."],
       },
       // =========== reward programm
-
-      {
-        id: 61,
-        category: "rewards",
-        group: "REWARDS_PROGRAM",
-        ques: "Can I join online?",
-        ans: [
-          'Yes, you can! Just visit the Rewards Program page and go to <a href="/rewards-program#ready-to-signup" class="text-red-600 hover:text-red-700">READY TO SIGN UP</a> section',
-          "then click on CHOOSE YOUR LOCATION, and you'll be redirected to fivestars.com site for your selected All In Adventures location.",
-        ],
-      },
-      {
-        id: 62,
-        category: "rewards",
-        group: "REWARDS_PROGRAM",
-        ques: "How old do you have to be to join?",
-        ans: ["There is no age limit to join."],
-      },
-      {
-        id: 63,
-        category: "rewards",
-        group: "REWARDS_PROGRAM",
-        ques: "What if I already purchased an Adventure Club Passport?",
-        ans: [
-          "You can bring your physical passport into the store and exchange it to be added into the new program as a VIP member for NO additional cost.",
-        ],
-      },
-      {
-        id: 64,
-        category: "rewards",
-        group: "REWARDS_PROGRAM",
-        ques: "What happens to the stamps I have already collected?",
-        ans: [
-          "All unused stamps will be converted at a rate of 50 points per stamp.",
-        ],
-      },
-      {
-        id: 65,
-        category: "rewards",
-        group: "REWARDS_PROGRAM",
-        ques: "Will I continue to receive $5 off every visit?",
-        ans: [
-          "The new program does not include this benefit going forward. However, the new program allows you to accumulate points at a much faster rate which you can use to redeem free admissions much quicker.",
-        ],
-      },
-      {
-        id: 66,
-        category: "rewards",
-        group: "REWARDS_PROGRAM",
-        ques: "Can I redeem points online?",
-        ans: ["You will have to redeem all points physically in the store."],
-      },
     ],
   };
 

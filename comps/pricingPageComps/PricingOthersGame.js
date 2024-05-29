@@ -46,11 +46,11 @@ const PricingOthersGame = () => {
                 <td className="border border-[#D2C6AA] w-[40%] md:w-[40%]  p-2 md:p-4">
                   <ul className="text-xs md:text-lg">
                     <li className="text-[#222222] font-light mt-1">
-                      <span className="font-semibold">$2</span> / Single Player
+                      <span className="font-semibold">$5</span> / Single Player
                       / 2 Minutes
                     </li>
                     <li className="text-[#222222] font-light mt-1">
-                      <span className="font-semibold">$8</span> / Multi-Play
+                      <span className="font-semibold">$20</span> / Multi-Play
                       Pack / 5 Plays
                     </li>
                   </ul>
