@@ -31,15 +31,6 @@ export const getDealsCouponPageData = () => {
 
     faqlist: [
       {
-        id: 1,
-        category: "deals",
-        group: "deals",
-        ques: "How can I get a discount?",
-        ans: [
-          "Glad you asked! Our best offers come from our VIP Rewards Program where you will receive points each time you play that you can use to redeem free experiences and receive additional surprise offers every month! In addition, we offer many other discounts such as our Play It Again offer or our military or mall employee discounts.",
-        ],
-      },
-      {
         id: 2,
         category: "deals",
         group: "deals",
