@@ -16,11 +16,11 @@ const gnRed = [
     destination: "/deals-coupons",
     permanent: prm,
   },
-  /* {
-  source: "/activities/game-show-room",
- destination: "/activities",
+  {
+    source: "/west-nyack-ny/activities/axe-throwing",
+    destination: "/west-nyack-ny/activities",
     permanent: prm,
-  },*/
+  },
 
   {
     source: "/activities/magic-castle",

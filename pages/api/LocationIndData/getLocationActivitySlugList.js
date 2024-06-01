@@ -370,12 +370,12 @@ const datalist = {
       activity_name: "Sherlock's Library",
       activity_slug: "sherlocks-library",
     },
-    {
+    /*{
       id: 8,
       category: "other",
       activity_name: "Axe Throwing",
       activity_slug: "axe-throwing",
-    },
+    },*/
     {
       id: 6,
       category: "other",

@@ -1844,7 +1844,7 @@ const LocActivityData = {
         activity_cover_image:
           "/assets/all-game-list/superheros-adventure-all-in-adventures-escape-room.jpg",
       },
-      {
+      /* {
         id: 16,
         activity_name: "Axe Throwing Game",
         activity_type: "In person",
@@ -1860,8 +1860,8 @@ const LocActivityData = {
         activity_slug: "axe-throwing",
         activity_cover_image:
           "/assets/all-game-list/allinadventures-axe-throwing.jpg",
-      },
-      {
+      },*/
+      /* {
         id: 17,
         activity_name: "Axe Throwing Party",
         activity_type: "In person",
@@ -1878,7 +1878,7 @@ const LocActivityData = {
         activity_slug: "axe-throwing",
         activity_cover_image:
           "/assets/all-game-list/axe-throwing-party-booking.jpg",
-      },
+      },*/
 
       {
         id: 14,

@@ -2756,7 +2756,7 @@ const locPagedata = {
       },
     ],
     otherphysicalgames: [
-      {
+      /* {
         id: 1,
         category: "other",
         type: "In-Person",
@@ -2771,8 +2771,8 @@ const locPagedata = {
         price: "23.89",
         slug: "axe-throwing",
         bgimg: "/assets/all-game-slider-bg/allinadventures-axe-throwing.jpg",
-      },
-      {
+      },*/
+      /*  {
         id: 11,
         category: "other",
         type: "In-Person",
@@ -2789,7 +2789,7 @@ const locPagedata = {
         slug: "axe-throwing",
         bgimg:
           "/assets/all-game-slider-bg/allinadventures-axe-throwing-party.jpg",
-      },
+      },*/
       {
         id: 2,
         category: "other",
