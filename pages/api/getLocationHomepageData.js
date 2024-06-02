@@ -2605,7 +2605,7 @@ const locPagedata = {
       "/assets/all-location-mobile-hero/allinadventures-escape-room-west-nyack-ny-palisades-mall-hero.jpg",
     coverimageM_alt: "allinadventures-escape-room-west-nyack-ny-palisades-mall",
     pagesubtitle:
-      "All In Adventures West Nyack (formerly Mystery Room West Nyack), has kid and family friendly Escape Rooms, Axe Throwing, Beat the Seat and Game Show Room that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in West Nyack, NY.",
+      "All In Adventures West Nyack (formerly Mystery Room West Nyack), has kid and family friendly Escape Rooms, Beat the Seat and Game Show Room that are perfect for all ages and skill levels. We host the most exciting birthday parties, team building activities, and private events in West Nyack, NY.",
     pagemeta: {
       matatilte: "title",
       metakeyword: "keywords",

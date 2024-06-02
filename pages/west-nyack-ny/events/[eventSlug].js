@@ -54,32 +54,18 @@ const LocationSingleEvent = (props) => {
         />
         {props.pagedata.event_slug != "date-night" && (
           <>
-            {props.pagedata.bookingParty ? (
-              <BookYourEvent2
-                publish_status={props.pagedata.publish_status}
-                bookingall={
-                  props.pagedata.bookingall ? props.pagedata.bookingall : false
-                }
-                bookingParty={props.pagedata.bookingParty}
-                eventbooking={
-                  props.pagedata.eventbooking
-                    ? props.pagedata.eventbooking
-                    : false
-                }
-              />
-            ) : (
-              <BookYourEvent
-                publish_status={props.pagedata.publish_status}
-                bookingall={
-                  props.pagedata.bookingall ? props.pagedata.bookingall : false
-                }
-                eventbooking={
-                  props.pagedata.eventbooking
-                    ? props.pagedata.eventbooking
-                    : false
-                }
-              />
-            )}
+            <BookYourEvent
+              publish_status={props.pagedata.publish_status}
+              bookingall={
+                props.pagedata.bookingall ? props.pagedata.bookingall : false
+              }
+              eventbooking={
+                props.pagedata.eventbooking
+                  ? props.pagedata.eventbooking
+                  : false
+              }
+            />
+
             <EventContact
               contactdata={props.contactdata}
               eventname={props.pagedata.event_name}

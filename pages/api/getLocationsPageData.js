@@ -603,8 +603,7 @@ export const getLocationsPageData = () => {
               "Our customers come from many surrounding cities, including Montclair, Massapequa, White Plains, Morristown, Danbury and many more!",
             entry_guid:
               "Our store is located on the third floor three stores from bath and body works, the closest parking is located outside five star appliances. If you enter from five star appliances on the second floor come see us one floor up on level three across from five below.",
-            entry_guid2:
-              "Our Axe throwing store is also located on level three next to five below.",
+
             payment_options:
               "We have gone CASHLESS but accept Credit/Debit, PayPal, Venmo, Zelle, Cash App and in some locations Apple Pay and Samsung Pay.",
             slug: "west-nyack-ny",
