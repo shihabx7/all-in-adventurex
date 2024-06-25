@@ -122,7 +122,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "11 am",
-                close: "8 pm",
+                close: "5 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -353,7 +353,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "11 am",
-                close: "8 pm",
+                close: "5 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -469,7 +469,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "11 am",
-                close: "9 pm",
+                close: "5 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -585,7 +585,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "1 pm",
-                close: "8 pm",
+                close: "6 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -815,7 +815,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "11 am",
-                close: "8 pm",
+                close: "5 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -940,7 +940,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "12 pm",
-                close: "8 pm",
+                close: "6 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -1065,7 +1065,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "11 am",
-                close: "8 pm",
+                close: "6 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -1181,7 +1181,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "11 am",
-                close: "8 pm",
+                close: "5 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -1299,7 +1299,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "11 am",
-                close: "9 pm",
+                close: "5 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -1415,7 +1415,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "12 pm",
-                close: "9 pm",
+                close: "6 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -1540,8 +1540,8 @@ export const getLocationsPageData = () => {
               {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
-                open: "12 pm",
-                close: "8 pm",
+                open: "11 am",
+                close: "6 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -1657,7 +1657,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "12 pm",
-                close: "8 pm",
+                close: "6 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -1781,7 +1781,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "12 pm",
-                close: "8 pm",
+                close: "6 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -1906,7 +1906,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "12 pm",
-                close: "9 pm",
+                close: "7 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -2022,7 +2022,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "12 pm",
-                close: "8 pm",
+                close: "6 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -2146,7 +2146,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "2 pm",
-                close: "8 pm",
+                close: "6 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -2262,7 +2262,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "12 pm",
-                close: "8 pm",
+                close: "6 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -2379,7 +2379,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "12 pm",
-                close: "8 pm",
+                close: "6 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -2507,7 +2507,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "12 pm",
-                close: "8 pm",
+                close: "6 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -2632,7 +2632,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "10 am",
-                close: "8 pm",
+                close: "6 pm",
               },
               {
                 holiday_name: "Labor Day",
@@ -2759,7 +2759,7 @@ export const getLocationsPageData = () => {
                 holiday_name: "Independence Day",
                 date: "07/04/2024",
                 open: "11 am",
-                close: "8 pm",
+                close: "6 pm",
               },
               {
                 holiday_name: "Labor Day",
