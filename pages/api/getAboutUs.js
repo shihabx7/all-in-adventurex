@@ -59,18 +59,18 @@ export const getAboutUs = async () => {
         designation: "Director of Employee Development",
         img: "/assets/team-member/Beth-Palmer.png",
       },
-      {
+      /* {
         id: 6,
         name: "John Reshoft",
         designation: "Director of Construction and Facilities",
         img: "/assets/team-member/John-Reshoft.png",
       },
-      {
+ {
         id: 7,
         name: "Brian Capps",
         designation: "Director of Game Development",
         img: "/assets/team-member/Brian-Capps.png",
-      },
+      },*/
       {
         id: 8,
         name: "Jordan Pursell",
