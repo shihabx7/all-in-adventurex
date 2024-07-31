@@ -10,6 +10,7 @@ import EventContact from "../../../comps/eventPageComps/EventContact";
 
 import Seofields from "../../../comps/util/SeoFields";
 import BookYourEvent from "../../../comps/eventPageComps/BookYourEvent";
+import BookYourEvent3 from "../../../comps/eventPageComps/BookYourEvent3";
 import EventReview from "../../../comps/eventPageComps/EventReview";
 import EventRootReview from "../../../comps/eventPageComps/EventRootReview";
 const LocationSingleEvent = (props) => {
@@ -63,6 +64,21 @@ const LocationSingleEvent = (props) => {
                   ? props.pagedata.eventbooking
                   : false
               }
+              partyBooking1={{
+                shortName: "allinadventures-woodbridge",
+                flow: "663081",
+                item: "560035",
+              }}
+              partyBooking2={{
+                shortName: "allinadventures-woodbridge",
+                flow: "663081",
+                item: "560047",
+              }}
+              partyBooking3={{
+                shortName: "allinadventures-woodbridge",
+                flow: "663081",
+                item: "560041",
+              }}
             />
             <EventContact
               contactdata={props.contactdata}

@@ -10,6 +10,7 @@ import EventList from "../../../comps/activitiyPageComps/EventList";
 import EventContact from "../../../comps/eventPageComps/EventContact";
 import Seofields from "../../../comps/util/SeoFields";
 import BookYourEvent from "../../../comps/eventPageComps/BookYourEvent";
+import BookYourEvent3 from "../../../comps/eventPageComps/BookYourEvent3";
 
 const LocEventList = (props) => {
   const getLoc = (slug) => {
@@ -54,10 +55,25 @@ const LocEventList = (props) => {
           bookingall={props.pagedata.bookingall}
           locationslug={props.pagedata.locationslug}
         />
-        <BookYourEvent
+        <BookYourEvent3
           bookingall={props.pagedata.bookingall}
           eventbooking={props.pagedata.eventbooking}
           publish_status={props.pagedata.publish_status}
+          partyBooking1={{
+            shortName: "allinadventures-raleigh",
+            flow: "16807",
+            item: "559884",
+          }}
+          partyBooking2={{
+            shortName: "allinadventures-raleigh",
+            flow: "16807",
+            item: "559900",
+          }}
+          partyBooking3={{
+            shortName: "allinadventures-raleigh",
+            flow: "16807",
+            item: "559892",
+          }}
         />
 
         <EventContact

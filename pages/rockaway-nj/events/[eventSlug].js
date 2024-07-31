@@ -10,6 +10,7 @@ import EventContact from "../../../comps/eventPageComps/EventContact";
 import HomeReviewSlider from "../../../comps/homepagecomps/HomeReviewSlider";
 import Seofields from "../../../comps/util/SeoFields";
 import BookYourEvent from "../../../comps/eventPageComps/BookYourEvent";
+import BookYourEvent3 from "../../../comps/eventPageComps/BookYourEvent3";
 import EventReview from "../../../comps/eventPageComps/EventReview";
 import EventRootReview from "../../../comps/eventPageComps/EventRootReview";
 const LocationSingleEvent = (props) => {
@@ -53,7 +54,7 @@ const LocationSingleEvent = (props) => {
         />
         {props.pagedata.event_slug != "date-night" && (
           <>
-            <BookYourEvent
+            <BookYourEvent3
               publish_status={props.pagedata.publish_status}
               bookingall={
                 props.pagedata.bookingall ? props.pagedata.bookingall : false
@@ -63,6 +64,21 @@ const LocationSingleEvent = (props) => {
                   ? props.pagedata.eventbooking
                   : false
               }
+              partyBooking1={{
+                shortName: "mysteryroom-rockaway",
+                flow: "663016",
+                item: "559986",
+              }}
+              partyBooking2={{
+                shortName: "mysteryroom-rockaway",
+                flow: "560026",
+                item: "560026",
+              }}
+              partyBooking3={{
+                shortName: "mysteryroom-rockaway",
+                flow: "663016",
+                item: "559997",
+              }}
             />
             <EventContact
               contactdata={props.contactdata}
