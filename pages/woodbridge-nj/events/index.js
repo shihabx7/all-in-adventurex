@@ -57,21 +57,59 @@ const LocEventList = (props) => {
           publish_status={props.pagedata.publish_status}
           bookingall={props.pagedata.bookingall}
           eventbooking={props.pagedata.eventbooking}
-          partyBooking1={{
-            shortName: "allinadventures-woodbridge",
-            flow: "663081",
-            item: "560035",
-          }}
-          partyBooking2={{
-            shortName: "allinadventures-woodbridge",
-            flow: "663081",
-            item: "560047",
-          }}
-          partyBooking3={{
-            shortName: "allinadventures-woodbridge",
-            flow: "663081",
-            item: "560041",
-          }}
+          escapeGamePartyList={[
+            {
+              partyName: "Escape From Alcatraz",
+              slideText:
+                "Our Party Package offers an exciting Escape From Alcatraz escape room experience for up to 8 guests for one hour plus a two-hour rental of the party room. We'll provide basic supplies like plates, napkins, and utensils. Plus, you'll receive free digital All In Adventures birthday invitations that you can print.",
+
+              sliderImage: {
+                url: "/assets/events/all-in-adventures-book-your-event-option1.jpg",
+                alt: "book your adventure",
+                width: "800",
+                height: "460",
+              },
+              bookingData: {
+                shortName: "allinadventures-woodbridge",
+                flow: "663081",
+                item: "560035",
+              },
+            },
+            {
+              partyName: "Zombie Apocalypse",
+              slideText:
+                "Our Party Package offers an exciting Zombie Apocalypse escape room experience for up to 6 guests for one hour plus a two-hour rental of the party room. We'll provide basic supplies like plates, napkins, and utensils. Plus, you'll receive free digital All In Adventures birthday invitations that you can print.",
+
+              sliderImage: {
+                url: "/assets/events/all-in-adventures-book-your-event-option2.jpg",
+                alt: "book your adventure",
+                width: "800",
+                height: "460",
+              },
+              bookingData: {
+                shortName: "allinadventures-woodbridge",
+                flow: "663081",
+                item: "560047",
+              },
+            },
+            {
+              partyName: "Treasure Island",
+              slideText:
+                "Our Party Package offers an exciting Treasure Island escape room experience for up to 12 guests for one hour plus a two-hour rental of the party room. We'll provide basic supplies like plates, napkins, and utensils. Plus, you'll receive free digital All In Adventures birthday invitations that you can print.",
+
+              sliderImage: {
+                url: "/assets/events/all-in-adventures-book-your-event-option3.jpg",
+                alt: "book your adventure",
+                width: "800",
+                height: "460",
+              },
+              bookingData: {
+                shortName: "allinadventures-woodbridge",
+                flow: "663081",
+                item: "560041",
+              },
+            },
+          ]}
         />
 
         <EventContact

@@ -74,194 +74,56 @@ function BookYourEvent3(props) {
           {/*===========section Title end============= */}
           {/*===========section Content============= */}
           <div className="book-event mt-16 sec-content grid md:grid-cols-3 lg:grid-cols-3 gap-x-0 gap-y-16 md:gap-x-4 md:gap-y-16 lg:gap-x-6 lg:gap-y-0">
-            {/*===========box 1 ============= */}
-            <div className="book-event-box w-full">
-              <div className="bk-wrapper h-full bg-[#FBF2DC] border border-[#D2C6AA] relative">
-                <div className="bk-option absolute bottom-[100%] left-0">
-                  <span className="inline-block bg-[#D4B56A] px-3 py-1 text-[#111111] font-medium">
-                    Option 1
-                  </span>
-                </div>
-                <div className="bk-content h-full flex flex-col justify-between  ">
-                  <div className="bk-box ">
-                    <div className="bk-img">
-                      <Image
-                        className="w-full"
-                        src="/assets/events/all-in-adventures-book-your-event-option1.jpg"
-                        alt="Party and escape room booking"
-                        width={800}
-                        height={460}
-                      />
+            {props.escapeGamePartyList.map((party, index) => {
+              return (
+                <div className="book-event-box w-full" key={index}>
+                  <div className="bk-wrapper h-full bg-[#FBF2DC] border border-[#D2C6AA] relative">
+                    <div className="bk-option absolute bottom-[100%] left-0">
+                      <span className="inline-block bg-[#D4B56A] px-3 py-1 text-[#111111] font-medium">
+                        Option {index + 1}
+                      </span>
                     </div>
+                    <div className="bk-content h-full flex flex-col justify-between  ">
+                      <div className="bk-box ">
+                        <div className="bk-img">
+                          <Image
+                            className="w-full"
+                            src={party.sliderImage.url}
+                            alt="Party and escape room booking"
+                            width={party.sliderImage.width}
+                            height={party.sliderImage.height}
+                          />
+                        </div>
 
-                    <div className="bk-text mt-3 mb-6 px-3 md:px-2 xl:px-3">
-                      <h3 className="text-black text-2xl md:text-[20px] lg:text-[22px] xl:text-[24px] uppercase text-center font-bold">
-                        Escape From Alcatraz
-                        <br /> Party Package
-                      </h3>
-                      <p className="text-[#232323] text-[16px] md:text-[17px] xl:text-[18px] font-thin text-center mt-2">
-                        {!props.eventbooking.eventstatus && (
-                          <>
-                            Our Party Package offers an exciting Escape From
-                            Alcatraz escape room experience for up to 10 guests
-                            for one hour plus a two-hour rental of the party
-                            room. We'll provide basic supplies like plates,
-                            napkins, and utensils. Plus, you'll receive free
-                            digital All In Adventures birthday invitations that
-                            you can print.
-                          </>
-                        )}
-                        {props.eventbooking.eventstatus && (
-                          <>
-                            Our Party Package offers an exciting Escape From
-                            Alcatraz escape room experience for up to 10 guests
-                            for one hour plus a two-hour rental of the party
-                            room. We'll provide basic supplies like plates,
-                            napkins, and utensils. Plus, you'll receive free
-                            digital All In Adventures birthday invitations that
-                            you can print.
-                          </>
-                        )}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="bk-btn text-center pb-5 md:pb-8 px-3 md:px-3 xl:px-5">
-                    {!props.eventbooking.eventstatus && (
-                      <>
-                        <a
-                          href={
-                            "/" +
-                            props.eventbooking.locationslug +
-                            "/contact-store"
-                          }
-                          className="bg-red-600 hover:bg-red-700
-                   text-white text-center font-medium
-                    py-4  rounded-full mx-auto text-[16px] lg:text-[14px] xl:text-[16px] w-full block"
-                        >
-                          CONTACT US
-                        </a>
-                      </>
-                    )}
-                    {props.eventbooking.eventstatus && (
-                      <>
+                        <div className="bk-text mt-3 mb-6 px-3 md:px-2 xl:px-3">
+                          <h3 className="text-black text-2xl md:text-[20px] lg:text-[22px] xl:text-[24px] uppercase text-center font-bold">
+                            {party.partyName}
+                            <br /> Party Package
+                          </h3>
+                          <div
+                            dangerouslySetInnerHTML={{
+                              __html: party.slideText,
+                            }}
+                            className="text-[#232323] text-[16px] md:text-[17px] xl:text-[18px] font-thin text-center mt-2"
+                          ></div>
+                        </div>
+                      </div>
+                      <div className="bk-btn text-center pb-5 md:pb-8 px-3 md:px-3 xl:px-5">
                         <button
                           onClick={() => {
-                            bookEvent(props.partyBooking1);
+                            bookEvent(party.bookingData);
                           }}
-                          className="bg-red-600 hover:bg-red-700
-                   text-white text-center font-medium
-                    py-4  rounded-full mx-auto text-[16px] lg:text-[14px] xl:text-[16px] w-full"
+                          className="bg-red-600 hover:bg-red-700 text-white text-center font-medium
+        py-4  rounded-full mx-auto text-[16px] lg:text-[14px] xl:text-[16px] w-full"
                         >
                           BOOK NOW
                         </button>
-                      </>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/*===========box 1 end ============= */}
-            {/*===========box 2 ============= */}
-            <div className="book-event-box w-full">
-              <div className="bk-wrapper h-full  bg-[#FBF2DC] border border-[#D2C6AA] relative">
-                <div className="bk-option absolute bottom-[100%] left-0">
-                  <span className="inline-block bg-[#D4B56A] px-3 py-1 text-[#111111] font-medium">
-                    Option 2
-                  </span>
-                </div>
-                <div className="bk-content h-full flex flex-col justify-between  ">
-                  <div className="bk-box ">
-                    <div className="bk-img">
-                      <Image
-                        className="w-full"
-                        src="/assets/events/all-in-adventures-book-your-event-option2.jpg"
-                        alt="Escape room booking"
-                        width={800}
-                        height={460}
-                      />
-                    </div>
-
-                    <div className="bk-text mt-3 mb-6 px-3 md:px-2 xl:px-3">
-                      <h3 className="text-black text-2xl md:text-[20px] lg:text-[22px] xl:text-[24px] uppercase text-center font-bold">
-                        Zombie Apocalypse
-                        <br /> Party Package
-                      </h3>
-                      <p className="text-[#232323] text-[16px] md:text-[17px] xl:text-[18px] font-thin text-center mt-2">
-                        Our Party Package offers an exciting Zombie Apocalypse
-                        escape room experience for up to 10 guests for one hour
-                        plus a two-hour rental of the party room. We'll provide
-                        basic supplies like plates, napkins, and utensils. Plus,
-                        you'll receive free digital All In Adventures birthday
-                        invitations that you can print.
-                      </p>
+                      </div>
                     </div>
                   </div>
-                  <div className="bk-btn text-center pb-5 md:pb-8 px-3 md:px-3 xl:px-5">
-                    <button
-                      onClick={() => {
-                        bookEvent(props.partyBooking2);
-                      }}
-                      className="bg-red-600 hover:bg-red-700
-                   text-white text-center font-medium
-                    py-4  rounded-full mx-auto text-[16px] lg:text-[14px] xl:text-[16px] w-full"
-                    >
-                      BOOK NOW
-                    </button>
-                  </div>
                 </div>
-              </div>
-            </div>
-            {/*===========box 2 end ============= */}
-            <div className="book-event-box w-full">
-              <div className="bk-wrapper h-full  bg-[#FBF2DC] border border-[#D2C6AA] relative">
-                <div className="bk-option absolute bottom-[100%] left-0">
-                  <span className="inline-block bg-[#D4B56A] px-3 py-1 text-[#111111] font-medium">
-                    Option 3
-                  </span>
-                </div>
-                <div className="bk-content h-full flex flex-col justify-between  ">
-                  <div className="bk-box ">
-                    <div className="bk-img">
-                      <Image
-                        className="w-full"
-                        src="/assets/events/all-in-adventures-book-your-event-option3.jpg"
-                        alt="Escape room booking"
-                        width={800}
-                        height={460}
-                      />
-                    </div>
-
-                    <div className="bk-text mt-3 mb-6 px-3 md:px-2 xl:px-3">
-                      <h3 className="text-black text-2xl md:text-[20px] lg:text-[22px] xl:text-[24px] uppercase text-center font-bold ">
-                        Treasure Island <br />
-                        Party Package
-                      </h3>
-                      <p className="text-[#232323] text-[16px] md:text-[17px] xl:text-[18px] font-thin text-center mt-2">
-                        Our Party Package offers an exciting Treasure Island
-                        escape room experience for up to 10 guests for one hour
-                        plus a two-hour rental of the party room. We'll provide
-                        basic supplies like plates, napkins, and utensils. Plus,
-                        you'll receive free digital All In Adventures birthday
-                        invitations that you can print.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="bk-btn text-center pb-5 md:pb-8 px-3 md:px-3 xl:px-5">
-                    <button
-                      onClick={() => {
-                        bookEvent(props.partyBooking3);
-                      }}
-                      className="bg-red-600 hover:bg-red-700
-                   text-white text-center font-medium
-                    py-4  rounded-full mx-auto text-[16px] lg:text-[14px] xl:text-[16px] w-full"
-                    >
-                      BOOK NOW
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/*===========box 3 end ============= */}
+              );
+            })}
           </div>
           <div className="inq-box mt-10 md:mt-12 lg:mt-16">
             {/*===========box 4 ============= */}
@@ -276,12 +138,11 @@ function BookYourEvent3(props) {
                             FOR LARGE EVENT
                           </h3>
                           <p className="text-[#232323] text-[16px] md:text-[17px] xl:text-[18px] font-thin mt-2 text-center md:text-left">
-                            Planning a large event for more than 10 people with
-                            both the thrill of an escape room and a party room?
-                            Submit inquiries for custom requests through the
-                            form below to receive a quotation with bulk
-                            discounts. requests through the form below to
-                            receive a quotation with bulk discounts.
+                            If you're planning a large event with more guests
+                            and want to combine the thrill of an escape room
+                            with a fun party room, we can accommodate you! Just
+                            submit your custom request through the form below,
+                            and we'll provide a quote with bulk discounts.
                           </p>
                         </div>
                       </div>

@@ -64,21 +64,59 @@ const LocationSingleEvent = (props) => {
                   ? props.pagedata.eventbooking
                   : false
               }
-              partyBooking1={{
-                shortName: "mysteryroom-rockaway",
-                flow: "663016",
-                item: "559986",
-              }}
-              partyBooking2={{
-                shortName: "mysteryroom-rockaway",
-                flow: "560026",
-                item: "560026",
-              }}
-              partyBooking3={{
-                shortName: "mysteryroom-rockaway",
-                flow: "663016",
-                item: "559997",
-              }}
+              escapeGamePartyList={[
+                {
+                  partyName: "Escape From Alcatraz",
+                  slideText:
+                    "Our Party Package offers an exciting Escape From Alcatraz escape room experience for up to 12 guests for one hour plus a two-hour rental of the party room. We'll provide basic supplies like plates, napkins, and utensils. Plus, you'll receive free digital All In Adventures birthday invitations that you can print.",
+
+                  sliderImage: {
+                    url: "/assets/events/all-in-adventures-book-your-event-option1.jpg",
+                    alt: "book your adventure",
+                    width: "800",
+                    height: "460",
+                  },
+                  bookingData: {
+                    shortName: "mysteryroom-rockaway",
+                    flow: "663016",
+                    item: "559986",
+                  },
+                },
+                {
+                  partyName: "Zombie Apocalypse",
+                  slideText:
+                    "Our Party Package offers an exciting Zombie Apocalypse escape room experience for up to 8 guests for one hour plus a two-hour rental of the party room. We'll provide basic supplies like plates, napkins, and utensils. Plus, you'll receive free digital All In Adventures birthday invitations that you can print.",
+
+                  sliderImage: {
+                    url: "/assets/events/all-in-adventures-book-your-event-option2.jpg",
+                    alt: "book your adventure",
+                    width: "800",
+                    height: "460",
+                  },
+                  bookingData: {
+                    shortName: "mysteryroom-rockaway",
+                    flow: "663016",
+                    item: "560026",
+                  },
+                },
+                {
+                  partyName: "Treasure Island",
+                  slideText:
+                    "Our Party Package offers an exciting Treasure Island escape room experience for up to 8 guests for one hour plus a two-hour rental of the party room. We'll provide basic supplies like plates, napkins, and utensils. Plus, you'll receive free digital All In Adventures birthday invitations that you can print.",
+
+                  sliderImage: {
+                    url: "/assets/events/all-in-adventures-book-your-event-option3.jpg",
+                    alt: "book your adventure",
+                    width: "800",
+                    height: "460",
+                  },
+                  bookingData: {
+                    shortName: "mysteryroom-rockaway",
+                    flow: "663016",
+                    item: "559997",
+                  },
+                },
+              ]}
             />
             <EventContact
               contactdata={props.contactdata}

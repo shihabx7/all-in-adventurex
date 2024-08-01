@@ -59,21 +59,59 @@ const LocEventList = (props) => {
           bookingall={props.pagedata.bookingall}
           eventbooking={props.pagedata.eventbooking}
           publish_status={props.pagedata.publish_status}
-          partyBooking1={{
-            shortName: "allinadventures-raleigh",
-            flow: "16807",
-            item: "559884",
-          }}
-          partyBooking2={{
-            shortName: "allinadventures-raleigh",
-            flow: "16807",
-            item: "559900",
-          }}
-          partyBooking3={{
-            shortName: "allinadventures-raleigh",
-            flow: "16807",
-            item: "559892",
-          }}
+          escapeGamePartyList={[
+            {
+              partyName: "Escape From Alcatraz",
+              slideText:
+                "Our Party Package offers an exciting Escape From Alcatraz escape room experience for up to 10 guests for one hour plus a two-hour rental of the party room. We'll provide basic supplies like plates, napkins, and utensils. Plus, you'll receive free digital All In Adventures birthday invitations that you can print.",
+
+              sliderImage: {
+                url: "/assets/events/all-in-adventures-book-your-event-option1.jpg",
+                alt: "book your adventure",
+                width: "800",
+                height: "460",
+              },
+              bookingData: {
+                shortName: "allinadventures-raleigh",
+                flow: "16807",
+                item: "559884",
+              },
+            },
+            {
+              partyName: "Zombie Apocalypse",
+              slideText:
+                "Our Party Package offers an exciting Zombie Apocalypse escape room experience for up to 10 guests for one hour plus a two-hour rental of the party room. We'll provide basic supplies like plates, napkins, and utensils. Plus, you'll receive free digital All In Adventures birthday invitations that you can print.",
+
+              sliderImage: {
+                url: "/assets/events/all-in-adventures-book-your-event-option2.jpg",
+                alt: "book your adventure",
+                width: "800",
+                height: "460",
+              },
+              bookingData: {
+                shortName: "allinadventures-raleigh",
+                flow: "16807",
+                item: "559900",
+              },
+            },
+            {
+              partyName: "Treasure Island",
+              slideText:
+                "Our Party Package offers an exciting Treasure Island escape room experience for up to 10 guests for one hour plus a two-hour rental of the party room. We'll provide basic supplies like plates, napkins, and utensils. Plus, you'll receive free digital All In Adventures birthday invitations that you can print.",
+
+              sliderImage: {
+                url: "/assets/events/all-in-adventures-book-your-event-option3.jpg",
+                alt: "book your adventure",
+                width: "800",
+                height: "460",
+              },
+              bookingData: {
+                shortName: "allinadventures-raleigh",
+                flow: "16807",
+                item: "559892",
+              },
+            },
+          ]}
         />
 
         <EventContact
