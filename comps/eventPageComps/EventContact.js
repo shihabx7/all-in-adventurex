@@ -3,8 +3,9 @@ import { FiMapPin, FiChevronDown, FiClock, FiX } from "react-icons/fi";
 import TitleSeparator from "../util/TitleSeparator";
 import Script from "next/script";
 import EventFaqList from "./EventFaqList";
-import LocationHours from "../locationsPage/LocationHours";
-import TitleWithSubTitle from "../util/TitleWithSubTitle";
+
+import LocationHeroHours from "../locationsPage/LocationHeroHours";
+import TitleWithSubtitleNew from "../util/TitleWithSubtitleNew";
 const EventContact = (props) => {
   const [showHour, setShwoHour] = useState(false);
   const hourref = useRef();
@@ -30,24 +31,33 @@ const EventContact = (props) => {
 
     return st;
   };
-  const getDirection = (address, slug, zip, city) => {
-    var addr = address.toString().split(" ").join("+") + ",";
-    var st = slug.toString().split("-");
-    var ct = city + ",";
-    st = [st.length - 1].toString().toUpperCase();
-    var zp = zip + ",";
-
-    var gslug = addr + "+" + ct + "+" + st + "+" + zp + "+" + "USA";
-    var gUrl = "https://www.google.com/maps/dir//" + gslug;
-
-    return gUrl;
-  };
-  const getAddress = (address, slug, zip, city) => {
-    var scity = slug.split("-");
-    var st = scity[scity.length - 1].toString().toUpperCase();
+  const getAddress = (address, state, zip, city) => {
+    var locState = state.split(",");
+    var st = locState[locState.length - 1].trim().toString().toUpperCase();
 
     var add = address + ", " + city + ", " + st + " " + zip;
     return add;
+  };
+  const removeTags = (str) => {
+    if (str === null || str === "") return false;
+    else str = str.toString();
+
+    return str.replace(/(<([^>]+)>)/gi, "");
+  };
+  const getDirection = (address, state, zip, city) => {
+    var addr = address.toString().split(" ").join("+") + ",";
+    var stArr = state.toString().split(",");
+    var ct = city + ",";
+    var st = stArr[stArr.length - 1].trim().toString().toUpperCase();
+
+    var zp = zip + ",";
+
+    var gslug = addr + "+" + ct + "+" + st + "+" + zp + "+" + "USA";
+
+    //console.log(st);
+    var gUrl = "https://www.google.com/maps/dir//" + gslug;
+
+    return gUrl;
   };
 
   const changeStyle = () => {
@@ -90,14 +100,21 @@ const EventContact = (props) => {
                 className="bg-[#FFF7E9] pt-5 lg:pt-8 mt-[60px] md:top-[80px] lg:mt-[92px] border-2 border-[#CA9342]"
               >
                 <div>
-                  <TitleWithSubTitle
+                  <TitleWithSubtitleNew
                     title="All in adventures"
-                    mall={props.contactdata.mall}
-                    city={props.contactdata.city}
-                    state={getState(props.contactdata.slug)}
+                    subTitle={
+                      "At " +
+                      props.locationInfo.mall +
+                      " in " +
+                      props.pageData.locationName
+                    }
                   />
                 </div>
-                <LocationHours locdetail={props.contactdata} />
+                <LocationHeroHours
+                  locationInfo={props.locationInfo}
+                  businessHours={props.businessHours}
+                  holidayHours={props.holidayHours}
+                />
               </div>
             </div>
           </div>
@@ -116,26 +133,8 @@ const EventContact = (props) => {
         <div className="max-w-7xl mx-auto md:px-4">
           {/**==========Section Title============ */}
           <div className="section-title  text-center max-w-[840px] mx-auto  mb-8 md:mb-12 lg:mb-16 px-4">
-            <TitleSeparator
-              title="SUBMIT YOUR INQUIRY"
-              color="golden-text"
-              weight="font-bold"
-            />
+            <TitleSeparator title="SUBMIT YOUR INQUIRY" />
             <p className="text-gray-200 md:px-8 md:text-lg mt-8">
-              {/*Let us help host your{" "}
-              {props.eventname ? props.eventname : "event"} at All In Adventures
-              {props.contactdata && (
-                <span>
-                  {" "}
-                  in{" "}
-                  {props.contactdata.city +
-                    " " +
-                    getStAddress(props.contactdata.slug)}
-                </span>
-              )}
-              . We promise you'll love it! Please fill out the inquiry form
-              below to reach our dedicated guest experience team. We'll be in
-                  contact within 24 hours.*/}
               Need a custom quote, mega event info, or just want to chat about
               your event? This contact form is your magic portal! Groups under
               10? We've got you covered with options 1 & 2!
@@ -163,22 +162,12 @@ const EventContact = (props) => {
                     <img src="/assets/svg/event-icon-phone.svg"></img>
                   </span>
                   <span>
-                    {props.contactdata && (
-                      <a
-                        className="text-[#F4E6C3] hover:text-red-700"
-                        href={"tel:" + props.contactdata.phone}
-                      >
-                        {props.contactdata.phone}
-                      </a>
-                    )}
-                    {!props.contactdata && (
-                      <a
-                        className="text-[#F4E6C3] hover:text-red-700"
-                        href="tel:+1 844-502-5546"
-                      >
-                        +1 844-502-5546 ex. 709.
-                      </a>
-                    )}
+                    <a
+                      className="text-[#F4E6C3] hover:text-red-700"
+                      href={"tel:" + props.locationInfo.phone}
+                    >
+                      {props.locationInfo.phone}
+                    </a>
                   </span>
                 </div>
                 <div className="event-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
@@ -186,22 +175,14 @@ const EventContact = (props) => {
                     <img src="/assets/svg/event-icon-email.svg"></img>
                   </span>
                   <span>
-                    {props.contactdata && (
-                      <a
-                        className="text-[#F4E6C3] hover:text-red-700"
-                        href={"mailto:" + props.contactdata.email.toLowerCase()}
-                      >
-                        {props.contactdata.email}
-                      </a>
-                    )}
-                    {!props.contactdata && (
-                      <a
-                        className="text-[#F4E6C3] hover:text-red-700"
-                        href="email:sales@allinadventures.com"
-                      >
-                        sales@allinadventures.com
-                      </a>
-                    )}
+                    <a
+                      className="text-[#F4E6C3] hover:text-red-700"
+                      href={
+                        "mailto:" + props.locationInfo.storeEmail.toLowerCase()
+                      }
+                    >
+                      {props.locationInfo.storeEmail}
+                    </a>
                   </span>
                 </div>
                 {props.contactdata && (
@@ -212,10 +193,10 @@ const EventContact = (props) => {
                     <a
                       target="_blank"
                       href={getDirection(
-                        props.contactdata.address,
-                        props.contactdata.slug,
-                        props.contactdata.zip,
-                        props.contactdata.city
+                        props.locationInfo.address,
+                        props.locationInfo.state,
+                        props.locationInfo.zip,
+                        props.locationInfo.cityName
                       )}
                       className="text-[#F4E6C3] hover:text-blue-700"
                     >
@@ -223,62 +204,63 @@ const EventContact = (props) => {
                         Direction:{" "}
                       </span>
                       {getAddress(
-                        props.contactdata.address,
-                        props.contactdata.slug,
-                        props.contactdata.zip,
-                        props.contactdata.city
+                        props.locationInfo.address,
+                        props.locationInfo.state,
+                        props.locationInfo.zip,
+                        props.locationInfo.cityName
                       )}
                     </a>
                   </div>
                 )}
-                {props.contactdata && (
-                  <div className="relative event-info-list flex text-[#F4E6C3]  items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
-                    <span className="text-[#A78849] text-[24px]">
-                      <FiClock />
-                    </span>
-                    <div
-                      className="flex justify-between item-center space-x-3 md:space-x-4 hover:cursor-pointer group"
-                      onClick={() => setShwoHour(true)}
-                    >
-                      <p className="text-[#1B823A]">Open Hours</p>{" "}
-                      <p className="flex items-center space-x-2 group-hover:text-blue-700">
-                        View Local Time{" "}
-                        <span className="text-xl">
-                          <FiChevronDown />
-                        </span>
-                      </p>
-                    </div>
+
+                <div className="relative event-info-list flex text-[#F4E6C3]  items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
+                  <span className="text-[#A78849] text-[24px]">
+                    <FiClock />
+                  </span>
+                  <div
+                    className="flex justify-between item-center space-x-3 md:space-x-4 hover:cursor-pointer group"
+                    onClick={() => setShwoHour(true)}
+                  >
+                    <p className="text-[#1B823A]">Open Hours</p>{" "}
+                    <p className="flex items-center space-x-2 group-hover:text-blue-700">
+                      View Local Time{" "}
+                      <span className="text-xl">
+                        <FiChevronDown />
+                      </span>
+                    </p>
                   </div>
-                )}
+                </div>
+
                 <div className="event-info-list flex  items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
                   <span>
                     <img src="/assets/svg/event-icon-chair.svg"></img>
                   </span>
                   <span>
-                    <p className="text-[#F4E6C3]">Wheelchair Accessibility</p>
+                    <p className="text-[#F4E6C3]">
+                      {" "}
+                      {props.locationInfo.wheelChairAccessibility
+                        ? "Wheelchair Accessibility"
+                        : ""}
+                    </p>
                   </span>
                 </div>
               </div>
               <div className="event-notice mt-4 md:mt-6">
-                {props.contactdata && (
-                  <div className="flex  lg:text-lg text-[#eeeeee] mt-4 justify-between">
-                    <div className="mt-[6px] w-[16px] lg:w-[16px]">
-                      <img src="/assets/svg/star-bullet.svg"></img>
-                    </div>
-                    <div className="w-[92%] font-thin text-[16px]">
-                      {props.contactdata.entry_guid}
-                    </div>
+                <div className="flex  lg:text-lg text-[#eeeeee] mt-4 justify-between">
+                  <div className="mt-[6px] w-[16px] lg:w-[16px]">
+                    <img src="/assets/svg/star-bullet.svg"></img>
                   </div>
-                )}
+                  <div className="w-[92%] font-thin text-[16px]">
+                    {removeTags(props.locationInfo.direction)}
+                  </div>
+                </div>
 
                 <div className="flex  lg:text-lg text-[#eeeeee] mt-4 justify-between">
                   <div className="mt-[6px] w-[16px] lg:w-[16px]">
                     <img src="/assets/svg/star-bullet.svg"></img>
                   </div>
                   <div className="w-[92%] font-thin text-[16px]">
-                    We have gone CASHLESS but accept Credit/Debit, PayPal,
-                    Venmo, Zelle, Cash App and in some locations Apple Pay and
-                    Samsung Pay.
+                    {removeTags(props.locationInfo.acceptedPayments)}
                   </div>
                 </div>
               </div>

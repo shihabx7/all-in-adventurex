@@ -1,11 +1,38 @@
-import { getTotal } from "./AllDataList/getTotal";
-export const getPricingPageData = () => {
-  const pricingPageData = {
-    locationlist: getTotal().locationlist,
-    activitylistSlug: getTotal().activitylistSlug,
-    eventlistSlug: getTotal().eventlistSlug,
-    virtualgameListSlug: getTotal().virtualgameSlug,
-    pagemeta: {
+import { apiSetting, apiUrl } from "../../lib/apiSettings";
+import {
+  locationSlugListQuery,
+  allActivitiesSluglistQuery,
+  allEventsSluglistQuery,
+} from "../../lib/query/navMenuQuery";
+import {
+  getLocationSlugList,
+  getAllEscapeGameSlugList,
+  getAllOtherGameSlugList,
+  getAllEventSlugList,
+} from "../../lib/menuDataFormation";
+export const getPricingPageData = async () => {
+  // fetch all location list as an array
+  const locationListRes = await fetch(locationSlugListQuery, apiSetting);
+  const locationListObj = await locationListRes.json();
+  const locationListData = locationListObj.data;
+  // fetch all activity list as an array
+  const activityListRes = await fetch(allActivitiesSluglistQuery, apiSetting);
+  const activityListObj = await activityListRes.json();
+  const actctivityListResData = activityListObj.data;
+  // fetch all event list as an array
+  const eventListRes = await fetch(allEventsSluglistQuery, apiSetting);
+  const eventListResObj = await eventListRes.json();
+  const eventListResData = eventListResObj.data;
+
+  const totalActivities = actctivityListResData.length;
+  const totalLocations = locationListData.length;
+  const data = {
+    locationSlugList: getLocationSlugList(locationListData),
+    escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
+    otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
+    eventSlugList: getAllEventSlugList(eventListResData),
+    totalLocations: totalLocations,
+    pageMeta: {
       title: "Pricing | All In Adventures | Formerly Mystery Room",
       description:
         "Escape Room prices vary based on the group size. We offer affordable and innovative pricing for all our games and activities to appeal to groups of all sizes.",
@@ -16,12 +43,12 @@ export const getPricingPageData = () => {
       metaimg: "/assets/gn-mobile-hero/allinadventures-pricing-hero.jpg",
     },
 
-    pagedata: {
+    pageData: {
       pagetitle: "ALL IN ADVENTURES PRICING",
       pagesubtitle:
         "How much does an Escape Room cost? Nowadays, It's a very common question! Escape Room prices vary based on the group size. We offer affordable and innovative pricing for all our games and activities to appeal to groups of all sizes. ",
 
-      totalLocations: getTotal().totalLocations,
+      totalLocations: totalLocations,
       coverimageL: "/assets/gn-desktop-hero/allinadventures-pricing-hero.jpg",
       coverimageM: "/assets/gn-mobile-hero/allinadventures-pricing-hero.jpg",
     },
@@ -128,5 +155,5 @@ export const getPricingPageData = () => {
     ],
   };
 
-  return pricingPageData;
+  return data;
 };

@@ -1,17 +1,17 @@
-import Homenav from "../comps/Homenav";
-import Footer from "../comps/Footer";
+import RootNav from "../comps/RootNav";
+import RootFooter from "../comps/RootFooter";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
 // page template=============
 import { getVolunteeringPageData } from "./api/getVolunteeringPageData";
-import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
+
 import Vhero from "../comps/volunteeringPageComps/Vhero";
 import GivingBack from "../comps/volunteeringPageComps/GivingBack";
 import Organization from "../comps/volunteeringPageComps/Organization";
 import Vhelp from "../comps/volunteeringPageComps/Vhelp";
-import VolunteeringLoc from "../comps/volunteeringPageComps/VolunteeringLoc";
+
 import Vcontact from "../comps/volunteeringPageComps/Vcontact";
-import LocationStoreMenu from "../comps/headerComps/LocationStoreMenu";
+
 import Seofields from "../comps/util/SeoFields";
 
 const Volunteering = (props) => {
@@ -41,10 +41,11 @@ const Volunteering = (props) => {
       {/* =======header content======== */}
 
       <Seofields meta={props.pagemeta} />
-      <Homenav
-        locationlist={props.locationlist}
-        activitylist={props.activitylist}
-        eventlist={props.eventlist}
+      <RootNav
+        locationSlugList={props.locationSlugList}
+        escapeGameSlugList={props.escapeGameSlugList}
+        otherGameSlugList={props.otherGameSlugList}
+        eventSlugList={props.eventSlugList}
       />
       {/* =======header content ======== end */}
 
@@ -68,12 +69,6 @@ const Volunteering = (props) => {
         </div>
         {/* =======breadcum content and breadcum root page template======== end */}
 
-        <div
-          id="volunteeringdloc"
-          className="rewardloc z-[10000] fixed w-screen h-screen top-0 left-0 overflow-scroll hidden"
-        >
-          <LocationStoreMenu locationlist={props.locationlist} />
-        </div>
         <Vhero gametotal="not" pagedata={props.pagedata} />
         <GivingBack />
         <Organization />
@@ -82,9 +77,9 @@ const Volunteering = (props) => {
         {/* =========================================================================================main content ======== end */}
       </div>
 
-      <Footer
-        locationlist={props.locationlist}
-        totallocations={props.pagedata.totalLocations}
+      <RootFooter
+        locationSlugList={props.locationSlugList}
+        totalLocations={props.totalLocations}
       />
     </>
   );
@@ -93,16 +88,19 @@ const Volunteering = (props) => {
 export default Volunteering;
 
 export const getStaticProps = async () => {
-  const volunteeringPageData = await getVolunteeringPageData();
-
+  const DATA = await getVolunteeringPageData();
+  // console.log(DATA);
   return {
     props: {
-      pagedata: volunteeringPageData.pagedata,
-      pagemeta: volunteeringPageData.pagemeta,
-      locationlist: volunteeringPageData.locationlist,
-      activitylist: volunteeringPageData.activitylistSlug,
-      eventlist: volunteeringPageData.eventlistSlug,
-      locationMailData: volunteeringPageData.locationMailData,
+      locationSlugList: DATA.locationSlugList,
+      escapeGameSlugList: DATA.escapeGameSlugList,
+      otherGameSlugList: DATA.otherGameSlugList,
+      eventSlugList: DATA.eventSlugList,
+      totalLocations: DATA.totalLocations,
+      pagedata: DATA.pageData,
+      pagemeta: DATA.pageMeta,
+
+      locationMailData: DATA.locationMailData,
     },
     revalidate: 30,
   };

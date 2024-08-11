@@ -1,4 +1,7 @@
-import { getTotal } from "../AllDataList/getTotal";
+import {
+  singleBlogQuery,
+  relatedBlogQuery,
+} from "../../../lib/query/blogQuery";
 import {
   getPublishDate,
   htmlescape,
@@ -6,6 +9,17 @@ import {
   getBlogCat,
 } from "../../../lib/blogFormation";
 import { apiSetting, apiUrl, mediaUrl } from "../../../lib/apiSettings";
+import {
+  locationSlugListQuery,
+  allActivitiesSluglistQuery,
+  allEventsSluglistQuery,
+} from "../../../lib/query/navMenuQuery";
+import {
+  getLocationSlugList,
+  getAllEscapeGameSlugList,
+  getAllOtherGameSlugList,
+  getAllEventSlugList,
+} from "../../../lib/menuDataFormation";
 
 const getPlaintext = (htmlStr) => {
   return htmlStr
@@ -263,51 +277,51 @@ const getSocialMeta = (socialNetworkName, metaArr, ftImg, metaTitle) => {
   return retObj;
 };
 export const getSingleBlogData = async (slug) => {
-  const filter = "filters[slug]=" + slug;
-  const fields =
-    "&fields[0]=title&fields[1]=slug&fields[2]=publishDate&fields[3]=excerpt&fields[4]=title&fields[5]=content";
-  const featureImagePop =
-    "&populate[featuredImage][fields][0]=name&populate[featuredImage][fields][1]=alternativeText&populate[featuredImage][fields][2]=url&populate[featuredImage][fields][3]=width&populate[featuredImage][fields][4]=height";
-  const authorPop =
-    "&populate[blog_author][fields][0]=name&populate[blog_author][populate][blogAuthorImage][fields][0]=name&populate[blog_author][populate][blogAuthorImage][fields][1]=alternativeText&populate[blog_author][populate][blogAuthorImage][fields][2]=url&populate[blog_author][populate][blogAuthorImage][fields][3]=width&populate[blog_author][populate][blogAuthorImage][fields][4]=height";
-  const catPop =
-    "&populate[blogCategories][fields][0]=categoryName&populate[blogCategories][fields][1]=categorySlug";
-  const seoPop =
-    "&populate[seo][populate][metaImage][fields][0]=name&populate[seo][populate][metaImage][fields][1]=url&populate[seo][populate][metaSocial][fields][0]=socialNetwork&populate[seo][populate][metaSocial][fields][1]=title&populate[seo][populate][metaSocial][fields][2]=description&populate[seo][populate][metaSocial][fields][3]=hashTags&populate[seo][populate][metaSocial][populate][image][fields][0]=url";
-  const blogReqUrl =
-    apiUrl +
-    "blogs?" +
-    filter +
-    fields +
-    featureImagePop +
-    authorPop +
-    catPop +
-    seoPop;
+  // fetch all location list as an array
+  const locationListRes = await fetch(locationSlugListQuery, apiSetting);
+  const locationListObj = await locationListRes.json();
+  const locationListData = locationListObj.data;
+  // fetch all activity list as an array
+  const activityListRes = await fetch(allActivitiesSluglistQuery, apiSetting);
+  const activityListObj = await activityListRes.json();
+  const actctivityListResData = activityListObj.data;
+  // fetch all event list as an array
+  const eventListRes = await fetch(allEventsSluglistQuery, apiSetting);
+  const eventListResObj = await eventListRes.json();
+  const eventListResData = eventListResObj.data;
 
-  const response = await fetch(blogReqUrl, apiSetting);
-  const blogPostArr = await response.json();
-  const blogPost = blogPostArr.data[0];
-  const seoData = blogPost.attributes.seo;
+  const totalActivities = actctivityListResData.length;
+  const totalLocations = locationListData.length;
+  // fetch blog data
+  const filter = "blogs?filters[slug]=" + slug;
+  const blogReqUrl = apiUrl + filter + singleBlogQuery;
+
+  const blogRes = await fetch(blogReqUrl, apiSetting);
+  const blogResArr = await blogRes.json();
+  const blogResData = blogResArr.data[0];
+  const seoData = blogResData.attributes.seo;
 
   const getSingleBlog = {
-    locationlist: getTotal().locationlist,
-    activitylistSlug: getTotal().activitylistSlug,
-    eventlistSlug: getTotal().eventlistSlug,
+    locationSlugList: getLocationSlugList(locationListData),
+    escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
+    otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
+    eventSlugList: getAllEventSlugList(eventListResData),
+    totalLocations: totalLocations,
 
     pagemeta: {
       title:
         seoData.metaTitle != null
           ? seoData.metaTitle
-          : blogPost.attributes.title,
+          : blogResData.attributes.title,
       description:
         seoData.metaDescription != null
           ? seoData.metaDescription
-          : getPlaintext(blogPost.attributes.excerpt),
+          : getPlaintext(blogResData.attributes.excerpt),
       keywords:
         seoData.keywords != null
           ? seoData.keywords
           : "Escape room blog,Escape game blog,Allinadventure blog,Escape game blog, Mystery room blog",
-      url: "/blog/" + blogPost.attributes.slug,
+      url: "/blog/" + blogResData.attributes.slug,
       metaRobot: seoData.metaRobots != null ? seoData.metaRobots : "all",
       structuredData:
         seoData.structuredData != null ? seoData.structuredData : false,
@@ -319,45 +333,45 @@ export const getSingleBlogData = async (slug) => {
           ? process.env.APP_API_MEDIA_URL +
             seoData.metaImage.data.attributes.url
           : process.env.APP_API_MEDIA_URL +
-            blogPost.attributes.featuredImage.data.attributes.url,
+            blogResData.attributes.featuredImage.data.attributes.url,
       facebookMeta: getSocialMeta(
         "Facebook",
         seoData.metaSocial,
-        blogPost.attributes.featuredImage.data.attributes.url,
-        blogPost.attributes.title
+        blogResData.attributes.featuredImage.data.attributes.url,
+        blogResData.attributes.title
       ),
       twitterMeta: getSocialMeta(
         "Twitter",
         seoData.metaSocial,
-        blogPost.attributes.featuredImage.data.attributes.url,
-        blogPost.attributes.title
+        blogResData.attributes.featuredImage.data.attributes.url,
+        blogResData.attributes.title
       ),
     },
     pagedata: {
-      pagetitle: blogPost.attributes.title,
+      pagetitle: blogResData.attributes.title,
       ftimg:
         process.env.APP_API_MEDIA_URL +
-        blogPost.attributes.featuredImage.data.attributes.url,
-      ftimgAlt: blogPost.attributes.featuredImage.data.attributes
+        blogResData.attributes.featuredImage.data.attributes.url,
+      ftimgAlt: blogResData.attributes.featuredImage.data.attributes
         .alternativeText
-        ? blogPost.attributes.featuredImage.data.attributes.alternativeText
-        : getImgAlt(blogPost.attributes.featuredImage.data.attributes.name),
-      ftimgWidth: blogPost.attributes.featuredImage.data.attributes.width,
-      ftimgHeight: blogPost.attributes.featuredImage.data.attributes.height,
-      description: getPlaintext(blogPost.attributes.excerpt),
-      totalLocations: getTotal().totalLocations,
-      shareurl: "/blog/" + blogPost.attributes.slug,
+        ? blogResData.attributes.featuredImage.data.attributes.alternativeText
+        : getImgAlt(blogResData.attributes.featuredImage.data.attributes.name),
+      ftimgWidth: blogResData.attributes.featuredImage.data.attributes.width,
+      ftimgHeight: blogResData.attributes.featuredImage.data.attributes.height,
+      description: getPlaintext(blogResData.attributes.excerpt),
+      totalLocations: totalLocations,
+      shareurl: "/blog/" + blogResData.attributes.slug,
     },
     bloginfo: getBlogInfo(
-      blogPost.attributes.blog_author.data,
-      blogPost.attributes.blogCategories.data,
-      blogPost.attributes.publishDate
+      blogResData.attributes.blog_author.data,
+      blogResData.attributes.blogCategories.data,
+      blogResData.attributes.publishDate
     ),
-    blogdesc: blogPost.attributes.content,
+    blogdesc: blogResData.attributes.content,
     relatedblogdata: await getRelatedBlogs(
-      blogPost.attributes.blogCategories.data,
-      blogPost.attributes.slug,
-      fields + featureImagePop + authorPop + catPop
+      blogResData.attributes.blogCategories.data,
+      blogResData.attributes.slug,
+      relatedBlogQuery
     ),
   };
   // console.log(getSingleBlog);

@@ -8,11 +8,7 @@ function GiftSpotOn(props) {
         <div className="gs-container ">
           {/*======================section title======== */}
           <div className="sec-title gs-title max-w-[768px] mx-auto">
-            <TitleSeparator
-              title="THE GIFT THAT WILL ALWAYS BE SPOT-ON"
-              color="text-gold"
-              weight="font-bold"
-            />
+            <TitleSeparator title="THE GIFT THAT WILL ALWAYS BE SPOT-ON" />
             <p className="text-lg text-white mt-2 text-center">
               Become a gifting genius this holiday season with All In Adventures
               Gift Cards.
@@ -136,7 +132,7 @@ function GiftSpotOn(props) {
                   ? props.setShowGiftBookingList
                   : false
               }
-              bookingData={props.bookingData ? props.bookingData : false}
+              giftBooking={props.giftBooking ? props.giftBooking : false}
             />
           </div>
         </div>

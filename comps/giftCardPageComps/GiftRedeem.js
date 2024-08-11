@@ -45,7 +45,7 @@ const GiftRedeem = (props) => {
         </div>
         {/** =================section title end============= */}
         <div className="gift-rdm-carusel-container  mx-auto">
-          <GiftRdmCarousel redeemgames={props.redeemgames} />
+          <GiftRdmCarousel giftReedem={props.giftReedem} />
         </div>
 
         <div className="flex justify-center mt-12">
@@ -55,7 +55,7 @@ const GiftRedeem = (props) => {
                 ? props.setShowGiftBookingList
                 : false
             }
-            bookingData={props.bookingData ? props.bookingData : false}
+            giftBooking={props.giftBooking ? props.giftBooking : false}
           />
         </div>
       </div>

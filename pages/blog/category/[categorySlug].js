@@ -1,7 +1,8 @@
 import getBlogCategorySlugs from "../../api/blog/getBlogCategorySlugs";
 import { getBlogCategoryData } from "../../api/blog/getBlogCategoryData";
-import Homenav from "../../../comps/Homenav";
-import Footer from "../../../comps/Footer";
+import RootFooter from "../../../comps/RootFooter";
+import RootNav from "../../../comps/RootNav";
+
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
 
@@ -34,10 +35,11 @@ const BlogCateory = (props) => {
     <>
       {/* =======header content======== */}
       <BlogPostSeo meta={props.pagemeta} />
-      <Homenav
-        locationlist={props.locationlist}
-        activitylist={props.activitylist}
-        eventlist={props.eventlist}
+      <RootNav
+        locationSlugList={props.locationSlugList}
+        escapeGameSlugList={props.escapeGameSlugList}
+        otherGameSlugList={props.otherGameSlugList}
+        eventSlugList={props.eventSlugList}
       />
       {/* =======header content ======== end */}
 
@@ -79,9 +81,9 @@ const BlogCateory = (props) => {
         </div>
       </div>
 
-      <Footer
-        locationlist={props.locationlist}
-        totallocations={props.pagedata.totalLocations}
+      <RootFooter
+        locationSlugList={props.locationSlugList}
+        totalLocations={props.totalLocations}
       />
     </>
   );
@@ -109,11 +111,14 @@ export const getStaticProps = async (context) => {
 
   return {
     props: {
+      locationSlugList: blogCategoryData.locationSlugList,
+      escapeGameSlugList: blogCategoryData.escapeGameSlugList,
+      otherGameSlugList: blogCategoryData.otherGameSlugList,
+      eventSlugList: blogCategoryData.eventSlugList,
+      totalLocations: blogCategoryData.totalLocations,
       pagedata: blogCategoryData.pagedata,
       pagemeta: blogCategoryData.pagemeta,
-      locationlist: blogCategoryData.locationlist,
-      activitylist: blogCategoryData.activitylistSlug,
-      eventlist: blogCategoryData.eventlistSlug,
+
       categorySlug: blogCategoryData.categorySlug,
       categoryName: blogCategoryData.categoryName,
       allblogs: blogCategoryData.allblogs,

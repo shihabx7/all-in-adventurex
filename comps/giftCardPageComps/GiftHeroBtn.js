@@ -1,31 +1,29 @@
 import React from "react";
 
-function GiftHeroBtn({ bookingData, setShowGiftBookingList }) {
-  const giftBookingData = bookingData ? bookingData : false;
-
-  const handleClick = (bookingData) => {
-    if (!bookingData) {
+function GiftHeroBtn({ giftBooking, setShowGiftBookingList }) {
+  const handleClick = (giftBooking) => {
+    if (!giftBooking) {
       setShowGiftBookingList(true);
       const body = document.getElementsByTagName("body")[0];
       body.classList.add("overflow-hidden");
     } else {
-      bookGift(bookingData);
+      bookGift(giftBooking);
     }
   };
   const bookGift = (bookingData) => {
     FH.open({
-      shortname: bookingData.shortname,
+      shortname: bookingData.shortName,
       fallback: "simple",
       fullItems: "yes",
       flow: bookingData.flow,
-      view: { item: bookingData.item },
+      view: { item: bookingData.itemNo },
     });
   };
   return (
     <div className="gift-hero-btn">
       <button
         onClick={() => {
-          handleClick(giftBookingData);
+          handleClick(giftBooking);
         }}
         className="bg-red-600 hover:bg-red-700 text-left text-[18px] font-medium rounded-full text-white  w-[248px] pl-[32px] py-4 relative"
       >

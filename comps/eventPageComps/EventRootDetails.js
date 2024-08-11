@@ -1,10 +1,8 @@
 import { useRef, useState, useEffect } from "react";
 import EventDbtn from "../util/EventDbtn";
-import GameDtBtn from "../util/GameDtBtn";
+
 import GameTitleSeparator from "../util/GameTitleSeparator";
-import { FiXSquare } from "react-icons/fi";
 import EventBookBtn from "../util/EventBookBtn";
-import BookYourEvent from "./BookYourEvent";
 
 const EventRootDetails = (props) => {
   const [showPack, setShowPack] = useState(false);
@@ -66,47 +64,29 @@ const EventRootDetails = (props) => {
             <div className="event-dt-col w-full order-2 md:order-1 md:w-[49%] lg:w-[48%] relative z-20">
               <div className="event-dt-desc py-4 md:py-0">
                 <p className="md:text-lg text-[#938056] uppercase leading-[1]">
-                  {props.eventname == "birthday party"
-                    ? "YOUR BIRTHDAY PARTY"
-                    : props.eventname}
+                  {props.eventDetaliData.whyAllinAdventuresSubTitle}
                 </p>
                 <GameTitleSeparator
-                  title={"WHY ALL IN ADVENTURES"}
-                  color="golden-text"
-                  weight="font-bold"
-                ></GameTitleSeparator>
+                  title={props.eventDetaliData.whyAllinAdventuresTitle}
+                />
                 <div
                   className="mt-3 md:mt-3 lg:mt-4 md:text-[18px] lg:text-[20px] text-gray-700"
-                  dangerouslySetInnerHTML={{ __html: props.eventdata.why_book }}
+                  dangerouslySetInnerHTML={{
+                    __html: props.eventDetaliData.whyAllinAdventuresDesc,
+                  }}
                 ></div>
-                {props.eventbooking &&
-                  props.eventbooking.eventstatus == true && (
-                    <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                      <EventBookBtn
-                        label="BOOK YOUR EVENT"
-                        eventbooking={props.eventbooking}
-                      />
-                    </div>
-                  )}
-                {props.eventbooking &&
-                  props.eventbooking.eventstatus == false && (
-                    <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                      <EventDbtn link="#eventbooking" label="BOOK YOUR EVENT" />
-                    </div>
-                  )}
-                {!props.eventbooking && (
-                  <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                    <EventDbtn link="#eventbooking" label="BOOK YOUR EVENT" />
-                  </div>
-                )}
+
+                <div className="event-notice mt-4 md:mt-6 lg:mt-8">
+                  <EventDbtn link="#eventbooking" label="BOOK YOUR EVENT" />
+                </div>
               </div>
             </div>
             <div className="event-dt-col w-full md:w-[49%] lg:w-[48%] order-1 mb-4 md:mb-0 md:order-2">
               <div className="event-dt-img">
                 <img
                   className="rounded"
-                  src={props.eventdata.why_book_img}
-                  alt={props.eventdata.why_book_alt}
+                  src={props.eventDetaliData.whyAllinAdventuresImg.url}
+                  alt={props.eventDetaliData.whyAllinAdventuresImg.alt}
                 ></img>
               </div>
             </div>
@@ -126,60 +106,31 @@ const EventRootDetails = (props) => {
               <div className="event-dt-img rounded">
                 <img
                   className="rounded"
-                  src={props.eventdata.offer_img}
-                  alt={props.eventdata.offer_alt}
+                  src={props.eventDetaliData.makeItMemorableImg.url}
+                  alt={props.eventDetaliData.makeItMemorableImg.alt}
                 ></img>
               </div>
             </div>
             <div className="event-dt-col w-full md:w-[49%] lg:w-[48%]">
               <div className="event-dt-desc">
                 <p className="md:text-lg text-[#938056] leading-[1] uppercase">
-                  {props.eventname == "birthday party"
-                    ? "YOUR BIRTHDAY PARTY"
-                    : props.eventname}
+                  {props.eventDetaliData.makeItMemorableSubTitle}
                 </p>
                 <GameTitleSeparator
-                  title={"MAKE IT MEMORABLE"}
-                  color="golden-text"
-                  weight="font-bold"
-                ></GameTitleSeparator>
-                <p className="mt-3 md:mt-3 lg:mt-4 md:text-[18px] lg:text-[20px] text-gray-700">
-                  {props.eventdata.offer}
-                </p>
-                <p className="lg:text-lg italic mt-4 lg:mt-8">
-                  * See your location's party package booking page for specific
-                  details, offerings and experience may vary by location and
-                  package choice.
-                </p>
+                  title={props.eventDetaliData.makeItMemorableTitle}
+                />
+
+                <div
+                  className="mt-3 md:mt-3 lg:mt-4 md:text-[18px] lg:text-[20px] text-gray-700 ev-desc"
+                  dangerouslySetInnerHTML={{
+                    __html: props.eventDetaliData.makeItMemorableDesc,
+                  }}
+                ></div>
 
                 <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                  <p className="md:text-lg text-[#938056] md:mb-1 uppercase">
-                    {props.activityname}
-                  </p>
-
-                  {props.eventbooking &&
-                    props.eventbooking.eventstatus == true && (
-                      <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                        <EventBookBtn
-                          label="BOOK YOUR EVENT"
-                          eventbooking={props.eventbooking}
-                        />
-                      </div>
-                    )}
-                  {props.eventbooking &&
-                    props.eventbooking.eventstatus == false && (
-                      <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                        <EventDbtn
-                          link="#eventbooking"
-                          label="BOOK YOUR EVENT"
-                        />
-                      </div>
-                    )}
-                  {!props.eventbooking && (
-                    <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                      <EventDbtn link="#eventbooking" label="BOOK YOUR EVENT" />
-                    </div>
-                  )}
+                  <div className="event-notice mt-4 md:mt-6 lg:mt-8">
+                    <EventDbtn link="#eventbooking" label="BOOK YOUR EVENT" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -198,47 +149,23 @@ const EventRootDetails = (props) => {
             <div className="event-dt-col order-2 md:order-1 md:w-[49%] lg:w-[48%]">
               <div className="event-dt-desc py-4 md:py-0">
                 <p className="md:text-lg text-[#938056] leading-[1] uppercase">
-                  {props.eventname == "birthday party"
-                    ? "YOUR BIRTHDAY PARTY"
-                    : props.eventname}
+                  {props.eventDetaliData.whatToExpectSubTitle}
                 </p>
                 <GameTitleSeparator
-                  title={"WHAT TO EXPECT"}
-                  color="golden-text"
-                  weight="font-bold"
-                ></GameTitleSeparator>
+                  title={props.eventDetaliData.whatToExpectTitle}
+                />
 
                 <div
                   className="mt-3 md:mt-3 lg:mt-4 md:text-[18px] lg:text-[20px] text-gray-700"
                   dangerouslySetInnerHTML={{
-                    __html: props.eventdata.what_expect,
+                    __html: props.eventDetaliData.whatToExpectDesc,
                   }}
                 ></div>
 
                 <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                  {props.eventbooking &&
-                    props.eventbooking.eventstatus == true && (
-                      <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                        <EventBookBtn
-                          label="BOOK YOUR EVENT"
-                          eventbooking={props.eventbooking}
-                        />
-                      </div>
-                    )}
-                  {props.eventbooking &&
-                    props.eventbooking.eventstatus == false && (
-                      <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                        <EventDbtn
-                          link="#eventbooking"
-                          label="BOOK YOUR EVENT"
-                        />
-                      </div>
-                    )}
-                  {!props.eventbooking && (
-                    <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                      <EventDbtn link="#eventbooking" label="BOOK YOUR EVENT" />
-                    </div>
-                  )}
+                  <div className="event-notice mt-4 md:mt-6 lg:mt-8">
+                    <EventDbtn link="#eventbooking" label="BOOK YOUR EVENT" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -246,8 +173,8 @@ const EventRootDetails = (props) => {
               <div className="event-dt-img">
                 <img
                   className="rounded "
-                  src={props.eventdata.what_expect_img}
-                  alt={props.eventdata.what_expect_alt}
+                  src={props.eventDetaliData.whatToExpectImg.url}
+                  alt={props.eventDetaliData.whatToExpectImg.alt}
                 ></img>
               </div>
             </div>

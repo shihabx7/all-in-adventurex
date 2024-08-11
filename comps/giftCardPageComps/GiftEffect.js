@@ -8,11 +8,7 @@ function GiftEffect(props) {
         <div className="gs-container ">
           {/*====================section title==============*/}
           <div className="sec-title gs-title max-w-[600px] mx-auto">
-            <TitleSeparator
-              title="THE ALL IN ADVENTURES GIFT CARD EFFECT"
-              color="text-gold"
-              weight="font-bold"
-            />
+            <TitleSeparator title="THE ALL IN ADVENTURES GIFT CARD EFFECT" />
           </div>
           <div className="gs-box-container flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-6   lg:space-x-0 lg:space-y-0 lg:justify-between mt-8 md:mt-12 flex-wrap">
             {/*==============================================box column 1==============*/}
@@ -188,7 +184,7 @@ function GiftEffect(props) {
                   ? props.setShowGiftBookingList
                   : false
               }
-              bookingData={props.bookingData ? props.bookingData : false}
+              giftBooking={props.giftBooking ? props.giftBooking : false}
             />
           </div>
         </div>

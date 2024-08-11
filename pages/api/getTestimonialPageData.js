@@ -1,11 +1,39 @@
-import { getTotal } from "./AllDataList/getTotal";
-export const getTestimonialPageData = () => {
+import { apiSetting, apiUrl } from "../../lib/apiSettings";
+import {
+  locationSlugListQuery,
+  allActivitiesSluglistQuery,
+  allEventsSluglistQuery,
+} from "../../lib/query/navMenuQuery";
+import {
+  getLocationSlugList,
+  getAllEscapeGameSlugList,
+  getAllOtherGameSlugList,
+  getAllEventSlugList,
+} from "../../lib/menuDataFormation";
+export const getTestimonialPageData = async () => {
+  // fetch all location list as an array
+  const locationListRes = await fetch(locationSlugListQuery, apiSetting);
+  const locationListObj = await locationListRes.json();
+  const locationListData = locationListObj.data;
+  // fetch all activity list as an array
+  const activityListRes = await fetch(allActivitiesSluglistQuery, apiSetting);
+  const activityListObj = await activityListRes.json();
+  const actctivityListResData = activityListObj.data;
+  // fetch all event list as an array
+  const eventListRes = await fetch(allEventsSluglistQuery, apiSetting);
+  const eventListResObj = await eventListRes.json();
+  const eventListResData = eventListResObj.data;
+
+  const totalActivities = actctivityListResData.length;
+  const totalLocations = locationListData.length;
+
   const testimonialPgaeData = {
-    locationlist: getTotal().locationlist,
-    activitylistSlug: getTotal().activitylistSlug,
-    eventlistSlug: getTotal().eventlistSlug,
-    virtualgameListSlug: getTotal().virtualgameSlug,
-    pagemeta: {
+    locationSlugList: getLocationSlugList(locationListData),
+    escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
+    otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
+    eventSlugList: getAllEventSlugList(eventListResData),
+    totalLocations: totalLocations,
+    pageMeta: {
       title: "Testimonials | All In Adventures | Formerly Mystery Room",
       description:
         "Our escape room games have fueled epic adventures all across the US. Just listen to the fascinating stories from families, friends and corporate players.",
@@ -16,7 +44,7 @@ export const getTestimonialPageData = () => {
       metaimg: "/assets/gn-mobile-hero/allinadventures-testimonials-hero.jpg",
     },
 
-    pagedata: {
+    pageData: {
       pagetitle: "ALL IN ADVENTURES TESTIMONIALS",
       pagesubtitle:
         "Our escape room games have fueled epic adventures all across the United States. Just listen to the fascinating stories from families, friends and corporate players. ",
@@ -25,7 +53,7 @@ export const getTestimonialPageData = () => {
         "/assets/gn-desktop-hero/allinadventures-testimonials-hero.jpg",
       coverimageM:
         "/assets/gn-mobile-hero/allinadventures-testimonials-hero.jpg",
-      totalLocations: getTotal().totalLocations,
+      totalLocations: totalLocations,
     },
     testimonials: [
       {

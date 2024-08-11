@@ -1,46 +1,23 @@
-import Head from "next/dist/shared/lib/head";
-import Homenav from "../../comps/Homenav";
-import Footer from "../../comps/Footer";
-import Breadcrumbs from "nextjs-breadcrumbs";
-import { FiChevronRight } from "react-icons/fi";
-import { geEventPagetData } from "../api/getEventPageData";
-import EventContact from "../../comps/eventPageComps/EventContact";
-import { getAllEventList } from "../api/getAllEventList";
+import getEventSlugs from "../api/Events/getEventSlugs";
+import { getEventPagetData } from "../api/Events/getEventPageData";
+import RootNav from "../../comps/RootNav";
+import RootFooter from "../../comps/RootFooter";
+import PageBread from "../../comps/util/PageBread";
+import EventPageSeo from "../../comps/eventPageComps/EventPageSeo";
+import EventRootHero from "../../comps/eventPageComps/EventRootHero";
 import EventRootDetails from "../../comps/eventPageComps/EventRootDetails";
-
-import EventHero from "../../comps/eventPageComps/EventHero";
-import EventRootReview from "../../comps/eventPageComps/EventRootReview";
-import EventDetails from "../../comps/eventPageComps/EventDetails";
-import Seofields from "../../comps/util/SeoFields";
+import EventRootTestimonials from "../../comps/eventPageComps/EventRootTestimonials";
 
 const showSingleEvent = (props) => {
-  const toTitleCase = (title) => {
-    const titlefres = title.replace(/-/g, " ");
-    const btitle = titlefres
-      .split(" ")
-      .map((word) => {
-        return word.charAt(0).toUpperCase() + word.slice(1);
-      })
-      .join(" "); // breadcum title capitalize
-
-    return (
-      <div className="bitem flex items-center">
-        <span>{btitle}</span>{" "}
-        <span className="bsep text-gold">
-          <FiChevronRight />
-        </span>
-      </div>
-    );
-  };
-
   return (
     <>
       {/* =======header content======== */}
-      <Seofields meta={props.pagemeta} />
-      <Homenav
-        locationlist={props.locationlist}
-        activitylist={props.activitylist}
-        eventlist={props.eventlist}
+      <EventPageSeo meta={props.pageMeta} />
+      <RootNav
+        locationSlugList={props.locationSlugList}
+        escapeGameSlugList={props.escapeGameSlugList}
+        otherGameSlugList={props.otherGameSlugList}
+        eventSlugList={props.eventSlugList}
       />
       {/* =======header content ======== end */}
 
@@ -51,39 +28,19 @@ const showSingleEvent = (props) => {
         style={{ backgroundImage: "url('/assets/game-dt-bg.jpg')" }}
       >
         {/* =======breadcum content and breadcum========  */}
-        <div className="breadcums  py-1 md:py-2 bg-[#fffceb]">
-          <Breadcrumbs
-            replaceCharacterList={[{ from: "-", to: " " }]}
-            listClassName="max-w-7xl mx-auto px-2 md:px-4 breadcum-list text-sm md:text-base lg:text-lg"
-            inactiveItemClassName="inline-block text-[#6a6a6a] hover:text-red-700"
-            activeItemClassName="inline-block text-[#212121]"
-            rootLabel="home"
-            transformLabel={(title) => {
-              return toTitleCase(title);
-            }}
-          ></Breadcrumbs>
-        </div>
+        <PageBread />
         {/* =======breadcum content and breadcum root page template======== end */}
 
-        <EventHero pagedata={props.pagedata} />
-        <EventRootDetails
-          eventdata={props.eventdata}
-          eventname={props.pagedata.eventname}
-        />
-        {/*<EventContact
-          eventname={props.pagedata.event_name}
-          locationlist={props.locationlist}
-          eventlist={props.eventlist}
-          eventslug={props.pagedata.event_slug}
-          />*/}
-        <EventRootReview reviews={props.reviews} />
+        <EventRootHero pageData={props.pageData} />
+        <EventRootDetails eventDetaliData={props.eventDetaliData} />
+        <EventRootTestimonials testimonialData={props.eventTestimonialData} />
 
         {/* =========================================================================================main content ======== end */}
       </div>
 
-      <Footer
-        locationlist={props.locationlist}
-        totallocations={props.pagedata.totalLocations}
+      <RootFooter
+        locationSlugList={props.locationSlugList}
+        totalLocations={props.totalLocations}
       />
     </>
   );
@@ -92,11 +49,11 @@ const showSingleEvent = (props) => {
 export default showSingleEvent;
 
 export const getStaticPaths = async () => {
-  const res = await getAllEventList();
+  const res = await getEventSlugs();
 
-  const paths = res.map((eventSlug) => {
+  const paths = res.map((eventSlugs) => {
     return {
-      params: { eventSlug: eventSlug.event_slug.toString() },
+      params: { eventSlug: eventSlugs.eventSlug.toString() },
     };
   });
 
@@ -107,17 +64,20 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-  const eventPageData = await geEventPagetData(context.params.eventSlug);
+  const DATA = await getEventPagetData(context.params.eventSlug);
+  // console.log(eventPageData);
 
   return {
     props: {
-      pagemeta: eventPageData.pagemeta,
-      pagedata: eventPageData.pagedata,
-      eventdata: eventPageData.eventdata,
-      reviews: eventPageData.reviews,
-      locationlist: eventPageData.locationlist,
-      activitylist: eventPageData.activitylistSlug,
-      eventlist: eventPageData.eventlistSlug,
+      locationSlugList: DATA.locationSlugList,
+      escapeGameSlugList: DATA.escapeGameSlugList,
+      otherGameSlugList: DATA.otherGameSlugList,
+      eventSlugList: DATA.eventSlugList,
+      totalLocations: DATA.totalLocations,
+      pageMeta: DATA.pageMeta,
+      pageData: DATA.pageData,
+      eventDetaliData: DATA.eventDetaliData,
+      eventTestimonialData: DATA.eventTestimonialData,
     },
     revalidate: 30,
   };

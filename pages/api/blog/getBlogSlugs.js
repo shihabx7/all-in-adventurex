@@ -1,5 +1,5 @@
 import { apiSetting, apiUrl } from "../../../lib/apiSettings";
-import { prevBlogs } from "../../../lib/blogFormation";
+
 const formatSlugs = (dataArr) => {
   let formatedData = [];
   for (let i = 0; i < dataArr.length; i++) {

@@ -1,11 +1,38 @@
-import { getTotal } from "./AllDataList/getTotal";
-export const getDealsCouponPageData = () => {
-  const dealsCouponPageData = {
-    locationlist: getTotal().locationlist,
-    activitylistSlug: getTotal().activitylistSlug,
-    eventlistSlug: getTotal().eventlistSlug,
-    virtualgameListSlug: getTotal().virtualgameSlug,
-    pagemeta: {
+import { apiSetting, apiUrl } from "../../lib/apiSettings";
+import {
+  locationSlugListQuery,
+  allActivitiesSluglistQuery,
+  allEventsSluglistQuery,
+} from "../../lib/query/navMenuQuery";
+import {
+  getLocationSlugList,
+  getAllEscapeGameSlugList,
+  getAllOtherGameSlugList,
+  getAllEventSlugList,
+} from "../../lib/menuDataFormation";
+export const getDealsCouponPageData = async () => {
+  // fetch all location list as an array
+  const locationListRes = await fetch(locationSlugListQuery, apiSetting);
+  const locationListObj = await locationListRes.json();
+  const locationListData = locationListObj.data;
+  // fetch all activity list as an array
+  const activityListRes = await fetch(allActivitiesSluglistQuery, apiSetting);
+  const activityListObj = await activityListRes.json();
+  const actctivityListResData = activityListObj.data;
+  // fetch all event list as an array
+  const eventListRes = await fetch(allEventsSluglistQuery, apiSetting);
+  const eventListResObj = await eventListRes.json();
+  const eventListResData = eventListResObj.data;
+
+  const totalActivities = actctivityListResData.length;
+  const totalLocations = locationListData.length;
+  const data = {
+    locationSlugList: getLocationSlugList(locationListData),
+    escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
+    otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
+    eventSlugList: getAllEventSlugList(eventListResData),
+    totalLocations: totalLocations,
+    pageMeta: {
       title: "Deals and Coupons | All In Adventures | Formerly Mystery Room",
       description:
         "Check out the best discounts on escape rooms and other fun games for any All In Adventures location. Grab the deal using the promo codes below!",
@@ -17,12 +44,12 @@ export const getDealsCouponPageData = () => {
         "/assets/gn-mobile-hero/allinadventures-deals-and-coupon-hero.jpg",
     },
 
-    pagedata: {
+    pageData: {
       pagetitle: "DEALS AND COUPONS",
       pagesubtitle:
         "Check out the best discounts on escape rooms and other fun games for any All In Adventures location. Grab the deal using the promo codes below!",
 
-      totalLocations: getTotal().totalLocations,
+      totalLocations: totalLocations,
       coverimageL:
         "/assets/gn-desktop-hero/allinadventures-deals-and-coupon-hero.jpg",
       coverimageM:
@@ -30,6 +57,15 @@ export const getDealsCouponPageData = () => {
     },
 
     faqlist: [
+      {
+        id: 1,
+        category: "deals",
+        group: "deals",
+        ques: "How can I get a discount?",
+        ans: [
+          "Glad you asked! Our best offers come from our VIP Rewards Program where you will receive points each time you play that you can use to redeem free experiences and receive additional surprise offers every month! In addition, we offer many other discounts such as our Play It Again offer or our military or mall employee discounts.",
+        ],
+      },
       {
         id: 2,
         category: "deals",
@@ -45,8 +81,15 @@ export const getDealsCouponPageData = () => {
         group: "deals",
         ques: "It's my birthday! Do you have any discounts for me?",
         ans: [
-          "Yes! Simply show us proof that it's your birthday (such as an ID) and you will earn a FREE admission.",
+          "Yes! By signing up for our VIP Rewards Program, you will earn a FREE admission on your birthday each year! Choose a location here to sign up.",
         ],
+      },
+      {
+        id: 4,
+        category: "deals",
+        group: "deals",
+        ques: "I am already a VIP Rewards Member. How many discounts can I use at one time?",
+        ans: ["You can only use one offer at a time per transaction."],
       },
 
       {
@@ -103,5 +146,5 @@ export const getDealsCouponPageData = () => {
     ],
   };
 
-  return dealsCouponPageData;
+  return data;
 };

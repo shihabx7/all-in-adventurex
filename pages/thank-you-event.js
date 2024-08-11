@@ -1,38 +1,48 @@
-
-import Homenav from "../comps/Homenav";
-import Footer from "../comps/Footer";
+import RootNav from "../comps/RootNav";
+import RootFooter from "../comps/RootFooter";
 import ThankYouBox from "../comps/util/ThankYouBox";
 
 import { getThankYouEventPageData } from "./api/getThankYouEventPageData";
-import Seofields from '../comps/util/SeoFields';
-const ThankYou=(props)=>{
+import Seofields from "../comps/util/SeoFields";
+const ThankYou = (props) => {
+  return (
+    <>
+      <Seofields meta={props.pagemeta} />
+      <RootNav
+        locationSlugList={props.locationSlugList}
+        escapeGameSlugList={props.escapeGameSlugList}
+        otherGameSlugList={props.otherGameSlugList}
+        eventSlugList={props.eventSlugList}
+      />
+      <div
+        id="mainContent"
+        className="main-content nobtn-main-content bg-center"
+      >
+        <ThankYouBox />
+      </div>
 
- 
-    return(
-                <>
-                    <Seofields meta={props.pagemeta}/>
-                     <Homenav  locationlist={props.locationlist}
-                                activitylist={props.activitylist}
-                                eventlist={props.eventlist}/>
-                     <ThankYouBox/>
-                     <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
-                </>
-    )
-}
+      <RootFooter
+        locationSlugList={props.locationSlugList}
+        totalLocations={props.totalLocations}
+      />
+    </>
+  );
+};
 
-export default ThankYou
+export default ThankYou;
 
-export const getStaticProps=async()=>{
+export const getStaticProps = async () => {
+  const DATA = await getThankYouEventPageData();
 
-    const tdata=await getThankYouEventPageData()
-
-    return {
-        props:{
-            pagedata:tdata.pagedata,
-            pagemeta:tdata.pagemeta,
-            locationlist:tdata.locationlist,
-            activitylist:tdata.activitylistSlug,
-             eventlistSlug:tdata.eventlistSlug,
-        }
-    }
-}
+  return {
+    props: {
+      locationSlugList: DATA.locationSlugList,
+      escapeGameSlugList: DATA.escapeGameSlugList,
+      otherGameSlugList: DATA.otherGameSlugList,
+      eventSlugList: DATA.eventSlugList,
+      totalLocations: DATA.totalLocations,
+      pagedata: DATA.pageData,
+      pagemeta: DATA.pageMeta,
+    },
+  };
+};

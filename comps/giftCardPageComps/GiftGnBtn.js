@@ -1,24 +1,22 @@
 import React, { useState } from "react";
 
-function GiftGnBtn({ title, bookingData, setShowGiftBookingList }) {
-  const giftBookingData = bookingData ? bookingData : false;
-
-  const handleClick = (bookingData) => {
-    if (!bookingData) {
+function GiftGnBtn({ title, giftBooking, setShowGiftBookingList }) {
+  const handleClick = (giftBooking) => {
+    if (!giftBooking) {
       setShowGiftBookingList(true);
       const body = document.getElementsByTagName("body")[0];
       body.classList.add("overflow-hidden");
     } else {
-      bookGift(bookingData);
+      bookGift(giftBooking);
     }
   };
   const bookGift = (bookingData) => {
     FH.open({
-      shortname: bookingData.shortname,
+      shortname: bookingData.shortName,
       fallback: "simple",
       fullItems: "yes",
       flow: bookingData.flow,
-      view: { item: bookingData.item },
+      view: { item: bookingData.itemNo },
     });
   };
   return (
@@ -26,7 +24,7 @@ function GiftGnBtn({ title, bookingData, setShowGiftBookingList }) {
       <div className="gift-btn-container inline-block">
         <button
           onClick={() => {
-            handleClick(giftBookingData);
+            handleClick(giftBooking);
           }}
           className="relative bg-red-600 hover:bg-red-700 font-medium md:text-lg text-white  py-4 px-16 md:px-16 rounded-full"
         >

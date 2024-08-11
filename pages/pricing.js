@@ -1,6 +1,5 @@
-import Head from "next/dist/shared/lib/head";
-import Homenav from "../comps/Homenav";
-import Footer from "../comps/Footer";
+import RootNav from "../comps/RootNav";
+import RootFooter from "../comps/RootFooter";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
 // page template=============
@@ -42,10 +41,11 @@ const Pricing = (props) => {
     <>
       {/* =======header content======== */}
       <Seofields meta={props.pagemeta} />
-      <Homenav
-        locationlist={props.locationlist}
-        activitylist={props.activitylist}
-        eventlist={props.eventlist}
+      <RootNav
+        locationSlugList={props.locationSlugList}
+        escapeGameSlugList={props.escapeGameSlugList}
+        otherGameSlugList={props.otherGameSlugList}
+        eventSlugList={props.eventSlugList}
       />
       {/* =======header content ======== end */}
 
@@ -82,9 +82,9 @@ const Pricing = (props) => {
         {/* =========================================================================================main content ======== end */}
       </div>
 
-      <Footer
-        locationlist={props.locationlist}
-        totallocations={props.pagedata.totalLocations}
+      <RootFooter
+        locationSlugList={props.locationSlugList}
+        totalLocations={props.totalLocations}
       />
     </>
   );
@@ -93,19 +93,22 @@ const Pricing = (props) => {
 export default Pricing;
 
 export const getStaticProps = async () => {
-  const pricingPageData = await getPricingPageData();
+  const DATA = await getPricingPageData();
 
   return {
     props: {
-      pagedata: pricingPageData.pagedata,
-      pagemeta: pricingPageData.pagemeta,
-      locationlist: pricingPageData.locationlist,
-      activitylist: pricingPageData.activitylistSlug,
-      eventlist: pricingPageData.eventlistSlug,
-      inpersonpricing: pricingPageData.inpersonpricing,
-      nextgenpricing: pricingPageData.nextgenpricing,
-      questgenpricing: pricingPageData.questgenpricing,
-      faqlist: pricingPageData.faqlist,
+      locationSlugList: DATA.locationSlugList,
+      escapeGameSlugList: DATA.escapeGameSlugList,
+      otherGameSlugList: DATA.otherGameSlugList,
+      eventSlugList: DATA.eventSlugList,
+
+      totalLocations: DATA.totalLocations,
+      pagedata: DATA.pageData,
+      pagemeta: DATA.pageMeta,
+      inpersonpricing: DATA.inpersonpricing,
+      nextgenpricing: DATA.nextgenpricing,
+      questgenpricing: DATA.questgenpricing,
+      faqlist: DATA.faqlist,
     },
     revalidate: 30,
   };

@@ -1,4 +1,3 @@
-import { getTotal } from "../AllDataList/getTotal";
 export const AllblogData = () => {
   return AllblogDataobj;
 };

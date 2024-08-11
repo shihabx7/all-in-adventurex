@@ -59,7 +59,7 @@ export default async function fransContactHandler(req, res) {
       to: "franchise@allinadventures.com",
       //to: "shihab.dgency@gmail.com",
       replyTo: retData.Email,
-      bcc: "dgency.com@gmail.com",
+      bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
       subject: `Franchise Contact`,
       html: `
           

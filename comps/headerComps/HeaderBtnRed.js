@@ -1,6 +1,24 @@
 import Link from "next/link";
 import Script from "next/script";
 
+const bookAll = (bookingData) => {
+  FH.open({
+    shortname: bookingData.shortname,
+    fallback: "simple",
+    fullItems: "yes",
+    flow: bookingData.flow,
+    view: "items",
+  });
+};
+const bookGame = (bookingData) => {
+  FH.open({
+    shortname: bookingData.shortname,
+    fallback: "simple",
+    fullItems: "yes",
+    flow: bookingData.flow,
+    view: { item: bookingData.item },
+  });
+};
 const HeaderBtnRed = (props) => {
   const showloc = () => {
     const body = document.getElementsByTagName("body")[0];
@@ -8,36 +26,6 @@ const HeaderBtnRed = (props) => {
     document.getElementById("locmenu").classList.remove("hidden");
   };
 
-  const bookAll = (bookingData) => {
-    FH.open({
-      shortname: bookingData.shortname,
-      fallback: "simple",
-      fullItems: "yes",
-      flow: bookingData.flow,
-      view: "items",
-    });
-  };
-  const bookGame = (bookingData) => {
-    FH.open({
-      shortname: bookingData.shortname,
-      fallback: "simple",
-      fullItems: "yes",
-      flow: bookingData.flow,
-      view: { item: bookingData.item },
-    });
-  };
-  const bookVgame = (vgamebooking) => {
-    FH.open({
-      shortname: vgamebooking.shortname,
-      fallback: "simple",
-      fullItems: "yes",
-      flow: vgamebooking.flow,
-      view: { item: vgamebooking.item },
-    });
-  };
-  const bookVgameLink = (link) => {
-    window.open(link, "_blank");
-  };
   return (
     <>
       <div className="heade-btn">

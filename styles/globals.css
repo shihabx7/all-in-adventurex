@@ -1,6 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto:wght@300;400;500;700;900&display=swap");
 @tailwind base;
+
+/* Firefox */
+* {
+  scrollbar-width: 6px;
+  scrollbar-color: #888;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #222222;
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -22,6 +44,10 @@ a {
   /* Code for Firefox */
   color: whitesmoke;
   background: blue;
+}
+.dt-picker .react-date-picker__wrapper {
+  border: none;
+  width: 100%;
 }
 .font-os {
   font-family: "Oswald", sans-serif;
@@ -533,12 +559,12 @@ a {
   background: linear-gradient(
     rgba(0, 0, 0, 0.9),
     rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.1)
+    rgba(0, 0, 0, 0.03)
   );
 }
 .otg-bottom {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.03),
     rgba(0, 0, 0, 0.78),
     rgba(0, 0, 0, 0.88),
     rgba(0, 0, 0, 0.98)
@@ -632,6 +658,11 @@ a {
 }
 .pl-or-4 img {
   max-width: 200px;
+}
+.ev-desc p:nth-child(2) {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #000000;
 }
 .event-card {
   box-shadow: 1px 1px 10px #464646;

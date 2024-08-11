@@ -1,87 +1,74 @@
-import Head from "next/head";
-import HomeHero from "../comps/homepagecomps/HomeHero";
-import Howtobook from "../comps/homepagecomps/Howtobook";
-import InpersonEscapeSlider from "../comps/homepagecomps/InpersonEscapeSlider";
-import GameSlider from "../comps/homepagecomps/GameSlider";
-import PlaningEventsSlider from "../comps/homepagecomps/PlaningEventsSlider";
-import PysicalEscape from "../comps/homepagecomps/PysicalEscape";
+import { getHomePageData } from "./api/getHomePageData";
+import PageSeo from "../comps/util/PageSeo";
+import RootNav from "../comps/RootNav";
+import RootFooter from "../comps/RootFooter";
 
-import BuyGiftCard from "../comps/homepagecomps/BuyGiftCard";
+import HomeHero from "../comps/homepagecomps/HomeHero";
+import PageVideo from "../comps/homepagecomps/PageVideo";
+
+import EscaeGameSlider from "../comps/homepagecomps/EscaeGameSlider";
+import OtherGameSlider from "../comps/homepagecomps/OtherGameSlider";
+import EventSlider from "../comps/homepagecomps/EventSlider";
+import GiftCards from "../comps/homepagecomps/GiftCards";
 import WhatIsEscape from "../comps/homepagecomps/WhatIsEscape";
 import WhoCanplay from "../comps/homepagecomps/WhoCanPlay";
-import HomeReviewSlider from "../comps/homepagecomps/HomeReviewSlider";
-import Homenav from "../comps/Homenav";
-import Footer from "../comps/Footer";
-import { useEffect, useState } from "react";
-import Script from "next/script";
-import { Homepagedata } from "./api/homepagedata";
-import Seofields from "../comps/util/SeoFields";
+import TestimonialSlider from "../comps/homepagecomps/TestimonialSlider";
 
-export default function Home({
-  pagemeta,
-  pagedata,
-  inpersongames,
-  othergames,
-  virtualgames,
-  events,
-  reviews,
-  locationlist,
-  activitylistSlug,
-  eventlistSlug,
-  virtualgameListSlug,
-}) {
+export default function Home(props) {
   return (
     <>
-      <Seofields meta={pagemeta} />
-      <Homenav
-        locationlist={locationlist}
-        activitylist={activitylistSlug}
-        eventlist={eventlistSlug}
+      <PageSeo meta={props.pageMeta} />
+      <RootNav
+        locationSlugList={props.locationSlugList}
+        escapeGameSlugList={props.escapeGameSlugList}
+        otherGameSlugList={props.otherGameSlugList}
+        eventSlugList={props.eventSlugList}
       />
 
       <div id="mainContent" className="main-content">
-        <div
-          className="home-hero bg-[#111111]"
-          style={{
-            backgroundImage:
-              "url('/assets/allinadventures-escape-room-home-hero.jpg')",
-          }}
-        >
-          <HomeHero pagedata={pagedata}></HomeHero>
-        </div>
-        <Howtobook></Howtobook>
-        <InpersonEscapeSlider inpersongames={inpersongames} />
-        <PysicalEscape othergames={othergames} />
-
-        <PlaningEventsSlider events={events} />
-        <BuyGiftCard locationlist={locationlist} />
+        <HomeHero pageData={props.pageData} />
+        <PageVideo pageVideo={props.pageVideo} />
+        <EscaeGameSlider escapeGameList={props.escapeGameList} />
+        {props.otherGameList.hasGames ? (
+          <OtherGameSlider otherGameList={props.otherGameList} />
+        ) : (
+          <></>
+        )}
+        <EventSlider eventList={props.eventList} />
+        <GiftCards locationSlugList={props.locationSlugList} />
         <WhatIsEscape />
         <WhoCanplay />
-        <HomeReviewSlider reviews={reviews} />
+        <TestimonialSlider testimonialList={props.testimonialList} />
       </div>
 
-      <Footer
-        locationlist={locationlist}
-        totallocations={pagedata.totalLocations}
+      <RootFooter
+        locationSlugList={props.locationSlugList}
+        totalLocations={props.totalLocations}
       />
     </>
   );
 }
 
 export const getStaticProps = async () => {
-  const pagedata = await Homepagedata();
+  const DATA = await getHomePageData();
+  //console.log(data);
   return {
     props: {
-      pagemeta: pagedata.pagemeta,
-      pagedata: pagedata.homeagedata,
-      inpersongames: pagedata.inpersongames,
-      othergames: pagedata.otherphysicalgames,
-      virtualgames: pagedata.virtualgames,
-      events: pagedata.events,
-      reviews: pagedata.homereviews,
-      locationlist: pagedata.locationlist,
-      eventlistSlug: pagedata.eventlistSlug,
-      activitylistSlug: pagedata.activitylistSlug,
+      // locationlist: DATA.locationlist,
+      // eventlistSlug: DATA.eventlistSlug,
+      // activitylistSlug: DATA.activitylistSlug,
+      totalLocations: DATA.totalLocations,
+      locationSlugList: DATA.locationSlugList,
+      escapeGameSlugList: DATA.escapeGameSlugList,
+      otherGameSlugList: DATA.otherGameSlugList,
+      eventSlugList: DATA.eventSlugList,
+      pageMeta: DATA.pageMeta,
+      pageData: DATA.pageData,
+      pageVideo: DATA.pageVideo,
+      escapeGameList: DATA.escapeGameList,
+      otherGameList: DATA.otherGameList,
+      eventList: DATA.eventList,
+      testimonialList: DATA.testimonialList,
     },
 
     // - At most once every 10 seconds

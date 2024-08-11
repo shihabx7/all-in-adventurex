@@ -204,13 +204,10 @@ const ApplicantInfo2 = ({
             >
               <option value="">Select location</option>
               {locationlist.map((item, index) => {
-                return item.cities.map((itm) => {
+                return item.locations.map((item) => {
                   return (
-                    <option
-                      key={index + itm.id}
-                      value={itm.city + ", " + item.state}
-                    >
-                      {itm.city}, {item.state}
+                    <option key={index + item.id} value={item.locationSlug}>
+                      {item.locationName}
                     </option>
                   );
                 });

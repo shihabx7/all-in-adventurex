@@ -7,11 +7,7 @@ function GiftVenGram(props) {
       <div className="gift-venn-container-wrapper max-w-7xl mx-auto py-16 md:py-24 lg:py-32 px-4 md:px-8">
         <div className="gsvenn-container ">
           <div className="sec-title gs-title max-w-[768px] mx-auto">
-            <TitleSeparator
-              title="THE GIFT THAT EVERYONE WILL LOVE"
-              color="dark-gold"
-              weight="font-bold"
-            />
+            <TitleSeparator title="THE GIFT THAT EVERYONE WILL LOVE" />
             <p className="text-lg text-[#2e2e2e] mt-2 text-center">
               Escape room gift cards are the <b>universal perfect gift, </b>
               proven by mathematics. 😁
@@ -34,7 +30,7 @@ function GiftVenGram(props) {
                     ? props.setShowGiftBookingList
                     : false
                 }
-                bookingData={props.bookingData ? props.bookingData : false}
+                giftBooking={props.giftBooking ? props.giftBooking : false}
               />
             </div>
           </div>

@@ -1,39 +1,48 @@
-
-import Homenav from "../comps/Homenav";
-import Footer from "../comps/Footer";
+import RootNav from "../comps/RootNav";
+import RootFooter from "../comps/RootFooter";
 import Custom404Err from "../comps/util/Custom404Err";
 import getErrPageData from "./api/getErrPageData";
 
 import Seofields from "../comps/util/SeoFields";
-const Custom404=(props)=>{
+const Custom404 = (props) => {
+  return (
+    <>
+      <Seofields meta={props.pagemeta} />
+      <RootNav
+        locationSlugList={props.locationSlugList}
+        escapeGameSlugList={props.escapeGameSlugList}
+        otherGameSlugList={props.otherGameSlugList}
+        eventSlugList={props.eventSlugList}
+      />
+      <div
+        id="mainContent"
+        className="main-content nobtn-main-content bg-center"
+      >
+        <Custom404Err />
+      </div>
+      <RootFooter
+        locationSlugList={props.locationSlugList}
+        totalLocations={props.totalLocations}
+      />
+    </>
+  );
+};
 
- 
-    return(
-                <>
-                    <Seofields meta={props.pagemeta}/>
-                     <Homenav locationlist={props.locationlist}
-            activitylist={props.activitylist}
-            eventlist={props.eventlist}/>
-                     <Custom404Err/>
-                     <Footer locationlist={props.locationlist} totallocations={props.pagedata.totalLocations}/>
-                </>
-    )
-}
+export default Custom404;
 
-export default Custom404
+export const getStaticProps = async () => {
+  const DATA = await getErrPageData();
 
-export const getStaticProps=async()=>{
+  return {
+    props: {
+      locationSlugList: DATA.locationSlugList,
+      escapeGameSlugList: DATA.escapeGameSlugList,
+      otherGameSlugList: DATA.otherGameSlugList,
+      eventSlugList: DATA.eventSlugList,
+      totalLocations: DATA.totalLocations,
 
-    const tdata=await getErrPageData()
- 
-
-    return {
-        props:{
-            pagedata:tdata.pagedata,
-            pagemeta:tdata.pagemeta,
-            locationlist:tdata.locationlist,
-            activitylist:tdata.activitylistSlug,
-            eventlist:tdata.eventlistSlug,
-        }
-    }
-}
+      pagedata: DATA.pageData,
+      pagemeta: DATA.pageMeta,
+    },
+  };
+};

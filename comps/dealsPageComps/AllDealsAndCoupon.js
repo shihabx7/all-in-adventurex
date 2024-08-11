@@ -37,21 +37,12 @@ const AllDealsAndCoupon = (props) => {
         })}
         <CouponDisplay />
         <div className="view-all flex justify-center mt-8">
-          <div className="game-btn-all ">
-            <a
-              href="/activities/"
-              className="max-w-[260px] md:max-w-[280px] my-4 block mx-auto uppercase py-3 md:py-4 px-10 text-lg text-white font-medium border-2 border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 rounded-full text-center"
-            >
-              VIEW ALL GAMES
-            </a>
-
-            <a
-              href="/events/"
-              className="max-w-[260px] md:max-w-[280px] my-4 block mx-auto uppercase py-3 md:py-4 px-10 text-lg text-[#424242] hover:text-white font-medium border-2 border-red-600 hover:border-red-700 hover:bg-red-700 rounded-full text-center"
-            >
-              VIEW ALL EVENTS
-            </a>
-          </div>
+          <a
+            href="/rewards-program"
+            className="flex text-lg  justify-center space-x-1 items-center text-red-600 hover:text-red-700 font-medium"
+          >
+            <span>Learn more about reward program</span> <FiChevronRight />
+          </a>
         </div>
       </div>
     </div>

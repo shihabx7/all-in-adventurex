@@ -145,21 +145,23 @@ const LocationHomeHero = (props) => {
                 {props.pagedata.locationcity}, {props.pagedata.locationstate}
               </p>
               <h1 className="text-gold font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-2 rm:mb-2 md:mb-4 lg:mb-6 font-os uppercase max-w-[1000px] mx-auto">
-                {props.pagedata.locationcity == "Poughkeepsie" && (
+                {(props.pagedata.locationcity == "West Nyack" ||
+                  props.pagedata.locationcity == "Poughkeepsie") && (
                   <>
                     ESCAPE ROOMS AND AXE THROWING IN{" "}
                     {props.pagedata.locationcity},{" "}
                     {props.pagedata.locationstate}
                   </>
                 )}
-                {props.pagedata.locationcity !== "Poughkeepsie" && (
-                  <>
-                    {" "}
-                    ESCAPE ROOMS AND FUN THINGS TO DO IN{" "}
-                    {props.pagedata.locationcity},{" "}
-                    {props.pagedata.locationstate}
-                  </>
-                )}
+                {props.pagedata.locationcity !== "West Nyack" &&
+                  props.pagedata.locationcity !== "Poughkeepsie" && (
+                    <>
+                      {" "}
+                      ESCAPE ROOMS AND FUN THINGS TO DO IN{" "}
+                      {props.pagedata.locationcity},{" "}
+                      {props.pagedata.locationstate}
+                    </>
+                  )}
               </h1>
               <div
                 className="text-gray-100 max-w-[800px] mx-auto text-center lg:text-lg"

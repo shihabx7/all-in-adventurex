@@ -80,14 +80,18 @@ const GiftRdmCarousel = (props) => {
         renderDotsOutside={false}
         partialVisible={true}
       >
-        {props.redeemgames.map((game) => {
+        {props.giftReedem.map((game) => {
           return (
             <div
               key={game.id}
               className="text-white rounded-lg bg-gray-300 game-slider-card card-border group mb-shadow bg-cover relative"
             >
               <div className="card-img rounded-lg">
-                <img className="rounded-lg" src={game.bgimg}></img>
+                <img
+                  alt={game.sliderImage.alt}
+                  className="rounded-lg"
+                  src={game.sliderImage.url}
+                ></img>
               </div>
               <div className="rounded-lg card-container absolute top-0 left-0 w-full h-full flex flex-col justify-end">
                 <div className="card-bottom-gift rounded-[6px] py-4 px-2 pt-6 pb-8 2xl:pb-10 4xl:pb-12">
@@ -99,10 +103,10 @@ const GiftRdmCarousel = (props) => {
                   </div>
                   <div className="card-game-descs text-center">
                     <h3 className="card-game-title text-[22px] rm:text-[25px] sm:text-2xl lg:text-3xl xl:text-[27px] 3xl:text-[26px] 4xl:text-3xl font-bold uppercase text-white">
-                      {game.title}
+                      {game.activityName}
                     </h3>
                     <p className="text-gray-200 text-[13px] rm:text-[15px] lg:text-[16px] 3xl:text-[15px] 4xl:text-[17px] px-2 lg:px-3 3xl:px-2 4xl:px-3">
-                      {game.description}
+                      {game.sliderText}
                     </p>
                   </div>
                 </div>

@@ -1,4 +1,3 @@
-import { getTotal } from "../AllDataList/getTotal";
 import { apiSetting, apiUrl } from "../../../lib/apiSettings";
 
 const formatSlugs = (dataArr) => {

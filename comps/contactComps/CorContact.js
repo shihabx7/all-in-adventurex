@@ -1,9 +1,8 @@
 import TitleSeparator from "../util/TitleSeparator";
 
 import { useState } from "react";
-import { useRouter } from "next/router";
 
-const CorContact = () => {
+const CorContact = (props) => {
   const [err, setErr] = useState(false);
   const [emptyErr, setEmptyErr] = useState(true);
   const [formErr, setFormErr] = useState({
@@ -160,8 +159,8 @@ const CorContact = () => {
   const [isSend, setIsSend] = useState(false);
   const submitForm = async (event) => {
     event.preventDefault();
-    console.log("clicked");
-    console.log(fieldVlue);
+    // console.log("clicked");
+    // console.log(fieldVlue);
     if (!err) {
       if (
         fieldVlue.fName != "" &&
@@ -213,16 +212,14 @@ const CorContact = () => {
     <div className="c-contact py-16 md:py-20 lg:py-28  bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] bg-repeat">
       <div className="section-container max-w-7xl mx-auto relative z-30">
         <div className="section-title px-4">
-          <TitleSeparator
-            title="SUBMIT CORPORATE INQUIRIES ONLY"
-            color="dark-gold"
-            weight="font-bold"
-          />
-          <div className="max-w-2xl md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-12 lg:mb-16">
-            <p className="text-gray-700 md:px-8">
-              Fill out the form below and our corporate team will be in touch
-              shortly.
-            </p>
+          <TitleSeparator title={props.contactData.formSectionTitle} />
+          <div className="max-w-[840px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-12 lg:mb-16">
+            <div
+              className="text-gray-700 md:px-8"
+              dangerouslySetInnerHTML={{
+                __html: props.contactData.formSectionSubTitle,
+              }}
+            ></div>
           </div>
         </div>
 
@@ -240,13 +237,13 @@ const CorContact = () => {
             <div className="c-contact-info-list mt-6 lg:mt-8 ">
               <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-t border-b border-[#D2C6AA]">
                 <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg  uppercase">
-                  phone
+                  PHONE
                 </h4>
                 <a
-                  href="tel:+1 844-502-5546"
+                  href={"tel:" + props.contactData.phone}
                   className="text-lg text-[#232323] block hover:text-red-700"
                 >
-                  +1 844-502-5546
+                  {props.contactData.phone}
                 </a>
               </div>
               <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
@@ -254,10 +251,10 @@ const CorContact = () => {
                   FRANCHISING
                 </h4>
                 <a
-                  href="mailto:franchise@allinadventures.com"
+                  href={"mailto:" + props.contactData.franchiseEmail}
                   className="text-lg text-[#232323] block hover:text-red-700"
                 >
-                  franchise@allinadventures.com
+                  {props.contactData.franchiseEmail}
                 </a>
               </div>
               <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
@@ -265,10 +262,10 @@ const CorContact = () => {
                   SALES
                 </h4>
                 <a
-                  href="mailto:sales@allinadventures.com"
+                  href={"mailto:" + props.contactData.salesEmail}
                   className="text-lg text-[#232323] block hover:text-red-700"
                 >
-                  sales@allinadventures.com
+                  {props.contactData.salesEmail}
                 </a>
               </div>
               <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
@@ -276,10 +273,10 @@ const CorContact = () => {
                   CUSTOMER SERVICE
                 </h4>
                 <a
-                  href="mail:custsvc@allinadventures.com"
+                  href={"mailto:" + props.contactData.supportEmail}
                   className="text-lg text-[#232323] block hover:text-red-700"
                 >
-                  support@allinadventures.com
+                  {props.contactData.supportEmail}
                 </a>
               </div>
               <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
@@ -287,10 +284,10 @@ const CorContact = () => {
                   OPERATIONS
                 </h4>
                 <a
-                  href="mailto:ops@allinadventures.com"
+                  href={"mailto:" + props.contactData.operationEmail}
                   className="text-lg text-[#232323] block hover:text-red-700"
                 >
-                  ops@allinadventures.com
+                  {props.contactData.operationEmail}
                 </a>
               </div>
               <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
@@ -298,10 +295,10 @@ const CorContact = () => {
                   CAREERS
                 </h4>
                 <a
-                  href="mailto:careers@allinadventures.com"
+                  href={"mailto:" + props.contactData.careersEmail}
                   className="text-lg text-[#232323] block hover:text-red-700"
                 >
-                  careers@allinadventures.com
+                  {props.contactData.careersEmail}
                 </a>
               </div>
               <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
@@ -309,10 +306,10 @@ const CorContact = () => {
                   BILLING
                 </h4>
                 <a
-                  href="mailto:billing@allinadventures.com"
+                  href={"mailto:" + props.contactData.billingEmail}
                   className="text-lg text-[#232323] block hover:text-red-700"
                 >
-                  billing@allinadventures.com
+                  {props.contactData.billingEmail}
                 </a>
               </div>
             </div>
@@ -423,10 +420,14 @@ const CorContact = () => {
                       required
                     >
                       <option value="">Choose Inquiry Type</option>
+
                       <option value="General enquiry">General Inquiry</option>
                       <option value="Group booking">Group booking</option>
                       <option value="Birthday party">Birthday party</option>
                       <option value="Corporate event">Corporate event</option>
+                      <option value="Corporate Membership Discount">
+                        Corporate Membership Discount
+                      </option>
                       <option value="Careers">Careers</option>
                       <option value="Franchise enquiry">
                         Franchise Inquiry

@@ -27,38 +27,34 @@ const GiftMenu = (props) => {
         </span>
       </div>
       <div className="loc-menu-content px-4">
-        <TitleSeparator
-          title="CHOOSE THE LOCATION TO BUY GIFT CARDS"
-          color="text-white"
-          weight="font-semibold"
-        />
+        <TitleSeparator title="CHOOSE THE LOCATION TO BUY GIFT CARDS" />
         <div className="loc-menu-grid max-w-6xl mx-auto mt-4 pb-8">
           {/*==================location xcolumn======================*/}
-          {props.locationlist.map((loc) => {
+          {props.locationSlugList.map((loc) => {
             return (
               <div key={loc.id} className="loc-menu-box ">
                 {/*==================location NEW YORK======================*/}
                 <div className="loc-menu-head mb-2">
                   <h3 className="text-light-gold text-xl md:text-2xl font-bold">
                     <span className="inline-block pb-1 border-b border-light-gold">
-                      {loc.state_name}
+                      {loc.stateName}
                     </span>
                   </h3>
                 </div>
                 <div className="loc-item-box py-2 border-dark-coffee">
-                  {loc.cities.map((item) => {
+                  {loc.locations.map((item) => {
                     return (
                       <div
                         key={loc.id + item.id}
                         className=" loc-item py-2 border-b border-dark-coffee"
                       >
                         <a
-                          href={"/" + item.slug + "/gift-cards"}
+                          href={"/" + item.locationSlug + "/gift-cards"}
                           className="loc-link"
                         >
                           <div className="flex space-x-1 items-center md:text-lg">
                             <span className="golden-text">
-                              {item.city}, {loc.state}
+                              {item.locationName}
                             </span>
                             <span className="text-gold">
                               <FaAngleRight />

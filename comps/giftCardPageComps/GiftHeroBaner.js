@@ -163,8 +163,8 @@ const GiftHeroBaner = (props) => {
                           ? props.setShowGiftBookingList
                           : false
                       }
-                      bookingData={
-                        props.bookingData ? props.bookingData : false
+                      giftBooking={
+                        props.giftBooking ? props.giftBooking : false
                       }
                     />
                   </div>

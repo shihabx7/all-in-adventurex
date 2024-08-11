@@ -1,0 +1,61 @@
+import { getLocationSlugUrl } from "../pages/api/Locations/getLocationSlugUrls";
+
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+
+const LocationPage = (props) => {
+  const router = useRouter();
+  const path = router.pathname.split("/");
+  console.log(path[1]);
+
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    if (path[1] != props.destSlug) {
+      router.push("/404");
+    } else {
+      router.push("/locations/" + path[1]);
+    }
+  }, [isLoaded]);
+
+  return (
+    <div>
+      <img
+        onLoad={() => setIsLoaded(true)}
+        src="/assets/allinadventures-escape-room-home-hero.jpg"
+      ></img>
+    </div>
+  );
+};
+
+export default LocationPage;
+
+export const getStaticPaths = async () => {
+  const res = await getLocationSlugUrl();
+
+  const paths = res.map((slug) => {
+    return {
+      params: { locationSlug: slug.locationSlug.toString() },
+    };
+  });
+
+  return {
+    paths,
+    fallback: false,
+  };
+};
+
+export const getStaticProps = async (context) => {
+  //const singleBlogData = await getSingleBlogData(context.params.activitiesSlug);
+  // console.log(context.params.activitiesSlug);
+  //console.log("Location: " + context.params.locationSlug);
+  const lSlug = context.params.locationSlug;
+  console.log(lSlug);
+
+  return {
+    props: {
+      destSlug: lSlug,
+    },
+    revalidate: 30,
+  };
+};

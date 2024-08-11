@@ -1,5 +1,5 @@
-import Homenav from "../comps/Homenav";
-import Footer from "../comps/Footer";
+import RootNav from "../comps/RootNav";
+import RootFooter from "../comps/RootFooter";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
 // page data
@@ -36,10 +36,11 @@ const testimonials = (props) => {
     <>
       {/* =======header content======== */}
       <Seofields meta={props.pagemeta} />
-      <Homenav
-        locationlist={props.locationlist}
-        activitylist={props.activitylist}
-        eventlist={props.eventlist}
+      <RootNav
+        locationSlugList={props.locationSlugList}
+        escapeGameSlugList={props.escapeGameSlugList}
+        otherGameSlugList={props.otherGameSlugList}
+        eventSlugList={props.eventSlugList}
       />
       {/* =======header content ======== end */}
 
@@ -239,9 +240,9 @@ const testimonials = (props) => {
         {/* =========================================================================================main content ======== end */}
       </div>
 
-      <Footer
-        locationlist={props.locationlist}
-        totallocations={props.pagedata.totalLocations}
+      <RootFooter
+        locationSlugList={props.locationSlugList}
+        totalLocations={props.totalLocations}
       />
     </>
   );
@@ -250,16 +251,19 @@ const testimonials = (props) => {
 export default testimonials;
 
 export const getStaticProps = async () => {
-  const testimonialPgaeData = getTestimonialPageData();
+  const DATA = await getTestimonialPageData();
 
   return {
     props: {
-      pagedata: testimonialPgaeData.pagedata,
-      pagemeta: testimonialPgaeData.pagemeta,
-      locationlist: testimonialPgaeData.locationlist,
-      activitylist: testimonialPgaeData.activitylistSlug,
-      eventlist: testimonialPgaeData.eventlistSlug,
-      testimonials: testimonialPgaeData.testimonials,
+      locationSlugList: DATA.locationSlugList,
+      escapeGameSlugList: DATA.escapeGameSlugList,
+      otherGameSlugList: DATA.otherGameSlugList,
+      eventSlugList: DATA.eventSlugList,
+      totalLocations: DATA.totalLocations,
+
+      pagedata: DATA.pageData,
+      pagemeta: DATA.pageMeta,
+      testimonials: DATA.testimonials,
     },
     revalidate: 30, // In seconds
   };

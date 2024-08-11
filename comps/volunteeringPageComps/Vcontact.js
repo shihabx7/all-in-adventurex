@@ -158,28 +158,27 @@ const Vcontact = (props) => {
   // ========================================================checkLocation validation=================
 
   const checkLocation = (e, data) => {
-    const loc = e.target.value;
-    let lostate = "";
-    let sEmail = "";
-    let mEmail = "";
+    const locName = e.target.value;
 
-    if (loc != "") {
+    let storeEmail = "";
+    let managerEmail = "";
+
+    if (locName != "") {
       setErr(false);
       setFormErr({ ...formErr, locErr: false });
 
       for (let i = 0; i < data.length; i++) {
-        if (data[i].city == loc) {
-          lostate = data[i].state;
-          sEmail = data[i].storeEmail;
-          mEmail = data[i].managrEmail;
+        if (data[i].locationName == locName) {
+          storeEmail = data[i].storeEmail;
+          managerEmail = data[i].managerEmail;
         }
       }
 
       setFieldValue({
         ...fieldVlue,
-        location: loc + ", " + lostate,
-        storeEmail: sEmail,
-        managerEmail: mEmail,
+        location: locationName,
+        storeEmail: storeEmail,
+        managerEmail: managerEmail,
       });
 
       e.target.classList.remove("focus-red");
@@ -360,10 +359,10 @@ const Vcontact = (props) => {
                       required
                     >
                       <option value="">Your location...</option>
-                      {props.locationMailData.map((location, index) => {
+                      {props.locationMailData.map((item, index) => {
                         return (
-                          <option key={index} value={location.city}>
-                            {location.city + ", " + location.state}
+                          <option key={index} value={item.locationName}>
+                            {item.locationName}
                           </option>
                         );
                       })}

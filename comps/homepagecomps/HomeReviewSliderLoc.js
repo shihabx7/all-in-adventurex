@@ -45,7 +45,7 @@ const HomeReviewSliderLoc = ({ reviews }) => {
       <div className="slider-box pb-4 md:pb-8 relative">
         <HomeReviewCarousel reviews={reviews} />
       </div>
-      <div className="view-all flex justify-center pt-8 md:pt-12 lg:pt-16">
+      <div className="view-all flex justify-center pt-8 md:pt-12 lg:pt-16 relative z-10">
         <a
           href="/testimonials/"
           className="flex font-medium text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700"

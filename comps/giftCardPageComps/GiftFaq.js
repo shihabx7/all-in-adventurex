@@ -32,19 +32,15 @@ const GiftFaq = (props) => {
       {/*======================= boder img end============== */}
       <div className="max-w-7xl mx-auto relative z-30">
         <div className="section-title mb-8 md:mb-12">
-          <TitleSeparator
-            title="FREQUENTLY ASKED QUESTIONS"
-            color="text-[#CA9342]"
-            weight="font-bold"
-          />
-          <p className="mt-4 text-[#2E2E2E] max-w-[800px] mx-auto text-center lg:text-lg">
+          <TitleSeparator title="FREQUENTLY ASKED QUESTIONS" />
+          <p className="mt-4 text-[#2E2E2E] max-w-[840px] mx-auto text-center lg:text-lg">
             Explore these FAQs to uncover answers to popular questions about All
             In Adventures Gift Cards. If your specific query isn't covered,
             reach us anytime on phone or email.
           </p>
         </div>
         <div className="gift-faq-box max-w-[1000px] mx-auto">
-          <GiftFaqList faqlist={props.faqlist} />
+          <GiftFaqList giftFaqs={props.giftFaqs} />
         </div>
         <div className="flex justify-center mt-16">
           <GiftGnBtn
@@ -53,7 +49,7 @@ const GiftFaq = (props) => {
                 ? props.setShowGiftBookingList
                 : false
             }
-            bookingData={props.bookingData ? props.bookingData : false}
+            giftBooking={props.giftBooking ? props.giftBooking : false}
           />
         </div>
       </div>

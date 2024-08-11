@@ -11,6 +11,7 @@ const StaticSubmenu = () => {
           <span className="sub-link-txt">Customer Gallery</span>
         </a>
       </div>
+
       <div className="submenu-item">
         <a href="/pricing" className="flex items-center">
           <span className="sub-link-txt">Pricing</span>
@@ -21,7 +22,11 @@ const StaticSubmenu = () => {
           <span className="sub-link-txt">Deals and Coupons</span>
         </a>
       </div>
-
+      <div className="submenu-item">
+        <a href="/rewards-program" className="flex items-center">
+          <span className="sub-link-txt">Rewards Program</span>
+        </a>
+      </div>
       <div className="submenu-item">
         <a href="/blog" className="flex items-center">
           <span className="sub-link-txt">Blog</span>

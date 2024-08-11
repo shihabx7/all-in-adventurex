@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
-const GiftFaqList = ({ faqlist }) => {
+const GiftFaqList = ({ giftFaqs }) => {
   const [faqAns, setFaqAns] = useState(0);
 
   const showAns = (id) => {
@@ -14,7 +14,7 @@ const GiftFaqList = ({ faqlist }) => {
 
   return (
     <div className="faq-liscont">
-      {faqlist.map((item) => {
+      {giftFaqs.map((item) => {
         return (
           <div key={item.id} className="faq-panel">
             <div
@@ -42,7 +42,7 @@ const GiftFaqList = ({ faqlist }) => {
                   <div className="text-[16px] md:text-[18px] lg:text-[20px] mt-2 md:mt-3 text-[#311D00]">
                     <div
                       className="product-des"
-                      dangerouslySetInnerHTML={{ __html: item.ans.join("") }}
+                      dangerouslySetInnerHTML={{ __html: item.ans }}
                     ></div>
                   </div>
                 </div>

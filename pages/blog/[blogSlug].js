@@ -2,9 +2,8 @@
 import getBlogSlugs from "../api/blog/getBlogSlugs";
 import { getSingleBlogData } from "../api/blog/getSingleBlogData";
 // import header footer component
-
-import Homenav from "../../comps/Homenav";
-import Footer from "../../comps/Footer";
+import RootNav from "../../comps/RootNav";
+import RootFooter from "../../comps/RootFooter";
 
 import BlogBreadCrumbs from "../../comps/blogPageComps/BlogBreadCrumbs";
 import BlogPostSeo from "../../comps/blogPageComps/BlogPostSeo";
@@ -30,10 +29,11 @@ const SingleBlog = (props) => {
     <>
       {/* =======header content======== */}
       <BlogPostSeo meta={props.pagemeta} />
-      <Homenav
-        locationlist={props.locationlist}
-        activitylist={props.activitylist}
-        eventlist={props.eventlist}
+      <RootNav
+        locationSlugList={props.locationSlugList}
+        escapeGameSlugList={props.escapeGameSlugList}
+        otherGameSlugList={props.otherGameSlugList}
+        eventSlugList={props.eventSlugList}
       />
       {/* =======header content ======== end */}
 
@@ -82,10 +82,9 @@ const SingleBlog = (props) => {
           <RelatedBlogs relatedblogdata={props.relatedblogdata} />
         </>
       )}
-
-      <Footer
-        locationlist={props.locationlist}
-        totallocations={props.pagedata.totalLocations}
+      <RootFooter
+        locationSlugList={props.locationSlugList}
+        totalLocations={props.totalLocations}
       />
     </>
   );
@@ -109,18 +108,20 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-  const singleBlogData = await getSingleBlogData(context.params.blogSlug);
+  const DATA = await getSingleBlogData(context.params.blogSlug);
 
   return {
     props: {
-      pagemeta: singleBlogData.pagemeta,
-      pagedata: singleBlogData.pagedata,
-      bloginfo: singleBlogData.bloginfo,
-      blogdesc: singleBlogData.blogdesc,
-      relatedblogdata: singleBlogData.relatedblogdata,
-      locationlist: singleBlogData.locationlist,
-      activitylist: singleBlogData.activitylistSlug,
-      eventlist: singleBlogData.eventlistSlug,
+      locationSlugList: DATA.locationSlugList,
+      escapeGameSlugList: DATA.escapeGameSlugList,
+      otherGameSlugList: DATA.otherGameSlugList,
+      eventSlugList: DATA.eventSlugList,
+      totalLocations: DATA.totalLocations,
+      pagemeta: DATA.pagemeta,
+      pagedata: DATA.pagedata,
+      bloginfo: DATA.bloginfo,
+      blogdesc: DATA.blogdesc,
+      relatedblogdata: DATA.relatedblogdata,
     },
     revalidate: 30,
   };

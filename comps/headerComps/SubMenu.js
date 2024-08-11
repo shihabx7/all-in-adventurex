@@ -2,8 +2,7 @@ import Link from "next/link";
 import { FaAngleDown, FaAngleRight, FaAngleUp } from "react-icons/fa";
 import { useState } from "react";
 import React from "react";
-import { ImPlay3 } from "react-icons/im";
-import VirtualSubmenu from "./VirtualSubmenu";
+
 import EscapeGameSubmenu from "./EscapeGameSubmenu";
 import OhterGameSubmenu from "./OhterGameSubmenu";
 import EventSubmenu from "./EventSubmenu";
@@ -44,7 +43,12 @@ const SubMenu = (props) => {
               </a>
             )}
           </div>
-          <div className="submenu-item">
+          <div className="submenu-item ffy">
+            <a href="/find-your-photo" className="flex items-center">
+              <span className="sub-link-txt">Find Your Photo</span>
+            </a>
+          </div>
+          <div className="submenu-item ggf">
             <a href="/locations" className="flex items-center">
               <span className="sub-link-txt">Locations</span>
             </a>

@@ -1,6 +1,16 @@
-import { getTotal } from "../AllDataList/getTotal";
 import { apiSetting, apiUrl } from "../../../lib/apiSettings";
 import { allCatBlogs, allBlogCategories } from "../../../lib/blogFormation";
+import {
+  locationSlugListQuery,
+  allActivitiesSluglistQuery,
+  allEventsSluglistQuery,
+} from "../../../lib/query/navMenuQuery";
+import {
+  getLocationSlugList,
+  getAllEscapeGameSlugList,
+  getAllOtherGameSlugList,
+  getAllEventSlugList,
+} from "../../../lib/menuDataFormation";
 
 const getSocialMeta = (socialNetworkName, metaArr, ftImg, metaTitle) => {
   let retObj = {
@@ -86,6 +96,21 @@ const getPageMeta = (seoData, catName, slug) => {
 };
 
 export const getBlogCategoryData = async (catSlug) => {
+  // fetch all location list as an array
+  const locationListRes = await fetch(locationSlugListQuery, apiSetting);
+  const locationListObj = await locationListRes.json();
+  const locationListData = locationListObj.data;
+  // fetch all activity list as an array
+  const activityListRes = await fetch(allActivitiesSluglistQuery, apiSetting);
+  const activityListObj = await activityListRes.json();
+  const actctivityListResData = activityListObj.data;
+  // fetch all event list as an array
+  const eventListRes = await fetch(allEventsSluglistQuery, apiSetting);
+  const eventListResObj = await eventListRes.json();
+  const eventListResData = eventListResObj.data;
+
+  const totalActivities = actctivityListResData.length;
+  const totalLocations = locationListData.length;
   const apifilter = "filters[blogCategories][categorySlug][$eq]=" + catSlug;
   const reqPg =
     "&pagination[start]=1&pagination[limit]=5&sort[1]=publishDate:desc";
@@ -127,9 +152,11 @@ export const getBlogCategoryData = async (catSlug) => {
   const catInfoSeo = catInfo.data[0].attributes.catSeo;
 
   const blogHomePageData = {
-    locationlist: getTotal().locationlist,
-    activitylistSlug: getTotal().activitylistSlug,
-    eventlistSlug: getTotal().eventlistSlug,
+    locationSlugList: getLocationSlugList(locationListData),
+    escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
+    otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
+    eventSlugList: getAllEventSlugList(eventListResData),
+    totalLocations: totalLocations,
 
     pagemeta: getPageMeta(catInfoSeo, catInfo.data[0].attributes.categoryName),
 
@@ -139,7 +166,7 @@ export const getBlogCategoryData = async (catSlug) => {
         "Passion led us here! We're incredibly passionate about placing great people in their dream roles and believe in serving our guests and each other every day. We love our awesome team! Join us.",
       coverimageL: "/assets/blogs/blog-bg-l.jpg",
       coverimageM: "/assets/blogs/blog-bg-m.jpg",
-      totalLocations: getTotal().totalLocations,
+      totalLocations: totalLocations,
     },
     categorySlug: catSlug,
     categoryName: catInfo.data[0].attributes.categoryName,

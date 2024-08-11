@@ -4,7 +4,7 @@ import LocationMap from "./LocationMap";
 
 import { FiChevronDown, FiX } from "react-icons/fi";
 import { useEffect, useState } from "react";
-import LocationHours from "./LocationHours";
+import LocationHours from "./LocationDetailsHours";
 
 const NewLoactionDetails = (props) => {
   const [showHour, setShwoHour] = useState(false);

@@ -7,6 +7,7 @@ const UseFullLinks = (props) => {
         USEFUL LINKS
       </h3>
       <div className="usefull-link-box block text-center md:flex flex-wrap  space-x-2 md:space-x-3 lg:space-x-4 justify-center items-center py-4 pb-0 md:py-6 lg:py-8">
+        {/*===========all locations===============*/}
         <div className="usefull-link  inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2">
           <a href="/locations" className="text-gray-400  text-sm  lg:text-base">
             All Locations
@@ -15,19 +16,19 @@ const UseFullLinks = (props) => {
         <div className="hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
+        {/*===========all Escape Games===============*/}
         <div className="usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2">
-          {props.locationslug && (
+          {props.locationSlug ? (
             <a
-              href={"/" + props.locationslug + "/activities"}
-              className="text-gray-400 text-sm  lg:text-base "
+              href={"/" + props.locationSlug + "/activities"}
+              className="text-gray-400 text-sm  lg:text-base"
             >
               Escape Games
             </a>
-          )}
-          {!props.locationslug && (
+          ) : (
             <a
               href="/activities"
-              className="text-gray-400 text-sm  lg:text-base "
+              className="text-gray-400 text-sm  lg:text-base"
             >
               Escape Games
             </a>
@@ -36,16 +37,16 @@ const UseFullLinks = (props) => {
         <div className="hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
+        {/*===========all events===============*/}
         <div className="usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2">
-          {props.locationslug && (
+          {props.locationSlug ? (
             <a
-              href={"/" + props.locationslug + "/events"}
+              href={"/" + props.locationSlug + "/events"}
               className="text-gray-400 text-sm  lg:text-base"
             >
               Events and Parites
             </a>
-          )}
-          {!props.locationslug && (
+          ) : (
             <a href="/events" className="text-gray-400 text-sm  lg:text-base">
               Events and Parties
             </a>
@@ -54,18 +55,18 @@ const UseFullLinks = (props) => {
         <div className=" hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
+        {/*===========all Other Games===============*/}
         <div className="usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2">
-          {props.locationslug && (
+          {props.locationSlug ? (
             <a
               href={
-                "/" + props.locationslug + "/activities#others-physical-games"
+                "/" + props.locationSlug + "/activities#others-physical-games"
               }
               className="text-gray-400 text-sm  lg:text-base"
             >
               Others Games
             </a>
-          )}
-          {!props.locationslug && (
+          ) : (
             <a
               href="/activities#others-physical-games"
               className="text-gray-400 text-sm  lg:text-base"
@@ -77,17 +78,16 @@ const UseFullLinks = (props) => {
         <div className=" hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
-
+        {/*=========== gift cards page===============*/}
         <div className="usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2">
-          {props.locationslug && (
+          {props.locationSlug ? (
             <a
-              href={"/" + props.locationslug + "/gift-cards"}
+              href={"/" + props.locationSlug + "/gift-cards"}
               className="text-gray-400 text-sm  lg:text-base"
             >
               Gift Cards
             </a>
-          )}
-          {!props.locationslug && (
+          ) : (
             <a
               href="/gift-cards"
               className="text-gray-400 text-sm  lg:text-base"
@@ -99,7 +99,7 @@ const UseFullLinks = (props) => {
         <div className=" hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
-
+        {/*=========== testimonials page===============*/}
         <div className="usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2">
           <a
             href="/testimonials"
@@ -111,15 +111,18 @@ const UseFullLinks = (props) => {
         <div className=" hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
+        {/*=========== gallery page===============*/}
         <div className="usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2">
           <a href="/gallery" className="text-gray-400 text-sm  lg:text-base">
             Gallery
           </a>
         </div>
-
         <div className=" hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
+        {/*===========Rewards Program===============*/}
+
+        {/*===========Pricing===============*/}
         <div className="usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2">
           <a href="/pricing" className="text-gray-400 text-sm  lg:text-base">
             Pricing
@@ -128,6 +131,7 @@ const UseFullLinks = (props) => {
         <div className=" hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
+        {/*=========== Deals and Coupons===============*/}
         <div className="usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2">
           <a
             href="/deals-coupons"
@@ -139,6 +143,7 @@ const UseFullLinks = (props) => {
         <div className=" hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
+        {/*===========Blog===============*/}
         <div className="usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2">
           <a href="/blog" className="text-gray-400 text-sm  lg:text-base">
             Blog
@@ -147,6 +152,7 @@ const UseFullLinks = (props) => {
         <div className=" hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
+        {/*===========FAQs===============*/}
         <div className="usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2">
           <a href="/faqs" className="text-gray-400 text-sm  lg:text-base">
             FAQs
@@ -155,6 +161,7 @@ const UseFullLinks = (props) => {
         <div className=" hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
+        {/*===========  Covid-19===============*/}
         <div className="usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2">
           <a href="/covid-19" className="text-gray-400 text-sm  lg:text-base">
             Covid-19
@@ -164,6 +171,7 @@ const UseFullLinks = (props) => {
         <div className=" hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
+        {/*===========  About===============*/}
         <div className="usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2">
           <a href="/about" className="text-gray-400 text-sm  lg:text-base">
             About
@@ -172,6 +180,7 @@ const UseFullLinks = (props) => {
         <div className=" hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
+        {/*===========  Rebranding===============*/}
         <div className="usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2">
           <a
             href="/mystery-room-rebranding"
@@ -183,6 +192,7 @@ const UseFullLinks = (props) => {
         <div className=" hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
+        {/*===========   What is an Escape Room===============*/}
         <div className="usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2">
           <a
             href="/what-is-an-escape-room"
@@ -194,6 +204,7 @@ const UseFullLinks = (props) => {
         <div className=" hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
+        {/*===========   Careers===============*/}
         <div className="usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2">
           <a href="/careers" className="text-gray-400 text-sm  lg:text-base">
             Careers
@@ -203,6 +214,7 @@ const UseFullLinks = (props) => {
         <div className=" hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
+        {/*===========   Franchise===============*/}
         <div className="usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2">
           <a href="/franchise" className="text-gray-400 text-sm  lg:text-base">
             Franchise
@@ -211,6 +223,7 @@ const UseFullLinks = (props) => {
         <div className=" hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
+        {/*===========   Volunteering===============*/}
         <div className="usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2">
           <a
             href="/volunteering"
@@ -222,6 +235,7 @@ const UseFullLinks = (props) => {
         <div className=" hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
+        {/*===========   Corporate Contact===============*/}
         <div className="usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2">
           <a
             href="/corporate-contact"

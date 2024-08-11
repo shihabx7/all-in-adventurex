@@ -1,6 +1,6 @@
-import Homenav from "../../comps/Homenav";
-import Footer from "../../comps/Footer";
-import Breadcrumbs from "nextjs-breadcrumbs";
+import RootNav from "../../comps/RootNav";
+import RootFooter from "../../comps/RootFooter";
+import PageBread from "../../comps/util/PageBread";
 import { FiChevronRight } from "react-icons/fi";
 import BlogPostSeo from "../../comps/blogPageComps/BlogPostSeo";
 import { getBlogHomePageData } from "../api/blog/getBlogHomePageData";
@@ -35,10 +35,11 @@ const Blogs = (props) => {
     <>
       {/* =======header content======== */}
       <BlogPostSeo meta={props.pagemeta} />
-      <Homenav
-        locationlist={props.locationlist}
-        activitylist={props.activitylist}
-        eventlist={props.eventlist}
+      <RootNav
+        locationSlugList={props.locationSlugList}
+        escapeGameSlugList={props.escapeGameSlugList}
+        otherGameSlugList={props.otherGameSlugList}
+        eventSlugList={props.eventSlugList}
       />
       {/* =======header content ======== end */}
 
@@ -49,18 +50,7 @@ const Blogs = (props) => {
         style={{ backgroundImage: "url('/assets/game-dt-bg.jpg')" }}
       >
         {/* =======breadcum content and breadcum========  */}
-        <div className="breadcums  py-1 md:py-2 bg-[#fffceb]">
-          <Breadcrumbs
-            replaceCharacterList={[{ from: "-", to: " " }]}
-            listClassName="max-w-7xl mx-auto px-2 md:px-4 breadcum-list text-sm md:text-base lg:text-lg"
-            inactiveItemClassName="inline-block text-[#6a6a6a] hover:text-red-700"
-            activeItemClassName="inline-block text-[#212121]"
-            rootLabel="home"
-            transformLabel={(title) => {
-              return toTitleCase(title);
-            }}
-          ></Breadcrumbs>
-        </div>
+        <PageBread />
 
         {/* =======breadcum content and breadcum root page template======== end */}
         <BlogGnHero pagedata={props.pagedata} />
@@ -76,9 +66,9 @@ const Blogs = (props) => {
         </div>
       </div>
 
-      <Footer
-        locationlist={props.locationlist}
-        totallocations={props.pagedata.totalLocations}
+      <RootFooter
+        locationSlugList={props.locationSlugList}
+        totalLocations={props.totalLocations}
       />
     </>
   );
@@ -87,21 +77,25 @@ const Blogs = (props) => {
 export default Blogs;
 
 export const getStaticProps = async () => {
-  const bPageData = await getBlogHomePageData();
+  const DATA = await getBlogHomePageData();
 
   // console.log(bPageData);
 
   return {
     props: {
-      pagedata: bPageData.pagedata,
-      pagemeta: bPageData.pagemeta,
-      locationlist: bPageData.locationlist,
-      activitylist: bPageData.activitylistSlug,
-      eventlist: bPageData.eventlistSlug,
-      recentblogs: bPageData.recentblogs,
-      popularblogs: bPageData.popularblogs,
-      allblogs: bPageData.allblogs,
-      blogcat: bPageData.blogcat,
+      locationSlugList: DATA.locationSlugList,
+      escapeGameSlugList: DATA.escapeGameSlugList,
+      otherGameSlugList: DATA.otherGameSlugList,
+      eventSlugList: DATA.eventSlugList,
+      totalLocations: DATA.totalLocations,
+
+      pagedata: DATA.pagedata,
+      pagemeta: DATA.pagemeta,
+
+      recentblogs: DATA.recentblogs,
+      popularblogs: DATA.popularblogs,
+      allblogs: DATA.allblogs,
+      blogcat: DATA.blogcat,
     },
     revalidate: 30,
   };

@@ -1,48 +1,23 @@
-import Head from "next/dist/shared/lib/head";
-import Homenav from "../../comps/Homenav";
-import Footer from "../../comps/Footer";
-import Breadcrumbs from "nextjs-breadcrumbs";
-import { FiChevronRight } from "react-icons/fi";
-// page template=============
+import { getEventListPageData } from "../api/Events/getEventListPageData";
 
-import EventHero from "../../comps/eventPageComps/EventHero";
-import GameList from "../../comps/activitiyPageComps/GameList";
-import { getAllEvents } from "../api/getAllEvents";
-import EventList from "../../comps/activitiyPageComps/EventList";
-import EventContact from "../../comps/eventPageComps/EventContact";
-import WebForm from "../../comps/eventPageComps/Webform";
-import Seofields from "../../comps/util/SeoFields";
-import EventRootList from "../../comps/activitiyPageComps/EventRootList";
+import RootNav from "../../comps/RootNav";
+import RootFooter from "../../comps/RootFooter";
+import EventBreadCrumbs from "../../comps/eventPageComps/EventBreadCrumbs";
+import EventPageSeo from "../../comps/eventPageComps/EventPageSeo";
+// page template=============
+import EventRootHero from "../../comps/eventPageComps/EventRootHero";
+import EventRootList from "../../comps/eventPageComps/EventRootList";
 
 const showAllevents = (props) => {
-  const toTitleCase = (title) => {
-    const titlefres = title.replace(/-/g, " ");
-    const btitle = titlefres
-      .split(" ")
-      .map((word) => {
-        return word.charAt(0).toUpperCase() + word.slice(1);
-      })
-      .join(" "); // breadcum title capitalize
-
-    return (
-      <div className="bitem flex items-center">
-        <span>{btitle}</span>{" "}
-        <span className="bsep text-gold">
-          <FiChevronRight />
-        </span>
-      </div>
-    );
-  };
-  /* customizing breadcum */
-
   return (
     <>
       {/* =======header content======== */}
-      <Seofields meta={props.pagemeta} />
-      <Homenav
-        locationlist={props.locationlist}
-        activitylist={props.activitylist}
-        eventlist={props.eventlist}
+      <EventPageSeo meta={props.pageMeta} />
+      <RootNav
+        locationSlugList={props.locationSlugList}
+        escapeGameSlugList={props.escapeGameSlugList}
+        otherGameSlugList={props.otherGameSlugList}
+        eventSlugList={props.eventSlugList}
       />
       {/* =======header content ======== end */}
 
@@ -53,33 +28,19 @@ const showAllevents = (props) => {
         style={{ backgroundImage: "url('/assets/game-dt-bg.jpg')" }}
       >
         {/* =======breadcum content and breadcum========  */}
-        <div className="breadcums  py-1 md:py-2 bg-[#fffceb]">
-          <Breadcrumbs
-            replaceCharacterList={[{ from: "-", to: " " }]}
-            listClassName="max-w-7xl mx-auto px-2 md:px-4 breadcum-list text-sm md:text-base lg:text-lg"
-            inactiveItemClassName="inline-block text-[#6a6a6a] hover:text-red-700"
-            activeItemClassName="inline-block text-[#212121]"
-            rootLabel="home"
-            transformLabel={(title) => {
-              return toTitleCase(title);
-            }}
-          ></Breadcrumbs>
-        </div>
+        <EventBreadCrumbs />
         {/* =======breadcum content and breadcum root page template======== end */}
 
-        <EventHero pagedata={props.pagedata} />
-        <EventRootList events={props.events} />
-        {/*<EventContact
-          locationlist={props.locationlist}
-          eventlist={props.eventlist}
-          />*/}
+        <EventRootHero pageData={props.pageData} />
+
+        <EventRootList eventListData={props.eventListData} />
 
         {/* =========================================================================================main content ======== end */}
       </div>
 
-      <Footer
-        locationlist={props.locationlist}
-        totallocations={props.pagedata.totalLocations}
+      <RootFooter
+        locationSlugList={props.locationSlugList}
+        totalLocations={props.totalLocations}
       />
     </>
   );
@@ -88,16 +49,20 @@ const showAllevents = (props) => {
 export default showAllevents;
 
 export const getStaticProps = async () => {
-  const eventsData = await getAllEvents();
+  const DATA = await getEventListPageData();
+  //console.log(eventsData);
 
   return {
     props: {
-      pagemeta: eventsData.pagemeta,
-      pagedata: eventsData.pagedata,
-      events: eventsData.events_list,
-      locationlist: eventsData.locationlist,
-      activitylist: eventsData.activitylistSlug,
-      eventlist: eventsData.eventlistSlug,
+      locationSlugList: DATA.locationSlugList,
+      escapeGameSlugList: DATA.escapeGameSlugList,
+      otherGameSlugList: DATA.otherGameSlugList,
+      eventSlugList: DATA.eventSlugList,
+      totalLocations: DATA.totalLocations,
+      pageMeta: DATA.pageMeta,
+      pageData: DATA.pageData,
+      eventListData: DATA.eventListData,
     },
+    revalidate: 30,
   };
 };

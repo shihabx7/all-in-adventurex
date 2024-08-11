@@ -1,13 +1,12 @@
-import Head from "next/dist/shared/lib/head";
-import Homenav from "../comps/Homenav";
-import Footer from "../comps/Footer";
+import RootNav from "../comps/RootNav";
+import RootFooter from "../comps/RootFooter";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
-import { getGalleryList } from "./api/getGalleryList";
+import { getGalleryPageData } from "./api/getGalleryPageData";
 import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
 import TitleSeparator from "../comps/util/TitleSeparator";
 import MainGallery from "../comps/util/MainGallery";
-import Link from "next/link";
+
 import PageLink from "../comps/util/PageLink";
 
 import Seofields from "../comps/util/SeoFields";
@@ -37,10 +36,11 @@ const gallery = (props) => {
     <>
       {/* =======header content======== */}
       <Seofields meta={props.pagemeta} />
-      <Homenav
-        locationlist={props.locationlist}
-        activitylist={props.activitylist}
-        eventlist={props.eventlist}
+      <RootNav
+        locationSlugList={props.locationSlugList}
+        escapeGameSlugList={props.escapeGameSlugList}
+        otherGameSlugList={props.otherGameSlugList}
+        eventSlugList={props.eventSlugList}
       />
       {/* =======header content ======== end */}
 
@@ -91,7 +91,7 @@ const gallery = (props) => {
           <div className="section-container max-w-7xl mx-auto relative z-30">
             {/* =======customer  gallery========  */}
             <div className="inperson-gallery">
-              <div className="section-title  text-center max-w-[800px] mx-auto px-4 md:px-0">
+              <div className="section-title  text-center max-w-[800px] mx-auto px-4 md:px-0 font-medium text-xl">
                 <p className="uppercase">CUSTOMER GALLERY</p>
                 <TitleSeparator
                   title="IN-PERSON ESCAPE ROOM GAMES"
@@ -142,7 +142,7 @@ const gallery = (props) => {
 
             {/* =======event gallery========  end*/}
             {/* =======OTHERS GAMES AND ACTIVITES========  */}
-            <div className="other-games-gallery my-16 md:my-20 lg:my-28">
+            <div className="other-games-gallery mt-16 md:mt-20 lg:mt-28 mb-2">
               <div className="section-title  text-center max-w-[800px] mx-auto px-4 md:px-0">
                 <TitleSeparator
                   title="OTHER GAMES AND ACTIVITIES"
@@ -175,9 +175,9 @@ const gallery = (props) => {
         {/* =========================================================================================main content ======== end */}
       </div>
 
-      <Footer
-        locationlist={props.locationlist}
-        totallocations={props.pagedata.totalLocations}
+      <RootFooter
+        locationSlugList={props.locationSlugList}
+        totalLocations={props.totalLocations}
       />
     </>
   );
@@ -186,16 +186,19 @@ const gallery = (props) => {
 export default gallery;
 
 export const getStaticProps = async () => {
-  const gallerylist = await getGalleryList();
+  const DATA = await getGalleryPageData();
 
   return {
     props: {
-      pagemeta: gallerylist.pagemeta,
-      pagedata: gallerylist.pagedata,
-      gallerylist: gallerylist.gallery,
-      locationlist: gallerylist.locationlist,
-      activitylist: gallerylist.activitylistSlug,
-      eventlist: gallerylist.eventlistSlug,
+      locationSlugList: DATA.locationSlugList,
+      escapeGameSlugList: DATA.escapeGameSlugList,
+      otherGameSlugList: DATA.otherGameSlugList,
+      eventSlugList: DATA.eventSlugList,
+
+      totalLocations: DATA.totalLocations,
+      pagemeta: DATA.pageMeta,
+      pagedata: DATA.pageData,
+      gallerylist: DATA.galleryList,
     },
   };
 };
