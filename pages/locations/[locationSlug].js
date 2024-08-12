@@ -1,5 +1,6 @@
 import { getLocationSlugUrl } from "../api/Locations/getLocationSlugUrls";
-import { getLocationHomePageData } from "../api/Locations/getLocationHomepageData";
+
+import { getLocationHomePageData } from "../api/Locations/getLocationHomePageData";
 import Script from "next/script";
 
 import PageBread from "../../comps/util/PageBread";
