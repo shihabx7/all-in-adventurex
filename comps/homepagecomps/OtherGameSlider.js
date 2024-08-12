@@ -1,8 +1,7 @@
 import TitleSeparator from "../util/TitleSeparator";
 import { FaAngleRight } from "react-icons/fa";
-import OtherGameCarousel from "./otherGameCarousel";
+import OtherGameCarousel from "./OtherGameCarousel";
 
-import PysicalCarousel from "./PysicalCarousel";
 const OtherGameSlider = (props) => {
   return (
     <div className="pysicalescape  bg-black game-bg-pattern-dark relative pb-4">

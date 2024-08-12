@@ -2,7 +2,7 @@ import { BiMap } from "react-icons/bi";
 import { BiSearch } from "react-icons/bi";
 import { BiHistory } from "react-icons/bi";
 import { useState, useEffect, useRef } from "react";
-import AllPhotos from "./allPhotos";
+import AllPhotos from "./AllPhotos";
 import SearchPhotos from "./SearchPhotos";
 import {
   FaAngleRight,

@@ -1,5 +1,5 @@
 import TitleSeparator from "../util/TitleSeparator";
-import EscapeGameCarousel from "./escapeGameCarousel";
+import EscapeGameCarousel from "./EscapeGameCarousel";
 import { FaAngleRight } from "react-icons/fa";
 
 const EscaeGameSlider = (props) => {
