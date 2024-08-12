@@ -106,7 +106,7 @@ const EventContact = (props) => {
                       "At " +
                       props.locationInfo.mall +
                       " in " +
-                      props.pageData.locationName
+                      props.locationInfo.locationName
                     }
                   />
                 </div>

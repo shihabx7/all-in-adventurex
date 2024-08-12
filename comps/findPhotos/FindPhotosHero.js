@@ -187,7 +187,7 @@ const FindPhotosHero = (props) => {
                           </>
                         )}
                       </div>
-                      <div className="text-[18px] md:text-[20px] lg:text-[24px] text-[#2D2D2D]">
+                      <div className="text-[18px] md:text-[20px] lg:text-[24px] text-[#2D2D2D] relative">
                         {!showDrop ? <FaAngleDown /> : <FaAngleUp />}
                       </div>
                     </div>
@@ -254,7 +254,7 @@ const FindPhotosHero = (props) => {
                   >
                     <div className="flex space-x-1 items-center border px-1 rm:px-2 lg:px-3 h-[36px] md:h-[40px] 2xl:h-[46px] hover:cursor-pointer border-[#A1A1A1] rounded-lg bg-white">
                       <DatePicker
-                        format={"y-MM-dd"}
+                        format={"MM-dd-yyyy"}
                         dayPlaceholder={"dd"}
                         calendarIcon={<FaRegCalendarCheck />}
                         clearIcon={""}

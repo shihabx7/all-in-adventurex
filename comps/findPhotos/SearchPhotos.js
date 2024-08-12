@@ -91,6 +91,10 @@ const AllPhotos = ({ photoList, locationName, srcDate }) => {
       closeLightbox();
     }
   };
+  const usFormate = (dt) => {
+    let arr = dt.split("-");
+    return arr[1] + "-" + arr[2] + "-" + arr[0];
+  };
 
   useEffect(() => {
     if (isOpen) {
@@ -123,7 +127,7 @@ const AllPhotos = ({ photoList, locationName, srcDate }) => {
           </div>
           <div className="sub-head ">
             <p className="text-center text-[#374151] text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[22px] ">
-              In {locName} - {srcDt}
+              In {locName} - {usFormate(srcDt)}
             </p>
           </div>
         </div>
