@@ -2,7 +2,7 @@ import LocationBtn from "../util/LocationBtn";
 const HomeHero = (props) => {
   return (
     <div
-      className="home-hero bg-[#111111] new-v"
+      className="home-hero bg-[#111111] new-vx"
       style={{
         backgroundImage: "url('" + props.pageData.pageHeroDesktop.url + "')",
       }}
