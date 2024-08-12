@@ -10,6 +10,7 @@ import {
   FaAngleUp,
   FaRegCalendarCheck,
 } from "react-icons/fa";
+
 import DatePicker from "react-date-picker";
 import "react-date-picker/dist/DatePicker.css";
 import "react-calendar/dist/Calendar.css";
@@ -187,8 +188,14 @@ const FindPhotosHero = (props) => {
                           </>
                         )}
                       </div>
-                      <div className="text-[18px] md:text-[20px] lg:text-[24px] text-[#2D2D2D] relative">
-                        {!showDrop ? <FaAngleDown /> : <FaAngleUp />}
+                      <div
+                        className={
+                          !showDrop
+                            ? "text-[18px] md:text-[20px] lg:text-[24px] text-[#2D2D2D]"
+                            : "rotate-180 text-[18px] md:text-[20px] lg:text-[24px] text-[#2D2D2D]"
+                        }
+                      >
+                        <FaAngleDown />
                       </div>
                     </div>
                     {/**=================== location dropdown============ */}
