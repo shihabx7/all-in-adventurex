@@ -66,7 +66,7 @@ const HomeReviewCarousel = ({ reviews }) => {
         containerClass="carousel-container"
         // removeArrowOnDeviceType={["tablet", "mobile"]}
         //deviceType={this.props.deviceType}
-        dotListClass="custom-dot-list-style"
+        dotListClass="custom-dot-list-style z-10"
         itemClass="game-carousel-card home review-carousel px-2 lg:px-3 py-4 md:py-8"
         renderDotsOutside={true}
         partialVisible={true}

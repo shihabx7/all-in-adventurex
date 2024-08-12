@@ -95,7 +95,7 @@ const LocationDetails = (props) => {
         <div className="loc-cont flex justify-center mt-16">
           <a
             href={"/" + props.locationSlug + "/contact-store"}
-            className="uppercase text-lg font-medium text-white bg-red-600 py-3 px-10 rounded-full"
+            className="uppercase text-lg font-medium text-white bg-red-600 hover:bg-red-700 py-3 px-10 rounded-full"
           >
             Contact store
           </a>

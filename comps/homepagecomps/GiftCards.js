@@ -17,7 +17,7 @@ const GiftCards = (props) => {
       fallback: "simple",
       fullItems: "yes",
       flow: bookingData.flow,
-      view: { item: bookingData.item },
+      view: { item: bookingData.itemNo },
     });
   };
 

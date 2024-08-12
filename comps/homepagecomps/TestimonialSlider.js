@@ -57,7 +57,7 @@ const TestimonialSlider = (props) => {
           testimonialList={props.testimonialList.testimonialList}
         />
       </div>
-      <div className="view-all flex justify-center pt-8 md:pt-12 lg:pt-16 relative z-10">
+      <div className="view-all flex justify-center mt-8 md:mt-12 lg:mt-16 relative z-10">
         <a
           href="/testimonials/"
           className="flex text-lg justify-center space-x-2 items-center text-red-500 hover:text-red-700 font-medium"
