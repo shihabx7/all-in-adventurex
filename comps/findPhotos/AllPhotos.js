@@ -106,7 +106,7 @@ const AllPhotos = ({ photoList }) => {
     <>
       <div className="c-all-photos  ">
         {/*=====section Head==== */}
-        <div className="sec-head px-3 rm:px-4 rm:mt-4">
+        <div className="sec-head px-3 rm:px-4 rm:mt-6">
           <div className="flex justify-center items-center space-x-1 md:space-x-3 lg:space-x-4">
             <div className="h-[2px] grow bg-[rgba(0,0,0,0.7)]"></div>
             <div className="flex-none">
