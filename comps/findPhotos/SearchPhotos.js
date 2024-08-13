@@ -119,15 +119,23 @@ const AllPhotos = ({ photoList, locationName, srcDate }) => {
           <div className="flex justify-center items-center space-x-1 md:space-x-3 lg:space-x-4">
             <div className="h-[2px] grow bg-[rgba(0,0,0,0.7)]"></div>
             <div className="flex-none">
-              <h2 className="text-[#374151] font-bold text-[20px] rm:text-[24px] md:text-[28px] lg:text-[36px] 2xl:text-[40px]">
-                All Escape Artist Team Photo
+              <h2 className="text-[rgb(55,65,81)] font-bold text-[20px] rm:text-[24px] md:text-[28px] lg:text-[36px] 2xl:text-[40px]">
+                {imageList.length < 1
+                  ? "REVISIT YOUR ADVENTURE"
+                  : "Photo Playing Hard to Get? It'll Show Up Soon!"}
               </h2>
             </div>
             <div className="h-[2px] grow bg-[rgba(0,0,0,0.7)]"></div>
           </div>
           <div className="sub-head ">
             <p className="text-center text-[#374151] text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[22px] ">
-              In {locName} - {usFormate(srcDt)}
+              {imageList.length < 1 ? (
+                <>
+                  Captured on {locName} at All In Adventures, {usFormate(srcDt)}
+                </>
+              ) : (
+                "Please make sure you've selected the correct location and date. If you played recently, allow 24-48 hours for our team to upload your photos."
+              )}
             </p>
           </div>
         </div>
@@ -136,9 +144,7 @@ const AllPhotos = ({ photoList, locationName, srcDate }) => {
         <div className="customer-image-container mt-4 md:mt-6 lg:mt-8 px-2">
           {imageList.length < 1 ? (
             <div className="mt-4">
-              <p className="text-[#2d2d2d] font-medium text-center md:text-[24px]">
-                Not Found
-              </p>
+              <p className="text-[#2d2d2d] font-medium text-center md:text-[24px]"></p>
             </div>
           ) : (
             <div

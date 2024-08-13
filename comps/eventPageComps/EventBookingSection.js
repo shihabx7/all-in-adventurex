@@ -121,7 +121,7 @@ function EventBookingSection(props) {
                           </button>
                         ) : (
                           <a
-                            href={"/#eventform"}
+                            href="#eventform"
                             className="bg-red-600 hover:bg-red-700
                    text-white text-center font-medium
                     py-4  rounded-full mx-auto text-[14px] lg:text-[14px] xl:text-[16px] w-full block"

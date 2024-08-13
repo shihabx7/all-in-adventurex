@@ -45,7 +45,12 @@ const FindPhotosHero = (props) => {
     e.preventDefault();
     //console.log(searchLocation);
     //console.log(searchDate);
-    if (searchLocation != "" && searchDate != "") {
+    if (
+      searchLocation != "" &&
+      searchLocation != undefined &&
+      searchDate != "" &&
+      searchDate != undefined
+    ) {
       const srcPhotos = await fetchData();
       if (srcPhotos.success) {
         setSearchPhotoList(srcPhotos.srcPhotolist);
@@ -56,10 +61,10 @@ const FindPhotosHero = (props) => {
       setSearchPhotos(true);
       setSearchError(false);
     } else {
-      setAllPhotos(false);
-      setSearchPhotos(true);
+      setAllPhotos(true);
+      setSearchPhotos(false);
       setSearchError(true);
-      setErrorText("Please Select Location & Date");
+      setErrorText("Please select your location and date.");
     }
   };
   // reset seearch
@@ -107,16 +112,16 @@ const FindPhotosHero = (props) => {
     });
 
     let formattedDate = formatter.format(dt).toString();
-    console.log(formattedDate);
+    //console.log(formattedDate);
     formattedDate = formattedDate.split("/").reverse().join("-");
-    console.log(formattedDate);
+    //console.log(formattedDate);
 
     if (formattedDate != "" && formattedDate != undefined) {
       setSearchDate(formattedDate);
       // dateEl.classList.remove("border-[#A1A1A1]");
       // dateEl.classList.add("border-[#E25455]");
     } else {
-      setErrorText("Please Select a Date");
+      setErrorText("Please select your location and date.");
     }
   };
   return (
@@ -136,7 +141,7 @@ const FindPhotosHero = (props) => {
               alt="find escape game photos"
             ></img>
           </div>
-          <div className="max-w-7xl home-hero-container mx-auto px-1 md:px-4 pt-0 pb-[100px] md:py-20  lg:py-28 2xl:py-32  relative z-20">
+          <div className="max-w-7xl home-hero-container mx-auto px-1 md:px-4 pt-0 pb-[50px] md:py-20  lg:py-28 2xl:py-32  relative z-20">
             <div className="page-benar-info">
               <p className="leading-[1.2] md:mt-0 font-semibold text-lg md:text-2xl mb-1 text-white text-center">
                 ALL IN ADVENTURES
@@ -161,39 +166,33 @@ const FindPhotosHero = (props) => {
                 <div
                   className={
                     searchError
-                      ? "flex flex-wrap  justify-center space-x-1 rm:space-x-2  md:space-y-0 items-center md:space-x-4 bg-[#FEF8E8] px-1 py-4 md:py-4 md:px-5 lg:py-4 rounded-t-lg"
-                      : "flex flex-wrap  justify-center space-x-1 rm:space-x-2  md:space-y-0 items-center md:space-x-4 bg-[#FEF8E8] px-1 py-4 md:py-4 md:px-5 lg:py-4 rounded-lg"
+                      ? "flex flex-wrap  justify-center space-x-1 rm:space-x-2  md:space-y-0 items-center md:space-x-4 bg-[#FEF8E8] px-2 rm:px-3 py-5 rm:py-6 md:py-4 md:px-5 lg:py-4 rounded-t-lg"
+                      : "flex flex-wrap  justify-center space-x-1 rm:space-x-2  md:space-y-0 items-center md:space-x-4 bg-[#FEF8E8] px-2 rm:px-3 py-5 rm:py-6 md:py-4 md:px-5 lg:py-4 rounded-lg"
                   }
                 >
                   {/**location dropdown box  */}
                   <div
-                    className="src-ent w-[56%] rm:w-[53%] md:w-auto relative"
+                    className="src-ent w-[50%] rm:w-[52%] md:w-auto relative"
                     ref={dropdownRef}
                   >
                     <div
                       onClick={(e) => {
                         showLocationDrop(e);
                       }}
-                      className="flex space-x-1 items-center border px-1 rm:px-2 lg:px-3 h-[36px] md:h-[40px] 2xl:h-[46px] hover:cursor-pointer border-[#A1A1A1] rounded-lg bg-white"
+                      className="flex space-x-1 items-center border px-1 rm:px-2 lg:px-3 h-[40px] md:h-[40px] 2xl:h-[46px] hover:cursor-pointer border-[#A1A1A1] rounded-lg bg-white"
                     >
-                      <div className="text-[18px] md:text-[20px] lg:text-[24px] text-[#2D2D2D]">
+                      <div className="text-[18px] rm:text-[20px] md:text-[22px] lg:text-[24px] text-[#2D2D2D]">
                         <BiMap />
                       </div>
 
-                      <div className="border-none w-[160px]  text-[12px] rm:text-sm md:text-base 2xl:text-lg text-[#1A1A1A]">
-                        {searchLocation != "" ? (
-                          searchLocation
-                        ) : (
-                          <>
-                            Location<span className="text-red-600">*</span>
-                          </>
-                        )}
+                      <div className="border-none w-[160px]  text-[13px] rm:text-[15px] md:text-base 2xl:text-lg text-[#1A1A1A]">
+                        {searchLocation != "" ? searchLocation : <>Location</>}
                       </div>
                       <div
                         className={
                           !showDrop
-                            ? "text-[18px] md:text-[20px] lg:text-[24px] text-[#2D2D2D]"
-                            : "rotate-180 text-[18px] md:text-[20px] lg:text-[24px] text-[#2D2D2D]"
+                            ? "text-[18px] rm:text-[20px] md:text-[22px] lg:text-[24px] text-[#2D2D2D]"
+                            : "rotate-180 text-[18px] rm:text-[22px] md:text-[20px] lg:text-[24px] text-[#2D2D2D]"
                         }
                       >
                         <FaAngleDown />
@@ -258,9 +257,9 @@ const FindPhotosHero = (props) => {
                   {/**======= search date====== */}
                   <div
                     id="searchD"
-                    className="src-ent w-[40%] rm:w-[44%]  md:w-auto  "
+                    className="src-ent w-[46%] rm:w-[45%]  md:w-auto  "
                   >
-                    <div className="flex space-x-1 items-center border px-1 rm:px-2 lg:px-3 h-[36px] md:h-[40px] 2xl:h-[46px] hover:cursor-pointer border-[#A1A1A1] rounded-lg bg-white">
+                    <div className="flex space-x-1 items-center border px-1 rm:px-2 lg:px-3 h-[40px] md:h-[40px] 2xl:h-[46px] hover:cursor-pointer border-[#A1A1A1] rounded-lg bg-white">
                       <DatePicker
                         format={"MM-dd-yyyy"}
                         dayPlaceholder={"dd"}
@@ -271,7 +270,7 @@ const FindPhotosHero = (props) => {
                         dayAriaLabel="Day"
                         monthAriaLabel="Month"
                         yearAriaLabel="Year"
-                        className=" text-[12px] rm:text-sm md:text-base 2xl:text-lg text-[#1A1A1A] border-0 w-full dt-picker"
+                        className=" text-[13px] rm:text-[15px] md:text-base 2xl:text-lg text-[#1A1A1A] border-0 w-full dt-picker"
                         onChange={(value) => checkDate(value)}
                         /* onChange={() =>
                           alert("New date is: ", new Date(y, 0, 1, 0, 0, 0))
@@ -287,13 +286,13 @@ const FindPhotosHero = (props) => {
                       onClick={(e) => {
                         handleSearch(e);
                       }}
-                      className="bg-[#FFF2F2] hover:bg-red-700 group flex space-x-1 items-center px-4 h-[36px] md:h-[40px] 2xl:h-[46px] text-[#1A1A1A]  border border-[#E25455] rounded-lg"
+                      className="bg-[#FFF2F2] hover:bg-red-700 group flex space-x-1 items-center px-4 h-[40px] md:h-[40px] 2xl:h-[46px] text-[#1A1A1A]  border border-[#E25455] rounded-lg"
                     >
-                      <div className="text-[18px] md:text-[20px] lg:text-[24px] text-[#2D2D2D] group-hover:text-white">
+                      <div className="text-[18px] rm:text-[20px] md:text-[22px] lg:text-[24px] text-[#2D2D2D] group-hover:text-white">
                         <BiSearch />
                       </div>
-                      <span className="photo-src-btn text-sm md:text-base 2xl:text-lg group-hover:text-white">
-                        Search
+                      <span className="photo-src-btn text-sm rm:text-base 2xl:text-lg group-hover:text-white">
+                        SEARCH
                       </span>
                     </button>
                   </div>
@@ -304,7 +303,7 @@ const FindPhotosHero = (props) => {
                       onClick={() => {
                         resetSrc();
                       }}
-                      className="bg-white hover:bg-red-700  text-[18px] md:text-[20px] lg:text-[24px] photo-src-reset flex  items-center px-3 h-[36px] md:h-[40px] 2xl:h-[46px] text-[#1A1A1A] hover:text-white  border border-[#A1A1A1] hover:border-[#E25455] rounded-lg"
+                      className="bg-white hover:bg-red-700  text-[18px] rm:text-[20px] md:text-[22px] lg:text-[24px] photo-src-reset flex  items-center px-3 h-[40px] md:h-[40px] 2xl:h-[46px] text-[#1A1A1A] hover:text-white  border border-[#A1A1A1] hover:border-[#E25455] rounded-lg"
                     >
                       <BiHistory />
                     </button>
@@ -323,7 +322,7 @@ const FindPhotosHero = (props) => {
       </div>
       {/**==========phot gallery section */}
       <div className="customer-photos-section bg-[#FEF8E8]">
-        <div className="max-w-7xl home-hero-container mx-auto  py-16 md:py-20  lg:py-28 ">
+        <div className="max-w-7xl home-hero-container mx-auto pt-28  pb-16 md:py-20  lg:py-28 ">
           {allPhotos && (
             <>
               <AllPhotos photoList={props.photoList} />

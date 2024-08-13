@@ -1,16 +1,16 @@
-import RootNav from "../comps/RootNav";
-import RootFooter from "../comps/RootFooter";
+import RootNav from "../../comps/RootNav";
+import RootFooter from "../../comps/RootFooter";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
 // page template=============
 
-import { getRewardPageData } from "./api/getRewardPageData";
-import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
-import RewardsProgram from "../comps/rewardPageComps/RewardsProgram";
-import ContactForJoin from "../comps/rewardPageComps/ContactForJoin";
-import RewardFaqs from "../comps/rewardPageComps/RewardFaqs";
-import EarningPoints from "../comps/rewardPageComps/EarningPoints";
-import Seofields from "../comps/util/SeoFields";
+import { getRewardPageData } from "../../pages/api/getRewardPageData";
+import GameHomeHero from "../../comps/activitiyPageComps/GameHomeHero";
+import RewardsProgram from "../../comps/rewardPageComps/RewardsProgram";
+import ContactForJoin from "../../comps/rewardPageComps/ContactForJoin";
+import RewardFaqs from "../../comps/rewardPageComps/RewardFaqs";
+import EarningPoints from "../../comps/rewardPageComps/EarningPoints";
+import Seofields from "../../comps/util/SeoFields";
 
 const rewardProgram = (props) => {
   const toTitleCase = (title) => {

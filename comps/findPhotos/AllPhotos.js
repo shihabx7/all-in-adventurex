@@ -111,14 +111,14 @@ const AllPhotos = ({ photoList }) => {
             <div className="h-[2px] grow bg-[rgba(0,0,0,0.7)]"></div>
             <div className="flex-none">
               <h2 className="text-[#374151] font-bold text-[20px] rm:text-[24px] md:text-[28px] lg:text-[36px] 2xl:text-[40px]">
-                All Escape Artist Team Photo
+                REVISIT YOUR ADVENTURE
               </h2>
             </div>
             <div className="h-[2px] grow bg-[rgba(0,0,0,0.7)]"></div>
           </div>
           <div className="sub-head ">
             <p className="text-center text-[#374151] text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[22px] ">
-              Across all our locations
+              Explore memories from all 22 locations.
             </p>
           </div>
         </div>
