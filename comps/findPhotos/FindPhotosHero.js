@@ -150,7 +150,7 @@ const FindPhotosHero = (props) => {
                 {/*props.pageData.pageTitle*/} FIND YOUR PHOTO
               </h1>
 
-              <div className="pageSub text-gray-100 max-w-[800px] mx-auto text-center lg:text-lg 2xl:text-xl">
+              <div className="pageSub text-gray-100 max-w-[820px] mx-auto text-center lg:text-lg 2xl:text-xl px-2">
                 {/* dangerouslySetInnerHTML={{
                   __html: props.pageData.pageSubtitle,
                 }}*/}

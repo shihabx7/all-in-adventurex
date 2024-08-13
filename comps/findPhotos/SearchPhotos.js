@@ -118,7 +118,7 @@ const AllPhotos = ({ photoList, locationName, srcDate }) => {
         <div className="sec-head px-1 md:px-4">
           <div className="flex justify-center items-center space-x-1 md:space-x-3 lg:space-x-4">
             {imageList.length < 1 ? (
-              <h2 className="text-[rgb(55,65,81)] font-bold text-[20px] rm:text-[24px] md:text-[28px] lg:text-[36px] 2xl:text-[40px]">
+              <h2 className="text-[rgb(55,65,81)] text-center font-bold text-[20px] rm:text-[24px] md:text-[28px] lg:text-[36px] 2xl:text-[40px]">
                 Photo Playing Hard to Get? It'll Show Up Soon!
               </h2>
             ) : (
@@ -136,7 +136,7 @@ const AllPhotos = ({ photoList, locationName, srcDate }) => {
           <div className="sub-head ">
             <div className="text-center text-[#374151] text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[22px] ">
               {imageList.length < 1 ? (
-                <p className="max-w-[800px] mx-auto">
+                <p className="max-w-[800px] mx-auto mt-4">
                   Please make sure you've selected the correct location and
                   date. If you played recently, allow 24-48 hours for our team
                   to upload your photos.
