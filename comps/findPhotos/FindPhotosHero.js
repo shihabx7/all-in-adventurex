@@ -166,8 +166,8 @@ const FindPhotosHero = (props) => {
                 <div
                   className={
                     searchError
-                      ? "flex flex-wrap  justify-center space-x-1 rm:space-x-2  md:space-y-0 items-center md:space-x-4 bg-[#FEF8E8] px-2 rm:px-3 py-5 rm:py-6 md:py-4 md:px-5 lg:py-4 rounded-t-lg"
-                      : "flex flex-wrap  justify-center space-x-1 rm:space-x-2  md:space-y-0 items-center md:space-x-4 bg-[#FEF8E8] px-2 rm:px-3 py-5 rm:py-6 md:py-4 md:px-5 lg:py-4 rounded-lg"
+                      ? "flex flex-wrap  justify-center space-x-1 rm:space-x-2  md:space-y-0 items-center md:space-x-4 bg-[#FEF8E8] px-2 rm:px-3 py-5 rm:py-6 md:py-5 md:px-5 lg:py-5 rounded-t-lg"
+                      : "flex flex-wrap  justify-center space-x-1 rm:space-x-2  md:space-y-0 items-center md:space-x-4 bg-[#FEF8E8] px-2 rm:px-3 py-5 rm:py-6 md:py-5 md:px-5 lg:py-5 rounded-lg"
                   }
                 >
                   {/**location dropdown box  */}

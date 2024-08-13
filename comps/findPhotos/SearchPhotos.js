@@ -117,26 +117,36 @@ const AllPhotos = ({ photoList, locationName, srcDate }) => {
         {/*=====section Head==== */}
         <div className="sec-head px-1 md:px-4">
           <div className="flex justify-center items-center space-x-1 md:space-x-3 lg:space-x-4">
-            <div className="h-[2px] grow bg-[rgba(0,0,0,0.7)]"></div>
-            <div className="flex-none">
+            {imageList.length < 1 ? (
               <h2 className="text-[rgb(55,65,81)] font-bold text-[20px] rm:text-[24px] md:text-[28px] lg:text-[36px] 2xl:text-[40px]">
-                {imageList.length < 1
-                  ? "REVISIT YOUR ADVENTURE"
-                  : "Photo Playing Hard to Get? It'll Show Up Soon!"}
+                Photo Playing Hard to Get? It'll Show Up Soon!
               </h2>
-            </div>
-            <div className="h-[2px] grow bg-[rgba(0,0,0,0.7)]"></div>
+            ) : (
+              <>
+                <div className="h-[2px] grow bg-[rgba(0,0,0,0.7)]"></div>
+                <div className="flex-none">
+                  <h2 className="text-[rgb(55,65,81)] font-bold text-[20px] rm:text-[24px] md:text-[28px] lg:text-[36px] 2xl:text-[40px]">
+                    REVISIT YOUR ADVENTURE
+                  </h2>
+                </div>
+                <div className="h-[2px] grow bg-[rgba(0,0,0,0.7)]"></div>
+              </>
+            )}
           </div>
           <div className="sub-head ">
-            <p className="text-center text-[#374151] text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[22px] ">
+            <div className="text-center text-[#374151] text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[22px] ">
               {imageList.length < 1 ? (
-                <>
-                  Captured on {locName} at All In Adventures, {usFormate(srcDt)}
-                </>
+                <p className="max-w-[800px] mx-auto">
+                  Please make sure you've selected the correct location and
+                  date. If you played recently, allow 24-48 hours for our team
+                  to upload your photos.
+                </p>
               ) : (
-                "Please make sure you've selected the correct location and date. If you played recently, allow 24-48 hours for our team to upload your photos."
+                <p>
+                  Captured on {locName} at All In Adventures, {usFormate(srcDt)}
+                </p>
               )}
-            </p>
+            </div>
           </div>
         </div>
         {/*=====section Head end==== */}
