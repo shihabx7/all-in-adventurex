@@ -141,7 +141,7 @@ const FindPhotosHero = (props) => {
               alt="find escape game photos"
             ></img>
           </div>
-          <div className="max-w-7xl home-hero-container mx-auto px-1 md:px-4 pt-0 pb-[50px] md:py-20  lg:py-28 2xl:py-32  relative z-20">
+          <div className="max-w-7xl home-hero-container mx-auto px-1 md:px-4 pt-0 pb-[50px] md:py-20  lg:py-28 2xl:py-32  relative z-30">
             <div className="page-benar-info">
               <p className="leading-[1.2] md:mt-0 font-semibold text-lg md:text-2xl mb-1 text-white text-center">
                 ALL IN ADVENTURES
@@ -162,12 +162,12 @@ const FindPhotosHero = (props) => {
             </div>
 
             <div className="photo-search-form-box mt-8 drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] flex  justify-center">
-              <div>
+              <div className="px-2 rm:px-3 py-8 rm:py-8 md:py-10 md:px-5 lg:py-10 rounded-lg bg-[#FEF8E8] relative">
                 <div
                   className={
                     searchError
-                      ? "flex flex-wrap  justify-center space-x-1 rm:space-x-2  md:space-y-0 items-center md:space-x-4 bg-[#FEF8E8] px-2 rm:px-3 py-5 rm:py-6 md:py-5 md:px-5 lg:py-5 rounded-t-lg"
-                      : "flex flex-wrap  justify-center space-x-1 rm:space-x-2  md:space-y-0 items-center md:space-x-4 bg-[#FEF8E8] px-2 rm:px-3 py-5 rm:py-6 md:py-5 md:px-5 lg:py-5 rounded-lg"
+                      ? "flex flex-wrap  justify-center space-x-1 rm:space-x-2  md:space-y-0 items-center md:space-x-4 "
+                      : "flex flex-wrap  justify-center space-x-1 rm:space-x-2  md:space-y-0 items-center md:space-x-4  "
                   }
                 >
                   {/**location dropdown box  */}
@@ -202,7 +202,7 @@ const FindPhotosHero = (props) => {
                     {showDrop && (
                       <div
                         id="srcloc"
-                        className="ease-in duration-300  transition-top absolute w-full  max-h-[400px] md:max-h-[460px] lg:max-h-[500px] top-[120%] left-0 overflow-y-scroll "
+                        className="ease-in duration-300  transition-top z-40 absolute w-full  max-h-[400px] md:max-h-[460px] lg:max-h-[500px] top-[120%] left-0 overflow-y-scroll "
                       >
                         <div className="bg-[#2a2a2a] p-3 ">
                           {props.locationSlugList.map((loc) => {
@@ -311,7 +311,7 @@ const FindPhotosHero = (props) => {
                   {/**==========reset src  end*/}
                 </div>
                 {searchError && (
-                  <div className="text-red-700 text-sm md:text-base bg-[#FEF8E8] text-center rounded-b-lg pb-4">
+                  <div className="absolute left-0 bottom-0 w-full text-red-700 text-[14px] rm:text-sm md:text-base text-center rounded-b-lg pb-[8px] md:pb-[12px] ">
                     {errorText}
                   </div>
                 )}

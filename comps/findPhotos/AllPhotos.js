@@ -104,9 +104,9 @@ const AllPhotos = ({ photoList }) => {
 
   return (
     <>
-      <div className="c-all-photos ">
+      <div className="c-all-photos  ">
         {/*=====section Head==== */}
-        <div className="sec-head px-1 md:px-4">
+        <div className="sec-head px-3 rm:px-4 rm:mt-4">
           <div className="flex justify-center items-center space-x-1 md:space-x-3 lg:space-x-4">
             <div className="h-[2px] grow bg-[rgba(0,0,0,0.7)]"></div>
             <div className="flex-none">
@@ -117,7 +117,7 @@ const AllPhotos = ({ photoList }) => {
             <div className="h-[2px] grow bg-[rgba(0,0,0,0.7)]"></div>
           </div>
           <div className="sub-head ">
-            <p className="text-center text-[#374151] text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[22px] ">
+            <p className="text-center text-gray-500 text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[22px] ">
               Explore memories from all 22 locations.
             </p>
           </div>
