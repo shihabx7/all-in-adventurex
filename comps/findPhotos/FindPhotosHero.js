@@ -145,13 +145,14 @@ const FindPhotosHero = (props) => {
                 {/*props.pageData.pageTitle*/} FIND YOUR PHOTO
               </h1>
 
-              <div className="pageSub text-gray-100 max-w-[860px] mx-auto text-center lg:text-lg 2xl:text-xl">
+              <div className="pageSub text-gray-100 max-w-[800px] mx-auto text-center lg:text-lg 2xl:text-xl">
                 {/* dangerouslySetInnerHTML={{
-                __html: props.pageData.pageSubtitle,
-              }}*/}
-                This leaderboard showcases the top teams from the past 30 days.
-                Use the search filters to find your team's achievements and see
-                how you rank among the best escape artists.
+                  __html: props.pageData.pageSubtitle,
+                }}*/}
+                Select your location, enter the date you played, and hit search
+                to access your group's photo. Then, choose your photo and click
+                the download icon to save your memories. Use reset to start a
+                new search.
               </div>
             </div>
 
