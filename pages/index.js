@@ -4,7 +4,8 @@ import RootNav from "../comps/RootNav";
 import RootFooter from "../comps/RootFooter";
 
 import HomeHero from "../comps/homepagecomps/HomeHero";
-import PageVideo from "../comps/homepagecomps/PageVideo";
+
+import PageVideoHome from "../comps/homepagecomps/PageVideoHome";
 
 import EscaeGameSlider from "../comps/homepagecomps/EscaeGameSlider";
 import OtherGameSlider from "../comps/homepagecomps/OtherGameSlider";
@@ -27,7 +28,7 @@ export default function Home(props) {
 
       <div id="mainContent" className="main-content">
         <HomeHero pageData={props.pageData} />
-        <PageVideo pageVideo={props.pageVideo} />
+        <PageVideoHome pageVideo={props.pageVideo} />
         <EscaeGameSlider escapeGameList={props.escapeGameList} />
         {props.otherGameList.hasGames ? (
           <OtherGameSlider otherGameList={props.otherGameList} />

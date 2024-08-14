@@ -19,7 +19,7 @@ const PricingGiftCard = (props) => {
       </div>
       {/*======================= boder img end============== */}
       {/**=================inpersone escape game price section==================== */}
-      <div className="section-container max-w-7xl mx-auto  pb-16 md:pb-20 lg:pb-28 relative z-30">
+      <div className="section-container max-w-7xl mx-auto  pb-16 md:pb-20 lg:pb-28 relative z-30 px-[0px] rm:px-4">
         <div className="section-title px-4 mb-8">
           <TitleSeparator
             title="GIFT CARD PRICING"
@@ -34,7 +34,7 @@ const PricingGiftCard = (props) => {
               {/** ==============table-head============ */}
               <tr>
                 <td className="border border-[#D2C6AA] p-2 md:p-3 w-[32%]">
-                  <h4 className="font-medium text-sm sm:text-lg md:text-[24px] text-[#000000]">
+                  <h4 className="font-medium text-xs rm:text-sm sm:text-lg md:text-[24px] text-[#000000]">
                     Options
                   </h4>
                 </td>
@@ -44,17 +44,17 @@ const PricingGiftCard = (props) => {
                   </h4>
                 </td>
                 <td className="border border-[#D2C6AA] p-2 md:p-4 w-[17%]">
-                  <h4 className="font-medium text-sm  sm:text-lg md:text-[24px] text-[#000000]">
+                  <h4 className="font-medium text-xs rm:text-sm  sm:text-lg md:text-[24px] text-[#000000]">
                     Growth
                   </h4>
                 </td>
                 <td className="border border-[#D2C6AA] p-2 md:p-4 w-[17%]">
-                  <h4 className="font-medium text-sm  sm:text-lg md:text-[24px] text-[#000000]">
+                  <h4 className="font-medium text-xs rm:text-sm  sm:text-lg md:text-[24px] text-[#000000]">
                     Generous
                   </h4>
                 </td>
                 <td className="border border-[#D2C6AA] p-2 md:p-4 w-[17%]">
-                  <h4 className="font-medium text-sm  sm:text-lg md:text-[24px] text-[#000000]">
+                  <h4 className="font-medium text-xs rm:text-sm   sm:text-lg md:text-[24px] text-[#000000]">
                     Custom
                   </h4>
                 </td>
@@ -65,7 +65,7 @@ const PricingGiftCard = (props) => {
               {/** ==============table-row============4+ players */}
               <tr>
                 <td className="border border-[#D2C6AA] w-[32%]  p-2 md:p-4">
-                  <h4 className="font-medium text-sm md:text-[20px] text-[#000000]">
+                  <h4 className="font-medium text-xs rm:text-sm  md:text-[20px] text-[#000000]">
                     Gift Card
                   </h4>
                   <p className="text-[#222222] font-light text-xs sm:text-sm md:text-lg">
@@ -109,7 +109,7 @@ const PricingGiftCard = (props) => {
               {/** ==============table-row===========   3-4 Players */}
               <tr>
                 <td className="border border-[#D2C6AA] w-[32%]  p-2 md:p-4">
-                  <h4 className="font-medium text-sm md:text-[20px] text-[#000000]">
+                  <h4 className="font-medium text-xs rm:text-sm  md:text-[20px] text-[#000000]">
                     Gift Card Add On
                     <p className="text-[#222222] font-light text-xs sm:text-sm md:text-lg">
                       (Physical surprise package)

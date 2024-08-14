@@ -69,7 +69,7 @@ const AllBlogs = (props) => {
       {isLoadMore && (
         <div className="show-more-blog flex justify-center my-6 md:my-8 lg:my-12">
           <button
-            className="flex space-x-1 text-red-600 hover:text-700 font-medium text-xl lg:text-xl items-center"
+            className="flex space-x-1 text-red-600 hover:text-red-700 font-medium text-xl lg:text-xl items-center"
             onClick={showMore}
           >
             {!isLoading && (

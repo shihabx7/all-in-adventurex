@@ -20,7 +20,7 @@ const PriceInperson = (props) => {
       {/*======================= boder img end============== */}
 
       {/**=================inpersone escape game price section==================== */}
-      <div className="section-container max-w-7xl mx-auto  pt-16 md:pt-24 lg:pt-28 relative z-30">
+      <div className="section-container max-w-7xl mx-auto  pt-16 md:pt-24 lg:pt-28 relative z-30 px-4">
         <div className="section-title px-4 mb-8">
           <TitleSeparator
             title="MOST POPULAR ESCAPE ROOM PRICING"

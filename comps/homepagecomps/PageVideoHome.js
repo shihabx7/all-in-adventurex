@@ -15,7 +15,7 @@ const bookAll = (bookingData) => {
   });
 };
 
-const PageVideo = (props) => {
+const PageVideoHome = (props) => {
   const [showTeaser, setShowTeaser] = useState(false);
   const [playVid, setPlayVid] = useState(false);
 
@@ -105,7 +105,7 @@ const PageVideo = (props) => {
         </div>
 
         <div className="max-w-7xl mx-auto">
-          <div className="hbt-container pt-16 md:pt-16 relative z-20">
+          <div className="hbt-container pt-5 md:pt-16 relative z-20">
             <TitleSeparator title={props.pageVideo.title} />
             <div className="max-w-[860px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16">
               <div
@@ -233,4 +233,4 @@ const PageVideo = (props) => {
   );
 };
 
-export default PageVideo;
+export default PageVideoHome;

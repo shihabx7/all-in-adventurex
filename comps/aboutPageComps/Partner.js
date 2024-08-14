@@ -36,7 +36,7 @@ const Partner = () => {
                 <a
                   href="https://newenglandcities.com/escape-rooms-in-connecticut/"
                   target="_blank"
-                  className="flex space-x-1 justify-center items-center text-red-600 text-lg"
+                  className="flex space-x-1 justify-center items-center text-red-600 hover:text-red-700 text-lg"
                 >
                   <span>Learn more</span>
                   <span>
@@ -57,7 +57,7 @@ const Partner = () => {
                 <a
                   href="https://www.usatoday.com/"
                   target="_blank"
-                  className="flex space-x-1 justify-center items-center text-red-600 text-lg"
+                  className="flex space-x-1 justify-center items-center text-red-600 hover:text-red-700 text-lg"
                 >
                   <span>Learn more</span>
                   <span>
@@ -78,7 +78,7 @@ const Partner = () => {
                 <a
                   href="https://www.cnbc.com/video/2019/04/24/experience-over-shopping-making-malls-hot-again.html"
                   target="_blank"
-                  className="flex space-x-1 justify-center items-center text-red-600 text-lg"
+                  className="flex space-x-1 justify-center items-center text-red-600 hover:text-red-700  text-lg"
                 >
                   <span>Learn more</span>
                   <span>
@@ -99,7 +99,7 @@ const Partner = () => {
                 <a
                   href="https://www.youtube.com/watch?v=vA9KHQ0Biqw"
                   target="_blank"
-                  className="flex space-x-1 justify-center items-center text-red-600 text-lg"
+                  className="flex space-x-1 justify-center items-center text-red-600 hover:text-red-700  text-lg"
                 >
                   <span>Learn more</span>
                   <span>
@@ -120,7 +120,7 @@ const Partner = () => {
                 <a
                   href="https://www.mycentraljersey.com/story/money/business/2019/10/29/all-in-adventures-escape-room-opens-brunswick-square-mall-nj/2484647001/"
                   target="_blank"
-                  className="flex space-x-1 justify-center items-center text-red-600 text-lg"
+                  className="flex space-x-1 justify-center items-center text-red-600 hover:text-red-700  text-lg"
                 >
                   <span>Learn more</span>
                   <span>
@@ -141,7 +141,7 @@ const Partner = () => {
                 <a
                   href="https://westfieldsouthwick.macaronikid.com/articles/59b173763c105d76b6e2f315/have-you-escaped-yet"
                   target="_blank"
-                  className="flex space-x-1 justify-center items-center text-red-600 text-lg"
+                  className="flex space-x-1 justify-center items-center text-red-600 hover:text-red-700  text-lg"
                 >
                   <span>Learn more</span>
                   <span>
@@ -162,7 +162,7 @@ const Partner = () => {
                 <a
                   href="https://www.dailyitem.com/business/escape-rooms-allows-valley-residents-to-escape-into-an-alternate/article_ea772444-96e7-11e7-9549-8fcb321a40b8.html"
                   target="_blank"
-                  className="flex space-x-1 justify-center items-center text-red-600 text-lg"
+                  className="flex space-x-1 justify-center items-center text-red-600 hover:text-red-700  text-lg"
                 >
                   <span>Learn more</span>
                   <span>
@@ -183,7 +183,7 @@ const Partner = () => {
                 <a
                   href="https://www.gazettenet.com/puzzled-escape-games-14823150"
                   target="_blank"
-                  className="flex space-x-1 justify-center items-center text-red-600 text-lg"
+                  className="flex space-x-1 justify-center items-center text-red-600 hover:text-red-700 text-lg"
                 >
                   <span>Learn more</span>
                   <span>
@@ -205,7 +205,7 @@ const Partner = () => {
                 <a
                   href="http://www.roanoke.com/_services/v1/client_captcha/challenge?request=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjY3MTM0NjEsImlhdCI6MTY2NjcxMzE2MSwicmVkaXJlY3QiOiIvYnVzaW5lc3MvZXNjYXBlLXJvb20tYnJpbmdzLWFkdmVudHVyZS10by12YWxsZXktdmlldy9hcnRpY2xlX2IwZGE1ODUxLWQwZjEtNTgzMy1iZThjLTk2Y2RkZWU2ZjJjNC5odG1sIiwic2VydmljZSI6Il9sYl9yYXRlX2ZvcmVpZ24iLCJzaXRlIjoicm9hbm9rZS5jb20ifQ.d3XXp_e37Y6Od5955uodmdjeiuD_0dp5ogQ4KUHTkwA"
                   target="_blank"
-                  className="flex space-x-1 justify-center items-center text-red-600 text-lg"
+                  className="flex space-x-1 justify-center items-center text-red-600 hover:text-red-700 text-lg"
                 >
                   <span>Learn more</span>
                   <span>
@@ -226,7 +226,7 @@ const Partner = () => {
                 <a
                   href="https://www.youtube.com/watch?v=xuMg3rYggGA"
                   target="_blank"
-                  className="flex space-x-1 justify-center items-center text-red-600 text-lg"
+                  className="flex space-x-1 justify-center items-center text-red-600 hover:text-red-700 text-lg"
                 >
                   <span>Learn more</span>
                   <span>

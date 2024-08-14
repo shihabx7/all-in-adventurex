@@ -91,14 +91,14 @@ const gallery = (props) => {
           <div className="section-container max-w-7xl mx-auto relative z-30">
             {/* =======customer  gallery========  */}
             <div className="inperson-gallery">
-              <div className="section-title  text-center max-w-[800px] mx-auto px-4 md:px-0 font-medium text-xl">
-                <p className="uppercase">CUSTOMER GALLERY</p>
+              <div className="section-title  text-center max-w-[800px] mx-auto px-4 md:px-0  ">
+                <p className="uppercase md:text-lg">CUSTOMER GALLERY</p>
                 <TitleSeparator
                   title="IN-PERSON ESCAPE ROOM GAMES"
                   color="golden-text"
                   weight="font-bold"
                 />
-                <p className="text-gray-700 md:px-8 md:text-lg">
+                <p className="text-gray-700 md:px-8 md:text-lg mt-3 md:mt-5">
                   Escape rooms are one of the hottest trends in entertainment
                   today. Players must work together to find hidden clues, solve
                   puzzles, crack codes, complete tasks, and escape before time
@@ -126,7 +126,7 @@ const gallery = (props) => {
                   color="golden-text"
                   weight="font-bold"
                 />
-                <p className="text-gray-700 md:px-8 md:text-lg">
+                <p className="text-gray-700 md:px-8 md:text-lg mt-3 md:mt-5">
                   We&apos;ve hosted over 10,000 birthday parties and
                   team-building events over the years. With more escape room
                   themes and options being constantly added, we are always
@@ -149,7 +149,7 @@ const gallery = (props) => {
                   color="golden-text"
                   weight="font-bold"
                 />
-                <p className="text-gray-700 md:px-8 md:text-lg">
+                <p className="text-gray-700 md:px-8 md:text-lg mt-3 md:mt-5">
                   All In Adventures is more than an escape room place. Join us
                   to experience more fun activities, including Game Show Rooms,
                   Beat the Seat and Axe Throwing.

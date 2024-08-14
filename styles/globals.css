@@ -1378,6 +1378,18 @@ a {
   }
 }
 @media only screen and (max-width: 767px) {
+  .pl-or-1 img {
+    max-width: 100px;
+  }
+  .pl-or-2 img {
+    max-width: 90px;
+  }
+  .pl-or-3 img {
+    max-width: 100px;
+  }
+  .pl-or-4 img {
+    max-width: 90px;
+  }
   .home-hero {
     background-image: unset !important;
     background-color: #000000 !important;

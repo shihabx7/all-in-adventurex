@@ -52,13 +52,13 @@ const OtherGameCarousel = (props) => {
       partialVisibilityGutter: 0,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 520 },
+      breakpoint: { max: 1000, min: 640 },
       items: 2,
       slidesToSlide: 1,
       partialVisibilityGutter: 0,
     },
     mobile: {
-      breakpoint: { max: 520, min: 0 },
+      breakpoint: { max: 639, min: 0 },
       items: 1,
       slidesToSlide: 1,
       partialVisibilityGutter: 0,

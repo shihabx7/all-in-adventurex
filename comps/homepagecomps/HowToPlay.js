@@ -100,7 +100,7 @@ const HowToPlay = (props) => {
         </div>
 
         <div className="max-w-7xl mx-auto">
-          <div className="hbt-container pt-4 md:pt-16 relative z-20">
+          <div className="hbt-container pt-12 md:pt-16 relative z-20">
             <TitleSeparator
               title="HOW TO PLAY AN ESCAPE ROOM"
               color="dark-gold"

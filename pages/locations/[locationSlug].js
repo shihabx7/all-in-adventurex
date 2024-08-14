@@ -15,6 +15,7 @@ import GiftCards from "../../comps/homepagecomps/GiftCards";
 import WhatIsEscape from "../../comps/homepagecomps/WhatIsEscape";
 import WhoCanplay from "../../comps/homepagecomps/WhoCanPlay";
 import TestimonialSlider from "../../comps/homepagecomps/TestimonialSlider";
+import TestimonialLocSlider from "../../comps/homepagecomps/TestimonialLocSlider";
 import LocationDetails from "../../comps/locationsPage/LocationDetails";
 import LocationFooter from "../../comps/locationsPage/LocationFooter";
 
@@ -82,7 +83,7 @@ const location = (props) => {
       />
       <WhatIsEscape />
       <WhoCanplay />
-      <TestimonialSlider testimonialList={props.testimonialList} />
+      <TestimonialLocSlider testimonialList={props.testimonialList} />
       <LocationDetails
         mapInfo={props.mapInfo}
         locationInfo={props.locationInfo}
