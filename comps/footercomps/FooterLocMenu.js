@@ -18,12 +18,14 @@ const FooterLocMenu = (props) => {
                   <div key={loc.id + item.id} className="footer-loc-link-box ">
                     <a
                       href={"/locations/" + item.locationSlug}
-                      className="footer-link underline-offset-4 flex space-x-2 items-center my-2 text-sm lg:text-base"
+                      className="footer-link  underline-offset-4  my-2 text-sm lg:text-base inline-block"
                     >
-                      {item.locationName}
-                      <span>
-                        <FaAngleRight />
-                      </span>
+                      <div className="flex space-x-1 items-center">
+                        <span>{item.locationName}</span>
+                        <span>
+                          <FaAngleRight />
+                        </span>
+                      </div>
                     </a>
                   </div>
                 );
