@@ -93,19 +93,19 @@ const EventCarousel = (props) => {
                   src={event.eventCarousel.url}
                   alt={event.eventCarousel.alt}
                 ></img>
-                <div className="w-full h-full absolute top-0 left-0">
+                <div className="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.07)]">
                   <div className="w-full h-full flex flex-col justify-between">
                     <div className="card-head otg-head flex justify-center pt-8 lg:pt-8 lg:pb-8 px-4">
-                      <div className="card-info text-center ">
+                      <div className="card-info text-center">
                         <h3 className="card-game-title text-[22px] rm:text-[25px] sm:text-2xl lg:text-3xl xl:text-[28px] 3xl:text-[27px] 4xl:text-3xl font-bold uppercase text-[#ffffff]">
                           {event.eventName}
                         </h3>
                       </div>
                     </div>
 
-                    <div className="card-bottom otg-bottom p-4 pt-4 md:pt-10 lg:pt-12">
-                      <div className="h-[80px] md:h-[90px] lg:h-[100px] 2xl:h-[100px] text-center">
-                        <p className="text-gray-100 lg:text-lg">
+                    <div className="card-bottom otg-bottom p-4 pt-6 md:pt-10 lg:pt-12">
+                      <div className=" text-center  pb-3">
+                        <p className="text-gray-100 text-[13px] rm:text-[15px] lg:text-[16px] 3xl:text-[15px] 4xl:text-[17px]">
                           {showDescription(event.description)}
                         </p>
                       </div>

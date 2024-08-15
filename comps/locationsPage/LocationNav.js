@@ -95,6 +95,9 @@ const LocationNav = (props) => {
                     partyBooking={
                       props.partyBooking ? props.partyBooking : false
                     }
+                    activeGameBooking={
+                      props.activeGameBooking ? props.activeGameBooking : false
+                    }
                   />
                 </div>
                 <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
@@ -172,6 +175,9 @@ const LocationNav = (props) => {
             gameBooking={props.gameBooking ? props.gameBooking : false}
             partyBooking={props.partyBooking ? props.partyBooking : false}
             eventSlug={props.eventSlug ? props.eventSlug : false}
+            activeGameBooking={
+              props.activeGameBooking ? props.activeGameBooking : false
+            }
           />
         </div>
         {/*============floating booking btn mobile end==========*/}

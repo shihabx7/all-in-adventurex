@@ -520,6 +520,12 @@ a {
   max-width: 240px;
   filter: opacity(20%);
 }
+.contact-store-hero-desc a {
+  color: rgb(220 38 38);
+}
+.contact-store-hero-desc a:hover {
+  color: rgb(185 28 28);
+}
 /*==============slider carousel design=======*/
 .game-slider-card {
   background-size: cover !important;
@@ -564,7 +570,7 @@ a {
 }
 .otg-bottom {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.03),
+    rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 0.78),
     rgba(0, 0, 0, 0.88),
     rgba(0, 0, 0, 0.98)

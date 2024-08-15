@@ -24,12 +24,23 @@ const EventBookingBtn = (props) => {
           {!props.partyBooking ? (
             <>
               {props.eventSlug ? (
-                <a
-                  href={"#eventbooking"}
-                  className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
-                >
-                  BOOK EVENT
-                </a>
+                <>
+                  {props.activeGameBooking ? (
+                    <a
+                      href={"/" + props.locationSlug + "/events#eventbooking"}
+                      className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+                    >
+                      BOOK EVENT
+                    </a>
+                  ) : (
+                    <a
+                      href={"#eventbooking"}
+                      className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+                    >
+                      BOOK EVENT
+                    </a>
+                  )}
+                </>
               ) : (
                 <a
                   href={"/" + props.locationSlug + "/events#eventbooking"}

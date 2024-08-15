@@ -24,7 +24,7 @@ const CorContactHero = (props) => {
                 {props.pageData.pageTitle}
               </h1>
               <div
-                className="text-gray-100 max-w-[840px] mx-auto text-center lg:text-lg"
+                className="text-gray-100 max-w-[840px] mx-auto text-center lg:text-lg contact-store-hero-desc"
                 dangerouslySetInnerHTML={{
                   __html: props.pageData.pageSubtitle,
                 }}

@@ -29,6 +29,7 @@ const LocSingleEvent = (props) => {
         locationSlug={props.locationSlug}
         eventSlug={props.eventSlug}
         allBooking={props.allBooking}
+        activeGameBooking={props.activeGameBooking}
       />
       <div id="mainContent" className="main-content">
         {/* =======header content and breadcum======== */}

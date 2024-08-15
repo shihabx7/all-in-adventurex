@@ -53,7 +53,7 @@ const ContactStoreHero = (props) => {
                 {props.pageData.pageTitle}
               </h1>
               <div
-                className="text-gray-100 max-w-[840px] mx-auto text-center lg:text-lg"
+                className="text-gray-100 max-w-[840px] mx-auto text-center lg:text-lg contact-store-hero-desc"
                 dangerouslySetInnerHTML={{
                   __html: props.pageData.pageSubtitle,
                 }}
@@ -69,14 +69,25 @@ const ContactStoreHero = (props) => {
                   >
                     BOOK YOUR GAMES
                   </button>
-                  <button
-                    onClick={() => {
-                      bookEvent(props.eventBooking);
-                    }}
-                    className="block w-full mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg"
-                  >
-                    BOOK YOUR PARTY
-                  </button>
+                  {props.eventBooking.isActive ? (
+                    <button
+                      onClick={() => {
+                        bookEvent(props.eventBooking);
+                      }}
+                      className="block w-full mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg"
+                    >
+                      BOOK YOUR PARTY
+                    </button>
+                  ) : (
+                    <>
+                      <a
+                        href={"/" + props.locationSlug + "/events"}
+                        className="block w-full mt-4 py-3 rounded-full text-center text-white font-medium border-2 border-red-600 hover:bg-red-700 hover:border-red-700 text-lg"
+                      >
+                        BOOK YOUR PARTY
+                      </a>
+                    </>
+                  )}
                 </>
               ) : (
                 <>
