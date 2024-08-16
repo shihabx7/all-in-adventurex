@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { BiChevronLeft, BiChevronRight, BiX } from "react-icons/bi";
 import { MdOutlineFileDownload } from "react-icons/md";
 
-const AllPhotos = ({ photoList }) => {
+const AllPhotos = ({ photoList, totalLocations }) => {
   const [imageList, setImageList] = useState(photoList);
   const [currentPage, setCurrentPage] = useState(1);
   const [isLoading, setisLoading] = useState(false);
@@ -118,7 +118,7 @@ const AllPhotos = ({ photoList }) => {
           </div>
           <div className="sub-head ">
             <p className="text-center text-gray-500 text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[22px] ">
-              Explore memories from all 22 locations.
+              Explore memories from all {totalLocations} locations.
             </p>
           </div>
         </div>
@@ -129,26 +129,37 @@ const AllPhotos = ({ photoList }) => {
             className="grid grid-cols-2 gap-1 md:grid-cols-3 md:gap-2 lg:grid-cols-4 lg:gap-3"
             ref={imageRef}
           >
-            {imageList.map((item, index) => {
-              return (
-                <div
-                  key={index}
-                  onClick={() => openLightbox(index)}
-                  className="photo-item p-[4px]  hover:cursor-pointer md:p-1 bg-[#FFF1D2] shadow-md hover:shadow-lg hover:bg-[#D3A54F]"
-                >
-                  <div
-                    className="w-full pt-[56.25%] bg-center bg-origin-border bg-contain bg-no-repeat bg-[#111111]"
-                    style={{ backgroundImage: "url('" + item.url + "')" }}
-                  ></div>
+            {imageList.length > 0 ? (
+              <>
+                {" "}
+                {imageList.map((item, index) => {
+                  return (
+                    <div
+                      key={index}
+                      onClick={() => openLightbox(index)}
+                      className="photo-item p-[4px]  hover:cursor-pointer md:p-1 bg-[#FFF1D2] shadow-md hover:shadow-lg hover:bg-[#D3A54F]"
+                    >
+                      <div
+                        className="w-full pt-[56.25%] bg-center bg-origin-border bg-contain bg-no-repeat bg-[#111111]"
+                        style={{ backgroundImage: "url('" + item.url + "')" }}
+                      ></div>
 
-                  <img
-                    className="w-full hidden"
-                    src={item.url}
-                    alt={item.alt}
-                  ></img>
-                </div>
-              );
-            })}
+                      <img
+                        className="w-full hidden"
+                        src={item.url}
+                        alt={item.alt}
+                      ></img>
+                    </div>
+                  );
+                })}
+              </>
+            ) : (
+              <>
+                <h2 className="text-[rgb(55,65,81)] text-center font-bold text-[20px] rm:text-[24px] md:text-[28px] lg:text-[36px] 2xl:text-[40px]">
+                  Photos are not upload yet.
+                </h2>
+              </>
+            )}
           </div>
         </div>
         <div className="locadmore-box mt-4 md:mt-6 lg:mt-8"></div>

@@ -32,6 +32,7 @@ export const getPricingPageData = async () => {
     otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),
     totalLocations: totalLocations,
+
     pageMeta: {
       title: "Pricing | All In Adventures | Formerly Mystery Room",
       description:

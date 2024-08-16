@@ -64,12 +64,12 @@ const OpenJobPosition = (props) => {
         {/* =======breadcum content and breadcum root page template======== end */}
 
         <CareerHero
-          pagedata={props.pagedata}
-          jobname={props.pagedata.job_designation}
+          pageData={props.pageData}
+          jobname={props.pageData.job_designation}
         />
         <JobDetails
-          jobname={props.pagedata.job_designation}
-          designation={props.pagedata.job_designation}
+          jobname={props.pageData.job_designation}
+          designation={props.pageData.job_designation}
           jobroles={props.jobroles}
           competencies={props.competencies}
           traits={props.traits}
@@ -114,7 +114,7 @@ export const getStaticProps = async (context) => {
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
       pagemeta: DATA.pageMeta,
-      pagedata: DATA.pageData,
+      pageData: DATA.pageData,
       jobroles: DATA.job_roles,
       competencies: DATA.key_competencies,
       traits: DATA.desired_traits,

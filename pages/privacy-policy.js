@@ -4,7 +4,7 @@ import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
 // page template=============
 
-import GnHero from "../comps/privacyTermsComps/GnHero";
+import PtHero from "../comps/privacyTermsComps/PtHero";
 import Seofields from "../comps/util/SeoFields";
 import { getPrivacyPageData } from "./api/getPrivacyPageData";
 import PrivacyPolicy from "../comps/privacyTermsComps/PrivacyPolicy";
@@ -61,7 +61,7 @@ const privacyPolicy = (props) => {
           ></Breadcrumbs>
         </div>
         {/* =======breadcum content and breadcum root page template======== end */}
-        <GnHero gametotal="not" pagedata={props.pagedata} />
+        <PtHero pageData={props.pageData} />
 
         <PrivacyPolicy />
 
@@ -89,7 +89,7 @@ export const getStaticProps = async () => {
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
 
-      pagedata: DATA.pageData,
+      pageData: DATA.pageData,
       pagemeta: DATA.pageMeta,
     },
   };

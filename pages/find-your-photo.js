@@ -27,6 +27,8 @@ const FindPhotos = (props) => {
         <FindPhotosHero
           locationSlugList={props.locationSlugList}
           photoList={props.photoList}
+          pageData={props.pageData}
+          totalLocations={props.totalLocations}
         />
 
         {/* =========================================================================================main content ======== end */}
@@ -45,7 +47,7 @@ const FindPhotos = (props) => {
 export default FindPhotos;
 export const getStaticProps = async () => {
   const DATA = await getCustomersPhotos();
-  // console.log(DATA);
+  //console.log(DATA);
   // console.log(giftpagedataData.redeemgames);
   return {
     props: {

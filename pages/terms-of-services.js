@@ -5,6 +5,7 @@ import { FiChevronRight } from "react-icons/fi";
 // page template=============
 
 import GnHero from "../comps/privacyTermsComps/GnHero";
+import PtHero from "../comps/privacyTermsComps/PtHero";
 
 import { getTermsConditionPageData } from "./api/getTermsConditionPageData";
 
@@ -64,7 +65,7 @@ const termsAndCondition = (props) => {
           ></Breadcrumbs>
         </div>
         {/* =======breadcum content and breadcum root page template======== end */}
-        <GnHero gametotal="not" pagedata={props.pagedata} />
+        <PtHero pageData={props.pageData} />
         <TermsAndCondition />
 
         {/* =========================================================================================main content ======== end */}
@@ -91,7 +92,7 @@ export const getStaticProps = async () => {
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
 
-      pagedata: DATA.pageData,
+      pageData: DATA.pageData,
       pagemeta: DATA.pageMeta,
     },
   };

@@ -4,7 +4,7 @@ import RootFooter from "../comps/RootFooter";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
 import { getFaqPageData } from "./api/getFaqPageData";
-import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
+import FaqPageHero from "../comps/faqComps/FaqPageHero";
 import AllFaq from "../comps/faqComps/AllFaq";
 import Seofields from "../comps/util/SeoFields";
 
@@ -61,7 +61,7 @@ const faqs = (props) => {
           ></Breadcrumbs>
         </div>
         {/* =======breadcum content and breadcum root page template======== end */}
-        <GameHomeHero gametotal="not" pagedata={props.pagedata} />
+        <FaqPageHero pageData={props.pageData} />
         <AllFaq faqlist={props.faqlist} />
 
         {/* =========================================================================================main content ======== end */}
@@ -88,7 +88,7 @@ export const getStaticProps = async () => {
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
       pagemeta: DATA.pageMeta,
-      pagedata: DATA.pageData,
+      pageData: DATA.pageData,
 
       faqlist: DATA.faqlist,
     },

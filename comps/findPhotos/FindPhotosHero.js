@@ -129,16 +129,15 @@ const FindPhotosHero = (props) => {
       <div
         className="home-hero bg-[#111111] bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url('/assets/find-photos/find-escape-games-photos-desktop.jpg')",
+          backgroundImage: "url('" + props.pageData.pageHeroDesktop.url + "')",
         }}
       >
         <div className="home-hero-holder bg-[rgba(0,0,0,.7)]">
           <div className="homehero-img w-full min-h-[280px] bg-[#000000] md:hidden">
             <img
               className="w-full"
-              src="/assets/find-photos/find-escape-games-photos-mobile.jpg"
-              alt="find escape game photos"
+              src={props.pageData.pageHeroMobile.url}
+              alt={props.pageData.pageHeroMobile.alt}
             ></img>
           </div>
           <div className="max-w-7xl home-hero-container mx-auto px-1 md:px-4 pt-0 pb-[50px] md:py-20  lg:py-28 2xl:py-32  relative z-30">
@@ -325,7 +324,10 @@ const FindPhotosHero = (props) => {
         <div className="max-w-7xl home-hero-container mx-auto pt-28  pb-16 md:py-20  lg:py-28 ">
           {allPhotos && (
             <>
-              <AllPhotos photoList={props.photoList} />
+              <AllPhotos
+                photoList={props.photoList}
+                totalLocations={props.totalLocations}
+              />
             </>
           )}
           {searchPhotos && (

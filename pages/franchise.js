@@ -65,7 +65,7 @@ const franchise = (props) => {
         </div>
         {/* =======breadcum content and breadcum root page template======== end */}
 
-        <FranchiseHero pagedata={props.pagedata} label="INQUIRE NOW" />
+        <FranchiseHero pageData={props.pageData} label="INQUIRE NOW" />
         <FranchiseModel />
         {/*<FranchiseTestimonials/> */}
         <WhyAllinAdventure />
@@ -95,7 +95,7 @@ export const getStaticProps = async () => {
       otherGameSlugList: DATA.otherGameSlugList,
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
-      pagedata: DATA.pageData,
+      pageData: DATA.pageData,
       pagemeta: DATA.pageMeta,
     },
     revalidate: 30,

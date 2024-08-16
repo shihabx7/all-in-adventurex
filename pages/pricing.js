@@ -4,13 +4,13 @@ import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
 // page template=============
 import { getPricingPageData } from "./api/getPricingPageData";
-import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
+import PricingPageHero from "../comps/pricingPageComps/PricingPageHero";
 import PriceForLargerGroup from "../comps/pricingPageComps/PriceForLargerGroup";
 import PriceInperson from "../comps/pricingPageComps/PriceInperson";
 import PricingNextGen from "../comps/pricingPageComps/PricingNextGen";
 import PricingQuest from "../comps/pricingPageComps/PricingQuest";
 import PricingOthersGame from "../comps/pricingPageComps/PricingOthersGame";
-import PrivcingVirtualGames from "../comps/pricingPageComps/PrivcingVirtualGames";
+
 import PricingEvents from "../comps/pricingPageComps/PricingEvents";
 import PricingGiftCard from "../comps/pricingPageComps/PricingGiftCard";
 
@@ -69,7 +69,7 @@ const Pricing = (props) => {
         </div>
         {/* =======breadcum content and breadcum root page template======== end */}
 
-        <GameHomeHero gametotal="not" pagedata={props.pagedata} />
+        <PricingPageHero pageData={props.pageData} />
         <PriceInperson pricing={props.inpersonpricing} />
         <PricingNextGen pricing={props.nextgenpricing} />
         <PricingQuest pricing={props.questgenpricing} />
@@ -103,7 +103,7 @@ export const getStaticProps = async () => {
       eventSlugList: DATA.eventSlugList,
 
       totalLocations: DATA.totalLocations,
-      pagedata: DATA.pageData,
+      pageData: DATA.pageData,
       pagemeta: DATA.pageMeta,
       inpersonpricing: DATA.inpersonpricing,
       nextgenpricing: DATA.nextgenpricing,

@@ -1,4 +1,4 @@
-const About = () => {
+const AboutOurMission = () => {
   return (
     <div className="our-mission-vission relative bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px]">
       {/*======================= boder img============== */}
@@ -123,4 +123,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutOurMission;

@@ -5,7 +5,7 @@ import { FiChevronRight } from "react-icons/fi";
 // page template=============
 
 import { getWhatisEscapePageData } from "./api/getWhatisEscapePageData";
-import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
+import WhatIsEscapeHero from "../comps/whatIsEscapeRoom/WhatIsEscapeHero";
 import WhatisEscapeBlog from "../comps/util/WhatisEscapeBlog";
 import Seofields from "../comps/util/SeoFields";
 
@@ -62,7 +62,7 @@ const WhtatisEscape = (props) => {
         </div>
         {/* =======breadcum content and breadcum root page template======== end */}
 
-        <GameHomeHero gametotal="not" pagedata={props.pagedata} />
+        <WhatIsEscapeHero pageData={props.pageData} />
         <WhatisEscapeBlog />
 
         {/* =========================================================================================main content ======== end */}
@@ -88,7 +88,7 @@ export const getStaticProps = async () => {
       otherGameSlugList: DATA.otherGameSlugList,
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
-      pagedata: DATA.pageData,
+      pageData: DATA.pageData,
       pagemeta: DATA.pageMeta,
     },
     revalidate: 30,

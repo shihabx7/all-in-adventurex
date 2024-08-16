@@ -3,13 +3,13 @@ import RootFooter from "../comps/RootFooter";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
 
-import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
 // page data
 import { getAboutUsPageData } from "./api/getAboutUsPageData";
-import About from "../comps/aboutPageComps/About";
+import AboutPageHero from "../comps/aboutPageComps/AboutPageHero";
+import AboutOurMission from "../comps/aboutPageComps/AboutOurMission";
 import CoreValue from "../comps/aboutPageComps/CoreValue";
 import MeetOurTeam from "../comps/aboutPageComps/MeetOurTeam";
-import Partner from "../comps/aboutPageComps/Partner";
+import PartnerMedia from "../comps/aboutPageComps/PartnerMedia";
 import HappyTeam from "../comps/aboutPageComps/HappyTeam";
 import Seofields from "../comps/util/SeoFields";
 const AboutUs = (props) => {
@@ -65,11 +65,14 @@ const AboutUs = (props) => {
           ></Breadcrumbs>
         </div>
         {/* =======breadcum content and breadcum root page template======== end */}
-        <GameHomeHero gametotal="not" pagedata={props.pagedata} />
-        <About />
+        <AboutPageHero
+          pageData={props.pageData}
+          totalLocations={props.totalLocations}
+        />
+        <AboutOurMission />
         <CoreValue />
-        <MeetOurTeam team_members={props.team_members} />
-        <Partner />
+        <MeetOurTeam teamMembersList={props.teamMembersList} />
+        <PartnerMedia partnerMediaList={props.partnerMediaList} />
         <HappyTeam />
 
         {/* =========================================================================================main content ======== end */}
@@ -95,10 +98,11 @@ export const getStaticProps = async () => {
       otherGameSlugList: DATA.otherGameSlugList,
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
-      pagedata: DATA.pageData,
+      pageData: DATA.pageData,
       pagemeta: DATA.pageMeta,
 
-      team_members: DATA.teamMembersList,
+      teamMembersList: DATA.teamMembersList,
+      partnerMediaList: DATA.partnerMediaList,
     },
     revalidate: 30,
   };

@@ -5,7 +5,7 @@ import { FiChevronRight } from "react-icons/fi";
 // page template=============
 import { getVolunteeringPageData } from "./api/getVolunteeringPageData";
 
-import Vhero from "../comps/volunteeringPageComps/Vhero";
+import VolunteeringHero from "../comps/volunteeringPageComps/VolunteeringHero";
 import GivingBack from "../comps/volunteeringPageComps/GivingBack";
 import Organization from "../comps/volunteeringPageComps/Organization";
 import Vhelp from "../comps/volunteeringPageComps/Vhelp";
@@ -69,7 +69,10 @@ const Volunteering = (props) => {
         </div>
         {/* =======breadcum content and breadcum root page template======== end */}
 
-        <Vhero gametotal="not" pagedata={props.pagedata} />
+        <VolunteeringHero
+          pageData={props.pageData}
+          totalLocations={props.totalLocations}
+        />
         <GivingBack />
         <Organization />
         <Vhelp />
@@ -97,7 +100,7 @@ export const getStaticProps = async () => {
       otherGameSlugList: DATA.otherGameSlugList,
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
-      pagedata: DATA.pageData,
+      pageData: DATA.pageData,
       pagemeta: DATA.pageMeta,
 
       locationMailData: DATA.locationMailData,

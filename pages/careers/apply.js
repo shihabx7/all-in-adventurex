@@ -69,7 +69,7 @@ const apply = (props) => {
         <CareerHero
           jobname="apply"
           jobid="job-application"
-          pagedata={props.pagedata}
+          pageData={props.pageData}
         />
         <JobApplication locationlist={props.locationSlugList} />
 
@@ -96,7 +96,7 @@ export const getStaticProps = async () => {
       otherGameSlugList: DATA.otherGameSlugList,
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
-      pagedata: DATA.pageData,
+      pageData: DATA.pageData,
       pagemeta: DATA.pageMeta,
     },
     revalidate: 30,

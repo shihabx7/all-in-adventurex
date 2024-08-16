@@ -2,9 +2,10 @@ import RootNav from "../comps/RootNav";
 import RootFooter from "../comps/RootFooter";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
-// page template=============
 import { getDealsCouponPageData } from "./api/getDealsCouponPageData";
-import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
+// page template=============
+
+import DealsAndCouponHero from "../comps/dealsPageComps/DealsAndCouponHero";
 import DealsFaqs from "../comps/dealsPageComps/DealsFaqs";
 import AllDealsAndCoupon from "../comps/dealsPageComps/AllDealsAndCoupon";
 import Seofields from "../comps/util/SeoFields";
@@ -62,7 +63,7 @@ const DealsCoupon = (props) => {
         </div>
         {/* =======breadcum content and breadcum root page template======== end */}
 
-        <GameHomeHero gametotal="not" pagedata={props.pagedata} />
+        <DealsAndCouponHero pageData={props.pageData} />
         <AllDealsAndCoupon couponlist={props.couponlist} />
         <DealsFaqs faqlist={props.faqlist} />
 
@@ -89,7 +90,7 @@ export const getStaticProps = async () => {
       otherGameSlugList: DATA.otherGameSlugList,
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
-      pagedata: DATA.pageData,
+      pageData: DATA.pageData,
       pagemeta: DATA.pageMeta,
       faqlist: DATA.faqlist,
       couponlist: DATA.couponlist,

@@ -4,7 +4,8 @@ import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
 // page template=============
 import { getAnswerPageData } from "./api/getAnswerPageData";
-import GameHomeHero from "../comps/activitiyPageComps/GameHomeHero";
+import AnswerPageHero from "../comps/answerPageComps/AnswerPageHero";
+import AnswerHint from "../comps/answerPageComps/AnswerHint";
 import HintAns from "../comps/util/HintAns";
 import Seofields from "../comps/util/SeoFields";
 
@@ -63,8 +64,8 @@ const Answers = (props) => {
         </div>
         {/* =======breadcum content and breadcum root page template======== end */}
 
-        <GameHomeHero gametotal="not" pagedata={props.pagedata} />
-        <HintAns hintlist={props.hintlist} />
+        <AnswerPageHero pageData={props.pageData} />
+        <AnswerHint hintList={props.hintList} />
 
         {/* =========================================================================================main content ======== end */}
       </div>
@@ -89,10 +90,10 @@ export const getStaticProps = async () => {
       otherGameSlugList: DATA.otherGameSlugList,
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
-      pagedata: DATA.pageData,
+      pageData: DATA.pageData,
       pagemeta: DATA.pageMeta,
 
-      hintlist: DATA.hintlist,
+      hintList: DATA.hintList,
     },
     revalidate: 30,
   };

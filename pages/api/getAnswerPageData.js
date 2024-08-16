@@ -53,7 +53,7 @@ export const getAnswerPageData = async () => {
       coverimageM:
         "/assets/gn-mobile-hero/All-In-Adventures-Generic-Hero-Image-Mobile.jpg",
     },
-    hintlist: [
+    hintList: [
       {
         id: 1,
         ques: "What kind of leaf is this?",

@@ -29,9 +29,9 @@ const MeetOurTeam = (props) => {
           </p>
         </div>
         <div className="team-box grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-          {props.team_members.map((member) => {
+          {props.teamMembersList.map((member, index) => {
             return (
-              <div key={member.id} className="team-list">
+              <div key={index + 1} className="team-list">
                 <div className="member-img">
                   <img
                     className="rounded-full max-w-[140px] md:max-w-[160px] lg:max-w-[190px] mx-auto drop-shadow-lg"

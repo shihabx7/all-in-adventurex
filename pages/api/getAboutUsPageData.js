@@ -116,6 +116,103 @@ export const getAboutUsPageData = async () => {
         img: "/assets/team-member/Adam-Spink.png",
       },
     ],
+    partnerMediaList: [
+      {
+        id: 1,
+        publishDate: "September 1, 2023",
+        linkUrl: "https://newenglandcities.com/escape-rooms-in-connecticut/",
+        image: {
+          url: "/assets/nec.png",
+          alt: "allinadventures media partner",
+        },
+      },
+      {
+        id: 2,
+        publishDate: "February 20, 2017",
+        linkUrl: "https://www.usatoday.com/",
+        image: {
+          url: "/assets/partner-1.png",
+          alt: "allinadventures media partner",
+        },
+      },
+      {
+        id: 3,
+        publishDate: "April 24, 2019",
+        linkUrl:
+          "https://www.cnbc.com/video/2019/04/24/experience-over-shopping-making-malls-hot-again.html",
+        image: {
+          url: "/assets/partner-2.png",
+          alt: "allinadventures media partner",
+        },
+      },
+      {
+        id: 4,
+        publishDate: "August 15, 2015",
+        linkUrl: "https://www.youtube.com/watch?v=vA9KHQ0Biqw",
+        image: {
+          url: "/assets/partner-3.png",
+          alt: "allinadventures media partner",
+        },
+      },
+      {
+        id: 5,
+        publishDate: "Oct 29, 2019",
+        linkUrl:
+          "https://www.mycentraljersey.com/story/money/business/2019/10/29/all-in-adventures-escape-room-opens-brunswick-square-mall-nj/2484647001/",
+        image: {
+          url: "/assets/partner-4.png",
+          alt: "allinadventures media partner",
+        },
+      },
+      {
+        id: 6,
+        publishDate: "September 7, 2017",
+        linkUrl:
+          "https://westfieldsouthwick.macaronikid.com/articles/59b173763c105d76b6e2f315/have-you-escaped-yet",
+        image: {
+          url: "/assets/partner-5.png",
+          alt: "allinadventures media partner",
+        },
+      },
+      {
+        id: 7,
+        publishDate: "September 11, 2017",
+        linkUrl:
+          "https://www.dailyitem.com/business/escape-rooms-allows-valley-residents-to-escape-into-an-alternate/article_ea772444-96e7-11e7-9549-8fcb321a40b8.html",
+        image: {
+          url: "/assets/partner-6.png",
+          alt: "allinadventures media partner",
+        },
+      },
+      {
+        id: 8,
+        publishDate: "March 5, 2018",
+        linkUrl: "https://www.gazettenet.com/puzzled-escape-games-14823150",
+        image: {
+          url: "/assets/partner-7.png",
+          alt: "allinadventures media partner",
+        },
+      },
+      {
+        id: 9,
+        publishDate: "December 17, 2017",
+        linkUrl:
+          "http://www.roanoke.com/_services/v1/client_captcha/challenge?request=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjY3MTM0NjEsImlhdCI6MTY2NjcxMzE2MSwicmVkaXJlY3QiOiIvYnVzaW5lc3MvZXNjYXBlLXJvb20tYnJpbmdzLWFkdmVudHVyZS10by12YWxsZXktdmlldy9hcnRpY2xlX2IwZGE1ODUxLWQwZjEtNTgzMy1iZThjLTk2Y2RkZWU2ZjJjNC5odG1sIiwic2VydmljZSI6Il9sYl9yYXRlX2ZvcmVpZ24iLCJzaXRlIjoicm9hbm9rZS5jb20ifQ.d3XXp_e37Y6Od5955uodmdjeiuD_0dp5ogQ4KUHTkwA",
+        image: {
+          url: "/assets/partner-9.png",
+          alt: "allinadventures media partner",
+        },
+      },
+      {
+        id: 10,
+        publishDate: "November 19, 2014",
+        linkUrl: "https://www.youtube.com/watch?v=xuMg3rYggGA",
+        image: {
+          url: "/assets/partner-10.png",
+          alt: "allinadventures media partner",
+        },
+      },
+    ],
   };
   return data;
 };

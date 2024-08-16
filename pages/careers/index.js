@@ -62,7 +62,7 @@ const Careers = (props) => {
           ></Breadcrumbs>
         </div>
         {/* =======breadcum content and breadcum root page template======== end */}
-        <CareerHero pagedata={props.pagedata} btnid="alljobs" />
+        <CareerHero pageData={props.pageData} btnid="alljobs" />
         <WhoWeAre />
         <OpenPosition jobs={props.jobs} />
 
@@ -89,7 +89,7 @@ export const getStaticProps = async () => {
       otherGameSlugList: DATA.otherGameSlugList,
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
-      pagedata: DATA.pageData,
+      pageData: DATA.pageData,
       pagemeta: DATA.pageMeta,
       jobs: DATA.jobs,
     },
