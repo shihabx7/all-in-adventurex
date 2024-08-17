@@ -26,7 +26,8 @@ const FindPhotos = (props) => {
 
         <FindPhotosHero
           locationSlugList={props.locationSlugList}
-          photoList={props.photoList}
+          photoList={props.photoList.list}
+          hasMore={props.photoList.hasMore}
           pageData={props.pageData}
           totalLocations={props.totalLocations}
         />
@@ -62,5 +63,6 @@ export const getStaticProps = async () => {
       pageData: DATA.pageData,
       photoList: DATA.photoList,
     },
+    revalidate: 10,
   };
 };

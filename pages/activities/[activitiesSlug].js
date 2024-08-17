@@ -106,6 +106,6 @@ export const getStaticProps = async (context) => {
       videoData: DATA.videoData,
       activityGallery: DATA.activityGallery,
     },
-    revalidate: 30,
+    revalidate: 12,
   };
 };

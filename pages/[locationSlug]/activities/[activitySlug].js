@@ -133,6 +133,6 @@ export const getStaticProps = async (context) => {
       //location: context.params.locationSlug,
       //activity: context.params.activitySlug,
     },
-    revalidate: 30,
+    revalidate: 12,
   };
 };

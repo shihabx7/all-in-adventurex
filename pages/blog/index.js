@@ -97,6 +97,6 @@ export const getStaticProps = async () => {
       allblogs: DATA.allblogs,
       blogcat: DATA.blogcat,
     },
-    revalidate: 30,
+    revalidate: 12,
   };
 };

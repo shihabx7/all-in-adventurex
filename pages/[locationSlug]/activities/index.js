@@ -99,7 +99,7 @@ export const getStaticProps = async (context) => {
       holidayHours: DATA.holidayHours,
       activityData: DATA.activityListData,
     },
-    revalidate: 30,
+    revalidate: 12,
   };
 };
 

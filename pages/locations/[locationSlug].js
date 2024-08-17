@@ -150,6 +150,6 @@ export const getStaticProps = async (context) => {
       holidayHours: DATA.holidayHours,
       mapInfo: DATA.mapInfo,
     },
-    revalidate: 30,
+    revalidate: 12,
   };
 };

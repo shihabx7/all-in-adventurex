@@ -326,6 +326,7 @@ const FindPhotosHero = (props) => {
             <>
               <AllPhotos
                 photoList={props.photoList}
+                hasMore={props.hasMore}
                 totalLocations={props.totalLocations}
               />
             </>

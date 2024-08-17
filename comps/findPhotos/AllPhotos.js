@@ -1,12 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
 import { BiChevronLeft, BiChevronRight, BiX } from "react-icons/bi";
 import { MdOutlineFileDownload } from "react-icons/md";
+import { FiChevronUp, FiChevronDown } from "react-icons/fi";
 
-const AllPhotos = ({ photoList, totalLocations }) => {
+const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
   const [imageList, setImageList] = useState(photoList);
   const [currentPage, setCurrentPage] = useState(1);
   const [isLoading, setisLoading] = useState(false);
-  const [isMore, setIsMore] = useState(false);
+  const [isMore, setIsMore] = useState(hasMore);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const imageRef = useRef(null); // Ref to store the image container
@@ -101,7 +102,39 @@ const AllPhotos = ({ photoList, totalLocations }) => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, [isOpen]); // Only attach listener when lightbox is open
+  const fetchData = async () => {
+    setisLoading(true);
+    let url = "/api/FindPhotos/loadMoreCustomerPhotos?page=" + currentPage;
+    const res = await fetch(url, { method: "GET" });
+    const resObj = await res.json();
+    console.log(resObj);
 
+    if (!resObj.success) {
+      setisLoading(true);
+      setIsMore(false);
+      return false;
+    }
+    if (resObj.success) {
+      console.log(resObj);
+      let contactedBlog = imageList.concat(resObj.prevImageList.list);
+      setImageList(contactedBlog);
+      if (!resObj.prevImageList.hasMore) {
+        setIsMore(false);
+      }
+
+      return true;
+    }
+  };
+  const showMore = async (event) => {
+    event.preventDefault();
+    setisLoading(true);
+    const getPhotoData = await fetchData();
+    if (getPhotoData) {
+      setCurrentPage(currentPage + 1);
+    }
+    setisLoading(false);
+    //console.log(blogData);
+  };
   return (
     <>
       <div className="c-all-photos  ">
@@ -131,7 +164,6 @@ const AllPhotos = ({ photoList, totalLocations }) => {
           >
             {imageList.length > 0 ? (
               <>
-                {" "}
                 {imageList.map((item, index) => {
                   return (
                     <div
@@ -162,7 +194,21 @@ const AllPhotos = ({ photoList, totalLocations }) => {
             )}
           </div>
         </div>
-        <div className="locadmore-box mt-4 md:mt-6 lg:mt-8"></div>
+
+        <div className="locadmore-box mt-4 md:mt-6 lg:mt-8 flex justify-center items-center">
+          {isMore ? (
+            <button
+              className="flex space-x-1 text-red-600 hover:text-red-700 font-medium text-xl lg:text-xl items-center"
+              onClick={showMore}
+            >
+              <>
+                Load More <FiChevronDown />
+              </>
+            </button>
+          ) : (
+            <></>
+          )}
+        </div>
         {/*=====================image container============= */}
       </div>
       {/*=====================image lightbox============= */}

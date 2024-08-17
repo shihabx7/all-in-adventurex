@@ -125,6 +125,6 @@ export const getStaticProps = async (context) => {
       ismoreblog: blogCategoryData.ismoreblog,
       blogcat: blogCategoryData.blogcat,
     },
-    revalidate: 30,
+    revalidate: 12,
   };
 };

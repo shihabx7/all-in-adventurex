@@ -105,5 +105,6 @@ export const getStaticProps = async () => {
       giftFaqs: DATA.giftFaqs,
       giftGallery: DATA.giftGallery,
     },
+    revalidate: 12,
   };
 };
