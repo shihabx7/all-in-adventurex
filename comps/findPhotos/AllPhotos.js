@@ -103,23 +103,24 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
     };
   }, [isOpen]); // Only attach listener when lightbox is open
   const fetchData = async () => {
-    setisLoading(true);
     let url = "/api/FindPhotos/loadMoreCustomerPhotos?page=" + currentPage;
     const res = await fetch(url, { method: "GET" });
     const resObj = await res.json();
-    console.log(resObj);
+    // console.log(resObj);
 
     if (!resObj.success) {
-      setisLoading(true);
+      setisLoading(false);
       setIsMore(false);
       return false;
     }
     if (resObj.success) {
-      console.log(resObj);
+      // console.log(resObj);
       let contactedBlog = imageList.concat(resObj.prevImageList.list);
       setImageList(contactedBlog);
       if (!resObj.prevImageList.hasMore) {
         setIsMore(false);
+      } else {
+        setIsMore(true);
       }
 
       return true;
@@ -128,6 +129,7 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
   const showMore = async (event) => {
     event.preventDefault();
     setisLoading(true);
+    setIsMore(false);
     const getPhotoData = await fetchData();
     if (getPhotoData) {
       setCurrentPage(currentPage + 1);
@@ -207,6 +209,11 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
             </button>
           ) : (
             <></>
+          )}
+          {isLoading && (
+            <div className="text-center text-xl md:text-2xl font-medium  text-[#101010]">
+              Loading...
+            </div>
           )}
         </div>
         {/*=====================image container============= */}
