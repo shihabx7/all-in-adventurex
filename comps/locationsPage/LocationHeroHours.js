@@ -235,7 +235,7 @@ const LocationHeroHours = (props) => {
                 <tbody>
                   <tr>
                     <td className="capitalize px-2 py-1 font-medium">
-                      Holyday
+                      Holiday
                     </td>
                     <td className="capitalize px-2 py-1 font-medium">Date</td>
                     <td className="px-2 py-1 font-medium">Open</td>
