@@ -65,20 +65,23 @@ const LocationHeroHours = (props) => {
         {/*======================Store +map end===== */}
         {/*======================Store Direction===== */}
         <div className="direction locinfo-row border-b border-[#D2C6AA] py-2 px-2 lg:py-3">
-          <div className="flex space-x-2  md:text-lg ">
-            <div className="loc-dt-icon  md:w-auto ">
+          <div className="flex items-start space-x-2  md:text-lg ">
+            <div className="loc-dt-icon  md:w-auto flex items-center space-x-2">
               <img
                 className="w-[24px]"
-                alt="AllinAdventures Escape Room Store Direction"
                 src="/assets/svg/util/store_direction.svg"
               ></img>
+              <span>
+                <b>Direction: </b>
+              </span>
             </div>
             <div className="loc-dt-text text-[#232323] flex-1">
-              <div>
-                <span>
-                  <b>Direction: </b>
-                </span>
-                <span>{removeTags(props.locationInfo.direction)}</span>
+              <div className="flex ">
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: props.locationInfo.direction,
+                  }}
+                ></div>
               </div>
             </div>
           </div>
