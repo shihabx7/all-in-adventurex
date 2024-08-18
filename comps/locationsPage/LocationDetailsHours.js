@@ -5,6 +5,7 @@ const getAddress = (address, state, zip, city) => {
   var add = address + ", " + city + ", " + st + " " + zip;
   return add;
 };
+
 const removeTags = (str) => {
   if (str === null || str === "") return false;
   else str = str.toString();
