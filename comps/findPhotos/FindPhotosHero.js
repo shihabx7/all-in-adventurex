@@ -279,7 +279,7 @@ const FindPhotosHero = (props) => {
                         monthAriaLabel="Month"
                         yearAriaLabel="Year"
                         className=" text-[13px] rm:text-[15px] md:text-base 2xl:text-lg text-[#1A1A1A] border-0 w-full dt-picker"
-                        onChange={(value) => checkDate(value)}
+                        onChange={(value) => checkDate(searchDateUs)}
                         /* onChange={() =>
                           alert("New date is: ", new Date(y, 0, 1, 0, 0, 0))
                         }*/
