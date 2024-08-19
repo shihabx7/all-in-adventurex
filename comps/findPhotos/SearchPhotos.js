@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { BiChevronLeft, BiChevronRight, BiX } from "react-icons/bi";
 import { MdOutlineFileDownload } from "react-icons/md";
-const AllPhotos = ({ photoList, locationName, srcDate }) => {
+const AllPhotos = ({ photoList, locationName, srcDate, searchDateUs }) => {
   const [imageList, setImageList] = useState(photoList);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -143,7 +143,7 @@ const AllPhotos = ({ photoList, locationName, srcDate }) => {
                 </p>
               ) : (
                 <p>
-                  Captured on {usFormate(srcDt)} at All In Adventures, {locName}
+                  Captured on {searchDateUs} at All In Adventures, {locName}
                 </p>
               )}
             </div>

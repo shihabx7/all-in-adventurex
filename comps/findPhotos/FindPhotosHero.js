@@ -21,6 +21,7 @@ const FindPhotosHero = (props) => {
   const [searchLocation, setSearchLocation] = useState("");
   const [searchLocationSlug, setSearchLocationSlug] = useState("");
   const [searchDate, setSearchDate] = useState("");
+  const [searchDateUs, setSearchDateUs] = useState("");
   const [searchError, setSearchError] = useState(false);
   const [errorText, setErrorText] = useState(false);
   const [showDrop, setShowDrop] = useState(false);
@@ -110,14 +111,22 @@ const FindPhotosHero = (props) => {
       month: "2-digit",
       year: "numeric",
     });
+    let usDate = new Intl.DateTimeFormat("en-US", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+    }).format(dt);
 
+    let formateUsDate = usDate.split("/").join("-");
     let formattedDate = formatter.format(dt).toString();
     //console.log(formattedDate);
     formattedDate = formattedDate.split("/").reverse().join("-");
+    //let formattedDateUS = usDate.split("/").join("-");
     //console.log(formattedDate);
-
+    console.log(formateUsDate);
     if (formattedDate != "" && formattedDate != undefined) {
       setSearchDate(formattedDate);
+      setSearchDateUs(formateUsDate);
       // dateEl.classList.remove("border-[#A1A1A1]");
       // dateEl.classList.add("border-[#E25455]");
     } else {
@@ -337,6 +346,7 @@ const FindPhotosHero = (props) => {
                 photoList={searchPhotoList}
                 locationName={searchLocation}
                 srcDate={searchDate}
+                searchDateUs={searchDateUs}
               />
             </>
           )}
