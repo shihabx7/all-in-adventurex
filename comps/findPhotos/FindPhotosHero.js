@@ -28,7 +28,7 @@ const FindPhotosHero = (props) => {
 
   //fetch photos
   const fetchData = async () => {
-    console.log(searchLocationSlug);
+    // console.log(searchLocationSlug);
     let url =
       "/api/FindPhotos/getSearchPhotos/?locationSlug=" +
       searchLocationSlug +
@@ -105,7 +105,7 @@ const FindPhotosHero = (props) => {
   // get search date
   const checkDate = (v) => {
     let dt = new Date(v);
-    let formatter = new Intl.DateTimeFormat("en-GB", {
+    let formatter = new Intl.DateTimeFormat("en-US", {
       day: "2-digit",
       month: "2-digit",
       year: "numeric",
