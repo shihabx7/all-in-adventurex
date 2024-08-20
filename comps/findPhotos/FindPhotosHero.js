@@ -12,20 +12,24 @@ import {
 } from "react-icons/fa";
 
 import DatePicker from "react-datepicker";
-// import 'react-datepicker/dist/react-datepicker-cssmodules.css';
+
 import "react-datepicker/dist/react-datepicker.css";
+// import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 const FindPhotosHero = (props) => {
   const [allPhotos, setAllPhotos] = useState(true);
   const [searchPhotos, setSearchPhotos] = useState(false);
   const [searchPhotoList, setSearchPhotoList] = useState([]);
   const [searchLocation, setSearchLocation] = useState("");
   const [searchLocationSlug, setSearchLocationSlug] = useState("");
-  const [searchDate, setSearchDate] = useState("");
-  const [searchDateUs, setSearchDateUs] = useState("");
+
   const [searchError, setSearchError] = useState(false);
   const [errorText, setErrorText] = useState(false);
   const [showDrop, setShowDrop] = useState(false);
   const dropdownRef = useRef(null);
+
+  const [selectedDate, setSelectedDate] = useState(null);
+  const [searchDate, setSearchDate] = useState("");
+  const [searchDateUs, setSearchDateUs] = useState("");
 
   //fetch photos
   const fetchData = async () => {
@@ -75,6 +79,7 @@ const FindPhotosHero = (props) => {
     setSearchPhotos(false);
     setSearchDate("");
     setSearchDateUs("");
+    setSelectedDate(null);
     setAllPhotos(true);
     setSearchError(false);
     const dateEl = document.getElementById("searchD");
@@ -105,41 +110,29 @@ const FindPhotosHero = (props) => {
     setShowDrop(false);
   };
   // get search date
-  const checkDate = (v) => {
-    let dt = new Date(v);
-    console.log(dt);
-    /* let formatter = new Intl.DateTimeFormat("en-GB", {
-      day: "2-digit",
-      month: "2-digit",
-      year: "numeric",
-    });*/
+  const checkDate = (date) => {
+    if (!date) return;
 
-    let dy = dt.getDate().toString();
-    let mn = (dt.getMonth() + 1).toString();
-    let yr = dt.getFullYear().toString();
+    try {
+      const dt = new Date(date);
+      console.log(dt);
 
-    let fdy = dy < 10 ? "0" + dy : dy;
-    let fmn = mn < 10 ? "0" + mn : mn;
-    // console.log("day " + fdy);
-    // console.log("month " + fmn);
-    //console.log("year " + yr);
+      const dy = dt.getDate().toString();
+      const mn = (dt.getMonth() + 1).toString();
+      const yr = dt.getFullYear().toString();
 
-    //let formateUsDate = usDate.split("/").join("-").toString();
-    let formateUsDate = fmn + "-" + fdy + "-" + yr;
-    // let formattedDate = formateUsDate;
-    //let formattedDate = formatter.format(dt).toString();
-    let formattedDate = yr + "-" + fmn + "-" + fdy;
-    // formattedDate = formattedDate.split("/").reverse().join("-");
-    //let formattedDateUS = usDate.split("/").join("-");
-    //console.log(formattedDate);
-    // console.log(formateUsDate);
-    if (formattedDate != "" && formattedDate != undefined) {
+      const fdy = dy.padStart(2, "0");
+      const fmn = mn.padStart(2, "0");
+
+      const formateUsDate = `${fmn}-${fdy}-${yr}`;
+      const formattedDate = `${yr}-${fmn}-${fdy}`;
+
       setSearchDate(formattedDate);
       setSearchDateUs(formateUsDate);
-      // dateEl.classList.remove("border-[#A1A1A1]");
-      // dateEl.classList.add("border-[#E25455]");
-    } else {
-      setErrorText("Please select your location and date.");
+      setSelectedDate(dt); // Store the actual Date object in state
+    } catch (error) {
+      console.error("Date parsing error:", error);
+      // Handle the error appropriately
     }
   };
   return (
@@ -189,7 +182,7 @@ const FindPhotosHero = (props) => {
                 >
                   {/**location dropdown box  */}
                   <div
-                    className="src-ent w-[50%] rm:w-[52%] md:w-auto relative"
+                    className="src-ent w-[48%] rm:w-[47%] md:w-auto relative"
                     ref={dropdownRef}
                   >
                     <div
@@ -274,16 +267,15 @@ const FindPhotosHero = (props) => {
                   {/**======= search date====== */}
                   <div
                     id="searchD"
-                    className="src-ent w-[46%] rm:w-[45%]  md:w-auto  "
+                    className="src-ent w-[48%] rm:w-[49%]  md:w-[200px]  "
                   >
                     <div className="flex space-x-1 items-center border px-1 rm:px-2 lg:px-3 h-[40px] md:h-[40px] 2xl:h-[46px] hover:cursor-pointer border-[#A1A1A1] rounded-lg bg-white">
                       <DatePicker
-                        selected={searchDateUs}
-                        className=" text-[13px] rm:text-[15px] md:text-base 2xl:text-lg text-[#1A1A1A] border-0 w-full dt-picker py-0 "
+                        selected={selectedDate}
+                        className="focus:outline-none focus:outline-offset-0 focus:border-none focus:ring-0 text-[13px] rm:text-[15px] md:text-base 2xl:text-lg text-[#1A1A1A] border-0 w-full dt-picker py-0 px-0 "
                         // onChange={(date) => checkDate(date)}
                         onChange={(date) => checkDate(date)}
                         placeholderText="mm-dd-yyyy"
-                        strictParsing
 
                         /* onChange={() =>
                           alert("New date is: ", new Date(y, 0, 1, 0, 0, 0))
