@@ -11,9 +11,9 @@ import {
   FaRegCalendarCheck,
 } from "react-icons/fa";
 
-import DatePicker from "react-date-picker";
-import "react-date-picker/dist/DatePicker.css";
-import "react-calendar/dist/Calendar.css";
+import DatePicker from "react-datepicker";
+// import 'react-datepicker/dist/react-datepicker-cssmodules.css';
+import "react-datepicker/dist/react-datepicker.css";
 const FindPhotosHero = (props) => {
   const [allPhotos, setAllPhotos] = useState(true);
   const [searchPhotos, setSearchPhotos] = useState(false);
@@ -107,7 +107,7 @@ const FindPhotosHero = (props) => {
   // get search date
   const checkDate = (v) => {
     let dt = new Date(v);
-    //console.log(dt);
+    console.log(dt);
     /* let formatter = new Intl.DateTimeFormat("en-GB", {
       day: "2-digit",
       month: "2-digit",
@@ -278,22 +278,17 @@ const FindPhotosHero = (props) => {
                   >
                     <div className="flex space-x-1 items-center border px-1 rm:px-2 lg:px-3 h-[40px] md:h-[40px] 2xl:h-[46px] hover:cursor-pointer border-[#A1A1A1] rounded-lg bg-white">
                       <DatePicker
-                        format={"MM-dd-yyyy"}
-                        dayPlaceholder={"dd"}
-                        calendarIcon={<FaRegCalendarCheck />}
-                        clearIcon={""}
-                        yearPlaceholder="yyyy"
-                        monthPlaceholder="mm"
-                        dayAriaLabel="Day"
-                        monthAriaLabel="Month"
-                        yearAriaLabel="Year"
-                        locale="en-US"
-                        className=" text-[13px] rm:text-[15px] md:text-base 2xl:text-lg text-[#1A1A1A] border-0 w-full dt-picker"
-                        onChange={(value) => checkDate(value)}
+                        selected={searchDateUs}
+                        className=" text-[13px] rm:text-[15px] md:text-base 2xl:text-lg text-[#1A1A1A] border-0 w-full dt-picker py-0 "
+                        // onChange={(date) => checkDate(date)}
+                        onChange={(date) => checkDate(date)}
+                        placeholderText="mm-dd-yyyy"
+                        strictParsing
+
                         /* onChange={() =>
                           alert("New date is: ", new Date(y, 0, 1, 0, 0, 0))
                         }*/
-                        value={searchDateUs}
+                        // value={searchDateUs}
                       />
                     </div>
                   </div>
