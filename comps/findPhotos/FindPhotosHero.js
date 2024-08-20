@@ -151,7 +151,7 @@ const FindPhotosHero = (props) => {
               alt={props.pageData.pageHeroMobile.alt}
             ></img>
           </div>
-          <div className="max-w-7xl home-hero-container mx-auto px-1 md:px-4 pt-0 pb-[50px] md:py-20  lg:py-28 2xl:py-32  relative z-30">
+          <div className="max-w-7xl home-hero-container mx-auto px-1 md:px-4 pt-0 pb-[50px] md:py-20  lg:py-28 2xl:py-32  relative z-30 overflow-hidden">
             <div className="page-benar-info">
               <p className="leading-[1.2] md:mt-0 font-semibold text-lg md:text-2xl mb-1 text-white text-center">
                 ALL IN ADVENTURES
@@ -274,6 +274,8 @@ const FindPhotosHero = (props) => {
                         selected={selectedDate}
                         className="focus:outline-none focus:outline-offset-0 focus:border-none focus:ring-0 text-[13px] rm:text-[15px] md:text-base 2xl:text-lg text-[#1A1A1A] border-0 w-full dt-picker py-0 px-0 "
                         // onChange={(date) => checkDate(date)}
+
+                        calendarClassName="rasta-stripes"
                         onChange={(date) => checkDate(date)}
                         placeholderText="mm-dd-yyyy"
 
