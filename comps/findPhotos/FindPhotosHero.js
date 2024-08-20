@@ -74,6 +74,7 @@ const FindPhotosHero = (props) => {
     setSearchLocationSlug("");
     setSearchPhotos(false);
     setSearchDate("");
+    setSearchDateUs("");
     setAllPhotos(true);
     setSearchError(false);
     const dateEl = document.getElementById("searchD");
@@ -106,24 +107,32 @@ const FindPhotosHero = (props) => {
   // get search date
   const checkDate = (v) => {
     let dt = new Date(v);
-    let formatter = new Intl.DateTimeFormat("en-GB", {
+    //console.log(dt);
+    /* let formatter = new Intl.DateTimeFormat("en-GB", {
       day: "2-digit",
       month: "2-digit",
       year: "numeric",
-    });
-    let usDate = new Intl.DateTimeFormat("en-US", {
-      day: "2-digit",
-      month: "2-digit",
-      year: "numeric",
-    }).format(dt);
+    });*/
 
-    let formateUsDate = usDate.split("/").join("-").toString();
-    let formattedDate = formatter.format(dt).toString();
-    //console.log(formattedDate);
-    formattedDate = formattedDate.split("/").reverse().join("-");
+    let dy = dt.getDate().toString();
+    let mn = (dt.getMonth() + 1).toString();
+    let yr = dt.getFullYear().toString();
+
+    let fdy = dy < 10 ? "0" + dy : dy;
+    let fmn = mn < 10 ? "0" + mn : mn;
+    // console.log("day " + fdy);
+    // console.log("month " + fmn);
+    //console.log("year " + yr);
+
+    //let formateUsDate = usDate.split("/").join("-").toString();
+    let formateUsDate = fmn + "-" + fdy + "-" + yr;
+    // let formattedDate = formateUsDate;
+    //let formattedDate = formatter.format(dt).toString();
+    let formattedDate = yr + "-" + fmn + "-" + fdy;
+    // formattedDate = formattedDate.split("/").reverse().join("-");
     //let formattedDateUS = usDate.split("/").join("-");
     //console.log(formattedDate);
-    console.log(formateUsDate);
+    // console.log(formateUsDate);
     if (formattedDate != "" && formattedDate != undefined) {
       setSearchDate(formattedDate);
       setSearchDateUs(formateUsDate);
@@ -278,6 +287,7 @@ const FindPhotosHero = (props) => {
                         dayAriaLabel="Day"
                         monthAriaLabel="Month"
                         yearAriaLabel="Year"
+                        locale="en-US"
                         className=" text-[13px] rm:text-[15px] md:text-base 2xl:text-lg text-[#1A1A1A] border-0 w-full dt-picker"
                         onChange={(value) => checkDate(value)}
                         /* onChange={() =>
