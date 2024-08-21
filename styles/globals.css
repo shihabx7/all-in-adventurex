@@ -1486,6 +1486,9 @@ a {
 }
 
 @media only screen and (max-width: 500px) {
+  .react-datepicker-popper {
+    margin-left: -30px !important;
+  }
   .loc-menu-grid,
   .footer-loc-col-mess {
     column-count: 1;
@@ -1630,6 +1633,9 @@ a {
   }
 }
 @media only screen and (max-width: 380px) {
+  .react-datepicker-popper {
+    margin-left: -36px !important;
+  }
   .logo a img {
     max-height: 40px;
   }
@@ -1651,6 +1657,9 @@ a {
   }
 }
 @media only screen and (max-width: 370px) {
+  .react-datepicker-popper {
+    margin-left: -44px !important;
+  }
   .what-is {
     max-width: 98% !important;
   }
@@ -1683,6 +1692,9 @@ a {
   }
 }
 @media only screen and (max-width: 340px) {
+  .react-datepicker-popper {
+    margin-left: -46px !important;
+  }
   .what-is h2 {
     font-size: 15px;
   }

@@ -4,6 +4,7 @@ import { BiHistory } from "react-icons/bi";
 import { useState, useEffect, useRef } from "react";
 import AllPhotos from "./AllPhotos";
 import SearchPhotos from "./SearchPhotos";
+
 import {
   FaAngleRight,
   FaAngleDown,
@@ -30,6 +31,8 @@ const FindPhotosHero = (props) => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [searchDate, setSearchDate] = useState("");
   const [searchDateUs, setSearchDateUs] = useState("");
+
+  // calender container
 
   //fetch photos
   const fetchData = async () => {
@@ -151,7 +154,7 @@ const FindPhotosHero = (props) => {
               alt={props.pageData.pageHeroMobile.alt}
             ></img>
           </div>
-          <div className="max-w-7xl home-hero-container mx-auto px-1 md:px-4 pt-0 pb-[50px] md:py-20  lg:py-28 2xl:py-32  relative z-30 overflow-hidden">
+          <div className="max-w-7xl home-hero-container mx-auto px-1 md:px-4 pt-0 pb-[50px] md:py-20  lg:py-28 2xl:py-32  relative z-30 ">
             <div className="page-benar-info">
               <p className="leading-[1.2] md:mt-0 font-semibold text-lg md:text-2xl mb-1 text-white text-center">
                 ALL IN ADVENTURES
@@ -172,7 +175,7 @@ const FindPhotosHero = (props) => {
             </div>
 
             <div className="photo-search-form-box mt-8 drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] flex  justify-center">
-              <div className="px-2 rm:px-3 py-8 rm:py-8 md:py-10 md:px-5 lg:py-10 rounded-lg bg-[#FEF8E8] relative">
+              <div className="px-1 rm:px-2 py-8 rm:py-8 md:py-10 md:px-5 lg:py-10 rounded-lg bg-[#FEF8E8] relative">
                 <div
                   className={
                     searchError
@@ -212,7 +215,7 @@ const FindPhotosHero = (props) => {
                     {showDrop && (
                       <div
                         id="srcloc"
-                        className="ease-in duration-300  transition-top z-40 absolute w-full  max-h-[400px] md:max-h-[460px] lg:max-h-[500px] top-[120%] left-0 overflow-y-scroll "
+                        className="ease-in duration-300  transition-top absolute z-20  w-full  max-h-[400px] md:max-h-[460px] lg:max-h-[500px] top-[120%] left-0 overflow-y-scroll "
                       >
                         <div className="bg-[#2a2a2a] p-3 ">
                           {props.locationSlugList.map((loc) => {
@@ -269,21 +272,18 @@ const FindPhotosHero = (props) => {
                     id="searchD"
                     className="src-ent w-[48%] rm:w-[49%]  md:w-[200px]  "
                   >
-                    <div className="flex space-x-1 items-center border px-1 rm:px-2 lg:px-3 h-[40px] md:h-[40px] 2xl:h-[46px] hover:cursor-pointer border-[#A1A1A1] rounded-lg bg-white">
-                      <DatePicker
-                        selected={selectedDate}
-                        className="focus:outline-none focus:outline-offset-0 focus:border-none focus:ring-0 text-[13px] rm:text-[15px] md:text-base 2xl:text-lg text-[#1A1A1A] border-0 w-full dt-picker py-0 px-0 "
-                        // onChange={(date) => checkDate(date)}
-
-                        calendarClassName="rasta-stripes"
-                        onChange={(date) => checkDate(date)}
-                        placeholderText="mm-dd-yyyy"
-
-                        /* onChange={() =>
-                          alert("New date is: ", new Date(y, 0, 1, 0, 0, 0))
-                        }*/
-                        // value={searchDateUs}
-                      />
+                    <div className="relative border px-1 rm:px-2 lg:px-3 h-[40px] md:h-[40px] 2xl:h-[46px] hover:cursor-pointer border-[#A1A1A1] rounded-lg bg-white">
+                      <div className="absolute top-[11px] md:top-[14px] right-[10px] md:right-[16px] bottom-0 my-auto ">
+                        <FaRegCalendarCheck />
+                      </div>
+                      <div className="w-full h-full absolute top-0 left-0 bottom-0 my-auto z-20 cursor-pointer">
+                        <DatePicker
+                          selected={selectedDate}
+                          className="focus:outline-none focus:outline-offset-0 focus:border-none focus:ring-0 text-[13px] rm:text-[15px] md:text-base 2xl:text-lg text-[#1A1A1A] border-0 w-full bg-transparent  "
+                          onChange={(date) => checkDate(date)}
+                          placeholderText="mm-dd-yyyy"
+                        />
+                      </div>
                     </div>
                   </div>
                   {/**======= search date end====== */}
@@ -328,7 +328,7 @@ const FindPhotosHero = (props) => {
         </div>
       </div>
       {/**==========phot gallery section */}
-      <div className="customer-photos-section bg-[#FEF8E8]">
+      <div className="customer-photos-section bg-[#FEF8E8] relative z-10">
         <div className="max-w-7xl home-hero-container mx-auto pt-28  pb-16 md:py-20  lg:py-28 ">
           {allPhotos && (
             <>
