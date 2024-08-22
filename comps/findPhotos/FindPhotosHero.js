@@ -198,7 +198,7 @@ const FindPhotosHero = (props) => {
                         <BiMap />
                       </div>
 
-                      <div className="border-none w-[160px]  text-[13px] rm:text-[15px] md:text-base 2xl:text-lg text-[#1A1A1A]">
+                      <div className="border-none w-[160px]  text-[16px] rm:text-[16px] md:text-base 2xl:text-lg text-[#1A1A1A]">
                         {searchLocation != "" ? searchLocation : <>Location</>}
                       </div>
                       <div
@@ -233,7 +233,7 @@ const FindPhotosHero = (props) => {
                                     return (
                                       <div
                                         key={loc.id + item.id}
-                                        className=" loc-item py-2 border-b border-dark-coffee hover:cursor-pointer"
+                                        className="loc-item py-2 border-b border-dark-coffee hover:cursor-pointer"
                                         onClick={() =>
                                           setSrcLoc(
                                             item.locationSlug,
@@ -279,7 +279,7 @@ const FindPhotosHero = (props) => {
                       <div className="w-full h-full absolute top-0 left-0 bottom-0 my-auto z-20 cursor-pointer">
                         <DatePicker
                           selected={selectedDate}
-                          className="focus:outline-none focus:outline-offset-0 focus:border-none focus:ring-0 text-[13px] rm:text-[15px] md:text-base 2xl:text-lg text-[#1A1A1A] border-0 w-full bg-transparent  "
+                          className="focus:outline-none focus:outline-offset-0 focus:border-none focus:ring-0 text-[16px] rm:text-[16px] md:text-base 2xl:text-lg text-[#1A1A1A] border-0 w-full bg-transparent  "
                           onChange={(date) => checkDate(date)}
                           placeholderText="mm-dd-yyyy"
                         />
