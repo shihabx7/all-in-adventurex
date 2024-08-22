@@ -113,7 +113,7 @@ const AllPhotos = ({ photoList, locationName, srcDate, searchDateUs }) => {
 
   return (
     <>
-      <div className="c-all-photos rm:mt-6 ">
+      <div className="c-all-photos sm:pt-8 md:pt-0">
         {/*=====section Head==== */}
         <div className="sec-head px-3 rm:px-4">
           <div className="flex justify-center items-center space-x-1 md:space-x-3 lg:space-x-4">
@@ -143,7 +143,7 @@ const AllPhotos = ({ photoList, locationName, srcDate, searchDateUs }) => {
                 </p>
               ) : (
                 <p>
-                  Captured on {searchDateUs} at All In Adventures, {locName}
+                  Captured on {searchDateUs} at All In Adventures {locName}.
                 </p>
               )}
             </div>
@@ -189,10 +189,10 @@ const AllPhotos = ({ photoList, locationName, srcDate, searchDateUs }) => {
       {/*=====================image lightbox============= */}
       {isOpen && (
         <div
-          className="light-gal w-screen h-screen fixed top-0 left-0 bg-[rgba(0,0,0,.8)] z-40"
+          className="light-gal w-screen h-screen fixed top-0 left-0 bg-[rgba(0,0,0,.8)] z-[100]"
           id="lightbox"
         >
-          <div className="w-full h-full flex justify-center items-center relative">
+          <div className="w-full h-full flex justify-center items-center relative z-80">
             <div
               ref={closeRef}
               className="lighrbox-container max-w-[92%] mx-auto md:max-w-max  relative p-[4px] lg:p-[6px] bg-[#FFF1D2]"

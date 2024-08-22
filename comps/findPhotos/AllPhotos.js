@@ -139,9 +139,9 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
   };
   return (
     <>
-      <div className="c-all-photos  ">
+      <div className="c-all-photos">
         {/*=====section Head==== */}
-        <div className="sec-head px-3 rm:px-4 rm:mt-6">
+        <div className="sec-head px-3 rm:px-4 ">
           <div className="flex justify-center items-center space-x-1 md:space-x-3 lg:space-x-4">
             <div className="h-[2px] grow bg-[rgba(0,0,0,0.7)]"></div>
             <div className="flex-none">
@@ -153,7 +153,7 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
           </div>
           <div className="sub-head ">
             <p className="text-center text-gray-500 text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[22px] ">
-              Explore memories from all {totalLocations} locations.
+              Explore memories from all {totalLocations} locations
             </p>
           </div>
         </div>
@@ -221,10 +221,10 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
       {/*=====================image lightbox============= */}
       {isOpen && (
         <div
-          className="light-gal w-screen h-screen fixed top-0 left-0 bg-[rgba(0,0,0,.8)] z-40"
+          className="light-gal w-screen h-screen fixed top-0 left-0 bg-[rgba(0,0,0,.8)] z-[100]"
           id="lightbox"
         >
-          <div className="w-full h-full flex justify-center items-center relative">
+          <div className="w-full h-full flex justify-center items-center relative ">
             <div
               ref={closeRef}
               className="lighrbox-container max-w-[92%] mx-auto md:max-w-max  relative p-[4px] lg:p-[6px] bg-[#FFF1D2]"
