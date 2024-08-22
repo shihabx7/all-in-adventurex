@@ -145,12 +145,14 @@ const ActivityLocHero = (props) => {
               <h1 className="text-gold aia-shadow font-bold text-center  text-3xl md:text-5xl lg:text-6xl mb-2 rm:mb-2 md:mb-4 lg:mb-6 font-os uppercase max-w-[1024px] mx-auto">
                 {props.pageData.pageTitle}
               </h1>
-              <div
-                className="text-gray-100 max-w-[840px] mx-auto text-center lg:text-lg"
-                dangerouslySetInnerHTML={{
-                  __html: props.pageData.pageSubtitle,
-                }}
-              ></div>
+              {props.pageData.pageSubtitle && (
+                <div
+                  className="text-gray-100 max-w-[840px] mx-auto text-center lg:text-lg"
+                  dangerouslySetInnerHTML={{
+                    __html: props.pageData.pageSubtitle,
+                  }}
+                ></div>
+              )}
             </div>
             <div className="max-w-md mx-auto mt-8 ">
               {/*============Game Booking btn==========*/}
