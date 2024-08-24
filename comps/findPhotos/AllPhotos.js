@@ -139,7 +139,7 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
   };
   return (
     <>
-      <div className="c-all-photos">
+      <div className="c-all-photos ">
         {/*=====section Head==== */}
         <div className="sec-head px-3 rm:px-4 ">
           <div className="flex justify-center items-center space-x-1 md:space-x-3 lg:space-x-4">

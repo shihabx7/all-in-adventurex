@@ -113,7 +113,7 @@ const AllPhotos = ({ photoList, locationName, srcDate, searchDateUs }) => {
 
   return (
     <>
-      <div className="c-all-photos sm:pt-8 md:pt-0">
+      <div className="c-all-photos ">
         {/*=====section Head==== */}
         <div className="sec-head px-3 rm:px-4">
           <div className="flex justify-center items-center space-x-1 md:space-x-3 lg:space-x-4">

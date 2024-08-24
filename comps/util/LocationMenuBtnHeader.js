@@ -19,7 +19,7 @@ const LocationMenuBtnHeader = (props) => {
           <span className="text-xl md:text-2xl">
             <BiMap />
           </span>
-          <span className="text-xs font-medium md:text-base uppercase">
+          <span className="text-[10px] rm:text-xs font-medium md:text-base uppercase">
             {props.locationName ? props.locationName : " CHOOSE YOUR LOCATION"}
           </span>
         </div>

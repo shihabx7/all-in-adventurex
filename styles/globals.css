@@ -1390,6 +1390,23 @@ a {
   }
 }
 @media only screen and (max-width: 767px) {
+  .home-hero {
+    background-image: unset !important;
+    background: unset;
+    background-color: #000000 !important;
+    background-position: unset !important;
+    background-size: unset !important;
+  }
+  .fyp-baner {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 9),
+      rgba(0, 0, 0, 9),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.1)
+    );
+  }
   .pl-or-1 img {
     max-width: 100px;
   }
@@ -1402,10 +1419,6 @@ a {
   .pl-or-4 img {
     max-width: 90px;
   }
-  .home-hero {
-    background-image: unset !important;
-    background-color: #000000 !important;
-  }
 
   .un-games {
     max-width: 92%;
@@ -1414,9 +1427,7 @@ a {
   .home-hero-container {
     margin-top: -31%;
   }
-  .photo-hero-container {
-    margin-top: -42%;
-  }
+
   .menu-icon-box span {
     width: 22px;
     height: 3px;
@@ -1458,8 +1469,15 @@ a {
   .gift-pattern {
     background-size: 350px 350px;
   }
+  .photo-hero-container {
+    margin-top: -40%;
+  }
 }
 @media only screen and (max-width: 640px) {
+  .photo-hero-container {
+    margin-top: -40%;
+  }
+
   .vr-dots {
     display: flex !important;
   }
@@ -1496,6 +1514,9 @@ a {
 }
 
 @media only screen and (max-width: 500px) {
+  .photo-hero-container {
+    margin-top: -52%;
+  }
   .react-datepicker-popper {
     margin-left: -33px !important;
   }
@@ -1642,7 +1663,10 @@ a {
     padding-top: 28%;
   }
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 391px) {
+  .photo-hero-container {
+    margin-top: -48%;
+  }
   .react-datepicker-popper {
     margin-left: -42px !important;
   }

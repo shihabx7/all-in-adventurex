@@ -18,7 +18,7 @@ import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
 // import 'react-datepicker/dist/react-datepicker-cssmodules.css';
-const FindPhotosHero = (props) => {
+const FindPhotoHeroOld = (props) => {
   const [allPhotos, setAllPhotos] = useState(true);
   const [searchPhotos, setSearchPhotos] = useState(false);
   const [searchPhotoList, setSearchPhotoList] = useState([]);
@@ -152,7 +152,7 @@ const FindPhotosHero = (props) => {
           backgroundImage: "url('" + props.pageData.pageHeroDesktop.url + "')",
         }}
       >
-        <div className="home-hero-holder bg-[rgba(0,0,0,.7)] relative pb-[57%] rm:pb-[42%] lm:pb-[28%] xm:pb-[23%] zm:pb-[6%] sm:pb-[0%]">
+        <div className="home-hero-holder bg-[rgba(0,0,0,.7)]">
           <div className="homehero-img w-full min-h-[280px] bg-[#000000] md:hidden">
             <img
               className="w-full"
@@ -160,9 +160,8 @@ const FindPhotosHero = (props) => {
               alt={props.pageData.pageHeroMobile.alt}
             ></img>
           </div>
-          <div className="w-full h-full fyp-baner absolute top-0 left-0 md:hidden "></div>
-          <div className="max-w-7xl  mx-auto  md:px-4 absolute top-[34%] lm:top-[39%] xm:top-[42%] sm:top-[50%] left-0 right-0 md:static   z-30 pt-0 md:pt-20  lg:pt-28 2xl:pt-32">
-            <div className="page-benar-info ">
+          <div className="max-w-7xl home-hero-container photo-hero-container mx-auto  md:px-4 pt-0 pb-[30px] rm:pb-[44px] lm:pb-[57px] md:py-20  lg:py-28 2xl:py-32  relative z-30 ">
+            <div className="page-benar-info pt-10 md:pt-0 fyp-baner">
               <p className="leading-[1.2] md:mt-0 font-semibold text-lg md:text-2xl mb-1 text-white text-center">
                 ALL IN ADVENTURES
               </p>
@@ -170,7 +169,7 @@ const FindPhotosHero = (props) => {
                 {/*props.pageData.pageTitle*/} FIND YOUR PHOTO
               </h1>
 
-              <div className="pageSub mt-2 rm:mt-0 text-gray-100 max-w-[540px] md:max-w-[760px] lg:max-w-[810px] mx-auto text-center text-[15px] rm:text-base sm:text-lg 2xl:text-xl px-2 rm:px-3">
+              <div className="pageSub text-gray-100 max-w-[820px] mx-auto text-center lg:text-lg 2xl:text-xl px-2 rm:px-3">
                 {/* dangerouslySetInnerHTML={{
                   __html: props.pageData.pageSubtitle,
                 }}*/}
@@ -180,11 +179,9 @@ const FindPhotosHero = (props) => {
                 new search.
               </div>
             </div>
-          </div>
-          <div className="w-full md:max-w-[760px] mx-auto absolute bottom-[-16%] sm:bottom-[-9%] md:static px-1 lm:px-3 md:px-3 z-30 sm:pb-0 md:pb-20  lg:pb-28 2xl:pb-32">
-            <div className=" w-full">
-              <div className="w-full photo-search-form-box sm:mt-6 md:mt-8 drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] flex  justify-center">
-                <div className="w-full px-1 rm:px-2 py-8 rm:py-8 md:py-10 md:px-5 lg:py-10 rounded-lg bg-[#FEF8E8] relative">
+            <div className="px-1">
+              <div className="photo-search-form-box mt-8 drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] flex  justify-center">
+                <div className="px-1 rm:px-2 py-8 rm:py-8 md:py-10 md:px-5 lg:py-10 rounded-lg bg-[#FEF8E8] relative">
                   <div
                     className={
                       searchError
@@ -194,14 +191,14 @@ const FindPhotosHero = (props) => {
                   >
                     {/**location dropdown box  */}
                     <div
-                      className="src-ent w-[54%] rm:w-[54%] sm:w-[34%] md:w-auto relative"
+                      className="src-ent w-[54%] rm:w-[54%] md:w-auto relative"
                       ref={dropdownRef}
                     >
                       <div
                         onClick={(e) => {
                           showLocationDrop(e);
                         }}
-                        className="flex space-x-1 items-center justify-between border px-1 rm:px-1 lg:px-3 h-[40px] md:h-[40px] 2xl:h-[46px] hover:cursor-pointer border-[#A1A1A1] rounded-lg bg-white"
+                        className="flex space-x-1 items-center border px-1 rm:px-1 lg:px-3 h-[40px] md:h-[40px] 2xl:h-[46px] hover:cursor-pointer border-[#A1A1A1] rounded-lg bg-white"
                       >
                         <div className="text-[18px] rm:text-[20px] md:text-[22px] lg:text-[24px] text-[#2D2D2D]">
                           <BiMap />
@@ -283,7 +280,7 @@ const FindPhotosHero = (props) => {
                     {/**======= search date====== */}
                     <div
                       id="searchD"
-                      className="src-ent w-[44%] rm:w-[40%] sm:w-[30%]  md:w-[200px]  "
+                      className="src-ent w-[44%] rm:w-[40%]  md:w-[200px]  "
                     >
                       <div className="relative border px-1 rm:px-2 lg:px-3 h-[40px] md:h-[40px] 2xl:h-[46px] hover:cursor-pointer border-[#A1A1A1] rounded-lg bg-white">
                         <div className="absolute top-[11px] md:top-[14px] right-[10px] md:right-[16px] bottom-0 my-auto ">
@@ -301,7 +298,7 @@ const FindPhotosHero = (props) => {
                     </div>
                     {/**======= search date end====== */}
                     {/**======= Searcj btn====== */}
-                    <div className="src-ent mt-3 sm:mt-0">
+                    <div className="src-ent mt-3 md:mt-0">
                       <button
                         onClick={(e) => {
                           handleSearch(e);
@@ -328,7 +325,7 @@ const FindPhotosHero = (props) => {
                     </div>
                     {/**======= Searcj btn end====== */}
                     {/**==========reset src  */}
-                    <div className="src-ent mt-3 sm:mt-0">
+                    <div className="src-ent mt-3 md:mt-0">
                       <button
                         onClick={() => {
                           resetSrc();
@@ -353,28 +350,29 @@ const FindPhotosHero = (props) => {
       </div>
       {/**==========phot gallery section */}
       <div className="customer-photos-section bg-[#FEF8E8] ">
-        <div className="max-w-7xl mx-auto py-12 md:py-20  lg:py-24 ">
-          <div id="photos" className="pt-16 sm:pt-12 md:pt-0">
-            {allPhotos && (
-              <>
-                <AllPhotos
-                  photoList={props.photoList}
-                  hasMore={props.hasMore}
-                  totalLocations={props.totalLocations}
-                />
-              </>
-            )}
-            {searchPhotos && (
-              <>
-                <SearchPhotos
-                  photoList={searchPhotoList}
-                  locationName={searchLocation}
-                  srcDate={searchDate}
-                  searchDateUs={searchDateUs}
-                />
-              </>
-            )}
-          </div>
+        <div
+          className="max-w-7xl home-hero-container mx-auto pt-24  pb-12 md:py-20  lg:py-24 "
+          id="photos"
+        >
+          {allPhotos && (
+            <>
+              <AllPhotos
+                photoList={props.photoList}
+                hasMore={props.hasMore}
+                totalLocations={props.totalLocations}
+              />
+            </>
+          )}
+          {searchPhotos && (
+            <>
+              <SearchPhotos
+                photoList={searchPhotoList}
+                locationName={searchLocation}
+                srcDate={searchDate}
+                searchDateUs={searchDateUs}
+              />
+            </>
+          )}
         </div>
       </div>
       {/**==========phot gallery section end*/}
@@ -382,4 +380,4 @@ const FindPhotosHero = (props) => {
   );
 };
 
-export default FindPhotosHero;
+export default FindPhotoHeroOld;
