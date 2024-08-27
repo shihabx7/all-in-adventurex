@@ -8,34 +8,15 @@ import GalleryPageHero from "../comps/galleryPageComps/GalleryPageHero";
 import InpersonGallerySection from "../comps/galleryPageComps/InpersonGallerySection";
 import EventGallerySection from "../comps/galleryPageComps/EventGallerySection";
 import OtherGamesGallerySection from "../comps/galleryPageComps/OtherGamesGallerySection";
-
-import Seofields from "../comps/util/SeoFields";
+import PageBread from "../comps/util/PageBread";
+import SinglePageSeo from "../comps/util/SinglePageSeo";
+import GallerySection from "../comps/galleryPageComps/GallerySection";
 
 const gallery = (props) => {
-  const toTitleCase = (title) => {
-    const titlefres = title.replace(/-/g, " ");
-    const btitle = titlefres
-      .split(" ")
-      .map((word) => {
-        return word.charAt(0).toUpperCase() + word.slice(1);
-      })
-      .join(" "); // breadcum title capitalize
-
-    return (
-      <div className="bitem flex items-center">
-        <span>{btitle}</span>{" "}
-        <span className="bsep text-gold">
-          <FiChevronRight />
-        </span>
-      </div>
-    );
-  };
-  /* customizing breadcum */
-
   return (
     <>
       {/* =======header content======== */}
-      <Seofields meta={props.pagemeta} />
+      <SinglePageSeo meta={props.pagemeta} />
       <RootNav
         locationSlugList={props.locationSlugList}
         escapeGameSlugList={props.escapeGameSlugList}
@@ -50,18 +31,7 @@ const gallery = (props) => {
         className="main-content nobtn-main-content bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px]"
       >
         {/* =======breadcum content and breadcum========  */}
-        <div className="breadcums  py-1 md:py-2 bg-[#fffceb]">
-          <Breadcrumbs
-            replaceCharacterList={[{ from: "-", to: " " }]}
-            listClassName="max-w-7xl mx-auto px-2 md:px-4 breadcum-list text-sm md:text-base lg:text-lg"
-            inactiveItemClassName="inline-block text-[#6a6a6a] hover:text-red-700"
-            activeItemClassName="inline-block text-[#212121]"
-            rootLabel="home"
-            transformLabel={(title) => {
-              return toTitleCase(title);
-            }}
-          ></Breadcrumbs>
-        </div>
+        <PageBread />
         {/* =======breadcum content and breadcum root page template======== end */}
         <GalleryPageHero pageData={props.pageData} />
 
@@ -90,14 +60,7 @@ const gallery = (props) => {
           {/*======================= boder img end============== */}
           <div className="section-container max-w-7xl mx-auto relative z-30">
             {/* =======inperson  gallery========  */}
-            <InpersonGallerySection gallerylist={props.gallerylist} />
-            {/* =======inperson gallery========  end*/}
-            {/* =======event gallery========  */}
-            <EventGallerySection gallerylist={props.gallerylist} />
-            {/* =======event gallery========  end*/}
-            {/* =======OTHERS GAMES AND ACTIVITES========  */}
-            <OtherGamesGallerySection gallerylist={props.gallerylist} />
-            {/* =======OTHERS GAMES AND ACTIVITES========  end*/}
+            <GallerySection galleryGroup={props.galleryGroup} />
           </div>
         </div>
 
@@ -127,6 +90,7 @@ export const getStaticProps = async () => {
       totalLocations: DATA.totalLocations,
       pagemeta: DATA.pageMeta,
       pageData: DATA.pageData,
+      galleryGroup: DATA.galleryGroup,
       gallerylist: DATA.galleryList,
     },
   };

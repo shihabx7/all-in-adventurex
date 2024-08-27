@@ -5,6 +5,10 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import LocationMap from "../locationsPage/LocationMap";
 
+const formateDate = (dt) => {
+  let dtArr = dt.split("-");
+  return dtArr[1] + "-" + dtArr[2] + "-" + dtArr[0];
+};
 const StoreContactInfo = (props) => {
   const getDirection = (address, slug, city, zip) => {
     var addr = address.toString().split(" ").join("+");
@@ -172,7 +176,7 @@ const StoreContactInfo = (props) => {
                         {holiday.holidayName}
                       </td>
                       <td className="  capitalize px-2 py-1 text-xs md:text-sm lg:text-base">
-                        {holiday.date}
+                        {formateDate(holiday.date)}
                       </td>
                       <td className="px-2 py-1 text-xs md:text-sm lg:text-base">
                         {holiday.stratTime}

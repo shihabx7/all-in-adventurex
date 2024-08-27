@@ -27,6 +27,11 @@ const getDirection = (address, state, zip, city) => {
 
   return gUrl;
 };
+
+const formateDate = (dt) => {
+  let dtArr = dt.split("-");
+  return dtArr[1] + "-" + dtArr[2] + "-" + dtArr[0];
+};
 const LocationDetailsHours = (props) => {
   return (
     <div>
@@ -237,7 +242,7 @@ const LocationDetailsHours = (props) => {
                           {holiday.holidayName}
                         </td>
                         <td className="  capitalize px-2 py-1 text-xs md:text-sm lg:text-base">
-                          {holiday.date}
+                          {formateDate(holiday.date)}
                         </td>
                         <td className="px-2 py-1 text-xs md:text-sm lg:text-base">
                           {holiday.stratTime}

@@ -37,11 +37,11 @@ const MainFaqs = ({ faqList }) => {
               {faqAns == item.id && (
                 <div className="faq-ans-box bg-[#111111] py-6 px-2 md:px-4 lg:px-6 flex space-x-1 md:space-x-2 ">
                   <div className="text-red-600 text-2xl md:text-4xl font-medium">
-                    A.{" "}
+                    A.
                   </div>
                   <div className="text-[16px] md:text-[18px] lg:text-[20px] mt-2 md:mt-3 text-[#b5b5b5]">
                     <div
-                      className="product-des"
+                      className="product-des red-link"
                       dangerouslySetInnerHTML={{ __html: item.ans }}
                     ></div>
                   </div>

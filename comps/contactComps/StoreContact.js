@@ -10,6 +10,7 @@ const removeTags = (str) => {
 
   return str.replace(/(<([^>]+)>)/gi, "");
 };
+
 const StoreContact = (props) => {
   const [showHour, setShowHours] = useState(false);
   const [isPgLoaded, setIsPageLoaded] = useState(false);

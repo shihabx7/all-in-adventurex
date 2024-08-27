@@ -6,6 +6,7 @@ import EventFaqList from "./EventFaqList";
 
 import LocationHeroHours from "../locationsPage/LocationHeroHours";
 import TitleWithSubtitleNew from "../util/TitleWithSubtitleNew";
+
 const EventContact = (props) => {
   const [showHour, setShwoHour] = useState(false);
   const hourref = useRef();
@@ -221,9 +222,9 @@ const EventContact = (props) => {
                     className="flex justify-between item-center space-x-3 md:space-x-4 hover:cursor-pointer group"
                     onClick={() => setShwoHour(true)}
                   >
-                    <p className="text-[#1B823A]">Open Hours</p>{" "}
+                    <p className="text-[#1B823A]">Open Hours</p>
                     <p className="flex items-center space-x-2 group-hover:text-blue-700">
-                      View Local Time{" "}
+                      View Local Time
                       <span className="text-xl">
                         <FiChevronDown />
                       </span>
