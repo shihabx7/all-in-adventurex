@@ -13,7 +13,7 @@ export default async function loadMoreCustomerPhotos(req, res) {
     loadMorePhotoQuery +
     "&pagination[start]=" +
     postOffset +
-    "&pagination[limit]=5&sort[0]=publishDate:desc";
+    "&pagination[limit]=9&sort[0]=publishDate:desc";
 
   const resImage = await fetch(reqUrl, apiSetting);
   const resImageObj = await resImage.json();

@@ -31,10 +31,10 @@ const PartnerMedia = (props) => {
                       <div className="p-img min-h-[80px]">
                         <img
                           className="mx-auto max-h-[100%]"
-                          src={item.image.url}
+                          src={item.partnerLogo.url}
                           alt={
-                            item.image.alt
-                              ? item.image.alt
+                            item.partnerLogo.alt
+                              ? item.partnerLogo.alt
                               : "allinadventures media partner " + index
                           }
                         ></img>

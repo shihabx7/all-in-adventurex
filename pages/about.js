@@ -11,32 +11,13 @@ import CoreValue from "../comps/aboutPageComps/CoreValue";
 import MeetOurTeam from "../comps/aboutPageComps/MeetOurTeam";
 import PartnerMedia from "../comps/aboutPageComps/PartnerMedia";
 import HappyTeam from "../comps/aboutPageComps/HappyTeam";
-import Seofields from "../comps/util/SeoFields";
+import PageBread from "../comps/util/PageBread";
+import SinglePageSeo from "../comps/util/SinglePageSeo";
 const AboutUs = (props) => {
-  const toTitleCase = (title) => {
-    const titlefres = title.replace(/-/g, " ");
-    const btitle = titlefres
-      .split(" ")
-      .map((word) => {
-        return word.charAt(0).toUpperCase() + word.slice(1);
-      })
-      .join(" "); // breadcum title capitalize
-
-    return (
-      <div className="bitem flex items-center">
-        <span>{btitle}</span>{" "}
-        <span className="bsep text-gold">
-          <FiChevronRight />
-        </span>
-      </div>
-    );
-  };
-  /* customizing breadcum */
-
   return (
     <>
       {/* =======header content======== */}
-      <Seofields meta={props.pagemeta} />
+      <SinglePageSeo meta={props.pagemeta} />
       <RootNav
         locationSlugList={props.locationSlugList}
         escapeGameSlugList={props.escapeGameSlugList}
@@ -52,18 +33,7 @@ const AboutUs = (props) => {
         style={{ backgroundImage: "url('/assets/game-dt-bg.jpg')" }}
       >
         {/* =======breadcum content and breadcum========  */}
-        <div className="breadcums  py-1 md:py-2 bg-[#fffceb]">
-          <Breadcrumbs
-            replaceCharacterList={[{ from: "-", to: " " }]}
-            listClassName="max-w-7xl mx-auto px-2 md:px-4 breadcum-list text-sm md:text-base lg:text-lg"
-            inactiveItemClassName="inline-block text-[#6a6a6a] hover:text-red-700"
-            activeItemClassName="inline-block text-[#212121]"
-            rootLabel="home"
-            transformLabel={(title) => {
-              return toTitleCase(title);
-            }}
-          ></Breadcrumbs>
-        </div>
+        <PageBread />
         {/* =======breadcum content and breadcum root page template======== end */}
         <AboutPageHero
           pageData={props.pageData}

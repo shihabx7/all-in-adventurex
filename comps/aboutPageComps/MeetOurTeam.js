@@ -35,7 +35,8 @@ const MeetOurTeam = (props) => {
                 <div className="member-img">
                   <img
                     className="rounded-full max-w-[140px] md:max-w-[160px] lg:max-w-[190px] mx-auto drop-shadow-lg"
-                    src={member.img}
+                    src={member.photo.url}
+                    alt={member.photo.alt}
                   ></img>
                 </div>
                 <div className="member-info text-center mt-2">
