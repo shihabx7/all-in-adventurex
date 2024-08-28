@@ -36,7 +36,7 @@ const LocationDetailsHours = (props) => {
   return (
     <div>
       <div className="loc-info-tbl mt-8">
-        <div className="store-map locinfo-row border-y border-[#D2C6AA] py-2 px-2 lg:py-3">
+        <div className="store-map locinfo-row border-y border-[#D2C6AA] py-2 rm:px-2 lg:py-3">
           <div className="flex space-x-2 md:items-center md:text-lg ">
             <div className="loc-dt-icon  md:w-auto">
               <img
@@ -165,7 +165,7 @@ const LocationDetailsHours = (props) => {
 
       <div className="loc-hrs-tbl flex flex-col  md:flex-row border-y border-[#D2C6AA]">
         <div className="loc-tb-hrs md:min-w-[46%] ">
-          <div className="pt-2 pb-2 px-2 md:px-2 md:py-3 lg:px-4 tbl-h border-b border-[#D2C6AA]">
+          <div className="pt-2 pb-2 px-1 md:px-2 md:py-3 lg:px-4 tbl-h border-b border-[#D2C6AA]">
             <h3 className="text-[#232323] font-medium lg:text-lg">
               Standard Business Hours
             </h3>
@@ -173,20 +173,14 @@ const LocationDetailsHours = (props) => {
               Hours may vary sometimes
             </p>
           </div>
-          <div className="tbl-cont px-2 md:px-1 lg:px-2 py-2 ">
+          <div className="tbl-cont px-1 md:px-1 lg:px-2 py-2 ">
             {props.businessHours ? (
               <table className="bhour-row table-auto border-collapse  text-[#464646] w-full">
                 <tbody>
                   <tr>
-                    <td className=" capitalize px-2 py-1 font-medium text-sm lg:text-base">
-                      Day
-                    </td>
-                    <td className=" px-2 py-1 font-medium text-sm lg:text-base">
-                      Open
-                    </td>
-                    <td className=" px-2 py-1 font-medium text-sm lg:text-base">
-                      Close
-                    </td>
+                    <td className=" capitalize px-2 py-1 font-medium ">Day</td>
+                    <td className=" px-2 py-1 font-medium ">Open</td>
+                    <td className=" px-2 py-1 font-medium ">Close</td>
                   </tr>
                   {props.businessHours.map((hours) => {
                     return (
@@ -214,7 +208,7 @@ const LocationDetailsHours = (props) => {
         </div>
 
         <div className="loc-tb-hrs md:min-w-[54%] md:border-l border-[#D2C6AA]">
-          <div className="pt-2 pb-2 px-2 md:px-2 md:py-3 lg:px-4 tbl-h border-t md:border-t-0 border-b border-[#D2C6AA]">
+          <div className="pt-2 pb-2 px-1 md:px-2 md:py-3 lg:px-4 tbl-h border-t md:border-t-0 border-b border-[#D2C6AA]">
             <h3 className="text-[#232323] font-medium lg:text-lg">
               Holiday Hours
             </h3>
@@ -222,14 +216,14 @@ const LocationDetailsHours = (props) => {
               Hours may vary sometimes
             </p>
           </div>
-          <div className="tbl-cont px-2 md:px-1 lg:px-2 py-2 ">
+          <div className="tbl-cont px-1 md:px-1 lg:px-2 py-2 ">
             {/*======================Holiday Hours  table===== */}
             {props.holidayHours ? (
               <table className="bhour-row table-auto border-collapse  text-[#464646] w-full">
                 <tbody>
                   <tr>
                     <td className=" capitalize px-2 py-1 font-medium">
-                      Holyday
+                      Holiday
                     </td>
                     <td className=" capitalize px-2 py-1 font-medium">Date</td>
                     <td className=" px-2 py-1 font-medium">Open</td>

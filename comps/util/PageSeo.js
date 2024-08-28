@@ -24,14 +24,11 @@ const PageSeo = (props) => {
       <meta name="keywords" content={props.meta.keywords} />
       <meta name="author" content="All In Adventures" />
       <meta httpEquiv="content-language" content="en-us" />
-      {props.meta.metaRobot && (
-        <meta name="robots" content={props.meta.metaRobot} />
-      )}
 
-      {!props.meta.metaindex ? (
-        <meta name="robots" content="noindex, nofollow" />
-      ) : (
+      {!props.meta.metaRobot ? (
         <meta name="robots" content="index, follow" />
+      ) : (
+        <meta name="robots" content={props.meta.metaRobot} />
       )}
 
       {/* open graph data */}
@@ -54,7 +51,7 @@ const PageSeo = (props) => {
       />
       <meta
         property="og:url"
-        content={props.meta.url ? siteURL + props.meta.url : siteURL}
+        content={props.meta.url ? props.meta.url : siteURL}
       />
       <meta
         property="og:site_name"

@@ -191,15 +191,9 @@ const LocationHeroHours = (props) => {
               <table className="bhour-row table-auto border-collapse  text-[#464646] w-full">
                 <tbody>
                   <tr>
-                    <td className=" capitalize px-2 py-1 font-medium text-sm lg:text-base">
-                      Day
-                    </td>
-                    <td className=" px-2 py-1 font-medium text-sm lg:text-base">
-                      Open
-                    </td>
-                    <td className=" px-2 py-1 font-medium text-sm lg:text-base">
-                      Close
-                    </td>
+                    <td className=" capitalize px-2 py-1 font-medium ">Day</td>
+                    <td className=" px-2 py-1 font-medium ">Open</td>
+                    <td className=" px-2 py-1 font-medium ">Close</td>
                   </tr>
                   {props.businessHours.map((hours) => {
                     return (
