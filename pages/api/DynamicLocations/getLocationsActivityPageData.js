@@ -45,7 +45,7 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
   const locationRes = await fetch(locDataReq, apiSetting);
   const locationObj = await locationRes.json();
   const locationResData = locationObj.data[0].attributes;
-  //console.log(locationResData);
+  // console.log(locationResData.locationActivities);
   // fetch all location list as an array
   const locationListRes = await fetch(locationSlugListQuery, apiSetting);
   const locationListObj = await locationListRes.json();
@@ -58,6 +58,7 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
     actSlug,
     locationResData.escapeGameParty
   );
+  //console.log(locActivityData.locActivityDetails);
 
   const pageDATA = {
     locationSlugList: getLocationSlugList(locationListData),
@@ -103,7 +104,8 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
       pageResData.storyLine,
       pageResData.plot,
       pageResData.mission,
-      pageResData.activityName
+      pageResData.activityName,
+      locActivityData.locActivityDetails
     ),
     activityGallery: activityGalleryData(pageResData.activityGallery),
     videoData: activityVideoData(pageResData.activityVideo),
