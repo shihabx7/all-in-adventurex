@@ -32,7 +32,7 @@ const AboutPageHero = (props) => {
               <div
                 className="text-gray-100 max-w-[800px] mx-auto text-center lg:text-lg"
                 dangerouslySetInnerHTML={{
-                  __html: props.pageData.pagesubtitle,
+                  __html: props.pageData.pageSubTitle,
                 }}
               ></div>
             ) : (

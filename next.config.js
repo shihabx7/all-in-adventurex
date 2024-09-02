@@ -12,6 +12,21 @@ const gnRed = [
     permanent: prm,
   },
   {
+    source: "/mystery-room-rebranding",
+    destination: "/",
+    permanent: prm,
+  },
+  {
+    source: "/blog/category",
+    destination: "/blog",
+    permanent: prm,
+  },
+  {
+    source: "/covid-19",
+    destination: "/",
+    permanent: prm,
+  },
+  {
     source: "/rewards-program",
     destination: "/deals-coupons",
     permanent: prm,

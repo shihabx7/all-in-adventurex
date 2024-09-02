@@ -30,6 +30,15 @@ const FooterCopy = (props) => {
         >
           Terms of Services
         </a>
+        <div className=" text-gray-600 text-2xl">
+          <span className="block w-1 h-1 rounded-full bg-gray-600"></span>
+        </div>
+        <a
+          href="/sitemap"
+          className="text-gray-600 hover:text-[#CA9342] text-xs md:text-base"
+        >
+          Sitemap
+        </a>
       </div>
     </div>
   );

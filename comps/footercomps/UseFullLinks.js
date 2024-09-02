@@ -162,15 +162,7 @@ const UseFullLinks = (props) => {
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
         {/*===========  Covid-19===============*/}
-        <div className="usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2">
-          <a href="/covid-19" className="text-gray-400 text-sm  lg:text-base">
-            Covid-19
-          </a>
-        </div>
 
-        <div className=" hidden lg:block text-gray-400 text-2xl">
-          <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
-        </div>
         {/*===========  About===============*/}
         <div className="usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2">
           <a href="/about" className="text-gray-400 text-sm  lg:text-base">
@@ -181,17 +173,7 @@ const UseFullLinks = (props) => {
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
         {/*===========  Rebranding===============*/}
-        <div className="usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2">
-          <a
-            href="/mystery-room-rebranding"
-            className="text-gray-400 text-sm  lg:text-base"
-          >
-            Rebranding
-          </a>
-        </div>
-        <div className=" hidden lg:block text-gray-400 text-2xl">
-          <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
-        </div>
+
         {/*===========   What is an Escape Room===============*/}
         <div className="usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2">
           <a
