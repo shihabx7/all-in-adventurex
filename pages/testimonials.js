@@ -62,6 +62,6 @@ export const getStaticProps = async () => {
 
       testimonialsGroup: DATA.testimonialsGroup,
     },
-    revalidate: 30, // In seconds
+    revalidate: 12,
   };
 };

@@ -62,6 +62,6 @@ export const getStaticProps = async () => {
 
       hintList: DATA.hintList,
     },
-    revalidate: 30,
+    revalidate: 12,
   };
 };

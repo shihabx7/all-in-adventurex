@@ -73,6 +73,6 @@ export const getStaticProps = async () => {
 
       locationMailData: DATA.locationMailData,
     },
-    revalidate: 30,
+    revalidate: 12,
   };
 };

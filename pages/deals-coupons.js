@@ -65,6 +65,6 @@ export const getStaticProps = async () => {
       faqlist: DATA.faqlist,
       couponlist: DATA.couponlist,
     },
-    revalidate: 30,
+    revalidate: 12,
   };
 };

@@ -74,6 +74,6 @@ export const getStaticProps = async () => {
       teamMembersList: DATA.teamMembersList,
       partnerMediaList: DATA.partnerMediaList,
     },
-    revalidate: 30,
+    revalidate: 12,
   };
 };

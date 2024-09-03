@@ -95,5 +95,6 @@ export const getStaticProps = async () => {
       pageData: DATA.pageData,
       pagemeta: DATA.pageMeta,
     },
+    revalidate: 12,
   };
 };

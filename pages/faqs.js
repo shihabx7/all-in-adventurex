@@ -62,5 +62,6 @@ export const getStaticProps = async () => {
 
       faqGroup: DATA.faqGroup,
     },
+    revalidate: 12,
   };
 };

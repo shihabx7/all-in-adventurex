@@ -110,6 +110,6 @@ export const getStaticProps = async () => {
       questgenpricing: DATA.questgenpricing,
       faqlist: DATA.faqlist,
     },
-    revalidate: 30,
+    revalidate: 12,
   };
 };

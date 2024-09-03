@@ -79,6 +79,6 @@ export const getStaticProps = async (context) => {
       eventDetaliData: DATA.eventDetaliData,
       eventTestimonialData: DATA.eventTestimonialData,
     },
-    revalidate: 30,
+    revalidate: 12,
   };
 };

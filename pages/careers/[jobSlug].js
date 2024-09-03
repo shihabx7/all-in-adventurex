@@ -120,6 +120,6 @@ export const getStaticProps = async (context) => {
       traits: DATA.desired_traits,
       requirements: DATA.requirements,
     },
-    revalidate: 30,
+    revalidate: 12,
   };
 };
