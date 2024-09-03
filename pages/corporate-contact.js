@@ -1,10 +1,10 @@
 import { getCorporateContactPageData } from "./api/getCorporateContactPageData";
-import PageSeo from "../comps/util/PageSeo";
 
 // page template=============
 import RootNav from "../comps/RootNav";
 import RootFooter from "../comps/RootFooter";
 import PageBread from "../comps/util/PageBread";
+import SinglePageSeo from "../comps/util/SinglePageSeo";
 import CorContactHero from "../comps/contactComps/CorContactHero";
 import CorContact from "../comps/contactComps/CorContact";
 
@@ -12,7 +12,7 @@ const CorContactPage = (props) => {
   return (
     <>
       {/* =======header content======== */}
-      <PageSeo meta={props.pageMeta} />
+      <SinglePageSeo meta={props.pageMeta} />
       <RootNav
         locationSlugList={props.locationSlugList}
         escapeGameSlugList={props.escapeGameSlugList}

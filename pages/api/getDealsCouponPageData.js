@@ -4,12 +4,17 @@ import {
   allActivitiesSluglistQuery,
   allEventsSluglistQuery,
 } from "../../lib/query/navMenuQuery";
+import { dealsCouponPageQuery } from "../../lib/query/singlePageQury";
 import {
   getLocationSlugList,
   getAllEscapeGameSlugList,
   getAllOtherGameSlugList,
   getAllEventSlugList,
 } from "../../lib/menuDataFormation";
+import {
+  getSinglePageMeta,
+  getSinglePageData,
+} from "../../lib/singlePageDataFormation";
 export const getDealsCouponPageData = async () => {
   // fetch all location list as an array
   const locationListRes = await fetch(locationSlugListQuery, apiSetting);
@@ -26,35 +31,24 @@ export const getDealsCouponPageData = async () => {
 
   const totalActivities = actctivityListResData.length;
   const totalLocations = locationListData.length;
+  // fetch page data
+
+  const pegeRes = await fetch(dealsCouponPageQuery, apiSetting);
+  const pegeResObj = await pegeRes.json();
+  const pageResData = pegeResObj.data.attributes;
+
+  const seoData = pageResData.seo;
+  const ftImage = pageResData.pageHeroMobile.data.attributes.url;
+  // fetch page data end
   const data = {
     locationSlugList: getLocationSlugList(locationListData),
     escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
     otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),
     totalLocations: totalLocations,
-    pageMeta: {
-      title: "Deals and Coupons | All In Adventures | Formerly Mystery Room",
-      description:
-        "Check out the best discounts on escape rooms and other fun games for any All In Adventures location. Grab the deal using the promo codes below!",
-      keywords:
-        "escape room deals, escape room coupons, escape room discounts, all in adventures deals, all in adventures coupons, all in adventures discounts, mystery room deals, mystery room coupons, mystery room discounts",
-      url: "/deals-coupons",
-      metaindex: true,
-      metaimg:
-        "/assets/gn-mobile-hero/allinadventures-deals-and-coupon-hero.jpg",
-    },
+    pageMeta: getSinglePageMeta(seoData, ftImage, "deals-coupon"),
 
-    pageData: {
-      pagetitle: "DEALS AND COUPONS",
-      pagesubtitle:
-        "Check out the best discounts on escape rooms and other fun games for any All In Adventures location. Grab the deal using the promo codes below!",
-
-      totalLocations: totalLocations,
-      coverimageL:
-        "/assets/gn-desktop-hero/allinadventures-deals-and-coupon-hero.jpg",
-      coverimageM:
-        "/assets/gn-mobile-hero/allinadventures-deals-and-coupon-hero.jpg",
-    },
+    pageData: getSinglePageData(pageResData, totalLocations),
 
     faqlist: [
       {

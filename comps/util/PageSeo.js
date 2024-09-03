@@ -26,7 +26,7 @@ const PageSeo = (props) => {
       <meta httpEquiv="content-language" content="en-us" />
 
       {!props.meta.metaRobot ? (
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="all" />
       ) : (
         <meta name="robots" content={props.meta.metaRobot} />
       )}

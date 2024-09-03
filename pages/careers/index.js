@@ -3,37 +3,18 @@ import RootFooter from "../../comps/RootFooter";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import { FiChevronRight } from "react-icons/fi";
 
-import CareerHero from "../../comps/careersPageComps/CareerHero";
+import CareersHero from "../../comps/careersPageComps/CareersHero";
 import WhoWeAre from "../../comps/careersPageComps/WhoWeAre";
 import OpenPosition from "../../comps/careersPageComps/OpenPosition";
 import { getCareerHomePageData } from "../api/getCareerHomePageData";
-import Seofields from "../../comps/util/SeoFields";
+import PageBread from "../../comps/util/PageBread";
+import SinglePageSeo from "../../comps/util/SinglePageSeo";
 
 const Careers = (props) => {
-  const toTitleCase = (title) => {
-    const titlefres = title.replace(/-/g, " ");
-    const btitle = titlefres
-      .split(" ")
-      .map((word) => {
-        return word.charAt(0).toUpperCase() + word.slice(1);
-      })
-      .join(" "); // breadcum title capitalize
-
-    return (
-      <div className="bitem flex items-center">
-        <span>{btitle}</span>{" "}
-        <span className="bsep text-gold">
-          <FiChevronRight />
-        </span>
-      </div>
-    );
-  };
-  /* customizing breadcum */
-
   return (
     <>
       {/* =======header content======== */}
-      <Seofields meta={props.pagemeta} />
+      <SinglePageSeo meta={props.pageMeta} />
       <RootNav
         locationSlugList={props.locationSlugList}
         escapeGameSlugList={props.escapeGameSlugList}
@@ -46,23 +27,15 @@ const Careers = (props) => {
       <div
         id="mainContent"
         className="main-content nobtn-main-content bg-center"
-        style={{ backgroundImage: "url('/assets/game-dt-bg.jpg')" }}
       >
         {/* =======breadcum content and breadcum========  */}
-        <div className="breadcums  py-1 md:py-2 bg-[#fffceb]">
-          <Breadcrumbs
-            replaceCharacterList={[{ from: "-", to: " " }]}
-            listClassName="max-w-7xl mx-auto px-2 md:px-4 breadcum-list text-sm md:text-base lg:text-lg"
-            inactiveItemClassName="inline-block text-[#6a6a6a] hover:text-red-700"
-            activeItemClassName="inline-block text-[#212121]"
-            rootLabel="home"
-            transformLabel={(title) => {
-              return toTitleCase(title);
-            }}
-          ></Breadcrumbs>
-        </div>
+        <PageBread />
         {/* =======breadcum content and breadcum root page template======== end */}
-        <CareerHero pageData={props.pageData} btnid="alljobs" />
+        <CareersHero
+          pageData={props.pageData}
+          btnId={"alljobs"}
+          btnLabel={"VIEW ALL JOB POSITIONS"}
+        />
         <WhoWeAre />
         <OpenPosition jobs={props.jobs} />
 
@@ -90,7 +63,7 @@ export const getStaticProps = async () => {
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
       pageData: DATA.pageData,
-      pagemeta: DATA.pageMeta,
+      pageMeta: DATA.pageMeta,
       jobs: DATA.jobs,
     },
   };

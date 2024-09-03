@@ -4,12 +4,17 @@ import {
   allActivitiesSluglistQuery,
   allEventsSluglistQuery,
 } from "../../lib/query/navMenuQuery";
+import { volunteeringPageQuery } from "../../lib/query/singlePageQury";
 import {
   getLocationSlugList,
   getAllEscapeGameSlugList,
   getAllOtherGameSlugList,
   getAllEventSlugList,
 } from "../../lib/menuDataFormation";
+import {
+  getSinglePageMeta,
+  getSinglePageData,
+} from "../../lib/singlePageDataFormation";
 
 const locationWithMail = (listArr) => {
   let retArr = [];
@@ -42,33 +47,24 @@ export const getVolunteeringPageData = async () => {
 
   const totalActivities = actctivityListResData.length;
   const totalLocations = locationListData.length;
+
+  // fetch page data
+  const pegeRes = await fetch(volunteeringPageQuery, apiSetting);
+  const pegeResObj = await pegeRes.json();
+  const pageResData = pegeResObj.data.attributes;
+
+  const seoData = pageResData.seo;
+  const ftImage = pageResData.pageHeroMobile.data.attributes.url;
+  // fetch page data end
   const data = {
     locationSlugList: getLocationSlugList(locationListData),
     escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
     otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),
     totalLocations: totalLocations,
-    pageMeta: {
-      title: "Volunteering | All In Together | All In Adventures",
-      description:
-        "At All In Adventures, we believe volunteering is a two-way street that benefits both the organization and the volunteer.",
-      keywords:
-        "escape room volunteering, all in adventures volunteering, mystery room volunteering",
-      url: "/volunteering",
-      metaindex: true,
-      metaimg: "/assets/gn-mobile-hero/allinadventures-volunteering-hero.jpg",
-    },
-    pageData: {
-      pagetitle: "VOLUNTEERING: ALL IN TOGETHER",
-      pagesubtitle:
-        "At All In Adventures, we believe volunteering is a two-way street that benefits both the organization and the volunteer. It is an instrumental force in promoting positive and sustainable growth within our communities.",
+    pageMeta: getSinglePageMeta(seoData, ftImage, "volunteering"),
 
-      totalLocations: totalLocations,
-      coverimageL:
-        "/assets/gn-desktop-hero/allinadventures-volunteering-hero.jpg",
-      coverimageM:
-        "/assets/gn-mobile-hero/allinadventures-volunteering-hero.jpg",
-    },
+    pageData: getSinglePageData(pageResData, totalLocations),
     //locationMailData: getLocationWithMail(),
     locationMailData: locationWithMail(locationListData),
   };

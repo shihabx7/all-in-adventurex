@@ -14,8 +14,8 @@ const AboutPageHero = (props) => {
             className="w-full"
             src={props.pageData.pageHeroMobile.url}
             alt={
-              props.pageData.pageHeroMobile.url
-                ? props.pageData.pageHeroMobile.url
+              props.pageData.pageHeroMobile.alt
+                ? props.pageData.pageHeroMobile.alt
                 : "Allinadventures escape room about"
             }
           ></img>

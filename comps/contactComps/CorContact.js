@@ -213,7 +213,7 @@ const CorContact = (props) => {
       <div className="section-container max-w-7xl mx-auto relative z-30">
         <div className="section-title px-4">
           <TitleSeparator title={props.contactData.formSectionTitle} />
-          <div className="max-w-[840px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-12 lg:mb-16">
+          <div className="max-w-[840px] md:text-lg mx-auto text-center mt-4 md:mt-4 mb-8 md:mb-12 lg:mb-16">
             <div
               className="text-gray-700 md:px-8"
               dangerouslySetInnerHTML={{

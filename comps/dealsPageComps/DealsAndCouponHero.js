@@ -5,18 +5,18 @@ const DealsAndCouponHero = (props) => {
     <div
       className="home-hero bg-[#111111]"
       style={{
-        backgroundImage: "url('" + props.pageData.coverimageL + "')",
+        backgroundImage: "url('" + props.pageData.pageHeroDesktop.url + "')",
       }}
     >
       <div className="home-hero-holder ">
         <div className="homehero-img w-full min-h-[280px] bg-[#000000] md:hidden">
           <img
             className="w-full"
-            src={props.pageData.coverimageM}
+            src={props.pageData.pageHeroMobile.url}
             alt={
-              props.pageData.coverimageM_alt
-                ? props.pageData.coverimageM_alt
-                : "Allinadventures escape room"
+              props.pageData.pageHeroMobile.alt
+                ? props.pageData.pageHeroMobile.alt
+                : "Allinadventures escape room deals and coupon"
             }
           ></img>
         </div>
@@ -26,24 +26,16 @@ const DealsAndCouponHero = (props) => {
               CHOOSE FROM {props.totalLocations} U.S. LOCATIONS
             </p>
             <h1 className="text-gold aia-shadow font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-2 rm:mb-2 md:mb-4 lg:mb-6 font-os uppercase max-w-[1000px] mx-auto">
-              {props.pageData.pagetitle}
+              {props.pageData.pageTitle}
             </h1>
             <div
-              className="text-gray-100 max-w-[800px] mx-auto text-center lg:text-lg"
-              dangerouslySetInnerHTML={{ __html: props.pageData.pagesubtitle }}
+              className="text-gray-100 max-w-[820px] mx-auto text-center lg:text-lg"
+              dangerouslySetInnerHTML={{ __html: props.pageData.pageSubTitle }}
             ></div>
           </div>
           <div className="max-w-md mx-auto mt-8 ">
             {/*============location search btn==========*/}
-            <LocationBtn
-              borderbg="bg-red-600"
-              borderbghover="bg-red-900"
-              innerbg="bg-white"
-              innerborder="border-white"
-              innerbghover="bg-grey-200"
-              innerborderhover="border-gray-200"
-              color="text-black"
-            />
+            <LocationBtn />
             {/*============location search btn==========*/}
           </div>
         </div>

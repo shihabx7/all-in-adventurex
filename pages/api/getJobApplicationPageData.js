@@ -4,12 +4,17 @@ import {
   allActivitiesSluglistQuery,
   allEventsSluglistQuery,
 } from "../../lib/query/navMenuQuery";
+import { jobApplicationPageQuery } from "../../lib/query/singlePageQury";
 import {
   getLocationSlugList,
   getAllEscapeGameSlugList,
   getAllOtherGameSlugList,
   getAllEventSlugList,
 } from "../../lib/menuDataFormation";
+import {
+  getSinglePageMeta,
+  getSinglePageData,
+} from "../../lib/singlePageDataFormation";
 export const getJobApplicationPageData = async () => {
   // fetch all location list as an array
   const locationListRes = await fetch(locationSlugListQuery, apiSetting);
@@ -26,32 +31,24 @@ export const getJobApplicationPageData = async () => {
 
   const totalActivities = actctivityListResData.length;
   const totalLocations = locationListData.length;
+  // fetch page data
+
+  const pegeRes = await fetch(jobApplicationPageQuery, apiSetting);
+  const pegeResObj = await pegeRes.json();
+  const pageResData = pegeResObj.data.attributes;
+
+  const seoData = pageResData.seo;
+  const ftImage = pageResData.pageHeroMobile.data.attributes.url;
+  // fetch page data end
   const data = {
     locationSlugList: getLocationSlugList(locationListData),
     escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
     otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),
     totalLocations: totalLocations,
-    pageMeta: {
-      title: "Apply for job | All In Adventures | Formerly Mystery Room",
-      description:
-        "We're incredibly passionate about placing great people in their dream roles and believe in serving our guests and each other every day. Join us.",
-      keywords:
-        "escape room careers, all in adventures careers, mystery room careers, escape room jobs, all in adventures jobs, mystery room jobs,",
-      url: "/careers/apply",
-      metaindex: true,
-      metaimg: "/assets/gn-mobile-hero/allinadventures-career-hero.jpg",
-    },
+    pageMeta: getSinglePageMeta(seoData, ftImage, "careers"),
 
-    pageData: {
-      pagetitle: "Employment Application",
-      pagesubtitle:
-        "Interested in joining our super engaged, guest-centric team of associates?",
-
-      totalLocations: totalLocations,
-      coverimageL: "/assets/gn-desktop-hero/allinadventures-career-hero.jpg",
-      coverimageM: "/assets/gn-mobile-hero/allinadventures-career-hero.jpg",
-    },
+    pageData: getSinglePageData(pageResData, totalLocations),
   };
 
   return data;

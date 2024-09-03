@@ -38,16 +38,16 @@ const AnswerHint = (props) => {
               <div className="hint-ques px-4 py-3 lg:px-6 lg:py-4 bg-[#F4E1B5]">
                 <h3 className="text-[20px] lg:text-[24px] text-dark font-os font-medium">
                   <span>{index + 1}. </span>
-                  {item.ques}
+                  {item.question}
                 </h3>
               </div>
               <div className="hints">
-                {item.hint != "" && (
+                {item.hint != null && (
                   <div
                     onClick={() => showhints(item.id)}
                     className="bg-[#FFF3D8] px-4 py-3 lg:px-6 lg:py-4 flex justify-between items-center border-b-[1px] border-[#DAC89F]"
                   >
-                    <p className="text-[#464646] text-lg lg:text-xl">Hint</p>{" "}
+                    <p className="text-[#464646] text-lg lg:text-xl">Hint</p>
                     <p className="text-gold text-xl lg:text-3xl">
                       {showHint == item.id ? (
                         <FiChevronUp />
@@ -83,8 +83,8 @@ const AnswerHint = (props) => {
                     <p className="text-[#71541A] lg:text-lg flex space-x-2">
                       <span className="mt-1 ">
                         <FiCheck />
-                      </span>{" "}
-                      <span>{item.ans}</span>
+                      </span>
+                      <span>{item.answer}</span>
                     </p>
                   </div>
                 )}

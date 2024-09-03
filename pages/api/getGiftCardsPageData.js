@@ -8,10 +8,10 @@ import {
   allEventsSluglistQuery,
 } from "../../lib/query/navMenuQuery";
 import {
-  getRootGiftPageMeta,
   getGiftGallery,
   getGiftRootReedem,
 } from "../../lib/dynamicLocationPageFormation";
+import { getRootGiftPageMeta } from "../../lib/singlePageDataFormation";
 
 import {
   getLocationSlugList,
@@ -51,7 +51,7 @@ export const getGiftCardsPageData = async () => {
     otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),
     totalLocations: totalLocations,
-    pageMeta: getRootGiftPageMeta(seoData),
+    pageMeta: getRootGiftPageMeta(seoData, "gift-cards"),
     giftReedem: getGiftRootReedem(actctivityListResData),
     giftFaqs: pageResData.giftFaqs,
     giftGallery: getGiftGallery(pageResData.gallery),

@@ -1,11 +1,10 @@
 import { getGiftCardsPageData } from "./api/getGiftCardsPageData";
-import PageSeo from "../comps/util/PageSeo";
 
 // page template=============
 import RootNav from "../comps/RootNav";
 import RootFooter from "../comps/RootFooter";
 import PageBread from "../comps/util/PageBread";
-
+import SinglePageSeo from "../comps/util/SinglePageSeo";
 import GiftHeroBaner from "../comps/giftCardPageComps/GiftHeroBaner";
 import GiftSpotOn from "../comps/giftCardPageComps/GiftSpotOn";
 import GiftVenGram from "../comps/giftCardPageComps/GiftVenGram";
@@ -35,7 +34,7 @@ const GiftCard = (props) => {
       )}
 
       {/* =======header content======== */}
-      <PageSeo meta={props.pageMeta} />
+      <SinglePageSeo meta={props.pageMeta} />
       <RootNav
         locationSlugList={props.locationSlugList}
         escapeGameSlugList={props.escapeGameSlugList}

@@ -39,8 +39,7 @@ export const getTestimonialPageData = async () => {
   const pegeResObj = await pegeRes.json();
   const pageResData = pegeResObj.data.attributes;
 
-  const gp = getTestimonialsGroup(pageResData.testimonialsGroup);
-  console.log(gp.testimonialsList);
+  //console.log(gp);
 
   const seoData = pageResData.seo;
   const ftImage = pageResData.pageHeroMobile.data.attributes.url;

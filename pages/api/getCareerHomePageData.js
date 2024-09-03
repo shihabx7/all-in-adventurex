@@ -4,12 +4,17 @@ import {
   allActivitiesSluglistQuery,
   allEventsSluglistQuery,
 } from "../../lib/query/navMenuQuery";
+import { careerPageQuery } from "../../lib/query/singlePageQury";
 import {
   getLocationSlugList,
   getAllEscapeGameSlugList,
   getAllOtherGameSlugList,
   getAllEventSlugList,
 } from "../../lib/menuDataFormation";
+import {
+  getSinglePageMeta,
+  getSinglePageData,
+} from "../../lib/singlePageDataFormation";
 export const getCareerHomePageData = async () => {
   // fetch all location list as an array
   const locationListRes = await fetch(locationSlugListQuery, apiSetting);
@@ -26,31 +31,25 @@ export const getCareerHomePageData = async () => {
 
   const totalActivities = actctivityListResData.length;
   const totalLocations = locationListData.length;
+
+  // fetch page data
+
+  const pegeRes = await fetch(careerPageQuery, apiSetting);
+  const pegeResObj = await pegeRes.json();
+  const pageResData = pegeResObj.data.attributes;
+
+  const seoData = pageResData.seo;
+  const ftImage = pageResData.pageHeroMobile.data.attributes.url;
+  // fetch page data end
   const data = {
     locationSlugList: getLocationSlugList(locationListData),
     escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
     otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),
     totalLocations: totalLocations,
-    pageMeta: {
-      title: "Careers | All In Adventures | Formerly Mystery Room",
-      description:
-        "We're incredibly passionate about placing great people in their dream roles and believe in serving our guests and each other every day. Join us.",
-      keywords:
-        "escape room careers, all in adventures careers, mystery room careers, escape room jobs, all in adventures jobs, mystery room jobs,",
-      url: "/careers",
-      metaindex: true,
-      metaimg: "/assets/gn-mobile-hero/allinadventures-career-hero.jpg",
-    },
+    pageMeta: getSinglePageMeta(seoData, ftImage, "careers"),
 
-    pageData: {
-      pagetitle: "CAREERS AT ALL IN ADVENTURES",
-      pagesubtitle:
-        "Passion led us here! We're incredibly passionate about placing great people in their dream roles and believe in serving our guests and each other every day. We love our awesome team! Join us.",
-      coverimageL: "/assets/gn-desktop-hero/allinadventures-career-hero.jpg",
-      coverimageM: "/assets/gn-mobile-hero/allinadventures-career-hero.jpg",
-      totalLocations: totalLocations,
-    },
+    pageData: getSinglePageData(pageResData, totalLocations),
     jobs: [
       {
         id: 1,

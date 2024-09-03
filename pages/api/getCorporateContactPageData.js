@@ -18,6 +18,11 @@ import {
   getCorContactData,
 } from "../../lib/dynamicLocationPageFormation";
 
+import {
+  getSinglePageMeta,
+  getSinglePageData,
+} from "../../lib/singlePageDataFormation";
+
 export const getCorporateContactPageData = async () => {
   const pageReq = apiUrl + corporateContactPageQuery;
 
@@ -25,6 +30,8 @@ export const getCorporateContactPageData = async () => {
   const resObj = await pageRes.json();
   const pageResData = resObj.data.attributes;
   const seoData = pageResData.seoCorporate;
+  const corPageData = pageResData.corporateContact;
+  const ftImage = corPageData.pageHeroMobile.data.attributes.url;
 
   // fetch all location list as an array
   const locationListRes = await fetch(locationSlugListQuery, apiSetting);
@@ -48,11 +55,9 @@ export const getCorporateContactPageData = async () => {
     otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),
     totalLocations: totalLocations,
-    pageMeta: getCorPageMeta(
-      seoData,
-      pageResData.corporateContact.pageHeroMobile.data.attributes.url
-    ),
-    pageData: getCorPageData(pageResData.corporateContact),
+    pageMeta: getSinglePageMeta(seoData, ftImage, "corporate-contact"),
+
+    pageData: getSinglePageData(corPageData, totalLocations),
     contactData: getCorContactData(pageResData.corporateContact),
   };
 
