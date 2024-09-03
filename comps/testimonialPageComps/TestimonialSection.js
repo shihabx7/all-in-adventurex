@@ -1,6 +1,6 @@
-import MainTestimonials from "./MainTestimonials";
 import PageLink from "../util/PageLink";
 import TitleSeparator from "../util/TitleSeparator";
+import TestimonialList from "./TestimonialList";
 const TestimonialSection = (props) => {
   return (
     <div className="all-testimonial-section relative bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px]">
@@ -26,29 +26,49 @@ const TestimonialSection = (props) => {
         ></img>
       </div>
       {/*======================= boder img end============== */}
-      {/*===================all escaperooms testimonils======================== */}
-      <div className="secttion-container max-w-7xl mx-auto pt-16 pb-8 md:py-20 lg:py-28 px-4 relative z-30">
-        <div className="section-title text-center max-w-[800px] mx-auto">
-          <p className="text-lg text-[#938056] text-center">TESTIMONIALS</p>
-          <TitleSeparator title="ESCAPE ROOM CUSTOMERS" />
-          <p className="text-gray-700 md:px-8 md:text-lg mt-2 md:mt-4">
-            Escape rooms create long-lasting memories among players and an
-            irreplaceable experience for years to come. Hopefully, the following
-            stories might inspire you to give escape room a try with your
-            friends, families or co-workers.
-          </p>
+      {/*===================all  testimonils group======================== */}
+      {props.testimonialsGroup.length > 0 ? (
+        <div className="secttion-container max-w-7xl mx-auto py-16 md:py-20 lg:py-28 px-4 relative z-30">
+          {props.testimonialsGroup.map((group, index) => {
+            return (
+              <div
+                key={index + 1}
+                className={
+                  index > 0
+                    ? "testimonial-section-group mt-16 md:mt-20 lg:mt-24"
+                    : "testimonial-section-group"
+                }
+              >
+                <div className="section-title text-center max-w-[840px] mx-auto">
+                  <p className="text-lg text-[#938056] text-center">
+                    TESTIMONIALS
+                  </p>
+                  <TitleSeparator title={group.groupTitle} />
+                  <div
+                    className="text-gray-700 md:px-8 md:text-lg mt-2 md:mt-4"
+                    dangerouslySetInnerHTML={{ __html: group.groupSubtitle }}
+                  ></div>
+                </div>
+                <TestimonialList testimonialsList={group.testimonialsList} />
+                <div className="flex justify-center mt-3 md:mt-6">
+                  <PageLink
+                    link={group.groupLink}
+                    label={group.groupLinkLabel}
+                  />
+                </div>
+              </div>
+            );
+          })}
         </div>
-        <MainTestimonials
-          category="escaperoom"
-          testimonials={props.testimonials}
-        />
-        <div className="flex justify-center mt-3 md:mt-6">
-          <PageLink
-            link="/activities"
-            label="View all in-person escape rooms"
-          />
+      ) : (
+        <div className="secttion-container max-w-7xl mx-auto py-20  md:py-24 lg:py-28 px-4 relative z-30">
+          <div className="text-center">
+            <h2 className="text-xl md:text-2xl xl:text-3xl font-medium text-[#1a1a1a]">
+              No Testimonial Found
+            </h2>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

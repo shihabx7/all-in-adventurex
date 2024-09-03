@@ -1,14 +1,10 @@
 import RootNav from "../comps/RootNav";
 import RootFooter from "../comps/RootFooter";
-import Breadcrumbs from "nextjs-breadcrumbs";
-import { FiChevronRight } from "react-icons/fi";
+
 // page data
 import { getTestimonialPageData } from "./api/getTestimonialPageData";
-import EscapeRoomCustomerTestimonials from "../comps/testimonialPageComps/EscapeRoomCustomerTestimonials";
-import BirthdayPartyTestimonials from "../comps/testimonialPageComps/BirthdayPartyTestimonials";
-import PrivatePartyCustomersTestimonials from "../comps/testimonialPageComps/PrivatePartyCustomersTestimonials";
-import TeamBuildingTestimonials from "../comps/testimonialPageComps/TeamBuildingTestimonials";
-import GameShowRoomTestimonials from "../comps/testimonialPageComps/GameShowRoomTestimonials";
+
+import TestimonialSection from "../comps/testimonialPageComps/TestimonialSection";
 import TestimonialPageHero from "../comps/testimonialPageComps/TestimonialPageHero";
 import SinglePageSeo from "../comps/util/SinglePageSeo";
 import PageBread from "../comps/util/PageBread";
@@ -31,22 +27,11 @@ const testimonials = (props) => {
         id="mainContent"
         className="main-content nobtn-main-content bg-center"
       >
+        <PageBread />
         <TestimonialPageHero pageData={props.pageData} />
         {/*===================all escaperooms testimonils-=========== */}
-        <EscapeRoomCustomerTestimonials testimonials={props.testimonials} />
+        <TestimonialSection testimonialsGroup={props.testimonialsGroup} />
         {/*===================all escaperooms testimonils end======================== */}
-        {/*===================all BIRTHDAY PARTY CUSTOMERS testimonils-=========== */}
-        <BirthdayPartyTestimonials testimonials={props.testimonials} />
-        {/*===================all BIRTHDAY PARTY CUSTOMERS testimonils======================== */}
-        {/*===================all team-building testimonils-=========== */}
-        <TeamBuildingTestimonials testimonials={props.testimonials} />
-        {/*===================all all team-building testimonils end======================== */}
-        {/*===================all PRIVATE PARTY CUSTOMERS testimonils-=========== */}
-        <PrivatePartyCustomersTestimonials testimonials={props.testimonials} />
-        {/*===================all PRIVATE PARTY CUSTOMERS testimonils end======================== */}
-        {/*===================all GAME SHOW ROOM CUSTOMERS testimonils-=========== */}
-        <GameShowRoomTestimonials testimonials={props.testimonials} />
-        {/*===================all GAME SHOW ROOM CUSTOMERS testimonils end======================== */}
 
         {/* =========================================================================================main content ======== end */}
       </div>
@@ -74,7 +59,8 @@ export const getStaticProps = async () => {
 
       pageData: DATA.pageData,
       pageMeta: DATA.pageMeta,
-      testimonials: DATA.testimonials,
+
+      testimonialsGroup: DATA.testimonialsGroup,
     },
     revalidate: 30, // In seconds
   };
