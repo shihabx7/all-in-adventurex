@@ -1,12 +1,12 @@
 import { getHomePageData } from "./api/getHomePageData";
 import PageSeo from "../comps/util/PageSeo";
+import SinglePageSeo from "../comps/util/SinglePageSeo";
+
 import RootNav from "../comps/RootNav";
 import RootFooter from "../comps/RootFooter";
 
 import HomeHero from "../comps/homepagecomps/HomeHero";
-
 import PageVideoHome from "../comps/homepagecomps/PageVideoHome";
-
 import EscaeGameSlider from "../comps/homepagecomps/EscaeGameSlider";
 import OtherGameSlider from "../comps/homepagecomps/OtherGameSlider";
 import EventSlider from "../comps/homepagecomps/EventSlider";
@@ -18,7 +18,7 @@ import TestimonialSlider from "../comps/homepagecomps/TestimonialSlider";
 export default function Home(props) {
   return (
     <>
-      <PageSeo meta={props.pageMeta} />
+      <SinglePageSeo meta={props.pageMeta} />
       <RootNav
         locationSlugList={props.locationSlugList}
         escapeGameSlugList={props.escapeGameSlugList}

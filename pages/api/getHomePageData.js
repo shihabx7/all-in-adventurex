@@ -12,7 +12,8 @@ import {
   getEventList,
   getTestimonials,
   getPageVideo,
-} from "../../lib/homePageDataFormation";
+} from "../../lib/dataFormation/homaPageDataFormation";
+
 import {
   getLocationSlugList,
   getAllEscapeGameSlugList,
@@ -31,10 +32,7 @@ export const getHomePageData = async () => {
   const locationListObj = await locationListRes.json();
   const locationListData = locationListObj.data;
   // fetch page data  and seo data object
-  const pageResponse = await fetch(pageReqUrl, apiSetting);
-  const pageResArr = await pageResponse.json();
-  const pageResData = pageResArr.data.attributes;
-  const seoData = pageResData.seo;
+
   // fetch all activities (escape room + other games) list as an array
   const activityListRes = await fetch(activitylistReqUrl, apiSetting);
   const activityListResObj = await activityListRes.json();
@@ -47,6 +45,16 @@ export const getHomePageData = async () => {
   const totalActivities = actctivityListResData.length;
   const totalLocations = locationListData.length;
 
+  // fatch page data
+
+  const pageResponse = await fetch(pageReqUrl, apiSetting);
+  const pageResArr = await pageResponse.json();
+  const pageResData = pageResArr.data.attributes;
+  const seoData = pageResData.seo;
+  const ftImg = pageResData.pageHeroMobile.data.attributes.url;
+
+  console.log("raw formated");
+  console.log(mt);
   const DATA = {
     locationSlugList: getLocationSlugList(locationListData),
     escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
@@ -55,7 +63,7 @@ export const getHomePageData = async () => {
     totalLocations: totalLocations,
     pageMeta: getPageMeta(
       seoData,
-      pageResData.pageHeroMobile.data.attributes.url,
+      ftImg,
       pageResData.pageSubTitle,
       totalLocations
     ),
