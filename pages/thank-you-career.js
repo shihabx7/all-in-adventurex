@@ -1,12 +1,14 @@
 import RootNav from "../comps/RootNav";
 import RootFooter from "../comps/RootFooter";
-import ThankYouBox from "../comps/util/ThankYouBox";
-import { getThankYouPageData } from "./api/getThankYouPageData";
-import Seofields from "../comps/util/SeoFields";
+
+import { getThankYouCareerPageData } from "./api/getThankYouCareerPageData";
+import ThankYouHero from "../comps/thankYouPagesComs/ThankYouHero";
+
+import SinglePageSeo from "../comps/util/SinglePageSeo";
 const ThankYou = (props) => {
   return (
     <>
-      <Seofields meta={props.pagemeta} />
+      <SinglePageSeo meta={props.pageMeta} />
       <RootNav
         locationSlugList={props.locationSlugList}
         escapeGameSlugList={props.escapeGameSlugList}
@@ -17,7 +19,7 @@ const ThankYou = (props) => {
         id="mainContent"
         className="main-content nobtn-main-content bg-center"
       >
-        <ThankYouBox />
+        <ThankYouHero pageData={props.pageData} />
       </div>
 
       <RootFooter
@@ -31,7 +33,7 @@ const ThankYou = (props) => {
 export default ThankYou;
 
 export const getStaticProps = async () => {
-  const DATA = await getThankYouPageData();
+  const DATA = await getThankYouCareerPageData();
 
   return {
     props: {
@@ -40,8 +42,8 @@ export const getStaticProps = async () => {
       otherGameSlugList: DATA.otherGameSlugList,
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
-      pagedata: DATA.pageData,
-      pagemeta: DATA.pageMeta,
+      pageData: DATA.pageData,
+      pageMeta: DATA.pageMeta,
     },
   };
 };

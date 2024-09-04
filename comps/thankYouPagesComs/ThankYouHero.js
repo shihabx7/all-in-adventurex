@@ -1,14 +1,12 @@
 import {
-  FaAngleDown,
-  FaAngleRight,
   FaLinkedin,
   FaFacebookSquare,
   FaTwitterSquare,
   FaInstagramSquare,
 } from "react-icons/fa";
-import ThankLinkBox from "./ThankLinkBox";
+import ThankOthersLink from "./ThankOthersLink";
 
-const ThankYouBox = (props) => {
+const ThankYouHero = (props) => {
   return (
     <div
       className="thank-sec relative bg-cover bg-black"
@@ -17,41 +15,50 @@ const ThankYouBox = (props) => {
           "linear-gradient(65deg,rgba(0, 0, 0,.4),rgba(0, 0, 0,.3)),url('/assets/svg/pyescape-bg.svg')",
       }}
     >
-      <div className=" max-w-[1020px] mx-auto py-20 md:py-24 lg:py-28 relative z-30">
+      <div className=" max-w-[1020px] mx-auto py-16 md:py-24 lg:py-28 relative z-30">
         <div className="px-4 py-4 rounded-md thank-box">
           <div className="thank-head text-center">
             <h1 className="thn-title golden-text drop-shadow-lg text-5xl md:text-7xl font-extrabold font-os">
-              THANK YOU
+              {props.pageData.pageTitle}
             </h1>
-            <h2 className="text-[#aaaaaa] text-lg md:text-xl mt-4">
-              Your submission has been received.
-            </h2>
-            <h2 className="text-[#aaaaaa] text-lg md:text-xl mt-1">
-              We will get in touch with you shortly.
-            </h2>
+            <div
+              className="text-[#aaaaaa] rm:text-lg md:text-xl mt-4 max-w-[300px] md:max-w-[340px] mx-auto text-center"
+              dangerouslySetInnerHTML={{ __html: props.pageData.pageSubTitle }}
+            ></div>
           </div>
           <div className="thank-mid text-center mt-8 mb-16">
-            <h3 className="text-3xl golden-text font-semibold mb-4">
+            <h3 className="text-xl rm:text-2xl md:text-3xl golden-text font-semibold mb-4">
               FOR MORE INFORMATION
             </h3>
             <div className="text-center text-[#aaaaaa]">
               <a
-                className="block md:text-lg hover:text-[#FFEFCD]"
-                href="tel:+1 844-502-5546"
+                className="block text-lg md:text-xl hover:text-[#FFEFCD]"
+                href={`tel:${
+                  props.pageData.phone
+                    ? props.pageData.phone
+                    : "+1 844-502-5546"
+                }`}
               >
-                {" "}
                 <span className="md:text-xl">Call us :</span>{" "}
                 <span className="underline underline-offset-4">
-                  +1 844-502-5546
-                </span>{" "}
+                  {props.pageData.phone
+                    ? props.pageData.phone
+                    : "+1 844-502-5546"}
+                </span>
               </a>
               <a
                 className="mt-1 block md:text-lg hover:text-[#FFEFCD]"
-                href="mailto:custsvc@allinadventures.com"
+                href={`mailto:${
+                  props.pageData.email
+                    ? props.pageData.email
+                    : "custsvc@allinadventures.com"
+                }`}
               >
                 <span className="md:text-xl">Email us :</span>{" "}
                 <span className="underline underline-offset-4">
-                  custsvc@allinadventures.com
+                  {props.pageData.email
+                    ? props.pageData.email
+                    : "custsvc@allinadventures.com"}
                 </span>
               </a>
             </div>
@@ -89,11 +96,14 @@ const ThankYouBox = (props) => {
               </a>
             </div>
           </div>
-          <ThankLinkBox />
+          <ThankOthersLink
+            escapeRoomCardImage={props.pageData.escapeRoomCardImage}
+            eventCardImage={props.pageData.eventCardImage}
+          />
         </div>
       </div>
     </div>
   );
 };
 
-export default ThankYouBox;
+export default ThankYouHero;

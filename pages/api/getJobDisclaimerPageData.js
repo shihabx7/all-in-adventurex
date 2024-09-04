@@ -4,6 +4,11 @@ import {
   allActivitiesSluglistQuery,
   allEventsSluglistQuery,
 } from "../../lib/query/navMenuQuery";
+import { jobApplicationDisclaimerPageQuery } from "../../lib/query/singlePageQury";
+import {
+  getSinglePageMeta,
+  getSinglePageData,
+} from "../../lib/singlePageDataFormation";
 import {
   getLocationSlugList,
   getAllEscapeGameSlugList,
@@ -27,34 +32,27 @@ export const getJobDisclaimerPageData = async () => {
   const totalActivities = actctivityListResData.length;
   const totalLocations = locationListData.length;
 
+  // fetch page data
+  const pegeRes = await fetch(jobApplicationDisclaimerPageQuery, apiSetting);
+  const pegeResObj = await pegeRes.json();
+  const pageResData = pegeResObj.data.attributes;
+
+  const seoData = pageResData.seo;
+  const ftImage = pageResData.pageHeroMobile.data.attributes.url;
+  // fetch page data end
+
   const data = {
     locationSlugList: getLocationSlugList(locationListData),
     escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
     otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),
     totalLocations: totalLocations,
-    pageMeta: {
-      title: "Job Application Disclaimer Policy | All In Adventures ",
-      description:
-        "Employment at All in Adventures is contingent upon a background check, which is required for all staff members. If the background check reveals a conviction or misconduct relevant to the position, or if an individual refuses to give consent for a background check, the individual may be disqualified from holding the position.",
-      keywords:
-        "escape room job, escape room job application, escape game job escape room job application",
-      url: "/job-application-disclaimer-policy",
-      metaindex: false,
-      metaimg:
-        "/assets/gn-mobile-hero/All-In-Adventures-Generic-Hero-Image-Mobile.jpg",
-    },
-
-    pageData: {
-      pagetitle: "job application disclaimer policy",
-      pagesubtitle: "",
-
-      coverimageL:
-        "/assets/gn-desktop-hero/All-In-Adventures-Generic-Hero-Image-Desktop.jpg",
-      coverimageM:
-        "/assets/gn-mobile-hero/All-In-Adventures-Generic-Hero-Image-Mobile.jpg",
-      totalLocations: totalLocations,
-    },
+    pageMeta: getSinglePageMeta(
+      seoData,
+      ftImage,
+      "job-application-disclaimer-policy"
+    ),
+    pageData: getSinglePageData(pageResData, totalLocations),
   };
 
   return data;

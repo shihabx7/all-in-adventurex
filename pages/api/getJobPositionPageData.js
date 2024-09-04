@@ -4,16 +4,19 @@ import {
   allActivitiesSluglistQuery,
   allEventsSluglistQuery,
 } from "../../lib/query/navMenuQuery";
+import { buildJobPositionPageQuery } from "../../lib/query/singlePageQury";
+import {
+  getSinglePageMeta,
+  getSinglePageData,
+} from "../../lib/singlePageDataFormation";
 import {
   getLocationSlugList,
   getAllEscapeGameSlugList,
   getAllOtherGameSlugList,
   getAllEventSlugList,
 } from "../../lib/menuDataFormation";
-export const getJobPositionPageData = async (jobname) => {
-  const jobtitle = () => {
-    return jobname.split("-").join(" ");
-  };
+export const getJobPositionPageData = async (jobSlug) => {
+  let uri = "careers/" + jobSlug;
   // fetch all location list as an array
   const locationListRes = await fetch(locationSlugListQuery, apiSetting);
   const locationListObj = await locationListRes.json();
@@ -29,32 +32,38 @@ export const getJobPositionPageData = async (jobname) => {
 
   const totalActivities = actctivityListResData.length;
   const totalLocations = locationListData.length;
+  // fetch page data
+  let reqUrl = buildJobPositionPageQuery(jobSlug);
+
+  const pegeRes = await fetch(reqUrl, apiSetting);
+  const pegeResObj = await pegeRes.json();
+  const pageResData = pegeResObj.data[0].attributes;
+
+  const seoData = pageResData.seo;
+  const ftImage = pageResData.pageHeroMobile.data.attributes.url;
+  // fetch page data end
   const data = {
     locationSlugList: getLocationSlugList(locationListData),
     escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
     otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),
     totalLocations: totalLocations,
-    pageMeta: jobData[jobname].pagemeta,
+    pageMeta: getSinglePageMeta(seoData, ftImage, uri),
+    pageData: getSinglePageData(pageResData, totalLocations),
 
-    pageData: {
-      pagetitle: "APPLY FOR " + jobtitle(),
-      pagesubtitle:
-        "This is a great opportunity for anyone excited for the chance to grow and develop with a startup company that is looking to change the face of how people interact socially through live games and activities.",
-      coverimageL: jobData[jobname].coverimageL,
-      coverimageM: jobData[jobname].coverimageM,
-      job_designation: jobtitle(),
-      totalLocations: totalLocations,
-    },
+    jobAboutSectionData: pageResData.jobAboutSection,
+    desiredTraits: pageResData.desiredTraits,
+    keyCompetencies: pageResData.keyCompetencies,
+    requirements: pageResData.requirements,
 
-    job_roles: jobData[jobname].job_roles,
-    key_competencies: jobData[jobname].key_competencies,
-    desired_traits: jobData[jobname].desired_traits,
-    requirements: jobData[jobname].requirements,
+    jobName: pageResData.jobName,
+    urlSlug: pageResData.slug,
   };
 
   return data;
 };
+
+/*
 
 const jobData = {
   associate: {
@@ -718,3 +727,5 @@ const jobData = {
     ],
   },
 };
+
+*/

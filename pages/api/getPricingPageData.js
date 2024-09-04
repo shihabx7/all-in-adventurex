@@ -4,12 +4,17 @@ import {
   allActivitiesSluglistQuery,
   allEventsSluglistQuery,
 } from "../../lib/query/navMenuQuery";
+import { pricingPageQuery } from "../../lib/query/singlePageQury";
 import {
   getLocationSlugList,
   getAllEscapeGameSlugList,
   getAllOtherGameSlugList,
   getAllEventSlugList,
 } from "../../lib/menuDataFormation";
+import {
+  getSinglePageMeta,
+  getSinglePageData,
+} from "../../lib/singlePageDataFormation";
 export const getPricingPageData = async () => {
   // fetch all location list as an array
   const locationListRes = await fetch(locationSlugListQuery, apiSetting);
@@ -26,6 +31,15 @@ export const getPricingPageData = async () => {
 
   const totalActivities = actctivityListResData.length;
   const totalLocations = locationListData.length;
+
+  // fetch page data
+  const pegeRes = await fetch(pricingPageQuery, apiSetting);
+  const pegeResObj = await pegeRes.json();
+  const pageResData = pegeResObj.data.attributes;
+
+  const seoData = pageResData.seo;
+  const ftImage = pageResData.pageHeroMobile.data.attributes.url;
+  // fetch page data end
   const data = {
     locationSlugList: getLocationSlugList(locationListData),
     escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
@@ -33,72 +47,9 @@ export const getPricingPageData = async () => {
     eventSlugList: getAllEventSlugList(eventListResData),
     totalLocations: totalLocations,
 
-    pageMeta: {
-      title: "Pricing | All In Adventures | Formerly Mystery Room",
-      description:
-        "Escape Room prices vary based on the group size. We offer affordable and innovative pricing for all our games and activities to appeal to groups of all sizes.",
-      keywords:
-        "escape room pricing, escape room cost, all in adventures pricing, all in adventures cost, mystery room pricing, mystery room cost, escape game pricing, escape game cost,",
-      url: "/pricing",
-      metaindex: true,
-      metaimg: "/assets/gn-mobile-hero/allinadventures-pricing-hero.jpg",
-    },
+    pageMeta: getSinglePageMeta(seoData, ftImage, "pricing"),
+    pageData: getSinglePageData(pageResData, totalLocations),
 
-    pageData: {
-      pagetitle: "ALL IN ADVENTURES PRICING",
-      pagesubtitle:
-        "How much does an Escape Room cost? Nowadays, It's a very common question! Escape Room prices vary based on the group size. We offer affordable and innovative pricing for all our games and activities to appeal to groups of all sizes. ",
-
-      totalLocations: totalLocations,
-      coverimageL: "/assets/gn-desktop-hero/allinadventures-pricing-hero.jpg",
-      coverimageM: "/assets/gn-mobile-hero/allinadventures-pricing-hero.jpg",
-    },
-
-    faqlist: [
-      {
-        id: 1,
-        category: "deals",
-        group: "deals",
-        ques: "Does the program cost anything?",
-        ans: "All In Adventure is the world's No. 1 fastest growing escape-the-room franchise. It is a high adrenaline escape game where players are locked inside a themed room and must complete their mission before time runs out. During the 60-minute experience players are immersed into a real-life adventure where they must find hidden clues, crack codes.",
-      },
-      {
-        id: 2,
-        category: "deals",
-        group: "deals",
-        ques: "Can I join online?",
-        ans: [
-          "All In Adventure is the world's No. 1 fastest growing escape-the-room franchise. It is a high adrenaline escape game where players are locked inside a themed room and must complete their mission before time runs out. During the 60-minute experience players are immersed into a real-life adventure where they must find hidden clues, crack codes.",
-        ],
-      },
-      {
-        id: 4,
-        category: "deals",
-        group: "deals",
-        ques: "What skills do I need to play?",
-        ans: [
-          "All In Adventure is the world's No. 1 fastest growing escape-the-room franchise. It is a high adrenaline escape game where players are locked inside a themed room and must complete their mission before time runs out. During the 60-minute experience players are immersed into a real-life adventure where they must find hidden clues, crack codes.",
-        ],
-      },
-      {
-        id: 5,
-        category: "deals",
-        group: "deals",
-        ques: "May I leave the room in the middle of the game?",
-        ans: [
-          "All In Adventure is the world's No. 1 fastest growing escape-the-room franchise. It is a high adrenaline escape game where players are locked inside a themed room and must complete their mission before time runs out. During the 60-minute experience players are immersed into a real-life adventure where they must find hidden clues, crack codes.",
-        ],
-      },
-      {
-        id: 6,
-        category: "deals",
-        group: "deals",
-        ques: "What if we need help during the game?",
-        ans: [
-          "All In Adventure is the world's No. 1 fastest growing escape-the-room franchise. It is a high adrenaline escape game where players are locked inside a themed room and must complete their mission before time runs out. During the 60-minute experience players are immersed into a real-life adventure where they must find hidden clues, crack codes.",
-        ],
-      },
-    ],
     inpersonpricing: [
       {
         id: 1,
@@ -158,3 +109,52 @@ export const getPricingPageData = async () => {
 
   return data;
 };
+
+/**
+  PricingfaqlistOld: [
+      {
+        id: 1,
+        category: "deals",
+        group: "deals",
+        ques: "Does the program cost anything?",
+        ans: "All In Adventure is the world's No. 1 fastest growing escape-the-room franchise. It is a high adrenaline escape game where players are locked inside a themed room and must complete their mission before time runs out. During the 60-minute experience players are immersed into a real-life adventure where they must find hidden clues, crack codes.",
+      },
+      {
+        id: 2,
+        category: "deals",
+        group: "deals",
+        ques: "Can I join online?",
+        ans: [
+          "All In Adventure is the world's No. 1 fastest growing escape-the-room franchise. It is a high adrenaline escape game where players are locked inside a themed room and must complete their mission before time runs out. During the 60-minute experience players are immersed into a real-life adventure where they must find hidden clues, crack codes.",
+        ],
+      },
+      {
+        id: 4,
+        category: "deals",
+        group: "deals",
+        ques: "What skills do I need to play?",
+        ans: [
+          "All In Adventure is the world's No. 1 fastest growing escape-the-room franchise. It is a high adrenaline escape game where players are locked inside a themed room and must complete their mission before time runs out. During the 60-minute experience players are immersed into a real-life adventure where they must find hidden clues, crack codes.",
+        ],
+      },
+      {
+        id: 5,
+        category: "deals",
+        group: "deals",
+        ques: "May I leave the room in the middle of the game?",
+        ans: [
+          "All In Adventure is the world's No. 1 fastest growing escape-the-room franchise. It is a high adrenaline escape game where players are locked inside a themed room and must complete their mission before time runs out. During the 60-minute experience players are immersed into a real-life adventure where they must find hidden clues, crack codes.",
+        ],
+      },
+      {
+        id: 6,
+        category: "deals",
+        group: "deals",
+        ques: "What if we need help during the game?",
+        ans: [
+          "All In Adventure is the world's No. 1 fastest growing escape-the-room franchise. It is a high adrenaline escape game where players are locked inside a themed room and must complete their mission before time runs out. During the 60-minute experience players are immersed into a real-life adventure where they must find hidden clues, crack codes.",
+        ],
+      },
+    ],
+ 
+ */

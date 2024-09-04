@@ -4,6 +4,11 @@ import {
   allActivitiesSluglistQuery,
   allEventsSluglistQuery,
 } from "../../lib/query/navMenuQuery";
+import { termsConditionPageQuery } from "../../lib/query/singlePageQury";
+import {
+  getSinglePageMeta,
+  getSinglePageData,
+} from "../../lib/singlePageDataFormation";
 import {
   getLocationSlugList,
   getAllEscapeGameSlugList,
@@ -26,6 +31,14 @@ export const getTermsConditionPageData = async () => {
 
   const totalActivities = actctivityListResData.length;
   const totalLocations = locationListData.length;
+  // fetch page data
+  const pegeRes = await fetch(termsConditionPageQuery, apiSetting);
+  const pegeResObj = await pegeRes.json();
+  const pageResData = pegeResObj.data.attributes;
+
+  const seoData = pageResData.seo;
+  const ftImage = pageResData.pageHeroMobile.data.attributes.url;
+  // fetch page data end
 
   const data = {
     locationSlugList: getLocationSlugList(locationListData),
@@ -33,28 +46,8 @@ export const getTermsConditionPageData = async () => {
     otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),
     totalLocations: totalLocations,
-    pageMeta: {
-      title: "Terms of Services | All In Adventures | Formerly Mystery Room",
-      description:
-        "Our Terms of Services sets out the general terms and conditions on your use of our Games (including our online virtual experience) and websites.",
-      keywords:
-        "escape room terms of services, all in adventures terms of services, mystery room terms of services,",
-      url: "/terms-of-services",
-      metaindex: false,
-      metaimg:
-        "/assets/gn-mobile-hero/All-In-Adventures-Generic-Hero-Image-Mobile.jpg",
-    },
-
-    pageData: {
-      pagetitle: "TERMS OF SERVICES",
-      pagesubtitle: "",
-
-      coverimageL:
-        "/assets/gn-desktop-hero/All-In-Adventures-Generic-Hero-Image-Desktop.jpg",
-      coverimageM:
-        "/assets/gn-mobile-hero/All-In-Adventures-Generic-Hero-Image-Mobile.jpg",
-      totalLocations: totalLocations,
-    },
+    pageMeta: getSinglePageMeta(seoData, ftImage, "terms-of-services"),
+    pageData: getSinglePageData(pageResData, totalLocations),
   };
 
   return data;

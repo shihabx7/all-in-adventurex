@@ -23,7 +23,7 @@ const CareersHero = (props) => {
               {props.pageData.pageTitle}
             </h1>
             <div
-              className="text-gray-100 max-w-[820px] mx-auto text-center lg:text-lg"
+              className="text-gray-100 max-w-[840px] mx-auto text-center lg:text-lg"
               dangerouslySetInnerHTML={{ __html: props.pageData.pageSubTitle }}
             ></div>
           </div>
@@ -39,21 +39,15 @@ const CareersHero = (props) => {
             ) : (
               <></>
             )}
-            {props.jobname && props.jobid && (
+            {props.btnLink ? (
               <a
-                href={"/careers/apply#" + props.jobid}
+                href={"/" + props.btnLink}
                 className="block py-3 px-10 bg-red-600 hover:bg-red-700 text-white text-center md:text-lg rounded-full"
               >
-                SUBMIT YOUR APPLICATION
+                {props.btnLabel}
               </a>
-            )}
-            {props.jobname && !props.jobid && (
-              <a
-                href={"/careers/apply"}
-                className="block py-3 px-10 bg-red-600 hover:bg-red-700 text-white text-center md:text-lg rounded-full"
-              >
-                SUBMIT YOUR APPLICATION
-              </a>
+            ) : (
+              <></>
             )}
 
             {/*============alljob search btn==========*/}

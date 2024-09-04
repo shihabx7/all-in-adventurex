@@ -5,6 +5,14 @@ import {
   allEventsSluglistQuery,
 } from "../../lib/query/navMenuQuery";
 import {
+  thanYouPagesQuery,
+  thankYouSeoQueryBuilder,
+} from "../../lib/query/singlePageQury";
+import {
+  getThankYouPageMeta,
+  getThankYouPageData,
+} from "../../lib/singlePageDataFormation";
+import {
   getLocationSlugList,
   getAllEscapeGameSlugList,
   getAllOtherGameSlugList,
@@ -26,32 +34,26 @@ export const getThankYouStorePageData = async () => {
 
   const totalActivities = actctivityListResData.length;
   const totalLocations = locationListData.length;
+  // fetch page data
+  const reqUrl =
+    thanYouPagesQuery + thankYouSeoQueryBuilder("storeThankYouSeo");
+
+  const pegeRes = await fetch(reqUrl, apiSetting);
+  const pegeResObj = await pegeRes.json();
+  const pageResData = pegeResObj.data.attributes;
+
+  const seoData = pageResData.storeThankYouSeo;
+
+  // fetch page data end
   const data = {
     locationSlugList: getLocationSlugList(locationListData),
     escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
     otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),
     totalLocations: totalLocations,
-    pageMeta: {
-      title: "Thank You (Store) | All In Adventures",
-      description:
-        "Your submission has been received. We will get in touch with you shortly.",
-      keywords: "thank you store",
-      url: "/Thank-you",
-      metaindex: false,
-      metaimg:
-        "/assets/gn-mobile-hero/All-In-Adventures-Generic-Hero-Image-Mobile.jpg",
-    },
+    pageMeta: getThankYouPageMeta(seoData, "thank-you-store"),
 
-    pageData: {
-      pagetitle: "TERMS OF SERVICE",
-      pagesubtitle:
-        "#1 Place for fun adventure activities and events with escape games, axe throwing, virtual reality, game show room, beat the seat. Bring your friend & family today. ",
-
-      coverimageL: "/assets/home-benar-bg.jpg",
-      coverimageM: "/assets/home-hero.jpg",
-      totalLocations: totalLocations,
-    },
+    pageData: getThankYouPageData(pageResData, totalLocations),
   };
 
   return data;

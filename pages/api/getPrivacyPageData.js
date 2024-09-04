@@ -4,6 +4,11 @@ import {
   allActivitiesSluglistQuery,
   allEventsSluglistQuery,
 } from "../../lib/query/navMenuQuery";
+import { privacyPageQuery } from "../../lib/query/singlePageQury";
+import {
+  getSinglePageMeta,
+  getSinglePageData,
+} from "../../lib/singlePageDataFormation";
 import {
   getLocationSlugList,
   getAllEscapeGameSlugList,
@@ -26,6 +31,14 @@ export const getPrivacyPageData = async () => {
 
   const totalActivities = actctivityListResData.length;
   const totalLocations = locationListData.length;
+  // fetch page data
+  const pegeRes = await fetch(privacyPageQuery, apiSetting);
+  const pegeResObj = await pegeRes.json();
+  const pageResData = pegeResObj.data.attributes;
+
+  const seoData = pageResData.seo;
+  const ftImage = pageResData.pageHeroMobile.data.attributes.url;
+  // fetch page data end
 
   const data = {
     locationSlugList: getLocationSlugList(locationListData),
@@ -33,28 +46,12 @@ export const getPrivacyPageData = async () => {
     otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),
     totalLocations: totalLocations,
-    pageMeta: {
-      title: "Privacy Policy | All In Adventures | Formerly Mystery Room",
-      description:
-        "Our Privacy Policy explains how we handle Personal Information provided to us through our Games (including our online virtual experience) and websites.",
-      keywords:
-        "escape room privacy policy, all in adventures privacy policy, mystery room privacy policy,",
-      url: "/privacy-policy",
-      metaindex: false,
-      metaimg:
-        "/assets/gn-mobile-hero/All-In-Adventures-Generic-Hero-Image-Mobile.jpg",
-    },
-
-    pageData: {
-      pagetitle: "PRIVACY POLICY",
-      pagesubtitle: "",
-
-      coverimageL:
-        "/assets/gn-desktop-hero/All-In-Adventures-Generic-Hero-Image-Desktop.jpg",
-      coverimageM:
-        "/assets/gn-mobile-hero/All-In-Adventures-Generic-Hero-Image-Mobile.jpg",
-      totalLocations: totalLocations,
-    },
+    pageMeta: getSinglePageMeta(
+      seoData,
+      ftImage,
+      "job-application-disclaimer-policy"
+    ),
+    pageData: getSinglePageData(pageResData, totalLocations),
   };
 
   return data;

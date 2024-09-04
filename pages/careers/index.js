@@ -1,7 +1,5 @@
 import RootNav from "../../comps/RootNav";
 import RootFooter from "../../comps/RootFooter";
-import Breadcrumbs from "nextjs-breadcrumbs";
-import { FiChevronRight } from "react-icons/fi";
 
 import CareersHero from "../../comps/careersPageComps/CareersHero";
 import WhoWeAre from "../../comps/careersPageComps/WhoWeAre";
@@ -37,7 +35,7 @@ const Careers = (props) => {
           btnLabel={"VIEW ALL JOB POSITIONS"}
         />
         <WhoWeAre />
-        <OpenPosition jobs={props.jobs} />
+        <OpenPosition jobCardList={props.jobCardList} />
 
         {/* =========================================================================================main content ======== end */}
       </div>
@@ -64,7 +62,7 @@ export const getStaticProps = async () => {
       totalLocations: DATA.totalLocations,
       pageData: DATA.pageData,
       pageMeta: DATA.pageMeta,
-      jobs: DATA.jobs,
+      jobCardList: DATA.jobCardList,
     },
     revalidate: 12,
   };

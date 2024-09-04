@@ -1,39 +1,20 @@
+import { getJobPositionPageData } from "../api/getJobPositionPageData";
+import { getJobSlug } from "../api/getJobSlug";
+
 import RootNav from "../../comps/RootNav";
 import RootFooter from "../../comps/RootFooter";
-import Breadcrumbs from "nextjs-breadcrumbs";
-import { FiChevronRight } from "react-icons/fi";
 
-import CareerHero from "../../comps/careersPageComps/CareerHero";
-import { getJobSlug } from "../api/getJobSlag";
-import { getJobPositionPageData } from "../api/getJobPositionPageData";
+import PageBread from "../../comps/util/PageBread";
+import SinglePageSeo from "../../comps/util/SinglePageSeo";
+import CareersHero from "../../comps/careersPageComps/CareersHero";
+
 import JobDetails from "../../comps/careersPageComps/JobDetails";
-import Seofields from "../../comps/util/SeoFields";
 
 const OpenJobPosition = (props) => {
-  const toTitleCase = (title) => {
-    const titlefres = title.replace(/-/g, " ");
-    const btitle = titlefres
-      .split(" ")
-      .map((word) => {
-        return word.charAt(0).toUpperCase() + word.slice(1);
-      })
-      .join(" "); // breadcum title capitalize
-
-    return (
-      <div className="bitem flex items-center">
-        <span>{btitle}</span>{" "}
-        <span className="bsep text-gold">
-          <FiChevronRight />
-        </span>
-      </div>
-    );
-  };
-  /* customizing breadcum */
-
   return (
     <>
       {/* =======header content======== */}
-      <Seofields meta={props.pagemeta} />
+      <SinglePageSeo meta={props.pageMeta} />
       <RootNav
         locationSlugList={props.locationSlugList}
         escapeGameSlugList={props.escapeGameSlugList}
@@ -46,33 +27,21 @@ const OpenJobPosition = (props) => {
       <div
         id="mainContent"
         className="main-content nobtn-main-content bg-center"
-        style={{ backgroundImage: "url('/assets/game-dt-bg.jpg')" }}
       >
         {/* =======breadcum content and breadcum========  */}
-        <div className="breadcums  py-1 md:py-2 bg-[#fffceb]">
-          <Breadcrumbs
-            replaceCharacterList={[{ from: "-", to: " " }]}
-            listClassName="max-w-7xl mx-auto px-2 md:px-4 breadcum-list text-sm md:text-base lg:text-lg"
-            inactiveItemClassName="inline-block text-[#6a6a6a] hover:text-red-700"
-            activeItemClassName="inline-block text-[#212121]"
-            rootLabel="home"
-            transformLabel={(title) => {
-              return toTitleCase(title);
-            }}
-          ></Breadcrumbs>
-        </div>
+        <PageBread />
         {/* =======breadcum content and breadcum root page template======== end */}
 
-        <CareerHero
+        <CareersHero
           pageData={props.pageData}
-          jobname={props.pageData.job_designation}
+          btnLink={"/careers/apply"}
+          btnLabel={"SUBMIT YOUR APPLICATION"}
         />
         <JobDetails
-          jobname={props.pageData.job_designation}
-          designation={props.pageData.job_designation}
-          jobroles={props.jobroles}
-          competencies={props.competencies}
-          traits={props.traits}
+          jobAboutSectionData={props.jobAboutSectionData}
+          jobName={props.jobName}
+          keyCompetencies={props.keyCompetencies}
+          desiredTraits={props.desiredTraits}
           requirements={props.requirements}
         />
 
@@ -91,9 +60,9 @@ export default OpenJobPosition;
 export const getStaticPaths = async () => {
   const res = await getJobSlug();
 
-  const paths = res.map((jobSlug) => {
+  const paths = res.map((urlSlug) => {
     return {
-      params: { jobSlug: jobSlug.job_slug.toString() },
+      params: { jobSlug: urlSlug.jobSlug.toString() },
     };
   });
 
@@ -113,12 +82,15 @@ export const getStaticProps = async (context) => {
       otherGameSlugList: DATA.otherGameSlugList,
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
-      pagemeta: DATA.pageMeta,
+      pageMeta: DATA.pageMeta,
       pageData: DATA.pageData,
-      jobroles: DATA.job_roles,
-      competencies: DATA.key_competencies,
-      traits: DATA.desired_traits,
+
+      jobAboutSectionData: DATA.jobAboutSectionData,
+      desiredTraits: DATA.desiredTraits,
+      keyCompetencies: DATA.keyCompetencies,
       requirements: DATA.requirements,
+      jobName: DATA.jobName,
+      jobSlug: DATA.urlSlug,
     },
     revalidate: 12,
   };

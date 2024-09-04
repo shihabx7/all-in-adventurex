@@ -1,14 +1,17 @@
-import TitleSeparator from "../util/TitleSeparator";
-import Link from "next/link";
+import JobRoleList from "./JobRoleList";
+import JobRoleNotice from "./JobRoleNotice";
+import JobKeyCompetencies from "./JobKeyCompetencies";
+import JobTraits from "./JobTraits";
+import JobRequirements from "./JobRequirements";
 
-const getDasignation = (jobname) => {
-  const v = ["a", "e", "i", "o", "u"];
+const formateSubtitle = (jobname) => {
+  const v = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+
   const fistChar = jobname.charAt(0);
   if (v.includes(fistChar)) {
-    return "an " + jobname;
+    return "AS an " + jobname + " you will:";
   }
-
-  return "a " + jobname;
+  return "AS a " + jobname + " you will:";
 };
 const JobDetails = (props) => {
   return (
@@ -53,54 +56,22 @@ const JobDetails = (props) => {
         <div className="section-row flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 lg:space-x-8 ">
           {/*==========================about the role====================== */}
           <div className="section-col md:w-2/3 pb-8 md:pb-0 px-4">
-            <h2 className="dark-gold text-3xl md:text-4xl lg:text-5xl font-os font-bold">
-              ABOUT THE ROLE{" "}
+            <h2 className="dark-gold text-3xl md:text-4xl lg:text-5xl font-os font-bold uppercase">
+              {props.jobAboutSectionData.sectionTitle
+                ? props.jobAboutSectionData.sectionTitle
+                : "ABOUT THE ROLE"}
             </h2>
             <p className="text-lg md:text[20px] lg:text-[24px] text-[#464646] font-medium mt-2 md:mt-4">
-              As {getDasignation(props.designation)}, you will:
+              {props.jobAboutSectionData.sectionSubTitle
+                ? props.jobAboutSectionData.sectionSubTitle + ":"
+                : formateSubtitle(props.jobName)}
             </p>
 
             <div className="abt-role mt-4 md:mt-6 lg:mt-8 text-lg ">
-              {props.jobroles.map((jobrole) => {
-                return (
-                  <div
-                    key={jobrole.id}
-                    className="flex  lg:text-lg text-[#464646] mt-3 md:mt-3 lg:mt-4 justify-between"
-                  >
-                    <div className="mt-[6px] w-[20px] lg:w-[24px]">
-                      <img src="/assets/svg/star-bullet.svg"></img>
-                    </div>
-                    <div className="w-[94%] lg:w-[96%] lg:text-lg">
-                      {jobrole.role}
-                    </div>
-                  </div>
-                );
-              })}
+              <JobRoleList jobRoles={props.jobAboutSectionData.jobRoles} />
             </div>
             <div className="job-dt-bottom-link mt-6 lg:mt-8">
-              <p className="job-note font-semibold lg:text-lg text-[#464646] mb-6 lg:mb-8">
-                If you are interested in applying for this role, please click
-                below to complete an employment application and submit your
-                resume for review by our recruiting team.
-              </p>
-
-              <a
-                href={"/careers/apply/"}
-                className="inline-block bg-red-600 hover:bg-red-700 text-white lg:text-lg py-3 px-10 md:py-4 md:px-12 rounded-full"
-              >
-                SUBMIT YOUR APPLICATION
-              </a>
-
-              <p className="font-thin text-[#464646] lg:text-lg mt-6 lg:mt-8">
-                All in Adventures, LLC. is an equal opportunity employer and
-                affirmatively seeks diversity in its workforce. All in
-                Adventures recruits qualified applicants and advances in
-                employment its employees without regard to race, color,
-                religion, gender, sexual orientation, gender identity, gender
-                expression, age, disability, genetic information, ethnic or
-                national origin, marital status, veteran status, or any other
-                status protected by law.
-              </p>
+              <JobRoleNotice />
             </div>
           </div>
           {/*==========================about the role end====================== */}
@@ -109,69 +80,29 @@ const JobDetails = (props) => {
             <div className="job-side-bar bg-[#F4E6C3] px-4 py-12 md:py-12 md:px-6 lg:py-16 lg:px-8 rounded-lg">
               {/*================== COMPETENCIES=============*/}
               <div className="side-bar-wd">
-                <h3 className="text-xl md:text-2xl font-os text-[#111111] ">
-                  KEY COMPETENCIES NEEDED
-                </h3>
-                <div className="abt-notice mt-4 md:mt-6 lg:mt-6 text-lg">
-                  {props.competencies.map((competency) => {
-                    return (
-                      <div
-                        key={competency.id}
-                        className="flex  lg:text-lg text-[#464646] mt-3 md:mt-3 lg:mt-4 justify-between"
-                      >
-                        <div className="mt-[6px] w-[20px] lg:w-[24px]">
-                          <img src="/assets/svg/star-bullet.svg"></img>
-                        </div>
-                        <div className="w-[94%] lg:text-lg">
-                          {competency.competency}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
+                {props.keyCompetencies ? (
+                  <JobKeyCompetencies keyCompetencies={props.keyCompetencies} />
+                ) : (
+                  <></>
+                )}
               </div>
               {/*================== COMPETENCIES end=============*/}
               {/*================== trait=============*/}
               <div className="side-bar-wd mt-8 lg:mt-12">
-                <h3 className="text-xl md:text-2xl font-os text-[#111111] ">
-                  DESIRED TRAITS
-                </h3>
-                <div className="abt-trait mt-4 md:mt-6 lg:mt-6 text-lg">
-                  {props.traits.map((trait) => {
-                    return (
-                      <p
-                        key={trait.id}
-                        className="flex  lg:text-lg text-[#464646] mt-3 md:mt-3 lg:mt-4 justify-between"
-                      >
-                        {trait.trait}
-                      </p>
-                    );
-                  })}
-                </div>
+                {props.desiredTraits ? (
+                  <JobTraits desiredTraits={props.desiredTraits} />
+                ) : (
+                  <></>
+                )}
               </div>
               {/*================== trait end=============*/}
               {/*================== trait=============*/}
               <div className="side-bar-wd mt-8 lg:mt-12">
-                <h3 className="text-xl md:text-2xl font-os text-[#111111] ">
-                  REQUIREMENTS FOR CONSIDERATION
-                </h3>
-                <div className="abt-trait mt-4 md:mt-6 lg:mt-6 text-lg">
-                  {props.requirements.map((req) => {
-                    return (
-                      <div
-                        key={req.id}
-                        className="flex  lg:text-lg text-[#464646] mt-3 md:mt-3 lg:mt-4 justify-between"
-                      >
-                        <div className="mt-[6px] w-[20px] lg:w-[24px]">
-                          <img src="/assets/svg/star-bullet.svg"></img>
-                        </div>
-                        <div className="w-[94%] lg:text-lg">
-                          {req.requirement}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
+                {props.desiredTraits ? (
+                  <JobRequirements requirements={props.requirements} />
+                ) : (
+                  <></>
+                )}
               </div>
               {/*================== trait end=============*/}
             </div>

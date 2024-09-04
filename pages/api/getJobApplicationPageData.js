@@ -46,8 +46,7 @@ export const getJobApplicationPageData = async () => {
     otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),
     totalLocations: totalLocations,
-    pageMeta: getSinglePageMeta(seoData, ftImage, "careers"),
-
+    pageMeta: getSinglePageMeta(seoData, ftImage, "careers/apply"),
     pageData: getSinglePageData(pageResData, totalLocations),
   };
 
