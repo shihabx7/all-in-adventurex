@@ -1,0 +1,15 @@
+# *
+User-agent: *
+Disallow: /*.json$
+Disallow: /*_buildManifest.js$
+Disallow: /*_middlewareManifest.js$
+Disallow: /*_ssgManifest.js$
+Disallow: /*.js$
+
+# Host
+Host: https://allinadventures.com
+
+# Sitemaps
+Sitemap: https://allinadventures.com/sitemap.xml
+Sitemap: https://allinadventures.com/static-sitemap-0.xml
+Sitemap: https://allinadventures.com/static-sitemap.xml

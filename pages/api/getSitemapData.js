@@ -6,9 +6,13 @@ import {
   siteMapLocationQuery,
   siteMapBlogQuery,
   siteMapBlogCategoryQuery,
-} from "../../lib/query/singlePageQury";
+} from "../../lib/query/siteMapQuery";
+import { jobPositionSlugQuery } from "../../lib/query/singlePageQury";
 
-import { getSitemapLocationsLinkList } from "../../lib/singlePageDataFormation";
+import {
+  getSitemapLocationsLinkList,
+  getJobPositionLiskList,
+} from "../../lib/siteMapDataFormation";
 
 import {
   getLocationSlugList,
@@ -55,29 +59,14 @@ export const getSitemapData = async () => {
   const blogCatLinkResObj = await blogCatLinkRes.json();
   const blogCatLinkResDataArr = blogCatLinkResObj.data;
   //console.log(blogLinkResDataArr);
+  //joblink
 
-  const careersLinkList = [
-    {
-      id: 1,
-      jobName: "Associate",
-      jobSlug: "associate",
-    },
-    {
-      id: 2,
-      jobName: "Store Lead",
-      jobSlug: "store-lead",
-    },
-    {
-      id: 3,
-      jobName: "Assistant Manager",
-      jobSlug: "assistant-manager",
-    },
-    {
-      id: 4,
-      jobName: "Store Manager",
-      jobSlug: "store-manager",
-    },
-  ];
+  const jobLinkRes = await fetch(jobPositionSlugQuery, apiSetting);
+  const jobLinkResObj = await jobLinkRes.json();
+  const jobLinkResObjDataArr = jobLinkResObj.data;
+
+  const careersLinkList = getJobPositionLiskList(jobLinkResObjDataArr);
+  // console.log(blogCatLinkResDataArr);
 
   const DATA = {
     locationSlugList: getLocationSlugList(locationListData),
