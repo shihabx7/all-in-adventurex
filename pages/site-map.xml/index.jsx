@@ -1,8 +1,8 @@
 import { getServerSideSitemapLegacy } from "next-sitemap";
-import { getSiteMapXmlData } from "../api/getSitemapXMLData";
+import { getSitemapXMLData } from "../api/getSitemapXMLData";
 
 export async function getServerSideProps(ctx) {
-  const fields = await getSiteMapXmlData();
+  const fields = await getSitemapXMLData();
 
   return getServerSideSitemapLegacy(ctx, fields);
 }

@@ -36,7 +36,7 @@ module.exports = {
         disallow: NEXT_SSG_FILES,
       },
     ],
-    //additionalSitemaps: [WEBURL + "/sitemap-0.xml", WEBURL + "/sitemap.xml"],
+    additionalSitemaps: [WEBURL + "/site-map.xml"],
   },
   //sitemapBaseFileName: "sitemap.xml",
 };

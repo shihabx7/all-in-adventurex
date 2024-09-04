@@ -19,7 +19,7 @@ import {
 } from "../../lib/siteMapDataFormation";
 
 const siteUrl = process.env.SITE_URL || "https://allinadventures.com";
-export const getSiteMapXmlData = async () => {
+export const getSitemapXMLData = async () => {
   //const pageReqUrl = apiUrl + homePageQuery;
   const activitylistReqUrl = apiUrl + activityListQuery;
   const eventlistReqUrl = apiUrl + eventListQuery;

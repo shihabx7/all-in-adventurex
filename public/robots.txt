@@ -11,5 +11,4 @@ Host: https://allinadventures.com
 
 # Sitemaps
 Sitemap: https://allinadventures.com/sitemap.xml
-Sitemap: https://allinadventures.com/static-sitemap-0.xml
-Sitemap: https://allinadventures.com/static-sitemap.xml
+Sitemap: https://allinadventures.com/site-map.xml
