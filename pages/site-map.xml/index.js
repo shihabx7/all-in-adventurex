@@ -1,4 +1,5 @@
 import { getServerSideSitemapLegacy } from "next-sitemap";
+
 import { getSitemapXMLData } from "../api/getSitemapXMLData";
 
 export async function getServerSideProps(ctx) {
@@ -7,5 +8,4 @@ export async function getServerSideProps(ctx) {
   return getServerSideSitemapLegacy(ctx, fields);
 }
 
-// Default export to prevent Next.js errors
 export default function Sitemap() {}

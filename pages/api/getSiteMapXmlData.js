@@ -165,7 +165,7 @@ export const getSitemapXMLData = async () => {
   const blogCatListArr = getBlogCatXmlList(blogCatLinkResDataArr);
   const blogListArr = getBlogXmlList(blogLinkResDataArr);
   const careerListArr = getJobXmlList(jobLinkResObjDataArr);
-  const fields = [
+  const FIELDS = [
     ...leftStaticArr,
     ...activityListArr,
     ...eventListArr,
@@ -178,6 +178,6 @@ export const getSitemapXMLData = async () => {
     ...rightBottomStaticArr,
   ];
   // console.log(blogListArr);
-  const DATA = fields;
-  return DATA;
+  //const DATA = fields;
+  return FIELDS;
 };
