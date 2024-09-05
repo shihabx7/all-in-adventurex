@@ -96,11 +96,7 @@ const Howtobook = () => {
 
         <div className="max-w-7xl mx-auto">
           <div className="hbt-container pt-4 md:pt-16 relative z-20">
-            <TitleSeparator
-              title="HOW TO BOOK YOUR ADVENTURE"
-              color="dark-gold"
-              weight="font-bold"
-            />
+            <TitleSeparator title="HOW TO BOOK YOUR ADVENTURE" />
             <div className="max-w-[800px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-10 md:mb-12 lg:mb-16">
               <p className="text-gray-700 md:px-8">
                 You can book instantly online for groups of 2-10 people. Have a
@@ -110,6 +106,76 @@ const Howtobook = () => {
               </p>
             </div>
             {/* How to book 3 steps */}
+            <div className="htb-steps flex justify-btween mb-10 sm:justify-center items-center sm:max-w-[94%] md:max-w-[740px] lg:max-w-[840px] mx-auto">
+              <div className="htb-step-x flex-1 w-[72px] rm:w-[90px] md:w-[160px] lg:w-[210px]">
+                <div className="htb-icon text-center w-[86%] mx-auto">
+                  <img
+                    className="w-[90px] mx-auto"
+                    src="/assets/svg/choose-location.svg"
+                  ></img>
+                </div>
+                <h3 className="golden-text text-3xl font-bold mt-2 text-center">
+                  1
+                </h3>
+                <p className="htb-text-x text-[8px] rm:text-[10px] lm:text-[12px] sm:text-[14px] lg:text-lg text-center text-gray-700 mt-2  font-medium">
+                  CHOOSE YOUR LOCATION
+                </p>
+              </div>
+
+              <div className="htb-step-line-x flex-1 pt-10">
+                <img
+                  className="hidden md:block"
+                  src="/assets/svg/htb-line-1.svg"
+                ></img>
+                <img
+                  className="md:hidden"
+                  src="/assets/svg/step-line-mb.svg"
+                ></img>
+              </div>
+
+              <div className="htb-step-x flex-1 w-[72px] rm:w-[90px] md:w-[160px] lg:w-[210px]">
+                <div className="w-[86%] mx-auto">
+                  <img
+                    className="w-[90px] mx-auto"
+                    src="/assets/svg/select-game.svg"
+                  ></img>
+                </div>
+                <h3 className="golden-text text-3xl font-bold mt-2 text-center">
+                  2
+                </h3>
+                <p className="htb-text-x text-[8px] rm:text-[10px] lm:text-[12px] sm:text-[14px] lg:text-lg text-center text-gray-700 mt-2  font-medium">
+                  SELECT YOUR GAME
+                </p>
+              </div>
+
+              <div className="htb-step-line-x flex-1 pt-10">
+                <img
+                  className="hidden md:block"
+                  src="/assets/svg/htb-line-2.svg"
+                ></img>
+                <img
+                  className="md:hidden"
+                  src="/assets/svg/step-line-mb.svg"
+                ></img>
+              </div>
+
+              <div className="htb-step-x w-[72px] flex-1 rm:w-[90px] md:w-[160px] lg:w-[210px]">
+                <div className="htb-icon w-[86%] mx-auto">
+                  <img
+                    className="w-[90px] mx-auto"
+                    src="/assets/svg/pick-date.svg"
+                  ></img>
+                </div>
+                <h3 className="golden-text text-3xl font-bold mt-2 text-center">
+                  3
+                </h3>
+                <p className="htb-text-x text-[8px] rm:text-[10px] lm:text-[12px] sm:text-[14px] lg:text-lg text-center  text-gray-700 mt-2  font-medium">
+                  PICK YOUR <br></br>DATE &amp; TIME
+                </p>
+              </div>
+            </div>
+            {/* How to book 3 steps  end*/}
+            {/* How to book 3 steps  old */}
             <div className="htb-steps flex justify-btween mb-10 md:justify-center items-center max-w-4xl mx-auto">
               <div className="htb-step">
                 <div className="htb-icon">
@@ -117,7 +183,7 @@ const Howtobook = () => {
                 </div>
                 <h3 className="golden-text text-3xl font-bold mt-2">1</h3>
                 <div className="htb-text text-gray-700 mt-2 mb-12 font-medium">
-                  CHOOSE LOCATION{" "}
+                  CHOOSE YOUR LOCATION
                 </div>
               </div>
 
@@ -159,8 +225,9 @@ const Howtobook = () => {
                 </div>
                 <h3 className="golden-text text-3xl font-bold mt-2">3</h3>
                 <div className="htb-text  text-gray-700 mt-2 mb-12 font-medium">
-                  PICK <br />
-                  DATE &amp; TIME{" "}
+                  PICK YOUR
+                  <br />
+                  DATE &amp; TIME
                 </div>
               </div>
             </div>
