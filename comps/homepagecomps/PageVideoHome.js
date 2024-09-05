@@ -4,6 +4,7 @@ import TeaserVideo from "../util/TeaserVideo";
 import { useState } from "react";
 import { FiX } from "react-icons/fi";
 import { ImPlay3 } from "react-icons/im";
+import HowtobookSteps from "./HowtobookSteps";
 
 const bookAll = (bookingData) => {
   FH.open({
@@ -114,80 +115,7 @@ const PageVideoHome = (props) => {
               ></div>
             </div>
             {/* How to book 3 steps */}
-            <div className="htb-steps  sm:max-w-[98%] md:max-w-[740px] lg:max-w-[840px] mx-auto ">
-              <div class="flex  mb-10 md:mb-12 lg:mb-16">
-                <div class="steps-1 w-[28%] md:w-[220px]  flex flex-col">
-                  <div className="htb-icon text-center w-[86%] mx-auto">
-                    <img
-                      className="w-[90px] mx-auto"
-                      src="/assets/svg/choose-location.svg"
-                    ></img>
-                  </div>
-                  <h3 className="golden-text text-3xl font-bold mt-2 text-center">
-                    1
-                  </h3>
-                  <p className="htb-text-x text-[8px] rm:text-[10px] lm:text-[12px] sm:text-[14px] lg:text-lg text-center text-gray-700 mt-2  font-medium">
-                    CHOOSE YOUR <br></br> LOCATION
-                  </p>
-                </div>
-                <div class="lin  flex-grow flex flex-col">
-                  <div className="line-img w-full h-full relative">
-                    <div className="absolute top-[62%] lm:top-[60%] xm:top-[55%] md:top-[60%] lg:top-[57%] w-[200%] xm:w-[140%] md:w-[190px] lg:w-[240px] left-[-40%] xm:left-[-20%] md:left-[-72px] lg:left-[-78px]">
-                      <img
-                        className="hidden md:block"
-                        src="/assets/svg/htb-line-1.svg"
-                      ></img>
-                      <img
-                        className="w-full md:hidden"
-                        src="/assets/svg/step-line-mb.svg"
-                      ></img>
-                    </div>
-                  </div>
-                </div>
-                <div class="steps-2 w-[28%] md:w-[220px]   flex flex-col">
-                  <div className="htb-icon text-center w-[86%] mx-auto">
-                    <img
-                      className="w-[90px] mx-auto"
-                      src="/assets/svg/select-game.svg"
-                    ></img>
-                  </div>
-                  <h3 className="golden-text text-3xl font-bold mt-2 text-center">
-                    2
-                  </h3>
-                  <p className="htb-text-x text-[8px] rm:text-[10px] lm:text-[12px] sm:text-[14px] lg:text-lg text-center text-gray-700 mt-2  font-medium">
-                    SELECT YOUR <br></br> GAME
-                  </p>
-                </div>
-                <div class="lin   flex-grow flex flex-col">
-                  <div className="line-img w-full h-full relative">
-                    <div className="absolute top-[62%] lm:top-[60%] xm:top-[55%] md:top-[60%] lg:top-[57%] w-[200%] xm:w-[140%] md:w-[190px] lg:w-[240px] left-[-40%] xm:left-[-20%] md:left-[-72px] lg:left-[-78px]">
-                      <img
-                        className="hidden md:block"
-                        src="/assets/svg/htb-line-1.svg"
-                      ></img>
-                      <img
-                        className="w-full md:hidden"
-                        src="/assets/svg/step-line-mb.svg"
-                      ></img>
-                    </div>
-                  </div>
-                </div>
-                <div class="steps-3 w-[28%] md:w-[220px] flex flex-col">
-                  <div className="htb-icon w-[86%] mx-auto">
-                    <img
-                      className="w-[90px] mx-auto"
-                      src="/assets/svg/pick-date.svg"
-                    ></img>
-                  </div>
-                  <h3 className="golden-text text-3xl font-bold mt-2 text-center">
-                    3
-                  </h3>
-                  <p className="htb-text-x text-[8px] rm:text-[10px] lm:text-[12px] sm:text-[14px] lg:text-lg text-center  text-gray-700 mt-2  font-medium">
-                    PICK YOUR <br></br>DATE &amp; TIME
-                  </p>
-                </div>
-              </div>
-            </div>
+            <HowtobookSteps />
 
             {/* How to book 3 steps  end*/}
 

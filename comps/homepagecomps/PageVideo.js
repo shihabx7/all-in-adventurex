@@ -4,6 +4,7 @@ import TeaserVideo from "../util/TeaserVideo";
 import { useState } from "react";
 import { FiX } from "react-icons/fi";
 import { ImPlay3 } from "react-icons/im";
+import HowtobookSteps from "./HowtobookSteps";
 
 const bookAll = (bookingData) => {
   FH.open({
@@ -114,60 +115,7 @@ const PageVideo = (props) => {
               ></div>
             </div>
             {/* How to book 3 steps */}
-            <div className="htb-steps flex justify-btween mb-10 md:justify-center items-center max-w-4xl mx-auto">
-              <div className="htb-step">
-                <div className="htb-icon">
-                  <img src="/assets/svg/choose-location.svg"></img>
-                </div>
-                <h3 className="golden-text text-3xl font-bold mt-2">1</h3>
-                <div className="htb-text text-gray-700 mt-2 mb-12 font-medium">
-                  CHOOSE LOCATION
-                </div>
-              </div>
-
-              <div className="htb-step-line">
-                <img
-                  className="hidden md:block"
-                  src="/assets/svg/htb-line-1.svg"
-                ></img>
-                <img
-                  className="md:hidden"
-                  src="/assets/svg/step-line-mb.svg"
-                ></img>
-              </div>
-
-              <div className="htb-step">
-                <div className="htb-icon">
-                  <img src="/assets/svg/select-game.svg"></img>
-                </div>
-                <h3 className="golden-text text-3xl font-bold mt-2">2</h3>
-                <div className="htb-text text-gray-700 mt-2 mb-12 font-medium">
-                  SELECT YOUR GAME
-                </div>
-              </div>
-
-              <div className="htb-step-line">
-                <img
-                  className="hidden md:block"
-                  src="/assets/svg/htb-line-2.svg"
-                ></img>
-                <img
-                  className="md:hidden"
-                  src="/assets/svg/step-line-mb.svg"
-                ></img>
-              </div>
-
-              <div className="htb-step">
-                <div className="htb-icon">
-                  <img src="/assets/svg/pick-date.svg"></img>
-                </div>
-                <h3 className="golden-text text-3xl font-bold mt-2">3</h3>
-                <div className="htb-text  text-gray-700 mt-2 mb-12 font-medium">
-                  PICK <br />
-                  DATE &amp; TIME
-                </div>
-              </div>
-            </div>
+            <HowtobookSteps />
             {/* How to book 3 steps  end*/}
 
             <div className="bg-[#000000] game-video-box pb-[57%] md:pb-[416px] lg:pb-[472px] w-[100%] md:w-[740px] lg:w-[840px] mx-auto shadow-lg relative">

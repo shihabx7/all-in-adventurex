@@ -41,7 +41,7 @@ const HomeHero = (props) => {
             </h1>
             <div
               className="text-gray-100 max-w-[840px] mx-auto text-center lg:text-lg nocopy"
-              dangerouslySetInnerHTML={{ __html: props.pageData.pageSubtitle }}
+              dangerouslySetInnerHTML={{ __html: props.pageData.pageSubTitle }}
             ></div>
           </div>
           <div className="max-w-md mx-auto mt-8 pb-8 ">
