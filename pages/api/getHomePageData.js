@@ -53,8 +53,6 @@ export const getHomePageData = async () => {
   const seoData = pageResData.seo;
   const ftImg = pageResData.pageHeroMobile.data.attributes.url;
 
-  console.log("raw formated");
-  console.log(mt);
   const DATA = {
     locationSlugList: getLocationSlugList(locationListData),
     escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),

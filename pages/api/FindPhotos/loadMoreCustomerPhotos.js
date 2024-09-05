@@ -1,12 +1,12 @@
 import { loadMorePhotoQuery } from "../../../lib/query/findPhotosQuery";
 
 import { apiSetting, apiUrl } from "../../../lib/apiSettings";
-import { getPhotoList } from "../../../lib/findPhotoDataformation";
+import { getPhotoList } from "../../../lib/dataFormation/findPhotoDataFormation";
 
 export default async function loadMoreCustomerPhotos(req, res) {
   const query = req.query;
   const { page } = query;
-  let postOffset = page * 4;
+  let postOffset = page * 8;
 
   const reqUrl =
     apiUrl +

@@ -1,6 +1,7 @@
 import { apiSetting, apiUrl } from "../../../lib/apiSettings";
 import { srcPhotoQuery } from "../../../lib/query/findPhotosQuery";
-import { getSrcPhotoList } from "../../../lib/findPhotoDataformation";
+import { getSrcPhotoList } from "../../../lib/dataFormation/findPhotoDataFormation";
+
 export default async function getPrevBlogs(req, res) {
   const query = req.query;
   const { locationSlug, srcDate } = query;

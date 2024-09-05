@@ -1,15 +1,13 @@
 import { BiMap } from "react-icons/bi";
 import { BiSearch } from "react-icons/bi";
-import { BiHistory } from "react-icons/bi";
+
 import { useState, useEffect, useRef } from "react";
 import AllPhotos from "./AllPhotos";
 import SearchPhotos from "./SearchPhotos";
-import { IoIosUndo } from "react-icons/io";
 
 import {
   FaAngleRight,
   FaAngleDown,
-  FaAngleUp,
   FaUndo,
   FaRegCalendarCheck,
 } from "react-icons/fa";

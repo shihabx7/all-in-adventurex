@@ -1,4 +1,4 @@
-import { apiSetting, apiUrl, mediaUrl } from "../../../lib/apiSettings";
+import { apiSetting, apiUrl } from "../../../lib/apiSettings";
 import {
   locationSlugListQuery,
   allActivitiesSluglistQuery,
@@ -18,10 +18,9 @@ import {
   getPageMeta,
   getPageData,
   getPhotoList,
-  getLocationList,
-} from "../../../lib/findPhotoDataformation";
+} from "../../../lib/dataFormation/findPhotoDataFormation";
 
-export const getCustomersPhotos = async (slug) => {
+export const getFindYourPhotoPageData = async (slug) => {
   // fetch all location list as an array
   const locationListRes = await fetch(locationSlugListQuery, apiSetting);
   const locationListObj = await locationListRes.json();
@@ -42,6 +41,10 @@ export const getCustomersPhotos = async (slug) => {
   const pageRes = await fetch(pageReq, apiSetting);
   const pageObj = await pageRes.json();
   const pageResData = pageObj.data;
+  const pageDS = pageResData.attributes;
+
+  const seoData = pageDS.seo;
+  const ftImg = pageDS.pageHeroMobile.data.attributes.url;
 
   // fetch initial photolist
   const photoReq = apiUrl + allphotoQuery;
@@ -56,7 +59,7 @@ export const getCustomersPhotos = async (slug) => {
     eventSlugList: getAllEventSlugList(eventListResData),
     totalLocations: totalLocations,
 
-    pageMeta: getPageMeta(pageResData),
+    pageMeta: getPageMeta(seoData, ftImg, totalLocations, "find-your-photo"),
     pageData: getPageData(pageResData),
     photoList: getPhotoList(photoesData),
   };

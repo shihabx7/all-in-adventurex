@@ -1,13 +1,14 @@
-import { getCustomersPhotos } from "./api/FindPhotos/getCustomersPhotos";
+import { getFindYourPhotoPageData } from "./api/FindPhotos/getFindYourPhotoPageData";
 import RootNav from "../comps/RootNav";
 import RootFooter from "../comps/RootFooter";
 import FindPhotosHero from "../comps/findPhotos/FindPhotosHero";
-import PageSeo from "../comps/util/PageSeo";
+import SinglePageSeo from "../comps/util/SinglePageSeo";
+
 const FindPhotos = (props) => {
   return (
     <>
       {/* =======header content======== */}
-      <PageSeo meta={props.pageMeta} />
+      <SinglePageSeo meta={props.pageMeta} />
       <RootNav
         locationSlugList={props.locationSlugList}
         escapeGameSlugList={props.escapeGameSlugList}
@@ -20,7 +21,6 @@ const FindPhotos = (props) => {
       <div
         id="mainContent"
         className="main-content nobtn-main-content bg-center"
-        style={{ backgroundImage: "url('/assets/game-dt-bg.jpg')" }}
       >
         {/* =======breadcum content and breadcum root page template======== end */}
 
@@ -47,7 +47,7 @@ const FindPhotos = (props) => {
 
 export default FindPhotos;
 export const getStaticProps = async () => {
-  const DATA = await getCustomersPhotos();
+  const DATA = await getFindYourPhotoPageData();
   //console.log(DATA);
   // console.log(giftpagedataData.redeemgames);
   return {
