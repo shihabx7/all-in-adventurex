@@ -21,6 +21,9 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
   }, []);
 
   const openLightbox = (index) => {
+    let im = images.current[selectedIndex];
+    console.log(index);
+    console.log(im);
     const body = document.getElementsByTagName("body")[0];
     body.classList.add("overflow-hidden");
     setSelectedIndex(index);
@@ -232,8 +235,8 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
               <div className="lb-img  md:max-w-[740px] lg:max-w-[840px] ">
                 <img
                   className="md:max-h-[560px]"
-                  src={images.current[selectedIndex].src}
-                  alt=""
+                  src={imageList[selectedIndex].url}
+                  alt={"allinadventures image" + selectedIndex}
                 />
               </div>
               {/*==============download image============*/}

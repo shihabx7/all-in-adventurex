@@ -67,7 +67,7 @@ const LocationList = (props) => {
           </div>
           <div className="loc-list-tab mx-auto mb-6 md:mb-8 lg:mb-8 relative">
             <div className="indic absolute bottom-full right-0 md:hidden">
-              <div className="h-[30px] w-[30px] text-center bg-[#222222] flex items-center justify-center text-xl text-gold">
+              <div className="h-[24px] w-[24px] text-center bg-zinc-100/20 flex items-center justify-center text-xl text-gold">
                 <span>
                   <FiChevronRight />
                 </span>

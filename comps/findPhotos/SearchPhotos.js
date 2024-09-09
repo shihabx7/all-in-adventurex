@@ -200,8 +200,8 @@ const AllPhotos = ({ photoList, locationName, srcDate, searchDateUs }) => {
               <div className="lb-img  md:max-w-[740px] lg:max-w-[840px] ">
                 <img
                   className="md:max-h-[560px]"
-                  src={images.current[selectedIndex].src}
-                  alt=""
+                  src={imageList[selectedIndex].url}
+                  alt={"allinadventures customer photo" + selectedIndex}
                 />
               </div>
               {/*==============download image============*/}
