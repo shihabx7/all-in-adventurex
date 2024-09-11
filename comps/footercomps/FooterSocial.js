@@ -3,6 +3,7 @@ import {
   FaFacebookSquare,
   FaTwitterSquare,
   FaInstagramSquare,
+  FaYoutubeSquare,
 } from "react-icons/fa";
 const FooterSocial = (props) => {
   return (
@@ -41,6 +42,13 @@ const FooterSocial = (props) => {
           className="text-gray-500 hover:text-gold text-4xl"
         >
           <FaTwitterSquare />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/@allinadventures2557/videos"
+          className="text-gray-500 hover:text-gold text-4xl"
+        >
+          <FaYoutubeSquare />
         </a>
       </div>
     </div>
