@@ -76,18 +76,17 @@ const LocationHeroHours = (props) => {
                 className="w-[24px]"
                 src="/assets/svg/util/store_direction.svg"
               ></img>
+            </div>
+            <div className="inline-elm flex-1">
               <span>
                 <b>Direction: </b>
               </span>
-            </div>
-            <div className="loc-dt-text text-[#232323] flex-1">
-              <div className="flex ">
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: props.locationInfo.direction,
-                  }}
-                ></div>
-              </div>
+              <div
+                className="loc-dt-text text-[#232323] inline"
+                dangerouslySetInnerHTML={{
+                  __html: props.locationInfo.direction,
+                }}
+              ></div>
             </div>
           </div>
         </div>

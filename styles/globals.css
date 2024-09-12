@@ -55,7 +55,9 @@ a {
 .font-cr {
   font-family: "Roboto Condensed", sans-serif;
 }
-
+.inline-elm p {
+  display: inline;
+}
 #header {
   transition: 0.4s ease-in-out;
   z-index: 10000;

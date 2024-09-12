@@ -36,6 +36,7 @@ const LocationDetailsHours = (props) => {
   return (
     <div>
       <div className="loc-info-tbl mt-8">
+        {/**=========== store map */}
         <div className="store-map locinfo-row border-y border-[#D2C6AA] py-2 rm:px-2 lg:py-3">
           <div className="flex space-x-2 md:items-center md:text-lg ">
             <div className="loc-dt-icon  md:w-auto">
@@ -66,29 +67,32 @@ const LocationDetailsHours = (props) => {
             </div>
           </div>
         </div>
-        <div className="direction locinfo-row border-b border-[#D2C6AA] py-2 px-2 lg:py-3">
+        {/**=========== store map ==============*/}
+        {/**=========== direction */}
+        <div className="direction locinfo-row border-b border-[#D2C6AA] py-2 rm:px-2 lg:py-3">
           <div className="flex items-start space-x-2  md:text-lg ">
-            <div className="loc-dt-icon  md:w-auto flex items-center space-x-2">
+            <div className="loc-dt-icon  md:w-auto  items-center space-x-2">
               <img
                 className="w-[24px]"
                 src="/assets/svg/util/store_direction.svg"
               ></img>
+            </div>
+            <div className="inline-elm flex-1">
               <span>
                 <b>Direction: </b>
               </span>
-            </div>
-            <div className="loc-dt-text text-[#232323] flex-1">
-              <div className="flex ">
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: props.locationInfo.direction,
-                  }}
-                ></div>
-              </div>
+              <div
+                className="loc-dt-text text-[#232323] inline"
+                dangerouslySetInnerHTML={{
+                  __html: props.locationInfo.direction,
+                }}
+              ></div>
             </div>
           </div>
         </div>
-        <div className="locinfo-row border-b border-[#D2C6AA] py-2 px-2 lg:py-3">
+        {/**=========== direction============== */}
+        {/**=========== phone and email */}
+        <div className="locinfo-row border-b border-[#D2C6AA] py-2 rm:px-2 lg:py-3">
           <div className="flex  flex-col md:flex-row justify-between md:space-x-1 space-y-2 md:space-y-0 md:items-center md:text-lg ">
             <div className="flex space-x-2 items-center md:w-[50%]">
               <div className="loc-dt-icon">
@@ -131,7 +135,8 @@ const LocationDetailsHours = (props) => {
             </div>
           </div>
         </div>
-        <div className="locinfo-row  py-2 px-2 lg:py-3">
+        {/**=========== phone and email==== */}
+        <div className="locinfo-row  py-2 rm:px-2 lg:py-3">
           <div className="flex  flex-col md:flex-row justify-between md:space-x-1 space-y-2 md:space-y-0 md:items-center md:text-lg ">
             <div className="flex space-x-2 items-center md:w-[50%]">
               <div className="loc-dt-icon">
@@ -161,8 +166,9 @@ const LocationDetailsHours = (props) => {
             </div>
           </div>
         </div>
+        {/**=========== phone and email==== */}
       </div>
-
+      {/**=========== business hours and holiday hours==== */}
       <div className="loc-hrs-tbl flex flex-col  md:flex-row border-y border-[#D2C6AA]">
         <div className="loc-tb-hrs md:min-w-[46%] ">
           <div className="pt-2 pb-2 px-1 md:px-2 md:py-3 lg:px-4 tbl-h border-b border-[#D2C6AA]">
@@ -258,6 +264,7 @@ const LocationDetailsHours = (props) => {
           </div>
         </div>
       </div>
+      {/**=========== business hours and holiday hours end==== */}
     </div>
   );
 };
