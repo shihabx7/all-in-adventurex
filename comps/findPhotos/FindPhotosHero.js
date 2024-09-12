@@ -161,7 +161,7 @@ const FindPhotosHero = (props) => {
           <div className="w-full h-full fyp-baner absolute top-0 left-0 md:hidden "></div>
           <div className="max-w-7xl  mx-auto  md:px-4 absolute top-[34%] lm:top-[39%] xm:top-[42%] sm:top-[50%] left-0 right-0 md:static   z-30 pt-0 md:pt-20  lg:pt-28 2xl:pt-32">
             <div className="page-benar-info ">
-              <p className="leading-[1.2] md:mt-0 font-semibold text-lg md:text-2xl mb-1 text-white text-center">
+              <p className="leading-[1.2] md:mt-0 font-semibold text-lg md:text-2xl text-white text-center">
                 ALL IN ADVENTURES
               </p>
               <h1 className="text-gold aia-shadow font-bold text-center text-3xl md:text-5xl lg:text-6xl mb-2 rm:mb-2 md:mb-4 lg:mb-6 font-os uppercase max-w-[1000px] mx-auto">

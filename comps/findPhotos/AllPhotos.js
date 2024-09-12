@@ -16,14 +16,47 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
   // Get all image elements within the gallery
   const images = useRef([]);
 
+  const fetchData = async () => {
+    let url = "/api/FindPhotos/loadMoreCustomerPhotos?page=" + currentPage;
+    const res = await fetch(url, { method: "GET" });
+    const resObj = await res.json();
+    // console.log(resObj);
+
+    if (!resObj.success) {
+      setisLoading(false);
+      setIsMore(false);
+      return false;
+    }
+    if (resObj.success) {
+      // console.log(resObj);
+      let contactedBlog = imageList.concat(resObj.prevImageList.list);
+      setImageList(contactedBlog);
+      if (!resObj.prevImageList.hasMore) {
+        setIsMore(false);
+      } else {
+        setIsMore(true);
+      }
+
+      return true;
+    }
+  };
+  const showMore = async (event) => {
+    event.preventDefault();
+    setisLoading(true);
+    setIsMore(false);
+    const getPhotoData = await fetchData();
+    if (getPhotoData) {
+      setCurrentPage(currentPage + 1);
+    }
+    setisLoading(false);
+    //console.log(blogData);
+  };
+  // image light box handle
   useEffect(() => {
     images.current = imageRef.current.querySelectorAll("img");
   }, []);
 
   const openLightbox = (index) => {
-    let im = images.current[selectedIndex];
-    console.log(index);
-    console.log(im);
     const body = document.getElementsByTagName("body")[0];
     body.classList.add("overflow-hidden");
     setSelectedIndex(index);
@@ -39,7 +72,8 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
   const handleNavigation = (direction) => {
     if (!isOpen) return;
 
-    const imageCount = images.current.length;
+    const imageCount = imageList.length;
+
     const newIndex = (selectedIndex + imageCount + direction) % imageCount;
     setSelectedIndex(newIndex);
   };
@@ -105,41 +139,6 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, [isOpen]); // Only attach listener when lightbox is open
-  const fetchData = async () => {
-    let url = "/api/FindPhotos/loadMoreCustomerPhotos?page=" + currentPage;
-    const res = await fetch(url, { method: "GET" });
-    const resObj = await res.json();
-    // console.log(resObj);
-
-    if (!resObj.success) {
-      setisLoading(false);
-      setIsMore(false);
-      return false;
-    }
-    if (resObj.success) {
-      // console.log(resObj);
-      let contactedBlog = imageList.concat(resObj.prevImageList.list);
-      setImageList(contactedBlog);
-      if (!resObj.prevImageList.hasMore) {
-        setIsMore(false);
-      } else {
-        setIsMore(true);
-      }
-
-      return true;
-    }
-  };
-  const showMore = async (event) => {
-    event.preventDefault();
-    setisLoading(true);
-    setIsMore(false);
-    const getPhotoData = await fetchData();
-    if (getPhotoData) {
-      setCurrentPage(currentPage + 1);
-    }
-    setisLoading(false);
-    //console.log(blogData);
-  };
   return (
     <>
       <div className="c-all-photos ">
@@ -243,7 +242,7 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
               <div id="dnl" className="absolute bottom-0 left-0 h-0 w-0"></div>
               <button
                 className="absolute top-0 right-0 flex bg-[#2D2D2D] p-1 lg:px-2 lg:py-2 "
-                onClick={() => downloadImage(images.current[selectedIndex].src)}
+                onClick={() => downloadImage(imageList[selectedIndex].src)}
               >
                 <span className="text-[24px] md:text-[28px] lg:text-[32px] 2xl:text-[38px] text-[#D8AF53] hover:text-[#FFD700] ">
                   <MdOutlineFileDownload />

@@ -86,8 +86,6 @@ const AllPhotos = ({ photoList, locationName, srcDate, searchDateUs }) => {
       !closeRef.current.contains(event.target) &&
       !imageRef.current.contains(event.target)
     ) {
-      //console.log(isOpen);
-      //console.log("outside");
       closeLightbox();
     }
   };
@@ -208,7 +206,7 @@ const AllPhotos = ({ photoList, locationName, srcDate, searchDateUs }) => {
               <div id="dnl" className="absolute bottom-0 left-0 h-0 w-0"></div>
               <button
                 className="absolute top-0 right-0 flex bg-[#2D2D2D] p-1 lg:px-2 lg:py-2 "
-                onClick={() => downloadImage(images.current[selectedIndex].src)}
+                onClick={() => downloadImage(imageList[selectedIndex].src)}
               >
                 <span className="text-[24px] md:text-[28px] lg:text-[32px] 2xl:text-[38px] text-[#D8AF53] hover:text-[#FFD700] ">
                   <MdOutlineFileDownload />
