@@ -45,7 +45,7 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
   const locationRes = await fetch(locDataReq, apiSetting);
   const locationObj = await locationRes.json();
   const locationResData = locationObj.data[0].attributes;
-  // console.log(locationResData.locationActivities);
+  //console.log(locationResData);
   // fetch all location list as an array
   const locationListRes = await fetch(locationSlugListQuery, apiSetting);
   const locationListObj = await locationListRes.json();

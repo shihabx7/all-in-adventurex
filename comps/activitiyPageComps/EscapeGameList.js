@@ -122,9 +122,10 @@ const EscapeGameList = (props) => {
                 <h3 className="card-game-title text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-white">
                   {activity.activityName}
                 </h3>
-                <p className="text-gray-200 lg:text-lg mx-auto md:mx-0 max-w-[700px]">
-                  {activity.description}
-                </p>
+                <div
+                  className="text-gray-200 lg:text-lg mx-auto md:mx-0 max-w-[700px]"
+                  dangerouslySetInnerHTML={{ __html: activity.description }}
+                ></div>
               </div>
 
               <div className="card-game-link mt-4 text-left">
