@@ -171,9 +171,12 @@ const OtherGameCarousel = (props) => {
                     <h3 className="card-game-title text-[22px] rm:text-[25px] sm:text-2xl lg:text-3xl xl:text-[28px] 3xl:text-[27px] 4xl:text-3xl font-bold uppercase text-[#E0BF62]">
                       {otherGame.activityName}
                     </h3>
-                    <p className="text-gray-200 text-[13px] rm:text-[15px] lg:text-[16px] 3xl:text-[15px] 4xl:text-[17px]">
-                      {otherGame.description}
-                    </p>
+                    <div
+                      className="text-gray-200 text-[13px] rm:text-[15px] lg:text-[16px] 3xl:text-[15px] 4xl:text-[17px]"
+                      dangerouslySetInnerHTML={{
+                        __html: otherGame.description,
+                      }}
+                    ></div>
                   </div>
 
                   <div className="card-game-link mt-4 flex justify-between text-center">
