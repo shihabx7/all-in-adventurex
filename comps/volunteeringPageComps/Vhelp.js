@@ -26,7 +26,7 @@ const Vhelp = () => {
             <div className="v-gam-list mt-4 md:mt-0">
               <ul className="star-list pl-6">
                 <li className="lg:text-[20px] text-[#464646] my-3 lg:my-4">
-                  Complete the form below to reach out directly to your local
+                  Complete the form above to reach out directly to your local
                   All In Adventures.
                 </li>
                 <li className="lg:text-[20px] text-[#464646] my-3 lg:my-4">

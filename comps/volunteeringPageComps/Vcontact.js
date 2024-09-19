@@ -158,17 +158,19 @@ const Vcontact = (props) => {
   // ========================================================checkLocation validation=================
 
   const checkLocation = (e, data) => {
-    const locName = e.target.value;
+    const locSlug = e.target.value;
 
     let storeEmail = "";
     let managerEmail = "";
-
-    if (locName != "") {
+    let tarLoc = "";
+    //console.log(data);
+    if (locSlug !== "") {
       setErr(false);
       setFormErr({ ...formErr, locErr: false });
 
       for (let i = 0; i < data.length; i++) {
-        if (data[i].locationName == locName) {
+        if (data[i].locationSlug == locSlug) {
+          tarLoc = data[i].locationName;
           storeEmail = data[i].storeEmail;
           managerEmail = data[i].managerEmail;
         }
@@ -176,7 +178,7 @@ const Vcontact = (props) => {
 
       setFieldValue({
         ...fieldVlue,
-        location: locationName,
+        location: tarLoc,
         storeEmail: storeEmail,
         managerEmail: managerEmail,
       });
@@ -201,6 +203,7 @@ const Vcontact = (props) => {
 
   const submitForm = async (event) => {
     event.preventDefault();
+    console.log(fieldVlue);
     //console.log("clicked");
     //console.log(fieldVlue);
     if (!err) {
@@ -251,7 +254,7 @@ const Vcontact = (props) => {
           <div className="contact-form-bg bg-[#F4E6C3] px-4 py-8 md:py-10 md:px-8 lg:p-12 md:rounded">
             {/*==========================================================contact form to book event======================= */}
             <form onSubmit={(event) => submitForm(event)}>
-              {/*======================================contact form row====================== */}
+              {/*======================================contact form row fname+ lname====================== */}
               <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between ">
                 <div className="form-col w-full md:w-[48.5%]">
                   <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">
@@ -286,8 +289,8 @@ const Vcontact = (props) => {
                   </p>
                 </div>
               </div>
-              {/*======================================contact form row====================== */}
-              {/*======================================contact form row====================== */}
+              {/*======================================contact form row ====================== */}
+              {/*======================================contact form row email+phone====================== */}
               <div className="form-row flex flex-col space-y-3 md:flex-row md:space-y-0 justify-between my-3 md:my-4 ">
                 <div className="form-col w-full md:w-[48.5%]">
                   <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">
@@ -321,7 +324,7 @@ const Vcontact = (props) => {
                 </div>
               </div>
               {/*======================================contact form row====================== */}
-              {/*======================================contact form row select event====================== */}
+              {/*======================================contact form row select inquiry type + location====================== */}
               <div className="form-row flex  flex-col space-y-3 md:flex-row  md:space-y-0 justify-between my-3 md:my-4 ">
                 <div className="form-col w-full md:w-[48.5%]">
                   <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">
@@ -361,7 +364,7 @@ const Vcontact = (props) => {
                       <option value="">Your location...</option>
                       {props.locationMailData.map((item, index) => {
                         return (
-                          <option key={index} value={item.locationName}>
+                          <option key={index} value={item.locationSlug}>
                             {item.locationName}
                           </option>
                         );
@@ -414,19 +417,20 @@ const Vcontact = (props) => {
             </p>
 
             <p className="text-[#464646] xl:text-lg mt-1">
-              <span className="font-medium">- Workshop</span> &#40;We help
-              develop a unique program for your organization's goals&#41;
+              <span className="font-medium">- Workshop</span> &#40;Girl/Boy
+              Scouts, Boys and Girls Club, etc.&#41;
             </p>
             <p className="text-[#464646] xl:text-lg mt-1">
               <span className="font-medium">
-                - Neighbor-to-Neighbor Programs{" "}
-              </span>
-              &#40;Partner with us for social events and shared activities&#41;
+                - Neighbor-to-Neighbor Programs
+              </span>{" "}
+              &#40;Connections with other vendors within malls/shopping
+              centers&#41;
             </p>
             <p className="text-[#464646] xl:text-lg mt-1">
               <span className="font-medium">- Space Rental </span>
-              &#40;Host meetings, parties, or other events in our community
-              space&#41;
+              &#40;Donate space such as party rooms to groups who need it such
+              as a pet adoption event&#41;
             </p>
           </div>
         </div>

@@ -40,7 +40,7 @@ const FranchiseHero = (props) => {
                 href={"#" + props.btnId}
                 className="bg-red-600 hover:bg-red-700 rounded-full py-3 px-8 lg:py-4 lg:px-12 max-w-sm block mx-auto text-white text-lg text-center font-medium"
               >
-                {props.label}
+                {props.btnLabel}
               </a>
             ) : (
               <a
