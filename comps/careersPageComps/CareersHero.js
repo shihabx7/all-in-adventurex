@@ -41,7 +41,7 @@ const CareersHero = (props) => {
             )}
             {props.btnLink ? (
               <a
-                href={"/" + props.btnLink}
+                href={props.btnLink}
                 className="block py-3 px-10 bg-red-600 hover:bg-red-700 text-white text-center md:text-lg rounded-full"
               >
                 {props.btnLabel}

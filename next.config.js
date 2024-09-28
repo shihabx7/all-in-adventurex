@@ -1111,8 +1111,45 @@ const waterburyRed = [
 // =========================================-------------east-brunswick-nj NJ
 const eastBrunswickRed = [
   {
+    source: "/locations/east-brunswick-nj",
+    destination: "/locations",
+    permanent: prm,
+  },
+  {
+    source: "/east-brunswick-nj/gift-cards",
+    destination: "/gift-cards",
+    permanent: prm,
+  },
+  {
+    source: "/east-brunswick-nj/contact-store",
+    destination: "/corporate-contact",
+    permanent: prm,
+  },
+  {
+    source: "/east-brunswick-nj/activities",
+    destination: "/activities",
+    permanent: prm,
+  },
+
+  {
+    source: "/east-brunswick-nj/events",
+    destination: "/events",
+    permanent: prm,
+  },
+  {
+    source: "/east-brunswick-nj/activities/:slug*",
+    destination: "/activities/:slug*",
+    permanent: prm,
+  },
+
+  {
+    source: "/east-brunswick-nj/events/:slug*",
+    destination: "/events/:slug*",
+    permanent: prm,
+  },
+  {
     source: "/locations/east-brunswick-nj/events",
-    destination: "/east-brunswick-nj/events",
+    destination: "/events",
     permanent: prm,
   },
   {

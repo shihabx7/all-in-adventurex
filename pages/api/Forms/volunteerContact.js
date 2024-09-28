@@ -55,7 +55,7 @@ export default async function volunteerContactHandler(req, res) {
       //  "," +
       // retData.ManagerEmail,
       // list of receivers
-      bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
+      bcc: "dgency.com@gmail.com",
       // bcc: "shihab.dgency@gmail.com",
       replyTo: retData.Email,
       subject: `Volunteer Contact`,
