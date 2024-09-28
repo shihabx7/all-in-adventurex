@@ -1813,6 +1813,11 @@ const mentorRed = [
 // =========================================------------poughkeepsieRed  ny
 const poughkeepsieRed = [
   {
+    source: "/poughkeepsie-ny/activities/axe-throwing",
+    destination: "/locations/poughkeepsie-ny",
+    permanent: prm,
+  },
+  {
     source: "/locations/poughkeepsie-ny/events",
     destination: "/poughkeepsie-ny/events",
     permanent: prm,
