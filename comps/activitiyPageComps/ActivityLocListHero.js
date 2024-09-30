@@ -122,7 +122,7 @@ const ActivityLocListHero = (props) => {
               <p className="leading-[1.2] md:mt-0 font-semibold text-lg md:text-2xl mb-1 text-white text-center uppercase">
                 AT {props.locationInfo.mall} IN {props.pageData.locationName}
               </p>
-              <h1 className="text-gold aia-shadow font-bold text-center  text-3xl md:text-5xl lg:text-6xl mb-2 rm:mb-2 md:mb-4 lg:mb-6 font-os uppercase max-w-[1024px] mx-auto">
+              <h1 className="text-gold aia-shadow font-bold text-center  text-3xl md:text-5xl lg:text-6xl mb-2 rm:mb-2 md:mb-4 lg:mb-6 font-os uppercase mx-auto">
                 {props.pageData.pageTitle}
               </h1>
               <div
