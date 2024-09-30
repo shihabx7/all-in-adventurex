@@ -64,6 +64,7 @@ const LocationEvents = (props) => {
           />
         )}
         <EventContact
+          locationName={props.locationName}
           locationInfo={props.locationInfo}
           businessHours={props.businessHours}
           holidayHours={props.holidayHours}
