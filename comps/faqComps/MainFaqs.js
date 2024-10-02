@@ -68,8 +68,9 @@ const MainFaqs = ({ faqList }) => {
                 >
                   <div
                     className="product-des red-link"
+                    itemProp="text"
                     dangerouslySetInnerHTML={{
-                      __html: insertMicroDt(item.ans),
+                      __html: item.ans,
                     }}
                   ></div>
                 </div>
