@@ -15,7 +15,7 @@ const HomeHero = (props) => {
             src={props.pageData.pageHeroMobile.url}
           ></img>
         </div>
-        <div className="max-w-[84px] md:max-w-[120px] lg:max-w-[144px] absolute top-[4px] md:top-[26px] lg:top-[46px] left-0 right-[4px] md:right-0 ml-auto md:mx-auto">
+        <div className="theme-img max-w-[84px] md:max-w-[120px] lg:max-w-[144px] absolute top-[4px] md:top-[26px] lg:top-[46px] left-0 right-[4px] md:right-0 ml-auto md:mx-auto">
           <img
             alt={
               props.pageData.themeImage.hasImage

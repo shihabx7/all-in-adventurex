@@ -16,7 +16,11 @@ const AllFaq = (props) => {
       <div className="gift-rt absolute">
         <img src="/assets/Compas-brown.png"></img>
       </div>
-      <div className="max-w-7xl mx-auto relative z-30">
+      <div
+        className="max-w-7xl mx-auto relative z-30"
+        itemScope
+        itemType="https://schema.org/FAQPage"
+      >
         <div className="section-title mb-8 md:mb-12">
           <TitleSeparator
             title="EVERYTHING YOU NEED TO KNOW"
@@ -41,7 +45,7 @@ const AllFaq = (props) => {
                   {group.faqGroupLabel}
                 </h2>
               </div>
-              <div className="faq-box ">
+              <div className="faq-box">
                 <MainFaqs faqList={group.faqs} />
               </div>
             </div>

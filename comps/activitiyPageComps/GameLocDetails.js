@@ -17,7 +17,7 @@ const GameLocDetails = (props) => {
       </div>
 
       {/*======================= boder img end============== */}
-      <div className="content-container-game  pt-[130px] md:pt-28 lg:pt-32  relative z-30">
+      <div className="content-container-game  pt-[160px] md:pt-28 lg:pt-32  relative z-30">
         {/*=========== game story=====*/}
         <div className="game-dt-container storyline-bg relative overflow-x-hidden md:overflow-visible">
           {props.activitydata.story_bg && (
