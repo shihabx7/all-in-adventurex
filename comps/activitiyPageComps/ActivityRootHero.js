@@ -34,7 +34,7 @@ const ActivityRootHero = (props) => {
               <></>
             )}
 
-            <p className="md:mt-4 lg:mt-6 xl:mt-0 font-semibold rm:text-lg md:text-2xl rm:mb-[-5px] xm:mb-1 text-white text-center leading-[1.1]">
+            <p className="md:mt-4 lg:mt-6 xl:mt-0 font-semibold zm:text-lg md:text-2xl rm:mb-[-5px] xm:mb-1 text-white text-center leading-[1.2] uppercase">
               CHOOSE FROM {props.pageData.totalLocations} U.S. LOCATIONS
             </p>
             <h1 className="text-gold aia-shadow font-bold text-center text-2xl rm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl  mb-3 xm:mb-4 md:mb-6 lg:mb-6 font-os uppercase max-w-[1100px] mx-auto">

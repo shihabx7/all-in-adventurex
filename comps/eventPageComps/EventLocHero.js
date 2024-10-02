@@ -112,7 +112,7 @@ const EventLocHero = (props) => {
                 <></>
               )}
 
-              <p className="leading-[1.2] md:mt-0 font-semibold text-lg md:text-2xl mb-1 text-white text-center uppercase">
+              <p className="md:mt-4 lg:mt-6 xl:mt-0 font-semibold zm:text-lg md:text-2xl rm:mb-[-5px] xm:mb-1 text-white text-center leading-[1.2] uppercase">
                 AT {props.locationInfo.mall} IN {props.pageData.locationName}
               </p>
               <h1 className="text-gold aia-shadow font-bold text-center  text-3xl md:text-5xl lg:text-6xl mb-2 rm:mb-2 md:mb-4 lg:mb-6 font-os uppercase max-w-[1024px] mx-auto">
