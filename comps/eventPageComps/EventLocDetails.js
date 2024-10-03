@@ -60,7 +60,7 @@ const EventLocDetails = (props) => {
       </div>
 
       {/**=========================== section content========================= */}
-      <div className="content-container py-16  md:pt-24  lg:pt-28 relative z-20">
+      <div className="content-container pt-24 pb-16  md:pt-24  lg:pt-28 relative z-20">
         {/*===============================event row -1 WHY BOOK A PARTY WITH ALL IN ADVENTURE?================= */}
         <div className="evt-dt-container wbook-bg relative overflow-x-hidden md:overflow-visible mt-16 md:mt-10">
           <div className="st-bg absolute bottom-[44%] right-0 sm:bottom-[20%] md:right-[-30px] md:bottom-[0px] lg:bottom-[-40px] lg:right-[-60px] xl:bottom-[-16%] xl:right-[-80px] 2xl:bottom-[-16%] 4xl:bottom-[-16%]  2xl:right-[100px] 4xl:right-[200px] 5xl:right-[380px]">

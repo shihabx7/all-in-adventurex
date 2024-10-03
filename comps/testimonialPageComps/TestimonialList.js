@@ -27,14 +27,7 @@ const TestimonialList = (props) => {
             </div>
             <div className="main-tes-desc text-center md:text-left bg-black md:w-[60%] px-4 pb-6 pt-[46%] md:py-2 md:px-2">
               <div className="main-tes-rev-star">
-                <span
-                  className="hidden"
-                  itemProp={isClient ? "reviewRating" : undefined}
-                  itemScope={isClient}
-                  itemType={isClient ? "https://schema.org/Rating" : undefined}
-                >
-                  <span itemProp={isClient ? "ratingValue" : undefined}>5</span>
-                </span>
+                <meta itemProp="ratingValue" content="5"></meta>
                 <img
                   itemProp={isClient ? "image" : undefined}
                   className="mx-auto md:mx-0"
