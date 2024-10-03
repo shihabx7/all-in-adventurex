@@ -28,7 +28,7 @@ const EventLocList = (props) => {
       {/*======================= boder img end============== */}
       {/**=================== all event list============*/}
       <div className="all-games-container max-w-7xl mx-auto relative  z-30 pt-[110px] pb-4  md:pt-20 lg:pt-28 px-4">
-        <div className="all-gamelist-box pt-8 grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
+        <div className="all-gamelist-box pt-12 md:pt-8 grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
           <div className="section-title  text-center max-w-[840px] mx-auto">
             <TitleSeparator title={props.eventListData.title} />
             <div

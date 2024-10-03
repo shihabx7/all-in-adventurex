@@ -14,7 +14,7 @@ const EscapeGameList = (props) => {
   return (
     <div
       id="real-life-escape-games"
-      className="pt-20 all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8"
+      className="pt-12 md:pt-8 all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8"
     >
       <div className="section-title text-center max-w-[800px] mx-auto">
         <TitleSeparator title={props.escapeGames.title} />

@@ -11,6 +11,7 @@ const TestimonialList = (props) => {
       {props.testimonialsList.map((testimonial, index) => {
         return (
           <div
+            itemProp={isClient ? "itemReviewed" : undefined}
             itemScope={isClient}
             itemType={isClient ? "https://schema.org/Game" : undefined}
             key={index + 1}
@@ -26,6 +27,14 @@ const TestimonialList = (props) => {
             </div>
             <div className="main-tes-desc text-center md:text-left bg-black md:w-[60%] px-4 pb-6 pt-[46%] md:py-2 md:px-2">
               <div className="main-tes-rev-star">
+                <span
+                  className="hidden"
+                  itemProp={isClient ? "reviewRating" : undefined}
+                  itemScope={isClient}
+                  itemType={isClient ? "https://schema.org/Rating" : undefined}
+                >
+                  <span itemProp={isClient ? "ratingValue" : undefined}>5</span>
+                </span>
                 <img
                   itemProp={isClient ? "image" : undefined}
                   className="mx-auto md:mx-0"
@@ -44,25 +53,17 @@ const TestimonialList = (props) => {
               >
                 {testimonial.description}
               </p>
-              <p
-                className="text-[#AFAFAF] mt-4"
-                itemProp={isClient ? "author" : undefined}
-                itemScope={isClient}
-                itemType={isClient ? "https://schema.org/Person" : undefined}
-              >
-                <span itemProp={isClient ? "name" : undefined}>
-                  {testimonial.author}
+              <p className="text-[#AFAFAF] mt-4">
+                <span
+                  itemProp={isClient ? "author" : undefined}
+                  itemScope={isClient}
+                  itemType={isClient ? "https://schema.org/Person" : undefined}
+                >
+                  <span itemProp={isClient ? "name" : undefined}>
+                    {testimonial.author}
+                  </span>
                 </span>
               </p>
-
-              <span
-                className="hidden"
-                itemProp={isClient ? "reviewRating" : undefined}
-                itemScope={isClient}
-                itemType={isClient ? "https://schema.org/Rating" : undefined}
-              >
-                <span itemProp={isClient ? "ratingValue" : undefined}>5</span>
-              </span>
             </div>
           </div>
         );
