@@ -28,11 +28,7 @@ const TestimonialSection = (props) => {
       {/*======================= boder img end============== */}
       {/*===================all  testimonils group======================== */}
       {props.testimonialsGroup.length > 0 ? (
-        <div
-          className="secttion-container max-w-7xl mx-auto py-16 md:py-20 lg:py-28 px-4 relative z-30"
-          itemScope
-          itemType="https://schema.org/Review"
-        >
+        <div className="secttion-container max-w-7xl mx-auto py-16 md:py-20 lg:py-28 px-4 relative z-30">
           {props.testimonialsGroup.map((group, index) => {
             return (
               <div
@@ -47,13 +43,22 @@ const TestimonialSection = (props) => {
                   <p className="text-lg text-[#938056] text-center">
                     TESTIMONIALS
                   </p>
-                  <TitleSeparator title={group.groupTitle} />
+                  <TitleSeparator
+                    title={group.groupTitle}
+                    setMicroData={true}
+                  />
                   <div
                     className="text-gray-700 md:px-8 md:text-lg mt-2 md:mt-4"
                     dangerouslySetInnerHTML={{ __html: group.groupSubtitle }}
                   ></div>
                 </div>
-                <TestimonialList testimonialsList={group.testimonialsList} />
+                <div
+                  className="rv-group"
+                  itemScope
+                  itemType="https://schema.org/Review"
+                >
+                  <TestimonialList testimonialsList={group.testimonialsList} />
+                </div>
                 <div className="flex justify-center mt-3 md:mt-6">
                   <PageLink
                     link={group.groupLink}

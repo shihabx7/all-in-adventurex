@@ -48,7 +48,7 @@ const ActivityRootListHero = (props) => {
             {/*============location search btn==========*/}
           </div>
         </div>
-        <div className="game-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[95%]  xm:max-w-[92%] mx-auto md:max-w-3xl absolute bottom-[-11%] rm:bottom-[-11%] lm:bottom-[-10%] zm:bottom-[-10%] sm:bottom-[-9%] md:bottom-[-8%] left-0 right-0  bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded z-30">
+        <div className="game-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[95%]  xm:max-w-[92%] mx-auto md:max-w-3xl absolute bottom-[-11%] rm:bottom-[-11%] lm:bottom-[-10%] zm:bottom-[-10%] sm:bottom-[-9%] md:bottom-[-8%] left-0 right-0  bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded z-40">
           <div className="flex flex-wrap w-full justify-center md:grid md:grid-cols-5  md:justify-evenly items-center ">
             <div className="text-center w-[33%] md:w-auto">
               <div className=" ">
