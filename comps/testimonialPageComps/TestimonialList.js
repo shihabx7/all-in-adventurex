@@ -5,11 +5,15 @@ const TestimonialList = (props) => {
         return (
           <div
             key={index + 1}
+            itemProp="itemReviewed"
+            itemScope
+            itemType="https://schema.org/Game"
             className="drop-shadow-lg md:bg-black flex flex-col md:flex-row md:space-x-2 lg:space-x-4 my-8 items-center justify-between"
           >
             <div className="main-tes-img px-4 md:px-0 md:w-[39%] mb-[-40%] md:mb-0 relative z-30">
               <img
                 className="w-full"
+                itemProp="image"
                 src={testimonial.testimonialImage.url}
                 alt={testimonial.testimonialImage.alt}
               ></img>
@@ -20,6 +24,14 @@ const TestimonialList = (props) => {
                   className="mx-auto md:mx-0"
                   src="/assets/reviews/rev-5star.svg"
                 ></img>
+                <span
+                  itemprop="reviewRating"
+                  itemscope
+                  itemtype="https://schema.org/Rating"
+                  className="hidden"
+                >
+                  <span itemprop="ratingValue">5</span>
+                </span>
               </div>
               <h2 className="text-white font-medium text-[20px] md:text-[24px] mb-2">
                 {testimonial.title}
@@ -27,7 +39,14 @@ const TestimonialList = (props) => {
               <p className="text-gold italic font-cr">
                 {testimonial.description}
               </p>
-              <p className="text-[#AFAFAF] mt-4">{testimonial.author}</p>
+              <p
+                className="text-[#AFAFAF] mt-4"
+                itemProp="author"
+                itemScope
+                itemType="https://schema.org/Person"
+              >
+                <span itemProp="name">{testimonial.author} </span>
+              </p>
             </div>
           </div>
         );

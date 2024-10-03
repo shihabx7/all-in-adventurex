@@ -28,7 +28,11 @@ const TestimonialSection = (props) => {
       {/*======================= boder img end============== */}
       {/*===================all  testimonils group======================== */}
       {props.testimonialsGroup.length > 0 ? (
-        <div className="secttion-container max-w-7xl mx-auto py-16 md:py-20 lg:py-28 px-4 relative z-30">
+        <div
+          className="secttion-container max-w-7xl mx-auto py-16 md:py-20 lg:py-28 px-4 relative z-30"
+          itemScope
+          itemType="https://schema.org/Review"
+        >
           {props.testimonialsGroup.map((group, index) => {
             return (
               <div
