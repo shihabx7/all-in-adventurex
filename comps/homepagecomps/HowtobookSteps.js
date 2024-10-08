@@ -6,6 +6,7 @@ const HowtobookSteps = () => {
           <div className="htb-icon text-center w-[86%] mx-auto">
             <img
               className="w-[90px] mx-auto"
+              alt="A lock and a location symbol representing the location of All In Adventures Escape Rooms."
               src="/assets/svg/choose-location.svg"
             ></img>
           </div>
@@ -32,6 +33,7 @@ const HowtobookSteps = () => {
           <div className="htb-icon text-center w-[86%] mx-auto">
             <img
               className="w-[90px] mx-auto"
+              alt="Two keys representing the escape room games at All In Adventures."
               src="/assets/svg/select-game.svg"
             ></img>
           </div>
@@ -58,6 +60,7 @@ const HowtobookSteps = () => {
           <div className="htb-icon w-[86%] mx-auto">
             <img
               className="w-[90px] mx-auto"
+              alt="A table clock icon showing the date and time of booking an escape room game at All In Adventures."
               src="/assets/svg/pick-date.svg"
             ></img>
           </div>
