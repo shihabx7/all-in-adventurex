@@ -30,7 +30,7 @@ const About = () => {
             <div className="abt-notice mt-4 md:mt-6 lg:mt-8">
               <div className="flex  lg:text-lg text-[#464646] mt-4 justify-between">
                 <div className="mt-[6px] -[20px] lg:w-[24px]">
-                  <img src="/assets/svg/star-bullet.svg"></img>
+                  <img alt="Star icon" src="/assets/svg/star-bullet.svg"></img>
                 </div>
                 <div className="w-[92%]">
                   <span className="font-medium">Escape Room:</span> Can you and
