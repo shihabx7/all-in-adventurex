@@ -138,7 +138,7 @@ const EventContact = (props) => {
             <p className="text-gray-200 md:px-8 md:text-lg mt-8">
               Need a custom quote, mega event info, or just want to chat about
               your event? This contact form is your magic portal! Groups under
-              10? We've got you covered with options 1 & 2!
+              10? We've got you covered with options 1, 2 & 3!
             </p>
           </div>
           {/**==========Section Title end============ */}

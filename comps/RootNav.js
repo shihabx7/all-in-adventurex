@@ -5,7 +5,7 @@ import HeaderLocMenu from "./headerComps/HeaderLocMenu";
 import DropDownMenu from "./headerComps/DropDownMenu";
 import EventBookingBtn from "./headerComps/EventBookingBtn";
 import GameBookingBtn from "./headerComps/GameBookingBtn";
-
+import HeaderNotice from "./headerComps/HeaderNotice";
 import LocationMenuBtnHeader from "./util/LocationMenuBtnHeader";
 
 const RootNav = (props) => {
@@ -58,6 +58,7 @@ const RootNav = (props) => {
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">
         <div id="header-container-s" className="header-container-s">
+          {<HeaderNotice />}
           <div
             className="header-container-s max-w-7xl mx-auto relative md:px-4"
             ref={ref}
