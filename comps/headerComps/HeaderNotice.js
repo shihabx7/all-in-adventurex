@@ -27,8 +27,8 @@ const HeaderNotice = () => {
           <div className="header-notice-box flex justify-between items-center fex space-x-2 md:space-x-2  px-2  md:px-4">
             <div className="header-notice-text items-center">
               <div className="text-white  text-[11px] sm:text-sm  text-center font-light">
-                To finalize your booking, you'll be redirected to our secure
-                booking platform, fareharbor.com
+                To complete your booking, you'll be redirected to our booking
+                site, fareharbor.com
               </div>
             </div>
             <div className="header-notice-close flex items-center">

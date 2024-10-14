@@ -52,11 +52,7 @@ const TestimonialSection = (props) => {
                     dangerouslySetInnerHTML={{ __html: group.groupSubtitle }}
                   ></div>
                 </div>
-                <div
-                  className="rv-group"
-                  itemScope
-                  itemType="https://schema.org/Review"
-                >
+                <div>
                   <TestimonialList testimonialsList={group.testimonialsList} />
                 </div>
                 <div className="flex justify-center mt-3 md:mt-6">

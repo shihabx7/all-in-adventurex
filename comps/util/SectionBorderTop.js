@@ -4,10 +4,12 @@ const SectionBorderTop = () => {
       {/*======================= boder img============== */}
       <img
         className="w-full hidden md:block"
+        alt="Allinadventures decorative border top"
         src="/assets/svg/pattern/Light-Brown-Color-BG-Top.svg"
       ></img>
       <img
         className="w-full rotate-180 md:hidden"
+        alt="Allinadventures decorative border top mobile"
         src="/assets/svg/pattern/light-brown-color-bg-mobile.svg"
       ></img>
       {/*======================= boder img end============== */}
