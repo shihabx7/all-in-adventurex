@@ -42,6 +42,7 @@ const LocationDetailsHours = (props) => {
             <div className="loc-dt-icon  md:w-auto">
               <img
                 className="w-[24px]"
+                alt="A location symbol showing the location of the store of All In Adventures."
                 src="/assets/svg/event-icon-pin.svg"
               ></img>
             </div>
@@ -74,6 +75,7 @@ const LocationDetailsHours = (props) => {
             <div className="loc-dt-icon  md:w-auto  items-center space-x-2">
               <img
                 className="w-[24px]"
+                alt="A location symbol over a home symbol showing the direction to the store of All In Adventures."
                 src="/assets/svg/util/store_direction.svg"
               ></img>
             </div>
@@ -98,6 +100,7 @@ const LocationDetailsHours = (props) => {
               <div className="loc-dt-icon">
                 <img
                   className="w-[24px]"
+                  alt="A phone icon showing the contact number of the store of All In Adventures."
                   src="/assets/svg/util/event-icon-phone.svg"
                 ></img>
               </div>
@@ -116,6 +119,7 @@ const LocationDetailsHours = (props) => {
               <div className="loc-dt-icon">
                 <img
                   className="w-[24px]"
+                  alt="A mail icon showing the email address of the store of All In Adventures."
                   src="/assets/svg/event-icon-email.svg"
                 ></img>
               </div>
@@ -142,6 +146,7 @@ const LocationDetailsHours = (props) => {
               <div className="loc-dt-icon">
                 <img
                   className="w-[24px]"
+                  alt="The letter P is inside a circle, representing the place where the store of All In Adventures is situated."
                   src="/assets/svg/event-icon-parking.svg"
                 ></img>
               </div>
@@ -153,6 +158,7 @@ const LocationDetailsHours = (props) => {
               <div className="loc-dt-icon">
                 <img
                   className="w-[24px]"
+                  alt="A wheelchair icon, showing wheelchair accessibility in the escape rooms at All In Adventures."
                   src="/assets/svg/event-icon-chair.svg"
                 ></img>
               </div>
