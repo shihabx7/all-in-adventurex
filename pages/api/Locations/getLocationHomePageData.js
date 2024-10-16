@@ -42,7 +42,13 @@ export const getLocationHomePageData = async (slug) => {
   const locationListobj = await locationListRes.json();
   const locationListArr = locationListobj.data;
   const totalLocations = 22;
-
+  const tm = getPageMeta(
+    seoData,
+    pageResData.pageHeroData.pageHeroMobile.data.attributes.url,
+    pageResData.pageHeroData.pageSubTitle
+  );
+  // console.log("Seo" + JSON.stringify(seoData));
+  // console.log("Meta : " + JSON.stringify(tm));
   const DATA = {
     locationSlugList: getLocationSlugList(locationListArr),
 
