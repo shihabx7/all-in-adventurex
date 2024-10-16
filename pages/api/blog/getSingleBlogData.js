@@ -254,26 +254,36 @@ const getRelatedBlogs = async (catArr, postSlug, qString) => {
   return retPostArr;
 };
 
-const getSocialMeta = (socialNetworkName, metaArr, ftImg, metaTitle) => {
+const getMetaHash = (tags, socialNetworkName) => {
+  let retTags = tags.trim();
+  if (socialNetworkName == "Facebook") {
+    let stag = tags.trim().split(",");
+    retTags = stag[0].trim();
+  }
+  return retTags;
+};
+const getSocialMeta = (socialNetworkName, metaObj, ftImg, metaTitle) => {
   let retObj = {
     title: false,
     description: false,
     hashTags: false,
     imageUrl: false,
   };
-  for (let i = 0; i < metaArr.length; i++) {
-    if (metaArr[i].socialNetwork == socialNetworkName) {
-      retObj.title = metaArr[i].title != null ? metaArr[i].title : metaTitle;
-      retObj.description =
-        metaArr[i].description != null ? metaArr[i].description : false;
-      retObj.hashTags =
-        metaArr[i].hashTags != null ? metaArr[i].hashTags : false;
-      retObj.imageUrl =
-        metaArr[i].image.data != null
-          ? process.env.APP_API_MEDIA_URL + metaArr[i].image.data.attributes.url
-          : process.env.APP_API_MEDIA_URL + ftImg;
-    }
+
+  if (metaObj !== null) {
+    retObj.title = metaObj.title !== null ? metaObj.title : metaTitle;
+    retObj.description =
+      metaObj.description !== null ? metaObj.description : false;
+    retObj.hashTags =
+      metaObj.hashTags !== null
+        ? getMetaHash(metaObj.hashTags, socialNetworkName)
+        : false;
+    retObj.imageUrl =
+      metaObj.image.data !== null
+        ? process.env.APP_API_MEDIA_URL + metaObj.image.data.attributes.url
+        : process.env.APP_API_MEDIA_URL + ftImg;
   }
+
   return retObj;
 };
 export const getSingleBlogData = async (slug) => {
@@ -310,26 +320,28 @@ export const getSingleBlogData = async (slug) => {
 
     pagemeta: {
       title:
-        seoData.metaTitle != null
+        seoData.metaTitle !== null
           ? seoData.metaTitle
           : blogResData.attributes.title,
       description:
-        seoData.metaDescription != null
+        seoData.metaDescription !== null
           ? seoData.metaDescription
           : getPlaintext(blogResData.attributes.excerpt),
       keywords:
-        seoData.keywords != null
+        seoData.keywords !== null
           ? seoData.keywords
           : "Escape room blog,Escape game blog,Allinadventure blog,Escape game blog, Mystery room blog",
       url: "/blog/" + blogResData.attributes.slug,
-      metaRobot: seoData.metaRobots != null ? seoData.metaRobots : "all",
+      metaRobot: seoData.metaRobots !== null ? seoData.metaRobots : "all",
       structuredData:
-        seoData.structuredData != null ? seoData.structuredData : false,
+        seoData.structuredData !== null ? seoData.structuredData : false,
       canonicalURL:
-        seoData.canonicalURL != null ? seoData.canonicalURL : "/blog",
+        seoData.canonicalURL !== null
+          ? seoData.canonicalURL
+          : "/blog/" + blogResData.attributes.slug,
       metaindex: true,
       metaimg:
-        seoData.metaImage.data.attributes.url != null
+        seoData.metaImage.data.attributes.url !== null
           ? process.env.APP_API_MEDIA_URL +
             seoData.metaImage.data.attributes.url
           : process.env.APP_API_MEDIA_URL +
