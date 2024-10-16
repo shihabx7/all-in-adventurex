@@ -10,7 +10,7 @@ const FooterCopy = (props) => {
   return (
     <div className="copy-text text-center py-8">
       <p className="text-[#858585] text-xs md:text-base">
-        Copyright &copy; {copyDtae} by All In Adventures | All Rights Reserved
+        &copy; {copyDtae} All In Adventures | All Rights Reserved
       </p>
       <div className="term-policy flex justify-center space-x-2 items-center mt-2">
         <a
