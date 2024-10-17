@@ -32,6 +32,7 @@ function GiftHeroBtn({ giftBooking, setShowGiftBookingList }) {
           <img
             className="w-[76px] h-[76px]"
             src="/assets/gift-images/hero/Gift-box-icon-for-Primary-CTA.svg"
+            alt="Icon of a gift box, symbolizing adventure and excitement, featuring a decorative ribbon and a vibrant design."
           ></img>
         </div>
       </button>

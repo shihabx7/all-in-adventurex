@@ -32,10 +32,16 @@ function GiftBigBtn({ title, giftBooking, setShowGiftBookingList }) {
           {title ? title : "BUY GIFT CARDS"}
 
           <div className="left-art absolute top-[-8px] left-[-14px] z-[0]">
-            <img src="/assets/gift-images/usp/gift-button-left-side-artwork.svg"></img>
+            <img
+              alt="Artwork of an escape room gift box featuring intriguing designs and elements that evoke adventure and mystery."
+              src="/assets/gift-images/usp/gift-button-left-side-artwork.svg"
+            ></img>
           </div>
           <div className="right-art absolute top-[-8px] right-[-14px] z-0]">
-            <img src="/assets/gift-images/usp/gift-button-right-side-artwork.svg"></img>
+            <img
+              alt="Escape room gift box artwork, designed with engaging visuals that reflect themes of adventure and problem-solving challenges."
+              src="/assets/gift-images/usp/gift-button-right-side-artwork.svg"
+            ></img>
           </div>
         </button>
       </div>

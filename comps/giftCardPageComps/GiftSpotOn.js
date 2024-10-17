@@ -22,6 +22,7 @@ function GiftSpotOn(props) {
                 <img
                   className=" w-[60px] md:w-[68px] 2xl:w-[75px]"
                   src="/assets/gift-images/usp/usp-gift-box.svg"
+                  alt="An escape room gift box containing engaging puzzles and clues, perfect for an immersive adventure experience."
                 ></img>
               </div>
               <div className="bg-or p-4 absolute z-[10] w-full h-full top-0 left-0 ">
@@ -30,12 +31,14 @@ function GiftSpotOn(props) {
                     <img
                       className=""
                       src="/assets/gift-images/usp/usp-box-confetti-for-top-and-bottom.svg"
+                      alt="A vibrant gift box overflowing with confetti, symbolizing the thrill of an escape room challenge."
                     ></img>
                   </div>
                   <div className="gs-box-bottom-riboon absolute bottom-[-16px] left-0 right-0 mx-auto max-w-[92%]">
                     <img
                       className=""
                       src="/assets/gift-images/usp/usp-box-confetti-for-top-and-bottom.svg"
+                      alt="An escape room gift box containing engaging puzzles and clues, perfect for an immersive adventure experience."
                     ></img>
                   </div>
                 </div>
@@ -57,6 +60,7 @@ function GiftSpotOn(props) {
                 <img
                   className=" w-[60px] md:w-[68px] 2xl:w-[75px]"
                   src="/assets/gift-images/usp/usp-gift-box.svg"
+                  alt="An escape room gift box containing engaging puzzles and clues, perfect for an immersive adventure experience."
                 ></img>
               </div>
               <div className="bg-or p-4 absolute z-[10] w-full h-full top-0 left-0 ">
@@ -65,12 +69,14 @@ function GiftSpotOn(props) {
                     <img
                       className=""
                       src="/assets/gift-images/usp/usp-box-confetti-for-top-and-bottom.svg"
+                      alt="A vibrant gift box overflowing with confetti, symbolizing the thrill of an escape room challenge."
                     ></img>
                   </div>
                   <div className="gs-box-bottom-riboon absolute bottom-[-16px] left-0 right-0 mx-auto max-w-[92%]">
                     <img
                       className=""
                       src="/assets/gift-images/usp/usp-box-confetti-for-top-and-bottom.svg"
+                      alt="An escape room gift box containing engaging puzzles and clues, perfect for an immersive adventure experience."
                     ></img>
                   </div>
                 </div>
@@ -93,6 +99,7 @@ function GiftSpotOn(props) {
                   <img
                     className=" w-[60px] md:w-[68px] 2xl:w-[75px]"
                     src="/assets/gift-images/usp/usp-gift-box.svg"
+                    alt="An escape room gift box containing engaging puzzles and clues, perfect for an immersive adventure experience."
                   ></img>
                 </div>
                 <div className="bg-or p-4 absolute z-[10] w-full h-full top-0 left-0 ">
@@ -101,12 +108,14 @@ function GiftSpotOn(props) {
                       <img
                         className=""
                         src="/assets/gift-images/usp/usp-box-confetti-for-top-and-bottom.svg"
+                        alt="A vibrant gift box overflowing with confetti, symbolizing the thrill of an escape room challenge."
                       ></img>
                     </div>
                     <div className="gs-box-bottom-riboon absolute bottom-[-16px] left-0 right-0 mx-auto max-w-[92%]">
                       <img
                         className=""
                         src="/assets/gift-images/usp/usp-box-confetti-for-top-and-bottom.svg"
+                        alt="An escape room gift box containing engaging puzzles and clues, perfect for an immersive adventure experience."
                       ></img>
                     </div>
                   </div>

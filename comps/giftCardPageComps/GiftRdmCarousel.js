@@ -99,6 +99,7 @@ const GiftRdmCarousel = (props) => {
                     <img
                       className="max-w-[120px] mx-auto"
                       src="/assets/gift-images/escape-room-tag.png"
+                      alt="An engaging escape room tag from All In Adventures, showcasing a logo that represents thrilling puzzle-solving experiences."
                     ></img>
                   </div>
                   <div className="card-game-descs text-center">

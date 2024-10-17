@@ -23,14 +23,17 @@ function GiftEffect(props) {
                   <img
                     className="gift-ribbon absolute bottom-[4px] left-0 right-0 max-w-[90%] mx-auto"
                     src="/assets/gift-images/effect/Confetti-bottom.svg"
+                    alt="Escape room gift card from All In Adventures, decorated with festive confetti, a perfect present for adventure seekers."
                   ></img>
                   <img
                     className="gift-ribbon absolute bottom-[8px] left-[8px] right-0 max-w-[44px] "
                     src="/assets/gift-images/effect/Rocket-left.svg"
+                    alt="rocket icon"
                   ></img>
                   <img
                     className="gift-ribbon absolute  bottom-0 right-0 max-w-[50px] "
                     src="/assets/gift-images/effect/Ballon-right.svg"
+                    alt="Gift card for All In Adventures escape room featuring a colorful balloon design, perfect for thrilling experiences."
                   ></img>
                 </div>
               </div>
@@ -39,8 +42,8 @@ function GiftEffect(props) {
                 <div className="geft-img">
                   <img
                     className="rounded-[30px]"
-                    alt="all in adventure dubbed a gift genius"
                     src="/assets/gift-images/effect/all-in-adventure-dubbed-agift-genius.jpg"
+                    alt="All In Adventures escape room gift card, ideal for fun challenges and memorable group experiences."
                   ></img>
                 </div>
                 <div className="geft-content mt-2">
@@ -59,6 +62,7 @@ function GiftEffect(props) {
                   <img
                     className="w-[150px] mx-auto"
                     src="/assets/gift-images/effect/five-star.svg"
+                    alt="Five star icon"
                   ></img>
                   <p className="text-center text-[#A17F47] mt-1">Andrea B.</p>
                 </div>
@@ -76,14 +80,17 @@ function GiftEffect(props) {
                   <img
                     className="gift-ribbon absolute bottom-[4px] left-0 right-0 max-w-[90%] mx-auto"
                     src="/assets/gift-images/effect/Confetti-bottom.svg"
+                    alt="All In Adventures escape room gift card adorned with vibrant confetti, ideal for gifting an exciting adventure."
                   ></img>
                   <img
                     className="gift-ribbon absolute bottom-[8px] left-[8px] right-0 max-w-[44px] "
                     src="/assets/gift-images/effect/Rocket-left.svg"
+                    alt="Rocket icon"
                   ></img>
                   <img
                     className="gift-ribbon absolute  bottom-0 right-0 max-w-[50px] "
                     src="/assets/gift-images/effect/Ballon-right.svg"
+                    alt="Gift card for All In Adventures escape room featuring a colorful balloon design, perfect for thrilling experiences."
                   ></img>
                 </div>
               </div>
@@ -92,8 +99,8 @@ function GiftEffect(props) {
                 <div className="geft-img">
                   <img
                     className="rounded-[30px]"
-                    alt="all in adventure stress free gifting"
                     src="/assets/gift-images/effect/all-in-adventure-stress-free-gifting.jpg"
+                    alt="A vibrant image capturing the essence of stress-free gifting, featuring adventurous moments filled with joy and togetherness."
                   ></img>
                 </div>
                 <div className="geft-content mt-2">
@@ -112,6 +119,7 @@ function GiftEffect(props) {
                   <img
                     className="w-[150px] mx-auto"
                     src="/assets/gift-images/effect/five-star.svg"
+                    alt="Five star icon"
                   ></img>
                   <p className="text-center text-[#A17F47] mt-1">Suzana V.</p>
                 </div>

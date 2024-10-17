@@ -54,7 +54,7 @@ const ActivityPageSeo = (props) => {
       />
       <meta
         property="og:url"
-        content={props.meta.url ? siteURL + props.meta.url : siteURL}
+        content={props.meta.url ? props.meta.url : siteURL}
       />
       <meta
         property="og:site_name"

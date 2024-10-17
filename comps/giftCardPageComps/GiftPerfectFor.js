@@ -18,6 +18,7 @@ function GiftPerfectFor(props) {
                 <img
                   className=" w-[64px] md:w-[66px] lg:w-[80px]"
                   src="/assets/gift-images/ocassion/ocassion-ribbon.png"
+                  alt="A beautifully wrapped gift adorned with a vibrant ribbon, perfect for any special occasion."
                 ></img>
               </div>
               {/* =======card bg images========  */}
@@ -26,30 +27,37 @@ function GiftPerfectFor(props) {
                   <img
                     className="absolute top-[60px] md:top-[72px] left-[8px] md:left-[20px] w-[60px] md:w-[60px] lg:w-[66px] "
                     src="/assets/gift-images/ocassion/Confetti-left.svg"
+                    alt="Colorful confetti scattered around a gift box, symbolizing celebration and joy in a festive setting."
                   ></img>
                   <img
                     className="absolute top-[0px] right-[16%] lg:right-[25%] h-[48%]  md:h-[99%] "
                     src="/assets/gift-images/ocassion/Confetti-under-the-image.svg"
+                    alt="Colorful confetti scattered around a gift box, symbolizing celebration and joy in a festive setting."
                   ></img>
                   <img
                     className="absolute md:hidden w-[90%] md:w-[80px]  bottom-[10px] left-[0] right-[0] mx-auto "
                     src="/assets/gift-images/ocassion/Confetti-top-and-bottom-for-mobile.svg"
+                    alt="Colorful confetti scattered around a gift box, symbolizing celebration and joy in a festive setting."
                   ></img>
                   <img
                     className="tl-ribbon absolute bottom-[16px] left-[20px] md:bottom-[16px] lg:bottom-[16px] md:left-[5%]  z-20 max-w-[30px] md:max-w-[24px] lg:max-w-[40px]"
                     src="/assets/gift-images/hero/Star-1.png"
+                    alt="star icon"
                   ></img>
                   <img
                     className="tl-ribbon absolute top-[6%] md:top-[24%] left-[50%]  z-20 max-w-[20px] md:max-w-[24px] lg:max-w-[30px]"
                     src="/assets/gift-images/hero/Star-2.png"
+                    alt="star icon"
                   ></img>
                   <img
                     className="tl-ribbon absolute top-[16px] left-[88%] md:top-[20px] md:left-[36%]  z-20 max-w-[28px] md:max-w-[24px] lg:max-w-[30px]"
                     src="/assets/gift-images/hero/Star-3.png"
+                    alt="star icon"
                   ></img>
                   <img
                     className="tl-ribbon absolute bottom-[20px] left-[88%] md:bottom-30px] md:left-[40%]  z-20 max-w-[30px] md:max-w-[28px] lg:max-w-[40px]"
                     src="/assets/gift-images/hero/Star-4.png"
+                    alt="star icon"
                   ></img>
                 </div>
               </div>
@@ -93,6 +101,7 @@ function GiftPerfectFor(props) {
                 <img
                   className=" w-[64px] md:w-[66px] lg:w-[80px]"
                   src="/assets/gift-images/ocassion/ocassion-ribbon.png"
+                  alt="A beautifully wrapped gift adorned with a vibrant ribbon, perfect for any special occasion."
                 ></img>
               </div>
               {/* =======card bg images========  */}
@@ -101,30 +110,37 @@ function GiftPerfectFor(props) {
                   <img
                     className="absolute top-[60px] md:top-[72px] left-[8px] md:left-[20px] w-[60px] md:w-[60px] lg:w-[66px] "
                     src="/assets/gift-images/ocassion/Confetti-left.svg"
+                    alt="Colorful confetti scattered around a gift box, symbolizing celebration and joy in a festive setting."
                   ></img>
                   <img
                     className="absolute top-[0px] right-[16%] lg:right-[25%] h-[48%]  md:h-[99%] "
                     src="/assets/gift-images/ocassion/Confetti-under-the-image.svg"
+                    alt="Colorful confetti scattered around a gift box, symbolizing celebration and joy in a festive setting."
                   ></img>
                   <img
                     className="absolute md:hidden w-[90%] md:w-[80px]  bottom-[10px] left-[0] right-[0] mx-auto "
                     src="/assets/gift-images/ocassion/Confetti-top-and-bottom-for-mobile.svg"
+                    alt="Colorful confetti scattered around a gift box, symbolizing celebration and joy in a festive setting."
                   ></img>
                   <img
                     className="tl-ribbon absolute bottom-[16px] left-[20px] md:bottom-[16px] lg:bottom-[16px] md:left-[5%]  z-20 max-w-[30px] md:max-w-[24px] lg:max-w-[40px]"
                     src="/assets/gift-images/hero/Star-1.png"
+                    alt="star icon"
                   ></img>
                   <img
                     className="tl-ribbon absolute top-[6%] md:top-[24%] left-[50%]  z-20 max-w-[20px] md:max-w-[24px] lg:max-w-[30px]"
                     src="/assets/gift-images/hero/Star-2.png"
+                    alt="star icon"
                   ></img>
                   <img
                     className="tl-ribbon absolute top-[16px] left-[88%] md:top-[20px] md:left-[36%]  z-20 max-w-[28px] md:max-w-[24px] lg:max-w-[30px]"
                     src="/assets/gift-images/hero/Star-3.png"
+                    alt="star icon"
                   ></img>
                   <img
                     className="tl-ribbon absolute bottom-[20px] left-[88%] md:bottom-30px] md:left-[40%]  z-20 max-w-[30px] md:max-w-[28px] lg:max-w-[40px]"
                     src="/assets/gift-images/hero/Star-4.png"
+                    alt="star icon"
                   ></img>
                 </div>
               </div>
@@ -168,6 +184,7 @@ function GiftPerfectFor(props) {
                 <img
                   className=" w-[64px] md:w-[66px] lg:w-[80px]"
                   src="/assets/gift-images/ocassion/ocassion-ribbon.png"
+                  alt="A beautifully wrapped gift adorned with a vibrant ribbon, perfect for any special occasion."
                 ></img>
               </div>
               {/* =======card bg images========  */}
@@ -176,30 +193,37 @@ function GiftPerfectFor(props) {
                   <img
                     className="absolute top-[60px] md:top-[72px] left-[8px] md:left-[20px] w-[60px] md:w-[60px] lg:w-[66px] "
                     src="/assets/gift-images/ocassion/Confetti-left.svg"
+                    alt="Colorful confetti scattered around a gift box, symbolizing celebration and joy in a festive setting."
                   ></img>
                   <img
                     className="absolute top-[0px] right-[16%] lg:right-[25%] h-[48%]  md:h-[99%] "
                     src="/assets/gift-images/ocassion/Confetti-under-the-image.svg"
+                    alt="Colorful confetti scattered around a gift box, symbolizing celebration and joy in a festive setting."
                   ></img>
                   <img
                     className="absolute md:hidden w-[90%] md:w-[80px]  bottom-[10px] left-[0] right-[0] mx-auto "
                     src="/assets/gift-images/ocassion/Confetti-top-and-bottom-for-mobile.svg"
+                    alt="Colorful confetti scattered around a gift box, symbolizing celebration and joy in a festive setting."
                   ></img>
                   <img
                     className="tl-ribbon absolute bottom-[16px] left-[20px] md:bottom-[16px] lg:bottom-[16px] md:left-[5%]  z-20 max-w-[30px] md:max-w-[24px] lg:max-w-[40px]"
                     src="/assets/gift-images/hero/Star-1.png"
+                    alt="star icon"
                   ></img>
                   <img
                     className="tl-ribbon absolute top-[6%] md:top-[24%] left-[50%]  z-20 max-w-[20px] md:max-w-[24px] lg:max-w-[30px]"
                     src="/assets/gift-images/hero/Star-2.png"
+                    alt="star icon"
                   ></img>
                   <img
                     className="tl-ribbon absolute top-[16px] left-[88%] md:top-[20px] md:left-[36%]  z-20 max-w-[28px] md:max-w-[24px] lg:max-w-[30px]"
                     src="/assets/gift-images/hero/Star-3.png"
+                    alt="star icon"
                   ></img>
                   <img
                     className="tl-ribbon absolute bottom-[20px] left-[88%] md:bottom-30px] md:left-[40%]  z-20 max-w-[30px] md:max-w-[28px] lg:max-w-[40px]"
                     src="/assets/gift-images/hero/Star-4.png"
+                    alt="star icon"
                   ></img>
                 </div>
               </div>

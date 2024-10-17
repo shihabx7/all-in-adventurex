@@ -56,7 +56,7 @@ const WhyAdvGiftCards = (props) => {
             <div className="event-notice mt-4 md:mt-4 lg:mt-8">
               <div className="flex  lg:text-lg  mt-3 justify-between">
                 <div className="mt-[6px] w-[20px] lg:w-[24px]">
-                  <img src="/assets/svg/star-bullet.svg"></img>
+                  <img alt="star icon" src="/assets/svg/star-bullet.svg"></img>
                 </div>
                 <div className="w-[92%] lg:w-[96%] ">
                   This is a unique, exhilarating gift experience EVERYONE can
@@ -65,7 +65,7 @@ const WhyAdvGiftCards = (props) => {
               </div>
               <div className="flex  lg:text-lg mt-3  justify-between">
                 <div className="mt-[6px] w-[20px] lg:w-[24px]">
-                  <img src="/assets/svg/star-bullet.svg"></img>
+                  <img alt="star icon" src="/assets/svg/star-bullet.svg"></img>
                 </div>
                 <div className="w-[92%] lg:w-[96%]">
                   Chances are, you'll enjoy it too when your recipient (most
@@ -79,7 +79,7 @@ const WhyAdvGiftCards = (props) => {
             </p>
           </div>
           <div className="gift-poster md:w-1/2 order-1 md:order-2 ">
-            <img src="/assets/gift-card-w.jpg"></img>
+            <img alt="gift card icon" src="/assets/gift-card-w.jpg"></img>
           </div>
         </div>
         <div className="why-gift-link mt-12 ">

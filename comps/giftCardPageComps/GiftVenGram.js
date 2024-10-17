@@ -15,7 +15,10 @@ function GiftVenGram(props) {
           </div>
           <div className="gsvenn-box-container flex justify-center mt-8 md:mt-12 ">
             <div className="max-w-[600px]">
-              <img src="/assets/gift-images/venn-diagram.png"></img>
+              <img
+                alt="A Venn diagram illustrating the concept of an escape room gift box, highlighting overlapping themes and experiences."
+                src="/assets/gift-images/venn-diagram.png"
+              ></img>
             </div>
           </div>
           <div className="sec-btn ss-btn  mt-12 md:mt-16">

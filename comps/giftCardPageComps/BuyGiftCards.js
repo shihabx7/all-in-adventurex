@@ -36,7 +36,10 @@ const BuyGiftCards = (props) => {
           {/* =================1st section================*/}
           <div className="gift-row flex flex-col md:flex-row justify-center md:space-x-4 lg:space-x-8 items-center">
             <div className="gift-poster md:w-1/2">
-              <img src="/assets/allinadventures-gift-cards-section.png"></img>
+              <img
+                alt="A display of all-in-adventures gift cards, offering diverse experiences for special occasions and thoughtful gifting."
+                src="/assets/allinadventures-gift-cards-section.png"
+              ></img>
             </div>
             <div className="gift-info md:w-1/2">
               <h3 className="golden-text font-semibold mt-8 md:mt-0 text-xl lg:text-2xl mb-4">
@@ -68,7 +71,7 @@ const BuyGiftCards = (props) => {
               </div>
               <div className="flex  lg:text-lg text-gray-300 mt-3">
                 <span className="block mt-1 w-6 md:w-8">
-                  <img src="/assets/svg/star-bullet.svg"></img>
+                  <img alt="star icon" src="/assets/svg/star-bullet.svg"></img>
                 </span>
                 <span className="block w-[90%]">
                   Customers have an option to pay the remaining balance during
@@ -78,7 +81,7 @@ const BuyGiftCards = (props) => {
               </div>
               <div className="flex  lg:text-lg text-gray-300 mt-3">
                 <span className="block mt-1 w-6 md:w-8">
-                  <img src="/assets/svg/star-bullet.svg"></img>
+                  <img alt="star icon" src="/assets/svg/star-bullet.svg"></img>
                 </span>
                 <span className="block w-[90%]">
                   Players of all ages are welcome; however, a paying adult (18
@@ -89,7 +92,7 @@ const BuyGiftCards = (props) => {
               </div>
               <div className="flex  lg:text-lg text-gray-300 mt-3">
                 <span className="block mt-1 w-6 md:w-8">
-                  <img src="/assets/svg/star-bullet.svg"></img>
+                  <img alt="star icon" src="/assets/svg/star-bullet.svg"></img>
                 </span>
                 <span className="block w-[90%]">
                   All our locations are wheelchair accessible.
@@ -97,7 +100,7 @@ const BuyGiftCards = (props) => {
               </div>
               <div className="flex  lg:text-lg text-gray-300 mt-3">
                 <span className="block mt-1 w-6 md:w-8">
-                  <img src="/assets/svg/star-bullet.svg"></img>
+                  <img alt="star icon" src="/assets/svg/star-bullet.svg"></img>
                 </span>
                 <span className="block w-[90%]">
                   Game experiences vary by location.
@@ -178,7 +181,10 @@ const BuyGiftCards = (props) => {
                 </div>
               </div>
               <div className="gift-option-poster order-1 md:order-2 md:w-1/2 text-end">
-                <img src="/assets/gift-option-poster.jpg"></img>
+                <img
+                  alt="An engaging poster featuring diverse gift options available at All in Adventures, designed to inspire and delight recipients."
+                  src="/assets/gift-option-poster.jpg"
+                ></img>
               </div>
             </div>
           </div>
