@@ -2,25 +2,12 @@ import GameTitleSeparator from "../util/GameTitleSeparator";
 import GameDtBtn from "../util/GameDtBtn";
 import Image from "next/image";
 import { ImSad } from "react-icons/im";
-
+import SectionBorderTop from "../util/SectionBorderTop";
 const ActivityRootDetails = (props) => {
   return (
     <div className="game-details bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] relative ">
       {/*======================= boder img============== */}
-      <div className="sec-divider-top w-full absolute top-0 left-0 ">
-        <div className="w-full hidden md:block">
-          <img
-            src="/assets/svg/pattern/Light-Brown-Color-BG-Top.svg"
-            alt="All in Adventures border pattern"
-          />
-        </div>
-        <div className="w-full md:hidden">
-          <img
-            src="/assets/svg/pattern/light-brown-color-bg-mobile.svg"
-            alt="All in Adventures border pattern"
-          />
-        </div>
-      </div>
+      <SectionBorderTop />
 
       {/*======================= boder img end============== */}
       <div className="content-container-game pt-[116px] md:pt-24 lg:pt-32 md:px-4 relative z-10">

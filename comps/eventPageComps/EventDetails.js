@@ -45,10 +45,16 @@ const EventDetails = (props) => {
 
       {/*======================= boder img end============== */}
       <div className="pl-or pl-or-1 absolute top-0 left-0 z-10">
-        <img src="/assets/pl-bgi-1.png"></img>
+        <img
+          alt="Balloons, stars and a flying rocket representing the fun and excitement of Escape Rooms at All In Adventures."
+          src="/assets/pl-bgi-1.png"
+        ></img>
       </div>
       <div className="pl-or pl-or-3 absolute top-0 right-0 z-10">
-        <img src="/assets/pl-bgi-3.png"></img>
+        <img
+          alt="Appealing decorations with colourful confetti, highlighting the fun of Escape Rooms at All In Adventures."
+          src="/assets/pl-bgi-3.png"
+        ></img>
       </div>
 
       {/**=========================== section content========================= */}
@@ -59,6 +65,7 @@ const EventDetails = (props) => {
             <img
               className="w-[134px] sm:w-[190px] md:w-[160px] lg:w-[180px] xl:w-[280px] 2xl:w-[340px] 4xl:w-[350px] 5xl:w-[370px]"
               src="/assets/svg/util/cake-and-gift.svg"
+              alt="A huge birthday cake, two wine glasses, and a bottle of wine, featuring the fun and excitement of escape room birthday parties at All In Adventures."
             ></img>
           </div>
 
@@ -193,6 +200,7 @@ const EventDetails = (props) => {
             <img
               className=" -scale-x-100 md:scale-x-100 z-10 w-[160px] sm:w-[180px] md:w-[190px] lg:w-[200px] xl:w-[300px]  2xl:w-[370px]  4xl:w-[380px] 5xl:w-[400px] "
               src="/assets/svg/util/compass.svg"
+              alt="Decorative compass rose design with ornate details, highlighting directions relevant to All In Adventures escape rooms."
             ></img>
           </div>
           <div className="relative z-20 event-dt-row max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
