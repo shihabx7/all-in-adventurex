@@ -72,14 +72,18 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
   const handleNavigation = (direction) => {
     if (!isOpen) return;
 
-    const imageCount = imageList.length;
-
+    // const imageCount = imageList.length;
+    const imageCount = images.current.length;
     const newIndex = (selectedIndex + imageCount + direction) % imageCount;
+    console.log("dirc :" + direction);
+    console.log("selectedIndex :" + selectedIndex);
+    console.log("index :" + imageCount);
+    console.log("index :" + newIndex);
     setSelectedIndex(newIndex);
   };
 
   const handleKeyDown = (event) => {
-    if (!isOpen) return;
+    // if (!isOpen) return;
 
     switch (event.key) {
       case "Escape":
@@ -96,7 +100,8 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
     }
   };
   const downloadImage = (imageUrl) => {
-    let filename = "Allinadventures-escape-rooms-" + selectedIndex + 1;
+    console.log(imageUrl);
+    let filename = "Allinadventures-escape-rooms-" + selectedIndex;
     fetch(imageUrl)
       .then((response) => response.blob()) // Convert response to Blob
       .then((blob) => {
@@ -242,7 +247,7 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
               <div id="dnl" className="absolute bottom-0 left-0 h-0 w-0"></div>
               <button
                 className="absolute top-0 right-0 flex bg-[#2D2D2D] p-1 lg:px-2 lg:py-2 "
-                onClick={() => downloadImage(imageList[selectedIndex].src)}
+                onClick={() => downloadImage(imageList[selectedIndex].url)}
               >
                 <span className="text-[24px] md:text-[28px] lg:text-[32px] 2xl:text-[38px] text-[#D8AF53] hover:text-[#FFD700] ">
                   <MdOutlineFileDownload />

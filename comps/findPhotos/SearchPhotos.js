@@ -42,6 +42,7 @@ const AllPhotos = ({ photoList, locationName, srcDate, searchDateUs }) => {
 
     const imageCount = images.current.length;
     const newIndex = (selectedIndex + imageCount + direction) % imageCount;
+    console.log(newIndex);
     setSelectedIndex(newIndex);
   };
 
@@ -62,24 +63,7 @@ const AllPhotos = ({ photoList, locationName, srcDate, searchDateUs }) => {
         break;
     }
   };
-  const downloadImage = (imageUrl) => {
-    let filename = "Allinadventures-escape-rooms-" + selectedIndex + 1;
-    fetch(imageUrl)
-      .then((response) => response.blob()) // Convert response to Blob
-      .then((blob) => {
-        const url = window.URL.createObjectURL(blob); // Create temporary URL
-        const link = document.createElement("a");
-        link.href = url;
-        link.setAttribute("download", filename); // Set download filename
-        document.getElementById("dnl").appendChild(link);
-        // document.body.appendChild(link);
-        link.click();
-        document.getElementById("dnl").removeChild(link);
-        //document.body.removeChild(link);
-        window.URL.revokeObjectURL(url); // Clean up temporary URL
-      })
-      .catch((error) => console.error("Error downloading image:", error));
-  };
+
   const handleClickOutside = (event) => {
     if (
       isOpen &&
@@ -109,6 +93,24 @@ const AllPhotos = ({ photoList, locationName, srcDate, searchDateUs }) => {
     };
   }, [isOpen]); // Only attach listener when lightbox is open
 
+  const downloadImage = (imageUrl) => {
+    let filename = "Allinadventures-escape-rooms-" + selectedIndex + 1;
+    fetch(imageUrl)
+      .then((response) => response.blob()) // Convert response to Blob
+      .then((blob) => {
+        const url = window.URL.createObjectURL(blob); // Create temporary URL
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", filename); // Set download filename
+        document.getElementById("dnl").appendChild(link);
+        // document.body.appendChild(link);
+        link.click();
+        document.getElementById("dnl").removeChild(link);
+        //document.body.removeChild(link);
+        window.URL.revokeObjectURL(url); // Clean up temporary URL
+      })
+      .catch((error) => console.error("Error downloading image:", error));
+  };
   return (
     <>
       <div className="c-all-photos ">
@@ -206,7 +208,7 @@ const AllPhotos = ({ photoList, locationName, srcDate, searchDateUs }) => {
               <div id="dnl" className="absolute bottom-0 left-0 h-0 w-0"></div>
               <button
                 className="absolute top-0 right-0 flex bg-[#2D2D2D] p-1 lg:px-2 lg:py-2 "
-                onClick={() => downloadImage(imageList[selectedIndex].src)}
+                onClick={() => downloadImage(imageList[selectedIndex].url)}
               >
                 <span className="text-[24px] md:text-[28px] lg:text-[32px] 2xl:text-[38px] text-[#D8AF53] hover:text-[#FFD700] ">
                   <MdOutlineFileDownload />
