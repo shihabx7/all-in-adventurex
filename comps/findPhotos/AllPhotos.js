@@ -71,20 +71,25 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
 
   const handleNavigation = (direction) => {
     if (!isOpen) return;
-
-    // const imageCount = imageList.length;
-    const imageCount = images.current.length;
+    console.log("Bef :" + selectedIndex);
+    const imageCount = imageList.length;
+    //const imageCount = images.current.length;
     const newIndex = (selectedIndex + imageCount + direction) % imageCount;
-    console.log("dirc :" + direction);
-    console.log("selectedIndex :" + selectedIndex);
-    console.log("index :" + imageCount);
-    console.log("index :" + newIndex);
     setSelectedIndex(newIndex);
+    console.log("Dirc :" + direction);
+    console.log("SelectedIndex :" + selectedIndex);
+    console.log("NewIndex :" + newIndex);
+    console.log("Total :" + imageCount);
+    console.log("Index :" + newIndex);
   };
 
   const handleKeyDown = (event) => {
     // if (!isOpen) return;
+    console.log("-----------");
+    console.log("press :" + event.key);
 
+    console.log("curent selected:" + selectedIndex);
+    console.log("-----------");
     switch (event.key) {
       case "Escape":
         closeLightbox();
@@ -97,6 +102,18 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
         break;
       default:
         break;
+    }
+  };
+
+  const handleClickOutside = (event) => {
+    if (
+      isOpen &&
+      !closeRef.current.contains(event.target) &&
+      !imageRef.current.contains(event.target)
+    ) {
+      //console.log(isOpen);
+      //console.log("outside");
+      closeLightbox();
     }
   };
   const downloadImage = (imageUrl) => {
@@ -118,25 +135,11 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
       })
       .catch((error) => console.error("Error downloading image:", error));
   };
-  const handleClickOutside = (event) => {
-    if (
-      isOpen &&
-      !closeRef.current.contains(event.target) &&
-      !imageRef.current.contains(event.target)
-    ) {
-      //console.log(isOpen);
-      //console.log("outside");
-      closeLightbox();
-    }
-  };
 
   useEffect(() => {
     if (isOpen) {
       document.addEventListener("keydown", handleKeyDown);
       document.addEventListener("click", handleClickOutside);
-    } else {
-      document.removeEventListener("keydown", handleKeyDown);
-      document.removeEventListener("click", handleClickOutside);
     }
 
     return () => {
