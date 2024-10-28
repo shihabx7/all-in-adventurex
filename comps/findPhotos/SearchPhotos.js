@@ -39,11 +39,13 @@ const AllPhotos = ({ photoList, locationName, srcDate, searchDateUs }) => {
 
   const handleNavigation = (direction) => {
     if (!isOpen) return;
+    console.log("Bef :" + selectedIndex);
+    const imageCount = imageList.length;
 
-    const imageCount = images.current.length;
-    const newIndex = (selectedIndex + imageCount + direction) % imageCount;
-    console.log(newIndex);
-    setSelectedIndex(newIndex);
+    setSelectedIndex((prevIndex) => {
+      const newIndex = (prevIndex + imageCount + direction) % imageCount;
+      return newIndex;
+    });
   };
 
   const handleKeyDown = (event) => {
@@ -82,16 +84,13 @@ const AllPhotos = ({ photoList, locationName, srcDate, searchDateUs }) => {
     if (isOpen) {
       document.addEventListener("keydown", handleKeyDown);
       document.addEventListener("click", handleClickOutside);
-    } else {
-      document.removeEventListener("keydown", handleKeyDown);
-      document.removeEventListener("click", handleClickOutside);
     }
 
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
       document.removeEventListener("click", handleClickOutside);
     };
-  }, [isOpen]); // Only attach listener when lightbox is open
+  }, [isOpen, selectedIndex]);
 
   const downloadImage = (imageUrl) => {
     let filename = "Allinadventures-escape-rooms-" + selectedIndex + 1;

@@ -113,7 +113,7 @@ export const getBlogCategoryData = async (catSlug) => {
   const totalLocations = locationListData.length;
   const apifilter = "filters[blogCategories][categorySlug][$eq]=" + catSlug;
   const reqPg =
-    "&pagination[start]=1&pagination[limit]=5&sort[1]=publishDate:desc";
+    "&pagination[start]=0&pagination[limit]=8&sort[1]=publishDate:desc";
 
   const reqFields =
     "&fields[0]=title&fields[1]=slug&fields[2]=excerpt&fields[3]=publishDate";

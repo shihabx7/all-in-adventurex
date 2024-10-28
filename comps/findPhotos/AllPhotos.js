@@ -74,13 +74,17 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
     console.log("Bef :" + selectedIndex);
     const imageCount = imageList.length;
     //const imageCount = images.current.length;
-    const newIndex = (selectedIndex + imageCount + direction) % imageCount;
-    setSelectedIndex(newIndex);
+    const nd = (selectedIndex + imageCount + direction) % imageCount;
+    //setSelectedIndex(newIndex);
+    setSelectedIndex((prevIndex) => {
+      const newIndex = (prevIndex + imageCount + direction) % imageCount;
+      return newIndex;
+    });
     console.log("Dirc :" + direction);
     console.log("SelectedIndex :" + selectedIndex);
-    console.log("NewIndex :" + newIndex);
+    console.log("NewIndex :" + nd);
     console.log("Total :" + imageCount);
-    console.log("Index :" + newIndex);
+    console.log("Index :" + nd);
   };
 
   const handleKeyDown = (event) => {
@@ -146,7 +150,7 @@ const AllPhotos = ({ photoList, totalLocations, hasMore }) => {
       document.removeEventListener("keydown", handleKeyDown);
       document.removeEventListener("click", handleClickOutside);
     };
-  }, [isOpen]); // Only attach listener when lightbox is open
+  }, [isOpen, selectedIndex]);
   return (
     <>
       <div className="c-all-photos ">
