@@ -11,7 +11,7 @@ const ActivityPageSeo = (props) => {
       {props.meta.canonicalURL ? (
         <link rel="canonical" href={props.meta.canonicalURL} />
       ) : (
-        <link rel="canonical" href="https://allinadventures.com/blog" />
+        <link rel="canonical" href="https://allinadventures.com/" />
       )}
       <meta
         name="description"
