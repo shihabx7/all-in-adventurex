@@ -58,7 +58,7 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
     actSlug,
     locationResData.escapeGameParty
   );
-  //console.log(locActivityData.locActivityDetails);
+  //cl.log(locActivityData.locActivityDetails);
 
   const pageDATA = {
     locationSlugList: getLocationSlugList(locationListData),

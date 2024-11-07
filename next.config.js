@@ -7,6 +7,21 @@ const prm = false;
 // =========================================genarel redirect
 const gnRed = [
   {
+    source: "/activities/axe-throwing",
+    destination: "/",
+    permanent: prm,
+  },
+  {
+    source: "/west-nyack-ny/activities/axe-throwing",
+    destination: "/locations/west-nyack-ny",
+    permanent: prm,
+  },
+  {
+    source: "/poughkeepsie-ny/activities/axe-throwing",
+    destination: "/locations/poughkeepsie-ny",
+    permanent: prm,
+  },
+  {
     source: "/virtual-games/virtual-game-show-room",
     destination: "/activities/locked-in-the-lift",
     permanent: prm,

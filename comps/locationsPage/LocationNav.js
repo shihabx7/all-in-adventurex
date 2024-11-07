@@ -8,6 +8,7 @@ import GameBookingBtn from "../headerComps/GameBookingBtn";
 import HeaderNotice from "../headerComps/HeaderNotice";
 import LocationMenuBtnHeader from "../util/LocationMenuBtnHeader";
 import MobileBookingBtn from "../headerComps/MobileBookingBtn";
+import MobileEscapeStickyBar from "../mobileEscapeGames/MobileEscapeStickyBar";
 
 const LocationNav = (props) => {
   const [showSlug, setShowSlug] = useState(null);
@@ -56,6 +57,9 @@ const LocationNav = (props) => {
         </div>
       )}
       {/* ============Location List Menu end*/}
+      {/* sticky-bottom-bar */}
+      {props.hasMobileEscape ? <MobileEscapeStickyBar /> : <></>}
+
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">
         <div id="header-container-s" className="header-container-s">

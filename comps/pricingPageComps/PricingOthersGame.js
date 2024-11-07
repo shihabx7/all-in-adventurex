@@ -86,29 +86,7 @@ const PricingOthersGame = () => {
               {/** ==============table-row end============ */}
 
               {/** ==============table-row===========  10+ Players*/}
-              <tr>
-                <td className="border border-[#D2C6AA] w-[44%] md:w-[50%] p-2 md:p-4">
-                  <h4 className="font-medium md:text-[20px] text-[#000000]">
-                    Axe Throwing
-                  </h4>
-                </td>
-                <td className="border border-[#D2C6AA] w-[46%] md:w-[50%] p-2 md:p-4">
-                  <ul className="text-xs md:text-lg">
-                    <li className="text-[#222222] font-light mt-1">
-                      <span className="font-semibold">$23.89 </span> / Per
-                      Person{" "}
-                    </li>
-                    <li className="text-[#222222] font-light mt-1">
-                      <span className="font-semibold">$90</span> / Full Lane (4
-                      Guests) / 1 Hour
-                    </li>
-                    <li className="text-[#222222] font-light mt-1">
-                      <span className="font-semibold">$175</span> / Full Lane (4
-                      Guests) / 2 Hours
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+
               {/** ==============table-row end============ */}
             </tbody>
           </table>

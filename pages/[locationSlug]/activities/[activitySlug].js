@@ -27,6 +27,7 @@ const LocSingleActivity = (props) => {
         locationSlug={props.locationSlug}
         gameBooking={props.gameBooking}
         partyBooking={props.partyBooking}
+        hasMobileEscape={false}
       />
       <div id="mainContent" className="main-content">
         {/* =======header content and breadcum======== */}
