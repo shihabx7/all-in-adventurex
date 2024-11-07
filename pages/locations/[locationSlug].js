@@ -4,6 +4,7 @@ import { getLocationHomePageData } from "../api/Locations/getLocationHomePageDat
 import Script from "next/script";
 
 import PageBread from "../../comps/util/PageBread";
+import PageBreedLoc from "../../comps/util/PageBreedLoc";
 import PageSeo from "../../comps/util/PageSeo";
 import LocationNav from "../../comps/locationsPage/LocationNav";
 import LocationHero from "../../comps/locationsPage/LocationHero";
@@ -39,7 +40,10 @@ const location = (props) => {
       />
       {/* =======header content and breadcum======== end */}
       <div id="mainContent" className="main-content">
-        <PageBread />
+        <PageBreedLoc
+          locationName={props.locationName}
+          locationSlug={props.locationSlug}
+        />
 
         <LocationHero
           pageData={props.pageData}

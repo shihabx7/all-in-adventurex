@@ -1,5 +1,11 @@
 import { FiChevronRight } from "react-icons/fi";
 
+const stXCap = (nm) => {
+  let stArr = nm.split(" ");
+  let nst = stArr[stArr.length - 1].toUppercase();
+  stArr[stArr.length - 1] = nst;
+  return stArr.join(" ");
+};
 const DynamicPageBread = (props) => {
   return (
     <div className="breadcum py-1 md:py-1 lg:py-3 bg-[#fffceb]">
