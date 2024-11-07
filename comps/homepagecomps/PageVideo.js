@@ -7,6 +7,7 @@ import { ImPlay3 } from "react-icons/im";
 import HowtobookSteps from "./HowtobookSteps";
 import SectionBorderBottom from "../util/SectionBorderBottom";
 import SectionBorderTop from "../util/SectionBorderTop";
+import HowToPlaySteps from "./HowToPlaySteps";
 const bookAll = (bookingData) => {
   FH.open({
     shortname: bookingData.shortName,
@@ -110,7 +111,7 @@ const PageVideo = (props) => {
               ></div>
             </div>
             {/* How to book 3 steps */}
-            <HowtobookSteps />
+            <HowToPlaySteps />
             {/* How to book 3 steps  end*/}
 
             <div className="bg-[#000000] game-video-box pb-[57%] md:pb-[416px] lg:pb-[472px] w-[100%] md:w-[740px] lg:w-[840px] mx-auto shadow-lg relative">
