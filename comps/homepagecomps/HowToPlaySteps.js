@@ -39,7 +39,7 @@ const HowToPlaySteps = () => {
           </div>
           <h3 className="golden-text text-3xl font-bold mt-2 text-center">2</h3>
           <p className="htb-text-x text-[8px] rm:text-[10px] lm:text-[12px] sm:text-[14px] lg:text-lg text-center text-gray-700 mt-2  font-medium">
-            CHOOSE<br></br>YOUR GAME
+            SOLVE YOUR<br></br>PUZZLES
           </p>
         </div>
         <div className="lin   flex-grow flex flex-col">
