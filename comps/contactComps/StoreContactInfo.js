@@ -60,6 +60,30 @@ const StoreContactInfo = (props) => {
             {props.locationInfo.phone}
           </a>
         </div>
+        {props.locationInfo.text !== null ? (
+          <div className="ic-row c-contact-item px-2  lg:px-4 py-2 lg:py-3 border-b border-[#D2C6AA] flex items-center space-x-2 lg:space-x-3 ">
+            <div className="loc-dt-icon">
+              <img
+                className="w-[24px]"
+                alt="A phone sms icon showing the contact number of the store of All In Adventures."
+                src="/assets/svg/util/allinadventures-text-message-icon.svg"
+              ></img>
+            </div>
+            <div className="loc-dt-text text-[#232323] md:text-lg flex-1 ">
+              <p>
+                <a
+                  className="md:text-lg hover:text-blue-700"
+                  href={"sms:" + props.locationInfo.text}
+                >
+                  {props.locationInfo.text}
+                </a>
+              </p>
+            </div>
+          </div>
+        ) : (
+          <></>
+        )}
+
         <div className="c-contact-item px-2  lg:px-4 py-2 lg:py-3  flex items-center space-x-4 lg:space-x-3">
           <img
             className="w-[18px] md:w-[20px]"
@@ -103,7 +127,9 @@ const StoreContactInfo = (props) => {
             src="/assets/svg/event-icon-chair.svg"
           ></img>
           <p className="lg:text-lg text-[#232323] flex-1">
-            {props.wheelChairAccessibility ? "Wheelchair Accessibility" : ""}
+            {props.locationInfo.wheelChairAccessibility
+              ? "Wheelchair Accessible"
+              : ""}
           </p>
         </div>
         {/*========== std business hours=========== */}

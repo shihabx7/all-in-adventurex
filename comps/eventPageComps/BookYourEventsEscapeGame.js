@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import TitleSeparator from "../util/TitleSeparator";
 import Script from "next/script";
+import { useState, useEffect } from "react";
 
 const bookAll = (bookingData) => {
   FH.open({
@@ -32,6 +33,19 @@ const bookEvent = (bookingData) => {
 };
 
 function BookYourEventsEscapeGame(props) {
+  const [isGameShowRoom, setIsGameShowRoom] = useState(0);
+  useEffect(() => {
+    let list = props.escapeGamePartyList;
+    let foundGsr = 0;
+    for (let i = 0; i < list.length; i++) {
+      let namep = list[i].partyName.toLowerCase().trim();
+      console.log(namep);
+      if (namep == "game show room") {
+        foundGsr++;
+      }
+      setIsGameShowRoom(foundGsr);
+    }
+  });
   return (
     <div className="max-w-7xl mx-auto relative pb-16 pt-12 md:pb-24 md:pt-28 lg:pb-28 lg:pt-28 xl:pb-32  px-4 xl:px-0 z-20">
       {/*===========section Title============= */}
@@ -41,10 +55,18 @@ function BookYourEventsEscapeGame(props) {
           color="golden-text"
           weight="font-bold"
         />
-        <p className="text-[#333333] md:text-lg mt-3 md:mt-3 xl:mt-4">
-          Choose from the 3 distinct escape room party packages that cater to
-          your preference and group size, and let the adventure begin.
-        </p>
+        {isGameShowRoom > 0 ? (
+          <p className="text-[#333333] md:text-lg mt-3 md:mt-3 xl:mt-4">
+            Choose from the 3 distinct escape room and game show room party
+            packages that cater to your preference and group size, and let the
+            adventure begin.
+          </p>
+        ) : (
+          <p className="text-[#333333] md:text-lg mt-3 md:mt-3 xl:mt-4">
+            Choose from the 3 distinct escape room party packages that cater to
+            your preference and group size, and let the adventure begin.
+          </p>
+        )}
       </div>
       {/*===========section Title end============= */}
       {/*===========section Content============= */}

@@ -17,7 +17,7 @@ import {
   getActivityListPageData,
   getActivityListData,
 } from "../../../lib/locationActivityPagaDataFormation";
-
+import { checkActiveMobileEscape } from "../../../lib/dataFormation/mobileEscapeDataFormation";
 export const getLocationActivitiesListPageData = async (locslug) => {
   const activityDataReq = apiUrl + activityListPageQuery;
 
@@ -37,6 +37,12 @@ export const getLocationActivitiesListPageData = async (locslug) => {
   const locationObj = await locationRes.json();
 
   const locationResData = locationObj.data[0].attributes;
+  const mobileEscapeRoom = locationResData.mobileEscapeRoom;
+  let isActiveMobileEscape = false;
+  if (mobileEscapeRoom.length > 0) {
+    isActiveMobileEscape = checkActiveMobileEscape(mobileEscapeRoom);
+  }
+  //console.log(locationResData.mobileEscapeRoom.length);
   //console.log(locationResData);
   // fetch all location list as an array
   const locationListRes = await fetch(locationSlugListQuery, apiSetting);
@@ -57,7 +63,7 @@ export const getLocationActivitiesListPageData = async (locslug) => {
     isPublished: locationResData.isPublished,
     locationSlug: locationResData.slug,
     locationName: locationResData.locationName,
-
+    hasMobileEscapeRoom: isActiveMobileEscape,
     pageMeta: getActivityListPageMeta(
       seoData,
       locationResData.activityListPage.seo,

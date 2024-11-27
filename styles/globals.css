@@ -55,6 +55,9 @@ a {
 .font-cr {
   font-family: "Roboto Condensed", sans-serif;
 }
+.font-rob {
+  font-family: "Roboto", sans-serif;
+}
 .inline-elm p {
   display: inline;
 }
@@ -149,6 +152,15 @@ a {
 }
 .dark-gold {
   color: #ca9342;
+}
+/*=============mobile escape room========*/
+.mbl-group-text p {
+  margin-bottom: 22px;
+}
+.mbl-title-ribbon {
+  vertical-align: 40%;
+  letter-spacing: 1.4px;
+  line-height: 1;
 }
 /*================ dark bg- pattern =====================*/
 .sbl-desc a {
@@ -1189,6 +1201,9 @@ a {
   }
 }
 @media only screen and (max-width: 1000px) {
+  .mbl-group-text p {
+    margin-bottom: 20px;
+  }
   .home-nav-search {
     width: 60%;
   }
@@ -1447,7 +1462,9 @@ a {
   .un-games {
     max-width: 92%;
   }
-
+  .mbl-title-ribbon {
+    vertical-align: 36%;
+  }
   .home-hero-container {
     margin-top: -31%;
   }
@@ -1750,6 +1767,9 @@ a {
   }
 }
 @media only screen and (max-width: 340px) {
+  .mbl-title-ribbon {
+    line-height: 1.1;
+  }
   .react-datepicker-popper {
     margin-left: -46px !important;
   }

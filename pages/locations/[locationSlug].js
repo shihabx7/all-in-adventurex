@@ -19,6 +19,7 @@ import TestimonialSlider from "../../comps/homepagecomps/TestimonialSlider";
 import TestimonialLocSlider from "../../comps/homepagecomps/TestimonialLocSlider";
 import LocationDetails from "../../comps/locationsPage/LocationDetails";
 import LocationFooter from "../../comps/locationsPage/LocationFooter";
+import MobileEscapeGameHomeSection from "../../comps/mobileEscapeGames/MobileEscapeGameHomeSection";
 
 const location = (props) => {
   /* customizing breadcum */
@@ -37,6 +38,7 @@ const location = (props) => {
         locationName={props.locationName}
         locationSlug={props.locationSlug}
         allBooking={props.allBooking}
+        hasMobileEscapeRoom={props.hasMobileEscapeRoom}
       />
       {/* =======header content and breadcum======== end */}
       <div id="mainContent" className="main-content">
@@ -79,6 +81,13 @@ const location = (props) => {
         locationSlug={props.locationSlug}
         isPublished={props.isPublished}
       />
+      {props.hasMobileEscapeRoom ? (
+        <MobileEscapeGameHomeSection
+          mobileEscapeRoomData={props.mobileEscapeRoomData}
+        />
+      ) : (
+        <></>
+      )}
       <GiftCards
         isPublished={props.isPublished}
         locationSlug={props.locationSlug}
@@ -153,6 +162,8 @@ export const getStaticProps = async (context) => {
       businessHours: DATA.businessHours,
       holidayHours: DATA.holidayHours,
       mapInfo: DATA.mapInfo,
+      hasMobileEscapeRoom: DATA.hasMobileEscapeRoom,
+      mobileEscapeRoomData: DATA.mobileEscapeRoomData,
     },
     revalidate: 12,
   };

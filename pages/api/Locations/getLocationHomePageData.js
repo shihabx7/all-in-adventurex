@@ -25,16 +25,25 @@ import {
   getOtherGameSlugList,
   getEventSlugList,
 } from "../../../lib/menuDataFormation";
+import { checkActiveMobileEscape } from "../../../lib/dataFormation/mobileEscapeDataFormation";
+import { homePageMobileEscapeRoomSectionData } from "../../../lib/dataFormation/mobileEscapeDataFormation";
 export const getLocationHomePageData = async (slug) => {
   const filters = "locations?filters[slug][$eq]=" + slug;
   const pageReqUrl = apiUrl + filters + LocationHomePageQuery;
-  const testUrl = apiUrl + homePageTestimonialQuery;
+  const testimonialReqUrl = apiUrl + homePageTestimonialQuery;
+
   const pageResponse = await fetch(pageReqUrl, apiSetting);
   const pageResArr = await pageResponse.json();
   const pageResData = pageResArr.data[0].attributes;
   const seoData = pageResData.seo;
 
-  const testiResponse = await fetch(testUrl, apiSetting);
+  const mobileEscapeRoom = pageResData.mobileEscapeRoom;
+  let isActiveMobileEscape = false;
+  if (mobileEscapeRoom.length > 0) {
+    isActiveMobileEscape = checkActiveMobileEscape(mobileEscapeRoom);
+  }
+
+  const testiResponse = await fetch(testimonialReqUrl, apiSetting);
   const testiResArr = await testiResponse.json();
   const testiResData = testiResArr.data.attributes;
 
@@ -42,12 +51,8 @@ export const getLocationHomePageData = async (slug) => {
   const locationListobj = await locationListRes.json();
   const locationListArr = locationListobj.data;
   const totalLocations = 22;
-  const tm = getPageMeta(
-    seoData,
-    pageResData.pageHeroData.pageHeroMobile.data.attributes.url,
-    pageResData.pageHeroData.pageSubTitle
-  );
-  // console.log("Seo" + JSON.stringify(seoData));
+  //const tm = homePageMobileEscapeRoomSectionData(mobileEscapeRoom);
+  // console.log("mobileEscapeRoomData" + JSON.stringify(tm));
   // console.log("Meta : " + JSON.stringify(tm));
   const DATA = {
     locationSlugList: getLocationSlugList(locationListArr),
@@ -59,6 +64,8 @@ export const getLocationHomePageData = async (slug) => {
     locationSlug: pageResData.slug,
     isPublished: pageResData.isPublished,
     totalLocations: locationListArr.length,
+    hasMobileEscapeRoom: isActiveMobileEscape,
+    mobileEscapeRoomData: homePageMobileEscapeRoomSectionData(mobileEscapeRoom),
 
     pageMeta: getPageMeta(
       seoData,

@@ -58,7 +58,7 @@ const LocationNav = (props) => {
       )}
       {/* ============Location List Menu end*/}
       {/* sticky-bottom-bar */}
-      {props.hasMobileEscape ? <MobileEscapeStickyBar /> : <></>}
+      {props.hasMobileEscapeRoom ? <MobileEscapeStickyBar /> : <></>}
 
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">
@@ -160,6 +160,11 @@ const LocationNav = (props) => {
                   otherGameSlugList={props.otherGameSlugList}
                   eventSlugList={props.eventSlugList}
                   giftBooking={props.giftBooking ? props.giftBooking : false}
+                  hasMobileEscapeRoom={
+                    props.hasMobileEscapeRoom
+                      ? props.hasMobileEscapeRoom
+                      : false
+                  }
                 ></DropDownMenu>
               )}
             </div>

@@ -70,149 +70,42 @@ const MobileEscapeHomeCarousel = (props) => {
         partialVisible={true}
       >
         {/*====== slide 1========= */}
-        <div className="text-white group px-2">
-          <div className="mbl-hcard-container bg-[#1D1D1D] px-4 py-6 md:p-6 2xl:p-8 rounded-2xl">
-            <div className="mbl-card-head ">
-              <h3 className="text-[22px] md:text-[24px] lg:text-[26px] text-gold font-medium">
-                PRICING
-              </h3>
-            </div>
+        {props.infoList.map((item, index) => {
+          return (
+            <div key={index} className="text-white group px-2">
+              <div className="mbl-hcard-container bg-[#1D1D1D] px-4 py-6 md:p-6 2xl:px-8 2xl:py-10 rounded-2xl">
+                <div className="mbl-card-head pb-2 md:pb-0">
+                  <h3 className="text-[22px] md:text-[24px] lg:text-[26px] text-gold font-medium">
+                    {item.title}
+                  </h3>
+                </div>
 
-            <div className="mbl-h-card-bottom mt-5 md:mt-6 2xl:mt-8">
-              <p className="text-white lg:text-lg font-medium">
-                $19.99 per Person
-                <span className="text-gray-400 text-sm lg:text-base">
-                  {" "}
-                  (20-person minimum)
-                </span>
-              </p>
-              <p className="lg:text-lg text-[#A5A5A5] mt-2">
-                Enjoy your first round for $19.99 per person. Add a second round
-                with a different game for 50% off at just $9.99 per person.
-              </p>
+                <div className="mbl-h-card-bottom mt-5 md:mt-6 2xl:mt-8">
+                  <p className="text-white lg:text-lg font-medium">
+                    {item.subTitle !== null ? item.subTitle : ""}
+                    {item.subTitleNote !== null ? (
+                      <span className="text-gray-400 text-sm lg:text-base">
+                        {" "}
+                        {item.subTitleNote}
+                      </span>
+                    ) : (
+                      <></>
+                    )}
+                  </p>
+                  {item.infoCardText !== null ? (
+                    <p className="lg:text-lg text-[#A5A5A5] mt-2">
+                      Enjoy your first round for $19.99 per person. Add a second
+                      round with a different game for 50% off at just $9.99 per
+                      person.
+                    </p>
+                  ) : (
+                    <></>
+                  )}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        {/*====== slide 2========= */}
-        <div className="text-white group ">
-          <div className="mbl-hcard-container bg-[#1D1D1D] px-4 py-6 md:p-6 2xl:p-8 rounded-2xl">
-            <div className="mbl-card-head ">
-              <h3 className="text-[22px] md:text-[24px] lg:text-[26px] text-gold font-medium">
-                PRICING
-              </h3>
-            </div>
-
-            <div className="mbl-h-card-bottom mt-5 md:mt-6 2xl:mt-8">
-              <p className="text-white lg:text-lg font-medium">
-                $19.99 per Person
-                <span className="text-gray-400 text-sm lg:text-base">
-                  {" "}
-                  (20-person minimum)
-                </span>
-              </p>
-              <p className="lg:text-lg text-[#A5A5A5] mt-2">
-                Enjoy your first round for $19.99 per person. Add a second round
-                with a different game for 50% off at just $9.99 per person.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/*====== slide 3========= */}
-        <div className="text-white group ">
-          <div className="mbl-hcard-container bg-[#1D1D1D] px-4 py-6 md:p-6 2xl:p-8 rounded-2xl">
-            <div className="mbl-card-head ">
-              <h3 className="text-[22px] md:text-[24px] lg:text-[26px] text-gold font-medium">
-                PRICING
-              </h3>
-            </div>
-
-            <div className="mbl-h-card-bottom mt-5 md:mt-6 2xl:mt-8">
-              <p className="text-white lg:text-lg font-medium">
-                $19.99 per Person
-                <span className="text-gray-400 text-sm lg:text-base">
-                  {" "}
-                  (20-person minimum)
-                </span>
-              </p>
-              <p className="lg:text-lg text-[#A5A5A5] mt-2">
-                Enjoy your first round for $19.99 per person. Add a second round
-                with a different game for 50% off at just $9.99 per person.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/*====== slide 4========= */}
-        <div className="text-white group  ">
-          <div className="mbl-hcard-container bg-[#1D1D1D] px-4 py-6 md:p-6 2xl:p-8 rounded-2xl">
-            <div className="mbl-card-head ">
-              <h3 className="text-[22px] md:text-[24px] lg:text-[26px] text-gold font-medium">
-                PRICING
-              </h3>
-            </div>
-
-            <div className="mbl-h-card-bottom mt-5 md:mt-6 2xl:mt-8">
-              <p className="text-white lg:text-lg font-medium">
-                $19.99 per Person
-                <span className="text-gray-400 text-sm lg:text-base">
-                  {" "}
-                  (20-person minimum)
-                </span>
-              </p>
-              <p className="lg:text-lg text-[#A5A5A5] mt-2">
-                Enjoy your first round for $19.99 per person. Add a second round
-                with a different game for 50% off at just $9.99 per person.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/*====== slide 5========= */}
-        <div className="text-white group  ">
-          <div className="mbl-hcard-container bg-[#1D1D1D] px-4 py-6 md:p-6 2xl:p-8 rounded-2xl">
-            <div className="mbl-card-head ">
-              <h3 className="text-[22px] md:text-[24px] lg:text-[26px] text-gold font-medium">
-                PRICING
-              </h3>
-            </div>
-
-            <div className="mbl-h-card-bottom mt-5 md:mt-6 2xl:mt-8">
-              <p className="text-white lg:text-lg font-medium">
-                $19.99 per Person
-                <span className="text-gray-400 text-sm lg:text-base">
-                  {" "}
-                  (20-person minimum)
-                </span>
-              </p>
-              <p className="lg:text-lg text-[#A5A5A5] mt-2">
-                Enjoy your first round for $19.99 per person. Add a second round
-                with a different game for 50% off at just $9.99 per person.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/*====== slide 6========= */}
-        <div className="text-white group  ">
-          <div className="mbl-hcard-container bg-[#1D1D1D] px-4 py-6 md:p-6 2xl:p-8 rounded-2xl">
-            <div className="mbl-card-head ">
-              <h3 className="text-[22px] md:text-[24px] lg:text-[26px] text-gold font-medium">
-                PRICING
-              </h3>
-            </div>
-
-            <div className="mbl-h-card-bottom mt-5 md:mt-6 2xl:mt-8">
-              <p className="text-white lg:text-lg font-medium">
-                $19.99 per Person
-                <span className="text-gray-400 text-sm lg:text-base">
-                  {" "}
-                  (20-person minimum)
-                </span>
-              </p>
-              <p className="lg:text-lg text-[#A5A5A5] mt-2">
-                Enjoy your first round for $19.99 per person. Add a second round
-                with a different game for 50% off at just $9.99 per person.
-              </p>
-            </div>
-          </div>
-        </div>
+          );
+        })}
       </Carousel>
     </div>
   );

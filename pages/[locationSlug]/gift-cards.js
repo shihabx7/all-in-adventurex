@@ -31,6 +31,7 @@ const LocationGiftCards = (props) => {
         locationName={props.locationName}
         locationSlug={props.locationSlug}
         giftBooking={props.giftBooking}
+        hasMobileEscapeRoom={props.hasMobileEscapeRoom}
       />
       <div id="mainContent" className="main-content">
         {/* =======header content and breadcum======== */}
@@ -113,7 +114,7 @@ export const getStaticProps = async (context) => {
       escapeGameSlugList: DATA.escapeGameSlugList,
       otherGameSlugList: DATA.otherGameSlugList,
       eventSlugList: DATA.eventSlugList,
-
+      hasMobileEscapeRoom: DATA.hasMobileEscapeRoom,
       locationName: DATA.locationName,
       locationSlug: DATA.locationSlug,
       isPublished: DATA.isPublished,

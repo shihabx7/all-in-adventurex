@@ -22,6 +22,7 @@ const LocationActivities = (props) => {
         locationName={props.locationName}
         locationSlug={props.locationSlug}
         allBooking={props.allBooking}
+        hasMobileEscapeRoom={props.hasMobileEscapeRoom}
       />
       <div id="mainContent" className="main-content">
         <DynamicPageBread
@@ -84,7 +85,7 @@ export const getStaticProps = async (context) => {
       escapeGameSlugList: DATA.escapeGameSlugList,
       otherGameSlugList: DATA.otherGameSlugList,
       eventSlugList: DATA.eventSlugList,
-
+      hasMobileEscapeRoom: DATA.hasMobileEscapeRoom,
       locationName: DATA.locationName,
       locationSlug: DATA.locationSlug,
       isPublished: DATA.isPublished,

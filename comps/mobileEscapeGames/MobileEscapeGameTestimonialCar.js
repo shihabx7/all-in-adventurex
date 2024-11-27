@@ -2,7 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Link from "next/link";
 
-const MobileEscapeGameTestimonialCar = (props) => {
+const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
   const responsive = {
     desktop2xl: {
       breakpoint: { max: 4000, min: 2700 },
@@ -73,210 +73,84 @@ const MobileEscapeGameTestimonialCar = (props) => {
         //removeArrowOnDeviceType={["tablet", "mobile"]}
         //deviceType={this.props.deviceType}
         dotListClass="custom-dot-list-style"
-        itemClass="game-carousel-card  px-2 sm:px-3 lg:px-3 3xl:px-4  py-4 md:py-8"
+        itemClass="game-carousel-card   px-2 sm:px-3 lg:px-3 3xl:px-4  py-4 md:py-8"
         renderDotsOutside={true}
         partialVisible={true}
       >
-        {/*====== slide 1========= */}
-        <div className="text-white   bg-cover">
-          <div className="mer-testi-card-container bg-[#FFF9EB]  rounded-[12px]">
-            <div className="merc-row flex flex-col sm:flex-row  ">
-              <div className="merc-img merc-col w-full sm:w-[47%]  lg:w-[46%] 3xl:w-[42%] p-2 sm:p-3 md:p-4 lg:p-4 3xl:p-5">
-                <img
-                  src="/assets/mobile-escape-room/testimonials/mobile-escape-game-testimonial-1.jpg"
-                  alt="allinadventures mobile escape game testimonial 1"
-                  className="w-full rounded-[12px] lg:rounded-[14px] 3xl:rounded-[16px]"
-                ></img>
-              </div>
-              <div className="merc-testi merc-col w-full sm:w-auto sm:flex-1  relative">
-                <div className="mrec-testi-bg-icon absolute top-0 left-0 w-[200px] z-10">
-                  <img
-                    src="/assets/mobile-escape-room/icon/allinadventures-quote-icon.svg"
-                    alt="allinadventures quote icon"
-                  ></img>
-                </div>
-                <div className="mrec-testi-des sm:absolute top-0 left-0 w-full h-full z-20 flex flex-col justify-between">
-                  <div className="merct-top mt-5 sm:mt-6 md:mt-8 lg:mt-10 2xl:mt-8 3xl:mt-12 p-3 sm:pr-3 md:pr-4 2xl:pr-5">
-                    <h3 className="font-bold text-[22px] sm:text-[24px] 3xl:text-[28px] leading-[1.3] text-[#CA9342]">
-                      UNFORGETTABLE TEAM-BUILDING EXPERIENCE
-                    </h3>
-                    <div className="text-[#4A2F03] mt-1 2xl:mt-2 3xl:mt-3">
-                      "Our team had an amazing time with the mobile escape room!
-                      It brought everyone together and strengthened our bonds.
-                      The puzzles were challenging yet fun, and we're still
-                      talking about it weeks later!"
-                    </div>
+        {testimonialList.map((item, index) => {
+          return (
+            <div
+              key={item.id}
+              className="text-white bg-[#FFF9EB] rounded-[14px] h-full bg-cover"
+            >
+              <div className="mer-testi-card-container   rounded-[14px]">
+                <div className="merc-row flex flex-col sm:flex-row  ">
+                  <div className="merc-img max-h-[270px] zm:max-h-[300px] overflow-hidden sm:max-h-max  merc-col w-full sm:w-[47%]  lg:w-[40%] xl:w-[41%] 3xl:w-[42%] p-2 rm:p-3 md:p-4 lg:p-4 3xl:p-5">
+                    <img
+                      alt={
+                        item.testimonialImage.alt
+                          ? item.testimonialImage.alt
+                          : "Allinadventures mobile escape room testimonial " +
+                            index
+                      }
+                      src={
+                        item.testimonialImage.hasImage
+                          ? item.testimonialImage.url
+                          : "/assets/mobile-escape-room/testimonials/mobile-escape-game-testimonial-1.jpg"
+                      }
+                      className="w-full rounded-[12px] lg:rounded-[12px] 3xl:rounded-[12px] "
+                    ></img>
                   </div>
-                  <div className="merct-bottom flex space-x-2 items-center md:mb-8 2xl:mb-6 3xl:mb-10 p-3 pb-5 sm:pr-3 md:pr-4 2xl:pr-5">
-                    <div className="merct-avater w-[52px] h-[52px] rounded-full bg-gray-300"></div>
-                    <div className="merct-auth-info">
-                      <div className="merct-rating">
-                        <img
-                          src="/assets/mobile-escape-room/icon/five-star-review.svg"
-                          alt="allinadventures fivestar icon"
-                        ></img>
-                      </div>
-                      <div className="merct-rating text-[#A17F47] text-sm mt-2">
-                        <span>Sarah J., </span>
-                        <span>Corporate Event Organizer</span>
-                      </div>
+                  <div className="merc-testi merc-col w-full sm:w-auto sm:flex-1  relative">
+                    <div className="mrec-testi-bg-icon absolute top-0 left-[10px] w-[200px] z-10">
+                      <img
+                        className="block max-w-[100px] rm:max-w-[120px] sm:max-w-[130px] md:max-w-[140px] xl:max-w-[120px] 2xl:max-w-[150px] 3xl:max-w-[180px]"
+                        src="/assets/mobile-escape-room/icon/allinadventures-quote-icon.svg"
+                        alt="allinadventures quote icon"
+                      ></img>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/*====== slide 2========= */}
-        <div className="text-white   bg-cover">
-          <div className="mer-testi-card-container bg-[#FFF9EB]  rounded-[12px]">
-            <div className="merc-row flex flex-col sm:flex-row  ">
-              <div className="merc-img merc-col w-full sm:w-[47%]  lg:w-[46%] 3xl:w-[42%] p-2 sm:p-3 md:p-4 lg:p-4 3xl:p-5">
-                <img
-                  src="/assets/mobile-escape-room/testimonials/mobile-escape-game-testimonial-2.jpg"
-                  alt="allinadventures mobile escape game testimonial 2"
-                  className="w-full rounded-[12px] lg:rounded-[14px] 3xl:rounded-[16px]"
-                ></img>
-              </div>
-              <div className="merc-testi merc-col w-full sm:w-auto sm:flex-1  relative">
-                <div className="mrec-testi-bg-icon absolute top-0 left-0 w-[200px] z-10">
-                  <img
-                    src="/assets/mobile-escape-room/icon/allinadventures-quote-icon.svg"
-                    alt="allinadventures quote icon"
-                  ></img>
-                </div>
-                <div className="mrec-testi-des sm:absolute top-0 left-0 w-full h-full z-20 flex flex-col justify-between">
-                  <div className="merct-top mt-5 sm:mt-6 md:mt-8 lg:mt-10 2xl:mt-8 3xl:mt-12 p-3 sm:pr-3 md:pr-4 2xl:pr-5">
-                    <h3 className="font-bold text-[22px] sm:text-[24px] 3xl:text-[28px] leading-[1.3] text-[#CA9342]">
-                      PERFECT FOR FAMILY CELEBRATIONS
-                    </h3>
-                    <div className="text-[#4A2F03] mt-1 2xl:mt-2 3xl:mt-3">
-                      "We celebrated my son's birthday with the mobile escape
-                      room, and it was a huge hit! The kids had a blast solving
-                      puzzles together, and the setup was seamless. Highly
-                      recommend for any family event!"
-                    </div>
-                  </div>
-                  <div className="merct-bottom flex space-x-2 items-center md:mb-8 2xl:mb-6 3xl:mb-10 p-3 pb-5 sm:pr-3 md:pr-4 2xl:pr-5">
-                    <div className="merct-avater w-[52px] h-[52px] rounded-full bg-gray-300"></div>
-                    <div className="merct-auth-info">
-                      <div className="merct-rating">
-                        <img
-                          src="/assets/mobile-escape-room/icon/five-star-review.svg"
-                          alt="allinadventures fivestar icon"
-                        ></img>
+                    <div className="mrec-testi-des sm:absolute top-0 left-0 w-full h-full z-20 flex flex-col justify-between">
+                      <div className="merct-top mt-2 rm:mt-3  sm:mt-5 md:mt-8 lg:mt-10 xl:mt-3 2xl:mt-5 3xl:mt-8 p-3 sm:pr-3 md:pr-4 2xl:pr-5">
+                        <h3 className="font-bold text-[20px] rm:text-[24px] 3xl:text-[28px] leading-[1.3] text-[#CA9342]">
+                          {item.title}
+                        </h3>
+                        <div
+                          className="text-[#4A2F03] text-sm mt-2 2xl:mt-2 3xl:mt-3 xl:text-sm 2xl:text-base "
+                          dangerouslySetInnerHTML={{ __html: item.text }}
+                        ></div>
                       </div>
-                      <div className="merct-rating text-[#A17F47] text-sm mt-2">
-                        <span>John D., </span>
-                        <span>Happy Parent</span>
+                      <div className="merct-bottom flex space-x-2 items-center lg:mb-3 2xl:mb-4 3xl:mb-6 p-3 pb-5 sm:pr-3 md:pr-4 2xl:pr-5">
+                        <div className="merct-avater w-[52px] h-[52px] md:w-[60px] md:h-[60px] rounded-full bg-gray-300">
+                          {item.authorAvatar.hasImage ? (
+                            <img
+                              className="w-[52px] h-[52px] md:w-[60px] md:h-[60px] rounded-full"
+                              src={item.authorAvatar.url}
+                              alt={item.authorAvatar.alt}
+                            ></img>
+                          ) : (
+                            <></>
+                          )}
+                        </div>
+                        <div className="merct-auth-info">
+                          <div className="merct-rating">
+                            <img
+                              src="/assets/mobile-escape-room/icon/five-star-review.svg"
+                              alt="allinadventures fivestar icon"
+                            ></img>
+                          </div>
+                          <div className="merct-rating text-[#A17F47] text-sm mt-2">
+                            <span>{item.author}, </span>
+                            <span>{item.designation}</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        {/*====== slide 3========= */}
-        <div className="text-white   bg-cover">
-          <div className="mer-testi-card-container bg-[#FFF9EB]  rounded-[12px]">
-            <div className="merc-row flex flex-col sm:flex-row  ">
-              <div className="merc-img merc-col w-full sm:w-[47%]  lg:w-[46%] 3xl:w-[42%] p-2 sm:p-3 md:p-4 lg:p-4 3xl:p-5">
-                <img
-                  src="/assets/mobile-escape-room/testimonials/mobile-escape-game-testimonial-3.jpg"
-                  alt="allinadventures mobile escape game testimonial 3"
-                  className="w-full rounded-[12px] lg:rounded-[14px] 3xl:rounded-[16px]"
-                ></img>
-              </div>
-              <div className="merc-testi merc-col w-full sm:w-auto sm:flex-1  relative">
-                <div className="mrec-testi-bg-icon absolute top-0 left-0 w-[200px] z-10">
-                  <img
-                    src="/assets/mobile-escape-room/icon/allinadventures-quote-icon.svg"
-                    alt="allinadventures quote icon"
-                  ></img>
-                </div>
-                <div className="mrec-testi-des sm:absolute top-0 left-0 w-full h-full z-20 flex flex-col justify-between">
-                  <div className="merct-top mt-5 sm:mt-6 md:mt-8 lg:mt-10 2xl:mt-8 3xl:mt-12 p-3 sm:pr-3 md:pr-4 2xl:pr-5">
-                    <h3 className="font-bold text-[22px] sm:text-[24px] 3xl:text-[28px] leading-[1.3] text-[#CA9342]">
-                      A FUN AND ENGAGING ACTIVITY
-                    </h3>
-                    <div className="text-[#4A2F03] mt-1 2xl:mt-2 3xl:mt-3">
-                      "The mobile escape room was the highlight of our
-                      conference! Participants loved the unique experience, and
-                      it was a fantastic way to break the ice. I can't wait to
-                      book again for our next event!"
-                    </div>
-                  </div>
-                  <div className="merct-bottom flex space-x-2 items-center md:mb-8 2xl:mb-6 3xl:mb-10 p-3 pb-5 sm:pr-3 md:pr-4 2xl:pr-5">
-                    <div className="merct-avater w-[52px] h-[52px] rounded-full bg-gray-300"></div>
-                    <div className="merct-auth-info">
-                      <div className="merct-rating">
-                        <img
-                          src="/assets/mobile-escape-room/icon/five-star-review.svg"
-                          alt="allinadventures fivestar icon"
-                        ></img>
-                      </div>
-                      <div className="merct-rating text-[#A17F47] text-sm mt-2">
-                        <span>Lisa M., </span>
-                        <span>Event Planner</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/*====== slide 4========= */}
-        <div className="text-white   bg-cover">
-          <div className="mer-testi-card-container bg-[#FFF9EB]  rounded-[12px]">
-            <div className="merc-row flex flex-col sm:flex-row  ">
-              <div className="merc-img merc-col w-full sm:w-[47%]  lg:w-[46%] 3xl:w-[42%] p-2 sm:p-3 md:p-4 lg:p-4 3xl:p-5">
-                <img
-                  src="/assets/mobile-escape-room/testimonials/mobile-escape-game-testimonial-1.jpg"
-                  alt="allinadventures mobile escape game testimonial 1"
-                  className="w-full rounded-[12px] lg:rounded-[14px] 3xl:rounded-[16px]"
-                ></img>
-              </div>
-              <div className="merc-testi merc-col w-full sm:w-auto sm:flex-1  relative">
-                <div className="mrec-testi-bg-icon absolute top-0 left-0 w-[200px] z-10">
-                  <img
-                    src="/assets/mobile-escape-room/icon/allinadventures-quote-icon.svg"
-                    alt="allinadventures quote icon"
-                  ></img>
-                </div>
-                <div className="mrec-testi-des sm:absolute top-0 left-0 w-full h-full z-20 flex flex-col justify-between">
-                  <div className="merct-top mt-5 sm:mt-6 md:mt-8 lg:mt-10 2xl:mt-8 3xl:mt-12 p-3 sm:pr-3 md:pr-4 2xl:pr-5">
-                    <h3 className="font-bold text-[22px] sm:text-[24px] 3xl:text-[28px] leading-[1.3] text-[#CA9342]">
-                      UNFORGETTABLE TEAM-BUILDING EXPERIENCE
-                    </h3>
-                    <div className="text-[#4A2F03] mt-1 2xl:mt-2 3xl:mt-3">
-                      "Our team had an amazing time with the mobile escape room!
-                      It brought everyone together and strengthened our bonds.
-                      The puzzles were challenging yet fun, and we're still
-                      talking about it weeks later!"
-                    </div>
-                  </div>
-                  <div className="merct-bottom flex space-x-2 items-center md:mb-8 2xl:mb-6 3xl:mb-10 p-3 pb-5 sm:pr-3 md:pr-4 2xl:pr-5">
-                    <div className="merct-avater w-[52px] h-[52px] rounded-full bg-gray-300"></div>
-                    <div className="merct-auth-info">
-                      <div className="merct-rating">
-                        <img
-                          src="/assets/mobile-escape-room/icon/five-star-review.svg"
-                          alt="allinadventures fivestar icon"
-                        ></img>
-                      </div>
-                      <div className="merct-rating text-[#A17F47] text-sm mt-2">
-                        <span>Sarah J., </span>
-                        <span>Corporate Event Organizer</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          );
+        })}
       </Carousel>
     </div>
   );

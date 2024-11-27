@@ -21,7 +21,7 @@ import {
   getEventDetailData,
   getEventTestimonialData,
 } from "../../../lib/locationEventPageDataFormation";
-
+import { checkActiveMobileEscape } from "../../../lib/dataFormation/mobileEscapeDataFormation";
 export const getLocationEventPageData = async (locslug, eventSlug) => {
   const eventDataReq =
     apiUrl + "events?filters[eventSlug][$eq]=" + eventSlug + eventPageQuery;
@@ -41,6 +41,12 @@ export const getLocationEventPageData = async (locslug, eventSlug) => {
   const locationRes = await fetch(locDataReq, apiSetting);
   const locationObj = await locationRes.json();
   const locationResData = locationObj.data[0].attributes;
+  const mobileEscapeRoom = locationResData.mobileEscapeRoom;
+
+  let isActiveMobileEscape = false;
+  if (mobileEscapeRoom.length > 0) {
+    isActiveMobileEscape = checkActiveMobileEscape(mobileEscapeRoom);
+  }
   //console.log(locationResData);
   // fetch all location list as an array
   const locationListRes = await fetch(locationSlugListQuery, apiSetting);
@@ -68,6 +74,7 @@ export const getLocationEventPageData = async (locslug, eventSlug) => {
     eventName: pageResData.eventName,
     eventSlug: pageResData.eventSlug,
     activeGameBooking: locEventData.activeGameBooking,
+    hasMobileEscapeRoom: isActiveMobileEscape,
     pageMeta: getPageMeta(
       pageResData.seo,
       locEventData,

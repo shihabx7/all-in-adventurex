@@ -19,7 +19,8 @@ function MobileEscapeStickyBar(props) {
       setShownotice(true);
     }
   }, []);
-
+  //919 213 0849
+  //919 213 1724
   return (
     <>
       {!showNotice ? (
@@ -27,7 +28,11 @@ function MobileEscapeStickyBar(props) {
       ) : (
         <div className="mer-b-bar cursor-pointer w-full fixed z-[999] bottom-0 left-0  bg-[url('/assets/gift-images/Bottom-Bar-mobile-desktop.png')] bg-cover">
           <a
-            href="#"
+            href={
+              props.loationSlug
+                ? "/" + props.loationSlug + "/activities/mobile-escape-room"
+                : "#"
+            }
             className="sticky-gift-container w-full  relative z-80 block"
           >
             <div className="stgb-left absolute bottom-[-14px] left-[-6px] md:bottom-[-30px] xl:bottom-[-44px] md:left-[0px] max-w-[48px] md:max-w-[80px] xl:max-w-[116px]">

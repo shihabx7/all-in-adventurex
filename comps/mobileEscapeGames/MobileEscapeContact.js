@@ -1,6 +1,10 @@
 import Script from "next/script";
 
-const MobileEscapeContact = (props) => {
+const MobileEscapeContact = ({
+  locationInfo,
+  contactSectionData,
+  locationName,
+}) => {
   const getStAddress = (slug) => {
     var ctArr = slug.split("-");
     var st = ctArr[ctArr.length - 1].toUpperCase();
@@ -59,54 +63,61 @@ const MobileEscapeContact = (props) => {
       >
         <div className="max-w-7xl mx-auto md:px-4">
           {/**======================================================content============ */}
-          <div className="conatct-section flex flex-col md:flex-row justify-between">
+          <div className="conatct-section flex flex-col lg:flex-row justify-between md:max-w-[660px] lg:max-w-none mx-auto">
             {/**======================================================content Info+FAQ============ */}
-            <div className="contact-info-box pt-16 md:pt-12 px-4 order-2 md:order-1 w-full md:w-[44%] lg:w-[44%]">
-              <div className="in-sec-title mb-4 md:mb-6 lg:mb-8">
-                <h2 className="golden-text font-bold text-3xl  xl:text-4xl mb-2 xl:mb-4">
-                  MOBILE MYSTERY INQUIRY
+            <div className="contact-info-box pt-16 md:pt-12 px-4   order-2 lg:order-1 w-full  lg:w-[46%]">
+              <div className="in-sec-title mb-5 rm:mb-6 md:mb-6 lg:mb-8">
+                <h2
+                  className="dark-gold mb-3 rm:mb-4 xl:mb-6 pt-0 md:py-2 text-2xl rm:text-3xl md:text-[40px] lg:text-[40px] 2xl:text-[48px] font-os font-bold uppercase"
+                  style={{ lineHeight: 1.2 }}
+                >
+                  {contactSectionData.sectionTitle}
                 </h2>
-                <p className="text-gray-200 lg:text-lg 3xl:text-xl">
-                  Let us know more about your event! We will be in contact
-                  within 24 hours to book your event.
-                </p>
+                {contactSectionData.sectionSubTitle !== null ? (
+                  <div
+                    className="text-gray-200 lg:text-lg 3xl:text-xl"
+                    dangerouslySetInnerHTML={{
+                      __html: contactSectionData.sectionSubTitle,
+                    }}
+                  ></div>
+                ) : (
+                  <></>
+                )}
               </div>
-              <div className="mer-notice mt-4 md:mt-6">
-                <div className=" lg:text-lg text-[#eeeeee] mt-4 ">
-                  <p className="text-[#A5A5A5]">
-                    <span className="text-[#E0BF62]">Please note:</span> All
-                    Mobile Mystery events require the use of one (1) mobile
-                    device per game provided to your group by your organization
-                    plus a local Wi-Fi / Internet connection.
-                    <span className="font-medium text-white">
-                      While two devices are a minimum requirement, you may find
-                      that up to six devices are needed for a single event
-                      (depending on how many games are selected).
-                    </span>
-                  </p>
-                </div>
+              {contactSectionData.note !== null ? (
+                <div
+                  className="mer-notice mt-4 md:mt-6 xl:text-lg text-[#eeeeee] mbl-group-text"
+                  dangerouslySetInnerHTML={{ __html: contactSectionData.note }}
+                ></div>
+              ) : (
+                <></>
+              )}
 
-                <div className=" lg:text-lg text-[#eeeeee] mt-4 ">
-                  <p className="text-[#A5A5A5]">
-                    These devices are used to access the electronic portion of
-                    the game. If you are unable to provide this, we encourage
-                    you to take advantage of our in-store experiences!
-                  </p>
-                </div>
-              </div>
               <div className="mer-info-list-box mt-8 lg:mt-10 3xl:mt-16">
                 <div className="mer-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-y-[1px] border-[#D2C6AA]">
                   <div className="w-[20px] md:w-[24px]">
                     <img
                       className="w-full"
+                      alt={"Allinadventures icon map"}
                       src="/assets/svg/event-icon-pin.svg"
                     ></img>
                   </div>
                   <div className="flex-1">
-                    <a className="text-[#F4E6C3] hover:text-red-700" href={"#"}>
-                      {
-                        "props.5959 Triangle Town Blvd Space EU 2113, Raleigh, NC 27616.phone"
-                      }
+                    <a
+                      className="text-[#F4E6C3] hover:text-red-700"
+                      href={getDirection(
+                        locationInfo.address,
+                        locationInfo.state,
+                        locationInfo.zip,
+                        locationInfo.cityName
+                      )}
+                    >
+                      {getAddress(
+                        locationInfo.address,
+                        locationInfo.state,
+                        locationInfo.zip,
+                        locationInfo.cityName
+                      )}
                     </a>
                   </div>
                 </div>
@@ -114,31 +125,73 @@ const MobileEscapeContact = (props) => {
                   <div className="w-[20px] md:w-[24px]">
                     <img
                       className="w-full"
+                      alt={"Allinadventures icon phone"}
                       src="/assets/svg/event-icon-phone.svg"
                     ></img>
                   </div>
                   <div className="flex-1">
                     <a
                       className="text-[#F4E6C3] hover:text-red-700"
-                      href={"tel:+1919-205-5008"}
+                      href={
+                        locationInfo.phone !== null
+                          ? "tel:" + locationInfo.phone
+                          : "tel:+1919-205-5008"
+                      }
                     >
-                      {"+1 919-205-5008"}
+                      {locationInfo.phone
+                        ? locationInfo.phone
+                        : "tel:+1919-205-5008"}
                     </a>
                   </div>
                 </div>
+                {locationInfo.text !== null ? (
+                  <div className="mer-info-list flex  items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
+                    <div className="w-[20px] md:w-[24px]">
+                      <img
+                        className="w-full"
+                        alt={"Allinadventures icon text message"}
+                        src="/assets/svg/util/allinadventures-text-message-icon.svg"
+                      ></img>
+                    </div>
+                    <div className="flex-1">
+                      <a
+                        className="text-[#F4E6C3] hover:text-red-700"
+                        href={
+                          locationInfo.text !== null
+                            ? "sms:" + locationInfo.text
+                            : "sms:+1919-205-5008"
+                        }
+                      >
+                        {locationInfo.phone
+                          ? locationInfo.phone
+                          : "tel:+1919-205-5008"}
+                      </a>
+                    </div>
+                  </div>
+                ) : (
+                  <></>
+                )}
+                {/*store email*/}
                 <div className="mer-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
                   <div className="w-[20px] md:w-[24px]">
                     <img
                       className="w-full"
+                      alt={"Allinadventures icon email"}
                       src="/assets/svg/event-icon-email.svg"
                     ></img>
                   </div>
                   <div className="flex-1">
                     <a
                       className="text-[#F4E6C3] hover:text-red-700"
-                      href={"mailto:store123@allinadventures.com"}
+                      href={
+                        locationInfo.storeEmail !== null
+                          ? "mailto:" + locationInfo.storeEmail
+                          : "mailto:store123@allinadventures.com"
+                      }
                     >
-                      {"store123@allinadventures.com"}
+                      {locationInfo.storeEmail !== null
+                        ? locationInfo.storeEmail
+                        : "store123@allinadventures.com"}
                     </a>
                   </div>
                 </div>
@@ -148,12 +201,12 @@ const MobileEscapeContact = (props) => {
             {/**=====================================Yext Form================================== */}
             <div
               id="mer-form"
-              className="order-1 md:order-2 contact-form-box w-full md:w-[54%] lg:w-[54%]"
+              className="order-1 lg:order-2 contact-form-box w-full lg:w-[50%]"
             >
               <div className="contact-form-bg bg-[#F4E6C3] px-4 py-8 md:p-6 lg:p-8 md:rounded w-full">
                 <div
                   className="pipedriveWebForms"
-                  data-pd-webforms="https://webforms.pipedrive.com/f/2Z8p4ZqukDQoxgiqFVoNKFZfVoGoClX7qWK065Gmf005eEwiLpSddFegYnUHnvLJV"
+                  data-pd-webforms="https://webforms.pipedrive.com/f/1GbaceOYFfjizbqZICDNPK2Ms6Tv8J5gwKVdEiv5DLoh98NAMtTxpy1GrhsG1Xinx"
                 >
                   <Script
                     onLoad={() => {
@@ -165,6 +218,7 @@ const MobileEscapeContact = (props) => {
                 </div>
               </div>
             </div>
+
             {/**=====================================Yext Form end================================== */}
           </div>
         </div>

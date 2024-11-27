@@ -1,21 +1,35 @@
 import { apiSetting, apiUrl } from "../../../lib/apiSettings";
+import { checkActiveMobileEscape } from "../../../lib/dataFormation/mobileEscapeDataFormation";
 export async function fetchLocationActivities(locationSlug) {
   const reqUrl =
     apiUrl +
     "locations?filters[slug][$eq]=" +
     locationSlug +
-    "&populate[locationActivities][populate][activity][populate][activityInfo]=*";
+    "&populate[locationActivities][populate][activity][populate][activityInfo]=*&populate[mobileEscapeRoom][populate]=*";
   const res = await fetch(reqUrl, apiSetting);
   const activities = await res.json();
   const activityList = activities.data[0].attributes.locationActivities;
+  const mobileEscapeRoom = activities.data[0].attributes.mobileEscapeRoom;
+
   let retArr = [];
   for (let i = 0; i < activityList.length; i++) {
     let obj = {
       id: i + 1,
       activitySlug: activityList[i].activity.data.attributes.activitySlug,
     };
+
     retArr.push(obj);
   }
+  if (mobileEscapeRoom.length > 0) {
+    if (checkActiveMobileEscape(mobileEscapeRoom)) {
+      let mObj = {
+        id: activityList.length + 1,
+        activitySlug: "mobile-escape-room",
+      };
+      retArr.push(mObj);
+    }
+  }
+  //console.log(retArr);
   return retArr;
 }
 

@@ -11,6 +11,7 @@ import ActivityLocHero from "../../../comps/activitiyPageComps/ActivityLocHero";
 import ActivityLocDetails from "../../../comps/activitiyPageComps/ActivityLocDetails";
 import ActivityGallery from "../../../comps/activitiyPageComps/ActivityGallery";
 import ActivityVideo from "../../../comps/activitiyPageComps/ActivityVideo";
+import MobileEscapeGamePageUI from "../../../comps/mobileEscapeGames/MobileEscapeGamePageUI";
 
 const LocSingleActivity = (props) => {
   return (
@@ -26,8 +27,9 @@ const LocSingleActivity = (props) => {
         locationName={props.locationName}
         locationSlug={props.locationSlug}
         gameBooking={props.gameBooking}
+        allBooking={!props.gameBooking ? props.allBooking : false}
         partyBooking={props.partyBooking}
-        hasMobileEscape={false}
+        hasMobileEscapeRoom={props.hasMobileEscapeRoom}
       />
       <div id="mainContent" className="main-content">
         {/* =======header content and breadcum======== */}
@@ -37,28 +39,43 @@ const LocSingleActivity = (props) => {
           activitySlug={props.activitySlug}
           activityName={props.activityName}
         />
-        <ActivityLocHero
-          isPublished={props.isPublished}
-          locationInfo={props.locationInfo}
-          pageData={props.pageData}
-          gameBooking={props.gameBooking}
-          partyBooking={props.partyBooking}
-          allBooking={props.allBooking}
-          businessHours={props.businessHours}
-          holidayHours={props.holidayHours}
-        />
-        <ActivityLocDetails
-          activityData={props.activityData}
-          isPublished={props.isPublished}
-          gameBooking={props.gameBooking}
-          partyBooking={props.partyBooking}
-        />
-        <ActivityGallery activityGallery={props.activityGallery} />
-        <ActivityVideo
-          videoData={props.videoData}
-          locationSlug={props.locationSlug}
-        />
-        {/* =======header content and breadcum======== end */}
+        {/*  main activity components */}
+        {/*console.log(props.mobileEscapeRoomPageData)*/}
+        {props.mobileEscapeRoomPageData ? (
+          <>
+            <MobileEscapeGamePageUI
+              mobileEscapeRoomPageData={props.mobileEscapeRoomPageData}
+              locationInfo={props.locationInfo}
+              locationName={props.locationName}
+              locationSlug={props.locationSlug}
+            />
+          </>
+        ) : (
+          <>
+            <ActivityLocHero
+              isPublished={props.isPublished}
+              locationInfo={props.locationInfo}
+              pageData={props.pageData}
+              gameBooking={props.gameBooking}
+              partyBooking={props.partyBooking}
+              allBooking={props.allBooking}
+              businessHours={props.businessHours}
+              holidayHours={props.holidayHours}
+            />
+            <ActivityLocDetails
+              activityData={props.activityData}
+              isPublished={props.isPublished}
+              gameBooking={props.gameBooking}
+              partyBooking={props.partyBooking}
+            />
+            <ActivityGallery activityGallery={props.activityGallery} />
+            <ActivityVideo
+              videoData={props.videoData}
+              locationSlug={props.locationSlug}
+            />
+          </>
+        )}
+
         {/* ===========Page Content here=========*/}
       </div>
 
@@ -101,11 +118,12 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
+  //console.log(context.params.activitySlug);
   const DATA = await getLocationsActivityPageData(
     context.params.locationSlug,
     context.params.activitySlug
   );
-  //console.log(DATA);
+  //console.log(context.params.activitySlug);
 
   return {
     props: {
@@ -118,6 +136,7 @@ export const getStaticProps = async (context) => {
       locationName: DATA.locationName,
       locationSlug: DATA.locationSlug,
       isPublished: DATA.isPublished,
+      hasMobileEscapeRoom: DATA.hasMobileEscapeRoom,
       totalLocations: DATA.totalLocations,
       locationInfo: DATA.locationInfo,
       pageMeta: DATA.pageMeta,
@@ -133,6 +152,7 @@ export const getStaticProps = async (context) => {
       videoData: DATA.videoData,
       //location: context.params.locationSlug,
       //activity: context.params.activitySlug,
+      mobileEscapeRoomPageData: DATA.mobileEscapeRoomPageData,
     },
     revalidate: 12,
   };

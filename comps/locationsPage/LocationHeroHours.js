@@ -94,25 +94,51 @@ const LocationHeroHours = (props) => {
         {/*======================Store email phone ===== */}
         <div className="locinfo-row border-b border-[#D2C6AA] py-2 px-2 lg:py-3">
           <div className="flex  flex-col md:flex-row justify-between md:space-x-1 space-y-2 md:space-y-0 md:items-center md:text-lg ">
-            <div className="flex space-x-2 items-center md:w-[50%]">
-              <div className="loc-dt-icon">
-                <img
-                  className="w-[24px]"
-                  alt="AllinAdventures Escape Room phone number"
-                  src="/assets/svg/util/event-icon-phone.svg"
-                ></img>
+            <div className="md:w-[50%]">
+              <div className="ic-row flex space-x-2 items-center">
+                <div className="loc-dt-icon">
+                  <img
+                    className="w-[24px]"
+                    alt="A phone icon showing the contact number of the store of All In Adventures."
+                    src="/assets/svg/util/event-icon-phone.svg"
+                  ></img>
+                </div>
+                <div className="loc-dt-text text-[#232323] md:text-lg flex-1">
+                  <p>
+                    <a
+                      className="md:text-lg hover:text-blue-700"
+                      href={"tel:" + props.locationInfo.phone}
+                    >
+                      {props.locationInfo.phone}
+                    </a>
+                  </p>
+                </div>
               </div>
-              <div className="loc-dt-text text-[#232323] md:text-lg flex-1">
-                <p>
-                  <a
-                    className="md:text-lg hover:text-blue-700"
-                    href={"tel:" + props.locationInfo.phone}
-                  >
-                    {props.locationInfo.phone}
-                  </a>
-                </p>
-              </div>
+              {props.locationInfo.text !== null ? (
+                <div className="ic-row flex space-x-2 items-center mt-3">
+                  <div className="loc-dt-icon">
+                    <img
+                      className="w-[24px]"
+                      alt="A phone sms icon showing the contact number of the store of All In Adventures."
+                      src="/assets/svg/util/allinadventures-text-message-icon.svg"
+                    ></img>
+                  </div>
+                  <div className="loc-dt-text text-[#232323] md:text-lg flex-1 ">
+                    <p>
+                      <a
+                        className="md:text-lg hover:text-blue-700"
+                        href={"sms:" + props.locationInfo.text}
+                      >
+                        {props.locationInfo.text}
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              ) : (
+                <></>
+              )}
             </div>
+
             <div className="flex space-x-2 items-center md:w-[50%]">
               <div className="loc-dt-icon">
                 <img
@@ -164,7 +190,7 @@ const LocationHeroHours = (props) => {
               <div className="loc-dt-text md:text-lg flex-1">
                 <p>
                   {props.locationInfo.wheelChairAccessibility
-                    ? "Wheelchair Accessibility"
+                    ? "Wheelchair Accessible"
                     : ""}
                 </p>
               </div>

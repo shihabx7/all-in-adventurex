@@ -19,7 +19,7 @@ import {
   getOtherGameSlugList,
   getEventSlugList,
 } from "../../../lib/menuDataFormation";
-
+import { checkActiveMobileEscape } from "../../../lib/dataFormation/mobileEscapeDataFormation";
 export const getLocationsContactPageData = async (locslug) => {
   const pageReq = apiUrl + locationContactPageQuery;
 
@@ -35,7 +35,11 @@ export const getLocationsContactPageData = async (locslug) => {
   const locationObj = await locationRes.json();
   const locationResData = locationObj.data[0].attributes;
   const seoData = locationResData.storeContactPage.seo;
-
+  const mobileEscapeRoom = locationResData.mobileEscapeRoom;
+  let isActiveMobileEscape = false;
+  if (mobileEscapeRoom.length > 0) {
+    isActiveMobileEscape = checkActiveMobileEscape(mobileEscapeRoom);
+  }
   // fetch all location list as an array
   const locationListRes = await fetch(locationSlugListQuery, apiSetting);
   const locationListObj = await locationListRes.json();
@@ -55,6 +59,7 @@ export const getLocationsContactPageData = async (locslug) => {
     isPublished: locationResData.isPublished,
     locationSlug: locationResData.slug,
     locationName: locationResData.locationName,
+    hasMobileEscapeRoom: isActiveMobileEscape,
     pageMeta: getPageMeta(
       seoData,
       pageResData.pageHeroMobile.data.attributes.url,

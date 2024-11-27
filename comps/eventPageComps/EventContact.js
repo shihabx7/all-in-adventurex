@@ -171,6 +171,23 @@ const EventContact = (props) => {
                     </a>
                   </span>
                 </div>
+                {props.locationInfo.text != null ? (
+                  <div className="event-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
+                    <span>
+                      <img src="/assets/svg/util/allinadventures-text-message-icon.svg"></img>
+                    </span>
+                    <span>
+                      <a
+                        className="text-[#F4E6C3] hover:text-red-700"
+                        href={"sms:" + props.locationInfo.text}
+                      >
+                        {props.locationInfo.text}
+                      </a>
+                    </span>
+                  </div>
+                ) : (
+                  <></>
+                )}
                 <div className="event-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
                   <span>
                     <img src="/assets/svg/event-icon-email.svg"></img>
@@ -240,7 +257,7 @@ const EventContact = (props) => {
                     <p className="text-[#F4E6C3]">
                       {" "}
                       {props.locationInfo.wheelChairAccessibility
-                        ? "Wheelchair Accessibility"
+                        ? "Wheelchair Accessible"
                         : ""}
                     </p>
                   </span>

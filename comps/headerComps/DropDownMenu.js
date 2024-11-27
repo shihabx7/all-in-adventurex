@@ -178,6 +178,20 @@ const DropDownMenu = (props) => {
           )}
 
           {/*=========================================== Collapse menu Other game List end========== */}
+          {props.hasMobileEscapeRoom ? (
+            <div className="submenu-item">
+              <a
+                href={
+                  "/" + props.locationSlug + "/activities/mobile-escape-room"
+                }
+                className="flex items-center"
+              >
+                <span className="sub-link-txt">Mobile Escape Room</span>
+              </a>
+            </div>
+          ) : (
+            <></>
+          )}
           {/*=========================================== Collapse menu  event List========== */}
 
           <div
