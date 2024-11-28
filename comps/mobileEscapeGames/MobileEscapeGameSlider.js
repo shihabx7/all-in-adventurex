@@ -4,7 +4,7 @@ const MobileEscapeGameSlider = ({ gameCarouselSectionData, locationName }) => {
   return (
     <div className="mer-games-slider bg-black">
       <div className="py-16 md:py-20 lg:py-28  z-20 ">
-        <div className="section-head mb-6 rm:mb-8 md:mb-10 lg:mb-12  md:max-w-[720px] lg:max-w-[1000px] mx-auto px-4 lg:px-0">
+        <div className="section-head mb-6 rm:mb-8 md:mb-10 lg:mb-12  md:max-w-[720px] lg:max-w-[1100px] mx-auto px-4 lg:px-0">
           <MobileTitleSeparatorCenter
             title={
               gameCarouselSectionData.sectionTitle !== null

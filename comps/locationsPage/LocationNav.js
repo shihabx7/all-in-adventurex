@@ -58,7 +58,11 @@ const LocationNav = (props) => {
       )}
       {/* ============Location List Menu end*/}
       {/* sticky-bottom-bar */}
-      {props.hasMobileEscapeRoom ? <MobileEscapeStickyBar /> : <></>}
+      {props.hasMobileEscapeRoom ? (
+        <MobileEscapeStickyBar locationSlug={props.locationSlug} />
+      ) : (
+        <></>
+      )}
 
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">

@@ -119,7 +119,7 @@ const MobileEscapeGameCarousel = ({ escapeGameList, locationName }) => {
                         ></img>
                       </span>
                       <span className="text-[13px] md:text-sm">
-                        Age Range {item.ageRange}
+                        Age {item.ageRange}
                       </span>
                     </p>
                     <p className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">
@@ -160,10 +160,24 @@ const MobileEscapeGameCarousel = ({ escapeGameList, locationName }) => {
 
                   <div className="card-ribbon p-[2px] md:p-[5px] bg-red-600">
                     <div className="inline-block text-center py-2 px-4 border border-dashed border-gray-300">
-                      <p className="text-2xl md:text-3xl text-white font-bold">
-                        {item.price}
+                      <p
+                        className="text-2xl md:text-3xl text-white font-bold"
+                        style={{ lineHeight: 1 }}
+                      >
+                        ${item.price}
                       </p>
-                      <p className="text-lg text-white">Per Persion</p>
+                      <p
+                        className="text-lg text-white mt-1"
+                        style={{ lineHeight: 1 }}
+                      >
+                        Per Person
+                      </p>
+                      <p
+                        className="text-xs md:text-sm  text-slate-200 md:mt-[2px]"
+                        style={{ lineHeight: 1 }}
+                      >
+                        (Min. 20 person)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -183,9 +197,9 @@ const MobileEscapeGameCarousel = ({ escapeGameList, locationName }) => {
                   <div className="card-game-link mt-3 rm:mt-4 flex justify-between text-center">
                     <a
                       href="#mobile-escape-room-form"
-                      className="border block card-book-btnxx   border-red-600 bg-red-600 py-[8px] px-[30px] md:px-16 md:py-3 rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700"
+                      className="border block card-book-btnxx   border-red-600 bg-red-600 py-[8px] px-[30px] md:px-[36px] md:py-3 rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700"
                     >
-                      BOOK NOW
+                      GET A QUOTE
                     </a>
                   </div>
                 </div>

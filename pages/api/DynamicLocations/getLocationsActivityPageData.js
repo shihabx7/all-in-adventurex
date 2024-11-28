@@ -98,12 +98,14 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
     isPublished: locationResData.isPublished,
     locationSlug: locationResData.slug,
     locationName: locationResData.locationName,
-    activityName: isActiveMobileEscape
-      ? "Mobile Escape Room"
-      : pageResData.activityName,
-    activitySlug: isActiveMobileEscape
-      ? "mobile-escape-room"
-      : pageResData.activitySlug,
+    activityName:
+      actSlug == "mobile-escape-room"
+        ? "Mobile Escape Room"
+        : pageResData.activityName,
+    activitySlug:
+      actSlug == "mobile-escape-room"
+        ? "mobile-escape-room"
+        : pageResData.activitySlug,
     hasMobileEscapeRoom: isActiveMobileEscape,
 
     pageMeta:

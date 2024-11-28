@@ -83,6 +83,7 @@ const location = (props) => {
       />
       {props.hasMobileEscapeRoom ? (
         <MobileEscapeGameHomeSection
+          locationSlug={props.locationSlug}
           mobileEscapeRoomData={props.mobileEscapeRoomData}
         />
       ) : (

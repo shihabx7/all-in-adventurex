@@ -29,8 +29,8 @@ function MobileEscapeStickyBar(props) {
         <div className="mer-b-bar cursor-pointer w-full fixed z-[999] bottom-0 left-0  bg-[url('/assets/gift-images/Bottom-Bar-mobile-desktop.png')] bg-cover">
           <a
             href={
-              props.loationSlug
-                ? "/" + props.loationSlug + "/activities/mobile-escape-room"
+              props.locationSlug
+                ? "/" + props.locationSlug + "/activities/mobile-escape-room"
                 : "#"
             }
             className="sticky-gift-container w-full  relative z-80 block"
@@ -59,7 +59,7 @@ function MobileEscapeStickyBar(props) {
                 ></img>
                 <div className="block">
                   <div className=" [text-shadow:_0_3px_0_rgb(0_0_0_/_30%)] text-[13px] md:text-[22px] lg:text-[26px] 2xl:text-[30px] leading-[1.4] font-os font-bold text-white flex space-x-2 justify-center items-center">
-                    BOOK YOUR MOBILE ESCAPE ROOM TODAY
+                    LEARN ABOUT MOBILE ESCAPE ROOM
                   </div>
                 </div>
 

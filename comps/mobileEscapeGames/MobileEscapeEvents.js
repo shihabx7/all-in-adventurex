@@ -63,9 +63,9 @@ const MobileEscapeEvents = ({ eventSectionData, locationName }) => {
         <div className="mbl-h-btn  mt-10 md:mt-14 2xl:mt-16 flex justify-center">
           <a
             href="#mobile-escape-room-form"
-            className="max-w-[340px] px-12 text-center border block text-white border-red-600 bg-red-600 py-[12px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
+            className="max-w-[220px] px-12 text-center border block text-white border-red-600 bg-red-600 py-[12px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
           >
-            BOOK YOUR EVENT TODAY
+            GET A QUOTE
           </a>
         </div>
       </div>

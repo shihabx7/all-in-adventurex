@@ -69,13 +69,19 @@ const MobileEscapeGameHomeSection = (props) => {
               {/* ==================button=====================*/}
               <div className="mbl-h-btn flex space-x-2 justify-between md:justify-start md:space-x-6 mt-8">
                 <a
-                  href="#"
+                  href={
+                    "/" +
+                    props.locationSlug +
+                    "/activities/mobile-escape-room#mobile-escape-room-form"
+                  }
                   className="w-[48%] md:max-w-[220px] text-center border block text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
                 >
                   INQUIRE NOW
                 </a>
                 <a
-                  href="#"
+                  href={
+                    "/" + props.locationSlug + "/activities/mobile-escape-room"
+                  }
                   className="w-[48%] md:max-w-[220px] text-center block border text-white border-red-600 bg-transparent py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
                 >
                   LEARN MORE

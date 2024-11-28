@@ -7,8 +7,9 @@ const MobileEscapeHero = ({ pageHero, locationName }) => {
         <div className="mbl-row flex flex-col lg:flex-row jsutify-between  space-x-0 lg:space-x-10 2xl:space-x-16 items-center">
           <div className="mbl-col w-full lg:w-1/2 order-2 lg:order-1">
             {/* ==================section title=====================*/}
-            <p className="text-[#4A2F03] text-[20px] md:text-[24px] 2xl:text-[28px]">
-              MOBILE ESCAPE ROOM
+            <p className="text-[#4A2F03] text-[14px] rm:text-[15px] md:text-[22px] 2xl:text-[26px]">
+              MOBILE ESCAPE ROOM IN{" "}
+              <span className="uppercase">{locationName}</span>
             </p>
             <h1
               className="text-[#CA9342] font-bold  text-2xl rm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-3 xm:mb-4 md:mb-6 lg:mb-6 font-os outline-tile "
@@ -68,9 +69,9 @@ const MobileEscapeHero = ({ pageHero, locationName }) => {
             <div className="mbl-h-btn  mt-8 md:mt-10 2xl:mt-12">
               <a
                 href="#mobile-escape-room-form"
-                className="max-w-[340px] px-12 text-center border block text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
+                className="max-w-[240px] px-12 text-center border block text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
               >
-                BOOK YOUR EVENT TODAY
+                GET A QUOTE
               </a>
             </div>
           </div>
