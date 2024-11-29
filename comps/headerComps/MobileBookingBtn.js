@@ -23,20 +23,34 @@ const MobileBookingBtn = (props) => {
       <div className="w-[48%]">
         {props.locationSlug ? (
           <>
-            {!props.partyBooking ? (
+            {props.activitySlug !== "mobile-escape-room" ? (
               <>
-                {props.eventSlug ? (
+                {" "}
+                {!props.partyBooking ? (
                   <>
-                    {props.activeGameBooking ? (
-                      <a
-                        href={"/" + props.locationSlug + "/events#eventbooking"}
-                        className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white"
-                      >
-                        BOOK EVENT
-                      </a>
+                    {props.eventSlug ? (
+                      <>
+                        {props.activeGameBooking ? (
+                          <a
+                            href={
+                              "/" + props.locationSlug + "/events#eventbooking"
+                            }
+                            className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white"
+                          >
+                            BOOK EVENT
+                          </a>
+                        ) : (
+                          <a
+                            href={"#eventbooking"}
+                            className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white"
+                          >
+                            BOOK EVENT
+                          </a>
+                        )}
+                      </>
                     ) : (
                       <a
-                        href={"#eventbooking"}
+                        href={"/" + props.locationSlug + "/events#eventbooking"}
                         className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white"
                       >
                         BOOK EVENT
@@ -44,25 +58,27 @@ const MobileBookingBtn = (props) => {
                     )}
                   </>
                 ) : (
-                  <a
-                    href={"/" + props.locationSlug + "/events#eventbooking"}
-                    className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white"
-                  >
-                    BOOK EVENT
-                  </a>
-                )}
-              </>
-            ) : (
-              <>
-                {props.partyBooking.hasParty ? (
                   <>
-                    {props.partyBooking.isActive ? (
-                      <button
-                        onClick={() => bookParty(props.partyBooking)}
-                        className="w-full bg-red-600 font-medium hover:bg-red-700 py-2 px-1 block text-center text-white"
-                      >
-                        BOOK YOUR PARTY
-                      </button>
+                    {props.partyBooking.hasParty ? (
+                      <>
+                        {props.partyBooking.isActive ? (
+                          <button
+                            onClick={() => bookParty(props.partyBooking)}
+                            className="w-full bg-red-600 font-medium hover:bg-red-700 py-2 px-1 block text-center text-white"
+                          >
+                            BOOK YOUR PARTY
+                          </button>
+                        ) : (
+                          <a
+                            href={
+                              "/" + props.locationSlug + "/events#eventbooking"
+                            }
+                            className="bg-red-600 font-medium hover:bg-red-700 py-2 px-2 block text-center text-white"
+                          >
+                            BOOK EVENT
+                          </a>
+                        )}
+                      </>
                     ) : (
                       <a
                         href={"/" + props.locationSlug + "/events#eventbooking"}
@@ -72,14 +88,16 @@ const MobileBookingBtn = (props) => {
                       </a>
                     )}
                   </>
-                ) : (
-                  <a
-                    href={"/" + props.locationSlug + "/events#eventbooking"}
-                    className="bg-red-600 font-medium hover:bg-red-700 py-2 px-2 block text-center text-white"
-                  >
-                    BOOK EVENT
-                  </a>
                 )}
+              </>
+            ) : (
+              <>
+                <a
+                  href={"#mobile-escape-room-form"}
+                  className="bg-red-600 font-medium hover:bg-red-700 py-2 px-2 block text-center text-white"
+                >
+                  BOOK EVENT
+                </a>
               </>
             )}
           </>

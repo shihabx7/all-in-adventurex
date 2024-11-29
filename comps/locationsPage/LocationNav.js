@@ -8,6 +8,7 @@ import GameBookingBtn from "../headerComps/GameBookingBtn";
 import HeaderNotice from "../headerComps/HeaderNotice";
 import LocationMenuBtnHeader from "../util/LocationMenuBtnHeader";
 import MobileBookingBtn from "../headerComps/MobileBookingBtn";
+import MobileEscapeBookingBtn from "../headerComps/MobileEscapeBookingBtn";
 import MobileEscapeStickyBar from "../mobileEscapeGames/MobileEscapeStickyBar";
 
 const LocationNav = (props) => {
@@ -58,7 +59,8 @@ const LocationNav = (props) => {
       )}
       {/* ============Location List Menu end*/}
       {/* sticky-bottom-bar */}
-      {props.hasMobileEscapeRoom ? (
+      {props.hasMobileEscapeRoom &&
+      props.activitySlug !== "mobile-escape-room" ? (
         <MobileEscapeStickyBar locationSlug={props.locationSlug} />
       ) : (
         <></>
@@ -96,18 +98,27 @@ const LocationNav = (props) => {
               <div className="home-nav-menu flex items-center space-x-0 md:space-x-10 lg:space-x-14 justify-end ">
                 {/* ============Nav bar btn desktop  */}
                 <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
-                  <EventBookingBtn
-                    locationSlug={
-                      props.locationSlug ? props.locationSlug : false
-                    }
-                    eventSlug={props.eventSlug ? props.eventSlug : false}
-                    partyBooking={
-                      props.partyBooking ? props.partyBooking : false
-                    }
-                    activeGameBooking={
-                      props.activeGameBooking ? props.activeGameBooking : false
-                    }
-                  />
+                  {props.activitySlug !== "mobile-escape-room" ? (
+                    <EventBookingBtn
+                      locationSlug={
+                        props.locationSlug ? props.locationSlug : false
+                      }
+                      activitySlug={
+                        props.activitySlug ? props.activitySlug : false
+                      }
+                      eventSlug={props.eventSlug ? props.eventSlug : false}
+                      partyBooking={
+                        props.partyBooking ? props.partyBooking : false
+                      }
+                      activeGameBooking={
+                        props.activeGameBooking
+                          ? props.activeGameBooking
+                          : false
+                      }
+                    />
+                  ) : (
+                    <MobileEscapeBookingBtn />
+                  )}
                 </div>
                 <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
                   <GameBookingBtn
@@ -192,6 +203,7 @@ const LocationNav = (props) => {
             activeGameBooking={
               props.activeGameBooking ? props.activeGameBooking : false
             }
+            activitySlug={props.activitySlug ? props.activitySlug : false}
           />
         </div>
         {/*============floating booking btn mobile end==========*/}

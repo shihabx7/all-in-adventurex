@@ -65,7 +65,7 @@ const MobileEscapeContact = ({
           {/**======================================================content============ */}
           <div className="conatct-section flex flex-col lg:flex-row justify-between md:max-w-[660px] lg:max-w-none mx-auto">
             {/**======================================================content Info+FAQ============ */}
-            <div className="contact-info-box pt-16 md:pt-12 px-4   order-2 lg:order-1 w-full  lg:w-[46%]">
+            <div className="contact-info-box  md:pt-12 px-4 w-full  lg:w-[46%]">
               <div className="in-sec-title mb-5 rm:mb-6 md:mb-6 lg:mb-8">
                 <h2
                   className="dark-gold mb-3 rm:mb-4 xl:mb-6 pt-0 md:py-2 text-2xl rm:text-3xl md:text-[40px] lg:text-[40px] 2xl:text-[48px] font-os font-bold uppercase"
@@ -74,12 +74,7 @@ const MobileEscapeContact = ({
                   {contactSectionData.sectionTitle}
                 </h2>
                 {contactSectionData.sectionSubTitle !== null ? (
-                  <div
-                    className="text-gray-200 lg:text-lg 3xl:text-xl"
-                    dangerouslySetInnerHTML={{
-                      __html: contactSectionData.sectionSubTitle,
-                    }}
-                  ></div>
+                  <div className="text-gray-200 lg:text-lg 3xl:text-xl"></div>
                 ) : (
                   <></>
                 )}
@@ -93,7 +88,7 @@ const MobileEscapeContact = ({
                 <></>
               )}
 
-              <div className="mer-info-list-box mt-8 lg:mt-10 3xl:mt-16">
+              <div className="mer-info-list-box mt-2 lg:mt-2 3xl:mt-4">
                 <div className="mer-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-y-[1px] border-[#D2C6AA]">
                   <div className="w-[20px] md:w-[24px]">
                     <img
@@ -201,7 +196,7 @@ const MobileEscapeContact = ({
             {/**=====================================Yext Form================================== */}
             <div
               id="mer-form"
-              className="order-1 lg:order-2 contact-form-box w-full lg:w-[50%]"
+              className="mt-10 md:mt-16 lg:mt-0 contact-form-box w-full lg:w-[50%]"
             >
               <div className="contact-form-bg bg-[#F4E6C3] px-4 py-8 md:p-6 lg:p-8 md:rounded w-full">
                 <div

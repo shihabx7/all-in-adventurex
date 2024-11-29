@@ -30,6 +30,7 @@ const LocSingleActivity = (props) => {
         allBooking={!props.gameBooking ? props.allBooking : false}
         partyBooking={props.partyBooking}
         hasMobileEscapeRoom={props.hasMobileEscapeRoom}
+        activitySlug={props.activitySlug}
       />
       <div id="mainContent" className="main-content">
         {/* =======header content and breadcum======== */}

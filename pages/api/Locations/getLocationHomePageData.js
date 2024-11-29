@@ -52,7 +52,7 @@ export const getLocationHomePageData = async (slug) => {
   const locationListArr = locationListobj.data;
   const totalLocations = 22;
   //const tm = homePageMobileEscapeRoomSectionData(mobileEscapeRoom);
-  // console.log("mobileEscapeRoomData" + JSON.stringify(tm));
+  //console.log("mobileEscapeRoomData" + JSON.stringify(tm.infoList));
   // console.log("Meta : " + JSON.stringify(tm));
   const DATA = {
     locationSlugList: getLocationSlugList(locationListArr),
