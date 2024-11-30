@@ -19,6 +19,7 @@ const MobileEscapeGameHomeSection = (props) => {
                         : "EXPERIENCE OUR MOBILE ESCAPE ROOMS"
                     }
                     label={"NEW"}
+                    fontRM="3xl"
                   />
                 </div>
                 {props.mobileEscapeRoomData.sectionSubTitle ? (
@@ -40,9 +41,9 @@ const MobileEscapeGameHomeSection = (props) => {
                       return (
                         <div
                           key={item.id}
-                          className="icon-row flex space-x-2 items-center my-2 2xl:my-3"
+                          className="icon-row flex space-x-2 items-center my-3 2xl:my-3"
                         >
-                          <div className="w-[36px] md:w-[42px] ">
+                          <div className="w-[42px] md:w-[44px] ">
                             <img
                               className="w-full"
                               alt={
@@ -57,7 +58,12 @@ const MobileEscapeGameHomeSection = (props) => {
                               }
                             ></img>
                           </div>
-                          <div className="md:text-lg flex-1">{item.text}</div>
+                          <div
+                            className="md:text-lg flex-1"
+                            style={{ lineHeight: 1.3 }}
+                          >
+                            {item.text}
+                          </div>
                         </div>
                       );
                     })}
@@ -88,7 +94,7 @@ const MobileEscapeGameHomeSection = (props) => {
                 </a>
               </div>
             </div>
-            <div className="mbl-col w-full lg:w-1/2 order-1 lg:order-2 mb-6 md:mb-8 lg:mb-0">
+            <div className="mbl-col w-full lg:w-1/2 order-1 lg:order-2 mt-3 md:mt-0 mb-6 md:mb-8 lg:mb-0">
               <div className="mbl-h-img">
                 <img
                   alt={

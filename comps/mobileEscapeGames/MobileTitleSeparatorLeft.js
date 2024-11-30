@@ -2,7 +2,14 @@ const MobileTitleSeparatorLeft = (props) => {
   return (
     <div className="sep-title ">
       <div className="sep-container inline-block">
-        <h2 className="dark-gold py-[2px] md:py-1 2xl:py-2 text-2xl rm:text-3xl md:text-[40px] lg:text-[44px] 2xl:text-[48px] font-os font-bold uppercase">
+        <h2
+          className={
+            props.fontRM
+              ? "dark-gold py-[2px] md:py-1 2xl:py-2 text-2xl md:text-[40px] lg:text-[44px] 2xl:text-[48px] font-os font-bold uppercase rm:text-" +
+                props.fontRM
+              : "dark-gold py-[2px] md:py-1 2xl:py-2 text-2xl md:text-[40px] lg:text-[44px] 2xl:text-[48px] font-os font-bold uppercase "
+          }
+        >
           {props.title}
           {props.label ? (
             <span className="inline-block mbl-title-ribbon font-rob ml-3 rm:ml-4 md:ml-6 3xl:ml-8  bg-[#6f2bff] font-medium text-[#eeeeee] text-[14px] rm:text-[16px] md:text-[20px] lg:text-[22px] 3xl:text-[24px] px-[8px] py-[4px] rm:px-[10px] rm:py-[5px] md:px-[12px] md:py-[6px] 2xl:px-[16px] 2xl:py-[8px]">
@@ -12,7 +19,7 @@ const MobileTitleSeparatorLeft = (props) => {
             ""
           )}
         </h2>
-        <div className="max-w-[90%] md:max-w-[76%] lg:max-w-[66%] flex sep items-center  mt-1 md:mt-3  space-x-2 md:space-x-5">
+        <div className="hidden max-w-[90%] md:max-w-[76%] lg:max-w-[66%]  sep items-center  mt-1 md:mt-3  space-x-2 md:space-x-5">
           <div className="bg-golden  flex-1 w-2/5 h-0.5"></div>
           <div className=" w-auto hidden md:block">
             <svg

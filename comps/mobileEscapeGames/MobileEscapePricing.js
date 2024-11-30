@@ -26,7 +26,7 @@ const MobileEscapePricing = ({ pricingSectionData, locationName }) => {
               >
                 <div className="item-wrapper px-4 py-6 rm:px-5 rm:py-8 md:px-6 md:py-8 2xl:px-8 2xl:py-10">
                   <div className="mar-wv-text ">
-                    <h3 className="font-bold text-[20px] rm:text-[22px] md:text-[26px] 3xl:text-[28px] leading-[1.3] text-[#CA9342]">
+                    <h3 className="font-bold text-[20px] rm:text-[20px] md:text-[26px] 3xl:text-[28px] leading-[1.3] text-[#CA9342]">
                       {item.title}
                     </h3>
                     <p className="text-[#ffffff] mt-6 md:mt-8 3xl:mt-10 text-sm rm:text-base 3xl:text-lg font-semibold">

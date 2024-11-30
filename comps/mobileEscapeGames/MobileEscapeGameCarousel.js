@@ -130,7 +130,7 @@ const MobileEscapeGameCarousel = ({ escapeGameList, locationName }) => {
                         ></img>
                       </span>
                       <span className="text-[13px] md:text-sm">
-                        Duration {item.duration}
+                        Duration {item.duration} Min
                       </span>
                     </p>
                     <p className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">
@@ -184,7 +184,7 @@ const MobileEscapeGameCarousel = ({ escapeGameList, locationName }) => {
 
                 <div className="card-bottom  mbl-card-bottom px-2 rm:px-3 md:px-3 lg:px-3 xl:px-3 3xl:px-4 4xl:px-4 pb-2 rm:pb-6 sm:pb-4 md:pb-6 pt-0">
                   <div className="card-game-descs mb-3 md:mb-4">
-                    <h3 className="card-game-titlex text-[22px] rm:text-[26px] md:text-[28px] lg:text-[32px] xl:text-[28px] 3xl:text-[27px] 4xl:text-3xl font-bold uppercase text-[#E0BF62]">
+                    <h3 className="card-game-titlex text-[20px] rm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[28px] 3xl:text-[27px] 4xl:text-3xl font-bold uppercase text-[#E0BF62]">
                       {item.gameTitle}
                     </h3>
                     <div

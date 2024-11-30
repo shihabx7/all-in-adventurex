@@ -55,7 +55,7 @@ const MobileEscapEx = ({ experienceSectionData, locationName }) => {
           </div>
         </div>
         {/* ==================+++section row 2   +++=====================*/}
-        <div className="mbl-row flex flex-col lg:flex-row jsutify-between  space-x-0 lg:space-x-10 2xl:space-x-16 items-center mt-8 md:mt-12 lg:mt-16 2xl:mt-20">
+        <div className="mbl-row flex flex-col lg:flex-row jsutify-between  space-x-0 lg:space-x-10 2xl:space-x-16 items-center mt-16 md:mt-16 lg:mt-16 2xl:mt-20">
           <div className="mbl-col w-full lg:w-1/2  mb-6 md:mb-8 lg:mb-0">
             <div className="mbl-h-img text-center w-full">
               <img

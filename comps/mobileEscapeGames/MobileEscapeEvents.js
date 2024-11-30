@@ -43,7 +43,7 @@ const MobileEscapeEvents = ({ eventSectionData, locationName }) => {
                     ></img>
                   </div>
                   <div className="mar-ev-text px-5 py-6 md:px-2 md:py-6 lg:px-6 lg:py-8 text-center">
-                    <h3 className="font-bold text-[24px] md:text-[24px] lg:text-[28px] 3xl:text-[32px] leading-[1.3] text-[#CA9342]">
+                    <h3 className="font-bold text-[22px] md:text-[24px] lg:text-[28px] 3xl:text-[32px] leading-[1.3] text-[#CA9342]">
                       {item.eventTitle}
                     </h3>
                     <div

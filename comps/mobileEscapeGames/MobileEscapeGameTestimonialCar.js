@@ -85,7 +85,7 @@ const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
             >
               <div className="mer-testi-card-container   rounded-[14px]">
                 <div className="merc-row flex flex-col sm:flex-row  ">
-                  <div className="merc-img max-h-[270px] zm:max-h-[300px] overflow-hidden sm:max-h-max  merc-col w-full sm:w-[47%]  lg:w-[40%] xl:w-[41%] 3xl:w-[42%] p-2 rm:p-3 md:p-4 lg:p-4 3xl:p-5">
+                  <div className="merc-img hidden sm:block  merc-col w-full sm:w-[47%]  lg:w-[40%] xl:w-[41%] 3xl:w-[42%] p-2 rm:p-3 md:p-4 lg:p-4 3xl:p-5">
                     <img
                       alt={
                         item.testimonialImage.alt
@@ -96,6 +96,22 @@ const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
                       src={
                         item.testimonialImage.hasImage
                           ? item.testimonialImage.url
+                          : "/assets/mobile-escape-room/testimonials/mobile-escape-game-testimonial-1.jpg"
+                      }
+                      className="w-full rounded-[12px] lg:rounded-[12px] 3xl:rounded-[12px] "
+                    ></img>
+                  </div>
+                  <div className="merc-img-mbl sm:hidden  merc-col w-full sm:w-[47%]  lg:w-[40%] xl:w-[41%] 3xl:w-[42%] p-2 rm:p-3 md:p-4 lg:p-4 3xl:p-5">
+                    <img
+                      alt={
+                        item.testimonialImageMobile.alt
+                          ? item.testimonialImageMobile.alt
+                          : "Allinadventures mobile escape room testimonial " +
+                            index
+                      }
+                      src={
+                        item.testimonialImageMobile.hasImage
+                          ? item.testimonialImageMobile.url
                           : "/assets/mobile-escape-room/testimonials/mobile-escape-game-testimonial-1.jpg"
                       }
                       className="w-full rounded-[12px] lg:rounded-[12px] 3xl:rounded-[12px] "

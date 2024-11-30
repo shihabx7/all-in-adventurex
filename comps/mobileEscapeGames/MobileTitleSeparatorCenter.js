@@ -2,10 +2,10 @@ const MobileTitleSeparatorCenter = (props) => {
   return (
     <div className="sep-title text-center">
       <div className="sep-container inline-block mx-auto">
-        <h2 className="dark-gold pb-2 pt-0 md:py-2 text-2xl rm:text-3xl md:text-[40px] lg:text-[44px] 2xl:text-[48px] font-os font-bold uppercase">
+        <h2 className="dark-gold pb-2 pt-0 md:py-2 text-2xl md:text-[40px] lg:text-[44px] 2xl:text-[48px] font-os font-bold uppercase">
           {props.title}
         </h2>
-        <div className="max-w-[90%] md:max-w-[80%] lg:max-w-[74%] flex sep items-center mx-auto mt-1 md:mt-3 justify-between space-x-2 md:space-x-6">
+        <div className="max-w-[200px] md:max-w-[400px] lg:max-w-[460px] flex sep items-center mx-auto mt-1 md:mt-3 justify-between space-x-2 md:space-x-6">
           <div className="bg-golden flex-1 w-2/5 h-0.5"></div>
           <div className=" w-auto hidden md:block">
             <svg

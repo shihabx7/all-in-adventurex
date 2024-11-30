@@ -69,11 +69,11 @@ const WhyChooseMobileEscape = ({ offerSectionData, locationName }) => {
                 >
                   <div
                     className={
-                      "item-wrapper px-3 rm:px-4 sm:px-6 md:px-8 lg:px-12 " +
+                      "item-wrapper px-1 rm:px-2 sm:px-6 md:px-8 lg:px-12 " +
                       getPaddingClassess(index)
                     }
                   >
-                    <div className="mer-wc-img img-1">
+                    <div className="mer-wc-img img-1 flex flex-row items-center space-x-2 sm:flex-col  sm:items-start sm:space-x-0  ">
                       <img
                         className="mer-wc-icon 3xl:w-[42px]"
                         alt={
@@ -87,11 +87,11 @@ const WhyChooseMobileEscape = ({ offerSectionData, locationName }) => {
                             : "/assets/mobile-escape-room/icon/convenient-mobile-experience.svg"
                         }
                       ></img>
-                    </div>
-                    <div className="mar-wv-text ">
-                      <h3 className=" mt-5 3xl:mt-6 font-bold text-[20px] sm:text-[21px] md:text-[22px] 3xl:text-[24px] leading-[1.3] text-[#CA9342]">
+                      <h3 className=" sm:mt-4 md:mt-5 3xl:mt-6 font-bold text-[18px] sm:text-[21px] md:text-[22px] 3xl:text-[24px] leading-[1.3] text-[#CA9342]">
                         {item.offerTitle}
                       </h3>
+                    </div>
+                    <div className="mar-wv-text ">
                       <div
                         className="text-[#afafaf] mt-3 3xl:mt-4  text-sm 3xl:text-base"
                         dangerouslySetInnerHTML={{ __html: item.description }}

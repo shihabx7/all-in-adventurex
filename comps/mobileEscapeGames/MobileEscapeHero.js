@@ -37,7 +37,7 @@ const MobileEscapeHero = ({ pageHero, locationName }) => {
                         key={index}
                         className="icon-row flex space-x-2 items-center my-3"
                       >
-                        <div className="w-[36px] md:w-[42px]">
+                        <div className="w-[42px] md:w-[44px]">
                           <img
                             className="w-full"
                             alt={
@@ -52,7 +52,10 @@ const MobileEscapeHero = ({ pageHero, locationName }) => {
                             }
                           ></img>
                         </div>
-                        <div className="md:text-lg flex-1">
+                        <div
+                          className="md:text-lg flex-1"
+                          style={{ lineHeight: 1.3 }}
+                        >
                           {item.text !== null
                             ? item.text
                             : " Perfect for Team-Building, Parties, and Special Events"}
