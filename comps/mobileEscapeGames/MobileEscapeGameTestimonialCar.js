@@ -126,8 +126,8 @@ const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
                       ></img>
                     </div>
                     <div className="mrec-testi-des sm:absolute top-0 left-0 w-full h-full z-20 flex flex-col justify-between">
-                      <div className="merct-top mt-2 rm:mt-3  sm:mt-5 md:mt-8 lg:mt-10 xl:mt-3 2xl:mt-5 3xl:mt-8 p-3 sm:pr-3 md:pr-4 2xl:pr-5">
-                        <h3 className="font-bold text-[20px] rm:text-[24px] 3xl:text-[28px] leading-[1.3] text-[#CA9342]">
+                      <div className="merct-top mt-2 rm:mt-3  sm:mt-4 md:mt-4 lg:mt-10 xl:mt-3 2xl:mt-5 3xl:mt-8 p-3 sm:pr-3 md:pr-4 2xl:pr-5">
+                        <h3 className="font-bold text-[20px] rm:text-[22px] 3xl:text-[28px] leading-[1.3] text-[#CA9342]">
                           {item.title}
                         </h3>
                         <div

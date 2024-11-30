@@ -1,13 +1,21 @@
 import GameTitleSeparator from "../util/GameTitleSeparator";
 import MobileTitleSeparatorLeft from "./MobileTitleSeparatorLeft";
 import MobileEscapeHomeCarousel from "./MobileEscapeHomeCarousel";
-
+import { useEffect, useState } from "react";
 const MobileEscapeGameHomeSection = (props) => {
+  const [deskList, setDeskList] = useState([]);
+  useEffect(() => {
+    if (props.mobileEscapeRoomData.infoList.length > 3) {
+      setDeskList(props.mobileEscapeRoomData.infoList.slice(0, 3));
+    } else {
+      setDeskList(props.mobileEscapeRoomData.infoList);
+    }
+  }, []);
   return (
     <>
       <div className="mbl-h">
-        <div className="mbl-h-container max-w-7xl mx-auto pt-16 md:pt-28 2xl:pt-32 px-4 md:px-12 lg:px-4">
-          <div className="mbl-row flex flex-col lg:flex-row jsutify-between  space-x-0 lg:space-x-10 2xl:space-x-16 items-center">
+        <div className="mbl-h-container max-w-7xl mx-auto pt-16 md:pt-28 2xl:pt-32 px-4 md:px-4 lg:px-4">
+          <div className="mbl-row flex flex-col lg:flex-row jsutify-between  space-x-0 lg:space-x-10 2xl:space-x-16 items-center md:px-8 lg:px-0">
             <div className="mbl-col w-full lg:w-1/2 order-2 lg:order-1">
               {/* ==================section title=====================*/}
               <div className="section-title-container">
@@ -111,8 +119,41 @@ const MobileEscapeGameHomeSection = (props) => {
               </div>
             </div>
           </div>
+          {deskList.length > 0 && (
+            <div className="hidden md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 xl:gap-6 pb-16 md:pb-28 2xl:pb-32  mt-6 md:mt-10 2xl:mt-12 ">
+              {deskList.map((item, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="mer-pric-list-item bg-[#1D1D1D] rounded-[20px]"
+                  >
+                    <div className="item-wrapper px-4 py-6 rm:px-5 rm:py-8 md:px-5 md:py-7 2xl:px-8 2xl:py-10">
+                      <div className="mar-wv-text ">
+                        <h3 className="font-bold text-[20px] rm:text-[20px] md:text-[26px] 3xl:text-[28px] leading-[1.3] text-[#CA9342]">
+                          {item.title}
+                        </h3>
+                        <p className="text-[#ffffff] mt-6 md:mt-6 3xl:mt-10 text-sm rm:text-base 3xl:text-lg font-semibold">
+                          {item.subTitle}{" "}
+                          {item.subTitleNote !== null ? (
+                            <span className="text-[#a5a5a5] font-medium">
+                              {item.subTitleNote}
+                            </span>
+                          ) : (
+                            ""
+                          )}
+                        </p>
+                        <p className="text-[#a5a5a5] mt-1 rm:mt-2  text-sm rm:text-base 3xl:text-lg">
+                          {item.infoCardText !== null ? item.infoCardText : ""}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
-        <div className="mbl-carousel pb-16 md:pb-28 2xl:pb-32  mt-6 md:mt-10 2xl:mt-12">
+        <div className="mbl-carousel pb-16 md:pb-28 2xl:pb-32  mt-6 md:mt-10 2xl:mt-12 md:hidden">
           {props.mobileEscapeRoomData.infoList.length > 0 ? (
             <MobileEscapeHomeCarousel
               infoList={props.mobileEscapeRoomData.infoList}

@@ -109,7 +109,7 @@ const MobileEscapeGameCarousel = ({ escapeGameList, locationName }) => {
               ></img>
 
               <div className="card-container mer-card-container absolute top-0 left-0 w-full h-full flex flex-col justify-between">
-                <div className="card-head mbl-card-head flex justify-between items-center px-2 rm:px-3 pt-2 rm:pt-3 md:pt-4 md:px-4 pb-2 md:pb-4">
+                <div className="card-head mbl-card-head flex justify-between items-center px-2 rm:px-3 pt-2 rm:pt-3 md:pt-4 md:px-4 pb-6 zm:pb-2 md:pb-4">
                   <div className="card-info w-[48%]">
                     <p className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">
                       <span>
@@ -182,19 +182,19 @@ const MobileEscapeGameCarousel = ({ escapeGameList, locationName }) => {
                   </div>
                 </div>
 
-                <div className="card-bottom  mbl-card-bottom px-2 rm:px-3 md:px-3 lg:px-3 xl:px-3 3xl:px-4 4xl:px-4 pb-2 rm:pb-6 sm:pb-4 md:pb-6 pt-0">
+                <div className="card-bottom  mbl-card-bottom px-2 rm:px-3 md:px-3 lg:px-3 xl:px-3 3xl:px-4 4xl:px-4 pb-6 rm:pb-7 zm:pb-6 sm:pb-4 md:pb-6 pt-12 zm:pt-0">
                   <div className="card-game-descs mb-3 md:mb-4">
-                    <h3 className="card-game-titlex text-[20px] rm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[28px] 3xl:text-[27px] 4xl:text-3xl font-bold uppercase text-[#E0BF62]">
+                    <h3 className="card-game-titlex text-center zm:text-left text-[20px] rm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[28px] 3xl:text-[27px] 4xl:text-3xl font-bold uppercase text-[#E0BF62]">
                       {item.gameTitle}
                     </h3>
                     <div
-                      className="text-gray-200 text-[14px] rm:text-base lg:text-[17px]  max-w-[420px] mt-1 rm:mt-2 sm:mt-1"
+                      className="text-gray-200 text-center zm:text-left  text-[14px] rm:text-base lg:text-[17px]  max-w-[420px] mt-1 rm:mt-2 sm:mt-1"
                       dangerouslySetInnerHTML={{
                         __html: item.shortDescription,
                       }}
                     ></div>
                   </div>
-                  <div className="card-game-link mt-3 rm:mt-4 flex justify-between text-center">
+                  <div className="card-game-link mt-3 rm:mt-4 flex justify-center zm:justify-between items-center zm:items-start text-center">
                     <a
                       href="#mobile-escape-room-form"
                       className="border block card-book-btnxx   border-red-600 bg-red-600 py-[8px] px-[30px] md:px-[36px] md:py-3 rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700"
