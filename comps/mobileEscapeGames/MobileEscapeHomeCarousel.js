@@ -77,7 +77,7 @@ const MobileEscapeHomeCarousel = (props) => {
               className="text-white group px-2 h-full bg-[#1D1D1D] rounded-2xl"
             >
               <div className="mbl-hcard-container px-4 py-6 md:p-6 2xl:px-8 2xl:py-10 ">
-                <div className="mbl-card-head pb-2 md:pb-0">
+                <div className="mbl-card-head-t pb-2 md:pb-0">
                   <h3 className="text-[22px] md:text-[24px] lg:text-[26px] text-gold font-medium">
                     {item.title}
                   </h3>
