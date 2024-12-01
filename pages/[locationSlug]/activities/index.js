@@ -43,6 +43,7 @@ const LocationActivities = (props) => {
           isPublished={props.isPublished}
           locationSlug={props.locationSlug}
           activityData={props.activityData}
+          hasMobileEscapeRoom={props.hasMobileEscapeRoom}
         />
       </div>
       <LocationFooter

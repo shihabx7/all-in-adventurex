@@ -19,13 +19,13 @@ const MobileEscapeGameCarousel = ({ escapeGameList, locationName }) => {
       partialVisibilityGutter: 40,
     },
     desktopmd: {
-      breakpoint: { max: 1640, min: 1440 },
+      breakpoint: { max: 1640, min: 1501 },
       items: 3,
       slidesToSlide: 1,
       partialVisibilityGutter: 40,
     },
     desktop: {
-      breakpoint: { max: 1440, min: 1024 },
+      breakpoint: { max: 1500, min: 1024 },
       items: 2,
       slidesToSlide: 1,
       partialVisibilityGutter: 54,

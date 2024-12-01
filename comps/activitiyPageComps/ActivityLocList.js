@@ -1,5 +1,6 @@
 import EscapeGameList from "./EscapeGameList";
 import OtherGameList from "./OtherGameList";
+import MobileEscapeGameList from "./MobileEscapeGameList";
 
 const ActivityLocList = (props) => {
   return (
@@ -45,6 +46,7 @@ const ActivityLocList = (props) => {
           ) : (
             <></>
           )}
+          {props.hasMobileEscapeRoom && <MobileEscapeGameList />}
 
           {/**=========================================other in person games end============== */}
           <div className="link-btn mt-8 md:mt-16">
