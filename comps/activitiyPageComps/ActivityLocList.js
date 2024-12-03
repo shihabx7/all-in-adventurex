@@ -46,7 +46,9 @@ const ActivityLocList = (props) => {
           ) : (
             <></>
           )}
-          {props.hasMobileEscapeRoom && <MobileEscapeGameList />}
+          {props.hasMobileEscapeRoom && (
+            <MobileEscapeGameList locationSlug={props.locationSlug} />
+          )}
 
           {/**=========================================other in person games end============== */}
           <div className="link-btn mt-8 md:mt-16">

@@ -12,8 +12,12 @@ const MobileTitleSeparatorLeft = (props) => {
         >
           {props.title}
           {props.label ? (
-            <span className="inline-block mbl-title-ribbon font-rob ml-3 rm:ml-4 md:ml-6 3xl:ml-8  bg-[#6f2bff] font-medium text-[#eeeeee] text-[14px] rm:text-[16px] md:text-[20px] lg:text-[22px] 3xl:text-[24px] px-[8px] py-[4px] rm:px-[10px] rm:py-[5px] md:px-[12px] md:py-[6px] 2xl:px-[16px] 2xl:py-[8px]">
-              {props.label}
+            <span className="inline-block mbl-title-ribbon ml-4 md:ml-6 ">
+              <img
+                className="max-h-[25px] rm:max-h-[28px] md:max-h-[32px] lg:max-h-[38px]"
+                alt="Allinadventures new mobile escape rooms"
+                src="/assets/mobile-escape-room/new-animation.gif"
+              ></img>
             </span>
           ) : (
             ""

@@ -15,23 +15,14 @@ const MobileEscapeGameList = (props) => {
         </div>
       </div>
 
-      <div
-        className="all-game-list bg-center bg-cover p-4 md:p-6 lg:p-8 "
-        style={{
-          backgroundImage:
-            "linear-gradient(53deg, rgba(0,0,0,0.92),rgba(0,0,0,0.82),rgba(0,0,0,0.62),rgba(0,0,0,0),rgba(0,0,0,0)),url('/assets/mobile-escape-room/Allinadventures-mobile-escape-room-list.jpg')",
-          boxShadow: "0px 0px 16px 2px rgba(0,0,0,0.45)",
-        }}
-      >
+      <div className="all-game-list bg-center bg-cover p-4 md:p-6 lg:p-8 mbl-list-bg">
         <div className="all-game-list-head flex justify-between space-x-1 items-center">
           <div className="all-game-info max-w-[50%]">
             <div className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">
               <span>
                 <img src="/assets/svg/card-age.svg"></img>
               </span>
-              <p className="text-[13px] xs:text-[14px] md:text-base">
-                Age Range 6+
-              </p>
+              <p className="text-[13px] xs:text-[14px] md:text-base">Age 6+</p>
             </div>
             <p className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">
               <span>

@@ -158,9 +158,8 @@ a {
   margin-bottom: 22px;
 }
 .mbl-title-ribbon {
-  vertical-align: 40%;
   letter-spacing: 1.4px;
-  line-height: 1;
+  line-height: 1.2;
 }
 /*================ dark bg- pattern =====================*/
 .sbl-desc a {
@@ -1052,11 +1051,23 @@ a {
 /*======mobile escape room dsign*/
 .mbl-h {
   background-color: #111111;
-  background-image: radial-gradient(rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.78)),
-    url("/assets/mobile-escape-room/allinadventures-mobile-escape-room-bg.jpg");
+  background-image: radial-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.94)),
+    url("/assets/mobile-escape-room/mobile-escape room-home-page-bg.svg");
   background-blend-mode: darken;
   background-repeat: repeat;
   background-color: #cccccc;
+}
+.mbl-list-bg {
+  background-image: linear-gradient(
+      53deg,
+      rgba(0, 0, 0, 0.92),
+      rgba(0, 0, 0, 0.82),
+      rgba(0, 0, 0, 0.62),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/mobile-escape-room/mobile-escape-room-list-page-game-image.jpg");
+  box-shadow: "0px 0px 16px 2px rgba(0,0,0,0.45)";
 }
 
 @media only screen and (max-width: 2000px) {
@@ -1462,9 +1473,7 @@ a {
   .un-games {
     max-width: 92%;
   }
-  .mbl-title-ribbon {
-    vertical-align: 36%;
-  }
+
   .home-hero-container {
     margin-top: -31%;
   }
@@ -1513,12 +1522,26 @@ a {
   .photo-hero-container {
     margin-top: -40%;
   }
+  .mbl-list-bg {
+    background-image: linear-gradient(
+        53deg,
+        rgba(0, 0, 0, 0.92),
+        rgba(0, 0, 0, 0.82),
+        rgba(0, 0, 0, 0.62),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+      ),
+      url("/assets/mobile-escape-room/Mobile-escape-room-list-page-game-image-for-mobile.jpg");
+    box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.45);
+  }
 }
 @media only screen and (max-width: 640px) {
   .photo-hero-container {
     margin-top: -40%;
   }
-
+  .mbl-title-ribbon {
+    line-height: 1.4;
+  }
   .vr-dots {
     display: flex !important;
   }
@@ -1800,7 +1823,7 @@ a {
 }
 @media only screen and (max-width: 340px) {
   .mbl-title-ribbon {
-    line-height: 1.1;
+    line-height: 1.2;
   }
   .react-datepicker-popper {
     margin-left: -46px !important;
