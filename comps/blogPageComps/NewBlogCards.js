@@ -16,12 +16,7 @@ const NewBlogCards = (props) => {
             <div className="bl-card-head">
               <div className="bl-ft-img">
                 <a className="block w-full" href={"/blog/" + blogitem.slug}>
-                  <Image
-                    src={blogitem.ftimg}
-                    alt={blogitem.ftimgAlt}
-                    width={blogitem.ftimgWidth}
-                    height={blogitem.ftimgHeight}
-                  />
+                  <img src={blogitem.ftimg} alt={blogitem.ftimgAlt}></img>
                 </a>
               </div>
               <div className="bl-auth flex items-center px-3 md:px-4 lg:px-6 pt-3 pb-1 text-[#818181] text-[12px] md:text-[14px] ">
@@ -29,7 +24,7 @@ const NewBlogCards = (props) => {
                   <img
                     className="max-w-[32px] md:max-w-[36px]"
                     src={blogitem.authimg}
-                  ></img>{" "}
+                  ></img>
                 </div>
                 <div className="bl-item-auth">by {blogitem.authname}</div>
                 <div className="mx-1 w-[3px] h-[3px] rounded-full bg-[#818181]"></div>

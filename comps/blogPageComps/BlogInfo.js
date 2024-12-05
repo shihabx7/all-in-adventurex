@@ -4,13 +4,10 @@ const BlogInfo = (props) => {
     <div className="sbl-info pb-4 pt-4 md:pt-10">
       <div className="sbl-info-up flex items-center space-x-4">
         <div className="sbl-auth-img max-w-[36px]">
-          <Image
-            className="blog-ft-shadow sbl-ft-img  mx-auto"
+          <img
             src={props.bloginfo.authimg}
             alt={props.bloginfo.authimgAlt}
-            width={props.bloginfo.authimgWidth}
-            height={props.bloginfo.authimgHeight}
-          />
+          ></img>
         </div>
         <div className="sbl-auth-name flex space-x-2 items-center text-[#818181] text-[14px] md:text-[16px]">
           <p>by {props.bloginfo.authname}</p>
