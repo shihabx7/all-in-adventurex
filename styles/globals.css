@@ -930,7 +930,6 @@ a {
 
 /*=================================blog design===============*/
 .blog-cat-item {
-  box-shadow: 0px 1px 0px #855800;
   border-bottom: 2px solid transparent;
   transition: 0.3s;
 }
@@ -941,7 +940,7 @@ a {
 }
 .blog-cat-item.catactive {
   border-bottom: 2px solid #855800;
-  box-shadow: 0px 1px 0px #855800;
+
   transition: 0.3s;
 }
 
@@ -1068,6 +1067,58 @@ a {
     ),
     url("/assets/mobile-escape-room/mobile-escape-room-list-page-game-image.jpg");
   box-shadow: "0px 0px 16px 2px rgba(0,0,0,0.45)";
+}
+/*=============unlimited play pass============*/
+.uer-grad {
+  background: linear-gradient(to right, rgb(255, 183, 31), rgb(204, 0, 63));
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(255, 183, 31),
+    rgb(204, 0, 63)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px 25px rgba(220, 38, 38, 0.8);
+}
+.uer-grad2 {
+  background: linear-gradient(
+    to right,
+    rgb(255, 183, 31),
+    rgb(255, 183, 31),
+    rgb(204, 0, 63),
+    rgb(204, 0, 63)
+  );
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(255, 183, 31),
+    rgb(255, 183, 31),
+    rgb(204, 0, 63),
+    rgb(204, 0, 63)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px 25px rgba(220, 38, 38, 0.8);
+}
+#catBoxCont {
+  white-space: nowrap;
+}
+#catBoxCont::-webkit-scrollbar {
+  width: 4px;
+  height: 1px;
+}
+
+/*Removing the horizontal scrollbar*/
+#catBoxCont::-webkit-scrollbar:vertical {
+  display: none;
+}
+
+/*Giving the thumb a gradient*/
+#catBoxCont::-webkit-scrollbar-thumb {
+  background: #855800;
+  border-radius: 4px;
+}
+#catBoxCont::-webkit-scrollbar-track {
+  background: #140e016f;
 }
 
 @media only screen and (max-width: 2000px) {

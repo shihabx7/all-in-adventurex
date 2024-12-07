@@ -1,7 +1,7 @@
 import SectionBorderBottom from "../util/SectionBorderBottom";
 const MobileEscapeHero = ({ pageHero, locationName }) => {
   return (
-    <div className="mer-hero  bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] relative py-16 md:py-20 xl:py-24 3xl:py-28 px-4 overflow-hidden">
+    <div className="uer-hero bg-black py-16 md:py-20 xl:py-24 3xl:py-28 px-4 overflow-hidden">
       <SectionBorderBottom />
       <div className="mbl-h-container max-w-7xl mx-auto ">
         <div className="mbl-row flex flex-col lg:flex-row jsutify-between  space-x-0 lg:space-x-10 2xl:space-x-16 items-center">
