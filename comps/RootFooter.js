@@ -9,6 +9,7 @@ import UseFullLinks from "./footercomps/UseFullLinks";
 import FooterSocial from "./footercomps/FooterSocial";
 import FooterCopy from "./footercomps/FooterCopy";
 import Dgency from "./footercomps/Dgency";
+import StickyGiftBar from "./giftCardPageComps/StickyGiftBar";
 
 const RootFooter = (props) => {
   const [isPgLoad, setPgLoad] = useState(false);

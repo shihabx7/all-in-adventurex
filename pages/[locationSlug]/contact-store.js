@@ -23,6 +23,7 @@ const ContactStorePage = (props) => {
         locationName={props.locationName}
         locationSlug={props.locationSlug}
         allBooking={props.allBooking}
+        giftBooking={props.giftBooking}
         hasMobileEscapeRoom={props.hasMobileEscapeRoom}
       />
       <div id="mainContent" className="main-content">
@@ -105,6 +106,7 @@ export const getStaticProps = async (context) => {
       giftBooking: DATA.giftBooking,
       businessHours: DATA.businessHours,
       holidayHours: DATA.holidayHours,
+      giftBooking: DATA.giftBooking,
       mapInfo: DATA.mapInfo,
     },
     revalidate: 12,

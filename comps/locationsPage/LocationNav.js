@@ -10,6 +10,7 @@ import LocationMenuBtnHeader from "../util/LocationMenuBtnHeader";
 import MobileBookingBtn from "../headerComps/MobileBookingBtn";
 import MobileEscapeBookingBtn from "../headerComps/MobileEscapeBookingBtn";
 import MobileEscapeStickyBar from "../mobileEscapeGames/MobileEscapeStickyBar";
+import StickyGiftBar from "../giftCardPageComps/StickyGiftBar";
 
 const LocationNav = (props) => {
   const [showSlug, setShowSlug] = useState(null);
@@ -58,18 +59,23 @@ const LocationNav = (props) => {
         </div>
       )}
       {/* ============Location List Menu end*/}
-      {/* sticky-bottom-bar */}
+      <StickyGiftBar
+        locationSlugList={props.locationSlugList}
+        locationSlug={props.locationSlug ? props.locationSlug : false}
+        giftBooking={props.giftBooking ? props.giftBooking : false}
+      />
+      {/* //sticky-bottom-bar for mobile escape room
       {props.hasMobileEscapeRoom &&
       props.activitySlug !== "mobile-escape-room" ? (
         <MobileEscapeStickyBar locationSlug={props.locationSlug} />
       ) : (
         <></>
-      )}
+      )}*/}
 
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">
         <div id="header-container-s" className="header-container-s">
-          {<HeaderNotice />}
+          {/*/<HeaderNotice />*/}
           <div
             className="header-container-s max-w-7xl mx-auto relative md:px-4"
             ref={ref}
@@ -129,6 +135,7 @@ const LocationNav = (props) => {
                     allBooking={props.allBooking ? props.allBooking : false}
                     giftBooking={props.giftBooking ? props.giftBooking : false}
                     gameBooking={props.gameBooking ? props.gameBooking : false}
+                    isGiftPage={props.isGiftPage ? props.isGiftPage : false}
                   />
                 </div>
                 {/* ============Nav bar btn desktop  end*/}
@@ -198,6 +205,7 @@ const LocationNav = (props) => {
             allBooking={props.allBooking ? props.allBooking : false}
             giftBooking={props.giftBooking ? props.giftBooking : false}
             gameBooking={props.gameBooking ? props.gameBooking : false}
+            isGiftPage={props.isGiftPage ? props.isGiftPage : false}
             partyBooking={props.partyBooking ? props.partyBooking : false}
             eventSlug={props.eventSlug ? props.eventSlug : false}
             activeGameBooking={

@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 const UnlimitedEscapeRoomHero = (props) => {
   return (
     <div className="uer-hero  bg-black relative py-16 md:py-20 xl:py-24 3xl:py-28 px-1 overflow-hidden">

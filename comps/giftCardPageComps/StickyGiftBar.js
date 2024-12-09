@@ -1,39 +1,44 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import GiftCardsMenuBooking from "./GiftCardsMenuBooking";
-import { bookingList } from "../../pages/api/LocationIndData/bookingList";
+import { getCookies, getCookie, setCookie, deleteCookie } from "cookies-next";
 import Script from "next/script";
 
 function StickyGiftBar(props) {
-  const [showFooterTab, setShowFooterTab] = useState(true);
+  const [showGiftTab, setShowGiftTab] = useState(true);
   const [showGiftBookingList, setShowGiftBookingList] = useState(false);
-  const ActiveGiftBookingMenu = (locationslug, bookinggame) => {
-    if (!locationslug) {
-      const body = document.getElementsByTagName("body")[0];
-
-      body.classList.add("overflow-hidden");
-      setShowGiftBookingList(true);
-    } else {
-      if (!bookinggame || bookinggame.type !== "gift") {
-        window.location.href = "/" + locationslug + "/gift-cards";
-      } else {
-        const bookingData = bookingList("gift-card", locationslug);
-        console.log(bookingData);
-        bookGift(bookingData);
-      }
-    }
-  };
-  const bookGift = (bookingData) => {
+  const bookGiftCard = (giftBooking) => {
     FH.open({
-      shortname: bookingData.shortname,
+      shortname: giftBooking.shortName,
       fallback: "simple",
       fullItems: "yes",
-      flow: bookingData.flow,
-      view: { item: bookingData.item },
+      flow: giftBooking.flow,
+      view: { item: giftBooking.itemNo },
     });
   };
+  const takeAction = (giftBooking) => {
+    if (!giftBooking || !giftBooking.isActive) {
+      setShowGiftBookingList(true);
+    } else {
+      bookGiftCard(giftBooking);
+    }
+  };
+  const closeGiftTab = () => {
+    setCookie("gift-notice", true, {
+      path: "/",
+      maxAge: 7200, //604800, // Expires after 24*7 hours
+      sameSite: true,
+    });
+    setShowGiftTab(false);
+  };
+  useEffect(() => {
+    const coc = getCookie("gift-notice");
+    if (!coc) {
+      setShowGiftTab(true);
+    }
+  }, []);
   return (
     <>
-      {props.locationslug && (
+      {props.locationSlug && (
         <>
           <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
         </>
@@ -41,23 +46,24 @@ function StickyGiftBar(props) {
 
       {showGiftBookingList && (
         <GiftCardsMenuBooking
-          locationlist={props.locationlist}
-          giftbookinglist={props.giftbookinglist}
+          locationSlugList={props.locationSlugList}
           setShowGiftBookingList={setShowGiftBookingList}
         />
       )}
-      {showFooterTab && (
+      {showGiftTab && (
         <div className="sticky-gift-bar cursor-pointer w-full fixed z-[999] bottom-0 left-0  bg-[url('/assets/gift-images/Bottom-Bar-mobile-desktop.png')] bg-cover">
           <div className="sticky-gift-container w-full  relative">
             <div className="stgb-left absolute bottom-[-4px] left-[-38px] md:bottom-[-30px] md:left-[-50px] max-w-[100px] md:max-w-[140px] xl:max-w-[180px]">
               <img
                 className="w-full"
+                alt="allinadventures gift card"
                 src="/assets/gift-images/all-in-adventures-gift-card.png"
               ></img>
             </div>
             <div className="stgb-right absolute bottom-0 right-[2px] md:right-[40px] lg:right-[48px]  max-w-[60px] md:max-w-[90px] xl:max-w-[90px]">
               <img
                 className="w-full"
+                alt="allinadventures gift card christmas tree"
                 src="/assets/gift-images/all-in-adventures-gift-card-christmas-tree.png"
               ></img>
             </div>
@@ -66,12 +72,13 @@ function StickyGiftBar(props) {
               <div
                 id="tap-btn"
                 onClick={() => {
-                  ActiveGiftBookingMenu(props.locationslug, props.bookinggame);
+                  takeAction(props.giftBooking);
                 }}
                 className="stgb-txt flex flex-auto justify-center items-center space-x-2 md:space-x-4"
               >
                 <img
                   className="max-w-[30px]  md:max-w-[32px] lg:max-w-[36px]"
+                  alt="allinadventures gift card tap icon"
                   src="/assets/gift-images/tap-icon.svg"
                 ></img>
                 <div className="hidden md:block">
@@ -92,6 +99,7 @@ function StickyGiftBar(props) {
                 </div>
                 <img
                   className="max-w-[30px]  md:max-w-[32px] lg:max-w-[36px]"
+                  alt="allinadventures gift card tap icon"
                   src="/assets/gift-images/tap-icon.svg"
                 ></img>
               </div>
@@ -103,6 +111,7 @@ function StickyGiftBar(props) {
               >
                 <img
                   className="w-[28px] md:w-[30px] lg:w-[32px]"
+                  alt="allinadventures gift card cross icon"
                   src="/assets/gift-images/cross-desktop.svg"
                 ></img>
               </button>

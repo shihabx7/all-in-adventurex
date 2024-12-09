@@ -17,6 +17,7 @@ import {
   getActivityListPageData,
   getActivityListData,
 } from "../../../lib/locationActivityPagaDataFormation";
+import { getGiftBooking } from "../../../lib/dynamicLocationPageFormation";
 import { checkActiveMobileEscape } from "../../../lib/dataFormation/mobileEscapeDataFormation";
 export const getLocationActivitiesListPageData = async (locslug) => {
   const activityDataReq = apiUrl + activityListPageQuery;
@@ -84,7 +85,7 @@ export const getLocationActivitiesListPageData = async (locslug) => {
     allBooking: getAllBooking(locationResData.bookingInfo),
     businessHours: getBusinessHours(locationResData.businessHours),
     holidayHours: locationResData.holidayHours,
-
+    giftBooking: getGiftBooking(locationResData.bookingInfo),
     activityListData: getActivityListData(
       pageResData,
       locationResData.locationActivities,

@@ -125,7 +125,7 @@ const MobileBookingBtn = (props) => {
                     BOOK GAMES
                   </button>
                 )}
-                {props.giftBooking && (
+                {props.giftBooking && props.isGiftPage && (
                   <button
                     onClick={() => bookGame(props.giftBooking)}
                     className="w-full bg-red-600 font-medium hover:bg-red-700 py-2 px-1 block text-center text-white"

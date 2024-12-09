@@ -31,6 +31,7 @@ const LocationGiftCards = (props) => {
         locationName={props.locationName}
         locationSlug={props.locationSlug}
         giftBooking={props.giftBooking}
+        isGiftPage={true}
         hasMobileEscapeRoom={props.hasMobileEscapeRoom}
       />
       <div id="mainContent" className="main-content">

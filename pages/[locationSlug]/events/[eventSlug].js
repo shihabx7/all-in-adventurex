@@ -31,6 +31,7 @@ const LocSingleEvent = (props) => {
         allBooking={props.allBooking}
         activeGameBooking={props.activeGameBooking}
         hasMobileEscapeRoom={props.hasMobileEscapeRoom}
+        giftBooking={props.giftBooking}
       />
       <div id="mainContent" className="main-content">
         {/* =======header content and breadcum======== */}
@@ -155,6 +156,7 @@ export const getStaticProps = async (context) => {
       pageData: DATA.pageData,
       eventDetaliData: DATA.eventDetaliData,
       eventTestimonialData: DATA.eventTestimonialData,
+      giftBooking: DATA.giftBooking,
       hasMobileEscapeRoom: DATA.hasMobileEscapeRoom,
       eventFaq: [
         {

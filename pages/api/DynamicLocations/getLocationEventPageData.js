@@ -21,6 +21,7 @@ import {
   getEventDetailData,
   getEventTestimonialData,
 } from "../../../lib/locationEventPageDataFormation";
+import { getGiftBooking } from "../../../lib/dynamicLocationPageFormation";
 import { checkActiveMobileEscape } from "../../../lib/dataFormation/mobileEscapeDataFormation";
 export const getLocationEventPageData = async (locslug, eventSlug) => {
   const eventDataReq =
@@ -95,6 +96,7 @@ export const getLocationEventPageData = async (locslug, eventSlug) => {
       locationResData.bookingInfo,
       locationResData.escapeGameParty
     ),
+    giftBooking: getGiftBooking(locationResData.bookingInfo),
     allBooking: getAllBooking(locationResData.bookingInfo),
     businessHours: getBusinessHours(locationResData.businessHours),
     holidayHours: locationResData.holidayHours,

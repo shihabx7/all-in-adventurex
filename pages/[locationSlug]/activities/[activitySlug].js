@@ -31,6 +31,7 @@ const LocSingleActivity = (props) => {
         partyBooking={props.partyBooking}
         hasMobileEscapeRoom={props.hasMobileEscapeRoom}
         activitySlug={props.activitySlug}
+        giftBooking={props.giftBooking}
       />
       <div id="mainContent" className="main-content">
         {/* =======header content and breadcum======== */}
@@ -147,7 +148,7 @@ export const getStaticProps = async (context) => {
       partyBooking: DATA.partyBooking,
       businessHours: DATA.businessHours,
       holidayHours: DATA.holidayHours,
-
+      giftBooking: DATA.giftBooking,
       activityData: DATA.activityData,
       activityGallery: DATA.activityGallery,
       videoData: DATA.videoData,

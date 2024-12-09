@@ -20,6 +20,7 @@ import {
   getPartyBooking,
   getEventBooking,
 } from "../../../lib/locationEventPageDataFormation";
+import { getGiftBooking } from "../../../lib/dynamicLocationPageFormation";
 import { checkActiveMobileEscape } from "../../../lib/dataFormation/mobileEscapeDataFormation";
 export const getLocationEvenstListPageData = async (locslug) => {
   const eventDataReq = apiUrl + eventListPageQuery;
@@ -88,6 +89,7 @@ export const getLocationEvenstListPageData = async (locslug) => {
     ),
     eventBooking: getEventBooking(locationResData.bookingInfo),
     allBooking: getAllBooking(locationResData.bookingInfo),
+    giftBooking: getGiftBooking(locationResData.bookingInfo),
     businessHours: getBusinessHours(locationResData.businessHours),
     holidayHours: locationResData.holidayHours,
 

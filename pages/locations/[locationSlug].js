@@ -39,6 +39,7 @@ const location = (props) => {
         locationSlug={props.locationSlug}
         allBooking={props.allBooking}
         hasMobileEscapeRoom={props.hasMobileEscapeRoom}
+        giftBooking={props.giftBooking}
       />
       {/* =======header content and breadcum======== end */}
       <div id="mainContent" className="main-content">

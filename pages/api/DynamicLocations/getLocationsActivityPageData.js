@@ -23,7 +23,7 @@ import {
   activityGalleryData,
   getAllBooking,
 } from "../../../lib/locationActivityPagaDataFormation";
-
+import { getGiftBooking } from "../../../lib/dynamicLocationPageFormation";
 import {
   checkActiveMobileEscape,
   merPageMeta,
@@ -149,6 +149,7 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
           ),
     allBooking: getAllBooking(locationResData.bookingInfo),
     businessHours: getBusinessHours(locationResData.businessHours),
+    giftBooking: getGiftBooking(locationResData.bookingInfo),
     holidayHours: locationResData.holidayHours,
     mapInfo: getMapInfo(locationResData.mapInfo),
     activityData:
