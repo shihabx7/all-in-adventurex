@@ -4,7 +4,7 @@ import { getCookies, getCookie, setCookie, deleteCookie } from "cookies-next";
 import Script from "next/script";
 
 function StickyGiftBar(props) {
-  const [showGiftTab, setShowGiftTab] = useState(true);
+  const [showGiftTab, setShowGiftTab] = useState(false);
   const [showGiftBookingList, setShowGiftBookingList] = useState(false);
   const bookGiftCard = (giftBooking) => {
     FH.open({
