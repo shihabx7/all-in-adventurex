@@ -837,10 +837,12 @@ a {
 }
 .star-list li {
   list-style-image: url(/assets/svg/star-bullet.svg);
-
   padding-inline-start: 0.6ch;
 }
-
+.uer-star-list li {
+  list-style-image: url(/assets/svg/star-bullet.svg);
+  padding-inline-start: 0.5ch;
+}
 .tab-btn-shadow {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
@@ -1121,6 +1123,28 @@ a {
   background: #140e016f;
 }
 
+.uer-stork-grad {
+  font-weight: 800;
+  text-transform: uppercase;
+  /* Warning: no fallback */
+  line-height: 1;
+
+  background: -webkit-linear-gradient(
+    270deg,
+    rgb(224, 191, 98) 10%,
+    rgb(202, 147, 66) 52%,
+    rgb(204, 0, 63) 90%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+  text-stroke: 4px transparent;
+  color: rgba(0, 0, 0, 1);
+}
+.uer-bg-head-shadow {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.86));
+}
 @media only screen and (max-width: 2000px) {
   .single-blog-content-holder {
     padding-top: 11%;

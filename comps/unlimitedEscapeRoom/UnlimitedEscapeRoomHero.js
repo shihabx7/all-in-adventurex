@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import UerTimer from "./UerTimer";
 const UnlimitedEscapeRoomHero = (props) => {
   return (
     <div className="uer-hero  bg-black relative py-16 md:py-20 xl:py-24 3xl:py-28 px-1 overflow-hidden">
@@ -51,35 +51,7 @@ const UnlimitedEscapeRoomHero = (props) => {
                   <div className="text-red-600 uer-grad2  absolute top-[-16px] md:top-[-18px] xl:top-[-21px] left-0 right-0 mx-auto font-os text-[18px] md:text-[22px] xl:text-[24px] font-bold">
                     TIME LEFT
                   </div>
-                  <div className="uer-timer-content w-full h-full flex justify-evenly items-center">
-                    <div className="uer-timer-unit w-1/3">
-                      {/* Hours */}
-                      <div className="uer-timer-unit-h mx-auto bg-[#000000] border border-1 border-[#453A23] w-[40px] h-[40px] md:w-[50px] md:h-[50px] rounded-[10px] flex justify-center items-center font-bold  text-[#CA9342] text-[20px] rm:text-[22px] md:text-[28px]">
-                        22
-                      </div>
-                      <p className="text-[10px] rm:text-[11px] md:text-[14px] text-[#D1B06F] mt-1 text-center">
-                        HOUR
-                      </p>
-                    </div>
-                    <div className="uer-timer-unit w-1/3">
-                      {/* MUNITES */}
-                      <div className="uer-timer-unit-h mx-auto bg-[#000000]  border border-1 border-[#453A23] w-[40px] h-[40px] md:w-[50px] md:h-[50px] rounded-[10px] flex justify-center items-center font-bold  text-[#CA9342] text-[20px] rm:text-[22px] md:text-[28px]">
-                        16
-                      </div>
-                      <p className="text-[10px] rm:text-[11px] md:text-[14px] text-[#D1B06F] mt-1 text-center">
-                        MUNITES
-                      </p>
-                    </div>
-                    <div className="uer-timer-unit w-1/3">
-                      {/* seconds */}
-                      <div className="uer-timer-unit-h mx-auto bg-[#000000]  border border-1 border-[#453A23] w-[40px] h-[40px] md:w-[50px] md:h-[50px] rounded-[10px] flex justify-center items-center font-bold  text-[#CA9342] text-[20px] rm:text-[22px] md:text-[28px]">
-                        41
-                      </div>
-                      <p className="text-[10px] rm:text-[11px] md:text-[14px] text-[#D1B06F] mt-1 text-center">
-                        SECEONDS
-                      </p>
-                    </div>
-                  </div>
+                  <UerTimer />
                 </div>
               </div>
             </div>

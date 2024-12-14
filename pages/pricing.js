@@ -1,6 +1,7 @@
 import { getPricingPageData } from "./api/getPricingPageData";
 import RootNav from "../comps/RootNav";
 import RootFooter from "../comps/RootFooter";
+import UnlimitedEscapeRoomSection from "../comps/unlimitedEscapeRoom/UnlimitedEscapeRoomSection";
 
 // page template=============
 

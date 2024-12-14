@@ -33,6 +33,8 @@ function StickyGiftBar(props) {
   useEffect(() => {
     const coc = getCookie("gift-notice");
     if (!coc) {
+      setShowGiftTab(false);
+    } else {
       setShowGiftTab(true);
     }
   }, []);
@@ -105,7 +107,7 @@ function StickyGiftBar(props) {
               </div>
               <button
                 onClick={() => {
-                  setShowFooterTab(false);
+                  closeGiftTab();
                 }}
                 className="btn-close-stgb relative z-[100] "
               >

@@ -1,4 +1,5 @@
 import { getLocationSlugUrl } from "../api/Locations/getLocationSlugUrls";
+import UnlimitedEscapeRoomHome from "../../comps/unlimitedEscapeRoom/UnlimitedEscapeRoomHome";
 
 import { getLocationHomePageData } from "../api/Locations/getLocationHomePageData";
 import Script from "next/script";
@@ -77,6 +78,7 @@ const location = (props) => {
           <></>
         )}
       </div>
+      {/*<UnlimitedEscapeRoomHome />*/}
       <EventSlider
         eventList={props.eventList}
         locationSlug={props.locationSlug}
