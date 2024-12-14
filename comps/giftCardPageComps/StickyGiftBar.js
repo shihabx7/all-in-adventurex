@@ -22,10 +22,11 @@ function StickyGiftBar(props) {
       bookGiftCard(giftBooking);
     }
   };
-  const closeGiftTab = () => {
+  const closeGiftTab = (e) => {
+    e.preventDefault();
     setCookie("gift-notice", true, {
       path: "/",
-      maxAge: 7200, //604800, // Expires after 24*7 hours
+      maxAge: 10200, //604800, // Expires after 24*7 hours
       sameSite: true,
     });
     setShowGiftTab(false);
@@ -33,9 +34,9 @@ function StickyGiftBar(props) {
   useEffect(() => {
     const coc = getCookie("gift-notice");
     if (!coc) {
-      setShowGiftTab(false);
-    } else {
       setShowGiftTab(true);
+    } else {
+      setShowGiftTab(false);
     }
   }, []);
   return (
@@ -106,8 +107,8 @@ function StickyGiftBar(props) {
                 ></img>
               </div>
               <button
-                onClick={() => {
-                  closeGiftTab();
+                onClick={(e) => {
+                  closeGiftTab(e);
                 }}
                 className="btn-close-stgb relative z-[100] "
               >
