@@ -3,6 +3,7 @@ import RootFooter from "../comps/RootFooter";
 
 import { getThankYouCareerPageData } from "./api/getThankYouCareerPageData";
 import ThankYouHero from "../comps/thankYouPagesComs/ThankYouHero";
+import ThankYuouCareerHero from "../comps/thankYouPagesComs/ThankYuouCareerHero";
 
 import SinglePageSeo from "../comps/util/SinglePageSeo";
 const ThankYou = (props) => {
@@ -19,7 +20,7 @@ const ThankYou = (props) => {
         id="mainContent"
         className="main-content nobtn-main-content bg-center"
       >
-        <ThankYouHero pageData={props.pageData} />
+        <ThankYuouCareerHero pageData={props.pageData} />
       </div>
 
       <RootFooter

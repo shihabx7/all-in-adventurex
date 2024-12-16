@@ -32,7 +32,7 @@ const apply = (props) => {
 
         <CareersHero
           btnId={"job-application"}
-          btnLabel={"VIEW ALL JOB POSITIONS"}
+          btnLabel={"SUBMIT YOUR APPLICATION"}
           pageData={props.pageData}
         />
         <JobApplication locationlist={props.locationSlugList} />

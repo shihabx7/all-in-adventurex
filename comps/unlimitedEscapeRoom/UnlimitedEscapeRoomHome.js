@@ -3,13 +3,13 @@ import MobileTitleSeparatorCenter from "../mobileEscapeGames/MobileTitleSeparato
 
 const UnlimitedEscapeRoomHome = (props) => {
   return (
-    <div className="uer-home-hero   bg-black game-bg-pattern-dark  relative py-16 md:py-20 xl:py-24 3xl:py-28 px-1 overflow-hidden">
-      <div className="uer-h-container max-w-7xl mx-auto ">
+    <div className="uer-home-hero   bg-black game-bg-pattern-dark  relative py-16 md:py-16 md:pb-[106px] lg:pb-[136px]  xl:py-20 xl:pb-[158px] 3xl:pt-24 3xl:pb-[164px]  overflow-hidden">
+      <div className="uer-h-container max-w-7xl mx-auto px-1 rm:px-2 md:px-4 lg:px-10 xl:px-12">
         <div className="section-head relative">
           <h3 className="font-os hidden md:block  uer-stork-grad font-bold text-gold text-[36px] md:text-[74px] lg:text-[92px] xl:text-[100px] 2xl:text-[116px] text-center ">
             UNLIMITED FUN AWAITS
           </h3>
-          <div className="uer-head-img md:hidden">
+          <div className="uer-head-img hidden">
             <img
               className="w-full"
               alt="unlimited escape room fun"
@@ -18,7 +18,7 @@ const UnlimitedEscapeRoomHome = (props) => {
           </div>
           <div className="uer-bg-head-shadow absolute w-full h-full top-0 left-0"></div>
         </div>
-        <div className="mt-[-8px] md:mt-[-26px] lg:mt-[-30px] relative z-10 section-title mb-6 rm:mb-8 md:mb-10 lg:mb-12  md:max-w-[720px] lg:max-w-[840px] mx-auto">
+        <div className="mt-[0px] md:mt-[-26px] lg:mt-[-30px] relative z-10 section-title mb-6 rm:mb-8 md:mb-10 lg:mb-12  md:max-w-[720px] lg:max-w-[840px] mx-auto">
           <MobileTitleSeparatorCenter
             title={"INTRODUCING THE UNLIMITED PLAY PASS!"}
             textColor={"#E0BF62"}
@@ -27,27 +27,8 @@ const UnlimitedEscapeRoomHome = (props) => {
             Play Unlimited Mystery Rooms for an Entire Year for Just $79!
           </div>
         </div>
-        <div className="uer-row flex flex-col lg:flex-row jsutify-between  space-x-0 lg:space-x-10 2xl:space-x-16 items-center">
-          <div className="uer-col  w-full lg:w-1/2  mb-6 md:mb-8 lg:mb-0">
-            <div className="mbl-h-img text-center relative">
-              <img
-                className="w-full"
-                alt={"Unlimited escape room"}
-                src={
-                  "/assets/unlimited-escape-room/allinadventure-unlimited-escape-room-hero.png"
-                }
-              ></img>
-              <div className="uer-timer w-[260px] h-[80px] md:w-[300px]  md:h-[100px] absolute left-0 right-0  bottom-[-40px] md:bottom-[-50px] mx-auto">
-                <div className="uer-timer-box  px-2 pt-3 md:pt-4 pb-2 xl:pt-5 rounded-[10px] border border-1 border-[#453A23] bg-[#161616] relative">
-                  <div className="text-red-600 uer-grad2  absolute top-[-16px] md:top-[-18px] xl:top-[-21px] left-0 right-0 mx-auto font-os text-[18px] md:text-[22px] xl:text-[24px] font-bold">
-                    TIME LEFT
-                  </div>
-                  <UerTimer />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="uer-col w-full lg:w-1/2  mt-10 md:mt-12 lg:mt-0 px-3 md:px-8 lg:px-0">
+        <div className="uer-row flex flex-col lg:flex-row jsutify-between lg:items-center  space-x-0 lg:space-x-10 2xl:space-x-16 items-center">
+          <div className="uer-col order-2 lg:order-1 w-full lg:w-1/2  mt-14 md:mt-20 lg:mt-0 px-3 md:px-8 lg:px-0">
             {/* ==================section title=====================*/}
             <p className="text-[#ffffff] font-os text-[14px] rm:text-[15px] md:text-[18px] 3xl:text-[20px] font-semibold">
               MEMBERSHIP: UNLIMITED PLAY PASS
@@ -75,9 +56,28 @@ const UnlimitedEscapeRoomHome = (props) => {
 
             {/* ==================button=====================*/}
             <div className="uer-h-btn  mt-6 md:mt-6 2xl:mt-8">
-              <button className=" px-5 rm:px-6 md:px-8 text-center border inline-block text-[15px] rm:text-[16px] lg:text-[18px] text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700">
+              <button className=" px-5 rm:px-6 md:px-8 text-center border inline-block text-[14px] rm:text-[16px] lg:text-[18px] text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700">
                 Get Your Unlimited Play Pass Today!
               </button>
+            </div>
+          </div>
+          <div className="uer-col order-1 lg:order-2  w-full lg:w-1/2  mb-6 md:mb-8 lg:mb-0">
+            <div className="mbl-h-img text-center relative">
+              <img
+                className="w-full"
+                alt={"Unlimited escape room"}
+                src={
+                  "/assets/unlimited-escape-room/allinadventure-unlimited-escape-room-hero.png"
+                }
+              ></img>
+              <div className="uer-timer w-[210px] rm:w-[220px] h-[80px] md:w-[300px]  md:h-[100px] absolute left-0 right-0  bottom-[-40px] md:bottom-[-50px] mx-auto">
+                <div className="uer-timer-box  px-2 pt-4 md:pt-4 pb-2 xl:pt-5 rounded-[10px] border border-1 border-[#453A23] bg-[#161616] relative">
+                  <div className="text-red-600 uer-grad2  absolute top-[-16px] md:top-[-18px] xl:top-[-21px] left-0 right-0 mx-auto font-os text-[18px] md:text-[22px] xl:text-[24px] font-bold">
+                    TIME LEFT
+                  </div>
+                  <UerTimer />
+                </div>
+              </div>
             </div>
           </div>
         </div>
