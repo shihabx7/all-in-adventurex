@@ -13,14 +13,14 @@ const JobApplication = (props) => {
             color="dark-gold"
             weight="font-bold"
           />
-          <div className="md:text-lg mx-auto text-center mt-4 md:mt-6 mb-6 md:mb-8 lg:mb-8 lg:max-w-[924px]">
+          <div className="md:text-lg mx-auto text-center mt-4 md:mt-6 mb-6 md:mb-8 lg:mb-8 lg:max-w-[1004px]">
             <p className="text-gray-700 md:px-8">
               This application form is <b>Part 1</b> of the job application
               process. After submitting, you'll be automatically redirected to{" "}
               <b>Part 2</b>, a required questionnaire. To ensure your
-              application is reviewed, you must complete the questionnaire.
-              Applications without a completed questionnaire will not be
-              considered.
+              application is reviewed, you must complete the short (3 - 5
+              minute) questionnaire. Applications without a completed
+              questionnaire will not be considered.
             </p>
           </div>
         </div>

@@ -16,8 +16,8 @@ const ThankYuouCareerHero = (props) => {
             </h1>
             <div className="text-[#aaaaaa] text-sm rm:text-md md:text-lg mt-4 mx-auto text-center max-w-[640px] lg:max-w-[700px]">
               <p className="cart-subtitle">
-                Your application has been successfully submitted! To complete
-                the process, click the link below to fill out the required
+                Now that your employment application has been successfully
+                submitted, click below to begin the short (3 - 5 minute)
                 questionnaire.
               </p>
               <a
@@ -28,9 +28,10 @@ const ThankYuouCareerHero = (props) => {
                 CONTINUE TO QUESTIONNAIRE
               </a>
               <p className="cart-subtitle">
-                Your application will only be reviewed after the questionnaire
-                is completed. Thank you for your interest in joining our team—we
-                look forward to learning more about you!
+                <b>Remember: </b>Your application will only be reviewed after
+                the required questionnaire is completed. Thank you for your
+                interest in joining our team—we look forward to learning more
+                about you!
               </p>
             </div>
           </div>
