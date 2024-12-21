@@ -96,7 +96,7 @@ const GameList = (props) => {
                             <img src="/assets/svg/card-age.svg"></img>
                           </span>
                           <p className="text-[13px] xs:text-[14px] md:text-base">
-                            Age Range {activity.age}
+                            Age {activity.age}
                           </p>
                         </div>
                         <p className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">

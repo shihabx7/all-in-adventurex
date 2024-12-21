@@ -59,12 +59,15 @@ function BookYourEventsEscapeGame(props) {
           <p className="text-[#333333] md:text-lg mt-3 md:mt-3 xl:mt-4">
             Choose from the 3 distinct escape room and game show room party
             packages that cater to your preference and group size, and let the
-            adventure begin.
+            adventure begin.Click "BOOK NOW" to view detailed activity
+            information in the booking engine.
           </p>
         ) : (
           <p className="text-[#333333] md:text-lg mt-3 md:mt-3 xl:mt-4">
             Choose from the 3 distinct escape room party packages that cater to
-            your preference and group size, and let the adventure begin.
+            your preference and group size, and let the adventure begin. Click
+            "BOOK NOW" to view detailed activity information in the booking
+            engine.
           </p>
         )}
       </div>

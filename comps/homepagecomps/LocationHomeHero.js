@@ -206,10 +206,10 @@ const LocationHomeHero = (props) => {
                 <div className="text-center w-[33%] md:w-auto">
                   <div className="border-l border-gray-300">
                     <p className="golden-text text-xl md:text-4xl font-os font-bold">
-                      6-99
+                      6+
                     </p>
                     <p className="text-gray-700 text-xs md:text-base lg:text-lg ">
-                      Age Range
+                      Age
                     </p>
                   </div>
                 </div>

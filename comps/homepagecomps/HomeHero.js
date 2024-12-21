@@ -65,10 +65,10 @@ const HomeHero = (props) => {
               <div className="text-center w-[33%] md:w-auto">
                 <div className="border-l border-gray-300">
                   <h3 className="golden-text text-xl md:text-4xl font-os font-bold">
-                    {props.pageData.ageRange}
+                    {/*props.pageData.ageRange*/}6+
                   </h3>
                   <p className="text-gray-700 text-xs md:text-base lg:text-lg ">
-                    Age Range
+                    Age
                   </p>
                 </div>
               </div>

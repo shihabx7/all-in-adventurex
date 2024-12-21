@@ -105,9 +105,7 @@ const OtherGameCarousel = (props) => {
                       <span>
                         <img src="/assets/svg/card-age.svg"></img>
                       </span>
-                      <span className="text-sm">
-                        Age Range {otherGame.ageRange}
-                      </span>
+                      <span className="text-sm">Age {otherGame.ageRange}</span>
                     </p>
                     <p className="flex items-center space-x-2 text-gray-50 my-1">
                       <span>

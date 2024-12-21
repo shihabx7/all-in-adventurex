@@ -86,9 +86,11 @@ const WhatIsEscape = () => {
                 ABOUT ALL IN ADVENTURES
               </h2>
               <p className="text-sm md:text-[18px] lg:text-[19px] lg:leading-8 md:leading-6 md:mt-4">
-                At All In Adventures (formerly Mystery Room), we strive to be
-                the leader in providing an interactive and engaging adventure
-                through exceptional guest service, game experience and value.
+                At All In Adventures (formerly Mystery Room), we bring the
+                thrill of adventure to life! Our mission is to deliver
+                unforgettable experiences through exceptional guest service,
+                engaging games, and non-stop fun that keeps you coming back for
+                more.
               </p>
               <div className="video-play-btn  justify-center my-3 md:my-6 lg:my-8 hidden">
                 <div className=" paly-btn play-rt flex space-x-2 items-center py-3 md:py-4  px-6 md:px-6 lg:px-8 rounded font-semibold ">
@@ -116,10 +118,10 @@ const WhatIsEscape = () => {
                 WHAT IS AN ESCAPE ROOM
               </h2>
               <p className="text-sm md:text-[18px] lg:text-[19px] lg:leading-8 md:leading-6 md:mt-4">
-                An escape room is where 2-10 players team up with their friends,
-                family or co-workers for an adrenaline filled 60 minute engaging
-                experience. They must find hidden clues, solve puzzles, crack
-                codes and escape.
+                An escape room is an exciting challenge where you and your team
+                join forces to uncover hidden clues, solve mind-bending puzzles,
+                and crack codes—all in a race against time. It's a fun adventure
+                packed with surprises, teamwork, and pure adrenaline!
               </p>
               <div className="video-play-btn  justify-center my-3 md:my-6 lg:my-8 hidden">
                 <div className="paly-btn play-rt flex space-x-2 items-center py-3 md:py-4  px-6 md:px-6 lg:px-8 rounded font-semibold">

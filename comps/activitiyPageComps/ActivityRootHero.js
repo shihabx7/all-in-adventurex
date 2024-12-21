@@ -81,7 +81,7 @@ const ActivityRootHero = (props) => {
                   {props.pageData.age}
                 </p>
                 <p className="text-gray-700 text-xs md:text-base lg:text-lg">
-                  Age Range
+                  Age
                 </p>
               </div>
             </div>

@@ -117,7 +117,7 @@ const EscapeGameCarousel = (props) => {
                         <img src="/assets/svg/card-age.svg"></img>
                       </span>
                       <span className="text-[13px] md:text-sm">
-                        Age Range {escapeGame.ageRange}
+                        Age {escapeGame.ageRange}
                       </span>
                     </p>
                     <p className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">

@@ -228,7 +228,7 @@ const ActivityLocHero = (props) => {
                     {props.pageData.age}
                   </p>
                   <p className="text-gray-700 text-xs md:text-base lg:text-lg">
-                    Age Range
+                    Age
                   </p>
                 </div>
               </div>
@@ -239,7 +239,7 @@ const ActivityLocHero = (props) => {
                 <div className="border-l border-gray-300 ">
                   <p className="golden-text text-xl md:text-4xl font-os font-bold">
                     {props.pageData.successRate
-                      ? props.pageData.duration
+                      ? props.pageData.duration + " MIN"
                       : props.pageData.privateEvents}
                   </p>
                   <p className="text-gray-700 text-xs md:text-base lg:text-lg">

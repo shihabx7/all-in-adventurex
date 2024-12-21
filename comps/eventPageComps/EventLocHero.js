@@ -197,7 +197,7 @@ const EventLocHero = (props) => {
                     {props.pageData.ageRange}
                   </p>
                   <p className="text-gray-700 text-xs md:text-base lg:text-lg">
-                    Age Range
+                    Age
                   </p>
                 </div>
               </div>

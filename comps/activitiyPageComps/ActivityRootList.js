@@ -64,7 +64,7 @@ const ActivityRootList = (props) => {
                           <img src="/assets/svg/card-age.svg"></img>
                         </span>
                         <p className="text-[13px] xs:text-[14px] md:text-base">
-                          Age Range {activity.ageRange}
+                          Age {/*activity.ageRange*/}6+
                         </p>
                       </div>
                       <p className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">
@@ -201,7 +201,7 @@ const ActivityRootList = (props) => {
                           <img src="/assets/svg/card-age.svg"></img>
                         </span>
                         <p className="text-[13px] xs:text-[14px] md:text-base">
-                          Age Range {activity.ageRange}
+                          Age {/*activity.ageRange*/}6+
                         </p>
                       </div>
                       <p className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">
