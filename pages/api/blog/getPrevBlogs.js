@@ -4,12 +4,17 @@ import { prevBlogs } from "../../../lib/blogFormation";
 export default async function getPrevBlogs(req, res) {
   const query = req.query;
   const { id } = query;
-  let postOffset = id * 4 + 2;
+  let postOffset = 18;
+  if (id > 1) {
+    let ostart = id * 6;
+    postOffset = postOffset + ostart;
+  }
+
   const apifilter = "filters[isPopular][$eq]=false";
   const reqPg =
     "&pagination[start]=" +
     postOffset +
-    "&pagination[limit]=5&sort[1]=publishDate:desc";
+    "&pagination[limit]=7&sort[1]=publishDate:desc";
 
   const reqFields =
     "&fields[0]=title&fields[1]=slug&fields[2]=excerpt&fields[3]=publishDate";
