@@ -638,7 +638,7 @@ const bensalemRed = [
     permanent: prm,
   },
   {
-    source: "/locations/bensalem-pa/gift-cards",
+    source: "/bensalem-pa/gift-cards",
     destination: "/gift-cards",
     permanent: prm,
   },
