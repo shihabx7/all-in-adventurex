@@ -633,60 +633,129 @@ const raleighRed = [
 // =========================================-------------bensalem-pa PA
 const bensalemRed = [
   {
+    source: "/locations/bensalem-pa",
+    destination: "/",
+    permanent: prm,
+  },
+  {
+    source: "/locations/bensalem-pa/gift-cards",
+    destination: "/gift-cards",
+    permanent: prm,
+  },
+  {
     source: "/locations/bensalem-pa/events",
-    destination: "/bensalem-pa/events",
+    destination: "/events",
+    permanent: prm,
+  },
+  {
+    source: "/bensalem-pa/events",
+    destination: "/events",
     permanent: prm,
   },
   {
     source: "/rooms/category/bensalem-pa",
-    destination: "/bensalem-pa/activities",
+    destination: "/activities",
     permanent: prm,
   },
-
+  {
+    source: "/bensalem-pa/activities",
+    destination: "/activities",
+    permanent: prm,
+  },
   {
     source: "/rooms/treasure-island-bensalem-pa",
-    destination: "/bensalem-pa/activities/treasure-island",
+    destination: "/activities/treasure-island",
+    permanent: prm,
+  },
+  {
+    source: "/bensalem-pa/activities/treasure-island",
+    destination: "/activities/treasure-island",
     permanent: prm,
   },
   {
     source: "/rooms/superheros-adventure-bensalem-pa",
-    destination: "/bensalem-pa/activities/superheros-adventure",
+    destination: "/activities/superheros-adventure",
+    permanent: prm,
+  },
+  {
+    source: "/bensalem-pa/activities/superheros-adventure",
+    destination: "/activities/superheros-adventure",
     permanent: prm,
   },
 
   {
     source: "/rooms/zombie-apocalypse-bensalem-pa",
-    destination: "/bensalem-pa/activities/zombie-apocalypse",
+    destination: "/activities/zombie-apocalypse",
+    permanent: prm,
+  },
+  {
+    source: "/bensalem-pa/activities/zombie-apocalypse",
+    destination: "/activities/zombie-apocalypse",
     permanent: prm,
   },
   {
     source: "/rooms/special-agent-bensalem-pa",
-    destination: "/bensalem-pa/activities/special-agent",
+    destination: "/activities/special-agent",
+    permanent: prm,
+  },
+  {
+    source: "/bensalem-pa/activities/special-agent",
+    destination: "/activities/special-agent",
     permanent: prm,
   },
   {
     source: "/rooms/hollywood-premiere-bensalem-pa",
-    destination: "/bensalem-pa/activities/hollywood-premiere",
+    destination: "/activities/hollywood-premiere",
+    permanent: prm,
+  },
+  {
+    source: "/bensalem-pa/activities/hollywood-premiere",
+    destination: "/activities/hollywood-premiere",
     permanent: prm,
   },
   {
     source: "/rooms/sherlocks-library-bensalem-pa",
-    destination: "/bensalem-pa/activities/sherlocks-library",
+    destination: "/activities/sherlocks-library",
+    permanent: prm,
+  },
+  {
+    source: "/bensalem-pa/activities/sherlocks-library",
+    destination: "/activities/sherlocks-library",
     permanent: prm,
   },
   {
     source: "/rooms/houdinis-magic-cell-bensalem-pa",
-    destination: "/bensalem-pa/activities/houdinis-magic-cell",
+    destination: "/activities/houdinis-magic-cell",
+    permanent: prm,
+  },
+  {
+    source: "/bensalem-pa/activities/houdinis-magic-cell",
+    destination: "/activities/houdinis-magic-cell",
     permanent: prm,
   },
   {
     source: "/rooms/black-ops-bensalem-pa",
-    destination: "/bensalem-pa/activities/black-ops",
+    destination: "/activities/black-ops",
+    permanent: prm,
+  },
+  {
+    source: "/bensalem-pa/activities/black-ops",
+    destination: "/activities/black-ops",
     permanent: prm,
   },
   {
     source: "/rooms/escape-from-alcatraz-bensalem-pa",
-    destination: "/bensalem-pa/activities/escape-from-alcatraz",
+    destination: "/activities/escape-from-alcatraz",
+    permanent: prm,
+  },
+  {
+    source: "/bensalem-pa/activities/escape-from-alcatraz",
+    destination: "/activities/escape-from-alcatraz",
+    permanent: prm,
+  },
+  {
+    source: "/bensalem\\-pa\\/\\events/:slug",
+    destination: "/events/:slug",
     permanent: prm,
   },
 ];
