@@ -55,31 +55,14 @@ const AboutOurMission = () => {
                   beat the seat? Intense and challenging fun!
                 </div>
               </div>
+
               <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-2  justify-between">
                 <div className="mt-[6px] w-[20px] lg:w-[24px]">
                   <img src="/assets/svg/star-bullet.svg"></img>
                 </div>
                 <div className="w-[92%]">
-                  <span className="font-medium">Axe Throwing:</span> What's the
-                  most fun form of stress release? Yup, axe throwing wins!
-                </div>
-              </div>
-              <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-2  justify-between">
-                <div className="mt-[6px] w-[20px] lg:w-[24px]">
-                  <img src="/assets/svg/star-bullet.svg"></img>
-                </div>
-                <div className="w-[92%]">
-                  <span className="font-medium">Virtual Escape Room:</span> Can
-                  you work virtually together as a team? Who can escape?
-                </div>
-              </div>
-              <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-2  justify-between">
-                <div className="mt-[6px] w-[20px] lg:w-[24px]">
-                  <img src="/assets/svg/star-bullet.svg"></img>
-                </div>
-                <div className="w-[92%]">
-                  <span className="font-medium">Virtual Game Show Room:</span>{" "}
-                  Connect and play from anywhere! Who is going to win?
+                  <span className="font-medium">Mobile Mystery Room:</span>{" "}
+                  Solve escape room anywhere—Office, classroom, or outdoors.
                 </div>
               </div>
             </div>

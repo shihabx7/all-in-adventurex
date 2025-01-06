@@ -55,6 +55,15 @@ const About = () => {
                   beat the seat? Intense and challenging fun!
                 </div>
               </div>
+              <div className="flex  lg:text-lg text-[#464646] mt-2 lg:mt-2  justify-between">
+                <div className="mt-[6px] w-[20px] lg:w-[24px]">
+                  <img src="/assets/svg/star-bullet.svg"></img>
+                </div>
+                <div className="w-[92%]">
+                  <span className="font-medium">Mobile Escape Room:</span> Solve
+                  Escape Room Anywhere—Office, Classroom, or Outdoors
+                </div>
+              </div>
             </div>
           </div>
           <div className="abt-col md:w-[40%] lg:w-[48%] order-1 md:order-2">
