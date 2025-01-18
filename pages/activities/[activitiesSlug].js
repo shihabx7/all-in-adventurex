@@ -13,10 +13,9 @@ import ActivityRootHero from "../../comps/activitiyPageComps/ActivityRootHero";
 import ActivityRootDetails from "../../comps/activitiyPageComps/ActivityRootDetails";
 import ActivityGallery from "../../comps/activitiyPageComps/ActivityGallery";
 import ActivityVideo from "../../comps/activitiyPageComps/ActivityVideo";
-import { useRouter } from "next/router";
+
 const sinleActivities = (props) => {
   /* custom breadcum code */
-  const router = useRouter();
 
   // If the page is not yet generated, this will be displayed
   // initially until getStaticProps() finishes running
