@@ -123,6 +123,11 @@ const gnRed = [
 // =========================================-------------Albany NY
 const albanyRed = [
   {
+    source: "/albany-ny",
+    destination: "/locations/albany-ny",
+    permanent: prm,
+  },
+  {
     source: "/locations/albany-ny/events",
     destination: "/albany-ny/events",
     permanent: prm,
@@ -286,6 +291,11 @@ const buffaloRed = [
 // =========================================-------------buffalo-ny NY  end
 // =========================================-------------middletown-ny NY
 const middletownRed = [
+  {
+    source: "/middletown-ny",
+    destination: "/locations/middletown-ny/events",
+    permanent: prm,
+  },
   {
     source: "/locations/middletown-ny/events",
     destination: "/middletown-ny/events",
