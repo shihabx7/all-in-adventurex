@@ -59,11 +59,11 @@ const LocationNav = (props) => {
         </div>
       )}
       {/* ============Location List Menu end*/}
-      <StickyGiftBar
+      {/*<StickyGiftBar
         locationSlugList={props.locationSlugList}
         locationSlug={props.locationSlug ? props.locationSlug : false}
         giftBooking={props.giftBooking ? props.giftBooking : false}
-      />
+      />*/}
       {/* //sticky-bottom-bar for mobile escape room
       {props.hasMobileEscapeRoom &&
       props.activitySlug !== "mobile-escape-room" ? (

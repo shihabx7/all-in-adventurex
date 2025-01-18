@@ -54,11 +54,11 @@ const RootNav = (props) => {
         <HeaderLocMenu locationSlugList={props.locationSlugList} />
       </div>
 
-      <StickyGiftBar
+      {/* <StickyGiftBar
         locationSlugList={props.locationSlugList}
         locationSlug={props.locationSlug ? props.locationSlug : false}
         giftBooking={props.giftBooking ? props.giftBooking : false}
-      />
+      />*/}
       {/* ============Location List Menu end*/}
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">

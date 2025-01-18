@@ -293,7 +293,7 @@ const buffaloRed = [
 const middletownRed = [
   {
     source: "/middletown-ny",
-    destination: "/locations/middletown-ny/events",
+    destination: "/locations/middletown-ny",
     permanent: prm,
   },
   {
@@ -2748,8 +2748,16 @@ const wwwToHttps = [
     permanent: false,
   },
 ];
+const hmagic = [
+  {
+    source: "/:path*/activities/houdinis-magic-cell",
 
+    destination: "/:path*/activities/houdinis-prestige",
+    permanent: false,
+  },
+];
 const allRed = [
+  ...hmagic,
   ...wwwToHttps,
   ...gnRed,
   ...albanyRed,
