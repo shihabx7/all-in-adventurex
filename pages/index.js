@@ -4,7 +4,7 @@ import SinglePageSeo from "../comps/util/SinglePageSeo";
 
 import RootNav from "../comps/RootNav";
 import RootFooter from "../comps/RootFooter";
-
+import { useState } from "react";
 import HomeHero from "../comps/homepagecomps/HomeHero";
 import HomeHeroNew from "../comps/homepagecomps/HomeHeroNew";
 import PageVideoHome from "../comps/homepagecomps/PageVideoHome";
@@ -15,10 +15,21 @@ import GiftCards from "../comps/homepagecomps/GiftCards";
 import WhatIsEscape from "../comps/homepagecomps/WhatIsEscape";
 import WhoCanplay from "../comps/homepagecomps/WhoCanPlay";
 import TestimonialSlider from "../comps/homepagecomps/TestimonialSlider";
+import UnlimitedEscapeRoomHome from "../comps/unlimitedEscapeRoom/UnlimitedEscapeRoomHome";
+import UnlimitedEscapeGameMenu from "../comps/unlimitedEscapeRoom/unlimitedEscapeGameMenu";
 
 export default function Home(props) {
+  const [showUerBookingList, setShowUerBookingList] = useState(false);
   return (
     <>
+      {showUerBookingList && (
+        <div className="uermenu">
+          <UnlimitedEscapeGameMenu
+            locationSlugList={props.locationSlugList}
+            setShowUerBookingList={setShowUerBookingList}
+          />
+        </div>
+      )}
       <SinglePageSeo meta={props.pageMeta} />
       <RootNav
         locationSlugList={props.locationSlugList}
@@ -36,6 +47,11 @@ export default function Home(props) {
         ) : (
           <></>
         )}
+        {
+          <UnlimitedEscapeRoomHome
+            setShowUerBookingList={setShowUerBookingList}
+          />
+        }
         <EventSlider eventList={props.eventList} />
         <GiftCards locationSlugList={props.locationSlugList} />
         <WhatIsEscape />

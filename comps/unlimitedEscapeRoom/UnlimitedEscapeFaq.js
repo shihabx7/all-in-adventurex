@@ -2,44 +2,73 @@ import MegFaqlist from "../mobileEscapeGames/MegFaqlist";
 import TitleSeparator from "../util/TitleSeparator";
 import SectionBorderBottom from "../util/SectionBorderBottom";
 import SectionBorderTop from "../util/SectionBorderTop";
+import UerBtn from "./UerBtn";
 const UnlimitedEscapeFaq = (props) => {
   const tempFaqList = [
     {
       id: 1,
-      faqQuestion: "How to purchase your Gift Cards?",
+      faqQuestion: "What is the Unlimited Play Pass?",
       faqAnswer:
-        "Pick your location, choose the amount, fill in details, add to the cart, and checkout. You'll get an email with the Gift Card number. For gifts, follow the email instructions. For physical cards, Visit your local store.",
+        "The Unlimited Play Pass grants you access to an unlimited number of escape room games at All In Adventures locations. You can choose between the Day Pass (valid for one day) or the Annual Pass (valid for one year).",
     },
     {
       id: 2,
-      faqQuestion: "How do I redeem the Gift Cards?",
+      faqQuestion: "How much does the Unlimited Play Pass cost?",
       faqAnswer:
-        "Pick your location, choose the amount, fill in details, add to the cart, and checkout. You'll get an email with the Gift Card number. For gifts, follow the email instructions. For physical cards, Visit your local store.",
+        "<p><b>Day Pass:</b> $50 per person, valid for the day of purchase.</p><p><b>Annual Pass:</b> $79 per person, valid for one year from the date of purchase.</p>",
     },
     {
       id: 3,
-      faqQuestion: "Do Gift Cards expire?",
+      faqQuestion: "Where can I use the Unlimited Play Pass?",
       faqAnswer:
-        "Pick your location, choose the amount, fill in details, add to the cart, and checkout. You'll get an email with the Gift Card number. For gifts, follow the email instructions. For physical cards, Visit your local store.",
+        "You can use the Unlimited Play Pass at any All In Adventures location across the country.",
     },
     {
       id: 4,
-      faqQuestion: "Do we need to make a reservation to use a Gift Card?",
+      faqQuestion: "Can I share my Unlimited Play Pass with others?",
       faqAnswer:
-        "Pick your location, choose the amount, fill in details, add to the cart, and checkout. You'll get an email with the Gift Card number. For gifts, follow the email instructions. For physical cards, Visit your local store.",
+        "No, the Unlimited Play Pass is non-transferable and is valid only for the person who purchased it.",
     },
+
     {
       id: 5,
-      faqQuestion: "What happens if I prepay for my reservation in advance?",
+      faqQuestion:
+        "Is the Unlimited Play Pass valid for all escape room themes?",
       faqAnswer:
-        "Pick your location, choose the amount, fill in details, add to the cart, and checkout. You'll get an email with the Gift Card number. For gifts, follow the email instructions. For physical cards, Visit your local store.",
+        "Yes! The pass allows you to play an unlimited number of rooms across all the themes available at All In Adventures.",
     },
+
     {
       id: 6,
-      faqQuestion:
-        "Can I get a physical Gift Card instead of an electronic one?",
+      faqQuestion: "Can I purchase the Unlimited Play Pass online?",
       faqAnswer:
-        "Pick your location, choose the amount, fill in details, add to the cart, and checkout. You'll get an email with the Gift Card number. For gifts, follow the email instructions. For physical cards, Visit your local store.",
+        "Yes, you can easily purchase the Unlimited Play Pass online or in-store at any All In Adventures location.",
+    },
+    {
+      id: 7,
+      faqQuestion: " Is the Unlimited Play Pass refundable?",
+      faqAnswer:
+        "No, all sales are final. The pass is non-refundable and cannot be exchanged for cash.",
+    },
+
+    {
+      id: 8,
+      faqQuestion: "Can I upgrade my Day Pass to an Annual Pass?",
+      faqAnswer:
+        "Unfortunately, Day Passes cannot be upgraded to an Annual Pass. You would need to purchase a new Annual Pass if you wish to have year-long access.",
+    },
+    {
+      id: 9,
+      faqQuestion:
+        "Can I use the Unlimited Play Pass for special events or group bookings?",
+      faqAnswer:
+        "The Unlimited Play Pass is valid for regular escape room bookings. For special events or group bookings, please contact the location directly for more details on availability and pricing.",
+    },
+    {
+      id: 10,
+      faqQuestion: "How do I get started with my Unlimited Play Pass?",
+      faqAnswer:
+        "Once you purchase your pass, head to any All In Adventures location, check in with your pass, and start playing your first Mystery Room! You can play as many rooms as you want for the day or year, depending on your pass type.",
     },
   ];
   return (
@@ -56,9 +85,8 @@ const UnlimitedEscapeFaq = (props) => {
           <TitleSeparator title={"FREQUENTLY ASKED QUESTIONS"} />
 
           <div className="text-[#2E2E2E] mt-3 md:mt-4 lg:mt-6  text-center md:text-lg lg:text-xl">
-            Explore these FAQs to uncover answers to popular questions about All
-            In Adventures Gift Cards. If your specific query isn't covered,
-            reach us anytime on phone or email.
+            Explore the FAQs about the Unlimited Play Pass and get all your
+            questions answered.
           </div>
         </div>
 
@@ -67,9 +95,11 @@ const UnlimitedEscapeFaq = (props) => {
         </div>
         {/*=======================Section btn============== */}
         <div className="mbl-h-btn  mt-10 md:mt-14 2xl:mt-16 flex justify-center">
-          <button className=" px-5 rm:px-6 md:px-8 text-center border inline-block text-[15px] rm:text-[16px] lg:text-[18px] text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700">
-            Get Your Unlimited Play Pass Today!
-          </button>
+          <UerBtn
+            setShowUerBookingList={
+              props.setShowUerBookingList ? props.setShowUerBookingList : false
+            }
+          />
         </div>
       </div>
     </div>

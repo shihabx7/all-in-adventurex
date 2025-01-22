@@ -16,10 +16,21 @@ import PricingEvents from "../comps/pricingPageComps/PricingEvents";
 import PricingGiftCard from "../comps/pricingPageComps/PricingGiftCard";
 import PageBread from "../comps/util/PageBread";
 import SinglePageSeo from "../comps/util/SinglePageSeo";
+import UnlimitedEscapeGameMenu from "../comps/unlimitedEscapeRoom/unlimitedEscapeGameMenu";
+import { useState } from "react";
 
 const Pricing = (props) => {
+  const [showUerBookingList, setShowUerBookingList] = useState(false);
   return (
     <>
+      {showUerBookingList && (
+        <div className="uermenu">
+          <UnlimitedEscapeGameMenu
+            locationSlugList={props.locationSlugList}
+            setShowUerBookingList={setShowUerBookingList}
+          />
+        </div>
+      )}
       {/* =======header content======== */}
       <SinglePageSeo meta={props.pageMeta} />
       <RootNav
@@ -40,7 +51,10 @@ const Pricing = (props) => {
         {/* =======breadcum content and breadcum root page template======== end */}
 
         <PricingPageHero pageData={props.pageData} />
-        <PriceInperson pricing={props.inpersonpricing} />
+        <PriceInperson
+          pricing={props.inpersonpricing}
+          setShowUerBookingList={setShowUerBookingList}
+        />
         <PricingNextGen pricing={props.nextgenpricing} />
         <PricingQuest pricing={props.questgenpricing} />
         <PricingOthersGame />

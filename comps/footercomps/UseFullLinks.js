@@ -131,13 +131,25 @@ const UseFullLinks = (props) => {
         <div className=" hidden lg:block text-gray-400 text-2xl">
           <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
         </div>
-        {/*=========== Deals and Coupons===============*/}
+        {/*========================= Deals and Coupons===============*/}
         <div className="usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2">
           <a
             href="/deals-coupons"
             className="text-gray-400 text-sm  lg:text-base"
           >
             Deals and Coupons
+          </a>
+        </div>
+        <div className=" hidden lg:block text-gray-400 text-2xl">
+          <span className="block w-1 h-1 rounded-full bg-gray-400"></span>
+        </div>
+        {/*======================= Unlimited Play Pass============== */}
+        <div className="usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2">
+          <a
+            href="/unlimited-play-pass"
+            className="text-gray-400 text-sm  lg:text-base"
+          >
+            Unlimited Play Pass
           </a>
         </div>
         <div className=" hidden lg:block text-gray-400 text-2xl">

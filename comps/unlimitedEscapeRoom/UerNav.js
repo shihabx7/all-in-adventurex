@@ -2,18 +2,15 @@ import { useEffect, useRef, useState } from "react";
 import { FiX } from "react-icons/fi";
 import SvglogoMain from "../headerComps/SvglogoMain";
 import HeaderLocMenu from "../headerComps/HeaderLocMenu";
+import UerBtn from "./UerBtn";
 import DropDownMenu from "../headerComps/DropDownMenu";
 import EventBookingBtn from "../headerComps/EventBookingBtn";
 import GameBookingBtn from "../headerComps/GameBookingBtn";
 import HeaderNotice from "../headerComps/HeaderNotice";
 import LocationMenuBtnHeader from "../util/LocationMenuBtnHeader";
-import MobileBookingBtn from "../headerComps/MobileBookingBtn";
-import MobileEscapeBookingBtn from "../headerComps/MobileEscapeBookingBtn";
-import MobileEscapeStickyBar from "../mobileEscapeGames/MobileEscapeStickyBar";
 import StickyGiftBar from "../giftCardPageComps/StickyGiftBar";
-import UerStickyBar from "../unlimitedEscapeRoom/UerStickyBar";
-
-const LocationNav = (props) => {
+import UerStickyBar from "./UerStickyBar";
+const UerNav = (props) => {
   const [showSlug, setShowSlug] = useState(null);
 
   useEffect(() => {
@@ -54,25 +51,16 @@ const LocationNav = (props) => {
   return (
     <>
       {/* ============Location List Menu */}
-      {props.locationSlugList && (
-        <div id="locmenu" className="loc-menu-holder hidden">
-          <HeaderLocMenu locationSlugList={props.locationSlugList} />
-        </div>
-      )}
-      {/* ============Location List Menu end*/}
-      <UerStickyBar locationSlug={props.locationSlug} />
-      {/* //sticky-bottom-bar for mobile escape room
-      {props.hasMobileEscapeRoom &&
-      props.activitySlug !== "mobile-escape-room" ? (
-        <MobileEscapeStickyBar locationSlug={props.locationSlug} />
-      ) : (
-        <></>
-      )}*/}
 
+      <div id="locmenu" className="loc-menu-holder hidden">
+        <HeaderLocMenu locationSlugList={props.locationSlugList} />
+      </div>
+
+      {/* ============Location List Menu end*/}
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">
         <div id="header-container-s" className="header-container-s">
-          {/*/<HeaderNotice />*/}
+          {/*<HeaderNotice />*/}
           <div
             className="header-container-s max-w-7xl mx-auto relative md:px-4"
             ref={ref}
@@ -82,7 +70,7 @@ const LocationNav = (props) => {
               <div className="logo">
                 {props.locationSlug ? (
                   <a
-                    href={"/locations/" + props.locationSlug}
+                    href={"/locations/" + props.locationslug}
                     className="flex items-center"
                   >
                     <SvglogoMain />
@@ -95,44 +83,15 @@ const LocationNav = (props) => {
               </div>
               {/**==========================logo end================== */}
               {/*============location search btn==========*/}
-              <LocationMenuBtnHeader locationName={props.locationName} />
+              <LocationMenuBtnHeader />
               {/*============location search btn end==========*/}
               {/*============nav bar btns ==========*/}
-              <div className="home-nav-menu flex items-center space-x-0 md:space-x-10 lg:space-x-14 justify-end ">
+              <div className="home-nav-menu flex items-center space-x-0 md:space-x-4 lg:space-x-14 justify-end ">
                 {/* ============Nav bar btn desktop  */}
-                <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
-                  {props.activitySlug !== "mobile-escape-room" ? (
-                    <EventBookingBtn
-                      locationSlug={
-                        props.locationSlug ? props.locationSlug : false
-                      }
-                      activitySlug={
-                        props.activitySlug ? props.activitySlug : false
-                      }
-                      eventSlug={props.eventSlug ? props.eventSlug : false}
-                      partyBooking={
-                        props.partyBooking ? props.partyBooking : false
-                      }
-                      activeGameBooking={
-                        props.activeGameBooking
-                          ? props.activeGameBooking
-                          : false
-                      }
-                    />
-                  ) : (
-                    <MobileEscapeBookingBtn />
-                  )}
-                </div>
-                <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
-                  <GameBookingBtn
-                    isPublished={props.isPublished ? props.isPublished : false}
-                    locationSlug={
-                      props.locationSlug ? props.locationSlug : false
-                    }
-                    allBooking={props.allBooking ? props.allBooking : false}
-                    giftBooking={props.giftBooking ? props.giftBooking : false}
-                    gameBooking={props.gameBooking ? props.gameBooking : false}
-                    isGiftPage={props.isGiftPage ? props.isGiftPage : false}
+                <div className="hidden lg:block">
+                  <UerBtn
+                    isHeader={true}
+                    setShowUerBookingList={props.setShowUerBookingList}
                   />
                 </div>
                 {/* ============Nav bar btn desktop  end*/}
@@ -174,16 +133,9 @@ const LocationNav = (props) => {
             >
               {showMe && (
                 <DropDownMenu
-                  locationSlug={props.locationSlug}
                   escapeGameSlugList={props.escapeGameSlugList}
                   otherGameSlugList={props.otherGameSlugList}
                   eventSlugList={props.eventSlugList}
-                  giftBooking={props.giftBooking ? props.giftBooking : false}
-                  hasMobileEscapeRoom={
-                    props.hasMobileEscapeRoom
-                      ? props.hasMobileEscapeRoom
-                      : false
-                  }
                 ></DropDownMenu>
               )}
             </div>
@@ -193,22 +145,12 @@ const LocationNav = (props) => {
 
         {/*============floating booking btn mobile ==========*/}
         <div
-          id="hbtn"
-          className="header-book-btn-container  w-full  bg-coffee  lg:hidden z-50"
+          id="uermbk"
+          className="header-book-btn-container  w-full    lg:hidden z-50 bg-red-600"
         >
-          <MobileBookingBtn
-            isPublished={props.isPublished ? props.isPublished : false}
-            locationSlug={props.locationSlug ? props.locationSlug : false}
-            allBooking={props.allBooking ? props.allBooking : false}
-            giftBooking={props.giftBooking ? props.giftBooking : false}
-            gameBooking={props.gameBooking ? props.gameBooking : false}
-            isGiftPage={props.isGiftPage ? props.isGiftPage : false}
-            partyBooking={props.partyBooking ? props.partyBooking : false}
-            eventSlug={props.eventSlug ? props.eventSlug : false}
-            activeGameBooking={
-              props.activeGameBooking ? props.activeGameBooking : false
-            }
-            activitySlug={props.activitySlug ? props.activitySlug : false}
+          <UerBtn
+            isHeader={true}
+            setShowUerBookingList={props.setShowUerBookingList}
           />
         </div>
         {/*============floating booking btn mobile end==========*/}
@@ -218,4 +160,4 @@ const LocationNav = (props) => {
   );
 };
 
-export default LocationNav;
+export default UerNav;

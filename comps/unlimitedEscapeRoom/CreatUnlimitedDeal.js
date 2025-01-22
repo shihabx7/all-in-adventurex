@@ -1,4 +1,5 @@
 import MobileTitleSeparatorCenter from "../mobileEscapeGames/MobileTitleSeparatorCenter";
+import UerBtn from "./UerBtn";
 
 const CreatUnlimitedDeal = (props) => {
   const tempData = [
@@ -113,7 +114,7 @@ const CreatUnlimitedDeal = (props) => {
     return gridBorderClassesList[index].paddingClasses;
   };
   return (
-    <div className="mer-why-c bg-black py-16 md:py-20 lg:py-28 px-4 lg:px-12  z-20 ">
+    <div className="mer-why-c bg-black pb-16 pt-0 md:py-20 lg:py-28 px-4 lg:px-12  z-20 ">
       {/*======================= boder img============== */}
 
       {/*======================= boder img end============== */}
@@ -123,9 +124,8 @@ const CreatUnlimitedDeal = (props) => {
             title={"GREAT DEAL FOR ADVENTURE LOVERS"}
           />
           <div className=" text-[#e2e2e2]  mt-3 md:mt-4 lg:mt-6  text-center  md:text-lg lg:text-xl">
-            Experience endless fun, unbeatable savings, and unforgettable
-            memories with our Unlimited Play Pass. Here's why it's perfect for
-            you…
+            The Unlimited Escape Room Play Pass offers unforgettable fun and
+            adventure for everyone of all ages and skill levels
           </div>
         </div>
         {tempData.length > 0 ? (
@@ -177,9 +177,11 @@ const CreatUnlimitedDeal = (props) => {
 
         {/*=======================Section btn============== */}
         <div className="mbl-h-btn  mt-10 md:mt-14 2xl:mt-16 flex justify-center">
-          <button className=" px-5 rm:px-6 md:px-8 text-center border inline-block text-[15px] rm:text-[16px] lg:text-[18px] text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700">
-            Get Your Unlimited Play Pass Today!
-          </button>
+          <UerBtn
+            setShowUerBookingList={
+              props.setShowUerBookingList ? props.setShowUerBookingList : false
+            }
+          />
         </div>
       </div>
     </div>

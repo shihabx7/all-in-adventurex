@@ -8,6 +8,7 @@ import GameBookingBtn from "./headerComps/GameBookingBtn";
 import HeaderNotice from "./headerComps/HeaderNotice";
 import LocationMenuBtnHeader from "./util/LocationMenuBtnHeader";
 import StickyGiftBar from "./giftCardPageComps/StickyGiftBar";
+import UerStickyBar from "./unlimitedEscapeRoom/UerStickyBar";
 const RootNav = (props) => {
   const [showSlug, setShowSlug] = useState(null);
 
@@ -59,6 +60,7 @@ const RootNav = (props) => {
         locationSlug={props.locationSlug ? props.locationSlug : false}
         giftBooking={props.giftBooking ? props.giftBooking : false}
       />*/}
+      <UerStickyBar locationSlugList={props.locationSlugList} />
       {/* ============Location List Menu end*/}
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">

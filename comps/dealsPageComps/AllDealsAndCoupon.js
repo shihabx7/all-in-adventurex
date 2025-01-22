@@ -1,6 +1,6 @@
 import CouponForm from "./CouponForm";
 import CouponDisplay from "./CouponDisplay";
-
+import UnlimitedEscapeRoomSection from "../unlimitedEscapeRoom/UnlimitedEscapeRoomSection";
 import { FiChevronRight } from "react-icons/fi";
 const AllDealsAndCoupon = (props) => {
   return (
@@ -27,22 +27,32 @@ const AllDealsAndCoupon = (props) => {
         ></img>
       </div>
       {/*======================= boder img end============== */}
-      <div className="section-container max-w-5xl mx-auto px-4 py-16 md:py-20 lg:py-28 relative z-30">
-        {props.couponlist.map((coupon) => {
-          return (
-            <div key={coupon.id} className="copun-adv mb-8 md:mb-12 shadow-md">
-              <CouponForm id={coupon.id} coupon={coupon} />
-            </div>
-          );
-        })}
-        <CouponDisplay />
-        <div className="view-all flex justify-center mt-8">
-          <a
-            href="/rewards-program"
-            className="flex text-lg  justify-center space-x-1 items-center text-red-600 hover:text-red-700 font-medium"
-          >
-            <span>Learn more about reward program</span> <FiChevronRight />
-          </a>
+      <div className="section-container max-w-7xl mx-auto  pt-16 md:pt-24 lg:pt-28 relative z-30 px-4">
+        <div className="mb-8 md:mb-10 lg:mb-12 2xl:mb-16">
+          <UnlimitedEscapeRoomSection
+            setShowUerBookingList={props.setShowUerBookingList}
+          />
+        </div>
+        <div className="section-container-ins max-w-5xl mx-auto px-4 pt-2 pb-16 md:pt-3 md:pb-20 lg:pb-28 lg:pt-4 relative z-30">
+          {props.couponlist.map((coupon) => {
+            return (
+              <div
+                key={coupon.id}
+                className="copun-adv mb-8 md:mb-12 shadow-md"
+              >
+                <CouponForm id={coupon.id} coupon={coupon} />
+              </div>
+            );
+          })}
+          <CouponDisplay />
+          <div className="view-all flex justify-center mt-8">
+            <a
+              href="/rewards-program"
+              className="flex text-lg  justify-center space-x-1 items-center text-red-600 hover:text-red-700 font-medium"
+            >
+              <span>Learn more about reward program</span> <FiChevronRight />
+            </a>
+          </div>
         </div>
       </div>
     </div>

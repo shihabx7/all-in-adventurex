@@ -21,12 +21,23 @@ import TestimonialLocSlider from "../../comps/homepagecomps/TestimonialLocSlider
 import LocationDetails from "../../comps/locationsPage/LocationDetails";
 import LocationFooter from "../../comps/locationsPage/LocationFooter";
 import MobileEscapeGameHomeSection from "../../comps/mobileEscapeGames/MobileEscapeGameHomeSection";
+import { useState } from "react";
+import UnlimitedEscapeGameMenu from "../../comps/unlimitedEscapeRoom/unlimitedEscapeGameMenu";
 
 const location = (props) => {
   /* customizing breadcum */
+  const [showUerBookingList, setShowUerBookingList] = useState(false);
 
   return (
     <>
+      {showUerBookingList && (
+        <div className="uermenu">
+          <UnlimitedEscapeGameMenu
+            locationSlugList={props.locationSlugList}
+            setShowUerBookingList={setShowUerBookingList}
+          />
+        </div>
+      )}
       <PageSeo meta={props.pageMeta} />
       <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
       {/* =======header content and breadcum======== */}
@@ -78,7 +89,12 @@ const location = (props) => {
           <></>
         )}
       </div>
-      {/*<UnlimitedEscapeRoomHome />*/}
+      {
+        <UnlimitedEscapeRoomHome
+          setShowUerBookingList={setShowUerBookingList}
+          locationSlug={props.locationSlug}
+        />
+      }
       <EventSlider
         eventList={props.eventList}
         locationSlug={props.locationSlug}

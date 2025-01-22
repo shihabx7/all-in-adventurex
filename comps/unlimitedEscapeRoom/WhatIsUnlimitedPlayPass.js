@@ -15,58 +15,118 @@ const WhatIsUnlimitedPlayPass = (props) => {
           />
         </div>
 
-        <div className="uer-wt-box-con grid grid-cols-1 md:grid-cols-3">
+        <div className="uer-wt-box-con grid grid-cols-1 gap-y-4 md:grid-cols-3 md:gap-4 lg:gap-8">
           {/*=======================item 1============== */}
 
-          <div className="uer-box-col border-t border-1 border-[#D8CDB7]">
-            <div className="px-2 py-5 md:px-4 md:py-7 lg:px-6 lg:py-8 space-x-2 flex">
-              <div className="ic mt-[6px]">
+          <div className="uer-box-col  border-dashed border-2 border-[#e2b846] rounded-lg relative">
+            <div className="absolute left-0 top-0 h-full flex flex-col justify-between ">
+              <div className="top-bg">
+                <img
+                  className="w-full"
+                  src="/assets/unlimited-escape-room/icon/all-in-adventuers-escape-room-unlimited-play-pass-top-bg-com.svg"
+                ></img>
+              </div>
+              <div className="bottom-bg">
+                <img
+                  className="w-full"
+                  src="/assets/unlimited-escape-room/icon/all-in-adventuers-escape-room-unlimited-play-pass-bottom-bg-com.svg"
+                ></img>
+              </div>
+            </div>
+            <div className="absolute right-[-20px] bottom-[-16px] z-10">
+              <img
+                className="w-full max-w-[76px]"
+                src="/assets/unlimited-escape-room/all-in-adventuers-escape-room-unlimited-play-pass-card.png"
+              ></img>
+            </div>
+            <div className="px-3 py-5 md:px-6 md:py-8 lg:px-10 lg:py-10 relative z-20">
+              <div className="ic flex justify-center">
                 <img
                   src={
-                    "/assets/unlimited-escape-room/allinadventures-unlimitedescape-room-play-icon.svg"
+                    "/assets/unlimited-escape-room/icon/escape-room-puzzle.svg"
                   }
                 ></img>
               </div>
-              <div className="text-[#374151] flex-1">
-                Looking for endless fun and excitement? The Unlimited Play Pass
-                is your ticket to a full year of unlimited adventures in our
-                thrilling Mystery Room
+              <div className="text-[#374151] mt-6 text-center">
+                The Unlimited Play Pass is your ticket to nonstop escape room
+                fun. Play as many Escape Rooms as you want for one unbeatable
+                price. Perfect for adventurers who love puzzles, challenges, and
+                unforgettable fun!
               </div>
             </div>
           </div>
           {/*=======================item 2============== */}
-          <div className="uer-box-col border-t border-1 border-[#D8CDB7]  md:border-x">
-            <div className="px-2 py-5 md:px-4 md:py-7 lg:px-6 lg:py-8 flex space-x-2">
-              <div className="ic mt-[6px]">
+          <div className="uer-box-col  border-dashed border-2 border-[#e2b846] rounded-lg relative">
+            <div className="absolute left-0 top-0 h-full flex flex-col justify-between">
+              <div className="top-bg">
+                <img
+                  className="w-full"
+                  src="/assets/unlimited-escape-room/icon/all-in-adventuers-escape-room-unlimited-play-pass-top-bg-com.svg"
+                ></img>
+              </div>
+              <div className="bottom-bg">
+                <img
+                  className="w-full"
+                  src="/assets/unlimited-escape-room/icon/all-in-adventuers-escape-room-unlimited-play-pass-bottom-bg-com.svg"
+                ></img>
+              </div>
+            </div>
+            <div className="absolute right-[-20px] bottom-[-16px] z-10">
+              <img
+                className="w-full max-w-[76px]"
+                src="/assets/unlimited-escape-room/all-in-adventuers-escape-room-unlimited-play-pass-card.png"
+              ></img>
+            </div>
+            <div className="px-3 py-5 md:px-6 md:py-8 lg:px-10 lg:py-10 relative z-20">
+              <div className="ic flex justify-center">
                 <img
                   src={
-                    "/assets/unlimited-escape-room/allinadventures-unlimitedescape-room-play-icon.svg"
+                    "/assets/unlimited-escape-room/icon/escape-room-discount-coupon.svg"
                   }
                 ></img>
               </div>
-              <div className="text-[#374151] flex-1">
-                For just $79, you can explore as many rooms as you want, as
-                often as you want, at any All In Adventures location. It's the
-                perfect way to challenge yourself, bond with friends and family,
-                and create unforgettable memories—all year long.
+              <div className="text-[#374151] mt-4 text-center">
+                Experience unlimited Escape Room adventures for a single day.
+                Dive into as many exciting rooms as you can handle for just $50.
+                It's the perfect choice for spontaneous fun and memorable day
+                trips!
               </div>
             </div>
           </div>
           {/*=======================item 3============== */}
-          <div className="uer-box-col border-t border-1 border-[#D8CDB7]">
-            <div className="px-2 py-5 md:px-4 md:py-7 lg:px-6 lg:py-8 space-x-2 flex">
-              <div className="ic mt-[6px]">
+          <div className="uer-box-col  border-dashed border-2 border-[#e2b846] rounded-lg relative">
+            <div className="absolute left-0 top-0 h-full flex flex-col justify-between  ">
+              <div className="top-bg">
+                <img
+                  className="w-full"
+                  src="/assets/unlimited-escape-room/icon/all-in-adventuers-escape-room-unlimited-play-pass-top-bg-com.svg"
+                ></img>
+              </div>
+              <div className="bottom-bg">
+                <img
+                  className="w-full"
+                  src="/assets/unlimited-escape-room/icon/all-in-adventuers-escape-room-unlimited-play-pass-bottom-bg-com.svg"
+                ></img>
+              </div>
+            </div>
+            <div className="absolute right-[-20px] bottom-[-16px] z-10">
+              <img
+                className="w-full max-w-[76px]"
+                src="/assets/unlimited-escape-room/all-in-adventuers-escape-room-unlimited-play-pass-card.png"
+              ></img>
+            </div>
+            <div className="px-3 py-5 md:px-6 md:py-8 lg:px-10 lg:py-10 relative z-20">
+              <div className="ic flex justify-center">
                 <img
                   src={
-                    "/assets/unlimited-escape-room/allinadventures-unlimitedescape-room-play-icon.svg"
+                    "/assets/unlimited-escape-room/icon/escape-room-play-pass.svg"
                   }
                 ></img>
               </div>
-              <div className="text-[#374151] flex-1">
-                For just $79, you can explore as many rooms as you want, as
-                often as you want, at any All In Adventures location. It's the
-                perfect way to challenge yourself, bond with friends and family,
-                and create unforgettable memories—all year long.
+              <div className="text-[#374151] mt-4 text-center">
+                Unlock unlimited Escape Room fun for a whole year! At only $79,
+                you can enjoy endless adventures, test your skills, and make
+                memories all year long. Great for true escape room enthusiasts!
               </div>
             </div>
           </div>

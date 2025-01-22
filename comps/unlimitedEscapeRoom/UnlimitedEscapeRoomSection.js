@@ -1,64 +1,13 @@
 import UerTimer from "./UerTimer";
 import MobileTitleSeparatorCenter from "../mobileEscapeGames/MobileTitleSeparatorCenter";
+import UerBtn from "./UerBtn";
 
 const UnlimitedEscapeRoomSection = (props) => {
   return (
     <div className="uer-gn-section ">
       <div className="uer-h-container max-w-7xl mx-auto ">
-        <div className="uer-row bg-black rounded-[16px] flex flex-col lg:flex-row lg:items-center jsutify-between  space-x-2 lg:space-x-3 2xl:space-x-4 items-center px-3 pt-10 pb-12 md:px-8 md:pt-10 md:pb-16 lg:px-8 lg:py-10 2xl:px-10 2xl:py-12">
-          <div className="uer-col order-2 lg:order-1 w-full lg:w-1/2  mt-2 md:mt-2 lg:mt-0 px-0 rm:px-2 md:pl-8 lg:pl-4 xl:pl-6">
-            {/* ==================section title=====================*/}
-
-            <h1
-              className="text-[#CA9342] md:max-w-[620px]  font-bold font-os  text-2xl rm:text-[25px] sm:text-[36px] md:text-[40px] lg:text-[42px]  font-os outline-tile "
-              style={{ lineHeight: 1.2 }}
-            >
-              UNLIMITED PLAY PASS{" "}
-              <span className="text-red uer-grad">JUST $79 </span>
-            </h1>
-
-            <div className="text-slate-100  mt-3 md:mt-4 2xl:text-lg xl:max-w-[530px]">
-              Click “Buy Gift Card” to be routed to your local All In Adventures
-              location.
-            </div>
-            <h4 className="text-slate-100  mt-3 md:mt-5 xl:text-lg xl:max-w-[530px] font-semibold">
-              Below are a few things to keep in mind:
-            </h4>
-            <div className="uer-list mt-4 md:mt-4">
-              <ul className="pl-6 md:pl-4 uer-star-list text-[#eeeeee]">
-                <li className="my-3 md:my-3">
-                  <p className="text-sm md:text-base">
-                    Access to unlimited Mystery Room experiences for 1 year.
-                  </p>
-                </li>
-                <li className="my-3 md:my-3">
-                  <p className="text-sm md:text-base">
-                    Just $79 for endless fun and adventure!
-                  </p>
-                </li>
-                <li className="my-3 md:my-3">
-                  <p className="text-sm md:text-base">
-                    Valid at any All In Adventures location (with support for
-                    transfers).
-                  </p>
-                </li>
-                <li className="my-2 md:my-3">
-                  <p className="text-sm md:text-base">
-                    Perfect for escape room enthusiasts, families, friends and
-                    co-workers.
-                  </p>
-                </li>
-              </ul>
-            </div>
-
-            {/* ==================button=====================*/}
-            <div className="uer-h-btn  mt-6 md:mt-6 2xl:mt-8">
-              <button className=" px-4 rm:px-6 md:px-8 text-center border inline-block text-[14px] rm:text-[15px] lg:text-[18px] text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700">
-                Get Your Unlimited Play Pass Today!
-              </button>
-            </div>
-          </div>
-          <div className="uer-col order-1 lg:order-2  w-full lg:w-1/2  mb-6 md:mb-8 lg:mb-0 pb-[44px] md:pb-[54px] lg:pb-[70px]">
+        <div className="uer-row bg-black rounded-[16px] flex flex-col lg:flex-row lg:items-center jsutify-between  space-x-2 lg:space-x-2 xl:space-x-3 2xl:space-x-4 items-center px-2 pt-10 pb-12 md:px-8 md:pt-10 md:pb-16 lg:px-5 lg:py-10 2xl:px-6 2xl:py-12">
+          <div className="uer-col  w-full lg:w-1/2  mb-6 md:mb-8 lg:mb-0 pb-[44px] md:pb-[54px] lg:pb-[70px]">
             <div className="mbl-h-img text-center relative ">
               <img
                 className="w-full"
@@ -74,6 +23,40 @@ const UnlimitedEscapeRoomSection = (props) => {
                   </div>
                   <UerTimer />
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className="uer-col w-full lg:w-1/2  mt-2 md:mt-2 lg:mt-0 px-0 rm:px-2 md:pl-8 lg:pl-2 xl:pl-3">
+            {/* ==================section title=====================*/}
+
+            <h1
+              className="text-[#CA9342] pt-2 lg:pt-8 md:max-w-[620px]  font-bold font-os  text-[20px] rm:text-[24px] sm:text-[36px] md:text-[40px] lg:text-[42px]  font-os outline-tile "
+              style={{ lineHeight: 1.2 }}
+            >
+              BUY YOUR UNLIMITED PLAY PASS <br /> ONE DAY OR ONE YEAR
+            </h1>
+
+            <p className="text-[#CA9342] text-[13px] rm:text-[14px] md:text-[15px] xl:texxt-[16px] 3xl:text-[17px] font-medium mt-1 md:mt-0">
+              — IT'S YOUR CHOICE!
+            </p>
+            <div className="text-slate-100 md:text-lg mt-4 md:mt-6 xl:text-lg xl:max-w-[530px]">
+              With All In Adventures' Unlimited Play Pass, you can dive into as
+              many Escape Room adventures as you want. Pick the Day Pass for $50
+              or the Annual Pass for $79, and let the fun begin!
+            </div>
+
+            {/* ==================button=====================*/}
+            <div className="uer-h-btn  mt-6 md:mt-6 2xl:mt-8 flex flex-col space-y-4 md:space-y-0 md:flex-row items-center md:space-x-4 lg:space-x-2 xl:space-x-4">
+              <div>
+                <UerBtn setShowUerBookingList={props.setShowUerBookingList} />
+              </div>
+              <div>
+                <a
+                  className="bg-transparent cursor-pointer px-5 rm:px-6 md:px-8 lg:px-5 xl:px-8 text-center border-2 block md:inline-block text-[14px] rm:text-[16px] lg:text-[18px] text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700 transition duration-300"
+                  href="/unlimited-play-pass"
+                >
+                  LEARN MORE
+                </a>
               </div>
             </div>
           </div>
