@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getCookies, getCookie, setCookie, deleteCookie } from "cookies-next";
 
 import { UerBookingLinks } from "./UerBookingLinks";
-import UnlimitedEscapeGameMenu from "./unlimitedEscapeGameMenu";
+import UnlimitedEscapeGameMenu from "./UnlimitedEscapeGameMenu";
 
 function UerStickyBar(props) {
   const [showUerTab, setShowUerTab] = useState(false);

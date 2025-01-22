@@ -11,7 +11,7 @@ import WhatIsUnlimitedPlayPass from "../comps/unlimitedEscapeRoom/WhatIsUnlimite
 import HowUnlimitedPlayPassWork from "../comps/unlimitedEscapeRoom/HowUnlimitedPlayPassWork";
 import CreatUnlimitedDeal from "../comps/unlimitedEscapeRoom/CreatUnlimitedDeal";
 import UnlimitedEscapeFaq from "../comps/unlimitedEscapeRoom/UnlimitedEscapeFaq";
-import UnlimitedEscapeGameMenu from "../comps/unlimitedEscapeRoom/unlimitedEscapeGameMenu";
+import UnlimitedEscapeGameMenu from "../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
 import { useState } from "react";
 
 const UnlimitedER = (props) => {

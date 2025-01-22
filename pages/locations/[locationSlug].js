@@ -22,7 +22,7 @@ import LocationDetails from "../../comps/locationsPage/LocationDetails";
 import LocationFooter from "../../comps/locationsPage/LocationFooter";
 import MobileEscapeGameHomeSection from "../../comps/mobileEscapeGames/MobileEscapeGameHomeSection";
 import { useState } from "react";
-import UnlimitedEscapeGameMenu from "../../comps/unlimitedEscapeRoom/unlimitedEscapeGameMenu";
+import UnlimitedEscapeGameMenu from "../../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
 
 const Locations = (props) => {
   /* customizing breadcum */

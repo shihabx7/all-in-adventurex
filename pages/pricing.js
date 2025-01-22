@@ -16,7 +16,7 @@ import PricingEvents from "../comps/pricingPageComps/PricingEvents";
 import PricingGiftCard from "../comps/pricingPageComps/PricingGiftCard";
 import PageBread from "../comps/util/PageBread";
 import SinglePageSeo from "../comps/util/SinglePageSeo";
-import UnlimitedEscapeGameMenu from "../comps/unlimitedEscapeRoom/unlimitedEscapeGameMenu";
+import UnlimitedEscapeGameMenu from "../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
 import { useState } from "react";
 
 const Pricing = (props) => {

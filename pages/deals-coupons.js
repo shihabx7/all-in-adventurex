@@ -10,7 +10,7 @@ import DealsFaqs from "../comps/dealsPageComps/DealsFaqs";
 import AllDealsAndCoupon from "../comps/dealsPageComps/AllDealsAndCoupon";
 import PageBread from "../comps/util/PageBread";
 import SinglePageSeo from "../comps/util/SinglePageSeo";
-import UnlimitedEscapeGameMenu from "../comps/unlimitedEscapeRoom/unlimitedEscapeGameMenu";
+import UnlimitedEscapeGameMenu from "../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
 import { useState } from "react";
 
 const DealsCoupon = (props) => {
