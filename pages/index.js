@@ -16,7 +16,7 @@ import WhatIsEscape from "../comps/homepagecomps/WhatIsEscape";
 import WhoCanplay from "../comps/homepagecomps/WhoCanPlay";
 import TestimonialSlider from "../comps/homepagecomps/TestimonialSlider";
 import UnlimitedEscapeRoomHome from "../comps/unlimitedEscapeRoom/UnlimitedEscapeRoomHome";
-import UnlimitedEscapeGameMenu from "../comps/unlimitedEscapeRoom/unlimitedEscapeGameMenu";
+import UnlimitedEscapeGameMenu from "../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
 
 export default function Home(props) {
   const [showUerBookingList, setShowUerBookingList] = useState(false);
