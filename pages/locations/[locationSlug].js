@@ -24,9 +24,10 @@ import MobileEscapeGameHomeSection from "../../comps/mobileEscapeGames/MobileEsc
 import { useState } from "react";
 import UnlimitedEscapeGameMenu from "../../comps/unlimitedEscapeRoom/unlimitedEscapeGameMenu";
 
-const location = (props) => {
+const Locations = (props) => {
   /* customizing breadcum */
   const [showUerBookingList, setShowUerBookingList] = useState(false);
+  const [showUerBookingListx, setShowUerBookingListx] = useState(false);
 
   return (
     <>
@@ -136,7 +137,7 @@ const location = (props) => {
   );
 };
 
-export default location;
+export default Locations;
 
 export const getStaticPaths = async () => {
   const res = await getLocationSlugUrl();
