@@ -60,8 +60,9 @@ const LocationNav = (props) => {
         </div>
       )}
       {/* ============Location List Menu end*/}
-      <UerStickyBar locationSlug={props.locationSlug} />
+
       {/* //sticky-bottom-bar for mobile escape room
+       <UerStickyBar locationSlug={props.locationSlug} />
       {props.hasMobileEscapeRoom &&
       props.activitySlug !== "mobile-escape-room" ? (
         <MobileEscapeStickyBar locationSlug={props.locationSlug} />

@@ -55,12 +55,14 @@ const RootNav = (props) => {
         <HeaderLocMenu locationSlugList={props.locationSlugList} />
       </div>
 
-      {/* <StickyGiftBar
+      {/* 
+      <UerStickyBar locationSlugList={props.locationSlugList} />
+      <StickyGiftBar
         locationSlugList={props.locationSlugList}
         locationSlug={props.locationSlug ? props.locationSlug : false}
         giftBooking={props.giftBooking ? props.giftBooking : false}
       />*/}
-      <UerStickyBar locationSlugList={props.locationSlugList} />
+
       {/* ============Location List Menu end*/}
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">
