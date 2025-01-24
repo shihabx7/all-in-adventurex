@@ -84,8 +84,8 @@ const HowUnlimitedPlayPassWork = (props) => {
                   ></img>
                 </div>
                 <p className="text-[#A5A5A5] flex-1">
-                  The Unlimited Play Pass is non-transferable and requires ID
-                  verification for use.
+                  The Unlimited Play Pass is non-transferable and requires email
+                  verification to use.
                 </p>
               </div>
             </div>
@@ -116,7 +116,7 @@ const HowUnlimitedPlayPassWork = (props) => {
                   ></img>
                 </div>
                 <p className="text-[#A5A5A5] flex-1">
-                  Your pass is valid at all 20 locations of All In Adventures.
+                  Pass is transferable to all 20 All In Adventures locations.
                 </p>
               </div>
             </div>

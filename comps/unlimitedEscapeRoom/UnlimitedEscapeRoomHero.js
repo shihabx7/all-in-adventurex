@@ -44,14 +44,14 @@ const UnlimitedEscapeRoomHero = (props) => {
                   "/assets/unlimited-escape-room/allinadventure-unlimited-escape-room-hero.png"
                 }
               ></img>
-              <div className="uer-timer w-[210px] rm:w-[220px] h-[80px] md:w-[300px]  md:h-[100px] absolute left-0 right-0  bottom-[-40px] md:bottom-[-50px] mx-auto">
+              {/* <div className="uer-timer w-[210px] rm:w-[220px] h-[80px] md:w-[300px]  md:h-[100px] absolute left-0 right-0  bottom-[-40px] md:bottom-[-50px] mx-auto">
                 <div className="uer-timer-box  px-2 pt-4 md:pt-4 pb-2 xl:pt-5 rounded-[10px] border border-1 border-[#453A23] bg-[#161616] relative">
                   <div className="text-red-600 uer-grad2  absolute top-[-16px] md:top-[-18px] xl:top-[-21px] left-0 right-0 mx-auto font-os text-[18px] md:text-[22px] xl:text-[24px] font-bold">
                     TIME LEFT
                   </div>
                   <UerTimer />
                 </div>
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>

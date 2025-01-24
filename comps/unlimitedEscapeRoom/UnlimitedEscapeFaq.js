@@ -21,7 +21,7 @@ const UnlimitedEscapeFaq = (props) => {
       id: 3,
       faqQuestion: "Where can I use the Unlimited Play Pass?",
       faqAnswer:
-        "You can use the Unlimited Play Pass at any All In Adventures location across the country.",
+        "Your pass can be transferred to any All In Adventures location across the country. Please contact one of our team members for assistance transferring your pass!",
     },
     {
       id: 4,
@@ -68,7 +68,7 @@ const UnlimitedEscapeFaq = (props) => {
       id: 10,
       faqQuestion: "How do I get started with my Unlimited Play Pass?",
       faqAnswer:
-        "Once you purchase your pass, head to any All In Adventures location, check in with your pass, and start playing your first Mystery Room! You can play as many rooms as you want for the day or year, depending on your pass type.",
+        'Once you purchase your pass, simply enter your Member ID (located in your confirmation email) into the "Are You a Member?" box during online checkout to redeem your pass benefits! If using your pass in store, present your Member ID to an associate who will assist you in redeeming your pass.',
     },
   ];
   return (

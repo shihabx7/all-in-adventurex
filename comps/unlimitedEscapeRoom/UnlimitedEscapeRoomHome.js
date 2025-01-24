@@ -29,7 +29,7 @@ const UnlimitedEscapeRoomHome = (props) => {
           </div>
         </div>
         <div className="uer-row   flex flex-col lg:flex-row lg:items-center jsutify-between  space-x-2 lg:space-x-2 xl:space-x-3 2xl:space-x-4 items-center pt-10 pb-12 md:pt-10 md:pb-16  lg:py-10  2xl:py-12">
-          <div className="uer-col  w-full lg:w-1/2  mb-6 md:mb-8 lg:mb-0 pb-[44px] md:pb-[54px] lg:pb-[70px]">
+          <div className="uer-col  w-full lg:w-1/2  mb-4 md:mb-4 lg:mb-0 ">
             <div className="mbl-h-img text-center relative ">
               <img
                 className="w-full"
@@ -38,14 +38,14 @@ const UnlimitedEscapeRoomHome = (props) => {
                   "/assets/unlimited-escape-room/allinadventure-unlimited-escape-room-hero.png"
                 }
               ></img>
-              <div className="uer-timer w-[260px] h-[80px] md:w-[300px]  md:h-[100px] absolute left-0 right-0  bottom-[-40px] md:bottom-[-50px] mx-auto">
+              {/*<div className="uer-timer w-[260px] h-[80px] md:w-[300px]  md:h-[100px] absolute left-0 right-0  bottom-[-40px] md:bottom-[-50px] mx-auto">
                 <div className="uer-timer-box  px-2 pt-3 md:pt-4 pb-2 xl:pt-5 rounded-[10px] border border-1 border-[#453A23] bg-[#161616] relative">
                   <div className="text-red-600 uer-grad2  absolute top-[-16px] md:top-[-18px] xl:top-[-21px] left-0 right-0 mx-auto font-os text-[18px] md:text-[22px] xl:text-[24px] font-bold">
                     TIME LEFT
                   </div>
                   <UerTimer />
                 </div>
-              </div>
+              </div>*/}
             </div>
           </div>
           <div className="uer-col w-full lg:w-1/2  px-0 rm:px-2 md:pl-8 lg:pl-2 xl:pl-3">
