@@ -15,10 +15,10 @@ const WhatIsUnlimitedPlayPass = (props) => {
           />
         </div>
 
-        <div className="uer-wt-box-con grid grid-cols-1 gap-y-4 md:grid-cols-3 md:gap-4 lg:gap-8">
+        <div className="uer-wt-box-con grid justify-items-center grid-cols-1 gap-y-7 md:grid-cols-3 md:gap-4 xl:gap-8">
           {/*=======================item 1============== */}
 
-          <div className="uer-box-col  border-dashed border-2 border-[#e2b846] rounded-lg relative">
+          <div className="max-w-[370px] md:max-w-max  uer-box-col  border-dashed border-2 border-[#e2b846] rounded-lg relative">
             <div className="absolute left-0 top-0 h-full flex flex-col justify-between ">
               <div className="top-bg">
                 <img
@@ -33,13 +33,13 @@ const WhatIsUnlimitedPlayPass = (props) => {
                 ></img>
               </div>
             </div>
-            <div className="absolute right-[-20px] bottom-[-16px] z-10">
+            {/*  <div className="absolute right-[-20px] bottom-[-16px] z-10">
               <img
-                className="w-full max-w-[76px]"
+                className="w-full md:max-w-[56px] lg:max-w-[64px] xl:max-w-[76px]"
                 src="/assets/unlimited-escape-room/all-in-adventuers-escape-room-unlimited-play-pass-card.png"
               ></img>
-            </div>
-            <div className="px-3 py-5 md:px-6 md:py-8 lg:px-10 lg:py-10 relative z-20">
+            </div>*/}
+            <div className=" py-5 px-3 rm:px-5 rm:py-8 md:px-6 md:py-7 xl:px-10 xl:py-10 relative z-20">
               <div className="ic flex justify-center">
                 <img
                   src={
@@ -47,16 +47,16 @@ const WhatIsUnlimitedPlayPass = (props) => {
                   }
                 ></img>
               </div>
-              <div className="text-[#374151] mt-6 text-center">
+              <p className="text-[#374151] mt-6 text-center text-[15px] lg:text-base">
                 The Unlimited Play Pass is your ticket to nonstop escape room
                 fun. Play as many Escape Rooms as you want for one unbeatable
                 price. Perfect for adventurers who love puzzles, challenges, and
                 unforgettable fun!
-              </div>
+              </p>
             </div>
           </div>
           {/*=======================item 2============== */}
-          <div className="uer-box-col  border-dashed border-2 border-[#e2b846] rounded-lg relative">
+          <div className="max-w-[370px] md:max-w-max uer-box-col  border-dashed border-2 border-[#e2b846] rounded-lg relative">
             <div className="absolute left-0 top-0 h-full flex flex-col justify-between">
               <div className="top-bg">
                 <img
@@ -71,13 +71,15 @@ const WhatIsUnlimitedPlayPass = (props) => {
                 ></img>
               </div>
             </div>
+            {/*
             <div className="absolute right-[-20px] bottom-[-16px] z-10">
               <img
                 className="w-full max-w-[76px]"
                 src="/assets/unlimited-escape-room/all-in-adventuers-escape-room-unlimited-play-pass-card.png"
               ></img>
             </div>
-            <div className="px-3 py-5 md:px-6 md:py-8 lg:px-10 lg:py-10 relative z-20">
+            */}
+            <div className="py-5 px-3 rm:px-5 rm:py-8 md:px-6 md:py-7 xl:px-10 xl:py-10 relative z-20">
               <div className="ic flex justify-center">
                 <img
                   src={
@@ -85,16 +87,16 @@ const WhatIsUnlimitedPlayPass = (props) => {
                   }
                 ></img>
               </div>
-              <div className="text-[#374151] mt-4 text-center">
+              <p className="text-[#374151] mt-4 text-center text-[15px] lg:text-base">
                 Experience unlimited Escape Room adventures for a single day.
                 Dive into as many exciting rooms as you can handle for just $50.
                 It's the perfect choice for spontaneous fun and memorable day
                 trips!
-              </div>
+              </p>
             </div>
           </div>
           {/*=======================item 3============== */}
-          <div className="uer-box-col  border-dashed border-2 border-[#e2b846] rounded-lg relative">
+          <div className="max-w-[370px] md:max-w-max uer-box-col  border-dashed border-2 border-[#e2b846] rounded-lg relative">
             <div className="absolute left-0 top-0 h-full flex flex-col justify-between  ">
               <div className="top-bg">
                 <img
@@ -109,13 +111,13 @@ const WhatIsUnlimitedPlayPass = (props) => {
                 ></img>
               </div>
             </div>
-            <div className="absolute right-[-20px] bottom-[-16px] z-10">
+            {/*   <div className="absolute right-[-20px] bottom-[-16px] z-10">
               <img
                 className="w-full max-w-[76px]"
                 src="/assets/unlimited-escape-room/all-in-adventuers-escape-room-unlimited-play-pass-card.png"
               ></img>
-            </div>
-            <div className="px-3 py-5 md:px-6 md:py-8 lg:px-10 lg:py-10 relative z-20">
+            </div>*/}
+            <div className="px-3 py-5 rm:px-5 rm:py-8 md:px-6 md:py-7 xl:px-10 xl:py-10 relative z-20">
               <div className="ic flex justify-center">
                 <img
                   src={
@@ -123,11 +125,11 @@ const WhatIsUnlimitedPlayPass = (props) => {
                   }
                 ></img>
               </div>
-              <div className="text-[#374151] mt-4 text-center">
+              <p className="text-[#374151] mt-4 text-center text-[15px] lg:text-base">
                 Unlock unlimited Escape Room fun for a whole year! At only $79,
                 you can enjoy endless adventures, test your skills, and make
                 memories all year long. Great for true escape room enthusiasts!
-              </div>
+              </p>
             </div>
           </div>
         </div>
