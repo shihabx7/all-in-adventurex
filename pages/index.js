@@ -47,11 +47,9 @@ export default function Home(props) {
         ) : (
           <></>
         )}
-        {
-          <UnlimitedEscapeRoomHome
+        {/* <UnlimitedEscapeRoomHome
             setShowUerBookingList={setShowUerBookingList}
-          />
-        }
+          />*/}
         <EventSlider eventList={props.eventList} />
         <GiftCards locationSlugList={props.locationSlugList} />
         <WhatIsEscape />

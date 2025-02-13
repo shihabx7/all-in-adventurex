@@ -90,12 +90,10 @@ const Locations = (props) => {
           <></>
         )}
       </div>
-      {
-        <UnlimitedEscapeRoomHome
+      {/* <UnlimitedEscapeRoomHome
           setShowUerBookingList={setShowUerBookingList}
           locationSlug={props.locationSlug}
-        />
-      }
+        />*/}
       <EventSlider
         eventList={props.eventList}
         locationSlug={props.locationSlug}
@@ -157,7 +155,6 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
   const DATA = await getLocationHomePageData(context.params.locationSlug);
   //console.log(DATA);
-
   return {
     props: {
       locationSlugList: DATA.locationSlugList,
