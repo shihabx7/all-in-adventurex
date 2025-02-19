@@ -152,8 +152,7 @@ export const getStaticProps = async (context) => {
       activityData: DATA.activityData,
       activityGallery: DATA.activityGallery,
       videoData: DATA.videoData,
-      //location: context.params.locationSlug,
-      //activity: context.params.activitySlug,
+
       mobileEscapeRoomPageData: DATA.mobileEscapeRoomPageData,
     },
     revalidate: 12,
