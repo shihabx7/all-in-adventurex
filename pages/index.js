@@ -12,16 +12,27 @@ import EscaeGameSlider from "../comps/homepagecomps/EscaeGameSlider";
 import OtherGameSlider from "../comps/homepagecomps/OtherGameSlider";
 import EventSlider from "../comps/homepagecomps/EventSlider";
 import GiftCards from "../comps/homepagecomps/GiftCards";
+import GiftCardHomePageSection from "../comps/giftCardPageComps/GiftCardHomePageSection";
 import WhatIsEscape from "../comps/homepagecomps/WhatIsEscape";
 import WhoCanplay from "../comps/homepagecomps/WhoCanPlay";
 import TestimonialSlider from "../comps/homepagecomps/TestimonialSlider";
 import UnlimitedEscapeRoomHome from "../comps/unlimitedEscapeRoom/UnlimitedEscapeRoomHome";
 import UnlimitedEscapeGameMenu from "../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
+import GiftCardBookingMenu from "../comps/giftCardPageComps/GiftCardBookingMenu";
 
 export default function Home(props) {
   const [showUerBookingList, setShowUerBookingList] = useState(false);
+  const [showGiftBookingList, setShowGiftBookingList] = useState(false);
   return (
     <>
+      {showGiftBookingList && (
+        <div className="gftmenu">
+          <GiftCardBookingMenu
+            locationSlugList={props.locationSlugList}
+            setShowGiftBookingList={setShowGiftBookingList}
+          />
+        </div>
+      )}
       {showUerBookingList && (
         <div className="uermenu">
           <UnlimitedEscapeGameMenu
@@ -51,7 +62,10 @@ export default function Home(props) {
             setShowUerBookingList={setShowUerBookingList}
           />*/}
         <EventSlider eventList={props.eventList} />
-        <GiftCards locationSlugList={props.locationSlugList} />
+        <GiftCardHomePageSection
+          setShowGiftBookingList={setShowGiftBookingList}
+          locationSlugList={props.locationSlugList}
+        />
         <WhatIsEscape />
         <WhoCanplay />
         <TestimonialSlider testimonialList={props.testimonialList} />

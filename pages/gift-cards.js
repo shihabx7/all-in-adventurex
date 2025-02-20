@@ -27,7 +27,6 @@ const GiftCard = (props) => {
 
   return (
     <>
-      <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
       {showGiftBookingList && (
         <div className="gftmenu">
           <GiftCardBookingMenu

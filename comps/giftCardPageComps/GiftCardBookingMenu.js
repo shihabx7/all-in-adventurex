@@ -2,6 +2,7 @@ import GiftMenuTitle from "./GiftMenuTitle";
 
 import { FiX } from "react-icons/fi";
 import { FaAngleRight } from "react-icons/fa";
+import Script from "next/script";
 
 const GiftCardBookingMenu = (props) => {
   const closelocmenu = () => {
@@ -23,6 +24,7 @@ const GiftCardBookingMenu = (props) => {
 
   return (
     <>
+      <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
       <div
         className="loc-menu top-0 left-0 bg-dark fixed w-full h-full overflow-scroll md:overflow-hidden z-[10000]"
         style={{

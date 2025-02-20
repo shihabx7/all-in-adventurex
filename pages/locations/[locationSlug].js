@@ -14,6 +14,7 @@ import EscaeGameSlider from "../../comps/homepagecomps/EscaeGameSlider";
 import OtherGameSlider from "../../comps/homepagecomps/OtherGameSlider";
 import EventSlider from "../../comps/homepagecomps/EventSlider";
 import GiftCards from "../../comps/homepagecomps/GiftCards";
+import GiftCardHomePageSection from "../../comps/giftCardPageComps/GiftCardHomePageSection";
 import WhatIsEscape from "../../comps/homepagecomps/WhatIsEscape";
 import WhoCanplay from "../../comps/homepagecomps/WhoCanPlay";
 import TestimonialSlider from "../../comps/homepagecomps/TestimonialSlider";
@@ -27,7 +28,6 @@ import UnlimitedEscapeGameMenu from "../../comps/unlimitedEscapeRoom/UnlimitedEs
 const Locations = (props) => {
   /* customizing breadcum */
   const [showUerBookingList, setShowUerBookingList] = useState(false);
-  const [showUerBookingListx, setShowUerBookingListx] = useState(false);
 
   return (
     <>
@@ -107,7 +107,7 @@ const Locations = (props) => {
       ) : (
         <></>
       )}
-      <GiftCards
+      <GiftCardHomePageSection
         isPublished={props.isPublished}
         locationSlug={props.locationSlug}
         locationSlugList={props.locationSlugList}

@@ -1,14 +1,15 @@
 import Link from "next/link";
 import GiftMenu from "../headerComps/GiftMenu";
+import GiftCardBookingMenu from "./GiftCardBookingMenu";
 import TitleSeparator from "../util/TitleSeparator";
 import { useState } from "react";
 
-const GiftCards = (props) => {
-  const [showGiftBookingList, setShowGiftBookingList] = useState(false);
+const GiftCardHomePageSection = (props) => {
+  // const [showGiftBookingList, setShowGiftBookingList] = useState(false);
   const showLocation = () => {
     const body = document.getElementsByTagName("body")[0];
     body.classList.add("overflow-hidden");
-    setShowGiftBookingList(true);
+    props.setShowGiftBookingList(true);
   };
 
   const giftBooking = (bookingData) => {
@@ -23,15 +24,6 @@ const GiftCards = (props) => {
 
   return (
     <>
-      {showGiftBookingList && (
-        <div className="gftmenu">
-          <GiftMenu
-            locationSlugList={props.locationSlugList}
-            setShowGiftBookingList={setShowGiftBookingList}
-          />
-        </div>
-      )}
-
       <div className="buy-gift bg-black gift-pattern py-20 md:py-28  relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 z-30">
           <TitleSeparator title="All IN ADVENTURES GIFT CARDS" />
@@ -167,4 +159,4 @@ const GiftCards = (props) => {
   );
 };
 
-export default GiftCards;
+export default GiftCardHomePageSection;
