@@ -32,6 +32,7 @@ export const getGiftCardsPageData = async () => {
   const locationListRes = await fetch(locationSlugListQuery, apiSetting);
   const locationListObj = await locationListRes.json();
   const locationListData = locationListObj.data;
+  //console.log("list b" + JSON.stringify(locationListData[0]));
   // fetch all activity list as an array
   const reedemReq = apiUrl + giftReedemQuery;
   const activityListRes = await fetch(reedemReq, apiSetting);

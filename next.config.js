@@ -2755,7 +2755,14 @@ const hmagic = [
     destination: "/:path*/activities/houdinis-prestige",
     permanent: false,
   },
+  {
+    source: "/:path/gift-cards",
+
+    destination: "/gift-cards",
+    permanent: false,
+  },
 ];
+
 const allRed = [
   ...hmagic,
   ...wwwToHttps,

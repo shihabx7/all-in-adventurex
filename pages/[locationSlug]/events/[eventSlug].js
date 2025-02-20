@@ -122,15 +122,36 @@ export const getStaticPaths = async () => {
 
   return {
     paths,
-    fallback: false,
+    fallback: "blocking",
   };
 };
 
 export const getStaticProps = async (context) => {
-  const DATA = await getLocationEventPageData(
-    context.params.locationSlug,
-    context.params.eventSlug
-  );
+  let res = null;
+  let errFlag = true;
+
+  try {
+    res = await getLocationEventPageData(
+      context.params.locationSlug,
+      context.params.eventSlug
+    );
+  } catch (error) {
+    console.log("reponse err. page not found");
+    errFlag = false;
+  }
+  if (!errFlag) {
+    return {
+      redirect: {
+        permanent: false, // or true
+        destination: "/404",
+      },
+    };
+  }
+  const DATA = res;
+  // const DATA = await getLocationEventPageData(
+  //  context.params.locationSlug,
+  //  context.params.eventSlug
+  // );
   //console.log(DATA);
 
   return {

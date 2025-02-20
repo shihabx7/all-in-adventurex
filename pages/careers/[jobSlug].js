@@ -73,7 +73,25 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-  const DATA = await getJobPositionPageData(context.params.jobSlug);
+  let res = null;
+  let errFlag = true;
+
+  try {
+    res = await getJobPositionPageData(context.params.jobSlug);
+  } catch (error) {
+    console.log("reponse err. page not found");
+    errFlag = false;
+  }
+  if (!errFlag) {
+    return {
+      redirect: {
+        permanent: false, // or true
+        destination: "/404",
+      },
+    };
+  }
+  const DATA = res;
+  // const DATA = await getJobPositionPageData(context.params.jobSlug);
 
   return {
     props: {

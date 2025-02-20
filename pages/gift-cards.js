@@ -2,6 +2,7 @@ import { getGiftCardsPageData } from "./api/getGiftCardsPageData";
 
 // page template=============
 import RootNav from "../comps/RootNav";
+import GiftCardNav from "../comps/giftCardPageComps/GiftCardNav";
 import RootFooter from "../comps/RootFooter";
 import PageBread from "../comps/util/PageBread";
 import SinglePageSeo from "../comps/util/SinglePageSeo";
@@ -15,7 +16,9 @@ import GiftGallery from "../comps/giftCardPageComps/GiftGallery";
 import GiftEffect from "../comps/giftCardPageComps/GiftEffect";
 import GiftFaq from "../comps/giftCardPageComps/GiftFaq";
 import GiftMenu from "../comps/headerComps/GiftMenu";
+import GiftCardBookingMenu from "../comps/giftCardPageComps/GiftCardBookingMenu";
 import { useState } from "react";
+import Script from "next/script";
 
 const GiftCard = (props) => {
   const [showGiftBookingList, setShowGiftBookingList] = useState(false);
@@ -24,9 +27,10 @@ const GiftCard = (props) => {
 
   return (
     <>
+      <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
       {showGiftBookingList && (
         <div className="gftmenu">
-          <GiftMenu
+          <GiftCardBookingMenu
             locationSlugList={props.locationSlugList}
             setShowGiftBookingList={setShowGiftBookingList}
           />
@@ -35,11 +39,12 @@ const GiftCard = (props) => {
 
       {/* =======header content======== */}
       <SinglePageSeo meta={props.pageMeta} />
-      <RootNav
+      <GiftCardNav
         locationSlugList={props.locationSlugList}
         escapeGameSlugList={props.escapeGameSlugList}
         otherGameSlugList={props.otherGameSlugList}
         eventSlugList={props.eventSlugList}
+        setShowGiftBookingList={setShowGiftBookingList}
       />
       {/* =======header content ======== end */}
 

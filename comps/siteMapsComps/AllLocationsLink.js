@@ -29,14 +29,6 @@ const AllLocationsLink = (props) => {
               <ul className="site-map-link-group-2 list-disc pl-4 md:pl-8">
                 <li className="my-2">
                   <a
-                    href={"/" + location.locationSlug + "/gift-cards"}
-                    className="site-link text-[#1a1a1a] hover:text-red-700 md:text-lg xl:text-xl"
-                  >
-                    Gift Cards
-                  </a>
-                </li>
-                <li className="my-2">
-                  <a
                     href={"/" + location.locationSlug + "/contact-store"}
                     className="site-link text-[#1a1a1a] hover:text-red-700 md:text-lg xl:text-xl"
                   >

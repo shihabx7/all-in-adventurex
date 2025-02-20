@@ -64,12 +64,12 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
   const locationResData = locationObj.data[0].attributes;
   const mobileEscapeRoom = locationResData.mobileEscapeRoom;
   let isActiveMobileEscape = checkActiveMobileEscape(mobileEscapeRoom);
-  if (isActiveMobileEscape && actSlug == "mobile-escape-room") {
-    //console.log(activityQ);
-    // console.log("========================");
-    // console.log("========================");
-    //console.log(pageResData.mobileEscapeRoom);
-  }
+  //  if (isActiveMobileEscape && actSlug == "mobile-escape-room") {
+  //console.log(activityQ);
+  // console.log("========================");
+  // console.log("========================");
+  //console.log(pageResData.mobileEscapeRoom);
+  // }
 
   //console.log(locationResData.mobileEscapeRoom.length);
   //console.log(locationResData);

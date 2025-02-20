@@ -105,9 +105,27 @@ export const getStaticPaths = async () => {
   };
 };
 export const getStaticProps = async (context) => {
-  const blogCategoryData = await getBlogCategoryData(
-    context.params.categorySlug
-  );
+  let res = null;
+  let errFlag = true;
+
+  try {
+    res = await getBlogCategoryData(context.params.categorySlug);
+  } catch (error) {
+    console.log("reponse err. page not found");
+    errFlag = false;
+  }
+  if (!errFlag) {
+    return {
+      redirect: {
+        permanent: false, // or true
+        destination: "/404",
+      },
+    };
+  }
+  const blogCategoryData = res;
+  // const blogCategoryData = await getBlogCategoryData(
+  //  context.params.categorySlug
+  // );
 
   return {
     props: {

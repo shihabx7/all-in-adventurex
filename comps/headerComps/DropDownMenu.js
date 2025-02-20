@@ -42,41 +42,25 @@ const DropDownMenu = (props) => {
             </a>
           </div>
           {/*=======================location's Gift card Page */}
-          {props.locationSlug ? (
-            <div className="my-2">
-              <a
-                href={"/" + props.locationSlug + "/gift-cards"}
-                className=" inline-block bg-[#FFF9EB] p-1 text-[#4A2F03] hover:bg-[#F4E9D1]  hover:text-red-600 rounded"
-              >
-                <div className="p-1 flex space-x-2 items-center rounded border border-dashed border-[#A78849]">
-                  <p className="text-lg leading-[1]">Gift Cards</p>
-                  <div className="w-[20px]">
-                    <img
-                      className="w-full"
-                      src="/assets/gift-images/hero/gift-card-icon-for-title.svg"
-                    ></img>
-                  </div>
+
+          {/*<div className="my-2">
+            <a
+              href={"/gift-cards"}
+              className=" inline-block bg-[#FFF9EB] p-1 text-[#4A2F03] hover:bg-[#F4E9D1]  hover:text-red-600 rounded"
+            >
+              <div className="p-1 flex space-x-2 items-center rounded border border-dashed border-[#A78849]">
+                <p className="text-lg leading-[1]">Gift Cards</p>
+                <div className="w-[20px]">
+                  <img
+                    className="w-full"
+                    src="/assets/gift-images/hero/gift-card-icon-for-title.svg"
+                  ></img>
                 </div>
-              </a>
-            </div>
-          ) : (
-            <div className="my-2">
-              <a
-                href={"/gift-cards"}
-                className=" inline-block bg-[#FFF9EB] p-1 text-[#4A2F03] hover:bg-[#F4E9D1]  hover:text-red-600 rounded"
-              >
-                <div className="p-1 flex space-x-2 items-center rounded border border-dashed border-[#A78849]">
-                  <p className="text-lg leading-[1]">Gift Cards</p>
-                  <div className="w-[20px]">
-                    <img
-                      className="w-full"
-                      src="/assets/gift-images/hero/gift-card-icon-for-title.svg"
-                    ></img>
-                  </div>
-                </div>
-              </a>
-            </div>
-          )}
+              </div>
+            </a>
+          </div>
+          */}
+
           {/*=======================location's store Page */}
           {props.locationSlug ? (
             <div className="submenu-item">

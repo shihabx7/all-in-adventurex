@@ -23,6 +23,11 @@ const StaticSubmenu = () => {
         </a>
       </div>
       <div className="submenu-item">
+        <a href="/gift-cards" className="flex items-center">
+          <span className="sub-link-txt">Gift Cards</span>
+        </a>
+      </div>
+      <div className="submenu-item">
         <a href="/unlimited-play-pass" className="flex items-center">
           <span className="sub-link-txt">Unlimited Play Pass</span>
         </a>

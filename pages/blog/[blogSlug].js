@@ -108,7 +108,25 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-  const DATA = await getSingleBlogData(context.params.blogSlug);
+  let res = null;
+  let errFlag = true;
+
+  try {
+    res = await getSingleBlogData(context.params.blogSlug);
+  } catch (error) {
+    console.log("reponse err. page not found");
+    errFlag = false;
+  }
+  if (!errFlag) {
+    return {
+      redirect: {
+        permanent: false, // or true
+        destination: "/404",
+      },
+    };
+  }
+  const DATA = res;
+  // const DATA = await getSingleBlogData(context.params.blogSlug);
 
   return {
     props: {

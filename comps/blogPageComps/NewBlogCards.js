@@ -12,7 +12,7 @@ const NewBlogCards = (props) => {
     <>
       {props.blogdata.map((blogitem, index) => {
         return (
-          <div key={index} className="bl-item bg-[#FFF3D8] flex flex-col">
+          <div key={index + 1} className="bl-item bg-[#FFF3D8] flex flex-col">
             <div className="bl-card-head">
               <div className="bl-ft-img">
                 <a className="block w-full" href={"/blog/" + blogitem.slug}>
