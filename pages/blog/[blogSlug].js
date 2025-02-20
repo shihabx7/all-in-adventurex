@@ -125,6 +125,7 @@ export const getStaticProps = async (context) => {
       },
     };
   }
+  //console.log("single blog data:" + res);
   const DATA = res;
   // const DATA = await getSingleBlogData(context.params.blogSlug);
 

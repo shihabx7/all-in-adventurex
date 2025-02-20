@@ -81,10 +81,24 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-  //const singleBlogData = await getSingleBlogData(context.params.activitiesSlug);
-  // console.log(context.params.activitiesSlug);
-  //console.log("Location: " + context.params.locationSlug);
-  const DATA = await getLocationsContactPageData(context.params.locationSlug);
+  let res = null;
+  let errFlag = true;
+
+  try {
+    res = await getLocationsContactPageData(context.params.locationSlug);
+  } catch (error) {
+    //console.log("reponse err. page not found");
+    errFlag = false;
+  }
+  if (!errFlag) {
+    return {
+      redirect: {
+        permanent: false, // or true
+        destination: "/404",
+      },
+    };
+  }
+  const DATA = res;
   // console.log(DATA);
 
   return {

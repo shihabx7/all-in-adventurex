@@ -291,6 +291,8 @@ export const getSingleBlogData = async (slug) => {
   const locationListRes = await fetch(locationSlugListQuery, apiSetting);
   const locationListObj = await locationListRes.json();
   const locationListData = locationListObj.data;
+
+  //console.log(locationListData);
   // fetch all activity list as an array
   const activityListRes = await fetch(allActivitiesSluglistQuery, apiSetting);
   const activityListObj = await activityListRes.json();
