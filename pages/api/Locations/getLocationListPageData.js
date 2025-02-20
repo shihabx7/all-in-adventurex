@@ -33,6 +33,8 @@ export const getLocationListPageData = async () => {
   const locationListObj = await locationListRes.json();
   const locationListData = locationListObj.data;
 
+  //console.log(JSON.stringify(locationListData));
+
   // fetch all activity list as an array
   const activityListRes = await fetch(allActivitiesSluglistQuery, apiSetting);
   const activityListObj = await activityListRes.json();
