@@ -159,7 +159,7 @@ export const getStaticProps = async (context) => {
   try {
     res = await getLocationHomePageData(context.params.locationSlug);
   } catch (error) {
-    console.log("reponse err. page not found");
+    console.log("Reponse err. page not found");
     errFlag = false;
   }
   if (!errFlag) {
