@@ -148,14 +148,14 @@ export const getStaticPaths = async () => {
 
   return {
     paths,
-    fallback: "blocking",
+    fallback: false,
   };
 };
 
 export const getStaticProps = async (context) => {
   let res = null;
   let errFlag = true;
-
+  /*
   try {
     res = await getLocationHomePageData(context.params.locationSlug);
   } catch (error) {
@@ -169,8 +169,9 @@ export const getStaticProps = async (context) => {
         destination: "/404",
       },
     };
-  }
-  const DATA = res;
+  } 
+  */
+  const DATA = await getLocationHomePageData(context.params.locationSlug);
   // const DATA = await getLocationHomePageData(context.params.locationSlug);
   //console.log(DATA);
   return {

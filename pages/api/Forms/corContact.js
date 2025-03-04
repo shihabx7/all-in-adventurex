@@ -4,7 +4,8 @@ import { google } from "googleapis";
 export default async function corContactHandler(req, res) {
   // Get data submitted in request's body.
   const body = req.body;
-
+  const userAgent = req.headers["user-agent"];
+  console.log("User Data", userAgent);
   const retData = {
     Name: body.fName + " " + body.lName,
     Email: body.email,
@@ -41,8 +42,9 @@ export default async function corContactHandler(req, res) {
     });
     const mailOptions = {
       from: '"AIA Corporate Contact" <sender@allinadventures.com>', // sender address
-      to: "support@allinadventures.com", // list of receivers
-      bcc: "dgency.com@gmail.com",
+      to: "shihab.dgency@gmail.com.com",
+      // to: "support@allinadventures.com", // list of receivers
+      //bcc: "dgency.com@gmail.com",
       replyTo: retData.Email,
       subject: `Corporate Contact`,
       html: `
