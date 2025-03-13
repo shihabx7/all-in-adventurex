@@ -46,7 +46,7 @@ a {
   background: blue;
 }
 .grecaptcha-badge {
-  visibility: hidden;
+  visibility: visible;
 }
 .dt-picker .react-date-picker__wrapper {
   border: none;

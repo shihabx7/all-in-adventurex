@@ -74,6 +74,7 @@ export async function checkRateLimiter(req, res) {
     });
   });
 }
+//old limiter
 export async function setRateLimiterold(req, res) {
   // console.log("Rate limit checking...");
   // let retObj = {};
