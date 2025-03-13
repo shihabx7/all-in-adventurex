@@ -1,10 +1,18 @@
 import TitleSeparator from "../util/TitleSeparator";
-
-import { useState } from "react";
+import CorContactInfo from "./CorContactInfo";
+import ReCAPTCHA from "react-google-recaptcha";
+import { useState, useEffect, useRef } from "react";
 
 const CorContact = (props) => {
+  // const [captchaToken, setCaptchaToken] = useState(null);
+  const recaptchaRef = useRef();
+  const [csrfToken, setCsrfToken] = useState(null);
+  const [reCaptchaToken, setReCaptchaToken] = useState(null);
+
   const [err, setErr] = useState(false);
-  const [emptyErr, setEmptyErr] = useState(true);
+  const [errorMsg, setErrorMsg] = useState("");
+  const [successMsg, setSuccessMsg] = useState("");
+  const [isSend, setIsSend] = useState(false);
   const [formErr, setFormErr] = useState({
     fNameErr: false,
     lNameErr: false,
@@ -19,14 +27,39 @@ const CorContact = (props) => {
     phone: "",
     comSubject: "General enquiry",
     msg: "",
+    botMsg: "",
   });
+  // get csrf token
+  useEffect(() => {
+    const fetchCsrfToken = async () => {
+      try {
+        const csrfRes = await fetch("/api/Forms/getCsrfToken");
+        console.log("CSRF token response:", csrfRes);
+        const resDtata = await csrfRes.json();
+        setCsrfToken(resDtata.csrfToken);
+        console.log("CSRF token found:", resDtata.csrfToken);
+      } catch (error) {
+        setErrorMsg("Failed to fetch CSRF token");
+        console.log("Failed to fetch CSRF token:", error);
+      }
+    };
 
+    fetchCsrfToken();
+  }, []);
+  // escape Html tag
+  const escape = (htmlStr) => {
+    return htmlStr
+      .replace(/&/g, "and")
+      .replace(/</g, " ")
+      .replace(/>/g, " ")
+      .replace(/(?:\r\n|\r|\n)/g, "<br>");
+  };
   // ========================================================first name validation=================
   const checkFName = (e) => {
     const fname = e.target.value.trim();
 
     const namePatt = /^[a-zA-Z ]*$/;
-    if (fname.length > 2 && fname.length < 21) {
+    if (fname.length > 2 && fname.length < 24) {
       if (!namePatt.test(fname)) {
         setErr(true);
         setFormErr({ ...formErr, fNameErr: true });
@@ -104,7 +137,7 @@ const CorContact = (props) => {
     const phone = e.target.value.trim();
     const numPatt = /^[ 0-9-+/./(/)]*$/;
 
-    if (phone.length > 6 && phone.length < 18) {
+    if (phone.length > 6 && phone.length < 17) {
       if (!numPatt.test(phone)) {
         setErr(true);
         setFormErr({ ...formErr, phoneErr: true });
@@ -142,58 +175,59 @@ const CorContact = (props) => {
       e.target.classList.add("focus-red");
     }
   };
-  // geet msg text
-  const escape = (htmlStr) => {
-    return htmlStr
-      .replace(/&/g, "and")
-      .replace(/</g, " ")
-      .replace(/>/g, " ")
-      .replace(/(?:\r\n|\r|\n)/g, "<br>");
-  };
+
   const getMsg = (e) => {
-    const msg = e.target.value.trim();
+    const msg = escape(e.target.value.trim());
     if (msg.length > 2) {
-      setFieldValue({ ...fieldVlue, msg: escape(msg) });
+      setFieldValue({ ...fieldVlue, msg: msg });
     }
   };
-  const [isSend, setIsSend] = useState(false);
+  const checkBoot = (e) => {
+    const botData = escape(e.target.value.trim());
+
+    setFieldValue({ ...fieldVlue, botMsg: botData });
+  };
+  const checkEmpty = () => {
+    if (
+      fieldVlue.fName.length < 3 ||
+      typeof fieldVlue.fName !== "string" ||
+      fieldVlue.lName.length < 3 ||
+      typeof fieldVlue.lName !== "string" ||
+      fieldVlue.email.length < 6 ||
+      typeof fieldVlue.email !== "string" ||
+      fieldVlue.phone.length < 7 ||
+      fieldVlue.botMsg.length > 0 ||
+      typeof fieldVlue.botMsg !== "string"
+    ) {
+      return true;
+    }
+    return false;
+  };
+
   const submitForm = async (event) => {
     event.preventDefault();
     // console.log("clicked");
     // console.log(fieldVlue);
-    if (!err) {
-      if (
-        fieldVlue.fName != "" &&
-        fieldVlue.lName != "" &&
-        fieldVlue.email != "" &&
-        fieldVlue.phone != "" &&
-        fieldVlue.comSubject != "" &&
-        fieldVlue.comSubject != "0"
-      ) {
-        console.log("Sending..." + fieldVlue);
+    //if (!captchaToken) {
+    //  alert("Please complete reCAPTCHA");
+    //   return;
+    //  }
+    // console.log("msg no type: ");
+    // console.log(typeof fieldVlue.msg);
+    //  console.log("CSRF token state:", csrfToken);
+    setIsSend(true);
+    const grcToken = await recaptchaRef.current.executeAsync();
+    //  console.log("captcha token ..." + grcToken);
+    if (!grcToken) {
+      setErrorMsg("Cptcha not Found. try again");
+      return;
+    }
+    setReCaptchaToken(grcToken);
+    //  console.log("captcha token... state" + fieldVlue.captchaToken);
 
-        setIsSend(true);
-        const response = await fetch("/api/Forms/corContact", {
-          method: "POST",
-          headers: {
-            Accept: "application/json,text/plain,*/*",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(fieldVlue),
-        });
-        const result = await response.json();
-
-        //console.log(result.data)
-        //console.log(result.success)
-        if (result.success) {
-          setIsSend(false);
-          window.location.replace("/thank-you");
-        } else {
-          setIsSend(false);
-          alert("Network Error");
-        }
-      }
-    } else {
+    const isEmpty = checkEmpty();
+    if (err || isEmpty) {
+      setErrorMsg("Some thing is wrong. Miscellaneous activity detected");
       if (fieldVlue.fName == "") {
         const fnameEl = document.getElementById("fname");
         fnameEl.classList.remove("focus-green");
@@ -206,7 +240,63 @@ const CorContact = (props) => {
         consubel.classList.add("focus-red");
         setFormErr({ ...formErr, comErr: ture });
       }
+      return;
     }
+    // console.log("Sending..." + JSON.stringify(fieldVlue));
+
+    const formData = {
+      fName: fieldVlue.fName,
+      lName: fieldVlue.lName,
+      email: fieldVlue.email,
+      phone: fieldVlue.phone,
+      comSubject: fieldVlue.comSubject,
+      msg: fieldVlue.msg,
+      botMsg: fieldVlue.botMsg,
+      captchaToken: grcToken,
+      csrfToken: csrfToken,
+    };
+    try {
+      const response = await fetch("/api/Forms/corContact", {
+        method: "POST",
+        headers: {
+          Accept: "application/json,text/plain,*/*",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      const result = await response.json();
+      setIsSend(false);
+      if (response.status == 200) {
+        setErrorMsg("");
+        setSuccessMsg("Your message has submitted successfully. Thank you.");
+        // window.location.replace("/thank-you");
+      } else if (response.status == 400) {
+        setErrorMsg(result.data.error);
+      } else if (response.status == 403) {
+        setSuccessMsg("");
+        setErrorMsg(result.data.error);
+      } else if (response.status == 405) {
+        setSuccessMsg("");
+        setErrorMsg(result.data.error);
+      } else if (response.status == 429) {
+        setSuccessMsg("");
+        setErrorMsg(
+          result.data.error + " Try after" + result.data.resetAfter + " Min"
+        );
+      } else {
+        setErrorMsg("Server not Responding. Try again later");
+        setSuccessMsg("");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setSuccessMsg("");
+      setIsSend(false);
+      alert("Network Error: Please try again later.");
+    }
+
+    //console.log(result);
+    // console.log(response.status);
+    //console.log(result.success)
   };
   return (
     <div className="c-contact py-16 md:py-20 lg:py-28  bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] bg-repeat">
@@ -224,99 +314,23 @@ const CorContact = (props) => {
         </div>
 
         <div className="c-contact-box flex flex-col md:flex-row md:space-x-6 lg:space-x-12 justify-between md:px-4">
-          <div className="c-form-info md:w-[36%] lg:w-[38%] order-2 md:order-1 px-4 md:px-0 lg:px-0">
-            <h3 className="golden-text font-os font-bold mt-8 md:mt-0 text-xl lg:text-2xl mb-2 lg:mb-4">
-              OUR FACILITIES
-            </h3>
-            <p className="text-gray-700 lg:text-lg">
-              All escape rooms are completely private - for your players only!
-              We provide an entire party with the opportunity to celebrate in a
-              fun and unique way. Come join us to create exciting memories with
-              your group.
-            </p>
-            <div className="c-contact-info-list mt-6 lg:mt-8 ">
-              <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-t border-b border-[#D2C6AA]">
-                <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg  uppercase">
-                  PHONE
-                </h4>
-                <a
-                  href={"tel:" + props.contactData.phone}
-                  className="text-lg text-[#232323] block hover:text-red-700"
-                >
-                  {props.contactData.phone}
-                </a>
-              </div>
-              <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
-                <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg uppercase">
-                  FRANCHISING
-                </h4>
-                <a
-                  href={"mailto:" + props.contactData.franchiseEmail}
-                  className="text-lg text-[#232323] block hover:text-red-700"
-                >
-                  {props.contactData.franchiseEmail}
-                </a>
-              </div>
-              <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
-                <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg uppercase">
-                  SALES
-                </h4>
-                <a
-                  href={"mailto:" + props.contactData.salesEmail}
-                  className="text-lg text-[#232323] block hover:text-red-700"
-                >
-                  {props.contactData.salesEmail}
-                </a>
-              </div>
-              <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
-                <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg  uppercase">
-                  CUSTOMER SERVICE
-                </h4>
-                <a
-                  href={"mailto:" + props.contactData.supportEmail}
-                  className="text-lg text-[#232323] block hover:text-red-700"
-                >
-                  {props.contactData.supportEmail}
-                </a>
-              </div>
-              <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
-                <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg  uppercase">
-                  OPERATIONS
-                </h4>
-                <a
-                  href={"mailto:" + props.contactData.operationEmail}
-                  className="text-lg text-[#232323] block hover:text-red-700"
-                >
-                  {props.contactData.operationEmail}
-                </a>
-              </div>
-              <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
-                <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg  uppercase">
-                  CAREERS
-                </h4>
-                <a
-                  href={"mailto:" + props.contactData.careersEmail}
-                  className="text-lg text-[#232323] block hover:text-red-700"
-                >
-                  {props.contactData.careersEmail}
-                </a>
-              </div>
-              <div className="c-contact-item pl-2 md:pl-6 lg:pl-8 py-2 lg:py-3 border-b border-[#D2C6AA]">
-                <h4 className="inline-block underline underline-offset-4 text-[#A78849] font-medium text-lg uppercase">
-                  BILLING
-                </h4>
-                <a
-                  href={"mailto:" + props.contactData.billingEmail}
-                  className="text-lg text-[#232323] block hover:text-red-700"
-                >
-                  {props.contactData.billingEmail}
-                </a>
-              </div>
-            </div>
+          {/*======================== corporate contact info column=======================*/}
+          <div className="c-form-info-col md:w-[36%] lg:w-[38%] order-2 md:order-1 px-4 md:px-0 lg:px-0">
+            <CorContactInfo contactData={props.contactData} />
           </div>
           {/*======================== corporate contact form=======================*/}
           <div className="c-form-form md:w-[62%] lg:w-[60%] order-1 md:order-2">
             <div className="bg-[#F4E6C3] py-8 px-4 lg:p-8 rounded-lg drop-shadow">
+              {errorMsg.length > 0 && successMsg.length < 1 && (
+                <p className="form-error p-3 mb-4 bg-amber-50 text-red-700 text-center text-sm">
+                  {errorMsg}
+                </p>
+              )}
+              {errorMsg.length < 1 && successMsg.length > 0 && (
+                <p className="form-error p-3 mb-4 bg-amber-50 text-red-700 text-center text-sm">
+                  {successMsg}
+                </p>
+              )}
               <form onSubmit={(event) => submitForm(event)}>
                 {/*========================  contact form row first name = last name=======================*/}
                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between ">
@@ -379,6 +393,12 @@ const CorContact = (props) => {
                       placeholder="Your email address"
                       required
                     ></input>
+                    <input
+                      type="text"
+                      name="botCheck"
+                      onChange={(e) => checkBoot(e)}
+                      className="hidden"
+                    ></input>
                     {formErr.emailErr && (
                       <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
                         Invalid email address
@@ -406,7 +426,7 @@ const CorContact = (props) => {
                   </div>
                 </div>
                 {/*======================================contact form row====================== */}
-                {/*======================================contact form row location event====================== */}
+                {/*======================================contact form email phonerow location ====================== */}
                 <div className="form-row flex justify-between mt-3 md:mt-10 lg:mt-12 ">
                   <div className="relative form-col w-full">
                     <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
@@ -441,8 +461,8 @@ const CorContact = (props) => {
                     )}
                   </div>
                 </div>
-                {/*======================================contact form row location event====================== */}
-                {/*======================================contact form row message event====================== */}
+                {/*======================================contact form row location ====================== */}
+                {/*======================================contact form row message ====================== */}
                 <div className="form-row flex justify-between my-3 md:my-10 lg:my-12">
                   <div className="form-col w-full">
                     <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
@@ -461,7 +481,15 @@ const CorContact = (props) => {
                     ></textarea>
                   </div>
                 </div>
-                {/*======================================contact form row message event====================== */}
+                {/**================ captcha element */}
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey="6LepEu0qAAAAAFSM_8lLN8LDgmT2qguQGQwV7cPZ" // Replace with your site key
+                  size="invisible"
+                  //onChange={setCaptchaToken}
+                />
+
+                {/*======================================contact form row message====================== */}
                 {!isSend && (
                   <div className="form-row flex justify-center ">
                     <button

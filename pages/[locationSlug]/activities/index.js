@@ -68,12 +68,12 @@ export const getStaticPaths = async () => {
 
   return {
     paths,
-    fallback: "blocking",
+    fallback: false,
   };
 };
 
 export const getStaticProps = async (context) => {
-  let res = null;
+  /* let res = null;
   let errFlag = true;
 
   try {
@@ -90,7 +90,7 @@ export const getStaticProps = async (context) => {
       },
     };
   }
-  const DATA = res;
+  const DATA = res;*/
   //const singleBlogData = await getSingleBlogData(context.params.activitiesSlug);
   // console.log(context.params.activitiesSlug);
   //console.log("Location: " + context.params.locationSlug);
@@ -98,7 +98,9 @@ export const getStaticProps = async (context) => {
   //   context.params.locationSlug
   //);
   //console.log(DATA);
-
+  const DATA = await getLocationActivitiesListPageData(
+    context.params.locationSlug
+  );
   return {
     props: {
       locationSlugList: DATA.locationSlugList,

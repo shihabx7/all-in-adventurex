@@ -1,6 +1,6 @@
 import TitleSeparator from "../util/TitleSeparator";
-import { useState } from "react";
-import { useRouter } from "next/router";
+import { useState, useRef } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const FranchiseContactForm = () => {
   const [err, setErr] = useState(false);
@@ -44,7 +44,6 @@ const FranchiseContactForm = () => {
     profExp: "",
     urBelieve: "",
   });
-  const router = useRouter();
 
   // ========================================================first name validation=================
   const checkFName = (e) => {

@@ -29,7 +29,7 @@ const EscapeGameList = (props) => {
         return (
           <div
             key={index + 1}
-            className="all-game-list bg-center bg-cover p-4 md:p-6 lg:p-8 "
+            className="all-game-list bg-center bg-cover px-2 py-3 rm:p-4 md:p-6 lg:p-8 "
             style={{
               backgroundImage:
                 "linear-gradient(53deg, rgba(0,0,0,0.92),rgba(0,0,0,0.82),rgba(0,0,0,0.62),rgba(0,0,0,0),rgba(0,0,0,0)),url('" +
@@ -39,7 +39,7 @@ const EscapeGameList = (props) => {
             }}
           >
             <div className="all-game-list-head flex justify-between space-x-1 items-center">
-              <div className="all-game-info max-w-[50%]">
+              <div className="all-game-info max-w-[50%] md:max-w-none">
                 <div className="flex items-center space-x-1 md:space-x-2 text-gray-50 my-1">
                   <span>
                     <img src="/assets/svg/card-age.svg"></img>
@@ -81,10 +81,10 @@ const EscapeGameList = (props) => {
                   {activity.price.length > 1 ? (
                     <>
                       <div className="pdt-head flex justify-center items-center border-b border-[#ba2121]">
-                        <p className="w-1/2 p-1 md:p-1 text-center text-[12px] sm:text-[14px] text-white font-medium border-r border-[#ba2121]">
+                        <p className="px-1 py-1 md:px-2 md:py-1 text-center text-[12px] sm:text-[14px] text-white font-medium border-r border-[#ba2121]">
                           Team Size
                         </p>
-                        <p className="w-1/2 p-1 md:p-1 text-center text-[12px] sm:text-[14px] text-white font-medium">
+                        <p className=" px-1 py-1 md:px-2 md:py-1 text-center text-[12px] sm:text-[14px] text-white font-medium">
                           Per Guest
                         </p>
                       </div>

@@ -153,8 +153,6 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-  let res = null;
-  let errFlag = true;
   /*
   try {
     res = await getLocationHomePageData(context.params.locationSlug);

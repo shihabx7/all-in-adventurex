@@ -1,5 +1,5 @@
-import React, { Component, useState } from "react";
-import PropTypes from "prop-types";
+import { useState, useRef } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import GameTitleSeparator from "../util/GameTitleSeparator";
 
 const Vcontact = (props) => {

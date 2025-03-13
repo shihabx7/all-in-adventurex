@@ -68,12 +68,12 @@ export const getStaticPaths = async () => {
 
   return {
     paths,
-    fallback: "blocking",
+    fallback: false,
   };
 };
 
 export const getStaticProps = async (context) => {
-  let res = null;
+  /*  let res = null;
   let errFlag = true;
 
   try {
@@ -89,9 +89,9 @@ export const getStaticProps = async (context) => {
         destination: "/404",
       },
     };
-  }
-  const DATA = res;
-  // const DATA = await getJobPositionPageData(context.params.jobSlug);
+  }*/
+  // const DATA = res;
+  const DATA = await getJobPositionPageData(context.params.jobSlug);
 
   return {
     props: {

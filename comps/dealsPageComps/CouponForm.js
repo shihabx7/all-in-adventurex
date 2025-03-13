@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { BsFillCheckCircleFill, BsCheck } from "react-icons/bs";
-import { useRouter } from "next/router";
+import ReCAPTCHA from "react-google-recaptcha";
 const CouponForm = (props) => {
   const [showCoupon, setShowcoupon] = useState(false);
   const [err, setErr] = useState(false);
@@ -16,7 +16,6 @@ const CouponForm = (props) => {
     name: "",
     email: "",
   });
-  const router = useRouter();
 
   useEffect(() => {
     let sd = (Math.random() * (30.5 - 5.0) + 5.0).toFixed(2);

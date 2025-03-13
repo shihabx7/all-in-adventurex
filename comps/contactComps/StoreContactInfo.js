@@ -1,10 +1,3 @@
-import TitleSeparator from "../util/TitleSeparator";
-
-import { FiChevronDown, FiX } from "react-icons/fi";
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
-import LocationMap from "../locationsPage/LocationMap";
-
 const formateDate = (dt) => {
   let dtArr = dt.split("-");
   return dtArr[1] + "-" + dtArr[2] + "-" + dtArr[0];

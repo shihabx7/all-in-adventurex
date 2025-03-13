@@ -94,12 +94,12 @@ export const getStaticPaths = async () => {
 
   return {
     paths,
-    fallback: "blocking",
+    fallback: false,
   };
 };
 
 export const getStaticProps = async (context) => {
-  let res = null;
+  /* let res = null;
   let errFlag = true;
 
   try {
@@ -118,10 +118,10 @@ export const getStaticProps = async (context) => {
       },
     };
   }
-  const DATA = res;
-  //const DATA = await getLocationEvenstListPageData(context.params.locationSlug);
-  // console.log(context.params.activitiesSlug);
-  //console.log("Location: " + context.params.locationSlug);
+  const DATA = res;*/
+  const DATA = await getLocationEvenstListPageData(context.params.locationSlug);
+  console.log(context.params.activitiesSlug);
+  //  console.log("Location: " + context.params.locationSlug);
 
   return {
     props: {

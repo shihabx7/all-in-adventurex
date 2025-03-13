@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import ApplicantInfo from "./ApplicantInfo";
 import ApplicantInfo2 from "./ApplicantInfo2";
 import Availability from "./Availability";
 import Education from "./Education";
 import Experience from "./Experience";
 import References from "./References";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const JobApplicationForms = (props) => {
   const [formStep, setFormStep] = useState(0);

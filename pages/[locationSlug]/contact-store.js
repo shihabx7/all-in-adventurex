@@ -81,7 +81,7 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-  let res = null;
+  /*let res = null;
   let errFlag = true;
 
   try {
@@ -97,8 +97,8 @@ export const getStaticProps = async (context) => {
         destination: "/404",
       },
     };
-  }
-  const DATA = res;
+  }*/
+  const DATA = await getLocationsContactPageData(context.params.locationSlug);
   // console.log(DATA);
 
   return {

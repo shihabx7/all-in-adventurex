@@ -1,66 +1,74 @@
 import TitleSeparator from "../util/TitleSeparator";
 import StoreContactInfo from "./StoreContactInfo";
-import { FiChevronDown, FiX } from "react-icons/fi";
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
+import { useState, useEffect, useRef } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import LocationMap from "../locationsPage/LocationMap";
+
 const removeTags = (str) => {
   if (str === null || str === "") return false;
   else str = str.toString();
 
   return str.replace(/(<([^>]+)>)/gi, "");
 };
+const TitleAddress = (slug) => {
+  var stt = slug.split("-");
+  var stts = stt[stt.length - 1].toString();
+  var ctt = stt.slice(0, -1).join(" ");
 
-const StoreContact = (props) => {
+  return ctt + " " + stts;
+};
+
+const getDirection = (address, slug, city, zip) => {
+  var addr = address.toString().split(" ").join("+");
+  var stl = slug.split("-");
+  stl = stl[stl.length - 1].toString();
+
+  const gUrl =
+    "https://www.google.com/maps/dir//" +
+    addr +
+    ",+" +
+    city +
+    ",+" +
+    stl +
+    "+" +
+    zip +
+    "+" +
+    "USA";
+
+  return gUrl;
+};
+const getAddress = (address, slug, city, zip) => {
+  var st = slug.split("-");
+  st = st[st.length - 1].toString();
+  st = st.toUpperCase();
+
+  return address + ", " + city + ", " + st + " " + zip + " United States";
+};
+const statCode = (locationName) => {
+  var ret = locationName.split(",");
+  var retst = ret[ret.length - 1].toUpperCase().trim();
+  return retst;
+};
+export default function StoreContact(props) {
+  // sanitize msg text
+  const escape = (htmlStr) => {
+    return htmlStr
+      .replace(/&/g, "and")
+      .replace(/</g, " ")
+      .replace(/>/g, " ")
+      .replace(/(?:\r\n|\r|\n)/g, "<br>");
+  };
+  //========================================= data state==============
+  const recaptchaRef = useRef();
   const [showHour, setShowHours] = useState(false);
+
+  const [reCaptchaToken, setReCaptchaToken] = useState(null);
   const [isPgLoaded, setIsPageLoaded] = useState(false);
-
-  useEffect(() => {
-    setIsPageLoaded(true);
-  });
-
-  const TitleAddress = (slug) => {
-    var stt = slug.split("-");
-    var stts = stt[stt.length - 1].toString();
-    var ctt = stt.slice(0, -1).join(" ");
-
-    return ctt + " " + stts;
-  };
-
-  const getDirection = (address, slug, city, zip) => {
-    var addr = address.toString().split(" ").join("+");
-    var stl = slug.split("-");
-    stl = stl[stl.length - 1].toString();
-
-    const gUrl =
-      "https://www.google.com/maps/dir//" +
-      addr +
-      ",+" +
-      city +
-      ",+" +
-      stl +
-      "+" +
-      zip +
-      "+" +
-      "USA";
-
-    return gUrl;
-  };
-  const getAddress = (address, slug, city, zip) => {
-    var st = slug.split("-");
-    st = st[st.length - 1].toString();
-    st = st.toUpperCase();
-
-    return address + ", " + city + ", " + st + " " + zip + " United States";
-  };
-  const statCode = (locationName) => {
-    var ret = locationName.split(",");
-    var retst = ret[ret.length - 1].toUpperCase().trim();
-    return retst;
-  };
-  // form submission area==============
   const [err, setErr] = useState(false);
-  const [emptyErr, setEmptyErr] = useState(true);
+  const [errorMsg, setErrorMsg] = useState("");
+  const [successMsg, setSuccessMsg] = useState("");
+
+  const [isSend, setIsSend] = useState(false);
   const [formErr, setFormErr] = useState({
     fNameErr: false,
     lNameErr: false,
@@ -75,12 +83,35 @@ const StoreContact = (props) => {
     phone: "",
     comSubject: "General enquiry",
     msg: "",
-    toEmail: props.locationInfo.storeEmail.toLowerCase(),
-    toMgrEmail: props.locationInfo.managerEmail.toLowerCase(),
-    fromCity: props.locationInfo.cityName,
-    fromState: statCode(props.locationName),
+    toEmail: props.locationInfo.storeEmail.toLowerCase() || "",
+    toMgrEmail: props.locationInfo.managerEmail.toLowerCase() || "",
+    fromCity: props.locationInfo.cityName || "",
+    fromState: statCode(props.locationName) || "",
+    botMsg: "",
   });
 
+  // get csrf token
+  /*
+  useEffect(() => {
+    const fetchCsrfToken = async () => {
+      try {
+        const csrfRes = await fetch("/api/Forms/getCsrfToken");
+        console.log("CSRF token response:", csrfRes);
+        const resDtata = await csrfRes.json();
+        setCsrfToken(resDtata.csrfToken);
+        console.log("CSRF token found:", resDtata.csrfToken);
+      } catch (error) {
+        setErrorMsg("Failed to fetch CSRF token");
+        console.log("Failed to fetch CSRF token:", error);
+      }
+    };
+
+    fetchCsrfToken();
+  }, []);
+  */
+  useEffect(() => {
+    setIsPageLoaded(true);
+  });
   // ========================================================first name validation=================
   const checkFName = (e) => {
     const fname = e.target.value.trim();
@@ -202,58 +233,43 @@ const StoreContact = (props) => {
       e.target.classList.add("focus-red");
     }
   };
-  // geet msg text
-  const escape = (htmlStr) => {
-    return htmlStr
-      .replace(/&/g, "and")
-      .replace(/</g, " ")
-      .replace(/>/g, " ")
-      .replace(/(?:\r\n|\r|\n)/g, "<br>");
-  };
+
   const getMsg = (e) => {
-    const msg = e.target.value.trim();
-    if (msg.length > 4) {
-      setFieldValue({ ...fieldVlue, msg: escape(msg) });
+    const usermsg = escape(e.target.value.trim());
+    if (usermsg.length > 2) {
+      setFieldValue({ ...fieldVlue, msg: usermsg });
     }
   };
+  const checkBoot = (e) => {
+    const botData = escape(e.target.value.trim());
 
-  const [isSend, setIsSend] = useState(false);
+    setFieldValue({ ...fieldVlue, botMsg: botData });
+  };
+  const checkEmpty = () => {
+    if (
+      fieldVlue.fName.length < 3 ||
+      typeof fieldVlue.fName !== "string" ||
+      fieldVlue.lName.length < 3 ||
+      typeof fieldVlue.lName !== "string" ||
+      fieldVlue.email.length < 6 ||
+      typeof fieldVlue.email !== "string" ||
+      fieldVlue.phone.length < 7 ||
+      fieldVlue.botMsg.length > 0 ||
+      typeof fieldVlue.botMsg !== "string"
+    ) {
+      return true;
+    }
+
+    return false;
+  };
+
   const submitForm = async (event) => {
     event.preventDefault();
-    if (!err) {
-      if (
-        fieldVlue.fName != "" &&
-        fieldVlue.lName != "" &&
-        fieldVlue.email != "" &&
-        fieldVlue.phone != "" &&
-        fieldVlue.comSubject != "" &&
-        fieldVlue.comSubject != "0"
-      ) {
-        //console.log("Sending..." + fieldVlue);
-
-        setIsSend(true);
-        const response = await fetch("/api/Forms/storeContact", {
-          method: "POST",
-          headers: {
-            Accept: "application/json,text/plain,*/*",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(fieldVlue),
-        });
-        const result = await response.json();
-
-        //console.log(result.data)
-        //console.log(result.success)
-        if (result.success) {
-          setIsSend(false);
-          window.location.replace("/thank-you-store");
-          //window.location.href = "/thank-you-store";
-        } else {
-          setIsSend(false);
-          alert("Network Error");
-        }
-      }
-    } else {
+    console.log("submiting....");
+    setIsSend(true);
+    const isEmpty = checkEmpty();
+    if (err || isEmpty) {
+      setIsSend(false);
       if (fieldVlue.fName == "") {
         const fnameEl = document.getElementById("fname");
         fnameEl.classList.remove("focus-green");
@@ -266,6 +282,75 @@ const StoreContact = (props) => {
         consubel.classList.add("focus-red");
         setFormErr({ ...formErr, comErr: ture });
       }
+      console.log("Empty Err ..." + grcToken);
+      return;
+    }
+    const grcToken = await recaptchaRef.current.executeAsync();
+    console.log("captcha token ..." + grcToken);
+    if (!grcToken) {
+      setErrorMsg("Cptcha not fetch. try again");
+      return;
+    }
+    setReCaptchaToken(grcToken);
+
+    // console.log("captcha...." + grcToken);
+    console.log("Sending..." + fieldVlue);
+
+    const formData = {
+      fName: fieldVlue.fName,
+      lName: fieldVlue.lName,
+      email: fieldVlue.email,
+      phone: fieldVlue.phone,
+      comSubject: fieldVlue.comSubject,
+      msg: fieldVlue.msg,
+      botMsg: fieldVlue.botMsg,
+      toEmail: fieldVlue.toEmail,
+      toMgrEmail: fieldVlue.toMgrEmail,
+      fromCity: fieldVlue.fromCity,
+      fromState: fieldVlue.fromState,
+      captchaToken: grcToken,
+    };
+    //csrfToken: csrfToken,
+    console.log("form data..." + JSON.stringify(formData));
+    try {
+      const response = await fetch("/api/Forms/storeContact", {
+        method: "POST",
+        headers: {
+          Accept: "application/json,text/plain,*/*",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      const result = await response.json();
+      setIsSend(false);
+      console.log(result.data);
+      //console.log(result.success)
+      if (response.status == 200) {
+        setErrorMsg("");
+        setSuccessMsg("Your message has submitted successfully. Thank you.");
+        // window.location.replace("/thank-you-store");
+        //window.location.href = "/thank-you-store";
+        console.log("Form submit success " + result.data);
+      } else if (response.status == 403) {
+        setSuccessMsg("");
+        setErrorMsg(result.data.error);
+      } else if (response.status == 405) {
+        setErrorMsg(result.data.error);
+        setSuccessMsg("");
+      } else if (response.status == 429) {
+        setErrorMsg(
+          result.data.error + " Try after" + result.data.resetAfter + " Min"
+        );
+        setSuccessMsg("");
+      } else {
+        setSuccessMsg("");
+        setErrorMsg("Server not Responding. Try again later");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setIsSend(false);
+      setSuccessMsg("");
+      alert("Network Error: Please try again later.");
     }
   };
 
@@ -300,6 +385,16 @@ const StoreContact = (props) => {
           {/*========================  contact form=======================*/}
           <div className="c-form-form md:w-[57%] lg:w-[56%] order-1 md:order-2 pr-0 md:pr-4">
             <div className="bg-[#F4E6C3] py-8 px-4 lg:p-8 rounded-lg drop-shadow">
+              {errorMsg.length > 0 && successMsg.length < 1 && (
+                <p className="form-error p-3 mb-4 bg-amber-50 text-red-700 text-center text-sm">
+                  {errorMsg}
+                </p>
+              )}
+              {errorMsg.length < 1 && successMsg.length > 0 && (
+                <p className="form-error p-3 mb-4 bg-amber-50 text-red-700 text-center text-sm">
+                  {successMsg}
+                </p>
+              )}
               <form onSubmit={(event) => submitForm(event)}>
                 {/*========================  contact form row first name = last name=======================*/}
                 <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between ">
@@ -361,6 +456,12 @@ const StoreContact = (props) => {
                       className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                       placeholder="Your email address"
                       required
+                    ></input>
+                    <input
+                      type="text"
+                      name="botCheck"
+                      onChange={(e) => checkBoot(e)}
+                      className="hidden"
                     ></input>
                     {formErr.emailErr && (
                       <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
@@ -441,6 +542,13 @@ const StoreContact = (props) => {
                     ></textarea>
                   </div>
                 </div>
+                {/**================ captcha element */}
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey="6LepEu0qAAAAAFSM_8lLN8LDgmT2qguQGQwV7cPZ" // Replace with your site key
+                  size="invisible"
+                  //onChange={setCaptchaToken}
+                />
                 {/*======================================contact form row message event====================== */}
                 {!isSend && (
                   <div className="form-row flex justify-center ">
@@ -455,7 +563,7 @@ const StoreContact = (props) => {
 
                 {isSend == true && (
                   <div className="max-w-[170px] mx-auto btn-back px-6 py-2 text-lg md:text-xl rounded-full font-medium bg-red-600 hover:bg-red-700  text-white ">
-                    <div class=" font-medium loader">Sending</div>
+                    <div className=" font-medium loader">Sending</div>
                   </div>
                 )}
                 {/*======================================contact form button====================== */}
@@ -514,6 +622,4 @@ const StoreContact = (props) => {
       </div>
     </div>
   );
-};
-
-export default StoreContact;
+}

@@ -4,14 +4,16 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next-sitemap",
     "start": "next start",
+    "build": "next build && next-sitemap",
     "lint": "next lint"
   },
   "dependencies": {
     "@types/gapi": "^0.0.45",
     "cookies-next": "^2.1.1",
     "cors": "^2.8.5",
+    "csrf": "^3.1.0",
+    "express-rate-limit": "^7.5.0",
     "fontkit": "^2.0.2",
     "google-auth-library": "^9.0.0",
     "googleapis": "^126.0.1",
@@ -30,7 +32,7 @@
     "react-collapsed": "^3.3.2",
     "react-datepicker": "^7.3.0",
     "react-dom": "18.1.0",
-    "react-google-recaptcha-v3": "^1.10.1",
+    "react-google-recaptcha": "^3.1.0",
     "react-icons": "^4.3.1",
     "react-multi-carousel": "^2.8.2",
     "react-share": "^4.4.1"
