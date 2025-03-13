@@ -4,7 +4,7 @@ import {
   verifyGoogleCaptcha,
   verifyFormData,
 } from "./formProtection/verifyClient";
-import { useRateLimiter } from "./formProtection/reqRateLimit";
+import { checkRateLimiter } from "./formProtection/reqRateLimit";
 
 const tokens = new csrf();
 const csrfSecret = process.env.CSRF_SECRET || tokens.secretSync();
@@ -53,7 +53,7 @@ export default async function corContactHandler(req, res) {
   };
 
   // =================================================check req limit
-  const verifyreqLimit = await useRateLimiter(req, res);
+  const verifyreqLimit = await checkRateLimiter(req, res);
   // console.log(verifyreqLimit);
   if (!verifyreqLimit.success) {
     // res.setHeader("Retry-After", limitData.data.resetAfter);

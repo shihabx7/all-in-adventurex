@@ -52,7 +52,7 @@ const limiter = rateLimit({
     });
   },
 });
-export async function useRateLimiter(req, res) {
+export async function checkRateLimiter(req, res) {
   console.log("Rate limit checking...");
 
   return new Promise((resolve) => {
@@ -74,7 +74,7 @@ export async function useRateLimiter(req, res) {
     });
   });
 }
-export async function useRateLimiterold(req, res) {
+export async function setRateLimiterold(req, res) {
   // console.log("Rate limit checking...");
   // let retObj = {};
   try {

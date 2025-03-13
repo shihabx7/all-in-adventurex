@@ -3,7 +3,7 @@ import {
   verifyGoogleCaptcha,
   verifyFormData,
 } from "./formProtection/verifyClient";
-import { useRateLimiter } from "./formProtection/reqRateLimit";
+import { checkRateLimiter } from "./formProtection/reqRateLimit";
 
 const escapeHtml = (htmlStr) => {
   return htmlStr
@@ -51,7 +51,7 @@ export default async function corContactHandler(req, res) {
     reqLimitData: { remainingRequests: 0, resetAfter: 0 },
   };
   // =================================================check req limit
-  const verifyreqLimit = await useRateLimiter(req, res);
+  const verifyreqLimit = await checkRateLimiter(req, res);
   // console.log(verifyreqLimit);
   if (!verifyreqLimit.success) {
     // res.setHeader("Retry-After", limitData.data.resetAfter);
