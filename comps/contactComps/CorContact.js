@@ -269,7 +269,7 @@ const CorContact = (props) => {
       if (response.status == 200) {
         setErrorMsg("");
         setSuccessMsg("Your message has submitted successfully. Thank you.");
-        // window.location.replace("/thank-you");
+        window.location.replace("/thank-you");
       } else if (response.status == 400) {
         setErrorMsg(result.data.error);
       } else if (response.status == 403) {
