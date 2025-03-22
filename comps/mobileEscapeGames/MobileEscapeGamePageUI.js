@@ -1,13 +1,11 @@
-import GameTitleSeparator from "../util/GameTitleSeparator";
-import MobileEscapeHomeCarousel from "./MobileEscapeHomeCarousel";
+
 import MobileEscapeHero from "./MobileEscapeHero";
 import MobileEscapeGameSlider from "./MobileEscapeGameSlider";
 import MobileEscapeTestimonialSlider from "./MobileEscapeTestimonialSlider";
 import MobileEscapeFaqSection from "./MobileEscapeFaqSection";
-import MobileEscapeGallery from "./MobileEscapeGallery";
+
 import MobileEscapeContact from "./MobileEscapeContact";
-import MobileEscapeEvents from "./MobileEscapeEvents";
-import WhyChooseMobileEscape from "./WhyChooseMobileEscape";
+
 import MobileEscapEx from "./MobileEscapEx";
 import MobileEscapePricing from "./MobileEscapePricing";
 

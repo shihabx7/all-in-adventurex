@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Link from "next/link";
+
 
 const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
   const responsive = {

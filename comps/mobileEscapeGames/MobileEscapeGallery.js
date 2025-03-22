@@ -1,8 +1,8 @@
-import TitleSeparator from "../util/TitleSeparator";
+
 import MobileTitleSeparatorCenter from "./MobileTitleSeparatorCenter";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Image from "next/image";
+
 
 const MobileEscapeGallery = ({ gallerySectionData, imgList, locationName }) => {
   const responsive = {

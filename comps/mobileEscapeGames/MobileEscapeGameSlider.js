@@ -1,6 +1,6 @@
 import MobileTitleSeparatorCenter from "./MobileTitleSeparatorCenter";
 import MobileEscapeGameCarousel from "./MobileEscapeGameCarousel";
-import MobileEscapePricing from "./MobileEscapePricing";
+
 const MobileEscapeGameSlider = ({
   gameCarouselSectionData,
   locationName,
