@@ -35,7 +35,7 @@ const MobileEscapeHero = ({ pageHero, locationName }) => {
                         key={index}
                         className="icon-row flex space-x-2 md:spaxe-x-3  my-3 w-full"
                       >
-                        <span className="mt-[8px] md:mt-[8px] w-[6px] h-[6px] md:w-[8px] md:h-[8px] rounded-full bg-[#CA9342] ">
+                        <span className="mt-[4px] md:mt-[4px] w-[6px] h-[6px] md:w-[8px] md:h-[8px] rounded-full bg-[#CA9342] ">
                          
                         </span>
                         <div
