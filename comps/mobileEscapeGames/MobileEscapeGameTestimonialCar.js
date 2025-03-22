@@ -8,43 +8,43 @@ const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
       breakpoint: { max: 4000, min: 2700 },
       items: 3,
       slidesToSlide: 1,
-      partialVisibilityGutter: 40,
+      partialVisibilityGutter: 0,
     },
     desktopxl: {
       breakpoint: { max: 2699, min: 2100 },
       items: 3,
       slidesToSlide: 1,
-      partialVisibilityGutter: 40,
+      partialVisibilityGutter: 0,
     },
     desktoplg: {
       breakpoint: { max: 2100, min: 1640 },
-      items: 2,
+      items: 3,
       slidesToSlide: 1,
-      partialVisibilityGutter: 160,
+      partialVisibilityGutter: 0,
     },
     desktopmd: {
       breakpoint: { max: 1640, min: 1440 },
-      items: 2,
+      items: 3,
       slidesToSlide: 1,
-      partialVisibilityGutter: 50,
+      partialVisibilityGutter: 0,
     },
     desktop: {
       breakpoint: { max: 1440, min: 1025 },
-      items: 2,
+      items: 3,
       slidesToSlide: 1,
-      partialVisibilityGutter: 40,
+      partialVisibilityGutter: 0,
     },
     tablet: {
       breakpoint: { max: 1024, min: 761 },
-      items: 1,
+      items: 2,
       slidesToSlide: 1,
-      partialVisibilityGutter: 160,
+      partialVisibilityGutter: 0,
     },
     mobilexl: {
       breakpoint: { max: 760, min: 601 },
-      items: 1,
+      items: 2,
       slidesToSlide: 1,
-      partialVisibilityGutter: 20,
+      partialVisibilityGutter: 0,
     },
     mobile: {
       breakpoint: { max: 600, min: 0 },
@@ -54,7 +54,7 @@ const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
     },
   };
   return (
-    <div className="full-carousel planning-event-carousel inp-car ev-car">
+    <div className="full-carousel planning-event-carousel inp-car ev-car mer-car ">
       <Carousel
         swipeable={true}
         draggable={true}
@@ -62,30 +62,45 @@ const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
         arrows={true}
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
-        infinite={false}
+        infinite={true}
         // autoPlay={this.props.deviceType !== "mobile" ? true : false}
         autoPlay={false}
         // autoPlaySpeed={5000}
         keyBoardControl={true}
         customTransition=".5s ease-in-out"
         transitionDuration={500}
-        containerClass="carousel-container"
+        containerClass="carousel-container pb-10 md:pb-12"
         //removeArrowOnDeviceType={["tablet", "mobile"]}
         //deviceType={this.props.deviceType}
-        dotListClass="custom-dot-list-style"
-        itemClass="game-carousel-card   px-2 sm:px-3 lg:px-3 3xl:px-4  py-4 md:py-8"
-        renderDotsOutside={true}
-        partialVisible={true}
+        dotListClass="custom-dot-list-style mer-car-dot "
+        itemClass="game-carousel-card   px-2 sm:px-3 lg:px-3 xl:px-4 2xl:px-5 3xl:px-6  py-4 md:py-8"
+        renderArrowsOutside={true}
+        renderDotsOutside={false}
+        partialVisible={false}
       >
         {testimonialList.map((item, index) => {
           return (
             <div
               key={item.id}
-              className="text-white bg-[#FFF9EB] rounded-[14px] h-full bg-cover"
+              className="text-white bg-[#FFF9EB] rounded-[24px] h-full bg-cover mer-testi-shadow relative overflow-hidden "
             >
-              <div className="mer-testi-card-container   rounded-[14px]">
-                <div className="merc-row flex flex-col sm:flex-row  ">
-                  <div className="merc-img hidden sm:block  merc-col w-full sm:w-[47%]  lg:w-[40%] xl:w-[41%] 3xl:w-[42%] p-2 rm:p-3 md:p-4 lg:p-4 3xl:p-5">
+              {/**=========== testimonial ornaments end */}
+              {/**=========== rocket-bottom-left */}
+              
+              {/**=========== bottom-confette-bg */}
+              <div className="max-w-[230px] absolute bottom-0 left-0 right-0 mx-auto z-0">
+                <img
+                  className="max-h-[60px]"
+                  src="/assets/mobile-escape-room/icon/testimonial-bg-com.svg"
+                ></img>
+              </div>
+              {/**=========== balon-bottom-right */}
+              
+              {/**=========== testimonial ornaments end */}
+              <div className="mer-testi-card-container  rounded-[24px] p-2 md:p-3 h-full">
+                <div className="merc-row h-full flex flex-col justify-between rounded-[18px] p-2 md:p-3 border-[2px] border-dashed border-[#ceb67e]  ">
+                  {/*===========---------image--------============= */}
+                  <div className="merc-img merc-col">
                     <img
                       alt={
                         item.testimonialImage.alt
@@ -98,65 +113,32 @@ const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
                           ? item.testimonialImage.url
                           : "/assets/mobile-escape-room/testimonials/mobile-escape-game-testimonial-1.jpg"
                       }
-                      className="w-full rounded-[12px] lg:rounded-[12px] 3xl:rounded-[12px] "
+                      className="w-full max-h-[240px] object-cover rounded-[18px]  "
                     ></img>
                   </div>
-                  <div className="merc-img-mbl sm:hidden  merc-col w-full sm:w-[47%]  lg:w-[40%] xl:w-[41%] 3xl:w-[42%] p-2 rm:p-3 md:p-4 lg:p-4 3xl:p-5">
-                    <img
-                      alt={
-                        item.testimonialImageMobile.alt
-                          ? item.testimonialImageMobile.alt
-                          : "Allinadventures mobile escape room testimonial " +
-                            index
-                      }
-                      src={
-                        item.testimonialImageMobile.hasImage
-                          ? item.testimonialImageMobile.url
-                          : "/assets/mobile-escape-room/testimonials/mobile-escape-game-testimonial-1.jpg"
-                      }
-                      className="w-full rounded-[12px] lg:rounded-[12px] 3xl:rounded-[12px] "
-                    ></img>
-                  </div>
-                  <div className="merc-testi merc-col w-full sm:w-auto sm:flex-1  relative">
-                    <div className="mrec-testi-bg-icon absolute top-0 left-[10px] w-[200px] z-10">
-                      <img
-                        className="block max-w-[100px] rm:max-w-[120px] sm:max-w-[130px] md:max-w-[140px] xl:max-w-[120px] 2xl:max-w-[150px] 3xl:max-w-[180px]"
-                        src="/assets/mobile-escape-room/icon/allinadventures-quote-icon.svg"
-                        alt="allinadventures quote icon"
-                      ></img>
-                    </div>
-                    <div className="mrec-testi-des sm:absolute top-0 left-0 w-full h-full z-20 flex flex-col justify-between">
-                      <div className="merct-top mt-2 rm:mt-3  sm:mt-4 md:mt-4 lg:mt-10 xl:mt-3 2xl:mt-5 3xl:mt-8 p-3 sm:pr-3 md:pr-4 2xl:pr-5">
-                        <h3 className="font-bold text-[20px] rm:text-[22px] 3xl:text-[28px] leading-[1.3] text-[#CA9342]">
+
+                  <div className="merc-testi merc-col  grow ">
+                    <div className="mrec-testi-des  h-full flex flex-col justify-between">
+                      <div className="merct-top py-5">
+                        <h3 className="font-bold text-[18px] rm:text-[20px] md:text-[22px] xl:text-[24px] leading-[1.3] text-[#CA9342] text-center">
                           {item.title}
                         </h3>
                         <div
-                          className="text-[#4A2F03] text-sm mt-2 2xl:mt-2 3xl:mt-3 xl:text-sm 2xl:text-base "
+                          className="text-[#4A2F03] text-sm mt-2 2xl:mt-2 3xl:mt-3 xl:text-sm 2xl:text-base text-center"
                           dangerouslySetInnerHTML={{ __html: item.text }}
                         ></div>
                       </div>
-                      <div className="merct-bottom flex space-x-2 items-center lg:mb-3 2xl:mb-4 3xl:mb-6 p-3 pb-5 sm:pr-3 md:pr-4 2xl:pr-5">
-                        <div className="merct-avater w-[52px] h-[52px] md:w-[60px] md:h-[60px] rounded-full bg-gray-300">
-                          {item.authorAvatar.hasImage ? (
-                            <img
-                              className="w-[52px] h-[52px] md:w-[60px] md:h-[60px] rounded-full"
-                              src={item.authorAvatar.url}
-                              alt={item.authorAvatar.alt}
-                            ></img>
-                          ) : (
-                            <></>
-                          )}
-                        </div>
+                      <div className="merct-bottom flex space-x-2 items-center justify-center ">
                         <div className="merct-auth-info">
                           <div className="merct-rating">
                             <img
+                              className="mx-auto"
                               src="/assets/mobile-escape-room/icon/five-star-review.svg"
                               alt="allinadventures fivestar icon"
                             ></img>
                           </div>
-                          <div className="merct-rating text-[#A17F47] text-sm mt-2">
-                            <span>{item.author}, </span>
-                            <span>{item.designation}</span>
+                          <div className="merct-rating text-[#A17F47] 2xl:text-[17px] mt-1 text-center">
+                            <span>{item.author} </span>
                           </div>
                         </div>
                       </div>

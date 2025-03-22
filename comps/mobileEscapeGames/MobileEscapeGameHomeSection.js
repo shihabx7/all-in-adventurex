@@ -42,30 +42,18 @@ const MobileEscapeGameHomeSection = (props) => {
                 )}
               </div>
               {/* ==================icon list=====================*/}
-              <div className="text-slate-100 mbl-h-list mt-6">
+              <div className="text-slate-100 mbl-h-list mt-6 ml-1 md:ml-4">
                 {props.mobileEscapeRoomData.iconList.length > 0 ? (
                   <>
                     {props.mobileEscapeRoomData.iconList.map((item, index) => {
                       return (
                         <div
                           key={item.id}
-                          className="icon-row flex space-x-2 items-center my-3 2xl:my-3"
+                          className="icon-row flex space-x-2 md:spaxe-x-3 my-3 2xl:my-3 w-full"
                         >
-                          <div className="w-[42px] md:w-[44px] ">
-                            <img
-                              className="w-full"
-                              alt={
-                                item.icon.alt !== null
-                                  ? item.icon.alt
-                                  : "Allinadventures mobile escape room icon"
-                              }
-                              src={
-                                item.icon.hasImage
-                                  ? item.icon.url
-                                  : "/assets/mobile-escape-room/icon/adventures.svg"
-                              }
-                            ></img>
-                          </div>
+                           <span className="mt-[8px] md:mt-[8px] w-[6px] h-[6px] md:w-[8px] md:h-[8px] rounded-full bg-[#CA9342] ">
+                         
+                         </span>
                           <div
                             className="md:text-lg flex-1"
                             style={{ lineHeight: 1.3 }}

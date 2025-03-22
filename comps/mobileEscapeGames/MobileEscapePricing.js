@@ -1,35 +1,30 @@
-import TitleSeparator from "../util/TitleSeparator";
-import MobileTitleSeparatorCenter from "./MobileTitleSeparatorCenter";
+
+import SectionBorderBottom from "../util/SectionBorderBottom";
 
 const MobileEscapePricing = ({ pricingSectionData, locationName }) => {
   return (
-    <div className="mer-why-c bg-black py-16 md:py-20 lg:py-28 px-4 lg:px-12  z-20 ">
-      {/*======================= boder img============== */}
-
-      {/*======================= boder img end============== */}
-      <div className="max-w-7xl mx-auto relative z-30">
-        <div className="section-title mb-6 rm:mb-8 md:mb-10 lg:mb-12  md:max-w-[720px] lg:max-w-[840px] mx-auto">
-          <MobileTitleSeparatorCenter title={pricingSectionData.sectionTitle} />
-          <div
-            className="mt-4 md:mt-6 text-[#e2e2e2] text-center lg:text-lg 3xl:text-xl"
-            dangerouslySetInnerHTML={{
-              __html: pricingSectionData.sectionSubTitle,
-            }}
-          ></div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6">
+    <div className="bg-black">
+      <div className="py-10 md:py-12 lg:py-18 bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] relative">
+        <SectionBorderBottom />
+      </div>
+      <div className="max-w-7xl mx-auto mt-[-28%] rm:mt-[-26%] md:mt-[-16%]  lg:mt-[-13%] xl:mt-[-9%] 3xl:mt-[-8%]  relative z-30 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 xl:gap-6">
           {pricingSectionData.pricingList.map((item, index) => {
             return (
               <div
                 key={index}
-                className="mer-pric-list-item bg-[#1D1D1D] rounded-[20px]"
+                className={
+                  index > 2
+                    ? "hidden"
+                    : "mer-pric-list-item bg-[#231800] rounded-[20px]"
+                }
               >
-                <div className="item-wrapper px-4 py-6 rm:px-5 rm:py-8 md:px-6 md:py-8 2xl:px-8 2xl:py-10">
+                <div className="item-wrapper px-4 py-6 rm:px-5 rm:py-8 md:px-4 md:py-6 lg:px-6 lg:py-8 2xl:px-8 2xl:py-10">
                   <div className="mar-wv-text ">
-                    <h3 className="font-bold text-[20px] rm:text-[20px] md:text-[26px] 3xl:text-[28px] leading-[1.3] text-[#CA9342]">
+                    <h3 className="font-bold text-[20px] rm:text-[22px] md:text-[22px] lg:text-[26px] 3xl:text-[28px] leading-[1.3] text-[#CA9342]">
                       {item.title}
                     </h3>
-                    <p className="text-[#ffffff] mt-6 md:mt-8 3xl:mt-10 text-sm rm:text-base 3xl:text-lg font-semibold">
+                    <p className="text-[#ffffff] mt-6 md:mt-4 lg:mt-6 3xl:mt-8 text-sm rm:text-base 3xl:text-lg font-semibold">
                       {item.subTitle}{" "}
                       {item.subTitleNote !== null ? (
                         <span className="text-[#a5a5a5] font-medium">
@@ -49,14 +44,6 @@ const MobileEscapePricing = ({ pricingSectionData, locationName }) => {
           })}
         </div>
         {/*=======================Section btn============== */}
-        <div className="mbl-h-btn  mt-10 md:mt-14 2xl:mt-16 flex justify-center">
-          <a
-            href="#mobile-escape-room-form"
-            className="max-w-[220px] px-12 text-center border block text-white border-red-600 bg-red-600 py-[12px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
-          >
-            GET A QUOTE
-          </a>
-        </div>
       </div>
     </div>
   );

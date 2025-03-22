@@ -45,7 +45,7 @@ const MobileEscapeGameCarousel = ({ escapeGameList, locationName }) => {
   };
 
   return (
-    <div className="full-carousel inpersongame inp-car ">
+    <div className="full-carousel inpersongame inp-car mer-car mer-game-car">
       <Carousel
         swipeable={true}
         draggable={true}
@@ -53,20 +53,20 @@ const MobileEscapeGameCarousel = ({ escapeGameList, locationName }) => {
         arrows={true}
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
-        infinite={false}
+        infinite={true}
         // autoPlay={this.props.deviceType !== "mobile" ? true : false}
         autoPlay={false}
         // autoPlaySpeed={5000}
         keyBoardControl={true}
         customTransition=".5s ease-in-out"
         transitionDuration={500}
-        containerClass="carousel-container"
+        containerClass="carousel-container pb-10 md:pb-12"
         // rewindWithAnimation={true}
         //  removeArrowOnDeviceType={["tablet", "mobile"]}
         //deviceType={this.props.deviceType}
-        dotListClass="custom-dot-list-style"
+        dotListClass="custom-dot-list-style  mer-car-dot  mer-game-carousel-dot "
         itemClass="game-carousel-card px-2 lg:px-4 2xl:px-5 3xl:px-3 4xl:px-5 py-4 md:py-8"
-        renderDotsOutside={true}
+        renderDotsOutside={false}
         partialVisible={true}
       >
         {escapeGameList.map((item, index) => {

@@ -3,8 +3,12 @@ import { useState, useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const FranchiseContactForm = () => {
+  const recaptchaRef = useRef();
   const [err, setErr] = useState(false);
-  const [emptyErr, setEmptyErr] = useState(true);
+  const [reCaptchaToken, setReCaptchaToken] = useState(null);
+  const [errorMsg, setErrorMsg] = useState("");
+  const [successMsg, setSuccessMsg] = useState("");
+  const [isSend, setIsSend] = useState(false);
   const [formErr, setFormErr] = useState({
     fNameErr: false,
     lNameErr: false,
@@ -43,6 +47,7 @@ const FranchiseContactForm = () => {
     opPlan: "",
     profExp: "",
     urBelieve: "",
+    botMsg: "",
   });
 
   // ========================================================first name validation=================
@@ -463,35 +468,157 @@ const FranchiseContactForm = () => {
       e.target.classList.add("focus-red");
     }
   };
+  const checkBoot = (e) => {
+    const botData = escape(e.target.value.trim());
 
+    setFieldValue({ ...fieldVlue, botMsg: botData });
+  };
+  const checkEmpty = () => {
+    if (
+      fieldVlue.fName.length < 3 ||
+      typeof fieldVlue.fName !== "string" ||
+      fieldVlue.lName.length < 3 ||
+      typeof fieldVlue.lName !== "string" ||
+      fieldVlue.email.length < 6 ||
+      fieldVlue.phone.length < 7 ||
+      typeof fieldVlue.email !== "string" ||
+      fieldVlue.city.length < 2 ||
+      typeof fieldVlue.city !== "string" ||
+      fieldVlue.state.length < 2 ||
+      typeof fieldVlue.state !== "string" ||
+      fieldVlue.address.length < 3 ||
+      typeof fieldVlue.address !== "string" ||
+      fieldVlue.netWorth.length < 3 ||
+      typeof fieldVlue.netWorth !== "string" ||
+      fieldVlue.liqAssets.length < 3 ||
+      typeof fieldVlue.liqAssets !== "string" ||
+      fieldVlue.visitAIA.length < 2 ||
+      typeof fieldVlue.visitAIA !== "string" ||
+      fieldVlue.preferredstate.length < 2 ||
+      typeof fieldVlue.preferredstate !== "string" ||
+      fieldVlue.planForVenture.length < 2 ||
+      typeof fieldVlue.planForVenture !== "string" ||
+      fieldVlue.fchoiceCity.length < 3 ||
+      typeof fieldVlue.fchoiceCity !== "string" ||
+      fieldVlue.schoiceCity.length < 3 ||
+      typeof fieldVlue.schoiceCity !== "string" ||
+      fieldVlue.preferredTimeFrame.length < 3 ||
+      typeof fieldVlue.preferredTimeFrame !== "string" ||
+      fieldVlue.otherInvolvement.length < 2 ||
+      typeof fieldVlue.otherInvolvement !== "string" ||
+      fieldVlue.opPlan.length < 3 ||
+      typeof fieldVlue.opPlan !== "string" ||
+      fieldVlue.profExp.length < 3 ||
+      typeof fieldVlue.profExp !== "string" ||
+      fieldVlue.urBelieve.length < 3 ||
+      typeof fieldVlue.urBelieve !== "string" ||
+      fieldVlue.botMsg.length > 0 ||
+      typeof fieldVlue.botMsg !== "string"
+    ) {
+      return true;
+    }
+
+    return false;
+  };
   // ========================================================you believe end=================
-  const [isSend, setIsSend] = useState(false);
+
   const submitFranchiseForm = async (event) => {
     event.preventDefault();
-    if (!err) {
-      //  console.log("Sending..."+fieldVlue)
+    event.preventDefault();
+    console.log("submiting....");
+    setIsSend(true);
+    const isEmpty = checkEmpty();
+    if (err || isEmpty) {
+      setIsSend(false);
+      if (fieldVlue.fName == "") {
+        const fnameEl = document.getElementById("fname");
+        fnameEl.classList.remove("focus-green");
+        fnameEl.classList.add("focus-red");
+        setFormErr({ ...formErr, fNameErr: ture });
+      }
+      if (fieldVlue.comSubject == "" || fieldVlue.comSubject == "0") {
+        const consubel = document.getElementById("comsub");
+        consubel.classList.remove("focus-green");
+        consubel.classList.add("focus-red");
+        setFormErr({ ...formErr, comErr: ture });
+      }
+      console.log("Empty Err ..." + grcToken);
+      return;
+    }
+    const grcToken = await recaptchaRef.current.executeAsync();
+    console.log("captcha token ..." + grcToken);
+    if (!grcToken) {
+      setErrorMsg("Cptcha not fetch. try again");
+      return;
+    }
+    setReCaptchaToken(grcToken);
 
-      setIsSend(true);
+    // console.log("captcha...." + grcToken);
+    console.log("Sending..." + fieldVlue);
+    const formData = {
+      fName: fieldVlue.fName,
+      lName: fieldVlue.lName,
+      email: fieldVlue.email,
+      phone: fieldVlue.phone,
+      city: fieldVlue.city,
+      state: fieldVlue.state,
+      address: fieldVlue.address,
+      netWorth: fieldVlue.netWorth,
+      liqAssets: fieldVlue.liqAssets,
+      visitAIA: fieldVlue.visitAIA,
+      preferredstate: fieldVlue.preferredstate,
+      planForVenture: fieldVlue.planForVenture,
+      fchoiceCity: fieldVlue.fchoiceCity,
+      schoiceCity: fieldVlue.schoiceCity,
+      preferredTimeFrame: fieldVlue.preferredTimeFrame,
+      otherInvolvement: fieldVlue.otherInvolvement,
+      opPlan: fieldVlue.opPlan,
+      profExp: fieldVlue.profExp,
+      urBelieve: fieldVlue.urBelieve,
+      botMsg: fieldVlue.botMsg,
+      captchaToken: grcToken,
+    };
+
+    try {
       const response = await fetch("/api/Forms/fransContact", {
         method: "POST",
         headers: {
           Accept: "application/json,text/plain,*/*",
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(fieldVlue),
+        body: JSON.stringify(formData),
       });
       const result = await response.json();
-      //  console.log(result.data)
-      // console.log(result.success)
-      if (result.success) {
-        setIsSend(false);
-        window.location.replace("/thank-you-franchise");
-        //window.location.href = "/thank-you-franchise";
+      setIsSend(false);
+      console.log(result.data);
+      //console.log(result.success)
+      if (response.status == 200) {
+        setErrorMsg("");
+        setSuccessMsg("Your message has submitted successfully. Thank you.");
+        //  window.location.replace("/thank-you-store");
+        //window.location.href = "/thank-you-store";
+        console.log("Form submit success " + result.data);
+      } else if (response.status == 403) {
+        setSuccessMsg("");
+        setErrorMsg(result.data.error);
+      } else if (response.status == 405) {
+        setErrorMsg(result.data.error);
+        setSuccessMsg("");
+      } else if (response.status == 429) {
+        setErrorMsg(
+          result.data.error + " Try after" + result.data.resetAfter + " Min"
+        );
+        setSuccessMsg("");
       } else {
-        setIsSend(false);
+        setSuccessMsg("");
+        setErrorMsg("Server not Responding. Try again later");
       }
-    } else {
-      console.log(formErr);
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setIsSend(false);
+      setSuccessMsg("");
+      alert("Network Error: Please try again later.");
+      return;
     }
   };
 
@@ -536,6 +663,16 @@ const FranchiseContactForm = () => {
 
         <div className="frans-contact-box max-w-[1000px] mx-auto">
           <div className="contact-form-bg bg-[#F4E6C3] px-4 py-8 md:px-6 md:py-10 lg:px-8 lg:py-12 md:rounded">
+            {errorMsg.length > 0 && successMsg.length < 1 && (
+              <p className="form-error p-3 mb-4 bg-amber-50 text-red-700 text-center text-sm">
+                {errorMsg}
+              </p>
+            )}
+            {errorMsg.length < 1 && successMsg.length > 0 && (
+              <p className="form-error p-3 mb-4 bg-amber-50 text-red-700 text-center text-sm">
+                {successMsg}
+              </p>
+            )}
             {/*==========================================================contact form to book event======================= */}
             <form onSubmit={(event) => submitFranchiseForm(event)}>
               {/*======================================contact form row CHECK BOX====================== */}
@@ -604,6 +741,12 @@ const FranchiseContactForm = () => {
                       className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                       placeholder="Your email address"
                       required
+                    ></input>
+                    <input
+                      type="text"
+                      name="botCheck"
+                      onChange={(e) => checkBoot(e)}
+                      className="hidden"
                     ></input>
                     {formErr.emailErr && (
                       <p className="cor-form-err  mt-1 evevt-input-label text-[#E1001A] fErr ">
@@ -1081,6 +1224,13 @@ const FranchiseContactForm = () => {
                   </div>
                 </div>
                 {/*======================================contact form row Tell us about your other professional/relevant experiences?====================== */}
+                {/**================ captcha element */}
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey="6LepEu0qAAAAAFSM_8lLN8LDgmT2qguQGQwV7cPZ" // Replace with your site key
+                  size="invisible"
+                  //onChange={setCaptchaToken}
+                />
                 {!isSend && (
                   <div className="form-row flex justify-center  mt-8 ">
                     <button

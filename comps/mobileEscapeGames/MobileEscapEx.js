@@ -55,49 +55,7 @@ const MobileEscapEx = ({ experienceSectionData, locationName }) => {
           </div>
         </div>
         {/* ==================+++section row 2   +++=====================*/}
-        <div className="mbl-row flex flex-col lg:flex-row jsutify-between  space-x-0 lg:space-x-10 2xl:space-x-16 items-center mt-16 md:mt-16 lg:mt-16 2xl:mt-20">
-          <div className="mbl-col w-full lg:w-1/2  mb-6 md:mb-8 lg:mb-0">
-            <div className="mbl-h-img text-center w-full">
-              <img
-                className="w-full"
-                alt={
-                  experienceSectionData.imageTwo.hasImage
-                    ? experienceSectionData.imageTwo.alt
-                    : "Allinadventures mobile escape room experience 2"
-                }
-                src={
-                  experienceSectionData.imageTwo.hasImage
-                    ? experienceSectionData.imageTwo.url
-                    : "/assets/mobile-escape-room/allinadventures-mobile-escape-room-experience-2.jpg"
-                }
-              ></img>
-            </div>
-          </div>
-          <div className="mbl-col w-full lg:w-1/2 ">
-            {/* ==================section title=====================*/}
-            <div className="md:max-w-[76%] lg:max-w-[100%]">
-              <MobileTitleSeparatorLeft
-                title={experienceSectionData.titleTwo}
-              />
-            </div>
-            {/* ==================text====================*/}
-            <div
-              className="text-[#2e2e2e] md:text-lg  mbl-h-list mt-4 md:mt-6 mbl-group-text"
-              dangerouslySetInnerHTML={{
-                __html: experienceSectionData.descriptionTwo,
-              }}
-            ></div>
-            {/* ==================button=====================*/}
-            <div className="mbl-h-btn  mt-8 md:mt-10 2xl:mt-12">
-              <a
-                href="#mobile-escape-room-form"
-                className="max-w-[220px] px-12 text-center border block text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
-              >
-                GET A QUOTE
-              </a>
-            </div>
-          </div>
-        </div>
+       
       </div>
     </div>
   );

@@ -92,6 +92,11 @@ const MobileEscapeGamePageUI = (props) => {
       ) : (
         <></>
       )}
+      {/** ==section 2 */}
+      <MobileEscapePricing
+        pricingSectionData={props.mobileEscapeRoomPageData.pricingSectionData}
+        locationName={props.locationName}
+      />
       {props.mobileEscapeRoomPageData.gameCarouselSectionData !== null ? (
         <MobileEscapeGameSlider
           gameCarouselSectionData={
@@ -102,44 +107,11 @@ const MobileEscapeGamePageUI = (props) => {
       ) : (
         <></>
       )}
-      {props.mobileEscapeRoomPageData.eventSectionData !== null ? (
-        <MobileEscapeEvents
-          eventSectionData={props.mobileEscapeRoomPageData.eventSectionData}
-          locationName={props.locationName}
-        />
-      ) : (
-        <></>
-      )}
-      {props.mobileEscapeRoomPageData.offerSectionData !== null ? (
-        <WhyChooseMobileEscape
-          offerSectionData={props.mobileEscapeRoomPageData.offerSectionData}
-          locationName={props.locationName}
-        />
-      ) : (
-        <></>
-      )}
       {props.mobileEscapeRoomPageData.experienceSectionData !== null ? (
         <MobileEscapEx
           experienceSectionData={
             props.mobileEscapeRoomPageData.experienceSectionData
           }
-          locationName={props.locationName}
-        />
-      ) : (
-        <></>
-      )}
-      {props.mobileEscapeRoomPageData.pricingSectionData !== null ? (
-        <MobileEscapePricing
-          pricingSectionData={props.mobileEscapeRoomPageData.pricingSectionData}
-          locationName={props.locationName}
-        />
-      ) : (
-        <></>
-      )}
-      {props.mobileEscapeRoomPageData.gallerySectionData !== null ? (
-        <MobileEscapeGallery
-          gallerySectionData={props.mobileEscapeRoomPageData.gallerySectionData}
-          imgList={imgList}
           locationName={props.locationName}
         />
       ) : (
@@ -173,6 +145,36 @@ const MobileEscapeGamePageUI = (props) => {
       ) : (
         <></>
       )}
+      {/** ==section============ old design======================= 3 
+      {props.mobileEscapeRoomPageData.eventSectionData !== null ? (
+        <MobileEscapeEvents
+          eventSectionData={props.mobileEscapeRoomPageData.eventSectionData}
+          locationName={props.locationName}
+        />
+      ) : (
+        <></>
+      )}
+     
+      {props.mobileEscapeRoomPageData.offerSectionData !== null ? (
+        <WhyChooseMobileEscape
+          offerSectionData={props.mobileEscapeRoomPageData.offerSectionData}
+          locationName={props.locationName}
+        />
+      ) : (
+        <></>
+      )}
+      
+
+      {props.mobileEscapeRoomPageData.gallerySectionData !== null ? (
+        <MobileEscapeGallery
+          gallerySectionData={props.mobileEscapeRoomPageData.gallerySectionData}
+          imgList={imgList}
+          locationName={props.locationName}
+        />
+      ) : (
+        <></>
+      )}
+      */}
     </>
   );
 };

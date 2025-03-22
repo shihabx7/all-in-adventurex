@@ -7,14 +7,15 @@ const MobileEscapeTestimonialSlider = ({
 }) => {
   return (
     <div className="mer-games-slider bg-black">
-      <div className="py-16 md:py-20 lg:py-28  z-20 ">
+      <div className=" max-w-7xl mx-auto py-16 md:py-20 lg:py-28  z-20 px-1 md:px-4 ">
         <div className="section-head mb-6 rm:mb-8 md:mb-10 lg:mb-12  md:max-w-[720px] lg:max-w-[1200px] mx-auto px-4 ">
           <MobileTitleSeparatorCenter
             title={testimonialSectionData.sectionTitle}
+            
           />
           {testimonialSectionData.sectionSubTitle !== null ? (
             <div
-              className="text-[#2E2E2E] mt-3 md:mt-4 lg:mt-6  text-center md:text-lg lg:text-xl"
+              className="text-[#ffffff] mt-3 md:mt-4 lg:mt-6  text-center md:text-lg lg:text-xl max-w-[840px] mx-auto"
               dangerouslySetInnerHTML={{
                 __html: testimonialSectionData.sectionSubTitle,
               }}

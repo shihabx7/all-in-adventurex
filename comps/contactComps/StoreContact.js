@@ -351,6 +351,7 @@ export default function StoreContact(props) {
       setIsSend(false);
       setSuccessMsg("");
       alert("Network Error: Please try again later.");
+      return;
     }
   };
 

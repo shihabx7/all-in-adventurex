@@ -155,8 +155,8 @@ export default async function corContactHandler(req, res) {
     from: '"AIA Corporate Contact" <sender@allinadventures.com>', // sender address
     //to: "shihab.dgency@gmail.com",
     to: "support@allinadventures.com", // list of receivers
-    cc: "shihab.dgency@gmail.com",
-    bcc: "dgency.com@gmail.com",
+    //cc: "shihab.dgency@gmail.com",
+    bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
     replyTo: email,
     subject: `Corporate Contact`,
     html: `

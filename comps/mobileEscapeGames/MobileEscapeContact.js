@@ -81,7 +81,7 @@ const MobileEscapeContact = ({
               </div>
               {contactSectionData.note !== null ? (
                 <div
-                  className="mer-notice mt-4 md:mt-6 xl:text-lg text-[#eeeeee] mbl-group-text"
+                  className="mer-notice mt-4 md:mt-6 xl:text-lg text-[#eeeeee] mbl-group-text hidden"
                   dangerouslySetInnerHTML={{ __html: contactSectionData.note }}
                 ></div>
               ) : (
@@ -133,9 +133,28 @@ const MobileEscapeContact = ({
                           : "tel:+1919-205-5008"
                       }
                     >
-                      {locationInfo.phone
+                     Store: {locationInfo.phone
                         ? locationInfo.phone
-                        : "tel:+1919-205-5008"}
+                        : "+1 919-205-5008"}
+                    </a>
+                  </div>
+                </div>
+                <div className="mer-info-list flex  items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
+                  <div className="w-[20px] md:w-[24px]">
+                    <img
+                      className="w-full"
+                      alt={"Allinadventures icon phone"}
+                      src="/assets/svg/event-icon-phone.svg"
+                    ></img>
+                  </div>
+                  <div className="flex-1">
+                    <a
+                      className="text-[#F4E6C3] hover:text-red-700"
+                      href={
+                         "tel:+1404-445-6047"
+                      }
+                    >
+                     Sales: +1 404-445-6047
                     </a>
                   </div>
                 </div>

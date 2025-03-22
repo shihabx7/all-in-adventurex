@@ -1,18 +1,16 @@
-import SectionBorderBottom from "../util/SectionBorderBottom";
 const MobileEscapeHero = ({ pageHero, locationName }) => {
   return (
-    <div className="uer-hero  bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px]  py-16 md:py-20 xl:py-24 3xl:py-28 px-4 overflow-hidden">
-      <SectionBorderBottom />
-      <div className="mbl-h-container max-w-7xl mx-auto ">
+    <div className="uer-hero  bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px]   pt-2 pb-16  md:pb-20 md:pt-4  lg:pb-28 lg:pt-16 xl:pb-16 xl:pt-8 3xl:pb-24 3xl:pt-14  px-4 relative overflow-hidden">
+      <div className="mbl-h-container max-w-7xl mx-auto relative">
         <div className="mbl-row flex flex-col lg:flex-row jsutify-between  space-x-0 lg:space-x-10 2xl:space-x-16 items-center">
-          <div className="mbl-col w-full lg:w-1/2 order-2 lg:order-1">
-            {/* ==================section title=====================*/}
+          <div className="mbl-col w-full lg:w-1/2 order-2 lg:order-1 md:px-12 lg:px-0">
+            {/* ==================section title=====================*/ }
             <p className="text-[#4A2F03] text-[14px] rm:text-[15px] md:text-[22px] 2xl:text-[26px]">
               MOBILE ESCAPE ROOM IN{" "}
               <span className="uppercase">{locationName}</span>
             </p>
             <h1
-              className="text-[#CA9342] font-bold  text-2xl rm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-3 xm:mb-4 md:mb-6 lg:mb-6 font-os outline-tile "
+              className="text-[#CA9342] font-bold  text-2xl rm:text-3xl sm:text-4xl md:text-5xl lg:text-[54px] 2xl:text-6xl mb-3 xm:mb-4 md:mb-6 lg:mb-6 font-os outline-tile "
               style={{ lineHeight: 1.2 }}
             >
               {pageHero.pageTitle}
@@ -28,30 +26,18 @@ const MobileEscapeHero = ({ pageHero, locationName }) => {
               <></>
             )}
             {/* ==================icon list=====================*/}
-            <div className="text-[#2e2e2e] mbl-h-list mt-6">
-              {pageHero.iconList.length > 0 ? (
+            <div className="text-[#2e2e2e] mbl-h-list mt-6 ml-2">
+              {pageHero.iconList.length > 0 && (
                 <>
                   {pageHero.iconList.map((item, index) => {
                     return (
                       <div
                         key={index}
-                        className="icon-row flex space-x-2 items-center my-3"
+                        className="icon-row flex space-x-2 md:spaxe-x-3  my-3 w-full"
                       >
-                        <div className="w-[42px] md:w-[44px]">
-                          <img
-                            className="w-full"
-                            alt={
-                              item.icon.hasImage
-                                ? item.icon.alt
-                                : "Allinadventures mobile escape room icon"
-                            }
-                            src={
-                              item.icon.hasImage
-                                ? item.icon.url
-                                : "/assets/mobile-escape-room/icon/team-building-dark.svg"
-                            }
-                          ></img>
-                        </div>
+                        <span className="mt-[8px] md:mt-[8px] w-[6px] h-[6px] md:w-[8px] md:h-[8px] rounded-full bg-[#CA9342] ">
+                         
+                        </span>
                         <div
                           className="md:text-lg flex-1"
                           style={{ lineHeight: 1.3 }}
@@ -63,9 +49,7 @@ const MobileEscapeHero = ({ pageHero, locationName }) => {
                       </div>
                     );
                   })}
-                </>
-              ) : (
-                <></>
+               </>
               )}
             </div>
             {/* ==================button=====================*/}
@@ -79,7 +63,7 @@ const MobileEscapeHero = ({ pageHero, locationName }) => {
             </div>
           </div>
           <div className="mbl-col w-full lg:w-1/2 order-1 lg:order-2 mb-6 md:mb-8 lg:mb-0">
-            <div className="mbl-h-img text-center">
+            <div className="mbl-h-img text-center md:max-w-[580px] mx-auto">
               <img
                 alt={
                   pageHero.pageHeroImage.hasImage

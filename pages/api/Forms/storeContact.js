@@ -49,6 +49,7 @@ export default async function corContactHandler(req, res) {
     botMsg: botMsg,
     captchaToken: captchaToken,
     reqLimitData: { remainingRequests: 0, resetAfter: 0 },
+    captchaScore: "",
   };
   // =================================================check req limit
   const verifyreqLimit = await checkRateLimiter(req, res);
@@ -174,9 +175,9 @@ export default async function corContactHandler(req, res) {
   const mailOptions = {
     from: `"AIA ${fromCity} Store Contact" <sender@allinadventures.com>`,
     to: retData.toEmail + "," + retData.toMgrEmail,
-    cc: "shihab.dgency@gmail.com",
+    // cc: "shihab.dgency@gmail.com",
     // to: "shihab.dgency@gmail.com",
-    bcc: "dgency.com@gmail.com",
+    bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
     replyTo: email,
 
     subject: `Store Contact - ${fromCity}, ${fromState}`,

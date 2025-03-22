@@ -3,7 +3,7 @@ export async function verifyGoogleCaptcha(captchaToken) {
   const captchaVerifyURL = `https://www.google.com/recaptcha/api/siteverify?secret=${CAPTCHA_SECRET}&response=${captchaToken}`;
   const capRes = await fetch(captchaVerifyURL, { method: "POST" });
   const capResData = await capRes.json();
-
+  console.log(capResData);
   if (!capResData.success || capResData.score < 0.5) {
     return { isValid: false, score: capResData.score };
   }
@@ -36,7 +36,16 @@ export async function verifyFormData(dataArr) {
       dt.length > item.max
     ) {
       errCount++;
-      errArr.push({ sl: index, error: "Invalid Data Type or Length" });
+      errArr.push({
+        sl: index,
+        val: dt,
+        ln: dt.length,
+        type: typeof dt,
+        min: item.min,
+        max: item.max,
+        itype: item.type,
+        error: "Invalid Data Type or Length",
+      });
     } else {
       if (item.pattern) {
         if (!dataRegEx[item.pattern].test(dt)) {
