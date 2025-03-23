@@ -1,7 +1,7 @@
 const MobileTitleSeparatorCenter = (props) => {
   return (
     <div className="sep-title text-center">
-      <div className="sep-container  inline-block mx-auto">
+      <div className="sep-container  inline-block  mx-auto">
         <h2
           className={
             props.textColor

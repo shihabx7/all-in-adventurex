@@ -15,7 +15,7 @@ const MobileEscapeTestimonialSlider = ({
           />
           {testimonialSectionData.sectionSubTitle !== null ? (
             <div
-              className="text-[#ffffff] mt-2 md:mt-2 lg:mt-2  text-center md:text-lg lg:text-xl max-w-[840px] mx-auto"
+              className="text-[#ffffff] mt-1 md:mt-2 lg:mt-2  text-center md:text-lg lg:text-xl max-w-[840px] mx-auto"
               dangerouslySetInnerHTML={{
                 __html: testimonialSectionData.sectionSubTitle,
               }}

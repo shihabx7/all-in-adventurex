@@ -17,7 +17,7 @@ const MobileEscapeFaqSection = ({ faqSectionData, faqList, locationName }) => {
           <MobileTitleSeparatorCenter title={faqSectionData.sectionTitle} />
           {faqSectionData.sectionSubTitle !== null ? (
             <div
-              className="text-[#2E2E2E] mt-3 md:mt-4 lg:mt-6  text-center md:text-lg lg:text-xl max-w-[700px] mx-auto"
+              className="text-[#2E2E2E] mt-1 md:mt-2 lg:mt-2  text-center md:text-lg lg:text-xl max-w-[700px] mx-auto"
               dangerouslySetInnerHTML={{
                 __html: faqSectionData.sectionSubTitle,
               }}
