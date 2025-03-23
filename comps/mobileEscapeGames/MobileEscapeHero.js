@@ -1,4 +1,9 @@
 const MobileEscapeHero = ({ pageHero, locationName }) => {
+  const comaoff = (txt) => {
+    //console.log(txt)
+    return txt.split(',').join(' ')
+    //return ret
+  }
   return (
     <div className="uer-hero  bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px]   pt-2 pb-16  md:pb-20 md:pt-4  lg:pb-28 lg:pt-16 xl:pb-16 xl:pt-8 3xl:pb-24 3xl:pt-14  px-4 relative overflow-hidden">
       <div className="mbl-h-container max-w-7xl mx-auto relative">
@@ -6,7 +11,7 @@ const MobileEscapeHero = ({ pageHero, locationName }) => {
           <div className="mbl-col w-full lg:w-1/2 order-2 lg:order-1 md:px-12 lg:px-0">
             {/* ==================section title=====================*/}
             <h1 className="text-[#4A2F03] text-[14px] rm:text-[16px] md:text-[24px] 2xl:text-[28px] uppercase font-semibold">
-              MOBILE ESCAPE ROOM IN {locationName}
+              MOBILE ESCAPE ROOM IN {comaoff(locationName)}
             </h1>
             <h2
               className="text-[#CA9342] font-bold  text-2xl rm:text-3xl sm:text-4xl md:text-5xl lg:text-[54px] 2xl:text-6xl mb-3 xm:mb-4 md:mb-6 lg:mb-6 font-os outline-tile "

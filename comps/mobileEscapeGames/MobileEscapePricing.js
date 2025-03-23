@@ -7,7 +7,7 @@ const MobileEscapePricing = ({ pricingSectionData, locationName }) => {
       <div className="py-14 md:py-12 lg:py-18 bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] relative">
         <SectionBorderBottom />
       </div>
-      <div className="max-w-7xl mx-auto mt-[-110px] rm:mt-[-100px] md:mt-[-16%]  lg:mt-[-13%] xl:mt-[-9%] 3xl:mt-[-8%]  relative z-30 px-4">
+      <div className="max-w-7xl mx-auto mt-[-110px] rm:mt-[-100px] md:mt-[-100px]  lg:mt-[-114px] xl:mt-[-104px] 3xl:mt-[-124px]  relative z-30 px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 xl:gap-6">
           {pricingSectionData.pricingList.map((item, index) => {
             return (
