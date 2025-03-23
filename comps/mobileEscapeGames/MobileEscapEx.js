@@ -1,7 +1,7 @@
 import SectionBorderBottom from "../util/SectionBorderBottom";
 import SectionBorderTop from "../util/SectionBorderTop";
 
-import GameTitleSeparator from "../util/GameTitleSeparator";
+
 import MobileTitleSeparatorLeft from "./MobileTitleSeparatorLeft";
 const MobileEscapEx = ({ experienceSectionData, locationName }) => {
   return (
@@ -55,7 +55,7 @@ const MobileEscapEx = ({ experienceSectionData, locationName }) => {
           </div>
         </div>
         {/* ==================+++section row 2   +++=====================*/}
-       
+
       </div>
     </div>
   );

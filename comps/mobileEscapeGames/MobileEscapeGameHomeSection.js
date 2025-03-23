@@ -1,6 +1,6 @@
-import GameTitleSeparator from "../util/GameTitleSeparator";
+
 import MobileTitleSeparatorLeft from "./MobileTitleSeparatorLeft";
-import MobileEscapeHomeCarousel from "./MobileEscapeHomeCarousel";
+
 import { useEffect, useState } from "react";
 const MobileEscapeGameHomeSection = (props) => {
   const [deskList, setDeskList] = useState([]);
@@ -14,7 +14,7 @@ const MobileEscapeGameHomeSection = (props) => {
   return (
     <>
       <div className="mbl-h">
-        <div className="mbl-h-container max-w-7xl mx-auto pt-16 md:pt-28 2xl:pt-32 px-4 md:px-4 lg:px-4">
+        <div className="mbl-h-container max-w-7xl mx-auto py-16 md:py-28 2xl:py-32 px-4 md:px-4 lg:px-4">
           <div className="mbl-row flex flex-col lg:flex-row jsutify-between  space-x-0 lg:space-x-10 2xl:space-x-16 items-center md:px-8 lg:px-0">
             <div className="mbl-col w-full lg:w-1/2 order-2 lg:order-1">
               {/* ==================section title=====================*/}
@@ -51,9 +51,9 @@ const MobileEscapeGameHomeSection = (props) => {
                           key={item.id}
                           className="icon-row flex space-x-2 md:spaxe-x-3 my-3 2xl:my-3 w-full"
                         >
-                           <span className="mt-[4px] md:mt-[4px] w-[6px] h-[6px] md:w-[8px] md:h-[8px] rounded-full bg-[#CA9342] ">
-                         
-                         </span>
+                          <span className="mt-[5px] md:mt-[5px] w-[6px] h-[6px] md:w-[8px] md:h-[8px] rounded-full bg-[#CA9342] ">
+
+                          </span>
                           <div
                             className="md:text-lg flex-1"
                             style={{ lineHeight: 1.3 }}
@@ -107,7 +107,7 @@ const MobileEscapeGameHomeSection = (props) => {
               </div>
             </div>
           </div>
-          {deskList.length > 0 && (
+          {/*deskList.length > 0 && (
             <div className="hidden md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 xl:gap-6 pb-16 md:pb-28 2xl:pb-32  mt-6 md:mt-10 2xl:mt-12 ">
               {deskList.map((item, index) => {
                 return (
@@ -139,9 +139,9 @@ const MobileEscapeGameHomeSection = (props) => {
                 );
               })}
             </div>
-          )}
+          )*/}
         </div>
-        <div className="mbl-carousel pb-16 md:pb-28 2xl:pb-32  mt-6 md:mt-10 2xl:mt-12 md:hidden">
+        {/* <div className="mbl-carousel pb-16 md:pb-28 2xl:pb-32  mt-6 md:mt-10 2xl:mt-12 md:hidden">
           {props.mobileEscapeRoomData.infoList.length > 0 ? (
             <MobileEscapeHomeCarousel
               infoList={props.mobileEscapeRoomData.infoList}
@@ -149,7 +149,7 @@ const MobileEscapeGameHomeSection = (props) => {
           ) : (
             <></>
           )}
-        </div>
+        </div>*/}
       </div>
       {/*home hero*/}
     </>

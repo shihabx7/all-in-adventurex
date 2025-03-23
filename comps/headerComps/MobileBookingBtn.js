@@ -20,12 +20,14 @@ const MobileBookingBtn = (props) => {
   return (
     <div className="max-w-7xl mx-auto flex justify-between">
       {/**============event booking================= */}
-      <div className="w-[48%]">
-        {props.locationSlug ? (
-          <>
-            {props.activitySlug !== "mobile-escape-room" ? (
+      {props.activitySlug !== "mobile-escape-room" ? (
+        <>
+          <div className="w-[48%]">
+            {props.locationSlug ? (
+
+
               <>
-                {" "}
+
                 {!props.partyBooking ? (
                   <>
                     {props.eventSlug ? (
@@ -90,55 +92,52 @@ const MobileBookingBtn = (props) => {
                   </>
                 )}
               </>
+
+
             ) : (
-              <>
-                <a
-                  href={"#mobile-escape-room-form"}
-                  className="bg-red-600 font-medium hover:bg-red-700 py-2 px-2 block text-center text-white"
-                >
-                  BOOK EVENT
-                </a>
-              </>
+              <a
+                href={"/events#eventbooking"}
+                className="bg-red-600 font-medium hover:bg-red-700 py-2 px-2 block text-center text-white"
+              >
+                BOOK EVENT
+              </a>
             )}
-          </>
-        ) : (
-          <a
-            href={"/events#eventbooking"}
-            className="bg-red-600 font-medium hover:bg-red-700 py-2 px-2 block text-center text-white"
-          >
-            BOOK EVENT
-          </a>
-        )}
-      </div>
-      {/**============event booking end================= */}
-      {/**============game booking================= */}
-      <div className="w-[48%]">
-        {props.locationSlug ? (
-          <>
-            {props.isPublished ? (
+          </div>
+          {/**============event booking end================= */}
+          {/**============game booking================= */}
+          <div className="w-[48%]">
+            {props.locationSlug ? (
               <>
-                {props.allBooking && (
-                  <button
-                    onClick={() => bookAll(props.allBooking)}
-                    className="w-full bg-red-600 font-medium hover:bg-red-700 py-2 px-1 block text-center text-white"
-                  >
-                    BOOK GAMES
-                  </button>
-                )}
-                {props.giftBooking && props.isGiftPage && (
-                  <button
-                    onClick={() => bookGame(props.giftBooking)}
-                    className="w-full bg-red-600 font-medium hover:bg-red-700 py-2 px-1 block text-center text-white"
-                  >
-                    BOOK GIFT CARDS
-                  </button>
-                )}
-                {props.gameBooking && (
-                  <button
-                    onClick={() => bookGame(props.gameBooking)}
-                    className="w-full bg-red-600 font-medium hover:bg-red-700 py-2 px-1 block text-center text-white"
-                  >
-                    BOOK THIS GAMES
+                {props.isPublished ? (
+                  <>
+                    {props.allBooking && (
+                      <button
+                        onClick={() => bookAll(props.allBooking)}
+                        className="w-full bg-red-600 font-medium hover:bg-red-700 py-2 px-1 block text-center text-white"
+                      >
+                        BOOK GAMES
+                      </button>
+                    )}
+                    {props.giftBooking && props.isGiftPage && (
+                      <button
+                        onClick={() => bookGame(props.giftBooking)}
+                        className="w-full bg-red-600 font-medium hover:bg-red-700 py-2 px-1 block text-center text-white"
+                      >
+                        BOOK GIFT CARDS
+                      </button>
+                    )}
+                    {props.gameBooking && (
+                      <button
+                        onClick={() => bookGame(props.gameBooking)}
+                        className="w-full bg-red-600 font-medium hover:bg-red-700 py-2 px-1 block text-center text-white"
+                      >
+                        BOOK THIS GAMES
+                      </button>
+                    )}
+                  </>
+                ) : (
+                  <button className="w-full bg-red-600 hover:bg-red-700 py-2 px-1 block text-center font-medium text-white">
+                    COMING SOON
                   </button>
                 )}
               </>
@@ -147,13 +146,18 @@ const MobileBookingBtn = (props) => {
                 COMING SOON
               </button>
             )}
-          </>
-        ) : (
-          <button className="w-full bg-red-600 hover:bg-red-700 py-2 px-1 block text-center font-medium text-white">
-            COMING SOON
-          </button>
-        )}
-      </div>
+          </div>
+        </>
+      ) : (
+        <div className="w-full">
+          <a
+            href={"#mobile-escape-room-form"}
+            className="bg-red-600 font-medium hover:bg-red-700 py-2 px-2 block text-center text-white text-lg"
+          >
+            GET A QUOTE
+          </a>
+        </div>
+      )}
       {/**============game booking end================= */}
     </div>
   );

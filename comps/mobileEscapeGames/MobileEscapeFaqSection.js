@@ -1,5 +1,4 @@
 import MegFaqlist from "./MegFaqlist";
-
 import MobileTitleSeparatorCenter from "./MobileTitleSeparatorCenter";
 import SectionBorderBottom from "../util/SectionBorderBottom";
 import SectionBorderTop from "../util/SectionBorderTop";
@@ -14,11 +13,11 @@ const MobileEscapeFaqSection = ({ faqSectionData, faqList, locationName }) => {
       <SectionBorderBottom />
       {/*======================= boder img end============== */}
       <div className="max-w-7xl mx-auto relative z-30">
-        <div className="section-title mb-6 rm:mb-8 md:mb-10 lg:mb-12  md:max-w-[720px] lg:max-w-[840px] mx-auto">
+        <div className="section-title mb-6 rm:mb-8 md:mb-10 lg:mb-12  md:max-w-[720px] lg:max-w-[860px] mx-auto">
           <MobileTitleSeparatorCenter title={faqSectionData.sectionTitle} />
           {faqSectionData.sectionSubTitle !== null ? (
             <div
-              className="text-[#2E2E2E] mt-3 md:mt-4 lg:mt-6  text-center md:text-lg lg:text-xl max-w-[760px] mx-auto"
+              className="text-[#2E2E2E] mt-3 md:mt-4 lg:mt-6  text-center md:text-lg lg:text-xl max-w-[700px] mx-auto"
               dangerouslySetInnerHTML={{
                 __html: faqSectionData.sectionSubTitle,
               }}

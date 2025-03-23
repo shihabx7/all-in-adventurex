@@ -133,7 +133,7 @@ const MobileEscapeContact = ({
                           : "tel:+1919-205-5008"
                       }
                     >
-                     Store: {locationInfo.phone
+                      Store: {locationInfo.phone
                         ? locationInfo.phone
                         : "+1 919-205-5008"}
                     </a>
@@ -151,10 +151,10 @@ const MobileEscapeContact = ({
                     <a
                       className="text-[#F4E6C3] hover:text-red-700"
                       href={
-                         "tel:+1404-445-6047"
+                        "tel:+1404-445-6047"
                       }
                     >
-                     Sales: +1 404-445-6047
+                      Sales: +1 404-445-6047
                     </a>
                   </div>
                 </div>
@@ -176,9 +176,9 @@ const MobileEscapeContact = ({
                             : "sms:+1919-205-5008"
                         }
                       >
-                        {locationInfo.phone
+                        Text: {locationInfo.phone
                           ? locationInfo.phone
-                          : "tel:+1919-205-5008"}
+                          : "+1919-205-5008"}
                       </a>
                     </div>
                   </div>

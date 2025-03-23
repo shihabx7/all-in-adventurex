@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { useEffect, useState } from "react";
+
 
 const MobileEscapeHomeCarousel = (props) => {
   //console.log(inpersongames)

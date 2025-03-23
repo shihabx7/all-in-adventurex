@@ -3,9 +3,7 @@ import MobileEscapeHero from "./MobileEscapeHero";
 import MobileEscapeGameSlider from "./MobileEscapeGameSlider";
 import MobileEscapeTestimonialSlider from "./MobileEscapeTestimonialSlider";
 import MobileEscapeFaqSection from "./MobileEscapeFaqSection";
-
 import MobileEscapeContact from "./MobileEscapeContact";
-
 import MobileEscapEx from "./MobileEscapEx";
 import MobileEscapePricing from "./MobileEscapePricing";
 

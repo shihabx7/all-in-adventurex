@@ -4,17 +4,16 @@ const MobileEscapeHero = ({ pageHero, locationName }) => {
       <div className="mbl-h-container max-w-7xl mx-auto relative">
         <div className="mbl-row flex flex-col lg:flex-row jsutify-between  space-x-0 lg:space-x-10 2xl:space-x-16 items-center">
           <div className="mbl-col w-full lg:w-1/2 order-2 lg:order-1 md:px-12 lg:px-0">
-            {/* ==================section title=====================*/ }
-            <p className="text-[#4A2F03] text-[14px] rm:text-[15px] md:text-[22px] 2xl:text-[26px]">
-              MOBILE ESCAPE ROOM IN{" "}
-              <span className="uppercase">{locationName}</span>
-            </p>
-            <h1
+            {/* ==================section title=====================*/}
+            <h1 className="text-[#4A2F03] text-[14px] rm:text-[16px] md:text-[24px] 2xl:text-[28px] uppercase font-semibold">
+              MOBILE ESCAPE ROOM IN {locationName}
+            </h1>
+            <h2
               className="text-[#CA9342] font-bold  text-2xl rm:text-3xl sm:text-4xl md:text-5xl lg:text-[54px] 2xl:text-6xl mb-3 xm:mb-4 md:mb-6 lg:mb-6 font-os outline-tile "
               style={{ lineHeight: 1.2 }}
             >
               {pageHero.pageTitle}
-            </h1>
+            </h2>
             {pageHero.pageSubTitle ? (
               <div
                 className="text-slate-100 md:text-lg mt-6"
@@ -35,8 +34,8 @@ const MobileEscapeHero = ({ pageHero, locationName }) => {
                         key={index}
                         className="icon-row flex space-x-2 md:spaxe-x-3  my-3 w-full"
                       >
-                        <span className="mt-[4px] md:mt-[4px] w-[6px] h-[6px] md:w-[8px] md:h-[8px] rounded-full bg-[#CA9342] ">
-                         
+                        <span className="mt-[8px] md:mt-[8px] w-[6px] h-[6px] md:w-[8px] md:h-[8px] rounded-full bg-[#CA9342] ">
+
                         </span>
                         <div
                           className="md:text-lg flex-1"
@@ -49,7 +48,7 @@ const MobileEscapeHero = ({ pageHero, locationName }) => {
                       </div>
                     );
                   })}
-               </>
+                </>
               )}
             </div>
             {/* ==================button=====================*/}

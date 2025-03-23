@@ -101,41 +101,47 @@ const LocationNav = (props) => {
               {/*============nav bar btns ==========*/}
               <div className="home-nav-menu flex items-center space-x-0 md:space-x-10 lg:space-x-14 justify-end ">
                 {/* ============Nav bar btn desktop  */}
-                <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
-                  {props.activitySlug !== "mobile-escape-room" ? (
-                    <EventBookingBtn
-                      locationSlug={
-                        props.locationSlug ? props.locationSlug : false
-                      }
-                      activitySlug={
-                        props.activitySlug ? props.activitySlug : false
-                      }
-                      eventSlug={props.eventSlug ? props.eventSlug : false}
-                      partyBooking={
-                        props.partyBooking ? props.partyBooking : false
-                      }
-                      activeGameBooking={
-                        props.activeGameBooking
-                          ? props.activeGameBooking
-                          : false
-                      }
-                    />
-                  ) : (
+                {props.activitySlug !== "mobile-escape-room" ? (
+                  <>
+                    <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
+
+                      <EventBookingBtn
+                        locationSlug={
+                          props.locationSlug ? props.locationSlug : false
+                        }
+                        activitySlug={
+                          props.activitySlug ? props.activitySlug : false
+                        }
+                        eventSlug={props.eventSlug ? props.eventSlug : false}
+                        partyBooking={
+                          props.partyBooking ? props.partyBooking : false
+                        }
+                        activeGameBooking={
+                          props.activeGameBooking
+                            ? props.activeGameBooking
+                            : false
+                        }
+                      />
+
+                    </div>
+                    <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
+                      <GameBookingBtn
+                        isPublished={props.isPublished ? props.isPublished : false}
+                        locationSlug={
+                          props.locationSlug ? props.locationSlug : false
+                        }
+                        allBooking={props.allBooking ? props.allBooking : false}
+                        giftBooking={props.giftBooking ? props.giftBooking : false}
+                        gameBooking={props.gameBooking ? props.gameBooking : false}
+                        isGiftPage={props.isGiftPage ? props.isGiftPage : false}
+                      />
+                    </div>
+                  </>
+                ) : (
+                  <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
                     <MobileEscapeBookingBtn />
-                  )}
-                </div>
-                <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
-                  <GameBookingBtn
-                    isPublished={props.isPublished ? props.isPublished : false}
-                    locationSlug={
-                      props.locationSlug ? props.locationSlug : false
-                    }
-                    allBooking={props.allBooking ? props.allBooking : false}
-                    giftBooking={props.giftBooking ? props.giftBooking : false}
-                    gameBooking={props.gameBooking ? props.gameBooking : false}
-                    isGiftPage={props.isGiftPage ? props.isGiftPage : false}
-                  />
-                </div>
+                  </div>
+                )}
                 {/* ============Nav bar btn desktop  end*/}
                 {/* ============Nav bar toggle icon  */}
                 <div

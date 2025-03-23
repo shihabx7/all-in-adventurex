@@ -73,7 +73,7 @@ const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
         //removeArrowOnDeviceType={["tablet", "mobile"]}
         //deviceType={this.props.deviceType}
         dotListClass="custom-dot-list-style mer-car-dot "
-        itemClass="game-carousel-card   px-2 sm:px-3 lg:px-3 xl:px-4 2xl:px-5 3xl:px-6  py-4 md:py-8"
+        itemClass="game-carousel-card   px-2 sm:px-3 lg:px-3 xl:px-4  3xl:px-5  py-4 md:py-8"
         renderArrowsOutside={true}
         renderDotsOutside={false}
         partialVisible={false}
@@ -86,7 +86,7 @@ const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
             >
               {/**=========== testimonial ornaments end */}
               {/**=========== rocket-bottom-left */}
-              
+
               {/**=========== bottom-confette-bg */}
               <div className="max-w-[230px] absolute bottom-0 left-0 right-0 mx-auto z-0">
                 <img
@@ -95,7 +95,7 @@ const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
                 ></img>
               </div>
               {/**=========== balon-bottom-right */}
-              
+
               {/**=========== testimonial ornaments end */}
               <div className="mer-testi-card-container  rounded-[24px] p-2 md:p-3 h-full">
                 <div className="merc-row h-full flex flex-col justify-between rounded-[18px] p-2 md:p-3 border-[2px] border-dashed border-[#ceb67e]  ">
@@ -106,7 +106,7 @@ const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
                         item.testimonialImage.alt
                           ? item.testimonialImage.alt
                           : "Allinadventures mobile escape room testimonial " +
-                            index
+                          index
                       }
                       src={
                         item.testimonialImage.hasImage
