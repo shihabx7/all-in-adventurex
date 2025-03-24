@@ -40,6 +40,14 @@ const MobileEscapeGameSlider = ({
             <></>
           )}
         </div>
+        <div className="card-game-link mt-5 rm:mt-6 md:mt-7 xl:mt-8 flex justify-center">
+          <a
+            href="#mobile-escape-room-form"
+            className="border block text-white text-center  border-red-600 bg-red-600 min-w-[280px] py-3 px-[30px] md:px-12 md:py-4 rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700"
+          >
+            GET A QUOTE
+          </a>
+        </div>
       </div>
     </div>
   );

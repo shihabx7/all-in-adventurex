@@ -48,7 +48,7 @@ export const getSitemapData = async () => {
   const locLinkRes = await fetch(siteMapLocationQuery, apiSetting);
   const locLinkResObj = await locLinkRes.json();
   const locLinkResDataArr = locLinkResObj.data;
-
+  //console.log(locLinkResDataArr)
   // fetch blog link
   const blogLinkRes = await fetch(siteMapBlogQuery, apiSetting);
   const blogLinkResObj = await blogLinkRes.json();

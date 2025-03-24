@@ -166,17 +166,12 @@ const MobileEscapeGameCarousel = ({ escapeGameList, locationName }) => {
                         ${item.price}
                       </p>
                       <p
-                        className="text-lg text-white mt-1"
+                        className="text-lg text-white mt-2"
                         style={{ lineHeight: 1 }}
                       >
                         Per Person
                       </p>
-                      <p
-                        className="text-xs md:text-sm  text-slate-200 md:mt-[2px]"
-                        style={{ lineHeight: 1 }}
-                      >
-                        (Min. 20 person)
-                      </p>
+
                     </div>
                   </div>
                 </div>
@@ -193,14 +188,7 @@ const MobileEscapeGameCarousel = ({ escapeGameList, locationName }) => {
                       }}
                     ></div>
                   </div>
-                  <div className="card-game-link mt-3 rm:mt-4 flex justify-center zm:justify-between items-center zm:items-start text-center">
-                    <a
-                      href="#mobile-escape-room-form"
-                      className="border block card-book-btnxx   border-red-600 bg-red-600 py-[8px] px-[30px] md:px-[36px] md:py-3 rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700"
-                    >
-                      GET A QUOTE
-                    </a>
-                  </div>
+
                 </div>
               </div>
             </div>

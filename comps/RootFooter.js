@@ -40,8 +40,8 @@ const RootFooter = (props) => {
                 in {props.totalLocations ? props.totalLocations : "22"}{" "}
                 locations. Established in 2014 and a registered franchise brand
                 since 2020, All In Adventures has gained vast industry
-                experience through our popular Escape Room, Game Show Room, Beat
-                the Seat, and Axe Throwing games.
+                experience through our popular Escape Room, Game Show Room and Beat
+                the Seat games.
               </p>
               <p className="text-gray-300 md:text-lg pt-4 pb-8">
                 We're your one-stop shop for any private event. We have you

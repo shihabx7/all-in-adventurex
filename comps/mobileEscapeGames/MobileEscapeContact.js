@@ -116,29 +116,7 @@ const MobileEscapeContact = ({
                     </a>
                   </div>
                 </div>
-                <div className="mer-info-list flex  items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
-                  <div className="w-[20px] md:w-[24px]">
-                    <img
-                      className="w-full"
-                      alt={"Allinadventures icon phone"}
-                      src="/assets/svg/event-icon-phone.svg"
-                    ></img>
-                  </div>
-                  <div className="flex-1">
-                    <a
-                      className="text-[#F4E6C3] hover:text-red-700"
-                      href={
-                        locationInfo.phone !== null
-                          ? "tel:" + locationInfo.phone
-                          : "tel:+1919-205-5008"
-                      }
-                    >
-                      Store: {locationInfo.phone
-                        ? locationInfo.phone
-                        : "+1 919-205-5008"}
-                    </a>
-                  </div>
-                </div>
+
                 <div className="mer-info-list flex  items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
                   <div className="w-[20px] md:w-[24px]">
                     <img
@@ -158,33 +136,7 @@ const MobileEscapeContact = ({
                     </a>
                   </div>
                 </div>
-                {locationInfo.text !== null ? (
-                  <div className="mer-info-list flex  items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
-                    <div className="w-[20px] md:w-[24px]">
-                      <img
-                        className="w-full"
-                        alt={"Allinadventures icon text message"}
-                        src="/assets/svg/util/allinadventures-text-message-icon.svg"
-                      ></img>
-                    </div>
-                    <div className="flex-1">
-                      <a
-                        className="text-[#F4E6C3] hover:text-red-700"
-                        href={
-                          locationInfo.text !== null
-                            ? "sms:" + locationInfo.text
-                            : "sms:+1919-205-5008"
-                        }
-                      >
-                        Text: {locationInfo.phone
-                          ? locationInfo.phone
-                          : "+1919-205-5008"}
-                      </a>
-                    </div>
-                  </div>
-                ) : (
-                  <></>
-                )}
+
                 {/*store email*/}
                 <div className="mer-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
                   <div className="w-[20px] md:w-[24px]">

@@ -4,9 +4,9 @@ import { getCookies, getCookie, setCookie, deleteCookie } from "cookies-next";
 const HeaderNotice = () => {
   const [showNotice, setShownotice] = useState(false);
   const closeNotice = () => {
-    setCookie("header-notice", true, {
+    setCookie("close-h-notice", true, {
       path: "/",
-      maxAge: 604800, // Expires after 24*7 hours
+      maxAge: 86400, // Expires after 24 hours
       sameSite: true,
     });
     setShownotice(false);
@@ -14,15 +14,16 @@ const HeaderNotice = () => {
   useEffect(() => {
     // const winSize = screen.width;
     //console.log(winSize);
-    const coc = getCookie("header-notice");
-    if (!coc) {
+    //  const noticeExp = getCookie("close-h-notice");
+    const noticeClose = getCookie("close-h-notice");
+    if (!noticeClose) {
       setShownotice(true);
     }
   }, []);
 
   return (
     showNotice && (
-      <div className="header-notice py-[2px] sm:py-[2px] bg-[#564B31] lg:hidden">
+      <div className="header-notice py-[2px] sm:py-[2px] bg-[#564B31]">
         <div className="max-w-7xl mx-auto ">
           <div className="header-notice-box flex justify-between items-center fex space-x-2 md:space-x-2  px-2  md:px-4">
             <div className="header-notice-text items-center">
