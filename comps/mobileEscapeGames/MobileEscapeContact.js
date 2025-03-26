@@ -58,7 +58,7 @@ const MobileEscapeContact = ({
   return (
     <>
       <div
-        id="mobile-escape-room-form"
+
         className="mer-contact bg-black py-16 md:py-20 lg:py-28 relative overflow-hidden"
       >
         <div className="max-w-7xl mx-auto md:px-4">
@@ -166,7 +166,7 @@ const MobileEscapeContact = ({
             {/**======================================================content Info+FAQ end============ */}
             {/**=====================================Yext Form================================== */}
             <div
-              id="mer-form"
+              id="mobile-escape-room-form"
               className="mt-10 md:mt-16 lg:mt-0 contact-form-box w-full lg:w-[50%]"
             >
               <div className="contact-form-bg bg-[#F4E6C3] px-4 py-8 md:p-6 lg:p-8 md:rounded w-full">
