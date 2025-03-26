@@ -167,7 +167,7 @@ const MobileEscapeContact = ({
             {/**=====================================Yext Form================================== */}
             <div
               id="mobile-escape-room-form"
-              className="mt-10 md:mt-16 lg:mt-0 contact-form-box w-full lg:w-[50%]"
+              className="mt-12 md:mt-20 lg:mt-0 contact-form-box w-full lg:w-[50%]"
             >
               <div className="contact-form-bg bg-[#F4E6C3] px-4 py-8 md:p-6 lg:p-8 md:rounded w-full">
                 <div
