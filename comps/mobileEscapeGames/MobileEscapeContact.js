@@ -58,17 +58,17 @@ const MobileEscapeContact = ({
   return (
     <>
       <div
-
-        className="mer-contact bg-black py-16 md:py-20 lg:py-28 relative overflow-hidden"
+        id="mobile-escape-room-form"
+        className="mer-contact bg-black pb-16 pt-10 md:py-20 lg:py-28 relative overflow-hidden"
       >
         <div className="max-w-7xl mx-auto md:px-4">
           {/**======================================================content============ */}
           <div className="conatct-section flex flex-col lg:flex-row justify-between md:max-w-[660px] lg:max-w-none mx-auto">
             {/**======================================================content Info+FAQ============ */}
             <div className="contact-info-box  md:pt-12 px-4 w-full  lg:w-[46%]">
-              <div className="in-sec-title mb-5 rm:mb-6 md:mb-6 lg:mb-8">
+              <div className="in-sec-title mb-3 rm:mb-4 md:mb-6 lg:mb-8">
                 <h2
-                  className="dark-gold mb-3 rm:mb-4 xl:mb-6 pt-0 md:py-2 text-2xl rm:text-3xl md:text-[40px] lg:text-[40px] 2xl:text-[48px] font-os font-bold uppercase"
+                  className="dark-gold mb-3 rm:mb-4 xl:mb-6 pt-0 md:py-2 text-[25px] rm:text-[26px] md:text-[40px] lg:text-[40px] 2xl:text-[48px] font-os font-bold uppercase"
                   style={{ lineHeight: 1.2 }}
                 >
                   {contactSectionData.sectionTitle}
@@ -88,7 +88,7 @@ const MobileEscapeContact = ({
                 <></>
               )}
 
-              <div className="mer-info-list-box mt-2 lg:mt-2 3xl:mt-4">
+              <div className="mer-info-list-box  ">
                 <div className="mer-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-y-[1px] border-[#D2C6AA]">
                   <div className="w-[20px] md:w-[24px]">
                     <img
@@ -166,10 +166,10 @@ const MobileEscapeContact = ({
             {/**======================================================content Info+FAQ end============ */}
             {/**=====================================Yext Form================================== */}
             <div
-              id="mobile-escape-room-form"
-              className="mt-12 md:mt-20 lg:mt-0 contact-form-box w-full lg:w-[50%]"
+              id="mobile-escape-room-contact"
+              className="mt-8 md:mt-8 lg:mt-0 contact-form-box w-full lg:w-[50%]"
             >
-              <div className="contact-form-bg bg-[#F4E6C3] px-4 py-8 md:p-6 lg:p-8 md:rounded w-full">
+              <div className="contact-form-bg bg-[#F4E6C3] px-4 pt-6 pb-8 md:p-6 lg:p-8 md:rounded w-full">
                 <div
                   className="pipedriveWebForms"
                   data-pd-webforms="https://webforms.pipedrive.com/f/1GbaceOYFfjizbqZICDNPK2Ms6Tv8J5gwKVdEiv5DLoh98NAMtTxpy1GrhsG1Xinx"

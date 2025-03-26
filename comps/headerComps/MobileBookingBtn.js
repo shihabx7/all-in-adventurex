@@ -152,7 +152,7 @@ const MobileBookingBtn = (props) => {
         <div className="w-full">
           <a
             href={"#mobile-escape-room-form"}
-            className="bg-red-600 font-medium hover:bg-red-700 py-2 px-2 block text-center text-white text-lg"
+            className="bg-red-600 font-medium hover:bg-red-700 py-1 md:py-2 px-2 block text-center text-white text-lg"
           >
             GET A QUOTE
           </a>
