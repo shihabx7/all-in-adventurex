@@ -9,10 +9,19 @@ import HeaderNotice from "./headerComps/HeaderNotice";
 import LocationMenuBtnHeader from "./util/LocationMenuBtnHeader";
 import StickyGiftBar from "./giftCardPageComps/StickyGiftBar";
 import UerStickyBar from "./unlimitedEscapeRoom/UerStickyBar";
+import { navNotice } from "../lib/tempData/tempNavNotice";
 const RootNav = (props) => {
   const [showSlug, setShowSlug] = useState(null);
+  const [noticeData, setNoticeData] = useState()
+
+  const setNotice = async () => {
+    const ndata = await navNotice()
+    //console.log(ndata)
+    setNoticeData(ndata)
+  }
 
   useEffect(() => {
+    setNotice()
     setShowSlug(props.slug);
   }, []);
 
@@ -67,7 +76,12 @@ const RootNav = (props) => {
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">
         <div id="header-container-s" className="header-container-s">
-          {/*<HeaderNotice />*/}
+          {
+            ((noticeData !== undefined && noticeData !== null) && noticeData.showNotice) && <>
+              <HeaderNotice noticeData={noticeData}/>
+            </>
+          }
+
           <div
             className="header-container-s max-w-7xl mx-auto relative md:px-4"
             ref={ref}

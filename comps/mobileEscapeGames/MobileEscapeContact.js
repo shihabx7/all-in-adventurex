@@ -68,7 +68,7 @@ const MobileEscapeContact = ({
             <div className="contact-info-box  md:pt-12 px-4 w-full  lg:w-[46%]">
               <div className="in-sec-title mb-3 rm:mb-4 md:mb-6 lg:mb-8">
                 <h2
-                  className="dark-gold mb-3 rm:mb-4 xl:mb-6 pt-0 md:py-2 text-[25px] rm:text-[26px] md:text-[40px] lg:text-[40px] 2xl:text-[48px] font-os font-bold uppercase"
+                  className="text-[#E0BF62] mb-3 rm:mb-4 xl:mb-6 pt-0 md:py-2 text-[25px] rm:text-[26px] md:text-[40px] lg:text-[40px] 2xl:text-[48px] font-os font-bold uppercase"
                   style={{ lineHeight: 1.2 }}
                 >
                   {contactSectionData.sectionTitle}
@@ -90,7 +90,7 @@ const MobileEscapeContact = ({
 
               <div className="mer-info-list-box  ">
                 <div className="mer-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-y-[1px] border-[#D2C6AA]">
-                  <div className="w-[20px] md:w-[24px]">
+                  <div className="w-[18px] md:w-[24px]">
                     <img
                       className="w-full"
                       alt={"Allinadventures icon map"}
@@ -99,7 +99,7 @@ const MobileEscapeContact = ({
                   </div>
                   <div className="flex-1">
                     <a
-                      className="text-[#F4E6C3] hover:text-red-700"
+                      className="text-[#F4E6C3] text-base xl:text-lg hover:text-red-700"
                       href={getDirection(
                         locationInfo.address,
                         locationInfo.state,
@@ -118,7 +118,7 @@ const MobileEscapeContact = ({
                 </div>
 
                 <div className="mer-info-list flex  items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
-                  <div className="w-[20px] md:w-[24px]">
+                  <div className="w-[18px] md:w-[24px]">
                     <img
                       className="w-full"
                       alt={"Allinadventures icon phone"}
@@ -127,7 +127,7 @@ const MobileEscapeContact = ({
                   </div>
                   <div className="flex-1">
                     <a
-                      className="text-[#F4E6C3] hover:text-red-700"
+                      className="text-[#F4E6C3] xl:text-lg hover:text-red-700"
                       href={
                         "tel:+1404-445-6047"
                       }
@@ -139,7 +139,7 @@ const MobileEscapeContact = ({
 
                 {/*store email*/}
                 <div className="mer-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
-                  <div className="w-[20px] md:w-[24px]">
+                  <div className="w-[18px] md:w-[24px]">
                     <img
                       className="w-full"
                       alt={"Allinadventures icon email"}
@@ -148,7 +148,7 @@ const MobileEscapeContact = ({
                   </div>
                   <div className="flex-1">
                     <a
-                      className="text-[#F4E6C3] hover:text-red-700"
+                      className="text-[#F4E6C3] text-base xl:text-lg hover:text-red-700"
                       href={
                         locationInfo.storeEmail !== null
                           ? "mailto:" + locationInfo.storeEmail

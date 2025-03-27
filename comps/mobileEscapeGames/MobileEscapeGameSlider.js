@@ -17,6 +17,7 @@ const MobileEscapeGameSlider = ({
                   ? gameCarouselSectionData.sectionTitle
                   : "CHOOSE YOUR MOBILE ESCAPE ROOM ADVENTURE"
               }
+              textColor={"#E0BF62"}
             />
           </div>
           {gameCarouselSectionData.sectionSubTitle !== null ? (

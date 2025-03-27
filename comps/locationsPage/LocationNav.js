@@ -12,11 +12,20 @@ import MobileEscapeBookingBtn from "../headerComps/MobileEscapeBookingBtn";
 import MobileEscapeStickyBar from "../mobileEscapeGames/MobileEscapeStickyBar";
 import StickyGiftBar from "../giftCardPageComps/StickyGiftBar";
 import UerStickyBar from "../unlimitedEscapeRoom/UerStickyBar";
+import { navNotice } from "../../lib/tempData/tempNavNotice";
 
 const LocationNav = (props) => {
   const [showSlug, setShowSlug] = useState(null);
+  const [noticeData, setNoticeData] = useState()
+
+  const setNotice = async (sl) => {
+    const ndata = await navNotice(sl)
+    //  console.log(ndata)
+    setNoticeData(ndata)
+  }
 
   useEffect(() => {
+    setNotice(props.locationSlug)
     setShowSlug(props.slug);
   }, []);
 
@@ -73,7 +82,11 @@ const LocationNav = (props) => {
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">
         <div id="header-container-s" className="header-container-s">
-          {/*/<HeaderNotice />*/}
+          {
+            ((noticeData !== undefined && noticeData !== null) && noticeData.showNotice) && <>
+              <HeaderNotice noticeData={noticeData} />
+            </>
+          }
           <div
             className="header-container-s max-w-7xl mx-auto relative md:px-4"
             ref={ref}
