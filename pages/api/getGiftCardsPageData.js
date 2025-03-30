@@ -20,6 +20,8 @@ import {
   getAllEventSlugList,
 } from "../../lib/menuDataFormation";
 
+import { giftRedeemImageList } from "../../lib/tempData/tempGiftRedeem";
+
 export const getGiftCardsPageData = async () => {
   const pageReq = apiUrl + giftCardsPageQuery;
 
@@ -45,7 +47,7 @@ export const getGiftCardsPageData = async () => {
 
   const totalActivities = actctivityListResData.length;
   const totalLocations = locationListData.length;
-
+  //giftReedem: getGiftRootReedem(actctivityListResData),
   const Data = {
     locationSlugList: getLocationSlugList(locationListData),
     escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
@@ -53,7 +55,7 @@ export const getGiftCardsPageData = async () => {
     eventSlugList: getAllEventSlugList(eventListResData),
     totalLocations: totalLocations,
     pageMeta: getRootGiftPageMeta(seoData, "gift-cards"),
-    giftReedem: getGiftRootReedem(actctivityListResData),
+    giftReedem: giftRedeemImageList,
     giftFaqs: pageResData.giftFaqs,
     giftGallery: getGiftGallery(pageResData.gallery),
   };

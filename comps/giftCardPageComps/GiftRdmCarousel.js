@@ -21,42 +21,42 @@ const GiftRdmCarousel = (props) => {
       breakpoint: { max: 4300, min: 2081 },
       items: 5,
       slidesToSlide: 1,
-      partialVisibilityGutter: 0,
+      partialVisibilityGutter: 28,
     },
     desktoplg: {
       breakpoint: { max: 2080, min: 1640 },
-      items: 5,
+      items: 4,
       slidesToSlide: 1,
-      partialVisibilityGutter: 0,
+      partialVisibilityGutter: 24,
     },
     desktopmd: {
       breakpoint: { max: 1640, min: 1440 },
       items: 4,
       slidesToSlide: 1,
-      partialVisibilityGutter: 0,
+      partialVisibilityGutter: 26,
     },
     desktop: {
       breakpoint: { max: 1440, min: 1024 },
       items: 3,
       slidesToSlide: 1,
-      partialVisibilityGutter: 0,
+      partialVisibilityGutter: 32,
     },
     tablet: {
       breakpoint: { max: 1024, min: 520 },
       items: 2,
       slidesToSlide: 1,
-      partialVisibilityGutter: 0,
+      partialVisibilityGutter: 36,
     },
     mobile: {
       breakpoint: { max: 520, min: 0 },
       items: 1,
       slidesToSlide: 1,
-      partialVisibilityGutter: 0,
+      partialVisibilityGutter: 42,
     },
   };
 
   return (
-    <div className="full-carousel inpersongame inp-car ">
+    <div className="full-carousel inpersongame inp-car rdm-car">
       <Carousel
         swipeable={true}
         draggable={true}
@@ -64,7 +64,7 @@ const GiftRdmCarousel = (props) => {
         arrows={true}
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
-        infinite={false}
+        infinite={true}
         // autoPlay={this.props.deviceType !== "mobile" ? true : false}
         autoPlay={false}
         // autoPlaySpeed={5000}
@@ -76,24 +76,24 @@ const GiftRdmCarousel = (props) => {
         //  removeArrowOnDeviceType={["tablet", "mobile"]}
         //deviceType={this.props.deviceType}
         dotListClass="custom-dot-list-style"
-        itemClass="game-carousel-card px-2 lg:px-1 py-4 md:py-8"
+        itemClass="game-carousel-card px-1.5 md:px-2.5 lg:px-2 2xl:px-3 py-4 md:py-8"
         renderDotsOutside={false}
         partialVisible={true}
       >
-        {props.giftReedem.map((game) => {
+        {props.giftReedem.map((game, index) => {
           return (
             <div
-              key={game.id}
+              key={index}
               className="text-white rounded-lg bg-gray-300 game-slider-card card-border group mb-shadow bg-cover relative"
             >
               <div className="card-img rounded-lg">
                 <img
                   alt={game.sliderImage.alt}
-                  className="rounded-lg"
+                  className="rounded"
                   src={game.sliderImage.url}
                 ></img>
               </div>
-              <div className="rounded-lg card-container absolute top-0 left-0 w-full h-full flex flex-col justify-end">
+              { /*<div className="rounded-lg card-container absolute top-0 left-0 w-full h-full flex flex-col justify-end">
                 <div className="card-bottom-gift rounded-[6px] py-4 px-2 pt-6 pb-8 2xl:pb-10 4xl:pb-12">
                   <div className="mb-3">
                     <img
@@ -112,6 +112,7 @@ const GiftRdmCarousel = (props) => {
                   </div>
                 </div>
               </div>
+              */}
             </div>
           );
         })}

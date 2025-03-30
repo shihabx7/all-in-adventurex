@@ -1224,6 +1224,41 @@ a {
   color: #4a4a4a;
 }
 
+.rdm-car .react-multiple-carousel__arrow--left {
+  top: 44%;
+  box-shadow: none;
+  border: 2px solid #ca9342
+}
+
+.rdm-car .react-multiple-carousel__arrow--right {
+  top: 44%;
+  box-shadow: none;
+  border: 2px solid #ca9342
+}
+
+.rdm-car .react-multiple-carousel__arrow::before {
+  font-size: 26px;
+  color: #ca9342;
+
+}
+
+.rdm-car .react-multiple-carousel__arrow--right:hover {
+  border: 2px solid #E0BF62;
+}
+
+.rdm-car .react-multiple-carousel__arrow--right:hover:before {
+  color: #E0BF62;
+}
+
+.rdm-car .react-multiple-carousel__arrow--left:hover {
+  border: 2px solid #E0BF62;
+}
+
+.rdm-car .react-multiple-carousel__arrow--left:hover:before {
+  color: #E0BF62;
+}
+
+
 /*======mobile escape room dsign*/
 .mer-testi-shadow {
   box-shadow: 8px 8px #ceb67e;

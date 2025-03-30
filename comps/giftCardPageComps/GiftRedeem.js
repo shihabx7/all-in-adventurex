@@ -1,30 +1,28 @@
 import TitleSeparator from "../util/TitleSeparator";
 import GiftRdmCarousel from "./GiftRdmCarousel";
 import GiftGnBtn from "./GiftGnBtn";
-import SectionBorderTop from "../util/SectionBorderTop";
+import SectionTitleCenter from "./SectionTitleCenter";
 import SectionBorderBottom from "../util/SectionBorderBottom";
 const GiftRedeem = (props) => {
   return (
     <div
       id="gift-redem"
-      className="gift-redeem relative  py-16 md:py-24 lg:py-32  overflow-hidden md:mt-[0px] bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] bg-repeat"
+      className="gift-redeem relative pt-12 pb-16 md:pt-12 md:pb-24  lg:pb-28  lg:pt-16 overflow-hidden md:mt-[0px] bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] bg-repeat"
     >
       {/*======================= boder img============== */}
-      <SectionBorderTop />
+      {  /*<SectionBorderTop />*/}
       <SectionBorderBottom />
       {/*======================= boder img end============== */}
       <div className="giftrdm-container relative z-30">
         {/** =================section title============= */}
-        <div className="section-title mb-8 md:mb-12">
-          <TitleSeparator
+        <div className="section-title mb-4 md:mb-0 lg:mb-2 max-w-[880px] mx-auto">
+          <div className="max-w-[300px] md:max-w-none mx-auto">  <SectionTitleCenter
             title="REDEEM TO UNLOCK THESE ESCAPE ROOMS"
-            color="text-[#CA9342]"
-            weight="font-bold"
-          />
-          <p className="mt-4 text-[#2E2E2E] max-w-[800px] mx-auto text-center md:text-lg px-4">
-            Your gift recipients are in for a treat when they experience one of
-            these great escape room games at their local All In Adventures store
-            — what mystery will they unravel?
+
+          /></div>
+
+          <p className=" text-[#2E2E2E]  mx-auto text-center md:text-lg px-4  mt-1 lg:mt-2 max-w-[700px] mx-auto">
+            Your gift recipients are in for a treat to experience one of these escape room games at the chosen All In Adventures store — what mystery will they unravel?
           </p>
         </div>
         {/** =================section title end============= */}
@@ -32,7 +30,7 @@ const GiftRedeem = (props) => {
           <GiftRdmCarousel giftReedem={props.giftReedem} />
         </div>
 
-        <div className="flex justify-center mt-12">
+        <div className="flex justify-center mt-7 lg:mt-10">
           <GiftGnBtn
             setShowGiftBookingList={
               props.setShowGiftBookingList

@@ -1,6 +1,6 @@
 import GiftFaqList from "./GiftFaqList";
 import TitleSeparator from "../util/TitleSeparator";
-
+import SectionTitleCenter from "./SectionTitleCenter";
 import GiftGnBtn from "./GiftGnBtn";
 import SectionBorderBottom from "../util/SectionBorderBottom";
 import SectionBorderTop from "../util/SectionBorderTop";
@@ -15,9 +15,9 @@ const GiftFaq = (props) => {
       <SectionBorderBottom />
       {/*======================= boder img end============== */}
       <div className="max-w-7xl mx-auto relative z-30">
-        <div className="section-title mb-8 md:mb-12">
-          <TitleSeparator title="FREQUENTLY ASKED QUESTIONS" />
-          <p className="mt-4 text-[#2E2E2E] max-w-[840px] mx-auto text-center lg:text-lg">
+        <div className="section-title mb-8 md:mb-12 max-w-[700px] mx-auto">
+          <SectionTitleCenter title="FREQUENTLY ASKED QUESTIONS" />
+          <p className="text-[#2E2E2E] max-w-[840px] mx-auto text-center lg:text-lg mt-1 md:mt-2 lg:mt-2">
             Explore these FAQs to uncover answers to popular questions about All
             In Adventures Gift Cards. If your specific query isn't covered,
             reach us anytime on phone or email.

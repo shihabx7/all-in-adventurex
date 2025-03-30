@@ -1,10 +1,10 @@
 import React from "react";
 import GiftHeroBtn from "./GiftHeroBtn";
 import Script from "next/script";
+import GiftSpotOn from "./GiftSpotOn";
 const GiftHeroBaner = (props) => {
   return (
     <>
-      {" "}
       <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
       <div className="gift-hero bg-[#FFF9EB] relative overflow-hidden">
         {/* =======card border========  */}
@@ -114,8 +114,8 @@ const GiftHeroBaner = (props) => {
         </div>
         {/* =======card bg images end========  */}
         {/* =======card content container========  */}
-        <div className="gift-hero-container-wrapper  relative z-[50]">
-          <div className="max-w-7xl pt-14 pb-20 md:py-24 xl:py-26 3xl:py-28 mx-auto px-8 lg:px-12 ">
+        <div className="gift-hero-container-wrapper  relative z-[20]">
+          <div className="max-w-7xl pt-10 pb-[180px] md:pt-24 md:pb-[220px]  xl:pt-26 lg:pb-[230px]  3xl:pt-28 3xl:pb-[264px] mx-auto px-8 lg:px-12 ">
             <div className="gh-content flex flex-col lg:flex-row justify-between items-center">
               {/* =======card content text========  */}
 
@@ -180,7 +180,7 @@ const GiftHeroBaner = (props) => {
                   </div>
                   {/* =======card content List end========  */}
                   {/* =======card content btn========  */}
-                  <div className="mt-10">
+                  <div className="mt-9 md:mt-10">
                     <GiftHeroBtn
                       setShowGiftBookingList={
                         props.setShowGiftBookingList
@@ -204,8 +204,11 @@ const GiftHeroBaner = (props) => {
             </div>
           </div>
         </div>
+
         {/* =======card content container end========  */}
+
       </div>
+      <GiftSpotOn />
     </>
   );
 };

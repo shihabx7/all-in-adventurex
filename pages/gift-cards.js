@@ -57,18 +57,21 @@ const GiftCard = (props) => {
           setShowGiftBookingList={setShowGiftBookingList}
         />
 
-        <GiftSpotOn setShowGiftBookingList={setShowGiftBookingList} />
-        <GiftVenGram setShowGiftBookingList={setShowGiftBookingList} />
-        <HowGiftCardsWork setShowGiftBookingList={setShowGiftBookingList} />
+
+        {/*<GiftVenGram setShowGiftBookingList={setShowGiftBookingList}
+       */ }
+
         <GiftRedeem
           giftReedem={props.giftReedem}
           setShowGiftBookingList={setShowGiftBookingList}
         />
-        <GiftPerfectFor setShowGiftBookingList={setShowGiftBookingList} />
-        <GiftGallery
+        {/* <GiftPerfectFor setShowGiftBookingList={setShowGiftBookingList} />
+       */}
+        {/*  <GiftGallery
           giftGallery={props.giftGallery ? props.giftGallery : false}
           setShowGiftBookingList={setShowGiftBookingList}
-        />
+        /> */}
+        <HowGiftCardsWork setShowGiftBookingList={setShowGiftBookingList} />
         <GiftEffect setShowGiftBookingList={setShowGiftBookingList} />
 
         <GiftFaq

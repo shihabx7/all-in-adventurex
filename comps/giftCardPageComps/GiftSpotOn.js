@@ -3,147 +3,51 @@ import TitleSeparator from "../util/TitleSeparator";
 import GiftGnBtn from "./GiftGnBtn";
 function GiftSpotOn(props) {
   return (
-    <div className="gift-spoton gift-pattern bg-black">
-      <div className="gift-spoton-container-wrapper max-w-7xl mx-auto py-16 md:py-24 lg:py-32 px-4 md:px-8">
+    <div className="gift-spoton bg-[#FFF9EB]" >
+      <div className="gift-spoton-container-wrapper max-w-[400px] md:max-w-7xl mx-auto px-4 rm:px-5  md:px-6 lg:px-8 xl:px-12 2xl:px-8 relative z-[30] mt-[-120px] rm:mt-[-126px] md:mt-[-138px]  xl:mt-[-144px] 3xl:mt-[-160px]" >
         <div className="gs-container ">
           {/*======================section title======== */}
-          <div className="sec-title gs-title max-w-[768px] mx-auto">
-            <TitleSeparator title="THE GIFT THAT WILL ALWAYS BE SPOT-ON" />
-            <p className="text-lg text-white mt-2 text-center">
-              Become a gifting genius this holiday season with All In Adventures
-              Gift Cards.
-            </p>
-          </div>
+
           {/*======================section container======== */}
-          <div className="gs-box-container flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6   lg:space-x-0 lg:space-y-0 lg:justify-between mt-8 md:mt-12 flex-wrap">
+          <div className="gs-box-container grid grid-cols-1 md:grid-cols-3 gap-3 rm:gap-4 md:gap-[6px] lg:gap-3  xl:gap-4 2xl:gap-5">
             {/*======================box-column 1======== */}
-            <div className="gs-box-col w-full md:max-w-[47%] lg:max-w-[32%] bg-[#FFF9EB]  relative rounded-lg">
-              <div className="br-img absolute bottom-0 right-0 z-[20] w-[60px] md:w-[68px] 2xl:w-[75px]">
-                <img
-                  className=" w-[60px] md:w-[68px] 2xl:w-[75px]"
-                  src="/assets/gift-images/usp/usp-gift-box.svg"
-                  alt="An escape room gift box containing engaging puzzles and clues, perfect for an immersive adventure experience."
-                ></img>
-              </div>
-              <div className="bg-or p-4 absolute z-[10] w-full h-full top-0 left-0 ">
-                <div className="border-dashed border-2 border-[#E2B846] relative w-full h-full">
-                  <div className="gs-box-top-riboon absolute top-[-16px] left-0 right-0 mx-auto max-w-[92%]">
-                    <img
-                      className=""
-                      src="/assets/gift-images/usp/usp-box-confetti-for-top-and-bottom.svg"
-                      alt="A vibrant gift box overflowing with confetti, symbolizing the thrill of an escape room challenge."
-                    ></img>
-                  </div>
-                  <div className="gs-box-bottom-riboon absolute bottom-[-16px] left-0 right-0 mx-auto max-w-[92%]">
-                    <img
-                      className=""
-                      src="/assets/gift-images/usp/usp-box-confetti-for-top-and-bottom.svg"
-                      alt="An escape room gift box containing engaging puzzles and clues, perfect for an immersive adventure experience."
-                    ></img>
-                  </div>
-                </div>
-              </div>
-              <div className="gs-cintent relative z-[30] px-10 py-16">
-                <h3 className="text-[#CA9342] font-os font-bold text-[24px] md:text-[28px] xl:text-[32px] text-center">
+            <div className="gs-box-col bg-[#231800] rounded-[14px] xl:rounded-[10px] p-3 rm:p-4 md:p-3 xl:p-4">
+
+              <div className="gs-content h-full px-3 md:px-2 lg:px-3 xl:px-4 py-5 lg:py-6 2xl:py-7 rounded-[8px] border-2 border-dashed border-[#E2B84680]">
+                <h3 className="text-[#CA9342] font-os font-bold text-[20px] rm:text-[22px] md:text-[18px] lg:text-[21px]  xl:text-[25px] 2xl:text-[28px] text-center">
                   MEMORIES OVER MATERIALS
                 </h3>
-                <p className="text-[#4A2F03] text-center mt-4">
-                  Physical gifts may fade in time, but experiences and memories
-                  of escape rooms will last a lifetime, making your present
-                  unforgettable.
+                <p className="text-[#fff9eb] text-sm rm:text-base md:text-sm lg:text-base text-center mt-3">
+                  Give the gift of adventure! Physical gifts may fade in time, but experiences and memories of escape rooms last a lifetime, making your present unforgettable.
                 </p>
               </div>
             </div>
             {/*======================box-column 2 ======== */}
-            <div className="gs-box-col  w-full md:max-w-[47%] lg:max-w-[32%] bg-[#FFF9EB]  relative rounded-lg">
-              <div className="br-img absolute bottom-0 right-0 z-[20] w-[60px] md:w-[68px] 2xl:w-[75px]">
-                <img
-                  className=" w-[60px] md:w-[68px] 2xl:w-[75px]"
-                  src="/assets/gift-images/usp/usp-gift-box.svg"
-                  alt="An escape room gift box containing engaging puzzles and clues, perfect for an immersive adventure experience."
-                ></img>
-              </div>
-              <div className="bg-or p-4 absolute z-[10] w-full h-full top-0 left-0 ">
-                <div className="border-dashed border-2 border-[#E2B846] relative w-full h-full">
-                  <div className="gs-box-top-riboon absolute top-[-16px] left-0 right-0 mx-auto max-w-[92%]">
-                    <img
-                      className=""
-                      src="/assets/gift-images/usp/usp-box-confetti-for-top-and-bottom.svg"
-                      alt="A vibrant gift box overflowing with confetti, symbolizing the thrill of an escape room challenge."
-                    ></img>
-                  </div>
-                  <div className="gs-box-bottom-riboon absolute bottom-[-16px] left-0 right-0 mx-auto max-w-[92%]">
-                    <img
-                      className=""
-                      src="/assets/gift-images/usp/usp-box-confetti-for-top-and-bottom.svg"
-                      alt="An escape room gift box containing engaging puzzles and clues, perfect for an immersive adventure experience."
-                    ></img>
-                  </div>
-                </div>
-              </div>
-              <div className="gs-cintent relative z-[30] px-10 py-16">
-                <h3 className="text-[#CA9342] font-os font-bold text-[24px] md:text-[28px] xl:text-[32px] text-center max-w-[80%] mx-auto">
-                  HASSLE-FREE GIFTING
+            <div className="gs-box-col bg-[#231800] rounded-[14px] xl:rounded-[10px] p-3 rm:p-4 md:p-3 xl:p-4">
+
+              <div className="gs-content h-full px-3 md:px-2 lg:px-3 xl:px-4 py-5 lg:py-6 2xl:py-7 rounded-[8px] border-2 border-dashed border-[#E2B84680]">
+                <h3 className="text-[#CA9342] font-os font-bold text-[20px] rm:text-[22px] md:text-[18px] lg:text-[21px]  xl:text-[25px] 2xl:text-[28px] text-center ">
+                  GIFTING MADE EASY
                 </h3>
-                <p className="text-[#4A2F03] text-center mt-4">
-                  All In Adventures Gift Cards can be sent digitally, making
-                  gifting a breeze — because everyone deserves a little
-                  hassle-free happiness.
+                <p className="text-[#fff9eb] text-sm rm:text-base  md:text-sm lg:text-base text-center mt-3">
+                  No wrapping, no waiting! All In Adventures Gift Cards can be sent digitally, making gifting a breeze—because everyone deserves a little hassle-free happiness.
                 </p>
               </div>
             </div>
             {/*======================box-column 3======== */}
-            <div className="gs-box-col  w-full md:pt-[24px] lg:pt-0 lg:mt-0 md:max-w-[47%] lg:max-w-[32%] relative">
-              <div className="bg-[#FFF9EB]  relative rounded-lg">
-                <div className="br-img absolute bottom-0 right-0 z-[20] w-[60px] md:w-[68px] 2xl:w-[75px] ">
-                  <img
-                    className=" w-[60px] md:w-[68px] 2xl:w-[75px]"
-                    src="/assets/gift-images/usp/usp-gift-box.svg"
-                    alt="An escape room gift box containing engaging puzzles and clues, perfect for an immersive adventure experience."
-                  ></img>
-                </div>
-                <div className="bg-or p-4 absolute z-[10] w-full h-full top-0 left-0 ">
-                  <div className="border-dashed border-2 border-[#E2B846] relative w-full h-full">
-                    <div className="gs-box-top-riboon absolute top-[-16px] left-0 right-0 mx-auto max-w-[92%]">
-                      <img
-                        className=""
-                        src="/assets/gift-images/usp/usp-box-confetti-for-top-and-bottom.svg"
-                        alt="A vibrant gift box overflowing with confetti, symbolizing the thrill of an escape room challenge."
-                      ></img>
-                    </div>
-                    <div className="gs-box-bottom-riboon absolute bottom-[-16px] left-0 right-0 mx-auto max-w-[92%]">
-                      <img
-                        className=""
-                        src="/assets/gift-images/usp/usp-box-confetti-for-top-and-bottom.svg"
-                        alt="An escape room gift box containing engaging puzzles and clues, perfect for an immersive adventure experience."
-                      ></img>
-                    </div>
-                  </div>
-                </div>
-                <div className="gs-cintent relative z-[30] px-10 py-16">
-                  <h3 className="text-[#CA9342] font-os font-bold text-[24px] md:text-[28px] xl:text-[32px] text-center">
-                    MAKE MEMORIES, NOT ASSUMPTIONS
-                  </h3>
-                  <p className="text-[#4A2F03]  text-center mt-4">
-                    Traditional gifts may assume preferences. Our Gift Cards
-                    allow recipients to create lasting memories, making your
-                    present stand out.
-                  </p>
-                </div>
+            <div className="gs-box-col bg-[#231800] rounded-[14px] xl:rounded-[10px] p-3 rm:p-4 md:p-3 xl:p-4">
+              <div className="gs-content h-full px-3 md:px-2 lg:px-3 xl:px-4 py-5 lg:py-6 2xl:py-7 rounded-[8px] border-2 border-dashed border-[#E2B84680]">
+                <h3 className="text-[#CA9342] font-os font-bold text-[20px] rm:text-[22px] md:text-[18px] lg:text-[21px]   xl:text-[25px] 2xl:text-[28px] text-center">
+                  MAKE MEMORIES
+                </h3>
+                <p className="text-[#fff9eb] text-sm rm:text-base md:text-sm lg:text-base text-center mt-3">
+                  Traditional gifts may not always match preferences. Our Gift Cards give recipients the freedom to choose their adventure, creating moments they'll cherish forever.
+                </p>
               </div>
             </div>
           </div>
 
-          <div className="sec-btn ss-btn flex justify-center mt-12 md:mt-16">
-            <GiftGnBtn
-              setShowGiftBookingList={
-                props.setShowGiftBookingList
-                  ? props.setShowGiftBookingList
-                  : false
-              }
-              giftBooking={props.giftBooking ? props.giftBooking : false}
-            />
-          </div>
+
         </div>
       </div>
     </div>
