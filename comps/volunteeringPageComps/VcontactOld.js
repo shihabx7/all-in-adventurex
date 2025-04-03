@@ -2,16 +2,11 @@ import { useState, useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import GameTitleSeparator from "../util/GameTitleSeparator";
 
-const Vcontact = (props) => {
-
+const VcontactOld = (props) => {
   const localdataWithMail = props.locationMailData;
-  const recaptchaRef = useRef();
-  const [reCaptchaToken, setReCaptchaToken] = useState(null);
-
   const [isSend, setIsSend] = useState(false);
   const [err, setErr] = useState(false);
-  const [errorMsg, setErrorMsg] = useState("");
-  const [successMsg, setSuccessMsg] = useState("");
+
   const [formErr, setFormErr] = useState({
     fNameErr: false,
     lNameErr: false,
@@ -19,7 +14,6 @@ const Vcontact = (props) => {
     phoneErr: false,
     inqTypeErr: false,
     locErr: false,
-
   });
 
   const [fieldVlue, setFieldValue] = useState({
@@ -32,7 +26,6 @@ const Vcontact = (props) => {
     storeEmail: "",
     managerEmail: "",
     msg: "",
-    botMsg: "",
   });
   // ========================================================first name validation=================
   const htmlescape = (htmlStr) => {
@@ -207,110 +200,41 @@ const Vcontact = (props) => {
       setFieldValue({ ...fieldVlue, msg: htmlescape(msg) });
     }
   };
-  const checkBoot = (e) => {
-    const botData = htmlescape(e.target.value.trim());
 
-    setFieldValue({ ...fieldVlue, botMsg: botData });
-  };
-  const checkEmpty = () => {
-    if (
-      fieldVlue.fName.length < 3 ||
-      typeof fieldVlue.fName !== "string" ||
-      fieldVlue.lName.length < 3 ||
-      typeof fieldVlue.lName !== "string" ||
-      fieldVlue.email.length < 6 ||
-      typeof fieldVlue.email !== "string" ||
-      fieldVlue.phone.length < 7 ||
-      fieldVlue.inqType.length < 3 ||
-      typeof fieldVlue.inqType !== "string" ||
-      fieldVlue.location.length < 3 ||
-      typeof fieldVlue.location !== "string" ||
-      fieldVlue.botMsg.length > 0 ||
-      typeof fieldVlue.botMsg !== "string"
-    ) {
-      return true;
-    }
-
-    return false;
-  };
   const submitForm = async (event) => {
     event.preventDefault();
-    setIsSend(true);
-    //console.log(fieldVlue);
+    console.log(fieldVlue);
     //console.log("clicked");
     //console.log(fieldVlue);
-    const isEmpty = checkEmpty();
-    if (err || isEmpty) {
-      setIsSend(false);
-      setErrorMsg("Empty form can't be submitted. Fill required field.")
-
-      // console.log("Empty Err ...");
-      return;
-    }
-    const grcToken = await recaptchaRef.current.executeAsync();
-    // console.log("captcha token ..." + grcToken);
-    if (!grcToken) {
-      setIsSend(false);
-      setErrorMsg("Captcha not found. try again");
-      return;
-    }
-    setReCaptchaToken(grcToken);
-    const formData = {
-      fName: fieldVlue.fName,
-      lName: fieldVlue.lName,
-      email: fieldVlue.email,
-      phone: fieldVlue.phone,
-      inqType: fieldVlue.inqType,
-      location: fieldVlue.location,
-      storeEmail: fieldVlue.storeEmail,
-      managerEmail: fieldVlue.managerEmail,
-      msg: fieldVlue.msg,
-      botMsg: fieldVlue.botMsg,
-      captchaToken: grcToken,
-    };
-    try {
-      const response = await fetch("/api/Forms/volunteerContact", {
-        method: "POST",
-        headers: {
-          Accept: "application/json,text/plain,*/*",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-      const result = await response.json();
-      setIsSend(false);
-      // console.log("Success:" + result.data);
-      //console.log(result.success)
-      if (response.status == 200) {
-        setErrorMsg("");
-        setSuccessMsg("Your message has submitted successfully. Thank you.");
-        window.location.replace("/thank-you");
-        //window.location.href = "//thank-you";
-        // console.log("Form submit success " + result.data);
-      } else if (response.status == 403) {
-        setSuccessMsg("");
-        setErrorMsg(result.data.error);
-      } else if (response.status == 405) {
-        setErrorMsg(result.data.error);
-        setSuccessMsg("");
-      } else if (response.status == 429) {
-        setErrorMsg(
-          result.data.error + " Try after" + result.data.resetAfter + " Min"
-        );
-        setSuccessMsg("");
-      } else {
-        setSuccessMsg("");
-        setErrorMsg("Server not Responding. Try again later");
+    if (!err) {
+      if (fieldVlue.inqType == "") {
+        setFormErr({ ...formErr, inqTypeErr: true });
       }
-    } catch (error) {
-      console.error("Form submission error:", error);
+      if (fieldVlue.location == "") {
+        setFormErr({ ...formErr, locErr: true });
+      } else {
+        setIsSend(true);
+        const response = await fetch("/api/Forms/volunteerContact", {
+          method: "POST",
+          headers: {
+            Accept: "application/json,text/plain,*/*",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(fieldVlue),
+        });
+        const result = await response.json();
+        if (result.success) {
+          setIsSend(false);
+          window.location.replace("/thank-you");
+        } else {
+          setIsSend(false);
+          alert("Network Error");
+        }
+      }
+    } else {
       setIsSend(false);
-      setSuccessMsg("");
-      alert("Network Error: Please try again later.");
-      return;
+      alert("Form can'nt be submitted. Try again later");
     }
-    // ol======
-
   };
 
   return (
@@ -328,16 +252,6 @@ const Vcontact = (props) => {
         </div>
         <div className="order-1 md:order-2 contact-form-box w-full mt-6 md:mt-8 xl:mt-12">
           <div className="contact-form-bg bg-[#F4E6C3] px-4 py-8 md:py-10 md:px-8 lg:p-12 md:rounded">
-            {errorMsg.length > 0 && successMsg.length < 1 && (
-              <p className="form-error p-3 mb-4 bg-amber-50 text-red-700 text-center text-sm">
-                {errorMsg}
-              </p>
-            )}
-            {errorMsg.length < 1 && successMsg.length > 0 && (
-              <p className="form-error p-3 mb-4 bg-amber-50 text-red-700 text-center text-sm">
-                {successMsg}
-              </p>
-            )}
             {/*==========================================================contact form to book event======================= */}
             <form onSubmit={(event) => submitForm(event)}>
               {/*======================================contact form row fname+ lname====================== */}
@@ -369,12 +283,6 @@ const Vcontact = (props) => {
                     className=" w-full event-input  border-0 md:py-3 px-4 bg-white"
                     placeholder="Your last name"
                     onChange={(e) => checkLName(e)}
-                  ></input>
-                  <input
-                    type="text"
-                    name="botCheck"
-                    onChange={(e) => checkBoot(e)}
-                    className="hidden"
                   ></input>
                   <p className="text-sm text-red-600">
                     {formErr.lNameErr ? "Only letter and space alowed" : ""}
@@ -484,16 +392,7 @@ const Vcontact = (props) => {
                   ></textarea>
                 </div>
               </div>
-              {/**================ captcha element */}
-              <ReCAPTCHA
-                ref={recaptchaRef}
-                sitekey="6LepEu0qAAAAAFSM_8lLN8LDgmT2qguQGQwV7cPZ" // Replace with your site key
-                size="invisible"
-              //onChange={setCaptchaToken}
-              />
-              {/*======================================contact form row message 
-              
-              event====================== */}
+              {/*======================================contact form row message event====================== */}
               <div className="form-row flex justify-center mt-4 md:mt-6 lg:mt-6 ">
                 <button
                   type="submit"

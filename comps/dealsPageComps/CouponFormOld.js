@@ -1,11 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { BsFillCheckCircleFill, BsCheck } from "react-icons/bs";
 import ReCAPTCHA from "react-google-recaptcha";
-const CouponForm = (props) => {
-  const recaptchaRef = useRef();
-  const [reCaptchaToken, setReCaptchaToken] = useState(null);
-  const [errorMsg, setErrorMsg] = useState("");
-  const [successMsg, setSuccessMsg] = useState("");
+const CouponFormOld = (props) => {
   const [showCoupon, setShowcoupon] = useState(false);
   const [err, setErr] = useState(false);
   const [emptyErr, setEmptyErr] = useState(true);
@@ -19,7 +15,6 @@ const CouponForm = (props) => {
   const [fieldVlue, setFieldValue] = useState({
     name: "",
     email: "",
-    botMsg: "",
   });
 
   useEffect(() => {
@@ -82,94 +77,39 @@ const CouponForm = (props) => {
       e.target.classList.add("focus-red");
     }
   };
-  const checkBoot = (e) => {
-    const botData = htmlescape(e.target.value.trim());
-
-    setFieldValue({ ...fieldVlue, botMsg: botData });
-  };
-  const checkEmpty = () => {
-    if (
-      fieldVlue.name.length < 3 ||
-      typeof fieldVlue.name !== "string" ||
-      fieldVlue.email.length < 6 ||
-      typeof fieldVlue.email !== "string" ||
-      fieldVlue.botMsg.length > 0 ||
-      typeof fieldVlue.botMsg !== "string"
-    ) {
-      return true;
-    }
-
-    return false;
-  };
   const showcouponnow = async (e) => {
     e.preventDefault();
-    setIsSend(true);
-    const isEmpty = checkEmpty();
-    if (err || isEmpty) {
-      setIsSend(false);
-      setErrorMsg("Empty form can't be submitted. Fill required field.")
+    if (!err) {
+      if (fieldVlue.name != "" && fieldVlue.email != "") {
+        //console.log(e)
+        setIsSend(true);
+        const response = await fetch("/api/Forms/couponForm", {
+          method: "POST",
+          headers: {
+            Accept: "application/json,text/plain,*/*",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(fieldVlue),
+        });
+        const result = await response.json();
 
-      // console.log("Empty Err ...");
-      return;
-    }
-    const grcToken = await recaptchaRef.current.executeAsync();
-    // console.log("captcha token ..." + grcToken);
-    if (!grcToken) {
-      setIsSend(false);
-      setErrorMsg("Captcha not found. try again");
-      return;
-    }
-    setReCaptchaToken(grcToken);
-    const formData = {
-      name: fieldVlue.name,
-      email: fieldVlue.email,
-      botMsg: fieldVlue.botMsg,
-      captchaToken: grcToken,
-    };
-    try {
-      const response = await fetch("/api/Forms/couponSubmit", {
-        method: "POST",
-        headers: {
-          Accept: "application/json,text/plain,*/*",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-      const result = await response.json();
-      setIsSend(false);
-      // console.log("Success:" + result.data);
-      if (response.status == 200) {
-        setErrorMsg("");
-        setSuccessMsg("Your message has submitted successfully. Thank you.");
-        setShowcoupon(true);
-        e.target.reset();
-        // window.location.replace("/thank-you");
-        //window.location.href = "//thank-you";
-        // console.log("Form submit success " + result.data);
-      } else if (response.status == 403) {
-        setSuccessMsg("");
-        setErrorMsg(result.data.error);
-      } else if (response.status == 405) {
-        setErrorMsg(result.data.error);
-        setSuccessMsg("");
-      } else if (response.status == 429) {
-        setErrorMsg(
-          result.data.error + " Try after" + result.data.resetAfter + " Min"
-        );
-        setSuccessMsg("");
-      } else {
-        setSuccessMsg("");
-        setErrorMsg("Server not Responding. Try again later");
+        if (result.success) {
+          setIsSend(false);
+          setShowcoupon(true);
+          e.target.reset();
+          //window.location.replace( "/thank-you-franchise");
+        } else {
+          setIsSend(false);
+          setShowcoupon(false);
+          e.target.reset();
+        }
+
+        setFieldValue({ ...fieldVlue, name: "" });
+        setFieldValue({ ...fieldVlue, email: "" });
       }
-    } catch (error) {
-      console.error("Form submission error:", error);
-      setIsSend(false);
-      setSuccessMsg("");
-      alert("Network Error: Please try again later.");
-      return;
+    } else {
+      console.log(formErr);
     }
-    //===========oldx
-
   };
   /*============= coupon form function ===============*/
   /**============copy to clipboard==================== */
@@ -312,12 +252,6 @@ const CouponForm = (props) => {
               </div>
             )}
           </div>
-          {errorMsg.length > 0 && successMsg.length < 1 && (
-            <p className="form-error px-3 py-1 mb-4 bg-amber-50 text-red-700 text-center text-sm">
-              {errorMsg}
-            </p>
-          )}
-         
           <form onSubmit={(e) => showcouponnow(e)} className="pb-8 md:pb-4">
             <div className="coupon-form-row  flex flex-col md:flex-row  space-y-3 md:space-y-0 md:space-x-4 md:items-end">
               <div className="coupon-form-col md:w-1/3">
@@ -332,13 +266,6 @@ const CouponForm = (props) => {
                   className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                   placeholder="Your Name"
                   required
-                ></input>
-                <input
-                  type="text"
-                  id={"cbot" + props.id}
-                  name={"botCheck" + props.id}
-                  onChange={(e) => checkBoot(e)}
-                  className="hidden"
                 ></input>
               </div>
               <div className="coupon-form-col md:w-1/3">
@@ -364,7 +291,6 @@ const CouponForm = (props) => {
                     <span>Success! Enjoy your discount</span>
                   </p>
                 )}
-                {/**================ captcha element */}
 
                 <button
                   type="submit"
@@ -382,12 +308,6 @@ const CouponForm = (props) => {
                 invalid Name
               </p>
             </div>
-            <ReCAPTCHA
-              ref={recaptchaRef}
-              sitekey="6LepEu0qAAAAAFSM_8lLN8LDgmT2qguQGQwV7cPZ" // Replace with your site key
-              size="invisible"
-            //onChange={setCaptchaToken}
-            />
           </form>
         </div>
       </div>

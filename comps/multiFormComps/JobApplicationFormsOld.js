@@ -7,22 +7,11 @@ import Experience from "./Experience";
 import References from "./References";
 import ReCAPTCHA from "react-google-recaptcha";
 
-const htmlescape = (htmlStr) => {
-  return htmlStr
-    .replace(/&/g, "and")
-    .replace(/</g, " ")
-    .replace(/>/g, " ")
-    .replace(/(?:\r\n|\r|\n)/g, "<br>");
-};
-
-const JobApplicationForms = (props) => {
-  const recaptchaRef = useRef();
-  const [reCaptchaToken, setReCaptchaToken] = useState(null);
+const JobApplicationFormsOld = (props) => {
   const [formStep, setFormStep] = useState(0);
   const [repErrMsg, setRepErrMsg] = useState(false);
-  const [botMsg, setBotMsg] = useState('')
-  const [formName, setFormName] = useState("Applicant Information ");
 
+  const [formName, setFormName] = useState("Applicant Information ");
   useEffect(() => {
     if (formStep == 1) {
       setFormName("Applicant Information");
@@ -49,11 +38,6 @@ const JobApplicationForms = (props) => {
   const [prevFormErr, setPrevFormErr] = useState(false);
   const [formErrFlag, setFormErrFlag] = useState(false);
   // ======================Applicant info 1 data
-  const checkBoot = (e) => {
-    const botData = htmlescape(e.target.value.trim());
-
-    setBotMsg(botData);
-  };
   const [appInfo1, setAppInfo1] = useState({
     fName: "",
     lName: "",
@@ -608,14 +592,6 @@ const JobApplicationForms = (props) => {
         !chRef.refErr2 &&
         !chRef.refErr3
       ) {
-        const grcToken = await recaptchaRef.current.executeAsync();
-        // console.log("captcha token ..." + grcToken);
-        if (!grcToken) {
-          setIsSend(false);
-          setErrorMsg("Captcha not found. try again");
-          return;
-        }
-        setReCaptchaToken(grcToken);
         const formData = {
           info1: appInfo1,
           info2: appInfo2,
@@ -623,10 +599,8 @@ const JobApplicationForms = (props) => {
           eduinfo: education,
           expinfo: jobExp,
           refinfo: references,
-          botMsg: botMsg,
-          captchaToken: grcToken,
         };
-        // console.log("waiting to create pdf");
+        console.log("waiting to create pdf");
         //  console.log(formData);
         setIsSend(true);
 
@@ -703,12 +677,6 @@ const JobApplicationForms = (props) => {
         </div>
       </div>
       <div className="job-form-body">
-        <input
-          type="text"
-          name="botCheck"
-          onChange={(e) => checkBoot(e)}
-          className="hidden"
-        ></input>
         {formStep == 0 && (
           <ApplicantInfo
             prevFormErr={prevFormErr}
@@ -780,12 +748,7 @@ const JobApplicationForms = (props) => {
             NEXT
           </button>
         )}
-        <ReCAPTCHA
-          ref={recaptchaRef}
-          sitekey="6LepEu0qAAAAAFSM_8lLN8LDgmT2qguQGQwV7cPZ" // Replace with your site key
-          size="invisible"
-        //onChange={setCaptchaToken}
-        />
+
         {formStep == 5 && isSend == false && (
           <button
             onClick={(event) => {

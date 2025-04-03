@@ -49,7 +49,7 @@ a {
 }
 
 .grecaptcha-badge {
-  visibility: visible;
+  visibility: hidden;
 }
 
 .dt-picker .react-date-picker__wrapper {
