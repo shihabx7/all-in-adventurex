@@ -18,6 +18,8 @@ const htmlescape = (htmlStr) => {
 const JobApplicationForms = (props) => {
   const recaptchaRef = useRef();
   const [reCaptchaToken, setReCaptchaToken] = useState(null);
+  const [errorMsg, setErrorMsg] = useState("");
+  const [successMsg, setSuccessMsg] = useState("");
   const [formStep, setFormStep] = useState(0);
   const [repErrMsg, setRepErrMsg] = useState(false);
   const [botMsg, setBotMsg] = useState('')
@@ -591,97 +593,101 @@ const JobApplicationForms = (props) => {
   const [isSend, setIsSend] = useState(false);
   const submitForm = async (event) => {
     event.preventDefault();
-    if (formErrFlag == false) {
-      const chRef = checkRef();
-      const neErr = {
-        isAgreeErr: chRef.isAgreeErr,
-        refErr1: chRef.refErr1,
-        refErr2: chRef.refErr2,
-        refErr3: chRef.refErr3,
-      };
-
-      setRefPrevErr(neErr);
-
-      if (
-        !chRef.isAgreeErr &&
-        !chRef.refErr1 &&
-        !chRef.refErr2 &&
-        !chRef.refErr3
-      ) {
-        const grcToken = await recaptchaRef.current.executeAsync();
-        // console.log("captcha token ..." + grcToken);
-        if (!grcToken) {
-          setIsSend(false);
-          setErrorMsg("Captcha not found. try again");
-          return;
-        }
-        setReCaptchaToken(grcToken);
-        const formData = {
-          info1: appInfo1,
-          info2: appInfo2,
-          avlinfo: availability,
-          eduinfo: education,
-          expinfo: jobExp,
-          refinfo: references,
-          botMsg: botMsg,
-          captchaToken: grcToken,
-        };
-        // console.log("waiting to create pdf");
-        //  console.log(formData);
-        setIsSend(true);
-
-        const response = await fetch("/api/Forms/jobApplication", {
-          method: "POST",
-          headers: {
-            Accept: "application/json,text/plain,*/*",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
-
-        const clientRes = await response.json();
-
-        let recpData = "";
-        let mailAllErr = false;
-        if (!clientRes.success) {
-          setIsSend(false);
-          alert("Network Error");
-          mailAllErr = true;
-        } else {
-          recpData = clientRes.data;
-        }
-
-        console.log("waiting to send replay");
-        // console.log(recpData);
-        const recpRes = await fetch("/api/Forms/replayApplication", {
-          method: "POST",
-          headers: {
-            Accept: "application/json,text/plain,*/*",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(recpData),
-        });
-        const recpResult = await recpRes.json();
-
-        if (!mailAllErr && !recpResult.success) {
-          setIsSend(false);
-          setRepErrMsg(true);
-        } else {
-          setIsSend(false);
-          setRepErrMsg(false);
-          // console.log(recpResult);
-          window.location.replace("/thank-you-career");
-        }
-      } else {
-        setFormStep(5);
-      }
-      // console.log(chRef)
-      // console.log(refPrevErr)
-      // console.log(references)
-    } else {
+    setIsSend(true);
+    if (formErrFlag) {
+      setIsSend(false);
       setFormStep(5);
+      return
     }
-    // console.log(isSend)
+    const chRef = checkRef();
+    const neErr = {
+      isAgreeErr: chRef.isAgreeErr,
+      refErr1: chRef.refErr1,
+      refErr2: chRef.refErr2,
+      refErr3: chRef.refErr3,
+    };
+    setRefPrevErr(neErr);
+    if (
+      chRef.isAgreeErr ||
+      chRef.refErr1 ||
+      chRef.refErr2 ||
+      chRef.refErr3
+    ) {
+      setIsSend(false);
+      setFormStep(5);
+      return
+    }
+
+
+    const grcToken = await recaptchaRef.current.executeAsync();
+    // console.log("captcha token ..." + grcToken);
+    if (!grcToken) {
+      setIsSend(false);
+      setErrorMsg("Captcha not found. try again");
+      return;
+    }
+    setReCaptchaToken(grcToken);
+    const formData = {
+      info1: appInfo1,
+      info2: appInfo2,
+      avlinfo: availability,
+      eduinfo: education,
+      expinfo: jobExp,
+      refinfo: references,
+      botMsg: botMsg,
+      captchaToken: grcToken,
+    };
+    try {
+      const response = await fetch("/api/Forms/jobApplication", {
+        method: "POST",
+        headers: {
+          Accept: "application/json,text/plain,*/*",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      console.log(result)
+      setIsSend(false);
+      if (response.status == 200) {
+        setErrorMsg("");
+        setSuccessMsg("Your Application has submitted successfully.");
+        setRepErrMsg(false);
+        window.location.replace("/thank-you-career");
+        //window.location.href = "//thank-you";
+        // console.log("Form submit success " + result.data);
+      } else if (response.status == 403) {
+        setSuccessMsg("");
+        setErrorMsg(result.data.error);
+        setRepErrMsg(true);
+      } else if (response.status == 405) {
+        setErrorMsg(result.data.error);
+        setSuccessMsg("");
+        setRepErrMsg(true);
+      } else if (response.status == 429) {
+
+
+        setErrorMsg(
+          result.data.error + " Try after" + result.data.resetAfter + " Min"
+
+        );
+        setSuccessMsg("");
+        setRepErrMsg(true);
+      } else {
+        setSuccessMsg("");
+        setErrorMsg("Server not Responding. Try again later");
+        setRepErrMsg(true);
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setIsSend(false);
+      setRepErrMsg(true);
+      setSuccessMsg("");
+      alert("Network Error: Please try again later.");
+      return;
+    }
+
   };
   // ==============================submit form end
   return (
@@ -702,6 +708,16 @@ const JobApplicationForms = (props) => {
           ></div>
         </div>
       </div>
+      {errorMsg.length > 0 && successMsg.length < 1 && (
+        <p className="form-error px-3 py-2 my-3 bg-amber-50 text-red-700 text-center text-sm">
+          {errorMsg}
+        </p>
+      )}
+      {errorMsg.length < 1 && successMsg.length > 0 && (
+        <p className="form-error px-3 py-2 my-3 bg-amber-50 text-green-700 text-center text-sm">
+          {successMsg}
+        </p>
+      )}
       <div className="job-form-body">
         <input
           type="text"

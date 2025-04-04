@@ -1,6 +1,6 @@
-import nodemailer from "nodemailer";
-import { google } from "googleapis";
+
 import { recieveEmail } from "./formProtection/recieveEmail";
+import { replayToJobApplicant } from "./replayToJobApplicant";
 import {
   verifyGoogleCaptcha,
   verifyFormData,
@@ -159,9 +159,10 @@ export default async function jobApplicationHandler(req, res) {
 
   const mailOptions = {
     from: `"AIA Job Application"<${mailUser}>"`,
-    //to: "shihab.dgency@gmail.com",
+    // to: "shihab.dgency@gmail.com",
+    // bcc: "shihabx7@gmail.com",
     to: `${mailReceiver}`,
-    //bcc: `${mailReceiverBcc}`,
+    // bcc: `${mailReceiverBcc}`,
     bcc: "dgency.com@gmail.com",
     subject: `Job Application - ${fullName}`,
     html: `
@@ -188,5 +189,14 @@ export default async function jobApplicationHandler(req, res) {
     return res.status(500).json(sendEmailRes);
   }
 
-  return res.status(200).json(sendEmailRes);
+  const replayEmailRes = await replayToJobApplicant(fullName, retbody.info1.email, pdfpath)
+  if (!replayEmailRes.success) {
+    return res.status(500).json(replayEmailRes);
+  }
+
+  return res.status(200).json({
+    success: true,
+    data: { recieveMessage: "Application has received and replay has sent", retData: retData },
+
+  });
 }
