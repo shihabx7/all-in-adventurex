@@ -7,7 +7,7 @@ const GiftRedeem = (props) => {
   return (
     <div
       id="gift-redem"
-      className="gift-redeem relative pt-12 pb-16 md:pt-12 md:pb-24  lg:pb-28  lg:pt-16 overflow-hidden md:mt-[0px] bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] bg-repeat"
+      className="gift-redeem relative py-16  py:pt-20 lg:pt-20 lg:pb-28 xl:pb-28 xl:pt-20 3xl:pt-24 3xl:pb-28 overflow-hidden md:mt-[0px] bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] bg-repeat"
     >
       {/*======================= boder img============== */}
       {  /*<SectionBorderTop />*/}
