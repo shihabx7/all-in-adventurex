@@ -7,15 +7,12 @@ import RootFooter from "../comps/RootFooter";
 import PageBread from "../comps/util/PageBread";
 import SinglePageSeo from "../comps/util/SinglePageSeo";
 import GiftHeroBaner from "../comps/giftCardPageComps/GiftHeroBaner";
-import GiftSpotOn from "../comps/giftCardPageComps/GiftSpotOn";
-import GiftVenGram from "../comps/giftCardPageComps/GiftVenGram";
 import HowGiftCardsWork from "../comps/giftCardPageComps/HowGiftCardsWork";
 import GiftRedeem from "../comps/giftCardPageComps/GiftRedeem";
-import GiftPerfectFor from "../comps/giftCardPageComps/GiftPerfectFor";
-import GiftGallery from "../comps/giftCardPageComps/GiftGallery";
-import GiftEffect from "../comps/giftCardPageComps/GiftEffect";
+import GiftTestimonialSection from "../comps/giftCardPageComps/GiftTestimonialSection";
+import { GiftTestimonialSectionData } from "../lib/tempData/tempGiftCardPageData";
 import GiftFaq from "../comps/giftCardPageComps/GiftFaq";
-import GiftMenu from "../comps/headerComps/GiftMenu";
+
 import GiftCardBookingMenu from "../comps/giftCardPageComps/GiftCardBookingMenu";
 import { useState } from "react";
 import Script from "next/script";
@@ -72,7 +69,7 @@ const GiftCard = (props) => {
           setShowGiftBookingList={setShowGiftBookingList}
         /> */}
         <HowGiftCardsWork setShowGiftBookingList={setShowGiftBookingList} />
-        <GiftEffect setShowGiftBookingList={setShowGiftBookingList} />
+        <GiftTestimonialSection setShowGiftBookingList={setShowGiftBookingList} testimonialSectionData={GiftTestimonialSectionData} />
 
         <GiftFaq
           giftFaqs={props.giftFaqs}

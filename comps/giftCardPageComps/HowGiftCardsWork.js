@@ -4,11 +4,13 @@ import GiftGnBtn from "./GiftGnBtn";
 const HowGiftCardsWork = (props) => {
   return (
     <div className="hwgift-works bg-black">
-      <div className="max-w-[700px] lg:max-w-7xl mx-auto px-4 rm:px-5 py-16 md:py-24 lg:py-28">
+      <div className="max-w-[700px] lg:max-w-7xl mx-auto px-4 rm:px-5 pt-16 md:pt-24 lg:pt-28">
         <div className="hwgift-container">
           {/*==============Section Title============= */}
           <div className="sec-title gs-title max-w-[768px] mx-auto">
-            <SectionTitleCenter textColor={"#E0BF62"} title="HOW OUR GIFT CARDS WORK" />
+            <div className="">
+              <SectionTitleCenter textColor={"#E0BF62"} title="HOW OUR GIFT CARDS WORK" />
+            </div>
             <p className="text-lg text-white mt-1 lg:mt-2 text-center">
               Get your All In Adventures Gift Cards in 3 simple steps
             </p>
@@ -22,17 +24,17 @@ const HowGiftCardsWork = (props) => {
             <div className="hwgift-content-box w-full lg:max-w-[52%] mt-6 md:mt-8 lg:mt-0">
               <div className="hwgift-item my-6">
                 <h3 className="text-[#E0BF62] font-medium text-[24px] md:text-[28px]">
-                  Choose Your Gift Card
+                  Choose Your Gift Card Amount
                 </h3>
                 <p className="text-white md:text-lg mt-1 md:mt-2">
-                  Set the mood by choosing from the 2 color themes, Black or Golden. Get to tailor your gift according to your desired monetary value.
+                  Pick from $25, $50, $100, or set a custom amount—there's no limit to your gifting!
                 </p>
               </div>
               <div className="hwgift-item my-6">
                 <h3 className="text-[#E0BF62] font-medium text-[24px] md:text-[28px]">
-                  Add Your Personalized Message                </h3>
+                  Personalize Your Gift </h3>
                 <p className="text-white md:text-lg mt-1 md:mt-2">
-                  Insert a custom personalized message and let your gift recipient know just how thoughtful and caring you are.
+                  Add a heartfelt message to make your gift extra special for the recipient.
                 </p>
               </div>
               <div className="hwgift-item my-6">
@@ -40,7 +42,7 @@ const HowGiftCardsWork = (props) => {
                   Instant Digital Delivery
                 </h3>
                 <p className="text-white md:text-lg mt-1 md:mt-2">
-                  Input recipient name and email to have it delivered instantly to the inbox without any hassle. Zip, zap, zoom! Simple, speedy, and oh-so-fun!
+                  Enter the recipient's email, and your gift card will be delivered instantly—quick, easy, and hassle-free!
                 </p>
               </div>
               <div className="hwgft-btn hwgift-item mt-12">
@@ -61,14 +63,17 @@ const HowGiftCardsWork = (props) => {
         {/*==============Section bottom content ============= */}
         <div className="whwgift-bottom mt-8 md:mt-12">
           <p className="text-[#ADADAD] md:text-lg italic">
-            <span className="text-gold">Easy to Redeem :</span> Gift card holders can redeem the card online at allinadventures.com or directly in-store where the Gift Card was purchased. Contact us directly at your local All In Adventures store or call our customer service team at {" "}
+            <span className="text-gold">Easy to Redeem :</span> Escape Room Gift cards can be redeemed online at <a
+              className="text-red-600 hover:text-red-700"
+              href="/"
+            >allinadventures.com</a> or in-store. Need help? Call {" "}
             <a
               className="text-red-600 hover:text-red-700"
-              href="tel:844-502-5546"
+              href="tel:+1 844-502-5546"
             >
-              844-502-5546
+              +1 844-502-5546
             </a>{" "}
-            to redeem it over the phone.
+            for assistance.
           </p>
         </div>
         {/*==============Section bottom content end============= */}

@@ -1,7 +1,8 @@
 import React from "react";
 import GiftHeroBtn from "./GiftHeroBtn";
 import Script from "next/script";
-import GiftSpotOn from "./GiftSpotOn";
+
+import BanerBox from "./BanerBox";
 const GiftHeroBaner = (props) => {
   return (
     <>
@@ -119,32 +120,33 @@ const GiftHeroBaner = (props) => {
             <div className="gh-content flex flex-col lg:flex-row justify-between items-center">
               {/* =======card content text========  */}
 
-              <div className="w-full order-2 lg:order-1 md:ml-8 lg:ml-0 lg:max-w-[46%] xl:max-w-[42%] gift-title">
-                <div className="max-w-[460px] lg:max-w-[500px]">
-                  <p className="text-[#4A2F03]  md:text-[22px] xl:text-[22px] 2xl:text-[24px] 3xl:text-[28px]">
-                    ALL IN ADVENTURES GIFT CARDS
-                  </p>
-                  <h1 className="text-[36px] md:text-[42px] lg:text-[46px] xl:text-[54px] 3xl:text-[60px] leading-[1.2] text-[#CA9342] font-os font-bold">
-                    <span>'TIS THE SEASON OF GIVING</span>
-                    <span className="ml-[12px]">
-                      <img
-                        className="w-[32px] h-[36px] md:w-[44px] md:h-[44px] lg:w-[52px] lg:h-[52px] inline-block align-middle mt-[-12px]"
-                        src="/assets/gift-images/hero/gift-card-icon-for-title.svg"
-                        alt=" All in Adventures gift card icon showcasing a vibrant design, symbolizing adventure and excitement in gift-giving."
-                      ></img>
-                    </span>
-                  </h1>
+              <div className="w-full order-2 lg:order-1 md:ml-8 lg:ml-0 lg:max-w-[52%] xl:max-w-[46%] gift-title">
+                <div className="gift-baner-content">
+                  <div className="max-w-[460px] lg:max-w-[500px]">
+                    <h1 className="text-[#4A2F03] text-[14px] rm:text-[16px] md:text-[24px] 2xl:text-[28px] uppercase font-semibold">
+                      ESCAPE ROOM GIFT CARDS
+                    </h1>
+                    <h2 className="text-[36px] md:text-[42px] lg:text-[46px] xl:text-[54px] 3xl:text-[60px] leading-[1.2] text-[#CA9342] font-os font-bold">
+                      <span>GIVE THE GIFT OF ADVENTURE</span>
+                      <span className="ml-[12px]">
+                        <img
+                          className="w-[32px] h-[36px] md:w-[44px] md:h-[44px] lg:w-[52px] lg:h-[52px] inline-block align-middle mt-[-12px]"
+                          src="/assets/gift-images/hero/gift-card-icon-for-title.svg"
+                          alt=" All in Adventures gift card icon showcasing a vibrant design, symbolizing adventure and excitement in gift-giving."
+                        ></img>
+                      </span>
+                    </h2>
+                  </div>
                   {/* =======card content List========  */}
                   <div className="gift-hero-list-box mt-4 lg:mt-6">
                     <div className="gh-item flex justify-start space-x-2 items-start md:items-center my-3">
                       <img
                         className="w-[26px] xl:w-[30px]"
                         src="/assets/gift-images/hero/gift-icon-for-hero-point-text.svg"
-                        alt=" All in Adventures gift card icon showcasing a vibrant design, symbolizing adventure and excitement in gift-giving."
-                      ></img>
+                        alt=" All in Adventures gift card icon showcasing a vibrant design, symbolizing adventure and excitement in gift-giving."></img>
 
                       <p className="text-[#2E2E2E] xl:text-[18px]">
-                        Unforgettable gifts that create memorable experiences
+                        Unforgettable experiences that last a lifetime
                       </p>
                     </div>
                     <div className="gh-item flex justify-start space-x-2 items-start md:items-center my-3">
@@ -153,9 +155,7 @@ const GiftHeroBaner = (props) => {
                         src="/assets/gift-images/hero/gift-icon-for-hero-point-text.svg"
                         alt=" All in Adventures gift card icon showcasing a vibrant design, symbolizing adventure and excitement in gift-giving."
                       ></img>
-                      <p className="text-[#2E2E2E]  xl:text-[18px]">
-                        Unlock collective joy for both families and co-workers
-                      </p>
+                      <p className="text-[#2E2E2E]  xl:text-[18px]">Exciting adventures for family, friends, couples, and co-workers</p>
                     </div>
                     <div className="gh-item flex justify-start space-x-2 items-start md:items-center my-3">
                       <img
@@ -164,8 +164,7 @@ const GiftHeroBaner = (props) => {
                         alt=" All in Adventures gift card icon showcasing a vibrant design, symbolizing adventure and excitement in gift-giving."
                       ></img>
                       <p className="text-[#2E2E2E]  xl:text-[18px]">
-                        All In Adventures Gift Cards <b>NEVER</b> expire
-                      </p>
+                        Perfect for all ages (6+) and skill levels—great for any occasion</p>
                     </div>
                     <div className="gh-item flex justify-start space-x-2 items-start md:items-center my-3">
                       <img
@@ -174,7 +173,7 @@ const GiftHeroBaner = (props) => {
                         alt=" All in Adventures gift card icon showcasing a vibrant design, symbolizing adventure and excitement in gift-giving."
                       ></img>
                       <p className="text-[#2E2E2E]  xl:text-[18px]">
-                        Perfect for all ages (6+) and skill levels
+                        Redeem anytime, anywhere—it NEVER expires
                       </p>
                     </div>
                   </div>
@@ -195,7 +194,7 @@ const GiftHeroBaner = (props) => {
                 </div>
               </div>
               {/* =======card content images========  */}
-              <div className="w-full order-1 lg:order-2 lg:max-w-[54%] xl:max-w-[58%] gift-img">
+              <div className="w-full order-1 lg:order-2 lg:max-w-[48%] xl:max-w-[54%] gift-img">
                 <img
                   alt="A dynamic gift card illustration that embodies adventure, suitable for those seeking unique outdoor experiences."
                   src="/assets/gift-images/hero/All-In-Adventures-Gift-Card-hero.png"
@@ -208,7 +207,7 @@ const GiftHeroBaner = (props) => {
         {/* =======card content container end========  */}
 
       </div>
-      <GiftSpotOn />
+      <BanerBox />
     </>
   );
 };

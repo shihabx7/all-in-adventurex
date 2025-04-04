@@ -15,11 +15,9 @@ const GiftRedeem = (props) => {
       {/*======================= boder img end============== */}
       <div className="giftrdm-container relative z-30">
         {/** =================section title============= */}
-        <div className="section-title mb-4 md:mb-0 lg:mb-2 max-w-[880px] mx-auto">
-          <div className="max-w-[300px] md:max-w-none mx-auto">  <SectionTitleCenter
-            title="REDEEM TO UNLOCK THESE ESCAPE ROOMS"
-
-          /></div>
+        <div className="section-title mb-4 md:mb-0 lg:mb-2 max-w-[840px] mx-auto">
+          <div className=" max-w-[370px] md:max-w-[720px] mx-auto">  <SectionTitleCenter
+            title="REDEEM ESCAPE ROOM GIFT CARDS TO UNLOCK THESE GAMES" /></div>
 
           <p className=" text-[#2E2E2E]  mx-auto text-center md:text-lg px-4  mt-1 lg:mt-2 max-w-[700px] mx-auto">
             Your gift recipients are in for a treat to experience one of these escape room games at the chosen All In Adventures store — what mystery will they unravel?

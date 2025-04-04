@@ -2,7 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 
-const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
+const GiftTestimonialCarousel = ({ testimonialList }) => {
   const responsive = {
     desktop2xl: {
       breakpoint: { max: 4000, min: 2700 },
@@ -54,7 +54,7 @@ const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
     },
   };
   return (
-    <div className="full-carousel planning-event-carousel inp-car ev-car mer-car ">
+    <div className="full-carousel planning-event-carousel inp-car ev-car mer-car gft-car ">
       <Carousel
         swipeable={true}
         draggable={true}
@@ -120,7 +120,7 @@ const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
                   <div className="merc-testi merc-col  grow ">
                     <div className="mrec-testi-des  h-full flex flex-col justify-between">
                       <div className="merct-top py-5">
-                        <h3 className="font-bold text-[18px] rm:text-[20px] md:text-[22px] xl:text-[23px] leading-[1.3] text-[#CA9342] text-center">
+                        <h3 className="font-bold text-[18px] rm:text-[20px] md:text-[22px] xl:text-[24px] leading-[1.3] text-[#CA9342] text-center">
                           {item.title}
                         </h3>
                         <div
@@ -154,4 +154,4 @@ const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
   );
 };
 
-export default MobileEscapeGameTestimonialCar;
+export default GiftTestimonialCarousel;

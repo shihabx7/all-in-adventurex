@@ -18,9 +18,7 @@ const GiftFaq = (props) => {
         <div className="section-title mb-8 md:mb-12 max-w-[700px] mx-auto">
           <SectionTitleCenter title="FREQUENTLY ASKED QUESTIONS" />
           <p className="text-[#2E2E2E] max-w-[840px] mx-auto text-center lg:text-lg mt-1 md:mt-2 lg:mt-2">
-            Explore these FAQs to uncover answers to popular questions about All
-            In Adventures Gift Cards. If your specific query isn't covered,
-            reach us anytime on phone or email.
+          Everything you need to know about All In Adventures Gift Cards!
           </p>
         </div>
         <div className="gift-faq-box max-w-[1000px] mx-auto">
