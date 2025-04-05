@@ -2,6 +2,7 @@ import Link from "next/link";
 import GiftMenu from "../headerComps/GiftMenu";
 import GiftCardBookingMenu from "./GiftCardBookingMenu";
 import TitleSeparator from "../util/TitleSeparator";
+import SectionTitleCenter from "./SectionTitleCenter";
 import { useState } from "react";
 
 const GiftCardHomePageSection = (props) => {
@@ -24,88 +25,22 @@ const GiftCardHomePageSection = (props) => {
 
   return (
     <>
-      <div className="buy-gift bg-black gift-pattern py-20 md:py-28  relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 z-30">
-          <TitleSeparator title="All IN ADVENTURES GIFT CARDS" />
-          <div className="max-w-[840px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-12 lg:mb-16">
-            <p className="text-gray-200 md:px-8">
-              Have you ever considered giving the “gift of memories”? Well, our
-              gift cards may be just what you're searching for! All In
-              Adventures gift cards are perfect for your adventure loving
-              friends/family and colleagues. You absolutely can't go wrong with
-              this gift idea - it's something everyone will love and favor!
-            </p>
-          </div>
-          <div className="gift-row flex flex-col md:flex-row justify-center md:space-x-4 lg:space-x-8 items-center">
-            <div className="gift-poster md:w-1/2">
-              <img src="/assets/allinadventures-gift-cards-section.png"></img>
-            </div>
-            <div className="gift-info md:w-1/2">
-              <h3 className="golden-text font-semibold mt-8 md:mt-0 text-xl lg:text-2xl mb-4">
-                HOW IT WORKS
-              </h3>
-              <p className="text-gray-200 lg:text-lg mb:4">
-                Click “Buy Gift Card” to be routed to your local All In
-                Adventures location. Once purchased, you will receive an email
-                confirmation which includes the gift card number which can be
-                redeemed at any time.
-              </p>
-              <p className="mt-3 mb-3 md:mt-4 md:mb-4 text-lg md:text-xl font-medium text-[#eeeeee]">
-                Below are a few things to keep in mind:
-              </p>
-              <div className="flex  lg:text-lg text-gray-300 mt-4">
-                <span className="block mt-1 w-6 md:w-8">
-                  <img src="/assets/svg/star-bullet.svg"></img>
-                </span>
-                <span className="block w-[90%]">Gift cards never expire.</span>
+      <div className="buy-gift bg-[#000000] gift-pattern py-20 md:py-24 lg:py-28  relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 lg:px-6 z-30">
+
+          <div className="gift-row xm:max-w-[490px] md:max-w-[700px] mx-auto lg:max-w-none flex flex-col lg:flex-row justify-between lg:space-x-7 xl:space-x-12 2xl:space-x-10 items-center pt-6 pb-8 px-4 lm:px-5 zm:p-8 md:p-12 lg:p-10 xl:p-12 2xl:p-14 bg-[#181818] drop-shadow-lg rounded-[14px]">
+            <div className="gift-info order-2 lg:order-1 lg:w-1/2">
+              <div className="text-content pt-4 md:pt-8 lg:pt-0">
+                <h2 className="text-[#e0bf62] text-2xl rm:text-[28px]  max-w-[280px] md:max-w-[460px] md:text-[40px] lg:text-[42px] xl:text-[44px] 2xl:text-[48px]  leading-[1.2] text-[#CA9342] font-os font-bold mb-3 zm:mb-4 2xl:max-w-[400px]">ALL IN ADVENTURES GIFT CARDS</h2>
+                <p className="text-[#d9d9d9] 2xl:text-lg mb-3 xl:mb-4">Looking for the perfect gift? Surprise your loved ones with an All In Adventures Gift Card—a ticket to thrilling escape room experiences! Whether it's for a birthday, holiday, or just because, this gift delivers excitement, teamwork, and unforgettable memories.
+                </p>
+                <p className="text-[#d9d9d9] 2xl:text-lg mb-3 xl:mb-4"> No expiration date, no stress—just pure adventure! Instantly delivered via email, it's the ultimate last-minute gift that guarantees fun for all ages (6+).</p>
+
+                <p className="text-[#d9d9d9] 2xl:text-lg  mb-3 xl:mb-4">Give more than just a present—give a lifetime of memories!</p>
+
+
               </div>
-              <div className="flex  lg:text-lg text-gray-300 mt-3">
-                <span className="block mt-1 w-6 md:w-8">
-                  <img src="/assets/svg/star-bullet.svg"></img>
-                </span>
-                <span className="block w-[90%]">
-                  Anyone can use/redeem the card to book any experience on our
-                  website, in-store, or over the phone.
-                </span>
-              </div>
-              <div className="flex  lg:text-lg text-gray-300 mt-3">
-                <span className="block mt-1 w-6 md:w-8">
-                  <img src="/assets/svg/star-bullet.svg"></img>
-                </span>
-                <span className="block w-[90%]">
-                  Customers have an option to pay the remaining balance during
-                  checkout - if the selected experience costs higher than the
-                  amount of the gift card.
-                </span>
-              </div>
-              <div className="flex  lg:text-lg text-gray-300 mt-3">
-                <span className="block mt-1 w-6 md:w-8">
-                  <img src="/assets/svg/star-bullet.svg"></img>
-                </span>
-                <span className="block w-[90%]">
-                  Players of all ages are welcome; however, a paying adult (18
-                  years or older) must participate with anyone below the age of
-                  13. Any participants under the age of 18 will need an adult to
-                  sign their waiver.
-                </span>
-              </div>
-              <div className="flex  lg:text-lg text-gray-300 mt-3">
-                <span className="block mt-1 w-6 md:w-8">
-                  <img src="/assets/svg/star-bullet.svg"></img>
-                </span>
-                <span className="block w-[90%]">
-                  All our locations are wheelchair accessible.
-                </span>
-              </div>
-              <div className="flex  lg:text-lg text-gray-300 mt-3">
-                <span className="block mt-1 w-6 md:w-8">
-                  <img src="/assets/svg/star-bullet.svg"></img>
-                </span>
-                <span className="block w-[90%]">
-                  Game experiences vary by location.
-                </span>
-              </div>
-              <div className="gift-btn-box mt-8">
+              <div className="gift-btn-box mt-7 zm:mt-8 xl:mt-10 flex flex-col zm:flex-row space-y-4 zm:space-y-0 zm:space-x-2 md:space-x-0 lg:space-x-3 xl:space-x-4">
                 {props.locationSlug ? (
                   <>
                     {props.isPublished ? (
@@ -113,14 +48,14 @@ const GiftCardHomePageSection = (props) => {
                         {props.giftBooking.isActive ? (
                           <button
                             onClick={() => giftBooking(props.giftBooking)}
-                            className="bg-red-600  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full font-medium"
+                            className="bg-red-600  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-10 md:px-12 lg:px-10 xl:px-12 block  text-center text-gray-100 rounded-full font-medium"
                           >
                             BUY GIFT CARDS
                           </button>
                         ) : (
                           <button
                             onClick={() => showLocation()}
-                            className="bg-red-600  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full font-medium"
+                            className="bg-red-600  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-8 md:px-12 lg:px-10 xl:px-12 block  text-center text-gray-100 rounded-full font-medium"
                           >
                             COMING SOON
                           </button>
@@ -129,7 +64,7 @@ const GiftCardHomePageSection = (props) => {
                     ) : (
                       <button
                         onClick={() => showLocation()}
-                        className="bg-red-600  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full font-medium"
+                        className="bg-red-600  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-10 md:px-12 lg:px-10 xl:px-12 block w-[280px]  text-center text-gray-100 rounded-full font-medium"
                       >
                         COMING SOON
                       </button>
@@ -138,7 +73,7 @@ const GiftCardHomePageSection = (props) => {
                 ) : (
                   <button
                     onClick={() => showLocation()}
-                    className=" bg-red-600 hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full font-medium"
+                    className=" bg-red-600 hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-10 md:px-12 lg:px-10 xl:px-12 block text-center text-gray-100 rounded-full font-medium"
                   >
                     BUY GIFT CARDS
                   </button>
@@ -146,12 +81,17 @@ const GiftCardHomePageSection = (props) => {
 
                 <a
                   href="/gift-cards"
-                  className="bg-transparent mt-4  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-12 block w-[280px] md:w-[300px] lg:w-[340px] text-center text-gray-100 rounded-full font-medium"
+                  className="bg-transparent  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-10 md:px-12 lg:px-10 xl:px-12 text-center text-gray-100 rounded-full font-medium"
                 >
                   LEARN MORE
                 </a>
               </div>
             </div>
+            <div className="gift-poster order-1 lg:order-2 lg:w-1/2">
+              <div> <img className="max-w-[99%] md:max-w-[500px]  mx-auto lg:max-w-full " src="/assets/gift-images/hero/All-In-Adventures-Gift-Card-hero.png"></img> </div>
+
+            </div>
+
           </div>
         </div>
       </div>

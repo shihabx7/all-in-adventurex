@@ -23,11 +23,11 @@ const HeaderNotice = ({ noticeData }) => {
 
   return (
     showNotice && (
-      <div className="header-notice py-[4px] sm:py-[2px] bg-[#564B31]">
+      <div className="header-notice py-[4px] sm:py-[2px] bg-red-600">
         <div className="max-w-7xl mx-auto ">
           <div className="header-notice-box flex justify-between items-center fex space-x-2 md:space-x-2  px-2  md:px-4">
             <div className="header-notice-text items-center grow">
-              <div className="text-white  text-[12px] leading-[1.2] sm:text-sm text-[14px] lg:text-base  text-center font-light" dangerouslySetInnerHTML={{ __html: noticeData.text }}>
+              <div className="text-[#ffffff] text-[12px] leading-[1.2] sm:text-sm text-[14px] lg:text-base  text-center font-light" dangerouslySetInnerHTML={{ __html: noticeData.text }}>
 
               </div>
 
@@ -35,7 +35,7 @@ const HeaderNotice = ({ noticeData }) => {
             <div className="header-notice-close flex items-center">
               <button
                 onClick={() => closeNotice()}
-                className="text-gold text-2xl md:text-3xl"
+                className="text-[#dddddd] hover:text-[#ffffff] text-2xl md:text-3xl"
               >
                 <FiX />
               </button>

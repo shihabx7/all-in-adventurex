@@ -4,6 +4,8 @@ import SvglogoMain from "../headerComps/SvglogoMain";
 import HeaderLocMenu from "../headerComps/HeaderLocMenu";
 import GiftNavBtn from "./GiftNavBtn";
 import DropDownMenu from "../headerComps/DropDownMenu";
+import { navNotice } from "../../lib/tempData/tempNavNotice";
+import HeaderNotice from "../headerComps/HeaderNotice";
 //import EventBookingBtn from "../headerComps/EventBookingBtn";
 //import GameBookingBtn from "../headerComps/GameBookingBtn";
 //import HeaderNotice from "../headerComps/HeaderNotice";
@@ -12,8 +14,16 @@ import StickyGiftBar from "./StickyGiftBar";
 
 const GiftCardNav = (props) => {
   const [showSlug, setShowSlug] = useState(null);
+  const [noticeData, setNoticeData] = useState()
+
+  const setNotice = async () => {
+    const ndata = await navNotice()
+    //console.log(ndata)
+    setNoticeData(ndata)
+  }
 
   useEffect(() => {
+    setNotice()
     setShowSlug(props.slug);
   }, []);
 
@@ -59,8 +69,13 @@ const GiftCardNav = (props) => {
       {/* ============Location List Menu end*/}
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">
+
         <div id="header-container-s" className="header-container-s">
-          {/*<HeaderNotice />*/}
+          {
+            ((noticeData !== undefined && noticeData !== null) && noticeData.showNotice) && <>
+              <HeaderNotice noticeData={noticeData} />
+            </>
+          }
           <div
             className="header-container-s max-w-7xl mx-auto relative md:px-4"
             ref={ref}
