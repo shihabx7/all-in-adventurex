@@ -25,9 +25,9 @@ const HeaderNotice = ({ noticeData }) => {
     showNotice && (
       <div className="header-notice py-[4px] sm:py-[2px] bg-red-600">
         <div className="max-w-7xl mx-auto ">
-          <div className="header-notice-box flex justify-between items-center fex space-x-2 md:space-x-2  px-2  md:px-4">
+          <div className="header-notice-container flex justify-between items-center fex space-x-2 md:space-x-2  px-2  md:px-4">
             <div className="header-notice-text items-center grow">
-              <div className="text-[#ffffff] text-[12px] leading-[1.2] sm:text-sm text-[14px] lg:text-base  text-center font-light" dangerouslySetInnerHTML={{ __html: noticeData.text }}>
+              <div className="text-[#ffffff] text-[12px] rm:text-[13px] sm:text-sm lg:text-base text-center font-light leading-[1.2]" dangerouslySetInnerHTML={{ __html: noticeData.text }}>
 
               </div>
 
