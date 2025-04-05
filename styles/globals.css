@@ -208,11 +208,15 @@ a {
 
 .gift-pattern {
   background-image: linear-gradient(to right,
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0.1)),
+      rgba(0, 0, 0, 0.54),
+      rgba(0, 0, 0, 0.54)),
     url("/assets/svg/pattern/All-In-Adventures-Background-Gift-Card-Pattern.svg");
   background-repeat: repeat;
   background-size: 500px 500px;
+}
+
+.gift-row-shadow {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5)
 }
 
 .menu-pattern {
@@ -1360,6 +1364,25 @@ a {
   box-shadow: "0px 0px 16px 2px rgba(0,0,0,0.45)";
 }
 
+.testi-vid-car .react-multiple-carousel__arrow {
+
+  border: 2px solid #545454 !important;
+  background: transparent;
+  color: #545454 !important;
+
+}
+
+.testi-vid-car .react-multiple-carousel__arrow:hover {
+
+  border: 2px solid #ca9253 !important;
+
+
+}
+
+.text-vid-bg-overlay {
+  background-image: linear-gradient(rgba(3, 18, 40, .14), rgba(1, 10, 24, .99));
+}
+
 /*=============unlimited play pass============*/
 .uer-grad {
   background: linear-gradient(to right, rgb(255, 183, 31), rgb(204, 0, 63));
@@ -1431,6 +1454,17 @@ a {
 
 .uer-bg-head-shadow {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.86));
+}
+
+.masonry-3-col {
+  column-count: 3;
+  column-gap: 1.5em;
+  column-fill: balance;
+}
+
+.masonry-2-col {
+  column-count: 2;
+  column-gap: 1em;
 }
 
 @media only screen and (max-width: 2000px) {
