@@ -13,7 +13,7 @@ const bookGame = (bookingData) => {
     fallback: "simple",
     fullItems: "yes",
     flow: bookingData.flow,
-    view: { item: bookingData.item },
+    view: { item: bookingData.itemNo },
   });
 };
 const MobileBookingBtn = (props) => {
@@ -131,7 +131,7 @@ const MobileBookingBtn = (props) => {
                         onClick={() => bookGame(props.gameBooking)}
                         className="w-full bg-red-600 font-medium hover:bg-red-700 py-2 px-1 block text-center text-white"
                       >
-                        BOOK THIS GAMES
+                        BOOK THIS GAME
                       </button>
                     )}
                   </>

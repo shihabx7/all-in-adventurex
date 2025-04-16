@@ -376,6 +376,11 @@ const middletownRed = [
 // =========================================-------------syracuse-ny NY
 const syracuseRed = [
   {
+    source: "/syracuse-ny/activities/hollywood-premiere",
+    destination: "/syracuse-ny/activities/reel-of-fortune",
+    permanent: prm,
+  },
+  {
     source: "/locations/syracuse-ny/events",
     destination: "/syracuse-ny/events",
     permanent: prm,
