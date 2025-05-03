@@ -2,7 +2,6 @@ import MegFaqlist from "./MegFaqlist";
 import MobileTitleSeparatorCenter from "./MobileTitleSeparatorCenter";
 import SectionBorderBottom from "../util/SectionBorderBottom";
 import SectionBorderTop from "../util/SectionBorderTop";
-import { mobileEscapeFaqList } from "../../lib/tempData/mobileEscapeTempData";
 const MobileEscapeFaqSection = ({ faqSectionData, faqList, locationName }) => {
   return (
     <div
@@ -27,14 +26,12 @@ const MobileEscapeFaqSection = ({ faqSectionData, faqList, locationName }) => {
             <></>
           )}
         </div>
-        {faqSectionData.faqList.length > 6 ? (
+        {faqSectionData.faqList.length > 0 ? (
           <div className="mer-faq-box max-w-[1000px] mx-auto">
             <MegFaqlist faqList={faqSectionData.faqList} />
           </div>
         ) : (
-          <div className="mer-faq-box max-w-[1000px] mx-auto">
-            <MegFaqlist faqList={mobileEscapeFaqList} />
-          </div>
+          <></>
         )}
       </div>
     </div>

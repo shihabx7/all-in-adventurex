@@ -28,7 +28,7 @@ const PageBread = () => {
     <div className="breadcums  py-1 md:py-2 bg-[#fffceb]">
       <Breadcrumbs
         replaceCharacterList={[{ from: "-", to: " " }]}
-        listClassName="max-w-7xl mx-auto px-2 md:px-4 breadcum-list text-sm md:text-base lg:text-lg"
+        listClassName="max-w-7xl mx-auto px-2 md:px-4 breadcum-list text-[13px] leading-[1.3] rm:text-[14px] md:text-base lg:text-lg"
         inactiveItemClassName="inline-block text-[#6a6a6a] hover:text-red-700"
         activeItemClassName="inline-block text-[#212121]"
         rootLabel="home"

@@ -1,5 +1,6 @@
+
 import MobileTitleSeparatorLeft from "./MobileTitleSeparatorLeft";
-import { mobileEscapePageHeroInfoList } from "../../lib/tempData/mobileEscapeTempData";
+
 import { useEffect, useState } from "react";
 const MobileEscapeGameHomeSection = (props) => {
   const [deskList, setDeskList] = useState([]);
@@ -47,10 +48,12 @@ const MobileEscapeGameHomeSection = (props) => {
                     {props.mobileEscapeRoomData.iconList.map((item, index) => {
                       return (
                         <div
-                          key={index}
+                          key={item.id}
                           className="icon-row flex space-x-2 md:spaxe-x-3 my-3 2xl:my-3 w-full"
                         >
-                          <span className="mt-[5px] md:mt-[5px] w-[6px] h-[6px] md:w-[8px] md:h-[8px] rounded-full bg-[#CA9342] "></span>
+                          <span className="mt-[5px] md:mt-[5px] w-[6px] h-[6px] md:w-[8px] md:h-[8px] rounded-full bg-[#CA9342] ">
+
+                          </span>
                           <div
                             className="md:text-lg flex-1"
                             style={{ lineHeight: 1.3 }}
@@ -62,24 +65,7 @@ const MobileEscapeGameHomeSection = (props) => {
                     })}
                   </>
                 ) : (
-                  <>
-                    {mobileEscapePageHeroInfoList.map((item, index) => {
-                      return (
-                        <div
-                          key={index}
-                          className="icon-row flex space-x-2 md:spaxe-x-3 my-3 2xl:my-3 w-full"
-                        >
-                          <span className="mt-[5px] md:mt-[5px] w-[6px] h-[6px] md:w-[8px] md:h-[8px] rounded-full bg-[#CA9342] "></span>
-                          <div
-                            className="md:text-lg flex-1"
-                            style={{ lineHeight: 1.3 }}
-                          >
-                            {item.text}
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </>
+                  <></>
                 )}
               </div>
               {/* ==================button=====================*/}

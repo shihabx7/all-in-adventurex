@@ -19,12 +19,23 @@ import TestimonialSlider from "../comps/homepagecomps/TestimonialSlider";
 import UnlimitedEscapeRoomHome from "../comps/unlimitedEscapeRoom/UnlimitedEscapeRoomHome";
 import UnlimitedEscapeGameMenu from "../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
 import GiftCardBookingMenu from "../comps/giftCardPageComps/GiftCardBookingMenu";
-
+import MobileEscapeGameRootHomeSection from "../comps/mobileEscapeGames/MobileEscapeGameRootHomeSection";
+import MobileEscapeRootMenu from "../comps/mobileEscapeGames/MobileEscapeRootMenu";
 export default function Home(props) {
   const [showUerBookingList, setShowUerBookingList] = useState(false);
   const [showGiftBookingList, setShowGiftBookingList] = useState(false);
+  const [showMobileEecapeMenu, setShowMobileEecapeMenu] = useState(false);
+  const [goMobileEecapeForm, setGoMobileEecapeForm] = useState(false);
   return (
     <>
+      {showMobileEecapeMenu && (
+        <MobileEscapeRootMenu
+          locationSlugList={props.locationSlugList}
+          setShowMobileEecapeMenu={setShowMobileEecapeMenu}
+          setGoMobileEecapeForm={setGoMobileEecapeForm}
+          goMobileEecapeForm={goMobileEecapeForm}
+        />
+      )}
       {showGiftBookingList && (
         <div className="gftmenu">
           <GiftCardBookingMenu
@@ -41,6 +52,7 @@ export default function Home(props) {
           />
         </div>
       )}
+
       <SinglePageSeo meta={props.pageMeta} />
       <RootNav
         locationSlugList={props.locationSlugList}
@@ -62,6 +74,11 @@ export default function Home(props) {
             setShowUerBookingList={setShowUerBookingList}
           />*/}
         <EventSlider eventList={props.eventList} />
+        <MobileEscapeGameRootHomeSection
+          setShowMobileEecapeMenu={setShowMobileEecapeMenu}
+          setGoMobileEecapeForm={setGoMobileEecapeForm}
+          goMobileEecapeForm={goMobileEecapeForm}
+        />
         <GiftCardHomePageSection
           setShowGiftBookingList={setShowGiftBookingList}
           locationSlugList={props.locationSlugList}

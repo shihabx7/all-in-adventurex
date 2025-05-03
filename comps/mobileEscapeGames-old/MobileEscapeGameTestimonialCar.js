@@ -1,6 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+
 const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
   const responsive = {
     desktop2xl: {
@@ -105,7 +106,7 @@ const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
                         item.testimonialImage.alt
                           ? item.testimonialImage.alt
                           : "Allinadventures mobile escape room testimonial " +
-                            index
+                          index
                       }
                       src={
                         item.testimonialImage.hasImage

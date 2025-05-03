@@ -12,7 +12,7 @@ const PageBreedLoc = (props) => {
       <div className="new-brd max-w-7xl mx-auto px-2 md:px-4 flex items-center space-x-.5">
         <a
           href={"/"}
-          className="capitalize flex items-center text-sm md:text-base lg:text-lg text-[#6a6a6a] hover:text-red-700"
+          className="capitalize flex items-center text-[13px] leading-[1.2] rm:text-[14px] md:text-base lg:text-lg text-[#6a6a6a] hover:text-red-700"
         >
           Home
           <span className="bsep text-gold">
@@ -22,7 +22,7 @@ const PageBreedLoc = (props) => {
 
         <a
           href={"/" + props.locationSlug}
-          className="capitalize flex items-center text-sm md:text-base lg:text-lg text-[#6a6a6a] hover:text-red-700"
+          className="capitalize flex items-center text-[13px] leading-[1.2] rm:text-[14px] md:text-base lg:text-lg text-[#6a6a6a] hover:text-red-700"
         >
           {props.locationName}
         </a>

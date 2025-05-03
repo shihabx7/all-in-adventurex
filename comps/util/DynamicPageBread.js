@@ -12,7 +12,7 @@ const DynamicPageBread = (props) => {
       <div className="new-brd max-w-7xl mx-auto px-2 md:px-4 flex items-center space-x-.5">
         <a
           href={"/locations/" + props.locationSlug}
-          className="capitalize flex items-center text-sm md:text-base lg:text-lg text-[#6a6a6a] hover:text-red-700"
+          className="capitalize flex items-center text-[12px] leading-[1.3] rm:text-[14px] md:text-base lg:text-lg text-[#6a6a6a] hover:text-red-700"
         >
           {props.locationName}
           <span className="bsep text-gold">
@@ -24,7 +24,7 @@ const DynamicPageBread = (props) => {
           <>
             <a
               href={"/" + props.locationSlug + "/activities"}
-              className="capitalize flex items-center text-sm md:text-base lg:text-lg text-[#6a6a6a] hover:text-red-700"
+              className="capitalize flex items-center text-[12px] leading-[1.3] rm:text-[14px] md:text-base lg:text-lg text-[#6a6a6a] hover:text-red-700"
             >
               Activities
               <span className="bsep text-gold">
@@ -35,7 +35,7 @@ const DynamicPageBread = (props) => {
               href={
                 "/" + props.locationSlug + "/activities/" + props.activitySlug
               }
-              className="capitalize flex items-center text-sm md:text-base lg:text-lg text-[#111111] "
+              className="capitalize flex items-center text-[12px] leading-[1.3] rm:text-[14px] md:text-base lg:text-lg text-[#111111] "
             >
               {props.activityName}
             </a>
@@ -47,7 +47,7 @@ const DynamicPageBread = (props) => {
           <>
             <a
               href={"/" + props.locationSlug + "/events"}
-              className="capitalize flex items-center text-sm md:text-base lg:text-lg text-[#6a6a6a] hover:text-red-700"
+              className="capitalize flex items-center text-[12px] leading-[1.3] rm:text-[14px] md:text-base lg:text-lg text-[#6a6a6a] hover:text-red-700"
             >
               Events
               <span className="bsep text-gold">
@@ -56,7 +56,7 @@ const DynamicPageBread = (props) => {
             </a>
             <a
               href={"/" + props.locationslug + "/events/" + props.eventSlug}
-              className="capitalize flex items-center text-sm md:text-base lg:text-lg text-[#111111] "
+              className="capitalize flex items-center text-[12px] leading-[1.3] rm:text-[14px] md:text-base lg:text-lg text-[#111111] "
             >
               {props.eventName}
             </a>
@@ -67,7 +67,7 @@ const DynamicPageBread = (props) => {
         {props.activeSlug ? (
           <a
             href={"/" + props.locationSlug + "/" + props.activeSlug}
-            className="capitalize flex items-center text-sm md:text-base lg:text-lg text-[#111111] "
+            className="capitalize flex items-center text-[12px] leading-[1.3] rm:text-[14px] md:text-base lg:text-lg text-[#111111] "
           >
             {props.activeLabel}
           </a>

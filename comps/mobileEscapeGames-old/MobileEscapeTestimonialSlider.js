@@ -1,6 +1,6 @@
+
 import MobileTitleSeparatorCenter from "./MobileTitleSeparatorCenter";
 import MobileEscapeGameTestimonialCar from "./MobileEscapeGameTestimonialCar";
-import { mobileEscapeTestimonialList } from "../../lib/tempData/mobileEscapeTempData";
 const MobileEscapeTestimonialSlider = ({
   testimonialSectionData,
   locationName,
@@ -24,18 +24,14 @@ const MobileEscapeTestimonialSlider = ({
             <></>
           )}
         </div>
-        {testimonialSectionData.testimonialList.length > 3 ? (
+        {testimonialSectionData.testimonialList.length > 0 ? (
           <div className="megc px-3 lg:px-8 xl:px-0 relative">
             <MobileEscapeGameTestimonialCar
               testimonialList={testimonialSectionData.testimonialList}
             />
           </div>
         ) : (
-          <div className="megc px-3 lg:px-8 xl:px-0 relative">
-            <MobileEscapeGameTestimonialCar
-              testimonialList={mobileEscapeTestimonialList}
-            />
-          </div>
+          <></>
         )}
       </div>
     </div>

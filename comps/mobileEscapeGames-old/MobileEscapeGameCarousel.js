@@ -1,5 +1,7 @@
+
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+
 
 const MobileEscapeGameCarousel = ({ escapeGameList, locationName }) => {
   const responsive = {
@@ -78,9 +80,9 @@ const MobileEscapeGameCarousel = ({ escapeGameList, locationName }) => {
                   item.gameImageDesktop.hasImage
                     ? item.gameImageDesktop.alt
                     : "Allinadventures mobile escape game" +
-                      item.id +
-                      " in " +
-                      locationName
+                    item.id +
+                    " in " +
+                    locationName
                 }
                 src={
                   item.gameImageDesktop.hasImage
@@ -94,9 +96,9 @@ const MobileEscapeGameCarousel = ({ escapeGameList, locationName }) => {
                   item.gameImageMobile.hasImage
                     ? item.gameImageMobile.alt
                     : "Allinadventures mobile escape game" +
-                      item.id +
-                      " in " +
-                      locationName
+                    item.id +
+                    " in " +
+                    locationName
                 }
                 src={
                   item.gameImageMobile.hasImage
@@ -169,6 +171,7 @@ const MobileEscapeGameCarousel = ({ escapeGameList, locationName }) => {
                       >
                         Per Person
                       </p>
+
                     </div>
                   </div>
                 </div>
@@ -185,6 +188,7 @@ const MobileEscapeGameCarousel = ({ escapeGameList, locationName }) => {
                       }}
                     ></div>
                   </div>
+
                 </div>
               </div>
             </div>
