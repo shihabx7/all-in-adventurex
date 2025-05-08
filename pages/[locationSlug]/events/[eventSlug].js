@@ -63,6 +63,7 @@ const LocSingleEvent = (props) => {
                 allBooking={props.allBooking}
                 eventBooking={props.eventBooking}
                 escapeGamePartyList={props.escapeGamePartyList}
+                locationSlug={props.locationSlug}
               />
             ) : (
               <EventBookingSection

@@ -3,6 +3,7 @@ import Image from "next/image";
 import TitleSeparator from "../util/TitleSeparator";
 import Script from "next/script";
 import { useState, useEffect } from "react";
+import { eventFormBookingLinks } from "../../lib/tempData/eventFormBookingLinks";
 
 const bookAll = (bookingData) => {
   FH.open({
@@ -28,6 +29,16 @@ const bookEvent = (bookingData) => {
     fallback: "simple",
     fullItems: "yes",
     flow: bookingData.flow,
+    view: { item: bookingData.itemNo },
+  });
+};
+
+const partyFormBooking = (bookingData) => {
+  FH.open({
+    shortname: bookingData.shortName,
+    fallback: "simple",
+    fullItems: "yes",
+    flow: "no",
     view: { item: bookingData.itemNo },
   });
 };
@@ -138,23 +149,28 @@ function BookYourEventsEscapeGame(props) {
                         FOR LARGE EVENT
                       </h3>
                       <p className="text-[#232323] text-[16px] md:text-[17px] xl:text-[18px] font-thin mt-2 text-center md:text-left">
-                        If you're planning a large event with more guests and
-                        want to combine the thrill of an escape room with a fun
-                        party room, we can accommodate you! Just submit your
-                        custom request through the form below, and we'll provide
-                        a quote with bulk discounts.
+                        Planning a large event? All In Adventures can make it
+                        unforgettable! From thrilling escape rooms to fun event
+                        spaces, we offer options for corporate events, school
+                        field trips, and more. We're happy to work with any
+                        budget to create the perfect package. Submit your custom
+                        request below, and we'll provide a FREE tailored quote.
                       </p>
                     </div>
                   </div>
                   <div className="bk-btn  pb-5 md:pb-0 text-center md:text-left">
-                    <a
-                      href="#eventform"
+                    <button
+                      onClick={() => {
+                        partyFormBooking(
+                          eventFormBookingLinks[props.locationSlug]
+                        );
+                      }}
                       className="bg-red-600 hover:bg-red-700
                    text-white text-center font-medium
                     py-4  rounded-full mx-auto text-[16px] lg:text-[14px] xl:text-[16px] w-full inline-block md:max-w-[320px]"
                     >
                       SUBMIT INQUIRY
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>

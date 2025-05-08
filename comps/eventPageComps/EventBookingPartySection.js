@@ -1,6 +1,6 @@
 import React from "react";
 import BookYourEventOptionFour from "./BookYourEventOptionFour";
-import BookYourEventsEscapeGame from "./BookYourEventsEscapeGame";
+import BookYourEventsEscapeGame from "./BookYourEventsEscapeGame ";
 
 function EventBookingPartySection(props) {
   return (
@@ -35,6 +35,7 @@ function EventBookingPartySection(props) {
               allBooking={props.allBooking}
               eventBooking={props.eventBooking}
               escapeGamePartyList={props.escapeGamePartyList}
+              locationSlug={props.locationSlug}
             />
           </>
         ) : (

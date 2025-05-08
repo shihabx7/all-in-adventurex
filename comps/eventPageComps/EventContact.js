@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FiMapPin, FiChevronDown, FiClock, FiX } from "react-icons/fi";
-import TitleSeparator from "../util/TitleSeparator";
+
 import Script from "next/script";
 import EventFaqList from "./EventFaqList";
 
@@ -133,32 +133,27 @@ const EventContact = (props) => {
         </div>
         <div className="max-w-7xl mx-auto md:px-4">
           {/**==========Section Title============ */}
-          <div className="section-title  text-center max-w-[840px] mx-auto  mb-8 md:mb-12 lg:mb-16 px-4">
-            <TitleSeparator title="SUBMIT YOUR INQUIRY" />
-            <p className="text-gray-200 md:px-8 md:text-lg mt-8">
-              Need a custom quote, mega event info, or just want to chat about
-              your event? This contact form is your magic portal! Groups under
-              10? We've got you covered with options 1, 2 & 3!
-            </p>
-          </div>
+          {
+            <div className="section-title  text-center max-w-[840px] mx-auto  mb-6 md:mb-8 lg:mb-12 lg:mb-16 px-4">
+              <h2 className="dark-gold py-2 text-2xl uppercase md:text-[40px] lg:text-[44px] font-os font-bold">
+                OUR FACILITIES
+              </h2>
+              <p className="text-gray-200 md:px-8 md:text-lg 2xl:text-xl mt-1 md:mt-5 xl:mt-5">
+                All escape rooms are completely private - for your players only!
+                We provide an entire party with the opportunity to celebrate in
+                a fun and unique way. Come join us to create exciting memories
+                with your group.
+              </p>
+            </div>
+          }
           {/**==========Section Title end============ */}
           {/**======================================================content============ */}
-          <div className="conatct-section flex flex-col md:flex-row justify-between">
+          <div className="conatct-section md:max-w-[740px] mx-auto lg:max-w-none flex flex-col lg:flex-row justify-between">
             {/**======================================================content Info+FAQ============ */}
-            <div className="contact-info-box pt-16 md:py-0 px-4 order-2 md:order-1 w-full md:w-[44%] lg:w-[44%]">
-              <div className="in-sec-title mb-4 md:mb-6 lg:mb-8">
-                <h2 className="golden-text font-bold text-3xl  xl:text-4xl mb-2 xl:mb-4">
-                  OUR FACILITIES
-                </h2>
-                <p className="text-gray-200 lg:text-lg">
-                  All escape rooms are completely private - for your players
-                  only! We provide an entire party with the opportunity to
-                  celebrate in a fun and unique way. Come join us to create
-                  exciting memories with your group.
-                </p>
-              </div>
-              <div className="event-info-list-box">
-                <div className="event-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-y-[1px] border-[#D2C6AA]">
+            <div className="contact-info-box  md:py-0 px-4 md:px-0  w-full lg:max-w-[42%]">
+              <div className="event-info-list-box mt-2">
+                {/**======================================================Phone============ */}
+                <div className="event-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-6 xl:px-4 lg:text-lg border-b-[1px] border-[#D2C6AA]">
                   <span>
                     <img src="/assets/svg/event-icon-phone.svg"></img>
                   </span>
@@ -171,8 +166,9 @@ const EventContact = (props) => {
                     </a>
                   </span>
                 </div>
-                {props.locationInfo.text != null ? (
-                  <div className="event-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
+                {/**======================================================text============ */}
+                {props.locationInfo.text != null && (
+                  <div className="event-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-6 xl:px-4 lg:text-lg border-b-[1px] border-[#D2C6AA]">
                     <span>
                       <img src="/assets/svg/util/allinadventures-text-message-icon.svg"></img>
                     </span>
@@ -185,10 +181,9 @@ const EventContact = (props) => {
                       </a>
                     </span>
                   </div>
-                ) : (
-                  <></>
                 )}
-                <div className="event-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
+                {/**======================================================email============ */}
+                <div className="event-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-4 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
                   <span>
                     <img src="/assets/svg/event-icon-email.svg"></img>
                   </span>
@@ -230,8 +225,8 @@ const EventContact = (props) => {
                     </a>
                   </div>
                 )}
-
-                <div className="relative event-info-list flex text-[#F4E6C3]  items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
+                {/**======================================================hours============ */}
+                <div className="relative event-info-list flex text-[#F4E6C3]  items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-4 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
                   <span className="text-[#A78849] text-[24px]">
                     <FiClock />
                   </span>
@@ -248,8 +243,8 @@ const EventContact = (props) => {
                     </p>
                   </div>
                 </div>
-
-                <div className="event-info-list flex  items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
+                {/**======================================================wheel chair============ */}
+                <div className="event-info-list flex  items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-4 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
                   <span>
                     <img src="/assets/svg/event-icon-chair.svg"></img>
                   </span>
@@ -263,6 +258,7 @@ const EventContact = (props) => {
                   </span>
                 </div>
               </div>
+              {/**======================================================direction an payment note============ */}
               <div className="event-notice mt-4 md:mt-6">
                 <div className="flex  lg:text-lg text-[#eeeeee] mt-4 justify-between">
                   <div className="mt-[6px] w-[16px] lg:w-[16px]">
@@ -282,37 +278,15 @@ const EventContact = (props) => {
                   </div>
                 </div>
               </div>
-              {/**=============event Faq=============== */}
-              <div className="evt-faq">
-                <h2 className="golden-text font-bold text-3xl  xl:text-4xl mb-2 xl:mb-3 mt-6 lg:mt-8">
-                  FAQ
-                </h2>
-                <EventFaqList faqlist={props.eventFaq} />
-              </div>
-              {/**=============event Faq=============== */}
             </div>
-            {/**======================================================content Info+FAQ end============ */}
-            {/**=====================================Yext Form================================== */}
-            <div
-              id="eventform-form"
-              className="order-1 md:order-2 contact-form-box w-full md:w-[54%] lg:w-[54%]"
-            >
-              <div className="contact-form-bg bg-[#F4E6C3] px-4 py-8 md:p-6 lg:p-8 md:rounded w-full">
-                <div
-                  className="pipedriveWebForms"
-                  data-pd-webforms="https://webforms.pipedrive.com/f/2Z8p4ZqukDQoxgiqFVoNKFZfVoGoClX7qWK065Gmf005eEwiLpSddFegYnUHnvLJV"
-                >
-                  <Script
-                    onLoad={() => {
-                      changeStyle();
-                    }}
-                    src="https://webforms.pipedrive.com/f/loader"
-                    strategy="afterInteractive"
-                  ></Script>
-                </div>
-              </div>
+            {/**================================================================event Faq=============== */}
+            <div className="evt-faq  max-w-full mt-6 md:mt-10 lg:mt-0 px-4 md:px-0  lg:max-w-[52%]">
+              <h2 className="golden-text font-bold text-[24px] md:text-[32px]  lg:text-[36px] leading-[1] mb-1 md:mb-2 xl:mb-3">
+                FREQUENTLY ASKED Q.
+              </h2>
+              <EventFaqList faqlist={props.eventFaq} />
             </div>
-            {/**=====================================Yext Form end================================== */}
+            {/**=============event Faq=============== */}
           </div>
         </div>
       </div>
