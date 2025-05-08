@@ -150,7 +150,7 @@ const EventContact = (props) => {
           {/**======================================================content============ */}
           <div className="conatct-section md:max-w-[740px] mx-auto lg:max-w-none flex flex-col lg:flex-row justify-between">
             {/**======================================================content Info+FAQ============ */}
-            <div className="contact-info-box  md:py-0 px-4 md:px-0  w-full lg:max-w-[42%]">
+            <div className="contact-info-box  md:py-0 px-4 md:px-0  w-full lg:w-[42%]">
               <div className="event-info-list-box mt-2">
                 {/**======================================================Phone============ */}
                 <div className="event-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-6 xl:px-4 lg:text-lg border-b-[1px] border-[#D2C6AA]">
@@ -280,7 +280,7 @@ const EventContact = (props) => {
               </div>
             </div>
             {/**================================================================event Faq=============== */}
-            <div className="evt-faq  max-w-full mt-6 md:mt-10 lg:mt-0 px-4 md:px-0  lg:max-w-[52%]">
+            <div className="evt-faq  max-w-full mt-6 md:mt-10 lg:mt-0 px-4 md:px-0  lg:w-[54%]">
               <h2 className="golden-text font-bold text-[24px] md:text-[32px]  lg:text-[36px] leading-[1] mb-1 md:mb-2 xl:mb-3">
                 FREQUENTLY ASKED Q.
               </h2>
