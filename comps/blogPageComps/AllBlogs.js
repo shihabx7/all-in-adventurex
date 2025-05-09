@@ -54,11 +54,7 @@ const AllBlogs = (props) => {
       </div>
       <div className="all-bl-card-box mt-4 grid sm:grid-cols-2 gap-y-4 gap-x-0 sm:gap-4 md:gap-6 lg:gap-10">
         <NewBlogCards blogdata={props.blogdata} />
-        {blogData.length > 0 && (
-          <div>
-            <NewBlogCards blogdata={blogData} />
-          </div>
-        )}
+        {blogData.length > 0 && <NewBlogCards blogdata={blogData} />}
       </div>
 
       {isLoading && (
