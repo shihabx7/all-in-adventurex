@@ -1,5 +1,16 @@
 import { mobileEscapePageHeroInfoList } from "../../lib/tempData/mobileEscapeTempData";
-const MobileEscapeHero = ({ pageHero, locationName }) => {
+import { eventFormBookingLinks } from "../../lib/tempData/eventFormBookingLinks";
+
+const partyFormBooking = (bookingData) => {
+  FH.open({
+    shortname: bookingData.shortName,
+    fallback: "simple",
+    fullItems: "yes",
+    flow: "no",
+    view: { item: bookingData.itemNo },
+  });
+};
+const MobileEscapeHero = ({ pageHero, locationName, locationSlug }) => {
   const comaoff = (txt) => {
     //console.log(txt)
     return txt.split(",").join(" ");
@@ -32,50 +43,6 @@ const MobileEscapeHero = ({ pageHero, locationName }) => {
             )}
             {/* ==================icon list=====================*/}
             <div className="text-[#2e2e2e] mbl-h-list mt-6 ml-2">
-              {/*pageHero.iconList.length > 3? (
-                <>
-                  {pageHero.iconList.map((item, index) => {
-                    return (
-                      <div
-                        key={index}
-                        className="icon-row flex space-x-2 md:spaxe-x-3  my-3 w-full"
-                      >
-                        <span className="mt-[8px] md:mt-[8px] w-[6px] h-[6px] md:w-[8px] md:h-[8px] rounded-full bg-[#CA9342] ">
-
-                        </span>
-                        <div
-                          className="md:text-lg flex-1"
-                          style={{ lineHeight: 1.3 }}
-                        >
-                          {item.text !== null
-                            ? item.text
-                            : " Perfect for Team-Building, Parties, and Special Events"}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </>
-              ):(
-              <> {mobileEscapePageHeroInfoList.map((item, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="icon-row flex space-x-2 md:spaxe-x-3  my-3 w-full"
-                  >
-                    <span className="mt-[8px] md:mt-[8px] w-[6px] h-[6px] md:w-[8px] md:h-[8px] rounded-full bg-[#CA9342] "></span>
-                    <div
-                      className="md:text-lg flex-1"
-                      style={{ lineHeight: 1.3 }}
-                    >
-                      {item.text !== null
-                        ? item.text
-                        : " Perfect for Team-Building, Parties, and Special Events"}
-                    </div>
-                  </div>
-                );
-              })}
-              </>
-              )*/}
               {mobileEscapePageHeroInfoList.map((item, index) => {
                 return (
                   <div
@@ -97,12 +64,14 @@ const MobileEscapeHero = ({ pageHero, locationName }) => {
             </div>
             {/* ==================button=====================*/}
             <div className="mbl-h-btn  mt-8 md:mt-10 2xl:mt-12">
-              <a
-                href="#mobile-escape-room-form"
-                className="max-w-[240px] px-12 text-center border block text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
+              <button
+                onClick={() => {
+                  partyFormBooking(eventFormBookingLinks[locationSlug]);
+                }}
+                className="max-w-[280px] px-14 text-center border block text-white border-red-600 bg-red-600 py-[14px] md:py-3 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
               >
                 GET A QUOTE
-              </a>
+              </button>
             </div>
           </div>
           <div className="mbl-col w-full lg:w-1/2 order-1 lg:order-2 mb-6 md:mb-8 lg:mb-0">

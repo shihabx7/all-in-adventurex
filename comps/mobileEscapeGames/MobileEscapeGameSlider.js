@@ -1,10 +1,22 @@
 import MobileTitleSeparatorCenter from "./MobileTitleSeparatorCenter";
 import MobileEscapeGameCarousel from "./MobileEscapeGameCarousel";
 import { mobileEscapeGameList } from "../../lib/tempData/mobileEscapeTempData";
+import { eventFormBookingLinks } from "../../lib/tempData/eventFormBookingLinks";
+
+const partyFormBooking = (bookingData) => {
+  FH.open({
+    shortname: bookingData.shortName,
+    fallback: "simple",
+    fullItems: "yes",
+    flow: "no",
+    view: { item: bookingData.itemNo },
+  });
+};
 const MobileEscapeGameSlider = ({
   gameCarouselSectionData,
   locationName,
   pricingSectionData,
+  locationSlug,
 }) => {
   return (
     <div className="mer-games-slider bg-black   relative">
@@ -45,12 +57,14 @@ const MobileEscapeGameSlider = ({
           )}
         </div>
         <div className="card-game-link mt-7 rm:mt-9 md:mt-7 xl:mt-8 flex justify-center">
-          <a
-            href="#mobile-escape-room-form"
-            className="border block text-white text-center  border-red-600 bg-red-600 min-w-[280px] py-3 px-[30px] md:px-12 md:py-4 rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700"
+          <button
+            onClick={() => {
+              partyFormBooking(eventFormBookingLinks[locationSlug]);
+            }}
+            className="max-w-[280px] md:max-w-[300px] px-14 md:px-16 text-center border block text-white border-red-600 bg-red-600 py-[14px] md:py-3 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
           >
             GET A QUOTE
-          </a>
+          </button>
         </div>
       </div>
     </div>

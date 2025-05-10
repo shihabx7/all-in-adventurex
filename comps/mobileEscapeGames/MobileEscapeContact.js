@@ -1,9 +1,19 @@
-import Script from "next/script";
+import { eventFormBookingLinks } from "../../lib/tempData/eventFormBookingLinks";
+const partyFormBooking = (bookingData) => {
+  FH.open({
+    shortname: bookingData.shortName,
+    fallback: "simple",
+    fullItems: "yes",
+    flow: "no",
+    view: { item: bookingData.itemNo },
+  });
+};
 
 const MobileEscapeContact = ({
   locationInfo,
   contactSectionData,
   locationName,
+  locationSlug,
 }) => {
   const getStAddress = (slug) => {
     var ctArr = slug.split("-");
@@ -71,7 +81,7 @@ const MobileEscapeContact = ({
                   className="text-[#E0BF62] mb-3 rm:mb-4 xl:mb-6 pt-0 md:py-2 text-[25px] rm:text-[26px] md:text-[40px] lg:text-[40px] 2xl:text-[48px] font-os font-bold uppercase"
                   style={{ lineHeight: 1.2 }}
                 >
-                  {contactSectionData.sectionTitle}
+                  Contact Us
                 </h2>
                 {contactSectionData.sectionSubTitle !== null ? (
                   <div className="text-gray-200 lg:text-lg 3xl:text-xl"></div>
@@ -79,14 +89,6 @@ const MobileEscapeContact = ({
                   <></>
                 )}
               </div>
-              {contactSectionData.note !== null ? (
-                <div
-                  className="mer-notice mt-4 md:mt-6 xl:text-lg text-[#eeeeee] mbl-group-text hidden"
-                  dangerouslySetInnerHTML={{ __html: contactSectionData.note }}
-                ></div>
-              ) : (
-                <></>
-              )}
 
               <div className="mer-info-list-box  ">
                 <div className="mer-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-y-[1px] border-[#D2C6AA]">
@@ -128,9 +130,7 @@ const MobileEscapeContact = ({
                   <div className="flex-1">
                     <a
                       className="text-[#F4E6C3] xl:text-lg hover:text-red-700"
-                      href={
-                        "tel:+1404-445-6047"
-                      }
+                      href={"tel:+1404-445-6047"}
                     >
                       Sales: +1 404-445-6047
                     </a>
@@ -162,6 +162,17 @@ const MobileEscapeContact = ({
                   </div>
                 </div>
               </div>
+              {/**======================================================content button============ */}
+              <div className="mbl-h-btn  mt-8 md:mt-10 2xl:mt-12">
+                <button
+                  onClick={() => {
+                    partyFormBooking(eventFormBookingLinks[locationSlug]);
+                  }}
+                  className="max-w-[280px] md:max-w-[300px] px-14 md:px-16 text-center border block text-white border-red-600 bg-red-600 py-[14px] md:py-3 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
+                >
+                  GET A QUOTE
+                </button>
+              </div>
             </div>
             {/**======================================================content Info+FAQ end============ */}
             {/**=====================================Yext Form================================== */}
@@ -169,20 +180,7 @@ const MobileEscapeContact = ({
               id="mobile-escape-room-contact"
               className="mt-8 md:mt-8 lg:mt-0 contact-form-box w-full lg:w-[50%]"
             >
-              <div className="contact-form-bg bg-[#F4E6C3] px-4 pt-6 pb-8 md:p-6 lg:p-8 md:rounded w-full">
-                <div
-                  className="pipedriveWebForms"
-                  data-pd-webforms="https://webforms.pipedrive.com/f/1GbaceOYFfjizbqZICDNPK2Ms6Tv8J5gwKVdEiv5DLoh98NAMtTxpy1GrhsG1Xinx"
-                >
-                  <Script
-                    onLoad={() => {
-                      changeStyle();
-                    }}
-                    src="https://webforms.pipedrive.com/f/loader"
-                    strategy="afterInteractive"
-                  ></Script>
-                </div>
-              </div>
+              <img src="/assets/mobile-escape-room/mobile_escape_room_quote.png"></img>
             </div>
 
             {/**=====================================Yext Form end================================== */}

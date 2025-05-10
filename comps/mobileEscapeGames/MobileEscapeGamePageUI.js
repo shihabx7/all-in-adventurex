@@ -1,4 +1,3 @@
-
 import MobileEscapeHero from "./MobileEscapeHero";
 import MobileEscapeGameSlider from "./MobileEscapeGameSlider";
 import MobileEscapeTestimonialSlider from "./MobileEscapeTestimonialSlider";
@@ -84,6 +83,7 @@ const MobileEscapeGamePageUI = (props) => {
         <MobileEscapeHero
           pageHero={props.mobileEscapeRoomPageData.pageHero}
           locationName={props.locationName}
+          locationSlug={props.locationSlug}
         />
       ) : (
         <></>
@@ -99,6 +99,7 @@ const MobileEscapeGamePageUI = (props) => {
             props.mobileEscapeRoomPageData.gameCarouselSectionData
           }
           locationName={props.locationName}
+          locationSlug={props.locationSlug}
         />
       ) : (
         <></>
@@ -109,6 +110,7 @@ const MobileEscapeGamePageUI = (props) => {
             props.mobileEscapeRoomPageData.experienceSectionData
           }
           locationName={props.locationName}
+          locationSlug={props.locationSlug}
         />
       ) : (
         <></>
@@ -137,6 +139,7 @@ const MobileEscapeGamePageUI = (props) => {
           locationInfo={props.locationInfo}
           contactSectionData={props.mobileEscapeRoomPageData.contactSectionData}
           locationName={props.locationName}
+          locationSlug={props.locationSlug}
         />
       ) : (
         <></>

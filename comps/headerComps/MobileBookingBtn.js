@@ -1,3 +1,4 @@
+import { eventFormBookingLinks } from "../../lib/tempData/eventFormBookingLinks";
 const bookAll = (bookingData) => {
   FH.open({
     shortname: bookingData.shortName,
@@ -16,6 +17,15 @@ const bookGame = (bookingData) => {
     view: { item: bookingData.itemNo },
   });
 };
+const partyFormBooking = (bookingData) => {
+  FH.open({
+    shortname: bookingData.shortName,
+    fallback: "simple",
+    fullItems: "yes",
+    flow: "no",
+    view: { item: bookingData.itemNo },
+  });
+};
 const MobileBookingBtn = (props) => {
   return (
     <div className="max-w-7xl mx-auto flex justify-between">
@@ -24,10 +34,7 @@ const MobileBookingBtn = (props) => {
         <>
           <div className="w-[48%]">
             {props.locationSlug ? (
-
-
               <>
-
                 {!props.partyBooking ? (
                   <>
                     {props.eventSlug ? (
@@ -92,8 +99,6 @@ const MobileBookingBtn = (props) => {
                   </>
                 )}
               </>
-
-
             ) : (
               <a
                 href={"/events#eventbooking"}
@@ -150,12 +155,14 @@ const MobileBookingBtn = (props) => {
         </>
       ) : (
         <div className="w-full">
-          <a
-            href={"#mobile-escape-room-form"}
-            className="bg-red-600 font-medium hover:bg-red-700 py-1 md:py-2 px-2 block text-center text-white text-lg"
+          <button
+            onClick={() => {
+              partyFormBooking(eventFormBookingLinks[props.locationSlug]);
+            }}
+            className="bg-red-600 block w-full font-medium hover:bg-red-700 py-1 md:py-2  block text-center text-white text-lg"
           >
             GET A QUOTE
-          </a>
+          </button>
         </div>
       )}
       {/**============game booking end================= */}

@@ -16,16 +16,16 @@ import { navNotice } from "../../lib/tempData/tempNavNotice";
 
 const LocationNav = (props) => {
   const [showSlug, setShowSlug] = useState(null);
-  const [noticeData, setNoticeData] = useState()
+  const [noticeData, setNoticeData] = useState();
 
   const setNotice = async (sl) => {
-    const ndata = await navNotice(sl)
+    const ndata = await navNotice(sl);
     //  console.log(ndata)
-    setNoticeData(ndata)
-  }
+    setNoticeData(ndata);
+  };
 
   useEffect(() => {
-    setNotice(props.locationSlug)
+    setNotice(props.locationSlug);
     setShowSlug(props.slug);
   }, []);
 
@@ -82,11 +82,13 @@ const LocationNav = (props) => {
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">
         <div id="header-container-s" className="header-container-s">
-          {
-            ((noticeData !== undefined && noticeData !== null) && noticeData.showNotice) && <>
-              <HeaderNotice noticeData={noticeData} />
-            </>
-          }
+          {noticeData !== undefined &&
+            noticeData !== null &&
+            noticeData.showNotice && (
+              <>
+                <HeaderNotice noticeData={noticeData} />
+              </>
+            )}
           <div
             className="header-container-s max-w-7xl mx-auto relative md:px-4"
             ref={ref}
@@ -117,7 +119,6 @@ const LocationNav = (props) => {
                 {props.activitySlug !== "mobile-escape-room" ? (
                   <>
                     <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
-
                       <EventBookingBtn
                         locationSlug={
                           props.locationSlug ? props.locationSlug : false
@@ -135,24 +136,33 @@ const LocationNav = (props) => {
                             : false
                         }
                       />
-
                     </div>
                     <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
                       <GameBookingBtn
-                        isPublished={props.isPublished ? props.isPublished : false}
+                        isPublished={
+                          props.isPublished ? props.isPublished : false
+                        }
                         locationSlug={
                           props.locationSlug ? props.locationSlug : false
                         }
                         allBooking={props.allBooking ? props.allBooking : false}
-                        giftBooking={props.giftBooking ? props.giftBooking : false}
-                        gameBooking={props.gameBooking ? props.gameBooking : false}
+                        giftBooking={
+                          props.giftBooking ? props.giftBooking : false
+                        }
+                        gameBooking={
+                          props.gameBooking ? props.gameBooking : false
+                        }
                         isGiftPage={props.isGiftPage ? props.isGiftPage : false}
                       />
                     </div>
                   </>
                 ) : (
                   <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
-                    <MobileEscapeBookingBtn />
+                    <MobileEscapeBookingBtn
+                      locationSlug={
+                        props.locationSlug ? props.locationSlug : false
+                      }
+                    />
                   </div>
                 )}
                 {/* ============Nav bar btn desktop  end*/}

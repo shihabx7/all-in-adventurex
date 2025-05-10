@@ -1,9 +1,22 @@
 import SectionBorderBottom from "../util/SectionBorderBottom";
 import SectionBorderTop from "../util/SectionBorderTop";
-
+import { eventFormBookingLinks } from "../../lib/tempData/eventFormBookingLinks";
+const partyFormBooking = (bookingData) => {
+  FH.open({
+    shortname: bookingData.shortName,
+    fallback: "simple",
+    fullItems: "yes",
+    flow: "no",
+    view: { item: bookingData.itemNo },
+  });
+};
 
 import MobileTitleSeparatorLeft from "./MobileTitleSeparatorLeft";
-const MobileEscapEx = ({ experienceSectionData, locationName }) => {
+const MobileEscapEx = ({
+  experienceSectionData,
+  locationName,
+  locationSlug,
+}) => {
   return (
     <div className="mer-hero  bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] relative py-16 md:py-20 lg:py-28 px-4 overflow-hidden">
       <SectionBorderBottom />
@@ -28,12 +41,14 @@ const MobileEscapEx = ({ experienceSectionData, locationName }) => {
             ></div>
             {/* ==================button=====================*/}
             <div className="mbl-h-btn  mt-5 md:mt-10 2xl:mt-12">
-              <a
-                href="#mobile-escape-room-form"
-                className="max-w-[220px] px-12 text-center border block text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
+              <button
+                onClick={() => {
+                  partyFormBooking(eventFormBookingLinks[locationSlug]);
+                }}
+                className="max-w-[280px] md:max-w-[300px] px-14 md:px-16 text-center border block text-white border-red-600 bg-red-600 py-[14px] md:py-3 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
               >
                 GET A QUOTE
-              </a>
+              </button>
             </div>
           </div>
           <div className="mbl-col w-full lg:w-1/2 order-1 lg:order-2 mb-6 md:mb-8 lg:mb-0">
@@ -63,34 +78,62 @@ const MobileEscapEx = ({ experienceSectionData, locationName }) => {
           </div>
 
           {/* ==================text=====================*/}
-          <div className="text-[#2e2e2e] md:text-lg  mbl-h-list mt-1 md:mt-2 mbl-group-text md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1080px]">We've brought teams, students, and staff together with engaging, on-site fun—right at their location. These groups turned ordinary events into unforgettable adventures with our mobile escape rooms!</div>
+          <div className="text-[#2e2e2e] md:text-lg  mbl-h-list mt-1 md:mt-2 mbl-group-text md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1080px]">
+            We've brought teams, students, and staff together with engaging,
+            on-site fun—right at their location. These groups turned ordinary
+            events into unforgettable adventures with our mobile escape rooms!
+          </div>
         </div>
         {/* ==================parter's logo=====================*/}
         <div className="mbl-partner-logo-container pt-4 lg:pt-12 lg:pb-0">
           <div className="logo-item-box flex space-x-4 space-y-4 flex-wrap md:flex-nowrap justify-evenly md:justify-between items-center">
             <div className="logo-item">
-              <img className="max-h-[36px] md:max-h-[48px] lg:max-h-[60px]" src="/assets/mobile-escape-room/patners/Apple_logo_black.svg"></img>
+              <img
+                className="max-h-[36px] md:max-h-[48px] lg:max-h-[60px]"
+                src="/assets/mobile-escape-room/patners/Apple_logo_black.svg"
+              ></img>
             </div>
             <div className="logo-item">
-              <img className="max-h-[20px] md:max-h-[24px] lg:max-h-[40px]" src="/assets/mobile-escape-room/patners/Amazon_logo.svg"></img>
+              <img
+                className="max-h-[20px] md:max-h-[24px] lg:max-h-[40px]"
+                src="/assets/mobile-escape-room/patners/Amazon_logo.svg"
+              ></img>
             </div>
             <div className="logo-item">
-              <img className="max-h-[18px] md:max-h-[22px] lg:max-h-[38px]" src="/assets/mobile-escape-room/patners/Deloitte.svg"></img>
+              <img
+                className="max-h-[18px] md:max-h-[22px] lg:max-h-[38px]"
+                src="/assets/mobile-escape-room/patners/Deloitte.svg"
+              ></img>
             </div>
             <div className="logo-item">
-              <img className="max-h-[24px] md:max-h-[26px] lg:max-h-[38px]" src="/assets/mobile-escape-room/patners/IBM_logo.svg"></img>
+              <img
+                className="max-h-[24px] md:max-h-[26px] lg:max-h-[38px]"
+                src="/assets/mobile-escape-room/patners/IBM_logo.svg"
+              ></img>
             </div>
             <div className="logo-item">
-              <img className="max-h-[42px] lg:max-h-[60px]" src="/assets/mobile-escape-room/patners/Dell_Logo.svg"></img>
+              <img
+                className="max-h-[42px] lg:max-h-[60px]"
+                src="/assets/mobile-escape-room/patners/Dell_Logo.svg"
+              ></img>
             </div>
             <div className="logo-item">
-              <img className=" max-h-[30px] lg:max-h-[44px]" src="/assets/mobile-escape-room/patners/Syracuse_University.svg"></img>
+              <img
+                className=" max-h-[30px] lg:max-h-[44px]"
+                src="/assets/mobile-escape-room/patners/Syracuse_University.svg"
+              ></img>
             </div>
             <div className="logo-item">
-              <img className="max-h-[32px] lg:max-h-[58px]" src="/assets/mobile-escape-room/patners/University_of_Massachusetts.svg"></img>
+              <img
+                className="max-h-[32px] lg:max-h-[58px]"
+                src="/assets/mobile-escape-room/patners/University_of_Massachusetts.svg"
+              ></img>
             </div>
             <div className="logo-item">
-              <img className="max-h-[32px] lg:max-h-[58px]" src="/assets/mobile-escape-room/patners/NC_State_University.svg"></img>
+              <img
+                className="max-h-[32px] lg:max-h-[58px]"
+                src="/assets/mobile-escape-room/patners/NC_State_University.svg"
+              ></img>
             </div>
           </div>
         </div>
