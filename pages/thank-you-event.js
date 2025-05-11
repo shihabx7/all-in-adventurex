@@ -18,7 +18,7 @@ const ThankYou = (props) => {
         id="mainContent"
         className="main-content nobtn-main-content bg-center"
       >
-        <ThankYouHero pageData={props.pageData} />
+        <ThankYouHero pageData={props.pageData} contactEvent={true} />
       </div>
 
       <RootFooter

@@ -31,21 +31,34 @@ const ThankYouHero = (props) => {
               FOR MORE INFORMATION
             </h3>
             <div className="text-center text-[#aaaaaa]">
-              <a
-                className="block text-lg md:text-xl hover:text-[#FFEFCD]"
-                href={`tel:${
-                  props.pageData.phone
-                    ? props.pageData.phone
-                    : "+1 844-502-5546"
-                }`}
-              >
-                <span className="md:text-xl">Call us :</span>{" "}
-                <span className="underline underline-offset-4">
-                  {props.pageData.phone
-                    ? props.pageData.phone
-                    : "+1 844-502-5546"}
-                </span>
-              </a>
+              {!props.contactEvent && (
+                <a
+                  className="block text-lg md:text-xl hover:text-[#FFEFCD]"
+                  href={`tel:${
+                    props.pageData.phone
+                      ? props.pageData.phone
+                      : "+1 844-502-5546"
+                  }`}
+                >
+                  <span className="md:text-xl">Call us :</span>{" "}
+                  <span className="underline underline-offset-4">
+                    {props.pageData.phone
+                      ? props.pageData.phone
+                      : "+1 844-502-5546"}
+                  </span>
+                </a>
+              )}
+              {props.contactEvent && (
+                <a
+                  className="block text-lg md:text-xl hover:text-[#FFEFCD]"
+                  href={`tel:+1404-445-6047`}
+                >
+                  <span className="md:text-xl">Call us :</span>{" "}
+                  <span className="underline underline-offset-4">
+                    +1 404-445-6047
+                  </span>
+                </a>
+              )}
               <a
                 className="mt-1 block md:text-lg hover:text-[#FFEFCD]"
                 href={`mailto:${
