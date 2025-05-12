@@ -22,7 +22,7 @@ const JobApplicationForms = (props) => {
   const [successMsg, setSuccessMsg] = useState("");
   const [formStep, setFormStep] = useState(0);
   const [repErrMsg, setRepErrMsg] = useState(false);
-  const [botMsg, setBotMsg] = useState('')
+  const [botMsg, setBotMsg] = useState("");
   const [formName, setFormName] = useState("Applicant Information ");
 
   useEffect(() => {
@@ -597,7 +597,7 @@ const JobApplicationForms = (props) => {
     if (formErrFlag) {
       setIsSend(false);
       setFormStep(5);
-      return
+      return;
     }
     const chRef = checkRef();
     const neErr = {
@@ -607,17 +607,11 @@ const JobApplicationForms = (props) => {
       refErr3: chRef.refErr3,
     };
     setRefPrevErr(neErr);
-    if (
-      chRef.isAgreeErr ||
-      chRef.refErr1 ||
-      chRef.refErr2 ||
-      chRef.refErr3
-    ) {
+    if (chRef.isAgreeErr || chRef.refErr1 || chRef.refErr2 || chRef.refErr3) {
       setIsSend(false);
       setFormStep(5);
-      return
+      return;
     }
-
 
     const grcToken = await recaptchaRef.current.executeAsync();
     // console.log("captcha token ..." + grcToken);
@@ -648,7 +642,7 @@ const JobApplicationForms = (props) => {
       });
 
       const result = await response.json();
-      console.log(result)
+      console.log(result);
       setIsSend(false);
       if (response.status == 200) {
         setErrorMsg("");
@@ -666,11 +660,8 @@ const JobApplicationForms = (props) => {
         setSuccessMsg("");
         setRepErrMsg(true);
       } else if (response.status == 429) {
-
-
         setErrorMsg(
           result.data.error + " Try after" + result.data.resetAfter + " Min"
-
         );
         setSuccessMsg("");
         setRepErrMsg(true);
@@ -687,7 +678,6 @@ const JobApplicationForms = (props) => {
       alert("Network Error: Please try again later.");
       return;
     }
-
   };
   // ==============================submit form end
   return (
@@ -800,7 +790,7 @@ const JobApplicationForms = (props) => {
           ref={recaptchaRef}
           sitekey="6LepEu0qAAAAAFSM_8lLN8LDgmT2qguQGQwV7cPZ" // Replace with your site key
           size="invisible"
-        //onChange={setCaptchaToken}
+          //onChange={setCaptchaToken}
         />
         {formStep == 5 && isSend == false && (
           <button
@@ -820,12 +810,13 @@ const JobApplicationForms = (props) => {
         {repErrMsg && (
           <div className="mt-4 md:mt-6">
             <p className="text-sm text-red-700">
-              Yor job application can't be sent at this moment. Send Your
-              Application to
-              <a href="carrer@allinadventures.com">
-                <span className="font-medium underline text-[#212121]">
-                  carrer@allinadventures.com
-                </span>
+              Yor job application can't be sent at this moment. Send your
+              application to{" "}
+              <a
+                className="font-medium underline text-[#212121]"
+                href="careers@allinadventures.com"
+              >
+                careers@allinadventures.com
               </a>
             </p>
           </div>
