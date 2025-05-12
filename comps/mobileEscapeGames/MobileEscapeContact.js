@@ -168,7 +168,7 @@ const MobileEscapeContact = ({
                   onClick={() => {
                     partyFormBooking(eventFormBookingLinks[locationSlug]);
                   }}
-                  className="max-w-[280px] md:max-w-[300px] mx-auto lg:mx-none px-14 md:px-16 text-center border block text-white border-red-600 bg-red-600 py-[14px] md:py-3 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
+                  className="max-w-[280px] md:max-w-[300px] mx-auto lg:mx-0 px-14 md:px-16 text-center border block text-white border-red-600 bg-red-600 py-[14px] md:py-3 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
                 >
                   GET A QUOTE
                 </button>
