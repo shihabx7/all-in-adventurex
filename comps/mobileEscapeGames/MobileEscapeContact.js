@@ -75,8 +75,8 @@ const MobileEscapeContact = ({
           {/**======================================================content============ */}
           <div className="conatct-section flex flex-col lg:flex-row justify-between md:max-w-[660px] lg:max-w-none mx-auto">
             {/**======================================================content Info+FAQ============ */}
-            <div className="contact-info-box  md:pt-12 px-4 w-full  lg:w-[46%]">
-              <div className="in-sec-title mb-3 rm:mb-4 md:mb-6 lg:mb-8">
+            <div className="contact-info-box  md:pt-12 px-4 w-full order-2 lg:order-1 lg:w-[46%]">
+              <div className="in-sec-title mt-8 md:mt-0 mb-3 rm:mb-4 md:mb-6 lg:mb-8">
                 <h2
                   className="text-[#E0BF62] mb-3 rm:mb-4 xl:mb-6 pt-0 md:py-2 text-[25px] rm:text-[26px] md:text-[40px] lg:text-[40px] 2xl:text-[48px] font-os font-bold uppercase"
                   style={{ lineHeight: 1.2 }}
@@ -168,7 +168,7 @@ const MobileEscapeContact = ({
                   onClick={() => {
                     partyFormBooking(eventFormBookingLinks[locationSlug]);
                   }}
-                  className="max-w-[280px] md:max-w-[300px] px-14 md:px-16 text-center border block text-white border-red-600 bg-red-600 py-[14px] md:py-3 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
+                  className="max-w-[280px] md:max-w-[300px] mx-auto lg:mx-none px-14 md:px-16 text-center border block text-white border-red-600 bg-red-600 py-[14px] md:py-3 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
                 >
                   GET A QUOTE
                 </button>
@@ -178,7 +178,7 @@ const MobileEscapeContact = ({
             {/**=====================================Yext Form================================== */}
             <div
               id="mobile-escape-room-contact"
-              className="mt-8 md:mt-8 lg:mt-0 contact-form-box w-full lg:w-[50%]"
+              className="mt-8 md:mt-8 lg:mt-0 contact-form-box w-full order-1 lg:order-2 lg:w-[50%]"
             >
               <img src="/assets/mobile-escape-room/mobile_escape_room_quote.png"></img>
             </div>
