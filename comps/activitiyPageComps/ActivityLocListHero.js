@@ -131,7 +131,7 @@ const ActivityLocListHero = (props) => {
               <div
                 className="text-gray-100 max-w-[840px] mx-auto text-center lg:text-lg"
                 dangerouslySetInnerHTML={{
-                  __html: props.pageData.pageSubtitle,
+                  __html: props.pageData.pageSubTitle,
                 }}
               ></div>
             </div>
