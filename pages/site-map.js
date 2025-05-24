@@ -26,9 +26,57 @@ export default function Sitemap(props) {
         <div className="max-w-[800px] mx-auto pt-2 pb-8 md:py-16 px-8 relative z-10">
           <StaticLinkLeft />
           <AllEscapeRoomsLink escapeGameSlugList={props.escapeGameSlugList} />
+          <div>
+            <ul className="site-map-link-group list-disc">
+              <li className="my-2">
+                <a
+                  href={"/mobile-escape-room"}
+                  className="site-link text-[#1a1a1a] hover:text-red-700 md:text-lg xl:text-xl"
+                >
+                  Mobile Escape Room
+                </a>
+              </li>
+            </ul>
+          </div>
           <AllOtherGamesLink otherGameSlugList={props.otherGameSlugList} />
           <AllEventsLink eventSlugList={props.eventSlugList} />
           <AllLocationsLink siteMapLocationsList={props.siteMapLocationsList} />
+          <div>
+            <ul className="site-map-link-group list-disc">
+              <li className="my-2">
+                <a
+                  href={"/buffalo-ny/activities/mobile-escape-room"}
+                  className="site-link text-[#1a1a1a] hover:text-red-700 md:text-lg xl:text-xl"
+                >
+                  Mobile Escape Room - Buffalo NY
+                </a>
+              </li>
+              <li className="my-2">
+                <a
+                  href={"/rochester-ny/activities/mobile-escape-room"}
+                  className="site-link text-[#1a1a1a] hover:text-red-700 md:text-lg xl:text-xl"
+                >
+                  Mobile Escape Room - Rochester NY
+                </a>
+              </li>
+              <li className="my-2">
+                <a
+                  href={"/winston-salem-nc/activities/mobile-escape-room"}
+                  className="site-link text-[#1a1a1a] hover:text-red-700 md:text-lg xl:text-xl"
+                >
+                  Mobile Escape Room - Winston-salem NC
+                </a>
+              </li>
+              <li className="my-2">
+                <a
+                  href={"/greensboro-nc/activities/mobile-escape-room"}
+                  className="site-link text-[#1a1a1a] hover:text-red-700 md:text-lg xl:text-xl"
+                >
+                  Mobile Escape Room - Greensboro NC
+                </a>
+              </li>
+            </ul>
+          </div>
           <RightMenuLink
             blogLinkList={props.blogLinkList}
             blogCategoryList={props.blogCategoryList}

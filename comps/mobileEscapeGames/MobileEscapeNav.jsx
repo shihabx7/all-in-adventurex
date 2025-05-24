@@ -1,16 +1,17 @@
 import { useEffect, useRef, useState } from "react";
 import { FiX } from "react-icons/fi";
-import SvglogoMain from "./headerComps/SvglogoMain";
-import HeaderLocMenu from "./headerComps/HeaderLocMenu";
-import DropDownMenu from "./headerComps/DropDownMenu";
-import EventBookingBtn from "./headerComps/EventBookingBtn";
-import GameBookingBtn from "./headerComps/GameBookingBtn";
-import HeaderNotice from "./headerComps/HeaderNotice";
-import LocationMenuBtnHeader from "./util/LocationMenuBtnHeader";
-import StickyGiftBar from "./giftCardPageComps/StickyGiftBar";
-import UerStickyBar from "./unlimitedEscapeRoom/UerStickyBar";
-import { navNotice } from "../lib/tempData/tempNavNotice";
-const RootNav = (props) => {
+import SvglogoMain from "../headerComps/SvglogoMain";
+import HeaderLocMenu from "../headerComps/HeaderLocMenu";
+import MobileEscapeNavBtn from "./MobileEscapeNavBtn";
+import DropDownMenu from "../headerComps/DropDownMenu";
+import { navNotice } from "../../lib/tempData/tempNavNotice";
+import HeaderNotice from "../headerComps/HeaderNotice";
+//import EventBookingBtn from "../headerComps/EventBookingBtn";
+//import GameBookingBtn from "../headerComps/GameBookingBtn";
+//import HeaderNotice from "../headerComps/HeaderNotice";
+import LocationMenuBtnHeader from "../util/LocationMenuBtnHeader";
+
+const MobileEscapeNav = (props) => {
   const [showSlug, setShowSlug] = useState(null);
   const [noticeData, setNoticeData] = useState();
 
@@ -64,14 +65,6 @@ const RootNav = (props) => {
         <HeaderLocMenu locationSlugList={props.locationSlugList} />
       </div>
 
-      {/* 
-      <UerStickyBar locationSlugList={props.locationSlugList} />
-      <StickyGiftBar
-        locationSlugList={props.locationSlugList}
-        locationSlug={props.locationSlug ? props.locationSlug : false}
-        giftBooking={props.giftBooking ? props.giftBooking : false}
-      />*/}
-
       {/* ============Location List Menu end*/}
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">
@@ -83,7 +76,6 @@ const RootNav = (props) => {
                 <HeaderNotice noticeData={noticeData} />
               </>
             )}
-
           <div
             className="header-container-s max-w-7xl mx-auto relative md:px-4"
             ref={ref}
@@ -109,13 +101,29 @@ const RootNav = (props) => {
               <LocationMenuBtnHeader />
               {/*============location search btn end==========*/}
               {/*============nav bar btns ==========*/}
-              <div className="home-nav-menu flex items-center space-x-0 md:space-x-10 lg:space-x-14 justify-end ">
+              <div className="home-nav-menu flex items-center space-x-0 md:space-x-4 lg:space-x-14 justify-end ">
                 {/* ============Nav bar btn desktop  */}
-                <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
-                  <EventBookingBtn />
-                </div>
-                <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
-                  <GameBookingBtn />
+                <div className="hidden lg:block">
+                  <MobileEscapeNavBtn
+                    locationSlug={
+                      props.locationSlug ? props.locationSlug : false
+                    }
+                    setShowMobileEecapeMenu={
+                      props.setShowMobileEecapeMenu
+                        ? props.setShowMobileEecapeMenu
+                        : false
+                    }
+                    setGoMobileEecapeForm={
+                      props.setGoMobileEecapeForm
+                        ? props.setGoMobileEecapeForm
+                        : false
+                    }
+                    goMobileEecapeForm={
+                      props.goMobileEecapeForm
+                        ? props.goMobileEecapeForm
+                        : false
+                    }
+                  />
                 </div>
                 {/* ============Nav bar btn desktop  end*/}
                 {/* ============Nav bar toggle icon  */}
@@ -167,7 +175,25 @@ const RootNav = (props) => {
         </div>
 
         {/*============floating booking btn mobile ==========*/}
-
+        <div
+          id="uermbk"
+          className="header-book-btn-container  w-full    lg:hidden z-50 bg-red-600"
+        >
+          <MobileEscapeNavBtn
+            locationSlug={props.locationSlug ? props.locationSlug : false}
+            setShowMobileEecapeMenu={
+              props.setShowMobileEecapeMenu
+                ? props.setShowMobileEecapeMenu
+                : false
+            }
+            setGoMobileEecapeForm={
+              props.setGoMobileEecapeForm ? props.setGoMobileEecapeForm : false
+            }
+            goMobileEecapeForm={
+              props.goMobileEecapeForm ? props.goMobileEecapeForm : false
+            }
+          />
+        </div>
         {/*============floating booking btn mobile end==========*/}
       </header>
       {/* ============Nav Header  end*/}
@@ -175,4 +201,4 @@ const RootNav = (props) => {
   );
 };
 
-export default RootNav;
+export default MobileEscapeNav;

@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { BsFillCheckCircleFill, BsCheck } from "react-icons/bs";
 import ReCAPTCHA from "react-google-recaptcha";
-const CouponForm = (props) => {
+import Script from "next/script";
+const CouponFormOpt = (props) => {
   const recaptchaRef = useRef();
   const [reCaptchaToken, setReCaptchaToken] = useState(null);
   const [errorMsg, setErrorMsg] = useState("");
@@ -261,8 +262,8 @@ const CouponForm = (props) => {
             {props.coupon.offer_per}
           </div>
         </div>
-        <div className="coupon-form-col md:w-2/3 px-4 flex flex-col justify-between ">
-          <div className="coupon-form-top flex justify-between items-center mt-2 md:mt-4">
+        <div className="coupon-form-col md:w-2/3  flex flex-col justify-between ">
+          <div className="coupon-form-top flex justify-between items-center mt-2 md:mt-4 px-3 ">
             <div className="coupon-varified flex space-x-2 items-center uppercase text-[#A78849] text-sm md:text-base">
               <span className="text-lg md:text-xl">
                 <BsFillCheckCircleFill />
@@ -280,114 +281,17 @@ const CouponForm = (props) => {
               </span>
             </div>
           </div>
-          <div className="coupon-code-col mb-4 md:mb-0 mt-4 max-w-[260px] md:max-w-[280px] inline-block relative">
-            <div className="coupon-code-box flex space-x-2 items-center justify-end  py-2 px-2 border-2 border-dashed border-[#E4CB98] rounded bg-[#FDF1D3] drop-shadow-md">
-              <div
-                id={"coupon" + props.id}
-                className="text-xl md:text-2xl text-[#DB2427] font-medium text-center px-4"
-                style={{
-                  width: showCoupon ? "100%" : "auto",
-                }}
-              >
-                {props.coupon.coupon_code}
-              </div>
-              {showCoupon && (
-                <button
-                  onClick={copyCoupon}
-                  className="px-4 py-2 bg-[#E4CB98] rounded text-xs md:text-base font-medium hover:bg-golden-alt focus:bg-golden-alt"
-                >
-                  COPY
-                </button>
-              )}
-            </div>
-            {!showCoupon && (
-              <div className="flex items-center justify-center  coupon-hider absolute top-0 left-0 h-full rounded-l w-[85%] md:w-[80%] bg-golden text-center text-white ">
-                {!isSend && <p className="lg:text-lg">Show Coupon Code</p>}
-                {isSend && (
-                  <div className="progress-bar3 text-white flex items-center justify-center">
-                    Generating Coupon Code
-                  </div>
-                )}
-              </div>
-            )}
-          </div>
-          {errorMsg.length > 0 && successMsg.length < 1 && (
-            <p className="form-error px-3 py-1 mb-4 bg-amber-50 text-red-700 text-center text-sm">
-              {errorMsg}
-            </p>
-          )}
-
-          <form onSubmit={(e) => showcouponnow(e)} className="pb-8 md:pb-4">
-            <div className="coupon-form-row  flex flex-col md:flex-row  space-y-3 md:space-y-0 md:space-x-4 md:items-end">
-              <div className="coupon-form-col md:w-1/3">
-                <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">
-                  What's your name? *
-                </p>
-                <input
-                  id={"name" + props.id}
-                  onChange={(e) => checkName(e)}
-                  type="text"
-                  //  value={fieldVlue.name}
-                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
-                  placeholder="Your Name"
-                  required
-                ></input>
-                <input
-                  type="text"
-                  id={"cbot" + props.id}
-                  name={"botCheck" + props.id}
-                  onChange={(e) => checkBoot(e)}
-                  className="hidden"
-                ></input>
-              </div>
-              <div className="coupon-form-col md:w-1/3">
-                <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
-                  What's your email? *
-                </p>
-                <input
-                  id={"email" + props.id}
-                  onChange={(e) => checkEmail(e)}
-                  //  value={fieldVlue.email}
-                  type="email"
-                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
-                  placeholder="Your Email"
-                  required
-                ></input>
-              </div>
-              <div className="coupon-form-col md:w-1/3">
-                {showCoupon && (
-                  <p className="  success-coupon md:text-xs text-[#DB2122] mb-2 flex items-center space-x-1">
-                    <span className="text-xl">
-                      <BsCheck />
-                    </span>
-                    <span>Success! Enjoy your discount</span>
-                  </p>
-                )}
-                {/**================ captcha element */}
-
-                <button
-                  type="submit"
-                  className="text-white mt-2 md:mt-0 font-medium py-3 w-full bg-red-600 hover:bg-red-700 rounded-full"
-                >
-                  SHOW COUPON
-                </button>
-              </div>
-            </div>
-            <div className="from-err mt-2 text-xs md:text-base">
-              <p
-                id={"err-name" + props.id}
-                className="err-coupon md:text-xs text-[#DB2122] hidden"
-              >
-                invalid Name
-              </p>
-            </div>
-            <ReCAPTCHA
-              ref={recaptchaRef}
-              sitekey="6LepEu0qAAAAAFSM_8lLN8LDgmT2qguQGQwV7cPZ" // Replace with your site key
-              size="invisible"
-              //onChange={setCaptchaToken}
+          <div className="flodesk-form">
+            <div id={props.foldeskFormData.divId}></div>
+            <Script
+              dangerouslySetInnerHTML={{
+                __html: `window.fd('form', {
+    formId: '${props.foldeskFormData.formId}',
+    containerEl: '${props.foldeskFormData.elId}'
+  })`,
+              }}
             />
-          </form>
+          </div>
         </div>
       </div>
       {/* ==================coupon form============================= */}
@@ -395,4 +299,4 @@ const CouponForm = (props) => {
   );
 };
 
-export default CouponForm;
+export default CouponFormOpt;

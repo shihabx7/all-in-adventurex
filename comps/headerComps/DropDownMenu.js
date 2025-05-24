@@ -174,7 +174,11 @@ const DropDownMenu = (props) => {
               </a>
             </div>
           ) : (
-            <></>
+            <div className="submenu-item">
+              <a href={"/mobile-escape-room"} className="flex items-center">
+                <span className="sub-link-txt">Mobile Escape Rooms</span>
+              </a>
+            </div>
           )}
           {/*=========================================== Collapse menu  event List========== */}
 

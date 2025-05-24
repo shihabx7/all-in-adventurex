@@ -120,6 +120,90 @@ const gnRed = [
   },
 ];
 // =========================================genarel redirect end
+//single mobile escape
+const singleMobileEscape = [
+  {
+    source: "/buffalo-ny",
+    destination: "/buffalo-ny/activities/mobile-escape-room",
+    permanent: prm,
+  },
+  {
+    source: "/buffalo-ny/activities",
+    destination: "/buffalo-ny/activities/mobile-escape-room",
+    permanent: prm,
+  },
+  {
+    source: "/buffalo-ny/events",
+    destination: "/buffalo-ny/activities/mobile-escape-room",
+    permanent: prm,
+  },
+  {
+    source: "/buffalo-ny/contact-store",
+    destination: "/buffalo-ny/activities/mobile-escape-room",
+    permanent: prm,
+  },
+  {
+    source: "/rochester-ny",
+    destination: "/rochester-ny/activities/mobile-escape-room",
+    permanent: prm,
+  },
+  {
+    source: "/rochester-ny/activities",
+    destination: "/rochester-ny/activities/mobile-escape-room",
+    permanent: prm,
+  },
+  {
+    source: "/rochester-ny/events",
+    destination: "/rochester-ny/activities/mobile-escape-room",
+    permanent: prm,
+  },
+  {
+    source: "/rochester-ny/contact-store",
+    destination: "/rochester-ny/activities/mobile-escape-room",
+    permanent: prm,
+  },
+  {
+    source: "/winston-salem-nc",
+    destination: "winston-salem-nc/activities/mobile-escape-room",
+    permanent: prm,
+  },
+  {
+    source: "/winston-salem-nc/activities",
+    destination: "winston-salem-nc/activities/mobile-escape-room",
+    permanent: prm,
+  },
+  {
+    source: "/winston-salem-nc/events",
+    destination: "winston-salem-nc/activities/mobile-escape-room",
+    permanent: prm,
+  },
+  {
+    source: "/winston-salem-nc/contact-store",
+    destination: "winston-salem-nc/activities/mobile-escape-room",
+    permanent: prm,
+  },
+  {
+    source: "/greensboro-nc",
+    destination: "/greensboro-nc/activities/mobile-escape-room",
+    permanent: prm,
+  },
+  {
+    source: "/greensboro-nc/activities",
+    destination: "/greensboro-nc/activities/mobile-escape-room",
+    permanent: prm,
+  },
+  {
+    source: "/greensboro-nc/events",
+    destination: "/greensboro-nc/activities/mobile-escape-room",
+    permanent: prm,
+  },
+  {
+    source: "/greensboro-nc/contact-store",
+    destination: "/greensboro-nc/activities/mobile-escape-room",
+    permanent: prm,
+  },
+];
+//single mobile escape end
 // =========================================-------------Albany NY
 const albanyRed = [
   {
@@ -2772,6 +2856,7 @@ const allRed = [
   ...hmagic,
   ...wwwToHttps,
   ...gnRed,
+  ...singleMobileEscape,
   ...albanyRed,
   ...buffaloRed,
   ...middletownRed,

@@ -14,7 +14,16 @@ const MobileEscapeContact = ({
   contactSectionData,
   locationName,
   locationSlug,
+  setShowMobileEecapeMenu,
+  setGoMobileEecapeForm,
+  goMobileEecapeForm,
 }) => {
+  const showMobileEscapeBookingMenu = () => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.add("overflow-hidden");
+    setGoMobileEecapeForm(true);
+    setShowMobileEecapeMenu(true);
+  };
   const getStAddress = (slug) => {
     var ctArr = slug.split("-");
     var st = ctArr[ctArr.length - 1].toUpperCase();
@@ -90,88 +99,139 @@ const MobileEscapeContact = ({
                 )}
               </div>
 
-              <div className="mer-info-list-box  ">
-                <div className="mer-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-y-[1px] border-[#D2C6AA]">
-                  <div className="w-[18px] md:w-[24px]">
-                    <img
-                      className="w-full"
-                      alt={"Allinadventures icon map"}
-                      src="/assets/svg/event-icon-pin.svg"
-                    ></img>
+              {locationInfo && (
+                <div className="mer-info-list-box  ">
+                  <div className="mer-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-y-[1px] border-[#D2C6AA]">
+                    <div className="w-[18px] md:w-[24px]">
+                      <img
+                        className="w-full"
+                        alt={"Allinadventures icon map"}
+                        src="/assets/svg/event-icon-pin.svg"
+                      ></img>
+                    </div>
+                    <div className="flex-1">
+                      <a
+                        className="text-[#F4E6C3] text-base xl:text-lg hover:text-red-700"
+                        href={getDirection(
+                          locationInfo.address,
+                          locationInfo.state,
+                          locationInfo.zip,
+                          locationInfo.cityName
+                        )}
+                      >
+                        {getAddress(
+                          locationInfo.address,
+                          locationInfo.state,
+                          locationInfo.zip,
+                          locationInfo.cityName
+                        )}
+                      </a>
+                    </div>
                   </div>
-                  <div className="flex-1">
-                    <a
-                      className="text-[#F4E6C3] text-base xl:text-lg hover:text-red-700"
-                      href={getDirection(
-                        locationInfo.address,
-                        locationInfo.state,
-                        locationInfo.zip,
-                        locationInfo.cityName
-                      )}
-                    >
-                      {getAddress(
-                        locationInfo.address,
-                        locationInfo.state,
-                        locationInfo.zip,
-                        locationInfo.cityName
-                      )}
-                    </a>
-                  </div>
-                </div>
 
-                <div className="mer-info-list flex  items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
-                  <div className="w-[18px] md:w-[24px]">
-                    <img
-                      className="w-full"
-                      alt={"Allinadventures icon phone"}
-                      src="/assets/svg/event-icon-phone.svg"
-                    ></img>
+                  <div className="mer-info-list flex  items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
+                    <div className="w-[18px] md:w-[24px]">
+                      <img
+                        className="w-full"
+                        alt={"Allinadventures icon phone"}
+                        src="/assets/svg/event-icon-phone.svg"
+                      ></img>
+                    </div>
+                    <div className="flex-1">
+                      <a
+                        className="text-[#F4E6C3] xl:text-lg hover:text-red-700"
+                        href={"tel:+1404-445-6047"}
+                      >
+                        Sales: +1 404-445-6047
+                      </a>
+                    </div>
                   </div>
-                  <div className="flex-1">
-                    <a
-                      className="text-[#F4E6C3] xl:text-lg hover:text-red-700"
-                      href={"tel:+1404-445-6047"}
-                    >
-                      Sales: +1 404-445-6047
-                    </a>
-                  </div>
-                </div>
 
-                {/*store email*/}
-                <div className="mer-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
-                  <div className="w-[18px] md:w-[24px]">
-                    <img
-                      className="w-full"
-                      alt={"Allinadventures icon email"}
-                      src="/assets/svg/event-icon-email.svg"
-                    ></img>
-                  </div>
-                  <div className="flex-1">
-                    <a
-                      className="text-[#F4E6C3] text-base xl:text-lg hover:text-red-700"
-                      href={
-                        locationInfo.storeEmail !== null
-                          ? "mailto:" + locationInfo.storeEmail
-                          : "mailto:store123@allinadventures.com"
-                      }
-                    >
-                      {locationInfo.storeEmail !== null
-                        ? locationInfo.storeEmail
-                        : "store123@allinadventures.com"}
-                    </a>
+                  {/*store email*/}
+                  <div className="mer-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
+                    <div className="w-[18px] md:w-[24px]">
+                      <img
+                        className="w-full"
+                        alt={"Allinadventures icon email"}
+                        src="/assets/svg/event-icon-email.svg"
+                      ></img>
+                    </div>
+                    <div className="flex-1">
+                      <a
+                        className="text-[#F4E6C3] text-base xl:text-lg hover:text-red-700"
+                        href={
+                          locationInfo.storeEmail !== null
+                            ? "mailto:" + locationInfo.storeEmail
+                            : "mailto:store123@allinadventures.com"
+                        }
+                      >
+                        {locationInfo.storeEmail !== null
+                          ? locationInfo.storeEmail
+                          : "store123@allinadventures.com"}
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
+              {!locationInfo && (
+                <div className="mer-info-list-box  ">
+                  <div className="mer-info-list flex  items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-y-[1px] border-[#D2C6AA]">
+                    <div className="w-[18px] md:w-[24px]">
+                      <img
+                        className="w-full"
+                        alt={"Allinadventures icon phone"}
+                        src="/assets/svg/event-icon-phone.svg"
+                      ></img>
+                    </div>
+                    <div className="flex-1">
+                      <a
+                        className="text-[#F4E6C3] xl:text-lg hover:text-red-700"
+                        href={"tel:+1404-445-6047"}
+                      >
+                        Sales: +1 404-445-6047
+                      </a>
+                    </div>
+                  </div>
+
+                  {/*store email*/}
+                  <div className="mer-info-list flex items-center space-x-4 py-2 px-2 md:py-2 md:px-3 xl:py-3 xl:px-6 lg:text-lg border-b-[1px] border-[#D2C6AA]">
+                    <div className="w-[18px] md:w-[24px]">
+                      <img
+                        className="w-full"
+                        alt={"Allinadventures icon email"}
+                        src="/assets/svg/event-icon-email.svg"
+                      ></img>
+                    </div>
+                    <div className="flex-1">
+                      <a
+                        className="text-[#F4E6C3] text-base xl:text-lg hover:text-red-700"
+                        href={"mailto:sales@allinadventures.com"}
+                      >
+                        sales@allinadventures.com
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              )}
               {/**======================================================content button============ */}
               <div className="mbl-h-btn  mt-8 md:mt-10 2xl:mt-12">
-                <button
-                  onClick={() => {
-                    partyFormBooking(eventFormBookingLinks[locationSlug]);
-                  }}
-                  className="max-w-[280px] md:max-w-[300px] mx-auto lg:mx-0 px-14 md:px-16 text-center border block text-white border-red-600 bg-red-600 py-[14px] md:py-3 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
-                >
-                  GET A QUOTE
-                </button>
+                {locationSlug ? (
+                  <button
+                    onClick={() => {
+                      partyFormBooking(eventFormBookingLinks[locationSlug]);
+                    }}
+                    className="max-w-[280px] md:max-w-[300px] mx-auto lg:mx-0 px-14 md:px-16 text-center border block text-white border-red-600 bg-red-600 py-[14px] md:py-3 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
+                  >
+                    GET A QUOTE
+                  </button>
+                ) : (
+                  <button
+                    onClick={(e) => showMobileEscapeBookingMenu(e)}
+                    className="max-w-[340px] px-10 text-center border block text-white border-red-600 bg-red-600 py-[16px] md:py-4 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
+                  >
+                    CHOOSE YOUR LOCATION
+                  </button>
+                )}
               </div>
             </div>
             {/**======================================================content Info+FAQ end============ */}

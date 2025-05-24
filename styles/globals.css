@@ -118,15 +118,17 @@ a {
 }
 
 .thank-btm-shadow {
-  background: linear-gradient(to top,
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 9),
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.04));
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 9),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.04)
+  );
 }
 
 .gift-effect-box-col {
@@ -134,12 +136,14 @@ a {
 }
 
 .thank-ev-head {
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 9),
-      rgba(0, 0, 0, 9),
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.01));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 9),
+    rgba(0, 0, 0, 9),
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.01)
+  );
 }
 
 .pipedriveWebForms iframe .gDhlQr {
@@ -198,25 +202,29 @@ a {
 }
 
 .game-bg-pattern-dark {
-  background-image: linear-gradient(to right,
+  background-image: linear-gradient(
+      to right,
       rgba(0, 0, 0, 0.77),
-      rgba(0, 0, 0, 0.77)),
+      rgba(0, 0, 0, 0.77)
+    ),
     url("/assets/svg/pattern/All-In-Adventures-Background-Games-Pattern.svg");
   background-repeat: repeat;
   background-size: 130px 130px;
 }
 
 .gift-pattern {
-  background-image: linear-gradient(to right,
+  background-image: linear-gradient(
+      to right,
       rgba(0, 0, 0, 0.54),
-      rgba(0, 0, 0, 0.54)),
+      rgba(0, 0, 0, 0.54)
+    ),
     url("/assets/svg/pattern/All-In-Adventures-Background-Gift-Card-Pattern.svg");
   background-repeat: repeat;
   background-size: 500px 500px;
 }
 
 .gift-row-shadow {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5)
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .menu-pattern {
@@ -411,7 +419,7 @@ a {
   width: 40%;
 }
 
-.breadcum-list li:last-child a>.bitem>.bsep {
+.breadcum-list li:last-child a > .bitem > .bsep {
   display: none;
 }
 
@@ -659,11 +667,13 @@ a {
 }
 
 .card-head {
-  background: linear-gradient(rgba(0, 0, 0, 0.99),
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.01));
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.99),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.01)
+  );
 }
 
 .mbl-card-head {
@@ -671,11 +681,13 @@ a {
 }
 
 .card-bottom {
-  background: linear-gradient(rgba(0, 0, 0, 0.06),
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.99));
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.06),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.99)
+  );
 }
 
 .mbl-card-bottom {
@@ -683,30 +695,38 @@ a {
 }
 
 .mer-card-container {
-  background: linear-gradient(56deg,
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.09));
+  background: linear-gradient(
+    56deg,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.09)
+  );
 }
 
 .otg-head {
-  background: linear-gradient(rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.03));
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.03)
+  );
 }
 
 .otg-bottom {
-  background: linear-gradient(rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.78),
-      rgba(0, 0, 0, 0.88),
-      rgba(0, 0, 0, 0.98));
+  background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.78),
+    rgba(0, 0, 0, 0.88),
+    rgba(0, 0, 0, 0.98)
+  );
 }
 
 .card-bottom-gift {
-  background: linear-gradient(rgba(0, 0, 0, 0.01),
-      rgba(0, 0, 0, 0.76),
-      rgba(0, 0, 0, 0.86),
-      rgba(0, 0, 0, 0.96));
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.01),
+    rgba(0, 0, 0, 0.76),
+    rgba(0, 0, 0, 0.86),
+    rgba(0, 0, 0, 0.96)
+  );
 }
 
 .card-game-title {
@@ -897,9 +917,11 @@ a {
 }
 
 .card-img.review-img {
-  background-image: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0) 50%,
-      #000000 50%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    #000000 50%
+  );
 }
 
 .card-img.review-img img {
@@ -1231,37 +1253,35 @@ a {
 .rdm-car .react-multiple-carousel__arrow--left {
   top: 44%;
   box-shadow: none;
-  border: 2px solid #ca9342
+  border: 2px solid #ca9342;
 }
 
 .rdm-car .react-multiple-carousel__arrow--right {
   top: 44%;
   box-shadow: none;
-  border: 2px solid #ca9342
+  border: 2px solid #ca9342;
 }
 
 .rdm-car .react-multiple-carousel__arrow::before {
   font-size: 26px;
   color: #ca9342;
-
 }
 
 .rdm-car .react-multiple-carousel__arrow--right:hover {
-  border: 2px solid #E0BF62;
+  border: 2px solid #e0bf62;
 }
 
 .rdm-car .react-multiple-carousel__arrow--right:hover:before {
-  color: #E0BF62;
+  color: #e0bf62;
 }
 
 .rdm-car .react-multiple-carousel__arrow--left:hover {
-  border: 2px solid #E0BF62;
+  border: 2px solid #e0bf62;
 }
 
 .rdm-car .react-multiple-carousel__arrow--left:hover:before {
-  color: #E0BF62;
+  color: #e0bf62;
 }
-
 
 /*======mobile escape room dsign*/
 .mer-testi-shadow {
@@ -1354,57 +1374,63 @@ a {
 }
 
 .mbl-list-bg {
-  background-image: linear-gradient(53deg,
+  background-image: linear-gradient(
+      53deg,
       rgba(0, 0, 0, 0.92),
       rgba(0, 0, 0, 0.82),
       rgba(0, 0, 0, 0.62),
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0)),
+      rgba(0, 0, 0, 0)
+    ),
     url("/assets/mobile-escape-room/mobile-escape-room-list-page-game-image.jpg");
   box-shadow: "0px 0px 16px 2px rgba(0,0,0,0.45)";
 }
 
 .testi-vid-car .react-multiple-carousel__arrow {
-
   border: 2px solid #545454 !important;
   background: transparent;
   color: #545454 !important;
-
 }
 
 .testi-vid-car .react-multiple-carousel__arrow:hover {
-
   border: 2px solid #ca9253 !important;
-
-
 }
 
 .text-vid-bg-overlay {
-  background-image: linear-gradient(rgba(3, 18, 40, .14), rgba(1, 10, 24, .99));
+  background-image: linear-gradient(
+    rgba(3, 18, 40, 0.14),
+    rgba(1, 10, 24, 0.99)
+  );
 }
 
 /*=============unlimited play pass============*/
 .uer-grad {
   background: linear-gradient(to right, rgb(255, 183, 31), rgb(204, 0, 63));
-  background: -webkit-linear-gradient(to right,
-      rgb(255, 183, 31),
-      rgb(204, 0, 63));
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(255, 183, 31),
+    rgb(204, 0, 63)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 0px 25px rgba(220, 38, 38, 0.8);
 }
 
 .uer-grad2 {
-  background: linear-gradient(to right,
-      rgb(255, 183, 31),
-      rgb(255, 183, 31),
-      rgb(204, 0, 63),
-      rgb(204, 0, 63));
-  background: -webkit-linear-gradient(to right,
-      rgb(255, 183, 31),
-      rgb(255, 183, 31),
-      rgb(204, 0, 63),
-      rgb(204, 0, 63));
+  background: linear-gradient(
+    to right,
+    rgb(255, 183, 31),
+    rgb(255, 183, 31),
+    rgb(204, 0, 63),
+    rgb(204, 0, 63)
+  );
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(255, 183, 31),
+    rgb(255, 183, 31),
+    rgb(204, 0, 63),
+    rgb(204, 0, 63)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 0px 25px rgba(220, 38, 38, 0.8);
@@ -1440,10 +1466,12 @@ a {
   /* Warning: no fallback */
   line-height: 1;
 
-  background: -webkit-linear-gradient(270deg,
-      rgb(224, 191, 98) 10%,
-      rgb(202, 147, 66) 52%,
-      rgb(204, 0, 63) 90%);
+  background: -webkit-linear-gradient(
+    270deg,
+    rgb(224, 191, 98) 10%,
+    rgb(202, 147, 66) 52%,
+    rgb(204, 0, 63) 90%
+  );
 
   -webkit-background-clip: text;
   background-clip: text;
@@ -1466,7 +1494,10 @@ a {
   column-count: 2;
   column-gap: 1em;
 }
-
+/*Flodesk---------------------------*/
+.flodesk-form form {
+  padding: 18px !important;
+}
 @media only screen and (max-width: 2000px) {
   .single-blog-content-holder {
     padding-top: 11%;
@@ -1942,7 +1973,7 @@ a {
     max-width: 100%;
   }
 
-  .sbl-main>ul li {
+  .sbl-main > ul li {
     font-size: 18px !important;
     line-height: 1.5 !important;
   }
@@ -1972,12 +2003,14 @@ a {
   }
 
   .fyp-baner {
-    background: linear-gradient(to top,
-        rgba(0, 0, 0, 9),
-        rgba(0, 0, 0, 9),
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.1));
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 9),
+      rgba(0, 0, 0, 9),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.1)
+    );
   }
 
   .pl-or-1 img {
@@ -2061,12 +2094,14 @@ a {
   }
 
   .mbl-list-bg {
-    background-image: linear-gradient(53deg,
+    background-image: linear-gradient(
+        53deg,
         rgba(0, 0, 0, 0.92),
         rgba(0, 0, 0, 0.82),
         rgba(0, 0, 0, 0.62),
         rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0)),
+        rgba(0, 0, 0, 0)
+      ),
       url("/assets/mobile-escape-room/Mobile-escape-room-list-page-game-image-for-mobile.jpg");
     box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.45);
   }
@@ -2324,32 +2359,38 @@ a {
   }
 
   .mer-card-container {
-    background: linear-gradient(to bottom,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0));
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    );
   }
 
   .mbl-card-head {
-    background: linear-gradient(to bottom,
-        rgba(0, 0, 0, 0.86),
-        rgba(0, 0, 0, 0.78),
-        rgba(0, 0, 0, 0.66),
-        rgba(0, 0, 0, 0.57),
-        rgba(0, 0, 0, 0.44),
-        rgba(0, 0, 0, 0.36),
-        rgba(0, 0, 0, 0.24),
-        rgba(0, 0, 0, 0.01));
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.86),
+      rgba(0, 0, 0, 0.78),
+      rgba(0, 0, 0, 0.66),
+      rgba(0, 0, 0, 0.57),
+      rgba(0, 0, 0, 0.44),
+      rgba(0, 0, 0, 0.36),
+      rgba(0, 0, 0, 0.24),
+      rgba(0, 0, 0, 0.01)
+    );
   }
 
   .mbl-card-bottom {
-    background: linear-gradient(to top,
-        rgba(0, 0, 0, 0.9),
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.03));
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.03)
+    );
   }
 
   .mer-testi-shadow {
@@ -2357,12 +2398,10 @@ a {
   }
 
   .pipedriveWebForms .eVYYUZ {
-
     line-height: 32px !important;
     font-family: "Oswald", sans-serif !important;
     font-size: 20px !important;
     margin-bottom: 0px !important;
-
   }
 }
 

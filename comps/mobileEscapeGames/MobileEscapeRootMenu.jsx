@@ -1,5 +1,17 @@
 import { FiX } from "react-icons/fi";
 import { FaAngleRight } from "react-icons/fa";
+import { mobileEscapeRootMenuList } from "../../lib/tempData/mobileEscapeTempData";
+import { eventFormBookingLinks } from "../../lib/tempData/eventFormBookingLinks";
+
+const partyFormBooking = (bookingData) => {
+  FH.open({
+    shortname: bookingData.shortName,
+    fallback: "simple",
+    fullItems: "yes",
+    flow: "no",
+    view: { item: bookingData.itemNo },
+  });
+};
 
 const MobileEscapeRootMenu = (props) => {
   const closelocmenu = () => {
@@ -26,53 +38,43 @@ const MobileEscapeRootMenu = (props) => {
         </span>
       </div>
       <div className="loc-menu-content px-4">
-        <div className="sep-container max-w-[700px] mx-auto ">
-          <h2 className="dark-gold py-2 text-center text-2xl uppercase md:text-[40px] lg:text-[44px] font-os font-bold">
-            CHOOSE YOUR LOCATION
+        <div className="sep-container max-w-[600px] mx-auto ">
+          <h2 className="dark-gold py-2 text-center text-2xl uppercase md:text-[40px] lg:text-[44px] leading-[1.2] font-os font-bold">
+            CHOOSE YOUR LOCATION FOR MOBILE ESCAPE ROOM
           </h2>
         </div>
 
         <div className="loc-menu-grid max-w-6xl mx-auto mt-5 md:mt-8 pb-8">
           {/*==================location xcolumn======================*/}
-          {props.locationSlugList.map((loc) => {
+          {mobileEscapeRootMenuList.map((stateItem, index) => {
             return (
-              <div key={loc.id} className="loc-menu-box ">
+              <div key={index} className="loc-menu-box ">
                 {/*==================location NEW YORK======================*/}
-                <div className="loc-menu-head mb-2">
+                <div className="loc-menu-head mb-0">
                   <h3 className="text-light-gold text-xl md:text-2xl font-bold">
                     <span className="inline-block pb-1 border-b border-light-gold">
-                      {loc.stateName}
+                      {stateItem.state}
                     </span>
                   </h3>
                 </div>
                 <div className="loc-item-box py-2 border-dark-coffee">
-                  {loc.locations.map((item) => {
+                  {stateItem.locations.map((item, index) => {
                     return (
                       <div
-                        key={loc.id + item.id}
+                        key={index}
                         className=" loc-item py-2 border-b border-dark-coffee"
                       >
                         {props.goMobileEecapeForm ? (
-                          <a
-                            href={
-                              "/" +
-                              item.locationSlug +
-                              "/activities/mobile-escape-room#mobile-escape-room-form"
-                            }
-                            className="loc-link block"
+                          <button
+                            onClick={() => {
+                              partyFormBooking(
+                                eventFormBookingLinks[item.locationSlug]
+                              );
+                            }}
+                            className="mer-booking-btn block md:text-lg golden-text"
                           >
-                            <div className="flex space-x-1 items-center md:text-lg">
-                              <span className="golden-text">
-                                {item.locationName}
-                              </span>
-                              <span className="text-gold">
-                                <FaAngleRight />
-                              </span>
-                            </div>
-                            <div className="text-gray-500 text-sm md:text-base text-left">
-                              {item.mall}
-                            </div>
-                          </a>
+                            {item.locationName}
+                          </button>
                         ) : (
                           <a
                             href={

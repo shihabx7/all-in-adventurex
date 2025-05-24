@@ -15,9 +15,17 @@ const partyFormBooking = (bookingData) => {
 const MobileEscapeGameSlider = ({
   gameCarouselSectionData,
   locationName,
-  pricingSectionData,
   locationSlug,
+  setShowMobileEecapeMenu,
+  setGoMobileEecapeForm,
+  goMobileEecapeForm,
 }) => {
+  const showMobileEscapeBookingMenu = () => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.add("overflow-hidden");
+    setGoMobileEecapeForm(true);
+    setShowMobileEecapeMenu(true);
+  };
   return (
     <div className="mer-games-slider bg-black   relative">
       <div className="py-16  py:pt-20 lg:pt-20 lg:pb-28 xl:pb-28 xl:pt-20 3xl:pt-24 3xl:pb-28  z-20 ">
@@ -57,14 +65,23 @@ const MobileEscapeGameSlider = ({
           )}
         </div>
         <div className="card-game-link mt-7 rm:mt-9 md:mt-7 xl:mt-8 flex justify-center">
-          <button
-            onClick={() => {
-              partyFormBooking(eventFormBookingLinks[locationSlug]);
-            }}
-            className="max-w-[280px] md:max-w-[300px] px-14 md:px-16 text-center border block text-white border-red-600 bg-red-600 py-[14px] md:py-3 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
-          >
-            GET A QUOTE
-          </button>
+          {locationSlug ? (
+            <button
+              onClick={() => {
+                partyFormBooking(eventFormBookingLinks[locationSlug]);
+              }}
+              className="max-w-[280px] md:max-w-[300px] px-14 md:px-16 text-center border block text-white border-red-600 bg-red-600 py-[14px] md:py-3 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
+            >
+              GET A QUOTE
+            </button>
+          ) : (
+            <button
+              onClick={(e) => showMobileEscapeBookingMenu(e)}
+              className="max-w-[340px] px-10 text-center border block text-white border-red-600 bg-red-600 py-[16px] md:py-4 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
+            >
+              CHOOSE YOUR LOCATION
+            </button>
+          )}
         </div>
       </div>
     </div>

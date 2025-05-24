@@ -1,4 +1,3 @@
-
 import SectionBorderBottom from "../util/SectionBorderBottom";
 
 const MobileEscapePricing = ({ pricingSectionData, locationName }) => {

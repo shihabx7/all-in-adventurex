@@ -16,7 +16,16 @@ const MobileEscapEx = ({
   experienceSectionData,
   locationName,
   locationSlug,
+  setShowMobileEecapeMenu,
+  setGoMobileEecapeForm,
+  goMobileEecapeForm,
 }) => {
+  const showMobileEscapeBookingMenu = () => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.add("overflow-hidden");
+    setGoMobileEecapeForm(true);
+    setShowMobileEecapeMenu(true);
+  };
   return (
     <div className="mer-hero  bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] relative py-16 md:py-20 lg:py-28 px-4 overflow-hidden">
       <SectionBorderBottom />
@@ -41,14 +50,23 @@ const MobileEscapEx = ({
             ></div>
             {/* ==================button=====================*/}
             <div className="mbl-h-btn  mt-5 md:mt-10 2xl:mt-12">
-              <button
-                onClick={() => {
-                  partyFormBooking(eventFormBookingLinks[locationSlug]);
-                }}
-                className="max-w-[280px] md:max-w-[300px] px-14 md:px-16 text-center border block text-white border-red-600 bg-red-600 py-[14px] md:py-3 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
-              >
-                GET A QUOTE
-              </button>
+              {locationSlug ? (
+                <button
+                  onClick={() => {
+                    partyFormBooking(eventFormBookingLinks[locationSlug]);
+                  }}
+                  className="max-w-[280px] md:max-w-[300px] px-14 md:px-16 text-center border block text-white border-red-600 bg-red-600 py-[14px] md:py-3 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
+                >
+                  GET A QUOTE
+                </button>
+              ) : (
+                <button
+                  onClick={(e) => showMobileEscapeBookingMenu(e)}
+                  className="max-w-[340px] px-10 text-center border block text-white border-red-600 bg-red-600 py-[16px] md:py-4 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
+                >
+                  CHOOSE YOUR LOCATION
+                </button>
+              )}
             </div>
           </div>
           <div className="mbl-col w-full lg:w-1/2 order-1 lg:order-2 mb-6 md:mb-8 lg:mb-0">
@@ -69,7 +87,7 @@ const MobileEscapEx = ({
             </div>
           </div>
         </div>
-        {/* ==================+++section row 2   +++=====================*/}
+        {/* ==================+++partner section row    +++=====================*/}
         <div className="mbl-row mbl-partners mt-12 md:mt-10 lg:mt-16">
           <div className="md:max-w-[600px] lg:max-w-[900px] xl:max-w-[1090px]">
             <MobileTitleSeparatorLeft

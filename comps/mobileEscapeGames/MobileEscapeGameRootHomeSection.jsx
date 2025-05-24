@@ -90,7 +90,7 @@ const MobileEscapeGameRootHomeSection = (props) => {
                     onClick={(e) => showLocatioForm(e)}
                     className="w-[48%] md:max-w-[220px] text-center border block text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
                   >
-                    INQUIRE NOW
+                    GET A QUOTE
                   </button>
                 }
                 <button
@@ -104,9 +104,7 @@ const MobileEscapeGameRootHomeSection = (props) => {
             <div className="mbl-col w-full lg:w-1/2 order-1 lg:order-2 mt-3 md:mt-0 mb-6 md:mb-8 lg:mb-0">
               <div className="mbl-h-img">
                 <img
-                  alt={
-                    "A group of women examining a box of items during an All In Adventures Mobile Escape Room experience."
-                  }
+                  alt={"Allinadventures mobile escape room"}
                   src={
                     "https://cdn.allinadventures.com/uploads/All_In_Adventures_Mobile_Escappe_Room_For_Big_Event_eb07303e99.jpg"
                   }

@@ -8,11 +8,12 @@ import { getDealsCouponPageData } from "./api/getDealsCouponPageData";
 import DealsAndCouponHero from "../comps/dealsPageComps/DealsAndCouponHero";
 import DealsFaqs from "../comps/dealsPageComps/DealsFaqs";
 import AllDealsAndCoupon from "../comps/dealsPageComps/AllDealsAndCoupon";
+import AllCouponOpt from "../comps/dealsPageComps/AllCouponOpt";
 import PageBread from "../comps/util/PageBread";
 import SinglePageSeo from "../comps/util/SinglePageSeo";
 import UnlimitedEscapeGameMenu from "../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
 import { useState } from "react";
-
+import Flodesk from "../comps/util/Flodesk";
 const DealsCoupon = (props) => {
   const [showUerBookingList, setShowUerBookingList] = useState(false);
 
@@ -27,6 +28,7 @@ const DealsCoupon = (props) => {
           />
         </div>
       )}
+      {/* <SinglePageSeo meta={props.pageMeta} loadFlodesk={true} />*/}
       <SinglePageSeo meta={props.pageMeta} />
       <RootNav
         locationSlugList={props.locationSlugList}

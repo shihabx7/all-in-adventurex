@@ -82,8 +82,19 @@ const MobileEscapeGamePageUI = (props) => {
       {props.mobileEscapeRoomPageData.pageHero !== null ? (
         <MobileEscapeHero
           pageHero={props.mobileEscapeRoomPageData.pageHero}
-          locationName={props.locationName}
-          locationSlug={props.locationSlug}
+          locationName={props.locationName ? props.locationName : false}
+          locationSlug={props.locationSlug ? props.locationSlug : false}
+          setShowMobileEecapeMenu={
+            props.setShowMobileEecapeMenu
+              ? props.setShowMobileEecapeMenu
+              : false
+          }
+          setGoMobileEecapeForm={
+            props.setGoMobileEecapeForm ? props.setGoMobileEecapeForm : false
+          }
+          goMobileEecapeForm={
+            props.goMobileEecapeForm ? props.goMobileEecapeForm : false
+          }
         />
       ) : (
         <></>
@@ -91,15 +102,26 @@ const MobileEscapeGamePageUI = (props) => {
       {/** ==section 2 */}
       <MobileEscapePricing
         pricingSectionData={props.mobileEscapeRoomPageData.pricingSectionData}
-        locationName={props.locationName}
+        locationName={props.locationName ? props.locationName : false}
       />
       {props.mobileEscapeRoomPageData.gameCarouselSectionData !== null ? (
         <MobileEscapeGameSlider
           gameCarouselSectionData={
             props.mobileEscapeRoomPageData.gameCarouselSectionData
           }
-          locationName={props.locationName}
-          locationSlug={props.locationSlug}
+          locationName={props.locationName ? props.locationName : false}
+          locationSlug={props.locationSlug ? props.locationSlug : false}
+          setShowMobileEecapeMenu={
+            props.setShowMobileEecapeMenu
+              ? props.setShowMobileEecapeMenu
+              : false
+          }
+          setGoMobileEecapeForm={
+            props.setGoMobileEecapeForm ? props.setGoMobileEecapeForm : false
+          }
+          goMobileEecapeForm={
+            props.goMobileEecapeForm ? props.goMobileEecapeForm : false
+          }
         />
       ) : (
         <></>
@@ -109,8 +131,19 @@ const MobileEscapeGamePageUI = (props) => {
           experienceSectionData={
             props.mobileEscapeRoomPageData.experienceSectionData
           }
-          locationName={props.locationName}
-          locationSlug={props.locationSlug}
+          locationName={props.locationName ? props.locationName : false}
+          locationSlug={props.locationSlug ? props.locationSlug : false}
+          setShowMobileEecapeMenu={
+            props.setShowMobileEecapeMenu
+              ? props.setShowMobileEecapeMenu
+              : false
+          }
+          setGoMobileEecapeForm={
+            props.setGoMobileEecapeForm ? props.setGoMobileEecapeForm : false
+          }
+          goMobileEecapeForm={
+            props.goMobileEecapeForm ? props.goMobileEecapeForm : false
+          }
         />
       ) : (
         <></>
@@ -120,7 +153,7 @@ const MobileEscapeGamePageUI = (props) => {
           testimonialSectionData={
             props.mobileEscapeRoomPageData.testimonialSectionData
           }
-          locationName={props.locationName}
+          locationName={props.locationName ? props.locationName : false}
         />
       ) : (
         <></>
@@ -129,17 +162,28 @@ const MobileEscapeGamePageUI = (props) => {
         <MobileEscapeFaqSection
           faqSectionData={props.mobileEscapeRoomPageData.faqSectionData}
           faqList={faqList}
-          locationName={props.locationName}
+          locationName={props.locationName ? props.locationName : false}
         />
       ) : (
         <></>
       )}
       {props.mobileEscapeRoomPageData.contactSectionData !== null ? (
         <MobileEscapeContact
-          locationInfo={props.locationInfo}
+          locationInfo={props.locationInfo ? props.locationInfo : false}
           contactSectionData={props.mobileEscapeRoomPageData.contactSectionData}
-          locationName={props.locationName}
-          locationSlug={props.locationSlug}
+          locationName={props.locationName ? props.locationName : false}
+          locationSlug={props.locationSlug ? props.locationSlug : false}
+          setShowMobileEecapeMenu={
+            props.setShowMobileEecapeMenu
+              ? props.setShowMobileEecapeMenu
+              : false
+          }
+          setGoMobileEecapeForm={
+            props.setGoMobileEecapeForm ? props.setGoMobileEecapeForm : false
+          }
+          goMobileEecapeForm={
+            props.goMobileEecapeForm ? props.goMobileEecapeForm : false
+          }
         />
       ) : (
         <></>
