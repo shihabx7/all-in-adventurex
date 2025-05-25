@@ -36,7 +36,7 @@ const SingleMobileEscapeRoom = (props) => {
         setGoMobileEecapeForm={setGoMobileEecapeForm}
         goMobileEecapeForm={goMobileEecapeForm}
         locationSlug={"winston-salem-nc"}
-        locationName={"Winston-salem NC"}
+        locationName={"Winston-salem, NC"}
       />
       {/* =======header content ======== end */}
 
@@ -49,7 +49,7 @@ const SingleMobileEscapeRoom = (props) => {
           setGoMobileEecapeForm={setGoMobileEecapeForm}
           goMobileEecapeForm={goMobileEecapeForm}
           locationSlug={"winston-salem-nc"}
-          locationName={"Winston-salem NC"}
+          locationName={"Winston-salem, NC"}
         />
       </div>
       {/* =========================================================================================main content ======== end */}

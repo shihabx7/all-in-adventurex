@@ -40,7 +40,9 @@ const MobileEscapeRootMenu = (props) => {
       <div className="loc-menu-content px-4">
         <div className="sep-container max-w-[600px] mx-auto ">
           <h2 className="dark-gold py-2 text-center text-2xl uppercase md:text-[40px] lg:text-[44px] leading-[1.2] font-os font-bold">
-            CHOOSE YOUR LOCATION FOR MOBILE ESCAPE ROOM
+            {props.goMobileEecapeForm
+              ? "GET YOUR QUOTE FOR MOBILE ESCAPE ROOM"
+              : "CHOOSE YOUR LOCATION FOR MOBILE ESCAPE ROOM"}
           </h2>
         </div>
 

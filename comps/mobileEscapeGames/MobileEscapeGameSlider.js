@@ -70,16 +70,16 @@ const MobileEscapeGameSlider = ({
               onClick={() => {
                 partyFormBooking(eventFormBookingLinks[locationSlug]);
               }}
-              className="max-w-[280px] md:max-w-[300px] px-14 md:px-16 text-center border block text-white border-red-600 bg-red-600 py-[14px] md:py-3 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
+              className="max-w-[280px] md:max-w-[300px]  px-12 md:px-14 py-[14px] md:py-4 text-center border block text-white border-red-600 bg-red-600 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
             >
               GET A QUOTE
             </button>
           ) : (
             <button
               onClick={(e) => showMobileEscapeBookingMenu(e)}
-              className="max-w-[340px] px-10 text-center border block text-white border-red-600 bg-red-600 py-[16px] md:py-4 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
+              className="max-w-[300px] px-12 md:px-14 py-[14px] md:py-4 text-center border block text-white border-red-600 bg-red-600 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
             >
-              CHOOSE YOUR LOCATION
+              GET A QUOTE
             </button>
           )}
         </div>

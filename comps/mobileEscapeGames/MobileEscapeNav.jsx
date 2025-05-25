@@ -83,22 +83,13 @@ const MobileEscapeNav = (props) => {
             <div className="home-nav-bar flex justify-between items-center py-2 px-2 sm:p-1 lg:py-2 lg:px-0">
               {/**==========================logo================== */}
               <div className="logo">
-                {props.locationSlug ? (
-                  <a
-                    href={"/locations/" + props.locationslug}
-                    className="flex items-center"
-                  >
-                    <SvglogoMain />
-                  </a>
-                ) : (
-                  <a href={"/"} className="flex items-center">
-                    <SvglogoMain />
-                  </a>
-                )}
+                <a href={"/"} className="flex items-center">
+                  <SvglogoMain />
+                </a>
               </div>
               {/**==========================logo end================== */}
               {/*============location search btn==========*/}
-              <LocationMenuBtnHeader />
+              <LocationMenuBtnHeader locationName={props.locationName} />
               {/*============location search btn end==========*/}
               {/*============nav bar btns ==========*/}
               <div className="home-nav-menu flex items-center space-x-0 md:space-x-4 lg:space-x-14 justify-end ">
