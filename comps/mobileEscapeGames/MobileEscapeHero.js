@@ -42,7 +42,7 @@ const MobileEscapeHero = ({
               </h1>
             ) : (
               <h1 className="text-[#4A2F03] text-[13px] leading-[1.2] rm:text-[14px]  md:text-[24px] 2xl:text-[26px] uppercase font-semibold">
-                All In Adventures' Mobile Escape Rooms
+                Mobile Escape Rooms
               </h1>
             )}
             <h2
