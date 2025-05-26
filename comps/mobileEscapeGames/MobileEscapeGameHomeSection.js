@@ -1,6 +1,16 @@
 import MobileTitleSeparatorLeft from "./MobileTitleSeparatorLeft";
 import { mobileEscapePageHeroInfoList } from "../../lib/tempData/mobileEscapeTempData";
 import { useEffect, useState } from "react";
+import { eventFormBookingLinks } from "../../lib/tempData/eventFormBookingLinks";
+const partyFormBooking = (bookingData) => {
+  FH.open({
+    shortname: bookingData.shortName,
+    fallback: "simple",
+    fullItems: "yes",
+    flow: "no",
+    view: { item: bookingData.itemNo },
+  });
+};
 const MobileEscapeGameHomeSection = (props) => {
   const [deskList, setDeskList] = useState([]);
   useEffect(() => {
@@ -84,16 +94,14 @@ const MobileEscapeGameHomeSection = (props) => {
               </div>
               {/* ==================button=====================*/}
               <div className="mbl-h-btn flex space-x-2 justify-between md:justify-start md:space-x-6 mt-8">
-                <a
-                  href={
-                    "/" +
-                    props.locationSlug +
-                    "/activities/mobile-escape-room#mobile-escape-room-form"
-                  }
+                <button
+                  onClick={() => {
+                    partyFormBooking(eventFormBookingLinks[props.locationSlug]);
+                  }}
                   className="w-[48%] md:max-w-[220px] text-center border block text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
                 >
-                  INQUIRE NOW
-                </a>
+                  GET A QUOTE
+                </button>
                 <a
                   href={
                     "/" + props.locationSlug + "/activities/mobile-escape-room"
