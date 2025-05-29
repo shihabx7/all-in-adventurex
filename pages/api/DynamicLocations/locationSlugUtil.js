@@ -101,3 +101,5 @@ export async function getEventPaths() {
   return paths;
 }
 */
+const gtt =
+  "hollywood premiere escape room in hadley ma, hollywood premiere escape room hadley ma, hollywood escape room, hollywood premiere mystery room hadley ma, all in adventure hollywood premiere hadley ma, hollywood theme escape room hadley ma, hollywood celebrity escape room, hollywood premiere mystery room, hollywood mystery escape room hadley ma, hollywood premiere escape room near me, hollywood escape room near me hadley ma, hollywood theme escape room near me, hollywood celebrity escape room near me hadley ma, hollywood premiere mystery room near me, hollywood mystery escape room near me";
