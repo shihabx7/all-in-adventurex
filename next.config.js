@@ -22,6 +22,11 @@ const gnRed = [
     permanent: prm,
   },
   {
+    source: "/activities/hollywood-premiere",
+    destination: "/activities/reel-of-fortune",
+    permanent: prm,
+  },
+  {
     source: "/virtual-games/virtual-game-show-room",
     destination: "/activities/locked-in-the-lift",
     permanent: prm,
@@ -252,8 +257,13 @@ const albanyRed = [
     permanent: prm,
   },
   {
+    source: "/albany-ny/activities/hollywood-premiere",
+    destination: "/albany-ny/activities/reel-of-fortune",
+    permanent: prm,
+  },
+  {
     source: "/rooms/hollywood-premiere-albany-ny",
-    destination: "/albany-ny/activities/hollywood-premiere",
+    destination: "/albany-ny/activities/reel-of-fortune",
     permanent: prm,
   },
   {
@@ -431,8 +441,13 @@ const middletownRed = [
     permanent: prm,
   },
   {
+    source: "/middletown-ny/activities/hollywood-premiere",
+    destination: "/middletown-ny/activities/reel-of-fortune",
+    permanent: prm,
+  },
+  {
     source: "/rooms/hollywood-premiere-middletown-ny",
-    destination: "/middletown-ny/activities/hollywood-premiere",
+    destination: "/middletown-ny/activities/reel-of-fortune",
     permanent: prm,
   },
   {
@@ -459,11 +474,6 @@ const middletownRed = [
 
 // =========================================-------------syracuse-ny NY
 const syracuseRed = [
-  {
-    source: "/syracuse-ny/activities/hollywood-premiere",
-    destination: "/syracuse-ny/activities/reel-of-fortune",
-    permanent: prm,
-  },
   {
     source: "/locations/syracuse-ny/events",
     destination: "/syracuse-ny/events",
@@ -532,8 +542,13 @@ const syracuseRed = [
     permanent: prm,
   },
   {
+    source: "/syracuse-ny/activities/hollywood-premiere",
+    destination: "/syracuse-ny/activities/reel-of-fortune",
+    permanent: prm,
+  },
+  {
     source: "/rooms/hollywood-premiere-syracuse-ny",
-    destination: "/syracuse-ny/activities/hollywood-premiere",
+    destination: "/syracuse-ny/activities/reel-of-fortune",
     permanent: prm,
   },
   {
@@ -598,8 +613,13 @@ const watertownRed = [
     permanent: prm,
   },
   {
+    source: "/watertown-ny/activities/hollywood-premiere",
+    destination: "/watertown-ny/activities/reel-of-fortune",
+    permanent: prm,
+  },
+  {
     source: "/rooms/hollywood-premiere-watertown-ny",
-    destination: "/watertown-ny/activities/hollywood-premiere",
+    destination: "/watertown-ny/activities/reel-of-fortune",
     permanent: prm,
   },
   {
@@ -894,8 +914,13 @@ const hadleyRed = [
     permanent: prm,
   },
   {
+    source: "/hadley-ma/activities/hollywood-premiere",
+    destination: "/hadley-ma/activities/reel-of-fortune",
+    permanent: prm,
+  },
+  {
     source: "/rooms/hollywood-premiere-hadley",
-    destination: "/hadley-ma/activities/hollywood-premiere",
+    destination: "/hadley-ma/activities/reel-of-fortune",
     permanent: prm,
   },
   {
@@ -955,8 +980,13 @@ const holyokeRed = [
     permanent: prm,
   },
   {
+    source: "/holyoke-ma/activities/hollywood-premiere",
+    destination: "/holyoke-ma/activities/reel-of-fortune",
+    permanent: prm,
+  },
+  {
     source: "/rooms/hollywood-premiere-holyoke",
-    destination: "/holyoke-ma/activities/hollywood-premiere",
+    destination: "/holyoke-ma/activities/reel-of-fortune",
     permanent: prm,
   },
   {
@@ -1016,8 +1046,13 @@ const kingstonRed = [
     permanent: prm,
   },
   {
+    source: "/kingston-ma/activities/hollywood-premiere",
+    destination: "/kingston-ma/activities/reel-of-fortune",
+    permanent: prm,
+  },
+  {
     source: "/rooms/hollywood-premiere-kingston-ma",
-    destination: "/kingston-ma/activities/hollywood-premiere",
+    destination: "/kingston-ma/activities/reel-of-fortune",
     permanent: prm,
   },
   {
@@ -1077,8 +1112,13 @@ const nAttleboroughRed = [
     permanent: prm,
   },
   {
+    source: "/n-attleborough-ma/activities/hollywood-premiere",
+    destination: "/n-attleborough-ma/activities/reel-of-fortune",
+    permanent: prm,
+  },
+  {
     source: "/rooms/hollywood-premiere-n-attleborough-ma",
-    destination: "/n-attleborough-ma/activities/hollywood-premiere",
+    destination: "/n-attleborough-ma/activities/reel-of-fortune",
     permanent: prm,
   },
   {
@@ -1143,8 +1183,13 @@ const milfordRed = [
     permanent: prm,
   },
   {
+    source: "/milford-ct/activities/hollywood-premiere",
+    destination: "/milford-ct/activities/reel-of-fortune",
+    permanent: prm,
+  },
+  {
     source: "/rooms/hollywood-premiere-milford-ct",
-    destination: "/milford-ct/activities/hollywood-premiere",
+    destination: "/milford-ct/activities/reel-of-fortune",
     permanent: prm,
   },
   {
@@ -1204,8 +1249,13 @@ const manchesterRed = [
     permanent: prm,
   },
   {
+    source: "/manchester-ct/activities/hollywood-premiere",
+    destination: "/manchester-ct/activities/reel-of-fortune",
+    permanent: prm,
+  },
+  {
     source: "/rooms/hollywood-premiere-manchester-ct",
-    destination: "/manchester-ct/activities/hollywood-premiere",
+    destination: "/manchester-ct/activities/reel-of-fortune",
     permanent: prm,
   },
   {
@@ -1265,8 +1315,13 @@ const waterburyRed = [
     permanent: prm,
   },
   {
+    source: "/waterbury-ct/activities/hollywood-premiere",
+    destination: "/waterbury-ct/activities/reel-of-fortune",
+    permanent: prm,
+  },
+  {
     source: "/rooms/hollywood-premiere-waterbury-ct",
-    destination: "/waterbury-ct/activities/hollywood-premiere",
+    destination: "/waterbury-ct/activities/reel-of-fortune",
     permanent: prm,
   },
   {
@@ -1435,8 +1490,13 @@ const rockawayRed = [
     permanent: prm,
   },
   {
+    source: "/rockaway-nj/activities/hollywood-premiere",
+    destination: "/rockaway-nj/activities/reel-of-fortune",
+    permanent: prm,
+  },
+  {
     source: "/rooms/hollywood-premiere-rockaway-nj",
-    destination: "/rockaway-nj/activities/hollywood-premiere",
+    destination: "/rockaway-nj/activities/reel-of-fortune",
     permanent: prm,
   },
   {
@@ -1502,8 +1562,13 @@ const woodbridgeRed = [
     permanent: prm,
   },
   {
+    source: "/woodbridge-nj/activities/hollywood-premiere",
+    destination: "/woodbridge-nj/activities/reel-of-fortune",
+    permanent: prm,
+  },
+  {
     source: "/rooms/hollywood-premiere-woodbridge-nj",
-    destination: "/woodbridge-nj/activities/hollywood-premiere",
+    destination: "/woodbridge-nj/activities/reel-of-fortune",
     permanent: prm,
   },
   {
@@ -1569,8 +1634,13 @@ const bowieRed = [
     permanent: prm,
   },
   {
+    source: "/bowie-md/activities/hollywood-premiere",
+    destination: "/bowie-md/activities/reel-of-fortune",
+    permanent: prm,
+  },
+  {
     source: "/rooms/hollywood-premiere-bowie-md",
-    destination: "/bowie-md/activities/hollywood-premiere",
+    destination: "/bowie-md/activities/reel-of-fortune",
     permanent: prm,
   },
   {
@@ -1636,8 +1706,13 @@ const whitemarshRed = [
     permanent: prm,
   },
   {
+    source: "/white-marsh-md/activities/hollywood-premiere",
+    destination: "/white-marsh-md/activities/reel-of-fortune",
+    permanent: prm,
+  },
+  {
     source: "/rooms/hollywood-premiere-white-marsh",
-    destination: "/white-marsh-md/activities/hollywood-premiere",
+    destination: "/white-marsh-md/activities/reel-of-fortune",
     permanent: prm,
   },
   {
@@ -1703,8 +1778,13 @@ const roanokeRed = [
     permanent: prm,
   },
   {
+    source: "/roanoke-va/activities/hollywood-premiere",
+    destination: "/roanoke-va/activities/reel-of-fortune",
+    permanent: prm,
+  },
+  {
     source: "/rooms/hollywood-premiere-roanoke-va",
-    destination: "/roanoke-va/activities/hollywood-premiere",
+    destination: "/roanoke-va/activities/reel-of-fortune",
     permanent: prm,
   },
   {
