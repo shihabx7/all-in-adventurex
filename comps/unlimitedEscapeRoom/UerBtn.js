@@ -36,7 +36,7 @@ function UerBtn({ isHeader, setShowUerBookingList, locationSlug }) {
                 e.preventDefault();
                 bookUnlimitedPlayPass(UerBookingLinks[locationSlug]);
               }}
-              className="px-5 rm:px-6 md:px-8 text-center border inline-block text-[14px] rm:text-[16px] lg:text-[18px] text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700 transition duration-300"
+              className="w-full md:w-auto px-5 rm:px-6  md:px-8 text-center border inline-block text-[14px] rm:text-[16px] lg:text-[18px] text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700 transition duration-300"
             >
               BUY UNLIMITED PLAY PASS
             </button>
@@ -45,7 +45,7 @@ function UerBtn({ isHeader, setShowUerBookingList, locationSlug }) {
               onClick={() => {
                 handleClick(setShowUerBookingList);
               }}
-              className="px-5 rm:px-6 md:px-8 text-center border inline-block text-[14px] rm:text-[16px] lg:text-[18px] text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700 transition duration-300"
+              className="w-full md:w-auto px-5 rm:px-6 md:px-8 text-center border inline-block text-[14px] rm:text-[16px] lg:text-[18px] text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700 transition duration-300"
             >
               BUY UNLIMITED PLAY PASS
             </button>

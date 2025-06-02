@@ -24,7 +24,7 @@ const CouponFormOpt = (props) => {
   });
 
   useEffect(() => {
-    let sd = (Math.random() * (30.5 - 5.0) + 5.0).toFixed(2);
+    let sd = (Math.random() * (30.5 - 5.0) + 5.0).toFixed(0);
     let ma = (Math.random() * (40 - 2) + 2).toFixed(0);
     setSavedDoller(sd);
     setMinAgo(ma);
@@ -196,19 +196,40 @@ const CouponFormOpt = (props) => {
   /*==================== rand saving============== */
 
   return (
-    <div className="couponcard bg-[#FFF3D8] border border-[#DAC89F] drop-shadow-sm my-4">
+    <div className="couponcard bg-[#FBF2DC] border border-[#DAC89F] rounded-lg drop-shadow-sm my-4 flex flex-col md:flex-row justify-between ">
+      <div className=" md:hidden">
+        <div className="coupon-form-top flex justify-between items-center  px-[8px] py-[16px] md:py-[14px] lg:py-[16px] rm:px-3 bg-[#111111] rounded-t-[6px]">
+          <div className="coupon-varified flex space-x-1 md:space-x-1 items-center uppercase text-[#E0BF62] text-xs rm:text-sm md:text-base">
+            <span className="text-sm rm:text-lg md:text-xl">
+              <BsFillCheckCircleFill />
+            </span>
+            <span>VERIFIED</span>
+          </div>
+          <div className="coupon-varified flex space-x-[2px] md:space-x-1 items-center text-[#E0BF62] text-xs md:text-sm">
+            <span className="text-base rm:text-lg md:text-xl">
+              <BsCheck />
+            </span>
+            <span>
+              Last user saved
+              <span className="font-medium"> ${savedDoller} </span> {minAgo} min
+              ago
+            </span>
+          </div>
+        </div>
+      </div>
       {/* ==================coupon desc============================= */}
-      <div className="copoun-desc-box px-4 py-4 md:px-6 md:py-6">
+      <div className="copoun-desc-box md:max-w-[48%] lg:max-w-[50%] px-4 py-7 md:px-6 md:py-6 lg:px-7 lg:py-7">
         <div className="coupon-title">
-          <p className="text-lg text-[#938056]">DEALS AND COUPONS</p>
-          <h2 className="golden-text font-os font-bold text-2xl md:text-3xl lg:text-4xl uppercase">
+          <p className="md:text-lg text-[#938056]">CURRENT DEALS AND COUPONS</p>
+          <h2 className="golden-text font-os font-bold text-[24px] rm:text-[26px] md:text-3xl lg:text-4xl uppercase">
             {props.coupon.coupon_title}
           </h2>
         </div>
         <div className="coupon-desc mt-4 md:mt-4">
-          <p className="text-lg text-[#464646] lg:text-lg">
-            {props.coupon.coupon_desc}
-          </p>
+          <div
+            className="text-[#464646]  lg:text-lg dc-gap"
+            dangerouslySetInnerHTML={{ __html: props.coupon.coupon_desc }}
+          ></div>
           {props.coupon.social && (
             <div className="flex space-x-4 md:space-x-8 my-4">
               <a
@@ -248,40 +269,30 @@ const CouponFormOpt = (props) => {
       </div>
       {/* ==================coupon desc============================= */}
       {/* ==================coupon from============================= */}
-      <div className="copoun-form-box bg-[#F4E6C3] flex justify-between flex-col  md:flex-row space-y-2 space-x-0 md:space-y-0  md:space-x-2 ">
-        <div className="md:w-1/3 coupon-offer-col bg-[#000000]  text-center">
-          <div className="py-12">
-            <p className="golden-text text-[64px] font-bold font-os leading-[1.2]">
-              {props.coupon.coupon_offer_off}
-            </p>
-            <p className="golden-text text-[48px] font-os font-medium uppercase">
-              off
-            </p>
-          </div>
-          <div className="bg-[#DAC89F] py-2 text-[#222] md:text-lg">
-            {props.coupon.offer_per}
-          </div>
-        </div>
-        <div className="coupon-form-col md:w-2/3  flex flex-col justify-between ">
-          <div className="coupon-form-top flex justify-between items-center mt-2 md:mt-4 px-3 ">
-            <div className="coupon-varified flex space-x-2 items-center uppercase text-[#A78849] text-sm md:text-base">
-              <span className="text-lg md:text-xl">
-                <BsFillCheckCircleFill />
-              </span>
-              <span>VERIFIED</span>
-            </div>
-            <div className="coupon-varified flex space-x-1 items-center text-[#71603D] text-xs md:text-sm">
-              <span className="text-xl">
-                <BsCheck />
-              </span>
-              <span>
-                Last user saved
-                <span className="font-medium"> ${savedDoller}</span> {minAgo}{" "}
-                min ago
-              </span>
+      <div className="copoun-form-box bg-[#F4E6C3] grow rounded-b-lg md:rounded-b-[0px] md:rounded-r-[8px]">
+        <div className="coupon-form-col ">
+          <div className="hidden md:block">
+            <div className="coupon-form-top flex justify-between items-center  px-1 py-[12px] md:py-[14px] lg:py-[16px] rm:px-3 bg-[#111111] md:rounded-tr-[8px]">
+              <div className="coupon-varified flex space-x-1 md:space-x-1 items-center uppercase text-[#E0BF62] text-xs rm:text-sm md:text-base">
+                <span className="text-sm rm:text-lg md:text-xl">
+                  <BsFillCheckCircleFill />
+                </span>
+                <span>VERIFIED</span>
+              </div>
+              <div className="coupon-varified flex space-x-[2px] md:space-x-1 items-center text-[#E0BF62] text-xs md:text-sm">
+                <span className="text-base rm:text-lg md:text-xl">
+                  <BsCheck />
+                </span>
+                <span>
+                  Last user saved
+                  <span className="font-bold"> ${savedDoller} </span> {minAgo}{" "}
+                  min ago
+                </span>
+              </div>
             </div>
           </div>
-          <div className="flodesk-form">
+
+          <div className="flodesk-form px-3 py-8 md:px-4 md:pt-5 md:pb-7 lg:px-7 lg:pb-8 ">
             <div id={props.foldeskFormData.divId}></div>
             <Script
               dangerouslySetInnerHTML={{

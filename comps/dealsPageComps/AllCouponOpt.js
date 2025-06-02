@@ -6,19 +6,19 @@ import { FiChevronRight } from "react-icons/fi";
 
 const foldeskForm = [
   {
-    formId: "67f550e0f08b888165c44461",
-    divId: "fd-form-67f550e0f08b888165c44461",
-    elId: "#fd-form-67f550e0f08b888165c44461",
+    formId: "683c8527a2151e95163521f7",
+    divId: "fd-form-683c8527a2151e95163521f7",
+    elId: "#fd-form-683c8527a2151e95163521f7",
   },
   {
-    formId: "682dc93f91c1753681f2754a",
-    divId: "fd-form-682dc93f91c1753681f2754a",
-    elId: "#fd-form-682dc93f91c1753681f2754a",
+    formId: "683c5e372a61d6df48bf6ab6",
+    divId: "fd-form-683c5e372a61d6df48bf6ab6",
+    elId: "#fd-form-683c5e372a61d6df48bf6ab6",
   },
   {
-    formId: "682dcd249b0e3e5d568aad9c",
-    divId: "fd-form-682dcd249b0e3e5d568aad9c",
-    elId: "#fd-form-682dcd249b0e3e5d568aad9c",
+    formId: "683c85906c00df771883ef45",
+    divId: "fd-form-683c85906c00df771883ef45",
+    elId: "#fd-form-683c85906c00df771883ef45",
   },
 ];
 const AllCouponOpt = (props) => {
@@ -46,16 +46,19 @@ const AllCouponOpt = (props) => {
         ></img>
       </div>
       {/*======================= boder img end============== */}
-      <div className="section-container max-w-7xl mx-auto  pt-16 md:pt-24 lg:pt-28 relative z-30 md:px-4">
+      <div className="section-container max-w-7xl mx-auto  pt-16 md:pt-24 lg:pt-28 relative z-30 px-3 rm:px-4 md:px-4">
         <div className="mb-8 md:mb-10 lg:mb-12 2xl:mb-16">
           <UnlimitedEscapeRoomSection
             setShowUerBookingList={props.setShowUerBookingList}
           />
         </div>
-        <div className="section-container-ins max-w-5xl mx-auto px-4 pt-2 pb-16 md:pt-3 md:pb-20 lg:pb-28 lg:pt-4 relative z-30">
+        <div className="section-container-ins max-w-[980px] xl:max-w-[1000px] mx-auto  pt-2 pb-16 md:pt-3 md:pb-20 lg:pb-28 lg:pt-4 relative z-30">
           {props.couponlist.map((coupon, index) => {
             return (
-              <div key={index} className="copun-adv mb-8 md:mb-12 shadow-md">
+              <div
+                key={index}
+                className="copun-adv mb-8 md:mb-12 shadow-md rounded-lg"
+              >
                 <CouponFormOpt
                   id={coupon.id}
                   coupon={coupon}
@@ -65,14 +68,6 @@ const AllCouponOpt = (props) => {
             );
           })}
           <CouponDisplay />
-          <div className="view-all flex justify-center mt-8">
-            <a
-              href="/rewards-program"
-              className="flex text-lg  justify-center space-x-1 items-center text-red-600 hover:text-red-700 font-medium"
-            >
-              <span>Learn more about reward program</span> <FiChevronRight />
-            </a>
-          </div>
         </div>
       </div>
     </div>

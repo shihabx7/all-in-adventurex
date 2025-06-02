@@ -29,7 +29,7 @@ const DealsCoupon = (props) => {
         </div>
       )}
       {/* <SinglePageSeo meta={props.pageMeta} loadFlodesk={true} />*/}
-      <SinglePageSeo meta={props.pageMeta} />
+      <SinglePageSeo meta={props.pageMeta} loadFlodesk={true} />
       <RootNav
         locationSlugList={props.locationSlugList}
         escapeGameSlugList={props.escapeGameSlugList}
@@ -47,8 +47,11 @@ const DealsCoupon = (props) => {
         <PageBread />
         {/* =======breadcum content and breadcum root page template======== end */}
 
-        <DealsAndCouponHero pageData={props.pageData} />
-        <AllDealsAndCoupon
+        <DealsAndCouponHero
+          pageData={props.pageData}
+          totalLocations={props.totalLocations}
+        />
+        <AllCouponOpt
           couponlist={props.couponlist}
           setShowUerBookingList={setShowUerBookingList}
         />

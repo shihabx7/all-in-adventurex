@@ -2,16 +2,15 @@ const StaticSubmenu = () => {
   return (
     <div className="submenu-content text-light-gold md:text-lg">
       <div className="submenu-item">
-        <a href="/testimonials" className="flex items-center">
-          <span className="sub-link-txt">Testimonials</span>
+        <a href="/gift-cards" className="flex items-center">
+          <span className="sub-link-txt">Gift Cards</span>
         </a>
       </div>
       <div className="submenu-item">
-        <a href="/gallery" className="flex items-center">
-          <span className="sub-link-txt">Customer Gallery</span>
+        <a href="/unlimited-play-pass" className="flex items-center">
+          <span className="sub-link-txt">Unlimited Play Pass</span>
         </a>
       </div>
-
       <div className="submenu-item">
         <a href="/pricing" className="flex items-center">
           <span className="sub-link-txt">Pricing</span>
@@ -22,14 +21,15 @@ const StaticSubmenu = () => {
           <span className="sub-link-txt">Deals and Coupons</span>
         </a>
       </div>
+
       <div className="submenu-item">
-        <a href="/gift-cards" className="flex items-center">
-          <span className="sub-link-txt">Gift Cards</span>
+        <a href="/testimonials" className="flex items-center">
+          <span className="sub-link-txt">Testimonials</span>
         </a>
       </div>
       <div className="submenu-item">
-        <a href="/unlimited-play-pass" className="flex items-center">
-          <span className="sub-link-txt">Unlimited Play Pass</span>
+        <a href="/gallery" className="flex items-center">
+          <span className="sub-link-txt">Customer Gallery</span>
         </a>
       </div>
       <div className="submenu-item">

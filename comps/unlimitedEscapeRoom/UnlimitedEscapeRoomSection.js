@@ -33,12 +33,9 @@ const UnlimitedEscapeRoomSection = (props) => {
               className="text-[#CA9342] pt-2 lg:pt-8 md:max-w-[620px]  font-bold font-os  text-[20px] rm:text-[24px] sm:text-[36px] md:text-[40px] lg:text-[42px]  font-os outline-tile "
               style={{ lineHeight: 1.2 }}
             >
-              BUY YOUR UNLIMITED PLAY PASS <br /> ONE DAY OR ONE YEAR
+              BUY YOUR UNLIMITED PLAY PASS—ONE DAY OR ONE YEAR
             </h1>
 
-            <p className="text-[#CA9342] text-[13px] rm:text-[14px] md:text-[15px] xl:texxt-[16px] 3xl:text-[17px] font-medium mt-1 md:mt-0">
-              — IT'S YOUR CHOICE!
-            </p>
             <div className="text-slate-100 md:text-lg mt-4 md:mt-6 xl:text-lg xl:max-w-[530px]">
               With All In Adventures' Unlimited Play Pass, you can dive into as
               many Escape Room adventures as you want. Pick the Day Pass for $50
@@ -46,13 +43,13 @@ const UnlimitedEscapeRoomSection = (props) => {
             </div>
 
             {/* ==================button=====================*/}
-            <div className="uer-h-btn  mt-6 md:mt-6 2xl:mt-8 flex flex-col space-y-4 md:space-y-0 md:flex-row items-center md:space-x-4 lg:space-x-2 xl:space-x-4">
-              <div>
+            <div className="uer-h-btn  mt-[40px] md:mt-6 2xl:mt-8 flex flex-col space-y-4 md:space-y-0 md:flex-row items-center md:space-x-4 lg:space-x-2 xl:space-x-4">
+              <div className="w-[260px] md:w-auto ">
                 <UerBtn setShowUerBookingList={props.setShowUerBookingList} />
               </div>
               <div>
                 <a
-                  className="bg-transparent cursor-pointer px-5 rm:px-6 md:px-8 lg:px-5 xl:px-8 text-center border-2 block md:inline-block text-[14px] rm:text-[16px] lg:text-[18px] text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700 transition duration-300"
+                  className="bg-transparent cursor-pointer w-[260px] md:w-auto px-5 rm:px-6 md:px-8 lg:px-5 xl:px-8 text-center border-2 block md:inline-block text-[14px] rm:text-[16px] lg:text-[18px] text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700 transition duration-300"
                   href="/unlimited-play-pass"
                 >
                   LEARN MORE

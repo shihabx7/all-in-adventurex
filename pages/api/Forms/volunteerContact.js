@@ -5,13 +5,9 @@ import {
 } from "./formProtection/verifyClient";
 import { checkRateLimiter } from "./formProtection/reqRateLimit";
 
-
 const escapeHtml = (htmlStr) => {
-  return htmlStr
-    .replace(/&/g, "and")
-    .replace(/</g, " ")
-    .replace(/>/g, " ")
-    .replace(/(?:\r\n|\r|\n)/g, "<br>");
+  return htmlStr.replace(/&/g, "&amp;").replace(/</g, " ").replace(/>/g, " ");
+  // .replace(/(?:\r\n|\r|\n)/g, "<br>");
 };
 
 export default async function volunteerContactHandler(req, res) {
@@ -21,9 +17,15 @@ export default async function volunteerContactHandler(req, res) {
   const email = req.body.email ? escapeHtml(req.body.email.trim()) : "";
   const phone = req.body.phone ? escapeHtml(req.body.phone.trim()) : "";
   const inqType = req.body.inqType ? escapeHtml(req.body.inqType.trim()) : "";
-  const location = req.body.location ? escapeHtml(req.body.location.trim()) : "";
-  const storeEmail = req.body.storeEmail ? escapeHtml(req.body.storeEmail.trim()) : "";
-  const managerEmail = req.body.managerEmail ? escapeHtml(req.body.managerEmail.trim()) : "";
+  const location = req.body.location
+    ? escapeHtml(req.body.location.trim())
+    : "";
+  const storeEmail = req.body.storeEmail
+    ? escapeHtml(req.body.storeEmail.trim())
+    : "";
+  const managerEmail = req.body.managerEmail
+    ? escapeHtml(req.body.managerEmail.trim())
+    : "";
   const msg = req.body.msg ? escapeHtml(req.body.msg.trim()) : "";
   const botMsg = req.body.botMsg ? req.body.botMsg : "";
   const captchaToken = req.body.captchaToken ? req.body.captchaToken : "";
@@ -98,7 +100,6 @@ export default async function volunteerContactHandler(req, res) {
       min: 3,
       max: 200,
       type: "string",
-
     },
     {
       data: location,
@@ -126,7 +127,6 @@ export default async function volunteerContactHandler(req, res) {
       type: "string",
       pattern: "email",
     },
-
   ];
   const verifyClientData = await verifyFormData(vDataArr);
   // console.log("Data valid? " + verifyClientData.isValid);

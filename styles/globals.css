@@ -1496,7 +1496,24 @@ a {
 }
 /*Flodesk---------------------------*/
 .flodesk-form form {
-  padding: 18px !important;
+  padding: 2px !important;
+}
+.flodesk-form form input {
+  background: #ffffff !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+
+  border-bottom: 1px solid #855800 !important;
+}
+.ff-683c8527a2151e95163521f7__title,
+.ff-683c5e372a61d6df48bf6ab6__title,
+.ff-683c85906c00df771883ef45__title {
+  margin-bottom: 12px !important ;
+}
+/*======================= coupon description */
+.dc-gap p {
+  margin-bottom: 12px;
 }
 @media only screen and (max-width: 2000px) {
   .single-blog-content-holder {
@@ -2169,6 +2186,11 @@ a {
 }
 
 @media only screen and (max-width: 500px) {
+  .ff-683c8527a2151e95163521f7__title,
+  .ff-683c5e372a61d6df48bf6ab6__title,
+  .ff-683c85906c00df771883ef45__title {
+    font-size: 36px !important ;
+  }
   .photo-hero-container {
     margin-top: -52%;
   }
@@ -2483,6 +2505,11 @@ a {
 }
 
 @media only screen and (max-width: 340px) {
+  .ff-683c8527a2151e95163521f7__title,
+  .ff-683c5e372a61d6df48bf6ab6__title,
+  .ff-683c85906c00df771883ef45__title {
+    font-size: 32px !important ;
+  }
   .mbl-title-ribbon {
     line-height: 1.2;
   }
