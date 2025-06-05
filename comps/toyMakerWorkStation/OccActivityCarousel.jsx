@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const ActivityCarousel = ({ carouselList }) => {
+const OccActivityCarousel = ({ carouselList }) => {
   const responsive = {
     desktopxl: {
       breakpoint: { max: 4300, min: 2081 },
@@ -94,4 +94,4 @@ const ActivityCarousel = ({ carouselList }) => {
   );
 };
 
-export default ActivityCarousel;
+export default OccActivityCarousel;

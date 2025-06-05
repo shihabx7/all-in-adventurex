@@ -1,5 +1,5 @@
 import SectionTitleLight from "../../common/SectionTitleLight";
-import ActivityCarousel from "../activityCarousel";
+import OccActivityCarousel from "../OccActivityCarousel";
 export default function OccActivitySection({ sectionData, bookingData }) {
   const bookGame = (bookingData) => {
     FH.open({
@@ -36,7 +36,9 @@ export default function OccActivitySection({ sectionData, bookingData }) {
         </div>
         <div className="oc-ac-slider relative">
           {sectionData.activityCarouselData.length > 0 ? (
-            <ActivityCarousel carouselList={sectionData.activityCarouselData} />
+            <OccActivityCarousel
+              carouselList={sectionData.activityCarouselData}
+            />
           ) : (
             <></>
           )}
