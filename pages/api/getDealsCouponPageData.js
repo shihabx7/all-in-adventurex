@@ -57,7 +57,7 @@ export const getDealsCouponPageData = async () => {
         group: "deals",
         ques: "How can I get a discount?",
         ans: [
-          "Glad you asked! Our best offers come from our VIP Rewards Program where you will receive points each time you play that you can use to redeem free experiences and receive additional surprise offers every month! In addition, we offer many other discounts such as our Play It Again offer or our military or mall employee discounts.",
+          "<p>Glad you asked! Our absolute champion of savings is the <a href='https://allinadventures.com/unlimited-play-pass'>Unlimited Play Pass</a> - it's your golden ticket to unlocking endless fun, whether you want to play all year or just pack in a day of non-stop adventure for one unbeatable price!</p><p>But wait, there's more! We've also got a treasure trove of other awesome ways to save, like our super popular Play It Again offer, plus exclusive perks for our amazing military heroes, first responders, and mall employees. Be sure to sign up above to stay informed or ask a team member about all our current special savings when you visit!</p>",
         ],
       },
       {
@@ -75,33 +75,26 @@ export const getDealsCouponPageData = async () => {
         group: "deals",
         ques: "It's my birthday! Do you have any discounts for me?",
         ans: [
-          "Yes! By signing up for our VIP Rewards Program, you will earn a FREE admission on your birthday each year! Choose a location here to sign up.",
+          "<p>Absolutely! Hooray for birthdays! 🎉 Just let one of our team members know it's your special day when you arrive, and we'll gift you a free admission to celebrate with us! (A valid ID might be requested, just to make sure we're celebrating the right awesome person!) </p>",
         ],
       },
+
       {
         id: 4,
         category: "deals",
         group: "deals",
-        ques: "I am already a VIP Rewards Member. How many discounts can I use at one time?",
-        ans: ["You can only use one offer at a time per transaction."],
-      },
-
-      {
-        id: 6,
-        category: "deals",
-        group: "deals",
-        ques: "Do you have any discounts for first responders?",
+        ques: "Do you have any discounts for Military or first responders?",
         ans: [
-          "Absolutely! We invite you to take advantage of our Military discount. Just show proof of employment upon arriving for your booking!",
+          "<p>A huge YES! We are incredibly proud to offer a special discount to our amazing military heroes (and first responders) as our way of saying thank you for your service! Simply present a valid ID upon arrival for your booking, and we'll take care of the rest. Get ready to enjoy some well-deserved fun with us!</p>",
         ],
       },
       {
-        id: 7,
+        id: 5,
         category: "deals",
         group: "deals",
         ques: "Do you have any discounts for larger groups?",
         ans: [
-          'We do! Please check out our <a href="/events" class="text-red-600 hover:text-red-700">events</a> page here for more information and group rates. Have more questions? Reach out to us at <a href="mailto:sales@allinadventures.com" class="text-red-600 hover:text-red-700"> sales@allinadventures.com</a> for additional help.',
+          "<p>Oh, you know it! We absolutely LOVE hosting groups and making your epic gatherings unforgettable! For all the details on our fantastic group rates and to spark some inspiration for your next big event, be sure to dive into our super fun events page <a href='https://allinadventures.com/events'>right here!</a></p><p>Got more questions or dreaming up a truly unique adventure? Don't hesitate to reach out to our amazing team at <a href='mailto:sales@allinadventures.com'>sales@allinadventures.com</a> - they're ready to help you plan an experience that's all in!</p>",
         ],
       },
     ],

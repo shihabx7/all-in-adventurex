@@ -180,6 +180,20 @@ const DropDownMenu = (props) => {
               </a>
             </div>
           )}
+          {props.locationSlug == "raleigh-nc" && (
+            <div className="submenu-item">
+              <a
+                href={
+                  "/" + props.locationSlug + "/activities/toymakers-workshop"
+                }
+                className="flex items-center"
+              >
+                <span className="sub-link-txt">
+                  Toymaker's Workshop - For Kids
+                </span>
+              </a>
+            </div>
+          )}
           {/*=========================================== Collapse menu  event List========== */}
 
           <div

@@ -3,6 +3,7 @@ import { activityListPageQuery } from "../../../lib/query/activityQuery";
 import { locationDynamicListPageQuery } from "../../../lib/query/HomePageQuery";
 
 import { locationSlugListQuery } from "../../../lib/query/navMenuQuery";
+import { toyMakerPageData } from "../../../lib/tempData/toymakerWorkStationTempData";
 
 import {
   getLocationSlugList,
@@ -92,6 +93,9 @@ export const getLocationActivitiesListPageData = async (locslug) => {
       locationResData.bookingInfo,
       locationResData.escapeGameParty
     ),
+    toyMakerPageData: toyMakerPageData[locslug]
+      ? toyMakerPageData[locslug]
+      : false,
   };
 
   return pageDATA;

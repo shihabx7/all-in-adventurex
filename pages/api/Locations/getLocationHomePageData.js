@@ -1,4 +1,5 @@
 import { apiSetting, apiUrl } from "../../../lib/apiSettings";
+import { toyMakerPageData } from "../../../lib/tempData/toymakerWorkStationTempData";
 
 import {
   LocationHomePageQuery,
@@ -100,6 +101,7 @@ export const getLocationHomePageData = async (slug) => {
     mapInfo: getMapInfo(pageResData.mapInfo),
     allBooking: getAllBooking(pageResData.bookingInfo),
     eventBooking: getEventBooking(pageResData.bookingInfo),
+    toyMakerPageData: toyMakerPageData[slug] ? toyMakerPageData[slug] : false,
     giftBooking: getGiftBooking(pageResData.bookingInfo),
     businessHours: getBusinessHours(pageResData.businessHours),
     holidayHours: pageResData.holidayHours,

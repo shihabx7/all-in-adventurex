@@ -4,6 +4,8 @@ import { locationDynamicPageQuery } from "../../../lib/query/HomePageQuery";
 import { locationSlugListQuery } from "../../../lib/query/navMenuQuery";
 import { mobileEscapePageQuery } from "../../../lib/query/mobileEscapeQuery";
 
+import { toyMakerPageData } from "../../../lib/tempData/toymakerWorkStationTempData";
+
 import {
   getLocationSlugList,
   getEscapeGameSlugList,
@@ -29,8 +31,22 @@ import {
   merPageMeta,
   merPageData,
 } from "../../../lib/dataFormation/mobileEscapeDataFormation";
+// util func
 
-export const getLocationsActivityPageData = async (locslug, actSlug) => {
+const selectPageUi = (activitySlug) => {
+  if (activitySlug == "mobile-escape-room") {
+    return "mobile-escape";
+  }
+  if (activitySlug == "toymakers-workshop") {
+    return "toymakers-workstation";
+  }
+  return "escape-room";
+};
+
+const fetchPageData = async (locslug, actSlug) => {
+  if (actSlug == "toymakers-workshop") {
+    return toyMakerPageData[locslug];
+  }
   let activityQ = "";
   if (actSlug == "mobile-escape-room") {
     activityQ =
@@ -48,7 +64,29 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
   //console.log(activityQ);
   const pageRes = await fetch(activityQ, apiSetting);
   const resObj = await pageRes.json();
-  const pageResData = resObj.data[0].attributes;
+  const retdata = resObj.data[0].attributes;
+  return retdata;
+};
+const pageSeo = () => {};
+export const getLocationsActivityPageData = async (locslug, actSlug) => {
+  /* let activityQ = "";
+  if (actSlug == "mobile-escape-room") {
+    activityQ =
+      apiUrl +
+      "locations?filters[slug][$eq]=" +
+      locslug +
+      mobileEscapePageQuery;
+  } else {
+    activityQ =
+      apiUrl +
+      "activities?filters[activitySlug][$eq]=" +
+      actSlug +
+      activityPageQuery;
+  }*/
+  //console.log(activityQ);
+  // const pageRes = await fetch(activityQ, apiSetting);
+  //const resObj = await pageRes.json();
+  const pageResData = await fetchPageData(locslug, actSlug);
   // console.log(pageResData.mobileEscapeRoom);
   //const actSeo = pageResData.seo;
   // console.log(pageResData.mobileEscapeRoom.length);
@@ -87,6 +125,39 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
   );
   //cl.log(locActivityData.locActivityDetails);
 
+  const selectSeo = () => {
+    if (actSlug == "mobile-escape-room") {
+      return merPageMeta(
+        pageResData.mobileEscapeRoom,
+        locationResData.locationName,
+        locationResData.slug
+      );
+    }
+    if (actSlug == "toymakers-workshop") {
+      return pageResData.seoData;
+    }
+    return getPageMeta(
+      pageResData.seo,
+      locActivityData,
+      locationResData.locationName,
+      locationResData.slug
+    );
+  };
+
+  const selectGameBooking = () => {
+    if (actSlug == "mobile-escape-room") {
+      return false;
+    }
+    if (actSlug == "toymakers-workshop") {
+      return pageResData.bookingData;
+    }
+    return getGameBooking(
+      locationResData.bookingInfo,
+      locActivityData.bookingItemNo,
+      locActivityData.isActive
+    );
+  };
+
   const pageDATA = {
     locationSlugList: getLocationSlugList(locationListData),
     escapeGameSlugList: getEscapeGameSlugList(
@@ -98,31 +169,17 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
     isPublished: locationResData.isPublished,
     locationSlug: locationResData.slug,
     locationName: locationResData.locationName,
+    hasMobileEscapeRoom: isActiveMobileEscape,
+    pageUi: selectPageUi(actSlug),
     activityName:
       actSlug == "mobile-escape-room"
         ? "Mobile Escape Room"
         : pageResData.activityName,
-    activitySlug:
-      actSlug == "mobile-escape-room"
-        ? "mobile-escape-room"
-        : pageResData.activitySlug,
-    hasMobileEscapeRoom: isActiveMobileEscape,
+    activitySlug: actSlug,
+    pageMeta: selectSeo(),
 
-    pageMeta:
-      actSlug == "mobile-escape-room"
-        ? merPageMeta(
-            pageResData.mobileEscapeRoom,
-            locationResData.locationName,
-            locationResData.slug
-          )
-        : getPageMeta(
-            pageResData.seo,
-            locActivityData,
-            locationResData.locationName,
-            locationResData.slug
-          ),
     pageData:
-      actSlug == "mobile-escape-room"
+      actSlug == "mobile-escape-room" || actSlug == "toymakers-workshop"
         ? false
         : getPageData(
             pageResData.pageHeroData,
@@ -132,16 +189,9 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
             locationResData.slug
           ),
     locationInfo: locationResData.locationInfo,
-    gameBooking:
-      actSlug == "mobile-escape-room"
-        ? false
-        : getGameBooking(
-            locationResData.bookingInfo,
-            locActivityData.bookingItemNo,
-            locActivityData.isActive
-          ),
+    gameBooking: selectGameBooking(),
     partyBooking:
-      actSlug == "mobile-escape-room"
+      actSlug == "mobile-escape-room" || actSlug == "toymakers-workshop"
         ? false
         : getPartyBooking(
             locationResData.bookingInfo,
@@ -153,7 +203,7 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
     holidayHours: locationResData.holidayHours,
     mapInfo: getMapInfo(locationResData.mapInfo),
     activityData:
-      actSlug == "mobile-escape-room"
+      actSlug == "mobile-escape-room" || actSlug == "toymakers-workshop"
         ? false
         : activityDetailData(
             pageResData.storyLine,
@@ -163,11 +213,11 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
             locActivityData.locActivityDetails
           ),
     activityGallery:
-      actSlug == "mobile-escape-room"
+      actSlug == "mobile-escape-room" || actSlug == "toymakers-workshop"
         ? false
         : activityGalleryData(pageResData.activityGallery),
     videoData:
-      actSlug == "mobile-escape-room"
+      actSlug == "mobile-escape-room" || actSlug == "toymakers-workshop"
         ? false
         : activityVideoData(pageResData.activityVideo),
     mobileEscapeRoomPageData:
@@ -178,6 +228,8 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
             locationResData.slug
           )
         : false,
+    toymakersPageData: actSlug == "toymakers-workshop" ? pageResData : false,
+    hasToymakers: actSlug == "toymakers-workshop" ? true : false,
   };
 
   return pageDATA;

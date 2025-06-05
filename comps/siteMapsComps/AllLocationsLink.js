@@ -56,7 +56,11 @@ const AllLocationsLink = (props) => {
                 <ul className="site-map-link-group-2 list-disc pl-4 md:pl-8">
                   <li className="my-2">
                     <a
-                      href={"/" + location.locationSlug + "/activities/mobile-escape-room"}
+                      href={
+                        "/" +
+                        location.locationSlug +
+                        "/activities/mobile-escape-room"
+                      }
                       className="site-link text-[#1a1a1a] hover:text-red-700 md:text-lg xl:text-xl"
                     >
                       Mobile Escape Rooms
@@ -65,6 +69,22 @@ const AllLocationsLink = (props) => {
                 </ul>
               ) : (
                 <></>
+              )}
+              {location.locationSlug == "raleigh-nc" && (
+                <ul className="site-map-link-group-2 list-disc pl-4 md:pl-8">
+                  <li className="my-2">
+                    <a
+                      href={
+                        "/" +
+                        location.locationSlug +
+                        "/activities/toymakers-workshop"
+                      }
+                      className="site-link text-[#1a1a1a] hover:text-red-700 md:text-lg xl:text-xl"
+                    >
+                      Toymaker's Workshop - For Kids
+                    </a>
+                  </li>
+                </ul>
               )}
               <AllEventsLink
                 locationSlug={location.locationSlug}

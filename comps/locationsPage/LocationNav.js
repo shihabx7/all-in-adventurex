@@ -209,6 +209,7 @@ const LocationNav = (props) => {
                   otherGameSlugList={props.otherGameSlugList}
                   eventSlugList={props.eventSlugList}
                   giftBooking={props.giftBooking ? props.giftBooking : false}
+                  hasToymakers={props.hasToymakers ? props.hasToymakers : false}
                   hasMobileEscapeRoom={
                     props.hasMobileEscapeRoom
                       ? props.hasMobileEscapeRoom

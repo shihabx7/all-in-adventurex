@@ -1,6 +1,8 @@
 import { getLocationSlugUrl } from "../api/Locations/getLocationSlugUrls";
 import UnlimitedEscapeRoomHome from "../../comps/unlimitedEscapeRoom/UnlimitedEscapeRoomHome";
 
+import ToyMakerHomeSection from "../../comps/toyMakerWorkStation/section/ToyMakerHomeSection";
+
 import { getLocationHomePageData } from "../api/Locations/getLocationHomePageData";
 import Script from "next/script";
 
@@ -99,6 +101,13 @@ const Locations = (props) => {
         locationSlug={props.locationSlug}
         isPublished={props.isPublished}
       />
+      {props.toyMakerPageData && (
+        <ToyMakerHomeSection
+          sectionData={props.toyMakerPageData.homePageSectionData}
+          bookingData={props.toyMakerPageData.bookingData}
+          locationSlug={props.locationSlug}
+        />
+      )}
       {props.hasMobileEscapeRoom ? (
         <MobileEscapeGameHomeSection
           locationSlug={props.locationSlug}
@@ -171,7 +180,7 @@ export const getStaticProps = async (context) => {
   */
   const DATA = await getLocationHomePageData(context.params.locationSlug);
   // const DATA = await getLocationHomePageData(context.params.locationSlug);
-  //console.log(DATA);
+  //console.log(DATA.toyMakerPageData);
   return {
     props: {
       locationSlugList: DATA.locationSlugList,
@@ -199,6 +208,7 @@ export const getStaticProps = async (context) => {
       mapInfo: DATA.mapInfo,
       hasMobileEscapeRoom: DATA.hasMobileEscapeRoom,
       mobileEscapeRoomData: DATA.mobileEscapeRoomData,
+      toyMakerPageData: DATA.toyMakerPageData,
     },
     revalidate: 12,
   };

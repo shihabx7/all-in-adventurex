@@ -1385,7 +1385,22 @@ a {
     url("/assets/mobile-escape-room/mobile-escape-room-list-page-game-image.jpg");
   box-shadow: "0px 0px 16px 2px rgba(0,0,0,0.45)";
 }
-
+/*toy maker activity carousel*/
+.ocac-car-container {
+  width: calc(1216px + ((100% - 1220px) / 2)) !important;
+}
+.ocac-car-dot {
+  max-width: 800px;
+  left: 40px !important;
+  right: unset !important;
+  margin-left: auto !important;
+}
+.ocac-car-container .react-multiple-carousel__arrow--right {
+  right: calc(40px + (100% - 1210px)) !important;
+}
+.ocac-car-container .react-multiple-carousel__arrow--left {
+  right: calc(112px + (100% - 1210px)) !important;
+}
 .testi-vid-car .react-multiple-carousel__arrow {
   border: 2px solid #545454 !important;
   background: transparent;
@@ -1493,6 +1508,9 @@ a {
 .masonry-2-col {
   column-count: 2;
   column-gap: 1em;
+}
+.p1-gap .faq-txt p {
+  margin-bottom: 12px;
 }
 /*Flodesk---------------------------*/
 .flodesk-form form {
@@ -1686,6 +1704,18 @@ a {
 }
 
 @media only screen and (max-width: 1170px) {
+  .ocac-car-container {
+    width: 100% !important;
+  }
+  .ocac-car-dot {
+    left: 40px !important;
+  }
+  .ocac-car-container .react-multiple-carousel__arrow--right {
+    right: 100px !important;
+  }
+  .ocac-car-container .react-multiple-carousel__arrow--left {
+    right: 150px !important;
+  }
   .paper-back-bg {
     max-width: 98% !important;
   }
@@ -1700,6 +1730,18 @@ a {
 
   .sbl-ft-img-box {
     max-width: 780px;
+  }
+  .ocac-car-container {
+    width: 100% !important;
+  }
+  .ocac-car-dot {
+    left: 40px !important;
+  }
+  .ocac-car-container .react-multiple-carousel__arrow--right {
+    right: 40px !important;
+  }
+  .ocac-car-container .react-multiple-carousel__arrow--left {
+    right: 104px !important;
   }
 }
 
@@ -1959,6 +2001,12 @@ a {
     left: 20px !important;
     bottom: 32px !important;
   }
+  .ocac-car-container .react-multiple-carousel__arrow--right {
+    right: 10px !important;
+  }
+  .ocac-car-container .react-multiple-carousel__arrow--left {
+    right: 70px !important;
+  }
 }
 
 @media only screen and (max-width: 820px) {
@@ -2130,6 +2178,12 @@ a {
   .mer-car .react-multiple-carousel__arrow--left {
     right: 74px !important;
   }
+  .ocac-car-container .react-multiple-carousel__arrow--right {
+    right: 20px !important;
+  }
+  .ocac-car-container .react-multiple-carousel__arrow--left {
+    right: 66px !important;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -2182,6 +2236,15 @@ a {
 
   .inp-car .react-multiple-carousel__arrow::before {
     font-size: 20px;
+  }
+  .ocac-car-dot {
+    left: 12px !important;
+  }
+  .ocac-car-container .react-multiple-carousel__arrow--right {
+    right: 10px !important;
+  }
+  .ocac-car-container .react-multiple-carousel__arrow--left {
+    right: 64px !important;
   }
 }
 

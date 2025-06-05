@@ -12,6 +12,7 @@ import ActivityLocDetails from "../../../comps/activitiyPageComps/ActivityLocDet
 import ActivityGallery from "../../../comps/activitiyPageComps/ActivityGallery";
 import ActivityVideo from "../../../comps/activitiyPageComps/ActivityVideo";
 import MobileEscapeGamePageUI from "../../../comps/mobileEscapeGames/MobileEscapeGamePageUI";
+import ToyMakerPageUI from "../../../comps/toyMakerWorkStation/ToyMakerPageUI";
 
 const LocSingleActivity = (props) => {
   return (
@@ -30,6 +31,7 @@ const LocSingleActivity = (props) => {
         allBooking={!props.gameBooking ? props.allBooking : false}
         partyBooking={props.partyBooking}
         hasMobileEscapeRoom={props.hasMobileEscapeRoom}
+        hasToymakers={props.hasToymakers}
         activitySlug={props.activitySlug}
         giftBooking={props.giftBooking}
       />
@@ -43,7 +45,7 @@ const LocSingleActivity = (props) => {
         />
         {/*  main activity components */}
         {/*console.log(props.mobileEscapeRoomPageData)*/}
-        {props.mobileEscapeRoomPageData ? (
+        {props.pageUi == "mobile-escape" && (
           <>
             <MobileEscapeGamePageUI
               mobileEscapeRoomPageData={props.mobileEscapeRoomPageData}
@@ -52,7 +54,18 @@ const LocSingleActivity = (props) => {
               locationSlug={props.locationSlug}
             />
           </>
-        ) : (
+        )}
+        {props.pageUi == "toymakers-workstation" && (
+          <>
+            <ToyMakerPageUI
+              toymakersPageData={props.toymakersPageData}
+              locationInfo={props.locationInfo}
+              locationName={props.locationName}
+              locationSlug={props.locationSlug}
+            />
+          </>
+        )}
+        {props.pageUi == "escape-room" && (
           <>
             <ActivityLocHero
               isPublished={props.isPublished}
@@ -159,7 +172,6 @@ export const getStaticProps = async (context) => {
       locationName: DATA.locationName,
       locationSlug: DATA.locationSlug,
       isPublished: DATA.isPublished,
-      hasMobileEscapeRoom: DATA.hasMobileEscapeRoom,
       totalLocations: DATA.totalLocations,
       locationInfo: DATA.locationInfo,
       pageMeta: DATA.pageMeta,
@@ -173,8 +185,12 @@ export const getStaticProps = async (context) => {
       activityData: DATA.activityData,
       activityGallery: DATA.activityGallery,
       videoData: DATA.videoData,
+      hasMobileEscapeRoom: DATA.hasMobileEscapeRoom,
+      hasToymakers: DATA.hasToymakers,
 
       mobileEscapeRoomPageData: DATA.mobileEscapeRoomPageData,
+      pageUi: DATA.pageUi,
+      toymakersPageData: DATA.toymakersPageData,
     },
     revalidate: 12,
   };

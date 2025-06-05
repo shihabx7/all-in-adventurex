@@ -29,6 +29,13 @@ export async function fetchLocationActivities(locationSlug) {
       retArr.push(mObj);
     }
   }
+  if (locationSlug == "raleigh-nc") {
+    let mObj = {
+      id: activityList.length + 2,
+      activitySlug: "toymakers-workshop",
+    };
+    retArr.push(mObj);
+  }
   //console.log(retArr);
   return retArr;
 }

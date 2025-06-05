@@ -7,6 +7,7 @@ import PageSeo from "../../../comps/util/PageSeo";
 import DynamicPageBread from "../../../comps/util/DynamicPageBread";
 import ActivityLocListHero from "../../../comps/activitiyPageComps/ActivityLocListHero";
 import ActivityLocList from "../../../comps/activitiyPageComps/ActivityLocList";
+import ToyMakerHomeSection from "../../../comps/toyMakerWorkStation/section/ToyMakerHomeSection";
 
 const LocationActivities = (props) => {
   return (
@@ -46,6 +47,13 @@ const LocationActivities = (props) => {
           activityData={props.activityData}
           hasMobileEscapeRoom={props.hasMobileEscapeRoom}
         />
+        {props.toyMakerPageData && (
+          <ToyMakerHomeSection
+            sectionData={props.toyMakerPageData.homePageSectionData}
+            bookingData={props.toyMakerPageData.bookingData}
+            locationSlug={props.locationSlug}
+          />
+        )}
       </div>
       <LocationFooter
         locationName={props.locationName}
@@ -121,6 +129,7 @@ export const getStaticProps = async (context) => {
       businessHours: DATA.businessHours,
       holidayHours: DATA.holidayHours,
       activityData: DATA.activityListData,
+      toyMakerPageData: DATA.toyMakerPageData,
     },
     revalidate: 12,
   };
