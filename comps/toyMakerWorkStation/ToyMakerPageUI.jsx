@@ -1,6 +1,6 @@
 import ToymakerPageHero from "./section/ToymakerPageHero";
 import ToyMakersStoryLineSection from "./section/ToyMakersStoryLineSection";
-import OccasionActivitySection from "./section/occasionActivitySection";
+import OccActivitySection from "./section/OccActivitySection";
 import ToyMakerGallerySection from "./section/ToyMakerGallerySection";
 import ToyMakerTestimonialsSection from "./section/ToyMakerTestimonialsSection";
 import ToyMakerFaqSection from "./section/ToyMakerFaqSection";
@@ -20,7 +20,7 @@ export default function ToyMakerPageUI({
         gameInfo={toymakersPageData.gameInfo}
         bookingData={toymakersPageData.bookingData}
       />
-      <OccasionActivitySection
+      <OccActivitySection
         sectionData={toymakersPageData.activityCarouselSectionData}
         bookingData={toymakersPageData.bookingData}
       />

@@ -1,6 +1,6 @@
 import SectionTitleLight from "../../common/SectionTitleLight";
 import ActivityCarousel from "../activityCarousel";
-export default function OccasionActivitySection({ sectionData, bookingData }) {
+export default function OccActivitySection({ sectionData, bookingData }) {
   const bookGame = (bookingData) => {
     FH.open({
       shortname: bookingData.shortName,
