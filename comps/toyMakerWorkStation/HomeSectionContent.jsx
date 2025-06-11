@@ -9,39 +9,39 @@ export default function HomeSectionContent({ bookingData, locationSlug }) {
     });
   };
   return (
-    <div className="home-sec-content  max-w-[540px] lg:max-w-[600px] 2xl:max-w-[680px] mx-auto">
+    <div className="home-sec-content max-w-[320px] rm:max-w-[360px] xm:max-w-[424px] md:max-w-[580px] lg:max-w-[600px] 2xl:max-w-[680px] mx-auto px-2 zm:px-0">
       {/* icon list element */}
-      <div className="ico-list flex justify-between space-x-[4px]  md:space-x-2 items-center mb-[20px] lg:mb-[32px] 2xl:mb-[42px] px-2 md:px-0">
+      <div className="ico-list flex flex-wrap justify-center zm:justify-between space-x-2 zm:space-x-[6px]  md:space-x-2 items-center mb-[16px] lg:mb-[32px] 2xl:mb-[42px] px-2 md:px-0">
         {/* icon 1 */}
-        <div className="icon-col flex space-x-1 md:space-x-2 items-center">
+        <div className="icon-col w-[48%] xm:w-auto flex space-x-1 md:space-x-2 items-center my-1 zm:my-0">
           <img
-            className="h-[14px] lg:h-[21px]"
+            className="h-[14px] rm:h-[16px] lg:h-[21px]"
             src={"/assets/toymakers-workshop/home/age.png"}
             alt={"toymaker workshop age icon"}
           ></img>
-          <p className="text-[11px]  md:text-base lg:text-lg text-[#D0C5C5]">
+          <p className="text-sm xm:text-[12px] md:text-base lg:text-lg text-[#D0C5C5]">
             Age: 6 and under{" "}
           </p>
         </div>
         {/* icon 2 */}
-        <div className="icon-col flex space-x-1 md:space-x-2 items-center">
+        <div className="icon-col w-[48%] xm:w-auto flex space-x-1 md:space-x-2 items-center my-1 zm:my-0">
           <img
-            className="h-[14px] lg:h-[21px]"
+            className="h-[14px] rm:h-[16px] lg:h-[21px]"
             src={"/assets/toymakers-workshop/home/duration.png"}
             alt={"toymaker workshop duration icon"}
           ></img>
-          <p className="text-[11px]  md:text-base lg:text-lg text-[#D0C5C5] text-[#D0C5C5]">
+          <p className="text-sm xm:text-[12px] md:text-base lg:text-lg text-[#D0C5C5] text-[#D0C5C5]">
             Duration: 1 Hour{" "}
           </p>
         </div>
         {/* icon 3 */}
-        <div className="icon-col flex space-x-1 md:space-x-2 items-center">
+        <div className="icon-col w-[60%] xm:w-auto flex space-x-1 md:space-x-2 items-center my-1 zm:my-0">
           <img
-            className="h-[14px] lg:h-[21px]"
+            className="h-[14px] rm:h-[16px] lg:h-[21px]"
             src={"/assets/toymakers-workshop/home/childs.png"}
             alt={"toymaker workshop childs icon"}
           ></img>
-          <p className="text-[11px] md:text-base lg:text-lg text-[#D0C5C5] text-[#D0C5C5]">
+          <p className="text-sm xm:text-[12px] md:text-base lg:text-lg text-[#D0C5C5] text-[#D0C5C5]">
             Each child receives toy{" "}
           </p>
         </div>
@@ -58,16 +58,16 @@ export default function HomeSectionContent({ bookingData, locationSlug }) {
         </p>
       </div>
       {/* duel btn element */}
-      <div className="duel-btn flex justify-center space-x-3 md:space-x-6 mt-[28px] lg:mt-[38px] 2xl:mt-[48px]">
+      <div className="duel-btn flex justify-center space-x-3 md:space-x-6 mt-[26px] xm:mt-[22px] md:mt-[28px] lg:mt-[38px] 2xl:mt-[48px]">
         <button
           onClick={() => bookGame(bookingData)}
-          className="border bt1 w-[148px] md:w-[200px]  border-red-600 bg-red-600 py-2 md:py-3 md:x-12 rounded-full font-bold text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-center text-white"
+          className="border bt1 w-[148px] md:w-[200px]  border-red-600 bg-red-600 py-2 md:py-3 md:x-12 rounded-full font-bold md:text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-center text-white"
         >
           BOOK NOW
         </button>
         <a
           href={"/" + locationSlug + "/activities/toymakers-workshop"}
-          className="border bt1 w-[148px] md:w-[200px]  border-red-600 bg-transparent py-2 md:py-3 md:px-12 rounded-full font-bold text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-center  text-red-600 hover:text-white"
+          className="border bt1 w-[148px] md:w-[200px]  border-red-600 bg-transparent py-2 md:py-3 md:px-12 rounded-full font-bold md:text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-center  text-red-600 hover:text-white"
         >
           EXPLORE
         </a>

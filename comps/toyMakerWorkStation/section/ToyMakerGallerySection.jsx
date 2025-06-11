@@ -13,13 +13,13 @@ export default function ToyMakerGallerySection({ sectionData }) {
   };
   return (
     <div className="game-gallery-section  egg-section bg-[#fff9eb] relative py-16  py:pt-20 lg:pt-20 lg:pb-28 xl:pb-28 xl:pt-20 3xl:pt-24 3xl:pb-28  z-20">
-      <div className="section-head-lg">
+      <div className="section-head-lg  px-3">
         <div className="section-title">
           <SectionTitleCenterDark title={sectionData.sectionTitle} />
         </div>
         {sectionData.sectionSubTitle && (
           <div
-            className="text-[#2e2e2e] sm:text-lg xl:text-xl mt-3 md:mt-3 xl:mt-4 max-w-[700px] mx-auto text-center"
+            className="text-[#2e2e2e] sm:text-lg xl:text-xl mt-3 md:mt-3 xl:mt-4 max-w-[500px] lg:max-w-[700px] mx-auto text-center"
             dangerouslySetInnerHTML={{
               __html: sectionData.sectionSubTitle,
             }}
@@ -47,18 +47,18 @@ export default function ToyMakerGallerySection({ sectionData }) {
             )}
           </div>
           {/*=======================================gallery list image*/}
-          <div className="gallery-img-list mt-2 xl:mt-3 flex space-x-1 md:space-x-2 xl:space-x-3">
+          <div className="gallery-img-list mt-2 xl:mt-3 flex justify-between md:justify-center items-center flex-wrap lg:flex-nowrap lg:justify-between space-x-0 md:space-x-2 space-y-0 md:space-y-3 md:space-x-3 lg:space-y-0 lg:space-x-1  xl:space-x-3">
             {imageList.map((item, index) => {
               return (
                 <div
                   key={index}
-                  className="gl-img hover:cursor-pointer relative group"
+                  className="gl-img hover:cursor-pointer relative group w-[31.5%] md:w-[18.5%] lg:w-[116px]"
                   onClick={(e) => {
                     showFullView(e, index);
                   }}
                 >
                   <img
-                    className="rounded-lg"
+                    className="rounded md:rounded-lg max-w-full my-1 md:my-0 "
                     alt={item.alt}
                     src={item.url}
                   ></img>

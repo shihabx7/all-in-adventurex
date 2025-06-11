@@ -5,12 +5,12 @@ export default function HomeVideoBg({ videoBgData }) {
     videoRef.current.play();
   }, []);
   return (
-    <div className="w-full h-full">
+    <div className="w-full min-h-[370px] zm:min-h-[380px] sm:min-h-0">
       <video
         ref={videoRef}
         id={"hero-bg-video"}
         className={
-          "no-fullscreen-vid w-full h-full aspect-video object-cover object-center rounded-lg transition-all duration-500 ease-in-out"
+          "no-fullscreen-vid w-full min-h-[376px] zm:min-h-[380px] sm:min-h-0 object-cover object-center rounded-lg transition-all duration-500 ease-in-out"
         }
         preload="metadata"
         playsInline

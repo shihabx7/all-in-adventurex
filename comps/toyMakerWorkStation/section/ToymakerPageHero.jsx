@@ -24,7 +24,7 @@ export default function ToymakerPageHero({ pageHeroData, bookingData }) {
                   src="/assets/toymakers-workshop/hero/toymakers-workshop-sticker.png"
                 ></img>
               </div>
-              <div className="pageTitle max-w-[360px] zm:max-w-[520px] md:max-w-[800px] lg:max-w-[1000px] mx-auto">
+              <div className="pageTitle max-w-[360px] zm:max-w-[520px] md:max-w-[720px] lg:max-w-[1000px] mx-auto">
                 <PageTitleCenterLight
                   pageTitle={
                     pageHeroData.pageTitle
