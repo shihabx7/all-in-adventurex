@@ -37,7 +37,7 @@ const OccActivityCarousel = ({ carouselList }) => {
       breakpoint: { max: 639, min: 0 },
       items: 1,
       slidesToSlide: 1,
-      partialVisibilityGutter: 10,
+      partialVisibilityGutter: 20,
     },
   };
 
@@ -75,8 +75,8 @@ const OccActivityCarousel = ({ carouselList }) => {
                 src={item.carouselImage.url}
               ></img>
 
-              <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-end">
-                <div className="card-bottom  mbl-card-bottom px-2 rm:px-3 md:px-3 lg:px-3 xl:px-3 3xl:px-4 4xl:px-4 pb-6 rm:pb-7 zm:pb-6 sm:pb-4 md:pb-6 pt-12 zm:pt-0">
+              <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-end ">
+                <div className="card-bottom  mbl-card-bottom px-2 rm:px-3 md:px-3 lg:px-3 xl:px-3 3xl:px-4 4xl:px-4 pb-6 rm:pb-7 zm:pb-6 sm:pb-4 md:pb-6 pt-12 zm:pt-0 rounded-b-[10px]">
                   <div className="card-game-descs mb-3 md:mb-4">
                     <h3 className="card-game-titlex text-center zm:text-left text-[20px] rm:text-[21px] md:text-[22px] 2xl:text-[23px]  font-bold uppercase text-[#fff3e0]">
                       {item.title}

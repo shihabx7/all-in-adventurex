@@ -12,19 +12,16 @@ export default function ToyMakersStoryLineSection({ gameInfo, bookingData }) {
   };
 
   return (
-    <div className="game-story-line-section egs-section relative z-[20] mt-[-0px]">
+    <div className="game-story-line-section egs-section relative z-[20] mt-[-40px] xm:mt-[-46px] lg:mt-[-30px]">
       {/*=======================================Game section bg*/}
-      <div className=" absolute left-0 top-[-23px]   md:top-[-24px] 3xl:top-[-28px] h-[48px] md:h-[54px] 3xl:h-[64px] z-[30] w-full ">
-        <img
-          className="h-full object-cover object-center"
-          src="/assets/toymakers-workshop/hero/page-hero-border.png"
-        ></img>
-      </div>
+
       <div className="egs-section-bg absolute w-full h-full top-0 left-0">
         <img
-          className="w-full h-full object-cover object-bottom md:object-top"
+          className="w-full h-full object-cover object-center md:object-center"
           alt={"toymaker workshop storyline"}
-          src={"/assets/toymakers-workshop/storyline/toymaker-storyline-bg.jpg"}
+          src={
+            "/assets/toymakers-workshop/storyline/toymakers-workshop-bgn.png"
+          }
         ></img>
       </div>
 

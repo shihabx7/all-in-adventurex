@@ -20,7 +20,7 @@ export default function ToymakerPageHero({ pageHeroData, bookingData }) {
             <div className="section-head">
               <div className="game-icon mb-2 md:mb-2 xl:mb-4">
                 <img
-                  className="max-w-[190px] md:max-w-[220px] xl:max-w-[250px] mx-auto"
+                  className="max-w-[140px] rm:max-w-[180px] md:max-w-[220px] xl:max-w-[250px] mx-auto"
                   src="/assets/toymakers-workshop/hero/toymakers-workshop-sticker.png"
                 ></img>
               </div>
@@ -45,7 +45,7 @@ export default function ToymakerPageHero({ pageHeroData, bookingData }) {
 
             {/*============section head end==========*/}
             {/*============location search btn==========*/}
-            <div className="max-w-[380px] xl:max-w-[400px] mx-auto mt-5 rm:mt-6 xm:mt-6 md:mt-8  xl:mt-10 ">
+            <div className="max-w-[380px] xl:max-w-[400px] mx-auto mt-5 pb-8 rm:pb-0 rm:mt-6 xm:mt-6 md:mt-8  xl:mt-10 ">
               <button
                 onClick={() => bookGame(bookingData)}
                 className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg"
