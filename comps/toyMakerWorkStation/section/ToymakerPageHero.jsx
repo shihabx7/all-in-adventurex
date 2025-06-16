@@ -14,7 +14,7 @@ export default function ToymakerPageHero({ pageHeroData, bookingData }) {
     <div className="page-hero-section">
       <div className="section-bg  bg-stone-800 relative">
         <SectionBgVideo videoData={pageHeroData.heroBgVideo} />
-        <div className="section-overlay bg-[rgba(0,0,0,0.84)] w-full h-full absolute top-0 left-0 flex justify-center items-center">
+        <div className="section-overlay bg-[rgba(0,0,0,0.6)] w-full h-full absolute top-0 left-0 flex justify-center items-center">
           <div className="section-container  mx-auto  max-w-7xl pt-16 pb-24 md:py-20 lg:py-24 xl:py-28 px-4">
             {/*============section head==========*/}
             <div className="section-head">

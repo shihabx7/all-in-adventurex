@@ -87,12 +87,7 @@ const ToyMakerTestimonialCarousel = ({ testimonialList }) => {
               {/**=========== rocket-bottom-left */}
 
               {/**=========== bottom-confette-bg */}
-              <div className="max-w-[230px] absolute bottom-0 left-0 right-0 mx-auto z-0">
-                <img
-                  className="max-h-[60px]"
-                  src="/assets/mobile-escape-room/icon/testimonial-bg-com.svg"
-                ></img>
-              </div>
+
               {/**=========== balon-bottom-right */}
 
               {/**=========== testimonial ornaments end */}
