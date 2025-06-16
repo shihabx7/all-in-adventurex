@@ -61,7 +61,7 @@ const OccActivityCarousel = ({ carouselList }) => {
         // rewindWithAnimation={true}
         //  removeArrowOnDeviceType={["tablet", "mobile"]}
         //deviceType={this.props.deviceType}
-        dotListClass="custom-dot-list-style  mer-car-dot ocac-car-dot  mer-game-carousel-dot "
+        dotListClass="custom-dot-list-style tst  mer-car-dot ocac-car-dot  mer-game-carousel-dot "
         itemClass="game-carousel-card px-1 md:px-4 lg:px-4 xl:px-5 2xl:px-6 4xl:px-7 pb-4 md:pb-5 lg:pb-8"
         renderDotsOutside={false}
         partialVisible={true}
