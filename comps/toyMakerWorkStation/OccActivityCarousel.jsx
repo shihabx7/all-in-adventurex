@@ -28,16 +28,16 @@ const OccActivityCarousel = ({ carouselList }) => {
       partialVisibilityGutter: 0,
     },
     tablet: {
-      breakpoint: { max: 999, min: 640 },
+      breakpoint: { max: 999, min: 500 },
       items: 2,
       slidesToSlide: 1,
-      partialVisibilityGutter: 10,
+      partialVisibilityGutter: 0,
     },
     mobile: {
-      breakpoint: { max: 639, min: 0 },
+      breakpoint: { max: 499, min: 0 },
       items: 1,
       slidesToSlide: 1,
-      partialVisibilityGutter: 20,
+      partialVisibilityGutter: 0,
     },
   };
 
@@ -62,23 +62,26 @@ const OccActivityCarousel = ({ carouselList }) => {
         //  removeArrowOnDeviceType={["tablet", "mobile"]}
         //deviceType={this.props.deviceType}
         dotListClass="custom-dot-list-style tst  mer-car-dot ocac-car-dot  mer-game-carousel-dot "
-        itemClass="game-carousel-card px-1 md:px-4 lg:px-4 xl:px-5 2xl:px-6 4xl:px-7 pb-4 md:pb-5 lg:pb-8"
+        itemClass="game-carousel-card px-1 zm:px-2 md:px-4 lg:px-3 xl:px-5 2xl:px-6 4xl:px-5 pb-4 md:pb-5 lg:pb-8"
         renderDotsOutside={false}
         partialVisible={true}
       >
         {carouselList.map((item, index) => {
           return (
-            <div key={index} className="text-white relative group ">
+            <div
+              key={index}
+              className="text-white relative group rounded-xl overflow-hidden hover:cursor-pointer"
+            >
               <img
-                className="w-full "
+                className="max-w-full rounded-xl transition ease-in-out duration-1000 transform scale-100 group-hover:scale-105"
                 alt={item.carouselImage.alt}
                 src={item.carouselImage.url}
               ></img>
 
               <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-end ">
-                <div className="card-bottom  mbl-card-bottom px-2 rm:px-3 md:px-3 lg:px-3 xl:px-3 3xl:px-4 4xl:px-4 pb-6 rm:pb-7 zm:pb-6 sm:pb-4 md:pb-6 pt-12 zm:pt-0 rounded-b-[10px]">
+                <div className="card-bottom  mbl-card-bottom px-2 rm:px-4 md:px-4 lg:px-3 xl:px-5 3xl:px-6 pb-6 rm:pb-7 zm:pb-6 sm:pb-4 md:pb-6 pt-12 zm:pt-0 rounded-b-lg">
                   <div className="card-game-descs mb-3 md:mb-4">
-                    <h3 className="card-game-titlex text-center zm:text-left text-[20px] rm:text-[21px] md:text-[22px] 2xl:text-[23px]  font-bold uppercase text-[#fff3e0] uppercase">
+                    <h3 className="card-game-titlex  text-[20px] rm:text-[22px] zm:text-[20px] md:text-[22px] lg:text-[24px] 2xl:text-[25px]  font-bold capitalize transition ease-in-out duration-1000 text-[#fff3e0] group-hover:text-[#e0bf62] ">
                       {item.title}
                     </h3>
                   </div>

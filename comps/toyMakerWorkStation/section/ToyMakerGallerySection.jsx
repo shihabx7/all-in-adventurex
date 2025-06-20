@@ -1,10 +1,14 @@
 import SectionTitleCenterDark from "../../common/SectionTitleCenterDark";
 import { useState, useEffect, useRef } from "react";
 import { FaRegPlayCircle } from "react-icons/fa";
-import { FaRegPauseCircle } from "react-icons/fa";
 import PlayGalleryVideo from "../PlayGalleryVideo";
+import ThumbnailCarousel from "../ThumbnailCarousel";
+
 export default function ToyMakerGallerySection({ sectionData }) {
   const [fullImage, setFullImage] = useState(sectionData.galleryImages[0]);
+  const [fullViewItem, setFullViewItem] = useState(
+    sectionData.galleryImages[0]
+  );
   const [imageList, setImageList] = useState(sectionData.galleryImages);
 
   const showFullView = (e, index) => {
@@ -28,50 +32,33 @@ export default function ToyMakerGallerySection({ sectionData }) {
       </div>
       {/*=======================================Game gallery */}
       <div className="section-bg  mt-6 md:mt-8 xl:mt-10">
-        <div className="section-container zm:max-w-[580px] md:max-w-[780px] lg:max-w-[990px] xl:max-w-[1220px] 2xl:max-w-[1200px] mx-auto px-4">
+        <div className="section-container zm:max-w-[580px] md:max-w-[780px] lg:max-w-[990px] xl:max-w-[1210px] 2xl:max-w-[1230px] mx-auto p-2 rm:px-2 md:px-3    ">
           {/*=======================================gallery main image*/}
-          <div className="gallery-img-full-view">
-            {fullImage.videoUrl ? (
-              <>
-                <PlayGalleryVideo
-                  videoUrl={fullImage.videoUrl}
-                  videoPoster={fullImage.url}
-                />
-              </>
-            ) : (
-              <img
-                className="rounded-lg transition-all duration-500 ease-in-out"
-                alt={fullImage.alt}
-                src={fullImage.url}
-              ></img>
-            )}
-          </div>
-          {/*=======================================gallery list image*/}
-          <div className="gallery-img-list mt-2 xl:mt-3 flex justify-between md:justify-center items-center flex-wrap lg:flex-nowrap lg:justify-between space-x-0 md:space-x-2 space-y-0 md:space-y-3 md:space-x-3 lg:space-y-0 lg:space-x-1  xl:space-x-3">
-            {imageList.map((item, index) => {
-              return (
-                <div
-                  key={index}
-                  className="gl-img hover:cursor-pointer relative group w-[31.5%] md:w-[18.5%] lg:w-[116px]"
-                  onClick={(e) => {
-                    showFullView(e, index);
-                  }}
-                >
-                  <img
-                    className="rounded md:rounded-lg max-w-full my-1 md:my-0 "
-                    alt={item.alt}
-                    src={item.url}
-                  ></img>
-                  <div className="w-full h-full absolute top-0 left-0 flex justify-center items-center ">
-                    {item.videoUrl && (
-                      <button className=" drop-shadow-lg transition-all duration-500 ease-in-out hidden group-hover:block text-red-600 hover:text-red-700 text-[28px] p-4">
-                        <FaRegPlayCircle />
-                      </button>
-                    )}
-                  </div>
-                </div>
-              );
-            })}
+          <div className="bg-[#261B04] rounded-xl px-2 py-3 zm:px-4 zm:py-5 md:px-5 md:py-6 xl:px-6 xl:py-7 ">
+            <div className="gallery-img-full-view px-1">
+              {fullViewItem.videoUrl ? (
+                <>
+                  <PlayGalleryVideo
+                    videoUrl={fullViewItem.videoUrl}
+                    videoPoster={fullViewItem.url}
+                  />
+                </>
+              ) : (
+                <img
+                  className="rounded-lg transition-all duration-500 ease-in-out"
+                  alt={fullViewItem.alt}
+                  src={fullViewItem.url}
+                ></img>
+              )}
+            </div>
+            {/*=======================================gallery thumbnail carousel image*/}
+            {/*=======================================gallery list image*/}
+            <div className="gallery-img-thumb-carousel mt-3">
+              <ThumbnailCarousel
+                imageList={sectionData.galleryImages}
+                setFullViewItem={setFullViewItem}
+              />
+            </div>
           </div>
         </div>
       </div>
