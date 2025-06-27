@@ -6,8 +6,11 @@ import {
 import { checkRateLimiter } from "./formProtection/reqRateLimit";
 
 const escapeHtml = (htmlStr) => {
-  return htmlStr.replace(/&/g, "&amp;").replace(/</g, " ").replace(/>/g, " ");
-  // .replace(/(?:\r\n|\r|\n)/g, "<br>");
+  return htmlStr
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/(?:\r\n|\r|\n)/g, "<br>");
 };
 
 export default async function volunteerContactHandler(req, res) {

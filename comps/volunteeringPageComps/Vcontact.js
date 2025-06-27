@@ -3,7 +3,6 @@ import ReCAPTCHA from "react-google-recaptcha";
 import GameTitleSeparator from "../util/GameTitleSeparator";
 
 const Vcontact = (props) => {
-
   const localdataWithMail = props.locationMailData;
   const recaptchaRef = useRef();
   const [reCaptchaToken, setReCaptchaToken] = useState(null);
@@ -19,7 +18,6 @@ const Vcontact = (props) => {
     phoneErr: false,
     inqTypeErr: false,
     locErr: false,
-
   });
 
   const [fieldVlue, setFieldValue] = useState({
@@ -204,7 +202,7 @@ const Vcontact = (props) => {
   const getMsg = (e) => {
     const msg = e.target.value.trim();
     if (msg.length > 2) {
-      setFieldValue({ ...fieldVlue, msg: htmlescape(msg) });
+      setFieldValue({ ...fieldVlue, msg: msg });
     }
   };
   const checkBoot = (e) => {
@@ -242,7 +240,7 @@ const Vcontact = (props) => {
     const isEmpty = checkEmpty();
     if (err || isEmpty) {
       setIsSend(false);
-      setErrorMsg("Empty form can't be submitted. Fill required field.")
+      setErrorMsg("Empty form can't be submitted. Fill required field.");
 
       // console.log("Empty Err ...");
       return;
@@ -310,7 +308,6 @@ const Vcontact = (props) => {
       return;
     }
     // ol======
-
   };
 
   return (
@@ -489,7 +486,7 @@ const Vcontact = (props) => {
                 ref={recaptchaRef}
                 sitekey="6LepEu0qAAAAAFSM_8lLN8LDgmT2qguQGQwV7cPZ" // Replace with your site key
                 size="invisible"
-              //onChange={setCaptchaToken}
+                //onChange={setCaptchaToken}
               />
               {/*======================================contact form row message 
               

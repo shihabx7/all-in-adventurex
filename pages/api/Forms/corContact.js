@@ -15,7 +15,6 @@ const escapeHtml = (htmlStr) => {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/(?:\r\n|\r|\n)/g, "<br>");
-  // .replace(/(?:\r\n|\r|\n)/g, "<br>");
 };
 
 export default async function corContactHandler(req, res) {
