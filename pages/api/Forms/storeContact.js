@@ -177,8 +177,10 @@ export default async function corContactHandler(req, res) {
     from: `"AIA ${fromCity} Store Contact" <sender@allinadventures.com>`,
     to: retData.toEmail + "," + retData.toMgrEmail,
     //cc: "shihab.dgency@gmail.com",
-    //to: "shihab.dgency@gmail.com",
     bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
+    //to: "shihab.dgency@gmail.com",
+    // bcc: "dgency.com@gmail.com",
+    // cc: "dgency.com@gmail.com",
     replyTo: email,
 
     subject: `Store Contact - ${fromCity}, ${fromState}`,
