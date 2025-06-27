@@ -10,7 +10,11 @@ const tokens = new csrf();
 const csrfSecret = process.env.CSRF_SECRET || tokens.secretSync();
 
 const escapeHtml = (htmlStr) => {
-  return htmlStr.replace(/&/g, "&amp;").replace(/</g, " ").replace(/>/g, " ");
+  return htmlStr
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/(?:\r\n|\r|\n)/g, "<br>");
   // .replace(/(?:\r\n|\r|\n)/g, "<br>");
 };
 

@@ -6,7 +6,11 @@ import {
 import { checkRateLimiter } from "./formProtection/reqRateLimit";
 
 const escapeHtml = (htmlStr) => {
-  return htmlStr.replace(/&/g, "&amp;").replace(/</g, " ").replace(/>/g, " ");
+  return htmlStr
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/(?:\r\n|\r|\n)/g, "<br>");
   // .replace(/(?:\r\n|\r|\n)/g, "<br>");
 };
 export default async function corContactHandler(req, res) {
@@ -172,8 +176,8 @@ export default async function corContactHandler(req, res) {
   const mailOptions = {
     from: `"AIA ${fromCity} Store Contact" <sender@allinadventures.com>`,
     to: retData.toEmail + "," + retData.toMgrEmail,
-    // cc: "shihab.dgency@gmail.com",
-    // to: "shihab.dgency@gmail.com",
+    //cc: "shihab.dgency@gmail.com",
+    //to: "shihab.dgency@gmail.com",
     bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
     replyTo: email,
 

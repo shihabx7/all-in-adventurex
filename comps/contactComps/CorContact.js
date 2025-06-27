@@ -49,10 +49,10 @@ const CorContact = (props) => {
   // escape Html tag
   const escape = (htmlStr) => {
     return htmlStr
-      .replace(/&/g, "and")
-      .replace(/</g, " ")
-      .replace(/>/g, " ")
-      .replace(/(?:\r\n|\r|\n)/g, "<br>");
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+    //  .replace(/(?:\r\n|\r|\n)/g, "<br>");
   };
   // ========================================================first name validation=================
   const checkFName = (e) => {
@@ -177,7 +177,8 @@ const CorContact = (props) => {
   };
 
   const getMsg = (e) => {
-    const msg = escape(e.target.value.trim());
+    //const msg = escape(e.target.value.trim());
+    const msg = e.target.value.trim();
     if (msg.length > 2) {
       setFieldValue({ ...fieldVlue, msg: msg });
     }

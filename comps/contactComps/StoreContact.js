@@ -53,10 +53,10 @@ export default function StoreContact(props) {
   // sanitize msg text
   const escape = (htmlStr) => {
     return htmlStr
-      .replace(/&/g, "and")
-      .replace(/</g, " ")
-      .replace(/>/g, " ")
-      .replace(/(?:\r\n|\r|\n)/g, "<br>");
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+    //.replace(/(?:\r\n|\r|\n)/g, "<br>");
   };
   //========================================= data state==============
   const recaptchaRef = useRef();
@@ -235,7 +235,8 @@ export default function StoreContact(props) {
   };
 
   const getMsg = (e) => {
-    const usermsg = escape(e.target.value.trim());
+    //const usermsg = escape(e.target.value.trim());
+    const usermsg = e.target.value.trim();
     if (usermsg.length > 2) {
       setFieldValue({ ...fieldVlue, msg: usermsg });
     }
