@@ -411,7 +411,7 @@ const FranchiseContactForm = () => {
   };
   // ========================================================plan for venture=================
   const getPlanForVenture = (e) => {
-    const planV = escape(e.target.value.trim());
+    const planV = e.target.value.trim();
     if (planV.length > 3) {
       setFieldValue({ ...fieldVlue, planForVenture: planV });
       setErr(false);
@@ -432,7 +432,7 @@ const FranchiseContactForm = () => {
   const getOpPlan = (e) => {
     const planOp = e.target.value.trim();
     if (planOp.length > 3) {
-      setFieldValue({ ...fieldVlue, opPlan: escape(planOp) });
+      setFieldValue({ ...fieldVlue, opPlan: planOp });
       e.target.classList.remove("focus-red");
       e.target.classList.add("focus-green");
     } else {
@@ -446,7 +446,7 @@ const FranchiseContactForm = () => {
   const getProfExp = (e) => {
     const profexp = e.target.value.trim();
     if (profexp.length > 3) {
-      setFieldValue({ ...fieldVlue, profExp: escape(profexp) });
+      setFieldValue({ ...fieldVlue, profExp: profexp });
       e.target.classList.remove("focus-red");
       e.target.classList.add("focus-green");
     } else {
@@ -460,7 +460,7 @@ const FranchiseContactForm = () => {
   const getUrBlv = (e) => {
     const urblv = e.target.value.trim();
     if (urblv.length > 3) {
-      setFieldValue({ ...fieldVlue, urBelieve: escape(urblv) });
+      setFieldValue({ ...fieldVlue, urBelieve: urblv });
       e.target.classList.remove("focus-red");
       e.target.classList.add("focus-green");
     } else {
