@@ -240,7 +240,7 @@ const MobileEscapeContact = ({
               id="mobile-escape-room-contact"
               className="mt-8 md:mt-8 lg:mt-0 contact-form-box w-full order-1 lg:order-2 lg:w-[50%]"
             >
-              <img src="/assets/mobile-escape-room/mobile_escape_room_quote.png"></img>
+              <img src="/assets/mobile-escape-room/mobile-escape-room-contact-us.png"></img>
             </div>
 
             {/**=====================================Yext Form end================================== */}

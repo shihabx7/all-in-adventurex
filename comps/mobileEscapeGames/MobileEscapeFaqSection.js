@@ -7,11 +7,10 @@ const MobileEscapeFaqSection = ({ faqSectionData, faqList, locationName }) => {
   return (
     <div
       id="gift-faq"
-      className="all-faq relative  py-16 md:py-24 lg:py-32 px-4 overflow-hidden md:mt-[0px] bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] bg-repeat"
+      className="all-faq relative  py-16 md:py-24 lg:py-32 px-4 overflow-hidden md:mt-[0px] bg-[url('/assets/mobile-escape-room/paper-text-bg.jpg')] bg-center bg-cover "
     >
       {/*======================= boder img============== */}
-      <SectionBorderTop />
-      <SectionBorderBottom />
+
       {/*======================= boder img end============== */}
       <div className="max-w-7xl mx-auto relative z-30">
         <div className="section-title mb-6 rm:mb-8 md:mb-10 lg:mb-12  md:max-w-[720px] lg:max-w-[860px] mx-auto">

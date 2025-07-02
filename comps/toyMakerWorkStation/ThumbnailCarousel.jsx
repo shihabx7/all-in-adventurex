@@ -39,7 +39,7 @@ const ThumbnailCarousel = ({ imageList, setFullViewItem }) => {
       breakpoint: { max: 428, min: 300 },
       items: 2,
       slidesToSlide: 1,
-      partialVisibilityGutter: 20,
+      partialVisibilityGutter: 28,
     },
   };
 

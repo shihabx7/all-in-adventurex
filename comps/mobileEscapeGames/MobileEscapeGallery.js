@@ -1,116 +1,67 @@
-import MobileTitleSeparatorCenter from "./MobileTitleSeparatorCenter";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import { useState, useEffect, useRef } from "react";
+import { FaRegPlayCircle } from "react-icons/fa";
+import SectionTitleCenterDark from "../common/SectionTitleCenterDark";
+import PlayMobileGalleryVideo from "./PlayMobileGalleryVideo";
+import MobileGalleryThubCarousel from "./MobileGalleryThubCarousel";
 
+export default function MobileEscapeGallery({ sectionData }) {
+  const [fullImage, setFullImage] = useState(sectionData.galleryImages[0]);
+  const [fullViewItem, setFullViewItem] = useState(
+    sectionData.galleryImages[0]
+  );
+  const [imageList, setImageList] = useState(sectionData.galleryImages);
 
-const MobileEscapeGallery = ({ gallerySectionData, imgList, locationName }) => {
-  const responsive = {
-    desktoplg: {
-      breakpoint: { max: 4000, min: 1440 },
-      items: 5,
-      slidesToSlide: 1,
-      partialVisibilityGutter: 30,
-    },
-    desktop: {
-      breakpoint: { max: 1440, min: 1024 },
-      items: 3,
-      slidesToSlide: 1,
-      partialVisibilityGutter: 24,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 520 },
-      items: 2,
-      slidesToSlide: 1,
-      partialVisibilityGutter: 20,
-    },
-    mobile: {
-      breakpoint: { max: 520, min: 0 },
-      items: 1,
-      slidesToSlide: 1,
-      partialVisibilityGutter: 80,
-    },
+  const showFullView = (e, index) => {
+    e.preventDefault();
+    setFullImage(imageList[index]);
   };
-
   return (
-    <div className="game-gallery bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px]">
-      <div className="max-w-7xl mx-auto py-16 md:py-20 lg:py-28 md:px-4">
-        <div className="s-title  mb-4 rm:mb-6 md:mb-10 lg:mb-12  md:max-w-[720px] lg:max-w-[840px] mx-auto px-4 md:px-0">
-          <MobileTitleSeparatorCenter title={gallerySectionData.sectionTitle} />
+    <div className="mbl-game-gallery-section  egg-section ">
+      <div className="section-head-lg  px-3">
+        <div className="section-title">
+          <SectionTitleCenterDark title={sectionData.sectionTitle} />
+        </div>
+        {sectionData.sectionSubTitle && (
           <div
-            className="text-[#2E2E2E] mt-3 md:mt-4 lg:mt-6  text-center md:text-lg lg:text-xl"
+            className="text-[#2e2e2e] sm:text-lg xl:text-xl mt-3 md:mt-3 xl:mt-4 max-w-[500px] lg:max-w-[700px] mx-auto text-center"
             dangerouslySetInnerHTML={{
-              __html: gallerySectionData.sectionSubTitle,
+              __html: sectionData.sectionSubTitle,
             }}
           ></div>
-        </div>
-        {gallerySectionData.galleryImageList ? (
-          <div className="hidden md:block game-gallery">
-            <div className="grid md:grid-cols-3 gap-4">
-              {gallerySectionData.galleryImageList.map((item, index) => {
-                return (
-                  <div
-                    key={item.id}
-                    className="game-gl-item cursor-pointer shadow-lg border-2 inset border-transparent hover:border-2 hover:border-[#D3A54F]"
-                  >
-                    <img src={item.url} alt={item.alt}></img>
-                  </div>
-                );
-              })}
+        )}
+      </div>
+      {/*=======================================Game gallery */}
+      <div className="section-bg  mt-6 md:mt-8 xl:mt-10">
+        <div className="section-container zm:max-w-[580px] md:max-w-[780px] lg:max-w-[990px] xl:max-w-[1210px] 2xl:max-w-[1230px] mx-auto   ">
+          {/*=======================================gallery main image*/}
+          <div className="bg-[#261B04] rounded-xl px-2 py-3 zm:px-4 zm:py-5 md:px-5 md:py-6 xl:px-6 xl:py-7 ">
+            <div className="gallery-img-full-view px-1  rounded-lg">
+              {fullViewItem.videoUrl ? (
+                <>
+                  <PlayMobileGalleryVideo
+                    videoUrl={fullViewItem.videoUrl}
+                    videoPoster={fullViewItem.url}
+                  />
+                </>
+              ) : (
+                <img
+                  className="rounded-lg transition-all duration-500 ease-in-out"
+                  alt={fullViewItem.alt}
+                  src={fullViewItem.url}
+                ></img>
+              )}
+            </div>
+            {/*=======================================gallery thumbnail carousel image*/}
+            {/*=======================================gallery list image*/}
+            <div className="gallery-img-thumb-carousel mt-3">
+              <MobileGalleryThubCarousel
+                imageList={sectionData.galleryImages}
+                setFullViewItem={setFullViewItem}
+              />
             </div>
           </div>
-        ) : (
-          <></>
-        )}
-
-        {/*============== gallery carousel========== */}
-        {gallerySectionData.galleryImageList ? (
-          <div className="game-gallery-slider md:hidden relative inp-car ">
-            <Carousel
-              swipeable={true}
-              draggable={true}
-              showDots={true}
-              arrows={true}
-              responsive={responsive}
-              ssr={true} // means to render carousel on server-side.
-              infinite={true}
-              // autoPlay={this.props.deviceType !== "mobile" ? true : false}
-              autoPlay={false}
-              keyBoardControl={true}
-              customTransition=".5s ease-in-out"
-              transitionDuration={500}
-              containerClass="carousel-container"
-              //  removeArrowOnDeviceType={["tablet", "mobile"]}
-              //deviceType={this.props.deviceType}
-              dotListClass="custom-dot-list-style"
-              itemClass="game-carousel-card game-gallery-carousel px-2 lg:px-3 py-4 md:py-8"
-              renderDotsOutside={true}
-              partialVisible={true}
-            >
-              {gallerySectionData.galleryImageList.map((item) => {
-                return (
-                  <div key={item.id} className="game-gl-item">
-                    <img src={item.url} alt={item.alt} />
-                  </div>
-                );
-              })}
-            </Carousel>
-          </div>
-        ) : (
-          <></>
-        )}
-
-        {/* ===============gallery slider============= */}
-        <div className="mbl-h-btn  mt-16 md:mt-14 2xl:mt-16 flex justify-center">
-          <a
-            href="#mobile-escape-room-form"
-            className="max-w-[220px] px-12 text-center border block text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
-          >
-            GET A QUOTE
-          </a>
         </div>
       </div>
     </div>
   );
-};
-
-export default MobileEscapeGallery;
+}

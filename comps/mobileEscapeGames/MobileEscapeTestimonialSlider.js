@@ -6,7 +6,7 @@ const MobileEscapeTestimonialSlider = ({
   locationName,
 }) => {
   return (
-    <div className="mer-games-slider bg-black">
+    <div className="mer-games-slider bg-[#231800]">
       <div className=" max-w-7xl mx-auto py-16 md:py-20 lg:py-28  z-20 px-1 md:px-4 ">
         <div className="section-head mb-3 rm:mb-4 md:mb-6 lg:mb-7  md:max-w-[720px] lg:max-w-[860px] mx-auto px-4 ">
           <MobileTitleSeparatorCenter

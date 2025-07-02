@@ -1,9 +1,12 @@
 import MobileEscapeHero from "./MobileEscapeHero";
+import MobileEscapeVideoHero from "./mobileEscapeVideoHero";
 import MobileEscapeGameSlider from "./MobileEscapeGameSlider";
+import MobileEscapeGameCarouselSection from "./MobileEscapeGameCarouselSection";
 import MobileEscapeTestimonialSlider from "./MobileEscapeTestimonialSlider";
 import MobileEscapeFaqSection from "./MobileEscapeFaqSection";
 import MobileEscapeContact from "./MobileEscapeContact";
 import MobileEscapEx from "./MobileEscapEx";
+import MobileEscapeExperience from "./MobileEscapeExperience";
 import MobileEscapePricing from "./MobileEscapePricing";
 
 const faqList = [
@@ -79,8 +82,9 @@ const MobileEscapeGamePageUI = (props) => {
   return (
     <>
       {/*home hero*/}
+
       {props.mobileEscapeRoomPageData.pageHero !== null ? (
-        <MobileEscapeHero
+        <MobileEscapeVideoHero
           pageHero={props.mobileEscapeRoomPageData.pageHero}
           locationName={props.locationName ? props.locationName : false}
           locationSlug={props.locationSlug ? props.locationSlug : false}
@@ -105,7 +109,7 @@ const MobileEscapeGamePageUI = (props) => {
         locationName={props.locationName ? props.locationName : false}
       />
       {props.mobileEscapeRoomPageData.gameCarouselSectionData !== null ? (
-        <MobileEscapeGameSlider
+        <MobileEscapeGameCarouselSection
           gameCarouselSectionData={
             props.mobileEscapeRoomPageData.gameCarouselSectionData
           }
@@ -127,7 +131,7 @@ const MobileEscapeGamePageUI = (props) => {
         <></>
       )}
       {props.mobileEscapeRoomPageData.experienceSectionData !== null ? (
-        <MobileEscapEx
+        <MobileEscapeExperience
           experienceSectionData={
             props.mobileEscapeRoomPageData.experienceSectionData
           }

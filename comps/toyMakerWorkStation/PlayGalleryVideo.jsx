@@ -1,9 +1,7 @@
 import { useEffect, useRef } from "react";
 export default function PlayGalleryVideo({ videoUrl, videoPoster }) {
   const videoRef = useRef();
-  useEffect(() => {
-    videoRef.current.play();
-  }, []);
+
   return (
     <div className="w-fullk rounded-lg">
       <video
@@ -12,12 +10,9 @@ export default function PlayGalleryVideo({ videoUrl, videoPoster }) {
         className={
           " w-full  rounded-lg transition-all duration-500 ease-in-out"
         }
-        preload="metadata"
+        preload="none"
         playsInline
         controls
-        autoPlay
-        loop
-        muted
         poster={videoPoster}
       >
         <source src={videoUrl} type="video/mp4" />

@@ -12,7 +12,7 @@ export default function SectionBgVideo({ videoData }) {
         className={
           "no-fullscreen-vid w-full h-full aspect-video object-cover object-center "
         }
-        preload="metadata"
+        preload="none"
         playsInline
         autoPlay
         loop
