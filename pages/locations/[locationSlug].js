@@ -180,7 +180,7 @@ export const getStaticProps = async (context) => {
   */
   const DATA = await getLocationHomePageData(context.params.locationSlug);
   // const DATA = await getLocationHomePageData(context.params.locationSlug);
-  //console.log(DATA.toyMakerPageData);
+  //console.log(DATA);
   return {
     props: {
       locationSlugList: DATA.locationSlugList,

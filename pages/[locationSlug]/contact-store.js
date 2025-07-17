@@ -99,7 +99,7 @@ export const getStaticProps = async (context) => {
     };
   }*/
   const DATA = await getLocationsContactPageData(context.params.locationSlug);
-  // console.log(DATA);
+  //console.log(DATA);
 
   return {
     props: {
