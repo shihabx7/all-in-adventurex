@@ -2,9 +2,12 @@ import { apiSetting, apiUrl } from "../../../lib/apiSettings";
 import { activityPageQuery } from "../../../lib/query/activityQuery";
 import { locationDynamicPageQuery } from "../../../lib/query/HomePageQuery";
 import { locationSlugListQuery } from "../../../lib/query/navMenuQuery";
+import { LocationHomePageQuery } from "../../../lib/query/HomePageQuery";
 import { mobileEscapePageQuery } from "../../../lib/query/mobileEscapeQuery";
-
+import { newUpdateData } from "../../../lib/tempData/mobileEscapeTempData";
 import { toyMakerPageData } from "../../../lib/tempData/toymakerWorkStationTempData";
+
+import { getLocEscapeGameCarouselSectionData } from "../../../lib/locationHomePageDataFormation";
 
 import {
   getLocationSlugList,
@@ -67,25 +70,31 @@ const fetchPageData = async (locslug, actSlug) => {
   const retdata = resObj.data[0].attributes;
   return retdata;
 };
+const fetchLocationEscapeGameData = async (locSlug, actSlug) => {
+  if (actSlug != "mobile-escape-room" && actSlug != "toymakers-workshop") {
+    return false;
+  }
+  let sectionData = "";
+  if (actSlug == "mobile-escape-room") {
+    sectionData = newUpdateData.escapeGameCarouselSectionData;
+  }
+  if (actSlug == "toymakers-workshop") {
+    sectionData = toyMakerPageData[locSlug].escapeGameCarouselSectionData;
+  }
+  const filters = "locations?filters[slug][$eq]=" + locSlug;
+  const pageReqUrl = apiUrl + filters + LocationHomePageQuery;
+  const pageResponse = await fetch(pageReqUrl, apiSetting);
+  const pageResArr = await pageResponse.json();
+  const pageResData = pageResArr.data[0].attributes;
+
+  return getLocEscapeGameCarouselSectionData(
+    pageResData.locationActivities,
+    pageResData.bookingInfo,
+    sectionData
+  );
+};
 const pageSeo = () => {};
 export const getLocationsActivityPageData = async (locslug, actSlug) => {
-  /* let activityQ = "";
-  if (actSlug == "mobile-escape-room") {
-    activityQ =
-      apiUrl +
-      "locations?filters[slug][$eq]=" +
-      locslug +
-      mobileEscapePageQuery;
-  } else {
-    activityQ =
-      apiUrl +
-      "activities?filters[activitySlug][$eq]=" +
-      actSlug +
-      activityPageQuery;
-  }*/
-  //console.log(activityQ);
-  // const pageRes = await fetch(activityQ, apiSetting);
-  //const resObj = await pageRes.json();
   const pageResData = await fetchPageData(locslug, actSlug);
   // console.log(pageResData.mobileEscapeRoom);
   //const actSeo = pageResData.seo;
@@ -102,16 +111,7 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
   const locationResData = locationObj.data[0].attributes;
   const mobileEscapeRoom = locationResData.mobileEscapeRoom;
   let isActiveMobileEscape = checkActiveMobileEscape(mobileEscapeRoom);
-  //  if (isActiveMobileEscape && actSlug == "mobile-escape-room") {
-  //console.log(activityQ);
-  // console.log("========================");
-  // console.log("========================");
-  //console.log(pageResData.mobileEscapeRoom);
-  // }
 
-  //console.log(locationResData.mobileEscapeRoom.length);
-  //console.log(locationResData);
-  // fetch all location list as an array
   const locationListRes = await fetch(locationSlugListQuery, apiSetting);
   const locationListObj = await locationListRes.json();
   const locationListData = locationListObj.data;
@@ -123,7 +123,6 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
     actSlug,
     locationResData.escapeGameParty
   );
-  //cl.log(locActivityData.locActivityDetails);
 
   const selectSeo = () => {
     if (actSlug == "mobile-escape-room") {
@@ -157,7 +156,10 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
       locActivityData.isActive
     );
   };
-
+  const escapeGameCarouselData = await fetchLocationEscapeGameData(
+    locslug,
+    actSlug
+  );
   const pageDATA = {
     locationSlugList: getLocationSlugList(locationListData),
     escapeGameSlugList: getEscapeGameSlugList(
@@ -228,6 +230,7 @@ export const getLocationsActivityPageData = async (locslug, actSlug) => {
             locationResData.slug
           )
         : false,
+    escapeGameCarouselSectionData: escapeGameCarouselData,
     toymakersPageData: actSlug == "toymakers-workshop" ? pageResData : false,
     hasToymakers: actSlug == "toymakers-workshop" ? true : false,
   };

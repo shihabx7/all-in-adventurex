@@ -1,4 +1,5 @@
 import SectionTitleLight from "../../common/SectionTitleLight";
+import SectionTittleCenterLight from "../../common/SectionTitleCenterLight";
 import OccActivityCarousel from "../OccActivityCarousel";
 export default function OccActivitySection({ sectionData, bookingData }) {
   const bookGame = (bookingData) => {
@@ -15,7 +16,7 @@ export default function OccActivitySection({ sectionData, bookingData }) {
       <div className="py-16  md:py-20 lg:py-24  xl:py-28  px-4 xl:px-0  z-20 ">
         <div className="section-head mb-6 rm:mb-8 md:mb-10 lg:mb-12  md:max-w-[720px] lg:max-w-[1200px] mx-auto   lg:px-0">
           <div className="max-w-[364px] md:max-w-full">
-            <SectionTitleLight
+            <SectionTittleCenterLight
               title={
                 sectionData.sectionTitle !== null
                   ? sectionData.sectionTitle
@@ -25,7 +26,7 @@ export default function OccActivitySection({ sectionData, bookingData }) {
           </div>
           {sectionData.sectionSubTitle !== null ? (
             <div
-              className="text-gray-200 mt-3 md:mt-3 xl:mt-4 md:text-lg lg:text-xl max-w-[850px] "
+              className="text-gray-200 mt-2 md:mt-3 lg:mt-4 text-center md:text-lg lg:text-xl max-w-[850px] mx-auto "
               dangerouslySetInnerHTML={{
                 __html: sectionData.sectionSubTitle,
               }}

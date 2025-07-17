@@ -12,6 +12,7 @@ import PageBread from "../comps/util/PageBread";
 import SinglePageSeo from "../comps/util/SinglePageSeo";
 
 import { useState } from "react";
+import EscapeGameCarousel from "../comps/homepagecomps/EscapeGameCarousel";
 
 const RootMobileEscapeRoom = (props) => {
   const [showMobileEecapeMenu, setShowMobileEecapeMenu] = useState(false);
@@ -49,6 +50,7 @@ const RootMobileEscapeRoom = (props) => {
         <PageBread />
         <MobileEscapeGamePageUI
           mobileEscapeRoomPageData={props.mobileEscapeRoomPageData}
+          escapeGameCarouselSectionData={props.escapeGameCarouselSectionData}
           setShowMobileEecapeMenu={setShowMobileEecapeMenu}
           setGoMobileEecapeForm={setGoMobileEecapeForm}
           goMobileEecapeForm={goMobileEecapeForm}
@@ -68,7 +70,7 @@ export default RootMobileEscapeRoom;
 
 export const getStaticProps = async () => {
   const DATA = await getRootMobileEscapeRoomPageData();
-  // console.log(giftpagedataData.redeemgames);
+  //console.log(DATA.escapeGameCarouselSectionData);
   return {
     props: {
       locationSlugList: DATA.locationSlugList,
@@ -77,6 +79,7 @@ export const getStaticProps = async () => {
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
       pageMeta: DATA.pageMeta,
+      escapeGameCarouselSectionData: DATA.escapeGameCarouselSectionData,
       mobileEscapeRoomPageData: DATA.mobileEscapeRoomPageData,
     },
     revalidate: 12,

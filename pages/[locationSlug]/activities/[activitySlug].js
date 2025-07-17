@@ -52,6 +52,9 @@ const LocSingleActivity = (props) => {
               locationInfo={props.locationInfo}
               locationName={props.locationName}
               locationSlug={props.locationSlug}
+              escapeGameCarouselSectionData={
+                props.escapeGameCarouselSectionData
+              }
             />
           </>
         )}
@@ -62,6 +65,9 @@ const LocSingleActivity = (props) => {
               locationInfo={props.locationInfo}
               locationName={props.locationName}
               locationSlug={props.locationSlug}
+              escapeGameCarouselSectionData={
+                props.escapeGameCarouselSectionData
+              }
             />
           </>
         )}
@@ -159,7 +165,7 @@ export const getStaticProps = async (context) => {
     context.params.locationSlug,
     context.params.activitySlug
   );
-  //console.log(context.params.activitySlug);
+  //console.log(DATA.escapeGameCarouselSectionData);
 
   return {
     props: {
@@ -191,6 +197,7 @@ export const getStaticProps = async (context) => {
       mobileEscapeRoomPageData: DATA.mobileEscapeRoomPageData,
       pageUi: DATA.pageUi,
       toymakersPageData: DATA.toymakersPageData,
+      escapeGameCarouselSectionData: DATA.escapeGameCarouselSectionData,
     },
     revalidate: 12,
   };

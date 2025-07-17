@@ -42,7 +42,7 @@ export default function ToyMakersStoryLineSection({ gameInfo, bookingData }) {
                       src={"/assets/toymakers-workshop/storyline/age.svg"}
                     ></img>
                     <p className="text-[#2e2e2e] text-[12px] rm:text-[14px] md:text-[17px] xl:text-[18px]">
-                      Age: 6 and under
+                      Age: 10 and under
                     </p>
                   </div>
                   {/*==================================================col 2*/}

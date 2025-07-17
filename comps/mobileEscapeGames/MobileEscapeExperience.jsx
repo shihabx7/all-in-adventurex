@@ -1,5 +1,7 @@
 import SectionBorderBottom from "../util/SectionBorderBottom";
 import SectionBorderTop from "../util/SectionBorderTop";
+import { HiMiniArrowLongRight } from "react-icons/hi2";
+
 import { eventFormBookingLinks } from "../../lib/tempData/eventFormBookingLinks";
 import PartnerOrg from "./PartnerOrg";
 import MobileEscapeGallery from "./MobileEscapeGallery";
@@ -34,13 +36,18 @@ const MobileEscapeExperience = ({
     <div className="mer-hero bg-[#FFF9EB]  bg-[url('/assets/mobile-escape-room/paper-text-bg.jpg')] bg-center bg-cover  relative py-16 md:py-20 lg:py-28 px-4 overflow-hidden">
       <div className="mbl-h-container max-w-7xl mx-auto md:px-4">
         {/* =====================++++section row 1++++=====================*/}
-        <div className="mbl-row flex flex-col lg:flex-row jsutify-between  space-x-0 lg:space-x-10 2xl:space-x-16 items-center">
-          <div className="mbl-col w-full lg:w-1/2 order-2 lg:order-1">
+        <div className="mbl-row flex flex-col lg:flex-row jsutify-between  space-x-0 lg:space-x-6 2xl:space-x-8 items-center">
+          <div className="mbl-col w-full lg:min-w-[500px] xl:min-w-[640px] order-2 lg:order-1">
             {/* ==================section title=====================*/}
             <div className="md:max-w-[80%] lg:max-w-[100%]">
               <MobileTitleSeparatorLeft
                 title={experienceSectionData.titleOne}
               />
+            </div>
+            <div className=" my-5 md:my-7 lg:my-6 2xl:my-8">
+              <p className="text-[#2E2E2E] font-bold text-sm md:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.25rem]">
+                Fast. Fun. Hassle-free.
+              </p>
             </div>
 
             {/* ==================text=====================*/}
@@ -71,7 +78,7 @@ const MobileEscapeExperience = ({
               )}
             </div>
           </div>
-          <div className="mbl-col w-full lg:w-1/2 order-1 lg:order-2 mb-6 md:mb-8 lg:mb-0">
+          <div className="mbl-col w-full lg:w-auto flex-grow order-1 lg:order-2 mb-6 md:mb-8 lg:mb-0">
             <div className="mbl-h-img text-center">
               <img
                 className="w-full"
@@ -85,13 +92,8 @@ const MobileEscapeExperience = ({
         </div>
 
         {/* ==================Gallery=====================*/}
-        <div className="mbl-partner-logo-container pt-4 lg:pt-12 lg:pb-0 mt-12 md:mt-10 lg:mt-16">
-          <MobileEscapeGallery sectionData={newUpdateData.gallerySectionData} />
-        </div>
+
         {/* ==================+++partner section row    +++=====================*/}
-        <div className="mbl-row mbl-partners mt-12 md:mt-10 lg:mt-16">
-          <PartnerOrg />
-        </div>
       </div>
     </div>
   );

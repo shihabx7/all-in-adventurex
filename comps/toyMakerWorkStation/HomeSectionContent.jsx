@@ -20,7 +20,7 @@ export default function HomeSectionContent({ bookingData, locationSlug }) {
             alt={"toymaker workshop age icon"}
           ></img>
           <p className="text-sm xm:text-[12px] md:text-base lg:text-lg text-[#D0C5C5]">
-            Age: 6 and under{" "}
+            Age: 10 and under
           </p>
         </div>
         {/* icon 2 */}
@@ -30,7 +30,7 @@ export default function HomeSectionContent({ bookingData, locationSlug }) {
             src={"/assets/toymakers-workshop/home/duration.png"}
             alt={"toymaker workshop duration icon"}
           ></img>
-          <p className="text-sm xm:text-[12px] md:text-base lg:text-lg text-[#D0C5C5] text-[#D0C5C5]">
+          <p className="text-sm xm:text-[12px] md:text-base lg:text-lg text-[#D0C5C5] ">
             Duration: 1 Hour{" "}
           </p>
         </div>
@@ -41,14 +41,14 @@ export default function HomeSectionContent({ bookingData, locationSlug }) {
             src={"/assets/toymakers-workshop/home/childs.png"}
             alt={"toymaker workshop childs icon"}
           ></img>
-          <p className="text-sm xm:text-[12px] md:text-base lg:text-lg text-[#D0C5C5] text-[#D0C5C5]">
+          <p className="text-sm xm:text-[12px] md:text-base lg:text-lg text-[#D0C5C5] ">
             Each child receives toy{" "}
           </p>
         </div>
       </div>
       {/* text content element */}
       <div className="home-sec-text max-w-[560px] lg:max-w-[616px] mx-auto">
-        <h4 className="text-[20px] rm:text-[23px] md:text-[30px] xl:text-[32px] font-bold text-[#FFB548] mb-[4px] text-[#e0bf62] text-center">
+        <h4 className="text-[20px] rm:text-[23px] md:text-[30px] xl:text-[32px] font-bold text-[#FFB548] mb-[4px] text-center">
           TOYMAKER'S WORKSHOP
         </h4>
         <p className="text-sm md:text-base lg:text-lg text-center text-[#ffffff]">

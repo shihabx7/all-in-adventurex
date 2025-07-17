@@ -1,13 +1,16 @@
-import MobileEscapeHero from "./MobileEscapeHero";
-import MobileEscapeVideoHero from "./mobileEscapeVideoHero";
-import MobileEscapeGameSlider from "./MobileEscapeGameSlider";
+import { newUpdateData } from "../../lib/tempData/mobileEscapeTempData";
+import PageVideoBgHero from "./PageVideoBgHero";
 import MobileEscapeGameCarouselSection from "./MobileEscapeGameCarouselSection";
 import MobileEscapeTestimonialSlider from "./MobileEscapeTestimonialSlider";
 import MobileEscapeFaqSection from "./MobileEscapeFaqSection";
 import MobileEscapeContact from "./MobileEscapeContact";
-import MobileEscapEx from "./MobileEscapEx";
+
 import MobileEscapeExperience from "./MobileEscapeExperience";
+import MobileEscapeGallery from "./MobileEscapeGallery";
+import PerfectForGroupSection from "./PerfectForGroupSection";
 import MobileEscapePricing from "./MobileEscapePricing";
+import OtherPageGameCarouselSection from "../homepagecomps/OtherPageGameCarouselSection";
+import { perfectSectionData } from "../../lib/tempData/mobileEscapeTempData";
 
 const faqList = [
   {
@@ -84,7 +87,7 @@ const MobileEscapeGamePageUI = (props) => {
       {/*home hero*/}
 
       {props.mobileEscapeRoomPageData.pageHero !== null ? (
-        <MobileEscapeVideoHero
+        <PageVideoBgHero
           pageHero={props.mobileEscapeRoomPageData.pageHero}
           locationName={props.locationName ? props.locationName : false}
           locationSlug={props.locationSlug ? props.locationSlug : false}
@@ -107,6 +110,7 @@ const MobileEscapeGamePageUI = (props) => {
       <MobileEscapePricing
         pricingSectionData={props.mobileEscapeRoomPageData.pricingSectionData}
         locationName={props.locationName ? props.locationName : false}
+        locationInfo={props.locationInfo ? props.locationInfo : false}
       />
       {props.mobileEscapeRoomPageData.gameCarouselSectionData !== null ? (
         <MobileEscapeGameCarouselSection
@@ -152,6 +156,8 @@ const MobileEscapeGamePageUI = (props) => {
       ) : (
         <></>
       )}
+      <PerfectForGroupSection sectionData={perfectSectionData} />
+      <MobileEscapeGallery sectionData={newUpdateData.gallerySectionData} />
       {props.mobileEscapeRoomPageData.testimonialSectionData !== null ? (
         <MobileEscapeTestimonialSlider
           testimonialSectionData={
@@ -192,6 +198,15 @@ const MobileEscapeGamePageUI = (props) => {
       ) : (
         <></>
       )}
+      {props.escapeGameCarouselSectionData && (
+        <OtherPageGameCarouselSection
+          sectionData={props.escapeGameCarouselSectionData}
+          locationName={props.locationName ? props.locationName : false}
+          locationSlug={props.locationSlug ? props.locationSlug : false}
+          locationInfo={props.locationInfo ? props.locationInfo : false}
+        />
+      )}
+
       {/** ==section============ old design======================= 3 
       {props.mobileEscapeRoomPageData.eventSectionData !== null ? (
         <MobileEscapeEvents

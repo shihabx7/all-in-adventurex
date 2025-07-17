@@ -35,7 +35,7 @@ export default function ToymakerPageHero({ pageHeroData, bookingData }) {
               </div>
               {pageHeroData.pageSubTitle && (
                 <div
-                  className="page-sub-title text-[#cacaca] zm:max-w-[480px] md:max-w-[760px] mx-auto md:text-lg xl:text-xl text-center mt-3 md:mt-3 xl:mt-4 "
+                  className="page-sub-title text-[#cacaca] zm:max-w-[480px] md:max-w-[760px] lg:max-w-[920px] mx-auto md:text-lg xl:text-xl text-center mt-3 md:mt-3 xl:mt-4 "
                   dangerouslySetInnerHTML={{
                     __html: pageHeroData.pageSubTitle,
                   }}

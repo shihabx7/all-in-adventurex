@@ -15,9 +15,11 @@ import {
   getAllEventSlugList,
 } from "../../lib/menuDataFormation";
 
-import { giftRedeemImageList } from "../../lib/tempData/tempGiftCardPageData";
 //mobile escape room root page data
 import { rootMobileEscapePageData } from "../../lib/tempData/mobileEscapeTempData";
+import { newUpdateData } from "../../lib/tempData/mobileEscapeTempData";
+import { getEscapeGameCarouselSectionData } from "../../lib/dataFormation/homaPageDataFormation";
+import { activityListQuery } from "../../lib/query/activityQuery";
 
 export const getRootMobileEscapeRoomPageData = async () => {
   const pageReq = apiUrl + giftCardsPageQuery;
@@ -45,6 +47,13 @@ export const getRootMobileEscapeRoomPageData = async () => {
   const totalActivities = actctivityListResData.length;
   const totalLocations = locationListData.length;
   //giftReedem: getGiftRootReedem(actctivityListResData),
+
+  // fetch  (escape room + other games) list as an array
+  const escapegamelistReqUrl = apiUrl + activityListQuery;
+  const escapegameListRes = await fetch(escapegamelistReqUrl, apiSetting);
+  const escapegameListResObj = await escapegameListRes.json();
+  const escapegameListResData = escapegameListResObj.data;
+
   const Data = {
     locationSlugList: getLocationSlugList(locationListData),
     escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
@@ -52,6 +61,10 @@ export const getRootMobileEscapeRoomPageData = async () => {
     eventSlugList: getAllEventSlugList(eventListResData),
     totalLocations: totalLocations,
     pageMeta: rootMobileEscapePageData.pageMeta,
+    escapeGameCarouselSectionData: getEscapeGameCarouselSectionData(
+      escapegameListResData,
+      newUpdateData.escapeGameCarouselSectionData
+    ),
     mobileEscapeRoomPageData: rootMobileEscapePageData,
   };
 

@@ -5,24 +5,30 @@ const OccActivityCarousel = ({ carouselList }) => {
   const responsive = {
     desktopxl: {
       breakpoint: { max: 4300, min: 2081 },
-      items: 4,
+      items: 5,
       slidesToSlide: 1,
       partialVisibilityGutter: 0,
     },
     desktoplg: {
       breakpoint: { max: 2080, min: 1640 },
-      items: 4,
+      items: 5,
       slidesToSlide: 1,
       partialVisibilityGutter: 0,
     },
     desktopmd: {
-      breakpoint: { max: 1640, min: 1380 },
-      items: 3,
+      breakpoint: { max: 1640, min: 1370 },
+      items: 4,
       slidesToSlide: 1,
       partialVisibilityGutter: 0,
     },
     desktop: {
-      breakpoint: { max: 1380, min: 1000 },
+      breakpoint: { max: 1369, min: 1140 },
+      items: 4,
+      slidesToSlide: 1,
+      partialVisibilityGutter: 0,
+    },
+    tabletLg: {
+      breakpoint: { max: 1139, min: 990 },
       items: 3,
       slidesToSlide: 1,
       partialVisibilityGutter: 0,
@@ -57,12 +63,12 @@ const OccActivityCarousel = ({ carouselList }) => {
         keyBoardControl={true}
         customTransition=".5s ease-in-out"
         transitionDuration={500}
-        containerClass="carousel-container ocac-car-container ml-auto pb-10 md:pb-12"
+        containerClass="carousel-container ocac-car-container-n pb-10 md:pb-12"
         // rewindWithAnimation={true}
         //  removeArrowOnDeviceType={["tablet", "mobile"]}
         //deviceType={this.props.deviceType}
-        dotListClass="custom-dot-list-style tst  mer-car-dot ocac-car-dot  mer-game-carousel-dot "
-        itemClass="game-carousel-card px-1 zm:px-2 md:px-4 lg:px-3 xl:px-5 2xl:px-6 4xl:px-5 pb-4 md:pb-5 lg:pb-8"
+        dotListClass="custom-dot-list-style tst  mer-car-dot ocac-car-dot-n  mer-game-carousel-dot "
+        itemClass="game-carousel-card px-1 zm:px-2 md:px-4 lg:px-3 xl:px-3 2xl:px-3 4xl:px-4 pb-4 md:pb-5 lg:pb-8"
         renderDotsOutside={false}
         partialVisible={true}
       >

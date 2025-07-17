@@ -186,7 +186,7 @@ const MobileEscapeContact = ({
                     <div className="flex-1">
                       <a
                         className="text-[#F4E6C3] xl:text-lg hover:text-red-700"
-                        href={"tel:+1404-445-6047"}
+                        href={"tel:+1 404-445-6047"}
                       >
                         Sales: +1 404-445-6047
                       </a>
