@@ -50,13 +50,21 @@ const MobileEscapeExperience = ({
               </p>
             </div>
 
-            {/* ==================text=====================*/}
-            <div
-              className="text-[#2e2e2e] md:text-lg  mbl-h-list mt-1 md:mt-2 mbl-group-text"
-              dangerouslySetInnerHTML={{
-                __html: experienceSectionData.descriptionOne,
-              }}
-            ></div>
+            {/* ==================text   __html: experienceSectionData.descriptionOne, =====================*/}
+            <div className="text-[#2e2e2e] md:text-lg  mbl-h-list mt-1 md:mt-2 mbl-group-text">
+              <p>
+                Bring high-energy entertainment to your event without the
+                stress. Our mobile escape rooms transform ordinary spaces into
+                unforgettable adventures—complete with interesting props,
+                engaging storylines, and seamless setup.
+              </p>
+              <p>
+                Whether you're hosting a school field day, company retreat,
+                church function, or birthday bash, we deliver a crowd-pleasing
+                activity that sparks teamwork, creativity, and excitement. All
+                you need is the space—we handle the rest.
+              </p>
+            </div>
             {/* ==================button=====================*/}
             <div className="mbl-h-btn  mt-5 md:mt-10 2xl:mt-12">
               {locationSlug ? (

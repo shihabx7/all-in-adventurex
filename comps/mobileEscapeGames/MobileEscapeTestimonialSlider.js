@@ -13,30 +13,21 @@ const MobileEscapeTestimonialSlider = ({
             title={testimonialSectionData.sectionTitle}
             textColor={"#E0BF62"}
           />
-          {testimonialSectionData.sectionSubTitle !== null ? (
-            <div
-              className="text-[#ffffff] mt-1 md:mt-2 lg:mt-2  text-center md:text-lg lg:text-xl max-w-[840px] mx-auto"
-              dangerouslySetInnerHTML={{
-                __html: testimonialSectionData.sectionSubTitle,
-              }}
-            ></div>
-          ) : (
-            <></>
-          )}
+
+          <div className="text-[#ffffff] mt-1 md:mt-2 lg:mt-2  text-center md:text-lg lg:text-xl max-w-[840px] mx-auto">
+            <p>
+              Don't just take our word for it—see what schools, businesses, and
+              teams are saying about their mobile escape room experience.
+            </p>
+          </div>
         </div>
-        {testimonialSectionData.testimonialList.length > 3 ? (
-          <div className="megc px-3 lg:px-8 xl:px-0 relative">
-            <MobileEscapeGameTestimonialCar
-              testimonialList={testimonialSectionData.testimonialList}
-            />
-          </div>
-        ) : (
-          <div className="megc px-3 lg:px-8 xl:px-0 relative">
-            <MobileEscapeGameTestimonialCar
-              testimonialList={mobileEscapeTestimonialList}
-            />
-          </div>
-        )}
+        {/*  testimonialList={testimonialSectionData.testimonialList} */}
+
+        <div className="megc px-3 lg:px-8 xl:px-0 relative">
+          <MobileEscapeGameTestimonialCar
+            testimonialList={mobileEscapeTestimonialList}
+          />
+        </div>
       </div>
     </div>
   );

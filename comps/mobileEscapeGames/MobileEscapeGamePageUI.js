@@ -11,6 +11,7 @@ import PerfectForGroupSection from "./PerfectForGroupSection";
 import MobileEscapePricing from "./MobileEscapePricing";
 import OtherPageGameCarouselSection from "../homepagecomps/OtherPageGameCarouselSection";
 import { perfectSectionData } from "../../lib/tempData/mobileEscapeTempData";
+import HeroInfoCard from "./HeroInfoCard";
 
 const faqList = [
   {
@@ -106,11 +107,14 @@ const MobileEscapeGamePageUI = (props) => {
       ) : (
         <></>
       )}
-      {/** ==section 2 */}
-      <MobileEscapePricing
+      {/** ==  <MobileEscapePricing
         pricingSectionData={props.mobileEscapeRoomPageData.pricingSectionData}
         locationName={props.locationName ? props.locationName : false}
         locationInfo={props.locationInfo ? props.locationInfo : false}
+      />*/}
+
+      <HeroInfoCard
+        locationName={props.locationName ? props.locationName : false}
       />
       {props.mobileEscapeRoomPageData.gameCarouselSectionData !== null ? (
         <MobileEscapeGameCarouselSection

@@ -41,29 +41,22 @@ const MobileEscapeGameCarouselSection = ({
               textColor={"#E0BF62"}
             />
           </div>
-          {gameCarouselSectionData.sectionSubTitle !== null ? (
-            <div
-              className="text-gray-200 mt-1 md:mt-2 lg:mt-2  text-center md:text-lg lg:text-xl max-w-[850px] mx-auto"
-              dangerouslySetInnerHTML={{
-                __html: gameCarouselSectionData.sectionSubTitle,
-              }}
-            ></div>
-          ) : (
-            <></>
-          )}
+          {/*  __html: gameCarouselSectionData.sectionSubTitle, */}
+          <div className="text-gray-200 mt-1 md:mt-2 lg:mt-2  text-center md:text-lg lg:text-xl max-w-[850px] mx-auto">
+            <p>
+              Explore six unique mobile escape room adventures—each with a
+              thrilling story, clever twists, and immersive challenges. Whether
+              you're on a secret mission or stopping a prison break, every game
+              delivers 60 minutes of unforgettable fun.
+            </p>
+          </div>
         </div>
+        {/*   escapeGameList={gameCarouselSectionData.escapeGameList} */}
         <div className="megc relative">
-          {gameCarouselSectionData.escapeGameList.length > 3 ? (
-            <MobileEscapeGameCarousel
-              escapeGameList={gameCarouselSectionData.escapeGameList}
-              locationName={locationName}
-            />
-          ) : (
-            <MobileEscapeGameCarousel
-              escapeGameList={mobileEscapeGameList}
-              locationName={locationName}
-            />
-          )}
+          <MobileEscapeGameCarousel
+            escapeGameList={mobileEscapeGameList}
+            locationName={locationName}
+          />
         </div>
 
         <div className="card-game-link mt-7 rm:mt-9 md:mt-7 xl:mt-8 flex justify-center">

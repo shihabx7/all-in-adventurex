@@ -1,5 +1,3 @@
-import SectionBorderBottom from "../util/SectionBorderBottom";
-
 const MobileEscapePricing = ({ pricingSectionData, locationName }) => {
   return (
     <div className="bg-[#251A03]">
