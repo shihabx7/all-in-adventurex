@@ -81,7 +81,7 @@ export default function MobileEscapeGrid4() {
   return (
     <div
       ref={containerRef}
-      className="gallery-slider  h-[610px] rm:h-[670x] lm:h-[680px] overflow-hidden md:hidden"
+      className="gallery-slider  h-screen overflow-hidden md:hidden"
     >
       {mobileEscapeGameGridData.map((item, index) => (
         <div
