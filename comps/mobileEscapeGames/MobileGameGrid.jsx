@@ -15,16 +15,18 @@ export default function MobileGameGrid() {
                 ></img>
               </div>
               <div className="price text-white absolute right-0 top-0">
-                <div className="p-3  flex space-x-1 items-end">
-                  <span className="text-sm md:text-[1rem] lg:text-sm xl:text-[1.05rem] font-semibold">
+                <div className="p-2 rm:p-3  flex space-x-1 items-end">
+                  <span className="text-[.8rem] rm:text-sm md:text-[1rem] lg:text-sm xl:text-[1.05rem] font-semibold">
                     {item.price}
                   </span>
-                  <span className="text-[.76rem]">(Per Persion)</span>
+                  <span className="text-[.6rem] rm:text-[.7rem]">
+                    (Per Persion)
+                  </span>
                 </div>
               </div>
               <div className="mbl-g-content-box w-full h-full absolute top-0 left-0">
                 <div className="h-full flex flex-col justify-between">
-                  <div className="mbl-card-g-top p-2 xl:p-3 xl:pt-2 max-w-[162px] md:max-w-[180px] xl:max-w-[190px]">
+                  <div className="mbl-card-g-top p-2 xl:p-3 xl:pt-2 max-w-[150px] rm:max-w-[162px] md:max-w-[180px] xl:max-w-[190px]">
                     <div className="flex items-center space-x-1 md:space-x-2 text-gray-50 bg-[#251A03E5] p-2 rounded">
                       <span>
                         <img
@@ -32,7 +34,7 @@ export default function MobileGameGrid() {
                           src="/assets/svg/inperson.svg"
                         ></img>
                       </span>
-                      <span className="text-[.7rem] md:text-[.8rem] xl:text-[.81rem]">
+                      <span className="text-[.62rem] rm:text-[.7rem] md:text-[.8rem] xl:text-[.81rem]">
                         Mobile Escape Room
                       </span>
                     </div>
@@ -45,7 +47,7 @@ export default function MobileGameGrid() {
                             alt="Allinadventure mobile escape game age range  icon"
                             src="/assets/svg/card-age.svg"
                           ></img>
-                          <p className="text-[.8rem] lg:text-[.76rem] xl:text-[.8rem] ">
+                          <p className=" text-[.62rem] rm:text-[.8rem] lg:text-[.76rem] xl:text-[.8rem] ">
                             Age {item.ageRange}
                           </p>
                         </div>
@@ -54,7 +56,7 @@ export default function MobileGameGrid() {
                             alt="Allinadventure mobile escape room duration   icon"
                             src="/assets/svg/card-time.svg"
                           ></img>
-                          <p className="text-[.8rem] lg:text-[.76rem] xl:text-[.8rem] ">
+                          <p className="text-[.62rem] rm:text-[.8rem] lg:text-[.76rem] xl:text-[.8rem] ">
                             Duration {item.duration} Min
                           </p>
                         </div>
@@ -63,7 +65,7 @@ export default function MobileGameGrid() {
                             alt="Allinadventure mobile escape room team size  icon"
                             src="/assets/svg/card-person.svg"
                           ></img>
-                          <p className="text-[.8rem] lg:text-[.76rem] xl:text-[.8rem] ">
+                          <p className="text-[.62rem] rm:text-[.8rem] lg:text-[.76rem] xl:text-[.8rem] ">
                             Team Size {item.teamSize}
                           </p>
                         </div>
