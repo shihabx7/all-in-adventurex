@@ -63,14 +63,14 @@ const MobileEscapeGameCarouselSection = ({
                <MobileEscapeGrid3 />
           />*/}
         </div>
-        <div className="hidden md:block">
+        <div className="block">
           <MobileGameGrid />
         </div>
 
-        <div className="mt-8 md:hidden">
+        <div className="hidden">
           <MobileEscapeGrid4 />
         </div>
-        <div className="card-game-link mt-5 rm:mt-6 md:mt-12 xl:mt-12 flex justify-center">
+        <div className="card-game-link mt-7 rm:mt-10 md:mt-12 xl:mt-12 flex justify-center">
           {locationSlug ? (
             <button
               onClick={() => {

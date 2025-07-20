@@ -2,8 +2,8 @@ import { mobileEscapeGameGridData } from "../../lib/tempData/mobileEscapeTempDat
 import { useState, useEffect, useRef } from "react";
 export default function MobileGameGrid() {
   return (
-    <div className="mbl-escape-games h-lvh overflow-y-scroll md:overflow-hidden md:h-auto max-w-[360px] md:max-w-[750px] lg:max-w-[1160px] px-4 mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-6 lg:gap-4 xl:gap-8">
+    <div className="mbl-escape-games   md:overflow-hidden md:h-auto max-w-[370px] md:max-w-[750px] lg:max-w-[1160px] px-4 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 md:gap-6 lg:gap-4 xl:gap-8">
         {mobileEscapeGameGridData.map((item, index) => {
           return (
             <div key={index} className="mbg-game-col relative">
@@ -24,7 +24,7 @@ export default function MobileGameGrid() {
               </div>
               <div className="mbl-g-content-box w-full h-full absolute top-0 left-0">
                 <div className="h-full flex flex-col justify-between">
-                  <div className="mbl-card-g-top p-2 xl:p-3 xl:pt-2 max-w-[170px] md:max-w-[180px] xl:max-w-[190px]">
+                  <div className="mbl-card-g-top p-2 xl:p-3 xl:pt-2 max-w-[162px] md:max-w-[180px] xl:max-w-[190px]">
                     <div className="flex items-center space-x-1 md:space-x-2 text-gray-50 bg-[#251A03E5] p-2 rounded">
                       <span>
                         <img
