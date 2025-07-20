@@ -10,7 +10,7 @@ export default function PlayMobileGalleryVideo({ videoUrl, videoPoster }) {
         className={
           " w-full  rounded-lg transition-all duration-500 ease-in-out"
         }
-        preload="metadata"
+        preload="none"
         playsInline
         controls
         poster={videoPoster}

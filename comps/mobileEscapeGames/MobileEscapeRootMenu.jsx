@@ -22,7 +22,7 @@ const MobileEscapeRootMenu = (props) => {
 
   return (
     <div
-      className="loc-menu-mob top-0 left-0 bg-dark fixed w-full h-full overflow-scroll md:overflow-hidden z-[100000]"
+      className="loc-menu-mob top-0 left-0 bg-dark fixed w-full h-screen overflow-scroll md:overflow-hidden z-[100000]"
       style={{
         backgroundImage:
           "url(/assets/submenu-bg.png),linear-gradient(#111111,#111111)",
@@ -38,7 +38,7 @@ const MobileEscapeRootMenu = (props) => {
         </span>
       </div>
       <div className="loc-menu-content px-4">
-        <div className="sep-container max-w-[600px] mx-auto ">
+        <div className="sep-container max-w-[230px] md:max-w-[500px] mx-auto ">
           <h2 className="dark-gold py-2 text-center text-2xl uppercase md:text-[40px] lg:text-[44px] leading-[1.2] font-os font-bold">
             {props.goMobileEecapeForm
               ? "GET YOUR QUOTE FOR MOBILE ESCAPE ROOM"

@@ -1564,6 +1564,24 @@ a {
   text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
     0 0 2px #000;
 }
+/*======================vertical slider===========================*/
+.vertical-slider {
+  height: 400px; /* Set your desired height */
+  width: 100%; /* Set your desired width */
+  margin: 0 auto;
+  overflow: hidden;
+}
+.gallery-slider {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.mask-img {
+  -webkit-mask-image: url("/assets/mobile-escape-room/escape-game-grid/msv.png");
+  mask-image: url("/assets/mobile-escape-room/escape-game-grid/msv.png");
+  mask-size: cover;
+  mask-repeat: no-repeat;
+}
+/*======================vertical slider end======================*/
 .bg-zig {
   background-image: url("/assets/mobile-escape-room/hero/mobile-escape rooms-sticker-bg.svg");
   background-position: left;

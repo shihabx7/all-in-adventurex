@@ -3,6 +3,9 @@ import MobileEscapeGameCarousel from "./MobileEscapeGameCarousel";
 import { mobileEscapeGameList } from "../../lib/tempData/mobileEscapeTempData";
 import { eventFormBookingLinks } from "../../lib/tempData/eventFormBookingLinks";
 import MobileGameGrid from "./MobileGameGrid";
+import MobileEscapeGrid2 from "./MobileEscapeGrid2";
+import MobileEscapeGrid3 from "./MobileEscapeGrid3";
+import MobileEscapeGrid4 from "./MobileEscapeGrid4";
 
 const partyFormBooking = (bookingData) => {
   FH.open({
@@ -53,13 +56,21 @@ const MobileEscapeGameCarouselSection = ({
         </div>
         {/*   escapeGameList={gameCarouselSectionData.escapeGameList} */}
         <div className="megc relative">
-          <MobileEscapeGameCarousel
+          {/* <MobileEscapeGameCarousel
             escapeGameList={mobileEscapeGameList}
-            locationName={locationName}
-          />
+            locationName={locationName} 
+            {<MobileEscapeGrid2 />}
+               <MobileEscapeGrid3 />
+          />*/}
+        </div>
+        <div className="hidden md:block">
+          <MobileGameGrid />
         </div>
 
-        <div className="card-game-link mt-7 rm:mt-9 md:mt-7 xl:mt-8 flex justify-center">
+        <div className="mt-8 md:hidden">
+          <MobileEscapeGrid4 />
+        </div>
+        <div className="card-game-link mt-5 rm:mt-6 md:mt-12 xl:mt-12 flex justify-center">
           {locationSlug ? (
             <button
               onClick={() => {
