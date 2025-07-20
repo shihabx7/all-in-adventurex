@@ -56,7 +56,7 @@ export default function MobileEscapeGrid3() {
     touchEndY.current = e.changedTouches[0].clientY;
     const deltaY = touchStartY.current - touchEndY.current;
 
-    if (Math.abs(deltaY) > 50) {
+    if (Math.abs(deltaY) > 10) {
       handleScroll(deltaY > 0 ? "down" : "up");
     }
   };
@@ -81,32 +81,34 @@ export default function MobileEscapeGrid3() {
   return (
     <div
       ref={containerRef}
-      className="gallery-slider  h-[588px] rm:h-[610x] lm:h-[630px] overflow-hidden md:hidden"
+      className="gallery-slider  h-screen overflow-hidden md:hidden"
     >
       {mobileEscapeGameGridData.map((item, index) => (
         <div
           key={index}
-          className="mbg-game-col h-full  max-w-full px-3 rm:px-4 flex  items-end justify-center snap-start"
+          className="mbg-game-col h-full  max-w-full px-3 rm:px-4 flex  items-center justify-center snap-start"
         >
           <motion.div
             className="mbl-bg-img max-w-[380px]  mx-auto relative"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
+            transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.2 }}
           >
             <img
-              className="mbl-bg-img-m w-full object-cover"
+              className=" w-full object-cover object-center mask-img"
               src={item.bgImage.url}
               alt={item.bgImage.alt}
             />
             <div className="price text-white absolute right-0 top-0">
-              <div className="p-3 flex items-end">
-                <span className="text-sm md:text-base xl:text-lg font-semibold">
+              <div className="p-2 rm:p-3 flex space-x-[.18rem] items-end">
+                <span className="text-[.8rem] rm:text-sm md:text-base xl:text-lg font-semibold">
                   {item.price}
                 </span>
-                <span className="text-[.8rem]">(Per Persion)</span>
+                <span className="text-[.66rem] rm:text-[.8rem]">
+                  (Per Persion)
+                </span>
               </div>
             </div>
             <div className="mbl-g-content-box w-full h-full absolute top-0 left-0">
