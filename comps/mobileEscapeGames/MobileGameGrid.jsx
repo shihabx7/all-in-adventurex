@@ -2,21 +2,24 @@ import { mobileEscapeGameGridData } from "../../lib/tempData/mobileEscapeTempDat
 import { useState, useEffect, useRef } from "react";
 export default function MobileGameGrid() {
   return (
-    <div className="mbl-escape-games   md:overflow-hidden md:h-auto max-w-[370px] md:max-w-[750px] lg:max-w-[1160px] px-4 mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 md:gap-6 lg:gap-4 xl:gap-8">
+    <div className="mbl-escape-games   md:overflow-hidden md:h-auto max-w-[394px] md:max-w-[750px] lg:max-w-[1160px] px-3 rm:px-4 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 md:gap-6 lg:gap-4 xl:gap-8 py-4">
         {mobileEscapeGameGridData.map((item, index) => {
           return (
-            <div key={index} className="mbg-game-col relative">
+            <div
+              key={index}
+              className="mbg-game-col g-shadow rounded-lg relative"
+            >
               <div className="mbl-bg-img">
                 <img
-                  className="object-cover object-center mask-img"
+                  className="object-cover object-center rounded-lg "
                   src={item.bgImage.url}
                   alt={item.bgImage.alt}
                 ></img>
               </div>
-              <div className="price text-white absolute right-0 top-0">
-                <div className="p-2 rm:p-3  flex space-x-1 items-end">
-                  <span className="text-[.8rem] rm:text-sm md:text-[1rem] lg:text-sm xl:text-[1.05rem] font-semibold">
+              <div className="price text-white absolute right-2 top-2 xl:right-4 bg-red-600 rounded">
+                <div className="px-2 py-[.32rem] rm:px-2 rm:py-[.36rem] xl:py-[.44rem] flex space-x-1 items-end ">
+                  <span className="text-[.8rem] rm:text-[.88rem] md:text-[.9rem] lg:text-sm xl:text-[1.08rem] font-semibold">
                     {item.price}
                   </span>
                   <span className="text-[.6rem] rm:text-[.7rem]">
@@ -34,7 +37,7 @@ export default function MobileGameGrid() {
                           src="/assets/svg/inperson.svg"
                         ></img>
                       </span>
-                      <span className="text-[.62rem] rm:text-[.7rem] md:text-[.8rem] xl:text-[.81rem]">
+                      <span className="text-[.62rem] rm:text-[.7rem] md:text-[.8rem] lg:text-[.7rem]  xl:text-[.81rem]">
                         Mobile Escape Room
                       </span>
                     </div>

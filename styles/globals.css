@@ -1581,6 +1581,15 @@ a {
   mask-size: cover;
   mask-repeat: no-repeat;
 }
+.g-shadow {
+  box-shadow: 0 0 8px rgba(224, 191, 98, 0.5);
+  transition: 0.4s ease-in;
+}
+.g-shadow:hover {
+  box-shadow: 0 0 14px rgba(224, 191, 98, 0.7);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
 /*======================vertical slider end======================*/
 .bg-zig {
   background-image: url("/assets/mobile-escape-room/hero/mobile-escape rooms-sticker-bg.svg");

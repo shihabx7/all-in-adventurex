@@ -61,15 +61,14 @@ const MobileEscapeGameCarouselSection = ({
             locationName={locationName} 
             {<MobileEscapeGrid2 />}
                <MobileEscapeGrid3 />
+                 <MobileEscapeGrid4 />
           />*/}
         </div>
         <div className="block">
           <MobileGameGrid />
         </div>
 
-        <div className="hidden">
-          <MobileEscapeGrid4 />
-        </div>
+        <div className="hidden"></div>
         <div className="card-game-link mt-7 rm:mt-10 md:mt-12 xl:mt-12 flex justify-center">
           {locationSlug ? (
             <button
