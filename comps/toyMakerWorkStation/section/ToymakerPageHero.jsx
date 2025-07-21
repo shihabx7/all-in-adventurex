@@ -15,32 +15,34 @@ export default function ToymakerPageHero({ pageHeroData, bookingData }) {
       <div className="section-bg  bg-stone-800 relative">
         <SectionBgVideo videoData={pageHeroData.heroBgVideo} />
         <div className="section-overlay bg-[rgba(0,0,0,0.6)] w-full h-full absolute top-0 left-0 flex justify-center items-center">
-          <div className="section-container  mx-auto  max-w-7xl pt-16 pb-24 md:py-20 lg:py-24 xl:py-28 px-4">
+          <div className="section-container  mx-auto  max-w-[1140px] pt-16 pb-24 md:py-20 lg:py-24 xl:py-28 px-4">
             {/*============section head==========*/}
             <div className="section-head">
-              <div className="game-icon mb-2 md:mb-2 xl:mb-4">
-                <img
-                  className="max-w-[140px] rm:max-w-[180px] md:max-w-[220px] xl:max-w-[250px] mx-auto"
-                  src="/assets/toymakers-workshop/hero/toymakers-workshop-sticker.png"
-                ></img>
+              <div className="game-badge mb-2 md:mb-2 xl:mb-3 flex justify-center items-center">
+                <div className="px-[4px] py-[6px] md:px-[4px] md:py-[6px] max-w-[270px] mx-auto zm:max-w-none">
+                  <h1 className="font-os text-center font-medium text-[1.15rem] rm:text-[1.2rem] leading-[1.5rem] md:leading-[1.2] md:text-[1.4rem] xl:text-[1.6rem] text-red-600 mobile-escape-stiker-text uppercase">
+                    FUN THINGS TO DO IN RALEIGH WITH KIDS
+                  </h1>
+                </div>
               </div>
-              <div className="pageTitle max-w-[360px] zm:max-w-[520px] md:max-w-[720px] lg:max-w-[1000px] mx-auto">
-                <PageTitleCenterLight
-                  pageTitle={
-                    pageHeroData.pageTitle
-                      ? pageHeroData.pageTitle
-                      : "Toymaker's workstation"
-                  }
-                />
+              <div className="pageTitle max-w-[360px] zm:max-w-[520px] md:max-w-[720px] lg:max-w-[1180px] mx-auto">
+                <h2 className="text-[#e0bf62] uppercase font-semibold text-center text-[28px] rm:text-[32px] zm:text-[34px] leading-[1.3] zm:leading-[1.4] md:leading-[1.3] md:text-[48px] lg:text-[52px] xl:text-[54px] 2xl:text-[58px] font-os outline-tile">
+                  TOYMAKER'S WORKSHOP
+                </h2>
               </div>
-              {pageHeroData.pageSubTitle && (
-                <div
-                  className="page-sub-title text-[#cacaca] zm:max-w-[480px] md:max-w-[760px] lg:max-w-[920px] mx-auto md:text-lg xl:text-xl text-center mt-3 md:mt-3 xl:mt-4 "
-                  dangerouslySetInnerHTML={{
-                    __html: pageHeroData.pageSubTitle,
-                  }}
-                ></div>
-              )}
+              <div className="page-sub-title text-[#ebebeb] zm:max-w-[480px] md:max-w-[760px] lg:max-w-[1010px] mx-auto text-sm md:text-lg lg:text-xl text-center mt-[4px] md:mt-1 2xl:mt-3 ">
+                <p>
+                  Looking for a magical, storybook-style adventure for your
+                  little ones? Toymaker's Workshop is a fun, hands-on experience
+                  specially designed for kids ages 10 and under.
+                </p>
+              </div>
+              <div>
+                <p className="text-[#ebebeb] zm:max-w-[480px] md:max-w-[760px] text-sm lg:max-w-[1016px] mx-auto md:text-lg lg:text-xl text-center mt-[12px] md:mt-4 lg:mt-5 2xl:mt-5">
+                  Have older kids? No problem—scroll down to discover our escape
+                  room games that are perfect for ages 10 and up!
+                </p>
+              </div>
             </div>
 
             {/*============section head end==========*/}

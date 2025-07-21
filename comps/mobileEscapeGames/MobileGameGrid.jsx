@@ -23,7 +23,7 @@ export default function MobileGameGrid() {
                     {item.price}
                   </span>
                   <span className="text-[.6rem] rm:text-[.7rem]">
-                    (Per Persion)
+                    (Per Person)
                   </span>
                 </div>
               </div>

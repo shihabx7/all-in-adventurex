@@ -19,12 +19,12 @@ const OtherPageGameCarouselSection = ({
           <div className="text-gray-200 mt-2 md:mt-3 lg:mt-4 text-center md:text-lg lg:text-xl max-w-[900px] mx-auto">
             <div className="text-[#E5E7EB] md:px-8">
               {!locationInfo
-                ? "Visit us for next-level escape room adventures—featuring detailed sets, clever puzzles, and unforgettable teamwork moments. Perfect for groups ready to travel and dive deeper into the world of in-person escape games"
+                ? " Visit us for next-level escape room adventures—featuring detailed sets, clever puzzles, and unforgettable teamwork moments. Perfect for groups looking to get out and dive deeper into the world of in-person escape games."
                 : "Visit us at " +
                   locationInfo.mall +
                   " in " +
                   locationName +
-                  " for next-level escape room adventures—featuring detailed sets, clever puzzles, and unforgettable teamwork moments. Perfect for groups ready to travel and dive deeper into the world of in-person escape games"}
+                  " for next-level escape room adventures—featuring detailed sets, clever puzzles, and unforgettable teamwork moments. Perfect for groups looking to get out and dive deeper into the world of in-person escape games."}
             </div>
           </div>
         </div>
