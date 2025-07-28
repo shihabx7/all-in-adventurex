@@ -39,10 +39,8 @@ const HeroInfoCard = ({ locationName }) => {
                 </p>
                 <p className="text-[#2E2E2E] mt-1 rm:mt-2  text-sm rm:text-base md:text-[15px] xl:text-lg">
                   {locationName
-                    ? "We deliver to locations within 25 miles of " +
-                      locationName +
-                      ". Outside that range? No problem—reach out, and we'll do our best to make it work!"
-                    : "We deliver to locations within 25 miles of the city center. Outside that range? No problem—reach out, and we'll do our best to make it work!"}
+                    ? "Escape the travel costs! We travel free of charge to locations within 25 miles of the city center. Outside that range? No problem—reach out, and we'll do our best to make it work!"
+                    : "Escape the travel costs! We travel free of charge to locations within 25 miles of the city center. Outside that range? No problem—reach out, and we'll do our best to make it work!"}
                 </p>
               </div>
             </div>
