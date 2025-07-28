@@ -69,10 +69,15 @@ const PageVideoBgHero = ({
                 ></div>
               )}
               <div>
-                <p className="text-[#ebebeb] zm:max-w-[480px] md:max-w-[760px] text-sm lg:max-w-[860px] mx-auto md:text-lg lg:text-xl text-center mt-[12px] md:mt-4 lg:mt-5 2xl:mt-6">
-                  Want to visit us instead? Just scroll down to check out our
-                  in-store escape room adventures!
-                </p>
+                {locationSlug !== "buffalo-ny" &&
+                  locationSlug !== "rochester-ny" &&
+                  locationSlug !== "winston-salem-nc" &&
+                  locationSlug !== "greensboro-nc" && (
+                    <p className="text-[#ebebeb] zm:max-w-[480px] md:max-w-[760px] text-sm lg:max-w-[860px] mx-auto md:text-lg lg:text-xl text-center mt-[12px] md:mt-4 lg:mt-5 2xl:mt-6">
+                      Want to visit us instead? Just scroll down to check out
+                      our in-store escape room adventures!
+                    </p>
+                  )}
               </div>
             </div>
 
