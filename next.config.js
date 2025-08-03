@@ -7,16 +7,6 @@ const prm = false;
 // =========================================genarel redirect :path
 const gnRed = [
   {
-    source: "/v2",
-    destination: "/",
-    permanent: prm,
-  },
-  {
-    source: "/v2/:path",
-    destination: "/",
-    permanent: prm,
-  },
-  {
     source: "/activities/axe-throwing",
     destination: "/",
     permanent: prm,
