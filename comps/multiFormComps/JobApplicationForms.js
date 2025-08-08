@@ -813,19 +813,21 @@ const JobApplicationForms = (props) => {
             </div>
           )}
         </div>
-        <div className="mt-4 lg:mt-0 ">
-          <p className="text-sm text-red-700">
-            Yor job application can't be sent at this moment. Send your
-            application to{" "}
-            <a
-              className="font-medium underline text-[#212121]"
-              href="careers@allinadventures.com"
-            >
-              careers@allinadventures.com
-            </a>
-          </p>
-        </div>
-        {repErrMsg && <p>Err</p>}
+
+        {repErrMsg && (
+          <div className="mt-4 lg:mt-0 ">
+            <p className="text-sm text-red-700">
+              Yor job application can't be sent at this moment. Send your
+              application to{" "}
+              <a
+                className="font-medium underline text-[#212121]"
+                href="careers@allinadventures.com"
+              >
+                careers@allinadventures.com
+              </a>
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );
