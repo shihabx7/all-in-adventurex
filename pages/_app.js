@@ -1,4 +1,6 @@
 import "../styles/globals.css";
+import "../styles/aia-v2.css";
+import "../styles/aia-res.css";
 import Layout from "../comps/Layout";
 import Head from "next/head";
 

@@ -681,7 +681,7 @@ const JobApplicationForms = (props) => {
   };
   // ==============================submit form end
   return (
-    <div className="job-form">
+    <div className="job-form relative">
       <div className="job-form-head">
         <div className="job-name flex justify-between mb-4">
           <h3 id="fhead" className="font-medium text-2xl text-[#464646]">
@@ -708,7 +708,7 @@ const JobApplicationForms = (props) => {
           {successMsg}
         </p>
       )}
-      <div className="job-form-body">
+      <div className="job-form-body ">
         <input
           type="text"
           name="botCheck"
@@ -765,62 +765,67 @@ const JobApplicationForms = (props) => {
           />
         )}
       </div>
-      <div className="form-bottom flex justify-end items-center space-x-2 mt-8">
-        {formStep > 0 && !isSend && (
-          <button
-            onClick={() => {
-              backStep();
-            }}
-            className="btn-back px-6 py-2 text-lg rounded bg-red-600 hover:bg-red-700 text-center text-white"
-          >
-            BACK
-          </button>
-        )}
-        {formStep < 5 && (
-          <button
-            onClick={() => {
-              nextStep();
-            }}
-            className="btn-back px-6 py-2 text-lg rounded bg-red-600 hover:bg-red-700 text-center text-white"
-          >
-            NEXT
-          </button>
-        )}
+      <div className="absolute bottom-0 right-0 h-[1px] w-[1px]">
+        {" "}
         <ReCAPTCHA
           ref={recaptchaRef}
           sitekey="6LepEu0qAAAAAFSM_8lLN8LDgmT2qguQGQwV7cPZ" // Replace with your site key
           size="invisible"
           //onChange={setCaptchaToken}
         />
-        {formStep == 5 && isSend == false && (
-          <button
-            onClick={(event) => {
-              submitForm(event);
-            }}
-            className="btn-back px-6 py-2 text-lg rounded bg-red-600 hover:bg-red-700 text-center text-white"
-          >
-            SUBMIT
-          </button>
-        )}
-        {isSend == true && (
-          <div className="btn-back px-6 py-2 md:text-lg rounded bg-red-600 hover:bg-red-700  text-white w-[170px]">
-            <div className="loader font-medium">Submitting</div>
-          </div>
-        )}
-        {repErrMsg && (
-          <div className="mt-4 md:mt-6">
-            <p className="text-sm text-red-700">
-              Yor job application can't be sent at this moment. Send your
-              application to{" "}
-              <a
-                className="font-medium underline text-[#212121]"
-                href="careers@allinadventures.com"
-              >
-                careers@allinadventures.com
-              </a>
-            </p>
-          </div>
-        )}
+      </div>
+      <div className="form-bottom-box flex flex-col lg:flex-row lg:justify-between lg:items-center lg:space-x-2 mt-8">
+        <div className="form-bottom flex justify-end items-center space-x-2">
+          {formStep > 0 && !isSend && (
+            <button
+              onClick={() => {
+                backStep();
+              }}
+              className="btn-back px-6 py-2 text-lg rounded bg-red-600 hover:bg-red-700 text-center text-white"
+            >
+              BACK
+            </button>
+          )}
+          {formStep < 5 && (
+            <button
+              onClick={() => {
+                nextStep();
+              }}
+              className="btn-back px-6 py-2 text-lg rounded bg-red-600 hover:bg-red-700 text-center text-white"
+            >
+              NEXT
+            </button>
+          )}
+
+          {formStep == 5 && isSend == false && (
+            <button
+              onClick={(event) => {
+                submitForm(event);
+              }}
+              className="btn-back px-6 py-2 text-lg rounded bg-red-600 hover:bg-red-700 text-center text-white"
+            >
+              SUBMIT
+            </button>
+          )}
+          {isSend == true && (
+            <div className="btn-back px-6 py-2 md:text-lg rounded bg-red-600 hover:bg-red-700  text-white w-[170px]">
+              <div className="loader font-medium">Submitting</div>
+            </div>
+          )}
+        </div>
+        <div className="mt-4 lg:mt-0 ">
+          <p className="text-sm text-red-700">
+            Yor job application can't be sent at this moment. Send your
+            application to{" "}
+            <a
+              className="font-medium underline text-[#212121]"
+              href="careers@allinadventures.com"
+            >
+              careers@allinadventures.com
+            </a>
+          </p>
+        </div>
+        {repErrMsg && <p>Err</p>}
       </div>
     </div>
   );

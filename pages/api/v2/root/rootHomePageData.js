@@ -20,6 +20,7 @@ import {
   getAllOtherGameSlugList,
   getAllEventSlugList,
 } from "../../../../lib/menuDataFormation";
+import { homePageDataFormater } from "../../../../lib/v2/formate/homePageDataFormater";
 
 export const rootHomePageData = async () => {
   // declare api request url
@@ -74,7 +75,33 @@ export const rootHomePageData = async () => {
       totalLocations,
       totalActivities
     ),
-    escapeGameList: getEscapeGameList(
+    // ==========================================v2 page data
+    pageHeroData: homePageDataFormater.pageHeroDataFormat({
+      info: pageResData.pageInfo,
+      pageHeroData: {
+        pageTitle: pageResData.pageTitle,
+        pageSubTitle: pageResData.pageSubTitle,
+      },
+      totalLocation: totalLocations,
+      totalActivities: totalActivities,
+    }),
+    aboutSectionData: homePageDataFormater.aboutSectionDataFormat(),
+    escapeGameListSectionData:
+      homePageDataFormater.escapeGameListSectionDataFormat({
+        fetchGameList: actctivityListResData,
+        sectionData: pageResData.carouselSectionData,
+      }),
+    otherGameListSectionData:
+      homePageDataFormater.otherGameListSectionDataFormat({
+        fetchGameList: actctivityListResData,
+        sectionData: pageResData.carouselSectionData,
+      }),
+    eventCarouselSectionData:
+      homePageDataFormater.eventCarouselSectionDataFormat(),
+    testimonialVideoCarouselSectionData:
+      homePageDataFormater.testimonialVideoCarouselSectionDataFormat(),
+    // ==========================================v2 page data end
+    /*  escapeGameList: getEscapeGameList(
       actctivityListResData,
       pageResData.carouselSectionData
     ),
@@ -88,7 +115,7 @@ export const rootHomePageData = async () => {
     testimonialList: getTestimonials(
       pageResData.testimonials,
       pageResData.carouselSectionData
-    ),
+    ), */
   };
   return DATA;
 };

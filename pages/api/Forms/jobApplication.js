@@ -1,4 +1,3 @@
-
 import { recieveEmail } from "./formProtection/recieveEmail";
 import { replayToJobApplicant } from "./replayToJobApplicant";
 import {
@@ -8,14 +7,11 @@ import {
 import { checkRateLimiter } from "./formProtection/reqRateLimit";
 import { creatPdfApplication } from "./creatPdfApplication";
 
-
-
 const mailUser = process.env.MAIL_SENDER_USER;
 const mailReceiver = process.env.MAIL_RECEIVER_CAREER;
 
 export default async function jobApplicationHandler(req, res) {
   // Get data submitted in request's body.
-
 
   const retbody = req.body;
   const botMsg = retbody.botMsg;
@@ -86,7 +82,6 @@ export default async function jobApplicationHandler(req, res) {
       min: 3,
       max: 200,
       type: "string",
-
     },
     {
       data: retbody.info1.city,
@@ -105,16 +100,13 @@ export default async function jobApplicationHandler(req, res) {
       min: 5,
       max: 5,
       type: "string",
-
     },
     {
       data: retbody.info1.country,
       min: 3,
       max: 60,
       type: "string",
-
     },
-
   ];
   const verifyClientData = await verifyFormData(vDataArr);
   // console.log("Data valid? " + verifyClientData.isValid);
@@ -150,7 +142,10 @@ export default async function jobApplicationHandler(req, res) {
 
   if (!pdfRes.success) {
     return res.status(500).json({
-      data: { error: "Server Error. File can't be create.", submitted: retbody },
+      data: {
+        error: "Server Error. File can't be create.",
+        submitted: retbody,
+      },
       success: false,
     });
   }
@@ -164,7 +159,7 @@ export default async function jobApplicationHandler(req, res) {
     to: `${mailReceiver}`,
     // bcc: `${mailReceiverBcc}`,
     bcc: "dgency.com@gmail.com",
-    subject: `Job Application - ${fullName}`,
+    subject: `Test Job Application - ${fullName}`,
     html: `
               <p style="margin:4px 0px;"><strong>Name: </strong> ${retbody.info1.lName} ${retbody.info1.fName} </p>
               <p style="margin:4px 0px;"><strong>Phone: </strong> ${retbody.info1.phone} </p>
@@ -189,14 +184,20 @@ export default async function jobApplicationHandler(req, res) {
     return res.status(500).json(sendEmailRes);
   }
 
-  const replayEmailRes = await replayToJobApplicant(fullName, retbody.info1.email, pdfpath)
+  const replayEmailRes = await replayToJobApplicant(
+    fullName,
+    retbody.info1.email,
+    pdfpath
+  );
   if (!replayEmailRes.success) {
     return res.status(500).json(replayEmailRes);
   }
 
   return res.status(200).json({
     success: true,
-    data: { recieveMessage: "Application has received and replay has sent", retData: retData },
-
+    data: {
+      recieveMessage: "Application has received and replay has sent",
+      retData: retData,
+    },
   });
 }

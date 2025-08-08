@@ -1,0 +1,152 @@
+/*====================================================================aia 2.0 new carousel design*/
+
+.no-fullscreen {
+  pointer-events: none;
+}
+
+.aia-new-dot-list {
+  max-width: 800px;
+  left: 22px !important;
+  bottom: 24px !important;
+  justify-content: left !important;
+}
+
+.aia-new-dot-list .react-multi-carousel-dot {
+  width: auto;
+  height: auto;
+  border-radius: 0px;
+  border: none;
+}
+
+.aia-new-dot-list .react-multi-carousel-dot button {
+  display: block;
+  width: 6px !important;
+  border-radius: 100% !important;
+  height: 6px !important;
+  margin-right: 5px !important;
+  border: none !important;
+  background-color: #545454;
+}
+
+.section-bg-light .react-multi-carousel-dot button {
+  background-color: #4a4a4a;
+}
+
+.react-multi-carousel-dot button:hover {
+  background-color: #ca9342;
+}
+
+.aia-new-dot-list .react-multi-carousel-dot--active button {
+  width: 22px !important;
+  border-radius: 6px !important;
+  margin-right: 8px !important;
+  background-image: linear-gradient(to right, #ca9342, #e0bf62) !important;
+}
+
+.aia-new-carousel-container .react-multiple-carousel__arrow {
+  min-width: 44px !important;
+  min-height: 44px !important;
+  box-shadow: none !important;
+  border: 2px solid #4a4a4a !important;
+  background: transparent;
+  color: #4a4a4a !important;
+
+  z-index: 70 !important;
+}
+
+.aia-new-carousel-container .react-multiple-carousel__arrow::before {
+  color: #4a4a4a !important;
+}
+
+.section-bg-light .aia-new-carousel-container .react-multiple-carousel__arrow {
+  border: 2px solid #3a3a3a !important;
+  background: transparent;
+  color: #3a3a3a !important;
+}
+
+.section-bg-light
+  .aia-new-carousel-container
+  .react-multiple-carousel__arrow::before {
+  color: #3a3a3a !important;
+}
+
+.aia-new-carousel-container .react-multiple-carousel__arrow:hover {
+  background: #181818;
+  border: 2px solid #e0bf62 !important;
+}
+
+.aia-new-carousel-container .react-multiple-carousel__arrow:hover::before {
+  color: #dddddd !important;
+}
+
+.section-bg-light
+  .aia-new-carousel-container
+  .react-multiple-carousel__arrow:hover {
+  background: #3a3a3a;
+  border: 2px solid #e0bf62 !important;
+}
+
+.aia-new-carousel-container .react-multiple-carousel__arrow:hover::before {
+  color: #ffffff !important;
+}
+
+.aia-new-carousel-container .react-multiple-carousel__arrow--right {
+  top: unset !important;
+  right: 20px !important;
+  bottom: 5px !important;
+}
+
+.aia-new-carousel-container .react-multiple-carousel__arrow--left {
+  top: unset !important;
+  left: unset !important;
+  right: 80px !important;
+  bottom: 5px !important;
+}
+/*====================================================================aia 2.0 new carousel design end*/
+
+/* =============other-game-card-bg-overlay*/
+.game-page-pattern-bg {
+  background-image: url("/assets/escape-game/icons/game-page-dark-pattern.svg");
+}
+.overlay-53d {
+  background-image: linear-gradient(
+    57deg,
+    rgba(0, 0, 0, 0.92),
+    rgba(0, 0, 0, 0.82),
+    rgba(0, 0, 0, 0.62),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  );
+}
+/*game page storyline overlay*/
+
+.sotry-bg-overlay {
+  background: radial-gradient(
+    closest-corner at 70% 40%,
+    rgba(255, 255, 255, 0) 15%,
+    rgba(0, 0, 0, 0) 18%,
+    rgba(0, 0, 0, 0.96) 76%
+  );
+  background: -webkit-radial-gradient(
+    closest-corner at 71% 40%,
+    rgba(255, 255, 255, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1)
+  );
+}
+/*===================================video Player====================*/
+.no-fullscreen-vid::-webkit-media-controls {
+  display: none !important;
+}
+
+.no-fullscreen-vid::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+/*===========================text design=====*/
+.word-space-lg {
+  word-spacing: 0.4rem;
+}
+
+.letter-space-lg {
+  word-spacing: 2px;
+}
