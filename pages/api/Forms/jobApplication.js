@@ -159,7 +159,7 @@ export default async function jobApplicationHandler(req, res) {
     to: `${mailReceiver}`,
     // bcc: `${mailReceiverBcc}`,
     bcc: "dgency.com@gmail.com",
-    subject: `Test Job Application - ${fullName}`,
+    subject: `All In Adventures Job Application - ${fullName}`,
     html: `
               <p style="margin:4px 0px;"><strong>Name: </strong> ${retbody.info1.lName} ${retbody.info1.fName} </p>
               <p style="margin:4px 0px;"><strong>Phone: </strong> ${retbody.info1.phone} </p>

@@ -13,7 +13,6 @@ const mailService = process.env.MAIL_SERVICE;
 const mailAuthType = process.env.MAIL_AUTH_TYPE;
 
 export async function replayToJobApplicant(toName, toEmail, pdfPath) {
-
   const { OAuth2 } = google.auth;
   const oauth2Client = new OAuth2(client_id, client_secret, redirect_uri);
 
@@ -24,7 +23,7 @@ export async function replayToJobApplicant(toName, toEmail, pdfPath) {
   let mailErr = "";
 
   const mailOptions = {
-    from: `"AIA Career "<${mailUser}>"`,
+    from: `"All In Adventures Career "<${mailUser}>"`,
     //to: "shihab.dgency@gmail.com",
     to: `${toEmail}`,
     bcc: "dgency.com@gmail.com",
@@ -47,7 +46,7 @@ export async function replayToJobApplicant(toName, toEmail, pdfPath) {
         path: pdfPath,
       },
     ],
-  }
+  };
 
   try {
     const access_token = await oauth2Client.getAccessToken();
@@ -64,7 +63,7 @@ export async function replayToJobApplicant(toName, toEmail, pdfPath) {
     });
     const mailRes = await transporter.sendMail(mailOptions);
     mailsend = true;
-    mailErr = '';
+    mailErr = "";
   } catch (error) {
     mailsend = false;
     mailErr = error;
@@ -84,10 +83,10 @@ export async function replayToJobApplicant(toName, toEmail, pdfPath) {
     return {
       success: mailsend,
       data: { error: mailErr },
-    }
+    };
   }
   return {
     success: mailsend,
     data: { message: "Message has sent to" + toEmail },
-  }
+  };
 }
