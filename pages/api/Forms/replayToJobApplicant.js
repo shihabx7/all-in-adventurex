@@ -26,7 +26,7 @@ export async function replayToJobApplicant(toName, toEmail, pdfPath) {
     from: `"All In Adventures Career "<${mailUser}>"`,
     //to: "shihab.dgency@gmail.com",
     to: `${toEmail}`,
-    bcc: "dgency.com@gmail.com",
+    bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
     subject: `All In Adventures Job Application`,
     html: `
           <p style="margin:4px 0p;x"> Dear ${toName},</p>
