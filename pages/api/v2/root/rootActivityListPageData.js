@@ -19,6 +19,8 @@ import {
   getListPageData,
   activityListData,
 } from "../../../../lib/activityDataFormation";
+import { activityListPageDataFormeter } from "../../../../lib/v2/formate/activityPageDataFormater";
+import(activityListPageDataFormeter);
 export const getRootActivityListPageData = async () => {
   const pageReqUrl = apiUrl + activityListPageQuery;
   const activityListReqUrl = apiUrl + activityListQuery;
@@ -56,8 +58,27 @@ export const getRootActivityListPageData = async () => {
       seoData,
       pageResData.pageHeroDesktop.data.attributes.url
     ),
-
-    pageData: getListPageData(
+    //========================v2
+    pageHeroData: activityListPageDataFormeter.pageHeroData({
+      pageResData: pageResData,
+      totalLocations: totalLocations,
+      totalActivities: totalActivities,
+    }),
+    escapeGameListSectionData:
+      activityListPageDataFormeter.escapeGameListSectionData({
+        pageResData: pageResData,
+        fetchGameList: actctivityListResData,
+      }),
+    otherGameListSectionData:
+      activityListPageDataFormeter.otherGameListSectionData({
+        pageResData: pageResData,
+        fetchGameList: actctivityListResData,
+      }),
+    eventCarouselSectionData:
+      activityListPageDataFormeter.eventCarouselSectionData(),
+    faqSectionData: activityListPageDataFormeter.faqSectionData(),
+    //========================v1
+    /*  pageData: getListPageData(
       pageResData.pageInfo,
       pageResData.pageHeroDesktop,
       pageResData.pageHeroMobile,
@@ -66,14 +87,14 @@ export const getRootActivityListPageData = async () => {
       totalLocations,
       totalActivities
     ),
-
-    activityListData: activityListData(
+*/
+    /* activityListData: activityListData(
       actctivityListResData,
       pageResData.escapeGameListTitle,
       pageResData.escapeGameListSubtitle,
       pageResData.otherGameListTitle,
       pageResData.otherGameListSubtitle
-    ),
+    ),*/
   };
 
   return activityListPageData;

@@ -85,17 +85,18 @@ export default function TestimonialVideoText({
                 : "Full Review"}
             </button>
           </div>
-          <div className="ex-link">
-            <a
-              className="text-[#d9d9d9] text-sm w-full hover:text-[#e0bf62] flex flex-nowrap justify-end items-center space-x-1"
-              href={reviewData.reviewUrl ? reviewData.reviewUrl : "#link"}
-            >
-              <span>See Originals </span>
-              <span>
-                <RiExternalLinkLine />
-              </span>
-            </a>
-          </div>
+          {/*
+            <div className="ex-link td">
+              <a
+                className="text-[#d9d9d9] text-sm w-full hover:text-[#e0bf62] flex flex-nowrap justify-end items-center space-x-1"
+                href={reviewData.reviewUrl ? reviewData.reviewUrl : "#link"}
+              >
+                <span>See Originals </span>
+                <span>
+                  <RiExternalLinkLine />
+                </span>
+              </a>
+            </div>*/}
         </div>
       </div>
     </div>

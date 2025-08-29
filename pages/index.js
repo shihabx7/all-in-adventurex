@@ -98,7 +98,7 @@ export default function Home(props) {
 
 export const getStaticProps = async () => {
   const DATA = await getHomePageData();
-  //console.log(data);
+  //console.log(DATA.otherGameList);
   return {
     props: {
       // locationlist: DATA.locationlist,

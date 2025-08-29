@@ -200,7 +200,7 @@ const LocationHeroHours = (props) => {
         {/*======================Store parking+wheelchair  end===== */}
       </div>
       {/*======================business hours and holiday  table===== */}
-      <div className="loc-hrs-tbl flex flex-col  md:flex-row border-y border-[#D2C6AA]">
+      <div className="loc-business-hrs-tbl flex flex-col  md:flex-row border-y border-[#D2C6AA]">
         <div className="loc-tb-hrs md:min-w-[46%] ">
           <div className="pt-2 pb-2 px-2 md:px-2 md:py-3 lg:px-4 tbl-h border-b border-[#D2C6AA]">
             <h3 className="text-[#232323] font-medium lg:text-lg">
@@ -246,7 +246,7 @@ const LocationHeroHours = (props) => {
           </div>
         </div>
 
-        <div className="loc-tb-hrs md:min-w-[54%] md:border-l border-[#D2C6AA]">
+        <div className="loc-holiday-tb-hrs md:min-w-[54%] md:border-l border-[#D2C6AA]">
           <div className="pt-2 pb-2 px-2 md:px-2 md:py-3 lg:px-4 tbl-h border-t md:border-t-0 border-b border-[#D2C6AA]">
             <h3 className="text-[#232323] font-medium lg:text-lg">
               Holiday Hours

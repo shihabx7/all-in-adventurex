@@ -1,6 +1,15 @@
 import MobileTitleSeparatorLeft from "./MobileTitleSeparatorLeft";
+import { eventFormBookingLinks } from "../../lib/tempData/eventFormBookingLinks";
 import { useEffect, useState } from "react";
-
+const partyFormBooking = (bookingData) => {
+  FH.open({
+    shortname: bookingData.shortName,
+    fallback: "simple",
+    fullItems: "yes",
+    flow: "no",
+    view: { item: bookingData.itemNo },
+  });
+};
 const MobileEscapeGameRootHomeSection = (props) => {
   const iconList = [
     {
@@ -85,20 +94,46 @@ const MobileEscapeGameRootHomeSection = (props) => {
               </div>
               {/* ==================button=====================*/}
               <div className="mbl-h-btn flex space-x-2 justify-between md:justify-start md:space-x-6 mt-8">
-                {
-                  <button
-                    onClick={(e) => showLocatioForm(e)}
-                    className="w-[48%] md:max-w-[220px] text-center border block text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
-                  >
-                    GET A QUOTE
-                  </button>
-                }
-                <button
-                  onClick={(e) => showLocation(e)}
-                  className="w-[48%] md:max-w-[220px] text-center block border text-white border-red-600 bg-transparent py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
-                >
-                  LEARN MORE
-                </button>
+                {props.locationSlug && (
+                  <>
+                    <button
+                      onClick={() => {
+                        partyFormBooking(
+                          eventFormBookingLinks[props.locationSlug]
+                        );
+                      }}
+                      className="w-[48%] md:max-w-[220px] text-center border block text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
+                    >
+                      GET A QUOTE
+                    </button>
+                    <a
+                      href={
+                        "/" +
+                        props.locationSlug +
+                        "/activities/mobile-escape-room"
+                      }
+                      className="w-[48%] md:max-w-[220px] text-center block border text-white border-red-600 bg-transparent py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
+                    >
+                      LEARN MORE
+                    </a>
+                  </>
+                )}
+                {!props.locationSlug && (
+                  <>
+                    <button
+                      onClick={(e) => showLocatioForm(e)}
+                      className="w-[48%] md:max-w-[220px] text-center border block text-white border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
+                    >
+                      GET A QUOTE
+                    </button>
+                    <a
+                      href={"/mobile-escape-room"}
+                      className="w-[48%] md:max-w-[220px] text-center block border text-white border-red-600 bg-transparent py-[10px] md:py-3 rounded-full font-medium md:text-lg hover:bg-red-700 hover:border-red-700"
+                    >
+                      LEARN MORE
+                    </a>
+                  </>
+                )}
               </div>
             </div>
             <div className="mbl-col w-full lg:w-1/2 order-1 lg:order-2 mt-3 md:mt-0 mb-6 md:mb-8 lg:mb-0">

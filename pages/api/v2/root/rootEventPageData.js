@@ -18,6 +18,8 @@ import {
   eventDetailData,
   eventTestimonialData,
 } from "../../../../lib/eventDataFormation";
+
+import { eventPageDataFormater } from "../../../../lib/v2/formate/eventPageDataFormater";
 export const getRootEventPagetData = async (eventSlug) => {
   const filters = "filters[eventSlug][$eq]=" + eventSlug;
   const reqUrl = apiUrl + "events?" + filters + eventPageQuery;
@@ -65,6 +67,29 @@ export const getRootEventPagetData = async (eventSlug) => {
       totalLocations,
       totalActivities
     ),
+    //================v2
+    pageHeroData: eventPageDataFormater.pageHeroData({ eventSlug: eventSlug }),
+    eventDetailSectionData: eventPageDataFormater.eventDetailSectionData({
+      eventSlug: eventSlug,
+    }),
+    partyPackageSectionData: eventPageDataFormater.partyPackageSectionData({
+      eventSlug: eventSlug,
+    }),
+    escapescapeRoomCarouselSectionData:
+      eventPageDataFormater.escapescapeRoomCarouselSectionData({
+        fetchEscapeGameList: actctivityListResData,
+        eventSlug: eventSlug,
+      }),
+    gallerySectionData: eventPageDataFormater.gallerySectionData({
+      eventSlug: eventSlug,
+    }),
+    testimonialSectionData: eventPageDataFormater.testimonialSectionData({
+      eventSlug: eventSlug,
+    }),
+    faqSectionData: eventPageDataFormater.faqSectionData({
+      eventSlug: eventSlug,
+    }),
+    //============= v1
     eventDetaliData: eventDetailData(
       eventResData.whyAllinAdventures,
       eventResData.makeItMemorable,

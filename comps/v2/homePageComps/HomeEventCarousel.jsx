@@ -88,11 +88,11 @@ const HomeEventCarousel = ({ eventCarouselList }) => {
                 {/*====================================================================carousel-text */}
                 <div className="hec-item-col grow order-2 lg:order-1 px-3 pt-3 pb-5 zm:p-4 md:p-8 lg:py-5 lg:px-4 xl:p-10 mt-4 lg:mt-0">
                   <div className="hec-head">
-                    <p className="text-[#374151] font-medium lg:text-lg uppercase">
+                    <p className="text-[#374151] text-[1.1rem] font-medium lg:text-[1.2rem] uppercase">
                       {item.eventType ? item.eventType : "ESCAPE ROOM"}
                     </p>
-                    <h4 className="text-[#CA9342] egl-game-title leading-[1.1] font-bold text-[21px] rm:text-[25px] zm:text-[26px] lg:text-[28px] xl:text-[30px]  2xl:text-[32px] uppercase">
-                      {item.eventName}
+                    <h4 className="text-[#CA9342] egl-game-title leading-[1.1] font-bold text-[1.3rem] rm:text-[1.56rem] zm:text-[1.65rem] lg:text-[1.8rem] xl:text-[2rem]  uppercase">
+                      {item.carouselTitle ? item.carouselTitle : item.eventName}
                     </h4>
                   </div>
                   <div
@@ -109,9 +109,6 @@ const HomeEventCarousel = ({ eventCarouselList }) => {
                         BOOK NOW
                       </button>
                       <a
-                        onClick={(e) => {
-                          exploreEvent(e, item.slug);
-                        }}
                         href={`/events/${item.slug}`}
                         className="border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700 text-sm md:text-base xl:text-lg text-[#374151] hover:text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-medium transition duration-400 ease-in-out"
                       >

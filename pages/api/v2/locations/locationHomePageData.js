@@ -82,6 +82,12 @@ export const locationHomePageData = async (slug) => {
     hasMobileEscapeRoom: isActiveMobileEscape,
     mobileEscapeRoomData: homePageMobileEscapeRoomSectionData(mobileEscapeRoom),
     toyMakerPageData: toyMakerPageData[slug] ? toyMakerPageData[slug] : false,
+
+    pageMeta: getPageMeta(
+      seoData,
+      pageResData.pageHeroData.pageHeroMobile.data.attributes.url,
+      pageResData.pageHeroData.pageSubTitle
+    ),
     //=============== v2 data
 
     pageHeroData: homePageDataFormater.pageHeroDataFormat({
@@ -116,41 +122,6 @@ export const locationHomePageData = async (slug) => {
       homePageDataFormater.testimonialVideoCarouselSectionDataFormat(),
 
     //================ v1 data
-
-    pageMeta: getPageMeta(
-      seoData,
-      pageResData.pageHeroData.pageHeroMobile.data.attributes.url,
-      pageResData.pageHeroData.pageSubTitle
-    ),
-    pageData: getPageData(
-      pageResData.pageHeroData,
-      pageResData.locationInfo,
-      testiResData.pageInfo.themeImage,
-      pageResData.locationActivities
-    ),
-
-    pageVideo: getPageVideo(pageResData.pageVideo),
-    escapeGameList: getEscapeGameList(
-      pageResData.locationActivities,
-      pageResData.bookingInfo,
-      pageResData.carouselSectionData
-    ),
-    otherGameList: getOtherGameList(
-      pageResData.locationActivities,
-      pageResData.bookingInfo,
-      pageResData.carouselSectionData,
-      pageResData.escapeGameParty
-    ),
-
-    eventList: getEventList(
-      pageResData.locationEvents,
-      pageResData.carouselSectionData
-    ),
-
-    testimonialList: getTestimonials(
-      testiResData.testimonials,
-      pageResData.carouselSectionData
-    ),
   };
   return DATA;
 };

@@ -180,7 +180,8 @@ export const getStaticProps = async (context) => {
   */
   const DATA = await getLocationHomePageData(context.params.locationSlug);
   // const DATA = await getLocationHomePageData(context.params.locationSlug);
-  //console.log(DATA);
+  //console.log(DATA.otherGameList);
+
   return {
     props: {
       locationSlugList: DATA.locationSlugList,

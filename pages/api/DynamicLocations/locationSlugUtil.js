@@ -1,5 +1,6 @@
 import { apiSetting, apiUrl } from "../../../lib/apiSettings";
 import { checkActiveMobileEscape } from "../../../lib/dataFormation/mobileEscapeDataFormation";
+import { toyMakerPageData } from "../../../lib/tempData/toymakerWorkStationTempData";
 export async function fetchLocationActivities(locationSlug) {
   const reqUrl =
     apiUrl +
@@ -10,12 +11,15 @@ export async function fetchLocationActivities(locationSlug) {
   const activities = await res.json();
   const activityList = activities.data[0].attributes.locationActivities;
   const mobileEscapeRoom = activities.data[0].attributes.mobileEscapeRoom;
+  // console.log("slug util :" + activityList);
 
   let retArr = [];
   for (let i = 0; i < activityList.length; i++) {
     let obj = {
       id: i + 1,
       activitySlug: activityList[i].activity.data.attributes.activitySlug,
+      //  activityType: activityList[i].activity.data.attributes.activityInfo.category,
+      //  activityName: activityList[i].activity.data.attributes.activityName,
     };
 
     retArr.push(obj);
@@ -25,14 +29,19 @@ export async function fetchLocationActivities(locationSlug) {
       let mObj = {
         id: activityList.length + 1,
         activitySlug: "mobile-escape-room",
+        //activityType: "Mobile Escape Games",
+        // activityName: "Mobile Escape Room",
       };
       retArr.push(mObj);
     }
   }
-  if (locationSlug == "raleigh-nc") {
+  //  if (locationSlug == "raleigh-nc") {
+  if (toyMakerPageData[locationSlug]) {
     let mObj = {
       id: activityList.length + 2,
       activitySlug: "toymakers-workshop",
+      // activityType: "Toymaker",
+      // activityName: "Toymakers Workshop",
     };
     retArr.push(mObj);
   }

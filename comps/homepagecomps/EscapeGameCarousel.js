@@ -183,7 +183,11 @@ const EscapeGameCarousel = (props) => {
                           );
                         })}
                       </div>
-                      {props.locationSlug == "roanoke-va" && (
+                      {(props.locationSlug == "roanoke-va" ||
+                        props.locationSlug == "hadley-ma" ||
+                        props.locationSlug == "holyoke-ma" ||
+                        props.locationSlug == "kingston-ma" ||
+                        props.locationSlug == "n-attleborough-ma") && (
                         <div className="text-white pt-1 pb-1 md:pb-0 text-center text-[12px] sm:text-[13px] leading-[1.1]">
                           Includes all fees
                         </div>

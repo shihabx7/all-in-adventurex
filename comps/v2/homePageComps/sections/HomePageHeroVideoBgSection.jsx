@@ -19,12 +19,15 @@ export default function HomePageHeroVideoBgSection({
   return (
     <div className="page-hero-section">
       <div className="section-bg  bg-stone-800 relative">
-        <HomePageHeroVideoBg videoData={pageHeroData.heroBgVideo} />
-        <div className="section-overlay bg-[rgba(0,0,0,0.66)] w-full h-full absolute top-0 left-0 flex justify-center items-center">
-          <div className="section-container  mx-auto  max-w-7xl pt-16 pb-24 md:py-20 lg:py-24 xl:py-28 px-4">
+        <div className="hero-video-bg w-full h-full absolute top-0 left-0 ">
+          <HomePageHeroVideoBg videoData={pageHeroData.heroBgVideo} />
+        </div>
+
+        <div className="section-overlay bg-[rgba(0,0,0,0.66)] flex flex-col justify-center min-h-[76vh] rm:min-h-[72vh] zm:min-h-[64vh] md:min-h-[54vh] lg:min-h-[58vh] xl:min-h-[85vh] relative z-20">
+          <div className="section-container  mx-auto  max-w-7xl pt-20 pb-24 md:py-24 md:pb-28 2xl:py-28  px-4">
             {/*============section head==========*/}
             <div className="section-head">
-              <div className="pageTitle max-w-[320px] zm:max-w-[520px] md:max-w-[800px] lg:max-w-[960px] mx-auto">
+              <div className="pageTitle max-w-[320px] lm:max-w-[400px] zm:max-w-[520px] md:max-w-[800px] lg:max-w-[990px] mx-auto">
                 <HomePageTitleCenterLight
                   pageTitle={
                     pageHeroData.pageTitle
@@ -35,7 +38,7 @@ export default function HomePageHeroVideoBgSection({
               </div>
               {pageHeroData.pageSubTitle && (
                 <div
-                  className="pageSub Title zm:max-w-[480px] md:max-w-[760px] mx-auto text-[#f3f4f6]  md:text-lg xl:text-xl text-center mt-3 md:mt-3 xl:mt-4"
+                  className="pageSub Title zm:max-w-[480px] md:max-w-[760px] lg:max-w-[840px] mx-auto text-[#f3f4f6]  md:text-lg xl:text-xl text-center mt-3 md:mt-3 xl:mt-4"
                   dangerouslySetInnerHTML={{
                     __html: pageHeroData.pageSubTitle,
                   }}

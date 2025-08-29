@@ -152,7 +152,7 @@ const RootNav = (props) => {
             {/*============dropdown/ toggle menu==========*/}
             <div
               id="submenu-holder"
-              className="submenu-holder absolute md:top-full right-0 z-[100]  w-full md:w-[716px]"
+              className="submenu-holder absolute md:top-full right-0 z-[100]  w-full md:w-[740px]"
             >
               {showMe && (
                 <DropDownMenu

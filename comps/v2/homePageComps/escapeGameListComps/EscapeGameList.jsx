@@ -67,18 +67,41 @@ export default function EscapeGameList({
       />
 
       <div className="egl-list-item-box mt-2 flex flex-col space-y-5 md:space-y-8 2xl:space-y-10">
+        {" "}
         {gameList.map((item, index) => {
           return (
             <div
               key={index}
               className="egl-item-row flex flex-col md:flex-row items-center "
             >
-              <div className="egl-item-col  md:min-w-[320px] lg:min-w-[410px] xl:min-w-[460px] 2xl:min-w-[480px]">
+              <div className="egl-item-col  md:min-w-[320px] lg:min-w-[410px] xl:min-w-[460px] 2xl:min-w-[480px] relative">
                 <EscapeGameListVideo
                   videoData={item.videoData}
                   currentVideoRef={currentVideoRef}
                   setCurrentVideoRef={setCurrentVideoRef}
                 />
+                <div className="absolute top-0 right-0 md:hidden ">
+                  <div className="egl-price-mbl flex justify-end">
+                    <div className="egl-price-wrapper relative">
+                      <div className="bg-img ">
+                        <img
+                          className="w-[100px] zm:w-[100px] lg:w-[90px] xl:w-[100px] 2xl:w-[106px]"
+                          src={
+                            "/assets/escape-games/icons/escape-game-price-bg.svg"
+                          }
+                        ></img>
+                      </div>
+                      <div className="w-full h-full absolute top-0 left-0 flex flex-col justify-center items-center ">
+                        <p className="text-center text-[14px] zm:text-[14px] xl:text-[16px] text-[#101010] leading-[1.1]">
+                          From
+                        </p>
+                        <p className="text-center text-[16px] zm:text-[16px] lg:text-[18px] xl:text-[20px] text-[#DC2626] font-bold leading-[1.2]">
+                          ${item.gameInfo.price}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div className="egl-item-col grow">

@@ -7,9 +7,9 @@ export default function EscapeGamesListSection({
 }) {
   return (
     <div className="escape-games-list-section">
-      <div className="section-bg  bg-[#000000] relative">
+      <div className="section-bg   relative">
         <div className="section-overlay ">
-          <div className="section-container  mx-auto max-w-7xl py-16 md:py-20 lg:py-24 xl:py-28 px-4 md:px-0">
+          <div className="section-container  mx-auto max-w-7xl px-4 md:px-0">
             {/*============section head==========*/}
             <div className="section-head">
               <div className="pageTitle max-w-[320px] zm:max-w-[500px] md:max-w-[780px] lg:max-w-[960px] mx-auto">

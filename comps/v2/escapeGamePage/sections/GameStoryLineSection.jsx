@@ -1,5 +1,24 @@
-export default function GameStoryLineSection({ gameInfo }) {
-  const gTag = gameInfo.gameTheme.concat(gameInfo.recommendFor);
+const bookThisGame = (bookingData) => {
+  FH.open({
+    shortname: bookingData.shortName,
+    fallback: "simple",
+    fullItems: "yes",
+    flow: bookingData.flow,
+    view: { item: bookingData.itemNo },
+  });
+};
+export default function GameStoryLineSection({
+  storyLineSectionData,
+  gameBooking,
+}) {
+  const gTag = storyLineSectionData.gameTheme.concat(
+    storyLineSectionData.recommendFor
+  );
+  const showLocation = () => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.add("overflow-hidden");
+    document.getElementById("locmenu").classList.remove("hidden");
+  };
 
   return (
     <div className="game-story-line-section egs-section relative">
@@ -8,14 +27,14 @@ export default function GameStoryLineSection({ gameInfo }) {
         <img
           className="w-full h-full object-cover object-bottom md:object-top"
           alt={
-            gameInfo.storyLineBgImage.alt
-              ? gameInfo.storyLineBgImage.alt
+            storyLineSectionData.storyLineBgImage.alt
+              ? storyLineSectionData.storyLineBgImage.alt
               : "escape from alcatraz storyline"
           }
           src={
-            gameInfo.storyLineBgImage
-              ? gameInfo.storyLineBgImage.url
-              : "/assets/escape-game/storyline/escape-from-alcatraz-storyline-bg.jpg"
+            storyLineSectionData.storyLineBgImage
+              ? storyLineSectionData.storyLineBgImage.url
+              : "/assets/escape-games/storyline/escape-from-alcatraz-storyline-bg.jpg"
           }
         ></img>
       </div>
@@ -36,14 +55,16 @@ export default function GameStoryLineSection({ gameInfo }) {
                   <img
                     className="max-h-[16px] rm:max-h-[18px] md:max-h-[16px] lg:max-h-[19px] 2xl:max-h-[22px]"
                     src={
-                      "/assets/escape-game/icons/escape-game-team-member-icon.svg"
+                      "/assets/escape-games/icons/escape-game-team-member-icon.svg"
                     }
                   ></img>
                   <p className="text-[#d9d9d9] text-[12px] rm:text-[14px] md:text-[13px] lg:text-[14px] 2xl:text-[15px]">
                     <span>
-                      {gameInfo.teamSizeLabel ? gameInfo.teamSizeLabel : "Team"}{" "}
+                      {storyLineSectionData.teamSizeLabel
+                        ? storyLineSectionData.teamSizeLabel
+                        : "Team"}{" "}
                     </span>
-                    <span>{gameInfo.teamSize}</span>
+                    <span>{storyLineSectionData.teamSize}</span>
                   </p>
                 </div>
                 {/*==================================================col 2*/}
@@ -51,12 +72,12 @@ export default function GameStoryLineSection({ gameInfo }) {
                   <img
                     className="max-h-[16px] rm:max-h-[18px] md:max-h-[16px] 2xl:max-h-[22px]"
                     src={
-                      "/assets/escape-game/icons/escape-game-age-range-icon.svg"
+                      "/assets/escape-games/icons/escape-game-age-range-icon.svg"
                     }
                   ></img>
                   <p className="text-[#d9d9d9] text-[12px] rm:text-[14px] md:text-[13px] lg:text-[14px] 2xl:text-[15px]">
                     <span>Age: </span>
-                    <span>{gameInfo.age}</span>
+                    <span>{storyLineSectionData.age}</span>
                   </p>
                 </div>
                 {/*==================================================col 3*/}
@@ -64,12 +85,13 @@ export default function GameStoryLineSection({ gameInfo }) {
                   <img
                     className="max-h-[16px] rm:max-h-[18px] md:max-h-[16px] lg:max-h-[19px] 2xl:max-h-[22px]"
                     src={
-                      "/assets/escape-game/icons/escape-game-duration-icon.svg"
+                      "/assets/escape-games/icons/escape-game-duration-icon.svg"
                     }
                   ></img>
                   <p className="text-[#d9d9d9] text-[12px] rm:text-[14px] md:text-[13px] lg:text-[14px] 2xl:text-[15px]">
                     <span>Duration: </span>
-                    <span>{gameInfo.duration}</span> <span>min</span>
+                    <span>{storyLineSectionData.duration}</span>{" "}
+                    <span>min</span>
                   </p>
                 </div>
                 {/*==================================================col 4*/}
@@ -77,12 +99,12 @@ export default function GameStoryLineSection({ gameInfo }) {
                   <img
                     className="max-h-[16px] rm:max-h-[18px] md:max-h-[16px] lg:max-h-[19px] 2xl:max-h-[22px]"
                     src={
-                      "/assets/escape-game/icons/escape-game-success-rate-icon.svg"
+                      "/assets/escape-games/icons/escape-game-success-rate-icon.svg"
                     }
                   ></img>
                   <p className="text-[#d9d9d9] text-[12px] rm:text-[14px] md:text-[13px] lg:text-[14px] 2xl:text-[15px]">
                     <span>Success rate: </span>
-                    <span>{gameInfo.successRate}</span>
+                    <span>{storyLineSectionData.successRate}</span>
                     <span>%</span>
                   </p>
                 </div>
@@ -103,22 +125,34 @@ export default function GameStoryLineSection({ gameInfo }) {
               {/*=========================================game short decription====*/}
               <div className="egl-shot-desc mt-3 md:mt-3 lg:mt-4 xl:mt-5 2xl:mt-6">
                 <h4 className="text-[20px] rm:text-[22px] md:text-[24px] lg:text-[28px] font-medium text-[#FFB548] mb-2">
-                  {gameInfo.storyLineTitle}
+                  {storyLineSectionData.storyLineTitle}
                 </h4>
                 <div
                   className="text-[#cdcdcd] text-sm lg:text-base 2xl:text-lg flex flex-col space-y-2 md:space-y-4"
-                  dangerouslySetInnerHTML={{ __html: gameInfo.storyLine }}
+                  dangerouslySetInnerHTML={{
+                    __html: storyLineSectionData.storyLine,
+                  }}
                 ></div>
               </div>
               {/*=========================================game button===*/}
               <div className="egl-btn-pair mt-4 md:mt-5 mb-[8px] xl:mt-8 xl:mb-2">
                 <div className="flex items-center space-x-2 md:space-x-3 lg:space-x-4 ">
-                  <button
-                    onClick={(e) => showLocation(e)}
-                    className="border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700 text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center "
-                  >
-                    BOOK THIS GAME
-                  </button>
+                  {!gameBooking && (
+                    <button
+                      onClick={(e) => showLocation(e)}
+                      className="border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700 text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center "
+                    >
+                      BOOK THIS GAME
+                    </button>
+                  )}
+                  {gameBooking && (
+                    <button
+                      onClick={() => bookThisGame(gameBooking)}
+                      className="border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700 text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center "
+                    >
+                      BOOK THIS GAME
+                    </button>
+                  )}
                 </div>
               </div>
             </div>

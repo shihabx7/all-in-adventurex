@@ -6,7 +6,7 @@ export default function OtherGameSection({
 }) {
   return (
     <div className="other-games-section">
-      <div className="section-bg  bg-[#000000] relative">
+      <div className="section-bg   relative">
         <div className="section-overlay ">
           <div className="section-container  mx-auto max-w-7xl pb-16 md:pb-20 lg:pb-24 xl:pb-28 px-4 md:px-0">
             {/*============section head==========*/}
@@ -20,7 +20,7 @@ export default function OtherGameSection({
                   }
                 />
               </div>
-              {otherGameSectionData.sectionSubTitle && (
+              {/*otherGameSectionData.sectionSubTitle && (
                 <div className="pageSub Title max-w-[800px] mx-auto">
                   <div
                     className="text-[#f3f4f6]  sm:text-lg xl:text-xl text-center mt-3 md:mt-3 lg:mt-5 xl:mt-6"
@@ -29,7 +29,7 @@ export default function OtherGameSection({
                     }}
                   ></div>
                 </div>
-              )}
+              )*/}
             </div>
             {/*============section head end==========*/}
 

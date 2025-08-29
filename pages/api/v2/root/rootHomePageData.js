@@ -21,6 +21,7 @@ import {
   getAllEventSlugList,
 } from "../../../../lib/menuDataFormation";
 import { homePageDataFormater } from "../../../../lib/v2/formate/homePageDataFormater";
+import getRootEventSlugs from "./rootEventSlugs";
 
 export const rootHomePageData = async () => {
   // declare api request url
@@ -59,6 +60,7 @@ export const rootHomePageData = async () => {
     escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
     otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),
+    // eventSlugList: getRootEventSlugs(),
     totalLocations: totalLocations,
     pageMeta: getPageMeta(
       seoData,

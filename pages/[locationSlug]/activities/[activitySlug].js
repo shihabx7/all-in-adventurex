@@ -165,7 +165,7 @@ export const getStaticProps = async (context) => {
     context.params.locationSlug,
     context.params.activitySlug
   );
-  //console.log(DATA.escapeGameCarouselSectionData);
+  //  console.log(DATA.escapeGameCarouselSectionData);
 
   return {
     props: {

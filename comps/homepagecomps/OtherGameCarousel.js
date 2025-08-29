@@ -129,7 +129,9 @@ const OtherGameCarousel = (props) => {
                       <div className="inline-block text-center py-2 px-4 border border-dashed border-gray-300">
                         <p className="text-lg text-white">FROM</p>
                         <p className="text-2xl md:text-3xl text-white font-bold">
-                          ${otherGame.price[0].Price}
+                          {otherGame.fromPrice
+                            ? "$" + otherGame.fromPrice
+                            : otherGame.price[0].Price}
                         </p>
                       </div>
                     </div>

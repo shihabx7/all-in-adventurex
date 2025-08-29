@@ -54,7 +54,7 @@ export default function EscapeGameListInfo({
           {gameInfo.gameTitle}
         </h3>
         {/*=======================================Game-price*/}
-        <div className="egl-price absolute top-[-40px]  left-[0px] zm:left-[unset] zm:right-[2px] zm:top-[14px] md:top-[12px] md:right-[10px] lg:top-[16px] lg:right-[16px]  xl:right-4 xl:top-4">
+        <div className="hidden md:block egl-price absolute top-[-40px]  left-[0px] zm:left-[unset] zm:right-[2px] zm:top-[14px] md:top-[12px] md:right-[10px] lg:top-[16px] lg:right-[16px]  xl:right-4 xl:top-4">
           <div className="egl-price-wrapper relative">
             <div className="bg-img ">
               <img
@@ -84,7 +84,8 @@ export default function EscapeGameListInfo({
             ></img>
             <p className="text-[#d9d9d9] text-[12px] rm:text-[14px] md:text-[13px] lg:text-[14px] 2xl:text-[15px]">
               <span>
-                {gameInfo.timeSizeLabel ? gameInfo.timeSizeLabel : "Team"}{" "}
+                {gameInfo.teammeSizeLabel ? gameInfo.teameSizeLabel : "Team"}
+                {": "}
               </span>
               <span>{gameInfo.teamSize}</span>
             </p>
@@ -147,29 +148,26 @@ export default function EscapeGameListInfo({
         </div>
         {/*=========================================game button===*/}
         <div className="egl-btn-pair mt-5 md:mt-5 mb-[8px] xl:mt-8 xl:mb-2">
-          <div className="flex items-center space-x-2 md:space-x-3 lg:space-x-4 ">
+          <div className="flex justify-between md:justify-start items-center space-x-2 md:space-x-3 lg:space-x-4 ">
             {bookingInfo ? (
               <button
                 onClick={(e) => bookGame(e, bookingInfo)}
-                className="border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700 font-semibold text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center "
+                className=" w-[48%] lm:w-[47%] md:w-auto border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700 font-semibold text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center "
               >
                 BOOK NOW
               </button>
             ) : (
               <button
                 onClick={(e) => showLocation(e)}
-                className="border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700 font-semibold text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center "
+                className=" w-[48%] lm:w-[47%] md:w-auto border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700 font-semibold text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center "
               >
                 BOOK NOW
               </button>
             )}
             {locationSlug ? (
               <a
-                onClick={(e) => {
-                  exploreLocGame(e, locationSlug, gameInfo.slug);
-                }}
                 href={`/${locationSlug}/activities/${gameInfo.slug}`}
-                className="border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700 font-semibold text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center"
+                className=" w-[48%] lm:w-[47%] md:w-auto  border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700 font-semibold text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center"
               >
                 EXPLORE
               </a>
@@ -179,7 +177,7 @@ export default function EscapeGameListInfo({
                   exploreGame(e, gameInfo.slug);
                 }}
                 href={`/activities/${gameInfo.slug}`}
-                className="border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700 font-semibold text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center"
+                className=" w-[48%] lm:w-[47%] md:w-auto  border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700 font-semibold text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center"
               >
                 EXPLORE
               </a>

@@ -5,7 +5,7 @@ export default function GamePageHeroVideoBg({ videoData }) {
     videoRef.current.play();
   }, []);
   return (
-    <div className="section-full-screen-bg-video max-w-screen h-[78vh] rm:h-[70vh] md:h-[60vh] xl:h-[86vh] bg-black">
+    <div className="section-full-screen-bg-video max-w-screen h-full  bg-black">
       <video
         ref={videoRef}
         id={"hero-bg-video"}

@@ -19,7 +19,8 @@ import {
   getListPageMeta,
   eventListData,
 } from "../../../../lib/eventDataFormation";
-export const getRootEventListPageData = async () => {
+import { eventListPageDataFormater } from "../../../../lib/v2/formate/eventPageDataFormater";
+export const rootEventListPageData = async () => {
   const pageReqUrl = apiUrl + eventListPageQuery;
   const eventListReqUrl = apiUrl + eventListQuery;
 
@@ -57,6 +58,18 @@ export const getRootEventListPageData = async () => {
       seoData,
       pageResData.pageHeroDesktop.data.attributes.url
     ),
+
+    //=================v2
+    pageHeroData: eventListPageDataFormater.pageHeroData(),
+    eventListSectionData: eventListPageDataFormater.eventListSectionData(),
+    escapeRoomCarouselSectionData:
+      eventListPageDataFormater.escapescapeRoomCarouselSectionData({
+        fetchEscapeGameList: actctivityListResData,
+      }),
+    gallerySectionData: eventListPageDataFormater.gallerySectionData(),
+    testimonialSectionData: eventListPageDataFormater.testimonialSectionData(),
+    faqSectionData: eventListPageDataFormater.faqSectionData(),
+    //=================v1
 
     pageData: getListPageData(
       pageResData.pageInfo,
