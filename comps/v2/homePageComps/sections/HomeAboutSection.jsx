@@ -28,7 +28,7 @@ export default function HomeAboutSection({
       <div className="about-section">
         <div className="section-bg relative bg-[#FFF9EB]">
           {/*============Home Page Intro bg ==========*/}
-          <div className="section-full-screen-bg-image w-full h-full bg-[#FFF9EB] absolute left-0 top-0 bg-[url('/assets/home-page/aia-brown-bg-pattern.svg')] bg-center bg-[length:200px_200px] md:bg-[length:360px_360px] lg:bg-[length:400px_400px] bg-repeat"></div>
+          <div className="section-full-screen-bg-image w-full h-full bg-[#FFF9EB] absolute left-0 top-0 bg-[url('/assets/home-page/aia-brown-bg-pattern.svg')] bg-center bg-[length:200px_200px] md:bg-[length:360px_360px] lg:bg-[length:400px_400px] bg-repeat bg-opacity-50"></div>
           {/*============Home Page Intro content ==========*/}
           <div className="section-content  relative z-[10]">
             <div className="section-container max-w-[750px] lg:max-w-[990px]  xl:max-w-[1220px] 2xl:max-w-[1240px] py-16 md:py-20 lg:py-24 lg:pt-28 xl:py-28 px-4 zm:px-8 md:px-4 lg:px-0  mx-auto">
