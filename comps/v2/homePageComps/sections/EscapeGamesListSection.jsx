@@ -13,13 +13,15 @@ export default function EscapeGamesListSection({
             {/*============section head==========*/}
             <div className="section-head">
               <div className="pageTitle max-w-[320px] zm:max-w-[500px] md:max-w-[780px] lg:max-w-[960px] mx-auto">
-                <SectionTitleCenterLight
-                  title={
-                    escapeGameListSectionData.sectionTitle
-                      ? escapeGameListSectionData.sectionTitle
-                      : "REAL-LIFE ESCAPE ROOM GAMES"
-                  }
-                />
+                <p className="font-os font-semibold text-[1.15rem] md:text-[1.6rem] xl:text-3xl uppercase text-red-600 text-center">
+                  our escape Rooms
+                </p>
+
+                <h2 className="text-[#e0bf62] uppercase font-bold text-center text-[2.3rem] rm:text-[2.4rem] zm:text-[3.8rem] leading-[1.2] sm:text-[4rem] lg:text-[4.5rem] font-os outline-tile  md:mt-2 xl:mt-3">
+                  {escapeGameListSectionData.sectionTitle
+                    ? escapeGameListSectionData.sectionTitle
+                    : "REAL-LIFE ESCAPE ROOM GAMES"}
+                </h2>
               </div>
               {escapeGameListSectionData.sectionSubTitle !== null && (
                 <div className="pageSub Title max-w-[840px] mx-auto">
@@ -35,7 +37,7 @@ export default function EscapeGamesListSection({
             {/*============section head end==========*/}
 
             {/*============Escape Game List==========*/}
-            <div className="escape-game-list-container lm:max-w-[380px]  zm:max-w-[480px] md:max-w-[760px]  lg:max-w-[960px] xl:max-w-[1180px] 2xl:max-w-[1240px] mx-auto  mt-6 md:mt-7 lg:mt-4">
+            <div className="escape-game-list-container lm:max-w-[380px]  zm:max-w-[480px] md:max-w-[760px]  lg:max-w-[960px] xl:max-w-[1180px] 2xl:max-w-[1220px] mx-auto  mt-7 md:mt-8 lg:mt-10">
               <EscapeGameList
                 escapeGameList={escapeGameListSectionData.escapeGameList}
                 gameThemeList={escapeGameListSectionData.gameThemeList}

@@ -86,7 +86,10 @@ const LocationNav = (props) => {
             noticeData !== null &&
             noticeData.showNotice && (
               <>
-                <HeaderNotice noticeData={noticeData} />
+                <HeaderNotice
+                  noticeData={noticeData}
+                  locationSlug={props.locationSlug}
+                />
               </>
             )}
           <div

@@ -1,4 +1,4 @@
-import HomePageHeroVideoBg from "../HomepageHeroVideoBg";
+import HomePageHeroVideoBg from "../HomePageHeroVideoBg";
 import HomePageTitleCenterLight from "../HomePageTitleCenterLight";
 import HomeHeroInfo from "../HomeHeroInfo";
 import PageHeroLocBtn from "../PageHeroLocBtn";

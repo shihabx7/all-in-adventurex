@@ -11,20 +11,17 @@ import LocationFooter from "../../../comps/locationsPage/LocationFooter";
 import PageBreedLoc from "../../../comps/util/PageBreedLoc";
 import UnlimitedEscapeGameMenu from "../../../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
 import HomeAboutSection from "../../../comps/v2/homePageComps/sections/HomeAboutSection";
-
+import HomePageGameListBg from "../../../comps/v2/sharedComs/HomePageGameListBg";
 import HomePageHeroVideoBgSection from "../../../comps/v2/homePageComps/sections/HomePageHeroVideoBgSection";
 import EscapeGamesListSection from "../../../comps/v2/homePageComps/sections/EscapeGamesListSection";
 import OtherGameSection from "../../../comps/v2/homePageComps/sections/OtherGameSection";
-import EventCarouselSection from "../../../comps/v2/homePageComps/sections/EventCarouselSection";
+import EventCardListSection from "../../../comps/v2/homePageComps/sections/EventCardListSection";
 import HomePageVideoTestimonialSection from "../../../comps/v2/homePageComps/sections/HomePageVideoTestimonialSection";
-import TestimonialVideoCarouselSection from "../../../comps/v2/testimonialPageComps/TestimonialVideoCarouselSection";
-
-import MobileEscapeGameHomeSection from "../../../comps/mobileEscapeGames/MobileEscapeGameHomeSection";
 import ToyMakerHomeSection from "../../../comps/toyMakerWorkStation/section/ToyMakerHomeSection";
+import MobileEscapeRoomHomeSection2 from "../../../comps/mobileEscapeGames/MobileEscapeRoomHomeSection2";
 import GiftCardHomePageSection from "../../../comps/giftCardPageComps/GiftCardHomePageSection";
-
-import DarkBgKeyPatternBgSection from "../../../comps/v2/sharedComs/DarkBgKeyPatternBgSection";
-
+import GiftCardHomePageSection2 from "../../../comps/giftCardPageComps/GiftCardHomePageSection2";
+import UnlockYourBundleSection from "../../../comps/bundle/UnlockYourBundleSection";
 export default function LocationsHomePage(props) {
   /* customizing breadcum */
   const [showUerBookingList, setShowUerBookingList] = useState(false);
@@ -72,7 +69,7 @@ export default function LocationsHomePage(props) {
           holidayHours={props.holidayHours}
           locationName={props.locationName}
         />
-        <DarkBgKeyPatternBgSection>
+        <HomePageGameListBg>
           <EscapeGamesListSection
             escapeGameListSectionData={props.escapeGameListSectionData}
             locationSlug={props.locationSlug}
@@ -83,9 +80,10 @@ export default function LocationsHomePage(props) {
               locationSlug={props.locationSlug}
             />
           )}
-        </DarkBgKeyPatternBgSection>
-        <EventCarouselSection
-          eventCarouselSectionData={props.eventCarouselSectionData}
+        </HomePageGameListBg>
+        <UnlockYourBundleSection locationSlug={props.locationSlug} />
+        <EventCardListSection
+          sectionData={props.eventCardListSectionData}
           locationSlug={props.locationSlug}
         />
         {props.toyMakerPageData && (
@@ -96,14 +94,14 @@ export default function LocationsHomePage(props) {
           />
         )}
         {props.hasMobileEscapeRoom ? (
-          <MobileEscapeGameHomeSection
+          <MobileEscapeRoomHomeSection2
             locationSlug={props.locationSlug}
             mobileEscapeRoomData={props.mobileEscapeRoomData}
           />
         ) : (
           <></>
         )}
-        <GiftCardHomePageSection
+        <GiftCardHomePageSection2
           isPublished={props.isPublished}
           locationSlug={props.locationSlug}
           locationSlugList={props.locationSlugList}
@@ -186,7 +184,8 @@ export const getStaticProps = async (context) => {
       aboutSectionData: DATA.aboutSectionData,
       escapeGameListSectionData: DATA.escapeGameListSectionData,
       otherGameListSectionData: DATA.otherGameListSectionData,
-      eventCarouselSectionData: DATA.eventCarouselSectionData,
+      eventCardListSectionData: DATA.eventCardListSectionData,
+
       testimonialVideoCarouselSectionData:
         DATA.testimonialVideoCarouselSectionData,
       // ============================v1

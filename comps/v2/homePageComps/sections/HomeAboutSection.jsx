@@ -28,18 +28,12 @@ export default function HomeAboutSection({
       <div className="about-section">
         <div className="section-bg relative bg-[#FFF9EB]">
           {/*============Home Page Intro bg ==========*/}
-          <div className="section-full-screen-bg-image w-full h-full bg-stone-800 absolute left-0 top-0">
-            <img
-              className="w-full h-full object-cover object-center"
-              src={"/assets/home-page/aia-intro-section-bg.jpg"}
-              alt={"/assets/home-page/aia-intro-section-bg.jpg"}
-            ></img>
-          </div>
+          <div className="section-full-screen-bg-image w-full h-full bg-[#FFF9EB] absolute left-0 top-0 bg-[url('/assets/home-page/aia-brown-bg-pattern.svg')] bg-center bg-[length:200px_200px] md:bg-[length:360px_360px] lg:bg-[length:400px_400px] bg-repeat"></div>
           {/*============Home Page Intro content ==========*/}
           <div className="section-content  relative z-[10]">
             <div className="section-container max-w-[750px] lg:max-w-[990px]  xl:max-w-[1220px] 2xl:max-w-[1240px] py-16 md:py-20 lg:py-24 lg:pt-28 xl:py-28 px-4 zm:px-8 md:px-4 lg:px-0  mx-auto">
               {/*============Home Page Intro text ==========*/}
-              <div className="mt-[24px] md:mt-[30px] w-full grid grid-cols-1 lg:grid-cols-[49%_51%] lg:gap-4 xl:gap-10">
+              <div className="mt-[24px] md:mt-[30px] w-full grid grid-cols-1 lg:grid-cols-[49%_51%] lg:gap-4 xl:gap-12">
                 {/*============about img ===================*/}
 
                 <div className="sec-img w-full   lg:h-full  ">

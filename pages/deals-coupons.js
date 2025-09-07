@@ -7,13 +7,16 @@ import { getDealsCouponPageData } from "./api/getDealsCouponPageData";
 
 import DealsAndCouponHero from "../comps/dealsPageComps/DealsAndCouponHero";
 import DealsFaqs from "../comps/dealsPageComps/DealsFaqs";
-import AllDealsAndCoupon from "../comps/dealsPageComps/AllDealsAndCoupon";
+
 import AllCouponOpt from "../comps/dealsPageComps/AllCouponOpt";
 import PageBread from "../comps/util/PageBread";
 import SinglePageSeo from "../comps/util/SinglePageSeo";
 import UnlimitedEscapeGameMenu from "../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
 import { useState } from "react";
-import Flodesk from "../comps/util/Flodesk";
+
+import UnlockYourBundleSection from "../comps/bundle/UnlockYourBundleSection";
+import UnlimitedEscapeRoomSection from "../comps/unlimitedEscapeRoom/UnlimitedEscapeRoomSection";
+
 const DealsCoupon = (props) => {
   const [showUerBookingList, setShowUerBookingList] = useState(false);
 
@@ -55,6 +58,7 @@ const DealsCoupon = (props) => {
           couponlist={props.couponlist}
           setShowUerBookingList={setShowUerBookingList}
         />
+        <UnlockYourBundleSection />
         <DealsFaqs faqlist={props.faqlist} />
 
         {/* =========================================================================================main content ======== end */}

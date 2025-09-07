@@ -3,7 +3,7 @@ import Script from "next/script";
 import { rootHomePageData } from "../api/v2/root/rootHomePageData";
 
 //import SinglePageSeo from "../comps/util/SinglePageSeo";
-import DarkBgKeyPatternBgSection from "../../comps/v2/sharedComs/DarkBgKeyPatternBgSection";
+import HomePageGameListBg from "../../comps/v2/sharedComs/HomePageGameListBg";
 import SinglePageSeo from "../../comps/util/SinglePageSeo";
 import RootNav from "../../comps/RootNav";
 import RootFooter from "../../comps/RootFooter";
@@ -12,13 +12,13 @@ import HomePageHeroVideoBgSection from "../../comps/v2/homePageComps/sections/Ho
 import HomeAboutSection from "../../comps/v2/homePageComps/sections/HomeAboutSection";
 import EscapeGamesListSection from "../../comps/v2/homePageComps/sections/EscapeGamesListSection";
 import OtherGameSection from "../../comps/v2/homePageComps/sections/OtherGameSection";
-import EventCarouselSection from "../../comps/v2/homePageComps/sections/EventCarouselSection";
+import EventCardListSection from "../../comps/v2/homePageComps/sections/EventCardListSection";
 
-import MobileEscapeGameRootHomeSection from "../../comps/mobileEscapeGames/MobileEscapeGameRootHomeSection";
-import GiftCardHomePageSection from "../../comps/giftCardPageComps/GiftCardHomePageSection";
-
-import TestimonialVideoCarouselSection from "../../comps/v2/testimonialPageComps/TestimonialVideoCarouselSection";
-import HomePageVideoTestimonialSection from "../../comps/v2/homePageComps/sections/HomePageVideoTestimonialSection";
+import MobileEscapeRoomHomeSection2 from "../../comps/mobileEscapeGames/MobileEscapeRoomHomeSection2";
+import GiftCardHomePageSection2 from "../../comps/giftCardPageComps/GiftCardHomePageSection2";
+import LightBrownBgSection from "../../comps/v2/sharedComs/LightBrownBgSection";
+import TestimonialCarouselSection from "../../comps/v2/testimonialPageComps/sections/TestimonialCarouselSection";
+import UnlockYourBundleSection from "../../comps/bundle/UnlockYourBundleSection";
 import UnlimitedEscapeGameMenu from "../../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
 import GiftCardBookingMenu from "../../comps/giftCardPageComps/GiftCardBookingMenu";
 
@@ -67,7 +67,7 @@ export default function Home(props) {
       <div id="mainContent" className="main-content min-h-screen bg-slate-100">
         <HomePageHeroVideoBgSection pageHeroData={props.pageHeroData} />
         <HomeAboutSection sectionData={props.aboutSectionData} />
-        <DarkBgKeyPatternBgSection>
+        <HomePageGameListBg>
           <EscapeGamesListSection
             escapeGameListSectionData={props.escapeGameListSectionData}
           />
@@ -76,22 +76,23 @@ export default function Home(props) {
               otherGameSectionData={props.otherGameListSectionData}
             />
           )}
-        </DarkBgKeyPatternBgSection>
-        <EventCarouselSection
-          eventCarouselSectionData={props.eventCarouselSectionData}
-        />
-        <MobileEscapeGameRootHomeSection
+        </HomePageGameListBg>
+        <UnlockYourBundleSection />
+        <EventCardListSection sectionData={props.eventCardListSectionData} />
+        <MobileEscapeRoomHomeSection2
           setShowMobileEecapeMenu={setShowMobileEecapeMenu}
           setGoMobileEecapeForm={setGoMobileEecapeForm}
           goMobileEecapeForm={goMobileEecapeForm}
         />
-        <GiftCardHomePageSection
+        <GiftCardHomePageSection2
           setShowGiftBookingList={setShowGiftBookingList}
           locationSlugList={props.locationSlugList}
         />
-        <HomePageVideoTestimonialSection
-          sectionData={props.testimonialVideoCarouselSectionData}
-        />
+        <LightBrownBgSection>
+          <TestimonialCarouselSection
+            sectionData={props.testimonialCarouselSectionData}
+          />
+        </LightBrownBgSection>
       </div>
 
       <RootFooter
@@ -104,7 +105,7 @@ export default function Home(props) {
 
 export const getStaticProps = async () => {
   const DATA = await rootHomePageData();
-  //  console.log(DATA.eventCarouselSectionData);
+  //  console.log(DATA.pageHeroData);
 
   return {
     props: {
@@ -121,9 +122,9 @@ export const getStaticProps = async () => {
       aboutSectionData: DATA.aboutSectionData,
       escapeGameListSectionData: DATA.escapeGameListSectionData,
       otherGameListSectionData: DATA.otherGameListSectionData,
-      eventCarouselSectionData: DATA.eventCarouselSectionData,
-      testimonialVideoCarouselSectionData:
-        DATA.testimonialVideoCarouselSectionData,
+      eventCardListSectionData: DATA.eventCardListSectionData,
+      testimonialVideoSectionData: DATA.testimonialVideoSectionData,
+      testimonialCarouselSectionData: DATA.testimonialCarouselSectionData,
 
       //pageData: DATA.pageData,
       //pageVideo: DATA.pageVideo,

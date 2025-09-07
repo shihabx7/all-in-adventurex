@@ -21,6 +21,7 @@ import UnlimitedEscapeGameMenu from "../comps/unlimitedEscapeRoom/UnlimitedEscap
 import GiftCardBookingMenu from "../comps/giftCardPageComps/GiftCardBookingMenu";
 import MobileEscapeGameRootHomeSection from "../comps/mobileEscapeGames/MobileEscapeGameRootHomeSection";
 import MobileEscapeRootMenu from "../comps/mobileEscapeGames/MobileEscapeRootMenu";
+import UnlockYourBundleSection from "../comps/bundle/UnlockYourBundleSection";
 export default function Home(props) {
   const [showUerBookingList, setShowUerBookingList] = useState(false);
   const [showGiftBookingList, setShowGiftBookingList] = useState(false);
@@ -73,6 +74,7 @@ export default function Home(props) {
         {/* <UnlimitedEscapeRoomHome
             setShowUerBookingList={setShowUerBookingList}
           />*/}
+        <UnlockYourBundleSection />
         <EventSlider eventList={props.eventList} />
         <MobileEscapeGameRootHomeSection
           setShowMobileEecapeMenu={setShowMobileEecapeMenu}

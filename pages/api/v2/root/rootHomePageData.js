@@ -98,10 +98,14 @@ export const rootHomePageData = async () => {
         fetchGameList: actctivityListResData,
         sectionData: pageResData.carouselSectionData,
       }),
-    eventCarouselSectionData:
-      homePageDataFormater.eventCarouselSectionDataFormat(),
-    testimonialVideoCarouselSectionData:
-      homePageDataFormater.testimonialVideoCarouselSectionDataFormat(),
+    eventCardListSectionData:
+      homePageDataFormater.eventCardlistSectionDataFormat(),
+
+    testimonialVideoSectionData:
+      homePageDataFormater.testimonialVideoSectionData(),
+
+    testimonialCarouselSectionData:
+      homePageDataFormater.testimonialCarouselSectionData(),
     // ==========================================v2 page data end
     /*  escapeGameList: getEscapeGameList(
       actctivityListResData,

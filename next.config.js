@@ -2974,6 +2974,9 @@ module.exports = {
 
   presets: ["next/babel"],
   images: {
-    domains: ["cdn.allinadventures.com"],
+    domains: ["cdn.allinadventures.com", "allinadventures-ads.wistia.com"],
+  },
+  videos: {
+    domains: ["allinadventures-ads.wistia.com"],
   },
 };

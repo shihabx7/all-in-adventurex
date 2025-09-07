@@ -14,17 +14,17 @@ export default function EventPageHero({ pageHeroData, locationSlug }) {
   };
   return (
     <div className="page-hero-section ">
-      <div className="section-wrap  bg-stone-800 relative">
+      <div className="section-wrap  bg-black relative">
         <div className="section-bg  bg-black w-full h-full absolute top-0 left-0">
           <PageHeroBgImage pageHeroBgImage={pageHeroData.pageHeroBgImage} />
         </div>
 
-        <div className="section-overlay bg-[rgba(0,0,0,0.01)]  min-h-[76vh] rm:min-h-[72vh] zm:min-h-[64vh] md:min-h-[62vh] lg:min-h-[60vh] xl:min-h-[85vh] flex justify-center items-center relative z-20">
+        <div className="section-overlay bg-[rgba(0,0,0,0.6)]  min-h-[76vh] rm:min-h-[72vh] zm:min-h-[64vh] md:min-h-[62vh] lg:min-h-[60vh] xl:min-h-[85vh] flex justify-center items-center relative z-20">
           <div className="section-container  mx-auto  max-w-7xl pt-16 pb-24 md:py-20 lg:py-24 xl:py-28 px-[.9rem] rm:px-4">
             {/*============section head==========*/}
             <div className="section-head">
               <div className="pageTitle max-w-[310px] rm:max-w-[340px] zm:max-w-[520px] md:max-w-[800px] lg:max-w-[1000px] xl:max-w-[1100px] mx-auto">
-                <h1 className="text-white uppercase font-bold text-center text-[1.8rem] rm:text-[2.1rem] zm:text-[34px] leading-[1.28] zm:leading-[1.4] md:leading-[1.3] md:text-[48px] lg:text-6xl font-os outline-tile">
+                <h1 className="text-[#E0BF62] uppercase font-bold text-center text-[1.8rem] rm:text-[2.1rem] zm:text-[2.2rem] leading-[1.28] zm:leading-[1.4] md:leading-[1.3] md:text-[3rem] lg:text-6xl font-os outline-tile">
                   {pageHeroData.pageTitle
                     ? pageHeroData.pageTitle
                     : "ESCAPE GAME PARTY"}

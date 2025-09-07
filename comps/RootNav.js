@@ -10,7 +10,11 @@ import LocationMenuBtnHeader from "./util/LocationMenuBtnHeader";
 import StickyGiftBar from "./giftCardPageComps/StickyGiftBar";
 import UerStickyBar from "./unlimitedEscapeRoom/UerStickyBar";
 import { navNotice } from "../lib/tempData/tempNavNotice";
+import BundleBookingMenu from "./bundle/BundleBookingMenu";
+import { useLocModal } from "../contexts/LocModalContext";
+
 const RootNav = (props) => {
+  const { showLocModal } = useLocModal();
   const [showSlug, setShowSlug] = useState(null);
   const [noticeData, setNoticeData] = useState();
 
@@ -63,6 +67,9 @@ const RootNav = (props) => {
       <div id="locmenu" className="loc-menu-holder hidden">
         <HeaderLocMenu locationSlugList={props.locationSlugList} />
       </div>
+      {showLocModal && (
+        <BundleBookingMenu locationSlugList={props.locationSlugList} />
+      )}
 
       {/* 
       <UerStickyBar locationSlugList={props.locationSlugList} />

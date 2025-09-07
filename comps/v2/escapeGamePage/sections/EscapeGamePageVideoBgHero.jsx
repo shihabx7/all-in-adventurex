@@ -34,7 +34,7 @@ export default function EscapeGamePageVideoBgHero({
                 ></img>
               </div>
               <div className="pageTitle max-w-[360px] zm:max-w-[520px] md:max-w-[800px] lg:max-w-[1000px] mx-auto">
-                <h1 className="text-white uppercase font-bold text-center text-[1.75rem] rm:text-[2rem] zm:text-[2.25rem] leading-[1.25] zm:leading-[1.35] md:leading-[1.25] md:text-[3.2rem] lg:leading-[1.15] lg:text-[3.5rem] xl:text-[3.8rem] font-os outline-tile">
+                <h1 className="text-[#E0BF62] uppercase font-bold text-center text-[1.75rem] rm:text-[2rem] zm:text-[2.25rem] leading-[1.25] zm:leading-[1.35] md:leading-[1.25] md:text-[3.2rem] lg:leading-[1.15] lg:text-[3.5rem] xl:text-[3.8rem] font-os outline-tile">
                   {pageHeroData.pageTitle
                     ? pageHeroData.pageTitle
                     : "ESCAPE GAME"}

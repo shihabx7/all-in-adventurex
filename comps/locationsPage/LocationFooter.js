@@ -9,7 +9,7 @@ import FooterEmbedMap from "../footercomps/FooterEmbedMap";
 import FooterSocial from "../footercomps/FooterSocial";
 import FooterCopy from "../footercomps/FooterCopy";
 import Dgency from "../footercomps/Dgency";
-
+import AllLocationMap from "./AllLocationMap";
 const LocationFooter = (props) => {
   const [isPgLoad, setPgLoad] = useState(false);
   useEffect(() => {
@@ -39,8 +39,8 @@ const LocationFooter = (props) => {
                 in {props.totalLocations ? props.totalLocations : "22"}{" "}
                 locations. Established in 2014 and a registered franchise brand
                 since 2020, All In Adventures has gained vast industry
-                experience through our popular Escape Room, Game Show Room and Beat
-                the Seat games.
+                experience through our popular Escape Room, Game Show Room and
+                Beat the Seat games.
               </p>
               <p className="text-gray-300 md:text-lg pt-4 pb-8">
                 We're your one-stop shop for any private event. We have you
@@ -56,7 +56,7 @@ const LocationFooter = (props) => {
           {/*========================================= map  added================ */}
           <div className="footer-map-row text-center">
             <h3 className="golden-text py-8 font-os font-bold text-2xl md:text-3xl lg:text-3xl">
-              {props.totalLocations ? props.totalLocations : "22"} LOCATIONS IN
+              {props.totalLocations ? props.totalLocations : "20 "} LOCATIONS IN
               THE U.S.
             </h3>
 
@@ -64,9 +64,11 @@ const LocationFooter = (props) => {
               {isPgLoad && (
                 <>
                   <FooterEmbedMap />
+                  <AllLocationMap />
                 </>
               )}
             </div>
+            <div className="footer-map-n"></div>
           </div>
           {/*========================================= map added================ */}
           {/*===================footer ?Location Menu===== */}

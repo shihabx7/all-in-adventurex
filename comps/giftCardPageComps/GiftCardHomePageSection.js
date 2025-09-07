@@ -27,18 +27,29 @@ const GiftCardHomePageSection = (props) => {
     <>
       <div className="buy-gift bg-[#000000] gift-pattern py-16 md:py-24 lg:py-28  relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 lg:px-6 z-30">
-
           <div className="gift-row gift-row-shadow xm:max-w-[490px] md:max-w-[700px] mx-auto lg:max-w-none flex flex-col lg:flex-row justify-between lg:space-x-7 xl:space-x-12 2xl:space-x-10 items-center pt-6 pb-8 px-4 lm:px-5 zm:p-8 md:p-12 lg:p-10 xl:p-12 2xl:p-14 bg-[#151515] rounded-[14px]">
             <div className="gift-info order-2 lg:order-1 lg:w-1/2">
               <div className="text-content pt-4 md:pt-8 lg:pt-0">
-                <h2 className="text-[#e0bf62] text-2xl rm:text-[28px] max-w-[230px] rm:max-w-[280px] md:max-w-[460px] md:text-[40px] lg:text-[42px] xl:text-[44px] 2xl:text-[48px]  leading-[1.2] text-[#CA9342] font-os font-bold mb-3 zm:mb-4 2xl:max-w-[400px]">ALL IN ADVENTURES GIFT CARDS</h2>
-                <p className="text-[#d9d9d9] text-sm rm:text-base 2xl:text-lg mb-3 xl:mb-4">Looking for the perfect gift? Surprise your loved ones with an All In Adventures Gift Card—a ticket to thrilling escape room experiences! Whether it's for a birthday, holiday, or just because, this gift delivers excitement, teamwork, and unforgettable memories.
+                <h2 className="text-[#e0bf62] text-2xl rm:text-[28px] max-w-[230px] rm:max-w-[280px] md:max-w-[460px] md:text-[40px] lg:text-[42px] xl:text-[44px] 2xl:text-[48px]  leading-[1.2] text-[#CA9342] font-os font-bold mb-3 zm:mb-4 2xl:max-w-[400px]">
+                  ALL IN ADVENTURES GIFT CARDS
+                </h2>
+                <p className="text-[#d9d9d9] text-sm rm:text-base 2xl:text-lg mb-3 xl:mb-4">
+                  Looking for the perfect gift? Surprise your loved ones with an
+                  All In Adventures Gift Card—a ticket to thrilling escape room
+                  experiences! Whether it's for a birthday, holiday, or just
+                  because, this gift delivers excitement, teamwork, and
+                  unforgettable memories.
                 </p>
-                <p className="text-[#d9d9d9] text-sm rm:text-base 2xl:text-lg mb-3 xl:mb-4"> No expiration date, no stress—just pure adventure! Instantly delivered via email, it's the ultimate last-minute gift that guarantees fun for all ages (6+).</p>
+                <p className="text-[#d9d9d9] text-sm rm:text-base 2xl:text-lg mb-3 xl:mb-4">
+                  {" "}
+                  No expiration date, no stress—just pure adventure! Instantly
+                  delivered via email, it's the ultimate last-minute gift that
+                  guarantees fun for all ages (6+).
+                </p>
 
-                <p className="text-[#d9d9d9] text-sm rm:text-base 2xl:text-lg mb-3 xl:mb-4">Give more than just a present—give a lifetime of memories!</p>
-
-
+                <p className="text-[#d9d9d9] text-sm rm:text-base 2xl:text-lg mb-3 xl:mb-4">
+                  Give more than just a present—give a lifetime of memories!
+                </p>
               </div>
               <div className="gift-btn-box mt-7 zm:mt-8 xl:mt-10 flex flex-col zm:flex-row space-y-4 zm:space-y-0 zm:space-x-2 md:space-x-0 lg:space-x-3 xl:space-x-4">
                 {props.locationSlug ? (
@@ -88,10 +99,14 @@ const GiftCardHomePageSection = (props) => {
               </div>
             </div>
             <div className="gift-poster order-1 lg:order-2 lg:w-1/2">
-              <div> <img className="max-w-[99%] md:max-w-[500px]  mx-auto lg:max-w-full " src="/assets/gift-images/hero/All-In-Adventures-Gift-Card-hero.png"></img> </div>
-
+              <div>
+                {" "}
+                <img
+                  className="max-w-[99%] md:max-w-[500px]  mx-auto lg:max-w-full "
+                  src="/assets/gift-images/hero/All-In-Adventures-Gift-Card-hero.png"
+                ></img>{" "}
+              </div>
             </div>
-
           </div>
         </div>
       </div>

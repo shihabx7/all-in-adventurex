@@ -26,6 +26,7 @@ import LocationFooter from "../../comps/locationsPage/LocationFooter";
 import MobileEscapeGameHomeSection from "../../comps/mobileEscapeGames/MobileEscapeGameHomeSection";
 import { useState } from "react";
 import UnlimitedEscapeGameMenu from "../../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
+import UnlockYourBundleSection from "../../comps/bundle/UnlockYourBundleSection";
 
 const Locations = (props) => {
   /* customizing breadcum */
@@ -96,6 +97,7 @@ const Locations = (props) => {
           setShowUerBookingList={setShowUerBookingList}
           locationSlug={props.locationSlug}
         />*/}
+      <UnlockYourBundleSection locationSlug={props.locationSlug} />
       <EventSlider
         eventList={props.eventList}
         locationSlug={props.locationSlug}

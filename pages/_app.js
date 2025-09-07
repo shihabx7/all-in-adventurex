@@ -1,17 +1,15 @@
 import "../styles/globals.css";
 import "../styles/aia-v2.css";
 import "../styles/aia-res.css";
-import Layout from "../comps/Layout";
+
 import Head from "next/head";
+import { LocModalProvider } from "../contexts/LocModalContext";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
+    <LocModalProvider>
       <Component {...pageProps} />
-    </>
+    </LocModalProvider>
   );
 }
 

@@ -13,6 +13,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.20.7",
     "@types/gapi": "^0.0.45",
     "cookies-next": "^2.1.1",
     "cors": "^2.8.5",

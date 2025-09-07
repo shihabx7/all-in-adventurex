@@ -116,8 +116,9 @@ export const locationHomePageData = async (slug) => {
         sectionData: pageResData.carouselSectionData,
         bookingInfo: pageResData.bookingInfo,
       }),
-    eventCarouselSectionData:
-      homePageDataFormater.eventCarouselSectionDataFormat(),
+    eventCardListSectionData:
+      homePageDataFormater.eventCardlistSectionDataFormat(),
+
     testimonialVideoCarouselSectionData:
       homePageDataFormater.testimonialVideoCarouselSectionDataFormat(),
 

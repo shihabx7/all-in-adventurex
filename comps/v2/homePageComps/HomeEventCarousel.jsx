@@ -84,41 +84,9 @@ const HomeEventCarousel = ({ eventCarouselList }) => {
               key={index}
               className=" bg-[#F6E8CB] rounded-[16px] h-full group  bg-cover relative p-1 zm:p-2 xl:p-3"
             >
-              <div className="hec-item-row flex flex-col lg:flex-row spcae-y-3 zm:spcae-y-4 md:space-y-0 md:space-x-3 items-center">
-                {/*====================================================================carousel-text */}
-                <div className="hec-item-col grow order-2 lg:order-1 px-3 pt-3 pb-5 zm:p-4 md:p-8 lg:py-5 lg:px-4 xl:p-10 mt-4 lg:mt-0">
-                  <div className="hec-head">
-                    <p className="text-[#374151] text-[1.1rem] font-medium lg:text-[1.2rem] uppercase">
-                      {item.eventType ? item.eventType : "ESCAPE ROOM"}
-                    </p>
-                    <h4 className="text-[#CA9342] egl-game-title leading-[1.1] font-bold text-[1.3rem] rm:text-[1.56rem] zm:text-[1.65rem] lg:text-[1.8rem] xl:text-[2rem]  uppercase">
-                      {item.carouselTitle ? item.carouselTitle : item.eventName}
-                    </h4>
-                  </div>
-                  <div
-                    className="hec-text text-[15px] zm:text-base xl:text-lg text-[#374151] mt-3 zm:mt-3 md:mt-3 lg:mt-3 xl:mt-4 2xl:mt-5"
-                    dangerouslySetInnerHTML={{ __html: item.carouselText }}
-                  ></div>
-                  {/*=========================================event book button===*/}
-                  <div className="hec-btn-pair mt-5 md:mt-5  xl:mt-8 ">
-                    <div className="flex items-center space-x-2 md:space-x-3 lg:space-x-4 ">
-                      <button
-                        onClick={(e) => showLocation(e)}
-                        className="border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700 text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-medium transition duration-400 ease-in-out"
-                      >
-                        BOOK NOW
-                      </button>
-                      <a
-                        href={`/events/${item.slug}`}
-                        className="border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700 text-sm md:text-base xl:text-lg text-[#374151] hover:text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-medium transition duration-400 ease-in-out"
-                      >
-                        EXPLORE
-                      </a>
-                    </div>
-                  </div>
-                </div>
+              <div className="hec-item-row flex flex-col lg:flex-row spcae-y-0 zm:spcae-y-4 md:space-y-0 md:space-x-0 items-center">
                 {/*====================================================================carousel-image */}
-                <div className="hec-item-col max-w-[400px] lg:max-w-none lg:min-w-[460px] xl:min-w-[516px] order-1 lg:order-2">
+                <div className="hec-item-col w-full lg:w-1/2">
                   <img
                     className="max-w-full"
                     alt={
@@ -132,6 +100,38 @@ const HomeEventCarousel = ({ eventCarouselList }) => {
                         : "/assets/escape-game-events/carousel/escape-room-birthday-party-event.png"
                     }
                   ></img>
+                </div>
+                {/*====================================================================carousel-text */}
+                <div className="hec-item-col  w-full lg:w-1/2 lg:order-1 px-3 pt-3 pb-5 zm:p-4 md:p-8 lg:py-5 lg:px-4 xl:p-10 mt-4 lg:mt-0 bg-[#1C1402]">
+                  <div className="hec-head">
+                    <p className="text-red-600 text-[1.1rem] font-medium lg:text-[1.2rem] uppercase">
+                      {item.eventType ? item.eventType : "ESCAPE ROOM"}
+                    </p>
+                    <h4 className="text-[#E0BF62] egl-game-title leading-[1.1] font-bold text-[1.3rem] rm:text-[1.56rem] zm:text-[1.65rem] lg:text-[1.8rem] xl:text-[2rem]  uppercase">
+                      {item.carouselTitle ? item.carouselTitle : item.eventName}
+                    </h4>
+                  </div>
+                  <div
+                    className="hec-text text-[15px] zm:text-base xl:text-lg text-[#ADADAD] mt-3 zm:mt-3 md:mt-2 lg:mt-3 xl:mt-3 2xl:mt-4"
+                    dangerouslySetInnerHTML={{ __html: item.carouselText }}
+                  ></div>
+                  {/*=========================================event book button===*/}
+                  <div className="hec-btn-pair mt-5 md:mt-5  xl:mt-6 ">
+                    <div className="flex items-center space-x-2 md:space-x-3 lg:space-x-4 ">
+                      <button
+                        onClick={(e) => showLocation(e)}
+                        className="border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700 text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-medium transition duration-400 ease-in-out"
+                      >
+                        BOOK NOW
+                      </button>
+                      <a
+                        href={`/events/${item.slug}`}
+                        className="border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700 text-sm md:text-base xl:text-lg text-[#fafafa] hover:text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-medium transition duration-400 ease-in-out"
+                      >
+                        EXPLORE
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
