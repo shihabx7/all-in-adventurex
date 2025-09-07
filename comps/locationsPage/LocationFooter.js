@@ -64,13 +64,12 @@ const LocationFooter = (props) => {
               {isPgLoad && (
                 <>
                   <FooterEmbedMap />
-                  <AllLocationMap />
                 </>
               )}
             </div>
             <div className="footer-map-n"></div>
           </div>
-          {/*========================================= map added================ */}
+          {/*========================================= map added  <AllLocationMap />================ */}
           {/*===================footer ?Location Menu===== */}
           <div className="footer-loc-menu-row">
             <FooterLocMenu locationSlugList={props.locationSlugList} />
