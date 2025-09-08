@@ -1,8 +1,9 @@
+import { useState } from "react";
+import { getDealsCouponPageData } from "./api/getDealsCouponPageData";
+
 import RootNav from "../comps/RootNav";
 import RootFooter from "../comps/RootFooter";
-import Breadcrumbs from "nextjs-breadcrumbs";
-import { FiChevronRight } from "react-icons/fi";
-import { getDealsCouponPageData } from "./api/getDealsCouponPageData";
+
 // page template=============
 
 import DealsAndCouponHero from "../comps/dealsPageComps/DealsAndCouponHero";
@@ -12,10 +13,9 @@ import AllCouponOpt from "../comps/dealsPageComps/AllCouponOpt";
 import PageBread from "../comps/util/PageBread";
 import SinglePageSeo from "../comps/util/SinglePageSeo";
 import UnlimitedEscapeGameMenu from "../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
-import { useState } from "react";
 
+import UnlimitedPlayPassFullSection from "../comps/unlimitedEscapeRoom/UnlimitedPlayPassFullSection";
 import UnlockYourBundleSection from "../comps/bundle/UnlockYourBundleSection";
-import UnlimitedEscapeRoomSection from "../comps/unlimitedEscapeRoom/UnlimitedEscapeRoomSection";
 
 const DealsCoupon = (props) => {
   const [showUerBookingList, setShowUerBookingList] = useState(false);
@@ -54,11 +54,15 @@ const DealsCoupon = (props) => {
           pageData={props.pageData}
           totalLocations={props.totalLocations}
         />
+        <UnlimitedPlayPassFullSection
+          setShowUerBookingList={setShowUerBookingList}
+        />
+        <UnlockYourBundleSection />
         <AllCouponOpt
           couponlist={props.couponlist}
           setShowUerBookingList={setShowUerBookingList}
         />
-        <UnlockYourBundleSection />
+
         <DealsFaqs faqlist={props.faqlist} />
 
         {/* =========================================================================================main content ======== end */}
