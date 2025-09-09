@@ -8,6 +8,9 @@ import { LocModalProvider } from "../contexts/LocModalContext";
 function MyApp({ Component, pageProps }) {
   return (
     <LocModalProvider>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <Component {...pageProps} />
     </LocModalProvider>
   );

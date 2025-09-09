@@ -73,16 +73,9 @@ const BundleBookingMenu = ({ locationSlugList }) => {
                               e.preventDefault();
                               bookBundle(item.locationSlug);
                             }}
-                            className="loc-link block"
+                            className="loc-link block golden-text md:text-lg"
                           >
-                            <div className="flex space-x-1 items-center md:text-lg">
-                              <span className="golden-text">
-                                {item.locationName}
-                              </span>
-                              <span className="text-gold">
-                                <FaAngleRight />
-                              </span>
-                            </div>
+                            {item.locationName}
                           </button>
                         </div>
                       );
