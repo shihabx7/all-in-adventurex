@@ -78,7 +78,7 @@ export const rootHomePageData = async () => {
       totalActivities
     ),
     // ==========================================v2 page data
-    pageHeroData: homePageDataFormater.pageHeroDataFormat({
+    pageHeroData: homePageDataFormater.pageHeroData({
       info: pageResData.pageInfo,
       pageHeroData: {
         pageTitle: pageResData.pageTitle,
@@ -87,25 +87,23 @@ export const rootHomePageData = async () => {
       totalLocation: totalLocations,
       totalActivities: totalActivities,
     }),
-    aboutSectionData: homePageDataFormater.aboutSectionDataFormat(),
-    escapeGameListSectionData:
-      homePageDataFormater.escapeGameListSectionDataFormat({
-        fetchGameList: actctivityListResData,
-        sectionData: pageResData.carouselSectionData,
-      }),
-    otherGameListSectionData:
-      homePageDataFormater.otherGameListSectionDataFormat({
-        fetchGameList: actctivityListResData,
-        sectionData: pageResData.carouselSectionData,
-      }),
-    eventCardListSectionData:
-      homePageDataFormater.eventCardlistSectionDataFormat(),
+    aboutSectionData: homePageDataFormater.aboutSectionData(),
+    escapeGameListSectionData: homePageDataFormater.escapeGameListSectionData({
+      fetchGameList: actctivityListResData,
+      sectionData: pageResData.carouselSectionData,
+    }),
+    otherGameListSectionData: homePageDataFormater.otherGameListSectionData({
+      fetchGameList: actctivityListResData,
+      sectionData: pageResData.carouselSectionData,
+    }),
+    eventCardListSectionData: homePageDataFormater.eventCardlistSectionData(),
 
     testimonialVideoSectionData:
       homePageDataFormater.testimonialVideoSectionData(),
 
     testimonialCarouselSectionData:
       homePageDataFormater.testimonialCarouselSectionData(),
+    faqSectionData: homePageDataFormater.faqSectionData(),
     // ==========================================v2 page data end
     /*  escapeGameList: getEscapeGameList(
       actctivityListResData,

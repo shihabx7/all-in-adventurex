@@ -2,7 +2,7 @@ import TestimonialCarousel from "../TestimonialCarousel";
 
 export default function TestimonialCarouselSection({ sectionData }) {
   return (
-    <div className="all-testimonial-section ">
+    <div className="testimonial-home-carousel-section ">
       {/*======================= boder img============== */}
 
       {/*======================= boder img end============== */}

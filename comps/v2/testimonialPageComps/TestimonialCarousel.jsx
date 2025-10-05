@@ -3,26 +3,38 @@ import "react-multi-carousel/lib/styles.css";
 
 const TestimonialCarousel = ({ testimonialList }) => {
   const responsive = {
+    desktopxxl: {
+      breakpoint: { max: 5000, min: 2700 },
+      items: 1,
+      slidesToSlide: 1,
+      partialVisibilityGutter: 200,
+    },
     desktopxl: {
-      breakpoint: { max: 4300, min: 2081 },
+      breakpoint: { max: 2699, min: 2000 },
       items: 1,
       slidesToSlide: 1,
       partialVisibilityGutter: 170,
     },
-    desktoplg: {
-      breakpoint: { max: 2080, min: 1640 },
+    desktopfhd: {
+      breakpoint: { max: 1999, min: 1570 },
       items: 1,
       slidesToSlide: 1,
       partialVisibilityGutter: 157,
     },
+    desktophd: {
+      breakpoint: { max: 1569, min: 1380 },
+      items: 1,
+      slidesToSlide: 1,
+      partialVisibilityGutter: 100,
+    },
     desktopmd: {
-      breakpoint: { max: 1640, min: 1200 },
+      breakpoint: { max: 1379, min: 1140 },
       items: 1,
       slidesToSlide: 1,
       partialVisibilityGutter: 130,
     },
     desktop: {
-      breakpoint: { max: 1199, min: 1024 },
+      breakpoint: { max: 1139, min: 1024 },
       items: 1,
       slidesToSlide: 1,
       partialVisibilityGutter: 120,
@@ -62,7 +74,7 @@ const TestimonialCarousel = ({ testimonialList }) => {
         //removeArrowOnDeviceType={["tablet", "mobile"]}
         //deviceType={this.props.deviceType}
         dotListClass="custom-dot-list-style aia-new-dot-list"
-        itemClass="aia-new-carousel-item test-car-list-v2 md:max-w-[640px] lg:max-w-[860px] xl:max-w-[1100px] 2xl:max-w-[1240px] rounded-[16px] px-2 sm:px-1 md:px-[16px] lg:px-[20px] xl:px-[36px] "
+        itemClass="aia-new-carousel-item test-car-list-v2 md:max-w-[640px] lg:max-w-[860px] xl:max-w-[1100px] 2xl:max-w-[1230px] rounded-[16px] px-2 sm:px-1 md:px-[16px] lg:px-[20px] xl:px-[36px] "
         renderArrowsOutside={true}
         renderDotsOutside={false}
         partialVisible={true}
