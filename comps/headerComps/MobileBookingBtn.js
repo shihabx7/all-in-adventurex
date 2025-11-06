@@ -1,4 +1,5 @@
 import { eventFormBookingLinks } from "../../lib/tempData/eventFormBookingLinks";
+import { mobileEscapeRoomBookingData } from "../../lib/tempData/mobileEscapeRoomBookingData";
 const bookAll = (bookingData) => {
   FH.open({
     shortname: bookingData.shortName,
@@ -24,6 +25,15 @@ const partyFormBooking = (bookingData) => {
     fullItems: "yes",
     flow: "no",
     view: { item: bookingData.itemNo },
+  });
+};
+const mobileMysteryBooking = (bookingData) => {
+  FH.open({
+    shortname: bookingData.shortName,
+    fallback: "simple",
+    fullItems: "yes",
+    flow: "no",
+    view: { item: bookingData.itemNo2 },
   });
 };
 const MobileBookingBtn = (props) => {
@@ -154,12 +164,20 @@ const MobileBookingBtn = (props) => {
           </div>
         </>
       ) : (
-        <div className="w-full">
+        <div className="w-full flex space-x-2 md:space-x-3  xl:space-x-5 justify-center items-center">
           <button
             onClick={() => {
-              partyFormBooking(eventFormBookingLinks[props.locationSlug]);
+              mobileMysteryBooking(mobileEscapeRoomBookingData[props.locationSlug]);
             }}
             className="bg-red-600 block w-full font-medium hover:bg-red-700 py-1 md:py-2  block text-center text-white text-lg"
+          >
+          BOOK NOW
+          </button>
+           <button
+            onClick={() => {
+              partyFormBooking(mobileEscapeRoomBookingData[props.locationSlug]);
+            }}
+            className="bg-red-600 lg:bg-transparent  block w-full font-medium hover:bg-red-700 py-1 md:py-2  block text-center text-white text-lg"
           >
             GET A QUOTE
           </button>

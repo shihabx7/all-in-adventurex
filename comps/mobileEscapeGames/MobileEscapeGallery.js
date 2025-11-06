@@ -3,7 +3,7 @@ import { FaRegPlayCircle } from "react-icons/fa";
 import SectionTitleCenterDark from "../common/SectionTitleCenterDark";
 import PlayMobileGalleryVideo from "./PlayMobileGalleryVideo";
 import MobileGalleryThubCarousel from "./MobileGalleryThubCarousel";
-import PartnerOrg from "./PartnerOrg";
+
 
 export default function MobileEscapeGallery({ sectionData }) {
   const [fullImage, setFullImage] = useState(sectionData.galleryImages[0]);
@@ -63,9 +63,7 @@ export default function MobileEscapeGallery({ sectionData }) {
               </div>
             </div>
           </div>
-          <div className="mbl-row 2xl:max-w-[1240px] mx-auto  mbl-partners mt-12 md:mt-10 lg:mt-16">
-            <PartnerOrg />
-          </div>
+        
         </div>
       </div>
     </div>

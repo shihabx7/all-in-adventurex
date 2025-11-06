@@ -150,7 +150,7 @@ const MobileEscapeGameCarousel = ({ escapeGameList, locationName }) => {
                         ></img>
                       </span>
                       <span className="text-[12px] md:text-sm">
-                        Mobile Escape Room
+                        Mobile Mystery
                       </span>
                     </p>
                   </div>

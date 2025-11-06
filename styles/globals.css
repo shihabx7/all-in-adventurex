@@ -1287,7 +1287,11 @@ a {
 
 /*======mobile escape room dsign*/
 .mer-testi-shadow {
-  box-shadow: 8px 8px #ceb67e;
+  box-shadow: 8px 8px #CEB67E;
+}
+.mer-testi-shadow:hover {
+  box-shadow: 8px 8px #7F5D0F;
+  transition: .3s ease-in-out;
 }
 
 .mer-car-dot {
@@ -1561,10 +1565,9 @@ a {
 }
 /*=====================escape game badge------------------*/
 .mobile-escape-stiker-text {
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 
-  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
-    0 0 2px #000;
+  text-shadow: 1px 1px 0 #DC2626;
 }
 /*======================vertical slider===========================*/
 .vertical-slider {

@@ -5,7 +5,7 @@ export default function SectionBgVideo({ videoData }) {
     videoRef.current.play();
   }, []);
   return (
-    <div className="section-full-screen-bg-video max-w-screen h-[82vh] rm:h-[72vh] md:h-[60vh] xl:h-[86vh] bg-black">
+    <div className="section-full-screen-bg-video max-w-screen h-[84vh] rm:h-[75vh] md:h-[64vh] xl:h-[86vh] bg-black">
       <video
         ref={videoRef}
         id={"hero-bg-video"}

@@ -3,14 +3,12 @@ export default function PartnerOrg() {
   return (
     <div>
       <div className="section-head">
-        <div className="md:max-w-[600px] lg:max-w-[900px] xl:max-w-[1090px]">
-          <MobileTitleSeparatorLeft
-            title={"ORGANIZATIONS THAT CHOSE TO ESCAPE THE ORDINARY"}
-          />
+        <div className="md:max-w-[600px] lg:max-w-[900px] xl:max-w-[1090px] mx-auto" >
+          <h2 className="dark-gold py-[2px] md:py-1 2xl:py-2 text-2xl md:text-[40px] lg:text-[44px] 2xl:text-[48px] font-os font-bold uppercase text-center">ORGANIZATIONS THAT CHOSE TO ESCAPE THE ORDINARY</h2>
         </div>
 
         {/* ==================text=====================*/}
-        <div className="text-[#2e2e2e] md:text-lg  mbl-h-list mt-1 md:mt-2 mbl-group-text md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1080px]">
+        <div className="text-[#2e2e2e] md:text-lg  mbl-h-list mt-1 md:mt-2 mbl-group-text md:max-w-[720px] lg:max-w-[900px] xl:max-w-[1080px] mx-auto text-center">
           We've brought teams, students, and staff together with engaging,
           on-site fun—right at their location. These groups turned ordinary
           events into unforgettable adventures with our mobile escape rooms!

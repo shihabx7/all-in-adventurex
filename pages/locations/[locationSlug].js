@@ -24,6 +24,7 @@ import TestimonialLocSlider from "../../comps/homepagecomps/TestimonialLocSlider
 import LocationDetails from "../../comps/locationsPage/LocationDetails";
 import LocationFooter from "../../comps/locationsPage/LocationFooter";
 import MobileEscapeGameHomeSection from "../../comps/mobileEscapeGames/MobileEscapeGameHomeSection";
+import MobileMysteryOtherPageSection from "../../comps/mobileEscapeGames/section/MobileMysteryOtherPageSection";
 import { useState } from "react";
 import UnlimitedEscapeGameMenu from "../../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
 import UnlockYourBundleSection from "../../comps/bundle/UnlockYourBundleSection";
@@ -111,7 +112,7 @@ const Locations = (props) => {
         />
       )}
       {props.hasMobileEscapeRoom ? (
-        <MobileEscapeGameHomeSection
+        <MobileMysteryOtherPageSection
           locationSlug={props.locationSlug}
           mobileEscapeRoomData={props.mobileEscapeRoomData}
         />

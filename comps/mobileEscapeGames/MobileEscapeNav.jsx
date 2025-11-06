@@ -168,7 +168,7 @@ const MobileEscapeNav = (props) => {
         {/*============floating booking btn mobile ==========*/}
         <div
           id="uermbk"
-          className="header-book-btn-container  w-full    lg:hidden z-50 bg-red-600"
+          className="header-book-btn-container  w-full    lg:hidden z-50 "
         >
           <MobileEscapeNavBtn
             locationSlug={props.locationSlug ? props.locationSlug : false}

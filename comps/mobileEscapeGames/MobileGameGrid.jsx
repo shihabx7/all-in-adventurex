@@ -28,8 +28,8 @@ export default function MobileGameGrid() {
                 </div>
               </div>
               <div className="mbl-g-content-box w-full h-full absolute top-0 left-0">
-                <div className="h-full flex flex-col justify-between">
-                  <div className="mbl-card-g-top p-2 xl:p-3 xl:pt-2 max-w-[150px] rm:max-w-[162px] md:max-w-[180px] xl:max-w-[190px]">
+                <div className="h-full w-full flex flex-col justify-between">
+                  <div className="mbl-card-g-top p-2 xl:p-3 xl:pt-2 max-w-[140px] rm:max-w-[152px] md:max-w-[160px] xl:max-w-[168px]">
                     <div className="flex items-center space-x-1 md:space-x-2 text-gray-50 bg-[#251A03E5] p-2 rounded">
                       <span>
                         <img
@@ -37,12 +37,12 @@ export default function MobileGameGrid() {
                           src="/assets/svg/inperson.svg"
                         ></img>
                       </span>
-                      <span className="text-[.62rem] rm:text-[.7rem] md:text-[.8rem] lg:text-[.7rem]  xl:text-[.81rem]">
-                        Mobile Escape Room
+                      <span className="text-[.77rem] rm:text-[.84rem] md:text-[.88rem] lg:text-[.84rem]  xl:text-[.9rem]">
+                       Mobile Mystery
                       </span>
                     </div>
                   </div>
-                  <div className="mbl-card-g-bottom px-4 pb-4 pt-8 card-bottom rounded-b-lg">
+                  <div className="mbl-card-g-bottom px-4 pb-6 pt-8 card-bottom rounded-b-lg">
                     <div className="mbl-carg-info">
                       <div className=" flex space-x-3 text-gray-50 items-center">
                         <div className="flex space-x-1 items-center">
@@ -80,7 +80,7 @@ export default function MobileGameGrid() {
                       </h3>
                     </div>
                     <div
-                      className="text-gray-200 text-[.9rem]"
+                      className="text-gray-300 text-[.94rem] lg:text-[.87rem] xl:text-[.96rem]"
                       dangerouslySetInnerHTML={{
                         __html: item.shortDescription,
                       }}

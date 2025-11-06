@@ -5,7 +5,7 @@ import Script from "next/script";
 // page template=============
 
 import MobileEscapeNav from "../comps/mobileEscapeGames/MobileEscapeNav";
-import RootNav from "../comps/RootNav";
+
 import MobileEscapeRootMenu from "../comps/mobileEscapeGames/MobileEscapeRootMenu";
 import RootFooter from "../comps/RootFooter";
 import PageBread from "../comps/util/PageBread";

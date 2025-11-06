@@ -81,7 +81,7 @@ const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
           return (
             <div
               key={item.id}
-              className="text-white bg-[#FFF9EB] rounded-[24px] h-full bg-cover mer-testi-shadow relative overflow-hidden "
+              className="text-white bg-[#090909] rounded-[24px] h-full bg-cover mer-testi-shadow relative overflow-hidden "
             >
               {/**=========== testimonial ornaments end */}
               {/**=========== rocket-bottom-left */}
@@ -92,7 +92,7 @@ const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
 
               {/**=========== testimonial ornaments end */}
               <div className="mer-testi-card-container  rounded-[24px] p-2 md:p-3 h-full">
-                <div className="merc-row h-full flex flex-col justify-between rounded-[18px] p-2 md:p-3 border-[2px] border-dashed border-[#ceb67e]  ">
+                <div className="merc-row h-full flex flex-col justify-between rounded-[18px] p-2 md:p-3 border-[1px] border-dashed border-[#CEB67E] hover:border-[#7F5D0F] ">
                   {/*===========---------image--------============= */}
                   <div className="merc-img merc-col">
                     <img
@@ -114,11 +114,11 @@ const MobileEscapeGameTestimonialCar = ({ testimonialList }) => {
                   <div className="merc-testi merc-col  grow ">
                     <div className="mrec-testi-des  h-full flex flex-col justify-between">
                       <div className="merct-top py-5">
-                        <h3 className="font-bold text-[18px] rm:text-[20px] md:text-[22px] xl:text-[23px] leading-[1.3] text-[#CA9342] text-center">
+                        <h3 className="font-bold text-[18px] rm:text-[20px] md:text-[22px] xl:text-[23px] leading-[1.3] text-[#E0BF62] text-center">
                           {item.title}
                         </h3>
                         <div
-                          className="text-[#4A2F03] text-sm mt-2 2xl:mt-2 3xl:mt-3 xl:text-sm 2xl:text-base text-center"
+                          className="text-[#c3c3c3] text-sm mt-2 2xl:mt-2 3xl:mt-3 xl:text-sm 2xl:text-base text-center"
                           dangerouslySetInnerHTML={{ __html: item.text }}
                         ></div>
                       </div>

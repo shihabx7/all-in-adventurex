@@ -19,7 +19,7 @@ import TestimonialSlider from "../comps/homepagecomps/TestimonialSlider";
 import UnlimitedEscapeRoomHome from "../comps/unlimitedEscapeRoom/UnlimitedEscapeRoomHome";
 import UnlimitedEscapeGameMenu from "../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
 import GiftCardBookingMenu from "../comps/giftCardPageComps/GiftCardBookingMenu";
-import MobileEscapeGameRootHomeSection from "../comps/mobileEscapeGames/MobileEscapeGameRootHomeSection";
+import MobileMysteryOtherPageSection from "../comps/mobileEscapeGames/section/MobileMysteryOtherPageSection";
 import MobileEscapeRootMenu from "../comps/mobileEscapeGames/MobileEscapeRootMenu";
 import UnlockYourBundleSection from "../comps/bundle/UnlockYourBundleSection";
 export default function Home(props) {
@@ -76,10 +76,10 @@ export default function Home(props) {
           />*/}
         <UnlockYourBundleSection />
         <EventSlider eventList={props.eventList} />
-        <MobileEscapeGameRootHomeSection
+        <MobileMysteryOtherPageSection
           setShowMobileEecapeMenu={setShowMobileEecapeMenu}
           setGoMobileEecapeForm={setGoMobileEecapeForm}
-          goMobileEecapeForm={goMobileEecapeForm}
+          
         />
         <GiftCardHomePageSection
           setShowGiftBookingList={setShowGiftBookingList}

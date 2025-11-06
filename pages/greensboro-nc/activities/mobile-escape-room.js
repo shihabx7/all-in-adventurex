@@ -23,6 +23,7 @@ const SingleMobileEscapeRoom = (props) => {
           setShowMobileEecapeMenu={setShowMobileEecapeMenu}
           setGoMobileEecapeForm={setGoMobileEecapeForm}
           goMobileEecapeForm={goMobileEecapeForm}
+          isSubStore={true}
         />
       )}
       {/* =======header content <SinglePageSeo meta={props.pageMeta} />======== */}
@@ -37,6 +38,7 @@ const SingleMobileEscapeRoom = (props) => {
         goMobileEecapeForm={goMobileEecapeForm}
         locationSlug={"greensboro-nc"}
         locationName={"Greensboro, NC"}
+        isSubStore={true}
       />
       {/* =======header content ======== end */}
 
@@ -50,6 +52,7 @@ const SingleMobileEscapeRoom = (props) => {
           goMobileEecapeForm={goMobileEecapeForm}
           locationSlug={"greensboro-nc"}
           locationName={"Greensboro, NC"}
+          isSubStore={true}
         />
       </div>
       {/* =========================================================================================main content ======== end */}
