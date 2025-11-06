@@ -1,13 +1,4 @@
 
-
-import MobileEscapeGameCarouselSection from "./MobileEscapeGameCarouselSection";
-import MobileEscapeTestimonialSlider from "./MobileEscapeTestimonialSlider";
-import MobileEscapeFaqSection from "./MobileEscapeFaqSection";
-
-
-import MobileEscapeExperience from "./MobileEscapeExperience";
-import MobileEscapeGallery from "./MobileEscapeGallery";
-import PerfectForGroupSection from "./PerfectForGroupSection";
 import { newUpdateData } from "../../lib/tempData/mobileEscapeTempData";
 import OtherPageGameCarouselSection from "../homepagecomps/OtherPageGameCarouselSection";
 import { perfectSectionData } from "../../lib/tempData/mobileEscapeTempData";

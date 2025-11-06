@@ -83,7 +83,7 @@ export default function PerfectForGroupSectionMm({
       </div>
       <div className="iconlist-box">
         <div className="mbl-per-opt   3xl:max-w-[1568px] mx-auto px-3 rm:px-4 lg:px-3 xl:px-4 relative rounded-lg">
-          <div className="flex flex-col zm:flex-row space-y-4 zm:space-y-3 zm:space-x-0 md:space-y-3 md:space-x-2 xl:space-y-0 xl:space-x-1  2xl:space-x-2 3xl:space-x-3 zm:justify-between md:justify-center zm:items-center flex-wrap xl:flex-nowrap">
+          <div className="flex flex-col zm:flex-row space-y-4 zm:space-y-3 zm:space-x-0 md:space-y-3 md:space-x-2 xl:space-y-0 xl:space-x-1  2xl:space-x-2 zm:justify-between md:justify-center zm:items-center flex-wrap xl:flex-nowrap">
             {sectionData.dataList.map((item, index) => {
               return (
                 <div
@@ -98,7 +98,7 @@ export default function PerfectForGroupSectionMm({
                         alt={item.icon.alt}
                       ></img>
                     </div>
-                    <p className="text-[1rem]  md:text-[.9rem] 2xl:text-[1rem] 3xl:text-[1.1rem] text-[#ffffff] font-regular">
+                    <p className="text-[1rem]  md:text-[.9rem] 2xl:text-[1rem] 3xl:text-[1.07rem] text-[#ffffff] font-regular">
                       {item.title}
                     </p>
                   </div>
