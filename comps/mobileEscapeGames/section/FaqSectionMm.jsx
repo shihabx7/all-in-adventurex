@@ -13,15 +13,16 @@ export default function FaqSectionMm({faqSectionData,locationName}) {
       <div className="max-w-7xl mx-auto relative z-30">
         <div className="section-title mb-6 rm:mb-8 md:mb-10 lg:mb-12  md:max-w-[720px] lg:max-w-[860px] mx-auto">
           <h2 className="dark-gold pb-2 pt-0 md:py-2 text-2xl md:text-[40px] lg:text-[44px] 2xl:text-[48px] font-os font-bold uppercase text-center">FREQUENTLY ASKED QUESTIONS</h2>
-          {faqSectionData.sectionSubTitle !== null ? (
+          {locationName? (
             <div
-              className="text-[#2E2E2E] mt-1 md:mt-2 lg:mt-2  text-center md:text-lg lg:text-xl max-w-[640px] mx-auto"
-              dangerouslySetInnerHTML={{
-                __html: faqSectionData.sectionSubTitle,
-              }}
-            ></div>
+              className=" mt-1 md:mt-2 lg:mt-2   max-w-[640px] mx-auto"
+             
+            ><p className="text-center md:text-lg lg:text-xl text-[#2E2E2E]">Get answers to all the questions you have about our mobile mystery room experience in {locationName}</p></div>
           ) : (
-            <></>
+            <div
+              className=" mt-1 md:mt-2 lg:mt-2   max-w-[640px] mx-auto"
+             
+            ><p className="text-center md:text-lg lg:text-xl text-[#2E2E2E]">Get answers to all the questions you have about our mobile mystery room experience</p></div>
           )}
         </div>
         {/*======================= faqList={faqSectionData.faqList}============== */}
