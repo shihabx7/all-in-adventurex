@@ -13,9 +13,11 @@ const gameBooking = (bookingData) => {
   FH.open({
     shortname: bookingData.shortName,
     fallback: "simple",
-    fullItems: "yes",
+    fullItems: bookingData.eventOnly ? "no" : "yes",
     flow: "no",
-    view: { item: bookingData.itemNo2 },
+    view: {
+      item: bookingData.eventOnly ? bookingData.itemNo : bookingData.itemNo2,
+    },
   });
 };
 export default function BookingButtonPairBlack({ locationSlug }) {

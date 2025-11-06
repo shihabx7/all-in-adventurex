@@ -5,15 +5,22 @@ import { eventFormBookingLinks } from "../../lib/tempData/eventFormBookingLinks"
 import { mobileEscapeRoomBookingData } from "../../lib/tempData/mobileEscapeRoomBookingData";
 
 const mobileMystryBooking = (bookingData, isFormBooking) => {
-  console.log(isFormBooking);
   let itemVal = isFormBooking ? bookingData.itemNo : bookingData.itemNo2;
   let itemFullView = isFormBooking ? "no" : "yes";
+
+  let bookingItemNo = bookingData.itemNo;
+  let bookingFullView = "no";
+  if (!bookingData.eventOnly && !isFormBooking) {
+    bookingItemNo = bookingData.itemNo2;
+    bookingFullView = "yes";
+  }
+
   FH.open({
     shortname: bookingData.shortName,
     fallback: "simple",
-    fullItems: itemFullView,
+    fullItems: bookingFullView,
     flow: "no",
-    view: { item: itemVal },
+    view: { item: bookingItemNo },
   });
 };
 
