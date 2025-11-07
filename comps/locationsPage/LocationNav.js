@@ -84,7 +84,8 @@ const LocationNav = (props) => {
         <div id="header-container-s" className="header-container-s">
           {noticeData !== undefined &&
             noticeData !== null &&
-            noticeData.showNotice && (
+            noticeData.showNotice &&
+            props.activitySlug !== "mobile-escape-room" && (
               <>
                 <HeaderNotice
                   noticeData={noticeData}

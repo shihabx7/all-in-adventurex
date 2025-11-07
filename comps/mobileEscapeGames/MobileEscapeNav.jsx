@@ -69,13 +69,13 @@ const MobileEscapeNav = (props) => {
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">
         <div id="header-container-s" className="header-container-s">
-          {noticeData !== undefined &&
+          {/*noticeData !== undefined &&
             noticeData !== null &&
             noticeData.showNotice && (
               <>
                 <HeaderNotice noticeData={noticeData} />
               </>
-            )}
+            )*/}
           <div
             className="header-container-s max-w-7xl mx-auto relative md:px-4"
             ref={ref}
