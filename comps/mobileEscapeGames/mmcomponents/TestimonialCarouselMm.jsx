@@ -93,7 +93,7 @@ export default function TestimonialCarouselMm ({ testimonialList }) {
 
               {/**=========== testimonial ornaments end */}
               <div className="mer-testi-card-container  rounded-[24px] p-2 md:p-3 h-full">
-                <div className="merc-row h-full flex flex-col justify-between rounded-[18px] p-2 md:p-3 border-[2px] border-dashed border-[rgba(206,182,126,.72)] hover:border-[rgba(127,93,15,.76)] transition-all duration-300 ease-in-out">
+                <div className="merc-row h-full flex flex-col justify-between rounded-[18px] p-2 md:p-3 border-[2px] border-dashed border-[rgba(206,182,126,.72)] text-xs hover:border-[rgba(127,93,15,.76)] transition-all duration-300 ease-in-out">
                   {/*===========---------image--------============= */}
                   <div className="merc-img merc-col">
                     <img
@@ -115,7 +115,7 @@ export default function TestimonialCarouselMm ({ testimonialList }) {
                   <div className="merc-testi merc-col  grow ">
                     <div className="mrec-testi-des  h-full flex flex-col justify-between">
                       <div className="merct-top py-5">
-                        <h3 className="font-bold text-[18px] rm:text-[20px] md:text-[22px] xl:text-[23px] leading-[1.3] text-[#E0BF62] text-center">
+                        <h3 className="font-bold text-[18px] rm:text-[20px] md:text-[22px] xl:text-[23px] leading-[1.3] text-[#E0BF62] text-center txx">
                           {item.title}
                         </h3>
                         <div

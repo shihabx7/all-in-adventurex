@@ -1287,12 +1287,12 @@ a {
 
 /*======mobile escape room dsign*/
 .mer-testi-shadow {
-  box-shadow: 8px 8px #CEB67E;
-  transition: .4s ease-in-out;
+  box-shadow: 8px 8px #ceb67e;
+  transition: 0.4s ease-in-out;
 }
 .mer-testi-shadow:hover {
-  box-shadow: 8px 8px #7F5D0F;
-  transition: .4s ease-in-out;
+  box-shadow: 8px 8px #7f5d0f;
+  transition: 0.4s ease-in-out;
 }
 
 .mer-car-dot {
@@ -1358,8 +1358,8 @@ a {
 .mer-car .react-multiple-carousel__arrow:hover {
   border: 2px solid gold !important;
 }
-.mer-car .react-multiple-carousel__arrow::before{
-   color: #cacaca !important;
+.mer-car .react-multiple-carousel__arrow::before {
+  color: #cacaca !important;
 }
 .mer-car .react-multiple-carousel__arrow:hover::before {
   color: #ffffff !important;
@@ -1570,7 +1570,7 @@ a {
 .mobile-escape-stiker-text {
   letter-spacing: 1.5px;
 
-  text-shadow: 1px 1px 0 #DC2626;
+  text-shadow: 1px 1px 0 #dc2626;
 }
 /*======================vertical slider===========================*/
 .vertical-slider {
