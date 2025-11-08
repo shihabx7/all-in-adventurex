@@ -170,13 +170,13 @@ const DropDownMenu = (props) => {
                 }
                 className="flex items-center"
               >
-                <span className="sub-link-txt">Mobile Escape Rooms</span>
+                <span className="sub-link-txt">Table-top Mobile Mystery</span>
               </a>
             </div>
           ) : (
             <div className="submenu-item">
               <a href={"/mobile-escape-room"} className="flex items-center">
-                <span className="sub-link-txt">Mobile Escape Rooms</span>
+                <span className="sub-link-txt">Table-top Mobile Mystery</span>
               </a>
             </div>
           )}
