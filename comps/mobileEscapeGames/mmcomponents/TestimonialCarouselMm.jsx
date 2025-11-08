@@ -93,7 +93,7 @@ export default function TestimonialCarouselMm ({ testimonialList }) {
 
               {/**=========== testimonial ornaments end */}
               <div className="mer-testi-card-container  rounded-[24px] p-2 md:p-3 h-full">
-                <div className="merc-row h-full flex flex-col justify-between rounded-[18px] p-2 md:p-3 border-[1px] border-dashed border-[#CEB67E] hover:border-[#7F5D0F] ">
+                <div className="merc-row h-full flex flex-col justify-between rounded-[18px] p-2 md:p-3 border-[2px] border-dashed border-[rgba(206,182,126,.72)] hover:border-[rgba(127,93,15,.76)] transition-all duration-300 ease-in-out">
                   {/*===========---------image--------============= */}
                   <div className="merc-img merc-col">
                     <img

@@ -1288,10 +1288,11 @@ a {
 /*======mobile escape room dsign*/
 .mer-testi-shadow {
   box-shadow: 8px 8px #CEB67E;
+  transition: .4s ease-in-out;
 }
 .mer-testi-shadow:hover {
   box-shadow: 8px 8px #7F5D0F;
-  transition: .3s ease-in-out;
+  transition: .4s ease-in-out;
 }
 
 .mer-car-dot {
