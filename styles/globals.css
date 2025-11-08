@@ -1330,7 +1330,7 @@ a {
   box-shadow: none !important;
   border: 2px solid #4a4a4a !important;
   background: #000000;
-  color: #4a4a4a !important;
+  color: #cdcdcd !important;
   min-width: 44px !important;
   min-height: 44px !important;
 
@@ -1358,7 +1358,9 @@ a {
 .mer-car .react-multiple-carousel__arrow:hover {
   border: 2px solid gold !important;
 }
-
+.mer-car .react-multiple-carousel__arrow::before{
+   color: #cacaca !important;
+}
 .mer-car .react-multiple-carousel__arrow:hover::before {
   color: #ffffff !important;
 }
