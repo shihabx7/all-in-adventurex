@@ -17,7 +17,7 @@ const bookEvent = (bookingData) => {
   FH.open({
     shortname: bookingData.shortname,
     fallback: "simple",
-    fullItems: "yes",
+    fullItems: "no",
     flow: bookingData.flow,
     view: { item: bookingData.item },
   });

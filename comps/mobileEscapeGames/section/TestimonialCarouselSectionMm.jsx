@@ -13,7 +13,6 @@ export default function TestimonialCarouselSectionMm() {
       <div className="mer-games-slider ">
         <div className=" max-w-7xl mx-auto  z-20 px-1 md:px-4 ">
           <div className="section-head mb-3 rm:mb-4 md:mb-6 lg:mb-7  md:max-w-[700px] lg:max-w-[800px] xl:max-w-none mx-auto px-4 ">
-            
             <h2 className="text-[#CA9342] text-2xl md:text-[40px] lg:text-[44px] 2xl:text-[48px] font-os font-bold uppercase leading-[1.25] text-center">DISCOVER WHY ADVENTURERS LOVE MOBILE MYSTERY</h2>
           </div>
           {/*  testimonialList={testimonialSectionData.testimonialList} */}
