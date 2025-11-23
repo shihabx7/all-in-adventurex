@@ -183,6 +183,7 @@ const MobileEscapeNav = (props) => {
             goMobileEecapeForm={
               props.goMobileEecapeForm ? props.goMobileEecapeForm : false
             }
+            isMobileView={true}
           />
         </div>
         {/*============floating booking btn mobile end==========*/}

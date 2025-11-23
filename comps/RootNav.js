@@ -68,7 +68,7 @@ const RootNav = (props) => {
         <HeaderLocMenu locationSlugList={props.locationSlugList} />
       </div>
       {showLocModal && (
-        <BundleBookingMenu locationSlugList={props.locationSlugList} />
+        <BundleBookingMenu locationSlugList={props.locationSlugList} activeBooking={"gift-card"} />
       )}
 
       {/* 

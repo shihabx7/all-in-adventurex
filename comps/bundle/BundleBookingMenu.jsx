@@ -4,7 +4,7 @@ import { useLocModal } from "../../contexts/LocModalContext";
 import { escapeGameBundleBookingList } from "../../lib/v2/data/escapeGameBundleBookingList";
 import Script from "next/script";
 
-const BundleBookingMenu = ({ locationSlugList }) => {
+const BundleBookingMenu = ({ locationSlugList, activeBooking }) => {
   const { closeLocModal } = useLocModal();
   const closelocmenu = () => {
     const body = document.getElementsByTagName("body")[0];
@@ -13,12 +13,22 @@ const BundleBookingMenu = ({ locationSlugList }) => {
   };
   const bookBundle = (locationSlug) => {
     const bookingData = escapeGameBundleBookingList[locationSlug];
-    console.log(bookingData);
+    // console.log(bookingData);
     FH.open({
       shortname: bookingData.shortName,
       fallback: "simple",
       fullItems: "yes",
       flow: bookingData.flow,
+    });
+  };
+
+  const bookGiftCard = (bookingData) => {
+    FH.open({
+      shortname: bookingData.shortName,
+      fallback: "simple",
+      fullItems: "yes",
+      flow: "no",
+      view: { item: bookingData.giftCardItemNo },
     });
   };
 
@@ -44,7 +54,9 @@ const BundleBookingMenu = ({ locationSlugList }) => {
         <div className="loc-menu-content px-4">
           <div className="sep-container max-w-[280px] md:max-w-[560px] mx-auto ">
             <h2 className="dark-gold py-2 text-center text-2xl uppercase md:text-[40px] lg:text-[44px] leading-[1.2] font-os font-bold">
-              CHOOSE YOUR LOCATION TO UNLOCK YOUR BUNDLE
+              {activeBooking
+                ? "CHOOSE YOUR LOCATION TO BUY GIFT CARDS"
+                : "CHOOSE YOUR LOCATION TO UNLOCK YOUR BUNDLE"}
             </h2>
           </div>
 
@@ -68,15 +80,28 @@ const BundleBookingMenu = ({ locationSlugList }) => {
                           key={loc.id + item.id}
                           className=" loc-item py-2 border-b border-dark-coffee"
                         >
-                          <button
-                            onClick={(e) => {
-                              e.preventDefault();
-                              bookBundle(item.locationSlug);
-                            }}
-                            className="loc-link block golden-text md:text-lg"
-                          >
-                            {item.locationName}
-                          </button>
+                          {activeBooking && activeBooking == "gift-card" && (
+                            <button
+                              onClick={(e) => {
+                                e.preventDefault();
+                               bookGiftCard(item.bookingInfo);
+                              }}
+                              className="loc-link block golden-text md:text-lg"
+                            >
+                              {item.locationName}
+                            </button>
+                          )}
+                          {!activeBooking && (
+                            <button
+                              onClick={(e) => {
+                                e.preventDefault();
+                                bookBundle(item.locationSlug);
+                              }}
+                              className="loc-link block golden-text md:text-lg"
+                            >
+                              {item.locationName}
+                            </button>
+                          )}
                         </div>
                       );
                     })}

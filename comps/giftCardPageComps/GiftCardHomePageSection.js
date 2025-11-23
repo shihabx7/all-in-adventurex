@@ -100,7 +100,6 @@ const GiftCardHomePageSection = (props) => {
             </div>
             <div className="gift-poster order-1 lg:order-2 lg:w-1/2">
               <div>
-                {" "}
                 <img
                   className="max-w-[99%] md:max-w-[500px]  mx-auto lg:max-w-full "
                   src="/assets/gift-images/hero/All-In-Adventures-Gift-Card-hero.png"

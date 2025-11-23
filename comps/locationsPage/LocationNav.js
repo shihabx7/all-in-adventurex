@@ -90,6 +90,7 @@ const LocationNav = (props) => {
                 <HeaderNotice
                   noticeData={noticeData}
                   locationSlug={props.locationSlug}
+                  giftBooking={props.giftBooking}
                 />
               </>
             )}
