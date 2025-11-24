@@ -30,9 +30,15 @@ const GiftCardHomePageSection = (props) => {
           <div className="gift-row gift-row-shadow xm:max-w-[490px] md:max-w-[700px] mx-auto lg:max-w-none flex flex-col lg:flex-row justify-between lg:space-x-7 xl:space-x-12 2xl:space-x-10 items-center pt-6 pb-8 px-4 lm:px-5 zm:p-8 md:p-12 lg:p-10 xl:p-12 2xl:p-14 bg-[#151515] rounded-[14px]">
             <div className="gift-info order-2 lg:order-1 lg:w-1/2">
               <div className="text-content pt-4 md:pt-8 lg:pt-0">
-                <h2 className="text-[#e0bf62] text-2xl rm:text-[28px] max-w-[230px] rm:max-w-[280px] md:max-w-[460px] md:text-[40px] lg:text-[42px] xl:text-[44px] 2xl:text-[48px]  leading-[1.2] text-[#CA9342] font-os font-bold mb-3 zm:mb-4 2xl:max-w-[400px]">
+                <h4 className="text-red-700 font-semibold text-[.94rem] md:text-[1.05rem] xl:text-[1.2rem] ">
+                  Black Friday Gift Card Deal — 25% OFF
+                </h4>
+                <h2 className="text-2xl rm:text-[28px] max-w-[230px] rm:max-w-[280px] md:max-w-[460px] md:text-[40px] lg:text-[42px] xl:text-[44px] 2xl:text-[48px]  leading-[1.2] text-[#CA9342] font-os font-bold mb-3 zm:mb-4 2xl:max-w-[400px]">
                   ALL IN ADVENTURES GIFT CARDS
                 </h2>
+                <p className="text-[#ffffff] text-[.9rem] rm:text-[1rem] md:text-[1.1rem] 2xl:text-[1.15rem] mb-3 xl:mb-4">
+                  Use code <strong className="text-red-700">GIFT25</strong> at checkout. Code expires Nov. 28!
+                </p>
                 <p className="text-[#d9d9d9] text-sm rm:text-base 2xl:text-lg mb-3 xl:mb-4">
                   Looking for the perfect gift? Surprise your loved ones with an
                   All In Adventures Gift Card—a ticket to thrilling escape room
@@ -102,7 +108,7 @@ const GiftCardHomePageSection = (props) => {
               <div>
                 <img
                   className="max-w-[99%] md:max-w-[500px]  mx-auto lg:max-w-full "
-                  src="/assets/gift-images/hero/All-In-Adventures-Gift-Card-hero.png"
+                  src="/assets/gift-images/hero/black-friday-gift-card.jpg"
                 ></img>{" "}
               </div>
             </div>
