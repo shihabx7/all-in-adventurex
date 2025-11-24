@@ -34,34 +34,34 @@ const formatBfdyTime = (value) => {
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
   return (
-    <div className="bfdy-timer flex space-x-2 md:space-x-3 items-center text-white text-center pb-[4px] md:py-1">
-      <div className="timer-item-box d-box  bg-[#1D1E1F] rounded-sm px-1 py-[2px] md:px-2 md:py-[6px] min-w-[40px] md:min-w-[48px]">
+    <div className="bfdy-timer flex space-x-1 xl:space-x-2 items-center text-white text-center  ">
+      <div className="timer-item-box d-box  bg-[#1D1E1F] rounded-sm px-1 py-[2px] lg:px-2 lg:py-[6px] min-w-[40px] md:min-w-[42px]">
         <p className="bfdy-Day font-semibold text-[.8rem] md:text-[15px] 2xl:text-[18px] leading-[1.1]">
           {formatBfdyTime(remainingTime.days)}
         </p>
-        <p className="bfdy-label text-[.67rem] md:text-[.7rem] 2xl:text-[.8rem] text-[#B3B3B3] leading-[1]">
+        <p className="bfdy-label text-[.6rem] md:text-[.65rem] 2xl:text-[.7rem] text-[#B3B3B3] leading-[1]">
           Days
         </p>
       </div>
-      <div className="timer-item-box d-box  bg-[#1D1E1F] rounded-sm px-1 py-[2px] md:px-2 md:py-[6px] min-w-[40px] md:min-w-[48px]">
+      <div className="timer-item-box d-box  bg-[#1D1E1F] rounded-sm px-1 py-[2px] lg:px-2 lg:py-[6px] min-w-[40px] md:min-w-[42px]">
         <p className="bfdy-Day font-semibold text-[.8rem] md:text-[15px] 2xl:text-[18px] leading-[1.1]">
           {formatBfdyTime(remainingTime.hours)}
         </p>
-        <p className="bfdy-label text-[.67rem] md:text-[.7rem] 2xl:text-[.8rem] text-[#B3B3B3] leading-[1]">
+        <p className="bfdy-label text-[.6rem] md:text-[.65rem] 2xl:text-[.7rem] text-[#B3B3B3] leading-[1]">
           Hours
         </p>
       </div>
-      <div className="timer-item-box d-box  bg-[#1D1E1F] rounded-sm px-1 py-[2px] md:px-2 md:py-[6px] min-w-[40px] md:min-w-[48px]">
+      <div className="timer-item-box d-box  bg-[#1D1E1F] rounded-sm px-1 py-[2px] lg:px-2 lg:py-[6px] min-w-[40px] md:min-w-[42px]">
         <p className="bfdy-Day font-semibold text-[.8rem] md:text-[15px] 2xl:text-[18px] leading-[1.1]">
           {formatBfdyTime(remainingTime.minutes)}
         </p>
-        <p className="bfdy-label text-[.67rem] md:text-[.7rem] 2xl:text-[.8rem] text-[#B3B3B3] leading-[1]">Min</p>
+        <p className="bfdy-label text-[.6rem] md:text-[.65rem] 2xl:text-[.7rem] text-[#B3B3B3] leading-[1]">Min</p>
       </div>
-      <div className="timer-item-box d-box  bg-[#1D1E1F] rounded-sm px-1 py-[2px] md:px-2 md:py-[6px] min-w-[40px] md:min-w-[48px]">
+      <div className="timer-item-box d-box  bg-[#1D1E1F] rounded-sm px-1 py-[2px] lg:px-2 lg:py-[6px] min-w-[40px] md:min-w-[42px]">
         <p className="bfdy-Day font-semibold text-[.8rem] md:text-[15px] 2xl:text-[18px] leading-[1.1]">
           {formatBfdyTime(remainingTime.seconds)}
         </p>
-        <p className="bfdy-label text-[.67rem] md:text-[.7rem] 2xl:text-[.8rem] text-[#B3B3B3] leading-[1]">Sec</p>
+        <p className="bfdy-label text-[.6rem] md:text-[.65rem] 2xl:text-[.7rem] text-[#B3B3B3] leading-[1]">Sec</p>
       </div>
     </div>
   );

@@ -42,7 +42,11 @@ const GiftCardBookingMenu = (props) => {
           </span>
         </div>
         <div className="loc-menu-content px-4">
-          <GiftMenuTitle />
+          <div className="sep-container max-w-[280px] md:max-w-[560px] mx-auto ">
+            <h2 className="dark-gold py-2 text-center text-2xl uppercase md:text-[40px] lg:text-[44px] leading-[1.2] font-os font-bold">
+              CHOOSE YOUR LOCATION TO BUY GIFT CARDS
+            </h2>
+          </div>
 
           <div className="loc-menu-grid max-w-6xl mx-auto mt-4 pb-8">
             {/*==================location xcolumn======================*/}
@@ -75,13 +79,12 @@ const GiftCardBookingMenu = (props) => {
                               <span className="golden-text">
                                 {item.locationName}
                               </span>
-                              <span className="text-gold">
+                            </div>
+                            {/*================== <div className="text-gray-500 text-sm md:text-base text-left">
+                              {item.mall} <span className="text-gold">
                                 <FaAngleRight />
                               </span>
-                            </div>
-                            <div className="text-gray-500 text-sm md:text-base text-left">
-                              {item.mall}
-                            </div>
+                            </div>======================*/}
                           </button>
                         </div>
                       );
