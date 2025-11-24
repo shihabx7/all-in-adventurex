@@ -69,7 +69,7 @@ export default function BlackFridayNotice({
     };
   return (
     showNotice && (
-      <div className="header-notice-bfdy  bg-[#140200] relative">
+      <div className="header-notice-bfdy  bg-[#140200] relative border-b md:border-b-1.5 border-red-700">
         {/*==============================bg-img*/}
         <div className="bfdy-notice-bg w-full h-full absolute top-0 left-0">
           <img
@@ -84,7 +84,7 @@ export default function BlackFridayNotice({
         {/*=========================================bfdy notice bar */}
         <div className="notice-content relative z-20">
           <div className="w-full md:w-[720px] lg:w-[800px] xl:w-[900px] 2xl:w-[910px] mx-auto ">
-            <div className="bfdy-notice-container flex justify-center flex-wrap md:justify-between  items-center md:space-x-2 lg:space-x-3 px-2 py-1 lg:py-1.5">
+            <div className="bfdy-notice-container flex justify-center flex-wrap md:justify-between  items-center md:space-x-2 lg:space-x-3 px-2 py-[.37rem] lg:py-1.5 2xl:py-2">
               {/*=========================================bfdy notice ribbon */}
               <div className="order-1 bfdy-notice-ribb max-w-[66px] md:max-w-[74px] lg:max-w-[82px] xl:max-w-[96px]  flex items-end md:block mr-2 md:mr-0">
                 <img
@@ -94,7 +94,7 @@ export default function BlackFridayNotice({
                 ></img>
               </div>
               {/*=========================================bfdy notice links and text*/}
-              <div className="w-full mt-2 md:mt-0 order-3 md:order-2 md:w-auto bfdy-content-box text-[#E8E8E8]  text-[.64rem] rm:text-[.72rem] sm:text-[.76rem] md:text-[.9rem] xl:text-[1.07rem] 2xl:text-[1.15rem]   text-center  leading-[1]">
+              <div className="w-full mt-1.5 md:mt-0 order-3 md:order-2 md:w-auto bfdy-content-box text-[#E8E8E8]  text-[.64rem] rm:text-[.72rem] sm:text-[.76rem] md:text-[.9rem] xl:text-[1.07rem] 2xl:text-[1.15rem]   text-center  leading-[1]">
                 <div className="bfdy-content-container flex items-center justify-center space-x-1 md:space-x-2 xl:space-x-3">
                   <div className="bfdy-n-item-1">25% Off</div>
                   <div className="bfdy-n-item-2">|</div>
@@ -111,7 +111,7 @@ export default function BlackFridayNotice({
                     {locationSlug && (
                       <button
                         onClick={() => bookGiftCard(giftBooking)}
-                        className="ml-1 md:ml-1.5 px-2 py-1.5 lg:px-3 md:py-2  rounded border border-[#ffffff] hover:border-red-700 bg-transparent hover:bg-red-700 text-red-600 hover:text-white font-bold  text-[.66rem] rm:text-[.77rem] sm:text-[.87rem] xl:text-[1rem] leading-[1] transition-all duration-500 "
+                        className="ml-1 md:ml-1.5 px-2 py-1.5 lg:px-3 md:py-2  rounded border border-[#e8e8e8] hover:border-red-700 bg-transparent hover:bg-red-700 text-red-600 hover:text-white font-bold  text-[.66rem] rm:text-[.77rem] sm:text-[.87rem] xl:text-[1rem] leading-[1] transition-all duration-500 "
                       >
                         BUY GIFT CARD
                       </button>
@@ -119,13 +119,13 @@ export default function BlackFridayNotice({
                     {!locationSlug && (
                       <button
                         onClick={showLocModal}
-                        className="ml-1 md:ml-1.5 px-2 py-1.5 lg:px-3 md:py-2 rounded border border-[#ffffff] hover:border-red-700 bg-transparent hover:bg-red-700 text-red-600 hover:text-white font-bold  text-[.66rem] rm:text-[.77rem] sm:text-[.72rem] xl:text-[1rem] leading-[1] transition-all duration-500 "
+                        className="ml-1 md:ml-1.5 px-2 py-1.5 lg:px-3 md:py-2 rounded border border-[#e8e8e8] hover:border-red-700 bg-transparent hover:bg-red-700 text-red-600 hover:text-white font-bold  text-[.66rem] rm:text-[.77rem] sm:text-[.72rem] xl:text-[1rem] leading-[1] transition-all duration-500 "
                       >
                         BUY GIFT CARD
                       </button>
                     )}
                   </div>
-                  <div className="bfdy-n-item-5 ">Learn More</div>
+                  <div className="bfdy-n-item-5 "><a className="hover:text-red-700" href={"/gift-cards"}>Learn More</a></div>
                 </div>
               </div>
                {/*=========================================bfdy notice timer*/}
