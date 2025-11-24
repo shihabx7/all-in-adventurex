@@ -11,19 +11,22 @@ import HeaderNotice from "../headerComps/HeaderNotice";
 //import HeaderNotice from "../headerComps/HeaderNotice";
 import LocationMenuBtnHeader from "../util/LocationMenuBtnHeader";
 import StickyGiftBar from "./StickyGiftBar";
+import { useLocModal } from "../../contexts/LocModalContext";
+import BundleBookingMenu from "../bundle/BundleBookingMenu";
 
 const GiftCardNav = (props) => {
+  const { showLocModal } = useLocModal();
   const [showSlug, setShowSlug] = useState(null);
-  const [noticeData, setNoticeData] = useState()
+  const [noticeData, setNoticeData] = useState();
 
   const setNotice = async () => {
-    const ndata = await navNotice()
+    const ndata = await navNotice();
     //console.log(ndata)
-    setNoticeData(ndata)
-  }
+    setNoticeData(ndata);
+  };
 
   useEffect(() => {
-    setNotice()
+    setNotice();
     setShowSlug(props.slug);
   }, []);
 
@@ -65,17 +68,23 @@ const GiftCardNav = (props) => {
       <div id="locmenu" className="loc-menu-holder hidden">
         <HeaderLocMenu locationSlugList={props.locationSlugList} />
       </div>
-
+      {showLocModal && (
+        <BundleBookingMenu
+          locationSlugList={props.locationSlugList}
+          activeBooking={"gift-card"}
+        />
+      )}
       {/* ============Location List Menu end*/}
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">
-
         <div id="header-container-s" className="header-container-s">
-          {
-            ((noticeData !== undefined && noticeData !== null) && noticeData.showNotice) && <>
-              <HeaderNotice noticeData={noticeData} />
-            </>
-          }
+          {noticeData !== undefined &&
+            noticeData !== null &&
+            noticeData.showNotice && (
+              <>
+                <HeaderNotice noticeData={noticeData} />
+              </>
+            )}
           <div
             className="header-container-s max-w-7xl mx-auto relative md:px-4"
             ref={ref}

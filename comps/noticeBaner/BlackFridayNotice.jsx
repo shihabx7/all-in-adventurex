@@ -73,7 +73,7 @@ export default function BlackFridayNotice({
         {/*==============================bg-img*/}
         <div className="bfdy-notice-bg w-full h-full absolute top-0 left-0">
           <img
-            className="object-cover object-center w-full hidden md:block"
+            className="object-cover object-center w-full h-full hidden md:block"
             src={"/assets/notice/black-friday-gift-card-bg.jpg"}
           ></img>
             <img
@@ -100,7 +100,7 @@ export default function BlackFridayNotice({
                   <div className="bfdy-n-item-2">|</div>
                   <div className="bfdy-n-item-3 flex items-center  space-x-1 md:space-x-2">
                     <p>Code:</p>
-                    <button onClick={() => copyToClipboard('GIFT20')} className="bg-[#0D542B] text-[#98FFBF] flex items-center space-x-1 justify-center px-2 py-1 lg:px-3 lg:py-1.5 rounded-full copy-btn">
+                    <button onClick={() => copyToClipboard('GIFT20')} className="bg-[#0D542B] hover:bg-red-700 hover:text-white text-[#98FFBF] flex items-center space-x-1 justify-center px-2 py-1 lg:px-3 lg:py-1.5 rounded-full copy-btn">
                      <span>GIFT20</span>
                       <span className="text-[.74rem] sm:text-[1rem] md:text-[1.1rem]">
                         <TbCopy />
