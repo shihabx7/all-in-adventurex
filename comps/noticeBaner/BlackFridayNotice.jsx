@@ -96,12 +96,12 @@ export default function BlackFridayNotice({
               {/*=========================================bfdy notice links and text*/}
               <div className="w-full mt-2 md:mt-0 order-3 md:order-2 md:w-auto bfdy-content-box text-[#E8E8E8]  text-[.64rem] rm:text-[.72rem] sm:text-[.76rem] md:text-[.9rem] xl:text-[1.07rem] 2xl:text-[1.15rem]   text-center  leading-[1]">
                 <div className="bfdy-content-container flex items-center justify-center space-x-1 md:space-x-2 xl:space-x-3">
-                  <div className="bfdy-n-item-1">20% Off</div>
+                  <div className="bfdy-n-item-1">25% Off</div>
                   <div className="bfdy-n-item-2">|</div>
                   <div className="bfdy-n-item-3 flex items-center  space-x-1 md:space-x-2">
                     <p>Code:</p>
-                    <button onClick={() => copyToClipboard('GIFT20')} className="bg-[#0D542B] hover:bg-red-700 hover:text-white text-[#98FFBF] flex items-center space-x-1 justify-center px-2 py-1 lg:px-3 lg:py-1.5 rounded-full copy-btn">
-                     <span>GIFT20</span>
+                    <button onClick={() => copyToClipboard('GIFT25')} className="bg-[#0D542B] hover:bg-red-700 hover:text-white text-[#98FFBF] flex items-center space-x-1 justify-center px-2 py-1 lg:px-3 lg:py-1.5 rounded-full copy-btn">
+                     <span>GIFT25</span>
                       <span className="text-[.74rem] sm:text-[1rem] md:text-[1.1rem]">
                         <TbCopy />
                       </span>
