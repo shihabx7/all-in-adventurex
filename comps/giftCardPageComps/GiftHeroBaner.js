@@ -17,7 +17,7 @@ const GiftHeroBaner = (props) => {
         <div className="gft-bg-decor absolute w-full h-full z-20">
           <div className="decor-inner w-full h-full relative z-20">
             <img
-              className="tl-ribbon absolute top-[-10px] left-[-10px] md:top-[-20px] md:left-[-20px] lg:top-[-20px] lg:left-[-20px] xl:top-[-20px] xl:left-[-20px] 2xl:top-[-20px] 2xl:left-[-20px] max-w-[100px] md:max-w-[140px] lg:max-w-[140px] xl:max-w-[148px] 2xl:max-w-[176px]] 3xl:max-w-[200px]  z-20"
+              className="tl-ribbon absolute top-[-10px] left-[-10px] md:top-[-20px] md:left-[-20px] lg:top-[-20px] lg:left-[-20px] xl:top-[-20px] xl:left-[-20px] 2xl:top-[-20px] 2xl:left-[-20px] max-w-[64px] rm:max-w-[68px] md:max-w-[140px] lg:max-w-[140px] xl:max-w-[148px] 2xl:max-w-[176px]] 3xl:max-w-[200px]  z-20"
               src="/assets/gift-images/hero/Gift-Ribbon-Left-Side.png"
               alt="An exquisite gift ribbon with a lustrous sheen, artfully arranged to enhance the presentation of any present."
             ></img>
@@ -116,7 +116,7 @@ const GiftHeroBaner = (props) => {
         {/* =======card bg images end========  */}
         {/* =======card content container========  */}
         <div className="gift-hero-container-wrapper  relative z-[20]">
-          <div className="max-w-7xl pt-12 pb-[180px] md:pt-24 md:pb-[220px]  xl:pt-26 lg:pb-[230px]  3xl:pt-28 3xl:pb-[264px] mx-auto px-8 lg:px-12 ">
+          <div className="max-w-7xl pt-10 pb-[180px] md:pt-24 md:pb-[220px]  xl:pt-26 lg:pb-[230px]  3xl:pt-28 3xl:pb-[264px] mx-auto px-8 lg:px-12 ">
             <div className="gh-content flex flex-col lg:flex-row justify-between items-center">
               {/* =======card content text========  */}
 
