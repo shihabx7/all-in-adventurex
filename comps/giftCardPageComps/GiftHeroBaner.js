@@ -158,7 +158,7 @@ const GiftHeroBaner = (props) => {
                       ></img>
 
                       <p className="it ">
-                        Use code <strong>GIFT25</strong> at checkout. Code expires Nov. 28!
+                        Use code <strong>GIFT25</strong> at checkout. Code expires Nov. 28
                       </p>
                     </div>
                     <div className="gh-item flex justify-start space-x-2 items-start md:items-center my-3">
@@ -200,7 +200,7 @@ const GiftHeroBaner = (props) => {
                         alt=" All in Adventures gift card icon showcasing a vibrant design, symbolizing adventure and excitement in gift-giving."
                       ></img>
                       <p className="it">
-                        Our gift cards never expire!
+                        Our gift cards never expire
                       </p>
                     </div>
                   </div>

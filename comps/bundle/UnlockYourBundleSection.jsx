@@ -52,7 +52,7 @@ export default function UnlockYourBundleSection({ locationSlug }) {
                     Find your perfect challenge below.
                   </p>
                 </div>
-                <div className="escape-game-bundlei-btn max-w-[300px] sm:max-w-[330px] mt-6 md:mt-7 lg:mt-5 mx-auto lg:mx-0">
+                <div className="hidden lg:block escape-game-bundlei-btn max-w-[300px] sm:max-w-[330px] mt-6 md:mt-7 lg:mt-5 mx-auto lg:mx-0">
                   {!locationSlug && (
                     <button
                       onClick={showLocModal}
@@ -82,6 +82,24 @@ export default function UnlockYourBundleSection({ locationSlug }) {
                   alt={"all in adventures escape game bundle"}
                 ></img>
               </div>
+              <div className="lg:hidden escape-game-bundlei-btn max-w-[300px] sm:max-w-[330px] mt-6 md:mt-7 lg:mt-5 mx-auto lg:mx-0">
+                  {!locationSlug && (
+                    <button
+                      onClick={showLocModal}
+                      className="w-full  block uppercase py-3 md:py-3 px-4 md:text-lg text-white font-medium border-2 border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 rounded-full text-center"
+                    >
+                      Unlock YOUR BUNDLE
+                    </button>
+                  )}
+                  {locationSlug && (
+                    <button
+                      onClick={() => bookBundle(locationSlug)}
+                      className="w-full  block uppercase py-3 md:py-3 px-4 md:text-lg text-white font-medium border-2 border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 rounded-full text-center"
+                    >
+                      Unlock YOUR BUNDLE
+                    </button>
+                  )}
+                </div>
             </div>
           </div>
 
