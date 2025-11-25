@@ -15,7 +15,7 @@ import { useLocModal } from "../../contexts/LocModalContext";
 import BundleBookingMenu from "../bundle/BundleBookingMenu";
 
 const GiftCardNav = (props) => {
-  const { showLocModal } = useLocModal();
+  const { showLocModal,activeModalMenu } = useLocModal();
   const [showSlug, setShowSlug] = useState(null);
   const [noticeData, setNoticeData] = useState();
 

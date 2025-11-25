@@ -5,11 +5,12 @@ import { escapeGameBundleBookingList } from "../../lib/v2/data/escapeGameBundleB
 import Script from "next/script";
 
 const BundleBookingMenu = ({ locationSlugList, activeBooking }) => {
-  const { closeLocModal } = useLocModal();
+  const { closeLocModal,activeModalMenu,setModalMenuType } = useLocModal();
   const closelocmenu = () => {
     const body = document.getElementsByTagName("body")[0];
     body.classList.remove("overflow-hidden");
     closeLocModal();
+    setModalMenuType('gift-card');
   };
   const bookBundle = (locationSlug) => {
     const bookingData = escapeGameBundleBookingList[locationSlug];
@@ -54,9 +55,13 @@ const BundleBookingMenu = ({ locationSlugList, activeBooking }) => {
         <div className="loc-menu-content px-4">
           <div className="sep-container max-w-[280px] md:max-w-[560px] mx-auto ">
             <h2 className="dark-gold py-2 text-center text-2xl uppercase md:text-[40px] lg:text-[44px] leading-[1.2] font-os font-bold">
-              {activeBooking
-                ? "CHOOSE YOUR LOCATION TO BUY GIFT CARDS"
-                : "CHOOSE YOUR LOCATION TO UNLOCK YOUR BUNDLE"}
+              {activeModalMenu=='gift-card' && <span>CHOOSE YOUR LOCATION TO BUY GIFT CARDS</span>
+              
+             }
+              {activeModalMenu=='bundle' && <span> CHOOSE YOUR LOCATION TO UNLOCK YOUR BUNDLE</span>
+              
+             }
+            
             </h2>
           </div>
 
@@ -80,7 +85,7 @@ const BundleBookingMenu = ({ locationSlugList, activeBooking }) => {
                           key={loc.id + item.id}
                           className=" loc-item py-2 border-b border-dark-coffee"
                         >
-                          {activeBooking && activeBooking == "gift-card" && (
+                          {activeModalMenu== "gift-card" && (
                             <button
                               onClick={(e) => {
                                 e.preventDefault();
@@ -91,7 +96,7 @@ const BundleBookingMenu = ({ locationSlugList, activeBooking }) => {
                               {item.locationName}
                             </button>
                           )}
-                          {!activeBooking && (
+                          {activeModalMenu== "bundle" && (
                             <button
                               onClick={(e) => {
                                 e.preventDefault();

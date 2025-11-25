@@ -14,7 +14,7 @@ import BundleBookingMenu from "./bundle/BundleBookingMenu";
 import { useLocModal } from "../contexts/LocModalContext";
 
 const RootNav = (props) => {
-  const { showLocModal } = useLocModal();
+  const { showLocModal,activeModalMenu } = useLocModal();
   const [showSlug, setShowSlug] = useState(null);
   const [noticeData, setNoticeData] = useState();
 
@@ -68,7 +68,7 @@ const RootNav = (props) => {
         <HeaderLocMenu locationSlugList={props.locationSlugList} />
       </div>
       {showLocModal && (
-        <BundleBookingMenu locationSlugList={props.locationSlugList} activeBooking={"gift-card"} />
+        <BundleBookingMenu locationSlugList={props.locationSlugList} />
       )}
 
       {/* 

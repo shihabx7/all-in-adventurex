@@ -14,7 +14,7 @@ import UerStickyBar from "./UerStickyBar";
 import { useLocModal } from "../../contexts/LocModalContext";
 import BundleBookingMenu from "../bundle/BundleBookingMenu";
 const UerNav = (props) => {
-  const { showLocModal } = useLocModal();
+  const { showLocModal,activeModalMenu } = useLocModal();
   const [noticeData, setNoticeData] = useState();
   const [showSlug, setShowSlug] = useState(null);
   const setNotice = async () => {

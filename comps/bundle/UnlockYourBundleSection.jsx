@@ -2,11 +2,12 @@ import { useLocModal } from "../../contexts/LocModalContext";
 import { escapeGameBundleBookingList } from "../../lib/v2/data/escapeGameBundleBookingList";
 
 export default function UnlockYourBundleSection({ locationSlug }) {
-  const { openLocModal } = useLocModal();
+  const { openLocModal,setModalMenuType } = useLocModal();
   const showLocModal = () => {
     const body = document.getElementsByTagName("body")[0];
     body.classList.remove("overflow-hidden");
     openLocModal();
+    setModalMenuType('bundle');
   };
   const bookBundle = (slug) => {
     const bookingData = escapeGameBundleBookingList[slug];
