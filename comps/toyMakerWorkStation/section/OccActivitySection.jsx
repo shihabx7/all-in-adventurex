@@ -16,21 +16,16 @@ export default function OccActivitySection({ sectionData, bookingData }) {
       <div className="py-16  md:py-20 lg:py-24  xl:py-28  px-4 xl:px-0  z-20 ">
         <div className="section-head mb-6 rm:mb-8 md:mb-10 lg:mb-12  md:max-w-[720px] lg:max-w-[1200px] mx-auto   lg:px-0">
           <div className="max-w-[364px] md:max-w-full">
-            <SectionTittleCenterLight
-              title={
-                sectionData.sectionTitle !== null
-                  ? sectionData.sectionTitle
-                  : "ACTIVITY FOR EVERY OCCASION"
-              }
-            />
+            <h2 className="text-[#e0bf62] uppercase font-bold text-center text-[28px] rm:text-[30px] zm:text-[33px] leading-[1.2] sm:text-4xl lg:text-5xl font-os outline-tile">
+              THE PERFECT "FIRST ESCAPE ROOM" EXPERIENCE
+            </h2>
           </div>
           {sectionData.sectionSubTitle !== null ? (
-            <div
-              className="text-gray-200 mt-2 md:mt-3 lg:mt-4 text-center md:text-lg lg:text-xl max-w-[850px] mx-auto "
-              dangerouslySetInnerHTML={{
-                __html: sectionData.sectionSubTitle,
-              }}
-            ></div>
+            <div className="text-gray-200 mt-2 md:mt-3 lg:mt-4 text-center md:text-lg lg:text-xl max-w-[850px] mx-auto ">
+              Toymaker's Workshop—a fully interactive starter adventure designed
+              specifically for kids ages 6 and under, featuring magical clues
+              and zero tricky locks!
+            </div>
           ) : (
             <></>
           )}

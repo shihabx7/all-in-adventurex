@@ -42,7 +42,7 @@ export default function ToyMakersStoryLineSection({ gameInfo, bookingData }) {
                       src={"/assets/toymakers-workshop/storyline/age.svg"}
                     ></img>
                     <p className="text-[#2e2e2e] text-[12px] rm:text-[14px] md:text-[17px] xl:text-[18px]">
-                      Age: 10 and under
+                      Age: 6 and under
                     </p>
                   </div>
                   {/*==================================================col 2*/}
@@ -62,7 +62,7 @@ export default function ToyMakersStoryLineSection({ gameInfo, bookingData }) {
                       src={"/assets/toymakers-workshop/storyline/free-toy.svg"}
                     ></img>
                     <p className="text-[#2e2e2e] text-[12px] rm:text-[14px] md:text-[17px] xl:text-[18px]">
-                      FREE Toy for Every Child
+                      Toy: Game Prize Included
                     </p>
                   </div>
                   {/*==================================================col 4*/}
@@ -74,7 +74,7 @@ export default function ToyMakersStoryLineSection({ gameInfo, bookingData }) {
                       }
                     ></img>
                     <p className="text-[#2e2e2e] text-[12px] rm:text-[14px] md:text-[17px] xl:text-[18px]">
-                      Adults Required
+                      Adults: Adults Required
                     </p>
                   </div>
                 </div>
@@ -82,13 +82,16 @@ export default function ToyMakersStoryLineSection({ gameInfo, bookingData }) {
 
                 {/*=========================================game short decription====*/}
                 <div className="egl-shot-desc mt-4 md:mt-7 lg:mt-5 xl:mt-5 2xl:mt-6">
-                  <h4 className="text-[20px] rm:text-[22px] md:text-[24px] lg:text-[28px] font-medium text-[#FFB548] mb-2 text-[#ca9342]">
+                  <h4 className="text-[20px] rm:text-[22px] md:text-[24px] lg:text-[28px] font-medium text-[#ca9342] mb-2">
                     {gameInfo.storyLineTitle}
                   </h4>
                   <div
                     className="text-[#2e2e2e] text-sm rm:text-base xl:text-lg flex flex-col space-y-2 md:space-y-4"
-                    dangerouslySetInnerHTML={{ __html: gameInfo.storyLine }}
-                  ></div>
+                    
+                  >
+                    <p><span className="font-bold">Help the Toymaker finish his work before time runs out!</span> This experience is designed as the perfect 'training ground' for future escape room enthusiasts. We've removed the frustration of complex locks and passcodes, replacing them with interactive props and sensory clues.</p>
+                      <p>Parents can help guide children through the story, or let their little detectives explore at their own pace. With no wrong answers, EVERY child completes the story successfully and receives a special toy from the Toymaker to take home as a reward for their hard work!</p>
+                  </div>
                 </div>
                 {/*=========================================game button===*/}
                 <div className="egl-btn-pair mt-6 mb-[8px] md:mt-7 xl:mt-8 xl:mb-2">

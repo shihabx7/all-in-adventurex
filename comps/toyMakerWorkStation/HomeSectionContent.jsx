@@ -16,33 +16,33 @@ export default function HomeSectionContent({ bookingData, locationSlug }) {
         <div className="icon-col w-[48%] xm:w-auto flex space-x-1 md:space-x-2 items-center my-1 zm:my-0">
           <img
             className="h-[14px] rm:h-[16px] lg:h-[21px]"
-            src={"/assets/toymakers-workshop/home/age.png"}
+            src={"/assets/toymakers-workshop/storyline/age.svg"}
             alt={"toymaker workshop age icon"}
           ></img>
           <p className="text-sm xm:text-[12px] md:text-base lg:text-lg text-[#D0C5C5]">
-            Age: 10 and under
+            Age: 6 and under
           </p>
         </div>
         {/* icon 2 */}
         <div className="icon-col w-[48%] xm:w-auto flex space-x-1 md:space-x-2 items-center my-1 zm:my-0">
           <img
             className="h-[14px] rm:h-[16px] lg:h-[21px]"
-            src={"/assets/toymakers-workshop/home/duration.png"}
+            src={"/assets/toymakers-workshop/storyline/duration.svg"}
             alt={"toymaker workshop duration icon"}
           ></img>
           <p className="text-sm xm:text-[12px] md:text-base lg:text-lg text-[#D0C5C5] ">
-            Duration: 1 Hour{" "}
+            Duration: 1 Hour
           </p>
         </div>
         {/* icon 3 */}
         <div className="icon-col w-[60%] xm:w-auto flex space-x-1 md:space-x-2 items-center my-1 zm:my-0">
           <img
             className="h-[14px] rm:h-[16px] lg:h-[21px]"
-            src={"/assets/toymakers-workshop/home/childs.png"}
+            src={"/assets/toymakers-workshop/storyline/free-toy.svg"}
             alt={"toymaker workshop childs icon"}
           ></img>
           <p className="text-sm xm:text-[12px] md:text-base lg:text-lg text-[#D0C5C5] ">
-            Each child receives toy{" "}
+            Toy: Game Prize Included
           </p>
         </div>
       </div>
@@ -52,9 +52,11 @@ export default function HomeSectionContent({ bookingData, locationSlug }) {
           TOYMAKER'S WORKSHOP
         </h4>
         <p className="text-sm md:text-base lg:text-lg text-center text-[#ffffff]">
-          Step into a world of wonder at the Toymaker's Workshop, where endless
-          activities spark learning, ignite fun, and keep our littlest
-          adventurers happily engaged! All kids receive a toy to take home.
+          Step into a world of fun at the Toymaker's Workshop! This special game
+          replaces complex locks with hands-on, confidence-building puzzles.
+          It's a completely <strong>stress-free</strong> experience where kids learn to search
+          for clues and solve simple mysteries and EVERY child receives a
+          well-deserved toy to take home!
         </p>
       </div>
       {/* duel btn element */}

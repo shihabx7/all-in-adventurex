@@ -21,26 +21,27 @@ export default function ToymakerPageHero({ pageHeroData, bookingData }) {
               <div className="game-badge mb-2 md:mb-2 xl:mb-3 flex justify-center items-center">
                 <div className="px-[4px] py-[6px] md:px-[4px] md:py-[6px] max-w-[270px] mx-auto zm:max-w-none">
                   <h1 className="font-os text-center font-medium text-[1.15rem] rm:text-[1.2rem] leading-[1.5rem] md:leading-[1.2] md:text-[1.4rem] xl:text-[1.6rem] text-red-600 mobile-escape-stiker-text uppercase">
-                    FUN THINGS TO DO IN RALEIGH WITH KIDS
+                    MY FIRST ESCAPE ROOM
                   </h1>
                 </div>
               </div>
               <div className="pageTitle max-w-[360px] zm:max-w-[520px] md:max-w-[720px] lg:max-w-[1180px] mx-auto">
                 <h2 className="text-[#e0bf62] uppercase font-semibold text-center text-[28px] rm:text-[32px] zm:text-[34px] leading-[1.3] zm:leading-[1.4] md:leading-[1.3] md:text-[48px] lg:text-[52px] xl:text-[54px] 2xl:text-[58px] font-os outline-tile">
-                  TOYMAKER'S WORKSHOP
+                  THE TOYMAKER'S WORKSHOP 🧸
                 </h2>
               </div>
               <div className="page-sub-title text-[#ebebeb] zm:max-w-[480px] md:max-w-[760px] lg:max-w-[1010px] mx-auto text-sm md:text-lg lg:text-xl text-center mt-[4px] md:mt-1 2xl:mt-3 ">
                 <p>
-                  Looking for a magical, storybook-style adventure for your
-                  little ones? Toymaker's Workshop is a fun, hands-on experience
-                  specially designed for kids ages 10 and under.
+                  Give your little ones the excitement of an escape room with
+                  none of the pressure! The Toymaker's Workshop is a lock-free,
+                  no-pressure, hands-on adventure designed specifically for ages
+                  6 and under.
                 </p>
               </div>
               <div>
                 <p className="text-[#ebebeb] zm:max-w-[480px] md:max-w-[760px] text-sm lg:max-w-[1016px] mx-auto md:text-lg lg:text-xl text-center mt-[12px] md:mt-4 lg:mt-5 2xl:mt-5">
                   Have older kids? No problem—scroll down to discover our escape
-                  room games that are perfect for ages 10 and up!
+                  room games that are perfect for ages 6 and up!
                 </p>
               </div>
             </div>
