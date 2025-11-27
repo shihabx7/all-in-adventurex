@@ -28,7 +28,7 @@ function BanerBox(props) {
                   GIFTING MADE EASY
                 </h3>
                 <p className="text-[#fff9eb] text-sm rm:text-base  md:text-sm lg:text-base text-center mt-3">
-                  No wrapping, no waiting! All In Adventures Gift Cards can be sent digitally,making gifting a breeze—because everyone deserves a little hassle-free happiness.
+                  No wrapping, no waiting! All In Adventures Gift Cards can be sent digitally, making gifting a breeze—because everyone deserves a little hassle-free happiness.
                 </p>
               </div>
             </div>
