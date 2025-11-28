@@ -147,7 +147,24 @@ a {
     rgba(0, 0, 0, 0.01)
   );
 }
+.text-red-stroke-sm{
+  text-shadow: -0.65px -0.6px 0px #dc2626;
+   
+}
+@keyframes text-glow-red-sm {
+  0% {
+     text-shadow: -1px -1px 0px #dc2626;
+  }
 
+ 
+  50% {
+    text-shadow: -3px -3px 6px #dc2626;
+  }
+
+  100% {
+     text-shadow: -1px -1px 0px #dc2626;
+  }
+}
 .pipedriveWebForms iframe .gDhlQr {
   max-width: 100% !important;
 }

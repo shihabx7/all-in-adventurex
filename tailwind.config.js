@@ -60,9 +60,35 @@ module.exports = {
         colors: ["circle", "#CCC", "#000"],
       },
     }),
+    keyframes: {
+      "pop-in": {
+        "0%": { transform: "scale(0.5)", opacity: "0" },
+        "100%": { transform: "scale(1)", opacity: "1" },
+      },
+      "pop-out": {
+        "0%": { transform: "scale(1)", opacity: "1" },
+        "100%": { transform: "scale(0.5)", opacity: "0" },
+      },
+      "slide-in-left": {
+        "0%": {
+          transform: "translateX(-100%) scale(0.3)",
+          opacity: "0",
+        },
+        "100%": {
+          transform: "translateX(0) scale(1)",
+          opacity: "1",
+        },
+      },
+    },
+    animation: {
+      "pop-in": "pop-in 0.3s ease-out forwards",
+      "pop-out": "pop-out 0.3s ease-in forwards",
+      "slide-in-left": "slide-in-left 0.88s ease-in forwards",
+    },
   },
   variants: {
     gradients: ["responsive", "hover"],
+    animation: ["responsive", "motion-safe", "motion-reduce"],
   },
   plugins: [
     require("tailwindcss-plugins/gradients"),
