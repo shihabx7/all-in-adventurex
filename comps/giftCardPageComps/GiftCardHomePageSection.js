@@ -37,7 +37,7 @@ const GiftCardHomePageSection = (props) => {
                   ALL IN ADVENTURES GIFT CARDS
                 </h2>
                 <p className="text-[#ffffff] text-[.94rem] rm:text-[1.05rem] md:text-[1.1rem] 2xl:text-[1.15rem] mb-3 xl:mb-4">
-                  Use code <strong className="text-red-700">GIFT25</strong> at checkout. Code expires Nov. 28
+                  Use code <strong className="text-red-700">GIFT25</strong> at checkout. Code expires Nov. 30
                 </p>
                 <p className="text-[#c5c5c5] text-sm rm:text-base 2xl:text-lg mb-3 xl:mb-4">
                   Looking for the perfect gift? Surprise your loved ones with an

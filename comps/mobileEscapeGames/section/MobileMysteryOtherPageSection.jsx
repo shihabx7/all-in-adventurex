@@ -81,7 +81,7 @@ export default function MobileMysteryOtherPageSection({
               </div>
                <div className="learn-mm mt-4 zm:mt-4 lg:mt-4">
                   {
-                    locationSlug? ( <p className=" inline-block md:text-lg text-[#E0BF62] hover:text-red-600 transition-colors duration-300 ease-in-out"><a href={`/${locationSlug}/activities/mobile-escape-room`}>To Learn More about Mobile Mystery Click Here</a></p> ):(  <p className="inline-block text-[#E0BF62] hover:text-red-600 transition-colors duration-300 ease-in-out md:text-lg"><a href={`/mobile-escape-room`}>To Learn More about Mobile Mystery Click Here</a></p>)
+                    locationSlug? ( <p className=" inline-block md:text-lg text-slate-100 ">To learn more about Mobile Mystery <a className="text-red-500 hover:text-red-600 transition-colors duration-300 ease-in-out" href={`/${locationSlug}/activities/mobile-escape-room`}>Click Here</a></p> ):(  <p className="inline-block text-slate-100 md:text-lg">To learn more about Mobile Mystery <a className="text-red-500 hover:text-red-600 transition-colors duration-300 ease-in-out"  href={`/mobile-escape-room`}>Click Here</a></p>)
                   }
                 
                 </div>

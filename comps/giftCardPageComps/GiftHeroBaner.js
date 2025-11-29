@@ -158,7 +158,7 @@ const GiftHeroBaner = (props) => {
                       ></img>
 
                       <p className="it ">
-                        Use code <strong>GIFT25</strong> at checkout. Code expires Nov. 28
+                        Use code <strong>GIFT25</strong> at checkout. Code expires Nov. 30
                       </p>
                     </div>
                     <div className="gh-item flex justify-start space-x-2 items-start md:items-center my-3">
