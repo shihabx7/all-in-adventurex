@@ -9,7 +9,7 @@ export default function HeaderNotice({
   const [currentNotice, setCurrentNotice] = useState("uer");
 
   useEffect(() => {
-    const expireDate = new Date("2025-12-01T22:59:59");
+    const expireDate = new Date("2025-12-01T00:59:59");
     const currentTime = new Date();
     const timeRemainingMs = expireDate.getTime() - currentTime.getTime();
     if (timeRemainingMs > 0) {
@@ -32,7 +32,7 @@ export default function HeaderNotice({
        <UnlimitedBundleNotice
         noticeData={noticeData ? noticeData : false}
         locationSlug={locationSlug ? locationSlug : false}
-        giftBooking={giftBooking ? giftBooking : false}
+      
       />
       </>}
      

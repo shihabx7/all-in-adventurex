@@ -139,17 +139,7 @@ const GiftHeroBaner = (props) => {
                   </div>
                   {/* =======card content List========  */}
                   <div className="gift-hero-list-box mt-4  lg:mt-6 text-[#2E2E2E] md:text-[1.15rem] lg:text-[.94rem] xl:text-[1.18rem]">
-                    <div className="gh-item flex justify-start space-x-2 items-start md:items-center my-3">
-                      <img
-                        className="w-[26px] xl:w-[30px]"
-                        src="/assets/gift-images/hero/gift-icon-for-hero-point-text.svg"
-                        alt=" All in Adventures gift card icon showcasing a vibrant design, symbolizing adventure and excitement in gift-giving."
-                      ></img>
-
-                      <p className=" font-bold">
-                        Black Friday Gift Card Deal — 25% OFF
-                      </p>
-                    </div>
+                    
                      <div className="gh-item flex justify-start space-x-2 items-start md:items-center my-3">
                       <img
                         className="w-[26px] xl:w-[30px]"
@@ -158,7 +148,7 @@ const GiftHeroBaner = (props) => {
                       ></img>
 
                       <p className="it ">
-                        Use code <strong>GIFT25</strong> at checkout. Code expires Nov. 30
+                        Unforgettable experiences that last a lifetime
                       </p>
                     </div>
                     <div className="gh-item flex justify-start space-x-2 items-start md:items-center my-3">
@@ -224,7 +214,7 @@ const GiftHeroBaner = (props) => {
               <div className="w-full order-1 lg:order-2 lg:max-w-[48%] xl:max-w-[46%] gift-img">
                 <img
                   alt="A dynamic gift card illustration that embodies adventure, suitable for those seeking unique outdoor experiences."
-                  src="/assets/gift-images/hero/black-friday-gift-card.jpg"
+                  src="/assets/gift-images/hero/All-In-Adventures-Gift-Card-hero.png"
                 ></img>
               </div>
             </div>

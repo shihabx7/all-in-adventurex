@@ -6,7 +6,7 @@ const LocModalContext = createContext();
 
 export const LocModalProvider = ({ children }) => {
   const [showLocModal, setShowLocModal] = useState(false);
- const [activeModalMenu, setActiveModalMenu] = useState('gift-card');
+ const [activeModalMenu, setActiveModalMenu] = useState('bundle');
   const openLocModal = () => setShowLocModal(true);
   const closeLocModal = () => setShowLocModal(false);
   const setModalMenuType=(menuType)=> setActiveModalMenu(menuType);

@@ -11,7 +11,7 @@ const formatBfdyTime = (value) => {
   return String(value).padStart(2, '0');
 };
   useEffect(() => {
-    const expireDate = new Date("2025-12-01T22:59:59");
+    const expireDate = new Date("2025-12-01T15:59:59");
 
     const interval = setInterval(() => {
       const currentTime = new Date();
