@@ -14,7 +14,7 @@ function GiftGnBtn({ title, giftBooking, setShowGiftBookingList }) {
     FH.open({
       shortname: bookingData.shortName,
       fallback: "simple",
-      fullItems: "yes",
+      fullItems: "no",
       flow: bookingData.flow,
       view: { item: bookingData.itemNo },
     });

@@ -15,7 +15,7 @@ const GiftCardBookingMenu = (props) => {
     FH.open({
       shortname: bookingData.shortName,
       fallback: "simple",
-      fullItems: "yes",
+      fullItems: "no",
       flow: "no",
       view: { item: bookingData.giftCardItemNo },
     });

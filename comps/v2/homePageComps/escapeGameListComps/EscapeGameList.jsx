@@ -59,12 +59,12 @@ export default function EscapeGameList({
 
   return (
     <div className="escape-game-list-wrapper">
-      <EscapeGameFilter
+      {/*   <EscapeGameFilter
         gameThemeList={gameThemeList}
         recommendList={recommendList}
         currentFilter={currentFilter}
         setCurrentFilter={setCurrentFilter}
-      />
+      />**/}
 
       <div className="egl-list-item-box mt-2 flex flex-col space-y-5 md:space-y-8 2xl:space-y-10">
         {" "}
@@ -80,7 +80,7 @@ export default function EscapeGameList({
                   currentVideoRef={currentVideoRef}
                   setCurrentVideoRef={setCurrentVideoRef}
                 />
-                <div className="absolute top-0 right-0 md:hidden ">
+                <div className="absolute bottom-5 left-2 md:hidden ">
                   <div className="egl-price-mbl flex justify-end">
                     <div className="egl-price-wrapper relative">
                       <div className="bg-img ">

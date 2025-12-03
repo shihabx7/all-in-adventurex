@@ -16,6 +16,7 @@ import HomePageHeroVideoBgSection from "../../../comps/v2/homePageComps/sections
 import EscapeGamesListSection from "../../../comps/v2/homePageComps/sections/EscapeGamesListSection";
 import OtherGameSection from "../../../comps/v2/homePageComps/sections/OtherGameSection";
 import EventCardListSection from "../../../comps/v2/homePageComps/sections/EventCardListSection";
+import TestimonialCarouselSection from "../../../comps/v2/testimonialPageComps/sections/TestimonialCarouselSection";
 import HomePageVideoTestimonialSection from "../../../comps/v2/homePageComps/sections/HomePageVideoTestimonialSection";
 import ToyMakerHomeSection from "../../../comps/toyMakerWorkStation/section/ToyMakerHomeSection";
 import MobileEscapeRoomHomeSection2 from "../../../comps/mobileEscapeGames/MobileEscapeRoomHomeSection2";
@@ -107,8 +108,8 @@ export default function LocationsHomePage(props) {
           locationSlugList={props.locationSlugList}
           giftBooking={props.giftBooking}
         />
-        <HomePageVideoTestimonialSection
-          sectionData={props.testimonialVideoCarouselSectionData}
+        <TestimonialCarouselSection
+           sectionData={props.testimonialCarouselSectionData}
         />
       </div>
       <LocationFooter
@@ -186,8 +187,8 @@ export const getStaticProps = async (context) => {
       otherGameListSectionData: DATA.otherGameListSectionData,
       eventCardListSectionData: DATA.eventCardListSectionData,
 
-      testimonialVideoCarouselSectionData:
-        DATA.testimonialVideoCarouselSectionData,
+      testimonialCarouselSectionData:
+        DATA.testimonialCarouselSectionData,
       // ============================v1
       //  pageData: DATA.pageData,
       //  escapeGameList: DATA.escapeGameList,

@@ -41,7 +41,7 @@ const PriceForLargerGroup=()=>{
                         
                          <div className="gift-info md:w-1/2 order-2 md:order-1">
                                 <h3 className="text-gold font-semibold mt-8 md:mt-0 text-xl lg:text-2xl mb-4">THE GIFT OF ADVENTURE</h3>
-                                <p className="text-gray-200 lg:text-lg mb:4">The AIA Gift Card programs allows your gift recipients the freedom to choose a unique experience at any of our 27 locations. Whether your purchase is for someone's birthday, anniversary, holiday, or “just because” - give them the gift of adventure!</p>
+                                <p className="text-gray-200 lg:text-lg mb:4">The AIA Gift Card programs allows your gift recipients the freedom to choose a unique experience at any of our 20 locations. Whether your purchase is for someone's birthday, anniversary, holiday, or “just because” - give them the gift of adventure!</p>
                                 <p className="text-gray-300 md:text-lg font-bold lg:text-xl mt-4 lg:mt-8">Two More Reasons to Consider an AIA Gift Card:</p>
                                 <div className="flex  lg:text-lg text-gray-300 mt-4">
                                     <span className="block mt-1 w-6 md:w-8"><img src="/assets/svg/star-bullet.svg"></img></span>

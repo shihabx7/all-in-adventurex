@@ -3,7 +3,7 @@ import { eventListQuery } from "../../lib/query/eventQuery";
 import { activityListQuery } from "../../lib/query/activityQuery";
 import { locationSlugListQuery } from "../../lib/query/navMenuQuery";
 import { apiSetting, apiUrl } from "../../lib/apiSettings";
-
+import { homePageDataFormater } from "../../lib/v2/formate/homePageDataFormater";
 import {
   getPageMeta,
   getPageData,
@@ -74,6 +74,27 @@ export const getHomePageData = async () => {
       totalLocations,
       totalActivities
     ),
+    // ==============================v2
+    pageHeroData: homePageDataFormater.pageHeroData({
+      info: pageResData.pageInfo,
+      pageHeroData: {
+        pageTitle: pageResData.pageTitle,
+        pageSubTitle: pageResData.pageSubTitle,
+      },
+      totalLocation: totalLocations,
+      totalActivities: totalActivities,
+    }),
+    aboutSectionData: homePageDataFormater.aboutSectionData(),
+    escapeGameListSectionData: homePageDataFormater.escapeGameListSectionData({
+      fetchGameList: actctivityListResData,
+      sectionData: pageResData.carouselSectionData,
+    }),
+    otherGameListSectionData: homePageDataFormater.otherGameListSectionData({
+      fetchGameList: actctivityListResData,
+      sectionData: pageResData.carouselSectionData,
+    }),
+
+    // ==============================v2
     escapeGameList: getEscapeGameList(
       actctivityListResData,
       pageResData.carouselSectionData

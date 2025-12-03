@@ -22,6 +22,13 @@ import GiftCardBookingMenu from "../comps/giftCardPageComps/GiftCardBookingMenu"
 import MobileMysteryOtherPageSection from "../comps/mobileEscapeGames/section/MobileMysteryOtherPageSection";
 import MobileEscapeRootMenu from "../comps/mobileEscapeGames/MobileEscapeRootMenu";
 import UnlockYourBundleSection from "../comps/bundle/UnlockYourBundleSection";
+//======================= v2-----------------
+import HomePageGameListBg from "../comps/v2/sharedComs/HomePageGameListBg";
+import HomePageHeroVideoBgSection from "../comps/v2/homePageComps/sections/HomePageHeroVideoBgSection";
+import HomeAboutSection from "../comps/v2/homePageComps/sections/HomeAboutSection";
+import EscapeGamesListSection from "../comps/v2/homePageComps/sections/EscapeGamesListSection";
+import OtherGameSection from "../comps/v2/homePageComps/sections/OtherGameSection";
+
 export default function Home(props) {
   const [showUerBookingList, setShowUerBookingList] = useState(false);
   const [showGiftBookingList, setShowGiftBookingList] = useState(false);
@@ -64,7 +71,7 @@ export default function Home(props) {
 
       <div id="mainContent" className="main-content">
         <HomeHeroNew pageData={props.pageData} />
-        <PageVideoHome pageVideo={props.pageVideo} />
+        <PageVideoHome pageVideo={props.pageVideo} />*
         <EscaeGameSlider escapeGameList={props.escapeGameList} />
         {props.otherGameList.hasGames ? (
           <OtherGameSlider otherGameList={props.otherGameList} />
@@ -74,12 +81,25 @@ export default function Home(props) {
         {/* <UnlimitedEscapeRoomHome
             setShowUerBookingList={setShowUerBookingList}
           />*/}
+        {/*==================v2========== */}
+        {/* <HomePageHeroVideoBgSection pageHeroData={props.pageHeroData} />
+     
+        <HomePageGameListBg>
+          <EscapeGamesListSection
+            escapeGameListSectionData={props.escapeGameListSectionData}
+          />
+          {props.otherGameListSectionData.hasGames && (
+            <OtherGameSection
+              otherGameSectionData={props.otherGameListSectionData}
+            />
+          )}
+        </HomePageGameListBg>*/}
+        {/*=============v2================ */}
         <UnlockYourBundleSection />
         <EventSlider eventList={props.eventList} />
         <MobileMysteryOtherPageSection
           setShowMobileEecapeMenu={setShowMobileEecapeMenu}
           setGoMobileEecapeForm={setGoMobileEecapeForm}
-          
         />
         <GiftCardHomePageSection
           setShowGiftBookingList={setShowGiftBookingList}
@@ -118,6 +138,11 @@ export const getStaticProps = async () => {
       otherGameList: DATA.otherGameList,
       eventList: DATA.eventList,
       testimonialList: DATA.testimonialList,
+      // ======================v2
+      pageHeroData: DATA.pageHeroData,
+      aboutSectionData: DATA.aboutSectionData,
+      escapeGameListSectionData: DATA.escapeGameListSectionData,
+      otherGameListSectionData: DATA.otherGameListSectionData,
     },
 
     // - At most once every 10 seconds

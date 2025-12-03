@@ -35,7 +35,7 @@ export default function EscapeGamesListSection({
               )}
             </div>
             {/*============section head end==========*/}
-
+<div className="py-6 md:py-8 xl:py-12"></div>
             {/*============Escape Game List==========*/}
             <div className="escape-game-list-container lm:max-w-[380px]  zm:max-w-[480px] md:max-w-[760px]  lg:max-w-[960px] xl:max-w-[1180px] 2xl:max-w-[1220px] mx-auto  mt-7 md:mt-8 lg:mt-10">
               <EscapeGameList

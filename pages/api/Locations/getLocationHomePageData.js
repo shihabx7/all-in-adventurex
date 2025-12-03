@@ -1,6 +1,6 @@
 import { apiSetting, apiUrl } from "../../../lib/apiSettings";
 import { toyMakerPageData } from "../../../lib/tempData/toymakerWorkStationTempData";
-
+import { homePageDataFormater } from "../../../lib/v2/formate/homePageDataFormater";
 import {
   LocationHomePageQuery,
   homePageTestimonialQuery,
@@ -79,6 +79,32 @@ export const getLocationHomePageData = async (slug) => {
       testiResData.pageInfo.themeImage,
       pageResData.locationActivities
     ),
+    // ==========================================vv2
+    pageHeroData: homePageDataFormater.pageHeroData({
+      locationSlug: pageResData.slug,
+      info: pageResData.locationInfo,
+      bookingInfo: pageResData.bookingInfo,
+      pageHeroData: pageResData.pageHeroData,
+      totalLocation: totalLocations,
+      totalActivities: pageResData.locationActivities.length,
+    }),
+    aboutSectionData: homePageDataFormater.aboutSectionData({
+      locationSlug: pageResData.slug,
+    }),
+    escapeGameListSectionData: homePageDataFormater.escapeGameListSectionData({
+      locationSlug: pageResData.slug,
+      fetchGameList: pageResData.locationActivities,
+      sectionData: pageResData.carouselSectionData,
+      bookingInfo: pageResData.bookingInfo,
+    }),
+
+    otherGameListSectionData: homePageDataFormater.otherGameListSectionData({
+      locationSlug: pageResData.slug,
+      fetchGameList: pageResData.locationActivities,
+      sectionData: pageResData.carouselSectionData,
+      bookingInfo: pageResData.bookingInfo,
+    }),
+    // =========================================v2
     locationInfo: pageResData.locationInfo,
     pageVideo: getPageVideo(pageResData.pageVideo),
     escapeGameList: getEscapeGameList(

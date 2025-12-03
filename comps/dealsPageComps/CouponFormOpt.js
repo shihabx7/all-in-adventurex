@@ -24,7 +24,7 @@ const CouponFormOpt = (props) => {
   });
 
   useEffect(() => {
-    let sd = (Math.random() * (30.5 - 5.0) + 5.0).toFixed(0);
+    let sd = (Math.random() * (4.0 - 1.0) + 1.0).toFixed(0);
     let ma = (Math.random() * (40 - 2) + 2).toFixed(0);
     setSavedDoller(sd);
     setMinAgo(ma);

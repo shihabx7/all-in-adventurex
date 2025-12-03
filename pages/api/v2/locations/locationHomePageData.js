@@ -90,7 +90,7 @@ export const locationHomePageData = async (slug) => {
     ),
     //=============== v2 data
 
-    pageHeroData: homePageDataFormater.pageHeroDataFormat({
+    pageHeroData: homePageDataFormater.pageHeroData({
       locationSlug: pageResData.slug,
       info: pageResData.locationInfo,
       bookingInfo: pageResData.bookingInfo,
@@ -98,29 +98,26 @@ export const locationHomePageData = async (slug) => {
       totalLocation: totalLocations,
       totalActivities: pageResData.locationActivities.length,
     }),
-    aboutSectionData: homePageDataFormater.aboutSectionDataFormat({
+    aboutSectionData: homePageDataFormater.aboutSectionData({
       locationSlug: pageResData.slug,
     }),
-    escapeGameListSectionData:
-      homePageDataFormater.escapeGameListSectionDataFormat({
-        locationSlug: pageResData.slug,
-        fetchGameList: pageResData.locationActivities,
-        sectionData: pageResData.carouselSectionData,
-        bookingInfo: pageResData.bookingInfo,
-      }),
+    escapeGameListSectionData: homePageDataFormater.escapeGameListSectionData({
+      locationSlug: pageResData.slug,
+      fetchGameList: pageResData.locationActivities,
+      sectionData: pageResData.carouselSectionData,
+      bookingInfo: pageResData.bookingInfo,
+    }),
 
-    otherGameListSectionData:
-      homePageDataFormater.otherGameListSectionDataFormat({
-        locationSlug: pageResData.slug,
-        fetchGameList: pageResData.locationActivities,
-        sectionData: pageResData.carouselSectionData,
-        bookingInfo: pageResData.bookingInfo,
-      }),
-    eventCardListSectionData:
-      homePageDataFormater.eventCardlistSectionDataFormat(),
+    otherGameListSectionData: homePageDataFormater.otherGameListSectionData({
+      locationSlug: pageResData.slug,
+      fetchGameList: pageResData.locationActivities,
+      sectionData: pageResData.carouselSectionData,
+      bookingInfo: pageResData.bookingInfo,
+    }),
+    eventCardListSectionData: homePageDataFormater.eventCardlistSectionData(),
 
-    testimonialVideoCarouselSectionData:
-      homePageDataFormater.testimonialVideoCarouselSectionDataFormat(),
+    testimonialCarouselSectionData:
+      homePageDataFormater.testimonialCarouselSectionData(),
 
     //================ v1 data
   };

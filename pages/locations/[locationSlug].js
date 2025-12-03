@@ -29,6 +29,13 @@ import { useState } from "react";
 import UnlimitedEscapeGameMenu from "../../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
 import UnlockYourBundleSection from "../../comps/bundle/UnlockYourBundleSection";
 
+//========================v2
+import HomePageHeroVideoBgSection from "../../comps/v2/homePageComps/sections/HomePageHeroVideoBgSection";
+import HomeAboutSection from "../../comps/v2/homePageComps/sections/HomeAboutSection";
+import HomePageGameListBg from "../../comps/v2/sharedComs/HomePageGameListBg";
+import EscapeGamesListSection from "../../comps/v2/homePageComps/sections/EscapeGamesListSection";
+import OtherGameSection from "../../comps/v2/homePageComps/sections/OtherGameSection";
+
 const Locations = (props) => {
   /* customizing breadcum */
   const [showUerBookingList, setShowUerBookingList] = useState(false);
@@ -79,6 +86,11 @@ const Locations = (props) => {
           allBooking={props.allBooking}
           isPublished={props.isPublished}
         />
+
+        <UnlimitedEscapeRoomHome
+          setShowUerBookingList={setShowUerBookingList}
+          locationSlug={props.locationSlug}
+        />
         <EscaeGameSlider
           escapeGameList={props.escapeGameList}
           locationSlug={props.locationSlug}
@@ -93,56 +105,72 @@ const Locations = (props) => {
         ) : (
           <></>
         )}
-      </div>
-      {/* <UnlimitedEscapeRoomHome
-          setShowUerBookingList={setShowUerBookingList}
-          locationSlug={props.locationSlug}
-        />*/}
-      <UnlockYourBundleSection locationSlug={props.locationSlug} />
-      <EventSlider
-        eventList={props.eventList}
-        locationSlug={props.locationSlug}
-        isPublished={props.isPublished}
-      />
-      {props.toyMakerPageData && (
-        <ToyMakerHomeSection
-          sectionData={props.toyMakerPageData.homePageSectionData}
-          bookingData={props.toyMakerPageData.bookingData}
-          locationSlug={props.locationSlug}
-        />
-      )}
-      {props.hasMobileEscapeRoom ? (
-        <MobileMysteryOtherPageSection
-          locationSlug={props.locationSlug}
-          mobileEscapeRoomData={props.mobileEscapeRoomData}
-        />
-      ) : (
-        <></>
-      )}
-      <GiftCardHomePageSection
-        isPublished={props.isPublished}
-        locationSlug={props.locationSlug}
-        locationSlugList={props.locationSlugList}
-        giftBooking={props.giftBooking}
-      />
-      <WhatIsEscape />
-      <WhoCanplay />
-      <TestimonialLocSlider testimonialList={props.testimonialList} />
-      <LocationDetails
-        mapInfo={props.mapInfo}
-        locationInfo={props.locationInfo}
-        businessHours={props.businessHours}
-        holidayHours={props.holidayHours}
-        locationName={props.locationName}
-        locationSlug={props.locationSlug}
-      />
 
-      <LocationFooter
-        locationName={props.locationName}
-        locationSlug={props.locationSlug}
-        locationSlugList={props.locationSlugList}
-        totalLocations={props.totalLocations}
-      />
+        {/*========================================================v2===*/}
+        {/* <HomePageHeroVideoBgSection
+          pageHeroData={props.pageHeroData}
+          allBooking={props.allBooking}
+        />
+  
+        <HomePageGameListBg>
+          <EscapeGamesListSection
+            escapeGameListSectionData={props.escapeGameListSectionData}
+            locationSlug={props.locationSlug}
+          />
+          {props.otherGameListSectionData.hasGames && (
+            <OtherGameSection
+              otherGameSectionData={props.otherGameListSectionData}
+              locationSlug={props.locationSlug}
+            />
+          )}
+        </HomePageGameListBg>*/}
+        {/*========================================================v2 end===*/}
+        <UnlockYourBundleSection locationSlug={props.locationSlug} />
+        <EventSlider
+          eventList={props.eventList}
+          locationSlug={props.locationSlug}
+          isPublished={props.isPublished}
+        />
+        {props.toyMakerPageData && (
+          <ToyMakerHomeSection
+            sectionData={props.toyMakerPageData.homePageSectionData}
+            bookingData={props.toyMakerPageData.bookingData}
+            locationSlug={props.locationSlug}
+          />
+        )}
+        {props.hasMobileEscapeRoom ? (
+          <MobileMysteryOtherPageSection
+            locationSlug={props.locationSlug}
+            mobileEscapeRoomData={props.mobileEscapeRoomData}
+          />
+        ) : (
+          <></>
+        )}
+        <GiftCardHomePageSection
+          isPublished={props.isPublished}
+          locationSlug={props.locationSlug}
+          locationSlugList={props.locationSlugList}
+          giftBooking={props.giftBooking}
+        />
+        <WhatIsEscape />
+        <WhoCanplay />
+        <TestimonialLocSlider testimonialList={props.testimonialList} />
+        <LocationDetails
+          mapInfo={props.mapInfo}
+          locationInfo={props.locationInfo}
+          businessHours={props.businessHours}
+          holidayHours={props.holidayHours}
+          locationName={props.locationName}
+          locationSlug={props.locationSlug}
+        />
+
+        <LocationFooter
+          locationName={props.locationName}
+          locationSlug={props.locationSlug}
+          locationSlugList={props.locationSlugList}
+          totalLocations={props.totalLocations}
+        />
+      </div>
     </>
   );
 };
@@ -213,6 +241,11 @@ export const getStaticProps = async (context) => {
       hasMobileEscapeRoom: DATA.hasMobileEscapeRoom,
       mobileEscapeRoomData: DATA.mobileEscapeRoomData,
       toyMakerPageData: DATA.toyMakerPageData,
+      //===================v2
+      pageHeroData: DATA.pageHeroData,
+      aboutSectionData: DATA.aboutSectionData,
+      escapeGameListSectionData: DATA.escapeGameListSectionData,
+      otherGameListSectionData: DATA.otherGameListSectionData,
     },
     revalidate: 12,
   };
