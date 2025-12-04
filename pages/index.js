@@ -71,7 +71,7 @@ export default function Home(props) {
 
       <div id="mainContent" className="main-content">
         <HomeHeroNew pageData={props.pageData} />
-        <PageVideoHome pageVideo={props.pageVideo} />*
+        <PageVideoHome pageVideo={props.pageVideo} />
         <EscaeGameSlider escapeGameList={props.escapeGameList} />
         {props.otherGameList.hasGames ? (
           <OtherGameSlider otherGameList={props.otherGameList} />
