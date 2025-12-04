@@ -68,7 +68,6 @@ export default function Home(props) {
         otherGameSlugList={props.otherGameSlugList}
         eventSlugList={props.eventSlugList}
       />
-
       <div id="mainContent" className="main-content">
         <HomeHeroNew pageData={props.pageData} />
         <PageVideoHome pageVideo={props.pageVideo} />
@@ -144,7 +143,6 @@ export const getStaticProps = async () => {
       escapeGameListSectionData: DATA.escapeGameListSectionData,
       otherGameListSectionData: DATA.otherGameListSectionData,
     },
-
     // - At most once every 10 seconds
     revalidate: 12,
   };

@@ -87,10 +87,10 @@ const Locations = (props) => {
           isPublished={props.isPublished}
         />
 
-        <UnlimitedEscapeRoomHome
+        {/*<UnlimitedEscapeRoomHome
           setShowUerBookingList={setShowUerBookingList}
           locationSlug={props.locationSlug}
-        />
+        />*/}
         <EscaeGameSlider
           escapeGameList={props.escapeGameList}
           locationSlug={props.locationSlug}
