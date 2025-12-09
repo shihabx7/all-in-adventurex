@@ -137,7 +137,7 @@ const EventCarousel = (props) => {
                               onClick={(e) =>
                                 bookEventFlow(e, props.locationSlug)
                               }
-                              className="border loc-event max-w-[220px] border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700"
+                              className="border loc-event max-w-[220px] border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-semibold text-lg mb-2 hover:bg-red-700 hover:border-red-700"
                             >
                               BOOK EVENT
                             </button>
@@ -148,7 +148,7 @@ const EventCarousel = (props) => {
                                 "/events/" +
                                 event.eventSlug
                               }
-                              className="border max-w-[200px]  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700"
+                              className="border max-w-[200px]  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-semibold text-lg mb-2 hover:bg-red-700 hover:border-red-700"
                             >
                               LEARN MORE
                             </a>

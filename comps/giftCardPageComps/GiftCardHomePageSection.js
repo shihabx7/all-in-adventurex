@@ -60,14 +60,14 @@ const GiftCardHomePageSection = (props) => {
                         {props.giftBooking.isActive ? (
                           <button
                             onClick={() => giftBooking(props.giftBooking)}
-                            className="bg-red-600  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-10 md:px-12 lg:px-10 xl:px-12 block  text-center text-gray-100 rounded-full font-medium"
+                            className="bg-red-600  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-10 md:px-12 lg:px-10 xl:px-12 block  text-center text-gray-100 rounded-full font-semibold"
                           >
                             BUY GIFT CARDS
                           </button>
                         ) : (
                           <button
                             onClick={() => showLocation()}
-                            className="bg-red-600  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-8 md:px-12 lg:px-10 xl:px-12 block  text-center text-gray-100 rounded-full font-medium"
+                            className="bg-red-600  hover:bg-red-700 hover:border-red-700 border-2 border-red-600 py-3 px-8 md:px-12 lg:px-10 xl:px-12 block  text-center text-gray-100 rounded-full font-semibold"
                           >
                             COMING SOON
                           </button>

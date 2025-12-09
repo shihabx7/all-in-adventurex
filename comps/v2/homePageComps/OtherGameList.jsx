@@ -1,7 +1,7 @@
 import { useSiteData } from "../../../contexts/SiteDataContext";
 
 export default function OtherGameList({ otherGameList, locationSlug }) {
-   const { openModalMenu, setModalMenuType, setModalGame } = useSiteData();
+  const { openModalMenu, setModalMenuType, setModalGame } = useSiteData();
   //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle
   const showLocModal = (activitySlug) => {
     const body = document.getElementsByTagName("body")[0];
@@ -153,14 +153,16 @@ export default function OtherGameList({ otherGameList, locationSlug }) {
                     {item.bookingInfo ? (
                       <button
                         onClick={(e) => bookGame(e, item.bookingInfo)}
-                        className="border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700 text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center "
+                        className="border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700
+                         text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-semibold"
                       >
                         BOOK NOW
                       </button>
                     ) : (
                       <button
                         onClick={(e) => showLocModal(item.gameInfo.slug)}
-                        className="border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700 text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center "
+                        className="border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700
+                         text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-semibold"
                       >
                         BOOK NOW
                       </button>
@@ -169,14 +171,16 @@ export default function OtherGameList({ otherGameList, locationSlug }) {
                     {locationSlug ? (
                       <a
                         href={`/${locationSlug}/activities/${item.gameInfo.slug}`}
-                        className="border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700 text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center"
+                        className="border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
+                         text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-semibold"
                       >
                         EXPLORE
                       </a>
                     ) : (
                       <a
                         href={`/activities/${item.gameInfo.slug}`}
-                        className="border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700 text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center"
+                        className="border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
+                         text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-semibold"
                       >
                         EXPLORE
                       </a>

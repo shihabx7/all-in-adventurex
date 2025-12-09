@@ -160,13 +160,13 @@ const ActivityRootList = (props) => {
                         onClick={(e) =>
                           showLocModalForGame(activity.activitySlug)
                         }
-                        className="border-2 w-[240px] card-book-btn-r block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white"
+                        className="border-2 w-[240px] card-book-btn-r block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-semibold text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white"
                       >
                         BOOK NOW
                       </button>
                       <a
                         href={"/activities/" + activity.activitySlug}
-                        className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white"
+                        className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-semibold text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white"
                       >
                         EXPLORE
                       </a>

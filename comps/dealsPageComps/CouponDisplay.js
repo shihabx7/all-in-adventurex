@@ -10,12 +10,11 @@ const CouponDisplay = () => {
             PLAY IT AGAIN—DOUBLE THE FUN, HALF THE PRICE{" "}
           </h2>
         </div>
-      
       </div>
       {/* ==================coupon desc============================= */}
       {/* ==================coupon from============================= */}
       <div className="copoun-form-box bg-[#F4E6C3] flex justify-between flex-col  md:flex-row space-y-2 space-x-0 md:space-y-0  md:space-x-2 ">
-         {/* ==================coupon offer============================= */}
+        {/* ==================coupon offer============================= */}
         <div className="md:w-1/3 coupon-offer-col bg-[#000000]  text-center">
           <div className="py-12">
             <p className="golden-text text-[64px] font-bold font-os leading-[1.2]">
@@ -24,7 +23,7 @@ const CouponDisplay = () => {
             <p className="golden-text text-[48px] font-os uppercase">off</p>
           </div>
         </div>
-         {/* ==================coupon offer============================= */}
+        {/* ==================coupon offer============================= */}
         {/* ==================coupon text============================= */}
         <div className="coupon-form-col md:w-2/3 px-4 flex flex-col justify-between ">
           <div className="coupon-form-top flex justify-between items-center mt-2 md:mt-4">
@@ -44,14 +43,6 @@ const CouponDisplay = () => {
               </span>
             </div>
           </div>
-          {/*
-          <div className="coupon-code-col mb-4 md:mb-0 mt-4 max-w-[260px] md:max-w-[280px] inline-block relative">
-            <div className="coupon-code-box flex space-x-2 items-center justify-end  h-[60px] px-2 border-2 border-dashed border-[#E4CB98] rounded bg-[#FDF1D3] drop-shadow-md"></div>
-            <div className="flex items-center justify-center coupon-hider absolute top-0 left-0 h-full rounded w-[100%] bg-golden text-center text-white border-2 border-dashed border-[#FDF1D3">
-              <p className="lg:text-lg">Available In-store</p>
-            </div>
-          </div>
-          */}
           <p className="xl:text-lg text-[#464646] mt-4">
             Play one escape room and get 50% OFF your second room! You have two
             options for using this discount:
@@ -64,13 +55,16 @@ const CouponDisplay = () => {
                 this offer to our team in-store.
               </li>
               <li className="lg:text-lg text-[#464646] my-3">
-                <span className="font-semibold">Same-Day Adventure: </span>Book
-                your second room on the same day as your first! Simply mention
-                this offer to our team in-store.
+                <span className="font-semibold">Future Booking: </span>After
+                booking your first escape room, you will receive a unique 50%
+                OFF code via email. This code is valid for 21 days from the date
+                of issue.
               </li>
             </ul>
           </div>
-           <p className="xl:text-lg text-[#464646] mt-2 pb-4">* Valid any day of the week. In-store or online purchase.</p>
+          <p className="xl:text-lg text-[#464646] mt-2 pb-4">
+            * Valid any day of the week. In-store or online purchase.
+          </p>
         </div>
       </div>
       {/* ==================coupon text end============================= */}

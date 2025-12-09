@@ -52,13 +52,15 @@ export const getLocationHomePageData = async (slug) => {
   const locationListobj = await locationListRes.json();
   const locationListArr = locationListobj.data;
   const totalLocations = 20;
+
+  const activitisForLoc=getEscapeGameSlugList(pageResData.locationActivities)
   //const tm = homePageMobileEscapeRoomSectionData(mobileEscapeRoom);
   //console.log("mobileEscapeRoomData" + JSON.stringify(tm.infoList));
   //console.log("Meta : " + JSON.stringify(getLocationSlugList(locationListArr)));
   const DATA = {
     locationSlugList: getLocationSlugList(locationListArr),
 
-    escapeGameSlugList: getEscapeGameSlugList(pageResData.locationActivities),
+    escapeGameSlugList: activitisForLoc, //getEscapeGameSlugList(pageResData.locationActivities),
     otherGameSlugList: getOtherGameSlugList(pageResData.locationActivities),
     eventSlugList: getEventSlugList(pageResData.locationEvents),
     locationName: pageResData.locationName,
@@ -86,7 +88,7 @@ export const getLocationHomePageData = async (slug) => {
       bookingInfo: pageResData.bookingInfo,
       pageHeroData: pageResData.pageHeroData,
       totalLocation: totalLocations,
-      totalActivities: locationListArr.length,
+      totalActivities: activitisForLoc.length,
     }),
     aboutSectionData: homePageDataFormater.aboutSectionData({
       locationSlug: pageResData.slug,
