@@ -1,8 +1,29 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Link from "next/link";
+import { useSiteData } from "../../contexts/SiteDataContext";
+import { locationBookingInfo } from "../../lib/v2/data/locationBookingInfo";
 
 const EventCarousel = (props) => {
+  const { openModalMenu, setModalMenuType } = useSiteData();
+  //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle
+  const showLocModal = () => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.remove("overflow-hidden");
+    setModalMenuType("partyPackage-list");
+    openModalMenu();
+  };
+  const bookEventFlow = (e, locationSlug) => {
+    e.preventDefault();
+    let bookingData = locationBookingInfo[locationSlug];
+    FH.open({
+      shortname: bookingData.shortName,
+      fallback: "simple",
+      fullItems: "yes",
+      flow: bookingData.partyPackageFlow,
+    });
+  };
+  // new party booking setion
   const showLocation = () => {
     const body = document.getElementsByTagName("body")[0];
     body.classList.add("overflow-hidden");
@@ -109,48 +130,81 @@ const EventCarousel = (props) => {
                           {showDescription(event.description)}
                         </p>
                       </div>
-                      <div className="event-booking-car-link mt-1 text-center">
-                        {props.locationSlug ? (
-                          <>
-                            {props.isPublished ? (
-                              <>
-                                {event.isActive ? (
-                                  <a
-                                    href={
-                                      "/" +
-                                      props.locationSlug +
-                                      "/events/" +
-                                      event.eventSlug +
-                                      "#eventbooking"
-                                    }
-                                    className="border bt1 max-w-[220px] card-book-btnx block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700"
-                                  >
-                                    BOOK NOW
-                                  </a>
-                                ) : (
-                                  <button
-                                    onClick={showLocation}
-                                    className="border max-w-[220px] card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700"
-                                  >
-                                    COMING SOON
-                                  </button>
-                                )}
-                              </>
-                            ) : (
-                              <button
-                                onClick={showLocation}
-                                className="border max-w-[220px] card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700"
-                              >
-                                COMING SOON
-                              </button>
-                            )}
-                          </>
-                        ) : (
+                      <div className="event-booking-car-link mt-1 text-center ev-book-btn">
+                        {props.locationSlug && (
+                          <div className="flex flex-col justify-center items-center  space-y-2 md:space-y-2">
+                            <button
+                              onClick={(e) =>
+                                bookEventFlow(e, props.locationSlug)
+                              }
+                              className="border loc-event max-w-[220px] border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700"
+                            >
+                              BOOK EVENT
+                            </button>
+                            <a
+                              href={
+                                "/" +
+                                props.locationSlug +
+                                "/events/" +
+                                event.eventSlug
+                              }
+                              className="border max-w-[200px]  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700"
+                            >
+                              LEARN MORE
+                            </a>
+                          </div>
+                        )}
+                        {!props.locationSlug && (
+                          <div className="flex flex-col root-event justify-center items-center   space-y-2 md:space-y-2">
+                            <button
+                              onClick={showLocModal}
+                              className="border max-w-[220px]   border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700"
+                            >
+                              BOOK EVENT
+                            </button>
+                            <a
+                              href={"/events/" + event.eventSlug}
+                              className="border max-w-[200px]    border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700"
+                            >
+                              LEARN MORE
+                            </a>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+        {/*====== slide 1========= */}
+      </Carousel>
+    </div>
+  );
+};
+
+export default EventCarousel;
+
+/*============================= old btn
+
+
+
+  {props.locationSlug ? (
                           <button
-                            onClick={showLocation}
+                            onClick={(e) =>
+                              bookEventFlow(e, props.locationSlug)
+                            }
                             className="border max-w-[220px] card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700"
                           >
-                            {event.isPublished ? "BOOK EVENT" : "COMING SOON"}
+                            BOOK EVENT
+                          </button>
+                        ) : (
+                          <button
+                            onClick={showLocModal}
+                            className="border max-w-[220px] card-book-btn block mx-auto border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700"
+                          >
+                            BOOK EVENT
                           </button>
                         )}
                         {props.locationSlug ? (
@@ -173,18 +227,5 @@ const EventCarousel = (props) => {
                             LEARN MORE
                           </a>
                         )}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-        {/*====== slide 1========= */}
-      </Carousel>
-    </div>
-  );
-};
 
-export default EventCarousel;
+=========================*/

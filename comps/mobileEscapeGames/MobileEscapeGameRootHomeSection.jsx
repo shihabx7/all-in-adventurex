@@ -47,9 +47,9 @@ const MobileEscapeGameRootHomeSection = (props) => {
   };
   return (
     <>
-      <div className="mbl-h mbe-root">
+      <div className="mbl-h mbe-root mk">
         <div className="mbl-h-container max-w-7xl mx-auto py-16 md:py-28 2xl:py-32 px-4 md:px-4 lg:px-4">
-          <div className="mbl-row flex flex-col lg:flex-row jsutify-between  space-x-0 lg:space-x-10 2xl:space-x-16 items-center md:px-8 lg:px-0">
+          <div className="mbl-row flex flex-col lg:flex-row jsutify-between  space-x-0 lg:space-x-10 2xl:space-x-16 items-center md:px-8 lg:px-5">
             <div className="mbl-col w-full lg:w-1/2 order-2 lg:order-1">
               {/* ==================section title=====================*/}
               <div className="section-title-container">

@@ -18,7 +18,7 @@ const getActivitySlugs = async () => {
 
   const activitiesSlug = formatSlugs(allSlugs.data);
 
-  console.log("all activity slug", activitiesSlug);
+  //console.log("all activity slug", activitiesSlug);
 
   return activitiesSlug;
 };

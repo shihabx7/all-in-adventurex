@@ -1,11 +1,13 @@
 import TitleSeparator from "../util/TitleSeparator";
-
+import { useSiteData } from "../../contexts/SiteDataContext";
 const EventRootList = (props) => {
-  const showLocation = () => {
+  const { openModalMenu, setModalMenuType } = useSiteData();
+  //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle
+  const showLocModal = () => {
     const body = document.getElementsByTagName("body")[0];
-    body.classList.add("overflow-hidden");
-
-    document.getElementById("locmenu").classList.remove("hidden");
+    body.classList.remove("overflow-hidden");
+    setModalMenuType("partyPackage-list");
+    openModalMenu();
   };
 
   return (
@@ -68,7 +70,7 @@ const EventRootList = (props) => {
 
                   <div className="card-game-link mt-4 text-left">
                     <button
-                      onClick={showLocation}
+                      onClick={showLocModal}
                       className="border-2 w-[240px] card-book-btn block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white"
                     >
                       BOOK EVENT

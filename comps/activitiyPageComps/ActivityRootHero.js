@@ -1,5 +1,17 @@
-import HeroLocBtn from "../util/HeroLocBtn";
+// import HeroLocBtn from "../util/HeroLocBtn";
+import { useSiteData } from "../../contexts/SiteDataContext";
+
 const ActivityRootHero = (props) => {
+  const { openModalMenu, setModalMenuType, setModalGame } = useSiteData();
+  //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle
+  const showLocModalForGame = (gameSlug) => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.remove("overflow-hidden");
+    setModalGame(gameSlug);
+    setModalMenuType("game");
+    openModalMenu();
+  };
+
   return (
     <div
       className={"home-hero bg-[#111111]"}
@@ -47,11 +59,18 @@ const ActivityRootHero = (props) => {
               }}
             ></div>
           </div>
-          <div className="max-w-md mx-auto mt-5 rm:mt-6 xm:mt-6  md:mt-8 ">
-            {/*============location search btn==========*/}
-            <HeroLocBtn />
-            {/*============location search btn==========*/}
+
+          {/*============location search btn==========*/}
+          <div className="md:max-w-[380px] xl:max-w-[400px] mx-auto mt-5 rm:mt-6 xm:mt-6 md:mt-8  xl:mt-10 ">
+            <button
+              onClick={(e) => showLocModalForGame(props.activitySlug)}
+              className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[15px] rm:text-base md:text-lg"
+            >
+              BOOK THIS GAME
+            </button>
           </div>
+          {/*============location search btn==========*/}
+
           {props.pageData.pageNotice ? (
             <div
               className="home-botice-des mt-4 md:mt-8 text-gray-300 md:text-slate-50 max-w-[700px] mx-auto text-center md:text-lg"

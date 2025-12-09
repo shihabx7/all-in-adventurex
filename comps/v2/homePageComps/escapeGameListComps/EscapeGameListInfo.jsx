@@ -1,10 +1,20 @@
 import { useEffect, useState } from "react";
+import { useSiteData } from "../../../../contexts/SiteDataContext";
 export default function EscapeGameListInfo({
   gameInfo,
   listCardBgImage,
   bookingInfo,
   locationSlug,
 }) {
+  const { openModalMenu, setModalMenuType, setModalGame } = useSiteData();
+  //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle
+  const showLocModal = (activitySlug) => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.remove("overflow-hidden");
+    setModalGame(activitySlug);
+    setModalMenuType("game");
+    openModalMenu();
+  };
   const gTag = gameInfo.gameTheme.concat(gameInfo.recommendFor);
   const showLocation = (e) => {
     e.preventDefault();
@@ -34,6 +44,7 @@ export default function EscapeGameListInfo({
 
   return (
     <div className="egl-info-box relative">
+       {/*=======================================Game-card-bg*/}
       <div className="egl-info-bg-img absolute top-0 left-0 w-full h-full">
         <img
           className="w-full h-full object-cover object-bottom"
@@ -49,6 +60,7 @@ export default function EscapeGameListInfo({
           }
         ></img>
       </div>
+       {/*=======================================Game-card-content=============================*/}
       <div className="egl-info-content relative z-[20] px-2 py-4 rm:px-2 rm:py-5 zm:px-4 zm:py-5 lg:p-6  xl:p-10 2xl:p-10">
         <h3 className="egl-game-title leading-[1.1] font-bold text-[20px] rm:text-[22px] zm:text-[26px] xl:text-[30px]  2xl:text-[32px] uppercase text-[#f0f0f0]">
           {gameInfo.gameTitle}
@@ -58,15 +70,15 @@ export default function EscapeGameListInfo({
           <div className="egl-price-wrapper relative">
             <div className="bg-img ">
               <img
-                className="w-[88px] zm:w-[84px] lg:w-[90px] xl:w-[100px] 2xl:w-[106px]"
+                className="w-[92px] rm:w-[98px] md:w-[94px] xl:w-[108px] 2xl:w-[120px]"
                 src={"/assets/escape-games/icons/escape-game-price-bg.svg"}
               ></img>
             </div>
             <div className="w-full h-full absolute top-0 left-0 flex flex-col justify-center items-center ">
-              <p className="text-center text-[14px] zm:text-[14px] xl:text-[16px] text-[#101010] leading-[1.1]">
+              <p className="text-center text-[#AAA7A7] text-[.9rem] rm:text-[.94rem] md:text-[.96rem] xl:text-[1rem] 3xl:text-[1.1rem] leading-[1.1]">
                 From
               </p>
-              <p className="text-center text-[16px] zm:text-[16px] lg:text-[18px] xl:text-[20px] text-[#DC2626] font-bold leading-[1.2]">
+              <p className="text-center text-[#D4B56A] font-bold text-[1rem] rm:text-[1.15rem] md:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.28rem] leading-[1.2]">
                 ${gameInfo.price}
               </p>
             </div>
@@ -158,7 +170,7 @@ export default function EscapeGameListInfo({
               </button>
             ) : (
               <button
-                onClick={(e) => showLocation(e)}
+                onClick={(e) => showLocModal(gameInfo.slug)}
                 className=" w-[48%] lm:w-[47%] md:w-auto border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700 font-semibold text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center "
               >
                 BOOK NOW

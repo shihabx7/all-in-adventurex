@@ -1,34 +1,14 @@
-import LocationHeroHours from "../locationsPage/LocationHeroHours";
+import { useState, useEffect, useRef } from "react";
 import { FiX } from "react-icons/fi";
 import { FaAngleDown } from "react-icons/fa";
+import { locationBookingInfo } from "../../lib/v2/data/locationBookingInfo";
+import LocationHeroHours from "../locationsPage/LocationHeroHours";
 import TitleWithSubtitleNew from "../util/TitleWithSubtitleNew";
-import { useState, useEffect, useRef } from "react";
 
 const EventLocHero = (props) => {
+  //====================================================== section state+effect
   const [showHours, setShowHours] = useState(false);
   const hourref = useRef();
-  const bookAll = (bookingData) => {
-    FH.open({
-      shortname: bookingData.shortName,
-      fallback: "simple",
-      fullItems: "yes",
-      flow: bookingData.flow,
-      view: "items",
-    });
-  };
-
-  const closeHourDetails = () => {
-    setShowHours(false);
-    const body = document.getElementsByTagName("body")[0];
-    body.classList.remove("overflow-hidden");
-  };
-  const showHourDetails = () => {
-    const body = document.getElementsByTagName("body")[0];
-    body.classList.add("overflow-hidden");
-
-    setShowHours(true);
-  };
-
   useEffect(() => {
     const checkIfClickedOutsidehrs = (e) => {
       if (showHours && hourref.current && !hourref.current.contains(e.target)) {
@@ -44,9 +24,40 @@ const EventLocHero = (props) => {
       document.removeEventListener("mouseup", checkIfClickedOutsidehrs);
     };
   }, [showHours]);
+  //====================================================== section function
+  const closeHourDetails = () => {
+    setShowHours(false);
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.remove("overflow-hidden");
+  };
+  const showHourDetails = () => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.add("overflow-hidden");
+
+    setShowHours(true);
+  };
+  const bookAll = (bookingData) => {
+    FH.open({
+      shortname: bookingData.shortName,
+      fallback: "simple",
+      fullItems: "yes",
+      flow: bookingData.flow,
+      view: "items",
+    });
+  };
+  const bookEventFlow = (locationSlug) => {
+    let bookingData = locationBookingInfo[locationSlug];
+    FH.open({
+      shortname: bookingData.shortName,
+      fallback: "simple",
+      fullItems: "yes",
+      flow: bookingData.partyPackageFlow,
+    });
+  };
+  //=============================================================== ui
   return (
     <>
-      {/* ?autolightframe=yes*/}
+      {/*=============================================================== hours modal===*/}
       {props.locationInfo && showHours && (
         <div className="overflow-y-scroll h-screen w-screen bg-[rgba(0,0,0,0.8)] z-[1000000] top-0 left-0  pb-10 md:pb-0 fixed">
           <div className="max-w-[1024px] mx-auto px-3 md:px-6 lg:px-4 relative">
@@ -83,6 +94,7 @@ const EventLocHero = (props) => {
           </div>
         </div>
       )}
+      {/*=============================================================== hours modal===*/}
       <div
         className="bg-[#111111] home-hero"
         style={{
@@ -96,9 +108,10 @@ const EventLocHero = (props) => {
               alt={props.pageData.pageHeroMobile.alt}
             ></img>
           </div>
-          {/* shadow */}
+          {/*====================================== shadow======================= */}
           <div className="w-full h-full fyp-baner absolute top-0 left-0 md:hidden z-10"></div>
-          {/* shadow */}
+          {/*===================================== shadow======================== */}
+            {/*===================================== main cotent======================== */}
           <div className="max-w-7xl home-hero-containerx mx-auto mt-[-28%] rm:mt-[-26%] lm:mt-[-25%] zm:mt-[-24%] sm:mt-[-22%] md:mt-0 md:pt-[20px] lg:pt-0 relative px-2 lm:px-4  z-20">
             <div className="page-benar-info">
               {!props.isPublished ? (
@@ -126,7 +139,7 @@ const EventLocHero = (props) => {
               ></div>
             </div>
             <div className="max-w-md mx-auto mt-5 rm:mt-6 xm:mt-6  md:mt-8 pb-6 md:pb-12 lg:pb-8">
-              {/*============Game Booking btn==========*/}
+              {/*============event Booking btn==========*/}
               {props.isPublished ? (
                 <>
                   {props.activeGameBooking ? (
@@ -137,12 +150,12 @@ const EventLocHero = (props) => {
                       BOOK YOUR ESCAPE ROOM
                     </button>
                   ) : (
-                    <a
-                      href={"#eventbooking"}
+                    <button
+                      onClick={() => bookEventFlow(props.pageData.locationSlug)}
                       className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg"
                     >
                       BOOK YOUR EVENT
-                    </a>
+                    </button>
                   )}
                 </>
               ) : (
@@ -161,7 +174,7 @@ const EventLocHero = (props) => {
               {/*============Hero Notice==========*/}
             </div>
           </div>
-          {/*============Activity info ==========*/}
+          {/*============location  info ==========*/}
 
           <div className="game-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[96%]  xm:max-w-[92%] mx-auto md:max-w-3xl absolute bottom-[-20%] rm:bottom-[-18%] lm:bottom-[-18%] zm:bottom-[-17%] sm:bottom-[-17%] md:bottom-[-15%] left-0 right-0  bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded z-40">
             <div className="flex flex-wrap w-full justify-center md:grid md:grid-cols-5  md:justify-evenly items-center ">

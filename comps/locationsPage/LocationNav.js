@@ -1,18 +1,22 @@
 import { useEffect, useRef, useState } from "react";
 import { FiX } from "react-icons/fi";
+import { useSiteData } from "../../contexts/SiteDataContext";
+
+//import MobileEscapeStickyBar from "../mobileEscapeGames/MobileEscapeStickyBar";
+//import StickyGiftBar from "../giftCardPageComps/StickyGiftBar";
+//import UerStickyBar from "../unlimitedEscapeRoom/UerStickyBar";
+
 import SvglogoMain from "../headerComps/SvglogoMain";
 import HeaderLocMenu from "../headerComps/HeaderLocMenu";
 import DropDownMenu from "../headerComps/DropDownMenu";
-import EventBookingBtn from "../headerComps/EventBookingBtn";
+//import EventBookingBtn from "../headerComps/EventBookingBtn";
 import GameBookingBtn from "../headerComps/GameBookingBtn";
 import HeaderNotice from "../headerComps/HeaderNotice";
 import LocationMenuBtnHeader from "../util/LocationMenuBtnHeader";
 import MobileBookingBtn from "../headerComps/MobileBookingBtn";
 import MobileEscapeBookingBtn from "../headerComps/MobileEscapeBookingBtn";
-import MobileEscapeStickyBar from "../mobileEscapeGames/MobileEscapeStickyBar";
-import StickyGiftBar from "../giftCardPageComps/StickyGiftBar";
-import UerStickyBar from "../unlimitedEscapeRoom/UerStickyBar";
 import { navNotice } from "../../lib/tempData/tempNavNotice";
+import { locationBookingInfo } from "../../lib/v2/data/locationBookingInfo";
 
 const LocationNav = (props) => {
   const [showSlug, setShowSlug] = useState(null);
@@ -60,6 +64,16 @@ const LocationNav = (props) => {
     };
   }, [showMe]);
 
+  const bookEventFlow = (locationSlug) => {
+    let bookingData = locationBookingInfo[locationSlug];
+    FH.open({
+      shortname: bookingData.shortName,
+      fallback: "simple",
+      fullItems: "yes",
+      flow: bookingData.partyPackageFlow,
+    });
+  };
+
   return (
     <>
       {/* ============Location List Menu */}
@@ -69,16 +83,6 @@ const LocationNav = (props) => {
         </div>
       )}
       {/* ============Location List Menu end*/}
-
-      {/* //sticky-bottom-bar for mobile escape room
-       <UerStickyBar locationSlug={props.locationSlug} />
-      {props.hasMobileEscapeRoom &&
-      props.activitySlug !== "mobile-escape-room" ? (
-        <MobileEscapeStickyBar locationSlug={props.locationSlug} />
-      ) : (
-        <></>
-      )}*/}
-
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">
         <div id="header-container-s" className="header-container-s">
@@ -124,23 +128,14 @@ const LocationNav = (props) => {
                 {props.activitySlug !== "mobile-escape-room" ? (
                   <>
                     <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
-                      <EventBookingBtn
-                        locationSlug={
-                          props.locationSlug ? props.locationSlug : false
-                        }
-                        activitySlug={
-                          props.activitySlug ? props.activitySlug : false
-                        }
-                        eventSlug={props.eventSlug ? props.eventSlug : false}
-                        partyBooking={
-                          props.partyBooking ? props.partyBooking : false
-                        }
-                        activeGameBooking={
-                          props.activeGameBooking
-                            ? props.activeGameBooking
-                            : false
-                        }
-                      />
+                      <div className="header-btn">
+                        <button
+                          onClick={() => bookEventFlow(props.locationSlug)}
+                          className="bg-transparent cursor-pointer rounded font-medium text-white hover:bg-red-700 py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+                        >
+                          BOOK EVENT
+                        </button>
+                      </div>
                     </div>
                     <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
                       <GameBookingBtn

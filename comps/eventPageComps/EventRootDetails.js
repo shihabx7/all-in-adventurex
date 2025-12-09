@@ -1,17 +1,17 @@
 import { useRef, useState, useEffect } from "react";
+import { useSiteData } from "../../contexts/SiteDataContext";
 import EventDbtn from "../util/EventDbtn";
-
 import GameTitleSeparator from "../util/GameTitleSeparator";
-import EventBookBtn from "../util/EventBookBtn";
 import SectionBorderTop from "../util/SectionBorderTop";
-
 const EventRootDetails = (props) => {
   const [showPack, setShowPack] = useState(false);
-  const showToast = () => {
-    setShowPack(true);
-  };
-  const closeToast = () => {
-    setShowPack(false);
+  const { openModalMenu, setModalMenuType } = useSiteData();
+  //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle
+  const showLocModal = () => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.remove("overflow-hidden");
+    setModalMenuType("partyPackage-list");
+    openModalMenu();
   };
   const ref = useRef();
   useEffect(() => {
@@ -76,7 +76,14 @@ const EventRootDetails = (props) => {
                 ></div>
 
                 <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                  <EventDbtn link="#eventbooking" label="BOOK YOUR EVENT" />
+                  <div className="inline-block bg-golden hover:bg-golden-alt search-loc hover:cursor-pointer hover:shadow boder-p rounded-full transition-all duration-500 ease-in-out">
+                    <button
+                      onClick={(e) => showLocModal()}
+                      className="bg-[#FEF6E9] hover:bg-golden-alt rounded-full items-center py-2 px-6 md:py-3 md:px-8 xl:px-10 text-[#424242] hover:text-[#121212] md:text-lg gont-medium"
+                    >
+                      BOOK YOUR EVENT
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -127,8 +134,13 @@ const EventRootDetails = (props) => {
                 ></div>
 
                 <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                  <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                    <EventDbtn link="#eventbooking" label="BOOK YOUR EVENT" />
+                  <div className="inline-block bg-golden hover:bg-golden-alt search-loc hover:cursor-pointer hover:shadow boder-p rounded-full transition-all duration-500 ease-in-out">
+                    <button
+                      onClick={(e) => showLocModal()}
+                      className="bg-[#FEF6E9] hover:bg-golden-alt rounded-full items-center py-2 px-6 md:py-3 md:px-8 xl:px-10 text-[#424242] hover:text-[#121212] md:text-lg gont-medium"
+                    >
+                      BOOK YOUR EVENT
+                    </button>
                   </div>
                 </div>
               </div>
@@ -163,8 +175,13 @@ const EventRootDetails = (props) => {
                 ></div>
 
                 <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                  <div className="event-notice mt-4 md:mt-6 lg:mt-8">
-                    <EventDbtn link="#eventbooking" label="BOOK YOUR EVENT" />
+                  <div className="inline-block bg-golden hover:bg-golden-alt search-loc hover:cursor-pointer hover:shadow boder-p rounded-full transition-all duration-500 ease-in-out">
+                    <button
+                      onClick={(e) => showLocModal()}
+                      className="bg-[#FEF6E9] hover:bg-golden-alt rounded-full items-center py-2 px-6 md:py-3 md:px-8 xl:px-10 text-[#424242] hover:text-[#121212] md:text-lg gont-medium"
+                    >
+                      BOOK YOUR EVENT
+                    </button>
                   </div>
                 </div>
               </div>

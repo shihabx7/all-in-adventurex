@@ -1,55 +1,27 @@
 import getActivitySlugs from "../api/Activities/getActivitySlugs";
 import { getActivitiyPageData } from "../api/Activities/getActivitiyPageData";
-
+//import { FiChevronRight } from "react-icons/fi";
+// page tamplete content
 import RootNav from "../../comps/RootNav";
 import RootFooter from "../../comps/RootFooter";
-
 import ActivityPageSeo from "../../comps/activitiyPageComps/ActivityPageSeo";
 import ActivityBreadCrumbs from "../../comps/activitiyPageComps/ActivityBreadCrumbs";
-import { FiChevronRight } from "react-icons/fi";
-// page tamplete content
-
 import ActivityRootHero from "../../comps/activitiyPageComps/ActivityRootHero";
 import ActivityRootDetails from "../../comps/activitiyPageComps/ActivityRootDetails";
 import ActivityGallery from "../../comps/activitiyPageComps/ActivityGallery";
 import ActivityVideo from "../../comps/activitiyPageComps/ActivityVideo";
 
 const sinleActivities = (props) => {
-  /* custom breadcum code */
-
-  // If the page is not yet generated, this will be displayed
-  // initially until getStaticProps() finishes running
-
-  const toTitleCase = (title) => {
-    const titlefres = title.replace(/-/g, " ");
-    const btitle = titlefres
-      .split(" ")
-      .map((word) => {
-        return word.charAt(0).toUpperCase() + word.slice(1);
-      })
-      .join(" "); // breadcum title capitalize
-
-    return (
-      <div className="bitem flex items-center">
-        <span>{btitle}</span>{" "}
-        <span className="bsep text-gold">
-          <FiChevronRight />
-        </span>
-      </div>
-    );
-  };
-  /* customizing breadcum */
-
   return (
     <>
       <ActivityPageSeo meta={props.pageMeta} />
       {/* =======header content======== */}
-
       <RootNav
         locationSlugList={props.locationSlugList}
         escapeGameSlugList={props.escapeGameSlugList}
         otherGameSlugList={props.otherGameSlugList}
         eventSlugList={props.eventSlugList}
+        activitySlug={props.activitySlug}
       />
       {/* =======header content ======== end */}
 
@@ -57,10 +29,14 @@ const sinleActivities = (props) => {
         {/* =======breadcum content and breadcum======== end */}
         <ActivityBreadCrumbs />
         {/* =======breadcum content and breadcum======== end */}
-
-        <ActivityRootHero pageData={props.pageData} />
-
-        <ActivityRootDetails activityData={props.activityData} />
+        <ActivityRootHero
+          pageData={props.pageData}
+          activitySlug={props.activitySlug}
+        />
+        <ActivityRootDetails
+          activityData={props.activityData}
+          activitySlug={props.activitySlug}
+        />
         <ActivityGallery activityGallery={props.activityGallery} />
         <ActivityVideo videoData={props.videoData} />
       </div>
@@ -72,9 +48,8 @@ const sinleActivities = (props) => {
     </>
   );
 };
-
 export default sinleActivities;
-
+// ==========================================get activity slugs
 export const getStaticPaths = async () => {
   const res = await getActivitySlugs();
 
@@ -89,10 +64,10 @@ export const getStaticPaths = async () => {
     fallback: false,
   };
 };
-
+//=============================== page props
 export const getStaticProps = async (context) => {
   const DATA = await getActivitiyPageData(context.params.activitiesSlug);
-  // console.log(activityPageData);
+  //  console.log("Activity Slug==="+DATA.currentActivitySlug);
 
   return {
     props: {
@@ -101,12 +76,14 @@ export const getStaticProps = async (context) => {
       otherGameSlugList: DATA.otherGameSlugList,
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
+      activitySlug: context.params.activitiesSlug, //DATA.gameSlug,
+      currentActivitySlug: DATA.currentActivitySlug,
       pageMeta: DATA.pageMeta,
       pageData: DATA.pageData,
       activityData: DATA.activityData,
       videoData: DATA.videoData,
       activityGallery: DATA.activityGallery,
     },
-    revalidate: 12,
+    revalidate: 60,
   };
 };

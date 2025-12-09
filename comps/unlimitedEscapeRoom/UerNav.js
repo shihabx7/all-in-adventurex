@@ -13,23 +13,34 @@ import StickyGiftBar from "../giftCardPageComps/StickyGiftBar";
 import UerStickyBar from "./UerStickyBar";
 import { useLocModal } from "../../contexts/LocModalContext";
 import BundleBookingMenu from "../bundle/BundleBookingMenu";
+//========================================================================v2
+import { useSiteData } from "../../contexts/SiteDataContext";
+
 const UerNav = (props) => {
-  const { showLocModal,activeModalMenu } = useLocModal();
+   const ref = useRef();
+   const { openModalMenu, setModalMenuType } = useSiteData();
+  //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle
   const [noticeData, setNoticeData] = useState();
   const [showSlug, setShowSlug] = useState(null);
+   
+  const [showMe, setShowMe] = useState(false);
   const setNotice = async () => {
     const ndata = await navNotice();
     //console.log(ndata)
     setNoticeData(ndata);
   };
-
+  const showLocModal = () => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.remove("overflow-hidden");
+    setModalMenuType("unlimited-play-pass");
+    openModalMenu();
+  };
   useEffect(() => {
     setNotice();
     setShowSlug(props.slug);
   }, []);
 
-  const ref = useRef();
-  const [showMe, setShowMe] = useState(false);
+
   function toggle() {
     setShowMe(!showMe);
     const body = document.getElementsByTagName("body")[0];
@@ -66,9 +77,7 @@ const UerNav = (props) => {
       <div id="locmenu" className="loc-menu-holder hidden">
         <HeaderLocMenu locationSlugList={props.locationSlugList} />
       </div>
-      {showLocModal && (
-        <BundleBookingMenu locationSlugList={props.locationSlugList} activeBooking={"gift-card"}/>
-      )}
+     
       {/* ============Location List Menu end*/}
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">

@@ -5,6 +5,7 @@ import { FaAngleRight } from "react-icons/fa";
 import Script from "next/script";
 
 const GiftCardBookingMenu = (props) => {
+  
   const closelocmenu = () => {
     const body = document.getElementsByTagName("body")[0];
     body.classList.remove("overflow-hidden");

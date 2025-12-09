@@ -1,6 +1,14 @@
 import LocationBtn from "../util/LocationBtn";
-import Image from "next/image";
+import { useSiteData } from "../../contexts/SiteDataContext";
 const ActivityRootListHero = (props) => {
+  const { openModalMenu, setModalMenuType } = useSiteData();
+  //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle
+  const showLocModal = (gameSlug) => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.remove("overflow-hidden");
+    setModalMenuType("game-list");
+    openModalMenu();
+  };
   return (
     <div
       className={"home-hero bg-[#111111]"}
@@ -34,18 +42,14 @@ const ActivityRootListHero = (props) => {
               }}
             ></div>
           </div>
-          <div className="max-w-md mx-auto mt-5 rm:mt-6 xm:mt-6  md:mt-8">
-            {/*============location search btn==========*/}
-            <LocationBtn
-              borderbg="bg-red-600"
-              borderbghover="bg-red-900"
-              innerbg="bg-white"
-              innerborder="border-white"
-              innerbghover="bg-grey-200"
-              innerborderhover="border-gray-200"
-              color="text-black"
-            />
-            {/*============location search btn==========*/}
+
+          <div className="md:max-w-[380px] xl:max-w-[400px] mx-auto mt-5 rm:mt-6 xm:mt-6 md:mt-8  xl:mt-10 ">
+            <button
+              onClick={(e) => showLocModal(props.activitySlug)}
+              className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[15px] rm:text-base md:text-lg"
+            >
+              BOOK YOUR GAMES
+            </button>
           </div>
         </div>
         <div className="game-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[95%]  xm:max-w-[92%] mx-auto md:max-w-3xl absolute bottom-[-11%] rm:bottom-[-11%] lm:bottom-[-10%] zm:bottom-[-10%] sm:bottom-[-9%] md:bottom-[-8%] left-0 right-0  bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded z-40">

@@ -1,37 +1,37 @@
-import { getLocationSlugUrl } from "../api/Locations/getLocationSlugUrls";
-import UnlimitedEscapeRoomHome from "../../comps/unlimitedEscapeRoom/UnlimitedEscapeRoomHome";
-
-import ToyMakerHomeSection from "../../comps/toyMakerWorkStation/section/ToyMakerHomeSection";
-
-import { getLocationHomePageData } from "../api/Locations/getLocationHomePageData";
+import { useState } from "react";
 import Script from "next/script";
+import { getLocationSlugUrl } from "../api/Locations/getLocationSlugUrls";
+import { getLocationHomePageData } from "../api/Locations/getLocationHomePageData";
+//=========================================================== page section ui
 
-import PageBread from "../../comps/util/PageBread";
+// import PageBread from "../../comps/util/PageBread";
+// import LocationHero from "../../comps/locationsPage/LocationHero";
+// import PageVideo from "../../comps/homepagecomps/PageVideo";
+// import EscaeGameSlider from "../../comps/homepagecomps/EscaeGameSlider";
+// import OtherGameSlider from "../../comps/homepagecomps/OtherGameSlider";
+// import UnlimitedEscapeRoomHome from "../../comps/unlimitedEscapeRoom/UnlimitedEscapeRoomHome";
+// import GiftCards from "../../comps/homepagecomps/GiftCards";
+// import TestimonialSlider from "../../comps/homepagecomps/TestimonialSlider";
+// import MobileEscapeGameHomeSection from "../../comps/mobileEscapeGames/MobileEscapeGameHomeSection";
+
 import PageBreedLoc from "../../comps/util/PageBreedLoc";
 import PageSeo from "../../comps/util/PageSeo";
 import LocationNav from "../../comps/locationsPage/LocationNav";
-import LocationHero from "../../comps/locationsPage/LocationHero";
-import PageVideo from "../../comps/homepagecomps/PageVideo";
-import EscaeGameSlider from "../../comps/homepagecomps/EscaeGameSlider";
-import OtherGameSlider from "../../comps/homepagecomps/OtherGameSlider";
+import ToyMakerHomeSection from "../../comps/toyMakerWorkStation/section/ToyMakerHomeSection";
 import EventSlider from "../../comps/homepagecomps/EventSlider";
-import GiftCards from "../../comps/homepagecomps/GiftCards";
 import GiftCardHomePageSection from "../../comps/giftCardPageComps/GiftCardHomePageSection";
 import WhatIsEscape from "../../comps/homepagecomps/WhatIsEscape";
 import WhoCanplay from "../../comps/homepagecomps/WhoCanPlay";
-import TestimonialSlider from "../../comps/homepagecomps/TestimonialSlider";
 import TestimonialLocSlider from "../../comps/homepagecomps/TestimonialLocSlider";
 import LocationDetails from "../../comps/locationsPage/LocationDetails";
 import LocationFooter from "../../comps/locationsPage/LocationFooter";
-import MobileEscapeGameHomeSection from "../../comps/mobileEscapeGames/MobileEscapeGameHomeSection";
 import MobileMysteryOtherPageSection from "../../comps/mobileEscapeGames/section/MobileMysteryOtherPageSection";
-import { useState } from "react";
 import UnlimitedEscapeGameMenu from "../../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
 import UnlockYourBundleSection from "../../comps/bundle/UnlockYourBundleSection";
 
-//========================v2
+//==============================================================================================================v2
 import HomePageHeroVideoBgSection from "../../comps/v2/homePageComps/sections/HomePageHeroVideoBgSection";
-import HomeAboutSection from "../../comps/v2/homePageComps/sections/HomeAboutSection";
+// ==========================+++import HomeAboutSection from "../../comps/v2/homePageComps/sections/HomeAboutSection";
 import HomePageGameListBg from "../../comps/v2/sharedComs/HomePageGameListBg";
 import EscapeGamesListSection from "../../comps/v2/homePageComps/sections/EscapeGamesListSection";
 import OtherGameSection from "../../comps/v2/homePageComps/sections/OtherGameSection";
@@ -71,7 +71,7 @@ const Locations = (props) => {
           locationName={props.locationName}
           locationSlug={props.locationSlug}
         />
-
+        {/*
         <LocationHero
           pageData={props.pageData}
           locationInfo={props.locationInfo}
@@ -86,32 +86,34 @@ const Locations = (props) => {
           allBooking={props.allBooking}
           isPublished={props.isPublished}
         />
-
-        {/*<UnlimitedEscapeRoomHome
-          setShowUerBookingList={setShowUerBookingList}
-          locationSlug={props.locationSlug}
-        />*/}
         <EscaeGameSlider
           escapeGameList={props.escapeGameList}
           locationSlug={props.locationSlug}
           isPublished={props.isPublished}
         />
-        {props.otherGameList.hasGames ? (
+        {props.otherGameList.hasGames &&
           <OtherGameSlider
             otherGameList={props.otherGameList}
             locationSlug={props.locationSlug}
             isPublished={props.isPublished}
-          />
-        ) : (
-          <></>
-        )}
+          />}
+          <UnlimitedEscapeRoomHome
+          setShowUerBookingList={setShowUerBookingList}
+          locationSlug={props.locationSlug}
+        />
+        */}
+        {/*==============================================================================================v2===*/}
 
-        {/*========================================================v2===*/}
-        {/* <HomePageHeroVideoBgSection
+        <HomePageHeroVideoBgSection
           pageHeroData={props.pageHeroData}
           allBooking={props.allBooking}
+          locationInfo={props.locationInfo}
+          businessHours={props.businessHours}
+          holidayHours={props.holidayHours}
+          locationName={props.locationName}
+          locationSlug={props.locationSlug}
         />
-  
+
         <HomePageGameListBg>
           <EscapeGamesListSection
             escapeGameListSectionData={props.escapeGameListSectionData}
@@ -123,8 +125,9 @@ const Locations = (props) => {
               locationSlug={props.locationSlug}
             />
           )}
-        </HomePageGameListBg>*/}
-        {/*========================================================v2 end===*/}
+        </HomePageGameListBg>
+
+        {/*==========================================================================================v2 end===*/}
         <UnlockYourBundleSection locationSlug={props.locationSlug} />
         <EventSlider
           eventList={props.eventList}
@@ -211,7 +214,13 @@ export const getStaticProps = async (context) => {
   */
   const DATA = await getLocationHomePageData(context.params.locationSlug);
   // const DATA = await getLocationHomePageData(context.params.locationSlug);
-  //console.log(DATA.otherGameList);
+  //console.log("v2 data for " + DATA.locationSlug + " location");
+  //console.log("page hero ");
+  //console.log(JSON.stringify(DATA.pageHeroData, null, 2));
+  //console.log("escape game ");
+  //console.log(JSON.stringify(DATA.escapeGameListSectionData, null, 2));
+  //console.log("other game");
+  //console.log(JSON.stringify(DATA.otherGameListSectionData, null, 2));
 
   return {
     props: {
@@ -243,10 +252,10 @@ export const getStaticProps = async (context) => {
       toyMakerPageData: DATA.toyMakerPageData,
       //===================v2
       pageHeroData: DATA.pageHeroData,
-      aboutSectionData: DATA.aboutSectionData,
+      // aboutSectionData: DATA.aboutSectionData,
       escapeGameListSectionData: DATA.escapeGameListSectionData,
       otherGameListSectionData: DATA.otherGameListSectionData,
     },
-    revalidate: 12,
+    revalidate: 60,
   };
 };

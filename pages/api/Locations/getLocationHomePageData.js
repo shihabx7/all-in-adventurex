@@ -51,7 +51,7 @@ export const getLocationHomePageData = async (slug) => {
   const locationListRes = await fetch(locationSlugListQuery, apiSetting);
   const locationListobj = await locationListRes.json();
   const locationListArr = locationListobj.data;
-  const totalLocations = 22;
+  const totalLocations = 20;
   //const tm = homePageMobileEscapeRoomSectionData(mobileEscapeRoom);
   //console.log("mobileEscapeRoomData" + JSON.stringify(tm.infoList));
   //console.log("Meta : " + JSON.stringify(getLocationSlugList(locationListArr)));
@@ -86,7 +86,7 @@ export const getLocationHomePageData = async (slug) => {
       bookingInfo: pageResData.bookingInfo,
       pageHeroData: pageResData.pageHeroData,
       totalLocation: totalLocations,
-      totalActivities: pageResData.locationActivities.length,
+      totalActivities: locationListArr.length,
     }),
     aboutSectionData: homePageDataFormater.aboutSectionData({
       locationSlug: pageResData.slug,

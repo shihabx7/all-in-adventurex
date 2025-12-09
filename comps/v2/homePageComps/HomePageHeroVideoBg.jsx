@@ -1,13 +1,13 @@
 import { useState, useEffect, useRef } from "react";
 export default function HomePageHeroVideoBg({ videoData }) {
   const videoRef = useRef();
-  const [videoUrl, setVideoUrl] = useState("");
+  const [videoUrl, setVideoUrl] = useState(null);
 
-  const videoReqUrl = `https://fast.wistia.net/embed/medias/${videoData.video.wistiaMediaId}.json`;
+  //const videoReqUrl = `https://fast.wistia.net/embed/medias/${videoData.video.wistiaMediaId}.json`;
 
-  useEffect(() => {
+  /* useEffect(() => {
     // Example Wistia JSON URL
-    console.log("Wistia data :" + videoReqUrl);
+  //  console.log("Wistia data :" + videoReqUrl);
     fetch(videoReqUrl)
       .then((res) => res.json())
       .then((data) => {
@@ -23,10 +23,18 @@ export default function HomePageHeroVideoBg({ videoData }) {
           videoRef.current.play();
         }
       });
+  }, []);*/
+  useEffect(() => {
+    
+    setVideoUrl(videoData.video.webmUrl);
+    videoRef.current.play();
   }, []);
 
+  useEffect(() => {
+    videoRef.current.play();
+  }, [videoUrl]);
   return (
-    <div className="section-full-screen-bg-video max-w-screen h-full  bg-black">
+    <div className="section-full-screen-bg-video max-w-screen h-full  ">
       <video
         ref={videoRef}
         className={
@@ -44,12 +52,8 @@ export default function HomePageHeroVideoBg({ videoData }) {
         }
       >
         <source
-          src={
-            videoUrl
-              ? videoUrl
-              : "/assets/home-page/all-in-adventure-hero-bg.mp4"
-          }
-          type="video/mp4"
+          src={videoData.video.webmUrl}
+          type={videoData.video.webmUrl ? "video/webm" : "video/mp4"}
         />
       </video>
     </div>

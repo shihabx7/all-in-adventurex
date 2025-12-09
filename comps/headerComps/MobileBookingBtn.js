@@ -1,5 +1,6 @@
 import { eventFormBookingLinks } from "../../lib/tempData/eventFormBookingLinks";
 import { mobileEscapeRoomBookingData } from "../../lib/tempData/mobileEscapeRoomBookingData";
+import { locationBookingInfo } from "../../lib/v2/data/locationBookingInfo";
 const bookAll = (bookingData) => {
   FH.open({
     shortname: bookingData.shortName,
@@ -37,6 +38,15 @@ const mobileMysteryBooking = (bookingData) => {
   });
 };
 const MobileBookingBtn = (props) => {
+  const bookEventFlow = (locationSlug) => {
+    let bookingData = locationBookingInfo[locationSlug];
+    FH.open({
+      shortname: bookingData.shortName,
+      fallback: "simple",
+      fullItems: "yes",
+      flow: bookingData.partyPackageFlow,
+    });
+  };
   return (
     <div className="max-w-7xl mx-auto flex justify-between">
       {/**============event booking================= */}
@@ -44,71 +54,12 @@ const MobileBookingBtn = (props) => {
         <>
           <div className="w-[48%]">
             {props.locationSlug ? (
-              <>
-                {!props.partyBooking ? (
-                  <>
-                    {props.eventSlug ? (
-                      <>
-                        {props.activeGameBooking ? (
-                          <a
-                            href={
-                              "/" + props.locationSlug + "/events#eventbooking"
-                            }
-                            className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white"
-                          >
-                            BOOK EVENT
-                          </a>
-                        ) : (
-                          <a
-                            href={"#eventbooking"}
-                            className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white"
-                          >
-                            BOOK EVENT
-                          </a>
-                        )}
-                      </>
-                    ) : (
-                      <a
-                        href={"/" + props.locationSlug + "/events#eventbooking"}
-                        className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white"
-                      >
-                        BOOK EVENT
-                      </a>
-                    )}
-                  </>
-                ) : (
-                  <>
-                    {props.partyBooking.hasParty ? (
-                      <>
-                        {props.partyBooking.isActive ? (
-                          <button
-                            onClick={() => bookParty(props.partyBooking)}
-                            className="w-full bg-red-600 font-medium hover:bg-red-700 py-2 px-1 block text-center text-white"
-                          >
-                            BOOK YOUR PARTY
-                          </button>
-                        ) : (
-                          <a
-                            href={
-                              "/" + props.locationSlug + "/events#eventbooking"
-                            }
-                            className="bg-red-600 font-medium hover:bg-red-700 py-2 px-2 block text-center text-white"
-                          >
-                            BOOK EVENT
-                          </a>
-                        )}
-                      </>
-                    ) : (
-                      <a
-                        href={"/" + props.locationSlug + "/events#eventbooking"}
-                        className="bg-red-600 font-medium hover:bg-red-700 py-2 px-2 block text-center text-white"
-                      >
-                        BOOK EVENT
-                      </a>
-                    )}
-                  </>
-                )}
-              </>
+              <button
+                onClick={() => bookEventFlow(props.locationSlug)}
+                className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white"
+              >
+                BOOK EVENT
+              </button>
             ) : (
               <a
                 href={"/events#eventbooking"}
@@ -167,13 +118,15 @@ const MobileBookingBtn = (props) => {
         <div className="w-full flex space-x-2 md:space-x-3  xl:space-x-5 justify-center items-center">
           <button
             onClick={() => {
-              mobileMysteryBooking(mobileEscapeRoomBookingData[props.locationSlug]);
+              mobileMysteryBooking(
+                mobileEscapeRoomBookingData[props.locationSlug]
+              );
             }}
             className="bg-red-600 block w-full font-medium hover:bg-red-700 py-1 md:py-2  block text-center text-white text-lg"
           >
-          BOOK NOW
+            BOOK NOW
           </button>
-           <button
+          <button
             onClick={() => {
               partyFormBooking(mobileEscapeRoomBookingData[props.locationSlug]);
             }}

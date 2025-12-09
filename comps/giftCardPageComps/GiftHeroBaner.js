@@ -214,7 +214,7 @@ const GiftHeroBaner = (props) => {
               <div className="w-full order-1 lg:order-2 lg:max-w-[48%] xl:max-w-[46%] gift-img">
                 <img
                   alt="A dynamic gift card illustration that embodies adventure, suitable for those seeking unique outdoor experiences."
-                  src="/assets/gift-images/hero/All-In-Adventures-Gift-Card-hero.png"
+                  src="/assets/gift-images/hero/gift-card-baner-christmas25.jpg"
                 ></img>
               </div>
             </div>

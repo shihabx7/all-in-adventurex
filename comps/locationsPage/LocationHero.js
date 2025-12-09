@@ -1,9 +1,8 @@
-import LocationHeroHours from "./LocationHeroHours";
+import { useState, useEffect, useRef } from "react";
 import { FiX } from "react-icons/fi";
 import { FaAngleDown } from "react-icons/fa";
+import LocationHeroHours from "./LocationHeroHours";
 import TitleWithSubtitleNew from "../util/TitleWithSubtitleNew";
-
-import { useState, useEffect, useRef } from "react";
 
 const LocationHero = (props) => {
   const [showHours, setShowHours] = useState(false);

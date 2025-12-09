@@ -1,16 +1,16 @@
 import { FiX } from "react-icons/fi";
 import { FaAngleRight } from "react-icons/fa";
-import { useLocModal } from "../../contexts/LocModalContext";
+//import { useLocModal } from "../../contexts/LocModalContext";
 import { escapeGameBundleBookingList } from "../../lib/v2/data/escapeGameBundleBookingList";
 import Script from "next/script";
 
 const BundleBookingMenu = ({ locationSlugList, activeBooking }) => {
-  const { closeLocModal, activeModalMenu, setModalMenuType } = useLocModal();
+ // const { closeLocModal, activeModalMenu, setModalMenuType } = useLocModal();
   const closelocmenu = () => {
     const body = document.getElementsByTagName("body")[0];
     body.classList.remove("overflow-hidden");
-    closeLocModal();
-    setModalMenuType("gift-card");
+   // closeLocModal();
+   // setModalMenuType("gift-card");
   };
   const bookBundle = (locationSlug) => {
     const bookingData = escapeGameBundleBookingList[locationSlug];

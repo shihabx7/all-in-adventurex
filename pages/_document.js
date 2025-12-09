@@ -6,6 +6,7 @@ export default function Document() {
     <Html>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+
         {/*---- Google Tag Manager --*/}
         <script
           dangerouslySetInnerHTML={{
@@ -16,15 +17,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-T28HX9S');`,
           }}
         />
+        {/*---- faceboo ver code--*/}
         <meta
           name="facebook-domain-verification"
           content="x99i4pkiqz0qmrmgkfrtsxtm3vljha"
         />
         {/*========== End Google Tag Manager site_key 6LeGcqojAAAAAHqqKpiboRzFO77ptYT2QUi1dwi8=======*/}
+        <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
       </Head>
-      <body className="pagebody">
+      <body className="pagebody max-w-screen">
         {/*---- Google Tag Manager  (noscript) --*/}
-
         <noscript
           dangerouslySetInnerHTML={{
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T28HX9S"

@@ -1,9 +1,19 @@
 const StaticSubmenu = () => {
   return (
     <div className="submenu-content text-light-gold md:text-lg">
-      <div className="submenu-item">
-        <a href="/gift-cards" className="flex items-center">
+      <div className="submenu-item ">
+        <a
+          href="/gift-cards"
+          className="flex items-center space-x-2 md:space-x-3"
+        >
           <span className="sub-link-txt">Gift Cards</span>
+          <span>
+            <img
+              className="max-w-[26px] md:max-w-[28px]"
+              src="/assets/gift-images/hero/gift-card-icon-for-title.svg"
+              alt=" All in Adventures gift card icon showcasing a vibrant design, symbolizing adventure and excitement in gift-giving."
+            ></img>
+          </span>
         </a>
       </div>
       <div className="submenu-item">

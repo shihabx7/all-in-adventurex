@@ -1,14 +1,24 @@
+import Image from "next/image";
+import { useSiteData } from "../../contexts/SiteDataContext";
 import GameTitleSeparator from "../util/GameTitleSeparator";
 import GameDtBtn from "../util/GameDtBtn";
-import Image from "next/image";
-import { ImSad } from "react-icons/im";
+//import { ImSad } from "react-icons/im";
 import SectionBorderTop from "../util/SectionBorderTop";
+
 const ActivityRootDetails = (props) => {
+  const { openModalMenu, setModalMenuType, setModalGame } = useSiteData();
+  //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle
+  const showLocModalForGame = (gameSlug) => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.remove("overflow-hidden");
+    setModalGame(gameSlug);
+    setModalMenuType("game");
+    openModalMenu();
+  };
   return (
     <div className="game-details bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] relative ">
       {/*======================= boder img============== */}
       <SectionBorderTop />
-
       {/*======================= boder img end============== */}
       <div className="content-container-game pt-[116px] md:pt-24 lg:pt-32 md:px-4 relative z-10">
         {/*=========== Activity story Line=====*/}
@@ -38,12 +48,16 @@ const ActivityRootDetails = (props) => {
                   __html: props.activityData.storyLineText,
                 }}
               ></div>
+              {/*========================================================= modal menu btn */}
               <div className="game-dt-link mt-4 md:mt-4 lg:mt-6">
-                <GameDtBtn
-                  label="SOUNDS GREAT! BOOK NOW"
-                  color="golden-text"
-                  weight="font-bold"
-                />
+                <div className="inline-block bg-golden hover:bg-golden-alt search-loc hover:cursor-pointer hover:shadow boder-p rounded-full transition-all duration-700 ease-in-out">
+                  <button
+                    onClick={(e) => showLocModalForGame(props.activitySlug)}
+                    className="bg-[#FEF6E9] hover:bg-golden-alt rounded-full items-center py-2 px-6 md:py-3 md:px-8 2xl:px-10 text-[#424242] hover:text-[#121212] md:text-lg gont-medium transition-all duration-500 ease-in-out"
+                  >
+                    SOUNDS GREAT! BOOK NOW
+                  </button>
+                </div>
               </div>
             </div>
             <div className="game-dt-col  md:w-[49%] lg:w-[45%] order-1 mb-4 md:mb-0 md:order-2">
@@ -87,7 +101,14 @@ const ActivityRootDetails = (props) => {
                 }}
               ></div>
               <div className="game-dt-link mt-4 md:mt-4 lg:mt-6">
-                <GameDtBtn label="VERY EXCITING! BOOK NOW" />
+                <div className="inline-block bg-golden hover:bg-golden-alt search-loc hover:cursor-pointer hover:shadow boder-p rounded-full transition-all duration-700 ease-in-out">
+                  <button
+                    onClick={(e) => showLocModalForGame(props.activitySlug)}
+                    className="bg-[#FEF6E9] hover:bg-golden-alt rounded-full items-center py-2 px-6 md:py-3 md:px-8 2xl:px-10 text-[#424242] hover:text-[#121212] md:text-lg gont-medium transition-all duration-500 ease-in-out"
+                  >
+                    VERY EXCITING! BOOK NOW
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -126,7 +147,14 @@ const ActivityRootDetails = (props) => {
                 }}
               ></div>
               <div className="game-dt-link mt-4 md:mt-4 lg:mt-6">
-                <GameDtBtn label="LET'S GET TO IT! BOOK NOW" />
+                <div className="inline-block bg-golden hover:bg-golden-alt search-loc hover:cursor-pointer hover:shadow boder-p rounded-full transition-all duration-700 ease-in-out">
+                  <button
+                    onClick={(e) => showLocModalForGame(props.activitySlug)}
+                    className="bg-[#FEF6E9] hover:bg-golden-alt rounded-full items-center py-2 px-6 md:py-3 md:px-8 2xl:px-10 text-[#424242] hover:text-[#121212] md:text-lg gont-medium transition-all duration-500 ease-in-out"
+                  >
+                    LET'S GET TO IT! BOOK NOW
+                  </button>
+                </div>
               </div>
             </div>
             <div className="game-dt-col md:w-[48%] lg:w-[45%] order-1 mb-4 md:mb-0 md:order-2">

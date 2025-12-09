@@ -1,6 +1,8 @@
 import TitleSeparator from "../util/TitleSeparator";
+import { locationBookingInfo } from "../../lib/v2/data/locationBookingInfo";
 
 const EventLocList = (props) => {
+  // ======================================================= section function
   const bookAll = (bookingData) => {
     FH.open({
       shortname: bookingData.shortName,
@@ -10,6 +12,16 @@ const EventLocList = (props) => {
       view: "items",
     });
   };
+  const bookEventFlow = (locationSlug) => {
+    let bookingData = locationBookingInfo[locationSlug];
+    FH.open({
+      shortname: bookingData.shortName,
+      fallback: "simple",
+      fullItems: "yes",
+      flow: bookingData.partyPackageFlow,
+    });
+  };
+  // ======================================================= section function
 
   return (
     <div className="all-events relative   md:pt-8 lg:pt-12 bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px]">
@@ -69,18 +81,12 @@ const EventLocList = (props) => {
                         BOOK YOUR GAME
                       </button>
                     ) : (
-                      <a
-                        href={
-                          "/" +
-                          props.locationSlug +
-                          "/events/" +
-                          event.eventSlug +
-                          "#eventbooking"
-                        }
+                      <button
+                        onClick={() => bookEventFlow(props.locationSlug)}
                         className="border-2  text-center   border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700 text-white"
                       >
                         BOOK EVENT
-                      </a>
+                      </button>
                     )}
 
                     <a

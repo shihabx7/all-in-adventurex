@@ -29,7 +29,7 @@ const GiftCardHomePageSection = (props) => {
         <div className="max-w-7xl mx-auto px-4 lg:px-6 z-30">
           <div className="gift-row gift-row-shadow xm:max-w-[490px] md:max-w-[700px] mx-auto lg:max-w-none flex flex-col lg:flex-row justify-between lg:space-x-7 xl:space-x-12 2xl:space-x-10 items-center pt-6 pb-8 px-1 rm:px-2 lm:px-3 xm:px-4  zm:p-8 md:p-12 lg:p-10 xl:p-12 2xl:p-14 bg-[#151515] rounded-[14px]">
             <div className="gift-info order-2 lg:order-1 lg:w-1/2">
-              <div className="text-content pt-4 md:pt-8 lg:pt-0">
+              <div className="text-content pt-4 md:pt-8 lg:pt-0 ">
              
                 <h2 className="text-[1.32rem] rm:text-[1.5rem] max-w-[400px] rm:max-w-[440px] md:max-w-[500px] md:text-[40px] lg:text-[42px] xl:text-[44px] 2xl:text-[48px]  leading-[1.2] text-[#CA9342] font-os font-bold mb-3 zm:mb-4 2xl:max-w-[400px]">
                   ALL IN ADVENTURES GIFT CARDS
@@ -103,7 +103,7 @@ const GiftCardHomePageSection = (props) => {
               <div>
                 <img
                   className="max-w-[99%] md:max-w-[500px]  mx-auto lg:max-w-full "
-                  src="/assets/gift-images/hero/All-In-Adventures-Gift-Card-hero.png"
+                  src="/assets/gift-images/hero/gift-card-baner-christmas25.jpg"
                 ></img>{" "}
               </div>
             </div>

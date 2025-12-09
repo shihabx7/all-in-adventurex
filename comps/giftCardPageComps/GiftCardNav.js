@@ -13,9 +13,17 @@ import LocationMenuBtnHeader from "../util/LocationMenuBtnHeader";
 import StickyGiftBar from "./StickyGiftBar";
 import { useLocModal } from "../../contexts/LocModalContext";
 import BundleBookingMenu from "../bundle/BundleBookingMenu";
-
+//===============================================================v2 
+import { useSiteData } from "../../contexts/SiteDataContext";
 const GiftCardNav = (props) => {
-  const { showLocModal,activeModalMenu } = useLocModal();
+   const { openModalMenu, setModalMenuType } = useSiteData();
+   //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle
+   const showLocModal = () => {
+     const body = document.getElementsByTagName("body")[0];
+     body.classList.remove("overflow-hidden");
+     setModalMenuType("game-list");
+     openModalMenu();
+   };
   const [showSlug, setShowSlug] = useState(null);
   const [noticeData, setNoticeData] = useState();
 
@@ -68,12 +76,7 @@ const GiftCardNav = (props) => {
       <div id="locmenu" className="loc-menu-holder hidden">
         <HeaderLocMenu locationSlugList={props.locationSlugList} />
       </div>
-      {showLocModal && (
-        <BundleBookingMenu
-          locationSlugList={props.locationSlugList}
-          activeBooking={"gift-card"}
-        />
-      )}
+     
       {/* ============Location List Menu end*/}
       {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">

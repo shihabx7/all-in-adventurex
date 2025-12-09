@@ -96,7 +96,7 @@ export const locationHomePageData = async (slug) => {
       bookingInfo: pageResData.bookingInfo,
       pageHeroData: pageResData.pageHeroData,
       totalLocation: totalLocations,
-      totalActivities: pageResData.locationActivities.length,
+      totalActivities: locationListArr.length,
     }),
     aboutSectionData: homePageDataFormater.aboutSectionData({
       locationSlug: pageResData.slug,

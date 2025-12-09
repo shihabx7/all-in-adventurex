@@ -1,19 +1,37 @@
 import "../styles/globals.css";
 import "../styles/aia-v2.css";
 import "../styles/aia-res.css";
+import { fetchLocationListData } from "../lib/dataFatcher/locationDataFetcher";
+import { SiteDataProvider } from "../contexts/SiteDataContext";
+import ModalMenu from "../comps/v2/layouts/layoutComps/ModalMenu";
 
-import Head from "next/head";
-import { LocModalProvider } from "../contexts/LocModalContext";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, locationListData }) {
   return (
-    <LocModalProvider>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
+    <SiteDataProvider allLocationList={locationListData}>
+      <ModalMenu/>
       <Component {...pageProps} />
-    </LocModalProvider>
+    </SiteDataProvider>
   );
 }
+
+MyApp.getInitialProps = async (appContext) => {
+  try {
+    // Fetch location data  to stor in context
+    const locationListData = await fetchLocationListData();
+    //console.log("store location data in context");
+    //console.log(locationListData);
+    return {
+      locationListData,
+      pageProps: {},
+    };
+  } catch (error) {
+    console.error("Failed to load initial location data:", error);
+    return {
+      locationListData: [],
+      pageProps: {},
+    };
+  }
+};
 
 export default MyApp;

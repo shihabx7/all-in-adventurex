@@ -1,20 +1,23 @@
 import { useEffect, useRef, useState } from "react";
 import { FiX } from "react-icons/fi";
+import { navNotice } from "../lib/tempData/tempNavNotice";
+//import StickyGiftBar from "./giftCardPageComps/StickyGiftBar";
+//import UerStickyBar from "./unlimitedEscapeRoom/UerStickyBar";
+//import { useLocModal } from "../contexts/LocModalContext";
 import SvglogoMain from "./headerComps/SvglogoMain";
 import HeaderLocMenu from "./headerComps/HeaderLocMenu";
 import DropDownMenu from "./headerComps/DropDownMenu";
-import EventBookingBtn from "./headerComps/EventBookingBtn";
-import GameBookingBtn from "./headerComps/GameBookingBtn";
 import HeaderNotice from "./headerComps/HeaderNotice";
 import LocationMenuBtnHeader from "./util/LocationMenuBtnHeader";
-import StickyGiftBar from "./giftCardPageComps/StickyGiftBar";
-import UerStickyBar from "./unlimitedEscapeRoom/UerStickyBar";
-import { navNotice } from "../lib/tempData/tempNavNotice";
-import BundleBookingMenu from "./bundle/BundleBookingMenu";
-import { useLocModal } from "../contexts/LocModalContext";
 
+import BundleBookingMenu from "./bundle/BundleBookingMenu";
+
+//========================================================================v2
+import GameBookingBtn from "./headerComps/GameBookingBtn";
+import EventBookingBtn from "./headerComps/EventBookingBtn";
 const RootNav = (props) => {
-  const { showLocModal,activeModalMenu } = useLocModal();
+  const ref = useRef();
+  const { showLocModal, activeModalMenu } = useState(false);
   const [showSlug, setShowSlug] = useState(null);
   const [noticeData, setNoticeData] = useState();
 
@@ -29,7 +32,6 @@ const RootNav = (props) => {
     setShowSlug(props.slug);
   }, []);
 
-  const ref = useRef();
   const [showMe, setShowMe] = useState(false);
   function toggle() {
     setShowMe(!showMe);
@@ -62,7 +64,7 @@ const RootNav = (props) => {
 
   return (
     <>
-      {/* ============Location List Menu */}
+      {/* =====================================---------Location List Menu + BundleBookingMenu -------== */}
 
       <div id="locmenu" className="loc-menu-holder hidden">
         <HeaderLocMenu locationSlugList={props.locationSlugList} />
@@ -70,19 +72,11 @@ const RootNav = (props) => {
       {showLocModal && (
         <BundleBookingMenu locationSlugList={props.locationSlugList} />
       )}
+      {/* ====================================---------Location List+BundleBookingMenu Menu end-------== */}
 
-      {/* 
-      <UerStickyBar locationSlugList={props.locationSlugList} />
-      <StickyGiftBar
-        locationSlugList={props.locationSlugList}
-        locationSlug={props.locationSlug ? props.locationSlug : false}
-        giftBooking={props.giftBooking ? props.giftBooking : false}
-      />*/}
-
-      {/* ============Location List Menu end*/}
-      {/* ============Nav Header  */}
       <header id="header" className="bg-coffee w-full ">
         <div id="header-container-s" className="header-container-s">
+          {/* ===================================================================== Header notice  */}
           {noticeData !== undefined &&
             noticeData !== null &&
             noticeData.showNotice && (
@@ -90,7 +84,8 @@ const RootNav = (props) => {
                 <HeaderNotice noticeData={noticeData} />
               </>
             )}
-
+          {/* ===================================================================== Header notice  */}
+          {/* ============================================================================================ Header Navbar */}
           <div
             className="header-container-s max-w-7xl mx-auto relative md:px-4"
             ref={ref}
@@ -119,10 +114,16 @@ const RootNav = (props) => {
               <div className="home-nav-menu flex items-center space-x-0 md:space-x-10 lg:space-x-14 justify-end ">
                 {/* ============Nav bar btn desktop  */}
                 <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
-                  <EventBookingBtn />
+                  <div className="header-btn">
+                    <EventBookingBtn />
+                  </div>
                 </div>
                 <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
-                  <GameBookingBtn />
+                  <GameBookingBtn
+                    activitySlug={
+                      props.activitySlug ? props.activitySlug : false
+                    }
+                  />
                 </div>
                 {/* ============Nav bar btn desktop  end*/}
                 {/* ============Nav bar toggle icon  */}
@@ -156,7 +157,7 @@ const RootNav = (props) => {
               </div>
               {/*============nav bar btns end==========*/}
             </div>
-            {/*============dropdown/ toggle menu==========*/}
+            {/*============d================================================ Dropdown/ toggle menu =====*/}
             <div
               id="submenu-holder"
               className="submenu-holder absolute md:top-full right-0 z-[100]  w-full md:w-[740px]"
@@ -169,15 +170,16 @@ const RootNav = (props) => {
                 ></DropDownMenu>
               )}
             </div>
-            {/*============dropdown/ toggle menu end==========*/}
+            {/*=========================================================== dropdown/ toggle menu end=====*/}
           </div>
+          {/* ============================================================================================= Header Navbar */}
         </div>
 
         {/*============floating booking btn mobile ==========*/}
 
         {/*============floating booking btn mobile end==========*/}
       </header>
-      {/* ============Nav Header  end*/}
+      {/* =========================================================================================================================Header  end*/}
     </>
   );
 };

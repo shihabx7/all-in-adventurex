@@ -54,6 +54,7 @@ const LocSingleEvent = (props) => {
           eventDetaliData={props.eventDetaliData}
           activeGameBooking={props.activeGameBooking}
           allBooking={props.allBooking}
+          locationSlug={props.locationSlug}
         />
         {!props.activeGameBooking ? (
           <>

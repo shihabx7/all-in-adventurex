@@ -1,4 +1,15 @@
+import { useSiteData } from "../../../contexts/SiteDataContext";
+
 export default function OtherGameList({ otherGameList, locationSlug }) {
+   const { openModalMenu, setModalMenuType, setModalGame } = useSiteData();
+  //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle
+  const showLocModal = (activitySlug) => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.remove("overflow-hidden");
+    setModalGame(activitySlug);
+    setModalMenuType("game");
+    openModalMenu();
+  };
   const showLocation = (e) => {
     e.preventDefault();
     const body = document.getElementsByTagName("body")[0];
@@ -16,10 +27,7 @@ export default function OtherGameList({ otherGameList, locationSlug }) {
       view: { item: bookingData.itemNo },
     });
   };
-  const exploreGame = (e, slug) => {
-    e.preventDefault();
-    window.location.href = "/activities/" + slug;
-  };
+
   return (
     <div className="ogl-info-row flex justify-center flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-5 xl:space-x-8">
       {otherGameList.map((item, index) => {
@@ -117,10 +125,10 @@ export default function OtherGameList({ otherGameList, locationSlug }) {
                       ></img>
                     </div>
                     <div className="w-full h-full absolute top-0 left-0 flex flex-col justify-center items-center ">
-                      <p className="text-center text-[14px] zm:text-[14px] xl:text-[16px] text-[#101010] leading-[1.1]">
+                      <p className="text-center text-[#AAA7A7] text-[.9rem] rm:text-[.94rem] md:text-[.96rem] xl:text-[1rem] 3xl:text-[1.1rem] leading-[1.1]">
                         From
                       </p>
-                      <p className="text-center text-[16px] zm:text-[16px] lg:text-[18px] xl:text-[20px] text-[#DC2626] font-bold leading-[1.2]">
+                      <p className="text-center text-[#D4B56A] font-bold text-[1rem] rm:text-[1.15rem] md:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.28rem] leading-[1.2]">
                         ${item.gameInfo.price}
                       </p>
                     </div>
@@ -151,7 +159,7 @@ export default function OtherGameList({ otherGameList, locationSlug }) {
                       </button>
                     ) : (
                       <button
-                        onClick={(e) => showLocation(e)}
+                        onClick={(e) => showLocModal(item.gameInfo.slug)}
                         className="border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700 text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center "
                       >
                         BOOK NOW

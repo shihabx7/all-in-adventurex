@@ -1,20 +1,11 @@
 import { useRef, useState, useEffect } from "react";
-import EventDbtn from "../util/EventDbtn";
-
+// import EventDbtn from "../util/EventDbtn";
+// import EventBookBtn from "../util/EventBookBtn";
+import { locationBookingInfo } from "../../lib/v2/data/locationBookingInfo";
 import GameTitleSeparator from "../util/GameTitleSeparator";
-import EventBookBtn from "../util/EventBookBtn";
-
-const bookAll = (bookingData) => {
-  FH.open({
-    shortname: bookingData.shortName,
-    fallback: "simple",
-    fullItems: "yes",
-    flow: bookingData.flow,
-    view: "items",
-  });
-};
 
 const EventLocDetails = (props) => {
+  // ======================================================= section state and effect
   const [showPack, setShowPack] = useState(false);
   const showToast = () => {
     setShowPack(true);
@@ -36,6 +27,27 @@ const EventLocDetails = (props) => {
       document.removeEventListener("mouseup", checkIfClickedOutside);
     };
   }, [showPack]);
+  // ======================================================= section state and effect
+  // ======================================================= section function
+  const bookAll = (bookingData) => {
+    FH.open({
+      shortname: bookingData.shortName,
+      fallback: "simple",
+      fullItems: "yes",
+      flow: bookingData.flow,
+      view: "items",
+    });
+  };
+  const bookEventFlow = (locationSlug) => {
+    let bookingData = locationBookingInfo[locationSlug];
+    FH.open({
+      shortname: bookingData.shortName,
+      fallback: "simple",
+      fullItems: "yes",
+      flow: bookingData.partyPackageFlow,
+    });
+  };
+  // ======================================================= section function
 
   return (
     <div className="event-detail relative overflow-hidden bg-center bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] bg-repeat">
@@ -101,12 +113,12 @@ const EventLocDetails = (props) => {
                   ) : (
                     <div className="inline-block bg-golden hover:bg-golden-alt search-loc hover:cursor-pointer hover:shadow boder-p rounded-full">
                       <div className="bg-[#FEF6E9] hover:bg-golden-alt rounded-full items-center text-[#424242] md:text-lg gont-medium">
-                        <a
-                          href="#eventbooking"
+                        <button
+                          onClick={() => bookEventFlow(props.locationSlug)}
                           className="block py-2 px-6 md:py-3 md:px-8"
                         >
                           BOOK YOUR EVENT
-                        </a>
+                        </button>
                       </div>
                     </div>
                   )}
@@ -174,12 +186,12 @@ const EventLocDetails = (props) => {
                   ) : (
                     <div className="inline-block bg-golden hover:bg-golden-alt search-loc hover:cursor-pointer hover:shadow boder-p rounded-full">
                       <div className="bg-[#FEF6E9] hover:bg-golden-alt rounded-full items-center text-[#424242] md:text-lg gont-medium">
-                        <a
-                          href="#eventbooking"
+                        <button
+                          onClick={() => bookEventFlow(props.locationSlug)}
                           className="block py-2 px-6 md:py-3 md:px-8"
                         >
                           BOOK YOUR EVENT
-                        </a>
+                        </button>
                       </div>
                     </div>
                   )}
@@ -230,12 +242,12 @@ const EventLocDetails = (props) => {
                     ) : (
                       <div className="inline-block bg-golden hover:bg-golden-alt search-loc hover:cursor-pointer hover:shadow boder-p rounded-full">
                         <div className="bg-[#FEF6E9] hover:bg-golden-alt rounded-full items-center text-[#424242] md:text-lg gont-medium">
-                          <a
-                            href="#eventbooking"
+                          <button
+                            onClick={() => bookEventFlow(props.locationSlug)}
                             className="block py-2 px-6 md:py-3 md:px-8"
                           >
                             BOOK YOUR EVENT
-                          </a>
+                          </button>
                         </div>
                       </div>
                     )}

@@ -8,7 +8,7 @@ export default function OtherGameSection({
     <div className="other-games-section">
       <div className="section-bg   relative">
         <div className="section-overlay ">
-          <div className="section-container  mx-auto max-w-7xl pb-16 md:pb-20 lg:pb-24 xl:pb-28 px-4 md:px-0">
+          <div className="section-container pt-5 rm:pt-6 md:pt-8 xl:pt-10 mx-auto max-w-7xl pb-16 md:pb-20 lg:pb-24 xl:pb-28 px-4 md:px-0">
             {/*============section head==========*/}
             <div className="section-head">
               <div className="pageTitle max-w-[320px] zm:max-w-[500px] md:max-w-[780px] lg:max-w-[960px] mx-auto">

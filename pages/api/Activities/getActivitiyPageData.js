@@ -19,36 +19,39 @@ import {
   activityGalleryData,
 } from "../../../lib/activityDataFormation";
 export const getActivitiyPageData = async (activitySlug) => {
-  const filters = "filters[activitySlug][$eq]=" + activitySlug;
 
+  const activGameSlug=activitySlug
+  const filters = "filters[activitySlug][$eq]=" + activGameSlug;
   const reqUrl = apiUrl + "activities?" + filters + activityPageQuery;
-
   const response = await fetch(reqUrl, apiSetting);
   const resArr = await response.json();
   const activityResData = resArr.data[0].attributes;
   const seoData = activityResData.seo;
 
-  // fetch all location list as an array
+  // =====================fetch all location list as an array
   const locationListRes = await fetch(locationSlugListQuery, apiSetting);
   const locationListObj = await locationListRes.json();
   const locationListData = locationListObj.data;
-  // fetch all activity list as an array
+  //================= fetch all activity list as an array
   const activityListRes = await fetch(allActivitiesSluglistQuery, apiSetting);
   const activityListObj = await activityListRes.json();
   const activityListResData = activityListObj.data;
-  // fetch all event list as an array
+  // ===============fetch all event list as an array
   const eventListRes = await fetch(allEventsSluglistQuery, apiSetting);
   const eventListResObj = await eventListRes.json();
   const eventListResData = eventListResObj.data;
-
+// ====================site info
+// activity gameSlug
+    
   const totalActivities = activityListResData.length;
   const totalLocations = locationListData.length;
-
+// return page data object
   const activityPageData = {
     locationSlugList: getLocationSlugList(locationListData),
     escapeGameSlugList: getAllEscapeGameSlugList(activityListResData),
     otherGameSlugList: getAllOtherGameSlugList(activityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),
+    currentActivitySlug:activGameSlug,
     totalLocations: totalLocations,
     pageMeta: getPageMeta(
       seoData,

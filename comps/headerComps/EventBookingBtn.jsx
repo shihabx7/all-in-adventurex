@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useSiteData } from "../../contexts/SiteDataContext";
 
 const bookParty = (bookingData) => {
   FH.open({
@@ -10,10 +11,16 @@ const bookParty = (bookingData) => {
   });
 };
 
-const EventBookingBtn = (props) => {
-  const showloc = () => {
-    document.getElementById("locmenu").classList.remove("hidden");
-  };
+export default function EventBookingBtn(props){
+
+    const { openModalMenu, setModalMenuType } = useSiteData();
+    //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle
+    const showLocModal = () => {
+      const body = document.getElementsByTagName("body")[0];
+      body.classList.remove("overflow-hidden");
+      setModalMenuType("partyPackage-list");
+      openModalMenu();
+    };
 
   // new party booking setion
 
@@ -83,7 +90,7 @@ const EventBookingBtn = (props) => {
         </>
       ) : (
         <button
-          onClick={showloc}
+          onClick={showLocModal}
           className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
         >
           BOOK EVENT
@@ -92,4 +99,4 @@ const EventBookingBtn = (props) => {
     </div>
   );
 };
-export default EventBookingBtn;
+

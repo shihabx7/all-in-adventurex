@@ -2,10 +2,11 @@ import { useState, useEffect } from "react";
 import { FiExternalLink, FiX } from "react-icons/fi";
 import { getCookies, getCookie, setCookie, deleteCookie } from "cookies-next";
 import { escapeGameBundleBookingList } from "../../lib/v2/data/escapeGameBundleBookingList";
-import { useLocModal } from "../../contexts/LocModalContext";
+//import { useLocModal } from "../../contexts/LocModalContext";
+import { useSiteData } from "../../contexts/SiteDataContext";
 
 export default function UnlimitedBundleNotice({ noticeData, locationSlug }) {
-  const { openLocModal, closeLocModal } = useLocModal();
+  const { openModalMenu, closeModalMenu } = useSiteData();
   const [showNotice, setShownotice] = useState(false);
   const closeNotice = () => {
     setCookie("close-h-notice", true, {
@@ -14,7 +15,7 @@ export default function UnlimitedBundleNotice({ noticeData, locationSlug }) {
       sameSite: true,
     });
     setShownotice(false);
-    closeLocModal();
+    closeModalMenu();
   };
   useEffect(() => {
     // const winSize = screen.width;
@@ -28,7 +29,7 @@ export default function UnlimitedBundleNotice({ noticeData, locationSlug }) {
   const showLocModal = () => {
     const body = document.getElementsByTagName("body")[0];
     body.classList.remove("overflow-hidden");
-    openLocModal();
+    openModalMenu();
   };
   const bookBundle = (locationSlug) => {
     const bookingData = escapeGameBundleBookingList[locationSlug];

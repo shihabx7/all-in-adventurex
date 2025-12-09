@@ -1,12 +1,13 @@
-import { useLocModal } from "../../contexts/LocModalContext";
+//import { useLocModal } from "../../contexts/LocModalContext";
+import { useSiteData } from "../../contexts/SiteDataContext";
 import { escapeGameBundleBookingList } from "../../lib/v2/data/escapeGameBundleBookingList";
 
 export default function UnlockYourBundleSection({ locationSlug }) {
-  const { openLocModal,setModalMenuType } = useLocModal();
+  const {openModalMenu,setModalMenuType } = useSiteData();
   const showLocModal = () => {
     const body = document.getElementsByTagName("body")[0];
     body.classList.remove("overflow-hidden");
-    openLocModal();
+    openModalMenu();
     setModalMenuType('bundle');
   };
   const bookBundle = (slug) => {

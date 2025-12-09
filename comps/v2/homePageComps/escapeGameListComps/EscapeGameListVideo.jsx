@@ -6,11 +6,12 @@ export default function EscapeGameListVideo({
   videoData,
   currentVideoRef,
   setCurrentVideoRef,
+  gameCardData,
 }) {
   const gameVideoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isStop, setStop] = useState(false);
-
+  // ===================================video control function
   const playVideoOnHover = (e) => {
     e.preventDefault();
     if (currentVideoRef !== null && currentVideoRef !== gameVideoRef) {
@@ -42,30 +43,40 @@ export default function EscapeGameListVideo({
     gameVideoRef.current.currentTime = 0;
     setIsPlaying(false);
   };
+  // ===================================video control function end
   return (
     <div
       onMouseEnter={(e) => playVideoOnHover(e)}
       onMouseLeave={(e) => stopVideoOnClick(e)}
       className="egl-video-box hover:cursor-pointer relative group"
     >
+      {/*================================================== game video poster=== */}
       {!isPlaying && (
         <img
           className="w-full absolute left-0 top-0"
-          src={videoData.thumbnail}
+          src={gameCardData.poster.url}
+          alt={
+            gameCardData.poster.alt
+              ? gameCardData.poster.alt
+              : "All in Adventures escape game video"
+          }
         ></img>
       )}
-      <img></img>
+      {/*================================================== game video poster end=== */}
+      {/*================================================== game video */}
       <video
         ref={gameVideoRef}
         className={"no-fullscreen-vid w-full  object-cover object-center "}
         playsInline
         muted
         preload="metadata"
-        poster={videoData.thumbnail}
+        poster={gameCardData.poster.url}
       >
-        <source src={videoData.url} type="video/mp4" />
+        <source src={gameCardData.video.webmUrl} type={"video/webm"} />
       </video>
-      <div className="absolute bottom-[24px] right-[24px] md:bottom-[30px] md:right-[30px] xl:bottom-[36px] xl:right-[36px]">
+      {/*==================================================game video end*/}
+      {/*================================================== play button */}
+      <div className="absolute bottom-[26px] right-[24px] md:bottom-[30px] md:right-[30px] xl:bottom-[36px] xl:right-[36px]">
         {isPlaying ? (
           <button
             onClick={(e) => stopVideoOnClick(e)}
@@ -86,6 +97,7 @@ export default function EscapeGameListVideo({
           </button>
         )}
       </div>
+      {/*================================================== play button */}
     </div>
   );
 }

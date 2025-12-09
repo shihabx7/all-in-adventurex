@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import UnlimitedBundleNotice from "../noticeBaner/UnlimitedBundleNotice";
 import BlackFridayNotice from "../noticeBaner/BlackFridayNotice";
+import ChristmasGiftNotice from "../noticeBaner/ChristmasGiftNotice";
 export default function HeaderNotice({
   noticeData,
   locationSlug,
@@ -9,7 +10,7 @@ export default function HeaderNotice({
   const [currentNotice, setCurrentNotice] = useState("uer");
 
   useEffect(() => {
-    const expireDate = new Date("2025-12-01T00:59:59");
+    const expireDate = new Date("2025-12-26T11:59:59");
     const currentTime = new Date();
     const timeRemainingMs = expireDate.getTime() - currentTime.getTime();
     if (timeRemainingMs > 0) {
@@ -22,7 +23,7 @@ export default function HeaderNotice({
   return (
     <div className="header-notice-container">
     {currentNotice=='gift' && <>
-       <BlackFridayNotice
+       <ChristmasGiftNotice
         noticeData={noticeData ? noticeData : false}
         locationSlug={locationSlug ? locationSlug : false}
         giftBooking={giftBooking ? giftBooking : false}

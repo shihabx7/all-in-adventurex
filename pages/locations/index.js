@@ -58,6 +58,6 @@ export const getStaticProps = async () => {
     },
 
     // - At most once every 10 seconds
-    revalidate: 12,
+    revalidate: 60,
   };
 };

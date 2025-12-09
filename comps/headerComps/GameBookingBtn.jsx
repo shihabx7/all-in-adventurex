@@ -1,3 +1,4 @@
+import { useSiteData } from "../../contexts/SiteDataContext";
 const bookAll = (bookingData) => {
   FH.open({
     shortname: bookingData.shortName,
@@ -16,13 +17,23 @@ const bookGame = (bookingData) => {
     view: { item: bookingData.itemNo },
   });
 };
-const GameBookingBtn = (props) => {
-  const showloc = () => {
-    const body = document.getElementsByTagName("body")[0];
-    body.classList.add("overflow-hidden");
-    document.getElementById("locmenu").classList.remove("hidden");
-  };
 
+export default function GameBookingBtn(props) {
+  const { openModalMenu, setModalMenuType,setModalGame } = useSiteData();
+  //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle
+  const showLocModalForGame = (gameSlug) => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.remove("overflow-hidden");
+    setModalGame(gameSlug)
+    setModalMenuType("game");
+    openModalMenu();
+  };
+  const showLocModal = () => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.remove("overflow-hidden");
+    setModalMenuType("game-list");
+    openModalMenu();
+  };
   return (
     <>
       <div className="heade-btn">
@@ -58,7 +69,7 @@ const GameBookingBtn = (props) => {
               </>
             ) : (
               <button
-                onClick={showloc}
+                onClick={showLocModal}
                 className="bg-red-600 cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border border-red-600 hover:border-red-700 transition duration-300"
               >
                 BOOK GAMES
@@ -67,16 +78,25 @@ const GameBookingBtn = (props) => {
           </>
         ) : (
           <>
-            <button
-              onClick={showloc}
-              className="bg-red-600 cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border border-red-600 hover:border-red-700 transition duration-300"
-            >
-              BOOK GAMES
-            </button>
+            {!props.activitySlug && (
+              <button
+                onClick={showLocModal}
+                className="bg-red-600 cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border border-red-600 hover:border-red-700 transition duration-300"
+              >
+                BOOK GAMES
+              </button>
+            )}
+            {props.activitySlug && (
+              <button
+                onClick={(e) => showLocModalForGame(props.activitySlug)}
+                className="bg-red-600 cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border border-red-600 hover:border-red-700 transition duration-300"
+              >
+                BOOK THIS GAME
+              </button>
+            )}
           </>
         )}
       </div>
     </>
   );
-};
-export default GameBookingBtn;
+}

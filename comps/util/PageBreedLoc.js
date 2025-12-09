@@ -8,7 +8,7 @@ const stXCap = (nm) => {
 };
 const PageBreedLoc = (props) => {
   return (
-    <div className="breadcum py-1 md:py-1 lg:py-3 bg-[#fffceb]">
+    <div className="breadcum py-1 md:py-1 3xl:py-2 bg-[#fffceb]">
       <div className="new-brd max-w-7xl mx-auto px-2 md:px-4 flex items-center space-x-.5">
         <a
           href={"/"}
