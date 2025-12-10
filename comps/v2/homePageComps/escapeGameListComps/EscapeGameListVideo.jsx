@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
+import { Suspense } from "react";
 import { FaPlay } from "react-icons/fa";
 import { FaPause } from "react-icons/fa";
+import useOnClickOutside from "../../../../hooks/useOnClickOutside";
 
 export default function EscapeGameListVideo({
   videoData,
@@ -44,8 +46,19 @@ export default function EscapeGameListVideo({
     setIsPlaying(false);
   };
   // ===================================video control function end
+  // ===============================================stop video on touch out side
+  const handleOutsideClick = () => {
+    if (isPlaying && gameVideoRef.current) {
+      gameVideoRef.current.pause(); // Pause the video
+      gameVideoRef.current.currentTime = 0; // Optional: reset playback to the start
+      setIsPlaying(false); // Update state to reflect paused status
+    }
+  };
+  const containerRef = useOnClickOutside(handleOutsideClick);
+  // ===============================================stop video on touch out side
+  //onTouchEnd={(e) => stopVideoOnClick(e)}
   return (
-    <div
+    <div ref={containerRef}
       onMouseEnter={(e) => playVideoOnHover(e)}
       onMouseLeave={(e) => stopVideoOnClick(e)}
       className="egl-video-box hover:cursor-pointer relative group"
@@ -53,7 +66,7 @@ export default function EscapeGameListVideo({
       {/*================================================== game video poster=== */}
       {!isPlaying && (
         <img
-          className="w-full absolute left-0 top-0"
+          className="w-full absolute left-0 top-0 transition-all duration-700 ease-in-out"
           src={gameCardData.poster.url}
           alt={
             gameCardData.poster.alt
@@ -64,19 +77,27 @@ export default function EscapeGameListVideo({
       )}
       {/*================================================== game video poster end=== */}
       {/*================================================== game video */}
-      <video
-        ref={gameVideoRef}
-        className={"no-fullscreen-vid w-full  object-cover object-center "}
-        playsInline
-        muted
-        preload="metadata"
-        poster={gameCardData.poster.url}
-      >
-        <source src={gameCardData.video.webmUrl} type={"video/webm"} />
-      </video>
+      <div   className="eg-card-video-container">
+        <Suspense fallback={<p>Loading video...</p>}> 
+        <video
+          ref={gameVideoRef}
+          className={
+            "no-fullscreen-vid w-full  object-cover object-center transition-all duration-700 ease-in-out"
+          }
+          preload="none"
+          loop
+          playsInline
+          muted
+          poster={gameCardData.poster.url}
+        >
+          <source src={gameCardData.video.webmUrl} type={"video/webm"} />
+          <source src={gameCardData.video.url} type={"video/mp4"} />
+        </video>
+        </Suspense>
+      </div>
       {/*==================================================game video end*/}
       {/*================================================== play button */}
-      <div className="absolute bottom-[26px] right-[24px] md:bottom-[30px] md:right-[30px] xl:bottom-[36px] xl:right-[36px]">
+      <div className="absolute bottom-[26px] right-[24px] md:bottom-[30px] md:right-[30px] xl:bottom-[36px] xl:right-[36px] z-20">
         {isPlaying ? (
           <button
             onClick={(e) => stopVideoOnClick(e)}
