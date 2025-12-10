@@ -1,12 +1,30 @@
-import LocationHeroHours from "../locationsPage/LocationHeroHours";
+import { useState, useEffect, useRef } from "react";
 import { FiX } from "react-icons/fi";
 import { FaAngleDown } from "react-icons/fa";
+
 import TitleWithSubtitleNew from "../util/TitleWithSubtitleNew";
-import { useState, useEffect, useRef } from "react";
+import { locationBookingInfo } from "../../lib/v2/data/locationBookingInfo";
+import LocationHeroHours from "../locationsPage/LocationHeroHours";
 
 const EventLocListHero = (props) => {
   const [showHours, setShowHours] = useState(false);
   const hourref = useRef();
+
+  useEffect(() => {
+    const checkIfClickedOutsidehrs = (e) => {
+      if (showHours && hourref.current && !hourref.current.contains(e.target)) {
+        setShowHours(false);
+        const body = document.getElementsByTagName("body")[0];
+        body.classList.remove("overflow-hidden");
+      }
+    };
+
+    document.addEventListener("mouseup", checkIfClickedOutsidehrs);
+
+    return () => {
+      document.removeEventListener("mouseup", checkIfClickedOutsidehrs);
+    };
+  }, [showHours]);
   const bookAll = (bookingData) => {
     FH.open({
       shortname: bookingData.shortName,
@@ -28,21 +46,15 @@ const EventLocListHero = (props) => {
     setShowHours(true);
   };
 
-  useEffect(() => {
-    const checkIfClickedOutsidehrs = (e) => {
-      if (showHours && hourref.current && !hourref.current.contains(e.target)) {
-        setShowHours(false);
-        const body = document.getElementsByTagName("body")[0];
-        body.classList.remove("overflow-hidden");
-      }
-    };
-
-    document.addEventListener("mouseup", checkIfClickedOutsidehrs);
-
-    return () => {
-      document.removeEventListener("mouseup", checkIfClickedOutsidehrs);
-    };
-  }, [showHours]);
+  const bookEventFlow = (locationSlug) => {
+    let bookingData = locationBookingInfo[locationSlug];
+    FH.open({
+      shortname: bookingData.shortName,
+      fallback: "simple",
+      fullItems: "no",
+      flow: bookingData.partyPackageFlow,
+    });
+  };
   return (
     <>
       {/* ?autolightframe=yes*/}
@@ -127,12 +139,12 @@ const EventLocListHero = (props) => {
             <div className="max-w-md mx-auto mt-5 rm:mt-6 xm:mt-6  md:mt-8 pb-6 md:pb-16 lg:pb-8 ">
               {/*============Game Booking btn==========*/}
 
-              <a
-                href={"#eventbooking"}
+              <button
+                onClick={() => bookEventFlow(props.pageData.locationSlug)}
                 className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-lg"
               >
                 BOOK YOUR EVENT
-              </a>
+              </button>
 
               <a
                 href={"/" + props.pageData.locationSlug + "/activities"}
