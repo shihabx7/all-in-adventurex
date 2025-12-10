@@ -233,9 +233,9 @@ const UseFullLinks = (props) => {
         <div className="usefull-link inline-block px-3 md:px-0  py-1 md:py-2 lg:py-2">
           <a
             href="/corporate-contact"
-            className="text-gray-400 text-sm  lg:text-base"
+            className="text-gray-400 text-sm lg:text-base"
           >
-            Corporate Contact
+             Contact Us
           </a>
         </div>
       </div>

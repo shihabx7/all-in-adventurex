@@ -25,7 +25,6 @@ const EventLocListHero = (props) => {
   const showHourDetails = () => {
     const body = document.getElementsByTagName("body")[0];
     body.classList.add("overflow-hidden");
-
     setShowHours(true);
   };
 

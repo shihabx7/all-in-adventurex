@@ -91,12 +91,14 @@ export default function Home(props) {
           )}
         </HomePageGameListBg>
         {/*======================================================================================================== v2 ================ */}
-        <UnlockYourBundleSection />
-        <EventSlider eventList={props.eventList} />
+
         <MobileMysteryOtherPageSection
           setShowMobileEecapeMenu={setShowMobileEecapeMenu}
           setGoMobileEecapeForm={setGoMobileEecapeForm}
         />
+        
+        <EventSlider eventList={props.eventList} />
+        <UnlockYourBundleSection />
         <GiftCardHomePageSection
           setShowGiftBookingList={setShowGiftBookingList}
           locationSlugList={props.locationSlugList}

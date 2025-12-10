@@ -19,7 +19,7 @@ const EventCarousel = (props) => {
     FH.open({
       shortname: bookingData.shortName,
       fallback: "simple",
-      fullItems: "yes",
+      fullItems: "no",
       flow: bookingData.partyPackageFlow,
     });
   };
