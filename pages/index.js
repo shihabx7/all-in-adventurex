@@ -69,7 +69,6 @@ export default function Home(props) {
         otherGameSlugList={props.otherGameSlugList}
         eventSlugList={props.eventSlugList}
       />
-      {/*console.log(props.locationSlugList)*/}
       <div id="mainContent" className="main-content">
         {/*
         <HomeHeroNew pageData={props.pageData} />
@@ -96,7 +95,7 @@ export default function Home(props) {
           setShowMobileEecapeMenu={setShowMobileEecapeMenu}
           setGoMobileEecapeForm={setGoMobileEecapeForm}
         />
-        
+
         <EventSlider eventList={props.eventList} />
         <UnlockYourBundleSection />
         <GiftCardHomePageSection

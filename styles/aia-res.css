@@ -536,6 +536,7 @@
     min-width: 48px;
     min-height: 48px;
   }
+ 
 }
 
 @media only screen and (max-width: 767px) {
@@ -663,6 +664,15 @@
   }
   .ocac-car-container .react-multiple-carousel__arrow--left {
     right: 66px !important;
+  }
+  /*===============================================================carousel dot*/
+   .react-multi-carousel-dot {
+  width: 20px !important;
+  height: 5px !important;
+  }
+  .react-multi-carousel-dot button {
+  width: 16px !important;
+  height: 5px !important;
   }
 }
 
@@ -1040,6 +1050,15 @@
 
   #hbtn {
     top: 60px;
+  }
+    /*===============================================================carousel dot*/
+   .react-multi-carousel-dot {
+  width: 18px !important;
+  height: 5px !important;
+  }
+  .react-multi-carousel-dot button {
+  width: 15px !important;
+  height: 4px !important;
   }
 }
 
