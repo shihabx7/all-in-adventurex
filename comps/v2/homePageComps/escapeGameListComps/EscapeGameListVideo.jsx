@@ -66,7 +66,7 @@ export default function EscapeGameListVideo({
       {/*================================================== game video poster=== */}
       {!isPlaying && (
         <img
-          className="w-full absolute left-0 top-0 transition-all duration-700 ease-in-out"
+          className="w-full absolute left-0 top-0"
           src={gameCardData.poster.url}
           alt={
             gameCardData.poster.alt
@@ -82,9 +82,9 @@ export default function EscapeGameListVideo({
         <video
           ref={gameVideoRef}
           className={
-            "no-fullscreen-vid w-full  object-cover object-center transition-all duration-700 ease-in-out"
+            "no-fullscreen-vid w-full  object-cover object-center "
           }
-          preload="none"
+          preload="metadata"
           loop
           playsInline
           muted

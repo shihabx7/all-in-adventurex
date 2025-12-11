@@ -43,7 +43,7 @@ export default function EscapeGameListInfo({
   };
 
   return (
-    <div className="egl-info-box relative">
+    <div className="egl-info-box relative md:ml-[-10px] lg:ml-[-14px]">
        {/*=======================================Game-card-bg*/}
       <div className="egl-info-bg-img absolute top-0 left-0 w-full h-full">
         <img
