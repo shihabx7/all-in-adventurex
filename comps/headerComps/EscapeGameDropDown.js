@@ -15,19 +15,21 @@ const EscapeGameDropDown = (props) => {
                   "/activities/" +
                   escapeGame.activitySlug
                 }
-                className="flex items-center space-x-1 my-1"
+                className="flex items-center space-x-1 my-1 egd"
               >
                 <span className="text-gold">
                   <ImPlay3 />
                 </span>
                 <span className="sub-link-txt-sub">
-                  {escapeGame.activityName}
+                  {escapeGame.activitySlug == "toymakers-workshop"
+                    ? "Toymakers Workshop - For Kids"
+                    : escapeGame.activityName}
                 </span>
               </a>
             ) : (
               <a
                 href={"/activities/" + escapeGame.activitySlug}
-                className="flex items-center space-x-1 my-1"
+                className="flex items-center space-x-1 my-1 egd-r"
               >
                 <span className="text-gold">
                   <ImPlay3 />
