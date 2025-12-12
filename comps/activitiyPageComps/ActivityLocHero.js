@@ -162,7 +162,7 @@ const ActivityLocHero = (props) => {
               </h1>
               {props.pageData.pageSubtitle && (
                 <div
-                  className="text-gray-100 max-w-[1000px] mx-auto text-center lg:text-lg"
+                  className="text-gray-100 max-w-[1000px] mx-auto text-center lg:text-lg red-link"
                   dangerouslySetInnerHTML={{
                     __html: props.pageData.pageSubtitle,
                   }}
@@ -171,7 +171,7 @@ const ActivityLocHero = (props) => {
             </div>
               {props.pageData.pageNotice && (
               <div
-                className="home-botice-des mt-2 md:mt-3 text-[#dddddd] max-w-[1000px] mx-auto text-center md:text-lg"
+                className="home-botice-des mt-2 md:mt-3 text-[#dddddd] max-w-[1000px] mx-auto text-center md:text-lg red-link"
                 dangerouslySetInnerHTML={{
                   __html: props.pageData.pageNotice,
                 }}

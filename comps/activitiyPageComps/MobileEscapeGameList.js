@@ -1,4 +1,6 @@
 import TitleSeparator from "../util/TitleSeparator";
+import { locationBookingInfo } from "../../lib/v2/data/locationBookingInfo";
+import { useSiteData } from "../../contexts/SiteDataContext";
 
 const MobileEscapeGameList = (props) => {
   return (
@@ -9,9 +11,8 @@ const MobileEscapeGameList = (props) => {
       <div className="section-title text-center max-w-[800px] mx-auto">
         <TitleSeparator title={"Mobile Escape Rooms"} />
         <div className="text-gray-700 md:px-8 md:text-lg">
-          Discover our flexible pricing, straightforward booking process, and
-          detailed availability to bring the thrill of mobile escape rooms to
-          your next event!
+          Discover our affordable pricing, straightforward booking process, and
+          availability to bring the thrill of mobile mystery to your next event!
         </div>
       </div>
 
@@ -79,10 +80,10 @@ const MobileEscapeGameList = (props) => {
               Mobile Escape Rooms
             </h3>
             <div className="text-gray-200 lg:text-lg mx-auto md:mx-0 max-w-[700px]">
-              Our mobile escape room offers an unforgettable adventure for all
-              ages and group sizes, making it the ideal choice for corporate
-              events, team-building activities, school programs, family
-              gatherings, birthday parties and more.
+              Our mobile mystery offers an unforgettable adventure for all ages
+              and group sizes, making it the ideal choice for corporate events,
+              team-building activities, school programs, family gatherings,
+              birthday parties and more.
             </div>
           </div>
 

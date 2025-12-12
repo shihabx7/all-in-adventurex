@@ -63,7 +63,7 @@ const ActivityRootHero = (props) => {
               {props.pageData.pageTitle}
             </h1>
             <div
-              className="text-gray-300 md:text-slate-50 max-w-[1000px] mx-auto text-center lg:text-lg nocopy"
+              className="text-gray-300 md:text-slate-50 max-w-[1000px] mx-auto text-center lg:text-lg nocopy red-link"
               dangerouslySetInnerHTML={{
                 __html: props.pageData.pageSubtitle,
               }}
@@ -71,7 +71,7 @@ const ActivityRootHero = (props) => {
           </div>
           {props.pageData.pageNotice ? (
             <div
-              className="home-botice-des mt-2 md:mt-3 text-gray-300 md:text-slate-50 max-w-[1000px] mx-auto text-center md:text-lg"
+              className="home-botice-des red-link mt-2 md:mt-3 text-gray-300 md:text-slate-50 max-w-[1000px] mx-auto text-center md:text-lg"
               dangerouslySetInnerHTML={{ __html: props.pageData.pageNotice }}
             ></div>
           ) : (

@@ -33,7 +33,9 @@ const EscapeGameDropDown = (props) => {
                   <ImPlay3 />
                 </span>
                 <span className="sub-link-txt-sub">
-                  {escapeGame.activityName}
+                  {escapeGame.activitySlug == "toymakers-workshop"
+                    ? "Toymakers Workshop - For Kids"
+                    : escapeGame.activityName}
                 </span>
               </a>
             )}

@@ -102,10 +102,12 @@ a {
 
 .red-link a {
   color: rgb(220 38 38);
+   transition: .4s ease-in-out;
 }
 
 .red-link a:hover {
   color: rgb(185 28 28);
+  transition: .4s ease-in-out;
 }
 
 .thank-link-box {
@@ -147,22 +149,20 @@ a {
     rgba(0, 0, 0, 0.01)
   );
 }
-.text-red-stroke-sm{
+.text-red-stroke-sm {
   text-shadow: -0.65px -0.6px 0px #dc2626;
-   
 }
 @keyframes text-glow-red-sm {
   0% {
-     text-shadow: -1px -1px 0px #dc2626;
+    text-shadow: -1px -1px 0px #dc2626;
   }
 
- 
   50% {
     text-shadow: -3px -3px 6px #dc2626;
   }
 
   100% {
-     text-shadow: -1px -1px 0px #dc2626;
+    text-shadow: -1px -1px 0px #dc2626;
   }
 }
 .pipedriveWebForms iframe .gDhlQr {
