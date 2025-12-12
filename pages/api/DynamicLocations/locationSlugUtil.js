@@ -36,15 +36,13 @@ export async function fetchLocationActivities(locationSlug) {
     }
   }
   //  if (locationSlug == "raleigh-nc") {
-  if (toyMakerPageData[locationSlug]) {
-    let mObj = {
-      id: activityList.length + 2,
-      activitySlug: "toymakers-workshop",
-      // activityType: "Toymaker",
-      // activityName: "Toymakers Workshop",
-    };
-    retArr.push(mObj);
-  }
+ //if (toyMakerPageData[locationSlug]) {
+ //  let mObj = {
+ //    id: activityList.length + 2,
+ //    activitySlug: "toymakers-workshop",
+ //  };
+ //  retArr.push(mObj);
+ //}
   //console.log(retArr);
   return retArr;
 }

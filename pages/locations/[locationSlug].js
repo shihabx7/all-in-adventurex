@@ -17,7 +17,7 @@ import { getLocationHomePageData } from "../api/Locations/getLocationHomePageDat
 import PageBreedLoc from "../../comps/util/PageBreedLoc";
 import PageSeo from "../../comps/util/PageSeo";
 import LocationNav from "../../comps/locationsPage/LocationNav";
-import ToyMakerHomeSection from "../../comps/toyMakerWorkStation/section/ToyMakerHomeSection";
+ 
 import EventSlider from "../../comps/homepagecomps/EventSlider";
 import GiftCardHomePageSection from "../../comps/giftCardPageComps/GiftCardHomePageSection";
 import WhatIsEscape from "../../comps/homepagecomps/WhatIsEscape";
@@ -134,13 +134,7 @@ const Locations = (props) => {
           locationSlug={props.locationSlug}
           isPublished={props.isPublished}
         />
-        {props.toyMakerPageData && (
-          <ToyMakerHomeSection
-            sectionData={props.toyMakerPageData.homePageSectionData}
-            bookingData={props.toyMakerPageData.bookingData}
-            locationSlug={props.locationSlug}
-          />
-        )}
+
         {props.hasMobileEscapeRoom ? (
           <MobileMysteryOtherPageSection
             locationSlug={props.locationSlug}
@@ -249,7 +243,7 @@ export const getStaticProps = async (context) => {
       mapInfo: DATA.mapInfo,
       hasMobileEscapeRoom: DATA.hasMobileEscapeRoom,
       mobileEscapeRoomData: DATA.mobileEscapeRoomData,
-      toyMakerPageData: DATA.toyMakerPageData,
+      // toyMakerPageData: DATA.toyMakerPageData,
       //===================v2
       pageHeroData: DATA.pageHeroData,
       // aboutSectionData: DATA.aboutSectionData,

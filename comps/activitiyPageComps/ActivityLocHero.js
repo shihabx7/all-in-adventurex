@@ -38,7 +38,6 @@ const ActivityLocHero = (props) => {
 
     setShowHours(true);
   };
-
   useEffect(() => {
     const checkIfClickedOutsidehrs = (e) => {
       if (showHours && hourref.current && !hourref.current.contains(e.target)) {
@@ -54,9 +53,10 @@ const ActivityLocHero = (props) => {
       document.removeEventListener("mouseup", checkIfClickedOutsidehrs);
     };
   }, [showHours]);
+
   return (
     <>
-      {/* ?autolightframe=yes*/}
+      {/* =====================================================location hours modal=========*/}
       {props.locationInfo && showHours && (
         <div className="overflow-y-scroll h-screen w-screen bg-[rgba(0,0,0,0.8)] z-[1000000] top-0 left-0  pb-10 md:pb-0 fixed">
           <div className="max-w-[1024px] mx-auto px-3 md:px-6 lg:px-4 relative">
@@ -93,22 +93,34 @@ const ActivityLocHero = (props) => {
           </div>
         </div>
       )}
-      <div
-        className="bg-[#111111] home-hero"
-        style={{
-          backgroundImage: "url('" + props.pageData.pageHeroDesktop.url + "')",
-        }}
-      >
+      {/* =====================================================location hours modal=========*/}
+
+      <div className="activity-loc-hero-hero bg-[#121212] relative">
+        {/* =======================================dsktop bg=============== */}
+        <div className="activity-loc-hero-img dsk-img absolute top-0 left-0 w-full h-full  hidden md:block">
+          <img
+            className="w-full h-full object-cover object-center bg-no-repeat"
+            src={props.pageData.pageHeroDesktop.url}
+            alt={
+              props.pageData.pageHeroDesktop.alt
+                ? props.pageData.pageHeroDesktop.alt
+                : "all in adventures escape game hero img"
+            }
+          ></img>
+        </div>
+        {/* =======================================dsktop bg=============== */}
         <div className="home-hero-holder pt-0 pb-24 rm:pb-28  xm:pb-28 md:py-28 lg:py-32 2xl:py-36  relative">
-          <div className="homehero-img hm-img md:hidden w-full min-h-[280px] bg-[#000000]">
+          {/* ======================================= mobile bg=============== */}
+          <div className="homehero-img hm-img md:hidden w-full min-h-[280px] ">
             <img
               src={props.pageData.pageHeroMobile.url}
               alt={props.pageData.pageHeroMobile.alt}
             ></img>
           </div>
-          {/* shadow */}
+          {/* =======================================mobile bg=============== */}
+          {/* =======================shadow */}
           <div className="w-full h-full fyp-baner absolute top-0 left-0 md:hidden z-10"></div>
-          {/* shadow */}
+          {/*======================= shadow */}
           <div className="max-w-7xl home-hero-containerx mx-auto mt-[-28%] rm:mt-[-26%] lm:mt-[-25%] zm:mt-[-24%] sm:mt-[-22%] md:mt-0 relative px-2 lm:px-4  z-20">
             <div className="page-benar-info">
               {props.pageData.themeImage.hasImage ? (
@@ -150,13 +162,21 @@ const ActivityLocHero = (props) => {
               </h1>
               {props.pageData.pageSubtitle && (
                 <div
-                  className="text-gray-100 max-w-[840px] mx-auto text-center lg:text-lg"
+                  className="text-gray-100 max-w-[1000px] mx-auto text-center lg:text-lg"
                   dangerouslySetInnerHTML={{
                     __html: props.pageData.pageSubtitle,
                   }}
                 ></div>
               )}
             </div>
+              {props.pageData.pageNotice && (
+              <div
+                className="home-botice-des mt-2 md:mt-3 text-[#dddddd] max-w-[1000px] mx-auto text-center md:text-lg"
+                dangerouslySetInnerHTML={{
+                  __html: props.pageData.pageNotice,
+                }}
+              ></div>
+            )}
             <div className="max-w-md mx-auto mt-5 rm:mt-6 xm:mt-6  md:mt-8 pb-6 md:pb-12 lg:pb-8 ">
               {/*============Game Booking btn==========*/}
               {props.isPublished ? (
@@ -198,21 +218,15 @@ const ActivityLocHero = (props) => {
 
               {/*============Hero Notice==========*/}
             </div>
-            {props.pageData.pageNotice && (
-              <div
-                className="home-botice-des mt-4 md:mt-8 text-[#dddddd] max-w-[700px] mx-auto text-center md:text-lg"
-                dangerouslySetInnerHTML={{ __html: props.pageData.pageNotice }}
-              ></div>
-            )}
+          
           </div>
           {/*============Activity info ==========*/}
-
-          <div className="game-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[96%]  xm:max-w-[92%] mx-auto md:max-w-3xl absolute bottom-[-20%] rm:bottom-[-18%] lm:bottom-[-18%] zm:bottom-[-17%] sm:bottom-[-17%] md:bottom-[-15%] left-0 right-0  bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded z-40">
+          <div className="game-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[96%]  xm:max-w-[92%] md:max-w-3xl lg:max-w-[800px] mx-auto absolute bottom-[-20%] rm:bottom-[-18%] lm:bottom-[-18%] zm:bottom-[-17%] sm:bottom-[-17%] md:bottom-[-15%] left-0 right-0  bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded z-40">
             <div className="flex flex-wrap w-full justify-center md:grid md:grid-cols-5  md:justify-evenly items-center ">
               {/*============Team size==========*/}
               <div className="text-center w-[33%] md:w-auto">
                 <div className=" ">
-                  <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                  <p className="golden-text text-[1.15rem] md:text-[2rem] xl:text-4xl  font-os font-bold">
                     {props.pageData.teamSize}
                   </p>
                   <p className="text-gray-700 text-xs md:text-base lg:text-lg ">
@@ -224,7 +238,7 @@ const ActivityLocHero = (props) => {
 
               <div className="text-center w-[33%] md:w-auto">
                 <div className="border-l border-gray-300">
-                  <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                  <p className="golden-text text-[1.15rem] md:text-[2rem] xl:text-4xl font-os font-bold">
                     {props.pageData.age}
                   </p>
                   <p className="text-gray-700 text-xs md:text-base lg:text-lg">
@@ -237,7 +251,7 @@ const ActivityLocHero = (props) => {
 
               <div className="text-center w-[33%] md:w-auto">
                 <div className="border-l border-gray-300 ">
-                  <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                  <p className="golden-text text-[1.15rem] md:text-[2rem] xl:text-4xl  font-os font-bold">
                     {props.pageData.successRate
                       ? props.pageData.duration + " MIN"
                       : props.pageData.privateEvents}
@@ -252,7 +266,7 @@ const ActivityLocHero = (props) => {
 
               <div className="text-center w-[44%] md:w-auto">
                 <div className="pt-2 mt-3 border-t md:border-t-0 md:pt-0 md:mt-0 md:border-l border-gray-300 ">
-                  <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                  <p className="golden-text text-[1.15rem] md:text-[2rem] xl:text-4xl font-os font-bold">
                     {props.pageData.successRate
                       ? props.pageData.successRate + "%"
                       : props.pageData.duration + " MIN"}
@@ -267,7 +281,7 @@ const ActivityLocHero = (props) => {
 
               <div className="text-center w-[44%] md:w-auto pt-2 mt-3 border-t border-gray-300 md:pt-0 md:mt-0 md:border-t-0">
                 <div className="border-l border-gray-300 ">
-                  <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                  <p className="golden-text text-[1.15rem] md:text-[2rem] xl:text-4xl font-os font-bold">
                     {props.pageData.privateEvents}
                   </p>
                   <p className="text-gray-700 text-xs md:text-base lg:text-lg">
@@ -298,7 +312,6 @@ const ActivityLocHero = (props) => {
 
             {/*============location hours info ==========*/}
           </div>
-
           {/*============Activity info ==========*/}
         </div>
       </div>

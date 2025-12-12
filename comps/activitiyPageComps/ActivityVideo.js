@@ -1,8 +1,7 @@
-import TitleSeparator from "../util/TitleSeparator";
-
 import { ImPlay3 } from "react-icons/im";
-import { useState } from "react";
-import Image from "next/image";
+import { useState, useRef, useEffect } from "react";
+import TitleSeparator from "../util/TitleSeparator";
+import ActivityVideoSelf from "./ActivityVideoSelf";
 
 const ActivityVideo = (props) => {
   const [playVid, setPlayVid] = useState(false);
@@ -28,8 +27,7 @@ const ActivityVideo = (props) => {
             </p>
           </div>
         </div>
-
-        <div className="bg-[#000000] game-video-box pb-[57%] md:pb-[416px] lg:pb-[472px] w-[100%] md:w-[740px] lg:w-[840px] mx-auto shadow-lg relative">
+        <div className="bg-[#121212] game-video-box pb-[57%] md:pb-[416px] lg:pb-[472px] w-[100%] md:w-[740px] lg:w-[840px] mx-auto shadow-lg relative">
           {!playVid && (
             <div className="vid-tumb absolute top-0 left-0 w-full h-full overflow-hidden">
               <div className="vid-thubb-play relative w-full h-full">
@@ -45,20 +43,22 @@ const ActivityVideo = (props) => {
                     <></>
                   )}
                 </div>
+                {/**=========================================play-btn============*/}
                 <div
-                  onClick={() => {
-                    setPlayVid(true);
+                  onClick={(e) => {
+                    startVid();
                   }}
                   className="cursor-pointer text-[40px] md:text-[60px] lg:text-[72px] vid-play-btn w-[60px] h-[60px] md:w-[104px] md:h-[104px] lg:w-[116px] lg:h-[116px] rounded-full bg-[#000000] text-red-600 z-10 absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center"
                   style={{ margin: "auto" }}
                 >
                   <ImPlay3 className="ml-2" />
                 </div>
+                {/**=========================================play-btn===========*/}
               </div>
             </div>
           )}
-
-          {playVid && (
+          {/**=========================================youtube Video ====================*/}
+          {playVid && props.videoData.youtubeVideoId !== "self" && (
             <iframe
               className="absolute w-full h-full top-0 left-0"
               src={
@@ -72,6 +72,11 @@ const ActivityVideo = (props) => {
               allowFullScreen
             ></iframe>
           )}
+          {playVid && props.videoData.youtubeVideoId == "self" && (
+            <ActivityVideoSelf />
+          )}
+
+          {/**=========================================self Video =======================*/}
         </div>
         <div className="game-b-btnbox mt-8 md:mt-16 lg:mt-20">
           <div className="game-btn-all ">

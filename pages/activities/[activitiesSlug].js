@@ -38,7 +38,7 @@ const sinleActivities = (props) => {
           activitySlug={props.activitySlug}
         />
         <ActivityGallery activityGallery={props.activityGallery} />
-        <ActivityVideo videoData={props.videoData} />
+        <ActivityVideo videoData={props.videoData} activitySlug={props.activitySlug}/>
       </div>
 
       <RootFooter

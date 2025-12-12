@@ -1,8 +1,8 @@
-import { fetchLocationActivities } from "../../api/DynamicLocations/locationSlugUtil";
-
 import Script from "next/script";
+import { fetchLocationActivities } from "../../api/DynamicLocations/locationSlugUtil";
 import { getLocationSlugUrl } from "../../api/Locations/getLocationSlugUrls";
 import { getLocationsActivityPageData } from "../../api/DynamicLocations/getLocationsActivityPageData";
+//==========================================================components
 import LocationNav from "../../../comps/locationsPage/LocationNav";
 import LocationFooter from "../../../comps/locationsPage/LocationFooter";
 import PageSeo from "../../../comps/util/PageSeo";
@@ -58,19 +58,6 @@ const LocSingleActivity = (props) => {
             />
           </>
         )}
-        {props.pageUi == "toymakers-workstation" && (
-          <>
-            <ToyMakerPageUI
-              toymakersPageData={props.toymakersPageData}
-              locationInfo={props.locationInfo}
-              locationName={props.locationName}
-              locationSlug={props.locationSlug}
-              escapeGameCarouselSectionData={
-                props.escapeGameCarouselSectionData
-              }
-            />
-          </>
-        )}
         {props.pageUi == "escape-room" && (
           <>
             <ActivityLocHero
@@ -91,6 +78,7 @@ const LocSingleActivity = (props) => {
             />
             <ActivityGallery activityGallery={props.activityGallery} />
             <ActivityVideo
+              activitySlug={props.activitySlug}
               videoData={props.videoData}
               locationSlug={props.locationSlug}
             />
@@ -165,7 +153,7 @@ export const getStaticProps = async (context) => {
     context.params.locationSlug,
     context.params.activitySlug
   );
-  //  console.log(DATA.escapeGameCarouselSectionData);
+  //console.log(DATA.pageUi);
 
   return {
     props: {
@@ -196,7 +184,7 @@ export const getStaticProps = async (context) => {
 
       mobileEscapeRoomPageData: DATA.mobileEscapeRoomPageData,
       pageUi: DATA.pageUi,
-      toymakersPageData: DATA.toymakersPageData,
+      //toymakersPageData: DATA.toymakersPageData,
       escapeGameCarouselSectionData: DATA.escapeGameCarouselSectionData,
     },
     revalidate: 12,

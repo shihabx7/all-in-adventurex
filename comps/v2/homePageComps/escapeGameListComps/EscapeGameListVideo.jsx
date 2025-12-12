@@ -58,12 +58,13 @@ export default function EscapeGameListVideo({
   // ===============================================stop video on touch out side
   //onTouchEnd={(e) => stopVideoOnClick(e)}
   return (
-    <div ref={containerRef}
+    <div
+      ref={containerRef}
       onMouseEnter={(e) => playVideoOnHover(e)}
       onMouseLeave={(e) => stopVideoOnClick(e)}
       className="egl-video-box hover:cursor-pointer relative group"
     >
-      {/*================================================== game video poster=== */}
+      {/*==================================================game video poster=== */}
       {!isPlaying && (
         <img
           className="w-full absolute left-0 top-0"
@@ -75,24 +76,23 @@ export default function EscapeGameListVideo({
           }
         ></img>
       )}
+
       {/*================================================== game video poster end=== */}
       {/*================================================== game video */}
-      <div   className="eg-card-video-container">
-        <Suspense fallback={<p>Loading video...</p>}> 
-        <video
-          ref={gameVideoRef}
-          className={
-            "no-fullscreen-vid w-full  object-cover object-center "
-          }
-          preload="metadata"
-          loop
-          playsInline
-          muted
-          poster={gameCardData.poster.url}
-        >
-          <source src={gameCardData.video.webmUrl} type={"video/webm"} />
-          <source src={gameCardData.video.url} type={"video/mp4"} />
-        </video>
+      <div className="eg-card-video-container">
+        <Suspense fallback={<p>Loading video...</p>}>
+          <video
+            ref={gameVideoRef}
+            className={"no-fullscreen-vid w-full  object-cover object-center "}
+            preload="metadata"
+            loop
+            playsInline
+            muted
+            poster={gameCardData.poster.url}
+          >
+            <source src={gameCardData.video.webmUrl} type={"video/webm"} />
+            <source src={gameCardData.video.url} type={"video/mp4"} />
+          </video>
         </Suspense>
       </div>
       {/*==================================================game video end*/}

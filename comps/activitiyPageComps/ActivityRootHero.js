@@ -13,13 +13,22 @@ const ActivityRootHero = (props) => {
   };
 
   return (
-    <div
-      className={"home-hero bg-[#111111]"}
-      style={{
-        backgroundImage: "url('" + props.pageData.pageHeroDesktop.url + "')",
-      }}
-    >
+    <div className="activity-root-hero-hero bg-[#121212] relative ">
+       {/* =======================================dsktop bg=============== */}
+      <div className="activity-root-hero-img dsk-img absolute top-0 left-0 w-full h-full  hidden md:block">
+        <img
+          className="w-full h-full object-cover object-center bg-no-repeat"
+          src={props.pageData.pageHeroDesktop.url}
+          alt={
+            props.pageData.pageHeroDesktop.alt
+              ? props.pageData.pageHeroDesktop.alt
+              : "all in adventures escape game hero img"
+          }
+        ></img>
+      </div>
+       {/* =======================================dsktop bg=============== */}
       <div className="home-hero-holder pt-0 pb-24 rm:pb-28  xm:pb-28 md:py-24 lg:py-32 2xl:py-36  relative">
+         {/* =======================================mobile bg=============== */}
         <div className="homehero-img w-full min-h-[280px] bg-[#000000] md:hidden">
           <img
             className="w-full"
@@ -27,6 +36,7 @@ const ActivityRootHero = (props) => {
             alt={props.pageData.pageHeroMobile.alt}
           ></img>
         </div>
+         {/* =======================================mobile bg=============== */}
         {/* shadow */}
         <div className="w-full h-full fyp-baner absolute top-0 left-0 md:hidden z-10"></div>
         {/* shadow */}
@@ -81,11 +91,11 @@ const ActivityRootHero = (props) => {
           )}
         </div>
         {/* =============info bar======= */}
-        <div className="game-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[95%]  xm:max-w-[92%] mx-auto md:max-w-3xl absolute bottom-[-11%] rm:bottom-[-11%] lm:bottom-[-10%] zm:bottom-[-10%] sm:bottom-[-9%] md:bottom-[-8%] left-0 right-0  bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded z-30">
+        <div className="game-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[95%]  xm:max-w-[92%]  md:max-w-3xl lg:max-w-[830px] xl:max-w-[880px] mx-auto  absolute bottom-[-11%] rm:bottom-[-11%] lm:bottom-[-10%] zm:bottom-[-10%] sm:bottom-[-9%] md:bottom-[-8%] left-0 right-0  bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded z-30">
           <div className="flex flex-wrap w-full justify-center md:grid md:grid-cols-5  md:justify-evenly items-center ">
             <div className="text-center w-[33%] md:w-auto">
               <div className=" ">
-                <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                <p className="golden-text text-[1.15rem] md:text-[2rem] xl:text-4xl font-os font-bold">
                   {props.pageData.teamSize}
                 </p>
                 <p className="text-gray-700 text-xs md:text-base lg:text-lg ">
@@ -96,7 +106,7 @@ const ActivityRootHero = (props) => {
 
             <div className="text-center w-[33%] md:w-auto">
               <div className="border-l border-gray-300">
-                <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                <p className="golden-text text-[1.15rem] md:text-[2rem] xl:text-4xl  font-os font-bold">
                   {props.pageData.age}
                 </p>
                 <p className="text-gray-700 text-xs md:text-base lg:text-lg">
@@ -107,7 +117,7 @@ const ActivityRootHero = (props) => {
 
             <div className="text-center w-[33%] md:w-auto">
               <div className="border-l border-gray-300 ">
-                <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                <p className="golden-text text-[1.15rem] md:text-[2rem] xl:text-4xl font-os font-bold">
                   {props.pageData.duration} MIN
                 </p>
                 <p className="text-gray-700 text-xs md:text-base lg:text-lg">
@@ -118,7 +128,7 @@ const ActivityRootHero = (props) => {
 
             <div className="text-center w-[44%] md:w-auto pt-2 mt-3 border-t border-gray-300 md:pt-0 md:mt-0 md:border-t-0">
               <div className="border-l-0 border-gray-300 md:border-l ">
-                <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                <p className="golden-text text-[1.15rem] md:text-[2rem] xl:text-4xl font-os font-bold">
                   {props.pageData.successRate}%
                 </p>
                 <p className="text-gray-700 text-xs md:text-base lg:text-lg">
@@ -129,7 +139,7 @@ const ActivityRootHero = (props) => {
 
             <div className="text-center w-[44%] md:w-auto pt-2 mt-3 border-t border-gray-300 md:pt-0 md:mt-0 md:border-t-0">
               <div className="border-l border-gray-300 ">
-                <p className="golden-text text-xl md:text-4xl font-os font-bold">
+                <p className="golden-text text-[1.15rem] md:text-[2rem] xl:text-4xl font-os font-bold">
                   {props.pageData.privateEvents}
                 </p>
                 <p className="text-gray-700 text-xs md:text-base lg:text-lg">
