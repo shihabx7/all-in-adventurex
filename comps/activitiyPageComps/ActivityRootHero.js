@@ -14,7 +14,7 @@ const ActivityRootHero = (props) => {
 
   return (
     <div className="activity-root-hero-hero bg-[#121212] relative ">
-       {/* =======================================dsktop bg=============== */}
+      {/* =======================================dsktop bg=============== */}
       <div className="activity-root-hero-img dsk-img absolute top-0 left-0 w-full h-full  hidden md:block">
         <img
           className="w-full h-full object-cover object-center bg-no-repeat"
@@ -26,9 +26,9 @@ const ActivityRootHero = (props) => {
           }
         ></img>
       </div>
-       {/* =======================================dsktop bg=============== */}
+      {/* =======================================dsktop bg=============== */}
       <div className="home-hero-holder pt-0 pb-24 rm:pb-28  xm:pb-28 md:py-24 lg:py-32 2xl:py-36  relative">
-         {/* =======================================mobile bg=============== */}
+        {/* =======================================mobile bg=============== */}
         <div className="homehero-img w-full min-h-[280px] bg-[#000000] md:hidden">
           <img
             className="w-full"
@@ -36,7 +36,7 @@ const ActivityRootHero = (props) => {
             alt={props.pageData.pageHeroMobile.alt}
           ></img>
         </div>
-         {/* =======================================mobile bg=============== */}
+        {/* =======================================mobile bg=============== */}
         {/* shadow */}
         <div className="w-full h-full fyp-baner absolute top-0 left-0 md:hidden z-10"></div>
         {/* shadow */}
@@ -63,14 +63,21 @@ const ActivityRootHero = (props) => {
               {props.pageData.pageTitle}
             </h1>
             <div
-              className="text-gray-300 md:text-slate-50 max-w-[860px] mx-auto text-center lg:text-lg nocopy"
+              className="text-gray-300 md:text-slate-50 max-w-[1000px] mx-auto text-center lg:text-lg nocopy"
               dangerouslySetInnerHTML={{
                 __html: props.pageData.pageSubtitle,
               }}
             ></div>
           </div>
-
-          {/*============location search btn==========*/}
+          {props.pageData.pageNotice ? (
+            <div
+              className="home-botice-des mt-2 md:mt-3 text-gray-300 md:text-slate-50 max-w-[1000px] mx-auto text-center md:text-lg"
+              dangerouslySetInnerHTML={{ __html: props.pageData.pageNotice }}
+            ></div>
+          ) : (
+            <></>
+          )}
+          {/*============book search btn==========*/}
           <div className="md:max-w-[380px] xl:max-w-[400px] mx-auto mt-5 rm:mt-6 xm:mt-6 md:mt-8  xl:mt-10 ">
             <button
               onClick={(e) => showLocModalForGame(props.activitySlug)}
@@ -79,19 +86,10 @@ const ActivityRootHero = (props) => {
               BOOK THIS GAME
             </button>
           </div>
-          {/*============location search btn==========*/}
-
-          {props.pageData.pageNotice ? (
-            <div
-              className="home-botice-des mt-4 md:mt-8 text-gray-300 md:text-slate-50 max-w-[700px] mx-auto text-center md:text-lg"
-              dangerouslySetInnerHTML={{ __html: props.pageData.pageNotice }}
-            ></div>
-          ) : (
-            <></>
-          )}
+          {/*============book search btn==========*/}
         </div>
         {/* =============info bar======= */}
-        <div className="game-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[95%]  xm:max-w-[92%]  md:max-w-3xl lg:max-w-[830px] xl:max-w-[880px] mx-auto  absolute bottom-[-11%] rm:bottom-[-11%] lm:bottom-[-10%] zm:bottom-[-10%] sm:bottom-[-9%] md:bottom-[-8%] left-0 right-0  bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded z-30">
+        <div className="game-ft drop-shadow-[0_4px_8px_rgba(216,174,84,0.45)] max-w-[95%]  xm:max-w-[92%]  md:max-w-[780px] lg:max-w-[880px] xl:max-w-[960px] mx-auto  absolute bottom-[-11%] rm:bottom-[-11%] lm:bottom-[-10%] zm:bottom-[-10%] sm:bottom-[-9%] md:bottom-[-8%] left-0 right-0  bg-white px-2 py-4 md:py-4 md:px-4 lg:py-6  rounded z-30">
           <div className="flex flex-wrap w-full justify-center md:grid md:grid-cols-5  md:justify-evenly items-center ">
             <div className="text-center w-[33%] md:w-auto">
               <div className=" ">
