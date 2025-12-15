@@ -16,11 +16,11 @@ export default function OtherGameSection({
                   title={
                     otherGameSectionData.sectionTitle
                       ? otherGameSectionData.sectionTitle
-                      : "REAL-LIFE ESCAPE ROOM GAMES"
+                      : "BEYOND THE ESCAPE"
                   }
                 />
               </div>
-              {/*otherGameSectionData.sectionSubTitle && (
+              {otherGameSectionData.sectionSubTitle && (
                 <div className="pageSub Title max-w-[800px] mx-auto">
                   <div
                     className="text-[#f3f4f6]  sm:text-lg xl:text-xl text-center mt-3 md:mt-3 lg:mt-5 xl:mt-6"
@@ -29,7 +29,7 @@ export default function OtherGameSection({
                     }}
                   ></div>
                 </div>
-              )*/}
+              )}
             </div>
             {/*============section head end==========*/}
 

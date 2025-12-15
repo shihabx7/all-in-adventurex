@@ -42,14 +42,21 @@ export default function HomePageHeroVideoBgSection({
           <div className="section-container  mx-auto  max-w-7xl py-20 md:py-24 md:pb-28 2xl:py-28 px-2 rm:px-3 lm:px-4">
             {/*=====================================================================section head==========*/}
             <div className="section-head">
-              {locationInfo && (
+              {locationSlug && locationInfo && (
                 <div className="location-address-prefix">
                   <p className="font-semibold zm:text-lg md:text-2xl  text-white text-center leading-[1.2] uppercase">
                     {`At ${locationInfo.mall} in ${locationName}`}
                   </p>
                 </div>
               )}
-              <div className="pageTitle max-w-[300px] rm:max-w-[360px] lm:max-w-[400px] zm:max-w-[520px] md:max-w-[800px] lg:max-w-[990px] mx-auto">
+              {!locationSlug && (
+                <div className="location-address-prefix eye-brow">
+                  <p className="font-semibold zm:text-lg md:text-2xl  text-white text-center leading-[1.2] uppercase">
+                    {pageHeroData.eyeBrowText}
+                  </p>
+                </div>
+              )}
+              <div className="pageTitle max-w-[300px] rm:max-w-[360px] lm:max-w-[400px] zm:max-w-[520px] md:max-w-[800px] lg:max-w-[1140px] mx-auto">
                 <HomePageTitleCenterLight
                   pageTitle={
                     pageHeroData.pageTitle
@@ -94,17 +101,16 @@ export default function HomePageHeroVideoBgSection({
             {/*============location search btn==========*/}
           </div>
         </div>
-        
       </div>
       {!locationInfo && <HomeHeroInfoOld heroInfo={pageHeroData.heroInfo} />}
-        {locationInfo && (
-          <LocationHomeHeroInfoOld
-            heroInfo={pageHeroData.heroInfo}
-            locationInfo={locationInfo}
-            businessHours={businessHours}
-            holidayHours={holidayHours}
-          />
-        )}
+      {locationInfo && (
+        <LocationHomeHeroInfoOld
+          heroInfo={pageHeroData.heroInfo}
+          locationInfo={locationInfo}
+          businessHours={businessHours}
+          holidayHours={holidayHours}
+        />
+      )}
     </div>
   );
 }

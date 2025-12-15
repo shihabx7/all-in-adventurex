@@ -73,7 +73,7 @@ export default function ChristmasGiftNotice({ locationSlug, giftBooking }) {
             </div>
             {/*=========================================bfdy notice content */}
             <div className="w-auto  md:flex-0 md:w-[600px] lg:w-[640px] xl:maxw-[840px] 2xl:max-w-[1080px] ">
-              <div className="bfdy-notice-container flex justify-center  items-center space-x-2 md:space-x-2 lg:space-x-2 xl:space-x-2 2xl:space-x-4 px-0 sm:px-2 py-1 ">
+              <div className="bfdy-notice-container flex justify-center  items-center space-x-2 md:space-x-3 lg:space-x-4 2xl:space-x-5 px-0 sm:px-2 py-1 ">
                 {/*=========================================gift cart poster */}
                 <div className="bfdy-notice-ribb max-w-[66px] md:max-w-[72px] lg:max-w-[82px] xl:max-w-[96px]  flex items-end md:block  sm:mx-3 md:mx-0 ">
                   <img

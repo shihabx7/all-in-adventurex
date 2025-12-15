@@ -101,7 +101,7 @@ export default function EscapeGameListVideo({
         {isPlaying ? (
           <button
             onClick={(e) => stopVideoOnClick(e)}
-            className="xl:text-[20px] flex justify-between items-center  p-3 xl:p-4 text-center bg-red-600 text-[#d9d9d9] rounded-full"
+            className="text-[18px] xl:text-[20px] flex justify-between items-center  p-3 xl:p-4 text-center bg-red-600 text-[#d9d9d9] rounded-full"
           >
             <span>
               <FaPause />
