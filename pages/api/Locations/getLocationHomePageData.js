@@ -38,6 +38,7 @@ export const getLocationHomePageData = async (slug) => {
   const pageResData = pageResArr.data[0].attributes;
   const seoData = pageResData.seo;
 
+  
   const mobileEscapeRoom = pageResData.mobileEscapeRoom;
   let isActiveMobileEscape = false;
   if (mobileEscapeRoom.length > 0) {

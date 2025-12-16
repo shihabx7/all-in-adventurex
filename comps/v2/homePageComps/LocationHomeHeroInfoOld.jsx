@@ -132,7 +132,7 @@ export default function LocationHomeHeroInfoOld({
           <div className="text-center w-[44%] md:w-auto border-t md:border-t-0 pt-2 mt-3 md:pt-0 md:mt-0 border-gray-300">
             <div className="border-l  border-gray-300">
               <h3 className="golden-text text-xl md:text-4xl font-os font-bold">
-                {heroInfo.geustServed}
+                {heroInfo.guestServed}
               </h3>
               <p className="text-gray-700 text-xs md:text-base lg:text-lg">
                 Guests Served

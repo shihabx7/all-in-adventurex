@@ -29,7 +29,7 @@ export default function HomeHeroInfo({ heroInfo }) {
           </div>
           <div className="info-item text-center px-3 xm:px-4 md:px-8 lg:px-10">
             <h3 className="font-os text-[#231800] leading-[1.3] md:leading-[1.2] font-bold text-[18px] rm:text-[19px] sm:text-[24px] md:text-[34px] lg:text-[40px]">
-              {heroInfo.geustServed}
+              {heroInfo.guestServed}
             </h3>
             <p className="text-[#374151] text-xs rm:text-[14px] md:text-base lg:text-lg">
               Guest Served
