@@ -23,16 +23,16 @@ export default function HomePageHeroVideoBg({ videoData }) {
           videoRef.current.play();
         }
       });
+        useEffect(() => {
+    videoRef.current.play();
+  }, [videoUrl]);
   }, []);*/
   useEffect(() => {
-    
-    setVideoUrl(videoData.video.webmUrl);
+   
     videoRef.current.play();
   }, []);
 
-  useEffect(() => {
-    videoRef.current.play();
-  }, [videoUrl]);
+
   return (
     <div className="section-full-screen-bg-video max-w-screen h-full  ">
       <video
@@ -51,14 +51,8 @@ export default function HomePageHeroVideoBg({ videoData }) {
             : "/assets/home-page/all-in-adventure-hero-video-poster.jpg"
         }
       >
-        <source
-          src={videoData.video.webmUrl}
-          type={"video/webm"}
-        />
-          <source
-          src={videoData.video.url}
-          type={"video/mp4"}
-        />
+        <source src={videoData.video.webmUrl} type={"video/webm"} />
+        <source src={videoData.video.url} type={"video/mp4"} />
       </video>
     </div>
   );

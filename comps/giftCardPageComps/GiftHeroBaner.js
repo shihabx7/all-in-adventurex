@@ -139,8 +139,28 @@ const GiftHeroBaner = (props) => {
                   </div>
                   {/* =======card content List========  */}
                   <div className="gift-hero-list-box mt-4  lg:mt-6 text-[#2E2E2E] md:text-[1.15rem] lg:text-[.94rem] xl:text-[1.18rem]">
-                    
-                     <div className="gh-item flex justify-start space-x-2 items-start md:items-center my-3">
+                    {/* =======card content List offer========  */}
+                    <div className="gh-item flex justify-start space-x-2 items-start md:items-center my-3">
+                      <img
+                        className="w-[26px] xl:w-[30px]"
+                        src="/assets/gift-images/hero/gift-icon-for-hero-point-text.svg"
+                        alt=" All in Adventures gift card icon showcasing a vibrant design, symbolizing adventure and excitement in gift-giving."
+                      ></img>
+
+                      <p className="it ">Christmas Gift Card Deal — 15% OFF</p>
+                    </div>
+                    <div className="gh-item flex justify-start space-x-2 items-start md:items-center my-3">
+                      <img
+                        className="w-[26px] xl:w-[30px]"
+                        src="/assets/gift-images/hero/gift-icon-for-hero-point-text.svg"
+                        alt=" All in Adventures gift card icon showcasing a vibrant design, symbolizing adventure and excitement in gift-giving."
+                      ></img>
+                      <p className="it">
+                        Use code GIFT15 at checkout. Code expires Dec. 21.
+                      </p>
+                    </div>
+                    {/* =======card content List offer========  */}
+                    <div className="gh-item flex justify-start space-x-2 items-start md:items-center my-3">
                       <img
                         className="w-[26px] xl:w-[30px]"
                         src="/assets/gift-images/hero/gift-icon-for-hero-point-text.svg"
@@ -189,9 +209,7 @@ const GiftHeroBaner = (props) => {
                         src="/assets/gift-images/hero/gift-icon-for-hero-point-text.svg"
                         alt=" All in Adventures gift card icon showcasing a vibrant design, symbolizing adventure and excitement in gift-giving."
                       ></img>
-                      <p className="it">
-                        Our gift cards never expire
-                      </p>
+                      <p className="it">Our gift cards never expire</p>
                     </div>
                   </div>
                   {/* =======card content List end========  */}

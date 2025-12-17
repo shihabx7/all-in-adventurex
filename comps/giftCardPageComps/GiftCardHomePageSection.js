@@ -30,11 +30,15 @@ const GiftCardHomePageSection = (props) => {
           <div className="gift-row gift-row-shadow xm:max-w-[490px] md:max-w-[700px] mx-auto lg:max-w-none flex flex-col lg:flex-row justify-between lg:space-x-7 xl:space-x-12 2xl:space-x-10 items-center pt-6 pb-8 px-1 rm:px-2 lm:px-3 xm:px-4  zm:p-8 md:p-12 lg:p-10 xl:p-12 2xl:p-14 bg-[#151515] rounded-[14px]">
             <div className="gift-info order-2 lg:order-1 lg:w-1/2">
               <div className="text-content pt-4 md:pt-8 lg:pt-0 ">
-             
+                <p className="text-red-600 text-sm rm:text-base 2xl:text-[1.27rem] font-semibold uppercase">
+                  Christmas Gift Card Deal — 15% OFF
+                </p>
                 <h2 className="text-[1.32rem] rm:text-[1.5rem] max-w-[400px] rm:max-w-[440px] md:max-w-[500px] md:text-[40px] lg:text-[42px] xl:text-[44px] 2xl:text-[48px]  leading-[1.2] text-[#CA9342] font-os font-bold mb-3 zm:mb-4 2xl:max-w-[400px]">
                   ALL IN ADVENTURES GIFT CARDS
                 </h2>
-              
+                <p className="text-[#ffffff] text-sm rm:text-[.96rem] 2xl:text-lg mb-3 xl:mb-4 font-medium">
+                  Use code <span className="text-red-600 ">GIFT15 </span>at checkout. Code expires Dec. 21.
+                </p>
                 <p className="text-[#c5c5c5] text-sm rm:text-base 2xl:text-lg mb-3 xl:mb-4">
                   Looking for the perfect gift? Surprise your loved ones with an
                   All In Adventures Gift Card—a ticket to thrilling escape room

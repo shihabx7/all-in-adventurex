@@ -44,14 +44,14 @@ export default function HomePageHeroVideoBgSection({
             <div className="section-head">
               {locationSlug && locationInfo && (
                 <div className="location-address-prefix">
-                  <p className="font-semibold zm:text-lg md:text-2xl  text-white text-center leading-[1.2] uppercase">
+                  <p className="font-semibold text-[.72rem] rm:text-[.8rem] lm:text-[.88rem] md:text-lg xl:text-2xl  text-white text-center leading-[1.2] uppercase">
                     {`At ${locationInfo.mall} in ${locationName}`}
                   </p>
                 </div>
               )}
               {!locationSlug && (
                 <div className="location-address-prefix eye-brow">
-                  <p className="font-semibold zm:text-lg md:text-2xl  text-white text-center leading-[1.2] uppercase">
+                  <p className="font-semibold text-[.72rem] rm:text-[.7rem] lm:text-[.88rem] md:text-lg xl:text-2xl text-white text-center leading-[1.2] uppercase">
                     {pageHeroData.eyeBrowText}
                   </p>
                 </div>
