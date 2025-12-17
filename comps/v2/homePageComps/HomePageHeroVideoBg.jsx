@@ -53,7 +53,11 @@ export default function HomePageHeroVideoBg({ videoData }) {
       >
         <source
           src={videoData.video.webmUrl}
-          type={videoData.video.webmUrl ? "video/webm" : "video/mp4"}
+          type={"video/webm"}
+        />
+          <source
+          src={videoData.video.url}
+          type={"video/mp4"}
         />
       </video>
     </div>
