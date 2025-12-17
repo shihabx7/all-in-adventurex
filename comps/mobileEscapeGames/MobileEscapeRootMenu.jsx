@@ -34,7 +34,7 @@ const MobileEscapeRootMenu = (props) => {
 
   return (
     <div
-      className="loc-menu-mob top-0 left-0 bg-dark fixed w-full h-screen overflow-scroll md:overflow-hidden z-[100000]"
+      className="loc-menu-mobile top-0 left-0 bg-dark fixed w-full h-screen overflow-x-hidden overflow-y-auto z-[100000]"
       style={{
         backgroundImage:
           "url(/assets/submenu-bg.png),linear-gradient(#111111,#111111)",

@@ -12,7 +12,7 @@ const LocationMenuX = (props) => {
   };
 
   return (
-    <div className="loc-menu locx bg-black menu-pattern fixed w-full h-full overflow-scroll">
+    <div className="loc-menu-x locx bg-black menu-pattern fixed w-full h-full overflow-x-hidden overflow-y-auto">
       <div
         onClick={closelocmenu}
         id="locclose"

@@ -86,7 +86,7 @@ export default function ModalMenu() {
     <>
       <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
       <div
-        className="modal-menu full-sceen-view-modal top-0 left-0 bg-dark fixed w-full h-full overflow-scroll md:overflow-hidden z-[100000]"
+        className="modal-menu full-sceen-view-modal top-0 left-0 bg-dark fixed w-full h-full  overflow-x-hidden overflow-y-auto z-[100000]"
         style={{
           backgroundImage:
             "url(/assets/submenu-bg.png),linear-gradient(#111111,#111111)",

@@ -15,7 +15,7 @@ const GiftCardsMenuBooking = (props) => {
   return (
     <>
       <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
-      <div className="loc-menu bg-black menu-pattern  fixed w-full h-full overflow-scroll md:overflow-hidden">
+      <div className="loc-menu bg-black menu-pattern  fixed w-full h-full overflow-x-hidden overflow-y-auto">
         <div
           onClick={closelocmenu}
           id="giftloccloseicon"
