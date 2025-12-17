@@ -30,7 +30,7 @@ const formateDate = (dt) => {
 export default function LocationHoursTable(props) {
   return (
     <div>
-      <div className="loc-info-tbl mt-8">
+      <div className="loc-info-tbl mt-8 ">
         {/*======================Store map===== */}
         <div className="store-map locinfo-row border-y border-[#D2C6AA] py-2 px-2 lg:py-3">
           <div className="flex space-x-2 md:items-center md:text-lg ">
@@ -196,7 +196,7 @@ export default function LocationHoursTable(props) {
         {/*======================Store parking+wheelchair  end===== */}
       </div>
       {/*======================business hours and holiday  table===== */}
-      <div className="loc-business-hrs-tbl flex flex-col  md:flex-row border-y border-[#D2C6AA]">
+      <div className="loc-business-hrs-tbl flex flex-col  md:flex-row border-y pb-4 rm:pb-5 sm:pb-3 lg:pb-2 border-[#D2C6AA]">
         <div className="loc-tb-hrs md:min-w-[46%] ">
           <div className="pt-2 pb-2 px-2 md:px-2 md:py-3 lg:px-4 tbl-h border-b border-[#D2C6AA]">
             <h3 className="text-[#232323] font-medium lg:text-lg">
