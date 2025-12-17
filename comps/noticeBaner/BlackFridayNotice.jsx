@@ -4,7 +4,7 @@ import { getCookies, getCookie, setCookie, deleteCookie } from "cookies-next";
 import { escapeGameBundleBookingList } from "../../lib/v2/data/escapeGameBundleBookingList";
 import { useLocModal } from "../../contexts/LocModalContext";
 import { TbCopy } from "react-icons/tb";
-import BlackFridayNoticeTimer from "./BlackFridayNoticeTimer";
+import BlackFridayNoticeTimer from "./NoticeTimer";
 export default function BlackFridayNotice({
   noticeData,
   locationSlug,
@@ -59,12 +59,8 @@ export default function BlackFridayNotice({
     try {
       await navigator.clipboard.writeText(textToCopy);
       alert("Coupon Code copied to clipboard!");
-      // console.log('Text copied to clipboard!');
-      // Optionally, provide user feedback (e.g., a temporary "Copied!" message)
     } catch (err) {
-      // console.error('Failed to copy text: ', err);
       alert("Failed to Coupon Code. Please try again.");
-      // Handle cases where copying might not be supported or allowed
     }
   };
   return (
@@ -146,7 +142,7 @@ export default function BlackFridayNotice({
               <div className=" order-2 md:order-3 bfdy-timer-container">
                 <BlackFridayNoticeTimer />
               </div>
-               {/*=========================================Ext Offer*/}
+              {/*=========================================Ext Offer*/}
               <div className="rotate-[-24deg] -skew-x-12 hidden lg:block order-5">
                 <p className="ext-offer text-red-stroke-sm  text-[#e8e8e8] animate-slide-in-left  text-[.64rem] rm:text-[.72rem] sm:text-[.76rem] md:text-[.75rem] xl:text-[.85rem] 2xl:text-[.9rem]   text-center  leading-[1]">
                   Offer Extended!

@@ -1,17 +1,17 @@
 import { useState, useEffect } from "react";
 
-
-export default function BlackFridayNoticeTimer() {
-
-  const [remainingTime, setRemainingTime] = useState({ days: 0,
+export default function NoticeTimer() {
+  const [remainingTime, setRemainingTime] = useState({
+    days: 0,
     hours: 0,
     minutes: 0,
-    seconds: 0,});
-const formatBfdyTime = (value) => {
-  return String(value).padStart(2, '0');
-};
+    seconds: 0,
+  });
+  const formatBfdyTime = (value) => {
+    return String(value).padStart(2, "0");
+  };
   useEffect(() => {
-    const expireDate = new Date("2025-12-01T15:59:59");
+    const expireDate = new Date("2025-12-21T11:59:59");
 
     const interval = setInterval(() => {
       const currentTime = new Date();
@@ -34,8 +34,8 @@ const formatBfdyTime = (value) => {
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
   return (
-    <div className="bfdy-timer flex space-x-[1.5px]  rm:space-x-[2px] xl:space-x-2 items-center text-white text-center  ">
-      <div className="timer-item-box d-box  bg-[#1D1E1F] rounded-sm px-1 py-[2px] lg:px-2 lg:py-[6px] min-w-[32px] md:min-w-[36px] lg:min-w-[42px]">
+    <div className="bfdy-timer flex space-x-[1.5px]  rm:space-x-[1px] xl:space-x-[2px] items-center text-white text-center  ">
+      <div className="timer-item-box d-box  bg-[#1D1E1F] rounded-sm px-1 py-[4px] lg:px-2 lg:py-[6px] min-w-[32px] md:min-w-[36px] lg:min-w-[42px]">
         <p className="bfdy-Day font-semibold text-[.75rem] md:text-[.9rem] lg:text-[1.1rem] 2xl:text-[1.15rem] leading-[1.1]">
           {formatBfdyTime(remainingTime.days)}
         </p>
@@ -43,7 +43,7 @@ const formatBfdyTime = (value) => {
           Days
         </p>
       </div>
-      <div className="timer-item-box d-box  bg-[#1D1E1F] rounded-sm px-1 py-[2px] lg:px-2 lg:py-[6px]  min-w-[32px] md:min-w-[36px] lg:min-w-[42px]">
+      <div className="timer-item-box d-box  bg-[#1D1E1F] rounded-sm px-1 py-[4px] lg:px-2 lg:py-[6px]  min-w-[32px] md:min-w-[36px] lg:min-w-[42px]">
         <p className="bfdy-Day font-semibold text-[.75rem] md:text-[.9rem] lg:text-[1.1rem] 2xl:text-[1.15rem] leading-[1.1]">
           {formatBfdyTime(remainingTime.hours)}
         </p>
@@ -51,17 +51,21 @@ const formatBfdyTime = (value) => {
           Hours
         </p>
       </div>
-      <div className="timer-item-box d-box  bg-[#1D1E1F] rounded-sm px-1 py-[2px] lg:px-2 lg:py-[6px]  min-w-[32px] md:min-w-[36px] lg:min-w-[42px]">
+      <div className="timer-item-box d-box  bg-[#1D1E1F] rounded-sm px-1 py-[4px] lg:px-2 lg:py-[6px]  min-w-[32px] md:min-w-[36px] lg:min-w-[42px]">
         <p className="bfdy-Day font-semibold text-[.75rem] md:text-[.9rem] lg:text-[1.1rem] 2xl:text-[1.15rem] leading-[1.1]">
           {formatBfdyTime(remainingTime.minutes)}
         </p>
-        <p className="bfdy-label text-[.6rem] md:text-[.65rem] 2xl:text-[.7rem] text-[#B3B3B3] leading-[1]">Min</p>
+        <p className="bfdy-label text-[.6rem] md:text-[.65rem] 2xl:text-[.7rem] text-[#B3B3B3] leading-[1]">
+          Min
+        </p>
       </div>
-      <div className="timer-item-box d-box  bg-[#1D1E1F] rounded-sm px-1 py-[2px] lg:px-2 lg:py-[6px]  min-w-[32px] md:min-w-[36px] lg:min-w-[42px]">
+      <div className="timer-item-box d-box  bg-[#1D1E1F] rounded-sm px-1 py-[4px] lg:px-2 lg:py-[6px]  min-w-[32px] md:min-w-[36px] lg:min-w-[42px]">
         <p className="bfdy-Day font-semibold text-[.75rem] md:text-[.9rem] lg:text-[1.1rem] 2xl:text-[1.15rem] leading-[1.1]">
           {formatBfdyTime(remainingTime.seconds)}
         </p>
-        <p className="bfdy-label text-[.6rem] md:text-[.65rem] 2xl:text-[.7rem] text-[#B3B3B3] leading-[1]">Sec</p>
+        <p className="bfdy-label text-[.6rem] md:text-[.65rem] 2xl:text-[.7rem] text-[#B3B3B3] leading-[1]">
+          Sec
+        </p>
       </div>
     </div>
   );

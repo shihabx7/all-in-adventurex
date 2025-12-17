@@ -4,7 +4,7 @@ import { getCookies, getCookie, setCookie, deleteCookie } from "cookies-next";
 import { escapeGameBundleBookingList } from "../../lib/v2/data/escapeGameBundleBookingList";
 import { useSiteData } from "../../contexts/SiteDataContext";
 import { TbCopy } from "react-icons/tb";
-import BlackFridayNoticeTimer from "./BlackFridayNoticeTimer";
+import NoticeTimer from "./NoticeTimer";
 
 export default function ChristmasGiftNotice({ locationSlug, giftBooking }) {
   const [showNotice, setShownotice] = useState(false);
@@ -47,6 +47,15 @@ export default function ChristmasGiftNotice({ locationSlug, giftBooking }) {
     });
   };
 
+  const copyToClipboard = async (textToCopy) => {
+    try {
+      await navigator.clipboard.writeText(textToCopy);
+      alert("Coupon Code copied to clipboard!");
+    } catch (err) {
+      alert("Failed to Coupon Code. Please try again.");
+    }
+  };
+
   return (
     showNotice && (
       <div className="header-notice-bfdy  bg-[#140200] relative border-b md:border-b-1.5 border-red-700 overflow-hidden">
@@ -57,7 +66,7 @@ export default function ChristmasGiftNotice({ locationSlug, giftBooking }) {
             src={"/assets/notice/christmas-gift-card-bg.jpg"}
           ></img>
           <img
-            className=" object-cover object-right md:hidden"
+            className="h-full object-cover object-center md:hidden"
             src={"/assets/notice/christmas-gift-card-bg-m.jpg"}
           ></img>
         </div>
@@ -65,71 +74,93 @@ export default function ChristmasGiftNotice({ locationSlug, giftBooking }) {
         <div className="notice-content relative z-20">
           <div className="crm-notice-box flex flex-nowrap justify-between items-center sm:space-x-1">
             {/*=========================================crm notice icon 1 santa*/}
-            <div className="crm-gift-santa-icon w-auto md:w-[21%] xl:w-[20%] 3xl:w-[17%] xl:text-right">
+            <div className="crm-gift-santa-icon w-auto md:w-[10%] lg:w-[12.5%] xl:w-[13.5%] 3xl:w-[15%] xl:text-right">
               <img
-                className="hidden md:block w-full  md:max-h-[48px] xl:max-h-[48px] 3xl:max-h-[58px] object-contain object-right "
+                className="hidden md:block w-full  md:max-h-[40px] xl:max-h-[46px] 3xl:max-h-[54px] object-contain object-right "
                 src={"/assets/notice/chirstmas-gift-santa.png"}
               ></img>
             </div>
             {/*=========================================bfdy notice content */}
-            <div className="w-auto  md:flex-0 md:w-[600px] lg:w-[640px] xl:maxw-[840px] 2xl:max-w-[1080px] ">
-              <div className="bfdy-notice-container flex justify-center  items-center space-x-2 md:space-x-3 lg:space-x-4 2xl:space-x-5 px-0 sm:px-2 py-1 ">
+            <div className="max-w-[94%] rm:max-w-[87%] flex-grow md:max-w-[764px] lg:max-w-[1000px] xl:max-w-[1080px] 2xl:max-w-[1170px] ">
+              <div className="bfdy-notice-container  flex flex-wrap md:flex-nowrap   justify-center items-center space-x-0 md:space-x-2 lg:space-x-2 2xl:space-x-4 px-0 sm:px-2 py-1 ">
                 {/*=========================================gift cart poster */}
-                <div className="bfdy-notice-ribb max-w-[66px] md:max-w-[72px] lg:max-w-[82px] xl:max-w-[96px]  flex items-end md:block  sm:mx-3 md:mx-0 ">
+                <div className="bfdy-notice-ribb order-1">
                   <img
-                    className="max-w-[50px] rm:max-w-[54px] lm:max-w-[60px] sm:max-w-[66px] md:max-w-[72px] lg:max-w-[80px] xl:max-w-[92px] 2xl:max-w-[100px]  4xl:max-w-[108px] "
+                    className="max-w-[54px] rm:max-w-[56px] lm:max-w-[60px] sm:max-w-[66px] md:max-w-[60px] lg:max-w-[66px] xl:max-w-[80px] 2xl:max-w-[90px]"
                     src={"/assets/notice/gift-card-notice-baner.png"}
                     alt="black friday gift card"
                   ></img>
                 </div>
-                {/*==============================================================crm notice book btn*/}
-                <div className="bfdy-n-item-4 text-[.64rem] rm:text-[.72rem] sm:text-[.76rem] md:text-[.85rem] xl:text-[1.07rem] 2xl:text-[1.15rem]  text-center leading-[1]">
-                  {locationSlug && (
-                    <button
-                      onClick={() => bookGiftCard(giftBooking)}
-                      className="block  px-2 py-2 sm:px-3 md:py-2.5 md:px-3 xl:py-3 xl:px-4 3xl:px-5 rounded border border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 text-white hover:text-white font-bold  transition-all duration-400"
+                {/*=========================================gift card offer*/}
+                <div className="px-1.5 rm:px-2 md:px-0 text-[.88rem] rm:text-[.92rem] sm:text-[.94rem] md:text-[.92rem] xl:text-[1.1rem] 2xl:text-[1.15rem] font-semibold order-2">
+                  <p>15% OFF</p>
+                </div>
+                {/*============================================================================================btn containrr*/}
+                <div className="notice-btnt-text w-full md:w-auto flex justify-center items-center space-x-1.5 lm:space-x-2 md:space-x-1 lg:space-x-2 2xl:space-x-3 order-4 md:order-3 mt-1 md:mt-0">
+                   {/*==============================================================crm notice book gift card btn*/}
+                  <div className="copy-coupon-btn text-[.68rem] rm:text-[.8rem] sm:text-[.86rem] md:text-[.85rem] xl:text-[1.07rem] 2xl:text-[1.15rem] text-center leading-[1] ">
+                      <button
+                      onClick={() => copyToClipboard("GIFT25")}
+                      className=" bg-[#0D542B] hover:bg-red-700 hover:text-white text-[#98FFBF] flex items-center space-x-1 justify-center px-3 py-2 md:py-2 md:px-3 xl:px-4 3xl:py-3 copy-btn rounded"
                     >
-                      BUY GIFT CARD
+                      <span>Code:</span>
+                      <span>GIFT25</span>
+                      <span className="text-[.74rem] sm:text-[1rem] md:text-[1.1rem]">
+                        <TbCopy />
+                      </span>
                     </button>
-                  )}
-                  {!locationSlug && (
-                    <button
-                      onClick={showLocModal}
-                      className="block  px-2 py-2 sm:px-2.5 md:py-3 md:px-3 xl:py-3 xl:px-4 3xl:px-5 3xl:py-3 rounded border border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 text-white hover:text-white font-bold  transition-all duration-400"
+                  </div>
+                   {/*==============================================================crm notice book gift card btn*/}
+                  {/*==============================================================crm notice book gift card btn*/}
+                  <div className="bfdy-n-item-4 text-[.68rem] rm:text-[.8rem] sm:text-[.86rem] md:text-[.85rem] xl:text-[1.07rem] 2xl:text-[1.15rem]  text-center leading-[1]">
+                    {locationSlug && (
+                      <button
+                        onClick={() => bookGiftCard(giftBooking)}
+                        className="block px-3 py-2 md:py-2 md:px-3 xl:px-4 3xl:py-3 rounded border border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 text-white hover:text-white font-bold  transition-all duration-400"
+                      >
+                        BUY GIFT CARD
+                      </button>
+                    )}
+                    {!locationSlug && (
+                      <button
+                        onClick={showLocModal}
+                        className="block px-3 py-2 md:py-2 md:px-3 xl:px-4 3xl:py-3 rounded border border-red-600 hover:border-red-700 bg-red-600 hover:bg-red-700 text-white hover:text-white font-bold  transition-all duration-400"
+                      >
+                        BUY GIFT CARD
+                      </button>
+                    )}
+                  </div>
+                  {/*==============================================================crm learn more btn*/}
+                  <div className="bfdy-n-item-5  text-[.76rem] rm:text-[.8rem] sm:text-[.88rem] md:text-[.9rem] xl:text-[1.06rem] 2xl:text-[1.1rem] font-medium">
+                    <a
+                      className="block hover:text-red-700"
+                      href={"/gift-cards"}
                     >
-                      BUY GIFT CARD
-                    </button>
-                  )}
+                      Learn More
+                    </a>
+                  </div>
+                  {/*==============================================================crm notice main links */}
                 </div>
-                {/*==============================================================crm learn more btn*/}
-                <div className="bfdy-n-item-5  text-[.76rem] rm:text-[.8rem] sm:text-[.88rem] md:text-[.92rem] xl:text-[1.1rem] 2xl:text-[1.15rem] font-medium">
-                  <a className="block hover:text-red-700" href={"/gift-cards"}>
-                    Learn More
-                  </a>
+                {/*========================================================================================btn containrr end*/}
+                {/*====================================================timer*/}
+                <div className="bfdy-notice-timer  order-3 md:order-4">
+                  <NoticeTimer />
                 </div>
-                {/*==============================================================crm notice main links and text*/}
-                {/*=========================================bfdy notice ribbon  2*/}
-                <div className="bfdy-notice-ribb max-w-[66px] md:max-w-[72px] lg:max-w-[82px] xl:max-w-[96px] hidden md:flex  items-end mx-2 rm:mx-3 md:mx-0  ">
-                  <img
-                    className="max-w-[54px] rm:max-w-[58px] sm:max-w-[60px] md:max-w-[68px] lg:max-w-[80px] xl:max-w-[94px]  4xl:max-w-[108px] "
-                    src={"/assets/notice/gift-card-notice-baner.png"}
-                    alt="christmas gift card"
-                  ></img>
-                </div>
+                {/*==================================================timer end*/}
               </div>
             </div>
-            {/*=========================================crm notice icon 2 boxes*/}
-            <div className="crm-gift-boxes-icon md:w-[21%] xl:w-[20%] 3xl:w-[17%]">
+            {/*=====================================================================crm notice icon 2 boxes*/}
+            <div className="crm-gift-boxes-icon md:w-[9%] lg:w-[12.5%] xl:w-[13.5%] 3xl:w-[15%]">
               <img
-                className=" hidden md:block w-full  md:max-h-[36px] xl:max-h-[42px] 3xl:max-h-[50px]  object-contain object-left "
+                className=" hidden md:block w-full  md:max-h-[28px] xl:max-h-[36px] 3xl:max-h-[44px]  object-contain object-left "
                 src={"/assets/notice/chirstmas-gift-boxes-icon-l.png"}
               ></img>
             </div>
           </div>
         </div>
 
-        {/*========================================= notice close x btn*/}
-        <div className="header-notice-close absolute top-0 bottom-0 right-1 rm:right-3 md:right-4 xl:right-6 my-auto z-30 w-[26px] h-[26px] md:w-[32px] md:h-[32px] xl:w-[34px] xl:h-[34px] ">
+        {/*=========================================================== notice close x btn*/}
+        <div className="header-notice-close absolute top-2 md:top-0 md:bottom-0 right-[2px] rm:right-1.5 md:right-4 xl:right-6 md:my-auto z-30 w-[26px] h-[26px] md:w-[32px] md:h-[32px] xl:w-[34px] xl:h-[34px] ">
           <button
             onClick={() => closeNotice()}
             className="text-[#e8e8e8] hover:text-red-700 text-[1.5rem] rm:text-[1.6rem] md:text-[1.8rem]  lg:text-[2rem] 3xl:text-[2.1rem] bg-[rgba(0,0,0,0.7)] hover:bg-[rgba(0,0,0,0.9)]"
