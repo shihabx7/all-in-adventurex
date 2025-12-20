@@ -10,7 +10,7 @@ export default function HeaderNotice({
   const [currentNotice, setCurrentNotice] = useState("uer");
 
   useEffect(() => {
-    const expireDate = new Date("2025-12-26T11:59:59");
+    const expireDate = new Date("2025-12-21T11:59:59");
     const currentTime = new Date();
     const timeRemainingMs = expireDate.getTime() - currentTime.getTime();
     if (timeRemainingMs > 0) {
