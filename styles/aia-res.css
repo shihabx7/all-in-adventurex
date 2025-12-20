@@ -536,7 +536,6 @@
     min-width: 48px;
     min-height: 48px;
   }
- 
 }
 
 @media only screen and (max-width: 767px) {
@@ -551,11 +550,10 @@
   .fyp-baner {
     background: linear-gradient(
       to top,
-      rgba(0, 0, 0, 9),
-      rgba(0, 0, 0, 9),
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.1)
+      rgb(0, 0, 0,1),
+      rgba(0, 0, 0, 0.99),
+      rgba(0, 0, 0, 0.72),
+      rgba(0, 0, 0, 0.03)
     );
   }
 
@@ -666,13 +664,13 @@
     right: 66px !important;
   }
   /*===============================================================carousel dot*/
-   .react-multi-carousel-dot {
-  width: 20px !important;
-  height: 5px !important;
+  .react-multi-carousel-dot {
+    width: 20px !important;
+    height: 5px !important;
   }
   .react-multi-carousel-dot button {
-  width: 16px !important;
-  height: 5px !important;
+    width: 16px !important;
+    height: 5px !important;
   }
 }
 
@@ -1051,14 +1049,14 @@
   #hbtn {
     top: 60px;
   }
-    /*===============================================================carousel dot*/
-   .react-multi-carousel-dot {
-  width: 18px !important;
-  height: 5px !important;
+  /*===============================================================carousel dot*/
+  .react-multi-carousel-dot {
+    width: 18px !important;
+    height: 5px !important;
   }
   .react-multi-carousel-dot button {
-  width: 15px !important;
-  height: 4px !important;
+    width: 15px !important;
+    height: 4px !important;
   }
 }
 
