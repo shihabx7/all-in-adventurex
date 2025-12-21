@@ -97,9 +97,9 @@ export default function ChristmasGiftNotice({ locationSlug, giftBooking }) {
                 </div>
                 {/*============================================================================================btn containrr*/}
                 <div className="notice-btnt-text w-full md:w-auto flex justify-center items-center space-x-1.5 lm:space-x-2 md:space-x-1 lg:space-x-2 2xl:space-x-3 order-4 md:order-3 mt-1 md:mt-0">
-                   {/*==============================================================crm notice book gift card btn*/}
+                  {/*==============================================================crm notice book gift card btn*/}
                   <div className="copy-coupon-btn text-[.68rem] rm:text-[.8rem] sm:text-[.86rem] md:text-[.85rem] xl:text-[1.07rem] 2xl:text-[1.15rem] text-center leading-[1] ">
-                      <button
+                    <button
                       onClick={() => copyToClipboard("GIFT20")}
                       className=" bg-[#0D542B] hover:bg-red-700 hover:text-white text-[#98FFBF] flex items-center space-x-1 justify-center px-3 py-2 md:py-2 md:px-3 xl:px-4 3xl:py-3 copy-btn rounded"
                     >
@@ -110,7 +110,7 @@ export default function ChristmasGiftNotice({ locationSlug, giftBooking }) {
                       </span>
                     </button>
                   </div>
-                   {/*==============================================================crm notice book gift card btn*/}
+                  {/*==============================================================crm notice book gift card btn*/}
                   {/*==============================================================crm notice book gift card btn*/}
                   <div className="bfdy-n-item-4 text-[.68rem] rm:text-[.8rem] sm:text-[.86rem] md:text-[.85rem] xl:text-[1.07rem] 2xl:text-[1.15rem]  text-center leading-[1]">
                     {locationSlug && (

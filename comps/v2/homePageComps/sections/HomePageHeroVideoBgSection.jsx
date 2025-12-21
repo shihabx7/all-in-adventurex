@@ -109,6 +109,7 @@ export default function HomePageHeroVideoBgSection({
           locationInfo={locationInfo}
           businessHours={businessHours}
           holidayHours={holidayHours}
+          locationName={locationName}
         />
       )}
     </div>
