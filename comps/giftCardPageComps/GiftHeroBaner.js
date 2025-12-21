@@ -147,7 +147,7 @@ const GiftHeroBaner = (props) => {
                         alt=" All in Adventures gift card icon showcasing a vibrant design, symbolizing adventure and excitement in gift-giving."
                       ></img>
 
-                      <p className="it ">Christmas Gift Card Deal — 15% OFF</p>
+                      <p className="it ">Christmas Gift Card Deal — 20% OFF</p>
                     </div>
                     <div className="gh-item flex justify-start space-x-2 items-start md:items-center my-3">
                       <img
@@ -156,7 +156,7 @@ const GiftHeroBaner = (props) => {
                         alt=" All in Adventures gift card icon showcasing a vibrant design, symbolizing adventure and excitement in gift-giving."
                       ></img>
                       <p className="it">
-                        Use code GIFT15 at checkout. Code expires Dec. 21.
+                        Use code GIFT20 at checkout. Code expires Dec. 25.
                       </p>
                     </div>
                     {/* =======card content List offer========  */}

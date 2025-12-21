@@ -11,7 +11,7 @@ export default function NoticeTimer() {
     return String(value).padStart(2, "0");
   };
   useEffect(() => {
-    const expireDate = new Date("2025-12-22T11:59:59");
+    const expireDate = new Date("2025-12-26T00:05:59");
 
     const interval = setInterval(() => {
       const currentTime = new Date();

@@ -93,18 +93,18 @@ export default function ChristmasGiftNotice({ locationSlug, giftBooking }) {
                 </div>
                 {/*=========================================gift card offer*/}
                 <div className="px-1.5 rm:px-2 md:px-0 text-[.88rem] rm:text-[.92rem] sm:text-[.94rem] md:text-[.92rem] xl:text-[1.1rem] 2xl:text-[1.15rem] font-semibold order-2">
-                  <p>15% OFF</p>
+                  <p>20% OFF</p>
                 </div>
                 {/*============================================================================================btn containrr*/}
                 <div className="notice-btnt-text w-full md:w-auto flex justify-center items-center space-x-1.5 lm:space-x-2 md:space-x-1 lg:space-x-2 2xl:space-x-3 order-4 md:order-3 mt-1 md:mt-0">
                    {/*==============================================================crm notice book gift card btn*/}
                   <div className="copy-coupon-btn text-[.68rem] rm:text-[.8rem] sm:text-[.86rem] md:text-[.85rem] xl:text-[1.07rem] 2xl:text-[1.15rem] text-center leading-[1] ">
                       <button
-                      onClick={() => copyToClipboard("GIFT15")}
+                      onClick={() => copyToClipboard("GIFT20")}
                       className=" bg-[#0D542B] hover:bg-red-700 hover:text-white text-[#98FFBF] flex items-center space-x-1 justify-center px-3 py-2 md:py-2 md:px-3 xl:px-4 3xl:py-3 copy-btn rounded"
                     >
                       <span>Code:</span>
-                      <span>GIFT15</span>
+                      <span>GIFT20</span>
                       <span className="text-[.74rem] sm:text-[1rem] md:text-[1.1rem]">
                         <TbCopy />
                       </span>
