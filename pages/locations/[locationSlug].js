@@ -17,7 +17,7 @@ import { getLocationHomePageData } from "../api/Locations/getLocationHomePageDat
 import PageBreedLoc from "../../comps/util/PageBreedLoc";
 import PageSeo from "../../comps/util/PageSeo";
 import LocationNav from "../../comps/locationsPage/LocationNav";
- 
+
 import EventSlider from "../../comps/homepagecomps/EventSlider";
 import GiftCardHomePageSection from "../../comps/giftCardPageComps/GiftCardHomePageSection";
 import WhatIsEscape from "../../comps/homepagecomps/WhatIsEscape";
@@ -35,6 +35,8 @@ import HomePageHeroVideoBgSection from "../../comps/v2/homePageComps/sections/Ho
 import HomePageGameListBg from "../../comps/v2/sharedComs/HomePageGameListBg";
 import EscapeGamesListSection from "../../comps/v2/homePageComps/sections/EscapeGamesListSection";
 import OtherGameSection from "../../comps/v2/homePageComps/sections/OtherGameSection";
+import MobileMysteryCardSection from "../../comps/v2/homePageComps/sections/MobileMysteryCardSection";
+import GiftCardSection from "../../comps/v2/homePageComps/sections/GiftCardSection";
 
 const Locations = (props) => {
   /* customizing breadcum */
@@ -125,16 +127,22 @@ const Locations = (props) => {
               locationSlug={props.locationSlug}
             />
           )}
+          <MobileMysteryCardSection locationSlug={props.locationSlug} />
+          <GiftCardSection
+            locationSlug={props.locationSlug}
+            giftBooking={props.giftBooking}
+          />
         </HomePageGameListBg>
 
         {/*==========================================================================================v2 end===*/}
-        <UnlockYourBundleSection locationSlug={props.locationSlug} />
         <EventSlider
           eventList={props.eventList}
           locationSlug={props.locationSlug}
           isPublished={props.isPublished}
         />
+        <UnlockYourBundleSection locationSlug={props.locationSlug} />
 
+        {/*=========================================================================================
         {props.hasMobileEscapeRoom ? (
           <MobileMysteryOtherPageSection
             locationSlug={props.locationSlug}
@@ -149,6 +157,7 @@ const Locations = (props) => {
           locationSlugList={props.locationSlugList}
           giftBooking={props.giftBooking}
         />
+        ===*/}
         <WhatIsEscape />
         <WhoCanplay />
         <TestimonialLocSlider testimonialList={props.testimonialList} />

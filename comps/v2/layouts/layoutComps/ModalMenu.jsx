@@ -34,6 +34,26 @@ const bookAllGame = (bookingData) => {
     view: "items",
   });
 };
+const getMysteryQuote = (bookingData) => {
+  FH.open({
+    shortname: bookingData.shortName,
+    fallback: "simple",
+    fullItems: "no",
+    flow: "no",
+    view: { item: bookingData.itemNo },
+  });
+};
+const mobileMysteryBooking = (bookingData) => {
+  FH.open({
+    shortname: bookingData.shortName,
+    fallback: "simple",
+    fullItems: "yes",
+    flow: "no",
+    view: {
+      item: bookingData.itemNo,
+    },
+  });
+};
 // ==================================================================================================def function----
 export default function ModalMenu() {
   const {
@@ -45,7 +65,7 @@ export default function ModalMenu() {
     setModalGame,
     closeModalMenu,
   } = useSiteData();
-  //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle
+  //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery | mobile-mystery-quote |unlimited-play-pass | bundle
   if (!showModalMenu) return null;
   const closeLocModalmenu = () => {
     const body = document.getElementsByTagName("body")[0];
@@ -67,17 +87,27 @@ export default function ModalMenu() {
       bookAllGame(bookingInfo);
     }
     if (activeModalMenuType == "partyPackage-list") {
-      let bookingobj = {};
       bookItemflow({
         shortName: bookingInfo.shortName,
         itemFlow: locationBookingInfo[locationSlug].partyPackageFlow,
       });
     }
     if (activeModalMenuType == "bundle") {
-      let bookingobj = {};
       bookItemflow({
         shortName: bookingInfo.shortName,
         itemFlow: locationBookingInfo[locationSlug].bundleFlow,
+      });
+    }
+    if (activeModalMenuType == "mobile-mystery") {
+      mobileMysteryBooking({
+        shortName: bookingInfo.shortName,
+        itemNo: locationBookingInfo[locationSlug].mobileMysteryItemNo,
+      });
+    }
+    if (activeModalMenuType == "mobile-mystery-quote") {
+      getMysteryQuote({
+        shortName: bookingInfo.shortName,
+        itemNo: locationBookingInfo[locationSlug].eventFormItemNo,
       });
     }
   };
@@ -85,13 +115,7 @@ export default function ModalMenu() {
   return (
     <>
       <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
-      <div
-        className="modal-menu full-sceen-view-modal top-0 left-0 bg-dark fixed w-full h-full  overflow-x-hidden overflow-y-auto z-[100000]"
-        style={{
-          backgroundImage:
-            "url(/assets/submenu-bg.png),linear-gradient(#111111,#111111)",
-        }}
-      >
+      <div className="modal-menu full-sceen-view-modal top-0 left-0 bg-[#111111] fixed w-full h-full  overflow-x-hidden overflow-y-auto z-[100000]">
         {/*====================================================close modal menu button */}
         <div
           onClick={closeLocModalmenu}
@@ -105,42 +129,47 @@ export default function ModalMenu() {
         {/*====================================================close modal menu button end*/}
         <div className="loc-menu-content px-4">
           {/*==================================================== modal menu title*/}
-          <div className="sep-container max-w-[280px] md:max-w-[600px] mx-auto ">
-            <h2 className="dark-gold py-2 text-center text-2xl uppercase md:text-[40px] lg:text-[44px] leading-[1.2] font-os font-bold">
+          <div className="sep-container max-w-[420px] md:max-w-[760px] lg:max-w-[860px] mx-auto ">
+            <h2 className="text-[#E0BF62] text-center text-[1.5rem] uppercase md:text-[3rem] lg:text-[4rem] leading-[1.2] font-os font-bold">
+              Choose Your Location
+            </h2>
+            <p className="text-[#7B7B7B] py-2 text-center text-[1.05rem]  md:text-[1.3rem] lg:text-[1.5rem] leading-[1.2] ">
               {activeModalMenuType == "location-links" && (
-                <span>Choose Your Location</span>
+                <>View games, hours, and details for your selected location</>
               )}
               {activeModalMenuType == "gift-card" && (
-                <span>Choose Your Location to Buy Gift Cards</span>
+                <>Buy gift cards valid at your location</>
               )}
               {activeModalMenuType == "game-list" && (
-                <span>
-                  Choose Your Location to Book Escape Games
-                </span>
+                <>See available games and book instantly</>
               )}
               {activeModalMenuType == "game" && (
                 <>
-                <p>Choose Your Location to Book Your Game</p>
-                
+                  This game is available at the locations below—Book instantly
                 </>
               )}
               {activeModalMenuType == "partyPackage-list" && (
-                <span>Choose Your Location to Book Party Package</span>
+                <>View party packages and book your event</>
               )}
               {activeModalMenuType == "mobile-mystery" && (
-                <span>BOOK NOW - RESERVE YOUR MOBILE MYSTERY EXPERIENCE</span>
+                <>Book your Mobile Mystery experience</>
+              )}
+           
+
+              {activeModalMenuType == "mobile-mystery-quote" && (
+                <>Request a quote for Mobile Mystery experience</>
               )}
               {activeModalMenuType == "bundle" && (
-                <span>Choose Your Location to Unlock Your Bundle</span>
+                <>Unlock available bundles at your location</>
               )}
               {activeModalMenuType == "unlimited-pass" && (
-                <span>Choose Your Location TO Buy Unlimited Play Pass</span>
+                <span>Buy unlimited play pass valid at your location</span>
               )}
-            </h2>
+            </p>
           </div>
           {/*==================================================== modal menu title end*/}
           {/*====================================================modal menu grid column */}
-          <div className="loc-menu-grid max-w-6xl mx-auto mt-4 md:mt-6 lg:mt-8 pb-8">
+          <div className="loc-menu-grid max-w-[64rem] mx-auto mt-4 md:mt-8 lg:mt-10 pb-8">
             {/*==================location xcolumn======================*/}
             {activeModalMenuType == "location-links" && (
               <LocationPageLink locationList={locationList} />
@@ -157,19 +186,17 @@ export default function ModalMenu() {
                 return (
                   <div key={index + 1} className="loc-menu-box ">
                     {/*==================location NEW YORK======================*/}
-                    <div className="loc-menu-head mb-2">
-                      <h3 className="text-light-gold text-xl md:text-2xl font-bold">
-                        <span className="inline-block pb-1 border-b border-light-gold">
-                          {state.stateName}
-                        </span>
+                    <div className="loc-menu-head ">
+                      <h3 className="text-[#bbbbbb] text-[1.06rem] md:text-[1.15rem] xl:md:text-[1.3rem] font-bold">
+                        <span className="inline-block">{state.stateName}</span>
                       </h3>
                     </div>
-                    <div className="loc-item-box py-2 border-dark-coffee">
+                    <div className="loc-item-box py-1 border-[#191919] ">
                       {state.locations.map((item, index) => {
                         return (
                           <div
                             key={index + 2}
-                            className=" loc-item py-2 border-b border-dark-coffee"
+                            className=" loc-item py-2 border-b border-[#191919]"
                           >
                             <button
                               onClick={(e) => {
@@ -179,9 +206,19 @@ export default function ModalMenu() {
                                   item.locationSlug
                                 );
                               }}
-                              className="loc-link block golden-text md:text-lg"
+                              className="loc-link block text-[#7b7b7b] hover:text-[#D8C695]  text-left"
                             >
-                              {item.locationName}
+                              <span className="loc-name block text-[1.05rem] font-semibold">
+                                {item.locationName}
+                              </span>
+
+                              {activeModalMenuType != "mobile-mystery" &&
+                                activeModalMenuType !=
+                                  "mobile-mystery-quote" && (
+                                  <span className="block loc-mall text-sm">
+                                    {item.mall}
+                                  </span>
+                                )}
                             </button>
                           </div>
                         );

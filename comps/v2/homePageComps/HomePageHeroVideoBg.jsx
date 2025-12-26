@@ -28,10 +28,8 @@ export default function HomePageHeroVideoBg({ videoData }) {
   }, [videoUrl]);
   }, []);*/
   useEffect(() => {
-   
     videoRef.current.play();
   }, []);
-
 
   return (
     <div className="section-full-screen-bg-video max-w-screen h-full  ">

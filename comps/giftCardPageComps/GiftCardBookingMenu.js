@@ -5,7 +5,6 @@ import { FaAngleRight } from "react-icons/fa";
 import Script from "next/script";
 
 const GiftCardBookingMenu = (props) => {
-  
   const closelocmenu = () => {
     const body = document.getElementsByTagName("body")[0];
     body.classList.remove("overflow-hidden");
@@ -26,13 +25,7 @@ const GiftCardBookingMenu = (props) => {
   return (
     <>
       <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
-      <div
-        className="loc-menu gift-card-menu top-0 left-0 bg-dark fixed w-full h-full overflow-x-hidden overflow-y-auto z-[10000]"
-        style={{
-          backgroundImage:
-            "url(/assets/submenu-bg.png),linear-gradient(#111111,#111111)",
-        }}
-      >
+      <div className="loc-menu gift-card-menu top-0 left-0 bg-[#111111] fixed w-full h-full overflow-x-hidden overflow-y-auto z-[10000]">
         <div
           onClick={closelocmenu}
           id="locclose"
@@ -43,49 +36,46 @@ const GiftCardBookingMenu = (props) => {
           </span>
         </div>
         <div className="loc-menu-content px-4">
-          <div className="sep-container max-w-[280px] md:max-w-[560px] mx-auto ">
-            <h2 className="dark-gold py-2 text-center text-2xl uppercase md:text-[40px] lg:text-[44px] leading-[1.2] font-os font-bold">
-              CHOOSE YOUR LOCATION TO BUY GIFT CARDS
+          <div className="sep-container max-w-[420px] md:max-w-[760px] lg:max-w-[860px] mx-auto ">
+            <h2 className="text-[#E0BF62] text-center text-[1.5rem] uppercase md:text-[3rem] lg:text-[4rem] leading-[1.2] font-os font-bold">
+              Choose Your Location
             </h2>
+            <p className="text-[#7B7B7B] py-2 text-center text-[1.05rem]  md:text-[1.3rem] lg:text-[1.5rem] leading-[1.2] ">
+              Buy gift cards valid at your location
+            </p>
           </div>
 
-          <div className="loc-menu-grid max-w-6xl mx-auto mt-4 pb-8">
+          <div className="loc-menu-grid max-w-[64rem] mx-auto mt-4 md:mt-8 lg:mt-10 pb-8">
             {/*==================location xcolumn======================*/}
             {props.locationSlugList.map((loc) => {
               return (
                 <div key={loc.id} className="loc-menu-box ">
                   {/*==================location NEW YORK======================*/}
-                  <div className="loc-menu-head mb-2">
-                    <h3 className="text-light-gold text-xl md:text-2xl font-bold">
-                      <span className="inline-block pb-1 border-b border-light-gold">
-                        {loc.stateName}
-                      </span>
+                  <div className="loc-menu-head">
+                    <h3 className="text-[#bbbbbb] text-[1.06rem] md:text-[1.15rem] xl:md:text-[1.3rem] font-bold">
+                      <span className="inline-block">{loc.stateName}</span>
                     </h3>
                   </div>
-                  <div className="loc-item-box py-2 border-dark-coffee">
+                  <div className="loc-item-box py-1 border-[#191919]">
                     {loc.locations.map((item) => {
                       return (
                         <div
                           key={loc.id + item.id}
-                          className=" loc-item py-2 border-b border-dark-coffee"
+                          className=" loc-item py-2 border-b border-[#191919]"
                         >
                           <button
                             onClick={(e) => {
                               e.preventDefault();
                               bookGiftCard(item.bookingInfo);
                             }}
-                            className="loc-link block"
+                            className="loc-link block text-[#7b7b7b] hover:text-[#D8C695]  text-left"
                           >
-                            <div className="flex space-x-1 items-center md:text-lg">
-                              <span className="golden-text">
-                                {item.locationName}
-                              </span>
-                            </div>
-                            {/*================== <div className="text-gray-500 text-sm md:text-base text-left">
-                              {item.mall} <span className="text-gold">
-                                <FaAngleRight />
-                              </span>
-                            </div>======================*/}
+                            <span className="loc-name block text-[1.05rem] font-semibold">
+                              {item.locationName}
+                            </span>
+                            <span className="block loc-mall text-sm">
+                              {item.mall}
+                            </span>
                           </button>
                         </div>
                       );

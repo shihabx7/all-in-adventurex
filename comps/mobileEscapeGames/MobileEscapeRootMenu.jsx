@@ -33,13 +33,7 @@ const MobileEscapeRootMenu = (props) => {
   };
 
   return (
-    <div
-      className="loc-menu-mobile top-0 left-0 bg-dark fixed w-full h-screen overflow-x-hidden overflow-y-auto z-[100000]"
-      style={{
-        backgroundImage:
-          "url(/assets/submenu-bg.png),linear-gradient(#111111,#111111)",
-      }}
-    >
+    <div className="loc-menu-mobile top-0 left-0 bg-[#111111] fixed w-full h-screen overflow-x-hidden overflow-y-auto z-[100000]">
       <div
         onClick={closelocmenu}
         id="locclosemb"
@@ -50,33 +44,36 @@ const MobileEscapeRootMenu = (props) => {
         </span>
       </div>
       <div className="loc-menu-content px-4">
-        <div className="sep-container max-w-[300px] md:max-w-[740px] mx-auto ">
-          <h2 className="dark-gold py-2 text-center text-2xl uppercase md:text-[40px] lg:text-[44px] leading-[1.2] font-os font-bold">
-            {!props.goMobileEecapeForm
-              ? "BOOK NOW - RESERVE YOUR MOBILE MYSTERY EXPERIENCE"
-              : "REQUEST A QUOTE - PLAN YOUR MOBILE MYSTERY EXPERIENCE"}
+        <div className="sep-container max-w-[420px] md:max-w-[760px] lg:max-w-[860px] mx-auto ">
+          <h2 className="text-[#E0BF62] text-center text-[1.5rem] uppercase md:text-[3rem] lg:text-[4rem] leading-[1.2] font-os font-bold">
+            Choose Your Location
           </h2>
+          <p className="text-[#7B7B7B] py-2 text-center text-[1.05rem]  md:text-[1.3rem] lg:text-[1.5rem] leading-[1.2] ">
+            {!props.goMobileEecapeForm
+              ? "Book your Mobile Mystery experience"
+              : "Request a quote for Mobile Mystery experience"}
+          </p>
         </div>
 
-        <div className="loc-menu-grid max-w-6xl mx-auto mt-5 md:mt-8 pb-8">
+        <div className="loc-menu-grid max-w-[64rem] mx-auto mt-4 md:mt-8 lg:mt-10 pb-8">
           {/*==================location xcolumn======================*/}
           {mobileEscapeRootMenuList.map((stateItem, index) => {
             return (
               <div key={index} className="loc-menu-box ">
                 {/*==================location NEW YORK======================*/}
-                <div className="loc-menu-head mb-0">
-                  <h3 className="text-light-gold text-xl md:text-2xl font-bold">
-                    <span className="inline-block pb-1 border-b border-light-gold">
+                <div className="loc-menu-head ">
+                  <h3 className="text-[#bbbbbb] text-[1.06rem] md:text-[1.15rem] xl:md:text-[1.3rem] font-bold">
+                    <span className="inline-block">
                       {stateItem.state}
                     </span>
                   </h3>
                 </div>
-                <div className="loc-item-box py-2 border-dark-coffee">
+                <div className="loc-item-box py-1 border-[#191919] ">
                   {stateItem.locations.map((item, index) => {
                     return (
                       <div
                         key={index}
-                        className=" loc-item py-2 border-b border-dark-coffee"
+                        className=" loc-item py-2 border-b border-[#191919]"
                       >
                         <button
                           onClick={() => {
@@ -85,7 +82,7 @@ const MobileEscapeRootMenu = (props) => {
                               props.goMobileEecapeForm
                             );
                           }}
-                          className="mer-booking-btn block md:text-lg golden-text"
+                          className="mer-booking-btn block text-[#7b7b7b] hover:text-[#D8C695]  text-left"
                         >
                           {item.locationName}
                         </button>

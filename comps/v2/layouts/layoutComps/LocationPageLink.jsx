@@ -7,26 +7,27 @@ export default function LocationPageLink ({locationList}) {
               return (
                 <div key={index+1} className="loc-menu-box ">
                   {/*==================location NEW YORK======================*/}
-                  <div className="loc-menu-head mb-2">
-                    <h3 className="text-light-gold text-xl md:text-2xl font-bold">
-                      <span className="inline-block pb-1 border-b border-light-gold">
+                  <div className="loc-menu-head mb-1">
+                    <h3 className="text-[#aaaaaa] text-[1.06rem] md:text-[1.15rem] xl:md:text-[1.2rem] font-bold">
+                      <span className="inline-block  ">
                         {stateItem.stateName}
                       </span>
                     </h3>
                   </div>
-                  <div className="loc-item-box py-2 border-dark-coffee">
+                  <div className="loc-item-box py-2 border-[#191919] ">
                     {stateItem.locations.map((item,index) => {
                       return (
                         <div
                           key={index+2}
-                          className=" loc-item py-2 border-b border-dark-coffee"
+                          className=" loc-item py-2 border-b border-[#191919]"
                         >
                           <a
                             href={`/locations/${item.locationSlug}`}
-                            className="loc-link block golden-text md:text-lg"
+                            className="loc-link block text-[#7b7b7b] hover:text-[#D8C695] "
                           >
-                            {item.locationName} <br></br>
-                            <span className="text-gray-500 text-sm md:text-base ">{item.mall}</span>
+                            <span className="loc-name  lg:text-lg">{item.locationName}</span>
+                             <br></br>
+                            <span className="loc-mall text-sm">{item.mall}</span>
                           </a>
                         </div>
                       );

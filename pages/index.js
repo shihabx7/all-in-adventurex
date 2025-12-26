@@ -29,6 +29,8 @@ import HomePageHeroVideoBgSection from "../comps/v2/homePageComps/sections/HomeP
 //------+ import HomeAboutSection from "../comps/v2/homePageComps/sections/HomeAboutSection"----------++ ;
 import EscapeGamesListSection from "../comps/v2/homePageComps/sections/EscapeGamesListSection";
 import OtherGameSection from "../comps/v2/homePageComps/sections/OtherGameSection";
+import MobileMysteryCardSection from "../comps/v2/homePageComps/sections/MobileMysteryCardSection";
+import GiftCardSection from "../comps/v2/homePageComps/sections/GiftCardSection";
 
 export default function Home(props) {
   const [showUerBookingList, setShowUerBookingList] = useState(false);
@@ -88,22 +90,17 @@ export default function Home(props) {
               otherGameSectionData={props.otherGameListSectionData}
             />
           )}
+          <MobileMysteryCardSection />
+          <GiftCardSection />
         </HomePageGameListBg>
         {/*======================================================================================================== v2 ================ */}
 
-        <MobileMysteryOtherPageSection
-          setShowMobileEecapeMenu={setShowMobileEecapeMenu}
-          setGoMobileEecapeForm={setGoMobileEecapeForm}
-        />
-
         <EventSlider eventList={props.eventList} />
         <UnlockYourBundleSection />
-        <GiftCardHomePageSection
-          setShowGiftBookingList={setShowGiftBookingList}
-          locationSlugList={props.locationSlugList}
-        />
+        {/*===============================  old sections to be replaced—GiftCardHomePageSection-----
         <WhatIsEscape />
         <WhoCanplay />
+========================*/}
         <TestimonialSlider testimonialList={props.testimonialList} />
       </div>
 

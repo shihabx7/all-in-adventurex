@@ -1,5 +1,6 @@
 import { getRootMobileEscapeRoomPageData } from "./api/getRootMobileEscapeRoomPageData";
 import MobileEscapeGamePageUI from "../comps/mobileEscapeGames/MobileEscapeGamePageUI";
+
 import Script from "next/script";
 
 // page template=============
@@ -42,7 +43,7 @@ const RootMobileEscapeRoom = (props) => {
         setGoMobileEecapeForm={setGoMobileEecapeForm}
         goMobileEecapeForm={goMobileEecapeForm}
       />
-      {/* =======header content ======== end */}
+      {/* ================================header content ======== end */}
 
       {/* =========================================================================================main content ======== end */}
 

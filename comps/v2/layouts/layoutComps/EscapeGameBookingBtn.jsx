@@ -15,9 +15,9 @@ export default function EscapeGameBookingBtn({ locationList }) {
         return (
           <div key={index + 1} className="loc-menu-box ">
             {/*==================location NEW YORK======================*/}
-            <div className="loc-menu-head mb-2">
-              <h3 className="text-light-gold text-xl md:text-2xl font-bold">
-                <span className="inline-block pb-1 border-b border-light-gold">
+            <div className="loc-menu-head mb-1">
+              <h3 className="text-[#aaaaaa] text-[1.06rem] md:text-[1.15rem] xl:md:text-[1.2rem] font-bold">
+                <span className="inline-block ">
                   {stateItem.stateName}
                 </span>
               </h3>
@@ -27,16 +27,21 @@ export default function EscapeGameBookingBtn({ locationList }) {
                 return (
                   <div
                     key={index + 2}
-                    className=" loc-item py-2 border-b border-dark-coffee"
+                    className=" loc-item py-3 border-b border-[#191919]"
                   >
                     <button
                       onClick={(e) => {
                         e.preventDefault();
                         bookGame(item.bookingInfo);
                       }}
-                      className="loc-link block golden-text md:text-lg"
+                      className="loc-btn block text-[#7b7b7b] hover:text-[#D8C695] md:text-lg text-left"
                     >
-                      {item.locationName}
+                      <span className="loc-name block  lg:text-lg">
+                        {item.locationName}
+                      </span>
+                      <span className="block loc-mall text-sm">
+                        {item.mall}
+                      </span>
                     </button>
                   </div>
                 );

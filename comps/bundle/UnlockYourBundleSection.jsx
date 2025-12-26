@@ -22,15 +22,8 @@ export default function UnlockYourBundleSection({ locationSlug }) {
   };
   return (
     <div className="escape-games-bundl-section ">
-      <div className="section-bg bg-gradient-to-tr from-[#022b03] to-[#055e04] relative">
-        {/*============section bg img==========*/}
-        <div className="section-bg-img w-full h-full absolute top-0 left-0  ">
-          <img
-            className="w-full h-full object-cover object-center "
-            src={"/assets/bundle/escape-game-bundle-bg.jpg"}
-            alt={"all in adventures escape game bundle"}
-          ></img>
-        </div>
+      <div className="section-bg bg-[#0c0c0c] relative">
+      
         <div className="section-container py-16 md:py-20 lg:py-28  mx-auto max-w-[1220px] px-3 rm:px-4 md:px-8 relative z-20">
           <div className="bnd-row flex flex-col lg:flex-row justify-between items-center">
             <div className="bnd-col w-full lg:w-[44%] ">
@@ -79,7 +72,7 @@ export default function UnlockYourBundleSection({ locationSlug }) {
                 <img
                   className="w-full lg:a-auto lg:max-w-full"
                   src={
-                    "/assets/bundle/bundle-game-baner.png"
+                    "/assets/bundle/all-in-adventures-escape-room-bundle-offer.png"
                   }
                   alt={"all in adventures escape game bundle"}
                 ></img>
