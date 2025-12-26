@@ -156,10 +156,12 @@ const Locations = (props) => {
           locationSlug={props.locationSlug}
           locationSlugList={props.locationSlugList}
           giftBooking={props.giftBooking}
+        
         />
-        ===*/}
-        <WhatIsEscape />
+         <WhatIsEscape />
         <WhoCanplay />
+        ===*/}
+
         <TestimonialLocSlider testimonialList={props.testimonialList} />
         <LocationDetails
           mapInfo={props.mapInfo}

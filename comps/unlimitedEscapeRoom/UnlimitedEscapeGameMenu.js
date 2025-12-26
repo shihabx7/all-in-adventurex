@@ -24,7 +24,7 @@ const UnlimitedEscapeGameMenu = (props) => {
       <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
 
       <div
-        className="loc-menu u-play-pass-menu top-0 left-0 bg-[#111111] fixed w-full h-full overflow-scroll overflow-x-hidden overflow-y-auto z-[10000]"
+        className="loc-menu u-play-pass-menu top-0 left-0 bg-[#111111] fixed w-full h-screen  overflow-x-hidden overflow-y-auto z-[10000]"
        
       >
         <div
@@ -38,7 +38,7 @@ const UnlimitedEscapeGameMenu = (props) => {
         </div>
         <div className="loc-menu-content px-4">
            <div className="sep-container max-w-[420px] md:max-w-[760px] lg:max-w-[860px] mx-auto ">
-            <h2 className="text-[#E0BF62] text-center text-[1.5rem] uppercase md:text-[3rem] lg:text-[4rem] leading-[1.2] font-os font-bold">
+            <h2 className="text-[#E0BF62] text-center text-[1.5rem] rm:text-[1.88rem]  uppercase md:text-[3rem] lg:text-[4rem] leading-[1.2] font-os font-bold">
               Choose Your Location
             </h2>
             <p className="text-[#7B7B7B] py-2 text-center text-[1.05rem]  md:text-[1.3rem] lg:text-[1.5rem] leading-[1.2] ">
@@ -53,7 +53,7 @@ const UnlimitedEscapeGameMenu = (props) => {
                 <div key={loc.id} className="loc-menu-box ">
                   {/*==================location NEW YORK======================*/}
                   <div className="loc-menu-head ">
-                    <h3 className="text-[#bbbbbb] text-[1.06rem] md:text-[1.15rem] xl:md:text-[1.3rem] font-bold">
+                    <h3 className="text-[#bbbbbb] text-[1.08rem] md:text-[1.13rem] xl:md:text-[1.2rem] font-bold uppercase" >
                       <span className="inline-block">
                         {loc.stateName}
                       </span>
@@ -75,7 +75,7 @@ const UnlimitedEscapeGameMenu = (props) => {
                             }}
                             className="loc-link block text-[#7b7b7b] hover:text-[#D8C695]  text-left"
                           >
-                            <span className="loc-name block text-[1.05rem] font-semibold">
+                            <span className="loc-name block text-[1.05rem] font-medium">
                               {item.locationName}
                             </span>
                             <span className="block loc-mall text-sm">

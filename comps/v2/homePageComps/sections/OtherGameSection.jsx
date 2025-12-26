@@ -22,7 +22,7 @@ export default function OtherGameSection({
               </div>
               {otherGameSectionData.sectionSubTitle && (
                 <div className="pageSub Title max-w-[700px] lg:max-w-[800px] mx-auto">
-                  <p className="text-[#f3f4f6]  sm:text-lg xl:text-xl text-center mt-3 md:mt-3 lg:mt-4 xl:mt-5">
+                  <p className="text-[#aaaaaa]  md:text-lg xl:text-[1.2rem] text-center mt-3 md:mt-3 lg:mt-4 xl:mt-5">
                     Looking for more fun things to do? Step beyond escape rooms
                     and enjoy our interactive games designed for laughs,
                     friendly competition, and fun.

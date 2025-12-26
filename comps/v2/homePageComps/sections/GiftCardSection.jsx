@@ -33,7 +33,7 @@ export default function GiftCardSection({ locationSlug, giftBooking }) {
           </div>
 
           <div className="page-sub-title max-w-[700px] lg:max-w-[800px] mx-auto">
-            <p className="text-[#f3f4f6]  sm:text-lg xl:text-xl text-center mt-3 md:mt-3 lg:mt-4 xl:mt-5">
+            <p className="text-[#aaaaaa]  md:text-lg xl:text-[1.2rem] text-center mt-3 md:mt-3 lg:mt-4 xl:mt-5">
               Give more than a gift—give unforgettable escape room adventures
               filled with teamwork and excitement. Digital gift cards never
               expire and are redeemable at all our locations.
@@ -115,7 +115,7 @@ export default function GiftCardSection({ locationSlug, giftBooking }) {
                     </p>
                   </div>
                   {/*=========================================game button===*/}
-                  <div className="egl-btn-pair mt-5 md:mt-5 mb-[8px] xl:mt-8 xl:mb-2">
+                  <div className="egl-btn-pair mt-7 md:mt-6 mb-3 xl:mt-8 xl:mb-2">
                     <div className="flex items-center space-x-2 md:space-x-3 lg:space-x-4 ">
                       {locationSlug && (
                         <>

@@ -8,7 +8,7 @@ export default function LocationPageLink ({locationList}) {
                 <div key={index+1} className="loc-menu-box ">
                   {/*==================location NEW YORK======================*/}
                   <div className="loc-menu-head ">
-                    <h3 className="text-[#aaaaaa] text-[1.06rem] md:text-[1.15rem] xl:md:text-[1.2rem] font-bold">
+                    <h3 className="text-[#aaaaaa] text-[1.08rem] md:text-[1.13rem] xl:md:text-[1.2rem] font-bold uppercase">
                       <span className="inline-block  ">
                         {stateItem.stateName}
                       </span>
@@ -25,7 +25,7 @@ export default function LocationPageLink ({locationList}) {
                             href={`/locations/${item.locationSlug}`}
                             className="loc-link block text-[#7b7b7b] hover:text-[#D8C695] "
                           >
-                            <span className="loc-name  lg:text-lg">{item.locationName}</span>
+                            <span className="loc-name  lg:text-lg font-medium">{item.locationName}</span>
                              <br></br>
                             <span className="loc-mall text-sm">{item.mall}</span>
                           </a>

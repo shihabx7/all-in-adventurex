@@ -29,10 +29,10 @@ export default function OtherGameList({ otherGameList, locationSlug }) {
   };
 
   return (
-    <div className="ogl-info-row flex justify-center flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-5 xl:space-x-8">
+    <div className="ogl-info-row w-full flex justify-center flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-5 xl:space-x-8">
       {otherGameList.map((item, index) => {
         return (
-          <div key={index} className="ogl-item-col relative shadow-golden">
+          <div key={index} className="ogl-item-col w-full  relative shadow-golden">
             <div className="ogl-info-bg-img  w-full h-full absolute top-0 left-0 z-[10]">
               <img
                 className="w-full h-full object-cover object-center"
@@ -137,7 +137,7 @@ export default function OtherGameList({ otherGameList, locationSlug }) {
               </div>
               <div className="list-card-gap h-[100px] rm:h-[116px] md:h-[120px]"></div>
               {/*=========================================game  decription====*/}
-              <div className="bottom-section md:max-w-[480px] lg:max-w-[600px]">
+              <div className="bottom-section md:max-w-[480px] lg:max-w-[700px]">
                 <h3 className="egl-game-title leading-[1.1] font-bold text-[20px] rm:text-[22px] zm:text-[26px] xl:text-[28px]  2xl:text-[30px] uppercase text-[#f0f0f0]">
                   {item.gameInfo.gameTitle}
                 </h3>
@@ -148,7 +148,7 @@ export default function OtherGameList({ otherGameList, locationSlug }) {
                   </p>
                 </div>
                 {/*=========================================game button===*/}
-                <div className="egl-btn-pair mt-5 md:mt-5 mb-[8px] xl:mt-8 xl:mb-2">
+                <div className="egl-btn-pair mt-7 md:mt-6 mb-3 xl:mt-8 xl:mb-2">
                   <div className="flex items-center space-x-2 md:space-x-3 lg:space-x-4 ">
                     {item.bookingInfo ? (
                       <button

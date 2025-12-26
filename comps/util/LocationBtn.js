@@ -1,7 +1,15 @@
 import { BiMap } from "react-icons/bi";
 import { FaAngleDown } from "react-icons/fa";
-
+import { useSiteData } from "../../contexts/SiteDataContext";
 const LocationBtn = (props) => {
+  const { openModalMenu, setModalMenuType } = useSiteData();
+  //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle
+  const showLocModal = () => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.remove("overflow-hidden");
+    setModalMenuType("location-links");
+    openModalMenu();
+  };
   const showloc = () => {
     const body = document.getElementsByTagName("body")[0];
     body.classList.add("overflow-hidden");
@@ -9,7 +17,7 @@ const LocationBtn = (props) => {
   };
   return (
     <div
-      onClick={showloc}
+        onClick={showLocModal}
       className="bg-red-600 hover:bg-red-700  search-loc cursor-pointer hover:shadow boder-p2 rounded-full"
     >
       <div className="border-2 border-white hover:border-gray-200 bg-white hover:bg-grey-200 flex space-x-2 justify-between md:space-x-2 rounded-full items-center  md:border-4 p-2 md:p-2 text-white ">

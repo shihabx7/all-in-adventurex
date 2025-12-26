@@ -37,7 +37,7 @@ const BundleBookingMenu = ({ locationSlugList, activeBooking }) => {
     <>
       <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
       <div
-        className="bundle-booking-loc-menu top-0 left-0 bg-dark fixed w-full h-full overflow-x-hidden overflow-y-auto z-[100000]"
+        className="bundle-booking-loc-menu top-0 left-0 bg-dark fixed w-full h-screen overflow-x-hidden overflow-y-auto  z-[100000]"
         style={{
           backgroundImage:
             "url(/assets/submenu-bg.png),linear-gradient(#111111,#111111)",
