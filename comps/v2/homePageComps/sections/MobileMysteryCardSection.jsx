@@ -140,7 +140,7 @@ export default function MobileMysteryCardSection({ locationSlug }) {
                     A fully hosted, portable Mobile Mystery escape game
                     featuring real props, digital locks, engaging storytelling,
                     and live guidance from our Game Master—brought straight to
-                    your location. See how it works and let the fun begin!
+                    your location. See how it works and let the fun begin!{" "}
                     <a
                       href={
                         locationSlug
