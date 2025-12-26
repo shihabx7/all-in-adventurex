@@ -15,7 +15,7 @@ export default function EscapeGameBookingBtn({ locationList }) {
         return (
           <div key={index + 1} className="loc-menu-box ">
             {/*==================location NEW YORK======================*/}
-            <div className="loc-menu-head mb-1">
+            <div className="loc-menu-head ">
               <h3 className="text-[#aaaaaa] text-[1.06rem] md:text-[1.15rem] xl:md:text-[1.2rem] font-bold">
                 <span className="inline-block ">
                   {stateItem.stateName}
