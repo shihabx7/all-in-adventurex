@@ -32,7 +32,10 @@ export default function OtherGameList({ otherGameList, locationSlug }) {
     <div className="ogl-info-row w-full flex justify-center flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-5 xl:space-x-8">
       {otherGameList.map((item, index) => {
         return (
-          <div key={index} className="ogl-item-col w-full  relative shadow-golden">
+          <div
+            key={index}
+            className="ogl-item-col w-full  relative shadow-golden"
+          >
             <div className="ogl-info-bg-img  w-full h-full absolute top-0 left-0 z-[10]">
               <img
                 className="w-full h-full object-cover object-center"

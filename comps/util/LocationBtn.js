@@ -17,7 +17,7 @@ const LocationBtn = (props) => {
   };
   return (
     <div
-        onClick={showLocModal}
+      onClick={showLocModal}
       className="bg-red-600 hover:bg-red-700  search-loc cursor-pointer hover:shadow boder-p2 rounded-full"
     >
       <div className="border-2 border-white hover:border-gray-200 bg-white hover:bg-grey-200 flex space-x-2 justify-between md:space-x-2 rounded-full items-center  md:border-4 p-2 md:p-2 text-white ">

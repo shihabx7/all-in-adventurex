@@ -45,7 +45,7 @@ const GiftCardBookingMenu = (props) => {
             </p>
           </div>
 
-          <div className="loc-menu-grid max-w-[64rem] mx-auto mt-4 md:mt-8 lg:mt-10 pb-12 md:pb-8">
+          <div className="loc-menu-grid max-w-[64rem] mx-auto mt-4 md:mt-8 lg:mt-10 pb-[80px] md:pb-8">
             {/*==================location xcolumn======================*/}
             {props.locationSlugList.map((loc) => {
               return (

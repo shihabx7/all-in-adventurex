@@ -133,7 +133,7 @@ export default function ModalMenu() {
             <h2 className="text-[#E0BF62] text-center text-[1.5rem] rm:text-[1.88rem]  uppercase md:text-[3rem] lg:text-[4rem] leading-[1.2] font-os font-bold">
               Choose Your Location
             </h2>
-            <p className="text-[#7B7B7B] py-2 text-center text-[1.05rem]  md:text-[1.3rem] lg:text-[1.5rem] leading-[1.2] ">
+            <p className="text-[#7B7B7B] py-2 text-center text-[1.1rem]  md:text-[1.3rem] lg:text-[1.5rem] leading-[1.2] ">
               {activeModalMenuType == "location-links" && (
                 <>View games, hours, and details for your selected location</>
               )}
@@ -169,7 +169,7 @@ export default function ModalMenu() {
           </div>
           {/*==================================================== modal menu title end*/}
           {/*====================================================modal menu grid column */}
-          <div className="loc-menu-grid max-w-[64rem] mx-auto mt-4 md:mt-8 lg:mt-10 pb-8">
+          <div className="loc-menu-grid max-w-[64rem] mx-auto mt-4 md:mt-8 lg:mt-10 pb-[80px] md:pb-8">
             {/*==================location xcolumn======================*/}
             {activeModalMenuType == "location-links" && (
               <LocationPageLink locationList={locationList} />

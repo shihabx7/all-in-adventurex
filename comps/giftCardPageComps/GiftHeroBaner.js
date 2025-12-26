@@ -140,7 +140,7 @@ const GiftHeroBaner = (props) => {
                   {/* =======card content List========  */}
                   <div className="gift-hero-list-box mt-4  lg:mt-6 text-[#2E2E2E] md:text-[1.15rem] lg:text-[.94rem] xl:text-[1.18rem]">
                     {/* =======card content List offer========  */}
-                  
+
                     {/* =======card content List offer========  */}
                     <div className="gh-item flex justify-start space-x-2 items-start md:items-center my-3">
                       <img

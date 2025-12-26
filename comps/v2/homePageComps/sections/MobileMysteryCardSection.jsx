@@ -42,7 +42,7 @@ export default function MobileMysteryCardSection({ locationSlug }) {
           </div>
 
           <div className="page-sub-title max-w-[700px] lg:max-w-[800px] mx-auto">
-            <p className="text-[#aaaaaa]  md:text-lg xl:text-[1.2rem] text-center mt-3 md:mt-3 lg:mt-4 xl:mt-5">
+            <p className="text-[#adadad]  md:text-lg xl:text-[1.15rem] text-center mt-3 md:mt-3 lg:mt-4 xl:mt-5">
               Turn any event into an unforgettable adventure with our mobile
               mystery games. We bring the games to your location (only
               business/institution). No complex setup required, just gather your
@@ -69,7 +69,7 @@ export default function MobileMysteryCardSection({ locationSlug }) {
                 <div className="top-section flex justify-end space-x-6">
                   {/*==================================================================================Game info*/}
                   <div className="ogl-info-row grow">
-                     <div className="item-col flex  mt-1 md:w-auto items-center space-x-1 2xl:space-x-2">
+                    <div className="item-col flex  mt-1 md:w-auto items-center space-x-1 2xl:space-x-2">
                       <img
                         className="max-h-[16px] rm:max-h-[18px] md:max-h-[16px] lg:max-h-[19px] 2xl:max-h-[22px]"
                         src={
@@ -152,7 +152,7 @@ export default function MobileMysteryCardSection({ locationSlug }) {
                       A fully hosted, portable Mobile Mystery escape game
                       featuring real props, digital locks, engaging
                       storytelling, and live guidance from our Game
-                      Master—brought straight to your location. See how{" "}
+                      Master—brought straight to your location. See{" "}
                       <a
                         className="text-red-600 hover:text-red-700"
                         href={
@@ -163,7 +163,7 @@ export default function MobileMysteryCardSection({ locationSlug }) {
                             : "/mobile-escape-room"
                         }
                       >
-                        it works
+                        how it works
                       </a>{" "}
                       and let the fun begin!
                     </p>
