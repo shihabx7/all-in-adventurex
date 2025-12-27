@@ -93,7 +93,7 @@ export default function GiftCardSection({ locationSlug, giftBooking }) {
                           From
                         </p>
                         <p className="text-center text-[#D4B56A] font-bold text-[1rem] rm:text-[1.15rem] md:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.28rem] leading-[1.2]">
-                          $ 19.99
+                          $ 25.00
                         </p>
                       </div>
                     </div>
