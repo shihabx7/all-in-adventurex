@@ -67,7 +67,7 @@ export default function GiftNotice25({ locationSlug, giftBooking }) {
           ></img>
           <img
             className="w-full object-cover object-center md:hidden"
-            src={"/assets/notice/christmas-gift-card-bg-m.jpg"}
+            src={"/assets/notice/new-yaer-gift-card-bg-m.jpg"}
           ></img>
         </div>
 
@@ -77,7 +77,7 @@ export default function GiftNotice25({ locationSlug, giftBooking }) {
             <div className="crm-gift-santa-icon w-auto md:w-[10%] lg:w-[12.5%] xl:w-[13.5%] 3xl:w-[15%] xl:text-right">
               <img
                 className="hidden md:block w-full  md:max-h-[40px] xl:max-h-[46px] 3xl:max-h-[54px] object-contain object-right "
-                src={"/assets/notice/chirstmas-gift-santa.png"}
+                src={"/assets/notice/new-near-left-graphics.png"}
               ></img>
             </div>
             {/*=========================================bfdy notice content */}
@@ -86,7 +86,7 @@ export default function GiftNotice25({ locationSlug, giftBooking }) {
                 {/*=========================================gift cart poster */}
                 <div className="bfdy-notice-ribb">
                   <img
-                    className="max-w-[54px] rm:max-w-[56px] lm:max-w-[60px] sm:max-w-[66px] md:max-w-[60px] lg:max-w-[66px] xl:max-w-[80px] 2xl:max-w-[90px]"
+                    className="max-w-[52px] rm:max-w-[54px] lm:max-w-[56px] sm:max-w-[58px] md:max-w-[60px] lg:max-w-[78px] xl:max-w-[84px] 2xl:max-w-[92px]"
                     src={"/assets/notice/gift-card-notice-baner.png"}
                     alt="black friday gift card"
                   ></img>
@@ -129,7 +129,7 @@ export default function GiftNotice25({ locationSlug, giftBooking }) {
                 {/*====================================================timer*/}
                 <div className="bfdy-notice-rib2 hidden md:block">
                   <img
-                    className="max-w-[54px] rm:max-w-[56px] lm:max-w-[60px] sm:max-w-[66px] md:max-w-[60px] lg:max-w-[66px] xl:max-w-[80px] 2xl:max-w-[90px]"
+                    className="max-w-[52px] rm:max-w-[54px] lm:max-w-[56px] sm:max-w-[58px] md:max-w-[60px] lg:max-w-[78px] xl:max-w-[84px] 2xl:max-w-[92px]"
                     src={"/assets/notice/gift-card-notice-baner.png"}
                     alt="black friday gift card"
                   ></img>
@@ -141,7 +141,7 @@ export default function GiftNotice25({ locationSlug, giftBooking }) {
             <div className="crm-gift-boxes-icon md:w-[9%] lg:w-[12.5%] xl:w-[13.5%] 3xl:w-[15%]">
               <img
                 className=" hidden md:block w-full  md:max-h-[28px] xl:max-h-[36px] 3xl:max-h-[44px]  object-contain object-left "
-                src={"/assets/notice/chirstmas-gift-boxes-icon-l.png"}
+                src={"/assets/notice/new-year-right-graphics.png"}
               ></img>
             </div>
           </div>
