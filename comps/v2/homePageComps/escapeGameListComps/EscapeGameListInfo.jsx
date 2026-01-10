@@ -43,7 +43,7 @@ export default function EscapeGameListInfo({
   };
 
   return (
-    <div className="egl-info-box relative md:ml-[-10px] lg:ml-[-14px]">
+    <div className="egl-info-box relative md:ml-[-8px] lg:ml-[-12px] xl:ml-[-14px]">
        {/*=======================================Game-card-bg*/}
       <div className="egl-info-bg-img absolute top-0 left-0 w-full h-full">
         <img
@@ -61,24 +61,24 @@ export default function EscapeGameListInfo({
         ></img>
       </div>
        {/*=======================================Game-card-content=============================*/}
-      <div className="egl-info-content relative z-[20] px-2 py-4 rm:px-2 rm:py-5 zm:px-4 zm:py-5 lg:p-6  xl:p-10 2xl:p-10">
-        <h3 className="egl-game-title leading-[1.1] font-bold text-[20px] rm:text-[22px] zm:text-[26px] xl:text-[30px]  2xl:text-[32px] uppercase text-[#f0f0f0]">
+      <div className="egl-info-content relative z-[20] px-2 py-4 rm:px-2 rm:py-5 zm:px-4 zm:py-5 md:pl-[24px] lg:p-6 lg:pl-[38px] xl:p-10 xl:pl-[44px] 2xl:pl-[50px]">
+        <h3 className="egl-game-title leading-[1.1] font-bold text-[20px] rm:text-[22px] zm:text-[24px] xl:text-[30px]  2xl:text-[32px] uppercase text-[#f0f0f0]">
           {gameInfo.gameTitle}
         </h3>
         {/*=======================================Game-price*/}
-        <div className="hidden md:block egl-price absolute top-[-40px]  left-[0px] zm:left-[unset] zm:right-[2px] zm:top-[14px] md:top-[12px] md:right-[10px] lg:top-[16px] lg:right-[16px]  xl:right-4 xl:top-4">
+        <div className="hidden md:block egl-price absolute top-[-40px]  left-[0px] zm:left-[unset] zm:right-[2px] zm:top-[14px] md:top-[8px] md:right-[10px] lg:top-[16px] lg:right-[16px]  xl:right-4 xl:top-4 2xl:right-5">
           <div className="egl-price-wrapper relative">
             <div className="bg-img ">
               <img
-                className="w-[92px] rm:w-[98px] md:w-[94px] xl:w-[108px] 2xl:w-[120px]"
+                className="w-[92px] rm:w-[98px] md:w-[88px] xl:w-[108px] 2xl:w-[120px]"
                 src={"/assets/escape-games/icons/escape-game-price-bg.svg"}
               ></img>
             </div>
             <div className="w-full h-full absolute top-0 left-0 flex flex-col justify-center items-center ">
-              <p className="text-center text-[#AAA7A7] text-[.9rem] rm:text-[.94rem] md:text-[.96rem] xl:text-[1rem] 3xl:text-[1.1rem] leading-[1.1]">
+              <p className="text-center text-[#AAA7A7] text-[.9rem] rm:text-[.94rem] md:text-[.9rem] xl:text-[1rem] 3xl:text-[1.1rem] leading-[1.1]">
                 From
               </p>
-              <p className="text-center text-[#D4B56A] font-bold text-[1rem] rm:text-[1.15rem] md:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.28rem] leading-[1.2]">
+              <p className="text-center text-[#D4B56A] font-bold text-[1rem] rm:text-[1.15rem] md:text-[1rem] xl:text-[1.2rem] 2xl:text-[1.28rem] leading-[1.2]">
                 ${gameInfo.price}
               </p>
             </div>

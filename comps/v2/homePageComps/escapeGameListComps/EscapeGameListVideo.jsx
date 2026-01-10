@@ -62,7 +62,7 @@ export default function EscapeGameListVideo({
       ref={containerRef}
       onMouseEnter={(e) => playVideoOnHover(e)}
       onMouseLeave={(e) => stopVideoOnClick(e)}
-      className="egl-video-box hover:cursor-pointer relative group"
+      className="egl-video-box hover:cursor-pointer md:w-[300px] lg:w-[380px] xl:w-[450px] 2xl:w-[476px] relative group"
     >
       {/*==================================================game video poster=== */}
       {!isPlaying && (
@@ -79,7 +79,7 @@ export default function EscapeGameListVideo({
 
       {/*================================================== game video poster end=== */}
       {/*================================================== game video */}
-      <div className="eg-card-video-container">
+      <div className="eg-card-video-container w-full">
         <Suspense fallback={<p>Loading video...</p>}>
           <video
             ref={gameVideoRef}
