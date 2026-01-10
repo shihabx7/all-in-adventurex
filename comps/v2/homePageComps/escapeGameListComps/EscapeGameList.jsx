@@ -76,7 +76,7 @@ export default function EscapeGameList({
               className="egl-item-row flex flex-col md:flex-row items-center "
             >
               {/*=====================================================================Game-video*/}
-              <div className="egl-item-col  md:max-w-[300px] lg:max-w-[390px] xl:max-w-[448px] 2xl:max-w-[472px] relative z-20">
+              <div className="egl-item-col md:max-w-[300px] lg:max-w-[390px] xl:max-w-[448px] 2xl:max-w-[472px] relative z-20">
                 <EscapeGameListVideo
                   videoData={item.videoData}
                   currentVideoRef={currentVideoRef}

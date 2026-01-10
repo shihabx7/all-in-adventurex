@@ -152,11 +152,11 @@ export default function OtherGameList({ otherGameList, locationSlug }) {
                 </div>
                 {/*=========================================game button===*/}
                 <div className="egl-btn-pair mt-7 md:mt-6 mb-3 xl:mt-8 xl:mb-2">
-                  <div className="flex items-center space-x-2 md:space-x-3 lg:space-x-4 ">
+                  <div className="flex justify-between md:justify-start items-center space-x-2 md:space-x-3 lg:space-x-4 ">
                     {item.bookingInfo ? (
                       <button
                         onClick={(e) => bookGame(e, item.bookingInfo)}
-                        className="border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700
+                        className=" w-[48%] lm:w-[47%] md:w-auto border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700
                          text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-semibold"
                       >
                         BOOK NOW
@@ -164,7 +164,7 @@ export default function OtherGameList({ otherGameList, locationSlug }) {
                     ) : (
                       <button
                         onClick={(e) => showLocModal(item.gameInfo.slug)}
-                        className="border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700
+                        className=" w-[48%] lm:w-[47%] md:w-auto border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700
                          text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-semibold"
                       >
                         BOOK NOW
@@ -174,7 +174,7 @@ export default function OtherGameList({ otherGameList, locationSlug }) {
                     {locationSlug ? (
                       <a
                         href={`/${locationSlug}/activities/${item.gameInfo.slug}`}
-                        className="border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
+                        className=" w-[48%] lm:w-[47%] md:w-auto border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
                          text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-semibold"
                       >
                         EXPLORE
@@ -182,7 +182,7 @@ export default function OtherGameList({ otherGameList, locationSlug }) {
                     ) : (
                       <a
                         href={`/activities/${item.gameInfo.slug}`}
-                        className="border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
+                        className=" w-[48%] lm:w-[47%] md:w-auto border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
                          text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-semibold"
                       >
                         EXPLORE
