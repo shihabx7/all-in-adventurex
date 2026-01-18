@@ -6,7 +6,7 @@ import { escapeGameBundleBookingList } from "../../lib/v2/data/escapeGameBundleB
 import { useSiteData } from "../../contexts/SiteDataContext";
 
 export default function UnlimitedBundleNotice({ noticeData, locationSlug }) {
-  const { openModalMenu, closeModalMenu } = useSiteData();
+  const { openModalMenu, closeModalMenu,setModalMenuType } = useSiteData();
   const [showNotice, setShownotice] = useState(false);
   const closeNotice = () => {
     setCookie("close-h-notice", true, {
@@ -29,6 +29,7 @@ export default function UnlimitedBundleNotice({ noticeData, locationSlug }) {
   const showLocModal = () => {
     const body = document.getElementsByTagName("body")[0];
     body.classList.remove("overflow-hidden");
+     setModalMenuType("bundle");
     openModalMenu();
   };
   const bookBundle = (locationSlug) => {
