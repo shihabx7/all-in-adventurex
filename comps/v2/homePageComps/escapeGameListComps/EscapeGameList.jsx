@@ -68,7 +68,7 @@ export default function EscapeGameList({
       />
       */}
 
-      <div className="egl-list-item-box mt-2 flex flex-col space-y-6 rm:space-y-7 zm:space-y-8 md:space-y-8 2xl:space-y-10">
+      <div className="egl-list-item-box mt-2 flex flex-col space-y-6 rm:space-y -7 zm:space-y-8 md:space-y-8 2xl:space-y-10">
         {gameList.map((item, index) => {
           return (
             <div

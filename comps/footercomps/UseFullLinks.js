@@ -44,7 +44,7 @@ const UseFullLinks = (props) => {
               href={"/" + props.locationSlug + "/events"}
               className="text-gray-400 text-sm  lg:text-base"
             >
-              Events and Parites
+              Events and Parties
             </a>
           ) : (
             <a href="/events" className="text-gray-400 text-sm  lg:text-base">
