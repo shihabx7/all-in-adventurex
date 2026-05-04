@@ -595,7 +595,8 @@ const FranchiseContactForm = () => {
       if (response.status == 200) {
         setErrorMsg("");
         setSuccessMsg("Your message has submitted successfully. Thank you.");
-        //  window.location.replace("/thank-you-store");
+          window.location.replace("/thank-you-franchise");
+        //  window.location.replace("/thank-you-franchise);
         //window.location.href = "/thank-you-store";
         console.log("Form submit success " + result.data);
       } else if (response.status == 403) {

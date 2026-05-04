@@ -648,20 +648,24 @@ const JobApplicationForms = (props) => {
         setErrorMsg("");
         setSuccessMsg("Your Application has submitted successfully.");
         setRepErrMsg(false);
-        window.location.href("https://allinadventures.com/thank-you-career");
+        window.location.replace("/thank-you-career");
         //window.location.href = "//thank-you"; replace
         // console.log("Form submit success " + result.data);
       } else if (response.status == 403) {
         setSuccessMsg("");
-        setErrorMsg(result.data.error+"Error-Code:403");
+        setErrorMsg(result.data.error + "Error-Code:403");
         setRepErrMsg(true);
       } else if (response.status == 405) {
-        setErrorMsg(result.data.error+"Error-Code:405");
+        setErrorMsg(result.data.error + "Error-Code:405");
         setSuccessMsg("");
         setRepErrMsg(true);
       } else if (response.status == 429) {
         setErrorMsg(
-          result.data.error + " Try after" + result.data.resetAfter + " Min"+"Error-Code:429"
+          result.data.error +
+            " Try after" +
+            result.data.resetAfter +
+            " Min" +
+            "Error-Code:429",
         );
         setSuccessMsg("");
         setRepErrMsg(true);
