@@ -653,21 +653,21 @@ const JobApplicationForms = (props) => {
         // console.log("Form submit success " + result.data);
       } else if (response.status == 403) {
         setSuccessMsg("");
-        setErrorMsg(result.data.error);
+        setErrorMsg(result.data.error+"Error-Code:403");
         setRepErrMsg(true);
       } else if (response.status == 405) {
-        setErrorMsg(result.data.error);
+        setErrorMsg(result.data.error+"Error-Code:405");
         setSuccessMsg("");
         setRepErrMsg(true);
       } else if (response.status == 429) {
         setErrorMsg(
-          result.data.error + " Try after" + result.data.resetAfter + " Min"
+          result.data.error + " Try after" + result.data.resetAfter + " Min"+"Error-Code:429"
         );
         setSuccessMsg("");
         setRepErrMsg(true);
       } else {
         setSuccessMsg("");
-        setErrorMsg("Server not Responding. Try again later");
+        setErrorMsg("Server not Responding. Try again later. Error-Code:500");
         setRepErrMsg(true);
       }
     } catch (error) {
@@ -675,7 +675,7 @@ const JobApplicationForms = (props) => {
       setIsSend(false);
       setRepErrMsg(true);
       setSuccessMsg("");
-      alert("Network Error: Please try again later.");
+      alert("Network Error: Please try again later. Error-Code:500");
       return;
     }
   };
@@ -826,6 +826,7 @@ const JobApplicationForms = (props) => {
                 careers@allinadventures.com
               </a>
             </p>
+            <p className="text-err text-sm text-gray-500">{errorMsg}</p>
           </div>
         )}
       </div>

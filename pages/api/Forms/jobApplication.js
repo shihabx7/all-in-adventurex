@@ -154,11 +154,10 @@ export default async function jobApplicationHandler(req, res) {
 
   const mailOptions = {
     from: `"AIA Job Application"<${mailUser}>"`,
-     to: "shihab.dgency@gmail.com",
-    bcc: "dgency.com@gmail.com",
-    //to: `${mailReceiver}`,
-    // bcc: `${mailReceiverBcc}`,
-    //bcc: "dgency.com@gmail.com",
+    // to: "shihab.dgency@gmail.com",
+    to: `${mailReceiver}`,
+    bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
+    // bcc: `dgency.com@gmail.com`,
     subject: `All In Adventures Job Application - ${fullName}`,
     html: `
               <p style="margin:4px 0px;"><strong>Name: </strong> ${retbody.info1.lName} ${retbody.info1.fName} </p>
@@ -187,7 +186,7 @@ export default async function jobApplicationHandler(req, res) {
   const replayEmailRes = await replayToJobApplicant(
     fullName,
     retbody.info1.email,
-    pdfpath
+    pdfpath,
   );
   if (!replayEmailRes.success) {
     return res.status(500).json(replayEmailRes);

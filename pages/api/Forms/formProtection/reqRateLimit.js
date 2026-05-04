@@ -30,8 +30,8 @@ const getIP = (req) => {
 // Configure rate limiting
 const limiter = rateLimit({
   windowMs: 10 * 60 * 1000, // reset after  min
-  //max: 5,
-  limit: 8, // Limit each IP to 2 requests per window
+  //max: 10,
+  limit: 7, // Limit each IP to  requests per window
   keyGenerator: (req) => getIP(req),
   message: { error: "Too many requests. Please try again later." },
   standardHeaders: true,
