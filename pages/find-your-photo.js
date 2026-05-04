@@ -63,6 +63,6 @@ export const getStaticProps = async () => {
       pageData: DATA.pageData,
       photoList: DATA.photoList,
     },
-    revalidate: 10,
+    revalidate: 60,
   };
 };

@@ -80,6 +80,6 @@ export const getStaticProps = async () => {
       pageMeta: DATA.pageMeta,
       mobileEscapeRoomPageData: DATA.mobileEscapeRoomPageData,
     },
-    revalidate: 12,
+    revalidate: 60,
   };
 };

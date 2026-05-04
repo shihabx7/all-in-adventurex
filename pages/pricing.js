@@ -92,6 +92,7 @@ export const getStaticProps = async () => {
       nextgenpricing: DATA.nextgenpricing,
       questgenpricing: DATA.questgenpricing,
     },
-    revalidate: 12,
+   // - At most once every 60 seconds
+    revalidate: 60,
   };
 };

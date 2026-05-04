@@ -64,6 +64,6 @@ export const getStaticProps = async () => {
       pageMeta: DATA.pageMeta,
       jobCardList: DATA.jobCardList,
     },
-    revalidate: 12,
+    revalidate: 60,
   };
 };

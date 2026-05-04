@@ -142,6 +142,6 @@ export const getStaticProps = async (context) => {
       blogdesc: DATA.blogdesc,
       relatedblogdata: DATA.relatedblogdata,
     },
-    revalidate: 14,
+    revalidate: 60,
   };
 };

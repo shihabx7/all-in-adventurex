@@ -187,6 +187,6 @@ export const getStaticProps = async (context) => {
       //toymakersPageData: DATA.toymakersPageData,
       escapeGameCarouselSectionData: DATA.escapeGameCarouselSectionData,
     },
-    revalidate: 12,
+    revalidate: 60,
   };
 };

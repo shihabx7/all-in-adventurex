@@ -110,6 +110,6 @@ export const getStaticProps = async (context) => {
       jobName: DATA.jobName,
       jobSlug: DATA.urlSlug,
     },
-    revalidate: 12,
+    revalidate: 60,
   };
 };

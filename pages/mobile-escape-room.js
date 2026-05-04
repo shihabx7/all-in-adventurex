@@ -83,6 +83,7 @@ export const getStaticProps = async () => {
       escapeGameCarouselSectionData: DATA.escapeGameCarouselSectionData,
       mobileEscapeRoomPageData: DATA.mobileEscapeRoomPageData,
     },
-    revalidate: 12,
+    // - At most once every 60 seconds
+    revalidate: 60,
   };
 };

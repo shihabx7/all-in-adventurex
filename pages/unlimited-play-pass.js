@@ -86,6 +86,7 @@ export const getStaticProps = async () => {
       // giftFaqs: DATA.giftFaqs,
       // giftGallery: DATA.giftGallery,
     },
-    revalidate: 12,
+        // - At most once every 10 seconds
+    revalidate: 60,
   };
 };

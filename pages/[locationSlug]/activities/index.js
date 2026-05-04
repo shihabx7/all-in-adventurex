@@ -131,7 +131,7 @@ export const getStaticProps = async (context) => {
       activityData: DATA.activityListData,
       toyMakerPageData: DATA.toyMakerPageData,
     },
-    revalidate: 12,
+    revalidate: 60,
   };
 };
 

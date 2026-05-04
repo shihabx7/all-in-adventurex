@@ -73,6 +73,7 @@ export const getStaticProps = async () => {
 
       locationMailData: DATA.locationMailData,
     },
-    revalidate: 12,
+        // - At most once every 10 seconds
+    revalidate: 60,
   };
 };

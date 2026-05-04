@@ -93,6 +93,6 @@ export const getStaticProps = async () => {
       galleryGroup: DATA.galleryGroup,
       gallerylist: DATA.galleryList,
     },
-    revalidate: 12,
+    revalidate: 60,
   };
 };

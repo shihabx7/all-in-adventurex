@@ -123,7 +123,7 @@ export const getStaticProps = async (context) => {
       giftBooking: DATA.giftBooking,
       mapInfo: DATA.mapInfo,
     },
-    revalidate: 12,
+    revalidate: 60,
   };
 };
 

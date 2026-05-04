@@ -62,6 +62,7 @@ export const getStaticProps = async () => {
 
       testimonialsGroup: DATA.testimonialsGroup,
     },
-    revalidate: 12,
+     // - At most once every 60 seconds
+    revalidate: 60,
   };
 };

@@ -89,7 +89,7 @@ export const getStaticProps = async () => {
       totalLocations: DATA.totalLocations,
     },
 
-    // - At most once every 10 seconds
-    // revalidate: 30, // In seconds
+    // - At most once every 60 seconds
+    revalidate: 60, // In seconds
   };
 };

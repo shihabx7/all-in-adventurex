@@ -139,7 +139,7 @@ export const getStaticProps = async () => {
       escapeGameListSectionData: DATA.escapeGameListSectionData,
       otherGameListSectionData: DATA.otherGameListSectionData,
     },
-    // - At most once every 10 seconds
+    // - At most once every 60 seconds
     revalidate: 60,
   };
 };

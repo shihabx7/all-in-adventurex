@@ -112,7 +112,7 @@ export const getStaticProps = async () => {
       careersLinkList: DATA.careersLinkList,
     },
 
-    // - At most once every 10 seconds
-    revalidate: 12,
+    // - At most once every 60 seconds
+    revalidate: 60,
   };
 };

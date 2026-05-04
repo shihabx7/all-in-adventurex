@@ -44,5 +44,7 @@ export const getStaticProps = async () => {
       pageData: DATA.pageData,
       pageMeta: DATA.pageMeta,
     },
+        // - At most once every 10 seconds
+    revalidate: 60,
   };
 };

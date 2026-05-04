@@ -648,8 +648,8 @@ const JobApplicationForms = (props) => {
         setErrorMsg("");
         setSuccessMsg("Your Application has submitted successfully.");
         setRepErrMsg(false);
-        window.location.replace("/thank-you-career");
-        //window.location.href = "//thank-you";
+        window.location.href("https://allinadventures.com/thank-you-career");
+        //window.location.href = "//thank-you"; replace
         // console.log("Form submit success " + result.data);
       } else if (response.status == 403) {
         setSuccessMsg("");
