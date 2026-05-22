@@ -146,10 +146,10 @@ const UseFullLinks = (props) => {
         {/*======================= Unlimited Play Pass============== */}
         <div className="usefull-link inline-block px-3 md:px-0 py-1 md:py-2 lg:py-2">
           <a
-            href="/unlimited-play-pass"
+            href="/all-in-rewards"
             className="text-gray-400 text-sm  lg:text-base"
           >
-            Unlimited Play Pass
+            All In Rewards
           </a>
         </div>
         <div className=" hidden lg:block text-gray-400 text-2xl">

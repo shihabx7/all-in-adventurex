@@ -25,9 +25,9 @@ const PriceInperson = (props) => {
         <div className="section-container max-w-7xl mx-auto  pt-16 md:pt-24 lg:pt-28 relative z-30 px-4">
           {
             <div className="mb-8 md:mb-10 lg:mb-12 2xl:mb-16">
-              <UnlimitedEscapeRoomSection
+              {/*<UnlimitedEscapeRoomSection
                 setShowUerBookingList={props.setShowUerBookingList}
-              />
+              />*/}
             </div>
           }
           <div className="section-title px-4 mb-8">

@@ -6,6 +6,7 @@ import UnlimitedEscapeRoomSection from "../comps/unlimitedEscapeRoom/UnlimitedEs
 // page template=============
 
 import PricingPageHero from "../comps/pricingPageComps/PricingPageHero";
+import AllinRewardBaner from "../comps/allInRewards/AllinRewardBaner";
 import PriceForLargerGroup from "../comps/pricingPageComps/PriceForLargerGroup";
 import PriceInperson from "../comps/pricingPageComps/PriceInperson";
 import PricingNextGen from "../comps/pricingPageComps/PricingNextGen";
@@ -51,6 +52,7 @@ const Pricing = (props) => {
         {/* =======breadcum content and breadcum root page template======== end */}
 
         <PricingPageHero pageData={props.pageData} />
+        <AllinRewardBaner/>
         <PriceInperson
           pricing={props.inpersonpricing}
           setShowUerBookingList={setShowUerBookingList}

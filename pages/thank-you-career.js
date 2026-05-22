@@ -2,7 +2,6 @@ import RootNav from "../comps/RootNav";
 import RootFooter from "../comps/RootFooter";
 
 import { getThankYouCareerPageData } from "./api/getThankYouCareerPageData";
-import ThankYouHero from "../comps/thankYouPagesComs/ThankYouHero";
 import ThankYuouCareerHero from "../comps/thankYouPagesComs/ThankYuouCareerHero";
 
 import SinglePageSeo from "../comps/util/SinglePageSeo";
@@ -46,7 +45,7 @@ export const getStaticProps = async () => {
       pageData: DATA.pageData,
       pageMeta: DATA.pageMeta,
     },
-        // - At most once every 10 seconds
+    // - At most once every 10 seconds
     revalidate: 60,
   };
 };

@@ -6,6 +6,12 @@ const prm = false;
 
 // =========================================genarel redirect :path
 const gnRed = [
+    {
+    source: "/unlimited-play-pass",
+    destination: "/all-in-rewards",
+    permanent: prm,
+  },
+
   {
     source: "/activities/axe-throwing",
     destination: "/",

@@ -28,6 +28,7 @@ import LocationFooter from "../../comps/locationsPage/LocationFooter";
 import MobileMysteryOtherPageSection from "../../comps/mobileEscapeGames/section/MobileMysteryOtherPageSection";
 import UnlimitedEscapeGameMenu from "../../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
 import UnlockYourBundleSection from "../../comps/bundle/UnlockYourBundleSection";
+import AllinRewardBaner from "../../comps/allInRewards/AllinRewardBaner";
 
 //==============================================================================================================v2
 import HomePageHeroVideoBgSection from "../../comps/v2/homePageComps/sections/HomePageHeroVideoBgSection";
@@ -140,13 +141,14 @@ const Locations = (props) => {
           locationSlug={props.locationSlug}
           isPublished={props.isPublished}
         />
-        <UnlockYourBundleSection locationSlug={props.locationSlug} />
+        
 
         {/*=========================================================================================
         {props.hasMobileEscapeRoom ? (
           <MobileMysteryOtherPageSection
             locationSlug={props.locationSlug}
             mobileEscapeRoomData={props.mobileEscapeRoomData}
+            <AllinRewardBaner />
           />
         ) : (
           <></>

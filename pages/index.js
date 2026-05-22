@@ -23,6 +23,7 @@ import GiftCardBookingMenu from "../comps/giftCardPageComps/GiftCardBookingMenu"
 import MobileMysteryOtherPageSection from "../comps/mobileEscapeGames/section/MobileMysteryOtherPageSection";
 import MobileEscapeRootMenu from "../comps/mobileEscapeGames/MobileEscapeRootMenu";
 import UnlockYourBundleSection from "../comps/bundle/UnlockYourBundleSection";
+import AllinRewardBaner from "../comps/allInRewards/AllinRewardBaner";
 //======================= v2-----------------
 import HomePageGameListBg from "../comps/v2/sharedComs/HomePageGameListBg";
 import HomePageHeroVideoBgSection from "../comps/v2/homePageComps/sections/HomePageHeroVideoBgSection";
@@ -96,9 +97,9 @@ export default function Home(props) {
         {/*======================================================================================================== v2 ================ */}
 
         <EventSlider eventList={props.eventList} />
-        <UnlockYourBundleSection />
+      
         {/*===============================  old sections to be replaced—GiftCardHomePageSection-----
-        <WhatIsEscape />
+        <WhatIsEscape />  <AllinRewardBaner />
         <WhoCanplay />
 ========================*/}
         <TestimonialSlider testimonialList={props.testimonialList} />

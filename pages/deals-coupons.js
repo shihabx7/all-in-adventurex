@@ -7,6 +7,7 @@ import RootFooter from "../comps/RootFooter";
 // page template=============
 
 import DealsAndCouponHero from "../comps/dealsPageComps/DealsAndCouponHero";
+import AllinRewardBaner from "../comps/allInRewards/AllinRewardBaner";
 import DealsFaqs from "../comps/dealsPageComps/DealsFaqs";
 
 import AllCouponOpt from "../comps/dealsPageComps/AllCouponOpt";
@@ -54,10 +55,13 @@ const DealsCoupon = (props) => {
           pageData={props.pageData}
           totalLocations={props.totalLocations}
         />
-        <UnlimitedPlayPassFullSection
+        <AllinRewardBaner/> 
+        {/*
+          <UnlimitedPlayPassFullSection
           setShowUerBookingList={setShowUerBookingList}
         />
-        <UnlockYourBundleSection />
+        <UnlockYourBundleSection /> 
+        */}
         <AllCouponOpt
           couponlist={props.couponlist}
           setShowUerBookingList={setShowUerBookingList}

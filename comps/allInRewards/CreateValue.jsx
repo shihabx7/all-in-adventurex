@@ -1,73 +1,72 @@
-import MobileTitleSeparatorCenter from "../mobileEscapeGames/MobileTitleSeparatorCenter";
-import UerBtn from "./UerBtn";
+import UnlockRewardBtn from "./elements/UnlockRewardBtn";
 
-const CreatUnlimitedDeal = (props) => {
+export default function CreateValue(props) {
   const tempData = [
     {
       id: 1,
-      title: "ESCAPE ROOM ENTHUSIASTS",
-      icon: {
-        hasImage: true,
-        alt: "Allinadventures unlimited play pass escape room enthusiasts",
-        url: "/assets/unlimited-escape-room/icon/escape-room-enthusiasts.svg",
-      },
-      description:
-        "Love solving puzzles and cracking codes? With unlimited games, you can master all 9 themes, perfect your strategies, and feed your passion for escape rooms—all for one low price!",
-    },
-    {
-      id: 2,
       title: "FIRST-TIMERS",
       icon: {
         hasImage: true,
-        alt: "Allinadventures unlimited play pass first timer",
-        url: "/assets/unlimited-escape-room/icon/first-timer.svg",
+        alt: "all in adventures reward value first timer",
+        url: "/assets/all-in-rewards/create-value/FIRST-TIMERS.svg",
       },
       description:
-        "New to escape rooms? The Unlimited Play Pass gives you the freedom to explore different themes, discover your favorite game style, and enjoy the excitement at your own pace.",
+        "New to escape rooms? Our rewards program is the perfect, low-pressure way to discover your favorite game style. Explore different rooms at your own pace and enjoy the satisfaction of unlocking a free visit just for trying us out.",
+    },
+    {
+      id: 2,
+      title: "FAMILIES AND FRIENDS",
+      icon: {
+        hasImage: true,
+        alt: "all in adventures reward value first timer",
+        url: "/assets/all-in-rewards/create-value/FAMILIES-AND-FRIENDS.svg",
+      },
+      description:
+        'Bring the whole group together! Enjoy exciting, screen-free fun that everyone can participate in. ALL IN Rewards makes family outings more affordable, ensuring that every shared laugh and "aha!" moment counts toward a free experience for the group.',
     },
     {
       id: 3,
       title: "TEENAGERS / YOUNG ADULTS",
       icon: {
         hasImage: true,
-        alt: "Allinadventures unlimited play pass kids young adult",
-        url: "/assets/unlimited-escape-room/icon/kids-young-adult.svg",
+        alt: "all in adventures reward value first timer",
+        url: "/assets/all-in-rewards/create-value/TEENAGERS-YOUNG-ADULTS.svg",
       },
       description:
-        "Keep the kids entertained and the teens excited! From birthday parties to weekend fun, the Unlimited Play Pass is the ultimate ticket to endless adventures they'll love.",
+        "Keep the fun going without breaking the bank! From weekend hangouts to birthday celebrations, ALL IN Rewards is the ultimate way for teens to enjoy more adventures. It's a simple, budget-friendly way to make every visit with friends even more rewarding.",
     },
     {
       id: 4,
-      title: "FAMILY AND FRIENDS",
-      icon: {
-        hasImage: true,
-        alt: "Allinadventures unlimited play pass familly and friends ",
-        url: "/assets/unlimited-escape-room/icon/familly-and-friends.svg",
-      },
-      description:
-        "Bring your family and friends together for exciting, screen-free fun! With unlimited games, every visit is an opportunity for shared laughs, teamwork, and adventure.",
-    },
-    {
-      id: 5,
       title: "CORPORATE TEAM BUILDING",
       icon: {
         hasImage: true,
-        alt: "Allinadventures unlimited play pass corporate team building",
-        url: "/assets/unlimited-escape-room/icon/corporate-team-building.svg",
+        alt: "all in adventures reward value first timer",
+        url: "/assets/all-in-rewards/create-value/CORPORATE-TEAM-BUILDING.svg",
       },
       description:
-        "Boost teamwork, communication, and morale with unlimited access to our escape rooms. Perfect for team-building events that are fun, engaging, and cost-effective.",
+        "Boost morale and communication! Reward your team with a program that makes team-building cost-effective and engaging. ALL IN Rewards allows your office to return for multiple challenges, fostering better teamwork and stronger bonds with every visit.",
     },
     {
-      id: 6,
+      id: 5,
       title: "COUPLES DATE NIGHT",
       icon: {
         hasImage: true,
-        alt: "Allinadventures unlimited play pass couple date night",
-        url: "/assets/unlimited-escape-room/icon/couple-date-night.svg",
+        alt: "all in adventures reward value first timer",
+        url: "/assets/all-in-rewards/create-value/COUPLES-DATE-NIGHT.svg",
       },
       description:
-        "Spice up your date nights with thrilling challenges and collaborative fun. Unlimited escape rooms give you endless opportunities to bond, laugh, and create unforgettable memories.",
+        'Spice up your date nights! Trade the "dinner and a movie" routine for collaborative fun and unique challenges. ALL IN Rewards gives you more opportunities to bond, laugh, and unlock a free date night adventure together.',
+    },
+    {
+      id: 6,
+      title: "ESCAPE ROOM ENTHUSIASTS",
+      icon: {
+        hasImage: true,
+        alt: "all in adventures reward value first timer",
+        url: "/assets/all-in-rewards/create-value/ESCAPE-ROOM-ENTHUSIASTS.svg",
+      },
+      description:
+        "Love solving puzzles and cracking codes? With ALL IN Rewards, your passion for puzzles pays off. It's the best way to master all of our themes and sharpen your skills while working toward your next free adventure!",
     },
   ];
   const gridBorderClassesList = [
@@ -114,16 +113,16 @@ const CreatUnlimitedDeal = (props) => {
     return gridBorderClassesList[index].paddingClasses;
   };
   return (
-    <div className="mer-why-c bg-black pb-16 pt-0 md:py-20 lg:py-28 px-4 lg:px-12  z-20 ">
-  
+    <div className="mer-why-c bg-black py-16  md:py-20 lg:py-28 px-4 lg:px-12  z-20 ">
       <div className="max-w-7xl mx-auto relative z-30">
         <div className="section-title mb-6 rm:mb-8 md:mb-10 lg:mb-12  md:max-w-[720px] lg:max-w-[840px] mx-auto">
-          <MobileTitleSeparatorCenter
-            title={"GREAT DEAL FOR ADVENTURE LOVERS"}
-          />
-          <div className=" text-[#e2e2e2]  mt-3 md:mt-4 lg:mt-6  text-center  md:text-lg lg:text-xl">
-            The Unlimited Escape Room Play Pass offers unforgettable fun and
-            adventure for everyone of all ages and skill levels
+          <h2 className="dark-gold pb-2 pt-0 md:py-2 text-2xl md:text-[40px] lg:text-[44px] 2xl:text-[48px] font-os font-bold uppercase text-center">
+            GREAT VALUE FOR ALL PLAYERS
+          </h2>
+          <div className=" text-[#e2e2e2]  mt-2 md:mt-3 lg:mt-4  text-center  md:text-lg lg:text-xl">
+            Just enter your member ID during checkout, play, and get closer to
+            your next free experience. It's our way of saying thanks for being
+            part of the adventure. Join today and start unlocking your rewards!
           </div>
         </div>
         {tempData.length > 0 ? (
@@ -142,11 +141,11 @@ const CreatUnlimitedDeal = (props) => {
                   >
                     <div className="mer-wc-img img-1 flex flex-row items-center space-x-2 sm:flex-col  sm:items-start sm:space-x-0  ">
                       <img
-                        className="mer-wc-icon w-[32px] md:w-[36px] 3xl:w-[40px]"
+                        className="mer-wc-icon max-h-[45px]"
                         alt={
                           item.icon.alt
                             ? item.icon.alt
-                            : "Allinadventures offer icon" + index
+                            : "Allinadventures reward value icon" + index
                         }
                         src={
                           item.icon.hasImage
@@ -154,13 +153,13 @@ const CreatUnlimitedDeal = (props) => {
                             : "/assets/mobile-escape-room/icon/convenient-mobile-experience.svg"
                         }
                       ></img>
-                      <h3 className=" sm:mt-4 md:mt-5 3xl:mt-6 font-bold text-[17px] rm:text-[18px] md:text-[20px] xl:text-[22px] leading-[1.3] text-[#CA9342]">
+                      <h3 className=" sm:mt-4 md:mt-5 3xl:mt-6 font-bold text-[17px] rm:text-[18px] md:text-[20px] xl:text-[22px] leading-[1.3] text-[#F0E8D5]">
                         {item.title}
                       </h3>
                     </div>
                     <div className="mar-wv-text ">
                       <div
-                        className="text-[#afafaf] mt-3 3xl:mt-4  text-sm 3xl:text-base"
+                        className="text-[#ADADAD] mt-3 3xl:mt-4  text-sm 3xl:text-base"
                         dangerouslySetInnerHTML={{ __html: item.description }}
                       ></div>
                     </div>
@@ -175,15 +174,11 @@ const CreatUnlimitedDeal = (props) => {
 
         {/*=======================Section btn============== */}
         <div className="mbl-h-btn  mt-10 md:mt-14 2xl:mt-16 flex justify-center">
-          <UerBtn
-            setShowUerBookingList={
-              props.setShowUerBookingList ? props.setShowUerBookingList : false
-            }
-          />
+            <div className="w-[372px]">
+          <UnlockRewardBtn />
+          </div>
         </div>
       </div>
     </div>
   );
-};
-
-export default CreatUnlimitedDeal;
+}

@@ -54,6 +54,17 @@ const mobileMysteryBooking = (bookingData) => {
     },
   });
 };
+const allInRewardsBooking = (bookingData) => {
+  FH.open({
+    shortname: bookingData.shortName,
+    fallback: "simple",
+    fullItems: "yes",
+    flow: "no",
+    view: {
+      item: bookingData.itemNo,
+    },
+  });
+};
 // ==================================================================================================def function----
 export default function ModalMenu() {
   const {
@@ -65,7 +76,7 @@ export default function ModalMenu() {
     setModalGame,
     closeModalMenu,
   } = useSiteData();
-  //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery | mobile-mystery-quote |unlimited-play-pass | bundle
+  //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery | mobile-mystery-quote |unlimited-play-pass | bundle |all-in-rewards
   if (!showModalMenu) return null;
   const closeLocModalmenu = () => {
     const body = document.getElementsByTagName("body")[0];
@@ -108,6 +119,12 @@ export default function ModalMenu() {
       getMysteryQuote({
         shortName: bookingInfo.shortName,
         itemNo: locationBookingInfo[locationSlug].eventFormItemNo,
+      });
+    }
+    if (activeModalMenuType == "all-in-rewards") {
+      allInRewardsBooking({
+        shortName: bookingInfo.shortName,
+        itemNo: locationBookingInfo[locationSlug].rewardItemNo,
       });
     }
   };
@@ -154,7 +171,6 @@ export default function ModalMenu() {
               {activeModalMenuType == "mobile-mystery" && (
                 <>Book your Mobile Mystery experience</>
               )}
-           
 
               {activeModalMenuType == "mobile-mystery-quote" && (
                 <>Request a quote for Mobile Mystery experience</>
@@ -162,8 +178,8 @@ export default function ModalMenu() {
               {activeModalMenuType == "bundle" && (
                 <>Unlock available bundles at your location</>
               )}
-              {activeModalMenuType == "unlimited-pass" && (
-                <span>Buy unlimited play pass valid at your location</span>
+              {activeModalMenuType == "all-in-rewards" && (
+                <span>Unlock Free Rooms with ALL IN REWARDS!</span>
               )}
             </p>
           </div>
@@ -203,7 +219,7 @@ export default function ModalMenu() {
                                 e.preventDefault();
                                 trigerBooking(
                                   item.bookingInfo,
-                                  item.locationSlug
+                                  item.locationSlug,
                                 );
                               }}
                               className="loc-link block text-[#7b7b7b] hover:text-[#D8C695]  text-left"
