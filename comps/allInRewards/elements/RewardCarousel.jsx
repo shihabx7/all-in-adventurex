@@ -7,37 +7,37 @@ export default function RewardCarousel(props) {
       breakpoint: { max: 4300, min: 2081 },
       items: 5,
       slidesToSlide: 1,
-      partialVisibilityGutter: 0,
+      partialVisibilityGutter: 40,
     },
     desktoplg: {
       breakpoint: { max: 2080, min: 1640 },
       items: 5,
       slidesToSlide: 1,
-      partialVisibilityGutter: 0,
+      partialVisibilityGutter: 30,
     },
     desktopmd: {
       breakpoint: { max: 1640, min: 1440 },
       items: 4,
       slidesToSlide: 1,
-      partialVisibilityGutter: 0,
+      partialVisibilityGutter: 25,
     },
     desktop: {
       breakpoint: { max: 1440, min: 1024 },
       items: 3,
       slidesToSlide: 1,
-      partialVisibilityGutter: 0,
+      partialVisibilityGutter: 30,
     },
     tablet: {
       breakpoint: { max: 1000, min: 640 },
       items: 2,
       slidesToSlide: 1,
-      partialVisibilityGutter: 0,
+      partialVisibilityGutter: 30,
     },
     mobile: {
       breakpoint: { max: 639, min: 0 },
       items: 1,
       slidesToSlide: 1,
-      partialVisibilityGutter: 0,
+      partialVisibilityGutter: 40,
     },
   };
   /*
@@ -67,8 +67,8 @@ export default function RewardCarousel(props) {
         */
 
   return (
-    <div className="smoot-carousel-section bg-black">
-      <div className="reward-smooth-carousel bg-[rgba(38, 29, 10, 0.4)] border-y-[.5px] border-[#917c42] py-5 md:py-6 lg:py-8">
+    <div className="smoot-carousel-section bg-[#090909]">
+      <div className="reward-smooth-carousel bg-[#261d0a]/40 border-y-[.5px] border-[#917c42] py-5 md:py-6 lg:py-8">
         <Carousel
           ssr={true}
           responsive={responsive}
@@ -81,69 +81,152 @@ export default function RewardCarousel(props) {
           transitionDuration={5000}
           arrows={false} // Usually hidden for smooth scrolling carousels
           pauseOnHover={true}
-          partialVisible={true} // Optional: stops the scroll when user hovers
+          partialVisible={true}
+          itemClass="variable-width-item" // Optional: stops the scroll when user hovers
         >
-          <div className="flex carousel-item  justify-between space-x-2 items-center">
-            <p className="text-sm md:text-base lg:text-lg text-[#8A7133] pl-8">
-              JOIN FREE TODAY
-            </p>
-            <div className="pr-8">
-              <img
-                src={"/assets/all-in-rewards/all-in-adventures-icon.svg"}
-                alt="All-in Adventures Icon"
-              ></img>
-            </div>
-          </div>
-          <div className="flex carousel-item  justify-between space-x-2 items-center">
-            <p className="text-sm md:text-base lg:text-lg text-[#8A7133] pl-8">
-              FREE ROOM AFTER 2 VISITS
-            </p>
-            <div className="pr-8">
-              <img
-                src={"/assets/all-in-rewards/all-in-adventures-icon.svg"}
-                alt="All-in Adventures Icon"
-              ></img>
-            </div>
-          </div>
-          <div className="flex carousel-item  justify-between space-x-2 items-center">
-            <p className="text-sm md:text-base lg:text-lg text-[#8A7133] pl-8">
+          {/*========================================================================3 set 1*/}
+          <div className="relative px-12 md:px-14 lg:px-16">
+            <p className="text-sm text-center md:text-base lg:text-lg text-[#8A7133]">
               EXCLUSIVE MEMBER OFFERS
             </p>
-            <div className="pr-8">
+            <div className="absolute w-[12px] h-[12px] right-[-6px] top-0 bottom-0 my-auto">
               <img
+                className="w-[12px] h-[12px]"
                 src={"/assets/all-in-rewards/all-in-adventures-icon.svg"}
                 alt="All-in Adventures Icon"
               ></img>
             </div>
           </div>
-          <div className="flex carousel-item  justify-between space-x-2 items-center">
-            <p className="text-sm md:text-base lg:text-lg text-[#8A7133] pl-8">
+          <div className="relative px-12 md:px-14 lg:px-16">
+            <p className="text-sm text-center md:text-base lg:text-lg text-[#8A7133]">
               JOIN FREE TODAY
             </p>
-            <div className="pr-8">
+            <div className="absolute w-[12px] h-[12px] right-[-6px] top-0 bottom-0 my-auto">
               <img
+                className="w-[12px] h-[12px]"
                 src={"/assets/all-in-rewards/all-in-adventures-icon.svg"}
                 alt="All-in Adventures Icon"
               ></img>
             </div>
           </div>
-          <div className="flex carousel-item  justify-between space-x-2 items-center">
-            <p className="text-sm md:text-base lg:text-lg text-[#8A7133] pl-8">
-              FREE ROOM AFTER 2 VISITS
+          <div className="relative px-12 md:px-14 lg:px-16">
+            <p className="text-sm text-center md:text-base lg:text-lg text-[#8A7133]">
+              5 Punches = Free Admission
             </p>
-            <div className="pr-8">
+            <div className="absolute w-[12px] h-[12px] right-[-6px] top-0 bottom-0 my-auto">
               <img
+                className="w-[12px] h-[12px]"
                 src={"/assets/all-in-rewards/all-in-adventures-icon.svg"}
                 alt="All-in Adventures Icon"
               ></img>
             </div>
           </div>
-          <div className="flex carousel-item  justify-between space-x-2 items-center">
-            <p className="text-sm md:text-base lg:text-lg text-[#8A7133] pl-8">
+          {/*========================================================================3 set 2*/}
+          <div className="relative px-12 md:px-14 lg:px-16">
+            <p className="text-sm text-center md:text-base lg:text-lg text-[#8A7133]">
               EXCLUSIVE MEMBER OFFERS
             </p>
-            <div className="pr-8">
+            <div className="absolute w-[12px] h-[12px] right-[-5px] top-0 bottom-0 my-auto">
               <img
+                className="w-[12px] h-[12px]"
+                src={"/assets/all-in-rewards/all-in-adventures-icon.svg"}
+                alt="All-in Adventures Icon"
+              ></img>
+            </div>
+          </div>
+          <div className="relative px-12 md:px-14 lg:px-16">
+            <p className="text-sm text-center md:text-base lg:text-lg text-[#8A7133]">
+              JOIN FREE TODAY
+            </p>
+            <div className="absolute w-[12px] h-[12px] right-[-5px] top-0 bottom-0 my-auto">
+              <img
+                className="w-[12px] h-[12px]"
+                src={"/assets/all-in-rewards/all-in-adventures-icon.svg"}
+                alt="All-in Adventures Icon"
+              ></img>
+            </div>
+          </div>
+          <div className="relative px-12 md:px-14 lg:px-16">
+            <p className="text-sm text-center md:text-base lg:text-lg text-[#8A7133]">
+              5 Punches = Free Admission
+            </p>
+            <div className="absolute w-[12px] h-[12px] right-[-5px] top-0 bottom-0 my-auto">
+              <img
+                className="w-[12px] h-[12px]"
+                src={"/assets/all-in-rewards/all-in-adventures-icon.svg"}
+                alt="All-in Adventures Icon"
+              ></img>
+            </div>
+          </div>
+          {/*========================================================================3 set 3*/}
+          <div className="relative px-12 md:px-14 lg:px-16">
+            <p className="text-sm text-center md:text-base lg:text-lg text-[#8A7133]">
+              EXCLUSIVE MEMBER OFFERS
+            </p>
+            <div className="absolute w-[12px] h-[12px] right-[-5px] top-0 bottom-0 my-auto">
+              <img
+                className="w-[12px] h-[12px]"
+                src={"/assets/all-in-rewards/all-in-adventures-icon.svg"}
+                alt="All-in Adventures Icon"
+              ></img>
+            </div>
+          </div>
+          <div className="relative px-12 md:px-14 lg:px-16">
+            <p className="text-sm text-center md:text-base lg:text-lg text-[#8A7133]">
+              JOIN FREE TODAY
+            </p>
+            <div className="absolute w-[12px] h-[12px] right-[-5px] top-0 bottom-0 my-auto">
+              <img
+                className="w-[12px] h-[12px]"
+                src={"/assets/all-in-rewards/all-in-adventures-icon.svg"}
+                alt="All-in Adventures Icon"
+              ></img>
+            </div>
+          </div>
+          <div className="relative px-12 md:px-14 lg:px-16">
+            <p className="text-sm text-center md:text-base lg:text-lg text-[#8A7133]">
+              5 Punches = Free Admission
+            </p>
+            <div className="absolute w-[12px] h-[12px] right-[-5px] top-0 bottom-0 my-auto">
+              <img
+                className="w-[12px] h-[12px]"
+                src={"/assets/all-in-rewards/all-in-adventures-icon.svg"}
+                alt="All-in Adventures Icon"
+              ></img>
+            </div>
+          </div>
+          {/*========================================================================3 set 4*/}
+          <div className="relative px-12 md:px-14 lg:px-16">
+            <p className="text-sm text-center md:text-base lg:text-lg text-[#8A7133]">
+              EXCLUSIVE MEMBER OFFERS
+            </p>
+            <div className="absolute w-[12px] h-[12px] right-[-5px] top-0 bottom-0 my-auto">
+              <img
+                className="w-[12px] h-[12px]"
+                src={"/assets/all-in-rewards/all-in-adventures-icon.svg"}
+                alt="All-in Adventures Icon"
+              ></img>
+            </div>
+          </div>
+          <div className="relative px-12 md:px-14 lg:px-16">
+            <p className="text-sm text-center md:text-base lg:text-lg text-[#8A7133]">
+              JOIN FREE TODAY
+            </p>
+            <div className="absolute w-[12px] h-[12px] right-[-5px] top-0 bottom-0 my-auto">
+              <img
+                className="w-[12px] h-[12px]"
+                src={"/assets/all-in-rewards/all-in-adventures-icon.svg"}
+                alt="All-in Adventures Icon"
+              ></img>
+            </div>
+          </div>
+          <div className="relative px-12 md:px-14 lg:px-16">
+            <p className="text-sm text-center md:text-base lg:text-lg text-[#8A7133]">
+              5 Punches = Free Admission
+            </p>
+            <div className="absolute w-[12px] h-[12px] right-[-5px] top-0 bottom-0 my-auto">
+              <img
+                className="w-[12px] h-[12px]"
                 src={"/assets/all-in-rewards/all-in-adventures-icon.svg"}
                 alt="All-in Adventures Icon"
               ></img>

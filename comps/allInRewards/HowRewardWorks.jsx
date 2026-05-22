@@ -61,16 +61,16 @@ export default function HowRewardWorks(props) {
                 <div className="pt-8">
                   <img
                     className="max-w-[80px]"
-                    src="/assets/all-in-rewards/how-it-works/enjoy-offer-icon.png"
-                    alt="Enjoy offer icon"
+                    src="/assets/all-in-rewards/how-it-works/start-earning-icon.png"
+                    alt="Sign Up free icon"
                   ></img>
                 </div>
                 <h3 className="font-os text-2xl text-[#F0E8D5] mt-6">
-                  ENJOY EXCLUSIVE OFFERS
+                  START EARNING
                 </h3>
                 <p className="md:text-lg lg:text-xl text-[#ADADAD] mt-4">
-                  Receive exclusive member-only savings, seasonal promotions,
-                  and bonus offers delivered year-round!
+                  It's simple. After every 2 paid escape room visits, your next
+                  adventure experience is completely free!
                 </p>
               </div>
             </div>
@@ -85,6 +85,7 @@ export default function HowRewardWorks(props) {
               </div>
             </div>
             {/*=====================================================================grid item 5 */}
+
             <div className="grid-item bg-[#211906] p-7 relative">
               <div className="item-no absolute top-4 right-4 w-[74px]">
                 <span className="font-os font-semibold text-[4rem] text-[#F0E8D51A]/10">
@@ -95,16 +96,16 @@ export default function HowRewardWorks(props) {
                 <div className="pt-8">
                   <img
                     className="max-w-[80px]"
-                    src="/assets/all-in-rewards/how-it-works/start-earning-icon.png"
-                    alt="Sign Up free icon"
+                    src="/assets/all-in-rewards/how-it-works/enjoy-offer-icon.png"
+                    alt="Enjoy offer icon"
                   ></img>
                 </div>
                 <h3 className="font-os text-2xl text-[#F0E8D5] mt-6">
-                  START EARNING
+                  ENJOY EXCLUSIVE OFFERS
                 </h3>
                 <p className="md:text-lg lg:text-xl text-[#ADADAD] mt-4">
-                  It's simple. After every 2 paid escape room visits, your next
-                  adventure experience is completely free!
+                  Receive exclusive member-only savings, seasonal promotions,
+                  and bonus offers delivered year-round!
                 </p>
               </div>
             </div>

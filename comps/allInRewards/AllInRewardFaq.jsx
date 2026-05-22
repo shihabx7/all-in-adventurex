@@ -11,7 +11,7 @@ export default function AllInRewardFaq(props) {
       id: 2,
       faqQuestion: 'How do I earn "Punches" on my digital card?',
       faqAnswer:
-        "It's simple: every time you book a full-price escape room adventure, you earn one punch. Once you hit two punches, your third game is 100% free for you!",
+        "It's simple: every time you book a full-price admission, you earn one punch. Once you hit five punches, your next admission is 100% free for you!",
     },
     {
       id: 3,
@@ -44,7 +44,7 @@ export default function AllInRewardFaq(props) {
       id: 7,
       faqQuestion: "Does every game count toward my punches?",
       faqAnswer:
-        'To keep the rewards flowing, only full-price bookings count toward your "Play 2, Get 1 Free" cycle. Games booked using a discount, seasonal offer, or a free reward code do not earn additional punches.',
+        'To keep the rewards flowing, only full-price admissions count toward your Free Admission. Games booked using a deep discount, seasonal offer, or a free reward code do not earn additional punches.',
     },
 
     {

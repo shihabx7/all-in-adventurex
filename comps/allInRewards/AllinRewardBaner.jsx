@@ -12,13 +12,7 @@ export default function AllinRewardBaner() {
             ></img>
           </div>
           <div className="section-content w-full lg:w-[48%]">
-            <div className="es-equation  ">
-              <img
-                className="max-w-[220px] md:max-w-[256px]"
-                src={"/assets/all-in-rewards/rewards-equation.svg"}
-                alt="Rewards Equation"
-              />
-            </div>
+           
             <div>
               <h2 className=" text-2xl rm:text-[1.75rem]  md:text-[2.5rem] lg:text-[2.875rem] leading-[1.2] font-os font-bold text-[#E0BF62] uppercase mt-6">
                 <span className="text-[#F0E8D5] block">

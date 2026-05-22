@@ -203,7 +203,12 @@ a {
 .dark-gold {
   color: #ca9342;
 }
-
+/***=================smpooth carousel=================*/
+.react-multi-carousel-track .variable-width-item {
+  width: max-content !important; 
+  display: flex;
+  justify-content: center;
+}
 /*=============mobile escape room========*/
 .mbl-group-text p {
   margin-bottom: 22px;
