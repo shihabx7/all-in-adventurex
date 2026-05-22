@@ -15,8 +15,7 @@ export default function RewardsHero(props) {
             </h1>
             <p className=" text-white md:texty-lg xl:text-xl max-w-[830px] mx-auto">
               With All In Adventures' ALL IN Rewards, every escape gets you
-              closer to a free room. After you enjoy any 2 paid Escape Room
-              adventures, your 3rd one is on us! adventure!
+              closer to a free room. Earn punches towards free admissions plus additional exclusive offers all year long!
             </p>
           </div>
           <div className="hero-btn md:w-[420px] mx-auto ">

@@ -69,8 +69,7 @@ export default function HowRewardWorks(props) {
                   START EARNING
                 </h3>
                 <p className="md:text-lg lg:text-xl text-[#ADADAD] mt-4">
-                  It's simple. After every 2 paid escape room visits, your next
-                  adventure experience is completely free!
+                   It's that easy. For every 5 punches, your next admission is on us!
                 </p>
               </div>
             </div>

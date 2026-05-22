@@ -42,10 +42,7 @@ export default function WhatIsRewards(props) {
                 Unlock your free visit!
               </h3>
               <p className="text-[#ADADAD] mt-2 md:mt-3 lg:mt-4">
-                Our program is as simple as it gets: After you enjoy any two
-                paid escape room adventures, your third one is on us. No points
-                to track and no complicated rules—just play two, and your next
-                experience is completely free.
+            Our program is simple: Each player in your group counts as 1 punch. After just 5 punches, your next one is on us! No points to track and no complicated rules—just 5 punches, and your next admission is completely free.
               </p>
             </div>
             <div className="wr-box p-4 md:p-5 lg:p-7 border-l-[3px] border-[#8A7133] bg-gradient-to-r from-[#19160E] via-[#19160E]/10 to-transparent">
