@@ -1,16 +1,11 @@
-import TitleSeparator from "../util/TitleSeparator";
-
 import { FaAngleRight } from "react-icons/fa";
 import EventCarousel from "./EventCarousel";
-import SectionBorderBottom from "../util/SectionBorderBottom";
-import SectionBorderTop from "../util/SectionBorderTop";
 
 const EventSlider = (props) => {
   return (
-    <div className="planningevent bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] relative py-16 md:py-20 lg:py-28 ">
+    <div className="event-parties-carousel-section bg-[#FFF3D3] bg-[url('/assets/mobile-escape-room/brown-paper-bg.jpg')] bg-[240px_240px] md:bg-[300px_300px] lg:bg-[400px_400px] pt-16 md:pt-20 lg:pt-28  relative  ">
       {/*======================= boder img============== */}
-      <SectionBorderTop />
-      <SectionBorderBottom />
+
       {/*======================= boder img end============== */}
       {/** =======ornamental icon===== */}
       <div className="pl-or pl-or-1 absolute top-0 left-0">
@@ -19,30 +14,19 @@ const EventSlider = (props) => {
           src="/assets/pl-bgi-1.png"
         ></img>
       </div>
-      <div className="pl-or pl-or-2 absolute bottom-0 left-0">
-        <img
-          alt="Gifts and candies symbolizing the fun and excitement of escape room parties and events at All In Adventures."
-          src="/assets/pl-bgi-2.png"
-        ></img>
-      </div>
       <div className="pl-or pl-or-3 absolute top-0 right-0">
         <img
           alt="Appealing decorations with colourful confetti, highlighting the fun of Escape Rooms at All In Adventures."
           src="/assets/pl-bgi-3.png"
         ></img>
       </div>
-      <div className="pl-or pl-or-4 absolute bottom-0 right-0">
-        <img
-          alt="A huge birthday cake, two wine glasses, and a bottle of wine, featuring the fun and excitement of escape room birthday parties at All In Adventures."
-          src="/assets/pl-bgi-4.png"
-        ></img>
-      </div>
-
       {/** =======ornamental icon end===== */}
-      <div className="max-w-7xl mx-auto  px-4 relative z-20 ">
-        <TitleSeparator title={props.eventList.title} />
+      <div className="max-w-7xl mx-auto   px-4 relative z-20 ">
+        <h2 className="dark-gold py-[2px] md:py-1 2xl:py-2 text-2xl md:text-[40px] lg:text-[44px] 2xl:text-[48px] leading-[1.2] font-os font-bold uppercase text-center">
+          EVENTS AND PARTIES
+        </h2>
 
-        <div className="max-w-[840px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
+        <div className="max-w-[960px] md:text-lg mx-auto text-center mt-1 md:mt-2 mb-4 md:mb-8 lg:mb-9">
           <div
             className="text-gray-700 md:px-8"
             dangerouslySetInnerHTML={{ __html: props.eventList.subTitle }}
@@ -60,7 +44,7 @@ const EventSlider = (props) => {
           <EventCarousel eventList={props.eventList.eventList} />
         )}
       </div>
-      <div className="view-all flex justify-center pt-8 md:pt-12 lg:pt-16">
+      <div className="view-all flex justify-center pb-2 pt-8 md:pt-12 lg:pt-16">
         {props.locationSlug ? (
           <a
             href={"/" + props.locationSlug + "/events"}

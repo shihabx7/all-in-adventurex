@@ -5,31 +5,20 @@ import { FaAngleRight } from "react-icons/fa";
 import SectionBorderTop from "../util/SectionBorderTop";
 const TestimonialLocSlider = (props) => {
   return (
-    <div className="homereview bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-center bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px] relative py-16 md:py-20 lg:py-28 overflow-hidden">
+    <div className="old-loc-homereview bg-[#FFF3D3] bg-[url('/assets/mobile-escape-room/brown-paper-bg.jpg')] bg-[240px_240px] md:bg-[300px_300px] lg:bg-[400px_400px] pt-4 md:pt-6 lg:pt-8  relative overflow-hidden">
       {/*======================= boder img============== */}
-      <SectionBorderTop />
 
       {/*======================= boder img end============== */}
       {/** =======ornamental icon===== */}
 
-      <div className="pl-or pl-or-1 absolute top-0 left-0">
-        <img
-          alt="Balloons, stars and a flying rocket representing the fun and excitement of Escape Rooms at All In Adventures."
-          src="/assets/pl-bgi-1.png"
-        ></img>
-      </div>
-
-      <div className="htb-bg-icon htb-bg-2 absolute">
-        <img
-          alt="Decorative compass rose design with ornate details, highlighting directions relevant to All In Adventures escape rooms."
-          src="/assets/Compas-brown.png"
-        ></img>
-      </div>
+     
 
       {/** =======ornamental icon end===== */}
       <div className="max-w-7xl mx-auto  px-4 relative z-20 ">
-        <TitleSeparator title={props.testimonialList.title} />
-        <div className="max-w-[840px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-4 md:mb-16">
+        <h2 className="dark-gold py-[2px] md:py-1 2xl:py-2 text-2xl md:text-[40px] lg:text-[44px] 2xl:text-[48px] leading-[1.2] font-os font-bold uppercase text-center">
+          CUSTOMERS LOVE ALL IN ADVENTURES
+        </h2>
+        <div className="max-w-[900px] md:text-lg mx-auto text-center mt-1 md:mt-2 mb-4 md:mb-8 lg:mb-9">
           <div
             className="text-gray-700 md:px-8"
             dangerouslySetInnerHTML={{ __html: props.testimonialList.subTitle }}

@@ -26,30 +26,29 @@ const LocationDetails = (props) => {
   });
 
   return (
-    <div className="location-details relative bg-center bg-[url('/assets/svg/pattern/Light-Brown-Color-BG-Pattern.svg')] bg-repeat bg-[length:360px_360px] md:bg-[length:580px_580px] lg:bg-[length:640px_640px]">
+    <div className="location-details bg-[#FFF3D3] bg-[url('/assets/mobile-escape-room/brown-paper-bg.jpg')] bg-[240px_240px] md:bg-[300px_300px] lg:bg-[400px_400px] pt-4 md:pt-6 lg:pt-8 pb-16 md:pb-20 lg:pb-28  relative">
       {/*======================= boder img============== */}
-
-      <div className="sec-divider-bottom w-full absolute bottom-0 left-0">
+      <div className="htb-bg-icon htb-bg-3 absolute">
         <img
-          className="w-full hidden md:block"
-          src="/assets/svg/pattern/Light-Brown-Color-BG-Bottom.svg"
-        ></img>
-        <img
-          className="w-full  md:hidden"
-          src="/assets/svg/pattern/light-brown-color-bg-mobile.svg"
+          alt="A brown-coloured compass representing the theme of Escape Rooms at All In Adventures."
+          src="/assets/Navigation.png"
         ></img>
       </div>
+
+      <div className="htb-bg-icon htb-bg-4 absolute">
+        <img
+          alt="A skull and crossbones symbolizing the excitement of an escape room game at All In Adventures."
+          src="/assets/Skull.png"
+        ></img>
+      </div>
+
       {/*======================= boder img end============== */}
-      <div className="max-w-[1000px] mx-auto pb-16 md:pb-24 lg:pb-28 relative z-30 px-4">
+      <div className="max-w-[1000px] mx-auto  relative z-30 px-4">
         <div className="section-title max-w-[860px] mx-auto">
-          <TitleSeparator
-            title={
-              "ALL IN ADVENTURES " +
-              props.locationInfo.cityName +
-              " LOCATION DETAILS"
-            }
-          />
-          <div className="max-w-[860px] md:text-lg mx-auto text-center mt-4 md:mt-8 mb-8 md:mb-16">
+          <h2 className="dark-gold py-[2px] md:py-1 2xl:py-2 text-2xl md:text-[40px] lg:text-[44px] 2xl:text-[48px] leading-[1.2] font-os font-bold uppercase text-center">
+          CUSTOMERS LOVE ALL IN ADVENTURES
+        </h2>
+          <div className="max-w-[900px] md:text-lg mx-auto text-center mt-1 md:mt-2 mb-4 md:mb-8 lg:mb-9">
             <p className="text-gray-[600] md:px-8">
               We are conveniently located at {props.locationInfo.mall} in{" "}
               {props.locationInfo.cityName}{" "}
