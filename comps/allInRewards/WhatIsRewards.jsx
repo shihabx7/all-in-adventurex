@@ -39,7 +39,7 @@ export default function WhatIsRewards(props) {
             </div>
             <div className="wr-box p-4 md:p-5 lg:p-7 border-l-[3px] border-[#8A7133] bg-gradient-to-r from-[#19160E] via-[#19160E]/10 to-transparent">
               <h3 className="font-os text-[#F0E8D5] text-xl md:text-2xl font-semibold">
-                Unlock your free visit!
+                Unlock your free visit
               </h3>
               <p className="text-[#ADADAD] mt-2 md:mt-3 lg:mt-4">
                 Our program is simple: Each player in your group counts as 1
@@ -50,7 +50,7 @@ export default function WhatIsRewards(props) {
             </div>
             <div className="wr-box p-4 md:p-5 lg:p-7 border-l-[3px] border-[#8A7133] bg-gradient-to-r from-[#19160E] via-[#19160E]/10 to-transparent">
               <h3 className="font-os text-[#F0E8D5] text-xl md:text-2xl font-semibold">
-                Experience the perks all year long!
+                Experience the perks all year long
               </h3>
               <p className="text-[#ADADAD] mt-2 md:mt-3 lg:mt-4">
                 Beyond your free rooms, members receive exclusive bonus offers
