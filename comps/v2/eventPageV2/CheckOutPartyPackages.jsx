@@ -1,7 +1,28 @@
 import BlueDarkDecorBg from "./elements/BlueDarkDecorBg";
-import PartyPackageBookingBtn from "./elements/partyPackageBookingBtn";
+//import PartyPackageBookingBtn from "./elements/partyPackageBookingBtn";
 import PartyFormBookingBtn from "./elements/PartyFormBookingBtn";
+import { useSiteData } from "../../../contexts/SiteDataContext";
 export default function CheckOutPartyPackages(props) {
+  const { openModalMenu, setModalPartyName, setModalMenuType } = useSiteData();
+  //activeModalMenuType= location-links | game-list | game | partyPackage-list | partyPackage-form | BookPatryPackage | gift-card | mobile-mystery |unlimited-play-pass | bundle
+  const showPartyBookingModal = (partyName) => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.remove("overflow-hidden");
+    let activePartyName = partyName.trim().toLowerCase();
+    setModalPartyName(activePartyName);
+    setModalMenuType("BookPatryPackage");
+    openModalMenu();
+  };
+
+  const partyPackageBooking = (bookingData) => {
+    FH.open({
+      shortname: bookingData.shortName,
+      fallback: "simple",
+      fullItems: "yes",
+      flow: bookingData.flow,
+      view: { item: bookingData.itemNo },
+    });
+  };
   return (
     <div
       id="book-party-pacakages"
@@ -89,15 +110,23 @@ export default function CheckOutPartyPackages(props) {
                       </div>
                     </div>
                     <div className="book-btn mt-5 xl:mt-6">
-                      <PartyPackageBookingBtn
-                        partyName={item.partyName}
-                        bookingInfo={
-                          item.bookingData ? item.bookingData : false
-                        }
-                        locationSlug={
-                          props.locationSlug ? props.locationSlug : false
-                        }
-                      />
+                      {item.bookingData ? (
+                        <button
+                          onClick={(e) => partyPackageBooking(item.bookingData)}
+                          className="block w-full py-2 rounded-full uppercase text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[15px] rm:text-base md:text-lg"
+                        >
+                          BOOK THIS PACKAGE
+                        </button>
+                      ) : (
+                        <button
+                          onClick={(e) =>
+                            showPartyBookingModal(props.partyName)
+                          }
+                          className="block w-full py-2 rounded-full uppercase text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[15px] rm:text-base md:text-lg"
+                        >
+                          BOOK THIS PACKAGE
+                        </button>
+                      )}
                     </div>
                   </div>
                 );
@@ -195,17 +224,28 @@ export default function CheckOutPartyPackages(props) {
                 </p>
                 <div className="pn-em flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-2 md:space-x-6 xl:space-x-8 my-5 md:my-8">
                   <a
-                    href={props.locationInfo? "tel"+props.locationInfo.phone:"tel:844-502-5546"}
+                    href={
+                      props.locationInfo
+                        ? "tel" + props.locationInfo.phone
+                        : "tel:844-502-5546"
+                    }
                     className="text-white font-bold md:text-lg hover:text-red-700"
                   >
-                    {props.locationInfo?props.locationInfo.phone:"844-502-5546"}
+                    {props.locationInfo
+                      ? props.locationInfo.phone
+                      : "844-502-5546"}
                   </a>
                   <a
-                    href={props.locationInfo? "mailto"+props.locationInfo.storeEmail:"mailto:sales@allinadventures.com"}
+                    href={
+                      props.locationInfo
+                        ? "mailto" + props.locationInfo.storeEmail
+                        : "mailto:sales@allinadventures.com"
+                    }
                     className="text-white font-bold md:text-lg hover:text-red-700"
                   >
-                    
-                     {props.locationInfo? props.locationInfo.storeEmail:"sales@allinadventures.com"}
+                    {props.locationInfo
+                      ? props.locationInfo.storeEmail
+                      : "sales@allinadventures.com"}
                   </a>
                 </div>
                 <div className="max-w-[330px]">
