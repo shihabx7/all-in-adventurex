@@ -60,7 +60,7 @@ export default function EventPageHero({
                 </div>
                  <div className="scrol-btn  w-full sm:max-w-[254px] ">
                   <a
-                    href={"#book-escape-game"}
+                    href={"#escape-game-booking"}
                     className=" w-full py-3 px-8 rounded-full uppercase text-center flex justify-center items-center space-x-2 text-white font-medium border-2 border-white bg-transparent hover:border-red-700 hover:bg-red-700 text-sm rm:text-base md:text-lg"
                   >
                     <span>BOOK GAME ONLY</span>

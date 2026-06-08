@@ -1,7 +1,7 @@
 import EscapeRoomPosterCarousel from "./elements/EscapeRoomPosterCarousel";
 export default function EventPageEscapeRoomCarousel({ sectionData }) {
   return (
-    <div className="eventpage-escape-room-carousel-section min-h-[50vh] bg-[#FFF9EB] bg-[url('/assets/mobile-escape-room/brown-paper-bg.jpg')] bg-[240px_240px] md:bg-[300px_300px] lg:bg-[400px_400px] relative">
+    <div id={'escape-game-booking'} className="eventpage-escape-room-carousel-section min-h-[50vh] bg-[#FFF9EB] bg-[url('/assets/mobile-escape-room/brown-paper-bg.jpg')] bg-[240px_240px] md:bg-[300px_300px] lg:bg-[400px_400px] relative">
       <div className="section-container zm:max-w-[580px] md:max-w-[780px] lg:max-w-[990px] xl:max-w-[1200px] 2xl:max-w-7xl mx-auto py-16 md:py-20 lg:py-28 px-4">
         <div className="section-head max-w-[960px]">
           <h2 className="dark-gold py-[2px] md:py-1 2xl:py-2 text-2xl md:text-[40px] lg:text-[44px] 2xl:text-[2.5rem] leading-[1.2] font-os font-bold uppercase ">
