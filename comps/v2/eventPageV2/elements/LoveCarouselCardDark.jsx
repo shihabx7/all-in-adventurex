@@ -1,6 +1,6 @@
 export default function LoveCarouselCardDark({ item }) {
   return (
-    <div className="love-carousel-card bg-[#423109] h-full flex flex-col space-y-8 rounded-[16px] p-3 xl:p-5 overflow-hidden rotate-2">
+    <div className="love-carousel-card-dk bg-[#423109] h-full flex flex-col space-y-8 rounded-[16px] p-3 xl:p-5 overflow-hidden rotate-2">
       <div className="rev-txt">
         <img
           className="max-w-[120px]"
