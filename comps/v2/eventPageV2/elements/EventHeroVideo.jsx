@@ -12,7 +12,7 @@ export default function EventHeroVideo({ videoData }) {
     <video
       ref={videoRef}
       className={
-        "no-fullscreen-vid w-full h-full aspect-video object-cover object-center border-[#CB9442] border-[4px] border-t-[2px] border-r-[2px] rounded-[12px]"
+        "no-fullscreen-vid w-full h-full aspect-video object-cover object-center border-[#CB9442] border-2 sm:border-[4px] border-t-[1px] border-r-[1px] sm:border-t-[2px] sm:border-r-[2px] rounded-[10px] md:rounded-[12px]"
       }
       preload="metadata"
       playsInline
