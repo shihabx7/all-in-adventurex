@@ -68,6 +68,8 @@ export default function EventPageFaqs(props) {
   const [showStep, setShowStep] = useState(1);
   const [moreFaqList, setMoreFaqList] = useState([]);
   const [showMore, setShowMore] = useState(false);
+  // control open box
+  const [openId, setOpenId] = useState(0);
 
   const setStep = () => {
     let ret = props.eventFaqList.length / showLimit;
@@ -79,11 +81,12 @@ export default function EventPageFaqs(props) {
   useEffect(() => {
     setStep();
     setShowMore(false);
+    setOpenId(0);
   }, []);
   const shoWMoreFaq = () => {
     setShowMore(!showMore);
   };
-  const moreFaq = (list) => {
+  const moreFaqArr = (list) => {
     let listAfterinit = list.slice(showLimit);
     return list.slice(showLimit);
   };
@@ -111,6 +114,8 @@ export default function EventPageFaqs(props) {
 
         <div className="mer-faq-box max-w-[860px] mx-auto">
           <EventFaqAccordion
+            openId={openId}
+            setOpenId={setOpenId}
             faqList={
               props.eventFaqList
                 ? initFaqList(props.eventFaqList, 0)
@@ -119,9 +124,11 @@ export default function EventPageFaqs(props) {
           />
           {showMore && (
             <EventFaqAccordion
+              openId={openId}
+              setOpenId={setOpenId}
               faqList={
                 props.eventFaqList
-                  ? initFaqList(props.eventFaqList)
+                  ? moreFaqArr(props.eventFaqList)
                   : tempFaqList
               }
             />
@@ -131,7 +138,7 @@ export default function EventPageFaqs(props) {
           {!showMore && (
             <button
               onClick={(e) => shoWMoreFaq()}
-              className="px-12 py-3 border-2 border-[#CA9342] bg-transparent hover:border-red-700 hover:bg-red-700 rounded-lg text-[#292929] font-medium lg:text-lg text-center"
+              className="px-12 py-3 border-2 border-[#CA9342] bg-transparent hover:border-gold hover:bg-gold rounded-lg text-[#292929] font-medium lg:text-xl text-center drop-shadow-lg hover:drop-shadow transition-all duration-300"
             >
               Show More
             </button>
@@ -139,7 +146,7 @@ export default function EventPageFaqs(props) {
           {showMore && (
             <button
               onClick={(e) => shoWMoreFaq()}
-              className="px-12 py-3 border-2 border-red-600 bg-red-600 hover:bg-red-700 rounded-lg text-white font-medium lg:text-lg text-center"
+              className="px-12 py-3 border-2  border-[#CA9342] bg-transparent hover:border-gold hover:bg-gold rounded-lg text-[#292929] font-medium lg:text-xl text-center drop-shadow-lg hover:drop-shadow transition-all duration-300"
             >
               Show Less
             </button>

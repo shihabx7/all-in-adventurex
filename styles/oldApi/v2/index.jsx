@@ -1,28 +1,28 @@
 import { useState } from "react";
 import Script from "next/script";
-import { rootHomePageData } from "../api/v2/root/rootHomePageData";
+import { rootHomePageData } from "../../../pages/api/v2/root/rootHomePageData";
 
 //import SinglePageSeo from "../comps/util/SinglePageSeo";
-import HomePageGameListBg from "../../comps/v2/sharedComs/HomePageGameListBg";
-import SinglePageSeo from "../../comps/util/SinglePageSeo";
-import RootNav from "../../comps/RootNav";
-import RootFooter from "../../comps/RootFooter";
+import HomePageGameListBg from "../../../comps/v2/sharedComs/HomePageGameListBg";
+import SinglePageSeo from "../../../comps/util/SinglePageSeo";
+import RootNav from "../../../comps/RootNav";
+import RootFooter from "../../../comps/RootFooter";
 
-import HomePageHeroVideoBgSection from "../../comps/v2/homePageComps/sections/HomePageHeroVideoBgSection";
-import HomeAboutSection from "../../comps/v2/homePageComps/sections/HomeAboutSection";
-import EscapeGamesListSection from "../../comps/v2/homePageComps/sections/EscapeGamesListSection";
-import OtherGameSection from "../../comps/v2/homePageComps/sections/OtherGameSection";
-import EventCardListSection from "../../comps/v2/homePageComps/sections/EventCardListSection";
+import HomePageHeroVideoBgSection from "../../../comps/v2/homePageComps/sections/HomePageHeroVideoBgSection";
+import HomeAboutSection from "../../../comps/v2/homePageComps/sections/HomeAboutSection";
+import EscapeGamesListSection from "../../../comps/v2/homePageComps/sections/EscapeGamesListSection";
+import OtherGameSection from "../../../comps/v2/homePageComps/sections/OtherGameSection";
+import EventCardListSection from "../../../comps/v2/homePageComps/sections/EventCardListSection";
 
-import MobileEscapeRoomHomeSection2 from "../../comps/mobileEscapeGames/MobileEscapeRoomHomeSection2";
-import GiftCardHomePageSection2 from "../../comps/giftCardPageComps/GiftCardHomePageSection2";
-import LightBrownBgSection from "../../comps/v2/sharedComs/LightBrownBgSection";
-import TestimonialCarouselSection from "../../comps/v2/testimonialPageComps/sections/TestimonialCarouselSection";
-import UnlockYourBundleSection from "../../comps/bundle/UnlockYourBundleSection";
-import UnlimitedEscapeGameMenu from "../../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
-import GiftCardBookingMenu from "../../comps/giftCardPageComps/GiftCardBookingMenu";
+import MobileEscapeRoomHomeSection2 from "../../../comps/mobileEscapeGames/MobileEscapeRoomHomeSection2";
+import GiftCardHomePageSection2 from "../../../comps/giftCardPageComps/GiftCardHomePageSection2";
+import LightBrownBgSection from "../../../comps/v2/sharedComs/LightBrownBgSection";
+import TestimonialCarouselSection from "../../../comps/v2/testimonialPageComps/sections/TestimonialCarouselSection";
+import UnlockYourBundleSection from "../../../comps/bundle/UnlockYourBundleSection";
+import UnlimitedEscapeGameMenu from "../../../comps/unlimitedEscapeRoom/UnlimitedEscapeGameMenu";
+import GiftCardBookingMenu from "../../../comps/giftCardPageComps/GiftCardBookingMenu";
 
-import MobileEscapeRootMenu from "../../comps/mobileEscapeGames/MobileEscapeRootMenu";
+import MobileEscapeRootMenu from "../../../comps/mobileEscapeGames/MobileEscapeRootMenu";
 export default function Home(props) {
   const [showUerBookingList, setShowUerBookingList] = useState(false);
   const [showGiftBookingList, setShowGiftBookingList] = useState(false);

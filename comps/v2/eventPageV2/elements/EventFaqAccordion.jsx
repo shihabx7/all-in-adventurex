@@ -1,20 +1,26 @@
 import { useState } from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
-export default function EventFaqAccordion({ faqList,showMore,setShowMore }) {
+export default function EventFaqAccordion({
+  faqList,
+  showMore,
+  setShowMore,
+  openId,
+  setOpenId,
+}) {
   const [faqAns, setFaqAns] = useState(0);
 
   const showAns = (id) => {
-    if (faqAns != id) {
-      setFaqAns(id);
+    if (openId != id) {
+      setOpenId(id);
     } else {
-      setFaqAns(0);
+      setOpenId(0);
     }
   };
 
   return (
     <div className="faq-liscont">
-      {faqList.map((item,index) => {
+      {faqList.map((item, index) => {
         return (
           <div key={index} className="faq-panel">
             <div
@@ -30,11 +36,11 @@ export default function EventFaqAccordion({ faqList,showMore,setShowMore }) {
                 </div>
               </div>
               <div className="faq-icon text-[#CA9342] text-[20px] md:text-3xl">
-                {faqAns == item.id ? <FiChevronUp /> : <FiChevronDown />}
+                {openId == item.id ? <FiChevronUp /> : <FiChevronDown />}
               </div>
             </div>
             <div className="faq-a text-white border-b-[1px] border-[#D9CDB6]">
-              {faqAns == item.id && (
+              {openId == item.id && (
                 <div className="faq-ans-box  pb-6 pt-1 md:pt-3 px-2 md:px-4 lg:px-6 flex space-x-1 md:space-x-2 ">
                   <div className="text-[#A17533] text-2xl md:text-4xl font-medium">
                     A.{" "}
@@ -53,5 +59,4 @@ export default function EventFaqAccordion({ faqList,showMore,setShowMore }) {
       })}
     </div>
   );
-};
-
+}

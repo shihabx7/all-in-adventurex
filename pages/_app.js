@@ -5,11 +5,10 @@ import { fetchLocationListData } from "../lib/dataFatcher/locationDataFetcher";
 import { SiteDataProvider } from "../contexts/SiteDataContext";
 import ModalMenu from "../comps/v2/layouts/layoutComps/ModalMenu";
 
-
 function MyApp({ Component, pageProps, locationListData }) {
   return (
     <SiteDataProvider allLocationList={locationListData}>
-      <ModalMenu/>
+      <ModalMenu />
       <Component {...pageProps} />
     </SiteDataProvider>
   );

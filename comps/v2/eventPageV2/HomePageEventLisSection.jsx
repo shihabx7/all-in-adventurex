@@ -137,7 +137,7 @@ export default function HomePageEventLisSection(props) {
                     {" "}
                     <h3 className="egl-game-title leading-[1.1] font-bold text-[1.1rem] rm:text-[1.2rem] zm:text-[1.1rem] xl:text-[1.1875rem]  2xl:text-[1.2rem] uppercase text-[#E0BF62]">
                       {/*item.partyName*/}
-                      Corporate Events & Team Building
+                      Team Building & Group Events
                     </h3>
                     {/*=========================================game short decription====*/}
                     <div className="egl-shot-desc mt-2 md:mt-2 xl:mt-3">
@@ -215,7 +215,7 @@ export default function HomePageEventLisSection(props) {
                   <div className="txt">
                     <h3 className="egl-game-title leading-[1.1] font-bold text-[1.1rem] rm:text-[1.2rem] zm:text-[1.1rem] xl:text-[1.1875rem]  2xl:text-[1.2rem] uppercase text-[#E0BF62]">
                       {/*item.partyName*/}
-                      Field Trips & School Events
+                      School Events & Field Trips 
                     </h3>
                     {/*=========================================game short decription====*/}
                     <div className="egl-shot-desc mt-2 md:mt-2 xl:mt-3">
