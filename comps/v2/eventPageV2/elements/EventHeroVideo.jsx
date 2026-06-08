@@ -3,11 +3,17 @@ import { useState, useEffect, useRef } from "react";
 export default function EventHeroVideo({ videoData }) {
   const videoRef = useRef();
   const [videoUrl, setVideoUrl] = useState(null);
+  const [loadVideo, setLoadVideo] = useState(false);
+
+  useEffect(() => {
+    // setVideoUrl(videoData.videoUrl? videoData.videoUrl:"/assets/event-page-v2/birthday/birthday-party-hero-video.mp4")
+    setVideoUrl(videoData.videoUrl);
+    setLoadVideo(true);
+  }, []);
 
   useEffect(() => {
     videoRef.current.play();
-  }, []);
-
+  }, [loadVideo]);
   return (
     <video
       ref={videoRef}
@@ -25,8 +31,10 @@ export default function EventHeroVideo({ videoData }) {
           : "/assets/event-page-v2/birthday/birthday-party-hero-video.mp4"
       }
     >
-      {/* <source src={videoData.video.webmUrl} type={"video/webm"} />*/}
-      <source
+      {/*
+       <source src={videoData.video.webmUrl} 
+      
+        <source
         src={
           videoData && videoData !== null
             ? videoData.videoUrl
@@ -36,6 +44,18 @@ export default function EventHeroVideo({ videoData }) {
           videoData && videoData !== null ? videoData.videoType : "video/mp4"
         }
       />
+      type={"video/webm"} />
+      */}
+      {loadVideo && videoUrl !== null && (
+        <source
+          src={videoUrl}
+          type={
+            videoData.videoType && videoData.videoType !== null
+              ? videoData.videoType
+              : "video/mp4"
+          }
+        />
+      )}
     </video>
   );
 }
