@@ -92,7 +92,7 @@ export default function CheckOutPartyPackages(props) {
                       <PartyPackageBookingBtn
                         partyName={item.partyName}
                         bookingInfo={
-                          item.bookingInfo ? item.bookingInfo : false
+                          item.bookingData ? item.bookingData : false
                         }
                         locationSlug={
                           props.locationSlug ? props.locationSlug : false
