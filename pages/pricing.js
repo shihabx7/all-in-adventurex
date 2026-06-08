@@ -52,7 +52,7 @@ const Pricing = (props) => {
         {/* =======breadcum content and breadcum root page template======== end */}
 
         <PricingPageHero pageData={props.pageData} />
-        <AllinRewardBaner/>
+        <AllinRewardBaner />
         <PriceInperson
           pricing={props.inpersonpricing}
           setShowUerBookingList={setShowUerBookingList}
@@ -94,7 +94,7 @@ export const getStaticProps = async () => {
       nextgenpricing: DATA.nextgenpricing,
       questgenpricing: DATA.questgenpricing,
     },
-   // - At most once every 60 seconds
+    // - At most once every 60 seconds
     revalidate: 60,
   };
 };

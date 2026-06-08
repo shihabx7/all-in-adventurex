@@ -7,13 +7,16 @@ import OtherGameDropDown from "./OtherGameDropDown";
 import EventDropDown from "./EventDropDown";
 
 import StaticSubmenu from "./StaticSubmenu";
+import { eventMenuSlugListV2 } from "../../lib/v2/formate/eventPageDataFormaterV2";
 
 const DropDownMenu = (props) => {
   const [openMenu, setopenMenu] = useState("1");
+  const [openEventMenu, setopenEventMenu] = useState(true);
+  const eventSluglistV2 = eventMenuSlugListV2();
 
   return (
     <div className="flex submenu-pattern flex-col md:flex-row  md:justify-between pb-[190px] pt-4 md:pb-12 md:pt-10 overflow-scroll md:overflow-hidden h-screen md:h-auto ">
-      <div className="px-6 md:px-16 border-r border-dark-coffee">
+      <div className="px-6 md:px-12 border-r border-dark-coffee">
         <div className="submenu-content text-light-gold md:text-lg">
           {/*=======================home Page */}
           <div className="submenu-item">
@@ -42,24 +45,6 @@ const DropDownMenu = (props) => {
             </a>
           </div>
           {/*=======================location's Gift card Page */}
-
-          {/*<div className="my-2">
-            <a
-              href={"/gift-cards"}
-              className=" inline-block bg-[#FFF9EB] p-1 text-[#4A2F03] hover:bg-[#F4E9D1]  hover:text-red-600 rounded"
-            >
-              <div className="p-1 flex space-x-2 items-center rounded border border-dashed border-[#A78849]">
-                <p className="text-lg leading-[1]">Gift Cards</p>
-                <div className="w-[20px]">
-                  <img
-                    className="w-full"
-                    src="/assets/gift-images/hero/gift-card-icon-for-title.svg"
-                  ></img>
-                </div>
-              </div>
-            </a>
-          </div>
-          */}
 
           {/*=======================location's store Page */}
           {props.locationSlug ? (
@@ -115,7 +100,42 @@ const DropDownMenu = (props) => {
             </div>
           </div>
           {/*=========================================== Collapse menu escape Game List end========== */}
+          {/*=========================================== Collapse menu  event List========== */}
 
+          <div
+            className="submenu-item"
+            onClick={() => setopenMenu(openMenu === "4" ? "0" : "4")}
+          >
+            <p className="cursor-pointer flex items-center space-x-2">
+              <span
+                className="sub-link-txt"
+                style={{
+                  borderBottom:
+                    openMenu === "1"
+                      ? "1px solid #FFEFCD"
+                      : "1px solid transparent",
+                }}
+              >
+                Parties and Events
+              </span>
+              <span className="text-gold">
+                {/*openMenu === "4" ? <FaAngleUp /> : <FaAngleDown />*/}
+                <FaAngleDown />
+              </span>
+            </p>
+
+            <div className="submenu-dropdown py-2 ml-4 text-base">
+              {props.locationSlug ? (
+                <EventDropDown
+                  locationSlug={props.locationSlug}
+                  eventSlugList={eventSluglistV2}
+                />
+              ) : (
+                <EventDropDown eventSlugList={eventSluglistV2} />
+              )}
+            </div>
+          </div>
+          {/*===========================Collapse menu  event List end--------------------*/}
           {/*===========================================  Collapse menu Other game List========== */}
           {props.otherGameSlugList.length > 0 ? (
             <div
@@ -163,7 +183,7 @@ const DropDownMenu = (props) => {
 
           {/*============================ Collapse menu Other game List end========== */}
           {/*==================================================================Toymaker's Workshop========== */}
-          
+
           {/*=========================================== Mobile Mystery ========== */}
           {props.hasMobileEscapeRoom ? (
             <div className="submenu-item">
@@ -183,47 +203,6 @@ const DropDownMenu = (props) => {
               </a>
             </div>
           )}
-
-          {/*=========================================== Collapse menu  event List========== */}
-
-          <div
-            className="submenu-item"
-            onClick={() => setopenMenu(openMenu === "4" ? "0" : "4")}
-          >
-            <p className="cursor-pointer flex items-center space-x-2">
-              <span
-                className="sub-link-txt"
-                style={{
-                  borderBottom:
-                    openMenu === "3"
-                      ? "1px solid #FFEFCD"
-                      : "1px solid transparent",
-                }}
-              >
-                Events and Parties
-              </span>
-              <span className="text-gold">
-                {openMenu === "4" ? <FaAngleUp /> : <FaAngleDown />}
-              </span>
-            </p>
-
-            <div
-              className="submenu-dropdown py-2 ml-4 text-base"
-              style={{
-                display: openMenu === "4" ? "block" : "none",
-              }}
-            >
-              {props.locationSlug ? (
-                <EventDropDown
-                  locationSlug={props.locationSlug}
-                  eventSlugList={props.eventSlugList}
-                />
-              ) : (
-                <EventDropDown eventSlugList={props.eventSlugList} />
-              )}
-            </div>
-          </div>
-          {/*===========================Collapse menu  event List end--------------------*/}
         </div>
       </div>
       {/*=====================================================submenu-item-static=============================*/}

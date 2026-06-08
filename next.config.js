@@ -6,7 +6,7 @@ const prm = false;
 
 // =========================================genarel redirect :path
 const gnRed = [
-    {
+  {
     source: "/unlimited-play-pass",
     destination: "/all-in-rewards",
     permanent: prm,
@@ -128,6 +128,34 @@ const gnRed = [
     source: "/careers/associates",
     destination: "/careers/associate",
     permanent: prm,
+  },
+];
+//======================old event/ v1 events
+
+const eventReDirrArr = [
+  "corporate-events",
+  "family-fun-activity",
+  "bachelor-party",
+  "bachelorette-party",
+  "proposal-party",
+  "date-night",
+  "private-party",
+  "reunion-party",
+  "graduation-party",
+  "gender-reveal-party",
+];
+const eventSlugMatchPattern = `(${eventReDirrArr.join("|")})`;
+const eventV1 = [
+  {
+    // 2. Match any base path, followed by one of your specific slugs at the end
+    // :path* captures everything before the slug (including subfolders)
+    source: `/:path*/:slug${eventSlugMatchPattern}`,
+
+    // 3. Keep the base path structure exactly the same, but swap the slug out
+    destination: "/:path*/team-building",
+
+    // 4. Set to true for a 301 permanent redirect (good for SEO), or false for a 307 temporary redirect
+    permanent: true,
   },
 ];
 // =========================================genarel redirect end
@@ -2971,6 +2999,7 @@ const allRed = [
   ...poughkeepsieRed,
   ...austinRed,
   ...commonRed,
+  ...eventV1,
 ];
 
 module.exports = {

@@ -15,7 +15,10 @@ import BundleBookingMenu from "./bundle/BundleBookingMenu";
 //========================================================================v2
 import GameBookingBtn from "./headerComps/GameBookingBtn";
 import EventBookingBtn from "./headerComps/EventBookingBtn";
+//import { eventMenuSlugListV2 } from "../lib/v2/formate/eventPageDataFormaterV2";
+
 const RootNav = (props) => {
+  //const eventSluglistV2 = eventMenuSlugListV2();
   const ref = useRef();
   const { showLocModal, activeModalMenu } = useState(false);
   const [showSlug, setShowSlug] = useState(null);
@@ -112,21 +115,26 @@ const RootNav = (props) => {
               {/*============location search btn end==========*/}
               {/*============nav bar btns ==========*/}
               <div className="home-nav-menu flex items-center space-x-0 md:space-x-10 lg:space-x-14 justify-end ">
-                {/* ============Nav bar btn desktop  */}
-                <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
-                  <div className="header-btn">
-                    <EventBookingBtn />
-                  </div>
-                </div>
-                <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
-                  <GameBookingBtn
-                    activitySlug={
-                      props.activitySlug ? props.activitySlug : false
-                    }
-                  />
-                </div>
-                {/* ============Nav bar btn desktop  end*/}
-                {/* ============Nav bar toggle icon  */}
+                {/* =============================================================================Nav bar btn desktop  */}
+                {!props.hideMenuBookBtn && (
+                  <>
+                    <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
+                      <div className="header-btn">
+                        <EventBookingBtn />
+                      </div>
+                    </div>
+                    <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
+                      <GameBookingBtn
+                        activitySlug={
+                          props.activitySlug ? props.activitySlug : false
+                        }
+                      />
+                    </div>
+                  </>
+                )}
+
+                {/* ==========================================================================Nav bar btn desktop  end*/}
+                {/* =======================================================================Nav bar toggle menu icon  */}
                 <div
                   className="menu-item hover:shadow-md hover:cursor-pointer relative"
                   onClick={toggle}
@@ -153,7 +161,7 @@ const RootNav = (props) => {
                     </div>
                   </div>
                 </div>
-                {/* ============Nav bar toggle icon  end*/}
+                {/* ======================================================================================Nav bar toggle icon  end*/}
               </div>
               {/*============nav bar btns end==========*/}
             </div>
@@ -166,7 +174,8 @@ const RootNav = (props) => {
                 <DropDownMenu
                   escapeGameSlugList={props.escapeGameSlugList}
                   otherGameSlugList={props.otherGameSlugList}
-                  eventSlugList={props.eventSlugList}
+                  // eventSlugList={props.eventSlugList}
+                  //   eventSlugList={eventSluglistV2}
                 ></DropDownMenu>
               )}
             </div>

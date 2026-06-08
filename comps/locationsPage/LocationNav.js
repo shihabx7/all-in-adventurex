@@ -127,34 +127,42 @@ const LocationNav = (props) => {
                 {/* ============Nav bar btn desktop  */}
                 {props.activitySlug !== "mobile-escape-room" ? (
                   <>
-                    <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
-                      <div className="header-btn">
-                        <button
-                          onClick={() => bookEventFlow(props.locationSlug)}
-                          className="bg-transparent cursor-pointer rounded font-medium text-white hover:bg-red-700 py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
-                        >
-                          BOOK EVENT
-                        </button>
-                      </div>
-                    </div>
-                    <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
-                      <GameBookingBtn
-                        isPublished={
-                          props.isPublished ? props.isPublished : false
-                        }
-                        locationSlug={
-                          props.locationSlug ? props.locationSlug : false
-                        }
-                        allBooking={props.allBooking ? props.allBooking : false}
-                        giftBooking={
-                          props.giftBooking ? props.giftBooking : false
-                        }
-                        gameBooking={
-                          props.gameBooking ? props.gameBooking : false
-                        }
-                        isGiftPage={props.isGiftPage ? props.isGiftPage : false}
-                      />
-                    </div>
+                    {!props.hideMenuBookBtn && (
+                      <>
+                        <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
+                          <div className="header-btn">
+                            <button
+                              onClick={() => bookEventFlow(props.locationSlug)}
+                              className="bg-transparent cursor-pointer rounded font-medium text-white hover:bg-red-700 py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+                            >
+                              BOOK EVENT
+                            </button>
+                          </div>
+                        </div>
+                        <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
+                          <GameBookingBtn
+                            isPublished={
+                              props.isPublished ? props.isPublished : false
+                            }
+                            locationSlug={
+                              props.locationSlug ? props.locationSlug : false
+                            }
+                            allBooking={
+                              props.allBooking ? props.allBooking : false
+                            }
+                            giftBooking={
+                              props.giftBooking ? props.giftBooking : false
+                            }
+                            gameBooking={
+                              props.gameBooking ? props.gameBooking : false
+                            }
+                            isGiftPage={
+                              props.isGiftPage ? props.isGiftPage : false
+                            }
+                          />
+                        </div>
+                      </>
+                    )}
                   </>
                 ) : (
                   <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">

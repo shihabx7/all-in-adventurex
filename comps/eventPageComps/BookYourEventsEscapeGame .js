@@ -50,7 +50,7 @@ function BookYourEventsEscapeGame(props) {
     let foundGsr = 0;
     for (let i = 0; i < list.length; i++) {
       let namep = list[i].partyName.toLowerCase().trim();
-      console.log(namep);
+      //console.log(namep);
       if (namep == "game show room") {
         foundGsr++;
       }
@@ -124,7 +124,7 @@ function BookYourEventsEscapeGame(props) {
                       onClick={() => {
                         bookEvent(party.bookingData);
                       }}
-                      className="bg-red-600 hover:bg-red-700 text-white text-center font-medium
+                      className="bg-red-600 hover:bg-red-700 text-white text-center font-medium book-party
         py-4  rounded-full mx-auto text-[16px] lg:text-[14px] xl:text-[16px] w-full"
                     >
                       {party.bookingBtnText}

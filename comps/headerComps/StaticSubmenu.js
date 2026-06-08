@@ -11,7 +11,7 @@ const StaticSubmenu = () => {
             <img
               className="max-w-[26px] md:max-w-[28px]"
               src="/assets/gift-images/hero/gift-card-icon-for-title.svg"
-              alt=" All in Adventures gift card icon showcasing a vibrant design, symbolizing adventure and excitement in gift-giving."
+              alt="gift-icon"
             ></img>
           </span>
         </a>

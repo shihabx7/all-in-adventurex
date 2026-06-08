@@ -17,6 +17,9 @@ import {
   eventDetailData,
   eventTestimonialData,
 } from "../../../lib/eventDataFormation";
+//====================================================================v2
+import { eventPageDataFormater } from "../../../lib/v2/formate/eventPageDataFormater";
+
 export const getEventPagetData = async (eventSlug) => {
   const filters = "filters[eventSlug][$eq]=" + eventSlug;
   const reqUrl = apiUrl + "events?" + filters + eventPageQuery;
@@ -35,7 +38,7 @@ export const getEventPagetData = async (eventSlug) => {
   const activityListObj = await activityListRes.json();
   const actctivityListResData = activityListObj.data;
   // fetch all event list as an array
-  const eventListRes = await fetch(allEventsSluglistQuery, apiSetting);
+ const eventListRes = await fetch(allEventsSluglistQuery, apiSetting);
   const eventListResObj = await eventListRes.json();
   const eventListResData = eventListResObj.data;
 
@@ -48,27 +51,36 @@ export const getEventPagetData = async (eventSlug) => {
     otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),
     totalLocations: totalLocations,
-
-    pageMeta: getPageMeta(
+    //============================================================v2
+    pageMeta: eventPageDataFormater.pageMetaV2(eventSlug),
+    pageData: eventPageDataFormater.pageDataV2(eventSlug),
+//============================================================v1
+    pageMetaOld: getPageMeta(
       seoData,
       eventResData.pageHeroData.pageHeroMobile.data.attributes.url,
       eventResData.eventName,
       eventResData.pageHeroData.pageSubTitle,
-      eventSlug
+      eventSlug,
     ),
 
-    pageData: getPageData(
+    pageDataOld: getPageData(
       eventResData.eventName,
       eventResData.eventInfo,
       eventResData.pageHeroData,
       totalLocations,
-      totalActivities
+      totalActivities,
     ),
+
+    escapeRoomCarouselSectionData:
+      eventPageDataFormater.escapescapeRoomCarouselSectionData({
+        fetchEscapeGameList: actctivityListResData,
+        eventSlug: eventSlug,
+      }),
     eventDetaliData: eventDetailData(
       eventResData.whyAllinAdventures,
       eventResData.makeItMemorable,
       eventResData.whatToExpect,
-      eventResData.eventName
+      eventResData.eventName,
     ),
 
     eventTestimonialData: eventTestimonialData(eventResData.eventTestimonials),

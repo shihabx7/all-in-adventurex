@@ -108,8 +108,6 @@ export const getRootActivitiyPageData = async (activitySlug) => {
             activityName: activityResData.activityName,
           })
         : false,
-    //////////////=================old v1
-    // !activityResData.activityInfo.category.toLowerCase()==="others" || activityResData.activityInfo.category.toLowerCase()==="other"
     pageData: getPageData(
       activityResData.activityName,
       activityResData.activityInfo,

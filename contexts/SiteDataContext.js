@@ -15,9 +15,10 @@ export const SiteDataProvider = ({
   const [eventList, setEventList] = useState(allEventList || []);
   const [activeLocationSlug, setActiveLocationSlug] = useState(null);
   const [activeGameSlug, setActiveGameSlug] = useState(null);
+  const [activePartyName, setActivePartyName] = useState(null);
   const [showModalMenu, setShowModalMenu] = useState(false);
-// location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle
-  const [activeModalMenuType, setActiveModalMenuType] = useState(null); 
+  // location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle | BookPartyPackage
+  const [activeModalMenuType, setActiveModalMenuType] = useState(null);
 
   useEffect(() => {
     setShowModalMenu(false);
@@ -28,6 +29,7 @@ export const SiteDataProvider = ({
   const openModalMenu = () => setShowModalMenu(true);
   const closeModalMenu = () => setShowModalMenu(false);
   const setModalGame = (gameSlug) => setActiveGameSlug(gameSlug);
+  const setModalPartyName = (partyName) => setActivePartyName(partyName);
   const setActiveLocation = (locationSlug) =>
     setActiveLocationSlug(locationSlug);
   const setModalMenuType = (menuType) => setActiveModalMenuType(menuType);
@@ -38,8 +40,10 @@ export const SiteDataProvider = ({
         locationList,
         showModalMenu,
         activeGameSlug,
+        activePartyName,
         activeModalMenuType,
         setModalGame,
+        setModalPartyName,
         setModalMenuType,
         openModalMenu,
         closeModalMenu,

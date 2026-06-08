@@ -150,3 +150,16 @@
 .letter-space-lg {
   word-spacing: 2px;
 }
+/*==============================================event page styles=============*/
+.blue-dark-gradient-bg {
+  background: radial-gradient(103.07% 50% at 50% 50%, #04164e 0%, #00071d 100%);
+}
+.overlay-dark-bottom {
+  background: radial-gradient(
+    157.1% 87.51% at 50% 12.49%,
+    rgba(0, 10, 25, 0) 0%,
+    rgba(0, 10, 25, 0) 50%,
+    rgba(0, 10, 25, 0.9) 60%,
+    rgba(0, 10, 25, 0.95) 100%
+  );
+}

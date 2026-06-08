@@ -32,6 +32,7 @@ import AllinRewardBaner from "../../comps/allInRewards/AllinRewardBaner";
 
 //==============================================================================================================v2
 import HomePageHeroVideoBgSection from "../../comps/v2/homePageComps/sections/HomePageHeroVideoBgSection";
+import HomePageEventLisSection from "../../comps/v2/eventPageV2/HomePageEventLisSection";
 // ==========================+++import HomeAboutSection from "../../comps/v2/homePageComps/sections/HomeAboutSection";
 import HomePageGameListBg from "../../comps/v2/sharedComs/HomePageGameListBg";
 import EscapeGamesListSection from "../../comps/v2/homePageComps/sections/EscapeGamesListSection";
@@ -135,14 +136,14 @@ const Locations = (props) => {
           />
         </HomePageGameListBg>
 
-        {/*==========================================================================================v2 end===*/}
-        <EventSlider
+        {/*============================================================  <EventSlider
           eventList={props.eventList}
           locationSlug={props.locationSlug}
           isPublished={props.isPublished}
-        />
-        
+        />==============================v2 end===*/}
+      
 
+        <HomePageEventLisSection locationSlug={props.locationSlug}/>
         {/*=========================================================================================
         {props.hasMobileEscapeRoom ? (
           <MobileMysteryOtherPageSection

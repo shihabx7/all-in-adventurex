@@ -27,6 +27,7 @@ import AllinRewardBaner from "../comps/allInRewards/AllinRewardBaner";
 //======================= v2-----------------
 import HomePageGameListBg from "../comps/v2/sharedComs/HomePageGameListBg";
 import HomePageHeroVideoBgSection from "../comps/v2/homePageComps/sections/HomePageHeroVideoBgSection";
+import HomePageEventLisSection from "../comps/v2/eventPageV2/HomePageEventLisSection";
 //------+ import HomeAboutSection from "../comps/v2/homePageComps/sections/HomeAboutSection"----------++ ;
 import EscapeGamesListSection from "../comps/v2/homePageComps/sections/EscapeGamesListSection";
 import OtherGameSection from "../comps/v2/homePageComps/sections/OtherGameSection";
@@ -94,10 +95,9 @@ export default function Home(props) {
           <MobileMysteryCardSection />
           <GiftCardSection />
         </HomePageGameListBg>
-        {/*======================================================================================================== v2 ================ */}
+        {/*========================================================================================================      <EventSlider eventList={props.eventList} /> v2 ================ */}
+        <HomePageEventLisSection />
 
-        <EventSlider eventList={props.eventList} />
-      
         {/*===============================  old sections to be replaced—GiftCardHomePageSection-----
         <WhatIsEscape />  <AllinRewardBaner />
         <WhoCanplay />

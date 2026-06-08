@@ -44,7 +44,7 @@ export default function AllInRewardFaq(props) {
       id: 7,
       faqQuestion: "Does every game count toward my punches?",
       faqAnswer:
-        'To keep the rewards flowing, only full-price admissions count toward your Free Admission. Games booked using a deep discount, seasonal offer, or a free reward code do not earn additional punches.',
+        "To keep the rewards flowing, only full-price admissions count toward your Free Admission. Games booked using a deep discount, seasonal offer, or a free reward code do not earn additional punches.",
     },
 
     {

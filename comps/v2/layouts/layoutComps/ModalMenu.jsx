@@ -2,9 +2,14 @@ import Script from "next/script";
 import { useSiteData } from "../../../../contexts/SiteDataContext";
 import { FiX } from "react-icons/fi";
 import { locationBookingInfo } from "../../../../lib/v2/data/locationBookingInfo";
-import { filterLocationList } from "../../../../lib/v2/formate/locationDataFormater";
+import {
+  filterLocationList,
+  filterLocationListForParty,
+} from "../../../../lib/v2/formate/locationDataFormater";
 import LocationPageLink from "./LocationPageLink";
 import EscapeGameBookingBtn from "./EscapeGameBookingBtn";
+import PartyPackageLocationList from "./PartyPackageLocationList";
+import { eventFormBookingLinks } from "../../../../lib/tempData/eventFormBookingLinks";
 
 // ============================booking function
 const bookItemflow = (bookingData) => {
@@ -65,16 +70,30 @@ const allInRewardsBooking = (bookingData) => {
     },
   });
 };
+const partyPackageFormBooking = (bookingData) => {
+  FH.open({
+    shortname: bookingData.shortName,
+    fallback: "simple",
+    fullItems: "yes",
+    flow: "no",
+    view: {
+      item: bookingData.itemNo,
+    },
+  });
+};
+
 // ==================================================================================================def function----
 export default function ModalMenu() {
   const {
     locationList,
     showModalMenu,
+    closeModalMenu,
     activeModalMenuType,
     setModalMenuType,
     activeGameSlug,
     setModalGame,
-    closeModalMenu,
+    activePartyName,
+    setModalPartyName,
   } = useSiteData();
   //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery | mobile-mystery-quote |unlimited-play-pass | bundle |all-in-rewards
   if (!showModalMenu) return null;
@@ -103,6 +122,10 @@ export default function ModalMenu() {
         itemFlow: locationBookingInfo[locationSlug].partyPackageFlow,
       });
     }
+    if (activeModalMenuType == "partyPackage-form") {
+      partyPackageFormBooking(eventFormBookingLinks[locationSlug]);
+    }
+
     if (activeModalMenuType == "bundle") {
       bookItemflow({
         shortName: bookingInfo.shortName,
@@ -181,6 +204,18 @@ export default function ModalMenu() {
               {activeModalMenuType == "all-in-rewards" && (
                 <span>Unlock Free Rooms with ALL IN REWARDS!</span>
               )}
+              {activeModalMenuType == "BookPatryPackage" && (
+                <span>
+                  This party package is available at the locations below—Book
+                  instantly
+                </span>
+              )}
+              {activeModalMenuType == "partyPackage-form" && (
+                <span>
+                  Party For Large group is available at the locations below—Book
+                  instantly
+                </span>
+              )}
             </p>
           </div>
           {/*==================================================== modal menu title end*/}
@@ -195,9 +230,17 @@ export default function ModalMenu() {
                 locationList={filterLocationList(locationList, activeGameSlug)}
               />
             )}
-
+            {activeModalMenuType == "BookPatryPackage" && (
+              <PartyPackageLocationList
+                locationList={filterLocationListForParty(
+                  locationList,
+                  activePartyName,
+                )}
+              />
+            )}
             {activeModalMenuType !== "location-links" &&
               activeModalMenuType !== "game" &&
+              activeModalMenuType !== "BookPatryPackage" &&
               locationList.map((state, index) => {
                 return (
                   <div key={index + 1} className="loc-menu-box ">

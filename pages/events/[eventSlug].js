@@ -1,13 +1,26 @@
-import getEventSlugs from "../api/Events/getEventSlugs";
-import { getEventPagetData } from "../api/Events/getEventPageData";
+//import getEventSlugs from "../api/Events/getEventSlugs";
+//import { getEventPagetData } from "../api/Events/getEventPageData";
+//=====================================================================v2
+import getEventSlugV2 from "../api/Events/getEventSlugV2";
+import { getEventPageDataV2 } from "../api/Events/getEventPageDataV2";
+
 import RootNav from "../../comps/RootNav";
 import RootFooter from "../../comps/RootFooter";
 import PageBread from "../../comps/util/PageBread";
 import EventPageSeo from "../../comps/eventPageComps/EventPageSeo";
-import EventRootHero from "../../comps/eventPageComps/EventRootHero";
-import EventRootDetails from "../../comps/eventPageComps/EventRootDetails";
-import EventRootTestimonials from "../../comps/eventPageComps/EventRootTestimonials";
-
+//import EventRootHero from "../../comps/eventPageComps/EventRootHero";
+//import EventRootDetails from "../../comps/eventPageComps/EventRootDetails";
+//import EventRootTestimonials from "../../comps/eventPageComps/EventRootTestimonials";
+// =================================================================================================v2
+import EventPageHero from "../../comps/v2/eventPageV2/EventPageHero";
+import FeedBackTestimonialSlider from "../../comps/v2/eventPageV2/FeedBackTestimonialSlider";
+import CheckOutPartyPackages from "../../comps/v2/eventPageV2/CheckOutPartyPackages";
+import EventPageEscapeRoomCarousel from "../../comps/v2/eventPageV2/EventPageEscapeRoomCarousel";
+import MobileMysteryEventSection from "../../comps/v2/eventPageV2/MobileMysteryEventSection";
+import EventPageGallery from "../../comps/v2/eventPageV2/EventPageGallery";
+import CustomerLoveTestimonialCarousel from "../../comps/v2/eventPageV2/CustomerLoveTestimonialCarousel";
+import EventPageFaqs from "../../comps/v2/eventPageV2/EventPageFaqs";
+//===============================v2 end
 const showSingleEvent = (props) => {
   return (
     <>
@@ -18,6 +31,7 @@ const showSingleEvent = (props) => {
         escapeGameSlugList={props.escapeGameSlugList}
         otherGameSlugList={props.otherGameSlugList}
         eventSlugList={props.eventSlugList}
+        hideMenuBookBtn={true}
       />
       {/* =======header content ======== end */}
 
@@ -30,11 +44,33 @@ const showSingleEvent = (props) => {
         {/* =======breadcum content and breadcum========  */}
         <PageBread />
         {/* =======breadcum content and breadcum root page template======== end */}
-
+        {/*==============================v2 ==============================*/}
+        <EventPageHero pageHeroData={props.pageData.PageHeroData} />
+        <FeedBackTestimonialSlider  sectionData={props.pageData.FeedBackTestimonialSliderData}/>
+        <CheckOutPartyPackages
+          sectionData={props.pageData.CheckOutPartyPackagesData}
+          partyPackageList={props.partyPackageList}
+        />
+        <EventPageEscapeRoomCarousel
+          sectionData={props.escapeRoomCarouselSectionData}
+        />
+        {props.pageData.MobileMysterySectionData.showCardSection && (
+          <MobileMysteryEventSection
+            sectionData={props.pageData.MobileMysterySectionData}
+          />
+        )}
+        <EventPageGallery sectionData={props.pageData.EventPageGalleryData} />
+        <CustomerLoveTestimonialCarousel />
+        <EventPageFaqs
+          sectionData={props.pageData.EventPageFaqsData}
+          eventFaqList={props.eventFaqList}
+        />
+        {/*==============================v2 =============================*/}
+        {/*  
         <EventRootHero pageData={props.pageData} />
         <EventRootDetails eventDetaliData={props.eventDetaliData} />
         <EventRootTestimonials testimonialData={props.eventTestimonialData} />
-
+*/}
         {/* =========================================================================================main content ======== end */}
       </div>
 
@@ -49,7 +85,7 @@ const showSingleEvent = (props) => {
 export default showSingleEvent;
 
 export const getStaticPaths = async () => {
-  const res = await getEventSlugs();
+  const res = await getEventSlugV2();
 
   const paths = res.map((eventSlugs) => {
     return {
@@ -64,25 +100,8 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-  /*let res = null;
-  let errFlag = true;
-
-  try {
-    res = await getEventPagetData(context.params.eventSlug);
-  } catch (error) {
-    console.log("reponse err. page not found");
-    errFlag = false;
-  }
-  if (!errFlag) {
-    return {
-      redirect: {
-        permanent: false, // or true
-        destination: "/404",
-      },
-    };
-  }
-  const DATA = res;*/
-  const DATA = await getEventPagetData(context.params.eventSlug);
+  //const DATA = await getEventPagetData(context.params.eventSlug);
+  const DATA = await getEventPageDataV2(context.params.eventSlug);
   // console.log(eventPageData);
 
   return {
@@ -94,8 +113,11 @@ export const getStaticProps = async (context) => {
       totalLocations: DATA.totalLocations,
       pageMeta: DATA.pageMeta,
       pageData: DATA.pageData,
-      eventDetaliData: DATA.eventDetaliData,
-      eventTestimonialData: DATA.eventTestimonialData,
+      escapeRoomCarouselSectionData: DATA.escapeRoomCarouselSectionData,
+      partyPackageList: DATA.partyPackageList,
+      eventFaqList: DATA.eventFaqList,
+      //  eventDetaliData: DATA.eventDetaliData,
+      //  eventTestimonialData: DATA.eventTestimonialData,
     },
     revalidate: 60,
   };
