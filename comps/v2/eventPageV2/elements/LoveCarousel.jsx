@@ -1,7 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import LoveCarouselCardBrown from "./loveCarouselCardBrown";
-import LoveCarouselCardDark from "./loveCarouselCardDark";
+
 
 export default function LoveCarousel({ customerLoveCarouselData }) {
   const responsive = {

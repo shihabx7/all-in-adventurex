@@ -1,5 +1,6 @@
 import Script from "next/script";
 import { useSiteData } from "../../../../contexts/SiteDataContext";
+
 import { FiX } from "react-icons/fi";
 import { locationBookingInfo } from "../../../../lib/v2/data/locationBookingInfo";
 import {

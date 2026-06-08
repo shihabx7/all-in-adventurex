@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import { useSiteData } from "../../../../contexts/SiteDataContext";
 export default function EscapeGameListInfo({
   gameInfo,

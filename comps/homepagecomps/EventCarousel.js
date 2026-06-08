@@ -1,6 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Link from "next/link";
+
 import { useSiteData } from "../../contexts/SiteDataContext";
 import { locationBookingInfo } from "../../lib/v2/data/locationBookingInfo";
 

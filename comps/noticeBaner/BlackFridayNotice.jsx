@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { FiExternalLink, FiX } from "react-icons/fi";
 import { getCookies, getCookie, setCookie, deleteCookie } from "cookies-next";
 import { escapeGameBundleBookingList } from "../../lib/v2/data/escapeGameBundleBookingList";
-import { useLocModal } from "../../contexts/LocModalContext";
+
+import { useSiteData } from "../../contexts/SiteDataContext";
 import { TbCopy } from "react-icons/tb";
 import BlackFridayNoticeTimer from "./NoticeTimer";
 export default function BlackFridayNotice({

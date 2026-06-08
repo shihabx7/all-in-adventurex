@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { useSiteData } from "../../contexts/SiteDataContext";
 
+import { useSiteData } from "../../contexts/SiteDataContext";
 const bookParty = (bookingData) => {
   FH.open({
     shortname: bookingData.shortName,

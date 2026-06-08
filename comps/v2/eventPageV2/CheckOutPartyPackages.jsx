@@ -195,16 +195,17 @@ export default function CheckOutPartyPackages(props) {
                 </p>
                 <div className="pn-em flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-2 md:space-x-6 xl:space-x-8 my-5 md:my-8">
                   <a
-                    href={"tel:844-502-5546"}
+                    href={props.locationInfo? "tel"+props.locationInfo.phone:"tel:844-502-5546"}
                     className="text-white font-bold md:text-lg hover:text-red-700"
                   >
-                    844-502-5546
+                    {props.locationInfo?props.locationInfo.phone:"844-502-5546"}
                   </a>
                   <a
-                    href={"mailto:sales@allinadventures.com"}
+                    href={props.locationInfo? "mailto"+props.locationInfo.storeEmail:"mailto:sales@allinadventures.com"}
                     className="text-white font-bold md:text-lg hover:text-red-700"
                   >
-                    sales@allinadventures.com
+                    
+                     {props.locationInfo? props.locationInfo.storeEmail:"sales@allinadventures.com"}
                   </a>
                 </div>
                 <div className="max-w-[330px]">

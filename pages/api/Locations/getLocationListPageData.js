@@ -2,10 +2,12 @@ import { apiSetting, apiUrl } from "../../../lib/apiSettings";
 import {
   allActivitiesSluglistQuery,
   allEventsSluglistQuery,
+  locationSlugListQuery
 } from "../../../lib/query/navMenuQuery";
 import {
   LocationListPageListQuery,
   locationListPageQuery,
+  
 } from "../../../lib/query/HomePageQuery";
 import {
   getLocationSlugList,
@@ -35,7 +37,9 @@ export const getLocationListPageData = async () => {
   //console.log("location List Data ");
  // console.log(JSON.stringify(locationListData, null, 2));
   //console.log(JSON.stringify(locationListData));
-
+  const locationMenuListRes = await fetch(locationSlugListQuery, apiSetting);
+  const locationMenuuListobj = await locationMenuListRes.json();
+  const locationMenuListArr = locationMenuuListobj.data;
   // fetch all activity list as an array
   const activityListRes = await fetch(allActivitiesSluglistQuery, apiSetting);
   const activityListObj = await activityListRes.json();
@@ -49,7 +53,7 @@ export const getLocationListPageData = async () => {
   const totalLocations = locationListData.length;
 
   const locationListPageData = {
-    locationSlugList: getLocationSlugList(locationListData),
+    locationSlugList: getLocationSlugList(locationMenuListArr),
     escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
     otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),

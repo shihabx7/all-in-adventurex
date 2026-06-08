@@ -141,9 +141,8 @@ const Locations = (props) => {
           locationSlug={props.locationSlug}
           isPublished={props.isPublished}
         />==============================v2 end===*/}
-      
 
-        <HomePageEventLisSection locationSlug={props.locationSlug}/>
+        <HomePageEventLisSection locationSlug={props.locationSlug} />
         {/*=========================================================================================
         {props.hasMobileEscapeRoom ? (
           <MobileMysteryOtherPageSection
@@ -228,7 +227,7 @@ export const getStaticProps = async (context) => {
   //console.log("escape game ");
   //console.log(JSON.stringify(DATA.escapeGameListSectionData, null, 2));
   //console.log("other game");
-  //console.log(JSON.stringify(DATA.otherGameListSectionData, null, 2));
+  //console.log(JSON.stringify(DATA.locationSlugList));
 
   return {
     props: {

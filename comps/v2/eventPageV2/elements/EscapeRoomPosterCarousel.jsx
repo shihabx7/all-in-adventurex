@@ -1,5 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+
 import { useSiteData } from "../../../../contexts/SiteDataContext";
 const bookThisGame = (bookingData) => {
   FH.open({
