@@ -68,16 +68,16 @@ export default function TestimonialSlider({ testimonialData }) {
       >
         {testimonialData.map((item, index) => {
           return (
-            <div key={index} className="tst-item relative ">
+            <div key={index} className="tst-item relative h-full">
               <div className="quote-img max-w-[60px] absolute -top-[30px] left-6 xl:left-8 z-10">
                 <img
                   className="max-w-[120px] md:max-w-[156px]"
                   src={"/assets/event-page-v2/inverted-quote.svg"}
                 ></img>
               </div>
-              <div className="love-carousel-card bg-[#231800] h-full flex flex-col space-y-8 rounded-[16px] px-5 py-6 md:p-7 xl:p-10 relative">
-                <div className="rev-txt">
-                  <p className="text-[1.1rem] md:text-[1.2rem] xl:text-[1.3rem] leading-[1.5] font-thin text-[#FFEFD8] italic">
+              <div className="love-carousel-card bg-[#231800] h-full flex flex-col space-y-8 rounded-[16px] px-5 py-6 md:p-7 xl:p-8  relative">
+                <div className="rev-txt pt-3 md:pt-5">
+                  <p className="text-[1.05rem] md:text-[1.1rem] xl:text-[1.2rem] leading-[1.5] font-thin text-[#FFEFD8] italic">
                     {item.text}
                   </p>
                 </div>

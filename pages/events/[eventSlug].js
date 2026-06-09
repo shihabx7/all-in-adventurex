@@ -55,6 +55,8 @@ const showSingleEvent = (props) => {
         />
         <EventPageEscapeRoomCarousel
           sectionData={props.escapeRoomCarouselSectionData}
+           sectionHeadData={props.pageData.EventPageEscapeRoomCarouselData}
+
         />
         {props.pageData.MobileMysterySectionData.showCardSection && (
           <MobileMysteryEventSection

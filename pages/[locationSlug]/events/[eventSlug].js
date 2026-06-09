@@ -64,7 +64,9 @@ const LocSingleEvent = (props) => {
           locationName={props.locationName}
           locationInfo={props.locationInfo}
         />
-        <FeedBackTestimonialSlider sectionData={props.pageData.FeedBackTestimonialSliderData} />
+        <FeedBackTestimonialSlider
+          sectionData={props.pageData.FeedBackTestimonialSliderData}
+        />
 
         <CheckOutPartyPackages
           sectionData={props.pageData.CheckOutPartyPackagesData}
@@ -74,6 +76,7 @@ const LocSingleEvent = (props) => {
         />
         <EventPageEscapeRoomCarousel
           sectionData={props.escapeRoomCarouselSectionData}
+          sectionHeadData={props.pageData.EventPageEscapeRoomCarouselData}
         />
 
         {props.pageData.MobileMysterySectionData.showCardSection && (
@@ -83,7 +86,9 @@ const LocSingleEvent = (props) => {
           />
         )}
         <EventPageGallery sectionData={props.pageData.EventPageGalleryData} />
-        <CustomerLoveTestimonialCarousel sectionData={props.pageData.CustomerLoveTestimonialCarouselData} />
+        <CustomerLoveTestimonialCarousel
+          sectionData={props.pageData.CustomerLoveTestimonialCarouselData}
+        />
         <EventPageFaqs
           sectionData={props.pageData.EventPageFaqsData}
           eventFaqList={props.eventFaqList}

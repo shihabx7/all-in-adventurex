@@ -37,7 +37,7 @@ export default function CustomerLoveTestimonialCarousel(props) {
   return (
     <div className="customer-love-testimonial-section bg-[#FFF9EB] bg-[url('/assets/mobile-escape-room/brown-paper-bg.jpg')] bg-[240px_240px] md:bg-[300px_300px] lg:bg-[400px_400px]">
       <div className="section-container max-w-[600px] lg:max-w-7xl py-16 md:py-20 lg:py-28 px-4 xl:px-6 mx-auto">
-        <div className="section-title mb-6 rm:mb-8 md:mb-10 lg:mb-12 md:max-w-[760px] lg:max-w-[840px] mx-auto">
+        <div className="section-title mb-6 rm:mb-8 md:mb-10 lg:mb-12 md:max-w-[760px] lg:max-w-[900px] mx-auto">
           <h2 className="dark-gold py-[2px]  text-2xl md:text-[40px] lg:text-[44px] 2xl:text-[48px] leading-[1.2] font-os font-bold uppercase text-center">
             {props.sectionData.title
               ? props.sectionData.title
