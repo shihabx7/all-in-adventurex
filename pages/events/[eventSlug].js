@@ -55,8 +55,7 @@ const showSingleEvent = (props) => {
         />
         <EventPageEscapeRoomCarousel
           sectionData={props.escapeRoomCarouselSectionData}
-           sectionHeadData={props.pageData.EventPageEscapeRoomCarouselData}
-
+          sectionHeadData={props.pageData.EventPageEscapeRoomCarouselData}
         />
         {props.pageData.MobileMysterySectionData.showCardSection && (
           <MobileMysteryEventSection
@@ -64,7 +63,9 @@ const showSingleEvent = (props) => {
           />
         )}
         <EventPageGallery sectionData={props.pageData.EventPageGalleryData} />
-        <CustomerLoveTestimonialCarousel sectionData={props.pageData.CustomerLoveTestimonialCarouselData} />
+        <CustomerLoveTestimonialCarousel
+          sectionData={props.pageData.CustomerLoveTestimonialCarouselData}
+        />
         <EventPageFaqs
           sectionData={props.pageData.EventPageFaqsData}
           eventFaqList={props.eventFaqList}
