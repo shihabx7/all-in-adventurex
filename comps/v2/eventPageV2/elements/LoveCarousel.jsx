@@ -1,7 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-
 export default function LoveCarousel({ customerLoveCarouselData }) {
   const responsive = {
     desktop: {
@@ -69,16 +68,16 @@ export default function LoveCarousel({ customerLoveCarouselData }) {
       >
         {customerLoveCarouselData.map((item, index) => {
           return (
-            <div key={index} className="rev-item">
+            <div key={index} className="rev-item h-full">
               {index % 2 == 0 ? (
-                <div className="love-carousel-card bg-[#EBDBB2] h-full flex flex-col space-y-8 rounded-[16px] p-3 xl:p-5 overflow-hidden -rotate-2">
+                <div className="love-carousel-card  bg-[#EBDBB2] h-full flex flex-col space-y-8 rounded-[16px] p-3 xl:p-5 overflow-hidden -rotate-2">
                   <div className="rev-txt">
                     <img
                       className="max-w-[120px]"
                       src={"/assets/event-page-v2/five-star-rating-icon.svg"}
                     ></img>
                     <p className="lg:text-sm xl:text-base text-[#374151] mt-5">
-                      {item.review}
+                      {item.text}
                     </p>
                   </div>
                   <div className="rev-author">
@@ -94,7 +93,7 @@ export default function LoveCarousel({ customerLoveCarouselData }) {
                       src={"/assets/event-page-v2/five-star-rating-icon.svg"}
                     ></img>
                     <p className="lg:text-sm xl:text-base text-[#ebebeb] mt-5">
-                      {item.review}
+                      {item.text}
                     </p>
                   </div>
                   <div className="rev-author">

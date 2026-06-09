@@ -62,7 +62,7 @@ const showSingleEvent = (props) => {
           />
         )}
         <EventPageGallery sectionData={props.pageData.EventPageGalleryData} />
-        <CustomerLoveTestimonialCarousel />
+        <CustomerLoveTestimonialCarousel sectionData={props.pageData.CustomerLoveTestimonialCarouselData} />
         <EventPageFaqs
           sectionData={props.pageData.EventPageFaqsData}
           eventFaqList={props.eventFaqList}

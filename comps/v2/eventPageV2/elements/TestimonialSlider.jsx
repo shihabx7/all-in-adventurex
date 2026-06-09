@@ -83,7 +83,9 @@ export default function TestimonialSlider({ testimonialData }) {
                 </div>
                 <div className="rev-author ">
                   <p className="text-sm text-[#BDBDBD] ">
-                    -- {item.authorName}{item.city !== null ? ", " + item.city : ""}{item.occupation ? ", " + item.occupation : ""}
+                    -- {item.authorName}
+                    {item.city !== null ? ", " + item.city : ""}
+                    {item.occupation ? ", " + item.occupation : ""}
                   </p>
                 </div>
               </div>
