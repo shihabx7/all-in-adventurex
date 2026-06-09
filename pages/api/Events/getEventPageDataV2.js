@@ -68,6 +68,7 @@ export const getEventPageDataV2 = async (eventSlug) => {
     totalLocations: totalLocations,
     eventName: eventDatav2[eventSlug].eventName,
     menuLabel: eventDatav2[eventSlug].menuLabel,
+    eventSlug:eventSlug,
     //============================================================v2
     pageMeta: eventPagMeta(eventSlug),
     pageData: eventPageData(eventSlug),

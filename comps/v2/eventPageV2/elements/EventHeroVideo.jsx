@@ -4,7 +4,7 @@ export default function EventHeroVideo({ videoData }) {
   const videoRef = useRef();
   const [videoUrl, setVideoUrl] = useState(null);
   const [loadVideo, setLoadVideo] = useState(false);
-
+  const [isLoading,setIsLoading]=useState(true)
   useEffect(() => {
     // setVideoUrl(videoData.videoUrl? videoData.videoUrl:"/assets/event-page-v2/birthday/birthday-party-hero-video.mp4")
     setVideoUrl(videoData.videoUrl);
@@ -13,25 +13,43 @@ export default function EventHeroVideo({ videoData }) {
 
   useEffect(() => {
     videoRef.current.play();
+    setIsLoading(false)
   }, [loadVideo]);
   return (
-    <video
-      ref={videoRef}
-      className={
-        "no-fullscreen-vid w-full h-full aspect-video object-cover object-center border-[#CB9442] border-2 sm:border-[4px] border-t-[1px] border-r-[1px] sm:border-t-[2px] sm:border-r-[2px] rounded-[10px] md:rounded-[12px]"
-      }
-      preload="metadata"
-      playsInline
-      autoPlay
-      loop
-      muted
-      poster={
-        videoData && videoData !== null
-          ? videoData.poster.url
-          : "/assets/event-page-v2/birthday/birthday-party-hero-video.mp4"
-      }
-    >
-      {/*
+    <>
+      {isLoading && <div
+        className={
+          "absolute w-full h-full rounded-[8px] md:rounded-[10px] z-10"
+        }
+      >
+        <img
+          className="w-full h-full  object-cover object-center rounded-[8px] md:rounded-[10px]"
+          src={
+            videoData && videoData !== null
+              ? videoData.poster.url
+              : "/assets/event-page-v2/birthday/birthday-party-hero-video-poster.jpg"
+          }
+          alt="hero video poster"
+        ></img>
+      </div>}
+
+      <video
+        ref={videoRef}
+        className={
+          "no-fullscreen-vid w-full h-full  object-cover object-center aspect-video  rounded-[8px] md:rounded-[10px]"
+        }
+        preload="metadata"
+        playsInline
+        autoPlay
+        loop
+        muted
+        poster={
+          videoData && videoData !== null
+            ? videoData.poster.url
+            : "/assets/event-page-v2/birthday/birthday-party-hero-video-poster.jpg"
+        }
+      >
+        {/*
        <source src={videoData.video.webmUrl} 
       
         <source
@@ -46,16 +64,17 @@ export default function EventHeroVideo({ videoData }) {
       />
       type={"video/webm"} />
       */}
-      {loadVideo && videoUrl !== null && (
-        <source
-          src={videoUrl}
-          type={
-            videoData.videoType && videoData.videoType !== null
-              ? videoData.videoType
-              : "video/mp4"
-          }
-        />
-      )}
-    </video>
+        {loadVideo && videoUrl !== null && (
+          <source
+            src={videoUrl}
+            type={
+              videoData.videoType && videoData.videoType !== null
+                ? videoData.videoType
+                : "video/mp4"
+            }
+          />
+        )}
+      </video>
+    </>
   );
 }

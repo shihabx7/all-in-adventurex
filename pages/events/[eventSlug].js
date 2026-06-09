@@ -11,6 +11,7 @@ import EventPageSeo from "../../comps/eventPageComps/EventPageSeo";
 //import EventRootHero from "../../comps/eventPageComps/EventRootHero";
 //import EventRootDetails from "../../comps/eventPageComps/EventRootDetails";
 //import EventRootTestimonials from "../../comps/eventPageComps/EventRootTestimonials";
+import EventRooTPageBread from "../../comps/v2/eventPageV2/EventRooTPageBread";
 // =================================================================================================v2
 import EventPageHero from "../../comps/v2/eventPageV2/EventPageHero";
 import FeedBackTestimonialSlider from "../../comps/v2/eventPageV2/FeedBackTestimonialSlider";
@@ -42,7 +43,7 @@ const showSingleEvent = (props) => {
         style={{ backgroundImage: "url('/assets/game-dt-bg.jpg')" }}
       >
         {/* =======breadcum content and breadcum========  */}
-        <PageBread labelText={props.menuLabel} />
+        <EventRooTPageBread labelText={props.menuLabel} slug={props.eventSlug}/>
         {/* =======breadcum content and breadcum root page template======== end */}
         {/*==============================v2 ==============================*/}
         <EventPageHero pageHeroData={props.pageData.PageHeroData} />
@@ -116,6 +117,7 @@ export const getStaticProps = async (context) => {
       otherGameSlugList: DATA.otherGameSlugList,
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
+      eventSlug:DATA.eventSlug,
       eventName: DATA.eventName,
       menuLabel: DATA.menuLabel,
       pageMeta: DATA.pageMeta,
