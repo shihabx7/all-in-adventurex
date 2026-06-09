@@ -42,11 +42,13 @@ const showSingleEvent = (props) => {
         style={{ backgroundImage: "url('/assets/game-dt-bg.jpg')" }}
       >
         {/* =======breadcum content and breadcum========  */}
-        <PageBread />
+        <PageBread labelText={props.menuLabel} />
         {/* =======breadcum content and breadcum root page template======== end */}
         {/*==============================v2 ==============================*/}
         <EventPageHero pageHeroData={props.pageData.PageHeroData} />
-        <FeedBackTestimonialSlider  sectionData={props.pageData.FeedBackTestimonialSliderData}/>
+        <FeedBackTestimonialSlider
+          sectionData={props.pageData.FeedBackTestimonialSliderData}
+        />
         <CheckOutPartyPackages
           sectionData={props.pageData.CheckOutPartyPackagesData}
           partyPackageList={props.partyPackageList}
@@ -111,6 +113,8 @@ export const getStaticProps = async (context) => {
       otherGameSlugList: DATA.otherGameSlugList,
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
+      eventName: DATA.eventName,
+      menuLabel: DATA.menuLabel,
       pageMeta: DATA.pageMeta,
       pageData: DATA.pageData,
       escapeRoomCarouselSectionData: DATA.escapeRoomCarouselSectionData,

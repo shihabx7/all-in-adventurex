@@ -32,7 +32,7 @@ export default function EventPageHero({
                     At {locationInfo.mall} in {locationName}
                   </p>
                 )}
-                <h1 className="ev-ibrew text-[#FFFFFF] font-semibold tracking-widest shadow-lg uppercase font-os my-2">
+                <h1 className="ev-ibrew text-[#FFFFFF] font-semibold tracking-widest uppercase font-os my-2">
                   {pageHeroData && pageHeroData.eyeBrewText
                     ? pageHeroData.eyeBrewText
                     : "Escape Room parties & events "}

@@ -101,9 +101,7 @@ export default function HomePageEventLisSection(props) {
 
                         <a
                           href={
-                            "/" +
-                            props.locationSlug +
-                            "/events/birthday-party"
+                            "/" + props.locationSlug + "/events/birthday-party"
                           }
                           className=" w-[48%] lm:w-[47%] md:w-[48%] border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
                          text-sm xl:text-base  text-white px-5 md:px-4 py-[11px] xl:px-6 xl:py-3 text-center font-medium"
@@ -215,7 +213,7 @@ export default function HomePageEventLisSection(props) {
                   <div className="txt">
                     <h3 className="egl-game-title leading-[1.1] font-bold text-[1.1rem] rm:text-[1.2rem] zm:text-[1.1rem] xl:text-[1.1875rem]  2xl:text-[1.2rem] uppercase text-[#E0BF62]">
                       {/*item.partyName*/}
-                      School Events & Field Trips 
+                      School Events & Field Trips
                     </h3>
                     {/*=========================================game short decription====*/}
                     <div className="egl-shot-desc mt-2 md:mt-2 xl:mt-3">

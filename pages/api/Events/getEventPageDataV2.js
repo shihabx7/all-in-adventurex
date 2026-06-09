@@ -26,7 +26,11 @@ import {
   eventPageData,
   eventPartyPackageList,
 } from "../../../lib/v2/formate/eventPageDataFormaterV2";
-import { partyPackageListV2,eventFaqListDefaultV2 } from "../../../lib/v2/data/eventDataV2";
+import {
+  eventDatav2,
+  partyPackageListV2,
+  eventFaqListDefaultV2,
+} from "../../../lib/v2/data/eventDataV2";
 
 export const getEventPageDataV2 = async (eventSlug) => {
   // const filters = "filters[eventSlug][$eq]=" + eventSlug;
@@ -42,7 +46,7 @@ export const getEventPageDataV2 = async (eventSlug) => {
   const locationListObj = await locationListRes.json();
   const locationListData = locationListObj.data;
   //const locationResData = locationObj.data[0].attributes;
- // console.log("Root Parties obj: " + JSON.stringify(locationListData[0]));
+  // console.log("Root Parties obj: " + JSON.stringify(locationListData[0]));
   // fetch all activity list as an array
   const activityListRes = await fetch(allActivitiesSluglistQuery, apiSetting);
   const activityListObj = await activityListRes.json();
@@ -62,6 +66,8 @@ export const getEventPageDataV2 = async (eventSlug) => {
     // eventSlugList: getAllEventSlugList(eventListResData),
     eventSlugList: eventMenuSlugListV2(),
     totalLocations: totalLocations,
+    eventName: eventDatav2[eventSlug].eventName,
+    menuLabel: eventDatav2[eventSlug].menuLabel,
     //============================================================v2
     pageMeta: eventPagMeta(eventSlug),
     pageData: eventPageData(eventSlug),
@@ -73,7 +79,7 @@ export const getEventPageDataV2 = async (eventSlug) => {
         eventSlug: eventSlug,
       }),
     partyPackageList: eventPartyPackageList(),
-    eventFaqList:eventFaqListDefaultV2,
+    eventFaqList: eventFaqListDefaultV2,
     /*
     
     pageMetaOld: getPageMeta(
