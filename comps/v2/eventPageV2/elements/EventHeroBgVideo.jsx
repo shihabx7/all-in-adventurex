@@ -41,7 +41,6 @@ export default function EventHeroBgVideo({ videoData }) {
       {loadVideo && videoUrl !== null && (
         <source src={videoUrl} type={"video/mp4"} />
       )}
-      
     </video>
   );
 }

@@ -103,7 +103,7 @@ export default function HomePageEventLisSection(props) {
                           href={
                             "/" +
                             props.locationSlug +
-                            "/events/  birthday-party"
+                            "/events/birthday-party"
                           }
                           className=" w-[48%] lm:w-[47%] md:w-[48%] border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
                          text-sm xl:text-base  text-white px-5 md:px-4 py-[11px] xl:px-6 xl:py-3 text-center font-medium"

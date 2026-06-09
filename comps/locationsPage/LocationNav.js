@@ -231,25 +231,28 @@ const LocationNav = (props) => {
         </div>
 
         {/*============floating booking btn mobile ==========*/}
-        <div
-          id="hbtn"
-          className="header-book-btn-container  w-full  bg-coffee  lg:hidden z-50"
-        >
-          <MobileBookingBtn
-            isPublished={props.isPublished ? props.isPublished : false}
-            locationSlug={props.locationSlug ? props.locationSlug : false}
-            allBooking={props.allBooking ? props.allBooking : false}
-            giftBooking={props.giftBooking ? props.giftBooking : false}
-            gameBooking={props.gameBooking ? props.gameBooking : false}
-            isGiftPage={props.isGiftPage ? props.isGiftPage : false}
-            partyBooking={props.partyBooking ? props.partyBooking : false}
-            eventSlug={props.eventSlug ? props.eventSlug : false}
-            activeGameBooking={
-              props.activeGameBooking ? props.activeGameBooking : false
-            }
-            activitySlug={props.activitySlug ? props.activitySlug : false}
-          />
-        </div>
+        {!props.hideMenuBookBtn && (
+          <div
+            id="hbtn"
+            className="header-book-btn-container  w-full  bg-coffee  lg:hidden z-50"
+          >
+            <MobileBookingBtn
+              isPublished={props.isPublished ? props.isPublished : false}
+              locationSlug={props.locationSlug ? props.locationSlug : false}
+              allBooking={props.allBooking ? props.allBooking : false}
+              giftBooking={props.giftBooking ? props.giftBooking : false}
+              gameBooking={props.gameBooking ? props.gameBooking : false}
+              isGiftPage={props.isGiftPage ? props.isGiftPage : false}
+              partyBooking={props.partyBooking ? props.partyBooking : false}
+              eventSlug={props.eventSlug ? props.eventSlug : false}
+              activeGameBooking={
+                props.activeGameBooking ? props.activeGameBooking : false
+              }
+              activitySlug={props.activitySlug ? props.activitySlug : false}
+            />
+          </div>
+        )}
+
         {/*============floating booking btn mobile end==========*/}
       </header>
       {/* ============Nav Header  end*/}
