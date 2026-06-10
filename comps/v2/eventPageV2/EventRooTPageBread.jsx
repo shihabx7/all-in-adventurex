@@ -74,7 +74,7 @@ export default function EventRooTPageBread(props) {
             </a>
           </li>
           <li className="inline-block text-[#191919]">
-            <a href="/events/team-building">
+            <a href={"/events/" + props.slug}>
               <div className="bitem flex items-center">
                 <span>{props.labelText}</span>{" "}
                 <span className="bsep text-[#CB9442]">
