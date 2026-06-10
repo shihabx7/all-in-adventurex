@@ -71,13 +71,16 @@ export default function EventPageHero({
             </div>
             {/**=============================================================================================video */}
             <div className="section-col order-1 lg:order-2 lg:max-w-[580px] 2xl:max-w-[608px] mb-6 md:mb-10 lg:mb-0">
-              <div className="video-bg-pattern w-full lg:max-w-[480px] xl:max-w-[576px]  2xl:max-w-[600px] relative">
-                <img
-                  className="max-w-full"
-                  src="/assets/event-page-v2/event-hero-video-bg-pattern.svg"
-                  alt="Hero Video Bg Pattern"
-                ></img>
-                <div className="video-wrapper bg-[#CB9442] absolute top-[-3px] right-[-3px] zm:top-[-4px] zm:right-[-4px] md:top-[-16px] md:right-[-16px] lg:top-[-10px] lg:right-[-10px] xl:top-[-15px] xl:right-[-15px] border-[#CB9442] border-2 sm:border-[4px] border-t-[1px] border-r-[1px] sm:border-t-[2px] sm:border-r-[2px] rounded-[10px] md:rounded-[12px] w-full h-full flex items-center justify-center z-10">
+              <div className="video-bg-pattern w-full lg:max-w-[480px] xl:max-w-[582px]  2xl:max-w-[596px] relative">
+                <div className="w-full">
+                  <img
+                    className="w-full"
+                    src="/assets/event-page-v2/event-hero-video-bg-pattern.svg"
+                    alt="Hero Video Bg Pattern"
+                  ></img>
+                </div>
+
+                <div className="video-wrapper bg-[#CB9442] absolute top-[-3px] right-[-3px] zm:top-[-4px] zm:right-[-4px] md:top-[-16px] md:right-[-16px] lg:top-[-10px] lg:right-[-10px] xl:top-[-15px] xl:right-[-15px] border-[#CB9442] border-2 sm:border-[4px] border-t-[1px] border-r-[1px] sm:border-t-[2px] sm:border-r-[2px] rounded-[10px] md:rounded-[12px] w-full h-full  z-10">
                   <EventHeroVideo
                     videoData={
                       pageHeroData && pageHeroData.videoData
