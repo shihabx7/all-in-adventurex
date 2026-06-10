@@ -156,8 +156,8 @@ export default function CheckOutPartyPackages(props) {
               />
             </div>
             {/*==================================================================================================================== large event*/}
-            <div className="item-col md:max-w-[52%] xl:max-w-[50%] bg-[#6376BC40]/25 border-2 border-[#20398E] rounded-xl">
-              <div className="item-contact-info text-[#DBDBDB] p-5 md:p-6 lg:p-5 xl:p-8">
+            <div className="item-col md:max-w-[54%] xl:max-w-[50%] bg-[#6376BC40]/25 border-2 border-[#20398E] rounded-xl">
+              <div className="item-contact-info text-[#DBDBDB] p-3 md:p-4 lg:p-5 xl:p-8">
                 <h3 className="xl:text-lg font-semibold text-white">
                   {props.sectionData.partyPackageInfo.bigPackageInfo.infoTitle
                     ? props.sectionData.partyPackageInfo.bigPackageInfo
@@ -185,14 +185,14 @@ export default function CheckOutPartyPackages(props) {
                     to catering.
                   </div>
                 )}
-                <div className="pn-em flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-2 md:space-x-6 xl:space-x-8 my-5 md:my-8">
+                <div className="pn-em flex flex-col lg:flex-row space-y-5 lg:space-y-0  lg:space-x-4 xl:space-x-7 my-5 md:my-6 xl:my-7">
                   <a
                     href={
                       props.locationInfo
                         ? "tel" + props.locationInfo.phone
                         : "tel:844-502-5546"
                     }
-                    className="flex items-center space-x-2 text-white font-bold md:text-lg hover:text-[#CB9442] transition-all duration-300 ease-linear "
+                    className="flex items-center space-x-2 text-white font-medium xl:text-lg hover:text-[#CB9442] transition-all duration-300 ease-linear "
                   >
                     <span className="text-gold">
                       <FaPhone />
@@ -209,7 +209,7 @@ export default function CheckOutPartyPackages(props) {
                         ? "mailto" + props.locationInfo.storeEmail
                         : "mailto:sales@allinadventures.com"
                     }
-                    className="flex items-center space-x-2 text-white font-bold md:text-lg hover:text-[#CB9442] transition-all duration-300 ease-linear "
+                    className="flex items-center space-x-2 text-white  font-medium xl:text-lg hover:text-[#CB9442] transition-all duration-300 ease-linear "
                   >
                     <span className="text-gold">
                       <FaEnvelope />
@@ -221,8 +221,15 @@ export default function CheckOutPartyPackages(props) {
                     </span>
                   </a>
                 </div>
-                <div className="sm:max-w-[340px] xl:max-w-[372px]">
+                <div className="big-party-booking">
                   <PartyFormBookingBtn
+                    btnLabel={
+                      props.sectionData.partyPackageInfo.bigPackageInfo
+                        .ctaBtnLabel
+                        ? props.sectionData.partyPackageInfo.bigPackageInfo
+                            .ctaBtnLabel
+                        : "TELL US ABOUT YOUR PARTY"
+                    }
                     locationSlug={
                       props.locationSlug ? props.locationSlug : false
                     }

@@ -27,7 +27,7 @@ export default function PartyFormBookingBtn(props) {
           onClick={() => {
             partyFormBooking(eventFormBookingLinks[props.locationSlug]);
           }}
-          className="flex justify-center items-center space-x-2 w-full py-2 rounded-full uppercase text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[15px] rm:text-base md:text-lg"
+          className="w-full md:w-auto max-w-[420px] flex justify-center items-center space-x-2 py-3 md:px-7 xl:px-10 rounded-full uppercase text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[.8rem] rm:text-[.9rem] md:text-[.92rem] lg:text-[1rem]"
         >
           <div className="w-[14px] md:w-[16px]">
             <img
@@ -40,7 +40,7 @@ export default function PartyFormBookingBtn(props) {
       ) : (
         <button
           onClick={(e) => showPartyFormModal()}
-          className="flex justify-center items-center space-x-2 w-full py-2.5 rounded-full uppercase text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[15px] rm:text-base md:text-lg"
+          className="w-full md:w-auto max-w-[420px] flex justify-center items-center space-x-2 py-3 px-10  rounded-full uppercase text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[.8rem] rm:text-[.9rem] md:text-[1.1rem] lg:text-[1.03rem]"
         >
           <div className="w-[14px] md:w-[16px]">
             <img

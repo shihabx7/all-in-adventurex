@@ -119,8 +119,8 @@ export default function EventPageFaqs(props) {
             openId={openId}
             setOpenId={setOpenId}
             faqList={
-              props.eventFaqList
-                ? initFaqList(props.eventFaqList, 0)
+              props.sectionData.eventFaqList
+                ? initFaqList( props.sectionData.eventFaqList, 0)
                 : tempFaqList
             }
           />
@@ -129,8 +129,8 @@ export default function EventPageFaqs(props) {
               openId={openId}
               setOpenId={setOpenId}
               faqList={
-                props.eventFaqList
-                  ? moreFaqArr(props.eventFaqList)
+                props.sectionData.eventFaqList
+                  ? moreFaqArr( props.sectionData.eventFaqList)
                   : tempFaqList
               }
             />
