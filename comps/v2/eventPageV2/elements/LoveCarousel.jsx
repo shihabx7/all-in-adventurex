@@ -80,9 +80,11 @@ export default function LoveCarousel({ customerLoveCarouselData }) {
                       {item.text}
                     </p>
                   </div>
-                  <div className="rev-author">
-                    <p className="text-sm text-[#374151] ">{item.authorName}</p>
-                    <p className="text-sm text-[#494949] mt-1">{item.city}</p>
+                  <div className="rev-author-box items-center">
+                    <p className="text-xs text-[#374151] ">
+                      &mdash; {item.authorName}
+                      {item.occupation ? ", " + item.occupation : ""}
+                    </p>
                   </div>
                 </div>
               ) : (
@@ -97,8 +99,10 @@ export default function LoveCarousel({ customerLoveCarouselData }) {
                     </p>
                   </div>
                   <div className="rev-author">
-                    <p className="text-sm text-[#CCCCCC] ">{item.authorName}</p>
-                    <p className="text-sm text-[#9C9C9C] mt-1">{item.city}</p>
+                    <p className="text-xs text-[#CCCCCC] ">
+                      &mdash; {item.authorName}
+                      {item.occupation ? ", " + item.occupation : ""}
+                    </p>
                   </div>
                 </div>
               )}

@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
+
 import MegFaqlist from "../../mobileEscapeGames/MegFaqlist";
 import EventFaqAccordion from "./elements/EventFaqAccordion";
 const tempFaqList = [
@@ -138,17 +140,25 @@ export default function EventPageFaqs(props) {
           {!showMore && (
             <button
               onClick={(e) => shoWMoreFaq()}
-              className="px-12 py-3 border-2 border-[#CA9342] bg-transparent hover:border-gold hover:bg-gold rounded-lg text-[#292929] font-medium lg:text-xl text-center drop-shadow-lg hover:drop-shadow transition-all duration-300"
+              className="flex space-x-2 items-center px-12 py-3 border-2 border-[#CA9342] bg-transparent hover:border-gold hover:bg-gold rounded-lg text-[#292929] font-medium lg:text-xl text-center drop-shadow-lg hover:drop-shadow transition-all duration-300"
             >
-              Show More
+              <span>Show More</span>
+              <span>
+               <FaAngleDown />
+              </span>
             </button>
           )}
           {showMore && (
             <button
               onClick={(e) => shoWMoreFaq()}
-              className="px-12 py-3 border-2  border-[#CA9342] bg-transparent hover:border-gold hover:bg-gold rounded-lg text-[#292929] font-medium lg:text-xl text-center drop-shadow-lg hover:drop-shadow transition-all duration-300"
+              className="flex space-x-2 items-center px-12 py-3 border-2  border-[#CA9342] bg-transparent hover:border-gold hover:bg-gold rounded-lg text-[#292929] font-medium lg:text-xl text-center drop-shadow-lg hover:drop-shadow transition-all duration-300"
             >
-              Show Less
+             
+              <span> Show Less</span>
+              <span>
+                  <FaAngleUp />
+               
+              </span>
             </button>
           )}
         </div>

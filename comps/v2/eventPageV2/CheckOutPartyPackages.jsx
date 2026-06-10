@@ -1,3 +1,5 @@
+import { FaPhone,FaEnvelope } from "react-icons/fa6";
+
 import BlueDarkDecorBg from "./elements/BlueDarkDecorBg";
 //import PartyPackageBookingBtn from "./elements/partyPackageBookingBtn";
 import PartyFormBookingBtn from "./elements/PartyFormBookingBtn";
@@ -119,9 +121,7 @@ export default function CheckOutPartyPackages(props) {
                         </button>
                       ) : (
                         <button
-                          onClick={(e) =>
-                            showPartyBookingModal(item.partyName)
-                          }
+                          onClick={(e) => showPartyBookingModal(item.partyName)}
                           className="block w-full py-2 rounded-full uppercase text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[15px] rm:text-base md:text-lg"
                         >
                           BOOK THIS PACKAGE
@@ -229,11 +229,16 @@ export default function CheckOutPartyPackages(props) {
                         ? "tel" + props.locationInfo.phone
                         : "tel:844-502-5546"
                     }
-                    className="text-white font-bold md:text-lg hover:text-red-700"
+                    className="flex items-center space-x-2 text-white font-bold md:text-lg hover:text-[#CB9442] transition-all duration-300 ease-linear "
                   >
-                    {props.locationInfo
-                      ? props.locationInfo.phone
-                      : "844-502-5546"}
+                    <span className="text-gold">
+                      <FaPhone />
+                    </span>
+                    <span>
+                      {props.locationInfo
+                        ? props.locationInfo.phone
+                        : "844-502-5546"}{" "}
+                    </span>
                   </a>
                   <a
                     href={
@@ -241,14 +246,19 @@ export default function CheckOutPartyPackages(props) {
                         ? "mailto" + props.locationInfo.storeEmail
                         : "mailto:sales@allinadventures.com"
                     }
-                    className="text-white font-bold md:text-lg hover:text-red-700"
+                    className="flex items-center space-x-2 text-white font-bold md:text-lg hover:text-[#CB9442] transition-all duration-300 ease-linear "
                   >
-                    {props.locationInfo
-                      ? props.locationInfo.storeEmail
-                      : "sales@allinadventures.com"}
+                    <span className="text-gold">
+                      <FaEnvelope  />
+                    </span>
+                    <span>
+                      {props.locationInfo
+                        ? props.locationInfo.storeEmail
+                        : "sales@allinadventures.com"}
+                    </span>
                   </a>
                 </div>
-                <div className="max-w-[330px]">
+                <div className="sm:max-w-[336px] xl:max-w-[360px]">
                   <PartyFormBookingBtn
                     locationSlug={
                       props.locationSlug ? props.locationSlug : false

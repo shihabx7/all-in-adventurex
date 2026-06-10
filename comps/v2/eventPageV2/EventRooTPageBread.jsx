@@ -34,19 +34,7 @@ export default function EventRooTPageBread(props) {
               <div className="bitem flex items-center">
                 <span>Home</span>{" "}
                 <span className="bsep text-[#CB9442]">
-                  <svg
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                  </svg>
+                  <FiChevronRight/>
                 </span>
               </div>
             </a>
@@ -56,19 +44,7 @@ export default function EventRooTPageBread(props) {
               <div className="bitem flex items-center">
                 <span>Events</span>{" "}
                 <span className="bsep text-[#CB9442]">
-                  <svg
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                  </svg>
+                 <FiChevronRight/>
                 </span>
               </div>
             </a>
@@ -78,19 +54,7 @@ export default function EventRooTPageBread(props) {
               <div className="bitem flex items-center">
                 <span>{props.labelText}</span>{" "}
                 <span className="bsep text-[#CB9442]">
-                  <svg
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                  </svg>
+                 <FiChevronRight/>
                 </span>
               </div>
             </a>

@@ -1,5 +1,7 @@
 import { locationBookingInfo } from "../../../lib/v2/data/locationBookingInfo";
 import { FaArrowDown } from "react-icons/fa6";
+import { FaMapMarkerAlt } from "react-icons/fa";
+
 import EventHeroBgVideo from "./elements/EventHeroBgVideo";
 import EventHeroVideo from "./elements/EventHeroVideo";
 export default function EventPageHero({
@@ -28,9 +30,14 @@ export default function EventPageHero({
             <div className="section-col order-2 lg:order-1 max-w-[640px] lg:max-w-[500px] xl:max-w-[576px] 2xl:max-w-[600px]">
               <div className="section-text">
                 {locationInfo && locationName && (
-                  <p className="location-mall text-sm md:text-base text-white">
-                    At {locationInfo.mall} in {locationName}
-                  </p>
+                  <div className="flex space-x-2">
+                    <p className="location-pin text-base md:text-lg text-white">
+                      <FaMapMarkerAlt />
+                    </p>
+                    <p className="location-mall text-sm md:text-base text-white">
+                      At {locationInfo.mall} in {locationName}
+                    </p>
+                  </div>
                 )}
                 <h1 className="ev-ibrew text-[#FFFFFF] font-semibold tracking-widest uppercase font-os my-2">
                   {pageHeroData && pageHeroData.eyeBrewText
