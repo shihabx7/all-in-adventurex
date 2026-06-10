@@ -40,9 +40,9 @@ export default function PartyFormBookingBtn(props) {
       ) : (
         <button
           onClick={(e) => showPartyFormModal()}
-          className="block w-full py-2 rounded-full uppercase text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[15px] rm:text-base md:text-lg"
+          className="flex justify-center items-center space-x-2 w-full py-2.5 rounded-full uppercase text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[15px] rm:text-base md:text-lg"
         >
-          <div className="max-w-[16px]">
+          <div className="w-[14px] md:w-[16px]">
             <img
               className="block w-full h-auto "
               src="/assets/event-page-v2/doc-icon.svg"

@@ -48,7 +48,7 @@ export default function HomePageEventLisSection(props) {
               </div>
               <div className="bg-img-over-lay rounded-lg w-full h-full absolute top-0 left-0 z-[20] overlay-dark-bottom "></div>
 
-              <div className="event-info-content h-full flex flex-col justify-end relative z-[30] p-2 rm:p-2  zm:p-4 md:p-4  xl:p-4">
+              <div className="event-info-content h-full flex flex-col justify-between relative z-[30] p-2 rm:p-3 zm:p-4 md:px-3 md:py-5 xl:px-5 xl:py-6">
                 <div className="list-card-gap h-[180px] rm:h-[200px] md:h-[300px] xl:h-[320px]"></div>
                 {/*=========================================game  decription====*/}
                 <div className="bottom-section md:max-w-[440px] lg:max-w-[700px] flex flex-col justify-end space-y-6">
@@ -127,12 +127,11 @@ export default function HomePageEventLisSection(props) {
               </div>
               <div className="bg-img-over-lay rounded-lg w-full h-full absolute top-0 left-0 z-[20] overlay-dark-bottom "></div>
 
-              <div className="event-info-content h-full flex flex-col justify-end  relative z-[30] p-2 rm:p-2  zm:p-4 md:p-4  xl:p-4">
+              <div className="event-info-content h-full flex flex-col justify-between  relative z-[30] p-2 rm:p-3 zm:p-4 md:px-3 md:py-5 xl:px-5 xl:py-6">
                 <div className="list-card-gap h-[180px] rm:h-[200px] md:h-[300px] xl:h-[320px]"></div>
                 {/*=========================================game  decription====*/}
                 <div className="bottom-section md:max-w-[440px] lg:max-w-[700px] flex flex-col justify-end space-y-6">
                   <div className="txt">
-                    {" "}
                     <h3 className="egl-game-title leading-[1.1] font-bold text-[1.1rem] rm:text-[1.2rem] zm:text-[1.1rem] xl:text-[1.1875rem]  2xl:text-[1.2rem] uppercase text-[#E0BF62]">
                       {/*item.partyName*/}
                       Team Building & Group Events
@@ -206,7 +205,7 @@ export default function HomePageEventLisSection(props) {
               </div>
               <div className="bg-img-over-lay rounded-lg w-full h-full absolute top-0 left-0 z-[20] overlay-dark-bottom "></div>
 
-              <div className="event-info-content h-full flex flex-col justify-end relative z-[30] p-2 rm:p-2  zm:p-4 md:p-4  xl:p-4">
+              <div className="event-info-content  h-full flex flex-col justify-between relative z-[30] p-2 rm:p-3 zm:p-4 md:px-3 md:py-5 xl:px-5 xl:py-6">
                 <div className="list-card-gap h-[180px] rm:h-[200px] md:h-[300px] xl:h-[320px]"></div>
                 {/*=========================================game  decription====*/}
                 <div className="bottom-section md:max-w-[440px] lg:max-w-[700px] flex flex-col justify-end space-y-6">

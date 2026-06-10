@@ -144,7 +144,7 @@ export default function EventPageFaqs(props) {
             >
               <span>Show More</span>
               <span>
-               <FaAngleDown />
+                <FaAngleDown />
               </span>
             </button>
           )}
@@ -153,11 +153,9 @@ export default function EventPageFaqs(props) {
               onClick={(e) => shoWMoreFaq()}
               className="flex space-x-2 items-center px-12 py-3 border-2  border-[#CA9342] bg-transparent hover:border-gold hover:bg-gold rounded-lg text-[#292929] font-medium lg:text-xl text-center drop-shadow-lg hover:drop-shadow transition-all duration-300"
             >
-             
               <span> Show Less</span>
               <span>
-                  <FaAngleUp />
-               
+                <FaAngleUp />
               </span>
             </button>
           )}

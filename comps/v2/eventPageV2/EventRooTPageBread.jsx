@@ -34,7 +34,7 @@ export default function EventRooTPageBread(props) {
               <div className="bitem flex items-center">
                 <span>Home</span>{" "}
                 <span className="bsep text-[#CB9442]">
-                  <FiChevronRight/>
+                  <FiChevronRight />
                 </span>
               </div>
             </a>
@@ -44,7 +44,7 @@ export default function EventRooTPageBread(props) {
               <div className="bitem flex items-center">
                 <span>Events</span>{" "}
                 <span className="bsep text-[#CB9442]">
-                 <FiChevronRight/>
+                  <FiChevronRight />
                 </span>
               </div>
             </a>
@@ -54,7 +54,7 @@ export default function EventRooTPageBread(props) {
               <div className="bitem flex items-center">
                 <span>{props.labelText}</span>{" "}
                 <span className="bsep text-[#CB9442]">
-                 <FiChevronRight/>
+                  <FiChevronRight />
                 </span>
               </div>
             </a>
