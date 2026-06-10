@@ -150,14 +150,14 @@ export default function CheckOutPartyPackages(props) {
           {/*===========================================================================================================================package-info2===*/}
           <div className="section-row packages-info-2 flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 md:space-x-2 mt-6 md:mt-10 xl:mt-12">
             {/*====================================================================================================================*/}
-            <div className="item-col md:max-w-[45%] xl:max-w-[37%]">
+            <div className="item-col md:max-w-[44%] xl:max-w-[37%]">
               <PartyPackageListBox
                 boxItem={props.sectionData.partyPackageInfo.cancellationInfo}
               />
             </div>
             {/*==================================================================================================================== large event*/}
-            <div className="item-col md:max-w-[54%] xl:max-w-[50%] bg-[#6376BC40]/25 border-2 border-[#20398E] rounded-xl">
-              <div className="item-contact-info text-[#DBDBDB] p-3 md:p-4 lg:p-5 xl:p-8">
+            <div className="item-col md:max-w-[55%] xl:max-w-[50%] bg-[#6376BC40]/25 border-2 border-[#20398E] rounded-xl">
+              <div className="item-contact-info text-[#DBDBDB] py-5 px-2 rm:py-6 rm:px-3 md:p-4 lg:p-5 xl:p-8">
                 <h3 className="xl:text-lg font-semibold text-white">
                   {props.sectionData.partyPackageInfo.bigPackageInfo.infoTitle
                     ? props.sectionData.partyPackageInfo.bigPackageInfo
