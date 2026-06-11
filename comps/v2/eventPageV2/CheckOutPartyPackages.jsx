@@ -189,7 +189,7 @@ export default function CheckOutPartyPackages(props) {
                   <a
                     href={
                       props.locationInfo
-                        ? "tel" + props.locationInfo.phone
+                        ? "tel:" + props.locationInfo.phone
                         : "tel:844-502-5546"
                     }
                     className="flex items-center space-x-2 text-white font-medium xl:text-lg hover:text-[#CB9442] transition-all duration-300 ease-linear "
@@ -200,13 +200,13 @@ export default function CheckOutPartyPackages(props) {
                     <span>
                       {props.locationInfo
                         ? props.locationInfo.phone
-                        : "844-502-5546"}{" "}
+                        : "844-502-5546"}
                     </span>
                   </a>
                   <a
                     href={
                       props.locationInfo
-                        ? "mailto" + props.locationInfo.storeEmail
+                        ? "mailto:" + props.locationInfo.storeEmail
                         : "mailto:sales@allinadventures.com"
                     }
                     className="flex items-center space-x-2 text-white  font-medium xl:text-lg hover:text-[#CB9442] transition-all duration-300 ease-linear "
