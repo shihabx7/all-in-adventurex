@@ -25,7 +25,7 @@ export default function EventPageHero({
         <EventHeroBgVideo />
       </div>
       <div className="section-wrapper relative bg-[#370202]/80 z-20">
-        <div className="section-container xl:max-w-[1230px] 2xl:max-w-7xl mx-auto pb-16 pt-12 md:py-20 lg:py-[9rem] xl:py-32 2xl:py-[10rem] px-3 zm:px-4">
+        <div className="section-container md:max-w-[840px] lg:maz-w-[1020px] xl:max-w-[1236px] 2xl:max-w-7xl mx-auto pb-16 pt-12 md:py-20 lg:py-[9rem] xl:py-32 2xl:py-[10rem] px-3 zm:px-4">
           <div className="section-row flex flex-col lg:flex-row lg:space-x-5 lg:justify-between  items-center">
             <div className="section-col order-2 lg:order-1 max-w-[640px] lg:max-w-[500px] xl:max-w-[50%] 2xl:max-w-[48%]">
               <div className="section-text">

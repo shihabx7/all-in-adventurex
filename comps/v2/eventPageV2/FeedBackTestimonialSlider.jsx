@@ -38,9 +38,9 @@ export default function FeedBackTestimonialSlider({
 }) {
   return (
     <div className="reward-work-section bg-[#FFF9EB] bg-[url('/assets/mobile-escape-room/brown-paper-bg.jpg')] bg-[240px_240px] md:bg-[300px_300px] lg:bg-[400px_400px]">
-      <div className="section-container max-w-[640px] lg:max-w-7xl py-16 md:py-20 lg:py-28 px-4 mx-auto">
+      <div className="section-container max-w-[860px] lg:max-w-7xl py-16 md:py-20 lg:py-28 px-4 mx-auto">
         <div className="section-row flex flex-col lg:flex-row justify-between lg:space-x-2">
-          <div className="section-col max-w-[570px]">
+          <div className="section-col  lg:max-w-[570px]">
             <img
               className="max-w-full"
               src={
