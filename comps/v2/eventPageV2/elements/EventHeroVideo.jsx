@@ -18,7 +18,9 @@ export default function EventHeroVideo({ videoData }) {
   return (
     <div className="w-full h-full relative">
       <div
-        className={"loader  w-full h-full rounded-[8px] md:rounded-[10px] z-20"}
+        className={
+          "vid-loader  w-full h-full rounded-[8px] md:rounded-[10px] z-20"
+        }
       >
         {isLoading && (
           <img
@@ -49,21 +51,6 @@ export default function EventHeroVideo({ videoData }) {
               : "/assets/event-page-v2/birthday/birthday-party-hero-video-poster.jpg"
           }
         >
-          {/*
-       <source src={videoData.video.webmUrl} 
-      
-        <source
-        src={
-          videoData && videoData !== null
-            ? videoData.videoUrl
-            : "/assets/event-page-v2/all-in-adventure-birthday-party-hero-video.mp4"
-        }
-        type={
-          videoData && videoData !== null ? videoData.videoType : "video/mp4"
-        }
-      />
-      type={"video/webm"} />
-      */}
           {loadVideo && videoUrl !== null && (
             <source
               src={videoUrl}

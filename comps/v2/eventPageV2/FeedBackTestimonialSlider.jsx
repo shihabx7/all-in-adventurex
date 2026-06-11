@@ -60,7 +60,7 @@ export default function FeedBackTestimonialSlider({
               </h2>
               {sectionData && sectionData.descriptionHtml != null && (
                 <div
-                  className="text-[#2e2e2e] md:text-lg 2xl:text-[1.2rem] mt-1 md:mt-2"
+                  className="text-[#2e2e2e] md:text-lg 2xl:text-[1.2rem] mt-3 md:mt-2"
                   dangerouslySetInnerHTML={{
                     __html: sectionData.descriptionHtml,
                   }}
