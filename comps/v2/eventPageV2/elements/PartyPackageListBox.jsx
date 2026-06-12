@@ -10,7 +10,11 @@ export default function PartyPackageListBox({ boxItem }) {
         <div className="box-list">
           <ul className="list-disc text-sm xl:text-base text-[#adadad] mt-3 xl:mt-4 pl-4 xl:pl-6">
             {boxItem.infoList.map((item, index) => {
-              return <li key={index} className="my-3">{item}</li>;
+              return (
+                <li key={index} className="my-3">
+                  {item}
+                </li>
+              );
             })}
           </ul>
         </div>

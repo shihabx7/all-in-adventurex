@@ -81,7 +81,7 @@ export default function EventPageHero({
               <div className="video-bg-pattern w-full relative">
                 <div className="w-full">
                   <img
-                    className="w-full"
+                    className="w-full block"
                     src="/assets/event-page-v2/event-hero-video-bg-pattern.svg"
                     alt="Hero Video Bg Pattern"
                   ></img>

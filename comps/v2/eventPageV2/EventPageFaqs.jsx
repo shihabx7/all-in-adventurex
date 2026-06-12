@@ -71,7 +71,7 @@ export default function EventPageFaqs(props) {
   const [moreFaqList, setMoreFaqList] = useState([]);
   const [showMore, setShowMore] = useState(false);
   // control open box
-  const [openId, setOpenId] = useState(0);
+  const [openId, setOpenId] = useState(1);
 
   const setStep = () => {
     let ret = props.eventFaqList.length / showLimit;
@@ -83,7 +83,6 @@ export default function EventPageFaqs(props) {
   useEffect(() => {
     setStep();
     setShowMore(false);
-    setOpenId(0);
   }, []);
   const shoWMoreFaq = () => {
     setShowMore(!showMore);
@@ -108,19 +107,20 @@ export default function EventPageFaqs(props) {
               : "FREQUENTLY ASKED QUESTIONS"}
           </h2>
           {props.sectionData && props.sectionData.description && (
-            <div className="text-[#2E2E2E] mt-1 md:mt-2  text-center md:text-lg lg:text-xl  mx-auto">
+            <div className="text-[#2E2E2E] mt-1 md:mt-2  text-center md:text-lg lg:text-xl mx-auto">
               {props.sectionData.description}
             </div>
           )}
         </div>
 
-        <div className="mer-faq-box max-w-[860px] mx-auto">
+        <div className="mer-faq-box max-w-[830px] mx-auto">
           <EventFaqAccordion
             openId={openId}
             setOpenId={setOpenId}
+            locationInfo={props.locationInfo ? props.locationInfo : null}
             faqList={
               props.sectionData.eventFaqList
-                ? initFaqList( props.sectionData.eventFaqList, 0)
+                ? initFaqList(props.sectionData.eventFaqList, 0)
                 : tempFaqList
             }
           />
@@ -128,9 +128,10 @@ export default function EventPageFaqs(props) {
             <EventFaqAccordion
               openId={openId}
               setOpenId={setOpenId}
+              locationInfo={props.locationInfo ? props.locationInfo : null}
               faqList={
                 props.sectionData.eventFaqList
-                  ? moreFaqArr( props.sectionData.eventFaqList)
+                  ? moreFaqArr(props.sectionData.eventFaqList)
                   : tempFaqList
               }
             />

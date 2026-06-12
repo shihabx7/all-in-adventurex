@@ -2,33 +2,19 @@ import { useState } from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 export default function EventFaqAccordion({
-  faqList,
-  showMore,
-  setShowMore,
-  openId,
-  setOpenId,
+  textList,
   locationInfo,
 }) {
-  const [faqAns, setFaqAns] = useState(0);
 
-  const showAns = (id) => {
-    if (openId != id) {
-      setOpenId(id);
-    } else {
-      setOpenId(0);
-    }
-  };
   const defContact = {
     phone: "844-502-5546",
     storeEmail: "sales@allinadventures.com",
   };
-  const replaceContact = (faqText, info) => {
-    const defPhone = info && info.phone ? info.phone : "844-502-5546";
-    const defEmail =
-      info && info.storeEmail ? info.storeEmail : "sales@allinadventures.com";
-    const retHtml = faqText
-      .replaceAll("[PHONE]", info.phone)
-      .replaceAll("[EMAIL]", info.storeEmail);
+  const replaceContact = (txt, info) => {
+  
+    const retHtml = txt
+      .replace("[PHONE]", info.phone)
+      .replace("[EMAIL]", info.storeEmail);
 
     return { __html: retHtml };
   };

@@ -36,11 +36,10 @@ export default function EventPageGallery({ sectionData }) {
               );
             })}
           </div>
-         
         </div>
-         <div className="lg:hidden">
-            <GalleryCarouselView imageList={ sectionData.galleryImages}/>
-          </div>
+        <div className="lg:hidden">
+          <GalleryCarouselView imageList={sectionData.galleryImages} />
+        </div>
       </div>
     </div>
   );
