@@ -1,3 +1,4 @@
+import GalleryCarouselView from "./elements/GalleryCarouselView";
 export default function EventPageGallery({ sectionData }) {
   return (
     <div className="eventpage-gallery-section bg-[#090909] relative">
@@ -15,23 +16,31 @@ export default function EventPageGallery({ sectionData }) {
           </p>
         </div>
         {/**===============================================================gallery */}
-        <div className="grid-gallery grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-2 xl:gap-3">
-          {sectionData.galleryImages.map((item, index) => {
-            return (
-              <div key={index} className={"gallery-item item-" + index}>
-                <img
-                  className="max-w-full h-auto"
-                  src={
-                    item.url
-                      ? item.url
-                      : "/assets/event-page-v2/birthday/birthday-parties-gallery-01.png"
-                  }
-                  alt={item.alt ? item.alt : "escape room event party gallery"}
-                ></img>
-              </div>
-            );
-          })}
+        <div className="hidden lg:block">
+          <div className="grid-gallery grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-2 xl:gap-3">
+            {sectionData.galleryImages.map((item, index) => {
+              return (
+                <div key={index} className={"gallery-item item-" + index}>
+                  <img
+                    className="max-w-full h-auto"
+                    src={
+                      item.url
+                        ? item.url
+                        : "/assets/event-page-v2/birthday/birthday-parties-gallery-01.png"
+                    }
+                    alt={
+                      item.alt ? item.alt : "escape room event party gallery"
+                    }
+                  ></img>
+                </div>
+              );
+            })}
+          </div>
+         
         </div>
+         <div className="lg:hidden">
+            <GalleryCarouselView imageList={ sectionData.galleryImages}/>
+          </div>
       </div>
     </div>
   );
