@@ -61,7 +61,11 @@ export default function EventPageHero({
                     href={"#book-party-pacakages"}
                     className=" w-full py-3 px-5 rounded-full uppercase text-center flex justify-center items-center space-x-2 text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-sm rm:text-base md:text-lg"
                   >
-                    <span>BOOK A PARTY PACKAGE </span>
+                    <span>
+                      {pageHeroData.ctaBtnLabel
+                        ? pageHeroData.ctaBtnLabel
+                        : "BOOK A PARTY PACKAGE"}
+                    </span>
                     <FaArrowDown />
                   </a>
                 </div>

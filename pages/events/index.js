@@ -18,6 +18,7 @@ const showAllevents = (props) => {
         escapeGameSlugList={props.escapeGameSlugList}
         otherGameSlugList={props.otherGameSlugList}
         eventSlugList={props.eventSlugList}
+        hideMenuBookBtn={true}
       />
       {/* =======header content ======== end */}
 

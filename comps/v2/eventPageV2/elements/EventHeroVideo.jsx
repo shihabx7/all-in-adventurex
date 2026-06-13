@@ -17,52 +17,31 @@ export default function EventHeroVideo({ videoData }) {
   }, [loadVideo]);
   return (
     <div className="w-full h-full relative">
-      <div
+      <video
+        ref={videoRef}
         className={
-          "vid-loader  w-full h-full rounded-[8px] md:rounded-[10px] z-20"
+          "no-fullscreen-vid absolute top-0 left-0 w-full h-full  object-cover object-center aspect-video  rounded-[8px] md:rounded-[10px] z-30"
+        }
+        preload="metadata"
+        playsInline
+        autoPlay
+        loop
+        muted
+        poster={
+          videoData && videoData !== null
+            ? videoData.poster.url
+            : "/assets/event-page-v2/birthday/birthday-party-hero-video-poster.jpg"
         }
       >
-        {isLoading && (
-          <img
-            className="w-full h-full  object-cover object-center rounded-[8px] md:rounded-[10px] transition-opacity duration-600 ease-in"
-            src={
-              videoData && videoData !== null
-                ? videoData.poster.url
-                : "/assets/event-page-v2/birthday/birthday-party-hero-video-poster.jpg"
-            }
-            alt="hero video poster"
-          ></img>
-        )}
-      </div>
-      <div>
-        <video
-          ref={videoRef}
-          className={
-            "no-fullscreen-vid absolute top-0 left-0 w-full h-full  object-cover object-center aspect-video  rounded-[8px] md:rounded-[10px] z-30"
+        <source
+          src={videoData.videoUrl}
+          type={
+            videoData.videoType && videoData.videoType !== null
+              ? videoData.videoType
+              : "video/mp4"
           }
-          preload="metadata"
-          playsInline
-          autoPlay
-          loop
-          muted
-          poster={
-            videoData && videoData !== null
-              ? videoData.poster.url
-              : "/assets/event-page-v2/birthday/birthday-party-hero-video-poster.jpg"
-          }
-        >
-          {loadVideo && videoUrl !== null && (
-            <source
-              src={videoUrl}
-              type={
-                videoData.videoType && videoData.videoType !== null
-                  ? videoData.videoType
-                  : "video/mp4"
-              }
-            />
-          )}
-        </video>
-      </div>
+        />
+      </video>
     </div>
   );
 }

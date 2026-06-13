@@ -34,21 +34,28 @@ const EventRootList = (props) => {
         ></img>
       </div>
       {/*======================= boder img end============== */}
-      {/**=================== all event list============*/}
+
       <div className="all-games-container max-w-7xl mx-auto relative  z-30 pt-[110px] pb-16 md:py-20 lg:py-28 px-4">
-        <div className="all-gamelist-box grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-8">
-          <div className="section-title  text-center max-w-[840px] mx-auto">
-            <TitleSeparator title={props.eventListData.title} />
-            <div
-              className="text-gray-700 mt-4 md:mt-6 mb-4 md:mb-6 md:px-8 md:text-lg"
-              dangerouslySetInnerHTML={{ __html: props.eventListData.subTitle }}
-            ></div>
-          </div>
+        {/*======================= ==================================section head============== */}
+        <div className="section-title  text-center max-w-[960px] mx-auto">
+          <h2 className="dark-gold text-2xl uppercase md:text-[40px] lg:text-[44px] font-os font-bold">
+            {props.eventListData.title
+              ? props.eventListData.title
+              : "AN INCREDIBLE ESCAPE ROOM PARTY VENUE"}
+          </h2>
+          <div
+            className="text-gray-800 mt-3 md:mt-4 lg:mt-5 md:text-lg xl:text-[1.2rem]"
+            dangerouslySetInnerHTML={{ __html: props.eventListData.subTitle }}
+          ></div>
+        </div>
+        {/**=================== ============================================================all event list grid============*/}
+
+        <div className="all-gamelist-box mt-8 md:mt-10 lg:mt-12 grid grid-cols-1 gap-y-6 md:gap-y-7 lg:gap-y-10">
           {props.eventListData.eventList.map((event) => {
             return (
               <div
                 key={event.id}
-                className="all-game-list bg-center bg-cover p-4 md:p-6 lg:p-8"
+                className="all-game-list bg-center bg-cover px-3 py-6 md:p-6 lg:p-8 rounded-[10px]"
                 style={{
                   backgroundImage:
                     "linear-gradient(12deg, rgba(0,0,0,0.98),rgba(0,0,0,0.84),rgba(0,0,0,0.71),rgba(0,0,0,0),rgba(0,0,0,0)),url('" +
@@ -57,28 +64,21 @@ const EventRootList = (props) => {
                   boxShadow: "0px 0px 12px 1px rgba(0,0,0,0.25)",
                 }}
               >
-                <div className="all-game-list-gap py-[104px] md:py-[12%] lg:py-[116px]"></div>
+                <div className="all-game-list-gap py-[128px] md:py-[120px] lg:py-[120px]"></div>
                 <div className="all-game-list-bottom">
                   <div className=" text-center md:text-left">
-                    <h3 className="card-game-title text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-white">
+                    <h3 className="card-game-title text-[1.2rem] rm:text-[1.25rem] md:text-3xl lg:text-4xl font-bold uppercase text-gold">
                       {event.eventName}
                     </h3>
-                    <p className="text-gray-200 lg:text-lg mx-auto md:mx-0 max-w-[490px]">
+                    <p className="text-gray-200 text-sm rm:text-[.94rem] md:text-base lg:text-lg mx-auto md:mx-0 max-w-[490px]">
                       {event.description}
                     </p>
                   </div>
 
-                  <div className="card-game-link mt-4 text-left">
-                    <button
-                      onClick={showLocModal}
-                      className="border-2 w-[240px] card-book-btn block md:inline-block mx-auto md:mx-0 border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white"
-                    >
-                      BOOK EVENT
-                    </button>
-
+                  <div className="card-game-link mt-6 text-left">
                     <a
                       href={"/events/" + event.eventSlug}
-                      className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-4  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white"
+                      className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-0  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white"
                     >
                       LEARN MORE
                     </a>
@@ -88,7 +88,7 @@ const EventRootList = (props) => {
             );
           })}
         </div>
-        <div className="link-btn mt-8 md:mt-16">
+        <div className="link-btn mt-10 md:mt-12 lg:mt-16">
           <a
             href="/activities"
             className="border-2 max-w-[280px] text-center  block  mx-auto  border-red-600 bg-red-600 py-2 md:py-3 px-12 rounded-full font-medium text-lg mb-4 hover:bg-red-700 hover:border-red-700 text-white"

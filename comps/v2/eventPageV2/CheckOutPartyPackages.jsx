@@ -76,12 +76,12 @@ export default function CheckOutPartyPackages(props) {
           </div>
           {/*=======================================================party packages===*/}
           {props.partyPackageList && props.partyPackageList.length > 0 && (
-            <div className="section-row party-packages-row flex flex-col md:flex-row  justify-center space-y-8 md:space-y-0 md:space-x-3 xl:space-x-4 mt-6 md:mt-8 xl:mt-10">
+            <div className="section-row party-packages-row flex flex-col md:flex-row  justify-center space-y-8  md:space-y-0 md:space-x-3 xl:space-x-4 mt-6 md:mt-8 xl:mt-10">
               {props.partyPackageList.map((item, index) => {
                 return (
                   <div
                     key={index}
-                    className="sec-col package-item bg-[#111111]/40 md:p-4 xl:p-6"
+                    className="sec-col package-item bg-[#111111]/40 p-4 md:p-4 xl:p-6"
                   >
                     <div className="package-poster relative">
                       <img

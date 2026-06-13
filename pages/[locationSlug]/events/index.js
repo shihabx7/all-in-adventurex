@@ -30,6 +30,7 @@ const LocationEvents = (props) => {
         allBooking={props.allBooking}
         hasMobileEscapeRoom={props.hasMobileEscapeRoom}
         giftBooking={props.giftBooking}
+        hideMenuBookBtn={true}
       />
       <div id="mainContent" className="main-content">
         <DynamicPageBread
