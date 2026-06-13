@@ -11,7 +11,7 @@ export default function EventHeroVideo({ videoData }) {
   }, []);
 
   return (
-    <div className="w-full h-full relative">
+   
       <video
         ref={heroVideoRef}
         className={
@@ -37,6 +37,6 @@ export default function EventHeroVideo({ videoData }) {
           }
         />
       </video>
-    </div>
+
   );
 }
