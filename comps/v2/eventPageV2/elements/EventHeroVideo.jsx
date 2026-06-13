@@ -15,9 +15,9 @@ export default function EventHeroVideo({ videoData }) {
       <video
         ref={heroVideoRef}
         className={
-          "no-fullscreen-vid absolute top-0 left-0 w-full h-full  object-cover object-center aspect-video  rounded-[8px] md:rounded-[10px] z-30"
+          "no-fullscreen-vid event-hero-video w-full h-full  object-cover object-center aspect-video  rounded-[8px] md:rounded-[10px] z-30"
         }
-        preload="metadata"
+        preload="auto"
         playsInline
         autoPlay
         loop

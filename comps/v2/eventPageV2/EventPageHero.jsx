@@ -38,7 +38,7 @@ export default function EventPageHero({
                   ></img>
                 </div>
 
-                <div className="video-wrapper bg-[#CB9442] absolute top-[-3px] right-[-3px] zm:top-[-4px] zm:right-[-4px] md:top-[-16px] md:right-[-16px] lg:top-[-10px] lg:right-[-10px] xl:top-[-14px] xl:right-[-14px] border-[#CB9442] border-2 sm:border-[4px] border-t-[1px] border-r-[1px] sm:border-t-[2px] sm:border-r-[2px] rounded-[10px] md:rounded-[12px] w-full h-full  z-10">
+                <div className="video-wrapper w-full h-full  bg-[#CB9442] absolute top-[-3px] right-[-3px] zm:top-[-4px] zm:right-[-4px] md:top-[-16px] md:right-[-16px] lg:top-[-10px] lg:right-[-10px] xl:top-[-14px] xl:right-[-14px] border-[#CB9442] border-2 sm:border-[4px] border-t-[1px] border-r-[1px] sm:border-t-[2px] sm:border-r-[2px] rounded-[10px] md:rounded-[12px]  z-20">
 
                   <EventHeroVideo
                     videoData={
