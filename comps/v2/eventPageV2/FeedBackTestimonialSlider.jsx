@@ -38,7 +38,7 @@ export default function FeedBackTestimonialSlider({
 }) {
   return (
     <div className="reward-work-section bg-[#FFF9EB] bg-[url('/assets/mobile-escape-room/brown-paper-bg.jpg')] bg-[240px_240px] md:bg-[300px_300px] lg:bg-[400px_400px]">
-      <div className="section-container max-w-[860px] lg:max-w-7xl py-16 md:py-20 lg:py-28 px-4 mx-auto">
+      <div className="section-container max-w-[860px] lg:max-w-7xl py-16 md:py-20 lg:py-28 px-3 rm:px-4 mx-auto">
         <div className="section-row flex flex-col lg:flex-row justify-between lg:space-x-2">
           <div className="section-col  lg:max-w-[570px]">
             <img
@@ -69,7 +69,7 @@ export default function FeedBackTestimonialSlider({
             </div>
           </div>
         </div>
-        <div className="feedback-testimonial mt-10 xl:mt-12">
+        <div className="feedback-testimonial mt-6 zm:mt-10 xl:mt-12">
           <TestimonialSlider
             testimonialData={
               sectionData.testimonialData

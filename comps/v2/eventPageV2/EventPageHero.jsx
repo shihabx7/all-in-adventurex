@@ -27,6 +27,30 @@ export default function EventPageHero({
       <div className="section-wrapper relative bg-[#370202]/80 z-20">
         <div className="section-container md:max-w-[840px] lg:maz-w-[1020px] xl:max-w-[1236px] 2xl:max-w-7xl mx-auto pb-16 pt-12 md:py-20 lg:py-[9rem] xl:py-32 2xl:py-[10rem] px-3 zm:px-4">
           <div className="section-row flex flex-col lg:flex-row lg:space-x-5 lg:justify-between  items-center">
+              {/**==================================================================================================================video col*/}
+            <div className="section-col mb-6 md:mb-10 lg:mb-0 order-1 lg:order-2 lg:max-w-[580px] xl:max-w-[45%]  2xl:max-w-[46%]">
+              <div className="video-bg-pattern w-full relative">
+                <div className="w-full">
+                  <img
+                    className="w-full h-auto block"
+                    src="/assets/event-page-v2/event-hero-video-bg-pattern.svg"
+                    alt="Hero Video Bg Pattern"
+                  ></img>
+                </div>
+
+                <div className="video-wrapper bg-[#CB9442] absolute top-[-3px] right-[-3px] zm:top-[-4px] zm:right-[-4px] md:top-[-16px] md:right-[-16px] lg:top-[-10px] lg:right-[-10px] xl:top-[-14px] xl:right-[-14px] border-[#CB9442] border-2 sm:border-[4px] border-t-[1px] border-r-[1px] sm:border-t-[2px] sm:border-r-[2px] rounded-[10px] md:rounded-[12px] w-full h-full  z-10">
+                  <EventHeroVideo
+                    videoData={
+                      pageHeroData && pageHeroData.videoData
+                        ? pageHeroData.videoData
+                        : null
+                    }
+                  />  
+                  
+                </div>
+              </div>
+            </div>
+             {/**=========================================================================================================text content col*/}
             <div className="section-col order-2 lg:order-1 max-w-[640px] lg:max-w-[500px] xl:max-w-[50%] 2xl:max-w-[48%]">
               <div className="section-text">
                 {locationInfo && locationName && (
@@ -80,29 +104,8 @@ export default function EventPageHero({
                 </div>
               </div>
             </div>
-            {/**=============================================================================================video */}
-            <div className="section-col mb-6 md:mb-10 lg:mb-0 order-1 lg:order-2 lg:max-w-[580px] xl:max-w-[45%]  2xl:max-w-[46%]">
-              <div className="video-bg-pattern w-full relative">
-                <div className="w-full">
-                  <img
-                    className="w-full block"
-                    src="/assets/event-page-v2/event-hero-video-bg-pattern.svg"
-                    alt="Hero Video Bg Pattern"
-                  ></img>
-                </div>
-
-                <div className="video-wrapper bg-[#CB9442] absolute top-[-3px] right-[-3px] zm:top-[-4px] zm:right-[-4px] md:top-[-16px] md:right-[-16px] lg:top-[-10px] lg:right-[-10px] xl:top-[-14px] xl:right-[-14px] border-[#CB9442] border-2 sm:border-[4px] border-t-[1px] border-r-[1px] sm:border-t-[2px] sm:border-r-[2px] rounded-[10px] md:rounded-[12px] w-full h-full  z-10">
-                  <EventHeroVideo
-                    videoData={
-                      pageHeroData && pageHeroData.videoData
-                        ? pageHeroData.videoData
-                        : null
-                    }
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+          
+          </div> 
         </div>
       </div>
     </div>

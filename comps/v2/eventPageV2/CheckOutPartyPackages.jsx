@@ -37,7 +37,7 @@ export default function CheckOutPartyPackages(props) {
       </div>
       {/*========================================================content ===*/}
       <div className="section-wrapper relative z-10">
-        <div className="section-container md:max-w-[860px] lg:max-w-7xl py-16 md:py-20 lg:py-28 px-4 xl:px-8 mx-auto">
+        <div className="section-container md:max-w-[860px] lg:max-w-7xl py-16 md:py-20 lg:py-28 px-3 rm:px-4 xl:px-8 mx-auto">
           {/*=============================================================================================================================section heading===*/}
           <div className="section-head max-w-[940px] ">
             <h2 className="text-white   text-2xl md:text-[2.5rem] 2xl:text-[2.875rem] leading-[1.2] font-os font-bold uppercase ">
@@ -76,12 +76,12 @@ export default function CheckOutPartyPackages(props) {
           </div>
           {/*=======================================================party packages===*/}
           {props.partyPackageList && props.partyPackageList.length > 0 && (
-            <div className="section-row party-packages-row flex flex-col md:flex-row  justify-center space-y-8  md:space-y-0 md:space-x-3 xl:space-x-4 mt-6 md:mt-8 xl:mt-10">
+            <div className="section-row party-packages-row flex flex-col md:flex-row  justify-center space-y-5 rm:space-y-7 zm:space-y-8  md:space-y-0 md:space-x-3 xl:space-x-4 mt-6 md:mt-8 xl:mt-10">
               {props.partyPackageList.map((item, index) => {
                 return (
                   <div
                     key={index}
-                    className="sec-col package-item bg-[#111111]/40 p-4 md:p-4 xl:p-6"
+                    className="sec-col package-item bg-[#111111]/40 p-2.5 rm:p-3.5 zm:p-5 md:p-4 xl:p-6"
                   >
                     <div className="package-poster relative">
                       <img

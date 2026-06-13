@@ -550,7 +550,7 @@
   .fyp-baner {
     background: linear-gradient(
       to top,
-      rgb(0, 0, 0,1),
+      rgb(0, 0, 0, 1),
       rgba(0, 0, 0, 0.99),
       rgba(0, 0, 0, 0.72),
       rgba(0, 0, 0, 0.03)
@@ -638,7 +638,8 @@
   }
 
   .mbl-list-bg {
-    background-image: linear-gradient(
+    background-image:
+      linear-gradient(
         53deg,
         rgba(0, 0, 0, 0.92),
         rgba(0, 0, 0, 0.82),
@@ -665,11 +666,11 @@
   }
   /*===============================================================carousel dot*/
   .react-multi-carousel-dot {
-    width: 20px !important;
+    width: 17px !important;
     height: 5px !important;
   }
   .react-multi-carousel-dot button {
-    width: 16px !important;
+    width: 15px !important;
     height: 5px !important;
   }
 }
@@ -763,9 +764,9 @@
   }
 
   .aia-new-dot-list .react-multi-carousel-dot--active button {
-    width: 18px !important;
+    width: 12px !important;
     height: 5px !important;
-    margin-right: 4px !important;
+    margin-right: 3px !important;
   }
 }
 
@@ -1016,6 +1017,10 @@
     font-size: 20px !important;
     margin-bottom: 0px !important;
   }
+  .react-multi-carousel-dot {
+    width: 14px !important;
+    height: 5px !important;
+  }
 }
 
 @media only screen and (max-width: 391px) {
@@ -1051,11 +1056,11 @@
   }
   /*===============================================================carousel dot*/
   .react-multi-carousel-dot {
-    width: 18px !important;
+    width: 11px !important;
     height: 5px !important;
   }
   .react-multi-carousel-dot button {
-    width: 15px !important;
+    width: 10px !important;
     height: 4px !important;
   }
 }

@@ -88,7 +88,7 @@ export default function EscapeRoomPosterCarousel({ gameCarouselData }) {
         keyBoardControl={true}
         customTransition=".5s ease-in-out"
         transitionDuration={500}
-        containerClass="aia-new-carousel-container section-bg-light  home-event-carousel-container pt-1 md:pt-1 lg:pt-2 pb-14 sm:pb-16 lg:pb-20"
+        containerClass="aia-new-carousel-container section-bg-light  home-event-carousel-container pt-1 md:pt-1 lg:pt-2 pb-16 lg:pb-20"
         //removeArrowOnDeviceType={["tablet", "mobile"]}
         //deviceType={this.props.deviceType}
         dotListClass="custom-dot-list-style aia-new-dot-list"

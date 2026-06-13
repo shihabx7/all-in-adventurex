@@ -55,13 +55,13 @@ export default function TestimonialSlider({ testimonialData }) {
         autoPlay={true}
         autoPlaySpeed={5000}
         keyBoardControl={true}
-        customTransition=".5s ease-in"
-        transitionDuration={1000}
-        containerClass="aia-new-carousel-container section-bg-light  home-event-carousel-container pt-8 md:pt-8 lg:pt-10 pb-14 sm:pb-12 lg:pb-16"
+        customTransition="1s ease-in-out"
+        transitionDuration={2000}
+        containerClass="aia-new-carousel-container section-bg-light  home-event-carousel-container pt-12 md:pt-9 lg:pt-10 pb-16 lg:pb-20"
         //removeArrowOnDeviceType={["tablet", "mobile"]}
         //deviceType={this.props.deviceType}
         dotListClass="custom-dot-list-style aia-new-dot-list"
-        itemClass="aia-new-carousel-item home-event-car-list rounded-[16px] px-[4px] zm:px-[5px] md:px-2 xl:px-3"
+        itemClass="aia-new-carousel-item home-event-car-list rounded-[16px] px-1 zm:px-3 md:px-2 xl:px-3"
         renderArrowsOutside={true}
         renderDotsOutside={false}
         partialVisible={false}
@@ -75,7 +75,7 @@ export default function TestimonialSlider({ testimonialData }) {
                   src={"/assets/event-page-v2/inverted-quote.svg"}
                 ></img>
               </div>
-              <div className="love-carousel-card bg-[#231800] h-full flex flex-col space-y-8 rounded-[16px] px-5 py-6 md:p-7 xl:p-8  relative">
+              <div className="testim-card bg-[#231800] h-full flex flex-col space-y-8 rounded-[16px] px-2.5 rm:px-4 py-6 md:p-7 xl:p-8  relative">
                 <div className="rev-txt pt-3.5 md:pt-5">
                   <p className="text-[1.05rem] md:text-[1.1rem] xl:text-[1.2rem] leading-[1.5] font-thin text-[#FFEFD8] italic">
                     {item.text}

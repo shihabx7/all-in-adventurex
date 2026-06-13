@@ -16,25 +16,25 @@ export default function LoveCarousel({ customerLoveCarouselData }) {
       partialVisibilityGutter: 8,
     },
     tablet: {
-      breakpoint: { max: 1000, min: 640 },
+      breakpoint: { max: 1000, min: 768 },
       items: 3,
       slidesToSlide: 1,
       partialVisibilityGutter: 16,
     },
     mobileLg: {
-      breakpoint: { max: 639, min: 430 },
-      items: 1,
+      breakpoint: { max: 767, min: 500 },
+      items: 2,
       slidesToSlide: 1,
       partialVisibilityGutter: 100,
     },
     mobile: {
-      breakpoint: { max: 429, min: 341 },
+      breakpoint: { max: 499, min: 360 },
       items: 1,
       slidesToSlide: 1,
       partialVisibilityGutter: 22,
     },
     mobileXs: {
-      breakpoint: { max: 340, min: 0 },
+      breakpoint: { max: 359, min: 0 },
       items: 1,
       slidesToSlide: 1,
       partialVisibilityGutter: 15,
@@ -57,11 +57,11 @@ export default function LoveCarousel({ customerLoveCarouselData }) {
         keyBoardControl={true}
         customTransition=".5s ease-in-out"
         transitionDuration={500}
-        containerClass="aia-new-carousel-container section-bg-light  home-event-carousel-container pt-1 md:pt-1 lg:pt-2 pb-14 sm:pb-16 lg:pb-20"
+        containerClass="aia-new-carousel-container section-bg-light  home-event-carousel-container pt-2 zm:pt-4 md:pt-2.5 lg:pt-3 pb-20 lg:pb-20"
         //removeArrowOnDeviceType={["tablet", "mobile"]}
         //deviceType={this.props.deviceType}
         dotListClass="custom-dot-list-style aia-new-dot-list"
-        itemClass="aia-new-carousel-item home-event-car-list rounded-[16px] px-[4px] zm:px-[5px] md:px-2 xl:px-3"
+        itemClass="aia-new-carousel-item home-event-car-list rounded-[16px] px-2 zm:px-2.5 xl:px-3"
         renderArrowsOutside={true}
         renderDotsOutside={false}
         partialVisible={false}
@@ -70,7 +70,7 @@ export default function LoveCarousel({ customerLoveCarouselData }) {
           return (
             <div key={index} className="rev-item h-full">
               {index % 2 == 0 ? (
-                <div className="love-carousel-card  bg-[#EBDBB2] h-full flex flex-col space-y-8 rounded-[16px] p-3 xl:p-5 overflow-hidden -rotate-2">
+                <div className="love-carousel-card  bg-[#EBDBB2] h-full flex flex-col space-y-8 rounded-[16px] px-4 py-6 zm:p-6 md:p-4 xl:p-5 overflow-hidden -rotate-2">
                   <div className="rev-txt">
                     <img
                       className="max-w-[120px]"
@@ -88,7 +88,7 @@ export default function LoveCarousel({ customerLoveCarouselData }) {
                   </div>
                 </div>
               ) : (
-                <div className="love-carousel-card-dk bg-[#423109] h-full flex flex-col space-y-8 rounded-[16px] p-3 xl:p-5 overflow-hidden rotate-2">
+                <div className="love-carousel-card-dk bg-[#423109] h-full flex flex-col space-y-8 rounded-[16px] px-4 py-6 zm:p-6 md:p-4 xl:p-5 overflow-hidden rotate-2">
                   <div className="rev-txt">
                     <img
                       className="max-w-[120px]"
