@@ -25,7 +25,7 @@ export default function EventPageHeroV2({
         <EventHeroBgVideo />
       </div>
       <div className="section-wrapper relative bg-[#370202]/80 z-20">
-        <div className="section-container md:max-w-[860px] lg:max-w-[1020px] xl:max-w-[1236px] 2xl:max-w-7xl mx-auto pb-16 pt-12 md:py-20 lg:py-[9rem] xl:py-32 2xl:py-[10rem] px-2.5 rm:px-3 zm:px-5 md:px-10 lg:px-8 xl:px-4">
+        <div className="section-container md:max-w-[860px] lg:max-w-[1040px] xl:max-w-[1236px] 2xl:max-w-7xl mx-auto pb-16 pt-12 md:py-20 lg:py-[9rem] xl:py-32 2xl:py-[10rem] px-2.5 rm:px-3 zm:px-5 md:px-10 lg:px-8 xl:px-4">
           <div className="section-row flex flex-col lg:flex-row lg:space-x-5 lg:justify-between  items-center">
             {/**==================================================================================================================video col*/}
             <div className="section-col mb-6 md:mb-10 lg:mb-0 order-1 lg:order-2 w-full lg:w-[48%] xl:w-[45%]  2xl:w-[46%]">
@@ -64,15 +64,7 @@ export default function EventPageHeroV2({
                 </div>
               </div>
             </div>
-            {/**======================================================================================================*** <div className="video-wrapper w-full h-full  bg-[#CB9442] absolute top-[-3px] right-[-3px] zm:top-[-4px] zm:right-[-4px] md:top-[-16px] md:right-[-16px] lg:top-[-10px] lg:right-[-10px] xl:top-[-14px] xl:right-[-14px] border-[#CB9442] border-2 sm:border-[4px] border-t-[1px] border-r-[1px] sm:border-t-[2px] sm:border-r-[2px] rounded-[10px] md:rounded-[12px]  z-20">
-                  <EventHeroVideo
-                    videoData={
-                      pageHeroData && pageHeroData.videoData
-                        ? pageHeroData.videoData
-                        : null
-                    }
-                  />
-                </div>****===text content col*/}
+            {/**==================================================================================================================text col*/}
             <div className="section-col order-2 lg:order-1 w-full lg:w-[49%] xl:w-[50%] 2xl:w-[48%]">
               <div className="section-text">
                 {locationInfo && locationName && (
@@ -101,6 +93,7 @@ export default function EventPageHeroV2({
                     : "Skip the party packages and book 60 minutes of pure escape room fun — no party room, no catering, just the game. Perfect for small groups, last-minute plans, or anyone looking to celebrate with nonstop adventure."}
                 </p>
               </div>
+              {/**==================================================================================================================cta col*/}
               <div className="btn-pair-row mt-6  md:mt-10 xl:mt-12 flex flex-col sm:flex-row justify-center md:justify-start items-center space-y-6 sm:space-y-0 sm:space-x-3 md:spce-x-4 lg:space-x-1 xl:space-x-3">
                 <div className="scrol-btn w-full sm:max-w-[300px] ">
                   <a

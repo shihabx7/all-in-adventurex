@@ -40,9 +40,7 @@ export default function EventHeroVideo({ videoData }) {
     <>
       <div className={"w-full h-full absolute z-20  bg-gray-900"}>
         <img
-          className={
-            " w-full h-full objcet-cover object-center "
-          }
+          className={" w-full h-full objcet-cover object-center "}
           style={{
             opacity: !isHide ? "1" : ".9",
           }}
@@ -78,7 +76,7 @@ export default function EventHeroVideo({ videoData }) {
                 ? videoData.videoUrl
                 : "/assets/event-page-v2/birthday/birthday-party-hero-video.mp4"
             }
-            type={"video/mp4"}
+            type={videoData?.videoType ? videoData.videoType : "video/mp4"}
           />
         )}
       </video>

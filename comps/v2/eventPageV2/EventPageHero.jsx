@@ -25,7 +25,7 @@ export default function EventPageHero({
         <EventHeroBgVideo />
       </div>
       <div className="section-wrapper relative bg-[#370202]/80 z-20">
-        <div className="section-container md:max-w-[840px] lg:max-w-[1020px] xl:max-w-[1236px] 2xl:max-w-7xl mx-auto pb-16 pt-12 md:py-20 lg:py-[9rem] xl:py-32 2xl:py-[10rem] px-3 zm:px-4">
+        <div className="section-container md:max-w-[860px] lg:max-w-[1040px] xl:max-w-[1236px] 2xl:max-w-7xl mx-auto pb-16 pt-12 md:py-20 lg:py-[9rem] xl:py-32 2xl:py-[10rem] px-2.5 rm:px-3 zm:px-5 md:px-10 lg:px-8 xl:px-4">
           <div className="section-row flex flex-col lg:flex-row lg:space-x-5 lg:justify-between  items-center">
             {/**==================================================================================================================video col*/}
             <div className="section-col mb-6 md:mb-10 lg:mb-0 order-1 lg:order-2 w-full lg:w-[48%] xl:w-[45%]  2xl:w-[46%]">
@@ -70,12 +70,12 @@ export default function EventPageHero({
                     ? pageHeroData.eyeBrewText
                     : "Escape Room parties & events "}
                 </h1>
-                <h2 className="uppercase text-white text-3xl md:text-[2.875rem] xl:text-[2.7rem] 2xl:text-[3rem] leading-[1.2] font-os font-semibold  my-2 md:my-2 lg:my-3">
+                <h2 className="uppercase text-white text-3xl md:text-[2.875rem] lg:text-[2.35rem] xl:text-[2.7rem] 2xl:text-[3rem] leading-[1.2] font-os font-semibold  my-2 md:my-3 lg:my-3">
                   {pageHeroData && pageHeroData.title
                     ? pageHeroData.title
                     : "All in adventure escape room event"}
                 </h2>
-                <p className="text-[#CACACA] md:text-lg 2xl:text-[1.2rem]">
+                <p className="text-[#CACACA] md:text-lg lg:text-base xl:text-[1.05rem] 2xl:text-[1.2rem] md:mt-4 lg:mt-0">
                   {pageHeroData && pageHeroData.description
                     ? pageHeroData.description
                     : "Skip the party packages and book 60 minutes of pure escape room fun — no party room, no catering, just the game. Perfect for small groups, last-minute plans, or anyone looking to celebrate with nonstop adventure."}
@@ -85,7 +85,7 @@ export default function EventPageHero({
                 <div className="scrol-btn w-full sm:max-w-[300px] ">
                   <a
                     href={"#book-party-pacakages"}
-                    className=" w-full py-3 px-5 rounded-full uppercase text-center flex justify-center items-center space-x-2 text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-sm rm:text-base md:text-lg"
+                     className=" w-full py-3 px-5 rounded-full uppercase text-center flex justify-center items-center md:space-x-3 lg:space-x-1 xl:space-x-2 text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-sm rm:text-base md:text-lg lg:text-sm xl:text-lg"
                   >
                     <span>
                       {pageHeroData.ctaBtnLabel
@@ -98,7 +98,7 @@ export default function EventPageHero({
                 <div className="scrol-btn  w-full sm:max-w-[250px] ">
                   <a
                     href={"#escape-game-booking"}
-                    className=" w-full py-3 px-5 rounded-full uppercase text-center flex justify-center items-center space-x-2 text-white font-medium border-2 border-white bg-transparent hover:border-red-700 hover:bg-red-700 text-sm rm:text-base md:text-lg"
+               className=" w-full py-3 px-5 rounded-full uppercase text-center flex justify-center items-center md:space-x-3 lg:space-x-1 xl:space-x-2 text-white font-medium border-2 border-white bg-transparent hover:border-red-700 hover:bg-red-700 text-sm rm:text-base md:text-lg lg:text-sm xl:text-lg"
                   >
                     <span>BOOK GAME ONLY</span>
                     <FaArrowDown />
