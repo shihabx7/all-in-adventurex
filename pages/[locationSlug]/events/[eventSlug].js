@@ -59,7 +59,7 @@ const LocSingleEvent = (props) => {
           eventName={props.eventName}
         />
         {/* =============== ============================================v2*/}
-        <EventPageHeroV2
+        <EventPageHero
           pageHeroData={props.pageData.PageHeroData}
           locationSlug={props.locationSlug}
           locationName={props.locationName}

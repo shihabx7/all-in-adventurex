@@ -50,7 +50,7 @@ const showSingleEvent = (props) => {
         />
         {/* =======breadcum content and breadcum root page template======== end */}
         {/*==============================v2 ==============================*/}
-        <EventPageHeroV2 pageHeroData={props.pageData.PageHeroData} />
+        <EventPageHero pageHeroData={props.pageData.PageHeroData} />
         <FeedBackTestimonialSlider
           sectionData={props.pageData.FeedBackTestimonialSliderData}
         />

@@ -29,27 +29,28 @@ export default function EventPageHero({
           <div className="section-row flex flex-col lg:flex-row lg:space-x-5 lg:justify-between  items-center">
             {/**==================================================================================================================video col*/}
             <div className="section-col mb-6 md:mb-10 lg:mb-0 order-1 lg:order-2 w-full lg:w-[48%] xl:w-[45%]  2xl:w-[46%]">
-              <div className="video-bg-pattern w-full relative">
-                <div className="w-full">
-                  <img
-                    className="w-full h-auto block"
-                    src="/assets/event-page-v2/event-hero-video-bg-pattern.png"
-                    alt="Hero Video Bg Pattern"
-                  ></img>
-                </div>
-
-                <div className="video-wrapper w-full h-full  bg-[#CB9442] absolute top-[-3px] right-[-3px] zm:top-[-4px] zm:right-[-4px] md:top-[-16px] md:right-[-16px] lg:top-[-10px] lg:right-[-10px] xl:top-[-14px] xl:right-[-14px] border-[#CB9442] border-2 sm:border-[4px] border-t-[1px] border-r-[1px] sm:border-t-[2px] sm:border-r-[2px] rounded-[10px] md:rounded-[12px]  z-20">
-
-                  <EventHeroVideo
-                    videoData={
-                      pageHeroData && pageHeroData.videoData
-                        ? pageHeroData.videoData
-                        : null
-                    }
-                  />
-
+              <div className="event-hero-video-container pl-1.5 pb-1.5 md:pl-5 md:pb-5 lg:pl-3.5 lg:pb-3.5 max-w-full ">
+                {/**==================================================================================================================video box*/}
+                <div className="video-place w-full aspect-[756/516]  relative">
+                  <div className="w-full h-full overflow-hidden relative z-10 border border-t-[1px] border-r-[1px]  border-b-[3px] border-l-[3px] sm:border-t-[3px] sm:border-r-[3px]  sm:border-b-[6px] sm:border-l-[6px] lg:border-t-[2px] lg:border-r-[2px]  lg:border-b-[4px] lg:border-l-[4px] border-gold rounded-lg md:rounded-xl bg-gold" >
+                    <EventHeroVideo
+                      videoData={
+                        pageHeroData && pageHeroData.videoData
+                          ? pageHeroData.videoData
+                          : null
+                      }
+                    />
+                  </div>
+                  <div className="w-full h-full absolute -bottom-1.5 -left-1.5 md:-bottom-5 md:-left-5 lg:-bottom-3.5 lg:-left-3.5">
+                    <img
+                      className="w-full h-full objcet-cover object-center"
+                      src="/assets/event-page-v2/event-hero-video-bg-pattern.png"
+                      alt="Hero Video Bg Pattern"
+                    ></img>
+                  </div>
                 </div>
               </div>
+              {/**==================================================================================================================video box*/}
             </div>
             {/**=========================================================================================================text content col*/}
             <div className="section-col order-2 lg:order-1 w-full lg:w-[49%] xl:w-[50%] 2xl:w-[48%]">
@@ -111,3 +112,5 @@ export default function EventPageHero({
     </div>
   );
 }
+
+
