@@ -30,24 +30,25 @@ export default function EventHeroVideoV2({ videoData }) {
           }
         ></img>
       </div>
-      <div className=" main-video  w-full h-full absolute top-0 left-0 z-10 rounded-[10px] md:rounded-[13px] border-[1px] border-l-[3px] border-b-[3px] zm:border-2 zm:border-l-[4px] zm:border-b-[4px] md:border-[3px] md:border-l-[5px] md:border-b-[5px] lg:border-2 lg:border-l-4 lg:border-b-4 border-gold ">
-        <video
-          ref={heroVideoRef}
-          className={
-            "no-fullscreen-vid no-lgy-ld event-hero-video w-full h-full  object-cover object-center aspect-video  rounded-[8px] md:rounded-[10px]  z-30"
-          }
-          preload={ "auto" }
-          playsInline
-          autoPlay
-          loop
-          muted
-          poster={
-            videoData && videoData !== null
-              ? videoData.poster.url
-              : "/assets/event-page-v2/birthday/birthday-party-hero-video-poster.jpg"
-          }
-        >
-          {/*isVideoLoad && videoUrl !== null && ( )*/}
+      <div className=" main-video  w-full h-full  absolute top-0 left-0 z-10 rounded-[10px] md:rounded-[13px] border-[1px] border-l-[3px] border-b-[3px] zm:border-2 zm:border-l-[4px] zm:border-b-[4px] md:border-[3px] md:border-l-[5px] md:border-b-[5px] lg:border-2 lg:border-l-4 lg:border-b-4 border-gold ">
+        <div className=" w-full aspect-[756/514]  overflow-hidden shadow-md relative">
+          <video
+            ref={heroVideoRef}
+            className={
+              "no-fullscreen-vid no-lgy-ld event-hero-video w-full h-full  object-cover object-center rounded-[8px] md:rounded-[10px]  z-30"
+            }
+            preload={"auto"}
+            playsInline
+            autoPlay
+            loop
+            muted
+            poster={
+              videoData && videoData !== null
+                ? videoData.poster.url
+                : "/assets/event-page-v2/birthday/birthday-party-hero-video-poster.jpg"
+            }
+          >
+            {/*isVideoLoad && videoUrl !== null && ( )*/}
             <source
               src={videoData.videoUrl}
               type={
@@ -56,8 +57,8 @@ export default function EventHeroVideoV2({ videoData }) {
                   : "video/mp4"
               }
             />
-         
-        </video>
+          </video>
+        </div>
       </div>
     </div>
   );
