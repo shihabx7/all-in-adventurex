@@ -12,6 +12,7 @@ import PageSeo from "../../../comps/util/PageSeo";
 import DynamicPageBread from "../../../comps/util/DynamicPageBread";
 //==========================v2
 import EventPageHero from "../../../comps/v2/eventPageV2/EventPageHero";
+import EventPageHeroV2 from "../../../comps/v2/eventPageV2/EventPageHeroV2";
 import FeedBackTestimonialSlider from "../../../comps/v2/eventPageV2/FeedBackTestimonialSlider";
 import CheckOutPartyPackages from "../../../comps/v2/eventPageV2/CheckOutPartyPackages";
 import EventPageEscapeRoomCarousel from "../../../comps/v2/eventPageV2/EventPageEscapeRoomCarousel";
@@ -58,7 +59,7 @@ const LocSingleEvent = (props) => {
           eventName={props.eventName}
         />
         {/* =============== ============================================v2*/}
-        <EventPageHero
+        <EventPageHeroV2
           pageHeroData={props.pageData.PageHeroData}
           locationSlug={props.locationSlug}
           locationName={props.locationName}

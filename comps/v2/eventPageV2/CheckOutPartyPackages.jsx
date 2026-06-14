@@ -37,7 +37,7 @@ export default function CheckOutPartyPackages(props) {
       </div>
       {/*========================================================content ===*/}
       <div className="section-wrapper relative z-10">
-        <div className="section-container md:max-w-[860px] lg:max-w-7xl py-16 md:py-20 lg:py-28 px-3 rm:px-4 xl:px-8 mx-auto">
+        <div className="section-container md:max-w-[900px] lg:max-w-7xl py-16 md:py-20 lg:py-28 px-3 rm:px-4 xl:px-8 mx-auto">
           {/*=============================================================================================================================section heading===*/}
           <div className="section-head max-w-[940px] ">
             <h2 className="text-white   text-2xl md:text-[2.5rem] 2xl:text-[2.875rem] leading-[1.2] font-os font-bold uppercase ">

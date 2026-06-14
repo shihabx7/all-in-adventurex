@@ -14,6 +14,7 @@ import EventPageSeo from "../../comps/eventPageComps/EventPageSeo";
 import EventRooTPageBread from "../../comps/v2/eventPageV2/EventRooTPageBread";
 // =================================================================================================v2
 import EventPageHero from "../../comps/v2/eventPageV2/EventPageHero";
+import EventPageHeroV2 from "../../comps/v2/eventPageV2/EventPageHeroV2";
 import FeedBackTestimonialSlider from "../../comps/v2/eventPageV2/FeedBackTestimonialSlider";
 import CheckOutPartyPackages from "../../comps/v2/eventPageV2/CheckOutPartyPackages";
 import EventPageEscapeRoomCarousel from "../../comps/v2/eventPageV2/EventPageEscapeRoomCarousel";
@@ -49,7 +50,7 @@ const showSingleEvent = (props) => {
         />
         {/* =======breadcum content and breadcum root page template======== end */}
         {/*==============================v2 ==============================*/}
-        <EventPageHero pageHeroData={props.pageData.PageHeroData} />
+        <EventPageHeroV2 pageHeroData={props.pageData.PageHeroData} />
         <FeedBackTestimonialSlider
           sectionData={props.pageData.FeedBackTestimonialSliderData}
         />

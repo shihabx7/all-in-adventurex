@@ -10,14 +10,14 @@ export default function LoveCarousel({ customerLoveCarouselData }) {
       partialVisibilityGutter: 20,
     },
     tabletLg: {
-      breakpoint: { max: 1180, min: 1001 },
+      breakpoint: { max: 1180, min: 901 },
       items: 3,
       slidesToSlide: 1,
       partialVisibilityGutter: 8,
     },
     tablet: {
-      breakpoint: { max: 1000, min: 768 },
-      items: 3,
+      breakpoint: { max: 900, min: 768 },
+      items: 2,
       slidesToSlide: 1,
       partialVisibilityGutter: 16,
     },

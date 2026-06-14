@@ -3,8 +3,8 @@ import { FaArrowDown } from "react-icons/fa6";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 import EventHeroBgVideo from "./elements/EventHeroBgVideo";
-import EventHeroVideo from "./elements/EventHeroVideo";
-export default function EventPageHero({
+import EventHeroVideoV2 from "./elements/EventHeroVideoV2";
+export default function EventPageHeroV2({
   pageHeroData,
   locationSlug,
   locationInfo,
@@ -25,21 +25,46 @@ export default function EventPageHero({
         <EventHeroBgVideo />
       </div>
       <div className="section-wrapper relative bg-[#370202]/80 z-20">
-        <div className="section-container md:max-w-[840px] lg:maz-w-[1020px] xl:max-w-[1236px] 2xl:max-w-7xl mx-auto pb-16 pt-12 md:py-20 lg:py-[9rem] xl:py-32 2xl:py-[10rem] px-3 zm:px-4">
+        <div className="section-container md:max-w-[860px] lg:maz-w-[1020px] xl:max-w-[1236px] 2xl:max-w-7xl mx-auto pb-16 pt-12 md:py-20 lg:py-[9rem] xl:py-32 2xl:py-[10rem] px-2.5 rm:px-3 zm:px-5 md:px-10 lg:px-8 xl:px-4">
           <div className="section-row flex flex-col lg:flex-row lg:space-x-5 lg:justify-between  items-center">
             {/**==================================================================================================================video col*/}
             <div className="section-col mb-6 md:mb-10 lg:mb-0 order-1 lg:order-2 w-full lg:w-[48%] xl:w-[45%]  2xl:w-[46%]">
-              <div className="video-bg-pattern w-full relative">
-                <div className="w-full">
-                  <img
-                    className="w-full h-auto block"
-                    src="/assets/event-page-v2/event-hero-video-bg-pattern.png"
-                    alt="Hero Video Bg Pattern"
-                  ></img>
+              <div className="hero-video-player-box w-full relative">
+                {/**===================================================================bg border*/}
+                <div className="video-frame-bg w-full flex flex-nowrap justify-between">
+                  <div className="video-frame-bg w-full max-w-full">
+                    <div className="frame-top-gap w-full h-[4px] rm:h-[5px] lm:h-[6px] zm:h-[16px] md:h-[20px] lg:h-[10px] xl:h-[14px] bg-transparent"></div>
+                    <div className="video-frame-border-img w-full">
+                      <img
+                        className="block w-full h-auto "
+                        src="/assets/event-page-v2/event-hero-video-bg-pattern.png"
+                        alt="Hero Video Bg Pattern"
+                      ></img>
+                    </div>
+                  </div>
+                  <div className="frame-right-gap w-[4px] rm:w-[5px] lm:w-[6px] zm:w-[16px] md:w-[20px] lg:w-[10px] xl:w-[14px] bg-transparent"></div>
                 </div>
-
-                <div className="video-wrapper w-full h-full  bg-[#CB9442] absolute top-[-3px] right-[-3px] zm:top-[-4px] zm:right-[-4px] md:top-[-16px] md:right-[-16px] lg:top-[-10px] lg:right-[-10px] xl:top-[-14px] xl:right-[-14px] border-[#CB9442] border-2 sm:border-[4px] border-t-[1px] border-r-[1px] sm:border-t-[2px] sm:border-r-[2px] rounded-[10px] md:rounded-[12px]  z-20">
-
+                {/**================================================================================video-cont*/}
+                <div className="video-content-box w-full h-full absolute top-0 left-0">
+                  <div className="w-full h-full flex flex-nowrap">
+                    <div className="frame-left-gap w-[4px] rm:w-[5px] lm:w-[6px] zm:w-[16px] md:w-[20px] lg:w-[10px] xl:w-[14px] bg-transparent"></div>
+                    <div className="video-content h-full w-full max-w-full flex flex-col space-y-0">
+                      <div className="hero-video-player w-full h-full max-h-full max-w-full ">
+                        <EventHeroVideoV2
+                          videoData={
+                            pageHeroData && pageHeroData.videoData
+                              ? pageHeroData.videoData
+                              : null
+                          }
+                        />
+                      </div>
+                      <div className="frame-top-gap w-full h-[4px] rm:h-[5px] lm:h-[6px] zm:h-[16px] md:h-[20px] lg:h-[10px] xl:h-[14px] bg-transparent"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/**======================================================================================================*** <div className="video-wrapper w-full h-full  bg-[#CB9442] absolute top-[-3px] right-[-3px] zm:top-[-4px] zm:right-[-4px] md:top-[-16px] md:right-[-16px] lg:top-[-10px] lg:right-[-10px] xl:top-[-14px] xl:right-[-14px] border-[#CB9442] border-2 sm:border-[4px] border-t-[1px] border-r-[1px] sm:border-t-[2px] sm:border-r-[2px] rounded-[10px] md:rounded-[12px]  z-20">
                   <EventHeroVideo
                     videoData={
                       pageHeroData && pageHeroData.videoData
@@ -47,11 +72,7 @@ export default function EventPageHero({
                         : null
                     }
                   />
-
-                </div>
-              </div>
-            </div>
-            {/**=========================================================================================================text content col*/}
+                </div>****===text content col*/}
             <div className="section-col order-2 lg:order-1 w-full lg:w-[49%] xl:w-[50%] 2xl:w-[48%]">
               <div className="section-text">
                 {locationInfo && locationName && (
@@ -69,18 +90,18 @@ export default function EventPageHero({
                     ? pageHeroData.eyeBrewText
                     : "Escape Room parties & events "}
                 </h1>
-                <h2 className="uppercase text-white text-3xl md:text-[2.875rem] xl:text-[2.7rem] 2xl:text-[3rem] leading-[1.2] font-os font-semibold  my-2 md:my-2 lg:my-3">
+                <h2 className="uppercase text-white text-3xl md:text-[2.875rem] xl:text-[2.7rem] 2xl:text-[3rem] leading-[1.2] font-os font-semibold  my-2 md:my-3 lg:my-3">
                   {pageHeroData && pageHeroData.title
                     ? pageHeroData.title
                     : "All in adventure escape room event"}
                 </h2>
-                <p className="text-[#CACACA] md:text-lg 2xl:text-[1.2rem]">
+                <p className="text-[#CACACA] md:text-lg 2xl:text-[1.2rem] md:mt-4 lg:mt-0">
                   {pageHeroData && pageHeroData.description
                     ? pageHeroData.description
                     : "Skip the party packages and book 60 minutes of pure escape room fun — no party room, no catering, just the game. Perfect for small groups, last-minute plans, or anyone looking to celebrate with nonstop adventure."}
                 </p>
               </div>
-              <div className="btn-pair-row mt-6  md:mt-10 xl:mt-12 flex flex-col sm:flex-row justify-center lg:justify-start items-center space-y-6 sm:space-y-0 sm:space-x-3 md:spce-x-4 lg:space-x-2 xl:space-x-3">
+              <div className="btn-pair-row mt-6  md:mt-10 xl:mt-12 flex flex-col sm:flex-row justify-center md:justify-start items-center space-y-6 sm:space-y-0 sm:space-x-3 md:spce-x-4 lg:space-x-2 xl:space-x-3">
                 <div className="scrol-btn w-full sm:max-w-[300px] ">
                   <a
                     href={"#book-party-pacakages"}

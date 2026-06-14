@@ -31,7 +31,7 @@ export default function MobileEventCard({ locationSlug }) {
   };
 
   return (
-    <div className="escape-game-list-container  lm:max-w-[380px]  zm:max-w-[500px] md:max-w-[760px]  lg:max-w-7xl mx-auto  mt-8 md:mt-10 lg:mt-12">
+    <div className="escape-game-list-container  lg:max-w-7xl mx-auto  mt-8 md:mt-10 lg:mt-12">
       {/*============mob myster  card==========*/}
       <div className="ogl-info-row flex justify-center flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-5 xl:space-x-8">
         <div className="ogl-item-col w-full relative shadow-golden">

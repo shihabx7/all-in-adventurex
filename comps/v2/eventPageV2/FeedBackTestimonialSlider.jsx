@@ -42,7 +42,7 @@ export default function FeedBackTestimonialSlider({
         <div className="section-row flex flex-col lg:flex-row justify-between lg:space-x-2">
           <div className="section-col  lg:max-w-[570px]">
             <img
-              className="max-w-full"
+              className="w-full max-w-full"
               src={
                 sectionData && sectionData.eventPoster.url
                   ? sectionData.eventPoster.url
@@ -51,7 +51,7 @@ export default function FeedBackTestimonialSlider({
               alt="party party poster"
             ></img>
           </div>
-          <div className="section-col max-w-[640px]">
+          <div className="section-col lg:max-w-[640px]">
             <div className="section-head">
               <h2 className="dark-gold py-[2px] md:py-1 2xl:py-2 text-2xl md:text-[40px] lg:text-[44px] 2xl:text-[2.5rem] leading-[1.2] font-os font-bold uppercase ">
                 {sectionData && sectionData.title
