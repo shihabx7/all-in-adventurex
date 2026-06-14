@@ -34,9 +34,9 @@ export default function EventHeroVideoV2({ videoData }) {
         <video
           ref={heroVideoRef}
           className={
-            "no-fullscreen-vid event-hero-video w-full h-full  object-cover object-center aspect-video  rounded-[8px] md:rounded-[10px]  z-30"
+            "no-fullscreen-vid no-lgy-ld event-hero-video w-full h-full  object-cover object-center aspect-video  rounded-[8px] md:rounded-[10px]  z-30"
           }
-          preload={isVideoLoad ? "auto" : "none"}
+          preload={ "auto" }
           playsInline
           autoPlay
           loop
@@ -47,7 +47,7 @@ export default function EventHeroVideoV2({ videoData }) {
               : "/assets/event-page-v2/birthday/birthday-party-hero-video-poster.jpg"
           }
         >
-          {isVideoLoad && videoUrl !== null && (
+          {/*isVideoLoad && videoUrl !== null && ( )*/}
             <source
               src={videoData.videoUrl}
               type={
@@ -56,7 +56,7 @@ export default function EventHeroVideoV2({ videoData }) {
                   : "video/mp4"
               }
             />
-          )}
+         
         </video>
       </div>
     </div>
