@@ -32,7 +32,7 @@ export default function EventPageHero({
               <div className="event-hero-video-container pl-1.5 pb-1.5 md:pl-5 md:pb-5 lg:pl-3.5 lg:pb-3.5 max-w-full ">
                 {/**==================================================================================================================video box*/}
                 <div className="video-place w-full aspect-[756/516]  relative">
-                  <div className="w-full h-full overflow-hidden relative z-10 border border-t-[1px] border-r-[1px]  border-b-[3px] border-l-[3px] sm:border-t-[3px] sm:border-r-[3px]  sm:border-b-[6px] sm:border-l-[6px] lg:border-t-[2px] lg:border-r-[2px]  lg:border-b-[4px] lg:border-l-[4px] border-gold rounded-lg md:rounded-xl bg-gold" >
+                  <div className="w-full h-full overflow-hidden relative z-10 border border-t-[1px] border-r-[1px]  border-b-[3px] border-l-[3px] sm:border-t-[3px] sm:border-r-[3px]  sm:border-b-[6px] sm:border-l-[6px] lg:border-t-[2px] lg:border-r-[2px]  lg:border-b-[4px] lg:border-l-[4px] border-[#E0BF62] rounded-[24px] md:rounded-[28px] bg-[#E0BF62]">
                     <EventHeroVideo
                       videoData={
                         pageHeroData && pageHeroData.videoData
@@ -112,5 +112,3 @@ export default function EventPageHero({
     </div>
   );
 }
-
-
