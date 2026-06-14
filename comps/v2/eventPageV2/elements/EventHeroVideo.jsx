@@ -29,7 +29,7 @@ export default function EventHeroVideo({ videoData }) {
     if (isPlaying === true) {
       const timer = setTimeout(() => {
         setIsHide(true);
-      }, 3000); // 1000 milliseconds = 1 second
+      }, 1000); // 1000 milliseconds = 1 second
 
       // Clear timeout if the component unmounts
       return () => clearTimeout(timer);
@@ -41,10 +41,11 @@ export default function EventHeroVideo({ videoData }) {
       <div className={"w-full h-full absolute z-20  bg-gray-900"}>
         <img
           className={
-            !isHide
-              ? "w-full h-full objcet-cover object-center transition-all duration-300 ease-linear opacity-100"
-              : "opacity-90 w-full h-full objcet-cover object-center transition-all duration-300 ease-linear"
+            " w-full h-full objcet-cover object-center "
           }
+          style={{
+            opacity: !isHide ? "1" : ".9",
+          }}
           src={
             videoData?.poster.url
               ? videoData.poster.url
@@ -70,7 +71,16 @@ export default function EventHeroVideo({ videoData }) {
             : "/assets/event-page-v2/birthday/birthday-party-hero-video-poster.jpg"
         }
       >
-         <source src={videoData?.videoUrl? videoData.videoUrl:"/assets/event-page-v2/birthday/birthday-party-hero-video.mp4"} type={"video/mp4"} />
+        {isVideoLoad && (
+          <source
+            src={
+              videoData?.videoUrl
+                ? videoData.videoUrl
+                : "/assets/event-page-v2/birthday/birthday-party-hero-video.mp4"
+            }
+            type={"video/mp4"}
+          />
+        )}
       </video>
     </>
   );
