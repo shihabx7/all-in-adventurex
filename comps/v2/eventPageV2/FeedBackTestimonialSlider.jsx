@@ -39,7 +39,7 @@ export default function FeedBackTestimonialSlider({
   return (
     <div className="reward-work-section bg-[#FFF9EB] bg-[url('/assets/mobile-escape-room/brown-paper-bg.jpg')] bg-[240px_240px] md:bg-[300px_300px] lg:bg-[400px_400px]">
       <div className="section-container max-w-[860px] lg:max-w-7xl py-16 md:py-20 lg:py-28 px-3 rm:px-4 mx-auto">
-        <div className="section-row flex flex-col lg:flex-row justify-between lg:space-x-2">
+        <div className="section-row flex flex-col lg:flex-row justify-between lg:space-x-5 xl:space-x-8">
           <div className="section-col  lg:max-w-[570px]">
             <img
               className="w-full max-w-full"
@@ -51,9 +51,9 @@ export default function FeedBackTestimonialSlider({
               alt="party party poster"
             ></img>
           </div>
-          <div className="section-col lg:max-w-[640px]">
+          <div className="section-col lg:max-w-[48%] xl:max-w-[50%]">
             <div className="section-head">
-              <h2 className="dark-gold py-[2px] md:py-1 2xl:py-2 text-2xl md:text-[40px] lg:text-[44px] 2xl:text-[2.5rem] leading-[1.2] font-os font-bold uppercase ">
+              <h2 className="dark-gold py-[2px] md:py-1 2xl:py-2 text-2xl md:text-[40px] lg:text-[2.3rem] xl:text-[2.4rem] 2xl:text-[2.5rem] leading-[1.2] font-os font-bold uppercase ">
                 {sectionData && sectionData.title
                   ? sectionData.title
                   : "Escape Room Events THAT WORKS FOR EVERY AGE ON THE GUEST LIST"}

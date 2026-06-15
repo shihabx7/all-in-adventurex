@@ -147,7 +147,7 @@ export default function MobileEventCard({ locationSlug }) {
                 </p>
               </div>
               {/*=========================================game button===*/}
-              <div className="egl-btn-pair mt-7 md:mt-6 mb-3 xl:mt-8 xl:mb-2">
+              <div className="egl-btn-pair mt-5 md:mt-6 mb-3 xl:mt-8 xl:mb-2">
                 <div className="flex justify-between md:justify-start items-center space-x-2 md:space-x-3 lg:space-x-4 ">
                   {locationSlug && (
                     <>
@@ -158,7 +158,7 @@ export default function MobileEventCard({ locationSlug }) {
                           )
                         }
                         className="w-[48%] lm:w-[47%] md:w-auto border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700
-                         text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-semibold"
+                         text-sm md:text-base xl:text-lg text-white px-4 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-semibold"
                       >
                         BOOK NOW
                       </button>
@@ -167,7 +167,7 @@ export default function MobileEventCard({ locationSlug }) {
                           getMysteryQuote(locationBookingInfo[locationSlug])
                         }
                         className="w-[48%] lm:w-[47%] md:w-auto border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
-                         text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-semibold"
+                         text-sm md:text-base xl:text-lg text-white px-4 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-semibold"
                       >
                         GET A QUOTE
                       </button>
@@ -179,14 +179,14 @@ export default function MobileEventCard({ locationSlug }) {
                       <button
                         onClick={(e) => showLocModal("mobile-mystery")}
                         className="w-[48%] lm:w-[47%] md:w-auto border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700
-                         text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-semibold"
+                         text-sm md:text-base xl:text-lg text-white px-4 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-semibold"
                       >
                         BOOK NOW
                       </button>
                       <button
                         onClick={(e) => showLocModal("mobile-mystery-quote")}
                         className="w-[48%] lm:w-[47%] md:w-auto border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
-                         text-sm md:text-base xl:text-lg text-white px-6 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-semibold"
+                         text-sm md:text-base xl:text-lg text-white px-4 rm:px-8 md:px-10 py-[11px] xl:px-12 xl:py-3 text-center font-semibold"
                       >
                         GET A QUOTE
                       </button>

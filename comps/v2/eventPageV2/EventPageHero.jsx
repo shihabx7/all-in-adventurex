@@ -95,7 +95,7 @@ export default function EventPageHero({
                     : "Skip the party packages and book 60 minutes of pure escape room fun — no party room, no catering, just the game. Perfect for small groups, last-minute plans, or anyone looking to celebrate with nonstop adventure."}
                 </p>
               </div>
-              <div className="btn-pair-row mt-6  md:mt-10 xl:mt-12 flex flex-col sm:flex-row justify-center lg:justify-start items-center space-y-6 sm:space-y-0 sm:space-x-3 md:spce-x-4 lg:space-x-2 xl:space-x-3">
+              <div className="btn-pair-row mt-6  md:mt-10 xl:mt-12 flex flex-col sm:flex-row justify-center md:justify-start items-center space-y-6 sm:space-y-0 sm:space-x-3 md:spce-x-4 lg:space-x-2 xl:space-x-3">
                 <div className="scrol-btn w-full sm:max-w-[300px] ">
                   <a
                     href={"#book-party-pacakages"}

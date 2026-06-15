@@ -85,7 +85,7 @@ export default function CheckOutPartyPackages(props) {
                   >
                     <div className="package-poster relative">
                       <img
-                        className="max-w-full"
+                        className="w-full max-w-full"
                         src={
                           item.partyCardImage.url
                             ? item.partyCardImage.url
