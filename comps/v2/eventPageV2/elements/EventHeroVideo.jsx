@@ -49,7 +49,7 @@ export default function EventHeroVideo({ videoData }) {
               ? videoData.poster.url
               : "/assets/event-page-v2/birthday/birthday-party-hero-video-poster.jpg"
           }
-          alt="Hero Video Bg Pattern"
+          alt="video-poster"
         ></img>
       </div>
 

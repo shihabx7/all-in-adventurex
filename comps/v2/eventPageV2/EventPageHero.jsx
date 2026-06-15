@@ -24,7 +24,21 @@ export default function EventPageHero({
       <div className="section-bg-video w-full h-full absolute top-0 left-0">
         <EventHeroBgVideo />
       </div>
+      {pageHeroData.partyRiboon && (
+        <>
+          <div className="birthday party-decoration absolute top-0 left-0 w-full h-[32px] rm:h-[38px] zm:h-[45px] md:h-[54px] xl:h-[60px] 3xl:h-[70px] max-w-full z-30 overflow-hidden">
+            <div className="w-full h-full bg-[url('/assets/event-page-v2/birthday-party-decoration.svg')] bg-[101%_auto] sm:bg-[50%_auto] md:bg-[44%_auto] lg:bg-[33.33%_auto] bg-top sm:bg-repeat-round"></div>
+          </div>
+        </>
+      )}
+
       <div className="section-wrapper relative bg-[#370202]/80 z-20">
+        {pageHeroData.partyRiboon && (
+        <>
+          
+          <div className="rb-space w-full h-[14px] rm:h-[16px] zm:h-[18px] md:h-[22px] xl:h-[26px] 3xl:h-[30px] max-w-full"></div>
+        </>
+      )}
         <div className="section-container md:max-w-[860px] lg:max-w-[1040px] xl:max-w-[1236px] 2xl:max-w-7xl mx-auto pb-16 pt-12 md:py-20 lg:py-[9rem] xl:py-32 2xl:py-[10rem] px-2.5 rm:px-3 zm:px-5 md:px-10 lg:px-8 xl:px-4">
           <div className="section-row flex flex-col lg:flex-row lg:space-x-5 lg:justify-between  items-center">
             {/**==================================================================================================================video col*/}
@@ -85,7 +99,7 @@ export default function EventPageHero({
                 <div className="scrol-btn w-full sm:max-w-[300px] ">
                   <a
                     href={"#book-party-pacakages"}
-                     className=" w-full py-3 px-5 rounded-full uppercase text-center flex justify-center items-center md:space-x-3 lg:space-x-1 xl:space-x-2 text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-sm rm:text-base md:text-lg lg:text-sm xl:text-lg"
+                    className=" w-full py-3 px-5 rounded-full uppercase text-center flex justify-center items-center md:space-x-3 lg:space-x-1 xl:space-x-2 text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-sm rm:text-base md:text-lg lg:text-sm xl:text-lg"
                   >
                     <span>
                       {pageHeroData.ctaBtnLabel
@@ -98,7 +112,7 @@ export default function EventPageHero({
                 <div className="scrol-btn  w-full sm:max-w-[250px] ">
                   <a
                     href={"#escape-game-booking"}
-               className=" w-full py-3 px-5 rounded-full uppercase text-center flex justify-center items-center md:space-x-3 lg:space-x-1 xl:space-x-2 text-white font-medium border-2 border-white bg-transparent hover:border-red-700 hover:bg-red-700 text-sm rm:text-base md:text-lg lg:text-sm xl:text-lg"
+                    className=" w-full py-3 px-5 rounded-full uppercase text-center flex justify-center items-center md:space-x-3 lg:space-x-1 xl:space-x-2 text-white font-medium border-2 border-white bg-transparent hover:border-red-700 hover:bg-red-700 text-sm rm:text-base md:text-lg lg:text-sm xl:text-lg"
                   >
                     <span>BOOK GAME ONLY</span>
                     <FaArrowDown />
