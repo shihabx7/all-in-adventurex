@@ -47,6 +47,7 @@ export default function EventPageHero({
                 {/**==================================================================================================================video box*/}
                 <div className="video-place w-full aspect-[756/516]  relative">
                   <div className="w-full h-full overflow-hidden relative z-10 border border-t-[1px] border-r-[1px]  border-b-[3px] border-l-[3px] sm:border-t-[3px] sm:border-r-[3px]  sm:border-b-[6px] sm:border-l-[6px] lg:border-t-[2px] lg:border-r-[2px]  lg:border-b-[4px] lg:border-l-[4px] border-[#E0BF62] rounded-[24px] md:rounded-[28px] bg-[#E0BF62]">
+                    
                     <EventHeroVideo
                       videoData={
                         pageHeroData && pageHeroData.videoData
@@ -99,7 +100,7 @@ export default function EventPageHero({
                 <div className="scrol-btn w-full sm:max-w-[300px] ">
                   <a
                     href={"#book-party-pacakages"}
-                    className=" w-full py-3 px-5 rounded-full uppercase text-center flex justify-center items-center md:space-x-3 lg:space-x-1 xl:space-x-2 text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-sm rm:text-base md:text-lg lg:text-sm xl:text-lg"
+                    className=" w-full py-3 px-5 rounded-full uppercase text-center flex justify-center items-center space-x-2 md:space-x-3 lg:space-x-1.5 xl:space-x-2 text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-sm rm:text-base md:text-lg lg:text-sm xl:text-lg"
                   >
                     <span>
                       {pageHeroData.ctaBtnLabel
@@ -112,7 +113,7 @@ export default function EventPageHero({
                 <div className="scrol-btn  w-full sm:max-w-[250px] ">
                   <a
                     href={"#escape-game-booking"}
-                    className=" w-full py-3 px-5 rounded-full uppercase text-center flex justify-center items-center md:space-x-3 lg:space-x-1 xl:space-x-2 text-white font-medium border-2 border-white bg-transparent hover:border-red-700 hover:bg-red-700 text-sm rm:text-base md:text-lg lg:text-sm xl:text-lg"
+                    className=" w-full py-3 px-5 rounded-full uppercase text-center flex justify-center items-center space-x-2 md:space-x-3 lg:space-x-1.5 xl:space-x-2 text-white font-medium border-2 border-white bg-transparent hover:border-red-700 hover:bg-red-700 text-sm rm:text-base md:text-lg lg:text-sm xl:text-lg"
                   >
                     <span>BOOK GAME ONLY</span>
                     <FaArrowDown />

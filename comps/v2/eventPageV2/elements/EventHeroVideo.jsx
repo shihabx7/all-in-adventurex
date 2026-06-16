@@ -25,26 +25,30 @@ export default function EventHeroVideo({ videoData }) {
   }, [isVideoLoad]);
 
   useEffect(() => {
-    // Only trigger the delay after the initial render
+  
     if (isPlaying === true) {
       const timer = setTimeout(() => {
         setIsHide(true);
-      }, 2000); // 1000 milliseconds = 1 second
+      }, 2000);
 
-      // Clear timeout if the component unmounts
       return () => clearTimeout(timer);
     }
   }, [isPlaying]);
 
   return (
-    <div className="w-full h-full relative">
-      <div className={"w-full h-full absolute  bg-[#090909]"}>
+    <div className="w-full h-full relative overflow-hidden">
+      <div
+        className={"w-full h-full absolute  bg-[#090909]"}
+        style={{
+          zIndex: !isHide ? "40" : "20",
+        }}
+      >
         <img
           className={
-            " w-full h-full absolute  objcet-cover object-center transition-opacity duration-500 ease-linear z-40"
+            " w-full h-full  objcet-cover object-center transition-opacity duration-500 ease-linear  "
           }
           style={{
-            opacity: !isHide ? "1" : ".1",
+            opacity: !isHide ? ".9" : "0",
           }}
           src={
             videoData?.poster.url
