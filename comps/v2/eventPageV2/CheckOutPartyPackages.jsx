@@ -76,12 +76,12 @@ export default function CheckOutPartyPackages(props) {
           </div>
           {/*=======================================================party packages===*/}
           {props.partyPackageList && props.partyPackageList.length > 0 && (
-            <div className="section-row party-packages-row flex flex-col md:flex-row  justify-center space-y-5 rm:space-y-7 zm:space-y-8  md:space-y-0 md:space-x-3 xl:space-x-4 mt-6 md:mt-8 xl:mt-10">
+            <div className="section-row party-packages-row w-full flex flex-wrap flex-col md:flex-row justify-center gap-y-5 zm:gap-y-20 md:gap-x-2 md:gap-y-6 xl:gap-5 mt-6 zm:mt-7">
               {props.partyPackageList.map((item, index) => {
                 return (
                   <div
                     key={index}
-                    className="sec-col package-item bg-[#111111]/40 p-2.5 rm:p-3.5 zm:p-5 md:p-4 xl:p-6"
+                    className="sec-col package-item bg-[#111111]/40 p-2.5 rm:p-3.5 zm:p-5 md:p-4 xl:p-6  md:max-w-[32.5%] xl:max-w-[32%]"
                   >
                     <div className="package-poster relative">
                       <img
@@ -109,14 +109,14 @@ export default function CheckOutPartyPackages(props) {
                       {item.bookingData ? (
                         <button
                           onClick={(e) => partyPackageBooking(item.bookingData)}
-                          className="block w-full py-2 rounded-full uppercase text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[15px] rm:text-base md:text-lg"
+                          className="block w-full py-2 rounded-full uppercase text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[15px] rm:text-base md:text-sm lg:text-base"
                         >
                           BOOK THIS PACKAGE
                         </button>
                       ) : (
                         <button
                           onClick={(e) => showPartyBookingModal(item.partyName)}
-                          className="block w-full py-2 rounded-full uppercase text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[15px] rm:text-base md:text-lg"
+                          className="block w-full py-2 rounded-full uppercase text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[15px] rm:text-base md:text-sm lg:text-base"
                         >
                           BOOK THIS PACKAGE
                         </button>
@@ -129,7 +129,7 @@ export default function CheckOutPartyPackages(props) {
           )}
 
           {/*=================================================================================================================package-info===*/}
-          <div className="section-row packages-info flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 md:space-x-2 mt-8 md:mt-10 xl:mt-12">
+          <div className="section-row packages-info flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 md:space-x-2 mt-8 zm:mt-20 md:mt-10 xl:mt-12">
             {/*=======================================================package-info 1===*/}
             {props.sectionData.partyPackageInfo &&
               props.sectionData.partyPackageInfo.packageIncludeList && (

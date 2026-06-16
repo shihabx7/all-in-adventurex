@@ -70,46 +70,27 @@ export default function HomePageEventLisSection(props) {
                   {/*=========================================game button===*/}
 
                   <div className="egl-btn-pair mt-7 md:mt-6 mb-3 xl:mt-8 xl:mb-2">
-                    {!props.locationSlug && (
-                      <div className="flex justify-between md:justify-start lg:justify-center items-center space-x-2 md:space-x-1 lg:space-x-2 ">
-                        <button
-                          onClick={showLocModal}
-                          className=" w-[48%] lm:w-[47%] md:w-[48%] border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700
-                         text-sm xl:text-base  text-white px-5 py-[11px] xl:px-4 xl:py-3 text-center font-medium"
-                        >
-                          BOOK NOW
-                        </button>
-
-                        <a
-                          href={`/events/birthday-party`}
-                          className=" w-[48%] lm:w-[47%] md:w-[48%] border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
-                         text-sm xl:text-base  text-white px-5 md:px-4 py-[11px] xl:px-6 xl:py-3 text-center font-medium"
-                        >
-                          EXPLORE
-                        </a>
-                      </div>
-                    )}
-                    {props.locationSlug && (
-                      <div className="flex justify-between md:justify-start lg:justify-center items-center space-x-2 md:space-x-1 lg:space-x-2 ">
-                        <button
-                          onClick={(e) => bookEventFlow(e, props.locationSlug)}
-                          className=" w-[48%] lm:w-[47%] md:w-[48%] border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700
-                         text-sm xl:text-base  text-white px-5 py-[11px] xl:px-4 xl:py-3 text-center font-medium"
-                        >
-                          BOOK NOW
-                        </button>
-
+                    <div className="party-link max-w-full">
+                      {props.locationSlug ? (
                         <a
                           href={
                             "/" + props.locationSlug + "/events/birthday-party"
                           }
-                          className=" w-[48%] lm:w-[47%] md:w-[48%] border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
+                          className="block w-full max-w-full border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
                          text-sm xl:text-base  text-white px-5 md:px-4 py-[11px] xl:px-6 xl:py-3 text-center font-medium"
                         >
-                          EXPLORE
+                          LEARN MORE
                         </a>
-                      </div>
-                    )}
+                      ) : (
+                        <a
+                          href={`/events/birthday-party`}
+                          className="block w-full  max-w-full border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
+                         text-sm xl:text-base  text-white px-5 md:px-4 py-[11px] xl:px-6 xl:py-3 text-center font-medium"
+                        >
+                          LEARN MORE
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -148,46 +129,27 @@ export default function HomePageEventLisSection(props) {
 
                   {/*=============================================================================book button===*/}
                   <div className="egl-btn-pair mt-7 md:mt-6 mb-3 xl:mt-8 xl:mb-2">
-                    {!props.locationSlug && (
-                      <div className="flex justify-between md:justify-start lg:justify-center items-center space-x-2 md:space-x-1 lg:space-x-2 ">
-                        <button
-                          onClick={showLocModal}
-                          className=" w-[48%] lm:w-[47%] md:w-[48%] border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700
-                         text-sm xl:text-base  text-white px-5 py-[11px] xl:px-4 xl:py-3 text-center font-medium"
-                        >
-                          BOOK NOW
-                        </button>
-
-                        <a
-                          href={`/events/birthday-party`}
-                          className=" w-[48%] lm:w-[47%] md:w-[48%] border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
-                         text-sm xl:text-base  text-white px-5 md:px-4 py-[11px] xl:px-6 xl:py-3 text-center font-medium"
-                        >
-                          EXPLORE
-                        </a>
-                      </div>
-                    )}
-                    {props.locationSlug && (
-                      <div className="flex justify-between md:justify-start lg:justify-center items-center space-x-2 md:space-x-1 lg:space-x-2 ">
-                        <button
-                          onClick={(e) => bookEventFlow(e, props.locationSlug)}
-                          className=" w-[48%] lm:w-[47%] md:w-[48%] border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700
-                         text-sm xl:text-base  text-white px-5 py-[11px] xl:px-4 xl:py-3 text-center font-medium"
-                        >
-                          BOOK NOW
-                        </button>
-
+                    <div className="party-link max-w-full">
+                      {props.locationSlug ? (
                         <a
                           href={
                             "/" + props.locationSlug + "/events/team-building"
                           }
-                          className=" w-[48%] lm:w-[47%] md:w-[48%] border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
+                          className="block w-full max-w-full border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
                          text-sm xl:text-base  text-white px-5 md:px-4 py-[11px] xl:px-6 xl:py-3 text-center font-medium"
                         >
-                          EXPLORE
+                          LEARN MORE
                         </a>
-                      </div>
-                    )}
+                      ) : (
+                        <a
+                          href={`/events/team-building`}
+                          className="block w-full  max-w-full border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
+                         text-sm xl:text-base  text-white px-5 md:px-4 py-[11px] xl:px-6 xl:py-3 text-center font-medium"
+                        >
+                          LEARN MORE
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -226,46 +188,27 @@ export default function HomePageEventLisSection(props) {
 
                   {/*=========================================game button===*/}
                   <div className="egl-btn-pair mt-7 md:mt-6 mb-3 xl:mt-8 xl:mb-2">
-                    {!props.locationSlug && (
-                      <div className="flex justify-between md:justify-start lg:justify-center items-center space-x-2 md:space-x-1 lg:space-x-2 ">
-                        <button
-                          onClick={showLocModal}
-                          className=" w-[48%] lm:w-[47%] md:w-[48%] border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700
-                         text-sm xl:text-base  text-white px-5 py-[11px] xl:px-4 xl:py-3 text-center font-medium"
-                        >
-                          BOOK NOW
-                        </button>
-
-                        <a
-                          href={`/events/school-events`}
-                          className=" w-[48%] lm:w-[47%] md:w-[48%] border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
-                         text-sm xl:text-base  text-white px-5 md:px-4 py-[11px] xl:px-6 xl:py-3 text-center font-medium"
-                        >
-                          EXPLORE
-                        </a>
-                      </div>
-                    )}
-                    {props.locationSlug && (
-                      <div className="flex justify-between md:justify-start lg:justify-center items-center space-x-2 md:space-x-1 lg:space-x-2 ">
-                        <button
-                          onClick={(e) => bookEventFlow(e, props.locationSlug)}
-                          className=" w-[48%] lm:w-[47%] md:w-[48%] border-[2px] border-red-600 rounded-full bg-red-600 hover:bg-red-700 hover:border-red-700
-                         text-sm xl:text-base  text-white px-5 py-[11px] xl:px-4 xl:py-3 text-center font-medium"
-                        >
-                          BOOK NOW
-                        </button>
-
+                    <div className="party-link max-w-full">
+                      {props.locationSlug ? (
                         <a
                           href={
                             "/" + props.locationSlug + "/events/school-events"
                           }
-                          className=" w-[48%] lm:w-[47%] md:w-[48%] border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
+                          className="block w-full max-w-full border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
                          text-sm xl:text-base  text-white px-5 md:px-4 py-[11px] xl:px-6 xl:py-3 text-center font-medium"
                         >
-                          EXPLORE
+                          LEARN MORE
                         </a>
-                      </div>
-                    )}
+                      ) : (
+                        <a
+                          href={`/events/school-events`}
+                          className="block w-full  max-w-full border-[2px] border-red-600 rounded-full bg-transparent hover:bg-red-700 hover:border-red-700
+                         text-sm xl:text-base  text-white px-5 md:px-4 py-[11px] xl:px-6 xl:py-3 text-center font-medium"
+                        >
+                          LEARN MORE
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>

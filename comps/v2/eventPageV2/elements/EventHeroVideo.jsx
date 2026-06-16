@@ -29,7 +29,7 @@ export default function EventHeroVideo({ videoData }) {
     if (isPlaying === true) {
       const timer = setTimeout(() => {
         setIsHide(true);
-      }, 1000); // 1000 milliseconds = 1 second
+      }, 2000); // 1000 milliseconds = 1 second
 
       // Clear timeout if the component unmounts
       return () => clearTimeout(timer);
@@ -37,12 +37,14 @@ export default function EventHeroVideo({ videoData }) {
   }, [isPlaying]);
 
   return (
-    <>
-      <div className={"w-full h-full absolute z-20  bg-gray-900"}>
+    <div className="w-full h-full relative">
+      <div className={"w-full h-full absolute  bg-[#090909]"}>
         <img
-          className={" w-full h-full objcet-cover object-center "}
+          className={
+            " w-full h-full absolute  objcet-cover object-center transition-opacity duration-500 ease-linear z-40"
+          }
           style={{
-            opacity: !isHide ? "1" : ".9",
+            opacity: !isHide ? "1" : ".1",
           }}
           src={
             videoData?.poster.url
@@ -56,9 +58,9 @@ export default function EventHeroVideo({ videoData }) {
       <video
         ref={heroVideoRef}
         className={
-          "no-fullscreen-vid event-hero-video w-full h-full  object-cover rounded-[8px] md:rounded-[10px] relative   z-30"
+          "no-fullscreen-vid event-hero-video w-full h-full  object-cover rounded-[8px] md:rounded-[10px] relative transition-opacity duration-300 ease-linear  z-30"
         }
-        preload={"auto"}
+        preload={"metadata"}
         playsInline
         autoPlay
         loop
@@ -80,6 +82,6 @@ export default function EventHeroVideo({ videoData }) {
           />
         )}
       </video>
-    </>
+    </div>
   );
 }
