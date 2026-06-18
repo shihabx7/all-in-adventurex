@@ -81,7 +81,7 @@ const MobileEscapeGameCarouselSection = ({
        
         <div className="card-game-link mt-7 rm:mt-10 md:mt-12 xl:mt-12 ">
           {locationSlug ? (
-            <div className="flex flex-col md:flex-row justify-center items-center space-y-4 rm:space-y-5 rm:space-y-0 md:space-x-5 xl:space-x-6"> 
+            <div className="flex flex-col md:flex-row justify-center items-center space-y-4 rm:space-y-5 md:space-y-0 md:space-x-5 xl:space-x-6"> 
               <button
               onClick={() => {
                 partyFormBooking(mobileEscapeRoomBookingData[locationSlug]);
@@ -100,7 +100,7 @@ const MobileEscapeGameCarouselSection = ({
             </button>
             </div>
           ) : (
-            <div className="flex flex-col md:flex-row justify-center items-center space-y-4 rm:space-y-5 rm:space-y-0 md:space-x-5 xl:space-x-6">
+            <div className="flex flex-col md:flex-row justify-center items-center space-y-4 rm:space-y-5 md:space-y-0 md:space-x-5 xl:space-x-6">
             <button
               onClick={(e) =>  showMobileEscapeBookingMenuGame(e)}
               className="max-w-[300px] px-12 md:px-14 py-[12px] md:py-3 text-center border-2 block text-white border-red-600 bg-red-600 rounded-full font-semibold md:text-lg hover:bg-red-700 hover:border-red-700"
