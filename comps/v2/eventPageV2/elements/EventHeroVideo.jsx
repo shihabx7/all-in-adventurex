@@ -25,7 +25,6 @@ export default function EventHeroVideo({ videoData }) {
   }, [isVideoLoad]);
 
   useEffect(() => {
-  
     if (isPlaying === true) {
       const timer = setTimeout(() => {
         setIsHide(true);

@@ -3,10 +3,20 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useEffect, useState } from "react";
 import Script from "next/script";
+import { useSiteData } from "../../contexts/SiteDataContext";
 
 const OtherPageGameCarousel = (props) => {
   //console.log(inpersongames)
+  const { openModalMenu, setModalMenuType, setModalGame } = useSiteData();
   const [gameSlug, setGamSlug] = useState(null);
+
+  const showLocModal = (activitySlug) => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.remove("overflow-hidden");
+    setModalGame(activitySlug);
+    setModalMenuType("game");
+    openModalMenu();
+  };
 
   const showLocation = () => {
     const body = document.getElementsByTagName("body")[0];
@@ -102,10 +112,10 @@ const OtherPageGameCarousel = (props) => {
           return (
             <div
               key={escapeGame.id}
-              className="text-white relative bg-gray-300 game-slider-card card-border group mb-shadow pb-4"
+              className="text-white relative bg-gray-300 game-slider-card card-border group mb-shadow pb-4 h-full w-full overflow-hidden"
             >
               <img
-                className="w-full"
+                className="w-full h-full object-cover object-center"
                 alt={escapeGame.carouselImage.alt}
                 src={escapeGame.carouselImage.url}
               ></img>
@@ -218,7 +228,9 @@ const OtherPageGameCarousel = (props) => {
                               </button>
                             ) : (
                               <button
-                                onClick={() => showLocation()}
+                                onClick={(e) =>
+                                  showLocModal(escapeGame.activitySlug)
+                                }
                                 className="border w-[48%] card-book-btnxx   border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700"
                               >
                                 COMING SOON 1
@@ -227,7 +239,9 @@ const OtherPageGameCarousel = (props) => {
                           </>
                         ) : (
                           <button
-                            onClick={() => showLocation()}
+                            onClick={(e) =>
+                              showLocModal(escapeGame.activitySlug)
+                            }
                             className="border w-[48%] card-book-btnxx   border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700"
                           >
                             COMING SOON 2
@@ -236,7 +250,7 @@ const OtherPageGameCarousel = (props) => {
                       </>
                     ) : (
                       <button
-                        onClick={() => showLocation()}
+                        onClick={(e) => showLocModal(escapeGame.activitySlug)}
                         className="border w-[48%] card-book-btnxx   border-red-600 bg-red-600 py-[10px] md:py-3 rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700"
                       >
                         {!escapeGame.isPublish ? "COMING SOON 3" : "BOOK NOW"}
