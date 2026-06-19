@@ -192,19 +192,19 @@ export default async function fransContactHandler(req, res) {
     {
       data: planForVenture,
       min: 3,
-      max: 80,
+      max: 1000,
       type: "string",
     },
     {
       data: fchoiceCity,
       min: 3,
-      max: 80,
+      max: 100,
       type: "string",
     },
     {
       data: schoiceCity,
       min: 3,
-      max: 80,
+      max: 100,
       type: "string",
     },
     {
@@ -222,19 +222,19 @@ export default async function fransContactHandler(req, res) {
     {
       data: opPlan,
       min: 3,
-      max: 300,
+      max: 1000,
       type: "string",
     },
     {
       data: profExp,
       min: 3,
-      max: 300,
+      max: 1000,
       type: "string",
     },
     {
       data: urBelieve,
       min: 3,
-      max: 300,
+      max: 1000,
       type: "string",
     },
 
@@ -266,7 +266,7 @@ export default async function fransContactHandler(req, res) {
   }
   retData.captchaScore = verifyCaptcha.score;
   // console.log("captcha score" + retData.captchaScore);
-  // return res.status(200).json({ data: retData, success: true });
+  // return res.status(200).json({ data: retData, success: true }); 	 franchise@allinadventures.com
 
   const mailOptions = {
     from: '"AIA Franschise Contact" <sender@allinadventures.com>',
@@ -276,7 +276,6 @@ export default async function fransContactHandler(req, res) {
     bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
     subject: `Franchise Contact`,
     html: `
-          
           <p style="padding:8px 0px;border-bottom:1px solid #888888; color:#565656 font-size:20px; font-weight:600; max-width:600px;">CONTACT DETAILS</p>
                 <p><strong>Name: </strong> ${fName} ${lName}</p>
               <p><strong>Phone: </strong> ${phone}</p>
@@ -290,10 +289,9 @@ export default async function fransContactHandler(req, res) {
             <p><strong>Plan for funding a venture of this nature: </strong> ${planForVenture}</p>
           <p><strong>Visited an ALL IN ADVENTURES before: </strong> ${visitAIA}</p>
           <p><strong>Preferred state to open a new venue: </strong> ${preferredstate}</p>
-          <p><strong>First choice city: </strong> ${preferredCity1}</p>
-          <p><strong>Second  choice city: </strong> ${preferredCity2}</p>
+          <p><strong>First choice city: </strong> ${fchoiceCity}</p>
+          <p><strong>Second  choice city: </strong> ${schoiceCity}</p>
           <p><strong>Preferred timeframe: </strong> ${preferredTimeFrame}</p>
-     
           <p><strong>Involvement with other franchisees: </strong> ${otherInvolvement}</p>
           <p><strong>Operations plan: </strong> ${opPlan}</p>
           <p><strong>Other professional/relevant experiences: </strong> ${profExp}</p>

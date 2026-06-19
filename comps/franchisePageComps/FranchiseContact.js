@@ -322,7 +322,7 @@ const FranchiseContactForm = () => {
     const fcityname = e.target.value.trim();
 
     const namePatt = /^[a-zA-Z0-9- ]*$/;
-    if (fcityname.length > 2 && fcityname.length < 21) {
+    if (fcityname.length > 2 && fcityname.length < 80) {
       if (!namePatt.test(fcityname)) {
         setErr(true);
         setFormErr({ ...formErr, fchoiceCityErr: true });
@@ -345,7 +345,7 @@ const FranchiseContactForm = () => {
     const scityname = e.target.value.trim();
 
     const namePatt = /^[a-zA-Z0-9- ]*$/;
-    if (scityname.length > 2 && scityname.length < 21) {
+    if (scityname.length > 2 && scityname.length < 80) {
       if (!namePatt.test(scityname)) {
         setErr(true);
         setFormErr({ ...formErr, schoiceCityErr: true });
@@ -523,7 +523,7 @@ const FranchiseContactForm = () => {
   // ========================================================you believe end=================
 
   const submitFranchiseForm = async (event) => {
-    event.preventDefault();
+    
     event.preventDefault();
     console.log("submiting....");
     setIsSend(true);
@@ -546,7 +546,7 @@ const FranchiseContactForm = () => {
       return;
     }
     const grcToken = await recaptchaRef.current.executeAsync();
-    console.log("captcha token ..." + grcToken);
+   // console.log("captcha token ..." + grcToken);
     if (!grcToken) {
       setErrorMsg("Cptcha not fetch. try again");
       return;
@@ -554,7 +554,7 @@ const FranchiseContactForm = () => {
     setReCaptchaToken(grcToken);
 
     // console.log("captcha...." + grcToken);
-    console.log("Sending..." + fieldVlue);
+  //  console.log("Sending..." + fieldVlue);
     const formData = {
       fName: fieldVlue.fName,
       lName: fieldVlue.lName,
@@ -578,7 +578,9 @@ const FranchiseContactForm = () => {
       botMsg: fieldVlue.botMsg,
       captchaToken: grcToken,
     };
-
+ console.log("Sending... Form Data...");
+// console.log("Sending..." + JSON.stringify(formData));
+  //console.log("lets try");
     try {
       const response = await fetch("/api/Forms/fransContact", {
         method: "POST",
