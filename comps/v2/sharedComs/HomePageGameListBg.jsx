@@ -27,12 +27,12 @@ export default function HomePageGameListBg({ children }) {
 
   return (
     <div className="escape-game-list-section-wrapper bg-[#090909]">
-      <div className="dt-section-wrapper pt-20 pb-16 zm:pt-[7.5rem]  md:py-20 lg:py-24 xl:py-28  relative">
+      <div className="game-list-section-wrapper pt-20 pb-16 zm:pt-[7.5rem]  md:py-20 lg:py-24 xl:py-28  relative">
         {/*===================================================maze*/}
         <div className="compass-video-bg w-full absolute top-0 left-0 right-0 mx-auto ">
           {/*===================================================video*/}
           <div className="compass-video relative w-full overflow-hidden bg-gray-400 ">
-          {/*  <div
+            {/*  <div
               className="w-full h-auto absolute top-0 left-0"
               style={{
                 zIndex: !isHide ? "5" : "1",
