@@ -13,6 +13,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@opencx/widget-react": "^4.0.52",
     "@react-google-maps/api": "^2.20.7",
     "@types/gapi": "^0.0.45",
     "cookies-next": "^2.1.1",

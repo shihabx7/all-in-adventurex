@@ -1,44 +1,77 @@
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
+
 export default function HomePageHeroVideoBg({ videoData }) {
   const videoRef = useRef();
   const [videoUrl, setVideoUrl] = useState(null);
+  const [isloadVideo, setIsLoadVideo] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isHide, setIsHide] = useState(false);
 
-  //const videoReqUrl = `https://fast.wistia.net/embed/medias/${videoData.video.wistiaMediaId}.json`;
-
-  /* useEffect(() => {
-    // Example Wistia JSON URL
-  //  console.log("Wistia data :" + videoReqUrl);
-    fetch(videoReqUrl)
-      .then((res) => res.json())
-      .then((data) => {
-        // pick highest quality mp4 asset
-        const mp4Asset = data.media.assets.find(
-          (asset) => asset.type === "hd_mp4_video"
-        );
-        if (mp4Asset) {
-          setVideoUrl(mp4Asset.url);
-          videoRef.current.play();
-        } else {
-          setVideoUrl(videoData.selfUrl);
-          videoRef.current.play();
-        }
-      });
-        useEffect(() => {
-    videoRef.current.play();
-  }, [videoUrl]);
-  }, []);*/
   useEffect(() => {
-    videoRef.current.play();
+    setIsLoadVideo(true);
   }, []);
 
+  useEffect(() => {
+    videoRef.current.play();
+    setIsPlaying(true);
+  }, [isloadVideo]);
+
+  useEffect(() => {
+    if (isPlaying === true) {
+      const timer = setTimeout(() => {
+        setIsHide(true);
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [isPlaying]);
+
   return (
-    <div className="section-full-screen-bg-video max-w-screen h-full  ">
+    <div className="section-full-screen-bg-video  w-full h-full max-w-screen overflow-hidden relative ">
+      <div
+        className="w-full h-full absolute top-0 left-0 transition-opacity duration-500 ease-linear"
+        style={{
+          zIndex: !isHide ? "10" : "1",
+        }}
+      >
+        {/*==============================================
+        <Image
+          src={
+            videoData.videoScreen.url
+              ? videoData.videoScreen.url
+              : "/assets/home-page/all-in-adventure-hero-video-poster.jpg"
+          }
+          alt={"bg cover"}
+          width={1000}
+          height={543}
+          preload={false}
+          style={{
+            opacity: !isHide ? ".9" : ".5",
+            objectFit: "cover",
+          }}
+        />
+         <img
+          className="w-full h-full object-cover object-center transition-opacity duration-500 ease-linear "
+          src={
+            videoData.videoScreen.url
+              ? videoData.videoScreen.url
+              : "/assets/home-page/all-in-adventure-hero-video-poster.jpg"
+          }
+          alt={"bg cover"}
+          style={{
+            opacity: !isHide ? ".9" : ".5",
+          }}
+        ></img>
+ ================================================================*/}
+      </div>
+
       <video
         ref={videoRef}
         className={
-          "no-fullscreen-vid w-full h-full aspect-video object-cover object-center "
+          "no-fullscreen-vid w-full h-full  object-cover object-center transition-all duration-300 ease-in   relative z-10"
         }
-        preload="metadata"
+        preload={isloadVideo ? "metadata" : "none"}
         playsInline
         autoPlay
         loop
@@ -49,8 +82,12 @@ export default function HomePageHeroVideoBg({ videoData }) {
             : "/assets/home-page/all-in-adventure-hero-video-poster.jpg"
         }
       >
-        <source src={videoData.video.webmUrl} type={"video/webm"} />
-        <source src={videoData.video.url} type={"video/mp4"} />
+        {isloadVideo && (
+          <>
+            <source src={videoData.video.webmUrl} type={"video/webm"} />
+            <source src={videoData.video.url} type={"video/mp4"} />
+          </>
+        )}
       </video>
     </div>
   );

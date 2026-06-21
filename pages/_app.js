@@ -4,12 +4,13 @@ import "../styles/aia-res.css";
 import { fetchLocationListData } from "../lib/dataFatcher/locationDataFetcher";
 import { SiteDataProvider } from "../contexts/SiteDataContext";
 import ModalMenu from "../comps/v2/layouts/layoutComps/ModalMenu";
-
+import OpenCxChatWrapper from "../comps/v2/layouts/layoutComps/OpenCxChatWrapper";
 function MyApp({ Component, pageProps, locationListData }) {
   return (
     <SiteDataProvider allLocationList={locationListData}>
       <ModalMenu />
       <Component {...pageProps} />
+      <OpenCxChatWrapper/>
     </SiteDataProvider>
   );
 }
