@@ -62,7 +62,7 @@ export default function EscapeGameListInfo({
         ></img>
       </div>
        {/*=======================================Game-card-content=============================*/}
-      <div className="egl-info-content relative z-[20] px-2 py-4 rm:px-2 rm:py-5 zm:px-4 zm:py-5 md:pl-[24px] lg:p-6 lg:pl-[38px] xl:p-10 xl:pl-[44px] 2xl:pl-[50px]">
+      <div className="egl-info-content relative z-[20] px-2 py-4 rm:px-2 rm:py-6 zm:px-4 zm:py-5 md:pl-[24px] lg:p-6 lg:pl-[38px] xl:p-10 xl:pl-[44px] 2xl:pl-[50px]">
         <h3 className="egl-game-title leading-[1.1] font-bold text-[20px] rm:text-[22px] zm:text-[24px] xl:text-[30px]  2xl:text-[32px] uppercase text-[#f0f0f0]">
           {gameInfo.gameTitle}
         </h3>

@@ -62,7 +62,7 @@ export default function EscapeGameListVideo({
       ref={containerRef}
       onMouseEnter={(e) => playVideoOnHover(e)}
       onMouseLeave={(e) => stopVideoOnClick(e)}
-      className="egl-video-box hover:cursor-pointer w-full md:w-[300px] lg:w-[380px] xl:w-[450px] 2xl:w-[476px] aspect-[1/1.25] md:aspect-[470/560] relative group overflow-hidden"
+      className="egl-video-box hover:cursor-pointer w-full md:w-[300px] lg:w-[380px] xl:w-[450px] 2xl:w-[476px] aspect-[470/560] relative group overflow-hidden"
     >
       {/*==================================================game video poster=== */}
       {!isPlaying && (

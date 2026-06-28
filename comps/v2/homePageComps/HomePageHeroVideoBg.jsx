@@ -9,6 +9,8 @@ export default function HomePageHeroVideoBg({ videoData }) {
   const [isHide, setIsHide] = useState(false);
 
   useEffect(() => {
+   
+    setVideoUrl(videoData.video.webmUrl)
     setIsLoadVideo(true);
   }, []);
 
