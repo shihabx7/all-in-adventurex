@@ -73,7 +73,7 @@ export default function HomePageHeroVideoBg({ videoData }) {
         className={
           "no-fullscreen-vid w-full h-full  object-cover object-center transition-all duration-300 ease-in   relative z-10"
         }
-        preload={isloadVideo ? "metadata" : "none"}
+        preload={isloadVideo ? "auto" : "metadata"}
         playsInline
         autoPlay
         loop
