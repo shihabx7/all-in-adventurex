@@ -76,7 +76,7 @@ export default function EscapeGameList({
               className="egl-item-row flex flex-col md:flex-row items-center "
             >
               {/*=====================================================================Game-video*/}
-              <div className="egl-item-col   relative z-20">
+              <div className="egl-item-col w-full md:w-auto  relative z-20">
                 <EscapeGameListVideo
                   videoData={item.videoData}
                   currentVideoRef={currentVideoRef}
@@ -110,7 +110,7 @@ export default function EscapeGameList({
               </div>
               {/*=====================================================================Game-video end*/}
               {/*=====================================================================Game-text*/}
-              <div className="egl-item-col grow">
+              <div className="egl-item-col w-full md:grow">
                 <EscapeGameListInfo
                   gameInfo={item.gameInfo}
                   listCardBgImage={item.listCardBgImage}

@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
 export default function HomePageGameListBg({ children }) {
+  /*-------------------------------------------------
   const compVideoRef = useRef();
   const [isloadVideo, setIsLoadVideo] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -24,6 +25,7 @@ export default function HomePageGameListBg({ children }) {
       return () => clearTimeout(timer);
     }
   }, [isPlaying]);
+  ------------------------------------------------*/
 
   return (
     <div className="escape-game-list-section-wrapper bg-[#090909]">
@@ -32,25 +34,17 @@ export default function HomePageGameListBg({ children }) {
         <div className="compass-video-bg w-full absolute top-0 left-0 right-0 mx-auto ">
           {/*===================================================video*/}
           <div className="compass-video relative w-full overflow-hidden bg-gray-400 ">
-            {/*  <div
-              className="w-full h-auto absolute top-0 left-0"
-              style={{
-                zIndex: !isHide ? "5" : "1",
-              }}
-            >
+            
               <img
                 className="w-full object-cover object-center scale-110  md:scale-[1.15] 2xl:scale-[1.2] transition-opacity duration-500 ease-linear "
                 src={
                   "/assets/home-page/all-in-adventure-escape-room-compass-mystery-poster.jpg"
                 }
                 alt={"bg cover"}
-                style={{
-                  opacity: !isHide ? ".9" : "0",
-                }}
               ></img>
-            </div>
-            
-            */}
+      
+
+            {/* -------     
             <video
               ref={compVideoRef}
               className={
@@ -82,6 +76,7 @@ export default function HomePageGameListBg({ children }) {
                 </>
               )}
             </video>
+            ------  */}
             <div className="mage-overlay bg-gradient-to-t from-[rgba(9,9,9,.08)] from-50%   via-[rgba(9,9,9,.35)]  to-[rgba(9,9,9,.66)] absolute w-full h-full top-0 left-0 z-10"></div>
           </div>
         </div>

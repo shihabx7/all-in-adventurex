@@ -86,7 +86,7 @@ const EventLocList = (props) => {
                       }
                       className="text-center border-2   border-red-600 bg-transparent py-2 md:py-3 px-12 rounded-full font-medium text-lg  hover:bg-red-700 hover:border-red-700 text-white"
                     >
-                      LEARN MORE
+                      EXPLOR NOW
                     </a>
                   </div>
                 </div>
