@@ -31,7 +31,9 @@ export default function HomePageHeroVideoBg({ videoData }) {
 
   return (
     <div className="section-full-screen-bg-video  w-full h-full max-w-screen overflow-hidden relative ">
-      <div
+      {
+        !isHide && 
+  <div
         className="w-full h-full absolute top-0 left-0 transition-opacity duration-500 ease-linear"
         style={{
           zIndex: !isHide ? "10" : "1",
@@ -53,7 +55,9 @@ export default function HomePageHeroVideoBg({ videoData }) {
             objectFit: "cover",
           }}
         />
-         <img
+        
+         ================================================================*/}
+        <img
           className="w-full h-full object-cover object-center transition-opacity duration-500 ease-linear "
           src={
             videoData.videoScreen.url
@@ -65,15 +69,18 @@ export default function HomePageHeroVideoBg({ videoData }) {
             opacity: !isHide ? ".9" : ".5",
           }}
         ></img>
- ================================================================*/}
+
       </div>
+
+      }
+    
 
       <video
         ref={videoRef}
         className={
           "no-fullscreen-vid w-full h-full  object-cover object-center transition-all duration-300 ease-in   relative z-10"
         }
-        preload={isloadVideo ? "auto" : "metadata"}
+        preload={isloadVideo ? "none" : "metadata"}
         playsInline
         autoPlay
         loop

@@ -80,7 +80,7 @@ const EventRootList = (props) => {
                       href={"/events/" + event.eventSlug}
                       className="text-center border-2 w-[240px] block md:inline-block mx-auto md:mx-0  border-red-600 bg-transparent py-2 md:py-3 px-10 rounded-full font-medium text-lg mb-2 hover:bg-red-700 hover:border-red-700 text-white"
                     >
-                       EXPLOR NOW
+                      EXPLOR NOW
                     </a>
                   </div>
                 </div>
