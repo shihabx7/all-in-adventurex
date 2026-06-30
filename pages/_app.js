@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps, locationListData }) {
     <SiteDataProvider allLocationList={locationListData}>
       <ModalMenu />
       <Component {...pageProps} />
-      <OpenCxChatWrapper/>
+      <OpenCxChatWrapper />
     </SiteDataProvider>
   );
 }

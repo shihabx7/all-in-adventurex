@@ -9,8 +9,7 @@ export default function HomePageHeroVideoBg({ videoData }) {
   const [isHide, setIsHide] = useState(false);
 
   useEffect(() => {
-   
-    setVideoUrl(videoData.video.webmUrl)
+    setVideoUrl(videoData.video.webmUrl);
     setIsLoadVideo(true);
   }, []);
 
@@ -31,15 +30,14 @@ export default function HomePageHeroVideoBg({ videoData }) {
 
   return (
     <div className="section-full-screen-bg-video  w-full h-full max-w-screen overflow-hidden relative ">
-      {
-        !isHide && 
-  <div
-        className="w-full h-full absolute top-0 left-0 transition-opacity duration-500 ease-linear"
-        style={{
-          zIndex: !isHide ? "10" : "1",
-        }}
-      >
-        {/*==============================================
+      {!isHide && (
+        <div
+          className="w-full h-full absolute top-0 left-0 transition-opacity duration-500 ease-linear"
+          style={{
+            zIndex: !isHide ? "10" : "1",
+          }}
+        >
+         
         <Image
           src={
             videoData.videoScreen.url
@@ -47,33 +45,37 @@ export default function HomePageHeroVideoBg({ videoData }) {
               : "/assets/home-page/all-in-adventure-hero-video-poster.jpg"
           }
           alt={"bg cover"}
+          priority={true} 
           width={1000}
           height={543}
-          preload={false}
+            layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          priority
+          
           style={{
             opacity: !isHide ? ".9" : ".5",
-            objectFit: "cover",
+            
           }}
         />
+ {/*==============================================
+         <img
+            className="w-full h-full object-cover object-center transition-opacity duration-500 ease-linear "
+            src={
+              videoData.videoScreen.url
+                ? videoData.videoScreen.url
+                : "/assets/home-page/all-in-adventure-hero-video-poster.jpg"
+            }
+            alt={"bg cover"}
+            style={{
+              opacity: !isHide ? ".9" : ".5",
+            }}
+          ></img>
         
          ================================================================*/}
-        <img
-          className="w-full h-full object-cover object-center transition-opacity duration-500 ease-linear "
-          src={
-            videoData.videoScreen.url
-              ? videoData.videoScreen.url
-              : "/assets/home-page/all-in-adventure-hero-video-poster.jpg"
-          }
-          alt={"bg cover"}
-          style={{
-            opacity: !isHide ? ".9" : ".5",
-          }}
-        ></img>
-
-      </div>
-
-      }
-    
+         
+        </div>
+      )}
 
       <video
         ref={videoRef}
