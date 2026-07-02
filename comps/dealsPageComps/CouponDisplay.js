@@ -5,10 +5,20 @@ const CouponDisplay = () => {
       {/* ==================coupon desc title============================= */}
       <div className="copoun-desc-box px-4 py-4 md:px-6 md:py-6">
         <div className="coupon-title">
-          <p className="md:text-lg text-[#938056]">CURRENT DEALS AND COUPONS</p>
-          <h2 className="golden-text font-os font-bold text-2xl md:text-3xl lg:text-4xl">
-            PLAY IT AGAIN—DOUBLE THE FUN, HALF THE PRICE{" "}
-          </h2>
+          <p className="text-[.94rem] md:text-lg text-[#938056]">
+            CURRENT DEALS AND COUPONS
+          </p>
+          <div className="flex flex-col space-y-3 zm:space-y-0 zm:flex-row zm:justify-between zm:items-center zm:space-x-2">
+            <h2 className="golden-text font-os font-bold text-2xl md:text-3xl lg:text-4xl">
+              Rewards Members Only
+            </h2>
+            <a
+              href="https://allinadventures.com/all-in-rewards"
+              className="max-w-[230px] zm:max-w-auto bg-transparent cursor-pointer rounded font-medium uppercase text-sm md:text-base text-center text-[#231800] hover:text-white hover:bg-red-700 py-2 md:py-2.5 px-4 md:px-6 lg:px-8 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+            >
+              Sign up Now
+            </a>
+          </div>
         </div>
       </div>
       {/* ==================coupon desc============================= */}

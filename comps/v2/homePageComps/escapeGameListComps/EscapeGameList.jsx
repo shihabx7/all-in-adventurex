@@ -46,7 +46,7 @@ export default function EscapeGameList({
       const filteredGame = allGameList.filter(
         (game) =>
           game.gameInfo.gameTheme.includes(currentFilter) ||
-          game.gameInfo.recommendFor.includes(currentFilter)
+          game.gameInfo.recommendFor.includes(currentFilter),
       );
 
       setGameList(filteredGame);

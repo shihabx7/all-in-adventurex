@@ -37,28 +37,25 @@ export default function HomePageHeroVideoBg({ videoData }) {
             zIndex: !isHide ? "10" : "1",
           }}
         >
-         
-        <Image
-          src={
-            videoData.videoScreen.url
-              ? videoData.videoScreen.url
-              : "/assets/home-page/all-in-adventure-hero-video-poster.jpg"
-          }
-          alt={"bg cover"}
-          priority={true} 
-          width={1000}
-          height={543}
+          <Image
+            src={
+              videoData.videoScreen.url
+                ? videoData.videoScreen.url
+                : "/assets/home-page/all-in-adventure-hero-video-poster.jpg"
+            }
+            alt={"bg cover"}
+            priority={true}
+            width={1000}
+            height={543}
             layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-          priority
-          
-          style={{
-            opacity: !isHide ? ".9" : ".5",
-            
-          }}
-        />
- {/*==============================================
+            objectFit="cover"
+            objectPosition="center"
+            priority
+            style={{
+              opacity: !isHide ? ".9" : ".5",
+            }}
+          />
+          {/*==============================================
          <img
             className="w-full h-full object-cover object-center transition-opacity duration-500 ease-linear "
             src={
@@ -73,7 +70,6 @@ export default function HomePageHeroVideoBg({ videoData }) {
           ></img>
         
          ================================================================*/}
-         
         </div>
       )}
 

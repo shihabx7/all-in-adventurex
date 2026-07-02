@@ -57,7 +57,8 @@ export const getDealsCouponPageData = async () => {
         group: "deals",
         ques: "How can I get a discount?",
         ans: [
-          "<p>Glad you asked! Our absolute champion of savings is the <a href='https://allinadventures.com/unlimited-play-pass'>Unlimited Play Pass</a> - it's your golden ticket to unlocking endless fun, whether you want to play all year or just pack in a day of non-stop adventure for one unbeatable price!</p><p>But wait, there's more! We've also got a treasure trove of other awesome ways to save, like our super popular Play It Again offer, plus exclusive perks for our amazing military heroes, first responders, and mall employees. Be sure to sign up above to stay informed or ask a team member about all our current special savings when you visit!</p>",
+          "<p> Glad you asked! Our absolute champion of savings is our <a href='https://allinadventures.com/all-in-rewards'>All In Rewards Program</a> - it's your golden ticket to unlocking endless fun! Earn punches towards free admissions, receive member-exclusive discounts, and enjoy a signup discount today!</p>"+
+          "<p>But wait, there's more! We've also got a treasure trove of other awesome ways to save, like our super popular Member-Exclusive Play It Again offer, plus exclusive perks for our amazing military heroes, first responders, and mall employees. Be sure to sign up above to stay informed or ask a team member about all our current special savings when you visit!</p>",
         ],
       },
       {
