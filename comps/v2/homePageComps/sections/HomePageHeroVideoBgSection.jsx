@@ -32,7 +32,7 @@ export default function HomePageHeroVideoBgSection({
     });
   };
   return (
-    <div className="page-hero-section relative bg-stone-800">
+    <div className="page-hero-section win-11-set relative bg-stone-800">
       <div className="section-bg  bg-stone-800 relative">
         <div className="hero-video-bg w-full h-full absolute top-0 left-0 ">
           <HomePageHeroVideoBg videoData={pageHeroData.heroBgVideo} />
