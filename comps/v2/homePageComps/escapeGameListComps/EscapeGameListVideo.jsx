@@ -10,6 +10,8 @@ export default function EscapeGameListVideo({
   setCurrentVideoRef,
   gameCardData,
 }) {
+  {
+    /*===================================
   const gameVideoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isStop, setStop] = useState(false);
@@ -54,33 +56,29 @@ export default function EscapeGameListVideo({
       setIsPlaying(false); // Update state to reflect paused status
     }
   };
-  const containerRef = useOnClickOutside(handleOutsideClick);
+  const containerRef = useOnClickOutside(handleOutsideClick); 
+  ===== */
+  }
   // ===============================================stop video on touch out side
   //onTouchEnd={(e) => stopVideoOnClick(e)}
   return (
-    <div
-      ref={containerRef}
-      onMouseEnter={(e) => playVideoOnHover(e)}
-      onMouseLeave={(e) => stopVideoOnClick(e)}
-      className="egl-video-box hover:cursor-pointer w-full md:w-[300px] lg:w-[380px] xl:w-[450px] 2xl:w-[476px] aspect-[470/560] relative group overflow-hidden"
-    >
-      {/*==================================================game video poster=== */}
-      {!isPlaying && (
-        <div className="w-full h-full absolute top-0 left-0">
-          <img
-            className="w-full h-full object-cover object-center "
-            src={gameCardData.poster.url}
-            alt={
-              gameCardData.poster.alt
-                ? gameCardData.poster.alt
-                : "All in Adventures escape game video"
-            }
-          ></img>
-        </div>
-      )}
+    <div className="egl-video-box hover:cursor-pointer w-full md:w-[300px] lg:w-[380px] xl:w-[450px] 2xl:w-[476px] aspect-[470/560] ">
+      {/*==================================================game video poster=== 
+      {!isPlaying && ( */}
+      <div className="w-full h-full absolute top-0 left-0   group overflow-hidden border-1 border-[#E0BF62]/50 game-card-shadow ">
+        <img
+          className="w-full h-full object-cover object-center inline-block "
+          src={gameCardData.poster.url}
+          alt={
+            gameCardData.poster.alt
+              ? gameCardData.poster.alt
+              : "All in Adventures escape game video"
+          }
+        ></img>
+      </div>
 
-      {/*================================================== game video poster end=== */}
-      {/*================================================== game video */}
+      {/*=    )}================================================= game video poster end=== */}
+      {/*================================================== game 
 
       <video
         ref={gameVideoRef}
@@ -101,8 +99,8 @@ export default function EscapeGameListVideo({
         )}
       </video>
 
-      {/*==================================================game video end*/}
-      {/*================================================== play button */}
+     =================================================game video end*/}
+      {/*================================================== play button 
       <div className="absolute bottom-[26px] right-[24px] md:bottom-[30px] md:right-[30px] xl:bottom-[36px] xl:right-[36px] z-20">
         {isPlaying ? (
           <button
@@ -124,7 +122,7 @@ export default function EscapeGameListVideo({
           </button>
         )}
       </div>
-      {/*================================================== play button */}
+      ================================================== play button */}
     </div>
   );
 }
