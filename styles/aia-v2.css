@@ -166,11 +166,10 @@
 /*===============================game card styles=====================*/
 
 .game-card-shadow{
-  box-shadow: 0px 0px 12px rgba(202, 147, 66, 0.7);
+  box-shadow: 0px 0px 14px rgba(202, 147, 66, 0.74);
   transition: box-shadow 0.3s ease-in-out;
 }
 .game-card-shadow:hover{
-  box-shadow: 0px 0px 16px rgba(202, 147, 66, 0.94);
-  transition: box-shadow 0.3s ease-in-out;
+  cursor: default;
 
 }
