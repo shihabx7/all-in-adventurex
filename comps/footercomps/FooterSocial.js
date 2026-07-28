@@ -4,51 +4,65 @@ import {
   FaTwitterSquare,
   FaInstagramSquare,
   FaYoutubeSquare,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaInstagram,
+  FaTiktok,
 } from "react-icons/fa";
+//import { AiFillTikTok } from "react-icons/ai";
+// href="https://twitter.com/AllinAdventure"
+import { FaXTwitter, FaYoutube } from "react-icons/fa6";
+
 const FooterSocial = (props) => {
   return (
     <div className="footeter-social-box text-center pt-8">
       <h3 className="golden-text font-xl font-bold text-center">
         FOLLOW US ON SOCIAL
       </h3>
-      <div className="social-icon-list-box mt-4 flex justify-center space-x-3 md:space-x-6">
+      <div className="social-icon-list-box mt-4 flex justify-center space-x-2.5 rm:space-x-3 md:space-x-5">
         <a
           target="_blank"
           href="https://www.facebook.com/allinadventure/"
-          className="text-gray-500 hover:text-gold text-4xl"
+          className="w-9 h-9 flex justify-center items-center text-gray-900  text-[22px] leading-[1] bg-gray-500 hover:bg-gold  rounded-md transition-all duration-300 ease-in-out"
         >
-          <FaFacebookSquare />
+          <FaFacebookF />
         </a>
 
         <a
           target="_blank"
           href="https://www.linkedin.com/company/11547229/"
-          className="text-gray-500 hover:text-gold text-4xl"
+          className="w-9 h-9 flex justify-center items-center text-gray-900  text-[22px] leading-[1] bg-gray-500 hover:bg-gold  rounded-md transition-all duration-300 ease-in-out"
         >
-          <FaLinkedin />
+          <FaLinkedinIn />
         </a>
-
         <a
           target="_blank"
           href="https://www.instagram.com/all_in_adventures/"
-          className="text-gray-500 hover:text-gold rounded text-4xl"
+          className="w-9 h-9 flex justify-center items-center text-gray-900  text-[26px] leading-[1] bg-gray-500 hover:bg-gold  rounded-md transition-all duration-300 ease-in-out"
         >
-          <FaInstagramSquare />
+          <FaInstagram />
         </a>
 
         <a
           target="_blank"
-          href="https://twitter.com/AllinAdventure"
-          className="text-gray-500 hover:text-gold text-4xl"
+          href="https://x.com/AllinAdventure"
+          className="w-9 h-9 flex justify-center items-center text-gray-900  text-[22px] leading-[1] bg-gray-500 hover:bg-gold  rounded-md transition-all duration-300 ease-in-out"
         >
-          <FaTwitterSquare />
+          <FaXTwitter />
         </a>
         <a
           target="_blank"
           href="https://www.youtube.com/@allinadventures2557/videos"
-          className="text-gray-500 hover:text-gold text-4xl"
+          className="w-9 h-9 flex justify-center items-center text-gray-900  text-[26px] leading-[1] bg-gray-500 hover:bg-gold  rounded-md transition-all duration-300 ease-in-out"
         >
-          <FaYoutubeSquare />
+          <FaYoutube />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.tiktok.com/@all_in_adventures"
+          className="w-9 h-9 flex justify-center items-center text-gray-900  text-[22px] leading-[1] bg-gray-500 hover:bg-gold  rounded-md transition-all duration-300 ease-in-out"
+        >
+          <FaTiktok />
         </a>
       </div>
     </div>
