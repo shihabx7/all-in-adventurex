@@ -34,12 +34,14 @@ const ContactStorePage = (props) => {
         hasMobileEscapeRoom={props.hasMobileEscapeRoom}
       />
       {showModalForm && (
+        <>
         <ContactModalSection
           setShowFormModalForm={setShowFormModalForm}
           locationName={props.locationName}
           locationSlug={props.locationSlug}
           locationInfo={props.locationInfo}
         />
+        </>
       )}
 
       <div id="mainContent" className="main-content">

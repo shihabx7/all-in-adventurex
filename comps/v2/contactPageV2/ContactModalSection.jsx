@@ -31,7 +31,7 @@ const ContactModalSection = (props) => {
               locationInfo={props.locationInfo}
             />
           )}
-          {props.locationList && (
+          {!props.locationSlug && props.locationList && (
             <CorContactOld locationList={props.locationList} />
           )}
         </div>

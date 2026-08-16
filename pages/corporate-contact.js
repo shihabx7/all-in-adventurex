@@ -27,10 +27,15 @@ const CorContactPage = (props) => {
       />
       {/* =======header content ======== end */}
       {showModalForm && (
+        <> 
+        
+        
+      
         <ContactModalSection
           setShowFormModalForm={setShowFormModalForm}
           locationList={props.locationList}
         />
+          </>
       )}
       {/* =========================================================================================main content ======== end */}
       <div
