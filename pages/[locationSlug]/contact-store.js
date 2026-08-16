@@ -11,6 +11,7 @@ import DynamicPageBread from "../../comps/util/DynamicPageBread";
 import ContactStoreHero from "../../comps/contactComps/ContactStoreHero";
 import StoreContact from "../../comps/contactComps/StoreContact";
 //=============================================v2
+
 import ContactModalSection from "../../comps/v2/contactPageV2/ContactModalsection";
 import StoreContactPageHero from "../../comps/v2/contactPageV2/StoreContactPageHero";
 import ContactInfoSection from "../../comps/v2/contactPageV2/ContactInfoSection";
@@ -56,7 +57,7 @@ const ContactStorePage = (props) => {
           isPublished={props.isPublished}
           allBooking={props.allBooking}
           eventBooking={props.eventBooking}
-           setShowFormModalForm={setShowFormModalForm}
+          setShowFormModalForm={setShowFormModalForm}
         />
 
         <ContactInfoSection

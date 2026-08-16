@@ -101,15 +101,14 @@ export default function RewardProgramBaner({ locationSlug, giftBooking }) {
                     <div className="bfdy-n-item-4 text-[.6rem] rm:text-[.64rem] sm:text-[.8rem] md:text-[.95rem] xl:text-[1rem]  text-center leading-[1]">
                       {locationSlug && (
                         <button
-                          onClick={(e)=>{
-                             e.preventDefault();
+                          onClick={(e) => {
+                            e.preventDefault();
                             bookReward({
-                        
-                            shortName:
-                              locationBookingInfo[locationSlug].shortName,
-                            itemNo:
-                              locationBookingInfo[locationSlug].rewardItemNo,
-                          })
+                              shortName:
+                                locationBookingInfo[locationSlug].shortName,
+                              itemNo:
+                                locationBookingInfo[locationSlug].rewardItemNo,
+                            });
                           }}
                           className="block px-1.5 py-1.5 md:py-2 md:px-3 xl:px-4 3xl:py-2 rounded border border-red-600 hover:border-red-700 bg-transparent hover:bg-red-700 text-white hover:text-white font-bold  transition-all duration-400"
                         >
