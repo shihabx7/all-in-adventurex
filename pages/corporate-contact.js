@@ -11,7 +11,7 @@ import CorContact from "../comps/contactComps/CorContact";
 //===================================v2
 import ContactPageRootHero from "../comps/v2/contactPageV2/ContactPageRootHero";
 import CorContactInfoSection from "../comps/v2/contactPageV2/CorContactInfoSection";
-import ContactModalSection from "../comps/v2/contactPageV2/ContactModalsection";
+import ContactModalSection from "../comps/v2/contactPageV2/ContactModalSection";
 
 const CorContactPage = (props) => {
   const [showModalForm, setShowFormModalForm] = useState(false);
@@ -27,15 +27,12 @@ const CorContactPage = (props) => {
       />
       {/* =======header content ======== end */}
       {showModalForm && (
-        <> 
-        
-        
-      
-        <ContactModalSection
-          setShowFormModalForm={setShowFormModalForm}
-          locationList={props.locationList}
-        />
-          </>
+        <>
+          <ContactModalSection
+            setShowFormModalForm={setShowFormModalForm}
+            locationList={props.locationList}
+          />
+        </>
       )}
       {/* =========================================================================================main content ======== end */}
       <div
@@ -82,7 +79,7 @@ export const getStaticProps = async () => {
       escapeGameSlugList: DATA.escapeGameSlugList,
       otherGameSlugList: DATA.otherGameSlugList,
       eventSlugList: DATA.eventSlugList,
-      locationList:DATA.locationList,
+      locationList: DATA.locationList,
       totalLocations: DATA.totalLocations,
       pageMeta: DATA.pageMeta,
       pageData: DATA.pageData,
