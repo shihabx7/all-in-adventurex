@@ -2,7 +2,7 @@
 import ReCAPTCHA from "react-google-recaptcha";
 import { useState, useEffect, useRef } from "react";
 
-const CorContacV1 = (props) => {
+const CorContactOld = (props) => {
   // const [captchaToken, setCaptchaToken] = useState(null);
   const recaptchaRef = useRef();
   const [csrfToken, setCsrfToken] = useState(null);
@@ -500,4 +500,4 @@ const CorContacV1 = (props) => {
   );
 };
 
-export default CorContacV1;
+export default CorContactOld;
