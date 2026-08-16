@@ -24,6 +24,7 @@ const CorContactPage = (props) => {
         escapeGameSlugList={props.escapeGameSlugList}
         otherGameSlugList={props.otherGameSlugList}
         eventSlugList={props.eventSlugList}
+        contactBtn={true}
       />
       {/* =======header content ======== end */}
       {showModalForm && (
@@ -37,7 +38,7 @@ const CorContactPage = (props) => {
       {/* =========================================================================================main content ======== end */}
       <div
         id="mainContent"
-        className="main-content nobtn-main-content bg-center"
+        className="main-content "
       >
         {/* =======breadcum content and breadcum========  */}
         <PageBread />

@@ -47,7 +47,7 @@ export default function GameBookingBtn(props) {
                     onClick={() => bookAll(props.allBooking)}
                     className="bg-red-600 cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border border-red-600 hover:border-red-700 transition duration-300"
                   >
-                    BOOK GAMES
+                  {props.contactBtn? "BOOK YOUR GAMES":"BOOK GAMES"}
                   </button>
                 )}
 
@@ -84,7 +84,7 @@ export default function GameBookingBtn(props) {
                 onClick={showLocModal}
                 className="bg-red-600 cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border border-red-600 hover:border-red-700 transition duration-300"
               >
-                BOOK GAMES
+                {props.contactBtn? "BOOK YOUR GAMES":"BOOK GAMES"}
               </button>
             )}
             {props.activitySlug && (

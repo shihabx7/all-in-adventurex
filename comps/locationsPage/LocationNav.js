@@ -129,16 +129,21 @@ const LocationNav = (props) => {
                   <>
                     {!props.hideMenuBookBtn && (
                       <>
-                        <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
-                          <div className="header-btn">
-                            <button
-                              onClick={() => bookEventFlow(props.locationSlug)}
-                              className="bg-transparent cursor-pointer rounded font-medium text-white hover:bg-red-700 py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
-                            >
-                              BOOK EVENT
-                            </button>
+                        {!props.contactBtn && (
+                          <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
+                            <div className="header-btn">
+                              <button
+                                onClick={() =>
+                                  bookEventFlow(props.locationSlug)
+                                }
+                                className="bg-transparent cursor-pointer rounded font-medium text-white hover:bg-red-700 py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+                              >
+                                BOOK EVENT
+                              </button>
+                            </div>
                           </div>
-                        </div>
+                        )}
+                       
                         <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
                           <GameBookingBtn
                             isPublished={
@@ -158,6 +163,9 @@ const LocationNav = (props) => {
                             }
                             isGiftPage={
                               props.isGiftPage ? props.isGiftPage : false
+                            }
+                            contactBtn={
+                              props.contactBtn ? props.contactBtn : false
                             }
                           />
                         </div>
@@ -249,6 +257,9 @@ const LocationNav = (props) => {
                 props.activeGameBooking ? props.activeGameBooking : false
               }
               activitySlug={props.activitySlug ? props.activitySlug : false}
+               contactBtn={
+                              props.contactBtn ? props.contactBtn : false
+                            }
             />
           </div>
         )}

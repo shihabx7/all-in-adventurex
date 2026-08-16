@@ -118,16 +118,20 @@ const RootNav = (props) => {
                 {/* =============================================================================Nav bar btn desktop  */}
                 {!props.hideMenuBookBtn && (
                   <>
-                    <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
-                      <div className="header-btn">
-                        <EventBookingBtn />
+                    {!props.contactBtn && (
+                      <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
+                        <div className="header-btn">
+                          <EventBookingBtn />
+                        </div>
                       </div>
-                    </div>
+                    )}
+
                     <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
                       <GameBookingBtn
                         activitySlug={
                           props.activitySlug ? props.activitySlug : false
                         }
+                        contactBtn={props.contactBtn ? props.contactBtn : false}
                       />
                     </div>
                   </>

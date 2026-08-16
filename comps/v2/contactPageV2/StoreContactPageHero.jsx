@@ -18,19 +18,19 @@ const StoreContactPageHero = (props) => {
   };
   
   return (
-    <div className="contact-hero home-hero bg-[#111111] relative">
+    <div className="contact-hero bg-[#111111]  relative">
       <div className="hero-bg-image w-full h-full absolute top-0 left-0 ">
         <PageHeroBgImg
           heroBgImageDesktop={props.pageData.pageHeroDesktop}
           heroBgImageMobile={props.pageData.pageHeroMobile}
         />
       </div>
-      <div className="section-bg-shadow w-full  bg-gradient-to-t from-black/50 to-black/70  relative z-20">
+      <div className="section-bg-shadow w-full  bg-gradient-to-t from-black/50 to-black/70  relative z-10">
         {/*================================================== shadow 
         <div className="w-full h-full fyp-baner absolute top-0 left-0 md:hidden z-10"></div>
         ===============================================shadow */}
 
-        <div className="max-w-7xl home-hero-container mx-auto px-4 pt-0 py-16 md:py-20 lg:py-32 xl:py-40 relative z-20">
+        <div className="max-w-7xl min-h-[300px] mx-auto px-4  py-20 md:py-24 lg:py-32 xl:py-40 ">
           <div className="page-benar-info">
          
 
@@ -48,22 +48,22 @@ const StoreContactPageHero = (props) => {
             ></div>
           </div>
           <div className="hero-btn-pair flex flex-col zm:flex-row justify-center items-center space-y-5 zm:space-y-0 zm:space-x-2 md:space-x-4 lg:space-x-5 mt-7 zm:mt-10 md:mt-12 ">
-            <div className="max-w-[18rem]">
+            <div className="w-[90%] zm:w-[320px] md:w-[18rem]">
               <button
                 onClick={() => {
                   partyFormBooking(eventFormBookingLinks[props.locationSlug]);
                 }}
-                className="bg-red-600 cursor-pointer rounded font-medium text-white hover:bg-red-700 py-2 sm:py-2.5 lg:py-3 px-6 sm:px-8  md:px-10  border-[2px] border-red-600 hover:border-red-700 transition duration-300 uppercase"
+                className="w-full bg-red-600 cursor-pointer rounded font-medium text-white hover:bg-red-700 py-2 sm:py-2.5 lg:py-3 px-6 sm:px-8  md:px-10  border-[2px] border-red-600 hover:border-red-700 transition duration-300 uppercase"
               >
                 Plan a Group EVENT
               </button>
             </div>
-            <div className="max-w-[18rem]">
+            <div className="w-[90%] zm:w-[320px] md:w-[18rem]">
               <button
                 onClick={() => {
                   showModalForm();
                 }}
-                className="bg-transparent cursor-pointer rounded font-medium text-white hover:bg-red-700 py-2 sm:py-2.5 lg:py-3 px-6 sm:px-8 md:px-10 border-[2px] border-red-600 hover:border-red-700 transition duration-300 uppercase "
+                className="w-full bg-transparent cursor-pointer rounded font-medium text-white hover:bg-red-700 py-2 sm:py-2.5 lg:py-3 px-6 sm:px-8 md:px-10 border-[2px] border-red-600 hover:border-red-700 transition duration-300 uppercase "
               >
                 ADDITIONAL HELP
               </button>

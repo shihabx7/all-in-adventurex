@@ -52,14 +52,18 @@ const MobileBookingBtn = (props) => {
       {/**============event booking================= */}
       {props.activitySlug !== "mobile-escape-room" ? (
         <>
-          <div className="w-[48%]">
+          <div className={props.contactBtn? "w-[0px]":"w-[48%]"}>
             {props.locationSlug ? (
-              <button
-                onClick={() => bookEventFlow(props.locationSlug)}
-                className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white"
-              >
-                BOOK EVENT
-              </button>
+              <>
+                {!props.contactBtn && (
+                  <button
+                    onClick={() => bookEventFlow(props.locationSlug)}
+                    className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white"
+                  >
+                    BOOK EVENT
+                  </button>
+                )}
+              </>
             ) : (
               <a
                 href={"/events#eventbooking"}
@@ -71,7 +75,7 @@ const MobileBookingBtn = (props) => {
           </div>
           {/**============event booking end================= */}
           {/**============game booking================= */}
-          <div className="w-[48%]">
+          <div className={props.contactBtn? "w-full":"w-[48%]"}>
             {props.locationSlug ? (
               <>
                 {props.isPublished ? (
@@ -81,7 +85,8 @@ const MobileBookingBtn = (props) => {
                         onClick={() => bookAll(props.allBooking)}
                         className="w-full bg-red-600 font-medium hover:bg-red-700 py-2 px-1 block text-center text-white"
                       >
-                        BOOK GAMES
+                        {props.contactBtn? " BOOK YOUR GAMES":"BOOK GAMES"}
+                       
                       </button>
                     )}
                     {props.giftBooking && props.isGiftPage && (
@@ -119,10 +124,10 @@ const MobileBookingBtn = (props) => {
           <button
             onClick={() => {
               mobileMysteryBooking(
-                mobileEscapeRoomBookingData[props.locationSlug]
+                mobileEscapeRoomBookingData[props.locationSlug],
               );
             }}
-            className="bg-red-600 block w-full font-medium hover:bg-red-700 py-1 md:py-2  block text-center text-white text-lg"
+            className="bg-red-600  w-full font-medium hover:bg-red-700 py-1 md:py-2  block text-center text-white text-lg"
           >
             BOOK NOW
           </button>
@@ -130,7 +135,7 @@ const MobileBookingBtn = (props) => {
             onClick={() => {
               partyFormBooking(mobileEscapeRoomBookingData[props.locationSlug]);
             }}
-            className="bg-red-600 lg:bg-transparent  block w-full font-medium hover:bg-red-700 py-1 md:py-2  block text-center text-white text-lg"
+            className="bg-red-600 lg:bg-transparent   w-full font-medium hover:bg-red-700 py-1 md:py-2  block text-center text-white text-lg"
           >
             GET A QUOTE
           </button>

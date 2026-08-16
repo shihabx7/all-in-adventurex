@@ -17,19 +17,19 @@ const ContactPageRootHero = (props) => {
   };
 
   return (
-    <div className="contact-hero home-hero bg-[#111111] relative">
+    <div className="contact-hero  bg-[#111111] w-full relative">
       <div className="hero-bg-image w-full h-full absolute top-0 left-0 ">
         <PageHeroBgImg
           heroBgImageDesktop={props.pageData.pageHeroDesktop}
           heroBgImageMobile={props.pageData.pageHeroMobile}
         />
       </div>
-      <div className="section-bg-shadow w-full  bg-gradient-to-t from-black/50 to-black/70  relative z-20">
+      <div className="section-bg-shadow w-full  bg-gradient-to-t from-black/50 to-black/70  relative z-10">
         {/*================================================== shadow 
         <div className="w-full h-full fyp-baner absolute top-0 left-0 md:hidden z-10"></div>
         ===============================================shadow */}
 
-        <div className="max-w-7xl home-hero-container mx-auto px-4 pt-0 py-16 md:py-20 lg:py-32 xl:py-40 relative z-20">
+        <div className="min-h-[300px] max-w-7xl mx-auto px-4 py-20 md:py-24 lg:py-32 xl:py-40">
           <div className="page-benar-info">
             <p className="font-semibold zm:text-lg md:text-2xl rm:mb-[0px]  xm:mb-1 text-white text-center leading-[1.2] uppercase">
               CHOOSE FROM {props.totalLocations} U.S. LOCATIONS

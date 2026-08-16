@@ -32,15 +32,16 @@ const ContactStorePage = (props) => {
         allBooking={props.allBooking}
         giftBooking={props.giftBooking}
         hasMobileEscapeRoom={props.hasMobileEscapeRoom}
+        contactBtn={true}
       />
       {showModalForm && (
         <>
-        <ContactModalSection
-          setShowFormModalForm={setShowFormModalForm}
-          locationName={props.locationName}
-          locationSlug={props.locationSlug}
-          locationInfo={props.locationInfo}
-        />
+          <ContactModalSection
+            setShowFormModalForm={setShowFormModalForm}
+            locationName={props.locationName}
+            locationSlug={props.locationSlug}
+            locationInfo={props.locationInfo}
+          />
         </>
       )}
 
