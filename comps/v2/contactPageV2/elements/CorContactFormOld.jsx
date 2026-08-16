@@ -424,19 +424,16 @@ const CorContactFormOld = (props) => {
                       required
                     >
                       <option value="">Choose Inquiry Type</option>
-
-                      <option value="General enquiry">General Inquiry</option>
-                      <option value="Group booking">Group booking</option>
-                      <option value="Birthday party">Birthday party</option>
-                      <option value="Corporate event">Corporate event</option>
-                      <option value="Corporate Membership Discount">
-                        Corporate Membership Discount
-                      </option>
-                      <option value="Careers">Careers</option>
-                      <option value="Franchise enquiry">
-                        Franchise Inquiry
-                      </option>
-                      <option value="Other">Other</option>
+                <option value=""> General Question / Information</option>
+                <option value="General enquiry">
+                  Purchase / Gift Card Support
+                </option>
+                <option value="Group booking">Billing / Refund Inquiry</option>
+                <option value="Birthday party">
+                  Technical / Website Issue
+                </option>
+                <option value="Corporate event">Accessibility Needs</option>
+                <option value="Careers">Other / Not Listed Above</option>
                     </select>
                     {formErr.comErr && (
                       <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
