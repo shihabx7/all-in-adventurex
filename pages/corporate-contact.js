@@ -36,10 +36,7 @@ const CorContactPage = (props) => {
         </>
       )}
       {/* =========================================================================================main content ======== end */}
-      <div
-        id="mainContent"
-        className="main-content "
-      >
+      <div id="mainContent" className="main-content ">
         {/* =======breadcum content and breadcum========  */}
         <PageBread />
         {/* =======breadcum content and breadcum root page template

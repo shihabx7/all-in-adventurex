@@ -143,7 +143,7 @@ const LocationNav = (props) => {
                             </div>
                           </div>
                         )}
-                       
+
                         <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
                           <GameBookingBtn
                             isPublished={
@@ -257,9 +257,7 @@ const LocationNav = (props) => {
                 props.activeGameBooking ? props.activeGameBooking : false
               }
               activitySlug={props.activitySlug ? props.activitySlug : false}
-               contactBtn={
-                              props.contactBtn ? props.contactBtn : false
-                            }
+              contactBtn={props.contactBtn ? props.contactBtn : false}
             />
           </div>
         )}

@@ -139,7 +139,7 @@ export default function RewardProgramBaner({ locationSlug, giftBooking }) {
                   {/*====================================================notice text*/}
                   <div className="note-text text-white hidden sm:block">
                     <p className="text-[.7rem] rm:text-[.75rem] sm:text-[.8rem] md:text-[.84rem] xl:text-[.95rem] 2xl:text-[1.05rem] leading-[1.3]">
-                      to save<span className="text-red-600"> 10% </span>today!
+                      Save<span className="text-red-600"> 10% </span>today!
                     </p>
                     <p className="text-[.7rem] rm:text-[.75rem] sm:text-[.8rem] md:text-[.84rem] xl:text-[.95rem] 2xl:text-[1.05rem] leading-[1.3] ">
                       Plus, earn <span className="text-red-700"> FREE </span>
