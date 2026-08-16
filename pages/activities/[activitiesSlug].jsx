@@ -53,7 +53,8 @@ const sinleActivities = (props) => {
      ==================V2 content======== end */}
 
       
-        <div id="mainContent" className="main-content old-ui-v1 nobtn-main-content mt-16">
+        <div id="mainContent" className="main-content old-ui-v1 nobtn-main-content ">
+           <ActivityBreadCrumbs />
           <ActivityRootHero
             pageData={props.pageData}
             activitySlug={props.activitySlug}
