@@ -45,20 +45,20 @@ const ContactPageRootHero = (props) => {
             ></div>
           </div>
           <div className="hero-btn-pair flex flex-col zm:flex-row justify-center items-center space-y-5 zm:space-y-0 zm:space-x-2 md:space-x-4 lg:space-x-5 mt-7 zm:mt-10 md:mt-12 ">
-            <div className="max-w-[18rem]">
+            <div className="w-[96%] zm:w-[240px] md:w-[18rem]">
               <button
                 onClick={(e) => showPartyFormModal()}
-                className="bg-red-600 cursor-pointer rounded font-medium text-white hover:bg-red-700 py-2 sm:py-2.5 lg:py-3 px-6 sm:px-8  md:px-10  border-[2px] border-red-600 hover:border-red-700 transition duration-300 uppercase"
+                className="bg-red-600 w-full  cursor-pointer rounded font-medium text-white hover:bg-red-700 py-2 sm:py-2.5 lg:py-3 px-6 sm:px-8  md:px-10  border-[2px] border-red-600 hover:border-red-700 transition duration-300 uppercase"
               >
                 Plan a Group EVENT
               </button>
             </div>
-            <div className="max-w-[18rem]">
+            <div className="w-[96%] zm:w-[240px] md:w-[18rem]">
               <button
                 onClick={() => {
                   showModalForm();
                 }}
-                className="bg-transparent cursor-pointer rounded font-medium text-white hover:bg-red-700 py-2 sm:py-2.5 lg:py-3 px-6 sm:px-8 md:px-10 border-[2px] border-red-600 hover:border-red-700 transition duration-300 uppercase "
+                className="bg-transparent w-full cursor-pointer rounded font-medium text-white hover:bg-red-700 py-2 sm:py-2.5 lg:py-3 px-6 sm:px-8 md:px-10 border-[2px] border-red-600 hover:border-red-700 transition duration-300 uppercase "
               >
                 ADDITIONAL HELP
               </button>

@@ -48,7 +48,7 @@ const StoreContactPageHero = (props) => {
             ></div>
           </div>
           <div className="hero-btn-pair flex flex-col zm:flex-row justify-center items-center space-y-5 zm:space-y-0 zm:space-x-2 md:space-x-4 lg:space-x-5 mt-7 zm:mt-10 md:mt-12 ">
-            <div className="w-[90%] zm:w-[320px] md:w-[18rem]">
+            <div className="w-[96%] zm:w-[240px] md:w-[18rem]">
               <button
                 onClick={() => {
                   partyFormBooking(eventFormBookingLinks[props.locationSlug]);
@@ -58,7 +58,7 @@ const StoreContactPageHero = (props) => {
                 Plan a Group EVENT
               </button>
             </div>
-            <div className="w-[90%] zm:w-[320px] md:w-[18rem]">
+            <div className="w-[96%] zm:w-[240px] md:w-[18rem]">
               <button
                 onClick={() => {
                   showModalForm();
