@@ -1,4 +1,5 @@
 // pages/[locationSlug]/contact-store.js
+import { useState } from "react";
 import { getLocationSlugUrl } from "../api/Locations/getLocationSlugUrls";
 import { getLocationsContactPageData } from "../api/DynamicLocations/getLocationsContactPageData";
 
@@ -9,7 +10,12 @@ import LocationNav from "../../comps/locationsPage/LocationNav";
 import DynamicPageBread from "../../comps/util/DynamicPageBread";
 import ContactStoreHero from "../../comps/contactComps/ContactStoreHero";
 import StoreContact from "../../comps/contactComps/StoreContact";
+//=============================================v2
+import ContactModalSection from "../../comps/v2/contactPageV2/ContactModalsection";
+import StoreContactPageHero from "../../comps/v2/contactPageV2/StoreContactPageHero";
+import ContactInfoSection from "../../comps/v2/contactPageV2/ContactInfoSection";
 const ContactStorePage = (props) => {
+  const [showModalForm, setShowFormModalForm] = useState(false);
   return (
     <>
       <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
@@ -26,6 +32,15 @@ const ContactStorePage = (props) => {
         giftBooking={props.giftBooking}
         hasMobileEscapeRoom={props.hasMobileEscapeRoom}
       />
+      {showModalForm && (
+        <ContactModalSection
+          setShowFormModalForm={setShowFormModalForm}
+          locationName={props.locationName}
+          locationSlug={props.locationSlug}
+          locationInfo={props.locationInfo}
+        />
+      )}
+
       <div id="mainContent" className="main-content">
         {/* =======header content and breadcum======== */}
         <DynamicPageBread
@@ -34,7 +49,27 @@ const ContactStorePage = (props) => {
           activeSlug={"contact-store"}
           activeLabel="Contact Store"
         />
-        <ContactStoreHero
+        <StoreContactPageHero
+          pageData={props.pageData}
+          locationName={props.locationName}
+          locationSlug={props.locationSlug}
+          isPublished={props.isPublished}
+          allBooking={props.allBooking}
+          eventBooking={props.eventBooking}
+           setShowFormModalForm={setShowFormModalForm}
+        />
+
+        <ContactInfoSection
+          isPublished={props.isPublished}
+          locationName={props.locationName}
+          locationSlug={props.locationSlug}
+          locationInfo={props.locationInfo}
+          businessHours={props.businessHours}
+          holidayHours={props.holidayHours}
+          mapInfo={props.mapInfo}
+        />
+        {/* =======header content and breadcum 
+            <ContactStoreHero
           pageData={props.pageData}
           locationName={props.locationName}
           locationSlug={props.locationSlug}
@@ -42,6 +77,12 @@ const ContactStorePage = (props) => {
           allBooking={props.allBooking}
           eventBooking={props.eventBooking}
         />
+        
+           
+        
+        
+       
+
         <StoreContact
           locationName={props.locationName}
           locationSlug={props.locationSlug}
@@ -51,7 +92,7 @@ const ContactStorePage = (props) => {
           holidayHours={props.holidayHours}
           mapInfo={props.mapInfo}
         />
-        {/* =======header content and breadcum======== end */}
+ ======== end */}
         {/* ===========Page Content here=========*/}
       </div>
 

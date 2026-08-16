@@ -10,7 +10,7 @@ import {
   FaTiktok,
 } from "react-icons/fa";
 //import { AiFillTikTok } from "react-icons/ai";
-// href="https://twitter.com/AllinAdventure"
+// href="https://twitter.com/AllinAdventure" 
 import { FaXTwitter, FaYoutube } from "react-icons/fa6";
 
 const FooterSocial = (props) => {

@@ -207,7 +207,9 @@ const DropDownMenu = (props) => {
       </div>
       {/*=====================================================submenu-item-static=============================*/}
       <div className="px-6 md:px-16 ">
-        <StaticSubmenu />
+        <StaticSubmenu
+          locationSlug={props.locationSlug ? props.locationSlug : false}
+        />
       </div>
       {/*============submenu-item-static end===========*/}
     </div>

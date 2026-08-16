@@ -51,6 +51,7 @@ export const getCorporateContactPageData = async () => {
 
   const Data = {
     locationSlugList: getLocationSlugList(locationListData),
+    locationList:locationListData,
     escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
     otherGameSlugList: getAllOtherGameSlugList(actctivityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),

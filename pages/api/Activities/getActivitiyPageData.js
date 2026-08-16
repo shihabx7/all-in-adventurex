@@ -18,9 +18,10 @@ import {
   activityVideoData,
   activityGalleryData,
 } from "../../../lib/activityDataFormation";
+//========================================v2 data formation
+import { activityPageDataFormaterV2 } from "../../../lib/v2/formate/activityPageDataFormaterV2";
 export const getActivitiyPageData = async (activitySlug) => {
-
-  const activGameSlug=activitySlug
+  const activGameSlug = activitySlug;
   const filters = "filters[activitySlug][$eq]=" + activGameSlug;
   const reqUrl = apiUrl + "activities?" + filters + activityPageQuery;
   const response = await fetch(reqUrl, apiSetting);
@@ -40,25 +41,27 @@ export const getActivitiyPageData = async (activitySlug) => {
   const eventListRes = await fetch(allEventsSluglistQuery, apiSetting);
   const eventListResObj = await eventListRes.json();
   const eventListResData = eventListResObj.data;
-// ====================site info
-// activity gameSlug
-    
+  // ====================site info
+  // activity gameSlug
+  console.log(JSON.stringify(activityResData.activityInfo));
+
   const totalActivities = activityListResData.length;
   const totalLocations = locationListData.length;
-// return page data object
+  // return page data object
   const activityPageData = {
     locationSlugList: getLocationSlugList(locationListData),
     escapeGameSlugList: getAllEscapeGameSlugList(activityListResData),
     otherGameSlugList: getAllOtherGameSlugList(activityListResData),
     eventSlugList: getAllEventSlugList(eventListResData),
-    currentActivitySlug:activGameSlug,
+    currentActivitySlug: activGameSlug,
+    activityType:activityResData.activityInfo.category? activityResData.activityInfo.category:"Escape Games",
     totalLocations: totalLocations,
     pageMeta: getPageMeta(
       seoData,
       activityResData.pageHeroData.pageHeroMobile.data.attributes.url,
       activityResData.activityName,
       activityResData.pageHeroData.pageSubTitle,
-      activityResData.activitySlug
+      activityResData.activitySlug,
     ),
 
     pageData: getPageData(
@@ -66,19 +69,44 @@ export const getActivitiyPageData = async (activitySlug) => {
       activityResData.activityInfo,
       activityResData.pageHeroData,
       totalLocations,
-      totalActivities
+      totalActivities,
     ),
     activityData: activityDetailData(
       activityResData.storyLine,
       activityResData.plot,
       activityResData.mission,
-      activityResData.activityName
+      activityResData.activityName,
     ),
     videoData: activityVideoData(
       activityResData.activityVideo,
-      activityResData.activityName
+      activityResData.activityName,
     ),
     activityGallery: activityGalleryData(activityResData.activityGallery),
+    //==========================================================================v2 data
+    pageHeroData: activityPageDataFormaterV2.pageHeroData({
+      activitySlug: activityResData.activitySlug,
+      activityName: activityResData.activityName,
+      pageHeroData: activityResData.pageHeroData,
+    }),
+    gameStatData: activityPageDataFormaterV2.gameStatData({
+      activitySlug: activityResData.activitySlug,
+      activityName: activityResData.activityName,
+      activityInfo: activityResData.activityInfo,
+    }),
+    storyLineSectionData: activityPageDataFormaterV2.storyLineSectionData({
+      activitySlug: activityResData.activitySlug,
+      activityName: activityResData.activityName,
+      storyLine: activityResData.storyLine,
+    }),
+    gallerySectionDataData: activityPageDataFormaterV2.gallerySectionDataData({
+      activitySlug: activityResData.activitySlug,
+      activityName: activityResData.activityName,
+    }),
+    mooreEscapeGameCarouselSectionData:
+      activityPageDataFormaterV2.mooreEscapeGameCarouselSectionData({
+        activitySlug: activityResData.activitySlug,
+        activityName: activityResData.activityName,
+      }),
   };
 
   return activityPageData;

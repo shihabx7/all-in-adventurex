@@ -3,6 +3,8 @@ import UnlimitedBundleNotice from "../noticeBaner/UnlimitedBundleNotice";
 import BlackFridayNotice from "../noticeBaner/BlackFridayNotice";
 import GiftNotice25 from "../noticeBaner/GiftNotice25";
 import ChristmasGiftNotice from "../noticeBaner/ChristmasGiftNotice";
+import RewardProgramBaner from "../noticeBaner/RewardProgramBaner";
+
 export default function HeaderNotice({
   noticeData,
   locationSlug,
@@ -11,7 +13,7 @@ export default function HeaderNotice({
   const [currentNotice, setCurrentNotice] = useState("uer");
 
   useEffect(() => {
-    const expireDate = new Date("2026-01-01T00:11:59");
+    const expireDate = new Date("2030-08-01T00:11:59");
     const currentTime = new Date();
     const timeRemainingMs = expireDate.getTime() - currentTime.getTime();
     if (timeRemainingMs > 0) {
@@ -24,7 +26,7 @@ export default function HeaderNotice({
   return (
     <div className="header-notice-container">
     {currentNotice=='gift' && <>
-       <GiftNotice25
+       <RewardProgramBaner
         noticeData={noticeData ? noticeData : false}
         locationSlug={locationSlug ? locationSlug : false}
         giftBooking={giftBooking ? giftBooking : false}

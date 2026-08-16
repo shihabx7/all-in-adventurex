@@ -25,7 +25,7 @@ const toTitleCase = (title) => {
 };
 const ActivityBreadCrumbs = () => {
   return (
-    <div className="breadcums  py-1 md:py-2 bg-[#fffceb]">
+    <div className="breadcums  py-0.5 sm:py-1 md:p-1.5 bg-[#fffceb]">
       <Breadcrumbs
         replaceCharacterList={[{ from: "-", to: " " }]}
         listClassName="max-w-7xl mx-auto px-2 md:px-4 breadcum-list text-sm md:text-base lg:text-lg"
