@@ -272,13 +272,13 @@ export default function StoreContactForm(props) {
         const fnameEl = document.getElementById("fname");
         fnameEl.classList.remove("focus-green");
         fnameEl.classList.add("focus-red");
-        setFormErr({ ...formErr, fNameErr: ture });
+        setFormErr({ ...formErr, fNameErr: true });
       }
       if (fieldVlue.comSubject == "" || fieldVlue.comSubject == "0") {
         const consubel = document.getElementById("comsub");
         consubel.classList.remove("focus-green");
         consubel.classList.add("focus-red");
-        setFormErr({ ...formErr, comErr: ture });
+        setFormErr({ ...formErr, comErr: true });
       }
       console.log("Empty Err ..." + grcToken);
       return;

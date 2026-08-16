@@ -2,7 +2,7 @@
 import ReCAPTCHA from "react-google-recaptcha";
 import { useState, useEffect, useRef } from "react";
 
-const CorContactOld = (props) => {
+const CorContactFormOld = (props) => {
   // const [captchaToken, setCaptchaToken] = useState(null);
   const recaptchaRef = useRef();
   const [csrfToken, setCsrfToken] = useState(null);
@@ -232,13 +232,13 @@ const CorContactOld = (props) => {
         const fnameEl = document.getElementById("fname");
         fnameEl.classList.remove("focus-green");
         fnameEl.classList.add("focus-red");
-        setFormErr({ ...formErr, fNameErr: ture });
+        setFormErr({ ...formErr, fNameErr: true });
       }
       if (fieldVlue.comSubject == "" || fieldVlue.comSubject == "0") {
         const consubel = document.getElementById("comsub");
         consubel.classList.remove("focus-green");
         consubel.classList.add("focus-red");
-        setFormErr({ ...formErr, comErr: ture });
+        setFormErr({ ...formErr, comErr: true });
       }
       return;
     }
@@ -500,4 +500,4 @@ const CorContactOld = (props) => {
   );
 };
 
-export default CorContactOld;
+export default CorContactFormOld;
