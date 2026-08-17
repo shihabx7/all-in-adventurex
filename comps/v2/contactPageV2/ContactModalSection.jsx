@@ -1,8 +1,9 @@
 import { FiX } from "react-icons/fi";
 import { FaAngleRight } from "react-icons/fa";
 import StoreContactForm from "./elements/StoreContactForm";
-//import CorContactForm from "./elements/CorContactForm";
-import CorContactFormOld from "./elements/CorContactFormOld";
+import CorContactForm from "./elements/CorContactForm";
+//import CorContactFormOld from "./elements/CorContactFormOld";
+//import CorContactAi from "./elements/CorContactAi";
 
 const ContactModalSection = (props) => {
   const closelocmenu = () => {
@@ -32,7 +33,7 @@ const ContactModalSection = (props) => {
             />
           )}
           {!props.locationSlug && props.locationList && (
-            <CorContactFormOld locationList={props.locationList} />
+            <CorContactForm locationList={props.locationList} />
           )}
         </div>
       </div>

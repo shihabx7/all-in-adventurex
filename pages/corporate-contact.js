@@ -15,6 +15,7 @@ import ContactModalSection from "../comps/v2/contactPageV2/ContactModalSection";
 
 const CorContactPage = (props) => {
   const [showModalForm, setShowFormModalForm] = useState(false);
+
   return (
     <>
       {/* =======header content======== */}
@@ -70,7 +71,7 @@ export default CorContactPage;
 
 export const getStaticProps = async () => {
   const DATA = await getCorporateContactPageData();
-  //console.log(JSON.stringify(DATA.locationList[0]));
+ //console.log(JSON.stringify(DATA.locationList[0]));
   return {
     props: {
       locationSlugList: DATA.locationSlugList,

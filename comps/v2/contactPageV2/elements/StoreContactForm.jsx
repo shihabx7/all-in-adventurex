@@ -1,94 +1,47 @@
-import { useState, useEffect, useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
+import { useState, useEffect, useRef } from "react";
 
-const removeTags = (str) => {
-  if (str === null || str === "") return false;
-  else str = str.toString();
+const MAX_SIZE_MB = 2;
+const MAX_SIZE_BYTES = MAX_SIZE_MB * 1024 * 1024;
+const ALLOWED_TYPES = ["image/jpeg", "image/png", "application/pdf"];
 
-  return str.replace(/(<([^>]+)>)/gi, "");
-};
-const TitleAddress = (slug) => {
-  var stt = slug.split("-");
-  var stts = stt[stt.length - 1].toString();
-  var ctt = stt.slice(0, -1).join(" ");
+const StoreContactForm = (props) => {
+  // const [captchaToken, setCaptchaToken] = useState(null);
+  //   toEmail: props.locationInfo.storeEmail.toLowerCase() || "",
+  //  toMgrEmail: props.locationInfo.managerEmail.toLowerCase() || "",
 
-  return ctt + " " + stts;
-};
-
-const getDirection = (address, slug, city, zip) => {
-  var addr = address.toString().split(" ").join("+");
-  var stl = slug.split("-");
-  stl = stl[stl.length - 1].toString();
-
-  const gUrl =
-    "https://www.google.com/maps/dir//" +
-    addr +
-    ",+" +
-    city +
-    ",+" +
-    stl +
-    "+" +
-    zip +
-    "+" +
-    "USA";
-
-  return gUrl;
-};
-const getAddress = (address, slug, city, zip) => {
-  var st = slug.split("-");
-  st = st[st.length - 1].toString();
-  st = st.toUpperCase();
-
-  return address + ", " + city + ", " + st + " " + zip + " United States";
-};
-const statCode = (locationName) => {
-  var ret = locationName.split(",");
-  var retst = ret[ret.length - 1].toUpperCase().trim();
-  return retst;
-};
-export default function StoreContactForm(props) {
-  // sanitize msg text
-  const escape = (htmlStr) => {
-    return htmlStr
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;");
-    //.replace(/(?:\r\n|\r|\n)/g, "<br>");
-  };
-  //========================================= data state==============
   const recaptchaRef = useRef();
-  const [showHour, setShowHours] = useState(false);
-
+  const [csrfToken, setCsrfToken] = useState(null);
   const [reCaptchaToken, setReCaptchaToken] = useState(null);
-  const [isPgLoaded, setIsPageLoaded] = useState(false);
+
   const [err, setErr] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
-
   const [isSend, setIsSend] = useState(false);
   const [formErr, setFormErr] = useState({
     fNameErr: false,
-    lNameErr: false,
     emailErr: false,
     phoneErr: false,
+    locationErr: false,
+    conMethodErr: false,
     comErr: false,
+    bookingOrderErr: false,
+    imgFileErr: false,
   });
   const [fieldVlue, setFieldValue] = useState({
     fName: "",
-    lName: "",
     email: "",
     phone: "",
+    conMethod: "",
     comSubject: "General enquiry",
-    msg: "",
+    bookingOrder: "",
+    imgFile: "",
     toEmail: props.locationInfo.storeEmail.toLowerCase() || "",
     toMgrEmail: props.locationInfo.managerEmail.toLowerCase() || "",
-    fromCity: props.locationInfo.cityName || "",
-    fromState: statCode(props.locationName) || "",
+    msg: "",
     botMsg: "",
   });
 
-  // get csrf token
-  /*
   useEffect(() => {
     const fetchCsrfToken = async () => {
       try {
@@ -105,16 +58,20 @@ export default function StoreContactForm(props) {
 
     fetchCsrfToken();
   }, []);
-  */
-  useEffect(() => {
-    setIsPageLoaded(true);
-  });
+  // escape Html tag
+  const escape = (htmlStr) => {
+    return htmlStr
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+    //  .replace(/(?:\r\n|\r|\n)/g, "<br>");
+  };
   // ========================================================first name validation=================
   const checkFName = (e) => {
     const fname = e.target.value.trim();
 
     const namePatt = /^[a-zA-Z ]*$/;
-    if (fname.length > 2 && fname.length < 21) {
+    if (fname.length > 2 && fname.length < 24) {
       if (!namePatt.test(fname)) {
         setErr(true);
         setFormErr({ ...formErr, fNameErr: true });
@@ -135,30 +92,7 @@ export default function StoreContactForm(props) {
     }
   };
   // ========================================================last name validation=================
-  const checkLName = (e) => {
-    const lname = e.target.value.trim();
 
-    const namePatt = /^[a-zA-Z ]*$/;
-    if (lname.length > 2 && lname.length < 21) {
-      if (!namePatt.test(lname)) {
-        setErr(true);
-        setFormErr({ ...formErr, lNameErr: true });
-        e.target.classList.remove("focus-green");
-        e.target.classList.add("focus-red");
-      } else {
-        setErr(false);
-        setFormErr({ ...formErr, lNameErr: false });
-        setFieldValue({ ...fieldVlue, lName: lname });
-        e.target.classList.remove("focus-red");
-        e.target.classList.add("focus-green");
-      }
-    } else {
-      setErr(true);
-      setFormErr({ ...formErr, lNameErr: true });
-      e.target.classList.remove("focus-green");
-      e.target.classList.add("focus-red");
-    }
-  };
   // ========================================================email validation=================
 
   const checkEmail = (e) => {
@@ -192,7 +126,7 @@ export default function StoreContactForm(props) {
     const phone = e.target.value.trim();
     const numPatt = /^[ 0-9-+/./(/)]*$/;
 
-    if (phone.length > 6 && phone.length < 18) {
+    if (phone.length > 6 && phone.length < 17) {
       if (!numPatt.test(phone)) {
         setErr(true);
         setFormErr({ ...formErr, phoneErr: true });
@@ -213,7 +147,43 @@ export default function StoreContactForm(props) {
     }
   };
   // ========================================================communication subject validation=================
+  const checkLocation = (e) => {
+    const loc = e.target.value;
+    //  console.log(loc);
+    // console.log(locationEmailData[loc].attributes.locationInfo);
+    if (loc > "0" || loc == "0") {
+      setErr(false);
+      setFormErr({ ...formErr, locationErr: false });
+      setFieldValue({
+        ...fieldVlue,
+        toEmail: locationEmailData[loc].attributes.locationInfo.storeEmail,
+        toMgrEmail: locationEmailData[loc].attributes.locationInfo.managerEmail,
+      });
+      e.target.classList.remove("focus-red");
+      e.target.classList.add("focus-green");
+    } else {
+      setErr(true);
+      setFormErr({ ...formErr, locationErr: true });
+      e.target.classList.remove("focus-green");
+      e.target.classList.add("focus-red");
+    }
+  };
+  const checkConMethod = (e) => {
+    const conMet = e.target.value;
 
+    if (conMet != "0") {
+      setErr(false);
+      setFormErr({ ...formErr, conMethodErr: false });
+      setFieldValue({ ...fieldVlue, conMethod: conMet });
+      e.target.classList.remove("focus-red");
+      e.target.classList.add("focus-green");
+    } else {
+      setErr(true);
+      setFormErr({ ...formErr, conMethodErr: true });
+      e.target.classList.remove("focus-green");
+      e.target.classList.add("focus-red");
+    }
+  };
   const checkComSub = (e) => {
     const comSub = e.target.value;
 
@@ -230,13 +200,74 @@ export default function StoreContactForm(props) {
       e.target.classList.add("focus-red");
     }
   };
+  const checkBookingOrder = (e) => {
+    const orderNo = e.target.value.trim();
+    const numPatt =/^[a-zA-Z0-9.-]+$/;
 
-  const getMsg = (e) => {
-    //const usermsg = escape(e.target.value.trim());
-    const usermsg = e.target.value.trim();
-    if (usermsg.length > 2) {
-      setFieldValue({ ...fieldVlue, msg: usermsg });
+    if (orderNo.length > 3 && orderNo.length < 16) {
+      if (!numPatt.test(orderNo)) {
+        setErr(true);
+        setFormErr({ ...formErr, bookingOrderErr: true });
+        e.target.classList.remove("focus-green");
+        e.target.classList.add("focus-red");
+      } else {
+        setErr(false);
+        setFormErr({ ...formErr, bookingOrderErr: false });
+        setFieldValue({ ...fieldVlue, bookingOrder: orderNo });
+        e.target.classList.remove("focus-red");
+        e.target.classList.add("focus-green");
+      }
+    } else {
+      setErr(true);
+      setFormErr({ ...formErr, bookingOrderErr: true });
+      e.target.classList.remove("focus-green");
+      e.target.classList.add("focus-red");
     }
+  };
+  const getMsg = (e) => {
+    //const msg = escape(e.target.value.trim());
+    const msg = e.target.value.trim();
+    if (msg.length > 2) {
+      setFieldValue({ ...fieldVlue, msg: msg });
+    }
+  };
+
+  //========================================upload file
+  const checkFile = (e) => {
+    const selectedFile = e.target.files?.[0];
+    if (!selectedFile) {
+      setErr(true);
+      setFormErr({ ...formErr, imgFileErr: true });
+      e.target.classList.remove("focus-green");
+      e.target.classList.add("focus-red");
+      return;
+    }
+
+    // 1. Client-Side Type Checking
+    if (!ALLOWED_TYPES.includes(selectedFile.type)) {
+      setErr(true);
+      setFormErr({ ...formErr, imgFileErr: true });
+      e.target.classList.remove("focus-green");
+      e.target.classList.add("focus-red");
+      return;
+    }
+
+    // 2. Client-Side Size Checking
+    if (selectedFile.size > MAX_SIZE_BYTES) {
+      setErr(true);
+      setFormErr({ ...formErr, imgFileErr: true });
+      e.target.classList.remove("focus-green");
+      e.target.classList.add("focus-red");
+      return;
+    }
+
+    setErr(false);
+    setFormErr({ ...formErr, imgFileErr: false });
+    setFieldValue({ ...fieldVlue, imgFile: selectedFile });
+    e.target.classList.remove("focus-red");
+    e.target.classList.add("focus-green");
+
+    //setFile(selectedFile);
   };
   const checkBoot = (e) => {
     const botData = escape(e.target.value.trim());
@@ -247,301 +278,387 @@ export default function StoreContactForm(props) {
     if (
       fieldVlue.fName.length < 3 ||
       typeof fieldVlue.fName !== "string" ||
-      fieldVlue.lName.length < 3 ||
-      typeof fieldVlue.lName !== "string" ||
+      fieldVlue.conMethod.length < 1 ||
       fieldVlue.email.length < 6 ||
       typeof fieldVlue.email !== "string" ||
+      fieldVlue.toEmail.length < 1 ||
       fieldVlue.phone.length < 7 ||
       fieldVlue.botMsg.length > 0 ||
-      typeof fieldVlue.botMsg !== "string"
+      typeof fieldVlue.email !== "string"
     ) {
       return true;
     }
-
     return false;
   };
-
+  //========================================submit form
   const submitForm = async (event) => {
     event.preventDefault();
-    console.log("submiting....");
+
     setIsSend(true);
     const isEmpty = checkEmpty();
     if (err || isEmpty) {
-      setIsSend(false);
+      setErrorMsg("Some thing is wrong. Miscellaneous activity detected");
       if (fieldVlue.fName == "") {
         const fnameEl = document.getElementById("fname");
         fnameEl.classList.remove("focus-green");
         fnameEl.classList.add("focus-red");
-        setFormErr({ ...formErr, fNameErr: true });
+        setFormErr({ ...formErr, fNameErr: ture });
       }
       if (fieldVlue.comSubject == "" || fieldVlue.comSubject == "0") {
         const consubel = document.getElementById("comsub");
         consubel.classList.remove("focus-green");
         consubel.classList.add("focus-red");
-        setFormErr({ ...formErr, comErr: true });
+        setFormErr({ ...formErr, comErr: ture });
       }
-      console.log("Empty Err ..." + grcToken);
       return;
     }
+
+    const formPayload = new FormData();
+    formPayload.append("fName", fieldVlue.fName);
+    formPayload.append("email", fieldVlue.email);
+    formPayload.append("phone", fieldVlue.phone);
+    formPayload.append("conMethod", fieldVlue.conMethod);
+    formPayload.append("comSubject", fieldVlue.comSubject);
+    formPayload.append("bookingOrder", fieldVlue.bookingOrder);
+    formPayload.append("toEmail", fieldVlue.toEmail);
+    formPayload.append("toMgrEmail", fieldVlue.toMgrEmail);
+    formPayload.append("msg", fieldVlue.msg);
+    formPayload.append("botMsg", fieldVlue.botMsg);
+    // formPayload.append("captchaToken", reCaptchaToken);
+    formPayload.append("csrfToken", csrfToken);
+
     const grcToken = await recaptchaRef.current.executeAsync();
-    console.log("captcha token ..." + grcToken);
+    //  console.log("captcha token ..." + grcToken);
     if (!grcToken) {
-      setErrorMsg("Cptcha not fetch. try again");
+      setErrorMsg("Cptcha not Found. try again");
       return;
     }
     setReCaptchaToken(grcToken);
+    formPayload.append("captchaToken", grcToken);
+    //console.log("botlength - " + fieldVlue.botMsg.length);
+    if (fieldVlue.imgFile != "") {
+      formPayload.append("file", fieldVlue.imgFile);
+    }
 
-    // console.log("captcha...." + grcToken);
-    console.log("Sending..." + fieldVlue);
-
-    const formData = {
+    /**
+ * const formData = {
       fName: fieldVlue.fName,
-      lName: fieldVlue.lName,
       email: fieldVlue.email,
       phone: fieldVlue.phone,
-      comSubject: fieldVlue.comSubject,
-      msg: fieldVlue.msg,
-      botMsg: fieldVlue.botMsg,
       toEmail: fieldVlue.toEmail,
       toMgrEmail: fieldVlue.toMgrEmail,
-      fromCity: fieldVlue.fromCity,
-      fromState: fieldVlue.fromState,
+      conMethod: fieldVlue.conMethod,
+      comSubject: fieldVlue.comSubject,
+      bookingOrder: fieldVlue.bookingOrder,
+      imgFile: fieldVlue.imgFile,
+      msg: fieldVlue.msg,
+      botMsg: fieldVlue.botMsg,
       captchaToken: grcToken,
+      csrfToken: csrfToken,
     };
-    //csrfToken: csrfToken,
-    console.log("form data..." + JSON.stringify(formData));
+ * 
+ */
+    console.log("Sending...");
+    console.log(formPayload);
+
     try {
-      const response = await fetch("/api/Forms/storeContact", {
+      const response = await fetch("/api/Forms/processContactFrom", {
         method: "POST",
-        headers: {
-          Accept: "application/json,text/plain,*/*",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+        body: formPayload,
+        //  headers: {
+        //   Accept: "application/json,text/plain,*/*",
+        //   "Content-Type": "application/json",
+        //  },
+        //body: JSON.stringify(formData),
       });
       const result = await response.json();
       setIsSend(false);
-      console.log(result.data);
-      //console.log(result.success)
       if (response.status == 200) {
         setErrorMsg("");
         setSuccessMsg("Your message has submitted successfully. Thank you.");
-        window.location.replace("/thank-you-store");
-        //window.location.href = "/thank-you-store";
-        // console.log("Form submit success " + result.data);
+        window.location.replace("/thank-you");
+      } else if (response.status == 400) {
+        setErrorMsg(result.data.error);
       } else if (response.status == 403) {
         setSuccessMsg("");
         setErrorMsg(result.data.error);
       } else if (response.status == 405) {
-        setErrorMsg(result.data.error);
         setSuccessMsg("");
+        setErrorMsg(result.data.error);
       } else if (response.status == 429) {
+        setSuccessMsg("");
         setErrorMsg(
           result.data.error + " Try after" + result.data.resetAfter + " Min",
         );
-        setSuccessMsg("");
       } else {
-        setSuccessMsg("");
         setErrorMsg("Server not Responding. Try again later");
+        setSuccessMsg("");
       }
     } catch (error) {
       console.error("Form submission error:", error);
-      setIsSend(false);
       setSuccessMsg("");
+      setIsSend(false);
       alert("Network Error: Please try again later.");
-      return;
     }
+
+    //console.log(result);
+    // console.log(response.status);
+    //console.log(result.success)
   };
-
-  // form submission area==============
-
   return (
-    <div className="c-contact w-full">
-      <div className="bg-[#F4E6C3] py-8 px-4 lg:p-8 rounded-lg drop-shadow w-full">
-        {errorMsg.length > 0 && successMsg.length < 1 && (
-          <p className="form-error p-3 mb-4 bg-amber-50 text-red-700 text-center text-sm">
-            {errorMsg}
-          </p>
-        )}
-        {errorMsg.length < 1 && successMsg.length > 0 && (
-          <p className="form-error p-3 mb-4 bg-amber-50 text-red-700 text-center text-sm">
-            {successMsg}
-          </p>
-        )}
-        <form onSubmit={(event) => submitForm(event)}>
-          {/*========================  contact form row first name = last name=======================*/}
-          <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between ">
-            <div className="form-col w-full md:w-[48%] relative">
-              <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">
-                What's your full name?*
-              </p>
-              <input
-                onChange={(e) => checkFName(e)}
-                type="text"
-                id="fname"
-                name="fname"
-                className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
-                placeholder="Your first name"
-                pattern="[a-zA-z ]{3,20}"
-                title="Name should be alphabets (a to z) and minimum 2 charectar."
-                required
-              ></input>
-              {formErr.fNameErr && (
-                <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
-                  Invalid name. Only letter and space allowed (between 3-20
-                  character)
-                </p>
-              )}
-            </div>
-            <div className="form-col w-full md:w-[48%] relative">
-              <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
-                What's your last name?*
-              </p>
-              <input
-                onChange={(e) => checkLName(e)}
-                type="text"
-                name="lname"
-                id="lname"
-                className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
-                placeholder="Your last name"
-                required
-              ></input>
-              {formErr.lNameErr && (
-                <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr">
-                  Invalid name. Only letter and space allowed (min 3 character)
-                </p>
-              )}
-            </div>
-          </div>
-          {/*========================  contact form row first name = last name end========================*/}
-          {/*======================================contact form row emal+phone====================== */}
-          <div className="form-row flex flex-col space-y-3 md:flex-row md:space-y-0 justify-between mt-3 md:mt-10 lg:mt-12">
-            <div className="relative form-col w-full md:w-[48%]">
-              <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">
-                What's your email?*
-              </p>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                onChange={(e) => checkEmail(e)}
-                className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
-                placeholder="Your email address"
-                required
-              ></input>
-              <input
-                type="text"
-                name="botCheck"
-                onChange={(e) => checkBoot(e)}
-                className="hidden"
-              ></input>
-              {formErr.emailErr && (
-                <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
-                  Invalid email address
-                </p>
-              )}
-            </div>
-            <div className="relative form-col  w-full md:w-[48%]">
-              <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
-                What's your phone number?*
-              </p>
-              <input
-                type="tel"
-                onChange={(e) => checkPhone(e)}
-                name="phone"
-                id="phone"
-                className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green"
-                placeholder="Your phone number"
-                required
-              ></input>
-              {formErr.phoneErr && (
-                <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
-                  Invalid Phone Number
-                </p>
-              )}
-            </div>
-          </div>
-          {/*======================================contact form row====================== */}
-          {/*======================================contact form row location event====================== */}
-          <div className="form-row flex justify-between mt-3 md:mt-10 lg:mt-12 ">
-            <div className="relative form-col w-full">
-              <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
-                Inquiry type*
-              </p>
-              <select
-                name="comsub"
-                id="comsub"
-                className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
-                placeholder="Your email"
-                onChange={(e) => checkComSub(e)}
-                required
-              >
-                <option value="">Choose Inquiry Type</option>
-                <option value=""> General Question / Information</option>
-                <option value="General enquiry">
-                  Purchase / Gift Card Support
-                </option>
-                <option value="Group booking">Billing / Refund Inquiry</option>
-                <option value="Birthday party">
-                  Technical / Website Issue
-                </option>
-                <option value="Corporate event">Accessibility Needs</option>
-                <option value="Careers">Other / Not Listed Above</option>
-              </select>
-              {formErr.comErr && (
-                <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
-                  Select communications reason
-                </p>
-              )}
-            </div>
-          </div>
-          {/*======================================contact form row location event====================== */}
-          {/*======================================contact form row message event====================== */}
-          <div className="form-row flex justify-between my-3 md:my-10 lg:my-12">
-            <div className="form-col w-full">
-              <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
-                What's your message?{" "}
-              </p>
+    <div className="c-contact corporate-contact w-full">
+      {/*======================== corporate contact form=======================*/}
 
-              <textarea
-                name="msg"
-                required
-                onChange={(e) => {
-                  getMsg(e);
-                }}
-                id="msg"
-                className="w-full h-[110px] md:h-[180px] event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green"
-                placeholder="Write your message here"
-              ></textarea>
-            </div>
-          </div>
-          {/**================ captcha element */}
-          <ReCAPTCHA
-            ref={recaptchaRef}
-            sitekey="6LepEu0qAAAAAFSM_8lLN8LDgmT2qguQGQwV7cPZ" // Replace with your site key
-            size="invisible"
-            //onChange={setCaptchaToken}
-          />
-          {/*======================================contact form row message event====================== */}
-          {!isSend && (
-            <div className="form-row flex justify-center ">
-              <button
-                type="submit"
-                className="text-white font-medium text-lg md:text-xl py-3 px-12 bg-red-600 hover:bg-red-700 rounded-full"
-              >
-                Send Message
-              </button>
-            </div>
+      <div className="c-form-form py-8 px-4 lg:p-8 rounded-lg drop-shadow  w-full">
+        <div className="bg-[#F4E6C3] py-8 px-4 lg:p-8 rounded-lg drop-shadow">
+          {errorMsg.length > 0 && successMsg.length < 1 && (
+            <p className="form-error p-3 mb-4 bg-amber-50 text-red-700 text-center text-sm">
+              {errorMsg}
+            </p>
           )}
+          {errorMsg.length < 1 && successMsg.length > 0 && (
+            <p className="form-error p-3 mb-4 bg-amber-50 text-red-700 text-center text-sm">
+              {successMsg}
+            </p>
+          )}
+          <form onSubmit={(event) => submitForm(event)}>
+            {/*========================  ======================================================================contact form row full name + email=======================*/}
+            <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between ">
+              <div className="form-col w-full md:w-[48%] relative">
+                <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">
+                  What's your full name?<span className="text-red-600">*</span>
+                </p>
+                <input
+                  onChange={(e) => checkFName(e)}
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                  placeholder="Your full name"
+                  pattern="[a-zA-z ]{3,20}"
+                  title="Name should be alphabets (a to z) and minimum 2 charectar."
+                  required
+                ></input>
+                {formErr.fNameErr && (
+                  <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
+                    Invalid name. Only letter and space allowed (between 3-20
+                    character)
+                  </p>
+                )}
+              </div>
+              <div className="relative form-col w-full md:w-[48%]">
+                <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">
+                  What's your email?<span className="text-red-600">*</span>
+                </p>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  onChange={(e) => checkEmail(e)}
+                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                  placeholder="Your email address"
+                  required
+                ></input>
+                <input
+                  type="text"
+                  name="botCheck"
+                  onChange={(e) => checkBoot(e)}
+                  className="hidden"
+                ></input>
+                {formErr.emailErr && (
+                  <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
+                    Invalid email address
+                  </p>
+                )}
+              </div>
+            </div>
+            {/*========================  contact form row first name = last name end========================*/}
+            {/*======================================contact form row phone location====================== */}
+            <div className="form-row flex flex-col space-y-3 md:flex-row md:space-y-0 justify-between mt-3 md:mt-10 lg:mt-12">
+              <div className="relative form-col  w-full md:w-[48%]">
+                <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
+                  What's your phone number?
+                  <span className="text-red-600">*</span>
+                </p>
+                <input
+                  type="tel"
+                  onChange={(e) => checkPhone(e)}
+                  name="phone"
+                  id="phone"
+                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green"
+                  placeholder="Your phone number"
+                  required
+                ></input>
+                {formErr.phoneErr && (
+                  <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
+                    Invalid Phone Number
+                  </p>
+                )}
+              </div>
+              <div className="relative form-col w-full md:w-[48%]">
+                <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
+                  Preferred contact method
+                  <span className="text-red-600">*</span>
+                </p>
+                <select
+                  name="conmethod"
+                  id="conmethod"
+                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                  onChange={(e) => checkConMethod(e)}
+                  required
+                >
+                  <option value="0">Select your contact method</option>
 
-          {isSend == true && (
-            <div className="max-w-[170px] mx-auto btn-back px-6 py-2 text-lg md:text-xl rounded-full font-medium bg-red-600 hover:bg-red-700  text-white ">
-              <div className=" font-medium loader">Sending</div>
+                  <option value="General enquiry">Phone</option>
+                  <option value="Group booking">Email</option>
+                </select>
+                {formErr.conMethodErr && (
+                  <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
+                    Choose a contact method
+                  </p>
+                )}
+              </div>
             </div>
-          )}
-          {/*======================================contact form button====================== */}
-        </form>
+            {/*======================================contact form row====================== */}
+            {/*======================================Preferred contact method*  Inquiry type* ====================== */}
+            <div className="form-row flex justify-between mt-3 md:mt-10 lg:mt-12 ">
+              <div className="relative form-col w-full md:w-[48%]">
+                <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
+                  Inquiry type<span className="text-red-600">*</span>
+                </p>
+                <select
+                  name="comsub"
+                  id="comsub"
+                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                  onChange={(e) => checkComSub(e)}
+                  required
+                >
+                  <option value="">Choose Inquiry Type</option>
+
+                  <option value="General Question / Information">
+                    General Question / Information
+                  </option>
+                  <option value="Purchase / Gift Card Support">
+                    Purchase / Gift Card Support
+                  </option>
+                  <option value="Billing / Refund Inquiry">
+                    Billing / Refund Inquiry
+                  </option>
+                  <option value="Technical / Website Issue">
+                    Technical / Website Issue
+                  </option>
+                  <option value="Accessibility Needs">
+                    Accessibility Needs
+                  </option>
+                  <option value="Other / Not Listed Above">
+                    Other / Not Listed Above
+                  </option>
+                </select>
+                {formErr.comErr && (
+                  <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
+                    Select communications reason
+                  </p>
+                )}
+              </div>
+              <div className="relative form-col w-full md:w-[48%]">
+                <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
+                  Attachment a file / screenshot
+                </p>
+                <input
+                  onChange={(e) => checkFile(e)}
+                  type="file"
+                  id="imgfile"
+                  name="imgfile"
+                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                  placeholder="Your booking / order number"
+                  //pattern="[a-zA-z ]{3,20}"
+                  title="Name should be alphabets (a to z) and minimum 2 charectar."
+                ></input>
+                {formErr.imgFileErr && (
+                  <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
+                    Only jpg, png and pdf allowed. Max file size 2MB.
+                  </p>
+                )}
+              </div>
+            </div>
+            {/*======================================contact form Preferred contact method*  Inquiry type====================== */}
+            {/*======================================Booking / order number* ====================== */}
+            <div className="form-row flex justify-between mt-3 md:mt-10 lg:mt-12 ">
+              <div className="form-col w-full ">
+                <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
+                  Booking / order number
+                </p>
+
+                <input
+                  onChange={(e) => checkBookingOrder(e)}
+                  type="text"
+                  id="bookingcode"
+                  name="bookingcode"
+                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                  placeholder="Your booking / order number"
+                  // pattern="[a-zA-z ]{3,20}"
+                  title="Bookink should be numbers (0 to 9) and minimum 5 charectar."
+                ></input>
+                {formErr.bookingOrderErr && (
+                  <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
+                   Invalid booking order no. Only Alphabet and Number allowed
+                  </p>
+                )}
+              </div>
+            
+            </div>
+            {/*======================================contact form Preferred contact method*  Inquiry type====================== */}
+            {/*======================================contact form row message ====================== */}
+            <div className="form-row flex justify-between my-3 md:my-10 lg:my-12">
+              <div className="form-col w-full">
+                <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
+                  Please describe your issue in detail
+                </p>
+
+                <textarea
+                  name="msg"
+                  onChange={(e) => {
+                    getMsg(e);
+                  }}
+                  id="msg"
+                  className="w-full h-[110px] md:h-[140px] event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green"
+                  placeholder="Write your message here"
+                ></textarea>
+              </div>
+            </div>
+            {/**================ captcha element */}
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              sitekey="6LepEu0qAAAAAFSM_8lLN8LDgmT2qguQGQwV7cPZ" // Replace with your site key
+              size="invisible"
+              //onChange={setCaptchaToken}
+            />
+
+            {/*======================================contact form row message====================== */}
+            {!isSend && (
+              <div className="form-row flex justify-center ">
+                <button
+                  type="submit"
+                  className="inline-block w-full zm:w-[400px] md:w-[440px] text-white font-medium text-lg md:text-xl py-3 px-12 bg-red-600 hover:bg-red-700 rounded-full"
+                >
+                  SUBMIT
+                </button>
+              </div>
+            )}
+
+            {isSend == true && (
+              <div className="w-full zm:w-[400px] md:w-[440px] mx-auto btn-back px-6 py-2 text-lg md:text-xl rounded-full font-medium bg-red-600 hover:bg-red-700  text-white ">
+                <div className=" font-medium loader">Sending</div>
+              </div>
+            )}
+            {/*======================================contact form button====================== */}
+          </form>
+        </div>
       </div>
+
+      {/*======================== corporate contact form=======================*/}
     </div>
   );
-}
+};
+
+export default StoreContactForm;

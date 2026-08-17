@@ -1,4 +1,3 @@
-
 import ReCAPTCHA from "react-google-recaptcha";
 import { useState, useEffect, useRef } from "react";
 
@@ -281,7 +280,7 @@ const CorContactFormOld = (props) => {
       } else if (response.status == 429) {
         setSuccessMsg("");
         setErrorMsg(
-          result.data.error + " Try after" + result.data.resetAfter + " Min"
+          result.data.error + " Try after" + result.data.resetAfter + " Min",
         );
       } else {
         setErrorMsg("Server not Responding. Try again later");
@@ -300,199 +299,198 @@ const CorContactFormOld = (props) => {
   };
   return (
     <div className="c-contact w-full">
-      
-          
-          {/*======================== corporate contact form=======================*/}
-          <div className="c-form-form c-form-form py-8 px-4 lg:p-8 rounded-lg drop-shadow  w-full">
-            <div className="bg-[#F4E6C3] py-8 px-4 lg:p-8 rounded-lg drop-shadow">
-              {errorMsg.length > 0 && successMsg.length < 1 && (
-                <p className="form-error p-3 mb-4 bg-amber-50 text-red-700 text-center text-sm">
-                  {errorMsg}
+      {/*======================== corporate contact form=======================*/}
+      <div className="c-form-form c-form-form py-8 px-4 lg:p-8 rounded-lg drop-shadow  w-full">
+        <div className="bg-[#F4E6C3] py-8 px-4 lg:p-8 rounded-lg drop-shadow">
+          {errorMsg.length > 0 && successMsg.length < 1 && (
+            <p className="form-error p-3 mb-4 bg-amber-50 text-red-700 text-center text-sm">
+              {errorMsg}
+            </p>
+          )}
+          {errorMsg.length < 1 && successMsg.length > 0 && (
+            <p className="form-error p-3 mb-4 bg-amber-50 text-red-700 text-center text-sm">
+              {successMsg}
+            </p>
+          )}
+          <form onSubmit={(event) => submitForm(event)}>
+            {/*========================  contact form row first name = last name=======================*/}
+            <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between ">
+              <div className="form-col w-full md:w-[48%] relative">
+                <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">
+                  What's your first name?*
                 </p>
-              )}
-              {errorMsg.length < 1 && successMsg.length > 0 && (
-                <p className="form-error p-3 mb-4 bg-amber-50 text-red-700 text-center text-sm">
-                  {successMsg}
+                <input
+                  onChange={(e) => checkFName(e)}
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                  placeholder="Your first name"
+                  pattern="[a-zA-z ]{3,20}"
+                  title="Name should be alphabets (a to z) and minimum 2 charectar."
+                  required
+                ></input>
+                {formErr.fNameErr && (
+                  <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
+                    Invalid name. Only letter and space allowed (between 3-20
+                    character)
+                  </p>
+                )}
+              </div>
+              <div className="form-col w-full md:w-[48%] relative">
+                <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
+                  What's your last name?*
                 </p>
-              )}
-              <form onSubmit={(event) => submitForm(event)}>
-                {/*========================  contact form row first name = last name=======================*/}
-                <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between ">
-                  <div className="form-col w-full md:w-[48%] relative">
-                    <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">
-                      What's your first name?*
-                    </p>
-                    <input
-                      onChange={(e) => checkFName(e)}
-                      type="text"
-                      id="fname"
-                      name="fname"
-                      className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
-                      placeholder="Your first name"
-                      pattern="[a-zA-z ]{3,20}"
-                      title="Name should be alphabets (a to z) and minimum 2 charectar."
-                      required
-                    ></input>
-                    {formErr.fNameErr && (
-                      <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
-                        Invalid name. Only letter and space allowed (between
-                        3-20 character)
-                      </p>
-                    )}
-                  </div>
-                  <div className="form-col w-full md:w-[48%] relative">
-                    <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
-                      What's your last name?*
-                    </p>
-                    <input
-                      onChange={(e) => checkLName(e)}
-                      type="text"
-                      name="lname"
-                      id="lname"
-                      className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
-                      placeholder="Your last name"
-                      required
-                    ></input>
-                    {formErr.lNameErr && (
-                      <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr">
-                        Invalid name. Only letter and space allowed (min 3
-                        character)
-                      </p>
-                    )}
-                  </div>
-                </div>
-                {/*========================  contact form row first name = last name end========================*/}
-                {/*======================================contact form row emal+phone====================== */}
-                <div className="form-row flex flex-col space-y-3 md:flex-row md:space-y-0 justify-between mt-3 md:mt-10 lg:mt-12">
-                  <div className="relative form-col w-full md:w-[48%]">
-                    <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">
-                      What's your email?*
-                    </p>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      onChange={(e) => checkEmail(e)}
-                      className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
-                      placeholder="Your email address"
-                      required
-                    ></input>
-                    <input
-                      type="text"
-                      name="botCheck"
-                      onChange={(e) => checkBoot(e)}
-                      className="hidden"
-                    ></input>
-                    {formErr.emailErr && (
-                      <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
-                        Invalid email address
-                      </p>
-                    )}
-                  </div>
-                  <div className="relative form-col  w-full md:w-[48%]">
-                    <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
-                      What's your phone number?*
-                    </p>
-                    <input
-                      type="tel"
-                      onChange={(e) => checkPhone(e)}
-                      name="phone"
-                      id="phone"
-                      className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green"
-                      placeholder="Your phone number"
-                      required
-                    ></input>
-                    {formErr.phoneErr && (
-                      <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
-                        Invalid Phone Number
-                      </p>
-                    )}
-                  </div>
-                </div>
-                {/*======================================contact form row====================== */}
-                {/*======================================contact form email phonerow location ====================== */}
-                <div className="form-row flex justify-between mt-3 md:mt-10 lg:mt-12 ">
-                  <div className="relative form-col w-full">
-                    <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
-                      Inquiry type*
-                    </p>
-                    <select
-                      name="comsub"
-                      id="comsub"
-                      className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
-                      onChange={(e) => checkComSub(e)}
-                      required
-                    >
-                      <option value="">Choose Inquiry Type</option>
-                <option value=""> General Question / Information</option>
-                <option value="General enquiry">
-                  Purchase / Gift Card Support
-                </option>
-                <option value="Group booking">Billing / Refund Inquiry</option>
-                <option value="Birthday party">
-                  Technical / Website Issue
-                </option>
-                <option value="Corporate event">Accessibility Needs</option>
-                <option value="Careers">Other / Not Listed Above</option>
-                    </select>
-                    {formErr.comErr && (
-                      <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
-                        Select communications reason
-                      </p>
-                    )}
-                  </div>
-                </div>
-                {/*======================================contact form row location ====================== */}
-                {/*======================================contact form row message ====================== */}
-                <div className="form-row flex justify-between my-3 md:my-10 lg:my-12">
-                  <div className="form-col w-full">
-                    <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
-                      What's your message?{" "}
-                    </p>
-
-                    <textarea
-                      name="msg"
-                      required
-                      onChange={(e) => {
-                        getMsg(e);
-                      }}
-                      id="msg"
-                      className="w-full h-[110px] md:h-[180px] event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green"
-                      placeholder="Write your message here"
-                    ></textarea>
-                  </div>
-                </div>
-                {/**================ captcha element */}
-                <ReCAPTCHA
-                  ref={recaptchaRef}
-                  sitekey="6LepEu0qAAAAAFSM_8lLN8LDgmT2qguQGQwV7cPZ" // Replace with your site key
-                  size="invisible"
-                  //onChange={setCaptchaToken}
-                />
-
-                {/*======================================contact form row message====================== */}
-                {!isSend && (
-                  <div className="form-row flex justify-center ">
-                    <button
-                      type="submit"
-                      className="text-white font-medium text-lg md:text-xl py-3 px-12 bg-red-600 hover:bg-red-700 rounded-full"
-                    >
-                      Send Message
-                    </button>
-                  </div>
+                <input
+                  onChange={(e) => checkLName(e)}
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                  placeholder="Your last name"
+                  required
+                ></input>
+                {formErr.lNameErr && (
+                  <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr">
+                    Invalid name. Only letter and space allowed (min 3
+                    character)
+                  </p>
                 )}
-
-                {isSend == true && (
-                  <div className="max-w-[170px] mx-auto btn-back px-6 py-2 text-lg md:text-xl rounded-full font-medium bg-red-600 hover:bg-red-700  text-white ">
-                    <div className=" font-medium loader">Sending</div>
-                  </div>
-                )}
-                {/*======================================contact form button====================== */}
-              </form>
+              </div>
             </div>
-          </div>
-          {/*======================== corporate contact form=======================*/}
-     
+            {/*========================  contact form row first name = last name end========================*/}
+            {/*======================================contact form row emal+phone====================== */}
+            <div className="form-row flex flex-col space-y-3 md:flex-row md:space-y-0 justify-between mt-3 md:mt-10 lg:mt-12">
+              <div className="relative form-col w-full md:w-[48%]">
+                <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">
+                  What's your email?*
+                </p>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  onChange={(e) => checkEmail(e)}
+                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                  placeholder="Your email address"
+                  required
+                ></input>
+                <input
+                  type="text"
+                  name="botCheck"
+                  onChange={(e) => checkBoot(e)}
+                  className="hidden"
+                ></input>
+                {formErr.emailErr && (
+                  <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
+                    Invalid email address
+                  </p>
+                )}
+              </div>
+              <div className="relative form-col  w-full md:w-[48%]">
+                <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
+                  What's your phone number?*
+                </p>
+                <input
+                  type="tel"
+                  onChange={(e) => checkPhone(e)}
+                  name="phone"
+                  id="phone"
+                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green"
+                  placeholder="Your phone number"
+                  required
+                ></input>
+                {formErr.phoneErr && (
+                  <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
+                    Invalid Phone Number
+                  </p>
+                )}
+              </div>
+            </div>
+            {/*======================================contact form row====================== */}
+            {/*======================================contact form email phonerow location ====================== */}
+            <div className="form-row flex justify-between mt-3 md:mt-10 lg:mt-12 ">
+              <div className="relative form-col w-full">
+                <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
+                  Inquiry type*
+                </p>
+                <select
+                  name="comsub"
+                  id="comsub"
+                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                  onChange={(e) => checkComSub(e)}
+                  required
+                >
+                  <option value="">Choose Inquiry Type</option>
+                  <option value=""> General Question / Information</option>
+                  <option value="General enquiry">
+                    Purchase / Gift Card Support
+                  </option>
+                  <option value="Group booking">
+                    Billing / Refund Inquiry
+                  </option>
+                  <option value="Birthday party">
+                    Technical / Website Issue
+                  </option>
+                  <option value="Corporate event">Accessibility Needs</option>
+                  <option value="Careers">Other / Not Listed Above</option>
+                </select>
+                {formErr.comErr && (
+                  <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
+                    Select communications reason
+                  </p>
+                )}
+              </div>
+            </div>
+            {/*======================================contact form row location ====================== */}
+            {/*======================================contact form row message ====================== */}
+            <div className="form-row flex justify-between my-3 md:my-10 lg:my-12">
+              <div className="form-col w-full">
+                <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
+                  What's your message?{" "}
+                </p>
+
+                <textarea
+                  name="msg"
+                  required
+                  onChange={(e) => {
+                    getMsg(e);
+                  }}
+                  id="msg"
+                  className="w-full h-[110px] md:h-[180px] event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green"
+                  placeholder="Write your message here"
+                ></textarea>
+              </div>
+            </div>
+            {/**================ captcha element */}
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              sitekey="6LepEu0qAAAAAFSM_8lLN8LDgmT2qguQGQwV7cPZ" // Replace with your site key
+              size="invisible"
+              //onChange={setCaptchaToken}
+            />
+
+            {/*======================================contact form row message====================== */}
+            {!isSend && (
+              <div className="form-row flex justify-center ">
+                <button
+                  type="submit"
+                  className="text-white font-medium text-lg md:text-xl py-3 px-12 bg-red-600 hover:bg-red-700 rounded-full"
+                >
+                  Send Message
+                </button>
+              </div>
+            )}
+
+            {isSend == true && (
+              <div className="max-w-[170px] mx-auto btn-back px-6 py-2 text-lg md:text-xl rounded-full font-medium bg-red-600 hover:bg-red-700  text-white ">
+                <div className=" font-medium loader">Sending</div>
+              </div>
+            )}
+            {/*======================================contact form button====================== */}
+          </form>
+        </div>
+      </div>
+      {/*======================== corporate contact form=======================*/}
     </div>
   );
 };

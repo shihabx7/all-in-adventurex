@@ -96,7 +96,7 @@ export default function RewardProgramBaner({ locationSlug, giftBooking }) {
                       </button>
                     )}
                 */}
-                  <div className="notice-btnt-text w-auto flex justify-center items-center space-x-1.5 rm:space-x-2 md:space-x-3 lg:space-x-4 2xl:space-x-5 lm:pl-4 sm:pl-0">
+                  <div className="notice-btnt-text w-auto flex justify-center items-center space-x-1.5 rm:space-x-3 md:space-x-4 lg:space-x-6 2xl:space-x-7 lm:pl-4 sm:pl-0">
                     {/*==============================================================crm learn more btn*/}
                     <div className="bfdy-n-item-4 text-[.6rem] rm:text-[.64rem] sm:text-[.8rem] md:text-[.95rem] xl:text-[1rem]  text-center leading-[1]">
                       {locationSlug && (
@@ -130,7 +130,7 @@ export default function RewardProgramBaner({ locationSlug, giftBooking }) {
                         className="block text-[#d9d9d9] hover:text-red-700 underline underline-offset-4 "
                         href={"/all-in-rewards"}
                       >
-                        Learn More
+                        Learn more
                       </a>
                     </div>
                     {/*==============================================================crm notice book gift card btn*/}
@@ -138,11 +138,11 @@ export default function RewardProgramBaner({ locationSlug, giftBooking }) {
                   {/*========================================================================================btn containrr end*/}
                   {/*====================================================notice text*/}
                   <div className="note-text tee text-white hidden sm:block">
-                    <p className="text-[.7rem] rm:text-[.75rem] sm:text-[.8rem] md:text-[.84rem] xl:text-[.95rem] 2xl:text-[1.05rem] leading-[1.3]">
-                      Save<span className="text-red-600"> 10% </span>today!
+                    <p className="text-[.66rem] rm:text-[.72rem] sm:text-[.8rem] md:text-[.84rem] xl:text-[.95rem] 2xl:text-[1.05rem] leading-[1.3]">
+                      Save<span className="text-red-500 font-semibold"> 10% </span>today!
                     </p>
-                    <p className="text-[.7rem] rm:text-[.75rem] sm:text-[.8rem] md:text-[.84rem] xl:text-[.95rem] 2xl:text-[1.05rem] leading-[1.3] ">
-                      Plus, earn <span className="text-red-700"> FREE </span>
+                    <p className="text-[.66rem] rm:text-[.72rem] sm:text-[.8rem] md:text-[.84rem] xl:text-[.95rem] 2xl:text-[1.05rem] leading-[1.3] ">
+                      Plus, earn <span className="text-red-500 font-semibold"> FREE </span>
                       admissions.
                     </p>
                   </div>
