@@ -30,6 +30,8 @@ const ContactPageRootHero = (props) => {
          dangerouslySetInnerHTML={{
                 __html: props.pageData.pageSubtitle,
               }}
+
+               {props.pageData.pageTitle}
         ===============================================shadow */}
 
         <div className="min-h-[300px] max-w-7xl mx-auto px-4 py-20 md:py-24 lg:py-32 xl:py-40">
@@ -38,7 +40,7 @@ const ContactPageRootHero = (props) => {
               CHOOSE FROM {props.totalLocations} U.S. LOCATIONS
             </p>
             <h1 className="text-gold aia-shadow font-bold text-center text-2xl rm:text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl  mb-3 xm:mb-4 md:mb-6 lg:mb-6 font-os uppercase max-w-[1100px] mx-auto">
-              {props.pageData.pageTitle}
+              CONTACT ALL IN ADVENTURES
             </h1>
             <div className="text-gray-100 max-w-[960px] mx-auto text-center text-[.92rem] zm:text-base lg:text-lg 2xl:text-[1.2rem] contact-store-hero-desc">
               <p>

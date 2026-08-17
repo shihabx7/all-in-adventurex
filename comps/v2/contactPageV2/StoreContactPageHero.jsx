@@ -16,7 +16,10 @@ const StoreContactPageHero = (props) => {
     body.classList.add("overflow-hidden");
     props.setShowFormModalForm(true);
   };
-
+  const cityName = (lo) => {
+    let nm = lo.split(",");
+    return nm[0];
+  };
   return (
     <div className="contact-hero bg-[#111111]  relative">
       <div className="hero-bg-image w-full h-full absolute top-0 left-0 ">
@@ -31,6 +34,7 @@ const StoreContactPageHero = (props) => {
         dangerouslySetInnerHTML={{
                 __html: props.pageData.pageSubtitle,
               }}
+                {props.pageData.pageTitle}
         ===============================================shadow */}
 
         <div className="max-w-7xl min-h-[300px] mx-auto px-4  py-20 md:py-24 lg:py-32 xl:py-40 ">
@@ -39,7 +43,7 @@ const StoreContactPageHero = (props) => {
               At {props.pageData.mall} in {props.locationName}
             </p>
             <h1 className="text-gold aia-shadow font-bold text-center text-2xl rm:text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl  mb-3 xm:mb-4 md:mb-6 lg:mb-6 font-os uppercase max-w-[1100px] mx-auto">
-              {props.pageData.pageTitle}
+              ALL IN ADVENTURES - {cityName(props.locationName)}
             </h1>
 
             <div className="text-gray-100 max-w-[960px] mx-auto text-center text-[.92rem] zm:text-base lg:text-lg 2xl:text-[1.2rem] contact-store-hero-desc">

@@ -44,6 +44,7 @@ export default async function handleContactFrom(req, res) {
     keepExtensions: true,
     maxFileSize: MAX_SIZE_BYTES,
   });
+
   //=================================================================================parse form
   form.parse(req, async (err, fields, files) => {
     if (err) {
@@ -66,6 +67,7 @@ export default async function handleContactFrom(req, res) {
       bookingOrder,
       toEmail,
       toMgrEmail,
+      locationName,
       msg,
       botMsg,
       csrfToken,
@@ -207,14 +209,16 @@ export default async function handleContactFrom(req, res) {
         path: localFilePath,
       });
     }
-
+    let cityNameArr = [];
+    cityNameArr = locationName ? locationName.toString().split(",") : [];
+    const cityName = cityNameArr.length > 0 ? cityNameArr[0] : "";
     const htmlBody = `
-            <h2>New Web Form Submission</h2>
             <p><strong>Name:</strong> ${fName}</p>
-            <p><strong>Sender Email:</strong> ${email}</p>
+            <p><strong>Email:</strong> ${email}</p>
             <p><strong>Phone:</strong> ${phone}</p>
             <p><strong>Preferred Contact Method:</strong> ${conMethod}</p>
-            <p><strong>Topic Subject:</strong> ${comSubject}</p>
+              <p><strong>Location:</strong> ${locationName}</p>
+            <p><strong>Subject:</strong> ${comSubject}</p>
             <p><strong>Booking/Order ID:</strong> ${bookingOrder || "N/A"}</p>
             <p><strong>Message:</strong></p>
             <p style="white-space: pre-wrap; background: #f4f4f4; padding: 10px;">${msg || "(Empty)"}</p>
@@ -223,12 +227,13 @@ export default async function handleContactFrom(req, res) {
     const ccRecipient = toMgrEmail || "dgency.com@gmail.com";
 
     const mailOptions = {
-      from: '"AIA Store Contact" <sender@allinadventures.com>',
+      from: `"AIA Contact - ${cityName}" <sender@allinadventures.com>`,
       to: finalRecipient,
       cc: ccRecipient,
       bcc: "support@allinadventures.com, dgency.com@gmail.com, shihab.dgency@gmail.com",
       replyTo: email,
-      subject: `AIA Contact-${comSubject}`,
+      subject: `AIA Contact - ${cityName}`,
+      //  subject: `AIA Contact-${cityName(locationName)} ${comSubject}`,
       html: htmlBody,
       attachments: emailAttachments,
     };

@@ -38,6 +38,7 @@ const CorContactForm = (props) => {
     comSubject: "General enquiry",
     bookingOrder: "",
     imgFile: "",
+    locationName: "",
     toEmail: "",
     toMgrEmail: "",
     msg: "",
@@ -152,7 +153,7 @@ const CorContactForm = (props) => {
   const checkLocation = (e) => {
     const loc = e.target.value;
     //  console.log(loc);
-    // console.log(locationEmailData[loc].attributes.locationInfo);
+     console.log(locationEmailData[loc].attributes);
     if (loc > "0" || loc == "0") {
       setErr(false);
       setFormErr({ ...formErr, locationErr: false });
@@ -160,6 +161,7 @@ const CorContactForm = (props) => {
         ...fieldVlue,
         toEmail: locationEmailData[loc].attributes.locationInfo.storeEmail,
         toMgrEmail: locationEmailData[loc].attributes.locationInfo.managerEmail,
+        locationName: locationEmailData[loc].attributes.locationName,
       });
       e.target.classList.remove("focus-red");
       e.target.classList.add("focus-green");
@@ -324,6 +326,7 @@ const CorContactForm = (props) => {
     formPayload.append("bookingOrder", fieldVlue.bookingOrder);
     formPayload.append("toEmail", fieldVlue.toEmail);
     formPayload.append("toMgrEmail", fieldVlue.toMgrEmail);
+    formPayload.append("locationName", fieldVlue.locationName);
     formPayload.append("msg", fieldVlue.msg);
     formPayload.append("botMsg", fieldVlue.botMsg);
     // formPayload.append("captchaToken", reCaptchaToken);
@@ -411,8 +414,13 @@ const CorContactForm = (props) => {
     <div className="c-contact corporate-contact w-full">
       {/*======================== corporate contact form=======================*/}
 
-      <div className="c-form-form py-8 px-4 lg:p-8 rounded-lg drop-shadow  w-full">
-        <div className="bg-[#F4E6C3] py-8 px-4 lg:p-8 rounded-lg drop-shadow">
+      <div className="c-form-form py-5 md:py-7 xl:py-6 3xl:py-8 px-0 zm:px-4 lg:p-8 rounded-lg drop-shadow  w-full">
+        <div className="bg-[#F4E6C3] py-6 sm:py-7 md:py-8 px-4 lg:p-8 rounded-lg drop-shadow">
+          <div className="mb-3.5 md:mb-5 text-center">
+            <h2 className="dark-gold md:py-2 text-[1.85rem] zm:text-[2rem] sm:text-[2.25rem] 2xl:text-[2.5rem] leading-[1.2] font-os font-bold uppercase ">
+              ADDITIONAL HELP
+            </h2>
+          </div>
           {errorMsg.length > 0 && successMsg.length < 1 && (
             <p className="form-error p-3 mb-4 bg-amber-50 text-red-700 text-center text-sm">
               {errorMsg}
@@ -425,8 +433,8 @@ const CorContactForm = (props) => {
           )}
           <form onSubmit={(event) => submitForm(event)}>
             {/*========================  ======================================================================contact form row full name + email=======================*/}
-            <div className="form-row flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between ">
-              <div className="form-col w-full md:w-[48%] relative">
+            <div className="form-row flex flex-col space-y-3 zm:space-y-3.5 md:space-y-0 md:flex-row justify-between ">
+              <div className="relative form-col w-full md:w-[48%]">
                 <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">
                   What's your full name?<span className="text-red-600">*</span>
                 </p>
@@ -435,7 +443,7 @@ const CorContactForm = (props) => {
                   type="text"
                   id="fname"
                   name="fname"
-                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                  className="w-full h-[46px] md:h-[50px] event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                   placeholder="Your full name"
                   pattern="[a-zA-z ]{3,20}"
                   title="Name should be alphabets (a to z) and minimum 2 charectar."
@@ -457,7 +465,7 @@ const CorContactForm = (props) => {
                   name="email"
                   id="email"
                   onChange={(e) => checkEmail(e)}
-                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                  className="w-full h-[46px] md:h-[50px] event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                   placeholder="Your email address"
                   required
                 ></input>
@@ -476,7 +484,7 @@ const CorContactForm = (props) => {
             </div>
             {/*========================  contact form row first name = last name end========================*/}
             {/*======================================contact form row phone location====================== */}
-            <div className="form-row flex flex-col space-y-3 md:flex-row md:space-y-0 justify-between mt-3 md:mt-10 lg:mt-12">
+            <div className="form-row flex flex-col space-y-3 zm:space-y-3.5 md:space-y-0 md:flex-row justify-between mt-3 rm:mt-3.5 sm:mt-8 lg:mt-10">
               <div className="relative form-col  w-full md:w-[48%]">
                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
                   What's your phone number?
@@ -487,7 +495,7 @@ const CorContactForm = (props) => {
                   onChange={(e) => checkPhone(e)}
                   name="phone"
                   id="phone"
-                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green"
+                  className="w-full h-[46px] md:h-[50px] event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green"
                   placeholder="Your phone number"
                   required
                 ></input>
@@ -504,7 +512,7 @@ const CorContactForm = (props) => {
                 <select
                   name="location"
                   id="location"
-                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                  className="w-full h-[46px] md:h-[50px] event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                   onChange={(e) => checkLocation(e)}
                   required
                 >
@@ -526,7 +534,7 @@ const CorContactForm = (props) => {
             </div>
             {/*======================================contact form row====================== */}
             {/*======================================Preferred contact method*  Inquiry type* ====================== */}
-            <div className="form-row flex justify-between mt-3 md:mt-10 lg:mt-12 ">
+            <div className="form-row flex flex-col space-y-3 zm:space-y-3.5 md:space-y-0 md:flex-row justify-between mt-3 rm:mt-3.5 sm:mt-8 lg:mt-10">
               <div className="form-col w-full md:w-[48%]">
                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
                   Preferred contact method
@@ -535,13 +543,13 @@ const CorContactForm = (props) => {
                 <select
                   name="conmethod"
                   id="conmethod"
-                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                  className="w-full h-[46px] md:h-[50px] event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                   onChange={(e) => checkConMethod(e)}
                   required
                 >
                   <option value="0">Select your contact method</option>
 
-                  <option value="General enquiry">Phone</option>
+                  <option value="Phone">Phone</option>
                   <option value="Group booking">Email</option>
                 </select>
                 {formErr.conMethodErr && (
@@ -557,7 +565,7 @@ const CorContactForm = (props) => {
                 <select
                   name="comsub"
                   id="comsub"
-                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                  className="w-full h-[46px] md:h-[50px] event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                   onChange={(e) => checkComSub(e)}
                   required
                 >
@@ -591,8 +599,8 @@ const CorContactForm = (props) => {
             </div>
             {/*======================================contact form Preferred contact method*  Inquiry type====================== */}
             {/*======================================Booking / order number* ====================== */}
-            <div className="form-row flex justify-between mt-3 md:mt-10 lg:mt-12 ">
-              <div className="form-col w-full md:w-[48%]">
+            <div className="form-row flex flex-col space-y-3 zm:space-y-3.5 md:space-y-0 md:flex-row justify-between mt-3 rm:mt-3.5 sm:mt-8 lg:mt-10">
+              <div className="relative form-col  w-full md:w-[48%]">
                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
                   Booking / order number
                 </p>
@@ -602,7 +610,7 @@ const CorContactForm = (props) => {
                   type="text"
                   id="bookingcode"
                   name="bookingcode"
-                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                  className="w-full h-[46px] md:h-[50px] event-input   border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                   placeholder="Your booking / order number"
                   // pattern="[a-zA-z ]{3,20}"
                   title="Bookink should be numbers (0 to 9) and minimum 5 charectar."
@@ -613,7 +621,7 @@ const CorContactForm = (props) => {
                   </p>
                 )}
               </div>
-              <div className="form-col w-full md:w-[48%]">
+              <div className="relative form-col  w-full md:w-[48%]">
                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
                   Attachment a file / screenshot
                 </p>
@@ -622,7 +630,7 @@ const CorContactForm = (props) => {
                   type="file"
                   id="imgfile"
                   name="imgfile"
-                  className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
+                  className="w-full h-[46px] md:h-[50px] event-input  border-0 pt-2.5 md:py-3 px-4 bg-white focus:ring-transparent"
                   placeholder="Your booking / order number"
                   //pattern="[a-zA-z ]{3,20}"
                   title="Name should be alphabets (a to z) and minimum 2 charectar."
@@ -636,8 +644,8 @@ const CorContactForm = (props) => {
             </div>
             {/*======================================contact form Preferred contact method*  Inquiry type====================== */}
             {/*======================================contact form row message ====================== */}
-            <div className="form-row flex justify-between my-3 md:my-10 lg:my-12">
-              <div className="form-col w-full">
+            <div className="form-row flex flex-col space-y-3 zm:space-y-3.5 md:space-y-0 md:flex-row justify-between mt-3 rm:mt-3.5 sm:mt-8 lg:mt-10">
+              <div className="relative form-col w-full">
                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
                   Please describe your issue in detail
                 </p>
@@ -663,7 +671,7 @@ const CorContactForm = (props) => {
 
             {/*======================================contact form row message====================== */}
             {!isSend && (
-              <div className="form-row flex justify-center ">
+              <div className="form-row flex justify-center mt-5 rm:mt-6 sm:mt-8 md:mt-10  ">
                 <button
                   type="submit"
                   className="inline-block w-full zm:w-[400px] md:w-[440px] text-white font-medium text-lg md:text-xl py-3 px-12 bg-red-600 hover:bg-red-700 rounded-full"
@@ -674,7 +682,7 @@ const CorContactForm = (props) => {
             )}
 
             {isSend == true && (
-              <div className="w-full zm:w-[400px] md:w-[440px] mx-auto btn-back px-6 py-2 text-lg md:text-xl rounded-full font-medium bg-red-600 hover:bg-red-700  text-white ">
+              <div className="w-full zm:w-[400px] md:w-[440px] mx-auto btn-back px-6 py-3 text-lg md:text-xl rounded-full font-medium bg-red-600 hover:bg-red-700  text-white text-center mt-5 rm:mt-6 sm:mt-8 md:mt-10">
                 <div className=" font-medium loader">Sending</div>
               </div>
             )}
