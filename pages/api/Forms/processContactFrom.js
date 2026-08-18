@@ -227,12 +227,12 @@ export default async function handleContactFrom(req, res) {
     const ccRecipient = toMgrEmail || "dgency.com@gmail.com";
 
     const mailOptions = {
-      from: `"AIA Contact - ${cityName}" <sender@allinadventures.com>`,
+      from: `"AIA ${cityName} - Additional Help" <sender@allinadventures.com>`,
       to: finalRecipient,
       cc: ccRecipient,
       bcc: "support@allinadventures.com, dgency.com@gmail.com, shihab.dgency@gmail.com",
       replyTo: email,
-      subject: `AIA Contact - ${cityName}`,
+      subject: `AIA ${cityName} - Additional Help`,
       //  subject: `AIA Contact-${cityName(locationName)} ${comSubject}`,
       html: htmlBody,
       attachments: emailAttachments,
