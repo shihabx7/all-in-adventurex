@@ -213,8 +213,8 @@ export default function ModalMenu() {
               )}
               {activeModalMenuType == "partyPackage-form" && (
                 <span>
-                  Party For Large group is available at the locations below—Book
-                  instantly
+                 Select your location to start planning your event
+
                 </span>
               )}
             </p>
