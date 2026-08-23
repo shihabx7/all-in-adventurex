@@ -52,11 +52,11 @@ export default function TestimonialSlider({ testimonialData }) {
         ssr={true} // means to render carousel on server-side.
         infinite={true}
         // autoPlay={this.props.deviceType !== "mobile" ? true : false}
-        autoPlay={true}
-        autoPlaySpeed={5000}
+        autoPlay={false}
+       // autoPlaySpeed={5000}
         keyBoardControl={true}
-        customTransition="1s ease-in-out"
-        transitionDuration={2000}
+        customTransition="1s ease-in"
+        transitionDuration={300}
         containerClass="aia-new-carousel-container section-bg-light  home-event-carousel-container pt-12 md:pt-9 lg:pt-10 pb-16 lg:pb-20"
         //removeArrowOnDeviceType={["tablet", "mobile"]}
         //deviceType={this.props.deviceType}

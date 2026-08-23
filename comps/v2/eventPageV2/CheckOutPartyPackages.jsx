@@ -228,7 +228,7 @@ export default function CheckOutPartyPackages(props) {
                         .ctaBtnLabel
                         ? props.sectionData.partyPackageInfo.bigPackageInfo
                             .ctaBtnLabel
-                        : "TELL US ABOUT YOUR PARTY"
+                        : "Reach out to our events team"
                     }
                     locationSlug={
                       props.locationSlug ? props.locationSlug : false

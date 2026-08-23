@@ -1,6 +1,6 @@
 import { useSiteData } from "../../../contexts/SiteDataContext";
 import { eventFormBookingLinks } from "../../../lib/tempData/eventFormBookingLinks";
-import PageHeroBgImg from "./elements/PageHeroBgImg";
+import PageHeroBgImg from "../eventPageV2/elements/EventPageHeroBgImg";
 
 const ContactPageRootHero = (props) => {
   const { openModalMenu, setModalPartyName, setModalMenuType } = useSiteData();

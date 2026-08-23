@@ -19,6 +19,7 @@ import {
   getListPageMeta,
   eventListData,
 } from "../../../lib/eventDataFormation";
+
 export const getEventListPageData = async () => {
   const pageReqUrl = apiUrl + eventListPageQuery;
   const eventListReqUrl = apiUrl + eventListQuery;

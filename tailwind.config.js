@@ -34,8 +34,9 @@ module.exports = {
       xl: "1280px",
       "2xl": "1400px",
       "3xl": "1470px",
-      "4xl": "2000px",
+      "4xl": "2100px",
       "5xl": "2380px",
+      "6xl": "3300px",
     },
     gradients: (theme) => ({
       // Array definition (defaults to linear gradients).

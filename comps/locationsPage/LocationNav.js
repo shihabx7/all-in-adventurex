@@ -132,18 +132,28 @@ const LocationNav = (props) => {
                         {!props.contactBtn && (
                           <div className="menu-item-btn search-loc  text-white text-lg hidden lg:block">
                             <div className="header-btn">
-                              <button
-                                onClick={() =>
-                                  bookEventFlow(props.locationSlug)
+                              <a
+                                href={
+                                  props.locationSlug
+                                    ? `/${props.locationSlug}/events`
+                                    : `/events`
                                 }
-                                className="bg-transparent cursor-pointer rounded font-medium text-white hover:bg-red-700 py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+                                className="uppercase block bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
                               >
-                                BOOK EVENT
-                              </button>
+                                Parties & Events
+ 
+                              </a>
                             </div>
                           </div>
                         )}
-
+                        {/*<button
+                                onClick={() =>
+                                  bookEventFlow(props.locationSlug)
+                                }
+                                className="hidden bg-transparent cursor-pointer rounded font-medium text-white hover:bg-red-700 py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+                              >
+                                BOOK PACKAGES
+                              </button>*/}
                         <div className="menu-item-btn text-white text-lg hidden lg:block search-loc ">
                           <GameBookingBtn
                             isPublished={

@@ -2,6 +2,7 @@
 
 import { getLocationSlugUrl } from "../../api/Locations/getLocationSlugUrls";
 import { getLocationEvenstListPageData } from "../../api/DynamicLocations/getLocationEvenstListPageData";
+import { getLocationEvenstListPageDataV2 } from "../../api/DynamicLocations/getLocationEvenstListPageDataV2";
 
 import Script from "next/script";
 import LocationNav from "../../../comps/locationsPage/LocationNav";
@@ -13,6 +14,18 @@ import EventLocList from "../../../comps/eventPageComps/EventLocList";
 import EventBookingSection from "../../../comps/eventPageComps/EventBookingSection";
 import EventBookingPartySection from "../../../comps/eventPageComps/EventBookingPartySection";
 import EventContact from "../../../comps/eventPageComps/EventContact";
+
+// =========================================================v2
+import EventsListPageHero from "../../../comps/v2/eventPageV2/EventsListPageHero";
+import HomePageEventLisSection from "../../../comps/v2/eventPageV2/HomePageEventLisSection";
+
+import CheckOutPartyPackages from "../../../comps/v2/eventPageV2/CheckOutPartyPackages";
+import EventPageEscapeRoomCarousel from "../../../comps/v2/eventPageV2/EventPageEscapeRoomCarousel";
+import MobileMysteryEventSection from "../../../comps/v2/eventPageV2/MobileMysteryEventSection";
+import EventPageGallery from "../../../comps/v2/eventPageV2/EventPageGallery";
+import CustomerLoveTestimonialCarousel from "../../../comps/v2/eventPageV2/CustomerLoveTestimonialCarousel";
+import EventPageFaqs from "../../../comps/v2/eventPageV2/EventPageFaqs";
+import LocationDetails from "../../../comps/locationsPage/LocationDetails";
 
 const LocationEvents = (props) => {
   return (
@@ -39,18 +52,69 @@ const LocationEvents = (props) => {
           activeSlug="events"
           activeLabel="Events"
         />
-        <EventLocListHero
-          pageData={props.pageData}
+        <EventsListPageHero
+          pageHeroData={props.pageHeroData}
           isPublished={props.isPublished}
+          locationInfo={props.locationInfo}
+          locationName={props.locationName}
+          locationSlug={props.locationSlug}
+          // businessHours={props.businessHours}
+          // holidayHours={props.holidayHours}
+        />
+        <HomePageEventLisSection
+          extraSpace={true}
+          locationSlug={props.locationSlug}
+          locationName={props.locationName}
+          pageType="all"
+          title={"TURN ANY OCCASION INTO AN ADVENTURE"}
+        />
+
+        {/* =============== ============================================v2============================================v2*/}
+
+        <CheckOutPartyPackages
+          sectionData={props.pageData.CheckOutPartyPackagesData}
+          partyPackageList={props.partyPackageList}
+          locationSlug={props.locationSlug}
+          locationInfo={props.locationInfo}
+        />
+        <EventPageEscapeRoomCarousel
+          sectionData={props.escapeRoomCarouselSectionData}
+          sectionHeadData={props.pageData.EventPageEscapeRoomCarouselData}
+        />
+
+        {props.pageData.MobileMysterySectionData.showCardSection && (
+          <MobileMysteryEventSection
+            sectionData={props.pageData.MobileMysterySectionData}
+            locationSlug={props.locationSlug}
+          />
+        )}
+        <EventPageGallery sectionData={props.pageData.EventPageGalleryData} />
+        <CustomerLoveTestimonialCarousel
+          sectionData={props.pageData.CustomerLoveTestimonialCarouselData}
+        />
+        <EventPageFaqs
+          sectionData={props.pageData.EventPageFaqsData}
+          eventFaqList={props.eventFaqList}
+          locationSlug={props.locationSlug}
+          locationInfo={props.locationInfo}
+        />
+        <LocationDetails
+          mapInfo={props.mapInfo}
           locationInfo={props.locationInfo}
           businessHours={props.businessHours}
           holidayHours={props.holidayHours}
+          locationName={props.locationName}
+          locationSlug={props.locationSlug}
         />
+
+        {/*=============================================
         <EventLocList
           eventListData={props.eventListData}
           locationSlug={props.locationSlug}
           allBooking={props.allBooking}
         />
+     
+
 
         {props.escapeGamePartyList.length > 0 ? (
           <EventBookingPartySection
@@ -74,6 +138,7 @@ const LocationEvents = (props) => {
           holidayHours={props.holidayHours}
           eventFaq={props.eventFaq}
         />
+             ==================================================*/}
       </div>
       <LocationFooter
         locationName={props.locationName}
@@ -121,7 +186,9 @@ export const getStaticProps = async (context) => {
     };
   }
   const DATA = res;*/
-  const DATA = await getLocationEvenstListPageData(context.params.locationSlug);
+  const DATA = await getLocationEvenstListPageDataV2(
+    context.params.locationSlug,
+  );
   console.log(context.params.activitiesSlug);
   //  console.log("Location: " + context.params.locationSlug);
 
@@ -138,55 +205,20 @@ export const getStaticProps = async (context) => {
       totalLocations: DATA.totalLocations,
       locationInfo: DATA.locationInfo,
       pageMeta: DATA.pageMeta,
-      pageData: DATA.pageData,
-
+      pageHeroData: DATA.pageHeroData,
       allBooking: DATA.allBooking,
-      escapeGamePartyList: DATA.partyBooking,
       eventBooking: DATA.eventBooking,
       businessHours: DATA.businessHours,
+      mapInfo: DATA.mapInfo,
       holidayHours: DATA.holidayHours,
       eventListData: DATA.eventListData,
       hasMobileEscapeRoom: DATA.hasMobileEscapeRoom,
       giftBooking: DATA.giftBooking,
-      eventFaq: [
-        {
-          id: 1,
-          group: "event",
-          category: "event",
-          ques: "Can you accommodate large events?",
-          ans: [
-            "Absolutely! We love hosting large parties and corporate events. While we may not be able to accommodate your entire group into one room, we can set your group up into multiple teams to start all at the same time. Full facility capacity varies, but we have successfully hosted groups as large as several hundred people!",
-          ],
-        },
-        {
-          id: 2,
-          group: "event",
-          category: "event",
-          ques: "How much does an escape room cost?",
-          ans: [
-            "Our escape room pricing starts at $26.99/person (plus tax and fees in those states that it applies) for one escape room experience when you have a group of 7 or more people. Children 6 and under are free with a paying adult. To learn more about our detailed pricing <a class='text-red-600 hover:text-red-700' href='/pricing'>Click Here</a>.",
-          ],
-        },
-        {
-          id: 3,
-          group: "event",
-          category: "event",
-          ques: "How long is a party?",
-          ans: [
-            "A typical party can last anywhere between 2-3 hours. We are flexible to tailor the experience for any duration and budget that fits your needs.",
-          ],
-        },
-        {
-          id: 4,
-          group: "event",
-          category: "event",
-          ques: "Can I bring my own food?",
-          ans: [
-            "We offer our standard pizza package option and can also offer a custom sandwich platter package or catering option in our separate party room for your party to enjoy after their escape room experience.",
-            "<p class='mt-2 md:mt-3'>Guests are permitted to bring their own store-bought or commercially prepared foods with the rental of the party room. Please contact us for more information.</p>",
-          ],
-        },
-      ],
+      //====== v2 pageData
+      pageData: DATA.pageData,
+      escapeRoomCarouselSectionData: DATA.escapeRoomCarouselSectionData,
+      eventFaqList: DATA.eventFaqList,
+      partyPackageList: DATA.partyPackageList,
     },
     revalidate: 60,
   };

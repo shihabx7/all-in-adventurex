@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { FiChevronDown, FiX } from "react-icons/fi";
 import LocationDetailsHours from "../../locationsPage/LocationDetailsHours";
 import LocationMap from "../../locationsPage/LocationMap";
+import ContactInfoCard from "./elements/ContactInfoCard";
 
 const removeTags = (str) => {
   if (str === null || str === "") return false;
@@ -25,10 +26,13 @@ const ContactInfoSection = (props) => {
   return (
     <div className="location-details-v2 bg-[#FFF3D3] bg-[url('/assets/mobile-escape-room/brown-paper-bg.jpg')] bg-[240px_240px] md:bg-[300px_300px] lg:bg-[400px_400px]  py-16 md:py-20 lg:py-28 3xl:py-32  relative">
       <div className="max-w-[1000px] mx-auto  relative z-30 px-4">
+        <div className="contact-info-card-sec w-full">
+          <ContactInfoCard cardData={props.cardData} />
+        </div>
         {/*=================================================================location map */}
-        <div className="location-spc-map drop-shadow-md border-2 border-gold">
+        <div className="location-spc-map drop-shadow-md border-2 border-gold mt-5 rm:mt-6 zm:mt-7 md:mt-9 2xl:mt-10">
           {isPgLoaded && (
-            <div className="emb-map w-full h-[500px] md:h-[600px]">
+            <div className="emb-map w-full aspect-[8/6] md:aspect-[8/4]">
               <LocationMap mapInfo={props.mapInfo} />
             </div>
           )}

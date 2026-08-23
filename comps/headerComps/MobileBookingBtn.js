@@ -50,32 +50,43 @@ const MobileBookingBtn = (props) => {
   return (
     <div className="max-w-7xl mx-auto flex justify-between">
       {/**============event booking================= */}
+
       {props.activitySlug !== "mobile-escape-room" ? (
         <>
-          <div className={props.contactBtn? "w-[0px]":"w-[48%]"}>
+          <div className={props.contactBtn ? "w-[0px]" : "w-[48%]"}>
             {props.locationSlug ? (
               <>
                 {!props.contactBtn && (
-                  <button
-                    onClick={() => bookEventFlow(props.locationSlug)}
-                    className="w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white"
+                  <a
+                    href={
+                      props.locationSlug
+                        ? `/${props.locationSlug}/events`
+                        : `/events`
+                    }
+                    className="uppercase w-full font-medium bg-red-600 hover:bg-red-700 py-2 px-1 block text-center text-white text-[.85rem] rm:text-[.94rem]"
                   >
-                    BOOK EVENT
-                  </button>
+                    Parties & Events
+                  </a>
                 )}
               </>
             ) : (
               <a
                 href={"/events#eventbooking"}
-                className="bg-red-600 font-medium hover:bg-red-700 py-2 px-2 block text-center text-white"
+                className="uppercase bg-red-600 font-medium hover:bg-red-700 py-2 px-2 block text-center text-white text-[.85rem] rm:text-[.94rem]"
               >
-                BOOK EVENT
+                Parties & Events
               </a>
             )}
           </div>
           {/**============event booking end================= */}
           {/**============game booking================= */}
-          <div className={props.contactBtn? "w-full":"w-[48%]"}>
+          <div
+            className={
+              props.contactBtn
+                ? "w-full"
+                : "w-[48%] text-[.85rem] rm:text-[.94rem]"
+            }
+          >
             {props.locationSlug ? (
               <>
                 {props.isPublished ? (
@@ -83,10 +94,9 @@ const MobileBookingBtn = (props) => {
                     {props.allBooking && (
                       <button
                         onClick={() => bookAll(props.allBooking)}
-                        className="w-full bg-red-600 font-medium hover:bg-red-700 py-2 px-1 block text-center text-white"
+                        className="w-full bg-red-600 font-medium hover:bg-red-700 py-2 px-1 block text-center text-white "
                       >
-                        {props.contactBtn? " BOOK YOUR GAMES":"BOOK GAMES"}
-                       
+                        {props.contactBtn ? " BOOK YOUR GAMES" : "BOOK GAMES"}
                       </button>
                     )}
                     {props.giftBooking && props.isGiftPage && (

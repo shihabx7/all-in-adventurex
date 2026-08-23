@@ -21,15 +21,28 @@ export default function HomePageEventLisSection(props) {
   };
   return (
     <div className="event-list-section-v2 bg-[#FFF9EB] bg-[url('/assets/mobile-escape-room/brown-paper-bg.jpg')] bg-[240px_240px] md:bg-[300px_300px] lg:bg-[400px_400px]">
-      <div className="section-container max-w-[600px] lg:max-w-7xl py-16 md:py-20 lg:py-28 px-4 xl:px-6 mx-auto">
-        <div className="section-title mb-6 rm:mb-8 md:mb-10 lg:mb-12 md:max-w-[720px] lg:max-w-[800px] mx-auto">
+      <div className="section-container lg:max-w-7xl py-16 md:py-20 lg:py-28 px-4 xl:px-6 mx-auto">
+        {props.extraSpace && (
+          <div className="pt-5 rm:pt-6 zm:pt-7 lg:h-8 3xl:h-9 "></div>
+        )}
+        <div className="section-title mb-6 rm:mb-8 md:mb-10 lg:mb-12 md:max-w-[860px] lg:max-w-[900px] mx-auto">
           <h2 className="dark-gold py-[2px]  text-2xl md:text-[40px] lg:text-[44px] 2xl:text-[48px] leading-[1.2] font-os font-bold uppercase text-center">
-            ESCAPE ROOM EVENTS AND PARTIES
+            {props.title ? props.title : "ESCAPE ROOM EVENTS AND PARTIES"}
           </h2>
-          <p className="text-[#2E2E2E] mt-1 md:mt-2 text-center md:text-lg lg:text-xl  md:max-w-[700px]  mx-auto">
-            Make your next celebration unforgettable. From birthdays to
-            team-building, we've got the perfect party experience for everyone.
-          </p>
+          {props.pageType && props.pageType === "all" && (
+            <p className="text-[#2E2E2E] mt-1 md:mt-2 text-center md:text-lg lg:text-xl  md:max-w-[700px]  mx-auto">
+              Every occasion deserves more than the ordinary. Discover our event
+              options and packages below and find the perfect adventure for your
+              group.
+            </p>
+          )}
+          {!props.pageType && (
+            <p className="text-[#2E2E2E] mt-1 md:mt-2 text-center md:text-lg lg:text-xl  md:max-w-[700px]  mx-auto">
+              Make your next celebration unforgettable. From birthdays to
+              team-building, we've got the perfect party experience for
+              everyone.
+            </p>
+          )}
         </div>
         {/*==========================================================================================================event  list====*/}
         <div className="event-list-grid-v2-box">
@@ -48,7 +61,7 @@ export default function HomePageEventLisSection(props) {
               </div>
               <div className="bg-img-over-lay rounded-lg w-full h-full absolute top-0 left-0 z-[20] overlay-dark-bottom "></div>
 
-              <div className="event-info-content h-full flex flex-col justify-between relative z-[30] px-2 py-5 rm:px-3 rm:py-5  zm:px-4 zm:py-6 md:px-3 md:py-5 xl:px-6 xl:py-7">
+              <div className="event-info-content h-full flex flex-col justify-between relative z-[30] px-2 py-5 rm:px-3 rm:py-5  zm:px-4 zm:py-6 md:px-2 md:py-5 xl:px-4 xl:py-7">
                 <div className="list-card-gap h-[220px] rm:h-[236px] zm:h-[270px] md:h-[300px] xl:h-[320px]"></div>
                 {/*=========================================game  decription====*/}
                 <div className="bottom-section md:max-w-[440px] lg:max-w-[700px] flex flex-col justify-end space-y-6">
@@ -59,7 +72,7 @@ export default function HomePageEventLisSection(props) {
                     </h3>
                     {/*=========================================game short decription====*/}
                     <div className="egl-shot-desc mt-2 md:mt-2 xl:mt-3">
-                      <p className="text-[#ADADAD] text-sm  xl:text-[1.1rem] xl:leading-[1.5]">
+                      <p className="text-[#ADADAD] text-sm  xl:text-[1.05rem] xl:leading-[1.5]">
                         {/*============item.desc======*/}A perfect party venue
                         for the young at heart. No matter your age, get an
                         unforgettable adventure!
@@ -108,7 +121,7 @@ export default function HomePageEventLisSection(props) {
               </div>
               <div className="bg-img-over-lay rounded-lg w-full h-full absolute top-0 left-0 z-[20] overlay-dark-bottom "></div>
 
-              <div className="event-info-content h-full flex flex-col justify-between  relative z-[30] px-2 py-5 rm:px-3 rm:py-5  zm:px-4 zm:py-6 md:px-3 md:py-5 xl:px-6 xl:py-7">
+              <div className="event-info-content h-full flex flex-col justify-between  relative z-[30] px-2 py-5 rm:px-3 rm:py-5  zm:px-4 zm:py-6 md:px-2 md:py-5 xl:px-4 xl:py-7">
                 <div className="list-card-gap h-[220px] rm:h-[236px] zm:h-[270px] md:h-[300px] xl:h-[320px]"></div>
                 {/*=========================================game  decription====*/}
                 <div className="bottom-section md:max-w-[440px] lg:max-w-[700px] flex flex-col justify-end space-y-6">
@@ -119,10 +132,10 @@ export default function HomePageEventLisSection(props) {
                     </h3>
                     {/*=========================================game short decription====*/}
                     <div className="egl-shot-desc mt-2 md:mt-2 xl:mt-3">
-                      <p className="text-[#ADADAD] text-sm xl:text-[1.1rem] xl:leading-[1.5]">
-                        {/*============item.desc======*/}A perfect party venue
-                        for This fun and exciting interactive form of team
-                        building will bring your corporate team closer!
+                      <p className="text-[#ADADAD] text-sm xl:text-[1.05rem] xl:leading-[1.5]">
+                        {/*============item.desc======*/}This fun and exciting
+                        interactive form of team building will bring your
+                        corporate team closer!
                       </p>
                     </div>
                   </div>
@@ -167,7 +180,7 @@ export default function HomePageEventLisSection(props) {
               </div>
               <div className="bg-img-over-lay rounded-lg w-full h-full absolute top-0 left-0 z-[20] overlay-dark-bottom "></div>
 
-              <div className="event-info-content  h-full flex flex-col justify-between relative z-[30] px-2 py-5 rm:px-3 rm:py-5  zm:px-4 zm:py-6 md:px-3 md:py-5 xl:px-6 xl:py-7">
+              <div className="event-info-content  h-full flex flex-col justify-between relative z-[30] px-2 py-5 rm:px-3 rm:py-5  zm:px-4 zm:py-6 md:px-2 md:py-5 xl:px-4 xl:py-7">
                 <div className="list-card-gap h-[220px] rm:h-[236px] zm:h-[270px] md:h-[300px] xl:h-[320px]"></div>
                 {/*=========================================game  decription====*/}
                 <div className="bottom-section md:max-w-[440px] lg:max-w-[700px] flex flex-col justify-end space-y-6">
@@ -178,7 +191,7 @@ export default function HomePageEventLisSection(props) {
                     </h3>
                     {/*=========================================game short decription====*/}
                     <div className="egl-shot-desc mt-2 md:mt-2 xl:mt-3">
-                      <p className="text-[#ADADAD]  text-sm xl:text-[1.1rem] xl:leading-[1.5] ">
+                      <p className="text-[#ADADAD]  text-sm xl:text-[1.05rem] xl:leading-[1.5] ">
                         {/*============item.desc======*/}Students exercise
                         critical thinking and act to become the super-spies they
                         see in the movies!

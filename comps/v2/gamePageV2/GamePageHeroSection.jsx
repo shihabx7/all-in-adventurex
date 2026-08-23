@@ -41,8 +41,8 @@ export default function GamePageHeroSection({ pageHeroData, gameStatData }) {
         </div>
       </div>
       {/* ========================= game - stats====================== */}
-      <div className="gst-container  w-[99%] rm:w-[96%] sm:w-[560px] md:w-[720px] xl:w-[880px] 3xl:w-[900px]  absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2   z-[999]">
-    <GameStates gameStatData={gameStatData} /> 
+      <div className="gst-container  w-[99%] rm:w-[97%] sm:w-[560px] md:w-[720px] xl:w-[880px] 3xl:w-[900px]  absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2   z-[999]">
+        <GameStates gameStatData={gameStatData} />
       </div>
       {/* =========================     game-states-container w-[95%] rm:w-[90%] sm:w-[520px] md:w-[700px] xl:w-[880px] 3xl:w-[900px] h-[140px] bg-red-500 absolute bottom-0 left-[50%]  translate-x-[-50%] translate-y-[50%] z-[120]game - info end====================== */}
     </div>

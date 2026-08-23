@@ -217,7 +217,7 @@ export default async function handleContactFrom(req, res) {
             <p><strong>Email:</strong> ${email}</p>
             <p><strong>Phone:</strong> ${phone}</p>
             <p><strong>Preferred Contact Method:</strong> ${conMethod}</p>
-              <p><strong>Location:</strong> ${locationName}</p>
+            <p><strong>Location:</strong> ${locationName}</p>
             <p><strong>Subject:</strong> ${comSubject}</p>
             <p><strong>Booking/Order ID:</strong> ${bookingOrder || "N/A"}</p>
             <p><strong>Message:</strong></p>

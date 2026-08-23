@@ -11,16 +11,15 @@ const bookParty = (bookingData) => {
   });
 };
 
-export default function EventBookingBtn(props){
-
-    const { openModalMenu, setModalMenuType } = useSiteData();
-    //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle
-    const showLocModal = () => {
-      const body = document.getElementsByTagName("body")[0];
-      body.classList.remove("overflow-hidden");
-      setModalMenuType("partyPackage-list");
-      openModalMenu();
-    };
+export default function EventBookingBtn(props) {
+  const { openModalMenu, setModalMenuType } = useSiteData();
+  //activeModalMenuType= location-links | game-list | game | partyPackage-list | gift-card | mobile-mystery |unlimited-play-pass | bundle
+  const showLocModal = () => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.remove("overflow-hidden");
+    setModalMenuType("partyPackage-list");
+    openModalMenu();
+  };
 
   // new party booking setion
 
@@ -35,25 +34,25 @@ export default function EventBookingBtn(props){
                   {props.activeGameBooking ? (
                     <a
                       href={"/" + props.locationSlug + "/events#eventbooking"}
-                      className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+                      className="uppercase bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
                     >
-                      BOOK EVENT
+                      Parties & Events
                     </a>
                   ) : (
                     <a
                       href={"#eventbooking"}
-                      className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+                      className="uppercase bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
                     >
-                      BOOK EVENT
+                      Parties & Events
                     </a>
                   )}
                 </>
               ) : (
                 <a
                   href={"/" + props.locationSlug + "/events#eventbooking"}
-                  className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+                  className="uppercase bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
                 >
-                  BOOK EVENT
+                  Parties & Events
                 </a>
               )}
             </>
@@ -71,32 +70,39 @@ export default function EventBookingBtn(props){
                   ) : (
                     <a
                       href={"/" + props.locationSlug + "/events#eventbooking"}
-                      className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+                      className="uppercase bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
                     >
-                      BOOK EVENT
+                      Parties & Events
                     </a>
                   )}
                 </>
               ) : (
                 <a
                   href={"/" + props.locationSlug + "/events#eventbooking"}
-                  className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+                  className="uppercase bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2.5 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
                 >
-                  BOOK EVENT
+                  Parties & Events
                 </a>
               )}
             </>
           )}
         </>
       ) : (
-        <button
-          onClick={showLocModal}
-          className="bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
-        >
-          BOOK EVENT
-        </button>
+        <>
+          <a
+            href="/events"
+            className="uppercase block bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+          >
+            Parties & Events
+          </a>
+          <button
+            onClick={showLocModal}
+            className="hidden bg-transparent cursor-pointer  rounded font-medium text-white  hover:bg-red-700  py-2 px-6 border-[2px] border-red-600 hover:border-red-700 transition duration-300"
+          >
+            BOOK EVENT
+          </button>
+        </>
       )}
     </div>
   );
-};
-
+}

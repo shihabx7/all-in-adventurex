@@ -1,5 +1,5 @@
 import Image from "next/image";
-export default function PageHeroBgImg({
+export default function EventPageHeroBgImg({
   heroBgImageDesktop,
   heroBgImageMobile,
 }) {

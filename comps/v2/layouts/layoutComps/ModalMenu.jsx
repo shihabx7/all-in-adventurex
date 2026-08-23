@@ -212,10 +212,7 @@ export default function ModalMenu() {
                 </span>
               )}
               {activeModalMenuType == "partyPackage-form" && (
-                <span>
-                 Select your location to start planning your event
-
-                </span>
+                <span>Select your location to start planning your event</span>
               )}
             </p>
           </div>

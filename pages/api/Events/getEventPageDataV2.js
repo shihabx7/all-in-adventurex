@@ -22,9 +22,9 @@ import {
 import { eventPageDataFormater } from "../../../lib/v2/formate/eventPageDataFormater";
 import {
   eventMenuSlugListV2,
+  eventPartyPackageList,
   eventPagMeta,
   eventPageData,
-  eventPartyPackageList,
 } from "../../../lib/v2/formate/eventPageDataFormaterV2";
 import {
   eventDatav2,
@@ -68,12 +68,11 @@ export const getEventPageDataV2 = async (eventSlug) => {
     totalLocations: totalLocations,
     eventName: eventDatav2[eventSlug].eventName,
     menuLabel: eventDatav2[eventSlug].menuLabel,
-    eventSlug:eventSlug,
+    eventSlug: eventSlug,
     //============================================================v2
     pageMeta: eventPagMeta(eventSlug),
     pageData: eventPageData(eventSlug),
 
-    //============================================================v1
     escapeRoomCarouselSectionData:
       eventPageDataFormater.escapeRoomCarouselSectionData({
         fetchEscapeGameList: actctivityListResData,
@@ -82,7 +81,7 @@ export const getEventPageDataV2 = async (eventSlug) => {
     partyPackageList: eventPartyPackageList(),
     eventFaqList: eventFaqListDefaultV2,
     /*
-    
+        //============================================================v1
     pageMetaOld: getPageMeta(
       seoData,
       eventResData.pageHeroData.pageHeroMobile.data.attributes.url,

@@ -37,7 +37,7 @@ const EventRootList = (props) => {
 
       <div className="all-games-container max-w-7xl mx-auto relative  z-30 pt-[110px] pb-16 md:py-20 lg:py-28 px-4">
         {/*======================= ==================================section head============== */}
-        <div className="section-title  text-center max-w-[960px] mx-auto">
+        <div className="section-title  text-center max-w-[1000px] mx-auto">
           <h2 className="dark-gold text-2xl uppercase md:text-[40px] lg:text-[44px] font-os font-bold">
             {props.eventListData.title
               ? props.eventListData.title

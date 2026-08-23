@@ -90,10 +90,7 @@ export const getLocationEventPageDataV2 = async (locslug, eventSlug) => {
 
     locationInfo: locationResData.locationInfo,
     eventBooking: getEventBooking(locationResData.bookingInfo),
-    partyBooking: getPartyBooking(
-      locationResData.bookingInfo,
-      locationResData.escapeGameParty,
-    ),
+    
     giftBooking: getGiftBooking(locationResData.bookingInfo),
     allBooking: getAllBooking(locationResData.bookingInfo),
     businessHours: getBusinessHours(locationResData.businessHours),
@@ -107,6 +104,10 @@ export const getLocationEventPageDataV2 = async (locslug, eventSlug) => {
       locationResData.slug,
     ), //eventPagMeta(eventSlug),
     pageData: eventPageData(eventSlug),
+    partyBooking: getPartyBooking(
+      locationResData.bookingInfo,
+      locationResData.escapeGameParty,
+    ),
     escapeRoomCarouselSectionData:
       eventPageDataFormater.escapeRoomCarouselSectionData({
         fetchEscapeGameList: locationResData.locationActivities,

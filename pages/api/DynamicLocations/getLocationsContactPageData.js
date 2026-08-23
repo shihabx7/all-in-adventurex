@@ -20,6 +20,9 @@ import {
   getEventSlugList,
 } from "../../../lib/menuDataFormation";
 import { checkActiveMobileEscape } from "../../../lib/dataFormation/mobileEscapeDataFormation";
+//===================================================v2
+import { locationListPageDataV2 } from "../../../lib/v2/data/locationListPageTempData";
+
 export const getLocationsContactPageData = async (locslug) => {
   const pageReq = apiUrl + locationContactPageQuery;
 
@@ -51,7 +54,7 @@ export const getLocationsContactPageData = async (locslug) => {
   const Data = {
     locationSlugList: getLocationSlugList(locationListData),
     escapeGameSlugList: getEscapeGameSlugList(
-      locationResData.locationActivities
+      locationResData.locationActivities,
     ),
     otherGameSlugList: getOtherGameSlugList(locationResData.locationActivities),
     eventSlugList: getEventSlugList(locationResData.locationEvents),
@@ -64,9 +67,12 @@ export const getLocationsContactPageData = async (locslug) => {
       seoData,
       pageResData.pageHeroMobile.data.attributes.url,
       locationResData.locationName,
-      locationResData.slug
+      locationResData.slug,
     ),
     pageData: getPageData(pageResData, locationResData.locationInfo),
+    cardData: locationListPageDataV2[locslug]
+      ? locationListPageDataV2[locslug].cardData
+      : null,
     locationInfo: locationResData.locationInfo,
     mapInfo: getMapInfo(locationResData.mapInfo),
     allBooking: getAllBooking(locationResData.bookingInfo),

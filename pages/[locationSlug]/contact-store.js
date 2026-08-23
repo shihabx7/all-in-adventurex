@@ -64,6 +64,7 @@ const ContactStorePage = (props) => {
         />
 
         <ContactInfoSection
+          cardData={props.cardData}
           isPublished={props.isPublished}
           locationName={props.locationName}
           locationSlug={props.locationSlug}
@@ -144,7 +145,7 @@ export const getStaticProps = async (context) => {
     };
   }*/
   const DATA = await getLocationsContactPageData(context.params.locationSlug);
-  //console.log(DATA);
+  //console.log(JSON.stringify(DATA.cardData));
 
   return {
     props: {
@@ -160,6 +161,7 @@ export const getStaticProps = async (context) => {
       locationInfo: DATA.locationInfo,
       pageMeta: DATA.pageMeta,
       pageData: DATA.pageData,
+      cardData: DATA.cardData,
       allBooking: DATA.allBooking,
       eventBooking: DATA.eventBooking,
       giftBooking: DATA.giftBooking,

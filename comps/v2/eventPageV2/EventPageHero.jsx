@@ -26,19 +26,18 @@ export default function EventPageHero({
       </div>
       {pageHeroData.partyRiboon && (
         <>
-          <div className="birthday party-decoration absolute top-0 left-0 w-full h-[32px] rm:h-[38px] zm:h-[45px] md:h-[54px] xl:h-[60px] 3xl:h-[70px] max-w-full z-30 overflow-hidden">
-            <div className="w-full h-full bg-[url('/assets/event-page-v2/birthday-party-decoration.svg')] bg-[101%_auto] sm:bg-[50%_auto] md:bg-[44%_auto] lg:bg-[33.33%_auto] bg-top sm:bg-repeat-round"></div>
+          <div className="birthday party-decoration absolute top-0 left-0 w-full h-[32px] rm:h-[38px] zm:h-[45px] md:h-[54px] xl:h-[60px] 3xl:h-[70px] 4xl:h-[84px] 5xl:h-[100px] 6xl:h-[100px] max-w-full z-30 overflow-hidden">
+            <div className="w-full h-full bg-[url('/assets/event-page-v2/birthday-party-decoration.svg')] bg-[101%_auto] sm:bg-[50%_auto] md:bg-[44%_auto] lg:bg-[33.33%_auto] 4xl:bg-[30%_auto] 5xl:bg-[28%_auto] 6xl:bg-[22%_auto]  bg-top sm:bg-repeat-round"></div>
           </div>
         </>
       )}
 
       <div className="section-wrapper relative bg-[#370202]/80 z-20">
         {pageHeroData.partyRiboon && (
-        <>
-          
-          <div className="rb-space w-full h-[14px] rm:h-[16px] zm:h-[18px] md:h-[22px] xl:h-[26px] 3xl:h-[30px] max-w-full"></div>
-        </>
-      )}
+          <>
+            <div className="rb-space w-full h-[14px] rm:h-[16px] zm:h-[18px] md:h-[22px] xl:h-[26px] 3xl:h-[30px] 4xl:h-[36px] 5xl:h-[40px] max-w-full"></div>
+          </>
+        )}
         <div className="section-container md:max-w-[860px] lg:max-w-[1040px] xl:max-w-[1236px] 2xl:max-w-7xl mx-auto pb-16 pt-12 md:py-20 lg:py-[9rem] xl:py-32 2xl:py-[10rem] px-2.5 rm:px-3 zm:px-5 md:px-10 lg:px-8 xl:px-4">
           <div className="section-row flex flex-col lg:flex-row lg:space-x-5 lg:justify-between  items-center">
             {/**==================================================================================================================video col*/}
@@ -47,7 +46,6 @@ export default function EventPageHero({
                 {/**==================================================================================================================video box*/}
                 <div className="video-place w-full aspect-[756/516]  relative">
                   <div className="w-full h-full overflow-hidden relative z-10 border border-t-[1px] border-r-[1px]  border-b-[3px] border-l-[3px] sm:border-t-[3px] sm:border-r-[3px]  sm:border-b-[6px] sm:border-l-[6px] lg:border-t-[2px] lg:border-r-[2px]  lg:border-b-[4px] lg:border-l-[4px] border-[#E0BF62] rounded-[24px] md:rounded-[28px] bg-[#E0BF62]">
-                    
                     <EventHeroVideo
                       videoData={
                         pageHeroData && pageHeroData.videoData
