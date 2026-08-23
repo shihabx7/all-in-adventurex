@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { locationBookingInfo } from "../../../lib/v2/data/locationBookingInfo";
 import { FaArrowDown } from "react-icons/fa6";
 import { FaMapMarkerAlt } from "react-icons/fa";
@@ -18,6 +19,12 @@ export default function EventPageHero({
       fullItems: "no",
       flow: bookingData.partyPackageFlow,
     });
+  };
+  const cleanShorts = (subTxt, replaceWith) => {
+    let str=subTxt.toString()
+    let reTxt = str.replaceAll("[LOC]", replaceWith);
+
+    return reTxt;
   };
   return (
     <div className="event-page-hero-section relative">
@@ -89,9 +96,9 @@ export default function EventPageHero({
                     : "All in adventure escape room event"}
                 </h2>
                 <p className="text-[#CACACA] md:text-lg lg:text-base xl:text-[1.05rem] 2xl:text-[1.2rem] md:mt-4 lg:mt-0">
-                  {pageHeroData && pageHeroData.description
-                    ? pageHeroData.description
-                    : "Skip the party packages and book 60 minutes of pure escape room fun — no party room, no catering, just the game. Perfect for small groups, last-minute plans, or anyone looking to celebrate with nonstop adventure."}
+                  {locationName
+                    ? cleanShorts(pageHeroData.description, "3")
+                    : cleanShorts(pageHeroData.description, "")}
                 </p>
               </div>
               <div className="btn-pair-row mt-6  md:mt-10 xl:mt-12 flex flex-col sm:flex-row justify-center md:justify-start items-center space-y-6 sm:space-y-0 sm:space-x-3 md:spce-x-4 lg:space-x-2 xl:space-x-3">

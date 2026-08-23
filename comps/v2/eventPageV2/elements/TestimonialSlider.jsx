@@ -53,7 +53,7 @@ export default function TestimonialSlider({ testimonialData }) {
         infinite={true}
         // autoPlay={this.props.deviceType !== "mobile" ? true : false}
         autoPlay={false}
-       // autoPlaySpeed={5000}
+        // autoPlaySpeed={5000}
         keyBoardControl={true}
         customTransition="1s ease-in"
         transitionDuration={300}

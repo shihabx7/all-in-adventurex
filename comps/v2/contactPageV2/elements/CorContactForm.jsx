@@ -153,8 +153,8 @@ const CorContactForm = (props) => {
   const checkLocation = (e) => {
     const loc = e.target.value;
     //  console.log(loc);
-     console.log(locationEmailData[loc].attributes);
-    if (loc > "0" || loc == "0") {
+    //console.log(locationEmailData[loc].attributes);
+    if (loc !== "") {
       setErr(false);
       setFormErr({ ...formErr, locationErr: false });
       setFieldValue({
@@ -191,7 +191,7 @@ const CorContactForm = (props) => {
   const checkComSub = (e) => {
     const comSub = e.target.value;
 
-    if (comSub != "0") {
+    if (comSub !=="") {
       setErr(false);
       setFormErr({ ...formErr, comErr: false });
       setFieldValue({ ...fieldVlue, comSubject: comSub });
@@ -495,7 +495,7 @@ const CorContactForm = (props) => {
                   onChange={(e) => checkPhone(e)}
                   name="phone"
                   id="phone"
-                  className="w-full h-[46px] md:h-[50px] event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green"
+                  className="w-full h-[46px] md:h-[50px] event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent "
                   placeholder="Your phone number"
                   required
                 ></input>
@@ -516,7 +516,7 @@ const CorContactForm = (props) => {
                   onChange={(e) => checkLocation(e)}
                   required
                 >
-                  <option value="-1">Select your location</option>
+                  <option value="">Select your location</option>
                   {props.locationList.map((item, index) => {
                     return (
                       <option key={index} value={index}>

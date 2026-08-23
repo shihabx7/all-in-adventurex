@@ -36,7 +36,7 @@ const StoreContactForm = (props) => {
     comSubject: "General enquiry",
     bookingOrder: "",
     imgFile: "",
-    locationName:props.locationName || "",
+    locationName: props.locationName || "",
     toEmail: props.locationInfo.storeEmail.toLowerCase() || "",
     toMgrEmail: props.locationInfo.managerEmail.toLowerCase() || "",
     msg: "",
@@ -187,8 +187,8 @@ const StoreContactForm = (props) => {
   };
   const checkComSub = (e) => {
     const comSub = e.target.value;
-
-    if (comSub != "0") {
+  //  console.log(comSub);
+    if (comSub !== "") {
       setErr(false);
       setFormErr({ ...formErr, comErr: false });
       setFieldValue({ ...fieldVlue, comSubject: comSub });
@@ -323,7 +323,7 @@ const StoreContactForm = (props) => {
     formPayload.append("bookingOrder", fieldVlue.bookingOrder);
     formPayload.append("toEmail", fieldVlue.toEmail);
     formPayload.append("toMgrEmail", fieldVlue.toMgrEmail);
-     formPayload.append("locationName", fieldVlue.locationName);
+    formPayload.append("locationName", fieldVlue.locationName);
     formPayload.append("msg", fieldVlue.msg);
     formPayload.append("botMsg", fieldVlue.botMsg);
     // formPayload.append("captchaToken", reCaptchaToken);
@@ -492,7 +492,7 @@ const StoreContactForm = (props) => {
                   onChange={(e) => checkPhone(e)}
                   name="phone"
                   id="phone"
-                  className="w-full h-[46px] md:h-[50px] event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent focus-green"
+                  className="w-full h-[46px] md:h-[50px] event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                   placeholder="Your phone number"
                   required
                 ></input>
