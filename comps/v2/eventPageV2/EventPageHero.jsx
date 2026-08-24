@@ -21,7 +21,7 @@ export default function EventPageHero({
     });
   };
   const cleanShorts = (subTxt, replaceWith) => {
-    let str=subTxt.toString()
+    let str = subTxt.toString();
     let reTxt = str.replaceAll("[LOC]", replaceWith);
 
     return reTxt;

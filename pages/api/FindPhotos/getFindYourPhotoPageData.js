@@ -51,7 +51,8 @@ export const getFindYourPhotoPageData = async (slug) => {
   const photoRes = await fetch(photoReq, apiSetting);
   const photoObj = await photoRes.json();
   const photoesData = photoObj.data;
-  //console.log(photoesData);
+ // console.log("Photo res Data");
+ // console.log(JSON.stringify(photoesData));
   const photoData = {
     locationSlugList: getLocationSlugList(locationListData),
     escapeGameSlugList: getAllEscapeGameSlugList(actctivityListResData),
