@@ -7,7 +7,7 @@ const GiftHeroBaner = (props) => {
   return (
     <>
       <Script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" />
-      <div className="gift-hero bg-[#FFF9EB] relative overflow-hidden">
+      <div className="gift-hero hero-bnr-v2 bg-[#FFF9EB] relative overflow-hidden">
         {/* =======card border========  */}
         <div className="dec-content absolute p-3 md:p-4 lg:p-5 xl:p-6 3xl:p-8 z-[10] w-full h-full gift-hero-border ">
           <div className="border-2 border-dashed border-[#E2B846] w-full h-full"></div>
@@ -214,7 +214,7 @@ const GiftHeroBaner = (props) => {
               <div className="w-full order-1 lg:order-2 lg:max-w-[48%] xl:max-w-[46%] gift-img">
                 <img
                   alt="A dynamic gift card illustration that embodies adventure, suitable for those seeking unique outdoor experiences."
-                  src="/assets/gift-images/hero/gift-card-baner-christmas25.jpg"
+                  src="/assets/gift-images/hero/All-In-Adventures-Gift-Card-hero.png"
                 ></img>
               </div>
             </div>
