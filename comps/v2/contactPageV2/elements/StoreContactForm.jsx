@@ -172,7 +172,7 @@ const StoreContactForm = (props) => {
   const checkConMethod = (e) => {
     const conMet = e.target.value;
 
-    if (conMet != "0") {
+    if (conMet !== "") {
       setErr(false);
       setFormErr({ ...formErr, conMethodErr: false });
       setFieldValue({ ...fieldVlue, conMethod: conMet });
@@ -360,8 +360,8 @@ const StoreContactForm = (props) => {
     };
  * 
  */
-    console.log("Sending...");
-    console.log(formPayload);
+  //  console.log("Sending...");
+  //  console.log(formPayload);
 
     try {
       const response = await fetch("/api/Forms/processContactFrom", {
@@ -514,7 +514,7 @@ const StoreContactForm = (props) => {
                   onChange={(e) => checkConMethod(e)}
                   required
                 >
-                  <option value="0">Select your contact method</option>
+                  <option value="">Select your contact method</option>
 
                   <option value="Phone">Phone</option>
                   <option value="Group booking">Email</option>

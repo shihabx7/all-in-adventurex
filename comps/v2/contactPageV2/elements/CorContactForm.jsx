@@ -175,7 +175,7 @@ const CorContactForm = (props) => {
   const checkConMethod = (e) => {
     const conMet = e.target.value;
 
-    if (conMet != "0") {
+    if (conMet !== "") {
       setErr(false);
       setFormErr({ ...formErr, conMethodErr: false });
       setFieldValue({ ...fieldVlue, conMethod: conMet });
@@ -191,7 +191,7 @@ const CorContactForm = (props) => {
   const checkComSub = (e) => {
     const comSub = e.target.value;
 
-    if (comSub !=="") {
+    if (comSub !== "") {
       setErr(false);
       setFormErr({ ...formErr, comErr: false });
       setFieldValue({ ...fieldVlue, comSubject: comSub });
@@ -547,7 +547,7 @@ const CorContactForm = (props) => {
                   onChange={(e) => checkConMethod(e)}
                   required
                 >
-                  <option value="0">Select your contact method</option>
+                  <option value="">Select your contact method</option>
 
                   <option value="Phone">Phone</option>
                   <option value="Group booking">Email</option>
