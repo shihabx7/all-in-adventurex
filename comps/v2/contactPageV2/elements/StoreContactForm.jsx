@@ -490,7 +490,7 @@ const StoreContactForm = (props) => {
                   <option value="">Select your contact method</option>
 
                   <option value="Phone">Phone</option>
-                  <option value="Email"></option>
+                  <option value="Email">Email</option>
                 </select>
                 {formErr.conMethodErr && (
                   <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
