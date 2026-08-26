@@ -8,7 +8,7 @@ import {
   verifyFormData,
 } from "./formProtection/verifyClient";
 import { checkRateLimiter } from "./formProtection/reqRateLimit";
-
+//================================================================== global var and func
 const tokens = new csrf();
 const csrfSecret = process.env.CSRF_SECRET || tokens.secretSync();
 
@@ -19,20 +19,23 @@ const escapeHtml = (htmlStr) => {
     .replace(/>/g, "&gt;")
     .replace(/(?:\r\n|\r|\n)/g, "<br>");
 };
+//===================== config formidable . Turn off body parser to allow stream processing
 export const config = {
   api: {
-    bodyParser: false, // Turn off body parser to allow formidable stream processing
+    bodyParser: false,
   },
 };
+// 1024x1024=2MB file size and allow only jpg/ png/pdf file.
 
-const MAX_SIZE_BYTES = 2 * 1024 * 1024; // 2MB Hard Constraint Limit
+const MAX_SIZE_BYTES = 2 * 1024 * 1024;
 const ALLOWED_TYPES = ["image/jpeg", "image/png", "application/pdf"];
+//================================================================== ============main function
 
-export default async function handleContactFrom(req, res) {
+export default async function processStoreContactForm(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: `Method ${req.method} not allowed` });
   }
-  console.log("Req Received...");
+  //console.log("Req Received...");
   // Define isolated temporary storage paths
   const uploadDir = path.join(process.cwd(), "/tmp-attachments");
   if (!fs.existsSync(uploadDir)) {
@@ -45,7 +48,7 @@ export default async function handleContactFrom(req, res) {
     maxFileSize: MAX_SIZE_BYTES,
   });
 
-  //=================================================================================parse form
+  //==================================================================parse form
   form.parse(req, async (err, fields, files) => {
     if (err) {
       if (err.message && err.message.includes("maxFileSize")) {

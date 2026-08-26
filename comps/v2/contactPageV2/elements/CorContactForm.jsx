@@ -432,7 +432,7 @@ const CorContactForm = (props) => {
             </p>
           )}
           <form onSubmit={(event) => submitForm(event)}>
-            {/*========================  ======================================================================contact form row full name + email=======================*/}
+            {/*========================  ============================================================================= Row- 1- ful name + email ====*/}
             <div className="form-row flex flex-col space-y-3 zm:space-y-3.5 md:space-y-0 md:flex-row justify-between ">
               <div className="relative form-col w-full md:w-[48%]">
                 <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">
@@ -482,8 +482,7 @@ const CorContactForm = (props) => {
                 )}
               </div>
             </div>
-            {/*========================  contact form row first name = last name end========================*/}
-            {/*======================================contact form row phone location====================== */}
+            {/*====================================================================================================== Row---2- phone + location ===== */}
             <div className="form-row flex flex-col space-y-3 zm:space-y-3.5 md:space-y-0 md:flex-row justify-between mt-3 rm:mt-3.5 sm:mt-8 lg:mt-10">
               <div className="relative form-col  w-full md:w-[48%]">
                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
@@ -532,8 +531,7 @@ const CorContactForm = (props) => {
                 )}
               </div>
             </div>
-            {/*======================================contact form row====================== */}
-            {/*======================================Preferred contact method*  Inquiry type* ====================== */}
+            {/*======================================================================================================= Row- 3- P Contact method* + Inquiry type* === */}
             <div className="form-row flex flex-col space-y-3 zm:space-y-3.5 md:space-y-0 md:flex-row justify-between mt-3 rm:mt-3.5 sm:mt-8 lg:mt-10">
               <div className="form-col w-full md:w-[48%]">
                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
@@ -550,7 +548,7 @@ const CorContactForm = (props) => {
                   <option value="">Select your contact method</option>
 
                   <option value="Phone">Phone</option>
-                  <option value="Group booking">Email</option>
+                  <option value="Email">Email</option>
                 </select>
                 {formErr.conMethodErr && (
                   <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
@@ -597,8 +595,7 @@ const CorContactForm = (props) => {
                 )}
               </div>
             </div>
-            {/*======================================contact form Preferred contact method*  Inquiry type====================== */}
-            {/*======================================Booking / order number* ====================== */}
+            {/*======================================================================================================= Row- 4- Booking number + Attachment file === */}
             <div className="form-row flex flex-col space-y-3 zm:space-y-3.5 md:space-y-0 md:flex-row justify-between mt-3 rm:mt-3.5 sm:mt-8 lg:mt-10">
               <div className="relative form-col  w-full md:w-[48%]">
                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
@@ -642,8 +639,7 @@ const CorContactForm = (props) => {
                 )}
               </div>
             </div>
-            {/*======================================contact form Preferred contact method*  Inquiry type====================== */}
-            {/*======================================contact form row message ====================== */}
+            {/*======================================================================================================= Row- 5- issue in detail ==================== */}
             <div className="form-row flex flex-col space-y-3 zm:space-y-3.5 md:space-y-0 md:flex-row justify-between mt-3 rm:mt-3.5 sm:mt-8 lg:mt-10">
               <div className="relative form-col w-full">
                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
@@ -661,15 +657,14 @@ const CorContactForm = (props) => {
                 ></textarea>
               </div>
             </div>
-            {/**================ captcha element */}
+            {/**====================================================================================================== captcha element =================*/}
             <ReCAPTCHA
               ref={recaptchaRef}
               sitekey="6LepEu0qAAAAAFSM_8lLN8LDgmT2qguQGQwV7cPZ" // Replace with your site key
               size="invisible"
               //onChange={setCaptchaToken}
             />
-
-            {/*======================================contact form row message====================== */}
+            {/*======================================================================================================= Row- 5- Submit Button ============= */}
             {!isSend && (
               <div className="form-row flex justify-center mt-5 rm:mt-6 sm:mt-8 md:mt-10  ">
                 <button
@@ -680,18 +675,15 @@ const CorContactForm = (props) => {
                 </button>
               </div>
             )}
-
+            {/*=========================================================================================Sending button====================== */}
             {isSend == true && (
               <div className="w-full zm:w-[400px] md:w-[440px] mx-auto btn-back px-6 py-3 text-lg md:text-xl rounded-full font-medium bg-red-600 hover:bg-red-700  text-white text-center mt-5 rm:mt-6 sm:mt-8 md:mt-10">
                 <div className=" font-medium loader">Sending</div>
               </div>
             )}
-            {/*======================================contact form button====================== */}
           </form>
         </div>
       </div>
-
-      {/*======================== corporate contact form=======================*/}
     </div>
   );
 };

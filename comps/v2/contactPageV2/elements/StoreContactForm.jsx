@@ -187,7 +187,7 @@ const StoreContactForm = (props) => {
   };
   const checkComSub = (e) => {
     const comSub = e.target.value;
-  //  console.log(comSub);
+    //  console.log(comSub);
     if (comSub !== "") {
       setErr(false);
       setFormErr({ ...formErr, comErr: false });
@@ -326,8 +326,8 @@ const StoreContactForm = (props) => {
     formPayload.append("locationName", fieldVlue.locationName);
     formPayload.append("msg", fieldVlue.msg);
     formPayload.append("botMsg", fieldVlue.botMsg);
-    // formPayload.append("captchaToken", reCaptchaToken);
     formPayload.append("csrfToken", csrfToken);
+    // formPayload.append("captchaToken", reCaptchaToken);
 
     const grcToken = await recaptchaRef.current.executeAsync();
     //  console.log("captcha token ..." + grcToken);
@@ -342,36 +342,13 @@ const StoreContactForm = (props) => {
       formPayload.append("file", fieldVlue.imgFile);
     }
 
-    /**
- * const formData = {
-      fName: fieldVlue.fName,
-      email: fieldVlue.email,
-      phone: fieldVlue.phone,
-      toEmail: fieldVlue.toEmail,
-      toMgrEmail: fieldVlue.toMgrEmail,
-      conMethod: fieldVlue.conMethod,
-      comSubject: fieldVlue.comSubject,
-      bookingOrder: fieldVlue.bookingOrder,
-      imgFile: fieldVlue.imgFile,
-      msg: fieldVlue.msg,
-      botMsg: fieldVlue.botMsg,
-      captchaToken: grcToken,
-      csrfToken: csrfToken,
-    };
- * 
- */
-  //  console.log("Sending...");
-  //  console.log(formPayload);
-
+    //  console.log("Sending...");
+    //  console.log(formPayload);
+    //"/api/Forms/processStoreContact"
     try {
       const response = await fetch("/api/Forms/processContactFrom", {
         method: "POST",
         body: formPayload,
-        //  headers: {
-        //   Accept: "application/json,text/plain,*/*",
-        //   "Content-Type": "application/json",
-        //  },
-        //body: JSON.stringify(formData),
       });
       const result = await response.json();
       setIsSend(false);
@@ -402,17 +379,13 @@ const StoreContactForm = (props) => {
       setIsSend(false);
       alert("Network Error: Please try again later.");
     }
-
     //console.log(result);
-    // console.log(response.status);
-    //console.log(result.success)
   };
   return (
     <div className="c-contact corporate-contact w-full">
-      {/*======================== corporate contact form=======================*/}
-
       <div className="c-form-form py-5 md:py-7 xl:py-6 3xl:py-8 px-0 zm:px-4 lg:p-8 rounded-lg drop-shadow  w-full">
         <div className="bg-[#F4E6C3] py-6 sm:py-7 md:py-8 px-4 lg:p-8 rounded-lg drop-shadow">
+          {/*================================================== Form Title=======================*/}
           <div className="mb-3.5 md:mb-5 text-center">
             <h2 className="dark-gold md:py-2 text-[1.85rem] zm:text-[2rem] sm:text-[2.25rem] 2xl:text-[2.5rem] leading-[1.2] font-os font-bold uppercase ">
               ADDITIONAL HELP
@@ -428,8 +401,9 @@ const StoreContactForm = (props) => {
               {successMsg}
             </p>
           )}
+          {/*======================== =================================Store  contact form=======================*/}
           <form onSubmit={(event) => submitForm(event)}>
-            {/*========================  ======================================================================contact form row full name + email=======================*/}
+            {/*===================================================================================== Row-1----> full name + email=======================*/}
             <div className="form-row flex flex-col space-y-3 zm:space-y-3.5 md:space-y-0 md:flex-row justify-between ">
               <div className="form-col w-full md:w-[48%] relative">
                 <p className="mb-1 lg:text-lg evevt-input-label text-[#313030]">
@@ -479,8 +453,7 @@ const StoreContactForm = (props) => {
                 )}
               </div>
             </div>
-            {/*========================  contact form row first name = last name end========================*/}
-            {/*======================================contact form row phone contact method====================== */}
+            {/*==================================================================================== Row-2----> phone + Preferred contact method=========*/}
             <div className="form-row flex flex-col space-y-3 zm:space-y-3.5 md:space-y-0 md:flex-row justify-between mt-3 rm:mt-3.5 sm:mt-8 lg:mt-10">
               <div className="relative form-col  w-full md:w-[48%]">
                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
@@ -517,7 +490,7 @@ const StoreContactForm = (props) => {
                   <option value="">Select your contact method</option>
 
                   <option value="Phone">Phone</option>
-                  <option value="Group booking">Email</option>
+                  <option value="Email"></option>
                 </select>
                 {formErr.conMethodErr && (
                   <p className="cor-form-err md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
@@ -526,8 +499,7 @@ const StoreContactForm = (props) => {
                 )}
               </div>
             </div>
-            {/*======================================contact form row====================== */}
-            {/*======================================Preferred contact method*  Inquiry type* ====================== */}
+            {/*==================================================================================== Row-3----> Inquiry type + Attachment a file=========*/}
             <div className="form-row flex flex-col space-y-3 zm:space-y-3.5 md:space-y-0 md:flex-row justify-between mt-3 rm:mt-3.5 sm:mt-8 lg:mt-10">
               <div className="relative form-col w-full md:w-[48%]">
                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
@@ -588,14 +560,12 @@ const StoreContactForm = (props) => {
                 )}
               </div>
             </div>
-            {/*======================================contact form Preferred contact method*  Inquiry type====================== */}
-            {/*======================================Booking / order number* ====================== */}
+            {/*==================================================================================== Row-4----> Booking / order number--(optional)=======*/}
             <div className="form-row flex flex-colspace-y-3 zm:space-y-3.5 md:space-y-0 md:flex-row justify-between mt-3 rm:mt-3.5 sm:mt-8 lg:mt-10">
               <div className="form-col w-full relative ">
                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
                   Booking / order number
                 </p>
-
                 <input
                   onChange={(e) => checkBookingOrder(e)}
                   type="text"
@@ -604,7 +574,7 @@ const StoreContactForm = (props) => {
                   className="w-full h-[46px] md:h-[50px] event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                   placeholder="Your booking / order number"
                   // pattern="[a-zA-z ]{3,20}"
-                  title="Bookink should be numbers (0 to 9) and minimum 5 charectar."
+                  title="Booking No/Id should be numbers (0 to 9) and minimum 5 charectar."
                 ></input>
                 {formErr.bookingOrderErr && (
                   <p className="text-[.85rem] leading-[1.25] md:absolute md:left-0 md:top-[100%] mt-1 evevt-input-label text-[#E1001A] fErr ">
@@ -613,14 +583,12 @@ const StoreContactForm = (props) => {
                 )}
               </div>
             </div>
-            {/*======================================contact form Preferred contact method*  Inquiry type====================== */}
-            {/*======================================contact form row message ====================== */}
+            {/*==================================================================================== Row-5----> describe  issue in detail--(optional)====*/}
             <div className="form-row flex flex-col space-y-3 zm:space-y-3.5 md:space-y-0 md:flex-row justify-between mt-3 rm:mt-3.5 sm:mt-8 lg:mt-10">
               <div className="form-col w-full">
                 <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
                   Please describe your issue in detail
                 </p>
-
                 <textarea
                   name="msg"
                   onChange={(e) => {
@@ -632,15 +600,14 @@ const StoreContactForm = (props) => {
                 ></textarea>
               </div>
             </div>
-            {/**================ captcha element */}
+            {/**================ =================================================================================================captcha element====== */}
             <ReCAPTCHA
               ref={recaptchaRef}
-              sitekey="6LepEu0qAAAAAFSM_8lLN8LDgmT2qguQGQwV7cPZ" // Replace with your site key
+              sitekey="6LepEu0qAAAAAFSM_8lLN8LDgmT2qguQGQwV7cPZ"
               size="invisible"
               //onChange={setCaptchaToken}
             />
-
-            {/*======================================contact form row message====================== */}
+            {/*========================================================================================Button Row contact form row message ============ */}
             {!isSend && (
               <div className="form-row flex justify-center mt-5 rm:mt-6 sm:mt-8 md:mt-10">
                 <button
@@ -651,18 +618,15 @@ const StoreContactForm = (props) => {
                 </button>
               </div>
             )}
-
+            {/*===================================================================================================Sending Button ====================== */}
             {isSend == true && (
               <div className="w-full zm:w-[400px] md:w-[440px] mx-auto btn-back px-6 py-3 text-lg md:text-xl rounded-full font-medium bg-red-600 hover:bg-red-700  text-white text-center mt-5 rm:mt-6 sm:mt-8 md:mt-10">
                 <div className=" font-medium loader">Sending</div>
               </div>
             )}
-            {/*======================================contact form button====================== */}
           </form>
         </div>
       </div>
-
-      {/*======================== corporate contact form=======================*/}
     </div>
   );
 };
