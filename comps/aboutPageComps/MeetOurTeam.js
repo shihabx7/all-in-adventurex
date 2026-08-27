@@ -28,10 +28,14 @@ const MeetOurTeam = (props) => {
             farther as a team than we would as individuals.
           </p>
         </div>
-        <div className="team-box grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        {/*===================================================================team member grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 */}
+        <div className="team-box flex  justify-between zm:justify-evenly md:justify-center flex-wrap zm:space-x-3 md:space-x-5 lg:space-x-6 xl:space-x-8">
           {props.teamMembersList.map((member, index) => {
             return (
-              <div key={index + 1} className="team-list">
+              <div
+                key={index + 1}
+                className="team-list my-4 md:my-5 lg:my-6 xl:my-6"
+              >
                 <div className="member-img">
                   <img
                     className="rounded-full max-w-[140px] md:max-w-[160px] lg:max-w-[190px] mx-auto drop-shadow-lg"
@@ -58,7 +62,7 @@ const MeetOurTeam = (props) => {
 
           <a
             href="/careers"
-            className="inline-block bg-red-600 hover:bg-red-700 text-white md:text-lg py-3 px-8 rounded-full"
+            className="inline-block bg-red-600 hover:bg-red-700 text-white md:text-lg py-3 px-16 rounded-full"
           >
             VIEW JOB OPENINGS
           </a>

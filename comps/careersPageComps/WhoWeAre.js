@@ -12,27 +12,31 @@ const WhoWeAre = () => {
           src="/assets/svg/pattern/light-brown-color-bg-mobile.svg"
         ></img>
       </div>
-
       {/*======================= boder img end============== */}
+
       <div className="section-container max-w-7xl mx-auto px-4 relative z-30 py-16 md:py-20 lg:py-28">
         {/**=====================row-1-============ */}
         <div className="abt-row flex flex-col md:flex-row justify-between ">
           <div className="abt-col md:w-[58%] lg:w-[48%] order-2 md:order-1">
-            <h2 className="dark-gold text-2xl md:text-3xl lg:text-4xl font-os font-bold mt-4 md:mt-0">
-              JOIN OUR AMAZING COMPANY
+            <h2 className="dark-gold text-2xl md:text-3xl lg:text-4xl font-os font-bold mt-4 md:mt-0 uppercase">
+              Join the All In Adventures Team - Your Future Starts Here!
             </h2>
             <p className="text-gray-700 lg:text-[20px] mt-4  lg:mt-8">
-              Are you looking for a company to grow with? Do you prefer to work
-              in a fun, interesting work environment? Are you passionate about
-              engaging with customers and ensuring an outstanding guest
-              experience?
+              Ready to move beyond the ordinary and start a truly rewarding
+              career? Do you live to connect with people, turning every
+              interaction into a meaningful experience? If you are looking for a
+              company where "grow with us" means actively developing your
+              professional skills and finding daily satisfaction in your work
+              environment, then we invite you to explore our opportunities.
             </p>
             <p className="text-gray-700 lg:text-[20px] mt-4">
-              If you answered, “yes” to these questions, then working at All In
-              Adventures could be the perfect fit for you. With so many choices
-              on where to work these days, why not commit your time to a company
-              striving to deliver top notch guest- oriented, interactive fun in
-              an immersive experience?
+              If you are motivated by professional excellence and team
+              collaboration, then All In Adventures is the place for you. Why
+              settle for a routine job when you can take a key role in a
+              guest-obsessed, hospitality-driven environment? Join a team that
+              is not just delivering top-notch, interactive fun - we are
+              crafting memorable guest experiences through multiple, unique live
+              games, one exciting moment at a time!
             </p>
           </div>
           <div className="abt-col md:w-[40%] lg:w-[48%] order-1 md:order-2">
@@ -47,14 +51,10 @@ const WhoWeAre = () => {
               WHO WE ARE
             </h2>
             <p className="text-gray-700 lg:text-[20px] mt-4  lg:mt-8">
-              We are a leader in providing an interactive engaging escape room
-              experience that allows our guests a chance to become real-life
-              detectives{" "}
-            </p>
-            <p className="text-gray-700 lg:text-[20px] mt-4">
-              With 50 minutes on the clock, guest and their team must find
-              clues, solve puzzles, and decipher codes to escape the room of
-              their choice..
+              <strong>Our mission:</strong> To inspire genuine connection through
+              unforgettable and varied entertainment experiences for everyone,
+              powered by welcoming facilities, a passionate team, and a dynamic
+              culture of growth that people are eager to join and engage wit
             </p>
           </div>
           <div className="abt-col md:w-[48%]">
@@ -62,14 +62,12 @@ const WhoWeAre = () => {
               WHO SHOULD APPLY
             </h2>
             <p className="text-gray-700 lg:text-[20px] mt-4  lg:mt-8">
-              We are currently hiring sharp, enthusiastic PT associates and FT
-              manager to join our super engaged, guest-centric team of
-              employees.
-            </p>
-            <p className="text-gray-700 lg:text-[20px] mt-4">
-              If you have experience in retail sales, hospitality, event
-              management, restaurant and customer service, then we encourage you
-              to submit an application.
+              Are you sharp, enthusiastic, and ready to deliver 5-star service
+              every time guests arrive? We are looking for highly engaged,
+              guest-focused team members who excel at providing exceptional
+              hospitality. If you have experience in retail, hospitality,
+              events, or restaurant service and enjoy working with people, we
+              encourage you to apply.
             </p>
           </div>
         </div>
@@ -126,9 +124,13 @@ const WhoWeAre = () => {
               DESIRED TRAITS
             </h2>
             <p className="text-gray-700 lg:text-[20px] mt-4  lg:mt-8">
-              We're eager to talk to you if you possess a positive attitude, the
-              enthusiasm and energy to support all of our guest's needs, and a
-              desire to grow and succeed with an exciting new company.
+              We are eager to connect with proactive individuals who are
+              dedicated to providing high-quality service. If you bring a
+              positive attitude, adaptability, and the vibrant energy necessary
+              to expertly support our guests' needs, we want you on our team. If
+              you are also motivated to learn and appreciate a company that
+              encourages professional growth, we welcome you to join us and
+              advance your career here.
             </p>
           </div>
         </div>
