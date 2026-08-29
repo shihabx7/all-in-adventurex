@@ -5,25 +5,25 @@ export default function GalleryCarouselView({ imageList }) {
   const responsive = {
     desktop: {
       breakpoint: { max: 4300, min: 1181 },
-      items: 3,
+      items: 1,
       slidesToSlide: 1,
       partialVisibilityGutter: 0,
     },
     tabletLg: {
       breakpoint: { max: 1180, min: 931 },
-      items: 3,
+      items: 1,
       slidesToSlide: 1,
       partialVisibilityGutter: 0,
     },
     tablet: {
       breakpoint: { max: 930, min: 641 },
-      items: 3,
+      items: 1,
       slidesToSlide: 1,
       partialVisibilityGutter: 0,
     },
     mobileLg: {
       breakpoint: { max: 640, min: 481 },
-      items: 2,
+      items: 1,
       slidesToSlide: 1,
       partialVisibilityGutter: 0,
     },
@@ -68,9 +68,9 @@ export default function GalleryCarouselView({ imageList }) {
       >
         {imageList.map((item, index) => {
           return (
-            <div key={index} className="gallery-img-item relative h-full">
+            <div key={index} className="event-gallery-carousel-v2 gallery-img-item relative h-full">
               <img
-                className="max-w-full h-full object-cover"
+                className="max-w-full inline-block"
                 src={
                   item.url
                     ? item.url
