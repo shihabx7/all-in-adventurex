@@ -55,17 +55,7 @@ const JobDisclaimer=()=>{
                                             as well as state and federal laws recognizes the individual's right to privacy and prohibits
                                             All in Adventures employees from unauthorized use or disclosure of personal information.
                                      </p>
-                                     <p className="lg:text-lg text-gray-800 mt-2 md:mt-3 lg:mt-4">
-                                            <span className="font-medium text-sm md:text-base">BACKGROUND CHECKS: </span>
-                                            Employment at All in Adventures is contingent upon a background check,
-                                            which is required for all staff members. If the background check reveals
-                                            a conviction or misconduct relevant to the position, or if an individual
-                                            refuses to give consent for a background check, the individual may be disqualified
-                                            from holding the position. All in Adventures recognizes the need to conduct background
-                                            checks on employees/candidates while protecting their privacy. All in Adventure's policy
-                                            as well as state and federal laws recognizes the individual's right to privacy and prohibits
-                                            All in Adventures employees from unauthorized use or disclosure of personal information.
-                                     </p>
+                                 
                                  </div>
                                  <div className="flex flex-col md:flex-row justify-center md:space-x-4 mt-8 md:mt-12 lg:mt-16 "> 
                                 

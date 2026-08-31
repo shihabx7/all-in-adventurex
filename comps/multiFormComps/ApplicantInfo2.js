@@ -206,7 +206,7 @@ const ApplicantInfo2 = ({
               {locationlist.map((item, index) => {
                 return item.locations.map((item) => {
                   return (
-                    <option key={index + item.id} value={item.locationSlug}>
+                    <option key={index + item.id} value={item.locationName}>
                       {item.locationName}
                     </option>
                   );
