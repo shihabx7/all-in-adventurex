@@ -35,8 +35,7 @@ export default function HowRewardWorks(props) {
                   SIGN UP FOR FREE
                 </h3>
                 <p className="md:text-lg lg:text-xl text-[#ADADAD] mt-4">
-                  Earn punches on every visit plus enjoy 10% off and 1 free
-                  punch during your very first visit!
+                  Save 10% and begin earning punches on your first booking!
                 </p>
               </div>
             </div>

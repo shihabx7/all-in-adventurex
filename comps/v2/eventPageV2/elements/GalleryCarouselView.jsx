@@ -68,7 +68,10 @@ export default function GalleryCarouselView({ imageList }) {
       >
         {imageList.map((item, index) => {
           return (
-            <div key={index} className="event-gallery-carousel-v2 gallery-img-item relative h-full">
+            <div
+              key={index}
+              className="event-gallery-carousel-v2 gallery-img-item relative h-full"
+            >
               <img
                 className="max-w-full inline-block"
                 src={
