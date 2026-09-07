@@ -10,6 +10,7 @@ import PageBread from "../../comps/util/PageBread";
 import SinglePageSeo from "../../comps/util/SinglePageSeo";
 import FhBookingGridFlow from "../../comps/v2/devTest/FhBookingGridFlow";
 import FhBookingCalender from "../../comps/v2/devTest/FhBookingCalender";
+import FhSingleItem from "../../comps/v2/devTest/FhSingelItem";
 
 //const FhBookingGridFlow = dynamic(() => import('../../comps/v2/devTest/FhBookingGridFlow'), { ssr: false });
 //const FhBookingCalender = dynamic(() => import('../../comps/v2/devTest/FhBookingCalender'), { ssr: false });
@@ -38,6 +39,7 @@ const TestPage = (props) => {
         {/* =======breadcum content and breadcum root page template======== end */}
         <FhBookingGridFlow />
         <FhBookingCalender />
+        <FhSingleItem />
         {/* =========================================================================================main content ======== end */}
       </div>
 
