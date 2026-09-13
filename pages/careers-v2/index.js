@@ -1,28 +1,23 @@
-import { getCareerHomePageData } from "../api/getCareerHomePageData";
-import dynamic from "next/dynamic";
 import RootNav from "../../comps/RootNav";
 import RootFooter from "../../comps/RootFooter";
 
-//import FhBookingGridFlow from "../../comps/v2/devTest/FhBookingGridFlow";
-//import FhBookingCalender from "../../comps/v2/devTest/FhBookingCalender";
-
+import CareersHero from "../../comps/careersPageComps/CareersHero";
+import WhoWeAre from "../../comps/careersPageComps/WhoWeAre";
+import OpenPosition from "../../comps/careersPageComps/OpenPosition";
+import { getCareerHomePageData } from "../api/getCareerHomePageData";
+import { getCareerHomePageDataV2 } from "../api/getCareerHomePageDataV2";
 import PageBread from "../../comps/util/PageBread";
 import SinglePageSeo from "../../comps/util/SinglePageSeo";
-import FhBookingGridFlow from "../../comps/v2/devTest/FhBookingGridFlow";
-import FhBookingCalender from "../../comps/v2/devTest/FhBookingCalender";
-import FhSingleItem from "../../comps/v2/devTest/FhSingelItem";
-import FhEventForm from "../../comps/v2/devTest/FhEventForm";
-import FhPartyPackGrid from "../../comps/v2/devTest/FhPartyPackGrid";
+//===============================v2=========================
+import CareerPageHeroV2 from "../../comps/v2/careerPageV2/CareerPageHeroV2";
+import BrowsePositionSection from "../../comps/v2/careerPageV2/BrowsePositionSection";
+import CareerAboutSection from "../../comps/v2/careerPageV2/CareerAboutSection";
 
-//const FhBookingGridFlow = dynamic(() => import('../../comps/v2/devTest/FhBookingGridFlow'), { ssr: false });
-//const FhBookingCalender = dynamic(() => import('../../comps/v2/devTest/FhBookingCalender'), { ssr: false });
-
-const TestPage = (props) => {
+const Careers = (props) => {
   return (
     <>
-      {/* =======header content========
+      {/* =======header content======== */}
       <SinglePageSeo meta={props.pageMeta} />
-       */}
       <RootNav
         locationSlugList={props.locationSlugList}
         escapeGameSlugList={props.escapeGameSlugList}
@@ -39,12 +34,15 @@ const TestPage = (props) => {
         {/* =======breadcum content and breadcum========  */}
         <PageBread />
         {/* =======breadcum content and breadcum root page template======== end */}
-        <FhBookingGridFlow />
-        <FhBookingCalender />
-        <FhPartyPackGrid/>
-        <FhSingleItem />
-        <FhEventForm />
-        {/* =========================================================================================main content ======== end */}
+        <CareerPageHeroV2
+          pageHeroData={props.pageHeroData}
+          btnId={"alljobs"}
+          btnLabel={"VIEW ALL JOB POSITIONS"}
+        />
+        <BrowsePositionSection />
+        <CareerAboutSection />
+
+        {/* =========================================================================================<OpenPosition jobCardList={props.jobCardList} />======== end */}
       </div>
 
       <RootFooter
@@ -55,10 +53,10 @@ const TestPage = (props) => {
   );
 };
 
-export default TestPage;
+export default Careers;
 
 export const getStaticProps = async () => {
-  const DATA = await getCareerHomePageData();
+  const DATA = await getCareerHomePageDataV2();
 
   return {
     props: {
@@ -67,9 +65,10 @@ export const getStaticProps = async () => {
       otherGameSlugList: DATA.otherGameSlugList,
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
-      pageData: DATA.pageData,
+      pageHeroData: DATA.pageData,
       pageMeta: DATA.pageMeta,
       jobCardList: DATA.jobCardList,
+      jobOpeningsResData: DATA.jobOpeningsList,
     },
     revalidate: 60,
   };

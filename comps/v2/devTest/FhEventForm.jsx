@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import Script from "next/script";
-export default function FhBookingCalender() {
-  const embedCode = `<script src="https://fareharbor.com/embeds/script/calendar/mysteryroom-westnyack/items/44539/?full-items=yes&flow=17849&fallback=simple"></script>
-  `;
+export default function FhEventForm() {
+    //<script src="https://fareharbor.com/embeds/script/calendar/mysteryroom-westnyack/items/360213/?full-items=yes&flow=17849&fallback=simple"></script>
+    //https://fareharbor.com/embeds/script/calendar/mysteryroom-westnyack/items/625155/?full-items=yes&flow=no&fallback=simple
+  const embedCode = `<script src="https://fareharbor.com/embeds/script/calendar/mysteryroom-westnyack/items/625155/?flow=no"></script> `;
 
   return (
     <div className="test-section-container bg-[#EBDCB5]">
       <div className="section-container py-16 rm:py-20 md:py-20 lg:py-28 2xl:py-32 mx-auto max-w-7xl px-3 rm:px-4 md:px-8 xl:px-0">
         <div className="fareharbor-grid-header text-center mb-10">
           <h2 className="text-[#CA9342] uppercase font-bold text-center text-[28px] rm:text-[30px] zm:text-[33px] leading-[1.2] sm:text-4xl lg:text-5xl font-os outline-tile">
-            Fareharbor Booking Calender
+            Fareharbor Event Form
           </h2>
           <p className="text-gray-800 text-xl font-medium mt-4">
-            Embed Calendar for Escape From Alcatraz (westnyack, NY) 
+            Embed Form (Westnyack, NY)
           </p>
         </div>
         <div className="fareharbor-calendar-wrapper w-full min-h-[600px]">
