@@ -12,7 +12,7 @@ export default function FhBookingCalender() {
             Fareharbor Booking Calender
           </h2>
           <p className="text-gray-800 text-xl font-medium mt-4">
-            Embed Calendar for Escape From Alcatraz (westnyack, NY) 
+            Embed Calendar for Escape From Alcatraz (westnyack, NY)
           </p>
         </div>
         <div className="fareharbor-calendar-wrapper w-full min-h-[600px]">

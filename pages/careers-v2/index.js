@@ -29,7 +29,7 @@ const Careers = (props) => {
       {/* =========================================================================================main content ======== end */}
       <div
         id="mainContent"
-        className="main-content nobtn-main-content bg-center"
+        className="main-content nobtn-main-content bg-center relative"
       >
         {/* =======breadcum content and breadcum========  */}
         <PageBread />

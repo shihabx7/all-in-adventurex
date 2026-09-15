@@ -2,7 +2,13 @@ import { FiMapPin, FiMonitor } from "react-icons/fi";
 import { PiBriefcaseLight } from "react-icons/pi";
 import { GoPerson } from "react-icons/go";
 
-export default function JobPostCard({ job }) {
+export default function JobPostCard({ setShowJobModal}) {
+
+  const showJobDetails=()=>{
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.add("overflow-hidden");
+    setShowJobModal(true)
+  }
   return (
     <div className="job-card border border-[#E9DFCF]  rounded-[10px] bg-white/70 px-4 py-5 sm:p-6  md:p-5 lg:p-6  xl:p-8">
       <div className="job-card-head">
@@ -32,7 +38,7 @@ export default function JobPostCard({ job }) {
         </div>
       </div>
       <div className="card-btn flex items-center space-x-3 md:space-x-4">
-        <button className="inline-block border border-[#DFD7CB] rounded-full bg-transparent px-6 py-2 lg:py-2.5  xl:px-7  text-base md:text-[1.1rem] text-[#1D2321] font-medium hover:text-white hover:bg-red-700 hover:border-red-700 transition-all duration-300">
+        <button onClick={showJobDetails} className="inline-block border border-[#DFD7CB] rounded-full bg-transparent px-6 py-2 lg:py-2.5  xl:px-7  text-base md:text-[1.1rem] text-[#1D2321] font-medium hover:text-white hover:bg-red-700 hover:border-red-700 transition-all duration-300">
           Learn More
         </button>
         <a href="/careers/apply#job-application" className="inline-block border border-red-600 rounded-full bg-red-600 px-6 py-2 lg:py-2.5  xl:px-7  text-base md:text-[1.1rem] text-white font-medium hover:bg-red-700 hover:border-red-700 transition-all duration-300">
