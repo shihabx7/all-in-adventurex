@@ -1,4 +1,10 @@
-export default function PartyPackageListBox({ boxItem }) {
+export default function PartyPackageListBox({ boxItem, teamSize }) {
+  const setTeamSize = (listItem) => {
+    let str = listItem.toString();
+   // let sz = tsize.toString();
+    let reTxt = str.replaceAll("[TEAMSIZE]", teamSize);
+    return reTxt;
+  };
   return (
     <div className="package-item-box">
       <div className="package-title">
@@ -12,7 +18,7 @@ export default function PartyPackageListBox({ boxItem }) {
             {boxItem.infoList.map((item, index) => {
               return (
                 <li key={index} className="my-3">
-                  {item}
+                  {setTeamSize(item)}
                 </li>
               );
             })}
