@@ -156,8 +156,8 @@ export default async function jobApplicationHandler(req, res) {
     from: `"AIA Job Application"<${mailUser}>"`,
     // to: "shihab.dgency@gmail.com",
     to: `${mailReceiver}`,
-    bcc: "dgency.com@gmail.com,shihab.dgency@gmail.com",
-    //  bcc: `dgency.com@gmail.com`,
+    bcc: "dgency.com@gmail.com",
+    //  bcc: `dgency.com@gmail.com,shihab.dgency@gmail.com`,
     subject: `All In Adventures Job Application - ${fullName}`,
     html: `
               <p style="margin:4px 0px;"><strong>Name: </strong> ${retbody.info1.lName} ${retbody.info1.fName} </p>

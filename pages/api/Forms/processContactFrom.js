@@ -230,7 +230,7 @@ export default async function handleContactFrom(req, res) {
       from: `"AIA ${cityName} - Additional Help" <sender@allinadventures.com>`,
       to: finalRecipient,
       cc: ccRecipient,
-      bcc: "support@allinadventures.com, dgency.com@gmail.com, shihab.dgency@gmail.com",
+      bcc: "support@allinadventures.com, dgency.com@gmail.com",
       replyTo: email,
       subject: `AIA ${cityName} - Additional Help`,
       //  subject: `AIA Contact-${cityName(locationName)} ${comSubject}`,

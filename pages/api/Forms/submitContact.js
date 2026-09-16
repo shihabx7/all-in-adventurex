@@ -128,7 +128,7 @@ export default async function handler(req, res) {
       from: '"AIA Contact" <sender@allinadventures.com>',
       to: finalRecipient,
       cc: ccRecipient,
-      bcc: "support@allinadventures.com, dgency.com@gmail.com, shihab.dgency@gmail.com",
+      bcc: "support@allinadventures.com, dgency.com@gmail.com",
       replyTo: email,
       subject: `Corporate Contact`,
       html: htmlBody,

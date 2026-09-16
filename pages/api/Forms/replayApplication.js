@@ -45,7 +45,7 @@ export default async function replayApplication(req, res) {
       from: `"AIA Career "<${mailUser}>"`,
       //to: "shihab.dgency@gmail.com",
       to: `${recpData.email}`,
-      bcc: "dgency.com@gmail.com",
+   //   bcc: "shihab.dgency@gmail.com",
       subject: `Here's Your Job Application at All In Adventures`,
       html: `
             <p style="margin:4px 0p;x"> Dear ${recpData.name},</p>
