@@ -74,7 +74,7 @@ const LocationEvents = (props) => {
         <CheckOutPartyPackages
           sectionData={props.pageData.CheckOutPartyPackagesData}
           partyPackageList={props.partyPackageList}
-           teamSize={props.locationSlug==='hadley-ma'? "8":"10"}
+          teamSize={props.locationSlug === "hadley-ma" ? "8" : "10"}
           locationSlug={props.locationSlug}
           locationInfo={props.locationInfo}
         />

@@ -24,7 +24,7 @@ export default function PinedJobPostCard({ job }) {
         <button className="inline-block border border-white rounded-full bg-transparent px-7 py-2  md:px-6 md:py-2.5 lg:py-3  xl:px-8  text-base md:text-[1.1rem] text-white font-medium hover:bg-red-700 hover:border-red-700 transition-all duration-300">
           Learn More
         </button>
-        <a href="/careers/apply#job-application"  className="inline-block border border-red-600 rounded-full bg-red-600 px-7 py-2  md:px-6 md:py-2.5 lg:py-3  xl:px-8  text-base md:text-[1.1rem] text-white font-medium hover:bg-red-700 hover:border-red-700 transition-all duration-300">
+        <a href="/careers/apply"  className="inline-block border border-red-600 rounded-full bg-red-600 px-7 py-2  md:px-6 md:py-2.5 lg:py-3  xl:px-8  text-base md:text-[1.1rem] text-white font-medium hover:bg-red-700 hover:border-red-700 transition-all duration-300">
           Apply Now
         </a>
       </div>

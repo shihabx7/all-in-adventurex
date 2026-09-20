@@ -1703,3 +1703,35 @@ a {
     var(--_g) 0 calc(var(--_d) + var(--y));
   mask-repeat: no-repeat;
 }
+
+.job-modal-desc p{
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+.job-modal-desc h2{
+  font-size: 1.7rem;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.job-modal-desc h3{
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.job-modal-desc h4{
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.job-modal-desc ul{
+
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 20px;
+    margin-bottom: 20px;
+}
+.job-modal-desc ul li{
+
+  font-size: 1rem;
+    margin: 12px 0px;
+}

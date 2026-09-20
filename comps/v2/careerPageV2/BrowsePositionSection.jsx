@@ -3,14 +3,29 @@ import JobSearchBar from "./elements/JobSearchBar";
 import PinedJobPostCard from "./elements/PinedJobPostCard";
 import JobPostCard from "./elements/JobPostCard";
 import JobPostModal from "./elements/JobPostModal";
-export default function BrowsePositionSection({ jobCardList }) {
+//jobPositionList={props.jobPositionList} jobPositionCardList={props.jobPositionCardList}
+export default function BrowsePositionSection({
+  jobPositionList,
+  jobPositionCardList,
+}) {
   const [showJobModal, setShowJobModal] = useState(false);
+  const [activeModalItem, setActiveModalItem] = useState(-1);
+  const [jobCardList, setJobCardList] = useState(jobPositionCardList);
   useEffect(() => {
     setShowJobModal(false);
+    setActiveModalItem(-1);
+    setJobCardList(jobPositionCardList);
   }, []);
   return (
     <>
-      {showJobModal && <JobPostModal setShowJobModal={setShowJobModal}/>}
+      {showJobModal && activeModalItem !== -1 && (
+        <JobPostModal
+          setShowJobModal={setShowJobModal}
+          setActiveModalItem={setActiveModalItem}
+          jobData={jobCardList[activeModalItem]}
+
+        />
+      )}
 
       <div className="browse-position-section bg-[#FFF9EB] bg-[url('/assets/mobile-escape-room/brown-paper-bg.jpg')] bg-[240px_240px] md:bg-[300px_300px] lg:bg-[400px_400px] ">
         <div className="max-w-7xl mx-auto py-16 md:py-20 lg:py-24 xl:py-28 3xl:py-32 px-3 lm:px-4 md:px-6 xl:px-4">
@@ -35,14 +50,18 @@ export default function BrowsePositionSection({ jobCardList }) {
           </div>
           {/*=============================latest job post card  ============================== */}
           <div className="latest-job grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4.5 lg:gap-8">
-            <JobPostCard setShowJobModal={setShowJobModal} />
-            <JobPostCard setShowJobModal={setShowJobModal} />
-            <JobPostCard setShowJobModal={setShowJobModal} />
-            <JobPostCard setShowJobModal={setShowJobModal} />
-            <JobPostCard setShowJobModal={setShowJobModal} />
-            <JobPostCard setShowJobModal={setShowJobModal} />
-            <JobPostCard setShowJobModal={setShowJobModal} />
-            <JobPostCard setShowJobModal={setShowJobModal} />
+            {jobPositionCardList.map((item, index) => {
+              return (
+                <div key={index} className="jobcard-item h-full">
+                  <JobPostCard
+                    setShowJobModal={setShowJobModal}
+                    setActiveModalItem={setActiveModalItem}
+                    itemNo={index}
+                    cardData={item}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
         <div className="h-[6.5rem] xm:h-[6rem]  md:h-[6.5rem] lg:h-[6rem] 2xl:h-[7rem]"></div>

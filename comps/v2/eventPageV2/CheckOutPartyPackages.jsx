@@ -138,7 +138,10 @@ export default function CheckOutPartyPackages(props) {
                     (listItem, index) => {
                       return (
                         <div key={index} className="item-col md:max-w-[31%]">
-                          <PartyPackageListBox boxItem={listItem} teamSize={props.teamSize? props.teamSize:"10"}/>
+                          <PartyPackageListBox
+                            boxItem={listItem}
+                            teamSize={props.teamSize ? props.teamSize : "10"}
+                          />
                         </div>
                       );
                     },

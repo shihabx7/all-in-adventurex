@@ -39,7 +39,7 @@ const Careers = (props) => {
           btnId={"alljobs"}
           btnLabel={"VIEW ALL JOB POSITIONS"}
         />
-        <BrowsePositionSection />
+        <BrowsePositionSection jobPositionList={props.jobPositionList} jobPositionCardList={props.jobPositionCardList} />
         <CareerAboutSection />
 
         {/* =========================================================================================<OpenPosition jobCardList={props.jobCardList} />======== end */}
@@ -58,6 +58,8 @@ export default Careers;
 export const getStaticProps = async () => {
   const DATA = await getCareerHomePageDataV2();
 
+
+
   return {
     props: {
       locationSlugList: DATA.locationSlugList,
@@ -69,6 +71,9 @@ export const getStaticProps = async () => {
       pageMeta: DATA.pageMeta,
       jobCardList: DATA.jobCardList,
       jobOpeningsResData: DATA.jobOpeningsList,
+      //================================v2
+          jobPositionList: DATA.jobPositionList,
+          jobPositionCardList: DATA.jobPositionCardList,
     },
     revalidate: 60,
   };
