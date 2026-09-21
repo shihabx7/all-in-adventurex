@@ -187,7 +187,7 @@ export default function JobSearchBar({
               <button
                 disabled={isSearching}
                 type="submit"
-                className="inline-block border border-[#DFD7CB] rounded-[6px] bg-white/90 p-2 md:p-2 xl:p-3 text-lg md:text-2xl"
+                className="inline-block border border-[#DFD7CB] hover:bg-red-700 hover:border-red-700 hover:text-white rounded-[6px] bg-white/90 p-2 md:p-2 xl:p-3 text-lg md:text-2xl"
               >
                 <GoSearch />
               </button>
@@ -195,7 +195,7 @@ export default function JobSearchBar({
                 disabled={isSearching}
                 onClick={resetSearch}
                 type="reset"
-                className="inline-block border border-[#DFD7CB] rounded-[6px] bg-white/60 p-2  md:p-2 xl:p-3 text-lg md:text-2xl"
+                className="inline-block border border-[#DFD7CB] hover:bg-red-700 hover:border-red-700  hover:text-white rounded-[6px] bg-white/60 p-2  md:p-2 xl:p-3 text-lg md:text-2xl"
               >
                 <MdOutlineRefresh />
               </button>
