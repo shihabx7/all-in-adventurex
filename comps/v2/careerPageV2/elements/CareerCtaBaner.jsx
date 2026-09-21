@@ -22,7 +22,7 @@ export default function CareerCtaBaner({ job }) {
             up.
           </p>
           <div className="cta-btn-row flex justify-center items-center mt-6 md:mt-8">
-            <a href="/careers/apply#job-application" className="inline-block border border-red-600 rounded-full bg-red-600 px-10 py-2.5 sm:px-12 md:px-14 md:py-3.5 lg:py-4  xl:px-16  text-base md:text-[1.2rem] xl:text-[1.25rem] text-white font-medium hover:bg-red-700 hover:border-red-700 transition-all duration-300">
+            <a href="/careers/apply" className="inline-block border border-red-600 rounded-full bg-red-600 px-10 py-2.5 sm:px-12 md:px-14 md:py-3.5 lg:py-4  xl:px-16  text-base md:text-[1.2rem] xl:text-[1.25rem] text-white font-medium hover:bg-red-700 hover:border-red-700 transition-all duration-300">
               Apply Now
             </a>
           </div>

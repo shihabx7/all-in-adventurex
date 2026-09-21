@@ -39,7 +39,11 @@ const Careers = (props) => {
           btnId={"alljobs"}
           btnLabel={"VIEW ALL JOB POSITIONS"}
         />
-        <BrowsePositionSection jobPositionList={props.jobPositionList} jobPositionCardList={props.jobPositionCardList} />
+        <BrowsePositionSection
+          jobPositionList={props.jobPositionList}
+          jobPositionCardList={props.jobPositionCardList}
+          jobSearchLocationList={props.jobSearchLocationList}
+        />
         <CareerAboutSection />
 
         {/* =========================================================================================<OpenPosition jobCardList={props.jobCardList} />======== end */}
@@ -58,8 +62,6 @@ export default Careers;
 export const getStaticProps = async () => {
   const DATA = await getCareerHomePageDataV2();
 
-
-
   return {
     props: {
       locationSlugList: DATA.locationSlugList,
@@ -72,8 +74,9 @@ export const getStaticProps = async () => {
       jobCardList: DATA.jobCardList,
       jobOpeningsResData: DATA.jobOpeningsList,
       //================================v2
-          jobPositionList: DATA.jobPositionList,
-          jobPositionCardList: DATA.jobPositionCardList,
+      jobPositionList: DATA.jobPositionList,
+      jobPositionCardList: DATA.jobPositionCardList,
+      jobSearchLocationList: DATA.jobSearchLocationList,
     },
     revalidate: 60,
   };

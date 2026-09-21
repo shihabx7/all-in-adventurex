@@ -7,15 +7,29 @@ import JobPostModal from "./elements/JobPostModal";
 export default function BrowsePositionSection({
   jobPositionList,
   jobPositionCardList,
+  jobSearchLocationList,
 }) {
   const [showJobModal, setShowJobModal] = useState(false);
   const [activeModalItem, setActiveModalItem] = useState(-1);
   const [jobCardList, setJobCardList] = useState(jobPositionCardList);
+
+  const [jobSearchList, setJobSearchList] = useState([]);
+
   useEffect(() => {
     setShowJobModal(false);
     setActiveModalItem(-1);
     setJobCardList(jobPositionCardList);
   }, []);
+
+  useEffect(() => {
+    if (jobSearchList.length > 0) {
+      setJobCardList(jobSearchList);
+    } else {
+      setJobCardList(jobPositionCardList);
+    }
+    setShowJobModal(false);
+    setActiveModalItem(-1);
+  }, [jobSearchList]);
   return (
     <>
       {showJobModal && activeModalItem !== -1 && (
@@ -23,7 +37,6 @@ export default function BrowsePositionSection({
           setShowJobModal={setShowJobModal}
           setActiveModalItem={setActiveModalItem}
           jobData={jobCardList[activeModalItem]}
-
         />
       )}
 
@@ -40,28 +53,34 @@ export default function BrowsePositionSection({
               epic to you? Join us.
             </p>
           </div>
-          {/*=============================search bar============================== */}
+          {/*=============================search bar  setJobCardList={setJobCardList}============================== */}
           <div className="jpb-search-bar">
-            <JobSearchBar />
+            <JobSearchBar
+              jobPositionList={jobPositionList}
+              jobSearchLocationList={jobSearchLocationList}
+              setJobSearchList={setJobSearchList}
+            />
           </div>
           {/*=============================pin job post card ============================== */}
           <div className="pin-job my-8 md:my-12">
             <PinedJobPostCard />
           </div>
           {/*=============================latest job post card  ============================== */}
-          <div className="latest-job grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4.5 lg:gap-8">
-            {jobPositionCardList.map((item, index) => {
-              return (
-                <div key={index} className="jobcard-item h-full">
-                  <JobPostCard
-                    setShowJobModal={setShowJobModal}
-                    setActiveModalItem={setActiveModalItem}
-                    itemNo={index}
-                    cardData={item}
-                  />
-                </div>
-              );
-            })}
+          <div className="job-po-card-box min-h-[500px]">
+            <div className="latest-job  grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4.5 lg:gap-8">
+              {jobCardList.map((item, index) => {
+                return (
+                  <div key={index} className="jobcard-item h-full">
+                    <JobPostCard
+                      setShowJobModal={setShowJobModal}
+                      setActiveModalItem={setActiveModalItem}
+                      itemNo={index}
+                      cardData={item}
+                    />
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
         <div className="h-[6.5rem] xm:h-[6rem]  md:h-[6.5rem] lg:h-[6rem] 2xl:h-[7rem]"></div>

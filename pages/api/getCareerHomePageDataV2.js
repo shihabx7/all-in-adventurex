@@ -29,6 +29,7 @@ import {
 import {
   jobPositionList,
   jobPositionCardList,
+  jobSearchLocationList,
 } from "../../lib/v2/formate/jobPostformater";
 
 export const getCareerHomePageDataV2 = async () => {
@@ -72,17 +73,18 @@ export const getCareerHomePageDataV2 = async () => {
   //console.log("job Openings Data : ", JSON.stringify(jobOpeningsResData));
   const jobCardList = await jobPositionCardList(jobOpeningsResData);
   //.log("||||||");
- // console.log("job Openings Data after format : ", JSON.stringify(jobCardList));
+  // console.log("job Openings Data after format : ", JSON.stringify(jobCardList));
 
   const jobPositionListRes = await fetch(jobPositonListQuery, apiSetting);
   const jobPositionListObj = await jobPositionListRes.json();
   const jobPositionListData = jobPositionListObj.data;
 
-  const jobPosList = await jobPositionList(jobPositionListData);
-
+  const jobPosList =  jobPositionList(jobPositionListData);
+  const jobLocList =  jobSearchLocationList(locationListData);
+  // console.log("locationList : ", JSON.stringify(jobLocList));
   //console.log("job Position List Data : ", JSON.stringify(jobPositionListData));
-  //console.log("||||||");
-  //console.log( "job Position List Data after format : ",JSON.stringify(jobPosList),);
+  // console.log("||||||");
+  //  console.log("job Position List Data after format : ", JSON.stringify(jobPosList), );
   //================================v2 end
 
   const data = {
@@ -98,7 +100,8 @@ export const getCareerHomePageDataV2 = async () => {
     jobOpeningsList: jobOpeningsResData,
     //=================================================v2
     jobPositionList: jobPosList, //jobPositionList(jobPositionListData),
-    jobPositionCardList: jobCardList, //obPositionCardList(jobOpeningsResData),
+    jobPositionCardList: jobCardList,
+    jobSearchLocationList: jobLocList, //obPositionCardList(jobOpeningsResData),
   };
 
   return data;
