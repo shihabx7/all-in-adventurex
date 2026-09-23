@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps, locationListData }) {
     </SiteDataProvider>
   );
 }
-
+const x = 2;
 MyApp.getInitialProps = async (appContext) => {
   try {
     // Fetch location data  to stor in context
