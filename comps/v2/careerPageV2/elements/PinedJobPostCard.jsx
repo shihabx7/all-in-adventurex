@@ -10,11 +10,11 @@ export default function PinedJobPostCard({ job }) {
         <div className="w-1 h-1 bg-[#66706C] rounded-full"></div>
         <p>All Locations</p>
       </div>
-      <div className="job-title my-6 md:my-8  xl:my-10 ">
-        <h3 className="text-[2rem] sm:text-[2.15rem] md:text-[2.5rem] lg:text-[3rem] leading-[1] font-bold text-white">
+      <div className="job-title my-4.5 rm:my-5 xm:my-6 md:my-8  xl:my-10 ">
+        <h3 className="text-[1.65rem] rm:text-[1.75rem] zm:text-[2rem] md:text-[2.5rem] xl:text-[2.75rem] leading-[1] font-bold text-white uppercase">
           Associate
         </h3>
-        <p className="text-base md:text-[1.1rem]  xl:text-[1.15rem] text-[#B2C2C0] mt-3 md:mt-4 lg:mt-5">
+        <p className="text-sm zm:text-base md:text-[1.1rem]  xl:text-[1.15rem] text-[#B2C2C0] mt-3 md:mt-4 lg:mt-5">
           Our part-time Associate role is open at every location, all the time.
           Jump in on the guest floor, run live games, and deliver the
           guest-obsessed experience we're known for.

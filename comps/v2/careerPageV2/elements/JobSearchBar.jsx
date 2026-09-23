@@ -21,6 +21,7 @@ export default function JobSearchBar({
     setSearchWorkplace("");
     setIsErr(false);
     setSrcMsg(null);
+    setJobSearchList([]);
   };
   const clearSearch = () => {
     setSearchSchedule("");
@@ -100,17 +101,19 @@ export default function JobSearchBar({
         }}
         className="search-form "
       >
-        <div className="flex flex-wrap justify-evenly items-end gap-x-0 gap-y-3 md:gap-2 lg:gap-3 xl:gap-4">
+        <div className="flex flex-wrap justify-evenly items-end gap-x-0 gap-y-3 xm:gap-y-4 zm:gap-x-1 md md:gap-1 lg:gap-3 xl:gap-4">
           {/*==== ========================================================search by schedule*/}
-          <div className="input-wrapper w-[47%] md:w-[21%] xl:w-[20.5%]  relative">
-            <p className="text-sm xl:text-base mb-2 text-[#66706C]">Schedule</p>
+          <div className="input-wrapper w-[46%] zm:w-[20%] md:w-[21%] xl:w-[20.5%]  relative">
+            <p className="text-sm lg:text-base mb-1 sm:mb-1.5 lg:mb-2 text-[#66706C]">
+              Schedule
+            </p>
             <select
               onChange={(e) => {
                 setSearchSchedule(e.target.value);
                 setIsSearching(false);
               }}
               value={searchSchedule}
-              className="w-full border border-[#DFD7CB] rounded-[6px] bg-white/90 p-2 md:p-2 xl:p-3 text-sm xl:text-base text-[#0F0F0F]"
+              className="w-full h-[30px] rm:h-[32px] xm:h-[34px] zm:h-[36px] md:h-[40px] lg:h-[42px] xl:h-[46px]  border border-[#DFD7CB] rounded-[6px] bg-white/90 px-2 py-1.5 md:p-2 xl:p-3 text-xs xm:text-sm zm:text-[.7rem] sm:text-xs md:text-sm  xl:text-base text-[#0F0F0F]"
             >
               <option value="">Select Schedule</option>
               <option value="Full-Time">Full Time</option>
@@ -119,8 +122,8 @@ export default function JobSearchBar({
             </select>
           </div>
           {/*==== ========================================================search by locations*/}
-          <div className="input-wrapper w-[47%]  md:w-[21%] xl:w-[20.5%] relative">
-            <p className="text-sm  xl:text-base mb-2 text-[#66706C]">
+          <div className="input-wrapper  w-[46%] zm:w-[20%] md:w-[21%] xl:w-[20.5%] relative">
+            <p className="text-sm lg:text-base mb-1 sm:mb-1.5 lg:mb-2 text-[#66706C]">
               Location
             </p>
             <select
@@ -129,7 +132,7 @@ export default function JobSearchBar({
                 setIsSearching(false);
               }}
               value={searchLocation}
-              className="w-full border border-[#DFD7CB] rounded-[6px] bg-white/90 p-2 md:p-2 xl:p-3 text-sm xl:text-base text-[#0F0F0F]"
+              className="w-full h-[30px] rm:h-[32px] xm:h-[34px] zm:h-[36px] md:h-[40px] lg:h-[42px] xl:h-[46px] border border-[#DFD7CB] rounded-[6px] bg-white/90 p-2 md:p-2 xl:p-3 text-xs xm:text-sm zm:text-[.7rem] sm:text-xs md:text-sm xl:text-base text-[#0F0F0F]"
             >
               <option value="">Select Location</option>
               {jobSearchLocationList.map((item, index) => {
@@ -142,15 +145,17 @@ export default function JobSearchBar({
             </select>
           </div>
           {/*==== ========================================================search by Positions*/}
-          <div className="input-wrapper w-[47%]  md:w-[21%] xl:w-[20.5%] relative">
-            <p className="text-sm xl:text-base mb-2 text-[#66706C]">Position</p>
+          <div className="input-wrapper w-[46%] zm:w-[20%] md:w-[21%] xl:w-[20.5%]  relative">
+            <p className="text-sm lg:text-base mb-1 sm:mb-1.5 lg:mb-2 text-[#66706C]">
+              Position
+            </p>
             <select
               onChange={(e) => {
                 setSearchPosition(e.target.value);
                 setIsSearching(false);
               }}
               value={searchPosition}
-              className="w-full border border-[#DFD7CB] rounded-[6px] bg-white/90 p-2 md:p-2 xl:p-3 text-sm xl:text-base text-[#0F0F0F]"
+              className="w-full h-[36px] xm:h-[38px] sm:h-[40px] md:h-[42px] lg:h-[46px] xl:h-[48px] border border-[#DFD7CB] rounded-[6px] bg-white/90 p-2 md:p-2 xl:p-3 text-xs xm:text-sm zm:text-[.7rem] sm:text-xs md:text-sm xl:text-base text-[#0F0F0F]"
             >
               <option value="">Select Position</option>
               {jobPositionList.map((item, index) => {
@@ -163,8 +168,8 @@ export default function JobSearchBar({
             </select>
           </div>
           {/*==== ========================================================search by Workplace*/}
-          <div className="input-wrapper w-[47%]  md:w-[21%] xl:w-[20.5%] relative">
-            <p className="text-sm xl:text-base mb-2 text-[#66706C]">
+          <div className="input-wrapper w-[46%] zm:w-[20%] md:w-[21%] xl:w-[20.5%]  relative">
+            <p className="text-sm lg:text-base mb-1 sm:mb-1.5 lg:mb-2 text-[#66706C]">
               Workplace
             </p>
             <select
@@ -173,7 +178,7 @@ export default function JobSearchBar({
                 setIsSearching(false);
               }}
               value={searchWorkplace}
-              className="w-full border border-[#DFD7CB] rounded-[6px] bg-white/90 p-2 md:p-2 xl:p-3 text-sm xl:text-base text-[#0F0F0F]"
+              className="w-full h-[30px] rm:h-[32px] xm:h-[34px] zm:h-[36px] md:h-[40px] lg:h-[42px] xl:h-[46px] border border-[#DFD7CB] rounded-[6px] bg-white/90 p-2 md:p-2 xl:p-3 text-xs xm:text-sm zm:text-[.7rem] sm:text-xs md:text-sm  xl:text-base text-[#0F0F0F]"
             >
               <option value="">Select Workplace</option>
               <option value="Remote">Remote</option>
@@ -182,12 +187,12 @@ export default function JobSearchBar({
             </select>
           </div>
           {/*==== ========================================================buttons search+ reset*/}
-          <div className="button-wrapper relative">
-            <div className="flex  items-center gap-2 md:gap-3 lg:gap-4">
+          <div className="button-wrapper w-[100%] zm:w-auto relative">
+            <div className="flex justify-center zm:justify-end  items-center gap-2 zm:gap-1 lg:gap-4">
               <button
                 disabled={isSearching}
                 type="submit"
-                className="inline-block border border-[#DFD7CB] hover:bg-red-700 hover:border-red-700 hover:text-white rounded-[6px] bg-white/90 p-2 md:p-2 xl:p-3 text-lg md:text-2xl"
+                className="inline-block w-[100px] zm:w-auto h-[30px] rm:h-[32px] xm:h-[34px] zm:h-[36px] md:h-[40px] lg:h-[42px] xl:h-[46px] border border-[#DFD7CB] hover:bg-red-700 hover:border-red-700 hover:text-white rounded-[6px] bg-white/90 p-2 md:p-2 xl:p-3 text-lg md:text-2xl"
               >
                 <GoSearch />
               </button>
@@ -195,7 +200,7 @@ export default function JobSearchBar({
                 disabled={isSearching}
                 onClick={resetSearch}
                 type="reset"
-                className="inline-block border border-[#DFD7CB] hover:bg-red-700 hover:border-red-700  hover:text-white rounded-[6px] bg-white/60 p-2  md:p-2 xl:p-3 text-lg md:text-2xl"
+                className="inline-block w-[52px] zm:w-auto   h-[30px] rm:h-[32px] xm:h-[34px] zm:h-[36px] md:h-[40px] lg:h-[42px] xl:h-[46px] border border-[#DFD7CB] hover:bg-red-700 hover:border-red-700  hover:text-white rounded-[6px] bg-white/60 p-2  md:p-2 xl:p-3 text-lg md:text-2xl"
               >
                 <MdOutlineRefresh />
               </button>

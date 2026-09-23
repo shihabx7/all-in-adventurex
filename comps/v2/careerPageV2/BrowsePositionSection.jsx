@@ -41,9 +41,9 @@ export default function BrowsePositionSection({
       )}
 
       <div className="browse-position-section bg-[#FFF9EB] bg-[url('/assets/mobile-escape-room/brown-paper-bg.jpg')] bg-[240px_240px] md:bg-[300px_300px] lg:bg-[400px_400px] ">
-        <div className="max-w-7xl mx-auto py-16 md:py-20 lg:py-24 xl:py-28 3xl:py-32 px-3 lm:px-4 md:px-6 xl:px-4">
+        <div className="max-w-7xl mx-auto py-16 md:py-20 lg:py-24 xl:py-28 3xl:py-32 px-3 lm:px-4 md:px-6 lg:px-7">
           {/*=============================section title============================== */}
-          <div className="section-title mb-6 rm:mb-8 md:mb-10 lg:mb-12 md:max-w-[860px] lg:max-w-[900px] mx-auto">
+          <div className="section-title mb-6 rm:mb-8 md:mb-12 lg:mb-14 md:max-w-[860px] lg:max-w-[900px] mx-auto">
             <h2 className="dark-gold py-[2px] text-2xl md:text-[40px] lg:text-[44px] 2xl:text-[48px] leading-[1.2] font-os font-bold uppercase text-center">
               Browse our open positions
             </h2>
@@ -53,21 +53,22 @@ export default function BrowsePositionSection({
               epic to you? Join us.
             </p>
           </div>
+          {/*=============================pin job post card ============================== */}
+          <div className="pin-job ">
+            <PinedJobPostCard />
+          </div>
           {/*=============================search bar  setJobCardList={setJobCardList}============================== */}
-          <div className="jpb-search-bar">
+          <div className="jpb-search-bar my-8 md:my-12 lg:my-14">
             <JobSearchBar
               jobPositionList={jobPositionList}
               jobSearchLocationList={jobSearchLocationList}
               setJobSearchList={setJobSearchList}
             />
           </div>
-          {/*=============================pin job post card ============================== */}
-          <div className="pin-job my-8 md:my-12">
-            <PinedJobPostCard />
-          </div>
+
           {/*=============================latest job post card  ============================== */}
           <div className="job-po-card-box min-h-[500px]">
-            <div className="latest-job  grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4.5 lg:gap-8">
+            <div className="latest-job  grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-3.5 lg:gap-4 xl:gap-6">
               {jobCardList.map((item, index) => {
                 return (
                   <div key={index} className="jobcard-item h-full">

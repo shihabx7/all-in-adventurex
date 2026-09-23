@@ -20,29 +20,29 @@ export default function JobPostCard({
         <p className="text-[#895003] font-semibold uppercase text-xs md:text-[.9rem] leading-[1] mb-2 md:mb-3">
           {cardData.jobType}
         </p>
-        <h2 className="text-[1.75rem] md:text-[1.875rem] lg:text-[2rem] leading-[1.25] font-bold text-[#1D2321]">
+        <h2 className="text-[1.2rem] rm:text-[1.25rem] lm:text-[1.35rem] zm:text-[1.5rem] md:text-[1.35rem] xl:text-[2rem] leading-[1.25] font-bold text-[#1D2321]">
           <span className="uppercase">{cardData.positionName} </span>
-          <span className="text-[1.15rem] md:text-[1.3rem] lg:text-[1.5rem]">
+          <span className="mall-address">
             {cardData.mall
               ? "- " + cardData.mall + ", " + cardData.jobLocation
               : ""}
           </span>
         </h2>
       </div>
-      <div className="card-tags flex flex-wrap items-center gap-1.5 md:gap-2 text-[#EFA13A] text-xs md:text-sm my-6 md:my-7 lg:my-8">
-        <div className="tag-item  flex items-center gap-1 rounded-md bg-[#EFE8DC] text-[#383838] px-3 sm:px-4 py-2">
+      <div className="card-tags flex flex-wrap items-center gap-1.5 md:gap-2 text-[#EFA13A] text-[.66rem] xm:text-xs md:text-sm my-6 md:my-7 lg:my-8">
+        <div className="tag-item  flex items-center gap-1 rounded-md bg-[#EFE8DC] text-[#383838] px-2 py-1.5  xm:px-3 sm:px-4 xm:py-2">
           <FiMapPin />
           <p>{cardData.jobLocation}</p>
         </div>
-        <div className="tag-item  flex items-center gap-1 rounded-md bg-[#EFE8DC] text-[#383838] px-3 sm:px-4 py-2">
+        <div className="tag-item  flex items-center gap-1 rounded-md bg-[#EFE8DC] text-[#383838] px-2 py-1.5  xm:px-3 sm:px-4 xm:py-2">
           <PiBriefcaseLight />
           <p>{cardData.schedule}</p>
         </div>
-        <div className="tag-item  flex items-center gap-1 rounded-md bg-[#EFE8DC] text-[#383838] px-3 sm:px-4 py-2">
+        <div className="tag-item  flex items-center gap-1 rounded-md bg-[#EFE8DC] text-[#383838] px-2 py-1.5  xm:px-3 sm:px-4 xm:py-2">
           <FiMonitor />
           <p>{cardData.workPlace}</p>
         </div>
-        <div className="tag-item  flex items-center gap-1 rounded-md bg-[#EFE8DC] text-[#383838] px-3 sm:px-4 py-2">
+        <div className="tag-item  flex items-center gap-1 rounded-md bg-[#EFE8DC] text-[#383838] px-2 py-1.5  xm:px-3 sm:px-4 xm:py-2">
           <GoPerson />
           <p>{cardData.openingFor} Opening</p>
         </div>
@@ -52,13 +52,13 @@ export default function JobPostCard({
           onClick={() => {
             showJobDetails(itemNo);
           }}
-          className="inline-block border border-[#DFD7CB] rounded-full bg-transparent px-6 py-2 lg:py-2.5  xl:px-7  text-base md:text-[1.1rem] text-[#1D2321] font-medium hover:text-white hover:bg-red-700 hover:border-red-700 transition-all duration-300"
+          className="inline-block border border-[#DFD7CB] rounded-full bg-transparent px-7 py-2 lg:py-2.5  xl:px-7  text-base md:text-[1.1rem] text-[#1D2321] font-medium hover:text-white hover:bg-red-700 hover:border-red-700 transition-all duration-300"
         >
           Learn More
         </button>
         <a
           href="/careers/apply"
-          className="inline-block border border-red-600 rounded-full bg-red-600 px-6 py-2 lg:py-2.5  xl:px-7  text-base md:text-[1.1rem] text-white font-medium hover:bg-red-700 hover:border-red-700 transition-all duration-300"
+          className="inline-block border border-red-600 rounded-full bg-red-600 px-7 py-2 lg:py-2.5  xl:px-7  text-base md:text-[1.1rem] text-white font-medium hover:bg-red-700 hover:border-red-700 transition-all duration-300"
         >
           Apply Now
         </a>

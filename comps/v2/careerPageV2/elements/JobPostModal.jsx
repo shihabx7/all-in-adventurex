@@ -17,10 +17,10 @@ export default function JobPostModal({
     setActiveModalItem(-1);
   };
   return (
-    <div className="job-modal-box full-sceen-view-modal top-0 left-0 bg-[#211906]/20 pt-4 fixed w-full h-screen  overflow-x-hidden overflow-y-scroll z-[100000]">
-      <div className="w-full min-h-full flex flex-col justify-center items-center">
-        <div className="modal-content max-w-[800px] bg-[#FBF7EE] border-2 border-[#FBF7EE] rounded-lg rleative">
-          <div className="job-modal-head bg-[#211906] p-3 pt-0 rm:p-4 rm:pt-0 sm:p-5 sm:pt-0 lg:p-6 lg:pt-0 rounded-t-lg sticky">
+    <div className="job-modal-box full-sceen-view-modal top-0 left-0 bg-[#211906]/20 md:mt-5 fixed w-full h-screen z-[100000]">
+      <div className="w-full h-full flex flex-col justify-center  items-center">
+        <div className="modal-content max-w-[800px]  h-full  overflow-x-hidden overflow-y-scroll rounded-lg rleative">
+          <div className="job-modal-head bg-[#211906] p-3 pt-0 rm:p-4 rm:pt-0 sm:p-5 sm:pt-0 lg:p-6 lg:pt-0 rounded-t-lg sticky top-0">
             <div className="flex justify-end close-btn pt-4">
               <button
                 onClick={closeJobDetails}
@@ -62,7 +62,7 @@ export default function JobPostModal({
               </div>
             </div>
           </div>
-          <div className="job-modal-bottom p-3 rm:p-4 sm:p-5 lg:p-6">
+          <div className="job-modal-bottom rounded-t-lg bg-[#FBF7EE] p-3 rm:p-4 sm:p-5 lg:p-6">
             <div
               className="job-modal-desc text-[#282828] text-sm sm:text-base lg:text-[1.1rem] "
               dangerouslySetInnerHTML={{
