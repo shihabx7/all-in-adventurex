@@ -17,32 +17,31 @@ export default function JobPostCard({
   return (
     <div className="job-card border border-[#E9DFCF]  rounded-[10px] bg-white/70 px-4 py-5 sm:p-6  md:p-5 lg:p-6  xl:p-8 h-full">
       <div className="job-card-head">
-        <p className="text-[#895003] font-semibold uppercase text-xs md:text-[.9rem] leading-[1] mb-2 md:mb-3">
+        <p className="text-[#895003] font-semibold uppercase text-[.66rem] xm:text-xs md:text-[.9rem] leading-[1] mb-2 md:mb-3">
           {cardData.jobType}
         </p>
-        <h2 className="text-[1.2rem] rm:text-[1.25rem] lm:text-[1.35rem] zm:text-[1.5rem] md:text-[1.35rem] xl:text-[2rem] leading-[1.25] font-bold text-[#1D2321]">
-          <span className="uppercase">{cardData.positionName} </span>
-          <span className="mall-address">
-            {cardData.mall
-              ? "- " + cardData.mall + ", " + cardData.jobLocation
-              : ""}
-          </span>
+        <h2 className="text-[1.2rem] rm:text-[1.25rem] lm:text-[1.35rem] zm:text-[1.5rem] md:text-[1.35rem] xl:text-[2rem] leading-[1.25] font-bold text-[#1D2321] uppercase">
+          {cardData.positionName}
         </h2>
       </div>
-      <div className="card-tags flex flex-wrap items-center gap-1.5 md:gap-2 text-[#EFA13A] text-[.66rem] xm:text-xs md:text-sm my-6 md:my-7 lg:my-8">
-        <div className="tag-item  flex items-center gap-1 rounded-md bg-[#EFE8DC] text-[#383838] px-2 py-1.5  xm:px-3 sm:px-4 xm:py-2">
+      <div className="card-tags flex flex-wrap items-center gap-1.5 md:gap-2 text-[#EFA13A] text-[.66rem] xm:text-xs md:text-[.825rem] leading-[1.2] my-6 md:my-7 lg:my-8">
+        <div className="tag-item  flex items-center gap-1 rounded-md bg-[#EFE8DC] text-[#383838] px-1.5 py-1.5  sm:px-2 xm:py-2 ">
           <FiMapPin />
-          <p>{cardData.jobLocation}</p>
+          <p>
+            {cardData.mall
+              ? cardData.mall + ", " + cardData.jobLocation
+              : cardData.jobLocation}
+          </p>
         </div>
-        <div className="tag-item  flex items-center gap-1 rounded-md bg-[#EFE8DC] text-[#383838] px-2 py-1.5  xm:px-3 sm:px-4 xm:py-2">
+        <div className="tag-item  flex items-center gap-1 rounded-md bg-[#EFE8DC] text-[#383838] px-1.5 py-1.5  sm:px-2 xm:py-2">
           <PiBriefcaseLight />
           <p>{cardData.schedule}</p>
         </div>
-        <div className="tag-item  flex items-center gap-1 rounded-md bg-[#EFE8DC] text-[#383838] px-2 py-1.5  xm:px-3 sm:px-4 xm:py-2">
+        <div className="tag-item  flex items-center gap-1 rounded-md bg-[#EFE8DC] text-[#383838] px-1.5 py-1.5  sm:px-2 xm:py-2">
           <FiMonitor />
           <p>{cardData.workPlace}</p>
         </div>
-        <div className="tag-item  flex items-center gap-1 rounded-md bg-[#EFE8DC] text-[#383838] px-2 py-1.5  xm:px-3 sm:px-4 xm:py-2">
+        <div className="tag-item  flex items-center gap-1 rounded-md bg-[#EFE8DC] text-[#383838] px-1.5 py-1.5  sm:px-2 xm:py-2">
           <GoPerson />
           <p>{cardData.openingFor} Opening</p>
         </div>
