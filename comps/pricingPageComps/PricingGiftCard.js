@@ -106,7 +106,7 @@ const PricingGiftCard = (props) => {
                 </td>
               </tr>
               {/** ==============table-row end============ */}
-              {/** ==============table-row===========   3-4 Players */}
+              {/** ==============table-row===========   
               <tr>
                 <td className="border border-[#D2C6AA] w-[32%]  p-2 md:p-4">
                   <h4 className="font-medium text-xs rm:text-sm  md:text-[20px] text-[#000000]">
@@ -140,6 +140,7 @@ const PricingGiftCard = (props) => {
                   </h4>
                 </td>
               </tr>
+              3-4 Players */}
               {/** ==============table-row end============ */}
             </tbody>
           </table>
