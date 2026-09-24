@@ -45,7 +45,7 @@ export default function PinedJobPostCard({ pinJobData, setShowPinJobModal }) {
         </div>
       )}
       <div className="job-title mt-4 mb-5  rm:my-6  md:my-8  xl:my-10 ">
-        <h3 className="text-[1.65rem] rm:text-[1.75rem] zm:text-[2rem] md:text-[2.5rem] xl:text-[2.75rem] leading-[1] font-bold text-white uppercase">
+        <h3 className="text-[1.6rem] rm:text-[1.75rem] zm:text-[2rem] md:text-[2.15rem] xl:text-[2.25rem] leading-[1] font-bold text-white uppercase">
           {pinJobData.jobTitle ? pinJobData.jobTitle : "Associate"}
         </h3>
         <p className="text-[.94rem] rm:text-sm zm:text-base md:text-[1.1rem]  xl:text-[1.15rem] text-[#B2C2C0] mt-5 md:mt-4 lg:mt-5">
@@ -55,9 +55,12 @@ export default function PinedJobPostCard({ pinJobData, setShowPinJobModal }) {
         </p>
       </div>
       <div className="job-cta-row flex items-center space-x-4 md:space-x-5 pt-2 ">
-        <button    onClick={() => {
+        <button
+          onClick={() => {
             showJobDetails();
-          }} className="inline-block border border-white rounded-full bg-transparent px-5 rm:px-7 py-2  md:px-6 md:py-2.5 lg:py-3 xl:px-8 text-[.94rem]  rm:text-base md:text-[1.1rem] text-white font-medium hover:bg-red-700 hover:border-red-700 transition-all duration-300">
+          }}
+          className="inline-block border border-white rounded-full bg-transparent px-5 rm:px-7 py-2  md:px-6 md:py-2.5 lg:py-3 xl:px-8 text-[.94rem]  rm:text-base md:text-[1.1rem] text-white font-medium hover:bg-red-700 hover:border-red-700 transition-all duration-300"
+        >
           Learn More
         </button>
         <a

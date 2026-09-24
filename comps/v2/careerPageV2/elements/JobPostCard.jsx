@@ -20,7 +20,7 @@ export default function JobPostCard({
         <p className="text-[#895003] font-semibold uppercase text-[.66rem] xm:text-xs md:text-[.9rem] leading-[1] mb-2 md:mb-3">
           {cardData.jobType}
         </p>
-        <h2 className="text-[1.2rem] rm:text-[1.25rem] lm:text-[1.35rem] zm:text-[1.5rem] md:text-[1.35rem] xl:text-[2rem] leading-[1.25] font-bold text-[#1D2321] uppercase">
+        <h2 className="text-[1.2rem] rm:text-[1.25rem] lm:text-[1.3rem] zm:text-[1.4rem] md:text-[1.5rem] xl:text-[1.75rem] leading-[1.25] font-bold text-[#1D2321] uppercase">
           {cardData.positionName}
         </h2>
       </div>
