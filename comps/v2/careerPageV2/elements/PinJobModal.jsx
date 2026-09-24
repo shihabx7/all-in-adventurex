@@ -20,7 +20,7 @@ export default function PinJobModal({ pinJobData, setShowPinJobModal }) {
     setShowPinJobModal(false);
   };
   return (
-    <div className="job-modal-box full-sceen-view-modal top-0 left-0 bg-[#211906]/20 md:mt-5 fixed w-full h-screen z-[100000]">
+    <div className="job-pin-modal-box full-sceen-view-modal top-0 left-0 bg-[#211906]/20 md:mt-5 fixed w-full h-screen z-[100000]">
       <div className="w-full h-full flex flex-col justify-center  items-center">
         <div className="modal-content max-w-[800px]  h-full  overflow-x-hidden overflow-y-scroll rounded-lg rleative">
           <div className="job-modal-head bg-[#211906] p-3 pt-0 rm:p-4 rm:pt-0 sm:p-5 sm:pt-0 lg:p-6 lg:pt-0 rounded-t-lg sticky top-0">
