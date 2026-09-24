@@ -3,7 +3,7 @@ import JobSearchBar from "./elements/JobSearchBar";
 import PinedJobPostCard from "./elements/PinedJobPostCard";
 import JobPostCard from "./elements/JobPostCard";
 import JobPostModal from "./elements/JobPostModal";
-import PinJobModal from "./elements/pinJobModal";
+import AssJobModal from "./elements/AssJobModal";
 //jobPositionList={props.jobPositionList} jobPositionCardList={props.jobPositionCardList}
 export default function BrowsePositionSection({
   jobPositionList,
@@ -44,7 +44,7 @@ export default function BrowsePositionSection({
         />
       )}
       {showPinJobModal && (
-        <PinJobModal
+        <AssJobModal
           pinJobData={pinJobData}
           setShowPinJobModal={setShowPinJobModal}
         />

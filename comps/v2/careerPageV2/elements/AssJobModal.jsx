@@ -5,7 +5,7 @@ import { FiMapPin, FiMonitor } from "react-icons/fi";
 import { PiBriefcaseLight } from "react-icons/pi";
 import { GoPerson } from "react-icons/go";
 
-export default function PinJobModal({ pinJobData, setShowPinJobModal }) {
+export default function AssJobModal({ pinJobData, setShowPinJobModal }) {
   const [jobTags, setJobTags] = useState([]);
 
   useEffect(() => {
