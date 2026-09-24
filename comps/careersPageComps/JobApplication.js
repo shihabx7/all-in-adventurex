@@ -25,7 +25,10 @@ const JobApplication = (props) => {
           </div>
         </div>
         <div className="job-form-container max-w-[930px] mx-auto bg-[#F4E6C3] py-8 px-4 lg:p-8 rounded drop-shadow">
-          <JobApplicationForms locationlist={props.locationlist} />
+          <JobApplicationForms
+            locationlist={props.locationlist}
+            jobPositionList={props.jobPositionList}
+          />
         </div>
       </div>
     </div>

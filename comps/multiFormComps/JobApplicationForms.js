@@ -648,8 +648,8 @@ const JobApplicationForms = (props) => {
         setErrorMsg("");
         setSuccessMsg("Your Application has submitted successfully.");
         setRepErrMsg(false);
-       // alert("form has been submitted successfully");
-       window.location.replace("/thank-you-career");
+        // alert("form has been submitted successfully");
+        window.location.replace("/thank-you-career");
         //window.location.href = "//thank-you"; replace
         // console.log("Form submit success " + result.data);
       } else if (response.status == 403) {
@@ -731,6 +731,7 @@ const JobApplicationForms = (props) => {
         {formStep == 1 && (
           <ApplicantInfo2
             prevFormErr={prevFormErr}
+            jobPositionList={props.jobPositionList ? props.jobPositionList : []}
             locationlist={props.locationlist}
             appInfo2={appInfo2}
             setAppInfo2={setAppInfo2}

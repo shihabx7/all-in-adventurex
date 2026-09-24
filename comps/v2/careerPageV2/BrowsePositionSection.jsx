@@ -3,13 +3,16 @@ import JobSearchBar from "./elements/JobSearchBar";
 import PinedJobPostCard from "./elements/PinedJobPostCard";
 import JobPostCard from "./elements/JobPostCard";
 import JobPostModal from "./elements/JobPostModal";
+import PinJobModal from "./elements/pinJobModal";
 //jobPositionList={props.jobPositionList} jobPositionCardList={props.jobPositionCardList}
 export default function BrowsePositionSection({
   jobPositionList,
   jobPositionCardList,
   jobSearchLocationList,
+  pinJobData,
 }) {
   const [showJobModal, setShowJobModal] = useState(false);
+  const [showPinJobModal, setShowPinJobModal] = useState(false);
   const [activeModalItem, setActiveModalItem] = useState(-1);
   const [jobCardList, setJobCardList] = useState(jobPositionCardList);
 
@@ -18,6 +21,7 @@ export default function BrowsePositionSection({
   useEffect(() => {
     setShowJobModal(false);
     setActiveModalItem(-1);
+    setShowPinJobModal(false);
     setJobCardList(jobPositionCardList);
   }, []);
 
@@ -39,7 +43,12 @@ export default function BrowsePositionSection({
           jobData={jobCardList[activeModalItem]}
         />
       )}
-
+      {showPinJobModal && (
+        <PinJobModal
+          pinJobData={pinJobData}
+          setShowPinJobModal={setShowPinJobModal}
+        />
+      )}
       <div className="browse-position-section bg-[#FFF9EB] bg-[url('/assets/mobile-escape-room/brown-paper-bg.jpg')] bg-[240px_240px] md:bg-[300px_300px] lg:bg-[400px_400px] ">
         <div className="max-w-7xl mx-auto py-16 md:py-20 lg:py-24 xl:py-28 3xl:py-32 px-3 lm:px-4 md:px-6 lg:px-7">
           {/*=============================section title============================== */}
@@ -55,7 +64,7 @@ export default function BrowsePositionSection({
           </div>
           {/*=============================pin job post card ============================== */}
           <div className="pin-job ">
-            <PinedJobPostCard />
+            <PinedJobPostCard pinJobData={pinJobData} setShowPinJobModal={setShowPinJobModal}/>
           </div>
           {/*=============================search bar  setJobCardList={setJobCardList}============================== */}
           <div className="jpb-search-bar mt-8 mb-12 sm:mt-10 sm:mb-14 md:mt-12 md:mb-16 lg:mt-14 ">

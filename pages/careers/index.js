@@ -1,12 +1,17 @@
 import RootNav from "../../comps/RootNav";
 import RootFooter from "../../comps/RootFooter";
 
-import CareersHero from "../../comps/careersPageComps/CareersHero";
-import WhoWeAre from "../../comps/careersPageComps/WhoWeAre";
-import OpenPosition from "../../comps/careersPageComps/OpenPosition";
-import { getCareerHomePageData } from "../api/getCareerHomePageData";
+//import CareersHero from "../../comps/careersPageComps/CareersHero";
+//import WhoWeAre from "../../comps/careersPageComps/WhoWeAre";
+//import OpenPosition from "../../comps/careersPageComps/OpenPosition";
+//mport { getCareerHomePageData } from "../api/getCareerHomePageData";
+import { getCareerHomePageDataV2 } from "../api/getCareerHomePageDataV2";
 import PageBread from "../../comps/util/PageBread";
 import SinglePageSeo from "../../comps/util/SinglePageSeo";
+//===============================v2=========================
+import CareerPageHeroV2 from "../../comps/v2/careerPageV2/CareerPageHeroV2";
+import BrowsePositionSection from "../../comps/v2/careerPageV2/BrowsePositionSection";
+import CareerAboutSection from "../../comps/v2/careerPageV2/CareerAboutSection";
 
 const Careers = (props) => {
   return (
@@ -24,20 +29,25 @@ const Careers = (props) => {
       {/* =========================================================================================main content ======== end */}
       <div
         id="mainContent"
-        className="main-content nobtn-main-content bg-center"
+        className="main-content nobtn-main-content bg-center relative"
       >
         {/* =======breadcum content and breadcum========  */}
         <PageBread />
         {/* =======breadcum content and breadcum root page template======== end */}
-        <CareersHero
-          pageData={props.pageData}
+        <CareerPageHeroV2
+          pageHeroData={props.pageHeroData}
           btnId={"alljobs"}
           btnLabel={"VIEW ALL JOB POSITIONS"}
         />
-        <WhoWeAre />
-        <OpenPosition jobCardList={props.jobCardList} />
+        <BrowsePositionSection
+          jobPositionList={props.jobPositionList}
+          jobPositionCardList={props.jobPositionCardList}
+          jobSearchLocationList={props.jobSearchLocationList}
+          pinJobData={props.pinJobData}
+        />
+        <CareerAboutSection />
 
-        {/* =========================================================================================main content ======== end */}
+        {/* =========================================================================================<OpenPosition jobCardList={props.jobCardList} />======== end */}
       </div>
 
       <RootFooter
@@ -51,7 +61,7 @@ const Careers = (props) => {
 export default Careers;
 
 export const getStaticProps = async () => {
-  const DATA = await getCareerHomePageData();
+  const DATA = await getCareerHomePageDataV2();
 
   return {
     props: {
@@ -60,9 +70,15 @@ export const getStaticProps = async () => {
       otherGameSlugList: DATA.otherGameSlugList,
       eventSlugList: DATA.eventSlugList,
       totalLocations: DATA.totalLocations,
-      pageData: DATA.pageData,
+      pageHeroData: DATA.pageData,
       pageMeta: DATA.pageMeta,
       jobCardList: DATA.jobCardList,
+      jobOpeningsResData: DATA.jobOpeningsList,
+      //================================v2
+      jobPositionList: DATA.jobPositionList,
+      jobPositionCardList: DATA.jobPositionCardList,
+      jobSearchLocationList: DATA.jobSearchLocationList,
+      pinJobData: DATA.pinJobData,
     },
     revalidate: 60,
   };

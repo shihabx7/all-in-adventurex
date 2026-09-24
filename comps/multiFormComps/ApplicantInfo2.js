@@ -5,6 +5,7 @@ const ApplicantInfo2 = ({
   setAppInfo2,
   setFormErrFlag,
   locationlist,
+  jobPositionList,
 }) => {
   const [appInfo2Err, setAppInfo2Err] = useState({
     dLocationErr: false,
@@ -243,9 +244,23 @@ const ApplicantInfo2 = ({
             >
               <option value="">Select position</option>
               <option value="Associate">Associate </option>
+              {jobPositionList && jobPositionList.length > 0 && (
+                <>
+                  {jobPositionList.map((item, index) => {
+                    return (
+                      <option key={index} value={item.positionName}>
+                        {item.positionName}
+                      </option>
+                    );
+                  })}
+                </>
+              )}
+              {/*==================
+           
               <option value="Team Lead">Team Lead </option>
               <option value="Assistant Manager">Assistant Manager </option>
               <option value="Store Manager">Store Manager</option>
+           */}
             </select>
             {appInfo2Err.dPositionErr && (
               <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">

@@ -24,7 +24,7 @@ export default function JobPostCard({
           {cardData.positionName}
         </h2>
       </div>
-      <div className="card-tags flex flex-wrap items-center gap-1.5 md:gap-2 text-[#EFA13A] text-[.66rem] xm:text-xs md:text-[.825rem] leading-[1.2] my-6 md:my-7 lg:my-8">
+      <div className="card-tags flex flex-wrap items-center gap-1.5 md:gap-2 text-[#EFA13A] text-[.67rem] xm:text-xs md:text-[.825rem] leading-[1.2] my-6 md:my-7 lg:my-8">
         <div className="tag-item  flex items-center gap-1 rounded-md bg-[#EFE8DC] text-[#383838] px-1.5 py-1.5  sm:px-2 xm:py-2 ">
           <FiMapPin />
           <p>

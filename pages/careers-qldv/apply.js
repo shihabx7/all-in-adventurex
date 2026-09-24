@@ -1,5 +1,4 @@
-
-import { getJobApplicationPageDataV2 } from "../api/getJobApplicationPageDataV2";
+import { getJobApplicationPageData } from "../api/getJobApplicationPageData";
 import RootNav from "../../comps/RootNav";
 import RootFooter from "../../comps/RootFooter";
 
@@ -36,10 +35,7 @@ const apply = (props) => {
           btnLabel={"SUBMIT YOUR APPLICATION"}
           pageData={props.pageData}
         />
-        <JobApplication
-          locationlist={props.locationSlugList}
-          jobPositionList={props.jobPositionList}
-        />
+        <JobApplication locationlist={props.locationSlugList} />
 
         {/* =========================================================================================main content ======== end */}
       </div>
@@ -55,7 +51,7 @@ const apply = (props) => {
 export default apply;
 
 export const getStaticProps = async () => {
-  const DATA = await getJobApplicationPageDataV2();
+  const DATA = await getJobApplicationPageData();
 
   return {
     props: {
@@ -66,7 +62,6 @@ export const getStaticProps = async () => {
       totalLocations: DATA.totalLocations,
       pageData: DATA.pageData,
       pageMeta: DATA.pageMeta,
-      jobPositionList: DATA.jobPositionList,
     },
     revalidate: 60,
   };
