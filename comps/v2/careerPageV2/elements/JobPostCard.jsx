@@ -15,7 +15,7 @@ export default function JobPostCard({
     setActiveModalItem(item);
   };
   return (
-    <div className="job-card border border-[#E9DFCF]  rounded-[10px] bg-white/70 px-4 py-5 sm:p-6  md:p-5 lg:p-6  xl:p-8 h-full">
+    <div className="job-card border border-[#E9DFCF]  rounded-[10px] bg-white/70 px-3 rm:px-4 py-5 sm:p-6  md:p-5 lg:p-6  xl:p-8 h-full">
       <div className="job-card-head">
         <p className="text-[#895003] font-semibold uppercase text-[.66rem] xm:text-xs md:text-[.9rem] leading-[1] mb-2 md:mb-3">
           {cardData.jobType}
@@ -51,13 +51,13 @@ export default function JobPostCard({
           onClick={() => {
             showJobDetails(itemNo);
           }}
-          className="inline-block border border-[#DFD7CB] rounded-full bg-transparent px-7 py-2 lg:py-2.5  xl:px-7  text-base md:text-[1.1rem] text-[#1D2321] font-medium hover:text-white hover:bg-red-700 hover:border-red-700 transition-all duration-300"
+          className="inline-block border border-[#DFD7CB] rounded-full bg-transparent px-6 lm:px-7 py-2 lg:py-2.5  xl:px-7  text-sm lm:text-base md:text-[1.1rem] text-[#1D2321] font-medium hover:text-white hover:bg-red-700 hover:border-red-700 transition-all duration-300"
         >
           Learn More
         </button>
         <a
           href="/careers/apply"
-          className="inline-block border border-red-600 rounded-full bg-red-600 px-7 py-2 lg:py-2.5  xl:px-7  text-base md:text-[1.1rem] text-white font-medium hover:bg-red-700 hover:border-red-700 transition-all duration-300"
+          className="inline-block border border-red-600 rounded-full bg-red-600 px-6 lm:px-7 py-2 lg:py-2.5  xl:px-7 text-sm  lm:text-base md:text-[1.1rem] text-white font-medium hover:bg-red-700 hover:border-red-700 transition-all duration-300"
         >
           Apply Now
         </a>

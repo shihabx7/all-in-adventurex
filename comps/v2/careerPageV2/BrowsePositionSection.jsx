@@ -58,7 +58,7 @@ export default function BrowsePositionSection({
             <PinedJobPostCard />
           </div>
           {/*=============================search bar  setJobCardList={setJobCardList}============================== */}
-          <div className="jpb-search-bar my-8 md:my-12 lg:my-14">
+          <div className="jpb-search-bar mt-8 mb-12 sm:mt-10 sm:mb-14 md:mt-12 md:mb-16 lg:mt-14 ">
             <JobSearchBar
               jobPositionList={jobPositionList}
               jobSearchLocationList={jobSearchLocationList}
