@@ -21,7 +21,8 @@ export default function JobPostCard({
           {cardData.jobType}
         </p>
         <h2 className="text-[1.2rem] rm:text-[1.25rem] lm:text-[1.3rem] zm:text-[1.4rem] md:text-[1.5rem] xl:text-[1.75rem] leading-[1.25] font-bold text-[#1D2321] uppercase">
-          {cardData.positionName}
+          {cardData.jobTitle ? cardData.jobTitle : cardData.positionName}{" "}
+          {cardData.jobTitleExtra ? "(" + cardData.jobTitleExtra + ")" : ""}
         </h2>
       </div>
       <div className="card-tags flex flex-wrap items-center gap-1.5 md:gap-2 text-[#EFA13A] text-[.67rem] xm:text-xs md:text-[.825rem] leading-[1.2] my-6 md:my-7 lg:my-8">

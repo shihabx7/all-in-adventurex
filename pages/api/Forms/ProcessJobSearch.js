@@ -75,6 +75,8 @@ export default async function ProcessJobSearch(req, res) {
         };
       }
       if (location?.trim()) {
+        const stc = location.toString().split(",");
+        const rgc = stc[stc.length - 1].toUpperCase();
         dynamicFilters["$or"] = [
           {
             // Condition A: It matches the searched location name
@@ -82,6 +84,11 @@ export default async function ProcessJobSearch(req, res) {
               location: {
                 slug: { $containsi: location.trim() },
               },
+            },
+          },
+          {
+            job_regions: {
+              regionShortCode: { $containsi: rgc },
             },
           },
           {

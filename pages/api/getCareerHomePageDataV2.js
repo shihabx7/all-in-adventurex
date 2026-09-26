@@ -76,7 +76,7 @@ export const getCareerHomePageDataV2 = async () => {
   const jobOpeningsResObj = await jobOpeningsRes.json();
   const jobOpeningsResData = jobOpeningsResObj.data;
 
-  //console.log("job Openings Data : ", JSON.stringify(jobOpeningsResData));
+  console.log("job Openings Data : ", JSON.stringify(jobOpeningsResData));
   const jobCardList = jobPositionCardList(jobOpeningsResData);
   //.log("||||||");
   // console.log("job Openings Data after format : ", JSON.stringify(jobCardList));

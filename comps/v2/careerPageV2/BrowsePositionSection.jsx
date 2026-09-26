@@ -72,8 +72,7 @@ export default function BrowsePositionSection({
           {jobPositionCardList.length == 0 && (
             <div className="mt-8 mb-12 sm:mt-10 sm:mb-14 md:mt-12 md:mb-16 lg:mt-14 flex flex-col justify-center items-center">
               <p className="text-xl md:text-2xl font-medium text-center pt-8">
-                No job position available open right now. Please visit again another
-                day.
+                That's all for now! Check back regularly for new job openings.
               </p>
             </div>
           )}
