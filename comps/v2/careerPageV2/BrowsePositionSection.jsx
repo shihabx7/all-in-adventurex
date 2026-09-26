@@ -64,34 +64,49 @@ export default function BrowsePositionSection({
           </div>
           {/*=============================pin job post card ============================== */}
           <div className="pin-job ">
-            <PinedJobPostCard pinJobData={pinJobData} setShowPinJobModal={setShowPinJobModal}/>
-          </div>
-          {/*=============================search bar  setJobCardList={setJobCardList}============================== */}
-          <div className="jpb-search-bar mt-8 mb-12 sm:mt-10 sm:mb-14 md:mt-12 md:mb-16 lg:mt-14 ">
-            <JobSearchBar
-              jobPositionList={jobPositionList}
-              jobSearchLocationList={jobSearchLocationList}
-              setJobSearchList={setJobSearchList}
+            <PinedJobPostCard
+              pinJobData={pinJobData}
+              setShowPinJobModal={setShowPinJobModal}
             />
           </div>
-
-          {/*=============================latest job post card  ============================== */}
-          <div className="job-po-card-box min-h-[500px]">
-            <div className="latest-job  grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-3.5 lg:gap-4 xl:gap-6">
-              {jobCardList.map((item, index) => {
-                return (
-                  <div key={index} className="jobcard-item h-full">
-                    <JobPostCard
-                      setShowJobModal={setShowJobModal}
-                      setActiveModalItem={setActiveModalItem}
-                      itemNo={index}
-                      cardData={item}
-                    />
-                  </div>
-                );
-              })}
+          {jobPositionCardList.length == 0 && (
+            <div className="mt-8 mb-12 sm:mt-10 sm:mb-14 md:mt-12 md:mb-16 lg:mt-14 flex flex-col justify-center items-center">
+              <p className="text-xl md:text-2xl font-medium text-center pt-8">
+                No job position available open right now. Please visit again another
+                day.
+              </p>
             </div>
-          </div>
+          )}
+          {/*=============================search bar  setJobCardList={setJobCardList}============================== */}
+          {jobPositionCardList.length > 0 && (
+            <>
+              <div className="jpb-search-bar mt-8 mb-12 sm:mt-10 sm:mb-14 md:mt-12 md:mb-16 lg:mt-14 ">
+                <JobSearchBar
+                  jobPositionList={jobPositionList}
+                  jobSearchLocationList={jobSearchLocationList}
+                  setJobSearchList={setJobSearchList}
+                />
+              </div>
+
+              {/*=============================latest job post card  ============================== */}
+              <div className="job-po-card-box min-h-[500px]">
+                <div className="latest-job  grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-3.5 lg:gap-4 xl:gap-6">
+                  {jobCardList.map((item, index) => {
+                    return (
+                      <div key={index} className="jobcard-item h-full">
+                        <JobPostCard
+                          setShowJobModal={setShowJobModal}
+                          setActiveModalItem={setActiveModalItem}
+                          itemNo={index}
+                          cardData={item}
+                        />
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </>
+          )}
         </div>
         <div className="h-[6.5rem] xm:h-[6rem]  md:h-[6.5rem] lg:h-[6rem] 2xl:h-[7rem]"></div>
       </div>
