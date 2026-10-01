@@ -29,7 +29,8 @@ export default async function replayApplication(req, res) {
   });
 
   try {
-    const access_token = await oauth2Client.getAccessToken();
+      const tokenResponse = await oauth2Client.getAccessToken();
+    const access_token = tokenResponse.token || tokenResponse;
     const transporter = nodemailer.createTransport({
       service: mailService,
       auth: {

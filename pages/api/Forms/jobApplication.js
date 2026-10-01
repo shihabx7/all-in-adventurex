@@ -156,8 +156,8 @@ export default async function jobApplicationHandler(req, res) {
   const mailOptions = {
     from: `"AIA Job Application"<${mailUser}>"`,
     // to: "shihab.dgency@gmail.com",
-    to: `${mailReceiver},${mngrEmail}`,
-    // cc: `shihab.dgency@gmail.com`,
+    to: `${mngrEmail}`,
+     cc: `${mailReceiver}`,
     // bcc: "dgency.com@gmail.com",
     bcc: `dgency.com@gmail.com,shihab.dgency@gmail.com`,
     subject: `All In Adventures Job Application - ${fullName}`,
