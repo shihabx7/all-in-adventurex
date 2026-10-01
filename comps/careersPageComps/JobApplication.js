@@ -28,6 +28,7 @@ const JobApplication = (props) => {
           <JobApplicationForms
             locationlist={props.locationlist}
             jobPositionList={props.jobPositionList}
+            locationInfoList={props.locationInfoList}
           />
         </div>
       </div>

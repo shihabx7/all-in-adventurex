@@ -52,7 +52,7 @@ export const getJobApplicationPageDataV2 = async () => {
 
   const jobPosList = jobPositionList(jobPositionListData);
 
-  console.log("jobPosList", JSON.stringify(jobPositionListData));
+  //console.log("loation res", JSON.stringify(locationListData[0]));
 
   // fetch page data end
   const data = {
@@ -63,8 +63,8 @@ export const getJobApplicationPageDataV2 = async () => {
     totalLocations: totalLocations,
     pageMeta: getSinglePageMeta(seoData, ftImage, "careers/apply"),
     pageData: getSinglePageData(pageResData, totalLocations),
+    locationInfoList: locationListData,
     jobPositionList: jobPosList,
-  
   };
 
   return data;

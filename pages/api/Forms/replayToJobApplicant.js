@@ -33,8 +33,8 @@ export async function replayToJobApplicant(toName, toEmail, pdfPath) {
           <p style="margin:12px 0px;">This letter is to inform you that we received your job application. We appreciate you taking the time to apply.</p>
           <p style="margin:12px 0px;">Once we have an opportunity to review the application and it aligns with one of our job openings, one of our team members will be in contact with you.</p>
           <p style="margin:12px 0px;">Thank you again for the time you invested in your application.</p>
-          <p style="margin-top:16px; margin-bottom:1px;"><strong>Beth Palmer</strong> </p>
-          <p style="margin-top:1px; margin-bottom:1px;">Training and Development/Onboarding Manager</p>
+          <p style="margin-top:16px; margin-bottom:1px;"><strong>Jordan Pursell</strong> </p>
+          <p style="margin-top:1px; margin-bottom:1px;">Director of Operations</p>
           <p style="margin-top:1px; margin-bottom:1px;"><a href="https://allinadventures.com">allinadventures.com</a> </p>
           <p style="margin-top:12px; margin-bottom:0px;"><a href="mailto:careers@allinadventures.com">careers@allinadventures.com</a></p>
           <p style="margin:12px 0px 0px 0px;">Please find your application attached.</p>

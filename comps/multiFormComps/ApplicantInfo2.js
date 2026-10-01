@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 const ApplicantInfo2 = ({
   prevFormErr,
   appInfo2,
@@ -6,6 +6,7 @@ const ApplicantInfo2 = ({
   setFormErrFlag,
   locationlist,
   jobPositionList,
+  locationInfoList,
 }) => {
   const [appInfo2Err, setAppInfo2Err] = useState({
     dLocationErr: false,
@@ -19,24 +20,41 @@ const ApplicantInfo2 = ({
     learnAboutPosErr: false,
     whatAttractedErr: false,
   });
+  const [locationInfo, setLocationInfo] = useState(locationInfoList);
+
+  useEffect(() => {
+    setLocationInfo(locationInfoList);
+  }, []);
   // ========================================================location validation=================
   const escape = (htmlStr) => {
     return htmlStr.replace(/&/g, "and").replace(/</g, " ").replace(/>/g, " ");
     //.replace(/(?:\r\n|\r|\n)/g, '<br>');
   };
   const checkLocation = (e) => {
-    const dloc = e.target.value.trim();
-
-    if (dloc.length > 0) {
+    const dloc = e.target.value;
+    const ind = parseInt(dloc, 10);
+    console.log(ind);
+    console.log(typeof ind);
+    console.log("locationName", locationInfo[ind - 1].attributes.locationName);
+    console.log(
+      "locationName",
+      locationInfo[ind - 1].attributes.locationInfo.managerEmail,
+    );
+    if (ind > 0) {
+      console.log('location selected')
       setFormErrFlag(false);
       setAppInfo2Err({ ...appInfo2Err, dLocationErr: false });
-      setAppInfo2({ ...appInfo2, dLocation: dloc });
+      setAppInfo2({
+        ...appInfo2,
+        dLocation: locationInfo[ind - 1].attributes.locationName, mngrEmail: locationInfo[ind - 1].attributes.locationInfo.managerEmail
+      });
+    
       e.target.classList.remove("focus-red");
       e.target.classList.add("focus-green");
     } else {
       setFormErrFlag(true);
       setAppInfo2Err({ ...appInfo2Err, dLocationErr: true });
-      setAppInfo2({ ...appInfo2, dLocation: dloc });
+      //  setAppInfo2({ ...appInfo2, dLocation: dloc });
       e.target.classList.add("focus-red");
       e.target.classList.remove("focus-green");
     }
@@ -203,15 +221,13 @@ const ApplicantInfo2 = ({
                 (appInfo2Err.dLocationErr == true ? "focus-red" : "")
               }
             >
-              <option value="">Select location</option>
-              {locationlist.map((item, index) => {
-                return item.locations.map((item) => {
-                  return (
-                    <option key={index + item.id} value={item.locationName}>
-                      {item.locationName}
-                    </option>
-                  );
-                });
+              <option value="0">Select location</option>
+              {locationInfoList.map((item, index) => {
+                return (
+                  <option key={index} value={index + 1}>
+                    {item.attributes.locationName}
+                  </option>
+                );
               })}
             </select>
 
@@ -224,7 +240,7 @@ const ApplicantInfo2 = ({
               appInfo2.dLocation == "" &&
               !appInfo2Err.dLocationErr && (
                 <p className="cor-form-err mt-1 evevt-input-label text-[#E1001A] fErr text-xs md:text-sm">
-                  Select your desired location
+                  Select your desired location 2 {appInfo2.dLocation}
                 </p>
               )}
           </div>

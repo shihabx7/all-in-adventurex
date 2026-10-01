@@ -1,4 +1,3 @@
-
 import { getJobApplicationPageDataV2 } from "../api/getJobApplicationPageDataV2";
 import RootNav from "../../comps/RootNav";
 import RootFooter from "../../comps/RootFooter";
@@ -39,6 +38,7 @@ const apply = (props) => {
         <JobApplication
           locationlist={props.locationSlugList}
           jobPositionList={props.jobPositionList}
+          locationInfoList={props.locationInfoList}
         />
 
         {/* =========================================================================================main content ======== end */}
@@ -66,6 +66,7 @@ export const getStaticProps = async () => {
       totalLocations: DATA.totalLocations,
       pageData: DATA.pageData,
       pageMeta: DATA.pageMeta,
+      locationInfoList: DATA.locationInfoList,
       jobPositionList: DATA.jobPositionList,
     },
     revalidate: 60,

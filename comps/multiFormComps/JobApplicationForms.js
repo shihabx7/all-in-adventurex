@@ -96,6 +96,7 @@ const JobApplicationForms = (props) => {
     workUnderOther: "",
     learnAboutPos: "",
     whatAttracted: "",
+    mngrEmail:"",
   });
   const checkAppInfo2 = () => {
     var emptycount = 0;
@@ -505,7 +506,7 @@ const JobApplicationForms = (props) => {
       }
       if (formStep == 1) {
         const chkAppinfo2 = checkAppInfo2();
-        if (chkAppinfo2 == false) {
+        if (!chkAppinfo2 ) {
           setPrevFormErr(true);
         } else {
           setPrevFormErr(false);
@@ -732,6 +733,7 @@ const JobApplicationForms = (props) => {
           <ApplicantInfo2
             prevFormErr={prevFormErr}
             jobPositionList={props.jobPositionList ? props.jobPositionList : []}
+            locationInfoList={props.locationInfoList}
             locationlist={props.locationlist}
             appInfo2={appInfo2}
             setAppInfo2={setAppInfo2}
