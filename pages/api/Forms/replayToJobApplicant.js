@@ -49,10 +49,9 @@ export async function replayToJobApplicant(toName, toEmail, pdfPath) {
   };
 
   try {
-     const tokenResponse = await oauth2Client.getAccessToken();
+    const tokenResponse = await oauth2Client.getAccessToken();
     const access_token = tokenResponse.token || tokenResponse;
 
-    
     const transporter = nodemailer.createTransport({
       service: mailService,
       auth: {

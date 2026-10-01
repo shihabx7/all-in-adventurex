@@ -29,7 +29,7 @@ export default async function replayApplication(req, res) {
   });
 
   try {
-      const tokenResponse = await oauth2Client.getAccessToken();
+    const tokenResponse = await oauth2Client.getAccessToken();
     const access_token = tokenResponse.token || tokenResponse;
     const transporter = nodemailer.createTransport({
       service: mailService,
@@ -46,7 +46,7 @@ export default async function replayApplication(req, res) {
       from: `"AIA Career "<${mailUser}>"`,
       //to: "shihab.dgency@gmail.com",
       to: `${recpData.email}`,
-   //   bcc: "shihab.dgency@gmail.com",
+      //   bcc: "shihab.dgency@gmail.com",
       subject: `Here's Your Job Application at All In Adventures`,
       html: `
             <p style="margin:4px 0p;x"> Dear ${recpData.name},</p>
