@@ -58,7 +58,8 @@ const Pricing = (props) => {
           setShowUerBookingList={setShowUerBookingList}
         />
         <PricingNextGen pricing={props.nextgenpricing} />
-        <PricingQuest pricing={props.questgenpricing} />
+         {/* =======  <PricingQuest pricing={props.questgenpricing} /> breadcum content and breadcum root page template======== end */}
+        
         <PricingOthersGame />
         <PricingEvents />
         <PricingGiftCard />
