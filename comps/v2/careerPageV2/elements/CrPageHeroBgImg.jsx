@@ -17,7 +17,7 @@ export default function CrPageHeroBgImg({
         layout="fill"
         objectFit="cover"
         // objectPosition="center center"
-        className="object-[73%_center] lg:object-center"
+        className="object-cover lg:object-center"
         priority
       />
     </div>
