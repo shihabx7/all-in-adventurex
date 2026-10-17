@@ -32,6 +32,7 @@ import { toyMakerPageData } from "../../../../lib/tempData/toymakerWorkStationTe
 import { checkActiveMobileEscape } from "../../../../lib/dataFormation/mobileEscapeDataFormation";
 
 import { homePageMobileEscapeRoomSectionData } from "../../../../lib/dataFormation/mobileEscapeDataFormation";
+import { popupBanerInfo } from "../../../../lib/v2/data/locationHomePageTempData";
 
 export const locationHomePageData = async (slug) => {
   const filters = "locations?filters[slug][$eq]=" + slug;
@@ -86,10 +87,10 @@ export const locationHomePageData = async (slug) => {
     pageMeta: getPageMeta(
       seoData,
       pageResData.pageHeroData.pageHeroMobile.data.attributes.url,
-      pageResData.pageHeroData.pageSubTitle
+      pageResData.pageHeroData.pageSubTitle,
     ),
     //=============== v2 data
-
+    popUpBanerInfo: popupBanerInfo[slug] ? popupBanerInfo[slug] : false,
     pageHeroData: homePageDataFormater.pageHeroData({
       locationSlug: pageResData.slug,
       info: pageResData.locationInfo,

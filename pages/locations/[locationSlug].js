@@ -39,18 +39,21 @@ import EscapeGamesListSection from "../../comps/v2/homePageComps/sections/Escape
 import OtherGameSection from "../../comps/v2/homePageComps/sections/OtherGameSection";
 import MobileMysteryCardSection from "../../comps/v2/homePageComps/sections/MobileMysteryCardSection";
 import GiftCardSection from "../../comps/v2/homePageComps/sections/GiftCardSection";
-
+import FullPageBaner from "../../comps/v2/popUpBaners/FullPageBaner";
 const Locations = (props) => {
   /* customizing breadcum */
-  const [showUerBookingList, setShowUerBookingList] = useState(false);
+  const [showPopup, setShowPopup] = useState(true);
 
   return (
     <>
-      {showUerBookingList && (
+      {props.popupBanerInfo && showPopup && (
         <div className="uermenu">
-          <UnlimitedEscapeGameMenu
-            locationSlugList={props.locationSlugList}
-            setShowUerBookingList={setShowUerBookingList}
+          <FullPageBaner
+            setShowPopup={setShowPopup}
+            locationName={props.locationName}
+            popupBanerInfo={props.popupBanerInfo}
+            escapeGameListSectionData={props.escapeGameListSectionData}
+              allBooking={props.allBooking}
           />
         </div>
       )}
@@ -262,6 +265,7 @@ export const getStaticProps = async (context) => {
       // aboutSectionData: DATA.aboutSectionData,
       escapeGameListSectionData: DATA.escapeGameListSectionData,
       otherGameListSectionData: DATA.otherGameListSectionData,
+      popupBanerInfo: DATA.popupBanerInfo,
     },
     revalidate: 60,
   };

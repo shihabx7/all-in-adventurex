@@ -1,6 +1,7 @@
 import { apiSetting, apiUrl } from "../../../lib/apiSettings";
 import { toyMakerPageData } from "../../../lib/tempData/toymakerWorkStationTempData";
 import { homePageDataFormater } from "../../../lib/v2/formate/homePageDataFormater";
+import { popupBanerInfo } from "../../../lib/v2/data/locationHomePageTempData";
 import {
   LocationHomePageQuery,
   homePageTestimonialQuery,
@@ -83,6 +84,7 @@ export const getLocationHomePageData = async (slug) => {
       pageResData.locationActivities
     ),
     // ==========================================vv2
+    popupBanerInfo: popupBanerInfo[slug] ? popupBanerInfo[slug] : false,
     pageHeroData: homePageDataFormater.pageHeroData({
       locationSlug: pageResData.slug,
       info: pageResData.locationInfo,
