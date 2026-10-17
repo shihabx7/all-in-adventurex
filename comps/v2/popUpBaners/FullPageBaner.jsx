@@ -52,7 +52,7 @@ export default function FullPageBaner(props) {
                 />
               </div>
               {/**============================================== baner offer content ====================  */}
-              <div className="w-full baner-content-text flex flex-col md:flex-row justify-between items-center py-6 px-3 md:py-8 md:px-5  lg:p-10 min-h-80">
+              <div className="w-full baner-content-text flex flex-col md:flex-row justify-between items-center py-6 px-2 xm:px-3 md:py-8 md:px-5  lg:p-10 min-h-80">
                 <div className="baner-content-text-left w-full md:w-1/2 text-center sm:text-left ">
                   <div className="baner-logo hidden md:block">
                     <img
@@ -76,7 +76,7 @@ export default function FullPageBaner(props) {
                   </p>
                 </div>
                 <div className="baner-content-text-right w-full md:w-1/2 mt-8 sm:mt-0">
-                  <div className="offer-price-row grid grid-cols-2 gap-3 lg:gap-4">
+                  <div className="offer-price-row grid grid-cols-2 gap-2 xm:gap-3 lg:gap-4">
                     <div className="regular-price-box h-full bg-[#1A1200]/85 px-4 py-6 text-center border border-[#D4B56A]/25 rounded-xl relative">
                       <div className="inline-block max-w-[66%] bg-red-600 text-white text-[.87rem] leading-[1] px-4 py-1.5 rounded-full absolute top-[-14px] left-0 right-0 mx-auto">
                         {props.popupBanerInfo.regularPrice.ribbonText}
@@ -94,7 +94,7 @@ export default function FullPageBaner(props) {
                       <p className="text-sm text-[#ADADAD]">per person</p>
                     </div>
                     <div className="offer-price-box h-full bg-gradient-to-b from-[#4A3210] to-[#1A1200] px-4 py-6 text-center border-2 border-[#D4B56A]  rounded-xl relative">
-                      <div className="inline-block max-w-[82%] bg-red-600 text-white text-xs px-3 py-1.5 rounded-full absolute top-[-15px] left-0 right-0 mx-auto">
+                      <div className="inline-block max-w-[88%] sm:max-w-[82%] bg-red-600 text-white text-[.7rem] lm:text-xs px-2 xm:px-3 py-1.5 rounded-full absolute top-[-15px] left-0 right-0 mx-auto">
                         {props.popupBanerInfo.offerPrice.ribbonText}
                       </div>
                       <p className="text-sm text-[#E0BF62]">
@@ -112,7 +112,7 @@ export default function FullPageBaner(props) {
                   <div className="offer-booking-btn mt-6">
                     <button
                       onClick={() => bookAll(props.allBooking)}
-                      className="block w-full py-3 rounded-full text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[15px] rm:text-base md:text-lg"
+                      className="block w-full py-2 md:py-2.5 rounded-full text-center text-white font-medium border border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-sm rm:text-base md:text-lg"
                     >
                       BOOK YOUR GAMES
                     </button>
