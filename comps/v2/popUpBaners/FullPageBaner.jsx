@@ -25,7 +25,7 @@ export default function FullPageBaner(props) {
       <div className="full-page-baner top-0 left-0 bg-[#111111]/80 fixed w-full h-screen  overflow-x-hidden overflow-y-auto z-[20000]">
         <div className="baner-content-wrapper w-full h-full flex flex-col justify-center items-center ">
           {/*============================================== baner content ====================  */}
-          <div className="baner-container w-full max-w-[480px] md:max-w-max md:w-[740px] lg:w-[920px] px-2 zm:px-4 relative">
+          <div className="baner-container w-full max-w-[480px] sm:max-w-max  md:max-w-[800px] lg:max-w-[940px] px-2 zm:px-4 relative">
             {/*============================================= close btn ==================== */}
             <button
               onClick={closelocmenu}
@@ -36,7 +36,7 @@ export default function FullPageBaner(props) {
               </span>
             </button>
             <div className="w-full bg-gradient-to-b from-[#3A2507] via-[#140D04] to-[#050404] rounded-2xl border border-[#D4B56A73]/50">
-              <div className="baner-logo  md:hidden flex justify-center items-center pt-5">
+              <div className="baner-logo  sm:hidden flex justify-center items-center pt-5">
                 <img
                   className="w-24 md:w-28 mb-4"
                   src="/assets/svg/All-In-Adventures-Logo.svg"
@@ -52,9 +52,9 @@ export default function FullPageBaner(props) {
                 />
               </div>
               {/**============================================== baner offer content ====================  */}
-              <div className="w-full baner-content-text flex flex-col md:flex-row justify-between items-center py-6 px-2 xm:px-3 md:py-8 md:px-5  lg:p-10 min-h-80">
+              <div className="w-full baner-content-text flex flex-col sm:flex-row justify-between items-center py-6 px-2 xm:px-3 sm:py-10 md:px-5  lg:p-10 min-h-80">
                 <div className="baner-content-text-left w-full md:w-1/2 text-center sm:text-left ">
-                  <div className="baner-logo hidden md:block">
+                  <div className="baner-logo hidden sm:block">
                     <img
                       className="w-24 md:w-28 mb-4"
                       src="/assets/svg/All-In-Adventures-Logo.svg"
@@ -64,19 +64,21 @@ export default function FullPageBaner(props) {
                   <p className="font-os text-sm zm:text-base md:text-lg text-[#DC2626] font-semibold">
                     NEW GROUP PRICING
                   </p>
-                  <h2 className="font-os text-[2rem] md:text-[2.5rem] lg:text-[3rem] leading-[1.1]  text-gold font-bold my-3 max-w-[300px] mx-auto sm:max-w-max">
+                  <h2 className="font-os text-[2rem] sm:text-[2.3rem] md:text-[2.5rem] lg:text-[3rem] leading-[1.1]  text-gold font-bold my-3 max-w-[300px] mx-auto sm:max-w-max">
                     BIGGER GROUP. BIGGER SAVINGS.
                   </h2>
-                  <p className=" text-sm zm:text-base md:text-lg text-[#D9D9D9] max-w-[300px] mx-auto sm:mx-0 sm:max-w-[360px]">
-                    New lower group rates in{" "}
-                    <span className="text-gold">{props.locationName}!</span>
-                  </p>
-                  <p className=" text-sm zm:text-base md:text-lg text-[#D9D9D9] max-w-[300px] mx-auto sm:mx-0 sm:max-w-[360px]">
-                    Bring 4+ and save even more.
-                  </p>
+                  <div className="text-sm md:text-base lg:text-lg text-[#D9D9D9]">
+                    <p className="max-w-[310px] mx-auto sm:mx-0 sm:max-w-[360px]">
+                      New lower group rates in{" "}
+                      <span className="text-gold">{props.locationName}!</span>
+                    </p>
+                    <p className="max-w-[310px] mx-auto sm:mx-0 sm:max-w-[360px]">
+                      Bring 4+ and save even more.
+                    </p>
+                  </div>
                 </div>
                 <div className="baner-content-text-right w-full md:w-1/2 mt-8 sm:mt-0">
-                  <div className="offer-price-row grid grid-cols-2 gap-2 xm:gap-3 lg:gap-4">
+                  <div className="offer-price-row grid grid-cols-2 gap-2 xm:gap-3 sm:gap-2 md:gap-3 lg:gap-4">
                     <div className="regular-price-box h-full bg-[#1A1200]/85 px-4 py-6 text-center border border-[#D4B56A]/25 rounded-xl relative">
                       <div className="inline-block max-w-[66%] bg-red-600 text-white text-[.87rem] leading-[1] px-4 py-1.5 rounded-full absolute top-[-14px] left-0 right-0 mx-auto">
                         {props.popupBanerInfo.regularPrice.ribbonText}
@@ -94,7 +96,7 @@ export default function FullPageBaner(props) {
                       <p className="text-sm text-[#ADADAD]">per person</p>
                     </div>
                     <div className="offer-price-box h-full bg-gradient-to-b from-[#4A3210] to-[#1A1200] px-4 py-6 text-center border-2 border-[#D4B56A]  rounded-xl relative">
-                      <div className="inline-block max-w-[88%] sm:max-w-[82%] bg-red-600 text-white text-[.7rem] lm:text-xs px-2 xm:px-3 py-1.5 rounded-full absolute top-[-15px] left-0 right-0 mx-auto">
+                      <div className="inline-block max-w-[95%] rm:max-w-[90%] sm:max-w-[92%] md:max-w-[85%] bg-red-600 text-white  text-[.7rem] lm:text-xs sm:text-[.7rem] md:text-xs px-2 xm:px-3 sm:px-2 md:px-2.5 py-1.5 rounded-full absolute top-[-15px] left-0 right-0 mx-auto">
                         {props.popupBanerInfo.offerPrice.ribbonText}
                       </div>
                       <p className="text-sm text-[#E0BF62]">
@@ -112,12 +114,12 @@ export default function FullPageBaner(props) {
                   <div className="offer-booking-btn mt-6">
                     <button
                       onClick={() => bookAll(props.allBooking)}
-                      className="block w-full py-2 md:py-2.5 rounded-full text-center text-white font-medium border border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-sm rm:text-base md:text-lg"
+                      className="block w-full py-2 md:py-2.5 rounded-full text-center text-white font-medium border border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-sm rm:text-base md:text-lg transition-all duration-300"
                     >
                       BOOK YOUR GAMES
                     </button>
                     <div className="text-center text-[#808080] text-xs md:text-sm mt-5">
-                      <p className="mb-3">Maybe later </p>
+                      <button className="mb-2 underline underline-offset-4 text-[1rem] hover:text-red-700 transition-colors duration-300 ">Maybe later</button>
                       <p>
                         Prices are per person and apply to bookings at{" "}
                         {props.locationName}.
