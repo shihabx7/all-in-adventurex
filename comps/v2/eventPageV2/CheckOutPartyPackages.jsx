@@ -147,6 +147,7 @@ export default function CheckOutPartyPackages(props) {
                     props.sectionData.partyPackageInfoV2.cateringPackage
                   }
                   teamSize={props.teamSize ? props.teamSize : "10"}
+                  locationSlug={props.locationSlug ? props.locationSlug : "/"}
                 />
               </div>
               <div className="package-good-to-know item-col w-full bg-[#6376BC2E] border border-[#20398E] rounded-xl py-5 px-2 rm:py-5 rm:px-3 md:px-2 md:py-5 xl:px-5 xl:py-6">

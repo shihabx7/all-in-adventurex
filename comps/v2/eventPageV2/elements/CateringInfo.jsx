@@ -1,4 +1,4 @@
-export default function CateringInfo({ packageInfo, teamSize }) {
+export default function CateringInfo({ packageInfo, teamSize, locationSlug }) {
   const setPizzaNumber = (listItem) => {
     let str = listItem.toString();
     let tmz = parseInt(teamSize, 10);
@@ -6,6 +6,14 @@ export default function CateringInfo({ packageInfo, teamSize }) {
     let reTxt = str.replaceAll("[PIZZA]", pizzaNum);
     return reTxt;
   };
+
+  const hasTaxFree = [
+    "n-Attleborough-ma",
+    "kingston-ma",
+    "holyoke-ma",
+    "hadley-ma",
+  ];
+
   return (
     <div className="package-info-box">
       <div className="package-title">
@@ -19,9 +27,18 @@ export default function CateringInfo({ packageInfo, teamSize }) {
             <div className="font-bold text-[2.875rem] md:text-[3rem] lg:text-[3.5rem] font-os text-white leading-[1] my-3">
               ${packageInfo.price}
             </div>
-            <div className="max-w-[124px] text-[.82rem] md:text-sm text-[#A7B0C8] mt-2">
-              flat, + tax for the whole group
-            </div>
+            {!hasTaxFree.includes(locationSlug) && (
+              <div className="max-w-[140px] text-[.82rem] md:text-sm text-[#A7B0C8] mt-2">
+                <p>Fees + Tax </p>
+                <p>for the whole group </p>
+              </div>
+            )}
+            {hasTaxFree.includes(locationSlug) && (
+              <div className="max-w-[124px] text-[.82rem] md:text-sm text-[#A7B0C8] mt-2">
+                <p>Tax and fees </p>
+                <p>are included</p>
+              </div>
+            )}
           </div>
         )}
         {packageInfo.priceFor && (
@@ -34,8 +51,11 @@ export default function CateringInfo({ packageInfo, teamSize }) {
         <div className="catering-offer-list flex flex-wrap  mt-2">
           {packageInfo.offerList.map((item, index) => {
             return (
-              <div key={index} className="bg-[#ffffff]/10 border border-[#ffffff]/20 rounded-full py-1 px-2 md:px-1.5  lg:py-1.5 lg:px-3 text-[.66rem]  rm:text-xs md:text-[.66rem] lg:text-xs xl:text-[.82rem] text-[#ffffff] mr-2 md:mr-1 lg:mr-1.5 xl:mr-2 mt-2">
-                 {setPizzaNumber(item)}
+              <div
+                key={index}
+                className="bg-[#ffffff]/10 border border-[#ffffff]/20 rounded-full py-1 px-2 md:px-1.5  lg:py-1.5 lg:px-2.5 text-[.66rem]  rm:text-xs md:text-[.66rem] lg:text-[.7rem] xl:text-[.78rem] text-[#ffffff] mr-2 md:mr-1 lg:mr-1.5 xl:mr-2 mt-2"
+              >
+                {setPizzaNumber(item)}
               </div>
             );
           })}
