@@ -16,7 +16,7 @@ export async function recieveEmail(mailOptions) {
   try {
     // get Access token
     const tokenResponse = await OAuth2Client.getAccessToken();
-const access_token = tokenResponse.token || tokenResponse; 
+    const access_token = tokenResponse.token || tokenResponse;
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {

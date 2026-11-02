@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Script from "next/script";
+import { getCookies, getCookie, setCookie, deleteCookie } from "cookies-next";
 import { getLocationSlugUrl } from "../api/Locations/getLocationSlugUrls";
 import { getLocationHomePageData } from "../api/Locations/getLocationHomePageData";
 //=========================================================== page section ui
@@ -42,18 +43,30 @@ import GiftCardSection from "../../comps/v2/homePageComps/sections/GiftCardSecti
 import FullPageBaner from "../../comps/v2/popUpBaners/FullPageBaner";
 const Locations = (props) => {
   /* customizing breadcum */
-  const [showPopup, setShowPopup] = useState(true);
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    let popCls = props.locationSlug
+      ? props.locationSlug + "-pop-close"
+      : "pop-close";
+    popCls = popCls.toString().toLowerCase();
+    const isPopupClosed = getCookie(popCls);
+    if (!isPopupClosed && props.popupBanerInfo) {
+      setShowPopup(true);
+    }
+  }, []);
 
   return (
     <>
-      {props.popupBanerInfo && showPopup && (
+      {showPopup && (
         <div className="uermenu">
           <FullPageBaner
             setShowPopup={setShowPopup}
+            locationSlug={props.locationSlug}
             locationName={props.locationName}
             popupBanerInfo={props.popupBanerInfo}
             escapeGameListSectionData={props.escapeGameListSectionData}
-              allBooking={props.allBooking}
+            allBooking={props.allBooking}
           />
         </div>
       )}

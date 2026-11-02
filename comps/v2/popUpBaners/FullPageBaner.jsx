@@ -1,13 +1,41 @@
 import { FiX } from "react-icons/fi";
 import Script from "next/script";
+import { getCookies, getCookie, setCookie, deleteCookie } from "cookies-next";
 import EscapeGameAutoSlider from "./EscapeGameAutoSlider";
 
 export default function FullPageBaner(props) {
-  const closelocmenu = () => {
+  const closePopUpBaner = () => {
+    let locCls = props.locationSlug
+      ? props.locationSlug + "-pop-close"
+      : "pop-close";
+    locCls = locCls.toString().toLowerCase();
+    console.log("close popup", locCls);
+    setCookie(locCls, true, {
+      path: "/",
+      maxAge: 12 * 60 * 60 * 1000, // Expires after 12 hours
+      sameSite: true,
+    });
     const body = document.getElementsByTagName("body")[0];
     body.classList.remove("overflow-hidden");
     props.setShowPopup(false);
   };
+
+  const closeForNow = () => {
+    let locClsNow = props.locationSlug
+      ? props.locationSlug + "-pop-close"
+      : "pop-close";
+    locClsNow = locClsNow.toString().toLowerCase();
+    console.log("close For Now", locClsNow);
+    setCookie(locClsNow, true, {
+      path: "/",
+      maxAge: 4 * 60 * 60 * 1000, // Expires after 4 hours
+      sameSite: true,
+    });
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.remove("overflow-hidden");
+    props.setShowPopup(false);
+  };
+
   const bookAll = (bookingData) => {
     FH.open({
       shortname: bookingData.shortName,
@@ -28,7 +56,7 @@ export default function FullPageBaner(props) {
           <div className="baner-container w-full max-w-[480px] sm:max-w-max  md:max-w-[800px] lg:max-w-[940px] px-2 zm:px-4 relative">
             {/*============================================= close btn ==================== */}
             <button
-              onClick={closelocmenu}
+              onClick={() => closePopUpBaner()}
               className="close-btn absolute top-1 right-3 sm:right-5  text-gray-400 text-xl md:text-2xl lg:text-3xl z-40"
             >
               <span className="inline-block p-1 border bg-[#090909] border-gold text-white rounded-full cursor-pointer hover:border-light-gold hover:text-red-700">
@@ -119,7 +147,12 @@ export default function FullPageBaner(props) {
                       BOOK YOUR GAMES
                     </button>
                     <div className="text-center text-[#808080] text-xs md:text-sm mt-5">
-                      <button className="mb-2 underline underline-offset-4 text-[1rem] hover:text-red-700 transition-colors duration-300 ">Maybe later</button>
+                      <button
+                        onClick={() => closeForNow()}
+                        className="mb-2 underline underline-offset-4 text-[1rem] hover:text-red-700 transition-colors duration-300 "
+                      >
+                        Maybe later
+                      </button>
                       <p>
                         Prices are per person and apply to bookings at{" "}
                         {props.locationName}.

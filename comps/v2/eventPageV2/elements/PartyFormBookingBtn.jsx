@@ -27,28 +27,18 @@ export default function PartyFormBookingBtn(props) {
           onClick={() => {
             partyFormBooking(eventFormBookingLinks[props.locationSlug]);
           }}
-          className="w-full  md:w-auto max-w-[420px] flex justify-center items-center space-x-1 lm:space-x-2  py-3 px-3 rm:px-4 md:px-6 xl:px-10  rounded-full uppercase text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[.7rem] rm:text-[.85rem] md:text-[.9rem] lg:text-[1rem]"
+          className="w-full  md:w-auto max-w-[420px] flex justify-center items-center space-x-1 lm:space-x-2  py-2.5 px-3 rm:px-4 md:px-6 xl:px-8  rounded-full uppercase text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[.7rem] rm:text-[.85rem] md:text-[.9rem] lg:text-[1rem]"
         >
-          <div className="w-[14px] md:w-[16px]">
-            <img
-              className="block w-full h-auto "
-              src="/assets/event-page-v2/doc-icon.svg"
-            ></img>
-          </div>
-          <p>{/*props.btnLabel ? props.btnLabel : "TELL US ABOUT YOUR PARTY" */} Reach out to our events team</p>
+          <p>
+            {props.btnLabel ? props.btnLabel : "REACH OUT TO OUR EVENTS TEAM"}
+          </p>
         </button>
       ) : (
         <button
           onClick={(e) => showPartyFormModal()}
-          className=" w-full md:w-auto max-w-[420px] flex justify-center items-center space-x-2 py-3 px-4 md:px-6 xl:px-10 rounded-full uppercase text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[.7rem] rm:text-[.85rem] md:text-[.9rem] lg:text-[1rem]"
+          className=" w-full md:w-auto max-w-[420px] flex justify-center items-center space-x-2 py-2.5 px-4 md:px-6 xl:px-8 rounded-full uppercase text-center text-white font-medium border-2 border-red-600 bg-red-600 hover:border-red-700 hover:bg-red-700 text-[.7rem] rm:text-[.85rem] md:text-[.9rem] lg:text-[1rem]"
         >
-          <div className="w-[14px] md:w-[16px]">
-            <img
-              className="block w-full h-auto "
-              src="/assets/event-page-v2/doc-icon.svg"
-            ></img>
-          </div>
-          <p>{/*props.btnLabel ? props.btnLabel : "TELL US ABOUT YOUR PARTY" */} Reach out to our events team</p>
+          {props.btnLabel ? props.btnLabel : "REACH OUT TO OUR EVENTS TEAM"}
         </button>
       )}
     </div>

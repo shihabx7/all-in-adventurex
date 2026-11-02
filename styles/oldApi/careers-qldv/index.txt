@@ -1,12 +1,12 @@
-import RootNav from "../../comps/RootNav";
-import RootFooter from "../../comps/RootFooter";
+import RootNav from "../../../comps/RootNav";
+import RootFooter from "../../../comps/RootFooter";
 
-import CareersHero from "../../comps/careersPageComps/CareersHero";
-import WhoWeAre from "../../comps/careersPageComps/WhoWeAre";
-import OpenPosition from "../../comps/careersPageComps/OpenPosition";
-import { getCareerHomePageData } from "../api/getCareerHomePageData";
-import PageBread from "../../comps/util/PageBread";
-import SinglePageSeo from "../../comps/util/SinglePageSeo";
+import CareersHero from "../../../comps/careersPageComps/CareersHero";
+import WhoWeAre from "../../../comps/careersPageComps/WhoWeAre";
+import OpenPosition from "../../../comps/careersPageComps/OpenPosition";
+import { getCareerHomePageData } from "../../../pages/api/getCareerHomePageData";
+import PageBread from "../../../comps/util/PageBread";
+import SinglePageSeo from "../../../comps/util/SinglePageSeo";
 
 const Careers = (props) => {
   return (

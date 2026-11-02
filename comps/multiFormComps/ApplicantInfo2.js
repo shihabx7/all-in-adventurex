@@ -33,12 +33,12 @@ const ApplicantInfo2 = ({
   const checkLocation = (e) => {
     const dloc = e.target.value;
     const ind = parseInt(dloc, 10);
-  //  console.log(ind);
-  //  console.log(typeof ind);
-  //  console.log("locationName", locationInfo[ind - 1].attributes.locationName);
-  //  console.log(  "locationName",  locationInfo[ind - 1].attributes.locationInfo.managerEmail,);
+    //  console.log(ind);
+    //  console.log(typeof ind);
+    //  console.log("locationName", locationInfo[ind - 1].attributes.locationName);
+    //  console.log(  "locationName",  locationInfo[ind - 1].attributes.locationInfo.managerEmail,);
     if (ind > 0) {
-     // console.log("location selected");
+      // console.log("location selected");
       setFormErrFlag(false);
       setAppInfo2Err({ ...appInfo2Err, dLocationErr: false });
       setAppInfo2({
