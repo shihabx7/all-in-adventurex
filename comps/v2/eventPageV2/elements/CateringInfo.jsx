@@ -8,7 +8,7 @@ export default function CateringInfo({ packageInfo, teamSize, locationSlug }) {
   };
 
   const hasTaxFree = [
-    "n-Attleborough-ma",
+    "n-attleborough-ma",
     "kingston-ma",
     "holyoke-ma",
     "hadley-ma",
@@ -27,7 +27,7 @@ export default function CateringInfo({ packageInfo, teamSize, locationSlug }) {
             <div className="font-bold text-[2.875rem] md:text-[3rem] lg:text-[3.5rem] font-os text-white leading-[1] my-3">
               ${packageInfo.price}
             </div>
-            {!hasTaxFree.includes(locationSlug) && (
+            {!hasTaxFree.includes(locationSlug.toString()) && (
               <div className="max-w-[140px] text-[.82rem] md:text-sm text-[#A7B0C8] mt-2">
                 <p>Fees + Tax </p>
                 <p>for the whole group </p>
