@@ -73,11 +73,15 @@ const StaticSubmenu = (props) => {
           <span className="sub-link-txt">Volunteering</span>
         </a>
       </div>
-      <div className="submenu-item">
+      {/*============================ 
+      
+       <div className="submenu-item">
         <a href="/franchise" className="flex items-center">
           <span className="sub-link-txt">Become a Franchise Owner</span>
         </a>
       </div>
+      
+      ==========*/}
 
       {!props.locationSlug && (
         <div className="submenu-item">

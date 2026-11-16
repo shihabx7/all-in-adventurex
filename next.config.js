@@ -2966,6 +2966,24 @@ const hmagic = [
   },
 ];
 
+const fransList = [
+  {
+    source: "/franchise",
+    destination: "/",
+    permanent: false,
+  },
+  {
+    source: "/franchise-contact",
+    destination: "/",
+    permanent: false,
+  },
+  {
+    source: "/thank-you-franchise",
+    destination: "/",
+    permanent: false,
+  },
+];
+
 const allRed = [
   ...hmagic,
   ...wwwToHttps,
@@ -3000,6 +3018,7 @@ const allRed = [
   ...austinRed,
   ...commonRed,
   ...eventV1,
+  ...fransList,
 ];
 
 module.exports = {

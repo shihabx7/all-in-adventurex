@@ -116,6 +116,7 @@ const RightMenuLink = (props) => {
             Volunteering
           </a>
         </li>
+        {/*===========================================
         <li className="my-2">
           <a
             href={"/franchise"}
@@ -124,6 +125,7 @@ const RightMenuLink = (props) => {
             Become a Franchise Owner
           </a>
         </li>
+        ============================================== */}
         <li className="my-2">
           <a
             href={"/franchise-contact"}
