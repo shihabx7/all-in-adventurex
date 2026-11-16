@@ -230,8 +230,8 @@ const FranchiseContactForm = () => {
   // ========================================================Net Worth validation =================
   const checkNetWorth = (e) => {
     const nworth = e.target.value.trim();
-
-    const namePatt = /^[a-zA-Z0-9,.-]*$/;
+    const namePatt = /^[0-9a-zA-Z$., -]+$/;
+    //const namePatt = /^[a-zA-Z0-9,.-]*$/;
     if (nworth.length > 0 && nworth.length < 25) {
       if (!namePatt.test(nworth)) {
         setErr(true);
@@ -256,8 +256,8 @@ const FranchiseContactForm = () => {
   // ========================================================Liq assest validation =================
   const checkLiqAssets = (e) => {
     const lqAssets = e.target.value.trim();
-
-    const namePatt = /^[a-zA-Z0-9,.-]*$/;
+    const namePatt = /^[0-9a-zA-Z$., -]+$/;
+    // const namePatt = /^[a-zA-Z0-9,.-]*$/;
     if (lqAssets.length > 0 && lqAssets.length < 25) {
       if (!namePatt.test(lqAssets)) {
         setErr(true);
@@ -488,9 +488,9 @@ const FranchiseContactForm = () => {
       typeof fieldVlue.state !== "string" ||
       fieldVlue.address.length < 3 ||
       typeof fieldVlue.address !== "string" ||
-      fieldVlue.netWorth.length < 3 ||
+      fieldVlue.netWorth.length < 2 ||
       typeof fieldVlue.netWorth !== "string" ||
-      fieldVlue.liqAssets.length < 3 ||
+      fieldVlue.liqAssets.length < 2 ||
       typeof fieldVlue.liqAssets !== "string" ||
       fieldVlue.visitAIA.length < 2 ||
       typeof fieldVlue.visitAIA !== "string" ||
@@ -523,7 +523,6 @@ const FranchiseContactForm = () => {
   // ========================================================you believe end=================
 
   const submitFranchiseForm = async (event) => {
-    
     event.preventDefault();
     console.log("submiting....");
     setIsSend(true);
@@ -546,7 +545,7 @@ const FranchiseContactForm = () => {
       return;
     }
     const grcToken = await recaptchaRef.current.executeAsync();
-   // console.log("captcha token ..." + grcToken);
+    // console.log("captcha token ..." + grcToken);
     if (!grcToken) {
       setErrorMsg("Cptcha not fetch. try again");
       return;
@@ -554,7 +553,7 @@ const FranchiseContactForm = () => {
     setReCaptchaToken(grcToken);
 
     // console.log("captcha...." + grcToken);
-  //  console.log("Sending..." + fieldVlue);
+    //  console.log("Sending..." + fieldVlue);
     const formData = {
       fName: fieldVlue.fName,
       lName: fieldVlue.lName,
@@ -578,9 +577,9 @@ const FranchiseContactForm = () => {
       botMsg: fieldVlue.botMsg,
       captchaToken: grcToken,
     };
- console.log("Sending... Form Data...");
-// console.log("Sending..." + JSON.stringify(formData));
-  //console.log("lets try");
+    console.log("Sending... Form Data...");
+    // console.log("Sending..." + JSON.stringify(formData));
+    //console.log("lets try");
     try {
       const response = await fetch("/api/Forms/fransContact", {
         method: "POST",
@@ -597,7 +596,7 @@ const FranchiseContactForm = () => {
       if (response.status == 200) {
         setErrorMsg("");
         setSuccessMsg("Your message has submitted successfully. Thank you.");
-          window.location.replace("/thank-you-franchise");
+        window.location.replace("/thank-you-franchise");
         //  window.location.replace("/thank-you-franchise);
         //window.location.href = "/thank-you-store";
         console.log("Form submit success " + result.data);
@@ -609,7 +608,7 @@ const FranchiseContactForm = () => {
         setSuccessMsg("");
       } else if (response.status == 429) {
         setErrorMsg(
-          result.data.error + " Try after" + result.data.resetAfter + " Min"
+          result.data.error + " Try after" + result.data.resetAfter + " Min",
         );
         setSuccessMsg("");
       } else {
@@ -920,8 +919,8 @@ const FranchiseContactForm = () => {
                     </p>
                     <input
                       type="text"
-                      id="address"
-                      name="address"
+                      id="crnetworth"
+                      name="crnetworth"
                       onChange={(e) => checkNetWorth(e)}
                       className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                       placeholder=""
@@ -939,8 +938,8 @@ const FranchiseContactForm = () => {
                     </p>
                     <input
                       type="text"
-                      id="address"
-                      name="address"
+                      id="crliqassets"
+                      name="crliqassets"
                       onChange={(e) => checkLiqAssets(e)}
                       className="w-full event-input  border-0 md:py-3 px-4 bg-white focus:ring-transparent"
                       placeholder=""
@@ -959,7 +958,8 @@ const FranchiseContactForm = () => {
                 <div className="form-row flex justify-between my-4 ">
                   <div className="form-col w-full">
                     <p className=" mb-1 lg:text-lg evevt-input-label text-[#313030]">
-                      What is your plan for funding a venture of this nature?*{" "}
+                      What is your plan for funding a venture of this
+                      nature?*{" "}
                     </p>
 
                     <textarea

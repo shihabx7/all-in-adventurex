@@ -166,13 +166,13 @@ export default async function fransContactHandler(req, res) {
     },
     {
       data: netWorth,
-      min: 3,
+      min: 2,
       max: 80,
       type: "string",
     },
     {
       data: liqAssets,
-      min: 3,
+      min: 2,
       max: 80,
       type: "string",
     },
@@ -241,7 +241,7 @@ export default async function fransContactHandler(req, res) {
     {
       data: captchaToken,
       min: 20,
-      max: 2400,
+      max: 5000,
       type: "string",
     },
   ];
@@ -271,7 +271,7 @@ export default async function fransContactHandler(req, res) {
   const mailOptions = {
     from: '"AIA Franschise Contact" <sender@allinadventures.com>',
     to: "franchise@allinadventures.com",
-    //to: "shihab.dgency@gmail.com",
+    // to: "shihab.dgency@gmail.com",
     replyTo: email,
     bcc: "dgency.com@gmail.com",
     subject: `Franchise Contact`,
