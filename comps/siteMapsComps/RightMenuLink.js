@@ -87,14 +87,7 @@ const RightMenuLink = (props) => {
             What Is An Escape Room
           </a>
         </li>
-        <li className="my-2">
-          <a
-            href={"/answers"}
-            className="site-link text-[#1a1a1a] hover:text-red-700 md:text-lg xl:text-xl"
-          >
-            Answers
-          </a>
-        </li>
+       
         <li className="my-2">
           <a
             href={"/careers"}
@@ -117,6 +110,15 @@ const RightMenuLink = (props) => {
           </a>
         </li>
         {/*===========================================
+
+         <li className="my-2">
+          <a
+            href={"/answers"}
+            className="site-link text-[#1a1a1a] hover:text-red-700 md:text-lg xl:text-xl"
+          >
+            Answers
+          </a>
+        </li>
         <li className="my-2">
           <a
             href={"/franchise"}
@@ -125,7 +127,7 @@ const RightMenuLink = (props) => {
             Become a Franchise Owner
           </a>
         </li>
-        ============================================== */}
+       
         <li className="my-2">
           <a
             href={"/franchise-contact"}
@@ -134,6 +136,7 @@ const RightMenuLink = (props) => {
             Franchise Contact
           </a>
         </li>
+         ============================================== */}
         <li className="my-2">
           <a
             href={"/corporate-contact"}
